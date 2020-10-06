@@ -5,7 +5,7 @@ title: Intent letters - Invoicing usual exporters
 description: This topic provides information about how to set up intent letters and how to use them when you issue invoices.
 author: ilkond
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.9
 # Intent letters - Invoicing of usual exporters
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 To receive a supply of goods or services free of sales tax in Italy, companies that are categorized as usual exporters must send an intent declaration (a numbered and dated letter) to the Italian tax authorities and to company counteragents.
  

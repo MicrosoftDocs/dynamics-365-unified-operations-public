@@ -4,7 +4,7 @@
 title: View plan history and planning logs
 description: This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality.
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,11 +29,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
 ---
-
-[!include [banner](../../includes/preview-banner.md)]
-[!include [banner](../../includes/banner.md)]
-
 # View plan history and planning logs
+
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality in Microsoft Dynamics 365 Supply Chain Management.
 

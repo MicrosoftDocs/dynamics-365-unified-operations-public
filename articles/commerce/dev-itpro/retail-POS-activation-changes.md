@@ -5,7 +5,7 @@ title: Device activation of a customized Modern POS
 description: This topic explains how to configure Microsoft Dynamics 365 Commerce Headquarters so that device activation works correctly when a customized Modern POS application is used. 
 author: jashanno
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -23,7 +23,7 @@ ms.search.scope: Operations, Retail
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
-ms.search.validFrom: 2017-09-31
+ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
 ---
 
@@ -108,7 +108,7 @@ The following steps are required so that device activation works correctly when 
 14. Select **File** \> **Save**.
 
 ### Configure Dynamics 365 Headquarters
-The previous steps were required so that the Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a whitelist.)
+The previous steps were required so that the Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a safe list.)
 
 1. In a web browser, go to the Headquarters URL, and sign in by using Azure AD credentials.
 2. Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.

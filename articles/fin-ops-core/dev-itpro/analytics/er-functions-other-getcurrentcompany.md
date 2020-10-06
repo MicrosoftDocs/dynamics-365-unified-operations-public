@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY ER function</a>
+# GETCURRENTCOMPANY ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `GETCURRENTCOMPANY` function returns a *String* value that represents the co
 
 ## Syntax
 
-```
+```vb
 GETCURRENTCOMPANY ()
 ```
 

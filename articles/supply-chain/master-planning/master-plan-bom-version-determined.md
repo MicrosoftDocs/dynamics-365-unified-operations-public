@@ -4,7 +4,7 @@
 title: Determine the BOM version
 description: During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site. 
 author: roxanadiaconu
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: BOMConsistOf, BOMDesigner, InventItemOrderSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2534

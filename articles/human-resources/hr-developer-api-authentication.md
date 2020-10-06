@@ -2,7 +2,7 @@
 # required metadata
 
 title: Authentication
-description: 
+description: This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Human Resources data application programming interface (API).
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

@@ -3,9 +3,9 @@
 
 title: Expense receipt processing
 description: This topic provides information about optical character recognition (OCR) processing for receipts. This feature is designed to improve the user experience when expense reports are created in Microsoft Dynamics 365 Finance.
-author: stevensporen
+author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,11 +27,9 @@ ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8 
 ---
 
-# Public Preview: Expense receipt processing
+# Expense receipt processing
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Expense entry has been enhanced through the introduction of optical character recognition (OCR) processing for receipts. This feature is designed to improve the user experience when expense reports are created.
 
@@ -43,24 +41,24 @@ Expense entry has been enhanced through the introduction of optical character re
 
 ## Usage examples
 
-- **Automatically attach receipts that include credit card transactions when an expense report is created.**
+To automatically attach receipts that include credit card transactions when an expense report is created, do the following:
 
-    1. Open the **Expense management** workspace.
-    2. On the **Receipts** tab, verify that unattached receipts exist. You can also upload receipts on the **Receipts** tab.
-    3. On the **Expenses** tab, verify that unattached expenses exist. Typically, the expense administrator imports these expenses from the credit card provider.
-    4. Select **New expense report**. Notice that you can include expenses, and receipts, now as well, when you create an expense report. If you add both expenses and receipts, automatic matching of the receipts against the expenses is triggered.
+  1. Open the **Expense management** workspace.
+  2. On the **Receipts** tab, verify that unattached receipts exist. You can also upload receipts on the **Receipts** tab.
+  3. On the **Expenses** tab, verify that unattached expenses exist. Typically, the expense administrator imports these expenses from the credit card provider.
+  4. Select **New expense report**. Notice that you can include expenses, and receipts, now as well, when you create an expense report. If you add both expenses and receipts, automatic matching of the receipts against the expenses is triggered.
 
-- **Create an expense, or match an expense from a receipt.**
+To create an expense, or match an expense from a receipt, do the following:
 
-    1. On an expense report, on the **Receipts** tab, attach a receipt by selecting **Add receipts**.
-    2. Under the uploaded image of the receipt, notice the **Create** and **Match** options.
+  1. On an expense report, on the **Receipts** tab, attach a receipt by selecting **Add receipts**.
+  2. Under the uploaded image of the receipt, notice the **Create** and **Match** options.
 
-        - Select **Create** to create a manually entered expense transaction and fill in the values that are extracted from the receipt.
-        - If you select **Match**, the system tries to match an existing expense to the receipt.
+      - Select **Create** to create a manually entered expense transaction and fill in the values that are extracted from the receipt.
+      - If you select **Match**, the system tries to match an existing expense to the receipt.
 
 ## Installation
 
-This feature works in combination with the **Expense reports re-imagined** feature to help simplify the expense experience.
+This feature works in combination with the **Expense reports re-imagined** feature to help simplify the expense experience. This feature is only available for Tier 2+ environments, which are Sandbox and Production.
 
 To use these advanced expense capabilities, install the Expense Management Service add-in for Microsoft Dynamics 365 Finance, and turn on the features in your instance. You can access the add-in from your project in Microsoft Dynamics Lifecycle Services (LCS).
 

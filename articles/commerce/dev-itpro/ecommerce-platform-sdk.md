@@ -91,9 +91,9 @@ If you are accessing the web storefront over HTTPS, then you will need to update
 
 The e-Commerce website will operate on an operating unit number(channel) specified in the web.config. To change it, change the OU \# below. Note that Fabrikam is “077” in the demo data. You will need to update the “retailServerUrl” inside web.config of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
 
-    <ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">
+-  `<ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">`
 
-    <add key="OperatingUnitNumber" value="068" />
+-  `<add key="OperatingUnitNumber" value="068" />`
 
 ## Configure authentication providers
 ### Authentication providers that you are using
@@ -102,8 +102,10 @@ The e-Commerce platform uses OpenID as the mechanism for authentication. You can
 
 1.  Edit the web.config file and change it to the following.
 
-        redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
-
+    ```xml
+    redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
+    ```
+    
     The subsequent steps should only be done to register additional providers.
 
 2.  The **Retail Shared Parameters -&gt; Open ID Providers** form can be used to register additional providers.

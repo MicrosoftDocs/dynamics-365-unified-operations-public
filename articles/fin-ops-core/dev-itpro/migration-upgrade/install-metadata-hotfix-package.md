@@ -61,41 +61,55 @@ To invoke the installation of the metadata hotfix, you can call the SCDPBundleIn
 
 If you're not using Azure DevOps or TFS for source control, use the following command.
 
-    SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfix> -metadatastorepath=<metadata packages root folder>
+```Console
+SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfix> -metadatastorepath=<metadata packages root folder>
+```
 
 #### With version control (recommended)
 
 If you're using Azure DevOps or TFS for source control, follow the steps below: **Prepare** the installation of the hotfix package using the command below. This step is not available if you are using a platform that is older than Platform update 2 (August 2016))
 
-    SCDPBundleInstall.exe -prepare -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
+```Console
+SCDPBundleInstall.exe -prepare -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
+```
 
 This will create a changeset of all the existing files on your environment that will be modified by the hotfix package, the prepare command will not install the hotfixes. Here is an example.
 
-    SCDPBundleInstall.exe -prepare -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
+```Console
+SCDPBundleInstall.exe -prepare -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
+```
 
 **Check-in** your pending changes to create a backup of these files in your version control system. This will enable rolling back the hotfixes if needed. **Install** the hotfix package using the command below.
 
-    SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
+```Console
+SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
+```
 
 If you are using a platform that is older than Platform update 2 (August 2016), you do not need to specify the **-install** option. Here is an example.
 
-    SCDPBundleInstall.exe -install -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
+```Console
+SCDPBundleInstall.exe -install -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
+```
 
 Azure DevOps/TFS parameters let you add the files that are modified by the package to your list of pending changes in Team Explorer.
 
 ### Required parameters
 
-    /packagepath=[Path of the local scdp file containing the hotfixes downloaded from Lifecycle Service (LCS)]
+```Console
+/packagepath=[Path of the local scdp file containing the hotfixes downloaded from Lifecycle Service (LCS)]
 
-    /metadatastorepath=[Path of the local metadata store folder, such as c:\AOSService\PackagesLocalDirectory]
+/metadatastorepath=[Path of the local metadata store folder, such as c:\AOSService\PackagesLocalDirectory]
+```
 
 ### TFS parameters
 
 If you're using Azure DevOps or TFS for source control, you should specify the following two parameters.
 
-    /tfsprojecturi=[URI of the TFS Project to connect to]
+```Console
+/tfsprojecturi=[URI of the TFS Project to connect to]
 
-    /tfsworkspacepath=[Path of the local workspace, usually equal to the metadatastorepath]
+/tfsworkspacepath=[Path of the local workspace, usually equal to the metadatastorepath]
+```
 
 After the install command is invoked, the package installation process begins. As part of the installation process, some XML files in your metadata store folder will be updated to reflect the changes that were made in the fix itself. If you’re using Azure DevOps or TFS, these files will be added to the list of included changes in the **Pending Changes** window in Team Explorer. 
 
@@ -108,8 +122,6 @@ Sometimes, a metadata hotfix package contains changes to objects that have been 
 2.  In the dialog box, select a model to check for conflicts.
 3.  Click **Create project**. A project is generated that contains only those elements in the selected model that were found to have conflicts after the hotfix was applied.
 4.  Open the designer for the conflicting element to view conflicts, and resolve them by using the tools that are provided.
-
-<!--The Office Mix at <https://mix.office.com/watch/1rl75ei2cs6d7> provides an introduction to the conflict resolution tools in the development environment.-->
 
 ## Build and test on a local VM
 Build all models that are affected by the hotfix, and test your application.

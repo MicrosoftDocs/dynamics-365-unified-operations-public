@@ -240,3 +240,8 @@ The following **main** method tests your computed and virtual fields. Both field
         ttsabort;
     }
     ```
+    
+### Note on computed column generation failures
+If the X++ method that generates the SQL for a computed column throws an exception, DbSync catches the exception, **sets the value of that column to `NULL`**, and logs a *warning*.
+
+Developers are advised to check configuration keys manually in computed column methods to avoid hitting a `NULL` value, if the generation failed.

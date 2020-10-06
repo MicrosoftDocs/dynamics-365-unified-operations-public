@@ -5,7 +5,7 @@ title: Credit and collections management Power BI content
 description: This topic describes what is included in the Credit and collections management Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,9 +51,10 @@ By default, the credit and collections data for the current company is shown. To
 The following setup needs to be completed for data to display in **Customer credit and collections** Power BI visuals.
 
 1. Go to **System administration > Setup > System Parameters** to set **System currency** and **System Exchange Rate**.
-2. Go to **General Ledger > Setup > Ledger** and set **Accounting Currency** and **Exchange Rate Type**.
-3. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-4. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurements** aggregate measurement.
+2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
+3. Go to **General Ledger > Setup > Ledger** and set **Accounting Currency** and **Exchange Rate Type**.
+4. Define exchange rates between transaction currencies and accounting currency, accounting currency, and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
+5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
 
 ## Accessing the Power BI content
 

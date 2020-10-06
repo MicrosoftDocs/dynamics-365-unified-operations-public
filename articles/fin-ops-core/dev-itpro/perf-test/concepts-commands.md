@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Acceptance test library commands
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Command classes are responsible for running business operations. They let you use fluent application programming interfaces (APIs) to set the parameters of these operations.
 

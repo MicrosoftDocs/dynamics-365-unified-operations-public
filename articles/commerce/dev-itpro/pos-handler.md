@@ -5,7 +5,7 @@ title: Override POS request handler
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time service enables clients to interact with Commerce functionality in real time.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -59,6 +59,7 @@ In each monthly update we will be adding additional extension points, so check t
 | GetReceiptEmailAddressClientRequestHandler | Executed when you get a receipt email address.                                                 |
 | DepositOverrideOperationRequestHandler     | Executed when you override a deposit.                                                          |
 | GetShippingChargeClientRequestHandler      | Executed when get shipping charge workflow initiated during customer order flow.                                                             |
+| GetKeyedInPriceClientRequestHandler      | Executed when the key in product price dialog box is shown.                                                           |
 
 **Payment extension handler**
 
@@ -87,7 +88,7 @@ In each monthly update we will be adding additional extension points, so check t
 | PaymentTerminalUpdateLinesRequestHandler                      | Executed when POS sends line item details to a payment device for display purposes.                                                                                 |
 | PaymentTerminalVoidPaymentRequestHandler                      | Executed when a card payment is voided using a payment terminal/device.                                                                                             |
 | PaymentTerminalBeginTransactionRequestHandler                 | Executed when a card payment is initiated using a payment terminal/device.                                                                                          |
-| PaymentTerminalCancelOperationRequestHandler                  | Executed when a card payment is cancelled using a payment terminal/device.                                                                                          |
+| PaymentTerminalCancelOperationRequestHandler                  | Executed when a card payment is canceled using a payment terminal/device.                                                                                          |
 | PaymentTerminalEndTransactionRequestHandler                   | Executed when a card payment is ended using a payment terminal/device.                                                                                              |
 | CashDrawerOpenRequestHandler                                  | Executed when a cash drawer open request is initiated by POS.                                                                                                     |
 | PaymentTerminalActivateGiftCardPeripheralRequestHandler       | Executed when activate gift card request is initiated by POS.                                                                                                     |
@@ -120,6 +121,8 @@ In each monthly update we will be adding additional extension points, so check t
 | LoyaltyCardPointsBalanceOperationRequestHandler     | Executed when you do a loyalty card balance operation in POS. |
 | GetReportParametersClientRequestHandler     	      | Executed when you use a report parameter. If your POS report needs an input parameter this dialog will be executed to capture the parameters. |
 | GetPickingAndReceivingOrdersClientRequestHandler     	      | Executed when orders fetched for picking and receiving processing. |
+| GetStartingAmountClientRequestHandler     	      | Executed when you do a start amount declaration in POS (before navigating to the view). |
+
 
 
 **Tender counting request handler**
@@ -178,7 +181,7 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 
 7.  In the GetSerialNumberClientRequestHandlerExt.ts file, create a new class called GetSerialNumberClientRequestHandlerExtend and extend it from GetSerialNumberClientRequestHandler.
 
-    ```
+    ```typescript
     export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }
 	```
 	
@@ -214,15 +217,6 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 	Full sample code:
 
 	```typescript
-	/**
-	* SAMPLE CODE NOTICE
-	*
-	* THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-	* OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-	* THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-	* NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-	*/
-
 	import { GetSerialNumberClientRequestHandler } from "PosApi/Extend/RequestHandlers/ProductsRequestHandlers";
 	import { GetSerialNumberClientRequest, GetSerialNumberClientResponse } from "PosApi/Consume/Products";
 	import { ClientEntities } from "PosApi/Entities";

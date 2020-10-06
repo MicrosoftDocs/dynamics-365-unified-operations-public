@@ -41,7 +41,7 @@ A *rule* is a check on application data. If the condition that the rule evaluate
 
 To create a new rule for the **Optimization advisor**, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute. The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute. By convention, that is done on the **opportunityTitle** method, which will be discussed later. This new class can be added to a custom model with a dependency on the **SelfHealingRules** model. In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.
 
-```
+```xpp
 [DiagnosticsRule] 
 public final class RFQTitleSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule 
 { 
@@ -51,7 +51,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 
 The **SelfHealingRule** abstract class has abstract methods that must be implemented in inheriting classes. The core is the **evaluate** method, which returns a list of the opportunities identified by the rule. Opportunities can be per legal entity or can apply to the whole system.
 
-```
+```xpp
 protected List evaluate() 
 { 
     List results = new List(Types::Record); 
@@ -87,7 +87,7 @@ Opportunities can also be cross-company. In this case, the loop over companies i
 
 The following code shows the **findRFQCasesWithEmptyTitle** method, which returns the IDs of the RFQ cases that have empty titles.
 
-```
+```xpp
 private container findRFQCasesWithEmptyTitle() 
 { 
     container result; 
@@ -120,7 +120,7 @@ The title returned by **opportunityTitle** appears under the **Optimization oppo
 
 The following is an example implementation. Raw strings are used for simplicity, but a correct implementation requires labels. 
 
-```
+```xpp
 [DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
                              'Assign titles to Request for Quotation cases', 
                              DiagnosticsRunFrequency::Daily,  
@@ -133,7 +133,7 @@ public str opportunityTitle()
 
 The description returned by **opportunityDetails** appears on the side pane showing more information about the opportunity. This takes the **SelfHealingOpportunity** argument, which is **Data** field that can be used to provide more details about the opportunity. In the example, the method returns the IDs of the RFQ cases with an empty title. 
 
-```
+```xpp
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
 { 
     str details = ''; 
@@ -158,7 +158,7 @@ The two remaining abstract methods to implement are **provideHealingAction** and
 
 **provideHealingAction** returns true if a healing action is provided, otherwise, it returns false. If true is returned, the method **performAction** must be implemented, or an error will be thrown. The **performAction** method takes a **SelfHealingOpportunity** argument, in which the data can be used for the action. In the example, the action opens the **PurchRFQCaseTableListPage**, for manual correction. 
 
-```
+```xpp
 public boolean providesHealingAction() 
 { 
     return true; 
@@ -177,7 +177,7 @@ Depending on the specifics of the rule, it might be possible to take an automati
 > [!NOTE]
 > The menu item must be an action menu item for security to work correctly. Other menu item types, such as **Display menu items** will not work correctly.
 
-```
+```xpp
 public MenuName securityMenuItem() 
 { 
     return menuItemActionStr(PurchRFQCaseTitleAction); 
@@ -186,7 +186,7 @@ public MenuName securityMenuItem()
 
 After the rule has compiled, execute the following job to have it display in the user interface (UI).
 
-```
+```xpp
 class ScanNewRulesJob 
 {         
     public static void main(Args _args) 
@@ -202,7 +202,7 @@ The rule will display in the **Diagnostics validation rule** form, available fro
 
 The following example is a code snippet with the skeleton of a rule including all the required methods and attributes. It helps you get started with writing new rules. The labels and action menu items that are used in the example are only used for demonstration purpose.
 
-```
+```xpp
 [DiagnosticsRuleAttribute]
 public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
 {

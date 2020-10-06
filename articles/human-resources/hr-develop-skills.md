@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType
+ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

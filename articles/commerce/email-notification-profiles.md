@@ -5,7 +5,7 @@ title: Set up an email notification profile
 description: This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -39,13 +39,13 @@ This topic describes how to create an email notification profile in Microsoft Dy
 
 Before creating channels, you'll want to set up a profile to ensure that email notifications can be sent out for various events, such as order creation, order shipping status, and payment failure.
 
-For additional email configuration information, see [Configure and send email](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
+For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## Create an email notification profile
 
 To create an email notification profile, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Retail Email notification profile**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
 1. On the action pane, click **New**.
 1. In the **Email notification profile** field, enter a name to identify the profile.
 1. In the **Description** field, enter a relevant description.
@@ -75,20 +75,25 @@ The following image shows some example email template settings.
 
 To create an email event, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Retail Email notification profile**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
 1. In the list, find and select the desired record. 
 1. Select the email template from the **Email ID** drop-down list.
 1. Select the appropriate **Email notification type** from the drop-down list.
 1. Select the **Active** check box.
 1. On the action pane, select **Save**.
 
-The following image shows some example retail event notification settings.
+The following image shows some example event notification settings.
 
-![Retail event notification settings](media/email-notification-profile.png)
+![Event notification settings](media/email-notification-profile.png)
+
+### Next steps
+
+Before you can send mails, you must configure your outgoing mail service and set up a batch job. For more information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+
 
 ## Additional resources
 
-[Configure and send email](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email)
+[Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
 
 [Channels overview](channels-overview.md)
 

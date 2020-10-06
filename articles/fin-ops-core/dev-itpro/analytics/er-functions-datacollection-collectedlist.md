@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="COLLECTEDLIST">COLLECTEDLIST ER function</a>
+# COLLECTEDLIST ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `COLLECTEDLIST` function a *Record list* value that contains the list of val
 
 ## Syntax
 
-```
+```vb
 COLLECTEDLIST (condition 1 range, condition 1 value[, condition 2 range, condition 2 value, …, condition N range, condition N value])
 ```
 

@@ -5,7 +5,7 @@ title: Move LCS implementation projects to different Azure AD tenants
 description: This topic explains how to move your subscriptions and LCS Implementation project to a different Azure AD tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-You can move your subscriptions and your Microsoft Dynamics Lifecyle Services (LCS) Implementation project to a different Microsoft Azure Active Directory (Azure AD) tenant. Here are some scenarios where this move might be required:
+You can move your subscriptions and your Microsoft Dynamics Lifecycle Services (LCS) Implementation project to a different Microsoft Azure Active Directory (Azure AD) tenant. Here are some scenarios where this move might be required:
 
 - Subscriptions were accidentally purchased against the incorrect Azure AD tenant.
 
@@ -56,7 +56,7 @@ Ask the cloud service provider not to suspend the existing subscriptions at this
 
 ### Volume Licensing
 
-If you're licensed through a Microsoft Volume Licensing agreement, you must call the [Volume Licensing support center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx) and ask that the subscriptions be remapped from the old tenant to the new tenant. You can contact Volume Licensing Support through Microsoft Office 365 Admin center. Request a grace period, when the subscriptions will be active on both tenants. Because of customer privacy concerns, this request must be made by the customer. You should have the following information available:
+If you're licensed through a Microsoft Volume Licensing agreement, you must call the [Volume Licensing support center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx) and ask that the subscriptions be remapped from the old tenant to the new tenant. You can contact Volume Licensing Support through Microsoft 365 Admin center. Request a grace period, when the subscriptions will be active on both tenants. Because of customer privacy concerns, this request must be made by the customer. You should have the following information available:
 
 - Public customer number
 - Enrollment number
@@ -74,7 +74,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
 
 1. Fully configure LCS. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, the Asset library, Business process modeler (BPM), and so on.
 2. Deploy all non-production environments in the new LCS project.
-3. Apply the required code packages to the environments.
+3. Apply the required code packages to the environment. Make sure that the target is running the same application version as the source. We recommend using [All-in-one deployable packages](../../dev-itpro/dev-tools/aio-deployable-packages.md) and include any ISV licenses, if applicable.
 4. Upload data to the environments. You can move the data through data packages or by restoring the database. If you restore the database, additional steps are required in order to remap some properties to the new tenant.
 5. Update your user information.
 
@@ -89,14 +89,16 @@ On the new tenant, you will get a new LCS project that you must initiate and set
 
 6. Re-import all other users that have the correct security identifier (SID) and identity provider.
 7. Run the following commands to update the tenant ID in the appropriate tables:
-    ```sql
-    - select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
-    - select TENANTID from POWERBICONFIG
-    - select TENANTID from PROVISIONINGMESSAGETABLE
-    - select TENANTID from B2BINVITATIONCONFIG
-    - select TENANTID from RETAILSHAREDPARAMETERS
-    ```
-    
+
+
+	```sql
+    select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
+    select TENANTID from POWERBICONFIG
+    select TENANTID from PROVISIONINGMESSAGETABLE
+    select TENANTID from B2BINVITATIONCONFIG
+    select TENANTID from RETAILSHAREDPARAMETERS
+	```
+
 8. Fully configure the environments. As part of this step, configure the integration endpoints.
 9. Perform smoke tests on the user acceptance testing (UAT) environment in the new LCS project. These tests should focus on user sign-in, integrations, workflows, printing, reporting, and similar processes that depend on configuration and user information.
 10. If you already had a production environment deployed, you must open a support request to move it to the new tenant after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires an extended downtime of 48 to 72 hours.

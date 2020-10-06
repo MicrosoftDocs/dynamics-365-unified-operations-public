@@ -40,7 +40,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
 
 ## Add a custom column to the page
 1. Sign in to Dynamics 365 Commerce.
-2. Navigate to **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**. Or, search for **Screen layout** in the search bar.
+2. Navigate to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**. Or, search for **Screen layout** in the search bar.
 3. Select the **F3MGR** screen layout ID and click the **Designer** button in the action bar.
 4. Follow the instructions if prompted to install and enter the Azure Active Directory (AAD) credentials to launch the designer.
 5. Select **1440x960 – Full layout** from the layout sizes and click the **Layout designer** button.
@@ -70,7 +70,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
 6. In the **LinesGrid** folder, add a new Typescript file and name it **CustomColumn1Configuration.ts**.
 7. Add the following **import** statements to import the relevant entities and context.
 
-    ```Typescript
+    ```typescript
     import {
 
         ICustomLinesGridColumnContext,
@@ -83,24 +83,24 @@ This topic explains how to add a new custom column to a POS transaction page usi
     ```
 8. Create a new class named **LinesCustomGridColumn1** and extend it from **CustomLinesGridColumnBase**.
 
-    ```Typescript
+    ```typescript
     export default class LinesCustomGridColumn1 extends CustomLinesGridColumnBase {}
     ```
 9. Inside the class declare a private variable to capture the selected tender lines.
 
-    ```Typescript
+    ```typescript
     private _selectedTenderLines: ProxyEntities.TenderLine[ ];
     ```
 10. Create a class constructor method to initialize the context.
 
-    ```Typescript
+    ```typescript
     constructor(context: ICustomLinesGridColumnContext) {
         super(context);
     }
     ```
 11. Add the following methods for the columns title and alignment.
 
-    ```Typescript
+    ```typescript
     public title(): string {
         return "Line number";
     } 
@@ -110,13 +110,15 @@ This topic explains how to add a new custom column to a POS transaction page usi
     }
     ```
 12. Add the column compute value method, which returns the line number.
-    ```Typescript
+    ```typescript
     public computeValue(cartLine: ProxyEntities.CartLine): string {
         return cartLine.LineNumber.toString();
     }
     ```
+
     The code for the entire class is:
-    ```Typescript
+
+    ```typescript
     import {
         ICustomLinesGridColumnContext,
         CustomLinesGridColumnBase
@@ -142,10 +144,11 @@ This topic explains how to add a new custom column to a POS transaction page usi
         }
     }
     ```
+
 13. Create a new .json file under the **CustomColumnExtensions** folder and name it **manifest.json**.
 14. In the **manifest.json** file, replace the generated code with the following code.
 
-    ```Typescript
+    ```typescript
     {
         "$schema": "../manifestSchema.json",
             "name": "Pos_Extensibility_Samples",
@@ -173,14 +176,12 @@ This topic explains how to add a new custom column to a POS transaction page usi
      "deliveryGrid": {
          "customColumn1": { "modulePath": "Cart/DeliveryGrid/CustomColumn1Configuration" }
      }
-
-    
     ```
     
     
 15. Open the **extensions.json** file under the **POS.Extensions** project and update it with the **CustomColumnExtensions** sample, so that POS during runtime will include this extension.
 
-    ```Typescript
+    ```typescript
     {
         "extensionPackages": [
             {
@@ -194,7 +195,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
     ```
 16. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions. If you want to include any extension part of the POS, then you need add the extension folder name and comment the extension from the extension list as shown.
 
-    ```Typescript
+    ```typescript
     "exclude": [
         "AuditEventExtensionSample",
         "B2BSample",

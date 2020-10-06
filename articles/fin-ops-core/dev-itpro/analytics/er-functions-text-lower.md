@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LOWER">LOWER ER function</a>
+# LOWER ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `LOWER` function returns the specified text string as a *String* value after
 
 ## Syntax
 
-```
+```vb
 LOWER (text)
 ```
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUND">ROUND ER function</a>
+# ROUND ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ROUND` function returns the specified number as a *Real* value after it has
 
 ## Syntax
 
-```
+```vb
 ROUND (number, decimals)
 ```
 

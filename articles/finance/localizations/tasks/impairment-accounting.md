@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Setup impairment accounting common parameters and posting profile
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this task to learn how to define impairment accounting common parameters and posting profiles.
 

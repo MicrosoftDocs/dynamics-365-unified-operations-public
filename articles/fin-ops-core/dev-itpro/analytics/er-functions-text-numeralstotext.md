@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMERALSTOTEXT">NUMERALSTOTEXT ER function</a>
+# NUMERALSTOTEXT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `NUMERALSTOTEXT` function returns the specified number as a *String* value a
 
 ## Syntax
 
-```
+```vb
 NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)
 ```
 

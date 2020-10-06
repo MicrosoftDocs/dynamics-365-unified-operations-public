@@ -4,7 +4,7 @@
 title: Cross-docking from production orders to outbound docks
 description: This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: WHSCrossDockOpportunityPolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903

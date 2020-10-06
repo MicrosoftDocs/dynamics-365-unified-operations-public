@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -40,13 +40,13 @@ This topic explains how to use the new test recorder tool in Cloud POS to record
 This topic applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
-> The test recorder is supported in Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later. Currently, POS RSAT is in preview. This means that it's not available in a public download version. If you would like to try the preview version, please create a support ticket.
+> The test recorder is supported in Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later.
 
 ## Test recorder
 
 The test recorder in POS helps significantly reduce the time and cost of UAT. UAT is typically required before a Microsoft application update is applied, or before custom code and configurations are applied to your POS production environments.
 
-The test recorder can record user actions in the client, and it provides exact fidelity for all controls and for all elements in the Document Object Model (DOM). In POS, the test recorder captures an event that has occurred and stores it, together with all relevant information about the corresponding user action, in real time. From this information, the test recorder can capture the type of user action (such as a button click, value entry, or navigation) and any data that is related to that user action (such as the value and type of input data, the view context, or the record context). However, password information isn't captured. During a recording session, the test recorder persists all the recorder information in memory. Then, at the end of the recording session, it generates an output file that includes enough detail so that RSAT can be used later to play back the actions just as the user performed them.
+The test recorder can record user actions in the client, and it provides exact fidelity for all controls and for all elements in the Document Object Model (DOM). In POS, the test recorder captures an event that has occurred and stores it, together with all relevant information about the corresponding user action, in real time. From this information, the test recorder can capture the type of user action (such as a button click, value entry, or navigation) and any data that is related to that user action (such as the value and type of input data, the view context, or the record context). However, password information isn't captured. During a recording session, the test recorder persists all the recorded information in memory. Then, at the end of the recording session, it generates an output file that includes enough detail so that RSAT can be used later to play back the actions just as the user performed them.
 
 > [!IMPORTANT]
 > The test recorder captures all the data that is entered during a recording session except POS user passwords. Don't record any personally identifiable information (PII), secrets, sensitive data, or user-specific data. All data that is entered during a recording session is stored in the Recording.xml file, and other users can see it in LCS and Azure DevOps, in the variables.xlsx and Recording.xml files, and during playback.
@@ -88,19 +88,19 @@ To open the test recorder, sign in to Cloud POS, and then, on the **Settings** p
 
 To end a recording session, select **Stop**. Note that you can't restart a recording session after you end it. Therefore, make sure that the recording session is completed before you end it.
 
-[![Stop](./media/Stop.png)](./media/Stop.png)
+[![Stop button on test recorder](./media/Stop.png)](./media/Stop.png)
 
 ### Pause a recording session
 
 To temporarily stop (pause) a recording session, select **Pause**. Steps that you perform after you select **Pause** aren't recorded.
 
-[![Pause](./media/Pause.png)](./media/Pause.png)
+[![Pause button on test recorder](./media/Pause.png)](./media/Pause.png)
 
 ### Continue a recording session
 
 To resume a recording session after you've paused it, select **Recording**.
 
-[![Recording](./media/Recording.png)](./media/Recording.png)
+[![Recording button on test recorder](./media/Recording.png)](./media/Recording.png)
 
 ### Start and end a task
 
@@ -121,14 +121,14 @@ Tasks can be nested inside other tasks. In this way, you can better organize ver
 An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add an annotation to any step by selecting the **Edit** button (pencil symbol) to the right of the step.
 
 > [!div class="mx-imgBorder"]
-> [![Annotation](./media/Annotation.png)](./media/Annotation.png)
+> [![Annotation pencil button on test recorder](./media/Annotation.png)](./media/Annotation.png)
 
 ### Add text and notes
 
 You can use the **Text** and **Notes** fields in the annotation dialog box to add text that should be associated with a step in a task guide.
 
 + **Text** – Text that you enter in this field appears *above* the step text in the test steps.
-+ **Notes** – Text that you enter in this field appears *below* the step text in the LCS.
++ **Notes** – Text that you enter in this field appears *below* the step text.
 
 ### Change input values
 
@@ -144,17 +144,17 @@ To hide and show the test recorder pane during a recording session, select the c
 > [!div class="mx-imgBorder"]
 > [![Collapse button](./media/Hide.png)](./media/Hide.png)
 
-### Test recorder floater control
+### Test recorder floating control
 
-The test recorder floater control is useful when the test recorder pane is hidden during a recording session. The test recorder pane overrides non-error dialog boxes and/or part of the POS view. Therefore, you must sometimes hide the pane to add validation in the dialog boxes or select controls. If the test recorder pane is hidden, but you must still be able to access test recording functionality (for example, you must turn on validation mode, or pause or continue the recording session), you can use this floater control.
+The test recorder floating control is useful when the test recorder pane is hidden during a recording session. The test recorder pane overrides non-error dialog boxes and/or part of the POS view. Therefore, you must sometimes hide the pane to add validation in the dialog boxes or select controls. If the test recorder pane is hidden, but you must still be able to access test recording functionality (for example, you must turn on validation mode, or pause or continue the recording session), you can use this floating control.
 
-[![Floater control](./media/Floatter.png)](./media/Floatter.png)
+[![Floating control](./media/Floatter.png)](./media/Floatter.png)
 
-The following sections describe the controls on the floater control.
+The following sections describe the controls on the floating control.
 
 #### Move control
 
-The move control lets you move the floater control within the POS app.
+The move control lets you move the floating control within the POS app.
 
 #### Validation mode
 
@@ -172,23 +172,33 @@ To resume the recording session after you've paused it, select **Recording**.
 
 ### Create a recording
 
+> [!IMPORTANT]
+> Before creating the recording or test execution/playback, turn off the Show app tour and Show app introduction after sign in. To do this, go to the **CPOS Settings > Application help** section (applicable only if Dynamics 365 Commerce demo data is used). Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
+
 Follow these steps to create a new recording by using the test recorder:
 
-1. Open Cloud POS, and sign in.
-2. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
+1. Launch Cloud POS.
+
+2. Select the hamburger icon on the left pane and select **Settings**. Don't sign in to Cloud POS. The sign in step must be recorded as part of the test recording flow, so you need to launch the recorder before sign in.)
+
+3. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
     [![Task and Test recorders](./media/CreateTest.png)](./media/CreateTest.png)
 
-3. Select **Create a new recording**.
+4. Select **Create a new recording**.
 
     > [!div class="mx-imgBorder"]
     > [![Create a new recording](./media/NewTest.png)](./media/Newtest.png)
 
-4. Enter a name and description for the recording, and then select **Start**.
+5. Enter a name and description for the recording, and then select **Start**.
 
     The test recorder enters recording mode, and the recording session begins. The test recorder pane shows information and controls that are related to the recording session.
+    
+> [!NOTE]
+> All test recording must begin from the Cloud POS sign in page. If the recording is started from the home page, any transaction or  other page playback will fail and you will need to start the recording again from the sign in page. 
 
-5. Perform the actions that you want to perform in the POS UI.
+
+6. Perform the needed actions in the POS user interface.
 
     > [!div class="mx-imgBorder"]
     > [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
@@ -216,7 +226,7 @@ After you end a recording session, you can download the recording by selecting *
 
 The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. 
 
-To upload to Azure Dev Ops directly:
+To upload to Azure DevOps directly:
 1. Change the .axtr file extension to .zip.
 2. Open the .zip package. 
 3. Inside the package there will be file with name Recording.xml. Upload the Recording.xml to the test case in Azure DevOps. Don’t upload the entire .zip or .axtr package.
@@ -230,36 +240,28 @@ Download the Microsoft Windows Installer (MSI) package file for RSAT from [Regre
 
 The following procedure describes the configuration that is required to run the POS test cases.
 
-If you are using the preview version of POS RSAT, after the installation of RSAT, add the following setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file. This file is located in main RSAT installation folder (usually C:\Program Files (x86)\Regression Suite Automation Tool).
-
-```Xml
-<add key="RetailPos" value="true" />
-```
-
-If this setting is not used, Retail POS tab will not be shown on the **RSAT Settings** tab.
-
 ### Configure the POS settings
 
 1. Open RSAT from your desktop.
 2. Select the **Settings** button in the upper right to configure RSAT.
-3. In the **Settings** dialog box, on the **Retail POS** tab, on the **Playback environment** tab, set the following fields:
+3. In the **Settings** dialog box, click the **Optional** tab and select the **Configure Retail POS** option to enable the Retail POS automation.
+4. In the **Settings** dialog box, on the **Retail POS** tab, on the **Playback environment** tab, set the following fields:
 
     + **Cloud POS URL** – Enter the URL of the Cloud POS environment where you want to run the test.
     + **Commerce Scale Unit URL** – Enter the Commerce Scale Unit URL that should be used for device activation, if the device hasn't already been activated.
 
-
-> [!NOTE]
-> The Cloud POS and Commerce Scale Unit URL can be obtained from Finance and Operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+        > [!NOTE]
+        > The Cloud POS and Commerce Scale Unit URL can be obtained from Finance and Operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
    + **Register number** – Enter the ID of the register number (channel) where the test should be run.
    + **Device** – Enter the ID of the device where the test should be run.
-   + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
+   + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
 
     [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
 
-4. Select the **POS login credentials** tab.
+5. Select the **POS login credentials** tab.
 
     During a recording session, the test recorder captures only the user name from the POS. It doesn't store any password. However, to run the test, you must have both the user name and the password that are used to sign in to POS. This tab captures the POS user name and password, so that the password information is securely stored outside the recording file. During test execution, the user ID is then mapped to the same user ID that is entered in RSAT, and the password is retrieved.
     
@@ -267,22 +269,22 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
 
     [![POS login credentials](./media/PosLogin.png)](./media/PosLogin.png)
 
-5. Select **New**.
+6. Select **New**.
 
     [![POS user](./media/EditPosUser.png)](./media/EditPosUser.png)
 
-6. In the **Username** field, enter the user name for sign-in to POS.
-7. In the **Password** field, enter the password for sign-in to POS.
-8. Repeat steps 6 through 8 to enter other user names and passwords for sign-in to POS.
-9. To edit a set of POS sign-in credentials, select **Edit**.
-10. To delete a set of POS sign-in credentials, select **Delete**.
+7. In the **Username** field, enter the user name for sign in to POS.
+8. In the **Password** field, enter the password for sign in to POS.
+9. Repeat steps 6 through 8 to enter other user names and passwords.
+10. To edit a set of POS sign-in credentials, select **Edit**.
+11. To delete a set of POS sign-in credentials, select **Delete**.
 
 ## Run tests
 
 This section explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 
 > [!NOTE]
-> For detailed information about how to set up Azure DevOps and test cases, see [Regression suite automation tool installation and configuration](../../dev-itpro/perf-test/rsat/rsat-overview.md). You must complete that setup before you start to run tests.
+> For detailed information about how to set up Azure DevOps and test cases, see [Regression suite automation tool installation and configuration](../../dev-itpro/perf-test/rsat/rsat-overview.md). You must complete that setup before you start to run tests. Before test execution/playback, turn off the Show app tour and Show app introduction after sign in. Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
 
 ### Load test cases and create parameter files
 
@@ -303,7 +305,7 @@ When you select **New**, test automation files are generated in your working dir
 
 ![Test parameter file in the Parameters File column](./media/RSATParameter.png)
 
-For the test recording files, the **Generate Test Execution files only** option is unavailable. Because Cloud POS uses the Selenium web directly to do the playback, no additional script file must be generated.
+For the test recording files, the **Generate Test Execution files only** option is unavailable. Because Cloud POS uses Selenium WebDriver directly to do the playback, no additional script file must be generated.
 
 ![Unavailable Generate Test Execution files only option](./media/RSATNewOption.png)
 
@@ -314,6 +316,20 @@ This section explains how to modify Excel files by specifying input and validati
 In RSAT, select one or more test cases to modify, and then select **Edit**. An Excel window is opened for each test case that you selected. Alternatively, you can open the Excel files directly from the working directory.
 
 In addition to a **Summary** tab, the Excel file includes a **Variables** tab that has the details of all the variables that were generated. POS automatically generates variables for all the input values that are entered during a recording session. You don't have to generate the variables separately. Each variable has a unique variable ID that you can pass, in order, to different test cases in a single instance of test execution. All the variables on the **Variables** tab appear in the order that they were entered in during the recording session.
+
+To pass variables or values between POS test cases, select the test cases in the RSAT tool and open the Variables.xlsx file by selecting the Excel icon in the tool. Copy the Variable ID (Column C) value and paste it in the Variable value field (Column D). For example, to pass the Receipt ID from **Test case 1 - variable.xlsx** to **Test case 2 - variable.xlsx**, copy the variable ID value from column C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe. Paste the value in the Variable value column D in to the test case 2 - variable.xlsx file, in braces: **{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**
+
+### Test case 1 – Variable.xlsx
+
+| A  (Description)            | B (View name) | C (Variable ID)| D (Variable value) |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Receipt Id "HOU123R456" | ShowJournalView        | c8cc0571-9a27-b3c5-0749-c26c3cca6afe   | HOU123R456     |
+
+### Test case 2 – Variable.xlsx
+
+| A  (Description)            | B (View name) | C (Variable ID)| D (Variable value) |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Receipt Id "HOU123R456" | ShowJournalView  | 80f23afa-5b76-5442-d16a-6cc9b8b245cb| **{{c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}** |
 
 ### Validate expected values
 
@@ -331,7 +347,7 @@ To change the order that test cases are run in, use the up arrow and down arrow 
 
 ### Investigate results
 
-After test cases have finished running, the pass or fail status appears in the **Result** column in RSAT. You can select the **Result** column to view the error messages. More details are available in Azure DevOps, and you can use them to investigate the results. From your Azure DevOps project page, go to **Test \> Runs**.
+After test cases have finished running, the pass or fail status appears in the **Result** column in RSAT. More details are available in Azure DevOps, and you can use them to investigate the results. From your Azure DevOps project page, go to **Test \> Runs**.
 
 All error messages are also available locally at C:\\Users\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg\<TestCaseId\>.txt.
 
@@ -355,7 +371,8 @@ You must manually delete these files and secure them as you require. All these f
 
 ### Creating test cases by using the test recorder
 
-+ Make sure that all your recordings start from the POS log-in screen.
++ Before creating the recording or test execution/playback, turn off the Show app tour and Show app introduction after sign in. To do this, go to the **CPOS Settings > Application help** section (applicable only if Dynamics 365 Commerce demo data is used). Turn this off in the demo data by running the following script in your channel database: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'.
++ Disable Chrome extension - If possible, disable the Chrome extension in the Chrome browser that used to record and play back. The Chrome extension may change the DOM element xpath, which can result in test case failure because the element is not found during the execution of steps (xpath is different from the recording).
 + Keep individual recordings short, and focus on a business task that is performed by one user, such as the creation a sale transaction. This approach makes it easier to maintain and reuse test cases.
 + Don't record any scenario that includes secrets.
 + Recording and playback must be done in the same screen layout and at the same resolution. If recording and playback are done in different layouts and at different resolutions, playback will fail.
@@ -364,12 +381,17 @@ You must manually delete these files and secure them as you require. All these f
 + Keystroke recording performance may be slow, so type slowly while recording so that all the events are captured property.
 + Peripheral emulation is currently not supported, use a keyboard wedge-based device.
 + Don’t hold a key down during recording, as this could record multiple key press events.
++ Extension controls should follow the best practice of proper XPath and if possible have a unique ID for each HTML element.
 
 ## Troubleshooting guides
 
 ### Chrome driver
 
 If playback fails by flickering (opens and closes browser multiple times without starting playback), this could be related to the Chrome driver version. Check the error log in the RSAT tool. If the error states that the Chrome driver version is not supported, then download the supported chromedriver.exe version mentioned in the error message and paste it in the …\Regression Suite Automation Tool\Common\External\Selenium folder.  You can download the Chrome driver from [ChromeDriver](https://chromedriver.chromium.org/downloads).
+
+### Disable Chrome extension
+
+If possible, disable the Chrome extension in the Chrome browser that used to record and play back. The Chrome extension may change the DOM element xpath, which can result in test case failure because the element is not found during the execution of steps (xpath is different from the recording).
 
 ### .NET standard error
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # View posted sales tax transactions
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes some ways to view posted sales tax transactions. You can view posted sales tax transactions from various pages depending on what you need to view. This task uses the USMF demo company.
 

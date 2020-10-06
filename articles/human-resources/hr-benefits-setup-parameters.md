@@ -5,7 +5,7 @@ title: Set Benefits management parameters
 description: Configure parameters for Benefits management in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,13 +32,11 @@ ms.dyn365.ops.version: Human Resources
 
 # Set Benefits management parameters
 
-[!include [banner](includes/preview-feature.md)]
-
-Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you need to configure Benefits management parameters. These parameters set default values, reason codes, and other options.
+Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you must configure Benefits management parameters. These parameters set default values, reason codes, and other options.
 
 ## Configure general parameters
 
-1. In the **Benefits management** workspace, under **Setup**, select **Parameters**.
+1. In the **Benefits management** workspace, under **Setup**, select **Human Resources Shared Parameters**.
 
 2. In the **General** tab, specify values for the following fields:
 
@@ -50,9 +48,10 @@ Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you
    | **Reopen reason code** | The reason code to use when an employee benefit plan is reopened. It displays in a dialog during the cancellation process. Users can change the **Reopen reason code** if necessary. | 
    | **Life event reason code** | The reason code to use when a life event occurs. |
    | **Rate change reason code** | The reason code to use when canceling and reopening an employee benefit plan during the rate change update process. It indicates which records were changed by the rate change update process. |
+   | **Benefits annual salary** | Enables you to set a **Benefits annual salary** amount for an employee. Human Resources will use the **Benefits annual salary** amount when determing coverage amounts, instead of the fixed compensation annual amount. |
    | **New hire eligible** | Specifies whether new hires are eligible. |
-   | **New hire enrollment period** | The period of time the new hire enrollment is allowed.</br></br>**Note**: This setting overrides any new hire enrollment period you set on the plan eligibility rule. | 
-   | **Annual salary enhancement** | Specifies whether to automatically calculate the **Annual benefit salary** amount in **Employment Benefit Details**. It's based on the employee’s **Fixed compensation pay rate**, **Average hours**, and **Payment frequency**.</br></br>**Average hours** x **Fixed pay rate** x **Payment frequency** (# of pay periods) = **Annual benefit salary** </br></br>If any of the values in the **Average hours**, **Fixed compensation pay rate**, or **Payment frequency** fields change, the system automatically recalculates the employee’s **Annual benefit salary** amount based on the changed values. The system creates a **Date effective** record to identify the exact date and time the change occurred. You can manually edit the **Annual benefit salary** amount if necessary. |
+   | **New hire enrollment period** | The period of time the new hire enrollment is allowed.</br></br>**Note**: This setting overrides any new hire enrollment period you set on the plan eligibility rule. |
+   | **Default pay frequency** | The default pay frequency to use when new workers are added. |
    | **Life events enabled** | Enables life events. |
    | **Hide legacy benefit forms** | Allows you to hide legacy benefit forms. |
 
@@ -60,7 +59,7 @@ Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you
 
 ## Configure Employee self service parameters
 
-1. In the **Benefits management** workspace, under **Setup**, select **Parameters**.
+1. In the **Benefits management** workspace, under **Setup**, select **Human Resources Parameters**.
 
 2. In the **Employee self service** tab, specify values for the following fields:
 

@@ -4,7 +4,7 @@
 title: Asset fault analysis
 description: This topic explains asset fault analysis in Asset Management.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetObjectFaultCalculate 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -83,7 +83,7 @@ In the screenshot below, **Year** and **Month** are added to show how you can vi
 
 The combination of assets and an asset type is used as a basis for the calculations shown in the three screenshots below, which will increase in detail level.  
 
-Generally, the buttons in the **Group by date**, **Group by asset**, **Group by functional location** action pane groups, as well as the **Fault** button (Fault ID), contain periods or asset relations. The **Symptom**, **Area**, **Type**, **Cause**, and **Remedy** buttons are categorizations used in fault management to analyze asset fault registrations and pinpoint problem areas.  
+Generally, the buttons in the **Group by date**, **Group by asset**, **Group by functional location** Action Pane groups, as well as the **Fault** button (Fault ID), contain periods or asset relations. The **Symptom**, **Area**, **Type**, **Cause**, and **Remedy** buttons are categorizations used in fault management to analyze asset fault registrations and pinpoint problem areas.  
 
 **Group by symptom, asset, and asset type**
 

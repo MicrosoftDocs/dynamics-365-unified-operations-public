@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="DAYS">DAYS ER function</a>
+# DAYS ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `DAYS` function returns an *Integer* value that represents the number of day
 
 ## Syntax
 
-```
+```vb
 DAYS (date 1, date 2) as Integer
 ```
 

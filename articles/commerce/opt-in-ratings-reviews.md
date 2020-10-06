@@ -65,6 +65,6 @@ To opt in to use ratings and reviews on your site, follow these steps.
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
-[Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+[Sync product ratings in Dynamics 365 Commerce](sync-product-ratings.md)
 
 

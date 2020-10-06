@@ -4,7 +4,7 @@
 title: Set up warehouses for transfer orders
 description: This topic describes how you can set up warehouses for transfer orders.
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 01/18/2019
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

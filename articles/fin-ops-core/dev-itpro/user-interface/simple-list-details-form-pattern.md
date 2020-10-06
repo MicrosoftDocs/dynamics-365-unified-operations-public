@@ -5,7 +5,7 @@ title: Simple List and Details form pattern
 description: This topic provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 author: jasongre
 manager: AnnBe
-ms.date: 10/08/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16242
@@ -133,19 +133,19 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **PaymTerm** 
 
-[![Simple List and Details – List Grid example](./media/simplelistanddetails2-1024x558.png)](./media/simplelistanddetails2.png)
+[![Simple List and Details – List Grid example](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
 
 ### Simple List and Details – Tabular Grid
 
 Form: **ExchangeRate** 
 
-[![Simple List and Details - Tabular Grid example](./media/simplelistanddetails3-1024x557.png)](./media/simplelistanddetails3.png)
+[![Simple List and Details - Tabular Grid example](./media/sldGridExample.png)](./media/sldGridExample.png)
 
 ### Simple List and Details – Tree
 
-Form: **FiscalCalendars** 
+Form: **CaseCategorySetup** 
 
-[![Simple List and Details – Tabular Grid example](./media/simplelistanddetails4-1024x507.png)](./media/simplelistanddetails4.png)
+[![Simple List and Details – Tabular Grid example](./media/sldTreeExample.png)](./media/sldTreeExample.png)
 
 ## Appendix
 ### Frequently asked questions

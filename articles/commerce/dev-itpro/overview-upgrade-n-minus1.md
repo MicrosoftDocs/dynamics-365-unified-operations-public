@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Upgrade and N-1 support for Retail
-description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 Retail. N-1 support lets customers who have stores that run AX 2012 R3 CU10 work with Dynamics 365 Retail headquarters after an upgrade. 
+title: Upgrade and N-1 support for Commerce
+description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 Commerce. N-1 support lets customers who have stores that run AX 2012 R3 CU10 work with Dynamics 365 Commerce headquarters after an upgrade. 
 author: athinesh99
 manager: AnnBe
 ms.date: 11/14/2017
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 ---
 
-# Upgrade and N-1 support for Retail
+# Upgrade and N-1 support for Commerce
 
 [!include [banner](../../includes/banner.md)]
 
-Upgrade and N-1 support have been enabled in the July release of Microsoft Dynamics 365 Retail. N-1 support lets customers who have stores that run Microsoft Dynamics AX 2012 R3 Cumulative Update 10 (CU10) work with Headquarters after an upgrade. The main purpose of upgrade and N-1 support is to let AX 2012 R3 customers take advantage of the benefits of the cloud.
+Upgrade and N-1 support have been enabled in the July 2017 release of Microsoft Dynamics 365 Retail. N-1 support lets customers who have stores that run Microsoft Dynamics AX 2012 R3 Cumulative Update 10 (CU10) work with Headquarters after an upgrade. The main purpose of upgrade and N-1 support is to let AX 2012 R3 customers take advantage of the benefits of the cloud.
 
 The following features let customers upgrade in a seamless manner:
 
@@ -51,8 +51,8 @@ The actual data upgrade process then occurs. The AX 2012 database is moved to Mi
  
 Most of the post-upgrade configuration for channels requires few manual steps. Customers can then use the pre-upgrade and post-upgrade checklists to learn about the tasks that must be completed. The post-upgrade tasks include initiating a full sync to the stores from the upgraded database, validating channels, registers, and devices against the upgraded database, validating transaction synchronization, and validating that N-1 support is in place.
  
-For N-1 support, the customer must install the N-1 package in Headquarters. No setup is required in the stores. This installation must be done during the upgrade window, after the N-1-related configuration has been completed.
+For N-1 support, the customer must install the N-1 package in Commerce headquarters. No setup is required in the stores. This installation must be done during the upgrade window, after the N-1-related configuration has been completed.
 
-After the Headquarters upgrade and N-1 setup are completed, the N-1 store components can communicate with Headquarters. No channel-side components must be installed for N-1 support. However, to enable the N-1 store to communicate with Headquarters, cashiers must change their password the first time that they sign in.
+After the Commerce headquarters upgrade and N-1 setup are completed, the N-1 store components can communicate with Commerce headquarters. No channel-side components must be installed for N-1 support. However, to enable the N-1 store to communicate with Commerce headquarters, cashiers must change their password the first time that they sign in.
  
 For instructions for N-1 installation, see [Phased Rollout (N-1) installation, configuration, and cutover guide](n-1-installation-configuration.md).

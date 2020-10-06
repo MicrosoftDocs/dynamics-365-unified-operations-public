@@ -3,9 +3,9 @@
 
 title: Prepare for integration with MTD for VAT (United Kingdom)
 description: This topic explains the process of setting up Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
-author: lizagolub
+author: liza-golub
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: United Kingdom
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: elgolu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -268,11 +268,14 @@ Three parameters uniquely identify each web application on the HMRC side:
 
 - **Client ID** – The unique identifier of the web application.
 - **Client secret** – The secret passphrase that is used to authorize the web application.
-- **Server token** – The secret token that is used to authorize the web application when requests are made to any application-restricted endpoint.
+- **Server token** – The secret token that is used to authorize the web application when requests are made to any application-restricted endpoint. 
+
+    > [!IMPORTANT]
+    > The server token has been deprecated on the HMRC side and is no longer in use.
 
 These parameters are used when requests are sent to HMRC. They must be filled in before you start the authorization process for a web application.
 
-For the production web application (**Dynamics 365 for Finance and Operations**), Microsoft delivers these parameters through the package of data entities, and they are stored in the system in an encrypted format. When you import the predefined setup of Electronic messages functionality for MTD for VAT, these parameters are also imported. No additional manual actions are required. After the parameters are imported, the production application is ready for authorization (that is, it's ready to obtain an authorization code and access token).
+For the production web application (**Dynamics 365 for Finance and Operations**), Microsoft delivers these parameters through the package of data entities, and they are stored in the system in an encrypted format. When you import the predefined setup of Electronic messages functionality for MTD for VAT, these parameters are also imported. No additional manual actions are required. After the parameters are imported, the production application is ready for authorization.
 
 - Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and verify that **Client ID** and **Client secret** values are set for the **Dynamics 365 for Finance and Operations** web application.
 
@@ -296,21 +299,21 @@ When a company is ready to interoperate in live with MTD for VAT, it must create
 Before you can work with MTD for VAT, the VAT registration number of your legal entity must be defined in the registration ID. For more information, see [Registration IDs](emea-registration-ids.md).
 
 1. Create a registration type that you will use for VAT registration numbers. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation).
-2. Associate the registration type with a VAT ID. For more information, see [Registration category](emea-registration-ids.md#supported-registration-categories).
+2. Associate the registration type created in step 1 with a registration category of **VAT ID**. For more information, see [Registration category](emea-registration-ids.md#supported-registration-categories).
 3. Go to **Organization administration** \> **Global Address Book** \> **Legal entities**, and then, on the Action Pane, select **Registration ID**.
-4. Define the VAT registration number as a registration ID that is associated with the **VAT ID** registration category.
+4. Define the VAT registration number as a registration ID that is associated with the registration category of **VAT ID** that you created in step 2.
 
     ![Registration ID setup](media/reg-ids-setup.png)
 
 After the company has obtained user credentials, an application of the production type can be authorized. An application of production type is uniquely identified by a client ID and a client secret, and is provided by Microsoft (unless the company is creating its own solution for any version of Finance). To authorize the application of the production type, complete the following tasks on the Finance side:
 
-1. Get an authorization code.
-2. Get an access token.
+1. Obtain an authorization code.
+2. Obtain an access token.
 
-### Obtain an authorization code and an access token
+### Obtain an authorization code
 To get an authorization code from HMRC, complete the following steps.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize (**Dynamics 365 for Finance and Operations**), and then select **Get authorization code**. 
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize (**Dynamics 365 for Finance and Operations**), and on the Action Pane, select **Get authorization code**. 
 2. Select **OK** to confirm that you want to initialize the authorization process. 
 3. On the **Electronic report parameters** page, set the **Scope** field. The following values are allowed by HMRC:
 
@@ -331,6 +334,18 @@ To get an authorization code from HMRC, complete the following steps.
 > [!IMPORTANT]
 > The authorization code is valid for only 10 minutes. You must retrieve the access token during this time. If you don't retrieve the access token within 10 minutes, and the authorization code expires, you might have to get a new authorization code.
 
+### Obtain an access token
+
+You should initialize the retrieval of an access token within ten minutes of an authorization code being granted by HMRC.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the web application that you want to authorize (**Dynamics 365 for Finance**). 
+2. On the **Web applications** page, on the Action Pane, select **Obtain access token** to request an access token from HMRC. 
+3. Paste the authorization code that you copied from the HMRC portal earlier, and then select **OK**. The access token request is sent to HMRC, and the access token from the response that is received is automatically saved in Finance. You can't view the access token from the user interface (UI). However, the **Access token will expire in** field shows the validity period of the access token.
+
+Every access token is valid for four hours after it's created by HMRC. You don't have to manually refresh an access token. During interoperation with HMRC, the process of refreshing the access token is done automatically by the system.
+
+To manually get a new access token, you can refresh. To manually refresh an access token, on the **Web applications** page, on the Action Pane, select **Refresh access token**. A refresh access token request is sent to HMRC, and a new access token from the response that is received is automatically saved in the system.
+
 ## Obtain an authorization code for the sandbox environment
 
 For testing purposes, HMRC lets you register as a developer on [HMRC Developer Hub](https://developer.service.hmrc.gov.uk/developer/registration) and access the sandbox environment. When you're registered as a developer, you can use the **UK MTD VAT TEST** processing to try to interoperate with the HMRC sandbox environment. However, you must first get test user credentials:
@@ -343,12 +358,10 @@ These three parameters must be used together.
 
 To get test user credentials, complete the following steps. 
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, select **UK MTD VAT TEST**, and then, on the **Messages** FastTab, select **New**. 
-2. Select the **Create test user request** action, and then select **OK**. A new electronic message is created. You don't have to fill in any fields of this electronic message to create a test user request. 
-3. On the **Messages** FastTab, select **Generate report**, and then select **OK** to confirm that you want to send a test user request to HMRC. A **Generate test user request** action is initialized together with the **Send test user request** action.
-4. The response from HMRC will be attached to the electronic message as an attachment in JSON format. To open it, select the electronic message, and then select **Attachments** (the paper clip symbol) in the upper-right corner of the page. 
-5. On the **Attachments** page for the selected electronic message, select the last **TestUserInfo.txt** file, and then, on the Action Pane, select **Open**. In the opened file, you will find **userID**, **password**, and **VRN** fields, and their respective values.
-6. Update the **Tax exempt number** value of the legal entity that you're working in with the **VRN** value that you obtained from HMRC. Don't change this value while you're working with the sandbox web application, unless you get new test user credentials.
+1. Complete the steps described in the [Create a test user](https://developer.service.hmrc.gov.uk/api-test-user) section of the HMRC portal.
+2. The test user generated in the [Create a test user](https://developer.service.hmrc.gov.uk/api-test-user) section contains information about **UserID**, **Password**, and **Making Tax Digital Income Tax ID** fields, and their respective values.
+3. Update the **Tax exempt number** value of the legal entity that you're working in with the **Making Tax Digital Income Tax ID** value that you obtained from HMRC. Don't change this value while you're working with the sandbox web application, unless you get new test user credentials. 
+4. Store the **UserID** and **Password** values related to the test user that you created. You will need these values during next steps of the authorization process.
 
 After you've updated the **Tax exempt number** value of the legal entity that you're working in, you can proceed with authorization in HMRC. You must complete the following two tasks before your system is authorized to interoperate with HMRC:
 
@@ -368,8 +381,8 @@ Complete the following steps to get an authorization code.
     - read:vat write:vat
 
 5. We recommend that you enter **read:vat write:vat** in this field, because the same application must be used for both GET and POST HTTPS requests to the web service. When you've finished, select **OK** to send the authorization request to HMRC. You're redirected to the HMRC portal for authorization. 
-6. On the **Sign in** page, enter the **userID** and **password** values from the response that you received when you got test user credentials. The next page shows the authorization code that HMRC granted. 
-7. Copy it to the clipboard, and then get an access token. 
+6. On the **Sign in** page, enter the **UserID** and **Password** values from the test user you created earlier. The next page shows the authorization code that HMRC granted. 
+7. Copy the authorization code to the clipboard, and then get an access token.
 
 > [!IMPORTANT]
 > The authorization code is valid for only 10 minutes. You must obtain the access token during this time. If you don't obtain the access token within 10 minutes, and the authorization code expires. You can get a new authorization code by using the same test user credentials. Alternatively, you can get new test user credentials.
@@ -382,9 +395,9 @@ You should initialize retrieval of an access token within 10 minutes after an au
 2. On the **Web applications** page, on the Action Pane, select **Obtain access token** to request an access token from HMRC. 
 3. Paste the authorization code that you copied from the HMRC portal earlier, and then select **OK**. The access token request is sent to HMRC, and the access token from the response that is received is automatically saved in Finance. You can't view the access token from the user interface (UI). However, the **Access token will expire in** field shows the validity period of the access token.
 
-Every access token is valid for four hours after it's created by HMRC. To get a new access token, you don't have to renew an authorization code. You just have to refresh the access token. To manually refresh an access token, on the **Web applications** page, on the Action Pane, select **Refresh access token**. A refresh access token request is sent to HMRC, and a new access token from the response that is received is automatically saved in the system.
+Every access token is valid for four hours after it's created by HMRC. You don't have to manually refresh an access token. During interoperation with HMRC, the process of refreshing the access token is done automatically by the system.
 
-However, you don't have to manually refresh an access token every four hours or before you start to interoperate with HMRC. During interoperation with HMRC, the process of refreshing the access token is automatically initialized and is hidden from users.
+To manually get a new access token, you can refresh. To manually refresh an access token, on the **Web applications** page, on the Action Pane, select **Refresh access token**. A refresh access token request is sent to HMRC, and a new access token from the response that is received is automatically saved in the system.
 
 ## Retrieve VAT obligations from HMRC
 

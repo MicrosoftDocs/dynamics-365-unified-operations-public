@@ -42,7 +42,7 @@ The functionality consists of the following parts:
 
 ### Common POS features
 
-To learn about POS features that are available to customers in all countries or regions, see [Help resources for Dynamics 365 Retail](../index.md).
+To learn about POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
 
 The following POS localization features that are available to customers in all countries or regions can now be used specifically for France:
 
@@ -201,7 +201,7 @@ The archive format is implemented by using [Electronic reporting (ER)](../../dev
 
 ## Setting up Commerce for France
 
-This section describes the Commerce settings that are specific to and recommended for France. For more information, see [Help resources for Dynamics 365 Retail](../index.md).
+This section describes the Commerce settings that are specific to and recommended for France. For more information, see [Commerce home page](../index.md).
 
 To use the France-specific functionality, you must complete these tasks:
 
@@ -340,15 +340,15 @@ Finally, on the **Commerce parameters** page, you must specify the parameters fo
 You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
 
 - **Retail channel data.version.2** data model
-- **Archiving DMM.version.2.1** data model mapping
-- **Retail data archive FR .version.2.1** format
+- **Archiving DMM.version.2.3** data model mapping
+- **Retail data archive FR .version.2.5** format
 
-After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.1** format.
+After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.5** format.
 
 ### Renitialize Commerce components
 
 > [!NOTE]
-> You only need to complete the steps of this section if you are updating an existing evironment.
+> You only need to complete the steps of this section if you are updating an existing environment.
 
 To enable audit events, you must reinitialize the Commerce Extensible enumerations. To enable transmitting France-specific data from POS to HQ, you must reinitialize the Commerce Scheduler.
 

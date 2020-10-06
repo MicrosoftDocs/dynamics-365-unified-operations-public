@@ -5,7 +5,7 @@ title: Export a database
 description: This topic explains how to export a database for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,14 +50,14 @@ When you export a database backup from an environment, some elements of the data
 
 * Email addresses in the LogisticsElectronicAddress table.
 * Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
-* SMTP password in the SysEmailSMTPPassword table.
 * SMTP Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
 * Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
-* Connection string in the PersonnellIntegrationConfiguration table
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
+* All users will have their partition value reset to the "initial" partition record ID.
+* All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
 
 ### Known issues
 

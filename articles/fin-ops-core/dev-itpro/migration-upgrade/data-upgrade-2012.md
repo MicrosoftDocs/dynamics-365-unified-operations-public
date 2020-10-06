@@ -3,9 +3,9 @@
 
 title: Upgrade from AX 2012 - Data upgrade in development environments
 description: This topic explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest Finance and Operations development environment.
-author: tariqbell
+author: laneswenka
 manager: AnnBe
-ms.date: 02/26/2018
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 
@@ -62,6 +62,9 @@ If your developer environment is hosted as a VM locally or in Azure you will nee
 
 ### Download and restore the backup to the development environment
 
+> [!NOTE]
+> Developer environments that are hosted by Microsoft have limited drive space. We recommend that most AX 2012 customers host their own developer environment by using [cloud-hosted environments](../dev-tools/access-instances.md). By using cloud-hosted environments, you can increase the drive space so that it meets your own specifications.  
+
 When you restore the backup to the new development environment, don’t overwrite the existing AXDB database. Instead, restore the AX 2012 database next to the original databases. You might also consider using drive D for the data and log files, to help improve performance. However, there is a potential downside to using drive D. If the underlying virtual machine (VM) is deallocated in Azure and then reallocated, drive D will be wiped. In practice, this scenario rarely occurs. Therefore, you might find that the risk is acceptable. To learn more about how to use drive D, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 To speed up the database restore process, you can change the SQL Server service account to **axlocaladmin**. The restore process can then use instant file initialization. For more information, see [Database Instant File Initialization](/sql/relational-databases/databases/database-instant-file-initialization).
@@ -71,6 +74,8 @@ After the database is restored, stop the following services:
 - World wide web publishing service
 - Dynamics 365 for Finance and Operations Batch Management service
 - Management Reporter 2012 Process service
+- Microsoft Dynamics Lifecycle Services Diagnostic Service
+- Data Import / Export service
 
 Next, rename the original AXDB database **AXDB_orig**. This database might be useful as reference later, when you develop code.
 

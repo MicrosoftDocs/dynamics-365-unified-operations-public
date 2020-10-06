@@ -29,9 +29,9 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-[!include [banner](../includes/banner.md)]
-
 # Electronic reporting sample vendor checks
+
+[!include [banner](../includes/banner.md)]
 
 You can use Electronic reporting (ER) to format vendor checks. Many bank-specific and check provider–specific check formats are available on the market. Sample check formats have been included in the Payment check model in the ER tool repository. These sample checks are labeled **Check in the middle (US)** and **Check on top stub below (US)**.
 

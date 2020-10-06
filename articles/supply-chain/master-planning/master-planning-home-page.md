@@ -4,7 +4,7 @@
 title: Master planning home page
 description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

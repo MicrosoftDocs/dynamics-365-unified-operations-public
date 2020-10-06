@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ALLITEMS">ALLITEMS ER function</a>
+# ALLITEMS ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ALLITEMS` function runs as an in-memory selection and returns a new flatten
 
 ## Syntax
 
-```
+```vb
 ALLITEMS (path)
 ```
 

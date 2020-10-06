@@ -5,7 +5,7 @@ title: Extend Commerce Data Exchange - Real-time Service
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/16/2018
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -128,29 +128,29 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
 After you've finished building your new extension methods, the project will be deployed.
 
 ## Call the new method from the CRT
-1.  In your commerce runtime (CRT), add a reference to the Microsoft.Dynamics.Commerce.Runtime.TransactionService.dll, if it hasn't already been added.
+1.  In your commerce runtime (CRT) extension, include the Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages nuget package, if it hasn't already been added.
 2.  Use the following sample code to call the new method.
 
     ```C#
-        try
-        {
-            TransactionServiceClient transactionService = new TransactionServiceClient(request.RequestContext);
-            ReadOnlyCollection<object> results = transactionService.InvokeExtensionMethod("SerialCheck", "123");
-        }
-        catch (HeadquarterTransactionServiceException exception)
-        {
-             string errorCode = (string)exception.HeadquartersErrorData.FirstOrDefault();
-             RetailLogger.Log.ExtendedErrorEvent(errorCode, "Custom information", "method name");
-             throw new CommerceException("Error resource id", "message");
-        }
+        
+            InvokeExtensionMethodRealtimeRequest extensionRequest = new InvokeExtensionMethodRealtimeRequest("SerialCheck", "123");
+            InvokeExtensionMethodRealtimeResponse response = await request.RequestContext.ExecuteAsync<InvokeExtensionMethodRealtimeResponse>   (extensionRequest).ConfigureAwait(false);
+                ReadOnlyCollection<object> results = response.Result;
+                
+                string resValue = (string)results[0];       
     ```
 
-    > [!NOTE]
-    > In case of an exception in headquarters there is HeadquarterTransactionServiceException, which captures an exception and shows a user-friendly message in POS based on your scenario. If you want to log the exception, use the RetailLogger.Log class object to log the events.
-
 3.  From the results object, you can read the response values from Real-time Service.
+4.  The CRT framework code  will check the success/failure state and provide an error message based on the values returned form the CDX methods. If required, the extension code can catch this and provide additional logic.  
 
     > [!NOTE]
-    > The **InvokeExtensionMethod** method takes two parameters. One parameter is the Real-time Service method name, and the other is the list of parameters that should be used. The method name that is passed should be the same as the method name that you created in the **ContosoRetailTransactionServiceSample** class.
+    > The **InvokeExtensionMethodRealtimeRequest** method takes two parameters. One parameter is the Real-time Service method name, and the other is the list of parameters that should be used. The method name that is passed should be the same as the method name that you created in the **ContosoRetailTransactionServiceSample** class.
+    
+ ```
+  public InvokeExtensionMethodRealtimeRequest(string methodName, params object[] parameters)
+            : base(methodName, parameters)
+        {
+        }
+ ```
 
 

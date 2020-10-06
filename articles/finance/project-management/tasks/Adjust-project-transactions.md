@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Adjust project transactions
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task guide shows you how to adjust a transaction on a project. However, you can adjust project transactions one at a time, or select from a list of all project transactions. This task is usually completed by the Project supervisor. This task guide uses the USSI data set.
 

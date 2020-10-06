@@ -4,8 +4,8 @@
 title: Get started with Planning Optimization
 description: This topic explains how to start to use the Planning Optimization functionality. 
 author: ChristianRytt
-manager: AnnBe
-ms.date: 02/10/2020
+manager: tfehr
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,17 +29,23 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
 ---
-
-[!include [banner](../../includes/preview-banner.md)]
-[!include [banner](../../includes/banner.md)]
-
 # Get started with Planning Optimization
+
+[!include [banner](../../includes/banner.md)]
 
 The Planning Optimization functionality doesn't currently support all the features that are available in the planning engine that is built into Microsoft Dynamics 365 Supply Chain Management. Therefore, it's important that you evaluate whether the feature set that is currently available in Planning Optimization will meet your requirements. By default, the Planning Optimization functionality isn't turned on in Dynamics Lifecycle Services (LCS) by default. Therefore, you have an opportunity to do your evaluation before it's turned on.
 
 Eventually, Planning Optimization will replace the existing built-in Supply Chain Management planning engine.
 
+> [!NOTE]
+> You need to request an exception from migration to Planning Optimization if your master planning process does not include production (master planning generated planned production orders) and you require the built-in master planning engine beyond version 10.0.15. Starting in version 10.0.16, an error will be shown in environments when running built-in master planning without generation of planned production orders. Planning Optimization should be used for all new deployments that do not generate planned production orders during master planning. Owners of existing environments running the built-in master planning engine without generation of Planned production orders, will receive a mail with details about the exception process. We recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
+
 Before you turn on Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
+
+### Availability
+Planning Optimization is currently available in the following Azure geographies: United States, Canada, Europe, United Kingdom, and Australia. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported.
+
+Note that Planning Optimization does not support on-premises deployments of Dynamics 365 Supply Chain Management.
 
 ### Licensing
 
@@ -50,7 +56,7 @@ If you can run master planning by using your current license, you don't have to 
 To use Planning Optimization, install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. You can access the add-in from your LCS project and turn on the Planning Optimization functionality from the Supply Chain Management user interface (UI).
 
 > [!NOTE]
-> The requirement for Planning Optimization is an LCS enabled high-availability environment (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later.
+> The requirement for Planning Optimization is an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation will not complete and you will need to cancel the installation.
 
 1. Sign in to LCS, and open the desired environment.
 1. Go to **Full details**.
@@ -92,7 +98,7 @@ The setting of the **Use Planning Optimization** option determines which plannin
 
 If the Planning Optimization preview is turned on, master planning is done by using the Planning Optimization Add-in. In this case, master planning results and features are affected.
 
-## Related resources
+## Additional resources
 
 [Terms and conditions for the preview](https://go.microsoft.com/fwlink/?linkid=2015274)
 

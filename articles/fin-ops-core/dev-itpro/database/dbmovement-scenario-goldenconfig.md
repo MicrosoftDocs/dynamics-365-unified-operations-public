@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/20/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 
@@ -125,6 +125,25 @@ drop user axmrruntimeuser
 drop user axretaildatasyncuser
 drop user axretailruntimeuser
 drop user axdeployextuser
+
+--Tidy up the batch server config from the previous environment
+DELETE FROM SYSSERVERCONFIG
+
+--Tidy up server sessions from the previous environment
+DELETE FROM SYSSERVERSESSIONS
+
+--Tidy up printers from the previous environment
+DELETE FROM SYSCORPNETPRINTERS
+
+--Tidy up client sessions from the previous environment
+DELETE FROM SYSCLIENTSESSIONS
+
+--Tidy up batch sessions from the previous environment
+DELETE FROM BATCHSERVERCONFIG
+
+--Tidy up batch server to batch group relation table
+DELETE FROM BATCHSERVERGROUP
+
 -- Clear encrypted hardware profile merchant properties
 update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```
@@ -150,6 +169,9 @@ Here is an explanation of the parameters:
 ## Import the database
 
 Upload the .bacpac file that was created in the previous step to the **Database backup** section in your LCS project's Asset Library. Then begin the import. The target UAT environment's databases will be overwritten by the golden configuration database.
+
+> [!NOTE]
+> Certain elements are not copied as part of the import database step.  In the golden configuration scenario, this would impact things such as Email Addresses and Print Management setup.  These settings ideally should be populated as part of the master data migration in the steps below, and should not be part of the golden configuration database.
 
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 
@@ -196,7 +218,7 @@ First, sign in to the environment by using the admin account that can be found o
 
 When the system is configured as you require, you can enable selected users to access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
 
-Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the UAT environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations).
+Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations).
 
 ## Community tools
 

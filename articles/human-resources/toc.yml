@@ -5,10 +5,52 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
-    - name: February 7, 2020
-      href: hr-whats-new-2020-02-07.md
-    - name: February 3, 2020
-      href: hr-whats-new-2020-02-03.md 
+    - name: September 16, 2020
+      href: hr-whats-new-2020-09-16.md
+    - name: September 3, 2020
+      href: hr-whats-new-2020-09-03.md
+    - name: August 20, 2020
+      href: hr-whats-new-2020-08-20.md
+    - name: August 6, 2020
+      href: hr-whats-new-2020-08-06.md
+    - name: July 23, 2020
+      href: hr-whats-new-2020-07-23.md
+    - name: July 8, 2020
+      href: hr-whats-new-2020-07-08.md
+    - name: June 25, 2020
+      href: hr-whats-new-2020-06-23.md
+    - name: June 11, 2020
+      href: hr-whats-new-2020-06-11.md
+    - name: May 28, 2020
+      href: hr-whats-new-2020-05-28.md
+    - name: May 14, 2020
+      href: hr-whats-new-2020-05-14.md
+    - name: May 1, 2020
+      href: hr-whats-new-2020-05-01.md
+    - name: What's new archives 2020
+      items:
+      - name: April 13, 2020
+        href: hr-whats-new-2020-04-13.md
+      - name: April 3, 2020
+        href: hr-whats-new-2020-04-03.md
+      - name: March 24, 2020
+        href: hr-whats-new-2020-03-24.md
+      - name: March 19, 2020
+        href: hr-whats-new-2020-03-19.md
+      - name: March 10, 2020
+        href: hr-whats-new-2020-03-10.md
+      - name: March 3, 2020
+        href: hr-whats-new-2020-03-03.md
+      - name: February 25, 2020
+        href: hr-whats-new-2020-02-25.md
+      - name: February 18, 2020
+        href: hr-whats-new-2020-02-18.md
+      - name: February 12, 2020
+        href: hr-whats-new-2020-02-12.md
+      - name: February 7, 2020
+        href: hr-whats-new-2020-02-07.md
+      - name: February 3, 2020
+        href: hr-whats-new-2020-02-03.md
   - name: Administrator Guide
     items:
     - name: Overview
@@ -33,6 +75,8 @@
         href: hr-admin-integration-common-data-service.md
       - name: Common Data Service entities
         href: hr-developer-entities.md
+      - name: Configure Common Data Service virtual entities
+        href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
@@ -42,15 +86,95 @@
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
-          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
         - name: Update entity data in Excel
-          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
         - name: Create Open in Excel experiences
-          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
         - name: Troubleshoot Office integration
-          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+    - name: Configure data management
+      items:
+      - name: Data management framework overview
+        href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+      - name: Data entities
+        items:
+        - name: Data entities overview
+          href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+        - name: Configuration data projects
+          href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+        - name: Copy configuration data between companies or legal entities
+          items:
+          - name: Copy configuration data overview
+            href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configuration data packages
+            href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configuration data packages (July 2017 release only)
+            href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+        - name: Configuration data templates
+          href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+        - name: Track changes to an entity
+          href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+        - name: Find information about standard data entities
+          href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+        - name: Data templates with multiple worksheets
+          href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+        - name: Enable change tracking for entities
+          href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+        - name: Configuration keys and data entities
+          href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+        - name: Configuration data packages
+          href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+      - name: Data import and export jobs
+        items:
+        - name: Data import and export jobs overview
+          href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+        - name: Best practices for importing vouchers using the General journal entity
+          href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+      - name: Development for data entities
+        items:
+        - name: Design principles and best practices for data entities
+          href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+        - name: Create new data entities
+          href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+        - name: Data entity properties
+          href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+        - name: Create computed columns and virtual fields
+          href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+        - name: Cross-company behavior
+          href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+        - name: Handling country/region codes
+          href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+        - name: Inheritance patterns
+          href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+        - name: Data entity wizard rules
+          href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+        - name: Metadata properties
+          href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+        - name: Validations, defaults, and unmapped fields
+          href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+        - name: Security and data entities
+          href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+        - name: Use third-party service testing utilities
+          href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+        - name: Create read-only entities that expose financial dimensions
+          href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+      - name: Bring your own database
+        href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+      - name: Optimize BYOD batch jobs
+        href: hr-admin-integration-byod-batch-jobs.md
+      - name: Automated Entity store refresh
+        href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+      - name: Data task automation
+        href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+      - name: Data validation checklist workspace
+        href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+      - name: Data management error descriptions
+        href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json 
     - name: Manage features
       href: hr-admin-manage-features.md
+    - name: Configure and manage database logging
+      href: hr-admin-database-logging.md
     - name: Explore the user interface
       items:
       - name: User interface elements
@@ -81,7 +205,7 @@
         href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
       - name: Create and work with custom fields
         href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-      - name: Embed PowerApps apps
+      - name: Embed canvas apps from Power Apps
         href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
       - name: Find information by using lookups
         href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
@@ -91,14 +215,16 @@
         href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
       - name: Understand Lifecycle Services
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+    - name: Human Resources app in Teams
+      href: hr-admin-teams-leave-app.md
     - name: Documentation resources
       items:
       - name: Help system
         href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
       - name: Connect the Help system
         href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-      - name: Connect a custom help site
-        href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        
+      - name: Custom help overview
+        href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
       - name: View and export field descriptions
         href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
       - name: Task Recorder
@@ -108,7 +234,9 @@
     - name: Troubleshoot Human Resources
       items:
       - name: Get support
-        href: hr-admin-troubleshooting-support.md
+        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
+      - name: Optimize performance by scheduling batch jobs after hours
+        href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
         href: hr-admin-troubleshooting-batch-history.md
       - name: Analytic reports aren't updated
@@ -185,8 +313,6 @@
         href: hr-setup-parameters.md
       - name: Configure Human resources shared parameters
         href: hr-setup-shared-parameters.md
-      - name: Set up Human resource workflows
-        href: hr-setup-workflows.md
       - name: Understand Date and Time fields
         href: hr-setup-date-time-fields.md
     - name: Configure organization settings
@@ -343,6 +469,8 @@
         href: hr-personnel-actions-faq.md
       - name: Use workflows to manage employee information
         href: hr-workflow-manage-employee-information.md
+      - name: View and manage address changes
+        href: hr-personnel-view-address-changes.md
       - name: Modify reporting relationships for a position
         href: hr-personnel-modify-reporting-relationships-position.md
       - name: Enter worker information
@@ -355,8 +483,6 @@
         href: hr-personnel-loan-items.md
       - name: Develop a succession plan
         href: hr-personnel-develop-succession-plan.md
-      - name: Enter project timesheets
-        href: hr-personnel-enter-project-timesheets.md
       - name: Mass hire projects
         href: hr-personnel-mass-hire-projects.md
       - name: Create a mass hire project
@@ -389,7 +515,7 @@
         href: hr-compensation-process.md
     - name: Manage benefits
       items:
-      - name: "Preview feature: Benefits management"
+      - name: Benefits management
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
@@ -433,12 +559,8 @@
           items: 
           - name: Set up benefit plans
             href: hr-benefits-plans-setup.md
-          - name: Create worker benefit plans
-            href: hr-benefits-plans-worker.md
           - name: Set up flex credit programs
             href: hr-benefits-plans-flex-credit-programs.md
-          - name: Configure future life events
-            href: hr-benefits-plans-future-life-events.md
         - name: Process benefit plans
           items: 
           - name: Process enrollment eligibility
@@ -487,6 +609,12 @@
         href: hr-leave-and-absence-enroll.md
       - name: Accrue leave and absence plans
         href: hr-leave-and-absence-accrue.md
+      - name: Suspend leave
+        href: hr-leave-and-absence-suspend-leave.md
+      - name: Leave of absence request
+        href: hr-employee-self-service-request-leave-of-absence.md
+      - name: Manage employee leave
+        href: hr-leave-and-absence-manage-employee-leave.md
       - name: View analytics for leave and absence
         href: hr-leave-and-absence-analytics.md
       - name: Manage leave and absence requests
@@ -495,6 +623,14 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+      - name: Manage buy and sell leave policies
+        href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+      - name: Create buy and sell leave workflows
+        href: hr-leave-and-absence-buy-sell-workflow.md   
+      - name: Buy and sell leave
+        href: hr-employee-self-service-buy-sell-leave.md
+    - name: Manage leave requests in Teams
+      href: hr-teams-leave-app.md
     - name: Develop employees
       items:
       - name: Performance management overview
@@ -529,5 +665,11 @@
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
-
-
+    - name: Set up Employee and Manager self service
+      items:
+      - name: Employee and Manager self service overview
+        href: hr-employee-manager-self-service-overview.md
+      - name: Change Employee self service workspace name
+        href: hr-employee-self-service-workspace-name.md
+      - name: Edit personal information
+        href: hr-employee-manager-self-service-edit-personal-information.md

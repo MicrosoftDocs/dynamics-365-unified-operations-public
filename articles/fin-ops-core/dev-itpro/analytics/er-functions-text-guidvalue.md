@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="GUIDVALUE">GUIDVALUE ER function</a>
+# GUIDVALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `GUIDVALUE` function converts the specified input of the *String* type to a 
 
 ## Syntax
 
-```
+```vb
 GUIDVALUE (input)
 ```
 

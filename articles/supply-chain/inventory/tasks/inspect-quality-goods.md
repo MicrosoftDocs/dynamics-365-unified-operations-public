@@ -4,7 +4,7 @@
 title: Inspect the quality of goods
 description: This topic explains how to process a quality order. 
 author: perlynne
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Inspect the quality of goods
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic explains how to process a quality order. You can run this guide in demo data company USMF. Before you start this example procedure, you need to confirm purchase order “000016” and post a product receipt. This will automatically create a quality order. Quality inspections are typically carried out by a quality clerk.
+This topic explains how to process a quality order. You can run this guide in demo data company USMF. Before you start this example procedure, you need to confirm purchase order "000016" and post a product receipt. This will automatically create a quality order. Quality inspections are typically carried out by a quality clerk.
 
 
 ## Select a quality order

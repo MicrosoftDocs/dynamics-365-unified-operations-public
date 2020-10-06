@@ -5,7 +5,7 @@ title: Online channel extensibility
 description: This topic covers online platform extensibility in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -36,18 +36,17 @@ This topic covers online platform extensibility in Microsoft Dynamics 365 Commer
 
 ## Overview
 
-The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. It also provides a store starter kit (SSK). The SSK provides a set of ready-built modules, data actions, and themes that you can use for your site.
+The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. It also provides a module library. The module library provides a set of ready-built modules, data actions, and themes that you can use for your site.
 
-
-Online pages (for example, the home page, product details pages, and category pages) are made up of component modules (for example, header, hero, and feature modules). The modules use data actions to fetch data (for example, product data, and ratings and reviews) and to render HTML to show a customer-facing page. Each module contains configuration fields that a page author or site administrator can set. These fields include fields for layout options such as image placement in the module, fields for links to products or pages, and fields for images or strings that should be shown in the module. Themes contain Cascading Style Sheets (CSS) code that is used for styling. They also contain layout overrides for modules.
+Online pages (for example, the home page, product details pages, and category pages) are made up of component modules (for example, header, carousel, and content block modules). The modules use data actions to fetch data (for example, product data, and ratings and reviews) and to render HTML to show a customer-facing page. Each module contains configuration fields that a page author or site administrator can set in the site builder tool. These fields include fields for layout options such as image placement in the module, fields for links to products or pages, and fields for images or strings that will be shown in the module. Themes contain Cascading Style Sheets (CSS) code that is used for styling. They also contain layout overrides for modules.
 
 ## Online SDK
 
 The online SDK lets developers create and customize e-Commerce modules, data actions, and themes.
 
-## Store starter kit
+## Module library
 
-The SSK contains production-ready components that work with preconfigured authoring templates and pages. These components include modules, data actions, and themes. A developer can use the online SDK to customize each module and theme as required.
+The module library contains production-ready components that work with preconfigured authoring templates and pages. These components include modules, data actions, and themes. A developer can use the online SDK to customize each module and theme as required.
 
 ## Command-line interface tools
 
@@ -61,8 +60,10 @@ Command-line interface (CLI) tools are provided as part of the online SDK. These
 
 [Set up a development environment](setup-dev-environment.md)
 
-[Starter kit overview](../starter-kit-overview.md)
+[Module library overview](../starter-kit-overview.md)
 
 [e-Commerce components](ecommerce-components.md)
 
 [CLI command reference](cli-command-reference.md)
+
+[Package configurations and deploy them to an online environment](package-deploy.md)

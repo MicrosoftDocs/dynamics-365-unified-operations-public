@@ -5,7 +5,7 @@ title: Electronic reporting (ER) extended format lookup
 description: This topic describes how an ER format reference can be set up in the ER format lookup when the required format is stored in the Global repository.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/24/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 10.0.9
 # Allow users to set up an ER format reference inquiring a format from the Global repository
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 You can use the [Electronic reporting](general-electronic-reporting.md) (ER) framework to configure 
 [formats](general-electronic-reporting.md#FormatComponentOutbound) for outbound documents in accordance to the legal requirements of various countries/regions. You can also use the ER framework to configure [formats](general-electronic-reporting.md#FormatComponentInbound) for parsing inbound documents and use the information from those documents to append or update application data. Each of these formats can used in your Dynamics 365 Finance instance for handling inbound or outbound business documents as part of a certain business process. 

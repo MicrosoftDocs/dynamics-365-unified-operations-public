@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Run the recognition test and calculate the impairment amount on individual assets
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task walks you through running the recognition test and calculating the impairment amount on individual assets.
 

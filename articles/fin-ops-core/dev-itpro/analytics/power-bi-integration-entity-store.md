@@ -5,7 +5,7 @@ title: Power BI integration with Entity store
 description: Entity store is an operational data store that is included with Microsoft Dynamics 365 Finance. This topic describes how Entity store enables Power BI integration.
 author: MilindaV2
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,7 +78,7 @@ The batch framework is used for scheduling. Therefore, refresh jobs can be monit
 ### Connecting to the Entity store database
 For troubleshooting and diagnostics, you can connect to the Entity store database directly from a related sandbox environment.  To connect:
 
-1. Use Remote Desktop to access the sandbox.  The RDP file can be downloaded from the **Environment Details** page after you have whitelisted your IP address.
+1. Use Remote Desktop to access the sandbox.  The RDP file can be downloaded from the **Environment Details** page after you have included your IP address in a safe list.
 2. Open SQL Server Management Studio, and connect to the server specified on the **Environment Details** page.  
     * Find the section titled **Database Accounts**.  Locate the entry for the user with the name **axdwadmin**.  
     * The server name is the first portion of the **SQL Server\Database Name** field.  This should be used in the format of **SQLServerName.database.windows.net** where SQLServerName is the value from LCS.

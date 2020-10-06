@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: HcmPositionActionDetail
+# ms.search.form: HcmPositionActionDetail, HcmPersonnelManagementWorkspace
 # ms.search.form: 
 # ROBOTS: 
 audience: Application User

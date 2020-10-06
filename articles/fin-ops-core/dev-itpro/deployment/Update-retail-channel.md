@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Apply updates and extensions to Retail Cloud Scale Unit
+title: Apply updates and extensions to Commerce Scale Unit (cloud)
 description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 01/08/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.0
 ---
 
 
-# Apply updates and extensions to Retail Cloud Scale Unit
+# Apply updates and extensions to Commerce Scale Unit (cloud)
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,7 +45,8 @@ To update Commerce Scale Unit, run the following steps for each:
 1. On the **Environment details** page, go to **Environment features > Retail and Commerce**.
 2. On the **Commerce deployment setup** page, select **Update**.
 3. In the selection panel, select the version to update to.
-4. You can also choose to apply an extension at the same time. 
+4. You can choose to update to the newest service update to access the latest features, or you can update to the latest quality update to apply quality improvements for the currently deployed service update. For more information, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+5. You can choose to apply an extension at the same time. 
 
 To apply an extension to a Commerce Scale Unit, run the following steps:
 
@@ -55,7 +56,7 @@ To apply an extension to a Commerce Scale Unit, run the following steps:
 > [!NOTE]
 > You must first upload the Commerce deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Commerce deployment setup page** in LCS.
 
-Both **Apply updates** and **Apply extension** operations will involve a downtime of up to 1 hour. During this time, the following will occur:
+Both **Apply updates** and **Apply extension** operations will involve a downtime, which may last up to 1 hour, or in some cases up to 2 hours or more. For example, when updating non-US locations of Commerce Scale Unit, large data volumes, or complex schema updates. For a realistic estimate of the downtime duration, note the downtime duration in Sandbox UAT for an equivalent update and dataset that you plan to use in your production environment. During this time, the following will occur:
 
 - Cloud-hosted Commerce channels will not function (unless POS offline capability is enabled).
 - POS devices that have the offline capability feature enabled will have reduced functionality.
@@ -65,3 +66,7 @@ Both **Apply updates** and **Apply extension** operations will involve a downtim
 
 > [!NOTE]
 > Applying an extension and an update at the same time requires a single downtime, and can be an effective way of averting multiple downtimes.
+
+## View history
+To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
+

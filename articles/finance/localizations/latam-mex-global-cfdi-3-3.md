@@ -64,7 +64,7 @@ In Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019), 
 
 - At the customer's request, generate a separate CFDI Normal electronic invoice that is based on a sale or return operation that is registered at the POS.
 
-    In this case, the sale or return operation should be registered as a customer order. For more information about the functionality for customer orders, see [Customer orders in Retail Modern POS (MPOS)](https://docs.microsoft.com/dynamics365/unified-operations/retail/customer-orders-overview).
+    In this case, the sale or return operation should be registered as a customer order. For more information about the functionality for customer orders, see [Customer orders in Modern POS (MPOS)](https://docs.microsoft.com/dynamics365/unified-operations/retail/customer-orders-overview).
 
 - In a CFDI electronic invoice that is generated based on returns, specify universally unique identifiers (UUIDs) for CFDI electronic invoices that are related to the original sales operations.
 
@@ -97,7 +97,7 @@ When the **Exclude customer orders from CFDI Global** parameter is turned off, a
 
 Customer order returns are processed in the same way (either CFDI Global or CFDI Normal) as the original sales operations.
 
-#### Limitations
+### Limitations
 
 Note the following limitations:
 

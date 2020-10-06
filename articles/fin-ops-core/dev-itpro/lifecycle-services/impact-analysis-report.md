@@ -3,7 +3,7 @@ title: Impact analysis report in Lifecycle Services (LCS)
 description: This topic provides information about the Impact analysis report in Microsoft Dynamics Lifecycle Services (LCS).
 author: dfroslieMSFT 
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -12,7 +12,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -33,6 +32,8 @@ ms.dyn365.ops.version: 10.0.2
 [!include [private preview banner](../includes/private-preview-banner.md)]
 
 The **Impact analysis** report can help you focus your testing efforts for a new release. It provides insight into the Microsoft code that was changed in the release, together with usage information for the production environments that are associated with the project in Microsoft Dynamics Lifecycle Services (LCS). This content provides an overview of the capabilities and also some important considerations. However, the report doesn't provide comprehensive information. Therefore, you should use it in combination with other tools when you're planning test activities for a release.
+
+After accessing a project, the report can be accessed via the hamburger in Lifecycle Services (LCS).
 
 ## Code churn
 

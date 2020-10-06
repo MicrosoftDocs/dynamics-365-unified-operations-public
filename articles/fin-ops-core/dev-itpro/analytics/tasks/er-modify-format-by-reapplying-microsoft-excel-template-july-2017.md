@@ -28,14 +28,14 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Modify formats by reapplying Excel templates
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, ER - Design a configuration for generating reports in OPENXML format.
 
 This procedure explains how to modify an Electronic reporting (ER) format configuration by reapplying a Microsoft Excel template that has been modified. In this procedure, you will import a modified Excel template into ER format configurations that have been created for the sample company, Litware, Inc., and then generate electronic documents. This procedure is intended for users who have the system administrator or electronic reporting developer role. These steps can be completed by using the GBSI dataset. Before you begin, download and save the file, SampleVendPaymWsReport2.xlsx, which is listed in the Help topic, Modify Electronic reporting format by reapplying an Excel template (modify-electronic-reporting-format-reapply-excel-template/).
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don’t see this configuration provider, complete the steps in the procedure, Create a configuration provider and mark it as active.  
+    * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don't see this configuration provider, complete the steps in the procedure, Create a configuration provider and mark it as active.  
 
 ## Select the ER format
 1. Click Reporting configurations.
@@ -53,10 +53,10 @@ This procedure explains how to modify an Electronic reporting (ER) format config
     * Open the draft version of the selected ER format for editing.  
 2. On the Action Pane, click Import.
 3. Click Update from Excel.
-    * Click ‘Update template’, and then select the file, SampleVendPaymWsReport2.xlsx.  
+    * Click 'Update template', and then select the file, SampleVendPaymWsReport2.xlsx.  
     * Click Update template and browse to get the downloaded earlier SampleVendPaymWsReport2.xlsx file.  
 4. Click OK.
-    * The SampleVendPaymWsReport2.xlsx template is applied. The structure of the ER format is synchronized with the content of the template, whose elements are added to the ER format. Any existing elements in the ER format that aren’t included in the template are removed from the format definition.  
+    * The SampleVendPaymWsReport2.xlsx template is applied. The structure of the ER format is synchronized with the content of the template, whose elements are added to the ER format. Any existing elements in the ER format that aren't included in the template are removed from the format definition.  
 5. In the tree, select 'Excel'.
     * Note that the Template field now contains a reference to the new template.   
 6. Click Attachments.

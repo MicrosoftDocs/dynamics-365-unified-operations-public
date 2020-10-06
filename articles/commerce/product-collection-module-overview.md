@@ -5,7 +5,7 @@ title: Product collection modules
 description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/07/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -76,16 +76,17 @@ The following table describes various types of product collection modules in Dyn
 
 To add a product collection module to a category page, follow these steps.
 
-1. In Dynamics 365 Commerce, go to your site, and create a page that uses the same template as your default category page.
-1. In the page outline, select the **Sub footer** slot, select the ellipsis button (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select **Container**, and then select **OK**.
-1. In the container module, select the ellipsis button, and then select **Add Module**.
-1. In the **Add Module** dialog box, select **Product collection**, and then select **OK**.  
-1. Configure settings by selecting an appropriate data source and inputs for the product collection.
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select the same template as that used by your default category page. Under **Page name**, enter an appropriate name, and then select **OK**.
+1. In the **Sub footer** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Product collection** module, and then select **OK**.  
 1. In the properties pane for the product collection module, select **Add a product list**.
-1. In the **Select product list configuration** dialog box, select the type of list, enter the number of items, and select any other options that are available for the list type. For more information about list types, see the table that follows. 
+1. In the **Select product list configuration** dialog box, select the type of list, the list source, and enter the number of items. Configure any other options that are available for the list type. For more information about list types, see the table that follows. 
 1. Select **OK**.
-1. Save the page, and check it in.
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 The following table shows the list types that are available for selection in the **Select product list configuration** dialog box.
 
@@ -101,7 +102,7 @@ The following table shows the list types that are available for selection in the
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Carousel module](add-carousel.md)
 

@@ -4,7 +4,7 @@
 
 title: Set up new environments, Azure DevOps, and branches for Commerce projects
 description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce implementation projects.
-author: Andreash1
+author: andreashofmann1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
@@ -100,9 +100,7 @@ Branching is an important practice in software development. The [Branching and M
 >
 > Using branches provides better isolation and control of individual software assets and increases productivity, because teams or individuals can work in parallel. However, using branches also requires an increase in merge activities and therefore risk, because you must later reassemble branches into a whole.
 
-For more information about the delivery of implementation projects, watch [Continuous Delivery Using Dynamics 365 for Operations (video)](https://mbspartner.microsoft.com/D365/Videos/101393).
-
-There is no single best strategy for creating branches. The strategy depends on the project and the size of the implementation. The approach that Joris De Gruyter mentions in the preceding video is a successful method.
+There is no single best strategy for creating branches. The strategy depends on the project and the size of the implementation. 
 
 The following illustration shows three code branches: Dev, Main, and ProdRel1. The numbers indicate the order of setup.
 
@@ -266,11 +264,11 @@ Regardless of whether there are customizations in the code branches, the followi
     7. Run the Environment reprovisioning tool. (Find the latest version in the LCS Asset library, and deploy it by using the **Maintain** function.)
     8. Verify that the tool succeeded. The following query should show the URLs of all local development machines that were updated.
 
-        ```
+        ```sql
         select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1
         ```
 
-    9. In Commerce, run the **Initialize Retail Scheduler** job to delete old data.
+    9. In Commerce, run the **Initialize Commerce Scheduler** job to delete old data.
 
 6. Make sure that you can sign in to Commerce by using your user account. If you aren't the Admin user in the production database, run the Admin provisioning tool to take ownership. (This tool is in the **PackagesLocalDirectory/bin** folder.)
 7. Verify that Commerce Data Exchange (CDX) data synchronization works. In Commerce, go to **Download sessions**. You should see many applied sessions. If you don't see them, select job **9999**, and run it.

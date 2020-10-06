@@ -3,7 +3,7 @@
 
 title: Merge the build systems for Commerce and Finance
 description: This topic describes the steps for merging the build systems for both Dynamics 365 Commerce and Dynamics 365 Finance using Azure DevOps.  
-author: andreash1
+author: andreashofmann1
 manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
@@ -77,7 +77,7 @@ This build step enables Microsoft to copy the latest built Commerce binaries to 
 
 Make sure that this step occurs after the "PowerShell: Generate packages" step (see image below). Here are the arguments.
 
-```
+```powershell
 -BuildPackagePath "$(Agent.BuildDirectory)\Packages" -BuildVersion "$(Build.BuildNumber)"
 ```
 
@@ -85,7 +85,7 @@ Make sure that this step occurs after the "PowerShell: Generate packages" step (
 
 ## Optional: Referencing a Commerce DLL
 
-You must complete this task only if you must add built Retail binaries to the Retail package. In this case, you must follow these three steps:
+You must complete this task only if you must add built Retail binaries to the package. In this case, you must follow these three steps:
 
 1. Use a normal AXReference in your Commerce project.
 2. Add the corresponding AXReference folder and the XML file inside it to Azure DevOps.

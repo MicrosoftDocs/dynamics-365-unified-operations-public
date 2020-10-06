@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 This page points you to resources that can help you learn about the new features and changes in the latest releases of Microsoft Dynamics 365 Retail.
 
-[!include [release notes](../includes/release-notes.md)]
 
 ## Releases of Dynamics 365 Retail
 

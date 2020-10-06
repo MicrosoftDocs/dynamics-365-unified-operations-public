@@ -4,7 +4,7 @@
 title: Schedule load utilization
 description: This topic explains how to set up and schedule the load for a warehouse.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  WMSSpaceUtilSetup
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384

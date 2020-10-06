@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The Regression suite automation tool lets you execute the same test case with multiple configurations. To do this, select a test case in the Regression suite automation tool and then select **New > Create Derived Test Case**. This creates a child test case in Azure DevOps. The resulting derived test case is linked to its parent test case in Azure DevOps. It has an Excel parameters file attached but no recording file. The derived test case will appear in the Regression suite automation tool grid under the same test suite with the **Derived** column selected. Derived test cases are named after their parent test case with a numeric suffix.
+The Regression suite automation tool (RSAT) lets you to use the same task recording with multiple test cases, so that you can run a task with different data configurations. To do this, select a test case in the Regression suite automation tool and then select **New > Create Derived Test Case**. This creates a child test case in Azure DevOps. The resulting derived test case is linked to its parent test case in Azure DevOps. It has an Excel parameters file attached but no recording file. The derived test case will appear in the Regression suite automation tool grid under the same test suite with the **Derived** column selected. Derived test cases are named after their parent test case with a numeric suffix.
 
 In the following image, a derived test case has been created from a test case called **Create Vendor**.
 
@@ -47,3 +47,5 @@ The derived test case is automatically created in Azure DevOps. It is a child it
 When you run (play back) a derived test case, it will use the recording of its parent test case and its own copy of the Excel parameters file. This will allow you to run the same test with different parameters without the need to maintain more than one recording.
 
 A derived test case does not need to be part of the same test suite as its parent test case. You can move it to another suite.
+
+You can edit the Excel parameters file of a derived test case to run it with a different user, different company and/or different input and validation parameters that its parent test case.

@@ -5,7 +5,7 @@ title: Phased Rollout (N-1) installation, configuration, and cutover guide
 description: This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components can work with Microsoft Dynamics 365 Commerce Headquarters.
 author: jashanno
 manager: AnnBe
-ms.date: 07/31/2018
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics-365-retail
@@ -172,7 +172,6 @@ Follow the steps in this section to configure the N-1 components in Headquarters
 > [!IMPORTANT]
 > This section applies only if the existing AX 2012 R3 environment uses Retail Server to interact with the channel database. If direct channel database access is enabled from the AX 2012 R3 MPOS, you can skip this step.
 
-> [!NOTE]
 > The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct. These values must be manually entered for environments that haven't been upgraded from AX 2012 R3.
 
 1. Sign in to Headquarters, and go to **Retail and Commerce \> Channels \> Stores \> All stores**.
@@ -292,7 +291,8 @@ Follow these steps to prepare your environment for the cutover.
 | 2. Install the Commerce application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
 | 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Headquarters. | Weeks or months before the cutover |
 | 4. Configure Headquarters. | Follow the instructions in the [Configure N-1 components](#configure-n-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
-| 5. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately disabled to help guarantee that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
+| 5. Configure Headquarters. | Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**, select the **Security** tab, and change the value in **TS password encryption name** to "SHA256". |
+| 6. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately turned off to ensure that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
 
 ### Preparation
 Follow these steps to prepare a few days before the cutover is scheduled.
@@ -344,7 +344,7 @@ This section describes troubleshooting steps for errors that you might encounter
 |---|---|
 | Event Log | Microsoft Dynamics AX Retail : Async Client SynchClientService |
 | Sample Event Log Error Message | Unable to communicate with server for download. Please check username/password, server and database connections. Error Details: System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to `https://localhost:44300/SynchService/DownloadService.svc`. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server. ---\> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---\> System.IO.IOException: Authentication failed because the remote party has closed the transport stream. |
-| Troubleshooting Steps | This could have happened because of the following reasons.<br>1) The user ID and password that we provide in async client does not match with the channel database User ID and password that we provide in AX.<br>2) The async service end point is not reachable. `https://localhost:44300/SynchService/DownloadService.svc`. To fix this issue, 1) Launch the Async client configuration utility (AsyncClientConfigurationUtility.exe) from the async client install location. Under the `Async Server connection tab -> Authentication information (case sensitive)` -> Update the Channel database ID, User name and Password fields as per the values provided under N-1 channel database (`Retail and Commerce -> Headquarters setup -> Channel database`) in AX. 2) Now click on `Test connection` in the utility. If the connection is successful, restart the Async client service. If the connection fails, go to N-1 channel database (`Retail and Commerce -> Headquarters setup -> Channel database`) in AX, update the Username and password, save. Go to `Retail scheduler parameters` in AX and click `Reset metadata synchronization`. This will populate the HQ message database with the new values. Repeat step 1 again. 3) If the async server end point (`https://localhost:44300/SynchService/DownloadService.svc`) is not reachable, check the bindings of the service and make sure there is a certificate associated. If the issue still exists, check that the `Working folders` were specified for all the Channel database group’s that were linked to `AX2012R3` retail channel schema. |
+| Troubleshooting Steps | This could have happened because of the following reasons.<br><br>1) The user ID and password that we provide in async client does not match the channel database user ID and password that we provide in AX.<br><br>2) The async service end point is not reachable. `https://localhost:44300/SynchService/DownloadService.svc`. It is critical to note that typically the user is in the form of **Contoso/Administrator** (domain/user). In the following steps, this has been known to cause errors (communication or inability to save) if the domain is utilized in the **AsyncClientConfigurationUtility** utility. We recommend that the user ID in this utility does not contain the domain prefix that is used in the server installation and configuration.<br><br>To fix this issue:<br><br>1) Launch the Async client configuration utility (AsyncClientConfigurationUtility.exe) from the async client install location. Under the **Async Server connection tab > Authentication information (case sensitive) > Update the Channel database ID, User name and Password** fields as per the values provided under N-1 channel database (**Retail and Commerce > Headquarters setup > Channel database**) in AX.<br><br>2) Select **Test connection** in the utility. If the connection is successful, restart the Async client service. If the connection fails, go to N-1 channel database (**Retail and Commerce-> Headquarters setup > Channel database**) in AX, update the Username and password, and then save. Go to **Retail scheduler parameters** in AX and select **Reset metadata synchronization**. This will populate the HQ message database with the new values. Repeat step 1 again.<br><br>3) If the async server end point (`https://localhost:44300/SynchService/DownloadService.svc`) is not reachable, check the bindings of the service and make sure there is an associated certificate. If the issue still exists, check to be sure that the **Working folders** were specified for all the Channel database group’s that were linked to `AX2012R3` retail channel schema. |
 
 #### CDX jobs are successfully downloaded but aren't applied
 | Field | Value |
@@ -364,7 +364,7 @@ This section describes troubleshooting steps for errors that you might encounter
 | Field | Value |
 |---|---|
 | Event Log | Microsoft Dynamics AX Retail : Retail Server RetailServer |
-| Sample Event Log Error Message | Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---\> Microsoft.Dynamics.Commerce.Runtime.ConfigurationException: The published channel can not be found in local database. Please make sure at least 1 retail channel is published to this DB through AX. |
+| Sample Event Log Error Message | Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---\> Microsoft.Dynamics.Commerce.Runtime.ConfigurationException: The published channel cannot be found in local database. Please make sure at least 1 retail channel is published to this DB through AX. |
 | MPOS Error on Activation Screen | DA1002: A server side error occurred that prevents user from logging on. Please check the server log for detailed information or contact your IT support. |
 | Troubleshooting Steps | Make sure the CDX download jobs ran successfully and the channel database has data. |
 
@@ -379,7 +379,7 @@ This section describes troubleshooting steps for errors that you might encounter
 #### AX 2012 R3 MPOS activation fails with an error on step 2
 | Field | Value |
 |---|---|
-| Sample Event Log Error Message | Exception occured: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---\> Microsoft.Dynamics.Commerce.Runtime.StorageException: Failed to read from the database. See inner exception for details. DatabaseErrorCode: 0 ---\> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. ---\> System.Data.SqlClient.SqlException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
+| Sample Event Log Error Message | Exception occurred: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---\> Microsoft.Dynamics.Commerce.Runtime.StorageException: Failed to read from the database. See inner exception for details. DatabaseErrorCode: 0 ---\> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. ---\> System.Data.SqlClient.SqlException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
 | MPOS Error on Activation Screen | DZ1001 |
 | Troubleshooting Steps | Device you are trying to activate is already active. Please deactivate the device and try the activation. |
 
@@ -397,21 +397,20 @@ The following list describes all the KBs that are required for N-1 to work corre
 ### Dynamics 365 Retail – Microsoft Dynamics 365 7.2 headquarters
 | KB number | Title |
 |---|---|
-| 4095190 | Expose RetailSharedParameter's TransactionServiceProfileID in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow th official upgrade process to move data from 6.3 to D365 |
-| 4095192 | Expose RetailSharedParameter's TSPasswordEncryption field in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow th official upgrade process to move data from AX6.3 to D365 |
-| 4095209 | The Real-timeServiceAX63 N-1 component's webconfig contains an invalid authentication type name. This causes issue when the component tries to authenticate with the transaction service in D365 |
-| 4095189 | RetialTransactionServiceProfile table's Protocol column is not being synced to the old version channel databases from the new version D365 AX database. |
-| 4095191 | The user is not allowed to set the retail server usrl to be http based URL as only secured urls are allowed. This prevents the user from connecting to old (6.3) version retail servers while running in backwardcompatiility mode. |
+| 4095190 | Expose RetailSharedParameter's TransactionServiceProfileID in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow the official upgrade process to move data from 6.3 to Dynamics 365. |
+| 4095209 | The Real-timeServiceAX63 N-1 component's webconfig contains an invalid authentication type name. This causes issue when the component tries to authenticate with the transaction service in Dynamics 365 |
+| 4095189 | RetialTransactionServiceProfile table's Protocol column is not being synced to the old version channel databases from the new version Dynamics 365 AX database. |
+| 4095191 | The user is not allowed to set the retail server URL to be http based URL as only secured URLs are allowed. This prevents the user from connecting to old (6.3) version retail servers while running in backward compatibility mode. |
 | 4132456 | \[Upgrade \& N-1\]\[Designer\] Number pad height should be extensible |
 | 4095926 | Upgrade \& N-1: Return order fails from 63MPOS as the transaction was not found on a N-1 non upgrade environment. |
 | 4095664 | Allow Microsoft Dynamics AX 2012 clients connecting to AX7.2 HQ to create new customers. |
-| 4132454 | N-1 version of 1070 fails due to duplicate record exception caused by the CompanyImage\_AX63 subjob |
-| 4131243 | When running D365 Retail in N-1 mode, the user is not able to set the HardwareStationURL using the AX client hence may not be able to configure the 6.3 hardwaresation properly |
+| 4132454 | N-1 version of 1070 fails due to duplicate record exception caused by the CompanyImage\_AX63 subjob. |
+| 4131243 | When running Dynamics 365 Retail in N-1 mode, the user is not able to set the HardwareStationURL using the AX client hence may not be able to configure the 6.3 hardware station properly. |
 | 4338120 | Async service connector installer should use provided HQ message db name instead of always using a default name regardless of the HQ message database name provided by the user. |
-| 4337834 | When running D365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails while adding or updating customer from MPOS due to missing methods in RetailTransactionService. |
-| 4337864 | When running D365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails during login or payment when attempting to load or use the hardware profile payment merchant property. |
+| 4337834 | When running Dynamics 365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails while adding or updating customer from MPOS due to missing methods in RetailTransactionService. |
+| 4337864 | When running Dynamics 365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails during login or payment when attempting to load or use the hardware profile payment merchant property. |
 | 4132453 | Running the N-1 version of the Product download job(1040\_AX63) fails when moving data to the InventDim table in the 6.3 version channel database |
 | 4206905 | POS reports throw errors when they are run in non-upgrade N-1 environment. |
 | 4133289 | Running the N-1 version of the Product - Refunds from Journal or existing transactions failing |
-| 4161086 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filterin the table usign the provided condition (x++ fix) |
-| 4161099 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filterin the table usign the provided condition (Binary changes) |
+| 4161086 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filtering the table using the provided condition (x++ fix) |
+| 4161099 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filtering the table using the provided condition (Binary changes) |

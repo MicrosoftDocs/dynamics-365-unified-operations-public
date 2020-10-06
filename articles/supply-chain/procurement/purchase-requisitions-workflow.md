@@ -4,7 +4,7 @@
 title: Purchase requisition workflow
 description: The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved. When a purchase requisition is submitted for review, the workflow process is started. After a purchase requisition is approved, a purchase order can be generated for the purchase requisition lines and submitted to the vendor for order fulfillment.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2234
@@ -91,6 +91,9 @@ In this example, the workflow process for the purchase requisition lines include
 4.  The department manager for the Marketing department reviews the purchase requisition lines for both the posters and the T-shirts. The Sales department manager reviews the purchase requisition line only for the posters, because that is the only cost that is being charged to the Sales department.
 5.  The group manager reviews and approves the purchase requisition line for the T-shirts only if group manager approval is required because, for example, the amount on the purchase requisition line exceeds the department manager’s approval limit. The group manager does not have to approve the purchase requisition line for the posters.
 
+> [!NOTE]
+> The system currency must be set if the header workflow for a purchase requisition requires approvals related to signing limits.
+
 ## Configuring a workflow for purchase requisitions
 To route a purchase requisition for review, you must configure the purchase requisition workflow processes. The workflow process that you define controls the interaction between the user who requested the items (the requester) and the reviewer and approver in the workflow. The routing of the purchase requisition depends on the conditions that are specified in the workflow configuration. For example, these conditions determine when the purchase requisition should be routed, the user or role that it should be routed to, and the actions that users can take.  
 
@@ -115,7 +118,7 @@ Additional resources
 
 [Create a requisition for consumption](tasks/create-requisition-consumption.md)
 
-[Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+[Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
 
 [Procurement and sourcing workflows](procurement-sourcing-workflows.md)
 

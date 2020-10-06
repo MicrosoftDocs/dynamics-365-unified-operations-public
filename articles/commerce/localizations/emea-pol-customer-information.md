@@ -3,9 +3,9 @@
 
 title: Customer information management for Poland
 description: This topic describes how to handle customer information in Retail POS for Poland.
-author:
+author: sepism
 manager:
-ms.date: 01/27/2020
+ms.date: 03/25/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -24,13 +24,13 @@ ms.search.region: Poland
 ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
-ms.dyn365.ops.version: 10.0.9
+ms.dyn365.ops.version: 10.0.7
 
 ---
 # Customer information management for Poland
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 ## Introduction
 
@@ -39,7 +39,7 @@ This topic describes how you can handle customer information, such as the custom
 You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and it can be used for invoicing purposes.
 
 > [!NOTE]
-> This functionality is available in version 10.0.8 and later.
+> This functionality is available in version 10.0.7 and later.
 
 ## Setup
 
@@ -49,7 +49,7 @@ You must complete the following configuration to use this functionality:
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
 - Set up receipt formats.
-- Configure retail channel components.
+- Configure channel components.
 
 ### Set up a registration type for the VAT number
 
@@ -91,9 +91,9 @@ On the **Custom fields** page, add the following record for the custom field for
 
 In the Receipt format designer, add the custom field to the appropriate receipt section for every receipt format that is required. For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
-### Configure retail channel components
+### Configure channel components
 
-To make the functionality that is specific to Poland available, you must configure extensions for retail channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this topic.
+To make the functionality that is specific to Poland available, you must configure extensions for channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this topic.
 
 ## Example scenarios
 
@@ -113,7 +113,7 @@ The following example scenarios show how to work with customer information in PO
 1. Sign in to POS.
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
-1. Specify the new customer's attributes. 
+1. Specify the new customer's attributes.
 1. Select **Create a new address**. Then specify the new customer's contact information and an address.
 1. In the **VAT number** field, enter the customer's VAT number.
 1. Save the customer record and the customer address record, and add the customer to the transaction.
@@ -140,7 +140,7 @@ The following example scenarios show how to work with customer information in PO
 
 ## Deployment guidelines
 
-This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Retail for Poland.
+This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Commerce for Poland.
 
 > [!NOTE]
 > Some steps in these procedures vary, depending on the product version you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
@@ -149,22 +149,41 @@ This section provides deployment guidance for enabling customer information mana
 
 ### Update customizations
 
-Follow these steps if any of your customizations include request handlers for the SaveCartRequest or CreateSalesOrderServiceRequest request.
+Follow these steps to update customizations.
 
-1. Find the request handler for the **SaveCartRequest** request.
-1. Find the line of code that runs the original handler.
-1. Replace the original handler class with **TaxRegistrationIdFiscalCustomerService**.
+# [Retail 10.0.7 and later](#tab/retail-10-0-7)
+
+If any of your customizations include request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest` requests:
+
+1. Find the request handler for `SaveCartRequest`.
+1. Find the line of code that runs the original request handler.
+1. Add the following lines before calling the original request handler:
 
     ```cs
     using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
 
     ...
 
-    var requestHandler = new TaxRegistrationIdFiscalCustomerService();
-    var response = request.RequestContext.Runtime.Execute<SaveCartResponse>(request, request.RequestContext, requestHandler, skipRequestTriggers: false);
+    new TaxRegistrationIdFiscalCustomerService().Execute(request);
     ```
 
-1. Repeat steps 1 through 3 for the **CreateSalesOrderServiceRequest** request.
+1. Find the request handler for `CreateSalesOrderServiceRequest`.
+1. Find the line of code that runs the original request handler.
+1. Replace it with the following code:
+
+    ```cs
+    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
+
+    ...
+
+    return new TaxRegistrationIdFiscalCustomerService().Execute(request);
+    ```
+
+# [Retail 10.0.12 and later](#tab/retail-10-0-12)
+
+If customizations have references to the `TaxRegistrationIdFiscalCustomerService` service, they must be removed.
+
+---
 
 ### Update a development environment
 
@@ -174,7 +193,7 @@ Follow these steps to update a development environment.
 
 1. Find the extension configuration file for the Commerce runtime (CRT):
 
-    - **Retail Server:** Find the **CommerceRuntime.Ext.config** file in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
+    - **Commerce Scale Unit:** Find the **CommerceRuntime.Ext.config** file in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** Find the **CommerceRuntime.MPOSOffline.Ext.config** file under the local CRT client broker location.
 
 1. Register the CRT extension in the extension configuration file.
@@ -228,7 +247,7 @@ Follow these steps to make the TaxRegistrationId.PL extension available.
 
 ### Update a production environment
 
-Follow these steps to create deployable packages that contain Retail components, and to apply the packages in a production environment.
+Follow these steps to create deployable packages that contain Commerce components, and to apply the packages in a production environment.
 
 1. In the **CommerceRuntime.Ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
 

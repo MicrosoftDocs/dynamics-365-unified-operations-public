@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Manage worker accommodations
 
-[!include [task guide banner](../../../includes/task-guide-banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This procedure walks through the steps for setting up work environment accommodation types, such as ergonomic chairs or periodic breaks. It also shows how to assign these accommodation types to a worker, and either approve or deny the accommodation type. The demo data company used to create this procedure is USMF.
 

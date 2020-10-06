@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ENUMERATE">ENUMERATE ER function</a>
+# ENUMERATE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ENUMERATE` function returns a new *Record list* value that consists of enum
 
 ## Syntax
 
-```
+```vb
 ENUMERATE (list)
 ```
 

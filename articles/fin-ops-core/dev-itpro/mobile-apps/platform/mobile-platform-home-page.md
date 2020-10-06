@@ -5,7 +5,7 @@ title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 255544
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 
@@ -103,7 +103,7 @@ During development it can be useful to attach a debugger to get more detailed in
 2. Install the Android debug apk for the Finance and Operations app on an Android device:
     - One time only, allow the installation of apk files -  Go to **Menu** > **Settings** > **Security** and then check **Unknown Sources** to allow the phone to install apps from sources other than the Google Play Store.
     - Uninstall the Finance and Operations app - Ensure that any previous version of the Finance and Operations app has been uninstalled.
-    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
+    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on GitHub](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
     - Install the Finance and Operations apk file - Confirm install of the Finance and Operations app via the apk file.
     - Run the debug Finance and Operations app on the device and sign in.
 
@@ -154,6 +154,10 @@ During development it can be useful to attach a debugger to get more detailed in
 9. If more changes or validation is needed, repeat the process.
 
 ## Troubleshooting the app
+
+### No support for iOS14 due to issues with date and time controls
+Due to changes introduced in iOS14, date and time controls in the Finance and Operations mobile app no longer work after a user updates their device to iOS14. After moving to iOS14, the date picker and the time picker do not open by touch or by using the keyboard, and the user is unable to enter in a new date or time or clear out the existing value. This issue is currently being investigated.
+
 ### The Mobile Client app is not working on particular devices
 Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
 To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Finance and Operations (Dynamics 365)**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
@@ -172,6 +176,9 @@ The Finance and Operations (Mobile Client) app facilitates user authentication w
 - Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
 
 If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
+
+### Intune support and conditional access
+The Finance and Operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune. Manually adding the app (following [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/store-apps-ios)) is also not supported because the device identifier cannot be passed.
 
 ### Trouble signing out of the app and signing in with new credentials
 If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.

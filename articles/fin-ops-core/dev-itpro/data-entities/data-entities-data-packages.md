@@ -5,7 +5,7 @@ title: Data management overview
 description: This topic provides information about data management in Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -181,7 +181,7 @@ If you have extended an entity (added fields) or if the automatic mapping appear
 ### Generate data
 If you have fields in entities that you want the system to generate data for on import, instead of providing the data in the source file, you can use the auto-generated functionality in the mapping details for the entity. For example, if you want to import customers and customer address information, but the address information was not previously imported with the Global Address Book entities, you can have the entity auto-generate the party number upon import and the GAB information will be created. To access this functionality, view the map of the entity and click the **Mapping details** tab. Select the fields that you want to auto-generate. This will change the source field to **Auto**.
 
-[![Generate dataw](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
+[![Generate data](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
 
 ### Turn off automatically generated number sequences
 Many entities support automatic generation of identifiers based on number sequence setup. For example, when creating a product, the product number is automatically generated and the form does not allow you to edit values manually.
@@ -202,9 +202,6 @@ Export is the process of retrieving data from a system using data entities. The 
 [![Export page](./media/dataentitiesdatapackages08-1024x400.png)](./media/dataentitiesdatapackages08.png)
 
 After the project is created and saved you can export the project to create a job. During the export process, you can see a graphical view of the status of the job and the record count. This view shows multiple records so you can review the status of each record prior to downloading the actual files.
-
-- While importing the system users entity, you may receive an integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
-- If a record already exists in the **UserInfo** table (the Admin record would most likely always exist), the import will fail for those records but work for other records.
 
 [![Execution summary](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)
 
@@ -262,10 +259,6 @@ During data entity import:
 - If data entities fail (shown with a red x or yellow triangle icon on the data entity tile) after you click **Import**, and **View staging data** shows no data, go back to the **Execution summary** page. Go to **View execution log**, select the data entity, and review the **Log text, Staging log details, and Infolog** for more information. **Staging log details** will display **Error column** (field) details and **Log description** will describe errors in detail.
 - If data entities fail, you can check the import file to see if there's an extra line in the file with text which displays, "This is a string that is inserted into Excel as a dummy cell to make the column to support more than 255 characters. By default, an Excel destination component will not support more than 255 characters. The default type of Excel will be set based on the first few rows". This line is added during data export. If this line exists, delete this line, re-package the data entity, and try to import.
 
-### Troubleshooting the System users entity
-- When you import the system users entity, you may receive an integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
-- If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
-
 ## Features flighted in data management and enabling flighted features
 The following features are enabled via flighting. *Flighting* is a concept that allows a feature to be ON or OFF by default. 
 
@@ -288,6 +281,8 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | DMFDisableDoubleByteCharacterExport     | A fix was made to ensure that data can be exported when the format is configured to use code page 932 setting. If an issue is encountered in relation to double byte exports, this fix can be turned off by disabling this flight to unblock, if applicable. |
 | DisablePendingRecordFromJobStatus     | A fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
 | DMFDisableEnumFieldDefaultValueMapping     | A fix was made to ensure that default values set in advanced mapping for enum fields are successfully saved in the data package manifest file when generating the data package. This makes it possible for the data package to be used as a template for integrations when such advanced mappings are used. This fix is protected by this flight and can be disabled if the previous behavior is still needed (which is to always set the value to 0 in the data package manifest).  |
+| DMFXsltEnableScript     | This flight only applies to Platform update 34 and non-production environments. A fix was made in Platform update 34 to prevent scripting in XSLT. However, this resulted in breaking some functionality that was dependent on scripting. As a result, this flight has been turned ON by Microsoft in all production environments as a preventive measure. In non-production environments, this must be added by customers if they encounter XSLT failures related to scripting. From Platform update 35 onward, a code change was made to revert the Platform update 34 change so this flight does not apply from Platform update 35 onward. Even if you enabled this flight in Platform update 34, upgrading to Platform update 35 will not cause any negative impact due to this flight being ON from Platform update 34. |
+| DMFExecuteSSISInProc     | This flight is OFF by default. This is related to a code fix that was made to run SQL Server Integration Services (SSIS) out of in-process to optimize memory utilization of SSIS when running DIXF jobs. However, this change has caused a regression in a scenario where if the DIXF data project name has an apostrophe (') in it, then the job will fail with an error. If you encounter this issue, removing the (') in the data project name will resolve the failure. However, if for some reason the name cannot be changed, then this flight can be enabled to overcome this error. Enabling this flight will make SSIS run in-process as before, which could lead to higher memory consumption when running DIXF jobs.  |
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
@@ -297,17 +292,17 @@ For enabling flights in a production environment, a support case must be logged 
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
 - After making the above change, perform an IISReset on all AOS's. 
 
-```
-INSERT INTO SYSFLIGHTING
-([FLIGHTNAME]
-,[ENABLED]
-,[FLIGHTSERVICEID]
-,[PARTITION]
-,[RECID]
-,[RECVERSION]
-)
-VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
-```
+    ```sql
+    INSERT INTO SYSFLIGHTING
+    ([FLIGHTNAME]
+    ,[ENABLED]
+    ,[FLIGHTSERVICEID]
+    ,[PARTITION]
+    ,[RECID]
+    ,[RECVERSION]
+    )
+    VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
+    ```
 
  - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
  - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition ID + 'n' to ensure it has a unique value

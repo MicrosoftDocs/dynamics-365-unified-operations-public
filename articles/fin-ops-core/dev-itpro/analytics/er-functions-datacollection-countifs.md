@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="COUNTIFS">COUNTIFS ER function</a>
+# COUNTIFS ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `COUNTIFS` function returns an *Integer* value that represents the number of
 
 ## Syntax
 
-```
+```vb
 COUNTIFS (condition 1 range, condition 1 value[, condition 2 range, condition 2 value, …, condition N range, condition N value])
 ```
 

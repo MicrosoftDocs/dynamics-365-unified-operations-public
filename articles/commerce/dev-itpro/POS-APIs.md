@@ -5,7 +5,7 @@ title: Point of sale (POS) APIs
 description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 11/19/2019
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2018-29-10
+ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 ---
@@ -59,26 +59,26 @@ Use the following steps to consume Retail APIs in your extensions.
 
     The pattern is import { api name } from "PosApi/Consume/Module name";
  
-    ```Typescript
+    ```typescript
     import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
     ```
 
 2.  Import the client entities and proxy entities if required.
 
-    ```Typescript
+    ```typescript
     import { ClientEntities } from "PosApi/Entities";
 
     import { ProxyEntities } from "PosApi/Entities";
     ```
 3.  Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")
 
-    ```Typescript
+    ```typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
     ```
     
     For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
  
-    ```Typescript
+    ```typescript
     let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
 
      attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
@@ -92,12 +92,12 @@ Use the following steps to consume Retail APIs in your extensions.
     new SaveAttributesOnCartClientRequest(attributeValues);
 
     result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
-
     ```
+
 ### Samples showing how to access APIs
 
 **Get Current cart**
-```
+```typescript
 // Gets the current cart.
 
  let currentCart: ProxyEntities.Cart;
@@ -111,8 +111,9 @@ Use the following steps to consume Retail APIs in your extensions.
 currentCart = getCurrentCartClientResponse.data.result;
 
 ```
+
 **Get Current customer added to cart**
-```
+```typescript
  // Gets the current customer.
 
  let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
@@ -131,10 +132,10 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 }
 ```
+
 **Force void transaction**
-```
+```typescript
  // Force void tarnsaction.
-```Typescript
  let forceVoidTransactionRequest: VoidTransactionOperationRequest<VoidTransactionOperationResponse> =
 
  new VoidTransactionOperationRequest<VoidTransactionOperationResponse>(false, this.context.logger.getNewCorrelationId());
@@ -213,16 +214,20 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | AddLoyaltyCardToCartOperationRequest |
 | ReturnCartLineOperationRequest |
 | ReturnItemOperationRequest |
+| AddExpenseAccountLineToCartOperationRequest |
+| ShipAllCartLinesOperationRequest |
+| ShipSelectedCartLinesOperationRequest |
 
 
 ### Payments
 
 The following is a list of APIs exposed to perform payment-related functionality.
 
-| POS API                                   |
-|-------------------------------------------|
-| GetGiftCardByIdServiceRequest             |
-| GetPaymentCardTypeByBinRangeClientRequest |
+| POS API                                   | Description                            | Release                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| GetGiftCardByIdServiceRequest             |                                        |                          |
+| GetPaymentCardTypeByBinRangeClientRequest |                                        |                          |
+| GetSignatureClientRequest                 | Shows the signature capture dialog in POS or send the message to signature capture device based on the configuration. | 10.0.15 |
 
 ### Peripherals
 
@@ -238,6 +243,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 | CardPaymentExecuteTaskRequest                          |
 | CardPaymentRefundPaymentRequest                        |
 | CardPaymentVoidPaymentRequest                          |
+| CardPaymentAuthorizeCardTokenPeripheralRequest                          |
 | CashDrawerIsOpenRequest                                |
 | HardwareStationDeviceActionRequest                     |
 | HardwareStationStatusRequest                           |
@@ -254,6 +260,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 | PaymentTerminalRefundPaymentRequest                    |
 | PaymentTerminalUpdateLinesRequest                      |
 | PaymentTerminalVoidPaymentRequest                      |
+| PaymentTerminalFetchTokenPeripheralRequest             |
 | PrinterPrintRequest                                    |
 | ScaleReadRequest                                       |
 
@@ -284,6 +291,7 @@ The following is a list of APIs exposed to perform authentication-related functi
 | POS API                |
 |------------------------|
 | LogOffOperationRequest |
+| LockRegisterOperationRequest |
 
 ### DataService
 
@@ -371,6 +379,17 @@ The following is a list of APIs exposed to perform products-related functionalit
 | GetSerialNumberClientRequest               |
 | GetRefinerValuesByTextServiceRequest       |
 | SelectProductClientRequest |
+| SelectProductVariantClientRequest |
+| GetActivePricesServiceRequest |
+
+### Categories
+
+The following is a list of APIs exposed to perform categories-related functionality.
+
+| POS API                                    |
+|--------------------------------------------|
+| GetCategoriesServiceRequest              |
+
 
 ### SalesOrders
 
@@ -435,5 +454,7 @@ The following is a list of APIs exposed to perform store operations-related func
 | SearchCommissionSalesGroupsServiceRequest       |
 | IssueLoyaltyCardOperationRequest                |
 | GetPickingAndReceivingOrdersClientRequest       |
+| BankDropOperationRequest                 |
+| DeclareStartAmountOperationRequest        | 
 
 

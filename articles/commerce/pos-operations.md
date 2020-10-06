@@ -5,7 +5,7 @@ title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -57,6 +57,8 @@ The following columns specify where the operations can be invoked:
 | 137 | Add affiliation to customer | Add an affiliation to a customer on the **Customer details** page. | No | No | No | Yes | No |
 | 138 | Remove affiliation from customer | Remove an affiliation on the **Customer details** page. | No | No | No | Yes | No |
 | 643 | Add coupon code | Add a coupon by entering its code in the POS. | Yes | Yes | No | Yes | No |
+| 141 | Add header charges | Add a misc charge to the order header. | Yes | Yes | No | No| No |
+| 141 | Add line charges | Add a misc charge to a selected sales line. | Yes | Yes | No | No| No |
 | 117 | Add loyalty card | Prompt the user to enter a loyalty card number that will be added to the current transaction. | Yes | Yes | No | Yes | No |
 | 136 | Add serial number | This operation lets the user specify a serial number for the currently selected product. | Yes | Yes | No | Yes | No |
 | 1214 | Add shipping address | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
@@ -69,6 +71,7 @@ The following columns specify where the operations can be invoked:
 | 310 | Calculate total | When discount calculation is delayed, this operation initiates the calculation for the current transaction. | Yes | Yes | No | Yes | No |
 | 642 | Carry Out All Products | Set the mode of delivery for all lines to **Carryout**. | Yes | Yes | No | Yes\* | No |
 | 641 | Carry Out Selected Products | Set the mode of delivery for the selected lines to **Carryout**. | Yes | Yes | No | Yes\* | No |
+| 647 | Change mode of delivery | Change mode of delivery for preconfigured shipping sales lines. | Yes | Yes | No | No| No |
 | 1215 | Change password | This operation lets the POS user change his or her password. | Yes | Yes | Yes | No | No |
 | 123 | Change unit of measure | Change the unit of measure for the selected line item. | Yes | Yes | No | Yes | No |
 | 639 | Clear default sales representative on transaction | Remove the commission sales group (sales rep) from the transaction. | Yes | Yes | No | Yes | No |
@@ -105,6 +108,7 @@ The following columns specify where the operations can be invoked:
 | 1218 | Force unlock peripheral | The system uses this operation internally to unlock POS peripherals. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 520 | Gift card balance | Show the balance of a gift card. | Yes | Yes | No | No | No |
 | 708 | Inactivate device | Inactivate the current device, so that it can't be used as a POS register. | No | No | No | No | No |
+| 804 | Inbound operation | Access the features of inbound store inventory management. | Yes | No | Yes | No| No |
 | 517 | Income accounts | Record money that is put into the cash drawer for a reason other than a sale. | Yes | Yes | Yes | Yes | No |
 | 801 | Inventory lookup | Look up available, on order, and available-to-promise (ATP) quantities for the current store and other available locations. | Yes | Yes | Yes | No | No |
 | 122 | Invoice comment | This operation lets the user enter a comment about the current transaction. | Yes | Yes | No | Yes | No |
@@ -116,10 +120,12 @@ The following columns specify where the operations can be invoked:
 | 703 | Lock register | Lock the current register, so that it can't be used, but don't sign the current user out. | No | No | No | Yes | No |
 | 701 | Log off | Sign the current user out of the register. | Yes | Yes | Yes | Yes | No |
 | 521 | Loyalty card points balance | Show the balance of points for the specified loyalty card. | Yes | Yes | No | No | No |
+| 142 | Manage charges | View and manage misc charges applied to transaction. | Yes | Yes | No | No| No |
 | 918 | Manage shifts | Show a list of active, suspended, and blind closed shifts. | Yes | Yes | Yes | No | No |
 | 914 | Minimize POS window | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 1000 | Open drawer | Perform a "no sale" operation, and open the currently selected cash drawer. | Yes | Yes | Yes | Yes | No |
 | 928 | Order fulfillment | This operation allows users to pick, pack, ship, or recall orders for store picked up. | Yes | Yes | Yes | No | No |
+| 805 | Outbound operation | Access features for managing shipments of outbound transfer orders. | Yes | No | Yes | No| No |
 | 129 | Override line product tax | Override the tax on the selected line item, and use a different specified tax. | Yes | Yes | No | Yes | No |
 | 130 | Override line product tax from list | Override the tax on the selected line item, and use the tax that the user selects in a list. | Yes | Yes | No | Yes | No |
 | 127 | Override transaction tax | Override the tax on the transaction, and use a different specified tax. | Yes | Yes | No | Yes | No |
@@ -152,6 +158,7 @@ The following columns specify where the operations can be invoked:
 | 108 | Product search | This operation lets the user search for a product by navigating to the product search page in the POS. | Yes | Yes | Yes | Yes | No |
 | 633 | Quote expiration date | This operation lets the user view or modify the expiration date on a sales quotation. | Yes | Yes | No | Yes\* | No |
 | 627 | Recalculate | Recalculate all customer order lines and taxes, based on the current configuration. | Yes | Yes | No | Yes\* | No |
+| 143 | Recalculate charges | Recalculate the auto-charges applied to the order. | Yes | Yes | No | No| No |
 | 515 | Recall order | This operation lets the user search for and recall customer orders and sales quotations. | Yes | Yes | Yes | No | No |
 | 504 | Recall transaction | This operation lets the user recall a previously suspended transaction from the current store. | Yes | Yes | No | Yes‡ | No |
 | 305 | Redeem loyalty points | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |

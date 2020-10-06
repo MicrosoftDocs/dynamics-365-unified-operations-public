@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a credit note on project invoices
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 1. Go to Project management and accounting > Projects > All projects. 
 2. In the list, find and select the desired record. 

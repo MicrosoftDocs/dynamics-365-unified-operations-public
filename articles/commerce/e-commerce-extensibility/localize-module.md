@@ -5,7 +5,7 @@ title: Localize a module
 description: This topic describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -72,7 +72,7 @@ The following example shows a resource schema.
 
 The following example shows a resource file.
 
-``` json
+```json
 {
     "noResultsForRefinersText": {
         "value": "No results found for refinement criteria",
@@ -295,7 +295,7 @@ You can generate global.json files for module resources and authoring resources 
 
 ### Example global.json file
 
-```
+```json
 {
     "nextButtonText": {
         "value": "next",
@@ -310,7 +310,7 @@ You can generate global.json files for module resources and authoring resources 
 
 ### Example fr-fr.json localized file
 
-```
+```json
 {
     "nextButtonText": {
         "value": "prochain",
@@ -331,7 +331,7 @@ To test localized content, you must use a page mock and change the locale to the
 
 [Create a new module](create-new-module.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 

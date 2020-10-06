@@ -42,7 +42,7 @@ Module mock files are used to configure mock data for modules. Therefore, they c
 
 Here is an example of a mock file.
 
-```
+```json
 {
 	"id": "R1Module1",
 	"config": {

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Configure credit card processing
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable. This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.
 

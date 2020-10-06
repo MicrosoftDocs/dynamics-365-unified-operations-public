@@ -5,7 +5,7 @@ title: Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Modern POS (MPOS) triggers and printing
+# POS triggers
 
 [!include [banner](../../includes/banner.md)]
 
@@ -39,7 +39,7 @@ You can use triggers to capture events that occur before or after Retail Modern 
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
 
-The following table lists the available triggers and denotes whether they can be cancelled.
+The following table lists the available triggers and denotes whether they can be canceled.
 
 ## Application triggers
 
@@ -167,6 +167,8 @@ The following table lists the available triggers and denotes whether they can be
 | PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
 | PostCreatePackingSlipTrigger	| Non-Cancelable 	 | Executed after the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
 | PostReturnInvoicedSalesLinesTrigger	| Non-Cancelable 	 | Executed after one or more invoices selected for return.|
+| PreResendEmailReceiptTrigger (10.0.13)	| Cancelable 	 | Executed before sending the email from the Show journal view.|
+
 
 
 ## Shift triggers
@@ -204,6 +206,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
 | PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
 | PreSelectTransactionPaymentMethodTrigger       | Cancelable |  When the user selects the **Totals** button in the **Cart view - totals** panel, the available payment methods are shown and this trigger will get executed before this dialog is shown. You can us extension code to modify the available payment methods from this trigger.      |
+| PreShipSelectedCartLinesTrigger       | Cancelable |  Executed when the product is selected for shipping.      |
 
 ## Reason code triggers
 | Trigger              | Type           | Description                                             |
@@ -216,6 +219,11 @@ The following table lists the available triggers and denotes whether they can be
 | PreCreateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is created (executed after the order input). |
 | PreUpdateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is updated. |
 
+## Inventory triggers
+| Trigger              | Type           | Description                                             | Release		|
+|----------------------|----------------|---------------------------------------------------------|--------------------------|
+| PreCreateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is created (executed after the order input). | 10.0.15 |
+| PreUpdateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is updated. | 10.0.15 |
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
@@ -542,15 +550,6 @@ This section explains how to override the existing CRT request to print a receip
     The overall code should look like this.
 
     ```C#
-    /**
-     * SAMPLE CODE NOTICE
-     *
-     * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-     * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-     * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-     */
-
     namespace Contoso
     {
         namespace Commerce.Runtime.ReceiptsSample
@@ -674,7 +673,7 @@ This section explains how to override the existing CRT request to print a receip
 14. Also paste the assembly in the **…\\RetailSDK\\References** folder.
 15. Open the **commerceruntime.ext.config** file, and add the custom assembly information under the \<composition\> section.
 
-    ```
+    ```xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SuspendReceiptSample" />
     ```
 

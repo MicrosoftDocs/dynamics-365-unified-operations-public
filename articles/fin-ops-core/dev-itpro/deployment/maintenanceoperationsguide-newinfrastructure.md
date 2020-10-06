@@ -3,9 +3,9 @@
 
 title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
-author: manado
+author: laneswenka
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 
@@ -79,7 +79,7 @@ To connect to a database, follow these steps.
 
     The access that is granted to you depends on the reason that you selected in the **Reason for access** field. For example, if you selected **AX troubleshooting** as the reason, read-only access to the AX database is granted. If you selected **Performance tuning** as the reason, write access to the AX database is granted.
 
-4. Before you can access Microsoft Azure SQL Database through LCS, the IP address of the computer where you will use Microsoft SQL Server Management Studio to connect to the SQL database must be added to the approved list (sometimes referred to as the "whitelist").
+4. Before you can access Microsoft Azure SQL Database through LCS, the IP address of the computer where you will use Microsoft SQL Server Management Studio to connect to the SQL database must be added to the approved list (sometimes referred to as the "safe list").
 
     To complete this step, you can add a new SQL Database firewall rule:
 

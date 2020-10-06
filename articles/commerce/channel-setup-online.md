@@ -5,7 +5,7 @@ title: Set up an online channel
 description: This topic describes how to create a new online channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -39,9 +39,9 @@ This topic describes how to create a new online channel in Microsoft Dynamics 36
 
 Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Online stores give customers the option of purchasing products from the retailer's online store in addition to its retail stores.
 
-To create an online store in Commerce, you must first create an online channel. 
+To create an online store in Commerce, you must first create an online channel. Before you create a new online channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
 
-Before you create a new online channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
+Before you can create a new site, at least one online store must be created in Commerce. For more information, see [Create an e-Commerce site](create-ecommerce-site.md).
 
 ## Create and configure a new online channel
 

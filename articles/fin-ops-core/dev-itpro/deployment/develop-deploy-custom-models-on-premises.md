@@ -5,7 +5,7 @@ title: Develop and deploy custom models to on-premises environments
 description: This topic describes the process of developing customizations and extensions, and deploying them to an on-premises environment. 
 author: kfend
 manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -66,7 +66,7 @@ Then follow these steps.
 2. Select **Azure** or **Locally**. If you select **Locally**, find and download a development VHD. If you select **Azure**, you're prompted to select one of three topologies: **Build and Test**, **Demo**, or **Development**.
 3. Complete the deployment steps, and deploy a VM in your Azure subscription.
 
-For more information about how to configure a local development VHD, see [Deploy and access development environments](../dev-tools/access-instances.md#vm-that-is-running-on-premises).
+For more information about how to configure a local development VHD, see [Deploy and access development environments](../dev-tools/access-instances.md#vm-that-is-running-locally).
 
 > [!NOTE]
 > To deploy environments in your own Azure subscription, you must set up at least one Azure Connector. To set up an Azure Connector, in LCS, open the **Project settings** page, and then click the **Azure connectors** tab. Then follow the instructions to add an Azure Connector. To complete the steps, you must be the tenant administrator of the organization.  

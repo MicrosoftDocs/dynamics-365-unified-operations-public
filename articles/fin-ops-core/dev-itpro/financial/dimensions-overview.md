@@ -63,7 +63,7 @@ With the November 2016 release, modifying the **DimensionCombinationEntity** has
 
 4. Your customization is now completed. You can test it in SQL using the following statement.
 
-    ```Sql
+    ```sql
     select * from DIMENSIONCOMBINATIONENTITY 
     ```
 
@@ -80,7 +80,7 @@ To support interactions with dimensions as columns, for example, in the Microsof
 5. Create a new private static method that returns a str named **departmentValue**. 
 6. In this method, you must get the dimension's value from **DimensionAttributeValueCombination**. The final method will look something like this.
 
-    ```
+    ```xpp
     /// <summary>
     /// This method returns the value of Department.
     /// </summary>
@@ -120,7 +120,7 @@ To support interactions with dimensions as columns, for example, in the Microsof
 
 10. Your customization is now complete. You can test it in SQL using the following statement.
 
-    ```
+    ```sql
     select * from DIMENSIONCOMBINATIONENTITY
     ```
 

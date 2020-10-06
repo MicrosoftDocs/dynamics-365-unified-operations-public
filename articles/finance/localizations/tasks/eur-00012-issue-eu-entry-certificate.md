@@ -28,8 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # EUR-00012 Issue an EU entry certificate
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate. This procedure was created using the demo data company DEMF.
 
 

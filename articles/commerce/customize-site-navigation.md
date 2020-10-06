@@ -5,7 +5,7 @@ title: Customize site navigation
 description: This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -84,7 +84,7 @@ To make your navigation hierarchy available to your online storefront, follow th
 To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment. The navigation menu module will then show your navigation hierarchy, provided that you've published your navigation hierarchy to the channel that your site is bound to.
 
 > [!NOTE]
-> The navigation menu module that is included in the store starter kit lets users navigate only to categories that don't have subcategories. If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.
+> The navigation menu module that is included in the module library lets users navigate only to categories that don't have subcategories. If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.
 
 ## Add custom navigation options
 
@@ -96,7 +96,7 @@ To add custom navigation options to your navigation menu, follow these steps.
 1. In the property pane, on the **Data** tab, select **Add item** to create a new content management system (CMS) navigation item.
 1. Enter link text and a URL.
 1. Repeat steps 2 and 3 to add more custom navigation options.
-1. When you've finished, save the template or fragment, and check it in.
+1. When you've finished, select **Save** to save the template or fragment, and then select **Finish editing** to check it in.
 
 ## Additional resources
 

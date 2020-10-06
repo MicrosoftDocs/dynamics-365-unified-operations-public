@@ -5,7 +5,7 @@ title: Action search
 description: This article describes the action search functionality. Action search will help you find and run actions on a page.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -75,6 +75,9 @@ For example, you typed **tot** in the **action search** field and are now examin
 In the previous example, action search showed results from the standard Action Pane at the top of a page. However, action search also shows results from visible toolbars that are located in other places on the page. For example, you're searching for the **On-hand inventory** button that is located on the **Sales order lines** FastTab. In this case, the button path in the results list (**Sales order lines** &gt; **Inventory** &gt; **View**) informs you that this button is located under the **View** heading on the **Inventory** menu button on the **Sales order lines** FastTab.
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+
+> [!NOTE]
+> There are some buttons that do not show up in Action search. These include drop dialog buttons and buttons from subforms. 
 
 ## Action search vs. Navigation search
 

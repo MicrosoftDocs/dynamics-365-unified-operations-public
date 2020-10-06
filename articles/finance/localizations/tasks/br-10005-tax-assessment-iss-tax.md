@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Tax assessment for ISS tax (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can make the tax assessment for ISS tax for a given booking period, considering the amount of ISS tax to recover and the amount of ISS tax to pay from the fiscal documents. For the due amount after the tax assessment, you can make the payment of the amount for the tax authority. This task uses the BRMF demo company.
 

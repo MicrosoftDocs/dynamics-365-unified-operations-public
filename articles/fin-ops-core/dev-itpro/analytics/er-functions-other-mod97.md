@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="MOD_97">MOD_97 ER function</a>
+# MOD_97 ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `MOD_97` function returns a *String* value that represents a creditor refere
 
 ## Syntax
 
-```
+```vb
 MOD_97 (invoice number digits)
 ```
 

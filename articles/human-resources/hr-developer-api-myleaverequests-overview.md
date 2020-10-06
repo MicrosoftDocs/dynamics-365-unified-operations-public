@@ -2,7 +2,7 @@
 # required metadata
 
 title: MyLeaveRequests overview
-description: 
+description: The MyLeaveRequests entity in Microsoft Dynamics 365 Human Resources provides the list of Leave Requests in the system, scoped (limited) to the requests accessible to the current user querying the entity.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

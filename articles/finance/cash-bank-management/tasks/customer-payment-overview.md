@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Customer payment overview
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task guide walks through various methods used to enter customer payments. This task uses the USMF demo company.
 
@@ -48,7 +48,7 @@ This task guide walks through various methods used to enter customer payments. T
 14. On **Action pane**, click Lines. When opening Lines, you will see any payments you recorded on the **Enter customer payments** page and saved into the journal. You can also use this page to enter new customer payments, or edit existing customer payment before they are posted.
 15. Click **New** to create another payment. 
 16. Select the customer from whom you received the payment. If you don't know the customer but know an invoice paid by the payment, use the Invoice field to manually enter or select the invoice. The customer will default after the invoice is selected.  
-17. Click **Settle transctions** to mark invoices that were paid. You are not required to settle the payment to any invoices. If this is a prepayment or if you don't know what invoice was paid, you can enter and post the payment. The payment can be settled to an invoice at a later point.  
+17. Click **Settle transactions** to mark invoices that were paid. You are not required to settle the payment to any invoices. If this is a prepayment or if you don't know what invoice was paid, you can enter and post the payment. The payment can be settled to an invoice at a later point.  
 18. Mark the invoices paid by the payment. 
 19. In the **Amount** field, enter the amount of the payment that will be settled to the invoice.
 20. Click **OK**.

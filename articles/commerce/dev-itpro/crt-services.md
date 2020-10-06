@@ -5,7 +5,7 @@ title: Commerce runtime (CRT) services
 description: This topic describes the Commerce runtime (CRT) services, which are a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 05/23/2018
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2018-18-05
+ms.search.validFrom: 2018-05-18
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
 
 ---
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality. To add or modify any business logic, you should customize CRT. Retail Modern POS or Cloud POS calls CRT to request that it perform business logic. CRT processes the request and then sends the response back to point of sale. Retail point of sale is like a thin client, all the business logic should be done in CRT.
+Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality. To add or modify any business logic, you should customize CRT. Retail Modern POS or Cloud POS calls CRT to request that it perform business logic. CRT processes the request and then sends the response back to point of sale. POS is like a thin client, all the business logic should be done in CRT.
 
 A CRT service is a group of requests/responses. Any time that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT processes the request and sends back the response.
 
@@ -72,7 +72,7 @@ For more information about each service, see the CRT request/response document i
 | ChargeService              | This service implements logic that calculates automatic charges, price charges, and shipping charges for transactions. |
 | CouponService              | This service validates and updates coupon-related requests. |
 | CurrencyService            | This service converts currencies, based on exchange rates. |
-| CustomerService            | This service contains customer related operations such as Save cusotomer, purchase history, get customer and customer balance. |
+| CustomerService            | This service contains customer related operations such as Save customer, purchase history, get customer and customer balance. |
 | EmployeeService            | This service gets employee-related information and employees by store. |
 | FormattingService          | This service implements logic for the format of numbers, currencies, and dates. |
 | GiftCardService            | This service provides information about internal activities that are related to gift cards, such as issuing the gift card, getting the balance, and adding value. |
@@ -97,7 +97,7 @@ For more information about each service, see the CRT request/response document i
 For extension scenarios, you can override any of the requests in the service class. For example, to change the customer search flow, extend the **CustomersSearchServiceRequest** request from the **CustomerService** service.
 
 > [!NOTE]
-> You don't customize the service class. Instead, you extend the request/response in the service class. By itself, the service class doesn't have any logic. It just routes the call to the correct request.
+> CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
 ## Sample service class implementation
 
@@ -160,6 +160,62 @@ public class MyService : IRequestHandler
     {
         return myresponse;
     }
+}
+```
+
+
+## How to execute the base handler in extension
+
+### NotHandledResponse()
+
+If the overridden logic executes the base handler for some scenarios, this can achieved by returning **NotHandledResponse().** If the NotHandledResponse is returned, the CRT framework will use the extension that is requesting to execute the base or out of band logic, so the CRT framework will execute the out of band handler.
+
+**NotHandledResponse** can be used in scenarios where the extension executes the base handler logic. For example, if the overridden request executes the base handler logic then it can return the NotHandledResponse for the base handler to execute. Or if the extension executes custom logic and base logic, then the extension code can return NotHandledResponse after executing the custom logic.
+
+```C#
+  private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)
+        {
+            ThrowIf.Null(request.SalesOrder, nameof(request.SalesOrder));
+
+            string receiptFieldName = request.CustomReceiptField;
+            string receiptFieldValue = string.Empty;
+
+            if (request.SalesOrder.TaxCalculationType == TaxCalculationType.GTE)
+            {
+                switch (receiptFieldName)
+                {
+                    case "Sample":
+                        receiptFieldValue = this.GetGstRegistrationNumber(request);
+                        break;
+                    default:
+                        return new NotHandledResponse();
+                }
+            }
+            else
+            {
+                return new NotHandledResponse();
+            }
+
+            int receiptFieldLength = request.ReceiptItemInfo == null ? 0 : request.ReceiptItemInfo.Length;
+            var returnValue = ReceiptStringUtils.WrapString(receiptFieldValue, receiptFieldLength);
+
+            return new GetCustomReceiptFieldServiceResponse(returnValue);
+        }
+
+```
+
+## How to execute extension request for a channel type
+
+If an extension request needs to be executed only for a certain channel type, such as execute the request for online channel not for the Retail channel (physical store), then before executing the request, check the channel type and execute the custom logic executed or execute the base logic by calling the NotHandledResponse().
+
+```C#
+if (requestContext.GetChannel().OrgUnitType == RetailChannelType.RetailStore)
+{
+    // run your extension code here.
+}
+else
+{
+    return new NotHandledResponse();
 }
 ```
 
@@ -414,7 +470,7 @@ All your workflow classes will follow the same pattern.
 
 ### Default workflows and handlers
 
-The following table lists the default workflow requests and response. CRT services call the workflows request and response based on the operation you perform in retail point of sale. You can customize any of these workflows request and response according to your business scenario. 
+The following table lists the default workflow requests and response. CRT services call the workflows request and response based on the operation you perform in POS. You can customize any of these workflows request and response according to your business scenario. 
 
 | Request                           | Handler                                 | Purpose                                                                                                                    |
 |-----------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

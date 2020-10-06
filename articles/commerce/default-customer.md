@@ -37,7 +37,7 @@ This topic describes how to create a default customer to use when creating a cha
 
 ## Overview
 
-When creating a retail or online channel, you will need to provide a default customer. A default customer can easily be created after first creating the customer group and customer address book.
+When creating a channel, you will need to provide a default customer. A default customer can easily be created after first creating the customer group and customer address book.
 
 ## Create a customer group
 

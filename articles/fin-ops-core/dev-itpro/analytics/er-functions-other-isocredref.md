@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ISOCREDREF">ISOCREDREF ER function</a>
+# ISOCREDREF ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ISOCREDREF` function returns a *String* value that represents an Internatio
 
 ## Syntax
 
-```
+```vb
 ISOCREDREF (invoice number digits)
 ```
 

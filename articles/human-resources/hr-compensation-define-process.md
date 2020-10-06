@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl   
+ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl, HcmCompensationWorkspace 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
@@ -26,9 +26,8 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Define compensation process and calculate results
-
-
 
 Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct. This procedure will create a compensation process, run the process, and view the results. The demo data company used to create this procedure is USMF.
 

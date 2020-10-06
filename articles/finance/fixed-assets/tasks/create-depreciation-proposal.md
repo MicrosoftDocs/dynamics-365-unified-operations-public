@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a depreciation proposal
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. This task uses the USMF demo company and the accountant role.
 
@@ -39,7 +39,7 @@ This topic describes how depreciation batch proposals work and explains how to p
 3. In the **To date** field, enter a date.
 
     - Select the **Summarize depreciation** option to summarize monthly depreciations into one journal line.  
-    - For example, if the To date value is March 31, 2015, the following description is generated: “Depreciation since January 31, 2015.” The **Date** field on the proposed journal lines is then set to March 31, 2015.  
+    - For example, if the To date value is March 31, 2015, the following description is generated: "Depreciation since January 31, 2015." The **Date** field on the proposed journal lines is then set to March 31, 2015.  
     - The depreciation proposal can be filtered by asset, asset group, or other criteria using the **Filter** option.  
     - When you use the **Create acquisition or depreciation proposals for fixed assets** form, you can propose depreciation in batches. This is recommended for larger proposals that will use more system resources. If you select the batch option, you can still complete other tasks during that time. When you propose depreciation in this way, depreciation is calculated for value models for fixed assets.  
 

@@ -3,9 +3,9 @@
 
 title: Cloud-powered search overview
 description: This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -37,7 +37,7 @@ This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 C
 
 ## Overview
 
-Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across all retail channels.
+Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across all channels.
 
 Customers are accustomed to the nearly instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, automatic suggestions that appear as they type search terms, faceted navigation, and highlighting. If customers can't find the product that they are looking for quickly enough in one e-Commerce store, they won't hesitate to go to a different e-Commerce store.
 
@@ -77,8 +77,12 @@ The following illustration shows an example where immersive autosuggest is being
 
 Enhanced sorting in Dynamics 365 Commerce lets customers sort, search, and browse search results, and refine them by criteria such as price, product name, and product number. Customers can also sort results based on whether a product is new, top-selling, or recently added.
 
+>[!NOTE]
+>These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'". 
+![Configuration parameters for cloud-powered search](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## Additional resources
 
-[Default category landing page and search results page](category-search-page-overview.md)
+[Default category landing page and search results page overview](category-search-page-overview.md)
 
 [Manage SEO metadata](manage-seo-metadata.md)

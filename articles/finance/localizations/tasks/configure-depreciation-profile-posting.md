@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Configure depreciation profile and posting profile for additional depreciation
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation.
 

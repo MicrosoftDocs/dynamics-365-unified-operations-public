@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Commerce 10.0.9 (April 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.9. 
 author: josaw1
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,21 +40,21 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **General availability (self-update):** March 2020
 - **Auto-update:** April 2020
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/).
+The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/).
 
-- [Enable resetting of receipt numbers at the beginning of the fiscal year](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
-- [Auto-charges improvements to support fees based on channel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
-- [Improved inbound and outbound inventory operations in store](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
-- [Set preferred payment methods for returns](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
-- [Support for bulk URL redirects](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
-- [Task management in HQ and POS for first-line workers and managers](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
+- [Enable resetting of receipt numbers at the beginning of the fiscal year](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
+- [Auto-charges improvements to support fees based on channel](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
+- [Improved inbound and outbound inventory operations in store](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
+- [Set preferred payment methods for returns](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
+- [Support for bulk URL redirects](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
+- [Task management in HQ and POS for first-line workers and managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
 
 
 ## Additional resources
 
 ### Platform update 33
 
-Microsoft Dynamics 365 Commerce 10.0.9 includes Platform update 33. To learn more, see [Preview features in Platform update 33](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
+Microsoft Dynamics 365 Commerce 10.0.9 includes Platform update 33. To learn more, see [What's new and changed in Platform update 33](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
 
 
 ### Bug fixes 
@@ -65,7 +65,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

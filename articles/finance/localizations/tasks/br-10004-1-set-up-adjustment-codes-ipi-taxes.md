@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up adjustment codes for IPI taxes (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes. This task uses the BRMF demo company.
 

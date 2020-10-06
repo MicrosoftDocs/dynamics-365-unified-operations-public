@@ -3,9 +3,9 @@
 
 title: Known issues with self-service deployment
 description: This topic lists known issues that you might experience when using self-service deployment.
-author: sarvanisathish
+author: rashmansur
 manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 
@@ -47,31 +47,17 @@ The following LCS features are deprecated and will not be implemented in self-se
 ### Known issues in this release
 Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
 
--   Log files listing deployment failures are not yet available through LCS. Currently, you can open a support ticket if you need the log files.
-
--   LCS integration from the application environment does not work. The features that are not available as a result of this include:
-
-    -   Getting started
-
-    -   Online Help enabled through BPM libraries. Online Help from docs.microsoft.com is available.
-
-    -   Raising support tickets from within the application. Cloud-powered support from LCS is enabled.
-
 ## Finance and Operations apps 
 
-### Features not yet implemented
-
-The following features that have infrastructure dependencies are not yet implemented in the modern deployment experience. These features have not been deprecated.
-
-| **Feature**                 | **Description**                                           |
-|-----------------------------|-----------------------------------------------------------|
-| Commerce                      | Commerce support is not yet enabled.                        |
-| Trace Parser                | Perf tools are not yet supported.                         |
+> [!NOTE]
+> Dynamics 365 Commerce is implemented in the modern deployment experience with the 10.0.10 release. For more information, see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md).
 
 ### Features not intended to be implemented
 The following features are deprecated and will not be implemented in the modern deployment experience.
 
 | **Feature**  | **Description**                     |
 |--------------|-------------------------------------|
-| Custom fonts | Custom fonts will not be supported. |
+| Custom fonts | Custom fonts are not supported. For more information, see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md).
 
+> [!NOTE]
+> For more information about deprecated features, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md) and [Removed or deprecated features from previous releases](../migration-upgrade/deprecated-features.md) and [Removed or deprecated features in previous releases](../get-started/removed-deprecated-features-platform-updates.md).

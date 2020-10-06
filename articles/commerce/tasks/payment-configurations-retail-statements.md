@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Payment configurations for Retail statements
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure demonstrates configurations for Commerce store payment methods, which affect how statements get created and posted.
 

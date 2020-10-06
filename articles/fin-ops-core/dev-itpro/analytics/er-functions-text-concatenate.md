@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CONCATENATE">CONCATENATE ER function</a>
+# CONCATENATE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `CONCATENATE` function returns all the specified text strings as a *String* 
 
 ## Syntax
 
-```
+```vb
 CONCATENATE (text 1[, text 2, …, text N])
 ```
 

@@ -5,7 +5,7 @@ title: Create a leave and absence plan
 description: Create leave plans in Dynamics 365 Human Resources for different types of leave.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -48,6 +48,19 @@ You can also create position-based leave benefits, such as executive-only benefi
 
 2. Under **Details**, enter the **Name**, **Start date**, **Description**, and **Leave type** for your plan.
 
+If the feature **Configure multiple leave types for a single leave and absence plan** is enabled, leave types are configured in the **Accrual schedule** instead of under **Details**. For each record in the accrual schedule table, you can define a leave type. Also, when this feature is enabled, you'll need to use new data entities for integrations or other scenarios where you need to use entities. 
+
+The new entities are:
+
+- Leave and absence bank transaction V2
+- Leave and absence enrollment V2
+- Leave and absence plan tier V2
+- Leave and absence plan V2
+- Leave time off request V2
+
+ > [!IMPORTANT]
+   > After you enable this feature, you can't turn it off.
+
 3. Define accruals in the **Accruals** tab. Accruals determine when and how often an employee is awarded time off. In this step, you define policies about when accruals should be awarded and policies about prorating leave benefits.
 
    1. Select a value from the **Accrual frequency** dropdown box:
@@ -66,8 +79,8 @@ You can also create position-based leave benefits, such as executive-only benefi
 
       | Accrual period basis | Description |
       | --- | --- |
-      | Plan start date | The accrual period start date is the date the plan is available. |
-      | Employee-specific date | The accrual period start date depends on an employee event:</br><ul><li>Custom (you must specify an accrual date basis for each individual enrollment)</li><li>Anniversary date</li><li>Original hire date</li><li>Seniority date</li><li>Worker's adjusted start date</li><li>Worker's start date</li></ul> |
+      | **Plan start date** | The accrual period start date is the date the plan is available. |
+      | **Employee-specific date** | The accrual period start date depends on an employee event:</br><ul><li>Custom (you must specify an accrual date basis for each individual enrollment)</li><li>Anniversary date</li><li>Original hire date</li><li>Seniority date</li><li>Worker's adjusted start date</li><li>Worker's start date</li></ul> |
 
    3. Select an option from the **Accrual award date** dropdown box:
 
@@ -100,8 +113,8 @@ You can also create position-based leave benefits, such as executive-only benefi
    You can create tiers to award time off based on different levels.
 
    If you have hourly employees, you can award time off based on hours worked instead of tenure with your organization. The data for hours worked is typically stored in a time and attendance system. You can import regular and overtime hours worked from the time and attendance system and use them as a basis for an employee's award.
-
-   1. Select an option from the **Accrual type** dropdown box:
+   
+    1. Select an option from the **Accrual type** dropdown box:
 
       - **Months of service** - Base the accrual schedule on months of service.
 
@@ -122,6 +135,13 @@ You can also create position-based leave benefits, such as executive-only benefi
       - **Maximum carry-forward** - The accrual process adjusts leave balances that exceed the maximum carry-forward balance on the anniversary of the start date.
 
       - **Grant amount** - The initial number of hours or days that employees are granted when they first enroll in the leave plan. The amount doesn't accrue for each accrual period.
+      
+If the feature **Configure multiple leave types for a single leave and absence plan** is enabled, select an option from the **Leave type**. 
+
+   > [!IMPORTANT]
+   > After you enable this feature, you can't turn it off.
+
+If the feature **Use full time equivalency** is enabled, Human Resources uses the full time equivalency (FTE) defined for the position to prorate an employee's accrual. For example, if the FTE is .5 and the accrual amount is 10, the employee will accrue 5. You can only use this feature if you enable multiple leave types.  
 
 5. Select **Save**.
 
@@ -206,7 +226,7 @@ The current balance is the amount of leave that is available for time-off reques
 |-----------------|-----------------|-------------------|----------------------|-----------------------|
 | 1/1/2018        | 1/1/2018        | Annual            | Plan start date      | End of accrual period |
 
-Accruals are processed on January 1, 2019 (1/1/2019) to include the whole period .
+Accruals are processed on January 1, 2019 (1/1/2019) to include the whole period.
 
 **Results**
 
@@ -362,19 +382,6 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
-
-## Configure preview features
-
-If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Preview feature: Configure multiple leave types for a single leave and absence plan**. For each record in the accrual schedule table, you can define a leave type.
-
-   > [!IMPORTANT]
-   > After you enable this feature, you can't turn it off.
-
-2. **Preview feature: Use full time equivalency**. If you enable this preview feature, Human Resources uses the full time equivalency (FTE) defined for the position to prorate an employee's accrual. For example, if the FTE is .5 and the accrual amount is 10, the employee will accrue 5. You can only use this feature if you enable multiple leave types.
 
 ## See also
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="SUMIFS">SUMIFS ER function</a>
+# SUMIFS ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `SUMIFS` function returns a *Real* value that represents the sum of values t
 
 ## Syntax
 
-```
+```vb
 SUMIFS (key name for summing, condition 1 range, condition 1 value[, condition 2 range, condition 2 value, …, condition N range, condition N value])
 ```
 

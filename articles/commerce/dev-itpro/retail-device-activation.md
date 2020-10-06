@@ -48,8 +48,10 @@ Checklist to follow before activation
 7.  Make sure that the channel is published (checked by validation).
 8.  Make sure that the channel database has the synced data from HQ, and that download jobs are running. To check this, run the following command in the channel database for the store.
 
-        select * from crt.STORAGELOOKUPVIEW
-
+    ```sql
+    select * from crt.STORAGELOOKUPVIEW
+    ```
+    
     Make sure that data is returned, and that the result isn't empty.
 
 9.  Set up the hardware profile under **Register** (checked by validation).

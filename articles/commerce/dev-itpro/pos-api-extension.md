@@ -58,7 +58,7 @@ To consume APIs in an extension, follow these steps:
 4. Under **POSAPIExtension**, create a new folder named **TriggersHandlers**.
 5. In the **TriggersHandlers** folder, add a new Typescript file and name it **PreEndTransactionTrigger.ts**.
 6. Add the following **import** statements to import the relevant entities and context.
-   ```Typescript
+   ```typescript
    import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
    import { ClientEntities, ProxyEntities } from "PosApi/Entities";
    import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
@@ -74,11 +74,11 @@ To consume APIs in an extension, follow these steps:
    import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
    ```
 7. Create a new class called **PreEndTransactionTrigger** and extend it from **PreEndTransactionTrigger**.
-    ```Typescript
+    ```typescript
         export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger { }
     ```
 8. Inside the class declare the following variables for the attributes names and sample values.
-    ```Typescript
+    ```typescript
     private static CART_ATTRIBUTE_NAME: string = "ATT SAMPLE";
     private static CART_ATTRIBUTE_VALUE_TRUE: string = "True";
     private static CART_ATTRIBUTE_VALUE_FALSE: string = "False";
@@ -88,7 +88,7 @@ To consume APIs in an extension, follow these steps:
     private static DIALOG_NO_BUTTON_ID: string = "CART_PreEndTransactionTrigger_MessageDialog_No";
     ```
 9. Implement the trigger **execute** method and call the existing POS APIs. The **execute** method calls APIs to get the current cart and customer, and then saves the attributes on the cart.
-    ```Typescript
+    ```typescript
         public execute(options: Triggers.IPreEndTransactionTriggerOptions): Promise<ClientEntities.ICancelable> {
             console.log("Executing PreEndTransactionTrigger with options " + JSON.stringify(options) + ".");
 
@@ -179,7 +179,7 @@ To consume APIs in an extension, follow these steps:
 
     The overall code should look like the following example. 
     
-    ```Typescript
+    ```typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
     import { ClientEntities, ProxyEntities } from "PosApi/Entities";
     import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
@@ -306,7 +306,7 @@ To consume APIs in an extension, follow these steps:
 10. Create a new json file under the POSAPIExtension folder and name it manifest.json.
 
 11. In the manifest.json file, copy and paste the following code. Delete the default generated code before copying this code.
-    ```Typescript
+    ```typescript
     {
 
         "$schema": "../manifestSchema.json",
@@ -326,7 +326,7 @@ To consume APIs in an extension, follow these steps:
     }
     ```
 12. Open the **extensions.json** file under the **POS.Extensions** project and update it with the **POSAPIExtension** samples, so that POS during runtime will include this extension.
-    ```Typescript
+    ```typescript
     {
         "extensionPackages": [
             {
@@ -348,7 +348,7 @@ To consume APIs in an extension, follow these steps:
     > Comment out both SampleExtensions2 and POSAPIExtension.
     
     
-    ```Typescript
+    ```typescript
     "exclude": [
 
         "AuditEventExtensionSample",

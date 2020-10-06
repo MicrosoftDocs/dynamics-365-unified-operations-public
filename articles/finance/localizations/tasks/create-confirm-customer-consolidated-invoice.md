@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and confirm a customer consolidated invoice
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount. 
 

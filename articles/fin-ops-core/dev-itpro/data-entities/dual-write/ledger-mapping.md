@@ -34,7 +34,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 In a business application, ledger data defines the core set up for how a company does business. For example, ledger data describes the fiscal year the company follows, the currencies it transacts in, and the accounts it uses. This topic describes the integration of this core financial data.
 
@@ -42,22 +42,22 @@ In a business application, ledger data defines the core set up for how a company
 
 Ledger data includes a collection of core financial entity maps that work together during data interaction, as shown in the following table.
 
-Finance and Operations apps      | Other Dynamics 365 apps
----------------------------------|---------------------------------
-Currencies                       | transactioncurrencies
-FiscalCalendar                   | msdyn\_fiscalcalendars
-FiscalCalendarYear               | msdyn\_fiscalcalendaryears
-ExchRateType                     | msdyn\_exchangeratetypes
-ExchangeRateCurrencyPair         | msdyn\_currencyexchangeratepairs
-FiscalPeriodEntity               | msdyn\_fiscalcalendarperiods
-MainAccountCategory              | msdyn\_mainaccountcategory
-MainAccount                      | msdyn\_mainaccounts
-Ledger                           | msdyn\_ledgers
-ExchangeRates                    | msdyn\_currencyexchangerates
-FinancialCalendarPeriod          | msdyn\_fiscalcalendarperiods
-DimensionAttributeEntity         | msdyn\_dimensionattributes.md
-DimensionIntegrationFormatEntity | msdyn\_financialdimensionformats.md
-LedgerChartOfAccounts            | msdyn\_chartofaccounts.md
+Finance and Operations apps      | Model-driven app in Dynamics 365 | Description
+---------------------------------|----------------------------------|------------
+Currencies                       | transactioncurrencies            |
+FiscalCalendar                   | msdyn\_fiscalcalendars        |
+FiscalCalendarYear               | msdyn\_fiscalcalendaryears        |
+ExchRateType                     | msdyn\_exchangeratetypes        |
+ExchangeRateCurrencyPair         | msdyn\_currencyexchangeratepairs        |
+FiscalPeriodEntity               | msdyn\_fiscalcalendarperiods        |
+MainAccountCategory              | msdyn\_mainaccountcategory        |
+MainAccount                      | msdyn\_mainaccounts        |
+Ledger                           | msdyn\_ledgers        |
+ExchangeRates                    | msdyn\_currencyexchangerates        |
+FinancialCalendarPeriod          | msdyn\_fiscalcalendarperiods        |
+DimensionAttributeEntity         | msdyn\_dimensionattributes        |
+DimensionIntegrationFormatEntity | msdyn\_financialdimensionformats        |
+LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
 
 
 [!include [banner](../../includes/dual-write-symbols.md)]

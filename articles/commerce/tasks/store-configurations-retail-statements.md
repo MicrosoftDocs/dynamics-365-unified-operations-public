@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Store configurations for Retail statements
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure walks through configurations for the store that affect how Commerce statements get created and posted. Financial dimensions on stores are covered in another procedure. This procedure uses the USRT demo company.
 

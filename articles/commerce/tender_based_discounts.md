@@ -5,7 +5,7 @@ title: Tender-based discounts
 description: This topic provides an overview of functionality that lets retailers configure discounts for specific tender types.
 author: bebeale
 manager: AnnBe
-ms.date: 10/30/19
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail

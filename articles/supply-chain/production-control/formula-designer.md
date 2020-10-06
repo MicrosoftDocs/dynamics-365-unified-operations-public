@@ -4,7 +4,7 @@
 title: Formula designer
 description: This topic explains how to use the formula designer to analyze and maintain formulas in a tree view.
 author: cvocph 
-manager: AnnBe
+manager: tfehr
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

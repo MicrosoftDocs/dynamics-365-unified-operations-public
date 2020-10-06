@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configure app field names in Warehousing app
+title: Configure app field names in warehouse app
 description: This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management. 
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269434
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Configure app field names in Warehousing app
+# Configure app field names in the warehouse app
 
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management. 
 
 > [!NOTE]
-> This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing. For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure the Warehousing app overview](install-configure-warehousing-app.md).
+> This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing. For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure the warehouse app overview](install-configure-warehousing-app.md).
 
 ## Configure warehouse app field names
 
@@ -147,4 +147,4 @@ The remaining metadata, for example, Location, will not be displayed on the task
 Additional resources
 --------
 
-[Install and configure the Warehousing app overview](install-configure-warehousing-app.md)
+[Install and configure the warehouse app overview](install-configure-warehousing-app.md)

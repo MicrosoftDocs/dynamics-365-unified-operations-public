@@ -4,7 +4,7 @@
 title: Batch release of partially reserved transfer orders
 description: This topic describes how to set up and apply batch release of partially reserved transfer orders from a mobile device.
 author: pjacobse
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WHSLoadPlanningWorkbench 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384

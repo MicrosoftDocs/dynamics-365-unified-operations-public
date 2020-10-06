@@ -3,7 +3,7 @@
 
 title: Business events and workflow approvals
 description: This topic explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/13/2019
 ms.topic: article
@@ -21,7 +21,7 @@ ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
@@ -81,7 +81,7 @@ The following illustration shows the high-level process that you must configure 
 
     <img alt="expression value" src="../../media/BEF-Howto-workflow-10.png" width="70%">
 
-14. The condition control automatically creates two branches for **Yes**/**No** results. If the result of the validate step is **No**, an email must be sent to the user. This email notifies the user that a new task requires his or her attention, and that he or she must sign in to the client. In order to complet this step create a new send email action within the **No** container and fillin the parameter with the email of the Approver from the previous step **workflowuseremail** and a subject and body of your choice.
+14. The condition control automatically creates two branches for **Yes**/**No** results. If the result of the validate step is **No**, an email must be sent to the user. This email notifies the user that a new task requires his or her attention, and that he or she must sign in to the client. In order to complete this step create a new send email action within the **No** container and fill in the parameter with the email of the Approver from the previous step **workflowuseremail** and a subject and body of your choice.
 
     > [!NOTE]
     > The email address that the workflow business event returns is the email address of the workflow approver. If the workflow approver user hasn't been configured in yourdemo environment, you can use your own email address for demo purposes.

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy and access development environments
-description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
-author: jorisdg
+description: This topic describes how to access development instances, configure local development VMs, and find important configuration settings for developers and administrators.
+author: laneswenka
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jorisde
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to access development instances, configure on-premises development virtual machines (VMs), and find important configurations settings for developers and administrators.
+This topic describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
 
 ## Definitions
 
@@ -56,9 +56,7 @@ For a **Trial** or **Partner** project:
     ![LCS Onboard methodology](media/access-instances-5.jpeg)
     
 3. Select an application and platform version.
-4. Select an environment topology. You can choose to either use a cloud hosted environment or download a VHD. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
-
-    ![Select environment topology](media/access-instances-2.jpeg)
+4. Select an environment topology. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
     
 5. If you chose a cloud-hosted environment, select which Azure connector you want to use. Then select **Deploy**.
 
@@ -113,7 +111,7 @@ For any environments deployed **on or after Platform update 12** , there are dis
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
-## VM that is running on-premises
+## VM that is running locally
 A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
 1. Go to the LCS main page and select **Shared asset library** or go to [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
@@ -151,6 +149,8 @@ Follow these steps to run the VM from Hyper-V Manager.
    2.  Type **net start DynamicsAxBatch**, and then press Enter.
 
    You can also start the service from the **Services** window.
+
+7. [Apply updates](../migration-upgrade/upgrade-latest-platform-update.md#apply-a-platform-update-to-environments-that-are-not-connected-to-lcs) as needed.
 
 #### Commerce configuration
 
@@ -261,7 +261,7 @@ On a VM, you can find most of the application configuration by opening the web.c
 
 The software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize applications, see the following topics:
 -   [Retail software development kit (SDK) architecture](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
--   [Retail point of sale (POS) device activation](../../../retail/dev-itpro/retail-device-activation.md)
+-   [Point of sale (POS) device activation](../../../retail/dev-itpro/retail-device-activation.md)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.

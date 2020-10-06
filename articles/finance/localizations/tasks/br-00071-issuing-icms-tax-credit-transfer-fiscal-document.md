@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Issue ICMS tax credit transfer fiscal documents (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can create a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e). When you post the document, an NF-e XML message is generated and submitted to the Secretaria da Fazenda (SEFAZ). This task uses the BRMF demo company.
 

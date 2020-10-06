@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Generate German audit file
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to generate the German audit file. This procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.
 

@@ -3,7 +3,7 @@
 
 title: Set up and deploy on-premises environments home page
 description: This topic provides links to topics about how to plan, set up, and deploy an on-premises environment.
-author: sarvanisathish
+author: sericks007
 manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
@@ -20,11 +20,11 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
+ms.custom: NotInToc
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: sericks
 ms.search.validFrom: 2017-11-30 
 ms.dyn365.ops.version: Platform update 8
 

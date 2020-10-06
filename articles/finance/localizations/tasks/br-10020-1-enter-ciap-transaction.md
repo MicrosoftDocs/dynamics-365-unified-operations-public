@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Enter a CIAP transaction (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can enter a CIAP transaction in two ways: post a fiscal document, or enter a transaction. You can  manually link to a fiscal document as you require. This recording uses the BRMF demo company.
 

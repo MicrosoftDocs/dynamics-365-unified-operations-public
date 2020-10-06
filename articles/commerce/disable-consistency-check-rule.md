@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Disable rules in the retail transaction consistency checker
-description: This topic describes the functionality for disabling retail transaction consistency checker rules in Microsoft Dynamics 365 Commerce.
+description: This topic describes the functionality for disabling transaction consistency checker rules in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 10/15/2019
@@ -31,8 +31,6 @@ ms.dyn365.ops.version:
 # Disable rules in the retail transaction consistency checker 
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Retailers can have business scenarios and processes that are unique to them. Therefore, not all the rules that are included by default in the commerce transaction consistency checker are applicable to all retailers. To accommodate differences, Microsoft Dynamics 365 Commerce provides functionality that can be used to disable the rules that aren't applicable.
 

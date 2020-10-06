@@ -3,9 +3,9 @@
 
 title: Flexible warehouse-level dimension reservation policy
 description: This topic describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation of specific batches.
-author: omulvad
-manager: AnnBe
-ms.date: 02/07/2020
+author: perlynne
+manager: tfehr
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,16 +17,16 @@ ms.search.form: WHSReservationHierarchy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: perlynne
 ms.search.validFrom: 2020-01-15
-ms.dyn365.ops.version: 10.0.9
+ms.dyn365.ops.version: 10.0.13
 
 ---
 
@@ -34,11 +34,15 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-When an inventory reservation hierarchy of the "Batch-below\[location\]" type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the Microsoft Dynamics 365 Warehouse Management System (WMS) can't reserve specific batches of those products for customer sales orders. This topic describes the inventory reservation policy that lets these businesses reserve specific batches, even when the products are associated with a "Batch-below\[location\]" reservation hierarchy.
+When an inventory reservation hierarchy of the "Batch-below\[location\]" type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the Microsoft Dynamics 365 Warehouse Management System (WMS) can't reserve specific batches of those products for customer sales orders.
+
+In a similar way, specific license plates can't be reserved for products on sales orders when those products are associated with the default reservation hierarchy.
+
+This topic describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a "Batch-below\[location\]" reservation hierarchy.
 
 ## Inventory reservation hierarchy
 
-This section summarizes the existing inventory reservation hierarchy. It focuses on the way that batch-tracked and serial-tracked items are handled.
+This section summarizes the existing inventory reservation hierarchy.
 
 The inventory reservation hierarchy dictates that, as far as storage dimensions are concerned, the demand order carries the mandatory dimensions of site, warehouse, and inventory status, whereas the warehouse logic is responsible for assigning a location to the requested quantities and reserving the location. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to indicate where the order must be shipped from (that is, what site and warehouse). The warehouse then relies on its logic to find the required quantity in the warehouse premises.
 
@@ -71,7 +75,7 @@ When the **Batch number** level in the hierarchy is selected, all dimensions abo
 > [!NOTE]
 > The **Allow reservation on demand order** check box applies only to reservation hierarchy levels that are below the warehouse location dimension.
 >
-> **Batch number** is the only level in the hierarchy that is open for the flexible reservation policy. In other words, you can't select the **Allow reservation on demand order** check box for the **Location**, **License plate**, or **Serial number** level.
+> **Batch number** and **License plate** are the only levels in the hierarchy that are open for the flexible reservation policy. In other words, you can't select the **Allow reservation on demand order** check box for the **Location** or **Serial number** level.
 >
 > If your reservation hierarchy includes the serial number dimension (which must always be below the **Batch number** level), and if you've turned on batch-specific reservation for the batch number, the system will continue to handle serial number reservation and picking operations, based on the rules that apply to the "Serial-below\[location\]" reservation policy.
 
@@ -97,11 +101,11 @@ The following set of rules is valid when quantities are processed, and a batch n
 
 The following example shows the end-to-end flow.
 
-## Example scenario
+## Example scenario: Batch number allocation
 
 For this example, demo data must be installed, and you must use the **USMF** demo data company.
 
-### Set up an inventory reservation hierarchy to allow batch-specific reservation
+### <a name="Example-batch-allocation"></a>Set up an inventory reservation hierarchy to allow batch-specific reservation
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory \> Reservation hierarchy**.
 2. Select **New**.
@@ -129,7 +133,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
     | 24        | B11          | FL-001   | LP11          | 10       |
     | 24        | B22          | FL-002   | LP22          | 10       |
 
-### Enter sales order details
+### <a name="sales-order-details"></a>Enter sales order details
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 2. Select **New**.
@@ -146,7 +150,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
 
     In general, this page works and is interacted with in the same way that it works and is interacted with for items that have an associated reservation hierarchy of the "Batch-above\[location\]" type. However, the following exceptions apply:
 
-    - The **Batch numbers committed to source line** FastTab shows the batch numbers that are reserved for the order line. The batch values in the grid will be shown throughout the fulfilment cycle of the order line, including the warehouse processing stages. By contrast, on the **Overview** FastTab, regular order line reservation (that is, reservation that is done for the dimensions above the **Location** level) is shown in the grid up to the point when warehouse work is created. The work entity then takes over the line reservation, and the line reservation no longer appears on the page. The **Batch numbers committed to source line** FastTab helps guarantee that the sales order processor can view the batch numbers that were committed to the customer's order at any point during its lifecycle, up through invoicing.
+    - The **Batch numbers committed to source line** FastTab shows the batch numbers that are reserved for the order line. The batch values in the grid will be shown throughout the fulfillment cycle of the order line, including the warehouse processing stages. By contrast, on the **Overview** FastTab, regular order line reservation (that is, reservation that is done for the dimensions above the **Location** level) is shown in the grid up to the point when warehouse work is created. The work entity then takes over the line reservation, and the line reservation no longer appears on the page. The **Batch numbers committed to source line** FastTab helps guarantee that the sales order processor can view the batch numbers that were committed to the customer's order at any point during its lifecycle, up through invoicing.
     - In addition to reserving a specific batch, a user can manually select the batch's specific location and license plate instead of letting the system automatically select them. This capability is related to the design of the order-committed batch reservation mechanism. As was mentioned earlier, when a batch number is reserved for an item under the "Batch-below\[location\]" reservation policy, the system must reserve all dimensions up through location. Therefore, warehouse work will carry the same storage dimensions that were reserved by the users who worked with the orders, and it might not always represent the item storage placement that is convenient, or even possible, for picking operations. If order processors are aware of the warehouse constraints, they might want to manually select the specific locations and license plates when they reserve a batch. In this case, the user must use the **Display dimensions** functionality on the page header, and must add the location and license plate in the grid on the **Overview** FastTab.
 
 6. On the **Batch reservation** page, select the line for batch **B11**, and then select **Reserve line**. There is no designated logic for assigning locations and license plates during automatic reservation. You can manually enter the quantity in the **Reservation** field. Notice that, on the **Batch numbers committed to source line** FastTab, batch **B11** is shown as **Committed**.
@@ -193,7 +197,177 @@ For this example, demo data must be installed, and you must use the **USMF** dem
 
     The quantity of **10** for batch number **B11** is now picked for the sales order line and put in the **Baydoor** location. At this point, it's ready to be loaded onto the truck and dispatched to the customer's address.
 
-## Exception handling of warehouse work thas has order-committed batch numbers
+## Flexible license plate reservation
+
+### Business scenario
+
+In this scenario, a company uses warehouse management and work processing, and handles load planning at the level of individual pallets/containers outside Supply Chain Management before work is created. These containers are represented by license plates in the inventory dimensions. Therefore, for this approach, specific license plates must be pre-assigned to sales order lines before picking work is done. The company is looking for flexibility in the way that the license plate reservation rules are handled, so that the following behaviors occur:
+
+- A license plate can be recorded and reserved when the order is taken by the sales processor, and it can't be taken by other demands. This behavior helps guarantee that the license plate that was planned is shipped to the customer.
+- If the license plate isn't already assigned to a sales order line, warehouse personnel can select a license plate during picking work, after sales order registration and reservation are completed.
+
+### Turn on flexible license plate reservation
+
+Before you can use flexible license plate reservation, two features must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. You must turn on the features in the following order:
+
+1. **Feature name:** *Flexible warehouse-level dimension reservation*
+1. **Feature name:** *Flexible order-committed license plate reservation*
+
+### Reserve a specific license plate on the sales order
+
+To enable license plate reservation on an order, you must select the **Allow reservation on demand order** check box for the **License plate** level on the **Inventory reservation hierarchies** page for the hierarchy that is associated with the relevant item.
+
+![Inventory reservation hierarchies page for a flexible license plate reservation hierarchy](media/Flexible-LP-reservation-hierarchy.png)
+
+You can enable license plate reservation on the order at any point in your deployment. This change won't affect any reservations or open warehouse work that were created before the change occurred. However, you can't clear the **Allow reservation on demand order** check box if open outbound inventory transactions that have an issue status of *On order*, *Reserved ordered*, or *Reserved physical* exist for one or more items that are associated with that reservation hierarchy.
+
+Even if the **Allow reservation on demand order** check box is selected for the **License plate** level, it's still possible *not* to reserve a specific license plate on the order. In this case, the default warehouse operations logic that is valid for the reservation hierarchy applies.
+
+To reserve a specific license plate, you must use an [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) process.In the application, you can do this reservation directly from a sales order by using the **Order-committed reservations per license plate** option of the **Open in Excel** command. In the entity data that is opened in the Excel add-in, you must enter the following reservation-related data and then select **Publish** to send the data back to Supply Chain Management:
+
+- Reference (Only the *Sales order* value is supported.)
+- Order number (The value can be derived from the lot.)
+- Lot ID
+- License plate
+- Quantity
+
+If you must reserve a specific license plate for a batch-tracked item, use the **Batch reservation** page, as described in the [Enter sales order details](#sales-order-details) section.
+
+When the sales order line that uses an order-committed license plate reservation is processed by warehouse operations, location directives aren't used.
+
+If a warehouse work item consists of lines that equal a complete pallet and have license plate–committed quantities, you can optimize the picking process by using a mobile device menu item where the **Handle by license plate** option is set to *Yes*. A warehouse worker can then scan a license plate to complete a pick instead of having to scan the items from the work one by one.
+
+![Mobile device menu item where the Handle by license plate option is set to Yes](media/Handle-by-LP-menu-item.png)
+
+Because the **Handle by license plate** functionality doesn't support work that covers multiple pallets, it's better to have a separate work item for different license plates. To use this approach, add the **Order-committed license plate ID** field as a work header break on the **Work template** page.
+
+## Example scenario: Set up and process an order-committed license plate reservation
+
+This scenario shows how to set up and process an order-committed license plate reservation.
+
+### Make demo data available
+
+This scenario refers to values and records that are included in the standard demo data that is provided for Supply Chain Management. If you want to work through the scenario by using the values that are provided here, be sure to work on an environment where the demo data is installed. Additionally, set the legal entity to **USMF** before you begin.
+
+### Create an inventory reservation hierarchy that allows for license plate reservation
+
+1. Go to **Warehouse management \> Setup \> Inventory \> Reservation hierarchy**.
+1. Select **New**.
+1. In the **Name** field, enter a value (for example, *FlexibleLP*).
+1. In the **Description** field, enter a value (for example, *Flexible LP reservation*).
+1. In the **Selected** list, select **Batch number**, **Serial number**, and **Owner**.
+1. Select the **Remove** button ![backward arrow](media/backward-button.png) to move the selected records to the **Available** list.
+1. Select **OK**.
+1. In the row for the **License plate** dimension level, select the **Allow reservation on demand order** check box. The **Location** level is automatically selected, and you can't clear the check box for it.
+1. Select **Save**.
+
+### Create two released products
+
+1. Go to **Product information management \> Products \> Released products**.
+1. On the Action Pane, select **New**.
+1. In the **New released product** dialog box, set the following values:
+
+    - **Product number:** *Item1*
+    - **Item number:** *Item1*
+    - **Item model group:** *FIFO*
+    - **Item group:** *Audio*
+    - **Storage dimension group:** *Ware*
+    - **Tracking dimension group:** *None*
+    - **Reservation hierarchy:** *FlexibleLP*
+
+1. Select **OK** to create the product and close the dialog box.
+1. The new product is opened. On the **Warehouse** FastTab, set the **Unit sequence group ID** field to *ea*.
+1. Repeat the previous steps to create a second product that has the same settings, but set the **Product number** and **Item number** fields to *Item2*.
+1. On the Action Pane, on the **Manage inventory** tab, in the **View** group, select **On-hand inventory**. Then select **Quantity adjustment**.
+1. Adjust the on-hand inventory of the new items as specified in the following table.
+
+    | Item  | Warehouse | Location | License plate | Quantity |
+    |-------|-----------|----------|---------------|----------|
+    | Item1 | 24        | FL-010   | LP01          | 10       |
+    | Item1 | 24        | FL-011   | LP02          | 10       |
+    | Item2 | 24        | FL-010   | LP01          | 5        |
+    | Item2 | 24        | FL-011   | LP02          | 5        |
+
+    > [!NOTE]
+    > You must create the two license plates and use locations that allow for mixed items, such as *FL-010* and *FL-011*.
+
+### Create a sales order and reserve a specific license plate
+
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. Select **New**.
+1. In the **Create sales order** dialog box, set the following values:
+
+    - **Customer account:** *US-001*
+    - **Warehouse:** *24*
+
+1. Select **OK** to close the **Create sales order** dialog box and open the new sales order.
+1. On the **Sales order lines** FastTab, add a line that has the following settings:
+
+    - **Item number:** *Item1*
+    - **Quantity:** *10*
+
+1. Add a second sales order line that has the following settings:
+
+    - **Item number:** *Item2*
+    - **Quantity:** *5*
+
+1. Select **Save**.
+1. On the **Line details** FastTab, on the **Setup** tab, make a note of the **Lot ID** value for each line. These values will be required during reservation of specific license plates.
+
+    > [!NOTE]
+    > To reserve a specific license plate, you must use the **Order-committed reservations per license plate** data entity. To reserve a batch-tracked item on a specific license plate, you can also use the **Batch reservation** page, as described in the [Enter sales order details](#sales-order-details) section.
+    >
+    > If you enter the license plate directly on the sales order line and confirm it to the system, warehouse management processing won't be used for the line.
+
+1. Select **Open in Microsoft Office**, select **Order-committed reservations per license plate**, and download the file.
+1. Open the downloaded file in Excel, and select **Enable editing** to enable the Excel add-in to run.
+1. If you're running the Excel add-in for the first time, select **Trust this Add-in**.
+1. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to Supply Chain Management.
+1. To reserve an item on a specific license plate, in the Excel add-in, select **New** to add a reservation line, and then set the following values:
+
+    - **Lot ID:** Enter the **Lot ID** value that you found for the sales order line for *Item1*.
+    - **License plate:** *LP02*
+    - **ReservedInventoryQuantity:** *10*
+
+1. Select **New** to add another reservation line, and set the following values:
+
+    - **Lot ID:** Enter the **Lot ID** value you found for the sales order line for *Item2*.
+    - **License plate:** *LP02*
+    - **ReservedInventoryQuantity:** *5*
+
+1. In the Excel add-in, select **Publish** to send the data back to Supply Chain Management.
+
+    > [!NOTE]
+    > The reservation line will appear in the system only if publishing is completed without errors.
+
+1. Go back to Supply Chain Management. 
+1. To review the item's reservation, on the **Sales order lines** FastTab, on the **Inventory** menu, select **Maintain \> Reservation**. Notice that, for the sales order line for *Item1*, inventory of *10* is reserved, and for the sales order line for *Item2*, inventory of *5* is reserved.
+1. To review inventory transactions that are related to the sales order line reservation, on the **Sales order lines** FastTab, on the **Inventory** menu, select **View \> Transactions**. Notice that there are two transactions that are related to the reservation: one where the **Reference** field is set to *Sales order* and one where the **Reference** field is set to *Order-committed reservation*.
+
+    > [!NOTE]
+    > A transaction where the **Reference** field is set to *Sales order* represents the order line reservation for inventory dimensions that are above the **Location** level (site, warehouse, and inventory status). A transaction where the **Reference** field is set to *Order-committed reservation* represents the order line reservation for the specific license plate and location.
+
+1. To release the sales order, on the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
+
+### Review and process warehouse work with order-committed license plates assigned
+
+1. On the **Sales order lines** FastTab, on the **Warehouse** menu, select **Work details**.
+
+    As when reservation is done for a specific batch, the system doesn't use location directives when it creates the work for the sales order that uses license plate reservation. Because the order-committed reservation specifies all the inventory dimensions, including the location, location directives don't have to be used, because those inventory dimensions are just entered in the work. They are shown in the **From inventory dimensions** section on the **Work inventory transactions** page.
+
+    > [!NOTE]
+    > After the work is created, the item's inventory transaction where the **Reference** field is set to *Order-committed reservation* is removed. The inventory transaction where the **Reference** field is set to *Work* now holds the physical reservation for all the quantity's inventory dimensions.
+
+1. On the mobile device, finish picking and putting the work by using a menu item where the **Handle by license plate** check box is selected.
+
+    > [!NOTE]
+    > The **Handle by license plate** functionality helps you process the whole license plate. If you must process part of the license plate, you can't use this functionality.
+    >
+    > We recommend that you have separate work generated for each license plate. To achieve this result, use the **Work header breaks** feature on the **Work template** page.
+
+    License plate *LP02* is now picked for sales order lines and put to the *Baydoor* location. At this point, it's ready to be loaded and dispatched to the customer.
+
+## Exception handling of warehouse work that has order-committed batch numbers
 
 Warehouse work for picking order-committed batch numbers is subject to the same standard warehouse exception handling and actions as regular work. In general, the open work or work line can be canceled, it can be interrupted because a user location is full, it can be short-picked, and it can be updated because of a movement. Likewise, the picked quantity of work that has already been completed can be reduced, or the work can be reversed.
 
@@ -201,7 +375,7 @@ The following key rule is applied to all these exception handling actions: the b
 
 ### Example scenario
 
-An example of this scenario is a situation where previously completed work is being unpicked by using the **Reduce picked quantity** function. This example continues the previous example in this topic.
+An example of this scenario is a situation where previously completed work is being unpicked by using the **Reduce picked quantity** function. This example assumes that you've already completed the steps that are described in [Example scenario: Batch number allocation](#Example-batch-allocation). It continues from that example.
 
 1. Go to **Warehouse management** \> **Loads** \> **Active loads**.
 2. Select the load that was created in connection with the shipment of your sales order.
@@ -240,7 +414,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Override location</strong> menu item on the Warehouse Mmobile App (WMA) when you start picking work.</li>
+<li>Select the <strong>Override location</strong> menu item on the warehouse app when you start picking work.</li>
 <li>Select <strong>Suggest</strong>.</li>
 <li>Confirm the new location that is suggested based on batch quantity availability.</li>
 </ol>
@@ -257,7 +431,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Override location</strong> menu item on the WMA when you start picking work.</li>
+<li>Select the <strong>Override location</strong> menu item on the warehouse app when you start picking work.</li>
 <li>Manually enter a location.</li>
 </ol>
 </td>
@@ -285,7 +459,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Not applicable</td>
 <td>
 <ol>
-<li>Select the <strong>Full</strong> menu item on the WMA when you process picking work.</li>
+<li>Select the <strong>Full</strong> menu item on the warehouse app when you process picking work.</li>
 <li>In the <strong>Pick Qty</strong> field, enter a partial quantity of the required pick to indicate the full capacity.</li>
 </ol>
 </td>
@@ -360,7 +534,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Start a movement on the WMA.</li>
+<li>Start a movement on the warehouse app.</li>
 <li>Enter "from" and "to" locations.</li>
 </ol></td>
 <td>
@@ -476,7 +650,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
 </ol>
@@ -505,7 +679,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
 </ol>
@@ -529,7 +703,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 <li>Select the location/license plate in the list.</li>
@@ -555,7 +729,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 </ol>
@@ -568,7 +742,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 <li>Select the location/license plate in the list.</li>
@@ -592,7 +766,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Not applicable</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with automatic reallocation</strong>.</li>
 </ol>

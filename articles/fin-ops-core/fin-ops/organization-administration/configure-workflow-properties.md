@@ -3,9 +3,9 @@
 
 title: Configure workflow properties
 description: This topic explains how to configure the various properties of a workflow.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -81,9 +81,11 @@ You can provide instructions to users who submit documents for processing and ap
     5. To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 3.
     6. Click **Close**.
 
-## Specify when this workflow is used
+## Specify when this workflow is used through activation conditions
 
-You can create multiple workflows that are based on the same type. For example, you can create a purchase requisition workflow for each country/region that you operate in, such as Purchase Requisitions Denmark and Purchase Requisitions Spain. When you have multiple workflows that are based on the same type, you must specify when each workflow is used. For the preceding example, you specify the following conditions:
+You can create multiple workflows that are based on the same workflow type. When you have multiple workflows that are based on the same type, you must specify when each workflow is used using activation conditions. If activation conditions are not met, then the default workflow is used. Similarly, if there is only one workflow configuration defined for a workflow type, then that workflow configuration will be used regardless of the activation conditions.
+
+For example, you can create a purchase requisition workflow for each country/region that you operate in, such as Purchase Requisitions Denmark and Purchase Requisitions Spain, with the following conditions:
 
 - Purchase Requisitions Denmark is used when: country/region = DK
 - Purchase Requisitions Spain is used when: country/region = ES
@@ -95,12 +97,7 @@ Follow these steps to specify when the workflow that you're configuring is used.
 3. Click **Add condition**.
 4. Enter a condition.
 5. Enter any additional conditions that are required.
-6. To verify that the conditions that you entered are set correctly, follow these steps:
-
-    1. Click **Test**.
-    2. On the **Test workflow condition** page, in the **Validate condition** area, select a record.
-    3. Click **Test**. The system evaluates the record to determine whether it meets the conditions that you specified. For example, if you're creating a purchase requisition workflow for Spain, the **Validate condition** area of the page shows a list of purchase requisitions. When you click **Test**, the system evaluates the selected purchase requisition to determine whether the country/region is ES.
-    4. Click **OK** or **Cancel** to return to the **Properties** page.
+6. Run through the workflow with some target records to verify that the condition correctly includes and excludes records.
 
 ## Specify when notifications are sent
 

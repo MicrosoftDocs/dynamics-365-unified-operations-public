@@ -5,7 +5,7 @@ title: Mass deployment of self-service components
 description: This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
 author: jashanno
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -23,7 +23,7 @@ ms.search.scope: Operations, Retail
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
-ms.search.validFrom: 2017-09-31
+ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
 ---
 
@@ -57,24 +57,24 @@ Note that silent servicing maintains all components that are currently installed
 
 ### Examples of commands for silent servicing
 
-This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit.
+This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit (self-hosted).
 
 #### Silently update the current installation of Modern POS
 
 The following command silently updates the current installation of Modern POS. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
 
-```
+```Console
 ModernPOSSetup_V72.exe -S
 ```
 
 > [!NOTE]
 > A configuration file is still required for Retail Store Scale Unit. However, the installer keeps all the values that are currently installed, whenever it can.
 
-#### Silently update the current installation of Commerce Scale Unit
+#### Silently update the current installation of Commerce Scale Unit (self-hosted)
 
-The following command silently updates the current installation of Commerce Scale Unit by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and moves on to the installation steps. We recommend that you use this command only for testing and development purposes.
+The following command silently updates the current installation of Commerce Scale Unit (self-hosted) by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and moves on to the installation steps. We recommend that you use this command only for testing and development purposes.
 
-```
+```Console
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
 ```
 
@@ -94,7 +94,7 @@ The following command silently installs (or updates) Modern POS. It has the stan
 
 This command uses the configuration file that is in the same location as the executable file for the installer, if a configuration file exists there. It should not be used if multiple configuration files are available.
 
-```
+```Console
 ModernPOSSetup_V73.exe -S
 ```
 
@@ -105,7 +105,7 @@ ModernPOSSetup_V73.exe -S
 
 The following command silently installs the current installation of Modern POS by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
 
-```
+```Console
 ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 ```
 
@@ -116,7 +116,7 @@ ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 
 The following command silently installs (or updates) Retail hardware station. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. It also uses the **-SkipMerchantInfo** delimiter to skip the download of merchant account information through the utility. This command uses the configuration file that is in the same location as the executable file for the installer.
 
-```
+```Console
 HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 ```
 
@@ -127,6 +127,6 @@ HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 
 The following command silently installs the current installation of Retail hardware station by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
 
-```
+```Console
 HardwareStationSetup_V10.exe -S -SkipMerchantInfo -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
 ```

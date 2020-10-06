@@ -48,7 +48,7 @@ Several components are used to define the relationships among a store, the point
 
 Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
 
-The POS register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who logs on to that register.
+The POS register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who logs on to that register.
 
 ### Devices
 
@@ -72,7 +72,7 @@ A hardware profile identifies the hardware that is connected to a POS register o
 
 ### Hardware station
 
-Navigation: Click **Retail and Commerce** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**. Select a store, and then click the **Hardware stations** FastTab.
+Navigation: Click **Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**. Select a store, and then click the **Hardware stations** FastTab.
 
 A hardware station is an instance of business logic that drives POS peripherals. A hardware station is automatically installed together with MPOS. Alternatively, the hardware station can be installed as a stand-alone component, and then accessed by MPOS or Cloud POS through a web service. The hardware station must be defined at the channel level.
 
@@ -92,7 +92,7 @@ To connect MPOS to POS peripherals in a traditional, fixed POS scenario, first n
 
 After you've assigned the hardware profile, sync changes to the channel database by using the **Registers** distribution schedule. You can find the distribution schedules at **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**. 
 
-Next, set up a "local" hardware station on the channel. Click **Retail and Commerce** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**, and select a store. 
+Next, set up a "local" hardware station on the channel. Click **Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**, and select a store. 
 
 Then, on the **Hardware stations** FastTab, click **Add** to add a hardware station. Enter a description, enter **localhost** as the host name, and then sync the changes to the channel by using the **Channel configuration** distribution schedule. You can find the distribution schedules at **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**. 
 
@@ -109,7 +109,7 @@ Finally, in MPOS, use the **Select hardware station** operation to select the **
 
 In this scenario, a stand-alone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a hardware station profile to specify the download package, port, and hardware profile that the hardware station uses. You can find the hardware station profile at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. 
 
-After you've created the hardware station profile, navigate to the specific retail channel (**Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**), and add a new hardware station. Map this new hardware station to the hardware station profile that was previously created. 
+After you've created the hardware station profile, navigate to the specific channel (**Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**), and add a new hardware station. Map this new hardware station to the hardware station profile that was previously created. 
 
 Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: `https://<MachineName:Port>/HardwareStation`. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station and the port that is specified in the hardware station profile.) For a stand-alone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. 
 

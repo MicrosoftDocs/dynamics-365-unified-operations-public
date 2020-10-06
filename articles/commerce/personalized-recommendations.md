@@ -5,7 +5,7 @@ title: Enable personalized product recommendations
 description: This topic describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -53,11 +53,13 @@ For more information about product recommendations, see the [Product recommendat
 
 To turn on personalization, follow these steps.
 
-1. Go to **Retail and commerce \> Product recommendations \> Recommendation parameters**.
-1. In the list of Retail shared parameters, select **Recommendation lists**.
-1. Set the **Enable personalization** option to **Yes**.
+1. In Commerce headquarters, search for **Feature Management**.
+1. Select **All** to see a list of available features. 
+1. In the search box, enter **Recommendations**.
+1. Select the **Personalized product recommendations** feature.
+1. In the **Personalized product recommendations** properties pane, select **Enable now**.
 
-![Turning on personalization](./media/enablepersonalization.png)
+![Turning on personalization](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > When you turn on personalization, the process of generating personalized product recommendation lists is started. Up to one day might be required before these lists are available and visible online and at the POS.
@@ -114,12 +116,22 @@ To apply personalization to an existing recommendation list in the Commerce site
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable product recommendations](enable-product-recommendations.md)
 
-[GDPR and product recommendations](personalization-gdpr.md)
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
-[Add product recommendation lists to pages](add-reco-list-to-page.md)
+[Opt out of personalized recommendations](personalization-gdpr.md)
 
-[Add recommendations panel to POS devices](add-recommendations-control-pos-screen.md)
+[Add product recommendations on POS](product.md)
 
-[Product collection module overview](product-collection-module-overview.md)
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

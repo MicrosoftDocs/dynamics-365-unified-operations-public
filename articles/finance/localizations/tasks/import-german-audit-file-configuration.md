@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Import German audit file configuration
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to import the German audit file electronic reporting data model and format configurations. This procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.
 

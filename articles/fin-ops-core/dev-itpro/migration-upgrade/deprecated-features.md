@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Removed or deprecated features for Finance and Operations
-description: This topic describes features that have been removed, or that are planned for removal.
+title: Removed or deprecated features in previous releases
+description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases of that product.
 author: sericks007
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,21 +30,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Removed or deprecated features for Finance and Operations
+# Removed or deprecated features in previous releases
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed or deprecated for Finance and Operations.
+> [!IMPORTANT]
+> This topic is no longer updated. To see a current list of features that have been removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.
+
+This topic describes features that have been removed or deprecated from Dynamics 365 for Finance and Operations and previous releases of that product.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-> [!NOTE]
-> Starting with the Finance and Operations July 2017 release with Platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
-
-Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
+Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Finance 10.0.7 with Platform update 31
 
@@ -68,7 +68,7 @@ Detailed information about objects in Finance and Operations can be found in the
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the platform APIs found in the class **HasFunction**. |
 
 ### Hash.ComputeSHA1Hash(string message)
 
@@ -78,7 +78,7 @@ Detailed information about objects in Finance and Operations can be found in the
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Platform |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
+| **Status**                         | Deprecated: By April 1, 2020, developers  must use the platform APIs found in the class **HasFunction**. |
 
 
 ### FormDateTimeControl.setUtcString()
@@ -236,7 +236,7 @@ Support for creating project-based sales orders where the project contract has m
 | **Replaced by another feature?**   | No. |
 | **Product areas affected**         | Product information management |
 | **Deployment option**              | All  |
-| **Status**                         | Removed as of Finance and Operations 10.0.0 with Platform update 24. In exceptional cases, such as to recover from a previous rename of the primary key of a released product, it is possible to request Microsoft to temporarily remove this restriction on the rename primary key operation for released products. |
+| **Status**                         | Removed as of Finance and Operations 10.0.0 with Platform update 24.|
 
 
 ## Finance and Operations 8.1.3 with Platform update 23
@@ -269,11 +269,11 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in the future.  |
-| **Product areas affected**         | Visual Studio development tools. |
-| **Deployment option**              | All. |
-| **Status**                         | Deprecated: The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
+| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in the future. |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: The warning is a compile-time error with platform updates for version 10.0.11 of Finance and Operations apps. |
 
 #### Complete list
 To access the full list of APIs that are being deprecated, see [Deprecation of methods and metadata elements](deprecation-deletion-apis.md).
@@ -594,7 +594,7 @@ eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Me
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
-| **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Replaced by another feature?**   | Yes, the ISO20022 Camt.054 notification import. |
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
@@ -627,7 +627,7 @@ You can select an import format for Finnish payments to import customer payment 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
-| **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Replaced by another feature?**   | Yes, the ISO20022 Camt.054 notification import. |
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
@@ -638,7 +638,7 @@ A format that is specific to Finland is used to import accounting transactions i
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment format is no longer used.                                                     |
-| **Replaced by another feature?**   | No. The format will be replaced by ISO 20022 statement import formats in future releases. |
+| **Replaced by another feature?**   | Yes, the ISO20022 Camt.053 bank statement import using Advanced Bank Reconciliation. |
 | **Product areas affected**         | Accounts receivable                                                                       |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                            |
 
@@ -704,7 +704,7 @@ The Telehansa and TeleTeenus formats are used for bank payment import.
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment formats are no longer used.                                                    |
-| **Replaced by another feature?**   | No. The formats will be replaced by ISO 20022 statement import formats in future releases. |
+| **Replaced by another feature?**   | Yes, the ISO20022 Camt.054 bank notification import. |
 | **Product areas affected**         | Accounts receivable                                                                        |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                             |
 
@@ -790,7 +790,7 @@ Telepay payment formats include vendor payment export (credit transfer) and cust
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The payment formats are no longer used.                                                        |
-| **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway |
+| **Replaced by another feature?**   | Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway, as well as pain.002 and camt.054 bank notification return files import. |
 | **Product areas affected**         | Accounts payable, Accounts receivable                                                          |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.                                 |
 
@@ -1131,13 +1131,13 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 | **Product areas affected**         | All modules  |
 | **Status**                         | Deprecated: A removal date has not been set for this feature. |
 
-### German DTAZV payment format
+### German DTAZV payment format in domestic Currency
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The format is no longer applicable in Germany, because it has been replaced by SEPA functionality. |
 | **Replaced by another feature?**   | SEPA payments export    |
-| **Product areas affected**         | All modules   |
+| **Product areas affected**         | Accounts payable   |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.    |
 
 ### German MT940 import

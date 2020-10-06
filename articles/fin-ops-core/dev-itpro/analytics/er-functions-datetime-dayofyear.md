@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="DAYOFYEAR">DAYOFYEAR ER function</a>
+# DAYOFYEAR ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `DAYOFYEAR` function returns an *Integer* value that represents the number o
 
 ## Syntax
 
-```
+```vb
 DAYOFYEAR (date) as Integer
 ```
 

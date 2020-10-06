@@ -4,7 +4,7 @@
 title: Manage unit of measure
 description: This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units. 
 author: sorenva
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/08/2018
 ms.topic: business-process 
 ms.prod:  
@@ -13,10 +13,10 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup   
+ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup, UnitOfMeasureCalculator, UnitOfMeasureWizard, UnitOfMeasureLookupTest
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Manage unit of measure
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units. You can walk through this procedure using demo data, or using your own data.
 
@@ -44,13 +44,13 @@ This procedure shows how to define a unit of measure, provide translations for t
 6. Click **Save**.
 
 ## Define unit translations
-1. On the **Action pane**, click **Unit texts**.
+1. On the **Action Pane**, click **Unit texts**.
 2. Click **New**. Use unit text to create a translation of the ID or a symbol representing the unit of measure for use on external documents in customer- or vendor-specific languages.  
 3. In the **Language** field, enter or select a value.
 4. In the **Text** field, type a value.
 5. Click **Save**.
 6. Close the page.
-7. On the **Action pane**, click **Translated unit descriptions**.
+7. On the **Action Pane**, click **Translated unit descriptions**.
 8. Click **New**. Define language-specific descriptions for the unit of measure.  
 9. In the **Language** field, enter or select a value.
 10. In the **Description** field, type a value.
@@ -58,7 +58,7 @@ This procedure shows how to define a unit of measure, provide translations for t
 12. Close the page.
 
 ## Define unit conversion rules
-1. On the **Action pane**, click **Unit conversions**. Define rules for converting the unit of measure to and from other units of measure in the selected unit class.  
+1. On the **Action Pane**, click **Unit conversions**. Define rules for converting the unit of measure to and from other units of measure in the selected unit class.  
 2. Click **New** to open the drop dialog.
 3. In the **Factor** field, enter a number. Conversion factor between the From unit and the To unit. For example, the conversion factor from centimeter to meter is 100 because there are 100 centimeters in one meter.  
 4. In the **To unit** field, enter or select a value.

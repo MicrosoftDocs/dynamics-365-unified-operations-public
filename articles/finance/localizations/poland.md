@@ -45,3 +45,4 @@ This topic provides links to documentation resources for Poland.
 - [Standard audit file (SAF)](emea-pol-standard-audit-file-saf.md)
 - [Tax interest and free-hand interest](emea-pol-interest-calculation.md)
 - [Turnover and balances statement](emea-pol-turnover-balances-statement.md)
+- [Split AP/AR exchange difference](emea-pol-split-ap-ar-exchange-difference.md)

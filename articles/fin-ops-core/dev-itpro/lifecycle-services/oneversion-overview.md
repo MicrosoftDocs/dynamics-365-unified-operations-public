@@ -3,7 +3,7 @@
 
 title: One Version service updates overview
 description: This topic gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
-author: meeram
+author: angelmarshall
 manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31 
 ms.dyn365.ops.version: Platform update 24 
 

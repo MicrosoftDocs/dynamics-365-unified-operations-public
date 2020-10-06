@@ -4,7 +4,7 @@
 title: Define configuration groups
 description: This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ConfigGroup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define configuration groups
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company. This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.
 

@@ -4,7 +4,7 @@
 title: Create a new trade agreement
 description: This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. 
 author: omulvad
-manager: AnnBe 
+manager: tfehr 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
@@ -13,10 +13,10 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a new trade agreement
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. You can run this procedure in demo data company USMF or on your own data. If you’re using your own data, before you start this guide you need to make sure that a Trade agreement journal name exists where the Default relation is set to “Price (sales)”.
+This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. You can run this procedure in demo data company USMF or on your own data. If you're using your own data, before you start this guide you need to make sure that a Trade agreement journal name exists where the Default relation is set to "Price (sales)".
 
 
 ## Create and post a new trade agreement journal
@@ -38,7 +38,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 2. Click **New**.
 3. In the **Name** field, click the drop-down button to open the lookup.
 4. In the list, find and select the desired record.
-5. On **Action pane**, click **Lines**.
+5. On **Action Pane**, click **Lines**.
 6. In the **Account code** field, select 'Table'.
     
     In this example, you're updating the price for a specific customer, which means you need to choose Table. If you were updating the product's list price, you would select 'All', so that the new price is valid for all customers. If you were differentiating prices among different customer segments, then you would select Group. To select Group, you must have set up Customer price groups.  

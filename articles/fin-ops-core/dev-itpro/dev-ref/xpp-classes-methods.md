@@ -406,12 +406,12 @@ Parameters can be initialized in the method declaration. In this case, the param
 The following code example shows a class with a default parameter.
 ```xpp
 // This is an example of a function being used as the default.
-public class Person 
+class Person
 {
     date birthDate;
 
-    // The constructor that takes a date type as
-    // a parameter. That value is assigned to the field member birthDate. 
+    // The constructor that takes a date type as a parameter. 
+    // That value is assigned to the field member birthDate.
     void new(date _date)
     {
         birthDate = _date;
@@ -420,44 +420,49 @@ public class Person
     // The CalculateAgeAsOfDate method references the birthDate field and has an
     // optional parameter. In this example, the default value is the
     // return value of a function.
-    public real CalculateAgeAsOfDate(date _calcToDate = DateTimeUtil::getToday(DateTimeUtil::getUserPreferredTimeZone()) )  
+    public real CalculateAgeAsOfDate(date _calcToDate = DateTimeUtil::getToday(DateTimeUtil::getUserPreferredTimeZone()) )
     {
         return (_calcToDate - birthDate) / 365;
     }
 
+    public static void callPerson()
+    {
 
-// This code instantiates a Person and calls CalculateAgeAsOfDate.
-Person person = new Person(13\5\2010);   // birthDate is initialized.
-// Optional parameter's default is used.
-info("Age in years: " + num2str(person.CalculateAgeAsOfDate(),2,0,0,0));
-// Output is "9" in July 2019.
+        Person person = new Person(13\5\2010);
 
-// January 2, 2044  is the parameter value for _date.
-info("Age in years: " + num2str(person.CalculateAgeAsOfDate(2\1\2044),2,0,0,0));
-// Output is "34".
+        // Optional parameter's default is used.
+        Info(strFmt('Age in years today is %1 years', 
+                real2int(person.CalculateAgeAsOfDate())));
+
+        // January 2, 2044  is the parameter value for _date.
+        Info(strFmt('Age in years on %1 is %2 years',
+                2\1\2044,
+                real2int(person.CalculateAgeAsOfDate(2\1\2044))));
+    }
+
 }
 ```
 
-This is an example of how you cannot skip to a second optional parameter. The first method has two optional parameters. The second method is a caller of the first method. The caller wants to override only the \_i3 default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
+This is an example of how you cannot skip to a second optional parameter. The **AddThreeInts** method has two optional parameters. The **callAdditions** method calls the **AddThreeInts** method. The commented out code tries to override only the **\_i3** default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
 
 ```xpp
-public class Additions 
+class Additions
 {
-    static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
+    public static int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
     {
         return _i1 + _i2 + _i3;
     }
+
+    public static void callAdditions()
+    {
+        // The next statement does not compile, because it skips the _i2 parameter.
+        // info(int2Str(Additions::AddThreeInts(1, , 99)));
+
+        // You must specify both optional parameters.
+        info(int2Str(Additions::AddThreeInts(1, 2, 99)));
+    }
+
 }
-
-// This code calls the AddThreeInts method.
-// No way to skip the first optional parameter (so it can default)
-// while also specifying the value of the second optional parameter.
-// The next statement does not compile.
-// info(int2Str(Additions::AddThreeInts(1, 2, 99)));
-
-// Settle for overriding both optional parameters.
-info(int2Str(Additions::AddThreeInts(1, 2, 99)));
-// Output is "102".
 ```
 
 ## Accessor methods

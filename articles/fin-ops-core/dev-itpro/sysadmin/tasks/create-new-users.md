@@ -5,7 +5,7 @@ title: Create new users
 description: Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. 
 author: maertenm
 manager: AnnBe 
-ms.date: 02/06/2020
+ms.date: 06/08/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create new users
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Users are internal employees of your organization, or external customers and vendors, who require access to the system to do their jobs.
 
@@ -53,8 +53,9 @@ Users external to the tenant that the environment was deployed into need to be r
 10. Select **Save**.
 
 ## Import users
-1. On the Action Pane, select **Import users**.
-2. In the list, mark the selected row.
-3. Select **Import users**.
-4. Select **Close**.
+1. Go to **System administration \> Users \> Users**.
+2. On the Action Pane, select **Import users**.
+3. In the list, mark the selected row.
+4. Select **Import users**.
+5. Select **Close**.
 

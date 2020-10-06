@@ -73,7 +73,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 1. Use extensions to add a new value to the **ExchangeRateProvider** extensible enum to represent your new exchange rate provider.
 2. In your development model, create a class that implements the **IExchangeRateProvider** interface.
 
-    ```
+    ```xpp
     using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
     using Microsoft.Dynamics.Currency.Instrumentation;
     using System.Collections;
@@ -90,7 +90,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 3. Add the following constants and variable declarations to the class. Provide your own unique globally unique identifier (GUID) for **ProviderId**.
 
-    ```
+    ```xpp
     private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
     private const ExchangeRateProviderId ProviderId = '795500B1-4258-4343-868C-433CE390848C';
     private const str OANDADateFormat = 'yyyy-MM-dd';
@@ -116,7 +116,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 4. Implement the **get\_Name** method. You should use a label to enable correct translation. When users set up the provider's configuration information, they can change the name that is provided here.
 
-    ```
+    ```xpp
     public ExchangeRateProviderName get_Name()
     {
         return "@CurrencyExchange:Currency_ConfigField_OandaName";
@@ -125,7 +125,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 5. Implement the **get\_Id** method. This method returns a GUID that uniquely identifies this provider.
 
-    ```
+    ```xpp
     public ExchangeRateProviderId get_Id()
     {
         return ProviderId;
@@ -134,7 +134,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 6. Implement the **set\_Factory** method. The exchange rate provider framework will invoke this method to set an object that implements the **IExchangeRateProviderFrameworkFactory** interface on your provider. This factory can be used to instantiate new objects that represent some of the interfaces from the previous illustration.
 
-    ```
+    ```xpp
     public void set_Factory(IExchangeRateProviderFrameworkFactory _factory)
     {
         factory = _factory;
@@ -147,7 +147,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
    - Set the **fixedBaseIsoCurrency** property to the three-character International Organization for Standardization (ISO) currency code that represents the fixed base currency of the exchange rates that are returned from the exchange rate service. If the exchange rate service doesn't support a fixed base currency, return an empty string. For example, the euro is often used as a fixed base currency. When you create a new provider, be sure to research the exchange rate service so that you can select the correct value.
    - Set the **singleRateForDateRange** property to **true** if the service can return a single rate that represents the whole date range. For example, you can use this setting to return a single exchange rate that represents the average exchange rate for a month. If the service doesn't support this functionality, set this property to **false**.
 
-     ```
+     ```xpp
      public IExchangeRateProviderSupportedOptions GetSupportedOptions()
      {
        IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
@@ -161,7 +161,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 8. Implement the **GetConfigurationDefaults** method. Configuration defaults are name-value pairs that represent the default configuration settings for the exchange rate provider. These settings are automatically loaded when the provider is registered, but users can change them. Take the necessary precautions when you convert these strings into usable values. The value field is stored as an encrypted field in SQL. Therefore, sensitive data such as an application programming interface (API) key will be more secure.
 
-    ```
+    ```xpp
     public IExchangeRateProviderConfigDefaults GetConfigurationDefaults()
     {
         IExchangeRateProviderConfigDefaults configurationDefaults = factory.CreateExchangeRateProviderConfigDefaults();
@@ -175,7 +175,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 9. Implement the **ValidateConfigurationDetail** method. This method enables the exchange rate provider to validate the configuration information that the user modifies on the **Configure exchange rate providers** page.
 
-    ```
+    ```xpp
     public boolean ValidateConfigurationDetail(ExchangeRateProviderPropertyKey _key, ExchangeRateProviderPropertyValue _value)
     {
         boolean result = true;
@@ -206,7 +206,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 10. Implement the **EnumNameForLookup** method. This method enables the exchange rate provider to enable a lookup for a specific **ExchangeRateProviderPropertyKey** key. Just return the name of an existing enumerated type for the appropriate key. If this feature isn't required, return an empty string.
 
-    ```
+    ```xpp
     public str EnumNameForLookup(ExchangeRateProviderPropertyKey _key)
     {
         if (_key == "@CurrencyExchange:Currency_ConfigField_QuoteType")
@@ -230,7 +230,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
     - When exchange rates are returned, always use the date that the exchange rate service provides instead of the dates that the instance of the **IExchangeRateRequest** class supplies. In this way, you help guarantee that the exchange rate that is returned is associated with the correct date, because an exchange rate service might occasionally return rates for dates that weren't expected. For example, if an exchange rate is requested for a date in the future, some providers return the most recent exchange rate instead of throwing an error or returning nothing.
     - If you encounter errors when you try to retrieve exchange rates from the exchange rate service, don't throw custom error messages. The framework will alert the user that there is an issue by throwing generic error messages that state that the expected currency pairs could not be retrieved from the provider. If you must log additional errors, use **CurrencyEventSource**. For an example, see the **catch** statement and the **if** condition for the **oandaKey** variable in the following code.
 
-    ```
+    ```xpp
     public IExchangeRateResponse GetExchangeRates(IExchangeRateRequest _request, IExchangeRateProviderConfig _config)
     {
         System.Exception exception;
@@ -362,7 +362,7 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 12. Implement the following helper methods. These methods are specific to this example and aren't required for every provider.
 
-    ```
+    ```xpp
     private str getQuoteTypeParameterForURL(IExchangeRateProviderConfig _config)
     {
         ExchangeRateProviderOANDAQuoteType quoteType = 

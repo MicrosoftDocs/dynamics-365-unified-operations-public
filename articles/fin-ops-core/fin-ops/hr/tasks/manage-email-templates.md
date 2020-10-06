@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Manage email templates
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-You can transfer information from your organization’s database to the bookmarks in a new document and use it in templates that help you communicate efficiently with applicants and candidates. To do this, you create a template that contains standard text and some bookmarks where the system data should be inserted. For example, you can insert address and contact information for an applicant into a Microsoft Word document that you can use when communicating with that applicant. The demo data company used to create this procedure is USMF.
+You can transfer information from your organization's database to the bookmarks in a new document and use it in templates that help you communicate efficiently with applicants and candidates. To do this, you create a template that contains standard text and some bookmarks where the system data should be inserted. For example, you can insert address and contact information for an applicant into a Microsoft Word document that you can use when communicating with that applicant. The demo data company used to create this procedure is USMF.
 
 
 ## Select which bookmarks to use in your email templates

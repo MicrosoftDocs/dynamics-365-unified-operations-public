@@ -4,7 +4,7 @@
 title: Create a product number nomenclature for configured product variants
 description: This procedure shows you how to set up a product number nomenclature for configured product variants, and how it can be attached to a configurable product master. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductListPage, EcoResProductDetails, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a product number nomenclature for configured product variants
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows you how to set up a product number nomenclature for configured product variants, and how it can be attached to a configurable product master. This procedure also demonstrates how you can build a configuration nomenclature for a product configuration model component. The demo data company used to create this procedure is USMF. The new product number nomenclature is assigned to the D0004 product master. This task would typically be done by a product designer.
 

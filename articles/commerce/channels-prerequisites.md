@@ -5,7 +5,7 @@ title: Channel setup prerequisites
 description: This topic presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,16 +44,16 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 
 ## Initialization
 
-- [Initialize seed data](../retail/enable-configure-retail-functionality.md)
+- [Initialize seed data](enable-configure-retail-functionality.md)
 
 ## Global prerequisities required for all channel types
 
 - [Define and configure your legal entity structure](channels-legal-entities.md) 
 - [Configure your organizational hierarchy](channels-org-hierarchies.md)
 - [Set up a warehouse](channels-setup-warehouse.md)
-- [Configure sales tax](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Configure sales tax](../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Set up an email notification profile](email-notification-profiles.md)
-- [Set up number sequences](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Set up number sequences](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Set up a default customer and address book](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -61,19 +61,17 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 
 ## Retail channel prerequisites
 
-- [Info codes and info code groups](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Info codes and info code groups](info-codes-retail.md)
 - [Set up a retail functionality profile](retail-functionality-profile.md)
 - [Set up an employee address book](new-address-book.md)
-- [Set up a screen layout](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Set up a hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Set up a screen layout](pos-screen-layouts.md)
+- [Set up a hardware station](retail-hardware-station-configuration-installation.md)
 
 ## Call Center channel prerequisites
 
 - Call center parameters
-- Call center refund methods
-- Rental types
-- Payment services
-- Order hold codes
+- [Call center order and refund payment methods](work-with-payments.md)
+- [Call center modes of delivery and charges](configure-call-center-delivery.md)
 
 ## Online channel prerequisites
 

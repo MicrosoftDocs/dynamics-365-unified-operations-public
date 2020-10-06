@@ -5,7 +5,7 @@ title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -72,26 +72,39 @@ This topic provides information about functionality that supports Russian regula
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 - [Prepayments management](rus-prepayments-management.md)
 - [Incoming VAT restoring](rus-incoming-VAT-restoring.md)
+- [Process invoice factures for export trade](rus-export-trade.md)
 
 ## Fixed assets (Russia)
-- [Fixed assets (Russia)](rus-fixed-assets.md)
 - [Fixed assets overview](rus-fixed-assets-overview.md)
+
+### Set up Fixed assets
 - [Set up fixed assets](rus-set-up-fixed-assets.md)
-- [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
-- [Register fixed assets acquisitions](rus-register-acquisition.md)
-- [Create and post budget journals for fixed asset acquisitions](rus-post-budget-fixed-asset-acquisition.md)
-- [Fixed asset counting](rus-fixed-assets-counting.md)
-- [Fixed asset currency revaluation](rus-fixed-asset-currency-revaluation.md)
-- [Maintain fixed assets](rus-maintain-fixed-assets.md)
-- [Revaluate fixed asset cost and depreciation](rus-fixed-assets-revaluation.md)
-- [Partial fixed asset disassembly (liquidation)](rus-fixed-assets-disassembly.md)
-- [Sell, dispose, and write-off assets](rus-sell-dispose-write-off-fixed-assets.md)
-- [Set up fixed asset locations and numbering](rus-fixed-assets-locations-numbering.md)
 - [Set up depreciation](rus-depreciation-setup.md)
 - [Depreciation methods](rus-depreciation-methods.md)
 - [Depreciation bonuses](rus-bonus-depreciation.md)
+- [Set up fixed asset locations and numbering](rus-fixed-assets-locations-numbering.md)
+
+### Working with fixed assets
+- [Create fixed assets (Russia)](rus-fixed-assets.md)
+- [Register fixed assets acquisitions](rus-register-acquisition.md)
+- [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
 - [Calculate depreciation](rus-depreciation-calculation.md)
+- [Partial fixed asset disassembly (liquidation)](rus-fixed-assets-disassembly.md)
+- [Sell, dispose, and write-off assets](rus-sell-dispose-write-off-fixed-assets.md)
+- [Create fixed asset lease and return from lease](rus-fixed-asset-leasing.md)
+- [Maintain fixed assets](rus-maintain-fixed-assets.md)
+- [Fixed asset counting](rus-fixed-assets-counting.md)
+- [Fixed asset currency revaluation](rus-fixed-asset-currency-revaluation.md)
+- [Revaluate fixed asset cost and depreciation](rus-fixed-assets-revaluation.md)
+- [Create and post budget journals for fixed asset acquisitions](rus-post-budget-fixed-asset-acquisition.md)
 - [Transfer fixed assets](rus-fixed-asset-transfer.md)
+
+### Not valuable fixed assets, and working clothes
+- [Not valuable fixed assets](rus-not-valuable-assets.md)
+- [Working clothes/special rigging](rus-working-clothes-instruments-accounting.md)
+
+### Printing forms
+- [Printing forms for fixed assets](printing-forms-fixed-assets.md)
 
 ## Accounts payable and receivable
 - [Credit note corrections](rus-credit-note-correction.md)
@@ -105,6 +118,9 @@ This topic provides information about functionality that supports Russian regula
   - [Set up and create agreements](rus-set-up-and-create-agreements.md)
   - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
   - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+- [Transactions through intermediary](rus-transactions-through-intermediary.md)
+  - [Purchases on commission](rus-purchases-on-commission.md)
+  - [Sales on commission](rus-sales-on-commission.md)
 
 
 ## Inventory
@@ -112,6 +128,10 @@ This topic provides information about functionality that supports Russian regula
 - [Customs declaration numbers](rus-custom-declaration-number.md)
 - [Inventory cost structure](rus-inventory-cost-structure.md)
 - [Inventory adjustment wizard](rus-inventory-adjustment-wizard.md)
+- [Inventory reports](rus-inventory-reports.md)
+- [Inventory profile](rus-inventory-profile-overview.md)
+  - [Set up an inventory profile](rus-set-up-inventory-profile.md)
+  - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
 
 ## Reporting
 
@@ -139,6 +159,10 @@ This topic provides information about functionality that supports Russian regula
 - [Dispose of deferrals](rus-dispose-deferrals.md)
 - [Deferrals counting](rus-counting-deferrals.md)
 - [Reporting for deferrals](rus-reporting-deferrals.md)
+
+## Tax accounting
+- [Expense and income codes](rus-expense-and-income-codes.md)
+- [Assets tax registers](rus-assets-tax-registers.md)
 
 ## Additional resources
 

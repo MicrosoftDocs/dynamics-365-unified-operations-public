@@ -2,10 +2,10 @@
 # required metadata
 
 title: Remove an instance
-description: 
+description: This article walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -72,8 +72,21 @@ To remove a Human Resources environment from an existing Power Apps environment,
 1. Contact Support to initiate a removal request.
 2. The Support team will initiate a removal request with the Human Resources DevOps team. 
 3. Continue after you receive word that the environment has been removed.
-4.  Sign in to LCS using the account that you used to subscribe to Human Resources. 
+4. Sign in to LCS using the account that you used to subscribe to Human Resources. 
 5. Select the Human Resources project that contains the environment. 
 6. In your LCS project, select the **Human Resources App Management** tile. 
-7. Select the instance you would like to remove, which should be marked with a Deployment status of **Failed**.
+7. Select the instance you would like to remove, which should be marked with a Deployment status of **Deleted**.
 8. Select **Remove instance** and confirm your decision. 
+
+## Recover a soft-deleted environment
+
+If you delete the Power Apps environment that your Human Resources environment is connected to, the status of the Human Resources environment in Lifecycle Services will be **Soft deleted**. In this case, users can't connect to Human Resources.
+
+To restore the environment:
+
+1. Follow the instructions in [Recover the Power Apps environment](/power-platform/admin/recover-environment.md).
+
+2. Contact Support to restore the Human Resources environment. For more information, see [Get support](hr-admin-troubleshooting-support.md).
+
+> [!Warning]
+> Power Apps environments are only saved for seven days after deletion. You must recover the environment within the seven day period.

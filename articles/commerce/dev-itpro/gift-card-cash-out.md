@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Dynamics 365 10.0
 
 # Cash out gift card balance for a retail customer
 
+[!include [banner](../../includes/banner.md)]
+
 This topic provides an overview of the cash out gift card feature for the Dynamics 365 Retail Modern POS (MPOS). 
 
 The purpose of the cash out feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often need to exchange a low balance gift card for cash at the customer's request. 
@@ -72,7 +74,7 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 
     When you've finished, your button layout should resemble the following illustration.
 
-    ![Completed button layout](./media/GiftCardCashout02.png)
+    ![Completed button layout with "Configure button" section highlighted](./media/GiftCardCashout02.png)
 
 12. Click **Ok** and close the designer.
 13. Search for **Distribution Schedule**.
@@ -99,7 +101,7 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 13. The line for **gift card cash out** will be added to the **Current transaction** for cash out.
 14. Select the **Cash** payment method and the drawer will open when the transaction is completed. 
 
-       ![Completed button layout](./media/GiftCardCashout03.png)
+       ![POS screen with "Cash out gift card" highlighted](./media/GiftCardCashout03.png)
 
 ## Troubleshooting 
 

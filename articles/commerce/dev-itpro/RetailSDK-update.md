@@ -67,14 +67,14 @@ Upgrade can be completed for one of the following scenarios:
 The process for SDK upgrade varies between versions. With version 7.3 and higher, we sealed all of the components and customizations must be completed only by using the extension points. This should result in an easier code upgrade experience. However, if you are upgrading from 7.0, 7.1, or 7.2 and if you have made inline changes, you must move the inline changes to extensions. This will require additional work.
 
 > [!NOTE] 
-> When upgrading to newer version, do not remove any of the existing Retail server, Commerce Runtime, Proxy, Hardware station, CDX, or Database extension code/APIs. Your POS client may depend on this code and removing it will cause runtime exception errors. If you want to remove it then during code upgrade, make sure that the client code is also updated to support this change, otherwise runtime failure will occur. As a best practice, extension code must be written in such a way that it is always backward compatible.
+> When upgrading to newer version, do not remove any of the existing Commerce Scale Unit, Commerce Runtime, Proxy, Hardware station, CDX, or Database extension code/APIs. Your POS client may depend on this code and removing it will cause runtime exception errors. If you want to remove it then during code upgrade, make sure that the client code is also updated to support this change, otherwise runtime failure will occur. As a best practice, extension code must be written in such a way that it is always backward compatible.
 
 The following tables provide some high-level information about which version the code is sealed. If you are upgrading from an unsealed version to a sealed version, you should identify all of your customizations and move any inline customizations to extensions. To move the inline customizations, verify that you have all of the necessary extension points to do this. If you don't, submit an extensibility request. 
 
 > [!NOTE]
 > You might have to rewrite some of the POS inline changes that were completed in 7.1 when you upgrade to version 7.3 or higher.
 
-| Application version                     | CRT sealed     | HWS sealed     | POS sealed     | DB sealed     | Retail proxy sealed |
+| Application version                     | CRT sealed     | HWS sealed     | POS sealed     | DB sealed     | Proxy sealed |
 |-----------------------------------------|----------------|----------------|----------------|---------------|-------------------------|
 | Application release 8.1                 | Yes            | Yes            | Yes            | Yes           | Yes                     |
 | Application release 8.0                 | Yes            | Yes            | Yes            | Yes           | Yes                     |
@@ -83,12 +83,12 @@ The following tables provide some high-level information about which version the
 | Release 1611 (Application 7.1)          | Yes            | No             | No             | No            | No                      |
 | February 2016 release (Application 7.0) | No             | No             | No             | No            | No                      |
 
-## Upgrade the Retail channel extension from 7.3 to a higher version
+## Upgrade the channel extension from 7.3 to a higher version
 
 If you are completing a code upgrade, the following Retail SDK components must be upgraded. Each of these components are folders inside the Retail SDK.
 
 > [!NOTE]
-> Code upgrade can be completed using a source control/merge tool. We recommend using a source control tool for this process so that you can track the changes and revert if required. If you are not using any source control, before you upgrade the code, be sure to make a back up of the old and new retail SDK folder.
+> Code upgrade can be completed using a source control/merge tool. We recommend using a source control tool for this process so that you can track the changes and revert if required. If you are not using any source control, before you upgrade the code, be sure to make a back up of the old and new Retail SDK folder.
 
 - **Assets:** If you have modified any of the following extension config files to include your custom assemblies, you must move those changes to the same config files in the new **Asset folder**.
 
@@ -123,7 +123,8 @@ If you are completing a code upgrade, the following Retail SDK components must b
 - **POS:** If you have any POS extensions, including the generated proxy, copy your POS extensions from *…\\RetailSDK\\POS\\Extensions* to the new Retail SDK POS extension folder, *RetailSDK\\POS\\Extensions*. After you copy the extensions,  update and merge the extension.json file inside the *POS\\Extensions* folder with the new POS extensions folder you copied.
 
   For example, if you copied the **CustomExtension** folder, then you would update extension.json as shown below.
-  ```Typescript
+
+  ```typescript
    {
    "extensionPackages": [
    {
@@ -143,7 +144,7 @@ If you are completing a code upgrade, the following Retail SDK components must b
 
 - **Reference:** Copy all of your extension output assemblies, such as **Commerce runtime**, **Hardware station**, **proxy**, and any external assemblies, to the reference folder. Include any assemblies that you want included as part of your deployment and packaging.
 
-- **Commerce runtime (CRT) and retail server (RS) extensions:** Copy all of your CRT and extension projects under the **Retail SDK** folder. Make sure to include the CRT and RS extension solution file details in the dirs.proj file under the **RetailSDK folder** so that during msbuild, all of the extension project is built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
+- **Commerce runtime (CRT) and Commerce Scale Unit extensions:** Copy all of your CRT and extension projects under the **Retail SDK** folder. Make sure to include the CRT and RS extension solution file details in the dirs.proj file under the **RetailSDK folder** so that during msbuild, all of the extension project is built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
 
 - **Hardware station (HWS) and payment extensions:** Copy all of your hardware station (HWS) and payment extension projects under the **Retail SDK** folder. Make sure to include the HWS and payment extension solution file details in the dirs.proj file under the **RetailSDK** folder so that during msbuild, all of the extension projects are built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
 
@@ -154,16 +155,16 @@ If you are completing a code upgrade, the following Retail SDK components must b
 
 After you have upgraded all of the components, deploy the Commerce deployable packages, validate the deployment, and add the Retail SDK files to the repository.
 
-## Upgrade the Retail channel extension from 7.2 to a higher version
-The steps mentioned  in the previous section, **Upgrade the retail channel extension from 7.3 to higher versions**, will remain same for all the components except the Commerce proxy. In 7.2, you must have completed inline changes in the proxy project if you have CRT with RS extension and the typescript proxy was auto-generated based on the **customization.settings** file.
+## Upgrade the channel extension from 7.2 to a higher version
+The steps mentioned  in the previous section, **Upgrade the channel extension from 7.3 to higher versions**, will remain same for all the components except the Commerce proxy. In 7.2, you must have completed inline changes in the proxy project if you have CRT with RS extension and the typescript proxy was auto-generated based on the **customization.settings** file.
 
 To upgrade your proxy to 7.3, complete the steps in the topic, [Typescript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md) and then move the proxy to the Retail SDK folder and then update the config file, **RetailProxy.MPOSOffline.ext.config**.
 
-## Upgrade the Retail channel extension from 7.1 to a higher version
+## Upgrade the channel extension from 7.1 to a higher version
 In 7.1, you should have completed most of the POS and Proxy customizations inline. To upgrade to higher a application release, you should move all of your inline changes to extensions. If it is a binary hotfix upgrade, then you must perform a code merge with the new Retail SDK and then regenerate the package.
 
-## Upgrade the Retail channel extension from 7.0 to a higher version
+## Upgrade the channel extension from 7.0 to a higher version
 In 7.0, you should have completed most of the customizations inline. To upgrade to higher a application release, you should move all of your inline changes to extensions. If it is binary hotfix upgrade, you must perform a code merge with the new Retail SDK and regenerate the package.
 
 ## Generate a deployable package for validation
-Complete the steps in the topic, [Create retail deployable packages](retail-sdk/retail-sdk-packaging.md), to generate the deployable package for validation.
+Complete the steps in the topic, [Create deployable packages](retail-sdk/retail-sdk-packaging.md), to generate the deployable package for validation.

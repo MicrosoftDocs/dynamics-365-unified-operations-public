@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define loyalty reward points
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure walks through defining loyalty reward points. You should set up loyalty reward points before you set up a loyalty program. This procedure uses the USRT demo data company.
 
@@ -44,7 +44,7 @@ This procedure walks through defining loyalty reward points. You should set up l
 8. In the Redeem ranking field, enter a number.
     * Redeem ranking is used when two or more redeemable reward points can be used to pay for products. If the two reward points have the same redeem ranking, then the one that needs to lower number of points will be used.  
 9. In the Expiration time value field, enter a number.
-    * The reward points will expire the specified number of days, months, or years after when the points are issued. A value of ‘0’ means the loyalty reward points will never expire.  
+    * The reward points will expire the specified number of days, months, or years after when the points are issued. A value of '0' means the loyalty reward points will never expire.  
 10. In the Expiration time unit field, select an option.
 11. Click Save.
 

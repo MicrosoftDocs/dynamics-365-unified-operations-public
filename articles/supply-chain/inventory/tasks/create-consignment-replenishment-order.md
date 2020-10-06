@@ -4,7 +4,7 @@
 title: Create a consignment replenishment order
 description: This topic explains how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/19/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a consignment replenishment order
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. It also shows how to record a receipt of products so that the consignment inventory is registered as on-hand inventory owned by the vendor. This procedure would typically be done by a procurement professional. You can use this guide in demo data company USMF. This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
 
@@ -55,7 +55,7 @@ This topic explains how to create a consignment replenishment order where you ca
 ## Receive items
 1. Select **Product receipt**.
 2. In the **External product receipt** field, type a value.
-3. In the **Quantity** field, enter a number that’s lower than the number that’s shown there. 
+3. In the **Quantity** field, enter a number that's lower than the number that's shown there. 
 4. Select **OK**.
 
 ## Check the on-hand inventory

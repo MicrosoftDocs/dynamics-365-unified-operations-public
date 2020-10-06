@@ -4,7 +4,7 @@
 title: Gantt chart for job scheduling 
 description: Production planners can control and optimize productions plans by using Gantt charts.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -41,7 +41,7 @@ A Gantt chart is a visual representation of scheduled activities within a define
 -   Jobs from planned production orders.
 -   Job scheduled project activities of type Hour forecasts.
 
-The Gantt chart can be opened in two different views, **Order view** and **Resource view**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). In **Order view**, activities are grouped under production orders. This can be useful, for example, if you want to maintain an overview of all the jobs belonging to the same orders. In **Resource view** all jobs are grouped under individual resources. This view can be useful when optimizing the plan at a resource level, for example, a machine or a group of machines. The Gantt charts shown in the illustrations below show **Order view** and **Resource view** with these key elements:
+The Gantt chart can be opened in two different views, **Order view** and **Resource view**. In **Order view**, activities are grouped under production orders. This can be useful, for example, if you want to maintain an overview of all the jobs belonging to the same orders. In **Resource view** all jobs are grouped under individual resources. This view can be useful when optimizing the plan at a resource level, for example, a machine or a group of machines. The Gantt charts shown in the illustrations below show **Order view** and **Resource view** with these key elements:
 
 1.  Gantt chart activity
 2.  Material shortage icon

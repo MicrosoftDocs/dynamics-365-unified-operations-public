@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="STRINGJOIN">STRINGJOIN ER function</a>
+# STRINGJOIN ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `STRINGJOIN` function returns a *String* value that consists of concatenated
 
 ## Syntax
 
-```
+```vb
 STRINGJOIN (list, field, delimiter)
 ```
 

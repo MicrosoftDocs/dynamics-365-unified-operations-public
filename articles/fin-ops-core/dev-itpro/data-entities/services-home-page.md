@@ -5,7 +5,7 @@ title: Service endpoints overview
 description: This topic describes the service endpoints that are available.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -76,7 +76,7 @@ The following illustration describes how authorization must be configured for Au
 
 And below is the illustration describes how authorization works for Service to service calls using client credentials (shared secret or certificate).
 
-![Service to service calls using clident credentials](./media/S2SAuth.jpg)
+![Service to service calls using client credentials](./media/S2SAuth.jpg)
 
 ### Register a web application with AAD
 
@@ -99,7 +99,7 @@ Under **Delegated permissions**, you must select, at a minimum, the following op
 
 ### Register your external application 
 
-1. In the application, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
+1. In Finance and Operations apps, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
 2. Select **New**.
 3. Fill in the fields for the new record:
 

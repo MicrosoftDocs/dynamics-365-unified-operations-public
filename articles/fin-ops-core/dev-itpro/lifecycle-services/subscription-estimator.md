@@ -3,9 +3,9 @@
 
 title: Subscription estimator in Lifecycle Services (LCS)
 description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS).
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 08/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
 
@@ -67,3 +67,5 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 
 If you receive any other error message or encounter any other issue, create a support request, and attach your active estimate so that the support team can address the issue.
  
+ ## Additional resources
+ [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview)

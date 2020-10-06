@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Setup Japan consumption tax report
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task walks you through setting up the system to support the Japan consumption tax report. In this task, you will modify General ledger parameters, a legal entity, sales tax reporting accounts and a sales tax code. 
 

@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Configure format to do counting and summing (Part 3 - Use computations to make the output)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. These steps can be performed in any company.
 
-To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 2: Configure computations)” procedure.
+To complete these steps, you must first complete the steps in the "ER Configure format to do counting and summing (Part 2: Configure computations)" procedure.
 
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
@@ -59,7 +59,7 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 16. In the Formula field, enter 'COLLECTEDLIST('$BlockName', "*")'.
     * COLLECTEDLIST('$BlockName', "*")  
 17. Click Save.
-    * The pattern “*” means that all blocks will be included to the list for this record.  
+    * The pattern "*" means that all blocks will be included to the list for this record.  
 18. Close the page.
 19. Click OK.
 20. Click the Format tab.

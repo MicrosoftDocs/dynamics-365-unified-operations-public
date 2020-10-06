@@ -4,7 +4,7 @@
 title: Complete basic setup of a released product master
 description: This topic shows how to complete the minimum setup that is required before the product master can be used in BOM versions.  
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Complete basic setup of a released product master
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic shows how to complete the minimum setup that is required before the product master can be used in BOM versions.
 

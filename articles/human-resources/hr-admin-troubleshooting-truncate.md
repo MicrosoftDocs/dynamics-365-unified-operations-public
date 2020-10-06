@@ -14,7 +14,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: HcmPositionHierarchyView
+# ms.search.form: HcmPositionHierarchyView, HcmPosition
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

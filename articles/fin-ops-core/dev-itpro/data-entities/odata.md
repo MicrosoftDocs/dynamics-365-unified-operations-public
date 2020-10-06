@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 02/07/2020
+ms.date: 06/19/2020
 
 ms.topic: article
 ms.prod: 
@@ -57,6 +57,9 @@ For more information about OData, see the following webpages.
 
 The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
 
+> [!NOTE]
+> OData actions added via extensions are currently not supported.
+
 ## Addressing
 The following table describes the resources and the corresponding URLs in the Fleet Management sample.
 
@@ -72,7 +75,8 @@ The following table describes the resources and the corresponding URLs in the Fl
 ## OData services
 We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology.
 
-<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
+> [!NOTE]
+> When working with data entities using OData, all fields in the entity key must be provided to make a successful OData call.
 
 Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
 
@@ -91,7 +95,7 @@ The following are the high-level features that are enabled for the OData service
     - $expand (only first-level expansion is supported)
     - $select
 
-- The OData service supports serving driven paging with a maximum page size of 1,000.
+- The OData service supports serving driven paging with a maximum page size of 10,000.
 
 For more information, see: [OData actions that are bound to entities](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).
 
@@ -328,7 +332,10 @@ public static void CreateVendor(Resources context)
 ```
 
 ### Handling duplicate names between enums and entities in metadata
-There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in gitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
+There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in GitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
 
 ### Array fields
 OData does not support array fields in entities. This must be taken into consideration when designing entities that will be used with OData.
+
+### After restarting AOS, the first OData call may take a long time to process
+The first OData call processed by an AOS that was restarted may take a long time to process because the metadata is not being cached. This latency can be avoided by warming up OData on AOS startup. For more details, see  [Build OData metadata cache when the AOS starts](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup).

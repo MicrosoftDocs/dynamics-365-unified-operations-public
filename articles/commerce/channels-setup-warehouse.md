@@ -37,7 +37,7 @@ This topic describes how to set up a warehouse to be used with a new channel in 
 
 ## Overview
 
-Each Commerce channel requires a configured warehouse to be associated with it. The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel. For more information regarding warehouse setup, please see the [Warehouse management overview](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).
+Each Commerce channel requires a configured warehouse to be associated with it. The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel. For more information regarding warehouse setup, please see the [Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
 ## Configure a warehouse site
 
@@ -63,7 +63,7 @@ To set up a warehouse, follow these steps.
 
 1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.
 1. On the action pane, select **New**.
-1. In the **Warehouse** field, enter a value.  If this is a 1:1 mapping to a retail store, consider using the store name or the name of a regional distribution center.
+1. In the **Warehouse** field, enter a value.  If this is a 1:1 mapping to a store, consider using the store name or the name of a regional distribution center.
 1. In the **Name** field, enter a value.
 1. In the **Site** drop-down list, select the warehouse site created previously.
 1. In the **Type** field, select **Default**.
@@ -135,7 +135,7 @@ The following image shows details for a configured warehouse.
 
 ## Additional resources
 
-[Warehouse management overview](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Channels overview](channels-overview.md)
 

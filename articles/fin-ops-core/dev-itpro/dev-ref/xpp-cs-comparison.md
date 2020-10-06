@@ -5,7 +5,7 @@ title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -100,8 +100,8 @@ static void JobRs001a_HelloWorld(Args _args)
     {
         // These two methods are also from the Global class.
         // The + operator concatenates two strings.
-        warning("This is like info," + " but is for warnings, 3.");
-        error("This is like info," + " but is for errors, 4.");
+        warning("This is like info, but is for warnings, 3.");
+        error("This is like info, but is for errors, 4.");
     }
 }
 ```
@@ -117,7 +117,7 @@ Here is the output from the Infolog window:
 
 #### C# Sample
 
-The following C# program is a rewrite of the previous X++ program. The differences between X++ and C# are highlighted by commenting out the X++ lines, and replacing them with the C# syntax.
+The following C# program is a rewrite of the previous X++ program. 
 
 ```csharp
 using System;
@@ -131,22 +131,17 @@ class Pgm_CSharp
     {
         if (1 == 1) 
         {
-            Console .Out .WriteLine(
-                "Hello World, Explicit .Out , 1.");
-            Console .WriteLine(
-                "Hello World, Implicit default to .Out , 2.");
+            Console .Out .WriteLine("Hello World, Explicit .Out , 1.");
+            Console .WriteLine("Hello World, Implicit default to .Out , 2.");
         }
         if (1 != 1)
         {
-            Console .Error .WriteLine(
-                "This message will not appear.");
+            Console .Error .WriteLine("This message will not appear.");
         }
         else
         {
-            Console .Error .WriteLine(".Error is like .Out,"
-                + " but can be for warnings, 3.");
-            Console .Error .WriteLine(".Error is like .Out,"
-                + " but is for errors, 4.");
+            Console .Error .WriteLine(".Error is like .Out, but can be for warnings, 3.");
+            Console .Error .WriteLine(".Error is like .Out, but is for errors, 4.");
         }
     }
 }
@@ -156,7 +151,7 @@ class Pgm_CSharp
 
 Here is the actual output to the C# console:
 
-```csharp
+```Console
 Hello World, Explicit .Out, 1. 
 Hello World, Implicit default to .Out, 2. 
 .Error is like .Out, but can be for warnings, 3. 
@@ -238,18 +233,21 @@ public class Pgm_CSharp
 {
     static void Main( string[] args )
     {
-        new Pgm_CSharp().Rs002a_CSharp_ControlOFlowWhile();
+        new Pgm_CSharp().WhileLoops();
     }
-    void Rs002a_CSharp_ControlOFlowWhile()
+
+    void WhileLoops()
     {
         int nLoops = 1;
         while (nLoops <= 88)
         {
-            Console.Out.WriteLine( nLoops.ToString() );
-            Console.Out.WriteLine( "(Press any key to resume.)" );
+            Console.Out.WriteLine(nLoops.ToString());
+            Console.Out.WriteLine("(Press any key to resume.)");
             // Paused until user presses a key.
             Console.In.Read();
-            if ((nLoops % 4) == 0) break;
+            if ((nLoops % 4) == 0) {
+                break;
+            }
             ++ nLoops;
         }
         Console.Beep();
@@ -257,14 +255,12 @@ public class Pgm_CSharp
     }
 }
 ```
- 
+ 
 ##### Output
 
 The console output from the C# program is as follows:
 
-```csharp
-[C:\MyDirectory\]
->> Rosetta_CSharp_1.exe
+```Console
 1
 (Press any key to resume.)
 2
@@ -291,8 +287,7 @@ static void JobRs002a_LoopsWhileFor(Args _args)
     {
         print ii;
         pause;
-        // You must click the OK button to proceed
-        // beyond a pause statement.
+        // You must click the OK button to proceed beyond a pause statement.
         // ii is always less than 99.
         if (ii < 99)
         {
@@ -303,7 +298,7 @@ static void JobRs002a_LoopsWhileFor(Args _args)
     pause;
 }
 ```
- 
+ 
 ##### Output
 
 The output in the X++ Print window is as follows:
@@ -323,12 +318,11 @@ public class Pgm_CSharp
 {
     static void Main( string[] args )
     {
-        new Pgm_CSharp().Rs002a_CSharp_ControlOFlowFor();
+        new Pgm_CSharp().ForLoops();
     }
-    void Rs002a_CSharp_ControlOFlowFor()
+    void ForLoops()
     {
-        int nLoops = 1,
-            ii;
+        int nLoops = 1, ii;
         for (ii = 1; ii < 5; ii++)
         {
             Console.Out.WriteLine(ii.ToString());
@@ -345,12 +339,12 @@ public class Pgm_CSharp
     }
 }
 ```
- 
+ 
 ##### Output
 
 The console output from the C# program is as follows:
 
-```csharp
+```Console
 1
 (Press any key to resume.)
 2
@@ -380,9 +374,9 @@ The following sections show comparable switch statements in X++ and C\#.
 #### X++ switch Example
 
 The X++ switch example shows the following:
--   case iTemp: and case (93-90): to show that **case** expressions are not limited to constants, as they are in C\#.
+-   `case iTemp:` and `case (93-90):` to show that **case** expressions are not limited to constants, as they are in C\#.
 -   `//break;` to show that `break;` statements are not required in X++, although they are almost always desirable.
--   case 2, (93-90), 5: to show that multiple expressions can be listed on one **case** clause in X++.
+-   `case 2, (93-90), 5:` to show that multiple expressions can be listed on one **case** clause in X++.
 
 ```xpp
 static void GXppSwitchJob21(Args _args)  // X++ job in AOT &gt; Jobs.
@@ -464,7 +458,7 @@ iEnum is one of these values: 2,3,5: 3
 >>
 ***/
 ```
- 
+ 
 ## X++, C# Comparison: String Case and Delimiters
 This section compares the treatment of strings with mixed casing in X++ and C\#. It also explains the string delimiters that are available in X++.
 
@@ -543,8 +537,7 @@ The following table lists areas in the [] syntax for arrays that are different f
 | Length| In X++ the length of a static sized array is determined in the declaration syntax.| In C# the size of an array is determined when the array object is constructed.| When you use the [] declaration syntax in X++, no more preparation is needed before you assign values to the array. <br>In C# you must declare and then construct the array before assigning to it.|
 | Length| An X++ array can have a dynamic length that can be increased even after population has begun. This applies only when the array is declared without a number inside the []. Performance might be slowed if the length of the dynamic array is increased many times.| In C# the length of an array cannot be changed after the length is set.| In the following fragment of X++ code, only the `myInts` array is dynamic and can increase in size. <br>`int myInts[];` <br>`int myBools[5];` <br>`myInts[2] = 12;` <br>`myInts[3] = 13;` <br>`myBools[6] = 26; //Error`|
 | Length| You can get the length of some arrays by using the `dimOf` function.| C# arrays are objects that have a `Length` property.| No comments.|
-| Indexing| Array indexing is 1 based.| Array indexing is 0 based.
-| mtIntArray[0] would cause an error in X++.|
+| Indexing| Array indexing is 1 based.| Array indexing is 0 based.| mtIntArray[0] would cause an error in X++.|
 | Constant| In X++ a constant value is best achieved by using the <strong>#define</strong> precompiler directive.| In C# you can decorate your variable declaration with the keyword <strong>const</strong>, to achieve a constant value.| X++ has no <strong>const</strong> keyword. C# cannot assign values to variables that are created by its #define precompiler directive.|
 
 ### X++ and C\# Samples
@@ -609,9 +602,9 @@ public class Pgm_CSharp
 {
     static public void Main( string[] args )
     {
-        new Pgm_CSharp().Rs005a_CSharp_ArraySimple();
+        new Pgm_CSharp().ArraySimple();
     }
-    private void Rs005a_CSharp_ArraySimple()
+    private void ArraySimple()
     {
         const int const_iMacroArrayLength = 3;
         // In C# the length is set at construction during run.
@@ -623,8 +616,7 @@ public class Pgm_CSharp
         sSports[const_iMacroArrayLength - 1] = "Baseball";
         for (xx=0; xx < const_iMacroArrayLength; xx++)
         {
-            Console.WriteLine( xx.ToString()
-                + " , [" + sSports[xx] + "]" );
+            Console.WriteLine(xx.ToString() + " , [" + sSports[xx] + "]");
         }
         Console.WriteLine("-------- YEARS --------");
         // In C# you must construct the array before assigning to it.
@@ -633,8 +625,7 @@ public class Pgm_CSharp
         years[10 - 1] = 1930;
         for (xx=0; xx < 10; xx++)
         {
-            Console.WriteLine( xx.ToString()
-                + " , [" + years[xx].ToString() + "]" );
+            Console.WriteLine(xx.ToString() + " , [" + years[xx].ToString() + "]");
         }
     }
 } // EOClass
@@ -644,7 +635,7 @@ public class Pgm_CSharp
 
 The output from the C# program to the command line console is as follows:
 
-```csharp
+```Console
 -------- SPORTS --------
 0 , []
 1 , []
@@ -695,8 +686,8 @@ ListIterator literator;
 ```csharp
 // C#
 using System;
-using SysCollGen = System.Collections.Generic;
-SysCollGen.List<string> listStrings ,list2 ,listMerged; SysCollGen.IEnumerator<string> literator;
+using System.Collections.Generic;
+List<string> listStrings ,list2 ,listMerged; IEnumerator<string> literator;
 ```
 
 ### Example 2: Construction of a List
@@ -710,7 +701,7 @@ listStrings = new List( Types::String );
 
 ```csharp
 // C#
-listStrings = new SysCollGen.List<string>;
+listStrings = new List<string>;
 ```
 
 ### Example 3: Add Items to a List
@@ -719,23 +710,23 @@ In both X++ and C#, the collection provides a method for appending an item to th
 
 ```xpp
 // X++
-listStrings.addEnd ("String\_BB."); 
-listStrings.addStart ("String\_AA.");
+listStrings.addEnd ("StringBB."); 
+listStrings.addStart ("StringAA.");
 // Iterator performs a midpoint insert at current position. 
 listIterator.insert ("dog");
 ```
 
 ```csharp
 // C#
-listStrings.Add ("String\_BB."); 
-listStrings.Insert (0 ,"String\_AA.");
+listStrings.Add ("StringBB."); 
+listStrings.Insert (0 ,"StringAA.");
 // Index 7 determines the insertion point.
 listStrings.Insert (7 ,"dog");
 ```
 
 ### Example 4: Iterate Through a List
 
-Both X++ and C\# have iterator classes that you can use to step through the items in a collection as shown in the following examples.
+Both X++ and C\# have iterator classes that you can use to step through the items in a collection as shown in the following examples. 
 
 ```xpp
 // X++
@@ -842,9 +833,9 @@ MapIterator mapIter;
 
 ```csharp
 // C#
-SysCollGen.Dictionary<int,string> dictKeyValue;
-SysCollGen.IEnumerator<SysCollGen.KeyValuePair<int,string>> enumer;
-SysCollGen.KeyValuePair<int,string> kvpCurrentKeyValuePair;
+Dictionary<int,string> dictKeyValue;
+IEnumerator<SysCollGen.KeyValuePair<int,string>> enumer;
+KeyValuePair<int,string> kvpCurrentKeyValuePair;
 ```
 
 ### Example 2: Construction of the Collection
@@ -858,7 +849,7 @@ mapKeyValue = new Map(Types::Integer, Types::String);
 
 ```csharp
 // C#
-dictKeyValue = new SysCollGen.Dictionary<int,string>();
+dictKeyValue = new Dictionary<int,string>();
 ```
 
 ### Example 3: Add an Item to the Collection
@@ -879,7 +870,7 @@ dictKeyValue.Add(xx ,xx.ToString() + “_Value”);
 
 Enumerators are used to loop through the key-value collections in both X++ and C\# as shown in the following code examples.
 
-```
+```xpp
 // X++ 
 enumer = mapKeyValue.getEnumerator();
 while (enumer.moveNext())
@@ -915,8 +906,7 @@ mapKeyValue.insert(
 ```csharp
 // C#
 dictKeyValue[102] = 
-    “The semi-hidden .item property” 
-    + ” in C#, Updated the value for key 102.”;
+    “The semi-hidden .item property in C#, Updated the value for key 102.”;
 ```
 
 ### Example 6: Delete One Item
@@ -966,8 +956,7 @@ Exception-related differences between X++ and C\# are described in the following
 | <strong>finally</strong>| The `finally` keyword is supported to follow the `try` and `catch` keywords.| The <strong>finally</strong> keyword marks a block of code that follows the <strong>try</strong> and <strong>catch</strong> blocks. The finally will be executed regardless of whether any exception is thrown or caught.| The semantics are identical to the semantics in C#.|
 | Specific exceptions| In X++ an exception is an element of the `Exception` enum, such as **Error**, **Deadlock**, or **CodeAccessSecurity**. No exception can contain another.| In C# an exception is an instance of the `System.Exception` base class, or any class that inherits from it. An exception can be contained in the `InnerException` property of the thrown exception.| In X++ each thrown exception is a value of the Exception enum. For more information, see Exception Enumeration.|
 | Exception message| In X++ the message that is created when an exception is raised is available only in the Infolog, and the message is not directly tied to the exception.| In C# the message is the `Message` member of the `System.Exception` object.| In X++ the Global::error method is the mechanism that display exception messages in the Infolog. For more information, see Exception Handling with try and catch Keywords.|
-| Exception conditions| In X++ an error occurs when you call an instance method on an object variable that has not yet had anything assigned to it. However, no exception is raised along with this error. Therefore no `catch` block can gain control even if the unassigned variable is misused in a `try` block. In the following code example, the error caused by the code `box4.toString();` does not cause control to transfer to any `catch` block: `DialogBox box4;` `try` { ` box4.toString();` ` info("toString did not error, but expected an error.");` } catch (Exception::Error) // No Exception value catches this. { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| In C# a `System.NullReferenceException` is raised when an uninitialized variable is treated as an object reference.
-| There might be several other differences in the conditions that raise exceptions.|
+| Exception conditions| In X++ an error occurs when you call an instance method on an object variable that has not yet had anything assigned to it. However, no exception is raised along with this error. Therefore no `catch` block can gain control even if the unassigned variable is misused in a `try` block. In the following code example, the error caused by the code `box4.toString();` does not cause control to transfer to any `catch` block: `DialogBox box4;` `try` { ` box4.toString();` ` info("toString did not error, but expected an error.");` } catch (Exception::Error) // No Exception value catches this. { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| In C# a `System.NullReferenceException` is raised when an uninitialized variable is treated as an object reference.| There might be several other differences in the conditions that raise exceptions.|
 | SQL transactions| In X++ when an SQL exception occurs in a <strong>ttsBegin</strong> - <strong>ttsCommit</strong> transaction, no <strong>catch</strong> statement inside the transaction block can process the exception.| In C# a catch block inside an SQL transaction can catch the exception.| |
 
 ### Examples
@@ -987,10 +976,8 @@ static void JobRs008a_Exceptions(Args _args)
     int iIndex = 77;
     try
     {
-        info("On purpose, this uses an invalid index for this array: "
-            + sStrings[iIndex]);
-        warning("This message does not appear in the Infolog,"
-            + " it is unreached code.");
+        info("On purpose, this uses an invalid index for this array: " + sStrings[iIndex]);
+        warning("This message does not appear in the Infolog," + " it is unreached code.");
     }
     // Next is a catch for some of the values of
     // the X++ Exception enumeration.
@@ -1018,7 +1005,7 @@ static void JobRs008a_Exceptions(Args _args)
 }
 ```
 
- 
+ 
 ##### Output
 
 Here is the output from the Infolog window:
@@ -1051,22 +1038,16 @@ public class Pgm_CSharp
         string[] sStrings = new string[4];
         try
         {
-            Console.WriteLine
-                ("On purpose, this uses an invalid index"
-                + " for this array: " + sStrings[77]);
-            Console.Error.WriteLine
-                ("This message does not appear in the Infolog,"
-                + " it is unreached code.");
+            Console.WriteLine("On purpose, this uses an invalid index for this array: " + sStrings[77]);
+            Console.Error.WriteLine("This message does not appear in the Infolog, it is unreached code.");
         }
         catch (NullReferenceException exc)
         {
-            Console.WriteLine("(e1) In catch block for -- "
-                + exc.GetType().ToString() );
+            Console.WriteLine("(e1) In catch block for -- " + exc.GetType().ToString() );
         }
         catch (IndexOutOfRangeException exc)
         {
-            Console.WriteLine("(e2) In catch block for -- "
-                + exc.GetType().ToString() );
+            Console.WriteLine("(e2) In catch block for -- " + exc.GetType().ToString() );
         }
         // In C#, System.Exception is the base of all
         // .NET Framework exception classes.
@@ -1074,9 +1055,7 @@ public class Pgm_CSharp
         // this next catch.
         catch (Exception exc)
         {
-            Console.WriteLine
-                ("This last 'catch' is of the abstract"
-                + " base type Exception: "
+            Console.WriteLine("This last 'catch' is of the abstract base type Exception: "
                 + exc.GetType().ToString());
         }
         // The preceding catch of System.Exception makes this catch of
@@ -1088,21 +1067,19 @@ public class Pgm_CSharp
         //}
         finally
         {
-            Console.WriteLine
-                ("'finally' is not an X++ keyword,"
-                + " although it is in C#.");
+            Console.WriteLine("'finally' is not an X++ keyword, although it is in C#.");
         }
         Console.WriteLine("End of program.");
     }
 } // EOClass
 ```
 
- 
+ 
 ##### Output
 
-Here is the actual output to the C\# console:
+Here is the output to the C\# console:
 
-```csharp
+```Console
 (e2) In catch block for -- System.IndexOutOfRangeException
 'finally' is not an X++ keyword, although it is in C#.
 End of program.
@@ -1121,7 +1098,7 @@ static void JobRs008b_ExceptionsAndRetry(Args _args)
     str sStrings[4];
     str sTemp;
     int iIndex = 0;
-    ;
+
     sStrings[1] = "First array element.";
     try
     {
@@ -1131,11 +1108,9 @@ static void JobRs008b_ExceptionsAndRetry(Args _args)
     }
     catch (Exception::Error)
     {
-        print("In catch of -- Exception::Error (will retry)."
-            + " Entering catch.");
+        print("In catch of -- Exception::Error (will retry)." + " Entering catch.");
         ++iIndex;
-        print("In catch of -- Exception::Error (will retry).
-            + " Leaving catch.");
+        print("In catch of -- Exception::Error (will retry)." + " Leaving catch.");
         // Here is the retry statement.
         retry;
     }
@@ -1179,9 +1154,7 @@ public class Pgm_CSharp
         {
             if (bReturnCode)
             {
-                bReturnCode = this
-.Rs008b_CSharp_ExceptionsAndRetry_Callee
-(ref iIndex);
+                bReturnCode = this.Rs008b_CSharp_ExceptionsAndRetry_Callee(ref iIndex);
             }
             else
             {
@@ -1189,9 +1162,9 @@ public class Pgm_CSharp
             }
         }
         Console.WriteLine("End of C# caller method.");
-        }
-    private bool Rs008b_CSharp_ExceptionsAndRetry_Callee
-        (ref int iIndex)
+    }
+    
+    private bool Rs008b_CSharp_ExceptionsAndRetry_Callee(ref int iIndex)
     {
         bool bReturnCode = true; // Means call this method again.
         string[] sStrings = new string[4];
@@ -1199,19 +1172,16 @@ public class Pgm_CSharp
         sStrings[0] = "First array element.";
         try
         {
-            Console.WriteLine("At top of try block: "
-                + iIndex.ToString());
+            Console.WriteLine("At top of try block: " + iIndex.ToString());
             sTemp = sStrings[iIndex];
             Console.WriteLine( "The array element is: " + sTemp );
             bReturnCode = false; // Means do not call this method again.
         }
         catch (Exception)
         {
-            Console.WriteLine
-                ("In catch of -- Exception. Entering catch.");
+            Console.WriteLine("In catch of -- Exception. Entering catch.");
             ++iIndex; // The 'ref' parameter in C#.
-            Console.WriteLine
-                ("In catch of -- Exception. Leaving catch.");
+            Console.WriteLine("In catch of -- Exception. Leaving catch.");
             //retry;
             // In C# we let the caller method do the work
             // that the retry keyword does in X++.
@@ -1222,12 +1192,12 @@ public class Pgm_CSharp
 }
 ```
 
- 
+ 
 #### Output
 
 Here is the output to the console:
 
-```csharp
+```Console
 At top of try block: -1
 In catch of -- Exception. Entering catch.
 In catch of -- Exception. Leaving catch.
@@ -1348,10 +1318,8 @@ class XppClass
     {
         XppClass myXppClass = new XppClass();
         // Subscribe two event handler methods to the delegate.
-        myXppClass.myDelegate += eventHandler
-            (myXppClass.myEventSubscriberMethod2);
-        myXppClass.myDelegate += eventHandler
-            (XppClass::myEventSubscriberMethod3);
+        myXppClass.myDelegate += eventHandler(myXppClass.myEventSubscriberMethod2);
+        myXppClass.myDelegate += eventHandler(XppClass::myEventSubscriberMethod3);
         // Raise the event by calling the delegate one time,
         // which calls all the subscribed event handler methods.
         myXppClass.myDelegate(_stringFromJob);
@@ -1383,10 +1351,8 @@ public class CsClass
     {
         CsClass myCsClass = new CsClass();
         // Subscribe two event handler methods to the delegate.
-        myCsClass.MyEvent += new MyDelegate
-            (myCsClass.MyEventSubscriberMethod2);
-        myCsClass.MyEvent += new MyDelegate
-            (CsClass.MyEventSubscriberMethod3);
+        myCsClass.MyEvent += new MyDelegate(myCsClass.MyEventSubscriberMethod2);
+        myCsClass.MyEvent += new MyDelegate(CsClass.MyEventSubscriberMethod3);
         // Raise the event by calling the event one time, which
         // then calls all the subscribed event handler methods.
         myCsClass.MyEvent("The information from the C# Main.");
@@ -1404,10 +1370,10 @@ public class CsClass
 
 The output from the previous C\# sample is as follows:
 
-```csharp
+```Console
 CsClass.exe C#, hello from instance event handler 
 2: The information from the C\# Main. C\#, hello from static event handler 
-3: The information from the C\# Main. |
+3: The information from the C\# Main.
 ```
 
 ### Events and the AOT
@@ -1518,14 +1484,13 @@ The following table lists several classes that are available to you when you wri
 | `TreeNode .AOTsave` `TreeNode .AOTinsert`                     | `System .Reflection .Emit` (namespace of classes) | The `AOTsave` method applies changes from a `TreeNode` object in your X++ code to the AOT, and the changes are persisted. For a large code sample, see TreeNode.AOTsave Method.       |
 
 ### Comparison: Classes about File IO
-There are several classes that perform file input and output (IO) operations. In the .NET Framework that is used in C\#, the counterparts to these classes reside in the `System.IO` namespace.
+There are several classes that perform file input and output (IO) operations. In the .NET Framework that is used in C\#, the counterparts to these classes reside in the `System.IO` namespace.
 
 The following table lists several .NET Framework classes for C\# that are in the `System.IO` namespace. Each row in the table shows the X++ class or method that best corresponds to the .NET Framework class.
 
 |X++|C#|Comments|
 |---|---|---|
-| `BinaryIo`| `FileStream` `BinaryReader` `BinaryWriter`
-| X++ classes such as `BinaryIo` that extend from the abstract class `Io` serve as a stream, and they also serve as a reader and writer for that stream. In C# the stream is a separate class the from the class that has the more specific read and write methods.|
+| `BinaryIo`| `FileStream` `BinaryReader` `BinaryWriter` | X++ classes such as `BinaryIo` that extend from the abstract class `Io` serve as a stream, and they also serve as a reader and writer for that stream. In C#, the stream is a separate class from the class that has more specific read and write methods.|
 | `TextBuffer`| `MemoryStream`| These classes contain an in-memory buffer, and some of the methods treat the buffer as if it were a file on the hard disk.|
 | WINAPI::createDirectory WINAPI::folderExists WINAPI::removeDirectory| `Directory` `DirectoryInfo` `Path`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve directories.|
 | WINAPI::getDriveType| `DriveInfo` `DriveType`| These classes and methods are used to obtain drive related information.|
@@ -1575,7 +1540,7 @@ Message (04:02:29 pm)
 4001 , The Bulb
 ***/
 ```
- 
+ 
 ### X++ SQL Keywords
 
 The following X++ SQL keywords are among those that are not part of ANSI SQL:
@@ -1627,7 +1592,7 @@ static void OByWhere453Job(Args _args)
     }
 }
 ```
- 
+ 
 ### Aggregate Fields
 
 The following table lists some differences in how aggregate fields in the **select** column list are referenced between X++ SQL and ANSI SQL. Aggregate fields are those that are derived by functions such as **sum** or **avg**.
@@ -1679,5 +1644,4 @@ The following table lists other differences of the **select** statement between 
 |Null results.|In a **while** select statement, if the **where** clause filters out all rows, no special count row is returned to report that.|In a **select**, if the **where** clause filters out all rows, a special count row is returned. The count value is 0.|No comments.|
 |Cursors for navigating returned rows.|The while select statement provides cursor functionality. The alternative is to use the **next** keyword.|You can declare a **cursor** for looping through the rows that are returned from a **select** statement.||
 |**From** clause.|The **from** keyword is optional when no columns are listed and only one table is referenced. The following two syntax options are equivalent: <br>`select \* from tCustTable;` <br>`select tCustTable;`|A **select** statement cannot read from a table unless the **from** clause is used.|In X++ SQL, the simple **select** statement fills the table buffer variable with the first row that was returned. This is illustrated by the following code fragment: <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
-
 

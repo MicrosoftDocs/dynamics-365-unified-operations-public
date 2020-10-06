@@ -4,7 +4,7 @@
 title: Responsible maintenance workers
 description: This topic explains how to set up responsible maintenance workers in Asset Management.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetWorkerResponsible 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Approve and confirm purchase orders
-description: This topic describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+description: This topic describes the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 
 
 ms.search.scope: Core, Operations, Retail
@@ -27,7 +27,7 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: 
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -76,9 +76,10 @@ In some situations, you might have to change a PO after it has reached an approv
 
 If the PO was created by using a change management process, you can make changes by recalling the order or, if the order has already been approved, by using the **Request change** action. In this case, the approval status is changed back to **Draft**, and you can then modify the order. After you've finished making changes, you might have to submit the PO for re-approval. You can configure the types of changes that require re-approval by using a **Re-approval rule for purchase orders** policy rule on the **Purchasing policies** page.
 
-If part of the ordered quantity for a PO line has been delivered, you can't change the ordered quantity. However, you can change the **Deliver remainder** quantity on the line. You can then use the **Finalize** action to cancel lines and prevent further processing. 
+If part of the ordered quantity for a PO line has been delivered, you can't change the ordered quantity when the purchase order is in **Draft**. However, you can change the **Deliver remainder** quantity on the line for the purchase order that is in **Draft** status.
 
-After an order has been confirmed, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity hasn't been received or invoiced.
+After an order has been confirmed, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity hasn't been received or invoiced. You can then use the **Finalize** action to prevent further processing. 
+
 
 ## Canceling purchase orders
 

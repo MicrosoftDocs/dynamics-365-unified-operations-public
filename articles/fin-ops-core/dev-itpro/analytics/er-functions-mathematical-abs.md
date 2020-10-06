@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ABS">ABS ER function</a>
+# ABS ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ABS` function returns the absolute value (modulus) of the specified number 
 
 ## Syntax
 
-```
+```vb
 ABS (number)
 ```
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Embedded Power BI in workspaces
+title: Analytical Workspaces (using Power BI Embedded)
 description: Dynamics Finance and Operations apps now deliver rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 author: TJVass
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Embedded Power BI in workspaces
+# Analytical Workspaces (using Power BI Embedded)
 
 [!include [banner](../includes/banner.md)]
 

@@ -5,7 +5,7 @@ title: Create and apply branding to the Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -56,30 +56,8 @@ After you've installed Xamarin, you must update it to the latest stable version.
 
 If you're developing on Windows and using the Mac just for building the iOS app then you must connect the computer that runs Windows and the Mac. For instructions, see [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
 
-## Loading the solution in Visual Studio
-You must modify the Retail Experience app solution before it can be loaded correctly in Visual Studio. Follow these steps.
-
-1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:\RetailSdk.
-2.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln, and remove the following line.
-
-    ```
-    Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
-    ```
-
-3.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj, and remove following lines.
-
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
-        <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
-        <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
-
-4.  In Visual Studio, open Sample.ShoppingApp.sln, and add existing projects from the Droid and iOS folders. (Right-click the solution, and then select **Add** &gt; **Existing Projects in Visual Studio**.)
-5.  Xamarin.Forms fixed an issue with the version 2.3.2.127 that is required for the app. Please upgrade the Xamarin.Forms version as described below:
-    1.  Open the .csproj files for both Android and iOS projects and replace the line "&lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.1.114&lt;/PkgXamarin\_Forms&gt;" with &lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.2.127&lt;/PkgXamarin\_Forms&gt;
-    2.  Open the files package.config file for both Android and iOS projects and replace the line "&lt;package id="Xamarin.Forms" version="2.3.1.114" targetFramework="monoandroid60" /&gt;" with "&lt;package id="Xamarin.Forms" version="2.3.2.127" targetFramework="monoandroid60" /&gt;"
-
 ## Connect to an online channel
-The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each apps, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. 
+Open the Retail Experience app solution in Visual Studio for the next steps. The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each app, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. 
 
 > [!NOTE]
 > The app can't be used to issue gift cards. Therefore, gift cards must be excluded from the assortment for the online channel that the apps use. Information about the Commerce Scale Unit endpoint and the online channel is added to the config.xml file that is present in each app project. You must make the following changes in the config.xml file:

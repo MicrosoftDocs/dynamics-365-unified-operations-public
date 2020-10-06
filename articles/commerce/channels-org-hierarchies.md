@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up organization hierarchies
-description: This topic descibes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
+description: This topic describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](includes/banner.md)]
 
-This topic descibes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
+This topic describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -45,9 +45,9 @@ Before you create an organization hierarchy, you must create organizations. For 
 
 
 For more information, see the following topics.
-- [Organizations and organizational hierarchies overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies)
-- [Plan your organization hierarchy](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/commerce/toc.json)
-- [Create an organization hierarchy](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/commerce/toc.json)
+- [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+- [Plan your organization hierarchy](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+- [Create an organization hierarchy](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 
 ## Create an organizational hierarchy
 

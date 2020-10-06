@@ -5,7 +5,7 @@ title: Distributed order management (DOM)
 description: This topic describes the distributed order management (DOM) functionality in Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -87,6 +87,15 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     2. Select **New**, and enter a name and description for the new group.
     3. Select **Save**.
     4. Select **Add line** to add a single location to the group. Alternatively, select **Add lines** to add multiple locations.
+    
+    > [!NOTE]
+    > In Commerce version 10.0.12 and higher, **Ability to specify locations as 'Shipping' or 'Pickup' enabled within Fulfillment group** must be enabled in the **Feature Management** workspace.
+    >
+    > This feature add new configurations on the **Fulfillment group** page so you can define if the warehouse can be used for shipping or if the warehouse/store combination can be used for shipping, pickup, or both. 
+    >
+    > If you enable the feature, the options available for location selection when you create pickup or shipment orders in POS will be updated.
+    >
+    > Enabling the feature also results in updated pages in POS when the "ship all" or "ship selected" operations are selected.
 
 9. To define rules, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**. The following DOM rules are currently supported:
 
@@ -116,7 +125,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         \* If **Fulfill partial orders** is set to **No**, **Fulfill partial lines** is always considered to be set to **No**, regardless of how it's actually set.
 
 		> [!NOTE]
-		> In Retail version 10.0.5, the pararmeter **Fulfill order from one location only** was changed to **Maximum fulfilling locations**. Instead of allowing a user to configure whether orders can be fulfilled from one location only or fulfilled from as many locations as it can be, users can now specify whether the fulfillment can be from a definite set of locations (up to 5) or from as many locations as it can be. This provides more flexibility in terms of how many locations the order can be fulfilled from.
+		> In Retail version 10.0.5, the parameter **Fulfill order from one location only** was changed to **Maximum fulfilling locations**. Instead of allowing a user to configure whether orders can be fulfilled from one location only or fulfilled from as many locations as it can be, users can now specify whether the fulfillment can be from a definite set of locations (up to 5) or from as many locations as it can be. This provides more flexibility in terms of how many locations the order can be fulfilled from.
 
    - **Offline fulfillment location rule** – This rule lets organizations specify a location or group of locations as offline or unavailable to DOM, so that orders can't be assigned to those locations for fulfillment.
     - **Maximum rejects rule** – This rule lets organizations define a threshold for rejections. When the threshold is reached, the DOM processor will mark an order or order line as an exception, and exclude it from further processing.
@@ -138,7 +147,17 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     2. Select **New**.
     3. Enter values in the **Profile** and **Description** fields.
     4. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile will be automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan. They won't be applied to the sales order lines.
-    5. If you want the DOM profile to be run for orders that have every sales order origin, even orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page, as explained later.
+    5. If you want the DOM profile to be run for orders that have every sales order origin, including orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page, as explained later.
+
+    > [!NOTE]
+    > In Commerce version 10.0.12 and higher, **Ability to assign Fulfillment group to a Fulfillment Profile** must be enabled in the **Feature Management** workspace. 
+    >
+    > This feature adds a new configuration on the **Fulfillment profile** page that can be associated to a single fulfilment group. 
+    >
+    > If you select the fulfilment group, the DOM rules for that fulfilment profile will efficiently run against the "shipping" warehouses included in the fulfilment group. 
+    > 
+    > To effectively use this feature, ensure that there is one fulfillment group that contains all the shipping warehouses, and then associate that fulfillment group to the fulfillment profile.
+    
     6. On the **Legal entities** FastTab, select **Add**, and then select a legal entity.
     7. On the **Rules** FastTab, select **Add**, and then select the rule to link to the profile.
     8. Repeat the previous two steps until all the required rules are associated with the profile.

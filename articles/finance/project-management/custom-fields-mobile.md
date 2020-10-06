@@ -188,7 +188,7 @@ The following example shows a string field on time entries. This field has two o
 
 Note the use of the **TSTimesheetCustomField::newFromMetatdata()** method to simplify the initialization of the custom field properties: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength**, and **numberOfDecimals**. You can also set these parameters manually, as you prefer.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -217,7 +217,7 @@ final class TSTimesheetSettings_Extension
 
 The **buildCustomFieldListForEntry** method is used to enter values on the saved timesheet lines in the mobile app. It takes a TSTimesheetTrans record as a parameter. Fields from that record can be used to fill in the custom field value in the app.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
@@ -255,7 +255,7 @@ To save a custom field back to the database in typical usage, you must extend mu
 > [!NOTE]
 > The following example saves the **firstOption** or **secondOption** value that the user selects to the database as a raw string value. If the database field is a field of the **Enum** type, those values can be manually mapped to an enum value and then saved to an enum field on the database table.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
@@ -344,7 +344,7 @@ This code controls the display settings for the field in the app. For example, i
 
 The following example shows a computed value in the header section in the app.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -374,7 +374,7 @@ final class TSTimesheetSettings_Extension
 The **buildCustomFieldListForHeader** method is used to fill in the timesheet header details in the mobile app. It takes a TSTimesheetTable record as a parameter. Fields from that record can be used to fill in the custom field value in the app. The following example doesn't read any values from the database. Instead, it uses X++ logic to generate a computed value that is then shown in the app.
 
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetDetails))]
 final class TSTimesheetDetails_Extension

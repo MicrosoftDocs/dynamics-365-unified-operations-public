@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Miscellaneous charges on free text invoices (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Brazilian legislation taxes  miscellaneous charges such as freight. Miscellaneous charges can be used only on a free text invoice. This task uses the BRMF demo company.
 

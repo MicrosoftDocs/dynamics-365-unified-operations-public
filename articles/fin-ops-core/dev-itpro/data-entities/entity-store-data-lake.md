@@ -5,7 +5,7 @@ title: Make Entity store available as a Data Lake
 description: This topic explains how to make Entity store available as a Microsoft Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 10/17/2019
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Platform Update 23
 # Make Entity store available as a Data Lake
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
 > This feature is currently in public preview. This feature is comprised of the following components:
@@ -76,7 +74,7 @@ In addition, an admin can refresh any aggregate measurement on demand by selecti
 > When the automated refresh is enabled, in some cases the system may disable refresh of Aggregate measurements. You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied by the system.
 >
 
-## Entity store data in Azure Data Lake (full push)
+## Entity store data in Azure Data Lake (full push and trickle feed)
 
 > [!IMPORTANT]
 > This feature is currently in public preview. Do not enable this feature in production environments.
@@ -101,13 +99,7 @@ The following sections describe each task in more detail.
     - **Performance:** We recommend that you select **Standard**.
     - **Account kind:** You must select **StorageV2**.
 
-3. In the **Advanced options** dialog box, turn off the **Data Lake storage Gen2 (preview)** option.
-
-    > [!NOTE]
-    > This will be made available in a later update. Until then, you can't consume data by using Azure Data Lake Storage APIs.
-    >
-    > If you aren't part of the preview program for Data Lake Storage Gen2, you might not see the **Data Lake storage Gen2 (preview)** option.
-
+3. In the **Advanced options** dialog box, you will see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by Finance and Operations apps with services such as Power BI data flows. 
 4. Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
 5. Select the resource, and then select **Settings** \> **Access keys**.
 6. Make a note of the connection string value, because you will have to provide it later.
@@ -126,20 +118,18 @@ The following sections describe each task in more detail.
 ### Register the app
 
 1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
-2. Select **New application registration**, and enter the following information:
+2. Select **New registration** at the top of the menu, and enter the following information:
 
-    - **Name:** Enter the name of the app.
-    - **Application type:** Select **Web API**.
-    - **Sign-on URL:** Copy the root URL and paste it here.
+    - **Name** - Enter a friendly name for the app.
+    - Select **Accounts in this Organizational directory only** unless your storage account and your Dynamics environment are in different Azure Active Directory domains.
 
-3. After the application is created, select it, and then select **Settings**.
-4. Select the **Required permissions** option.
-5. In the dialog box that appears, select **Add option**, and then select **Add API**.
-6. In the list of APIs, select **Azure Key Vault**.
-7. Select the **Delegated permissions** check box, select to grant permissions, and then select **Done** to save your changes.
-8. On the **Application** menu of the new app, select **Keys**.
-9. In the **Key Description** field, enter a name.
-10. Select a duration, and then select **Save**. A secret is generated in the **Value** field.
+3. After the application is created, select **API permissions**.
+4. In the dialog box that appears, select **Add a permission**.
+5. You will see a dialog box with a list of APIs. In the list, select **Azure Key Vault**.
+6. Select the **Delegated permissions** box, select **user_impersonation**, and then select **Add permissions** to save your changes.
+7. Select the **Certificates & secrets** menu on the left navigation pane, and then select **New client secret**.
+8. In the **Description** field, enter a name and choose an expiry period. Select **Add**.
+10. A secret is generated and shown in the **Value** field.
 11. Immediately copy the secret to the clipboard, because it will disappear within one or two minutes. You will have to provide this key to the application later.
 
 ### Add a service principal to Key Vault

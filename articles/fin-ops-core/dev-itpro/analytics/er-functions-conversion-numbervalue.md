@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMBERVALUE">NUMBERVALUE ER function</a>
+# NUMBERVALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `NUMBERVALUE` function returns a *Real* value that is converted from the spe
 
 ## Syntax
 
-```
+```vb
 NUMBERVALUE (text, decimal separator, digit grouping separator)
 ```
 

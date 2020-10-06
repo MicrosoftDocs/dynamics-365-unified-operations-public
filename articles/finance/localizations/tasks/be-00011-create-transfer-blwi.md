@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create and transfer transactions to the BLWI (Belgium)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through creating BLWI report for the Belgium. This procedure was created using the demo data company USSI. This functionality is available for legal entities whose primary address is in the Belgium. Also it is necessary to set up Registration ID for Belgium and fill in Registration number in order to create BLWI declaration.
 

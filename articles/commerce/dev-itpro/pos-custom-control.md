@@ -53,8 +53,8 @@ The following table shows the views that support custom controls in POS.
 | Cart view/Transaction page | Yes                      | Yes                             |
 | Customer details view      | Yes                      | No                              |
 | Product details view       | Yes                      | No                              |
-| Customer Add/Edit view     | Yes (work in progress)   | No                              |
-| Address Add/Edit view      | Yes (work in progress)   | No                              |
+| Customer Add/Edit view     | Yes    | No                              |
+| Address Add/Edit view      | Yes    | No                              |
 
 > [!NOTE]
 > Custom controls are supported only in the following product versions:
@@ -80,7 +80,7 @@ The following example shows how you can use extension to add custom controls to 
 
 7. Open the **ProductAvailabilityPanel.html** file, and paste the following code into it.
 
-    ```
+    ```html
     <!DOCTYPE html>
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
         <head>
@@ -105,15 +105,7 @@ The following example shows how you can use extension to add custom controls to 
 
 8. Open the **ProductAvailabilityPanel.ts** file, and paste the following code into it.
 
-    ```
-    /**
-        SAMPLE CODE NOTICE
-        THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-        OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-        THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-        NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-    **/
-
+    ```typescript
     import {
         SimpleProductDetailsCustomControlBase,
         ISimpleProductDetailsCustomControlState,
@@ -126,6 +118,8 @@ The following example shows how you can use extension to add custom controls to 
 
     To write our custom logic, we imported the list of controls and other data objects from the POS application programming interface (API).
 
+## Add constructor and initialize data list
+
 Next, you must add the constructor and initialize the data list with the product availability information. In this way, when you navigate to the page, the product availability information is loaded.
 
 > [!NOTE]
@@ -133,7 +127,7 @@ Next, you must add the constructor and initialize the data list with the product
 
 1. In your **SampleExtensions** folder, add a new .json file, name it **manifest.json**, and paste the following code into it.
 
-    ```
+    ```json
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_Samples",
@@ -177,7 +171,7 @@ Next, you must add the constructor and initialize the data list with the product
 
 3. Open the **extensions.json** file, and paste the following code into it.
 
-    ```
+    ```json
     {
         "extensionPackages": [
             {
@@ -194,7 +188,7 @@ Next, you must add the constructor and initialize the data list with the product
 
 4. Open the **tsconfig.json** file, and include your extension. Paste the following code into the file.
 
-    ```
+    ```json
     "extends": "../tsconfigs/tsmodulesconfig",
     "exclude": [
         // "SampleExtensions"

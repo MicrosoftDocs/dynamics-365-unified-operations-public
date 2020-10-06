@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up reason codes for Australia BAS
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through setting up the Additional BAS reconciliation account, the BAS PAYG reason codes and the BAS fringe benefit reason code which are required to generate the Australia Business Activity Statement.
 

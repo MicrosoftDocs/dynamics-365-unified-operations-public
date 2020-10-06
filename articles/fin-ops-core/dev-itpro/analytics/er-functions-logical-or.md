@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="OR">OR ER function</a>
+# OR ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `OR` function returns a *Boolean* value of **FALSE** if all the specified co
 
 ## Syntax
 
-```
+```vb
 OR (condition 1[, condition 2, …, condition N])
 ```
 

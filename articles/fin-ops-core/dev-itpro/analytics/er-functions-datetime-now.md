@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NOW">NOW ER function</a>
+# NOW ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `NOW` function returns a *DateTime* value that represents the current applic
 
 ## Syntax
 
-```
+```vb
 NOW ()
 ```
 

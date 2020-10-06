@@ -5,7 +5,7 @@ title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/21/2019
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -40,7 +40,7 @@ To install Modern POS (MPOS) you must sign the MPOS app with a signing certifica
 
     > [!NOTE] 
     > The Secure File task doesn’t support a password protected certificate. You must remove the password before uploading this task. Because the certificate is uploaded to the secure file system task in Azure, you can remove the password only for this step. However, you should discuss removing the password with your security experts to determine if this is the correct action for your project. Don’t remove the certificate password for other scenarios.
-- Use a certificate that is in the file system. To do this, download or generate a certificate and place it in the file system where the build is running. The Visual Studio Online agent or build user should have access to this path and file.
+- Use a certificate that is in the file system. To do this, download or generate a certificate and place it in the file system where the build is running. The Microsoft-hosted agent or build user should have access to this path and file.
 - Use thumbprint to look up in the certificate in the store and sign in with that certificate.
 
 ## Use a Secure File task for Universal Windows Platform app signing
@@ -50,7 +50,7 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 ![MPOS app signing flow](media/POSSigningFlow.png)
 
 > [!NOTE] 
-> Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools.
+> Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools. The certificate used for signing the appx file must be installed in the machine where Modern POS is installed.
 
 ## Steps to configure the certificate for signing
 
@@ -67,7 +67,7 @@ Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild
 5. Save the variable.
 6. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the Azure DevOps pipeline (step 3). For example:
     ```Xml
-    <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(CertFile</ModernPOSPackageCertificateKeyFile>
+    <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(CertFile)</ModernPOSPackageCertificateKeyFile>
     ```
 
 ## Download or generate a certificate to sign the MPOS app
@@ -82,7 +82,7 @@ In this case, the certificate file name is **appxsignkey.pfx**, located in the *
 
 If you use thumbprint to sign the MPOS app, then install the certificate locally. Update the thumbprint value in the **ModernPOSPackageCertificateThumbprint** node in the **BuildTools\\Customization.settings** file.
 
-This option will work if the build user is a local user. However if you are using the Azure DevOps/Visual Studio Online agents to generate the build, then the agent may not have permission to access the cert store to use the certificate for signing or the build machine will not have the certificate installed. In this case, the workaround is to change the build user to local user and install the certificate in the box. However, this option will not work if you don’t have admin access to the box.
+This option will work if the build user is a local user. However if you are using the Azure DevOps agents to generate the build, then the agent may not have permission to access the cert store to use the certificate for signing or the build machine will not have the certificate installed. In this case, the workaround is to change the build user to local user and install the certificate in the box. However, this option will not work if you don’t have admin access to the box.
 
 > [!NOTE]
 > If the .pfx file or Secure File task option is used to sign the app, then leave the **ModernPOSPackageCertificateThumbprint** node in the **Customization.settings** file empty. If the thumbprint option is used, then leave **ModernPOSPackageCertificateKeyFile** empty. If both the values are updated, then the build will fail.

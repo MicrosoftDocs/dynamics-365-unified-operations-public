@@ -5,7 +5,7 @@ title: Set up POS hybrid app on Android and iOS
 description: This topic shows how to set up the POS hybrid app on Android and iOS.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 11/25/2019
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2018-29-10
+ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 ---
@@ -49,14 +49,17 @@ To set up and install Xamarin on Windows, go to <https://docs.microsoft.com/xama
 
 ### Update Xamarin
 
-After you've installed Xamarin, you must update it to the latest stable version.
+> [!NOTE]
+> We recommend that you use Xamarin.Android SDK version < 10.0. 
+
+After you've installed Xamarin, you must update it to the latest stable version (Xamarin.Android SDK version must be < 10.0).
 
 -   **Windows** - In Microsoft Visual Studio, click **Tools** &gt; **Options** &gt;**Environment** &gt; **Xamarin** &gt; **Other**.
 -   **Mac** - In Xamarin Studio, click **Check for Updates** &gt; **Update channel**. For more information about this step, see [Change the Updates Channel](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
 
 ### Build the Android Retail hybrid app
 
-1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you’ll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
+1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
       
 2.  In the Retail SDK folder, open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
   
@@ -85,13 +88,13 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
   1.  In the Retail SDK folder, open SampleExtensions\HybridApp\iOS\solution.
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
-         ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
+       ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
       
   2.  Using the Emulator, go to **Settings > RetailMPOS**. Enter the Commerce Scale Unit URL.
       
-         ![POS iOS app setting](./media/iOSApp.png)
+       ![POS iOS app setting](./media/iOSApp.png)
       
-         ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
+       ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
       
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
   
@@ -105,7 +108,8 @@ Out of the box, the hybrid Android app supports using payment terminals and rece
 | Device | Description |
 | --- | --- |
 | Payment terminals | Any supported by the [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) through the Dynamics 365 Payment Connector for Adyen. |
-| Receipt printer | Network enabled Epson printers which support the Epson SOAP HTTP interface. |
+| Receipt printer | Network-enabled Epson printers that support the Epson SOAP HTTP interface.<p>Network-enabled Star Micronics printers.</p> |
+| Cash drawer | Introduced in Dynamics 365 Commerce version 10.0.8: Cash drawers that are connected to network-enabled printers via the drawer kick (d/k) port. |
 
 Support for other payment processors and peripheral devices can be implemented by ISVs through the Payments and Hardware SDKs. 
 
@@ -122,18 +126,7 @@ To enable direct hardware support for the hybrid Android app, set up a dedicated
 
 To set up the payment connector, follow the standard setup steps noted in the [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration). Skip the section labeled "Update the Modern POS or IIS Hardware Station configuration."
 
-Out of the box, the Android app communicates with network-enabled Epson printers that support Epson's ePOS-Print protocol. To enable this interface, connect the Epson printer to the network. ePOS-Print is enabled through a web interface that allows users to access Epson network-enabled printers through a browser. This web interface is typically reached by opening a web browser and typing http://<printer IP address>. The IP address for the printer can be obtained by connecting it to the network, then turning it off and on. After the network IP address is obtained, a receipt that displays the printer's IP address will print. For more information about configuring ePOS-Print, refer to the documentation provided by Epson. 
-      
-After the Epson printer has ePOS-Print enabled, turn the printer off and turn it back on. When the device comes back online, a receipt should print to indicate the device's IP address. Note the device's IP address and navigate to the POS register form in Dynamics 365. Select the register being set up and open for editing. On the **Register** tab in the ribbon area, note the subheading labeled **Hardware** with an available action called **Configure IP addresses**. Use this action to specify the IP address for the printer that is being used by this specific register. If the **IP address** field is not available for the printer, check the hardware profile assigned to the register to ensure that the printer type is set to **Network**. A port is not required for the out-of-the-box support for Epson printers.
-
-**New for 10.0.8** - Cash drawers connected to Epson network printers via drawer kick (dk) port are now supported. To use a cash drawer connected to a network-enabled Epson printer, configure the printer according to the directions above. Set the cash drawer to type 'Network' in the hardware profile. Navigate to the register or hardware station the hardware profile is assigned to and use the **Configure IP addresses** function to set the IP address for the cash drawer, which is the same as the address configured for the printer.
-
-
-### Sharing peripherals using built-in peripheral support
-
-Payment terminals and receipt printers can be shared among Android POS clients and other MPOS devices. While peripherals can still be shared through an IIS hardware station; the addition of built-in peripheral support for Android POS enables sharing of these devices without deploying the hardware station as a web service.
-
-To share devices among Android POS clients, instead of assigning the IP and hardware profile to the register, the hardware profile should be set on the dedicated hardware station itself. To do this, go to **Retail and Commerce > Channels > Stores > All stores**. Select the store and open for editing. Next, scroll down to the list of hardware stations for the store and assign the hardware profile with network payment terminal, EFT settings, and network printer directly to the hardware station itself. For this scenario, the EFT terminal ID will also need to be assigned to the hardware station at the store level.
+For details on setting up network connected peripherals the docs [Support for network peripherals](https://go.microsoft.com/fwlink/?linkid=2129965).
 
 ## Additional resources
 - [Payments FAQ](payments-retail.md)

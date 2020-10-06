@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FA_SUM">FA_SUM ER function</a>
+# FA_SUM ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `FA_SUM` function returns a *Container (record)* value that consists of data
 
 ## Syntax
 
-```
+```vb
 FA_SUM (fixed asset code, value model code, start date, end date)
 ```
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ORDERBY">ORDERBY ER function</a>
+# ORDERBY ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ORDERBY` function returns the specified list as a *Record list* value after
 
 ## Syntax
 
-```
+```vb
 ORDERBY (list , expression 1[, expression 2, …, expression N])
 ```
 

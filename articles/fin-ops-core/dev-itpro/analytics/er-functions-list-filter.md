@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FILTER">FILTER ER function</a>
+# FILTER ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `FILTER` function returns the specified list as a *Record list* value after 
 
 ## Syntax
 
-```
+```vb
 FILTER (list, condition)
 ```
 

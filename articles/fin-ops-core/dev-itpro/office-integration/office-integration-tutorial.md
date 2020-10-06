@@ -5,7 +5,7 @@ title: Office integration tutorial
 description: In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ For this tutorial, you must access the environment by using Remote Desktop, and 
 
 ## Key concepts
 -   **Entities and OData** – You will use the Microsoft Dynamics Excel Data Connector App (Excel App) to create, read, update, and delete. The connector uses OData services that are created for any entity that is left in the default state of "public" (**DataEntity.Public**=**Yes**).
--   **Apps for Office** – The Excel App is built by using the Apps for Office framework (which is also known as the Office Web API). The Excel App is web-based, and therefore shares technology with the client and will run inside both on-premises Excel instances and Microsoft Excel Online (Microsoft Office 365). The app runs inside Excel in a task pane.
+-   **Apps for Office** – The Excel App is built by using the Apps for Office framework (which is also known as the Office Web API). The Excel App is web-based, and therefore shares technology with the client and will run inside both on-premises Excel instances and Microsoft Excel Online (Microsoft 365). The app runs inside Excel in a task pane.
 -   **Microsoft Office 2016** – The Excel and Word Apps use advances in the Apps for Office framework that were introduced in Office 2016. Therefore, Office 2016 is required in order to run the Excel and Word Apps.
 -   **Authentication** – The Excel and Word Apps run in an Internet Explorer window inside Excel and Word. Even if the user is running the client in an InPrivate Browsing session in Internet Explorer, or in a different browser, such as Chrome, Internet Explorer is still used to run the app inside Excel or Word. Authentication is facilitated by OAuth, and the user can select accounts and sign in within the app. Internet Explorer will first try to automatically sign the user in. Therefore, if you aren't signed in as the correct user, or if you have trouble signing in, you might have to force a sign-out from the app by using the sign-out link on the user menu in the lower-right corner of the app. After sign-out, right-click in the app, and try to sign in again.
 -   **Excel App** – In addition to facilitating refresh and publish data operations, the Excel App also provides source and field information, lookups, filtering, error messaging, and a design experience for adding or removing fields, table columns, or labels from entity data sources.
@@ -147,7 +147,7 @@ The automatically generated Open in Excel experiences that are created for entit
 
 ### Open in Excel Online
 
-The Excel App is built by using a new Apps for Office framework. This framework provides a JavaScript-based web application programming interface (API) that enables apps to communicate with Office applications. The biggest advantage of this new framework is that apps can run in on-premises Excel instances (Win32), Excel Online (Office 365), and Excel on the Apple iPad. They will also be able to run in other Excel apps in the future.
+The Excel App is built by using a new Apps for Office framework. This framework provides a JavaScript-based web application programming interface (API) that enables apps to communicate with Office applications. The biggest advantage of this new framework is that apps can run in on-premises Excel instances (Win32), Excel Online (Microsoft 365), and Excel on the Apple iPad. They will also be able to run in other Excel apps in the future.
 
 1.  Navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 2.  Click **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.
@@ -205,13 +205,14 @@ Templates that are registered as system-defined templates are loaded at deployme
 11. Open **FMTemplateRegistrations**. The FMTemplateRegistrations.xpp code file should be shown.
 12. Copy one of the existing lines, and change it by providing the template name, resource name, description, display name, and **Apply current record filter** and **List in Open in Office menu** values. The display name is the text that appears as an Open in Excel option. The description appears when the user holds the pointer over that item. The display name and description can be either labels or static strings. The code should resemble the following example.
 
-    ```xpp
-    this.addTemplate(
-        OfficeAppApplicationType::Excel, 
-        resourceStr(FleetCustomersBasicTemplate), 
-        resourceStr(FleetCustomersBasicTemplate), 
-        "Template for fleet customers", "Fleet customers basic", NoYes::No, NoYes::Yes);
-    ```
+
+     ```xpp
+     this.addTemplate(
+         OfficeAppApplicationType::Excel, 
+         resourceStr(FleetCustomersBasicTemplate), 
+         resourceStr(FleetCustomersBasicTemplate), 
+         "Template for fleet customers", "Fleet customers basic", NoYes::No, NoYes::Yes);
+     ```
 
 13. Save the code. If you're asked whether you want to overwrite the existing code or save it as a new file, click **Overwrite**.
 14. Build the solution (press Ctrl+Shift+B).
@@ -285,23 +286,24 @@ You can create custom lookups to show data options when an enum or relationship 
 4.  Add the **lookup\_Country** code from the following example.
 
     ```xpp
-    public class FMCustomerEntity extends common
-    {
-        [SysODataActionAttribute("FMCustomerEntityCountryCustomLookup", false), //Name in $metadata
-        SysODataCollectionAttribute("_fields", Types::String), //Types in context
-        SysODataFieldLookupAttribute("Country")] //Name of field
-        public static str lookup_Country(Array _fields)
-        {
-            OfficeAppCustomLookupListResult result = new OfficeAppCustomLookupListResult();
+	  public class FMCustomerEntity extends common
+  	{
+	  	[SysODataActionAttribute("FMCustomerEntityCountryCustomLookup", false), //Name in $metadata
+	  	SysODataCollectionAttribute("_fields", Types::String), //Types in context
+	  	SysODataFieldLookupAttribute("Country")] //Name of field
+	  	public static str lookup_Country(Array _fields)
+		{
+			OfficeAppCustomLookupListResult result = new OfficeAppCustomLookupListResult();
 
-            result.items().value(1, "US");
-            result.items().value(2, "AU");
-            result.items().value(3, "FR");                result.items().value(4, "GR");
-            result.items().value(5, "NZ");
+			result.items().value(1, "US");
+			result.items().value(2, "AU");
+			result.items().value(3, "FR");
+			result.items().value(4, "GR");
+			result.items().value(5, "NZ");
 
-            return result.serialize();
-        }
-    }
+			return result.serialize();
+		}
+	  }
     ```
 
 5.  Save the code. If you're asked whether you want to overwrite the existing code or save is as a new file, click **Overwrite**.
@@ -452,7 +454,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 1.  In Internet Explorer, navigate to **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
 2.  Click **SMTP settings**.
 3.  Set the **Outgoing mail server** to the desired SMTP server:
-    -   For [Office 365 production](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (including \*.onmicrosoft.com accounts): smtp.office365.com (Find this setting via outlook.office.com, at **Settings** &gt; **Mail** &gt; **POP and IMAP**.)
+    -   For [Microsoft 365 production](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (including \*.onmicrosoft.com accounts): smtp.office365.com (Find this setting via outlook.office.com, at **Settings** &gt; **Mail** &gt; **POP and IMAP**.)
     -   For Outlook/Hotmail: smtp-mail.outlook.com
 
 4.  Set the user name and password to an appropriate email account and password.
@@ -467,8 +469,8 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 13. To receive the test message, change the To address to your email address.
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes. Note that the message will appear to be sent from the email account that is set on the **Email parameters** page. If that email account is given "Send As" (or "Send email from this mailbox") permissions for the From address that is used in the **Send email** dialog box, messages will appear to come from that address.
-    -   You can configure "Send As" permissions in the Office 365 admin center (portal.office.com/Admin), at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
-    -   Before users can send email messages, "Send As" permissions for each user email account in the client must be given to the email account that is set on the **Email parameters** page. For more information, see [How to set up a multifunction device or application to send email using Office 365](https://technet.microsoft.com/library/dn554323(v=exchg.150).aspx).
+    -   You can configure "Send As" permissions in the Microsoft 365 admin center (portal.office.com/Admin), at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+    -   Before users can send email messages, "Send As" permissions for each user email account in the client must be given to the email account that is set on the **Email parameters** page. For more information, see [How to set up a multifunction device or application to send email using Microsoft 365](https://technet.microsoft.com/library/dn554323(v=exchg.150).aspx).
 
 16. Email that is sent directly from the server, without user interaction, is sent via a batch process and requires that the **Email distributor batch** process be started. Follow these steps to start the process:
     1.  Navigate to **System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**.

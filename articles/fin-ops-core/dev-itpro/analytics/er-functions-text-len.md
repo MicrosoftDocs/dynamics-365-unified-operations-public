@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LEN">LEN ER function</a>
+# LEN ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `LEN` function returns the number of characters in the specified string as a
 
 ## Syntax
 
-```
+```vb
 LEN (text)
 ```
 

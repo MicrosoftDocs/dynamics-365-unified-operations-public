@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NOT">NOT ER function</a>
+# NOT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `NOT` function returns the reversed logical value of the specified condition
 
 ## Syntax
 
-```
+```vb
 NOT (condition)
 ```
 

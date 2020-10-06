@@ -4,7 +4,7 @@
 title: Purchase requisition overview
 description: This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2174
@@ -162,7 +162,7 @@ In some cases, you must start a request for quotation (RFQ) process to identify 
 You can put a purchase requisition on hold by selecting the **On hold** check box on the **Purchase requisition details** page. Processing of the purchase requisition can continue only after you remove the hold by clearing the check box.  
 
 > [!NOTE]
-> In eProcurement, the RFQ for your purchase requisition might allow vendors to add alternate lines. In this case, your purchase requisition will reflect approved alternates.
+> In e-procurement, the RFQ for your purchase requisition might allow vendors to add alternate lines. In this case, your purchase requisition will reflect approved alternates.
 
 ## Demand consolidation
 By consolidating purchase requisition lines from multiple purchase requisitions, you can increase your negotiating power with your vendors to achieve better pricing, lower shipping and handling costs, and reduced overhead costs.  

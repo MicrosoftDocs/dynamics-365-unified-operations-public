@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="DATEVALUE">DATEVALUE ER function</a>
+# DATEVALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,13 +38,13 @@ The `DATEVALUE` function returns a *Date* value that is converted from a given t
 
 ## Syntax 1
 
-```
+```vb
 DATEVALUE (text, format)
 ```
 
 ## Syntax 2
 
-```
+```vb
 DATEVALUE (text, format, culture)
 ```
 
