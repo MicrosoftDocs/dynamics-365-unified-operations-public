@@ -68,7 +68,23 @@ MSDyn365Commerce_OUN=128
 ```
 Make sure to restart the Node.js server with a "yarn start" command so that the server picks up these new values. As you build modules and debug data actions, calls will now be made directly to the Tier 1 Retail Server.
 
-If you have the **MSDyn365_HOST** variable value set to your e-Commerce site URL, you can also navigate to https://localhost:4000 to view your online website rendered on the local Node.js server. All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
+## Debugging against a live e-Commerce environment
+You may have a scenario where you would like to test your live e-Commerce site pages rendering within the local Node development environment calling the tier 1 Retail server.
+This is useful when you want to make changes to modules and themes or to debug Retail server extensions.
+
+To support this scenario, configure the **MSDyn365_HOST** variable in the .env file to point to your e-Commerce domain name.  Once this is complete and you run "yarn start", and navigate to https://localhost:4000 to view your online website rendered on the local Node.js server. When this happens, the live page will be pulled from the Dynamics 365 Commerce content management All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
+
+The below example .env file shows the **MSDyn365_HOST** variable set to "www.fabrikam.com", note you should NOT include the "https://" part of the URL.
+
+```text
+MSDyn365_HOST=www.fabrikam.com
+MSDyn365Commerce_BASEURL=https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/
+MSDyn365Commerce_CHANNELID=68719478279
+MSDyn365Commerce_CATALOGID=0
+MSDyn365Commerce_OUN=128
+…
+
+**Note**: if you have multiple e-Commerce sites configured for a single domain name, do not include the site name in the **MSDyn365_HOST** name provided in the .env file.  Instead use it when navigating in the local browser in the development environment.  For example if you have two sites, "www.fabrikam.com/site1" and "www.fabrikam.com/site2", configure the .env file as shown above, and navigate to "https://localhost:4000/site1" or "https://localhost:4000/site2" respectively.
 
 ## Troubleshooting
 
