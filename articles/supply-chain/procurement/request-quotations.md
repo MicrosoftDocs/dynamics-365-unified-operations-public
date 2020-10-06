@@ -200,7 +200,7 @@ that can be used when you score bids. You must set up solicitation types,
 scoring methods, and scoring criteria on the **Solicitation type** and **Scoring
 method** pages.
 
-## Choose fields to be included in RFQs by default
+## <a name="default-reply-fields"></a>Choose default fields to include in vendor RFQ reply forms
 
 You can specify specific types of information that you want to receive from vendors when they reply to (bid on) a request for quotation (RFQ). Fields that you mark as default are included on the online form provided for vendor collaboration, and printed on RFQ reply sheets sent to vendors. These fields are also included on the RFQ return document that you can send to vendors if, for example, you want to negotiate prices or delivery times.
 
@@ -209,8 +209,9 @@ You can specify specific types of information that you want to receive from vend
 1. Open the **Request for quotation** tab.
 1. Select the **Default requests for quotation** reply fields link under the **Set up default values for requests for quotations** heading.
 1. The **Default request for quotation reply fields** dialog box opens.
-1. In the **Header** and **Line** sections, select the check box for each field you want to include by default in new RFQs.
-1. The **RFQ fields included in vendor RFQ reply forms** includes a slider for each field that is available for use in RFQ reply forms. Fields set to *Yes* in this section will be included (together with their values) in RFQ reply forms. Set the slider to *No* for each field where you want to prevent vendors from seeing data when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
+1. The **RFQ fields included in vendor RFQ reply forms** section includes a slider for each field that is available for use in RFQ reply forms. Fields set to *Yes* in this section will be included (together with their values) in RFQ reply forms. Set the slider to *No* for each field where you want to prevent vendors from seeing data when reviewing bids. This allows you to enter estimated or expected values during RFQ entry for internal purposes without the vendor seeing what has been entered.
+
+You can override these settings for individual RFQ cases as needed.
 
 ## Creating and sending an RFQ
 
@@ -252,7 +253,7 @@ You can add a questionnaire to an RFQ case. This questionnaire then appears on
 all RFQ replies after you send the RFQ. The completion of the questionnaire is
 a mandatory task before the bid can be submitted.
 
-You can change the **RFQ fields included in vendor RFQ reply forms** values from the **Set RFQ reply defaults** page. This page is located in the **Replies** section of the **Quotation** ribbon. Newly created RFQ cases will have the default values selected. These defaults can be changed for individual RFQ cases.
+Though defaults are provided, you can change the **RFQ fields included in vendor RFQ reply forms** settings for each individual RFQ case as needed. To do so, create or open an RFQ case. Then, on the Action Pane, open the **Quotation** tab and, from the **Replies** section, select **Set RFQ reply defaults**. The **Default request for quotation reply fields** dialog box opens, which works the same as it does when setting the defaults for vendor RFQ reply forms, except your changes here will only affect the current RFQ case. For details about how to enable this functionality and how it works, see [Choose default fields to include in vendor RFQ reply forms](#default-reply-fields).
 
 There are three ways to select the vendors to add to an RFQ case:
 
