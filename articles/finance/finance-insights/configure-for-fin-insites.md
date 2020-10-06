@@ -301,7 +301,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 
 9. Use information from the script output to enable the entity store in Dynamics 365 for Finance (**System Administration > System parameters > Data connections**).
 
-# [PowerShell configuration script for Azure CLI](#tab/powershell-configuration-script-for-azure-cli)
+# [PowerShell configuration script for Azure CLI](#tab/powershell-configuration-script-for-azure-cli azurecli-interactive)
 ```azurecli-interactive
 ```
     function New-FinanceDataLakeAzureResources {
