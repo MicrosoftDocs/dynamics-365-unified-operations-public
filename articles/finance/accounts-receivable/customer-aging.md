@@ -96,7 +96,7 @@ When you generate this report, the following default parameters are displayed. Y
 <div class="alert">
 
 > [!NOTE]
-> <P>You can set up aging periods in the <STRONG>Aging period definitions</STRONG> form.</P>
+> <P>You can set up aging periods on the <STRONG>Aging period definitions</STRONG> page.</P>
 
 
 </div></td>
