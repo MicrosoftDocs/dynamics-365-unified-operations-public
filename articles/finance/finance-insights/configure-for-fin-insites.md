@@ -279,7 +279,7 @@ You can complete the steps as listed or use the attached PowerShell script to sp
 
 ### Using Azure Cloud Shell for setting up Finance Insights Data Lake Resources
 
-# [Configuration steps for Azure setup](#tab/configuration-steps-for-azure-setup)
+# [Azure CLI](#tab/azure-cli)
 
 A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the following section and continue with procedure in the Manual setup section below. 
 
