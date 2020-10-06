@@ -172,7 +172,6 @@ This section maintains a list of known issues for the new grid control while the
     When a user first encounters one of these situations, a message will display about refreshing the page. After this message appears, the page will continue to utilize the existing grid for all users until the next product version update. Better handling of these scenarios, so that the new grid can be utilized, will be considered for a future update.    
     
 -  [KB 4582758] Records are blurry when you change zoom from 100 to any other percentage
--    
     
 ### Fixed as part of 10.0.15    
 
