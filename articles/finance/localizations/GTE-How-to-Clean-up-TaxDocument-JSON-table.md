@@ -56,7 +56,7 @@ During cleanup, if it is observed that TaxDocumentJSON table is utilizing too la
 1. Enable the flighting TaxRemoveDependenciesOnTaxDocumentJSONFlighting.
 2. Open Tax>Periodic tasks>Tax document JSON cleanup. Then the dialog below will popup
 
-    ![](media/IND-GST-GSTIN-1.png)
+    ![](media/TaxDocument-JSON-01.PNG)
 
 **INFO:**the Compress option is used to compress the tax document JSON before 10.0.9, and it's a one-time optimization
 3. Choose Remove option, and then the Note below will be shown. Please make sure that customer is clear about it.
@@ -68,7 +68,7 @@ During cleanup, if it is observed that TaxDocumentJSON table is utilizing too la
    
 4. Expand Records to include, specify the condition that confirmed with business department. For example, to remove the Tax document JSON before 31/3/2018, we can set the condition as below
 
-    ![](media/IND-GST-GSTIN-1.png)
+    ![](media/TaxDocument-JSON-02.PNG)
 
 5. Click OK to start execution the cleanup.
 
