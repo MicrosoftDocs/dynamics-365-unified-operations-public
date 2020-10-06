@@ -38,8 +38,9 @@ How to use "Tax>Periodic tasks>Tax document JSON cleanup" to cleanup TaxDocument
 
 ** Support version:**
 
-10.0.13+ Support compressing the old data before 10.0.9.
-10.0.14+ Support removing data.
+•	10.0.13+ Support compressing the old data before 10.0.9.
+•	10.0.14+ Support removing data.
+
 
 ## Purpose
 Along with the system running, more and more data will be produced, and the Database size will also become larger and larger. To release the database space, some old data may be cleaned up.
