@@ -5,7 +5,7 @@ title: Stay compliant with user licensing requirements
 description: This topic provides information about how you can stay compliant with the user licensing requirements for Finance and Operations apps.
 author: peakerbl 
 manager: AnnBe
-ms.date: 08/18/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,7 +57,7 @@ You assign roles to users on the **Users** page (**System administration \> User
 The maximum license requirement determines the actual licensing requirement for a user. If any license requirement is identified as **Operations**, you must use the [User license estimator](#user-license-estimator-report) report to determine the full user licensing requirements.
 
 > [!NOTE]
-> The required license types are extended to include application specific license types, e.g. Commerce, Finance and Supply Chain Management, starting in the release of the platform update for version 10.0.15. This make it possible to view the actual license requirements when assinging roles to users as well as when using the Roles for selected user FactBox. More than one value can be displayed for the required license type. 
+> Starting with platform update for version 10.0.15, the required license types are extended to include application specific license types such as Commerce, Finance, and Supply Chain Management. This extension makes it possible to view the actual license requirements when you assign roles to users and when using the Roles for the selected user FactBox. More than one value can be displayed for the required license type. 
 
 ## View permissions page
 
@@ -66,7 +66,7 @@ During security configuration on the **Configure security** page (**System admin
 ![View permissions page](media/ViewPermissons.png)
 
 > [!NOTE]
-> The required license types are extended to include application specific license types, e.g. Commerce, Finance and Supply Chain Management, starting in the release of the platform update for version 10.0.15. This make it possible to identify the specific security objects that are determining the actual license requirements also while configuring security. More than one value can be displayed for the required license type. 
+> Starting with platform update for version 10.0.15, the required license types are extended to include application specific license types such as Commerce, Finance, and Supply Chain Management. This extension makes it possible to identify the specific security objects that determine the actual license requirements while also configuring security. More than one value can be displayed for the required license type. 
 
 ## User license counts report
 
