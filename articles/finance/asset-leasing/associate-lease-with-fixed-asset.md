@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Associate a lease with a fixed asset
-description: The topic lists the steps for associating an existing fixed asset with a new lease. 
+title: Associate fixed assets with leases
+description: The topic explains how to associate an existing fixed asset with a new lease. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/05/2020
@@ -30,28 +30,33 @@ ms.search.validFrom: 2020-08-05
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Associate a lease with a fixed asset
+# Associate fixed assets with leases
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The topic lists the steps for associating an existing fixed asset with a new lease. when you associate a lease with a fixed asset, the right-of-use (ROU) asset value at initial recognition will be the fixed asset acquisition cost.
+The topic explains how to associate an existing fixed asset with a new lease. When you associate a fixed asset with a lease, the right-of-use (ROU) asset value at initial recognition will be the acquisition cost of the fixed asset.
 
-To be able to associate fixed asset to a lease, you will need to create the fixed assets record in the fixed assets module before hand, then go to **Lease summary** create a lease and link the asset to the lease. 
+Before you can associate a fixed asset with a lease, you must create a record for the fixed asset in Fixed assets. Then, on the **Lease summary** page, you must create a lease and link the asset to that lease.
 
-1. Add a lease by following the steps in the [Add or copy a lease](add-lease.md). Select the asset that hasn't been acquired yet from the **Fixed asset number dropdown** in the **Add lease** page.
-2. Select **Books** and confirm the payment schedule
+1. Add a lease by following the steps in [Add or copy leases](add-lease.md). On the **Add lease** page, in the **Fixed asset number** field, select the asset that hasn't yet been acquired.
+2. Select **Books**, and confirm the payment schedule.
 3. Select **Initial recognition**.
 4. Select **Asset leasing journal**.
-5. The initial recognition journal entry for the lease will debit the fixed asset for the amount that's normally debited to the ROU asset account.
-6. To view the transaction type and book for this fixed asset, click **Journal details**.
-7. Select **Lines** to see the individual lines on the journal entry.
-8. Select the journal line containing the asset and open the **Fixed Assets** tab.
-9. From the **Fixed assets** tab, you can view the transaction type and the book. The entry in the **Transaction type** field will default to **Acquisition**, and the entry in the **Book** field will default to the current book for that fixed asset.
 
-After posting the initial recognition journal entry, the transaction will appear as an acquisition transaction for the fixed asset. To view the transaction table, navigate to **Fixed Assets > Fixed Assets > Fixed Assets**. Select the appropriate asset, and click **Valuations**. The initial recognition journal entry has created an acquisition transaction for the specified fixed asset.
+    The initial recognition journal entry for the lease debits the fixed asset for the amount that is usually debited to the ROU asset account.
 
-The fixed asset can now be depreciated using the standard depreciation functionality in Fixed assets. For more information about depreciation, see [Depreciation methods and conventions](../fixed-assets/depreciation-methods-conventions.md).
+    You can now view the transaction type and book for the fixed asset.
 
-   > [!Note]
-   > If you associate a fixed asset to a lease the following transactions and inquiry should take place on **Fixed assets module**. The **Asset depreciation**,**Lease impariment** as well as **Asset transactions** page.  The respective functions on **Asset leasing module** will be disabled automatically. 
+5. Select **Journal details**.
+6. Select **Lines** to view the individual lines for the journal entry.
+7. Select the journal line that contains the asset, and then select the **Fixed Assets** tab.
+
+    The **Fixed assets** tab shows the transaction type and the book. By default, the **Transaction type** field is set to **Acquisition**, and the **Book** field is set to the current book for the fixed asset.
+
+After you post the initial recognition journal entry, the transaction appears as an acquisition transaction for the fixed asset. To view the transaction table, go to **Fixed assets \> Fixed assets \> Fixed assets**, select the appropriate asset, and then select **Valuations**. You should see that the initial recognition journal entry has created an acquisition transaction for the specified fixed asset.
+
+The fixed asset can now be depreciated by using the standard depreciation functionality in Fixed assets. For more information about depreciation, see [Depreciation methods and conventions](../fixed-assets/depreciation-methods-conventions.md).
+
+> [!NOTE]
+> If you associate a fixed asset with a lease, the following transactions and inquiry should occur on the **Asset depreciation**, **Lease impairment**, and **Asset transactions** pages in Fixed assets. The corresponding functions in Asset leasing will automatically be disabled.
