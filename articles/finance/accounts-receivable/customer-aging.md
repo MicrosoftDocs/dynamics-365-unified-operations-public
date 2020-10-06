@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer aging report
-description: The **Customer aging** report displays the balances that are due from customers, sorted by date interval, or aging period.
+description: The Customer aging report displays the balances that are due from customers, sorted by date interval, or aging period.
 author: JodiChristiansen
 manager: AnnBe
 ms.date: 10/06/2020
@@ -24,7 +24,7 @@ ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: JodiChristiansen
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -64,8 +64,7 @@ When you generate this report, the following default parameters are displayed. Y
 <div class="alert">
 
 > [!NOTE]
-> <P>This control is available only if the <STRONG>Public Sector</STRONG> configuration key is selected.</P>
-
+> <P>This control is available only if the <STRONG>Public sector</STRONG> configuration key is selected.</P>
 
 </div></td>
 </tr>
