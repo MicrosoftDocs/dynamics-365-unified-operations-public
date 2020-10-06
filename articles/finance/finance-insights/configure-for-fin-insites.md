@@ -304,9 +304,6 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 # [Azure CLI](#tab/azure-azure-cli)
 
 ```azurecli-interactive
-az group create \
-    --name storage-resource-group \
-    --location westus
 ```
     function New-FinanceDataLakeAzureResources {
        $defaultSecretExpiryInYear = 1
