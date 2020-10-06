@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for Norway
 description: This topic is a deployment guide for the Commerce localization for Norway.
 author: AlexChern0v
 manager: olegkl
-ms.date: 07/08/2019
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
@@ -46,7 +45,7 @@ This sample consists of extensions for the Commerce runtime (CRT), Retail Server
 
 ### Using certificate profiles in Commerce channels
 
-In Commerce versions 10.0.15 and later, you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Commerce headquarters aren't available. The feature extends the [Manage secrets for retail channels](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/manage-secrets) feature.
+In Commerce versions 10.0.15 and later, you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Commerce headquarters aren't available. The feature extends the [Manage secrets for retail channels](https://docs.microsoft.com.dynamics365/commerce/dev-itpro/manage-secrets) feature.
 
 To apply this functionality in the CRT extension, follow these steps.
 
