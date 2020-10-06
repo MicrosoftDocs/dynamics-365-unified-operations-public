@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a Payment Invoice
-description: This topic lists the steps for creating monthly lease invoices, which can be created for individual leases or for multiple leases using a batch process.  
+title: Create payment invoices
+description: This topic explains how to create monthly lease invoices. You can create invoices for individual leases, or you can use a batch process to create them for multiple leases.
 author: moaamer
 manager: Ann Beebe
 ms.date: 07/28/2020
@@ -30,27 +30,28 @@ ms.search.validFrom: 2020-07-28
 ms.dyn365.ops.version: 10.0.14
 
 ---
-# Create a Payment Invoice
+# Create payment invoices
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-You can create monthly lease invoices individually, or for multiple leases using a batch process. The following procedure lists the steps to create an individual lease payment entry when the **Pay to Vendor** parameter on the lease book is enabled.
+You can create monthly invoices for individual leases, or you can use a batch process to create them for multiple leases. The following procedure shows how to create an individual lease payment entry when the **Pay to Vendor** parameter on the **Lease book setup** page is turned on.
 
-1. Select a lease in the main lease summary list and click (**Books > Payment schedule**).
+1. On the **Lease summary** page, select a lease, and then select **Books \> Payment schedule**.
+2. Select the payment that must be made, and then select **Create journal**. You receive a message that states that a journal was created against the selected payment.
+3. Select **Invoice journals**, and then select the invoice that must be paid.
+4. On the **Lines** tab, review the journal entry before you post it to the general ledger.
 
-2. Select payment to be made and click **Create journal**. A message saying that a journal was created against the selected payment will display.
+    > [!NOTE]
+    > By default, the vendor invoice lines that are created use the vendor posting profile from the **Accounts payable parameters** page.
 
-3. Click **Invoice journals** and select the invoice to be paid. Open the **Lines** tab to review the journal entry before posting to the general ledger.
+5. Select the correct journal, and then select the invoice that must be paid.
 
- > [!Note]
- > The vendor posting profile from **Accounts payable parameters** will default to vendor invoice lines created.
+    For this example, the **Pay to Vendor** parameter on the lease book is turned on. Therefore, the invoice will be in the invoice journal. The **Overview** section shows a summary of the journal entry, and the **Lines** section shows details of the actual journal lines.
 
-4. Click the correct journal and select the invoice to be paid. For this example, the **Pay to Vendor** parameter is turned on, so the invoice will be in the invoice journal. A summary of the journal entry is seen in the Overview section, while details on the actual journal lines can be seen in the Lines section below.
+    > [!NOTE]
+    > If the **Pay to Vendor** parameter is turned off, payment journal entries will be listed on the **Asset leasing** page for the lease book, and the system will create an asset leasing entry instead of an invoice. The lease payment entry will be posted to the journal name that is specified in the **Monthly lease journal** field.
 
- > [!Note]
- > If the **Pay to Vendor** parameter is disabled on the **Lease book setup** page, payment journal entries will be listed on the **Asset leasing** page for the lease book and the system will create a asset leasing entry instead of an invoice. The lease payment entry will post to the journal name that's listed in the **Monthly lease journal** field.
+6. After the transaction is posted, you can view the transaction information and the carrying value of the lease liability by selecting **Liability transactions** in the lease book.
 
-5. When the transaction is posted, you can view the transaction information, and the carrying value of the lease liability, by clicking **Liability transactions** on the lease book.
-
-6. On the payment schedule, the **Journal posted** field will be checked and the invoice journal number will display on this line. After a payment journal has been created, and an entry for that journal has been created, you must reverse that entry before it can be recreated.
+    In the payment schedule, the **Journal posted** check box will be selected, and the line will show the invoice journal number. After a payment journal and an entry for that journal have been created, you must reverse the entry before it can be re-created.
