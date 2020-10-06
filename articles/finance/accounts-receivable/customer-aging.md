@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customer aging report (CustAgingReport
+title: Customer aging report
 description: The **Customer aging** report displays the balances that are due from customers, sorted by date interval, or aging period.
 author: JodiChristiansen
 manager: AnnBe
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Customer aging report 
 
 The **Customer aging** report displays the balances that are due from customers, sorted by date interval, or aging period.
-
-## How to filter the data on this report
 
 When you generate this report, the following default parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. For more information, see [Set up collections](set-up-collections.md).
 
