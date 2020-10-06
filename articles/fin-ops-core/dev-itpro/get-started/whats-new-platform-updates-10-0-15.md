@@ -44,6 +44,8 @@ This topic lists the features that are included in the platform updates for vers
 
 -  Azure Pipelines task for asset deployment now supports self-service environments<br>- For more information to enable this support, see
 [Deploy assets by using Azure Pipelines](../dev-tools/pipeline-deploy-asset.md).
+-  Specific full user license information is now available when configuring security and assigning roles to users<br>- For more information, see
+[Stay compliant with user licensing requirements](../sysadmin/stay-compliant-user-license-requirement.md).
 
 ## Additional resources
 
