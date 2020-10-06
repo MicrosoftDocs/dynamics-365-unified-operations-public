@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Confirm payment schedules in batch
-description:  This topic describes the process of creating journal entries in batch to increase efficiency when recording the monthly lease expense.
+title: Create monthly journal entries in a batch
+description: This topic explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/07/2020
@@ -30,17 +30,16 @@ ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Create monthly journal entries in batch
+# Create monthly journal entries in a batch
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the process of creating journal entries in batch to increase efficiency when recording the monthly lease expense. Batch processing can be used to create journal entries from multiple schedules. These journal entries can include lease payments, liability amortization, right-of-use asset amortization, and executory cost expenses. You can also use batch processing for the initial recognition of multiple leases at once, or to create transition adjustments for multiple leases at once.
+This topic explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded. Batch processing can be used to create journal entries from multiple schedules. These journal entries can include lease payments, liability amortization, right-of-use (ROU) asset amortization, and executory cost expenses. You can also use batch processing to do the initial recognition of multiple leases at the same time, or to create transition adjustments for multiple leases at the same time.
 
-To set up a batch job, or to process payment invoices, depreciation, or interest for multiple leases, open the **Batch journal creation** page (**Asset leasing > Periodic > Batch journal creation**).	A parameters dialog will appear where you can select the schedule that the journal entries will be created from. You can also specify whether to run the batch process for certain entities, lease groups, or individual lease books.
+To set up a batch job, or to process payment invoices, depreciation, or interest for multiple leases, go to **Asset leasing \> Periodic \> Batch journal creation**. In the dialog box that appears, you can select the schedule that the journal entries should be created from. You can also specify whether the batch process should be run for specific entities, lease groups, or lease books.
 
-> [!Note]
-> Subsequent transactions such as liability amortization schedule, payments, depreiation and expenses will be posted only after the initial recognition for respective leases are posted.   
-
-> [!Note]
-> The journal entries are created but will not post until you click the **Run** command.
+> [!NOTE]
+> Subsequent transactions, such as liability amortization schedules, payments, depreciation, and expenses, will be posted only after the initial recognition for corresponding leases is posted.
+>
+> The journal entries are created, but they won't be posted until you select the **Run** command.
