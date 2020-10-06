@@ -39,7 +39,7 @@ This topic describes the known issues with [self-service deployment](infrastruct
 ### Features not intended to be implemented
 The following LCS features will not be implemented in self-service deployment.
 
-- **System diagnostics:** System diagnostics has been deprecated. All data and functionality provided by system diagnostics today will be available through other features in the product and LCS. 
+- **System diagnostics:** All data and functionality provided by system diagnostics today will be available through other features in the product and LCS. 
  - **Service requests:**  Service requests are being replaced with self-service actions. 
 
 ### Known issues in this release
