@@ -169,10 +169,27 @@ This section maintains a list of known issues for the new grid control while the
     -  A grouped card list exists on the page.
     -  A grid column with a non-react extensible control.
 
-    When a user first encounters one of these situations, a message will display about refreshing the page. After this message appears, the page will continue to utilize the existing grid for all users until the next product version update. Better handling of these scenarios, so that the new grid can be utilized, will be considered for a future update.     
+    When a user first encounters one of these situations, a message will display about refreshing the page. After this message appears, the page will continue to utilize the existing grid for all users until the next product version update. Better handling of these scenarios, so that the new grid can be utilized, will be considered for a future update.    
+    
+-  [KB 4582758] Records are blurry when you change zoom from 100 to any other percentage
+-    
+    
+### Fixed as part of 10.0.15    
+
+-  [KB 4582723]  Display options not showing when done later in the form lifecycle
+
+### Fixed as part of 10.0.14
+
+-  (Quality update) [KB 4584752] Unexpected client error with Project invoice proposals page
 
 ### Fixed as part of 10.0.13
 
+-  (Quality update) [KB 4583880] Regression Suite Automation Tool (RSAT) tests fail on OpenLookup action with "Cannot read property RowIndex of undefined"
+-  (Quality update) [KB 4583847] Unexpected client error when arrowing through lookups 
+-  (Quality update) [Bug 471777] Cannot select fields in a grid to edit or create a mobile app
+-  [Bug 474851] Hyperlinks in reference group controls don't work 
+-  [Bug 474848] Enhanced previews with grids do not display
+-  [KB 4582726] The RotateSign property isn't being respected  
 -  [Bug 470173] Checkboxes in inactive rows toggle when the whitespace in the cell is clicked
 -  [Bug 474848] Enhanced previews with grids do not display
 -  [Bug 474851] Hyperlinks in reference group controls don't work 
@@ -180,6 +197,7 @@ This section maintains a list of known issues for the new grid control while the
 -  [KB 4569441] Issues with rendering multi-column card lists, tooltips on images, and display options on some fields
 -  [KB 4575279] Not all marked rows are deleted in General Journal
 -  [KB 4575233] Display options are not restored after moving to another row
+-  [Bug 477884] Lookups return wrong value/record if new grid control is activated
 -  [KB 4571095] Product receipt posting occurs when accidentally pressing Enter (correct handling of a page's default action)
 -  [KB 4575437] Lookups with editable controls close unexpectedly
 -  [KB 4569418] Duplicate line created in delivery schedule form
@@ -229,7 +247,7 @@ This section maintains a list of known issues for the new grid control while the
 - [KB 4558383] Controls outside the grid aren't updated after the last record is deleted.
 - [KB 4558587] Reference groups that have combo boxes for replacement fields don't show values.
 - [KB 4562143] Fields aren't updated after a row change / Grid processing becomes stuck after row deletion.
-- [KB 4562645] An exception occurs when a lookup is opened while Remote Server Administration Tools (RSAT) tests are running.
+- [KB 4562645] An exception occurs when a lookup is opened while Regression Suite Automation Tool (RSAT) tests are running.
 
 ### Fixed as part of 10.0.10
 
