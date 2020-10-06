@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for France
 description: This topic is a deployment guide for the Commerce localization for France.
 author: AlexChern0v
 manager: ezubov
-ms.date: 10/10/2018
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,13 +17,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core
+ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 
