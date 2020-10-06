@@ -1100,6 +1100,10 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+      - name: Brazil
+        items:
+        - name: Commerce localization for Brazil
+          href: localizations/latam-bra-commerce-localization.md 
       - name: Eastern Europe
         items: 
         - name: Common
