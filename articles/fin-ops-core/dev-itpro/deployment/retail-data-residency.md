@@ -5,7 +5,7 @@ title: Commerce data residency
 description: This topic provides information about data residency considerations when deploying the Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/17/2019
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
