@@ -54,7 +54,7 @@ The following illustration shows an overview of the RFQ process.
 
 You can create an RFQ case from planned orders, from a purchase requisition, or
 by manual entry. The RFQ case is the base document that you use to issue an RFQ
-to each vendor.+
+to each vendor.
 
 After you prepare the RFQ case and add vendors, select **Send** (**Send and
 publish** for public sector) on the RFQ case. An RFQ journal is generated for
@@ -72,7 +72,7 @@ information, see [Vendor collaboration with
 customers](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
 If you must amend an RFQ after you send it, you can resend the RFQ to vendors
-when you've finished by using the two amendment actions: Create and Finalize.+
+when you've finished by using the two amendment actions: Create and Finalize.
 
 When you receive bids by email, you can handle these bids from the **Request for
 quotations** page.
@@ -117,7 +117,7 @@ Before you can create an RFQ case, you must set up RFQ information on the
 can specify default values that are copied to the RFQ. You can specify the
 following default values:
 
-- The purchase type of new RFQs: **Purchase order** or **Purchase agreement**.
+- The purchase type of new RFQs: **Purchase order** or **Purchase agreement**
 - The expiration date and time offset from the day the RFQ case is created.
 - Solicitation type, which may default a specific scoring method to the RFQ case.
 - Delivery information and payment terms.
@@ -153,7 +153,7 @@ by% and %Company% tokens are automatically taken from the RFQ. The %Date% token
 is replaced by the current date.
 
 If you want to cancel an RFQ after it’s been sent, you can do that from the RFQ
-case. For the cancellation an email template is required to send the
+case. For the cancellation, an email template is required to send the
 cancellation notification to the vendor's contact persons. The template must be
 selected on the **Procurement and sourcing parameters** page. When the template
 is created, it can contain the following replacements tokens:
@@ -253,7 +253,7 @@ You can add a questionnaire to an RFQ case. This questionnaire then appears on
 all RFQ replies after you send the RFQ. The completion of the questionnaire is
 a mandatory task before the bid can be submitted.
 
-Though defaults are provided, you can change the **RFQ fields included in vendor RFQ reply forms** settings for each individual RFQ case as needed. To do so, create or open an RFQ case. Then, on the Action Pane, open the **Quotation** tab and, from the **Replies** section, select **Set RFQ reply defaults**. The **Default request for quotation reply fields** dialog box opens, which works the same as it does when setting the defaults for vendor RFQ reply forms, except your changes here will only affect the current RFQ case. For details about how to enable this functionality and how it works, see [Choose default fields to include in vendor RFQ reply forms](#default-reply-fields).
+Although defaults are provided, you can change the **RFQ fields included in vendor RFQ reply forms** settings for each individual RFQ case as needed. To do so, create or open an RFQ case. Then, on the Action Pane, open the **Quotation** tab and, from the **Replies** section, select **Set RFQ reply defaults**. The **Default request for quotation reply fields** dialog box opens, which works the same as it does when setting the defaults for vendor RFQ reply forms, except your changes here will only affect the current RFQ case. For details about how to enable this functionality and how it works, see [Choose default fields to include in vendor RFQ reply forms](#default-reply-fields).
 
 There are three ways to select the vendors to add to an RFQ case:
 
@@ -384,7 +384,7 @@ bids from vendors.
 On the Vendor tab of the RFQ case, you can see the lines with the highest and
 the lowest status for a particular vendor. When the vendor is added, and no
 lines have yet been sent, both the lowest and the highest status is
-<strong>Created.</strong>When the RFQ is sent to the vendor with all lines, the status of the
+<strong>Created.</strong> When the RFQ is sent to the vendor with all lines, the status of the
 two lines will be <strong>Sent</strong>. If some lines in a bid from a vendor are accepted
 and others are rejected, the rejected lines will get the lowest status which is
 <strong>Rejected</strong>, and the accepted lines will get the highest status which is
