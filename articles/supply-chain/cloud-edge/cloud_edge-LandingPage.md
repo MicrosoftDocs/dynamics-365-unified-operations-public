@@ -37,7 +37,13 @@ Companies working with manufacturing and distribution must be able to execute ke
 
 ### Public preview information
 
-The Cloud & Edge preview for Dynamics 365 Supply Chain Management is made available on the condition you agree to these [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
+> [!IMPORTANT]
+> As a preview feature, the cloud and edge scale unit related services are currently available in limited geographies. By enabling cloud and edge scale units you are affirming that you understand that some data related to the configuration and processing of cloud and edge scale units may be performed in a US data center. By enabling cloud and edge scale units you agree to these [Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274). To learn more about cloud and edge scale units please consult the [documentation](https://aka.ms/scmcne).
+>
+> Your privacy is important to us. To learn more read our [Privacy Statement](https://aka.ms/privacy).
+
+> [!NOTE]
+> Microsoft is committed to providing software that is usable by persons of all abilities. As a preview feature, the cloud and edge scale unit manager user experience is still being developed. Some usability and accessibility work remains. We welcome your feedback on how we can improve our user experiences.
 
 > [!IMPORTANT]
 > The preview for cloud and edge scale units will become available for existing customers of Dynamics 365 Supply Chain Management during October.
@@ -112,19 +118,34 @@ The following diagram shows the sign-up and provisioning flow for the public pre
 In the public preview the [Scale Unit Manager portal](https://SUM.DYNAMICS.COM) shows the list of Tenants that your account is part of and you are and owner or environment admin in the in a LCS project.
 You will also see the sign-up status for each tenant.
 
-:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Screen shot showing the 'Sign up now' for a tenant.":::
+:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Screen shot showing the 'Sign up' option for a tenant.":::
 
 Click on the Sign up now! button in order to submit your LCS tenant to participate in the preview. You need to accept the terms and supply your business email address for further communication in regards to the preview signup process.
-:::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Screen shot showing the 'Sign up now' for a tenant.":::  
+:::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Screen shot showing the sign up submission for a tenant.":::  
 
 Microsoft will review your request and inform you about the next steps.  
 
-Once you have been granted access to the preview program you will receive two promo codes for your LCS project. You should now deploy two environments in LCS with these promo codes. The environments should be for the PEAP build 10.0.15. Once completed you should reply in email such that we can commence the final step to enable one of those environments to become the Cloud hub, the other a cloud scale unit in your preview deployment. We will let you know once this step is completed.
+Once you have been granted access to the preview program you will receive two promo codes for your LCS project. You can now deploy two environments in LCS with these promo codes. The environments should be using the PEAP build 10.0.15. Once completed please reply in email such that we can commence the final configuration step to enable one of those environments to become the supply chain management cloud hub and the second a cloud scale unit in your preview deployment. We will then let you know once this configuration step is completed.
 
 At this point you can start configuring scale units and workloads in your preview environment using the scale unit manager portal.
 
 ### Managing cloud scale units and workloads
-Once you have Enter the scale unit manager portal and select the navigation item 
+
+Access the scale unit manager portal and sign in with your tenant account. On the Configure scale units page you will be able to add a hub environment if it is not already listed in the environments. Then you can select the hub which you like to configure with scale units and workloads.
+
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Screen shot showing the scale unit and workload management experience.":::  
+
+Press the Add scale units button to add one or more scale units that are available in your topology. In preview you should see the cloud scale unit that you have deployed from one of the  promo codes that you have received as part of the preview program.
+
+> [!IMPORTANT]
+> In the public preview you will find see the cloud scale unit that you have received as part of the preview program in the scale unit manager portal. Any edge scale unit you have created based on a Local Business Data configuration can not be managed in the Scale Unit Manager Portal yet. Please find the required configuration steps [here in the documentation](cloud_edge-EdgeScaleUnitsUsingLBD.md#assign-your-lbd-edge-scale-unit-to-a-hub).  
+
+In the Defined workloads tab you can use the create workload button to add a Warehouse execution or Manufacturing execution workload to one of your scale units. For each workload you need to specify the context of the processes which will be owned by the workload. For Warehouse execution workloads the context is a specific warehouse in a specific site and legal entity. For Manufacturing execution workloads the context is a specific site in a legal entity.  
+
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Screen shot showing the the creation of a workload.":::  
+
+> [!CAUTION]
+> Please be aware the scale unit manager in the preview does not allow to remove workloads from scale units or unassign a scale unit from a hub once this assignment is made. If you need to remove the those assignment, please reach out to the preview program management contact.
 
 ### Creating an edge scale unit for preview using your custom on-premises hardware appliance
   
