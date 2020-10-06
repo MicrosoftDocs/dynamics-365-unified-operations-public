@@ -87,6 +87,9 @@ MSDyn365Commerce_OUN=128
 
 **Note**: if you have multiple e-Commerce sites configured for a single domain name, do not include the site name in the **MSDyn365_HOST** name provided in the .env file.  Instead use it when navigating in the local browser in the development environment.  For example if you have two sites, "www.fabrikam.com/site1" and "www.fabrikam.com/site2", configure the .env file as shown above, and navigate to "https://localhost:4000/site1" or "https://localhost:4000/site2" respectively.
 
+### Debugging a product details page
+To open up a specific product details page, you can get the product record ID and manually construct a URL using the pattern https://localhost:4000/SITE_NAME/PRODUCT_NUMBER.p, for exmample: https://localhost:4000/site1/68719498121.p.  To get the product number you can either use the live web site to navigate directly to a product and get the number from the URL or from within headquarters you can navigate to a released product and select the "Record info" link under the "Options" tab and copy the "Record-ID".
+
 ## Troubleshooting
 
 ### CORS errors
