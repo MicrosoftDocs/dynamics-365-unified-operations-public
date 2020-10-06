@@ -2,7 +2,7 @@
 # required metadata
 
 title: Post transition adjustment journal entries
-description:  This topic describes the steps for posting transition adjustments to a lease portfolio that adhere to new accounting standards – US GAAP ASC 842 and IFRS 16.
+description: This topic explains how to post transition adjustments to a lease portfolio so that they comply with the new lease accounting standards, Accounting Standards Codification Topic 842 (ASC 842) and International Financial Reporting Standard 16 (IFRS 16).
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/10/2020
@@ -35,17 +35,21 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the steps for posting transition adjustments to a lease portfolio that adhere to new accounting standards – US GAAP ASC 842 and IFRS 16. For a full review of the transition methods, see [Transition methods](transition-methods.md). For information on how to set up a book to transition to the new standards, see [Setup lease books](https://review.docs.microsoft.com/en-us/dynamics365/finance/asset-leasing/set-up-lease-books?branch=bob-asset-leasing-setup).
+This topic explains how to transition adjustments to a lease portfolio so that they adhere to the new lease accounting standards: Accounting Standards Codification Topic 842 (ASC 842), which is the standard in Generally Accepted Accounting Principles in the US (US GAAP), and International Financial Reporting Standard 16 (IFRS 16).
 
-When you create a transition adjustment journal entry, that entry will be reflected on your balance sheet. The balance sheet will now reflect the changes to the lease based on the new standards. The appropriate asset account will be debited for the carrying amount at that date and the liability account will be credited. The difference will be either debited or credited to retained earnings. When you create a transition adjustment journal entry, that entry will be reflected on your balance. The balance sheet will now reflect the changes to the lease based on the new standards. 
+For a full review of the transition methods, see [Transition methods](transition-methods.md). For information about how to set up a book for the transition to the new standards, see [Set up lease books](set-up-lease-books.md).
 
-1.	To post a transition adjustment in compliance with the new accounting standards, select the lease from the **Lease summary** page and click **Books**.
-2.	In the book, select **Payment schedule**.
-3.	Click **Confirm** and exit the payment schedule.
-4.	Click **Transition adjustment**.
+When you create a transition adjustment journal entry, it's reflected on your balance sheet. The balance sheet is updated to reflect the changes that are made to the lease, based on the new standards. The appropriate asset account is debited for the carrying amount on that date, and the liability account is credited. The difference is either debited or credited to retained earnings.
 
-> [!Note]
-> Only those lease books assigned to a book with the **Transition book** field enabled will allow for a transition adjustment entry to be created. Also, if the **Lease commencement** field is later than the transition date then the **Transition adjustment** field won't be filled in.
+To post a transition adjustment in a manner that complies with the new accounting standards, follow these steps.
 
-5.	To view the journal entry, select **General journals**.
-6.	Select the new journal and click **Post**.
+1. On the **Lease summary** page, select the lease, and then select **Books**.
+2. In the book, select **Payment schedule**.
+3. Select **Confirm**, and then close the payment schedule.
+4. Select **Transition adjustment**.
+
+    > [!NOTE]
+    > A transition adjustment entry can be created only for lease books that are assigned to a book where the **Transition book** field is turned on. Additionally, if the value of the **Lease commencement** field is later than the transition date, the **Transition adjustment** field will be blank.
+
+5. To view the journal entry, select **General journals**.
+6. Select the new journal, and then select **Post**.
