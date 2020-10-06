@@ -5,7 +5,7 @@ title: Architectural overview
 description: This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -38,11 +38,11 @@ This topic presents an architectural overview of Microsoft Dynamics 365 Commerce
 
 The Dynamics 365 Commerce online extensibility software development kit (SDK) lets partners easily extend their website so that it includes additional business logic and user experience (UX) logic. Partners can do this extension by using open-source technologies that are freely available.
 
-This document will focus on the "Web Storefront" box from the below [Commerce architecture](../commerce-architecture.md) diagram.
+This architectural overview will focus on the "Web Storefront" box highlighted in the following [Commerce architecture](../commerce-architecture.md) illustration.
 
 ![High-level architectural overview](media/architecture-overview-web-storefront.jpg)
 
-## Web Storefront component-based architecture
+## Web storefront component-based architecture
 
 The architecture of the platform takes advantage of a reuse-based approach to define, implement, and compose loosely coupled independent components. In this approach, the emphasis is on separation of concerns.
 
