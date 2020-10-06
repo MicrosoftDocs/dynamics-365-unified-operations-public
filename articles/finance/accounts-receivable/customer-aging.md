@@ -1,24 +1,41 @@
 ---
-title: Customer aging report (CustAgingReport)
-TOCTitle: Customer aging report (CustAgingReport)
-ms:assetid: 4502bde0-2241-49ec-8323-8e4fb914a243
-ms:mtpsurl: https://technet.microsoft.com/library/Aa575855(v=AX.60)
-ms:contentKeyID: 36058376
+# required metadata
+
+title: Customer aging report (CustAgingReport
+description: The **Customer aging** report displays the balances that are due from customers, sorted by date interval, or aging period.
 author: JodiChristiansen
+manager: AnnBe
 ms.date: 10/06/2020
-mtps_version: v=AX.60
-f1_keywords:
-- SSRS_Reports.Reports.CustAgingReport
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 14151
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: JodiChristiansen
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Customer aging report (CustAgingReport) 
 
-
-The **Customer aging** report displays the balances that are due from customers, sorted by date interval or aging period.
+The **Customer aging** report displays the balances that are due from customers, sorted by date interval, or aging period.
 
 ## How to filter the data on this report
 
-When you generate this report, the following default parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. For more information, see [Filter the data on a report](filter-the-data-on-a-report.md).
+When you generate this report, the following default parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. For more information, see [Set up collections](set-up-collections.md).
 
 <table>
 <colgroup>
