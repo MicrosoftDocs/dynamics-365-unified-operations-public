@@ -56,11 +56,17 @@ You assign roles to users on the **Users** page (**System administration \> User
 
 The maximum license requirement determines the actual licensing requirement for a user. If any license requirement is identified as **Operations**, you must use the [User license estimator](#user-license-estimator-report) report to determine the full user licensing requirements.
 
+> [!NOTE]
+> The required license types are extended to include application specific license types, e.g. Commerce, Finance and Supply Chain Management, starting in the release of the platform update for version 10.0.15. This make it possible to view the actual license requirements when assinging roles to users as well as when using the Roles for selected user FactBox. More than one value can be displayed for the required license type. 
+
 ## View permissions page
 
 During security configuration on the **Configure security** page (**System administration \> Security \> Configure security**), you can select any security object, a role, duty, or permissions, and then select **View permissions** to view all permissions that are currently included and their licensing requirements. The header of the **View permissions** page shows the required license level.
 
 ![View permissions page](media/ViewPermissons.png)
+
+> [!NOTE]
+> The required license types are extended to include application specific license types, e.g. Commerce, Finance and Supply Chain Management, starting in the release of the platform update for version 10.0.15. This make it possible to identify the specific security objects that are determining the actual license requirements also while configuring security. More than one value can be displayed for the required license type. 
 
 ## User license counts report
 
