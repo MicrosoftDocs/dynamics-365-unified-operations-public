@@ -279,7 +279,7 @@ You can complete the steps as listed or use the attached PowerShell script to sp
 
 ### Using Azure Cloud Shell for setting up Finance Insights Data Lake Resources
 
-# [Azure CLI](#tab/azure-cli)
+# [Use a PowerShell script](#tab/use-a-powershell-script)
 
 A PowerShell script is available that can be used to create the Azure resources. If you prefer manual setup, skip the following section and continue with procedure in the Manual setup section below. 
 
@@ -301,9 +301,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 
 9. Use information from the script output to enable the entity store in Dynamics 365 for Finance (**System Administration > System parameters > Data connections**).
 
-# [PowerShell configuration script for Azure CLI](#tab/powershell-configuration-script-for-azure-cli)
-```azurecli-interactive
-```
+# [Azure CLI](#tab/azure-cli)
 
     function New-FinanceDataLakeAzureResources {
        $defaultSecretExpiryInYear = 1
