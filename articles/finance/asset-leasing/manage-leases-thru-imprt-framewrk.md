@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage leases through the Lease import framework
-description: This topic describes the process of using the Lease import framework to adjust multiple leases in a single step.
+description: This topic explains how to use the Lease import framework to adjust multiple leases at the same time.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/18/2020
@@ -35,58 +35,57 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the process of using the Lease import framework to adjust multiple leases in a single step. Adjusting multiple leases at once can save time and help ensure more accurate adjustments by reducing the chances of human error. This capability can also connect Dynamics 365 Finance with external data entities to upload data efficiently.
+This topic explains how to use the Lease import framework to adjust multiple leases in one step. By using this capability, you can save time, and you can also ensure more accurate adjustments by reducing the chance of human error. Additionally, this capability can connect Microsoft Dynamics 365 Finance with external data entities to efficiently upload data.
 
-Asset leasing can integrate with external systems using the following data entities:
+The following data entities can be used to integrate Asset leasing with external systems:
 
 - Lease staging
 - Payment contract staging
 - Executory contract staging
 
-You can use the import process to adjust a lease, update nonfinancial information, or add new leases. You can view and edit the leasing data before importing them. 
+You can use the import process to adjust a lease, update non-financial information, or add new leases. You can view and edit the leasing data before you import it.
 
-The system can run three different processes through the import suite:
+The system can run the following three processes through the lease import suite.
 
-|     Process Type     	|     Description                                    	|
-|----------------------	|-----------------------------------------------------	|
-|     Add record       	|     Leases migrated with this process type will create a lease in the system. The payment schedule must be confirmed manually, and the initial recognition journal entry must be posted manually after the migration.                                                                                                                             	|
-|     Update record    	|     Leases migrated with this process type will update field values for a lease that's already in the system. Only the fields that have been selected on the **Update fields selection** page will be updated. We recommended that you select non-financial fields on the **Update fields selection** page because this process type   doesn't adjust the lease.    	|
-|     Adjust record    	|     Leases migrated with this process type will adjust the lease, which results in a financial lease modification of the lease. After it's processed, the system will create a new payment schedule using the new data from the import suite. The system won't confirm the payment schedule, nor will it post the adjustment journal entry.         	|
-	
-After information is uploaded through the **Data management workspace**, open the **Import header** (**Asset leasing > Lease import framework > Import header**). The **Import header** lists of all imports of the data entities listed above.
+| Process type  | Description |
+|---------------|-------------|
+| Add record    | Migrated leases that have this process type create a lease in the system. The payment schedule must be manually confirmed, and the initial recognition journal entry must be manually posted after the migration. |
+| Update record | Migrated leases that have this process type update field values for a lease that is already in the system. Only the fields that have been selected on the **Update fields selection** page are updated. We recommended that you select non-financial fields on the **Update fields selection** page, because this process type doesn't adjust the lease. |
+| Adjust record | Migrated leases that have this process type adjust the lease. This adjustment causes a financial lease modification of the lease. After the lease is processed, the system creates a new payment schedule by using the new data from the lease import suite. The system doesn't confirm the payment schedule or post the adjustment journal entry. |
 
-Select **Staging data** to view the lease staging data before processing.
+After information is uploaded through the **Data management** workspace, open the **Import header** page (**Asset leasing \> Lease import framework \> Import header**). This page lists all imports of the three data entities that were listed earlier.
 
-To compare an individual lease record, select a lease, and the select **Compare**. The user should run the Compare process in order to generate the Differences report prior to migrating the lease records. The Compare functionality, compares the values in the staging data to those values for those leases currently in the system. Note: the Compare functionality does not work for leases with the Add record process type as there is nothing to compare against that lease.
+To view the lease staging data before processing is run, select **Staging data**.
 
-> [!Note]
-> To compare multiple leases at once, select Compare in Asset leasing > Lease import framework > Periodic > Compare
-	
-You can view the differences between what is currently in the system and what is in the staging tables for each of the entities by selecting the See differences button on each of the entities within the staging tables.
+To compare an individual lease record, select a lease, and then select **Compare**. You should complete this step to generate a **Differences** report before you migrate the lease records. The Compare functionality compares the values in the staging data to the values for leases that are currently in the system.
 
-A window will display to show what the current value is, and what the proposed staging value is.
+> [!NOTE]
+> The Compare functionality doesn't work for leases that have the **Add record** process type, because there is nothing to compare against that lease.
+>
+> To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic \> Compare**, and select **Compare**.
 
-You can also update the staging value by changing it in the **New Value** column and clicking **Update staging**.
+For each entity, you can view the differences between what is currently in the system and what is in the staging tables. For each entity in the staging tables, select **See differences**. The dialog box that appears shows the current value and the proposed staging value.
 
-You can validate leases to ensure that the records can be brought into the system without introducing errors. The system runs several validations to ensure the record will be successfully imported before migrating the lease record. To validate an individual lease, select **Validate**.
+You can also update the staging value by changing it in the **New Value** column and then selecting **Update staging**.
 
-> [!Note]
-> To validate multiple leases at once, select **Compare** in **Asset leasing > Lease import framework > Periodic > Validate**.
-	
-To process an individual lease, select **Migrate lease records** in the **Import header**. When migrating a lease, the system will perform the action indicated in the process type field.
+You can validate leases to ensure that the records can be brought into the system without introducing errors. Before a lease record is migrated, the system runs several validations to ensure that the record will be successfully imported. To validate an individual lease, select **Validate**.
 
-> [!Note]
-> To validate multiple leases at once, select **Compare** in **Asset leasing > Lease import framework > Periodic > Validate**.
-	
-4. Once the leases are compared, the user can run a report to view the > differences for each lease included in that import ID. To run the > report for one lease, highlight that lease in the staging data and > click Compare and view report > Differences report.
+> [!NOTE]
+> To validate multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic \> Validate**, and select **Compare**.
 
-> [!Note]
-> To validate multiple leases at once, select **Compare** in **Asset leasing > Inquries and reports > Differences report**.
+To process an individual lease, select **Migrate lease records** on the **Import header** page. When a lease is migrated, the system performs the action that is specified in the **Process type** field.
+
+> [!NOTE]
+> To validate multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic \> Validate**, and select **Compare**.
+
+After the leases are compared, you can run a report to view the differences for each lease that is included in the import ID. To run the report for one lease, select that lease in the staging data, and then select **Compare and view report \> Differences report**.
+
+> [!NOTE]
+> To validate multiple leases at the same time, go to **Asset leasing \> Inquiries and reports \> Differences report**, and select **Compare**.
 
 ## Set up update fields
 
-If you're using the **Lease import framework** to update leases, you can select specific fields to update when the process type is **Update record**.
+If you're using the Lease import framework to update leases, and the process type is **Update record**, you can select specific fields to update.
 
-Click **Asset leasing > Lease Import Framework > Setup > Update field selection**.
-
-A page will display where the user can highlight the fields and select the green arrow to move to the Selected fields window. Only those fields on the **Selected fields** page can be updated using the lease import suite.
+1. Go to **Asset leasing \> Lease import framework \> Setup \> Update field selection**.
+2. On the page that appears, select the fields to update, and then select the green arrow to move them to the **Selected fields** list. Only fields in the **Selected fields** list can be updated by using the lease import suite.
