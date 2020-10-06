@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Application update 10.0.9
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> We require that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the device, where the POS is being used, should match the corresponding store time zone. We are working to get rid of these limitations in a future release. Please contact Microsoft Support prior to using this feature in Production.
+> We require that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the device, where the POS is being used, should match the corresponding store time zone. Due to these limitations, we suggest to not use this feature in production while we work to get rid of these issues in a future release. 
 
 Retailers generate receipt numbers for various actions in the store, such as cash and carry transactions, return transactions, customer orders, quotations, and payments. Although retailers define their own receipt formats, some countries or regions have regulations that put restrictions on these receipt formats. For example, these regulations might limit the number of characters on the receipt, require consecutive receipt numbers, restrict some special characters, or require a reset of receipt numbers at the beginning of the year. Microsoft Dynamics 365 Commerce makes the process of managing receipt numbers very flexible, to help retailers meet regulatory requirements. This topic explains how to use the functionality for resetting receipt numbers.
 
