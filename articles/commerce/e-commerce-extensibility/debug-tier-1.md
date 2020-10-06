@@ -5,7 +5,7 @@ title: Debug against a Tier 1 Commerce development environment
 description: This topic describes how to set up an e-Commerce online development environment to debug against a Tier 1 Commerce development environment.
 author: samjarawan
 manager: annbe
-ms.date: 09/23/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -68,13 +68,13 @@ MSDyn365Commerce_OUN=128
 ```
 Make sure to restart the Node.js server with a "yarn start" command so that the server picks up these new values. As you build modules and debug data actions, calls will now be made directly to the Tier 1 Retail Server.
 
-## Debugging against a live e-Commerce environment
-You may have a scenario where you would like to test your live e-Commerce site pages rendering within the local Node development environment calling the tier 1 Retail server.
-This is useful when you want to make changes to modules and themes or to debug Retail server extensions.
+## Debug against a live e-Commerce environment
 
-To support this scenario, configure the **MSDyn365_HOST** variable in the .env file to point to your e-Commerce domain name.  Once this is complete and you run "yarn start", and navigate to https://localhost:4000 to view your online website rendered on the local Node.js server. When this happens, the live page will be pulled from the Dynamics 365 Commerce content management All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
+You may want to test the rendering of your live e-Commerce site pages within the local Node development environment while still calling the Tier 1 Retail Server. This is useful when you want to make changes to modules and themes, or to debug Retail Server extensions.
 
-The below example .env file shows the **MSDyn365_HOST** variable set to "www.fabrikam.com", note you should NOT include the "https://" part of the URL.
+To support this scenario, configure the **MSDyn365_HOST** variable in the .env file to point to your e-Commerce domain name. Once this step is complete, you can run the "yarn start" command and navigate to `https://localhost:4000` to view your online website rendered on the local Node.js server. When this happens, the live page will be pulled from the Dynamics 365 Commerce content management system. All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
+
+The following example .env file shows the **MSDyn365_HOST** variable set to `www.fabrikam.com`. Note that this does not include the `https://` part of the URL.
 
 ```text
 MSDyn365_HOST=www.fabrikam.com
@@ -85,14 +85,17 @@ MSDyn365Commerce_OUN=128
 …
 ```
 
-**Note**: if you have multiple e-Commerce sites configured for a single domain name, do not include the site name in the **MSDyn365_HOST** name provided in the .env file.  Instead use it when navigating in the local browser in the development environment.  For example if you have two sites, "www.fabrikam.com/site1" and "www.fabrikam.com/site2", configure the .env file as shown above, and navigate to "https://localhost:4000/site1" or "https://localhost:4000/site2" respectively.
+> [!NOTE]
+> If you have multiple e-Commerce sites configured for a single domain name, do not include the site name in the **MSDyn365_HOST** name provided in the .env file. Instead, use the site name(s) when navigating the development environment in the local browser. For example, if you have two sites, `www.fabrikam.com/site1` and `www.fabrikam.com/site2`, configure the .env file as shown in the example above (`www.fabrikam.com`), and navigate to `https://localhost:4000/site1` or `https://localhost:4000/site2` respectively in the development environment.
 
-### Debugging a product details page
-To open up a specific product details page, you can get the product record ID and manually construct a URL using the pattern https://localhost:4000/SITE_NAME/PRODUCT_NUMBER.p, for exmample: https://localhost:4000/site1/68719498121.p.  To get the product number you can either use the live web site to navigate directly to a product and get the number from the URL or from within headquarters you can navigate to a released product and select the "Record info" link under the "Options" tab and copy the "Record-ID".
+### Debug a product details page
+
+To open up a specific product details page (PDP), you can use the product ID to manually construct a URL using the pattern `https://localhost:4000/SITE_NAME/PRODUCT_NUMBER.p`, for example `https://localhost:4000/site1/68719498121.p` (where "site1" is the site name and "68719498121" is the product ID). To obtain the product ID, you can navigate directly to a product on the live web site and copy the product ID from the URL, or in Commerce headquarters you can navigate to a released product and select the **Record info** link under the **Options** tab, and then copy the **Record-ID**.
 
 ## Troubleshooting
 
 ### CORS errors
+
 You may get CORS (cross origin) errors when calling Retail Server APIs from your browser. These errors may surface in the browser network trace as **(failed) net::ERR_FAILED**. To fix these errors, change the **AllowedOrigins** setting in the Retail service web.config to allow the call to go through, as shown below.
 
 ```
