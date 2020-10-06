@@ -22,8 +22,8 @@ ms.search.scope: Operations, Retail
 # ms.custom: 
 ms.search.region: France
 ms.search.industry: Retail
-ms.author: v-alexec
-ms.search.scope: Retail, Core, Operations
+ms.author: josaw
+ms.search.scope: Retail, Core
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 
@@ -98,7 +98,7 @@ To override the signing flow, follow these steps.
 
 ### Using certificate profiles in Commerce channels
 
-In Commerce version 10.0.15 and later, you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/manage-secrets) feature.
+In Commerce version 10.0.15 and later, you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/manage-secrets) feature.
 
 To apply the new feature in the CRT extension, follow these steps.
 
