@@ -304,7 +304,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 # [Azure CLI](#tab/azure-azure-cli)
 
 ```azurecli-interactive
-```
+
     function New-FinanceDataLakeAzureResources {
        $defaultSecretExpiryInYear = 1
 
@@ -744,7 +744,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
         $inner = $inner.InnerException
       }
     }
----
+```
 
   ### Manual setup
 
