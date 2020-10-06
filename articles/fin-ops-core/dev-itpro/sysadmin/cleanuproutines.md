@@ -50,7 +50,34 @@ Also always test each routine first in test environment prior executing it in pr
 | Data management | Data management workspace > Job history cleanup | Available in Platform update 29 and later, functionality must be enabled in Feature management and Feature name is “Execution history cleanup”. The job history clean-up functionality in data management must be used to schedule a periodic cleanup of the execution history. <br> This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process: <br> - All staging tables <br> - DMFSTAGINGVALIDATIONLOG <br> - DMFSTAGINGEXECUTIONERRORS <br> - DMFSTAGINGLOGDETAIL <br> - DMFSTAGINGLOG <br> - DMFDEFINITIONGROUPEXECUTIONHISTORY <br> - DMFEXECUTION <br> - DMFDEFINITIONGROUPEXECUTION |
 | Data management | Data management workspace > “Staging cleanup” tile | **The Staging cleanup functionality should no longer be used, it is depreciated. Instead use Job history cleanup** |
 
+
+ ## General ledger
+
+| **Module**             | **Path**                | **Description** |
+|---------------------|-----------------------------|-------------------------------|
+| General ledger | Periodic tasks > Clean up ledger journals | It deletes general ledger, accounts receivable, and accounts payable journals that have been posted. When you delete a posted ledger journal, all information that’s related to the original transaction is removed. **You should delete this information only if you’re sure that you won’t have to reverse the ledger journal transactions.** |
+
+
+## Sales and marketing
+
+| **Module**             | **Path**                | **Description** |
+|---------------------|-----------------------------|-------------------------------|
+| Sales and marketing | Periodic tasks > Clean up > Delete sales orders | It deletes selected sales orders. |
+| Sales and marketing | Periodic tasks > Clean up > Delete quotations | It deletes selected quotations. |
+| Sales and marketing | Periodic tasks > Clean up > Delete return orders | It deletes selected return orders. |
+| Sales and marketing | Periodic tasks > Clean up > Sales update history cleanup | It deletes old update history transactions. All updates of confirmations, picking lists, packing slips, and invoices generate update history transactions. These transactions ca be viewed in the History on update form. |
+| Sales and marketing | Periodic tasks > Clean up > Order events cleanup | Cleanup job for order events. Next step is to remove the not needed order events check-boxes from Order event setup form. |
+
  
+## Procurement and sourcing
+
+| **Module**             | **Path**                | **Description** |
+|---------------------|-----------------------------|-------------------------------|
+| Procurement and sourcing | Periodic tasks > Clean up > Purchase update history cleanup | This is used to delete all updates of confirmations, picking lists, product receipts, and invoices generate update history transactions. |
+| Procurement and sourcing | Periodic tasks > Clean up > Delete requests for quotations | It is used to delete requests for quotation (RFQs) and RFQ replies. The corresponding RFQ journals are not deleted, but remain in the system. |
+| Procurement and sourcing | Periodic tasks > Clean up > Draft consignment replenishment order journal cleanup | It is used to cleanup draft consignment replenishment order journals. |
+
+
 ## Warehouse management
 
 | **Module**             | **Path**                | **Description** |
@@ -88,28 +115,8 @@ Also always test each routine first in test environment prior executing it in pr
 | Production control | Periodic tasks > Clean up > Archive future registrations | It is used to remove future registrations from the raw registrations table. |
 
 
- ## General ledger
+## Master planning
 
 | **Module**             | **Path**                | **Description** |
 |---------------------|-----------------------------|-------------------------------|
-| General ledger | Periodic tasks > Clean up ledger journals | It deletes general ledger, accounts receivable, and accounts payable journals that have been posted. When you delete a posted ledger journal, all information that’s related to the original transaction is removed. **You should delete this information only if you’re sure that you won’t have to reverse the ledger journal transactions.** |
-
-
-## Sales and marketing
-
-| **Module**             | **Path**                | **Description** |
-|---------------------|-----------------------------|-------------------------------|
-| Sales and marketing | Periodic tasks > Clean up > Delete sales orders | It deletes selected sales orders. |
-| Sales and marketing | Periodic tasks > Clean up > Delete quotations | It deletes selected quotations. |
-| Sales and marketing | Periodic tasks > Clean up > Delete return orders | It deletes selected return orders. |
-| Sales and marketing | Periodic tasks > Clean up > Sales update history cleanup | It deletes old update history transactions. All updates of confirmations, picking lists, packing slips, and invoices generate update history transactions. These transactions ca be viewed in the History on update form. |
-| Sales and marketing | Periodic tasks > Clean up > Order events cleanup | Cleanup job for order events. Next step is to remove the not needed order events check-boxes from Order event setup form. |
-
- 
-## Procurement and sourcing
-
-| **Module**             | **Path**                | **Description** |
-|---------------------|-----------------------------|-------------------------------|
-| Procurement and sourcing | Periodic tasks > Clean up > Purchase update history cleanup | This is used to delete all updates of confirmations, picking lists, product receipts, and invoices generate update history transactions. |
-| Procurement and sourcing | Periodic tasks > Clean up > Delete requests for quotations | It is used to delete requests for quotation (RFQs) and RFQ replies. The corresponding RFQ journals are not deleted, but remain in the system. |
-| Procurement and sourcing | Periodic tasks > Clean up > Draft consignment replenishment order journal cleanup | It is used to cleanup draft consignment replenishment order journals. |
+| Master planning | Master planning > Maintain plans > Plan version cleanup | Normally this cleanup is taken care of automatically. However, sometimes automatic cleanup malfunctions and orphan data remains in the system, slowing down queries and resulting in growth of the database size. A preventive run once a month, when MRP is not running, is recommended. |
