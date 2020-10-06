@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Compound interval functionality
-description: This topic describes how to choose between compounding levels of monthly, quarterly, semiannual, or annual.
+title: Compounding interval functionality
+description: This topic provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/06/2020
@@ -30,129 +30,138 @@ ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Compound interval functionality
+# Compounding interval functionality
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes how to choose between compounding levels of monthly, quarterly, semiannual, or annual. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. The following examples illustrate how a lease's payment schedule will appear based on each of the four possible interval choices.
+This topic provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. Each of the four examples in this topic shows what a lease's payment schedule will look like for a different interval.
 
-You can't select a compounding interval that is less frequent than the lease's payment frequency. For example, there cannot be a quarterly compounding interval with a monthly payment frequency, or an annual compounding interval, with a semiannual payment frequency. An error message will display if you select a compounding interval that is less frequent than the lease's payment frequency.
+You can't select a compounding interval that is less frequent than the lease's payment frequency. For example, a quarterly compounding interval can't be used with a monthly payment frequency, and an annual compounding interval can't be used with a semiannual payment frequency. If you try to select a compounding interval that is less frequent than the lease's payment frequency, you receive an error message.
 
-> [!Note]
-> The following examples use compounding intervals with matching payment frequencies.
+> [!NOTE]
+> In all four examples in this topic, the compounding interval matches the payment frequency.
 
-## Setup for all four leases:
+## Examples
 
-The following tables list the values that are made in the **General** and **Payment schedule lines** tabs for the examples. 
+### Setup for all four leases
 
-### General tab values
+The following tables show the values that are set on the **General** and **Payment schedule lines** tabs for the four leases that are used in the examples.
 
-|     Field                         	|     Value                 	|
-|-----------------------------------	|---------------------------	|
-|     Incremental borrowing rate    	|     5%                    	|
-|     Annuity type                  	|     Ordinary annuity      	|
-|     Compounding interval          	|     See examples below    	|
-|     Payment frequency             	|     Monthly               	|
-|     Commencement date             	|     1/1/2020              	|
+**General tab**
 
-### Payment schedule lines tab values
+| Field                      | Value                        |
+|----------------------------|------------------------------|
+| Incremental borrowing rate | **5%**                       |
+| Annuity type               | **Ordinary annuity**         |
+| Compounding interval       | See the individual examples. |
+| Payment frequency          | **Monthly**                  |
+| Commencement date          | **1/1/2020**                 |
 
-|     Field                	|     Value                 	|
-|--------------------------	|---------------------------	|
-|     Start date           	|     1/1/2020              	|
-|     Periods              	|     120                   	|
-|     Period interval      	|     Months                	|
-|     End date             	|     12/31/2029            	|
-|     Payment frequency    	|     See examples below    	|
-|     Payment amount       	|     50,000                	|
+**Payment schedule lines tab**
 
-#### Lease 1: Monthly compounding interval and monthly payment frequency
+| Field             | Value                        |
+|-------------------|------------------------------|
+| Start date        | **1/1/2020**                 |
+| Periods           | **120**                      |
+| Period interval   | **Months**                   |
+| End date          | **12/31/2029**               |
+| Payment frequency | See the individual examples. |
+| Payment amount    | **50,000**                   |
 
-In the present value formula, the rate is divided by 12 because that is the number of compounding periods per year. The exponent is equal to the value in the Period column of the Payment schedule. The Period column increases by 1 each month because each month is a new compounding interval.
+### Lease 1: Monthly compounding interval and monthly payment frequency
 
-The first 12 months of the payment schedule are listed in the following table.
+The following table lists the first 12 months of the payment schedule. Note the following details:
 
-|     Period    	|     Month    	|     Date          	|     Payment amount    	|     Present value                      	|
-|---------------	|--------------	|-------------------	|-----------------------	|----------------------------------------	|
-|     1         	|     1        	|     1/31/2020     	|     50,000.00         	|     50,000/(1+5%/12)^1 = 49,792.53     	|
-|     2         	|     2        	|     2/29/2020     	|     50,000.00         	|     50,000/(1+5%/12)^2 = 49,585.92     	|
-|     3         	|     3        	|     3/31/2020     	|     50,000.00         	|     50,000/(1+5%/12)^3 = 49,380.17     	|
-|     4         	|     4        	|     4/30/2020     	|     50,000.00         	|     50,000/(1+5%/12)^4 = 49,175.28     	|
-|     5         	|     5        	|     5/31/2020     	|     50,000.00         	|     50,000/(1+5%/12)^5 = 48,971.23     	|
-|     6         	|     6        	|     6/30/2020     	|     50,000.00         	|     50,000/(1+5%/12)^6 = 48,768.03     	|
-|     7         	|     7        	|     7/31/2020     	|     50,000.00         	|     50,000/(1+5%/12)^7 = 48,565.67     	|
-|     8         	|     8        	|     8/31/2020     	|     50,000.00         	|     50,000/(1+5%/12)^8 = 48,364.15     	|
-|     9         	|     9        	|     9/30/2020     	|     50,000.00         	|     50,000/(1+5%/12)^9 = 48,163.47     	|
-|     10        	|     10       	|     10/31/2020    	|     50,000.00         	|     50,000/(1+5%/12)^10 = 47,963.62    	|
-|     11        	|     11       	|     11/30/2020    	|     50,000.00         	|     50,000/(1+5%/12)^11 = 47,764.61    	|
-|     12        	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/12)^12 = 47,566.41    	|
+- The value in the "Period" column increases by 1 every month, because each month is a new compounding interval.
+- In the formula in the "Present value" column, the rate is divided by 12, because there are 12 compounding periods per year. The exponent (that is, the superscript numeral) equals the value in the "Period" column.
 
-#### Lease 2: Quarterly compounding Interval with quarterly payment frequency
+| Period | Month | Date       | Payment amount | Present value                                       |
+|--------|-------|------------|----------------|-----------------------------------------------------|
+| 1      | 1     | 1/31/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>1</sup> = 49,792.53  |
+| 2      | 2     | 2/29/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>2</sup> = 49,585.92  |
+| 3      | 3     | 3/31/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>3</sup> = 49,380.17  |
+| 4      | 4     | 4/30/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>4</sup> = 49,175.28  |
+| 5      | 5     | 5/31/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>5</sup> = 48,971.23  |
+| 6      | 6     | 6/30/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>6</sup> = 48,768.03  |
+| 7      | 7     | 7/31/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>7</sup> = 48,565.67  |
+| 8      | 8     | 8/31/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>8</sup> = 48,364.15  |
+| 9      | 9     | 9/30/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>9</sup> = 48,163.47  |
+| 10     | 10    | 10/31/2020 | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>10</sup> = 47,963.62 |
+| 11     | 11    | 11/30/2020 | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>11</sup> = 47,764.61 |
+| 12     | 12    | 12/31/2020 | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 12\])<sup>12</sup> = 47,566.41 |
 
-In the present value formula, the rate is divided by 4 because that is the number of compounding periods per year. The exponent is equal to the value in the **Period** column of the Payment schedule. The **Period** column increases by 1 every three months, or every quarter, because each quarter is a new compounding interval.
+### Lease 2: Quarterly compounding interval and quarterly payment frequency
 
-The first 12 months of the Payment schedule are listed in the following table.
+The following table lists the first 12 months of the payment schedule. Note the following details:
 
-|     Period    	|     Month    	|     Date          	|     Payment amount    	|     Present value                    	|
-|---------------	|--------------	|-------------------	|-----------------------	|--------------------------------------	|
-|     1         	|     1        	|     1/31/2020     	|     0.00              	|     0.00/(1+5%/4)^1 = 0              	|
-|     1         	|     2        	|     2/29/2020     	|     0.00              	|     0.00/(1+5%/4)^1 = 0              	|
-|     1         	|     3        	|     3/31/2020     	|     50,000.00         	|     50,000/(1+5%/4)^1 = 49,382.72    	|
-|     2         	|     4        	|     4/30/2020     	|     0.00              	|     0.00/(1+5%/4)^2 = 0              	|
-|     2         	|     5        	|     5/31/2020     	|     0.00              	|     0.00/(1+5%/4)^2 = 0              	|
-|     2         	|     6        	|     6/30/2020     	|     50,000.00         	|     50,000/(1+5%/4)^2 = 48,773.05    	|
-|     3         	|     7        	|     7/31/2020     	|     0.00              	|     0.00/(1+5%/4)^3 = 0              	|
-|     3         	|     8        	|     8/31/2020     	|     0.00              	|     0.00/(1+5%/4)^3 = 0              	|
-|     3         	|     9        	|     9/30/2020     	|     50,000.00         	|     50,000/(1+5%/4)^3 = 48,170.92    	|
-|     4         	|     10       	|     10/31/2020    	|     0.00              	|     0.00/(1+5%/4)^4 = 0              	|
-|     4         	|     11       	|     11/30/2020    	|     0.00              	|     0.00/(1+5%/4)^4 = 0              	|
-|     4         	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/4)^4 = 47,576.21    	|
+- The value in the "Period" column increases by 1 every three months (that is, every quarter), because each quarter is a new compounding interval.
+- In the formula in the "Present value" column, the rate is divided by 4, because there are four compounding periods per year. The exponent equals the value in the "Period" column.
 
-  >Note: If the annutiy type change to **Annuity due** the payment will be at the beggning of the quarter instead of the end of the quarter.   
+| Period | Month | Date       | Payment amount | Present value                                     |
+|--------|-------|------------|----------------|---------------------------------------------------|
+| 1      | 1     | 1/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 4\])<sup>1</sup> = 0           |
+| 1      | 2     | 2/29/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 4\])<sup>1</sup> = 0           |
+| 1      | 3     | 3/31/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 4\])<sup>1</sup> = 49,382.72 |
+| 2      | 4     | 4/30/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 4\])<sup>2</sup> = 0           |
+| 2      | 5     | 5/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 4\])<sup>2</sup> = 0           |
+| 2      | 6     | 6/30/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 4\])<sup>2</sup> = 48,773.05 |
+| 3      | 7     | 7/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 4\])<sup>3</sup> = 0           |
+| 3      | 8     | 8/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 4\])<sup>3</sup> = 0           |
+| 3      | 9     | 9/30/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 4\])<sup>3</sup> = 48,170.92 |
+| 4      | 10    | 10/31/2020 | 0.00           | 0.00 ÷ (1 + \[5% ÷ 4\])<sup>4</sup> = 0           |
+| 4      | 11    | 11/30/2020 | 0.00           | 0.00 ÷ (1 + \[5% ÷ 4\])<sup>4</sup> = 0           |
+| 4      | 12    | 12/31/2020 | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 4\])<sup>4</sup> = 47,576.21 |
 
-#### Lease 3: Semiannual compounding interval with semiannual payment frequency
+> [!NOTE]
+> If the annuity type is changed to **Annuity due**, the payment will be at the beginning of the quarter instead of the end of the quarter.
 
-In the present value formula, the rate is divided by 2 because that is the number of compounding periods per year. The exponent is equal to the value in the **Period** column of the Payment schedule. The **Period** column increases by 1 every six months, or semiannually, because the compounding interval is semiannually.
+### Lease 3: Semiannual compounding interval and semiannual payment frequency
 
-The first 12 months of the Payment schedule are listed in the following table.
+The following table lists the first 12 months of the payment schedule. Note the following details:
 
-|     Period    	|     Month    	|     Date          	|     Payment amount    	|     Present value                    	|
-|---------------	|--------------	|-------------------	|-----------------------	|--------------------------------------	|
-|     1         	|     1        	|     1/31/2020     	|     0.00              	|     0.00/(1+5%/2)^1 = 0              	|
-|     1         	|     2        	|     2/29/2020     	|     0.00              	|     0.00/(1+5%/2)^1 = 0              	|
-|     1         	|     3        	|     3/31/2020     	|     0.00              	|     0.00/(1+5%/2)^1 = 0              	|
-|     1         	|     4        	|     4/30/2020     	|     0.00              	|     0.00/(1+5%/2)^1 = 0              	|
-|     1         	|     5        	|     5/31/2020     	|     0.00              	|     0.00/(1+5%/2)^1 = 0              	|
-|     1         	|     6        	|     6/30/2020     	|     50,000.00         	|     50,000/(1+5%/2)^1 = 48,780.49    	|
-|     2         	|     7        	|     7/31/2020     	|     0.00              	|     0.00/(1+5%/2)^2 = 0              	|
-|     2         	|     8        	|     8/31/2020     	|     0.00              	|     0.00/(1+5%/2)^2 = 0              	|
-|     2         	|     9        	|     9/30/2020     	|     0.00              	|     0.00/(1+5%/2)^2 = 0              	|
-|     2         	|     10       	|     10/31/2020    	|     0.00              	|     0.00/(1+5%/2)^2 = 0              	|
-|     2         	|     11       	|     11/30/2020    	|     0.00              	|     0.00/(1+5%/2)^2 = 0              	|
-|     2         	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/2)^2 = 47,590.72    	|
+- The value in the "Period" column increases by 1 every six months (that is, semiannually), because each half-year is a new compounding interval.
+- In the formula in the "Present value" column, the rate is divided by 2, because there are two compounding periods per year. The exponent equals the value in the "Period" column.
 
->Note: If the annutiy type change to **Annuity due** the payment will be at Janyary and July instead of June and December.  
+| Period | Month | Date       | Payment amount | Present value                                     |
+|--------|-------|------------|----------------|---------------------------------------------------|
+| 1      | 1     | 1/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>1</sup> = 0           |
+| 1      | 2     | 2/29/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>1</sup> = 0           |
+| 1      | 3     | 3/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>1</sup> = 0           |
+| 1      | 4     | 4/30/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>1</sup> = 0           |
+| 1      | 5     | 5/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>1</sup> = 0           |
+| 1      | 6     | 6/30/2020  | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 2\])<sup>1</sup> = 48,780.49 |
+| 2      | 7     | 7/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>2</sup> = 0           |
+| 2      | 8     | 8/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>2</sup> = 0           |
+| 2      | 9     | 9/30/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>2</sup> = 0           |
+| 2      | 10    | 10/31/2020 | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>2</sup> = 0           |
+| 2      | 11    | 11/30/2020 | 0.00           | 0.00 ÷ (1 + \[5% ÷ 2\])<sup>2</sup> = 0           |
+| 2      | 12    | 12/31/2020 | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 2\])<sup>2</sup> = 47,590.72 |
 
-#### Lease 4: Annual compounding interval with annual payment frequency
+> [!NOTE]
+> If the annuity type is changed to **Annuity due**, the payment will be in January and July instead of June and December.
 
-In the present value formula, the rate is divided by 1 because that is the number of compounding periods per year. The exponent is equal to the value in the **Period** column of the Payment schedule. The **Period** column increases by 1 every 12 months, or once a year, because the compounding interval is annually.
+### Lease 4: Annual compounding interval and annual payment frequency
 
-The first 12 months of the Payment schedule are listed in the following table.
+The following table lists the first 12 months of the payment schedule. Note the following details:
 
-|     Period    	|     Month    	|     Date          	|     Payment amount    	|     Present value                    	|
-|---------------	|--------------	|-------------------	|-----------------------	|--------------------------------------	|
-|     1         	|     1        	|     1/31/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     2        	|     2/29/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     3        	|     3/31/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     4        	|     4/30/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     5        	|     5/31/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     6        	|     6/30/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     7        	|     7/31/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     8        	|     8/31/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     9        	|     9/30/2020     	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     10       	|     10/31/2020    	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     11       	|     11/30/2020    	|     0.00              	|     0.00/(1+5%/1)^1 = 0              	|
-|     1         	|     12       	|     12/31/2020    	|     50,000.00         	|     50,000/(1+5%/1)^1 = 47,619.05    	|
+- The value in the "Period" column increases by 1 every 12 months (that is, annually), because each year is a new compounding interval.
+- In the formula in the "Present value" column, the rate is divided by 1, because there is one compounding period per year. The exponent equals the value in the "Period" column.
 
->Note: If the annutiy type change to **Annuity due** the payment will be at Janyary instead of December.  
+| Period | Month | Date       | Payment amount | Present value                                     |
+|--------|-------|------------|----------------|---------------------------------------------------|
+| 1      | 1     | 1/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 2     | 2/29/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 3     | 3/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 4     | 4/30/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 5     | 5/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 6     | 6/30/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 7     | 7/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 8     | 8/31/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 9     | 9/30/2020  | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 10    | 10/31/2020 | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 11    | 11/30/2020 | 0.00           | 0.00 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 0           |
+| 1      | 12    | 12/31/2020 | 50,000.00      | 50,000 ÷ (1 + \[5% ÷ 1\])<sup>1</sup> = 47,619.05 |
+
+> [!NOTE]
+> If the annuity type is changed to **Annuity due**, the payment will be in January instead of December.
