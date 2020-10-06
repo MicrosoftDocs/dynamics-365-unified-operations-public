@@ -5,7 +5,7 @@ title: Cloud and Edge
 description: Cloud and Edge scale units for manufacturing and warehouse management workloads
 author: cabeln
 manager: 
-ms.date: 11/03/2017
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,16 +26,22 @@ ms.search.region: global
 ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
-ms.dyn365.ops.version: AX 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
  
-# Cloud and Edge scale units for manufacturing and warehouse management workloads - public preview
+# Cloud and edge scale units for manufacturing and warehouse management workloads
 
-This feature enables shop floor and warehouse execution workloads to be distributed between cloud and edge scale units, which can help improve performance, prevent service interruptions, and maximize up time.
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+Cloud and edge scale units enable shop floor and warehouse execution workloads to be distributed between sites, which can help improve performance, prevent service interruptions, and maximize up time. This functionality is provided by the following add-ins:
+
+- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
+- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
 
 Companies working with manufacturing and distribution must be able to execute key business processes 24/7, without interruption and at scale. But complications may arise due to issues ranging from basic connectivity (such as provider outages, Azure outages, unreliable connections, or network latency) to multiple business processes competing for the same system resources. Cloud and edge features enable companies to execute key mission-critical manufacturing and warehouse processes without interruption, even in situations such as these.
 
-### Public preview information
+## Public preview information
 
 > [!IMPORTANT]
 > As a preview feature, the cloud and edge scale unit related services are currently available in limited geographies. By enabling cloud and edge scale units you are affirming that you understand that some data related to the configuration and processing of cloud and edge scale units may be performed in a US data center. By enabling cloud and edge scale units you agree to these [Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274). To learn more about cloud and edge scale units please consult the [documentation](https://aka.ms/scmcne).

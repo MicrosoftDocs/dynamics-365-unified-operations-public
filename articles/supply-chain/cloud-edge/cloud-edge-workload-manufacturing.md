@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manufacturing workload for cloud and edge scale units
+title: Manufacturing execution workloads for cloud and edge scale units
 description: This topic describes how manufacturing execution workloads function in cloud and edge solutions
 author: cabeln
 manager: 
-ms.date: 10/02/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,11 +25,11 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: SCM
 ms.author: cabeln
-ms.search.validFrom: 2020-10-02
-ms.dyn365.ops.version: AX 10.0.15
+ms.search.validFrom: 2020-10-06
+ms.dyn365.ops.version: 10.0.15
 ---
 
-# Manufacturing execution workload for cloud and edge scale units
+# Manufacturing execution workloads for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

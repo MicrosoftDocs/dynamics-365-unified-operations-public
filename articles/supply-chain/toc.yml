@@ -210,6 +210,16 @@
           items: 
           - name: Goods in transit from vendor
             href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+    - name: Cloud and edge
+      items:
+      - name: Cloud and edge scale units for manufacturing and warehouse management workloads
+        href: cloud-edge/cloud-edge-landing-page.md
+      - name: Deploy custom edge scale units on custom hardware using LBD
+        href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
+      - name: Manufacturing execution workloads for cloud and edge scale units
+        href: cloud-edge/cloud-edge-workload-manufacturing.md
+      - name: Warehouse management workloads for cloud and edge scale units
+        href: cloud-edge/cloud-edge-workload-manufacturing.md
     - name: Asset management
       items:
       - name: Asset management overview
