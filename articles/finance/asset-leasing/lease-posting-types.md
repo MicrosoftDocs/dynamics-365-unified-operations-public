@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lease posting types
-description: This topic describes posting types used for asset leasing transactions.
+description: This topic describes the posting types that are used for asset leasing transactions.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/10/2020
@@ -30,120 +30,133 @@ ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Lease Posting Types
+# Lease posting types
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes posting types used for asset leasing transactions. 
+This topic describes the posting types that are used for asset leasing transactions.
 
 ## Lease asset
-The account associated with the right-of-use asset. This account will be debited when initially recognizing a lease under the new standards IFRS 16 and ASC 842. This account may either be debited or credited for a modified lease, depending on whether the modification increases or decreases the lease liability.
 
-**Example journal entries**: Initial recognition <br> 
-**Debit**: Lease asset XXX <br> 
-**Credit**: Lease liability XXX <br>
+The account is associated with the right-of-use (ROU) asset. This account is debited when a lease is initially recognized under the new lease accounting standards, Accounting Standards Codification Topic 842 (ASC 842) and International Financial Reporting Standard 16 (IFRS 16). For a modified lease, this account might be either debited or credited, depending on whether the modification increases or decreases the lease liability.
+
+**Example journal entries:** Initial recognition<br>
+**Debit:** Lease asset XXX<br>
+**Credit:** Lease liability XXX
 
 ## Lease liability
-The account associated with the lease liability arising from the discounting of payments under the new standards IFRS 16 and ASC 842. This account will be credited upon initial recognition under the new standards. This account will be debited for lease payments and credited for interest accruals.
 
-**Example journal entries** Initial recognition <br>
-**Debit**: Lease asset XXX <br> 
-**Credit**: Lease liability XXX <br>
+The account is associated with the lease liability that occurs when payments are discounted under the new IFRS 16 and ASC 842 standards. This account is credited when a lease is initially recognized under the new standards. It's debited for lease payments and credited for interest accruals.
 
-**Example journal entries**: Interest Accrual <br> 
-**Debit**: Interest expense XXX <br> 
-**Credit**: Lease liability XXX <br>
+**Example journal entries:** Initial recognition<br>
+**Debit:** Lease asset XXX<br>
+**Credit:** Lease liability XXX
 
-**Example journal entries**: Lease payment <br> 
-**Debit**: Lease liability XXX <br> 
-**Credit**: Vendor payable/lease payment XXX <br>
+**Example journal entries:** Interest accrual<br>
+**Debit:** Interest expense XXX<br>
+**Credit:** Lease liability XXX
+
+**Example journal entries:** Lease payment<br>
+**Debit:** Lease liability XXX<br>
+**Credit:** Vendor payable/lease payment XXX
 
 ## Short-term lease liability
-The account associated with the short-term lease liability when the short-term lease liability reclass journal entry is posted. This account will be credited for the short-term liability from the amortization schedule on the last day of the month while the same amount will be debited on the first day of the next month.
-Example journal entries:
 
-**Example journal entries**: Short-term lease liability reclass <br>
-**Debit** Lease liability XXX <br>
-**Credit** Short-term lease liability XXX <br>
-**Debit** Short-term lease liability XXX <br>
-**Credit** Lease liability XXX <br>
+The account is associated with the short-term lease liability when the short-term lease liability reclass journal entry is posted. This account is credited for the short-term liability from the amortization schedule on the last day of the month. However, the same amount is debited on the first day of the next month.
 
-## Depreciation Expense
-The account associated with the expense related to the depreciation of the right-of-use asset under IFRS 16, ASC 842, and finance leases under IAS 17 and ASC 840. This account will be debited when a right-of-use asset is depreciated each month.
+**Example journal entries:** Short-term lease liability reclass<br>
+**Debit:** Lease liability XXX<br>
+**Credit:** Short-term lease liability XXX<br>
+**Debit:** Short-term lease liability XXX<br>
+**Credit:** Lease liability XXX
 
-**Example journal entries**: Depreciation Accrual <br>
-**Debit** Depreciation expense XXX <br>
-**Credit** Accumulated Depreciation XXX <br>
+## Depreciation expense
+
+The account is associated with the expense that is related to the depreciation of the ROU asset under IFRS 16, ASC 842, and finance leases under IAS 17 and ASC 840. This account is debited when an ROU asset is depreciated each month.
+
+**Example journal entries:** Depreciation accrual<br>
+**Debit:** Depreciation expense XXX<br>
+**Credit:** Accumulated Depreciation XXX
 
 ## Gain/loss on lease modification
-The account associated with any gains or losses that arise from lease modifications. A gain may arise during a lease modification if the modification decreases the lease liability by an amount greater than the carrying value of the right-of-use asset.
 
-For example, assume a lease with a current carrying value of the lease liability of $150,000 and carrying value of the right of use asset of $100,000. There is a modification of the lease resulting in a new present value of future minimum lease payments of $40,000. The lease liability would be debited by $110,000 ($150,000 - $40,000). Since the right of use asset is only $100,000, the decrease of $110,000 would decrease the asset past 0, therefore the accounting guidance states the remainder should be booked to a gain account. The final journal entry would be a debit to the lease liability for $110,000, a credit to the lease asset of $100,000, and a credit to the gain account of $10,000.
+The account is associated with any gains or losses that arise from lease modifications. A gain might arise during a lease modification if the modification decreases the lease liability by an amount that exceeds the carrying value of the ROU asset.
 
-**Example journal entries**: Lease modification <br>
-**Debit** Lease liability XXX <br>
-**Credit** Lease Asset XXX <br>
-**Credit** Gain XXX <br>
+For example, a lease has a current carrying value of the lease liability of $150,000 and a carrying value of the ROU asset of $100,000. The lease is modified, and this modification produces a new present value of the future minimum lease payments (PVFMLP) of $40,000. Therefore, the lease liability will be debited by $110,000 ($150,000 – $40,000). Because the ROU asset is only $100,000, the decrease of $110,000 will decrease the asset past 0 (zero). Therefore, the accounting guidance states that the remainder should be booked to a gain account. In this case, the final journal entry will be a debit to the lease liability for $110,000, a credit to the lease asset for $100,000, and a credit to the gain account for $10,000.
+
+**Example journal entries:** Lease modification<br>
+**Debit:** Lease liability XXX<br>
+**Credit:** Lease Asset XXX<br>
+**Credit:** Gain XXX
 
 ## Accumulated depreciation
-The account associated with the contra-asset account of the right-of-use asset. This account will be credited when depreciation expense is posted.
 
-**Example journal entries**: Depreciation Accrual <br>
-**Debit** Depreciation expense XXX <br>
-**Credit** Accumulated depreciation XXX <br>
+The account is associated with the contra-asset account of the ROU asset. This account is credited when a depreciation expense is posted.
+
+**Example journal entries:** Depreciation accrual<br>
+**Debit:** Depreciation expense XXX<br>
+**Credit:** Accumulated depreciation XXX
 
 ## Retained earnings
-The account associated with retained earnings. This account may be either debited or credited on a transition adjustment journal entry using the Full Retrospective Approach or the Cumulative Catchup Option A approach. The difference between the initial right-of-use asset and lease liability will be booked to retained earnings. In rare cases, the retained earnings may also be impacted during lease modifications when a lease changes classification from finance to operating in order to write up or down the right-of-use asset to equal the lease liability.
 
-**Example journal entries**: Transition Adjustment (Full retrospective or cumulative catchup A) <br>
-**Debit** Lease liability XXX <br>
-**Credit** Lease asset XXX <br>
-**Credit** Retained earnings XXX <br>
+The account is associated with retained earnings. This account might be either debited or credited in a transition adjustment journal entry by using the full retrospective method or the cumulative catch-up option A method. The difference between the initial ROU asset and lease liability is booked to retained earnings. In rare cases, the retained earnings might also be affected during lease modification, if the classification of a lease is changed from finance to operating to write the ROU asset up or down so that it equals the lease liability.
+
+**Example journal entries:** Transition adjustment (full retrospective or cumulative catch-up option A method)<br>
+**Debit:** Lease liability XXX<br>
+**Credit:** Lease asset XXX<br>
+**Credit:** Retained earnings XXX
 
 ## Variable payment
-The account associated with variable lease payments resulting from an index revaluation under ASC 842, ASC 840, and IAS 17 leases. Variable payments are included in the lease payment schedule under the column "Variable payment". This account will be debited when an invoice is created against a payment schedule line containing a variable payment.
 
-**Example journal entries**: Lease payment <br>
-**Debit** Lease liability XXX <br>
-**Debit** Variable payment XXX <br>
-**Credit** Vendor payable/lease payment XXX <br>
+The account is associated with variable lease payments that are produced by an index revaluation under ASC 842, ASC 840, and IAS 17 leases. In the lease payment schedule, variable payments are included in the **Variable payment** column. This account is debited when an invoice is created against a payment schedule line that contains a variable payment.
+
+**Example journal entries:** Lease payment<br>
+**Debit:** Lease liability XXX<br>
+**Debit:** Variable payment XXX<br>
+**Credit:** Vendor payable/lease payment XXX
 
 ## Deferred rent asset (liability)
-The account associated with the deferred rent asset or liability resulting from a deferred rent treatment lease. This account will be debited when an invoice is posted against a deferred rent treatment lease if the lease payment amount is greater than that period's straight-line rent expense. This account will be credited if the lease payment is less than that period's straight-line rent expense.
 
-**Example journal entries**: Lease payment (deferred rent treatment lease) <br>
-**Debit** Lease expense XXX <br>
-**Credit** Deferred rent liability XXX <br>
-**Credit** Vendor payable/lease payment XXX <br>
+The account is associated with the deferred rent asset or liability that is produced by a deferred rent treatment lease. This account is debited when an invoice is posted against a deferred rent treatment lease, if the lease payment amount is more than the period's straight-line rent expense. It's credited if the lease payment is less than the period's straight-line rent expense.
+
+**Example journal entries:** Lease payment (deferred rent treatment lease)<br>
+**Debit:** Lease expense XXX<br>
+**Credit:** Deferred rent liability XXX<br>
+**Credit:** Vendor payable/lease payment XXX
 
 ## Lease expense
-The account associated with the lease expense if the lease is classified as a deferred rent treatment lease. This account will be debited when an invoice is posted against a deferred rent treatment lease.
 
-**Example journal entries**: Lease payment (deferred rent treatment lease) <br>
-**Debit** Lease expense XXX <br>
-**Credit** Deferred rent liability XXX <br>
-**Credit** Vendor payable/lease payment XXX <br>
+The account is associated with the lease expense if the lease is classified as a deferred rent treatment lease. This account is debited when an invoice is posted against a deferred rent treatment lease.
+
+**Example journal entries:** Lease payment (deferred rent treatment lease)<br>
+**Debit:** Lease expense XXX<br>
+**Credit:** Deferred rent liability XXX<br>
+**Credit:** Vendor payable/lease payment XXX
 
 ## Impairment expense
-The account to be posted against when a lease is impaired. This account will be debited while the right-of-use asset account will be directly credited.
 
-**Example journal entries**: Lease payment <br>
-**Debit** Impairment expense XXX <br>
-**Credit** ROU asset XXX <br>
+The account is posted against when a lease is impaired. This account is debited, whereas the ROU asset account is directly credited.
+
+**Example journal entries:** Lease payment<br>
+**Debit:** Impairment expense XXX<br>
+**Credit:** ROU asset XXX
 
 ## Lease payment
-The account to be posted against if the 'Pay to Vendor' parameter is disabled. This account will be credited in place of the vendor payable if the parameter is disabled.
 
-**Example journal entries**: Lease payment <br>
-**Debit** Lease liability XXX <br>
-**Credit** Lease payment XXX <br>
+The account is posted against if the **Pay to Vendor** parameter is turned off. This account is credited instead of the vendor payable if the parameter is turned off.
+
+**Example journal entries:** Lease payment<br>
+**Debit:** Lease liability XXX<br>
+**Credit:** Lease payment XXX
 
 ## Expense type postings
-The account selected for each expense type will be debited when a payment for that selected expense type is generated. For example, the account specified for expense type "Insurance" will be debited whenever an invoice/payment journal entry is created from the executory costs schedule for insurance expense.
 
-**Example journal entries**: Insurance payment <br>
-**Debit** Insurance expense type account XXX <br>
-**Credit** Offset account* XXX <br>
+The account that is selected for each expense type is debited when a payment for that expense type is generated. For example, the account that is specified for the **Insurance** expense type is debited whenever an invoice or payment journal entry is created from the executory cost schedule for insurance expense.
 
-*The offset account is chosen on the lease level on the Executory Costs payment Schedule Lines. This can be directly to the vendor, to a bank account, or to a ledger account.
+**Example journal entries:** Insurance payment<br>
+**Debit:** Insurance expense type account XXX<br>
+**Credit:** Offset account XXX
+
+> [!NOTE]
+> The offset account is selected at the lease level on the lines for the executory cost payment schedule. This can be directly to the vendor, to a bank account, or to a ledger account.
