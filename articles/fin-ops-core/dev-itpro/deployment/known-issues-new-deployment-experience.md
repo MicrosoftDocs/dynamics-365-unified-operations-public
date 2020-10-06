@@ -58,19 +58,19 @@ The following feature is deprecated and will not be implemented in self-service 
 ### Features no longer supported
 The following feature is no longer supported with self-service deployment.
 
-#### CFTP
+#### FTP
 Customizations relying on FTP are not supported with self-service deployment and should consider the following actions.
 
-1. **Add retries.** This should be viewed as a short to medium term option. The current infrastructure design allows control and data calls to occasionally have matching IP. This design is subject to change. 
-2. **Disabling the FTP requirement for control and data being from the same IP.** Please evaluate the security implications for your situation in this case.
-3. **Remove the use of FTP.** For example, use Power Apps to pull the files in and make API calls into Finance and Operations apps to import the files using the Data Integration framework. For more information, see [Choose a data integration strategy](../data-entities/integration-overview.md).
-4. **Use SFTP.** Note that we have not guaranteed static outbound IP addresses for some years, as discussed [in Ali Adamu's blog post about IP addresses](https://community.dynamics.com/ax/b/axinthefield/posts/dynamics-365-for-finance-and-operations-static-ip-addresses).
+- **Add retries.** This should be viewed as a short to medium term option. The current infrastructure design allows control and data calls to occasionally have matching IP. This design is subject to change. 
+- **Disabling the FTP requirement for control and data being from the same IP.** Please evaluate the security implications for your situation in this case.
+- **Remove the use of FTP.** For example, use Power Apps to pull the files in and make API calls into Finance and Operations apps to import the files using the Data Integration framework. For more information, see [Choose a data integration strategy](../data-entities/integration-overview.md).
+- **Use SFTP.** Note that we have not guaranteed static outbound IP addresses for some years, as discussed [in Ali Adamu's blog post about IP addresses](https://community.dynamics.com/ax/b/axinthefield/posts/dynamics-365-for-finance-and-operations-static-ip-addresses).
 
-Our general recommendation is to follow item 3. Do not use a direct connection from Dynamics 365 to an SFTP. Instead, use a Logic App in between the two. With the Logic App you have two options:
+Our general recommendation is to remove the use of FTP. Do not use a direct connection from Dynamics 365 to an SFTP. Instead, use a Logic App in between the two. With the Logic App you have two options:
 
-A. Use the native SFTP connector [Connect to SFTP account (Deprecated) - Azure Logic Apps | Microsoft Docs ](https://docs.microsoft.com/en-us/azure/connectors/connectors-  create-api-sftp) which still require some port opening on the firewall to call the on prem service. Consider that for Logic Apps the list of IPs is much shorter than the entire  [region whitelisting](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config#outbound) and [Power Automate limits and Config](    https://docs.microsoft.com/en-us/power-automate/limits-and-config#logic-apps).
+- Use the native SFTP connector [Monitor, create, and manage SFTP files in Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-create-api-sftp) which still require some port opening on the firewall to call the on prem service. Consider that for Logic Apps the list of IPs is much shorter than the entire  [region whitelisting](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config#outbound) and [Power Automate limits and Config](    https://docs.microsoft.com/en-us/power-automate/limits-and-config#logic-apps).
 
-B. Use the “Local Filesystem” connector [Connect to file systems on premises - Azure Logic Apps | Microsoft Docs](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-  limits-and-config#outbound) in combination with the on-premises data gateway. [Install on-premises data gateway - Azure Logic Apps | Microsoft Docs] (https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-install). This solution also completely removes the need for the IP whitelisting which is deprecated in Sef Service while keeping very high level  of security.
+- Use the “Local Filesystem” connector [Outbound IP addresses](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound) in combination with the on-premises data gateway. [Install on-premises data gateway - Azure Logic Apps | Microsoft Docs] (https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-install). This solution also completely removes the need for the IP whitelisting which is deprecated in Sef Service while keeping very high level  of security.
 
 
 > [!NOTE]
