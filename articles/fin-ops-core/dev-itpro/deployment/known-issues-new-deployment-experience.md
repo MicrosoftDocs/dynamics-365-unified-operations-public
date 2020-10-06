@@ -51,7 +51,7 @@ Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks 
 > Dynamics 365 Commerce is implemented in the modern deployment experience with the 10.0.10 release. For more information, see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md).
 
 ### Features not intended to be implemented
-The following feature is not supported and will not be implemented in self-service deployment.
+The following feature will not be implemented in self-service deployment.
 
 - **Custom fonts:** Custom fonts are not supported. For more information, see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md).
 
