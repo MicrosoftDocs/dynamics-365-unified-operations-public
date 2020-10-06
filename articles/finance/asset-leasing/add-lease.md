@@ -66,7 +66,7 @@ After you've finished entering information for the lease, follow these steps to 
     >
     > To calculate the lease term in months, the system finds the difference between the start date and the end date for a specific payment schedule line. It then moves to the next payment schedule line and finds the difference again. Finally, the system sums all the amounts to determine the lease term in months.
 
-5. To view the calculated period interest expenses, open the **Liability amortization schedule** page. To view calculated straight line depreciation, open the **Asset depreciation schedule** page.
+5. To view the calculated period interest expenses, open the **Liability amortization schedule** page. To view calculated straight-line depreciation, open the **Asset depreciation schedule** page.
 6. After you've finished reviewing the calculated amount, you can create the initial recognition journal entry on the **Initial recognition** page. You receive a message that states that the journal has been created.
 
     > [!NOTE]
