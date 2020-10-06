@@ -83,6 +83,7 @@ MSDyn365Commerce_CHANNELID=68719478279
 MSDyn365Commerce_CATALOGID=0
 MSDyn365Commerce_OUN=128
 …
+```
 
 **Note**: if you have multiple e-Commerce sites configured for a single domain name, do not include the site name in the **MSDyn365_HOST** name provided in the .env file.  Instead use it when navigating in the local browser in the development environment.  For example if you have two sites, "www.fabrikam.com/site1" and "www.fabrikam.com/site2", configure the .env file as shown above, and navigate to "https://localhost:4000/site1" or "https://localhost:4000/site2" respectively.
 
