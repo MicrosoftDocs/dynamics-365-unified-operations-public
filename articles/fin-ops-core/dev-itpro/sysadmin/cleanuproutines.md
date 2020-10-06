@@ -1,20 +1,35 @@
 ---
 # required metadata
 
-title: Cleanup routines in Dynamics 365 for Finance and Operations
-description: The topic provides an overview of cleanup routines in Dynamics 365 for Finance and Operations
-author: dvliegen
-manager: timogoss
-ms.date: 06/10/2020
+title: Cleanup routines in Dynamics 365 Finance and Supply Chain Management
+description: The topic provides an overview of cleanup routines in Dynamics 365 Finance and Supply Chain Management
+author: Davy Vliegen
+manager:
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: dvliegen
+ms.search.validFrom: 2020-10-06
+ms.dyn365.ops.version: October 2020 update
 ---
 
-# Cleanup routines in Dynamics 365 for Finance and Operations
+# Cleanup routines in Dynamics 365 Finance and Supply Chain Management
 
-In Dynamics 365 for Finance and Operations cleanup routines are available across various modules within the product.
+In Dynamics 365 Finance and Supply Chain Management cleanup routines are available across various modules within the product.
 It is important to note that these cleanup routines should be only executed after detailed analysis and confirmation from the business this data is no longer needed.
 Also always test each routine first in test environment prior executing it in production. This article provides an overview on what is available today.
 
@@ -59,7 +74,7 @@ Also always test each routine first in test environment prior executing it in pr
 | Inventory management | Periodic tasks > Clean up > Dimension inconsistency cleanup | This is used to resolve dimension inconsistencies on inventory transactions that have been financially updated and closed. Inconsistencies might be introduced when the multisite functionality was activated during or before the upgrade process. <br> Use this batch job only to clean up the transactions that were closed before the multisite functionality was activated. **Do not use this batch job periodically.** |
 | Inventory management | Periodic tasks > Clean up > On-hand entries cleanup | This is used to delete closed and unused entries for on-hand inventory that is assigned to one or more tracking dimensions. Closed transactions contain the value of zero for all quantities and cost values, and are marked as closed. Deleting these transactions can improve the performance of queries for on-hand inventory. Transactions will not be deleted for on-hand inventory that is not assigned to tracking dimensions. |
 | Inventory management | Periodic tasks > Clean up > Warehouse management on-hand entries cleanup | Deletes records in the InventSum and WHSInventReserve tables. These tables are used to store on-hand information for items enabled for warehouse management processing (WHS items). Cleaning up these records can lead to significant improvements of the on-hand calculations. |
-| Inventory management | Periodic tasks > Clean up > On-hand entries aggregation by financial dimensions | Tool to aggregate InventSum rows with zero quantities. This is basically extending the previously mentioned cleanup tool by also cleaning up records which have field Closed set to True! <br> The reason why this is needed is basically because in certain scenarios, you might have no more quantities in InventSum for a certain combination of inventory dimensions, but there is still a value. In some cases, these values will disappear, but current design does allow values to remain from time to time. <br> If you for example use Batch numbers, each batch number (and the combined site, warehouse, etc.) creates a new record in InventSum. When the batch number is sold, you will see quantity fields are set to 0. In most cases, the Financial/Physical value field is also set to 0, but in Standard cost revaluation or other scenarios, the value field may show some amount still. This is valid, and is the way Dynamics 365 for Finance and Operations handles the costs on Financial inventory level, e.g. site level. <br> Inventory value is determined in Dynamics 365 for Finance and Operations by records in InventSum, and in some cases Inventory transactions (InventTrans) when reporting inventory values in the past. In the above scenario, this means that when you run inventory value reports, Dynamics 365 for Finance and Operations looks (initially) at InventSum and aggregates all records to Site level, and reports the value for the item per site. <br> The data from the individual records on Batch number level are never used. The tool therefore goes through all InventSum records, finds the ones where there is no more quantity (No open quantities field is True). There is no reason to keep these records, so Dynamics 365 for Finance and Operations finds the record in InventSum for the same item which has the same Site, copies the values from the Batch number level to the Site level, and deletes the record. When you now run inventory value reports, Dynamics 365 for Finance and Operations still finds the same correct values. This reduced number of InventSum records significantly in some cases, and can have a positive impact on performance of any function which queries this table. |
+| Inventory management | Periodic tasks > Clean up > On-hand entries aggregation by financial dimensions | Tool to aggregate InventSum rows with zero quantities. This is basically extending the previously mentioned cleanup tool by also cleaning up records which have field Closed set to True! <br> The reason why this is needed is basically because in certain scenarios, you might have no more quantities in InventSum for a certain combination of inventory dimensions, but there is still a value. In some cases, these values will disappear, but current design does allow values to remain from time to time. <br> If you for example use Batch numbers, each batch number (and the combined site, warehouse, etc.) creates a new record in InventSum. When the batch number is sold, you will see quantity fields are set to 0. In most cases, the Financial/Physical value field is also set to 0, but in Standard cost revaluation or other scenarios, the value field may show some amount still. This is valid, and is the way Dynamics 365 Finance and Supply Chain Management handles the costs on Financial inventory level, e.g. site level. <br> Inventory value is determined in Dynamics 365 Finance and Supply Chain Managements by records in InventSum, and in some cases Inventory transactions (InventTrans) when reporting inventory values in the past. In the above scenario, this means that when you run inventory value reports, Dynamics 365 Finance and Supply Chain Management looks (initially) at InventSum and aggregates all records to Site level, and reports the value for the item per site. <br> The data from the individual records on Batch number level are never used. The tool therefore goes through all InventSum records, finds the ones where there is no more quantity (No open quantities field is True). There is no reason to keep these records, so Dynamics 365 Finance and Supply Chain Management finds the record in InventSum for the same item which has the same Site, copies the values from the Batch number level to the Site level, and deletes the record. When you now run inventory value reports, Dynamics 365 Finance and Supply Chain Management still finds the same correct values. This reduced number of InventSum records significantly in some cases, and can have a positive impact on performance of any function which queries this table. |
 | Inventory management | Periodic tasks > Clean up > Cost calculation details | Used to clean up cost calculation details. |
 
 
