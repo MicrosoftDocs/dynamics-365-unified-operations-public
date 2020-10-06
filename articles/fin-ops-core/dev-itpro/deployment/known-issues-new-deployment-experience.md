@@ -5,7 +5,7 @@ title: Known issues with self-service deployment
 description: This topic lists known issues that you might experience when using self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 10/05/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,7 +51,7 @@ Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks 
 > Dynamics 365 Commerce is implemented in the modern deployment experience with the 10.0.10 release. For more information, see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md).
 
 ### Features not intended to be implemented
-The following feature is deprecated and will not be implemented in self-service deployment.
+The following feature is not supported and will not be implemented in self-service deployment.
 
 - **Custom fonts:** Custom fonts are not supported. For more information, see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md).
 
@@ -64,13 +64,13 @@ Customizations relying on FTP are not supported with self-service deployment and
 - **Add retries.** This should be viewed as a short to medium term option. The current infrastructure design allows control and data calls to occasionally have matching IP. This design is subject to change. 
 - **Disabling the FTP requirement for control and data being from the same IP.** Please evaluate the security implications for your situation in this case.
 - **Remove the use of FTP.** For example, use Power Apps to pull the files in and make API calls into Finance and Operations apps to import the files using the Data Integration framework. For more information, see [Choose a data integration strategy](../data-entities/integration-overview.md).
-- **Use SFTP.** Note that we have not guaranteed static outbound IP addresses for some years, as discussed [in Ali Adamu's blog post about IP addresses](https://community.dynamics.com/ax/b/axinthefield/posts/dynamics-365-for-finance-and-operations-static-ip-addresses).
+- **Use SFTP.** Note that we have not guaranteed static outbound IP addresses for some years, as discussed in [Ali Adamu's blog post about IP addresses](https://community.dynamics.com/ax/b/axinthefield/posts/dynamics-365-for-finance-and-operations-static-ip-addresses).
 
 Our general recommendation is to remove the use of FTP. Do not use a direct connection from Dynamics 365 to an SFTP. Instead, use a Logic App in between the two. With the Logic App you have two options:
 
-- Use the native SFTP connector [Monitor, create, and manage SFTP files in Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-create-api-sftp) which still require some port opening on the firewall to call the on prem service. Consider that for Logic Apps the list of IPs is much shorter than the entire  [region whitelisting](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config#outbound) and [Power Automate limits and Config](    https://docs.microsoft.com/en-us/power-automate/limits-and-config#logic-apps).
+- Use the native SFTP connector, as described in [Monitor, create, and manage SFTP files in Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-create-api-sftp), which still requires some port opening on the firewall to call the on-premises service. Consider that for Logic Apps the list of IPs is much shorter than the entire [region whitelisting](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config#outbound) and [Power Automate limits and Config](https://docs.microsoft.com/power-automate/limits-and-config#logic-apps).
 
-- Use the “Local Filesystem” connector [Outbound IP addresses](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound) in combination with the on-premises data gateway. [Install on-premises data gateway - Azure Logic Apps | Microsoft Docs] (https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-install). This solution also completely removes the need for the IP whitelisting which is deprecated in Sef Service while keeping very high level  of security.
+- Use the “Local Filesystem” connector, as described in [Outbound IP addresses](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound), in combination with the on-premises data gateway. For more information, see [Install on-premises data gateway](https://docs.microsoft.com/azure/logic-apps/logic-apps-gateway-install). This solution completely removes the need for the IP whitelisting which is deprecated in self-service while keeping very high level of security.
 
 
 > [!NOTE]
