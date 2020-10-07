@@ -118,6 +118,10 @@ Checklist entities for Onboarding, Offboarding, Transfers, and Business processe
 
 Benefits management reason codes will soon be combined with existing reason codes in Human Resources. If you created reason codes in Benefits management that are over 15 characters, you must change the name of the reason code in the Benefits management **Reason codes** form to be 15 characters or less. After you update the name, the reason code will appear under the existing reason code form in Personnel management. This change will be available in the future and won't affect existing functionality.
 
+### Custom links in Manager self service
+
+To support managers, we're expanding capabilities in manager self-service. We're adding the capability to add custom links on the My team tab. This feature is similar to the custom links feature we provide in the My information tab in employee self-service.
+
 ## Known issues
 
 ## See also
