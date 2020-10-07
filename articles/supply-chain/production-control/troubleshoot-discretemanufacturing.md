@@ -69,7 +69,10 @@ The user is not prompted for inserting BOM and route when selecting a product th
 Unable to see certain production orders in the *Marking* form.
 
 ### Possible cause
-Standard cost items, WMS and CW items cannot be handled with marking. Verify if the items on the production orders that are not visible are of these types.
+Products with the following configuration are not available for marking and will therefore not be visible in the marking form 
+1. Product defined as type **Catch weight**
+2. Products enabled for the advanced warehouse processes
+3. Products configured to be controlled by the **Standard cost** principle
 
 ## Unable to end the production order, the following error occurs 'Calculating BOM consumptionCost value must be negative upon issue from inventory'
 This issue has been fixed in 10.0.15.
@@ -82,7 +85,7 @@ If the batch job consistently fails on resuming, then:
 Check that the Rounding precision for Ledger's default currency has not changed to a value that is not compliant with the rounding applied to values in InventSum. If it has changed, we probably need to change it back. Look for ModifiedDateTime would typically in this case show that it was recently changed.
 
 ## Release to warehouse fails with error "Item RM could not be fully reserved. Ensure that the full quantity is available, or reserve the items manually if the Reservation field on the BOM line is set to Manual or Started. Could not release the order to warehouse because some materials could not be reserved". However, the status is updated to Released.
-A production order that is set to Require full reservation, but all items are not available, when released throws the above error. But, the status is updated to Released though nothing has been released to the warehouse. 
+If not all BOM line items are physical available when a production order is released and the policy **Release to warehouse** = **Require full reservation** is set on the production order, then the above error will be thrown. 
 
 ### Resolution
 This behavior is by design and is working as expected.
@@ -91,7 +94,7 @@ This behavior is by design and is working as expected.
 The Production Control -> Start Default parameters are not used by the hand held flow for starting a production or batch order. Automatic BOM consumption on the hand held device is fixed to Flushing principle. That means that only formula or BOM lines with flushing principle Start will be flushed when using the hand held device for starting.
 
 ### Resolution
-Ensure to set the flushing principle on the formula lines.
+The hand-held flow for **Start** is fixed to only flush BOM or formula lines with flushing principle **Start**
 
 ## Unable to end production orders after completion. Getting the error for 'Report as Finished' 'Total good quantity reported as finished for the production will be X. Feedback for the last operation is 0.00 in total', for production order end 'Negative cost amount for receipts is not allowed'.
 When you try to post a report as finished journal on a production order and you get the message “Total good quantity reported as finished for the production will be X. Feedback for the last operation is 0.00 in total”. 
@@ -110,7 +113,7 @@ After this, you can see the route card should show the quantities posted. It sho
 It is not possible to only report error quantity on the production order, without goods quantity. This is **not** a supported scenario. The report as finished update will eventually fail when trying to End the production order with the error message: "Missing report as finished quantity" 
 
 ## Is it possible to trace finished goods serial numbers against the consumed goods serial numbers?
-Tracing of finished goods serials against consumed serials for material consumed by the production order for making the finished goods is currently not supported.
+Tracing of finished goods serials against consumed serials for material consumed by the production order for making the finished goods is currently not supported. The workaround will be to create production orders for quantity = 1.
 
 ## Is it possible to Report as Finished for error quantity only with no time or material reported.  
 If you ONLY would like to report error quantity on the production order without a good quantity, that is not a supported scenario. The update will eventually fail when trying to *End* the production order. 
