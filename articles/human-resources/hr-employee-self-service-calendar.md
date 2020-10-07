@@ -5,7 +5,7 @@ title: Create a team calendar
 description: View and create team calendars in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 10/7/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -55,8 +55,6 @@ People who are in human resources roles can view company calendars. Company cale
 2. Select **Leave and absence calendar**.
 
 Human resources roles can also access the company calendar from **Leave and absence requests**, **Approved time off**, and **Time off requests**. 
-
-[!include [banner](includes/preview-feature.md)]
 
 Calendars now contain additional filters and options. All calendars include view options for:
 
