@@ -39,6 +39,8 @@ If your issue is not listed below, please add a comment explaining the issue in 
 
 ## Trust anchor for certification path not found
 
+![Error on mobile device](media/WMA_TrustAnchor_Error.png "Error on mobile device")
+
 **Scope**
 
 - OS version: Android 4.4.x devices (e.g., Zebra TC55). Not an issue on recent Android versions.
@@ -61,15 +63,6 @@ As a result, this certificate is not in the lst of trusted system certificates o
 
 ![Download new root certificate](media/WMA_TrustAnchor_DownloadRootCert.png "Download new root certificate")
 
-2. Install the downloaded certificate onto the impacted devices. 
+2. Install the downloaded certificate onto the impacted devices. The certificate should then show up under USER trusted certificates on the device, at which point you should be able to connect to Dynamics as before.
 
-3. The certificate should show up under USER trusted certificates on the device, at which point you should be able to connect to Dynamics as before.
-
-## TO BE DONE
-The line numbers for imported purchase order lines through data entity "Purchase order lines V2" are not defaulting to system line number increment specified in system parameters when adding auto-generated line numbers in DMF. When you create a PO and add lines manually through UI, it is correctly incrementing. However, when using DMF it is not.
-
-**Resolution**
-When importing the lines via the Data Management framework it will use the data management frameworks methods of assigning line numbers, when the line number is not already assigned in the imported entity. And that method is increments of 1.
-
-**Workaround**
-A way to do this could be to make sure that the desired line numbers are already given in the entity data when importing the purchase order line, then they will not be overwritten by the data management framework.
+![Install certificate on mobile device](media/WMA_TrustAnchor_InstallCertOnDevice.png "Install certificate on mobile device")
