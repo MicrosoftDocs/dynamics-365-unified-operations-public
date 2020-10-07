@@ -34,24 +34,29 @@ ms.dyn365.ops.version: AX 10.0.14
 This topic describes how to fix common issues that you might encounter while connecting the Warehouse mobile application with Dynamics 365 SCM application.
 
 **Important**
+
 If your issue is not listed below, please add a comment explaining the issue in detail here in this topic, or send a mail with this information to *dscmwarehousingand@microsoft.com*, so we can help you troubleshoot it, and append the below list
 
 ## Trust anchor for certification path not found
 
 **Scope**
+
 - OS version: Android 4.4.x devices (e.g., Zebra TC55). Not an issue on recent Android versions.
 - Dynamics 365 location: Cloud / On Prem
 - Connection mode: Client secret / Certificate
 
 **Possible root cause**
+
 Server SSL certificates updated by Microsoft so that one of the Intermediate certificates or Root certificate changes.
 As a result, this certificate is not in the lst of trusted system certificates on the mobile device.
 
 **Resolution**
+
 - Contact Zebra / Google for an update of the system trusted CA certificates.
 - Replace the device(s) with ones that are running a more recent version of Andriod (they get the trusted CAs updated automatically)
 
 **Workaround**
+
 Manually download the new root certificate as described below and install it onto the impacted devices. This certificate will show up under USER trusted certificates on the device.
 
 TBD
