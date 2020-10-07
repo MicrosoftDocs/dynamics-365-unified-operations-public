@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cleanup routines in Dynamics 365 Finance and Supply Chain Management
-description: The topic provides an overview of cleanup routines in Dynamics 365 Finance and Supply Chain Management
+title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+description: The topic provides an overview of cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dvliegen
-manager:
-ms.date: 10/06/2020
+manager: AnnBe
+ms.date: 10/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,46 +16,50 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dvliegen
-ms.search.validFrom: 2020-10-06
-ms.dyn365.ops.version: October 2020 update
+ms.search.validFrom: 2020-10-31
+ms.dyn365.ops.version: 10.0.13
+
 ---
 
-# Cleanup routines in Dynamics 365 Finance and Supply Chain Management
+# Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
-In Dynamics 365 Finance and Supply Chain Management cleanup routines are available across various modules within the product.
-It is important to note that these cleanup routines should be only executed after detailed analysis and confirmation from the business this data is no longer needed.
-Also always test each routine first in test environment prior executing it in production. This article provides an overview on what is available today.
+In Dynamics 365 Finance and Dynamics 365 Supply Chain Management, cleanup routines are available across various modules within the product.
+
+It is important to note that these cleanup routines should be only executed after detailed analysis and confirmation from the business that this data is no longer needed. This article provides an overview of what is available today.
+
+> [!Note]
+> Always test each routine first in a test environment prior to executing it in production. 
 
 ## System administration
 
 | **Module**             | **Path**                | **Description** |
 |---------------------|-----------------------------|-------------------------------|
-| System administration        |   Periodic tasks > Notification clean up               | This is used to periodically delete records from tables EventInbox and EventInboxData. **Recommendation: If you don’t use Alert functionality, disable Alert from Batch job.**
-| System administration        |   Periodic tasks > Batch job history clean-up          | The regular version of batch job history clean-up allows you to quickly clean all history entries older than a specified timeframe (in days). Any entry that was created prior to – will be deleted from the BatchJobHistory table, as well as from linked tables with related records (BatchHistory and BatchConstraintsHistory). This form has improved performance optimization because it doesn’t have to execute any filtering. |
-| System administration        |   Periodic tasks > Batch job history clean-up (custom) | The custom batch job clean-up form should be used only when specific entries need to be deleted. This form allows you to clean up selected types of batch job history records, based on criteria such as status, job description, company, or user. Other criteria can be added using the Filter button. |
-| System administration        |   Inquiries > Database > Database Log > Clean up log   | You can delete database logs as required. You can delete logs for specific tables, delete specific types of database logs, or delete logs based on the date and time when they were created. **Note: Records that have been electronically signed can't be deleted from logs.** |
+| System administration        |   Periodic tasks > Notification clean up               | This is used to periodically delete records from tables EventInbox and EventInboxData.<br><br>**Recommendation: If you don’t use alert functionality, disable the alert from the batch job.**
+| System administration        |   Periodic tasks > Batch job history clean-up          | The regular version of batch job history clean-up allows you to quickly clean all history entries older than a specified timeframe (in days). Any entry that was created prior to will be deleted from the BatchJobHistory table, as well as from linked tables with related records (BatchHistory and BatchConstraintsHistory). This form has improved performance optimization because it doesn’t have to execute any filtering. |
+| System administration        |   Periodic tasks > Batch job history clean-up (custom) | The custom batch job clean-up form should be used only when specific entries need to be deleted. This form allows you to clean up selected types of batch job history records, based on criteria such as status, job description, company, or user. Other criteria can be added using the **Filter** button. |
+| System administration        |   Inquiries > Database > Database Log > Clean up log   | You can delete database logs as required. You can delete logs for specific tables, delete specific types of database logs, or delete logs based on the date and time when they were created.<br><br>**Note: Records that have been electronically signed can't be deleted from logs.** |
 
  
 ## Data management
 
 | **Module**             | **Path**                | **Description** |
 |---------------------|-----------------------------|-------------------------------|
-| Data management | Data management workspace > Job history cleanup | Available in Platform update 29 and later, functionality must be enabled in Feature management and Feature name is “Execution history cleanup”. The job history clean-up functionality in data management must be used to schedule a periodic cleanup of the execution history. <br> This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process: <br> - All staging tables <br> - DMFSTAGINGVALIDATIONLOG <br> - DMFSTAGINGEXECUTIONERRORS <br> - DMFSTAGINGLOGDETAIL <br> - DMFSTAGINGLOG <br> - DMFDEFINITIONGROUPEXECUTIONHISTORY <br> - DMFEXECUTION <br> - DMFDEFINITIONGROUPEXECUTION |
-| Data management | Data management workspace > “Staging cleanup” tile | **The Staging cleanup functionality should no longer be used, it is depreciated. Instead use Job history cleanup** |
+| Data management | Data management workspace > Job history cleanup | Available in Platform update 29 and later, functionality must be enabled in Feature management and the feature name is “Execution history cleanup”. The job history clean-up functionality in Data management must be used to schedule a periodic cleanup of the execution history.<br><br>This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process:<br><br>- All staging tables<br>- DMFSTAGINGVALIDATIONLOG<br>- DMFSTAGINGEXECUTIONERRORS<br>- DMFSTAGINGLOGDETAIL<br>- DMFSTAGINGLOG<br>- DMFDEFINITIONGROUPEXECUTIONHISTORY<br>- DMFEXECUTION<br>- DMFDEFINITIONGROUPEXECUTION |
+| Data management | Data management workspace > Staging cleanup tile | **The Staging cleanup functionality should no longer be used, it is depreciated. Instead use Job history cleanup.** |
 
 
  ## General ledger
 
 | **Module**             | **Path**                | **Description** |
 |---------------------|-----------------------------|-------------------------------|
-| General ledger | Periodic tasks > Clean up ledger journals | It deletes general ledger, accounts receivable, and accounts payable journals that have been posted. When you delete a posted ledger journal, all information that’s related to the original transaction is removed. **You should delete this information only if you’re sure that you won’t have to reverse the ledger journal transactions.** |
+| General ledger | Periodic tasks > Clean up ledger journals | It deletes General ledger, Accounts receivable, and Accounts payable journals that have been posted. When you delete a posted ledger journal, all information that’s related to the original transaction is removed. **You should delete this information only if you’re sure that you won’t have to reverse the ledger journal transactions.** |
 
 
 ## Sales and marketing
@@ -65,8 +69,8 @@ Also always test each routine first in test environment prior executing it in pr
 | Sales and marketing | Periodic tasks > Clean up > Delete sales orders | It deletes selected sales orders. |
 | Sales and marketing | Periodic tasks > Clean up > Delete quotations | It deletes selected quotations. |
 | Sales and marketing | Periodic tasks > Clean up > Delete return orders | It deletes selected return orders. |
-| Sales and marketing | Periodic tasks > Clean up > Sales update history cleanup | It deletes old update history transactions. All updates of confirmations, picking lists, packing slips, and invoices generate update history transactions. These transactions ca be viewed in the History on update form. |
-| Sales and marketing | Periodic tasks > Clean up > Order events cleanup | Cleanup job for order events. Next step is to remove the not needed order events check-boxes from Order event setup form. |
+| Sales and marketing | Periodic tasks > Clean up > Sales update history cleanup | It deletes old update history transactions. All updates of confirmations, picking lists, packing slips, and invoices generate update history transactions. These transactions ca be viewed in the **History on update** form. |
+| Sales and marketing | Periodic tasks > Clean up > Order events cleanup | Cleanup job for order events. Next step is to remove the not needed order events check-boxes from **Order event setup** form. |
 
  
 ## Procurement and sourcing
