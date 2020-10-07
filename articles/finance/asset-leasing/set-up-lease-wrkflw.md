@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up a lease workflow
-description: The topic describes the process for setting up an approval workflow that will run when a new lease is created.
+title: Set up lease approval workflows
+description: The topic explains how to set up an approval workflow that will run when a new lease is created.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/17/2020
@@ -30,26 +30,32 @@ ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Set up a lease workflow
+# Set up lease approval workflows
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The topic describes the process for setting up an approval workflow that will run when a new lease is created. For information about how to use the workflow, see [Use the lease approval workflow](use-create-lease-wrkflw.md). 
+The topic explains how to set up an approval workflow that will run when a new lease is created. For information about how to use the workflow, see [Use lease approval workflows](use-create-lease-wrkflw.md). 
 
-1. Open the **Lease workflow** page (**Asset leasing > Setup > Lease workflow**).
-2. Click **New**.
-3. From the popup, click the **Lease workflow** link under the **Workflow type**. Opening this link will start the application. Once the application runs, sign into **Active Directory** to be redirected to the workflow application.
+1. Go to **Asset leasing \> Setup \> Lease workflow**.
+2. On the **Lease workflow** page, select **New**.
+3. In the dialog box that appears, under **Workflow type**, select the **Lease workflow** link.
+
+    The application is opened. After it runs, sign in to Active Directory to be redirected to the workflow application.
+
 4. Drag the **Lease workflow approval** element onto the workflow.
-5. Connect one node from the **Start** to the **Lease workflow approval**. Then connect the **Lease workflow approval** to the end. The result should appear like the following.
-6. Double-click the **Lease workflow approval**.
-7. Select **Properties** and name the workflow under **Basic settings**.
-   You can also set more parameters on this page for the workflow. If you've enabled **Automatic actions**, the system will automatically take a specific action. Notifications can be sent if specified in the **Notifications** tab. In the **Advanced settings** tab, you can specify a final approver, set a time limit, and designate specific actions to be completed.
-8. When you've finished setting workflow parameters, click **Close**.
-9. Select **Step 1**, and then click **Properties**.
-10. In the **Basic Settings** field, name the step, create a subject line for the approval, and designate instructions for the approval. An example is shown below.
-11. Open the **Assignment** page and select the **Assignment type**. You can assign a specific to the approval by selecting **User**.
-12. If you selected **User** (**Assignment > User**), select the users who approve leases, then, click **Close**.
-13. Click **Save** and close to create the workflow. Then, click **OK** when prompted. Click **Close** from the **Create workflow** page.
-14. Select the new workflow and click **Versions**. Then ensure it is made active by clicking **Make active** button.
-15. Click **Close**, and the new **Active version** will appear.
+5. Connect one node from **Start** to **Lease workflow approval**. Then connect **Lease workflow approval** to **End**.
+6. Double-click **Lease workflow approval**.
+7. Select **Properties**, and then, under **Basic settings**, enter a name for the workflow.
+
+    On this page, you can also set more parameters for the workflow. If you've turned on **Automatic actions**, the system will automatically take a specific action. Notifications can be sent if they are specified on the **Notifications** tab. On the **Advanced settings** tab, you can specify a final approver, set a time limit, and designate specific actions that must be completed.
+
+8. When you've finished setting the workflow parameters, select **Close**.
+9. Select **Step 1**, and then select **Properties**.
+10. Under **Basic settings**, enter a name for the step, create a subject line for the approval, and specify instructions for the approval.
+11. On the **Assignment** page, select the assignment type.
+12. To assign specific users to the approval, select **User**, select the users who approve leases, and then select **Close**.
+13. Select **Save and close** to create the workflow. Then, when you're prompted, select **OK**.
+14. On the **Create workflow** page, select **Close**.
+14. Select the new workflow, and then select **Versions**. Then select **Make active** to ensure that the workflow is active.
+15. Select **Close**. The new active version appears.
