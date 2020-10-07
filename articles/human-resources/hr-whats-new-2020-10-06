@@ -39,22 +39,27 @@ This article describes features that are either new or changed in Dynamics 365 H
 
 ## Invalid cert thumbprint causing LCS SysTaskRecorder to not work - (492923)
 ## Leave request raised for future terminated worker causing issue if they used to apply for days off after termination date - (509731)
+
 ## Benefits self service should only show benefit plans valid from today to end of the benefit period - (511348)
-Expired benefit plans were being displayed to employees in the benefits enrollment page.  This fix removes these plans.
-## Fixed compensation is still not expired correctly in change position - (429950)
-## Worker action transfer, Current Compensation End Date requires New Compensation set - (512701)
-## Worker action transfer, Current Compensation End Date is entirely ignored - (511698)
+Benefits Self-Service update- Expired benefit plans were being displayed to employees in the benefits enrollment page.  This fix removes these plans.
+
+## Fixed compensation is not expired correctly in change position - (429950)
+Transfer Worker Form and related action form - When changing the position of a worker, the end compensation date was being set one day before the end of the position.  This has been updated so that the compensation end date is the same as the position end date.
+
 ## Default Identification Type exported as RecID in HCM Parameters - (448806)
 Change to Human Resources Parameters entity – Added an additional column that displays the Default Identification Type.
+
 ## PositionActionDetail Default Dimension bug - (506949)## Set BenefitPlanEmployeeEnitity EnrollmentConfirmed, EnrollmentConfirmedBy, and EnrollmentConfirmedDateTime fields to readonly - (512706)
 Update to Position Action Detail form – The add and remove buttons for dimension details were incorrectly enabled after the action had been completed. Changed to make the fields un-editable once the action has been completed.
  
 ## CDS bridge is throwing a null ref exception on AOS startup - (507333)
+
 ## Salaried Analytics Shows only if pay rate conversion name is set to Annual - (467214)
-Salaried pay rates that had a name other than 'Annual' were not showing within Compensation Analytics.  Anayltics have been updated to use all pay reate conversions.  When slicing the reports by Hourly or Salary, any pay rate conversion that uses a period other than hourly will be included in the Salary filter.  Only pay rates with a period of hourly will be included in the hourly filter.
+Update to Compensation Analytics - Salaried pay rates that had a name other than 'Annual' were not showing within Compensation Analytics.  Anayltics have been updated to use all pay reate conversions.  When slicing the reports by Hourly or Salary, any pay rate conversion that uses a period other than hourly will be included in the Salary filter.  Only pay rates with a period of hourly will be included in the hourly filter.
  
 ## Compensation Analytics includes both male and female employees for "male average hourly pay" - (510716)
-Within the Compensation analytics, the Male Average Hourly pay on the Compensation Demographic Analysis tab was inlcuding femaly average pay.  This has been fixed to only include males.
+Update to Compensation Analytics - Within the Compensation analytics, the Male Average Hourly pay on the Compensation Demographic Analysis tab was inlcuding femaly average pay.  This has been fixed to only include males.
+
 ## System does not generate leave accruals when Tier basis is selected as Adjusted start date in the leave enrolment record - (483184)
 ## Details view does not change to grid view after filter is applied - (482464)
 
