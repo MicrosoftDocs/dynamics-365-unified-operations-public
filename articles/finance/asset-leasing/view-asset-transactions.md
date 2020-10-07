@@ -2,7 +2,7 @@
 # required metadata
 
 title: View liability, asset, and expense transactions
-description: This topic lists the steps for viewing transactions for a leased asset, including lease liability, and executory expenses that have been posted. 
+description: This topic explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that have been posted.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/06/2020
@@ -35,17 +35,22 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists the steps for viewing transactions for a leased asset, including lease liability, and executory expenses that have been posted. The carrying values of the liability and right-of-use asset are used on a number of reports. The carrying values are also used to calculate adjustment values.
+This topic explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that have been posted. The carrying values of the liability and right-of-use (ROU) asset are used on several reports. They are also used to calculate adjustment values.
 
 ## Liability transactions
-To view the lease liability transactions, select a lease from the **Lease summary** page and click **Books** to open the books for that lease. Click **Liability transactions** after an initial recognition, an invoice, or an interest journal has been posted.
 
-The **Liability transactions** page displays the transactions that either increase or decrease the lease liability. Negative amounts on this page represent credit transaction in the standard application. Any interest accruals will show as negative and increase the total lease liability. Any lease adjustment will show as positive or negative depending on the nature and impact of the lease book. The current net total balance of the lease liability for the selected lease is shown at the bottom left of the dialog.
+To view the lease liability transactions, select a lease on the **Lease summary** page, and then select **Books** to open the books that are attached to the lease record. After an initial recognition, an invoice, or an interest journal has been posted, select **Liability transactions**.
+
+The **Liability transactions** page shows the transactions that either increase or decrease the lease liability. Negative amounts on this page represent credit transactions in the standard application. Any interest accruals are shown as negative values and increase the total lease liability. Any lease adjustments are shown as positive or negative values, depending on the nature and impact of the lease book. The current net total balance of the lease liability for the selected lease is shown at the bottom left of the page.
 
 ## Asset transactions
-To view the lease asset transactions, select a lease from the **Lease Summary** page and click **Books** to open the lease books that are attached to the lease record. Then click **Asset transactions**.
 
-The **Asset transaction** page displays the transactions that either increase or decrease the lease asset and accumulated depreciation accounts. Debits will display as positive values and credits shown as negative values, which are similar to the **Liability transactions** dialog. The carrying balance of the right-of-use asset, net of accumulated depreciation, is shown at the bottom-left area of the page.
+To view the lease asset transactions, select a lease on the **Lease summary** page, and then select **Books** to open the lease books that are attached to the lease record. Then select **Asset transactions**.
+
+The **Asset transaction** page shows the transactions that either increase or decrease the lease asset and accumulated depreciation accounts. Debits are shown as positive values, and credits are shown as negative values, as on the **Liability transactions** page. The carrying balance of the ROU asset, the net of accumulated depreciation, is shown at the bottom left of the page.
 
 ## Expenses transactions
-To view the lease expense transactions, select a lease from the **Lease Summary** page and click **Books** to open the attached lease books on the lease record. Then click **Expense transactions**. This page will display all the expenses posted against a lease, such as interest expense, depreciation expense, and any executory costs.
+
+To view the lease expense transactions, select a lease on the **Lease summary** page, and then select **Books** to open the lease books that are attached to the lease record. Then select **Expense transactions**.
+
+The **Expense transactions** page shows all the expenses that have been posted against the lease, such as interest expenses, depreciation expenses, and any executory costs.
