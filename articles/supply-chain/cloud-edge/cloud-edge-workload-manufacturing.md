@@ -48,9 +48,9 @@ This topic describes how manufacturing execution workloads function in cloud and
 
 ## The manufacturing lifecycle
 
-The manufacturing lifecycle is divided into three phases – **Plan, Execute and Finalize**, as shown in the following illustration.
+The manufacturing lifecycle is divided into three phases – *Plan*, *Execute* and *Finalize*, as shown in the following illustration.
 
-[![Manufacturing execution phases](media/mes-phases.png "Manufacturing execution phases")](media/mes-phases-large.png)
+[![Manufacturing execution phases when using a single environment](media/mes-phases.png "Manufacturing execution phases when using a single environment")](media/mes-phases-large.png)
 
 The _plan phase_ includes product definition, planning, order creation and scheduling, and release. The release step of the plan phase indicates the transition from the plan to the _execute phase_. When a production order is released, the production order jobs will be visible on the production floor and ready for execution.
 
@@ -60,7 +60,7 @@ When a production job is marked as complete, it moves from the execute phase to 
 
 In a cloud and edge solution, the execution phase is split out as a separate workload,as shown in the following illustration. 
 
-[![Manufacturing execution phases](media/mes-phases-workloads.png "Manufacturing execution phases")](media/mes-phases-workloads-large.png)
+[![Manufacturing execution phases when using cloud and edge](media/mes-phases-workloads.png "Manufacturing execution phases when using cloud and edge")](media/mes-phases-workloads-large.png)
 
 The model now goes from a one-instance installation to a hub-and-spoke model. The plan and finalize phases run as back-office operations on the hub, and the manufacturing execution workload runs on the spoke. Data is transferred between the hub and spoke asynchronously. When a production order is released on the hub, all necessary data to process production jobs is transferred to the spoke. This is data such as production orders, production routes, bills of material, and products. Data that isn't related to a production order (such as indirect activities, absence codes, and production parameters) is also transferred from the hub to the spoke. As a rule, data originating from the hub and transferred to the spoke can only be created or updated on the hub. It is, for example, not possible to create a new absence code or indirect activity on the spoke—it is only possible to use these for registration. The registrations made on the spoke during execution are then transferred to the hub, where time and attendance approval, inventory, and financial updates are processed.
 

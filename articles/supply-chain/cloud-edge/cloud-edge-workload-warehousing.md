@@ -3,7 +3,7 @@
 
 title: Warehouse management workloads for cloud and edge scale units
 description: This feature allows edge scale units to run selected processes from your warehouse management workload. Cloud scale units run their workloads in the cloud using dedicated processing capacity in your selected Azure region. With edge scale units, you can run certain workloads independently on premises, even while temporarily disconnected from the cloud.
-author: perlynne, mirzaab
+author: perlynne
 manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid:
 ms.search.region: global
 ms.search.industry: SCM
-ms.author: perlynne, mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
 ---

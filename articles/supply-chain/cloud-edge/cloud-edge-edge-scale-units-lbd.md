@@ -48,8 +48,8 @@ The following table provides an overview of the deployment steps.
 |Responsibility  |Step  |Details  |
 |---------|---------|---------|
 |Microsoft|Create LCS on-premises Implementation project with one sandbox slot for Scale Unit environment.||
-|Customer|Setup LBD environment with empty database.|[Documentation](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12)|
-|Customer|Deploy LBD environment through LCS.|[Documentation](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12)|
+|Customer|Setup LBD environment with empty database. | More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
+|Customer|Deploy LBD environment through LCS.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
 |Customer / Microsoft|Upload package with the same app/plat build that was deployed on Hub to LCS asset library of on-premises project.|         |
 |Customer|Upload customization package that was deployed on Hub to LCS asset library of on-premises project.|         |
 |Customer|Service LBD environment with previously uploaded app/plat package.|This will ensure that Hub and Spoke have the same build deployed.|
@@ -70,7 +70,7 @@ Make sure there is at least one sandbox slot available to deploy.
 
 ## Setup and deploy LBD environment with empty database
 
-1. Follow the [documentation to setup LBD environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12)
+1. Follow the instructions given in [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).
 1. Step 14. Configure databases describes how to setup database with either Demo data or Empty data. Use empty data .bak file on this step.
 1. Final step in mentioned documentation is deploying environment. Deploy latest available application and platform version which is 10.0.8/PU34 at the moment.
 
@@ -90,9 +90,7 @@ Make sure there is at least one sandbox slot available to deploy.
 
 ## Update topology
 
-1. Download Infrastructure scripts.
-
-   This is already part of setting up LBD environment as [described here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12).
+1. Download Infrastructure scripts. (This is already part of [setting up an LBD environment](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).)
 
 1. Setup PreDeployment script.
 
