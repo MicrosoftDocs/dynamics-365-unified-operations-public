@@ -200,7 +200,7 @@ Asset leasing allows leases to be adjusted if the lease terms are modified, the 
 
 
 #### Lease impairment
-This represents the carrying over balance reduction of the right-of-use asset. Identify the impairment amount, transaction date, and periods remaining. The remaining right-of-use asset will be amortized on a straight-line bases. The lease impairment logic considers the asset carryover value of which exist in the asset depreciation schedule.  
+This represents the carrying over balance reduction of the right-of-use asset. Identify the impairment amount, transaction date, and periods remaining. The remaining right-of-use asset will be amortized on a straight-line basis. The lease impairment logic considers the asset carryover value of which exist in the asset depreciation schedule.  
 
 |     Type                                      	|     Debit                            	|     Credit                	|
 |-----------------------------------------------	|-------------------------------------	|----------------------------	|
@@ -215,7 +215,7 @@ Lease transactions can be posted in a currency other than the accounting and rep
 ## Create an asset lease
 Complete the following steps to create a new lease. 
 
-1. To use **Asset leasing**, you must enable it in the **Feature management** workspace. From the **Feature management** workspace, select **All** so that all features are listed on the page. Select **Asset leasing**, and then click **Enable now**.
+1. To use **Asset leasing**, you must enable it in the **Feature management** workspace. From the **Feature management** workspace, select **All** so that all features are listed on the page. Select **Asset leasing**, and then select **Enable now**.
 2. Go to **Asset leasing > Common > Lease summary**. Enter the required fields on the **General** FastTab. 
    - **Lease details**
    - **Asset useful life (Months)**
