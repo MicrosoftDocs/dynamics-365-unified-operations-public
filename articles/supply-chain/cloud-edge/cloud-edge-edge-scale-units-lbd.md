@@ -100,10 +100,13 @@ Make sure there is at least one sandbox slot available to deploy.
     - Copy D365FO-OP folder from Infrastructure Scripts folder to the Scripts folder in agent file storage share that was setup on the environment. Example of a path is: \\lbdiscsi01\agent\Scripts\D365FO-OP.
     - Create PreDeployment.ps1 script that will invoke Configure-CloudAndEdge.ps1 with necessary parameters. PreDeployment script needs to be placed in Scripts folder in agent share in order to be run. Example of a path is: \\lbdiscsi01\agent\Scripts\PreDeployment.ps1.
     - Content of PreDeployment.ps1 can look like this:
-    >         $agentShare = '\\lbdiscsi01\agent'
-    >         
-    >         Write-Output "AgentShare is set to $agentShare"         
-    >         & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+
+        ```plaintext
+        $agentShare = '\\lbdiscsi01\agent'
+        
+        Write-Output "AgentShare is set to $agentShare"         
+        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        ```
 
 1. Redeploy the environment.
 
