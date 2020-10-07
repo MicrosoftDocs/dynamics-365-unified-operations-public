@@ -57,10 +57,13 @@ As a result, this certificate is not in the lst of trusted system certificates o
 
 **Workaround**
 
-Manually download the new root certificate as described below and install it onto the impacted devices. This certificate will show up under USER trusted certificates on the device.
+1. Manually download the new root certificate using your internet browser. Open the main Dynamics SCM URL, and click on the Lock icon to the left to open the page security information, then follow below image step-by-step guide.
 
-TBD
+![Download new root certificate](media/WMA_TrustAnchor_DownloadRootCert.png "Download new root certificate")
 
+2. Install the downloaded certificate onto the impacted devices. 
+
+3. The certificate should show up under USER trusted certificates on the device, at which point you should be able to connect to Dynamics as before.
 
 ## TO BE DONE
 The line numbers for imported purchase order lines through data entity "Purchase order lines V2" are not defaulting to system line number increment specified in system parameters when adding auto-generated line numbers in DMF. When you create a PO and add lines manually through UI, it is correctly incrementing. However, when using DMF it is not.
