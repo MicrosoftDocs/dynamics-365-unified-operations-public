@@ -33,7 +33,8 @@ ms.dyn365.ops.version: AX 10.0.14
 
 This topic describes how to fix common issues that you might encounter while working with Process Manufacturing.
 
-## When posting a feedback for last operation on Production Route by using Job card device and posting partial quantity, open jobs on Production Order are 'end'ed, regardless of the remaining 'Report remainder as finished' quantity.
+## When reporting a partial quantity on a job on the job card device, and the job is the last job for the production order, then all previous jobs on the production order that are in status *In progress* will be automatically ended.
+
 This is working by design. In the production defaults parameters, there is a parameter called 'End-mark route' under the 'Report as Finished' tab. When this parameter is selected, a route card journal is posted when reporting on the last operation on the job card device or job card terminal. This journal is marking all the operations as completed and ending all the production jobs. The End-mark route parameter will not consider the desired job status the user is selecting when reporting on the last operation. The system will also not consider if the user is reporting a full or partial quantity.
 
 ## When attempting a stock closing a warning occurs stating "No execution of backflush costing calculation with a date of xxx has been registered". When lean manufacturing is not user, this message should not appear.
