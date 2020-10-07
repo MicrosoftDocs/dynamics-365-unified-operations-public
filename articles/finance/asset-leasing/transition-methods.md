@@ -2,7 +2,7 @@
 # required metadata
 
 title: Transition methods
-description: This topic describes the three transition methods that are compliant with IFRS 16, which are full retrospective, cumulative catch-up option A, and cumulative catch-up option B.
+description: This topic describes the three transition methods that are compliant with International Financial Reporting Standard 16 (IFRS 16). These methods are named full retrospective, cumulative catch-up option A, and cumulative catch-up option B.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/07/2020
@@ -35,101 +35,103 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the three transition methods that are compliant with IFRS 16. Asset leasing contains all three transition methods that are compliant with IFRS 16. The three options are: 
+This topic describes the three transition methods that are compliant with International Financial Reporting Standard 16 (IFRS 16):
 
 - Full retrospective
 - Cumulative catch-up option A
 - Cumulative catch-up option B
 
-### Full retrospective
+Asset leasing includes all three transition methods.
 
-The full retrospective approach treats the lease as if IFRS 16 has always been applied from the original commencement date. The payments are discounted using the incremental borrowing rate as of the commencement date. Therefore, all schedules are created from the commencement date forward.
+## Full retrospective
 
- -	Lease liability
-    -	Ending balance from the liability amortization schedule in the period immediately before the transition date.
- -	Right-of-use asset
-    -	Net book value from the asset depreciation schedule in the period immediately before the transition date.
+The full retrospective method treats the lease as if IFRS 16 has always been applied, starting on the original commencement date. The payments are discounted by using the incremental borrowing rate as of the commencement date. Therefore, all schedules are created forward from the commencement date.
 
-### Cumulative catch-up
+- **Lease liability** – The ending balance from the liability amortization schedule in the period immediately before the transition date.
+- **Right-of-use (ROU) asset** – The net book value from the asset depreciation schedule in the period immediately before the transition date.
 
-Both cumulative catch-up options allow the comparative periods to stay as they were reported in the past. The differences between the assets and liability are recognized in opening retained earnings at the transition date.
+## Cumulative catch-up
+
+In both cumulative catch-up methods, the comparative periods can stay as they were reported in the past. The differences between the assets and liability are recognized in opening retained earnings on the transition date.
 
 ### Cumulative catch-up option A
 
-Like the full retrospective approach, cumulative catch up option A will create all schedules from the commencement date forward. However, unlike the full retrospective approach, the system will calculate the present value of lease payments using the incremental borrowing rate as of the Transition date.
+Like the full retrospective method, the cumulative catch-up option A method creates all schedules forward from the commencement date. However, this method differs from the full retrospective method in that the system calculates the present value of lease payments by using the incremental borrowing rate as of the transition date.
 
- -	Lease liability
-    -	Ending balance from the liability amortization schedule in the period immediately before the transition date.
- -	Right-of-use asset
-    -	Net book value from the asset depreciation schedule in the period immediately before the transition date.
+- **Lease liability** – The ending balance from the liability amortization schedule in the period immediately before the transition date.
+- **ROU asset** – The net book value from the asset depreciation schedule in the period immediately before the transition date.
 
 ### Cumulative catch-up option B
 
-Schedules are created starting on the transition date. These leases are treated as a new lease with a commencement date equal to the transition date. Payments are discounted using the incremental borrowing rate as of the transition date.
+In the cumulative catch-up option B method, schedules are created starting on the transition date. The leases are treated as new leases that have a commencement date that equals the transition date. Payments are discounted by using the incremental borrowing rate as of the transition date.
 
- -	Lease liability
-    -	Sum of present value of lease payments from the payment schedule.
- -	Right-of-use asset
-    -	Sum of present value of lease payments from the payment schedule plus any deferred rent carryover.
+- **Lease liability** – The sum of the present value of lease payments from the payment schedule.
+- **ROU asset** – The sum of the present value of lease payments from the payment schedule, plus any deferred rent carry-over.
 
 ## Examples
-The examples below illustrate the different transition methods and the expected beginning balances of the right-of-use asset and lease liability generated by the transition adjustment. The Transition date for these examples is assumed to be January 1, 2020:
 
-#### General tab inputs
+The following examples show the different transition methods, and the expected beginning balances of the ROU asset and lease liability that the transition adjustment generates. For all these examples, the transition date is January 1, 2020.
 
-|     Field                                       	|     Value          	|
-|-------------------------------------------------	|--------------------	|
-|     Fair value of the asset                     	|     600,000        	|
-|     Incremental borrowing rate                  	|     5%             	|
-|     Incremental borrowing rate at transition    	|     10%            	|
-|     Compounding interval                        	|     Monthly        	|
-|     Asset useful life (months)                  	|     600            	|
-|     Annuity type                                	|     Annuity due    	|
-|     Commencement date                           	|     07/01/2019     	|
+### Setup
 
-Payment schedule lines tab inputs
+The following tables show the values that are set on the **General** and **Payment schedule lines** tabs.
 
-|     Field                	|     Value         	|
-|--------------------------	|-------------------	|
-|     Start date           	|     7/1/2019      	|
-|     Period interval      	|     Monthly       	|
-|     Periods              	|     12            	|
-|     End date             	|     06/30/2020    	|
-|     Payment frequency    	|     Monthly       	|
-|     Payment amount       	|     1,000         	|
+**General tab**
+
+| Field                                    | Value       |
+|------------------------------------------|-------------|
+| Fair value of the asset                  | 600,000     |
+| Incremental borrowing rate               | 5%          |
+| Incremental borrowing rate at transition | 10%         |
+| Compounding interval                     | Monthly     |
+| Asset useful life (months)               | 600         |
+| Annuity type                             | Annuity due |
+| Commencement date                        | 07/01/2019  |
+
+**Payment schedule lines tab**
+
+| Field             | Value      |
+|-------------------|------------|
+| Start date        | 7/1/2019   |
+| Period interval   | Monthly    |
+| Periods           | 12         |
+| End date          | 06/30/2020 |
+| Payment frequency | Monthly    |
+| Payment amount    | 1,000      |
 
 ### Full retrospective example
 
-In this method, the liability and asset are calculated as if IFRS 16 had always applied to the lease. 
+In this method, the liability and asset are calculated as if IFRS 16 has always applied to the lease. The liability of the lease is calculated by discounting the sum of the present value of the future minimum lease payments (PVFMLP) by the rate at commencement (5 percent in this example).
 
-- The liability of the lease is calculated by discounting the sum of the present value of future minimum lease payments by the rate at commencement, which is 5%.
-- The ending liability balance for the period ending December 31, 2019 from the liability amortization schedule is 5,938.10.
-- The net book value for the period ending December 31, 2019 from the asset depreciation schedule is 5,864.95.
+- For the period that ended on December 31, 2019, the ending liability balance from the liability amortization schedule is 5,938.10.
+- For the period that ended on December 31, 2019, the net book value from the asset depreciation schedule is 5,864.95.
 
-The transition adjustment journal entry is:
- - Dr. Lease asset 5,864.95
- - Dr. Retained earnings 73.15
-   - Cr. Lease liability 5,938.10
+Here is the transition adjustment journal entry:
+
+Dr. Lease asset 5,864.95  
+Dr. Retained earnings 73.15  
+Cr. Lease liability 5,938.10
 
 ### Cumulative catch-up option A example
 
-In this method, the liability and asset are calculated as if IFRS 16 had always applied to the lease however the payments are discounted using the current incremental borrowing rate. The liability of the lease is calculated by discounting the sum of the present value of future minimum lease payments by the rate at transition, which is 10%.
+In this method, the liability and asset are calculated as if IFRS 16 has always applied to the lease. However, the payments are discounted by using the current incremental borrowing rate. The liability of the lease is calculated by discounting the sum of the PVFMLP by the rate at transition (10 percent in this example).
 
-The ending liability balance for the period ending December 31,2019 from the liability amortization schedule is 5,877.39.
-The net book value for the period ending December 31, 2019 from the Asset depreciation schedule is 5,734.65.
+- For the period that ended on December 31, 2019, the ending liability balance from the liability amortization schedule is 5,877.39.
+- For the period that ended on December 31, 2019, the net book value from the asset depreciation schedule is 5,734.65.
 
-The transition adjustment journal entry is:
- - Dr. Lease asset 5,734.65
- - Dr. Retained earnings 142.74
-   - Cr. Lease liability 5,877.39
+Here is the transition adjustment journal entry:
+
+Dr. Lease asset 5,734.65  
+Dr. Retained earnings 142.74  
+Cr. Lease liability 5,877.39
 
 ### Cumulative catch-up option B example
 
-In this method, the lease is treated as if it was a new lease commencing on the transition date. The liability of the lease is calculated by discounting the sum of the present value of future minimum lease payments from the transition date by the rate at transition, which is 10%. The asset is equal to the liability amount plus any deferred rent carryover amount.
+In this method, the lease is treated as if it's a new lease that commenced on the transition date. The liability of the lease is calculated by discounting the sum of the PVFMLP from the transition date by the rate at transition (10 percent in this example). The asset equals the liability amount plus any deferred rent carry-over amount.
 
-The present value of future minimum lease payments for the remaining six months of 1,000 discounted at 10% compounded monthly is 5,877.39.
+For the remaining six months, the PVFMLP of 1,000 discounted at a compounded monthly rate of 10 percent is 5,877.39.
 
-The Transition adjustment journal entry is:
-- Dr. Lease asset 5,877.39
-  - Cr. Lease liability 5,877.39
+Here is the transition adjustment journal entry:
 
+Dr. Lease asset 5,877.39  
+Cr. Lease liability 5,877.39
