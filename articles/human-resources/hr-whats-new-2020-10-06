@@ -101,6 +101,13 @@ This feature also promotes the workflow options that appear in the personnel act
 
 ![Workflow items quick access](./media/hr-workflow-quick-access.png)
 
+### Virtual entities in Common Data Service for Human Resources
+
+Dynamics 365 Human Resources is now a virtual data source in Common Data service. All Open Data Protocol (OData) entities in Human Resources are available as virtual entities, providing full create, read, update, and delete (CRUD) operations and synchronous execution of Human Resources business logic from Common Data Service and Power Platform.
+
+For more information, see:
+- [Expand Dynamics 365 Human Resources core data in Common Data Service](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service)
+- [Configure Common Data Service virtual entities](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities)
 
 ## Coming soon
 ### Checklist entities included in Common Data Service
