@@ -1,5 +1,6 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/a-classes.md",
       "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
       "redirect_document_id": "false"
@@ -2226,11 +2227,6 @@
     },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/TileReference-class.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
-      "redirect_document_id": "false"
-    },
-    {
-      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/toc.yml",
       "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
       "redirect_document_id": "false"
     },
