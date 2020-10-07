@@ -69,10 +69,10 @@ The user is not prompted for inserting BOM and route when selecting a product th
 Unable to see certain production orders in the *Marking* form.
 
 ### Possible cause
-Products with the following configuration are not available for marking and will therefore not be visible in the marking form 
-1. Product defined as type **Catch weight**
-2. Products enabled for the advanced warehouse processes
-3. Products configured to be controlled by the **Standard cost** principle
+Products with the following configuration are not available for marking and will therefore not be visible in the marking form: 
+- Product defined as type *catch weight*
+- Products enabled for the advanced warehouse processes
+- Products configured to be controlled by the *Standard cost* principle
 
 ## Unable to end the production order, the following error occurs 'Calculating BOM consumptionCost value must be negative upon issue from inventory'
 This issue has been fixed in 10.0.15.
