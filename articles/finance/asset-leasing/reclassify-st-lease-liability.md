@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Reclassify short-term portion of lease liability
-description: This topic describes the process for creating a monthly journal entry to reclassify a portion of the lease liability as short term.
+title: Reclassify the short-term portion of a lease liability
+description: This topic explains how to create a monthly journal entry to reclassify a portion of the lease liability as short-term.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/06/2020
@@ -30,18 +30,20 @@ ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Reclassify short-term portion of lease liability
+# Reclassify the short-term portion of lease liability
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the process for creating a monthly journal entry to reclassify a portion of the lease liability as short term. When the schedule that's selected in the batch process is **Short-term lease liability reclass**, a journal entry will be created. This entry is used to post current portion of the lease liability on the last day of the month. As the same time, reversal entry will be posted as of the first day of the next month.
+This topic explains how to create a monthly journal entry to reclassify a portion of the lease liability as short-term. When the schedule that is selected in the batch process is **Short-term lease liability reclass**, a journal entry is created. This entry is used to post the current portion of the lease liability on the last day of the month. At the same time, a reversal entry is posted as of the first day of the next month.
 
-The short-term portion of the lease liability is displayed on the liability amortization schedule. When the journal entry is posted, the **Liability reclass journal created** column will become enabled and the journal ID will also populate on the schedule.
+The short-term portion of the lease liability is shown on the liability amortization schedule. When the journal entry is posted, the **Liability reclass journal created** column becomes available, and the journal ID is also filled in on the schedule.
 
-1.	To create and post the short-term liability reclassification journal entry, open the Batch journal creation page (**Asset leasing > Periodic > Batch journal creation**).
-2.	In the **Select schedule** dropdown, select **Short-term lease liability reclass**.
-3.	In the **Lease group** dropdown, select a lease group or in the **Book ID dropdown**, select the **Book ID**.
-4.	Enable the **Post parameter**, otherwise choose to disable for the entry to be created but not posted.
-5.	Enable **Preview before posting** to view the entry before posting.
-6.	Click **OK**.
+To create and post the short-term liability reclassification journal entry, follow these steps.
+
+1. Go to **Asset leasing \> Periodic \> Batch journal creation**.
+2. In the **Batch journal creation** dialog box, in the **Select schedule** field, select **Short-term lease liability reclass**.
+3. In the **Lease group** field, select a lease group. Alternatively, in the **Book ID** field, select the book ID.
+4. Turn on the **Post** parameter. Alternatively, if the entry should be created but not posted, leave this parameter turned off.
+5. Turn on the **Preview before posting** parameter to view the entry before it's posted.
+6. Select **OK**.
