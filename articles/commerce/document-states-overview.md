@@ -56,6 +56,8 @@ The following table shows the possible document states of page elements in Comme
 
 [Work with publish groups](publish-groups.md)
 
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
+
 [Work with modules](work-with-modules.md)
 
 [Work with fragments](work-with-fragments.md)
