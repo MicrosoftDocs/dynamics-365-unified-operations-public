@@ -40,11 +40,11 @@ This topic describes where to find API documentation in Visual Studio and on the
 
 ### Application class and table documentation is in Visual Studio
 
-You can find documentation for the Application classes in Microsoft Visual Studio by searching for the application programming interface (API) in Application Explorer and then displaying the code. You can find additional metadata about the API in the **Properties** window. You can also download a list of all the tables in the [Technical Reference Reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). For more information, see [Find information about standard data entities](../data-entities/data-entities-report.md).
+You can find documentation for the Application classes in Microsoft Visual Studio. Search for the class name in Application Explorer and then display the code. You can find additional metadata about the class in the **Properties** window. You can download a list of all the tables in the [Technical Reference Reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). For more information, see [Find information about standard data entities](../data-entities/data-entities-report.md).
 
 ### Programming with application tables and classes
 
-Application tables are being similar to application classes, but with the following differences from classes:
+Application tables are similar to application classes, but with the following differences from classes:
 
 - Tables are persistent.
 - Table fields are always public.
@@ -53,7 +53,7 @@ Application tables are being similar to application classes, but with the follow
 
 ### Design pattern of private new in application classes
 
-All application classes are under Application Explorer &gt; Classes. Every application class has the constructor method named `new`, even if the class has no new node in the AOT. If the class has no explicit new node, the implicit `new` method is public. A design pattern that is sometimes used in the application classes is to declare the explicit `new` constructor method as `private`. Then a `public static` method is added to call the `new` method. The static method can restrict or control the call the `new` method based on various conditions, if necessary.
+All application classes are under Application Explorer &gt; Classes. Every application class has the constructor method named `new`, even if the class has no **new** node in the Application Explorer. If the class has no explicit **new** node, the implicit **new** method is public. A design pattern that is sometimes used in the application classes is to declare the explicit **new** constructor method as **private**. Then a **public static** method is added to call the **new** method. The static method can restrict or control the call the **new** method based on various conditions, if necessary.
 
 ## System classes and tables
 
