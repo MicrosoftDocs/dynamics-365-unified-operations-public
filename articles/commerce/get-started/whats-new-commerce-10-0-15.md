@@ -44,7 +44,13 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [Gift card balance check module](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)<br> - For more information, see [Gift card module](../add-giftcard.md).
+- Curbside pickup<br> - For more information, see [Process credit cards without a hardware station](../dev-itpro/cnp-pos.md).
+- [Support for closing lines in purchase orders during receiving in POS](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-closing-lines-purchase-orders-during-receiving-pos)
+- [Experimentation in Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)<br> - For more information, see [Experimentation in Dynamics 365 Commerce](../experimentation-overview.md).
+- [Commerce localization for Brazil](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - For more information, see [Commerce localization for Brazil](../localizations/latam-bra-commerce-localization.md).
+- [Improved inbound and outbound inventory operations in store](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)<br> - For more information, see [Inbound inventory operation in POS](../pos-inbound-inventory-operation.md).
+- [Improvements to the recall order operation in point of sale (POS)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/improvements-facilitating-curbside-pickup-store-operations)
+- [Ability to skip "Change due" dialog in POS when no change is due](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/ability-skip-change-due-dialog-pos-when-no-change-due)
 
 ## Additional resources
 
