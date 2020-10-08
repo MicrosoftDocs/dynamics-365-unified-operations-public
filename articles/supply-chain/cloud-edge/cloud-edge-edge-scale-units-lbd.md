@@ -141,9 +141,9 @@ To assign your scale unit to a Supply Chain Management hub environment, run the 
 - Go to the **ScaleUnitSetup** menu item
 - Enter values for the following fields:
   - **Name** - Should match the value you have entered for the hub setup.
-  - **Hub resource ID** - Enter *https://usnconeboxax1aos.cloud.onebox.dynamics.com* 
-  - **Hub URL** - Enter *https://usnconeboxax1aos.cloud.onebox.dynamics.com/*  (note the trailing "/").
-  - **Hub AAD tenant ID** - Enter *https://login.windows-ppe.net/AX7Partner.ccsctp.net*.
+  - **Hub resource ID** - Enter *https://contosohub.sandbox.operations.dynamics.com*.
+  - **Hub URL** - Enter *https://contosohub.sandbox.operations.dynamics.com/*. (Note the trailing "/".)
+  - **Hub AAD tenant ID** - Enter *https://login.windows.net/contoso.com*.
   - **Hub AAD client ID** - Available from AAD App registrations in the Azure portal.
   - **Hub encrypted secret** - Available from AAD App registrations in the Azure portal.
 - Select **Initialize scale unit** to bootstrap the scale unit with initialization data from the hub.
