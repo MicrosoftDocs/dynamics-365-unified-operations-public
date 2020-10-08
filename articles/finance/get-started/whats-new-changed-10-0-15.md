@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.15
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.15. This version has a build number of 10.0.605 and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.15. This version has a build number of 10.0.644 and is available as follows:
 
 - **Preview release:** October 2020
 - **General availability (self-update):** November 2020
