@@ -53,9 +53,9 @@ For information about each command, see the entries in this topic, or use the **
 yarn msdyn365 add-component-override <themeName> <componentName> <--list-components>
 ```
 
-This command adds a component to the specified theme component folder, from which the component can then be modified as desired. 
+This command adds a component to the specified theme component folder. The component can then be modified as desired from that folder.
 
-The **--list-components** option is used to display a list of components.
+The **--list-components** option is used to show a list of components.
 
 **Examples**
 
