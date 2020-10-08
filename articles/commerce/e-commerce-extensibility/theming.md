@@ -107,7 +107,7 @@ Custom themes can be created by using the Dynamics 365 Commerce online SDK. They
 You may have requirements to support both right-to-left (RTL) and left-to-right (LTR) languages on your e-Commerce site. Themes support the ability to specify different RTL and LTR SCSS files. 
 
 > [!NOTE]
-> RTL and LTR support within a theme in available in the Dynamics 365 Commerce release 10.0.15.
+> RTL and LTR support within a theme is available in Dynamics 365 Commerce release 10.0.15.
 
 Each theme has a **styles\THEME_NAME.theme.scss** file that is created using the **yarn msdyn365 add-theme** command-line interface (CLI) command. For example, using the command **yarn msdyn365 add-theme spring** to create a new theme called "spring" will create the file "\src\themes\spring\styles\spring.theme.scss", which contains the SCSS code for the theme. SCSS files are compiled into CSS files when using the **yarn start** or **yarn pack** commands, and are then used to render site pages. 
 
