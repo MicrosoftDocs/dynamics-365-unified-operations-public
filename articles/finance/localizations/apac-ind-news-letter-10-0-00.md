@@ -43,27 +43,27 @@ The following configurations are available from the Shared Asset Library in Life
  
 You can differentiate customer GST registration numbers from vendor GST registration numbers in tax setup.
 
-![](media/GST-registration-rate-setup-1-10-0-00.png)
+![Registration number type drop-down list](media/GST-registration-rate-setup-1-10-0-00.png)
 
 You can determine the tax rate based on invoice date for the purchase transactions, such as a purchase invoice.
 
-![](media/GST-invoice-date-rate-setup-2-10-0-00.PNG)
+![Tax rate based on invoice date](media/GST-invoice-date-rate-setup-2-10-0-00.PNG)
 
 You can create a non-GST transaction, which will be reflected in the Goods and Services Tax return (GSTR).
 
-![](media/GST-non-gst-transaction-3-10-0-00.png)
+![Tax information pane, Non-GST toggle](media/GST-non-gst-transaction-3-10-0-00.png)
 
 ## Import/export tax setup
 
 You can import and export tax setup for **Rate**, **Reverse charge percentage**, and **Load on inventory percentage**. 
 
-![](media/GST-import-export-tax-setup-4-10-0-00.png)
+![Import/export tax setup](media/GST-import-export-tax-setup-4-10-0-00.png)
 
 ## GTE designer enhancement
 
 You can multi-select lookup columns and search available columns.
 
-![](media/GST-gte-multi-select-5-10-0-00.png)
+![Available columns](media/GST-gte-multi-select-5-10-0-00.png)
 
 ## Critical fixes 
 
