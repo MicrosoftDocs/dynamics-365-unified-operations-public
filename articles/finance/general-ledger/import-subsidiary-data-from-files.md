@@ -12,15 +12,26 @@ ms.search.region: Global
 ---
 
 # Import subsidiary data from files
-The Consolidate with Import form allows you to prepare the transfer of subsidiary data from external systems.
+This topic lists the steps for preparing data from external systems to be imported to Dynamics 365 Finance. The **Consolidate with Import** page is used to prepare for the transfer of subsidiary data from external systems.
 
-1.	Start by preparing a new legal entity in the consolidatin process and Set up a subsidiary legal entity for consolidation. For more information see [Prepare a legal entity for use in the consolidation process](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/prepare-a-legal-entity-for-use-in-the-consolidation-process) and [Set up a subsidiary legal entity for consolidation](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-a-subsidiary-legal-entity-for-consolidation)
+1. Start by preparing a new legal entity in the consolidatin process and Set up a subsidiary legal entity for consolidation. For information about creating legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
 
-2. Preparing your import file. 
-		a. Run steps to Export Subsidiary data to file as outlined above. You could use this step to consolidate from another D365 instance or from Business Central.
+*For more information see [Prepare a legal entity for use in the consolidation process](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/prepare-a-legal-entity-for-use-in-the-consolidation-process) and [Set up a subsidiary legal entity for consolidation](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-a-subsidiary-legal-entity-for-consolidation).* 
+
+2. Prepare your import file. For more information, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+3. Perform the steps to **Export Subsidiary data to file** as outlined above. You can use this step to consolidate data from another instance of Dynnamics 365 Finance, or from Business Central.
 		b. For data from external systems, data will need to be formatted to this format
 
-3. Click Consolidations > Consolidate with Import
+3. Open the **Consolidate with import** page (**Consolidations > Consolidate with Import)**. On the **Criteria** tab, specify the details of the report as follows. 
+
+|     Field                                      	|     Entry                      	|
+|------------------------------------------------	|---------------------------------------|
+|     Main account                               	|     Identify FROM   and TO accounts. If left blank it will include ALL accounts.                                                                        	|
+|     Consolidation   period                     	|     Enter **From**   and *To** dates to define a range to consolidate.                                                                                  	|
+|     Include   actual amounts                   	|     Set to   **Yes** to include actuals.                                                                                                                	|
+|     Include   budget amounts                   	|     Set to   **Yes** to include budget amounts in consolidations.                                                                                       	|
+|     Rebuild   balances during consolidation    	|     Set to   **Yes**. The rebuild process will completely clear the balance and new records,   and recreate the balance from the beginning of time.     	|
 
     a. On the Criteria tab, specify the details of the data import.
 		
