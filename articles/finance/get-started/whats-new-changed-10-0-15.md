@@ -44,12 +44,12 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
- - [Vendor invoice automation – Resume automated processing for multiple invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-resume-automated-processing-multiple-invoices)
- - [Vendor invoice automation – Automation history for vendor invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-enhanced-historical-information-experience-vendor-invoices)
-- [Default RFQ reply fields for vendor bidding](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)
- - [Regulatory Configuration Service – Simplified globalization feature management for globalization services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+ - [Vendor invoice automation – Resume automated processing for multiple invoices](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-resume-automated-processing-multiple-invoices)
+ - [Vendor invoice automation – Automation history for vendor invoices](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/vendor-invoice-automation-enhanced-historical-information-experience-vendor-invoices)
+- [Default RFQ reply fields for vendor bidding](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)
+ - [Regulatory Configuration Service – Simplified globalization feature management for globalization services](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
  
- - [Improvements in unit price and cost price handling in stock transfer orders for India](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/improvements-unit-price-cost-price-handling-stock-transfer-orders-india)
+ - [Improvements in unit price and cost price handling in stock transfer orders for India](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/improvements-unit-price-cost-price-handling-stock-transfer-orders-india)
 
 
 ## Additional resources
