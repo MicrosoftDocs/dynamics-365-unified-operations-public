@@ -1,3 +1,32 @@
+--- 
+# required metadata 
+ 
+title: USMCA certification of origin
+description: This feature lets you print a USMCA certification of origin document
+author: Henrikan
+manager:  
+ms.date: 10/8/2020
+ms.topic: business-process 
+ms.prod:  
+ms.service: dynamics-ax-applications 
+ms.technology:  
+ 
+# optional metadata 
+ 
+ms.search.form: WHSShipPlanningListPage,WHSShipmentDetails   
+audience: Application User 
+# ms.devlang:  
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations 
+# ms.tgt_pltfrm:  
+# ms.custom:  
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: 
+ms.search.validFrom: 2020-10-08 
+ms.dyn365.ops.version: Version 7.0.0 
+---
+
 This feature lets you print a USMCA certification of origin document. Before you
 can use this feature, it must be turned on in your system. Admins can use
 the [feature
