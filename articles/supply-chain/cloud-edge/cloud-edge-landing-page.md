@@ -43,6 +43,9 @@ Companies working with manufacturing and distribution must be able to execute ke
 
 ## Public preview information
 
+> [!CAUTION]
+> The scale unit capability for Dynamics 365 Supply Chain Management is made available on the condition you agree to the [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274).
+
 > [!IMPORTANT]
 > As a preview feature, services related to cloud and edge scale unit are currently available in limited geographies. By enabling cloud and edge scale units, you are affirming that you understand that some data related to the configuration and processing of cloud and edge scale units may be performed in a data center located in the USA. By enabling cloud and edge scale units, you agree to these [Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274). To learn more about cloud and edge scale units please consult the [documentation](https://aka.ms/scmcne).
 >

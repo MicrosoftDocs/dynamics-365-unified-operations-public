@@ -34,9 +34,6 @@ ms.dyn365.ops.version: 10.0.15
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-> [!CAUTION]
-> The scale unit capability for Dynamics 365 Supply Chain Management is made available on the condition you agree to the [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274).
-
 Edge scale units can be deployed by creating a Local Business Data (LBD) environment and then configuring it to function as a scale unit. This is achieved by associating the LBD environment with a Supply Chain Management cloud environment that has been configured to function as a hub for scale units.  
 
 This document describes how to set up an on-premises LBD environment as an edge scale unit, which can then be associated to a hub-configured cloud service fabric based environment.
@@ -126,40 +123,41 @@ Do the following:
 
 ## Assign your LBD edge scale unit to a hub
 
-### Configuration step on the hub environment
+### Configure the hub environment
 
-In order to assign your scale unit to a Dynamics 365 Supply Chain Management hub environment run the following steps in the hub environment:
+To assign your scale unit to a Supply Chain Management hub environment, run the following steps on the hub environment:
 
-- Navigate to the *ScaleUnitHubSetup* menu item
-- Enter the following value
-  - Name
-  - Hub AAD client ID (Available from  AAD App registrations in the Azure portal)
-- Prepare workloads to be configured (see section below)
-- Enter the scale units and their associated work loads
-- Click on Setup Hub
+- Open the **ScaleUnitHubSetup** menu item.
+- Enter values for the following fields:
+  - **Name** - Enter a name.
+  - **Hub AAD client ID** - Available from AAD App registrations on the Azure portal.
+- Prepare workloads to be configured (see the next section).
+- Enter the scale units and their associated work loads.
+- Select **Set up hub**.
 :::image type="content" source="media/cloud_edge-lbd-configurehub.png" alt-text="Configure you hub for a edge scale unit":::
 
-### Configuration step on the LBD scale unit environment
+### Configure the LBD scale unit environment
 
-- Go to ScaleUnitSetup menuitem
-- Enter the following value
-  - Name (should match the value you have entered in the Hub setup)
-  - Hub resource ID
-    - https://usnconeboxax1aos.cloud.onebox.dynamics.com 
-  - Hub url
-    - https://usnconeboxax1aos.cloud.onebox.dynamics.com/  (note the trailing '/')
-  - Hub AAD tenant ID
-    - https://login.windows-ppe.net/AX7Partner.ccsctp.net 
-  - Hub AAD client ID & Hub encrypted secret (Available from AAD App registrations in the Azure portal)
-- Click on "Initialize scale unit" to bootstrap the scale unit with initialization data from the hub.
-- Click Deploy.
+- Go to the **ScaleUnitSetup** menu item
+- Enter values for the following fields:
+  - **Name** - Should match the value you have entered for the hub setup.
+  - **Hub resource ID** - Enter *https://usnconeboxax1aos.cloud.onebox.dynamics.com* 
+  - **Hub URL** - Enter *https://usnconeboxax1aos.cloud.onebox.dynamics.com/*  (note the trailing "/").
+  - **Hub AAD tenant ID** - Enter *https://login.windows-ppe.net/AX7Partner.ccsctp.net*.
+  - **Hub AAD client ID** - Available from AAD App registrations in the Azure portal.
+  - **Hub encrypted secret** - Available from AAD App registrations in the Azure portal.
+- Select **Initialize scale unit** to bootstrap the scale unit with initialization data from the hub.
+- Select **Deploy**.
 
 ### Prepare workloads to be configured
 
-#### WES
+#### Warehouse management workloads
 
-Before configuring the WES workload the **Organization-wide work blocking** and **Automatic assigning of the guids on WHS user creation** (should be enabled by default) features should be enabled from feature management.
+Before configuring a warehouse management workload, enable the following two features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-#### MES
+- *Organization-wide work blocking*
+- *Automatic assigning of the guids on WHS user creation* (should be enabled by default)
 
-Nothing to be done here.
+#### Manufacturing execution workloads
+
+No additional steps are needed.
