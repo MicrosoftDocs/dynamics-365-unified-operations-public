@@ -125,11 +125,19 @@ The Goods and Service Tax Network (GSTN) has released a trial version of the new
 
 - Make sure that your application imports following tax configuration versions.
 
+  New configuration version will allow to post Export /SEZ/Deemed export transactions
+
     **Tax configuration name and version:**
 
     - Taxable Document. Version.82
     - Taxable Document (India).version.82.155
     - Tax (India GST). version.82.155.300
+    
+    In case looking to do de-coupling of GST posting from inventory posting and add Interim transit for stock transfertrnasaction posting than down
+    load below configuration  file 
+
+    - Tax (India GST).version.82.155.301
+
 
 #### Dynamics AX 2012 R3 
 
@@ -141,7 +149,25 @@ The Goods and Service Tax Network (GSTN) has released a trial version of the new
     - Taxable Document. Version.64
     - Taxable Document (India). version.64.119
     - Tax (India GST). version. 64.119.226
-    - (Calculated the IGST tax when with IGST payment is Yes on SEZ/DE/Export order)
+    
+   Above listed new configuration versions will provide following options :
+    
+       (i)  Post Export order 
+   
+            - With Payment of Tax option 
+            - Without payment of tax option 
+    
+       (ii)  Post SEZ (Special economic Zone) order 
+        
+            - With payment of tax option 
+            - Without payment of tax option 
+            
+       (iii) Post DE (Deemed Export) Order 
+        
+             - With payment of tax option 
+             - Without payment of tax option 
+    
+  
 
 ### New GST return format
 
@@ -149,7 +175,7 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 
 - **GSTR-1 return:** The following additional columns have been added:
 
-    - **Sales invoice and bill of supply:**
+    - **Sales invoice and bill of supply File:**
 
         - Differential % of tax rate
         - Supply covered under sec. 7 of IGST Act
@@ -157,7 +183,7 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
         - Return filing month
         - Return filing quarter
 
-    - **Sales credit and debit note:**
+    - **Sales credit and debit note file:**
 
         - Applicable % of tax rate
         - Supply covered under sec. 7 of IGST Act
@@ -172,14 +198,14 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
         
 - **GSTR-2 return:** The following additional columns have been added:
 
-    - **Purchase invoice and bill of supply:**
+    - **Purchase invoice and bill of supply file:**
 
         - Supply covered under section 7 of IGST Act
         - Would you claim refund?
         - Return filing month
         - Return filing quarter
 
-    - **Purchase credit and debit note:**
+    - **Purchase credit and debit note file:**
 
         - Supply covered under sec. 7 of IGST Act
         - Would you claim refund?
@@ -200,7 +226,7 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
     |-----------------|------------------|
     | 10.0.13         | 10.0.569.10002   |
 
-- Make sure that your application imports one of the required tax configuration versions.
+- Make sure that your application imports following tax configuration versions.
 
     **Tax configuration name and version:**
 
