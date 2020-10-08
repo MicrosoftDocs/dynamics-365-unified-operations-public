@@ -37,7 +37,6 @@ When the user clicks **Split work** in the Action Pane, the system will create a
 
 The system needs to validate that the ‘Split Work’ Blocking Reason is still present when trying to perform the actual split operation. If it’s not, then show the user the error “**Work splitting session no longer valid. Please close form and try again.**”, splitting actions will not be performed.
 
-
 > [!IMPORTANT]
 > You can only split work orders that have a status of open or in-progress.
 
@@ -167,6 +166,7 @@ The user can click the **Cancel** button which will allow the user to exit the m
 
 Any operations that are modifying the work lines, work inventory transactions, or replenishment links related to a work that is being split will fail with an error : "**The work with ID** *%1* **is currently being split.**".
 
+<!-- HHM: Logging is not being done
 ## Logging
 
-When the new work header is created from the work that has been split, write a line in the work creation history log that the new work header was created by splitting the original work, and mention the original work Id : Work %1 has been created by splitting off from original work %2.
+When the new work header is created from the work that has been split, write a line in the work creation history log that the new work header was created by splitting the original work, and mention the original work Id : Work %1 has been created by splitting off from original work %2. -->
