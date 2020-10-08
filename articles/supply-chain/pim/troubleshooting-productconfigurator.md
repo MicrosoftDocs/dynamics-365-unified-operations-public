@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.14
 # Troubleshoot Product Configurator
 This topic describes how to fix common issues that you might encounter while working with Product Configurator.
 
-## Salesline configurator overwrites item text 
+## Configuring a product in a sales order line overwrites item text 
 This issue happens when a sales order line for a configurable item is created and the item text is modified. When the item is configured and the ok is selected, the text is overwritten with the standard text.
 
 **Resolution**
