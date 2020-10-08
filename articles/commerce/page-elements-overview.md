@@ -58,6 +58,8 @@ The following table provides a summary of terms that you should be familiar with
 
 [Work with publish groups](publish-groups.md)
 
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
+
 [Work with modules](work-with-modules.md)
 
 [Work with fragments](work-with-fragments.md)
