@@ -40,7 +40,7 @@ The Dynamics 365 Commerce online extensibility software development kit (SDK) le
 
 This architectural overview will focus on the "Web Storefront" box highlighted in the following [Commerce architecture](../commerce-architecture.md) illustration.
 
-![High-level architectural overview](media/architecture-overview-web-storefront.jpg)
+![Dynamics 365 Commerce component overview with Web Storefront box highlighted](media/architecture-overview-web-storefront.jpg)
 
 ## Web storefront component-based architecture
 
