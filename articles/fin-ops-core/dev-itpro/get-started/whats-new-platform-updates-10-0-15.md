@@ -46,7 +46,7 @@ This topic lists the features that are included in the platform updates for vers
 [Deploy assets by using Azure Pipelines](../dev-tools/pipeline-deploy-asset.md).
 -  Specific full user license information is now available when configuring security and assigning roles to users<br>- For more information, see
 [Stay compliant with user licensing requirements](../sysadmin/stay-compliant-user-license-requirement.md).
-- Regression suite automation tool (RSAT) 2.0<br>- For RSAT users, version 10.0.15 requires the latest version of RSAT to address a known issue. RSAT 2.0.7031.98 or newer, will be available for download at https://www.microsoft.com/en-us/download/details.aspx?id=57357 on Monday, October 12.
+- Regression suite automation tool (RSAT) 2.0<br>- For RSAT users, version 10.0.15 requires the latest version of RSAT to address a known issue. RSAT 2.0.7031.98 or newer, will be available for download at https://www.microsoft.com/en-us/download/details.aspx?id=57357 on Monday, October 12, 2020.
 
 ## Additional resources
 
