@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Migrate channel to a different Commerce Scale Unit
-description: This topic explains how to migrate a Commerce Channel to a different Commerce Scale Unit.
+title: Migrate channels to a different Commerce Scale Unit
+description: This topic explains how to migrate a Microsoft Dynamics 365 Commerce channel to a different Commerce Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang:
 ms.reviewer: sericks
@@ -27,60 +27,65 @@ ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8.0
 ---
 
-# Migrate channel to a different Commerce Scale Unit
-This article explains how to migrate a Commerce Store Channel to a different Commerce Scale Unit (CSU) than the one it is currently operating with. You may choose to migrate channel(s) to a different CSU for better load isolation & resource governance between channels, for reduced latency to your Stores, or for managing different update/extension deployment schedules for staged roll-out and pilots. Migrating to a different CSU involves downtime for that channel. This article describes best practices to migrate channels while minimizing business disruption and downtime. This applies to both migration of channels between cloud-hosted Commerce Scale Units to other cloud-hosted CSUs, between self-hosted Commerce Scale Units to other self-hosted CSUs, as well as between cloud-hosted and self-hosted CSUs, and in either direction. 
+# Migrate channels to a different Commerce Scale Unit
 
-> [!Note] 
-> If you migrate channels between CSUs, temporary sales data used for journal records and POS reports, from prior to the migration, will no longer be available at POS after migration. Journals and Channel reports will start afresh with new data after the migration.
+[!include[banner](../includes/banner.md)]
+
+This topic explains how to migrate Microsoft Dynamics 365 Commerce store channels from the Commerce Scale Unit (CSU) that they are currently working with to a different CSU. You might want to migrate channels to a different CSU for better load isolation and resource governance between channels, to reduce latency to your stores, or to manage different update/extension deployment schedules for staged roll-out and pilots. Migration to a different CSU involves downtime for the channels.
+
+This topic describes best practices that will help you minimize business disruption and downtime while you migrate channels. It applies to the migration of channels between cloud-hosted CSUs, between self-hosted CSUs, from cloud-hosted CSUs to self-hosted CSUs, and from self-hosted CSUs to cloud-hosted CSUs.
+
+> [!NOTE]
+> If you migrate channels between CSUs, temporary sales data that was used for journal records and point of sale (POS) reports before the migration will no longer be available at the POS after migration. After the migration is completed, journals and channel reports will be started afresh by using new data.
+
+In the following procedures, the terms *origin* and *destination* are used to distinguish the CSUs and corresponding channel databases that are involved in the migration.
 
 ## Planning for downtime
-With the steps described in this article, all long running system processes involved in this exercise (including synchronization of master data for products, prices, customers, etc.) are run before the actual migration, while the stores are operational. The critical period of migration during which you must take a planned downtime in your environment will involve data synchronization of a very small payload of channel configuration data to the new Commerce Scale Unit. In most cases, this synchronization can complete in under 10 minutes. However, from an operational perspective, you will need to plan for a longer downtime window to allow for all pre-requisite steps to complete (e.g. closing all shifts, synchronizing transactions to to HQ, posting statements, etc.), which will vary by each organization.
 
-## Pre-requisities
-Perform all the below steps first in sandbox UAT environment and then repeat in a production environment. This will allow you to measure and estimate the actual downtime you can expect in a production environment. 
+When you follow the procedures that are described in this topic, all long-running system processes that are involved are run before the actual migration, while the stores are still operational. These processes including synchronization of master data for products, prices, and customers. Then, during the migration, the critical period when you must take planned downtime in your environment involves data synchronization of a very small payload of channel configuration data to the new CSU. In most cases, this synchronization can be completed in under 10 minutes. However, from an operational perspective, you must plan for a longer downtime window to ensure that all prerequisite steps have enough time to be completed. These steps include closing all shifts, syncing transactions to Commerce headquarters, and posting statements. The amount of time that is required will vary by organization.
 
-## Migration steps
+## Prerequisites
 
-In the following steps, we'll use the terms **origin** and **destination** to qualify the CSUs and corresponding Channel databases involved in this migration. 
+First, complete all the following procedures in a sandbox user acceptance testing (UAT) environment. Then repeat them in your production environment. In this way, you can measure and estimate the downtime that you should expect in the production environment.
 
-## Configure data synchronization
+## Migration
 
-The following steps can be performed while the stores are still operational. The following steps will synchronize master data to the destination CSU.
+### Configure data synchronization
 
-1. In Commerce HQ, navigate to the **Channel database** form and select the record for the Channel database for the destination CSU. 
-2. Add desired channel(s) to this destination Channel database.
-3. Select **Full data sync** with **9999 All jobs**.
+The following steps can be completed while the stores are still operational. They synchronize master data to the destination CSU.
 
-> [!Note]
-> If your destination CSU is CSU (self-hosted), you may consider creating separate Channel database group(s) to reduce the volume of unnecessary master data synchronization.  
+1. In Commerce headquarters, on the **Channel database** page, select the record for the channel database for the destination CSU. 
+2. Add the desired channels to the destination channel database.
+3. Select **Full data sync**, and specify that job **9999** (**All jobs**) should be used.
 
-The following steps must be performed during planned downtime for your channels.
+> [!NOTE]
+> If your destination CSU is self-hosted, consider creating separate channel database groups to reduce the volume of unnecessary master data synchronization. 
 
-## Prepare for migration
+### Prepare for migration
 
-1. On all Point of Sale devices, ensure all Shifts are closed.
-2. Logout on all POS devices.
-3. Validate all POS offline transactions are synchronized to HQ. Run P-jobs for all existing channel database(s) that will be migrated. If you proceed to migration before P-jobs have completed, and if you use Cloud Point of Sale, you may lose transactions due to duplicate transaction numbers.
-4. Validate all Statements are posted.
+This procedure and the next procedure must be completed during the planned downtime for your channels.
 
-## Migrate channels to new Commerce Scale Unit
+1. On all POS devices, make sure that all shifts are closed.
+2. Sign out of all POS devices.
+3. Confirm that all POS offline transactions are synced to Commerce headquarters. Run P-jobs for all existing channel databases that will be migrated. If you start the migration before P-jobs are completed, and if you use Cloud POS, you might lose transactions because of duplicate transaction numbers.
+4. Confirm that all statements are posted.
 
-1. Navigate to **Store details** page.
-2. Set **Live channel database** field to the destination Commerce Scale Unit Channel database.
-3. Set **Channel profile** field to the Channel profile associated to the destination Commerce Scale Unit.
-4. Navigate to the **Distribution schedule** form.
-5. Run **Channel configuration job (1070)** by selecting **Run now** (or **Create batch job** for asynchronous processing) for each job. After the jobs complete, your channels have now migrated to the new CSU. 
-6. If you are using Cloud Point of Sale, you will need to use the URL of Cloud Point of Sale for the new CSU, and re-active the POS device. If you re-activate POS before all P-jos on the origin Channel database have been completed, you may encounter duplicate transactions IDs, which could lead to loss of those transactions. 
-7. For MPOS, close, re-open and login on each POS device.
+### Migrate channels to a new CSU
 
+1. On the **Store details** page, set the **Live channel database** field to the destination CSU database.
+2. Set the **Channel profile** field to the channel profile that is associated with the destination CSU.
+3. On the **Distribution schedule** page, run job **1070** (**Channel configuration job**) by selecting **Run now** for each job. (For asynchronous processing, select **Create batch job** instead of **Run now**.) After the jobs are completed, your channels have been migrated to the new CSU.
+4. If you're using Cloud POS, you must use the URL of Cloud POS for the new CSU and reactivate the POS device. If you reactivate the POS device before all P-jobs on the origin channel database are completed, you might lose transactions because of duplicate transaction numbers.
 
-## Post migration
+    If you're using Modern POS, close each POS device, reopen it, and sign in.
 
-You may continue to use the origin CSU(s) to serve other channels. Alternatively, if you no longer have any need for the origin CSU(s), you may decommission/delete these. 
+## Post-migration
 
-> [!Note]
-> Do not delete the origin CSU until each POS has at-least logged in once to retrieve the URL of the destination CSU.
-> Do not delete origin CSU until all data from associated POS offline devices has sync'd to the origin CSU, and all data from the origin CSU has sync'd to HQ. It's recommended that you wait for at-least 30 days or end of next calendar month, before you delete the origin CSU, or before you disable P-jobs for that CSU.
+You can continue to use the origin CSU to serve other channels. Alternatively, if you no longer require the origin CSU, you can decommission or delete it. 
 
+> [!NOTE]
+> Don't delete the origin CSU until every POS has signed in at least one time to retrieve the URL of the destination CSU.
+>
+> Don't delete the origin CSU until all data from associated POS offline devices has been synced to the origin CSU, and all data from the origin CSU has been synced to Commerce headquarters. We recommend that you wait at least 30 days, or until the end of the next calendar month, before you delete the origin CSU or disable P-jobs for it.
 
-After you have completed all steps in a sandbox UAT, perform the same steps in your production environment. 
+After you've completed all the procedures in a sandbox UAT environment, repeat them in your production environment.
