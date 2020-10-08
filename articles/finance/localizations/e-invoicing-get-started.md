@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on
 description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -90,19 +90,18 @@ The following illustration shows the five main steps that you will complete in t
 ## LCS setup
 
 1. Sign in to your LCS account.
-2. Click on **Preview feature management** tile.
-3. On field group **Public Preview features** select **BusinessDocumentSubmission**.
-4. Turn on **Preview feature enabled**.
-2. Select the LCS deployment project. Before you can select the project, it must be up and running.
-3. On the **Environment add-ins** FastTab, select **Install a new add-in**.
-4. Select **Business Document Submission**.
-5. In the **Setup add-in** dialog box, in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is a fixed value.
-6. In the **AAD tenant ID** field, enter the ID of your Azure subscription account.
+2. Select the **Preview feature management** tile, and in the **Public Preview features** field group, select **BusinessDocumentSubmission**.
+3. Mark the **Preview feature enabled** field.
+4. Select the LCS deployment project. Before you can select the project, it must be up and running.
+5. On the **Environment add-ins** FastTab, select **Install a new add-in**.
+6. Select **Business Document Submission**.
+7. In the **Setup add-in** dialog box, in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is a fixed value.
+8. In the **AAD tenant ID** field, enter the ID of your Azure subscription account.
 
     ![Setup add-in dialog box in LCS](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
-7. Select the check box to accept the terms and conditions.
-8. Select **Install**.
+9. Select the check box to accept the terms and conditions.
+10. Select **Install**.
 
 ## RCS setup
 
@@ -132,7 +131,7 @@ During the RCS setup, you will complete these tasks:
 
     ![Key Vault URI field](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. On the **Certificates** FastTab, select **Add**, to enter the all digital certificate names and the key vault secrets which are needed to establish trustable connections. In the column **Type**, you can specify wheather it is a Certificate or a Secret. Both sets of values are configured on the key vault resource in Azure.
+7. On the **Certificates** FastTab, select **Add** to enter all digital certificate names and key vault secrets that are needed to establish trustable connections. In the  **Type** column, you can specify if it is a Certificate or a Secret. Both sets of values are configured on the key vault resource in Azure.
 
     ![Adding certificates](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
