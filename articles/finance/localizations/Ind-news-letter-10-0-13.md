@@ -259,12 +259,13 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 - When a customer tries to import a purchase order, the value of IGST isn't shown on the **Totals** tab after the purchase order totals are calculated and the purchase order is invoiced.
 - The **Transaction type** field should not be available on the **Sales quotation** page. You can manually add and update the transaction type on the **Sales quotation** page. If it's updated to **Value** instead of **None** or **Expense**, the customer tax information will be invisible.
 - The system currently allows the Harmonized System of Nomenclature (HSN) code or Service Accounting Code (SAC) to be deleted from the master setup page, even if posted and opened transactions exist.
-- While foreign vendor payments are posted, the withholding tax of Non-Residence is applied. If the user changes the currency rates on the transaction, a similar exchange rate isn't applied for the withholding tax calculation. Instead, the exchange rate is taken from the system. Therefore, there is an imbalance in the posting, and it isn't completed.
-- The system doesn't show the tax-adjusted amount at the time of bill of entry (BOE) to the tax document form of the **Invoice posting** form.
+- While foreign vendor payments are posted, the withholding tax on Non-Residence is applied. If the user changes the currency rates on the transaction, and post the transaction   voucher imbalance is appearing as logic of calculating exchange gain is not executing. After this fix system will calculate difference in "Exchange gain and loss account"  
+- In case User create an Import Purchase Order, during Bill of Entry creation they do some adjustments in the customs duty in Tax document form, the same is not reflected while   doing Invoicing .
 - The **Product receipt** page includes a column for the BOE number, but no BOE number is shown on the page.
-- When a purchase order that has a procurement category is placed, the load on inventory tax amount is posted to the purchase expenditure for an expense account instead of the Cost of project account or Fixed asset account. This issue occurs in project and fixed asset scenarios.
+- When a purchase order that has a procurement category is placed, the load on inventory tax amount is posted to the purchase expenditure for an expense account instead of the   Cost of project account or Fixed asset account. This issue occurs in project and fixed asset scenarios.
 - The tax amount isn't shown correctly on the **Purchase requisition** page. The **Total** form shows the tax amount of only the first line, not all the lines.
-- If a customer is trying to work in a general journal with a project in the account type and a vendor in the offset account with a load on inventory, when a user checks the project statement after posting, the tax amount isn't included in the project cost value that is shown.
+- In case wher user is Posting  a general journal with a project account as debit and a vendor account as credit (offset) account with marking tax as 100%  "load on inventory", 
+  After posting  checks the project statement , the tax amount isn't included in the project cost value .
 - GSTR: Customer can't select a financial year while they are running the Purchase Register reports.
 - When you post a tax journal that has a combination of a ledger account and a customer account, an error occurs.
 
@@ -272,4 +273,6 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 
 - When you manually adjust and apply the tax amount of Indian Tax Deducted at Source (TDS) withholding tax in a vendor invoice journal, you might have noticed that the adjustment is lost (reset) if you change the invoice number in the journal before you post.
 - The GST amount isn't shown correctly. The **GST amount** value is shown in a foreign currency, whereas the **Subtotal** and **Total amount** values are shown in Indian rupees (INR). The GST amount should be converted and added to the subtotal, so that the correct total amount is shown.
-- The **Billing rule details** is blank for existing entries when the Tax Extension for India localization is turned on.
+- Customer have recently enabled the india localization India GST feature on their India .Entity 104
+- Ater enabling the India localization, The value is not displaying for Billing rule type “Mile stone” on the Project contract form only for the India legal entity,
+  but the same Mile stone data were available for newly created data.
