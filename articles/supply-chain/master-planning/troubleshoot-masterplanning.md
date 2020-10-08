@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot Sales orders
+title: Troubleshoot Master Planning
 description: This topic describes how to fix issues that you might encounter while working with Master Planning.
 author: SmithaNataraj
 manager: tfehr
@@ -31,15 +31,7 @@ ms.dyn365.ops.version: AX 10.0.14
 ---
 # Troubleshoot Master Planning
 
-This topic describes how to fix common issues that you might encounter while working with Master Planning.
-
-##  Is it possible to set a maximum quantity for a warehouse?
-The maximum quantity for a warehouse can be set by setting the location stocking limits for the warehouse. To do that goto: Warehouse management > Setup >  Warehouse > Location stocking limits.
-
-The purpose of Master planning is to ensure that you have supply to meet demand. There is no functionality to change destination after a certain maximum value nor functionality to automatically transfer material when it is above the maximum set via the Location stocking limits.
-		
-**Resolution/Fix**
-That's because the delivery address, site and warehouse doesn't automatically get changed at the line level either - you'll need to update that yourself
+This topic describes how to fix issues that you might encounter while working with Master Planning.
 
 ## BOM explosion behaves differently when a production order is firmed and when work is created manually and the production order is estimated
 ### Issue description
