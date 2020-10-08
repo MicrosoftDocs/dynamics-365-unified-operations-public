@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed for APAC India GST Localization in 10.0.02 (May 2019)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.02.
+title: What's new or changed for India GST Localization in 10.0.02 (May 2019)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.02.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/15/2020
@@ -28,11 +28,11 @@ ms.dyn365.ops.version:
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.02 (May 2019)
+# What's new or changed for India GST Localization in 10.0.02 (May 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.02 for APAC India GST localization. 
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.02 forIndia GST localization. 
 
 ## New features
 ### Auto completion when editing tax formulas or conditions

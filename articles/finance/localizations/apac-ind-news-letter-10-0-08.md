@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed for APAC India GST Localization in 10.0.08 (February 2020)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.08.
+title: What's new or changed for India GST Localization in 10.0.08 (February 2020)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.08.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/15/2020
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 10.0.8
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.08 (February 2020)
+# What's new or changed for India GST Localization in 10.0.08 (February 2020)
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.08 for APAC India GST localization.
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.08 for India GST localization.
 
 ## New features
 ### Change the tax rate type on a purchase invoice 
