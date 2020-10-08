@@ -36,12 +36,17 @@ This topic describes how to fix common issues that you might encounter while wor
 It is possible to delete a released product and all its variants, only if the released product does not have any related transactions.
 
 ### Resolution
-First, you need to write down inventory (both physical and financial) for any related released product variants to 0 and delete those variants. Then, you should be able to delete the released product master.
+Follow the steps to be able to delete a released product or product master:
+1. Close all open transactions for the items
+2. Reduce inventory to 0
+3. Perform inventory closing
+4. Delete any product variants for the product master that you want to delete. 
 
 ##  Is it possible to rename a released product? 
 		
 ### Resolution
 It is not possible to rename item numbers for released products as it would lead to corrupted data. We only allow it if and only if you need to repair data corruption caused by a previous rename of the primary key of a released product, as we indicate in https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#finance-and-operations-1000-with-platform-update-24
+Please vote the idea on Ideas portal: https://experience.dynamics.com/ideas/idea/?ideaid=660fcb15-875d-ea11-b698-0003ff68bc25
 
 ## Flushing Principle is not being defaulted from the product onto the BOM Line.
 When adding an item to a BOM Line, the system is not defaulting the Flushing principle information previously set up in the Item, i.e. the flushing principle from the iteam does not show up on the BOM Line form.
