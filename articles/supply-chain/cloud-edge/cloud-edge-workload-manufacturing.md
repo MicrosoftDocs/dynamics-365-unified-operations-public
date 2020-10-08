@@ -58,17 +58,17 @@ When a production job is marked as complete, it moves from the execute phase to 
 
 ## Splitting the execution phase into a separate workload
 
-In a cloud and edge solution, the execution phase is split out as a separate workload,as shown in the following illustration. 
+In a cloud and edge solution, the execution phase is split out as a separate workload, as shown in the following illustration.
 
 [![Manufacturing execution phases when using cloud and edge](media/mes-phases-workloads.png "Manufacturing execution phases when using cloud and edge")](media/mes-phases-workloads-large.png)
 
-The model now goes from a one-instance installation to a hub-and-spoke model. The plan and finalize phases run as back-office operations on the hub, and the manufacturing execution workload runs on the spoke. Data is transferred between the hub and spoke asynchronously. When a production order is released on the hub, all necessary data to process production jobs is transferred to the spoke. This is data such as production orders, production routes, bills of material, and products. Data that isn't related to a production order (such as indirect activities, absence codes, and production parameters) is also transferred from the hub to the spoke. As a rule, data originating from the hub and transferred to the spoke can only be created or updated on the hub. It is, for example, not possible to create a new absence code or indirect activity on the spoke—it is only possible to use these for registration. The registrations made on the spoke during execution are then transferred to the hub, where time and attendance approval, inventory, and financial updates are processed.
+The model now goes from a one-instance installation to a hub-and-spoke model. The plan and finalize phases run as back-office operations on the hub, and the manufacturing execution workload runs on the spoke. Data is transferred between the hub and spoke asynchronously. When a production order is released on the hub, all necessary data to process production jobs is transferred to the spoke. This is data such as production orders, production routes, bills of material, and products. Data that isn't related to a production order (such as indirect activities, absence codes, and production parameters) is also transferred from the hub to the spoke. As a rule, data originating from the hub and transferred to the spoke can only be created or updated on the hub. It is, for example, not possible to create a new absence code or indirect activity on the spoke&mdash;it is only possible to use these for registration. The registrations made on the spoke during execution are then transferred to the hub, where time and attendance approval, inventory, and financial updates are processed.
 
 ## Manufacturing execution tasks that can run on workloads
 
 The following manufacturing execution tasks can currently be run on workloads in a cloud and edge solution.
 
-- Clock-in, Log-in, Clock-out, Absence
+- Clock-in, log-in, clock-out, and absence
 - Start job
 - Bundle jobs
 - Report progress
@@ -88,7 +88,7 @@ This job usually runs automatically, but you can run it manually at any time by 
 
 ### Check the raw registration processing log
 
-To review the registration processing log, sign in to the hub and go to **Production control \> Periodic tasks \> Backoffice workload management \> Raw registration processing log.** This opens the **Processing log** page, which shows a list of processed raw registrations and the status of each. 
+To review the registration processing log, sign in to the hub and go to **Production control \> Periodic tasks \> Backoffice workload management \> Raw registration processing log.** This opens the **Processing log** page, which shows a list of processed raw registrations and the status of each.
 
 ![The Raw registration processing log page](media/mes-processing-log.png "The Raw registration processing log page")
 
@@ -103,7 +103,7 @@ Usually, the processes required to run manufacturing execution workloads on a cl
 
 ### View a history of manufacturing jobs processed on a spoke
 
-To review the history of manufacturing jobs processed on a spoke, sign in to the spoke machine and go to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing jobs processing history.**
+To review the history of manufacturing jobs processed on a spoke, sign in to the spoke machine and go to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing jobs processing history**.
 
 The **Manufacturing jobs processing history** page shows the processing history of the production orders on the spoke. You can operate on any listed production order by selecting it and then selecting one of the following from the Action Pane:
 
