@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in the Dynamics 365 Supply Chain Management preview of release 10.0.15 (November 2020)
+title: What's new in the Dynamics 365 Supply Chain Management preview of release 10.0.15 (December 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.15. 
 author: kamaybac
 manager: tfehr
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# What's new in the Dynamics 365 Supply Chain Management preview of release 10.0.15 (November 2020)
+# What's new in the Dynamics 365 Supply Chain Management preview of release 10.0.15 (December 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
