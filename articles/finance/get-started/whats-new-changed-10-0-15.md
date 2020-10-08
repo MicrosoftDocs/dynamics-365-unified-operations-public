@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.15 (December 2020)
+title: What's new or changed in Dynamics 365 Finance 10.0.15 (January 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.15 preview release.
 author: roschlom
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.15
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.15 (December  2020)
+# Preview features in Dynamics 365 Finance 10.0.15 (January 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -38,7 +38,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 - **Preview release:** October 2020
 - **General availability (self-update):** November 2020
-- **Auto-update:** December 2020
+- **Auto-update:** January 2021
 
 ## Features included in this release
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
