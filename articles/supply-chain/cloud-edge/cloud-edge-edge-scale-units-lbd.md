@@ -35,9 +35,9 @@ ms.dyn365.ops.version: 10.0.15
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!CAUTION]
-> The scale unit capability for Dynamics 365 Supply Chain Management is made available on the condition you agree to these [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274).
+> The scale unit capability for Dynamics 365 Supply Chain Management is made available on the condition you agree to the [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274).
 
-Edge scale units can be deployed by creating a Local Business Data (LBD) environment and then configuring it to function as a scale unit. This is achieved by associating the LBD environment with a Dynamics 365 Supply Chain Management Cloud environment, that has been configured to function as a hub for scale units.  
+Edge scale units can be deployed by creating a Local Business Data (LBD) environment and then configuring it to function as a scale unit. This is achieved by associating the LBD environment with a Supply Chain Management cloud environment that has been configured to function as a hub for scale units.  
 
 This document describes how to set up an on-premises LBD environment as an edge scale unit, which can then be associated to a hub-configured cloud service fabric based environment.
 
@@ -47,75 +47,82 @@ The following table provides an overview of the deployment steps.
 
 |Responsibility  |Step  |Details  |
 |---------|---------|---------|
-|Microsoft|Create LCS on-premises Implementation project with one sandbox slot for Scale Unit environment.||
-|Customer|Setup LBD environment with empty database. | More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
-|Customer|Deploy LBD environment through LCS.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
-|Customer / Microsoft|Upload package with the same app/plat build that was deployed on Hub to LCS asset library of on-premises project.|         |
-|Customer|Upload customization package that was deployed on Hub to LCS asset library of on-premises project.|         |
-|Customer|Service LBD environment with previously uploaded app/plat package.|This will ensure that Hub and Spoke have the same build deployed.|
-|Microsoft|Service LBD environment with previously uploaded customization package.|This will make non-shippable models and customer's customizations available on LBD environment.|
-|Customer|Setup Cloud&Edge Pre Deployment script on LBD environment.|This script will inject needed attributes in topology (instance ID, triggers enabled and scale unit enabled).|
-|Customer|Run Update Settings action through LCS.|Run this action with same settings that already exist on environment. This action will then deploy again what was already deployed on environment but it will run previously setup Pre Deployment script which will inject necessary attributes so they can be passed to DbSync execution.|
-|Customer|Compete the scale unit configuration and workload assignment using the Scale Unit Manager portal.|[Scale Unit Manager](https://sum.dynamics.com)|
+|Microsoft|Create an LCS on-premises implementation project with one sandbox slot for a scale unit environment.||
+|Customer|Set up the LBD environment with empty database. | More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
+|Customer|Deploy the LBD environment through LCS.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
+|Customer / Microsoft|Upload a package with the same application and platform build that was deployed on the hub to the LCS asset library of the on-premises project.|         |
+|Customer|Upload a customization package that was deployed on the hub to the LCS asset library of the on-premises project.|         |
+|Customer|Service the LBD environment with the previously uploaded application and platform package.|This ensures that the hub and spoke have the same build deployed.|
+|Microsoft|Service the LBD environment with the previously uploaded customization package.|This makes non-shippable models and your customizations available on the LBD environment.|
+|Customer|Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
+|Customer|Run the "update settings" action through LCS.|Run this action with the same settings that already exist on the environment. This action then redeploys what was already deployed on the environment, but it will run the previously setup pre-deployment script, which will inject the necessary attributes so they can be passed to DbSync execution.|
+|Customer|Compete the scale unit configuration and workload assignment using the Scale Unit Manager portal.|[Scale Unit Manager portal](https://sum.dynamics.com)|
 
-## Create LCS on-premises Implementation project
+## Create an LCS on-premises implementation project
 
-Go to LCS main page ([lcs.dynamics.com](https://lcs.dynamics.com) for production or [lcs.tie.dynamics.com](https://lcs.tie.dynamics.com) for test environments).
-Click + button and create Implementation project.
-Make sure there is at least one sandbox slot available to deploy.
+Go to the LCS main page ([lcs.dynamics.com](https://lcs.dynamics.com) for production environments or [lcs.tie.dynamics.com](https://lcs.tie.dynamics.com) for test environments).
+Select the + button and create an implementation project. Make sure there is at least one sandbox slot available to deploy.
 
 :::image type="content" source="./media/cloud_edge-lbd-lcs2.png" alt-text="Select LCS project type":::
 
 :::image type="content" source="./media/cloud_edge-lbd-lcs3.png" alt-text="Navigate to LCS to configure your environment":::
 
-## Setup and deploy LBD environment with empty database
+## Set up and deploy an LBD environment with empty database
+
+Do the following:
 
 1. Follow the instructions given in [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).
-1. Step 14. Configure databases describes how to setup database with either Demo data or Empty data. Use empty data .bak file on this step.
-1. Final step in mentioned documentation is deploying environment. Deploy latest available application and platform version which is 10.0.8/PU34 at the moment.
+1. [Step 14. Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md#configuredb) describes how to set up database with either demo data or empty data. Use the empty data .bak file for this step.
+1. Final step is deploying the environment. Deploy the latest available application and platform version.
 
 ## Upload target packages to LCS
 
-1. Upload the same combined application/platform package that was applied to Hub environment to Asset Library of LCS on-premises project.
-1. Upload custom deployable package that was applied to Hub environment to Asset Library of LCS on-premises project.
+Do the following:
 
-## Service LBD environment with target packages
+1. Upload the same combined application/platform package that was applied to the hub environment to the asset library of the LCS on-premises project.
+1. Upload the custom deployable package that was applied to the hub environment to the asset library of the LCS on-premises project.
 
-1. Service LBD environment with combined application/platform package that was uploaded in previous step.
-1. Service LBD environment with custom deployable package that was uploaded in previous step.
+## Service the LBD environment with target packages
 
-:::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbdenv1.png" alt-text="Service LBD Environment 1":::
+Do the following:
 
-:::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbdenv2.png" alt-text="Service LBD Environment 2":::
+1. Service the LBD environment with the combined application/platform package that was uploaded in previous step.
+1. Service the LBD environment with the custom deployable package that was uploaded in the previous step.
+
+    :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbdenv1.png" alt-text="Service LBD Environment 1":::
+    
+    :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbdenv2.png" alt-text="Service LBD Environment 2":::
 
 ## Update topology
 
-1. Download Infrastructure scripts. (This is already part of [setting up an LBD environment](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).)
+Do the following:
 
-1. Setup PreDeployment script.
+1. Download the infrastructure scripts. (This is already part of [setting up an LBD environment](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).)
 
-    - Copy Configure-CloudAndEdge.ps1 script from Infrastructure Scripts folder to the Scripts folder in agent file storage share that was setup on the environment. Example of a path is: \\lbdiscsi01\agent\Scripts\Configure-CloudAndEdge.ps1.
-    - Copy D365FO-OP folder from Infrastructure Scripts folder to the Scripts folder in agent file storage share that was setup on the environment. Example of a path is: \\lbdiscsi01\agent\Scripts\D365FO-OP.
-    - Create PreDeployment.ps1 script that will invoke Configure-CloudAndEdge.ps1 with necessary parameters. PreDeployment script needs to be placed in Scripts folder in agent share in order to be run. Example of a path is: \\lbdiscsi01\agent\Scripts\PreDeployment.ps1.
-    - Content of PreDeployment.ps1 can look like this:
+1. Set up the pre-deployment script.
+
+    - Copy the `Configure-CloudAndEdge.ps1` script from the `Infrastructure Scripts` folder to the `Scripts` folder on the agent file storage share that was set up on the environment. A typical path is: `\\lbdiscsi01\agent\Scripts\Configure-CloudAndEdge.ps1`.
+    - Copy the `D365FO-OP` folder from the `Infrastructure Scripts` folder to the `Scripts` folder in the agent file storage share that was set up on the environment. A typical path is: `\\lbdiscsi01\agent\Scripts\D365FO-OP`.
+    - Create the `PreDeployment.ps1` script that will invoke `Configure-CloudAndEdge.ps1` with the necessary parameters. The pre-deployment must be placed in the `Scripts` folder on the agent share to be run. A typical path is: `\\lbdiscsi01\agent\Scripts\PreDeployment.ps1`.
+    - The content of `PreDeployment.ps1` can look like this:
 
         ```plaintext
         $agentShare = '\\lbdiscsi01\agent'
         
-        Write-Output "AgentShare is set to $agentShare"         
+        Write-Output "AgentShare is set to $agentShare" 
         & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
         ```
 
 1. Redeploy the environment.
 
-- This can be done by triggering Update Settings action from LCS without changing any of the values in the form.
-- That action will redeploy environment and PreDeployment.ps1 will be invoked before deployment which will update environment's topology.
-- Update Settings action is used to update some topology values such as certificate thumbprints, but it can be used for this purposes if all the values are left unchanged.
-- Update Settings action consists of two steps.
-- Prepare - This is triggered through LCS Maintain > Update Settings.
-- Deploy - This needs to be triggered after preparation step is done (takes couple of minutes). Deploy can be triggered from environment's details LCS page.
+    - This can be done by triggering the **Update settings** action from LCS without changing any of the values in the form.
+    - That action will redeploy the environment and `PreDeployment.ps1` will be invoked before deployment, which will update environment's topology.
+    - The **Update settings** action is often used to update some topology values such as certificate thumbprints, but it can also be used for this purposes if all the values are left unchanged.
+    - The **Update settings** action consists of two steps:
+        - **Prepare** - This is triggered through LCS by selecting **Maintain > Update settings**.
+        - **Deploy** - This must be triggered after the preparation step is finished, which takes a few minutes. Deployment can be triggered from the environment's details LCS page.
 
-:::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbd-updatesettings.png" alt-text="Deploy updates from LBD":::
+        :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbd-updatesettings.png" alt-text="Deploy updates from LBD":::
 
 ## Assign your LBD edge scale unit to a hub
 
