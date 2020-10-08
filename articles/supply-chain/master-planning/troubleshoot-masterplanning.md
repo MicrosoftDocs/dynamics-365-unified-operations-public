@@ -47,19 +47,12 @@ In order to update the delay for planned orders, ensure that the "Perform explos
 Master planning considers the safety margins but when scheduling planned production orders ignores the safety margins.
 
 ### Resolution/Workaround
-This is working as expected. Margins are only considered during master planning, not during manual scheduling. Expectation is that these margins act as a buffer during the planning phase to give some "margin" for the actual process. 
+Margins are only considered during master planning, not during manual scheduling. Margins are designed to act as a buffer during the planning phase to give some "margin" for the actual process. 
 
 To get the desired result, the margin can be removed and the route must be updated to include the desired time e.g. as queue time. This way both master planning and manual scheduling should provide the same result.
 
 ##  Planned orders are generated despite having items in stock and Production orders already exist for the items
-A potential way to resolve this could be setting the Positive days on the coverage group, since this will determine if onhand can be used for the demand. Then new planned order will not be generated for the items that are in stock.
+A potential way to resolve this could be to increase the Positive days on the coverage group, since this will determine if onhand can be used for the demand. Then new planned order will not be generated for the items that are in stock.
 
 ## Master planning doesn’t seem to respect capacity limitations and is scheduling more than the available capacity
-Master planning doesn’t seem to respect capacity limitations. Operation reserved is showing higher than capacity. 
-
-### Resolution/Fix
 When using operation scheduling with finite capacity and where a mix of requirements for both resource group and individual resources is specified on the route, there is a slight chance of overbooking due to the way the algorithm checks for capacity conflicts. This overbooking can happen when running master planning with helpers and is most dominant if there is a lot of jobs with a relatively short runtime. If it is essential that no overbooking happens for operations scheduling then there is an option to basically make the scheduling part of master planning single threaded, by turning on the "Accurate finite capacity for Operation Scheduling" flag on the master planning parameters. This option has to be added manually to the form by personalization as shown below. Note that if using this option scheduling will run slower due to the lack of parallelism.  
-
-
-
-
