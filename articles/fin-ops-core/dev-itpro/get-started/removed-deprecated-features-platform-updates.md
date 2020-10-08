@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,22 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Platform updates for version 10.0.15 of Finance and Operations apps
+
+> [!NOTE]
+> Version 10.0.15 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### Visual Studio add-in to apply metadata hotfixes
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Metadata hotfixes are no longer supported with the [One Version](../../fin-ops/get-started/one-version.md) service updates that were introduced in July 2018 with version 8.1. |
+| **Replaced by another feature?**   | Individual metadata hotfixes are not available for supported versions. Cumulative quality updates are applied instead. |
+| **Product areas affected**         | Visual Studio add-ins |
+| **Deployment option**              | Development virtual machines |
+| **Status**                         | With version 10.0.15, the add-in is no longer included in the Visual Studio tools. |
+
+
 ## Platform updates for version 10.0.14 of Finance and Operations apps
 
 > [!NOTE]
@@ -56,6 +72,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Product areas affected**         | System Administration |
 | **Deployment option**              | All |
 | **Status**                         | By October 2021 this form will be removed.   |
+
 
 ## Platform updates for version 10.0.13 of Finance and Operations apps
 
