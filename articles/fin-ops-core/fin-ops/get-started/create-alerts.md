@@ -5,7 +5,7 @@ title: Create alert rules
 description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -101,9 +101,10 @@ Alerts can be sent externally using the business events framework. When creating
 ## Limitations and workarounds
 
 ### Workaround for creating alerts for the secondary data sources of a form
-Alerts can't be created for the some secondary data sources on forms. For example when creating alerts on the customer or vendor posting profiles form, only the fields on the header (CustLedger or VendLedger) are available and not the dimension accounts. The workaround for this limitation is to use **SysTableBrowser** to open that table as primary data source: 
-1. Open the desired table in the **SysTableBrowser** form
+Alerts can't be created for some secondary data sources on forms. For example, when creating alerts on the customer or vendor posting profiles form, only the fields on the header (CustLedger or VendLedger) are available and not the dimension accounts. The workaround for this limitation is to use **SysTableBrowser** to open that table as primary data source. 
+1. Open the table in the **SysTableBrowser** form.
 	```
     	https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
 	```
-2. Create an alert from that SysTableBrowser form
+2. Create an alert from the SysTableBrowser form.
+
