@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Supply Chain Management 10.0.15 (November 2020)
+title: What's new in the Dynamics 365 Supply Chain Management preview of release 10.0.15 (November 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.15. 
 author: kamaybac
 manager: tfehr
@@ -29,25 +29,24 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# Preview features in Dynamics 365 Supply Chain Management 10.0.15 (November 2020)
+# What's new in the Dynamics 365 Supply Chain Management preview of release 10.0.15 (November 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.15. This version has a build number of 10.0.653 <!-- KFM: Find final build number --> and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.15. This version has a build number of 10.0.653 <!-- KFM: Find final build number --> and is available as follows:
 
-- **Preview release:** October 2020
-- **General availability (self-update):** November 2020
-- **Auto-update:** December 2020
+- **Preview of release 10.0.15:** October 2020
+- **General availability of release 10.0.15 (manual update):** November 2020
+- **General availability of release 10.0.15 (auto update):** December 2020
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Some features are still in preview, while others may be released as generally available; follow the links to the release plan to see the individual release dates. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
+- Cloud and edge scale unit management with manufacturing and warehouse execution workloads
 - [Create and process transfer orders from the warehouse app](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - For more information, see [Create transfer orders from the warehouse app](../warehousing/create-transfer-order-from-warehouse-app.md).
 - [Default RFQ reply fields for vendor bidding](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - For more information, see [Requests for quotation (RFQs) overview](../procurement/request-quotations.md).
-- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
 - [Engineering Change Management Add-in for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - For more information, see [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).
 - [Mixed-reality Guides for manufacturing](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - For more information, see [Provide mixed-reality Guides for workers in production](../production-control/instruction-guides-in-production-overview.md).
 - [New user experience for production floor execution](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md).
