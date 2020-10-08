@@ -97,3 +97,13 @@ Alerts can be sent externally using the business events framework. When creating
 7. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text is used as the subject heading for the email message that you receive when an alert is triggered. If you want to send the alert as a business event, set **Send externally** to **Yes**.
 8. In the **Message** field, enter an optional message. The text is used as the message that you receive when an alert is triggered.
 9. Select **OK** to save the settings and create the alert rule.
+
+## Limitations and workarounds
+
+### Workaround for creating alerts for the secondary data sources of a form
+Alerts can't be created for the some secondary data sources on forms. For example when creating alerts on the customer or vendor posting profiles form, only the fields on the header (CustLedger or VendLedger) are available and not the dimension accounts. The workaround for this limitation is to use **SysTableBrowser** to open that table as primary data source: 
+1. Open the desired table in the **SysTableBrowser** form
+	```
+    	https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+	```
+2. Create an alert from that SysTableBrowser form
