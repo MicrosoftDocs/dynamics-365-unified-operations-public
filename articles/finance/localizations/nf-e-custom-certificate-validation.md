@@ -34,9 +34,10 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-When you turn on this feature, custom validation allows a connection with the web services. This connection is required to transmit NF-e and receive authorization from SEFAZ.
+When you turn the NF-e custom certificate verification feature, custom validation allows a connection with the web services. This connection is required to transmit NF-e and receive authorization from SEFAZ.
 
-The property, **Server authentication purpose** from the certificate V5 is issued by the Brazilian Root Certificate Authority. The property is disabled by default, and must be manually enabled. In some circumstances, the automatic certificate update can switch this property to no longer be enabled. When this happens, the TLS connection is affected and is no longer trusted. The ability to issue NF-e on production environments for states of Minas Gerais (MG) and Paraná (PR) states is also impacted.
+The **Server authentication purpose** property from the certificate V5 is issued by the Brazilian Root Certificate Authority. This property is turned off by default and must be manually enabled. In some circumstances, the automatic certificate update can switch this property to no longer be enabled. If this happens, the TLS connection is affected and is no longer trusted. The ability to issue NF-e on production environments for states of Minas Gerais (MG) and Paraná (PR) states is also impacted.
 
-This update allows for an alternative solution for certificate validation, which permits establishing a secure communication.
+This update allows for an alternative solution for certificate validation, which means that it’s possible to establish a secure communication.
+
 
