@@ -149,6 +149,8 @@ Currently, the publish groups feature supports only website content. However, Mi
 
 [Document states and lifecycle](document-states-overview.md)
 
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
+
 [Work with modules](work-with-modules.md)
 
 [Work with fragments](work-with-fragments.md)
