@@ -123,7 +123,7 @@ The Goods and Service Tax Network (GSTN) has released a trial version of the new
     |-----------------|------------------|
     | 10.0.13         | 10.0.569.10002   |
 
-- Make sure that your application imports one of the required tax configuration versions.
+- Make sure that your application imports following tax configuration versions.
 
     **Tax configuration name and version:**
 
