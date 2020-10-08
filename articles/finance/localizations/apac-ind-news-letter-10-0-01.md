@@ -50,7 +50,7 @@ The following GSTR issues are also resolved:
 ## Non-GST item
 You can create a non-GST item that is the default for **Tax information** in taxable transactions.
 
-![](media/GST-non-gst-item-1-10-0-01.png)
+![Non-GST item](media/GST-non-gst-item-1-10-0-01.png)
 
 ## Critical fixes 
 

@@ -38,7 +38,7 @@ This topic includes a summary of the new features and critical bug fixes release
 ### Auto completion when editing tax formulas or conditions
 Advanced editor is enabled for Global Tax Engine formulas/conditions to improve user productivity. To enable this functionality, go to **Electronic Reporting** > **Tax Configuration** > **Configurations** > **User Parameter** and set the **Enable advanced formula editor** field to **Yes**.
 
- ![](media/GST-advance-editor-1-10-0-02.png)
+ ![Advanced formula editor](media/GST-advance-editor-1-10-0-02.png)
 
 ## Critical fixes 
 
