@@ -67,7 +67,7 @@ You can use the Electronic invoicing add-on with your current license. No additi
 Before you complete the steps in this topic, you must have the following prerequisites in place:
 
 - Access to your LCS account.
-- An LCS deployment project that includes Finance or Supply Chain Management version 10.0.12 or later.
+- An LCS deployment project that includes Finance or Supply Chain Management version 10.0.13 or later.
 - Access to your RCS account.
 - Turn on the Globalization feature for your RCS account through the **Feature management** module. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md)
 - Create a key vault resource and a storage account in Azure. For more information, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -90,6 +90,9 @@ The following illustration shows the five main steps that you will complete in t
 ## LCS setup
 
 1. Sign in to your LCS account.
+2. Click on **Preview feature management** tile.
+3. On field group **Public Preview features** select **BusinessDocumentSubmission**.
+4. Turn on **Preview feature enabled**.
 2. Select the LCS deployment project. Before you can select the project, it must be up and running.
 3. On the **Environment add-ins** FastTab, select **Install a new add-in**.
 4. Select **Business Document Submission**.
@@ -129,7 +132,7 @@ During the RCS setup, you will complete these tasks:
 
     ![Key Vault URI field](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. On the **Certificates** FastTab, select **Add**, and enter the digital certificate names and the key vault secrets. Both sets of values are configured on the key vault resource in Azure.
+7. On the **Certificates** FastTab, select **Add**, to enter the all digital certificate names and the key vault secrets which are needed to establish trustable connections. In the column **Type**, you can specify wheather it is a Certificate or a Secret. Both sets of values are configured on the key vault resource in Azure.
 
     ![Adding certificates](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -137,9 +140,9 @@ During the RCS setup, you will complete these tasks:
 
 ### Set up the RCS integration with the Electronic invoicing add-on server
 
-1. In the **Globalization features** workspace, in the **Related links** section, select the **Electronic reporting parameters** link.
+1. In the **Globalization features** workspace, in the **Related settings** section, select the **Electronic reporting parameters** link.
 2. Select **Click here to connect to Lifecycle Service**. If you don't want to connect to LCS, select **Cancel**.
-3. On the **Electronic invoicing add-on** tab, in the **Service endpoint URI** field, enter `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
+3. On the **e-Invoicing services** tab, in the **Service endpoint URI** field, enter the value according to the available geographies: `https://businessdocumentsubmission.us.operations365.dynamics.com/` or `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. In the **Application ID** field, verify that it shows the ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
 5. In the **LCS Environment ID** field, enter the ID of your LCS subscription account.
 
