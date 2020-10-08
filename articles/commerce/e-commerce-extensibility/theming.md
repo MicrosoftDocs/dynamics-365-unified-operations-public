@@ -5,7 +5,7 @@ title: Theming overview
 description: This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -40,7 +40,7 @@ Dynamics 365 Commerce lets you apply a theme to your whole online site, individu
 
 Themes include Sassy Cascading Style Sheets (SCSS) files that you can use to format your site pages and modules. They can optionally also contain module view and definition extensions, so that modules can render different views, depending on the theme that is selected. 
 
-After a theme is created and uploaded to your production site, you can use the Commerce site builder tool to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied, so that all the modules on that page have a consistent look and feel. The site builder tool also lets you upload additional CSS overrides. In that way, you can make changes on top of the selected theme.
+After a theme is created and uploaded to your production site, you can use the Commerce site builder tool to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied, so that all the modules on that page have a consistent look and feel. The site builder tool also lets you upload additional Cascading Style Sheets (CSS) overrides. In that way, you can make changes on top of the selected theme.
 
 The following illustration shows how a theme is selected for a page in Dynamics 365 Commerce. Notice that the page container (**Default page**) is selected, and the **Theme** field for the page appears in the properties pane on the right.
 
@@ -102,6 +102,25 @@ For every module, a class name is defined that matches the module name. In this 
 
 Custom themes can be created by using the Dynamics 365 Commerce online SDK. They can then be stored in the **/src/themes/** folder. For more information, see [Create a theme](create-theme.md).
 
+## RTL and LTR support within a theme
+
+You may have requirements to support both right-to-left (RTL) and left-to-right (LTR) languages on your e-Commerce site. Themes support the ability to specify different RTL and LTR SCSS files. 
+
+> [!NOTE]
+> RTL and LTR support within a theme is available in Dynamics 365 Commerce release 10.0.15.
+
+Each theme has a **styles\THEME_NAME.theme.scss** file that is created using the **yarn msdyn365 add-theme** command-line interface (CLI) command. For example, using the command **yarn msdyn365 add-theme spring** to create a new theme called "spring" will create the file "\src\themes\spring\styles\spring.theme.scss", which contains the SCSS code for the theme. SCSS files are compiled into CSS files when using the **yarn start** or **yarn pack** commands, and are then used to render site pages. 
+
+To support specific RTL or LTR versions of a SCSS file, you can provide additional files using the following file naming convention: **THEME_NAME.rtl.theme.scss** for RTL support and **THEME_NAME.ltr.theme.scss** for LTR support. When a page renders, the appropriate CSS file will be referenced according to the browser language setting. If you only need support for a single language, use the default **THEME_NAME.theme.scss** file.
+
+## RTL and LTR best practices
+
+Because the CSS code used in RTL and LTR layouts is generally the same except for a few properties, those differing properties can be specified in their respective "theme" files and a "base-style" file can be created to be shared (and imported) by both the RTL and LTR SCSS files.
+
+- **THEME_NAME-rtl.theme.scss** - Contains specific properties for the RTL layout.
+- **THEME_NAME-ltr.theme.scss** - Contains specific properties for the LTR layout.
+- **base-style.scss** - Contains shared styles and is imported in the two THEME_NAME files.
+
 ## Additional resources
 
 [Create a new theme](create-theme.md)
@@ -113,3 +132,5 @@ Custom themes can be created by using the Dynamics 365 Commerce online SDK. They
 [Extend a theme to add module extensions](theme-module-extensions.md)
 
 [Extend a theme from a base theme](extend-theme.md)
+
+[CLI command reference](cli-command-reference.md)
