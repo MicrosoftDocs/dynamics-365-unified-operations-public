@@ -134,8 +134,6 @@ Now, if you use the base URL of the channel and go to the URL of the cross-chann
 
 ## Additional resources
 
-## Additional resources
-
 [Ways to add content](add-manage-content.md)
 
 [Page model glossary](page-elements-overview.md)
