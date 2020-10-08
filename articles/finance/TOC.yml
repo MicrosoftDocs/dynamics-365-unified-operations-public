@@ -1900,7 +1900,7 @@
           items:
           - name: India GST overview
             href: localizations/apac-ind-gst.md
-          - name: What's new or changed for APAC India GST localization
+          - name: What's new or changed for India GST localization
             items: 
             - name: What's new or changed in 10.0.0
               href: localizations/apac-ind-news-letter-10-0-00.md
