@@ -56,4 +56,8 @@ Select one of the following topics to get started.
 
 [Authoring page overview](authoring-home-overview.md)
 
+[Page model glossary](page-elements-overview.md)
+
 [Document states and lifecycle](document-states-overview.md)
+
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
