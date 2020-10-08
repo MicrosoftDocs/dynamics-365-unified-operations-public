@@ -5,7 +5,7 @@ title: Enable and use cross-channel sharing
 description: This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 manager: annbe
-ms.date: 08/06/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -134,6 +134,12 @@ Now, if you use the base URL of the channel and go to the URL of the cross-chann
 
 ## Additional resources
 
-[Authoring page overview](authoring-home-overview.md)
+## Additional resources
+
+[Ways to add content](add-manage-content.md)
+
+[Page model glossary](page-elements-overview.md)
 
 [Document states and lifecycle](document-states-overview.md)
+
+[Work with publish groups](publish-groups.md)
