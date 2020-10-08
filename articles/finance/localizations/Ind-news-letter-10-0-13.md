@@ -135,7 +135,7 @@ The Goods and Service Tax Network (GSTN) has released a trial version of the new
 
 - For information about the update for AX 2012 R3, see the following KB article: [New GSTR Offline Tool (ANX-1 and Purchase Register) for India in Dynamics AX2012R3](https://support.microsoft.com/help/4552119).
 - [Download the package](https://fix.lcs.dynamics.com/Issue/Details?bugId=3981046).
-- Import one of the required tax configuration versions.
+
 - Import the following tax configuration version:
 
     - Taxable Document. Version.64
