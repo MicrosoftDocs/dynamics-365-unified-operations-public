@@ -710,6 +710,8 @@
           href: customer-orders-overview.md
         - name: Hybrid customer orders
           href: hybrid-customer-orders.md
+        - name: Recall order operation in POS
+          href: enhancedorderrecall.md
       - name: Sales orders   
         items:
         - name: Create a call center order 
