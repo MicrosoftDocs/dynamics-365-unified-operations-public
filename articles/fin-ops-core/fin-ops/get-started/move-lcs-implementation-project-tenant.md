@@ -158,7 +158,7 @@ Before requesting the production environment ensure that all pre-requisites are 
 
 7. Once production environment has been deployed, verify that source and target environments have exactly the same code, otherwise migration will fail. If necessary, deployable packages must be installed on the target production environment.
 8. Request to copy database and blob storage from old production environment to the new production environment.
-	1. Raise a [service request](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team?toc=/dynamics365/finance/toc.json) of type **Other** to request Microsoft Service Engineering team to copy the database and blob storage from the old production environment to the new production environment.
+	1. Raise a [service request](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) of type **Other** to request Microsoft Service Engineering team to copy the database and blob storage from the old production environment to the new production environment.
 	2. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the e-mail notifications or notifications directly in the service request. 
 	3. After Microsoft has completed the activity and informed you about it, you will need to validate the new production environment. 
 	4. If you face an issue after the migration, please raise a support ticket.
