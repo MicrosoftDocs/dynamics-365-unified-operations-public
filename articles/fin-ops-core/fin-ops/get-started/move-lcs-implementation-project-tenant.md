@@ -58,12 +58,12 @@ Ask the cloud service provider not to suspend the existing subscriptions at this
 
 If you're licensed through a Microsoft Volume Licensing agreement, you must call the [Volume Licensing support center](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx) and ask that the subscriptions be remapped from the old tenant to the new tenant. You can contact Volume Licensing Support through Microsoft 365 Admin center. Request a grace period, when the subscriptions will be active on both tenants. Because of customer privacy concerns, this request must be made by the customer. You should have the following information available:
 
-- Public customer number
-- Enrollment number
-- The current tenant domain that the subscriptions are currently provisioned on
-- The destination tenant domain that the customer wants the subscriptions provisioned under
-- A detailed explanation of why the customer must have its Volume Licensing subscriptions migrated to a different tenant
-- The total number of paid subscriptions that must be moved to the new tenant, together with the subscription type and seat count
+- Public customer number.
+- Enrollment number.
+- The current tenant domain that the subscriptions are currently provisioned on.
+- The destination tenant domain that the customer wants the subscriptions provisioned under.
+- A detailed explanation of why the customer must have its Volume Licensing subscriptions migrated to a different tenant.
+- The total number of paid subscriptions that must be moved to the new tenant, together with the subscription type and seat count.
 
 > [!IMPORTANT]
 > It's crucial that the subscriptions be active on both tenants in parallel for a few weeks, until you've finished decommissioning LCS on the old tenant.
@@ -72,7 +72,7 @@ If you're licensed through a Microsoft Volume Licensing agreement, you must call
 
 On the new tenant, you will get a new LCS project that you must initiate and set up.
 
-1. Complete the Project Onboarding wizard. For more information, see [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md). When completing the onboarding wizard, you must indicate on the **Project Overview** page that you are **Moving existing LCS project from another tenant** and provide the source LCS project ID.
+1. Complete the Project Onboarding wizard. For more information, see [LCS project onboarding](../../dev-itpro/lifecycle-services/project-onboarding.md). When completing the wizard, you must indicate on the **Project Overview** page that you are **Moving existing LCS project from another tenant** and provide the source LCS project ID.
 2. Fully configure LCS. As part of this configuration, you must:
 	1. Upload and activate a subscription estimator. If you are already live in the source LCS project, you need to ensure that the estimates match.
 	2. Add your deployable package to the asset library.
@@ -124,9 +124,9 @@ Before requesting the production environment, ensure that all pre-requisites are
 
 1. Get all required licenses that are needed to correctly license all users on the  production environment.
 2. When the licenses are in place, upload a subscription estimator to the new LCS project. It should match the subscription estimator that is active in the source LCS project, and it must correctly reflect peak transaction volumes.
-3. Send an email to Dynamics 365 FO Go-Live **d365fogl\@microsoft.com** stating that your new LCS project is ready for Microsoft to move your production database and Azure Blob Storage. To ensure that the process will run smoothly, provide the following details in the email (you can copy all these topics, paste it in the email, and then answer each one in line):
+3. Send an email to Dynamics 365 FO Go-Live [d365fogl\@microsoft.com](d365fogl\@microsoft.com) stating that your new LCS project is ready for Microsoft to move your production database and Azure Blob Storage. To ensure that the process will run smoothly, provide the following details in the email. We suggest that copy the following list to your email, and then answer all of the information line by line.
 
-	**LCS**
+	**Lifecycle Services**
 	- Provide the LCS IDs (number in the LCS project URL) for source and target LCS project.
 	- Confirm that the go-live date is set correctly in the target LCS project.
 	- Confirm that the update schedules are set in the target LCS project (**LCS > Menu > Project settings > Update settings**).
@@ -158,7 +158,7 @@ Before requesting the production environment, ensure that all pre-requisites are
 
 7. After the production environment has been deployed, verify that source and target environments have exactly the same code, otherwise migration will fail. If necessary, deployable packages must be installed on the target production environment.
 8. Request to copy database and blob storage from the old production environment to the new production environment.
-	1. Raise a [service request](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) of type **Other** to request that the Microsoft Service Engineering team copy the database and blob storage from the old production environment to the new production environment.
+	1. File a [service request](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) of type **Other** to request that the Microsoft Service Engineering team copy the database and blob storage from the old production environment to the new production environment.
 	2. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request. 
 	3. After Microsoft has completed the activity and informed you about it, you will need to validate the new production environment. 
 	4. If you encounter an issue after the migration, file a support ticket.
