@@ -1,0 +1,98 @@
+---
+
+# required metadata
+
+title: Prepare for Go-live
+description: This page provides guidance on how to prepare for a go-live with Dynamics 365 Human Resources.
+author: raprofit
+manager: AnnBe
+ms.date: 10/09/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-human-resources
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: dkrame
+ms.search.validFrom: 2020-10-09
+ms.dyn365.ops.version: Human Resources
+
+---
+
+# Prepare for go-live
+
+[!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> Finance and Operations app such as Dynamics 365 Human Resources have evolved into purpose-built applications to help you manage specific business functions. For more information about these changes, see [Dynamics 365 Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
+This topic describes how to prepare to go-live with a Dynamics 365 Human Resources project by using Microsoft Dynamics Lifecycle Services (LCS). 
+
+This graphic shows the phases of the go-live process. 
+
+![Go-live process](need to upload a new graphic and put link here)
+
+The following table lists all the steps in the process, with the expected duration and who is responsible to take the action. 
+| | Action | Duration/When | Who | Notes |
+|1| Update Go-live date in LCS|At the latest 2-3 months in advance |Partner/Customer| The milestone dates should be kept up to date on an ongoing basis|
+|2| Complete and send check list| After UAT complete| Partner/Customer|Follow the instructions provided in the "FastTrack Go-live assessment" section later in this topic. |
+|3| Project assessment (FastTrack) | FastTrack Architect*| Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
+|4| Project workshop (FastTrack) | FastTrack Architect* | |
+|5| Data package imports | Depends on the project | Partner/Customer | Follow the instructions in the topic, [Data management overview](/dynamics-365-operations/articles/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).|
+|6| Production ready| After all previous steps have been completed | Partner/Customer | Partner/Customer can take control of the production environment.|
+|7| Cutover activities | Depends on the project | Partner/Customer ||
+|8| Go-live | Depends on the project| Customer||
+
+> [!IMPORTANT]
+> *Steps 3 and 4 are only completed for customers who qualify for FastTrack.
+
+## Completing the LCS methodology
+
+A major milestone in each implementation project is the cutover to the production environment. 
+
+To help ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
+
+Customers must complete the Analysis, Design, and develop, and Test phases in the LCS methodology before the Configure button that is used to request the production environment becomes available. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services (LCS) for Finance and Operations apps customers](/Dynamics-365-Operations/articles/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). 
+
+The process of completing a step has two parts: 
+
+- Do the actual work, such as a fit-gap analysis or user acceptance testing (UAT). 
+- Mark the corresponding step in the LCS methodology as completed. 
+
+It is good practice to complete the steps in the methodology as you make progress with the implementation. Do not wait until the last minute. Do not just click through all the steps so that you can get a production environment. It is in the customer's best interest to have a solid implementation. 
+
+## UAT for your solution
+
+During the UAT phase, you must test all the business processes that you have implemented, and any customizations that you have made, in a Sandbox environment in the implementation project. To help ensure a successful go-live, you should consider the following as you complete the UAT phase: 
+
+- Test cases cover the entire scope of requirements. 
+- Test by using migrated data. This data should include master data such as workers, jobs and positions. You will also want to include opening balances such as leave and absence accruals. Finally, open transactions, such as current benefits enrollments should be included. Testing with all types of data should be completed even if the data set is not finalized. 
+- Test by using the correct security roles (default roles and custom roles) that are assigned to users. 
+- Make sure that the solution complies with any company-specific and industry-specific regulatory requirements. 
+- Document all features and obtain approval and sign-off from the customer. 
+
+## FastTrack Go-live assessment
+
+Customers who are qualified for FastTrack and are engaged with a FastTrack Solution Architect will complete a go-live review with the Microsoft FastTrack. If you are not familiar with Microsoft FastTrack, see [Microsoft FastTrack](Dynamics-365-Operations/articles/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md). 
+
+About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist. 
+
+You can download the checklist [here](Need to upload the document and make link here).  
+
+The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed. 
+
+When you have completed the go-live checklist, email it to your designated FastTrack Solution Architect. Always include a key stakeholder from the customer and the implementation partner on the email. 
+
+After the checklist is submitted, your FastTrack Solution Architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, the solution architect might highlight risk factors and ask for a mitigation plan. 
