@@ -33,7 +33,7 @@ This topic describes how to build sales price models with sales prices based on 
 
 ## Set relevant product information management parameters
 
-Before you start building your price models, you must define a default currency, which is used when you build your sales price models. You can also choose whether to attach an Excel file with a price breakdown for all order or quotation lines. The price breakdown will enable you to share details with customers about how you arrived at a specific sales price for a configured product.
+Before you start building your price models, you must define a default currency, which is used when you build your sales price models. You can also choose whether to attach a Microsoft Excel file with a price breakdown for all order or quotation lines. The price breakdown will enable you to share details with customers about how you arrived at a specific sales price for a configured product.
 
 To set your default currency:
 
@@ -57,10 +57,10 @@ To build a sales price model:
 1. Select **Edit** to open the edit page for your selected model, which provides the following features:
     - The header of the form shows the default currency and lets you add new currencies for your price setup.
     - The left pane shows all the components and user requirements of the product model. Each node in the product model tree can have one base-price expression and an optional number of expression rules. An expression rule consists of a condition and an expression and each expression rule covers a product option that helps control the price of the product.
-    - When you build your conditions and expressions, you have the same operators available as for calculations in a product model. Moreover, the expression editor supports both conditions and expressions.
+    - When you build your conditions and expressions, you have the same operators available as for calculations in a product model. The expression editor also supports both conditions and expressions.
 1. Select a node in the left column and then use the features described in the previous step to establish pricing rules for it (see also the example provided after this procedure). Repeat this step for each node as needed.
 
-The Following example shows a base price of a static number of 899.95 EUR, which can be modified by one or more of the following five expression rules, depending on the configuration selected by the customer:
+The following example shows a base price of a static number of 899.95 EUR, which can be modified by one or more of the following five expression rules, depending on the configuration selected by the customer:
 
 - For white cabinet finish, subtract 59.95 EUR.
 - For corner protection, add 35.95 EUR.
@@ -77,9 +77,9 @@ When a configurable product is sold, the system checks whether the prices have b
 To add explicit prices in an additional currency:
 
 1. Open the edit page for your price model, as described in [Build your sales price models](#build-price-model).
-1. Select the **Add** button in the header of the price model to open the **Currencies** drop-down dialog box, which lists the currencies available on your system.
+1. Select the **Add** button in the header of the price model to open the **Currencies** drop-down dialog box, which lists the available currencies.
 1. Select the currency you want to add in the **Currencies** drop-down dialog box and then select **OK**.
-1. The **Current currency** drop-down list now includes the currency that you just added, plus any other currencies that may have been added previously. Select your new currency and notice that the grid in the Expression rules section now includes two expression fields:
+1. The **Current currency** drop-down list now includes the currency that you just added, plus any other currencies that may have been added previously. Select your new currency and notice that the grid in the **Expression rules** section now includes two expression fields:
     - **Expression** - Shows the expression (or constant value) for finding the price using the currency currently selected for **Current currency**.
     - **Default expressions** - Shows the expression (or constant value) for finding the price using the default currently (shown in the **Default currency** field).
 
@@ -96,10 +96,10 @@ In the example below, _EUR_ is the default currency, and _USD_ has been added as
 
 ## Test your price model
 
-To test how the sales prices behave in a configuration session, open the edit page for your price model, as described in [Build your sales price models](#build-price-model) and then select  **Test** on the Action Pane. The **Test product model** dialog box opens, where you can do the following:
+To test how the sales prices work in a configuration session, open the edit page for your price model, as described in [Build your sales price models](#build-price-model) and then select  **Test** on the Action Pane. The **Test product model** dialog box opens, where you can do the following:
 
 - Use the configuration settings offered here to select product options and then see how they affect the value shown for **Price and ship date**.
-- Select **View price breakdown** to download a Microsoft Excel document that shows full details about how the price was calculated.
+- Select **View price breakdown** to download an Excel document that shows full details about how the price was calculated.
 
 ![Test your product model](media/prod-config-test.png "Test your product model")
 
@@ -121,8 +121,8 @@ To set up selection criteria for price models:
     - **Description** - Briefly describe the query and what it is for.
     - **Price model** - Select a [price model](#build-price-model) (from the current configuration model) that the query will apply when triggered.
     - **Order type** - Select the type of order where the query will apply.
-    - **Valid from** - Specify the first day where the query will apply.
-    - **Expire by** - Specify the last date where the query will apply.
+    - **Valid from** - Specify the first day when the query will apply.
+    - **Expire by** - Specify the last date when the query will apply.
 
     ![Price model criteria](media/prod-config-price-model-criteria.png "Price model criteria")
 
@@ -130,12 +130,12 @@ To set up selection criteria for price models:
 
 1. Repeat steps 4-5 for each query you require.
     > [!TIP]
-    > You can sometimes save time by copying an existing row that is already similar to a new one that you need to add. To do this, select a target row and then select **Duplicate** on the Action Pane.
+    > You can save time by copying an existing row that is already similar to a new one that you need to add. To do this, select a target row and then select **Duplicate** on the Action Pane.
 
 1. When you have finished setting up your criteria, arrange them into the proper order in the **Price model criteria** list. To reposition a row, select the row and then select **Up** or **Down** on the Action Pane.
 
     > [!IMPORTANT]
-    > At configuration time, the system starts looking from the top of the list and uses the first query that matches the data on the quote or the order line. Therefore, you must put your most specific queries on top. If you place a general query at the top of the list, this is the one that will be used even though there might be a query further down the list that targets the exact customer or prospect of the configuration.
+    > At configuration time, the system starts searching from the top of the list and uses the first query that matches the data on the quote or the order line. Therefore, you must put your most specific queries on top. If you place a general query at the top of the list, this is the one that will be used even though there might be a query further down the list that targets the exact customer or prospect of the configuration.
 
 ## Set attribute-based sales prices for the product model version
 
