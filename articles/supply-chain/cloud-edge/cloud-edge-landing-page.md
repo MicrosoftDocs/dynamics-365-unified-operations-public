@@ -121,7 +121,7 @@ Review the [warehouse scale unit workload details](cloud-edge-workload-warehousi
 
 ### Deployment of the preview for cloud and edge scale units
 
-The following diagram shows the sign-up and provisioning flow for the public preview of cloud and edge scale units.
+The following diagram shows the sign-up and provisioning flow for the public preview with cloud scale units.
 
 :::image type="content" source="media/cloud_edge-previewsignup.png" alt-text="Diagram of the preview sign-up steps":::
 
