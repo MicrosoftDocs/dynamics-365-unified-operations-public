@@ -52,19 +52,17 @@ When you generate this report, the following default parameters are displayed. Y
 <td><p>Select one or more billing classifications to include on the report.</p>
 <div class="alert">
 
-> [!NOTE]
-> <P>This control is available only if the <STRONG>Public Sector</STRONG> configuration key is selected.</P>
+**Note:** This control is available only if the <STRONG>Public Sector</STRONG> configuration key is selected.</P>
 
 
 </div></td>
 </tr>
 <tr class="even">
 <td><p><strong>Include transactions without a billing classification</strong></p></td>
-<td><p>If this check box is selected, all transactions that do not have a billing classifications assigned to them will be displayed on the report.</p>
+<td><p>If this check box is selected, all transactions that do not have a billing classification assigned to them will be displayed on the report.</p>
 <div class="alert">
 
-> [!NOTE]
-> <P>This control is available only if the <STRONG>Public sector</STRONG> configuration key is selected.</P>
+**Note:** This control is available only if the <STRONG>Public sector</STRONG> configuration key is selected.</P>
 
 </div></td>
 </tr>
@@ -95,8 +93,7 @@ When you generate this report, the following default parameters are displayed. Y
 <p>Aging period definitions that have more than six aging periods cannot be used on the printed report.</p>
 <div class="alert">
 
-> [!NOTE]
-> <P>You can set up aging periods on the <STRONG>Aging period definitions</STRONG> page.</P>
+**Note:** You can set up aging periods on the <STRONG>Aging period definitions</STRONG> page.</P>
 
 
 </div></td>
@@ -110,8 +107,7 @@ When you generate this report, the following default parameters are displayed. Y
 <td><p>Define the period to use by entering the number of the day or month units in each period. For example, to view aging information by week, enter 7 in this field and select <strong>Day</strong> in the <strong>Day/Mth</strong> field.</p>
 <div class="alert">
 
-> [!NOTE]
-> <P>The information that you enter in this field is used only if you have not selected an aging period definition. Otherwise the printing direction is defined on the aging period definition.</P>
+**Note:** The information that you enter in this field is used only if you have not selected an aging period definition. Otherwise, the printing direction is defined on the aging period definition.</P>
 
 
 </div></td>
@@ -124,31 +120,30 @@ When you generate this report, the following default parameters are displayed. Y
 <td><p><strong>Printing direction</strong></p></td>
 <td><p>Select whether to calculate balances and print the aging report for past or future periods. The dates are evaluated relative to the date that is selected in the <strong>Balance as on</strong> field. Select <strong>Backward</strong> to show information for past periods. Select <strong>Forward</strong> to show information for future periods.</p>
 
-> [!NOTE]
-> <P>The information that you enter in this field is used only if you have not selected an aging period definition.</P>
+**Note:** The information that you enter in this field is used only if you have not selected an aging period definition.</P>
 
 
 </div></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Details</strong></p></td>
-<td><p>Select this check box to list the transactions that are included in the balances that are shown on the report.</p></td>
+<td><p>Select to list the transactions that are included in the balances that are shown on the report.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Include amounts in transaction currency</strong></p></td>
-<td><p>Select this check box to include amounts in the transaction currency in addition to amounts in the accounting currency. If this check box is not selected, the amounts on the report are displayed only in the accounting currency.</p></td>
+<td><p>Select to include amounts in the transaction currency in addition to amounts in the accounting currency. If this check box is not selected, the amounts on the report are displayed only in the accounting currency.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Negative balance</strong></p></td>
-<td><p>Select this check box to include customer accounts that have negative balances.</p></td>
+<td><p>Select to include customer accounts that have negative balances.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Exclude zero balance accounts</strong></p></td>
-<td><p>Select this check box to exclude customer accounts that have a zero balance.</p></td>
+<td><p>Select to exclude customer accounts that have a zero balance.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Payment positioning</strong></p></td>
-<td><p>Select this check box to display payments that have not been settled. These are displayed in the first column of the report.</p></td>
+<td><p>Select to display payments that have not been settled. These are displayed in the first column of the report.</p></td>
 </tr>
 </tbody>
 </table>
