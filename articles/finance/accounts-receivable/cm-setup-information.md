@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschlom
+ms.author: roschlom
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
