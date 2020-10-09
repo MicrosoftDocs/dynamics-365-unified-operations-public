@@ -50,7 +50,7 @@ When launching the **Recall order** operation from POS, if the display is config
 - Select **Search orders** or **Search and filter** icon on the AppBar to use the filtering mechanism to locate orders that meet the filter criteria.
 - Choose from a pre-defined filter from the **Show Orders** drop-down menu (orders to fulfill, orders to pick up, or orders to ship).
 
-![RecallOrderMain](media/recallordermain.png)
+![RecallOrderMainMenu](media/recallordermain.png)
 
 After search criteria are applied, the application will display a list of matching sales orders.
 
