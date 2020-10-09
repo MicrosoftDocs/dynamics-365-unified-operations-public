@@ -150,6 +150,9 @@ Now you can start configuring scale units and workloads in your preview environm
 
 ### Manage cloud scale units and workloads
 
+> [!IMPORTANT]
+> If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described in [Configure the hub environment](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
+
 Access the Scale Unit Manager portal and sign in with your tenant account. On the **Configure scale units** page, you can add a hub environment if it isn't already listed. Then you can select the hub that you want to configure with scale units and workloads.
 
 :::image type="content" source="media/cloud_edge-Manage.png" alt-text="Screen shot showing the scale unit and workload management experience.":::  

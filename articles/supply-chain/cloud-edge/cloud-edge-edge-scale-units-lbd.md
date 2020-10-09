@@ -44,7 +44,7 @@ The following table provides an overview of the deployment steps.
 
 |Responsibility  |Step  |Details  |
 |---------|---------|---------|
-|Microsoft|Create an LCS on-premises implementation project with one sandbox slot for a scale unit environment.||
+|Microsoft|An additional 60 day limited slot for an LBD environment will be provided based on customer situation.|Edge scale unit in preview target existing LBD customers.|
 |Customer|Set up the LBD environment with empty database. | More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
 |Customer|Deploy the LBD environment through LCS.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
 |Customer / Microsoft|Upload a package with the same application and platform build that was deployed on the hub to the LCS asset library of the on-premises project.|         |
@@ -54,15 +54,6 @@ The following table provides an overview of the deployment steps.
 |Customer|Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
 |Customer|Run the "update settings" action through LCS.|Run this action with the same settings that already exist on the environment. This action then redeploys what was already deployed on the environment, but it will run the previously setup pre-deployment script, which will inject the necessary attributes so they can be passed to DbSync execution.|
 |Customer|Compete the scale unit configuration and workload assignment using steps listed in [Assign your LBD edge scale unit to a hub](#assign-your-lbd-edge-scale-unit-to-a-hub) | |
-
-## Create an LCS on-premises implementation project
-
-Go to the LCS main page ([lcs.dynamics.com](https://lcs.dynamics.com) for production environments or [lcs.tie.dynamics.com](https://lcs.tie.dynamics.com) for test environments).
-Select the **Create a project** (+) button and create an implementation project. Make sure there is at least one sandbox slot available to deploy.
-
-:::image type="content" source="./media/cloud_edge-lbd-lcs2.png" alt-text="Select LCS project type":::
-
-:::image type="content" source="./media/cloud_edge-lbd-lcs3.png" alt-text="Navigate to LCS to configure your environment":::
 
 ## Set up and deploy an LBD environment with empty database
 
@@ -123,6 +114,9 @@ Do the following:
 
 ## Assign your LBD edge scale unit to a hub
 
+> [!IMPORTANT]
+> If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described below. The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
+
 ### Configure the hub environment
 
 To assign your scale unit to a Supply Chain Management hub environment, run the following steps on the hub environment:
@@ -153,7 +147,7 @@ To assign your scale unit to a Supply Chain Management hub environment, run the 
 
 #### Warehouse management workloads
 
-Before configuring a warehouse management workload, enable the following two features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Before configuring a warehouse management workload, please validate that on the hub in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) the following to features are enabled:
 
 - *Organization-wide work blocking*
 - *Automatic assigning of the guids on WHS user creation* (should be enabled by default)
