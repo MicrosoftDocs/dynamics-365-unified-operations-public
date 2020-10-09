@@ -108,9 +108,9 @@ The Putaway cluster profile determines where the item will go based on the locat
 
 ### Mobile device menu items
 
-Three new mobile device menu items are available for this functionality. *Menu item 1* is used to sort the received inventory to a putaway cluster upon receipt. *Menu item 2* is used to assign multiple license plates to a cluster for putaway. *Menu item 3* is used to put away the cluster once it has been assigned.
+Three new mobile device menu items are available for this functionality. *Receive and Sort Cluster* is used to sort the received inventory to a putaway cluster upon receipt. *Assign cluster* is used to assign multiple license plates to a cluster for putaway. *Cluster Putaway* is used to put away the cluster once it has been assigned.
 
-#### 1 – Receive and Sort Cluster
+#### Receive and Sort Cluster
 
 Create new mobile device menu item for Receive and Sort Cluster, which will create Inbound Work after receiving the inventory. This where it is indicated that the receiving menu item will be used for Putaway clusters.
 
@@ -134,7 +134,7 @@ Create new mobile device menu item for Receive and Sort Cluster, which will crea
 
     - **Work creation process** – *Purchase order item receiving*
     - **Generate license plate** – *Yes*
-    - **Sort & assign putaway cluster** – *Yes*
+    - **Assign putaway cluster** – *Yes*
     - Accept the default values of the remaining parameters
 
 1. Select **Save** in the Action Pane.
@@ -142,7 +142,7 @@ Create new mobile device menu item for Receive and Sort Cluster, which will crea
 > [!NOTE]
 > The **Assign putaway cluster** parameter is only available on one-step receiving **Work creation process** activity.
 
-#### 2 – Assign cluster
+#### Assign cluster
 
 This menu item is only used if **Assign putaway cluster** is not marked *Yes* on the **Receive and Sort Cluster** menu item. The scenario applied here does not use this menu item.
 
@@ -162,7 +162,7 @@ This menu item is only used if **Assign putaway cluster** is not marked *Yes* on
 
 1. Select **Save** in the Action Pane.
 
-#### 3 – Cluster Putaway
+#### Cluster Putaway
 
 Create new mobile device menu item to be used for putting away the Cluster once it has been assigned.
 
