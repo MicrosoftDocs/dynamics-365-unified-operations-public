@@ -1,17 +1,38 @@
 ---
+# required metadata
+
 title: Export subsidiary data to a file
-TOCTitle: Export subsidiary data to a file
-ms:assetid: 20fa98c9-4c38-4352-b25b-3afde679d7bb
-ms:mtpsurl: https://technet.microsoft.com/library/Aa496786(v=AX.60)
-ms:contentKeyID: 37822140
+description: This topic lists the steps for preparing data from external systems to be imported to Dynamics 365 Finance.
 author: jinniew
-ms.date: 04/18/2014
-mtps_version: v=AX.60
+manager: AnnBe
+ms.date: 10/09/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
 audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+# ms.assetid: 
 ms.search.region: Global
+# ms.search.industry: 
+ms.author: jiwo
+ms.search.validFrom: 2018-5-31
+ms.dyn365.ops.version: 8.0.1
+
 ---
 
 # Export subsidiary data to a file
+
+[!include banner] 
+
 The **Consolidate [Export to]** page is used to prepare the export of subsidiary data to files that can be imported into the consolidated legal entity.
 
 1.	Start by preparing a new legal entity in the consolidatin process and Set up a subsidiary legal entity for consolidation. For more information see [Prepare a legal entity for use in the consolidation process](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/prepare-a-legal-entity-for-use-in-the-consolidation-process) and [Set up a subsidiary legal entity for consolidation](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-a-subsidiary-legal-entity-for-consolidation)
