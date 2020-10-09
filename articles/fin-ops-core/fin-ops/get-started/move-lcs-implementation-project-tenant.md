@@ -120,7 +120,7 @@ If you do **not** have a production environment deployed already on the old tena
 
 If you already had a production environment deployed on the old tenant, Microsoft will move your database and Azure Blob storage from your old production environment to the new one. As a pre-requisite, you must complete the additional steps below after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires a downtime.
 
-Before requesting the production environment ensure that all pre-requisites are completed:
+Before requesting the production environment, ensure that all pre-requisites are completed:
 
 1. Get all required licenses that are needed to correctly license all users on the  production environment.
 2. Once the licenses are in place, upload a subscription estimator to the new LCS project. It should match the subscription estimator that is active in the source LCS project, and it must correctly reflect peak transaction volumes.
