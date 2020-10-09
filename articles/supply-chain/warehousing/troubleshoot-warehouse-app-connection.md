@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot "Dynamics 365 for Finance and Operations - Warehosing" mobile app connection issues
-description: This topic describes how to resolve issues that you might encounter while trying to configure the warehouse mobile app connection to Dynamics.
+title: Troubleshoot warehouse app connection issues
+description: This topic describes how to fix common issues that you might encounter while trying to connect the *Dynamics 365 for Finance and Operations - Warehousing* application to Dynamics 365 Supply Chain Management.
 author: ivanv-microsoft
 manager: tfehr
 ms.date: 09/13/2020
@@ -29,9 +29,9 @@ ms.search.validFrom: 2020-9-13
 ms.dyn365.ops.version: AX 10.0.14
 
 ---
-# Troubleshoot connection issues for *Dynamics 365 for Finance and Operations - Warehousing* application
+# Troubleshoot warehouse app connection issues
 
-This topic describes how to fix common issues that you might encounter while connecting the Warehouse mobile application with Dynamics 365 SCM application.
+This topic describes how to fix common issues that you might encounter while trying to connect the *Dynamics 365 for Finance and Operations - Warehousing* application to Dynamics 365 Supply Chain Management.
 
 **Important**
 
