@@ -39,7 +39,7 @@ Cloud and edge scale units enable shop floor and warehouse execution workloads t
 - Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
 - Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
 
-Companies working with manufacturing and distribution must be able to execute key business processes 24/7, without interruption and at scale. But complications may arise due to issues ranging from basic connectivity (such as provider outages, Azure outages, unreliable connections, or network latency) to multiple business processes competing for the same system resources. Cloud and edge features enable companies to execute key mission-critical manufacturing and warehouse processes without interruption, even in situations such as these.
+Companies working with manufacturing and distribution must be able to execute key business processes 24/7, without interruption and at scale. But complications may arise due to issues ranging from basic connectivity&mdash;such as provider outages, Azure outages, unreliable connections, or network latency&mdash;to multiple business processes competing for the same system resources. Cloud and edge features enable companies to execute key mission-critical manufacturing and warehouse processes without interruption, even in situations such as these.
 
 ## Public preview information
 
@@ -75,7 +75,7 @@ Companies working with manufacturing and distribution must be able to execute ke
 > [!WARNING]
 > Certain business functionality is not fully supported in the public preview when using workloads scale units. See the sections for more details about the functional workloads.
 
-The preview provides you with one environment that functions as a cloud based hub of your Supply Chain Management environment and one environment that will function as a cloud scale unit. For the preview, both environment will be hosted in a data center in northern USA.
+The preview provides you with one environment that functions as a cloud based hub of your Supply Chain Management environment and one environment that will function as a cloud scale unit. For the preview, both environment will be hosted in a data center in US data center.
 
 You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.
 
@@ -119,7 +119,7 @@ Review the [warehouse scale unit workload details](cloud-edge-workload-warehousi
 
 ## Onboard scale units for your Supply Chain Management environment
 
-### Deploy of the preview for cloud and edge scale units
+### Deployment of the preview for cloud and edge scale units
 
 The following diagram shows the sign-up and provisioning flow for the public preview of cloud and edge scale units.
 
