@@ -2,7 +2,7 @@
 # required metadata
 
 title: Provide mixed-reality Guides for workers in production
-description: This topic explains how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides to help production workers complete tasks in assembly, quality assurance, safety, and certification-related procedures.
+description: This topic explains how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides.
 author: cabeln
 manager: tfehr
 ms.date: 09/29/2020
@@ -36,9 +36,9 @@ Workers in production processes will benefit from relevant instructions that are
 
 ## Introduction
 
-You can provide instructions in different ways. One very efficient system that ships out of the box uses [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/).
+You can provide instructions in different ways. One efficient system that ships out of the box uses [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/).
 
-[Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) can help empower your employees with hands-on learning. You can define standardized processes with step-by-step instructions that guide your employees to the tools and parts they need and show employees how to use these tools in real work situations.
+Dynamics 365 Guides can help empower your employees with hands-on learning. You can define standardized processes with step-by-step instructions that guide your employees to the tools and parts they need and show employees how to use these tools in real work situations.
 
 You can attach guides to various aspects of production control including:
 
@@ -54,9 +54,9 @@ You can attach guides to various aspects of production control including:
 - [Route operation relations](#route-operation-relations)
 
 > [!NOTE]
-> You can also attach Guides with Asset Management. For more information about that option, see [Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides](../asset-management/asset-management-guides-integration.md).
+> You can also attach Guides with Asset Management. For more information about that option, see [Integrate Dynamics 365 Supply Chain Management (Asset Management) with Dynamics 365 Guides](../asset-management/asset-management-guides-integration.md).
 
-When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the relevant guides](#logic) on the job card. When the worker chooses a specific guide, a QR code for that guide is shown on the screen. The worker then uses their HoloLens to scan the QR code, which launches Guides and starts showing the required instructions.
+When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the relevant guides](#logic) on the job card. When the worker chooses a specific guide, a QR code for that guide is shown on the screen. The worker then uses their HoloLens to scan the QR code, which launches Guides and shows the required instructions.
 
 The following subsections describe a few selected scenarios where companies across industries can see the biggest value when using Guides to present instructions for manufacturing.
 
@@ -100,15 +100,15 @@ Production managers can provide dedicated handling instructions for hazardous ma
 
 ## Get started with instructions and Guides
 
-To enable instructions in production processes, Supply Chain Management provides an out of the box integration with [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/). A licensed and installed application instance of Guides is required to build, maintain, and assign mixed reality instructions to production assets and work.
+To enable instructions in production processes, Supply Chain Management provides an out-of-the-box integration with Dynamics 365 Guides. A licensed and installed application instance of Guides is required to build, maintain, and assign mixed reality instructions to production assets and work.
 
 ### Prerequisites
 
 To use this feature, your system must include the following:
 
-- [Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/) version 10.0.15 or later.
+- Dynamics 365 Supply Chain Management version 10.0.15 or later
 - [Dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write) for Supply Chain Management apps.
-- [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 400.0.1.48 or later.
+- [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 400.0.1.48 or later
 
 ### Turn on the feature
 
@@ -120,23 +120,23 @@ To make the feature available on your system, you must enable its configuration 
 1. Expand the **Production management** section and then select the **Production instructions** check box.
 1. Turn off maintenance mode as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
   
-## Configure how guides appear on the shop floor
+## Configure how Guides appear on the shop floor
 
-To configure how guides appear on the shop floor to **Mixed Reality \> Dynamics 365 Guides \> Configure Guides integration**.
+To configure how Guides appear on the shop floor, go to **Mixed Reality \> Dynamics 365 Guides \> Configure Guides integration**.
 
 ![Configure Guide integration for manufacturing](media/instruction-guides-configure-integration.png "Configure Guide integration for manufacturing")
 
-Make the following settings here:
+Set the following fields:
 
-- **CDS environment subdomain** - This field should already show a value. This field holds the subdomain for the Common Data Service (CDS) environment where you create your Guides. The subdomain is the first part of the CDS URL and is typically named after your organization. For example, if your CDS URL is "contoso.crm4.dynamics.com", you should enter *contoso* here. This value is used to compose addresses for your guides and will be encoded into the QR codes.
+- **CDS environment subdomain** - This field should already show a value. This field holds the subdomain for the Common Data Service environment where you create your Guides. The subdomain is the first part of the URL and is typically named after your organization. For example, if your Common Data Service URL is "contoso.crm4.dynamics.com", you should enter *contoso* here. This value is used to compose addresses for your guides and will be encoded into the QR codes.
 - **QR code size** - Set the size of the rendered QR code. We recommend choosing a size that will fill most of your display screen, but not more. Typically, *15* is a good value.
 - **QR code error correction level** - Set the granularity of the QR code. Higher granularity can help increase the code's reliability, but your **QR code size** must be large enough to support the level of detail required by your selected correction level.
 
 
 > [!TIP]
-> - QR codes sizes that are too large for your display will take a bit longer to render and then be scaled down to fit your display.  and therefore do not provide a benefit.
+> - QR codes sizes that are too large for your display will take a bit longer to render and then be scaled down to fit your display. These do not provide a benefit.
 > - QR code sizes that are too small may decrease the ability of HoloLens to read the code properly in some environments.
-> - We recommend that you test the settings for each device that will display QR codes for HoloLens users and choose a settings that provide sufficient readability in your shop floor environment.  
+> - We recommend that you test the settings for each device that will display QR codes for HoloLens users. Choose settings that provide sufficient readability in your shop floor environment.  
 
 ## Get an overview of all Guide assignments
 
@@ -208,16 +208,15 @@ To add a Guide to a released product:
 
 ## <a name="formulas"></a>Associate a Guide to a formula
 
-You can add a guide to any [Formula](bill-of-material-bom.md#formulas-co-products-and-by-products).
+You can add a guide to any [formula](bill-of-material-bom.md#formulas-co-products-and-by-products).
 
 ### Typical scenario using formulas
   
 Formula-level Guides provide shop floor workers with guided handling instructions in the context of a formula or recipe. Guides can also be assigned to versions of a formula.
 
-> [!TIP]
+> [!NOTE]
 > You can assign guidance relevant for production processes based on a formula to a route, route version, or route operation relations.  
 
-> [!NOTE]
 > Guides can't currently be attached to individual formula lines.
 
 ### Add a Guide to a formula
@@ -359,7 +358,7 @@ You can add a guide to any [route operation relation](routes-operations.md#opera
 
 ### Typical scenario using route operation relations
 
-Operation relations are the most specific way to add guidance to a product process and its related operations. You can specify guidance for each operation in a route and specify different guidance for any type of relation context specified for a route, such as for specific items, configurations, and more. You can also specify to which stages in the operation the guidance applies (such as setup, queueing, process, transport, and so on).
+Operation relations are the most specific way to add guidance to a product process and its related operations. You can specify guidance for each operation in a route and specify different guidance for any type of relation context specified for a route, such as for specific items, configurations, and more. You can also specify to which stages in the operation the guidance applies (such as setup, queueing, process, or transport).
 
 > [!NOTE]
 > If you specify guides for several operation relations of a route, among those guides, only the guide from the most specific relation will be show on the shop floor for the generated job.
@@ -378,7 +377,7 @@ To add a Guide to a route operation relation:
 1. Above the bottom gird, open the **Associated Guides** tab.
     ![The Associated Guides tab](media/instruction-guides-RouteOperationRelation-AddGuide.png "The Associated Guides tab")
 1. Select **Add** from the toolbar at the top of the bottom grid to add a new line to the grid.
-1. For the new row, use the drop-down list in the **Name** column to choose the Guide you want to assign. In the rest of the row, select the checkbox for each context where the selected Guide should be available.
+1. For the new row, use the drop-down list in the **Name** column to choose the Guide you want to assign. In the rest of the row, select the check box for each context where the selected Guide should be available.
 
 > [!NOTE]
 > You can add one or more guides for each stage of each operation.
@@ -410,13 +409,8 @@ You can add Guides to the following production data:
 
 When Supply Chain Management generates the jobs for the production floor, it will collect the relevant Guides from those sources. Take note of the following important rules.
 
-> [!Important]
-> If you attach a BOM version or formula version to a route or production order, then any Guides attached to this version, and also the Guides attached to the parent BOM or formula of that version, will be shown on the job.
-
-> [!Important]
-> If you attach a route version to a production order, then any Guides attached to this version, and also the Guides attached to the parent route of that version, will be shown on the job.
-
-> [!IMPORTANT]
-> If you define several route operation relations that include the *All* relation and assign Guides to those, only the Guides from the most specific relation will be shown for the Job.  
+- If you attach a BOM version or formula version to a route or production order, then any Guides attached to this version, and also the Guides attached to the parent BOM or formula of that version, will be shown on the job.
+- If you attach a route version to a production order, then any Guides attached to this version, and also the Guides attached to the parent route of that version, will be shown on the job.
+- If you define several route operation relations that include the *All* relation and assign Guides to those, only the Guides from the most specific relation will be shown for the job.  
 
 ![Diagram on resolving the relevant Guides](media/instruction-guides-Resolve.png "Diagram on resolving the relevant Guides")
