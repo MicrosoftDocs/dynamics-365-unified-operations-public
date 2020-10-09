@@ -46,7 +46,7 @@ This topic describes how to configure the menu items that warehouse workers use 
 To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**. 
 
 > [!NOTE]
-> Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the “Additional menu item options” section later in this article.
+> Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the “Additional menu item options” section later in this topic.
 
 ## Configure menu items for activities and inquiries
 If the **Mode** field for a menu item is set to **Indirect**, you can create a menu item to perform a general activity or inquiry that doesn't create work. Examples include reprinting license plate labels and an inquiry about the items in a location. The following table lists the options that are available.
@@ -65,12 +65,12 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Reprint label | Reprint a license plate label. |
 | License plate build | Create a parent license plate by combining multiple license plates in the same location. This option is useful if you move multiple license plates at the same time. After the parent license plate is moved, you must perform a license plate break before you can pick items from each license plate. <p></p>**Tip:** To move a parent license plate, you must use a mobile device that is configured to create work for movements. |
 | License plate break | Break up a license plate build so that you can pick items from the license plates that were in the build. |
-| Driver check in | If you’re using Transportation management, register the arrival of a driver by scanning the outbound load ID, appointment ID, or shipment ID. For this option a load must be assigned to the appointment, and the status of the load must be **Loaded**. |
+| Driver check in | If you’re using Transportation management, register the arrival of a driver by scanning the outbound load ID, appointment ID, or shipment ID. For this option, a load must be assigned to the appointment, and the status of the load must be **Loaded**. |
 | Driver check out | Register that a driver has completed his or her appointment. |
 | Flush number sequence cache | Delete number sequence numbers from the number sequence cache. This activity is typically performed by a system administrator to resolve caching issues when mobile devices are used. |
 | Change batch disposition | Allow a worker to specify a batch disposition code for an item and batch. This selection updates the disposition code that is specified for the batch. |
 | Display open work list | Show a list of available work to a particular user. The user can then select work to perform and will be directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If the **Allow users to filter work by transaction type** option is selected, the work list will include a **Filter work** control that the user can use to filter by transaction type. In the work list, users will see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
-| Create transfer order from license plates | Lets warehouse workers create and process transfer orders directly from the warehouse app. The warehouse workers start by selecting the destination warehouse and can then scan one or more license plates using the app. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates. More information: [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md)
+| Create transfer order from license plates | Allows warehouse workers create and process transfer orders directly from the warehouse app. The warehouse workers start by selecting the destination warehouse and can then scan one or more license plates using the app. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md)
 
 
 ## Configure menu items to create work for another worker or process
@@ -232,7 +232,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="even">
 <td>System directed</td>
-<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can click <strong>System-directed work</strong> on the Action Pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
+<td>Supply Chain Management controls the type of work that is assigned to a worker and the order that the worker performs the work in. When you select this option, you can sekect <strong>System-directed work</strong> on the Action Pane to open the <strong>System-directed sorting order</strong> page, where you can set up sorting criteria for the work. The sorting criteria control the order that the worker performs the work in. You can add as many criteria as you require.</td>
 </tr>
 <tr class="odd">
 <td>User directed</td>
@@ -244,7 +244,7 @@ In addition to setting up menu items to create warehouse work, you can set up me
 </tr>
 <tr class="odd">
 <td>System grouping</td>
-<td>FSupply Chain Management groups work for the worker, based on a specified field. For example, picking work is grouped when a worker scans a shipment ID, load ID, or any value that can link each work unit. If you select this option, the following fields are required:
+<td>Supply Chain Management groups work for the worker, based on a specified field. For example, picking work is grouped when a worker scans a shipment ID, load ID, or any value that can link each work unit. If you select this option, the following fields are required:
 <ul>
 <li><strong>System grouping field</strong> – Select the field that the worker scans to group the work.</li>
 <li><strong>System grouping label</strong> – Enter text to instruct the worker what to scan to group the work.</li>
@@ -293,7 +293,7 @@ The following table describes these options.
 <tbody>
 <tr class="odd">
 <td>Allow splitting of work</td>
-<td>Select this option to let users put items for a work order into more than one target license plate. This option is useful when, for example, a target license plate is full, and the worker must add the remaining items to another license plate. The worker can click <strong>Full</strong> to indicate that the license plate is full and stop receiving picking work for it. The put location for the picked items is then displayed, and the picking work that has already been completed is moved to a new work order. The remaining picking work for the target license plate stays on the original work order.</td>
+<td>Select this option to let users put items for a work order into more than one target license plate. This option is useful when, for example, a target license plate is full, and the worker must add the remaining items to another license plate. The worker can select <strong>Full</strong> to indicate that the license plate is full and stop receiving picking work for it. The put location for the picked items is then displayed, and the picking work that has already been completed is moved to a new work order. The remaining picking work for the target license plate stays on the original work order.</td>
 </tr>
 <tr class="even">
 <td>Anchoring</td>
@@ -331,8 +331,8 @@ The following table describes these options.
 <td>Display batch disposition code</td>
 <td>Select this option to display batch disposition codes. For example, you can display batch disposition codes when you receive a returned batch. Workers can then evaluate the status or quality of a batch, and select the appropriate code. The rules on the batch disposition code determine whether the batch will be available to other warehouse processes. If you don&#39;t select this option, one of the following batch disposition codes is used:
 <ul>
-<li>If you receive a new batch number, the default batch disposition code that is specified on the item model group</li>
-<li>The batch disposition code that is already assigned to the batch</li>
+<li>If you receive a new batch number, the default batch disposition code that is specified on the item model group.</li>
+<li>The batch disposition code that is already assigned to the batch.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -390,7 +390,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>System grouping label</td>
-<td>Enter the text that will instruct the worker what to scan when picking work is grouped by Supply Chain Management. For example, if you&#39;re using the <strong>ShipmentId</strong> field to group picking work by shipment, you might enter <strong>Shipment ID</strong> in the field. This field requires that you create a menu item to use existing work that is grouped by the system. You must also select the field to group by in the <strong>System grouping field</strong> field.</td>
+<td>Enter the text that will instruct the worker what to scan when picking work is grouped by Supply Chain Management. For example, if you&#39;re using the <strong>ShipmentId</strong> field to group picking work by shipment, you might enter <strong>Shipment ID</strong> in the field. This field requires that you create a menu item to use existing work that is grouped by the system. You must also select the field to group by in the <strong>System grouping</strong> field.</td>
 </tr>
 <tr class="even">
 <td>Use default data</td>
@@ -406,13 +406,13 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Work template code</td>
-<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the put-away work will be generated based on the work template. If you don&#39;t select a work template, Supply Chain Management assigns a template, based on query criteria. For more information on work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
+<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the put-away work will be generated based on the work template. If you don&#39;t select a work template, Supply Chain Management assigns a template, based on query criteria. For more information about work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## Require workers to confirm the product, location, or quantity when they pick items
-You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when he or she performs work in the warehouse. Work confirmations help guarantee that the worker is at the correct location or is handling the correct quantity of items. You can also enable Supply Chain Management to automatically confirm the worker’s registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. 
+You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when they perform work in the warehouse. Work confirmations help ensure that the worker is at the correct location or is handling the correct quantity of items. You can also enable Supply Chain Management to automatically confirm the worker’s registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. 
 
 The following table describes the various work types that you can use work confirmations with.
 
@@ -428,7 +428,8 @@ The following table describes the various work types that you can use work confi
 | Print | Require confirmation when license plate labels are printed. |
 | Status change | Require confirmation when the status of inventory is changed. |
 
-**Note:** You can require product confirmation only for pick and put work types.
+> [!NOTE]
+> You can require product confirmation only for pick and put work types.
 
 Additional resources
 --------
