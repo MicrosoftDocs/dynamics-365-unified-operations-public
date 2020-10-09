@@ -5,7 +5,7 @@ title: Enable and use cross-channel sharing
 description: This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 manager: annbe
-ms.date: 10/08/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Enable and use cross-channel sharing
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 
