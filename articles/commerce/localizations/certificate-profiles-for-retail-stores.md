@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.15
 
 ## Overview
 
-This topic provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce. This functionality extends the [Manage secrets for retail channels](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/manage-secrets) feature by adding support for local certificates.
+This topic provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce. This functionality extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature by adding support for local certificates.
 
 While the point of sale (POS) is running in offline mode, it can't access the certificates that are stored in the key vault. The local certificate should be used instead. The following capabilities are supported:
 
