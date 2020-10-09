@@ -300,7 +300,17 @@ After the build is completed, deployable packages are generated as a zip file (R
 > [!NOTE]
 > There won't be separate packages the various Commerce components. All the packages will be combined into one bundle package that is named RetailDeployablePackage.
 
-## Deploy the deployable packages
+## Deploy the packages
+
+1. Navigate to https://lcs.dynamics.com/v2
+2. sign in to LCS, and open a project. Then, on the hamburger menu, click Asset library.
+3. Select the **Software deployable package** Asset type and click the **+** button to upload the package. Provide a package name and description and then add the package file by clicking the **Add file** button. 
+4. Once the upload is completed, click the **Confirm** button to complete the upload process.
+5. The package will be validated by LCS in few mins and after validation mark the package as RELEASE CANDIDATE.
+
+**After upload, the package need to be deployed to the environment:**
+
+Follow the steps mentioned in this [doc to deploy the package to CSU environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/update-retail-channel).
 
 For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).
 
