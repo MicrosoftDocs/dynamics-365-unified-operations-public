@@ -2040,6 +2040,8 @@
               href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
           - name: Stock transaction
             items:
+            - name: Stock transfer orders
+              href: localizations/apac-ind-stock-transfer.md    
             - name: Stock transfer orders that have tax on the transfer price
               href: localizations/apac-ind-GST-stock-transfer-transactions.md
           - name: Customer payment transaction
@@ -2094,8 +2096,6 @@
             href: localizations/tax-engine-trouble-shooting.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
-        - name: Stock transfers
-          href: localizations/apac-ind-stock-transfer.md    
       - name: Italy
         items:
         - name: Italy overview

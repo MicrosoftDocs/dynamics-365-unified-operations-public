@@ -204,6 +204,10 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
       - name: Regulatory updates
         href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+      - name: India
+        items: 
+        - name: Stock transfer orders
+          href: ../finance/localizations/apac-ind-stock-transfer.md    
       - name: Russia
         items: 
         - name: Russia overview
