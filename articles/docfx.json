@@ -166,7 +166,7 @@
         "/fin-ops-core/dev-itpro/dev-ref/**/**.md": ["Operations"],
         "/fin-ops-core/dev-itpro/dev-ref/system-classes/**/**.md": ["Operations"],
         "/fin-ops-core/dev-itpro/dev-ref/xpp-data/**/**.md": ["Operations"],
-        "/fin-ops-core/dev-itpro/dev-tools/**/**.md": ["Operations"],
+        "/fin-ops-core/dev-itpro/dev-tools/**/**.md": ["Operations"]
         }
     },
     "template": [],
