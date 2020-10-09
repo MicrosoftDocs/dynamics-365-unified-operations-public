@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Recall Order operation in POS
+title: Recall order operation in POS
 description: This topic explains feature capabilities available for improved order recall pages in POS.
 author: hhainesms
 manager: annbe
@@ -27,11 +27,11 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# Recall Order operation in POS
+# Recall order operation in POS
 
 [!include [banner](includes/banner.md)]
 
-In Commerce versions 10.0.15 and later, the **Recall order** operation in the Commerce point of sale (POS) provides updated order search and filtering features and order-specific information.
+The Recall order operation in the Commerce point of sale (POS) provides updated order search and filtering features and order-specific information. This feature is available in Commerce versions 10.0.15 and later.
 
 To enable this functionality, turn the **Improved Recall order operation in POS** feature on in **Feature management** workspace in Commerce headquarters. After you enable the feature, consider updating your [screen layouts](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-screen-layouts) in POS to take advantage of some of the changed  capabilities.
 
@@ -47,13 +47,12 @@ The display options are as follows.
 
 When launching the **Recall order** operation from POS, if the display is configured to **None**, a user will be able to search and retrieve orders in one of the following ways.
 - Scan order barcodes. This will search order number, channel reference, and receipt ID fields for matches.
-- Click **Search orders** or **Search and filter** icon on the AppBar to use the filtering mechanism to locate orders that meet the filter criteria.
-- Choose from a pre-defined filter from the **Show Orders** drop down (orders to fulfill, orders to pick up, orders to ship).
+- Select **Search orders** or **Search and filter** icon on the AppBar to use the filtering mechanism to locate orders that meet the filter criteria.
+- Choose from a pre-defined filter from the **Show Orders** drop-down menu (orders to fulfill, orders to pick up, or orders to ship).
 
 ![RecallOrderMain](media/recallordermain.png)
 
-Once search criteria are applied, the application will display a list of matching sales orders.
-
+After search criteria are applied, the application will display a list of matching sales orders.
 
 ![RecallOrderDetail](media/orderrecalldetail.png)
 
@@ -63,10 +62,10 @@ From the AppBar, a user can select an operation. Depending on the status of the 
 
 - **Return** – Executes a return for one or more invoices related to the selected customer order.
 
-- **Cancel** – Issue a full cancelation of the selected sales order.
+- **Cancel** – Issue a full cancellation of the selected sales order.
 
-- **Fulfill** – Transfers the user to the order fulfillment page which will be pre-filtered for the selected order. Only order lines that are open for fulfillment by the user's store for the selected order will be displayed.
+- **Fulfill** – Transfers the user to the order fulfillment page, which will be pre-filtered for the selected order. Only order lines that are open for fulfillment by the user's store for the selected order will be displayed.
 
-- **Edit** – Allows user to make changes to the selected customer order.
+- **Edit** – Allows users to make changes to the selected customer order.
 
-- **Pick up** – Launches the pickup flow which allows the user to choose the products to be picked up and creates the pickup sales transaction.
+- **Pick up** – Launches the pickup flow, which allows the user to choose the products to be picked up and creates the pickup sales transaction.
