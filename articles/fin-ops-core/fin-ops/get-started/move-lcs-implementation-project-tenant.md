@@ -124,7 +124,7 @@ Before requesting the production environment ensure that all pre-requisites are 
 
 1. Get all required licenses that are needed to correctly license all users on the  production environment.
 2. Once the licenses are in place, upload a subscription estimator to the new LCS project. It should match the subscription estimator that is active in the source LCS project, and it must correctly reflect peak transaction volumes.
-3. Send an email to Dynamics 365 FO Go-Live **d365fogl\@microsoft.com** stating that your new LCS project is ready for Microsoft to move your production database and Azure Blob Storage. To ensure that the process will run smoothly, please provide the following details in the e-mail:
+3. Send an email to Dynamics 365 FO Go-Live **d365fogl\@microsoft.com** stating that your new LCS project is ready for Microsoft to move your production database and Azure Blob Storage. To ensure that the process will run smoothly, please provide the following details in the e-mail (you can copy all these topics, paste it on the e-mail and answer each one in line):
 
 	**LCS**
 	- Please provide the LCS IDs (number in the LCS project URL) for source and target LCS project.
@@ -158,9 +158,9 @@ Before requesting the production environment ensure that all pre-requisites are 
 
 7. Once production environment has been deployed, verify that source and target environments have exactly the same code, otherwise migration will fail. If necessary, deployable packages must be installed on the target production environment.
 8. Request to copy database and blob storage from old production environment to the new production environment.
-	1. Raise a service request of type **Other** to request DSE team to copy the database and blob storage from the old production environment to the new production environment. Link to article
+	1. Raise a [service request](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team?toc=/dynamics365/finance/toc.json) of type **Other** to request Microsoft Service Engineering team to copy the database and blob storage from the old production environment to the new production environment.
 	2. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the e-mail notifications or notifications directly in the service request. 
-	3. After the Microsoft has completed the activity and informed you about it, you will need to validate the new production environment. 
+	3. After Microsoft has completed the activity and informed you about it, you will need to validate the new production environment. 
 	4. If you face an issue after the migration, please raise a support ticket.
 
 ## Tear down the LCS project on the old tenant
