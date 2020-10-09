@@ -193,8 +193,9 @@ Button and link clicks for the following types of elements on an E-Commerce webs
 - Checkout button
 - Place order button
 
-The schema for Click action is as follows:
+The schema for **Click** action is:
 
+```json
 Click
 IPayLoad = {
         contentCategory: Name of element clicked on,
@@ -206,28 +207,34 @@ IPayLoad = {
             etype: ‘click’,
         }
     };
+```
 
 ### Page views
+
 Page view events are logged for each page view operation.
 
-The schema for a Page View action is as follows: 
+The schema for a **PageView** action is:
 
+```json
 PageView
 IPageViewInfo = {
     title;
 }
+```
 
 ### Cart operations
-The following Cart related events are logged
 
-- Add item to cart
-- Update item in cart
-- Remove item from cart
-- Checkout
-- Product Page view
+The following **Cart** related events are logged.
 
-The schema for Cart events is as follows:
+- Add item to cart.
+- Update item in cart.
+- Remove item from cart.
+- Checkout.
+- Product Page view.
 
+The schema for **Cart** events is:
+
+```json
 /***
  * Defines the telemetry properties to track for a Cart object
  * @property products       {IProductInfo[]}    - Array of product information
@@ -241,10 +248,13 @@ export interface ICartInfo {
     cartId: string;
     cartVersion: string;
 }
+```
 
 ### Purchase
-When an order is submitted, a Purchase event is logged. The schema for a Purchase event is as follows:
 
+When an order is submitted, a Purchase event is logged. The schema for a **Purchase** event is:
+
+```json
 /***
  * Defines the telemetry properties to track for a Purchase event
  * @property id            {string}         - Transaction ID
@@ -262,11 +272,13 @@ export interface IProductTransaction {
     shippingCost?: number;
     products?: IProductInfo[];
 }
-
+```
 
 ### Product details
-Product details are logged for Cart and Purchase operations. The schema for Product details is as follows:
 
+Product details are logged for **Cart** and **Purchase** operations. The schema for **Product** details is:
+
+```json
 /***
  * Defines the telemetry properties to track for a Product object
  * @property productChannelId       {string}   - Product channel ID
@@ -292,3 +304,4 @@ export interface IProductInfo {
     productQuantity: string;
     productCurrency: string;
 }
+```
