@@ -32,22 +32,48 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes some best practices when developing Dynamics 365 Commerce e-Commerce customizations. 
+This topic describes some best practices when developing Dynamics 365 Commerce e-Commerce customizations.
 
 ## Overview
-Using the Dynamics 365 Commerce Online SDK 
+The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions and themes can be created or the provided (module library)[starter-kit-overview.md] can be extended. It is important to consider web site performance when building e-Commerce customizations.  Standard best practices used for web site development are applicable including mimimizing HTML, JavaScript, CSS and optimizing images.
 
 ## Infrastructure setup
 
-### Dynamics 365 Commerce subsystems must be in same region
+The [Dynamics 365 Commerce system](../commerce-architecture.md) includes various sub-systems including the Back Office HQ, the Commerce Scale Unit, the Web Storefront which includes the Node rendering service, the Commerce site builder, and the product recommendations services.  For best performance the various components should be deployed into the same region.  The Commerce Scale Unit setup allows you to the select specific region. The specific region decision should be made in accordance with the customer's regional location.
 
-Dynamics 365 Commerce subsystems including the Node rendering service, Commerce site builder, Commerce Scale Unit, and product recommendations services must be located in the same region. The Commerce Scale Unit setup allows you to the select specific region. The specific region decision should be made in accordance with the customer's regional location.
+## Minimizing HTML, CSS & Javascript
 
-### Sandbox environments 
+The Dynamics 365 online SDK provides development extensions using TypeScript and SCSS files.  TypeScript is a typed superset of JavaScript that compiles to plain JavaScript and SCSS is a superset of CSS that is compiled down to standard CSS.  When the configuration package is built using [yarn msdyn365 pack](cli-command-reference#pack.md) or the Node server is started on a local development environment using the [yarn start](setup-dev-environment#run-your-node-app.md) command, the typescript files and SCSS files will compiled down to Javascript and CSS respectively.  These files are also minified to reduce network bandwidth.
 
-To ensure the best performance from a sandbox environments make sure the Retail SQL configuration is optimal. The default configuration may need updating depending on the results of the performance analysis tools found later in this document.
+You should ensure extra unused JavaScript and CSS are not included in your extension package.  Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript.
+
+
+## Optimizing Images
+One of the biggest performance hits to a web browser can be the downloading of images.  Use CSS whenever possible to generate images for for items such as buttons, but in cases where you need marketing or product images, you should leverage the [media libary](dam-overview.md) inside of the site builder tool.  Images uploaded through the media library should be uploaded with the highest quality and resolution that covers all scenarios on the web site.  
+
+### Image resizer service
+Images served go through an **image resizer** service included in the Commerce rendering engine when rendered inside of a module. This is important for responsive design, in general, as the screen size gets smaller images will be auto scaled down to the correct size for each particular module.
+
+It's important to follow some guidelines to ensure images get auto resized correctly.  Modules can specify their images sizes for particular view ports in the theme.settings.json file.  See the [configure theme settings](configure-theme-settings.md) document for more information.
+
+### Image requests
+When building modules with images, the HTML should always include the width and height parameters. If the width and height are not provided, image caching will not be optimized through the image resizer.
+
+### Image types
+There are three aspects that come into play when determining the file size of an image. The resolution of the image (width and height), how the image is encoded (JPEG, GIF, or PNG), and the quality parameter (JPEG only). 
+
+JPEG uses lossy compression, meaning that the file size is decreased by discarding image detail. The amount of detail discarded is controlled with the quality parameter, which is between 0 and 100, with 100 being the best quality. A lower number results in a lower quality image, but also a smaller file size. 
+
+PNG is a lossless format, so no image detail is lost but the image file size will be larger. For images with text, sharp lines, or color gradients, PNG may be a better choice since the JPEG format may show undesirable artifacts as a result of the lossy compression. 
+
+GIF is also a lossless format, but it only supports 256 colors in a single image. For images with text or sharp lines that also don't have many colors, GIF may be a better choice than PNG or JPEG. GIF also has support for simple animations.
+
+Ultimately, the goal is to find the right balance to maintain image quality while keeping the image size as small as possible.
+
 
 ## Cache configuration
+
+
 
 ### Image caching 
 
@@ -94,25 +120,6 @@ For more information, see [Data cache settings](e-commerce-extensibility/data-ac
 
 ### General
 
-#### Image formats and sizes
-
-There are three aspects that come into play when determining the file size of an image. The resolution of the image (width and height), how the image is encoded (JPEG, GIF, or PNG), and the quality parameter (JPEG only). 
-
-JPEG uses lossy compression, meaning that the file size is decreased by discarding image detail. The amount of detail discarded is controlled with the quality parameter, which is between 0 and 100, with 100 being the best quality. A lower number results in a lower quality image, but also a smaller file size. 
-
-PNG is a lossless format, so no image detail is lost but the image file size will be larger. For images with text, sharp lines, or color gradients, PNG may be a better choice since the JPEG format may show undesirable artifacts as a result of the lossy compression. 
-
-GIF is also a lossless format, but it only supports 256 colors in a single image. For images with text or sharp lines that also don't have many colors, GIF may be a better choice than PNG or JPEG. GIF also has support for simple animations.
-
-Ultimately, the goal is to find the right balance to maintain image quality while keeping the image size as small as possible.
-
-The source image uploaded to the Media Library in Commerce site builder should be of high quality and a large enough resolution to cover required scenarios.
-
-It is expected that the image resizer service will be used to adjust the resolution, type, and quality of the image being delivered on rendered e-Commerce pages.
-
-#### JSS and CSS files
-
-Any extra, unused JavaScript Style Sheet (JSS) or Cascading Style Sheets (CSS) files should be removed to reduce the size of the download on the client side.
 
 ### Module development
 
