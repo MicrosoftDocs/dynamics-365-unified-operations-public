@@ -72,7 +72,7 @@ The intercompany planning group, item allocation keys, and other filters can be 
 If the forecast is not generated for a big set of items, but, for example, for one item or one item allocation key at a time, then in order to get better performance, you can select the **Use request response mode** check box on the **Master planning - Setup - Demand forecasting** - **Demand forecasting parameters - Azure Machine Learning** tab.
 
 > [!NOTE]
-> A potentially flat looking forecast can be due to the historical data that has to be of a longer historical timeframe (a minimum 3 of time periods in order to pick out patterns, such as 3 years with monthly forecast). To get a better result, you can try changing the granularity of the time range or increate the time range.
+> A potentially flat looking forecast can be due to the historical data that has to be of a longer historical timeframe (a minimum 3 of time periods in order to pick out patterns, such as 3 years with monthly forecast). To get a better result, you can try changing the granularity of the time range or increase the time range.
 
 Additional resources
 --------

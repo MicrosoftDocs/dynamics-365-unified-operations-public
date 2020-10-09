@@ -80,6 +80,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Development in cloud-hosted development environments without admin access](cloud-dev-box.md)
 - [Test recorder and Regression suite automation tool for Cloud POS](pos-rsat.md)
 - [POS Cart view events and handlers](cart-view-handlers.md)
+- [Add custom buttons to the POS header bar](pos-header-bar.md)
 
 ## Integrating Commerce
 -   [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)

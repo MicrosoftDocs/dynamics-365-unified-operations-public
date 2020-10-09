@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: EcoResProductListPage, EcoResProductCreate   
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductMasterDraftFormPart
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

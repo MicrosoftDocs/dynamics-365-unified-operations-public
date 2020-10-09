@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata 
  
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals   
-audience: Application User 
+audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 # ms.devlang:  
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 

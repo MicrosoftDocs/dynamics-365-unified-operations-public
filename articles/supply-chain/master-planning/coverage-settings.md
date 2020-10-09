@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard
+ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

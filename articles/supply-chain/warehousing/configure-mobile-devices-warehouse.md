@@ -404,6 +404,9 @@ The following table describes these options.
 <tr class="odd">
 <td>Work template code</td>
 <td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the put-away work will be generated based on the work template. If you don&#39;t select a work template, Supply Chain Management assigns a template, based on query criteria. For more information on work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
+<tr class="even">
+<td>Show work line list</td>
+<td>Select an option for how workers will be able to view and interact with the lines for the currently selected picking work. For more information about this option, see <a href="pick-line-overview.md">Set up a mobile device menu item to provide a pick line overview</a>.</td>
 </tr>
 </tbody>
 </table>

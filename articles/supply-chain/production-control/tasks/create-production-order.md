@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute   
+ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute, ProdJournalCreate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

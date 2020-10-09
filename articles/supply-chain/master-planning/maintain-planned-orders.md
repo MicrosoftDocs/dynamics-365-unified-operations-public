@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqTransPo
+ms.search.form: ReqTransPo, ReqTransFirmLog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

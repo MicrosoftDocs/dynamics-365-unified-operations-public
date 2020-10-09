@@ -5,7 +5,7 @@ title: Ways to add content
 description: This topic provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring tool set.
 author: phinneyridge
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Ways to add content
-
 
 [!include [banner](includes/banner.md)]
 
@@ -56,4 +55,8 @@ Select one of the following topics to get started.
 
 [Authoring page overview](authoring-home-overview.md)
 
+[Page model glossary](page-elements-overview.md)
+
 [Document states and lifecycle](document-states-overview.md)
+
+[Enable and use cross-channel sharing](cross-channel-sharing.md)

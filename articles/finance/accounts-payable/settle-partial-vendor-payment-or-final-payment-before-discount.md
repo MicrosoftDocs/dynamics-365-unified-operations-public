@@ -69,7 +69,7 @@ April clicks the **Cash discount** tab to view the discount amount.
 | 7/25/2015          | 0.00                 | 1,000.00                       |
 
 ## Partial payment on July 1 by using the Settle transactions page
-April can create a payment journal for this payment by opening the **Payment journal** page in Accounts payable. She create a new journal and enters a line for vendor 3064. She then opens the **Settle transactions** page, so that she can mark the invoice for settlement. April marks the invoice and changes the value in the **Amount to settle** field to **-500.00**. She sees that the value in the **Cash discount amount** field is **-10.00** for the full invoice, and that the value in the **Cash discount amount to take** field is **-5.05**. Therefore, April is settling -505.05 of this invoice.
+April can create a payment journal for this payment by opening the **Payment journal** page in Accounts payable. She creates a new journal and enters a line for vendor 3064. She then opens the **Settle transactions** page, so that she can mark the invoice for settlement. April marks the invoice and changes the value in the **Amount to settle** field to **-500.00**. She sees that the value in the **Cash discount amount** field is **-10.00** for the full invoice, and that the value in the **Cash discount amount to take** field is **-5.05**. Therefore, April is settling -505.05 of this invoice.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
