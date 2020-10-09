@@ -54,8 +54,8 @@ Microsoft may have updated the Server SSL certificates used by Supply Chain Mana
 
 ### Resolution
 
-- Contact Zebra or Google for an update of the system trusted certifying authority (CA) certificates.
-- Replace the device(s) with devices that are running a more recent version of Android (their trusted CA certificates are updated automatically).
+- Contact Zebra or Google to get an update of the system trusted certifying authority (CA) certificates.
+- Replace older device(s) with devices that are running a more recent version of Android (their trusted CA certificates are updated automatically).
 
 ### Workaround
 
