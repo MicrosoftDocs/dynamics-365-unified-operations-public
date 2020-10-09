@@ -5,7 +5,7 @@ title: Recall order operation in POS
 description: This topic explains feature capabilities available for improved order recall pages in POS.
 author: hhainesms
 manager: annbe
-ms.date: 10/08/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations, Retail
 # ms.custom:
 ms.search.region: global
 # ms.search.industry:
-ms.author: hhainesms
+ms.author: hhaines
 ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.15
 ---
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.15
 
 The Recall order operation in the Commerce point of sale (POS) provides updated order search and filtering features and order-specific information. This feature is available in Commerce versions 10.0.15 and later.
 
-To enable this functionality, turn the **Improved Recall order operation in POS** feature on in **Feature management** workspace in Commerce headquarters. After you enable the feature, consider updating your [screen layouts](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-screen-layouts) in POS to take advantage of some of the changed  capabilities.
+To enable this functionality, turn the **Improved Recall order operation in POS** feature on in **Feature management** workspace in Commerce headquarters. After you enable the feature, consider updating your [screen layouts](pos-screen-layouts.md) in POS to take advantage of some of the changed  capabilities.
 
 The configuration of the **Recall order** operation button allows organizations to deploy the operation with a pre-defined display.
 
