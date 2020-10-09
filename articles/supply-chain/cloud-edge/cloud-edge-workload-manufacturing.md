@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manufacturing execution workloads for cloud and edge scale units
-description: This topic describes how manufacturing execution workloads function in cloud and edge solutions
+description: This topic describes how manufacturing execution workloads function with cloud and edge scale units
 author: cabeln
 manager: 
 ms.date: 10/06/2020
@@ -37,14 +37,14 @@ ms.dyn365.ops.version: 10.0.15
 > [!WARNING]
 > Please note that certain business functionality is not fully supported in the public preview when using workloads scale units.  
 
-Within manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
+Within manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the hub:
 
 - Enable machine operators and shop floor supervisors to access the operational production plan.
 - Enable machine operators to keep the plan current by executing discrete and process manufacturing jobs.
 - Enable the shop floor supervisor to adjust the operational plan.
 - Enable workers to access time and attendance for clock-in and clock-out on the edge to ensure correct worker pay calculation.
 
-This topic describes how manufacturing execution workloads function in cloud and edge solutions.
+This topic describes how manufacturing execution workloads function with cloud and edge scale units.
 
 ## The manufacturing lifecycle
 
@@ -58,15 +58,15 @@ When a production job is marked as complete, it moves from the execute phase to 
 
 ## Splitting the execution phase into a separate workload
 
-In a cloud and edge solution, the execution phase is split out as a separate workload, as shown in the following illustration.
+With scale units, the execution phase is split out as a separate workload, as shown in the following illustration.
 
-[![Manufacturing execution phases when using cloud and edge](media/mes-phases-workloads.png "Manufacturing execution phases when using cloud and edge")](media/mes-phases-workloads-large.png)
+[![Manufacturing execution phases when using scale units](media/mes-phases-workloads.png "Manufacturing execution phases when using scale units")](media/mes-phases-workloads-large.png)
 
-The model now goes from a one-instance installation to a hub-and-spoke model. The plan and finalize phases run as back-office operations on the hub, and the manufacturing execution workload runs on the spoke. Data is transferred between the hub and spoke asynchronously. When a production order is released on the hub, all necessary data to process production jobs is transferred to the spoke. This is data such as production orders, production routes, bills of material, and products. Data that isn't related to a production order (such as indirect activities, absence codes, and production parameters) is also transferred from the hub to the spoke. As a rule, data originating from the hub and transferred to the spoke can only be created or updated on the hub. It is, for example, not possible to create a new absence code or indirect activity on the spoke&mdash;it is only possible to use these for registration. The registrations made on the spoke during execution are then transferred to the hub, where time and attendance approval, inventory, and financial updates are processed.
+The model now goes from a one-instance installation to a model based on hub and scale units. The plan and finalize phases run as back-office operations on the hub, and the manufacturing execution workload runs on the scale unit. Data is transferred between the hub and scale units asynchronously. When a production order is released on the hub, all necessary data to process production jobs is transferred to the scale unit. This is data such as production orders, production routes, bills of material, and products. Data that isn't related to a production order (such as indirect activities, absence codes, and production parameters) is also transferred from the hub to the scale unit. As a rule, data originating from the hub and transferred to the scale unit can only be created or updated on the hub. It is, for example, not possible to create a new absence code or indirect activity on the scale unit&mdash;it is only possible to use these for registration. The registrations made on the scale unit during execution are then transferred to the hub, where time and attendance approval, inventory, and financial updates are processed.
 
 ## Manufacturing execution tasks that can run on workloads
 
-The following manufacturing execution tasks can currently be run on workloads in a cloud and edge solution.
+The following manufacturing execution tasks can currently be run on workloads when using scale units.
 
 - Clock-in, log-in, clock-out, and absence
 - Start job
@@ -78,7 +78,7 @@ The following manufacturing execution tasks can currently be run on workloads in
 
 ## Working with manufacturing execution workloads on the hub
 
-Usually, the processes required to run manufacturing execution workloads on a cloud and edge solution run automatically to keep all the scale units in sync as needed. However, if you are having trouble, you can manually trigger the processing of raw registrations received from workloads and/or check the registration processing log.
+Usually, the processes required to run manufacturing execution workloads run automatically to keep the hub all the scale units in sync as needed. However, if you are having trouble, you can manually trigger the processing of raw registrations received from workloads and/or check the registration processing log.
 
 ### Manually process raw registrations
 
@@ -97,19 +97,19 @@ You can operate on any listed registration by selecting it and then selecting on
 - **Process** - Process the selected registration manually. This can be useful if the process raw registration job has not run or has failed.
 - **Cancel** - Cancel the selected registration.
 
-## Working with manufacturing execution workloads on a spoke
+## Working with manufacturing execution workloads on a scale unit
 
-Usually, the processes required to run manufacturing execution workloads on a cloud and edge solution run automatically and keep all the scale units in sync as needed. However, if you are having trouble, you can check the history of orders processed on a spoke or run the _Manufacturing hub to scale unit message processor_ job manually.
+Usually, the processes required to run manufacturing execution workloads run automatically to keep the hub all the scale units in sync as needed. However, if you are having trouble, you can check the history of orders processed on a scale unit or run the _Manufacturing hub to scale unit message processor_ job manually.
 
-### View a history of manufacturing jobs processed on a spoke
+### View a history of manufacturing jobs processed on a scale unit
 
-To review the history of manufacturing jobs processed on a spoke, sign in to the spoke machine and go to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing jobs processing history**.
+To review the history of manufacturing jobs processed on a scale unit, sign in to the scale unit machine and go to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing jobs processing history**.
 
-The **Manufacturing jobs processing history** page shows the processing history of the production orders on the spoke. You can operate on any listed production order by selecting it and then selecting one of the following from the Action Pane:
+The **Manufacturing jobs processing history** page shows the processing history of the production orders on the scale unit. You can operate on any listed production order by selecting it and then selecting one of the following from the Action Pane:
 
 - **Process** - Process the selected production order manually.
 - **Cancel** - Cancel the selected production order.
 
 ### Manufacturing hub to scale unit message processor
 
-The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the spoke. This job starts automatically when the manufacturing execution workload is deployed, but you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
+The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the scale unit. This job starts automatically when the manufacturing execution workload is deployed, but you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
