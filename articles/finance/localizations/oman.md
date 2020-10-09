@@ -22,7 +22,7 @@ ms.search.scope: Operations
 ms.custom: 
 ms.search.region: Bahrain
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2020-06-04
 ms.dyn365.ops.version: 10.0.13
 

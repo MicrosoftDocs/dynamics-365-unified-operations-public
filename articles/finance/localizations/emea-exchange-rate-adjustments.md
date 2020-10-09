@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 272683
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 

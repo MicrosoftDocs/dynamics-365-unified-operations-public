@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom
 ms.search.region: Sweden
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
