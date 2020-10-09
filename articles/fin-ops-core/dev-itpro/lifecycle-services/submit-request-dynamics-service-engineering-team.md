@@ -99,6 +99,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
+      - Tenant move of a live Production environment: request the Microsoft Service Engineering team to move the Production database and Azure Blob Storage from the old tenant to the new tenant in case you are moving tenant on a live Production environment. Please make sure that you only request this service once you are ready with all pre-requisites. For more details, see [Move LCS implementation projects to different Azure AD tenants] (../../fin-ops/get-started/move-lcs-implementation-project-tenant.md)
       - Define explicit Internet Protocol (IP) safe list rules in a production environment.
         
         > [!NOTE]
