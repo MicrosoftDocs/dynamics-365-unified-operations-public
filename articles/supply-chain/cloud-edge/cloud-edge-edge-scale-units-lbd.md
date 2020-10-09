@@ -50,15 +50,15 @@ The following table provides an overview of the deployment steps.
 |Customer / Microsoft|Upload a package with the same application and platform build that was deployed on the hub to the LCS asset library of the on-premises project.|         |
 |Customer|Upload a customization package that was deployed on the hub to the LCS asset library of the on-premises project.|         |
 |Customer|Service the LBD environment with the previously uploaded application and platform package.|This ensures that the hub and spoke have the same build deployed.|
-|Microsoft|Service the LBD environment with the previously uploaded customization package.|This makes non-shippable models and your customizations available on the LBD environment.|
+|Customer|Service the LBD environment with the previously uploaded customization package.|This makes non-shippable models and your customizations available on the LBD environment.|
 |Customer|Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
 |Customer|Run the "update settings" action through LCS.|Run this action with the same settings that already exist on the environment. This action then redeploys what was already deployed on the environment, but it will run the previously setup pre-deployment script, which will inject the necessary attributes so they can be passed to DbSync execution.|
-|Customer|Compete the scale unit configuration and workload assignment using the Scale Unit Manager portal.|[Scale Unit Manager portal](https://sum.dynamics.com)|
+|Customer|Compete the scale unit configuration and workload assignment using steps listed in [Assign your LBD edge scale unit to a hub](#assign-your-lbd-edge-scale-unit-to-a-hub) | |
 
 ## Create an LCS on-premises implementation project
 
 Go to the LCS main page ([lcs.dynamics.com](https://lcs.dynamics.com) for production environments or [lcs.tie.dynamics.com](https://lcs.tie.dynamics.com) for test environments).
-Select the + button and create an implementation project. Make sure there is at least one sandbox slot available to deploy.
+Select the **Create a project** (+) button and create an implementation project. Make sure there is at least one sandbox slot available to deploy.
 
 :::image type="content" source="./media/cloud_edge-lbd-lcs2.png" alt-text="Select LCS project type":::
 
@@ -127,27 +127,27 @@ Do the following:
 
 To assign your scale unit to a Supply Chain Management hub environment, run the following steps on the hub environment:
 
-- Open the **ScaleUnitHubSetup** menu item.
-- Enter values for the following fields:
-  - **Name** - Enter a name.
-  - **Hub AAD client ID** - Available from AAD App registrations on the Azure portal.
-- Prepare workloads to be configured (see the next section).
-- Enter the scale units and their associated work loads.
-- Select **Set up hub**.
+1. Open the **ScaleUnitHubSetup** menu item.
+1. Enter values for the following fields:
+      - **Name** - Enter a name.
+      - **Hub AAD client ID** - Available from AAD App registrations on the Azure portal.
+1. Prepare workloads to be configured (see the next section).
+1. Enter the scale units and their associated work loads.
+1. Select **Set up hub**.
 :::image type="content" source="media/cloud_edge-lbd-configurehub.png" alt-text="Configure you hub for a edge scale unit":::
 
 ### Configure the LBD scale unit environment
 
-- Go to the **ScaleUnitSetup** menu item
-- Enter values for the following fields:
-  - **Name** - Should match the value you have entered for the hub setup.
-  - **Hub resource ID** - Enter *https://contosohub.sandbox.operations.dynamics.com*.
-  - **Hub URL** - Enter *https://contosohub.sandbox.operations.dynamics.com/*. (Note the trailing "/".)
-  - **Hub AAD tenant ID** - Enter *https://login.windows.net/contoso.com*.
-  - **Hub AAD client ID** - Available from AAD App registrations in the Azure portal.
-  - **Hub encrypted secret** - Available from AAD App registrations in the Azure portal.
-- Select **Initialize scale unit** to bootstrap the scale unit with initialization data from the hub.
-- Select **Deploy**.
+1. Go to the **ScaleUnitSetup** menu item
+1. Enter values for the following fields:
+      - **Name** - Should match the value you have entered for the hub setup.
+      - **Hub resource ID** - Enter *https://contosohub.sandbox.operations.dynamics.com*.
+      - **Hub URL** - Enter *https://contosohub.sandbox.operations.dynamics.com/*. (Note the trailing "/".)
+      - **Hub AAD tenant ID** - Enter *https://login.windows.net/contoso.com*.
+      - **Hub AAD client ID** - Available from AAD App registrations in the Azure portal.
+      - **Hub encrypted secret** - Available from AAD App registrations in the Azure portal.
+1. Select **Initialize scale unit** to bootstrap the scale unit with initialization data from the hub.
+1. Select **Deploy**.
 
 ### Prepare workloads to be configured
 
