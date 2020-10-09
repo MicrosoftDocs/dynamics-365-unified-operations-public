@@ -50,12 +50,12 @@ This section explains what to do if the warehousing app shows a **Trust anchor f
 
 ### Possible root cause
 
-Microsoft may have updated the Server SSL certificates used by Supply Chain Management. As a result, the root certificate and/or one of the intermediate certificates may have changed, so the new certificate isn't yet on the list of trusted system certificates for the mobile device.
+Microsoft may have updated the Server SSL certificates used by Supply Chain Management. As a result, the root certificate and/or one of the intermediate certificates may have changed, so the new certificate isn't on the list of trusted system certificates for the mobile device.
 
 ### Resolution
 
 - Contact Zebra or Google for an update of the system trusted certifying authority (CA) certificates.
-- Replace the device(s) with devices that are running a more recent version of Android (they get the trusted CAs updated automatically)
+- Replace the device(s) with devices that are running a more recent version of Android (their trusted CA certificates are updated automatically).
 
 ### Workaround
 
@@ -66,6 +66,8 @@ Manually download the new root certificate using your internet browser by doing 
 1. Sign in to Dynamics Supply Chain Management and open its front page.
 1. In the address bar of your browser, select the lock icon to open the **Location is secure** dialog box.
 1. In the dialog box, select **Certificate (valid)** to open the **Certificate** window for that certificate.
+1. Open the **Certification path** tab of the **Certificate** window.
+1. Select the top certificate shown in the hierarchy (**DigiCert Global Root G2**).
 1. Open the **Details** tab of the **Certificate** window.
 1. Select the **Copy to file button** at the bottom of the **Details** tab.
 1. The **Certificate export wizard** opens. Select **Next** to continue.
