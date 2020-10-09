@@ -44,18 +44,23 @@ This section explains what to do if the warehousing app shows a **Trust anchor f
 
 ### Scope
 
+This issue can affect devices with the following properties:
+
 - **OS version**: Android 4.4.x (such as Zebra TC55). (This isn't an issue on recent Android versions.)
 - **Supply Chain Management location**: Cloud or on-premises
 - **Connection mode**: Client secret / Certificate
 
 ### Possible root cause
 
-Microsoft may have updated the Server SSL certificates used by Supply Chain Management. As a result, the root certificate and/or one of the intermediate certificates may have changed, so the new certificate isn't on the list of trusted system certificates for the mobile device.
+Microsoft may have updated the server SSL certificates used by Supply Chain Management. As a result, the root certificate and/or one of the intermediate certificates may have changed, so the new certificate isn't on the list of trusted system certificates for the mobile device. Newer versions of Android automatically update their lists of trusted certificates, but Android 4.4.x doesn't.
 
 ### Resolution
 
-- Contact Zebra or Google to get an update of the system trusted certifying authority (CA) certificates.
-- Replace older device(s) with devices that are running a more recent version of Android (their trusted CA certificates are updated automatically).
+Do one of the following to fix this issue:
+
+- Use the workaround described in the next section to update each relevant device.
+- It *might* be possible to contact Zebra or Google to get an update of the system trusted certifying authority (CA) certificates. However, we have not confirmed this.
+- If possible, consider replace older device(s) with devices that are running a more recent version of Android (where trusted CA certificates are updated automatically).
 
 ### Workaround
 
@@ -80,9 +85,9 @@ Manually download the new root certificate using your internet browser by doing 
 Install the downloaded certificate by doing the following:
 
 1. Copy the new certificate you downloaded in the previous step to an SD card.
-1. Sign in to the mobile device and insert the SD card.
+1. Sign in to an affected mobile device and insert the SD card.
 1. Open the **Settings**.
 1. From the **Personal** section, select **Security**.
 1. Select **Install from SD card**.
 1. The new certificate should now be shown on teh **User** tab for trusted certificates.
-
+1. Repeat this procedure for each affected device.
