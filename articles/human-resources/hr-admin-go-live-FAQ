@@ -1,0 +1,85 @@
+---
+
+# required metadata
+
+title: Go-live for implementation projects FAQ
+description: This topic lists frequently asked questions about how to go live with a Dynamics 365 Human Resources implementation project. 
+author: raprofit
+manager: AnnBe
+ms.date: 10/09/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-human-resources
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: dkrame
+ms.search.validFrom: 2020/10/09
+ms.dyn365.ops.version: Human Resources
+
+---
+
+# Go-live for implementation projects FAQ 
+This topic lists frequently asked questions about how to go-live with a Dynamics 365 Human Resources implementation projects. 
+
+## When can I configure and request my production environment? 
+
+Typically, a production environment is deployed after all customizations are code-complete, user acceptance testing (UAT) is completed, the customer has signed-off on the solution, and there are no blocking issues for go-live. 
+
+For qualified customers, when you are at this stage, the Microsoft FastTrack team will work with the project team to do a go-live assessment/review. 
+
+## What are the prerequisites to deploy a production environment? 
+
+For a list of the prerequisites, see [Prepare for go-live](/human-resources/hr-admin-prepare-for-go-live.md). 
+
+## What is a Go-live assessment/review?  
+
+The Go-live assessment/review is part of the [Microsoft FastTrack program](Dynamics-365-Operations/articles/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md). During this review, a solution architect assesses whether an implementation project is ready for a successful cutover and go-live. This review is mandatory for every implementation project before you can request to go live in a production environment. 
+
+## Our sandbox environments are deployed in the Central US datacenter, but we want our production environments to be deployed in the West US datacenter. Can I select West US as the datacenter in my production configuration? 
+
+Although LCS will not restrict you from selecting a different data center when you deploy a Human Resources environment, we strongly recommend that you do not select a different data center.  
+
+If you want your production environment to reside in the West US datacenter, you should first redeploy your sandbox environments to the West US datacenter, test them, and sign-off. 
+
+For information that can help you select the correct datacenter, see the [Network requirements](Dynamics-365-Operations/articles/fin-ops-core/fin-ops/get-started/system-requirements.md) section of the "System requirements" topic. 
+
+## What level of access do I have to the Azure resources for my Dynamics 365 Human Resources environments?  
+
+Access to the Human Resources environments is limited. You cannot access the virtual machine (VM) or Microsoft Internet Information Services (IIS). You also cannot access the database through Microsoft SQL Server Management Studio. 
+
+Although you cannot access your Azure resources or Dynamics 365 Human Resources environment directly, there are additional features that can be used to access your data. For example, you can deploy an Azure SQL database in your own Azure tenant and use the Bring Your Own Database (BYOD) feature to synchronize data. For more information, refer to [Bring your own database (BYOD)](Dynamics-365-Operations/articles/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md).  Additionally, you can use the Common Data Service (CDS) integration to synchronize select entities into the CDS database. For more information, refer to [Common Data Service entities](/human-resources/hr-developer-entities.md). 
+
+## How often is my production database backed up? 
+
+Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done every 12-24 hours, and transaction log backups every 5 to 10 minutes. Microsoft retains sufficient backups to allow for Point in Time Restore (PITR) within the last 7 days. 
+
+For more information, see [Learn about automatic SQL Database backups](azure-docs-pr/articles/azure-sql/database/automated-backups-overview.md). 
+
+## Can I request a copy of the backup of my production database? 
+
+No. However, you can submit a database refresh service request to copy your Production environment to your Sandbox environment. You can deploy an Azure SQL database in your own Azure tenant and use the Bring Your Own Database (BYOD) feature to synchronize data from your Production environment. For more information, refer to [Bring your own database (BYOD)](Dynamics-365-Operations/articles/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md). 
+
+## How do I move my Sandbox environment to Production for Go-Live? 
+
+Since a copy feature is not available to move your environment from a Sandbox to your Production environment, you must use data packages to move data into your production environment.  
+
+It is recommended to maintain a clear list of entities that are configured in your Sandbox throughout the project and to test the process of the cutover and migration of any data packages that are needed for your go-live. A manual process will be required to move any data packages into the Production environment when you are ready to go-live. 
+
+## What should I do if my production environment is down? 
+
+To report a production outage, follow the process described in the topic, [Report a production outage](Dynamics-365-Operations/articles/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage.md). 
+
+ 
