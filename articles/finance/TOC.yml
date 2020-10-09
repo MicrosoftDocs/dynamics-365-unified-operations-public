@@ -888,6 +888,8 @@
           href: general-ledger/tasks/create-assign-advanced-rule-structures.md
         - name: Ledger journal types
           href: general-ledger/ledger-journal-types.md
+        - name: Configure ledgers
+          href: general-ledger/configure-ledger.md
         - name: Create and validate journals
           href: general-ledger/tasks/create-validate-journals.md
         - name: View journal entries or transactions
