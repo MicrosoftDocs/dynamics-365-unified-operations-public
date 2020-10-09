@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
 

@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 272683
 ms.search.region: UAE
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2019-05-29
 

@@ -24,7 +24,7 @@ ms.custom: 83972
 ms.assetid: 247e4d72-610b-4fa5-9873-601ed0f4b2d6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: knelson
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
