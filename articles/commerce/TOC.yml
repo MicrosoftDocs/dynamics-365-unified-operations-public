@@ -92,6 +92,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.15 (January 2021)
+            href: get-started/whats-new-commerce-10-0-15.md
           - name: Commerce 10.0.14 (November 2020)
             href: get-started/whats-new-commerce-10-0-14.md
           - name: Commerce 10.0.13 (October 2020)
@@ -1096,6 +1098,8 @@
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+      - name: User-defined certificate profiles for retail stores
+        href: localizations/certificate-profiles-for-retail-stores.md
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
