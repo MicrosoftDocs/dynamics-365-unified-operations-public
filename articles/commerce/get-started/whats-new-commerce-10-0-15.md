@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Commerce 10.0.15 (January 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.15. 
 author: josaw1
 manager: AnnBe
-ms.date: 10/08/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,7 +49,7 @@ The following features are included in this release. The feature titles link to 
 - [Experimentation in Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)<br> - For more information, see [Experimentation in Dynamics 365 Commerce](../experimentation-overview.md).
 - [Commerce localization for Brazil](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - For more information, see [Commerce localization for Brazil](../localizations/latam-bra-commerce-localization.md).
 - [Improved inbound and outbound inventory operations in store](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)<br> - For more information, see [Inbound inventory operation in POS](../pos-inbound-inventory-operation.md).
-- [Improvements to the recall order operation in point of sale (POS)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/improvements-facilitating-curbside-pickup-store-operations)
+- [Improvements to the recall order operation in point of sale (POS)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/improvements-facilitating-curbside-pickup-store-operations)<br> - For more information, see [Recall order operation in POS](../enhancedorderrecall.md).
 - [Ability to skip "Change due" dialog in POS when no change is due](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/ability-skip-change-due-dialog-pos-when-no-change-due)
 - CSP support for inline scripts and styles, and enabling nonce<br> - For more information, see [Manage Content Security Policy (CSP)](../manage-csp.md).
 
