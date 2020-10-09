@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed for the Indian GST localization in 10.0.13 (September 2020)
-description: This topic describes new or changed functionality that was released in Microsoft Dynamics 365 Finance version 10.0.13 for the APAC India Goods and Sevices Tax (GST) features.
+description: This topic describes new or changed functionality that was released in Microsoft Dynamics 365 Finance version 10.0.13 for the APAC India Goods and Services Tax (GST) features.
 author: prabhatb
 manager: annbe
 ms.date: 10/08/2020
@@ -60,7 +60,7 @@ On January 1, 2020, the Indian government made the electronic invoice (e-invoice
 
 This feature covers the accumulation of transactions that is based on permanent account numbers (PANs) if multiple customers and vendors have the same PAN.
 
-Tax liability of TCS can accrue when payment is received. Per the new section, 206C (1H), because of the interim accounting option for posting that is introduced in this feature, TCS should be collected when payment is received from a customer. The TCS amount will be posted to the interim account and added to the invoice when the invoice is issued. The liability of TCS will be recorded when the payment is received. Additionally, if multiple customers have the same PAN, an accumulated transaction value is compared with the threshold limit to determine the eligible amount of transactions for TCS deduction.
+Tax liability of TCS can accrue when payment is received. Per the new section, 206C (1H), because of the interim accounting option for posting that is introduced in this feature, TCS should be collected when payment is received from a customer. The TCS amount will be posted to the interim account and added to the invoice when the invoice is issued. The liability of TCS will be recorded when the payment is received. Additionally, if multiple customers have the same PAN, an accumulated transaction value is compared with the threshold limit to determine the eligible number of transactions for TCS deduction.
 
 #### Dynamics 365 Finance
 
@@ -262,7 +262,7 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 - When a purchase order is placed and the order has a procurement category, the load on inventory tax amount is posted to the purchase expenditure for an expense account instead of the  Cost of project account or Fixed asset account. This issue occurs in project and fixed asset scenarios.
 - The tax amount isn't shown correctly on the **Purchase requisition** page. The **Total** form shows the tax amount of only the first line, not all the lines.
 - When the user is posting a general journal with a debit project account and a (offset) credit vendor account, and the marking tax is **Load on inventory**, 
-  after posting checksthe project statement, the tax amount isn't included in the project cost value.
+  after posting checks the project statement, the tax amount isn't included in the project cost value.
 - GSTR: Customer can't select a financial year while they are running the Purchase Register reports.
 - When you post a tax journal that has a combination of a ledger account and a customer account, an error occurs.
 
@@ -271,4 +271,4 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 - When you manually adjust and apply the tax amount of Indian Tax Deducted at Source (TDS) withholding tax in a vendor invoice journal, you might have noticed that the adjustment is lost (reset) if you change the invoice number in the journal before you post.
 - The GST amount isn't shown correctly. The **GST amount** value is shown in a foreign currency, whereas the **Subtotal** and **Total amount** values are shown in Indian rupees (INR). The GST amount should be converted and added to the subtotal, so that the correct total amount is shown.
 - Customer has recently enabled the India localization, India GST feature on their India .Entity 104.
-- Ater enabling the India localization, the value is not displayed for the billing rule type **Milestone** on the **Project contract** page.
+- After enabling the India localization, the value is not displayed for the billing rule type **Milestone** on the **Project contract** page.
