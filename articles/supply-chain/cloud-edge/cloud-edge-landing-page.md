@@ -66,11 +66,11 @@ Companies working with manufacturing and distribution must be able to execute ke
 >
 > When you sign up for the preview, you will select the tenant and go through the sign up steps. As soon as we can allocate preview capacity, we will send you an email with the provisioning details and the promotion codes for two environments (a hub and a scale unit) for the respective LCS project. You will then be able to deploy the two environments as tier 2 sandbox environments. Those are valid 60 days from creation date of the promo code.
 >
-> After you confirm your sign up with Microsoft, one of the environments will be configured to function as a  hub the other as a scale unit. You can then configure the scale units and deploy select warehouse management and manufacturing workloads using the [Scale Unit Manager portal](https://sum.dynamics.com).
+> After you confirm your sign up with Microsoft, one of the environments will be configured to function as a  hub the other as a scale unit. You can then configure the scale units and deploy select warehouse management and manufacturing workloads using the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
 >
 > Preview environments will be deleted automatically after 60 days, or sooner if they appear to not be in use. After your preview environment has been deleted, you may sign up and queue for a new preview deployment.
 >
-> Go to the [Scale Unit Manager portal](https://sum.dynamics.com) to sign up for the preview.
+> Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM) to sign up for the preview.
 
 > [!WARNING]
 > Certain business functionality is not fully supported in the public preview when using workloads scale units. See the sections for more details about the functional workloads.
@@ -127,9 +127,9 @@ The following diagram shows the sign-up and provisioning flow for the public pre
 
 ### Select your LCS project tenant and the detailed preview process
 
-In the public preview, the [Scale Unit Manager portal](https://sum.dynamics.com) shows the list of tenants that your account is part of and where you are an owner or environment admin for an LCS project.
+In the public preview, the [Scale Unit Manager portal](https://aka.ms/SCMSUM) shows the list of tenants that your account is part of and where you are an owner or environment admin for an LCS project.
 
-If you do not find the environment you are looking for in this list, go to [Lifecycle Services](https://lcs.dynamics.com/v2) and ensure that you are either an environment admin or a project owner of the LCS project for the tenant you are looking for. Please note also that only AAD accounts from the selected tenant are authorized to complete the sign up experience.
+If you do not find the tenant you are looking for in this list, go to [LCS](https://lcs.dynamics.com/v2) and ensure that you are either an environment admin or a project owner of the LCS project for the tenant you are looking for. Please note also that only AAD accounts from the selected tenant are authorized to complete the sign up experience.
 
 > [!NOTE]
 > After you have applied changes to Lifecycle Services it may take up to 30 min until the changes reflect in this list.
@@ -142,16 +142,18 @@ Select the **Click here to sign up** link to sign up your LCS tenant to particip
 
 :::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Screen shot showing the sign up submission for a tenant.":::  
 
-Microsoft will review your request and inform you about the next steps.  
+Microsoft will review your request and inform you about the next steps to the email contact you have supplied on the sign up form.
 
-Once you have been granted access to the preview program, you will receive two promo codes for your LCS project. You can now deploy two environments in LCS using these promo codes. The environments must be using PEAP release 10.0.15 or later. Once completed, please reply in email so we can prepare one of those environments to become the Supply Chain Management hub and the other to be a cloud scale unit in your preview deployment. We will then let you know once this configuration step is completed.
+Once you have been granted access to the preview program, you will receive two promo codes for your LCS project. You can now deploy two environments in LCS using these promo codes. The environments must be using PEAP release 10.0.15 or later. Once completed, please notify Microsoft as instructed when you receive the promo codes, so that environment can be enabled for the features in the preview. We will  let you know once this configuration step is completed.
 
-Now you can start configuring scale units and workloads in your preview environment using the Scale Unit Manager portal.
-
-### Manage cloud scale units and workloads
+Now may then start configuring scale units and workloads in your preview environment.
 
 > [!IMPORTANT]
-> If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described in [Configure the hub environment](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
+> To configure cloud scale units you can [do all the configuration in the scale unit manager portal](#manage-cloud-scale-units-and-workloads-using-the-scale-unit-manager-portal).
+>
+> If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
+
+### Manage cloud scale units and workloads using the scale unit manager portal
 
 Access the Scale Unit Manager portal and sign in with your tenant account. On the **Configure scale units** page, you can add a hub environment if it isn't already listed. Then you can select the hub that you want to configure with scale units and workloads.
 

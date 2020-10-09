@@ -117,7 +117,7 @@ Do the following:
 > [!IMPORTANT]
 > If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described below. The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
 
-### Configure the hub environment
+### Configure the hub environment for use with edge scale units
 
 To assign your scale unit to a Supply Chain Management hub environment, run the following steps on the hub environment:
 
