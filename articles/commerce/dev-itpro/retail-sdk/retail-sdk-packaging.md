@@ -5,7 +5,7 @@ title: Create deployable packages
 description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -302,15 +302,12 @@ After the build is completed, deployable packages are generated as a zip file (R
 
 ## Deploy the packages
 
-1. Navigate to https://lcs.dynamics.com/v2
-2. sign in to LCS, and open a project. Then, on the hamburger menu, click Asset library.
-3. Select the **Software deployable package** Asset type and click the **+** button to upload the package. Provide a package name and description and then add the package file by clicking the **Add file** button. 
-4. Once the upload is completed, click the **Confirm** button to complete the upload process.
-5. The package will be validated by LCS in few mins and after validation mark the package as RELEASE CANDIDATE.
-
-**After upload, the package need to be deployed to the environment:**
-
-Follow the steps mentioned in this [doc to deploy the package to CSU environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/update-retail-channel).
+1. Go to https://lcs.dynamics.com/v2.
+2. Sign in to LCS, and open a project. Then, on the hamburger menu, select Asset library.
+3. Select the **Software deployable package** asset type, and then select the **+** button to upload the package. Provide a package name and description and then add the package file by selecting **Add file**. 
+4. After the upload is complete, select **Confirm** to complete the upload process.
+5. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
+6. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in [Apply updates and extensions to Commerce Scale Unit (cloud)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/update-retail-channel).
 
 For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).
 
