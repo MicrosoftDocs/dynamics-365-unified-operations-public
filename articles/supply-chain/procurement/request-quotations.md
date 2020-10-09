@@ -202,7 +202,7 @@ method** pages.
 
 ## <a name="default-reply-fields"></a>Choose default fields to include in vendor RFQ reply forms
 
-You can specify specific types of information that you want to receive from vendors when they reply to (bid on) a request for quotation (RFQ). Fields that you mark as default are included on the online form provided for vendor collaboration, and printed on RFQ reply sheets sent to vendors. These fields are also included on the RFQ return document that you can send to vendors if, for example, you want to negotiate prices or delivery times.
+You can specify specific types of information that you want to receive from vendors when they reply to (bid on) a request for quotation (RFQ). Fields that you mark as default are included on the online form provided for vendor collaboration. To make these settings:
 
 1. If you haven't already done so, use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to enable the *Select RFQ fields to include in vendor RFQ reply forms* feature.
 1. Go to **Procurement and sourcing > Setup > Procurement and sourcing parameters**.
