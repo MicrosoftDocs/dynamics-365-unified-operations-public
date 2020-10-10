@@ -92,6 +92,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.15 (January 2021)
+            href: get-started/whats-new-commerce-10-0-15.md
           - name: Commerce 10.0.14 (November 2020)
             href: get-started/whats-new-commerce-10-0-14.md
           - name: Commerce 10.0.13 (October 2020)
@@ -708,6 +710,8 @@
           href: customer-orders-overview.md
         - name: Hybrid customer orders
           href: hybrid-customer-orders.md
+        - name: Recall order operation in POS
+          href: enhancedorderrecall.md
       - name: Sales orders   
         items:
         - name: Create a call center order 
@@ -870,6 +874,8 @@
           href: document-states-overview.md
         - name: Work with publish groups
           href: publish-groups.md
+        - name: Enable and use cross-channel sharing
+          href: cross-channel-sharing.md
         - name: Brand your site and add store details
           items:
           - name: Add a logo
@@ -1096,6 +1102,8 @@
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+      - name: User-defined certificate profiles for retail stores
+        href: localizations/certificate-profiles-for-retail-stores.md
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria

@@ -1,6 +1,2557 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/a-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/b-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/c-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/d-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/e-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/fieldbinding-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormBuildButtonControl-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormBuildFilterPaneControl-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormBuildReferenceControl-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormChangeTracker-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormDataObject-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormFastTabSummarySeparator-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormGroupControl-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormListBoxControl-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormObject-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormReferenceControl-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/FormTabControl-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/g-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/h-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/i-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/j-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/k-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/l-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/m-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/n-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/o-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/p-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/q-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/r-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/s-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/t-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/u-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/v-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/w-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/x-classes.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AbsoluteFieldBinding-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AdObject-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AllowEncryptionKeyRetrievalPermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AOSLoadGen-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AOSSessionInfo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AOTTableFieldList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ApplicationObjectTreeWindow-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Array-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AsciiIo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AssemblyDeployManager-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AsyncTaskResult-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/AxaptaCOMConnectorMonitor-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Binary-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/BinaryIo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/BinData-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ClassNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ClientPrintJobSettings-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CLRInterop-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CLRObject-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CodeAccessPermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/COM-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/COMDispFunction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/COMError-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CommaIo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CommaTextIo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CompileOutputInfos-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/COMVariant-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ConfigurationKeySet-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Connection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ContainerClass-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ControlFilterValue-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ControlNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CryptoAPI-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Cue-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CueGroup-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/CueReference-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataEntityDataSourceRuntimeContext-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataEntityPersister-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataEntityRuntimeContext-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataImportExportManager-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataImportManager-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataImportSessionInfo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataSet-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataSetRun-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataSourceMethodInfo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataSourceMethodInfoList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataSourceNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DataSourceRuntimeMetadataChangedEvtArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DateTimeUtil-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DialogBox-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictClass-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictCompositeChildDataEntity-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictCompositeDataEntity-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictConfigurationKey-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictDataEntity-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictDataEntityField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictEnum-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictFieldGroup-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictFullTextIndex-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictIndex-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Dictionary-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictLicenseCode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictMethod-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictRelation-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictTable-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictTableMap-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictType-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DictView-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DLL-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DLLFunction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DocNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DynamicPropertyCallback-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/DynamicPropertyManager-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Editor-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Enumerator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ExecutePermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FieldBinding-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FieldFilterValue-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FileIOPermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FilterValue-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Form-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormActionPaneControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormActionPaneTabControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormActiveXControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormAnimateControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormAutoLookupFactory-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBinding-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildActionPaneControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildActionPaneTabControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildActiveXControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildAnimateControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildButtonGroupControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildButtonSeparatorControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildCheckBoxControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildComboBoxControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildCommandButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildContainerControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildDataSource-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildDateControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildDateTimeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildDesign-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildDropDialogButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildFastTabHeaderControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildFastTabSummarySeparator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildFilterPaneControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildFunctionButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildGridControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildGroupControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildGuidControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildHTMLControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildIntControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildListBoxControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildListControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildManagedHostControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildMenuButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildObjectSet-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildProgressControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildRadioControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildRealControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildReferenceControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildReferenceGroupControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildRichTextControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildSegmentedEntryControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildStaticTextControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildStringControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildTabControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildTableControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildTabPageControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildTimeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildTreeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormBuildWindowControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormButtonGroupControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormButtonSeparatorControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormChangeTracker-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormCheckBoxControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormComboBoxControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormCommandButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormContainer-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormContainerControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormControlCancelableSuperEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormControlCancelEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormControlEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormDataObject-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormDataRow-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormDataSource-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormDateControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormDateTimeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormDesign-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormDesignView-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormDropDialogButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormFastTabHeaderControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormFastTabSummarySeparator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormFilterPaneControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormFunctionButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormGridControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormGroupControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormGuidControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormHTMLControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormIntControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormListBoxControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormListColumn-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormListControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormListItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormManagedHostControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormMenuButtonControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormNotifyEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObject-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSet-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSetCacheChangedEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSetCurrentChangedEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSetLeaveEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSetMarkingChangedEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSetNotify-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSetNotifyEvents-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSetPagingParamsChangedEvtArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormObjectSetRequestCacheSizeEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormPart-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormProgressControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormQueryMiner-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormRadioControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormRealControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormReferenceControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormReferenceGroupControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormReferenceObject-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormRichTextControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormRowDisplayOption-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormSegment-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormSegmentedEntryControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormsPreloadingManager-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormStaticTextControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormStringControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormTabControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormTableCell-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormTableControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormTabPageControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormTimeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormTreeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormTreeItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/FormWindowControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Gac-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/HeapCheck-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/HelpDocSetNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/HelpDocumentManager-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/HtmlFont-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IDispatcherProxy-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISApplicationObject-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISContextObject-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISPostedFile-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISReadCookie-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISRequest-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISRequestDictionary-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISResponse-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISServer-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISSessionObject-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISStringList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISVariantDictionary-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISViewState-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/IISWriteCookie-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Image-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Imagelist-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ImportTableDataInfo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ImportTableSchemaInfo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/InfoPart-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/InfoPartField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/InfoPartGroup-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/InfoPartLayout-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/InitialQueryParameter-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/InteropPermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Io-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Job-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Keywords-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Label-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/LabelBulkEditor-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/LastAotSelection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/List-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/list.txt",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ListEnumerator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ListIterator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ListPage-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ListPageArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ListPageInteraction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/LoadAutoCompleteDataEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/LoginProperty-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ManagedEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ManagedEventDelegate-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ManagedEventHandler-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Map-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapEnumerator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Mapi-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiEx-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiExAppointment-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiExContact-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiExMail-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiExMessage-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiExTask-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiFileDesc-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiMessage-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapiRecipDesc-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MapIterator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MemberFunction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Menu-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MenuItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MenuReference-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MessageWin-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MethodInfo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ModifyFieldEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ModifyFieldValueEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/MultiSelectionContext-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/NumberSequence-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/NumberSequenceSessionLessCache-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Object-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ObjectIdent-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ObjectRun-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OciConnection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OdbcConnection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OleCommand-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OuputSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputAutoLabelField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputBitmapField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputBodySection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputColumnHeadingsSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputDateField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputDateTimeField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputEnumField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputEpilogSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputFooterSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputHeaderSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputIntegerField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputLabelField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputPage-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputPageFooterSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputPageHeaderSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputProgrammableSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputPrologSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputRealField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputShapeField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputStaticTextField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputStringField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputSumField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OutputTimeField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/OverwriteSystemfieldsPermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Page-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PageArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PageInteraction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PartList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Percentbar-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PerformanceMonitor-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PerformanceMonitorCounter-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PerformanceMonitorInstance-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PipeClient-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PipeServer-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PresenceInfo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PrintJobSettings-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/profiler-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ProgressWindow-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ProjectGroupNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ProjectListNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ProjectNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/PropertiesWindow-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Query-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryBuildDataSource-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryBuildDynalink-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryBuildFieldList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryBuildLink-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryBuildRange-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryBuildStaticlink-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryFilter-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryGroupByField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryHavingFilter-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryOrderByField-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/QueryRun-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Random-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/RecordInsertList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/RecordLinkList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/RecordSortedList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/RecordViewCache-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReferenceNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/RelationPath-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/RelativeFieldBinding-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Report-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportAutoDesignSpecs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportBitmapControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportDateControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportDateTimeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportDesign-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportEnumControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportFieldGroup-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportGuidControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportIntegerControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportLibraryNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportOutput-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportOutputUser-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportPrinter-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportPromptControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportRealControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportRun-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportSection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportSectionGroup-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportShapeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportStringControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportSumControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportTextControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportTimeControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ReportViewer-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ResultSet-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ResultSetMetaData-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/RunAsPermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ScannerClass-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SearchParm-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SecureNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SecurityContext-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SecurityPolicy-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SecurityRights-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SecuritySkipFlush-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SecurityTableRights-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SecurityUtil-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SegmentEnteredEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SegmentValueChangedEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Sequence-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Set-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SetEnumerator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SetIterator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SkipAOSValidationPermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SqlDataDictionary-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SqlDataDictionaryPermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SqlStatementExecutePermission-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SqlSyncPending-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SqlSystem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SSRSReportAutoDesignNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SSRSReportConceptNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SSRSReportDesignNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SSRSReportPrecisionDesignNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Statement-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/Struct-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SurrogateFKReplacementHelper-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SysGlobalObjectCache-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/SystemMonitor-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/systemSequence-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/TableExtension-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/TextBuffer-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/TextIo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/TileReference-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/TreeNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/TreeNodeIterator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/TreeNodeType-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/UnitofWork-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/UserConnection-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/UserMenuList-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/UserSetup-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/UtilFile-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ValidateEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ValidateFieldEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/ValidateFieldValueEventArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VirtualChannelManager-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSItemNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSProjectFileNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSProjectFolderNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSProjectLinkNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSProjectNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSProjectsNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSProjectTypeNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSS-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/VSSItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebActionMenuFunction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebContentItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/webControlNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebDisplayContentItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebletItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/webListDefNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebManagedContentItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebMenu-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebMenuFunction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebMenuItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/webModuleNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebOutputContentItem-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/webPageDefNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/webStaticFileNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WebUrlMenuFunction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/WinAPINative-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xApplication-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xAxaptaUserDetails-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xAxaptaUserManager-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xBrowser-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xClassFactory-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xClassTrace-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xCompany-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xCompilerOutput-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/XDSServices-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xDynamicVarSet-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xExportToExcelController-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xFormRun-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xGlobal-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xInfo-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xLanguage-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xMenuFunction-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xNavPane-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/XppCompiler-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/XppPrePostArgs-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xRecord-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xRef-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xResourceNode-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xSession-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xSqlEnumerator-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xToastNotification-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-ref/system-classes/xVersionControl-class.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/dotnet/api/dynamics.ax.application",
+      "redirect_document_id": "false"
+    },
+
+    {
       "source_path": "articles/commerce/retail-support.md",
       "redirect_url": "../fin-ops-core/dev-itpro/lifecycle-services/lcs-support",
       "redirect_document_id": "false"
