@@ -22,7 +22,7 @@ ms.search.scope: Operations, Core
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-alpavk
+ms.author: kamaybac
 ms.search.validFrom: 2020-1-22
 ms.dyn365.ops.version: 10.0.9
 

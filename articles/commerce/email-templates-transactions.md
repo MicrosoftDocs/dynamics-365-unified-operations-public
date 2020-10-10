@@ -3,7 +3,7 @@
 
 title: Create email templates for transactional events 
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
-author: stuharg
+author: bicyclingfool
 manager: annbe
 ms.date: 06/01/2020
 ms.topic: article

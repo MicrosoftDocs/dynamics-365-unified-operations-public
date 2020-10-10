@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

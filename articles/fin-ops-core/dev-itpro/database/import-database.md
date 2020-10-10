@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
 
