@@ -24,7 +24,7 @@ ms.custom: 19131
 ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
