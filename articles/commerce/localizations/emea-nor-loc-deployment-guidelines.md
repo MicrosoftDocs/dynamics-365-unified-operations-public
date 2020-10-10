@@ -21,7 +21,7 @@ ms.reviewer: josaw
 # ms.custom: 
 ms.search.region: Norway
 ms.search.industry: Retail
-ms.author: v-alexec
+ms.author: josaw
 ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2

@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ---

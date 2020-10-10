@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
 

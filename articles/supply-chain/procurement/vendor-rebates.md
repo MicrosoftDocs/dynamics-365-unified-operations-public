@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: no wiki topic
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012 
 ---
