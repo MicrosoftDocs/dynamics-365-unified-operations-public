@@ -772,7 +772,7 @@ An expression in X++ is used in either a mathematical or logical way. Expression
 
 ### EBNF Description of Expressions in X++
 
-|                    |   |                                                             |
+|    Term            | &nbsp; |   Definition                                                |
 |--------------------|---|-------------------------------------------------------------|
 |     Expression     | = | Simple-expression \[RelationalOperator Simple-expression \] |
 | RelationalOperator | = |                              =                              |

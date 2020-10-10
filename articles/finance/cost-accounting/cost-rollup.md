@@ -103,7 +103,7 @@ A dimension hierarchy that fulfills the policy requirement can be set up as foll
 
 **Dimension hierarchy**
 
-|                         | Dimension member ranges |                     |
+|      &nbsp;             | Dimension member ranges |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Nodes                   | From dimension member   | To dimension member |
 | Profit & Loss statement |                         |                     |
@@ -165,7 +165,7 @@ If you want to learn how cost flows between the cost centers in the organization
 
 Cost element dimension members can be set up as follows.
 
-| Cost elements | Type          |               |
+| Cost elements | Type          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Electricity   | Primary       |
 | 1002          | Salaries      | Primary       |

@@ -81,38 +81,33 @@ The unrealized gain/loss transactions are created differently between General le
 
 **Example** The following balances exist for main account 110110.
 
-|            |                    |                        |                       |
+| Date   | Ledger account| Transaction amount | Accounting amount |
 |------------|--------------------|------------------------|-----------------------|
-| **Date**   | **Ledger account** | **Transaction amount** | **Accounting amount** |
 | January 20 | 110110 (Cash)      | 500 EUR (Debit)        | 1000 USD (Debit)      |
 
 The main account is revalued on January 31.  The unrealized gain/loss is calculated as follows.
 
-|                                             |                                            |                                  |                                    |                             |
+| Current balance in transaction currency | Current balance in accounting currency | Exchange rate at revaluation | New accounting currency amount | Unrealized gain/loss    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Current balance in transaction currency** | **Current balance in accounting currency** | **Exchange rate at revaluation** | **New accounting currency amount** | **Unrealized gain/loss**    |
 | 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833.33 EUR (500 x 1.666667)        | 166.67 loss (833.33 – 1000) |
 
 The following accounting entry will be created.
 
-|            |                          |           |            |
+| Date   | Ledger account       | Debit | Credit |
 |------------|--------------------------|-----------|------------|
-| **Date**   | **Ledger account**       | **Debit** | **Credit** |
 | January 31 | 110110 (Cash)            |           | 166.67     |
 | January 31 | 801400 (Unrealized loss) | 166.67    |            |
 
 No new transactions are posted for the month of February.  The main account is revalued on February 28.
 
-|                                             |                                            |                                  |                                    |                             |
+| Current balance in transaction currency | Current balance in accounting currency | Exchange rate at revaluation | New accounting currency amount | Unrealized gain/loss    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Current balance in transaction currency** | **Current balance in accounting currency** | **Exchange rate at revaluation** | **New accounting currency amount** | **Unrealized gain/loss**    |
 | 500 EUR                                     | 833.33 USD (1000 - 166.67)                 | 250.0000                         | 1250 USD (500 x 2.5)               | 416.67 gain (1250 – 833.33) |
 
 The following accounting entry will be created.
 
-|             |                          |           |            |
+| Date    | Ledger account       | Debit | Credit |
 |-------------|--------------------------|-----------|------------|
-| **Date**    | **Ledger account**       | **Debit** | **Credit** |
 | February 28 | 110110 (Cash)            | 416.67    |            |
 | February 28 | 801600 (Unrealized gain) |           | 416.67     |
 
