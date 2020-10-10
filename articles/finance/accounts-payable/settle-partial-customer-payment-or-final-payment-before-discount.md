@@ -53,7 +53,7 @@ From the **Customer** or **Customer transactions** page, Arnie can open the **Se
 
 Discount information appears at the bottom of the **Settle transactions** page for the marked invoice.
 
-|                              |           |
+|    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |
@@ -100,7 +100,7 @@ If the customer wants to settle exactly half the invoice, the customer submits a
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+|     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |
