@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
 

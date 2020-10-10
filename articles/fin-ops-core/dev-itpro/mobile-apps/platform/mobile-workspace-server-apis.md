@@ -19,7 +19,7 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.custom: 255544
 ms.search.region: Global
-# ms.search.industry:
+# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
