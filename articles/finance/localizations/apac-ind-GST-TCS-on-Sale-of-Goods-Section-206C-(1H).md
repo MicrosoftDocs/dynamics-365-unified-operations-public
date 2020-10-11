@@ -74,7 +74,7 @@ Select “Enable threshold hierarchy”- “Yes”.
 On selection of “Yes” “PAN based accumulation “option will enable
 User can mark this option if dealing with customers have same PAN number. 
 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 ## Create new withholding tax group “Sale of goods.” 
 ** Tax>setup>withholding tax group>Sale of goods ** 
@@ -83,8 +83,7 @@ After this go back to withholding tax code form and select  “ “Interim TCS p
 Include GST tax component if part of TCS base amount calculation under field “Include GST tax component for TDS or TCS calculation “
 If charges are not part of TCS calculation selection “Yes” under field “Exclude charges for TDS or TCS calculation” 
 Click on “Designer” button on action pane and define TCS calculation formula. 
-
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 ## Define Threshold definitions: 
 ** Navigate to Tax > Setup > Threshold definitions**
@@ -92,8 +91,7 @@ Define threshold definition for “Sale of goods.”
 Two threshold slabs have to be defined. 
 - 0-Max 
 - Max-0 
-
-![Company registration numbers](media/IND-GST-GSTIN-2.png) 
+![](media/IND-GST-GSTIN-2.png)
 
 ## TCS Threshold setup for “Sale of goods” 
 TCS on sales of goods apply on single customer or multiple customers having same PAN number. 
@@ -101,7 +99,7 @@ If customer PAN number is not available higher tax rate will apply after crossin
 If customer have PAN number than lower tax rate will apply. 
 Users need to define threshold reference for customers: 
 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 ## Click on Threshold designer 
 
@@ -119,34 +117,34 @@ When defining calculation basis for Taxable slab
  -  Calculate previous non-tax transactions-No.
  - 	Include in turnover base – Yes. 
 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 ## Activate calculation of TCS for customer: 
 ** Accounts Receivable>Customers > All customers **
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 ## Posting of Invoice: 
 ** When invoice is posted, and the accumulated transaction cross the threshold limit following accounting entry is posted:**
-![Company registration numbers](media/IND-GST-GSTIN-2.png) 
+![](media/IND-GST-GSTIN-2.png)
 
 
 ## TCS rate @ 0.1% (If PAN number is available ) 
 ** Note : TCS rate would be 0.0750% from 1st October - 31st March,2020 ** 
 ** Invoice is posted as below:** 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 
 ## TCS liability will arise on collection of payment
 When user receive payment and attach Invoice with payment transaction, TCS amount is computed on full payment amount and reverse through related voucher. However, one more related voucher is generated with Invoice to show tax liability recognition in books for eligible amount only. 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 Related voucher will generate as below: 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 ** Important:**  
 One more related voucher will generate with posted sales Invoice to book actual TCS liability. 
 Users have to go to posted sales invoice voucher and check the related voucher entry. 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 ** Note: In case of purchase transaction where vendor is deducting TCS, user have to create new TCS withholding group **
 
@@ -156,7 +154,7 @@ Every Organization will claim credit of TCS deduction after reconciling the dedu
 ** Go to Tax>>Inquiries and reports>TDS/TCS inquiry **
 User can select required column fields to generate report. 
 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![](media/IND-GST-GSTIN-2.png)
 
 
 
