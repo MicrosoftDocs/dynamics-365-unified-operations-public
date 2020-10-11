@@ -84,7 +84,7 @@ Include GST tax component if part of TCS base amount calculation under field “
 If charges are not part of TCS calculation selection “Yes” under field “Exclude charges for TDS or TCS calculation” 
 Click on “Designer” button on action pane and define TCS calculation formula.
 
-![](media/TCS-on-Sale-of Goods-003.PNG)
+![](media/TCS-on-Sale-of-Goods-002.PNG)
 
 ## Define Threshold definitions: 
 ** Navigate to Tax > Setup > Threshold definitions**
