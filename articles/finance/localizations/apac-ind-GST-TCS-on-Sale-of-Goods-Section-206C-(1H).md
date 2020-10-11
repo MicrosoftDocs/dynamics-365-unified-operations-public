@@ -122,6 +122,7 @@ When defining calculation basis for Taxable slab
 
 
 ## TCS rate @ 0.1% (If PAN number is available ) 
+** Note : TCS rate would be 0.0750% from 1st October - 31st March,2020 ** 
 ** Invoice is posted as below:** 
 
 
