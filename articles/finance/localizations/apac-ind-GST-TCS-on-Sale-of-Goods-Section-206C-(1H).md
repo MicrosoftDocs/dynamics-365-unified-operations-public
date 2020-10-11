@@ -84,7 +84,7 @@ Include GST tax component if part of TCS base amount calculation under field “
 If charges are not part of TCS calculation selection “Yes” under field “Exclude charges for TDS or TCS calculation” 
 Click on “Designer” button on action pane and define TCS calculation formula.
 
-![](media/TCS-on-Sale-of Goods-003.PNG)
+![](media/TCS-on-Sale-of-goods-003.PNG)
 
 ## Define Threshold definitions: 
 ** Navigate to Tax > Setup > Threshold definitions**
@@ -93,7 +93,7 @@ Two threshold slabs have to be defined.
 - 0-Max 
 - Max-0 
 
-![](media/TCS-on-Sale-of Goods-004.PNG)
+![](media/TCS-on-Sale-of-Goods-004.PNG)
 
 ## TCS Threshold setup for “Sale of goods” 
 TCS on sales of goods apply on single customer or multiple customers having same PAN number. 
@@ -101,7 +101,7 @@ If customer PAN number is not available higher tax rate will apply after crossin
 If customer have PAN number than lower tax rate will apply. 
 Users need to define threshold reference for customers: 
 
-![](media/TCS-on-Sale-of Goods-005.PNG)
+![](media/TCS-on-Sale-of-goods-005.PNG)
 
 ## Click on Threshold designer 
 
@@ -119,7 +119,7 @@ When defining calculation basis for Taxable slab
  -  Calculate previous non-tax transactions-No.
  - 	Include in turnover base – Yes. 
 
-![](media/TCS-on-Sale-of Goods-006.PNG)
+![](media/TCS-on-Sale-of- Goods-006.PNG)
 
 ## Activate calculation of TCS for customer: 
 ** Accounts Receivable>Customers > All customers **
