@@ -129,26 +129,45 @@ When defining calculation basis for Taxable slab
 ## Posting of Invoice: 
 ** When invoice is posted, and the accumulated transaction cross the threshold limit following accounting entry is posted:**
 
-
+![](media/TCS-on-Sale-of-Goods-Tab1.PNG)
 
 
 ## TCS rate @ 0.1% (If PAN number is available ) 
 ** Note : TCS rate would be 0.0750% from 1st October - 31st March,2020 ** 
 ** Invoice is posted as below:** 
 
-
+| Account                                       	| Debit  	| Credit  	|
+|-----------------------------------------------	|--------	|---------	|
+| Customer A/C (Invoice amount)                 	| 66,016 	|         	|
+| Ledger A/C (Sales A/C)                        	|        	| 60,000  	|
+| GST Payable                                   	|        	|  6,000  	|
+| Interim TCS Payable A/C (0.1% on 66000-50000) 	|        	|     16  	|
 
 ## TCS liability will arise on collection of payment
 When user receive payment and attach Invoice with payment transaction, TCS amount is computed on full payment amount and reverse through related voucher. However, one more related voucher is generated with Invoice to show tax liability recognition in books for eligible amount only. 
 
+| Account              	| Debit  	| Credit  	|
+|----------------------	|--------	|---------	|
+| Bank                 	| 66,016 	|         	|
+| Customer             	|        	| 66,016  	|
+| Interim TCS Payable  	| 65.95  	|         	|
+| TCS Payable          	|        	| 65.95   	|
 
 Related voucher will generate as below: 
 
+| Account              	| Debit  	| Credit  	|
+|----------------------	|--------	|---------	|
+| Interim TCS payable  	|        	| 65.95   	|
+| TCS Payable          	| 65.95  	|         	|
 
 ** Important:**  
 One more related voucher will generate with posted sales Invoice to book actual TCS liability. 
 Users have to go to posted sales invoice voucher and check the related voucher entry. 
 
+| Account              	| Debit 	| Credit 	|
+|----------------------	|-------	|--------	|
+| Interim TCS payable  	| 16.00 	|        	|
+| TCS Payable          	|       	| 16.00  	|
 
 ** Note: In case of purchase transaction where vendor is deducting TCS, user have to create new TCS withholding group **
 
