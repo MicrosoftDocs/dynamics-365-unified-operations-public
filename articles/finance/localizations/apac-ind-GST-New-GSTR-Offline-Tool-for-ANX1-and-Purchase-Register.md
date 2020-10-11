@@ -103,10 +103,12 @@ Import the latest versions of these configurations. The version description usua
 
 ## Important transactions for ANX-1
 
-
+![](media/New-Offline-Tool-001.PNG)
+![](media/New-Offline-Tool-002.PNG)
 
 ## Important transactions for Purchase Register 
 
+![](media/New-Offline-Tool-003.PNG)
 
 ## Process to generate data in .CSV file. 
 ### Load Report configuration in the workspaces 
@@ -118,14 +120,16 @@ Complete the following steps to load the report configuration into workspaces.
     -	GST ANX-1 Govt. offline tool. version.19.22
     -	GSTR1GovtCSV.version.19.10
     -	Purchase Register.version.19.7
-
 3.	Import the configuration files in the same order that you loaded them in step 2.
 
+![](media/New-Offline-Tool-004.PNG)
 
 ## Map the report configuration in the Tax setup.
 Complete the following steps to map the report configuration.
 1. Go to Tax > Setup > Tax configuration > Tax setup > Configurations > Report configurations, and then select the report configuration. 
 2. On the Configurations page, on the Reporting configurations tab, mark the Select check box.
+
+![](media/New-Offline-Tool-005.PNG)
 
 3.	Select the value in Report data provider field and then select Close.
 
@@ -139,5 +143,32 @@ Complete the following steps to map the report configuration.
 4.	Select Configuration ‘GST ANX-1 Govt. Offline Tool”. 
 5.	Name the file to save the report in CSV format.  
 
+![](media/New-Offline-Tool-006.PNG)
 
 6.	Select OK.
+
+The **ANX-1** report will generate. 
+Generated report will be in CSV format. 
+Total 10 sheets will generate as below: -
+(i) B2C (ii) B2B (iii) EXP (iv) SEZ (v) DE   (vi) REV  (vii) IMPG  (viii) IMPGSEZ  (ix) ECOM
+For Example, in B2B sheet user can view: 
+GSTIN/UIN of recipient , Trade legal name, Document type , Document number, Document date, Document value , Place of supply, Differential % of Tax rate, Supply covered under section 7 of IGST Act, HSN code etc. 
+
+![](media/New-Offline-Tool-007.PNG)
+
+### (2) Purchase Register report data.
+1.	Go to Tax > Sales Tax reports > India > GER export to GSTR CSV.
+2.	In the Financial year field, select the financial year for which you are generating the report. 
+3.	In the Tax period field, select the tax period.
+4.	Select GSTIN Registration number, and in the Configuration field, select Purchase Register.
+5.	Name to file to save the report in CSV format.
+
+![](media/New-Offline-Tool-008.PNG)
+
+6.	Select OK.
+
+The Purchase Register report will be generated.
+This report will display following information: 
+GSTIN of supplier, Trade/legal name, Type of inward supply, Document type, document date, Taxable value, Total tax, Integrated tax , Central tax, State/UT tax, Cess
+
+![](media/New-Offline-Tool-009.PNG)
