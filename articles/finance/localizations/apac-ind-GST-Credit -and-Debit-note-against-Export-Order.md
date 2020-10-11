@@ -155,14 +155,15 @@ In the credit note form if the user checks “Tax document”  header informatio
 After posting credit note against export invoice user can run monthly ANX-1 offline tool to see the display of credit note transaction. 
 ** Go to Tax>>Inquiries and reports>>Tax reports>>ANX-1 Report**   
 
-Credit note against export can also be viewed in New GSTR-1 return report as well : 
+###Credit note against export can also be viewed in New GSTR-1 return report as well : 
+
 The credit note posted against an export invoice is shown in a generated report. 
 
-## New GSTR -1 
+** New GSTR -1 ** 
  ![](media/Credit-Debit-note-EO-004.PNG)
 
-Debit/Credit note issued against Export order is also displayed in ANX-1 offline tool report as below : 
+### Debit/Credit note issued against Export order is also displayed in ANX-1 offline tool report as below : 
 
-## ANX-1 Report: 
+** ANX-1 Report** 
  
 ![](media/Credit-Debit-note-EO-005.PNG)
