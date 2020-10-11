@@ -166,6 +166,6 @@ The credit/Debit note posted against an export invoice is shown in a below GSTR1
 
 The credit/Debit note posted against an export invoice is shown in a below ANX1 report
 
-** ANX-1 Report** 
+** ANX-1 Report ** 
  
 ![](media/Credit-Debit-note-EO-005.PNG)
