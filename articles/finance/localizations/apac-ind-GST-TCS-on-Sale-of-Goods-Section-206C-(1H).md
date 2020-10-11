@@ -82,7 +82,8 @@ Create withholding tax group with tax type “TCS” and mark check box “Tax l
 After this go back to withholding tax code form and select  “ “Interim TCS payable account” in the field “Interim account”  created in the chart of account with posting type “India withholding tax (TCS)
 Include GST tax component if part of TCS base amount calculation under field “Include GST tax component for TDS or TCS calculation “
 If charges are not part of TCS calculation selection “Yes” under field “Exclude charges for TDS or TCS calculation” 
-Click on “Designer” button on action pane and define TCS calculation formula. 
+Click on “Designer” button on action pane and define TCS calculation formula.
+
 ![](media/TCS-on-Sale-of Goods-003.PNG)
 
 ## Define Threshold definitions: 
@@ -91,6 +92,7 @@ Define threshold definition for “Sale of goods.”
 Two threshold slabs have to be defined. 
 - 0-Max 
 - Max-0 
+
 ![](media/TCS-on-Sale-of Goods-004.PNG)
 
 ## TCS Threshold setup for “Sale of goods” 
@@ -121,30 +123,32 @@ When defining calculation basis for Taxable slab
 
 ## Activate calculation of TCS for customer: 
 ** Accounts Receivable>Customers > All customers **
-![](media/IND-GST-GSTIN-2.png)
+
+![](media/TCS-on-Sale-of-Goods-007.PNG)
 
 ## Posting of Invoice: 
 ** When invoice is posted, and the accumulated transaction cross the threshold limit following accounting entry is posted:**
-![](media/IND-GST-GSTIN-2.png)
+
+
 
 
 ## TCS rate @ 0.1% (If PAN number is available ) 
 ** Note : TCS rate would be 0.0750% from 1st October - 31st March,2020 ** 
 ** Invoice is posted as below:** 
-![](media/IND-GST-GSTIN-2.png)
+
 
 
 ## TCS liability will arise on collection of payment
 When user receive payment and attach Invoice with payment transaction, TCS amount is computed on full payment amount and reverse through related voucher. However, one more related voucher is generated with Invoice to show tax liability recognition in books for eligible amount only. 
-![](media/IND-GST-GSTIN-2.png)
+
 
 Related voucher will generate as below: 
-![](media/IND-GST-GSTIN-2.png)
+
 
 ** Important:**  
 One more related voucher will generate with posted sales Invoice to book actual TCS liability. 
 Users have to go to posted sales invoice voucher and check the related voucher entry. 
-![](media/IND-GST-GSTIN-2.png)
+
 
 ** Note: In case of purchase transaction where vendor is deducting TCS, user have to create new TCS withholding group **
 
@@ -154,7 +158,7 @@ Every Organization will claim credit of TCS deduction after reconciling the dedu
 ** Go to Tax>>Inquiries and reports>TDS/TCS inquiry **
 User can select required column fields to generate report. 
 
-![](media/IND-GST-GSTIN-2.png)
+![](media/TCS-on-Sale-of-Goods-008.PNG)
 
 
 
