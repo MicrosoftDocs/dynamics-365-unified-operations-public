@@ -36,7 +36,7 @@ As per section 206C (1H) TCS should be collected at the time of receipt of payme
 
 Another important aspect of this feature is that if multiple customer have same PAN number than accumulate transaction amount will be taken to compare with threshold limit to determine the eligibility of transaction for TCS deduction. 
 
-![](media/IND-GST-GSTIN-2.png)
+![](media/TCS-on-Sale-of-Goods-001.PNG)
 
 ## Base amount for TCS deduction: 
 No specific clarification is available regarding base amount for TCS deduction on sale of goods, in absence of any specific provision or circular or clarification by CBDT, it is unclear as to whether TCS will be levied on GST charged in invoice or not.
@@ -74,7 +74,7 @@ Select “Enable threshold hierarchy”- “Yes”.
 On selection of “Yes” “PAN based accumulation “option will enable
 User can mark this option if dealing with customers have same PAN number. 
 
-![](media/IND-GST-GSTIN-2.png)
+![](media/TCS-on-Sale-of-Goods-002.PNG)
 
 ## Create new withholding tax group “Sale of goods.” 
 ** Tax>setup>withholding tax group>Sale of goods ** 
@@ -83,7 +83,7 @@ After this go back to withholding tax code form and select  “ “Interim TCS p
 Include GST tax component if part of TCS base amount calculation under field “Include GST tax component for TDS or TCS calculation “
 If charges are not part of TCS calculation selection “Yes” under field “Exclude charges for TDS or TCS calculation” 
 Click on “Designer” button on action pane and define TCS calculation formula. 
-![](media/IND-GST-GSTIN-2.png)
+![](media/TCS-on-Sale-of Goods-003.PNG)
 
 ## Define Threshold definitions: 
 ** Navigate to Tax > Setup > Threshold definitions**
@@ -91,7 +91,7 @@ Define threshold definition for “Sale of goods.”
 Two threshold slabs have to be defined. 
 - 0-Max 
 - Max-0 
-![](media/IND-GST-GSTIN-2.png)
+![](media/TCS-on-Sale-of Goods-004.PNG)
 
 ## TCS Threshold setup for “Sale of goods” 
 TCS on sales of goods apply on single customer or multiple customers having same PAN number. 
@@ -99,7 +99,7 @@ If customer PAN number is not available higher tax rate will apply after crossin
 If customer have PAN number than lower tax rate will apply. 
 Users need to define threshold reference for customers: 
 
-![](media/IND-GST-GSTIN-2.png)
+![](media/TCS-on-Sale-of Goods-005.PNGg)
 
 ## Click on Threshold designer 
 
@@ -117,7 +117,7 @@ When defining calculation basis for Taxable slab
  -  Calculate previous non-tax transactions-No.
  - 	Include in turnover base – Yes. 
 
-![](media/IND-GST-GSTIN-2.png)
+![](media/TCS-on-Sale-of Goods-006.PNG)
 
 ## Activate calculation of TCS for customer: 
 ** Accounts Receivable>Customers > All customers **
