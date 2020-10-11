@@ -64,11 +64,14 @@ There are three transaction types you can use to post a credit or debit note aga
 ** Enable feature through Feature management**
     1.	Go to Workspaces > Feature Management.
     2.	In the list, locate and select the feature (India) Enable Credit/Debit note against an export invoice, and then select Enable. 
+    
+ ![](media/Credit-Debit-note-EO-001.PNG)
  
 ## Set up a number sequence in the GST reference number sequence group 
     To maintain a GST transaction ID for credit notes against an export invoice, you can set up a number sequence in the GST reference number sequence group. 
     1.	Go to Tax > Setup > GST reference number sequence group  . 
- 
+
+![](media/Credit-Debit-note-EO-002.PNG)
 
 ## Post transactions 
 Posting a credit note with a GST payment using an export sales order   
@@ -88,19 +91,35 @@ For example, if you create a credit note for five items, with the following info
   -	With the payment of tax - Yes 
   -	Would you claim Refund - Yes
  
-
-
+![](media/Credit-Debit-note-EO-Tab1.PNG)
+ Cost of Item 4,000 
 
  IGST calculation:
-
+ 
+| Sales value  	| GST @10% 	|
+|--------------	|----------	|
+| 5000         	| 500      	|
 
 
 Voucher transaction:
 
- 
+|      Account                 	|     Debit      	|     Credit    	|
+|------------------------------	|----------------	|---------------	|
+|     Customer1                	|     5000       	|               	|
+|     IGST Payable             	|                	|      500      	|
+|     Export order revenue     	|                	|     5000      	|
+|     Refundable account       	|        500     	|               	| 
 
 When Credit note is posted against posted export invoice: 
 
+|      Account                                  	|     Debit    	|     Credit       	|
+|-----------------------------------------------	|--------------	|------------------	|
+|     Export order revenue                      	|      5000    	|                  	|
+|     Customer `                                	|              	|          5000    	|
+|     IGST Payable                              	|      500     	|                  	|
+|     Refundable account                        	|              	|     500          	|
+|     Export Inventory issue (cost of item)     	|              	|      4000        	|
+|     Sale of goods (Cost of item)              	|      4000    	|                  	|
 
 When export order is posted with the following information select, the export invoice will be posted as shown in the following tables. 
 
@@ -109,15 +128,29 @@ When export order is posted with the following information select, the export in
 
 Voucher transaction:
 
+|      Account                 	|     Debit      	|     Credit    	|
+|------------------------------	|----------------	|---------------	|
+|     Customer1                	|     5000       	|               	|
+|     IGST Payable             	|                	|      500      	|
+|     Export order revenue     	|                	|     5000      	|
+|     Export Expenses          	|        500     	|               	|
  
 
 When Credit note is posted against posted export invoice: 
 
+|      Account                                  	|     Debit       	|     Credit       	|
+|-----------------------------------------------	|-----------------	|------------------	|
+|     Export order revenue                      	|      5000       	|                  	|
+|     Customer `                                	|                 	|          5000    	|
+|     IGST Payable                              	|          500    	|                  	|
+|     Export Expenses                           	|                 	|       500        	|
+|     Export Inventory issue (cost of item)     	|                 	|      4000        	|
+|     Sale of goods (Cost of the item)          	|     4000        	|                  	|
 
 In the credit note form if the user checks “Tax document”  header information user will see the original export invoice ID and shipping bill number and shipping bill date. 
 ** Export Invoice Credit Note > Tax Document > Header >Shipping bill Number and Shipping bill date **   
  
- 
+ ![](media/Credit-Debit-note-EO-003.PNG)
  
 After posting credit note against export invoice user can run monthly ANX-1 offline tool to see the display of credit note transaction. 
 ** Go to Tax>>Inquiries and reports>>Tax reports>>ANX-1 Report**   
@@ -126,10 +159,10 @@ Credit note against export can also be viewed in New GSTR-1 return report as wel
 The credit note posted against an export invoice is shown in a generated report. 
 
 ## New GSTR -1 
- 
+ ![](media/Credit-Debit-note-EO-004.PNG)
 
 Debit/Credit note issued against Export order is also displayed in ANX-1 offline tool report as below : 
 
 ## ANX-1 Report: 
  
-
+![](media/Credit-Debit-note-EO-005.PNG)
