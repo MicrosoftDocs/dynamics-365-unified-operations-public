@@ -5,7 +5,7 @@ title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 description: This topic describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
 author: rubendel
 manager: AnnBe
-ms.date: 08/19/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -86,6 +86,18 @@ If an online order is approved based on the Fraud Protection assessment, the nex
 #### Purchase status events
 
 Purchase status events resemble bank events. After an order is created in the Commerce back office, a signal is sent to Fraud Protection to indicate that the order was successfully created. Both bank events and purchase status events are informational events. Therefore, no response is expected from Fraud Protection.
+
+### Dynamics 365 Commerce customer offer
+
+Starting October 1, 2020, a limited capacity of Fraud Protection is included in the Microsoft Dynamics 365 Commerce license. Commerce customers can now use Fraud Protection for no extra charge, up to the limits specified below:
+
+- **Purchase protection** - Up to 2,000 assessments per month.
+- **Account protection** - Up to 20,000 assessments per month. 
+- **Loss prevention** - Up to 8,000 transactions per month. 
+
+If their usage requires higher limits, Commerce customers have the option of purchasing additional Fraud Protection add-ons. This offer makes it easier for all existing and new Commerce customers to evaluate how Fraud Protection capabilities can help protect their organizations against fraudulent purchases, fake accounts creation, suspicious log-ins, and employee fraud in the form of inappropriate discounts or returns. 
+
+To start using Fraud Protection if you are an existing Commerce customer, visit the [Fraud Protection portal](https://dfp.microsoft.com/), sign in with tenant global administrator credentials, and complete a one-time setup for your environment.
 
 ### Availability
 
