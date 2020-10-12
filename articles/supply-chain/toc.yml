@@ -2825,6 +2825,8 @@
             href: warehousing/pick-oldest-batch.md
           - name: Process guide framework
             href: warehousing/process-guide-framework.md
+          - name: Troubleshoot warehouse app connection issues
+            href: warehousing/troubleshoot-warehouse-app-connection.md
         - name: Upgrade and migration
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
