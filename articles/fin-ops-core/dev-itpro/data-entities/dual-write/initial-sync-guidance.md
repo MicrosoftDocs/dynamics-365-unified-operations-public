@@ -1,7 +1,7 @@
 ---
 
 title: Considerations for initial synchronization
-description: This topic provides considerations, known issues, and guidance for the initial sychronization of dual-write.
+description: This topic provides constraints, known issues, and guidance for the initial sychronization of dual-write.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 10/12/2020
@@ -44,37 +44,23 @@ Our recommendation for the initial sync:
 + [Single-threaded entities](#single-threaded-entities): Migrate data into the Finance and Operations app first and then trigger the initial sync to move the data over to Common Data Service. Based on our lab testing, that sequence has better performance than syncing from Common Data Service to Finance and Operations apps.
 + Multi-threaded entities: Migrate data into Common Data Service first and then trigger the initial sync to move the data over to the Finance and Operations app.
 
-## Considerations
+## Constraints
 
 ### Data migration slow-down with enabled dual-write
 
-If you first activate the map in dual-write and then start data importing that will cause poor migration performance. It is recommended not activate running maps in dual-write until data migration is completed.
+If you activate the map in dual-write first and then start importing data, then that will cause poor migration performance. We recommend that you not activate running maps in dual-write until the data migration is completed.
 
 ### 500k limit per execution
 
-The maximum number of records allowed through initial sync is 500K per execution (per legal entity, as each legal entity will have its own execution). Please refer to details [here](https://docs.microsoft.com/en-us/power-platform/admin/data-integrator), to optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project.
+The maximum number of records allowed through initial sync is 500K per run. That is 500K per legal entity, because each legal entity runs separately. For more information, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator), in particular, "To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project."
 
-**Workaround** : In case you need to run initial sync with data volume greater than 500K per execution, then it is recommended to migrate data into Finance and Operations app and CDS separately and skip initial sync.
+If you need to run the initial sync with more than 500K records in a run, then we recommend that you migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
 
 ### 24-hour limit
 
-In case of running initial sync from CDS to Finance and Operations apps, there is a timeout of 24 hours for getting the import result back from Finance and Operations app. For large volumes of initial sync from CDS to Finance and Operations app, if the single execution takes above 24 hours, that may hit the timeout and the initial sync will fail.
+If you are running the initial sync from Common Data Service to the Finance and Operations apps, there is a timeout of 24 hours for getting the import result back from the Finance and Operations app. If you are syncing a lot of data and the single execution takes above 24 hours, you might hit the timeout and the initial sync fails. For example, an initial sync from Common Data Service to a Finance and Operations apps for the **Customer/Account** entity with 70k records could take more than 24 hours, hitting the 24-hour limit.
 
-E.g. Initial sync from CDS to Finance and Operations apps for Customer/Account entity with 70k records may take above 24 hours, which will hit the 24-hour limit
-
-**Workaround** : It is not recommended to run initial sync from CDS to Finance and Operations apps for below entities if the data volume is above 70,000, as those entities do not support multi-threading import and it may hit the limit if the volume is above 70,000, so in those cases you&#39;ll need to migrate data into Finance and Operations app and CDS separately outside Initial sync and skip initial sync.
-
--   Sales tax codes (msdyn\_taxcodes)
-
--   Customers V3 (accounts)
-
--   Vendors V2 (msdyn\_vendors)
-
--   Warehouses (msdyn\_warehouses)
-
--   Product categories (msdyn\_productcategories)
-
--   Employment (cdm\_employments)
+You should not run the initial sync from Common Data Service to a Finance and Operations app for the [single-threaded entities](#single-threaded-entities) if the data volume is above 70K. These entities do not support multi-threading during import and you might hit the limit if the volume is above 70K, In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
 
 ### 40 legal entities limit while linking the environments
 
@@ -134,7 +120,7 @@ Please refer to [details](https://docs.microsoft.com/en-us/dynamics365/fin-ops-c
 2. Migrate data to each app, outside of Initial sync<br />
 3. Activate Dual-write and skip initial sync</td></tr></tbody></table>
 
-\*Single-thread entities:
+## <a id="single-threaded-entities"></a>Single-threaded entities
 
 -   Sales tax codes (msdyn\_taxcodes)
 
