@@ -1,18 +1,14 @@
----
-title: Yearly tax communication
----
+# Yearly tax communication
 
 The **Yearly tax communication** report contains annual tax information for
 Italy that will be submitted to the tax authority.
 
-Prerequisites
-=============
+## Prerequisites
 
 Set up Italian sales tax books by following the instructions in Italian sales
 tax books.
 
-Set up the Yearly tax communication report
-==========================================
+## Set up the Yearly tax communication report
 
 1.  In Microsoft Dynamics 365 Finance, go to **Organization administration \>
     Organizations \> Legal entities**.
@@ -33,31 +29,27 @@ Set up the Yearly tax communication report
 
 -   Yearly VAT communication model mapping
 
->   For more information, see Download Electronic reporting configurations from
->   Lifecycle Services.
+For more information, see Download Electronic reporting configurations from Lifecycle Services.
 
-1.  In Finance, go to **Tax \> Setup \> Parameters \> General ledger
+5.  In Finance, go to **Tax \> Setup \> Parameters \> General ledger
     parameters**.
 
-2.  On the **Number sequences** tab, select a number sequence for the **Tax
+6.  On the **Number sequences** tab, select a number sequence for the **Tax
     communication ID** reference.
 
-3.  On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in
+7.  On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in
     the **Format mapping** field, select the **Yearly tax communication (IT)**
     format that you downloaded earlier.
 
-4.  Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
+8.  Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
 ![](media/9c9ce783c67eb6ed6be697659898b926.png)
 
->   A screenshot of a cell phone Description automatically generated
+**Note**
 
->   **Note**
+To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see Model and instructions - VAT 2020.
 
->   To view the "Yearly VAT communication" form for the year 2020, and
->   instructions for it, see Model and instructions - VAT 2020.
-
-1.  On the **Field setup** tab, create lines, and set the following fields on
+9.  On the **Field setup** tab, create lines, and set the following fields on
     them.
 
 | Field                   | Description                                                                                                                                                                                                  |
@@ -86,55 +78,42 @@ Set up the Yearly tax communication report
 You can edit this value only when the **Calculation** field is set to **Tax
 transactions**.
 
->   **Note**: If any changes are made in the declaration, you must change the
->   field settings.
+**Note**: If any changes are made in the declaration, you must change the field settings.
 
-1.  For fields where the **Calculation** field is set to **Tax transactions**,
+10.  For fields where the **Calculation** field is set to **Tax transactions**,
     on the **Selected tax codes** tab, select **New** to a add a line for each
     sales tax code that should be available as a field value.
 
 ![](media/5783855c9b25c8352660ec2e970f3560.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  Select **Exceptions** to set up main accounts that should be excluded from
+11.  Select **Exceptions** to set up main accounts that should be excluded from
     the query.
 
->   You should create enough unique sales tax codes so that each is linked to a
->   single field in the yearly declaration. This approach helps simplify the
->   setup of the yearly declaration.
+You should create enough unique sales tax codes so that each is linked to a single field in the yearly declaration. This approach helps simplify the setup of the yearly declaration.
 
->   However, if the same sales tax code can be linked to multiple fields, you
->   should set up additional filters for the tax transaction.
+However, if the same sales tax code can be linked to multiple fields, you should set up additional filters for the tax transaction.
 
-1.  Select **Query**, and specify additional filtering rules for posted sales
+12.  Select **Query**, and specify additional filtering rules for posted sales
     tax. For example, you can specify additional filters for the sales tax
     direction or sales tax book section.
 
->   You can do the following additional setup for fields where the
->   **Calculation** field is set to **Total**. The system can then automatically
->   calculate values for tags that should represent a result that is calculated
->   by using a formula that consists of the values of other fields (but only
->   fields where the **Calculation** field isn't set to **Total**).
+You can do the following additional setup for fields where the **Calculation** field is set to **Total**. The system can then automatically calculate values for tags that should represent a result that is calculated by using a formula that consists of the values of other fields (but only fields where the **Calculation** field isn't set to **Total**).
 
-1.  Select the line where the **Calculation** field is set to **Total**.
+13.  Select the line where the **Calculation** field is set to **Total**.
 
-2.  On the **Total amount** tab, select **New** to add lines for all fields that
+14.  On the **Total amount** tab, select **New** to add lines for all fields that
     should be totaled.
 
 ![](media/4fb994469b9e5f1840cc453e4c8aa0ac.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  Set the following fields.
+15.  Set the following fields.
 
 | Field name | Description                                                                                                                 |
 |------------|-----------------------------------------------------------------------------------------------------------------------------|
 | Sign       | Enter **1** if the value from the field should be taken as is. Enter **-1** if the value from the field should be inverted. |
 | Field ID   | Select the field that should be totaled. Fields where the **Calculation** field is set to **Total** can't be selected here. |
 
-Formats of the fields
----------------------
+### Formats of the fields
 
 Usually, fields values can be either numeric (**NU** format) or alphanumeric
 (**AN** format).
@@ -164,8 +143,7 @@ and **AN**, the following formats are available for selection.
 | PR     | Automotive abbreviation for the Italian province (for example, the province of residence)                                                                 | Space             | "BO   "                                    |
 | QU     | Numeric field that has a maximum of five decimal places                                                                                                   | Space             | "    1000,16234" "   0,99" "   3000000,50" |
 
-Create a yearly tax declaration
-===============================
+## Create a yearly tax declaration
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
 
@@ -173,7 +151,7 @@ Create a yearly tax declaration
     communication** report for the previous year. The number of lines that are
     created matches the number of Italian sales tax books.
 
-    ![A screenshot of a cell phone Description automatically generated](media/2e31676b35c86c3336f0d4cf63d1036b.png)
+    ![](media/2e31676b35c86c3336f0d4cf63d1036b.png)
 
 3.  On the **General** tab, review the following information.
 
@@ -278,28 +256,27 @@ Create a yearly tax declaration
 
 -   Additional declarations (2)
 
-1.  On the **Report lines** tab, review or edit the lines and amounts that you
+6.  On the **Report lines** tab, review or edit the lines and amounts that you
     previously set up for the **Yearly tax communication** report on the
     **Yearly tax communication setup** page. For lines where the **Calculation**
     field is set to **Manual**, manually enter the amounts.
 
-2.  On the **Details** tab, review or edit the details of each line on the
+7.  On the **Details** tab, review or edit the details of each line on the
     **Yearly tax communication** report.
 
-3.  Close the **Yearly tax communication** page that has the information about
+8.  Close the **Yearly tax communication** page that has the information about
     the selected declaration.
 
-4.  On the **Yearly tax communication** page that has the list of declarations,
+9.  On the **Yearly tax communication** page that has the list of declarations,
     select **Export**.
 
-5.  In the **Create export file** dialog box, in the **File name** field, enter
+10.  In the **Create export file** dialog box, in the **File name** field, enter
     a value. Then select **OK** to create and export the .ivc file.
 
-6.  Select **Delete export** to delete the .ivc file that has been created and
+11.  Select **Delete export** to delete the .ivc file that has been created and
     exported.
 
-Appendix 1. Structure of the yearly VAT declaration
-===================================================
+## Appendix 1. Structure of the yearly VAT declaration
 
 The following table provides an example of the structure of the yearly VAT
 declaration. This example is based on the 2020 declaration. Sections that aren't
@@ -382,8 +359,7 @@ included in the setup example are *italicized*.
 | *PART VZ DEDUCTIBLE GROUP SURPLUSES (PREVIOUS YEARS)*                                                                                                     |                                        |
 |                                                                                                                                                           | *VZ001001-VZ002001*                    |
 
-Example
--------
+### Example
 
 Here is an example for the **ITCO** legal entity.
 
@@ -436,12 +412,11 @@ Here is an example for the **ITCO** legal entity.
 | VL001001 | Output VAT                                                                                                                                               | NU     | Total            |            | 1    |                             | VJ009002, VE023002           |
 | VL002001 | Deductible VAT                                                                                                                                           | NU     | Total            |            | 1    |                             | VF014002                     |
 
->   **Note:** To view the "Yearly VAT communication" form for the year 2020, and
->   instructions for it, see Model and instructions - VAT 2020.
+**Note:** To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see Model and instructions - VAT 2020.
 
-1.  Refresh the page.
+6.  Refresh the page.
 
-2.  Post the following transactions. For example, for customer invoices, go to
+7.  Post the following transactions. For example, for customer invoices, go to
     **Accounts receivable \> Invoices \> All free text invoices**. For vendor
     invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
 
@@ -453,16 +428,15 @@ Here is an example for the **ITCO** legal entity.
 | February 5, 2019  | Customer invoice | 1500       | 0          | EUS            | VE030003                                              | 1500                    |
 | March 1, 2019     | Customer invoice | 500        | 0          | RC             | VE035007                                              | 500                     |
 
-3.  Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
+8.  Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
 
-4.  Select **Create new** to create a yearly tax communication record for the
+9.  Select **Create new** to create a yearly tax communication record for the
     previous year (2019).
 
-5.  Select the new line, select **Open**, and review the data that is generated
+10.  Select the new line, select **Open**, and review the data that is generated
     for the declaration.
 
-    Fields with **Total** selected in the **Calculation** field are marked in
-    bold.
+Fields with **Total** selected in the **Calculation** field are marked in bold.
 
 | Field ID     | Value                      | Description (EN)                                                                                                                                         |
 |--------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -491,8 +465,7 @@ Here is an example for the **ITCO** legal entity.
 | **VL001001** | 396                        | Output VAT.                                                                                                                                              |
 | **VL002001** | 396                        | Deductible VAT.                                                                                                                                          |
 
-Appendix 2. Example of the Yearly tax communication setup for 2020
-==================================================================
+## Appendix 2. Example of the Yearly tax communication setup for 2020
 
 For an example of a setup table for the 2020 declaration, see link.
 
@@ -503,15 +476,11 @@ For an example of a setup table for the 2020 declaration, see link.
 
 ![](media/abdae32770fc1837a107b1a9d01231f6.png)
 
->   A screenshot of a cell phone Description automatically generated
+3.  Select **Download**.
 
-1.  Select **Download**.
+4.  Open the downloaded file, and enable editing.
 
-2.  Open the downloaded file, and enable editing.
-
-3.  Paste the data from the file downloaded from the link described above, and
+5.  Paste the data from the file downloaded from the link described above, and
     then select **Publish**.
 
 ![](media/526c202c83986113abb1c964faac290f.png)
-
->   A screenshot of a cell phone Description automatically generated
