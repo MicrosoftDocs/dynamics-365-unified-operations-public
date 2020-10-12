@@ -89,7 +89,7 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 |--------------------------------------------------------------------------|----------------|---------------------------|---------|-------------|
 | Retail product management, and tax setup and calculation                 | X              |                           |         |             |
 | NFC-e (model 65) and DANFE for retail sales                              | X              |                           |         |             |
-| Communication with SEFAZ via [Electronic invoicing service](../../financials/localizations/e-invoicing-get-started.md) | X              |                           |         |             |
+| Communication with SEFAZ via [Electronic invoicing service](../../finance/localizations/e-invoicing-get-started.md) | X              |                           |         |             |
 | Retail statements in Commerce headquarters                               | X              |                           |         |             |
 | Handling of fiscal customer information (for example, CPF/CNPJ)          |                | X                         |         |             |
 | NF-e (model 55) and DANFE for sales returns                              |                | X                         |         |             |
