@@ -41,10 +41,10 @@ Overview
 
 A route describes the order of operations that is required in order to produce a product or product variant. For each operation, the route also defines the operations resources that are required, the time that is required in order to set up and perform the operation, and how the cost should be calculated. You can use the same route to produce multiple products, or you can define a unique route for each product or product variant. You can even have multiple routes for the same product. In this case, the route that is used varies, depending on factors such as the quantity that must be produced. The definition of a route in Supply Chain Management consists of four separate elements that, together, describe the production process:
 
--   **Route** – A route defines the structure of the production process. In other words, it defines the order of operations.
--   **Operation** – An operation identifies a named step in a route, such as **Assembly**. The same operation can occur in multiple routes and can have different operation numbers.
--   **Operation relation** – An operation relation defines the operational properties of an operation, such as the setup time and run time, cost categories, consumption parameters, and resource requirements. The operation relation enables the operational properties of an operation to vary, depending on the route that the operation is used in or the products that are being produced.
--   **Route version** – A route version defines the route that is used to produce a product or product variant. Route versions enable routes to be reused across products or changed over time. They also enable different routes to be used to produce the same product. In this case, the route that is used depends on factors such as the location or the quantity that must be produced.
+- **Route** – A route defines the structure of the production process. In other words, it defines the order of operations.
+- **Operation** – An operation identifies a named step in a route, such as **Assembly**. The same operation can occur in multiple routes and can have different operation numbers.
+- **Operation relation** – An operation relation defines the operational properties of an operation, such as the setup time and run time, cost categories, consumption parameters, and resource requirements. The operation relation enables the operational properties of an operation to vary, depending on the route that the operation is used in or the products that are being produced.
+- **Route version** – A route version defines the route that is used to produce a product or product variant. Route versions enable routes to be reused across products or changed over time. They also enable different routes to be used to produce the same product. In this case, the route that is used depends on factors such as the location or the quantity that must be produced.
 
 ## Routes
 A route describes the order of operations that is used to produce a product or product variant. Each operation is assigned an operation number and a successor operation. The order of operations forms a route network that can be represented by a directed chart that has one or more starting points and a single end point. In Supply Chain Management, routes are distinguished based on the type of structure. The two types of routes are simple routes and route networks. In the Production control parameters, you can specify whether only simple routes can be used, or whether the more complex route networks can be used.
@@ -64,9 +64,9 @@ If you enable the more complex route networks in the Production control paramete
 [![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Each operation can have only one successor operation, and the entire route must end in a single operation.
-> -   This does not ensure that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel. The availability and capacity of resources might put constraints on the way that operations are scheduled.
-> -   You can't use 0 (zero) as the operation number. That number is reserved and is used to specify that the last operation in the route has no successor operation.
+> - Each operation can have only one successor operation, and the entire route must end in a single operation.
+> - This does not ensure that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel. The availability and capacity of resources might put constraints on the way that operations are scheduled.
+> - You can't use 0 (zero) as the operation number. That number is reserved and is used to specify that the last operation in the route has no successor operation.
 
 ### Parallel operations
 
@@ -103,12 +103,12 @@ The operational properties of the operation, such as the setup time and run time
 ## Operation relations
 The following operational properties of an operation are maintained on the operation relation:
 
--   Cost categories
--   Consumption parameters
--   Processing times
--   Processing quantities
--   Resource requirements
--   Notes and instructions
+- Cost categories
+- Consumption parameters
+- Processing times
+- Processing quantities
+- Resource requirements
+- Notes and instructions
 
 You can define multiple operation relations for the same operation. However, each operation relation is specific to one operation, and stores properties that are specific to a route, a released product, or a set of released products that are related to an item group. Therefore, the same operation can be used in multiple routes that have different operational properties. In addition, you can more easily maintain your master data if you use standard operations that have the same operational properties, regardless of the route that is used and product that is produced. The scope of the operation relation is defined through the **Item code**, **Item relation**, **Route code** and **Route relation** properties, as shown in the following table.
 
@@ -170,12 +170,13 @@ When Supply Chain Management searches for the most relevant operation relation f
 Therefore, an operation should be used only one time for each route. If the operation occurs multiple times in the same route, all occurrences of that operation will have the same operation relation, and you won't be able to have different properties (for example, run times) for each occurrence.
 
 ## Route versions
+
 Route versions are used to accommodate variations in the production of products or provide greater control over the production process. They define which route should be used when a specific released product or released product variant is produced. You can use the following constraints to define which route is used for a released product:
 
--   Product dimensions (size, color, style, or configuration)
--   Production quantity
--   Production site
--   Production date
+- Product dimensions (size, color, style, or configuration)
+- Production quantity
+- Production site
+- Production date
 
 When you're producing the product at a specific site, in a specific quantity, or in a specific period, you can designate a specific route version as the default route version. However, note that only one active route is allowed for a given released product and a given set of constraints.  
 
@@ -198,6 +199,7 @@ If you must keep a log that records who approves and activates each route versio
 The product change case for the approval and activation of new or changed routes and route versions gives you an easy way to see an overview of the route version constraints. You can also approve and activate all routes that are related to a specific change in one operation and document the results in the product change case.
 
 ## Maintaining routes
+
 Depending on your business requirements, you might be able to reduce the effort that is required in order to maintain your process definitions.
 
 ### Making routes independent of resources
@@ -228,10 +230,10 @@ When you use this approach, the **Operation relations** page becomes your primar
 
 If you don't specify an operations resource or resource group as part of the resource requirements for an operation, the applicable resources might operate at different speeds. Therefore, the time that is required in order to process an operation might vary. To resolve this issue, you can use the **Formula** field on the operation relation to specify how the process time is calculated. The following options are available:
 
--   **Standard** – (Default option) The calculation uses only the fields from the operation relation and multiplies the specified run time by the order quantity.
--   **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. The **Process time** is calculated as **Order quantity** divided by **Capacity**.
--   **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
--   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource dependent.
+- **Standard** – (Default option) The calculation uses only the fields from the operation relation and multiplies the specified run time by the order quantity.
+- **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. The **Process time** is calculated as **Order quantity** divided by **Capacity**.
+- **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
+- **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource dependent.
 
 ### Set up route groups
 
