@@ -124,7 +124,7 @@ Before requesting the production environment, ensure that all pre-requisites are
 
 1. Get all required licenses that are needed to correctly license all users on the  production environment.
 2. When the licenses are in place, upload a subscription estimator to the new LCS project. It should match the subscription estimator that is active in the source LCS project, and it must correctly reflect peak transaction volumes.
-3. Send an email to Dynamics 365 FO Go-Live at [d365fogl\@microsoft.com](d365fogl\@microsoft.com) stating that your new LCS project is ready for Microsoft to move your production database and Azure Blob Storage. To ensure that the process will run smoothly, provide the following details in the email. We suggest that copy the following list to your email, and then answer all of the information line by line.
+3. Send an email to Dynamics 365 FO Go-Live [d365fogl\@microsoft.com](d365fogl\@microsoft.com) stating that your new LCS project is ready for Microsoft to move your production database and Azure Blob Storage. To ensure that the process will run smoothly, provide the following details in the email. We suggest that copy the following list to your email, and then answer all of the information line by line.
 
 	**Lifecycle Services**
 	- Provide the LCS IDs (number in the LCS project URL) for source and target LCS project.
