@@ -1413,6 +1413,8 @@
           href: master-planning/supply-chain-calendars-master-planning.md
         - name: Improve master planning performance
           href: master-planning/master-planning-performance.md
+        - name: Improve scheduling engine performance
+          href: master-planning/scheduling-engine-performance.md
         - name: Master plans and multisite functionality
           items:
           - name: Master planning and multisite functionality overview
