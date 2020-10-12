@@ -60,27 +60,31 @@ If you need to run the initial sync with more than 500K records in a run, then w
 
 If you are running the initial sync from Common Data Service to the Finance and Operations apps, there is a timeout of 24 hours for getting the import result back from the Finance and Operations app. If you are syncing a lot of data and the single execution takes above 24 hours, you might hit the timeout and the initial sync fails. For example, an initial sync from Common Data Service to a Finance and Operations apps for the **Customer/Account** entity with 70k records could take more than 24 hours, hitting the 24-hour limit.
 
-You should not run the initial sync from Common Data Service to a Finance and Operations app for the [single-threaded entities](#single-threaded-entities) if the data volume is above 70K. These entities do not support multi-threading during import and you might hit the limit if the volume is above 70K, In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
+You should not run the initial sync from Common Data Service to a Finance and Operations app for the [single-threaded entities](#single-threaded-entities) if the data volume is above 70K. These entities do not support multi-threading during import and you might hit the limit if the volume is above 70K. In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
 
 ### 40 legal entities limit while linking the environments
 
-The current limit is 40 legal entities while linking the environments. You will get the below error if trying to enable maps with more than 40 legal entities linked between the environments.
+The current limit is 40 legal entities while linking the environments. You will encounter the following error if you try to enable maps with more than 40 legal entities linked between the environments.
 
+```console
 Dual-write failure - Plugin registration failed: [(Unable to get partition map for project DWM-1ae35e60-4bc2-4905-88ea-XXXXX. Error Exceeds the maximum partitions allowed for mapping DWM-1ae35e60-4bc2-4905-88ea- XXXXX)], One or more errors occurred.
+```
 
-### Initial sync for entity map with 10+ lookups is not currently supported
+### Initial sync for entity map with 10 or more lookups is not currently supported
 
-This impacts only the initial sync from CDS for entity maps with 10+ lookups.
+This limitation applies to only the initial sync from Common Data Service for entity maps with 10 or more lookups. If you run the initial sync against an entity map with 10 or more lookups, you might encounter this error: 
 
-If run initial sync against entity map with 10+ lookups you may see error message: 5 Attempts to get data from https://XXXX.azure-apim.net/apim... Failed
+```console
+5 Attempts to get data from https://XXXX.azure-apim.net/apim... Failed
+```
 
-**Workaround** : To migrate data into Finance and Operations app and CDS separately and skip initial sync.
+In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
 
-### 5 minutes limit for Finance and Operations export
+### 5-minute limit for Finance and Operations data export
 
-In case of running initial sync from Finance and Operations app to CDS, if Finance and Operations export takes 5+ minutes, the Initial sync may time out. This can happen if the data entity has virtual fields with postLoad method, or the export query isn&#39;t optimum (i.e. missing indexes etc.).
+If you are running the initial sync from the Finance and Operations app to Common Data Service and the Finance and Operations data export takes more than 5 minutes, then the initial sync might time out. This can happen if the data entity has virtual fields with the **postLoad** method, or the export query isn't optimized (for example, it has missing indexes).
 
-**Workaround** : This will be supported post PU37. Please consider update your Finance and Operations app to PU37+.
+This will be supported after PU37. You should update your Finance and Operations app to PU37 or later.
 
 ### Error handling capabilities
 
