@@ -64,9 +64,9 @@ Companies working with manufacturing and distribution must be able to execute ke
 >
 > The scale-unit capabilities are currently in public preview. When signing up, you must use a user account on the specific tenant and also be a project owner or an environment admin in LCS for an active Dynamics 365 LCS project in that tenant.
 >
-> When you sign up for the preview, you will select the tenant and go through the sign up steps. As soon as we can allocate preview capacity, we will send you an email with the provisioning details and the promotion codes for two environments (a hub and a scale unit) for the respective LCS project. You will then be able to deploy the two environments as tier 2 sandbox environments. Those are valid 60 days from creation date of the promo code.
+> When you sign up for the preview, you will select the tenant and go through the sign up steps. As soon as we can allocate preview capacity, we will send you an email with the provisioning details and the promotion codes for two environments (a hub and a scale unit) for the respective LCS project. You will then be able to deploy the two environments as tier 2 sandbox environments. Those are valid 60 days from creation date of the promo code. (Please do not use the two environments before the next step is complete!)
 >
-> After you confirm your sign up with Microsoft, one of the environments will be configured to function as a  hub the other as a scale unit. You can then configure the scale units and deploy select warehouse management and manufacturing workloads using the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
+> After you confirm the deployment of the two environments from the promotion codes with Microsoft, one of the environments will be configured to function as a  hub the other as a scale unit. You can then configure the scale units and deploy select warehouse management and manufacturing workloads using the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
 >
 > Preview environments will be deleted automatically after 60 days, or sooner if they appear to not be in use. After your preview environment has been deleted, you may sign up and queue for a new preview deployment.
 >
