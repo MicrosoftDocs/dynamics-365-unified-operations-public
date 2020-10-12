@@ -43,7 +43,7 @@ For more information, see Download Electronic reporting configurations from Life
 
 8.  Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
-![](media/9c9ce783c67eb6ed6be697659898b926.png)
+![](media/1_Yearly_tax_communication_setup.png)
 
 **Note**
 
@@ -84,7 +84,7 @@ transactions**.
     on the **Selected tax codes** tab, select **New** to a add a line for each
     sales tax code that should be available as a field value.
 
-![](media/5783855c9b25c8352660ec2e970f3560.png)
+![](media/2_Yearly_tax_communication_setup.png)
 
 11.  Select **Exceptions** to set up main accounts that should be excluded from
     the query.
@@ -104,7 +104,7 @@ You can do the following additional setup for fields where the **Calculation** f
 14.  On the **Total amount** tab, select **New** to add lines for all fields that
     should be totaled.
 
-![](media/4fb994469b9e5f1840cc453e4c8aa0ac.png)
+![](media/3_Yearly_tax_communication_setup.png)
 
 15.  Set the following fields.
 
@@ -151,7 +151,7 @@ and **AN**, the following formats are available for selection.
     communication** report for the previous year. The number of lines that are
     created matches the number of Italian sales tax books.
 
-    ![](media/2e31676b35c86c3336f0d4cf63d1036b.png)
+![](media/4_Yearly_tax_communication_setup.png)
 
 3.  On the **General** tab, review the following information.
 
@@ -474,7 +474,7 @@ For an example of a setup table for the 2020 declaration, see link.
 2.  Select the **Open in Microsoft Office** button, and then, under **Open in
     Excel**, select the Yearly tax communication setup.
 
-![](media/abdae32770fc1837a107b1a9d01231f6.png)
+![](media/5_Export_to_Excel.png)
 
 3.  Select **Download**.
 
@@ -483,4 +483,4 @@ For an example of a setup table for the 2020 declaration, see link.
 5.  Paste the data from the file downloaded from the link described above, and
     then select **Publish**.
 
-![](media/526c202c83986113abb1c964faac290f.png)
+![](media/6_Export_to_Excel.png)
