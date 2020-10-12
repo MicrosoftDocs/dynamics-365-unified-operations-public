@@ -21,11 +21,11 @@ tax books](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/
 
 4.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following value-added tax (VAT) declaration formats:
 
--   Italian tax reports model
+-   **Italian tax reports model**
 
--   Yearly tax communication (IT)
+-   **Yearly tax communication (IT)**
 
--   Yearly VAT communication model mapping
+-   **Yearly VAT communication model mapping**
 
 For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
@@ -49,31 +49,93 @@ For more information, see [Download Electronic reporting configurations from Lif
 9.  On the **Field setup** tab, create lines, and set the following fields on
     them.
 
-| Field                   | Description                                                                                                                                                                                                  |
-|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Field ID                | Enter the identification number of the field.                                                                                                                                                                |
-| Description             | Enter a description of the field.                                                                                                                                                                            |
-| Format                  | Select the required format of the field. For more information about the available formats, see the Formats of the fields section later in this topic.                                                        |
-| Calculation             | Select a calculation method:                                                                                                                                                                                 |
-| Value                   | Enter a value for the field. You can edit this value only when the **Calculation** field is set to **Manual**.                                                                                               |
-| Tax                     | Select one of the following values:                                                                                                                                                                          |
-| Sign                    | Enter **1** if the value should be represented as is. Enter **-1** if the value should be inverted. You can edit this value only when the **Calculation** field is set to **Tax transactions** or **Total**. |
-| Nondeductible sales tax | If the **Calculation** field is set to **Tax transaction**, and the **Tax** field is set to **Tax amount**, select this check box to reduce the calculated tax amount on the non-deductible tax amount.      |
-
--   **Manual** – The value is manually entered.
-
--   **Tax transaction** – The value is collected from the tax transactions.
-
--   **Total** – The value is calculated by using a formula that consists of the
-    values of other fields (but only fields where in **Calculation** field value
-    **Total** is not selected).
-
--   **Tax base** – The field should represent a tax base.
-
--   **Tax amount** – The field should represent a tax amount.
-
-You can edit this value only when the **Calculation** field is set to **Tax
-transactions**.
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Field ID</p>
+</td>
+<td>
+<p>Enter the identification number of the field.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Description</p>
+</td>
+<td>
+<p>Enter a description of the field.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Format</p>
+</td>
+<td>
+<p>Select the required format of the field. For more information about the available formats, see the [Formats of the fields]() section later in this topic.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Calculation</p>
+</td>
+<td>
+<p>Select a calculation method:</p>
+<ul>
+<li><strong>Manual</strong> &ndash; The value is manually entered.</li>
+<li><strong>Tax transaction</strong> &ndash; The value is collected from the tax transactions.</li>
+<li><strong>Total</strong> &ndash; The value is calculated by using a formula that consists of the values of other fields (but only fields where in <strong>Calculation</strong> field value is not selected).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Value</p>
+</td>
+<td>
+<p>Enter a value for the field. You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Manual.</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Tax</p>
+</td>
+<td>
+<p>Select one of the following values:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Tax base</strong> &ndash; The field should represent a tax base.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Tax amount </strong>&ndash; The field should represent a tax amount.</p>
+<p>You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Tax transactions.</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sign</p>
+</td>
+<td>
+<p>Enter <strong>1</strong> if the value should be represented as is. Enter <strong>-1</strong> if the value should be inverted.</p>
+<p>You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Tax transactions or Total.</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Nondeductible sales tax</p>
+</td>
+<td>
+<p>If the <strong>Calculation field is set to Tax transaction, </strong>and the <strong>Tax field is set to Tax amount, select this check box</strong> to reduce the calculated tax amount on the non-deductible tax amount.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 > [!NOTE]
 > If any changes are made in the declaration, you must change the field settings.
