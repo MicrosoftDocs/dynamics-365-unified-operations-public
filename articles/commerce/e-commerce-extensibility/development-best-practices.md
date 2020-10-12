@@ -47,6 +47,20 @@ The Dynamics 365 online SDK provides development extensions using TypeScript and
 
 You should ensure extra unused JavaScript and CSS are not included in your extension package.  Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript.
 
+### Reducing JavaScript by excluding unused modules
+Dynamics 365 Commerce comes with a large [Module Library](../starter-kit-overview.md) set of modules.  If there are modules that won't be used on the e-Commerce site, they can be excluded to reduce the JavaScript chunk size.  The excluded modules will not be rendered on the live e-Commerce site or available within the site builder tool when authoring pages.
+
+Modules can be excluded by adding the module name to the **excludeModules** property in the SDK's "/src/settings/platform.settings.json" file as shown below.
+
+```
+{
+    ...
+    "excludeModules": ["<EXCLUDED_MODULE_NAME1>","<ExCLUDED_MODULE_NAME2>"]
+    ...
+}
+```
+
+You can verify if the module was successfully excluded by comparing the chunk size displayed after a build or test it in a dev environment (after running the Node server using "yarn start") using the "http://localhost:4000/modules?type=<your-module-name>", you should observe that the excluded module is not rendered.
 
 ## Optimizing Images
 One of the biggest performance hits to a web page can be the downloading of images.  Use CSS whenever possible to generate images for items such as buttons, but in cases where you need marketing or product images, you should leverage the [media libary](dam-overview.md) inside of the site builder tool to upload the images.  Images uploaded through the media library should be uploaded with the highest quality and resolution that covers all scenarios on the web site.  Images served from the media library will automatically use an image resizer service to serve up the best image.
@@ -72,7 +86,7 @@ Ultimately, the goal is to find the right balance to maintain image quality whil
 
 ## Cache configuration
 
-Intro TBD
+Caching is often used on static content that doesn't change often such as JavaScript, CSS, images and product content. Some scenarios may require custom cache settings to achieve best performance results.
 
 ### Image caching 
 
@@ -82,16 +96,8 @@ The default content delivery network (CDN) cache time for images is set to 5 min
 
 There is layer of caching of product-specific data in the e-Commerce rendering Node layer. Caching times are different for each entity type and can be configured inside of the **cache.settings.json** file included with the SDK under the "/src/settings/" directory.  For more information, see [Data cache settings](e-commerce-extensibility/data-action-cache-settings.md).
 
-## Performance recommendations 
-
-### General
-
 
 ### Module development
-
-#### Images
-
-Image requests should always include the width and height parameters. If the width and height are not provided, image caching will not be optimized.
 
 #### Retail API
 
