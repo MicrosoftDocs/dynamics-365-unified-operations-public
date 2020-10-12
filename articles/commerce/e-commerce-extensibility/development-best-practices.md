@@ -49,14 +49,13 @@ You should ensure extra unused JavaScript and CSS are not included in your exten
 
 
 ## Optimizing Images
-One of the biggest performance hits to a web browser can be the downloading of images.  Use CSS whenever possible to generate images for for items such as buttons, but in cases where you need marketing or product images, you should leverage the [media libary](dam-overview.md) inside of the site builder tool.  Images uploaded through the media library should be uploaded with the highest quality and resolution that covers all scenarios on the web site.  
+One of the biggest performance hits to a web page can be the downloading of images.  Use CSS whenever possible to generate images for items such as buttons, but in cases where you need marketing or product images, you should leverage the [media libary](dam-overview.md) inside of the site builder tool to upload the images.  Images uploaded through the media library should be uploaded with the highest quality and resolution that covers all scenarios on the web site.  Images served from the media library will automatically use an image resizer service to serve up the best image.
 
 ### Image resizer service
 Images served go through an **image resizer** service included in the Commerce rendering engine when rendered inside of a module. This is important for responsive design, in general, as the screen size gets smaller images will be auto scaled down to the correct size for each particular module.
 
-It's important to follow some guidelines to ensure images get auto resized correctly.  Modules can specify their images sizes for particular view ports in the theme.settings.json file.  See the [configure theme settings](configure-theme-settings.md) document for more information.
+It's important to follow some guidelines to ensure images get resized correctly.  Modules can specify their images sizes for particular view ports in the theme.settings.json file.  See the [configure theme settings](configure-theme-settings.md) document for more information.
 
-### Image requests
 When building modules with images, the HTML should always include the width and height parameters. If the width and height are not provided, image caching will not be optimized through the image resizer.
 
 ### Image types
@@ -73,48 +72,15 @@ Ultimately, the goal is to find the right balance to maintain image quality whil
 
 ## Cache configuration
 
-
+Intro TBD
 
 ### Image caching 
 
-The default content delivery network (CDN) cache time for images is set to 5 minutes. This means that after 5 minutes the next request to get a specific image will need to be retrieved from the origin, and so will be slower. To increase the cache time setting, you must open a support ticket.
+The default content delivery network (CDN) cache time for images is set to 5 minutes. This means that after 5 minutes the next request to get a specific image will need to be retrieved from the origin, and so will be slower. Increaing the cache time setting is possible, however it must be done by opening a support ticket.
 
 ### Retail data caching
 
-There is layer of caching of product-specific data in the e-Commerce rendering Node layer. Caching times are different for each entity type.
-
-The entities in the following example can be increased to get better performance as needed using the Dynamics 365 online software development kit (SDK).
-
-```json
-{
-    "checkPeriodInSeconds": 1800,
-    "ttlInSeconds": {   
-        "SimpleProduct": 1800,
-        "FullProduct": 1800,
-        "ProductRating": 1800,
-        "Category": 1800,
-        "ProductCatalog": 1800,
-        "OrgUnit": 1800,
-        "ChannelConfiguration": 1800,
-        "CategoryHierarchy": 1800,
-        "AttributeValue": "1800"
-    },      
-    "ttrInSeconds": {
-        "SimpleProduct": 900,
-        "FullProduct": 900,
-        "Product": 900,
-        "ProductRating": 900,
-        "Category": 900,
-        "ProductCatalog": 300,
-        "OrgUnit": 1800,
-        "ChannelConfiguration": 1800,
-        "CategoryHierarchy": 1800,
-        "AttributeValue": 900,
-        "ProductDimensionValue": 900
-    }
-}
-```
-For more information, see [Data cache settings](e-commerce-extensibility/data-action-cache-settings.md).
+There is layer of caching of product-specific data in the e-Commerce rendering Node layer. Caching times are different for each entity type and can be configured inside of the **cache.settings.json** file included with the SDK under the "/src/settings/" directory.  For more information, see [Data cache settings](e-commerce-extensibility/data-action-cache-settings.md).
 
 ## Performance recommendations 
 
