@@ -65,7 +65,7 @@ External application integration requires only the **Application** authenticatio
 
 This topic is focused on setting up **Application** authentication flows and accessing the APIs by using the **Application** authentication context.
 
-Before the APIs are accessed from an external application, the external application must be registered in Azure App registration, and details of the registered application must be added in the headquarters.
+Before the APIs are accessed from an external application, the external application must be registered in Azure App registration, and details of the registered application must be added in the Commerce Headquarters.
 
 For more information about authentication flows, see [Dynamics 365 Commerce authentication flows](../arch-auth-flow.md).
 
@@ -97,18 +97,17 @@ The client secret is also known as an *application password*. It's a string valu
 
 ## Register the app in the Finance and Operations app so that Retail Server trusts it
 
-1. In Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
-2. Select **Identity providers**.
-3. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set based on your selection.
-4. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the app registration in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
-5. On the Action Pane, select **Save**.
-6. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Retail Server URL.
-7. On the Action Pane, select **Save**.
-8. Go to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule**, and run Commerce Data Exchange (CDX) job **1110**.
+1. In Commerce Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
+2. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set based on your selection.
+3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the app registration in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
+4. On the Action Pane, select **Save**.
+5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Retail Server URL.
+6. On the Action Pane, select **Save**.
+7. Go to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule**, and run Commerce Data Exchange (CDX) job **1110**.
 
 ## Access the APIs by using Postman
 
-Several third-party tools let you authenticate with Azure Service, compose and send Web API requests, and view responses. Postman is one of the most popular tools. [Download and install the Postman client tool](https://www.postman.com/).
+Several third-party tools let you authenticate with Azure services, compose and send Web API requests, and view responses. Postman is one of the most popular tools. [Download and install the Postman client tool](https://www.postman.com/).
 
 For this example, you will access the **GetOrderHistory** API. This API retrieves the order history for a specific customer. It can be accessed only by using the **Employee**, **Customer** or **Application** authorization context. Because your application has the **Application** authorization context, it can access the **GetOrderHistory** API and get the customer order history.
 
@@ -118,7 +117,7 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
 
 ### Generate an authorization token by using Postman
 
-1. In Postman, create a Get request that has the following request URL and body parameters.
+1. In Postman, create a GET request that has the following request URL and body parameters.
 
     **Request URL**
 
