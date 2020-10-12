@@ -1,10 +1,10 @@
 ---
 
-title: Guidance for initial sync in dual-write
-description: 
-author: 
+title: Considerations for initial synchronization
+description: This topic provides considerations, known issues, and guidance for the initial sychronization of dual-write.
+author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 03/20/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author:
-ms.search.validFrom: 2020-03-20
+ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
@@ -35,16 +35,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Overview
 
-Before you turn on dual-write for an entity, you can run initial sync to handle existing data on both sides of Finance and Operations apps, and model-driven apps which the data is saved in Common Data Service(CDS); or you can just skip the initial sync to turn on the dual-write if there is no need to synchronize data between those two apps.
+Before you start dual-write on an entity, you can run an initial sync to handle existing data on both sides of Finance and Operations apps and customer engagement apps. You can skip the initial sync if you don't need to synchronize data between the two environments.
 
-Initial sync provides the ability to copy existing data from one app to another bidirectionally, as there are several considerations to run initial sync. 
+The initial sync lets you copy existing data from one app to another bidirectionally, and there are several considerations to run initial sync. You might need to migrate data before your go-live. In that case, data can be loaded into one side through data migration and then synchronized to the other side through the initial sync.
 
-Basically, you may need to migrate data before Go-live, so in that case, data can be loaded into one side through data migration and synchronize to the other side through initial sync.
+Our recommendation for the initial sync:
 
-Our recommendation for single-thread entities (*) is to migrate data into Finance and Operations apps first and then trigger initial sync to move it over to CDS. The reason for that is to get the best performance comparing to sync from CDS into Finance and Operations for single-thread entities based on our lab testing.
-
-For other multi-thread entities, migrate data into CDS first and then trigger initial sync to move it over to Finance and Operations apps.
-
++ [Single-threaded entities](#single-threaded-entities): Migrate data into the Finance and Operations app first and then trigger the initial sync to move the data over to Common Data Service. Based on our lab testing, that sequence has better performance than syncing from Common Data Service to Finance and Operations apps.
++ Multi-threaded entities: Migrate data into Common Data Service first and then trigger the initial sync to move the data over to the Finance and Operations app.
 
 ## Considerations
 
