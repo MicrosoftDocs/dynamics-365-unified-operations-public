@@ -1137,7 +1137,7 @@ Fields with **Total** selected in the **Calculation** field are marked in bold.
 
 ## Appendix 2. Example of the Yearly tax communication setup for 2020
 
-For an example of a setup table for the 2020 declaration, see link.
+For an example of a setup table for the 2020 declaration, see [IVA setup 2020]().
 
 1.  Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
