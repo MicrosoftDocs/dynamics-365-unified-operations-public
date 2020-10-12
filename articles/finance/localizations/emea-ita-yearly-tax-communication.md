@@ -80,7 +80,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 <p>Format</p>
 </td>
 <td>
-<p>Select the required format of the field. For more information about the available formats, see the [Formats of the fields](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/IT_Yearly_tax_communication/articles/finance/localizations/emea-ita-yearly-tax-communication.md#formats-of-the-fields) section later in this topic.</p>
+<p>Select the required format of the field. For more information about the available formats, see the <a href="#_Formats_of_the">Formats of the fields</a> section later in this topic.</p>
 </td>
 </tr>
 <tr>
@@ -110,10 +110,8 @@ For more information, see [Download Electronic reporting configurations from Lif
 </td>
 <td>
 <p>Select one of the following values:</p>
-<ul>
-<li><strong>Tax base</strong> &ndash; The field should represent a tax base.<li>
-<li><strong>Tax amount </strong>&ndash; The field should represent a tax amount.<li>
-<ul>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Tax base</strong> &ndash; The field should represent a tax base.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Tax amount </strong>&ndash; The field should represent a tax amount.</p>
 <p>You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Tax transactions.</strong></p>
 </td>
 </tr>
