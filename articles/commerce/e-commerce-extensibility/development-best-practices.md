@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes some best practices when developing Dynamics 365 Commerce e-Commerce customizations.
 
 ## Overview
-The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions and themes can be created or the provided (module library)[starter-kit-overview.md] can be extended. It is important to consider web site performance when building e-Commerce customizations.  Standard best practices used for web site development are applicable including mimimizing HTML, JavaScript, CSS and optimizing images.
+The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions and themes can be created or the provided (module library)[starter-kit-overview.md] can be extended. It is important to consider web site performance when building e-Commerce customizations.  Standard best practices used for web site development are applicable including minimizing HTML, JavaScript, CSS and optimizing images.
 
 ## Infrastructure setup
 
@@ -43,7 +43,7 @@ The [Dynamics 365 Commerce system](../commerce-architecture.md) includes various
 
 ## Minimizing HTML, CSS & JavaScript
 
-The Dynamics 365 online SDK provides development extensions using TypeScript and SCSS files.  TypeScript is a typed superset of JavaScript that compiles to plain JavaScript and SCSS is a superset of CSS that is compiled down to standard CSS.  When the configuration package is built using [yarn msdyn365 pack](cli-command-reference#pack.md) or the Node server is started on a local development environment using the [yarn start](setup-dev-environment#run-your-node-app.md) command, the typescript files and SCSS files will compiled down to Javascript and CSS respectively.  These files are also minified to reduce network bandwidth.
+The Dynamics 365 online SDK provides development extensions using TypeScript and SCSS files.  TypeScript is a typed superset of JavaScript that compiles to plain JavaScript and SCSS is a superset of CSS that is compiled down to standard CSS.  When the configuration package is built using [yarn msdyn365 pack](cli-command-reference#pack.md) or the Node server is started on a local development environment using the [yarn start](setup-dev-environment#run-your-node-app.md) command, the typescript files and SCSS files will compiled down to JavaScript and CSS respectively.  These files are also minified to reduce network bandwidth.
 
 You should ensure extra unused JavaScript and CSS are not included in your extension package.  Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript.
 
@@ -90,7 +90,7 @@ Caching is often used on static content that doesn't change often such as JavaSc
 
 ### Image caching 
 
-The default content delivery network (CDN) cache time for images is set to 5 minutes. This means that after 5 minutes the next request to get a specific image will need to be retrieved from the origin, and so will be slower. Increaing the cache time setting is possible, however it must be done by opening a support ticket.
+The default content delivery network (CDN) cache time for images is set to 5 minutes. This means that after 5 minutes the next request to get a specific image will need to be retrieved from the origin, and so will be slower. Increasing the cache time setting is possible, however it must be done by opening a support ticket.
 
 ### Retail data caching
 
