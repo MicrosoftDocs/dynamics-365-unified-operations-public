@@ -5,8 +5,8 @@ Italy that will be submitted to the tax authority.
 
 ## Prerequisites
 
-Set up Italian sales tax books by following the instructions in Italian sales
-tax books.
+Set up Italian sales tax books by following the instructions in [Italian sales
+tax books](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-ita-fiscal-books.md#set-up-sales-tax-books).
 
 ## Set up the Yearly tax communication report
 
@@ -19,9 +19,7 @@ tax books.
 3.  On the **Tax registration** FastTab, in the **Fiscal code** field, enter the
     fiscal code of your company.
 
-4.  In Microsoft Dynamics Lifecycle Services (LCS), in the Shared asset library,
-    download the latest versions of the Electronic reporting (ER) configurations
-    for the following value-added tax (VAT) declaration formats:
+4.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following value-added tax (VAT) declaration formats:
 
 -   Italian tax reports model
 
@@ -29,7 +27,7 @@ tax books.
 
 -   Yearly VAT communication model mapping
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 5.  In Finance, go to **Tax \> Setup \> Parameters \> General ledger
     parameters**.
@@ -47,7 +45,7 @@ For more information, see Download Electronic reporting configurations from Life
 
 **Note**
 
-To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see Model and instructions - VAT 2020.
+To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
 
 9.  On the **Field setup** tab, create lines, and set the following fields on
     them.
@@ -412,7 +410,7 @@ Here is an example for the **ITCO** legal entity.
 | VL001001 | Output VAT                                                                                                                                               | NU     | Total            |            | 1    |                             | VJ009002, VE023002           |
 | VL002001 | Deductible VAT                                                                                                                                           | NU     | Total            |            | 1    |                             | VF014002                     |
 
-**Note:** To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see Model and instructions - VAT 2020.
+**Note:** To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
 
 6.  Refresh the page.
 
