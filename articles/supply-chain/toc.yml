@@ -2661,6 +2661,10 @@
             href: warehousing/batch-and-license-plate-confirmation.md
           - name: Enable license plate label printing
             href: warehousing/tasks/license-plate-label-printing.md
+          - name: Create transfer orders from the warehouse app
+            href: warehousing/create-transfer-order-from-warehouse-app.md
+          - name: Warehouse app event processing
+            href: warehousing/warehouse-app-events.md
           - name: Piece picking confirmation
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
