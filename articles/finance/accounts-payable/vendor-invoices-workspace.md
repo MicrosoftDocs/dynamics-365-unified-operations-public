@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor invoice entry workspace
-description: This topic lists the steps for setting up the workspace that's related to vendor invoices and that displays the information that's available through Power BI. 
+description: This topic explains how to set up the workspace that is related to vendor invoices and that shows the information that is available through Microsoft Power BI.
 author: abruer
 manager: AnnBe
 ms.date: 09/28/2020
@@ -28,130 +28,96 @@ ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
 ---
 
-
-
 # Vendor invoice entry workspace
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists the steps for setting up the workspace that's related to vendor invoices and that displays the information that's available through Power BI. The workspace displays information about vendor invoices that's filtered for specific users in a graphical format.
+This topic explains how to set up the workspace that is related to vendor invoices and that shows the information that is available through Microsoft Power BI. The vendor invoice information in this workspace is filtered for specific users and is shown in a graphical format.
 
-The **Vendor invoice entry** workspace shows information that's related to vendor invoice processing. This workspace includes a **My work** view and an **Analytics - all companies** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor invoices.
+## Overview
 
-## Set up the workspace to view Power BI content
+The **Vendor invoice entry** workspace shows information that is related to vendor invoice processing. It includes a **My work** view and an **Analytics - All companies** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics - All companies** page uses the capabilities of Power BI to show visualizations that are related to vendor invoices.
 
-The following setup needs to be completed for data to display in **Vendor invoice entry** Power BI visuals.
+## Set up the workspace to show Power BI content
 
-1.  Go to the **Feature management** workspace.
+You must complete this setup before data can be shown in Power BI visualizations in the **Vendor invoice entry** workspace.
 
-2.  Filter the list find the **Vendor invoice automation** feature.
+1. In the **Feature management** workspace, filter the list to find the **Vendor invoice automation** feature.
+3. Select **Enable now**.
+4. To ensure that invoices can be processed from beginning to end without requiring manual intervention, set up a vendor invoice workflow. To set up a workflow, go to **Accounts payable \> Setup \> Accounts payable workflows**.
+5. Go to **Accounts payable \> Setup \> Accounts payable parameters**, and select the **Vendor invoice automation** tab. For more information, see [Setup options for vendor invoice automation](vnd-invoice-set-up-options.md).
+6. Set the **Automatically submit imported invoices to workflow** option to **Yes**.
+7. If product receipts should automatically be matched, set the **Automatically match product receipts to invoices lines** option to **Yes**.
+8. Review the remaining, optional settings, and configure them according to your organization's requirements.
+9. Go to **System administration \> Setup \> System parameters**, and set the **System currency** and **System exchange rate** fields.
+10. Go to **General ledger \> Setup \> Ledger**, and set the **Accounting currency** and **Exchange rate type** fields.
+11. Go to **General ledger \> Currencies \> Currency exchange rates**, and enter the exchange rates between the transaction currency and the accounting currency, and between the accounting currency and the system currency.
+12. Go to **System administration \> Setup \> Entity store**, and look for **Vendor invoice automation measure**. Select **Refresh**.
 
-3.  Click the **Enable now** button.
-
-4.  To ensure that the invoice can be processed from start to finish without manual intervention, set up a vendor invoice workflow. To set up a workflow, go to **Accounts payable > Setup > Accounts payable workflows**.
-
-5.  Go to **Accounts payable > Setup > Accounts payable parameters > Vendor
-    invoice automation**. For more information, see [Setup options for vendor invoice automation](vnd-invoice-set-up-options.md).
-
-6.  Set **Automatically submit imported invoices to workflow** to **Yes**.
-
-7.  To **Match product receipts automatically**, set **Automatically match
-    product receipts to invoices lines** to **Yes**.
-
-8.  Review the additional optional settings based on your organization's needs.
-
-9.  Go to **System administration > Setup > System Parameters** to
-    set **System currency** and **System Exchange Rate**.
-
-10.  Go to **General Ledger > Setup > Ledger** to set **Accounting
-    Currency** and **Exchange Rate Type**.
-
-11. Enter the exchange rates between the transaction currency and the accounting
-    currency, and between the accounting currency and system currency. To do this, go
-    to **General Ledger > Currencies > Currency exchange rates**.
-
-12. Go to **System administration > Setup > Entity Store** and look for
-    **Vendor invoice automation measure.** Click the **Refresh** button.
-
-13. To view this information, you must have the security role accounts payable manager or clerk in
-    order.
+To view this information, you must have the Accounts payable manager or Accounts payable clerk security role.
 
 ## My work view
 
 ### Company selection
-When the **Automate vendor invoices** feature is enabled, you'll see a drop down menu to select a **Company**. By default, it will show
-the information for the company that you logged into. You can select a different company to display information for that company on the tile.  Clicking on the tile will bring you to that related page in the company that you selected in the **Company** menu.
+
+When the **Automate vendor invoices** feature is turned on, a **Company** field appears. By default, the view shows information for the company that you signed in to. By selecting a different company in the **Company** field, you can show information for that company on the tile. You can then select the tile to go the related page in the selected company.
 
 ### Summary tiles
-The tiles in the **Summary of pending invoices** section give an overview of the state of your vendor invoices. You can see journals that aren't yet posted,
-invoices that are on hold, and four tiles associated with vendor invoice automation feature: **Manual receipt match needed**, **Matching validation not
-successful**, **Invoices not submitted to workflow**, and **Invoices not imported**. These last four require the enabling of the feature in Feature
-Management. To use the **Recover vendor invoices**, that must be enabled in Accounts payable \> Accounts payable parameters\> Invoice \> Allow vendor
-invoice recovery. You will also see journals grouped together for **Vendor invoice journals**, **Journals- Assigned to me**, and **Invoice pool**.
 
-The information in the **Summary** section is for the company set as the default for your login.
+The tiles in the **Summary of pending invoices** section of the **My work** view give an overview of the state of your vendor invoices. You can see journals that aren't yet posted and invoices that are on hold. In addition, there are the four tiles that are associated with the Vendor invoice automation feature:
+
+- Manual receipt match needed
+- Matching validation not successful
+- Invoices not submitted to workflow
+- Invoices not imported
+
+(These four tiles require that the Vendor invoice automation feature be turned on in Feature management.)
+
+To use the **Recover vendor invoices**, it must be turned on in Accounts payable parameters. Go to **Accounts payable \> Accounts payable parameters**, and then, on the **Invoice** tab, set the **Allow vendor invoice recovery** option to **Yes**.
+
+You will also see journals grouped together for **Vendor invoice journals**, **Journals - Assigned to me**, and **Invoice pool**.
+
+The information in the **Summary of pending invoices** section is for the company that is set as the default company for your sign-in.
 
 ### Creating new records
-Use the **New** dropdown menu to create a new invoice record using one of the
-available options:
 
--   Vendor invoice
+To create a new invoice record, select **New**, and then select one of the following record types in the list:
 
--   Invoice journal
+- Vendor invoice
+- Invoice journal
+- Global invoice journal
+- Invoice register
+- Invoice approval
 
--   Global invoice journal
-
--   Invoice register
-
--   Invoice approval
-
-Please note that you will create a record based upon the company filter and not
-the logged-in company. For example, if your logged-in company is UMSF, but your
-filter company is GBSI, when you click New and make your selection, it will
-create that record in GBSI.
+Note that the record that you create is based on the company filter, not the company that you're signed in to. For example, you're signed in to the **UMSF** company, but the company filter is set to **GBSI**. In this case, when you select **New** and then select a record type in the list, the record is created in the GBSI company.
 
 ### Documents not invoiced grids
 
-The **Documents not invoiced** section contains grids that show documents
-awaiting vendor invoices. From the **Open purchase orders** grid, you will see
-all purchase orders that are not yet fully invoiced. Use **Invoice now** button
-to create a vendor invoice for that purchase order. Use the **Prepayment invoice
-now** button to create a prepayment invoice for that purchase order
+The **Documents not invoiced** section contains grids that show documents that are awaiting vendor invoices.
 
-The **Product receipts** grid shows purchase receipt transactions that are not
-fully invoiced. Use **Invoice now** button to create a vendor invoice for that
-purchase order.
+The **Open purchase orders** grid shows all purchase orders that aren't yet fully invoiced. You can use the **Invoice now** button to create a vendor invoice for a purchase order. You can use the **Prepayment invoice now** button to create a prepayment invoice for a purchase order.
 
-The **Pending vendor invoices** grid shows all invoices not submitted to
-workflow. Use the **Search** bar and/or the **Company** dropdown to search for a
-particular vendor invoice. Use the **Edit** button to edit a transaction showing
-in the grid.
+The **Product receipts** grid shows purchase receipt transactions that aren't yet fully invoiced. You can use the **Invoice now** button to create a vendor invoice for a purchase order.
 
-On the **Find purchase order** grid, use the **Search** bar to search for a
-purchase order.
+The **Pending vendor invoices** grid shows all vendor invoices that haven't been submitted to the workflow system. You can use the **Search** field and/or the company filter to search for a specific vendor invoice. You can use the **Edit** button to edit a transaction that appears in the grid.
+
+On the **Find purchase order** grid, you can use the **Search** field to search for a specific purchase order.
 
 ### Related information
 
-You can view **Posted invoices** information using the links on the right side
-of the workspace, to include **Open vendor invoices**, **Invoice journal**, and
-**Invoice history and matching details**. Under the Vendors section, you can
-access a filtered list to show all **Vendors on hold** or use the **All
-vendors** link. **All purchase orders** and **Open prepayments** links are also
-available.
+You can view information about posted invoices by using the links on the right side of the workspace. These links include **Open vendor invoices**, **Invoice journal**, and **Invoice history and matching details**. In the **Vendors** section, you can access a filtered list that shows all vendors that are on hold, or you can use the **All vendors** link. **All purchase orders** and **Open prepayments** links are also available.
 
-### Analytics – all companies page
+### Analytics – All companies page
 
-When the **Automatically submit imported invoices to workflow** field is set to **Yes** on the **Accounts payable parameters** page, you can view automation analytics. The **Analytics-All companies** page provides important metrics, such as vendor invoices that are in approval by approver and by company. This page contains five report pages. One page provides an overview, and the other pages provide details about Accounts payable automation metrics.
+When the **Automatically submit imported invoices to workflow** option is set to **Yes** on the **Accounts payable parameters** page, you can view automation analytics. The **Analytics - All companies** page provides important metrics, such as vendor invoices that are in approval by approver and by company. This page contains five report pages. One page provides an overview, and the other pages provide details about Accounts payable automation metrics.
 
-The following table shows the visualizations that are available on each report
-page.
+The following table shows the visualizations that are available on each report page.
 
-|      Report page                      	|      Visualization                                    	|
-|---------------------------------------	|-------------------------------------------------------	|
-|     Vendor invoice overview           	|     Pending vendor invoices in   automation in system currency <br>     Invoices that failed to import  <br>    Invoices in workflow <br>     Touchless invoices last 30 days <br>     Total automated invoices last 30   days <br>     Balance of open invoices in   system currency <br>     Reasons for failures, last 30   days <br>     Percent of posted invoices that   were processed automatically <br>     Days to process an invoice    	|
-|     Automation status                 	|     Touchless invoices last 30 days <br>     Touchless invoices last 30 days by company <br>     Touchless invoices last 30 days by vendor group <br>     Percent of posted invoices that were processed   automatically <br>     Days to process an invoice                                                                                                                                                                   	|
-|     Invoices that failed to import    	|     Invoices that failed to import <br>     Invoices that failed to import   by company <br>                                                                                                                                                                                                                                                                                                                         	|
-|     Reasons for automation failure    	|     Invoices failed <br>     Invoices failed by company <br>     Invoices failed by vendor group <br>                                                                                                                                                                                                                                                                                                                     	|
-|     Workflow status                   	|     Invoices in workflow <br>     Vendor invoice workflow   instances <br>     Assignment per approver <br>     Vendor invoice workflow per   company <br>     Average days in workflow by   approver                                                                                                                                                                                                                          	|
-
+| Report page                    | Visualizations |
+|--------------------------------|----------------|
+| Vendor invoice overview        | <ul><li>Pending vendor invoices in automation in system currency</li><li>Invoices that failed to import</li><li>Invoices in workflow</li><li>Touchless invoices last 30 days</li><li>Total automated invoices last 30 days</li><li>Balance of open invoices in system currency</li><li>Reasons for failures, last 30 days</li><li>Percent of posted invoices that were processed automatically</li><li>Days to process an invoice</ul></li> |
+| Automation status              | <ul><li>Touchless invoices last 30 days</li><li>Touchless invoices last 30 days by company</li><li>Touchless invoices last 30 days by vendor group</li><li>Percent of posted invoices that were processed automatically</li><li>Days to process an invoice</li></ul> |
+| Invoices that failed to import | <ul><li>Invoices that failed to import</li><li>Invoices that failed to import by company</li></ul> |
+| Reasons for automation failure | <ul><li>Invoices failed</li><li>Invoices failed by company</li><li>Invoices failed by vendor group</li></ul> |
+| Workflow status                | <ul><li>Invoices in workflow</li><li>Vendor invoice workflow instances</li><li>Assignment per approver</li><li>Vendor invoice workflow per company</li><li>Average days in workflow by approver</li></ul> |
