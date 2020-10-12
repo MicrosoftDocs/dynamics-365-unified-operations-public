@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.13
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes the scope of the Microsoft Dynamics 365 Commerce functionality that is specific to Brazil. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Brazil (within the scope of the [Brazilian localization](../../financials/localizations/latam-bra-scope.md#brazilian-localization-strategy)).
+This topic describes the scope of the Microsoft Dynamics 365 Commerce functionality that is specific to Brazil. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Brazil (within the scope of the [Brazilian localization](../../finance/localizations/latam-bra-scope.md#brazilian-localization-strategy)).
 
 However, Commerce doesn't address all laws, regulations, or commercial requirements in Brazil, because laws and regulations vary in the way that they affect organizations. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
@@ -78,7 +78,7 @@ Fiscal registration is the immediate registration of retail sales per local fisc
 - Registration of a retail sale, in a SAT fiscal device that is connected to the POS, by using a CF-e electronic fiscal document.
 - Registration of a retail sale in a fiscal printer that is connected to the POS.
 
-Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions. Formats of electronic fiscal documents that meet the legal requirements in Brazil are configured by using the [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality. Electronic fiscal documents are submitted via the [Electronic invoicing service](../../financials/localizations/e-invoicing-get-started.md). For more information about the submission process for electronic fiscal document and configuration for Brazil, see [Electronic invoicing add-on for Brazil](../../financials/localizations/e-invoicing-bra-get-started.md).
+Commerce supports fiscal registration via the [Fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md) and its extensions for specific countries or regions. Formats of electronic fiscal documents that meet the legal requirements in Brazil are configured by using the [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) functionality. Electronic fiscal documents are submitted via the [Electronic invoicing service](../../finance/localizations/e-invoicing-get-started.md). For more information about the submission process for electronic fiscal document and configuration for Brazil, see [Electronic invoicing add-on for Brazil](../../finance/localizations/e-invoicing-bra-get-started.md).
 
 > [!NOTE]
 > Integration with fiscal printers isn't available in Commerce. You can take advantage of the [N-1 capabilities](../dev-itpro/n-1-installation-configuration.md) to integrate Microsoft Dynamics AX 2012 R3 Retail Enterprise Point of Sale (EPOS), which supports the integration with fiscal printers for Brazil in Commerce headquarters.
@@ -89,7 +89,7 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 |--------------------------------------------------------------------------|----------------|---------------------------|---------|-------------|
 | Retail product management, and tax setup and calculation                 | X              |                           |         |             |
 | NFC-e (model 65) and DANFE for retail sales                              | X              |                           |         |             |
-| Communication with SEFAZ via [Electronic invoicing service](../../financials/localizations/e-invoicing-get-started.md) | X              |                           |         |             |
+| Communication with SEFAZ via [Electronic invoicing service](../../finance/localizations/e-invoicing-get-started.md) | X              |                           |         |             |
 | Retail statements in Commerce headquarters                               | X              |                           |         |             |
 | Handling of fiscal customer information (for example, CPF/CNPJ)          |                | X                         |         |             |
 | NF-e (model 55) and DANFE for sales returns                              |                | X                         |         |             |
