@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Guidance for initial synchronization
+# Considerations for initial synchronization
 
 [!include [banner](../../includes/banner.md)]
 
@@ -37,14 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you turn on dual-write for an entity, you can run initial sync to handle existing data on both sides of Finance and Operations apps, and model-driven apps which the data is saved in Common Data Service(CDS); or you can just skip the initial sync to turn on the dual-write if there is no need to synchronize data between those two apps.
 
-Initial sync provides the ability to copy existing data from one app to another bidirectionally, as there are several considerations to run initial sync, please refer to below guidance based on different scenarios:
-
-- [Scenario 1: A new Finance and Operations app instance and a new model-driven app instance](#_Scenario_1:_A)
-- [Scenario 2: A new Finance and Operations app instance and an existing model-driven app instance](#_Scenario_2:_A)
-- [Scenario 3: An existing Finance and Operations app instance and a new model-driven app instance](#_Scenario_3:_An)
-- [Scenario 4: An existing Finance and Operations app instance and an existing model-driven app instance](#_Scenario_4:_An)
-
-## Scenario 1: A new Finance and Operations app instance and a new model-driven app instance
+Initial sync provides the ability to copy existing data from one app to another bidirectionally, as there are several considerations to run initial sync. 
 
 Basically, you may need to migrate data before Go-live, so in that case, data can be loaded into one side through data migration and synchronize to the other side through initial sync.
 
@@ -52,50 +45,6 @@ Our recommendation for single-thread entities (*) is to migrate data into Financ
 
 For other multi-thread entities, migrate data into CDS first and then trigger initial sync to move it over to Finance and Operations apps.
 
-To synchronize the data, follow these steps.
-
-1. [Dual-write setup from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup)
-2. Migrate data to Finance and Operations app using [Data management Framework](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) for single-thread entities, and migrate data to CDS for other entities
-3. Run initial sync, here is an [example to run the initial sync](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map#example-enabling-the-customers-v3contacts-entity-map)
-
-Note: Please refer to Considerations section for alternative approach based on data volumes in each entity that need to run initial sync.
-
-## Scenario 2: A new Finance and Operations app instance and an existing model-driven app instance
-
-In this scenario, you are live with model-driven app and already have existing data in CDS, so in that case, data can be synchronized from CDS to Finance and Operations app through initial sync.
-
-To sync the existing CDS data to the Finance and Operations app, follow these steps.
-
-1. [Dual-write setup from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup)
-2. Create a new company in the Finance and Operations app
-3. Add the company to the dual-write connection setup
-4. [Bootstrap](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/bootstrap-company-data) the Common Data Service data by using company code
-5. Run initial sync, here is an [example to run the initial sync](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map#example-enabling-the-customers-v3contacts-entity-map)
-
-Note: Please refer to Considerations section for alternative approach based on data volumes in each entity that need to run initial sync.
-
-## Scenario 3: An existing Finance and Operations app instance and a new model-driven app instance
-
-In this scenario, you are live with Finance and Operations app and already has existing data there, so in that case, data can be synchronized from Finance and Operations app to CDS through initial sync.
-
-To synchronize the data from Finance and Operations app to CDS, follow these steps.
-
-1. [Enable dual-write for existing Finance and Operations apps](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write)
-2. Run initial sync, here is an [example to run the initial sync](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map#example-enabling-the-customers-v3contacts-entity-map)
-
-Note: Please refer to Considerations section for alternative approach based on data volumes in each entity that need to run initial sync.
-
-## Scenario 4: An existing Finance and Operations app instance and an existing model-driven app instance
-
-In this scenario, you are live with both model-driven app and Finance and Operations app, although you already have existing data in both apps, it is recommended to trigger initial sync to move data between CDS to Finance and Operations app to keep data consistency.
-
-You will need to bootstrap the CDS and then run the initial sync, please follow these steps.
-
-1. [Enable dual-write for existing Finance and Operations apps](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write)
-2. [Bootstrap](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/bootstrap-company-data) the Common Data Service data by using company code
-3. Run initial sync, here is an [example to run the initial sync](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map#example-enabling-the-customers-v3contacts-entity-map)
-
-Note: Please refer to Considerations section for alternative approach based on data volumes in each entity that need to run initial sync.
 
 ## Considerations
 
