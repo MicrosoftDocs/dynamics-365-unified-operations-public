@@ -38,17 +38,17 @@ This feature lets warehouse workers create and process transfer orders directly 
 
 ## <a name="enable-create-transfer-order-from-warehouse-app"></a>Enable the create transfer orders from Warehouse app feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. The feature is dependent on having the feature [Process warehouse app events](warehouse-app-events.md) enabled. The Create transfer orders from the warehouse app feature is listed as:
+Before you can use this feature, both it and its prerequisites must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed.
 
-- **Module** - Warehouse management
-- **Feature name** - Process warehouse app events
-- **Module** - Warehouse management
-- **Feature name** - Create and process transfer orders from the warehouse app
-
-In order to automate the processing of the outbound shipments another feature [Confirm outbound shipments from batch jobs](confirm-outbound-shipments-from-batch-jobs.md) needs to be enabled. This feature is listed as:
-
-- **Module** - Warehouse management
-- **Feature name** - Confirm outbound shipments from batch jobs
+1. First enable the [Process warehouse app events](warehouse-app-events.md) feature, which is listed in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) as:
+    - **Module** - Warehouse management
+    - **Feature name** - Process warehouse app events
+1. Then enable the *Create transfer orders from the warehouse app*  feature, which is listed as:
+    - **Module** - Warehouse management
+    - **Feature name** - Create and process transfer orders from the warehouse app
+1. To automate the processing of the outbound shipments, you must also enable the [Confirm outbound shipments from batch jobs](confirm-outbound-shipments-from-batch-jobs.md) feature. This feature is listed as:
+    - **Module** - Warehouse management
+    - **Feature name** - Confirm outbound shipments from batch jobs
 
 ## <a name="setup-warehouse-app-menu"></a>Set up a mobile device menu item to create transfer orders
 
@@ -200,7 +200,7 @@ This section explains how to set up a scheduled batch job to release the transfe
 1. Select **OK** to return to the main dialog box.
 1. Expand the **Run in the background** section to setup batch processing.
 1. Enable **Batch processing** under the **Run in background** section.
-1. Select **Recurrence** and setup the batch job to process based on interval needed for your business.
+1. Select **Recurrence** and set up the batch job to process based on interval needed for your business.
 1. Select **OK** to return to the main dialog.
 1. Select **OK** in the main dialog to have the batch job added to the batch queue.
 
@@ -298,45 +298,46 @@ During this scenario, the following occurred:
 
 ### Mobile device menu item setup
 
->Q: Why can’t I see **Create transfer order from license plate** in the menu item work activity drop-down list?
->
->A: The feature **Create and process transfer orders from the warehouse app** must be enabled. For more information, see [Enable the create transfer orders from Warehouse app](#enable-create-transfer-order-from-warehouse-app).>
+#### Why can’t I see "Create transfer order from license plate" in the menu item work activity drop-down list?
+
+The feature *Create and process transfer orders from the warehouse app* must be enabled. For more information, see [Enable the create transfer orders from Warehouse app](#enable-create-transfer-order-from-warehouse-app).
 
 ### Warehouse app processes
 
->Q: Why can’t I see the menu button **Complete order**?
->
->A: You must have at least one license plate assigned to the transfer order.
+#### Why can’t I see the menu button "Complete order"?
 
->Q: Can several warehouse app users add license plates to the same transfer order at the same time?
->
->A: Yes, several warehouse workers can scan license plates into the same transfer order.
+You must have at least one license plate assigned to the transfer order.
 
->Q: Can the same license plate be added to different transfer orders?
->
->A: No, a license plate can only be added to one transfer order at the time.
+#### Can several warehouse app users add license plates to the same transfer order at the same time?
 
->Q: After having selected the **Complete order** button, can I then add more license plates for that transfer order?
->A: No, you can't add more license plates to a transfer order that has a **Complete transfer order** warehouse app event.
+Yes, several warehouse workers can scan license plates into the same transfer order.
 
->Q: How can I find existing transfer orders to be used via the **Select transfer order** button in the warehouse app, if the order has not yet been created in the backend system?
->
->A: Currently, you can't look up transfer orders in the app, but you can find the transfer order numbers in the **Warehouse app events** page. For more information, see [Inquire the warehouse app events](#inquire-the-warehouse-app-events).
+#### Can the same license plate be added to different transfer orders?
 
->Q: Can I manually select the transfer order number to be used from the warehouse app?
->
->A: Only auto-generated transfer order numbers via number sequences are supported.
+No, a license plate can only be added to one transfer order at the time.
+
+#### After having selected the "Complete order" button, can I then add more license plates for that transfer order?
+
+No, you can't add more license plates to a transfer order that has a **Complete transfer order** warehouse app event.
+
+#### How can I find existing transfer orders to be used via the "Select transfer order" button in the warehouse app, if the order has not yet been created in the backend system?
+
+Currently, you can't look up transfer orders in the app, but you can find the transfer order numbers on the **Warehouse app events** page. For more information, see [Inquire the warehouse app events](#inquire-the-warehouse-app-events).
+
+#### Can I manually select the transfer order number to be used from the warehouse app?
+
+Only auto-generated transfer order numbers via number sequences are supported.
 
 ### Background processing
 
->Q: How should I clean up records in my warehouse app events queue message tables?
->
->A: You can view and maintain this in the Warehouse app events page. For more information, see Inspect the warehouse app events.
+#### How should I clean up records in my warehouse app events queue message tables?
 
->Q: Why is the transfer order **Receipt date** not updated according to my **Delivery date control** setup?
->
->A: The transfer orders are created without using the **Delivery date control** capabilities.
+You can view and maintain this on the **Warehouse app events** page. For more information, see [Inquire the warehouse app events](#inquire-the-warehouse-app-events).
 
->Q: Can I use a license plate having physical negative inventory on hand?
->
->A: The feature only supports positive physical on-hand quantities. You must make sure that you have positive physical on-hand quantities at the warehouse and inventory status level before assigning license plates to a transfer order.
+#### Why is the transfer order "Receipt date" not updated according to my "Delivery date control" setup?
+
+The transfer orders are created without using the **Delivery date control** capabilities.
+
+#### Can I use a license plate having physical negative inventory on hand?
+
+The feature only supports positive physical on-hand quantities. You must make sure that you have positive physical on-hand quantities at the warehouse and inventory status level before assigning license plates to a transfer order.
