@@ -113,6 +113,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 <ul>
 <li><strong>Tax base</strong> &ndash; The field should represent a tax base.<li>
 <li><strong>Tax amount </strong>&ndash; The field should represent a tax amount.<li>
+<ul>
 <p>You can edit this value only when the <strong>Calculation</strong> field is set to <strong>Tax transactions.</strong></p>
 </td>
 </tr>
