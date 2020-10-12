@@ -786,8 +786,6 @@
         href: statement-posting-eod.md
       - name: Improved handling of batch tracked items
         href: batch.md
-      - name: Configure Commerce parameters that affect statements 
-        href: tasks/parameter-configurations-retail-statements.md
       - name: Configure payment method settings that affect retail statements 
         href: tasks/payment-configurations-retail-statements.md
       - name: Configure and run a job to calculate statements 
