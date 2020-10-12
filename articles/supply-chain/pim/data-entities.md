@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2019-12-1
 

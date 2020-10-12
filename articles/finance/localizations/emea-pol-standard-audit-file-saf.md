@@ -24,7 +24,7 @@ ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 

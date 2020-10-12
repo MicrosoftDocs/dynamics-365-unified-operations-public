@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 265224
 ms.search.region: 
 # ms.search.industry: 
-ms.author:
+ms.author: kfend
 ms.search.validFrom: 02/03/2020
 ms.dyn365.ops.version: 10.0.9
 

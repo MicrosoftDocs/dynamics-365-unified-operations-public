@@ -47,7 +47,7 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
 1.  Sign in with your Microsoft account.
 
     > [!NOTE]
-    > You can also use an organizational account (Microsoft Office 365 domain).
+    > You can also use an organizational account (Microsoft 365 domain).
 
 2.  Create a Azure DevOps account, and select a URL for your account. This is the URL that you'll connect to from your development computer when you're configuring source control in Visual Studio. The following is an example of the account URL. 
 

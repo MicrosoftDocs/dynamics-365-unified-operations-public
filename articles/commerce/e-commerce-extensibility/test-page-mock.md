@@ -5,7 +5,7 @@ title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
 manager: annbe
-ms.date: 07/29/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -242,7 +242,7 @@ You can now modify the page mock as desired.
 
 [Create a new module](create-new-module.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 

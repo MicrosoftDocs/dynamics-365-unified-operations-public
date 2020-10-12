@@ -1,10 +1,14 @@
 ---
 title: Administrator learning catalog for Dynamics 365 Commerce
-description: Find all the training options for Dynamics 365 Commerce.
+description: Find all the training options for the administrator role in Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
+
+ms.prod:
+ms.service: Dynamics365Operations
+ms.technology:
 
 # optional metadata
 
@@ -35,7 +39,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 | Content  | Description  | Format  | Length    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Deploy Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/)                                    | This learning path describes how to deploy Dynamics 365 Commerce environments and perform post-provisioning steps, for successful Commerce implementations using the correct topology for each retailer's business needs.                               | Free, self-paced online learning path | 5 hours   |
+| [Deploy and extend Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | This learning path describes how to deploy Dynamics 365 Commerce environments and perform post-provisioning steps, for successful Commerce implementations using the correct topology for each retailer's business needs. | Free, self-paced online learning path | 5 hours   |
 | [Configure and use Point of sales (POS) in Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | Transactional data is created in the Point of sale (POS) and then uploaded to the Dynamics 365 Commerce Headquarters for processing. This learning path describes how to install, and activate POS, as well as how to create daily transactions in POS. | Free, self-paced online learning path | 4.5 hours |
 | [Configure and work with call centers in Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce is an omnichannel solution that provides a call center channel with capabilities to default specific order processing settings and data defaults to the sales orders created by call center users.                                  | Free, self-paced online learning path | 2 hours   |
 

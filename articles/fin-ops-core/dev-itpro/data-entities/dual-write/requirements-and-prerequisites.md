@@ -187,7 +187,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     
     > [!NOTE]
     > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
-    > It may take few minutes for the solution packages to be created in powerapps solutions section. Wait for it to appear before moving to the next step.
+    > It may take few minutes for the solution packages to be created in Power Apps solutions section. Wait for it to appear before moving to the next step.
 
 8. Uninstall the Prospect to Cash (P2C) solution.
 

@@ -3,7 +3,7 @@
 
 title: Work with fragments
 description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
-author: v-chgri
+author: phinneyridge
 manager: annbe
 ms.date: 07/31/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Retail, Core, Operations
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: phinneyridge
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Work with fragments 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 
@@ -66,8 +65,8 @@ You can either create a new fragment or save an existing module configuration as
 To convert a previously configured module to a reusable fragment, follow these steps.
 
 1. Open a page or template that contains the module that you want to convert to a fragment.
-1. In the outline pane on the left or directly in the main canvas, select the previously configured module.
-1. Select the ellipsis (**...**) next to the name of the module in either the outline pane or the selected module's toolbar in the canvas. 
+1. In the outline pane on the left or directly in visual page builder, select the previously configured module.
+1. Select the ellipsis (**...**) next to the name of the module in either the outline pane or the selected module's toolbar in visual page builder. 
 1. Select **Share as Page Fragment**. 
 1. In the **Save as Page Fragment** dialog box, enter a name for the fragment.
 1. Select **OK** to save the module configuration as a fragment that can be added to other pages.
@@ -99,8 +98,8 @@ The following procedures describe how to add, remove, and edit fragments.
 
 To add a fragment to a page, follow these steps.
 
-1. In the outline pane on the left or directly in the main canvas, select a container or slot to which child modules can be added.
-1. In the online pane, select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using the main canvas, select the plus symbol (**+**).  
+1. In the outline pane on the left or directly in visual page builder, select a container or slot to which child modules can be added.
+1. In the online pane, select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using visual page builder, select the plus symbol (**+**).  
 1. Select **Add Fragment**.
 
     ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)
@@ -120,7 +119,7 @@ To add a fragment to a page, follow these steps.
 
 To remove a fragment from a slot or container on a page, follow these steps.
 
-1. In the outline pane on the left, select the ellipsis (**...**) next to the name of the fragment to be removed, and then select the trash can symbol.  Alternately, you can select the fragment in the canvas and select the trash can symbol in the fragment's toolbar.
+1. In the outline pane on the left, select the ellipsis (**...**) next to the name of the fragment to be removed, and then select the trash can symbol.  Alternately, you can select the fragment in visual page builder and select the trash can symbol in the fragment's toolbar.
 1. When you're prompted to confirm that you want to remove the fragment, select **OK**.
 
 > [!NOTE]
