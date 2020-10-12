@@ -105,7 +105,7 @@ The Regression suite automation tool is intended to be used for business cycle t
 ![Unit tests, component tests, multiple component tests, business cycle tests](media/business-cycle.png)
 
 ### Warehouse mobile app
-You can use RSAT in combination with the Warehouse App Task Validation Framework to automate the testing of warehouse processes. This [teck talk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019) is a good reference to get started.
+You can use RSAT in combination with the Warehouse App Task Validation Framework to automate the testing of warehouse processes. This [Tech Talk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019) is a good reference to get started.
 
 ### Unit and component testing
 For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools. For component tests, take advantage of the [Acceptance test library resources](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:
