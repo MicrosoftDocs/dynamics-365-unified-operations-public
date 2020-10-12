@@ -43,9 +43,8 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 ![](media/1_Yearly_tax_communication_setup.png)
 
-**Note**
-
-To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
+> [!NOTE]
+> To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
 
 9.  On the **Field setup** tab, create lines, and set the following fields on
     them.
@@ -76,7 +75,8 @@ To view the "Yearly VAT communication" form for the year 2020, and instructions 
 You can edit this value only when the **Calculation** field is set to **Tax
 transactions**.
 
-**Note**: If any changes are made in the declaration, you must change the field settings.
+> [!NOTE]
+> If any changes are made in the declaration, you must change the field settings.
 
 10.  For fields where the **Calculation** field is set to **Tax transactions**,
     on the **Selected tax codes** tab, select **New** to a add a line for each
@@ -410,7 +410,8 @@ Here is an example for the **ITCO** legal entity.
 | VL001001 | Output VAT                                                                                                                                               | NU     | Total            |            | 1    |                             | VJ009002, VE023002           |
 | VL002001 | Deductible VAT                                                                                                                                           | NU     | Total            |            | 1    |                             | VF014002                     |
 
-**Note:** To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
+> [!NOTE]
+> To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
 
 6.  Refresh the page.
 
