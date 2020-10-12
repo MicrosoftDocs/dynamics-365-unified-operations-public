@@ -2043,6 +2043,8 @@
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md
+          - name: Provide mixed-reality Guides for workers in production
+            href: production-control/instruction-guides-in-production-overview.md
           - name: Reverse the production order status
             href: production-control/reverse-production-order-status.md
           - name: Visibility into material exceptions
