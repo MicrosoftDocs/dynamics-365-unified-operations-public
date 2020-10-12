@@ -313,7 +313,7 @@ If setting the quantity of resources needed for an operation higher than one, th
 
 ### Excessive use of finite capacity
 
-Use of finite capacity requires the engine to load the capacity information from a data base and can have a computational overhead because it will be harder to find a solution especially in environments where the resources are booked close to their maximum capacity. As a result, it is important to carefully evaluate if a resource really needs to use finite capacity or they can be overbooked. Because there might be a difference among finite capacity resources in how important they are not to overbook, we recommend using the bottleneck option on a resource in combination with a separate value on the plan in "Capacity time fence for bottleneck resources". Using the bottleneck concept can enable that the general finite capacity time fence can be lowered.
+Use of finite capacity requires the engine to load the capacity information from a database and can have a computational overhead because it will be harder to find a solution especially in environments where the resources are booked close to their maximum capacity. As a result, it is important to carefully evaluate if a resource really needs to use finite capacity or they can be overbooked. Because there might be a difference among finite capacity resources in how important they are not to overbook, we recommend using the bottleneck option on a resource in combination with a separate value on the plan in "Capacity time fence for bottleneck resources". Using the bottleneck concept can enable that the general finite capacity time fence can be lowered.
 
 ### Setting hard links
 
@@ -325,7 +325,7 @@ To reduce the work in progress without applying hard links, a trick is to schedu
 
 ### Separate calendar for each resource
 
-One of the main sources of data for the scheduling engine is calendar information, which can be expensive to load from the data base. Because calendars are generated based on templates, it would be tempting to generate a calendar for each resource and then adjust the information in this calendar when the resource has downtime and other issues. However, doing this will severely limit the engines ability to cache the calendar data as it would need to request new data for each resource and can be a large source of performance problems. Instead, we recommend that you reuse the calendars as much as possible between the resources, and then control downtime changes by assigning a different calendar ID for a period.
+One of the main sources of data for the scheduling engine is calendar information, which can be expensive to load from the database. Because calendars are generated based on templates, it would be tempting to generate a calendar for each resource and then adjust the information in this calendar when the resource has downtime and other issues. However, doing this will severely limit the engines ability to cache the calendar data as it would need to request new data for each resource and can be a large source of performance problems. Instead, we recommend that you reuse the calendars as much as possible between the resources, and then control downtime changes by assigning a different calendar ID for a period.
 
 ### High number of working time slots per calendar day
 
