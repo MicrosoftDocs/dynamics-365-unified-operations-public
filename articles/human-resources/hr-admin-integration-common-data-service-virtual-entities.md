@@ -176,18 +176,17 @@ When setup completes, you can select the virtual entities you want to generate a
 
 ## Check entity generation status
 
-When initiated from the Common Data Service (CDS) integration page, virtual entities are generated in Common Data Service through an asynchronous background process. Updates on the process are displayed in the action center. Detail on the process, including any error logs that may occur, are available in the Process automations page.
+Virtual entities are generated in Common Data Service through an asynchronous background process. Updates on the process display in the action center. Details on the process, including error logs, appear in the **Process automations** page.
 
 1. In Human Resources, open the **Process automations** page.
 
 2. Select the **Background processes** tab.
 
-3. Select the **Virtual entity poll async operation background process** process.
+3. Select **Virtual entity poll async operation background process**.
 
 4. Select **View most recent results**.
 
-The slideout pane displays the most recent execution results for the process, allowing you view the log for the process execution, including any errors returned from Common Data Service.
-
+The slideout pane displays the most recent execution results for the process. You can view the log for the process, including any errors returned from Common Data Service.
 
 ## See also
 
