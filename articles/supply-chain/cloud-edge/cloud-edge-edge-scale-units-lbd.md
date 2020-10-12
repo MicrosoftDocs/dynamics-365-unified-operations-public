@@ -44,7 +44,7 @@ The following table provides an overview of the deployment steps.
 
 |Responsibility  |Step  |Details  |
 |---------|---------|---------|
-|Microsoft|An additional 60 day limited slot for an LBD environment will be provided based on customer situation.|Edge scale unit in preview target existing LBD customers.|
+|Microsoft| An additional 60-day, limited slot for an LBD environment will be provided based on your situation. | Edge scale units in preview target existing LBD customers.|
 |Customer|Set up the LBD environment with empty database. | More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
 |Customer|Deploy the LBD environment through LCS.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
 |Customer / Microsoft|Upload a package with the same application and platform build that was deployed on the hub to the LCS asset library of the on-premises project.|         |
@@ -53,7 +53,7 @@ The following table provides an overview of the deployment steps.
 |Customer|Service the LBD environment with the previously uploaded customization package.|This makes non-shippable models and your customizations available on the LBD environment.|
 |Customer|Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
 |Customer|Run the "update settings" action through LCS.|Run this action with the same settings that already exist on the environment. This action then redeploys what was already deployed on the environment, but it will run the previously setup pre-deployment script, which will inject the necessary attributes so they can be passed to DbSync execution.|
-|Customer|Compete the scale unit configuration and workload assignment using steps listed in [Assign your LBD edge scale unit to a hub](#assign-your-lbd-edge-scale-unit-to-a-hub) | |
+|Customer|Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#assign-your-lbd-edge-scale-unit-to-a-hub) | |
 
 ## Set up and deploy an LBD environment with empty database
 
@@ -115,7 +115,7 @@ Do the following:
 ## Assign your LBD edge scale unit to a hub
 
 > [!IMPORTANT]
-> If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described below. The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
+> If want to use edge scale units with your preview deployment, you must do all scale unit configurations in the user experience on the hub as described later in this topic. You can't use the Scale Unit Manager portal if you include an edge scale unit.
 
 ### Configure the hub environment for use with edge scale units
 
@@ -147,7 +147,7 @@ To assign your scale unit to a Supply Chain Management hub environment, run the 
 
 #### Warehouse management workloads
 
-Before configuring a warehouse management workload, please validate that on the hub in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) the following to features are enabled:
+Before configuring a warehouse management workload, make sure that the following two features are enabled on the hub in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Organization-wide work blocking*
 - *Automatic assigning of the guids on WHS user creation* (should be enabled by default)
