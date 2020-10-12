@@ -1413,6 +1413,8 @@
           href: master-planning/supply-chain-calendars-master-planning.md
         - name: Improve master planning performance
           href: master-planning/master-planning-performance.md
+        - name: Improve scheduling engine performance
+          href: master-planning/scheduling-engine-performance.md
         - name: Master plans and multisite functionality
           items:
           - name: Master planning and multisite functionality overview
@@ -1945,6 +1947,8 @@
             href: pim/tasks/maintain-bom-product-configuration-model.md
           - name: Maintain a route for a product model
             href: pim/tasks/maintain-route-product-model.md
+          - name: Attribute-based sales prices for constraint-based product configuration
+            href: pim/attribute-based-product-configurator.md
           - name: Approve a product configuration model
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
@@ -2041,6 +2045,8 @@
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md
+          - name: Provide mixed-reality Guides for workers in production
+            href: production-control/instruction-guides-in-production-overview.md
           - name: Reverse the production order status
             href: production-control/reverse-production-order-status.md
           - name: Visibility into material exceptions
@@ -2851,6 +2857,8 @@
             href: warehousing/pick-oldest-batch.md
           - name: Process guide framework
             href: warehousing/process-guide-framework.md
+          - name: Troubleshoot warehouse app connection issues
+            href: warehousing/troubleshoot-warehouse-app-connection.md
         - name: Upgrade and migration
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
