@@ -1945,6 +1945,8 @@
             href: pim/tasks/maintain-bom-product-configuration-model.md
           - name: Maintain a route for a product model
             href: pim/tasks/maintain-route-product-model.md
+          - name: Attribute-based sales prices for constraint-based product configuration
+            href: pim/attribute-based-product-configurator.md
           - name: Approve a product configuration model
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
