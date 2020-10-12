@@ -5,7 +5,7 @@ title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Cart module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -45,11 +44,11 @@ The cart module renders data based on the cart ID, which is a browser cookie ava
 
 The following image shows an example of a cart page on the Fabrikam site.
 
-![Example of a cart module](./media/cart2.PNG)
+![Example of a cart module on the Fabrikam site](./media/cart2.PNG)
 
 The following image shows an example of a cart page on the Fabrikam site. In this example, there is a handling fee for a line item.
 
-![Example of a cart module](./media/ecommerce-handling-fee.png)
+![Example of a cart module with a handling fee for a line item](./media/ecommerce-handling-fee.png)
 
 ## Cart module properties and slots
 
@@ -81,8 +80,8 @@ The cart module retrieves product information by using Commerce Scale Unit APIs.
 To add a cart module to a new page and set the required properties, follow these steps.
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
-1. In the **New page fragment** dialog box, select the **Cart** module.
-1. Under **Page fragment name**, enter the name **Cart fragment**, and then select **OK**.
+1. In the **New fragment** dialog box, select the **Cart** module.
+1. Under **Fragment name**, enter the name **Cart fragment**, and then select **OK**.
 1. Select the **Cart** slot.
 1. In the properties pane on the right, select the pencil symbol, enter heading text in the field, and then select the check mark symbol.
 1. In the **Cart** slot, select the ellipsis (**...**), and then select **Add Module**.
@@ -90,8 +89,8 @@ To add a cart module to a new page and set the required properties, follow these
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New Template** dialog box, under **Template name**, enter a name for the template.
-1. In the outline tree, select the **Body** slot, select the ellipsis (**...**), and then select **Add Page Fragment**.
-1. In the **Select page fragment** dialog box, select the **Cart fragment** fragment, and then select **OK**.
+1. In the outline tree, select the **Body** slot, select the ellipsis (**...**), and then select **Add fragment**.
+1. In the **Select fragment** dialog box, select the **Cart fragment** fragment, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Choose a template** dialog box, select the template that you created, enter a page name, and then select **OK**.

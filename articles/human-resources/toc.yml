@@ -5,6 +5,10 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: September 16, 2020
+      href: hr-whats-new-2020-09-16.md
+    - name: September 3, 2020
+      href: hr-whats-new-2020-09-03.md
     - name: August 20, 2020
       href: hr-whats-new-2020-08-20.md
     - name: August 6, 2020
@@ -23,12 +27,12 @@
       href: hr-whats-new-2020-05-14.md
     - name: May 1, 2020
       href: hr-whats-new-2020-05-01.md
-    - name: April 13, 2020
-      href: hr-whats-new-2020-04-13.md
-    - name: April 3, 2020
-      href: hr-whats-new-2020-04-03.md
     - name: What's new archives 2020
       items:
+      - name: April 13, 2020
+        href: hr-whats-new-2020-04-13.md
+      - name: April 3, 2020
+        href: hr-whats-new-2020-04-03.md
       - name: March 24, 2020
         href: hr-whats-new-2020-03-24.md
       - name: March 19, 2020
@@ -71,6 +75,8 @@
         href: hr-admin-integration-common-data-service.md
       - name: Common Data Service entities
         href: hr-developer-entities.md
+      - name: Configure Common Data Service virtual entities
+        href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
@@ -199,7 +205,7 @@
         href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
       - name: Create and work with custom fields
         href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-      - name: Embed PowerApps apps
+      - name: Embed canvas apps from Power Apps
         href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
       - name: Find information by using lookups
         href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
@@ -228,7 +234,7 @@
     - name: Troubleshoot Human Resources
       items:
       - name: Get support
-        href: hr-admin-troubleshooting-support.md
+        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
       - name: Optimize performance by scheduling batch jobs after hours
         href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks

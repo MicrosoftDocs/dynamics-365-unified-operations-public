@@ -5,7 +5,7 @@ title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find important configuration settings for developers and administrators.
 author: laneswenka
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,9 +56,7 @@ For a **Trial** or **Partner** project:
     ![LCS Onboard methodology](media/access-instances-5.jpeg)
     
 3. Select an application and platform version.
-4. Select an environment topology. You can choose to either use a cloud hosted environment or download a VHD. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
-
-    ![Select environment topology](media/access-instances-2.jpeg)
+4. Select an environment topology. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
     
 5. If you chose a cloud-hosted environment, select which Azure connector you want to use. Then select **Deploy**.
 

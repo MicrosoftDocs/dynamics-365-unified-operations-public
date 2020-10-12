@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.
 author: jasongre
 manager: AnnBe
-ms.date: 07/29/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Platform update 28
 # Saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 ## Introduction
 

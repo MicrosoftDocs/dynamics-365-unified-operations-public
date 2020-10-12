@@ -22,7 +22,7 @@ ms.search.scope:
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: brishoo
+ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: 
 

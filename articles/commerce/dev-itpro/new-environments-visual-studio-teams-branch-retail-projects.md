@@ -100,9 +100,7 @@ Branching is an important practice in software development. The [Branching and M
 >
 > Using branches provides better isolation and control of individual software assets and increases productivity, because teams or individuals can work in parallel. However, using branches also requires an increase in merge activities and therefore risk, because you must later reassemble branches into a whole.
 
-For more information about the delivery of implementation projects, watch [Continuous Delivery Using Dynamics 365 for Operations (video)](https://mbspartner.microsoft.com/D365/Videos/101393).
-
-There is no single best strategy for creating branches. The strategy depends on the project and the size of the implementation. The approach that Joris De Gruyter mentions in the preceding video is a successful method.
+There is no single best strategy for creating branches. The strategy depends on the project and the size of the implementation. 
 
 The following illustration shows three code branches: Dev, Main, and ProdRel1. The numbers indicate the order of setup.
 

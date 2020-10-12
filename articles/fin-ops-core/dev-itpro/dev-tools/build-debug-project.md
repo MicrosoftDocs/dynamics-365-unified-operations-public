@@ -92,7 +92,7 @@ The rental company has had unfortunate events when customers rent cars using cre
 18. Close Internet Explorer to close the **Fleet Management** application. Visual Studio will exit the debugging mode. An alternative is to choose **Stop Debugging** from the **Debug** menu. This will leave Internet Explorer open, allowing the next debugging session to start faster.
 
 ## Add the validation code
-In the **FinalizeRentalCheckout** method, you saw that the developer added code to call the delegate that’s used to determine the validity of the rental. To solve the problem of expired credit cards, you’ll add an event handler, which you’ll use to verify that that the credit card isn’t expired. To simplify the lab, the handler will be added in the same file that contains the delegate. Use the following code as inspiration. Rather than copying and pasting the code, type it in manually to see the IntelliSense features in action. These features add to the high level of productivity that Visual Studio users expect.
+In the **FinalizeRentalCheckout** method, you saw that the developer added code to call the delegate that’s used to determine the validity of the rental. To solve the problem of expired credit cards, you’ll add an event handler, which you’ll use to verify that the credit card isn’t expired. To simplify the lab, the handler will be added in the same file that contains the delegate. Use the following code as inspiration. Rather than copying and pasting the code, type it in manually to see the IntelliSense features in action. These features add to the high level of productivity that Visual Studio users expect.
 
 ```xpp
 [SubscribesTo(classstr(FMRentalCheckoutProcessor), 

@@ -160,9 +160,16 @@
         "supply-chain/**.md": "Supply Chain Management | Dynamics 365",
         "talent/**.md": "Talent | Dynamics 365"
       },
-
       "breadcrumb_path": {
-        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"}
+        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"},
+      "ms.search.scope" : {
+        "/fin-ops-core/dev-itpro/data-entities/dual-write/**/**.md": ["Core","Operations","CrossApp","ShowInHelp"],
+        "/fin-ops-core/dev-itpro/dev-ref/**/**.md": ["Operations","Dev"],
+        "/fin-ops-core/dev-itpro/dev-ref/system-classes/**/**.md": ["Operations","Dev"],
+        "/fin-ops-core/dev-itpro/dev-ref/xpp-data/**/**.md": ["Operations","Dev"],
+        "/fin-ops-core/dev-itpro/dev-tools/**/**.md": ["Operations","Dev"],
+        "/fin-ops-core/dev-itpro/extensibility/**/**.md": ["Operations","Dev"]
+        }
     },
     "template": [],
     "dest": "d365F-O",

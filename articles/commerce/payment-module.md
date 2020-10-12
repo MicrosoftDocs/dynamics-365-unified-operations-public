@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Payment module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 

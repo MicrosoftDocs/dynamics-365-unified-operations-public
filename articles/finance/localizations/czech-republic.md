@@ -5,7 +5,7 @@ title: Czech Republic overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom
 ms.search.region: Czech Republic
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -44,7 +44,7 @@ The following topics cover information that pertains to fixed assets in the Czec
 -   [Post the pre-acquisition of a fixed asset](emea-pre-acquisition-acquisition-fixed-asset.md)
 
 ## VAT reporting
-For information about setting up and generating the VAT statement for legal entities located in the Czech Republic, see [VAT statement for the Czech Republic](emea-cze-vat-statement-details.md).
+For information about setting up and generating the VAT statement for legal entities located in the Czech Republic, see [VAT statement for the Czech Republic](emea-cze-vat-statement-details.md). For information about the VAT declaration, see [VAT declaration (Czech Republic)](emea-cze-vat-declaration-tax-declaration-model.md)
 
 ### Intra-community VAT
 This section provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic. 

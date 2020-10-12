@@ -24,7 +24,7 @@ ms.custom: 264374
 ms.assetid: cbf94106-2c1b-45dd-8734-18a2a56a4682
 ms.search.region: Latvia
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

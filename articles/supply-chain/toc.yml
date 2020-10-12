@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.15 (December 2020)
+            href: get-started/whats-new-scm-10-0-15.md
+          - name: Supply Chain Management 10.0.14 (November 2020)
+            href: get-started/whats-new-scm-10-0-14.md
           - name: Supply Chain Management 10.0.13 (October 2020)
             href: get-started/whats-new-scm-10-0-13.md
-          - name: Supply Chain Management 10.0.12 (August 2020)
-            href: get-started/whats-new-scm-10-0-12.md
-          - name: Supply Chain Management 10.0.11 (July 2020)
-            href: get-started/whats-new-scm-10-0-11.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -158,7 +158,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Embed Microsoft Power Apps 
+        - name: Embed canvas apps from Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -194,6 +194,8 @@
           href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Move LCS implementation projects to different Azure AD tenants
           href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json 
+        - name: Move LCS implementation projects from on-premises to cloud
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
     - name: Globalization
@@ -202,6 +204,10 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
       - name: Regulatory updates
         href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+      - name: India
+        items: 
+        - name: Stock transfer orders
+          href: ../finance/localizations/apac-ind-stock-transfer.md    
       - name: Russia
         items: 
         - name: Russia overview
@@ -333,7 +339,7 @@
           href: asset-management/work-orders/automatic-update-of-asset-counters.md
         - name: Maintenance checklists
           href: asset-management/work-orders/maintenance-checklists.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime for work orders
           href: asset-management/work-orders/maintenance-downtime.md
         - name: Add fault to work order
           href: asset-management/work-orders/add-fault-to-work-order.md
@@ -367,7 +373,7 @@
           href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
         - name: Create work orders
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
       - name: Capacity planning
         items:
@@ -1353,6 +1359,8 @@
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
+        - name: Safety margins
+          href: master-planning/planning-optimization/safety-margins.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
@@ -1653,6 +1661,8 @@
         href: procurement/procurement-sourcing-overview.md
       - name: Procurement and sourcing workflow
         href: procurement/procurement-sourcing-workflows.md
+      - name: Troubleshoot procurement and sourcing workflows
+        href: procurement/troubleshoot-procurementworkflows.md
       - name: Procurement catalogs
         items:
         - name: Procurement catalogs overview
@@ -1693,6 +1703,8 @@
           href: procurement/purchase-order-mobile-workspace.md
         - name: Record the receipt of goods on the purchase order
           href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+        - name: Troubleshoot purchase orders
+          href: procurement/troubleshoot-purchaseorders.md
       - name: Purchase order creation
         items:
         - name: Create purchase orders manually
@@ -1723,6 +1735,8 @@
           href: procurement/tasks/create-purchase-agreement.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
+        - name: Troubleshoot prices, discounts, agreements, and rebates
+          href: procurement/troubleshooting-pricediscountagreements.md
       - name: Purchasing policies
         items:
         - name: Purchasing policies overview
@@ -1737,6 +1751,8 @@
           href: procurement/product-receipt-against-purchase-orders.md
         - name: Overview of vendor invoices
           href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Troubleshoot product receipts and invoicing
+          href: procurement/troubleshooting-productreceiptinvoicing.md
       - name: Vendor management and collaboration
         items:
         - name: Set up and maintain vendor collaboration
@@ -1761,9 +1777,11 @@
           href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
         - name: Import vendor catalogs
           href: procurement/vendor-catalogs-import.md
-        - name: Set up an external catalog for PunchOut eProcurement
+        - name: Set up an external catalog for PunchOut e-procurement
           href: procurement/set-up-external-catalog-for-punchout.md
-        - name: Use external catalogs for PunchOut eProcurement
+        - name: Purchasing cXML enhancements
+          href: procurement/purchasing-cxml-enhancements.md
+        - name: Use external catalogs for PunchOut e-procurement
           href: procurement/use-external-catalogs-for-punchout.md
         - name: Vendor collaboration mobile workspace
           href: procurement/vendor-collaboration-mobile-workspace.md
@@ -1927,6 +1945,8 @@
             href: pim/tasks/maintain-bom-product-configuration-model.md
           - name: Maintain a route for a product model
             href: pim/tasks/maintain-route-product-model.md
+          - name: Attribute-based sales prices for constraint-based product configuration
+            href: pim/attribute-based-product-configurator.md
           - name: Approve a product configuration model
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
@@ -2259,6 +2279,8 @@
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
           href: sales-marketing/tasks/confirm-sales-orders.md
+        - name: Troubleshoot sales orders
+          href: sales-marketing/troubleshooting-sales.md
       - name: Sales agreements
         items:
         - name: Sales agreements overview
@@ -2281,6 +2303,8 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
+        - name: Troubleshoot sales quotations
+          href: sales-marketing/troubleshooting-salesquotation.md
       - name: Returns
         items:
         - name: Sales returns
@@ -2623,6 +2647,8 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
+          - name: Cluster position full
+            href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization
@@ -2803,18 +2829,20 @@
           items:
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
+          - name: Scan bar codes using a camera in the warehouse app
+            href: warehousing/scan-bar-codes-using-a-camera.md
           - name: Configure field names in warehouse app
             href: warehousing/configure-app-field-names-priorities-warehouse.md
           - name: Set up mobile devices for warehouse work
             href: warehousing/configure-mobile-devices-warehouse.md
-          - name: Scan bar codes using a camera in the warehouse app
-            href: warehousing/scan-bar-codes-using-a-camera.md
           - name: License plate receiving with the warehouse app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
             href: warehousing/tasks/set-up-mobile-device-menu.md
           - name: Set up a mobile device menu item to register received items
             href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+          - name: Set up a mobile device menu item to provide a pick line overview
+            href: warehousing/pick-line-overview.md
           - name: Create a mobile device menu item for license plate consolidation
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
@@ -2825,6 +2853,8 @@
             href: warehousing/pick-oldest-batch.md
           - name: Process guide framework
             href: warehousing/process-guide-framework.md
+          - name: Troubleshoot warehouse app connection issues
+            href: warehousing/troubleshoot-warehouse-app-connection.md
         - name: Upgrade and migration
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations

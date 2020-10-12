@@ -58,7 +58,7 @@ The following table describes the three primary printing scenarios.
 Because the solution varies, depending on the scenario, applications provide built-in services and tooling to help users accomplish their goals:
 
 - **Scenario 1** is supported by the browser's rendering of the HTML5 client.
-- **Scenario 2** uses client applications and Microsoft Office 365 services.
+- **Scenario 2** uses client applications and Microsoft 365 services.
 - **Scenario 3** requires support from client applications and from services that are hosted in Microsoft Azure.
 
 In addition to the platform that is deployed to the Azure subscription, Finance and Operations applications provide customers with an integrated, first-party Azure application that helps them more easily use domain-hosted devices to print documents.

@@ -6,7 +6,7 @@ title: Call Retail Server APIs
 description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Retail Server from a data action or directly from module code.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -56,7 +56,7 @@ To install the proxy in your software development kit (SDK) development environm
 
 1. Run **yarn install**.
 
-You should now have access to the correct Retail Server proxy for your project. You might see that a reference is already included as part of the Store Starter Kit.
+You should now have access to the correct Retail Server proxy for your project. You might see that a reference is already included as part of the module library.
 
 ## Retail Server proxy data action managers
 
