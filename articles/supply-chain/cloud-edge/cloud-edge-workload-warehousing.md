@@ -45,13 +45,13 @@ In this topic, warehouse management executions within a warehouse defined as an 
 
 ## Prerequisites
 
-You must have a supply chain management hub and a scale unit deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Cloud and Edge scale units for manufacturing and warehouse management workloads](cloud-edge-landing-page.md).
+You must have a Supply Chain Management hub and a scale unit deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Cloud and Edge scale units for manufacturing and warehouse management workloads](cloud-edge-landing-page.md).
 
 ## How the WES edge scale unit functions
 
 For the processes in the warehouse management workload, the data is synchronized between the hub and the scale units.
 
-Only the data owned by a scale unit can be maintained by that scale unit. The data ownership concept with scale units prevent multi-master conflicts. Therefore it is important to understand which processes are owned by the hub and which by scale units.
+Only the data owned by a scale unit can be maintained by that scale unit. The data ownership concept with scale units prevent multi-master conflicts. Therefore, it is important to understand which processes are owned by the hub and which by scale units.
 
 The following data are owned by the scale units:
 
@@ -64,7 +64,7 @@ The following data are owned by the scale units:
 
 - **Warehouse order receipt data** - Only used for purchase orders manually released to warehouse.
 
-- **License plate data** -  License plates can be created on the hub and the Scale unit. Dedicated conflict handling has been provided. Please note, this data isn't warehouse specific.
+- **License plate data** -  License plates can be created on the hub and the scale unit. Dedicated conflict handling has been provided. Please note, this data isn't warehouse specific.
 
 ## Outbound process flow
 
@@ -74,9 +74,9 @@ The hub owns the following data:
 - Order allocation and outbound load processing
 - The release to warehouse, shipment creation, and wave creation processes
 
-The scale units own the actual wave processing (such as work allocation, replenishment work, and demand work creation) after the release of the wave. This lets warehouse workers process outbound work using the warehouse app which is connected in to the scale unit.
+The scale units own the actual wave processing (such as work allocation, replenishment work, and demand work creation) after the release of the wave. This lets warehouse workers process outbound work using a warehouse app connected to the scale unit.
 
-![Wave processing flow](./media/wes_wave_processing_flow.png)
+![Wave processing flow](./media/wes_wave_processing_flow.png "Wave processing flow")
 
 ## Inbound process flow
 
@@ -94,11 +94,11 @@ The worker can run the receiving process using the warehouse app connected to th
 
 If you are not using the *release to warehouse* process&mdash;and therefore not using *warehouse orders*&mdash;the hub can process warehouse receiving and work processing independently from scale units.
 
-![Inbound process flow](./media/wes_Inbound_flow.png)
+![Inbound process flow](./media/wes_Inbound_flow.png "Inbound process flow")
 
 ## Supported processes and roles
 
-Not all warehouse management processes are supported in a WES workload on a scale unit. Therefore we recommend assigning roles that match the functionality available to each user.
+Not all warehouse management processes are supported in a WES workload on a scale unit. Therefore, we recommend assigning roles that match the functionality available to each user.
 
 To ease this process, a sample role called *Warehouse manager on workload* is included with demo data in **System administration \> Security \> Security configuration**. This role is intended to enable warehouse managers to access the WES on the scale unit. The role grants access to the forms that are relevant within the context of a workload hosted on a scale unit.
 
@@ -146,6 +146,7 @@ The following warehouse management functionality is currently not supported on s
 - Processing of negative on-hand inventory
 
 ### Outbound (only support for sales orders and demand replenishment)
+
 The following table lists which features are supported, and where, when using the WMS workloads in cloud and edge scale units.
 
 >[!Warning]
