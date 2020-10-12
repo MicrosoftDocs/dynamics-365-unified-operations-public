@@ -470,83 +470,563 @@ The following table provides an example of the structure of the yearly VAT
 declaration. This example is based on the 2020 declaration. Sections that aren't
 included in the setup example are *italicized*.
 
-| Section (EN)                                                                                                                                              | Fields                                 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| *PART VA INFORMATION AND DATA RELATING TO THE ACTIVITY*                                                                                                   |                                        |
-| *Section 1 - General analytical data*                                                                                                                     | *VA001001-VA005004*                    |
-| *Section 2 - Data summary relating to all activities carried out*                                                                                         | *VA010001-VA015001*                    |
-| *PART VB DATA RELATING TO IDENTIFICATION DETAILS OF FINANCIAL RELATIONS*                                                                                  |                                        |
-|                                                                                                                                                           | *VB001001-VB007004*                    |
-| PART VC EXPORTERS AND ASSOCIATED OPERATORS                                                                                                                |                                        |
-| Purchases and imports without the application of value added tax relating to all activities carried out.                                                  | VC001001-VC014003                      |
-| *PART VD TRANSFER OF VAT CREDIT BY ASSET MANAGEMENT COMPANIES*                                                                                            |                                        |
-| *Section 1 - Transferring company - List of transferee companies or body*                                                                                 | *VD001001-VD021002*                    |
-| *Section 2 - Company or transferring body - List of ceding companies*                                                                                     | *VD031001-VD056001*                    |
-| PART VE CALCULATION OF BUSINESS TURNOVER AND THE TAX RELATIVE TO TAXABLE OPERATIONS (Comment: Sales and output VAT on sales)                              |                                        |
-| *Section 1 - Conferring of agricultural products and transfers by exempt agriculturalists (in the case of the limit being exceeded by more than a third)* | *VE001001-VE012002*                    |
-| Section 2 - Taxable agricultural operations and taxable commercial or professional operations                                                             | VE020001-VE023002                      |
-| Section 3 - Total taxable amount and tax                                                                                                                  | VE024001-VE026002                      |
-| Section 4 - Other operations                                                                                                                              | VE030001-VE040001                      |
-| Section 5 - Business turnover                                                                                                                             | VE050001                               |
-| PART VF LIABILITY OPERATIONS AND ADMISSIBLE DEDUCTIBLE VAT (Comment: Purchases and input VAT on purchases)                                                |                                        |
-| Section 1 - Total amount of purchases carried out in the national territory of intracommunity purchases and imports                                       | VF001001-VF022001                      |
-| Section 2 - Total purchases and imports, total tax, intra-community purchases, imports and purchases from San Marino                                      | VF023001-VF027004                      |
-| Section 3 - Calculation of admissible deductible VAT                                                                                                      | VF030001-VF030009                      |
-| Section 3-A - Exempt operations                                                                                                                           | *VF031001-VF033001*, VF034001-VF037001 |
-| *Section 3-B - Agricultural business (art.34)*                                                                                                            | *VF038001-VF055001*                    |
-| *Section 3-C - Special cases*                                                                                                                             | *VF060001-VF062002*                    |
-| Section 4 - Admissible deductible VAT                                                                                                                     | VF070001-VF071001                      |
-| PART VJ CALCULATION OF TAX ON CERTAIN TYPES OF OPERATIONS (Comment: Output VAT on purchase reverse charge)                                                |                                        |
-|                                                                                                                                                           | VJ001001-VJ019002                      |
-| *PART VI DECLARATIONS OF INTENT RECEIVED*                                                                                                                 |                                        |
-|                                                                                                                                                           | *VI001001-VI006002*                    |
-| *PART VH CHANGES OF PERIODIC COMMUNICATIONS*                                                                                                              |                                        |
-|                                                                                                                                                           | *VH001001-VH017001*                    |
-| *PART VM PAYMENT FOR EU AUTOMOBILE REGISTRATIONS*                                                                                                         |                                        |
-|                                                                                                                                                           | *VM001001-VM012001*                    |
-| *PART VK CONTROLLING AND CONTROLLED COMPANY*                                                                                                              |                                        |
-| *Section 1 – General data*                                                                                                                                | *VK001001-VK001004*                    |
-| *Section 2 - Calculation of tax surplus*                                                                                                                  | *VK020001-VK028001*                    |
-| *Section 3 - Termination of control during the year Data relating to the period of control*                                                               | *VK030001-VK036001*                    |
-| *PART VN SUPPLEMENTAL DECLARATIONS IN FAVOUR*                                                                                                             |                                        |
-|                                                                                                                                                           | *VN001001-VN004005*                    |
-| *PART VQ OMITTED PERIODICAL PAYMENTS*                                                                                                                     |                                        |
-|                                                                                                                                                           | *VQ001001-VQ005010*                    |
-| PART VL PAYMENT OF ANNUAL TAX                                                                                                                             |                                        |
-| Section 1 - Calculation of VAT due or input VAT for the tax period                                                                                        | VL001001-VL004001                      |
-| Section 2 - Credit from previous year                                                                                                                     | VL008001-VL012002                      |
-| Section 3 - Calculation of output or input VAT relating to all the activities carried out                                                                 | VL020001-VL040001                      |
-| *PART VP TAX PAYMENT*                                                                                                                                     |                                        |
-|                                                                                                                                                           | *VP001001-VP014002*                    |
-| *PART VT SEPARATE INDICATION OF OPERATIONS CARRIED OUT REGARDING END CONSUMERS AND HOLDERS OF VAT NUMBERS*                                                |                                        |
-|                                                                                                                                                           | *VT001001-VT022002*                    |
-| *PART VX CALCULATION OF VAT TO BE PAID OR OF TAX CREDIT*                                                                                                  |                                        |
-| *For persons presenting the return with several forms only fill in form no. 01*                                                                           | *VX001001-VX006002*                    |
-| *RESERVED FOR THE COMPANIES PARTICIPATING IN THE VAT GROUP PAYMENT V*                                                                                     | *VX007001-VX008001*                    |
-| *PART VO COMMUNICATION OF OPTIONS AND REVOCATIONS*                                                                                                        |                                        |
-| *Section 1 - Options, waivers, and revocations for the purpose of VAT*                                                                                    | *VO001001-VO015002*                    |
-| *Section 2 - Options, and revocations for the purpose of VAT*                                                                                             | *VO020001-VO026001*                    |
-| *Section 3 - Options and revocations for both VAT and income tax purposes*                                                                                | *VO030001-VO035001*                    |
-| *Section 4 - Options and revocation regarding tax on entertainment*                                                                                       | *VO040001-VO040002*                    |
-| *Section 5 - Options and revocation regarding IRAP*                                                                                                       | *VO050001-VO050002*                    |
-| *PART VG*                                                                                                                                                 |                                        |
-| *Section 1 - Companies participating in VAT compensation*                                                                                                 | *VG001001-VG004007*                    |
-| *Section 2 - Companies participating in the control chain but not in VAT compensation*                                                                    | *VG005001-VG007006*                    |
-| *Section 3 - Revocation*                                                                                                                                  | *VG008001*                             |
-| *PART VS*                                                                                                                                                 |                                        |
-| *Section 1 - List of companies in the group*                                                                                                              | *VS001001-VS012012*                    |
-| *Section 2 - Summary data*                                                                                                                                | *VS020001-VS022002*                    |
-| *Section 3 - Guarantees of the controlling company*                                                                                                       | *VS030001*                             |
-| *PART VV PERIODICAL TAX PAYMENTS OF GROUP*                                                                                                                |                                        |
-|                                                                                                                                                           | *VV001001-VV017003*                    |
-| *PART VW PAYMENT OF ANNUAL TAX OF GROUP*                                                                                                                  |                                        |
-| *Section 1 - Calculation of VAT due or input VAT for the tax period*                                                                                      | *VW001001-VW004001*                    |
-| *Section 2 - Calculation of output or input VAT*                                                                                                          | *VW020001-VW040001*                    |
-| *PART VY CALCULATION OF VAT PAYABLE OR GROUP TAX CREDIT*                                                                                                  |                                        |
-|                                                                                                                                                           | *VY001001-VY006002*                    |
-| *PART VZ DEDUCTIBLE GROUP SURPLUSES (PREVIOUS YEARS)*                                                                                                     |                                        |
-|                                                                                                                                                           | *VZ001001-VZ002001*                    |
-
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Section (EN)</strong></p>
+</td>
+<td>
+<p><strong>Fields</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VA</em></p>
+<p><em>INFORMATION AND DATA RELATING TO THE ACTIVITY</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 1 - General analytical data</em></p>
+</td>
+<td>
+<p><em>VA001001-VA005004</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 2 - Data summary relating to all activities carried out</em></p>
+</td>
+<td>
+<p><em>VA010001-VA015001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VB</em></p>
+<p><em>DATA RELATING TO IDENTIFICATION DETAILS OF FINANCIAL RELATIONS</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VB001001-VB007004</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>PART VC</p>
+<p>EXPORTERS AND ASSOCIATED OPERATORS</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Purchases and imports without the application of value added tax relating to all activities carried out.</p>
+</td>
+<td>
+<p>VC001001-VC014003</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VD</em></p>
+<p><em>TRANSFER OF VAT CREDIT BY ASSET MANAGEMENT COMPANIES</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 1 - Transferring company - List of transferee companies or body</em></p>
+</td>
+<td>
+<p><em>VD001001-VD021002</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 2 - Company or transferring body - List of ceding companies</em></p>
+</td>
+<td>
+<p><em>VD031001-VD056001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>PART VE</p>
+<p>CALCULATION OF BUSINESS TURNOVER AND THE TAX RELATIVE TO TAXABLE OPERATIONS</p>
+<p>(Comment: Sales and output VAT on sales)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 1 - Conferring of agricultural products and transfers by exempt agriculturalists (in the case of the limit being exceeded by more than a third)</em></p>
+</td>
+<td>
+<p><em>VE001001-VE012002</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 2 - Taxable agricultural operations and taxable commercial or professional operations</p>
+</td>
+<td>
+<p>VE020001-VE023002</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 3 - Total taxable amount and tax</p>
+</td>
+<td>
+<p>VE024001-VE026002</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 4 - Other operations</p>
+</td>
+<td>
+<p>VE030001-VE040001</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 5 - Business turnover</p>
+</td>
+<td>
+<p>VE050001</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>PART VF</p>
+<p>LIABILITY OPERATIONS AND ADMISSIBLE DEDUCTIBLE VAT</p>
+<p>(Comment: Purchases and input VAT on purchases)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 1 - Total amount of purchases carried out in the national territory of intracommunity purchases and imports</p>
+</td>
+<td>
+<p>VF001001-VF022001</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 2 - Total purchases and imports, total tax, intra-community purchases, imports and purchases from San Marino</p>
+</td>
+<td>
+<p>VF023001-VF027004</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 3 - Calculation of admissible deductible VAT</p>
+</td>
+<td>
+<p>VF030001-VF030009</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 3-A - Exempt operations</p>
+</td>
+<td>
+<p><em>VF031001-VF033001</em>, VF034001-VF037001</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 3-B - Agricultural business (art.34)</em></p>
+</td>
+<td>
+<p><em>VF038001-VF055001</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 3-C - Special cases</em></p>
+</td>
+<td>
+<p><em>VF060001-VF062002</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 4 - Admissible deductible VAT</p>
+</td>
+<td>
+<p>VF070001-VF071001</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>PART VJ</p>
+<p>CALCULATION OF TAX ON CERTAIN TYPES OF OPERATIONS</p>
+<p>(Comment: Output VAT on purchase reverse charge)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>VJ001001-VJ019002</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VI</em></p>
+<p><em>DECLARATIONS OF INTENT RECEIVED</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VI001001-VI006002</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VH</em></p>
+<p><em>CHANGES OF PERIODIC COMMUNICATIONS</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VH001001-VH017001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VM</em></p>
+<p><em>PAYMENT FOR EU AUTOMOBILE REGISTRATIONS</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VM001001-VM012001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VK</em></p>
+<p><em>CONTROLLING AND CONTROLLED COMPANY</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 1 &ndash; General data</em></p>
+</td>
+<td>
+<p><em>VK001001-VK001004</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 2 - Calculation of tax surplus</em></p>
+</td>
+<td>
+<p><em>VK020001-VK028001</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 3 - Termination of control during the year Data relating to the period of control</em></p>
+</td>
+<td>
+<p><em>VK030001-VK036001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VN</em></p>
+<p><em>SUPPLEMENTAL DECLARATIONS IN FAVOUR</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VN001001-VN004005</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VQ</em></p>
+<p><em>OMITTED PERIODICAL PAYMENTS</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VQ001001-VQ005010</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>PART VL</p>
+<p>PAYMENT OF ANNUAL TAX</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 1 - Calculation of VAT due or input VAT for the tax period</p>
+</td>
+<td>
+<p>VL001001-VL004001</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 2 - Credit from previous year</p>
+</td>
+<td>
+<p>VL008001-VL012002</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Section 3 - Calculation of output or input VAT relating to all the activities carried out</p>
+</td>
+<td>
+<p>VL020001-VL040001</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VP</em></p>
+<p><em>TAX PAYMENT</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VP001001-VP014002</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VT</em></p>
+<p><em>SEPARATE INDICATION OF OPERATIONS CARRIED OUT REGARDING END CONSUMERS AND HOLDERS OF VAT NUMBERS</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VT001001-VT022002</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VX</em></p>
+<p><em>CALCULATION OF VAT TO BE PAID OR OF TAX CREDIT</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>For persons presenting the return with several forms only fill in form no. 01</em></p>
+</td>
+<td>
+<p><em>VX001001-VX006002</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>RESERVED FOR THE COMPANIES PARTICIPATING IN THE VAT GROUP PAYMENT V</em></p>
+</td>
+<td>
+<p><em>VX007001-VX008001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VO</em></p>
+<p><em>COMMUNICATION OF OPTIONS AND REVOCATIONS</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 1 - Options, waivers, and revocations for the purpose of VAT</em></p>
+</td>
+<td>
+<p><em>VO001001-VO015002</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 2 - Options, and revocations for the purpose of VAT</em></p>
+</td>
+<td>
+<p><em>VO020001-VO026001</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 3 - Options and revocations for both VAT and income tax purposes</em></p>
+</td>
+<td>
+<p><em>VO030001-VO035001</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 4 - Options and revocation regarding tax on entertainment</em></p>
+</td>
+<td>
+<p><em>VO040001-VO040002</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 5 - Options and revocation regarding IRAP</em></p>
+</td>
+<td>
+<p><em>VO050001-VO050002</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VG</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 1 - Companies participating in VAT compensation</em></p>
+</td>
+<td>
+<p><em>VG001001-VG004007</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 2 - Companies participating in the control chain but not in VAT compensation</em></p>
+</td>
+<td>
+<p><em>VG005001-VG007006</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 3 - Revocation</em></p>
+</td>
+<td>
+<p><em>VG008001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VS</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 1 - List of companies in the group</em></p>
+</td>
+<td>
+<p><em>VS001001-VS012012</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 2 - Summary data</em></p>
+</td>
+<td>
+<p><em>VS020001-VS022002</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 3 - Guarantees of the controlling company</em></p>
+</td>
+<td>
+<p><em>VS030001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VV</em></p>
+<p><em>PERIODICAL TAX PAYMENTS OF GROUP</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VV001001-VV017003</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VW</em></p>
+<p><em>PAYMENT OF ANNUAL TAX OF GROUP</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 1 - Calculation of VAT due or input VAT for the tax period</em></p>
+</td>
+<td>
+<p><em>VW001001-VW004001</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>Section 2 - Calculation of output or input VAT</em></p>
+</td>
+<td>
+<p><em>VW020001-VW040001</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VY</em></p>
+<p><em>CALCULATION OF VAT PAYABLE OR GROUP TAX CREDIT</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VY001001-VY006002</em></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><em>PART VZ</em></p>
+<p><em>DEDUCTIBLE GROUP SURPLUSES (PREVIOUS YEARS)</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>&nbsp;</em></p>
+</td>
+<td>
+<p><em>VZ001001-VZ002001</em></p>
+</td>
+</tr>
+</tbody>
+</table>
 ### Example
 
 Here is an example for the **ITCO** legal entity.
