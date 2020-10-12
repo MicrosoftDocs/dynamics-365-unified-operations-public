@@ -44,11 +44,11 @@ The following table provides an overview of the deployment steps.
 
 |Responsibility  |Step  |Details  |
 |---------|---------|---------|
-|Microsoft|An additional 60 day limited slot for an LBD environment will be provided based on customer situation.|Edge scale unit in preview target existing LBD customers.|
+|Microsoft|An additional 60 day limited LBD sandbox slot will be provided based on customer situation.|Edge scale unit in preview target existing LBD customers.|
 |Customer|Set up the LBD environment with empty database. | More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
-|Customer|Deploy the LBD environment through LCS.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
-|Customer / Microsoft|Upload a package with the same application and platform build that was deployed on the hub to the LCS asset library of the on-premises project.|         |
-|Customer|Upload a customization package that was deployed on the hub to the LCS asset library of the on-premises project.|         |
+|Customer|Deploy the LBD environment through LCS.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) Please note this must be the PEAP build 10.0.15.|
+|Customer / Microsoft|Upload a package with the same application and platform build that was deployed on the hub to the LCS asset library of the on-premises project.||
+|Customer|Upload a customization package that was deployed on the hub to the LCS asset library of the on-premises project.|If you want to deploy customizations then deploy them both into the hub and the edge scale unit.|
 |Customer|Service the LBD environment with the previously uploaded application and platform package.|This ensures that the hub and spoke have the same build deployed.|
 |Customer|Service the LBD environment with the previously uploaded customization package.|This makes non-shippable models and your customizations available on the LBD environment.|
 |Customer|Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
@@ -85,7 +85,7 @@ Do the following:
 
 Do the following:
 
-1. Download the infrastructure scripts. (This is already part of [setting up an LBD environment](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).)
+1. Download the latest release of the infrastructure scripts. (This is already part of [setting up an LBD environment](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).)
 
 1. Set up the pre-deployment script.
 
@@ -115,7 +115,7 @@ Do the following:
 ## Assign your LBD edge scale unit to a hub
 
 > [!IMPORTANT]
-> If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described below. The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
+> **In the public preview only:** If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described below. The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
 
 ### Configure the hub environment for use with edge scale units
 
