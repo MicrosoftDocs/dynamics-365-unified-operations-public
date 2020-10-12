@@ -230,92 +230,219 @@ and **AN**, the following formats are available for selection.
 
 5.  On the **Header** tab, review the following information.
 
-| Field                                                                                                                             | Description                                                                                                                                                        |
-|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Tax communication ID**, **ATECOFIN Code**, and **Years**                                                                        | These fields are set as described in the previous table.                                                                                                           |
-| **Company information** section                                                                                                   | Review the information about the company.                                                                                                                          |
-| **Company name**                                                                                                                  | The name of the company that the **Yearly tax communication** report is created for.                                                                               |
-| **Fiscal code**                                                                                                                   | The fiscal code of the company.                                                                                                                                    |
-| **Company tax registration number**                                                                                               | The tax registration number of the company.                                                                                                                        |
-| **Declarer** section                                                                                                              | Enter information about declarer.                                                                                                                                  |
-| **Type of declarer**                                                                                                              | Select the type of declarer:                                                                                                                                       |
-| **CAF fiscal code**                                                                                                               | If you selected **Filing through fiscal assistance center (CAF)** in the **Type of declarer** field, enter the fiscal code of the fiscal assistance center.        |
-| **CAF obligation**                                                                                                                | If you selected **Filing through fiscal assistance center (CAF)** in the **Type of declarer** field, select one of the following values:                           |
-| **CAF inscription number**                                                                                                        | If you selected **Filing through fiscal assistance center (CAF)** in the **Type of declarer** field, enter the inscription number of the fiscal assistance center. |
-| **CAF transmission date**                                                                                                         | If you selected **Filing through fiscal assistance center (CAF)** in the **Type of declarer** field, enter transmission date.                                      |
-| **Writer** section                                                                                                                | Specify information about the declarer, if the declarer differs from the taxpayer.                                                                                 |
-| **Writer**                                                                                                                        | Select the employee's name.                                                                                                                                        |
-| **Writer fiscal code**                                                                                                            | Enter the fiscal code of the declarer.                                                                                                                             |
-| **Writer role**                                                                                                                   | Select the declarer's role:                                                                                                                                        |
-| **Appointment date**                                                                                                              | Enter the date of the declarer's nomination.                                                                                                                       |
-| **Fiscal code**                                                                                                                   | Enter the fiscal code of the declaring company.                                                                                                                    |
-| **Birth city or foreign country**, **Birth county**, **Birth date**, **Gender**, **First name**, **Last name**, and **Telephone** | Enter additional information about declarer.                                                                                                                       |
-| **Dates** section                                                                                                                 | Specify information about procedure start and end dates.                                                                                                           |
-| **Procedure start date**                                                                                                          | Enter the start date of the procedure.                                                                                                                             |
-| **Procedure end date**                                                                                                            | Enter the end date of the procedure.                                                                                                                               |
-| **Correction**                                                                                                                    | Select the type of correction:                                                                                                                                     |
-
--   Filing for same legal entity
-
--   Filing through fiscal assistance center (CAF)
-
--   Declaration prepared by legal entity
-
--   Declaration prepared by declarer
-
--   **Legal representative** – The declarer is a managing partner.
-
--   **Administrator of under aged** – The declarer is an administrator for
-    minors or for people who have disabilities.
-
--   **Controller of sequestered goods** – The declarer is an administrator for
-    seized goods.
-
--   **Fiscal representative** – The declarer is a tax representative for
-    non-residents.
-
--   **General legatee** – The declarer is an heir to the company.
-
--   **Liquidator** – The declarer is an administrator for voluntary liquidation.
-
--   **Extraordinary operator** – The declarer is a representative who submits
-    tax declarations on behalf of a company that no longer exists because of a
-    merger, acquisition, or other extraordinary transaction.
-
--   **Bankruptcy curator** – The declarer is an administrator for bankruptcy.
-
--   **Commissioned liquidator** – The declarer is an administrator for
-    liquidation.
-
--   **Non-resident** – The declarer is a tax representative for non-residents.
-    The tax representative transfers items on behalf of a non-resident and
-    doesn't pay VAT. The company or individual who accepts the items is required
-    to pay VAT. For more information, see article 44, paragraph 3, of D.L. No
-    331/1993.
-
--   **Legal guardian** – The declarer is a guardian for a minor who is an heir
-    to the company.
-
--   **Sole proprietor liquidator** – The declarer is an administrator who is
-    responsible for disposing of company equipment during a voluntary
-    liquidation.
-
--   **Property manager** – The declarer is a manager of the property.
-
--   **Public representative** – The declarer is a representative who signs the
-    declarations on behalf of the government.
-
--   **Public liquidator** – The declarer is a liquidator who works on behalf of
-    the government.
-
--   Correction
-
--   Supplementary declaration
-
--   Additional declarations
-
--   Additional declarations (2)
-
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Tax communication ID</strong>, <strong>ATECOFIN Code</strong>, and <strong>Years</strong></p>
+</td>
+<td>
+<p>These fields are set as described in the previous table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Company information</strong> section</p>
+</td>
+<td>
+<p>Review the information about the company.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Company name</strong></p>
+</td>
+<td>
+<p>The name of the company that the <strong>Yearly tax communication</strong> report is created for.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Fiscal code</strong></p>
+</td>
+<td>
+<p>The fiscal code of the company.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Company tax registration number</strong></p>
+</td>
+<td>
+<p>The tax registration number of the company.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Declarer</strong> section</p>
+</td>
+<td>
+<p>Enter information about declarer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Type of declarer</strong></p>
+</td>
+<td>
+<p>Select the type of declarer:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filing for same legal entity</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filing through fiscal assistance center (CAF)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>CAF fiscal code</strong></p>
+</td>
+<td>
+<p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter the fiscal code of the fiscal assistance center.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>CAF obligation</strong></p>
+</td>
+<td>
+<p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, select one of the following values:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Declaration prepared by legal entity</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Declaration prepared by declarer</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>CAF inscription number</strong></p>
+</td>
+<td>
+<p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter the inscription number of the fiscal assistance center.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>CAF transmission date</strong></p>
+</td>
+<td>
+<p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, enter transmission date.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Writer</strong> section</p>
+</td>
+<td>
+<p>Specify information about the declarer, if the declarer differs from the taxpayer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Writer</strong></p>
+</td>
+<td>
+<p>Select the employee's name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Writer fiscal code</strong></p>
+</td>
+<td>
+<p>Enter the fiscal code of the declarer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Writer role</strong></p>
+</td>
+<td>
+<p>Select the declarer's role:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Legal representative</strong> &ndash; The declarer is a managing partner.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Administrator of under aged</strong> &ndash; The declarer is an administrator for minors or for people who have disabilities.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Controller of sequestered goods</strong> &ndash; The declarer is an administrator for seized goods.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Fiscal representative</strong> &ndash; The declarer is a tax representative for non-residents.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>General legatee</strong> &ndash; The declarer is an heir to the company.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Liquidator</strong> &ndash; The declarer is an administrator for voluntary liquidation.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Extraordinary operator</strong> &ndash; The declarer is a representative who submits tax declarations on behalf of a company that no longer exists because of a merger, acquisition, or other extraordinary transaction.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Bankruptcy curator</strong> &ndash; The declarer is an administrator for bankruptcy.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Commissioned liquidator</strong> &ndash; The declarer is an administrator for liquidation.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Non-resident</strong> &ndash; The declarer is a tax representative for non-residents. The tax representative transfers items on behalf of a non-resident and doesn't pay VAT. The company or individual who accepts the items is required to pay VAT. For more information, see article 44, paragraph 3, of D.L. No 331/1993.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Legal guardian</strong> &ndash; The declarer is a guardian for a minor who is an heir to the company.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Sole proprietor liquidator</strong> &ndash; The declarer is an administrator who is responsible for disposing of company equipment during a voluntary liquidation.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Property manager</strong> &ndash; The declarer is a manager of the property.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Public representative</strong> &ndash; The declarer is a representative who signs the declarations on behalf of the government.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Public liquidator</strong> &ndash; The declarer is a liquidator who works on behalf of the government.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Appointment date</strong></p>
+</td>
+<td>
+<p>Enter the date of the declarer's nomination.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Fiscal code</strong></p>
+</td>
+<td>
+<p>Enter the fiscal code of the declaring company.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Birth city or foreign country</strong>, <strong>Birth county</strong>, <strong>Birth date</strong>, <strong>Gender</strong>, <strong>First name</strong>, <strong>Last name</strong>, and <strong>Telephone</strong></p>
+</td>
+<td>
+<p>Enter additional information about declarer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Dates</strong></p>
+</td>
+<td>
+<p>Specify information about procedure start and end dates.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Procedure start date</strong></p>
+</td>
+<td>
+<p>Enter the start date of the procedure.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Procedure end date</strong></p>
+</td>
+<td>
+<p>Enter the end date of the procedure.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Correction</strong></p>
+</td>
+<td>
+<p>Select the type of correction:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Correction</strong></p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Supplementary declaration</strong></p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Additional declarations</strong></p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Additional declarations (2)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 6.  On the **Report lines** tab, review or edit the lines and amounts that you
     previously set up for the **Yearly tax communication** report on the
     **Yearly tax communication setup** page. For lines where the **Calculation**
