@@ -41,7 +41,7 @@ The Dynamics 365 Commerce platform provides a rich online software development k
 
 The [Dynamics 365 Commerce system](../commerce-architecture.md) includes various sub-systems including the Back Office HQ, the Commerce Scale Unit, the Web Storefront which includes the Node rendering service, the Commerce site builder, and the product recommendations services.  For best performance the various components should be deployed into the same region.  The Commerce Scale Unit setup allows you to the select specific region. The specific region decision should be made in accordance with the customer's regional location.
 
-## Minimizing HTML, CSS & Javascript
+## Minimizing HTML, CSS & JavaScript
 
 The Dynamics 365 online SDK provides development extensions using TypeScript and SCSS files.  TypeScript is a typed superset of JavaScript that compiles to plain JavaScript and SCSS is a superset of CSS that is compiled down to standard CSS.  When the configuration package is built using [yarn msdyn365 pack](cli-command-reference#pack.md) or the Node server is started on a local development environment using the [yarn start](setup-dev-environment#run-your-node-app.md) command, the typescript files and SCSS files will compiled down to Javascript and CSS respectively.  These files are also minified to reduce network bandwidth.
 
