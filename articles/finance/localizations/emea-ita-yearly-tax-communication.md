@@ -294,8 +294,8 @@ and **AN**, the following formats are available for selection.
 </td>
 <td>
 <p>Select the type of declarer:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filing for same legal entity</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filing through fiscal assistance center (CAF)</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Filing for same legal entity</strong></p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Filing through fiscal assistance center (CAF)</strong></p>
 </td>
 </tr>
 <tr>
@@ -312,8 +312,8 @@ and **AN**, the following formats are available for selection.
 </td>
 <td>
 <p>If you selected <strong>Filing through fiscal assistance center (CAF)</strong> in the <strong>Type of declarer</strong> field, select one of the following values:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Declaration prepared by legal entity</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Declaration prepared by declarer</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Declaration prepared by legal entity</strong></p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Declaration prepared by declarer</strong></p>
 </td>
 </tr>
 <tr>
@@ -443,6 +443,7 @@ and **AN**, the following formats are available for selection.
 </table>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
 6.  On the **Report lines** tab, review or edit the lines and amounts that you
     previously set up for the **Yearly tax communication** report on the
     **Yearly tax communication setup** page. For lines where the **Calculation**
