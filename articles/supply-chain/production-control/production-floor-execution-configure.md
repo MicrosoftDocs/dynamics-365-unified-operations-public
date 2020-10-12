@@ -44,25 +44,25 @@ This topic describes the various options for configuring job card devices.
 
 ## Enable new features in feature management
 
-A few of the settings described in this topic must be enabled on your system before they will be available to you. Use the [Feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) page to enable any or all of the following features as required.
+A few of the settings described in this topic must be enabled on your system before they will be available to you. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to enable any or all of the following features as required.
 
 ### Generate license plate
 
-To make this feature available, enable the following features in [feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) (in order):
+To make this feature available, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order):
 
 1. *License plate for reporting as finished added to the Job Card Device*
 1. *Enable automatic generation of license plate number when reporting as finished in the job card device*
 
 ### Print label
 
-To make this feature available, enable the following features in [feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) (in order):
+To make this feature available, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order):
 
 1. *License plate for reporting as finished added to the Job Card Device*
 1. *Print label from Job Card Device*
 
 ### Allow locking the touch screen
 
-To make this feature available, enable the following feature in [feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview):
+To make this feature available, enable the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *(Preview) Feature for locking job card device and job card terminal so that they can be sanitized*
 
