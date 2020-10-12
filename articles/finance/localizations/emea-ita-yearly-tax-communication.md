@@ -1027,6 +1027,7 @@ included in the setup example are *italicized*.
 </tr>
 </tbody>
 </table>
+
 ### Example
 
 Here is an example for the **ITCO** legal entity.
