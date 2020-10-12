@@ -248,7 +248,7 @@ The load from job scheduling on all the resources included in the resource group
 > (operations scheduled load on the resources in the group) -  
 > (operations scheduled load on the resource group)
 
-In the resource requirements tab on the route operation, the resource requirements can be specified using either a specific resource (in which case the operation will be scheduled using that resource), for a resource group, for a resource type, or for one or more capabilities, skill, course, or certificate. While using all of these options gives a great flexibility on the route design, it also complicates the scheduling for the engine as the capacity must be accounted for per "property" (the abstract name used in the engine for capability, skills, and so on).
+On the **Resource requirements** tab on the route operation, the resource requirements can be specified using either a specific resource (in which case the operation will be scheduled using that resource), for a resource group, for a resource type, or for one or more capabilities, skill, course, or certificate. While using all of these options gives a great flexibility on the route design, it also complicates the scheduling for the engine as the capacity must be accounted for per "property" (the abstract name used in the engine for capability, skills, and so on).
 
 The resource group's capacity for a capability is the sum of the capacity for all resources in the resource group that has the capability in question. If a resource in the group has a capability, it will be considered no matter what level of the capacity is required.
 
@@ -330,6 +330,7 @@ One of the main sources of data for the scheduling engine is calendar informatio
 ### High number of working time slots per calendar day
 
 Because the engine works by examining time slots one-by-one for capacity, it is beneficial to minimize the number of time slots per calendar day. This could be done, for example, by considering whether it's important for the resulting schedule to reflect that workers have a 5-minute break every hour.
+
 ### Large (or none) scheduling timeouts
 
 Scheduling engine performance can be optimized using parameters found on the **Scheduling parameters** page. The **Scheduling timeout enabled** and **Scheduling optimization timeout enabled** settings should always be set to **Yes**. If set to **No**, the scheduling can potentially run infinitely if an unfeasible route with many options has been created.
@@ -338,4 +339,5 @@ The value for **Maximum scheduling time per sequence** controls how many seconds
 
 The value for **Optimization attempts timeout** controls how many seconds can at most be used to find a better solution than the one originally found. This will only influence routes that are using parallel operations as these make it necessary to test different combinations.
 
-Note that the values set for the timeouts will be applied both for scheduling of released production orders and of planned orders as part of MRP. As a result, setting very high values could significantly add to the run time of MRP when running for a plan with many planned production orders.
+> [!NOTE]
+> The values set for the timeouts will be applied both for scheduling of released production orders and of planned orders as part of MRP. As a result, setting very high values could significantly add to the run time of MRP when running for a plan with many planned production orders.
