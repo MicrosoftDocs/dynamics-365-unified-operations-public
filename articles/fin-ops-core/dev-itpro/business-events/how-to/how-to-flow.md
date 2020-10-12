@@ -3,7 +3,7 @@
 
 title: Business events and Microsoft Power Automate
 description: This topics provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/18/2019
 ms.topic: article
@@ -21,7 +21,7 @@ ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
@@ -78,7 +78,7 @@ This topic shows how to perform the following tasks:
 
     <img alt="JSON data types " src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
-13.  Choose another final action to consume the business event content. For instance, you can send an email (or post a text message to Teams) to notify the customer about payment details. Search for the **Send email** action, then sign in to your Office 365 account.
+13.  Choose another final action to consume the business event content. For instance, you can send an email (or post a text message to Teams) to notify the customer about payment details. Search for the **Send email** action, then sign in to your Microsoft 365 account.
 
 14.  Fill in the message with the required fields.
 

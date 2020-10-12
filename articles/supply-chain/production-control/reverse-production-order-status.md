@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ProdParmStatusDecrease
+ms.search.form: ProdParmStatusDecrease, ProdSetupStatusDecrease
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMERALSTOTEXT">NUMERALSTOTEXT ER function</a>
+# NUMERALSTOTEXT ER function
 
 [!include [banner](../includes/banner.md)]
 

@@ -84,4 +84,6 @@ const favColor = this.props.context.request.cookies.get<string>('favoriteColor')
 
 [Extend a module definition file](extend-module-definition.md)
 
+[Interactive components overview](interactive-components.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)

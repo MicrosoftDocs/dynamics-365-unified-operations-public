@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom
 ms.search.region: belgium
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -38,7 +38,7 @@ This topic includes information and links to resources that should be considered
 CODA is a report format that is used in the Belgian electronic banking system. For more information, see [CODA bank statement](emea-bel-coda-bank-statement-import.md).
 
 ## Export ledger transactions
-You can export ledger transactions for a specific interval, such as a fiscal year as an ASCII file in the CED format. You can use batch processing to export transactions. To set up batch processing, go to **General ledger** > **Periodic** > **Export ledger transactions**.
+You can export ledger transactions for a specific interval, such as a fiscal year as an ASCII file in the CED format. You can use batch processing to export transactions. To set up batch processing, go to **General ledger** > **Periodic** > **Export ledger transactions**. For more informaton, see [Export ledger transactions](emea-bel-export-ledger-transactions.md).
 
 ## INTERVAT tax declaration
 For information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only, see [INTERVAT tax declaration](emea-bel-intervat-tax-declaration.md). 

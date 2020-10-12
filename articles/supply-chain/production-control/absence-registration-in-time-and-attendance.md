@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: JMGParameters 
+ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

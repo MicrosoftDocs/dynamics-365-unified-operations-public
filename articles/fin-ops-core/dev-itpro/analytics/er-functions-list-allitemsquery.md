@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ALLITEMSQUERY">ALLITEMSQUERY ER function</a>
+# ALLITEMSQUERY ER function
 
 [!include [banner](../includes/banner.md)]
 

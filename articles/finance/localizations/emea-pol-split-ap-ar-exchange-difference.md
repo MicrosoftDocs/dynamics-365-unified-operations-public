@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 414136
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-04-01
 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqPlanSched
+ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -24,7 +24,7 @@ ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

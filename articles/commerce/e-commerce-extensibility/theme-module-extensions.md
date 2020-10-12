@@ -5,7 +5,7 @@ title: Extend a theme to add module extensions
 description: This topic describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
-ms.date: 06/29/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -36,7 +36,7 @@ This topic describes how to extend a theme to add module extensions in Microsoft
 
 ## Overview
 
-Dynamics 365 Commerce e-Commerce themes can optionally contain the following module extensions to either the set of modules in the Commerce starter kit or custom modules:
+Dynamics 365 Commerce e-Commerce themes can optionally contain the following module extensions to either the set of modules in the Commerce module library or custom modules:
 
 - Module view extensions that provide new layout views on a module
 - Definition extensions that change a module's configurations
@@ -44,11 +44,11 @@ Dynamics 365 Commerce e-Commerce themes can optionally contain the following mod
 
 ## Theme module view extensions
 
-Themes let you include customized module view extensions, which are generally used to change the default layout of a module for a selected theme. These customized module view extensions are supported for both starter kit modules and custom modules. For example, you might want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid having to use the **clone** command-line interface (CLI) command to create a full copy of the starter kit module. In some cases, you might want to extend the module definition, and also add more configuration properties, slots, or resources. For more information about how to create module view extensions, see the [Create a module view extension](#create-a-module-view-extension) section of this topic.
+Themes let you include customized module view extensions, which are generally used to change the default layout of a module for a selected theme. These customized module view extensions are supported for both module library modules and custom modules. For example, you might want to add a new button to a module library module to support additional features. By creating a view extension, you can avoid having to use the **clone** command-line interface (CLI) command to create a full copy of the module library module. In some cases, you might want to extend the module definition, and also add more configuration properties, slots, or resources. For more information about how to create module view extensions, see the [Create a module view extension](#create-a-module-view-extension) section of this topic.
 
 View extensions are stored under the **...\\src\\themes\\THEME\_NAME\\views** directory and follow a naming pattern that resembles the naming pattern for module views (**MODULE\_NAME.view.tsx**). For example, a view extension might be named **product-feature.view.tsx**. If a view extension exists in the selected theme, the React component will call it instead of the default view file. Therefore, view extensions can be written exactly like a module view that is used for a module.
 
-In general, you might want to examine the existing view file for one of the starter kit modules before you create a new view on it. You might also want to copy and paste additional code into the existing view file. To view the source code of a starter kit module view, open the **...\\node\_modules\\@msdyn365-commerce-modules** directory, and look for the module that you're interested in. You might have to fix the file path references for relative path imports.
+In general, you might want to examine the existing view file for one of the module library modules before you create a new view on it. You might also want to copy and paste additional code into the existing view file. To view the source code of a module library module view, open the **...\\node\_modules\\@msdyn365-commerce-modules** directory, and look for the module that you're interested in. You might have to fix the file path references for relative path imports.
 
 ### Create a module view extension
 

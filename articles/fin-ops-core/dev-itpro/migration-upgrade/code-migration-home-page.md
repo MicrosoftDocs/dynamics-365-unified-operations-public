@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -43,13 +43,9 @@ To migrate your code from Dynamics AX 2012 to Dynamics 365 Finance, Supply Chain
 The following links (also included in the methodology) describe key concepts and steps in the migration process. The links are listed here in the order that we recommend you read them.
 
 - [Prepare to migrate code to Finance and Operations](prepare-migration.md)
-<!--- [Migrate from AX 2012 (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
-- [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)-->
-<!-- [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)-->
 - [Model split](../dev-tools/model-split.md)
 - [Removed or deprecated features for Finance and Operations](deprecated-features.md)
 - [Deprecated APIs](deprecated-apis.md)
-<!--- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
 
 ## Additional concepts
 

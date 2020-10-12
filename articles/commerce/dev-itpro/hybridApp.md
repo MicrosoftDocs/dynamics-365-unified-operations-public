@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2018-29-10
+ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 ---

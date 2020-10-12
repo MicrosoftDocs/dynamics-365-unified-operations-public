@@ -48,22 +48,22 @@ The following image shows an example of a cart icon module that displays a mini 
 
 - **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
 
-
 ## Add a cart icon module to a page
 
 To add a cart icon module, see [Header module](author-header-module.md).
 
-
 ## Additional resources
-
-[Buy box module](add-buy-box.md)
 
 [Cart module](add-cart-module.md)
 
 [Checkout module](add-checkout-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
+[Payment module](payment-module.md)
 
-[Header module](author-header-module.md)
+[Shipping address module](ship-address-module.md)
 
-[Footer module](author-footer-module.md)
+[Delivery options module](delivery-options-module.md)
+
+[Order details module](order-confirmation-module.md)
+
+[Gift card module](add-giftcard.md)

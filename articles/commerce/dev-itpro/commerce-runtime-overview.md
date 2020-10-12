@@ -3,7 +3,7 @@
 
 title: Commerce runtime (CRT) architecture and configuration
 description: This article provides information about the architecture and configuration of the Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
-author: sericks007
+author: AamirAllaq
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

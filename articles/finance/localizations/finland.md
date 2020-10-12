@@ -22,7 +22,7 @@ ms.search.scope: Operations
 ms.custom: 
 ms.search.region: Finland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
 

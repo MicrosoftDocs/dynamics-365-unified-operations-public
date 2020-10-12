@@ -3,7 +3,7 @@
 
 title: Create workflows overview
 description: This topic explains how to create a workflow.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 195583
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 

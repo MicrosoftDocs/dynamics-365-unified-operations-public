@@ -30,11 +30,13 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Create a new Retail Server extension
+# Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)
 
 [!include [banner](../includes/banner.md)]
 
 This document explains how to create a new Commerce Scale Unit application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Commerce Scale Unit APIs isn't supported.
+
+This topic applies to Retail SDK version 10.0.10 and earlier.
 
 The Retail software development kit (SDK) includes only a few samples of end-to-end Commerce Scale Unit extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
 

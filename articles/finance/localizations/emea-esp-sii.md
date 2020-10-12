@@ -209,7 +209,7 @@ For filled-in EM items, this class evaluates values for the following additional
 
 4.  Select **OK** to initiate the executable class.
 
-!Add new Electronic message items pane](media/emea-esp-sii-siigenerateitems-executable-class.png)
+![Add new Electronic message items pane](media/emea-esp-sii-siigenerateitems-executable-class.png)
 
 ### Set up the SIIPartyAttributesEvaluation executable class
 

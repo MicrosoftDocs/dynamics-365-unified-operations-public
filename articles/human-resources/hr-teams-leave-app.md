@@ -5,7 +5,7 @@ title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information. The **Time off** tab provides more detailed information.
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information and start a leave request. The **Time off** tab provides more detailed information. In addition, you can send people information about your upcoming time off in teams and chats outside the Human Resources app.
 
 ## Install the app
 
@@ -61,8 +61,8 @@ If the app doesn't automatically sign you in, select the **Settings** tab to sig
 
 If you have access to more than one instance of Human Resources, you can select which environment you want to connect to in the **Settings** tab.
 
-> [!WARNING]
-> The app doesn't currently support the System Administrator security role, and will display an error message if you sign in with a System Administrator account. To sign in with a different account, on the **Settings** tab, select the **Switch accounts** button, and then sign in with a user account that doesn’t have System Administrator privileges.
+> [!NOTE]
+> The app now supports the System Administrator security role.
  
 ## Use the bot
 
@@ -87,11 +87,11 @@ You can ask the bot to:
 
    ![Human Resources Teams leave app request leave](./media/hr-teams-leave-app-bot-request.png)
  
-After you start a leave request, you can adjust the days right within the card, or you can select **Edit details** to add additional information to your request.
+After you start a leave request, you can adjust the days right within the card.
 
 ![Human Resources Teams leave app edit request](./media/hr-teams-leave-app-bot-edit.png)
  
-When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
+When you're done entering information, select **Submit** to submit it for approval. You can also select **Save as draft** to come back to it later.
 
 ![Human Resources Teams leave app submit request](./media/hr-teams-leave-app-bot-submit.png)
 
@@ -135,15 +135,85 @@ The **Time off** tab allows you to view:
 
    ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
    
+### Respond to Teams notifications
+
+When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
+
+If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
+
+![Leave request notification in Human Resources Teams app](./media/hr-teams-leave-app-notification.png)
+
+## Send upcoming time-off information to your coworkers
+
+After you install the Human Resources app for Teams, you can easily send information about your upcoming time off to your coworkers in teams or chats.
+
+1. In a team or chat in Teams, select the Human Resources button below the chat window.
+
+   ![Human Resources button below chat window](./media/hr-teams-leave-app-chat-button.png)
+
+2. Select the leave request you want to share. If you want to share a draft leave request, select **Drafts** first.
+
+   ![Select an upcoming leave request to share](./media/hr-teams-leave-app-chat-search.png)
+
+Your leave request will display in the chat.
+
+![Human Resources leave request card](./media/hr-teams-leave-app-chat-card.png)
+
+If you shared a draft request, it will display as a draft:
+
+![Human Resources draft leave request card](./media/hr-teams-leave-app-chat-draft-card.png)
+
+## View your team's leave calendar
+
+If you're a manager with direct reports, you can view your team's approved and pending time off.
+
+1. In the Human Resources app in Teams, select **Time off**.
+
+2. Select **Team calendar**.
+
+   ![View calendar in Human Resources Teams app](./media/hr-teams-leave-app-view-calendar.png)
+
+The calendar displays your direct reports' approved and pending time off.
+
+![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
+
+## Troubleshooting
+
+If you're having trouble signing into or using the Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](hr-admin-troubleshooting-support.md).
+
+### Can't sign into the Human Resources app in Teams
+
+If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
+
+### Error when approving leave requests in the Human Resources app in Teams
+
+If you receive an error when you're trying to approve leave requests in the Teams app, perform the following troubleshooting steps:
+
+1. Verify that the account you're using to sign into Microsoft Teams is the same one you use for accessing Dynamics 365 Human Resources.
+
+2. Verify that you're a valid approver for the request by checking the workflow settings for leave approval. For more information about leave request workflows, see [Create a leave request workflow](hr-leave-and-absence-workflow.md).
+
 ## Privacy notice
 
-With the Dynamics 365 Human Resources bot in Microsoft Teams, the user’s text inputs are analyzed for understanding the underlying query/intent. The user’s input such as “Search account Contoso” is routed to one of Microsoft’s Cognitive Service called Language Understanding Intelligent Service (LUIS). Read more about LUIS [here](https://www.luis.ai/). The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso). This information is then passed on to Microsoft’s [Azure bot framework](https://azure.microsoft.com/services/bot-service/) which interacts with data from Dynamics 365 Human Resources and retrieves the desired information for the user query. 
+### Microsoft Language Understanding Intelligent Service (LUIS)
+
+With the Dynamics 365 Human Resources bot in Microsoft Teams, the user’s text inputs are analyzed for understanding the underlying query/intent. The user’s input such as “Search account Contoso” is routed to one of Microsoft’s Cognitive Service called Language Understanding Intelligent Service (LUIS). Read more about LUIS [here](https://www.luis.ai/). The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso). This information is then passed on to Microsoft’s [Azure bot framework](https://azure.microsoft.com/services/bot-service/), which interacts with data from Dynamics 365 Human Resources and retrieves the desired information for the user query. 
 
 By installing and allowing access to use of the bot, you agree to allow the LUIS service and Azure bot framework to process the intent behind the input,  which results in an enhanced conversational user experience. The LUIS service and Azure bot framework may have varying levels of compliance compared to Dynamics 365 Human Resources. While the LUIS service has access to only the user queries and is not designed to be connected to the user’s Dynamics 365 Human Resources data or account, a user of the Dynamics 365 Human Resources bot could voluntarily enter a query containing Customer Data, Personal Data, or other data and such query content could get sent to the LUIS service and the Azure bot framework. 
 
 The content of user’s queries and messages is retained in LUIS system for a maximum of 30 days, is encrypted at rest, and is not used for training or service improvement. Read more about Cognitive Services [here](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
-To manage admin settings for apps in Microsoft Teams, go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com/). 
+To manage admin settings for apps in Microsoft Teams, go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com/).
+
+### Microsoft Teams, Azure Event Grid, and Azure Cosmos DB
+
+When using the Dynamics 365 Human Resources app in Microsoft Teams, certain customer data may flow outside of the geographic region where your tenant’s Human Resources service is deployed.
+
+Dynamics 365 Human Resources transmits the employee’s leave request and workflow task details to Microsoft Azure Event Grid and Microsoft Teams. This data may be stored in Microsoft Azure Event Grid for up to 24 hours and will be processed in the United States, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+While conversing with the chat bot in the Human Resources app, the conversation content may be stored in Azure Cosmos DB and transmitted to Microsoft Teams. This data may be stored in Azure Cosmos DB for up to 24 hours and may be processed outside of the geographic region where your tenant's Human Resources service is deployed, is encrypted in transit and at rest, and is not used by Microsoft or its subprocessors for training or service improvements. To understand where your data is stored in Teams, please see: [Location of data in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+To restrict access to the Human Resources app in Microsoft Teams for your organization or users within your organization, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## See also
 

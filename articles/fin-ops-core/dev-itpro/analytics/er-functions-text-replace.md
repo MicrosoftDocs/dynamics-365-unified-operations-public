@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="REPLACE">REPLACE ER function</a>
+# REPLACE ER function
 
 [!include [banner](../includes/banner.md)]
 

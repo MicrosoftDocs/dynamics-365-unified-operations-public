@@ -54,6 +54,8 @@ Regardless of the approach that is used, the fidelity of business events is sign
 - **Targeted** – Business events must be designed to optimize the consumption story for the recipient. In other words, you should make it as easy as possible for the recipient to consume business events. Therefore, business events must be as specific as possible and must be targeted to specific use cases. They must not be generic, so that the consumer has to determine what the business event is for by trying to understand the payload. The design choice must allow for preservation of targeted business events.
 - **Noiseless** – The design should include very little effort to filter out noise. To make business events very specific, avoid writing filtering logic to filter out conditions that don't match the expected business event. The chosen approach must help guarantee that the business event is implemented in code at a sufficiently specific point so that no filtering of noise is required. Any attempt to filter noise by adding logic can affect performance and might also become complicated in specific use cases.
 
+The following table compares capture at the business and table levels.
+
 | Capture at the business logic level | Capture at the table level |
 |-------------------------------------|----------------------------|
 | Capture at this level helps guarantee durability because it occurs in the transaction. | Capture at this level helps guarantee durability because it occurs in the transaction. |
@@ -75,7 +77,7 @@ The process for implementing a business event and sending it is fairly straightf
 Two classes must be implemented:
 
 - **Business event** – This class extends the **BusinessEventsBase** class. It supports constructing the business event, building the payload, and sending the business event.
-- **Business event contract** – This class extends the **BusinessEventsContract** class. It defines the payload of the business event and allows for population of the contract at runtime. 
+- **Business event contract** – This class extends the **BusinessEventsContract** class. It defines the payload of the business event and allows for population of the contract at runtime.
 
 ### BusinessEventsBase extension
 
@@ -596,11 +598,11 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 
 ## Extending filters so that they have custom fields (if the middleware supports this extension)
 
-Some middleware systems allow for filtering of the events. For example, Microsoft Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used to filter events when reading from the Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties such as **Subject**, **Event Type**, and **ID**. To support these various properties for the different systems, the Business Events framework uses a concept that is named *payload context*. This concept can be extended so that it includes custom fields that the different eventing systems can use for filtering.
+Some middleware systems allow for filtering of the events. For example, Microsoft Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used to filter events when reading from the Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties such as **Subject**, **Event Type**, and **ID**. To support these various properties for the different systems, the business events framework uses a concept that is named *payload context*. This concept can be extended so that it includes custom fields that the different eventing systems can use for filtering.
 
 ### Payload context
 
-The Business Events framework supports the payload context concept. Payload context provides a way to decorate messages that the framework sends with context about the payload. In some scenarios, additional context might be required when messages are sent to endpoints. Therefore, the framework has hookpoints where the context can be overwritten and the adapters can be customized.
+The business events framework supports the payload context concept. Payload context provides a way to decorate messages that the framework sends with context about the payload. In some scenarios, additional context might be required when messages are sent to endpoints. Therefore, the framework has hookpoints where the context can be overwritten and the adapters can be customized.
 
 ### Step 1: Add a custom payload context
 
@@ -644,7 +646,7 @@ public final class CustomPayloadContextBusinessEventsSender_Extension
 
 Adapters that consume payload context are written in such a way that they expose CoC methods that allow for the consumption of new payload contexts. The following example shows what this step looks like for the Service Bus adapter. This adapter has a generic property bag that Service Bus consumers can filter on.
 
-The **BusinessEventsServiceBusAdapter** has the CoC method that is named **addProperties**.
+The **BusinessEventsServiceBusAdapter** class has the CoC method that is named **addProperties**.
 
 ```xpp
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
@@ -671,23 +673,24 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
 ```
 
 ## Adding a custom endpoint type
-The Business Events framework supports the addition of new endpoint types to the out-of-box endpoint types. This section provides an example that shows how to add new custom endpoint types.
+
+The business events framework supports the addition of new endpoint types to the out-of-box endpoint types. This section provides an example that shows how to add new custom endpoint types.
 
 ### Step 1: Add a new endpoint type
 
-Each endpoint type is represented by the **BusinessEventsEndpointType** enum. The first step in the process of adding a new endpoint is to extend this enum, as shown in the following section.
+Each endpoint type is represented by the **BusinessEventsEndpointType** enum. The first step in the process of adding a new endpoint is to extend this enum, as shown in the following illustration.
 
-![Business event endpoint](../media/customendpoint1.png)
+![Enum extension](../media/customendpoint1.png)
 
 ### Step 2: Add a new endpoint table to the hierarchy
 
 All endpoint data is stored in a hierarchy table. The root of this table is the BusinessEventsEndpoint table. A new endpoint table must extend this root table by setting the **Support Inheritance** property to **Yes** and the **Extends** property to **"BusinessEventsEndpoint"** (or any other endpoint in the BusinessEventsEndpoint hierarchy).
 
-![Business event endpoint](../media/customendpoint2.png)
+![Table extends BusinessEventsEndpoint](../media/customendpoint2.png)
 
 The new table then holds the definition of the custom fields that are required to initialize and communicate with the endpoint in code. To help avoid conflict, you should qualify field names to the specific endpoint where they belong. For example, two endpoints can have the concept of a **URL** field. To distinguish the fields, names should be specific to the custom endpoint. For example, name the field for the custom endpoint **CustomURL**.
 
-![Business event endpoint](../media/customendpoint3.png)
+![New table with custom fields](../media/customendpoint3.png)
 
 ### Step 3: Add a new endpoint adapter class that implements the IBusinessEventsEndpoint interface
 
@@ -721,11 +724,11 @@ if (!customField)
 
 Add a new group control under FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ to hold your custom field input.
 
-![Business event endpoint](../media/customendpoint4.png)
+![New group control for custom field input](../media/customendpoint4.png)
 
 The custom field input should be bound to the new table and field that you created in the previous step. Create a class extension to extend the **getConcreteType** and **showOtherFields** methods of **BusinessEventsEndpointConfiguration** form, as shown in the following example.
 
-![Business event endpoint](../media/customendpoint5.png)
+![Class extension for data source](../media/customendpoint5.png)
 
 ```xpp
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]

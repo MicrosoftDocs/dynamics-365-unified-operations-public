@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: KanbanQuantityPolicy, KanbanRules   
+ms.search.form: KanbanQuantityPolicy, KanbanRules, KanbanQuantityCalculation
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

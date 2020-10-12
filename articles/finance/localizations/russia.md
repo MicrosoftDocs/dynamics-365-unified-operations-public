@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -159,6 +159,10 @@ This topic provides information about functionality that supports Russian regula
 - [Dispose of deferrals](rus-dispose-deferrals.md)
 - [Deferrals counting](rus-counting-deferrals.md)
 - [Reporting for deferrals](rus-reporting-deferrals.md)
+
+## Tax accounting
+- [Expense and income codes](rus-expense-and-income-codes.md)
+- [Assets tax registers](rus-assets-tax-registers.md)
 
 ## Additional resources
 

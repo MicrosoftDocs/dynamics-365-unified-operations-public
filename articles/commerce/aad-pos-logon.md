@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations, Retail
 # ms.custom:
 ms.search.region: global
 # ms.search.industry:
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.10
 ---
@@ -70,7 +70,7 @@ To associate an Azure AD account with a worker, follow these steps.
 The **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.
 
 > [!NOTE]
-After a worker record is updated, for example if a new Azure AD account is associated, a password is changed, or an employee address book is updated, it’s recommended that you run **1060** (**Staff**) distribution schedule to synchronize the latest staff information to the channel. That way, the POS application can fetch the correct data for user authentication and authorization check.
+> After a worker record is updated, for example if a new Azure AD account is associated, a password is changed, or an employee address book is updated, it’s recommended that you run **1060** (**Staff**) distribution schedule to synchronize the latest staff information to the channel. That way, the POS application can fetch the correct data for user authentication and authorization check.
 
 ## Additional resources
 

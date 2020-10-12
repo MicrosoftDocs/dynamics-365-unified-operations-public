@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,11 +41,51 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Platform updates for version 10.0.13 of Finance and Operations apps
+## Platform updates for version 10.0.15 of Finance and Operations apps
 
 > [!NOTE]
-> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+> Version 10.0.15 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
+### Visual Studio add-in to apply metadata hotfixes
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Metadata hotfixes are no longer supported with the [One Version](../../fin-ops/get-started/one-version.md) service updates that were introduced in July 2018 with version 8.1. |
+| **Replaced by another feature?**   | Individual metadata hotfixes are not available for supported versions. Cumulative quality updates are applied instead. |
+| **Product areas affected**         | Visual Studio add-ins |
+| **Deployment option**              | Development virtual machines |
+| **Status**                         | With version 10.0.15, the add-in is no longer included in the Visual Studio tools. |
+
+
+## Platform updates for version 10.0.14 of Finance and Operations apps
+
+> [!NOTE]
+> Version 10.0.14 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+
+### Online users page 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | This is a legacy page that was built for previous client/server architecture. The information on this page is not always accurate, which can be confusing and misleading. |
+| **Replaced by another feature?**   | We will provide a new page in a future update.|
+| **Product areas affected**         | System Administration |
+| **Deployment option**              | All |
+| **Status**                         | By October 2021 this form will be removed.   |
+
+
+## Platform updates for version 10.0.13 of Finance and Operations apps
+
+
+### Custom code defined in SSRS report properties 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In general, custom code offers limited benefits while at the same time, requires significant resourcing and compute to support. Custom code is primarily used by report authors to call public methods from a custom code assembly. However, the cloud-hosted service does not support references to custom assemblies for SSRS reports. |
+| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Product areas affected**         | Subset of application report designs defined in RDL that contain custom code. |
+| **Deployment option**              | All |
+| **Status**                         | With version 10.0.13, the compiler will begin issuing a warning for instances where custom code is detected in a SSRS report definition. To fix the issue, open the report design definition and remove all custom code artifacts. This warning will be replaced with a compiler error in a future update.   |
 
 ### Upgrade of three jQuery component libraries 
 
@@ -56,6 +96,27 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Product areas affected**         | Extensible controls, specifically custom JavaScript code utilizing deprecated or removed APIs |
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13/Platform update 37, customers can optionally move to the latest libraries by enabling the "Upgrade three jQuery component libraries" feature. Moving to the new libraries will be mandatory with the April 2021 release to allow time for migration of affected APIs.   |
+
+### Existing grid control/forceLegacyGrid() API
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The existing grid control is being replaced by the new grid control. |
+| **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become mandatory in the October 2021 release. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
+
+### Personalization without saved views 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The personalization subsystem has been overhauled with the saved views feature, so that it has better performance and offers additional capabilities. |
+| **Replaced by another feature?**   | Saved views |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | In version 10.0.13/Platform update 37, the saved views feature is generally available, and customers can optionally turn on this feature. The saved views feature will become mandatory in the October 2021 release. |
+
 
 ## Platform updates for version 10.0.12 of Finance and Operations apps
 

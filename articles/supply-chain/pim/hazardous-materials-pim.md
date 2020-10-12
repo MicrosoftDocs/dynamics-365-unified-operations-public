@@ -24,7 +24,7 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: 
 
@@ -33,13 +33,14 @@ ms.dyn365.ops.version:
 # Hazardous materials
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Information about hazardous materials is set up in Product information management. This module also provides documents that can be printed through warehouse management.
 
 When you ship materials that are classified as dangerous goods, additional paperwork must be included with the shipments. The hazardous materials functionality lets customers store classification information and relate it to release items. This information can then be used to help prepare shipping documentation.
 
 > [!IMPORTANT]
-> To help manage shipments of dangerous goods, Microsoft Dynamics 365 Supply Chain Management lets you set up additional reference information that is related to products. You can also set up additional shipment documents. However, the system isn't automatically compliant with your country's or region's regulations. Instead, it's a tool that can help your overall program.
+> The hazardous materials features in Microsoft Dynamics 365 Supply Chain Management provide a collection of useful product information fields and related functionality that can help you record and reference information that is related to your hazardous products. These features can also help you design and print shipment documents that include some of the same information about any hazardous materials that you're shipping. However, the system won't automatically make you compliant with all applicable regulations in your country or region. Although these tools are intended to help you comply with common regulations, they are neither sufficient in themselves nor guaranteed to be so. Your organization is responsible for being aware of all applicable regulations and for taking all necessary steps to comply with them.
 
 Before you can use this functionality, the following setup is required:
 
