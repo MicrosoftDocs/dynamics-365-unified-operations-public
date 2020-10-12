@@ -78,7 +78,7 @@ The following manufacturing execution tasks can currently be run on workloads wh
 
 ## Working with manufacturing execution workloads on the hub
 
-Usually, the processes required to run manufacturing execution workloads run automatically to keep the hub all the scale units in sync as needed. However, if you are having trouble, you can manually trigger the processing of raw registrations received from workloads and/or check the registration processing log.
+Usually, the processes required to run manufacturing execution workloads run automatically to keep the hub and all the scale units in sync as needed. However, if you are having trouble, you can manually trigger the processing of raw registrations received from workloads and/or check the registration processing log.
 
 ### Manually process raw registrations
 
@@ -99,7 +99,7 @@ You can operate on any listed registration by selecting it and then selecting on
 
 ## Working with manufacturing execution workloads on a scale unit
 
-Usually, the processes required to run manufacturing execution workloads run automatically to keep the hub all the scale units in sync as needed. However, if you are having trouble, you can check the history of orders processed on a scale unit or run the _Manufacturing hub to scale unit message processor_ job manually.
+Usually, the processes required to run manufacturing execution workloads run automatically to keep the hub and all the scale units in sync as needed. However, if you are having trouble, you can check the history of orders processed on a scale unit or run the _Manufacturing hub to scale unit message processor_ job manually.
 
 ### View a history of manufacturing jobs processed on a scale unit
 

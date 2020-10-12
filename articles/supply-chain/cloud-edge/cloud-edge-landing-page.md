@@ -39,7 +39,7 @@ Cloud and edge scale units enable shop floor and warehouse execution workloads t
 - Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
 - Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
 
-Companies working with manufacturing and distribution must be able to execute key business processes 24/7, without interruption and at scale. But complications may arise due to issues ranging from basic connectivity&mdash;such as provider outages, Azure outages, unreliable connections, or network latency&mdash;to multiple business processes competing for the same system resources. Cloud and edge features enable companies to execute key mission-critical manufacturing and warehouse processes without interruption, even in situations such as these.
+Companies working with manufacturing and distribution must be able to execute key business processes 24/7, without interruption and at scale. But complications may arise due to issues ranging from basic connectivity&mdash;such as provider outages, Azure outages, unreliable connections, or network latency&mdash;to multiple business processes competing for the same system resources. Cloud and edge scale units enable companies to execute key mission-critical manufacturing and warehouse processes without interruption, even in situations such as these.
 
 ## Public preview information
 
@@ -64,7 +64,7 @@ Companies working with manufacturing and distribution must be able to execute ke
 >
 > The scale-unit capabilities are currently in public preview. When signing up, you must use a user account on the specific tenant and also be a project owner or an environment admin in LCS for an active Dynamics 365 LCS project in that tenant.
 >
-> When you sign up for the preview, you will select the tenant and go through the sign up steps. As soon as we can allocate preview capacity, we will send you an email with the provisioning details and the promotion codes for two environments (a hub and a scale unit) for the respective LCS project. You will then be able to deploy the two environments as tier 2 sandbox environments. Those are valid 60 days from creation date of the promo code. (Please do not use the two environments before the next step is complete!)
+> When you sign up for the preview, you will select a tenant and go through the sign-up steps. As soon as we can allocate preview capacity, we will send you an email with the provisioning details and the promotion codes for two environments (a hub and a scale unit) for the respective LCS project. You will then be able to deploy the two environments as tier-2 sandbox environments. Those are valid 60 days from creation date of the promo code. (Please do not use the two environments before the next step is complete!)
 >
 > After you confirm the deployment of the two environments from the promotion codes with Microsoft, one of the environments will be configured to function as a  hub the other as a scale unit. You can then configure the scale units and deploy select warehouse management and manufacturing workloads using the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
 >
@@ -75,7 +75,7 @@ Companies working with manufacturing and distribution must be able to execute ke
 > [!WARNING]
 > Certain business functionality is not fully supported in the public preview when using workloads scale units. See the sections for more details about the functional workloads.
 
-The preview provides you with one environment that functions as a cloud based hub of your Supply Chain Management environment and one environment that will function as a cloud scale unit. For the preview, both environment will be hosted in a data center in US data center.
+The preview provides you with one environment that functions as a cloud based hub of your Supply Chain Management environment and one environment that will function as a cloud scale unit. For the preview, both environment will be hosted in a US data center.
 
 You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.
 
@@ -83,7 +83,7 @@ You will also be able to use Local Business Data (LBD) to configure an on-premis
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with Scale Units":::
 
-Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud or on the edge at your local facility premises. Scale units can temporarily be disconnected from the hub environment in the cloud. When connected scale units receive all information to run the dedicated processing for assigned workloads.
+Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud, or on the edge at your local facility premises. Scale units can temporarily be disconnected from the hub environment. When connected, scale units receive all the information needed to run the dedicated processing for assigned workloads.
 
 :::image type="content" source="media/cloud_edge-previewoptions.png" alt-text="Scale unit options with public preview":::
 
@@ -119,7 +119,7 @@ Review the [warehouse scale unit workload details](cloud-edge-workload-warehousi
 
 ## Onboard scale units for your Supply Chain Management environment
 
-### Deployment of the preview for cloud and edge scale units
+### Deploy the preview for cloud and edge scale units
 
 The following diagram shows the sign-up and provisioning flow for the public preview with cloud scale units.
 
@@ -129,29 +129,29 @@ The following diagram shows the sign-up and provisioning flow for the public pre
 
 In the public preview, the [Scale Unit Manager portal](https://aka.ms/SCMSUM) shows the list of tenants that your account is part of and where you are an owner or environment admin for an LCS project.
 
-If you do not find the tenant you are looking for in this list, go to [LCS](https://lcs.dynamics.com/v2) and ensure that you are either an environment admin or a project owner of the LCS project for the tenant you are looking for. Please note also that only AAD accounts from the selected tenant are authorized to complete the sign up experience.
+If you don't find the tenant you are looking for in this list, go to [LCS](https://lcs.dynamics.com/v2) and ensure that you are either an environment admin or a project owner of the LCS project for the tenant you are looking for. Please note also that only AAD accounts from the selected tenant are authorized to complete the sign up experience.
 
 > [!NOTE]
-> After you have applied changes to Lifecycle Services it may take up to 30 min until the changes reflect in this list.
+> After you have applied changes to LCS, it may take up to 30 min until the changes reflect in this list.
 
 The lists shows the sign-up status for each tenant.
 
 :::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Screen shot showing the 'Sign up' option for a tenant.":::
 
-Select the **Click here to sign up** link to sign up your LCS tenant to participate in the preview. You must accept the terms and supply a business email address where we can send you communications related the preview sign-up process.
+Select the **Click here to sign up** link to sign your LCS tenant up to participate in the preview. You must accept the terms and supply a business email address where we can send you communications related the preview sign-up process.
 
 :::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Screen shot showing the sign up submission for a tenant.":::  
 
-Microsoft will review your request and inform you about the next steps to the email contact you have supplied on the sign up form.
+Microsoft will review your request and inform you about the next steps by replying to the email address you supplied on the sign up form.
 
-Once you have been granted access to the preview program, you will receive two promo codes for your LCS project. You can now deploy two environments in LCS using these promo codes. The environments must be using PEAP release 10.0.15 or later. Once completed, please notify Microsoft as instructed when you receive the promo codes, so that environment can be enabled for the features in the preview. We will  let you know once this configuration step is completed.
+Once you have been granted access to the preview program, you will receive two promo codes for your LCS project. You can now deploy two environments in LCS using these promo codes. The environments must be using PEAP release 10.0.15 or later. When you've finished applying the codes, please notify Microsoft (as instructed) so that Microsoft can finish enabling the environments for the preview features. We will let you know once this configuration step is completed.
 
-Now may then start configuring scale units and workloads in your preview environment.
+Now you can start configuring scale units and workloads in your preview environment.
 
 > [!IMPORTANT]
-> To configure cloud scale units you can [do all the configuration in the scale unit manager portal](#manage-cloud-scale-units-and-workloads-using-the-scale-unit-manager-portal).
+> When configuring cloud scale units, you can [do all the required steps in the Scale Unit Manager portal](#manage-cloud-scale-units-and-workloads-using-the-scale-unit-manager-portal).
 >
-> If want to use edge scale units with your preview deployment you need to do all scale unit configuration in the user experience on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). The Scale Unit Manager Portal cannot be used if you include an edge scale unit.
+> If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit.
 
 ### Manage cloud scale units and workloads using the scale unit manager portal
 

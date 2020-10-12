@@ -53,7 +53,7 @@ The following table provides an overview of the deployment steps.
 |Customer|Service the LBD environment with the previously uploaded customization package.|This makes non-shippable models and your customizations available on the LBD environment.|
 |Customer|Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
 |Customer|Run the "update settings" action through LCS.|Run this action with the same settings that already exist on the environment. This action then redeploys what was already deployed on the environment, but it will run the previously setup pre-deployment script, which will inject the necessary attributes so they can be passed to DbSync execution.|
-|Customer|Compete the scale unit configuration and workload assignment using steps listed in [Assign your LBD edge scale unit to a hub](#assign-your-lbd-edge-scale-unit-to-a-hub) | |
+|Customer|Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#assign-your-lbd-edge-scale-unit-to-a-hub) | |
 
 ## Set up and deploy an LBD environment with empty database
 
@@ -147,7 +147,7 @@ To assign your scale unit to a Supply Chain Management hub environment, run the 
 
 #### Warehouse management workloads
 
-Before configuring a warehouse management workload, please validate that on the hub in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) the following to features are enabled:
+Before configuring a warehouse management workload, make sure that the following two features are enabled on the hub in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Organization-wide work blocking*
 - *Automatic assigning of the guids on WHS user creation* (should be enabled by default)
