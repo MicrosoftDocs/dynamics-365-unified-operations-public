@@ -161,31 +161,33 @@ Grant permissions for the two Azure AD applications in Human Resources:
 
 When setup completes, you can select the virtual entities you want to generate and enable in your Common Data Service instance.
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In Human Resources, open the **Common Data Service (CDS) integration** page.
 
-2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
-
-3. Select the **Environment URL** in the **Details** section of the page.
-
-4. In the **Solution Health Hub**, select the **Advanced Find** icon in the top right of the page.
-
-5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Available HR Entities**.
-
-6. Use the filter options to find the entity or entities you want to enable.
-
-7. Select an entity from the list.
-
-8. On the entity page, change the **Has Been Generated** property to **Yes** for the entity.
-
-9. Save and close the entity page.
+2. Select the **Virtual entities** tab.
 
 > [!NOTE]
-> You can generate multiple virtual entities at once by using the **Change Multiple Records** page. Select multiple records on the page, and select **Edit** on the ribbon. You can then change the **Has Been Generated** property for all selected records.
+> The **Enable the virtual entity** toggle will be set to **Yes** automatically when all required setup has been completed. If the toggle is set to **No**, review the steps in previous sections of this document to ensure all prerequisite setup is completed.
 
-![Available HR Entities](./media/hr-admin-integration-virtual-entities-available.jpg)
+3. Select the entity or entities you want to generate in Common Data Service.
 
-> [!NOTE]
-> To streamline the process of generating virtual entities in future releases, the process will occur in a page in Human Resources.
+4. Select **Generate/refresh**.
+
+![Common Data Service Integraton](./media/hr-admin-integration-common-data-service-integration.jpg)
+
+## Check entity generation status
+
+When initiated from the Common Data Service (CDS) integration page, virtual entities are generated in Common Data Service through an asynchronous background process. Updates on the process are displayed in the action center. Detail on the process, including any error logs that may occur, are available in the Process automations page.
+
+1. In Human Resources, open the **Process automations** page.
+
+2. Select the **Background processes** tab.
+
+3. Select the **Virtual entity poll async operation background process** process.
+
+4. Select **View most recent results**.
+
+The slideout pane displays the most recent execution results for the process, allowing you view the log for the process execution, including any errors returned from Common Data Service.
+
 
 ## See also
 
