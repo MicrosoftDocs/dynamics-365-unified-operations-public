@@ -5,7 +5,7 @@ title: Regression suite automation tool
 description: The Regression suite automation tool lets you record business tasks using the task recorder and convert them into a suite of automated tests without the need to write source code.
 author: robadawy
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -70,6 +70,12 @@ The [How to create a test plan in Azure DevOps to use with the Regression suite 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
 
 The [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+### The improved Excel experience in RSAT 2.0
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
+
+The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube. 
 
 
 ## End-to-end flow
