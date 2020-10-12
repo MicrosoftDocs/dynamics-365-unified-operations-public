@@ -142,8 +142,10 @@
               items:
                 - name: System requirements for dual-write
                   href: data-entities/dual-write/dual-write-system-req.md
-                - name: Supported scenarios for dual-write setup
+                - name: Guidance for how to set up dual-write
                   href: data-entities/dual-write/connection-setup.md
+                - name: Considerations for initial synchronization
+                  href: data-entities/dual-write/initial-sync-guidance.md
                 - name: Dual-write setup from Lifecycle Services
                   href: data-entities/dual-write/lcs-setup.md
                 - name: Enable dual-write for existing Finance and Operations apps
