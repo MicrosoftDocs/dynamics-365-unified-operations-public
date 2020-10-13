@@ -172,8 +172,7 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 
 You can submit issues to Microsoft support. When you submit an issue to Microsoft, the information and attachments in the issue can be included in the Microsoft support incident. 
 
-**
-** LCS users must have a valid Microsoft support plan to submit issues to Microsoft. If you have trouble submitting issues to Microsoft, work with your administrator to make sure that your LCS credentials are added to or associated with your organization's support plan with Microsoft Partner Source Business Center.
+LCS users must have a valid Microsoft support plan to submit issues to Microsoft. If you have trouble submitting issues to Microsoft, work with your administrator to make sure that your LCS credentials are added to or associated with your organization's support plan with Microsoft Partner Source Business Center.
 
 1.  In the **Issue** grid, select the issue to submit to Microsoft, and then click **Submit to Microsoft**.
 2.  If your account is associated with multiple support organizations, select the organization to use to create the Microsoft support incident.
@@ -188,7 +187,6 @@ You can submit issues to Microsoft support. When you submit an issue to Microsof
 > The information in this section is not applicable to on-premises deployments. 
 
 When you deploy your application from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
-
 
 ## Prevent users from creating issues from the client
 By default, the System user role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the Help menu. If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System user role.
