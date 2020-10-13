@@ -97,7 +97,7 @@ There is layer of caching of product-specific data in the e-Commerce rendering N
 
 ## Browser hint meta tags
 
-Browser hint meta tags such as **preconnect** and **dns-prefetch** can be used to tell the browser what resources are needed ahead of time to render a page.  This will cause a broswer to initiate network connections before it normally would to make expensive network calls. This is useful for adding additional rendering, image, font or file endpoints used within a page.
+Browser hint meta tags such as **preconnect** and **dns-prefetch** can be used to tell the browser what resources are needed ahead of time to render a page.  This will cause a browwer to initiate network connections before it normally would to make expensive network calls earlier. This is useful for adding additional rendering, image, font or file endpoints used within a page.
 
 The **preconnect** hint can be used if the page relies on resources coming from external origins or domains to initiate a TCP connection.  This will cause a DNS lookup, TCP handshake and TLS negotiation to happen before the reference in the html document.
 
@@ -106,12 +106,14 @@ Example **preconnect** meta tag hint:
 <link rel="preconnect" href="https://DOMAIN_TO_PRECONNECT">    
 ```
 
-The **dns-prefetch** hint can be used if you can identify a resource the user is likely to navigated to or used. DNS prefecthing can can resolve a domain's address earlier than it's used to avoid this expensive step later.
+
+The **dns-prefetch** hint can be used if a resource is likely to navigated to or used on a page. DNS prefecthing can resolve a domain's address earlier than it's used to avoid this expensive step later.
 
 Example **dns-prefetch** meta tag hint:
 ```html
 <link rel="dns-prefetch" href="https://DOMAIN_TO_PREFETCH">
 ```
+
 
 Adding meta tags to a page can be done in the site builder tool using the **Metatags** module.  The **Metatags** module should be added to a page templates "HTML Head" section. See the [work with templates](../work-with-templates.md) for more information.
 
