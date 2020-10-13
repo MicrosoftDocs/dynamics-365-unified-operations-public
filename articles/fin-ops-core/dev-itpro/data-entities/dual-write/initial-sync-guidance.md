@@ -72,7 +72,7 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 
 ### Initial sync for entity map with 10 or more lookups is not currently supported
 
-This limitation applies to only the initial sync from Common Data Service for entity maps with 10 or more lookups. If you run the initial sync against an entity map with 10 or more lookups, you might encounter this error: 
+This limitation applies to only the initial sync from Common Data Service for entity maps with 10 or more lookups. If you run the initial sync against an entity map with 10 or more lookups, you might encounter this error:
 
 ```console
 5 Attempts to get data from https://XXXX.azure-apim.net/apim... Failed
@@ -102,22 +102,22 @@ Please refer to [Troubleshoot issues during initial synchronization](dual-write/
 
 ## Guidance matrix
 
-Finance and Operations instance | Common Data Service instance | Has data to run initial sync | Description | Max Volume in an Entity | Data Entity Type (Single thread/Multi thread) | Approach
+Finance and Operations instance | Common Data Service instance | Has data to run initial sync | Description | Max volume in an entity | Data entity type (single-threaded or multi-threaded) | Approach
 ---|---|---|---|---|---|---
-| New | New | No | A new Finance and Operations app instance and a new model-driven app instance, with no initial data | -NA- | Any | 1. Activate dual-write and skip initial write
-| New | New | Yes | A new Finance and Operations app instance and a new model-driven app instance, with migrated data in either apps | < 500K | [Single-threaded](#single-threaded-entities) | 1. Migrate data to Finance and Operations apps<br/>Run Initial sync
-|  |  |  |  | < 500K | Multi-Threaded | 1. Migrate data to CDS<br/>2. Run Initial sync
-|  |  |  |  | > 500K | Any | 1. Migrate data to each app, outside of Initial sync<br/>1. Activate dual-write and skip initial sync
-| New | Existing | Yes | A new Finance and Operations app instance and an existing model-driven app instance | < 70K | [Single-threaded](#single-threaded-entities) | 1. Create a new company in Finance and Operations apps<br/>2.BootStrap CDS for company code<br/>3. Run Initial sync.
-|  |  |  |  | > 70K | [Single-threaded](#single-threaded-entities) | 1. Create a new company in Finance and Operations apps<br/>2. BootStrap CDS for company code<br/>3. Migrate data to each app, outside of Initial sync<br/>4. Activate dual-write and skip initial sync.
-|  |  |  |  | < 500K | Multi-Threaded | 1. Create a new company in Finance and Operations apps<br/>2. BootStrap CDS for company code<br/>3. Run Initial sync
-|  |  |  |  | > 500K | Any | 1. Create a new company in Finance and Operations apps<br/>2. BootStrap CDS for company code<br/>3. Migrate data to each app, outside of Initial sync<br/>4. Activate Dual-write and skip initial sync
-| Existing | New | Yes | An existing Finance and Operations app instance and a new model-driven app instance | < 500K | Any | 1. Run Initial sync
-|  |  |  |  | > 500K | Any | 1. Migrate data to each app<br/>2. Activate Dual-write and skip initial sync
-| Existing | Existing | Yes | An existing Finance and Operations app instance and existing model-driven app instance | < 70K | [Single-threaded](#single-threaded-entities) | 1. BootStrap CDS for company code<br/>2. Run Initial sync</td></tr>
-|  |  |  |  | > 70K | [Single-threaded](#single-threaded-entities) | 1. BootStrap CDS for company code<br/>2. Migrate data to each app, outside of Initial sync<br/>3. Activate dual-write and skip initial sync
-|  |  |  |  | < 500K | Multi-Threaded | 1. BootStrap CDS for company code<br/>2. Run Initial sync
-|  |  |  |  | > 500K | Any | 1. BootStrap CDS for company code<br/>2. Migrate data to each app, outside of Initial sync<br/>3. Activate Dual-write and skip initial sync
+| New | New | No | A new Finance and Operations app instance and a customer engagement app instance, with no initial data. | -NA- | Any | 1. Activate dual-write and skip the initial sync.
+| New | New | Yes | A new Finance and Operations app instance and a customer engagement app instance, with migrated data in either app. | < 500K | [Single-threaded](#single-threaded-entities) | 1. Migrate data to the Finance and Operations app.<br>2. Run the initial sync.
+|  |  |  |  | < 500K | multi-threaded | 1. Migrate data to Common Data Service.<br>2. Run the initial sync.
+|  |  |  |  | > 500K | Any | 1. Migrate data to each app, outside of the initial sync.<br>2. Activate dual-write and skip initial sync.
+| New | Existing | Yes | A new Finance and Operations app instance and an existing customer engagement app instance | < 70K | [single-threaded](#single-threaded-entities) | 1. Create a new company in the Finance and Operations app<br>2.Bootstrap Common Data Service for the company code.<br>3. Run the initial sync.
+|  |  |  |  | > 70K | [single-threaded](#single-threaded-entities) | 1. Create a new company in the Finance and Operations app.<br>2. Bootstrap Common Data Service for the company code.<br>3. Migrate data to each app, outside of the initial sync.<br>4. Activate dual-write and skip the initial sync.
+|  |  |  |  | < 500K | multi-threaded | 1. Create a new company in the Finance and Operations app.<br>2. Bootstrap Common Data Serivce for the company code.<br>3. Run the initial sync.
+|  |  |  |  | > 500K | Any | 1. Create a new company in the Finance and Operations app.<br>2. Bootstrap Common Data Service for the company code.<br>3. Migrate data to each app, outside of the initial sync.<br>4. Activate dual-write and skip the initial sync.
+| Existing | New | Yes | An existing Finance and Operations app instance and a new customer engagement app instance | < 500K | Any | 1. Run the initial sync.
+|  |  |  |  | > 500K | Any | 1. Migrate data to each app.<br>2. Activate dual-write and skip the initial sync.
+| Existing | Existing | Yes | An existing Finance and Operations app instance and and existing customer engagement app instance | < 70K | [single-threaded](#single-threaded-entities) | 1. Bootstrap Common Data Service for the company code.<br>2. Run the initial sync.
+|  |  |  |  | > 70K | [single-threaded](#single-threaded-entities) | 1. Bootstrap Common Data Service for the company code.<br>2. Migrate data to each app, outside of the initial sync.<br>3. Activate dual-write and skip the initial sync.
+|  |  |  |  | < 500K | multi-threaded | 1. Bootstrap Common Data Service for the company code.<br>2. Run the initial sync.
+|  |  |  |  | > 500K | Any | 1. Bootstrap Common Data Service for the company code.<br>2. Migrate data to each app, outside of the initial sync.<br>3. Activate dual-write and skip the initial sync.
 
 ## <a id="single-threaded-entities"></a>Single-threaded entities
 
