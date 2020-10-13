@@ -62,7 +62,7 @@ After you've finished entering information for the lease, follow these steps to 
 4. After you've finished reviewing the payment schedule, select **Confirm schedule**. After the schedule is confirmed, the lease is no longer available for editing.
 
     > [!NOTE]
-    > The system automatically calculates the lease term from the payment schedule lines on the create lease page.
+    > The system automatically calculates the lease term from the payment schedule lines on the **Add lease** page.
     >
     > To calculate the lease term in months, the system finds the difference between the start date and the end date for a specific payment schedule line. It then moves to the next payment schedule line and finds the difference again. Finally, the system sums all the amounts to determine the lease term in months.
 
