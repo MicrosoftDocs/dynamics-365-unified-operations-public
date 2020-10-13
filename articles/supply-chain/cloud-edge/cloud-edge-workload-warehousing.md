@@ -41,7 +41,7 @@ ms.dyn365.ops.version: 10.0.15
 
 This feature allows scale units to run selected processes from the warehouse management capabilities. Cloud scale units run their workloads in the cloud using dedicated processing capacity in your selected Azure region. With edge scale units, you can run certain workloads independently on premises, even while temporarily disconnected from the cloud.
 
-In this topic, warehouse management executions within a warehouse defined as an edge scale unit are called a *Warehouse execution system (WES)*.
+In this topic, warehouse management executions within a warehouse defined as a scale unit are called a *Warehouse execution system (WES)*.
 
 ## Prerequisites
 
