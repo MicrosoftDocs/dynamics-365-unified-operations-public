@@ -45,9 +45,9 @@ In this topic, warehouse management executions within a warehouse defined as a s
 
 ## Prerequisites
 
-You must have a Supply Chain Management hub and a scale unit deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Cloud and Edge scale units for manufacturing and warehouse management workloads](cloud-edge-landing-page.md).
+You must have a Supply Chain Management hub and a scale unit deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Cloud and edge scale units for manufacturing and warehouse management workloads](cloud-edge-landing-page.md).
 
-## How the WES edge scale unit functions
+## How the WES workload works on scale units
 
 For the processes in the warehouse management workload, the data is synchronized between the hub and the scale units.
 
