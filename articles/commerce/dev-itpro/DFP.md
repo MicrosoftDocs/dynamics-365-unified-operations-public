@@ -49,18 +49,15 @@ This topic describes out-of-box integrations that are available between Microsof
 
 Fraud Protection is a service that offers fraud protection solutions to help retailers prevent fraudulent activity and identify places where fraud might be unnoticed. This topic describes out-of-box integrations between Fraud Protection and Commerce. It will be updated as new integrations between the two services are released in future releases. For more information about Fraud Protection, including information about modules that aren't yet supported by an out-of-box integration with Commerce, visit the [Fraud Protection landing page](https://dynamics.microsoft.com/ai/fraud-protection/). You can also [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative to discuss how Fraud Protection can help boost profitability, reduce operational expenses, and improve customer experiences.
 
-## Dynamics 365 Commerce customer offer
-
-Starting October 1, 2020, a limited capacity of Fraud Protection is included in the Microsoft Dynamics 365 Commerce license. Commerce customers can now use Fraud Protection for no extra charge, up to the limits specified below:
+Starting October 2020, a limited capacity of Fraud Protection is included in the Microsoft Dynamics 365 Commerce license. Commerce customers can now use Fraud Protection for no extra charge, up to the limits specified below:
 
 - **Purchase protection** - Up to 2,000 assessments per month.
 - **Account protection** - Up to 20,000 assessments per month. 
 - **Loss prevention** - Up to 8,000 transactions per month. 
 
-If their usage requires higher limits, Commerce customers have the option of purchasing additional Fraud Protection add-ons. This offer makes it easier for all existing and new Commerce customers to evaluate how Fraud Protection capabilities can help protect their organizations against fraudulent purchases, fake accounts creation, suspicious log-ins, and employee fraud in the form of inappropriate discounts or returns. 
+You have the option of purchasing additional Fraud Protection add-ons if your usage requires higher limits. 
 
 To start using Fraud Protection if you are an existing Commerce customer, visit the [Fraud Protection portal](https://dfp.microsoft.com/), sign in with tenant global administrator credentials, and complete a one-time setup for your environment.
-
 
 ## Purchase protection in Commerce
 
