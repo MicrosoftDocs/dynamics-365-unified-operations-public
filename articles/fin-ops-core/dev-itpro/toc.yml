@@ -1432,9 +1432,9 @@
         href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
       - name: Get support for Finance and Operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
-      - name: Set up technical support for Finance and Operations
+      - name: Set up technical support for Finance and Operations apps
         href: lifecycle-services/support-experience.md
-      - name: Manage Finance and Operations support experiences
+      - name: Manage support experiences for Finance and Operations apps
         href: lifecycle-services/cloud-powered-support-lcs.md
     - name: System administration
       items:
