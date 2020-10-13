@@ -57,6 +57,10 @@
       href: hr-admin-overview.md
     - name: System requirements
       href: hr-admin-system-requirements.md
+    - name: Prepare for go-live
+      href: hr-admin-go-live-prepare.md
+    - name: Go-live FAQ
+      href: hr-admin-go-live-faq.md
     - name: Set up and manage instances
       items:
       - name: Provision Human Resources
@@ -259,10 +263,6 @@
         href: hr-admin-troubleshooting-reporting.md
       - name: Integration FAQ
         href: hr-admin-troubleshooting-integration.md
-    - name: Prepare for go-live
-      href: hr-admin-go-live-prepare.md
-    - name: Go-live FAQ
-      href: hr-admin-go-live-faq.md
   - name: Developer Guide
     items:
     - name: Overview
