@@ -53,6 +53,7 @@ Before you can begin to work with the electronic invoice functionality, the foll
 - [Electronic invoice parameters](#einvoicesparameters)
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
+- [Items](#items)
 - [Digital certificates](#digitalcert)
 - [Optional: Destination for XML file output](#destination)
 
@@ -153,7 +154,21 @@ Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a 
 
 In the **E-invoice** section, you can also set the **eInvoice attachment** option to **Yes**. In this case, after you print an invoice (either during or after posting), the system automatically attaches the PDF file to the invoice and eInvoice (see [Electronic invoice register](#einvoiceregister)), and the file is included in the XML file (**Allegatti** block).
 
-### <a name="digitalcert"></a>Digital certificates
+### <a name="items"></a>Items
+External item description (Product information management > Products > Released products,tab Sell, Related information > External item description). Customer relation, External item number, Description and External item text should be filled in (External item description page).   
+Filling the block CodiceArticolo
+
+CodiceTipo is filled in on following conditions:
+- If Item bar code is filled in the item the this field is fillig with "EAN"
+- If Item bar code is not filled in the item and external item description exists for this item and the customer then this field is filling with the value in Description field
+- If Item bar code is not filled in the item and external item description does not exist for this item then this field is filling with "Codice Art. fornitore"
+CodiceValore is filled in on following conditions:
+- If Item bar code is filled in the item the this field is fillig with theItem bar code
+- If Item bar code is not filled in the item and external item description exists for this item and the customer then this field is filling with the value in External item number field
+- If Item bar code is not filled in the item and external item description does not exist for this item then this field is filling with Item number 
+
+
+### <a name="digitalcert"> </a>Digital certificates
 
 Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates** to electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type.
 
