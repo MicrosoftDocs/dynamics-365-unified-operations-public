@@ -59,4 +59,4 @@ After you post the initial recognition journal entry, the transaction appears as
 The fixed asset can now be depreciated by using the standard depreciation functionality in Fixed assets. For more information about depreciation, see [Depreciation methods and conventions](../fixed-assets/depreciation-methods-conventions.md).
 
 > [!NOTE]
-> If you associate a fixed asset with a lease, the following transactions and inquiry should occur on the **Asset depreciation**, **Lease impairment**, and **Asset transactions** pages in Fixed assets. The corresponding functions in Asset leasing will automatically be disabled.
+> If you associate a fixed asset with a lease, the **Asset depreciation** and **Lease impairment** buttons are disabled in Asset leasing. You can view asset depreciation and lease impairment transactions from Fixed assets. The **Asset transactions** button, which opens an inquiry form is also disabled. You can also open the **Asset transactions** inquiry form in Fixed assets.  
