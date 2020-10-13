@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a device to run the production floor execution interface
-description: The production floor execution interface is set up for each specific device on the production floor. Companies typically set up each device differently depending on the purpose the device serves. For example, a company could have one device in the reception area, where workers clock in and clock out, and another on the shop floor where workers manage their jobs.
+description: The production floor execution interface is set up for every device on the production floor. Companies typically set up each device differently, depending on the purpose that the device serves. For example, a company might have one device in the reception area, where workers clock in and clock out, and another on the shop floor, where workers manage their jobs.
 author: johanhoffmann
 manager: tfehr
 ms.date: 10/05/2020
@@ -32,52 +32,56 @@ ms.dyn365.ops.version: Release 10.0.15
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The production floor execution interface is set up for each specific device on the production floor. Companies typically set up each device differently depending on the purpose the device serves. For example, a company could have one device in the reception area, where workers clock in and clock out, and another on the shop floor where workers manage their jobs.
+The production floor execution interface is set up for every device on the production floor. Companies typically set up each device differently, depending on the purpose that the device serves. For example, a company might have one device in the reception area, where workers clock in and clock out, and another on the shop floor, where workers manage their jobs.
 
 ## Set the configuration and filters for a specific device
 
-To set configuration and job filters for a device, sign in to the **Production floor execution** page using an account with a security role that includes the *Maintain time supervisor* duty. Of the out-of-box security roles, only *Shop floor supervisor* has this duty. To set the configuration and filters, do the following:
+To set the configuration and job filters for a device, sign in to the **Production floor execution** page by using an account that has a security role that includes the *Maintain time supervisor* duty. (Among the out-of-box security roles, only *Shop floor supervisor* has this duty.) Then follow these steps.
 
-1. Go to the device you want to set up and sign in to Supply Chain Management as a shop floor supervisor (using an account that includes the *Maintain time supervisor* duty).
-1. Make sure a configuration is available for the device that you are setting up. If no configuration already exists, then a default configuration is provided. For more information about how to make a configuration, see: [Configure the production floor execution interface](production-floor-execution-configure.md).
-1. Go to **Production control \> Manufacturing execution \>Production floor execution.**
-1. Depending on whether the production floor execution interface has already been configured on the current device, you will either see a welcome screen (if the device has never been configured) on the sign-on screen (if it has already been configured at least once). Either way, select the **Configure** button.
-1. Select a configuration from the list.
-1. Select **Next.**
-1. Select one or more filters to apply to the current device. These settings will limit the jobs shows on this device to help make sure that only relevant jobs appear. To set a filter, select the filter type to open a list of values and then select the value to filter on. The following filters are available:
-    - **Production unit**: This is the highest-level filter. It typically refers to a large work area with several resource groups and individual resources in it.
-    - **Resource group**: This is a mid-level filter. It typically refers to a collection of related resources in a limited area of the workspace. If you select a **Production unit** first, then the list of resource groups will only show groups from that unit. Otherwise, all available resource groups are shown.
-    - **Resource**: This is the most specific filter. It typically refers to a specific machine or other single resource. If you select a **Resource group** and/or **Production unit** first, then the list of resource groups will only show resources from that group or unit. Otherwise, all available resources are shown.
+1. Go to the device that you want to set up, and sign in to Microsoft Dynamics 365 Supply Chain Management as a shop floor supervisor. (Use an account that includes the *Maintain time supervisor* duty.)
+1. Make sure that a configuration is available for the device that you're setting up. If no configuration already exists, a default configuration is provided. For more information about how to set up a configuration, see [Configure the production floor execution interface](production-floor-execution-configure.md).
+1. Go to **Production control \> Manufacturing execution \> Production floor execution**.
+
+    If the production floor execution interface has already been configured at least one time on the current device, a sign-in page appears. Otherwise, a welcome page appears.
+    
+1. On either the sign-in page or the welcome page, select **Configure**.
+1. Select a configuration in the list.
+1. Select **Next**.
+1. Select one or more filters to apply to the current device. These filters will help ensure that only relevant jobs are shown on the device. To set a filter, select the filter type to open a list of values, and then select the value to filter on. The following filters are available:
+
+    - **Production unit** – This filter is the highest-level filter. It typically refers to a large work area that has several resource groups and individual resources in it.
+    - **Resource group** – This filter is a mid-level filter. It typically refers to a collection of related resources in a limited area of the workspace. If you select a **Production unit** filter first, the list of resource groups shows only groups from that unit. Otherwise, it shows all available resource groups.
+    - **Resource** – This filter is the most specific filter. It typically refers to a specific machine or other single resource. If you select a **Resource group** and/or **Production unit** filter first, the list of resources shows only resources from that group and/or unit. Otherwise, it shows all available resources.
 
 1. Select **OK**.
-1. The sign-in screen is shown and your device is ready for use.
+1. The sign-in page appears, and your device is ready for use.
 
 ## Allow a worker to override the default filters
 
-You can give specific workers permission to change the filter settings on any device that they use. For workers that have this permission, the production floor execution interface provides a **Filter** button on the **All jobs** and **Active job** pages.
+You can give specific workers permission to change the filter settings on any device that they use. For workers who have this permission, the production floor execution interface provides a **Filter** button on the **All jobs** and **Active job** pages.
 
 > [!NOTE]
-> When a worker changes a filter, the new filter will apply from then on for all users who sign in to the device.
+> If a worker changes a filter, the new filter applies from that point forward, for all users who sign in to the device.
 
-To allow a worker to override the default job filters set up for a device:
+To allow a worker to override the default job filters that have been set up for a device, follow these steps.
 
 1. Go to **Time and attendance \> Setup \> Time registration workers**.
-1. Select a worker from the list to open that worker's **Time registration workers** page.
-1. Open the **Time registration** tab and set **Set filters** to *Yes*.
+1. Select a worker in the list to open that worker's **Time registration workers** page.
+1. On the **Time registration** tab, set the **Set filters** option to *Yes*.
 
-## Run the interface in full screen
+## Run the interface in full-screen mode
 
-Often, you will run the production floor execution interface on a device used exclusively for this purpose. Therefore, it might make sense to run the interface in full-screen mode without showing any navigation and/or browser chrome.
+Often, you will run the production floor execution interface on a device that is used exclusively for that purpose. Therefore, it might make sense to run the interface in full-screen mode, without showing any navigation and/or browser chrome.
 
-- To hide the left bar shown by Supply Chain Management, add the following text to the end of the URL in the browser address bar: `&limitednav=true`.
-- To also hide the address bar in the browser, use the browser's native full-screen mode. (See your browser's documentation for instructions.)
+- To hide the left navigation pane that is shown in Supply Chain Management, add the following text to the end of the URL in the browser's address bar: **\&limitednav=true**
+- To also hide the browser's address bar, use the browser's native full-screen mode. (For instructions, see your browser's documentation.)
 
- The following illustration shows how the interface looks by default (top) compared to how it looks when running full-screen and with the left tab hidden (bottom).
+The upper part of the following illustration shows how the interface looks by default. The lower part shows how it looks in full-screen mode when the left navigation pane is hidden.
 
-![Standard vs full screen interface](media/pfei-full-screen.png "Standard vs full-screen interface")
+![Standard vs. full-screen interface](media/pfei-full-screen.png "Standard vs. full-screen interface")
 
 ## Extend the session past 12 hours
 
-By default, the production floor execution interface automatically signs out if nobody uses it for 12 hours. Thereafter, a Supply Chain Management user must sign in again. However, you can extend the time-out limit to up to 90 days.
+By default, the production floor execution interface automatically signs out if nobody uses it for 12 hours. A Supply Chain Management user must then sign in again. However, you can extend the time-out limit to up to 90 days.
 
-To extend the time-out limit, sign in to Supply Chain Management. Then go to **System administration \> Users \> Session extensions**. Then specify the Supply Chain Management user account used to sign in to the device and the number of hours the session should stay active for.
+To extend the time-out limit, sign in to Supply Chain Management, and go to **System administration \> Users \> Session extensions**. Specify the Supply Chain Management user account that is used to sign in to the device, and the number of hours that the session should stay active for.
