@@ -2,10 +2,10 @@
 # required metadata
 
 title: Best practices for Dynamics 365 Commerce Development 
-description: This topic describes some best practices when developing Dynamics 365 Commerce e-Commerce customizations. 
+description: This topic describes some best practices to follow when developing Dynamics 365 Commerce e-Commerce customizations. 
 author: samjarawan
 manager: annbe
-ms.date: 10/06/2020
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,20 +32,24 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes some best practices when developing Dynamics 365 Commerce e-Commerce customizations.
+This topic describes some best practices to follow when developing Dynamics 365 Commerce e-Commerce customizations.
 
 ## Overview
-The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions and themes can be created or the provided (module library)[starter-kit-overview.md] can be extended. It is important to consider web site performance when building e-Commerce customizations.  Standard best practices used for web site development are applicable including minimizing HTML, JavaScript, CSS and optimizing images.
+
+The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions and themes can be created, or the provided (module library)[starter-kit-overview.md] can be extended. It is important to consider web site performance when building e-Commerce customizations. Standard best practices used for website development are applicable including minimizing HTML, JavaScript, and CSS files, and optimizing images.
 
 ## Infrastructure setup
 
-The [Dynamics 365 Commerce system](../commerce-architecture.md) includes various sub-systems including the Back Office HQ, the Commerce Scale Unit, the Web Storefront which includes the Node rendering service, the Commerce site builder, and the product recommendations services.  For best performance the various components should be deployed into the same region.  The Commerce Scale Unit setup allows you to the select specific region. The specific region decision should be made in accordance with the customer's regional location.
+The [Dynamics 365 Commerce system](../commerce-architecture.md) includes various subsystems including Commerce headquarters, Commerce Scale Unit, the web storefront that includes the Node rendering service, Commerce site builder, and the product recommendations services. For best performance, the various components should all be deployed to the same region. The specific region decision should be made in accordance with the customer's regional location.
 
-## Minimizing HTML, CSS & JavaScript
+> [!NOTE]
+> Commerce Scale Unit allows you to select a specific region during setup.
 
-The Dynamics 365 online SDK provides development extensions using TypeScript and SCSS files.  TypeScript is a typed superset of JavaScript that compiles to plain JavaScript and SCSS is a superset of CSS that is compiled down to standard CSS.  When the configuration package is built using [yarn msdyn365 pack](cli-command-reference#pack.md) or the Node server is started on a local development environment using the [yarn start](setup-dev-environment#run-your-node-app.md) command, the typescript files and SCSS files will compiled down to JavaScript and CSS respectively.  These files are also minified to reduce network bandwidth.
+## Minimizing HTML, CSS, and JavaScript
 
-You should ensure extra unused JavaScript and CSS are not included in your extension package.  Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript.
+The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript and SCSS is a superset of Cascading Style Sheets (CSS) that is compiled down to standard CSS. When the configuration package is built using the [yarn msdyn365 pack](cli-command-reference#pack.md) command, or the Node server is started on a local development environment using the [yarn start](setup-dev-environment#run-your-node-app.md) command, the TypeScript and SCSS files will compiled down to JavaScript and CSS respectively. These files are also minified to reduce network bandwidth.
+
+You should ensure that extra, unused JavaScript and CSS files are not included in your extension package. Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript.
 
 ### Reducing JavaScript by excluding unused modules
 Dynamics 365 Commerce comes with a large [Module Library](../starter-kit-overview.md) set of modules.  If there are modules that won't be used on the e-Commerce site, they can be excluded to reduce the JavaScript chunk size.  The excluded modules will not be rendered on the live e-Commerce site or available within the site builder tool when authoring pages.
