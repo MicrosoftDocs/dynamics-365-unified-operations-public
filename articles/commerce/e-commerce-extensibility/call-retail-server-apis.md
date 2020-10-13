@@ -272,27 +272,6 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
 export default ProductFeature;
 ```
 
-### Inline cache options
-The Dynamics 365 online SDK's data action layer provides flexibility on controlling how a data action response should be cached and its scope (application or request). For all the custom data actions, the cache type can be defined as part of the [action input](data-actions#key-parts-of-a-data-action.md) and it is a common scenario for data actions to invoke a Retail proxy action, or the module business logic which will invoke a Retail proxy action.  An example might be a user clicks on a "find store" button. For these scenarios, module can set the "bypassCache" option on the action context when invoking the Retail proxy action. This setting tells SDK to honor the module's given cache preferences. 
-
-Supported values for bypassCache are: 
- 
-* get - ignores cache while performing read and fetches the latest information from Retail server.
-* none - ignores cache altogether.
- 
-Usage example:
-
-```typescript
-if (checkoutCartId) {
-    try {
-        checkoutCart = await readAsync({ callerContext: ctx, bypassCache: 'none' }, checkoutCartId);
-    } catch {
-        ctx.telemetry.error('Error getting checkout cart based on saved checkout cart id');
-        ctx.telemetry.exception(error);
-    }
-}
-```
-
 
 ## Additional resources
 
