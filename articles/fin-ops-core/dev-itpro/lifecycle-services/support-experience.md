@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Set up technical support for Finance and Operations apps 
 [!include [banner](../includes/banner.md)]
 
- Prerequisites
+Prerequisites
 --------------
 
 Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created when you set up a subscription for one of the Microsoft Dynamics 365 Finance and Operations apps.
