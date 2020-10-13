@@ -113,7 +113,7 @@ If you do not find the PartnerSource Business Center account, ensure that your s
 
 ![Add contract](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
-### Sign-in specfic options
+### Sign-in specific options
 The following incidents and support benefits will appear based on your sign in, if applicable:
 
 -   MPN gold and silver incidents.
