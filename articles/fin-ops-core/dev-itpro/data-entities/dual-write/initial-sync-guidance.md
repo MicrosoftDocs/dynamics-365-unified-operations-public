@@ -102,59 +102,28 @@ Please refer to [Troubleshoot issues during initial synchronization](dual-write/
 
 ## Guidance matrix
 
-
-
-<table>
-  <thead>
-    <tr class="header"><th>Finance and Operations instance</th><th>CDS instance</th><th>Has data to run initial sync</th><th>Description</th><th>Max Volume in an Entity</th><th>Data Entity Type (Single thread/Multi thread)</th><th>Approach</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd"><td>New</td><td>New</td><td>No</td><td>A new Finance and Operations app instance and a new model-driven app instance, with no initial data</td><td>-NA-</td><td>Any</td><td>1. Activate dual-write and skip initial write</td></tr>
-    <tr class="even"><td>New</td><td>New</td><td>Yes</td><td>A new Finance and Operations app instance and a new model-driven app instance, with migrated data in either apps</td><td>&lt; 500K</td><td>Single-Threaded (*)</td><td>1. Migrate data to Finance and Operations apps<br />
-2. Run Initial sync</td></tr>
-    <tr class="odd"><td></td><td></td><td></td><td></td><td>&lt; 500K</td><td>Multi-Threaded</td><td>1. Migrate data to CDS<br />
-2. Run Initial sync</td></tr>
-    <tr class="even"><td></td><td></td><td></td><td></td><td>&gt; 500K</td><td>Any</td><td>1. Migrate data to each app, outside of Initial sync<br />
-2. Activate dual-write and skip initial sync</td></tr>
-    <tr class="odd"><td>New</td><td>Existing</td><td>Yes</td><td>A new Finance and Operations app instance and an existing model-driven app instance</td><td>&lt; 70K</td><td>Single-Threaded (*)</td><td>1. Create a new company in Finance and Operations apps<br />
-2. BootStrap CDS for company code<br />
-3. Run Initial sync</td></tr>
-    <tr class="even"><td></td><td></td><td></td><td></td><td>&gt; 70K</td><td>Single-Threaded (*)</td><td>1. Create a new company in Finance and Operations apps<br />
-2. BootStrap CDS for company code<br />
-3. Migrate data to each app, outside of Initial sync<br />
-4. Activate dual-write and skip initial sync</td></tr>
-    <tr class="odd"><td></td><td></td><td></td><td></td><td>&lt; 500K</td><td>Multi-Threaded</td><td>1. Create a new company in Finance and Operations apps<br />
-2. BootStrap CDS for company code<br />
-3. Run Initial sync</td></tr>
-    <tr class="even"><td></td><td></td><td></td><td></td><td>&gt; 500K</td><td>Any</td><td>1. Create a new company in Finance and Operations apps<br />
-2. BootStrap CDS for company code<br />
-3. Migrate data to each app, outside of Initial sync<br />
-4. Activate Dual-write and skip initial sync</td></tr><tr class="odd"><td>Existing</td><td>New</td><td>Yes</td><td>An existing Finance and Operations app instance and a new model-driven app instance</td><td>&lt; 500K</td><td>Any</td><td>1. Run Initial sync</td></tr>
-    <tr class="even"><td></td><td></td><td></td><td></td><td>&gt; 500K</td><td>Any</td><td>1. Migrate data to each app<br />
-2. Activate Dual-write and skip initial sync</td></tr><tr class="odd"><td>Existing</td><td>Existing</td><td>Yes</td><td>An existing Finance and Operations app instance and existing model-driven app instance</td><td>&lt; 70K</td><td>Single-Threaded (*)</td><td>1. BootStrap CDS for company code<br />
-2. Run Initial sync</td></tr>
-    <tr class="even"><td></td><td></td><td></td><td></td><td>&gt; 70K</td><td>Single-Threaded (*)</td><td>1. BootStrap CDS for company code<br />
-2. Migrate data to each app, outside of Initial sync<br />
-3. Activate dual-write and skip initial sync</td></tr>
-    <tr class="odd"><td></td><td></td><td></td><td></td><td>&lt;500K</td><td>Multi-Threaded</td><td>1. BootStrap CDS for company code<br />
-2. Run Initial sync</td></tr>
-    <tr class="even"><td></td><td></td><td></td><td></td><td>&gt; 500K</td><td>Any</td><td>1. BootStrap CDS for company code<br />
-2. Migrate data to each app, outside of Initial sync<br />
-3. Activate Dual-write and skip initial sync</td></tr>
-  </tbody>
-</table>
+Finance and Operations instance | Common Data Service instance | Has data to run initial sync | Description | Max Volume in an Entity | Data Entity Type (Single thread/Multi thread) | Approach
+---|---|---|---|---|---|---
+| New | New | No | A new Finance and Operations app instance and a new model-driven app instance, with no initial data | -NA- | Any | 1. Activate dual-write and skip initial write
+| New | New | Yes | A new Finance and Operations app instance and a new model-driven app instance, with migrated data in either apps | < 500K | [Single-threaded](#single-threaded-entities) | 1. Migrate data to Finance and Operations apps<br/>Run Initial sync
+|  |  |  |  | < 500K | Multi-Threaded | 1. Migrate data to CDS<br/>2. Run Initial sync
+|  |  |  |  | > 500K | Any | 1. Migrate data to each app, outside of Initial sync<br/>1. Activate dual-write and skip initial sync
+| New | Existing | Yes | A new Finance and Operations app instance and an existing model-driven app instance | < 70K | [Single-threaded](#single-threaded-entities) | 1. Create a new company in Finance and Operations apps<br/>2.BootStrap CDS for company code<br/>3. Run Initial sync.
+|  |  |  |  | > 70K | [Single-threaded](#single-threaded-entities) | 1. Create a new company in Finance and Operations apps<br/>2. BootStrap CDS for company code<br/>3. Migrate data to each app, outside of Initial sync<br/>4. Activate dual-write and skip initial sync.
+|  |  |  |  | < 500K | Multi-Threaded | 1. Create a new company in Finance and Operations apps<br/>2. BootStrap CDS for company code<br/>3. Run Initial sync
+|  |  |  |  | > 500K | Any | 1. Create a new company in Finance and Operations apps<br/>2. BootStrap CDS for company code<br/>3. Migrate data to each app, outside of Initial sync<br/>4. Activate Dual-write and skip initial sync
+| Existing | New | Yes | An existing Finance and Operations app instance and a new model-driven app instance | < 500K | Any | 1. Run Initial sync
+|  |  |  |  | > 500K | Any | 1. Migrate data to each app<br/>2. Activate Dual-write and skip initial sync
+| Existing | Existing | Yes | An existing Finance and Operations app instance and existing model-driven app instance | < 70K | [Single-threaded](#single-threaded-entities) | 1. BootStrap CDS for company code<br/>2. Run Initial sync</td></tr>
+|  |  |  |  | > 70K | [Single-threaded](#single-threaded-entities) | 1. BootStrap CDS for company code<br/>2. Migrate data to each app, outside of Initial sync<br/>3. Activate dual-write and skip initial sync
+|  |  |  |  | < 500K | Multi-Threaded | 1. BootStrap CDS for company code<br/>2. Run Initial sync
+|  |  |  |  | > 500K | Any | 1. BootStrap CDS for company code<br/>2. Migrate data to each app, outside of Initial sync<br/>3. Activate Dual-write and skip initial sync
 
 ## <a id="single-threaded-entities"></a>Single-threaded entities
 
--   Sales tax codes (msdyn\_taxcodes)
-
--   Customers V3 (accounts)
-
--   Vendors V2 (msdyn\_vendors)
-
--   Warehouses (msdyn\_warehouses)
-
--   Product categories (msdyn\_productcategories)
-
--   Employment (cdm\_employments)
+- Sales tax codes (msdyn\_taxcodes)
+- Customers V3 (accounts)
+- Vendors V2 (msdyn\_vendors)
+- Warehouses (msdyn\_warehouses)
+- Product categories (msdyn\_productcategories)
+- Employment (cdm\_employments)
