@@ -64,7 +64,7 @@ The following setup scenarios are supported:
 
 ## <a id="new-new"></a>A new Finance and Operations app instance and a new customer engagement app instance
 
-To set up a dual-write connection between a new instance of a Finance and Operations app that has no data and a new instance of a customer engagement app in Dynamics 365, follow the steps in [Dual-write setup from Lifecycle Services](lcs-setup.md). When the connection setup is completed, the following actions occur automatically:
+To set up a dual-write connection between a new instance of a Finance and Operations app that has no data and a new instance of a customer engagement app, follow the steps in [Dual-write setup from Lifecycle Services](lcs-setup.md). When the connection setup is completed, the following actions occur automatically:
 
 - A new, empty Finance and Operations environment is provisioned.
 - A new, empty instance of a customer engagement app is provisioned, where the CRM prime solution is installed.
@@ -75,7 +75,7 @@ Both environments are then ready for live data synchronization.
 
 ## <a id="new-existing"></a>A new Finance and Operations app instance and an existing customer engagement app instance
 
-To set up a dual-write connection between a new instance of a Finance and Operations app that has no data and an existing instance of a customer engagement app in Dynamics 365, follow the steps in [Dual-write setup from Lifecycle Services](lcs-setup.md). When the connection setup is completed, the following actions occur automatically:
+To set up a dual-write connection between a new instance of a Finance and Operations app that has no data and an existing instance of a customer engagement app, follow the steps in [Dual-write setup from Lifecycle Services](lcs-setup.md). When the connection setup is completed, the following actions occur automatically:
 
 - A new, empty Finance and Operations environment is provisioned.
 - A dual-write connection is established for DAT company data.
@@ -94,7 +94,7 @@ For an example and alternative approach, see [Example](#example).
 
 ## <a id="new-data-new"></a>A new Finance and Operations app instance that has data and a new customer engagement app instance
 
-To set up a dual-write connection between a new instance of a Finance and Operations app that has data and a new instance of a customer engagement app in Dynamics 365, follow the steps in the [A new Finance and Operations app instance and a new customer engagement app instance](#new-new) section earlier in this topic. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
+To set up a dual-write connection between a new instance of a Finance and Operations app that has data and a new instance of a customer engagement app, follow the steps in the [A new Finance and Operations app instance and a new customer engagement app instance](#new-new) section earlier in this topic. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
 
 1. Open the Finance and Operations app from the LCS page, sign in, and then go to **Data Management \> Dual-write**.
 2. Run the **Initial sync** functionality for the entities that you want to sync data for.
@@ -103,7 +103,7 @@ For an example and alternative approach, see [Example](#example).
 
 ## <a id="new-data-existing"></a>A new Finance and Operations app instance that has data and an existing customer engagement app instance
 
-To set up a dual-write connection between a new instance of a Finance and Operations app that has data and an existing instance of a customer engagement app in Dynamics 365, follow the steps in the [A new Finance and Operations app instance and an existing customer engagement app instance](#new-existing) section earlier in this topic. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
+To set up a dual-write connection between a new instance of a Finance and Operations app that has data and an existing instance of a customer engagement app, follow the steps in the [A new Finance and Operations app instance and an existing customer engagement app instance](#new-existing) section earlier in this topic. When the connection setup is completed, if you want to sync the data to the customer engagement app, follow these steps.
 
 1. Open the Finance and Operations app from the LCS page, sign in, and then go to **Data Management \> Dual-write**.
 2. Run the **Initial sync** functionality for the entities that you want to sync data for.
