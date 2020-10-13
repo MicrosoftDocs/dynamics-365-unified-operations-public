@@ -46,9 +46,8 @@ The following table provides an overview of the deployment steps.
 |---------|---------|---------|
 |Microsoft|An additional 60 day limited LBD sandbox slot will be provided based on customer situation.|Edge scale unit in preview target existing LBD customers.|
 |Customer|Set up the LBD environment with empty database. | More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
-|Customer|Deploy the LBD environment through LCS.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) Please note this must be the PEAP build 10.0.15.|
-|Customer / Microsoft|Upload a package with the same application and platform build that was deployed on the hub to the LCS asset library of the on-premises project.||
-|Customer|Upload a customization package that was deployed on the hub to the LCS asset library of the on-premises project.|If you want to deploy customizations then deploy them both into the hub and the edge scale unit.|
+|Customer|Deploy the LBD environment through LCS. Please note this must be the PEAP build 10.0.15.|More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md)|
+|Customer|Optionally upload a customization package that was deployed on the hub to the LCS asset library of the on-premises project.|If you want to deploy customizations then deploy them both into the hub and the edge scale unit.|
 |Customer|Service the LBD environment with the previously uploaded application and platform package.|This ensures that the hub and spoke have the same build deployed.|
 |Customer|Service the LBD environment with the previously uploaded customization package.|This makes non-shippable models and your customizations available on the LBD environment.|
 |Customer|Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
@@ -128,7 +127,7 @@ To assign your scale unit to a Supply Chain Management hub environment, run the 
 1. Prepare workloads to be configured (see the next section).
 1. Enter the scale units and their associated work loads.
 1. Select **Set up hub**.
-:::image type="content" source="media/cloud_edge-lbd-configurehub.png" alt-text="Configure you hub for a edge scale unit":::
+:::image type="content" source="media/cloud_edge-lbd-configure-hub.png" alt-text="Configure you hub for a edge scale unit":::
 
 ### Configure the LBD scale unit environment
 
@@ -143,7 +142,21 @@ To assign your scale unit to a Supply Chain Management hub environment, run the 
 1. Select **Initialize scale unit** to bootstrap the scale unit with initialization data from the hub.
 1. Select **Deploy**.
 
+:::image type="content" source="media/cloud_edge-lbd-configure-scaleunit.png" alt-text="Configure your  edge scale unit":::
+
 ### Prepare workloads to be configured
+
+Open again the Hub setup form on your hub environment. Add a new row for the scale unit. Enter the name of the scale unit. Then select the workload type.
+Pick the company relevant for the workload and the Site. The warehouse management workload requires you to also select a warehouse for which the scale unit will be responsible.
+
+> [!IMPORTANT]
+> You might need to select into the desired company / legal entity in order to select site and warehouse. 
+
+:::image type="content" source="media/cloud_edge-lbd-configure-workload-onhub.png" alt-text="Configure you hub for a edge scale unit":::
+
+You can now navigate to the Scale unit setup form on the scale unit environment and monitor the progress of the workload deployment.
+
+:::image type="content" source="media/cloud_edge-lbd-monitor-workload-onscaleunit.png" alt-text="Configure you hub for a edge scale unit":::
 
 #### Warehouse management workloads
 
