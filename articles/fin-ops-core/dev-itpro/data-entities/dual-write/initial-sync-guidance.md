@@ -105,7 +105,7 @@ Please refer to [Troubleshoot issues during initial synchronization](dual-write/
 Finance and Operations instance | Common Data Service instance | Has data to run initial sync | Description | Max volume in an entity | Data entity type (single-threaded or multi-threaded) | Approach
 ---|---|---|---|---|---|---
 | New | New | No | A new Finance and Operations app instance and a customer engagement app instance, with no initial data. | -NA- | Any | 1. Activate dual-write and skip the initial sync.
-| New | New | Yes | A new Finance and Operations app instance and a customer engagement app instance, with migrated data in either app. | < 500K | [Single-threaded](#single-threaded-entities) | 1. Migrate data to the Finance and Operations app.<br>2. Run the initial sync.
+| New | New | Yes | A new Finance and Operations app instance and a customer engagement app instance, with migrated data in either app. | < 500K | [single-threaded](#single-threaded-entities) | 1. Migrate data to the Finance and Operations app.<br>2. Run the initial sync.
 |  |  |  |  | < 500K | multi-threaded | 1. Migrate data to Common Data Service.<br>2. Run the initial sync.
 |  |  |  |  | > 500K | Any | 1. Migrate data to each app, outside of the initial sync.<br>2. Activate dual-write and skip initial sync.
 | New | Existing | Yes | A new Finance and Operations app instance and an existing customer engagement app instance | < 70K | [single-threaded](#single-threaded-entities) | 1. Create a new company in the Finance and Operations app<br>2.Bootstrap Common Data Service for the company code.<br>3. Run the initial sync.
