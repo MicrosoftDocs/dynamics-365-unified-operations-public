@@ -63,7 +63,7 @@ Follow these steps to revalue lease payments that are linked to an index rate.
 
 ## ASC 842 leases – Index revaluation
 
-To view the effects of the lease revaluation process on ASC 842 leases, open the payment schedule for a lease. The page shows only the variable payments that have been made on or after the revaluation date was changed because of the index revaluation. The amortization and depreciation schedules remain unchanged. When you create an invoice that has a variable payment, the variable payment is debited to the Variable payment posting account, and the variable payment amount is also added to the credit entry for the vendor or Lease payment posting account.
+To view the effects of the lease revaluation process on ASC 842 leases, open the payment schedule for a lease. The page shows only the variable payments that have been made on or after the revaluation date was changed because of the index revaluation. The amortization and depreciation schedules remain unchanged. When you create an invoice that has a variable payment, the variable payment is debited to the Variable payment posting account. Also the variable payment amount is added to the credit entry that's posted directly to the vendor, or posted to Notes payable account, depending on the lease book setup.
 
 The payment schedule lines on the lease details page are automatically updated with a new line that indicates the new index rate. Additionally, a column shows whether the line was created manually or through the index revaluation process.
 
