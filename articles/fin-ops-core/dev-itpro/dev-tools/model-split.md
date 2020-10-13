@@ -17,13 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: rhaertle #touch
 # ms.tgt_pltfrm: 
 ms.custom: 26941
 ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: rhaertle #touch
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

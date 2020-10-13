@@ -17,13 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: rhaertle #touch
 # ms.tgt_pltfrm: 
 ms.custom: 189643
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: rhaertle #touch
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
