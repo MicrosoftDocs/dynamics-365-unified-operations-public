@@ -158,7 +158,7 @@ Before requesting the production environment, ensure that all pre-requisites are
 
 7. After the production environment has been deployed, verify that source and target environments have exactly the same code, otherwise migration will fail. If necessary, deployable packages must be installed on the target production environment.
 8. Request to copy database and blob storage from the old production environment to the new production environment.
-	1. File a [service request](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) of type **Other** to request that the Microsoft Service Engineering team copy the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in that service request.
+	1. [Submit a service request](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) of type **Other** to request that the Microsoft Service Engineering team copy the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in that service request.
 	2. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request. 
 	3. After Microsoft has completed the activity and informed you about it, you will need to validate the new production environment. 
 	4. If you encounter an issue after the migration, file a support ticket.
