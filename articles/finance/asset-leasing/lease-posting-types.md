@@ -159,4 +159,4 @@ The account that is selected for each expense type is debited when a payment for
 **Credit:** Offset account XXX
 
 > [!NOTE]
-> The offset account is selected at the lease level on the lines for the executory cost payment schedule. This can be directly to the vendor, to a bank account, or to a ledger account.
+> The offset account is selected at the lease level on the lines for the executory cost payment schedule. This offset account can associated with the vendor, or with a ledger account.
