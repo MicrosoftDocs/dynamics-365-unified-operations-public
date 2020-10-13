@@ -34,8 +34,6 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 When a business ecosystem is made up of Dynamics 365 applications, such as Finance, Supply Chain Management, and Sales, businesses often use these applications to source product data. This is because these apps provide a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. Businesses who use an external Product Lifecycle Management (PLM) system for sourcing the product data can channelize products from Finance and Operations apps to other Dynamics 365 apps. The unified product experience brings the integrated product data model in to Common Data Service, so that all application users, including Power Platform users, can take advantage of the rich product data coming from Finance and Operations apps.
 
 Here is the product data model from Sales.
@@ -113,7 +111,7 @@ Note that the synchronization of products happens from Finance and Operations ap
 
 Product dimensions are characteristics that identify a product variant. The four product dimensions (Color, Size, Style, and Configuration) are also mapped to Common Data Service to define the product variants. The following illustration shows the data model for the product dimension Color. The same model is applied to Sizes, Styles and Configurations. 
 
-![Data model for products](media/dual-write-product-two.png)
+![Data model for product dimensions](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -149,7 +147,7 @@ Default order settings define the site and warehouse where items will be sourced
 
 The units of measure and its respective conversion is available in the Common Data Service following the data model shown in the diagram.
 
-![Data model for products](media/dual-write-product-three.png)
+![Data model for unit of measure](media/dual-write-product-three.png)
 
 The unit of measure concept is integrated between Finance and Operations apps and other Dynamics 365 apps. For each unit class in a Finance and Operations app, a unit group is created in a Dynamics 365 app, which contains the units belonging to the unit class. A default base unit is also created for every unit group. 
 
