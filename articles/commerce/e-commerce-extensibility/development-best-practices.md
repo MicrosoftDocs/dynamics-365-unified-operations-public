@@ -103,7 +103,14 @@ There is layer of caching of product-specific data in the e-Commerce rendering N
 
 Wherever possible, adopt the **SearchByCriteria** retail API for custom modules. This API returns product attributes as well.
 
-#### Metatags
+#### Browser hint meta tags
+
+Browser hint meta tags such as **preconnect** and **prefetch** can be used to tell the browser what resources are needed ahead of time to render a page.  This will cause a broswer to initiate network connections before it normally would to make expensive network calls.  
+
+The **preconnect** hint can be used if the page relies on resources coming from external origins or domains to initiate a TCP connection.  This will cause a DNS lookup, TCP handshake and TLS negotiation to happen before the reference in the html document.
+
+The **prefetch** hint can be used if you can identify a resource the user is likely to nagiate to.  The resource will be fetched in the background and the browser cache or server cache can persist
+
 
 Use preconnect and dns-prefetch metatags for different services being consumed. For example, rendering endpoint, image endpoints, fonts, files, and visual studio application insight trace calls. 
 
