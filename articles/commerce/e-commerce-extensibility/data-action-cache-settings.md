@@ -5,7 +5,7 @@ title: Data action cache settings
 description: This topic covers cache settings for data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -96,9 +96,11 @@ export class ProductInput {
 
 ## Cache settings for specific entities
 
+The following table provides cache setting descriptions for specific data action cache key entities.
+
 | Entity | Description |
 | ------ | ----------- |
-| AttributeValue | Entity containing the metadata of the product attributes information shown on product details page. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. However, one should be mindful of the fact that longer TTR affects the freshness of the product attributes shown. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#products-controller |
+| AttributeValue | Contains the metadata of the product attributes information shown on a product details page. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the product attributes shown. For information on the APIs returning this entity, see [Products controller](../dev-itpro/retail-server-customer-consumer-api.md#products-controller). |
 | Category | Entity containing the metadata of the category information shown in navigation-module. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. However, one should be mindful of the fact that longer TTR affects the freshness of the category information shown. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#categories-controller |
 | CategoryHierarchy	| Entity containing the metadata of the hierarchy of available categories shown in navigation-module. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. However, one should be mindful of the fact that longer TTR affects the freshness of the categories hierarchy information shown. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#categories-controller |
 | OrgUnit | Contains metadata of the organization unit used in BOPIS scenarios and store locator module. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#org-units-controller
@@ -110,8 +112,8 @@ export class ProductInput {
 | ProductSearchResult | Entity containing the metadata of the product search results shown on product list page. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. However, one should be mindful of the fact that longer TTR affects the freshness of the product list in search results. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#products-controller |
 | SimpleProduct	 | Product entity containing the metadata of the product shown in product details page. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. However, one should be mindful of the fact that longer TTR affects the freshness of the product information shown. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#products-controller |
 
-
 ## Inline cache options
+
 The Dynamics 365 online SDK's data action layer provides flexibility on controlling how a data action response should be cached and its scope (application or request). For all the custom data actions, the cache type can be defined as part of the [action input](data-actions#key-parts-of-a-data-action.md) and it is a common scenario for data actions to invoke a [Retail proxy action](call-retail-server-apis.md), or the module business logic which will invoke a Retail proxy action.  An example might be a user clicks on a "find store" button. For these scenarios, module can set the "bypassCache" option on the action context when invoking the Retail proxy action. This setting tells SDK to honor the module's given cache preferences. 
 
 Supported values for bypassCache are: 
