@@ -48,7 +48,7 @@ When qualified customers are at this stage, the Microsoft FastTrack team will wo
 
 ## What are the prerequisites to deploying a production environment? 
 
-For a list of the prerequisites, see [Prepare for go-live](/human-resources/hr-admin-go-live-prepare.md). 
+For a list of the prerequisites, see [Prepare for go-live](hr-admin-go-live-prepare.md). 
 
 ## What is a go-live assessment?  
 

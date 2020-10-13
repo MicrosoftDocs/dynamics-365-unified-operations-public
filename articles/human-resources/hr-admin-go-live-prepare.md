@@ -49,7 +49,7 @@ The following table lists all the steps in the process, the expected duration, a
 | 2 | Complete and send checklist | After user acceptance testing (UAT) is complete | Partner/Customer | Follow the instructions provided in [FastTrack go-live assessment](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment). |
 | 3 | Project assessment (FastTrack) | FastTrack Architect* | Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
 | 4 | Project workshop (FastTrack) | FastTrack Architect* | |
-| 5 | Data package imports | Depends on the project | Partner/Customer | Follow the instructions in [Data management overview](/dynamics-365-operations/articles/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).|
+| 5 | Data package imports | Depends on the project | Partner/Customer | Follow the instructions in [Data management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).|
 | 6 | Production ready | After all previous steps have been completed | Partner/Customer | Partner/Customer can take control of the production environment.|
 | 7 | Cutover activities | Depends on the project | Partner/Customer | |
 | 8 | Go live | Depends on the project | Customer | |
