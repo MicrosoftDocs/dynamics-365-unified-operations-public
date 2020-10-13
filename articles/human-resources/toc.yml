@@ -259,10 +259,10 @@
         href: hr-admin-troubleshooting-reporting.md
       - name: Integration FAQ
         href: hr-admin-troubleshooting-integration.md
-    - name: Prepare for Go-live
-      href: hr-admin-prepare-for-go-live.md
+    - name: Prepare for go-live
+      href: hr-admin-go-live-prepare.md
     - name: Go-live FAQ
-      href: hr-admin-go-live-implementation-projects-faq.md
+      href: hr-admin-go-live-faq.md
   - name: Developer Guide
     items:
     - name: Overview
