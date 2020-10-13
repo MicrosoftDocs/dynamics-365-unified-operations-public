@@ -96,8 +96,6 @@ export class ProductInput {
 
 ## Cache settings for specific entities
 
-
-
 | Entity | Description |
 | ------ | ----------- |
 | AttributeValue | Entity containing the metadata of the product attributes information shown on product details page. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. However, one should be mindful of the fact that longer TTR affects the freshness of the product attributes shown. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#products-controller |
@@ -112,6 +110,27 @@ export class ProductInput {
 | ProductSearchResult | Entity containing the metadata of the product search results shown on product list page. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. However, one should be mindful of the fact that longer TTR affects the freshness of the product list in search results. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#products-controller |
 | SimpleProduct	 | Product entity containing the metadata of the product shown in product details page. For better performance, and to reduce round trips to retail server, it is recommended to cache the entity with good TTR and TTL values. However, one should be mindful of the fact that longer TTR affects the freshness of the product information shown. To see the retail apis returning this entity, please visit: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api#products-controller |
 
+
+## Inline cache options
+The Dynamics 365 online SDK's data action layer provides flexibility on controlling how a data action response should be cached and its scope (application or request). For all the custom data actions, the cache type can be defined as part of the [action input](data-actions#key-parts-of-a-data-action.md) and it is a common scenario for data actions to invoke a [Retail proxy action](call-retail-server-apis.md), or the module business logic which will invoke a Retail proxy action.  An example might be a user clicks on a "find store" button. For these scenarios, module can set the "bypassCache" option on the action context when invoking the Retail proxy action. This setting tells SDK to honor the module's given cache preferences. 
+
+Supported values for bypassCache are: 
+ 
+* get - ignores cache while performing read and fetches the latest information from Retail server.
+* none - ignores cache altogether.
+ 
+Usage example:
+
+```typescript
+if (checkoutCartId) {
+    try {
+        checkoutCart = await readAsync({ callerContext: ctx, bypassCache: 'none' }, checkoutCartId);
+    } catch {
+        ctx.telemetry.error('Error getting checkout cart based on saved checkout cart id');
+        ctx.telemetry.exception(error);
+    }
+}
+```
 
 ## Additional resources
 
