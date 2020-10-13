@@ -272,7 +272,6 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
 export default ProductFeature;
 ```
 
-
 ## Additional resources
 
 [Data actions overview](data-actions.md)
