@@ -4,7 +4,7 @@
 
 title: Prepare for Human Resources go-live
 description: This page provides guidance on how to prepare for a go-live with Dynamics 365 Human Resources.
-author: anbichse
+author: andreabichsel
 manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
