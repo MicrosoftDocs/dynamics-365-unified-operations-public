@@ -135,7 +135,7 @@ The next step in the process is to provide Common Data Service with the Finance 
 
 Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
 
-1. In Common Data Service, go to **Advanced find** (funnel icon).
+1. In Common Data Service, go to **Advanced find** (filter icon).
 
 2. Look for “Available Finance and Operations Entities” and select **Results**.
 
