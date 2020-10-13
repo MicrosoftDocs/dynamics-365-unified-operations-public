@@ -83,7 +83,6 @@ GIF is also a lossless format, but it only supports 256 colors in a single image
 
 Ultimately, the goal is to find the right balance to maintain image quality while keeping the image size as small as possible.
 
-
 ## Cache configuration
 
 Caching is often used on static content that doesn't change often such as JavaScript, CSS, images and product content. Some scenarios may require custom cache settings to achieve best performance results.
@@ -96,23 +95,25 @@ The default content delivery network (CDN) cache time for images is set to 5 min
 
 There is layer of caching of product-specific data in the e-Commerce rendering Node layer. Caching times are different for each entity type and can be configured inside of the **cache.settings.json** file included with the SDK under the "/src/settings/" directory.  For more information, see [Data cache settings](e-commerce-extensibility/data-action-cache-settings.md).
 
+## Browser hint meta tags
 
-### Module development
-
-#### Retail API
-
-Wherever possible, adopt the **SearchByCriteria** retail API for custom modules. This API returns product attributes as well.
-
-#### Browser hint meta tags
-
-Browser hint meta tags such as **preconnect** and **prefetch** can be used to tell the browser what resources are needed ahead of time to render a page.  This will cause a broswer to initiate network connections before it normally would to make expensive network calls.  
+Browser hint meta tags such as **preconnect** and **dns-prefetch** can be used to tell the browser what resources are needed ahead of time to render a page.  This will cause a broswer to initiate network connections before it normally would to make expensive network calls. This is useful for adding additional rendering, image, font or file endpoints used within a page.
 
 The **preconnect** hint can be used if the page relies on resources coming from external origins or domains to initiate a TCP connection.  This will cause a DNS lookup, TCP handshake and TLS negotiation to happen before the reference in the html document.
 
-The **prefetch** hint can be used if you can identify a resource the user is likely to nagiate to.  The resource will be fetched in the background and the browser cache or server cache can persist
+Example **preconnect** meta tag hint:
+```html
+<link rel="preconnect" href="https://DOMAIN_TO_PRECONNECT">    
+```
 
+The **dns-prefetch** hint can be used if you can identify a resource the user is likely to navigated to or used. DNS prefecthing can can resolve a domain's address earlier than it's used to avoid this expensive step later.
 
-Use preconnect and dns-prefetch metatags for different services being consumed. For example, rendering endpoint, image endpoints, fonts, files, and visual studio application insight trace calls. 
+Example **dns-prefetch** meta tag hint:
+```html
+<link rel="dns-prefetch" href="https://DOMAIN_TO_PREFETCH">
+```
+
+Adding meta tags to a page can be done in the site builder tool using the **Metatags** module.  The **Metatags** module should be added to a page templates "HTML Head" section. See the [work with templates](../work-with-templates.md) for more information.
 
 ## Tools for performance analysis
 
