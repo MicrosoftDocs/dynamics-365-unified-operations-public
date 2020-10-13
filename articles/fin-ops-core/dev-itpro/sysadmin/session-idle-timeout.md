@@ -5,7 +5,7 @@ title: Set the session idle timeout
 description: This topic describes how to set the session idle timeout.
 author: hasaid
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,10 +48,9 @@ This function has a default value of 30 minutes. You can set the value up to 60 
 
 To change the value, follow these steps:
 
-1. From the dashboard, select the **System Administration** workspace.
-2. Select **System Settings**. This opens the **System parameters** page.
-3. In the **Session management** section, set **Session idle timeout in minutes**.
-4. Select **Save**. 
+1. Select **System administration > Setup > System parameters** to open the **System parameters** page.
+2. In the **Session management** section, enter a value in the **Session idle timeout in minutes** field.
+3. Select **Save**. 
 
     If you set the value to greater than 30, you will be prompted to confirm your selection. The confirmation prompt says "Increasing the idle session timeout can cause extra load on your system, which can lead to a decrease in performance. Are you sure you want to continue?" The higher the value, the higher the load will be, which can affect negatively system performance. Select **Yes** to save the changes, or **No** to revert to the existing value.
 
