@@ -55,13 +55,13 @@ You must complete this setup before data can be shown in Power BI visualizations
 11. Go to **General ledger \> Currencies \> Currency exchange rates**, and enter the exchange rates between the transaction currency and the accounting currency, and between the accounting currency and the system currency.
 12. Go to **System administration \> Setup \> Entity store**, and look for **Vendor invoice automation measure**. Select **Refresh**.
 
-To view this information, you must have the Accounts payable manager or Accounts payable clerk security role.
+To view the information that displayed in the workspace, you must have the Accounts payable manager or Accounts payable clerk security role.
 
 ## My work view
 
 ### Company selection
 
-When the **Automate vendor invoices** feature is turned on, a **Company** field appears. By default, the view shows information for the company that you signed in to. By selecting a different company in the **Company** field, you can show information for that company on the tile. You can then select the tile to go the related page in the selected company.
+When the **Automate vendor invoices** feature is turned on, a **Company** field appears at the top of the workspace. The selection in the **Company** field affects all the information displayed in the workspace. By default, the view shows information for the company that you signed in to. By selecting a different company in the **Company** field, you can show information for that company on the workspace. You can then select a tile in the workspace to go the related page in the selected company.
 
 ### Summary tiles
 
@@ -74,9 +74,9 @@ The tiles in the **Summary of pending invoices** section of the **My work** view
 
 (These four tiles require that the Vendor invoice automation feature be turned on in Feature management.)
 
-To use the **Recover vendor invoices**, it must be turned on in Accounts payable parameters. Go to **Accounts payable \> Accounts payable parameters**, and then, on the **Invoice** tab, set the **Allow vendor invoice recovery** option to **Yes**.
+To use the **Recover vendor invoices** tile, the feature must be turned on in Accounts payable parameters. Go to **Accounts payable \> Accounts payable parameters**, and then, on the **Invoice** tab, set the **Allow vendor invoice recovery** option to **Yes**.
 
-You will also see journals grouped together for **Vendor invoice journals**, **Journals - Assigned to me**, and **Invoice pool**.
+When the feature is turned on, you will also three tiles grouped together on the workspace in a section called **Journals**. The tiles are titled **Journals**, **Journals - Assigned to me**, and **Invoice pool**. 
 
 The information in the **Summary of pending invoices** section is for the company that is set as the default company for your sign-in.
 
