@@ -57,7 +57,7 @@ After information is uploaded through the **Data management** workspace, open th
 
 To view the lease staging data before processing is run, select **Staging data**.
 
-To compare an individual lease record, select a lease, and then select **Compare**. You should complete this step to generate a **Differences** report before you migrate the lease records. The Compare functionality compares the values in the staging data to the values for leases that are currently in the system.
+The compare function lets you compare a record that you're importing with the corresponding record that's already in your system. To compare an individual lease record, select a lease, and then select **Compare**. You should complete this step to generate a **Differences** report before you migrate the lease records. The Compare functionality compares the values in the staging data to the values for leases that are currently in the system.
 
 > [!NOTE]
 > The Compare functionality doesn't work for leases that have the **Add record** process type, because there is nothing to compare against that lease.
