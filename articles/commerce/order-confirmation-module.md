@@ -5,7 +5,7 @@ title: Order confirmation module
 description: This topic covers order confirmation modules and describes how to use them in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 06/18/2020
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -37,7 +37,7 @@ This topic covers order confirmation modules and describes how to use them in Mi
 
 ## Overview
 
-The order confirmation module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, pickup options and shipping method.
+The order confirmation module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, pickup options, and shipping method.
 
 ## Order confirmation module properties
 
