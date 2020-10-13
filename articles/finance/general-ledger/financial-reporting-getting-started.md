@@ -159,7 +159,7 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
      2. Enter **edge://flags** and select **Enter**.
      3. Search for the **ClickOnce Support** option or use this direct link: **edge://flags/#edge-click-once**.
      4. Set the drop-down menu option to **Enabled**.
-     5. Select**Restart Browser**.
+     5. Select **Restart Browser**.
 
 Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
 
