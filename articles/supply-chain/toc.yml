@@ -1735,6 +1735,8 @@
           href: procurement/purchase-agreements.md
         - name: Create a purchase agreement
           href: procurement/tasks/create-purchase-agreement.md
+        - name: Automatic allocation of charges
+          href: procurement/automatic-charges-allocation.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
         - name: Troubleshoot prices, discounts, agreements, and rebates
@@ -2275,10 +2277,14 @@
           href: sales-marketing/tasks/ship-orders-direct-deliveries.md
         - name: Ship sales orders without warehousing
           href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+        - name: Automatic allocation of charges
+          href: procurement/automatic-charges-allocation.md
         - name: Create a purchase order from a sales order
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Automatic allocation of charges
+          href: procurement/automatic-charges-allocation.md
         - name: Manage order holds
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
