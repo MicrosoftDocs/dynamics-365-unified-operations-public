@@ -39,7 +39,7 @@ Asset leasing accounts for leases that are in currencies other than the accounti
 
 If you enter a lease in a foreign currency, the right-of-use (ROU) asset is depreciated in both the accounting currency and the reporting currency. These currencies are configured on the **Ledger setup** page. This behavior is also used in Fixed assets. When you create a lease in a foreign currency, select the transaction currency in the **Currency** field.
 
-On the **Financial and reporting exchange information** tab, the default value of the **Accounting currency exchange rate** field is the currency exchange rate that was effective on the commencement date of the lease. The commencement date applies to both the accounting currency and the lease currency.
+The exchange rate of the accounting currency is the default value in **Accounting currency exchange rate** field. The exchange rate of the reporting currency is the default value in the **Reporting currency exchange rate** field. These exchange rates were effective on the commencement date of the lease. The **Accounting currency exchange rate** and **Reporting currency exchange rate** fields, are in the **Financial and reporting exchange information** FastTab, on the **Lease details** page.
 
 1. Select the **Fixed rate** check box to override the exchange rate that was automatically entered, and then enter the new rate.
 2. In the other fields, enter the information that is required for the lease, and then select **Create schedules**.
