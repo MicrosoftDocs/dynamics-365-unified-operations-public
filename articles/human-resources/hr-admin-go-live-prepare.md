@@ -44,6 +44,7 @@ This graphic shows the phases of the go-live process. 
 The following table lists all the steps in the process, the expected duration, and who is responsible for the action.
 
 | Phase | Action | Duration/When | Who | Notes |
+| --- | --- | --- | --- |--- |
 | 1 | Update go-live date in LCS | At the latest 2-3 months in advance | Partner/Customer | The milestone dates should be kept up to date on an ongoing basis. |
 | 2 | Complete and send checklist | After user acceptance testing (UAT) is complete | Partner/Customer | Follow the instructions provided in [FastTrack go-live assessment](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment). |
 | 3 | Project assessment (FastTrack) | FastTrack Architect* | Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
@@ -62,7 +63,7 @@ A major milestone in each implementation project is the cutover to the productio
 
 To help ensure the production environment is used for live operations, Microsoft provisions the production instance only when the implementation is approaching the **Operate** phase, after the required activities in the LCS methodology are completed. For more information about the environments in your subscription, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544). 
 
-Customers must complete the **Analysis**, **Design and Develop**, and **Test** phases in the LCS methodology before the **Configure** button for requesting the production environment becomes available. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. For more information, see [Lifecycle Services (LCS) for Finance and Operations apps customers](/Dynamics-365-Operations/articles/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). 
+Customers must complete the **Analysis**, **Design and Develop**, and **Test** phases in the LCS methodology before the **Configure** button for requesting the production environment becomes available. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. For more information, see [Lifecycle Services (LCS) for Finance and Operations apps customers](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
 
 The process of completing a step has two parts: 
 
@@ -83,7 +84,7 @@ During the UAT phase, you must test all the business processes you've implemente
 
 ## FastTrack go-live assessment
 
-Customers who are qualified for FastTrack and are engaged with a FastTrack Solution Architect will complete a go-live review with Microsoft FastTrack. For more information, see [Microsoft FastTrack](Dynamics-365-Operations/articles/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md). 
+Customers who are qualified for FastTrack and are engaged with a FastTrack Solution Architect will complete a go-live review with Microsoft FastTrack. For more information, see [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
 
 About eight weeks before go-live, the FastTrack team will ask you to fill in a [Go-live checklist](https://go.microsoft.com/fwlink/?linkid=2146013).
 
