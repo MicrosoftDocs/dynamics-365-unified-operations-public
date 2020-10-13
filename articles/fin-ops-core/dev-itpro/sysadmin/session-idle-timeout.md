@@ -49,7 +49,7 @@ This function has a default value of 30 minutes. You can set the value up to 60 
 To change the value, follow these steps:
 
 1. Select **System administration > Setup > System parameters** to open the **System parameters** page.
-2. In the **Session management** section, enter a value in the **Session idle timeout in minutes** field.
+2. On the **General** tab, in the **Session management** section, enter a value in the **Session idle timeout in minutes** field.
 3. Select **Save**. 
 
     If you set the value to greater than 30, you will be prompted to confirm your selection. The confirmation prompt says "Increasing the idle session timeout can cause extra load on your system, which can lead to a decrease in performance. Are you sure you want to continue?" The higher the value, the higher the load will be, which can affect negatively system performance. Select **Yes** to save the changes, or **No** to revert to the existing value.
