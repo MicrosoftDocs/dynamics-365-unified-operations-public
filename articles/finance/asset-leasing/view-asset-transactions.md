@@ -47,7 +47,7 @@ The **Liability transactions** page shows the transactions that either increase 
 
 To view the lease asset transactions, select a lease on the **Lease summary** page, and then select **Books** to open the lease books that are attached to the lease record. Then select **Asset transactions**.
 
-The **Asset transaction** page shows the transactions that either increase or decrease the lease asset and accumulated depreciation accounts. Debits are shown as positive values, and credits are shown as negative values, as on the **Liability transactions** page. The carrying balance of the ROU asset, the net of accumulated depreciation, is shown at the bottom left of the page.
+The **Asset transaction** page shows the transactions that either increase or decrease the lease asset and accumulated depreciation accounts. Debits are shown as positive values, and credits are shown as negative values, as on the **Liability transactions** page. The posted initial recognition and the next of accumulated depreciation are shown at the bottom left of the page as the asset balance. 
 
 ## Expenses transactions
 
