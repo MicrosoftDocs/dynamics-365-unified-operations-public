@@ -167,15 +167,6 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 
 3.  The Azure DevOps editor opens. Edit the issue, and then save your changes. The changes will be reflected in the **Support** tile.
 
-### Troubleshoot issues
-> [!NOTE]
-> The information in this section is not applicable to on-premises deployments.
-
-Issues that are created through the client contain metadata about the environment. When those issues are selected in the **Issue** grid, the **Troubleshoot** button becomes available. When you click **Troubleshoot**, the **Event monitoring** page opens. This page lets you access events and logs that are related to the issue. The page shows activities, error messages, and other information that has occurred within the last two hours since an issue was reported. 
-
-[![LCS-CPS-list-troubleshoot-1024x331](./media/lcs-cps-list-troubleshoot-1024x3311-1024x331.png)](./media/lcs-cps-list-troubleshoot-1024x3311.png) 
-
-[![LCS-Monitoring-1024x419](./media/lcs-monitoring-1024x4191-1024x419.png)](./media/lcs-monitoring-1024x4191.png)
 
 ### Submit an issue to Microsoft
 
@@ -198,19 +189,6 @@ You can submit issues to Microsoft support. When you submit an issue to Microsof
 
 When you deploy your application from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
 
-[![Configure Contact support](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)
-
-## Support plans (on-premises only)
-
-The following customer and partner support plans are available for on-premises deployments.
-- **Customer** 
-    - Software assurance
-    - Advantage/Advantage Plus
-    - Premier
-- **Partner**
-    - Partner Advantage/Partner Advantage Plus
-    - Advanced Support for Partners
-    - Premier
 
 ## Prevent users from creating issues from the client
 By default, the System user role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the Help menu. If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System user role.
