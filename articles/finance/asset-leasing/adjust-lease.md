@@ -55,7 +55,7 @@ To adjust a lease, follow these steps. The modified data will update lease sched
     > [!NOTE]
     > The **ROU considerations** fields apply to the lease adjustment. If no initial direct costs, lease incentives, prepayments, or dismantling costs are associated with the modified lease, you should leave these fields blank. The original amounts won't apply to the updated lease. Any additional costs that are incurred when the lease is modified should be entered on the **Adjust lease** page.
     > 
-    > For example, a lessor provides a $1,000 incentive for signing in to a lease extension. In this case, when you adjust the lease to account for the extension, you enter **1,000** in the **Lease incentives** field. If no incentives are associated with the lease adjustment, you should clear any value that was previously entered in this field. The same logic is applied to other ROU considerations.
+    > For example, a lessor provides a $1,000 incentive for agreeing to a lease extension. In this case, when you adjust the lease to account for the extension, you enter **1,000** in the **Lease incentives** field. If no incentives are associated with the lease adjustment, you should clear any value that was previously entered in this field. The same logic is applied to other ROU considerations.
 
     The payment schedule lines of the adjusted lease should be created on a prospective basis. Payment schedule lines that are created on a prospective basis can't start before the lease modifications take effect.
 
@@ -83,9 +83,7 @@ If a lease has been modified, you can view the different versions of it. You can
 
 1. On the **Lease summary** page, select the lease, and then, on the Action Pane, select **Lease version history**.
 
-    If the selected lease has been adjusted, the **Lease versions** page shows the different versions of it. The original lease is labeled **1**, and subsequent versions have ascending numerical order.
-
-    The lease status is shown under the lease ID. It indicates which lease version is currently active or closed. Transactions can't be entered for a closed lease.
+    If the selected lease has been adjusted, the **Lease version history** page shows the different versions of it. The original lease is labeled **1**, and subsequent versions have ascending numerical order.
 
     For a selected lease version, you can view the financial dimensions, contract details, location, and payment schedule lines.
 
