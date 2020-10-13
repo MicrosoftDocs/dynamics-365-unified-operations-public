@@ -2283,8 +2283,6 @@
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
-        - name: Automatic allocation of charges
-          href: procurement/automatic-charges-allocation.md
         - name: Manage order holds
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
