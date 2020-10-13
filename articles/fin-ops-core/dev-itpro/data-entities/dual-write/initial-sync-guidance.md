@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author:
+ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -98,7 +98,7 @@ You can view only the top 5 errors from the initial synch error log.
 
 ## Known issues
 
-Please refer to [Troubleshoot issues during initial synchronization](dual-write/dual-write-troubleshooting-initial-sync.md) for help working around known issues.
+Please refer to [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md) for help working around known issues.
 
 ## Guidance matrix
 
