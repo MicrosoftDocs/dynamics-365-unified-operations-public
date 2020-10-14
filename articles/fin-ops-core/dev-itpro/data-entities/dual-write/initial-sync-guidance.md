@@ -127,3 +127,6 @@ Finance and Operations instance | Common Data Service instance | Has data to run
 - Warehouses (msdyn\_warehouses)
 - Product categories (msdyn\_productcategories)
 - Employment (cdm\_employments)
+- Position worker assignments (cdm\_positionworkerassignmentmaps)
+- Warehouse locations (msdyn\_inventorylocations)
+- Modes of delivery (msdyn\_shipvias)
