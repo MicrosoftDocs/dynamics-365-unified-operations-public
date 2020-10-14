@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources Setpember 26 2020
+title: What's new or changed in Dynamics 365 Human Resources September 26, 2020
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: jcart1106
 manager: tfehr
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources Setpember 26, 2020
+# What's new or changed in Dynamics 365 Human Resources September 26, 2020
 
 This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
@@ -59,7 +59,7 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | 469495 | Update default financial dimensions grid and dialogue | The financial dimensions grid and dialogue is updated throughout Human Resources. |
 | 474887 | Leave request work item opens wrong link in a manual decision | When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision. |
-| 474962 | Leave and absence parameters entity has fields with ambiguous labels | Leave and absence parameters entity labels are updated to be more clear. |
+| 474962 | Leave and absence parameters entity has fields with ambiguous labels | Leave and absence parameters entity labels are updated to be clearer. |
 | 481401 | Accrual processing hangs when accrual date basis is after accrual start date and at end of month | Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. |
 | 447167 | Expiring records lists include inactive workers | The **Expiring records** tab in **Personnel management** included inactive workers. Now it only includes active workers. |
 | 486840 | Wrong leave of absence request opens from **Work items assigned to me** | Selecting a leave of absence request from **Work items assigned to me** no longer opens the most recent leave of absence request assigned to the current user. |
@@ -71,7 +71,7 @@ The following bug fixes are included in this release.
 
 - **Leave request work item opens wrong link in a manual decision (474887)**: When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision.
 
-- **Leave and absence parameters entity has fields with ambiguous labels (474962)**: Leave and absence parameters entity labels are updated to be more clear.
+- **Leave and absence parameters entity has fields with ambiguous labels (474962)**: Leave and absence parameters entity labels are updated to be clearer.
 
 - **Accrual processing hangs when accrual date basis is after accrual start date and at end of month (481401)**: Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. 
 
