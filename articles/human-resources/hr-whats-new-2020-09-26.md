@@ -3,9 +3,9 @@
 
 title: What's new or changed in Dynamics 365 Human Resources Setpember 26 2020
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
-author: Jillcarter
-manager: AnnBe
-ms.date: 9/26/2020
+author: jcart1106
+manager: tfehr
+ms.date: 09/26/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-human-resources
@@ -29,7 +29,8 @@ ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources Setpember 26, 2020"
+
+# What's new or changed in Dynamics 365 Human Resources Setpember 26, 2020
 
 This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
 
@@ -59,21 +60,49 @@ The following bug fixes are included in this release.
 > [!NOTE]
 > Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
-## Leave request work item opens wrong link when in a manual decision - (474887)
-When a workflow configuration contains a manual decision, navigating to the leave request from "Work items assigned to me" opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision.
-## Leave and absence parameters entity has fields with ambiguous labels - (474962)
-Leave and absence paramaters entity labels updated to be more clear. 
-## Accrual processing hangs when accrual date basis is after accrual start date and at end of month - (481401)
-Accrual processing updated to not have a delay when the accrual date baseis is after the accrual start date and at the end of the month. 
-## Expiring records lists include inactive workers. - (447167)
-The Expiring Records tab in Personnel Management was including inactive workers.  It has been updated to only include active workers.
-## Wrong leave of absence request is opened from Work items assigned to me - (486840)
-When clicking on a leave of absence request from "Work items assigned to me" to see its details, it no longer opens the most recent leave of absence request assigned to the current user. 
-## [CDS] Title field not being set for job position entity - (506868)
-The Title field in the Job and JobPosition entity was displaying as not specified.  Has been updated to display title.
-## Not able to access offboarding checklist tasks with manager and employee roles assigned  - (430359)
+| LCS Number | Issue | Description |
+| --- | --- | --- |
+| 474887 | Leave request work item opens wrong link in a manual decision |  |
+| 474962 | Leave and absence parameters entity has fields with ambiguous labels |  |
+| 481401 | Accrual processing hangs when accrual date basis is after accrual start date and at end of month |  |
+| 447167 | Expiring records lists include inactive workers |  |
+| 486840 | Wrong leave of absence request opens from **Work items assigned to me** |  |
+| 506868 | Common Data Service **Title** field not set for **Job position** entity |  |
+| 430359 | Can't access offboarding checklist tasks with manager and employee roles assigned |  |
+| 458102 | New employee doesn't appear on the **Worker payroll information** entity when created |  |
+
+
+
+## Leave request work item opens wrong link in a manual decision (474887)
+
+When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision.
+
+## Leave and absence parameters entity has fields with ambiguous labels (474962)
+
+Leave and absence parameters entity labels are updated to be more clear.
+
+## Accrual processing hangs when accrual date basis is after accrual start date and at end of month (481401)
+
+Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. 
+
+## Expiring records lists include inactive workers (447167)
+
+The **Expiring records** tab in **Personnel management** included inactive workers. Now it only includes active workers.
+
+## Wrong leave of absence request opens from Work items assigned to me (486840)
+
+Selecting a leave of absence request from **Work items assigned to me** no longer opens the most recent leave of absence request assigned to the current user. 
+
+## Common Data Service Title field not set for Job position entity (506868)
+
+The **Title** field in the **Job** and **JobPosition** entities displayed as not specified. It now displays title.
+
+## Can't access offboarding checklist tasks with manager and employee roles assigned (430359)
+
 Workers with a future termination date are unable to access their checklist tasks if they only have an employee or manager role.  Have updated this scenario so that users with only an employee or manager role can access offboarding tasks with a future termination date.
-## New employee does not appear on the worker payroll information entity right after being created. - (458102)
+
+## New employee doesn't appear on the Worker payroll information entity when created (458102)
+
 New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. 
 
 
