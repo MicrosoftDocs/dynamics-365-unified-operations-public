@@ -38,7 +38,7 @@ This topic describes the steps for requiring the financial dimensions on a purch
 Complete the following steps to define the financial dimensions that must match between a purchase order and related invoices.
 1.	Open the **Accounts payable parameters**  page (**Accounts payable > Setup > Accounts payable parameters**).
 2.	In the **Accounts payable parameters** page, click **PO/Invoice matching validation**. 
-3.	Select the **Matching required** check box for the dimensions you want. All of the financial dimensions set up by on the **Financial dimensions** page  are available to select for matching.
+3.	Select the **Matching required** check box for the dimensions you want. All of the financial dimensions set up on the **Financial dimensions** page  are available to select for matching.
 4.	Click **Close**.
  
 ## Working with locked financial dimensions on an invoice
