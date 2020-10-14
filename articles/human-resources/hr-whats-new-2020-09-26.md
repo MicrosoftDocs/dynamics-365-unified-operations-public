@@ -51,17 +51,17 @@ The following feature is generally available with this release:
 The following bug fixes are included in this release.
 
 > [!NOTE]
-> Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+> Our goal is to get this information to you as soon as possible. There may be updates to this topic to include bug fixes that made it into the build after this topic was initially published.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
-| 469495 | Update default financial dimensions grid and dialogue | The financial dimensions grid and dialogue is updated throughout Human Resources. |
+| 469495 | Update default financial dimensions grid and dialog box | The financial dimensions grid and dialog box is updated throughout Human Resources. |
 | 474887 | Leave request work item opens wrong link in a manual decision | When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision. |
 | 474962 | Leave and absence parameters entity has fields with ambiguous labels | Leave and absence parameters entity labels are updated to be clearer. |
 | 481401 | Accrual processing hangs when accrual date basis is after accrual start date and at end of month | Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. |
 | 447167 | Expiring records lists include inactive workers | The **Expiring records** tab in **Personnel management** included inactive workers. Now it only includes active workers. |
 | 486840 | Wrong leave of absence request opens from **Work items assigned to me** | Selecting a leave of absence request from **Work items assigned to me** no longer opens the most recent leave of absence request assigned to the current user. |
-| 506868 | Common Data Service **Title** field not set for **Job position** entity | The **Title** field in the **Job** and **JobPosition** entities displayed as not specified. The **Title** field now displays. |
+| 506868 | Common Data Service **Title** field not set for **Job position** entity | The **Title** field in the **Job** and **Job position** entities displayed as not specified. The **Title** field now displays. |
 | 430359 | Can't access offboarding checklist tasks with manager and employee roles assigned | Workers with a future termination date couldn't access their checklist tasks if they only had an employee or manager role. Now users with only an employee or manager role can access offboarding tasks with a future termination date. |
 | 458102 | New employee doesn't appear on the **Worker payroll information** entity when created | New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. |
 
@@ -82,7 +82,7 @@ The following new feature is scheduled for a future release:
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 
-## See also
+## Additional resources
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
 [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/)</br>
