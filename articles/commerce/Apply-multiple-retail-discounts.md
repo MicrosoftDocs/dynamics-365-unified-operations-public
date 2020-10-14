@@ -36,6 +36,8 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 
 ## Overview
 
+Test sentence
+
 This topic reviews all the factors considered when multiple discounts can be applied to a product. In this scenario, the commerce pricing engine applies as many discounts as it can, to maximize the total discount amount on a product. Multiple options affect the order in which the discounts are applied. Throughout this topic it's noted when a setting affects the order of discount application and exclusivity of a discount. The following settings affect how multiple discounts, applicable on a product, are processed.
 
 - **Discount concurrency control model**
