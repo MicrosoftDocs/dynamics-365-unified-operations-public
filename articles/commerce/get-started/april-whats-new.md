@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
 
 ---
-# What's new or changed in Dynamics 365 for Retail (April 2019)
+# What's new or changed in Dynamics 365 for Retail (May 2019)
 
 [!include [banner](../../includes/banner.md)]
 
