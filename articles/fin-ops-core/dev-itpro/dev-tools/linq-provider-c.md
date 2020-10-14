@@ -7,29 +7,29 @@ author: pvillads
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 26751
 ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Language Integrated Query (LINQ) provider for C#
+# Language Integrated Query (LINQ) provider for C\#
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,30 +37,32 @@ This topic discusses the LINQ provider.
 
 LINQ (Language Integrated Query) is a set of classes and methods that enable you to access data that is stored in a variety of places and formats. The LINQ framework is the standard for accessing data in managed languages. LINQ presents to programmers a unified and consistent API for data access from heterogeneous data sources, such as:
 
--   In-memory object graphs
--   Active Directory entries
--   Flickr pictures and XML
--   SQL Server
+- In-memory object graphs
+- Active Directory entries
+- Flickr pictures and XML
+- SQL Server
 
 The LINQ provider allows the user to access business data by using .NET managed languages.
 
 ## Two syntactical mechanisms for accessing LINQ
+
 There are two syntactical approaches for using LINQ, as described in the following table.
 
-|                                                                | X++              | C\# and Visual Basic      |
-|----------------------------------------------------------------|------------------|---------------------------|
-| LINQ by standard method call syntax.                           | Impractical. Language support for generics is vital for LINQ and is not supported in X++. | Available, requires lambda syntax. |
+| Approach | X++ | C\# and Visual Basic |
+|-------------------------|------------------|---------------------------|
+| LINQ by standard method call syntax. | Impractical. Language support for generics is vital for LINQ and is not supported in X++. | Available, requires lambda syntax. |
 | LINQ by specialized syntax that is understood by the compiler. | Not available.   | Available, easier to use. |
 
 There are two syntactic mechanisms for accessing the LINQ provider in C\# (or in Visual Basic):
 
--   By standard, or fluent, method call syntax.
--   By specialized syntax that the C\# compiler has been enhanced to understand as equivalent to the LINQ method calls. (Such syntax is sometimes called “syntactic sugar”.)
+- By standard, or fluent, method call syntax.
+- By specialized syntax that the C\# compiler has been enhanced to understand as equivalent to the LINQ method calls. (Such syntax is sometimes called “syntactic sugar”.)
 
 This topic is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
 
 ## LINQ by specialized syntax in C\#
-Some .NET languages understand specialized syntax for LINQ as an alternative that is easier for us to write. C\# is one such language. 
+
+Some .NET languages understand specialized syntax for LINQ as an alternative that is easier for us to write. C\# is one such language.
 
 To use LINQ in C\#, you must understand the C\# keyword **var**, which is used to declare variables. The var keyword tells the compiler to figure out the data type of the variable by what is assigned to the variable. This feature is now also available in X++. The type is implicit in the source code, and the type is settled and unvarying after the compilation completes.
 
@@ -86,7 +88,7 @@ Next is an equivalent query in C\# with the specialized LINQ syntax.
 
 ```csharp
 // C#, with specialized LINQ syntax.
-// Get access to the data provider:       
+// Get access to the data provider:
 var provider = new QueryProvider(null);
 
 var customers = new QueryCollection(provider);
@@ -106,12 +108,13 @@ foreach (var ct in query)
 ```
 
 ## LINQ query in C\# by method syntax, using the lambda operator >
+
 Next is another use of LINQ in C\#, except this time the more standard syntax is used to call the LINQ API. The approach also involves use of the lambda operator `>`. The following C\# query is functionally equivalent to the preceding C\# query.
 
 ```csharp
 var query = customers
     .Where(c => string.Compare(c.AccountNum, "4000") >= 0)
-    .Join(customers, 
+    .Join(customers,
         primary => primary.AccountNum,
         foreign => foreign.AccountNum,
         (primary, foreign) => new { P = primary, F = foreign })
@@ -132,10 +135,11 @@ var query = (from ct in customers
             where ct.AccountNum >= “4000”
             where trans.AccountNum == ct.AccountNum
             orderby ct.AccountNum descending
-            select ct).crosscompany();      
+            select ct).crosscompany();
 ```
 
 ## LINQ query execution
+
 The code generated for a LINQ query builds a tree at run time. When the results of the query are required, this tree is passed to the backend that will interpret it, and will provide the data as expressed in the query. The X++ compiler also builds a tree to express the query, but the X++ compiler has intimate knowledge about the capabilities of the database backend. This has several important implications as described in the following subsections.
 
 ### Inability to diagnose problems at LINQ compile-time
@@ -143,7 +147,7 @@ The code generated for a LINQ query builds a tree at run time. When the results 
 The C\# compiler is largely unable to foresee and diagnose errors that will occur at run time due to the inability of the backend to process an incompatible LINQ query. For instance, in the following C\# code block, the specialized LINQ syntax is valid according to the C\# compiler. Yet at run time, an error would occur.
 
 ```csharp
-var customerQuery = from c in db.Customers    
+var customerQuery = from c in db.Customers
                     where (from o in db.Orders
                     where o.ShipCountry == “Germany”
                     select o.CustomerID).Contains(c.CustomerID);
@@ -155,12 +159,12 @@ This query can't be handled by the current data layer, and while no errors are d
 
 There is an overhead penalty paid at run time, when analysis of the tree occurs, and a suitable access language is generated. As we might expect, the performance penalty is incurred when analyzing the LINQ expression tree. The time required at run time to actually fetch the data doesn't vary much between C\# and LINQ versus X++ with `while select`. Our preliminary numbers show that the beginning-to-end performance of the query is about three times longer with C\# LINQ, compared to X++ `while select`, when very few records are fetched. But when many records are fetched, the total times are about the same between C\# and X++. The conclusion is that it takes much longer to fetch a lot of records than it takes to analyze the language tree.
 
-### Query composability with LINQ
+### Composing queries with LINQ
 
 The model that's provided by LINQ allows queries to be composed of subqueries. The X++ language can't cleanly provide this feature. To understand this, consider the following C\# LINQ code. A flag is passed to a method to control the ordering of data results.
 
 ```csharp
-private IEnumerable RichCustomers(bool orderByName) 
+private IEnumerable RichCustomers(bool orderByName)
 {
     // Create a query for the rich customers. Note carefully
     // that no data is fetched when this is executed.
@@ -188,6 +192,3 @@ LINQ queries can be applied for CRUD operations. But the model for updating, del
 [Changes in X++ and the X++ compiler](programming-language-support.md)
 
 [Develop and customize home page](developer-home-page.md)
-
-
-
