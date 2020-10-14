@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.15
 This topic describes the steps for requiring the financial dimensions on a purchase order (PO) to match the dimensions on the corresponding vendor invoice. You can set up specific financial dimensions that must match between a purchase order  and an invoice that’s created from that purchase order. For example, matching is required for all financial dimensions between purchase orders and invoices. On invoices associated with a PO, you can’t change the general ledger accounts on the invoice detail lines from what was entered on the PO lines.
  
 ## Setting up locked financial dimensions
-Complete the following steps to cefine the financial dimensions that must match between a purchase order and related invoices.
+Complete the following steps to define the financial dimensions that must match between a purchase order and related invoices.
 1.	Open the **Accounts payable parameters**  page (**Accounts payable > Setup > Accounts payable parameters**).
 2.	In the **Accounts payable parameters** page, click **PO/Invoice matching validation**. 
 3.	Select the **Matching required** check box for the dimensions you want. All of the financial dimensions set up by on the **Financial dimensions** page  are available to select for matching.
