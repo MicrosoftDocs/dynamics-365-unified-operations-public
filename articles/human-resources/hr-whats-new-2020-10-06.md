@@ -32,8 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (October 6, 2020)
 
-This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
-For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+
 For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
 ## In this release
@@ -46,7 +46,7 @@ The following feature is generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Additional insight into leave calendars | [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) | [View team and compnay calendar](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-employee-self-service-calendar) |
+| Additional insight into leave calendars | [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) | [View team and company calendar](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-employee-self-service-calendar) |
 
 ### Bug fixes
 
@@ -68,8 +68,8 @@ The following bug fixes are included in this release.
 | 507333 | Common Data Service bridge causes a null ref exception on AOS startup. |  |
 | 509731 | Leave request for future terminated worker causes issue if they apply for time off after termination date. |  |
 | 510716 | Compensation Analytics includes both male and female employees for **Male average hourly pay**. | In Compensation Analytics, the **Male average hourly pay** on the **Compensation Demographic Analysis** included female average pay. Now it only includes males. |
-| 511348 | Benefits self service should only show benefit plans valid from today to end of the benefit period. | Expired benefit plans were displayed to employees in the benefits enrollment page. This fix removes these plans. |
-| 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br>- **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** form makes the fields un-editable once the action has completed. |
+| 511348 | Benefits self-service should only show benefit plans valid from today to end of the benefit period. | Expired benefit plans were displayed to employees in the benefits enrollment page. This fix removes these plans. |
+| 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br>- **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** form makes the fields uneditable once the action has completed. |
 
 ## In preview
 
@@ -89,13 +89,13 @@ The following new features are scheduled for future releases:
 
 - **Benefits management reason codes**: Benefits management reason codes will soon be combined with existing reason codes in Human Resources. If you created reason codes in Benefits management that are over 15 characters, you must change the name of the reason code in the Benefits management **Reason codes** form to be 15 characters or less. After you update the name, the reason code will appear under the existing reason code form in Personnel management. This change will be available in the future and won't affect existing functionality.
 
-- **Custom links in Manager self service**: To support managers, we're expanding capabilities in Manager self service. We're adding the capability to add custom links on the My team tab. This feature is similar to the custom links feature we provide in the **My information tab** in employee self-service. For more information, see [Custom links in manager self-service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Custom links in Manager self-service**: To support managers, we're expanding capabilities in Manager self-service. We're adding the capability to add custom links on the My team tab. This feature is similar to the custom links feature we provide in the **My information tab** in employee self-service. For more information, see [Custom links in manager self-service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2020release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
