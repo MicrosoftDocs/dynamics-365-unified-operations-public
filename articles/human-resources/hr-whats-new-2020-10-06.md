@@ -52,8 +52,8 @@ The following feature is generally available with this release.
 
 The following bug fixes are included in this release.
 
-> [!NOTE]
-> Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+>[!NOTE]
+>Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
