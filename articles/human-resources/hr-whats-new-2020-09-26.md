@@ -53,9 +53,7 @@ The following bug fixes are included in this release.
 > [!NOTE]
 > Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
-**Table format**
-
-| LCS Number | Issue | Description |
+| Issue number | Issue | Description |
 | --- | --- | --- |
 | 469495 | Update default financial dimensions grid and dialogue | The financial dimensions grid and dialogue is updated throughout Human Resources. |
 | 474887 | Leave request work item opens wrong link in a manual decision | When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision. |
@@ -66,24 +64,6 @@ The following bug fixes are included in this release.
 | 506868 | Common Data Service **Title** field not set for **Job position** entity | The **Title** field in the **Job** and **JobPosition** entities displayed as not specified. The **Title** field now displays. |
 | 430359 | Can't access offboarding checklist tasks with manager and employee roles assigned | Workers with a future termination date couldn't access their checklist tasks if they only had an employee or manager role. Now users with only an employee or manager role can access offboarding tasks with a future termination date. |
 | 458102 | New employee doesn't appear on the **Worker payroll information** entity when created | New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. |
-
-**Bulleted list format**
-
-- **Leave request work item opens wrong link in a manual decision (474887)**: When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision.
-
-- **Leave and absence parameters entity has fields with ambiguous labels (474962)**: Leave and absence parameters entity labels are updated to be clearer.
-
-- **Accrual processing hangs when accrual date basis is after accrual start date and at end of month (481401)**: Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. 
-
-- **Expiring records lists include inactive workers (447167)**: The **Expiring records** tab in **Personnel management** included inactive workers. Now it only includes active workers.
-
-- **Wrong leave of absence request opens from Work items assigned to me (486840)**: Selecting a leave of absence request from **Work items assigned to me** no longer opens the most recent leave of absence request assigned to the current user. 
-
-- **Common Data Service Title field not set for Job position entity (506868)**: The **Title** field in the **Job** and **JobPosition** entities displayed as not specified. The **Title** field now displays.
-
-- **Can't access offboarding checklist tasks with manager and employee roles assigned (430359)**: Workers with a future termination date couldn't access their checklist tasks if they only had an employee or manager role. Now users with only an employee or manager role can access offboarding tasks with a future termination date.
-
-- **New employee doesn't appear on the Worker payroll information entity when created (458102)**: New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. 
 
 ## In preview
 
