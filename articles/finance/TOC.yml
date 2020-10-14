@@ -1112,6 +1112,8 @@
           href: public-sector/tasks/create-vendor-certification-type-public-sector.md
         - name: Import and create multiple one-time vendors and invoices in the public sector
           href: public-sector/tasks/import-multiple-one-time-vendors.md
+        - name: Restrict editing of accounting distributions on invoices
+          href: public-sector/restrict-edit-accounting-distributions.md
         - name: Plan for one-time vendors in the public sector
           href: public-sector/plan-one-time-vendors-public-sector.md
         - name: Control access to purchase agreements in the public sector
