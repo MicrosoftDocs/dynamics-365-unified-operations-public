@@ -646,11 +646,7 @@ The X++ pause statement is no longer supported because the pop-up **Print Window
 
 ### Print statement
 
-The X++ print statement is another statement that existed only for debugging purposes. It still exists, and its basic idea is unchanged. But print now outputs through System.Diagnostics.WriteLine. The product configuration determines the detail of the written information is sent.
-
-![Code editor with print statement](./media/debuggingadmin_debugfeatures.png)
-
-You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.
+The X++ print statement is another statement that existed only for debugging purposes. It still exists, and its basic idea is unchanged. But print now outputs through System.Diagnostics.WriteLine. The product configuration determines the detail of the written information is sent. You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.
 
 ## The Ignore list
 
@@ -689,11 +685,7 @@ class MyClass
 }
 ```
 
-Set a breakpoint on the assignment statement. Make your class the startup object in your project, and start by pressing F5. When the breakpoint is encountered, view the rental variable by expanding it in the locals window. You'll see something similar to the following graphic.
-
-![Code editor with breakpoint](./media/debuggingadmin2_debugfeatures.png)
-
-You can see that the fields that have been selected (EndMileage and RentalId) appear with their selected values, while the unselected fields appear as null. This signifies their value wasn't fetched from the database. Obviously, this is a debugging artifact. The values of the unselected fields will be the default value for the type of the field. Step over this and notice how the debugger changes the rendering to the actual value.
+Set a breakpoint on the assignment statement. Make your class the startup object in your project, and start by pressing F5. When the breakpoint is encountered, view the rental variable by expanding it in the locals window. You can see that the fields that have been selected (EndMileage and RentalId) appear with their selected values, while the unselected fields appear as null. This signifies their value wasn't fetched from the database. Obviously, this is a debugging artifact. The values of the unselected fields will be the default value for the type of the field. Step over this and notice how the debugger changes the rendering to the actual value.
 
 > [!NOTE]
 > If the table is set to Cache, the system will always fetch all fields from the entire table, irrespective of the field list provided in the code.
