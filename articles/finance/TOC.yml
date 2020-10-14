@@ -240,6 +240,8 @@
           href: accounts-payable/submit-invoice-workflow-automatically.md
         - name: View vendor invoice automation results
           href: accounts-payable/view-automated-vendor-invoice.md
+        - name: Vendor invoice entry workspace
+          href: accounts-payable/vendor-invoices-workspace.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
