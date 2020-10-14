@@ -156,7 +156,7 @@ In the **E-invoice** section, you can also set the **eInvoice attachment** optio
 
 ### <a name="items"></a>Items (filling CodiceArticolo block)
 
-**CodiceArticolo** block is filled in on base of item data, item bar code or external item decription (**Product information management** \> **Products** \> **Released products**, tab **Sell**, **Related information**). The fields **Customer relation**, **External item number**, **Description** and **External item text** should be filled in on **External item description** page.   
+**CodiceArticolo** block is filled in on base of item data (if there are items in an invoice), item bar code or external item decription (**Product information management** \> **Products** \> **Released products**, Action Pane, click **Sell**, **Related information**). The fields **Customer relation**, **External item number**, **Description** and **External item text** should be filled in on **External item description** page.   
 
 **CodiceTipo** field is filled in as following:
 - If Item bar code is filled in,  this field is fillig with "EAN"
