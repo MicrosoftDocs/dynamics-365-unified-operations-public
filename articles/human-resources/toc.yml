@@ -217,6 +217,10 @@
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
     - name: Human Resources app in Teams
       href: hr-admin-teams-leave-app.md
+    - name: Prepare for go-live
+      href: hr-admin-go-live-prepare.md
+    - name: Go-live FAQ
+      href: hr-admin-go-live-faq.md
     - name: Documentation resources
       items:
       - name: Help system
