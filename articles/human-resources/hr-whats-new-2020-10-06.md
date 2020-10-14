@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (October 6, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
-author: Jillcarter
-manager: AnnBe
-ms.date: 10/6/2020
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for October 6, 2020.
+author: jcart1106
+manager: tfehr
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-talent
@@ -29,7 +29,8 @@ ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (October 6, 2020)"
+
+# What's new or changed in Dynamics 365 Human Resources (October 6, 2020)
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3636. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
@@ -77,6 +78,10 @@ Employees can view and request time away from work within Microsoft Teams. They 
 - [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) in Human Resources documentation
 
 ### Human Resources app in Teams preview features
+
+
+
+
  
 -  **Notifications**: Submitters and approvers of time-off requests will be notified in the Human Resources app in Teams. Approvers can approve or deny time-off requests. Submitters will be notified if the request was approved or denied. For more information, see:
    - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
