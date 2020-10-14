@@ -142,22 +142,18 @@ The following tools are recommended for performance analysis.
 
 ## Additional resources
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Dynamics 365 Commerce architecture overview](commerce-architecture.md)
 
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Online channel extensibility overview](overview.md)
 
-[Associate an online site with a channel](associate-site-online-store.md)
+[System requirements](system-requirements.md)
 
-[Manage robots.txt files](manage-robots-txt-files.md)
+[Set up a development environment](setup-dev-environment.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Module library overview](../starter-kit-overview.md)
 
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+[Work with templates](../work-with-templates.md)
 
-[Set up custom pages for user logins](custom-pages-user-logins.md)
+[Data cache settings](data-action-cache-settings.md)
 
-[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
-
-[Add support for a content delivery network (CDN)](add-cdn-support.md)
-
-[Enable location-based store detection](enable-store-detection.md)
+[Configure theme settings](configure-theme-settings.md)
