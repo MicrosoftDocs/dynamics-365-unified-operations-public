@@ -53,7 +53,7 @@ From the **Vendors** page, April opens the **Settle transactions** page. She can
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+|       &nbsp;                 | &nbsp;    |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | -10.00    |
@@ -77,7 +77,7 @@ April can create a payment journal for this payment by opening the **Payment jou
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | -10.00    |
@@ -93,7 +93,7 @@ April wants to settle exactly half the invoice. Therefore, she changes the value
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | -10.00    |
@@ -112,7 +112,7 @@ April closes the **Settle transactions** page. A payment line for 495.00 is crea
 ## Remaining amount paid on July 8
 April pays the rest of the invoice for vendor 3064 on July 8, which is in the cash discount period. April creates the payment journal on July 8 and marks the transaction for settlement. She sees that the amount that must be settled is 495.00. The value in the **Estimated cash discount** field is **-5.00**, because the 5.00 discount was previously taken.
 
-|                         |        |
+|  &nbsp;                 |  &nbsp; |
 |-------------------------|--------|
 | Marked total            | 495.00 |
 | Estimated cash discount | -5.00  |
@@ -125,7 +125,7 @@ Information about the marked transaction appears in the grid on the **Settle ope
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+|  &nbsp;                      | &nbsp;    |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |
