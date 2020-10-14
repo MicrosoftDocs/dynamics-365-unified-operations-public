@@ -37,11 +37,11 @@ This topic describes the X++ run-time functions.
 
 The X++ language provides nearly 200 system functions that aren't part of any class and are executed at run time. Run-time functions are used for data type conversions, mathematical operations, and so on. Here are some common run-time functions:
 
--   **str2Int** – Creates an int value from a str value.
--   **abs** – Creates a positive real value from a real value that is either positive or negative.
--   **conFind** – Retrieves the location of an element in a container.
+- **str2Int** – Creates an int value from a str value.
+- **abs** – Creates a positive real value from a real value that is either positive or negative.
+- **conFind** – Retrieves the location of an element in a container.
 
-### Call run-time functions from .NET
+## Call run-time functions from .NET
 
 The logic of the X++ run-time functions is also implemented in the following .NET assembly.
 
@@ -56,6 +56,7 @@ Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 ```
 
 ## Categories and functions
+
 The following table lists and describes only the categories of X++ functions. These categories are intended to help you understand the many functions. However, the categories don't represent any formal construct.
 
 | Category                  | Description  |
@@ -71,9 +72,10 @@ The following table lists and describes only the categories of X++ functions. Th
 | Other                     | [beep](#beep), [newGuid](#newguid), [sleep](#sleep)                                                                                                                                                                        |
 
 ## Business
+
 For more information, see [X++ Business Run-Time Functions](xpp-business-run-time-functions.md).
 
-|          |         |          |        |
+|  &nbsp;  |  &nbsp; | &nbsp;   | &nbsp; |
 |----------|---------|----------|--------|
 | cTerm    | ddb     | dg       | fV     |
 | idg      | intvMax | intvName | intvNo |
@@ -81,6 +83,7 @@ For more information, see [X++ Business Run-Time Functions](xpp-business-run-tim
 | rate     | sln     | syd      | term   |
 
 ## Container
+
 For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).
 
 - conDel
@@ -92,9 +95,10 @@ For more information, see [X++ Container Run-Time Functions](xpp-container-run-t
 - conPoke
 
 ## Conversion
+
 For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run-time-functions.md).
 
-|           |              |              |            |
+| &nbsp;    | &nbsp;       | &nbsp;       | &nbsp;     |
 |-----------|--------------|--------------|------------|
 | any2Date  | any2Enum     | any2Guid     | any2Int    |
 | any2Int64 | any2Real     | any2Str      | anytodate  |
@@ -107,9 +111,10 @@ For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run
 | str2Time  | time2Str     | uint2Str     |            |
 
 ## Date
+
 For more information, see [X++ Date Run-Time Functions](xpp-date-run-time-functions.md).
 
-|         |          |               |               |
+| &nbsp;  | &nbsp;   | &nbsp;        | &nbsp;        |
 |---------|----------|---------------|---------------|
 | dayName | dayOfMth | dayOfWk       | dayOfYr       |
 | endMth  | mkDate   | mthName       | mthOfYr       |
@@ -118,9 +123,10 @@ For more information, see [X++ Date Run-Time Functions](xpp-date-run-time-functi
 | timeNow | today    | wkOfYr        | year          |
 
 ## Math
+
 For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).
 
-|         |          |               |               |
+| &nbsp;  | &nbsp;   | &nbsp;        | &nbsp;        |
 |---------|----------|---------------|---------------|
 |abs|acos|asin|atan|
 |corrFlagGet|corrFlagSet|cos|cosh|
@@ -130,27 +136,30 @@ For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functi
 |tan|tanh|trunc||
 
 ## Reflection
+
 For more information, see [X++ Reflection Run-Time Functions](xpp-reflection-run-time-functions.md).
 
-|              |               |              |               |
+|  &nbsp;      | &nbsp;        | &nbsp;       | &nbsp;        |
 |--------------|---------------|--------------|---------------|
 | classIdGet   | dimOf         | fieldId2Name | fieldId2PName |
 | fieldName2Id | indexId2Name  | indexName2Id | refPrintAll   |
 | tableId2Name | tableId2PName | tableName2Id | typeOf        |
 
 ## Session
+
 For more information, see [X++ Session Run-Time Functions](xpp-session-run-time-functions.md).
 
-|                          |           |           |                     |
+| &nbsp;                   | &nbsp;    | &nbsp;    | &nbsp;              |
 |--------------------------|-----------|-----------|---------------------|
 | curExt                   | curUserId | funcName  | getCurrentPartition |
 | getCurrentPartitionRecId | getPrefix | sessionId | prmIsDefault        |
 | runAs                    | setPrefix |           |                     |
 
 ## String
+
 For more information, see [X++ String Run-Time Functions](xpp-string-run-time-functions.md).
 
-|         |          |          |           |
+|  &nbsp; | &nbsp;   | &nbsp;   | &nbsp;    |
 |---------|----------|----------|-----------|
 | match   | strAlpha | strCmp   | strColSeq |
 | strDel  | strFind  | strFmt   | strIns    |
@@ -160,13 +169,14 @@ For more information, see [X++ String Run-Time Functions](xpp-string-run-time-fu
 | strUpr  | subStr   |          |           |
 
 ## beep
+
 Emits a short sound from the speakers on the computer.
 
 ```xpp
 void beep()
 ```
 
-### Example
+### beep example
 
 ```xpp
 static void beepExample(Args _args)
@@ -176,6 +186,7 @@ static void beepExample(Args _args)
 ```
 
 ## newGuid
+
 Creates a globally unique identifier (GUID).
 
 ```xpp
@@ -186,7 +197,7 @@ guid newGuid()
 
 A GUID.
 
-### Example
+### newGuid example
 
 The following example creates a GUID.
 
@@ -201,6 +212,7 @@ static void newGuidExample(Args _arg)
 ```
 
 ## sleep
+
 Pauses the execution of the current thread for the specified number of milliseconds.
 
 ```xpp
@@ -213,7 +225,7 @@ int sleep(int _duration)
 |------------|--------------------------------------|
 | \_duration | The number of milliseconds to pause. |
 
-### Return value
+### sleep return value
 
 The number of milliseconds that the thread actually paused.
 
@@ -229,7 +241,3 @@ static void sleepExample(Args _arg)
     print "job slept for " + int2str(i/1000) + " seconds";
 }
 ```
-
-
-
-
