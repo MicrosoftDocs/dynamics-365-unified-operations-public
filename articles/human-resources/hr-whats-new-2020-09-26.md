@@ -45,7 +45,10 @@ This release includes the following new features and bug fixes. Changes apply to
 
 The following features are generally available with this release.
 
-## PU 37 Uptake - (501598)
+## Platform update 10.0.13 is now available
+
+For more information on the update, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
+
 ## Uptake new Default Financial Dimensions grid and dialog pattern throughout D365HR - (469495)
 
 
