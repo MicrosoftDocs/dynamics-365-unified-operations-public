@@ -47,7 +47,7 @@ If for any reason you need to modify your variations, follow the steps below.
 > [!IMPORTANT]
 > If you make changes to a live experiment in Commerce or the third-party service, your results may be significantly impacted. Consider letting the experiment run its course and then creating a new experiment for major changes.
 
-1. In Commerce site builder, go to the **Experiments** tab  and select the experiment. 
+1. In Commerce site builder, select **Experiments** in the left navigation pane, and then select the experiment. 
 1. Select the variation you want to update from the drop-down menu.
 1. Make any needed changes, and then preview and publish the variations. For more information, see [Preview and publish an experiment](experimentation-preview-publish.md).
 1. Go to the third-party service to make any experiment setup-related changes.
