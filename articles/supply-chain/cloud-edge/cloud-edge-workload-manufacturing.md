@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manufacturing execution workloads for cloud and edge scale units
-description: This topic describes how manufacturing execution workloads function with cloud and edge scale units
+description: This topic describes how manufacturing execution workloads work with cloud and edge scale units.
 author: cabeln
 manager: 
 ms.date: 10/06/2020
@@ -35,38 +35,40 @@ ms.dyn365.ops.version: 10.0.15
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
-> Please note that certain business functionality is not fully supported in the public preview when using workloads scale units.  
+> Some business functionality isn't fully supported in the public preview when workload scale units are used.
 
-Within manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the hub:
+In manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the hub:
 
-- Enable machine operators and shop floor supervisors to access the operational production plan.
-- Enable machine operators to keep the plan current by executing discrete and process manufacturing jobs.
-- Enable the shop floor supervisor to adjust the operational plan.
-- Enable workers to access time and attendance for clock-in and clock-out on the edge to ensure correct worker pay calculation.
+- Machine operators and shop floor supervisors can access the operational production plan.
+- Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
+- The shop floor supervisor can adjust the operational plan.
+- Workers can access time and attendance for clock-in and clock-out on the edge, to ensure correct worker pay calculation.
 
-This topic describes how manufacturing execution workloads function with cloud and edge scale units.
+This topic describes how manufacturing execution workloads work with cloud and edge scale units.
 
 ## The manufacturing lifecycle
 
-The manufacturing lifecycle is divided into three phases – *Plan*, *Execute* and *Finalize*, as shown in the following illustration.
+As the following illustration shows, the manufacturing lifecycle is divided into three phases: *Plan*, *Execute*, and *Finalize*.
 
-[![Manufacturing execution phases when using a single environment](media/mes-phases.png "Manufacturing execution phases when using a single environment")](media/mes-phases-large.png)
+[![Manufacturing execution phases when a single environment is used](media/mes-phases.png "Manufacturing execution phases when a single environment is used")](media/mes-phases-large.png)
 
-The _plan phase_ includes product definition, planning, order creation and scheduling, and release. The release step of the plan phase indicates the transition from the plan to the _execute phase_. When a production order is released, the production order jobs will be visible on the production floor and ready for execution.
+The _Plan_ phase includes product definition, planning, order creation and scheduling, and release. The release step indicates the transition from the _Plan_ phase to the _Execute_ phase. When a production order is released, the production order jobs will be visible on the production floor and ready for execution.
 
-When a production job is marked as complete, it moves from the execute phase to the _finalize phase_. In the finalize phase, the registrations from the execution phase go through an approval workflow, where the registrations are calculated, approved, and transferred. The production order is now complete, thus generating the basis for the workers' pay.
+When a production job is marked as completed, it moves from the _Execute_ phase to the _Finalize_ phase. In the _Finalize_ phase, the registrations from the *Execute* phase go through an approval workflow, where they are calculated, approved, and transferred. At that point, the production order is completed. Therefore, the basis for the workers' pay is generated.
 
-## Splitting the execution phase into a separate workload
+## Splitting the Execute phase into a separate workload
 
-With scale units, the execution phase is split out as a separate workload, as shown in the following illustration.
+As the following illustration shows, when scale units are used, the _Execute_ phase is split out as a separate workload.
 
-[![Manufacturing execution phases when using scale units](media/mes-phases-workloads.png "Manufacturing execution phases when using scale units")](media/mes-phases-workloads-large.png)
+[![Manufacturing execution phases when scale units are used](media/mes-phases-workloads.png "Manufacturing execution phases when scale units are used")](media/mes-phases-workloads-large.png)
 
-The model now goes from a one-instance installation to a model based on hub and scale units. The plan and finalize phases run as back-office operations on the hub, and the manufacturing execution workload runs on the scale unit. Data is transferred between the hub and scale units asynchronously. When a production order is released on the hub, all necessary data to process production jobs is transferred to the scale unit. This is data such as production orders, production routes, bills of material, and products. Data that isn't related to a production order (such as indirect activities, absence codes, and production parameters) is also transferred from the hub to the scale unit. As a rule, data originating from the hub and transferred to the scale unit can only be created or updated on the hub. It is, for example, not possible to create a new absence code or indirect activity on the scale unit&mdash;it is only possible to use these for registration. The registrations made on the scale unit during execution are then transferred to the hub, where time and attendance approval, inventory, and financial updates are processed.
+The model now goes from a single-instance installation to a model that is based on the hub and scale units. The _Plan_ and _Finalize_ phases run as back-office operations on the hub, and the manufacturing execution workload runs on the scale units. Data is transferred asynchronously between the hub and scale units.
 
-## Manufacturing execution tasks that can run on workloads
+When a production order is released on the hub, all data that is required to process production jobs is transferred to the scale unit. This data includes production orders, production routes, bills of materials, and products. Data that isn't related to a production order (such as indirect activities, absence codes, and production parameters) is also transferred from the hub to the scale unit. As a rule, data that originates from the hub and that is transferred to the scale unit can only be created or updated on the hub. For example, a new absence code or indirect activity can't be created on the scale unit. These can be used only for registration. The registrations that are made on the scale unit during execution are then transferred to the hub, where time and attendance approval, inventory, and financial updates are processed.
 
-The following manufacturing execution tasks can currently be run on workloads when using scale units.
+## Manufacturing execution tasks that can be run on workloads
+
+The following manufacturing execution tasks can currently be run on workloads when scale units are used:
 
 - Clock-in, log-in, clock-out, and absence
 - Start job
@@ -78,38 +80,36 @@ The following manufacturing execution tasks can currently be run on workloads wh
 
 ## Working with manufacturing execution workloads on the hub
 
-Usually, the processes required to run manufacturing execution workloads run automatically to keep the hub and all the scale units in sync as needed. However, if you are having trouble, you can manually trigger the processing of raw registrations received from workloads and/or check the registration processing log.
+Usually, the processes that are required to run manufacturing execution workloads run automatically to keep the hub and all the scale units in sync, as needed. However, if you're having trouble, you can manually trigger the processing of raw registrations that are received from workloads and/or check the registration processing log.
 
 ### Manually process raw registrations
 
-A batch job in Supply Chain Management runs automatically to process all the registrations received from the workloads. This job creates the necessary production journals and logbook entries when processing a registration for a completed job on the workload.
+A batch job in Supply Chain Management runs automatically to process all the registrations that have been received from the workloads. This job creates the required production journals and logbook entries when a registration is processed for a completed job on the workload.
 
-This job usually runs automatically, but you can run it manually at any time by signing in to the hub and going to **Production control \> Periodic tasks \> Backoffice workload management \> Process raw registrations**.
+Although the job usually runs automatically, you can run it manually at any time by signing in to the hub and going to **Production control \> Periodic tasks \> Backoffice workload management \> Process raw registrations**.
 
 ### Check the raw registration processing log
 
-To review the registration processing log, sign in to the hub and go to **Production control \> Periodic tasks \> Backoffice workload management \> Raw registration processing log.** This opens the **Processing log** page, which shows a list of processed raw registrations and the status of each.
+To review the registration processing log, sign in to the hub, and go to **Production control \> Periodic tasks \> Backoffice workload management \> Raw registration processing log**. The **Raw registration processing log** page shows a list of processed raw registrations and the status of each registration.
 
-![The Raw registration processing log page](media/mes-processing-log.png "The Raw registration processing log page")
+![Raw registration processing log page](media/mes-processing-log.png "Raw registration processing log page")
 
-You can operate on any listed registration by selecting it and then selecting one of the following from the Action Pane:
+You can work on any registration in the list by selecting it and then selecting one of the following buttons on the Action Pane:
 
-- **Process** - Process the selected registration manually. This can be useful if the process raw registration job has not run or has failed.
-- **Cancel** - Cancel the selected registration.
+- **Process** – Manually process the selected registration. This action can be useful if the _Process raw registrations_ job hasn't run, or if it failed.
+- **Cancel** – Cancel the selected registration.
 
 ## Working with manufacturing execution workloads on a scale unit
 
-Usually, the processes required to run manufacturing execution workloads run automatically to keep the hub and all the scale units in sync as needed. However, if you are having trouble, you can check the history of orders processed on a scale unit or run the _Manufacturing hub to scale unit message processor_ job manually.
+Usually, the processes that are required to run manufacturing execution workloads run automatically to keep the hub and all the scale units in sync, as needed. However, if you're having trouble, you can check the history of orders that have been processed on a scale unit or manually run the _Manufacturing hub to scale unit message processor_ job.
 
-### View a history of manufacturing jobs processed on a scale unit
+### View the history of manufacturing jobs that have been processed on a scale unit
 
-To review the history of manufacturing jobs processed on a scale unit, sign in to the scale unit machine and go to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing jobs processing history**.
+To review the history of manufacturing jobs that have been processed on a scale unit, sign in to the scale unit machine, and go to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing jobs processing history**. The **Manufacturing jobs processing history** page shows the processing history of the production orders on the scale unit. You can work on any production order in the list by selecting it and then selecting one of the following buttons on the Action Pane:
 
-The **Manufacturing jobs processing history** page shows the processing history of the production orders on the scale unit. You can operate on any listed production order by selecting it and then selecting one of the following from the Action Pane:
+- **Process** – Manually process the selected production order.
+- **Cancel** – Cancel the selected production order.
 
-- **Process** - Process the selected production order manually.
-- **Cancel** - Cancel the selected production order.
+### Manufacturing hub to scale unit message processor job
 
-### Manufacturing hub to scale unit message processor
-
-The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the scale unit. This job starts automatically when the manufacturing execution workload is deployed, but you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
+The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the scale unit. This job is automatically started when the manufacturing execution workload is deployed. However, you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
