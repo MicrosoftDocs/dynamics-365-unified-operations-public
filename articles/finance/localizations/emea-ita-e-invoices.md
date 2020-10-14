@@ -156,17 +156,17 @@ In the **E-invoice** section, you can also set the **eInvoice attachment** optio
 
 ### <a name="items"></a>Items (filling CodiceArticolo block)
 
-**CodiceArticolo** block is filled in on base of item bar code or external item decription (**Product information management** \> **Products** \> **Released products**,tab **Sell**, **Related information**). **Customer relation**, **External item number**, **Description** and **External item text** should be filled in on **External item description** page.   
+**CodiceArticolo** block is filled in on base of item data, item bar code or external item decription (**Product information management** \> **Products** \> **Released products**, tab **Sell**, **Related information**). The fields **Customer relation**, **External item number**, **Description** and **External item text** should be filled in on **External item description** page.   
 
-**CodiceTipo** field is filled in on following conditions:
-- If Item bar code is filled in the item the this field is fillig with "EAN"
-- If Item bar code is not filled in the item and external item description exists for this item and the customer then this field is filling with the value in Description field
-- If Item bar code is not filled in the item and external item description does not exist for this item then this field is filling with "Codice Art. fornitore"
+**CodiceTipo** field is filled in as following:
+- If Item bar code is filled in,  this field is fillig with "EAN"
+- If Item bar code is not filled in, and the record in the **External item description** exists for this item and the customer, then this field is filling with the value from **Description field**
+- If Item bar code is not filled in, and the record in the **External item description** does not exist for this item, then this field is filling with "Codice Art. fornitore"
 
-**CodiceValore** field is filled in on following conditions:
-- If Item bar code is filled in the item the this field is fillig with theItem bar code
-- If Item bar code is not filled in the item and external item description exists for this item and the customer then this field is filling with the value in External item number field
-- If Item bar code is not filled in the item and external item description does not exist for this item then this field is filling with Item number 
+**CodiceValore** field is filled in as followings:
+- If Item bar code is filled in, the this field is fillig with the Item bar code
+- If Item bar code is not filled in, and the record in the **External item description** exists for this item and the customer, then this field is filling with the value from **External item number** field
+- If Item bar code is not filled in, and the record in the **External item description** does not exist for this item and customer, then this field is filling with **Item number** 
 
 
 ### <a name="digitalcert"> </a>Digital certificates
