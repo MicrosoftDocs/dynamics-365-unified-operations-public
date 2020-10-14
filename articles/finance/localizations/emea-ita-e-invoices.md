@@ -156,15 +156,15 @@ In the **E-invoice** section, you can also set the **eInvoice attachment** optio
 
 ### <a name="items"></a>Items
 
-**CodiceArticolo** block is filled in on base of product data (if there are product lines in an invoice), product bar code, internal producrt  number (item number), or external item decription (**Product information management** \> **Products** \> **Released products**, Action Pane, click **Sell**, **Related information**).    
+**CodiceArticolo** block is filled in on base of product data (if there are product lines in an invoice), product bar code, internal product  number (item number), or external item decription (**Product information management** \> **Products** \> **Released products**, Action Pane, click **Sell**, **Related information**).    
 
 **CodiceTipo** field is filled in as following:
 - If bar code is filled in,  this field is fillig with "EAN"
-- If bar code is not filled in, and the record in the **External item description** exists for this item and the customer, then this field is filling with the value from **Description field**
-- If bar code is not filled in, and the record in the **External item description** does not exist for this item, then this field is filling with "Codice Art. fornitore"
+- If bar code is not filled in, and the record in the **External item description** exists for this item and the customer, then this field is filling with the value from **Description** field
+- If bar code is not filled in, and the record in the **External item description** does not exist for this item, then this field is filling with "Codice Art. fornitore" text
 
 **CodiceValore** field is filled in as followings:
-- If  bar code is filled in,this  field is fillig with the Item bar code
+- If  bar code is filled in,this  field is fillig with the  bar code
 - If  bar code is not filled in, and the record in the **External item description** exists for this item and the customer, then this field is filling with the value from **External item number** field
 - If  bar code is not filled in, and the record in the **External item description** does not exist for this item and customer, then this field is filling with **Item number** 
 
