@@ -53,7 +53,7 @@ Before you can begin to work with the electronic invoice functionality, the foll
 - [Electronic invoice parameters](#einvoicesparameters)
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
-- [Items (filling CodiceArticolo block)](#items)
+- [Items](#items)
 - [Digital certificates](#digitalcert)
 - [Optional: Destination for XML file output](#destination)
 
@@ -154,9 +154,9 @@ Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a 
 
 In the **E-invoice** section, you can also set the **eInvoice attachment** option to **Yes**. In this case, after you print an invoice (either during or after posting), the system automatically attaches the PDF file to the invoice and eInvoice (see [Electronic invoice register](#einvoiceregister)), and the file is included in the XML file (**Allegatti** block).
 
-### <a name="items"></a>Items (filling CodiceArticolo block)
+### <a name="items"></a>Items
 
-**CodiceArticolo** block is filled in on base of item data (if there are items in an invoice), item bar code or external item decription (**Product information management** \> **Products** \> **Released products**, Action Pane, click **Sell**, **Related information**).    
+**CodiceArticolo** block is filled in on base of item data (if there are items in an invoice), item bar code, internal item number, or external item decription (**Product information management** \> **Products** \> **Released products**, Action Pane, click **Sell**, **Related information**).    
 
 **CodiceTipo** field is filled in as following:
 - If Item bar code is filled in,  this field is fillig with "EAN"
