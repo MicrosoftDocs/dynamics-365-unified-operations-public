@@ -32,9 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources Setpember 26, 2020
 
-This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
-
-For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
 For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
@@ -44,7 +42,7 @@ This release includes the following new features and bug fixes. Changes apply to
 
 ### New features
 
-The following features are generally available with this release.
+The following feature is generally available with this release:
 
 - **Platform update 10.0.13 is now available**: For more information on the update, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
 
@@ -54,6 +52,8 @@ The following bug fixes are included in this release.
 
 > [!NOTE]
 > Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+
+**Table format**
 
 | LCS Number | Issue | Description |
 | --- | --- | --- |
@@ -66,6 +66,8 @@ The following bug fixes are included in this release.
 | 506868 | Common Data Service **Title** field not set for **Job position** entity | The **Title** field in the **Job** and **JobPosition** entities displayed as not specified. The **Title** field now displays. |
 | 430359 | Can't access offboarding checklist tasks with manager and employee roles assigned | Workers with a future termination date couldn't access their checklist tasks if they only had an employee or manager role. Now users with only an employee or manager role can access offboarding tasks with a future termination date. |
 | 458102 | New employee doesn't appear on the **Worker payroll information** entity when created | New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. |
+
+**Bulleted list format**
 
 - **Leave request work item opens wrong link in a manual decision (474887)**: When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision.
 
@@ -92,24 +94,9 @@ The following new features are in preview. For more information about turning fe
 | [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) |
 | [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) |  |
 
-
-### Human Resources app in Teams
-
-Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see:
-
-- [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
-- [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) in Human Resources documentation
-
-### Organization and personnel management workflow experience enhancements
-
-This feature currently in preview will enable HR professionals and managers to:
-
-- Have a clearer intuitive view of submitting workflow requests and taking action on them as a workflow reviewer.
-- Have a unified list for all the action items assigned to an employee, including workflow reviews or tasks they need to complete.
-
 ## Coming soon
 
-The following new features and bug fixes are scheduled for future releases.
+The following new feature is scheduled for a future release:
 
 - [Custom links in manager self-service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service)
 
