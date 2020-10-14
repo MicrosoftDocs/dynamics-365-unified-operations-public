@@ -214,6 +214,8 @@ The mirror branch or folder is only required one time per project.
 
     ![Source control](./media/9-source-control.png)
 
+Note: Cloaking is the process of defining which folders or files should be ignored by the Visual Studio Workspace on your development machine. Since these files are ignored they cannot be added. If you see an error message about cloaked items, you must adjust your Visual Studio Workspace accordingly. 
+
 6. Select **Finish**. This process will take a few minutes.
 7. When the process is completed, rename the folder **RetailSdk-mirror**.
 
