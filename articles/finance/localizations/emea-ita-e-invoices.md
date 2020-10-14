@@ -165,8 +165,8 @@ In the **E-invoice** section, you can also set the **eInvoice attachment** optio
 
 **CodiceValore** field is filled in as followings:
 - If  bar code is filled in,this  field is fillig with the  bar code
-- If  bar code is not filled in, and the record in the **External item description** exists for this item and the customer, then this field is filling with the value from **External item number** field
-- If  bar code is not filled in, and the record in the **External item description** does not exist for this item and customer, then this field is filling with **Item number** 
+- If  bar code is not filled in, and the record in the **External item description** exists for this product and the customer, then this field is filling with the value from **External item number** field
+- If  bar code is not filled in, and the record in the **External item description** does not exist for this product and customer, then this field is filling with **Item number** 
 
 
 ### <a name="digitalcert"> </a>Digital certificates
