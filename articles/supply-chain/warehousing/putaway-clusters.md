@@ -106,9 +106,12 @@ The Putaway cluster profile determines where the item will go based on the locat
 10. Select **OK** to save the query and close the dialog box.
 1. Select **Save** in the Action Pane and exit the form.
 
+> [!IMPORTANT]
+> Fields on the cluster profile that are greyed out when enabling *Generate cluster ID* are inactive and will not be considered when using the feature.
+
 ### Mobile device menu items
 
-Three new mobile device menu items are available for this functionality. *Receive and Sort Cluster* is used to sort the received inventory to a putaway cluster upon receipt. *Assign cluster* is used to assign multiple license plates to a cluster for putaway. *Cluster Putaway* is used to put away the cluster once it has been assigned.
+Two new mobile device menu items are available for this functionality. *Receive and Sort Cluster* is used to sort the received inventory to a putaway cluster upon receipt. *Cluster Putaway* is used to put away the cluster once it has been assigned.
 
 #### Receive and Sort Cluster
 
@@ -141,26 +144,6 @@ Create new mobile device menu item for Receive and Sort Cluster, which will crea
 
 > [!NOTE]
 > The **Assign putaway cluster** parameter is only available on one-step receiving **Work creation process** activity.
-
-#### Assign cluster
-
-This menu item is only used if **Assign putaway cluster** is not marked *Yes* on the **Receive and Sort Cluster** menu item. The scenario applied here does not use this menu item.
-
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. Select **New** from the Action Pane.
-1. In the **Header**, enter the following:
-
-    - **Menu item name** – *Assign Cluster*
-    - **Title** – *Assign Cluster*
-    - **Mode** – *Indirect*
-    - **Use existing work** - *No*
-
-1. In the **General** FastTab, enable the following settings:
-
-    - **Activity Code** – *Assign to putaway cluster*
-    - Accept the default values of the remaining parameters
-
-1. Select **Save** in the Action Pane.
 
 #### Cluster Putaway
 
@@ -296,18 +279,3 @@ The following steps will be performed on the mobile device.
 ## Notes and tips
 
 - For the instances where the Cluster ID becomes the Parent LP for a nested pallet, when the Cluster ID is scanned, the Put position is automatically given and no further LP needs to be scanned, even if generating LP is set to be manual.
-
-### Assign to Putaway Cluster
-
-If **Assign putaway cluster** is marked *No* on the **Receive and Sort Cluster** mobile device menu item, the step to assign the receipt to a putaway cluster is manual. The scenario applied here does not use this menu item. Listed below are steps to manually assign to a putaway cluster.
-
-1. Logon to the mobile device with a user setup for warehouse 61.
-1. Select **Inbound** from the **MAIN MENU**.
-1. Select **Assign Cluster** from the **INBOUND** menu.
-1. Enter the Cluster ID (or have the system generate one automatically).
-1. Add previously created Work IDs/License plates to the Cluster. Repeat for all Work IDs.
-    - The user will see a message on the mobile device _"Work was assigned to cluster"_
-1. After the last Work has been added to the Cluster, initiate the _Close Cluster._ The user will be presented with the message _"Cluster Close Successfully"_.
-    - Unlike outbound cluster picking, Putaway Clusters do not have maximum number of positions assigned. The user can decide when to close the Cluster manually.
-
-This Cluster is now ready for putaway processing.
