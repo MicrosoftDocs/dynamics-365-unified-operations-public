@@ -41,7 +41,7 @@ You can preview your variations and continue editing them until they look the wa
 To preview your experiment variations in Commerce site builder, follow these steps.
 
 1. From the variations drop-down menu below the command bar, select the content you want to preview. 
-1. Select **Preview** in the top bar. A preview of what the content will look like when it's published is displayed.
+1. On the command bar, select **Preview**. A preview of what the content will look like when it's published is displayed.
 1. To preview a different variation, select it from the variation drop-down menu and select **Preview** again.
 
 ## Publish your experiment
@@ -51,7 +51,7 @@ If you aren't using a publish group to schedule when your experiment goes live a
 > If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For details, see [Save, preview, and publish a page](save-preview-publish-page.md).
     
 ### Use publish groups to schedule when your experiment goes live
-Variations created in site builder can be scheduled for publishing by using a publish group. Within a publish group, you can connect a page or fragment to your experiment by going to the **Experiments** tab, or to the **Pages** or **Fragments** tabs. For more information, see [Connect an experiment and edit variations](experimentation-connect-edit.md). For information about publish groups, see [Work with publish groups](publish-groups.md).
+Variations created in site builder can be scheduled for publishing by using a publish group. Within a publish group, you can connect a page or fragment to your experiment by selecting **Experiments** in the left navigation pane. You can also do this by selecting **Pages** or **Fragments**. For more information, see [Connect an experiment and edit variations](experimentation-connect-edit.md). For information about publish groups, see [Work with publish groups](publish-groups.md).
 
 When using publish groups with experiments, there are some important considerations to be aware of.
 - When you add a page or fragment that has an experiment running on it to a publish group, the experiment will be removed from the page or fragment in the publish group.
