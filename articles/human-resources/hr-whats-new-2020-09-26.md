@@ -46,12 +46,7 @@ This release includes the following new features and bug fixes. Changes apply to
 
 The following features are generally available with this release.
 
-## Platform update 10.0.13 is now available
-
-For more information on the update, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
-
-## Uptake new Default Financial Dimensions grid and dialog pattern throughout D365HR - (469495)
-
+- **Platform update 10.0.13 is now available**: For more information on the update, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
 
 ### Bug fixes
 
@@ -62,53 +57,41 @@ The following bug fixes are included in this release.
 
 | LCS Number | Issue | Description |
 | --- | --- | --- |
-| 474887 | Leave request work item opens wrong link in a manual decision |  |
-| 474962 | Leave and absence parameters entity has fields with ambiguous labels |  |
-| 481401 | Accrual processing hangs when accrual date basis is after accrual start date and at end of month |  |
-| 447167 | Expiring records lists include inactive workers |  |
-| 486840 | Wrong leave of absence request opens from **Work items assigned to me** |  |
-| 506868 | Common Data Service **Title** field not set for **Job position** entity |  |
-| 430359 | Can't access offboarding checklist tasks with manager and employee roles assigned |  |
-| 458102 | New employee doesn't appear on the **Worker payroll information** entity when created |  |
+| 469495 | Update default financial dimensions grid and dialogue | The financial dimensions grid and dialogue is updated throughout Human Resources. |
+| 474887 | Leave request work item opens wrong link in a manual decision | When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision. |
+| 474962 | Leave and absence parameters entity has fields with ambiguous labels | Leave and absence parameters entity labels are updated to be more clear. |
+| 481401 | Accrual processing hangs when accrual date basis is after accrual start date and at end of month | Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. |
+| 447167 | Expiring records lists include inactive workers | The **Expiring records** tab in **Personnel management** included inactive workers. Now it only includes active workers. |
+| 486840 | Wrong leave of absence request opens from **Work items assigned to me** | Selecting a leave of absence request from **Work items assigned to me** no longer opens the most recent leave of absence request assigned to the current user. |
+| 506868 | Common Data Service **Title** field not set for **Job position** entity | The **Title** field in the **Job** and **JobPosition** entities displayed as not specified. The **Title** field now displays. |
+| 430359 | Can't access offboarding checklist tasks with manager and employee roles assigned | Workers with a future termination date couldn't access their checklist tasks if they only had an employee or manager role. Now users with only an employee or manager role can access offboarding tasks with a future termination date. |
+| 458102 | New employee doesn't appear on the **Worker payroll information** entity when created | New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. |
 
+- **Leave request work item opens wrong link in a manual decision (474887)**: When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision.
 
+- **Leave and absence parameters entity has fields with ambiguous labels (474962)**: Leave and absence parameters entity labels are updated to be more clear.
 
-## Leave request work item opens wrong link in a manual decision (474887)
+- **Accrual processing hangs when accrual date basis is after accrual start date and at end of month (481401)**: Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. 
 
-When a workflow configuration contains a manual decision, navigating to the leave request from **Work items assigned to me** opens the wrong link, showing either a blank form or a leave request created by the current user instead of the one assigned to them for the manual decision.
+- **Expiring records lists include inactive workers (447167)**: The **Expiring records** tab in **Personnel management** included inactive workers. Now it only includes active workers.
 
-## Leave and absence parameters entity has fields with ambiguous labels (474962)
+- **Wrong leave of absence request opens from Work items assigned to me (486840)**: Selecting a leave of absence request from **Work items assigned to me** no longer opens the most recent leave of absence request assigned to the current user. 
 
-Leave and absence parameters entity labels are updated to be more clear.
+- **Common Data Service Title field not set for Job position entity (506868)**: The **Title** field in the **Job** and **JobPosition** entities displayed as not specified. The **Title** field now displays.
 
-## Accrual processing hangs when accrual date basis is after accrual start date and at end of month (481401)
+- **Can't access offboarding checklist tasks with manager and employee roles assigned (430359)**: Workers with a future termination date couldn't access their checklist tasks if they only had an employee or manager role. Now users with only an employee or manager role can access offboarding tasks with a future termination date.
 
-Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. 
-
-## Expiring records lists include inactive workers (447167)
-
-The **Expiring records** tab in **Personnel management** included inactive workers. Now it only includes active workers.
-
-## Wrong leave of absence request opens from Work items assigned to me (486840)
-
-Selecting a leave of absence request from **Work items assigned to me** no longer opens the most recent leave of absence request assigned to the current user. 
-
-## Common Data Service Title field not set for Job position entity (506868)
-
-The **Title** field in the **Job** and **JobPosition** entities displayed as not specified. It now displays title.
-
-## Can't access offboarding checklist tasks with manager and employee roles assigned (430359)
-
-Workers with a future termination date are unable to access their checklist tasks if they only have an employee or manager role.  Have updated this scenario so that users with only an employee or manager role can access offboarding tasks with a future termination date.
-
-## New employee doesn't appear on the Worker payroll information entity when created (458102)
-
-New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. 
-
+- **New employee doesn't appear on the Worker payroll information entity when created (458102)**: New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. 
 
 ## In preview
 
 The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
+
+| Feature in Release plan | Documentation |
+| --- | --- |
+| [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) |
+| [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) |  |
+
 
 ### Human Resources app in Teams
 
@@ -119,27 +102,18 @@ Employees can view and request time away from work within Microsoft Teams. They 
 
 ### Organization and personnel management workflow experience enhancements
 
-This feature currentlu in preview will enable HR professionals and managers to:
+This feature currently in preview will enable HR professionals and managers to:
+
 - Have a clearer intuitive view of submitting workflow requests and taking action on them as a workflow reviewer.
 - Have a unified list for all the action items assigned to an employee, including workflow reviews or tasks they need to complete.
-
-| Feature | Release plan | Documentation |
-| --- | --- | --- | --- |
-| Feature name or short description | Release plan title and link | Doc title and link |
 
 ## Coming soon
 
 The following new features and bug fixes are scheduled for future releases.
 
-### Custom links in Manager self service 
-
-We are expanding capabilities in manager self-service to add custom links on the My team tab. This feature is similar to the custom links feature we provide in the My information tab in employee self-service.
-
-### New features
+- [Custom links in manager self-service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service)
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
-
-
 
 ## See also
 
