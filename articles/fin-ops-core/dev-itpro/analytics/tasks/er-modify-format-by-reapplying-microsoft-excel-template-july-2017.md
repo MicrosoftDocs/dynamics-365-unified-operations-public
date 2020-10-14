@@ -86,5 +86,5 @@ This procedure explains how to modify an Electronic reporting (ER) format config
 6. Select Yes in the Run Draft field.
 
 ## Use the modified draft version of the ER format for payment journal processing
-    * Review the created worksheet, including new detail of payment lines – payment date.  
 
+* Review the created worksheet, including new detail of payment lines – payment date.  

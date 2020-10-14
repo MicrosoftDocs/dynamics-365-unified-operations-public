@@ -251,9 +251,8 @@ You can specify additional country/region codes in their extension. The effectiv
 ## Event argument types
 When an event takes place, the delegates described in the sections above get triggered. In this section, we provide the details of the types of the arguments that are passed as the event arguments. Some of the entries in the table below have a null in the column designating the event args; this means that no arguments are passed - the relevant information is in the first argument (typically called sender) in this case.
 
-|                                 |                                  |
+| Event                           | Argument type                |
 |---------------------------------|----------------------------------|
-| **Event**                       | **Argument type**                |
 | onDefaultedField                | DefaultFieldEventArgs            |
 | onDefaultedRow                  | null                             |
 | onDefaultingField               | DefaultFieldEventArgs            |

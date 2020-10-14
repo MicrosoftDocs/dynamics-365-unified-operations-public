@@ -48,7 +48,7 @@ The design goal is to encapsulate the control implementation and not require the
 -   In Dynamics AX 2012, parmAttributeSetDataSource and parmAttributeValueSetDataSource were used to set the datasource and datasource field associated with the Default Dimensions control.  Typically these were set in the init method of the form, immediately after constructing the DimensionDefaultingController instance.  All calls to parmAttributeSetDataSource and parmAttributeValueSetDataSource will be removed after upgrade.  The values from these calls are used to populate metadata on the upgraded control.  After upgrade the form should be checked to verify that it is working as expected after the removal of all these calls.
 -   Dimension Entry controls are now modelled on form design. To find a Dimension Entry control, expand the design elements or search for “DimensionEntry” on the form design. Here is what the new control will look like at design time.
 
-[![1](./media/1.png)](./media/1.png)
+[![New project dialog](./media/1.png)](./media/1.png)
 
 ## Properties
 The custom properties for the Dimension Entry control are found under the **Controller** group. 
@@ -70,9 +70,8 @@ The custom properties for the Dimension Entry control are found under the **Cont
 ## Controller class property
 The table provided below gives details about each controller.
 
-|                                                |                                                                                                                                                                                                                                                                                                                           |
-|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Controller**                                 | **Details**                                                                                                                                                                                                                                                                                                               |
+| Controller                                 | Details  |
+|------------------------------------------------|------------------|
 | BudgetDefaultDimensionValueSet                 | This controller provides budget based support for default value data entry in the Dimension Entry control. Budget Default Dimensions require a Main Account Dimension.                                                                                                                                                    |
 | PurchReqDefaultDimensionValueSet               | This controller provides PurchReq based support for default value data entry in the Dimension Entry control. PurchReq Default Dimensions require a Main Account Dimension.                                                                                                                                                |
 | LedgerDefaultDimensionValueSet                 | This controller provides ledger based support for default value data entry in the Dimension Entry control. Default Dimensions require the phrase “No default” to appear in the name column of any row that doesn’t have a value specified. This controller is typically used with setup, master data, and header records. |
@@ -90,9 +89,8 @@ Some Dimension Entry controls might not have the controller property set. The co
 
 #### Extended data types and the controllers they are mapped to
 
-|                                                |                                                       |
+| Extended data type                         | Controller                                        |
 |------------------------------------------------|-------------------------------------------------------|
-| **Extended data type**                         | **Controller**                                        |
 | BudgetDefaultDimensionValueSet                 | BudgetDefaultDimensionEntryController                 |
 | PurchReqDefaultDimensionValueSet               | PurchReqDefaultDimensionEntryController               |
 | LedgerDefaultDimensionValueSet                 | LedgerDefaultDimensionEntryController                 |
