@@ -46,7 +46,7 @@ Every experiment needs metrics to measure the impact of the variations and to va
 
 To set up your success metrics, follow these steps.
 
-1. In Commerce site builder, select the **Pages** tab in the left navigation pane, and then select the page that you want to collect metrics for. 
+1. In Commerce site builder, select **Pages** in the left navigation pane, and then select the page that you want to collect metrics for. 
 1. Go to the **Event IDs to track** section in the right property pane of the page or module you want to track.
 1. Select **View**. A list of all event IDs is displayed. Copy the event you want to track, and paste the event key into the designated location in the third-party service. If you need more than one event, copy the keys one at a time. 
     - To learn how to view all of the available events and attributes, including page views and revenue tracking, see [Commerce component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md).
