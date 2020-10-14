@@ -36,7 +36,7 @@ This topic describes some best practices to follow when developing Dynamics 365 
 
 ## Overview
 
-The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions and themes can be created, or the provided (module library)[starter-kit-overview.md] can be extended. It is important to consider web site performance when building e-Commerce customizations. Standard best practices used for website development are applicable including minimizing HTML, JavaScript, and CSS files, and optimizing images.
+The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions, and themes can be created, or the provided [module library](starter-kit-overview.md) can be extended. It is important to consider web site performance when building e-Commerce customizations. Standard best practices used for website development are applicable including minimizing HTML, JavaScript, and CSS files, and optimizing images.
 
 ## Infrastructure setup
 
@@ -45,7 +45,7 @@ The [Dynamics 365 Commerce system](../commerce-architecture.md) includes various
 > [!NOTE]
 > Commerce Scale Unit allows you to select a specific region during setup.
 
-## Minimizing HTML, CSS, and JavaScript
+## Minimize HTML, CSS, and JavaScript file sizes
 
 The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript and SCSS is a superset of Cascading Style Sheets (CSS) that is compiled down to standard CSS. When the configuration package is built using the [yarn msdyn365 pack](cli-command-reference#pack.md) command, or the Node server is started on a local development environment using the [yarn start](setup-dev-environment#run-your-node-app.md) command, the TypeScript and SCSS files will compiled down to JavaScript and CSS files respectively. These files are also minified to reduce network bandwidth.
 
