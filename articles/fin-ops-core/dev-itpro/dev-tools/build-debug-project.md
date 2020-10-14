@@ -35,21 +35,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In this tutorial, you’ll learn about using the tools in Visual Studio to analyze and debug code in the Fleet Management application. You’ll go through a simple developer scenario in which you will set breakpoints, modify some code, and build the result. 
 
-Prerequisites
--------------
+## Prerequisites
 
 Previous experience with code and Visual Studio is helpful to get the full benefit of this tutorial. This tutorial requires you to access the environment using Remote Desktop and that you be provisioned as an administrator on the instance.
 
 ## Key concepts
+
 -   The debugger in Visual Studio is used to analyze and debug code for your projects.
 -   The standard features of the Visual Studio debugger are available to use when you're examining the running application. These features include modifying values of variables, setting breakpoints, and so on.
 -   IntelliSense and other features of Visual Studio are vital to efficient code editing and comprehension.
 -   Development is an iterative process. After making modifications to the code, the project will be built, and changes can be tested.
 
 ## Scenario
+
 The rental company has had unfortunate events when customers rent cars using credit cards that are past the expiration dates. You, the developer, are tasked with revising the application to help prevent this situation. You’ll identify the problem by using the debugger in Visual Studio. After the problem is identified, you’ll edit some code to implement a fix. Finally, you’ll build the project and validate that the fix was successful.
 
 ## Run to a breakpoint
+
 1.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
 2.  Open the FleetManagement solution. On the **File** menu, point to **Open**, and then click **Project/Solution**.
 3.  Browse to the desktop, and then open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
@@ -60,7 +62,7 @@ The rental company has had unfortunate events when customers rent cars using cre
 8.  Double-click the **Code** folder, and then double click the **Classes** folder of the Fleet Management project. Locate the **FMRentailCheckoutProcessor** class. Right-click this class, and then click **Open**. Alternatively, you can use the solution explorer search bar at the top of the solution explorer window. As you enter the name in the search bar, you'll see the corresponding artifacts selected in the solution explorer. You can now see the X++ code for the class. This class has a method named **FinalizeRentalCheckout**.
 9.  Place a breakpoint in this method on the line following the first comment. To do this, click in the margin to the left of the line of code where you want the debugger to pause execution. You can also click anywhere in the line of code, and then press F9. The following illustration shows a breakpoint, which is displayed as a red-filled circle in the margin. 
 
-    [![RedCircleMargin\_BuildDebugProj](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) 
+    [![Breakpoint in FMRentalCheckoutProcessor](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) 
 
     The FinalizeRentalCheckout method is called when a rental transaction is saved. This method calls the delegate named RentalTransactionAboutTobeFinalizedEvent. You can implement an event handler method, which is called by this delegate. The method that calls the delegate passes a parameter, named RentalConfirmation, which contains a value that indicates whether the rental should be allowed or blocked. If the rental is allowed, the value contains "true"; if it's blocked, the value contains "false". An event handler can change this value, based on any test the developer chooses to implement in code. In this case, we'll modify the code to test the expiration date of the credit card.
 10. Press F5 to start the application for debugging, or, on the **Debug** menu, click **Start Debugging**. It's important that you start the application in one of these ways. If you don't, the Visual Studio debugger won't start, so you won't hit any of the breakpoints you've set. **Note**: The debugger needs to relate code position to source positions. It does this through consuming PDB files produced alongside the assemblies and net modules. The debugger will load symbols from the PDB files as described in the settings in the global tools settings. To open the options page containing the setting that controls which symbols load, go to the **Tools** menu and choose **Options**. In the **Microsoft Dynamics 365 for Finance and Operations** group, select the **Debugging** page. If this option is selected, the system will load symbols from only the PDB files related to the artifacts in the current solution. This reduces the startup time significantly, so be sure it’s selected for this lab. Be aware that when this option is selected, it won’t be possible to see source code from entities outside of the current solution. After a few moments, the browser will start and display the startup object that was selected in the project.
@@ -71,26 +73,27 @@ The rental company has had unfortunate events when customers rent cars using cre
 12. Make a change to any existing rental. For example, click **Edit**, and change the time that the rental period started.
 13. Click **Save** to force a validation of the rental record. The method in which you placed a breakpoint is called. Execution pauses at the line of code that contains the breakpoint. 
 
-    [![ForceValidation\_BuildDebugProj](./media/forcevalidation_builddebugproj.png)](./media/forcevalidation_builddebugproj.png) 
+    [![Execution paused at breakpoint](./media/forcevalidation_builddebugproj.png)](./media/forcevalidation_builddebugproj.png) 
     
     While the application is paused at a breakpoint, you can examine the application state. Use the same techniques that you typically would for any application developed with Visual Studio. For example, place the cursor over a variable or a parameter to see its value in a tooltip. 
     
-    [![Tooltip\_BuildDebugProj](./media/tooltip_builddebugproj.png)](./media/tooltip_builddebugproj.png)
+    [![Tooltip for breakpoint while paused](./media/tooltip_builddebugproj.png)](./media/tooltip_builddebugproj.png)
 
 14. The other debugging tools in Visual Studio are available as well. For example, the **Locals** window shows all of the local variables for the location where execution has stopped. Click the **Locals** tab at the bottom of Visual Studio, and expand the **fmrentalrecord** variable. You will see the internal state of the record, showing the values of all the fields in the record. 
 
-    [![InternalState\_BuildDebugProj](./media/internalstate_builddebugproj.png)](./media/internalstate_builddebugproj.png) 
+    [![Locals window](./media/internalstate_builddebugproj.png)](./media/internalstate_builddebugproj.png) 
     
     Notice the value of the **Vehicle** property of the **fmrentalrecord** variable. This property is a foreign key field in the **FMRental** table. The debugger allows us to peek into the related record in the FMVehicle table. It shows values that belong to the **AutoIdentification** field group.
 15. The **Breakpoints** window lists all of the breakpoints that have been set. Click the **Breakpoints** tab to see its content. 
 
-    [![Breakpoint\_BuildDebugProj](./media/breakpoint_builddebugproj.png)](./media/breakpoint_builddebugproj.png)
+    [![Breakpoints window](./media/breakpoint_builddebugproj.png)](./media/breakpoint_builddebugproj.png)
 
 16. Press F10 a few times to step through the code, line-by-line, and use the full complement of debugger features. Notice that the **Locals** window updates the values of variables immediately with each statement that's executed.
 17. On the toolbar, click **Continue**, or press F5
 18. Close Internet Explorer to close the **Fleet Management** application. Visual Studio will exit the debugging mode. An alternative is to choose **Stop Debugging** from the **Debug** menu. This will leave Internet Explorer open, allowing the next debugging session to start faster.
 
 ## Add the validation code
+
 In the **FinalizeRentalCheckout** method, you saw that the developer added code to call the delegate that’s used to determine the validity of the rental. To solve the problem of expired credit cards, you’ll add an event handler, which you’ll use to verify that the credit card isn’t expired. To simplify the lab, the handler will be added in the same file that contains the delegate. Use the following code as inspiration. Rather than copying and pasting the code, type it in manually to see the IntelliSense features in action. These features add to the high level of productivity that Visual Studio users expect.
 
 ```xpp
@@ -211,7 +214,7 @@ The preceding code is straightforward. The method is marked as handler for the r
 11. In the **Customer** drop-down list, select Adrian Lannin from the list, and then click **Save**. Execution pauses at the breakpoint that you set in the event-handler method.
 12. Press F10 three times to step through the code block. 
 
-    [![StepCodeBlock\_BuildDebugProj](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)
+    [![Stepping through code](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)
     
 13. To see the code map for the call stacks, right-click in the code editor, and then click **Show Call Stack on Code Map**. You may want to add a comment to the call stack, step through the code, and watch as the code map changes accordingly.
 14. Press F5 to continue. You'll see that the customer has been disallowed.
@@ -220,6 +223,7 @@ The preceding code is straightforward. The method is marked as handler for the r
 17. Comment out the **SubscribesTo** attribute on the **RentalFinalizedEventHandler** method. This step ensures that the credit card test will no longer run as you work on the remaining tutorials.
 
 ## Best practices
+
 Earlier in this tutorial, you had the opportunity to add code to the project and build the solution with your changes. The build process may not have been successful, requiring you to refer to the error window. Using this window, you can get to the error by clicking on the line that describes the error. You may have noticed some diagnostic messages that don’t represent compilation errors. These are diagnostics from the **Best Practice** checker. This tool will check for instances where the developer has violated a known best practice, and display a warning when one is found. The Best Practice rules apply to both code constructs and metadata. Each software development organization is likely to have its own set of best practices that they enforce. They may want to disregard some of the existing best practice checks. To support this, the set of reported best practice diagnostics can be modified by the individual developer. To demonstrate this, complete the following steps:
 
 1.  On the **View** menu, click **Error List**. You should see a small number of best practice warnings.
