@@ -60,9 +60,7 @@ Modules can be excluded by adding the module name to the **excludeModules** prop
 ```JSON
 {
     ...
-    
     "excludeModules": ["<EXCLUDED_MODULE_NAME1>","<ExCLUDED_MODULE_NAME2>"]
-    
     ...
 }
 ```
