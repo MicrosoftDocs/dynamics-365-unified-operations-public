@@ -77,6 +77,13 @@ New employees are included in the worker payroll information entity without havi
 
 The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
 
+### Human Resources app in Teams
+
+Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see:
+
+- [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
+- [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) in Human Resources documentation
+
 | Feature | Release plan | Documentation |
 | --- | --- | --- | --- |
 | Feature name or short description | Release plan title and link | Doc title and link |
@@ -84,6 +91,10 @@ The following new features are in preview. For more information about turning fe
 ## Coming soon
 
 The following new features and bug fixes are scheduled for future releases.
+
+### Custom links in Manager self service 
+
+we are expanding capabilities in manager self-service to add custom links on the My team tab. This feature is similar to the custom links feature we provide in the My information tab in employee self-service.
 
 ### New features
 
