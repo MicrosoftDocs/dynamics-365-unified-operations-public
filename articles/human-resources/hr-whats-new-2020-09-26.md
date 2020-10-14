@@ -84,6 +84,12 @@ Employees can view and request time away from work within Microsoft Teams. They 
 - [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 1 plan
 - [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841) in Human Resources documentation
 
+### Organization and personnel management workflow experience enhancements
+
+This feature currentlu in preview will enable HR professionals and managers to:
+- Have a clearer intuitive view of submitting workflow requests and taking action on them as a workflow reviewer.
+- Have a unified list for all the action items assigned to an employee, including workflow reviews or tasks they need to complete.
+
 | Feature | Release plan | Documentation |
 | --- | --- | --- | --- |
 | Feature name or short description | Release plan title and link | Doc title and link |
