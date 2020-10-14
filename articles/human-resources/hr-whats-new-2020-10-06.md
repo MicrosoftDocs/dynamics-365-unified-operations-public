@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (October 6, 2020)
 
-This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
 For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
@@ -46,14 +46,14 @@ The following feature is generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Additional insight into leave calendars | [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) | [View team and company calendar](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-employee-self-service-calendar) |
+| Additional insight into leave calendars | [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) | [View team and company calendar](hr-employee-self-service-calendar.md) |
 
 ### Bug fixes
 
 The following bug fixes are included in this release.
 
 >[!NOTE]
->Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+>Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
@@ -69,7 +69,7 @@ The following bug fixes are included in this release.
 | 509731 | Leave request for future terminated worker causes issue if they apply for time off after termination date. |  |
 | 510716 | Compensation Analytics includes both male and female employees for **Male average hourly pay**. | In Compensation Analytics, the **Male average hourly pay** on the **Compensation Demographic Analysis** included female average pay. Now it only includes males. |
 | 511348 | Benefits self-service should only show benefit plans valid from today to end of the benefit period. | Expired benefit plans were displayed to employees in the benefits enrollment page. This fix removes these plans. |
-| 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br>- **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** form makes the fields uneditable once the action has completed. |
+| 512706 | Set the following fields to read only: **BenefitPlanEmployeeEntity**, **EnrollmentConfirmed**, **EnrollmentConfirmedBy**, and **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** form makes the fields uneditable once the action has completed. |
 
 ## In preview
 
@@ -79,7 +79,7 @@ The following new features are in preview. For more information about turning fe
 | --- | --- | --- |
 | Human Resources app in Microsoft Teams | [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Manage leave requests in Teams](hr-teams-leave-app.md) |
 | Enhanced workflow requests and approvals | [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Configuration option to position Work items assigned to me list](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Virtual entities in Common Data Service for Human Resources | [Expand Dynamics 365 Human Resources core data in Common Data Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Configure Common Data Service virtual entities](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities) |
+| Virtual entities in Common Data Service for Human Resources | [Expand Dynamics 365 Human Resources core data in Common Data Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md) |
 
 ## Coming soon
 
