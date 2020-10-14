@@ -62,13 +62,14 @@ When a workflow configuration contains a manual decision, navigating to the leav
 Leave and absence paramaters entity labels updated to be more clear. 
 ## Accrual processing hangs when accrual date basis is after accrual start date and at end of month - (481401)
 Accrual processing updated to not have a delay when the accrual date baseis is after the accrual start date and at the end of the month. 
-##  Security setting for MaximumPositionsRadioButton in HCMJOB not being honored - (444868)
 ## Expiring records lists include inactive workers. - (447167)
+The Expiring Records tab in Personnel Management was including inactive workers.  It has been updated to only include active workers.
 ## Wrong leave of absence request is opened from Work items assigned to me - (486840)
 When clicking on a leave of absence request from "Work items assigned to me" to see its details, it no longer opens the most recent leave of absence request assigned to the current user. 
-## [CDS] Title field not being for job position entity - (506868)
-## Fix BenefitEligibilityRuleScenarioTest.testWaitingPeriodEligibilityRulesFutureAndNewHireAndRehireEmployeesCurrentPeriod - (507972)
+## [CDS] Title field not being set for job position entity - (506868)
+The Title field in the Job and JobPosition entity was displaying as not specified.  Has been updated to display title.
 ## Not able to access offboarding checklist tasks with manager and employee roles assigned  - (430359)
+Workers with a future termination date are unable to access their checklist tasks if they only have an employee or manager role.  Have updated this scenario so that users with only an employee or manager role can access offboarding tasks with a future termination date.
 ## New employee does not appear on the worker payroll information entity right after being created. - (458102)
 New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. 
 
