@@ -30,6 +30,8 @@ ms.dyn365.ops.version:
 
 # Peripheral compatibility for Commerce
 
+test sentence
+
 [!include [banner](../includes/banner.md)]
 
 Devices listed on this page have been tested for compatiblity with Dynamics 365 Commerce using the [Peripheral simulator for Commerce](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator). For each device, the party who performed the test and submitted successful results to Microsoft is listed in the 'Tested by' column. For devices listed as tested by 'Microsoft Corp.', support requests should be directed to Microsoft. Issues with devices tested by a party other than Microsoft should be first reported to the testing party.
