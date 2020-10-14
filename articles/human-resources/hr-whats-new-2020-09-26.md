@@ -100,7 +100,7 @@ The following new features and bug fixes are scheduled for future releases.
 
 ### Custom links in Manager self service 
 
-we are expanding capabilities in manager self-service to add custom links on the My team tab. This feature is similar to the custom links feature we provide in the My information tab in employee self-service.
+We are expanding capabilities in manager self-service to add custom links on the My team tab. This feature is similar to the custom links feature we provide in the My information tab in employee self-service.
 
 ### New features
 
