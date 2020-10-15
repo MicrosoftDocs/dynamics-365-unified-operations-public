@@ -107,7 +107,7 @@ The following table describes the processes that must be run to send the loyalty
 
 Additionally, retailers can define the maximum loyalty reward point limit per loyalty card. This field can be used to reduce the impact of loyalty fraud. When the maximum award points have been reached, the user cannot earn more points. The retailer can decide to block such cards until they have investigated for potential fraud. If the retailer determines fraud, the retailer can block the loyalty card for the customer and mark the customer as blocked. To do this, set the **Block customer for loyalty enrollment** property to **Yes** under **All customers** on the **Commerce** FastTab. The blocked customers will not be able to be issued a loyalty card in any of the channels.
 
-    ![Vesting and maximum reward points](./media/Vesting-and-maximum-reward-points.png "Define vesting and maximum reward points")
+   ![Vesting and maximum reward points](./media/Vesting-and-maximum-reward-points.png "Define vesting and maximum reward points")
 
 - Affiliations are used to provide special pricing and discounts, but there be some affiliations that retailers do not want their customers to see. For example, an affiliation titled "High spend customer" might not be well received by some customers. Moreover, there are some affiliations that should not be managed in the store, for example, employees, because you do not want the cashiers to decide who is an employee and thus provide employee-based discounts. Retailers can now select the affiliations which should be hidden in the  channels. Affiliations marked as **Hide in channels** cannot be viewed, added, or removed in the POS. However, the pricing and discounts associated with the affiliation will still be applied to the products.
 
