@@ -317,7 +317,7 @@ The following list captures the portfolio of font families available for documen
 
 ## Supported fonts for application version 8.0 with Platform update 23
 
-|     | Font family            |
+|  Number   | Font family            |
 |-----|--------------------------|
 | 1   | Agency FB                |
 | 2   | Algerian                 |
