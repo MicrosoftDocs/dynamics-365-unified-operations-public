@@ -41,11 +41,9 @@ This topic provides information about the tax depreciation functionality for Lat
 ## Set up a depreciation profile
 When you set up a depreciation profile, consider the following.
 
-|                       |                                                                                                                                                                                                                                                                                                                    |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Depreciation year** | Select the type of year that you use to calculate the depreciation. The depreciation year and the period frequency are related. Therefore, the options **Period frequency** field depend on the **Depreciation year** field value.                                                                                 |
-| **Period frequency**  | Select the frequency of ledger accruals during the calendar year or fiscal year. The options that appear in this field vary, depending on the depreciation year that you selected. If you selected **Calendar** as the depreciation year, the options are **Yearly**, **Monthly**, **Quarterly**, **Half-yearly**. |
-| **Full depreciation** | Select this option to fully depreciate the fixed asset when the service life that remains is 0 (zero).                                                                                                                                                                                                             |
+  - **Depreciation year**: Select the type of year that you use to calculate the depreciation. The depreciation year and the period frequency are related. Therefore, the options **Period frequency** field depend on the **Depreciation year** field value.                                                                                 
+  - **Period frequency**: Select the frequency of ledger accruals during the calendar year or fiscal year. The options that appear in this field vary, depending on the depreciation year that you selected. If you selected **Calendar** as the depreciation year, the options are **Yearly**, **Monthly**, **Quarterly**, **Half-yearly**. 
+  - **Full depreciation**: Select this option to fully depreciate the fixed asset when the service life that remains is 0 (zero).                                                                                                                                                                                                             
 
 <!---To set up a depreciation profile, complete the following procedure, [Set up and create depreciation profiles](../fixed-assets/tasks/set-up-depreciation-profiles.md).-->
 
@@ -67,18 +65,16 @@ To set up tax depreciation calculation, on the **Fixed assets** page, select a f
 ## Calculate tax depreciation
 To calculate fixed asset tax depreciation, on the **Tax depreciation** page, create a New tax period to use for reporting.
 
-|                   |                                                                                                                                                                |
+|    Field name         |                       Description                                                                                                                                         |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Field name**    | **Description**                                                                                                                                                |
 | **Start date**    | Select the date from which the period is valid.                                                                                                                |
 | **End date**      | Select the date up to which the period is valid.                                                                                                               |
 | **Period status** | Select the period status (**Open** or **Closed**). If the status is **Closed**, **Categories** on the **Category details** FastTab cannot be added or deleted. |
 
 On the **Category details** FastTab, select the book in the **Category** field that you want to calculate tax depreciation for. Click **Calculate** to calculate tax depreciation. Tax depreciation calculates for either individual fixed assets or is based on summary information from all fixed assets that are assigned to the same fixed asset tax category. The calculation is based on the tax coefficient from the selected book, and accounting data on the books of fixed assets associated with the book selected in the **Category** field.
 
-|                                                                                                                  |
+|               Calculation formulas                                                                               |
 |------------------------------------------------------------------------------------------------------------------|
-| **Calculation formulas**                                                                                         |
 | Adjusted Value  = Starting Balance + Value adjustments - Disposal + Acquisition price \* Acquisition Coefficient |
 | Tax Depreciation amount = Adjusted Value \* Base Depreciation \*2 /100 \* number of months in period / 12        |
 | End Balance = Adjusted Value – Tax Depreciation amount                                                           |
