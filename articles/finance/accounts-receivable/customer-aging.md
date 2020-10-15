@@ -119,7 +119,8 @@ When you generate this report, the following default parameters are displayed. Y
 <tr class="even">
 <td><p><strong>Printing direction</strong></p></td>
 <td><p>Select whether to calculate balances and print the aging report for past or future periods. The dates are evaluated relative to the date that is selected in the <strong>Balance as on</strong> field. Select <strong>Backward</strong> to show information for past periods. Select <strong>Forward</strong> to show information for future periods.</p>
-
+<div class="alert">
+  
 **Note:** The information that you enter in this field is used only if you have not selected an aging period definition.</P>
 
 
