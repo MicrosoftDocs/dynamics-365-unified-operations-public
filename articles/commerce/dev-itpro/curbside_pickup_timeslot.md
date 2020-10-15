@@ -57,7 +57,10 @@ A timeslot can be defined using the following properties:
 
 **Active hours of pickup**: This defines the time period withing which pickup is allowed (for example, you can define the pickup times to be between 2 PM and 5 PM every day). This allows the pickup times to be independent of store hours and allows a retailer to configure them for their specific business needs. When defining the active hours of pickup, you must ensure that store hours are taken into account and that pickup time is not defined for when the store is closed.
 
-**Time interval**: This defines the time duration that can be allotted for each timeslot (for example, the time duration of each timeslot could be in increments of 15 minutes, 30 minutes, 1 hour, or some other duration). 
+>[!NOTE]
+> The hours for the store pickup have to be defined in the timezone of the respective store.
+
+**Time interval**: This defines the time duration that can be allotted for each timeslot (for example, the time duration of each timeslot could be in increments of 15 minutes, 30 minutes, 1 hour, or some other duration).
 
 **Slots per interval**: This defines the number of orders that can be served in each time interval (for example, 1, 2, 3, or any whole number). This allows the retailer to define how many customers or orders they want to serve for pickup within a given time interval.
 
