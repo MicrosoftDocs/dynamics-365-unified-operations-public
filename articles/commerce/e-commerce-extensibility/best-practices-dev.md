@@ -36,7 +36,7 @@ This topic describes some best practices to follow when developing Dynamics 365 
 
 ## Overview
 
-The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions, and themes can be created, or modules from the Commerce [module library](starter-kit-overview.md) can be extended. It is important to consider web site performance when building e-Commerce customizations. Standard best practices used for website development are applicable including minimizing HTML, JavaScript, and CSS files, and optimizing images.
+The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions, and themes can be created, or modules from the Commerce [module library](../starter-kit-overview.md) can be extended. It is important to consider web site performance when building e-Commerce customizations. Standard best practices used for website development are applicable including minimizing HTML, JavaScript, and CSS files, and optimizing images.
 
 ## Infrastructure setup
 
@@ -47,7 +47,7 @@ The [Dynamics 365 Commerce ecosystem](../commerce-architecture.md) comprises var
 
 ## Minimize HTML, CSS, and JavaScript file sizes
 
-The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built using the [yarn msdyn365 pack](cli-command-reference#pack.md) command, or the Node server is started on a local development environment using the [yarn start](setup-dev-environment#run-your-node-app.md) command, the TypeScript and SCSS files will compiled down to JavaScript and Cascading Style Sheets (CSS) files, respectively. These files are also minified to reduce network bandwidth.
+The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built using the [yarn msdyn365 pack](../cli-command-reference#pack.md) command, or the Node server is started on a local development environment using the [yarn start](../setup-dev-environment#run-your-node-app.md) command, the TypeScript and SCSS files will compiled down to JavaScript and Cascading Style Sheets (CSS) files, respectively. These files are also minified to reduce network bandwidth.
 
 You should ensure that extra, unused JavaScript and CSS files are not included in your extension package. Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript.
 
@@ -71,7 +71,7 @@ You can verify that the module was successfully excluded by comparing the chunk 
 
 ## Optimize images
 
-One of the biggest performance hits to a web page can be the downloading of images. You should use CSS whenever possible to generate images for items such as buttons, but in cases where you need marketing or product images you should upload images to the Commerce site builder [Media Library](dam-overview.md). Images uploaded to the Media Library should be of high quality and resolution to cover all web site usage scenarios. Images served from the Media Library will automatically be resized using an image resizer service.
+One of the biggest performance hits to a web page can be the downloading of images. You should use CSS whenever possible to generate images for items such as buttons, but in cases where you need marketing or product images you should upload images to the Commerce site builder [Media Library](../dam-overview.md). Images uploaded to the Media Library should be of high quality and resolution to cover all web site usage scenarios. Images served from the Media Library will automatically be resized using an image resizer service.
 
 ### Image resizer service
 
@@ -144,7 +144,7 @@ The following tools are recommended for performance analysis.
 
 ## Additional resources
 
-[Dynamics 365 Commerce architecture overview](commerce-architecture.md)
+[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 
 [Online channel extensibility overview](overview.md)
 
