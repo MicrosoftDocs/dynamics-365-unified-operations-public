@@ -71,8 +71,6 @@ LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
 
 [!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
 
-[!include [Ledger fiscal periods](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
-
 [!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
 
 [!include [Main account](includes/MainAccount-msdyn-mainaccounts.md)]

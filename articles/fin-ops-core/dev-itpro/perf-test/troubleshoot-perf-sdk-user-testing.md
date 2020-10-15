@@ -2,28 +2,28 @@
 # required metadata
 
 title: Troubleshooting guide for single-user or multi-user testing with the Performance SDK
-description: This topic provides troubleshooting information for common issues that you might encounter during single-user or multi-user testing that uses the Performance SDK. 
+description: This topic provides troubleshooting information for common issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
 author: hasaid
 manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: rhaertle
 ms.search.scope: Operations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This issue affects only single-user tests. When the test is running, a web client is opened, but a website is never loaded. Instead, there is an empty web client that has a white background. The following message appears at the top of the page, "This is the initial start page for the WebDriver server." The test eventually times out and fails, and an error message is shown.
 
-### Error example
+### Error - No client was opened in the time-out period
 
 > Initialization method \<Test class name\>.TestSetup threw an exception. System.TimeoutException: System.TimeoutException: No client was opened in the timeout period.
 
@@ -50,11 +50,11 @@ See [Multi-user testing with the Performance SDK and a local test controller](mu
 
 This issue affects only single-user tests.
 
-### Error example
+### Error - Zoom factor
 
 > Initialization method \<Test class name\>.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
 
-### Solution
+### Solution - Zoom factor
 
 In Internet Explorer, you can change the zoom factor to 100 percent by changing the following registry keys:
 
@@ -68,11 +68,11 @@ If those steps don't work, change the size of your remote desktop before you sta
 
 ## Certificate thumbprint errors
 
-### Error example
+### Error example - Certificate thumbprint errors
 
 > Initialization method MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup** threw an exception. System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --\> MS.Dynamics.TestTools.CloudCommonTestUtilities.Exceptions.WebAuthenticationException: Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc42718198852cd23957fc60a3e4bca2e.
 
-### Solution
+### Solution - Certificate thumbprint errors
 
 You might receive the error message for one of the following reasons:
 
@@ -97,13 +97,13 @@ You might receive the error message for one of the following reasons:
 
 This issue can occur when you run single-user or multi-user tests, or when you create users by using MS.Dynamics.Performance.CreateUsers.exe.
 
-### Error example
+### Error example - No endpoint is listening
 
 The tests fail, or the user creation process fails, and the following error message is shown:
 
 > System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---\> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at \\\<web address\> that could accept the message. This is often caused by an incorrect address or SOAP action.
 
-### Solution
+### Solution - No endpoint is listening
 
 This issue occurs when the host that is specified in the CloudEnvironment.Config file can't be accessed from the machine that is trying to run the tests or create users.
 
@@ -120,11 +120,11 @@ For online load tests, the environment that is specified by the **HostName** key
 
 This issue can occur when you run multi-user tests, or when you create users by using MS.Dynamics.Performance.CreateUsers.exe.
 
-### Error example
+### Error example - Users can't be enumerated
 
 > System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---\> System.InvalidOperationException: Could not enumerate AX users ---\> System.ServiceModel.FaultException'1\[System.ComponentModel.Win32Exception\]: Forbidden
 
-### Solution
+### Solution - Users can't be enumerated
 
 Three scenarios can cause this error:
 
@@ -132,7 +132,7 @@ Three scenarios can cause this error:
 
     [![Users page](./media/troubleshoot-perf-sdk-03.jpg)](./media/troubleshoot-perf-sdk-03.jpg)
 
-- The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file has a provider other than `https://sts.windows-ppe.net/` or `https://sts.windows.net/`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user. 
+- The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file has a provider other than `https://sts.windows-ppe.net/` or `https://sts.windows.net/`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user.
 
 - If your Finance and Operations apps were deployed in 21Vianet, make sure that you have specified **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
@@ -140,11 +140,11 @@ To work around this issue, create a user who has any name and email address. Ass
 
 ## The HTTP request was forbidden with client authentication scheme 'Anonymous'
 
-### Error example
+### Error example - The HTTP request was forbidden
 
 > Initialization method \<Test class name\>.TestSetup threw exception. System.ServiceModel.Security.MessageSecurityException: System.ServiceModel.Security.MessageSecurityException: The HTTP request was forbidden with client authentication scheme 'Anonymous'. ---\> System.Net.WebException: The remote server returned an error: (403) Forbidden.
 
-### Solution
+### Solution - The HTTP request was forbidden
 
 Three known scenarios can cause this error:
 
@@ -158,17 +158,17 @@ Three known scenarios can cause this error:
 
     [![CloudEnvironment.Config file](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
 
-- If your Finance and Operations apps were deployed in 21Vianet, make sure that your development and performance testing environments are in Platform Update for 10.0.11 or above. 
+- If your Finance and Operations apps were deployed in 21Vianet, make sure that your development and performance testing environments are in Platform Update for 10.0.11 or above.
 
 ## At least one security token in the message could not be validated
 
 This issue can occur when you run multi-user tests, when you create users by using MS.Dynamics.Performance.CreateUsers.exe, when the AOS machine differs from the developer machine.
 
-### Error example
+### Error example - At least one security token in the message could not be validated
 
 > System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---\> System.ServiceModel.Security.MessageSecurityException: An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail. ---\> System.ServiceModel.FaultException: At least one security token in the message could not be validated.
 
-### Solution
+### Solution - At least one security token in the message could not be validated
 
 This issue occurs when the AOS endpoint can't validate the thumbprint of the certificate that you created. There are two possible causes:
 
@@ -179,11 +179,11 @@ This issue occurs when the AOS endpoint can't validate the thumbprint of the cer
 
 This issue usually occurs when you run load tests.
 
-### Error example
+### Error example - MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config is missing
 
 > \<Test class name\>.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Could not find endpoint element with name 'ClientCommunicationManager' and contract 'Microsoft.Dynamics.Client.InteractionService.Communication.Reliable.IReliableCommunicationManager' in the ServiceModel client configuration section. This might be because no configuration file was found for your application, or because no endpoint element matching this name could be found in the client element.. at System.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors(ServiceEndpoint serviceEndpoint, String configurationName)
 
-### Solution
+### Solution - MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config is missing
 
 This issue occurs when the system can't find the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file when the load tests are run, because the file wasn't added as a deployment item. Verify that the MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config file is in the Out folder for the test run:
 
@@ -197,12 +197,12 @@ There are two files that have very similar names. The name of one file ends in \
 
 This issue usually occurs only when you run load tests.
 
-### Error example
+### Error example - CloudEnvironment.Config is missing
 
-> Initialization method \\\<Test class name\>.TestSetup threw exception. 
+> Initialization method \\\<Test class name\>.TestSetup threw exception.
 System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---\> MS.Dynamics.TestTools.TestLogging.EvaluateException: Assert.Fail failed. DateTime="10/13/2017 14:42:55" "The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SecretSettingsHelper' threw an exception.".
 
-### Solution
+### Solution - CloudEnvironment.Config is missing
 
 This issue occurs when the CloudEnvironment.Config file isn't present when the tests are run. It typically occurs when you run load tests and the CloudEnvironment.Config file wasn't added as a deployment item. Verify that the CloudEnvironment.Config file is in the Out folder for the test run:
 
@@ -214,12 +214,12 @@ If the file is missing, add it to the deployment items in the test settings.
 
 ## InteractiveClientId was not specified in the settings
 
-### Error example
+### Error example - InteractiveClientId was not specified in the settings
 
 > The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SecretSettingsHelper' threw an exception. ---\>
 Microsoft.CE.VaultSDK.SecretProviderException: InteractiveClientId was not specified in settings.
 
-### Solution
+### Solution - InteractiveClientId was not specified in the settings
 
 This issue occurs when the **SelfSigningCertificateThumbprint** field is left blank in the CloudEnvironment.Config file. In the CloudEnvironment.Config file, find the following line, and paste in the thumbprint of the certificate that you created and installed.
 
@@ -229,19 +229,19 @@ This issue occurs when the **SelfSigningCertificateThumbprint** field is left bl
 
 ## The remote host forcibly closed an existing connection
 
-### Error example
+### Error example - The remote host forcibly closed an existing connection
 
 > System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---\> System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to \\\<Host name\>/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server. ---\> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---\> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---\> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host.
 
-### Solution
+### Solution - The remote host forcibly closed an existing connection
 
 Run the following Windows PowerShell script on the development machine.
 
 ```powershell
 Set-ItemProperty HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
-if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319)) 
+if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 {
-    Set-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
+    Set-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
 }
 ```
 
@@ -249,11 +249,11 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 This error occurs only when you run load tests by using Visual Studio Online.
 
-### Error example
+### Error example - Service w3svc was not found on computer
 
 > Test method MS.Dynamics.Performance.Application.GFM.PDLTrend.ProcureToPayTrend.ProcureToPaymentTrend threw exception: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---\> System.InvalidOperationException: Service w3svc was not found on computer '.'. ---\> System.ComponentModel.Win32Exception: The specified service does not exist as an installed service.
 
-### Solution
+### Solution - Service w3svc was not found on computer
 
 A hotfix is available that resolves this issue. The Microsoft Knowledge Base (KB) number is 4095640.
 
@@ -261,21 +261,21 @@ A hotfix is available that resolves this issue. The Microsoft Knowledge Base (KB
 
 This issue affects only single-user tests.
 
-### Error example
+### Error example - The file IEDriverServer.exe does not exist
 
 > The file K:\\perfSDK\\PerfSDKLocalDirectory\\SampleProject\\TestResults\\Admin501201994c\_devae648d1909-1 2018-06-25 03\_40\_51\\Out\\Common\\External\\Selenium\\IEDriverServer.exe does not exist. The driver can be downloaded at `https://selenium-release.storage.googleapis.com/index.html`.
 
-### Solution
+### Solution - The file IEDriverServer.exe does not exist
 
 Copy the **Common\\External\\Selenium** folder under **\<Your\_PerfSDK\_Folder\>** to the **\<Your\_PerfSDK\_Folder>\\SampleProject\\ PerfSDKSample\\bin\\Debug** folder.
 
 ## Failed finding the certificate for minting tokens by thumbprint: \<your certificate thumbprint\>
 
-### Error example
+### Error example - Failed finding the certificate for minting tokens by thumbprint
 
 [![Error message and error stack trace](./media/troubleshoot-perf-sdk-07.jpg)](./media/troubleshoot-perf-sdk-07.jpg)
 
-### Solution
+### Solution - Failed finding the certificate for minting tokens by thumbprint
 
 Make sure that you install the generated certificate on each AOS machine in your sandbox environment.
 
@@ -283,11 +283,11 @@ Make sure that you install the generated certificate on each AOS machine in your
 
 This issue affects only multi-user tests.
 
-### Error example
+### Error example - The action you are trying to perform requires a connection to Visual Studio Team Services
 
 [![Error message details](./media/troubleshoot-perf-sdk-08.jpg)](./media/troubleshoot-perf-sdk-08.jpg)
 
-### Solution
+### Solution - The action you are trying to perform requires a connection to Visual Studio Team Services
 
 When you connect to Azure DevOps, use the old URI format (**\<Azure\_DevOps\_Account\>.visualstudio.com**) instead of **dev.azure.com/\<Azure\_DevOps\_Account\>**. Additionally, open Azure DevOps by using the old URI, and then select **Open in Visual Studio**.
 
@@ -295,50 +295,52 @@ When you connect to Azure DevOps, use the old URI format (**\<Azure\_DevOps\_Acc
 
 This error affects only multi-user tests.
 
-### Error example
+### Error example - Could not load file or assembly 'aoskernel.dll'
 
 [![Error message, error stack trace, and debug trace](./media/troubleshoot-perf-sdk-09.jpg)](./media/troubleshoot-perf-sdk-09.jpg)
 
-### Solution
+### Solution - Could not load file or assembly 'aoskernel.dll'
 
 Make sure that you're using Open Database Connectivity (ODBC) Driver 17 in an environment that has Platform update 20 or later.
 
 ## AzureActiveDirectoryConfiguration node is missing in CloudEnvironment.config
 
-### Error example
+### Error example - AzureActiveDirectoryConfiguration node is missing
 
 > Initialization method MS.Dynamics.Performance.Application.TaskRecorder.SalesOrderCreationAndConfirmationBase.TestSetup threw exception. System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---\> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---\> System.MissingFieldException: AzureActiveDirectoryConfiguration node is missing in CloudEnvironment.config.
 
-### Solution
+### Solution - AzureActiveDirectoryConfiguration node is missing
 
 Replace all instances of **"MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.AadAuthenticator"** with **"MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator"** in the **AuthenticatorConfigurationCollection** section of the CloudEnvironment.config file.
 
 ## Multiple warning messages before and after multi-user testing that uses Azure DevOps
 
-### Error example
+### Error example - Multiple warning messages before and after multi-user testing
 
-[![Sample load test status](./media/troubleshoot-perf-sdk-10.jpg)](./media/troubleshoot-perf-sdk-10.jpg)
+![Sample load test status](./media/troubleshoot-perf-sdk-10.jpg)
 
-[![Sample load test output](./media/troubleshoot-perf-sdk-11.jpg)](./media/troubleshoot-perf-sdk-11.jpg)
+![Sample load test output](./media/troubleshoot-perf-sdk-11.jpg)]
 
-### Solution
+### Solution - Multiple warning messages before and after multi-user testing
 
 There is no impact, and the messages can be ignored.
 
 ## The type or namespace name 'xxxx' could not be found (are you missing a using directive or an assembly reference?)
 
-## Error example
+## Error example - The type or namespace name 'xxxx' could not be found
 
-The type or namespace name 'InventTransferOrders' could not be found (are you missing a using directive or an assembly reference?) 
+The type or namespace name 'InventTransferOrders' could not be found (are you missing a using directive or an assembly reference?)
 
-### Solution
+### Solution - The type or namespace name 'xxxx' could not be found
 
 The sample solution shipped with the perfSDK was previously prepared and wasn't updated after the packages split. To resolve the issue, add the assembly **MS.Dynamics.TestTools.DirectoryProxyLibrary.dll** under \<Service volume\>:\\PerfSDK\\PerfSDKLocalDirectory as a reference.
 
 ## Assembly was built against the ".NETFramework,Version=v4.6" framework
 
-## Error example
+## Error example - Assembly was built against the ".NETFramework,Version=v4.6" framework
+
 The primary reference "MS.Dynamics.TestTools.ApplicationSuiteProxyLibrary" could not be resolved because it has an indirect dependency on the assembly "MS.Dynamics.TestTools.DirectoryProxyLibrary, Version=7.0.0.0, Culture=neutral, PublicKeyToken=a7cf325ee2c8a9ff" which was built against the ".NETFramework,Version=v4.6" framework. This is a higher version than the currently targeted framework ".NETFramework,Version=v4.5".
 
-### Solution
+### Solution- Assembly was built against the ".NETFramework,Version=v4.6" framework
+
 Change the **Target framework** property in the properties window of PerfSDKSample to .Net Framework 4.6.
