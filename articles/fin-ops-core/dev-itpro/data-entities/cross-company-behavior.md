@@ -40,7 +40,7 @@ This topic provides information about how data entities interact with the cross-
 
 Each table has a **SaveDataPerCompany** property, and each view has a **AllowCrossCompany** property. The following table describes these two properties.
 
-|                        | Table | View |
+|      &nbsp;            | Table | View |
 |------------------------|-------|------|
 | Property name          | SaveDataPerCompany | AllowCrossCompany |
 | Relevant CRUD mode     | CUD | R |
