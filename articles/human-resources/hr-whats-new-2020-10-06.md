@@ -53,23 +53,23 @@ The following feature is generally available with this release.
 The following bug fixes are included in this release.
 
 >[!NOTE]
->Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+> Our goal is to get this information to you as soon as possible. There may be updates to this topic to include bug fixes that made it into the build after this topic was initially published.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
-| 394249 | Regular translation checkins for supported HCM languages. |  |
-| 448806 | **Default Identification Type** exports as **RecID** in HCM Parameters. | This change to the Human Resources Parameters entity adds an additional column that displays the **Default Identification Type**. |
-| 492923 | Invalid certificate thumbprint causes Lifecycle Services (LCS) SysTaskRecorder not to work. |  |
-| 429950 | Fixed compensation doesn't expire correctly while changing position. | When changing the position of a worker in the **Transfer Worker** form, the end compensation date was set one day before the end of the position. The compensation end date is now the same as the position end date. |
-| 467214 | **Salaried analytics** displays only if **Pay rate conversion name** is set to **Annual**. | Salaried pay rates with a name other than **Annual** didn't show in Compensation Analytics. With this update, Compensation Analytics now uses all pay rate conversions. When running the reports by **Hourly** or **Salary**, any pay rate conversion that uses a period other than hourly are included in the **Salary** filter. Only pay rates with a period of **Hourly** are included in the **Hourly** filter. |
-| 482464 | The **Details** view doesn't change to grid view after you apply a filter. |  |
-| 483184 | Human Resources doesn't generate leave accruals when you select **Tier basis** as the **Adjusted start date** in the **Leave enrollment** record. |  |
-| 506949 | **PositionActionDetail** default dimension. |  |
-| 507333 | Common Data Service bridge causes a null ref exception on AOS startup. |  |
-| 509731 | Leave request for future terminated worker causes issue if they apply for time off after termination date. |  |
-| 510716 | Compensation Analytics includes both male and female employees for **Male average hourly pay**. | In Compensation Analytics, the **Male average hourly pay** on the **Compensation Demographic Analysis** included female average pay. Now it only includes males. |
-| 511348 | Benefits self-service should only show benefit plans valid from today to end of the benefit period. | Expired benefit plans were displayed to employees in the benefits enrollment page. This fix removes these plans. |
-| 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br>- **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** form makes the fields uneditable once the action has completed. |
+| 394249 | Regular translation checkins for supported HCM languages |  |
+| 448806 | **Default Identification Type** exports as **RecID** in HCM Parameters | This change to the Human Resources Parameters entity adds an additional column that displays the **Default Identification Type**. |
+| 492923 | Invalid certificate thumbprint causes Lifecycle Services (LCS) SysTaskRecorder not to work |  |
+| 429950 | Fixed compensation doesn't expire correctly while changing position | When changing the position of a worker on the **Transfer Worker** page, the end compensation date was set one day before the end of the position. The compensation end date is now the same as the position end date. |
+| 467214 | **Salaried analytics** displays only if **Pay rate conversion name** is set to **Annual** | Salaried pay rates with a name other than **Annual** didn't show in Compensation Analytics. With this update, Compensation Analytics now uses all pay rate conversions. When running the reports by **Hourly** or **Salary**, any pay rate conversion that uses a period other than hourly are included in the **Salary** filter. Only pay rates with a period of **Hourly** are included in the **Hourly** filter. |
+| 482464 | The **Details** view doesn't change to grid view after you apply a filter |  |
+| 483184 | Human Resources doesn't generate leave accruals when you select **Tier basis** as the **Adjusted start date** in the **Leave enrollment** record |  |
+| 506949 | **PositionActionDetail** default dimension |  |
+| 507333 | Common Data Service bridge causes a null ref exception on AOS startup |  |
+| 509731 | Leave request for future terminated worker causes issue if they apply for time off after termination date |  |
+| 510716 | Compensation Analytics includes both male and female employees for **Male average hourly pay** | In Compensation Analytics, the **Male average hourly pay** on the **Compensation Demographic Analysis** included female average pay. Now it only includes males. |
+| 511348 | Benefits self-service should only show benefit plans valid from today to end of the benefit period | Expired benefit plans were displayed to employees in the benefits enrollment page. This fix removes these plans. |
+| 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br> **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** page makes the fields uneditable after the action has completed. |
 
 ## In preview
 
@@ -89,11 +89,11 @@ The following new features are scheduled for future releases:
 
 - **Benefits management reason codes**: Benefits management reason codes will soon be combined with existing reason codes in Human Resources. If you created reason codes in Benefits management that are over 15 characters, you must change the name of the reason code in the Benefits management **Reason codes** form to be 15 characters or less. After you update the name, the reason code will appear under the existing reason code form in Personnel management. This change will be available in the future and won't affect existing functionality.
 
-- **Custom links in Manager self-service**: To support managers, we're expanding capabilities in Manager self-service. We're adding the capability to add custom links on the My team tab. This feature is similar to the custom links feature we provide in the **My information tab** in employee self-service. For more information, see [Custom links in manager self-service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Custom links in Manager self-service**: To support managers, we're expanding capabilities in Manager self-service. We're adding the capability to add custom links on the **My team** tab. This feature is similar to the custom links feature on the **My information tab** in employee self-service. For more information, see [Custom links in manager self-service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 
-## See also
+## Additional resources
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
 [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/)</br>
