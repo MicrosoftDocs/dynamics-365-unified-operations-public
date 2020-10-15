@@ -24,7 +24,7 @@ ms.custom: 25911
 ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -24,7 +24,7 @@ ms.search.scope: Operations
 # ms.assetid: 
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 
 

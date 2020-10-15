@@ -49,7 +49,7 @@ When you set up a fixed asset depreciation profile and select **Straight line (H
 
 In this example, a fixed asset has the following characteristics.
 
-|                    |                                       |
+|    &nbsp;          | &nbsp;                                |
 |--------------------|---------------------------------------|
 | Acquisition cost   | 120,000                               |
 | Acquisition date   | January 1                             |
@@ -74,7 +74,7 @@ When you set up a fixed asset depreciation profile and select **Multiplication F
 
 In this example, a fixed asset has the following characteristics.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Acquisition cost   | 120,000   |
 | Acquisition date   | January 1 |
@@ -111,7 +111,7 @@ When you set up a fixed asset depreciation profile and select **Factor (Hungary)
 
 In this example, a fixed asset has the following characteristics.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Acquisition cost   | 120,000   |
 | Acquisition date   | January 1 |
@@ -142,7 +142,7 @@ When you set up a fixed asset depreciation profile and select **Sum of years’ 
 
 In this example, a fixed asset has the following characteristics.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Acquisition cost   | 120,000   |
 | Acquisition date   | January 1 |

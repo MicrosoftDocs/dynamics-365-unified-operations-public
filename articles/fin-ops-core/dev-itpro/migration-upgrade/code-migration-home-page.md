@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

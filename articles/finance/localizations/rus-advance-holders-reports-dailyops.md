@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: 8.1
 ms.search.validFrom: 2018-10-31
 

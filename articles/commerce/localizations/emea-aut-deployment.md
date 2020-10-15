@@ -22,7 +22,7 @@ ms.search.scope: Operations, Retail
 # ms.custom: 
 ms.search.region: Austria
 ms.search.industry: Retail
-ms.author: v-alexec
+ms.author: josaw
 ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
@@ -195,7 +195,7 @@ To enable the registration process, set up Headquarters using the steps below. F
 5. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
 6. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**. Create two new group per connector's functional profile from the step above.
 7. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**. Create a new process. Select both connector's functional groups from the step above.
-8. Open **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** prorerty at **Functions** fasttab.
+8. Open **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** property at **Functions** fasttab.
 9. Open the **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select one that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** Tab. Select the connector technical profile.
 
 For more information, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
