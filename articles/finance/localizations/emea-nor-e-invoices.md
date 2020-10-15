@@ -32,7 +32,9 @@ ms.dyn365.ops.version: 10.0.08
 
 [!include [banner](../includes/banner.md)]
 
-To comply with European Union's Directive 2014/55/EU, ....
+To comply with European Union's Directive 2014/55/EU, Norway-specific format of electronic invoices has been imlemented - **EHF Billing 3.0** based on [PEPPOL Billing 3.0](https://docs.peppol.eu/poacc/billing/3.0/) specification.
+
+This article describes how to configure and issue customers electronic invoices in Norway.
 
 ## Prerequisites
 
@@ -62,15 +64,3 @@ For more information about how to import ER configurations, see [Download Electr
 ## Configure parameters
 
 ### Configure Print management 
-#### Test
-
-1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
-2. On the **Form setup** page, on the **General** tab, select **Print management**.
-3. On the **Print management setup** page, define the references to the imported formats for the following documents:
-
-    - **Customer invoice:** In the **Report format** field, select **Sales invoice (Excel) (BH)**.
-    - **Free text invoice:** In the **Report format** field, select **Free text invoice (Excel) (BH)**.
-
-    ![Configuring Print management](media/emea-bhr-print_management.jpg)
-
-4. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
