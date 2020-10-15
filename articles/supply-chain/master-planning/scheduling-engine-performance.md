@@ -242,11 +242,7 @@ For example, if the working time for a resource group on one specific date is fr
 
 The load from job scheduling on all the resources included in the resource group on a given day is considered when the available capacity for the resource group on the same day is calculated. For each date, the calculation is:
 
-> Available resource group capacity =  
-> (capacity for resources in the group based on their calendar) -  
-> (job scheduled load on the resources in the group) -  
-> (operations scheduled load on the resources in the group) -  
-> (operations scheduled load on the resource group)
+*Available resource group capacity = Capacity for resources in the group based on their calendar &ndash; Job scheduled load on the resources in the group &ndash; Operations scheduled load on the resources in the group &ndash; Operations scheduled load on the resource group*
 
 On the **Resource requirements** tab on the route operation, the resource requirements can be specified using either a specific resource (in which case the operation will be scheduled using that resource), for a resource group, for a resource type, or for one or more capabilities, skill, course, or certificate. While using all of these options gives a great flexibility on the route design, it also complicates the scheduling for the engine as the capacity must be accounted for per "property" (the abstract name used in the engine for capability, skills, and so on).
 
@@ -256,15 +252,11 @@ In operations scheduling, the available capacity for a certain capability for a 
 
 For each date, the required calculation is:
 
-> The available capacity for a capability =  
-> (the capacity for the capability) -  
-> (job scheduled load on the resources with the specific capability, included in the resource group) -  
-> (operations scheduled load on the resources with the specific capability, included in the resource group) -  
-> (operations scheduled load on the resource group itself that require the specific capability)
+*Available capacity for a capability = Capacity for the capability &ndash; Job scheduled load on the resources with the specific capability, included in the resource group &ndash; Operations scheduled load on the resources with the specific capability, included in the resource group &ndash; Operations scheduled load on the resource group itself that require the specific capability*
 
 This means that if there is load on a specific resource, the load is considered in the calculation of the resource group's available capacity per capability, because the load on a specific resource reduces its contribution to the resource group's capacity for a capability no matter if the load on the specific resource is for that specific capability. If there is load on the resource group level, it is considered in the calculation of the resource group's available capacity per capability only if the load is from an operation that requires the specific capability.
 
-The above logic is complicatd, as this is the same for each type of "property" so using operations scheduling with finite capacity requires a significant amount of data to be loaded.
+The above logic is complicated, as this is the same for each type of "property" so using operations scheduling with finite capacity requires a significant amount of data to be loaded.
 
 ## Viewing scheduling engine input and output
 
