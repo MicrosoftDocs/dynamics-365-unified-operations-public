@@ -240,6 +240,10 @@ public static class CommerceRoles
 
 You don't have to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you're using Retail SDK version 10.0.10 or earlier.
 
+### Debugging RS extension
+
+To debug the RS extension project in VS, click Debug > Attach to Process and select the w3wp.exe (the IIS process for Retail Server), if there is multiple w3wp.exe process find the right process based on the process id. Retail server process id can be found from IIS > Worker processes or from the command prompt using the tasklist command.
+
 ## Generate the Typescript proxy for POS
 
 The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. The proxy class acts as manger class or wrapper to access the Retail server APIs without the proxy extension manually finding the Retail server API and entities metadata.
