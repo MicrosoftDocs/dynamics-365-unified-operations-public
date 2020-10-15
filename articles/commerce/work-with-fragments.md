@@ -97,8 +97,7 @@ To add a fragment to a page, follow these steps.
 1. In the outline pane on the left or directly in visual page builder, select a container or slot to which child modules can be added.
 1. Select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using visual page builder, select the plus symbol (**+**).  
 1. Select **Add fragment**.
-
-<!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > If the container or slot doesn't support new child modules, the **Add fragment** option is unavailable.
