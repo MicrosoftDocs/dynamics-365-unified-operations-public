@@ -32,13 +32,13 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (October 6, 2020)
 
-This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
-For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
 ## In this release
 
-This release includes the following new features and bug fixes. Changes apply to build number 8.1.3636.
+This release includes the following new features and bug fixes. Changes apply to build number 8.1.3636.
 
 ### New features
 
@@ -53,10 +53,10 @@ The following feature is generally available with this release.
 The following bug fixes are included in this release.
 
 >[!NOTE]
->Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+>Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
-| Issue number | Issue | Description |
-| --- | --- | --- |
+| Issue number | Issue | Description |
+| --- | --- | --- |
 | 394249 | Regular translation checkins for supported HCM languages. |  |
 | 448806 | **Default Identification Type** exports as **RecID** in HCM Parameters. | This change to the Human Resources Parameters entity adds an additional column that displays the **Default Identification Type**. |
 | 492923 | Invalid certificate thumbprint causes Lifecycle Services (LCS) SysTaskRecorder not to work. |  |
@@ -69,7 +69,7 @@ The following bug fixes are included in this release.
 | 509731 | Leave request for future terminated worker causes issue if they apply for time off after termination date. |  |
 | 510716 | Compensation Analytics includes both male and female employees for **Male average hourly pay**. | In Compensation Analytics, the **Male average hourly pay** on the **Compensation Demographic Analysis** included female average pay. Now it only includes males. |
 | 511348 | Benefits self-service should only show benefit plans valid from today to end of the benefit period. | Expired benefit plans were displayed to employees in the benefits enrollment page. This fix removes these plans. |
-| 512706 | Set the following fields to read only: **BenefitPlanEmployeeEntity**, **EnrollmentConfirmed**, **EnrollmentConfirmedBy**, and **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** form makes the fields uneditable once the action has completed. |
+| 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br>- **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** form makes the fields uneditable once the action has completed. |
 
 ## In preview
 
