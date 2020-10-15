@@ -45,13 +45,13 @@ The following image shows an example of timeslot selection during e-Commerce che
 
 ## Timeslots 
 
-A timeslot is a specific interval of time when a customer can choose to pick up their order from a specific store or location. This timeslot management feature is only available using the "Pickup" mode of delivery in Dynamics 365 Commerce.
+A timeslot is a specific interval of time when a customer can choose to pick up their order from a specific store or location. This timeslot management feature is only available with the "Pickup" mode of delivery in Dynamics 365 Commerce.
 
 A timeslot can be defined using the following properties:
 
 **Mode of delivery**: This is the pickup mode of delivery that the timeslot applies to. 
 
-**Minimum and maximum**: This is the earliest and latest days that can be selected for pickup relative to the day that the order is placed. "Minimum" ensures there is enough time for the retailer to process the order before it's ready for pickup. "Maximum" ensures that the user cannot pick a date that is too far into the future. For example, with a minimum of "1", if an order is placed on September 20th, the earliest day available for pickup will be the next eligible day (September 21st). Similarly, you can also define a maximum number of days within which to pick up an order. With minimum and maximum values defined, a site user can only see and pick a certain set of days during their checkout experience. Number values can also be expressed in decimals (for example...).
+**Minimum and maximum**: This is the earliest and latest days that can be selected for pickup relative to the day that the order is placed. "Minimum" ensures there is enough time for the retailer to process the order before it's ready for pickup. "Maximum" ensures that the user cannot pick a date that is too far into the future. For example, with a minimum of "1", if an order is placed on September 20th, the earliest day available for pickup will be the next eligible day (September 21st). Similarly, you can also define a maximum number of days within which to pick up an order. With minimum and maximum values defined, a site user can only see and pick a certain set of days during their checkout experience. Minimum can be expressed in decimals ifn the value is less than 1 E.g. 0.8 implies in 4hours. If Minimum value is higher than 1, it will be always rounded even if its a decimal. The value for the Maximum will always be rounded up. E.g. 1.2 will be rounded up to 2.
 
 **Start and end date**: Each timeslot entry has a start and end date. This provides the flexibility to add different timeslots throughout the year (for example, holiday hours). Once an order is placed, changing the start and end date on the timeslots will not apply to the existing order. When defining start and end dates, you must take into account store closure dates (for example, Christmas day), and ensure that a timeslot is not defined for these days.
 
@@ -68,8 +68,6 @@ A timeslot can be defined using the following properties:
 ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG)
 
 Only a single timeslot template can be configured per channel. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
-
-If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. 
 
 ## Configure the timeslot feature in Commerce headquarters
 
@@ -97,11 +95,16 @@ To configure the timeslot feature in Commerce headquarters, follow these steps.
 
     ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG "HQ Timeslot overview")
 
-1. On the **Distribution schedule** page, run the **1070** and **1090** jobs to sync the data to the channels.
+1. On the **Distribution schedule** page, run the **1070** and **1135** jobs to sync the data to the channels.
+
+> [!NOTE]
+> The time slot  created should be unique per delivery mode within each template.
 
 ## Timeslot selection on POS orders 
 
 In POS, when an order / order line is identified for 'Pickup',  Cashier can select the 'Pickup' store/location and choose a date and timeslot.
+
+On POS, if a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. 
 
 Below is an example of time slot selection in a POS order
 ![POS Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_POS.png "POS Timeslot Pickup")
