@@ -51,7 +51,7 @@ A timeslot can be defined using the following properties:
 
 **Mode of delivery**: This is the pickup mode of delivery that the timeslot applies to. 
 
-**Minimum and maximum**: This is the earliest and latest days that can be selected for pickup relative to the day that the order is placed. "Minimum" ensures there is enough time for the retailer to process the order before it's ready for pickup. "Maximum" ensures that the user cannot pick a date that is too far into the future. For example, with a minimum of "1", if an order is placed on September 20th, the earliest day available for pickup will be the next eligible day (September 21st). Similarly, you can also define a maximum number of days within which to pick up an order. With minimum and maximum values defined, a site user can only see and pick a certain set of days during their checkout experience. Minimum can be expressed in decimals ifn the value is less than 1 E.g. 0.8 implies in 4hours. If Minimum value is higher than 1, it will be always rounded even if its a decimal. The value for the Maximum will always be rounded up. E.g. 1.2 will be rounded up to 2.
+**Minimum and maximum**: This is the earliest and latest days that can be selected for pickup relative to the day that the order is placed. "Minimum" ensures there is enough time for the retailer to process the order before it's ready for pickup. "Maximum" ensures that the user cannot pick a date that is too far into the future. For example, with a minimum of "1", if an order is placed on September 20th, the earliest day available for pickup will be the next eligible day (September 21st). Similarly, you can also define a maximum number of days within which to pick up an order. With minimum and maximum values defined, a site user can only see and pick a certain set of days during their checkout experience. Minimum can be expressed in decimals ifn the value is less than 1 E.g. 4 hours should be represent as minimum value of 4 / 24 = 0.17. If Minimum value is higher than 1, it will be always rounded even if its a decimal. The value for the Maximum will always be rounded up. E.g. 1.2 will be rounded up to 2.
 
 **Start and end date**: Each timeslot entry has a start and end date. This provides the flexibility to add different timeslots throughout the year (for example, holiday hours). Once an order is placed, changing the start and end date on the timeslots will not apply to the existing order. When defining start and end dates, you must take into account store closure dates (for example, Christmas day), and ensure that a timeslot is not defined for these days.
 
@@ -75,7 +75,7 @@ Timeslots must be defined in Commerce headquarters for each pickup mode of deliv
 
 To configure the timeslot feature in Commerce headquarters, follow these steps.
 
-1. Go to **Commerce** \> **Channel Setup** \> **Timeslot management**.
+1. Go to **Commerce** \> **Channel Setup** \> **Store pickup time slot**.
 1. Select **New** to create a new timeslot template. To use an existing template, select the template in the left navigation pane.
 1. Enter an **ID** and **Description**.
 1. On the **Time settings** tab, select **Add** to open a slider control to define the date range, time period, time slot duration, active days, and other settings.
