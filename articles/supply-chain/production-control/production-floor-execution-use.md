@@ -84,7 +84,7 @@ Workers start a production job by selecting a job on the **All jobs** tab and th
 
 ![Start job dialog box](media/pfei-start-job-dialog.png "Start job dialog box")
 
-Workers use the **Start job** dialog box to confirm the production quantity and then start the job. The **Quantity** field initially shows the remaining quantity for the job. Workers can adjust the quantity by selecting the **Quantity** field and then using the numeric keyboard that appears. Workers then select **Start** to start to work on the job. The **Start job** dialog box is closed, and the job is added to the **Active jobs** tab.
+Workers use the **Start job** dialog box to confirm the production quantity and then start the job. Workers can adjust the quantity by selecting the **Quantity** field and then using the numeric keyboard that appears. Workers then select **Start** to start to work on the job. The **Start job** dialog box is closed, and the job is added to the **Active jobs** tab.
 
 Workers can start a job that is in any status. When a worker starts a job that has a status of *Not started*, the **Quantity** field in the **Start job** dialog box initially shows the full quantity. When a worker starts a job that has a status of *Started* or *Stopped*, the **Quantity** field initially shows the remaining quantity.
 
@@ -102,9 +102,9 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ## Completing a job and starting a new job
 
-Usually, workers complete a job by selecting one or more current jobs on the **Active jobs** tab and then selecting **Report progress**. They then enter the quantity that was produced (the good quantity) and set the status to *Complete*. If more than one job was selected, a worker then uses the **Previous** and **Next** buttons to move among them. To start a new job, the worker selects it in the **All jobs** list and then selects **Start job**.
+Usually, workers complete a job by selecting one or more current jobs on the **Active jobs** tab and then selecting **Report progress**. They then enter the quantity that was produced (the good quantity) and set the status to *Complete*. If more than one job was selected, a worker then uses the **Previous** and **Next** buttons to move among them. To start a new job, the worker selects it on the **All jobs** tab and then selects **Start job**.
 
-A worker can also start a new job while their previous job is still open. Once again, the worker selects the new job on the **All jobs** page and then selects **Start job**. However, in this case, the **Start job** dialog box informs the worker that they are currently working on a job, and that they must therefore either stop or complete that job before they start the new job.
+A worker can also start a new job while their previous job is still open. Once again, the worker selects the new job on the **All jobs** tab and then selects **Start job**. However, in this case, the **Start job** dialog box informs the worker that they are currently working on a job, and that they must therefore either stop or complete that job before they start the new job.
 
 ## Working on multiple jobs in parallel
 

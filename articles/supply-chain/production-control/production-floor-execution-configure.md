@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the production floor execution interface
-description: This topic describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that is specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
+description: This topic describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
 author: johanhoffmann
 manager: tfehr
 ms.date: 10/05/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.15
 
 Shop floor workers use the production floor execution interface to register their daily work, such as when they start a job, report feedback about jobs, register indirect activities, and report absence. These registrations are the basis for tracking progress and cost on production orders, and for calculating the basis for the workers' pay.
 
-When you open the production floor execution interface, it automatically loads a selected configuration and job filter that is specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage. Here are some usage examples:
+When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage. Here are some usage examples:
 
 - On a device in the company hall, employees clock in when they come into the office, and they clock out when they leave for the day.
 - On a device on the shop floor, machine operators register when they start and complete jobs. They also register breaks and indirect activities.
@@ -85,7 +85,7 @@ Next, configure the various settings for the selected device configuration. The 
 
 ## Clean up job configurations
 
-When the shop floor supervisor sets up the production floor execution interface, they select a configuration and a job filter. These selections are stored in a reference table in Supply Chain Management, and the browser uses an ID that is stored in a local cookie to find the correct row in that table. The table also logs the date and time since the last time that a worker signed in to each device.
+When the shop floor supervisor sets up the production floor execution interface, they select a configuration and a job filter. These selections are stored in a reference table in Supply Chain Management, and the browser uses an ID that is stored in a local cookie to find the correct row in that table. The table also logs the date and time that a worker last signed in to each device.
 
 A batch job periodically cleans entries in the references table for devices that haven't logged any activity in the last 60 days. You can also manually clean the entries at any time by following these steps.
 

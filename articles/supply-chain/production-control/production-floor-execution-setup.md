@@ -43,7 +43,7 @@ To set the configuration and job filters for a device, sign in to the **Producti
 1. Go to **Production control \> Manufacturing execution \> Production floor execution**.
 
     If the production floor execution interface has already been configured at least one time on the current device, a sign-in page appears. Otherwise, a welcome page appears.
-    
+
 1. On either the sign-in page or the welcome page, select **Configure**.
 1. Select a configuration in the list.
 1. Select **Next**.
@@ -73,10 +73,10 @@ To allow a worker to override the default job filters that have been set up for 
 
 Often, you will run the production floor execution interface on a device that is used exclusively for that purpose. Therefore, it might make sense to run the interface in full-screen mode, without showing any navigation and/or browser chrome.
 
-- To hide the left navigation pane that is shown in Supply Chain Management, add the following text to the end of the URL in the browser's address bar: **\&limitednav=true**
+- To hide the navigation pane that is shown in Supply Chain Management, add the following text to the end of the URL in the browser's address bar: `\&limitednav=true`.
 - To also hide the browser's address bar, use the browser's native full-screen mode. (For instructions, see your browser's documentation.)
 
-The upper part of the following illustration shows how the interface looks by default. The lower part shows how it looks in full-screen mode when the left navigation pane is hidden.
+The upper part of the following illustration shows how the interface looks by default. The lower part shows how it looks in full-screen mode when the navigation pane is hidden.
 
 ![Standard vs. full-screen interface](media/pfei-full-screen.png "Standard vs. full-screen interface")
 
