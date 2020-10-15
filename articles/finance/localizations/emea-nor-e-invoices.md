@@ -38,8 +38,39 @@ To comply with European Union's Directive 2014/55/EU, ....
 
 - The primary address of the legal entity must be in Norway.
 
-    ![New layout selected for customer invoices](media/emea-ita-exil-invoice-packing-slip-pic2.jpg)
+## Import Electronic reporting configurations
+In the **Electronic reporting** workspace, import the following Electronic reporting (ER) formats from the repository:
+
+- OIOUBL Sales invoice
+- OIOUBL Project invoice
+- OIOUBL Sales credit note
+- OIOUBL Project credit note
 
 > [!NOTE]
-> When...
->
+> These formats are based on the **Invoice model** configuration, and use the **Invoice model mapping** configuration. All required additional configurations will be automatically imported.
+
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+
+### Make the references to the imported ER formats configurations
+
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+2. On the **Electronic documents** tab, define the references to the imported formats:
+
+![Configuring Electronic documents](media/emea-nor-ger-configs.jpg)
+
+
+## Configure parameters
+
+### Configure Print management 
+#### Test
+
+1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
+2. On the **Form setup** page, on the **General** tab, select **Print management**.
+3. On the **Print management setup** page, define the references to the imported formats for the following documents:
+
+    - **Customer invoice:** In the **Report format** field, select **Sales invoice (Excel) (BH)**.
+    - **Free text invoice:** In the **Report format** field, select **Free text invoice (Excel) (BH)**.
+
+    ![Configuring Print management](media/emea-bhr-print_management.jpg)
+
+4. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
