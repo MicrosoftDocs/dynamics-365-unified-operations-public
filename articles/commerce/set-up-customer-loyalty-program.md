@@ -83,7 +83,7 @@ The following table describes the processes that must be run to send the loyalty
 
 - Using the price groups associated with the loyalty program and loyalty tiers, retailers can easily create special prices and discounts for loyalty members.
 
-- As a part of a loyalty scheme retailers can create different earning and redemption rules by tiers to differentiate the rewards for customers in different tiers. Retailers can also  include "affiliations" as a part of the earning and redemption rules so that certain group of customers can be a part of existing tiers, but still be rewarded differently. Thise prevents the need to create additional tiers.
+- As a part of a loyalty scheme retailers can create different earning and redemption rules by tiers to differentiate the rewards for customers in different tiers. Retailers can also  include "affiliations" as a part of the earning and redemption rules so that certain group of customers can be a part of existing tiers, but still be rewarded differently. This prevents the need to create additional tiers.
 	
     > [!NOTE]
     > The earning rules within a loyalty scheme are additional. For example, if you create a rule to reward a gold tier member 10 points for each US dollar, and you also create a rule for a customer with "veteran" affiliation to reward 5 points for each US dollar, then a veteran who is also a gold tier member would earn 15 points for 1 US dollar, as the customer qualifies for both lines. However, if the veteran customer was not a gold tier member, then he would earn 5 points for each dollar. To reflect the changes in the channels, run the **Process loyalty schemes** and **1050** (loyalty information) jobs.
