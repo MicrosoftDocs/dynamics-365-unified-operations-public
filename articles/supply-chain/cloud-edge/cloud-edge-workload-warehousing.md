@@ -145,7 +145,7 @@ The following warehouse management functionality isn't currently supported on sc
 
 ### Outbound (supported only for sales orders and demand replenishment)
 
-The following table shows which features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
+The following table shows which outbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
 > [!WARNING]
 > Because only sales order processing is supported, outbound warehouse management processing can't be used for transfer orders.
@@ -179,13 +179,15 @@ The following table shows which features are supported, and where they are suppo
 
 ### Inbound
 
+The following table shows which inbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
+
 | Process                                                          | Hub | WES workload on a scale unit |
 |------------------------------------------------------------------|-----|------------------------------|
-| Source document processing                                       | Yes | No |
+| Source&nbsp;document&nbsp;processing                                       | Yes | No |
 | Load and transportation management processing                    | Yes | No |
 | Shipment confirmation                                            | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
-| Purchase order item receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when there is a warehouse order, and when a purchase order isn't part of a <i>load</i>. However, two mobile device menu items must be used, one for receiving (<i>Purchase order item receiving</i>) and another, with the <b>Use existing work</b> option enabled, to process the putaway.</p><p>No, when there isn't a warehouse order.</p> |
+| Purchase order item receiving and put away                        | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when there is a warehouse order, and when a purchase order isn't part of a <i>load</i>. However, two mobile device menu items must be used, one for receiving (<i>Purchase order item receiving</i>) and another, with the <b>Use existing work</b> option enabled, to process the putaway.</p><p>No, when there isn't a warehouse order.</p> |
 | Purchase order line receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Return order receiving and put away                               | Yes | No |
 | Mixed license plate receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
@@ -193,11 +195,13 @@ The following table shows which features are supported, and where they are suppo
 | License plate receiving and put away                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Transfer order item receiving and put away                        | Yes | No |
 | Transfer order line receiving and put away                        | Yes | No |
-| Work cancellation                                                | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, without <b>Unregister receipt when canceling work</b></p> |
+| Work cancellation                                                | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) isn't supported.</p> |
 | Purchase order product receipt processing                        | Yes | No |
 | Cross docking work creation as part of receiving                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 
 ### Warehouse operations and exception handing
+
+The following table shows which warehouse operations and exception handing features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
 | Process                                            | Hub | WES workload on a scale unit |
 |----------------------------------------------------|-----|------------------------------|
@@ -224,7 +228,7 @@ The following table shows which features are supported, and where they are suppo
 
 ### Production
 
-Warehouse management integration for production scenarios isn't currently supported.
+Warehouse management integration for production scenarios isn't currently supported, as indicated in the following table.
 
 | Process | Hub | WES workload on a scale unit |
 |---------|-----|------------------------------|
