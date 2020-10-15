@@ -66,7 +66,7 @@ For more information about how to import ER configurations, see [Download Electr
 ### Configure Legal entity parameters
 
 1. Go to **Organization administration** \> **Organization** \> **Legal entities**.
-2. On the **Tax registration** FastTab, fill in company VAT naumber in **Tax registration number** field.
+2. On the **Tax registration** FastTab, fill in company VAT number in **Tax registration number** field.
 3. On the **Registrationnumbers** FastTab, turn on the **Print Foretaksregisteret on sales documents** option for Norway.
 4. On the **Bank account information** FastTab, 
   - Fill in company organization number in **Routing number** field.
@@ -74,3 +74,13 @@ For more information about how to import ER configurations, see [Download Electr
 > [!NOTE]
 > Company bank account must be preliminary set up in **Cash and bank management** > **Bank accounts** > **Bank accounts**.
 
+### Configure Customer parameters
+
+### Units of measure configuration
+
+1. Go to **Organization administration** \> **Setup** \> **Units** > **Units**.
+2. Open **External codes** for a selected unit.
+3. In **Overview** section, in **Code** field, enter a code which coincides selected unit id.
+4. In **Value** section, in **Value** field, enter an external code will be used as international trade units of measure codes recommended by United Nations Economic Commission for Europe ([UN/ECE](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/)).
+
+![Units of measure configuration](media/emea-nor-ger-units.jpg)
