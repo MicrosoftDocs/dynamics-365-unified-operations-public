@@ -2043,6 +2043,14 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
+          - name: Set up and use the production floor execution interface
+            items:
+            - name: Configure the production floor execution interface
+              href: production-control/production-floor-execution-configure.md
+            - name: Set up a device to run the production floor execution interface
+              href: production-control/production-floor-execution-setup.md
+            - name: How workers use the production floor execution interface
+              href: production-control/production-floor-execution-use.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
