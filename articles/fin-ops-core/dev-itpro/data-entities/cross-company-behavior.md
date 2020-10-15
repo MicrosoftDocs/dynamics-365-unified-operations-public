@@ -49,14 +49,14 @@ Each table has a **SaveDataPerCompany** property, and each view has a **AllowCro
 | Meaning of value = No  | The system does *not* add a **dataAreaId** field to the table. The table is said to be a shared table, because none of its records contain any formal company-specific data. | The system automatically *adds* a filter to the SQL **Where** clause to limit the returned set of rows to one **dataAreaId** value. However, the **AllowCrossCompany** property is ignored if the *root* data source of the view is a shared table. |
 
 ## Comparisons within AllowCrossCompany = No
-In the following screen shot, the **CustomerList** view has two data sources:
+In the following screenshot, the **CustomerList** view has two data sources:
 
 - **Root** – CustTable, which has its **SaveDataPerCompany** property set to **Yes**.
 - **Non-root** – DirPartyTable, which has its **SaveDataPerCompany** property set to **No**.
 
 [![The CustomerList view has two data sources.](./media/root.png)](./media/root.png)
 
-The **CustomerList** view has its **AllowCrossCompany** property set to **No**, as shown in the following screen shot.
+The **CustomerList** view has its **AllowCrossCompany** property set to **No**, as shown in the following screenshot.
 
 [![The AllowCrossCompany property is set to No.](./media/crosscomp.png)](./media/crosscomp.png)
 
@@ -118,7 +118,7 @@ Data entities help you overcome the limitations of tables and view where cross-c
 - The field can be any field that is extended from the **DataAreaId** extended data type (EDT), and isn't limited to an underlying system **dataAreaId** field.
 - You can use the **PrimaryCompanyContext** property even when the entity has only shared tables as its data sources, if this makes sense for your specific situation.
 
-The following screen shot shows the value set for the **PrimaryCompanyContext** property on the **FMCustGroupEntity** entity.
+The following screenshot shows the value set for the **PrimaryCompanyContext** property on the **FMCustGroupEntity** entity.
 
 [![The PrimaryCompanyContext property](./media/prim1.png)](./media/prim1.png)
 
@@ -167,7 +167,7 @@ In the current example, the **FMCustomerGroupGlobalEntity** entity has no value 
 
 [![No value assigned to the PrimaryCompanyContext property.](./media/ent1.png)](./media/ent1.png)
 
-However, a **dataAreaId** field from the FMCustGroup table is mapped to the **FMCustomerGroupGlobalEntity** entity as a regular field that is named **LegalEntity**. In this example, the FMCustGroup table is the root data source for **FMCustomerGroupGlobalEntity**. However, we are using this **dataAreaId** field in an informal way that bypasses the automatic mechanisms of the system. All these details are shown in the following screen shot of the **LegalEntity** field.
+However, a **dataAreaId** field from the FMCustGroup table is mapped to the **FMCustomerGroupGlobalEntity** entity as a regular field that is named **LegalEntity**. In this example, the FMCustGroup table is the root data source for **FMCustomerGroupGlobalEntity**. However, we are using this **dataAreaId** field in an informal way that bypasses the automatic mechanisms of the system. All these details are shown in the following screenshot of the **LegalEntity** field.
 
 [![LegalEntity field](./media/ent2.png)](./media/ent2.png)
 
@@ -195,7 +195,7 @@ This example has two purposes:
 
 ### Test data
 
-The following screen shot of the **Table browser** page shows the test data that is in the **FMCustomerGroupGlobalEntity** entity before the X++ test code is run.
+The following screenshot of the **Table browser** page shows the test data that is in the **FMCustomerGroupGlobalEntity** entity before the X++ test code is run.
 
 [![The Table browser page](./media/ent3.png)](./media/ent3.png)
 
