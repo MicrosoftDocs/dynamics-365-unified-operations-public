@@ -185,7 +185,7 @@ The following table shows which features are supported, and where they are suppo
 | Load and transportation management processing                    | Yes | No |
 | Shipment confirmation                                            | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
-| Purchase order item receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when there is a warehouse order, and when a purchase order isn't part of a <i>load</i>. However, two mobile device menu items must be used, one for receiving (<i>Purchase order item receiving</i>) and another, with <i>Use existing work</i>, to process the putaway.</p><p>No, when there isn't a warehouse order.</p> |
+| Purchase order item receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when there is a warehouse order, and when a purchase order isn't part of a <i>load</i>. However, two mobile device menu items must be used, one for receiving (<i>Purchase order item receiving</i>) and another, with the <b>Use existing work</b> option enabled, to process the putaway.</p><p>No, when there isn't a warehouse order.</p> |
 | Purchase order line receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Return order receiving and put away                               | Yes | No |
 | Mixed license plate receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |

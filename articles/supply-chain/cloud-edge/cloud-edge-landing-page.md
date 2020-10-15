@@ -39,11 +39,11 @@ Cloud and edge scale units enable distribution of shop floor and warehouse execu
 - Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
 - Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
 
-Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. However, complications can arise because of issues that range from basic connectivity (for example, provider outages, Microsoft Azure outages, unreliable connections, or network latency) to competition for the same system resources among multiple business processes. Cloud and edge scale units enable companies to run key mission-critical manufacturing and warehouse processes without interruption, even in situations of those types.
+Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. Cloud and edge scale units enable companies to run key mission-critical manufacturing and warehouse processes without interruption, even when faced with occasional network connectivity or latency issues.
 
 ## Public preview information
 
-The preview provides one environment that functions as a cloud-based hub of your Dynamics 365 Supply Chain Management environment and one environment that functions as a cloud scale unit. For the preview, both environments are hosted in a US data center.
+The preview provides one environment that functions as a cloud-based hub of your Dynamics 365 Supply Chain Management environment and one environment that functions as a cloud scale unit.
 
 <!-- You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.-->
 
@@ -55,6 +55,19 @@ To access the October preview release 10.0.15/Platform update 39 for deployment 
 
 > [!IMPORTANT]
 > The scale unit capability for Supply Chain Management is made available only if you agree to the [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274).
+
+### Data processing for the preview
+
+During the public preview, some management services will only be hosted in the United States. However, when the feature becomes generally available, these management services will be available in all geographies supported by Supply Chain Management. This affects the transfer and storage of administrative information used by the scale unit manager, including:
+
+- Your tenant names and IDs
+- Your LCS project IDs
+- Administrator emails used to sign in
+- Environment IDs for hub and scale units
+- Workload configurations
+- Collected metrics (such as latency and throughput) which are displayed on the map analysis page
+
+Data transferred to and stored in the US data centers will be deleted when your preview environments are shut down.
 
 ### Sign up for the preview
 
@@ -75,7 +88,7 @@ To sign up for the preview, go to the [Scale Unit Manager portal](https://aka.ms
 > [!IMPORTANT]
 > For the initial phase of the preview program for this feature, Microsoft is supporting only hubs that have cloud scale units, not hubs that have edge scale units. Edge scale units are installed on-premises and are expected to become available during an upcoming phase of the program.
 
-Because cloud and edge scale units are a preview feature, services that are related to them are currently available in limited countries and regions. By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be performed in a data center that is located in the United States. By enabling cloud and edge scale units, you also agree to the [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274). To learn more about cloud and edge scale units, see the [documentation](https://aka.ms/scmcne).
+Because cloud and edge scale units are a preview feature, services that are related to them are currently available in limited countries and regions. By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. By enabling cloud and edge scale units, you also agree to the [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274). To learn more about cloud and edge scale units, see the [documentation](https://aka.ms/scmcne).
 
 Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://aka.ms/privacy).
 
