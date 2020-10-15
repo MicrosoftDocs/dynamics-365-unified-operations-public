@@ -143,7 +143,7 @@ In the context of X++ code, the cross-company behavior of data entities resemble
 
 The following table describes the behavior of a data entity under CRUD access when the **PrimaryCompanyContext** property is set to a field value. Both X++ and OData accesses are described.
 
-|             | X++ | OData |
+|  &nbsp;       | X++ | OData |
 |-------------|-----|-------|
 | Read (R)    | By default, results are *always* filtered by **dataAreaId** = current company, and cross-company data can be fetched by using the **crosscompany** option. | Results are *not* filtered by **dataAreaId**. The consumer must filter explicitly. |
 | Write (CUD) | CUD access to the data entity always occurs in the context of the current company. If cross-company CUD access to the entity is required, use the **changeCompany** keyword. | CUD access to the entity can be accomplished by the consumer for any company by setting the value of the **PrimaryCompanyContext(myDataAreaId)** field. The framework handles the necessary **ChangeCompany** action. |
@@ -158,7 +158,7 @@ The following X++ code example accesses **FMCustGroupEntity**, which has its **P
 
 When the **PrimaryCompanyContext** property is set on the data entity, a **dataAreaId** field is created in the view schema and mapped to the **PrimaryCompanyContext** field. The following table describes the behavior of a data entity under CRUD access when the **PrimaryCompanyContext** property is empty. Both X++ and OData accesses are described.
 
-|             | X++                                                                                                                              | OData |
+|     &nbsp;   | X++                                                                                                                              | OData |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------|-------|
 | Read (R)    | Results aren't filtered, because no system **dataAreaId** field is created on the view schema.                                   | (The same as for R with X++) |
 | Write (CUD) | There is no primary company context to set. Therefore, CUD access to the entity is always in the context of the current company. | (The same as for CUD with X++) |
