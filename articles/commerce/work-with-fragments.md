@@ -67,8 +67,8 @@ To convert a previously configured module to a reusable fragment, follow these s
 1. Open a page or template that contains the module that you want to convert to a fragment.
 1. In the outline pane on the left or directly in visual page builder, select the previously configured module.
 1. Select the ellipsis (**...**) next to the name of the module in either the outline pane or the selected module's toolbar in visual page builder. 
-1. Select **Share as Page Fragment**. 
-1. In the **Save as Page Fragment** dialog box, enter a name for the fragment.
+1. Select **Share as fragment**. 
+1. In the **Save as fragment** dialog box, enter a name for the fragment.
 1. Select **OK** to save the module configuration as a fragment that can be added to other pages.
 
 The following image shows how to save a module configuration as a fragment.
@@ -80,7 +80,7 @@ The following image shows how to save a module configuration as a fragment.
 To create a new fragment, follow these steps.
 
 1. In the navigation pane on the left, select **Fragments**.
-1. Select **New Page Fragment**. A dialog box appears that shows all the available module types. As was mentioned earlier, fragments can be created from any module type.
+1. Select **New**. A **New fragment** dialog box appears that shows all the available module types. As was mentioned earlier, fragments can be created from any module type.
 1. Select a module type for your fragment.
 
 The following image shows where to create a new fragment.
@@ -99,15 +99,15 @@ The following procedures describe how to add, remove, and edit fragments.
 To add a fragment to a page, follow these steps.
 
 1. In the outline pane on the left or directly in visual page builder, select a container or slot to which child modules can be added.
-1. In the online pane, select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using visual page builder, select the plus symbol (**+**).  
-1. Select **Add Fragment**.
+1. Select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using visual page builder, select the plus symbol (**+**).  
+1. Select **Add fragment**.
 
     ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)
  
     > [!NOTE]
-    > If the container or slot doesn't support new child modules, the **Add Fragment** option is unavailable.
+    > If the container or slot doesn't support new child modules, the **Add fragment** option is unavailable.
     
-1. In the **Add Fragment** dialog box, search for and select a fragment to add. If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.
+1. In the **Select fragment** dialog box, search for and select a fragment to add. If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.
 1. Select your desired fragment to add it to the container or slot on your page.
 
     ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)
