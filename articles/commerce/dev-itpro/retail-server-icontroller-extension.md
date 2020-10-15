@@ -242,7 +242,7 @@ You don't have to add or include any **EdmModelExtender** files in the extension
 
 ### Debugging RS extension
 
-To debug the RS extension project in VS, click Debug > Attach to Process and select the w3wp.exe (the IIS process for Retail Server), if there is multiple w3wp.exe process find the right process based on the process id. Retail server process id can be found from IIS > Worker processes or from the command prompt using the tasklist command.
+To debug the RS extension project in Visual Studio. Go to **Debug > Attach to Process**. Select w3wp.exe (the IIS process for Retail Server). If there are multiple w3wp.exe processes, use the correct process based on the process ID. The retail server process ID can be found using **IIS > Worker processes** or by using the command prompt and the tasklist command.
 
 ## Generate the Typescript proxy for POS
 
