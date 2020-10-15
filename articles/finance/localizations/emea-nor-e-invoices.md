@@ -67,6 +67,10 @@ For more information about how to import ER configurations, see [Download Electr
 
 1. Go to **Organization administration** \> **Organization** \> **Legal entities**.
 2. On the **Tax registration** FastTab, fill in company VAT naumber in **Tax registration number** field.
-3. On the **Bank account information** FastTab, fill in company organization naumber in **Routing number** field.
-4. On the **Registrationnumbers** FastTab, turn on the **Print Foretaksregisteret on sales documents** option for Norway.
+3. On the **Registrationnumbers** FastTab, turn on the **Print Foretaksregisteret on sales documents** option for Norway.
+4. On the **Bank account information** FastTab, 
+  - Fill in company organization number in **Routing number** field.
+  - Define company bank account in **Bank account** field.
+> [!NOTE]
+> Company bank account must be preliminary set up in **Cash and bank management** > **Bank accounts** > **Bank accounts**.
 
