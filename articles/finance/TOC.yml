@@ -2076,6 +2076,8 @@
             href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
           - name: Tax inquiry
             href: localizations/apac-ind-GST-tax-inquiry.md
+          - name: Clean up the TaxDocumentJSON table
+            href: localizations/gte-clean-up-tax-document-json-table.md
         - name: Tax engine
           items: 
           - name: Tax engine overview
