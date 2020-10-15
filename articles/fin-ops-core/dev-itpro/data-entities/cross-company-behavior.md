@@ -136,7 +136,7 @@ AS
        FROM   fmcustgroup T1 
 ```
 
-## Run time: The behavior of data entities for crosscompany
+## Run time: The behavior of data entities for cross company
 In the context of X++ code, the cross-company behavior of data entities resembles the behavior of tables. If the **PrimaryCompanyContext** property for an entity has no value and is empty, the entity behaves like a shared table.
 
 ### X++ when PrimaryCompanyContext is set
@@ -145,7 +145,7 @@ The following table describes the behavior of a data entity under CRUD access wh
 
 |  &nbsp;       | X++ | OData |
 |-------------|-----|-------|
-| Read (R)    | By default, results are *always* filtered by **dataAreaId** = current company, and cross-company data can be fetched by using the **crosscompany** option. | Results are *not* filtered by **dataAreaId**. The consumer must filter explicitly. |
+| Read (R)    | By default, results are *always* filtered by **dataAreaId** = current company, and cross-company data can be fetched by using the **cross company** option. | Results are *not* filtered by **dataAreaId**. The consumer must filter explicitly. |
 | Write (CUD) | CUD access to the data entity always occurs in the context of the current company. If cross-company CUD access to the entity is required, use the **changeCompany** keyword. | CUD access to the entity can be accomplished by the consumer for any company by setting the value of the **PrimaryCompanyContext(myDataAreaId)** field. The framework handles the necessary **ChangeCompany** action. |
 
 The following X++ code example accesses **FMCustGroupEntity**, which has its **PrimaryCompanyContext** property set to **dataAreaId**.
