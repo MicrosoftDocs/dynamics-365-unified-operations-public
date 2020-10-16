@@ -66,7 +66,7 @@ The following bug fixes are included in this release.
 | 509731 | Time off request for future terminated worker causes issue if they apply for time off after termination date | Time off requests can now be submitted for employees with a future termination date as long as the request is before the termination date. |
 | 510716 | Compensation Analytics includes both male and female employees for **Male average hourly pay** | In Compensation Analytics, the **Male average hourly pay** on the **Compensation Demographic Analysis** included female average pay. Now it only includes males. |
 | 511348 | Benefits self-service should only show benefit plans valid from today to end of the benefit period | Expired benefit plans were displayed to employees on the **Benefits enrollment** page. This fix removes these plans. |
-| 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br>- **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** page makes the fields uneditable after the action has completed. |
+| 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br>-**EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** page makes the fields uneditable after the action has completed. |
 
 ## In preview
 
