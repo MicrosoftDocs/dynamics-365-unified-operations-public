@@ -313,9 +313,9 @@ For information about how to deploy the packages either manually or by using the
 
 LCS has a 300 MB limitation on the package size. If the package size is greater than 300 MB, LCS will not allow deploy the package. To reduce the size and deploy to RCSU, remove any of the self-service exes (ModernPOSSetup, StoreSystemSetup, or HardwareStationSetup installers). Unzip the package and remove any of the self-service exes and zip the package again. The self-service packages are not deployed to Cloud Commerce scale unit. Sync the self-service package to AOS following the steps in [Synchronize self-service installers in Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).
 
-## Upload Self-service installers to LCS and synchronize to Dynamics 365 Commerce
+## Upload self-service installers to LCS and synchronize to Dynamics 365 Commerce
 
-After the Retail deployable package is generated, navigate to RetailSDK\Packages\RetailDeployablePackage\content.folder\RetailSelfService\Packages folder and upload all the self-service installers found in that folder to **LCS project > Asset library > Retail Self-service package** and then synchronize the package to Dynamics 365 Commerce by navigating to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters and select the Channel deployment tab > Check for package updates** to perform synchronization.
+After the Retail deployable package is generated, go to the RetailSDK\Packages\RetailDeployablePackage\content.folder\RetailSelfService\Packages folder and upload all the self-service installers found in that folder to **LCS project > Asset library > Retail Self-service package**. Synchronize the package to Dynamics 365 Commerce by navigating to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters** and select the **Channel deployment** tab and then select **Check for package updates** to perform synchronization.
 
-Refer [Synchronize self-service installers in Dynamics 365 Commerce doc](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/synchronize-installers) for more detailed steps.
+For detailed information, see [Synchronize self-service installers in Dynamics 365 Commerce doc](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).
 
