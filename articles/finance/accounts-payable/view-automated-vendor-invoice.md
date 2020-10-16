@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# View vendor invoice automation results (preview)
+# View vendor invoice automation results
 
 [!include [banner](../includes/banner.md)]
 
