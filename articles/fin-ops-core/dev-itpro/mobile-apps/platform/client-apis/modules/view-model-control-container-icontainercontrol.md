@@ -19,12 +19,12 @@ ms.search.scope:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Container module
+# Container module (Client APIs)
 
 [!include [banner](../../../../includes/banner.md)]
 

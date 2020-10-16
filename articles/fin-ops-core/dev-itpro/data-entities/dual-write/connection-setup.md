@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -46,7 +45,7 @@ You can set up a dual-write connection between a Finance and Operations environm
 
 The setup mechanism varies, depending on your subscription and the environment.
 
-+ For new instances of Finance and Operations apps, the setup of a dual-write connection begins in Microsoft Dynamics Lifecycle Services (LCS). If you have a license for Microsoft Power Platform, you will get a new Common Data Service environment if your tenant doesn't have one.
++ For new instances of Finance and Operations apps, the setup of a dual-write connection begins in Microsoft Dynamics Lifecycle Services (LCS). If you have a license for Power Platform, you will get a new Common Data Service environment if your tenant doesn't have one.
 + For existing instances Finance and Operations apps, the setup of a dual-write connection begins in the Finance and Operations environment.
 
 The following setup scenarios are supported:

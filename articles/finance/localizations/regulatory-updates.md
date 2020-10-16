@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
 
@@ -48,6 +48,12 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Planned release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------|
+|      Austria         |   September 2020      | 10.0.15      |   VAT declaration format U30 has been updated for 2020 reporting   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Reverse charge   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Invoice issue deadline (GCC)   |
+|      Bahrain         |   July 2020      | 10.0.12      |   VAT declaration for Bahrain   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Sales invoices for Bahrain   |
+|      Brazil         |   August 2020      | 10.0.14, 10.0.13, 10.0.12      |   ADRCST declaration PR   |
 |      Brazil         |   March 2020      | 10.0.11      |   SPED ECD layout 8   |
 |      Brazil         |   April 2020      | 10.0.11      |   Technical note NT2019.001 v1.40   |
 |      Brazil         |   May 2020      | 10.0.12, 10.0.11HF      |   ADCR ICMS-ST statement for Parana state   |
@@ -56,21 +62,35 @@ For the latest regulatory update plans, refer to the following table.
 |      Czech Republic      |   July 2020      | 10.0.13      |   VAT control statement changes in XML schema (invoice listing)   |
 |      Czech Republic         |   July 2020      | 10.0.13      |   VAT declaration in XML, VAT declaration preview in Excel, and VAT control statement XML formats based on Tax declaration model   |
 |      Estonia         |   May 2020       | 10.0.11      |   Electronic invoicing in Estonia: customers invoices export in Estonian specific format version 1.2.  |
+|      Europe        |   August 2020       | 10.0.14      |   Transfer Partner VAT ID to Intrastat  |
+|      Finland         |   July 2020       | 10.0.13      |   Support of electronic invoices for Finland  |
 |      Germany         |   May 2020       | 10.0.12      |   Germany - Retail - Cash register requirements    |
 |      Hungary         |   March 2020       | 10.0.11     |   Online invoicing system v.2.0 in Finance and Operations    |
+|      India         |   August 2020, July 2020      | 10.0.3, 10.0.12HF      |   TCS on Sales of Goods as per section 206C (1H) - Threshold as per PAN based accumulation of transactions.  |
+|      India         |   August 2020, June 2020      | 10.0.13, 10.0.12HF      |   Credit/Debit note against export Invoice  |
+|      India         |   August 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Electronic Invoice under GST  |
+|      India         |   May 2020      | 10.0.13, 10.0.12      |   New GSTR-1 and GSTR-2 return format  |
+|      India         |   July 2020      | 10.0.13      |   New GSTR (ANX-1 & ANX-2)  offline Tool (Beta version)  |
 |      India         |   May 2020      | 10.0.12      |   Improvements in unit price and cost price handling in Stock transfer orders  |
 |      India         |   May 2020      | 10.0.12      |   Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt)  |
 |      Italy         |   May 2020      | 10.0.12, 10.0.11      |   Modello 770 / 2019 format change |
 |      Italy         |   July 2020      | 10.0.13, 10.0.12HF      |   Changes in the format of Italian electronic invoices - FatturaPA |
+|      Kuwait         |   July 2020      | 10.0.12      |   Reverse charge |
+|      Malaysia         |   July 2020      | 10.0.13      |   SST report |
+|      Mexico         |   September 2020      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   CFDI URL schema location based on Anexo 20 document |
 |      Norway          |   May 2020   | 10.0.12     |   SAF-T report redesign: Opening balances by "operating" transaction type and Tax information in Tax code currency in Finance (version 10) |
 |      Norway          |   May 2020   | 10.0.12     |   SAF-T report dialog change: to provide possibility to select Contact person across companies |
 |      Norway          |   May 2020   | 10.0.12     |   SAF-T Name space declarations on each line instead of only on the header |
+|      Oman         |   July 2020      | 10.0.12H      |   Reverse charge |
+|      Poland          |   September 2020     | 10.0.14     |   Poland: JPK-V7M (VDEK) Excel format - to replace SSRS report  |
 |      Poland          |   May 2020     | 10.0.11     |   Split AP/AR realized exchange difference amount into exchange difference of invoice net value and of VAT amount  |
 |      Poland          |   May 2020     | 10.0.11     |   SAF Accounting books  – Posting layers filtering improvements |
 |      Poland          |   March 2020     | 10.0.11     |   JPK_VDEK supplemented pack I |
 |      Poland          |   May 2020     | 10.0.12     |   JPK_VDEK supplemented pack II |
 |      Poland          |   March 2020     | 10.0.11     |   Partial credit note for sales order with advance invoice |
 |      Poland          |   July 2020     | 10.0.13     |   Mandatory split payment enhancements |
+|      Qatar         |   July 2020      | 10.0.12H      |   Reverse charge |
+|      Russia          |   August 2020     | 10.0.14    |   Format of accounting reporting is changing starting from 2020 year  |
 |      Russia          |   July 2020     | 10.0.13    |   Depreciation calculation on the base of Acquisition cost and major repairs with applying the Depreciation bonus in Tax accounting  |
 
 

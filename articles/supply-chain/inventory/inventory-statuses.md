@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
+ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 # ROBOTS:
 audience: Application User
 # ms.devlang:

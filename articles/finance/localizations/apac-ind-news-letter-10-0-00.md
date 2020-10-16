@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed for APAC India GST Localization in 10.0.0 (April 2019)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.0.
+title: What's new or changed for India GST Localization in 10.0.0 (April 2019)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.0.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/15/2020
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 10.0.0
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.0 (April 2019)
+# What's new or changed for India GST Localization in 10.0.0 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.0 for APAC India GST localization.
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.0 for India GST localization.
 
 ## New configuration 
 The following configurations are available from the Shared Asset Library in Lifecycle Services (LCS) for use in version 10.0.0:
@@ -43,27 +43,27 @@ The following configurations are available from the Shared Asset Library in Life
  
 You can differentiate customer GST registration numbers from vendor GST registration numbers in tax setup.
 
-![](media/GST-registration-rate-setup-1-10-0-00.png)
+![Registration number type drop-down list](media/GST-registration-rate-setup-1-10-0-00.png)
 
 You can determine the tax rate based on invoice date for the purchase transactions, such as a purchase invoice.
 
-![](media/GST-invoice-date-rate-setup-2-10-0-00.PNG)
+![Tax rate based on invoice date](media/GST-invoice-date-rate-setup-2-10-0-00.PNG)
 
 You can create a non-GST transaction, which will be reflected in the Goods and Services Tax return (GSTR).
 
-![](media/GST-non-gst-transaction-3-10-0-00.png)
+![Tax information pane, Non-GST toggle](media/GST-non-gst-transaction-3-10-0-00.png)
 
 ## Import/export tax setup
 
 You can import and export tax setup for **Rate**, **Reverse charge percentage**, and **Load on inventory percentage**. 
 
-![](media/GST-import-export-tax-setup-4-10-0-00.png)
+![Import/export tax setup](media/GST-import-export-tax-setup-4-10-0-00.png)
 
 ## GTE designer enhancement
 
 You can multi-select lookup columns and search available columns.
 
-![](media/GST-gte-multi-select-5-10-0-00.png)
+![Available columns](media/GST-gte-multi-select-5-10-0-00.png)
 
 ## Critical fixes 
 

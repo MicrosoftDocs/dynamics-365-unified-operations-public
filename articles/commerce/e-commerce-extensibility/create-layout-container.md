@@ -5,7 +5,7 @@ title: Create a layout container module
 description: This topic describes how to create, test, and preview a layout container module.
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -203,7 +203,7 @@ To preview the page in a local web browser, follow these steps.
 
 [Create a new module](create-new-module.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 

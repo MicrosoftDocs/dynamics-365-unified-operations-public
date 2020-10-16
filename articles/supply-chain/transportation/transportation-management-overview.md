@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench
+ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
