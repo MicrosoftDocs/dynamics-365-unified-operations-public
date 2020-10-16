@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  WHSParameters,WHSRFMenuItem
+ms.search.form:  WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

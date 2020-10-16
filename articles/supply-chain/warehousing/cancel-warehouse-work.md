@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSTroubIeshootingSeIfService
+ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
