@@ -312,3 +312,10 @@ After the build is completed, deployable packages are generated as a zip file (R
 For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).
 
 LCS has a 300 MB limitation on the package size. If the package size is greater than 300 MB, LCS will not allow deploy the package. To reduce the size and deploy to RCSU, remove any of the self-service exes (ModernPOSSetup, StoreSystemSetup, or HardwareStationSetup installers). Unzip the package and remove any of the self-service exes and zip the package again. The self-service packages are not deployed to Cloud Commerce scale unit. Sync the self-service package to AOS following the steps in [Synchronize self-service installers in Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).
+
+## Upload Self-service installers to LCS and synchronize to Dynamics 365 Commerce
+
+After the Retail deployable package is generated, navigate to RetailSDK\Packages\RetailDeployablePackage\content.folder\RetailSelfService\Packages folder and upload all the self-service installers found in that folder to **LCS project > Asset library > Retail Self-service package** and then synchronize the package to Dynamics 365 Commerce by navigating to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters and select the Channel deployment tab > Check for package updates** to perform synchronization.
+
+Refer [Synchronize self-service installers in Dynamics 365 Commerce doc](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/synchronize-installers) for more detailed steps.
+
