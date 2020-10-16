@@ -90,9 +90,9 @@ You don't have to monitor or schedule data exports because the system keeps the 
 ## Troubleshooting common issues and errors
 
 ### Export to Data Lake feature is not available in your region and/or your environment at this time
-This feature is not available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.12 or higher.
+This feature is not available in Tier-1 (developer) environments. You need a sandbox environment (Tier 2 or higher) with Platform updates for version 10.0.13 or higher.
 
-This feature may not be available in all Azure regions where Finance and Operations apps are available, or this feature may not be available for your environment. If you would like access to this feature, send a mail to the feature team at **FnODataLakePreview@service.microsoft.com**. We are working to make this feature available soon.
+This feature is in limited preview and may not be available in all Azure regions where Finance and Operations apps are available, or this feature may not be available for your environment. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by completing the survey. You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. We are working hard to make this feature available soon.
 
 ### Export to Data Lake feature is currently being installed for your environment. Please check back later.
 Before you can use this feature, you need to configure the export to Data Lake. For more information, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
