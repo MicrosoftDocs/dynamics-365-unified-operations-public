@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.15 (December 2020)
+            href: get-started/whats-new-scm-10-0-15.md
           - name: Supply Chain Management 10.0.14 (November 2020)
             href: get-started/whats-new-scm-10-0-14.md
           - name: Supply Chain Management 10.0.13 (October 2020)
             href: get-started/whats-new-scm-10-0-13.md
-          - name: Supply Chain Management 10.0.12 (August 2020)
-            href: get-started/whats-new-scm-10-0-12.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -204,6 +204,10 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
       - name: Regulatory updates
         href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+      - name: India
+        items: 
+        - name: Stock transfer orders
+          href: ../finance/localizations/apac-ind-stock-transfer.md    
       - name: Russia
         items: 
         - name: Russia overview
@@ -1409,6 +1413,8 @@
           href: master-planning/supply-chain-calendars-master-planning.md
         - name: Improve master planning performance
           href: master-planning/master-planning-performance.md
+        - name: Improve scheduling engine performance
+          href: master-planning/scheduling-engine-performance.md
         - name: Master plans and multisite functionality
           items:
           - name: Master planning and multisite functionality overview
@@ -1729,6 +1735,8 @@
           href: procurement/purchase-agreements.md
         - name: Create a purchase agreement
           href: procurement/tasks/create-purchase-agreement.md
+        - name: Automatic allocation of charges
+          href: procurement/automatic-charges-allocation.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
         - name: Troubleshoot prices, discounts, agreements, and rebates
@@ -1941,6 +1949,8 @@
             href: pim/tasks/maintain-bom-product-configuration-model.md
           - name: Maintain a route for a product model
             href: pim/tasks/maintain-route-product-model.md
+          - name: Attribute-based sales prices for constraint-based product configuration
+            href: pim/attribute-based-product-configurator.md
           - name: Approve a product configuration model
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
@@ -2033,10 +2043,20 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
+          - name: Set up and use the production floor execution interface
+            items:
+            - name: Configure the production floor execution interface
+              href: production-control/production-floor-execution-configure.md
+            - name: Set up a device to run the production floor execution interface
+              href: production-control/production-floor-execution-setup.md
+            - name: How workers use the production floor execution interface
+              href: production-control/production-floor-execution-use.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md
+          - name: Provide mixed-reality Guides for workers in production
+            href: production-control/instruction-guides-in-production-overview.md
           - name: Reverse the production order status
             href: production-control/reverse-production-order-status.md
           - name: Visibility into material exceptions
@@ -2265,6 +2285,8 @@
           href: sales-marketing/tasks/ship-orders-direct-deliveries.md
         - name: Ship sales orders without warehousing
           href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+        - name: Automatic allocation of charges
+          href: procurement/automatic-charges-allocation.md
         - name: Create a purchase order from a sales order
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
@@ -2651,6 +2673,10 @@
             href: warehousing/batch-and-license-plate-confirmation.md
           - name: Enable license plate label printing
             href: warehousing/tasks/license-plate-label-printing.md
+          - name: Create transfer orders from the warehouse app
+            href: warehousing/create-transfer-order-from-warehouse-app.md
+          - name: Warehouse app event processing
+            href: warehousing/warehouse-app-events.md
           - name: Piece picking confirmation
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
@@ -2847,6 +2873,8 @@
             href: warehousing/pick-oldest-batch.md
           - name: Process guide framework
             href: warehousing/process-guide-framework.md
+          - name: Troubleshoot warehouse app connection issues
+            href: warehousing/troubleshoot-warehouse-app-connection.md
         - name: Upgrade and migration
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations

@@ -92,6 +92,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.15 (January 2021)
+            href: get-started/whats-new-commerce-10-0-15.md
           - name: Commerce 10.0.14 (November 2020)
             href: get-started/whats-new-commerce-10-0-14.md
           - name: Commerce 10.0.13 (October 2020)
@@ -708,6 +710,8 @@
           href: customer-orders-overview.md
         - name: Hybrid customer orders
           href: hybrid-customer-orders.md
+        - name: Recall order operation in POS
+          href: enhancedorderrecall.md
       - name: Sales orders   
         items:
         - name: Create a call center order 
@@ -782,8 +786,6 @@
         href: statement-posting-eod.md
       - name: Improved handling of batch tracked items
         href: batch.md
-      - name: Configure Commerce parameters that affect statements 
-        href: tasks/parameter-configurations-retail-statements.md
       - name: Configure payment method settings that affect retail statements 
         href: tasks/payment-configurations-retail-statements.md
       - name: Configure and run a job to calculate statements 
@@ -870,6 +872,8 @@
           href: document-states-overview.md
         - name: Work with publish groups
           href: publish-groups.md
+        - name: Enable and use cross-channel sharing
+          href: cross-channel-sharing.md
         - name: Brand your site and add store details
           items:
           - name: Add a logo
@@ -1096,6 +1100,8 @@
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+      - name: User-defined certificate profiles for retail stores
+        href: localizations/certificate-profiles-for-retail-stores.md
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
@@ -2190,6 +2196,8 @@
           href: dev-itpro/retail-server-extension.md
         - name: Retail Typescript and C# proxies
           href: dev-itpro/typescript-proxy-retail-pos.md
+        - name: Consume Retail Server APIs in external applications
+          href: dev-itpro/consume-retail-server-api.md
       - name: Commerce Runtime (CRT) extensibility
         items:
         - name: CRT architecture and configuration

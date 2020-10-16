@@ -245,7 +245,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 
-## [Task recorder](../../dev-itpro/user-interface/task-recorder.md)shortcuts 
+## [Task recorder](../../dev-itpro/user-interface/task-recorder.md) shortcuts 
 
 | To do this                                                                    | Press                      |
 |-------------------------------------------------------------------------------|----------------------------|

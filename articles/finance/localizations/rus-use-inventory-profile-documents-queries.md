@@ -83,13 +83,24 @@ When you post a purchase order invoice or product receipt, the system splits the
 
 6. Create a product receipt. You should see the following lines on the **Overview** and **Lines** FastTabs of the **Posting product receipt** page.
 
-    | **Overview**        |                            |                      | **Lines** |                       |              |
-    |---------------------|----------------------------|----------------------|-----------|-----------------------|--------------|
-    | **Product receipt** | **Vendor posting profile** | **Kind of activity** | **Item**  | **Inventory profile** | **Quantity** |
-    | PR1                 | GEN                        | Basic                | Item1     | GEN                   | 10           |
-    |                     |                            |                      | Item2     | MAT                   | 10           |
-    | PR2                 | COM                        | Commissioner         | Item3     | COM                   | 10           |
-    | PR3                 | Общий                      | Basic                | Item4     |                       | 10           |
+      - **Overview** FastTab
+
+        |   Product receipt   |  Vendor posting profile    |    Kind of activity  | 
+        |---------------------|----------------------------|----------------------|
+        | PR1                 | GEN                        | Basic                |
+        | PR2                 | COM                        | Commissioner         |
+        | PR3                 | Общий                      | Basic                |
+        
+     - **Lines** FastTab
+     
+        | Item      |   Inventory profile   |   Quantity   |
+        |-----------|-----------------------|--------------|
+        | Item1     | GEN                   | 10           |
+        | Item2     | MAT                   | 10           |
+        | Item3     | COM                   | 10           |
+        | Item4     |                       | 10           |
+    
+    
 
 7. Select **Post**. Three product receipts are generated. A similar split will be done for purchase order invoices.
 

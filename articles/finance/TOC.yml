@@ -70,6 +70,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.15 (January 2021)
+            href: get-started/whats-new-changed-10-0-15.md
           - name: Finance 10.0.14 (November 2020)
             href: get-started/whats-new-changed-10-0-14.md
           - name: Finance 10.0.13 (October 2020)
@@ -238,6 +240,8 @@
           href: accounts-payable/submit-invoice-workflow-automatically.md
         - name: View vendor invoice automation results
           href: accounts-payable/view-automated-vendor-invoice.md
+        - name: Vendor invoice entry workspace
+          href: accounts-payable/vendor-invoices-workspace.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
@@ -462,6 +466,8 @@
         href: accounts-receivable/tasks/process-collection-letters.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Customer aging report
+        href: accounts-receivable/customer-aging.md
       - name: Create a write-off journal for a customer
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Advanced notes management
@@ -804,6 +810,10 @@
           href: fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
           href: fixed-assets/straight-line-service-life-depreciation.md
+    - name: Asset leasing
+      items:
+      - name: Asset leasing get started
+        href: asset-leasing/asset-leasing-quick-start.md
     - name: General ledger
       items:
       - name: General ledger overview
@@ -1896,7 +1906,7 @@
           items:
           - name: India GST overview
             href: localizations/apac-ind-gst.md
-          - name: What's new or changed for APAC India GST localization
+          - name: What's new or changed for India GST localization
             items: 
             - name: What's new or changed in 10.0.0
               href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1924,6 +1934,8 @@
               href: localizations/apac-ind-news-letter-10-0-11.md
             - name: What's new or changed in 10.0.12
               href: localizations/apac-ind-news-letter-10-0-12.md
+            - name: What's new or changed in 10.0.13
+              href: localizations/ind-news-letter-10-0-13.md
           - name: India GST reference groups
             href: localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
@@ -2034,6 +2046,8 @@
               href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
           - name: Stock transaction
             items:
+            - name: Stock transfer orders
+              href: localizations/apac-ind-stock-transfer.md    
             - name: Stock transfer orders that have tax on the transfer price
               href: localizations/apac-ind-GST-stock-transfer-transactions.md
           - name: Customer payment transaction
@@ -2068,6 +2082,8 @@
             href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
           - name: Tax inquiry
             href: localizations/apac-ind-GST-tax-inquiry.md
+          - name: Clean up the TaxDocumentJSON table
+            href: localizations/gte-clean-up-tax-document-json-table.md
         - name: Tax engine
           items: 
           - name: Tax engine overview
@@ -2088,8 +2104,6 @@
             href: localizations/tax-engine-trouble-shooting.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
-        - name: Stock transfers
-          href: localizations/apac-ind-stock-transfer.md    
       - name: Italy
         items:
         - name: Italy overview
@@ -2641,7 +2655,7 @@
             - name: Inventory profile overview
               href: localizations/rus-inventory-profile-overview.md
             - name: Set up an inventory profile
-              hreF: localizations/rus-set-up-inventory-profile.md
+              href: localizations/rus-set-up-inventory-profile.md
             - name: Use an inventory profile in documents and queries
               href: localizations/rus-use-inventory-profile-documents-queries.md
         - name: Reporting

@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 273103
 ms.search.region: Belgium
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 

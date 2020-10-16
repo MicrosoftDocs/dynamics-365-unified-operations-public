@@ -7,6 +7,8 @@
       href: hr-admin-whats-new.md
     - name: October 6, 2020
       href: hr-whats-new-2020-10-06.md
+    - name: September 26, 2020
+      href: hr-whats-new-2020-09-26.md
     - name: September 16, 2020
       href: hr-whats-new-2020-09-16.md
     - name: September 3, 2020
@@ -219,6 +221,10 @@
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
     - name: Human Resources app in Teams
       href: hr-admin-teams-leave-app.md
+    - name: Prepare for go-live
+      href: hr-admin-go-live-prepare.md
+    - name: Go-live FAQ
+      href: hr-admin-go-live-faq.md
     - name: Documentation resources
       items:
       - name: Help system

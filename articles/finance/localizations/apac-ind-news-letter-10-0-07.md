@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: What's new or changed for APAC India GST Localization in 10.0.07 (January 2020)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.07.
+title: What's new or changed for India GST Localization in 10.0.07 (January 2020)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.07.
 author: prabhatb
-manager: Wangcheng
+manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
@@ -28,11 +28,11 @@ ms.dyn365.ops.version:
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.07 (January 2020) 
+# What's new or changed for India GST Localization in 10.0.07 (January 2020) 
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.07 for APAC India GST localization. 
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.07 for India GST localization. 
 
 ## New features
 ### Create tax component with pre-defined rules 
@@ -41,12 +41,12 @@ You can create a new component with pre-defined rules that support GST behaviors
 reverse charge for purchases and sales. With this feature, you do not need to create a tax component, which includes adding tax measures, configuring the tax calculation formula, and configuring a tax posting profile. 
 
 You can enable the feature in **Feature management** workspace. The feature name is **Enable creating tax component with pre-defined rules**.
- ![](media/GST-tax-component-pre-defined-rule-1-10-0-07.png )
+ ![Feature management, Enable creating tax component with pre-defined rules](media/GST-tax-component-pre-defined-rule-1-10-0-07.png )
  
  With the feature enabled, there are several controls enabled in the dialog box. You can use them to control the behavior 
  of the tax component. For more information, see [Create tax components](tax-engine-create-tax-component.md).
  
- ![](media/GST-Tax-component-pre-defined-2-10-0-07.PNG )
+ ![Tax component pane](media/GST-Tax-component-pre-defined-2-10-0-07.PNG )
  
 ## Critical fixes 
 

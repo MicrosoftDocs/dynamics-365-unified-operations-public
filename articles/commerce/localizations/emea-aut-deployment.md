@@ -17,12 +17,11 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria
 ms.search.industry: Retail
-ms.author: v-alexec
+ms.author: josaw
 ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
