@@ -67,7 +67,7 @@ For more information about how to import ER configurations, see [Download Electr
 
 1. Go to **Organization administration** \> **Organization** \> **Legal entities**.
 2. On the **Tax registration** FastTab, fill in company VAT number in **Tax registration number** field.
-3. On the **Registrationnumbers** FastTab, turn on the **Print Foretaksregisteret on sales documents** option for Norway.
+3. On the **Registration numbers** FastTab, turn on the **Print Foretaksregisteret on sales documents** option for Norway.
 4. On the **Bank account information** FastTab, 
   - Fill in company organization number in **Routing number** field.
   - Define company bank account in **Bank account** field.
@@ -75,6 +75,7 @@ For more information about how to import ER configurations, see [Download Electr
 > Company bank account must be preliminary set up in **Cash and bank management** > **Bank accounts** > **Bank accounts**.
 
 ### Configure Customer parameters
+
 
 ### Units of measure configuration
 
@@ -84,3 +85,8 @@ For more information about how to import ER configurations, see [Download Electr
 4. In **Value** section, in **Value** field, enter an external code will be used as international trade units of measure codes recommended by United Nations Economic Commission for Europe ([UN/ECE](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/)).
 
 ![Units of measure configuration](media/emea-nor-ger-units.jpg)
+
+### Sales tax codes transformation
+When generating electronic invoices, the rates of the sales tax codes are being analyzed and transformed to [UNCL5305-compliant codes](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/) according to the following logic:
+
+...
