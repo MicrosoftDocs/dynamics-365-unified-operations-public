@@ -2655,7 +2655,7 @@
             - name: Inventory profile overview
               href: localizations/rus-inventory-profile-overview.md
             - name: Set up an inventory profile
-              hreF: localizations/rus-set-up-inventory-profile.md
+              href: localizations/rus-set-up-inventory-profile.md
             - name: Use an inventory profile in documents and queries
               href: localizations/rus-use-inventory-profile-documents-queries.md
         - name: Reporting
