@@ -244,10 +244,10 @@ If your test environment doesn't allow for Remote Desktop access, then you must 
 
 Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
 
-   [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-23.png)
+![Users page in the target environment](./media/multi-user-test-local-23.png)
 
-   > [!NOTE]
-    > You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to use IISRESET.
+> [!NOTE]
+> You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to use IISRESET.
 
 ## Run multi-user testing by using a local test controller
 
