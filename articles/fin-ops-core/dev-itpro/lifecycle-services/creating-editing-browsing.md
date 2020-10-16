@@ -22,7 +22,7 @@ ms.custom: 13301
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: ntecklu
+ms.author: sericks
 ms.search.validFrom:
 ms.dyn365.ops.version: 2012
 

@@ -42,9 +42,8 @@ Both project forecasts and project budgets use forecast models to hold the proje
 
 Each method has its advantages. You should consider the following points before you select a method for your organization.
 
-|                           |                                          |                                                    |
+|        Method             |     Project forecasting                  |       Project budgeting                            |
 |---------------------------|------------------------------------------|----------------------------------------------------|
-|                           | **Project forecasting**                  | **Project budgeting**                              |
 | **Period allocation**     | You can't explicitly allocate transactions over a fiscal period. Instead, the forecast, and the control of the forecast, are based on the life of the project. Because forecasts are based on a specific date, you must infer the period from the date. | You can allocate transactions over the whole project or a fiscal period. If you allocate over a period, you can carry unused amounts forward to the next fiscal period. |
 | **Viewing transactions**  | You can view transactions in the forecast forms, where you see the forecasts for the whole company and for all projects, regardless of the hierarchy. To focus on a particular project, you must filter the data.                                       | You can view budgeted transactions for a single project hierarchy. Therefore, you can view transaction details for a parent project or its subprojects.                 |
 | **Transaction variables** | When you enter forecast transactions, you can use every attribute that exists for an actual transaction. This allows for greater detail in the forecast. For example, you can enter details for quantities, workers, items, or line properties.         | When you enter budget details, you can use only amounts, categories, and activities.                    |

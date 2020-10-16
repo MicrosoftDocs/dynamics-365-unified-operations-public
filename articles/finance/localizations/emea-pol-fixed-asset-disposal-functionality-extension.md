@@ -49,9 +49,8 @@ You can use a template for fixed asset disposal as an option to simplify setting
 2. In the **Disposal** section, click **Create template** and select a fixed asset posting profile.
 3. Complete the following fields
 
-   |                                 |                                                                                                                                             |
+   |                  Field          |                     Description                                                                                                             |
    |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-   |     <strong>Field</strong>      |                                                        <strong>Description</strong>                                                         |
    |      <strong>Book</strong>      |                           Select the book that you want to set up or update posting accounts for asset disposal.                            |
    |  <strong>Main account</strong>  |    The selected account will automatically be used as <strong>Main account</strong> in setup or update of accounts for disposal posting.    |
    | <strong>Offset account</strong> | The selected account will automatically be used as the <strong>Offset account</strong> in setup or update of accounts for disposal posting. |
