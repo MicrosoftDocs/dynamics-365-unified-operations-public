@@ -34,9 +34,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 
-## Overview
-
-Over the course of developing your e-Commerce online site, it may become necessary to develop and test scenarios for signed-in users. Rather then publishing these pages and testing against live pages, you can instead mock the signed-in state when running in developer mode.
+Over the course of developing your e-Commerce online site, it may become necessary to develop and test scenarios for signed-in users. Rather than publish these pages and test against live pages, you can instead mock the signed-in state when running in developer mode.
  
 ## Configure your Azure AD B2C tenant
 
@@ -51,19 +49,25 @@ To create a new ROPC flow, follow these steps.
 1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the global administrator of your Azure AD B2C tenant, and then select the **Azure AD B2C** service.
 1.	Select **User flows** and **New user flow**.
 1.	Select **Sign in using resource owner password credentials (ROPC)**, and then select **Create**.
-1.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name, as it will later be used as the `ropcUserFlowName` value in your credentials.json file.
+1.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name, as it will be used later as the `ropcUserFlowName` value in your credentials.json file.
 1.	Under **Application claims**, select **Show more**.
-1.	Select the application **"Display Name"**, **"Email Addresses"**,**"Given Name"**, **"Identity provider"**, **"SurName"**, and **"User’s object ID"** claims.
+1.	Select the following application claims: 
+  - **Display Name**
+  - **Email Addresses**
+  - **Given Name**
+  - **Identity provider**
+  - **SurName**
+  - **User’s object ID**
 1.	Select **OK**, and then select **Create**.
 1.	Select the new user flow, and then select **Run user flow**. 
 
-You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://**<B2C_TENANT>**.b2clogin.com **<LOGIN_DOMAIN>**/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Make note of the **<B2C_TENANT>** and **<LOGIN_DOMAIN>** values from the URL, since this information will later be used in your credentials.json file.
+You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://**<B2C_TENANT>**.b2clogin.com **<LOGIN_DOMAIN>**/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Note the **<B2C_TENANT>** and **<LOGIN_DOMAIN>** values from the URL, because this information will  be used later in your credentials.json file.
 
 In the following example image, the endpoint URL listed under **Run user flow** is ```https://rushmoreb2c.b2clogin.com/login.fabrikam.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
 
 ![Run user flow example](media/local-sign-in-01.png)
 
-From the example above, we can obtain values for the `ropcUserFlowName`, `loginDomain`, and `b2cTenant` properties as follows:
+From the example above, you can obtain values for the `ropcUserFlowName`, `loginDomain`, and `b2cTenant` properties as follows:
 
 | Property name | Example value |
 | ----------- | ----------- |
@@ -77,10 +81,10 @@ Next, you will create a native application meant to represent the Node applicati
  
 1.	In the **Azure AD B2C** settings, select **App Registrations**, and then select **New registration**.
 1.	Enter a name for the application, for example "Local_Node_App".
-1.	For **Supported account types**, select **"Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
+1.	For **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
 1.	For **Redirect URIs**, select **Public client/native (mobile & desktop)** from the drop-down list, and leave the URI as is.
 1.	Leave all other default values as is, and select **Register**.
-1.	Select the new application, and then copy and save the **Application (client) ID** value, as this ID will later be used as the `nativeApplicationId` property value in your credentials.json file.
+1.	Select the new application, and then copy and save the **Application (client) ID** value, as this ID will be used later as the `nativeApplicationId` property value in your credentials.json file.
 
     ![Local Node app](media/local-sign-in-02.png)
 
@@ -95,7 +99,7 @@ Next, you will create a native application meant to represent the Node applicati
 
 You have now created a new native application that will be used to represent your local Node application. 
 
-From the examples above, we have now obtained the following information:
+From the examples above, you have now obtained the following information:
 
 | Property name | Example value |
 | ----------- | ----------- |
@@ -112,7 +116,7 @@ From the examples above, we have now obtained the following information:
 
     ![Expose an API](media/local-sign-in-04.png)
 
-1.	Copy and save the full scope value, as this information will later be used as the `userImpersonationScopeURL` property value in your credentials.json file.
+1.	Copy and save the full scope value, as this information will be used late as the `userImpersonationScopeURL` property value in your credentials.json file.
 1.	Return to the native application you just created, and in the left navigation pane under **Manage**, select **API permissions**.
 1.	Select **Add a permission**, and then select the **APIs my organization uses** tab.
 1.	Search for your e-Commerce rendering application that was created above, and then select it and add **user_impersonation** as a permission.
@@ -120,7 +124,7 @@ From the examples above, we have now obtained the following information:
     ![API permissions](media/local-sign-in-05.png)
 
 1.	Select **Add permissions**.
-1.	Select **Grant admin consent for ...** (this name will contain your domain), and then select **Yes** to apply the consent. You should now see a green checkmark under **Status** for **user_impersonation**.
+1.	Select **Grant admin consent for** (this name will contain your domain), and then select **Yes** to apply the consent. You should now see a green checkmark under **Status** for **user_impersonation**.
  
 The Azure AD setup portion is now complete and you should now have your versions of all of the following example values.
 
@@ -134,7 +138,7 @@ The Azure AD setup portion is now complete and you should now have your versions
 
 ## Configure your Node application
 
-Once you have completed the steps to configure you Azure AD B2C tenant, you will need to create a credentials file in your online software development kit (SDK) Node application.
+After you have completed the steps to configure you Azure AD B2C tenant, you will need to create a credentials file in your online software development kit (SDK) Node application.
  
 The credentials will live under the `secrets/` directory in your Node application. Create a `secrets/` directory in your application if you haven't already, and then create a new file named `credentials.json` that is similar to the following example that uses the data gathered above.
 
@@ -172,9 +176,9 @@ After using the information collected in the Azure setup steps to populate your 
 
 ## Mock sign-in status
 
-Once all of the above configuration steps are complete, start up your e-Commerce Node application in local dev mode using the **yarn start** command. Sign-in status is controlled using the **mockUser** query parameter and works to mock the signed-in state on mock pages as well as on published pages (for example, ```https://localhost:4000?mock=homepage&mockUser=true``` or ```https://localhost:4000?mockUser=true```).
+After all of the above configuration steps are complete, start your e-Commerce Node application in local dev mode using the **yarn start** command. Sign-in status is controlled using the **mockUser** query parameter and works to mock the signed-in state on mock pages as well as on published pages (for example, ```https://localhost:4000?mock=homepage&mockUser=true``` or ```https://localhost:4000?mockUser=true```).
  
-Use **mockUser=\<true|false|name>** to control the signed-in behavior. The behavior of each of the query parameter values is described in the table below.
+Use **mockUser=\<true|false|name>** to control the signed-in behavior. The behavior of each of the query parameter values is described in the following table.
 
 | mockUser value	| Example	| Sign in/Sign out	| Description |
 | ---------------| ------- | ---------------- | ----------- |
@@ -184,7 +188,7 @@ Use **mockUser=\<true|false|name>** to control the signed-in behavior. The behav
 
 You can use the **mockUser** query parameter to test pages as different users without signing out and signing back in again for each different user. For example, hitting ```https://localhost:4000?mock=homepage&mockUser=true``` and then ```https://localhost:4000?mock=homepage&mockUser=test-user-1``` would allow you to test the homepage mock as different signed-in users.
  
-Once you hit a page with **mockUser** turned on and successfully sign in, the signed-in state will persist across pages until you either sign in with a different user or sign out.
+When you hit a page with **mockUser** turned on and successfully sign in, the signed-in state will persist across pages until you either sign in with a different user or sign out.
  
 You can also make use of the sign-in and sign-out buttons on the webpage itself to mock signed-in user behavior. The sign-in button will sign you in as the default user while the sign-out button will sign out the currently signed-in user.
 
