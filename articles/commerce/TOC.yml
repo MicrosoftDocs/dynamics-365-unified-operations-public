@@ -2034,6 +2034,8 @@
             href: e-commerce-extensibility/cookie-api-overview.md
           - name: Interactive components overview
             href: e-commerce-extensibility/interactive-components.md
+          - name: Mock the signed-in state during local development
+            href: e-commerce-extensibility/mock-sign-in.md 
           - name: Globalize modules by using the CultureInfoFormatter class
             href: e-commerce-extensibility/globalize-modules.md
         - name: Develop data actions
