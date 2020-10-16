@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 # ROBOTS:
 audience: Application User
 # ms.devlang:

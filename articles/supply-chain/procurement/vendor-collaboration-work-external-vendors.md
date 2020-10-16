@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
+ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
