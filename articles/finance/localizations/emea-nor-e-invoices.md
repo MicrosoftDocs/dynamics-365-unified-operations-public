@@ -76,6 +76,13 @@ For more information about how to import ER configurations, see [Download Electr
 
 ### Configure Customer parameters
 
+1. Go to **Accounts receivable** \> **Customers** \> **All customers** and select a required customer.
+2. On the **Invoice and delivery** FastTab:
+ - Enable generation of electronic invoices by turning on **eInvoice** option.
+ - Enable **eInvoice attachment** to include a PDF copy of a printable invoice in the electronic invoice as attachment.
+ - Enter Customer’s VAT exempt number in the **Tax exempt number** field.
+
+![Customer parameters](media/emea-nor-ger-customer.jpg)
 
 ### Units of measure configuration
 
