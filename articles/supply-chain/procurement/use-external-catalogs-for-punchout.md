@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchVendorPortalRequests
+ms.search.form: PurchVendorPortalRequests, CatExternalCatalogBasketWizard, CatExternalCatalogPunchoutDialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
