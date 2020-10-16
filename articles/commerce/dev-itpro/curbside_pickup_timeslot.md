@@ -3,7 +3,7 @@
 
 title: Create and update timeslots for 'Pickup' delivery mode(s).
 description: This topic describes how to create and update 'Timeslots' in Commerce Headquarters and enable them for the 'Pickup' delivery mode(s).
-author: josaw1
+author: anupamar-ms
 manager: AnnBe
 ms.date: 10/01/2020
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -41,6 +41,7 @@ The timeslot feature provides a way for retailers to define a time slot for item
 > This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
 
 The following image shows an example of timeslot selection during e-Commerce checkout.
+
 ![Example of timeslot selection during e-Commerce checkout](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## Timeslots 
@@ -49,24 +50,24 @@ A timeslot is a specific interval of time when a customer can choose to pick up 
 
 A timeslot can be defined using the following properties:
 
-**Mode of delivery**: This is the pickup mode of delivery that the timeslot applies to. 
+- **Mode of delivery**: Specifies the pickup mode of delivery that the timeslot applies to. 
 
-**Minimum and maximum**: This is the earliest and latest days that can be selected for pickup relative to the day that the order is placed. "Minimum" ensures there is enough time for the retailer to process the order before it's ready for pickup. "Maximum" ensures that the user cannot pick a date that is too far into the future. For example, with a minimum of "1", if an order is placed on September 20th, the earliest day available for pickup will be the next eligible day (September 21st). Similarly, you can also define a maximum number of days within which to pick up an order. With minimum and maximum values defined, a site user can only see and pick a certain set of days during their checkout experience. Minimum can be expressed in decimals ifn the value is less than 1 E.g. 4 hours should be represent as minimum value of 4 / 24 = 0.17. If Minimum value is higher than 1, it will be always rounded even if its a decimal. The value for the Maximum will always be rounded up. E.g. 1.2 will be rounded up to 2.
+- **Minimum and maximum**: Specifies the earliest and latest days that can be selected for pickup relative to the day that the order is placed. "Minimum" ensures there is enough time for the retailer to process the order before it's ready for pickup. "Maximum" ensures that the user cannot pick a date that is too far into the future. For example, with a minimum of "1", if an order is placed on September 20th, the earliest day available for pickup will be the next eligible day (September 21st). Similarly, you can also define a maximum number of days within which to pick up an order. With minimum and maximum values defined, a site user can only see and pick a certain set of days during their checkout experience. Minimum can be expressed in decimals ifn the value is less than 1 E.g. 4 hours should be represent as minimum value of 4 / 24 = 0.17. If Minimum value is higher than 1, it will be always rounded even if its a decimal. The value for the Maximum will always be rounded up. E.g. 1.2 will be rounded up to 2.
 
-**Start and end date**: Each timeslot entry has a start and end date. This provides the flexibility to add different timeslots throughout the year (for example, holiday hours). Once an order is placed, changing the start and end date on the timeslots will not apply to the existing order. When defining start and end dates, you must take into account store closure dates (for example, Christmas day), and ensure that a timeslot is not defined for these days.
+- **Start and end date**: Specifies the timeslot start and end date. Each timeslot entry has a start and end date, which provides the flexibility to add different timeslots throughout the year (for example, holiday hours). Once an order is placed, changing the start and end date on the timeslots will not apply to the existing order. When defining start and end dates, you must take into account store closure dates (for example, Christmas day), and ensure that a timeslot is not defined for these days.
 
-**Active hours of pickup**: This defines the time period withing which pickup is allowed (for example, you can define the pickup times to be between 2 PM and 5 PM every day). This allows the pickup times to be independent of store hours and allows a retailer to configure them for their specific business needs. When defining the active hours of pickup, you must ensure that store hours are taken into account and that pickup time is not defined for when the store is closed.
+- **Active hours of pickup**: Specifies the time period withing which pickup is allowed (for example, you can define the pickup times to be between 2 PM and 5 PM every day). This allows the pickup times to be independent of store hours and allows a retailer to configure them for their specific business needs. When defining the active hours of pickup, you must ensure that store hours are taken into account and that pickup time is not defined for when the store is closed.
 
 >[!NOTE]
 > The hours for the store pickup have to be defined in the timezone of the respective store.
 
-**Time interval**: This defines the time duration that can be allotted for each timeslot (for example, the time duration of each timeslot could be in increments of 15 minutes, 30 minutes, 1 hour, or some other duration).
+- **Time interval** - Specifies the time duration that can be allotted for each timeslot (for example, the time duration of each timeslot could be in increments of 15 minutes, 30 minutes, 1 hour, or some other duration).
 
-**Slots per interval**: This defines the number of orders that can be served in each time interval (for example, 1, 2, 3, or any whole number). This allows the retailer to define how many customers or orders they want to serve for pickup within a given time interval.
+- **Slots per interval** - Specifies the number of orders that can be served in each time interval (for example, 1, 2, 3, or any whole number). This allows the retailer to define how many customers or orders they want to serve for pickup within a given time interval.
 
-**Active days**: This defines the days during which the pick up timeslots are active (for example, Monday, Tuesday, Wednesday, Sunday, etc.). This allows retailers to define the days they want to support pickup orders.
+- **Active days** - Specifies the days during which the pick up timeslots are active (for example, Monday, Tuesday, Wednesday, Sunday, etc.). This allows retailers to define the days they want to support pickup orders.
 
-**Retail channel**: Each timeslot can be associated with one or more retail stores. Depending on each store's hours of operation, one or more timeslot entries can be created and associated with a channel. 
+- **Retail channel**: Specifies the retail channel(s). Each timeslot can be associated with one or more retail stores. Depending on each store's hours of operation, one or more timeslot entries can be created and associated with a channel. 
 
 ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG)
 
@@ -117,9 +118,10 @@ Below is an example of time slot selection in a POS order
 To enable timeslot selection on an e-commerce order, see Pickup information module for details. 
 
 > [!NOTE]
-> An e-Commerce checkout page has to be authored with the Pickup information module for a user to view/edit the pickup time slots. In the absence of the module, an order will be placed without the timeslot information. 
+> An e-Commerce checkout page has to be authored with the pickup information module for a user to view or edit the pickup timeslots. In the absence of the module, orders will be placed without specifying or viewing timeslot information. 
 
 The following image shows an example of an e-Commerce order with timeslot information selected for pickup.
+
 ![Example of an e-Commerce order with timeslot information selected for pickup](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG "eCommerce Timeslot Pickup")
 
 ## Additional resources
