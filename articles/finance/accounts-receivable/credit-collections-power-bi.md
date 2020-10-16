@@ -56,6 +56,9 @@ The following setup needs to be completed for data to display in **Customer cred
 4. Define exchange rates between transaction currencies and accounting currency, accounting currency, and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
 5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
 
+[!NOTE] 
+Aging period definitions must be setup in **Accounts receiveable parameters > Collections > Collections defaults** to enable aging data in the Power BI content.
+
 ## Accessing the Power BI content
 
 The **Credit and collections management** Power BI content is shown in the **Customer credit and collections** workspace.
