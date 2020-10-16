@@ -113,17 +113,17 @@ When generating electronic invoices, the rates of the sales tax codes are being 
  - Proj
  
 ## Export of customer electronic invoices
-###Sending of e-invoices
+### Sending of e-invoices
 When an invoice is posted you can generate an electronic invoice by clicking Send > Original button:
 ...
 
-###Inquiring of e-invoices
+### Inquiring of e-invoices
 The XML file with a generated electronic invoice can be then found in Electronic reporting jobs in Organization administration. To see the file click Show files button for the relevant job:
 ...
 Then click Open button to download the file with the electronic invoice:
 ...
 
-###Sending to ER destinations
+### Sending to ER destinations
 Alternatively, it is possible to setup Electronic reporting destinations for the e-invoice formats. In this case the output XML files with electronic invoices will be send to the defined destinations, Sharepoint folders, for example, right after posting of an invoice. It is necessary to turn on Print invoice parameter when posting and print to screen, if no paper copy is required.
 
-For more details about ER reporting destinations, please refer to: Electronic reporting (ER) destinations.
+For more details about ER reporting destinations, please refer to: [Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations).
