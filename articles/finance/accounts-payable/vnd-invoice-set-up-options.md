@@ -5,7 +5,7 @@ title: Setup options for vendor invoice automation (Preview)
 description: This topic describes the options that are available for setting up and configuring vendor invoice automation.
 author: abruer
 manager: AnnBe
-ms.date: 08/30/2020
+ms.date: 10/18/2020
 ms.topic: articl
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.14
 # Setup options for vendor invoice automation (Preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the options that are available for setting up and configuring vendor invoice automation. Invoice automation features use the following types of setup parameters:
 
