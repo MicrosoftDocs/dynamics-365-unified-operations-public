@@ -6,6 +6,10 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 
+ms.prod:
+ms.service: Dynamics365Operations
+ms.technology:
+
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
@@ -119,10 +123,6 @@ Find the right online training, in person workshops, and events for your role as
     [Microsoft Partner Sales and Marketing Learning Catalog](learning-catalog-partner-sales.md)
 
     [Get started](learning-catalog-partner-sales.md#get-started)
-
-    [Commerce](learning-catalog-partner-sales.md#commerce)
-
-    [e-Commerce](learning-catalog-partner-sales.md#e-commerce)
 
     :::column-end:::
 

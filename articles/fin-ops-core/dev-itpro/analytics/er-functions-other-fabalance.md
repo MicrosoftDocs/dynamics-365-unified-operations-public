@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FA_BALANCE">FA_BALANCE ER function</a>
+# FA_BALANCE ER function
 
 [!include [banner](../includes/banner.md)]
 

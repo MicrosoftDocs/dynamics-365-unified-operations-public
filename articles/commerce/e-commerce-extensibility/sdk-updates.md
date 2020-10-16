@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: SDK and core library updates
+title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 07/21/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# SDK and core library updates
+# SDK and module library updates
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ This topic covers regular updates that will be released as part of the Microsoft
 
 ## Overview
 
-Regular updates will be released as part of the Dynamics 365 Commerce online SDK and store starter kit (SSK). These updates might include new features or product fixes. Product release notes will be provided for all changes.
+Regular updates will be released as part of the Dynamics 365 Commerce online SDK and module library. These updates might include new features or product fixes. Product release notes will be provided for all changes.
 
 ## Dependency versions in the packages.json file
 
@@ -81,7 +81,8 @@ The following table maps SSK versions to Commerce Scale Unit versions. The same 
 | --------------- | --------------- |
 | 10.0.10 | 9.20.x |
 | 10.0.11 | 9.21.x |
-| 10.0.12 (not live yet) | 9.22.x |
+| 10.0.12 | 9.22.x |
+| 10.0.13 (not live yet) | 9.23.x |
 
 ## Pull updates
 
@@ -106,6 +107,14 @@ To determine the deployed versions of the SDK, SSK, and Retail Server proxy that
 - **commerceSDKVersion** – The SDK version.
 - **commerceSSKVersion** – The SSK version.
 - **retailServerProxyVersion** – The Retail Server proxy version.
+
+## Update the app.settings.json file
+
+In the SDK **/src/settings** directory, there's a file called **app.settings.json**. This file surfaces global settings to Commerce site builder that are used by the module library set of modules and can contain additional settings for custom modules. The settings are located in site builder at **Site Settings \> Extensions**. 
+
+When upgrading the module library, there may be new settings that are applicable and need to be added manually. The latest app.settings.json file can be found in the [online SDK GitHub settings directory](https://github.com/microsoft/Msdyn365.Commerce.Online/tree/master/src/settings). This file contains settings for the latest available module library. If you haven't made any additions to the app.settings.json file, you can copy the contents of this file to your version or do a diff and merge the new settings manually. If you're updating to an older module library, you can find the specific app.settings.json file under the specific build branch located on the [GitHub branches page](https://github.com/microsoft/Msdyn365.Commerce.Online/branches). You'll need to manually merge the contents to your app.settings.json file.
+
+When a local configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, the local app.settings.json file updates will be included. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS). You will then see the new settings in the site builder tool.
 
 ## Additional resources
 

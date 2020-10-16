@@ -2,10 +2,10 @@
 # required metadata
 
 title: Financial reporting overview
-description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
+description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Financial reporting overview
+# Get started with Financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -93,7 +93,7 @@ After a user is added or a role is changed, the user should be able to access fi
 Users who generate a report can delete their own reports. Users with the **Maintain financial reporting security** duty can delete other's reports. 
 
 In release 10.0.8, the concept of expiration dates was introduced. A new required feature is enabled in the **All** page within the feature management workspace. The **Financial report retention policies** feature contains the following changes:
-* Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated
+* Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated.
 * Any existing reports from before the feature was installed will be given a 90-day expiration period. The date may show as blank for a short period of time until the financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
 * Users with **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available: 
   * An expiration of 90 days.
@@ -139,6 +139,12 @@ When you select the **Financial reporting** menu, the list of default financial 
 ## Creating and modifying financial reports
 From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by selecting **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Dynamics 365 Finance. 
 
+## Reporting tree definitions 
+One of the components that's used to build financial reports is a reporting tree definition. A reporting tree definition helps define the structure and hierarchy of your organization. It's a cross-dimensional hierarchical structure that is based on the dimensional relationships in your financial data. It provides information at the reporting unit level and at a summary level for all units in the tree.
+
+You can create an unlimited number of reporting trees to display your organization’s data in various ways. Each reporting tree can contain any combination of departments and summary units, but a report definition can link to only one reporting tree at a time. 
+
+
 ## Troubleshooting issues opening Report Designer
 There are a few common issues that can cause problems when you open Report Designer. Those issues and the steps to resolve them are as follows.
 
@@ -147,9 +153,7 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
-* Workstations are required to install Visual Studio .NET 4.6.2 or higher.
-
-This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Workstations are required to install Microsoft .NET Framework 4.6.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
 * If you use the Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode. If you are unable to sign in with Chrome, try following the setup steps described in Issue 1 using Internet Explorer or Edge. 
 
 Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
@@ -160,10 +164,11 @@ Issue 2: The user hasn't been assigned the required permissions to use Financial
   If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial Reporting. 
 * It may be possible that another error has prevented **Dynamics user to Financial Reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
 
-Issue 3: You can proceed past the ClickOnce Report Designer signin page, but are unable to complete sign in within Report Designer. 
+Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but are unable to complete sign in within Report Designer. 
 
-* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial Reporting server. If there is a difference of more than five minutes, the system will not allow signin. 
+* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial Reporting server. If there is a difference of more than five minutes, the system will not allow sign in. 
 * In this case, we recommend enabling the Windows option to set your PC's time automatically. 
 
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
+- [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

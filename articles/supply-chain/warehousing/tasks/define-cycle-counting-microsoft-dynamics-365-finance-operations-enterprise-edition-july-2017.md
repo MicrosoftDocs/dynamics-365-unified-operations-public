@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology:  
  
 # optional metadata 
- 
-ms.search.form: WHSParameters,WHSRFMenu,WHSRFMenuItem,WHSCycleCountPlan,WHSCycleCountPlanListPage,WHSCycleCountThreshold
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
 manager: AnnBe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -130,7 +130,7 @@ Commerce digital asset management extends the content management store, and keep
 
 #### Web storefront
 
-The CMS stores its pages as a series of modules. The storefront web server assembles those modules into a rendered HTML page. The web storefront is composed of the rendering platform, the commerce data proxy, and the extensibility layer. Those components form a base that is supplemented by a set of modules that power a web-based commerce experience, the Dynamics 365 Commerce starter kit. The initial starter kit can be modified to meet each business's unique requirements. Alternatively, it can be supplemented by extensions and modules that are developed by a partner.
+The CMS stores its pages as a series of modules. The storefront web server assembles those modules into a rendered HTML page. The web storefront is composed of the rendering platform, the commerce data proxy, and the extensibility layer. Those components form a base that is supplemented by a set of modules that power a web-based commerce experience, the Dynamics 365 Commerce module library. The initial module library can be modified to meet each business's unique requirements. Alternatively, it can be supplemented by extensions and modules that are developed by a partner.
 
 ### Commerce surround services
 

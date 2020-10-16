@@ -5,7 +5,7 @@ title: Calculation of tax exemption
 description: This topic describes functionality for tax exemption calculations in the point of sale (POS) and call center. 
 author: rubendel
 manager: annbe
-ms.date: 07/13/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -45,7 +45,7 @@ This topic describes functionality for tax exemption calculations in the point o
 
 ## Adjust prices for tax exemptions when the price includes tax
 
-Microsoft Dynamics 365 Commerce version 10.0.13 and later include a **Calculate price inclusive tax exempt** option. If this option is set to **Yes**, prices in tax-inclusive scenarios are adjusted when the transaction or specific taxes in the transaction should be exempted. When store-based taxes are used, you can apply these exemptions by using tax overrides. When customer-based taxes are used at the store, the exemptions are automatically applied based on the customer's tax settings.
+Microsoft Dynamics 365 Commerce version 10.0.13 and later includes a feature called **Enable tax exemption for the 'price includes sales tax' scenario**. When this feature is enabled, an option called **Calculate price inclusive tax exempt** appears on the **General** FastTab for store and call center settings. If this option is set to **Yes**, prices in tax-inclusive scenarios are adjusted when the transaction or specific taxes in the transaction should be exempted. When store-based taxes are used, you can apply these exemptions by using tax overrides. When customer-based taxes are used at the store, the exemptions are automatically applied based on the customer's tax settings.
 
 This setting is also supported for orders that are created in the call center and stores.
 

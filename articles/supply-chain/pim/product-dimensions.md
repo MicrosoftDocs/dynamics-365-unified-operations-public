@@ -3,9 +3,9 @@
 
 title: Product dimensions
 description: There are five product dimensions - color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
-author: cvocph
+author: t-benebo 
 manager: tfehr
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,7 +26,7 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
 
@@ -113,7 +113,7 @@ When you're testing your solutions for compatibility with the version dimension,
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Maps:** If any maps use the inventory dimensions, the corresponding relation mapping to these maps must be updated so that they include the version dimension. In the extended model or table extensions, look out for tables where the fields include inventory dimensions.
-1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the point of sale (POS) applications. This behavior resembles the current behavior of the config dimension throughout Commerce.
+1. **Microsoft Dynamics 365 Commerce functionality:** After it's turned on, the version dimension will appear throughout the Commerce-specific code in Dynamics 365 Supply Chain Management. However, the version dimension isn't yet supported by the Commerce channel database or in the Point of Sale (POS) or e-Commerce applications. These Commerce-specific applications won't support users selling/shipping or returning/receiving inventory by version dimension. Inventory availability lookup functions won't discern inventory by version dimension in Commerce apps. This behavior resembles the current behavior of the config dimension throughout Commerce.
 
 #### Turn on the version dimension
 

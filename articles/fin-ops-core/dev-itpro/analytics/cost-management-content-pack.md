@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 

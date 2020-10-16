@@ -82,6 +82,9 @@ The example scenario requires that you prepare two location profiles.
 
 1. Repeat steps 3 through 4 for the **PICK-06** profile.
 
+> [!NOTE]
+> When the parameters on the location profile (**Enable item in location**, **Enable location activity**, **Enable location status**) are set to *Yes*, the system immediately updates the relevant locations by executing the *warehouse location status consistency check* job.
+
 ### Scenario
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.

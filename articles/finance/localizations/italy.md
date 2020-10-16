@@ -5,7 +5,7 @@ title: Italy overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Italy. 
 author: kfend
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,6 +51,7 @@ This topic provides links to documentation resources for Italy.
 - [Posting invoices with zero amounts](emea-ita-exil-zero-invoice-posting.md)
 - [Bank data usability enhancement](emea-ita-exil-bank-accounts-setup.md)
 - [Miscellaneous charges per kilogram in an Intrastat declaration](emea-ita-exil-misc-charges-intrastat.md)
+- [Advanced notes management](emea-ita-exil-structured-notes.md)
 - [Intent letters - Invoicing of usual exporters](emea-ita-exil-intent-letter.md)
 - [Tax invoice for goods delivered for free](emea-ita-exil-goods-for-free.md)
 - [Improved inquiry on debit or credit settlements](emea-ita-exil-improved-inquiry-settlement.md)
@@ -59,3 +60,5 @@ This topic provides links to documentation resources for Italy.
 - [Configurable posting profiles for banks and remittance types](emea-ita-exil-bank-remittance.md)
 - [Unique certification](emea-ita-exil-unique-certification.md)
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
+- [Tax plafond](emea-ita-exil-tax-plafond.md)
+- [Customer electronic invoices](emea-ita-e-invoices.md)

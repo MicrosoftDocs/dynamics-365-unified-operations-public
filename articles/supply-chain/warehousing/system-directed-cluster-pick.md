@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form: WHSClusterProfile
+ms.search.form: WHSWorkCluster, WHSClusterProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

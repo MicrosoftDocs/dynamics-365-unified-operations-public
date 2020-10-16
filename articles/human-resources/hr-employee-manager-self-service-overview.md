@@ -5,7 +5,7 @@ title: Employee and Manager self-service overview
 description: This article provides an overview of the employee and manager self service workspace.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -37,6 +37,25 @@ This article provides an overview of the employee and manager self service works
 ## Edit personal details
 
 If you need to add or change any personal information, see [Edit personal information](hr-employee-manager-self-service-edit-personal-information.md).
+
+## User not assigned to a worker record
+
+If you haven't linked your user to a **Worker** record in the **Users** page, the following message will display:
+
+**Your user ID is not associated with your employee record in the system. You won't be able to view or update your information until it is. Contact your manager or support team for assistance.**
+
+To associate a user with a **Worker** record, navigate to **Users** and select the user. Select **Edit**, add the corresponding worker in the **Person** field on the form, and the select **Save**. You should now have access to Employee self service.
+
+## Security requirements for Employee and Manager self service
+
+Employee and Manager self service require two security roles:
+
+- Employees require the Employee role.
+- Managers require both the Employee and Manager roles.
+
+>[!NOTE]
+>You can also use custom roles to access Employee and Manager self service as long as they've been granted access to Employee and Manager workspaces.<br>
+>Manager access to employee information is based on the current position line hierarchy defined in Human Resources.
 
 ## Employee self service
 

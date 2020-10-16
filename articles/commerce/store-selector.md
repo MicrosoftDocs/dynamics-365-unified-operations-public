@@ -5,7 +5,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -32,7 +32,6 @@ ms.dyn365.ops.version:
 # Store selector module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -69,7 +68,7 @@ For this scenario to work, products should be configured so that the **pickup** 
 
 The following image shows an example of a store selector module used on a PDP.
 
-![Example of a store selector module](./media/BOPIS.PNG)
+![Example of a store selector module used on a PDP](./media/BOPIS.PNG)
 
 ## Find stores mode
 
@@ -77,7 +76,7 @@ The store selector module also supports a **Find stores** mode. This mode can be
 
 The following illustration shows an example of a store selector module that is used together with a map module on a store locations page.
 
-![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
+![Example of a store selector module and a map module on a store locations page](./media/ecommerce-Storelocator.PNG)
 
 ## Render a map
 
@@ -131,7 +130,7 @@ To configure the store selector module to show available stores for a store loca
  
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Buy box module](add-buy-box.md)
 

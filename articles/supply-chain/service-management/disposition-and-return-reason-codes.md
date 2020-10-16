@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReturnTableListPage
+ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

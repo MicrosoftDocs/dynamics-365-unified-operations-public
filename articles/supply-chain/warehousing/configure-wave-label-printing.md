@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod
 # ROBOTS:
 audience: Application User
 # ms.devlang:

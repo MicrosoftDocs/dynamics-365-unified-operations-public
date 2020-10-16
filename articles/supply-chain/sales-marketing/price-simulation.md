@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SalesQuotationPriceSimulation
+ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

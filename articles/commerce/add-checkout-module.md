@@ -5,7 +5,7 @@ title: Checkout module
 description: This topic describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Checkout module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to add a checkout module to a page and set the required properties.
 
@@ -102,8 +101,8 @@ Most of the checkout information, such as the shipping address and shipping meth
 To add a checkout module to a new page and set the required properties, follow these steps.
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
-1. In the **New page fragment** dialog box, select the **Checkout** module.
-1. Under **Page fragment name**, enter the name **Checkout fragment**, and then select **OK**.
+1. In the **New fragment** dialog box, select the **Checkout** module.
+1. Under **Fragment name**, enter the name **Checkout fragment**, and then select **OK**.
 1. Select the **Checkout module** slot.
 1. In the properties pane on the right, select the pencil symbol, enter heading text in the field, and then select the check mark symbol.
 1. In the **Checkout Information** slot, select the ellipsis (**...**), and then select **Add Module**.

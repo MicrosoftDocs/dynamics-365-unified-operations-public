@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form:  WHSLocationProfile,WHSLocDirTable
+ms.search.form:  WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

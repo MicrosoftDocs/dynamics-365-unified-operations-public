@@ -5,7 +5,7 @@ title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -71,7 +71,7 @@ Module names are case-insensitive. We recommended that you use whole words for m
 ## Additional resources
 [CLI command reference](cli-command-reference.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 

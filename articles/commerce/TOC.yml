@@ -68,6 +68,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+        - name: Commerce Data Exchange implementation guidance
+          href: dev-itpro/implementation-considerations-cdx.md
         - name: Finance and Operations apps operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations apps in France
@@ -90,12 +92,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.14 (November 2020)
+            href: get-started/whats-new-commerce-10-0-14.md
           - name: Commerce 10.0.13 (October 2020)
             href: get-started/whats-new-commerce-10-0-13.md
           - name: Commerce 10.0.12 (August 2020)
             href: get-started/whats-new-commerce-10-0-12.md
-          - name: Commerce 10.0.11 (July 2020)
-            href: get-started/whats-new-commerce-10-0-11.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -174,11 +176,11 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
-        - name: Grid capabilites
+        - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-        - name: Embed PowerApps apps
+        - name: Embed canvas apps from Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -202,8 +204,14 @@
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
           href: dev-itpro/retail-in-store-topology.md
-        - name: Commerce Data Exchange and commerce channel communications
-          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: Commerce Data Exchange
+          items:
+          - name: Commerce Data Exchange best practices
+            href: dev-itpro/CDX-Best-Practices.md
+          - name: Commerce Data Exchange and commerce channel communications
+            href: dev-itpro/define-retail-channel-communications-cdx.md
+          - name: Commerce Data Exchange troubleshooting
+            href: dev-itpro/CDX-Troubleshooting.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Online store publishing architecture
@@ -234,7 +242,7 @@
           href: retail-hardware-station-configuration-installation.md
         - name: Mass deployment of self-service components
           href: dev-itpro/retail-mass-deployment.md
-        - name: Retail component events for diagnostics and troubleshooting
+        - name: Commerce component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
         - name: Apply a deployable package
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -414,7 +422,7 @@
               href: pos-sales-groups-track-commissions.md
           - name: Device activation
             items:
-            - name: Configure, install and activate MPOS
+            - name: Configure, install, and activate MPOS
               href: retail-modern-pos-device-activation.md
             - name: Set up extended logon functionality for MPOS and Cloud POS
               href: extended-logon.md
@@ -516,11 +524,15 @@
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
+          - name: Omni-channel Commerce order payments
+            href: dev-itpro/commerce-payments.md
+          - name: Process credit cards without a hardware station
+            href: dev-itpro/cnp-pos.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
-    - name: Merchandizing your products and services  
+    - name: Merchandising your products and services  
       items:
       - name: Categories, products, and assortments 
         items:
@@ -536,7 +548,7 @@
             href: create-product-hierarchy.md
           - name: Manage product categories and products 
             href: category-management-product-creation.md
-          - name: Change the sort order for merchandizing entities 
+          - name: Change the sort order for merchandising entities 
             href: custom-order-categories-nav-retail-prod-hierarchy.md
         - name: Product dimensions 
           items:
@@ -690,7 +702,7 @@
       items:
       - name: Customer orders
         items:
-        - name: Customer orders in MPOS
+        - name: Customer orders in Point of Sale (POS)
           href: customer-orders-overview.md
         - name: Hybrid customer orders
           href: hybrid-customer-orders.md
@@ -758,11 +770,9 @@
         href: disable-consistency-check-rule.md
       - name: Edit and audit retail store transactions
         href: edit-audit-retail-transactions.md
-      - name: Create, calculate and post statements for a retail store
-        href: tasks/create-calculate-post-statement-retail-store.md
       - name: Trickle feed-based order creation for retail store transactions 
         href: trickle-feed.md
-      - name: Create, calculate and post statements for a retail store 
+      - name: Create, calculate, and post statements for a retail store 
         href: tasks/create-calculate-post-statement-retail-store.md
       - name: Financial reconciliation in retail stores
         href: fin-recon.md
@@ -818,6 +828,8 @@
           href: custom-pages-user-logins.md
         - name: Configure multiple B2C tenants in a Commerce environment
           href: configure-multi-B2C-tenants.md
+        - name: Domains in Dynamics 365 Commerce
+          href: domains-commerce.md
         - name: Add support for a content delivery network (CDN)
           href: add-cdn-support.md
         - name: Enable location-based store detection
@@ -942,9 +954,9 @@
           href: add-privacy-page.md
         - name: Replace user IDs associated with tracked content changes
           href: replace-IDs-tracked-changes.md
-      - name: Starter kit
+      - name: Module library
         items: 
-        - name: Starter kit overview
+        - name: Module library overview
           href: starter-kit-overview.md
         - name: Container modules
           items:
@@ -982,6 +994,8 @@
             href: media-gallery-module.md
           - name: Ratings and reviews modules
             href: ratings-reviews-modules.md
+          - name: Social share module
+            href: social-share-module.md
         - name: Purchase modules
           items:
           - name: Cart module
@@ -1018,6 +1032,12 @@
           items:
           - name: Breadcrumb module
             href: add-breadcrumb.md
+          - name: Navigation menu module
+            href: nav-menu-module.md
+        - name: Compliance modules
+          items:
+          - name: Cookie consent module
+            href: cookie-consent-module.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
@@ -1130,13 +1150,13 @@
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-      - name: Personalization options with PowerBI.com
+      - name: Personalization options with Power BI
         items:
-        - name: Features available through PowerBI.com integration
+        - name: Features available through the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-        - name: Pin PowerBI.com content
+        - name: Pin Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-        - name: Select analytical workspaces from PowerBI.com
+        - name: Select analytical workspaces from Power BI
           href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
       - name: Power BI content
         items:
@@ -1188,7 +1208,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
         - name: Resolve issues after Entity store maintenance
           href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-        - name: Configure PowerBI.com integration
+        - name: Configure the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
         - name: Bring your own database
           href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -1202,7 +1222,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
         - name: Add financial dimensions to aggregate measurements
           href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-        - name: Create analytical reports using PowerBI Desktop
+        - name: Create analytical reports using Power BI Desktop
           href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json 
         - name: Add analytics to workspaces by using Power BI Embedded
           href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1644,9 +1664,9 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
         - name: Defer execution of ER format elements
           items: 
-          - name: Defer execution of a sequence element
+          - name: Defer the execution of sequence elements in ER formats
             href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-          - name: Defer execution of a XML element
+          - name: Defer the execution of XML elements in ER formats
             href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
       - name: Use Electronic reporting solutions in Finance and Operations
         items: 
@@ -1954,7 +1974,7 @@
           items:
           - name: Create a new module
             href: e-commerce-extensibility/create-new-module.md 
-          - name: Clone a starter kit module
+          - name: Clone a module library module
             href: e-commerce-extensibility/clone-starter-module.md
           - name: Add module configuration fields
             href: e-commerce-extensibility/add-module-config-fields.md
@@ -2048,7 +2068,7 @@
           items:
           - name: Package configurations and deploy them to an online environment
             href: e-commerce-extensibility/package-deploy.md
-          - name: SDK and core library updates
+          - name: SDK and module library updates
             href: e-commerce-extensibility/sdk-updates.md
       - name: Retail SDK
         items:
@@ -2134,14 +2154,8 @@
           href: dev-itpro/hardware-device-extension.md
       - name: Retail Server extensibility
         items:
-        - name: Extend a Commerce Scale Unit OData controller
-          href: dev-itpro/extend-retail-server-odata-controller.md
         - name: Commerce Scale Unit customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Extend the default Commerce Scale Unit metadata controller
-          href: dev-itpro/extend-metadata.md
-        - name: Call the CRT service in offline mode
-          href: dev-itpro/call-crt-service-offline.md
         - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and later)
           href: dev-itpro/retail-server-icontroller-extension.md
         - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)
@@ -2156,16 +2170,12 @@
           href: dev-itpro/crt-services.md
         - name: CRT and Retail Server extensibility
           href: dev-itpro/commerce-runtime-extensibility.md
-        - name: Add customer preference data to channel databases
-          href: dev-itpro/add-customer-preference-channel.md
         - name: Manage secrets for Retail channels
           href: dev-itpro/manage-secrets.md
         - name: CRT extensibility and triggers
           href: dev-itpro/commerce-runtime-extensibility-trigger.md
         - name: Block transactions using triggers
           href: dev-itpro/trigger-example-blocking-transaction.md
-        - name: Implement a return policy using triggers
-          href: dev-itpro/trigger-example-return-policy.md
         - name: Loyalty extension
           href: dev-itpro/retail-sdk/loyalty-extension-sample.md
         - name: Extension points for packing slips
@@ -2196,6 +2206,8 @@
           href: https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf
         - name: Deploy payment connectors
           href: dev-itpro/deploy-payment-connector.md
+        - name: Incremental capture for back-office invoicing
+          href: dev-itpro/incremental-capture.md
         - name: Create custom localized error messages for payment terminal extensions
           href: dev-itpro/payment-custom-error-messages.md
         - name: Create Windows installers for payment connectors

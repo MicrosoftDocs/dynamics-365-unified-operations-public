@@ -5,7 +5,7 @@ title: Add a favicon
 description: This topic explains how to add a favicon to your site.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -62,30 +62,30 @@ To create the HTML for the favicon, use the following HTML string. For the **hre
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## Create a page fragment that contains a metatag for your favicon
+## Create a fragment that contains a metatag for your favicon
 
-To create a page fragment that contains a metatag for your favicon, follow these steps.
+To create a fragment that contains a metatag for your favicon, follow these steps.
 
 1. Go to **Fragments**, and select **New**.
-1. In the **New page fragment** dialog box, select **Metatags** as the module that the page fragment is based on.
-1. Enter a name for the page fragment, and then select **OK**.
+1. In the **New fragment** dialog box, select **Metatags** as the module that the fragment is based on.
+1. Enter a name for the fragment, and then select **OK**.
 1. In the fragment hierarchy tree, select the **Default metatags** child.
 1. In the right pane, under **Meta Tags**, select **Add**, and then enter the HTML string that you created earlier for the favicon. 
-1. Select **Finish editing**, and then select **Publish** to publish the page fragment.
+1. Select **Finish editing**, and then select **Publish** to publish the fragment.
 
-## Add the metatag page fragment to the HTML head section of your pages
+## Add the metatag fragment to the HTML head section of your pages
 
-To add the metatag page fragment to the HTML **head** section of your pages, follow these steps.
+To add the metatag fragment to the HTML **head** section of your pages, follow these steps.
 
 1. Go to **Templates**, open the template for the pages that you want to add your favicon to, and then select **Edit**.
-1. In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add page fragment**.
-1. In the **Select page fragment** dialog box, select the metatag page fragment that you created earlier, and then select **OK**.
+1. In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add fragment**.
+1. In the **Select fragment** dialog box, select the metatag fragment that you created earlier, and then select **OK**.
 1. Select **Finish editing**, and then select **Publish** to publish the template.
 
 > [!NOTE]
-> If your site uses more than one template, you must add the metatags page fragment to all of them.
+> If your site uses more than one template, you must add the metatags fragment to all of them.
 
-When you preview pages that are based on the template that you added the metatags page fragment to, you should now see the favicon on the browser tab.
+When you preview pages that are based on the template that you added the metatags fragment to, you should now see the favicon on the browser tab.
 
 ## Additional resources
 

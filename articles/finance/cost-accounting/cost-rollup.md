@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
+ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

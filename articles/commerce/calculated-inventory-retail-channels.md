@@ -5,7 +5,7 @@ title: Calculate inventory availability for retail channels
 description: This topic describes the options that are available for showing the on-hand inventory for the store and online channels.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -111,6 +111,8 @@ To ensure the best possible estimate of inventory, it's critical that you use th
 - **Post transactional statements in batch** – This job is also required for trickle feed posting. It follows the **Calculate transactional statements in batch** job. This job systematically posts the calculated statements, so that sales orders for cash-and-carry sales are created in Commerce Headquarters and Commerce Headquarters more accurately reflects your store's inventory.
 - **Product availability** – This job creates the snapshot of inventory from Commerce Headquarters.
 - **1130 (Product availability)** – This job is found on the **Distribution schedules** page and should be run immediately after the **Product availability** job. This job transports the inventory snapshot data from Commerce Headquarters to the channel databases.
+
+It's recommended that you don't run those batch jobs too frequently (every few minutes). Frequent runs will overload Commerce headquarters (HQ) and can potentially impact performance. In general, it's good practice to run product availability and 1130 jobs on an hourly basis, and schedule P-job, synchronize orders, and trickle feed posting-related jobs with the same or higher frequency.
 
 > [!NOTE]
 > For performance reasons, when channel-side inventory availability calculations are used to make an inventory availability request using the e-Commerce API's or the new POS channel-side inventory logic, the calculation uses a cache to determine whether enough time has passed to justify running the calculation logic again. The default cache is set to 60 seconds. For example, you turned on channel-side calculation for your store and viewed the on-hand inventory for a product on the **Inventory lookup** page. If one unit of the product is then sold, the **Inventory lookup** page won't show the reduced inventory until the cache has been cleared. After users post transactions in POS, they should wait 60 seconds before they verify that the on-hand inventory has been reduced.

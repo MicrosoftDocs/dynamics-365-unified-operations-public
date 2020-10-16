@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.09
 
 ---
 
-# <a name="PowerBIDestinationType">Power BI destination</a>
+# Power BI destination
 
 [!include [banner](../includes/banner.md)]
 

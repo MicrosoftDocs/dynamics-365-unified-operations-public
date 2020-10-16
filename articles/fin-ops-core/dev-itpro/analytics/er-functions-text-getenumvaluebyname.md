@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="GETENUMVALUEBYNAME">GETENUMVALUEBYNAME ER function</a>
+# GETENUMVALUEBYNAME ER function
 
 [!include [banner](../includes/banner.md)]
 

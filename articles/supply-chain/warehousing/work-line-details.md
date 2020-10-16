@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form:  WHSWorkLineDetails
+ms.search.form:  WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

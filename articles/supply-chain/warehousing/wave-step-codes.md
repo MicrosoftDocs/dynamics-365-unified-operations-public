@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form: WHSWaveStepCode,WHSReplenishmentTemplates,WHSWaveTemplateTable
+ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

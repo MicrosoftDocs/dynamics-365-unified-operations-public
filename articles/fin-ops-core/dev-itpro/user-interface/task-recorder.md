@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 08/04/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Task recorder resources
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to use Task recorder to record business processes.
 
@@ -227,7 +226,10 @@ One option after you finish your recording is to download the task recording pac
 
 ### Save to Lifecycle Services (LCS) 
 
-When you save your recording to an LCS library, it's published on the specified business process in a BPM library. If the selected LCS library is set as a Help library, you will be able to find the task guide for the recording by searching the **Help** menu.
+When you save your recording to an LCS library, it's published on the specified business process in a BPM library. If the selected LCS library is set as a Help library, you will be able to find the task guide for the recording by searching the **Help** menu. 
+
+> [!NOTE]
+> To be able to save a recording to an LCS library, the user must be in the Azure Active Directory (Azure AD) tenant that the environment was deployed from.  
 
 ### Export as Word document
 

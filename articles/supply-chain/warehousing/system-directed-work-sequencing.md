@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form:  WHSLocDirTable
+ms.search.form:  WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

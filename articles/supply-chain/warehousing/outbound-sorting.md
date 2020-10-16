@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form:  WHSLocationType,WHSLoactionProfile
+ms.search.form:  WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

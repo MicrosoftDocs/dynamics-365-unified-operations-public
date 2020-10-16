@@ -50,7 +50,7 @@ The following features are available across products and users. Some features ap
     - In version 10.0.10 and later, custom payment connectors for card-not-present can be included in your deployable package.
     - In version 10.0.13, all-in-one packages will be **mandatory**.
 
-- The commerce deployable package that is created by using the [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md) is longer deployed to Application Object Server (AOS). Instead, you upload your self-service installers to Microsoft Dynamics Lifecycle Services (LCS) and use synchronization. For more information, see [Synchronize self-service installers in Dynamics 365 Commerce](synchronize-installers.md).
+- The commerce deployable package that is created by using the [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md) is no longer deployed to Application Object Server (AOS). Instead, you upload your self-service installers to Microsoft Dynamics Lifecycle Services (LCS) and use synchronization. For more information, see [Synchronize self-service installers in Dynamics 365 Commerce](synchronize-installers.md).
 - Use a Microsoft-hosted build agent instead of a dedicated build machine for these purposes:
 
     - To build [application deployable packages](../../fin-ops-core/dev-itpro/dev-tools/hosted-build-automation.md)

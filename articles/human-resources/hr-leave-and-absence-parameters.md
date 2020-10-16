@@ -5,7 +5,7 @@ title: Configure leave and absence parameters
 description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -51,8 +51,6 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 
 5. On the **Employee self service** tab, indicate whether managers can enter leave and absence requests on behalf of their employees.
 
-6. On the **Leave and absence** tab, verify the settings and change as necessary.
-
 7. Select **Save**.
 
 ## View and change leave and absence parameters
@@ -67,7 +65,11 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 
     - Select **Months of service effective date** to set when the accrual rates take effect for leave plans using months of service.
 
-    - Select **Balance calculation** to display balances display as of today or as of the accrual period. If you select **Balance as of today**, the balance displays the total of all accruals, adjustments, and requests as of today. If you select **Balance as of accrual period**, the balance displays the total of all accruals, adjustments, and requests as of the accrual period defined by the frequency in the leave plan. 
+    - Select **Balance calculation** to display balances as of today or as of the accrual period. If you select **Balance as of today**, the balance displays the total of all accruals, adjustments, and requests as of today. If you select **Balance as of accrual period**, the balance displays the total of all accruals, adjustments, and requests as of the accrual period defined by the frequency in the leave plan. 
+
+    - Set the start time for the carry forward expiration batch job.  
+    
+    - Select **Yes** for **Allow employees to buy leave** and **Allow employees to sell leave**. If you select **Yes** for these options, you can create buy and sell leave policies and enable employees to submit buy and sell leave requests.
 
 ## Configure calendar parameters
 

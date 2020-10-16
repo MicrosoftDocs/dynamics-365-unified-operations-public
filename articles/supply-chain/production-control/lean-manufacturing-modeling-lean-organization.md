@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: LeanProductionFlow, PlanActivity
+ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -5,7 +5,7 @@ title: Dynamics 365 Finance operated by 21Vianet in China and Dynamics 365 Suppl
 description: This topic provides information about Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China.
 author: kfend
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,20 +46,6 @@ Customers in China have two options from which to select how they want to access
 
 - Services operated by Microsoft – This option is for Finance and Supply Chain Management customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant.
 
-There are a few technical limitations during the provisioning of services that need to be taken in to account to avoid potential issues. 
-
-|Scenario  |Recommendation  |
-|---------|---------|
-|**Purchased Azure, Office 365, and Dynamics 365 via OSPA.**    |Recommended sequence for provisioning: Office 365 or Dynamics 365 must be provisioned first, followed by Azure.|
-|**Purchased Azure via OSPA first and then purchased Office 365 via OSPA. Now purchased Dynamics 365 via OSPA.**   | Customer already has two tenants, one for Azure and another for Office 365. Dynamics 365 can be added to the tenant containing Office 365 OSPA.        |
-|**Purchase Office 365 via OSPA and then purchased Azure via OSPA. Now purchased Dynamics 365 via OSPA.**     | Customer started with Office 365 and then added Azure. Dynamics 365 can be provisioned on the same tenant.        |
-|**Purchased Office 365 via OSPA and plans to add Dynamics 365.**   |If Office 365 is already provisioned, customer will be able to provision Dynamics 365 on the same tenant.         |
-|**Purchased Office 365 via OSSA or CSP and purchased Dynamics 365.**    |Dynamics 365 needs to be provisioned on a separate tenant.          |
-
-- OSPA = Online Services Premium Agreement 
-- OSSA = Online Services Standard Agreement
-- CSP = Cloud Solution Provider
-
 For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/create-environment).
 
 ## Features not available
@@ -93,6 +79,9 @@ Due to certain technical dependencies, the following features listed will not be
     -   [Embedded Power Apps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft Power Apps and Microsoft Power Automate will be unavailable.
 
     -   [Data integration using Common Data Service overview](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
+    
+  > [!NOTE]
+  > The Lifecycle Services URL for implementations operated by 21Vianet in China is lcs.dynamics.cn.
 
 -   The following features will not be available due to certain **current Azure Active Directory limitations** in China:
 

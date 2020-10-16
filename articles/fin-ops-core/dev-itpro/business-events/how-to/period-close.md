@@ -21,7 +21,7 @@ ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 26
 ms.dyn365.ops.version: 2019-6-30 
 
@@ -111,7 +111,7 @@ The following example describes the general steps for subscribing to a change-ba
 
     <img alt="Processing the approval action" src="../../media/Image11.png" width="70%">
 
-8. Update the task iwith the approval outcome.
+8. Update the task with the approval outcome.
 
     Based on the outcome of the approval process, the task is updated with the result.
 

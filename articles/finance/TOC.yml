@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.14 (November 2020)
+            href: get-started/whats-new-changed-10-0-14.md
           - name: Finance 10.0.13 (October 2020)
             href: get-started/whats-new-changed-10-0-13.md     
           - name: Finance 10.0.12 (August 2020)
             href: get-started/whats-new-changed-10-0-12.md     
-          - name: Finance 10.0.11 (July 2020)
-            href: get-started/whats-new-changed-10-0-11.md                    
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
@@ -158,7 +158,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-        - name: Embed PowerApps apps
+        - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -412,6 +412,8 @@
           href: accounts-receivable/set-up-collections.md
         - name: Review collections information
           href: accounts-receivable/tasks/review-collections-information.md
+        - name: Collections process automation
+          href: accounts-receivable/collections-process-automate.md
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
         - name: Credit management setup information
@@ -756,6 +758,8 @@
           href: fixed-assets/175-percent-reducing-balance-depreciation.md
         - name: 200 percent reducing balance depreciation
           href: fixed-assets/200-percent-reducing-balance-depreciation.md
+        - name: Half-year depreciation convention methodology
+          href: fixed-assets/half-year-depreciation-methodology.md
         - name: Bonus depreciation
           href: fixed-assets/bonus-depreciation.md
         - name: Set up bonus depreciation
@@ -1013,7 +1017,27 @@
       - name: Transfer a quotation to a project
         href: project-management/transfer-quote-new-existing-project.md
       - name: Project resourcing
-        href: project-management/project-resourcing.md
+        items:
+        - name: Project resourcing overview
+          href: project-management/project-resourcing.md
+        - name: Set up project resources
+          href: project-management/set-up-project-resources.md
+        - name: Manage resource competencies
+          href: project-management/manage-resource-competencies.md
+        - name: Create a new project
+          href: project-management/create-new-project.md
+        - name: Set up role-based pricing
+          href: project-management/set-up-role-based-pricing.md
+        - name: Create a project team
+          href: project-management/create-project-team.md
+        - name: Synchronize resource capacity
+          href: project-management/synchronize-resource-capacity.md
+        - name: Project resource scheduling performance
+          href: project-management/project-scheduling-performance.md
+        - name: Set up roles on Work breakdown structure templates
+          href: project-management/set-up-roles-wbs-template.md
+        - name: Resource fulfillment for planned resources
+          href: project-management/resource-fulfillment-planned-resources.md
       - name: Receive items on purchase order from item requirement
         href: project-management/tasks/receive-items-purchase-order-item-requirement.md
       - name: Work breakdown structures
@@ -1156,7 +1180,7 @@
         href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md        
     - name: Financial reporting
       items:
-      - name: Financial reporting overview
+      - name: Get started with Financial reporting
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -1202,6 +1226,22 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
+      - name: Electronic invoicing add-on
+        items: 
+        - name: Electronic invoicing add-on overview
+          href: localizations/e-invoicing-service-overview.md
+        - name: Create an Azure storage account and a Key Vault
+          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+        - name: Get started with the Electronic invoicing add-on
+          href: localizations/e-invoicing-get-started.md
+        - name: Get started with Electronic invoicing add-on for Brazil
+          href: localizations/e-invoicing-bra-get-started.md
+        - name: Get started with Electronic invoicing add-on for Italy
+          href: localizations/e-invoicing-ita-get-started.md
+        - name: Get started with the Electronic invoicing add-on for Mexico
+          href: localizations/e-invoicing-mex-get-started.md
+        - name: Set up the Electronic invoicing add-on
+          href: localizations/e-invoicing-setup.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1224,6 +1264,16 @@
           href: localizations/emea-aut-packing-material-fee-calculation.md
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
+      - name: Bahrain
+        items: 
+        - name: Bahrain overview
+          href: localizations/bahrain.md
+        - name: Configure invoice layout for Bahrain
+          href: localizations/emea-bhr-invoice-layout.md
+        - name: VAT declaration for Bahrain
+          href: localizations/emea-bhr-vat-declaration.md
+        - name: Invoice issue deadline
+          href: localizations/gcc-invoice-issue-deadline.md
       - name: Belgium
         items:
         - name: Belgium overview
@@ -1232,6 +1282,8 @@
           href: localizations/emea-bel-coda-bank-statement-import.md
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
+        - name: Export ledger transactions
+          href: localizations/emea-bel-export-ledger-transactions.md          
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
@@ -1496,6 +1548,8 @@
           href: localizations/emea-amount-printing-forms.md
         - name: VAT statement
           href: localizations/emea-cze-vat-statement-details.md
+        - name: VAT declaration (Czech Republic)
+          href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
       - name: Denmark
@@ -1780,6 +1834,8 @@
           href: localizations/emea-cze-hun-year-end.md
         - name: Online invoicing system
           href: localizations/emea-hun-online-invoicing.md
+        - name: Deferred sales tax calculations
+          href: localizations/emea-hun-deferred-vat.md
       - name: Iceland
         items:
         - name: Iceland overview
@@ -1996,6 +2052,8 @@
             href: localizations/apac-ind-GST-tax-journal.md
           - name: Generate the GSTR report data for tax returns
             href: localizations/apac-ind-GST-tax-returns.md
+          - name: Enable multi-batch processing for GSTR reports
+            href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
           - name: Tax inquiry
             href: localizations/apac-ind-GST-tax-inquiry.md
         - name: Tax engine
@@ -2076,6 +2134,8 @@
           href: localizations/emea-ita-exil-protest-boe.md
         - name: Tax plafond
           href: localizations/emea-ita-exil-tax-plafond.md
+        - name: Customer electronic invoices
+          href: localizations/emea-ita-e-invoices.md
       - name: Japan
         items:
         - name: Japan overview
@@ -2236,6 +2296,10 @@
           href: localizations/tasks/use-assemble-list-fixed-asset.md
         - name: Use disassemble list for fixed assets
           href: localizations/tasks/use-disassemble-list-fixed-assets.md          
+      - name: Kuwait
+        items: 
+        - name: Kuwait overview
+          href: localizations/kuwait.md
       - name: Latvia
         items:
         - name: Latvia overview
@@ -2286,6 +2350,8 @@
           href: localizations/tasks/my-00007-self-billed-invoices.md
         - name: Set up GST relief clauses
           href: localizations/tasks/my-00006-01-gst-relief-clauses.md
+        - name: SST-02 declaration for Malaysia
+          href: localizations/apac-mys-sst-declaration.md
       - name: Mexico
         items:
         - name: Mexico overview
@@ -2326,6 +2392,10 @@
           href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
         - name: Vendor registration IDs
           href: localizations/tasks/mx-00008-vendor-registration-ids.md
+      - name: Oman
+        items:
+        - name: Oman overview
+          href: localizations/oman.md
       - name: Netherlands
         items:
         - name: Netherlands overview
@@ -2384,6 +2454,10 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+      - name: Qatar
+        items: 
+        - name: Qatar overview
+          href: localizations/qatar.md
       - name: Russia
         items:
         - name: Russia overview
@@ -2722,6 +2796,8 @@
           href: localizations/noam-usa-year-end-1099-reporting.md
         - name: Form 1099 for the public sector
           href: localizations/noam-usa-form-1099-public-sector.md
+        - name: Set up vendors for 1099 reporting
+          href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
     - name: Human resources
       items:
       - name: Human resources overview
@@ -2890,13 +2966,13 @@
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
-      - name: Personalization options with PowerBI.com
+      - name: Personalization options with Power BI
         items:
-        - name: Features available through PowerBI.com integration
+        - name: Features available through the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
-        - name: Pin PowerBI.com content
+        - name: Pin Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-        - name: Select analytical workspaces from PowerBI.com
+        - name: Select analytical workspaces from Power BI
           href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
       - name: Power BI content
         items:
@@ -2968,6 +3044,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Default reporting experiences in IaaS environments
           href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
+        - name: Document reporting preview options
+          href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
         - name: Printing
           items:
           - name: Document printing overview
@@ -2992,7 +3070,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
         - name: Resolve issues after Entity store maintenance
           href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-        - name: Configure PowerBI.com integration
+        - name: Configure the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
         - name: Bring your own database
           href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
@@ -3132,6 +3210,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
             - name: List
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+            - name: "ListDistinct"
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
             - name: ListJoin
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
             - name: ListOfFields
@@ -3168,6 +3248,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
             - name: ValueIn
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+            - name: ValueInLarge
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/finance/toc.json
           - name: Mathematical
             items: 
             - name: Mathematical functions
@@ -3300,8 +3382,6 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
             - name: "List: List"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
-            - name: "List: ListDistinct"
-              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
             - name: "List: ListOfFields"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
             - name: "List: Split"
@@ -3433,7 +3513,11 @@
           - name: Use RAW XML to add content
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
           - name: Support parameterized calls of CALCULATED FIELD data sources
-            href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+            items:
+            - name: Improve user experience and usability maintenance
+              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+            - name: Improve performance of data access
+              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
           - name: Cross-company ER data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
           - name: Use FINANCIAL DIMENSIONS DETAILS data sources
@@ -3494,6 +3578,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
           - name: Design multilingual reports
             href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+          - name: Compress large outbound documents
+            href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations

@@ -58,7 +58,7 @@ To prepare Finance for i.SAF reporting, you must import the following ER configu
 Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
 > [!NOTE]
-> After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for  **Tax declaration model mapping** ER configuration.
+> After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for  **i.SAF model mapping** ER configuration.
 
 For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 

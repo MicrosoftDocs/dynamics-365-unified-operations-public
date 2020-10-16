@@ -30,8 +30,16 @@ ms.dyn365.ops.version: Release 10.0.9
 # Country of origin
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. The country of origin feature lets you link a product to its country of origin and keep track of its product certifications.
+
+## Turn on the country of origin feature
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Product information management*
+- **Feature name:** *Country of origin management feature*
 
 ## Configure source and destination countries
 

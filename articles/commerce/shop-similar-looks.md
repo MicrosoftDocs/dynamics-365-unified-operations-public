@@ -33,7 +33,6 @@ ms.dyn365.ops.version: 10.0.13
 # Enable "shop similar looks" recommendations
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to enable "shop similar looks" product recommendations in Microsoft Dynamics 365 Commerce.
 
