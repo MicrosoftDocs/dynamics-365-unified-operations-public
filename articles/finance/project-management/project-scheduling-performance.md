@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: v-radsh
+ms.author: roschlom
 ms.dyn365.ops.version: 10.0.14
 ms.search.validFrom: 2020-09-01
 ---

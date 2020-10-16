@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang:
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -53,6 +52,19 @@ The September 2020 release contains the features and bug fixes listed in the fol
 | [Map state transitions from **Order** to **SalesOrder**](sales-status-map.md) | The **Order** form in Dynamics 365 Sales is always set to **Active**. To create state transitions from **Order** in Dynamics 365 Sales to **SalesOrder** in Dynamics 365 Supply Chain Management, we introduced the **ProcessingStatus** field. |   General availability   |  
 | [Money to decimal data type conversion](currrency-decimal-places.md) |  Common Data Service environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. Finance and Operations apps support more decimal places than Common Data Service. You can now opt in to extend the decimal support in Common Data Service to help ensure there's no loss of decimal place data when using dual-write. | General availability |
 | Security role for company and currency exchange | Company and currency exchange entities are global in nature and all dual-write users require read access to these 2 entities. To simplify the experience, we've added a new security role named **dual-write app user**. Each dual-write user must be added to this security role.   | General availability |
+| Security role for setup | Adds the **Dual-write Runtime User** security role. This role allows non-administrator users to create records that are set up for dual-write. This feature is part of Dual-write core solution 10.0.21. | General availability |
+| Tracing | Internal field added for use in tracing. This feature is part of Dual-write core solution 10.0.21. | General availability |
+| Bug fix | Fixes issues where dual-write fails because of a mismatch between the plugin and the destination environments. This fix is part of Dual-write core solution 10.0.21. | General availability |
+| Bug fix | Support to ensure that unused plugins are deleted. This fix is part of Dual-write core solution 10.0.21. | General availability |
+
+## August 2020 release
+
+The August 2020 release of the dual-write orchestration package contains the features and bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Manage multiple entity maps | As part of day-to-day operations, you might need to bulk handle entity maps. For example, you might want to simultaneously enable or pause a set of entity maps. Instead of doing this one-by-one, which is cumbersome and time consuming, you can now enable, pause, resume, or stop more than one entity map at the same time in the dual-write list page. | General availability |
+| Bug fix | Fixes issues where records would be skipped in certain cases during project execution. This fix is part of Dual-write core solution version 10.0.19.  | General availability |
 
 ## June 2020 release
 

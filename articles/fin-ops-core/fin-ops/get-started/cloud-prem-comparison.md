@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -92,6 +92,7 @@ The following tables list the application areas. Cloud and on-premises support i
 
 | **Area**                | **Feature**             | **Cloud** | **On-premises** |
 |-------------------------|-------------------|-----------|-----------------|
+| Asset management                     |                                                                                           | Yes       | No |
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
 | Cost accounting                      |                                                                                           | Yes       | Yes             |

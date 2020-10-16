@@ -47,7 +47,7 @@ Dynamics 365 Commerce released to public preview in October 2019. To see what's 
 
 
 ## Releases before February 2020
-To see what's new or changed in releases before Februry 2020, see the following topics.
+To see what's new or changed in releases before February 2020, see the following topics.
 
 
  **Release**                                                           | **Version** | **Build number** | **Availability** | **Learn more**                                                                                                                                                                                                           |

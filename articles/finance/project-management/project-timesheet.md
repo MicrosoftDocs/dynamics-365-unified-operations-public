@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: josaw1
+ms.author: josaw
 ms.dyn365.ops.version: 10.0
 ms.search.validFrom: 2019-01-15
 

@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations, Retail
 # ms.custom:
 ms.search.region: global
 # ms.search.industry:
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.12
 ---

@@ -5,7 +5,7 @@ title: Work with publish groups
 description: This topic describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -148,6 +148,8 @@ Currently, the publish groups feature supports only website content. However, Mi
 [Page model glossary](page-elements-overview.md)
 
 [Document states and lifecycle](document-states-overview.md)
+
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
 
 [Work with modules](work-with-modules.md)
 

@@ -5,7 +5,7 @@ title: Priority-based throttling
 description: This topic provides information about priority-based throttling for Odata and custom service-based integrations.
 author: hasaid
 manager: AnnBe
-ms.date: 09/18/2020
+ms.date: 09/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,6 +34,9 @@ ms.dyn365.ops.version: Platform update 37
 
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE]
+> The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change. To test this capability, configure integration priorities on the **Throttling priority mapping** page.  
+
 
 Priority-based throttling prevents the over-utilization of resources to preserve the system's responsiveness and ensure consistent availability and performance for environments running Dynamics 365 Finance and Operations apps.
 
@@ -45,7 +48,7 @@ Priority-based throttling provides the ability to set priorities for OData and c
 
 The **Integration priority** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. 
 
-Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations, based on the the integration. For more information about how to set up integration, see [Enable connectivity with external services](https://docs.microsoft.com/learn/modules/integrate-azure-finance-operations/7-connect-external). 
+Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations, based on the integration. For more information about how to set up integration, see [Enable connectivity with external services](https://docs.microsoft.com/learn/modules/integrate-azure-finance-operations/7-connect-external). 
 
 There are two kinds of applications are supported in Microsoft Azure Active Directory (Azure AD):
 
@@ -72,7 +75,7 @@ After you have registered your service in Azure AD and in your Finance and Opera
 
 When a request is throttled, the system provides a value indicating the duration before any new requests from the user can be processed. When a request is throttled and a 429 error occurs, the response header will include a **Retry-After** interval, which can be used to retry the request after a specific number of seconds. The following example shows this operation. 
 
-```x++
+```C#
     if (!response.IsSuccessStatusCode) 
             { 
                 if ((int)response.StatusCode == 429) 

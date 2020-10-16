@@ -57,7 +57,7 @@ LCS setup is now completed. The next step is to [set up the scenarios](iot-scena
 
 ## <a id="uninstall-addin"></a>Uninstall the add-in
 
-1. In Supply Chain Management, [disable the scenarios](iot-scenario-setup.md#how-to-disable-a-scenario).
+1. In Supply Chain Management, [disable the scenarios](iot-scenario-setup.md#disable-a-scenario).
 2. In LCS, go to your Supply Chain Management environment details.
 3. Scroll to the **Environment add-ins** section.
 4. Select **Uninstall** for the IoT Intelligence add-in.

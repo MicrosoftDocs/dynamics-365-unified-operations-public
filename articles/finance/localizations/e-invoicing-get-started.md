@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on
 description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,7 +67,7 @@ You can use the Electronic invoicing add-on with your current license. No additi
 Before you complete the steps in this topic, you must have the following prerequisites in place:
 
 - Access to your LCS account.
-- An LCS deployment project that includes Finance or Supply Chain Management version 10.0.12 or later.
+- An LCS deployment project that includes Finance or Supply Chain Management version 10.0.13 or later.
 - Access to your RCS account.
 - Turn on the Globalization feature for your RCS account through the **Feature management** module. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md)
 - Create a key vault resource and a storage account in Azure. For more information, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -90,16 +90,18 @@ The following illustration shows the five main steps that you will complete in t
 ## LCS setup
 
 1. Sign in to your LCS account.
-2. Select the LCS deployment project. Before you can select the project, it must be up and running.
-3. On the **Environment add-ins** FastTab, select **Install a new add-in**.
-4. Select **Business Document Submission**.
-5. In the **Setup add-in** dialog box, in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is a fixed value.
-6. In the **AAD tenant ID** field, enter the ID of your Azure subscription account.
+2. Select the **Preview feature management** tile, and in the **Public Preview features** field group, select **BusinessDocumentSubmission**.
+3. Mark the **Preview feature enabled** field.
+4. Select the LCS deployment project. Before you can select the project, it must be up and running.
+5. On the **Environment add-ins** FastTab, select **Install a new add-in**.
+6. Select **Business Document Submission**.
+7. In the **Setup add-in** dialog box, in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is a fixed value.
+8. In the **AAD tenant ID** field, enter the ID of your Azure subscription account.
 
     ![Setup add-in dialog box in LCS](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
-7. Select the check box to accept the terms and conditions.
-8. Select **Install**.
+9. Select the check box to accept the terms and conditions.
+10. Select **Install**.
 
 ## RCS setup
 
@@ -129,7 +131,7 @@ During the RCS setup, you will complete these tasks:
 
     ![Key Vault URI field](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. On the **Certificates** FastTab, select **Add**, and enter the digital certificate names and the key vault secrets. Both sets of values are configured on the key vault resource in Azure.
+7. On the **Certificates** FastTab, select **Add** to enter all digital certificate names and key vault secrets that are needed to establish trustable connections. In the  **Type** column, you can specify if it is a Certificate or a Secret. Both sets of values are configured on the key vault resource in Azure.
 
     ![Adding certificates](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -137,9 +139,9 @@ During the RCS setup, you will complete these tasks:
 
 ### Set up the RCS integration with the Electronic invoicing add-on server
 
-1. In the **Globalization features** workspace, in the **Related links** section, select the **Electronic reporting parameters** link.
+1. In the **Globalization features** workspace, in the **Related settings** section, select the **Electronic reporting parameters** link.
 2. Select **Click here to connect to Lifecycle Service**. If you don't want to connect to LCS, select **Cancel**.
-3. On the **Electronic invoicing add-on** tab, in the **Service endpoint URI** field, enter `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
+3. On the **e-Invoicing services** tab, in the **Service endpoint URI** field, enter the value according to the available geographies: `https://businessdocumentsubmission.us.operations365.dynamics.com/` or `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. In the **Application ID** field, verify that it shows the ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
 5. In the **LCS Environment ID** field, enter the ID of your LCS subscription account.
 

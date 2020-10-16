@@ -22,7 +22,7 @@ ms.search.scope:  Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---

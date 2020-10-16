@@ -24,7 +24,7 @@ ms.custom: 18531
 ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

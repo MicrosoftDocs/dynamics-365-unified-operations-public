@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -56,7 +55,6 @@ The topics in this section will help you start to build extensions. They will al
 + [Migrate from overlayering to extensions](migrate-overlayer-extension.md)
 + [Customize model elements through extension](customize-model-elements-extensions.md)
 + [Customize through extension and overlayering](customization-overlayering-extensions.md)
-<!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## Fundamentals on extensions
 
