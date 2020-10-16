@@ -633,6 +633,8 @@
           href: cost-management/amortize-constant-costs-manufactured-item.md
       - name: Cost management Power BI content pack
         href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+      - name: Troubleshoot cost management
+        href: cost-management/troubleshoot-costmanagement.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI

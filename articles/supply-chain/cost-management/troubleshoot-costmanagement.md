@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot purchase orders
-description: This topic describes how to fix issues that you might encounter while you work with cost management
+title: Troubleshoot cost management
+description: This topic describes how to fix issues that you might encounter while working with cost management
 author: riluan
 manager: tfehr
 ms.date: 10/13/2020
@@ -29,36 +29,45 @@ ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
 
 ---
-# Functional gaps between the Inventory value/aging reports and their storage version
 
-Microsoft introduced [Inventory aging report storage](inventory-aging-report-storage.md) and [Inventory value storage report](inventory-value-report-storage.md) for supporting display large volumns of inventory transactions. The report result is saved for exporting. 
+# Troubleshoot cost management
 
-## The storage reports do not inlcude subtotals even it's configured inthe report layout
+This topic describes how to fix issues that you might encounter while working with cost management.
 
-Supporting subtotal can cause issues when the result is exported, especially when users change the record sequences. You can export the result into Microsoft Excel to check the subtotal. In case you want to check it within SCM, plesae enable *New grid control and (Preview) Grouping in grids*, it provides much more flexible way to see the subtotal for any group by column.
+## Functional gaps between the inventory value/aging reports and their storage versions
 
-## The Inventory value storage report does not support ledger account information
+The [Inventory aging report storage](inventory-aging-report-storage.md) and [Inventory value storage report](inventory-value-report-storage.md) features enable Supply Chain Management to display large volumes of inventory transactions. In each case, the report results are saved for exporting.
 
-You can run the trail balance and get the inventory accounts balance and compare it with the Inventory value storage report
+### Storage reports don't include subtotals, even if they are enabled in the report layout
 
-# Warnings/errors when changing ledger period status without inventory closing
+Subtotals can cause issues when the result is exported, especially if users change the record sequence.
 
-Microsoft introduced following validations in order to provent issues caused by "incorrect" period end process around costing. Please refer to [KB#4561987](https://fix.lcs.dynamics.com/Issue/Details?kb=4561987&bugId=445351&dbType=3&qc=f514f2adcddcddceec43af58c26ae8a9020effdc7cdfe085d9d0deeb8cc7b6a3) for details.
+To check the subtotals, you can export the result into Microsoft Excel. Alternatively, if you want to check subtotals within Supply Chain Management, use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the *New grid control* and *(Preview) Grouping in grids* features, which provide a much more flexible way to see the subtotal for any group by column. For more information, see [Grid capabilities](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
-* You are about to execute a Recalculation with a date %1 (10-02-2019). The last registered Recalculation was executed in a previous period with a date %2 (20-01-2019). No execution of an Inventory close with a date %3 (31-01-2019) matching period end has been registered.
-Please remember to execute an Inventory close as of %3 (31-01-2019) matching the period end. The valuation of inventories, cost of goods sold and variances may not be correct in Subledger or General ledger until this has been executed.
+### The inventory value storage report doesn't support ledger account information
 
-* You are about to change the status of ledger period %1 to %2. No execution of Inventory close with a date %3 matching period end has been registered. Please execute an inventory close as of %3 matching the period end before changing the status. The valuation of inventories, cost of goods sold and variances may not be correct in Subledger or General ledger until this has been executed. Reported from legal entity %4. For now, it is informational, but you will be required to perform such action in future. 
+You can run the trail balance to get the inventory accounts balance and compare that to the inventory value storage report.
 
-* The Account structure %1 has been changed. One or more main accounts %2 no longer exist. These Main accounts are required by the %3 with a date %4. Please add these Main accounts to the Account structure %1 before you can resume the %3 job. For now, it is informational, but you will be required to perform such action in future.
+## Warnings or errors are shown when changing a ledger period status without closing inventory
 
-* You are about to execute an Inventory close with a date %1 (31-01-2019). No execution of Backflush costing calculation with a date %2 (31-01-2019) matching period end has been registered.
-Please remember to execute a Backflush costing calculation with a date of %3 (31-01-2019) matching period end. The valuation of inventories, cost of goods sold and variances may not be correct in Subledger or General ledger until this has been executed.
+Microsoft introduced the following validations to prevent issues caused by "incorrect" period-end process around costing. Please refer to [KB#4561987](https://fix.lcs.dynamics.com/Issue/Details?kb=4561987&bugId=445351&dbType=3&qc=f514f2adcddcddceec43af58c26ae8a9020effdc7cdfe085d9d0deeb8cc7b6a3) for details.
 
-* You are about to execute a Backflush costing calculation with a date %1 (28-02-2019). The last registered Backflush costing calculation was executed in a previous period with a date %2 (31-01-2019). No execution of an Inventory close with a date %3 (31-01-2019) matching a period end has been registered.
-Please remember to execute an Inventory close as of %3 (31-01-2019) matching a period end. The valuation of inventories, cost of goods sold and variances may not be correct in Subledger or General ledger until the Inventory close has been executed.
+<!-- KFM: I don't understand this list. Are these error messages? Are we also providing advice for what to do on receiving each message? We need to make it more clear which is which. -->
 
-# Inventory aging report discrepancies
+- You are about to execute a Recalculation with a date %1 (10-02-2019). The last registered Recalculation was executed in a previous period with a date %2 (20-01-2019). No execution of an inventory close with a date %3 (31-01-2019) matching period end has been registered.
+Please remember to execute an inventory close as of %3 (31-01-2019) matching the period end. The valuation of inventories, cost of goods sold and variances may not be correct in subledger or general ledger until this has been executed.
 
-Inventory aging report shows different value when view it at different storage dimensions (Site, Warehouse, etc.). Please refer to [Inventory aging report examples and logic](inventory-aging-report.md) for the reporting logic.
+- You are about to change the status of ledger period %1 to %2. No execution of inventory close with a date %3 matching period end has been registered. Please execute an inventory close as of %3 matching the period end before changing the status. The valuation of inventories, cost of goods sold and variances may not be correct in subledger or general ledger until this has been executed. Reported from legal entity %4. For now, it is informational, but you will be required to perform such action in future.
+
+- The Account structure %1 has been changed. One or more main accounts %2 no longer exist. These Main accounts are required by the %3 with a date %4. Please add these Main accounts to the Account structure %1 before you can resume the %3 job. For now, it is informational, but you will be required to perform such action in future.
+
+- You are about to execute an inventory close with a date %1 (31-01-2019). No execution of backflush costing calculation with a date %2 (31-01-2019) matching period end has been registered.
+Please remember to execute a Backflush costing calculation with a date of %3 (31-01-2019) matching period end. The valuation of inventories, cost of goods sold and variances may not be correct in subledger or general ledger until this has been executed.
+
+- You are about to execute a backflush costing calculation with a date %1 (28-02-2019). The last registered backflush costing calculation was executed in a previous period with a date %2 (31-01-2019). No execution of an inventory close with a date %3 (31-01-2019) matching a period end has been registered.
+Please remember to execute an inventory close as of %3 (31-01-2019) matching a period end. The valuation of inventories, cost of goods sold and variances may not be correct in subledger or general ledger until the inventory close has been executed.
+
+## Inventory aging report discrepancies
+
+The inventory aging report shows different value when viewed at different storage dimensions (such as site or warehouse). Please refer to [Inventory aging report examples and logic](inventory-aging-report.md) for the reporting logic.
 
