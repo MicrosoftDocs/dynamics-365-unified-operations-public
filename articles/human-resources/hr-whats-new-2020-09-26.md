@@ -85,6 +85,6 @@ For a complete list of planned features and their scheduled releases, see [Overv
 ## Additional resources
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
