@@ -46,7 +46,7 @@ The following feature is generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Additional insight into leave calendars | [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) | [View team and company calendar](hr-employee-self-service-calendar.md) |
+| Additional insight into leave calendars | [Provide additional insight into leave calendar views](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-leave-calendar-views) | [View team and company calendar](hr-employee-self-service-calendar.md) |
 
 ### Bug fixes
 
@@ -57,16 +57,13 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
-| 394249 | Regular translation checkins for supported HCM languages |  |
 | 448806 | **Default Identification Type** exports as **RecID** in HCM Parameters | This change to the Human Resources Parameters entity adds an additional column that displays the **Default Identification Type**. |
-| 492923 | Invalid certificate thumbprint causes Lifecycle Services (LCS) SysTaskRecorder not to work |  |
+| 492923 | Task recordings aren't saving in LCS | Task recordings can now be saved in LCS. |
 | 429950 | Fixed compensation doesn't expire correctly while changing position | When changing the position of a worker on the **Transfer Worker** page, the end compensation date was set one day before the end of the position. The compensation end date is now the same as the position end date. |
 | 467214 | **Salaried analytics** displays only if **Pay rate conversion name** is set to **Annual** | Salaried pay rates with a name other than **Annual** didn't show in Compensation Analytics. With this update, Compensation Analytics now uses all pay rate conversions. When running the reports by **Hourly** or **Salary**, any pay rate conversion that uses a period other than hourly are included in the **Salary** filter. Only pay rates with a period of **Hourly** are included in the **Hourly** filter. |
-| 482464 | The **Details** view doesn't change to grid view after you apply a filter |  |
-| 483184 | Human Resources doesn't generate leave accruals when you select **Tier basis** as the **Adjusted start date** in the **Leave enrollment** record |  |
-| 506949 | **PositionActionDetail** default dimension |  |
-| 507333 | Common Data Service bridge causes a null ref exception on AOS startup |  |
-| 509731 | Leave request for future terminated worker causes issue if they apply for time off after termination date |  |
+| 482464 | When viewing **Reviews**, the **Details** view doesn't change to grid view after you apply a filter | After applying a filter, the reviews grid displays as expected. |
+| 483184 | Human Resources doesn't generate leave accruals when you select **Tier basis** as the **Adjusted start date** in the **Leave enrollment** record |The **Adjusted start date** is populated and used whene generating leave accruals.  |
+| 509731 | Time off request for future terminated worker causes issue if they apply for time off after termination date | Time off requests can now be submitted for employees with a future termination date as long as the request is before the termination date. |
 | 510716 | Compensation Analytics includes both male and female employees for **Male average hourly pay** | In Compensation Analytics, the **Male average hourly pay** on the **Compensation Demographic Analysis** included female average pay. Now it only includes males. |
 | 511348 | Benefits self-service should only show benefit plans valid from today to end of the benefit period | Expired benefit plans were displayed to employees in the benefits enrollment page. This fix removes these plans. |
 | 512706 | Set the following fields to read only:<br>- **BenefitPlanEmployeeEntity**<br>- **EnrollmentConfirmed**<br>- **EnrollmentConfirmedBy**<br> **EnrollmentConfirmedDateTime** | The **Add** and **Remove** buttons for dimension details were incorrectly enabled after the action completed. This update to the **Position Action Detail** page makes the fields uneditable after the action has completed. |
