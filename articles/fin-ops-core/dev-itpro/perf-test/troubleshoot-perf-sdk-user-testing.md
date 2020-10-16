@@ -327,7 +327,7 @@ There is no impact, and the messages can be ignored.
 
 ## The type or namespace name 'xxxx' could not be found (are you missing a using directive or an assembly reference?)
 
-## Error example - The type or namespace name 'xxxx' could not be found
+### Error example - The type or namespace name 'xxxx' could not be found
 
 The type or namespace name 'InventTransferOrders' could not be found (are you missing a using directive or an assembly reference?)
 
@@ -337,7 +337,7 @@ The sample solution shipped with the perfSDK was previously prepared and wasn't 
 
 ## Assembly was built against the ".NETFramework,Version=v4.6" framework
 
-## Error example - Assembly was built against the ".NETFramework,Version=v4.6" framework
+### Error example - Assembly was built against the ".NETFramework,Version=v4.6" framework
 
 The primary reference "MS.Dynamics.TestTools.ApplicationSuiteProxyLibrary" could not be resolved because it has an indirect dependency on the assembly "MS.Dynamics.TestTools.DirectoryProxyLibrary, Version=7.0.0.0, Culture=neutral, PublicKeyToken=a7cf325ee2c8a9ff" which was built against the ".NETFramework,Version=v4.6" framework. This is a higher version than the currently targeted framework ".NETFramework,Version=v4.5".
 
