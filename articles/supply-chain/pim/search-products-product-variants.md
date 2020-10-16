@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
+ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

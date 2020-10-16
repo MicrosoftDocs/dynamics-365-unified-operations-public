@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: smmContactPerson, VendBankAccounts, VendTable
+ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
