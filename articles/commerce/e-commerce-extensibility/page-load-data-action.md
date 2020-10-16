@@ -196,6 +196,8 @@ export interface IProductFeatureData {
 
 [Data actions overview](data-actions.md)
 
+[Data action cache options](data-action-cache.md)
+
 [Test data actions with mocks](test-data-action-mocks.md)
 
 [Event-based data actions](event-based-data-actions.md)

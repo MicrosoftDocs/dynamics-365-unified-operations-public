@@ -231,6 +231,8 @@ export default (props: IWarrantylistViewProps) => {
 
 [Data actions overview](data-actions.md)
 
+[Data action cache options](data-action-cache.md)
+
 [Test data actions with mocks](test-data-action-mocks.md)
 
 [Page load data actions](page-load-data-action.md)

@@ -2034,12 +2034,16 @@
             href: e-commerce-extensibility/cookie-api-overview.md
           - name: Interactive components overview
             href: e-commerce-extensibility/interactive-components.md
+          - name: Mock the signed-in state during local development
+            href: e-commerce-extensibility/mock-sign-in.md 
           - name: Globalize modules by using the CultureInfoFormatter class
             href: e-commerce-extensibility/globalize-modules.md
         - name: Develop data actions
           items:
           - name: Data actions overview
             href: e-commerce-extensibility/data-actions.md
+          - name: Data action cache options
+            href: e-commerce-extensibility/data-action-cache.md
           - name: Test data actions with mocks
             href: e-commerce-extensibility/test-data-action-mocks.md
           - name: Page load data actions
@@ -2102,6 +2106,10 @@
             href: e-commerce-extensibility/package-deploy.md
           - name: SDK and module library updates
             href: e-commerce-extensibility/sdk-updates.md
+        - name: Best practices
+          items:
+          - name: Best practices for Dynamics 365 Commerce development
+            href: e-commerce-extensibility/best-practices-dev.md
       - name: Retail SDK
         items:
         - name: Retail SDK architecture
