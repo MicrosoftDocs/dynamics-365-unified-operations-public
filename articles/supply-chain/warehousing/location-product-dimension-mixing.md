@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  WHSReservationHierarchy, WHSInventTableReservationHierarchy
+ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm
+ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
