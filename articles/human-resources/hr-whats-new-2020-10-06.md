@@ -46,7 +46,7 @@ The following feature is generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Additional insight into leave calendars | [Provide additional insight into leave calendar views](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-leave-calendar-views) | [View team and company calendar](hr-employee-self-service-calendar.md) |
+| Additional insight into leave calendars | [Provide additional insight into leave calendar views](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-leave-calendar-views) | [View team and company calendar](hr-employee-self-service-calendar.md) |
 
 ### Bug fixes
 
