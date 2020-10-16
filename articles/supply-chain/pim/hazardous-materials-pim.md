@@ -24,7 +24,7 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: 
 
@@ -33,6 +33,7 @@ ms.dyn365.ops.version:
 # Hazardous materials
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Information about hazardous materials is set up in Product information management. This module also provides documents that can be printed through warehouse management.
 

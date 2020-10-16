@@ -5,7 +5,7 @@ title: Configure invoice layout for Bahrain
 description: This topic explains how to configure the invoice layout for Bahrain.
 author: ilkond
 manager: AnnBe
-ms.date: 08/27/2020
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Configure invoice layout for Bahrain
+# Configure invoice layout for Bahrain (BH-00003)
 
 [!include [banner](../includes/banner.md)]
 
@@ -84,6 +84,12 @@ By default, invoices are generated as Microsoft Excel files. To enable their con
     3. Select **Settings**, and then, on the **Destination settings** page, on the **Screen** tab, set the **Enabled** option to **Yes** to enable printing to the screen.
 
 ![Enabling conversion to PDF](media/emea-bhr-pdf.jpg)
+
+## Configure default model mapping for project invoices
+
+In the **Electronic reporting** workspace, select the **Project invoice model mapping (RDP)** configuration. Turn on **Default model mapping** parameter for the selected configuration.
+
+![Project invoice model mapping configuration](media/invoice-model-tree.png)
 
 ## Configure parameters
 

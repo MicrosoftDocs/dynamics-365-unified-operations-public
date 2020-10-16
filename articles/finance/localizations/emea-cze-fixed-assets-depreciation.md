@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 264314
 ms.search.region: Czech Republic
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -43,9 +43,8 @@ Fixed assets depreciation for the legal requirements in the Czech Republic inclu
 ## Depreciation percentages and coefficients
 Per Czech Republic legislation, fixed assets are grouped in depreciation groups. For each depreciation group, legislation has defined specific values for the depreciation rate for the first year, a depreciation rate for subsequent years, and an adjusted acquisition price. To meet the legal requirements in the Czech Republic, different values of the depreciation rate for the first year, for next years, and for the adjusted acquisition price must be set up in different depreciation groups. The **Depreciation groups** page contains the following options.
 
-| |  |
+| Field                                | Description |
 |-----|------|
-| **Field**                                | **Description**|
 | **Start date**                           | Enter the date when the depreciate group will start.|
 | **Depreciation rate for the first year** | Enter the depreciation percentage for the regular CZ depreciation method or the depreciation coefficient for the accelerated CZ depreciation method used in the first depreciation year of this group. |
 | **Depreciation rate for next years**     | Enter the depreciation percentage for the regular CZ depreciation method or the depreciation coefficient for the accelerated CZ depreciation method for depreciation in years following the year of acquisition.|
@@ -69,9 +68,8 @@ The regular CZ depreciation method calculates depreciation using the following f
 
 The following example shows the regular CZ method of depreciation calculation.
 
-|                                                      |                     |
+| Field                                                | Value           |
 |------------------------------------------------------|---------------------|
-| **Field**                                            | **Value**           |
 | Acquisition value                                    | 100 000             |
 | Acquisition adjustment                               | 50 000 (in 3d year) |
 | Depreciation percentage for the first year           | 14.2%               |
@@ -80,9 +78,8 @@ The following example shows the regular CZ method of depreciation calculation.
 
 This example shows depreciation calculated using the regular CZ method of depreciation.
 
-|                     |                           |
+| Number of years     | Calculation               |
 |---------------------|---------------------------|
-| **Number of years** | **Calculation**           |
 | 1                   | 100 000 \* 14.2% = 14 200 |
 | 2                   | 100 000 \* 28.6% = 28 600 |
 | 3                   | 150 000 \* 25% = 37 500   |
@@ -98,9 +95,8 @@ The accelerated CZ method of deprecation uses coefficients to calculate the depr
 
 The following example shows the accelerated CZ method of depreciation calculation.
 
-|                                                       |           |
+| Field                                                 | Value     |
 |-------------------------------------------------------|-----------|
-| **Field**                                             | **Value** |
 | Acquisition value                                     | 100 000   |
 | Acquisition adjustment (in 3 year)                    | 50 000    |
 | Acquisition adjustment (in 5 year)                    | 60 000    |
@@ -110,9 +106,8 @@ The following example shows the accelerated CZ method of depreciation calculatio
 
 This example shows depreciation calculated using the accelerated CZ method of depreciation.
 
-|                     |                                  |
+| Number of years     | Calculation                      |
 |---------------------|----------------------------------|
-| **Number of years** | **Calculation**                  |
 | 1                   | 100 000 /4 = 25 000              |
 | 2                   | (2 \* 75 000) / (5 - 1) = 37 500 |
 | 3                   | (2 \* 87 500) / (4 - 0) = 43 750 |

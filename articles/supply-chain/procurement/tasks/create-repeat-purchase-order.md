@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: PurchTable, PurchCreateOrder, PurchCopying   
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

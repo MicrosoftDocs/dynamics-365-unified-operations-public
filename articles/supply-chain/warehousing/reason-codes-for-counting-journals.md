@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: InventCountingReasonCodePolicy
+ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

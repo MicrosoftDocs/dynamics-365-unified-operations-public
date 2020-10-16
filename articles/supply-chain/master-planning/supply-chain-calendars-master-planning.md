@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 # ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

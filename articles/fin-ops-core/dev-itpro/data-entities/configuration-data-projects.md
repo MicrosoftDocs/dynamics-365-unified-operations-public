@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 77523
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
 

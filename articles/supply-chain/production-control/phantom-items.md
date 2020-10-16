@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validfrom: 
 ms.dyn365.ops.version: 8.1
 ---

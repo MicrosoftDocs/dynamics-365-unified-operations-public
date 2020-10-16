@@ -17,7 +17,6 @@ ms.search.form:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-douklo
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -112,7 +111,7 @@ The first step is to customize your entity maps by modifying existing entity map
 
 2. Confirm the entity maps that you just modified and added. Be sure to enable and test them, to ensure that they work as you expect.
 
-    ![Adding a new Address books entity map](media/confirm-new-entity-maps.png)
+    ![Confirmation of new entity maps](media/confirm-new-entity-maps.png)
 
 ### Create a new dual-write solution and add your components (Customized entity maps)
 
@@ -188,7 +187,7 @@ Sometimes, a solution might contain different implementations of an entity map. 
 1. Import the dual-write core solution.
 
     1. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this topic to import the dual-write core solution from AppSource into Power Apps.
-    2. Verify that the dual-write core solution is listed under **Solutions** in PowerApps.
+    2. Verify that the dual-write core solution is listed under **Solutions** in Power Apps.
 
 2. Upgrade the entity maps.
 
