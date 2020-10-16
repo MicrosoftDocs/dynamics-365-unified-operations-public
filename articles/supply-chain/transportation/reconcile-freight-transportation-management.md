@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSInvoiceTable,TMSFBDetailReconcile,TMSInvoiceLineReconcile,TMSReconcileInvoice
-# UPdated to reduce IPD
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -5,7 +5,7 @@ title: Transportation management modes and methods
 description: The mode represents the type of transport that the carrier uses for freight deliveries, such as less than load (LTL), truckload (TL), or parcel. The transportation method represents the form of transport that the carrier uses for freight deliveries, such as air, ground, ocean, or rail.
 author: Henrikan
 manager: tfehr
-ms.date: 09/08/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
-ms.search.validFrom: 2020-09-08
+ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: Release 10.0.14
 ---
 

@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata 
  
 ms.search.form: TMSFuelIndexRegion,TMSCarrierFuelIndexTable,TMSFuelIndex
-# Updated to reduce IPD
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

@@ -5,7 +5,7 @@ title: Transportation management status
 description: Set up master codes for transportation statuses to interpret codes that are provided by your shipping carriers. This lets you integrate with shipping carriers to provide a status.
 author: Henrikan
 manager: tfehr
-ms.date: 09/08/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
