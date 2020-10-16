@@ -34,13 +34,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic provides an overview of supported data action cache options in Dynamics 365 Commerce.
 
-## Overview
-
 The Dynamics 365 Commerce online software development kit (SDK) supports caching entities at the application level, which enables caching of data action responses to improve rendering performance and reduce server load. For more information, see [Data actions overview](data-actions.md).
 
 ## Caching a data action
 
-A data action can save its data in either the request or application cache, based on its action input. The **dataCacheType** property of `IActionInput` enables the underlying action runtime to make this decision on the action's behalf. By default the action responses go into the request cache.
+A data action can save data in either the request or application cache, based on its action input. The **dataCacheType** property of `IActionInput` enables the underlying action runtime to make this decision on the action's behalf. By default, the action responses go into the request cache.
 
 ``` typescript
 export class FullProductInput implements IActionInput {
@@ -64,9 +62,9 @@ export class FullProductInput implements IActionInput {
 
 The following cache types are supported and can be set on the **dataCacheType** property:
 
-- **request**: Action input caches the entity for the life cycle of the request, in other words all of the subsequent data action inputs with the same cachekey (within the same request) shall be served from the request cache.
+- **request**: Action input caches the entity for the life cycle of the request. All of the subsequent data action inputs with the same cachekey (within the same request) will be served from the request cache.
 
-- **application**: Action input caches the entity for the life cycle of the application (subject to time to refresh (TTR) and time to live (TTL) values as defined in cache settings), in other words all of the subsequent data action inputs with the same cachekey shall be served from the application cache.
+- **application**: Action input caches the entity for the life cycle of the application (subject to time to refresh (TTR) and time to live (TTL) values as defined in cache settings. All of the subsequent data action inputs with the same cachekey will be served from the application cache.
 
 - **instance**: Instance is a special cache type setting primarily used for aggregator data actions that do not make a request and extract information from other data actions, for example a categories hierarchy. Such data actions are run on server and client independently. If the instance is not specified, then such aggregator data actions would contain duplicate data.
 
