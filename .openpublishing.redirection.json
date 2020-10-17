@@ -1,6 +1,347 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/expense-management/expense-management-mobile-workspace.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/Expense-Management-Parameters.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/Expense-Management-Parameters",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/expense-management.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/expense-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/expense-receipt-processing.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/expense-receipt-processing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/expense-report-distributions.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/expense-report-distributions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/expense-report-multiple-approvers.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/expense-report-multiple-approvers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/expense-workflow.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/expense-workflow",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/expense-workflows.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/expense-workflows",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/ExpenseWorkspaceNew.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/import-credit-card.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/import-credit-card",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/intercompany-expense.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/intercompany-expense",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/manage-expense-delegation.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/manage-expense-delegation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/per-diem.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/per-diem",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/personal-expenses.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/personal-expenses",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/plan-expense-management.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/plan-expense-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/post-expense.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/post-expense",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/travel-expense-policies.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/travel-expense-policies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/travel-req.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/travel-req",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/VAT-expense-report.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/VAT-expense-report",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/expense-management/view-expense-report.md",
+      "redirect_url": "/dynamics365/project-operations/prod-exp/view-expense-report",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/confirm-update-send-project-quotation.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/create-and-apply-vendor-payment-retention-terms.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/create-forecast-models-project-budgets.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/create-new-project.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/create-new-project",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/create-project-team.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/create-project-team",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/custom-fields-mobile.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/custom-fields-mobile",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/eliminate-project-estimate.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/eliminate-project-estimate",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/intercompany-invoicing.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/intercompany-invoicing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/manage-resource-competencies.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/manage-resource-competencies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/Mobile-timesheets.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/Mobile-timesheets",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/overview-project-management-accounting.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/overview-project-management-accounting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/process-project-budgets-for-fiscal-year-end.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-actuals-templates.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-actuals-templates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-categories-templates.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-categories-templates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-contracts-templates.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-contracts-templates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-contracts.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-contracts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-create-advanced-contracts-for-billing-based-progress.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-estimates-templates.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-estimates-templates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-forecasts-budgets.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-forecasts-budgets",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-grants.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-grants",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-integration.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-integration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-mobile-application-overview.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-mobile-application-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-purchase-orders.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-purchase-orders",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-quotations.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-quotations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-resourcing.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-resourcing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-sales-orders.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-sales-orders",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-scheduling-performance.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-scheduling-performance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-sefa-inquiry.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-sefa-inquiry",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-tasks-template.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-tasks-template",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-time-entry-mobile-workspace.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/project-timesheet.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/project-timesheet",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/PSA-integration.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/PSA-integration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/PSA-parameters.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/PSA-parameters",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/resource-fulfillment-planned-resources.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/set-up-project-resources.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/set-up-project-resources",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/set-up-role-based-pricing.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/set-up-role-based-pricing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/set-up-roles-wbs-template.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/set-up-roles-wbs-template",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/setup-manage-vendor-payments.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/setup-manage-vendor-payments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/synchronize-resource-capacity.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/synchronize-resource-capacity",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/transfer-quote-new-existing-project.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/work-breakdown-structures.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/work-breakdown-structures",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/tasks/Adjust-project-transactions.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/Adjust-project-transactions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/tasks/allocate-project.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/allocate-project",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/tasks/configure-intercompany-project-invoicing.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/tasks/configure-standard-costs-labor-expenses.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/tasks/Create-credit-on-project-invoice.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/Create-credit-on-project-invoice",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/tasks/receive-items-purchase-order-item-requirement.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/project-management/tasks/rename-project.md",
+      "redirect_url": "/dynamics365/project-operations/prod-pma/rename-project",
+      "redirect_document_id": "false"
+    },
+
+    {
       "source_path": "articles/commerce/tasks/parameter-configurations-retail-statements.md",
       "redirect_url": "../retail-statements",
       "redirect_document_id": "false"
