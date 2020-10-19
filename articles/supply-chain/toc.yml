@@ -2647,18 +2647,24 @@
           href: warehousing/location-product-dimension-mixing.md
         - name: Quality check
           href: warehousing/quality-check.md
+        - name: Troubleshoot inbound warehouse operations
+          href: warehousing/troubleshoot-warehouse-inbound.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
           items:
           - name: Flexible warehouse-level dimension reservation policy
             href: warehousing/flexible-warehouse-level-dimension-reservation.md
+          - name: Troubleshoot reservations in warehouse management
+            href: warehousing/troubleshoot-warehouse-reservations.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
             href: warehousing/partial-shipping-of-transport-loads.md
           - name: Batch release of partially reserved transfer orders
             href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+          - name: Troubleshoot partial releases and partial shipments
+            href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
         - name: Picking and packing
           items:
           - name: Set up cluster picking
@@ -2699,6 +2705,8 @@
             href: warehousing/outbound-sorting.md
           - name: Put to wall - put to store
             href: warehousing/put-to-wall-put-to-store.md
+          - name: Troubleshoot picking and packing
+            href: warehousing/troubleshoot-warehouse-picking-packing.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -2713,6 +2721,8 @@
             href: warehousing/zone-threshold-replenishment.md
           - name: Replenishment over location capacity
             href: warehousing/replenishment-over-location-capacity.md
+          - name: Troubleshoot warehouse replenishment
+            href: warehousing/troubleshoot-warehouse-replenishment.md
         - name: Load building and shipments
           items:
           - name: Confirm and transfer
@@ -2727,6 +2737,8 @@
             href: warehousing/wave-template-grouping.md
           - name: Reprint and void wave labels
             href: warehousing/reprint-and-void-wave-labels.md
+          - name: Troubleshoot load building and shipments
+            href: warehousing/troubleshoot-warehouse-loads-shipments.md
         - name: Shipment consolidation policies
           items:
           - name: Shipment consolidation policies
@@ -2743,6 +2755,8 @@
             href: warehousing/consolidate-shipments-manual-workbench.md
           - name: Scenario 5 - Consolidate shipments manually by using the Consolidate shipments page
             href: warehousing/consolidate-shipments-manual-form.md
+        - name: Troubleshoot outbound warehouse operations
+          href: warehousing/troubleshoot-warehouse-outbound.md
       - name: Across the warehouse operations
         items:
         - name: Warehouse work policies
@@ -2799,6 +2813,8 @@
             href: warehousing/change-work-pool-on-work.md
           - name: Item consolidation - location utilization
             href: warehousing/item-consolidation-location-utilization.md
+          - name: Troubleshoot warehouse work
+            href: warehousing/troubleshoot-warehouse-work.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
@@ -2845,6 +2861,8 @@
             href: warehousing/mobile-barcode-support.md
           - name: Set up warehouse for transfer orders
             href: warehousing/transfer-orders-warehouse.md
+          - name: Troubleshooting warehouse configuration
+            href: warehousing/troubleshoot-warehouse-configuration.md
         - name: Install and configure the warehouse app
           items:
           - name: Install and connect the warehouse app
@@ -2879,6 +2897,8 @@
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
             href: warehousing/upgrade-migration-warehouse-management-processes.md
+          - name: Troubleshoot upgrade and migration to advanced warehouse management
+            href: warehousing/troubleshoot-warehouse-upgrade-migration.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide

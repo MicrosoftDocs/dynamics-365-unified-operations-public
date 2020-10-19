@@ -1,14 +1,49 @@
-﻿# Picking and Packing
+﻿---
+# required metadata
 
-## Dimension Location cannot be left blank if dimension Serial number is set.
+title: Troubleshoot picking and packing
+description: This topic describes how to fix common issues that you might encounter while picking and packing in Dynamics 365 Supply Chain Management.
+author: perlynne
+manager: tfehr
+ms.date: 10/19/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-**Issue:** When a transfer order is created for an advance WMS enabled warehouse for a serial item, after completing the work when trying to confirm the shipment, the error is generated.
+# optional metadata
 
-**Fix:** The "From" warehouse has transit warehouse which had an empty Default Receipt Location value for the transit warehouse. To solve this, specify a location for default receipt location. Ensure default receipt location on the transit warehouse is license plate controlled.
+ms.search.form: 
+# ROBOTS: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: perlynne
+ms.search.validFrom: 2020-10-19
+ms.dyn365.ops.version: 10.0.15
+---
+
+# Troubleshoot picking and packing
+
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to fix common issues that you might encounter while picking and packing in Dynamics 365 Supply Chain Management.
+
+## Dimension location cannot be left blank if dimension serial number is set.
+
+**Issue:** This error occurs if you create a transfer order for a serial item using a warehouse enabled for an advance warehouse management and then, after completing the work, you try to confirm the shipment.
+
+**Fix:** The "From" warehouse has transit warehouse which had an empty **Default receipt location** value for the transit warehouse. To solve this, specify a location for default receipt location. Ensure default receipt location on the transit warehouse is license plate controlled.
 
 ## **Invalid license plate.**
 
-**Issue:** Error message is being received on the Warehouse Mobile App.
+**Issue:** Error message is being received on the warehouse app.
 
 **Fix:** Ensure the License Plate ID exists in the License Plates table and that the item(s)/quantity on the LP is available (i.e. not blocked)
 

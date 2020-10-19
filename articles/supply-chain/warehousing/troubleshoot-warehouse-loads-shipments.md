@@ -1,8 +1,43 @@
-﻿# Load building and shipments
+﻿---
+# required metadata
+
+title: Troubleshoot load building and shipments
+description: This topic describes how to fix common issues that you might encounter while working with load building and shipments in Dynamics 365 Supply Chain Management.
+author: perlynne
+manager: tfehr
+ms.date: 10/19/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: perlynne
+ms.search.validFrom: 2020-10-19
+ms.dyn365.ops.version: 10.0.15
+---
+
+# Troubleshoot load building and shipments
+
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to fix common issues that you might encounter while working with load building and shipments in Dynamics 365 Supply Chain Management.
 
 ## You can't create a load line for this order line because it contains inventory dimensions that are invalid. You can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. Remove the invalid dimensions from the order line.
 
-**Issue:** Cannot execute Release to warehouse on a Return sales order
+**Issue:** can't execute Release to warehouse on a Return sales order
 
 **Fix:** Unfortunately, the product does not support load processing for a sales return process and thereby not possible to get released to the warehouse.
 
@@ -14,34 +49,30 @@ The other scenario here is that the user is trying to perform an automatic Relea
 
 **Fix:** To release from the Sales Order form, or to release automatically from the release sales order form, no load must exist. The load will be created automatically once the wave is processed.
 
-## The delivery note correction cannot be processed.
+## The delivery note correction can't be processed.
 
-**Issue:** After posting of delivery note we are not able to cancel the posted Delivery note since the button Cancel is disabled. Also, not able to correct the delivery note while performing the correct delivery note following error thrown. "The delivery note correction cannot be processed. The delivery note only contains items that are subject to warehouse management processes, as these are not supported by Delivery Note correction."
+**Issue:** After posting of delivery note we are not able to cancel the posted Delivery note since the button Cancel is disabled. Also, not able to correct the delivery note while performing the correct delivery note following error thrown. "The delivery note correction can't be processed. The delivery note only contains items that are subject to warehouse management processes, as these are not supported by Delivery Note correction."
 
 **Fix:** In order to correct posted packing slips for items which are enabled for warehouse management, the posting must occur from the load, not from the order directly.
 
-## How to Create Work from Outbound Loads rather than waves.
+## How to create work from outbound loads rather than waves.
 
 **Issue:** Is it possible to create work from outbound loads rather than waves?
 
 Repro steps:
 
 1. Create an outbound load using a sales or transfer order.
-
 2. Release load to warehouse.
-
 3. Currently, no picking work is being generated.
 
 **Fix:** If work needs to be generated immediately when the load is released, then Wave template needs to be configured accordingly. On wave template, set the following settings to Yes:
 
--   Automate wave creation.
+- Automate wave creation.
+- Process wave at release to warehouse.
+- Automate wave release.
 
--   Process wave at release to warehouse.
+## Partially shipped load can't be released again.
 
--   Automate wave release.
-
-## Partially shipped load cannot be released again.
-
-**Issue:** A "Partially shipped" load cannot be released again to the warehouse. The message "Operation complete" appears at release to the warehouse, but nothing happens, no work gets created for the remaining quantity. This happens when originally there is an Incomplete reservation and using Transport Load functionality.
+**Issue:** A "Partially shipped" load can't be released again to the warehouse. The message "Operation complete" appears at release to the warehouse, but nothing happens, no work gets created for the remaining quantity. This happens when originally there is an Incomplete reservation and using Transport Load functionality.
 
 **Fix:** KB number: 4574490: Partially shipped loads can be re-waved and re-processed.
