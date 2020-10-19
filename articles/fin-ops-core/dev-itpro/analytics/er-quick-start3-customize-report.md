@@ -226,7 +226,7 @@ You can now use the standard ER configurations that you imported to electronical
 
 ![Free text invoice page](./media/er-quick-start3-add-invoice.png)
 
-For more information, see [Create a free text invoice](../../finance/accounts-receivable/create-free-text-invoice-new.md).
+For more information, see [Create a free text invoice](../../../finance/accounts-receivable/create-free-text-invoice-new.md).
 
 ### Post a new invoice
 
