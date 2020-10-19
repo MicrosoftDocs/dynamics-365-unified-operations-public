@@ -18,7 +18,7 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia,Italy
 # ms.search.industry: 
 ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
@@ -70,9 +70,10 @@ This topic briefly describes some country-specific scenarios, such as intra-comm
 </tr>
 <tr>
 <td>Document date for exchange rates</td>
-<td>Poland, Hungary, Czech Republic</td>
+<td>Poland, Hungary, Czech Republic, Italy</td>
 <td>
 <p>Legislation provides different rules for selecting valid exchange rates for business transactions. In the <strong>Exchange rate date</strong> field on the <strong>Accounts receivable parameters</strong> and <strong>Accounts payable parameters</strong> pages, you can select the date that should be used for amounts in the accounting currency calculation on purchase and sales documents. During data entry, the system retrieves the exchange rate for the transaction, based on this parameter.</p>
+<blockquote>[!NOTE]<br>For Italy this functionality is only applicable in the Accounts payable module. In the Accounts payable parameters a user can select <strong>Posting date</strong> or <strong>Document date</strong> in the <strong>Exchange rate date</strong> field.   </blockquote>
 <blockquote>[!NOTE]<br>When you set the <strong>Exchange rate date</strong> field to <strong>Document date (for EU trade only)</strong>, the system uses the sales tax group. For the sales tax group, there is a <strong>EU trade</strong> parameter on the <strong>General</strong> tab. If the <strong>EU trade</strong> option is set to <strong>Yes</strong> for the sales tax group, and if this sales tax group exists on the header of the document, the system retrieves the exchange rate based on the document date. If the <strong>EU trade</strong> option is set to <strong>No</strong> for this sales tax group, the system retrieves the exchange rate based on the posting date of the document.</blockquote>
 </td>
 </tr>
