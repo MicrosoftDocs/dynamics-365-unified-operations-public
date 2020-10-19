@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.12
 # Set up the Electronic invoicing add-on
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Electronic invoicing add-on feature setup is the process of creating the required configuration through the Regulatory Configuration Services (RCS) environment and publishing that configuration to the Electronic invoicing add-on server. The setup lets you create the configurable rules that enable the Electronic invoicing add-on to use a secure protocol over the internet to communicate and exchange data with a third-party entity through web services.
 
