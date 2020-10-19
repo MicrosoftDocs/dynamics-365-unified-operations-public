@@ -5,7 +5,7 @@ title: Data action cache settings
 description: This topic covers cache settings for data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/15/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -119,14 +119,14 @@ The Dynamics 365 Commerce online SDK's data action layer provides flexibility fo
 Supported values for bypassCache are: 
  
 - **get** - Ignores cache while performing read and fetches the latest information from Retail Server.
-- **none** - Ignores cache altogether.
+- **none** - Action response is cached per request. If byPassCache is not specified runtime defaults to this value.
  
 The following is an example of usage.
 
 ```typescript
 if (checkoutCartId) {
     try {
-        checkoutCart = await readAsync({ callerContext: ctx, bypassCache: 'none' }, checkoutCartId);
+        checkoutCart = await readAsync({ callerContext: ctx, bypassCache: 'get' }, checkoutCartId);
     } catch {
         ctx.telemetry.error('Error getting checkout cart based on saved checkout cart ID');
         ctx.telemetry.exception(error);
