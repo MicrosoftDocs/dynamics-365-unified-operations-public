@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.12
 # Get started with the Electronic invoicing add-on for Brazil 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 > [!IMPORTANT]
 > The Electronic invoicing add-on for Brazil doesn't currently support all the functions that are available in the fiscal document integration that is built into Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
