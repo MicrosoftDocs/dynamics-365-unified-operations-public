@@ -35,19 +35,17 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while picking and packing in Dynamics 365 Supply Chain Management.
 
-<!-- KFM: I think most of these headings are literal error messages. If so, they should be in quotes and introduced at least with "Error: ".  -->
-
 ## Dimension location cannot be left blank if dimension serial number is set.
 
-**Issue:** This error occurs if you create a transfer order for a serial item using a warehouse enabled for an advance warehouse management and then, after completing the work, you try to confirm the shipment.
+**Issue:** This error occurs if you create a transfer order for a serial item using a warehouse enabled for advance warehouse management and then, after completing the work, you try to confirm the shipment.
 
-**Fix:** The "From" warehouse has transit warehouse which had an empty **Default receipt location** value for the transit warehouse. To solve this, specify a location for default receipt location. Ensure default receipt location on the transit warehouse is license plate controlled.
+**Fix:** The "From" warehouse has a transit warehouse which has an empty **Default receipt location** value for the transit warehouse. To solve this, specify a location for default receipt location. Ensure default receipt location on the transit warehouse is license plate controlled.
 
 ## Invalid license plate.
 
 **Issue:** Error message is being received on the warehouse app.
 
-**Fix:** Ensure the License Plate ID exists in the License Plates table and that the item(s)/quantity on the license plate is available (i.e. not blocked)
+**Fix:** Ensure that the License Plate ID exists in the License Plates table and that the item(s)/quantity on the license plate is available (i.e. not blocked).
 
 ## Field 'Load weight'(=-%1) can only contain positive numbers. Update has been cancelled.**
 
@@ -63,13 +61,15 @@ This topic describes how to fix common issues that you might encounter while pic
 
 ## You cannot move inventory to a license plate controlled location.
 
-**Issue:** Unable to reduce picked quantities on a load
+**Issue:** Unable to reduce picked quantities on a load.
 
 **Fix:** This used to be true in earlier versions; however, it's now possible to unpick to a License Plate controlled location. The user must specify the location *and* License Plate in the reduce picked quantity form from the load line.
 
 ## The Item %1 is not in location %2 in warehouse %3.
 
 **Issue:** When a specific Batch and Serial number is reserved for a piece of work, scanning a license plate which doesn't contain that Batch/Serial number gives an incorrect error message.
+
+**Fix** KB number: 4581881: Change the error message to: The license plate [License plate ID] does not contain the reserved dimensions [List of dimensions] for the item [Item ID].
 
 ## Printing delivery note or packing content by warehouse.
 
