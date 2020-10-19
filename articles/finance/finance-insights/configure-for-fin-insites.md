@@ -263,6 +263,7 @@ You can complete the steps as listed or use the attached PowerShell script to sp
         }
       }
 ```
+---
 
 ## Configuring Azure setup
 
@@ -748,6 +749,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
     }
 
 ```
+---
 
 ### Manual setup
 
