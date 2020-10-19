@@ -224,7 +224,7 @@ public static class CommerceRoles
     <extensionComposition>
         <!-- Use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
         If you host in an application with a bin folder, this is not required. -->
-        <add source="assembly" value="SimpleExtensionSample" >
+        <add source="assembly" value="SimpleExtensionSample" />
     </extensionComposition>
     ```
 
