@@ -2899,6 +2899,8 @@
             href: warehousing/upgrade-migration-warehouse-management-processes.md
           - name: Troubleshoot upgrade and migration to advanced warehouse management
             href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+        - name: Troubleshoot warehouse setup
+          href: warehousing/troubleshoot-warehouse-setup.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
