@@ -132,8 +132,8 @@ Notice that, in addition to the selected **Peppol Sales Invoice** ER format, oth
 
 To simulate the state that ER configurations in the current Finance instance  would be in if you imported version **11.2.2** of the **Peppol Sales Invoice** ER format in the past (for example, on August 7, 2019), follow these steps.
 
-- On the Action Pane, select **Delete** to delete all ER configurations that were published after August 7, 2019.
-- On the **Versions** FastTab, select **Delete** to delete all versions of ER configurations that were published after August 7, 2019.
+- On the Action Pane, select **Delete** to delete all ER configurations that were published after August 7, 2019. The only **Invoice model**, **Invoice model mapping** (initially named **Customer invoice model mapping**), **UBL Sales invoice** and **Peppol Sales Invoice** configurations must be left.
+- For the remained ER configurations, on the **Versions** FastTab, select **Delete** to delete all versions of ER configurations that were published after August 7, 2019.
 
 Then verify that the following configurations are available in the configuration tree:
 
@@ -269,7 +269,7 @@ Follow these steps to do the customization.
 
 1. Go to **Accounts receivables** \> **Customers** \> **All customers**.
 2. On the **All customers** page, select the **DE-014** customer account link.
-3. On the **General** FastTab, right-click in the **Language** field, and then select **Personalize: UpperGroup**.
+3. On the **General** FastTab, right-click in any blank area under the **Language** field, and then select **Personalize: UpperGroup**.
 
     The contents of the **General** FastTab are highlighted, and a **Personalize** menu appears.
 
@@ -325,7 +325,7 @@ You can now use the ER data model designer to edit version 50.1 of the **Invoice
 You must modify your custom data model by adding a new field to provide the value of a federal tax identification code. This code is part of the customer data for every ER format that will use this data model as a data source.
 
 1. On the **Configurations** page, in the configuration tree in the left pane, select **Invoice model (Litware)**.
-2. On the **Versions** FastTab, select version **51.1** of the selected ER data model configuration in **Draft** status.
+2. On the **Versions** FastTab, select version **50.1** of the selected ER data model configuration in **Draft** status.
 3. On the Action Pane, select **Designer** for the selected configuration version.
 4. On the **Data model designer** page, in the data model tree, select **Customer information (Customer)**.
 5. Select **New**.
