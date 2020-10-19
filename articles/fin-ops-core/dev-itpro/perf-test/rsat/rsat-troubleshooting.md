@@ -117,7 +117,7 @@ If a test case inconsistently fails with the following error, this usually indic
 <Message>An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail.</Message>
 <Message>At least one security token in the message could not be validated.</Message>
 ```
-Typically, this error happens when the test case is running against a standard acceptance test environment (Tier 2 or higher) and you have not configured the authentication thumbprint on all of the AOS virtual machines. Make sure you properly add the thumbprint to the **wif.config** file on all of the AOS machines. For more information, see [Configure the test environment to trust the connection](rsat-install-configure.md#configure-the-test-environment-to-trust-the-connection).
+Typically, this error happens when the test environment has not been configured to trust the certificate that RSAT is using for authentication (The certificate is identified by the thumbprint specified in your RSAT settings). For example, the thumbprint could be missing in the wif.config file on the AOS virtual machine of the test environment. If you are running against a standard acceptance test environment (Tier 2 or higher), you many not have configured the authentication thumbprint on all of the AOS virtual machines. Make sure you properly add the thumbprint to the **wif.config** file on all of the AOS machines. For more information, see [Configure the test environment to trust the connection](rsat-install-configure.md#configure-the-test-environment-to-trust-the-connection).
 
 ## Google Chrome Browser
 
