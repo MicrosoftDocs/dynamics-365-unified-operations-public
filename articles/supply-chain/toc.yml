@@ -2675,8 +2675,6 @@
             href: warehousing/tasks/license-plate-label-printing.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
-          - name: Warehouse app event processing
-            href: warehousing/warehouse-app-events.md
           - name: Piece picking confirmation
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
@@ -2855,6 +2853,8 @@
             href: warehousing/configure-app-field-names-priorities-warehouse.md
           - name: Set up mobile devices for warehouse work
             href: warehousing/configure-mobile-devices-warehouse.md
+          - name: Warehouse app event processing
+            href: warehousing/warehouse-app-events.md
           - name: License plate receiving with the warehouse app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
