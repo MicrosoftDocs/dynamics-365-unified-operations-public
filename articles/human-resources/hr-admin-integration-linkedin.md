@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Human Resources
 
 # Integrate with LinkedIn Talent Hub
 
-[LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) is an Applicant Tracking System (ATS) platform that lets you source, manage, and hire employees all in one place. You can integrate Dynamics 365 Human Resources with LinkedIn Talent Hub, so you can easily create employee records in Human Resources for applicants who have been hired for a position.
+[LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) is an Applicant Tracking System (ATS) platform. It lets you source, manage, and hire employees all in one place. Integrating Dynamics 365 Human Resources with LinkedIn Talent Hub lets you easily create employee records in Human Resources for applicants who have been hired for a position.
 
 ## Setup
 
-A system administrator must perform setup tasks to enable the integration, including setting up a user and security role in the Power Apps environment to grant LinkedIn Talent Hub the appropriate permissions to write data into Human Resources.
+A system administrator must complete setup tasks to enable LinkedIn Talent Hub integration. First, you must set up a user and security role in the Power Apps environment to grant LinkedIn Talent Hub the appropriate permissions to write data into Human Resources.
 
 ### Link your environment to LinkedIn Talent Hub
 
@@ -107,7 +107,7 @@ An application user must be created for the LinkedIn Talent Hub adapter to grant
 
 ### Assign security role to the new user
 
-After saving and closing the new application user in the previous section, you are returned to the **Users list** page.
+After you save and close the new application user in the previous section, you return to the **Users list** page.
 
 1. On the **Users list** page, change the view to **Application Users**.
 
@@ -117,7 +117,7 @@ After saving and closing the new application user in the previous section, you a
 
 5. Select the new security role you created for the integration.
 
-6. Click **OK**.
+6. Select **OK**.
     
 ### Add Azure Active Directory App in Human Resources
 
@@ -125,7 +125,7 @@ After saving and closing the new application user in the previous section, you a
 
 2. Add a new record to the list:
 
-    - **Client Id**: 3a225c96-d62a-44ce-b3ec-bd4e8e9befef
+    - **Client ID**: 3a225c96-d62a-44ce-b3ec-bd4e8e9befef
     - **Name**: The name of the Power Apps security role created earlier, for example **LinkedIn Talent Hub HRIS Integration**.
     - **User ID**: Select a user that has permissions to write data in Personnel Management.
 
@@ -150,7 +150,7 @@ Once setup completes, recruiters and HR professionals can use the **Export to HR
 
 Once a candidate has moved through the recruiting process and has been hired, you can export the candidate record from LinkedIn Talent Hub to Human Resources.
 
-1. In LinkedIn Talent Hub, open the project for which you have hired the new employee.
+1. In LinkedIn Talent Hub, open the project for which you hired the new employee.
 
 2. Select a candidate record.
 
