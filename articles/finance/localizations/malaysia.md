@@ -22,7 +22,7 @@ ms.search.scope: Operations
 ms.custom: 
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 

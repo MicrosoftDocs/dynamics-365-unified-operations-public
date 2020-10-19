@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays
+ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -24,7 +24,7 @@ ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -24,7 +24,7 @@ ms.custom: 72004
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

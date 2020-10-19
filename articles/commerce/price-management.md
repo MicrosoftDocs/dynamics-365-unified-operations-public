@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations, Retail
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: ShalabhjainMSFT
+ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 

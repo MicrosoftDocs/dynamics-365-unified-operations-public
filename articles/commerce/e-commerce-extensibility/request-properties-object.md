@@ -273,4 +273,6 @@ Here in an example of the page mock.
 
 [Interactive components overview](interactive-components.md)
 
+[Mock the signed-in state during local development](mock-sign-in.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)

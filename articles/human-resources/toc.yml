@@ -5,6 +5,10 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: October 6, 2020
+      href: hr-whats-new-2020-10-06.md
+    - name: September 26, 2020
+      href: hr-whats-new-2020-09-26.md
     - name: September 16, 2020
       href: hr-whats-new-2020-09-16.md
     - name: September 3, 2020
@@ -75,6 +79,8 @@
         href: hr-admin-integration-common-data-service.md
       - name: Common Data Service entities
         href: hr-developer-entities.md
+      - name: Configure Common Data Service virtual entities
+        href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
@@ -215,6 +221,10 @@
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
     - name: Human Resources app in Teams
       href: hr-admin-teams-leave-app.md
+    - name: Prepare for go-live
+      href: hr-admin-go-live-prepare.md
+    - name: Go-live FAQ
+      href: hr-admin-go-live-faq.md
     - name: Documentation resources
       items:
       - name: Help system
@@ -232,7 +242,7 @@
     - name: Troubleshoot Human Resources
       items:
       - name: Get support
-        href: hr-admin-troubleshooting-support.md
+        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
       - name: Optimize performance by scheduling batch jobs after hours
         href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks

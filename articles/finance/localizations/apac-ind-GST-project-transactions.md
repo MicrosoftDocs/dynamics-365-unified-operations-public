@@ -286,7 +286,7 @@ The following illustration shows an example of the **Tax invoice** report.
 
 7. Select **OK**.
 
-## Create a project invoice proposal
+## Create and post a project invoice proposal
 
 1. On the **Service agreements** page, on the Action Pane, on the **Invoice** tab, in the **Related information** group, select **Project invoice proposals**.
 2. Select **New** \> **Invoice proposal**.

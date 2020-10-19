@@ -80,7 +80,7 @@ After you've embedded a canvas app on a page and confirmed that it's working cor
     - If you don't have the Saved views feature turned on, you can have the system admin push a personalization that includes the embedded app to all users or a subset of users. Alternatively, you can export your page's personalizations, and send them to one or more users. Each of those users can then import the personalizations. The personalization toolbar has actions that let you export and import personalizations. 
     
 > [!NOTE]
-> If the canvas app has been shared with external users, those users can't use the embedded app inside Finance and Operations apps. However, they can access the app directly inside Power Apps. External users include guests and users who don't belong to the Office 365 Azure Directory where the Finance and Operations app is deployed.
+> If the canvas app has been shared with external users, those users can't use the embedded app inside Finance and Operations apps. However, they can access the app directly inside Power Apps. External users include guests and users who don't belong to the Microsoft 365 Azure Directory where the Finance and Operations app is deployed.
 
 See [Personalize the user experience](personalize-user-experience.md) for more details about the personalization capabilities in the product and how to use them.
 

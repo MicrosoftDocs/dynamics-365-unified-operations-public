@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

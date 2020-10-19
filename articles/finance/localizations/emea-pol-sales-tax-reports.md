@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 274063
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 

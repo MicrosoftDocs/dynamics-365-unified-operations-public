@@ -32,7 +32,6 @@ ms.dyn365.ops.version:
 # Header module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 

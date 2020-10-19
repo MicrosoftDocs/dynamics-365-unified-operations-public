@@ -5,7 +5,7 @@ title: Database movement API - Reference - v1 - Get status
 description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,7 +77,7 @@ GET /databasemovement/v1/fetchstatus/project/12345/environment/5362377c-bc37-4f9
     "OperationActivityId": "6a90b45f-1764-4077-b924-3f4671540237",
     "ErrorMessage": null,
     "VersionEOL": "9999-12-31T23:59:59.9999999",
-    "ProjectId": "12345",
+    "ProjectId": 12345,
     "EnvironmentId": "5362377c-bc37-4f92-b30e-fe0c1e664cc0",
     "ActivityId": "55eb4327-9346-4c7b-82bd-fe8ef15112c6",
     "CompletionDate": null,
