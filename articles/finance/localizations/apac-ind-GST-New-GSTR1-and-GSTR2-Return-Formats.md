@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a business vertical
-description: This topic explains how to create a business vertical. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
+title: New GSTR-1 and GSTR-2 return formats
+description: This topic provides information about how to generate GSTR-1 and GSTR-2 reports in Microsoft Dynamics 365 according to the new format that was released by Goods and Services Tax (GST) Suvidha Providers, or GSPs.
 author: prabhatb
 manager: EricWang
 ms.date: 10/11/2020
@@ -28,187 +28,240 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# New GSTR1 and GSTR2 Return formats 
+# New GSTR-1 and GSTR-2 return formats
 
-The format of the GSTR -1 and GSTR-2 Return has been updated following the new format updated by the GSP ClearTax. 
+[!include [banner](../includes/banner.md)]
 
-### The following CSV Files have been deprecated: 
- 
-### GSTR-1 
--	GSTR1 Adjust multiple Advance receipt for invoice. 
--	GSTR1 Advance receipt format 
--	GSTR 1 Refund voucher 
- 
-### GSTR-2: 
--	GSTR2 Adjust multiple Advance payment for invoice. 
--	GSTR2 Advance payment format 
--	GSTR2 Refund voucher 
+The format of the GSTR-1 and GSTR-2 returns has been updated in response to the new format that was updated by the ClearTax Goods and Services Tax (GST) Suvidha Provider, or GSP.
 
-### The following files have been updated: 
- 
-### GSTR1 
--	GSTR1 Invoice and Bill of Supply 
--	GSTR1 Credit debit note 
+The following comma-separated values (CSV) files have been made obsolete (deprecated):
 
-### GSTR-2 
--	GSTR2 Invoice and bill of supply 
--	GSTR2 Credit debit note 
+- **GSTR-1:**
 
-### Changes in the new return format 
+    - GSTR1 Adjust multiple Advance receipt for invoice
+    - GSTR1 Advance receipt format
+    - GSTR1 Refund voucher
 
-### GSTR-1 Return 
+- **GSTR-2:**
 
-The following columns have been added in below file:
+    - GSTR2 Adjust multiple Advance payment for invoice
+    - GSTR2 Advance payment format
+    - GSTR2 Refund voucher
 
-**Sales invoice and Bill of supply** 
+The following files have been updated:
 
-![](media/New-GSTR-Format-001.PNG)
+- **GSTR-1:**
 
-**Sales credit and debit note file**
+    - GSTR1 Invoice and Bill of Supply
+    - GSTR1 Credit debit note
 
-![](media/New-GSTR-Format-002.PNG)
+- **GSTR-2:**
 
-### GSTR-2 Return 
+    - GSTR2 Invoice and bill of supply
+    - GSTR2 Credit debit note
 
-The following additional columns have been added: 
+## Changes in the new return format
 
-**Purchase invoice and bill of supply file** 
+### GSTR-1
 
-![](media/New-GSTR-Format-003.PNG)
+The following columns have been added in these files:
 
-**Purchase credit and debit note file** 
+- **Sales Invoice and Bill of supply file:**
 
-![](media/New-GSTR-Format-004.PNG)
+    - Differential % of Tax Rate
+    - Supply covered Under Sec.7 of IGST Act
+    - Would you claim Refund?
+    - Return Filing month
+    - Return Filing Quarter
 
-### Set up Finance to report ANX-1
+- **Sales credit Debit note file:**
 
-The following tasks must be completed to prepare Finance to report ANX-1.
+    - Applicable % of tax Rate
+    - Supply covered under Sec. 7 of IGST Act
+    - Would you claim Refund?
+    - Type of Export
+    - Shipping Port code - Export
+    - Shipping Bill number - Export
+    - Shipping Bill date - Export
+    - Return Filling Month
+    - Return filing quarter
+    - GSTN of E-commerce market place
+
+### GSTR-2
+
+The following columns have been added in these files:
+
+- **Purchase Invoice and Bill of Supply file:**
+
+    - Supply covered under section 7 of IGST Act
+    - Would you claim Refund
+    - Return Filing Month
+    - Return Filing Quarter
+
+- **Purchase Credit Debit Note file:**
+
+    - Supply covered under Sec 7 of IGST Act
+    - Would you claim Refund
+    - Type of Import (Goods, Services, SEZ)
+    - Bill of Entry port code
+    - Bill of entry number
+    - Bill of Entry Date
+    - Bill of Entry Value
+    - Return filling Month
+    - Return filling Quarter
+
+### Set up Dynamics 365 Finance to report ANX-1
+
+You must complete the following tasks to prepare Microsoft Dynamics 365 Finance to report ANX-1:
+
 - Import and set up Electronic reporting (ER) configurations.
--	Map the reporting configuration under Tax setup.
--	Provide report data for report generation.
-    -	ANX-1
-    -	Generate ANX-1 (10 CSV) files
--	Provide report data for report generation.
-    - Purchase Register 
-    - Generate Purchase Register excel file.
+- Map the reporting configuration in the tax setup.
+- Provide report data for report generation.
 
-### Import tax configuration.
-  -	Taxable Document.version.82
-  -	Taxable Document (India). version 82.155
-  -	Tax (India GST). version.82.155.300
-  
- ## Import and set up Electronic reporting (ER) configurations. 
- To prepare Finance for GSTR Return reporting, you must import the following or higher versions of ER configurations following the sequence provided below.
- 
- |     ER configuration name              	|     Type                   	|     Format     	|     Version    	|
-|----------------------------------------	|----------------------------	|----------------	|----------------	|
-|     GST Returns model                  	|     Model                  	|      XML       	|     16         	|
-|     GST Returns model mapping          	|     Model                  	|      XML       	|     16.7       	|
-|     GSTR-1 for Old Return              	|     Model                  	|      XML       	|     16.32      	|
-|     GSTR-1 for new Return              	|     Model                  	|      XML       	|     16.41      	|
-|     GSTR-2 for Old Return              	|     Model                  	|      XML       	|     16.36      	|
-|     GSTR-2 for new Return              	|     Model                  	|      XML       	|     16.40      	|
-|     GST Returns govt. model mapping    	|     Model                  	|      XML       	|     19.10      	|
-|     GST Returns govt. model            	|     Model                  	|      XML       	|     19.0       	|
-|     GST Returns govt. model mapping    	|     Model                  	|      XML       	|     19.12      	|
-|     GST ANX-1 Govt. offline tool       	|     Model                  	|      XML       	|     19.22      	|
-|     Purchase Register                  	|     Model                  	|      XML       	|     19.7       	|
-|     ANX-1                              	|     Format (exporting)     	|      CSV       	|                	|
-|     Purchase Register                  	|     Format (exporting)     	|     Excel      	|                	|
-|     GSTR-1 (new)                       	|     Format (exporting)     	|      CSV       	|                	|
-|     GSTR-2 (new)                       	|     Format (exporting)     	|      CSV       	|                	|
+    - ANX-1
+    - Generate ANX-1 files. (There are 10 CSV files.)
 
-Import the latest versions of these configurations. The version description usually includes the changes that were introduced in the configuration version.
-**Note**: After all the ER configurations from the preceding table are imported, you need to map the Report configuration under Tax setup.
+- Provide report data for report generation.
 
-|     Name                             	|     Version    	|     Report controller               	|     Description (Pl)                                                 	|
-|--------------------------------------	|----------------	|-------------------------------------	|----------------------------------------------------------------------	|
-|     GST ANX-1 Govt. Offline Tool     	|     19.22      	|     GST ANX-1 Govt. offline Tool    	|     New GSTR return applicable from 1.4.2020 onward                  	|
-|     GSTR-1 CSV (old)                 	|     16.32      	|     GSTR-1 (old)                    	|     Existing GSTR-1 format                                           	|
-|     GSTR-1 Govt. Offline Tool CSV    	|     19.10      	|     GSTR-1 Govt. Offline Tool       	|     Existing GSTR-1 offline tool. (Ineffective from 1.4.2020)        	|
-|     GSTR-2 CSV (old)                 	|     16.36      	|     GSTR-2 (old)                    	|     Existing GSTR-2 format                                           	|
-|     Purchase register                	|     19.7       	|     Purchase Register               	|     New Register for inward transaction applicable from 1.4.2020     	|
-|     GSTR-1 CSV (new)                 	|     16.41      	|     GSTR-1 (new)                    	|     New GSTR-1 format                                                	|
-|     GSTR-2 CSV (new)                 	|     16.40      	|      GSTR-2 (new)                   	|     New GSTR-2 format                                                	|
+    - Purchase Register
+    - Generate the Purchase Register Excel file.
 
-## Important columns added in New GSTR-1  
+## Import tax configuration
 
-|     Name          	|     Report                               	|     File format    	|     Column title                                  	|     Description                                                                                                                                                                                                                                       	|
-|-------------------	|------------------------------------------	|--------------------	|---------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-|     GSTR-1        	|     Sales Invoice and Bill of supply     	|     CSV            	|     Differential % of tax rate                    	|     If the supply is eligible to be taxed at a lower percentage of   the existing tax rate, select define%. For example, if normal tax rate   is 12% and the differential percentage of tax rate is 65%, the applicable tax   rate would be 7.8%.     	|
-|     GSTR-1        	|     Sales Invoice and Bill of supply     	|     CSV            	|     Supply covered under Section 7 of IGST Act    	| If the supply is covered under section 7 of the IGST act, select Yes from dropdown. Otherwise, leave the field blank. Supply is covered covered under Section 7.                                                                                      	|
-|     GSTR-1        	|     Sales Invoice and Bill of supply     	|     CSV            	|     Would you claim refund?                       	|     If you want to claim a refund, select Yes. Otherwise, select   No from the drop-down. If the supplies are without the payment of tax, select No from the drop-down list.                                                                          	|
-|     GSTR-1        	|     Sales Invoice and Bill of supply     	|     CSV            	|     Return filling month                          	|     The system will select from the period range defined in the GSTR   report dialog box.                                                                                                                                                             	|
-|     GSTR-1        	|     Sales Invoice and Bill of supply     	|     CSV            	|     Return filling quarter                        	|     The system will select from the period range defined in the GSTR   report dialog box.                                                                                                                                                             	|
-|        GSTR-1     	|     Sales credit Debit note              	|     CSV            	|     Applicable % of tax rate                      	|     If the supply is eligible to be taxed at a lower percentage of   the existing rate of tax, select define% from the dropdown. Otherwise,   leave the field blank.                                                                                  	|
-|     GSTR-1        	|     Sales credit Debit note              	|     CSV            	|     Supply covered U/s 7 of IGST act              	|     If place of supply of Invoice address and place of supply of   shipping address are in different location including export /SEZ/DE                                                                                                                	|
-|     GSTR-1        	|     Sales credit Debit note              	|     CSV            	|     Would you claim refund                        	|     If the GST payment type is WOPAY (Without payment), select No.   Otherwise, select Yes.                                                                                                                                                           	|
-|     GSTR-1        	|     Sales credit Debit note              	|     CSV            	|     Type of export                                	|     Provide one of the following four values.     Export with Payment of GST     Export without Payment of GST     SEZ     Deemed Export                                                                                                              	|
-|     GSTR-1        	|     Sales credit Debit note              	|     CSV            	|     Shipping port code – export                   	|     Shipping port code will come from the shipping bill.                                                                                                                                                                                              	|
-|     GSTR-1        	|     Sales credit Debit note              	|     CSV            	|     Shipping Bill number -export                  	|     The shipping bill number information flow from the posted   shipping bill order.                                                                                                                                                                  	|
-|     GSTR-1        	|     Sales credit Debit note              	|     CSV            	|     Shipping bill date-export                     	|     The shipping bill number information flow from the posted   shipping bill order.                                                                                                                                                                  	|
-|     GSTR-1        	|     Sales credit Debit note              	|     CSV            	|     Return filling month                          	|     The month for which the transactions report is generated.                                                                                                                                                                                         	|
-|     GSTR-1        	|     Sales credit Debit note              	|     CSV            	|     Return filling quarter                        	|     The system will select from the period range defined in the GSTR   report dialog box.                                                                                                                                                             	|
-|     GSTR-1        	|     Sales credit Debit note              	|                    	|     GSTN of e-commerce marketplace                	|     GSTIN of e-commerce operator from the e-commerce operator tax information.                                                                                                                                                                        	|             
+- Taxable Document.version.82
+- Taxable Document (India).version 82.155
+- Tax (India GST).version.82.155.300
 
-## Important columns added in New GSTR-2  
+## Import and set up ER configurations
 
-|     Name      	|     Report                                 	|     File format    	|     Column title                                  	|     Information description                                                                                                                                                                                                                          	|
-|---------------	|--------------------------------------------	|--------------------	|---------------------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-|     GSTR-2    	|     Purchase Invoice and Bill of Supply    	|     CSV            	|     Differential % of Tax Rate                    	|     If   the supply is eligible to be taxed at a lower percentage of the existing rate   of tax, select define% from dropdown. Otherwise, leave the field blank.   IN the rate set up for the ax component, select Applicable percentage of rate.    	|
-|     GSTR-2    	|     Purchase Invoice and Bill of Supply    	|     CSV            	|     Supply covered under Section 7 of IGST Act    	|     If   the place of supply of the Invoice address and the place of supply of the shipping   address are in different locations, include the export, /SEZ/DE.                                                                                       	|
-|     GSTR-2    	|     Purchase Invoice and Bill of Supply    	|     CSV            	|     Would you claim refund?                       	|     If you want to claim a refund, select Yes, otherwise select No.     If supplies are without payment of   tax, select No from the drop-down list.                                                                                                 	|
-|     GSTR-2    	|     Purchase Invoice and Bill of Supply    	|     CSV            	|     Return filling month                          	|     The   system will select from the period range defined in GSTR report dialog box.                                                                                                                                                                	|
-|     GSTR-2    	|     Purchase Invoice and Bill of Supply    	|     CSV            	|     Return filling Quarter                        	|     The   system will select from the period range defined in GSTR report dialog box.                                                                                                                                                                	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Supply covered under Section 7 of IGST Act    	|     In the Tax document, the Inter-state field is set to Yes,   this field will be displayed as Yes.                                                                                                                                                 	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Would you claim refund?                       	|     If you want to claim a refund, select Yes, otherwise select No from the drop-down list. If supplies are without payment of tax, select No from the drop-down list.                                                                               	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Type of import                                	| Provide one of the following four values.(1) Import WT (2) import WOT (3) SEZ (4) Deemed Export                                                                                                                                                      	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Bill of entry port code – Import              	|     The   Bill of entry code will come from the Bill of entry.                                                                                                                                                                                       	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Bill of entry number -Import                  	|     The   Bill of entry number information flow from the posted Bill of entry.                                                                                                                                                                       	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Bill of entry date-Import                     	|     Bill   of entry date information flow from the posted Bill of entry                                                                                                                                                                              	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Bill of entry value -Import                   	|     The Assessable value displayed on the Bill of entry page.                                                                                                                                                                                        	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Return filling month                          	|     The   system will select from the period range defined in GSTR report dialog box.                                                                                                                                                                	|
-|     GSTR-2    	|     Purchase Credit Debit Note             	|     CSV            	|     Return filling quarter                        	|     The   system will select from the period range defined in GSTR report dialog box.                                                                                                                                                                	|
-## Generate data in a .CSV file
-### Load Report configuration in the workspaces 
-Complete the following steps to load the report configuration in a workspace.
-**Path : Go to Workspaces > Electronic reporting > Reporting configurations > Exchange > Select Load configurations and import the configuration files in the sequence provided above
-![](media/New-GSTR-Format-005.PNG)
+To prepare Finance for GSTR reporting, you must import the following versions of ER configurations, or later versions, in the order that they are listed in.
 
-### Map the report configuration in the Tax setup
+| ER configuration name           | Type               | Format | Version |
+|---------------------------------|--------------------|--------|---------|
+| GST Returns model               | Model              | XML    | 16      |
+| GST Returns model mapping       | Model              | XML    | 16.7    |
+| GSTR-1 for Old Return           | Model              | XML    | 16.32   |
+| GSTR-1 for new Return           | Model              | XML    | 16.41   |
+| GSTR-2 for Old Return           | Model              | XML    | 16.36   |
+| GSTR-2 for new Return           | Model              | XML    | 16.40   |
+| GST Returns govt. model mapping | Model              | XML    | 19.10   |
+| GST Returns govt. model         | Model              | XML    | 19.0    |
+| GST Returns govt. model mapping | Model              | XML    | 19.12   |
+| GST ANX-1 Govt. offline tool    | Model              | XML    | 19.22   |
+| Purchase Register               | Model              | XML    | 19.7    |
+| ANX-1                           | Format (exporting) | CSV    |         |
+| Purchase Register               | Format (exporting) | Excel  |         |
+| GSTR-1 (new)                    | Format (exporting) | CSV    |         |
+| GSTR-2 (new)                    | Format (exporting) | CSV    |         |
 
-1.	Go to, Tax > Setup > Tax configuration > Tax setup > Configurations and select the Report configuration tab.
+Import the latest versions of these configurations. The description of each configuration version usually includes information about the changes that were introduced in that version.
 
-![](media/New-GSTR-Format-006.PNG)
+> [!NOTE]
+> After all the ER configurations from the preceding table are imported, you must map the report configuration in the tax setup.
 
-2.	For each file that you imported, mark the Select check box.
-3.	For each file that you imported, select a value in Report data provider field.
-4.	Select Close.
-  
-**Note:** If you don’t select a report in the Report controller field, then the report will not be available to generate under the Sales tax reports. 
+| Name                          | Version | Report controller            | Description (Pl)                                             |
+|-------------------------------|---------|------------------------------|--------------------------------------------------------------|
+| GST ANX-1 Govt. Offline Tool  | 19.22   | GST ANX-1 Govt. offline Tool | New GSTR return applicable from 1.4.2020 onward              |
+| GSTR-1 CSV (old)              | 16.32   | GSTR-1 (old)                 | Existing GSTR-1 format                                       |
+| GSTR-1 Govt. Offline Tool CSV | 19.10   | GSTR-1 Govt. Offline Tool    | Existing GSTR-1 offline tool. (Ineffective from 1.4.2020)    |
+| GSTR-2 CSV (old)              | 16.36   | GSTR-2 (old)                 | Existing GSTR-2 format                                       |
+| Purchase register             | 19.7    | Purchase Register            | New Register for inward transaction applicable from 1.4.2020 |
+| GSTR-1 CSV (new)              | 16.41   | GSTR-1 (new)                 | New GSTR-1 format                                            |
+| GSTR-2 CSV (new)              | 16.40   | GSTR-2 (new)                 | New GSTR-2 format                                            |
 
-## Generate new GSTR-1 and new GSTR-2 reports.
-### GSTR-1 report 
-Complete the following steps to generate a new GSTR-1 report.
+## Important columns that were added in the new GSTR-1
 
-1.	Go to Tax > Sales Tax reports > India > GER export to GSTR CSV.
-2.	In the From date field, select the start date of the reporting period to include in the report.
-3.	In the To date field, select the last date to be included in the reporting period.
-4.	Select the Registration number.
-5.	In the Configuration field, select GSTR-1 for New Return.
-6.	In the File name field, enter GSTR-1 for New Return, and select OK to save the report. 
+| Report                           | File format | Column title                            | Description |
+|----------------------------------|-------------|-----------------------------------------|-------------|
+| Sales Invoice and Bill of supply | CSV         | Differential % of Tax Rate              | If the supply is eligible to be taxed at a lower percentage of the existing tax rate, select **define%**. For example, if the regular tax rate is 12 percent, and the differential percentage of the tax rate is 65 percent, the applicable tax rate will be 7.8 percent. |
+| Sales Invoice and Bill of supply | CSV         | Supply covered Under Sec. 7 of IGST Act | If the supply is covered under section 7 of the Integrated GST (IGST) Act, select **Yes**. Otherwise, leave the field blank. |
+| Sales Invoice and Bill of supply | CSV         | Would you claim Refund?                 | If you want to claim a refund, select **Yes**. Otherwise, select **No**. If the supplies exclude the payment of tax, select **No**. |
+| Sales Invoice and Bill of supply | CSV         | Return Filing month                     | The system will select a month from the period that is defined in the **GSTR report** dialog box. |
+| Sales Invoice and Bill of supply | CSV         | Return Filing Quarter                   | The system will select a quarter from the period that is defined in the **GSTR report** dialog box. |
+| Sales credit Debit note          | CSV         | Applicable % of tax Rate                | If the supply is eligible to be taxed at a lower percentage of the existing tax rate, select **define%**. Otherwise, leave the field blank. |
+| Sales credit Debit note          | CSV         | Supply covered under Sec. 7 of IGST Act | If the place of supply of the invoice address and the place of supply of the shipping address are in different locations, include the **/SEZ/DE** export. |
+| Sales credit Debit note          | CSV         | Would you claim Refund?                 | If the GST payment type is **WOPAY** ("without payment"), select **No**. Otherwise, select **Yes**. |
+| Sales credit Debit note          | CSV         | Type of Export                          | Provide one of the following four values:<ul><li>Export with Payment of GST</li><li>Export without Payment of GST</li><li>SEZ</li><li>Deemed Export</li></ul> |
+| Sales credit Debit note          | CSV         | Shipping Port code - Export             | The shipping port code will come from the shipping bill. |
+| Sales credit Debit note          | CSV         | Shipping Bill number - Export           | Information about the shipping bill number will come from the posted shipping bill order. |
+| Sales credit Debit note          | CSV         | Shipping Bill date - Export             | Information about the shipping bill date will come from the posted shipping bill order. |
+| Sales credit Debit note          | CSV         | Return Filling Month                    | The month that the transaction report is generated for. |
+| Sales credit Debit note          | CSV         | Return filing quarter                   | The system will select a quarter from the period that is defined in the **GSTR report** dialog box. |
+| Sales credit Debit note          |             | GSTN of E-commerce market place         | The GST Identification Number (GSTIN) of the e-commerce operator, from the e-commerce operator's tax information. |
 
-![](media/New-GSTR-Format-007.PNG)
+## Important columns that were added in the new GSTR-2
 
-### GSTR-2 return 
+| Report                              | File format | Column title                               | Information description |
+|-------------------------------------|-------------|--------------------------------------------|-------------------------|
+| Purchase Invoice and Bill of Supply | CSV         | Differential % of Tax Rate                 | If the supply is eligible to be taxed at a lower percentage of the existing tax rate, select **define%**. Otherwise, leave the field blank. In the rate setup for the tax component, select **Applicable percentage of rate**. |
+| Purchase Invoice and Bill of Supply | CSV         | Supply covered under section 7 of IGST Act | If the place of supply of the invoice address and the place of supply of the shipping address are in different locations, include the **/SEZ/DE** export. |
+| Purchase Invoice and Bill of Supply | CSV         | Would you claim Refund                     | If you want to claim a refund, select **Yes**. Otherwise, select **No**. If supplies exclude payment of tax, select **No**. |
+| Purchase Invoice and Bill of Supply | CSV         | Return Filing Month                        | The system will select a month from the period that is defined in the **GSTR report** dialog box. |
+| Purchase Invoice and Bill of Supply | CSV         | Return Filing Quarter                      | The system will select a quarter from the period that is defined in the **GSTR report** dialog box. |
+| Purchase Credit Debit Note          | CSV         | Supply covered under Sec 7 of IGST Act     | If the **Inter-state** field in the tax document is set to **Yes**, this field will be set to **Yes**. |
+| Purchase Credit Debit Note          | CSV         | Would you claim Refund                     | If you want to claim a refund, select **Yes**. Otherwise, select **No**. If supplies exclude payment of tax, select **No**. |
+| Purchase Credit Debit Note          | CSV         | Type of Import (Goods, Services, SEZ)      | Provide one of the following four values:<ul><li>Import WT</li><li>Import WOT</li><li>SEZ</li><li>Deemed Export</li></ul> |
+| Purchase Credit Debit Note          | CSV         | Bill of Entry port code                    | The bill of entry code will come from the bill of entry. |
+| Purchase Credit Debit Note          | CSV         | Bill of entry number                       | Information about the bill of entry number will come from the posted bill of entry. |
+| Purchase Credit Debit Note          | CSV         | Bill of Entry Date                         | Information about the bill of entry date will come from the posted bill of entry. |
+| Purchase Credit Debit Note          | CSV         | Bill of Entry Value                        | This field is set to the assessable value that is shown on the **Bill of entry** page. |
+| Purchase Credit Debit Note          | CSV         | Return filling Month                       | The system will select a month from the period that is defined in the **GSTR report** dialog box. |
+| Purchase Credit Debit Note          | CSV         | Return filling Quarter                     | The system will select a quarter from the period that is defined in the **GSTR report** dialog box. |
 
-Complete the following steps to generate a GSTR-2 return in the new format.
+## Generate data in a CSV file
 
-1.	Go to Tax > Sales Tax reports > India > GER export to GSTR CSV.
-2.	In the From date field, select the start date of the reporting period.
-3.	In the To date field, select the last date to be included in the reporting period.
-4.	Select the Registration number.
-5.	In the Configuration field, select GSTR-2 for New Return.
-6.	 In the File name field, enter GSTR-2 for New Return, and then select OK to save the report.  
+### Load the report configuration into workspaces
 
-![](media/New-GSTR-Format-008.PNG)
+Follow these steps to load the report configuration into workspaces.
+
+1. Go to **Workspaces \> Electronic reporting**, and select the **Reporting configurations** tile.
+2. On the **Configurations** page, select **Exchange \> Load configurations**, and import the configuration files in the order that is provided in the first table in the [Import and set up ER configurations](#import-and-set-up-er-configurations) section, earlier in this topic.
+
+![Configurations page](media/New-GSTR-Format-005.PNG)
+
+### Map the report configuration in the tax setup
+
+1. Go to **Tax \> Setup \> Tax configuration \> Tax setup**, and select **Configurations**.
+2. On the **Configurations** page, on the **Reporting configurations** tab, follow these steps for each file that you imported:
+
+    1. Select the **Select** check box.
+    2. Select a value in **Report data provider** field.
+
+    ![Report configuration tab on the Configurations page](media/New-GSTR-Format-006.PNG)
+
+3. Select the **Close** button.
+
+> [!NOTE]
+> If you don't select a report in the **Report controller** field, the report won't be available for selection under **Sales tax reports \> India** in step 1 of the procedures in the next section.
+
+## Generate the new GSTR-1 and GSTR-2 reports
+
+### GSTR-1 report
+
+Follow these steps to generate a GSTR-1 report in the new format.
+
+1. Go to **Tax \> Sales tax reports \> India \> GER export to GSTR CSV**.
+2. In the **GER export to GSTR CSV** dialog box, in the **From date** field, select the start date of the reporting period for the report.
+3. In the **To date** field, select the end date of the reporting period for the report.
+4. In the **Registration number** field, select the registration number.
+5. In the **Configuration** field, select **GSTR-1 for New Return**.
+6. In the **File name** field, enter **GSTR-1 for New Return**.
+
+    ![GER export to GSTR CSV dialog box for the GSTR-2 report](media/New-GSTR-Format-007.PNG)
+
+7. Select **OK** to save the report.
+
+### GSTR-2 return
+
+Follow these steps to generate a GSTR-2 return in the new format.
+
+1. Go to **Tax \> Sales Tax reports \> India \> GER export to GSTR CSV**.
+2. In the **GER export to GSTR CSV** dialog box, in the **From date** field, select the start date of the reporting period for the report.
+3. In the **To date** field, select the end date of the reporting period for the report.
+4. In the **Registration number** field, select the registration number.
+5. In the **Configuration** field, select **GSTR-2 for New Return**.
+6. In the **File name** field, enter **GSTR-2 for New Return**.
+
+    ![GER export to GSTR CSV dialog box for the GSTR-2 return](media/New-GSTR-Format-008.PNG)
+
+7. Select **OK** to save the report.
