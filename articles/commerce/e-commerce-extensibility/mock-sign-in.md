@@ -47,21 +47,21 @@ The first step is to create a new resource owner password credentials (ROPC) flo
 To create a new ROPC flow, follow these steps.
 
 1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the global administrator of your Azure AD B2C tenant, and then select the **Azure AD B2C** service.
-1.	Select **User flows** and **New user flow**.
-1.	Select **Sign in using resource owner password credentials (ROPC)**, and then select **Create**.
-1.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name, as it will be used later as the `ropcUserFlowName` value in your credentials.json file.
-1.	Under **Application claims**, select **Show more**.
-1.	Select the following application claims: 
+2.	Select **User flows** and **New user flow**.
+3.	Select **Sign in using resource owner password credentials (ROPC)**, and then select **Create**.
+4.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name, as it will be used later as the `ropcUserFlowName` value in your credentials.json file.
+5.	Under **Application claims**, select **Show more**.
+6.	Select the following application claims: 
   - **Display Name**
   - **Email Addresses**
   - **Given Name**
   - **Identity provider**
   - **SurName**
   - **User’s object ID**
-1.	Select **OK**, and then select **Create**.
-1.	Select the new user flow, and then select **Run user flow**. 
+7.	Select **OK**, and then select **Create**.
+8.	Select the new user flow, and then select **Run user flow**. 
 
-You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://**<B2C_TENANT>**.b2clogin.com **<LOGIN_DOMAIN>**/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Note the **<B2C_TENANT>** and **<LOGIN_DOMAIN>** values from the URL, because this information will  be used later in your credentials.json file.
+You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://**<Login_Domain>**//**<B2C_TENANT>**.onmicrosoft.com**/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Note the **<LOGIN_DOMAIN>** and **<B2C_TENANT>** values from the URL, because this information will be used later in your credentials.json file.
 
 In the following example image, the endpoint URL listed under **Run user flow** is ```https://rushmoreb2c.b2clogin.com/login.fabrikam.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
 
@@ -72,7 +72,7 @@ From the example above, you can obtain values for the `ropcUserFlowName`, `login
 | Property name | Example value |
 | ----------- | ----------- |
 | ropcFlowUserName | B2C_1_ROPC_Auth |
-| loginDomain | login.fabrikam.com |
+| loginDomain | rushmoreb2c.b2clogin.com |
 | b2cTenant | rushmoreb2c |
 
 ### Create a native application
@@ -104,7 +104,7 @@ From the examples above, you have now obtained the following information:
 | Property name | Example value |
 | ----------- | ----------- |
 | ropcFlowUserName | B2C_1_ROPC_Auth |
-| loginDomain | login.fabrikam.com |
+| loginDomain | rushmoreb2c.b2clogin.com |
 | b2cTenant | rushmoreb2c |
 | nativeApplicationId | 0fb41a53-fcae-45df-b4cb-ab78471ad919 |
 
@@ -131,7 +131,7 @@ The Azure AD setup portion is now complete and you should now have your versions
 | Property name | Example value |
 | ----------- | ----------- |
 | ropcFlowUserName | B2C_1_ROPC_Auth |
-| loginDomain | login.fabrikam.com |
+| loginDomain | rushmoreb2c.b2clogin.com |
 | b2cTenant | rushmoreb2c |
 | nativeApplicationId | 0fb41a53-fcae-45df-b4cb-ab78471ad919 |
 | userImpersonationScopeURL | `https://login.fabrikam.com/B2CAPI/user_impersonation` |
