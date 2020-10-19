@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up integration with LinkedIn Talent Hub
-description: Set up an integration between Human Resources and LinkedIn Talent Hub
-author: andreabichsel
-manager: AnnBe
-ms.date: 10/12/2020
+title: Integrate with LinkedIn Talent Hub
+description: Set up integration between Dynamics 365 Human Resources and LinkedIn Talent Hub.
+author: jaredha
+manager: tfehr
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,14 +25,14 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up integration with LinkedIn Talent Hub
+# Integrate with LinkedIn Talent Hub
 
-[LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) is an Applicant Tracking System (ATS) platform that lets you source, manage, and hire employees all in one place. Dynamics 365 Human Resources provides an integration with LinkedIn Talent Hub, enabling you to easily create employee records in Human Resources for applicants who have been hired for a position.
+[LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) is an Applicant Tracking System (ATS) platform that lets you source, manage, and hire employees all in one place. You can integrate Dynamics 365 Human Resources with LinkedIn Talent Hub, so you can easily create employee records in Human Resources for applicants who have been hired for a position.
 
 ## Setup
 
@@ -46,14 +46,14 @@ A system administrator must perform setup tasks to enable the integration, inclu
 
 3. In the **Advanced** section of the left navigation pane, select **Integrations**.
 
-4. Select the **Authorize** action for the Microsoft Dynamics 365 Human Resources integration.
+4. Select **Authorize** for the Microsoft Dynamics 365 Human Resources integration.
 
-5. On the Dynamics 365 Human Resources page, select the environment to which you want to link Talent Hub, and select the **Link** action.
+5. On the **Dynamics 365 Human Resources** page, select the environment to which you want to link Talent Hub, and select the **Link** action.
 
     ![LinkedIn Talent Hub onboarding](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
-    > You may only link to environments for which your user account has administrator access to both the Human Resources environment and the associated Power Apps environment. If no environments are listed on the Human Resources link page, ensure that you have licensed Human Resources environments on the tenant and that the user with which you are signed into the link page has administrator permissions to both the Human Resources environment and the Power Apps environment.
+    > You can only link to environments for which your user account has administrator access to both the Human Resources environment and the associated Power Apps environment. If no environments are listed on the Human Resources link page, ensure that you have licensed Human Resources environments on the tenant and that the user with which you are signed into the link page has administrator permissions to both the Human Resources environment and the Power Apps environment.
 
 ### Create a Power Apps security role
 
@@ -75,7 +75,7 @@ A system administrator must perform setup tasks to enable the integration, inclu
     - Field
     - Relationship
 
-8. Save and Close the security role.  
+8. Save and close the security role.  
 
 ### Create a Power Apps application user
 
@@ -97,7 +97,7 @@ An application user must be created for the LinkedIn Talent Hub adapter to grant
 
 7. Select **New** on the action ribbon.
 
-8. On the New User page:
+8. On the **New user** page:
 
     - Change the **User type** to **Application User**.
     - Set **User Name** to "Dynamics365 HR LinkedIn HRIS Integration".
@@ -107,9 +107,9 @@ An application user must be created for the LinkedIn Talent Hub adapter to grant
 
 ### Assign security role to the new user
 
-After saving and closing the new application user in the previous section, you are returned to the Users list page.
+After saving and closing the new application user in the previous section, you are returned to the **Users list** page.
 
-1. On the Users list page, change the view to **Application Users**.
+1. On the **Users list** page, change the view to **Application Users**.
 
 3. Select the new application user created in the previous section.
 
@@ -144,21 +144,21 @@ After saving and closing the new application user in the previous section, you a
 
 ## Exporting candidate records
 
-Once setup is completed, recruiters and HR professionals can use the Export to HRIS function in LinkedIn Talent Hub to export hired candidate records from LinkedIn Talent Hub to Human Resources.
+Once setup completes, recruiters and HR professionals can use the **Export to HRIS** function in LinkedIn Talent Hub to export hired candidate records from LinkedIn Talent Hub to Human Resources.
 
 ### Export records from LinkedIn Talent Hub
 
-Once a candidate has been moved through the recruiting process and hired, the candidate record can be exported from LinkedIn Talent Hub to Human Resources. To perform the export action:
+Once a candidate has moved through the recruiting process and has been hired, you can export the candidate record from LinkedIn Talent Hub to Human Resources.
 
 1. In LinkedIn Talent Hub, open the project for which you have hired the new employee.
 
 2. Select a candidate record.
 
-3. Select the **Change stage** action, and select **Hired**.
+3. Select **Change stage**, and select **Hired**.
 
 4. On the ellipses menu for the candidate, select **Export to HRIS**.
 
-5. In the Export to HRIS pane, enter the information to be exported:
+5. In the **Export to HRIS** pane, enter the information to be exported:
 
     - On the **HRIS provider** drop-down list, select **Microsoft Dynamics 365 Human Resources**.
     - Select a **Start date** value for the new employee.
@@ -170,7 +170,7 @@ Once a candidate has been moved through the recruiting process and hired, the ca
 
 ## Complete onboarding in Human Resources
 
-Candidate records exported from LinkedIn Talent Hub to Human Resources will display in the **Candidates to hire** section of the Personnel Management page.
+Candidate records exported from LinkedIn Talent Hub to Human Resources display in the **Candidates to hire** section of the **Personnel management** page.
 
 1. In Human Resources, open the **Personnel management** page.
 
@@ -178,20 +178,17 @@ Candidate records exported from LinkedIn Talent Hub to Human Resources will disp
 
 3. In the **Hire new worker** pane, review the record and add any required information. You may also select the position number for which the candidate has been hired.
 
-Once the required information has been entered, you are able to continue with your standard processes of creating employee records and employee onboarding.
+Once the required information has been entered, you can continue with your standard processes of creating employee records and employee onboarding.
 
-The following are the details imported and included on the new employee record:
+The following details are imported and included on the new employee record:
 
-   - First name
-   - Last name
-   - Employment start date
-   - Email address
-   - Phone number
-
+- First name
+- Last name
+- Employment start date
+- Email address
+- Phone number
 
 ## See also
 
 [Configure Common Data Service virtual entities](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-
-

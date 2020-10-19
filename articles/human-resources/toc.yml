@@ -87,6 +87,8 @@
         href: hr-admin-integration-dayforce.md
       - name: Create a recurring data export app
         href: hr-admin-integration-recurring-data-export.md
+      - name: Integrate with LinkedIn Talent Hub
+        href: hr-admin-integration-linkedin.md
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
