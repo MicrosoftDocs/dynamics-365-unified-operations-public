@@ -132,7 +132,7 @@ After saving and closing the new application user in the previous section, you a
 ### Create the entity in Common Data Service
 
 > [!IMPORTANT]
-> The integration with LinkedIn Talent Hub is dependent on virtual entities in Common Data Service for Human Resources. Configuring virtual entities is a prerequisite for this step in the setup. For information on configuring virtual entities, see [Configure Common Data Service virtual entities](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> The integration with LinkedIn Talent Hub is dependent on virtual entities in Common Data Service for Human Resources. Configuring virtual entities is a prerequisite for this step in the setup. For information on configuring virtual entities, see [Configure Common Data Service virtual entities](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
 1. In Human Resources, open the **Common Data Service (CDS) integration** page.
 
