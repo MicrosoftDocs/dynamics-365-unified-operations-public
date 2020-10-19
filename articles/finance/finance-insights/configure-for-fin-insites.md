@@ -262,7 +262,7 @@ You can complete the steps as listed or use the attached PowerShell script to sp
           $inner = $inner.InnerException
         }
       }
----
+```
 
 ## Configuring Azure setup
 
