@@ -64,14 +64,14 @@ The following modules can be used in a header module:
 
 - **Cart icon** - The cart icon module represents the cart icon, which shows the number of items in the cart at any given time. For more information, see [Cart icon module](cart-icon-module.md).
 
-- **Site selector** - The site selector module provides a way for users to browse across different predefined sites based on market, regions, and locales. For more information, see [Site selector module](site-selector.md)
+- **Site selector** - The site selector module lets users browse across different predefined sites, based on market, regions, and locales. For more information, see [Site selector module](site-selector.md).
 
-- **Store selector** - The store selector module can be included in a header module's store selector slot. This enables users to browse and find stores nearby. Users can also specify a preferred store that will then display in the header. When included in the header module, the store selector module's **Mode** property must be set to **Find stores**. For more information, see [Store selector module](store-selector.md).
+- **Store selector** - The store selector module can be included in a header module's store selector slot. It lets users browse and find nearby stores. Users can also specify a preferred store. That store will then be shown in the header. When the store selector module is included in the header module, its **Mode** property must be set to **Find stores**. For more information, see [Store selector module](store-selector.md).
 
 > [!NOTE]
-> - Support for the use of the cart icon module in header modules is available in the Dynamics 365 Commerce 10.0.11 release.
-> - Support for the use of the site selector module in header modules is available in the Dynamics 365 Commerce 10.0.14 release.
-> - Support for the use of the store selector module in header modules is available in the Dynamics 365 Commerce 10.0.15 release.
+> - Support for using the cart icon module in header modules is available in the Dynamics 365 Commerce 10.0.11 release.
+> - Support for using the site selector module in header modules is available in the Dynamics 365 Commerce 10.0.14 release.
+> - Support for using the store selector module in header modules is available in the Dynamics 365 Commerce 10.0.15 release.
 
 ## Create a header fragment for a page
 
