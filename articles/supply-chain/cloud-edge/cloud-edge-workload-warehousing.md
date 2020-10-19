@@ -160,7 +160,7 @@ The following table shows which outbound features are supported, and where they 
 | Shipment consolidation                                       | No  | No |
 | Cross docking (picking work)                                 | No  | No |
 | Shipment wave processing                                     | No, but finalization of the wave status is handled in the hub |<p>Yes, but the following capabilities aren't supported:</p><ul><li>Parallel work creation</li><li>Load building and sorting</li><li>Containerization</li><li>Wave label printing</li></li></ul><p><b>Note:</b> Access to the hub is required to finalize the wave status as part of the wave processing.</p> |
-| Warehouse work processing (incl. license plate print)     | No  | <p>Yes, but only for the following capabilities:</p><ul><li>Sales picking</li><li>Sales loading</li><li>Without the use of active tracking dimensions</li></ul> |
+| Warehouse work processing (incl. license plate print)     | No  | <p>Yes, but only for the following capabilities:</p><ul><li>Sales picking (without the use of active tracking dimensions)</li><li>Sales loading (without the use of active tracking dimensions)</li></ul> |
 | Cluster picking                                              | No  | No |
 | Packing processing                                           | No  | No |
 | Outbound sorting processing                                  | No  | No |
