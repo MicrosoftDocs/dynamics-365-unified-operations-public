@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot inbound warehouse operations
-description: XXXX
+description: This topic describes how to fix common issues that you might encounter while working with inbound warehouse operations in Dynamics 365 Supply Chain Management.
 author: perlynne
 manager: tfehr
 ms.date: 10/19/2020
@@ -35,10 +35,10 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while working with inbound warehouse operations in Dynamics 365 Supply Chain Management.
 
-## Quality order XXXX has been generated. Cluster profile could not be found please check your configuration.
+## Quality order %1 has been generated. Cluster profile could not be found please check your configuration.
 <!-- KFM: Is this an error message? If so, it should be labelled as such and put in quotes. -->
 **Issue:** Related to a receiving process where QM or QMS is enabled. Additional detail about the transaction could further enhance the fix.
-<!-- KFM: Spell out "QM" and "QMS". Second sentence isn't clear. Issue should be better explained better. -->
+<!-- KFM: Spell out "QM" and "QMS". Second sentence isn't clear. Issue should be  explained better. -->
 **Fix:** Check the cluster profile setup. You can't use a cluster picking mobile device menu item without the cluster profiles.
 <!-- KFM: So, what should I do? Create a profile? -->
 

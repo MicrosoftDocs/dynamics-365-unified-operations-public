@@ -37,7 +37,7 @@ This topic describes how to fix common issues that you might encounter while wor
 
 ## Sales order could not be released.
 
-**Issue:** Order is in credit management and a valid postal address must be entered for all sales lines associated with sales order XXXX before shipments can be created. Orders cannot be released to the warehouse without a valid delivery address (per the address format set-up in the Organization Administration module).
+**Issue:** Order is in credit management and a valid postal address must be entered for all sales lines associated with sales order %1 before shipments can be created. Orders cannot be released to the warehouse without a valid delivery address (per the address format set-up in the Organization Administration module).
 
 **Fix:** Add or update the address on the sales order/line(s) and then release to warehouse.
 
@@ -49,5 +49,5 @@ This topic describes how to fix common issues that you might encounter while wor
 
 ## Direct delivery activation on sales order line.
 
-**Issue:** Sales order: XXXX Item number: XXXX Direct delivery is not able to process for warehouse XXXX as it has warehouse management enabled. Please specify another warehouse that is not enabled for warehouse management.
+**Issue:** Sales order: %1 Item number: %2 Direct delivery is not able to process for warehouse %3 as it has warehouse management enabled. Please specify another warehouse that is not enabled for warehouse management.
  <!-- KFM: Is that an error message? Is there a fix for this? -->

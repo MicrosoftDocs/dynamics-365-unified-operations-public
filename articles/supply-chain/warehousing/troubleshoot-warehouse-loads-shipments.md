@@ -36,18 +36,22 @@ ms.dyn365.ops.version: 10.0.15
 This topic describes how to fix common issues that you might encounter while working with load building and shipments in Dynamics 365 Supply Chain Management.
 
 ## You can't create a load line for this order line because it contains inventory dimensions that are invalid. You can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. Remove the invalid dimensions from the order line.
-
-**Issue:** can't execute Release to warehouse on a Return sales order
+<!-- KFM: This is a very long heading. If it's an error message that  you want to quote, I recommend giving a short summary as the heading and then quoting the error in the body text. -->
+**Issue:** Can't execute Release to warehouse on a Return sales order
 
 **Fix:** Unfortunately, the product does not support load processing for a sales return process and thereby not possible to get released to the warehouse.
 
 ## One of the lines is already on a load. Unable to release to warehouse.
 
-**Issue:** If you choose the process path of manually creating loads or have the process setup such that Loads are created already upon Sales Order line entry, then the assumption that the subsequent releasing is done manually following the route and rating from the load.
+### Issue description
+
+If you choose the process path of manually creating loads or have the process setup such that Loads are created already upon Sales Order line entry, then the assumption that the subsequent releasing is done manually following the route and rating from the load.
 
 The other scenario here is that the user is trying to perform an automatic Release To Warehouse, but the wave process failed to create work, which results in an open shipment/load still being created. This then blocks the user from subsequent attempts to automatically release the order until they either (a) delete the open shipment/load, or (b) re-process the wave manually.
 
-**Fix:** To release from the Sales Order form, or to release automatically from the release sales order form, no load must exist. The load will be created automatically once the wave is processed.
+### Issue resolution
+
+To release from the Sales Order form, or to release automatically from the release sales order form, no load must exist. The load will be created automatically once the wave is processed.
 
 ## The delivery note correction can't be processed.
 
@@ -57,15 +61,19 @@ The other scenario here is that the user is trying to perform an automatic Relea
 
 ## How to create work from outbound loads rather than waves.
 
-**Issue:** Is it possible to create work from outbound loads rather than waves?
+### Issue description
 
-Repro steps:
+Is it possible to create work from outbound loads rather than waves?
+
+One way to reproduce this error is to do the following:
 
 1. Create an outbound load using a sales or transfer order.
 2. Release load to warehouse.
 3. Currently, no picking work is being generated.
 
-**Fix:** If work needs to be generated immediately when the load is released, then Wave template needs to be configured accordingly. On wave template, set the following settings to Yes:
+### Issue resolution
+
+If work needs to be generated immediately when the load is released, then Wave template needs to be configured accordingly. On wave template, set the following settings to Yes:
 
 - Automate wave creation.
 - Process wave at release to warehouse.
@@ -76,3 +84,4 @@ Repro steps:
 **Issue:** A "Partially shipped" load can't be released again to the warehouse. The message "Operation complete" appears at release to the warehouse, but nothing happens, no work gets created for the remaining quantity. This happens when originally there is an Incomplete reservation and using Transport Load functionality.
 
 **Fix:** KB number: 4574490: Partially shipped loads can be re-waved and re-processed.
+<!-- KFM: Is this really a fix? Is this intended as customer-facing text? -->
