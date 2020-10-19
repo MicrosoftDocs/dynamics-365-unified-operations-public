@@ -59,7 +59,7 @@ This topic describes how to fix common issues that you might encounter while wor
 
 ## How to make a partial reservation of a load from load planning workbench form.
 
-### Issue description
+#### Issue description
 <!-- KFM: Note that because we have several paragraphs in the description, I added subheadings for this entry. -->
 When using an item with batch above hierarchy the Release to warehouse from Load Planning Workbench for partial quantity doesn't work. The following error will appear, and no work gets created for the partial quantity:
 
@@ -67,6 +67,6 @@ When using an item with batch above hierarchy the Release to warehouse from Load
 
 If we use an item with batch below reservation hierarchy instead of batch above, then the release of a load from Load Planning Workbench for partial quantity works fine.
 
-### Issue resolution
+#### Issue resolution
 
 This is by design. If you place a dimension above the location in the reservation hierarchy, then it must be specified prior to release to warehouse. Microsoft has evaluated this issue and determined it to be a feature limitation when releasing to warehouse from load planning workbench. It is not possible to release partial quantities when not all dimensions above location are specified.

@@ -43,13 +43,13 @@ This topic describes how to fix common issues that you might encounter while wor
 
 ## One of the lines is already on a load. Unable to release to warehouse.
 
-### Issue description
+#### Issue description
 
 If you choose the process path of manually creating loads or have the process setup such that Loads are created already upon Sales Order line entry, then the assumption that the subsequent releasing is done manually following the route and rating from the load.
 
 The other scenario here is that the user is trying to perform an automatic Release To Warehouse, but the wave process failed to create work, which results in an open shipment/load still being created. This then blocks the user from subsequent attempts to automatically release the order until they either (a) delete the open shipment/load, or (b) re-process the wave manually.
 
-### Issue resolution
+#### Issue resolution
 
 To release from the Sales Order form, or to release automatically from the release sales order form, no load must exist. The load will be created automatically once the wave is processed.
 
@@ -61,7 +61,7 @@ To release from the Sales Order form, or to release automatically from the relea
 
 ## How to create work from outbound loads rather than waves.
 
-### Issue description
+#### Issue description
 
 Is it possible to create work from outbound loads rather than waves?
 
@@ -71,7 +71,7 @@ One way to reproduce this error is to do the following:
 2. Release load to warehouse.
 3. Currently, no picking work is being generated.
 
-### Issue resolution
+#### Issue resolution
 
 If work needs to be generated immediately when the load is released, then Wave template needs to be configured accordingly. On wave template, set the following settings to Yes:
 
