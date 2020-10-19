@@ -156,7 +156,7 @@ In the **E-invoice** section, you can also set the **eInvoice attachment** optio
 
 ### <a name="items"></a>Items
 
-If there are product lines on an invoice, the **CodiceArticolo** block is filled in based on product data. This data includes the product bar code, the internal product number or item number, and the external item decription. This information can be found by going to, **Product information management** > **Products** > **Released products**, and on the Action Pane, select **Sell** > **Related information**.    
+If there are product lines on an invoice, the **CodiceArticolo** block is filled in based on product data. This data includes the product bar code, the internal product number or item number, and the external item description. This information can be found by going to, **Product information management** > **Products** > **Released products**, and on the Action Pane, select **Sell** > **Related information**.    
 
 The **CodiceTipo** field is filled in as follows:
 - If there is a bar code, this field = **EAN**.
