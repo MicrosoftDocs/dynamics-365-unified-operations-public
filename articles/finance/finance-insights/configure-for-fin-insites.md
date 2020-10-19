@@ -749,7 +749,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
 
 ```
 
-  ### Manual setup
+### Manual setup
 
   #### Add Applications to the Azure Active Directory Tenant
   1. Go to Azure Active Directory
