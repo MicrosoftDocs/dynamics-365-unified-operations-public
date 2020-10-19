@@ -81,6 +81,8 @@ You can complete the steps as listed or use the attached PowerShell script to sp
 
 # [PowerShell configuration script](#tab/powershell-configuration-script)
 
+```azurecli-interactive
+
     Write-Output 'The following modules need to be present for execution of this script:'
     Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
     Write-Output '  Microsoft.PowerApps.PowerShell'
@@ -744,6 +746,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
         $inner = $inner.InnerException
       }
     }
+
 ```
 
   ### Manual setup
