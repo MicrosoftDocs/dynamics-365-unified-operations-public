@@ -4,7 +4,7 @@ title: Invoice processing
 description: This topic provides information about invoice processing for Eastern Europe.
 author: v-kikozl
 manager: AnnBe
-ms.date: 07/21/2017
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia,Italy
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia, Italy
 # ms.search.industry: 
 ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This topic provides also an information about how customer and vendor invoices are processed for these countries. 
+This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This topic also provides information about how customer and vendor invoices are processed for these countries. 
 <table>
 <thead>
 <tr>
@@ -73,7 +73,7 @@ This topic briefly describes some country-specific scenarios, such as intra-comm
 <td>Poland, Hungary, Czech Republic, Italy</td>
 <td>
 <p>Legislation provides different rules for selecting valid exchange rates for business transactions. In the <strong>Exchange rate date</strong> field on the <strong>Accounts receivable parameters</strong> and <strong>Accounts payable parameters</strong> pages, you can select the date that should be used for amounts in the accounting currency calculation on purchase and sales documents. During data entry, the system retrieves the exchange rate for the transaction, based on this parameter.</p>
-<blockquote>[!NOTE]<br>For Italy this functionality is only applicable in the Accounts payable module. In the Accounts payable parameters a user can select <strong>Posting date</strong> or <strong>Document date</strong> in the <strong>Exchange rate date</strong> field.   </blockquote>
+<blockquote>[!NOTE]<br>For Italy, this functionality is only applicable in the Accounts payable module. In the Accounts payable parameters, a user can select <strong>Posting date</strong> or <strong>Document date</strong> in the <strong>Exchange rate date</strong> field.   </blockquote>
 <blockquote>[!NOTE]<br>When you set the <strong>Exchange rate date</strong> field to <strong>Document date (for EU trade only)</strong>, the system uses the sales tax group. For the sales tax group, there is a <strong>EU trade</strong> parameter on the <strong>General</strong> tab. If the <strong>EU trade</strong> option is set to <strong>Yes</strong> for the sales tax group, and if this sales tax group exists on the header of the document, the system retrieves the exchange rate based on the document date. If the <strong>EU trade</strong> option is set to <strong>No</strong> for this sales tax group, the system retrieves the exchange rate based on the posting date of the document.</blockquote>
 </td>
 </tr>
@@ -83,7 +83,7 @@ This topic briefly describes some country-specific scenarios, such as intra-comm
 <td>
 <p>The sales date and the document receipt date are required for VAT reporting:</p>
 <ul>
-<li>The sales date is the fulfilment date of the transaction in Accounts receivable.</li>
+<li>The sales date is the fulfillment date of the transaction in Accounts receivable.</li>
 <li>The document receipt date is a date that demonstrates the rights to claim a VAT deduction in Accounts payable. Each document that is received has a date for audit purposes.</li>
 </ul>
 <p>The Hungarian functionality for date deadlines, the Czech Republic functionality for fulfill dates, and the Polish functionality for the VAT register date include the requirement for tax information reporting that is based on a date that differs from the posting date.</p>
@@ -101,8 +101,8 @@ This topic briefly describes some country-specific scenarios, such as intra-comm
 <td>VAT register dates that include deferred tax</td>
 <td>Hungary</td>
 <td>
-<p>Hungary tax regulations require that invoices be created at either the time of fulfilment or no later than 15 days after fulfilment.</p>
-<p>The fulfilment date is either the date when the ordered services were provided or the date when ordered items were delivered. When you update or post the documents, all taxes are posted by using the corresponding date of the VAT register, and the date appears on relevant pages. Additionally, regulations require that VAT on continuous delivery of services, such as renting, leasing, consulting, and heating, meet the following criteria:</p>
+<p>Hungary tax regulations require that invoices be created at either the time of fulfillment or no later than 15 days after fulfillment.</p>
+<p>The fulfillment date is either the date when the ordered services were provided or the date when ordered items were delivered. When you update or post the documents, all taxes are posted by using the corresponding date of the VAT register, and the date appears on relevant pages. Additionally, regulations require that VAT on continuous delivery of services, such as renting, leasing, consulting, and heating, meet the following criteria:</p>
 <ul>
 <li>VAT must be posted to a dedicated general ledger account on the invoice date.</li>
 <li>VAT must be transferred from the special accounts to a sales tax receivable account or a payable account, and must be included in the VAT report on the due date.</li>
