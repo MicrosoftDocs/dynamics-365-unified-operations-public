@@ -105,15 +105,15 @@ When generating electronic invoices, the rates of the sales tax codes are being 
  
 ### Customer requisition
 When registering free text invoices, invoices based on salse orders or project invoices, it is required to enter **Customer requisition**. You can also add **Customer reference** which is not mandatory now.
- - **Free text invoices**
+#### Free text invoices
  
  Go to **Accounts receivable** \> **Invoices** \> **All free text invoices** and create a new or select an existing invoice. On **Header** page, **Customer** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
  
- - **Sales orders**
+#### Sales orders
  
 Go to **Accounts receivable** \> **Orders** \> **All sales orders** and create a new or select an existing order. On **Header** page, **General** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
  
- - **Project invoices**
+ #### Project invoices
  
 Go to **Project management and accounting** \> **Projects** \> **Project contracts** and create a new or select an existing contract. On **Funding sources** FastTab, create a new or select an existing funding source of **Customer** type and open its **Details**:
 
@@ -125,14 +125,24 @@ Go to **Project management and accounting** \> **Projects** \> **Project contrac
  
   You can also enter Customer requisition and reference values directly in project invoice proposals. 
   Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals** and create a new or select an existing invoice proposal.
-  In **Invoice proposal header** FastTab,in **E-INVOICE** section, enter values in **Customer requisition** and **Customer reference** fields:
+  In **Invoice proposal header** FastTab, in **E-INVOICE** section, enter values in **Customer requisition** and **Customer reference** fields:
  
  ![Project proposal](media/emea-nor-ger-proj-prop.jpg)
  
 ### Customer accounting code registration
- - FTI
- - SO
- - Proj
+The system allows entering Customer accuonting codes when working with free text invoices, invoices based on salse orders or project invoices.
+
+#### Free text invoices
+ 
+ Go to **Accounts receivable** \> **Invoices** \> **All free text invoices** and create a new or select an existing invoice. On **Header** page, **Customer** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
+ 
+#### Sales orders
+ 
+Go to **Accounts receivable** \> **Orders** \> **All sales orders** and create a new or select an existing order. On **Header** page, **General** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
+ 
+ #### Project invoices
+ 
+Go to **Project management and accounting** \> **Projects** \> **Project contracts** and create a new or select an existing contract. On **Funding sources** FastTab, create a new or select an existing funding source of **Customer** type and open its **Details**:
  
 ## Export of customer electronic invoices
 ### Sending of e-invoices
