@@ -73,7 +73,7 @@ Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
 The URL Generator must be used from code running on the AOS, in an active user session or batch process. This requirement ensures that the URL can be secured through encryption specific to the instance that generates the URL. At a minimum, the following information must be specified and passed to the URL Generator in order to generate a working URL.
 
 -   **Host URL**
-    -   The URL of the web root for the instance. For example: https://ax.dynamics.contoso.com/
+    -   The URL of the web root for the instance. For example: `https://ax.dynamics.contoso.com/`
 -   AOT name of the **Menu Item Display**
     -   The menu item display to be used to open the form.
 -   **Partition**
