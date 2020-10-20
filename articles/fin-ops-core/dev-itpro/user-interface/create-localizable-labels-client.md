@@ -106,7 +106,7 @@ The **$dyn.label** API will find the appropriately named label and return the st
 ## Troubleshooting
 If you have correctly created a label file, and the label has been deployed, you should be able to load the JavaScript version of the label file directly from the browser. You can access the JavaScript label file by navigating to the home page in the client and appending the following path to the URL: **/Resources/Labels/MyLabelFile.js**, where **MyLabelFile** is the name of the label file without the language suffix. For a deployed label file that is named MyLabelFile.en-us, follow these steps:
 
-1. Navigate to the home page, and sign in. (On one-box deployments, the URL of the home page is <https://usncax1aos.cloud.onebox.dynamics.com/en/>.)
+1. Navigate to the home page, and sign in. (On one-box deployments, the URL of the home page is `https://usncax1aos.cloud.onebox.dynamics.com/en/`.)
 2. Make sure that the desired language has been set by going to **Options** &gt; **Language and Region**. (You don't have to change the language if it's already set to the language that you want.) Now that the user's language has been set in the current session, the label resource controller will know what language to use when the label file is loaded.
 3. To load the JavaScript version of the label file, navigate to the label file by adding <strong>Resources/Labels/MyLabelFile.js</strong> to the URL. (On one-box deployments, the whole URL is <https://usncax1aos.cloud.onebox.dynamics.com/en/Resources/Labels/MyLabelFile.js>.)
 4. The corresponding label file will be JSON-serialized, and the browser will either show the text on the current tab or prompt you to download the .js file. If you download the file, you can then open it locally to inspect it.
