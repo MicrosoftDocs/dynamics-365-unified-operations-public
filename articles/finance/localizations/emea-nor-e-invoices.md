@@ -160,10 +160,15 @@ When an invoice is posted you can generate an electronic invoice by clicking **S
 ![Send e-invoice](media/emea-nor-ger-einvoice.jpg)
 
 ### Inquiring of e-invoices
-The XML file with a generated electronic invoice can be then found in Electronic reporting jobs in Organization administration. To see the file click Show files button for the relevant job:
-...
-Then click Open button to download the file with the electronic invoice:
-...
+To inquire XML files of generated electronic invoices go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. Select a required job and click **Show files**:
+
+![Send e-invoice](media/emea-nor-ger-einvoice-open.jpg)
+
+Then click **Open** button to download the file with the electronic invoice.
+
+If generation of electronic invoices failed with errors then click **Show log** button and **Message details** link to see additional details of the error message.
+
+![Show log](media/emea-nor-ger-einvoice-log.jpg)
 
 ### Sending to ER destinations
 Alternatively, it is possible to setup Electronic reporting destinations for the e-invoice formats. In this case the output XML files with electronic invoices will be send to the defined destinations, Sharepoint folders, for example, right after posting of an invoice. It is necessary to turn on Print invoice parameter when posting and print to screen, if no paper copy is required.
