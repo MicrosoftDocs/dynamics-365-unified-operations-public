@@ -150,6 +150,8 @@ Go to **Project management and accounting** \> **Projects** \> **Project contrac
 
 Go to **Project management and accounting** \> **Projects** \> **Project contracts** and create a new or select an existing contract. On **Funding sources** FastTab, create a new or select an existing funding source of **Customer** type and open its **Details**. On **Funding source details** page, on **E-invoice** FastTab, enter procect-specific default accounting code in the **Dimension account** field:
 
+You can also enter Customer acounting codes directly in project invoice proposals. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals** and create a new or select an existing invoice proposal. In **Invoice proposal header** FastTab, in **E-INVOICE** section, enter accounting code in **Dimension account** field. Alternatively, turn on **Line-specific** option, go to **Invoice proposal transactions** FastTab, and enter line-specific accounting codes in the **Dimension account** field for each transaction line:
+
 ![Project default cost](media/emea-nor-ger-proj-prop-cost.jpg)
 
 
