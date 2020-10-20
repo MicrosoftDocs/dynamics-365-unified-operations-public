@@ -37,7 +37,7 @@ This topic describes how to fix common issues that you might encounter while wor
 
 ## Quality order %1 has been generated. Cluster profile could not be found please check your configuration.
 <!-- KFM: Is this an error message? If so, it should be labelled as such and put in quotes. -->
-**Issue:** Related to a receiving process where QM or QMS is enabled. Additional detail about the transaction could further enhance the fix.
+**Issue:** Related to a receiving process where Quality Management (QMS) is enabled. Additional detail about the transaction could further enhance the fix.
 <!-- KFM: Spell out "QM" and "QMS". Second sentence isn't clear. Issue should be  explained better. -->
 **Fix:** Check the cluster profile setup. You can't use a cluster picking mobile device menu item without the cluster profiles.
 <!-- KFM: So, what should I do? Create a profile? -->
