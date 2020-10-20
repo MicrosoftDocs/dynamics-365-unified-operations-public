@@ -113,13 +113,15 @@ When registering free text invoices, invoices based on salse orders or project i
  
 Go to **Accounts receivable** \> **Orders** \> **All sales orders** and create a new or select an existing order. On **Header** page, **General** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
  
- - **Project invoices*
+ - **Project invoices**
  
 Go to **Project management and accounting** \> **Projects** \> **Project contracts** and create a new or select an existing contract. On **Funding sources** FastTab, create a new or select an existing funding source of **Customer** type and open its **Details**:
 
 ![Funding sources](media/emea-nor-ger-proj-contracts.jpg)
  
- **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
+ On **Funding source details** page, on **Other** FastTab,in **REFERENCES** section, enter contract defualt values in **Customer requisition** and **Customer reference** fields. Alternatively, you can enter procect-specific values in the similar fields on **E-invoice** FastTab:
+ 
+ ![Project references](media/emea-nor-ger-proj-refs.jpg)
  
 ### Customer accounting code registration
  - FTI
