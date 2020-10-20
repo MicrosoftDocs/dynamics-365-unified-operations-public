@@ -84,27 +84,26 @@ To configure the timeslot feature in Commerce headquarters, follow these steps.
 1. Go to **Commerce** \> **Channel setup** \> **Store pickup time slot**.
 1. Select **New** to create a new timeslot template. To use an existing template, select the template in the left navigation pane.
 1. Enter a **Time Slot ID** and **Description**.
-1. Under **Order Pickup - Time settings**, select **Add** to open a dialog box where you can define the date range, mode of delivery, active hours of delivery, active days, time slot interval, slots per interval, and other settings.
+1. Under **Order Pickup - Time settings**, select **Add** to open a dialog box where you can define the date range, mode of delivery, active hours of delivery, active days, time slot interval, slots per interval, and other settings. After configuring the settings, select **OK**.
 
-    - If timeslots are going to be static for the forseeable future, leave **End date** blank.
-    - If the timeslots in a day are going to vary, create additional entries on the **Time settings** tab to ensure that the dates and times do not overlap. 
+    - If timeslots are going to be static for the foreseeable future, leave **End date** blank.
+    - If the timeslots in a day are going to vary, create additional entries under **Order Pickup - Time settings** to ensure that the dates and times do not overlap. 
 
     > [!NOTE]
     > You can create multiple templates, but only one template can be associated with a single channel or store. 
 
     ![Order Pickup - Time settings dialog box](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
-1. Associate the timeslot template with the stores or channels where it will be used. In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.
+1. Next you will associate the timeslot template with the stores or channels where it will be used. Under **Retail Channels**, select **Add**. In the **Choose organization nodes** dialog box, Use the arrow buttons to select (or deselect) the stores, regions, and organizations that the template should be associated with, and then select **OK**.
 
-    - Only one timeslot template can be associated with each store or channel.
-    - Use the arrow buttons to select stores, regions, or organizations. The calendar will be available to the stores or store groups, and it will be visible at the pont of sale (POS) for reference.
+    > [!NOTE]
+    > - Only one timeslot template can be associated with each store or channel.
+    > - Each timeslot created should be unique per delivery mode within each template.
+    > - Once the timeslot feature is configured, the timeslot calendar will be available to the selected stores or store groups, and will also be visible at the POS for reference.
 
-    ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG)
+    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. On the **Distribution schedule** page, run the **1070** and **1135** jobs to sync the data to the channels.
-
-> [!NOTE]
-> The timeslot created should be unique per delivery mode within each template.
 
 ## Timeslot selection on POS orders 
 
@@ -112,7 +111,7 @@ In POS, when an order or order line is identified for pickup, the cashier can se
 
 The following image shows an example of timeslot selection in a POS order.
 
-![POS Timeslot Pickup](../dev-itpro/media/Curbside_timeslot_POS.png)
+![An example of timeslot selection in a POS order](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## Timeslot selection on e-commerce orders 
 
