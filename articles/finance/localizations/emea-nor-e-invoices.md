@@ -155,8 +155,9 @@ You can also enter Customer acounting codes directly in project invoice proposal
 
 ## Export of customer electronic invoices
 ### Sending of e-invoices
-When an invoice is posted you can generate an electronic invoice by clicking Send > Original button:
-...
+When an invoice is posted you can generate an electronic invoice by clicking **Send** > **Original** button for the selected invoice:
+
+![Send e-invoice](media/emea-nor-ger-einvoice.jpg)
 
 ### Inquiring of e-invoices
 The XML file with a generated electronic invoice can be then found in Electronic reporting jobs in Organization administration. To see the file click Show files button for the relevant job:
