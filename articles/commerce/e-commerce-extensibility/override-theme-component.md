@@ -88,3 +88,5 @@ yarn msdyn365 add-component-override spring add-to-cart
 [Extend a theme to add module extensions](theme-module-extensions.md)
 
 [Extend a theme from a base theme](extend-theme.md)
+
+[Add custom resources to your customization code](add-custom-resources.md)
