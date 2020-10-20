@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Edit & audit of online orders & async customer orders transactions
-description: This topic describes the feature to edit & audit online orders and async customer order transactions in Dynamics 365 Commerce.
+title: Edit & audit of online order & async customer order transactions
+description: This topic describes the feature to edit & audit online order and async customer order transactions in Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 10/20/2020
@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 
 ---
-# Edit & audit of online orders & async customer orders transactions
+# Edit & audit of online order & async customer order transactions
 
 [!include [banner](includes/banner.md)]
 
