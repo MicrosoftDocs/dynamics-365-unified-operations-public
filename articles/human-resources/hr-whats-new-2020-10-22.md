@@ -62,18 +62,18 @@ The following bug fixes are included in this release.
 | Issue number| Issue  | Description|
 | --- | --- | --- |
 | 437922 | Importing FMLA Hours using the DMF entity results in a 'read-only' error |---|
+Using the FMLA Hours entity to import hours associated to an FMLA case was failing.  Additional logic was added to ensure that the hours being imported do not exceed the hours remaining for the case.  
 | 512019 | Incorrect last carry-forward amount |---|
 | 458639 | Worker contacts entity doesn't support change tracking mode |---|
+Worker contacts entity has been updated so that it can be used in BYOD.
 | 505347 | Training manager able to submit a leave request on behalf of an employee when streamlined worker feature enabled |---|
 | 513490 | Benefits Management logging:  add logging for plans with no coverage options|---|
 | 517021 | Inability to select multiple plans with the same Plan Type CODE if Plan Type has one enrollment per type |---|
-| 487690 | Effective date on the Create Compensation form goes back one day when assigning to worker.  |---|
-| 467214 | Salaried Analytics Shows only if pay rate conversion name is set to Annual|---|
-| 510716 | Compensation Analytics includes both male and female employees for "male average hourly pay"  |---|
-| 444791 | Unable to view compensation in Employee self-service when Restrict access it turned on in Comp plan |---|
+| 444791 | Unable to view compensation in Employee self-service when Restrict access is turned on in Comp plan |---|
 | 457542 | Updating course details after it has been closed does not also update the same information on the Employee that took part in the course  |---|
 | 515342 |Cannot insert data through the CDSLeaveRequestDetailEntity - Company is not found or does not exist. |---|
-| 514743 | Exchange email error - Not able to send emails |---|
+| 514743 | Error in Email Parameter form when using Exchange |---|
+The message 'Could not load filed or assembly...' was being displayed in the Email Parameters page when the email provider was set to 'Exchange'.  Fix will allow parameters page to load and save as expected.
 
 
 
