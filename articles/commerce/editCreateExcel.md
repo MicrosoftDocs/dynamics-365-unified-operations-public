@@ -57,3 +57,7 @@ While there is a pre-defined Excel template that customers can leverage from dif
     | Income / Expense | Transaction (auditable), Income/Expense transactions (auditable), Payment transactions (auditable) |
     | Declare starting amount / Tender removal / Float entry / Change tender / Invoice payment / Customer deposit | Transaction (auditable), Payment transactions (auditable) |
 
+8.	It is important to add only one entity to each Excel spreadsheet. Also, all fields that are indicated with key icon needs to be added to the relevant spreadsheet
+9.	Once the spreadsheets are designed, apply the required filters. Make sure to apply the same filters to all the spreadsheets in the file. Avoid loading huge amounts of data to the Excel file as this can cause your system & Excel to perform super slow   . It is recommended to always use Company + Statement Number or Transaction Number as filters on the file
+10.	After the filter is composed, click on **Refresh** and the data will be loaded
+11.	Edit the required data and then publish the data. If the Publish button is disabled, it is probably because not all key fields were added to the Excel sheet
