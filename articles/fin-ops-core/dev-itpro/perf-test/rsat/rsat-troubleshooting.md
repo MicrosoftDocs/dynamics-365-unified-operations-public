@@ -128,11 +128,11 @@ The Google Chrome browser may not work with the Regression suite automation tool
 Microsoft Excel data tabs display the system identifiers for data variables. Excel does not display friendly names.
 
 ##  Validating blank dates
-If your test case requires validation that a certain control of type Date/Time is blank, you can insert the following value into the Excel cell corresponding to this control: “01/01/1900”.
+If your test case requires validation that a certain control of type Date/Time is blank, you can insert the following value into the Excel cell corresponding to this control: "01/01/1900".
 
 ## Azure DevOps connectivity
 
-You may you see this error when you select the desired Azure DevOps project in RSAT settings: "The structure path <iteration path> is not valid. Verify your settings and try again". To resolve it, open the project in Azure DevOps and navigate to the Test Plans. Verify the Iteration path defined for each test plan. If the iteration path is similar to what is mentioned in the above error, remove the existing iteration path and add new one for the test plan and save.
+You might you see this error when you select the desired Azure DevOps project in RSAT settings: "The structure path <iteration path> is not valid. Verify your settings and try again". To resolve this error, open the project in Azure DevOps and navigate to the Test Plans. Verify the iteration path defined for each test plan. If the iteration path is similar to what is shown in the error, remove the existing iteration path and add a new one for the test plan and save.
 
  
 
