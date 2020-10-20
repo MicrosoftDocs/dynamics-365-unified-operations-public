@@ -49,7 +49,11 @@ Dual-write is transaction-based. For example, if a change in a Finance and Opera
 
 You must have two Azure Active Directory (Azure AD) applications set up for the Finance and Operations environment and two application users set up in the Common Data Service environment. These application users should contain the appropriate application IDs. For the connection to work properly, you must give the applications the relevant entity permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites.md#verify-requirements-and-grant-access).
 
-End users who are configuring dual-write mappings should have System Administrator security roles assigned in both Common Data Service and Finance and Operations environments. 
+### Do end users require any special permissions to enable or configure dual-write?
+
+End users who are configuring dual-write mappings should have System Administrator security roles assigned in both Common Data Service and Finance and Operations environments.
+
+Dual-write mappings can be accessed by multiple users, as long as all the users and environments belong to a single tenant, and the user has the required security and licenses assignment.
 
 ### I have multiple legal entities. Some of my maps are legal entity–specific or valid for only some of the legal entities. What is the best way to address this requirement? Can I apply a filter such as Company = USMF to address it?
 
