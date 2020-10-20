@@ -5,7 +5,7 @@ title: Work with location directives
 description: This topic describes how to work with location directives
 author: Mirzaab
 manager: tfehr
-ms.date: 09/23/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,12 +23,10 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-09-23
+ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Release 10.0.15
 ---
 # Work with location directives
-
-<!--KFM: We should have a general intro here. What is this feature, what does it do, why do I need it? -->
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,85 +34,91 @@ ms.dyn365.ops.version: Release 10.0.15
 
 Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines. Location directives are created for specific *Work order types*.
 
-- Go to **Warehouse management \> Setup \> Location directives**
+To open the page, go to **Warehouse management \> Setup \> Location directives**.
 
 ## Location Directive Work Order Types
 
-![Location Directives Work Order Types](media/Location_Directives_Work_Order_Types.png "Location Directives Work Order Types")
+Location directives have many common fields that are available for setup in each of the work order types. There are also fields specific to certain work order types. 
 
-Location directives have many common fields that are available for setup in each of the work order types. There are also fields specific to certain work order types. Below is a table of the common and specific fields available when setting up a location directive.
+![Location directives work order types](media/Location_Directives_Work_Order_Types.png "Location directives work order types")
 
 >[!NOTE]
 >Two work order types, **Canceled work** and **Cycle counting**, are used only by the system and location directives cannot be created for these work order types.
 
+The following subsections provide tables that list the common and specific fields available when setting up a location directive.
+
 ### Fields common to all work order types
 
-| *FastTab* | *Fields* |
+The following table lists fields common to all work order types.
+
+| FastTab | Field |
 | --- | --- |
-| **Location directives** | *Work type* |
-| **Location directives** | *Site* |
-| **Location directives** | *Warehouse* |
-| **Location directives** | *Directive code* |
-| **Location directives** | *Multiple SKU* |
-| **Lines** | *Sequence number* |
-| **Lines** | *From quantity* |
-| **Lines** | *To quantity* |
-| **Lines** | *Unit* |
-| **Lines** | *Locate quantity* |
-| **Lines** | *Restrict by unit* |
-| **Lines** | *Round up to unit* |
-| **Lines** |*Locate packing quantity* |
-| **Lines** | *Allow split* |
-| **Location Directive Actions** | *Sequence number* |
-| **Location Directive Actions** | *Name* |
-| **Location Directive Actions** | *Fixed location usage* |
-| **Location Directive Actions** | *Allow negative inventory* |
-| **Location Directive Actions** | *Batch enabled* |
-| **Location Directive Actions** | *Strategy* |
+| Location directives | Work type |
+| Location directives | Site |
+| Location directives | Warehouse |
+| Location directives | Directive code |
+| Location directives | Multiple SKU |
+| Lines | Sequence number |
+| Lines | From quantity |
+| Lines | To quantity |
+| Lines | Unit |
+| Lines | Locate quantity |
+| Lines | Restrict by unit |
+| Lines | Round up to unit |
+| Lines |Locate packing quantity |
+| Lines | Allow split |
+| Location Directive Actions | Sequence number |
+| Location Directive Actions | Name |
+| Location Directive Actions | Fixed location usage |
+| Location Directive Actions | Allow negative inventory |
+| Location Directive Actions | Batch enabled |
+| Location Directive Actions | Strategy |
 
 ### Fields specific to work order types
 
-| *FastTab* | *Fields* | *Work order type* |
+The following table lists fields specific to the listed work order types.
+
+| FastTab | Field | Work order type |
 | --- | --- | --- |
-| **Location directives** | *Locate by* | *Purchase orders* |
-| **Location directives** | *Applicable disposition code* | *Purchase orders* |
-| **Location directives** | *Disposition code* | *Purchase orders* |
-| **Location directives** | *Applicable disposition code* |*Finished goods put away* |
-| **Location directives** | *Disposition code* | *Finished goods put away* |
-| **Location directives** | *Applicable disposition code* |*Return orders* |
-| **Location directives** | *Disposition code* | *Return orders* |
-| **Location directives** | *Applicable disposition code* |*Kanban put away* |
-| **Location directives** | *Applicable disposition code* |*Kanban picking* |
-| **Lines** | *Immediate replenishment template* | *Sales orders* |
-| **Lines** | *Immediate replenishment template* | *Raw material picking* |
-| **Lines** | *Immediate replenishment template* | *Transfer issue* |
-| **Lines** | *Immediate replenishment template* | *Kanban picking* |
+| Location directives | Locate by | Purchase orders |
+| Location directives | Applicable disposition code | Purchase orders |
+| Location directives | Disposition code | Purchase orders |
+| Location directives | Applicable disposition code |Finished goods put away |
+| Location directives | Disposition code | Finished goods put away |
+| Location directives | Applicable disposition code |Return orders |
+| Location directives | Disposition code | Return orders |
+| Location directives | Applicable disposition code |Kanban put away |
+| Location directives | Applicable disposition code |Kanban picking |
+| Lines | Immediate replenishment template | Sales orders |
+| Lines | Immediate replenishment template | Raw material picking |
+| Lines | Immediate replenishment template | Transfer issue |
+| Lines | Immediate replenishment template | Kanban picking |
 
-## Location directives Action Pane
+## The Location directives Action Pane
 
-The Location directives Action pane contains, in addition to **Edit**, **New** and **Delete**; options to adjust the sequence in which the location directive is processed, **Move up** and **Move down**, as well as to configure a query, **Edit query**, which specifies what criteria the location directive is to be applied.
+The **Location directives** page Action Pane contains options to create, edit, and delete directives (**Edit**, **New** and **Delete**); adjust the sequence in which the location directive is processed (**Move up** and **Move down**); and to configure a query (**Edit query**), which specifies what criteria the location directive is to be applied.
 
-- **Move up** - Moves the selected location directive up in the sequence. For example, from Sequence number 4 to Sequence number 3.
-- **Move down** - Moves the selected location directive down in the sequence. For example, from Sequence number 4 to Sequence number 5.
-- **Edit query** - The Edit query option allows you to define the conditions on which the selected location directive will be processed. For example, you may want to only apply a specific location directive to work in one warehouse.
+- **Move up** - Moves the selected location directive up in the sequence. For example, from sequence number 4 to sequence number 3.
+- **Move down** - Moves the selected location directive down in the sequence. For example, from sequence number 4 to sequence number 5.
+- **Edit query** - Opens a dialog box where you to define the conditions on which the selected location directive will be processed. For example, you may want to apply a given location directive only for a specific warehouse.
 
 ## Location directives header
 
 The location directive header is where you set the sequence number for the location directive and where you establish the location directives descriptive name.
 
-- **Sequence number** - Sequence in which location directive is tried to be processed for selected order type. It can be changed using Move Up and Move Down on the Action Pane.
+- **Sequence number** - Indicates the sequence in which the system tries to apply each location directive for selected order type. It can be changed using **Move Up** and **Move Down** on the Action Pane. Low numbers are applied first.
 
-- **Name** - Descriptive name for the location directive. It should help identify the general purpose of the directive. For example, Sales order Picking in Warehouse 24.
+- **Name** - Descriptive name for the location directive. It should help identify the general purpose of the directive. For example, *Sales order picking in warehouse 24*.
 
-## Location directives FastTab
+## The Location directives FastTab
 
-The fields displayed on the Location directives FastTab are specific to the **Work order type** selected in the Navigation list. Below is a list of fields that a user will see displayed in the FastTab.
+The fields displayed on the **Location directives** FastTab are specific to the **Work order type** selected in the list pane. Below is a list of fields that a user will see displayed in the FastTab.
 
-- **Work type** - Select the type of work to be performed. The type of work available is based on the type of inventory transaction that you have selected in the Work order type field.
+- **Work type** - Select the type of work to be performed. The type of work available is based on the type of inventory transaction that you have selected in the **Work order type** field. Select one of the following:
 
-  - **Put** - A work type equal to "Put" means that the location directive is going to try and find the most ideal location to place or locate inventory coming into the system either from receiving, production, or inventory adjustments. It can be as well used to define put to stage location or final bay door shipping location.
+  - **Put** - The location directive will try to find the most ideal location to place or locate inventory coming into the system either from receiving, production, or inventory adjustments. It can also used to define put to stage location or final bay door shipping location.
 
-  - **Pick** - A work type equal to "pick" means that WHS is going to try and find the most ideal location/s to physically reserve inventory from (Create work). The pick can be completed (pick work line can be closed), even if the work is not completed. The user can complete physically picking and in the system that is pick step, then user can cancel from the mobile device and complete the work (eg. Put) later. Work header however is first closed when final put is completed.
+  - **Pick** - The location directive will try to find the most ideal location(s) to physically reserve inventory from (create work). The pick can be completed (pick work line can be closed), even if the work is not completed. The user can complete physically picking and in the system that is pick step, then user can cancel from the mobile device and complete the work (eg. Put) later. Work header however is first closed when final put is completed.
 
     >[!IMPORTANT]
     >**Counting, Adjustments, Custom, Inventory status change, License plate building, print, Status change, Pack to nested license plates** - These are not usable in any location directive setup. It is a enum so there is no any filtering connected to Work order type.

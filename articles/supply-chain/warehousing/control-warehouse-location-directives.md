@@ -5,7 +5,7 @@ title: Control warehouse work by using work templates and location directives
 description: This topic describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 author: perlynne
 manager: tfehr
-ms.date: 02/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,24 +44,22 @@ The **Work templates** page lets you define the work operations that must be per
 
 Work templates consists of a header and associated lines. Each work template is for a specific *work order type*. Many work order types are associated with source documents, such as purchase or sales orders. However, other work order types represent separate warehouse processes, such as cycle counting. The *work pool ID* lets you organize work into groups. 
 
-The settings in the work header definition can be used to determine when a new piece of work should be created. For example, you can set a maximum number of pick lines and a maximum expected pick time. Then, if the work for a sales order picking process exceeds either of those values, that work is split into two pieces of work.
+Use the settings in the work header definition to determine when a new piece of work should be created. For example, you can set a maximum number of pick lines and a maximum expected pick time. Then, if the work for a sales order picking process exceeds either of those values, that work is split into two pieces of work.
 
-The **Work header breaks** button is used to define when the system should create new work headers. If you for example would like to create **Work headers** per _Order number_ you
-start by adding this field to the **Edit query** - **Sorting** section. The table fields getting added into the **Sorting** will be possible to select as a "grouping field" by selecting the **Group by this field** in the **Work header breaks** form.
+Use the **Work header breaks** button to define when the system should create new work headers. For example, to create a work header for each _Order number_, select **Edit query** on the Action Pane and then add this field to the **Sorting** tab of the query editor. The fields added to the **Sorting** tab are available to select as *grouping fields*. To set your grouping fields, select **Work header breaks** on the Action Pane and then select the check box in the **Group by this field** column for each field you want to use as a grouping field.
 
-The work lines represent the physical tasks that are required in order to process the work. For example, for an outbound warehouse process, there might be a work line for picking up the items within the warehouse and another line for putting those items into a staging area. There can then be an additional line for picking the items from staging, and another line for putting the items into a truck as part of the loading process. You can set a *directive code* on work template lines. A directive code is linked to a location directive and therefore helps guarantee that the warehouse work is processed in the correct location in the warehouse. 
+The work lines represent the physical tasks that are required in order to process the work. For example, for an outbound warehouse process, there might be a work line for picking up the items within the warehouse and another line for putting those items into a staging area. There can then be an additional line for picking the items from staging, and another line for putting the items into a truck as part of the loading process. You can set a *directive code* on work template lines. A directive code is linked to a location directive and therefore helps guarantee that the warehouse work is processed in the correct location in the warehouse.
 
-You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can be used for work only in a specific warehouse. Alternatively, you might have several templates that are used to create work for outbound sales order processing, depending on the sales origin. The system uses the **Sequence number** field to determine the order that the available work templates are assessed in. Therefore, if you have a very specific query for a particular work template, you should give it a low sequence number. That query will then be evaluated before other, more general queries.
+You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can be used for work only in a specific warehouse. Alternatively, you might have several templates that create work for outbound sales order processing, depending on the sales origin. The system uses the **Sequence number** field to determine the order that the available work templates are assessed in. Therefore, if you have a very specific query for a particular work template, you should give it a low sequence number. That query will then be evaluated before the other, more general queries.
 
->[!Note] 
->You can prevent the system from automatically overwriting work template **sequence numbers** after a template has been deleted by enabling the feature **Preserve work template sequence numbers on delete** in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
+>[!Note]
+>To prevent the system from automatically overwriting work template **sequence numbers** after a template has been deleted, enable the feature *Preserve work template sequence numbers on delete* in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 To stop or pause a work process, you can use the **Stop work** setting on the work line. In that case, the worker who is performing the work won't be asked to perform the next work line step. To move on to the next step, that worker or another worker must select the work again. You can also separate the tasks within a piece of work by using a different *work class ID* on the work template lines.
 
 ## Location directives
 
-Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines, and you create them on the **Location directives** page. 
+Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines, and you create them on the **Location directives** page.
 
 On the header, each location directive must be associated with a *work order type* that specifies the type of inventory transaction that the directive will be used for, such as sales orders, replenishment, or raw material picking. The *work type* specifies whether the location directive will be used for picking or putting work, or for some other warehouse process, such as counting or inventory status changes. You must also specify a *site* and a *warehouse*. A *directive code* that you specify on the header can be used to link the location directive to one or more work templates. 
 
@@ -73,33 +71,13 @@ Location directives have one additional level of detail: *location directive act
 
 For more information about how to create and configure location directives, see [Create a location directive](create-location-directive.md).
 
+### How location directives work
 
-### How does Location directives work
-Location directives are used to determine WHERE to pick and WHERE to put the items.
-For each individual work line the location directives will be evaluated, and a location will be selected based on the work line details. The location directives will be evaluated sequentially from all the ones that meet the requirements for the particular work line (e.g., they are for the right warehouse, have the right details based on the query, etc.)
+Location directives determine *where* to pick items and *where* to put them.
+The system evaluates the location directive against each individual work line and selects a location based on the work line details. The system starts by finding all location directives that match a particular work line (for example, they are for the right warehouse, match the query, and so on) and then evaluates the found directives sequentially.
 
 > [!Note]
 >There are special cases where the location to pick from or put to are pre-selected.
->For example, during the _purchase registration_ the first pick is always from the location where the registration happens. Another example is the **Inventory movement by template**, where the location to pick from is selected by the warehouse worker and only the put locations are found through **Location directives**.
+>For example, during _purchase registration_, the first pick is always from the location where the registration happens. Another example is *inventory movement by template*, where the location to pick from is selected by the warehouse worker and only the put locations are found through location directives.
 
 For more information about location directives, see [Work with location directives](location-directives.md).
-
-<!--HHM: Karl, this can be removed as it is added to locations-directives.md. Leaving it here for your review.
-### Multiple SKU
-
-One of the criteria evaluated on the location directive is the **Multiple SKU** option.
-
-The **Multiple SKU** option on the **Location directives** is used for work
-lines handling more than one item number (it shows up as blank in the work details and as "Multiple" for the the **Warehouse app** processing pages.
-
-An typical example scenario would be when using a **Work template** setup with more than one *pick/put* pair. Here you might want the search for a specific put ***Staging location type***.
-
->[!Note]
-> You will not be able to use the **Edit query** option when having the **Multiple SKU** enabled because the query cannot evaluate on item level, when having multiple items.
-To make sure the desired **Location directive** get selected you can use the **Directive code** to guide the selection of the **Location directive** related to the work template put lines having this **Directive code** assigned.
-
-Unless you always only operate with single item or mixed item operations, it is important to define two **Location directives** for the **_Put_** **Work type**. One with the **Multiple SKU** enabled and another without. Not doing this often results in unexpected business process locations coming from the used **Location directive**. -->
-
-<!--HHM: Karl, this can be removed as it is added to locations-directives.md. Leaving it here for your review.
-### Batch enabled
-For processes using the **Location directives** to find locations to pick  batch number tracked items from, it is important to select the **Batch enabled** setting on the **Location directive actions** to include the search for locations holding batch number tracked items. -->
