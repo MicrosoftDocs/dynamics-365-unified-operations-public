@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Editing financial dimensions on retail transactions
+title: Edit financial dimensions on retail transactions
 description: This topic describes the feature to edit financial dimensions on retail transactions in Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 
 ---
-# Editing financial dimensions on retail transactions
+# Edit financial dimensions on retail transactions
 To edit the financial dimensions for retail store transactions, please follow the following steps:
 1.	Navigate to **Financial dimensions configuration for integrating applications** menu item, select the active **Default Dimensions integration** record and make sure that all dimensions that are wanted on the Excel sheet for editing are in the **Selected** column. For more details, please refer to the link: https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration#data-entities
 2.	Download & open the Excel file from the **Statements page**, **Retail transactions** page or the **Transaction validation failures** tile on the **Store financials** workspace   
