@@ -140,7 +140,7 @@ Go to **Accounts receivable** \> **Invoices** \> **All free text invoices** and 
 
 #### Sales orders
  
-Go to **Accounts receivable** \> **Orders** \> **All sales orders** and create a new or select an existing order. On **Header** page, **General** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
+Go to **Accounts receivable** \> **Orders** \> **All sales orders** and create a new or select an existing order. On **Header** page, **General** FastTab, **E-INVOICE** section, enter order-specific accounting code in **Dimension account** field. Alternatively, turn on **Line-specific** option, swith to **Lines** page, **Line details** FastTab, **General** tab, and enter line-specific accounting codes in the **Dimension account** field for each order line.
  
  #### Project invoices
  
