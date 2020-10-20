@@ -224,4 +224,8 @@ export default (props: IProductFeatureViewProps & IProductFeatureProps<{ICartExt
 
 [Configure theme style presets](theme-style-presets.md)
 
+[Override a module library component in a theme](override-theme-component.md)
+
 [Extend a theme from a base theme](extend-theme.md)
+
+[Add custom resources to your customization code](add-custom-resources.md)
