@@ -134,8 +134,10 @@ The system allows entering Customer accuonting codes when working with free text
 
 #### Free text invoices
  
- Go to **Accounts receivable** \> **Invoices** \> **All free text invoices** and create a new or select an existing invoice. On **Header** page, **Customer** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
+Go to **Accounts receivable** \> **Invoices** \> **All free text invoices** and create a new or select an existing invoice. On **Header** page, **General** FastTab, **E-INVOICE** section, enter accounting code in **Dimension account** field. If you need to have individual accounting codes for each invoice line then turn on **Line-specific** option, swith to **Lines** page and enter a line-specific accounting code in the **Dimension account** field, in **Line details** FastTab, in **General** tab:
  
+![FTI cost](media/emea-nor-ger-fti-cost.jpg)
+
 #### Sales orders
  
 Go to **Accounts receivable** \> **Orders** \> **All sales orders** and create a new or select an existing order. On **Header** page, **General** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
