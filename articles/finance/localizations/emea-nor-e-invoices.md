@@ -104,9 +104,22 @@ When generating electronic invoices, the rates of the sales tax codes are being 
  - Consider substitution of fixed "31" payment methods with customizible Application specific parameters?
  
 ### Customer requisition
- - FTI
- - SO
- - Proj
+When registering free text invoices, invoices based on salse orders or project invoices, it is required to enter **Customer requisition**. You can also add **Customer reference** which is not mandatory now.
+ - **Free text invoices**
+ 
+ Go to **Accounts receivable** \> **Invoices** \> **All free text invoices** and create a new or select an existing invoice. On **Header** page, **Customer** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
+ 
+ - **Sales orders**
+ 
+Go to **Accounts receivable** \> **Orders** \> **All sales orders** and create a new or select an existing order. On **Header** page, **General** FastTab, **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
+ 
+ - **Project invoices*
+ 
+Go to **Project management and accounting** \> **Projects** \> **Project contracts** and create a new or select an existing contract. On **Funding sources** FastTab, create a new or select an existing funding source of **Customer** type and open its **Details**:
+
+![Funding sources](media/emea-nor-ger-proj-contracts.jpg)
+ 
+ **REFERENCES** section, enter values in **Customer requisition** and **Customer reference** fields.
  
 ### Customer accounting code registration
  - FTI
