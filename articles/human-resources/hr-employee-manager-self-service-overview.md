@@ -4,8 +4,8 @@
 title: Employee and Manager self-service overview
 description: This article provides an overview of the employee and manager self service workspace.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/17/2020
+manager: tfehr
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -198,9 +198,9 @@ You can view position data for both direct and extended reports.
 
 #### Compensation tab
 
-The **Compensation** tab displays the employee's annual salary. A company identifier displays under the salary amount. If an employee has more than one employment and is getting paid from multiple legal entities, the employee will have multiple compensation cards. The last increase amount and percentage displays, based on the company of employment.
+The **Compensation** tab displays the employee's annual salary. A company identifier displays under the salary amount. If an employee has more than one employment and is getting paid from multiple legal entities, the employee will have multiple compensation plans. To see all compensation plans across legal entities without switching companies, you must enable cross compensation under **Human Resources > Shared parameters > Advanced access > Enable cross company compensation**.
 
-To view compensation history, select the salary amount to open the **Details** form. Only current and historical fixed and variable compensation records display in the **Compensation** form. If an employee has more than one employment, you can switch between companies to view compensation history in each company.
+To view compensation history, select the salary amount to open the **Details** form. Only current and historical fixed and variable compensation records display in the **Compensation** form. If an employee has more than one employment, you can switch between companies to view compensation history in each company or enable cross company compensation in Human Resources Shared parameters to view all compensation plans.
 
 You can view compensation for both direct and extended reports.
 
