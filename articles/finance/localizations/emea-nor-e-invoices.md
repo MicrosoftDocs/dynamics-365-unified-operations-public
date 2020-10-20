@@ -123,6 +123,12 @@ Go to **Project management and accounting** \> **Projects** \> **Project contrac
  
  ![Project references](media/emea-nor-ger-proj-refs.jpg)
  
+  You can also enter Customer requisition and reference values directly in project invoice proposals. 
+  Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals** and create a new or select an existing invoice proposal.
+  In **Invoice proposal header** FastTab,in **E-INVOICE** section, enter values in **Customer requisition** and **Customer reference** fields:
+ 
+ ![Project proposal](media/emea-nor-ger-proj-prop.jpg)
+ 
 ### Customer accounting code registration
  - FTI
  - SO
