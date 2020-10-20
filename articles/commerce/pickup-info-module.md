@@ -39,7 +39,7 @@ This topic covers the pickup information module and describes how to add it to c
 
 The pickup information module can be used in a checkout module to view order pickup information and to choose an available pickup timeslot for an order. It allows customers to view available pickup dates and timeslots so that they can choose a suitable time to pick up their order. For example, a customer can choose to pick up an order at 3 PM on March 21st from the San Francisco store. 
 
-Pickup timeslots for respective stores need to be configured in Commerce headquarters. For more information, see [Timeslot for pickup](./dev-itpro/pickup-timeslots.md).
+Pickup timeslots for respective stores need to be configured in Commerce headquarters. For more information, see [Timeslot for pickup](../dev-itpro/pickup-timeslots.md).
 
 If a module is authored on a checkout page but the store selected for pickup does not have timeslots defined, the module will display information without allowing the user to select any timeslots. Timeslots are optional and not required to place an order.
 
@@ -68,7 +68,7 @@ The following image shows an example of an e-Commerce checkout page with timeslo
 
 ## Additional resources
 
-[Timeslot for pickup](./dev-itpro/pickup-timeslots.md)
+[Timeslot for pickup](../dev-itpro/pickup-timeslots.md)
 
 [Checkout module](add-checkout-module.md)
 
