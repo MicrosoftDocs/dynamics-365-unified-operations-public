@@ -41,7 +41,7 @@ This topic provides an overview of wallet payment support for Microsoft Dynamics
 | Term | Description |
 |---|---|
 | Wallet | A payment type which does not include traditional payment characteristics, such as the BIN range that is used to differentiate among credit and debit card types. |
-| Processor payment method | A new property payment card property in the payments SDK. When this property is added to supported payment methods within a connnector, those payment methods can be maped to cards or wallets configured in the Dynamics 365 back office and avoid the traditional BIN range mapping. 
+| Processor payment method | A new property payment card property in the payments SDK. When this property is added to supported payment methods within a connector, those payment methods can be mapped to cards or wallets configured in the Dynamics 365 back office and avoid the traditional BIN range mapping. 
 
 ## Overview
 
@@ -67,7 +67,7 @@ This feature adds a new form called **Processor payment method mapping** which c
 
 ![Procesor payment mapping link](../media/Payments/ProcPmtMap.png)
 
-When this form is launched, it queries available payment connectors to collect a set or payment methods with the PaymentMethodVariant field populated. It then checks to determin if those payment methods have an existing mapping to a card or wallet. Payment methods that do not have a mapping are listed in the center column of the form. 
+When this form is launched, it queries available payment connectors to collect a set or payment methods with the PaymentMethodVariant field populated. It then checks to determine if those payment methods have an existing mapping to a card or wallet. Payment methods that do not have a mapping are listed in the center column of the form. 
 
 ![Unmapped processor payment method](../media/Payments/Unmapped.png)
 
@@ -75,17 +75,17 @@ To map a processor payment method to a card or wallet, first select the card or 
 
 ![Mapped processor payment method](../media/Payments/Mapped.png)
 
-### When not to use procesor payment method mapping
+### When not to use processor payment method mapping
 
 In certain cases, processor payment method mapping may not be granular enough for reporting needs. For example, some retailers differentiate different external gift cards from the same provider by their BIN range. In cases such as that, the gift cards should not be mapped using the above form. Instead, they should continue to use traditional BIN range mapping. 
 
 ## Support for unidentified card types
 
-In certain cases, a payment connector may return a card that does not have a BIN range or processor payment method mapping. When that happens, the payment is authorized by the payment terminal, but is then reveresed when the point of sale cannot map the authorization response to a specific card type. To address this issue, a capability is provided to specify map unknown authorization responses to a default card type. 
+In certain cases, a payment connector may return a card that does not have a BIN range or processor payment method mapping. When that happens, the payment is authorized by the payment terminal, but is then reversed when the point of sale cannot map the authorization response to a specific card type. To address this issue, a capability is provided to specify map unknown authorization responses to a default card type. 
 
 ![Default for unmapped cards](../media/Payments/DefaultUnMapped.png)
 
-This ensures that the payment is never authorizaed by the terminal and then reversed by the POS, thus avoiding confusion for customers and store associates. When this setting is used, the default card for unknown authorizations should be checked periodically to ensure that wanted card types are not accidentally being mapped to the default for unknown card types. If a card type is truly unwanted for processing, it should be disabled at the processor level. 
+This ensures that the payment is never authorized by the terminal and then reversed by the POS, thus avoiding confusion for customers and store associates. When this setting is used, the default card for unknown authorizations should be checked periodically to ensure that wanted card types are not accidentally being mapped to the default for unknown card types. If a card type is truly unwanted for processing, it should be disabled at the processor level. 
 
 ## Additional resources
 
