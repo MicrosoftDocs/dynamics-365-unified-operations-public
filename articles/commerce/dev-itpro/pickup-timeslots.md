@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and update timeslots for pickup delivery mode(s).
-description: This topic describes how to create and update timeslots in Commerce headquarters and enable them for the pickup delivery mode.
+title: Create and update timeslots for customer pickup
+description: This topic describes how to create, configure, and update customer pickup timeslots in Commerce headquarters.
 author: anupamar-ms
 manager: AnnBe
 ms.date: 10/20/2020
@@ -29,18 +29,18 @@ ms.dyn365.ops.version: Retail 10.0.15 update
 
 ---
 
-# Create and update timeslots for pickup delivery mode(s)
+# Create and update timeslots for customer pickup
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to create and update timeslots in Commerce headquarters and enable them for the pickup delivery mode.
+This topic describes how to create, configure, and update customer pickup timeslots in Commerce headquarters.
 
 ## Overview
 
-The timeslot feature provides a way for retailers to define a time slot for items that have pickup delivery mode(s). A timeslot allows the retailer to define what days and times orders can be picked up from a store. In addition, they can also define the number of orders that can be picked up in a given time window. This way a retailer can limit  the number of orders that can be picked up at a given day and time, which results in a better quality experience for their customers. 
+The timeslot feature provides a way for retailers to define a timeslot for items that have customer pickup delivery mode enabled. Timeslots allow retailers to define what days and times that orders can be picked up from a store. In addition, they can also define the number of orders that can be picked up in a given time window. Retailers can then limit the number of orders that can be picked up at a given day and time, resulting in a better quality experience for their customers. 
 
 > [!NOTE] 
-> This functionality is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
+> The timeslot feature is available in Microsoft Dynamics 365 Commerce versions 10.0.15 and later.
 
 The following image shows an example of timeslot selection during e-commerce checkout.
 
@@ -48,11 +48,11 @@ The following image shows an example of timeslot selection during e-commerce che
 
 ## Timeslots 
 
-A timeslot is a specific interval of time when a customer can choose to pick up their order from a specific store or location. This timeslot management feature is only available with the "pickup" mode of delivery in Dynamics 365 Commerce.
+A timeslot is a specific interval of time when a customer can choose to pick up their order from a specific store or location. The timeslot management feature is only available when the customer pickup delivery mode is configured in Dynamics 365 Commerce.
 
-A timeslot can be defined using the following properties:
+A timeslot is defined using the following properties:
 
-- **Mode of delivery**: Specifies the pickup mode of delivery that the timeslot applies to. 
+- **Mode of delivery**: Specifies the pickup mode of delivery that the timeslot applies to.
 
 - **Minimum and maximum**: Specifies the earliest and latest days that can be selected for pickup relative to the day that the order is placed. "Minimum" ensures there is enough time for the retailer to process the order before it's ready for pickup. "Maximum" ensures that the user cannot pick a date that is too far into the future. For example, with a minimum of "1", if an order is placed on September 20th, the earliest day available for pickup will be the next eligible day (September 21st). Similarly, you can also define a maximum number of days within which to pick up an order. With minimum and maximum values defined, a site user can only see and pick a certain set of days during their checkout experience. The minimum value can be expressed in decimals if it is less than 1, for example 4 hours would be represented as a minimum value of 0.17 (4 divided by 24, and rounded up). If the minimum value is higher than 1, it will be always rounded even if its a decimal. The maximum value will always be rounded up, for example 1.2 will be rounded up to 2.
 
@@ -77,14 +77,14 @@ Only a single timeslot template can be configured per channel. These channels in
 
 ## Configure the timeslot feature in Commerce headquarters
 
-Timeslots must be defined in Commerce headquarters for each pickup mode of delivery so that point of sale (POS) and e-Commerce channels can reference them.
+Timeslots must be defined in Commerce headquarters for each pickup mode of delivery so that point of sale (POS) and e-commerce channels can reference them.
 
 To configure the timeslot feature in Commerce headquarters, follow these steps.
 
 1. Go to **Commerce** \> **Channel setup** \> **Store pickup time slot**.
 1. Select **New** to create a new timeslot template. To use an existing template, select the template in the left navigation pane.
-1. Enter a **Time Slot ID** and **Description**.
-1. Under **Order Pickup - Time settings**, select **Add** to open a dialog box where you can define the date range, mode of delivery, active hours of delivery, active days, time slot interval, slots per interval, and other settings. After configuring the settings, select **OK**.
+1. Enter values for **Time Slot ID** and **Description**.
+1. Under **Order Pickup - Time settings**, select **Add** to open a dialog box where you can define the date range, mode of delivery, active hours of delivery, active days, time slot interval, slots per interval, and other settings. 
 
     - If timeslots are going to be static for the foreseeable future, leave **End date** blank.
     - If the timeslots in a day are going to vary, create additional entries under **Order Pickup - Time settings** to ensure that the dates and times do not overlap. 
@@ -94,6 +94,7 @@ To configure the timeslot feature in Commerce headquarters, follow these steps.
 
     ![Order Pickup - Time settings dialog box](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
+1. After configuring the **Order Pickup - Time settings** settings, select **OK**.
 1. Next you will associate the timeslot template with the stores or channels where it will be used. Under **Retail Channels**, select **Add**. In the **Choose organization nodes** dialog box, Use the arrow buttons to select (or deselect) the stores, regions, and organizations that the template should be associated with, and then select **OK**.
 
     > [!NOTE]
