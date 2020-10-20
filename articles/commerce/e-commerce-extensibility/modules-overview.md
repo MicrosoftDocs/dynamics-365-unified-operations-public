@@ -5,7 +5,7 @@ title: Modules overview
 description: This topic provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
 author: samjarawan
 manager: annbe
-ms.date: 09/18/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -103,7 +103,7 @@ The following information should help you choose the correct solution for your n
 
 ### Style changes
 
-If you have a scenario where a module library module does everything that you need it to do, but you want to change the module's look and feel, you can usually achieve this goal through CSS changes. For example, CSS changes let you hide unwanted elements in a module. A site's [theme](theming.md) contains the CSS for all modules in Sassy Cascading Style Sheets (SCSS) files. In some cases, if the CSS changes don't require any module or theme customizations, you can make them directly in Commerce site builder. The first two options that follow don't require that you use the online SDK. They are the easiest and fastest ways to make CSS changes to a module.
+If you have a scenario where a module library module does everything that you need it to do, but you want to change the module's look and feel, you can usually achieve this goal through CSS changes. For example, CSS changes let you hide unwanted elements in a module. A site's [theme](theming.md) contains the CSS for all modules in Sassy Cascading Style Sheets (SCSS) files. In some cases, if the CSS changes don't require any module or theme customizations, you can make them directly in Commerce site builder. Both of the following options don't require that you use the online SDK. They are the easiest and fastest ways to make CSS changes to a module.
 
 #### Style presets
 
