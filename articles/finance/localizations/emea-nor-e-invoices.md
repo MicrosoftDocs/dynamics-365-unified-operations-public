@@ -99,10 +99,6 @@ When generating electronic invoices, the rates of the sales tax codes are being 
  - For all non-zero tax rates, **S** category is used;
  - For zero tax rate either **E** or **Z** category is used depending on the configured reporting code for Tax-free sales.
 
-### Payments
- - Make PaymentID optional in GER.
- - Consider substitution of fixed "31" payment methods with customizible Application specific parameters?
- 
 ### Customer requisition
 When registering free text invoices, invoices based on salse orders or project invoices, it is required to enter **Customer requisition**. You can also add **Customer reference** which is not mandatory now.
 #### Free text invoices
@@ -170,7 +166,7 @@ If generation of electronic invoices failed with errors then click **Show log** 
 
 ![Show log](media/emea-nor-ger-einvoice-log.jpg)
 
-### Sending to ER destinations
-Alternatively, it is possible to setup Electronic reporting destinations for the e-invoice formats. In this case the output XML files with electronic invoices will be send to the defined destinations, Sharepoint folders, for example, right after posting of an invoice. It is necessary to turn on Print invoice parameter when posting and print to screen, if no paper copy is required.
+### Sending to Electronic reporting destinations
+Alternatively, it is possible to setup **Electronic reporting destinations** for the e-invoice formats. In this case the output XML files with electronic invoices will be send to the defined destinations, Sharepoint folders, for example, right after posting of an invoice. It is necessary to turn on **Print invoice** parameter when posting.
 
 For more details about ER reporting destinations, please refer to: [Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations).
