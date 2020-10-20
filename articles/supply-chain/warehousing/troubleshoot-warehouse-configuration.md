@@ -35,21 +35,21 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while configuring Dynamics 365 Supply Chain Management.
 
-## Error: "The license plate or location is not valid."
+## The error "The license plate or location is not valid" is shown.
 <!-- KFM: I think this is an error message, so I put it in quotes. Does this look right? -->
 
 **Issue:** Scanning a license plate ID or location generates an error message.
 
 **Fix:** Check that the License Plate ID is not reserved by something else. This used to occur when a user scanned a value on the Warehouse Mobile App that was *both* a valid Location and License Plate ID; however, this issue has been resolved in 10.0.11.
 
-## Error: "License plate must be specified for this location."
+## The error "License plate must be specified for this location" is shown.
 <!-- KFM: I think this is an error message, so I put it in quotes. Does this look right? -->
 
 **Issue:** Transfer order required license plate to be specified.
 
 **Fix:** Transfer orders must maintain a License Plate ID throughout the process (From &gt; Transit &gt; To). Ensure default receipt location on the transit warehouse is license plate controlled.
 
-## Error: "You can't create a work template line for inventory status change because the work type isn't valid. Select a different work type."
+## The error "You can't create a work template line for inventory status change because the work type isn't valid. Select a different work type" is shown.
 <!-- KFM: I think this is an error message, so I put it in quotes. Does this look right? -->
 **Issue:** Cannot select work type of inventory status change in Work template details.
 
