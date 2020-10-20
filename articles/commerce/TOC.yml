@@ -1986,6 +1986,8 @@
             href: e-commerce-extensibility/cli-command-reference.md
         - name: Anatomy of a module
           items:
+          - name: Modules overview
+            href: e-commerce-extensibility/modules-overview.md
           - name: Module definition file
             href: e-commerce-extensibility/module-definition-file.md
           - name: Module React component file
@@ -2084,6 +2086,8 @@
             href: e-commerce-extensibility/theme-style-presets.md
           - name: Extend a theme to add module extensions
             href: e-commerce-extensibility/theme-module-extensions.md
+          - name: Override a module library component in a theme
+            href: e-commerce-extensibility/override-theme-component.md
           - name: Extend a theme from a base theme
             href: e-commerce-extensibility/extend-theme.md
           - name: Add custom resources to your customization code
