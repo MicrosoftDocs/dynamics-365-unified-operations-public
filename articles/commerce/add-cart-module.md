@@ -5,7 +5,7 @@ title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
