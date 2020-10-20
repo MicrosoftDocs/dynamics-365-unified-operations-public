@@ -137,8 +137,8 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for PayPal. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *Guid* |
-    | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *Guid* |
+    | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *String* |
+    | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *String* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal connector. The default is **USD** | Yes | Yes, but can be edited | USD; CAD |
     | Supported tender types | Other payment connnectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
     | Supported payment method variants | Other payment connnectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
