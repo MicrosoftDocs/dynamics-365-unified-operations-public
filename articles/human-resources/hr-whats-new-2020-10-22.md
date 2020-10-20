@@ -60,6 +60,7 @@ The following bug fixes are included in this release.
 > Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
 | Issue number| Issue  | Description|
+| --- | --- | --- |
 | 437922 | Importing FMLA Hours using the DMF entity results in a 'read-only' error |---|
 | 512019 | Incorrect last carry-forward amount |---|
 | 458639 | Worker contacts entity doesn't support change tracking mode |---|
