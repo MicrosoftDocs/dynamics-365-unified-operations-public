@@ -42,51 +42,52 @@ In Commerce, you can edit the specific transactions that fail validation while m
 
 In Retail version 10.0.5, cash and carry transactions like sales and returns are the only transactions that can be edited. Editing customer orders or online orders is not supported in 10.0.5. In Retail version 10.0.6 and higher, editing cash management transactions is also supported.
 1.	Install the Dynamics Excel Add-in.
-2.	Go to the Store financials workspace. The Transaction validation failures tile provides a pre-filtered view of the transaction form that failed one or more of the validation rules.
-3.	Open the form. Click the record that failed validation, click Office Add in, and then click Edit selected transaction. An Excel file with the details of the selected transaction opens, with the following worksheets:
+2.	Go to the **Store financials** workspace. The **Transaction validation failures** tile provides a pre-filtered view of the transaction form that failed one or more of the validation rules.
+3.	Open the form. Click the record that failed validation, click **Office Add in**, and then click **Edit selected transaction**. An Excel file with the details of the selected transaction opens, with the following worksheets:
     - Lines: This worksheet has the header and product lines and related data for the transaction.
     - Payments: This worksheet has the details of the payment lines for the transaction.
     - Discounts: This worksheet has the discount-related details for the transaction.
     - Taxes: This worksheet has the tax-related details for the transaction.
     - Charges: This worksheet has the charges-related data for the transaction.
 4.	In the Excel file, you modify the appropriate fields and then upload the data back into Headquarters using the Dynamics Excel Add-in publish functionality. Once published, the changes will be reflected in the system. During publish, no validation is done on changes that users make.
-5.	A complete audit trail of the changes can be viewed by clicking View audit trail in the Retail transaction header for the header-level changes and in the relevant section and record on the appropriate transaction page. For example, all changes relating to sales lines will be visible on the Sales transactions page, changes relating to payments will be visible on the Payment transactions page, etc. The audit details that are maintained for the changes are as follows.
+5.	A complete audit trail of the changes can be viewed by clicking **View audit trail** in the **Retail transaction** header for the header-level changes and in the relevant section and record on the appropriate transaction page. For example, all changes relating to sales lines will be visible on the **Sales transactions** page, changes relating to payments will be visible on the **Payment transactions** page, etc. The audit details that are maintained for the changes are as follows.
     - Modified date and time
     - Field
     - Old value
     - New value
     - Modified by
-6.	After your changes are made and published, run the Validate store transactions option again to validate that the changes you made are consistent and valid.
+6.	After your changes are made and published, run the **Validate store transactions** option again to validate that the changes you made are consistent and valid.
 
 > [!NOTE]
  > You can only edit transactions that failed validation. If you want to edit transactions that passed validation, change the validation status of the transaction you want to change to Error or None and publish the same. Now you will be able to edit the data in the header or any other child records of the transaction and publish them successfully. 
->  Bulk edit transactions linked to a statement
+  
+# Bulk edit transactions linked to a statement
 
 In Retail version 10.0.6 and higher, the option to bulk edit transactions at a statement level is supported as per the following steps:
 1.	Navigate to the Statements form and select the statement that contains the transactions that needs to be changed.
 2.	Click on the “Office” icon
 3.	Depending on what needs to be edited, choose one of the options below.
-    - Edit cash and carry transactions. This option enables you to edit all the cash and carry transactions included in the statement. The following Excel worksheets are available.
+    - **Edit cash and carry transactions** - This option enables you to edit all the cash and carry transactions included in the statement. The following Excel worksheets are available.
       - Transaction: This worksheet has all the header-level information for the sales transactions.
       - Sales transaction: This worksheet has all the lines-level information for the sales transactions.
       - Payment transactions: This worksheet has all the payment lines information for the sales transactions.
       - Discount transactions: This worksheet has all the discount lines information for the sales transactions.
       - Tax transactions: This worksheet has all the tax lines information for the sales transactions.
       - Charge transactions: This worksheet has all the charge lines information for the sales transactions.
-    - Edit cash management transactions. This option enables you to edit all the cash management transactions included in the statement. The following Excel worksheets are available.
+    - **Edit cash management transactions** - This option enables you to edit all the cash management transactions included in the statement. The following Excel worksheets are available.
       - Transaction: This worksheet has all the header-level information for the cash management transactions.
       - Bank tender transactions: This worksheet has all the bank drop transaction details.
       - Safe tender transactions: This worksheet has all the safe drop transaction details.
       - Tender declaration: This worksheet has all the tender declaration transaction details.
       - Income-expense transaction: This worksheet has all the income-expense transaction line details.
-      - Payment transactions: This worksheet has all the payment-related information for the Pay invoice operation as well as the income-expense transaction.
+      - Payment transactions: This worksheet has all the payment-related information for the **Pay invoice** operation as well as the income-expense transaction.
 4.	Edit the required transactions
-5.	Validations are not performed when you publish bulk edited transactions. You must ensure that all your edits are accurate and the fidelity of data across the worksheets is maintained. For example, if you want to change the transaction date to manage the scenarios where the fiscal or inventory period for the open transactions is closed, you need to change the date on all the Excel worksheets that have the Business date column. To validate transactions after they have been edited, you can use Revalidate transactions on the Statements page. Wait for the validation job to complete before posting the statement.
+5.	Validations are not performed when you publish bulk edited transactions. You must ensure that all your edits are accurate and the fidelity of data across the worksheets is maintained. For example, if you want to change the transaction date to manage the scenarios where the fiscal or inventory period for the open transactions is closed, you need to change the date on all the Excel worksheets that have the **Business date** column. To validate transactions after they have been edited, you can use **Revalidate transactions** on the **Statements** page. Wait for the validation job to complete before posting the statement.
 6.	If the aggregation has already been generated, navigate to the "Aggregated transactions" form, and click on the "Regenerate sales order xml" button.
 
 # Bulk edit transactions not linked to a statement
 In Retail version 10.0.10 and higher the option to bulk edit transactions   that are failing validations and not linked to a statement is also supported as per the following steps:
-1.	Navigate to All stores form and select the store for which transactions must edited
-2.	Click on the Office icon and then select Edit cash and carry transactions
+1.	Navigate to **All stores** form and select the store for which transactions must edited
+2.	Click on the Office icon and then select **Edit cash and carry transactions**
 3.	Edit the required transactions & publish the same 
 
