@@ -114,7 +114,7 @@ The following image shows an example of timeslot selection in a POS order.
 
 ## Timeslot selection for e-commerce orders 
 
-For details on enabling timeslot selection for e-commerce orders, see [Pickup information module](pickup-info-module.md). 
+For details on enabling timeslot selection for e-commerce orders, see [Pickup information module](./pickup-info-module.md). 
 
 > [!NOTE]
 > A Commerce site's checkout page must be authored with the pickup information module for users to view or edit pickup timeslots. In the absence of the pickup information module, orders will be placed without specifying or viewing timeslot information. 
@@ -125,6 +125,6 @@ The following image shows an example of an e-commerce order with timeslot inform
 
 ## Additional resources
 
-[Pickup information module](pickup-info-module.md)
+[Pickup information module](./pickup-info-module.md)
 
 
