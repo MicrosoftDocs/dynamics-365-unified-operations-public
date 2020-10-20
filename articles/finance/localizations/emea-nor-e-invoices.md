@@ -94,9 +94,10 @@ For more information about how to import ER configurations, see [Download Electr
 ![Units of measure configuration](media/emea-nor-ger-units.jpg)
 
 ### Sales tax codes transformation
-When generating electronic invoices, the rates of the sales tax codes are being analyzed and transformed to [UNCL5305-compliant codes](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/) according to the following logic:
+When generating electronic invoices, the rates of the sales tax codes are being analyzed and transformed to [UNCL5305-compliant categories](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/) according to the following logic:
 
-...
+ - For all non-zero tax rates, **S** category is used;
+ - For zero tax rate either **E** or **Z** category is used depending on the configured reporting code for Tax-free sales.
 
 ### Payments
  - Make PaymentID optional in GER.
