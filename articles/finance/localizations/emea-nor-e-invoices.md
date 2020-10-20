@@ -144,7 +144,9 @@ Go to **Accounts receivable** \> **Orders** \> **All sales orders** and create a
  
  #### Project invoices
  
-Go to **Project management and accounting** \> **Projects** \> **Project contracts** and create a new or select an existing contract. On **Funding sources** FastTab, create a new or select an existing funding source of **Customer** type and open its **Details**:
+Go to **Project management and accounting** \> **Projects** \> **Project contracts** and create a new or select an existing contract. On **Funding sources** FastTab, create a new or select an existing funding source of **Customer** type and open its **Details**. On **Funding source details** page, on **E-invoice** FastTab, enter procect-specific default accounting code in the **Dimension account** field:
+
+![Project default cost](media/emea-nor-ger-proj-cost.jpg)
  
 ## Export of customer electronic invoices
 ### Sending of e-invoices
