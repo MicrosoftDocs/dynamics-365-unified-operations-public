@@ -3,7 +3,7 @@
 
 title: e-Commerce platform software development kit (SDK)
 description: This topic describes the e-Commerce Platform SDK.
-author: kfend
+author: mugunthanm
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 18101
 ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: meeram
+ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
@@ -82,8 +82,10 @@ The following configuration changes will be required if either of these applies:
 
 You will need to update the “retailServerUrl” inside the web.config file of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
 
-- retailServerUrl=<http://localhost:35080/RetailServer/V1>
-- &lt;add key="RetailServerRoot" value="<http://localhost:35080/RetailServer/V1>" /&gt;
+```xml
+retailServerUrl=<http://localhost:35080/RetailServer/V1>
+<add key="RetailServerRoot" value="<http://localhost:35080/RetailServer/V1>" />
+```
 
 If you are accessing the web storefront over HTTPS, then you will need to update the above URLs to the HTTPS equivalent.
 
@@ -91,9 +93,10 @@ If you are accessing the web storefront over HTTPS, then you will need to update
 
 The e-Commerce website will operate on an operating unit number(channel) specified in the web.config. To change it, change the OU \# below. Note that Fabrikam is “077” in the demo data. You will need to update the “retailServerUrl” inside web.config of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
 
--  `<ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">`
-
--  `<add key="OperatingUnitNumber" value="068" />`
+```xml
+<ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">
+<add key="OperatingUnitNumber" value="068" />
+```
 
 ## Configure authentication providers
 ### Authentication providers that you are using
