@@ -36,9 +36,9 @@ This topic provides an overview of module development in Microsoft Dynamics 365 
 
 ## Modules in Dynamics 365 Commerce
 
-In Dynamics 365 Commerce, modules represent the core building blocks that make up an online e-Commerce page.
+In Dynamics 365 Commerce, modules represent the core building blocks that make up an online Commerce page.
 
-Here are some examples of modules that are used on e-Commerce site pages:
+Here are some examples of modules that are used on Commerce site pages:
 
 - A content block module that is featured on a page, and that shows a product image and description, together with a "call-to-action" button that can be used to purchase the product or get more information about it
 - A promo banner module that highlights a promotion as a banner on a page
@@ -61,13 +61,13 @@ For more information about how and when to use modules in Dynamics 365 Commerce,
 
 ## Get started with module development
 
-The Commerce module library provides a broad set of modules that you can use on your online e-Commerce site. However, to meet your business requirements, you might have to do some customization of modules or themes. To customize modules and themes, you use the Dynamics 365 Commerce online software development kit (SDK) in a development environment.
+The Commerce module library provides a broad set of modules that you can use on your online Commerce site. However, to meet your business requirements, you might have to do some customization of modules or themes. To customize modules and themes, you use the Dynamics 365 Commerce online software development kit (SDK) in a development environment.
 
 To get started, you must install a set of tools and the online SDK. For step-by-step instructions that show how to set up a develop environment and create your first custom module, see [Set up a development environment](setup-dev-environment.md).
 
 ## Module library modules
 
-Dynamics 365 Commerce provides a library of modules that you can use when you build your online e-Commerce pages. These modules can be customized in various ways. For example, you can make code-free style changes, you can make configuration changes through code in the online SDK. For more information about the module library, see [Module library overview](../starter-kit-overview.md).
+Dynamics 365 Commerce provides a library of modules that you can use when you build your online Commerce pages. These modules can be customized in various ways. For example, you can make code-free style changes, you can make configuration changes through code in the online SDK. For more information about the module library, see [Module library overview](../starter-kit-overview.md).
 
 ### Code-free style changes
 
@@ -124,7 +124,7 @@ The following illustration shows the style presets that are available for the pr
 
 #### CSS override file
 
-A [CSS override file](../css-override-files.md) can be uploaded by using Commerce site builder. This file contains additional CSS code to change any style on a page as required. When an e-Commerce page is rendered, the CSS for the theme module is applied first, and then the CSS overrides file is applied to override the CSS of the specific theme for that module. Because styles can easily be removed if they aren't required, this option is great for fast experimentation against the live site.
+A [CSS override file](../css-override-files.md) can be uploaded by using Commerce site builder. This file contains additional CSS code to change any style on a page as required. When an Commerce page is rendered, the CSS for the theme module is applied first, and then the CSS overrides file is applied to override the CSS of the specific theme for that module. Because styles can easily be removed if they aren't required, this option is great for fast experimentation against the live site.
 
 In general, if you can use tools such as a modern browser's HTML/CSS debugging tools to modify CSS as you want, you can then copy those changes into a single CSS override file. For example, if you want to hide the wishlist icon in the header module, you should use a CSS override to hide the element, because the module doesn't have a configuration setting that lets you show or hide the wishlist icon. By using F12 web browser tools, you can find the CSS class name to use, and then experiment with the formatting until you get the look that you want. The following example shows CSS code that hides the wishlist icon in a header module.
 
