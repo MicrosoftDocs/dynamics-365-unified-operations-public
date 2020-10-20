@@ -1040,6 +1040,8 @@
             href: add-breadcrumb.md
           - name: Navigation menu module
             href: nav-menu-module.md
+          - name: Site selector module
+            href: site-selector.md
         - name: Compliance modules
           items:
           - name: Cookie consent module
