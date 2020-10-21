@@ -49,9 +49,17 @@ The following features are generally available with this release.
 | --- | --- | --- |
 | Platform update 10.0.14(38) | -- | [Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14) |
 
-#### Custom links in Manager self service
+### Organization and personnel management workflow enhancements
 
-With this release, we are introducing the capability to configure custom links for Managers accessible via Manager self-service. These custom links will be on the My team tab. To enable this feature, please use the feature management experience and turn on **(Preview) Custom links in Manager self service**. Links can be configured via the Manager self service configure options under the Human Resources parameters. For more information, please view [Custom links in manager self service](https://aka.ms/MSSCustomLinks). 
+A new option is now available to position the **Work items assigned to me** list in the right-hand column of the dashboard. With this change, all work items and to do lists display in the same area. Enable this functionality by turning on **Workflow experience enhancements** in Feature management. For more information about turning on features, see [Manage features](hr-admin-manage-features.md).
+
+This feature also promotes the workflow options that appear in the personnel actions forms. Workflow options also appear above the action fast tab for quick access. For more information, see: 
+
+- [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) in the Dynamics 365 2020 release wave 2 plan
+
+![Work items assigned to me](./media/hr-workflow-work-items-assigned-to-me.png)
+
+![Workflow items quick access](./media/hr-workflow-quick-access.png)
 
 
 ### Bug fixes
