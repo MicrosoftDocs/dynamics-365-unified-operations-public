@@ -28,3 +28,4 @@ TOTALDISCOUNTAMOUNT | >> | totaldiscountamount |
 TOTALDISCOUNTCUSTOMERGROUPCODE | >> | discountamount | 
 TOTALINVOICEAMOUNT | >> | totalamount | 
 TOTALTAXAMOUNT | >> | totaltax | 
+
