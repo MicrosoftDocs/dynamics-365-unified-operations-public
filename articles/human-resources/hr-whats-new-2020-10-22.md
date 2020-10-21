@@ -48,18 +48,7 @@ The following features are generally available with this release.
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Platform update 10.0.14(38) | -- | [Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14) |
-
-### Organization and personnel management workflow enhancements
-
-A new option is now available to position the **Work items assigned to me** list in the right-hand column of the dashboard. With this change, all work items and to do lists display in the same area. Enable this functionality by turning on **Workflow experience enhancements** in Feature management. For more information about turning on features, see [Manage features](hr-admin-manage-features.md).
-
-This feature also promotes the workflow options that appear in the personnel actions forms. Workflow options also appear above the action fast tab for quick access. For more information, see: 
-
-- [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) in the Dynamics 365 2020 release wave 2 plan
-
-![Work items assigned to me](./media/hr-workflow-work-items-assigned-to-me.png)
-
-![Workflow items quick access](./media/hr-workflow-quick-access.png)
+| Organization and personnnel management workflows experience enhancements | [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Configuration option to position work items assigmed to me list](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 
 
 ### Bug fixes
