@@ -59,16 +59,17 @@ By using a data source of the **Barcode** type, you can generate bar codes in th
     - EAN-8
     - EAN-13
     - ITF-14
+    - Intelligent Mail
+    - MSI
+    - Plessey
     - PDF417
     - UPC-A
     - UPC-E
-    - MSI
-    - Plessey
 
 - Two-dimensional bar codes:
 
     - Aztec
-    - DataMatrix
+    - Data Matrix
     - QR Code
 
 When you configure a **Barcode** data source, you can define specific rendering parameters that are used to generate an image:
