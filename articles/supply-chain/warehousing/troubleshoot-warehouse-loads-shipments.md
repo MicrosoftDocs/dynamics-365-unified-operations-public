@@ -35,17 +35,17 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while working with load building and shipments in Dynamics 365 Supply Chain Management.
 
-## I can't execute release to warehouse on a return sales order
+## I get the error "You can't create a load line for this order line because it contains inventory dimensions that are invalid..."
 
 ### Issue description
 
 The following error message is shown when trying to release to warehouse a return sales order:
 
-> You can't create a load line for this order line because it contains inventory dimensions that are invalid. You can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. Remove the invalid dimensions from the order line.
-<!-- KFM: Although this happens to be my preferred way of showing error messages, we pretty much agreed not to do it like this. Instead, we usually put them in the heading, so maybe we should do that here (but that would be a very long heading...)  -->
+"You can't create a load line for this order line because it contains inventory dimensions that are invalid. You can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. Remove the invalid dimensions from the order line."
+<!-- HHM: I put the first sentence of the error message with an ellipsis in the heading and the full error in the Issue description.  -->
 ### Issue resolution
 
-Unfortunately, the product does not support load processing for a sales return process, which means you can't release to the warehouse. 
+Unfortunately, the product does not support load processing for a sales return process, which means you can't release to the warehouse.
 
 On sales order transactions, you can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. The resolution would be to remove the invalid dimensions from the order line.
 
@@ -97,6 +97,5 @@ A partially shipped load can't be released to the warehouse. The message "Operat
 
 ### Issue resolution
 
-You can resolve this issue by deploying KB number: 4574490: Partially shipped loads can be re-waved and re-processed.
-
-<!-- KFM: This seems internal. Is this text really intended for consumption by our users? If so, maybe add a link to the KB article -->
+[KB issue 470069](https://fix.lcs.dynamics.com/Issue/Details?kb=4574490&bugId=470069&dbType=3&qc=84ce1e09d7032d8b8ef86f5a0c68b86badf3dfaf29686c5ebbe97c53c0957b5f): "Partially shipped loads can be re-waved and re-processed." is resolved in [Release 10.0.15](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
+<!-- HHM: This KB actually was a code change with a release schedule, so I added the links to the issue and release schedule (which was provided in the issue for this KB.) -->
