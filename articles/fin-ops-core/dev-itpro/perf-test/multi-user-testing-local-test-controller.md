@@ -234,11 +234,27 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ### If you do not have Remote Desktop access to the server
 
-If your test environment doesn't allow for Remote Desktop access, then you must open a support request to configure the environment to trust the load test connection. Open a support request, and provide the following information to the support engineer:
+In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft Managed or Self-service type sandboxes, Microsoft will instead generate the certificate for your environment and have it pre-configured.  Follow these steps to retrieve the RSAT certificate, which is necessary to use with PerfSDK.
 
-   - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
-   - The thumbprint of the **authcert.pfx** certificate.
-   - An acceptable downtime window for the sandbox environment. Downtime is expressed in minutes.
+1. Under the **Maintain** button on your environment details page in Lifecycle Services, you'll see two new options.
+![RSAT-LCS1](rsat/media/rsat-lcs1.png)
+
+Use the Download button to retrieve the certificate bundle as a .zip file.
+
+2. You'll receive a warning that a clear-text password will be displayed on your screen.  Choose 'Yes' to continue.
+![RSAT-LCS2](rsat/media/rsat-lcs2.png)
+
+3. Copy the clear-text password for later use.  You'll see the .zip file has been downloaded.  Inside of the .zip file you'll find a certificate (.cer) and a personal information exchange (.pfx) file.  Unzip the file to follow the next steps.
+![RSAT-LCS3](rsat/media/rsat-lcs3.png)
+
+4. Double-click the certificate to open it, and click on the *Install* button.  Install this in your Local Machine location, and browse specifically to the **Personal** store.  Repeat this process also for the Local Machine location, and browse specifically to the **Trusted Root Certification Authorities** store.
+
+5. Double-click on the personal information exchange (.pfx) file to open it, and click on the *Install* button.  Install this in your Local Machine location, enter the password saved in step #2 above, and browse specifically to the **Personal** store.  Repeat this process also for the Local Machine location, enter the password saved in step #2 above, and browse specifically to the **Trusted Root Certification Authorities** store.
+
+6. Double-click on the certificate file to open it, browse to the details tab, and scroll down until you see the Thumbprint section.  Click on Thumbprint, and copy the ID in the text box below.  Use this thumbprint not only for RSAT but also to update your PerfSDK **CloudEnvironment.config** thumbprint.
+![RSAT-LCS4](rsat/media/rsat-lcs4.png)
+
+You may now run your tests against the environment using this certificate.  The certificate will be auto-rotated by Microsoft before it expires at which time you will need to download a new version of this certificate starting from step #1 above.  In the case of Self-service environments this will be rotated every 90 days, during a downtime window closest to the expiry.  These downtime windows include customer initiated package deployment, and database movement operations which target the environment.
 
 ## Create test users
 
