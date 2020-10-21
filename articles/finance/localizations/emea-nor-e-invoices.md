@@ -51,7 +51,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 > [!NOTE]
 > These formats are based on the **Invoice model** configuration, and use the **Invoice model mapping** configuration. All required additional configurations will be automatically imported.
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 ### Make the references to the imported ER formats configurations
 
@@ -115,7 +115,7 @@ Go to **Project management and accounting** \> **Projects** \> **Project contrac
 
 ![Funding sources](media/emea-nor-ger-proj-contracts.jpg)
  
- On **Funding source details** page, on **Other** FastTab,in **REFERENCES** section, enter contract defualt values in **Customer requisition** and **Customer reference** fields. Alternatively, you can enter procect-specific values in the similar fields on **E-invoice** FastTab:
+ On **Funding source details** page, on **Other** FastTab, in **REFERENCES** section, enter contract defualt values in **Customer requisition** and **Customer reference** fields. Alternatively, you can enter procect-specific values in the similar fields on **E-invoice** FastTab:
  
  ![Project references](media/emea-nor-ger-proj-refs.jpg)
  
@@ -167,6 +167,6 @@ If generation of electronic invoices failed with errors then click **Show log** 
 ![Show log](media/emea-nor-ger-einvoice-log.jpg)
 
 ### Sending to Electronic reporting destinations
-Alternatively, it is possible to setup **Electronic reporting destinations** for the e-invoice formats. In this case the output XML files with electronic invoices will be send to the defined destinations, Sharepoint folders, for example, right after posting of an invoice. It is necessary to turn on **Print invoice** parameter when posting.
+Alternatively, you can setup **Electronic reporting destinations** for e-invoice formats. In this case output XML files with electronic invoices will be automatically send to the defined destinations, Sharepoint folders, for example, right after posting of invoices. It is necessary to turn on **Print invoice** parameter when posting.
 
-For more details about ER reporting destinations, please refer to: [Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations).
+For more details about Electronic reporting destinations, please refer to: [Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations).
