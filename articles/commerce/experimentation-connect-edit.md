@@ -5,7 +5,7 @@ title: Connect an experiment and edit variations
 description: This topic describes how to connect an experiment in a third-party service to Dynamics 365 Commerce, and how to edit variations for the experiment.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 10/14/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -64,7 +64,7 @@ To connect your experiment, you'll launch the **Connect experiment** wizard. The
 
 To get started connecting your experiment in Commerce site builder, follow these steps.
 
-1. To launch the **Connect experiment** wizard, select **Experiments** in the left navigation pane, and then select **Connect**. Alternatively, the wizard can be accessed from a page or fragment editor. In edit mode, select **Connect experiment** on the command bar.
+1. To launch the **Connect experiment** wizard, select **Experiments** in the left navigation pane, and then select **Connect**. Alternatively, you can access the wizard from a page or fragment editor by editing it and selecting **Connect experiment** on the command bar.
 
     > [!NOTE]
     > A page can only be connected to one experiment at a time. To connect a page to a different experiment, first delete the experiment that the page is currently connected to.
