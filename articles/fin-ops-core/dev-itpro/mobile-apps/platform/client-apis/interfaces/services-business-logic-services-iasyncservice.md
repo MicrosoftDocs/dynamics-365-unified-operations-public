@@ -49,7 +49,7 @@ AsyncService <br>
 
 ### all
 
-all(...args: any [ ]): Promise &lt;any [ ]&gt;
+`all(...args: any [ ]): Promise <any [ ]>`
 
 #### Parameters
 
@@ -61,7 +61,7 @@ all(...args: any [ ]): Promise &lt;any [ ]&gt;
 
 ### defer
 
-defer &lt;T&gt;(): [Deferred](defer-ideferred.md) &lt;T&gt;
+`defer <>(): [Deferred](defer-ideferred.md) <>`
 
 Creates a deferred object which can be used to return a promise from event handlers (where applicable) and resolve/reject them asynchronously.
 

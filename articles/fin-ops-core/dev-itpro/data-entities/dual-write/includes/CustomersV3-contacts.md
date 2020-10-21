@@ -2,7 +2,7 @@
 
 This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Source filter: ((PartyType == "Person"))
+Source filter: `((PartyType == "Person"))`
 
 Reversed source filter: msdyn_sellable eq true  and msdyn_contactpersonid ne ''
 

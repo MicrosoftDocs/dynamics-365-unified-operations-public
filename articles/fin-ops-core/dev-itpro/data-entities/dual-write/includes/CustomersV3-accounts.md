@@ -2,7 +2,7 @@
 
 This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Source filter: ((PartyType == "Organization"))
+Source filter: `((PartyType == "Organization"))`
 
 Reversed source filter: customertypecode eq 3
 

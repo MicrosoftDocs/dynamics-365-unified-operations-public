@@ -2,7 +2,7 @@
 
 This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Source filter: (AssociatedContactType = 1)
+Source filter: `(AssociatedContactType = 1)`
 
 Reversed source filter: msdyn_contactforvendor eq true and msdyn_sellable eq false and msdyn_contactpersonid ne ''
 
