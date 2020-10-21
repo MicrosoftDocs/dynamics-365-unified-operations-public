@@ -35,17 +35,17 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while picking and packing in Dynamics 365 Supply Chain Management.
 
-## "Dimension location cannot be left blank if dimension serial number is set."
-
+## I receive the error "Dimension location can't be left blank if dimension serial number is set."
+<!-- KFM: I think the quoted messages need an intro to identify them as error messages, like this one. -->
 ### Issue description
 
 This error occurs if you create a transfer order for a serial item using a warehouse enabled for an advanced warehouse management (WMS) and then, after completing the work, you try to confirm the shipment.
 
 ### Issue resolution
 
-The "From" warehouse has a transit warehouse which had an empty **Default receipt location** value for the transit warehouse. To resolve this, specify a location for default receipt location in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
+The "from" warehouse has a transit warehouse which had an empty **Default receipt location** value for the transit warehouse. To resolve this, specify a location for default receipt location in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
 
-## "Invalid license plate."
+## I receive the error "Invalid license plate."
 
 ### Issue description
 
@@ -53,19 +53,19 @@ This error message is received on the warehouse app when scanning a license plat
 
 ### Issue resolution
 
-Ensure the License Plate ID exists in the License Plates table and that the item(s) and quantities on the license plate are available (i.e. not blocked).
+Ensure the license plate ID exists in the license plates table and that the items and quantities on the license plate are available (in other words, not blocked).
 
-## "Field 'Load weight'(=-%1) can only contain positive numbers. Update has been cancelled."
+## I receive the error "Field 'Load weight'(=-%1) can only contain positive numbers. Update has been cancelled."
 
 ### Issue description
 
-The *Load Weight* error appears when processing work from Pack station to Staging locations, or from Staging to Dock locations, when there is open work.
+The *Load weight* error appears when processing work from packing to staging locations, or from staging to dock locations, when there is open work.
 
 ### Issue resolution
 
 Run the **System administration \> Periodic tasks \> Database \> Consistency check** process for **Warehouse load weight consistency check** to resolve the issue.
 
-## "The quantity is not valid for unit %1."
+## I receive the error "The quantity is not valid for unit %1."
 
 ### Issue description
 
@@ -73,30 +73,30 @@ The error is generated when the user is unable to perform a *split pick* across 
 
 ### Issue resolution
 
-The warehouse worker will need to use the *Short picking* process on the Warehouse Mobile App. Assuming that the issue is the user is trying to pick multiple batches from the same location, then they could also use the *Full* option on the Warehouse Mobile App.
+The warehouse worker will need to use the *Short picking* process on the Warehouse Mobile App. Assuming that you are trying to pick multiple batches from the same location, then you could also use the **Full** option on the warehouse app.
 
-## You cannot move inventory to a license plate controlled location
-
+## I can't move inventory to a license plate controlled location
+<!-- KFM: in other TSG topics, we use first person in the headings, so I did that here too. The descriptions and resolutions should be in second person. -->
 ### Issue description
 
-Users are unable to reduce picked quantities on a load.
+You can't reduce picked quantities on a load.
 
 ### Issue resolution
 
-This used to be true in earlier versions; however, it's now possible to unpick to a License Plate controlled location. The user must specify the **Location** *and* **License Plate ID** in **Reduce picked quantity** on the load line.
+This used to be true in earlier versions. However, it's now possible to unpick to a license plate controlled location. You must specify the **Location** *and* **License Plate ID** in **Reduce picked quantity** on the load line.
 
-## "The Item %1 is not in location %2 in warehouse %3."
+## I receive the error "The Item %1 is not in location %2 in warehouse %3."
 
 ### Issue description
 
-When a specific Batch and Serial number is reserved for a piece of work, scanning a license plate ID which doesn't contain that Batch/Serial number gives an incorrect error message.
+When specific batch and/or serial numbers are reserved for a piece of work, scanning a license plate ID that doesn't contain that batch and/or serial number gives an incorrect error message.
 
 ### Issue resolution
 
 The issue is resolved by deploying KB number: 4581881: Change the error message to: The license plate [License plate ID] does not contain the reserved dimensions [List of dimensions] for the item [Item ID].
-
+<!-- KFM: This seems internal. Is this text really intended for consumption by our users? If so, maybe add a link to the KB article -->
 ## Printing delivery note or packing content by warehouse
-
+<!-- KFM: This heading should be phrased as an issue (or, worst case, as a question), not as an instruction heading. I'm not sure what it should be. -->
 ### Issue description
 
 Is it possible to print by *Warehouse* or *Site* in **Work audit template line update**?
@@ -105,21 +105,21 @@ Is it possible to print by *Warehouse* or *Site* in **Work audit template line u
 
 If you are printing a document with print management settings; you can limit the scope (site/warehouse) through print management, instead of directly through the work audit template lines update form, under edit print settings.
 
-## Unable to cancel packing slip when posted in a sales order
+## I can't cancel a packing slip when posted in a sales order
 
 ### Issue description
 
-For picking/shipping processes enabled for advanced warehouse management, cancellation of the packing slip is not possible when it was posted from the sales order.
+For picking/shipping processes enabled for advanced warehouse management, you can't cancel the packing slip when it was posted from the sales order.
 
 ### Issue resolution
 
-To correct posted packing slips for items which are enabled for warehouse management, the posting must occur from the load, not from the order directly. Microsoft has evaluated this issue and determined it to be a feature limitation. Generally, a sales order that has been picked and shipped through Warehouse management processes can be packing slip updated from the Load/Shipment and the Sales order document itself. However, if the user chooses the latter, then packing slip reversal is not possible either from the load or sales order. It is therefore recommended to customers to use the Packing slip posting from the load - in which case the reversal (to be done from the load) will be enabled.
+To correct posted packing slips for items that are enabled for advanced warehouse management, the posting must occur from the load, not from the order directly. Microsoft has evaluated this issue and determined it to be a feature limitation. Generally, a sales order that has been picked and shipped through warehouse management processes can be packing-slip updated from the load or shipment and the sales order document itself. However, if you choose the latter, then packing slip reversal still isn't possible from the load or sales order. We therefore recommend that you use the packing slip posting from the load, in which case the reversal (to be done from the load) will be enabled.
 
-## "Not enough work can be found for cluster."
+## I receive the error "Not enough work can be found for cluster."
 
 ### Issue description
 
-When using the **System directed cluster picking** process; configuring a cluster profile on which it's able to pick, for example, 10 positions, this process works as planned when there is enough work to pick to 10 positions. However, when there are only 8 positions (work) to be picked, the error is shown because there is not enough work for one cluster.
+When using the **System directed cluster picking** process, configuring a cluster profile where it's possible to pick, for example, 10 positions, this process works as planned when there is enough work to pick to 10 positions. However, when there are only 8 positions (work) to be picked, the error is shown because there is not enough work for one cluster.
 
 ### Issue resolution
 

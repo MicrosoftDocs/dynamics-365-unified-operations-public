@@ -35,65 +35,68 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while working with load building and shipments in Dynamics 365 Supply Chain Management.
 
-## Can't execute Release to warehouse on a Return sales order
+## I can't execute release to warehouse on a return sales order
 
 ### Issue description
 
-The error "You can't create a load line for this order line because it contains inventory dimensions that are invalid. You can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. Remove the invalid dimensions from the order line." is generated when trying to release to warehouse a return sales order.
+The following error message is shown when trying to release to warehouse a return sales order:
 
+> You can't create a load line for this order line because it contains inventory dimensions that are invalid. You can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. Remove the invalid dimensions from the order line.
+<!-- KFM: Although this happens to be my preferred way of showing error messages, we pretty much agreed not to do it like this. Instead, we usually put them in the heading, so maybe we should do that here (but that would be a very long heading...)  -->
 ### Issue resolution
 
-Unfortunately, the product does not support load processing for a sales return process and thereby not possible to get released to the warehouse.
+Unfortunately, the product does not support load processing for a sales return process, which means you can't release to the warehouse. 
 
-On Sales Order transactions, you can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. The resolution would be to remove the invalid dimensions from the order line.
+On sales order transactions, you can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. The resolution would be to remove the invalid dimensions from the order line.
 
-## "One of the lines is already on a load. Unable to release to warehouse."
+## I receive the error "One of the lines is already on a load. Unable to release to warehouse."
 
 ### Issue description
 
-If you choose the process path of manually creating loads or have the process setup such that Loads are created already upon Sales Order line entry, then the assumption is that the subsequent releasing is done manually following the route and rating from the load.
+If you choose the process path of manually creating loads or have the process setup such that loads are created already upon sales order line entry, then the assumption is that the subsequent releasing is done manually following the route and rating from the load.
 
-The other scenario here is that the user is trying to perform an automatic Release To Warehouse, but the wave process failed to create work, which results in an open shipment/load still being created. This then blocks the user from subsequent attempts to automatically release the order until they either (a) delete the open shipment/load, or (b) re-process the wave manually.
+Another possible scenario is that you are trying to perform an automatic release to warehouse, but the wave process failed to create work, which results in an open shipment/load still being created. This then blocks subsequent attempts to automatically release the order until you either (a) delete the open shipment/load, or (b) re-process the wave manually.
 
 ### Issue resolution
 
-To release from the Sales Order form, or to release automatically from the release sales order form, no load must exist before releasing to the warehouse. The load will be created automatically once the wave is processed.
+To release from the sales order page, or to release automatically from the release sales order page, no load must exist before releasing to the warehouse. The load will be created automatically once the wave is processed.
 
-## "The delivery note correction can't be processed. The delivery note only contains items that are subject to warehouse management processes, as these are not supported by Delivery Note correction."
+## I receive the error "The delivery note correction can't be processed. The delivery note only contains items that are subject to warehouse management processes, as these are not supported by Delivery Note correction."
 
-### Issue descripiton
+### Issue description
 
-After posting of delivery note the user is unable to cancel the posted *Delivery note* since the button **Cancel** is disabled. Also, the user is unable to correct the delivery note, while performing the attempted correction the error is thrown.
+After posting of delivery note, you can't cancel the posted delivery note because the button **Cancel** is disabled. Also, you can't correct the delivery note, while performing the attempted correction the error is thrown.
 
 ### Issue resolution
 
 In order to correct posted packing slips for items which are enabled for advanced warehouse management (WMS), the posting must occur from the load, not from the order directly.
 
-## How to create work from outbound loads rather than waves
+## How can I create work from outbound loads rather than waves?
 
 ### Issue description
-
-Is it possible to create work from outbound loads rather than waves?
 
 One way to reproduce this error is to do the following:
 
 1. Create an outbound load using a sales or transfer order.
-2. Release load to warehouse.
-3. Currently, no picking work is being generated.
+2. Release the load to warehouse.
+3. Notice that no picking work has been generated yet.
 
 ### Issue resolution
 
-If work needs to be generated immediately when the load is released, then Wave template needs to be configured accordingly. On wave template, set the following settings to Yes:
+If work needs to be generated immediately when the load is released, then the wave template must be configured accordingly. On the wave template, set the following settings to *Yes*:
 
-- Automate wave creation.
-- Process wave at release to warehouse.
-- Automate wave release.
+- **Automate wave creation**
+- **Process wave at release to warehouse**
+- **Automate wave release**
 
-## Partially shipped load can't be released again.
+## I can't rerelease a partially shipped load.
 
 ### Issue description
 
-A "Partially shipped" load can't be released again to the warehouse. The message "Operation complete" appears at release to the warehouse, but nothing happens, no work gets created for the remaining quantity. This happens when originally there is an Incomplete reservation and using Transport Load functionality.
+A partially shipped load can't be released to the warehouse. The message "Operation complete" appears at release to the warehouse, but nothing happens, and no work gets created for the remaining quantity. This happens when you are using transport load functionality and there is an incomplete reservation.
 
 ### Issue resolution
-The issue is resolved by deploying KB number: 4574490: Partially shipped loads can be re-waved and re-processed.
+
+You can resolve this issue by deploying KB number: 4574490: Partially shipped loads can be re-waved and re-processed.
+
+<!-- KFM: This seems internal. Is this text really intended for consumption by our users? If so, maybe add a link to the KB article -->
