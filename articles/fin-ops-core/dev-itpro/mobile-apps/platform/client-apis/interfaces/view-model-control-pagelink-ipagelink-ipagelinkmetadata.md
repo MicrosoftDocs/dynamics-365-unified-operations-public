@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: PageLinkMetadata type
-description: PageLink metadata type.
+description: Page link metadata type.
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
@@ -92,10 +92,10 @@ Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontro
 Editable: boolean (optional)
 
 Boolean indicating if the control is editable.
-False when either the control or it's parent is not editable.
-True when both the control and it's parent are editable.
-True when either the control or it's parent is editable and the other is undefined.
-Undefined if both the control's edit-ability and it's parent's edit-ability is undefined.
+False when either the control or its parent is not editable.
+True when both the control and its parent are editable.
+True when either the control or its parent is editable and the other is undefined.
+Undefined if both the control's edit-ability and its parent's edit-ability is undefined.
 
 Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)
 
