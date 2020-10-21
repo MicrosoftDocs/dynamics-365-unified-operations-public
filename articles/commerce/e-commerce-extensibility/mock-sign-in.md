@@ -61,7 +61,7 @@ To create a new ROPC flow, follow these steps.
 1.	Select **OK**, and then select **Create**.
 1.	Select the new user flow, and then select **Run user flow**. 
 
-You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://<LOGIN_DOMAIN>//<B2C_TENANT>.onmicrosoft.com**/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Take note of the **<LOGIN_DOMAIN>** and **<B2C_TENANT>** values from the URL, because this information will be used later in your credentials.json file.
+You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://<LOGIN_DOMAIN>//<B2C_TENANT>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Take note of the **<LOGIN_DOMAIN>** and **<B2C_TENANT>** values from the URL, because this information will be used later in your credentials.json file.
 
 In the following example image, the endpoint URL listed under **Run user flow** is ```https://commerceonboardingb2c.b2clogin.com/commerceonboardingb2c.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
 
