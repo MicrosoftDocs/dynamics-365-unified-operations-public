@@ -121,7 +121,7 @@ For an example and alternative approach, see [Example](#example).
 
 The setup of a dual-write connection between an existing instance of a Finance and Operations app and a new instance of a customer engagement app occurs in the Finance and Operation environment.
 
-1. [Set up the connection from the Finance and Operations app](dual-write/enable-dual-write.md).
+1. [Set up the connection from the Finance and Operations app](enable-dual-write.md).
 2. Run the **Initial sync** functionality for the entities that you want to sync data for.
 
 For an example and alternative approach, see [Example](#example).
