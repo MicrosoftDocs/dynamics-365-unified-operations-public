@@ -5,7 +5,7 @@ title: Preview and publish an experiment
 description: This topic describes how to preview and publish an experiment from Dynamics 365 Commerce.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 10/14/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -51,7 +51,7 @@ If you aren't using a publish group to schedule when your experiment goes live a
 > If the page has an unpublished URL, you must first publish the URL or it won't be visible to your website users. For details, see [Save, preview, and publish a page](save-preview-publish-page.md).
     
 ### Use publish groups to schedule when your experiment goes live
-Variations created in site builder can be scheduled for publishing by using a publish group. Within a publish group, you can connect a page or fragment to your experiment by selecting **Experiments** in the left navigation pane. You can also do this by selecting **Pages** or **Fragments**. For more information, see [Connect an experiment and edit variations](experimentation-connect-edit.md). For information about publish groups, see [Work with publish groups](publish-groups.md).
+Variations created in site builder can be scheduled for publishing by using a publish group. Within a publish group, you can connect a page or fragment to your experiment by selecting **Experiments** in the left navigation pane. You can also do this by selecting **Pages** or **Fragments** and following the instructions in [Connect an experiment and edit variations](experimentation-connect-edit.md). For information about publish groups, see [Work with publish groups](publish-groups.md).
 
 When using publish groups with experiments, there are some important considerations to be aware of.
 - When you add a page or fragment that has an experiment running on it to a publish group, the experiment will be removed from the page or fragment in the publish group.
