@@ -515,7 +515,7 @@ The status of version 11.2.2.1 is changed from **Draft** to **Completed**, and t
 4. Select **Open** to download the e-invoice XML file that is generated.
 5. Analyze the e-invoice XML file. Notice that, in accordance with your customization, the customer tax schema includes the custom **FederalTaxID** XML attribute in addition to the **schemeID** and **schemeAgencyID** XML attributes. The value of this new XML attribute is specified by the **LITWARE-6789** federal tax ID that was entered for an invoiced customer.
 
-    ![Preview of the generated e-invoice XML file](./media/er-quick-start3-e-invoice2.png)
+    ![Preview of the generated e-invoice XML file with customizations](./media/er-quick-start3-e-invoice2.png)
 
 ## <a name="ImportERConfigurations2"></a>Import the latest versions of standard ER configurations
 
