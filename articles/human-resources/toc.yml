@@ -679,6 +679,8 @@
       items:
       - name: Employee and Manager self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Create custom links in Manager self service
+        href: hr-employee-manager-self-service-custom-links.md
       - name: Change Employee self service workspace name
         href: hr-employee-self-service-workspace-name.md
       - name: Edit personal information
