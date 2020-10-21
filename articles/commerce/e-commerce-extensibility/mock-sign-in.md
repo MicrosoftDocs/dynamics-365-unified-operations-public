@@ -5,7 +5,7 @@ title: Mock the signed-in state during local development
 description: This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 author: samjarawan
 manager: annbe
-ms.date: 10/16/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -47,21 +47,21 @@ The first step is to create a new resource owner password credentials (ROPC) flo
 To create a new ROPC flow, follow these steps.
 
 1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the global administrator of your Azure AD B2C tenant, and then select the **Azure AD B2C** service.
-2.	Select **User flows** and **New user flow**.
-3.	Select **Sign in using resource owner password credentials (ROPC)**, and then select **Create**.
-4.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name, as it will be used later as the `ropcUserFlowName` value in your credentials.json file.
-5.	Under **Application claims**, select **Show more**.
-6.	Select the following application claims: 
-  - **Display Name**
-  - **Email Addresses**
-  - **Given Name**
-  - **Identity provider**
-  - **SurName**
-  - **User’s object ID**
-7.	Select **OK**, and then select **Create**.
-8.	Select the new user flow, and then select **Run user flow**. 
+1.	Select **User flows** and **New user flow**.
+1.	Select **Sign in using resource owner password credentials (ROPC)**, and then select **Create**.
+1.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name, as it will be used later as the `ropcUserFlowName` value in your credentials.json file.
+1.	Under **Application claims**, select **Show more**.
+1.	Select the following application claims: 
+    - **Display Name**
+    - **Email Addresses**
+    - **Given Name**
+    - **Identity provider**
+    - **SurName**
+    - **User’s object ID**
+1.	Select **OK**, and then select **Create**.
+1.	Select the new user flow, and then select **Run user flow**. 
 
-You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://**<Login_Domain>**//**<B2C_TENANT>**.onmicrosoft.com**/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Note the **<LOGIN_DOMAIN>** and **<B2C_TENANT>** values from the URL, because this information will be used later in your credentials.json file.
+You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://<LOGIN_DOMAIN>//<B2C_TENANT>.onmicrosoft.com**/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Take note of the **<LOGIN_DOMAIN>** and **<B2C_TENANT>** values from the URL, because this information will be used later in your credentials.json file.
 
 In the following example image, the endpoint URL listed under **Run user flow** is ```https://commerceonboardingb2c.b2clogin.com/commerceonboardingb2c.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
 
@@ -112,7 +112,7 @@ From the examples above, you have now obtained the following information:
 
 1.	In the Azure AD B2C settings, go to **App registrations**.
 1.	Open the application created above which is currently being used by the e-Commerce rendering application.
-1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one.  You will be prompted for an **Application ID URI**, leave the application ID URI as is and then add the "user_impersonation" for the **Scope name** and then enter friendly values for **Admin consent display name** and **Admin consent description**.
+1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
 
     ![Expose an API](media/local-sign-in-04.png)
 
