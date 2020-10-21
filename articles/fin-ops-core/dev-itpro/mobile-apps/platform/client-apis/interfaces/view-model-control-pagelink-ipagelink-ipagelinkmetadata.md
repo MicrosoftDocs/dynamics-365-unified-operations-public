@@ -107,7 +107,7 @@ ExcludeContext: boolean (optional)
 
 ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional)
 
-The extended control type. E.g. a control of type Input might have an extended type of Barcode.
+The extended control type. For example, a control of type Input might have an extended type of Barcode.
 
 Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)
 
@@ -115,7 +115,7 @@ Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontro
 
 HelpText: string (optional)
 
-The keyboard shortcut for a command. E.g. "(Shift+F5)"
+The keyboard shortcut for a command. For example, "(Shift+F5)"
 
 Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)
 
@@ -152,7 +152,7 @@ Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontro
 
 Label: string (optional)
 
-Label for a control. E.g. a control representing a person's first name might have a label "First Name".
+Label for a control. For example, a control representing a person's first name might have a label "First Name".
 
 Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)
 
