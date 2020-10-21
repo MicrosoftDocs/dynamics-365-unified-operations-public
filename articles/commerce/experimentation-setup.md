@@ -5,7 +5,7 @@ title: Set up an experiment
 description: This topic describes how to set up an experiment in a third-party service.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 10/14/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
