@@ -45,12 +45,9 @@ This release includes the following new features and bug fixes. Changes apply to
 
 The following features are generally available with this release.
 
-## PU 38 Uptake - (516624)
-
-
 | Feature | Release plan | Documentation |
-| --- | --- | --- | --- |
-| Feature name or short description | Release plan title and link | Doc title and link |
+| --- | --- | --- |
+| Platform update 10.0.14(38) | -- | [Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14) |
 
 ### Bug fixes
 
