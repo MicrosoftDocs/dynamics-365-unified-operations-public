@@ -405,7 +405,7 @@
         - name: Point-in-time restore of the production database to a sandbox environment
           href: database/database-pitr-prod-sandbox.md
         - name: Enable just-in-time database access
-          href: database/enable-just-in-time-jit-access.md
+          href: database/database-just-in-time-jit-access.md
       - name: Tutorials
         items:
         - name: Refresh for training purposes
