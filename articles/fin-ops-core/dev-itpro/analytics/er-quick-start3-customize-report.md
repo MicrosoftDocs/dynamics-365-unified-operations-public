@@ -234,7 +234,7 @@ For more information, see [Create a free text invoice](../../../finance/accounts
 2. On the **Free text invoice** page, on the Action Pane, select **Post**.
 3. In the **Post free text invoice** dialog box, select **OK**.
 
-![Free text invoice page](./media/er-quick-start3-post-invoice.png)
+![Free text invoice details page](./media/er-quick-start3-post-invoice.png)
 
 ### Send a posted invoice
 
@@ -485,7 +485,7 @@ The status of version 11.2.2.1 is changed from **Draft** to **Completed**, and t
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, in the **Sales and Free text invoice** field, select **Peppol Sales Invoice (Litware)**.
 3. Select **Save**.
 
-![Electronic documents tab on the Accounts receivable parameters page](./media/er-quick-start3-configure-ar2.png)
+![Accounts receivable parameters page, Electronic documents tab, Electronic reporting FastTab](./media/er-quick-start3-configure-ar2.png)
 
 ## <a name="ConfigureCustomer2"></a>Update a customer record by adding a federal tax identification code
 
@@ -494,7 +494,7 @@ The status of version 11.2.2.1 is changed from **Draft** to **Completed**, and t
 3. On the **General** FastTab, in the **Federal Tax ID** field, enter **LITWARE-6789**.
 4. Select **Save**.
 
-    ![All customers page](./media/er-quick-start3-added-tax-id-value.png)
+    ![DE-014 customer details page](./media/er-quick-start3-added-tax-id-value.png)
 
 5. Close the **All customers** page.
 
@@ -668,7 +668,7 @@ The status of version 32.6.7.2 is changed from **Draft** to **Completed**, and t
 4. Select **Open** to download the e-invoice XML file that is generated.
 5. Analyze the e-invoice XML file. Notice that, in accordance with your customization, the customer tax schema still contains the custom **FederalTaxID** XML attribute in addition to the **schemeID** and **schemeAgencyID** XML attributes. Additionally, because the changes in the new version of the base **UBL Sales invoice** format were merged with your customization, the text of the **cbc:CustomizationID** XML element has been changed from `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` to `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0`.
 
-    ![Preview of the generated e-invoice XML file](./media/er-quick-start3-e-invoice3.png)
+    ![Preview of the generated e-invoice XML file with customizations](./media/er-quick-start3-e-invoice3.png)
 
 ## Additional resources
 
