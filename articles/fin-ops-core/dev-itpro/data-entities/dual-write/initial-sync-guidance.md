@@ -1,7 +1,7 @@
 ---
 
 title: Considerations for initial synchronization
-description: This topic provides constraints, known issues, and guidance for the initial sychronization of dual-write.
+description: This topic provides constraints, known issues, and guidance for the initial synchronization of dual-write.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 10/12/2020
@@ -52,7 +52,7 @@ If you activate the map in dual-write first and then start importing data, then 
 
 ### 500k limit per execution
 
-The maximum number of records allowed through initial sync is 500K per run. That is 500K per legal entity, because each legal entity runs separately. For more information, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator), in particular, "To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project."
+The maximum number of records allowed through initial sync is 500K per run. That limit is 500K per legal entity, because each legal entity runs separately. For more information, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator), in particular, "To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project."
 
 If you need to run the initial sync with more than 500K records in a run, then we recommend that you migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
 
@@ -60,7 +60,7 @@ If you need to run the initial sync with more than 500K records in a run, then w
 
 If you are running the initial sync from Common Data Service to the Finance and Operations apps, there is a timeout of 24 hours for getting the import result back from the Finance and Operations app. If you are syncing a lot of data and the single execution takes above 24 hours, you might hit the timeout and the initial sync fails. For example, an initial sync from Common Data Service to a Finance and Operations apps for the **Customer/Account** entity with 70k records could take more than 24 hours, hitting the 24-hour limit.
 
-You should not run the initial sync from Common Data Service to a Finance and Operations app for the [single-threaded entities](#single-threaded-entities) if the data volume is above 70K. These entities do not support multi-threading during import and you might hit the limit if the volume is above 70K. In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
+Do not the initial sync from Common Data Service to a Finance and Operations app for the [single-threaded entities](#single-threaded-entities) if the data volume is above 70K. These entities do not support multi-threading during import and you might hit the limit if the volume is above 70K. In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
 
 ### 40 legal entities limit while linking the environments
 
@@ -82,9 +82,9 @@ In this situation, you should migrate data into the Finance and Operations app a
 
 ### 5-minute limit for Finance and Operations data export
 
-If you are running the initial sync from the Finance and Operations app to Common Data Service and the Finance and Operations data export takes more than 5 minutes, then the initial sync might time out. This can happen if the data entity has virtual fields with the **postLoad** method, or the export query isn't optimized (for example, it has missing indexes).
+If you are running the initial sync from the Finance and Operations app to Common Data Service and the Finance and Operations data export takes more than 5 minutes, then the initial sync might time out. The time out can happen if the data entity has virtual fields with the **postLoad** method, or the export query isn't optimized (for example, it has missing indexes).
 
-This will be supported after PU37. You should update your Finance and Operations app to PU37 or later.
+This kind of sync will be supported after PU37. You should update your Finance and Operations app to PU37 or later.
 
 ### Error handling capabilities
 
@@ -98,7 +98,7 @@ You can view only the top 5 errors from the initial synch error log.
 
 ## Known issues
 
-Please refer to [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md) for help working around known issues.
+For information about known issues, see [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md).
 
 ## Guidance matrix
 
@@ -110,11 +110,11 @@ Finance and Operations instance | Common Data Service instance | Has data to run
 |  |  |  |  | > 500K | Any | 1. Migrate data to each app, outside of the initial sync.<br>2. Activate dual-write and skip initial sync.
 | New | Existing | Yes | A new Finance and Operations app instance and an existing customer engagement app instance | < 70K | [single-threaded](#single-threaded-entities) | 1. Create a new company in the Finance and Operations app<br>2.Bootstrap Common Data Service for the company code.<br>3. Run the initial sync.
 |  |  |  |  | > 70K | [single-threaded](#single-threaded-entities) | 1. Create a new company in the Finance and Operations app.<br>2. Bootstrap Common Data Service for the company code.<br>3. Migrate data to each app, outside of the initial sync.<br>4. Activate dual-write and skip the initial sync.
-|  |  |  |  | < 500K | multi-threaded | 1. Create a new company in the Finance and Operations app.<br>2. Bootstrap Common Data Serivce for the company code.<br>3. Run the initial sync.
+|  |  |  |  | < 500K | multi-threaded | 1. Create a new company in the Finance and Operations app.<br>2. Bootstrap Common Data Service for the company code.<br>3. Run the initial sync.
 |  |  |  |  | > 500K | Any | 1. Create a new company in the Finance and Operations app.<br>2. Bootstrap Common Data Service for the company code.<br>3. Migrate data to each app, outside of the initial sync.<br>4. Activate dual-write and skip the initial sync.
 | Existing | New | Yes | An existing Finance and Operations app instance and a new customer engagement app instance | < 500K | Any | 1. Run the initial sync.
 |  |  |  |  | > 500K | Any | 1. Migrate data to each app.<br>2. Activate dual-write and skip the initial sync.
-| Existing | Existing | Yes | An existing Finance and Operations app instance and and existing customer engagement app instance | < 70K | [single-threaded](#single-threaded-entities) | 1. Bootstrap Common Data Service for the company code.<br>2. Run the initial sync.
+| Existing | Existing | Yes | An existing Finance and Operations app instance and an existing customer engagement app instance | < 70K | [single-threaded](#single-threaded-entities) | 1. Bootstrap Common Data Service for the company code.<br>2. Run the initial sync.
 |  |  |  |  | > 70K | [single-threaded](#single-threaded-entities) | 1. Bootstrap Common Data Service for the company code.<br>2. Migrate data to each app, outside of the initial sync.<br>3. Activate dual-write and skip the initial sync.
 |  |  |  |  | < 500K | multi-threaded | 1. Bootstrap Common Data Service for the company code.<br>2. Run the initial sync.
 |  |  |  |  | > 500K | Any | 1. Bootstrap Common Data Service for the company code.<br>2. Migrate data to each app, outside of the initial sync.<br>3. Activate dual-write and skip the initial sync.
