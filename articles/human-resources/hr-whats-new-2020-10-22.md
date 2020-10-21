@@ -63,12 +63,12 @@ The following bug fixes are included in this release.
 | 437922 | Importing FMLA Hours using the DMF entity results in a 'read-only' error |Using the FMLA Hours entity to import hours associated to an FMLA case was failing.  Additional logic was added to ensure that the hours being imported do not exceed the hours remaining for the case.|
 | 512019 | Incorrect last carry-forward amount |---|
 | 458639 | Worker contacts entity doesn't support change tracking mode |Worker contacts entity has been updated so that it can be used in BYOD.|
-| 505347 | Training manager able to submit a leave request on behalf of an employee when streamlined worker feature enabled |---|
+| 505347 | Training manager able to submit a leave request on behalf of an employee when streamlined worker feature enabled |Roles other than HR assistant and HR manager aren't allowed to submit time off requests for employees.|
 | 513490 | Benefits Management logging:  add logging for plans with no coverage options|---|
 | 517021 | Inability to select multiple plans with the same Plan Type CODE if Plan Type has one enrollment per type |---|
 | 444791 | Unable to view compensation in Employee self-service when Restrict access is turned on in Comp plan |---|
 | 457542 | Updating course details after it has been closed does not also update the same information on the Employee that took part in the course  |---|
-| 515342 |Cannot insert data through the CDSLeaveRequestDetailEntity - Company is not found or does not exist. |---|
+| 515342 |Cannot insert data through the CDSLeaveRequestDetailEntity - Company is not found or does not exist. |The CDSLeaveRequestDetailEntity can now be used to insert data. |
 | 514743 | Error in Email Parameter form when using Exchange |The message 'Could not load filed or assembly...' was being displayed in the Email Parameters page when the email provider was set to 'Exchange'.  Fix will allow parameters page to load and save as expected.|
 
 
