@@ -67,7 +67,7 @@ The following bug fixes are included in this release.
 | 513490 | Benefits Management logging:  add logging for plans with no coverage options|---|
 | 517021 | Inability to select multiple plans with the same Plan Type CODE if Plan Type has one enrollment per type |---|
 | 444791 | Unable to view compensation in Employee self-service when Restrict access is turned on in Comp plan |---|
-| 457542 | Updating course details after it has been closed does not also update the same information on the Employee that took part in the course  |---|
+| 457542 | Updating course details after it has been closed does not also update the same information on the Employee that took part in the course  |The employee information will now update properly when course details are changed after a course is closed and reopened.|
 | 515342 |Cannot insert data through the CDSLeaveRequestDetailEntity - Company is not found or does not exist. |The CDSLeaveRequestDetailEntity can now be used to insert data. |
 | 514743 | Error in Email Parameter form when using Exchange |The message 'Could not load filed or assembly...' was being displayed in the Email Parameters page when the email provider was set to 'Exchange'.  Fix will allow parameters page to load and save as expected.|
 
