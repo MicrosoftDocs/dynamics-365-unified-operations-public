@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.15
 This topic describes how to fix common issues that you might encounter while picking and packing in Dynamics 365 Supply Chain Management.
 
 ## I receive the error "Dimension location can't be left blank if dimension serial number is set."
-<!-- KFM: I think the quoted messages need an intro to identify them as error messages, like this one. -->
+
 ### Issue description
 
 This error occurs if you create a transfer order for a serial item using a warehouse enabled for an advanced warehouse management (WMS) and then, after completing the work, you try to confirm the shipment.
@@ -76,7 +76,7 @@ The error is generated when the user is unable to perform a *split pick* across 
 The warehouse worker will need to use the *Short picking* process on the Warehouse Mobile App. Assuming that you are trying to pick multiple batches from the same location, then you could also use the **Full** option on the warehouse app.
 
 ## I can't move inventory to a license plate controlled location
-<!-- KFM: in other TSG topics, we use first person in the headings, so I did that here too. The descriptions and resolutions should be in second person. -->
+
 ### Issue description
 
 You can't reduce picked quantities on a load.
@@ -85,18 +85,8 @@ You can't reduce picked quantities on a load.
 
 This used to be true in earlier versions. However, it's now possible to unpick to a license plate controlled location. You must specify the **Location** *and* **License Plate ID** in **Reduce picked quantity** on the load line.
 
-## I receive the error "The Item %1 is not in location %2 in warehouse %3."
+## Can I Print a delivery note or packing content by warehouse?
 
-### Issue description
-
-When specific batch and/or serial numbers are reserved for a piece of work, scanning a license plate ID that doesn't contain that batch and/or serial number gives an incorrect error message.
-
-### Issue resolution
-
-The issue is resolved by deploying KB number: 4581881: Change the error message to: The license plate [License plate ID] does not contain the reserved dimensions [List of dimensions] for the item [Item ID].
-<!-- KFM: This seems internal. Is this text really intended for consumption by our users? If so, maybe add a link to the KB article -->
-## Printing delivery note or packing content by warehouse
-<!-- KFM: This heading should be phrased as an issue (or, worst case, as a question), not as an instruction heading. I'm not sure what it should be. -->
 ### Issue description
 
 Is it possible to print by *Warehouse* or *Site* in **Work audit template line update**?
