@@ -5,7 +5,7 @@ title: Run and monitor an experiment
 description: This topic describes how to run and monitor an experiment in a third-party service. It also describes how to make changes to variations after the experiment started.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 10/14/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
