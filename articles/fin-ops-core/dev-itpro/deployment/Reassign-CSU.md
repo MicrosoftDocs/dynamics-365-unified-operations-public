@@ -81,11 +81,9 @@ This procedure and the next procedure must be completed during the planned downt
 
 ## Post-migration
 
-You can continue to use the origin CSU to serve other channels. Alternatively, if you no longer require the origin CSU, you can decommission or delete it. 
+You can continue to use the origin CSU to serve other channels. 
 
 > [!NOTE]
-> Don't delete the origin CSU until every POS has signed in at least one time to retrieve the URL of the destination CSU.
->
-> Don't delete the origin CSU until all data from associated POS offline devices has been synced to the origin CSU, and all data from the origin CSU has been synced to Commerce headquarters. We recommend that you wait at least 30 days, or until the end of the next calendar month, before you delete the origin CSU or disable P-jobs for it.
+> Do not delete the origin CSU. Doing so may make the store unoperable.
 
 After you've completed all the procedures in a sandbox UAT environment, repeat them in your production environment.
