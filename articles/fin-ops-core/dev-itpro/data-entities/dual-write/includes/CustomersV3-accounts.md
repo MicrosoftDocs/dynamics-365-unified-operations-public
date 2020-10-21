@@ -6,7 +6,7 @@ Source filter: `((PartyType == "Organization"))`
 
 Reversed source filter: customertypecode eq 3
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 CUSTOMERACCOUNT | = | accountnumber | 
 INVOICEADDRESSCITY | = | address2_city | 

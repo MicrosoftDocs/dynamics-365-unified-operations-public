@@ -6,7 +6,7 @@ Source filter: `((PartyType == "Person"))`
 
 Reversed source filter: msdyn_sellable eq true  and msdyn_contactpersonid ne ''
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 none | >> | msdyn_sellable | True
 PARTYTYPE | << | none | Person
