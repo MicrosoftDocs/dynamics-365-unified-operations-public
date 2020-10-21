@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources October 22, 2020"
+# What's new or changed in Dynamics 365 Human Resources October 22, 2020
 
 This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
 
