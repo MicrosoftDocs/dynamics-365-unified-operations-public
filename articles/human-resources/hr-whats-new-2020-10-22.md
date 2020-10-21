@@ -49,6 +49,11 @@ The following features are generally available with this release.
 | --- | --- | --- |
 | Platform update 10.0.14(38) | -- | [Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14) |
 
+#### Custom links in Manager self service
+
+With this release, we are introducing the capability to configure custom links for Managers accessible via Manager self-service. These custom links will be on the My team tab. To enable this feature, please use the feature management experience and turn on **(Preview) Custom links in Manager self service**. Links can be configured via the Manager self service configure options under the Human Resources parameters. For more information, please view [Custom links in manager self service](https://aka.ms/MSSCustomLinks). 
+
+
 ### Bug fixes
 
 The following bug fixes are included in this release.
@@ -82,6 +87,7 @@ The following new features are in preview. For more information about turning fe
 | Enhanced workflow requests and approvals | [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Configuration option to position Work items assigned to me list](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Virtual entities in Common Data Service for Human Resources | [Expand Dynamics 365 Human Resources core data in Common Data Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md) |
 | Integration with LinkedIn Talent Hub | [Integration with LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integrate with LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
+| Custom links in manager self service | [Custom links in manager self service](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Custom links in manager self service](https://aka.ms/MSSCustomLinks) |
 
 ## Coming soon
 
