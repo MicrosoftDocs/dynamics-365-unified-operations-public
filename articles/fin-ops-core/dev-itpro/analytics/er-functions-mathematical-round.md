@@ -62,7 +62,7 @@ The resulting numeric value.
 
 If the value of the `decimals` argument is more than 0 (zero), the specified number is rounded to that many decimal places.
 
-If the value of the `decimals` argument is **0** (zero), the specified number is rounded to the nearest integer.
+If the value of the `decimals` argument is **0** (zero), the specified number is rounded towards the nearest even integer.
 
 If the value of the `decimals` argument is less than 0 (zero), the specified number is rounded to the left of the decimal point.
 
@@ -73,6 +73,10 @@ If the value of the `decimals` argument is less than 0 (zero), the specified num
 ## Example 2
 
 `ROUND (1200.767, -3)` rounds to the nearest multiple of 1,000 and returns **1000**.
+
+## Example 3
+
+`ROUND (1200.5, 0)` rounds towards the nearest even integer returning **1200** while `ROUND (1201.5, 0)` does the same returning **1202**.
 
 ## Additional resources
 
