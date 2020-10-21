@@ -246,4 +246,3 @@ OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationar
 
 An event that is triggered when the navigation is triggered.
 
-
