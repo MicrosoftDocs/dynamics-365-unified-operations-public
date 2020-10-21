@@ -60,7 +60,7 @@ If you need to run the initial sync with more than 500K records in a run, then w
 
 If you are running the initial sync from Common Data Service to the Finance and Operations apps, there is a timeout of 24 hours for getting the import result back from the Finance and Operations app. If you are syncing a lot of data and the single execution takes above 24 hours, you might hit the timeout and the initial sync fails. For example, an initial sync from Common Data Service to a Finance and Operations apps for the **Customer/Account** entity with 70k records could take more than 24 hours, hitting the 24-hour limit.
 
-Do not the initial sync from Common Data Service to a Finance and Operations app for the [single-threaded entities](#single-threaded-entities) if the data volume is above 70K. These entities do not support multi-threading during import and you might hit the limit if the volume is above 70K. In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
+Do not run the initial sync from Common Data Service to a Finance and Operations app for the [single-threaded entities](#single-threaded-entities) if the data volume is above 70K. These entities do not support multi-threading during import and you might hit the limit if the volume is above 70K. In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
 
 ### 40 legal entities limit while linking the environments
 
