@@ -513,3 +513,23 @@ The depreciation expense journal entry is generated from the asset depreciation 
 | Ledger       | 11             | Custom | Accumulated depreciation |        | 949.75 |
 
 After all these journal entries are created and posted, you will see the following "custom layer 1" values. Note that the last column includes the bank fee, the value-added tax (VAT) expense, and the reduction of cash from the previous layer, but it doesn't include the statutory reporting journal entries. Therefore, you achieve true dual-reporting capabilities. At this point, the company just has to run its trial balance, and combine the current layer and the custom layer to create an IFRS trial balance.
+
+
+|            |                          | Statutory Book | Statutory Book | Statutory Book |                         |   | Reversal Book | IFRS 16 Book | IFRS 16 Book | IFRS 16 Book | IFRS 16 Book |                                         |
+|            |                          | Current Layer  | Current Layer  | Current Layer  |                         |   | Custom layer  | Custom layer | Custom layer | Custom layer | Custom layer |                                         |
+|            |                          | JE\-100        | JE\-110        | JE\-120        |                         |   | JE\-130       | JE\-140      | JE\-150      | JE\-160      | JE\-170      |                                         |
+| Account No | Description              | Dr \(Cr\)      | Dr \(Cr\)      | Dr \(Cr\)      | Current Layer \- Totals |   | Dr \(Cr\)     | Dr \(Cr\)    | Dr \(Cr\)    | Dr \(Cr\)    | Dr \(Cr\)    | Custom Layer \+ Current Layer \- Totals |
+|------------|--------------------------|----------------|----------------|----------------|-------------------------|---|---------------|--------------|--------------|--------------|--------------|-----------------------------------------|
+| 1          | Lease expense            | 1,000\.00      |                |                | 1,000\.00               |   | \-1,000       |              |              |              |              | 0\.00                                   |
+| 2          | Bank fee                 |                | 3\.00          |                | 3\.00                   |   |               |              |              |              |              | 3\.00                                   |
+| 3          | VAT expense              |                | 5\.00          |                | 5\.00                   |   |               |              |              |              |              | 5\.00                                   |
+| 4          | Clearing account         | \-1,000\.00    | 1,000\.00      |                | 0\.00                   |   | 1,000         |              | \-1,000      |              |              | 0\.00                                   |
+| 5          | Accounts payable         |                | \-1,008\.00    | 1,008\.00      | 0\.00                   |   |               |              |              |              |              | 0\.00                                   |
+| 6          | ROU asset                |                |                |                | 0\.00                   |   |               | 22,794       |              |              |              | 22,793\.90                              |
+| 7          | Finance lease obligation |                |                |                | 0\.00                   |   |               | \-22,794     | 1,000        | \-94\.97     |              | \-21,888\.87                            |
+| 8          | Interest expense         |                |                |                | 0\.00                   |   |               |              |              | 94\.97       |              | 94\.97                                  |
+| 9          | Cash                     |                |                | \-1,008\.00    | \-1,008\.00             |   |               |              |              |              |              | \-1,008\.00                             |
+| 10         | Depreciation expense     |                |                |                | 0\.00                   |   |               |              |              |              | 949\.75      | 949\.75                                 |
+| 11         | Accumulated depreciation |                |                |                | 0\.00                   |   |               |              |              |              | \-949\.75    | \-949\.75                               |
+
+
