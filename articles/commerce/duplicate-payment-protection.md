@@ -42,6 +42,9 @@ This topic describes the user experience when the point of sale (POS) recovers f
 
 The duplicate payment protection feature ensures that Modern POS can seamlessly recover from a loss of communication without requiring the shopper to process another payment through the payment terminal, which can lead to duplicate payments.
 
+> [!NOTE]
+> The duplicate payments protection feature is only supported for payments made using payment terminals.
+
 This topic covers the following aspects of the duplicate payment protection feature:
 
 - [Prerequisites](#prerequisites) – Set of prerequisites to leverage this feature in Modern POS.
@@ -88,9 +91,9 @@ The duplicate payment protection feature is applicable to any scenario in which 
 
 ### Payment recovery scenarios
 
-Once the point of sale or network communications have been recovered, there are several scenarios that will result in the cashier being prompted to use the previous payment. Here are a few scenarios that can trigger payment recovery:
+Once the POS or network communications have been recovered, there are several scenarios that will result in the cashier being prompted to use the previous payment. Here are a few scenarios that can trigger payment recovery:
 
-If there is a unrecovered payment and the cashier takes one of the following actions, the cashier is shown a dialog box indicating that a payment has already been made.
+If there is an unrecovered payment and the cashier takes one of the following actions, the cashier is shown a dialog box indicating that a payment has already been made.
 
 - Invokes another payment for any amount using a card payment.
 - Invokes another payment for any amount using a cash payment.
