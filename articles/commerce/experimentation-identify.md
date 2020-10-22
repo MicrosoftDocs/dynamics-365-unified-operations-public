@@ -5,7 +5,7 @@ title: Identify a hypothesis and determine metrics for an experiment
 description: This topic describes how to identify the hypothesis and success metrics for an experiment you'll run on an e-Commerce website in Dynamics 365 Commerce.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -36,7 +36,7 @@ The first phase in the experimentation lifecycle includes identifying the hypoth
 
 A hypothesis is a statement where you predict the outcome of the experiment. Many factors go into defining a hypothesis, for example, research about user behavior and website data you've collected. With the hypothesis, you'll define the assumption or theory you want to validate with your experiment. An example of a hypothesis for your experiment may be "*a picture of a white t-shirt on my home page will drive a higher clickthrough rate than a navy sweater during summer months because people want to wear something lightweight and light colored in the summer.*" In that case, you'll create variations that include a white t-shirt and a navy sweater, and publish both at the same time.
 
-To validate a hypothesis, the success or failure of an experiment should be directly tied to user actions; for example, if the website user clicks a link or button. These actions must correspond with events that will be reported to the third-party service tracking the experiment. Over time, the percentage of users that take the action will be tallied as a metric you can use to generate reports and conduct analyses. Refer to the [Commerce component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md) topic to review all of the available events and attributes.
+To validate a hypothesis, the success or failure of an experiment should be directly tied to user actions; for example, if the website user clicks on a link or button. These actions must correspond with events that will be reported to the third-party service tracking the experiment. Over time, the percentage of users that take the action will be tallied as a metric you can use to generate reports and conduct analyses. To review all of the available events and attributes, see [Commerce component events for diagnostics and troubleshooting](dev-itpro/retail-component-events-diagnostics-troubleshooting.md).
 
 ## Previous step
 [Experimentation in Dynamics 365 Commerce](experimentation-overview.md)

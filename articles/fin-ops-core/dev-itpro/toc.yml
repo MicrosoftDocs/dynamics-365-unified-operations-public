@@ -482,6 +482,8 @@
           href: deployment/Update-retail-channel.md  
         - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
+        - name: Migrate channels to a different Commerce Scale Unit
+          href: deployment/Reassign-CSU.md
         - name: Retail data residency
           href: deployment/retail-data-residency.md
       - name: On-premises deployment

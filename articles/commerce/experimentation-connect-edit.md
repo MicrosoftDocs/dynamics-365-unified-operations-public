@@ -5,7 +5,7 @@ title: Connect an experiment and edit variations
 description: This topic describes how to connect an experiment in a third-party service to Dynamics 365 Commerce, and how to edit variations for the experiment.
 author:  sushma-rao 
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -31,7 +31,9 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Connect an experiment and edit variations
 
-This topic describes how to connect your experiment in Commerce and make changes to your variations so they align with your hypothesis. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
+This topic describes how to connect your experiment in Commerce and make changes to your variations so that they align with your hypothesis. 
+
+The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
 
 [ ![Experimentation user journey - Connect & Edit](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
@@ -44,7 +46,7 @@ Before you connect your experiment in Commerce, you'll need to make some decisio
 ### Determine the scope of your experiment
 When you connect an experiment, you are prompted to define the scope of the experiment. Experiments are defined as **partial** scope or **entire** scope.
 - Choose **partial** if you want to conduct an experiment on a specific portion of a page. If you select this option, you must identify which modules are included in the experiment. Changes that are made to parts of the default page or fragment that aren't related to the experiment are automatically synchronized across variations.
-- Choose **entire** if you want to conduct an experiment on an entire page or fragment. Separate copies of the default page or fragment are created. You won't have to select which modules are included in the experiment because the whole editing surface is available to change. You can add, delete, and re-order modules as needed. However, if any changes are made to the default page or fragment that the experiment is associated with, those changes have to be manually synchronized across all variations.
+- Choose **entire** if you want to conduct an experiment on an entire page or fragment. Separate copies of the default page or fragment are created. You won't have to select which modules are included in the experiment because the whole editing surface is available to change. You can add, delete, or re-order modules as needed. However, if any changes are made to the default page or fragment that the experiment is associated with, those changes have to be manually synchronized across all variations.
 
 <!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
 
@@ -60,10 +62,12 @@ For more information about publish groups, refer to [Work with publish groups](p
 ## Connect your experiment
 To connect your experiment, you'll launch the **Connect experiment** wizard. The wizard walks you through the steps required to connect your experiment. When you complete the wizard, your experiment is connected and variations are created and ready to be edited.
 
-1. To launch the wizard, select the **Experiments** tab in site builder and then select **Connect**. Alternatively, the wizard can be accessed from a page or fragment editor. In edit mode, select **Connect experiment** in the command bar.
+To get started connecting your experiment in Commerce site builder, follow these steps.
 
-> [!NOTE]
-> A page can only be connected to one experiment at a time. To connect a page to a different experiment, first delete the experiment that the page is currently connected to.
+1. To launch the **Connect experiment** wizard, select **Experiments** in the left navigation pane, and then select **Connect**. Alternatively, you can access the wizard from a page or fragment editor by editing it and selecting **Connect experiment** on the command bar.
+
+    > [!NOTE]
+    > A page can only be connected to one experiment at a time. To connect a page to a different experiment, first delete the experiment that the page is currently connected to.
 
 1. Choose the page or fragment you want to run your experiment on.
 1. Set the experimentation scope to **partial** or **entire**, based on the choice you made in the [Determine the scope of your experiment](#determine-the-scope-of-your-experiment) section above.
