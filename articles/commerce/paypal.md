@@ -114,7 +114,7 @@ To test the PayPal connector, you must first create PayPal developer credentials
 5. Click **New**.
 6. Specify an **ID** such as **PayPal**, an **Electronic payment name** such as **PayPal**, set **Type** to **Wallet** and specify a name for the **Issuer** such as **PayPal**, then click **Save**.
 7. Select the entry previously created and click **Processor mapping**.
-8. In the **Processor payment method mapping** form, select the previously created **Paypal** card type, then in the middle column select the **Dynamics 365 Payment connetor for PayPal** and click **Add**. 
+8. In the **Processor payment method mapping** form, select the previously created **Paypal** card type, then in the middle column select the **Dynamics 365 Payment connector for PayPal** and click **Add**. 
 
 ### Set up the PayPal connector in Payment services
 
@@ -128,7 +128,7 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Payment service | Enter the name of the payment service to configure. | PayPal |
     | Payment connector | Select the PayPal payment connector. | Dynamics 365 Payment Connector for PayPal |
     | Test mode | For the PayPal connector, in production and test environments you should set this field to **false**. | false |
-    | Default processor for credit cards | This should be selt to **No** because the Call Center uses the default processor. | No |
+    | Default processor for credit cards | This should be set to **No** because the Call Center uses the default processor. | No |
     | Bypass payment processor for zero transactions | Specify whether this payment processor should be skipped for transactions that have a 0 (zero) amount. | Yes |
 
 3. On the **Payment service account** tab, enter the following information.
@@ -140,8 +140,8 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *String* |
     | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *String* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal connector. The default is **USD** | Yes | Yes, but can be edited | USD; CAD |
-    | Supported tender types | Other payment connnectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
-    | Supported payment method variants | Other payment connnectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
+    | Supported tender types | Other payment connectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
+    | Supported payment method variants | Other payment connectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments | Yes | Yes | *Sandbox* or *Live* |
     
 > [!NOTE]
@@ -159,11 +159,11 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for PayPal. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *Guid* |
-    | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *Guid* |
+    | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**  | Yes | Yes | *String* |
+    | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application** | Yes | Yes | *String* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal connector. The default is **USD** | Yes | Yes, but can be edited | USD; CAD |
-    | Supported tender types | Other payment connnectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
-    | Supported payment method variants | Other payment connnectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
+    | Supported tender types | Other payment connectors may support multiple tender types, for PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
+    | Supported payment method variants | Other payment connectors may return multiple payment method variants, for PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments | Yes | Yes | *Sandbox* or *Live* |
     
 > [!NOTE]
