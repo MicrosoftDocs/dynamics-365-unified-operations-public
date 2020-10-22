@@ -1400,6 +1400,8 @@
             href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
           - name: NF-e certificates
             href: localizations/latam-bra-nfe-certs.md
+          - name: NF-e custom certificate validation
+            href: localizations/nf-e-custom-certificate-validation.md
           - name: Set up, import, and verify NF-e XML documents and DANFE
             href: localizations/latam-bra-set-up-import-nfe.md
           - name: Set up NF-e federal parameters

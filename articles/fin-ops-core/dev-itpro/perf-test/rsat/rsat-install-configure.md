@@ -109,6 +109,8 @@ Configure your connection to the test environment.
 + **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
 
 + **Thumbprint** – The thumbprint of the authentication certificate that you're using.
+ If you don't have Remote Desktop Protocol (RDP) access to your environment, follow the steps lower in this article to download the certificate from Lifecycle Services and paste the thumbprint here.
+ Otherwise, if you do have RDP access to the environment, follow these steps to generate a self-signed certificate. 
 
     1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file somewhere so you have it saved for your records.
     2. When the process completes, the new certification is installed in the local machine's trusted root store.
@@ -175,25 +177,35 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 #### If you have no Remote Desktop access to the server
 
-If your test environment doesn't allow for Remote Desktop access, follow these steps to configure the environment to trust the RSAT connection.
+In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured. Follow these steps to retrieve the RSAT certificate, which is necessary to use with PerfSDK.
 
-1. Create the RSAT authentication certificate by using the **New** button in the RSAT settings dialog box, as described earlier in this topic.
-2. Open a support request, and provide the following information to the support engineer:
+   - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
+   - The thumbprint of the **authcert.pfx** certificate.
+   - An acceptable downtime window for the sandbox environment. Downtime is expressed in minutes.
+1. Under **Maintain** on your environment details page in Lifecycle Services you'll see two new options.
+  - Download RSAT certificate
+  - Regenerate RSAT certificate
 
-    - Your environment ID (You can find this ID on the environment page in Microsoft Dynamics Lifecycle Services \[LCS\].)
-    - The .cer file that RSAT generated
-    - An acceptable downtime window for the sandbox environment (Downtime is expressed in minutes.)
+![Download and regenerate RSAT certificate options](media/rsat-lcs1.png)
+
+Use the **Download** button to retrieve the certificate bundle as a .zip file.
+
+2. You'll receive a warning that a clear-text password will be displayed on your screen. Select **Yes** to continue.
+
+3. Copy the clear-text password for later use. You'll see the .zip file has been downloaded. Inside the .zip file is a certificate (.cer) and a personal information exchange (.pfx) file. Unzip the file.
+
+4. Double-click the certificate to open it, and then select **Install**. Install this certificate to your local machine, and then browse to the **Personal** store. Repeat this process for the local machine, and browse specifically to the **Trusted Root Certification Authorities** store.
+
+5. Double-click the personal information exchange (.pfx) file to open it, and select **Install**. Install this certificate to your local machine, enter the password saved in step 2, and browse to the **Personal** store. Repeat this process for the local machine location, enter the password saved in step 2, and browse specifically to the **Trusted Root Certification Authorities** store.
+
+6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and copy the ID in the text box. Use this thumbprint for RSAT and to update your PerfSDK **CloudEnvironment.config** thumbprint.
+![Thumbprint settings](media/rsat-lcs4.png)
+
+You can now run your tests against the environment using this certificate. The certificate will be auto-rotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
 
 ### Installation of RSAT on multiple computers
 
-A test environment can be configured to trust more than one RSAT connection. If you install RSAT on more than one computer, you must generate a new certificate for each RSAT installation. The certificate must be generated and installed on the same computer as RSAT. You can have more than one thumbprint entry in the AOS wif.config file if you want your AOS to trust connections from more than one client where RSAT is installed. The following example shows multiple thumbprint nodes.
-
-```xml
-<keys>
-    <add thumbprint="ccbc124d0a119xxxxxxxxxxxxxxxxxxxx841e797" />
-    <add thumbprint="bbbbbbbbbbbbbbxxxxxxxxxxxxxxxxxxxx999999" />
-</keys>
-```
+Installation of the same certificate across multiple environments is no longer supported.  Each environment should use its own certificate, either generated manually and installed for environments that have RDP access, or auto-generated by Microsoft if there is no RDP access.  
 
 ## Install Selenium drivers
 
