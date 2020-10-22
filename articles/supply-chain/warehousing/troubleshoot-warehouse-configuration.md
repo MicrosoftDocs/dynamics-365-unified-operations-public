@@ -35,46 +35,74 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while configuring Dynamics 365 Supply Chain Management.
 
-## The error "The license plate or location is not valid" is shown.
-<!-- KFM: I think this is an error message, so I put it in quotes. Does this look right? -->
+## I received the error "The license plate or location is not valid."
 
-**Issue:** Scanning a license plate ID or location generates an error message.
+### Issue description
 
-**Fix:** Check that the License Plate ID is not reserved by something else. This used to occur when a user scanned a value on the Warehouse Mobile App that was *both* a valid Location and License Plate ID; however, this issue has been resolved in 10.0.11.
+Scanning a license plate ID or location generates the error message.
 
-## The error "License plate must be specified for this location" is shown.
-<!-- KFM: I think this is an error message, so I put it in quotes. Does this look right? -->
+### Issue resolution
 
-**Issue:** Transfer order required license plate to be specified.
+Check that the License Plate ID is not reserved by something else. This used to occur when a user scanned a value on the Warehouse Mobile App that was *both* a valid Location and License Plate ID; however, this issue has been resolved in 10.0.11.
 
-**Fix:** Transfer orders must maintain a License Plate ID throughout the process (From &gt; Transit &gt; To). Ensure default receipt location on the transit warehouse is license plate controlled.
+## I received the error "License plate must be specified for this location."
 
-## The error "You can't create a work template line for inventory status change because the work type isn't valid. Select a different work type" is shown.
-<!-- KFM: I think this is an error message, so I put it in quotes. Does this look right? -->
-**Issue:** Cannot select work type of inventory status change in Work template details.
+### Issue description
 
-**Fix:** This is by design. The inventory status change work order type is only used by system processes and is not configurable. Because the list of work order types is just enum values, they cannot be filtered out of the Work Template drop-down view.
+The error occurs if you create a transfer order using a warehouse enabled for an advanced warehouse management (WMS) and then, after completing the work, you try to confirm the shipment.
 
-## The Quantity is not valid for unit ea.
+### Issue resolution
 
-**Issue:** The quantity is not valid for unit ea, when Picking Work with Multiple LP´s in one Location.
+The "from" warehouse has a transit warehouse which had an empty Default receipt location value for the transit warehouse. To resolve this, specify a location for default receipt location in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
 
-**Fix:** Verify defined Unit Sequence Group and Unit Conversions on the Released Product/Product Variant. KB number: 486531: Improving the error message so it shows the expected quantity. "The quantity is not valid. Expected %1 %2.".
-<!-- KFM: This looks like internal text. Do we really want to show this to customers? -->
-## Location directives for sales order put multi SKU does not evaluate multiple location directive actions.
+## I received the error "You can't create a work template line for Inventory status change because the work type is not valid. Select a different work type."
 
-**Issue:** Location directives for sales order put with Multi SKU does not evaluate multiple location directive actions. It is evaluating only the first location directive action.
+### Issue description
 
-**Fix:** KB number: 4579866: Added feature "Evaluate all actions for Multi SKU location directives" to evaluate all actions for Multi SKU location directives.
+On a **Work template**, you cannot select a **Work type** of *Inventory status change* in **Work template details**.
 
-## Unable to do partial picking using mobile device.
+### Issue resolution
 
-**Issue:** For sales and transfer orders, unable to skip items and do partial picking.
+This is by design. The *inventory status change* **work type** is only used by system processes and is not configurable. Because the list of work types is just enum values, they cannot be filtered out of the Work Template drop-down view.
 
-**Fix:** Enable "Allow splitting of work" under mobile device menu items General FastTab.
+## I received the error "The Quantity is not valid for unit 1%."
 
-## Inventory Status change for Partial quantity.
+### Issue description
 
-**Issue:** How do you do an Inventory Status change for Partial quantity of a batch?
+The quantity is not valid for the unit *ea*, when there is picking work with multiple license plates in one location.
 
-**Fix:** Requirement can be fulfilled if warehouse app is used and change the status with the help of one of the menus. The movement menu item can be used for this requirement. Note that **Display inventory status** must be enabled for the relevant  mobile device menu item.
+### Issue resolution
+
+Verify the defined **Unit Sequence Group ID** and **Unit Conversions** on the Released Product/Product Variant are configured.
+
+The error message was improved with the release of version 10.0.15 on KB number: 486531: Improving the error message so it shows the expected quantity. "The quantity is not valid. Expected %1 %2.".
+
+## Location directives for sales order Put work, Multiple SKU does not evaluate multiple location directive actions.
+
+### Issue description
+
+Location directives of the **Work order type** *Sales orders* and **Work type** of *Put*, with the **Multiple SKU** parameter selected, does not evaluate multiple location directive actions. It is evaluating only the first location directive action.
+
+### Issue resolution
+
+A new feature **Evaluate all actions for Multi SKU location directives** has been added in version 10.0.15. See Lifecycle Services (LCS) [KB number: 4579866:](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091) Location directives for Sales order put with Multi SKU does not evaluate multiple location directive actions, for more information. Added feature "Evaluate all actions for Multi SKU location directives" to evaluate all actions for Multi SKU location directives.
+
+## I am unable to do partial picking using mobile device.
+
+### Issue description
+
+For sales and transfer orders, you are unable to skip items and do partial picking.
+
+### Issue resolution
+
+On the Sales order and Transfer order menu items, enable **Allow splitting of work** under the **mobile device menu items** General FastTab.
+
+## How can I perform an Inventory Status change for Partial quantity work.
+
+### Issue description
+
+How do you do an Inventory Status change for Partial quantity of a batch?
+
+### Issue resolution
+
+Requirement can be fulfilled if warehouse app is used and change the status with the help of one of the menus. The *Movement* **Work creation process** menu item can be used for this requirement. Note that **Display inventory status** must be **Yes** for the relevant mobile device menu item.
