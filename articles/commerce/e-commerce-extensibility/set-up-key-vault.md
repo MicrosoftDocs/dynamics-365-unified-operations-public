@@ -5,7 +5,7 @@ title: Set up Azure Key Vault for secure key management
 description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2020
+ms.date: 10/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -105,6 +105,10 @@ To add your Node application details into Retail Server's authentication allow l
 
 You should now have a configuration similar to the one in the following example image.
 ![Retail Server authentication allow list](media/key-vault-02.png)
+
+To synchronize the changes into the channel DB, in Commerce headquarters go to **Distribution schedule** and then execute job 1110 (Global configuration), as shown in the following image. 
+
+![Execute job 1110 on the Distribution schedule page](media/distribution-schedule.png)
  
 Your Node application will now be able to securely communicate and request Key Vault secrets from Retail Server.
 
@@ -150,6 +154,7 @@ Next, to add an access policy in your Key Vault, follow these steps.
 Next, to add the Key Vault details in Retail Server, follow these steps.
 
 1.	In Commerce headquarters, go to **Key Vault parameters**. 
+1. From the store selector on the top right, select **USRT**.
 1.	Select **New**, and then enter a name to represent your Key Vault.
 1.	Enter the **Key Vault URL**. This is the **Vault URI** value listed on your Key Vault's **Overview** page. 
 1. Enter the **Key Vault client**. This is the application ID of the registered app. 
@@ -158,6 +163,9 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
 1.	Select **Validate** to test your configuration. If everything was configured correctly, you will see a message that says "Validation successful."
  
  ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
+ 
+ > [!IMPORTANT]
+ > The Key Vault must be configured in the **USRT** store.
 
 ## Access secret values within your e-Commerce Node application
 
