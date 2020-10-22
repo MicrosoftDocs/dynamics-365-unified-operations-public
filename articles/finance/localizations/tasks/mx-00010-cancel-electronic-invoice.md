@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Version 7.0.0
 
 You can cancel a CFDI electronic invoice that was previously validated and certified by the PAC. You can also cancel a CFDI electronic invoice by using the manual process.
 
-
 ## Cancel a CFDI electronic invoice
 1. Go to Accounts receivable > Inquiries and reports > CFDI (electronic invoices).
 2. Select an electronic invoice with a status of Approved.
@@ -47,7 +46,7 @@ You can cancel a CFDI electronic invoice that was previously validated and certi
 10. Select the canceled invoice to verify the status.
 
 >[!NOTE] 
-> You cannot cancel a CFDI document if an associated document exists. For example, you cannot cancel a prepayment if an invoice references  that payment. You first need to cancel associated documets and then cancel the CFDI document.
+> You cannot cancel a CFDI document if an associated document exists. For example, you cannot cancel a prepayment if an invoice references that payment. You first need to cancel associated documets and then cancel the CFDI document.
 
 ## Manually cancel a CFDI electronic invoice
 1. Select an invoice with status Approved.
