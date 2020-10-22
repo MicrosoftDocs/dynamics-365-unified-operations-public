@@ -18,11 +18,11 @@ check between the benefit code and the CST must be skipped by the web service
 reception service.
 
 For more information about the compatibility rules and exceptions, please check
-the latest version of technical note NT2019.001, available in the NF-e portal,
+the latest version of technical note NT2019.001, available in the [NF-e portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx),
 and for details about the validation rules, check the rules N12-85, N12-86,
 N12-90, N12-94, N12-97 and N12-98 from the same technical note. Also check the
 additional documentation “TABELA_cBenef_X_CST” (the cBenef x CST table),
-published in the NF-e portal, which describes the valid relationship between
+published in the [NF-e portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx), which describes the valid relationship between
 benefit code and CST, per state.
 
 Details about the adoption of the rules by each state legislation can also be
