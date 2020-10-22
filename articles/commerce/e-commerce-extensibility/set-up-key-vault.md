@@ -106,7 +106,7 @@ To add your Node application details into Retail Server's authentication allow l
 You should now have a configuration similar to the one in the following example image.
 ![Retail Server authentication allow list](media/key-vault-02.png)
 
-To synchronize the changes into the channel DB, in Commerce headquarters go to **Distribution schedule** and then execute job 1110 (Global configuration), as shown in the following image. 
+To synchronize the changes into the channel database, in Commerce headquarters go to **Distribution schedule** and execute job 1110 (Global configuration), as shown in the following image. 
 
 ![Execute job 1110 on the Distribution schedule page](media/distribution-schedule.png)
  
