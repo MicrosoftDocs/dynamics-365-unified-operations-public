@@ -112,3 +112,6 @@ In theory, no, you don't have to refresh the entity list. At most, you might hav
 ### Do you have guidance on when to use a virtual entity and when to use dual-write?
 
 Dual-write is only provided for a few key data entities where the data needs to be natively in Common Data Service. Those data entities are not available as virtual entities.
+
+### When adding records using virtual entities is there any way to use number sequences?
+Yes, if the F&O entity can auto generate number sequences, then it will work the same way from the VE.
