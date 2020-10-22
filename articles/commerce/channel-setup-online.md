@@ -74,9 +74,9 @@ If your e-Commerce site will support multiple languages, expand the **Languages*
 
 ## Set up payment account
 
-From within the **Payment account** section, you can add a third-party payment provider. For information on settting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).
+From within the **Payment account** section, you can add a third-party payment provider. For information on setting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).
 
-## Additional channel set up
+## Additional channel setup
 
 Additional tasks required for online channel setup include setting up payment methods, modes of delivery, and the fulfillment group assignment.
 
