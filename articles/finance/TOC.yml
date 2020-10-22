@@ -923,6 +923,8 @@
         - name: Publish journal lines and documents from Excel
           href: general-ledger/open-lines-excel-journals-documents.md
         - name: View journal entries and transactions
+        - name: Trial balance with transactional detail report
+          href: public-sector/general-ledger-public-sector-trial-balance.md          
           href: general-ledger/view-journal-entries-transactions.md
         - name: Journalize posted journal entries
           href: general-ledger/tasks/journalize-posted-journal-entries.md
@@ -1172,8 +1174,6 @@
           href: public-sector/advanced-ledger-entries-public-sector.md
         - name: Create an advanced ledger entry in the public sector
           href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-        - name: Trial balance with transactional detail report
-          href: public-sector/general-ledger-public-sector-trial-balance.md          
         - name: Use cash control limits
           href: public-sector/cash-control.md
         - name: Year-end processing in the public sector
