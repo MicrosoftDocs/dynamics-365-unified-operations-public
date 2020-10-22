@@ -35,8 +35,12 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while setting up warehouses in Dynamics 365 Supply Chain Management.
 
-## Security roles and permission for the warehouse mobile device portal.
-<!-- KFM: Is the device portal the same as the device emulator? I think maybe we should instead call this the "warehouse app emulator", but I'm not sure. -->
-**Issue:** Unable to use roles different than administrator on the mobile device emulator.
+## Security roles and permissions for the warehouse mobile device app emulator.
 
-**Fix:** The mobile emulator is set to work only with the administrator account. For all testing and live process purposes, we recommend using the warehouse app itself.
+### Issue description
+
+Unable to use roles different than administrator on the mobile device app emulator.
+
+### Issue resolution
+
+The mobile device app emulator is set to work only with the administrator account. For all testing and live process purposes, we recommend using the warehouse mobile device app itself.
