@@ -127,3 +127,9 @@ If you don't have access to the pages that are used to complete this task, conta
 | Category | Prerequisite |
 |---|---|
 | Configuration keys | Go to **System administration \> Setup \> License configuration**. Expand the **Trade** license key, and then select the **Warehouse and Transportation management** configuration key. |
+
+### Additional resources
+
+- Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
+- Help topic: [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
+- Help topic: [Work with location directives](location-directives.md)

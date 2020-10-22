@@ -2779,10 +2779,10 @@
             href: warehousing/warehouse-configuration.md
           - name: Set up a warehouse by using a warehouse configuration template
             href: inventory/warehouse-template.md
-          - name: Work with location directives
-            href: warehousing/location-directives.md
           - name: Control work by using work templates and location directives
             href: warehousing/control-warehouse-location-directives.md
+          - name: Work with location directives
+            href: warehousing/location-directives.md
           - name: Create location directives
             href: warehousing/create-location-directive.md
           - name: Wave step codes

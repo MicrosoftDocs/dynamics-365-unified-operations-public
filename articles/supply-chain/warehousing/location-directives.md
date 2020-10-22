@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Release 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-## Open the Location directives page
-
 Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines. Location directives are created for specific *Work order types*.
+
+## Open the Location directives page
 
 To open the page, go to **Warehouse management \> Setup \> Location directives**.
 
@@ -264,3 +264,9 @@ You can define multiple location directive actions for each line. Once again, a 
 For this example, consider a purchase order process where the location directive must find free capacity within a warehouse for inventory items that have just been registered at the receiving dock. First, you need to find free capacity within the warehouse by consolidating with existing on-hand inventory. If consolidation isn't possible, then you need to find an empty location.
 
 For this scenario, you must define two location directive actions. The first action in the sequence must use the **Consolidate** strategy, and the second should use the **Empty location with no incoming work** strategy. Unless you define a third action to handle an overflow scenario, two outcomes are possible when there is no more capacity in the warehouse: work can be created even though no locations are defined, or the work creation process can fail. The outcome is determined by the setup on the **Location directive failures** page, where you can decide whether to select the **Stop work on location directive failure** option for each work order type.
+
+### Additional resources
+
+- Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
+- Help topic: [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
+- Help topic: [Create location directives](create-location-directive.md)
