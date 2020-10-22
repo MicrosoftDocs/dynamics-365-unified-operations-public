@@ -177,31 +177,35 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 #### If you have no Remote Desktop access to the server
 
-In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft Managed or Self-service type sandboxes, Microsoft will instead generate the certificate for your environment and have it pre-configured.  Follow these steps to download the RSAT certificate that is generated for your environment.
+In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured. Follow these steps to retrieve the RSAT certificate, which is necessary to use with PerfSDK.
 
-1. Under the **Maintain** button on your environment details page in Lifecycle Services, you'll see two new options.
-![RSAT-LCS1](media/rsat-lcs1.png)
+   - Your environment ID. You can find this ID on the environment page in Lifecycle Services (LCS).
+   - The thumbprint of the **authcert.pfx** certificate.
+   - An acceptable downtime window for the sandbox environment. Downtime is expressed in minutes.
+1. Under **Maintain** on your environment details page in Lifecycle Services you'll see two new options.
+  - Download RSAT certificate
+  - Regenerate RSAT certificate
 
-Use the Download button to retrieve the certificate bundle as a .zip file.
+![Download and regenerate RSAT certificate options](media/rsat-lcs1.png)
 
-2. You'll receive a warning that a clear-text password will be displayed on your screen.  Choose 'Yes' to continue.
-![RSAT-LCS2](media/rsat-lcs2.png)
+Use the **Download** button to retrieve the certificate bundle as a .zip file.
 
-3. Copy the clear-text password for later use.  You'll see the .zip file has been downloaded.  Inside of the .zip file you'll find a certificate (.cer) and a personal information exchange (.pfx) file.  Unzip the file to follow the next steps.
-![RSAT-LCS3](media/rsat-lcs3.png)
+2. You'll receive a warning that a clear-text password will be displayed on your screen. Select **Yes** to continue.
 
-4. Double-click the certificate to open it, and click on the *Install* button.  Install this in your Local Machine location, and browse specifically to the **Personal** store.  Repeat this process also for the Local Machine location, and browse specifically to the **Trusted Root Certification Authorities** store.
+3. Copy the clear-text password for later use. You'll see the .zip file has been downloaded. Inside the .zip file is a certificate (.cer) and a personal information exchange (.pfx) file. Unzip the file.
 
-5. Double-click on the personal information exchange (.pfx) file to open it, and click on the *Install* button.  Install this in your Local Machine location, enter the password saved in step #2 above, and browse specifically to the **Personal** store.  Repeat this process also for the Local Machine location, enter the password saved in step #2 above, and browse specifically to the **Trusted Root Certification Authorities** store.
+4. Double-click the certificate to open it, and then select **Install**. Install this certificate to your local machine, and then browse to the **Personal** store. Repeat this process for the local machine, and browse specifically to the **Trusted Root Certification Authorities** store.
 
-6. Double-click on the certificate file to open it, browse to the details tab, and scroll down until you see the Thumbprint section.  Click on Thumbprint, and copy the ID in the text box below.  Paste this in to the Thumbprint setting within your RSAT client application settings as seen below.
-![RSAT-LCS4](media/rsat-lcs4.png)
+5. Double-click the personal information exchange (.pfx) file to open it, and select **Install**. Install this certificate to your local machine, enter the password saved in step 2, and browse to the **Personal** store. Repeat this process for the local machine location, enter the password saved in step 2, and browse specifically to the **Trusted Root Certification Authorities** store.
 
-You may now run your tests against the environment using this certificate.  The certificate will be auto-rotated by Microsoft before it expires at which time you will need to download a new version of this certificate starting from step #1 above.  In the case of Self-service environments this will be rotated every 90 days, during a downtime window closest to the expiry.  These downtime windows include customer initiated package deployment, and database movement operations which target the environment.  
+6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and copy the ID in the text box. Use this thumbprint for RSAT and to update your PerfSDK **CloudEnvironment.config** thumbprint.
+![Thumbprint settings](media/rsat-lcs4.png)
+
+You can now run your tests against the environment using this certificate. The certificate will be auto-rotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
 
 ### Installation of RSAT on multiple computers
 
-Installation of the same certificate across multiple environments is no longer supported.  Each environment should use its own certificate, either generated manually and installed for environments which have RDP access, or auto-generated by Microsoft for those which do not have RDP access.  
+Installation of the same certificate across multiple environments is no longer supported.  Each environment should use its own certificate, either generated manually and installed for environments that have RDP access, or auto-generated by Microsoft if there is no RDP access.  
 
 ## Install Selenium drivers
 
