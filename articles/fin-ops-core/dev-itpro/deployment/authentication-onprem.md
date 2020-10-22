@@ -79,7 +79,7 @@ Also these sections:
 ```
 
 [!NOTE]
-> The settings above represent a deployment configured with Microsoft 365 compatibility. You can find more information [here](./onprem-adfscompatbility.md)
+> The settings above represent a deployment configured with Microsoft 365 compatibility. You can find more information [here](./onprem-adfscompatibility.md)
 
 The AOS is using these configuration values to know where to redirect an unathenticated request when a user hits the application URL:
     1. Request is sent by the browser to the application URL (https://ax.contoso.com/namespaces/AXSF/).
