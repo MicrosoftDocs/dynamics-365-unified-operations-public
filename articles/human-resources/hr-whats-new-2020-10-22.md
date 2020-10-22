@@ -61,7 +61,7 @@ The following bug fixes are included in this release.
 | Issue number| Issue  | Description|
 | --- | --- | --- |
 | 437922 | Importing FMLA Hours using the DMF entity results in a 'read-only' error |Using the FMLA Hours entity to import hours associated to an FMLA case was failing.  Additional logic was added to ensure that the hours being imported do not exceed the hours remaining for the case.|
-| 512019 | Incorrect last carry-forward amount |---|
+| 512019 | Incorrect last carry-forward amount |On the time off page, When change the As of date as the first day of next fiscal period, the Last carry-forward amount shows incorrect. Annual Leave type. But from it's settings, this amount is incorrect.|
 | 458639 | Worker contacts entity doesn't support change tracking mode |Worker contacts entity has been updated so that it can be used in BYOD.|
 | 505347 | Training manager able to submit a leave request on behalf of an employee when streamlined worker feature enabled |Roles other than HR assistant and HR manager aren't allowed to submit time off requests for employees.|
 | 513490 | Benefits Management logging:  add logging for plans with no coverage options|Logging results for Plan with No Coverage Options have now been enabled for display in the Process results table and are sorted correctly to be displayed at the top.|
