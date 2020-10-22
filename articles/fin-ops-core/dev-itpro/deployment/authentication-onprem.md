@@ -95,7 +95,7 @@ The AOS is using these configuration values to know where to redirect an unathen
 If values in the AOS config file are incorrect, then that typically means the value provided for the AD FS endpoint during environment deployment was wrong. The easiest thing is
 to delete and redeploy the environment from LCS with the right value. It is possible to manually edit the configuration files, but to be safe, do a redeploy. Otherwise you will need to manually change the values after each servicing operation on each AOS node. If you do edit the config files then you need to restart the AOS services for it to take effect. You can do that from the Service Fabric explorer (right click the AOS node under Nodes, choose restart, then wait for a minute or so for it's status to go back to green) or by rebooting the machine.
 
-A symptom of having provided an invalid url for the AD FS would be that when accessing the application URL you receive a 500 error. This is because the AOS on startup will reach to that url to obtain information from the AD FS server. If the URL is wrong or inaccessible the AOS will be unable to startup. 
+Receiving a 500 error when accessing the application URL is a symptom of having specified an invalid URL for ADFS. This is because the AOS on startup will reach to that url to obtain information from the AD FS server. If the URL is wrong or inaccessible the AOS will be unable to startup. 
 
 The second piece to the authentication process is ADFS itself. On the ADFS server if you open "AD FS Management" (from Control Panel\\System and Security\\Administrative Tools), and look under "Application groups", you'll
 find a group called "Microsoft Dynamics 365 for Operations On-premises". Within this group the settings for AD FS for your Dynamics application are kept.
@@ -107,5 +107,3 @@ AD FS uses the Client ID and the URLs to decide whether the request for access s
 ![AD FS event log error](media/ADFSredirectwrong.png)
 
 In the case that any of the AD FS application group setup is wrong, you're likely to see an error in it's event log which explains the value it was looking for, so you can figure out what is set incorrectly.
-
-The contents of this article are based on a blog post written by the Solutions Architect team. The original article can be found [here](https://docs.microsoft.com/en-us/archive/blogs/axsa/how-authentication-works-in-dynamics-365-for-finance-and-operations-on-premises).
