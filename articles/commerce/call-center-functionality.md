@@ -5,7 +5,7 @@ title: Call center sales functionality
 description: This topic provides an overview of the call center sales functionality in Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 10/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
