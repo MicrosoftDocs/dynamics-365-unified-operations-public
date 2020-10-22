@@ -55,8 +55,8 @@ The toolkit currently supports the following scenarios. More will be added over 
 | Feature | Details |
 | :------ | :------ |
 | Schema publish | Fixed the scripts to use current directory reference to Sqlpackage directory.|
-| Schema publish | Fixed the scripts to delete local users from the source database, and tidy up enviornment-specific tables.|
-| Data transfer | Fixed the scripts to install missing Powershell modules.|
+| Schema publish | Fixed the scripts to delete local users from the source database, and tidy up environment-specific tables.|
+| Data transfer | Fixed the scripts to install missing PowerShell modules.|
 
 
 ### Version 1
