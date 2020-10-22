@@ -99,7 +99,7 @@ Those parameters must be setup for the same Authority configured in the Fiscal
 establishment, which must be referred to the state from the fiscal establishment
 address.
 
-![](media/f60c26bbaedec4e49b3ff0c40344dd15.png)
+![](media/bra_tax_benefits_from_NT2019_001_parameters.png)
 
 1.  Go to **Organization administration \> Organizations \> Electronic fiscal
     documents \> NF-e federal parameters.**
@@ -125,7 +125,7 @@ Adjustment codes in Fiscal books module.
 2.  Click **New** to add new Adjustment codes. The adjustment codes must have
     the following attributes:
 
-![](media/09515fef947c661514aed69ea9aa7bfa.png)
+![](media/bra_tax_benefits_from_NT2019_001_adjustment_codes.png)
 
 -   Tax type = ICMS.
 
@@ -143,7 +143,7 @@ Adjustment codes in Fiscal books module.
 
 Special controls for Adjustment codes:
 
-![](media/7d346b087ca35f4e1c7007582be47f1a.png)
+![](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_special_controls.png)
 
 -   Literal adjustment code = Yes
 
@@ -168,7 +168,7 @@ Adjustment codes in Fiscal books module.
 
 2.  Click **Add** for entering CST for the Benefit code.
 
-![](media/3f3e12f09748664e4a6f864fe1ff826d.png)
+![](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_CST.png)
 
 # Benefit code by Item/State setup
 
@@ -183,7 +183,7 @@ described in the cBenef x CST table:
 
 4.  Click **Add** to enter a new relation.
 
-![](media/008afebe2564222806cd4fc2917eebd0.png)
+![](media/bra_tax_benefits_from_NT2019_001_benefit_codes_per_item_state.png)
 
 # Validations during posting of fiscal documents 
 
