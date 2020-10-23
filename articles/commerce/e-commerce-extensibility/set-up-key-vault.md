@@ -236,4 +236,6 @@ If you do not configure this file, during local development you may encounter er
 
 [Interactive components overview](interactive-components.md)
 
+[Mock the signed-in state during local development](mock-sign-in.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
