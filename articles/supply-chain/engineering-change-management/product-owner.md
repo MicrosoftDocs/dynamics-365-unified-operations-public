@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Product owner
-description: The product owner is a group of users who are responsible for certain products. When a product owner group is assigned to a product, the members of the group are the only ones who can release that product. The product owner can also be used in the approval workflow.
+title: Product owners
+description: This topic provides information about product owners. A product owner is a group of users who are responsible for specific products. Only members of the group can release those products. The product owner can also be used in the approval workflow.
 author: t-benebo
 manager: tfehr
 ms.date: 09/28/2020
@@ -27,42 +27,41 @@ ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
 ---
 
-# Product owner
+# Product owners
 
 [!include [banner](../includes/banner.md)]
 
-The product owner is a group of users who are responsible for certain products. When a product owner group is assigned to a product, the members of the group are the only ones who can release that product. The product owner can also be used in the approval workflow in engineering change management.
+The product owner is a group of users who are responsible for specific products. When a product owner group is assigned to a product, only the members of that group can release the product. The product owner can also be used in the approval workflow in engineering change management.
 
-Product owners are global settings and are therefore available to all legal entities.
+Product owners are global settings. Therefore, they are available to all legal entities.
 
 ## Create a product owner group
 
-To create and populate a product owner group:
+To create a product owner group and add members to it, follow these steps.
 
 1. Go to **Engineering change management \> Setup \> Product owners**.
-2. Select **New** on the Action Pane.
+2. On the Action Pane, select **New**.
 3. In the **Product owner** field, enter a name for the group.
 4. In the **Name** field, enter a description of the group.
-5. Use the **Members** FastTab to add each worker that should be a member of this product owner group.
+5. On the **Members** FastTab, add the workers who should be members of the group.
 
 ## Assign a product owner to a product
 
-To assign a product owner group to a product:
+To assign a product owner to a product, follow these steps.
 
 1. Open the **Product details** page for the relevant product or product master.
-1. On the **General** FastTab, set **Product owner** to the name of the relevant product owner group.
+1. On the **General** FastTab, set the **Product owner** field to the name of the relevant product owner group.
 
-While a product had an owner assigned, only the members of that product owner group can edit the **Product owner** setting.
+While a product owner is assigned to a product, only the members of the product owner group can edit the **Product owner** setting.
 
-The product owner is also visible on the released product form.
+The product owner is also visible on the released product page.
 
-## Product owners and releasing products
+## Product owners and product releases
 
-Only users from a product's owner group can release that product. However, there is an exception when the item is a child item and its parent is released by the parent's owner. In other words, if the product is part of the BOM of another product (the product is a child item and the parent is released), then the system will not check the product owner of each of the items in the BOM. Only the product owner of the parent item will be checked.
+Only users from a product's product owner group can release that product. However, there is an exception when the product is a child item, and its parent is released by the parent's owner. In other words, if the product is part of the BOM of another product, the system doesn't check the product owner of each item in the BOM. It checks only the product owner of the parent item.
 
-For example: product X is assigned to the product owner group *Design cabinets*. Product X is also part of the bill of material of product Y, which is assigned to product owner group *Design Speakers*. If a user from the product owner group *Design Speakers* releases product Y and its bill of materials, then product X will be released along with it.
+For example, product X is assigned to the *Design cabinets* product owner group. Product X is also part of the BOM of product Y, which is assigned to the *Design Speakers* product owner group. If a user from the *Design Speakers* product owner group releases product Y and its BOM, product X will be released together with product Y.
 
-## Product owners and approval
+## Product owners and approvals
 
-Because product owners know whether certain engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this by setting them up as participant providers in the workflows used for engineering change management. The system will then assign approval tasks in the workflows based on the products that are in engineering change requests and engineering change orders. For more information, see [Engineering change management](engineering-change-management.md).
-
+Because product owners know whether specific engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this approach by setting up the product owners as participant providers in the workflows that are used for engineering change management. The system will then assign approval tasks in the workflows, based on the products that are in engineering change requests and engineering change orders. For more information, see [Manage changes to engineering products](engineering-change-management.md).
