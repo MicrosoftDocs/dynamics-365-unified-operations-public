@@ -59,7 +59,7 @@ Cross-company data sharing has the following limitations:
 -   Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
 - 	Fields that reference Financial dimensions, for example **Ledger** or **Default** dimension, can't be shared across companies. 
       o	Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
--   It can’t be used with [dual-write](../data-entities/dual-write/dual-write-home-page.md)
+-   It can’t be used with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
 
 
 ### Policies
