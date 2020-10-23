@@ -78,7 +78,7 @@ From within the **Payment account** section, you can add a third-party payment p
 
 ## Additional channel setup
 
-Additional tasks required for online channel setup include setting up payment methods, modes of delivery, and the fulfillment group assignment.
+Additional tasks that are required for online channel setup include setting up payment methods, modes of delivery, and the fulfillment group assignment.
 
 The following image shows **Modes of delivery**, **Payment methods**, and **Fulfillment group assignment** setup options on the **Set up** tab.
 
