@@ -5,7 +5,7 @@ title: Set up bar code masks
 description: This topic describes how to set up bar code mask characters, bar code masks, and how to assign bar code masks to bar codes.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 10/23/2020
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
