@@ -5,7 +5,7 @@ title: Configure the functionality profile for a sales representative
 description: This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. 
 author: jblucher
 manager: AnnBe 
-ms.date: 10/23/2020
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. This procedures uses the USRT demo data company.
+This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives using the USRT demo data company.
 
 1. Go to Retail and Commerce > Channel setup > POS setup > POS profiles > Functionality profiles.
 2. Click Edit.
