@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 # Point of sale (POS) APIs
 [!include [banner](../includes/banner.md)]
 
-Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. you can consume APIs that will do the work for you. To do this, you need to simply call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
+Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. you can consume APIs that will do the work for you. To do this, you need to call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
 
 Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. 
 
@@ -63,7 +63,7 @@ Use the following steps to consume Retail APIs in your extensions.
     import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
     ```
 
-2.  Import the client entities and proxy entities if required.
+2.  Import the client entities and proxy entities if necessary.
 
     ```typescript
     import { ClientEntities } from "PosApi/Entities";
@@ -153,7 +153,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 ### Cart
 
-The following is a list of APIs exposed to perform cart-related functionality.
+The following table lists APIs exposed to perform cart-related functionality.
 
 | POS API                                         |
 |-------------------------------------------------|
@@ -221,7 +221,7 @@ The following is a list of APIs exposed to perform cart-related functionality.
 
 ### Payments
 
-The following is a list of APIs exposed to perform payment-related functionality.
+The following table lists APIs exposed to perform payment-related functionality.
 
 | POS API                                   | Description                            | Release                  |
 |-------------------------------------------|----------------------------------------|--------------------------|
@@ -231,7 +231,7 @@ The following is a list of APIs exposed to perform payment-related functionality
 
 ### Peripherals
 
-The following is a list of APIs exposed to perform peripheral-related functionality.
+The following table lists APIs exposed to perform peripheral-related functionality.
 
 | POS API                                                |
 |--------------------------------------------------------|
@@ -266,7 +266,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 
 ### ScanResults
 
-The following is a list of APIs exposed to perform scan results-related functionality.
+The following table lists APIs exposed to perform scan results-related functionality.
 
 | POS API                    |
 |----------------------------|
@@ -274,7 +274,7 @@ The following is a list of APIs exposed to perform scan results-related function
 
 ### Customer
 
-The following is a list of APIs exposed to perform customer-related functionality.
+The following table lists APIs exposed to perform customer-related functionality.
 
 | POS API                  |
 |--------------------------|
@@ -286,7 +286,7 @@ The following is a list of APIs exposed to perform customer-related functionalit
 
 ### Authentication
 
-The following is a list of APIs exposed to perform authentication-related functionality.
+The following table lists APIs exposed to perform authentication-related functionality.
 
 | POS API                |
 |------------------------|
@@ -295,7 +295,7 @@ The following is a list of APIs exposed to perform authentication-related functi
 
 ### DataService
 
-The following is a list of APIs exposed to perform data service-related functionality.
+The following table lists APIs exposed to perform data service-related functionality.
 
 | POS API            |
 |--------------------|
@@ -303,7 +303,7 @@ The following is a list of APIs exposed to perform data service-related function
 
 ### Device
 
-The following is a list of APIs exposed to perform device-related functionality.
+The following table lists APIs exposed to perform device-related functionality.
 
 | POS API                               |
 |---------------------------------------|
@@ -318,7 +318,7 @@ The following is a list of APIs exposed to perform device-related functionality.
 
 ### Diagnostics 
 
-The following is a list of APIs exposed to perform diagnostics-related functionality.
+The following table lists APIs exposed to perform diagnostics-related functionality.
 
 | POS API                     |
 |-----------------------------|
@@ -326,7 +326,7 @@ The following is a list of APIs exposed to perform diagnostics-related functiona
 
 ### Dialog
 
-The following is a list of APIs exposed to perform dialog-related functionality.
+The following table lists APIs exposed to perform dialog-related functionality.
 
 | POS API                                  |
 |------------------------------------------|
@@ -339,7 +339,7 @@ The following is a list of APIs exposed to perform dialog-related functionality.
 
 ### Employee
 
-The following is a list of APIs exposed to perform employee-related functionality.
+The following table lists APIs exposed to perform employee-related functionality.
 
 | POS API                          |
 |----------------------------------|
@@ -347,7 +347,7 @@ The following is a list of APIs exposed to perform employee-related functionalit
 
 ### Formatters
 
-The following is a list of APIs exposed to perform formatter-related functionality.
+The following table lists APIs exposed to perform formatter-related functionality.
 
 | POS API                             |
 |-------------------------------------|
@@ -359,7 +359,7 @@ The following is a list of APIs exposed to perform formatter-related functionali
 
 ### OrgUnits
 
-The following is a list of APIs exposed to perform org units-related functionality.
+The following table lists APIs exposed to perform org units-related functionality.
 
 | POS API                              |
 |--------------------------------------|
@@ -369,7 +369,7 @@ The following is a list of APIs exposed to perform org units-related functionali
 
 ### Products
 
-The following is a list of APIs exposed to perform products-related functionality.
+The following table lists APIs exposed to perform products-related functionality.
 
 | POS API                                    |
 |--------------------------------------------|
@@ -384,7 +384,7 @@ The following is a list of APIs exposed to perform products-related functionalit
 
 ### Categories
 
-The following is a list of APIs exposed to perform categories-related functionality.
+The following table lists APIs exposed to perform categories-related functionality.
 
 | POS API                                    |
 |--------------------------------------------|
@@ -393,7 +393,7 @@ The following is a list of APIs exposed to perform categories-related functional
 
 ### SalesOrders
 
-The following is a list of APIs exposed to perform sales orders-related functionality.
+The following table lists APIs exposed to perform sales orders-related functionality.
 
 | POS API                                          |
 |--------------------------------------------------|
@@ -409,7 +409,7 @@ The following is a list of APIs exposed to perform sales orders-related function
 
 ### Shifts
 
-The following is a list of APIs exposed to perform shifts-related functionality.
+The following table lists APIs exposed to perform shifts-related functionality.
 
 | POS API                    |
 |----------------------------|
@@ -418,7 +418,7 @@ The following is a list of APIs exposed to perform shifts-related functionality.
 
 ### StockCountJournals
 
-The following is a list of APIs exposed to perform stock count journals-related functionality.
+The following table lists APIs exposed to perform stock count journals-related functionality.
 
 | POS API                                |
 |----------------------------------------|
@@ -426,7 +426,7 @@ The following is a list of APIs exposed to perform stock count journals-related 
 
 ### StoreOperations
 
-The following is a list of APIs exposed to perform store operations-related functionality.
+The following table lists APIs exposed to perform store operations-related functionality.
 
 | POS API                                         |
 |-------------------------------------------------|
