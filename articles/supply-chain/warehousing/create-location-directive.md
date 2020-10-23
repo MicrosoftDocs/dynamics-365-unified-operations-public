@@ -291,4 +291,3 @@ After you create location directives, you can associate each directive code with
 
 - Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Help topic: [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
-- Help topic: [Create location directives](create-location-directive.md)
