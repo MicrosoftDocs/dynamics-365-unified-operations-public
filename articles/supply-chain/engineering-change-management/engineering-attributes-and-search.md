@@ -2,7 +2,7 @@
 # required metadata
 
 title: Engineering attributes and engineering attribute search
-description: To ensure that all product master data can be registered in the system, specify all non-standard characteristics using engineering attributes. With the engineering attribute search, you can easily find products based on these registered characteristics.
+description: This topic explains how you can use engineering attributes to specify all non-standard characteristics, to ensure that all product master data can be registered in the system. It also explains how you can use engineering attribute search to easily find products, based on those registered characteristics.
 author: t-benebo
 manager: tfehr
 ms.date: 09/28/2020
@@ -31,66 +31,72 @@ ms.dyn365.ops.version: Release 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-To ensure that all product master data can be registered in the system, specify all non-standard characteristics using engineering attributes. With the engineering attribute search, you can easily find products based on these registered characteristics.
+To ensure that all product master data can be registered in the system, you should use engineering attributes to specify all non-standard characteristics. You can then use engineering attribute search to easily find products, based on those registered characteristics.
 
 ## Engineering attributes
 
-Engineering products typically have a large number of characteristics and properties that you need to capture. You'll be able to register some of these properties using the standard product fields, but you can also create new engineering properties as needed. With *engineering attributes*, you can define your own engineering attributes and make them part of the product definition.
+Typically, engineering products have many characteristics and properties that you must capture. Although you can register some of the properties by using the standard product fields, you can also create new engineering properties as required. You can define your own *engineering attributes* and make them part of the product definition.
 
-### Creating engineering attributes and attribute types
+### Create engineering attributes and attribute types
 
-Each engineering attribute must belong to an attribute type. This is required because each engineering attribute must have a *data type* that defines which types of values it can hold. Each engineering type might be a standard type (such as free text, integer, or decimal) or a custom type (such as text with a specific set of values to choose from). You can reuse each engineering type with any number of engineering attributes.
+Each engineering attribute must belong to an *attribute type*. This requirement exists because each engineering attribute must have a *data type* that defines the types of values that it can hold. An engineering attribute type can be a standard type (such as free text, integer, or decimal) or a custom type (such as text that has a specific set of values to select from). You can reuse each attribute type with any number of engineering attributes.
 
 #### Set up engineering attribute types
 
-To view, create, or edit an engineering attribute type:
+To view, create, or edit an engineering attribute type, follow these steps.
 
 1. Go to **Engineering change management \> Setup \> Attributes \> Attribute types**.
-1. Select an existing type from the list pane, or select **New** on the Action Pane to create a new one.
-1. Make the following settings:
-    - **Attribute type name** - Enter a name for the attribute type.
-    - **Type** - Choose a standard data type (*Currency*, *DateTime*, *Decimal*, *Integer*, *Text*, *Boolean*, or *Reference*).
-    - **Fixed list** - If you set **Type** to *Text*, then you can set this option. Set this to *Yes* to define specific values for attributes of this type (this will create a drop-down list). Set this to *No* to allow users to enter any value (this will create an input field). If you set this to *Yes*, then use the **Value** FastTab to establish the values available for this attribute type.
-    - **Value range** - If you set **Type** to *Integer*, *Decimal*, or *Currency* then you can set this option. Set this to *Yes* to establish minimum and maximum values that will be accepter for attributes that use this type. Set it to *No* to accept any value. If you set this to *Yes*, then use the **Range** FastTab to establish the minimum and maximum values, and (for currency) the currency that applies for the limits you entered.
-    - **Unit of measure** - If you set **Type** to *Integer* or *Decimal*, then you can set this option. Select the unit of measure that applies for this attribute type. Leave it blank if no unit is needed.
+1. Select an existing attribute type in the list pane, or select **New** on the Action Pane to create a new attribute type.
+1. Set the following fields:
+
+    - **Attribute type name** – Enter a name for the attribute type.
+    - **Type** – Select a standard data type (*Currency*, *DateTime*, *Decimal*, *Integer*, *Text*, *Boolean*, or *Reference*).
+    - **Fixed list** – This option is available only if you set the **Type** field to *Text*. Set it to *Yes* to define specific values for attributes of this type. In this case, a drop-down list will be created. You use the **Value** FastTab to establish the values that are available for this attribute type. Set this option to *No* to allow users to enter any value. In this case, an input field will be created.
+    - **Value range** – This option is available only if you set the **Type** field to *Integer*, *Decimal*, or *Currency*. Set it to *Yes* to establish minimum and maximum values that will be accepted for attributes of this type. You use the **Range** FastTab to establish the minimum and maximum values, and (for currency) the currency that applies for the limits that you entered. Set this option to *No* to accept any value. 
+    - **Unit of measure** – This field is available only if you set the **Type** field to *Integer* or *Decimal*. Select the unit of measure that applies for this attribute type. If no unit is required, leave this field blank.
 
 #### Set up engineering attributes
 
-To view, create, or edit an engineering attribute:
+To view, create, or edit an engineering attribute, follow these steps.
 
 1. Go to **Engineering change management \> Setup \> Attributes \> Engineering attributes**.
-1. Select an existing attribute from the list pane, or select **New** on the Action Pane to create a new one.
-1. Make the following settings:
-    - **Name** - Enter a name for the attribute. This name only appears on the **Engineering attributes** page; elsewhere in the system, the **Friendly name** is usually shown to identify the attribute.
-    - **Attribute type** - Select an attribute type defined on the Attribute types page (see also the previous section).
-    - **Friendly name** - Enter a name to identify this attribute in the user interface elsewhere in the system. 
-    - **Description** - Enter a description of the attribute.
-    - **Help text** - Enter help text to tell other users what this attribute is for.
-    - **Default value** - Enter or select a default value for the attribute. The options presented here will depend on the **Attribute type** you selected.
-    - **Currency** - If the **Attribute type** you selected is a currency, then select the currency in which this attribute will accept and display values.
-1. If the **Attribute type** you selected is an integer or decimal, then the **Range** FastTab is shown. Make the following settings here as needed:
-    - **Tolerance action** - Choose how the system should respond when a user enters a value outside of the range specified here. Choose *Warning* to display a warning but allow the user to save the value. Choose *Not allowed* to show a warning and also disallow saving until the user corrects the value.
-    - **Minimum** - Enter the minimum recommended or accepted value.
-    - **Maximum** -  Enter the maximum recommended or accepted value.
+1. Select an existing attribute in the list pane, or select **New** on the Action Pane to create a new attribute.
+1. Set the following fields:
+
+    - **Name** – Enter a name for the attribute. This name appears only on the **Engineering attributes** page. Everywhere else in the system, the value of the **Friendly name** field is usually shown to identify the attribute.
+    - **Attribute type** – Select an attribute type that you defined in the previous section.
+    - **Friendly name** – Enter a name that will identify the attribute in the system (except on the **Engineering attributes** page). 
+    - **Description** – Enter a description of the attribute.
+    - **Help text** – Enter Help text that tells other users what the attribute is for.
+    - **Default value** – Enter a default value for the attribute. The options that are presented depend on the attribute type that you selected.
+    - **Currency** – If the attribute type that you selected is a currency, select the currency that the attribute will accept and show values in.
+
+1. If the attribute type that you selected is an integer or a decimal, the **Range** FastTab is shown. On this FastTab, set the following fields as required:
+
+    - **Tolerance action** – Select how the system should respond if a user enters a value outside the specified range. If you select *Warning*, a warning is shown, but the user can save the value. If you select *Not allowed*, a warning is shown, and the value can't be saved until the user corrects it.
+    - **Minimum** – Enter the minimum recommended or accepted value.
+    - **Maximum** – Enter the maximum recommended or accepted value.
 
 ### Connect engineering attributes to an engineering product category
 
-Some engineering attributes apply to all products, while others will be specific to individual products or product categories. For example, you won't need electrical attributes on mechanical products. Therefore, you can set up *engineering product categories*, which establish the collection of engineering attributes that must be part of the definition for products belonging to that category. You can also choose which engineering attributes are **mandatory** and if there is a **default value**.
+Some engineering attributes apply to all products, whereas others are specific to individual products or product categories. For example, electrical attributes aren't required for mechanical products. Therefore, you can set up *engineering product categories*. An engineering product category establishes the collection of engineering attributes that must be part of the definition for products that belong to that category. You can also specify which engineering attributes are mandatory and whether there is a default value.
 
-For more information about how work with engineering product categories, including how to connect attributes to categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
+For more information about how to work with engineering product categories, including information about how to connect attributes to categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
-### Populate engineering attributes with values
+### Set values for engineering attributes
 
-The engineering attributes connected to an engineering product category are presented when you create a new engineering product based on that category. At that time, you can populate them with values. Afterwards, the values can be changed in the engineering version form or as part of engineering change management in an engineering change order. For more information, see [Engineering change management](engineering-change-management.md).
+The engineering attributes that are connected to an engineering product category are presented when you create a new engineering product that is based on that category. At that time, you can set values for the attributes. Later, those values can be changed on the engineering version page or as part of engineering change management in an engineering change order. For more information, see [Manage changes to engineering products](engineering-change-management.md).
 
 <!-- KFM: Add a link to the HOL procedure for creating an engineering product and/or category. -->
 
 ### Create an engineering product
 
-To create an engineering product, go to the **Released products** page. On the Action Pane, open **Product** tab and, from the **New** group, select **Engineering product**.
+To create an engineering product, open the **Released products** page. Then, on the Action Pane, on **Product** tab, in the **New** group, select **Engineering product**.
 
-You must specify the engineering category where this product belongs to. The category will set all the default values and characteristics for the product and set the attributes applicable to the product. Once the category is selected, the attributes will be populated, and then you are able to modify its value.
+You must specify the engineering category that the product belongs to. The category will set all the default values and characteristics for the product. It will also set the attributes that are applicable to the product. After the category is selected, values will be set for the attributes. You can then modify those values.
 
-## Search for products using engineering attribute values
+## Search for products by using engineering attribute values
 
-With the engineering attribute search, you can find products by searching for their engineering attributes values. This makes it easy to find engineering products based on their characteristics. You can search within products of an engineering product category, or across all engineering products. The search is available on product master data pages, and from transactional places in the system such as sales orders. On a transactional item, such as a sales order, you can even use the engineering attribute form to search and add the product to the sales order lines with the **Add as new line** button. The product result of the search can be directly added to the order.
+You can use engineering attribute search to find products by searching for their engineering attributes values. Therefore, you can easily find engineering products, based on their characteristics. You can search in the products that belong to an engineering product category, or you can search across all engineering products.
+
+The search is available on product master data pages and from transactional items in the system, such as sales orders. For a transactional item, you can use the engineering attribute page to search for the product. You can then use the **Add as new line button** to add the product to the sales order lines. Products in the search results can also be added directly to the order.
