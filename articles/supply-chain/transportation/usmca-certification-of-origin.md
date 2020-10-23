@@ -2,7 +2,7 @@
 # required metadata
 
 title: USMCA certification of origin
-description: This feature lets you print a USMCA certification of origin document.
+description: This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
 author: Henrikan
 manager: tfehr
 ms.date: 10/23/2020
@@ -31,122 +31,118 @@ ms.dyn365.ops.version: Release 10.0.xx
 
 [!include [banner](../includes/banner.md)]
 
-This feature lets you print a USMCA certification of origin document. Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
+
+The *USMCA certification of origin document* contains the minimum data elements required for declaration. Some data elements can be pre-filled before printing while others must be filled in manually after printing. To obtain preferential tariff treatment, document must be completed and in the possession of the importer at the time the declaration is made. The document may be completed by the importer, exporter, or producer.
+
+You can print the document for a single shipment from the **All shipments** list page or from the **Shipment details** page.
+
+The document is only accessible when the country on the primary address for the legal entity is the United States.
+
+Depending on the document print selection, the document can be pre-filled with data from your system. It is possible to change or add data to the printed document by exporting the printed document to an editable format, such as Microsoft Word. Once exported, you can apply any required changes before a declaration is made.
+
+## Turn on the USMCA feature
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Transportation management*
-
 - **Feature name:** *USMCA certification of origin document*
 
-The *USMCA certification of origin document* contains the minimum data elements required for declaration. Some data elements can be pre-filled before printing while others must be filled in manually after printing. To obtain preferential tariff treatment, the *USMCA certification of origin document* must be completed and in the possession of the importer at the time the declaration is made. The*USMCA certification of origin document* may be completed by the importer, exporter, or producer.
-
-The document is printed for a single shipment from the Warehouse management&gt; Shipments &gt; All shipments list page or from the Shipment details page.
-
-The document is only accessible when the country on the primary address for the legal entity is USA.
-
-Depending on the document print selection, the document is prefilled with data from your system**.** It is possible to change or add data to the printed document by exporting the printed document to an editable format, such as Word. This supports any required changes after the document has been printed and before a declaration is made.
-
 ## Print selection
+<!-- KFM: I'm not sure what this section is telling me. Needs more intro I think -->
+The USMCA certification of origin document contains the following data elements:
 
-The report contains a number of data elements: Address elements, role of the certifying party, single shipment, invoices, blanket period, item details, certifier signature, and number of pages. SysLastValue is applied to the selection.
+- Address elements
+- Role of the certifying party
+- Single shipment
+- Invoices
+- Banket period
+- Item details
+- Certifier signature
+- Number of pages
+
+SysLastValue is applied to the selection. <!-- KFM: What is this? I think we need few more details. -->
+
+## Print a USMCA certification of origin document
+
+To print a USMCA certification of origin document for a shipment, do the following:
+
+1. Do one of the following:
+    - Go to **Transportation management> Shipments > All shipments** and select the shipment you want to print the document for.
+    - Open the **Shipment details** page for the shipment you want to print the document for (there are several ways to get here, including from the **All shipments** pages).
+1. On the Action Pane, open the **Shipments** tab and, from the **Print** group, select **USMCA certificate of origin**.
+1. The **Certificate or origin** dialog box opens. Make the settings described in the following subsections and then select **OK** to generate the document.
+1. A preview of the document opens. Use the commands provided on the Action Pane to print or export the document as needed.
 
 ### Certifying party
 
-The **Certifying party** is the party printing the document. Specify whether the certifying party is the *Exporter*, *Exporter and Producer*, *Producer*, *Importer*, or neither exporter, producer, nor importer, by selecting the *\[blank\]* option. Which option you select determines what is printed in the address sections of the document. See details below.
+In the **Certificate or origin** dialog box, use the **Certifying party** drop-down list to identify the type  of party that is printing the document. Specify whether the certifying party is the *Exporter*, *Exporter and Producer*, *Producer*, or *Importer*; or leave it blank if the certifying party is none of these. The option you select determines what is printed in the address sections of the document.
 
-The document can be printed for both inbound and outbound shipments. You should select *Importer* as**Certifying party** for inbound shipments only.
+The **Certifying party** that you choose will be included in the printed document.
 
-**Certifying party** dialogue selection:
+The document can be printed for both inbound and outbound shipments. Select *Importer* as **Certifying party** for inbound shipments only.
 
-*\[Blank\]* Prints certifier details (Address details from warehouse for shipment. If not exist, then from site for shipment. If not exist, then from company info).
+The following table describes which types of information are included in the document based on which **Certifying party** you choose.
 
-Exporter details blank
-
-Producer details blank
-
-Importer details blank
-
-*Exporter* Prints certifier details (Address details from warehouse for shipment. If not exist, then from site for shipment. If not exist, then from company info)
-
-Prints exporter details (Company Info)
-
-Producer details blank
-
-Prints importer details (From Invoice account for related sales order)
-
-*Exporter and Producer* Prints certifier details (Address details from warehouse for shipment. If not exist, then from site for shipment. If not exist, then from company info)
-
-Prints exporter details (Company Info)
-
-Prints producer details (Company Info)
-
-Prints importer details (From Invoice account for related sales order)
-
-*Importer* Prints certifier details (Address details from warehouse for shipment. If not exist, then from site for shipment. If not exist, then from company info)
-
-Prints importer details (Company Info)
-
-Exporter details blank
-
-Producer details blank
-
-*Producer* Prints certifier details (Address details from warehouse for shipment. If not exist, then from site for shipment. If not exist, then from company info)
-
-Prints producer details (Company Info)
-
-Exporter details blank
-
-Importer details blank
-
-The certifying party role selected is included in the printed document.
+| Certifying&nbsp;party | Description |
+|---|---|
+| *\[Blank\]* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**: Blank</li><li>**Importer details**: Blank</li><ul>|
+| *Exporter* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Uses the address details for the legal entity.</li><li>**Producer details**: Blank</li><li>**Importer details**: Uses the invoice account for the related sales order.</li><ul>|
+| *Exporter and Producer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Uses the address details for the legal entity.</li><li>**Producer details**: Uses the address details for the legal entity.</li><li>**Importer details**: Uses the invoice account for the related sales order.</li><ul>|
+| *Importer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity (company) selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**: Blank</li><li>**Importer details**:  Uses the address details for the legal entity.</li><ul>|
+| *Producer* | Adds the following details to the document:<ul><li>**Certifier details**: Uses the address details for shipping warehouse, if available; otherwise it uses the shipping site address, if available; otherwise it uses the address of the legal entity selected in Supply Chain Management.</li><li>**Exporter details**: Blank</li><li>**Producer details**:  Uses the address details for the legal entity.</li><li>**Importer details**: Blank</li><ul>|
 
 ### Has various producers
 
-This setting controls the text to be used for the producer details in the document. Set to *Various producers* to print the text "Various" in the producer details. Set to *Available upon request* to print the text "Available upon request by the importing authorities" in the producer details. When the certifying party is *Exporter and Producer* or*Producer*, then the**Has various producers** setting is overruled, and the producer address details will be the same as certifier.
+In the **Certificate or origin** dialog box, the **Certifying party** drop-down list controls the text to be used for the producer details in the document. Choose one of the following:
+
+- *Various producers* - Prints print the text "Various" in the producer details.
+- *Available upon request* - Prints the text "Available upon request by the importing authorities" in the producer details.
+
+When the **Certifying party** is set to *Exporter and Producer* or *Producer*, then the **Has various producers** setting is overruled, and the producer address details will be the same as the certifier.
 
 ### Blanket period
 
-Select the From/To date for the blanket period when the document is intended to cover multiple shipments of identical goods for a specified period up to 12 months even though the document is printed for only one shipment. The blanket period dates can be set by the user without any constraints and will be added to the document. The blanket period can be left blank and can be in the past.
+In the **Certificate or origin** dialog box, use the **Blanket period from** and **Blanket period to** settings to establish a blanket period of up to 12 months, during which the document will cover multiple shipments of identical goods, even though the document is printed for only one shipment. You can set the blanket period dates without any constraints, and it will be added to the document. You can also leave these settings blank or even set them in the past.
+<!-- KFM: Is the blanket period "max 12 months" or "without constraints"? I think we should add a bit more detail about the practical considerations, like how this will work (doc kept on file, or doc automatically printed for each shipment, or what?). -->
 
-## Single shipment: Yes/No. 
+### Is single shipment
 
-When *Yes*, prints "Single Shipment: Yes" left to the invoice number. When *No*, prints nothing.
+In the **Certificate or origin** dialog box, set **Single shipment** to one of the following:
 
-## 
+- *Yes* - Prints "Single Shipment: Yes" next to the invoice number.
+- *No* - Prints nothing.
 
-## Invoice number
+## Other information included in the document
+
+In addition to the optional elements that you select using the **Certificate or origin** dialog box, the USMCA certification of origin document will include the information and custom fields summarized in the following subsections. Some of this information must be entered manually after you generate the document (as described).
+
+### Invoice number
 
 IDs of sales invoice(s) related to shipments are printed on the document irrespective of the blanket period. Invoice numbers are printed irrespective of the Single Shipment selection. Only IDs of sales invoices are printed.
 
-## Item details
+### Item details
 
 Sections 6.1 to 9 in the printed document include specific item details. These are SKU Number, Description, Harmonized System (HS) Tariff Classification, Origin Criterion, Country of Origin.
 
-**SKU Number**: Prints the item number of the released product.
+- **SKU Number**: Prints the item number of the released product.
 
-**Description**: Prints either the description or name for the released product. If a description in the user's language exists, then this is printed. If no such exists, then the name in the user's language is printed. If no such exists, then the item name is printed.
+- **Description**: Prints either the description or name for the released product. If a description in the user's language exists, then this is printed. If no such exists, then the name in the user's language is printed. If no such exists, then the item name is printed.
 
-**Harmonized System (HS) Tariff Classification**: Prints the Harmonized Tariff Schedule associated to the
+- **Harmonized System (HS) Tariff Classification**: Prints the Harmonized Tariff Schedule associated to the product. The schedules are setup under Transportation Management&gt;Setup&gt;Transportation standard&gt;Harmonized Tariff Schedules.
 
-product. The schedules are setup under Transportation Management&gt;Setup&gt;Transportation
+- **Origin Criterion:** Data in this section must be filled in manually in the first release of the report.
 
-standard&gt;Harmonized Tariff Schedules.
+- **Country of origin:** Prints the country of origin is applied using the Product Information Management &gt; Setup&gt;Product Compliance&gt;Country of Origin. The ISO code for the country of origin is printed based on the country of destination in the shipment delivery address and the item. If no country of origin data has been setup here, then fall back to released product&gt;foreign trade&gt;origin. If no country of origin data has been setup here, then the country of origin will have to be filled in manually.
 
-**Origin Criterion:** Data in this section must be filled in manually in the first release of the report.
-
-**Country of origin:** Prints the country of origin is applied using the Product Information Management &gt;
-
-Setup&gt;Product Compliance&gt;Country of Origin. The ISO code for the country of origin is printed based on
-
-the country of destination in the shipment delivery address and the item. If no country of origin data has been setup here, then fall back to released product&gt;foreign trade&gt;origin. If no country of origin data has been setup here, then the country of origin will have to be filled in manually.
-
-## Certifier signature and date
+### Certifier signature and date
 
 Data in this section must be filled in manually.
 
-## Consists of number of pages
+### Consists of number of pages
 
 Number of pages must be filled in manually by the user signing the certification.
 
-## Number of pages
+### Number of pages
 
 Current page and number of pages printed in the bottom of the document.

@@ -2567,6 +2567,8 @@
         href: transportation/create-new-transportation-management-engine.md
       - name: Associate a fuel index with a carrier as an accessorial charge
         href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+      - name: USMCA certification of origin
+        href: transportation/usmca-certification-of-origin.md
       - name: Create a bill of lading
         href: transportation/create-bill-of-lading.md
       - name: Plan freight transportation routes
