@@ -5,7 +5,7 @@ title: Fiscal printer integration sample for Italy
 description: This topic provides an overview of the fiscal integration sample for Italy.
 author: josaw
 manager: annbe
-ms.date: 10/08/2019
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
