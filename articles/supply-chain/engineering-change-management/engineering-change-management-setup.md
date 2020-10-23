@@ -2,7 +2,7 @@
 # required metadata
 
 title: Establish common values for engineering change management
-description: This topic describes how to establish common values used for parameters in various parts of engineering change management.
+description: This topic describes how to establish common values that are used for parameters in various parts of engineering change management.
 author: t-benebo
 manager: tfehr
 ms.date: 09/28/2020
@@ -31,80 +31,67 @@ ms.dyn365.ops.version: Release 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-When you set up engineering change management, you must establish several collections of values that will be used to populate drop-down lists in other parts of the interface. You should specify these values according to the types of products you produce and your specific business needs.
+When you set up engineering change management, you must establish several collections of values that will be used to fill in drop-down lists in other parts of the user interface (UI). You should specify these values according to the types of products that you produce and your specific business needs.
 
 ## Engineering change categories
 
-Use engineering change categories to organize your various engineering change orders and make them easier to mange and review.  For example, it could be useful to set up a workflow where, depending on the category, a specific department needs to review the proposed changes. You will find the **Category** field on the engineering change order.
+You use engineering change categories to organize your engineering change orders, so that they are easier to manage and review. For example, you might find it useful to set up a workflow where, depending on the category, a specific department must review the proposed changes. Therefore, the engineering change order includes a **Category** field.
 
-To establish the collection of engineering change categories in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change categories**.
-
-Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
+To establish the collection of engineering change categories that is used in your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change categories**. You can then use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where they are shown.
 
 ## Engineering change priorities
 
-Use engineering change priorities to indicate the importance or urgency of an engineering change order. These are helpful to keep track of the importance of an engineering change order so you can easily identify which orders to process first, and how quickly.
+You use engineering change priorities to indicate the importance or urgency of an engineering change order. They can help you keep track of the importance of an engineering change order, so that you can easily identify which orders should be processed first, and how quickly.
 
-To establish the collection of engineering change priorities in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change priorities**.
-
-Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
+To establish the collection of engineering change priorities that is used in your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change priorities**. You can then use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where they are shown.
 
 ## Engineering change reasons
 
 Engineering change reasons indicate the cause or nature of the change in the change order.
 
-To establish the collection of engineering change reasons in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change reasons**.
-
-Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
+To establish the collection of engineering change reasons that is used in your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change reasons**. You can then use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where they are shown.
 
 ## Material disposal codes
 
-Use material disposal codes to categorize materials used in your finished goods or components that need to be disposed of in a particular way, or that require some treatment before they can be added to your regular trash. When you add a relevant product to an engineering change order, you can assign a disposal code as part of the change details.
+You use material disposal codes to categorize materials that are used in your finished goods, or components that must be disposed of in a specific way or require some treatment before they can be added to your regular trash. When you add a relevant product to an engineering change order, you can assign a disposal code as part of the change details.
 
-To establish the collection of material disposal codes in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Material disposal codes**.
-
-Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
+To establish the collection of material disposal codes that is used in your company, go to **Engineering change management \> Setup \> Engineering change management \> Material disposal codes**. You can then use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where they are shown.
 
 ## Received customer approval
 
-When you design products for a specific customer, the design and specifications often need to be validated before the product can be set as ready. With the **Received customer approval** field, you can indicate how far in the customer approval process the product is and/or whether the approval has been received.
+When you design products for a specific customer, the design and specifications often must be validated before the product can be set as ready. The **Received customer approval** field lets you indicate how far in the customer approval process the product is and/or whether the approval has been received.
 
-To establish the collection of received customer approval values in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Received customer approval**.
+To establish the collection of received customer approval values that is used in your company, go to **Engineering change management \> Setup \> Engineering change management \> Received customer approval**. You can then use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where they are shown.
 
-Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
+## Engineering change – Environmental health and safety codes
 
-## Engineering change - Environmental health and safety codes
+If any standard environmental health and safety regulations, or company-specific regulations or procedures, must be considered in the manufacture of a product, you can use the environmental health and safety codes to define them. In the engineering change order, you can indicate which codes apply to the manufacture of a product while you edit the details of the affected product.
 
-If the manufacturing of a product must take into account any standard environmental health and safety regulations, or any company-specific regulation or procedure, you can use the environmental health and safety codes to define them. You can indicate which codes apply to the manufacturing of the product in the engineering change order while editing the details of the impacted product.
-
-To establish the collection of health and safety values in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change - Environmental health and safety codes**.
-
-Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
+To establish the collection of health and safety values that is used in your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change - Environmental health and safety codes**. You can then use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where they are shown.
 
 ## Engineering change severities
 
-Use engineering change severities to indicate the level of impact that will apply to the products in an engineering change order.
+You use engineering change severities to indicate the level of impact that applies to the products in an engineering change order.
 
-To establish the collection of engineering change severities in use at your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change severities**.
+To establish the collection of engineering change severities that is used in your company, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change severities**. You can then use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where they are shown.
 
-Use the buttons on the Action Pane to add, remove, and edit values, and to arrange them into the order in which they should appear in the drop-down lists where these values are shown.
-
-You can establish rules that apply to each severity level you create here. See the next section for more information about how to assign these rules.
+You can establish rules that apply to each severity level that you create. For more information about how to assign these rules, see the next section.
 
 ## Engineering change severity rule sets
 
-Use engineering change severity rule sets to establish a group of rules that you can use to automatically calculate the severity of the change order based on the type of changes in the impacted products. To make use of the severity rules, open the **Engineering change management parameters** page and set **Severity rule** to *Calculate* or *Calculate automatically*.
+You use engineering change severity rule sets to establish a group of rules that you can use to automatically calculate the severity of the change order, based on the type of changes in the affected products. To use the severity rules, open the **Engineering change management parameters** page, and set the **Severity rule** field to *Calculate* or *Calculate automatically*.
 
-When evaluating the severity, the system will process the rules from top to bottom in the order shown in the form. All the rules in a rule set must be met for that rule to be selected and its priority to be established.
+When the system evaluates severity, it processes the rules in the order in which they appear on the page, from top to bottom. For a rule to be selected and have its priority established, all the rules in a rule set must be met.
 
-To set up the rules that apply to each change severity level that you have defined, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change severity rule sets**. Then do one of the following:
+To set up the rules that apply to each change severity level that you've defined, go to **Engineering change management \> Setup \> Engineering change management \> Engineering change severity rule sets**. Then follow one of these steps.
 
-- To create a new rule set, select **New** from the Action Pane and then make settings as described in the following subsections.
-- To edit a rule set, select it from the list pane, select **Edit** on the Action Pane, and then make settings as described in the following subsections.
-- To delete an existing rule set, select it from the list pane and then select **Delete** on the Action Pane.
-- To rearrange the list, select a rule set from the list pane and use **Up** and **Down** buttons on the Action Pane to reposition it.
+- To create a new rule set, select **New** on the Action Pane, and then set the fields as described later in this section.
+- To edit an existing rule set, select it in the list pane, select **Edit** on the Action Pane, and then set the fields as described later in this section.
+- To delete an existing rule set, select it in the list pane, and then select **Delete** on the Action Pane.
+- To rearrange the list of rule sets, select a rule set in the list pane, and then use the **Up** and **Down** buttons on the Action Pane to reposition it.
 
-For each rule set, make the following settings:
+For each rule set, set the following field:
 
-- **Severity** - Select the severity level you want to establish rules for. Use the **Engineering change severities** page to create and name the levels (see the previous section).
-- **Rules** - Use the buttons on toolbar on this fast tab to add or remove a rule for the current severity setting. Each rule has a **Rule** and a **Name**. The rules are established by the system and indicate the types of changes that a product can have. The name will indicate you the type of change.
+- **Severity** – Select the severity level to establish rules for. You use the **Engineering change severities** page to create and name the levels. (For more information, see the previous section.)
+
+Use the buttons on the **Rules** FastTab to add or remove a rule for the current severity setting. Each rule has a **Rule** field and a **Name** field. The rules are established by the system and indicate the types of changes that a product can have. The name indicates the type of change.
