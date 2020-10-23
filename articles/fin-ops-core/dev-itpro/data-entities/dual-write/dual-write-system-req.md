@@ -48,8 +48,8 @@ Dual-write has these limitations:
 + Dual-write must be used to integrate a single Finance and Operations apps instance and a single Dynamics 365 apps instance.
 + Dual-write currently has a limit of 40 legal entities.
 + Dual-write does not support [cross-company data sharing](../../sysadmin/cross-company-data-sharing.md).
-+ Finance and Operations apps and Dynamics 365 apps must be in the same Microsoft Azure Active Directory (Azure AD) tenant.
-+ Finance and Operations apps and Dynamics 365 apps must be deployed in the same Microsoft Azure datacenter.
++ Dual-write requires that Finance and Operations apps and Dynamics 365 apps must be in the same Microsoft Azure Active Directory (Azure AD) tenant.
++ Dual-write requires that Finance and Operations apps and Dynamics 365 apps must be deployed in the same Microsoft Azure datacenter.
 
 ## One Version
 
