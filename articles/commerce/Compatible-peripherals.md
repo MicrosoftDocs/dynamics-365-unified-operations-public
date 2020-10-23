@@ -20,10 +20,10 @@ ms.search.scope:
 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [author's Microsoft alias]
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
+ms.author: rubendel
+ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: 
 
 ---

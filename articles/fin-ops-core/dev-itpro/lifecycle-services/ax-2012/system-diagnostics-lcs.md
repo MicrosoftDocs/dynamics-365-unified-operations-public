@@ -24,7 +24,7 @@ ms.custom: 19061
 ms.assetid: 9a217373-f72b-4a28-adef-79900e40c872
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: murtazac
+ms.author: perahlff
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 

@@ -5,7 +5,7 @@ title: Configure and enable connectors
 description: This topic describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -247,14 +247,14 @@ export interface IExperimentationListener {
      * @param userId The user ID of the current user being served the experiment
      */
     initializeClientSide(config: any, userId: string): boolean;
-
     /**
      * Tracks a successful user conversion event.
      *
      * @param eventType The name of the event that occurred
      * @param payload Any additional tags or data related to the conversion event
+     * @param attributes Optional parameter containing user attributes pertaining to the user that triggered the event
      */
-    trackEvent(eventType: string, payload: any): void;
+    trackEvent(eventType: string, payload: any, attributes?: any): void;
 }
 ```
 

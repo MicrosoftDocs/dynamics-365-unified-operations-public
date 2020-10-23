@@ -149,4 +149,6 @@ Here is an example of a resource file.
 
 [Interactive components overview](interactive-components.md)
 
+[Mock the signed-in state during local development](mock-sign-in.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)

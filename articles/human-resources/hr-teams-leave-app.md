@@ -5,7 +5,7 @@ title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -176,6 +176,22 @@ If you're a manager with direct reports, you can view your team's approved and p
 The calendar displays your direct reports' approved and pending time off.
 
 ![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
+
+## Troubleshooting
+
+If you're having trouble signing into or using the Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](hr-admin-troubleshooting-support.md).
+
+### Can't sign into the Human Resources app in Teams
+
+If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
+
+### Error when approving leave requests in the Human Resources app in Teams
+
+If you receive an error when you're trying to approve leave requests in the Teams app, perform the following troubleshooting steps:
+
+1. Verify that the account you're using to sign into Microsoft Teams is the same one you use for accessing Dynamics 365 Human Resources.
+
+2. Verify that you're a valid approver for the request by checking the workflow settings for leave approval. For more information about leave request workflows, see [Create a leave request workflow](hr-leave-and-absence-workflow.md).
 
 ## Privacy notice
 

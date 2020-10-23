@@ -341,3 +341,5 @@ export interface INumberFormatOptions {
 [Cookie API overview](cookie-api-overview.md)
 
 [Interactive components overview](interactive-components.md)
+
+[Mock the signed-in state during local development](mock-sign-in.md)

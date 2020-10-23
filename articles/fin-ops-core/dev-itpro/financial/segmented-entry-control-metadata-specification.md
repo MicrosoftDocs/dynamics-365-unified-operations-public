@@ -44,9 +44,8 @@ Certain properties may be non-editable based on the Controller class that is sel
 
 ##### Property details
 
-|                                   |                                                                                   |                                                                                                                                                                                                              |
-|-----------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Property**                      | **Valid values**                                                                  | **Usage**                                                                                                                                                                                                    |
+| Property | Valid values   | Usage            |
+|----------------|--------------------------|------------------------------------|
 | Account Type Field                | A field from the datasource.                                                      | Determines the type of account used. Typically use for journal entry from a multi-segment ledger account to single segment values from other backing tables, such as Cust, Vend, Bank, Project, and similar. |
 | Controller Class                  | One of 7 Controller classes. For example LedgerDimensionDefaultAccountController. | Determines the pattern and behavior of the Segmented Entry control.                                                                                                                                          |
 | Include Financial Accounts        | NoYes                                                                             | Determines if Main accounts that are Financial accounts are valid for use.                                                                                                                                   |

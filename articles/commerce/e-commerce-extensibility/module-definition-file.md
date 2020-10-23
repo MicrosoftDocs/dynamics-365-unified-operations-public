@@ -169,6 +169,8 @@ To get more details on the config section, see [Add module configuration fields]
 
 ## Additional resources
 
+[Modules overview](modules-overview.md)
+
 [Module React component file](module-react-file.md)
 
 [Module view file](module-view-file.md)

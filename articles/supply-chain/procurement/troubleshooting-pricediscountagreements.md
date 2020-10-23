@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTable, PurchRFQTable
+ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -3,7 +3,7 @@
 
 title: Finland overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Finland. 
-author: 
+author: kfend
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 ms.custom: 
 ms.search.region: Finland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
 
