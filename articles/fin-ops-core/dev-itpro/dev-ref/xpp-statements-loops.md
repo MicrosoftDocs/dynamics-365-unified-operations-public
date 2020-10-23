@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
-# ms.devlang: 
+ms.devlang: xpp
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 150213
