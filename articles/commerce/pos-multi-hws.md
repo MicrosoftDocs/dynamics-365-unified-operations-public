@@ -5,7 +5,7 @@ title: Dedicated payment terminals and prompts for a printer and cash drawer
 description: This topic provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer.
 author: rubendel
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
