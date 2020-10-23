@@ -32,9 +32,26 @@ ms.dyn365.ops.version: Release 10.0.15
 
 Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines. Location directives are created for specific *Work order types*.
 
-## Open the Location directives page
+> [!NOTE]
+> This topic applies to features in the **Warehouse management** module. It doesn't apply to features in the [Inventory management](../inventory/inventory-home-page.md) module.
 
-To open the page, go to **Warehouse management \> Setup \> Location directives**.
+You can use location directives to perform the following tasks:
+
+- Put away incoming items.
+- Pick and stage items for outbound transactions.
+- Pick and put raw materials for production.
+- Replenish locations.
+
+## Prerequisites
+
+Before you can create a location directive, you must follow these steps to make sure that the prerequisites are in place:
+
+1. Make sure the required license key is enabled (admin access required). To enable the license key, go to **System administration \> Setup \> License configuration**, expand the **Trade** license key, and then select the **Warehouse and Transportation management** configuration key.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
+1. Create a warehouse.
+1. On the **Warehouse** FastTab, set the **Use warehouse management processes** option to *Yes*.
+1. Create locations, location types, location profiles, and location formats. For more information, see [Configure locations in a WMS-enabled warehouse](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Create sites, zones, and zone groups. For more information, see [Warehouse set up](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) and [Configure locations in a WMS-enabled warehouse](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 
 ## Location Directive Work Order Types
 
@@ -43,7 +60,7 @@ Location directives have many common fields that are available for setup in each
 ![Location directives work order types](media/Location_Directives_Work_Order_Types.png "Location directives work order types")
 
 >[!NOTE]
->Two work order types, **Canceled work** and **Cycle counting**, are used only by the system and location directives cannot be created for these work order types.
+>Two work order types, *Canceled work* and *Cycle counting*, are used only by the system and location directives cannot be created for these work order types.
 
 The following subsections provide tables that list the common and specific fields available when setting up a location directive.
 
@@ -93,6 +110,12 @@ The following table lists fields specific to the listed work order types.
 | Lines | Immediate replenishment template | Raw material picking |
 | Lines | Immediate replenishment template | Transfer issue |
 | Lines | Immediate replenishment template | Kanban picking |
+
+## Open the Location directives page
+
+To open the page, go to **Warehouse management \> Setup \> Location directives**.
+
+From here you can view, create, and edit your location directives using the commands on the Action Pane. See the remaining sections of this topic for details about how to use all of the available settings.
 
 ## The Location directives Action Pane
 
@@ -259,6 +282,10 @@ You can define multiple location directive actions for each line. Once again, a 
 For this example, consider a purchase order process where the location directive must find free capacity within a warehouse for inventory items that have just been registered at the receiving dock. First, you need to find free capacity within the warehouse by consolidating with existing on-hand inventory. If consolidation isn't possible, then you need to find an empty location.
 
 For this scenario, you must define two location directive actions. The first action in the sequence must use the *Consolidate* strategy, and the second should use the *Empty location with no incoming work* strategy. Unless you define a third action to handle an overflow scenario, two outcomes are possible when there is no more capacity in the warehouse: work can be created even though no locations are defined, or the work creation process can fail. The outcome is determined by the setup on the **Location directive failures** page, where you can decide whether to select the **Stop work on location directive failure** option for each work order type.
+
+## Next step
+
+After you create location directives, you can associate each directive code with a work template code for work creation. For more information, see [Control warehouse work by using work templates and location directives](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
 
 ### Additional resources
 
