@@ -5,7 +5,7 @@ title: Delivery options module
 description: This topic covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
