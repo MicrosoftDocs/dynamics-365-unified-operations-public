@@ -36,9 +36,9 @@ ms.dyn365.ops.version: 10.0
 
 This topic provides information on configuration and deployment of the advanced auto charges features that are available in Dynamics 365 for Retail version 10.0.
 
-When the advanced auto charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto-charges](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
+When the advanced auto charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto charges](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
 
-In releases prior to Retail version 10.0, [auto-charge](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can leverage the auto charges configurations. That way, additional miscellaneous charges can systematically be added to sales transactions.
+In releases prior to Retail version 10.0, [auto charge](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can leverage the auto charges configurations. That way, additional miscellaneous charges can systematically be added to sales transactions.
 
 When using releases prior to version 10.0, a POS user is prompted to manually enter a shipping fee during the creation of a "ship all" or "ship selected" POS transaction. While the miscellaneous charges capabilities of the application are utilized in respect to how the charges are written to the order, no systematic calculation is provided – the calculation relies on the user's input to determine the value of the charges. The charges can only be added as a single "shipping" related charges code and cannot easily be edited or changed in the POS after they are created.
 
@@ -50,7 +50,7 @@ With the advanced auto charges feature, POS users can have systematic calculatio
 
 On the **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** page, go to the **Customer orders** tab. On the **Charges** FastTab, set **Use advanced auto-charges** to **Yes**.
 
-![Advanced Auto-Charges Parameter](media/advancedchargesparameter.png)
+![Advanced auto-charges parameter](media/advancedchargesparameter.png)
 
 When advanced auto charges are enabled, users are no longer prompted to manually enter a shipping charge at the POS terminal when creating a ship-all or ship-selected customer order. POS order charges are systematically calculated and added to the POS transaction (if a corresponding auto charges table that matches the criterion of the order being created are found). Users can also add or maintain header or line-level charges manually through newly added POS operations that can be added to the POS screen layouts.
 
@@ -103,7 +103,7 @@ Send the changes to the Commerce Scale Unit/Channel DB so that the POS can utili
 
 After the configuration steps above are complete and the changes have been applied to the channel database, any customer order or sales transaction created in the POS, call center, or e-Commerce channels that have the ground or air delivery methods set at the header level will utilize these charges and automatically apply them to the sale.
 
-At this time the charges will apply to all sales transactions created within the legal entity that utilize these delivery modes, as there is no functionality to designate that an auto-charge configuration will only apply to a specific selling channel.
+At this time, the charges will apply to all sales transactions created within the legal entity that utilize these delivery modes, as there is no functionality to designate that an auto charge configuration will only apply to a specific selling channel.
 
 For POS and e-Commerce scenarios, because there is no clearly defined "header" on these orders, header-level charges will only apply if all sales lines on the transaction are set to ship with the exact same mode of delivery. If there are "mixed-modes" of fulfillment on the transactions created by POS or e-Commerce, only line-level auto charges will be considered and applied.
 
@@ -131,7 +131,7 @@ Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utili
 
 After the configurations steps above are complete and the changes have been applied to the channel database, any customer order or sales transaction created in the POS, call center, or e-Commerce channels that have this item on the order will trigger a line-level charge to be systematically added to the order total.
 
-At this time the charges will apply to any sales line that matches the configuration of the line-level auto charges within the legal entity, as there is no functionality to configure a line-level auto-charge to apply only to a specific selling channel.
+At this time the charges will apply to any sales line that matches the configuration of the line-level auto charges within the legal entity, as there is no functionality to configure a line-level auto charge to apply only to a specific selling channel.
 
 ### Manual header charges example
 
@@ -183,7 +183,7 @@ The same process can be applied in the call center by using the "maintain charge
 
 ### Editing charges on a POS sales transaction
 
-The **Manage charges** operation (142) should be added to the [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a user can view and edit or override any system-calculated or manually-created header or line-level charges. If the operation is not added, users will not be able to adjust the value of the charges on the POS transaction, nor will they be able to view the details of the charges such as the type of charges code tied to the charge.
+The **Manage charges** operation (142) should be added to the [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a user can view and edit or override any system-calculated or manually created header or line-level charges. If the operation is not added, users will not be able to adjust the value of the charges on the POS transaction, nor will they be able to view the details of the charges such as the type of charges code tied to the charge.
 
 On the **Manage charges** page in POS, the user can view both header and line-level charges details. The user can use the **Edit** function available on this page to make changes to the amount charged to a specific charges line. Once a charges line is overwritten manually, it will not be systematically recalculated unless the user initiates the **Recalculate charges** operation.
 
