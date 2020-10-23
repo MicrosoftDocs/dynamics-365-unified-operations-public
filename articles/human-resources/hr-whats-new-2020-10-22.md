@@ -70,9 +70,6 @@ The following bug fixes are included in this release.
 | 457542 | Updating course details after it has been closed does not also update the same information on the Employee that took part in the course  |The employee information will now update properly when course details are changed after a course is closed and reopened.|
 | 515342 |Cannot insert data through the CDSLeaveRequestDetailEntity - Company is not found or does not exist. |The CDSLeaveRequestDetailEntity can now be used to insert data. |
 | 514743 | Error in Email Parameter form when using Exchange |The message 'Could not load filed or assembly...' was being displayed in the Email Parameters page when the email provider was set to 'Exchange'.  Fix will allow parameters page to load and save as expected.|
-| 518993 | Benefits Enrollment ddoesn't filter to the worker during the verification of existing plans when adding/removing from the cart | --- |
-
-
 
 
 ## In preview
