@@ -2,7 +2,7 @@
 # required metadata
 
 title: Engineering companies and data ownership rules
-description: To ensure that the master data for products is created and maintained centrally, you can use one or more engineering companies. The engineering company represents the company that owns the engineering products and its engineering relevant data.
+description: This topic explains how you can use one or more engineering companies to ensure that the master data for products is centrally created and maintained. An engineering company represents the company that owns the engineering products and its engineering-relevant data.
 author: t-benebo
 manager: tfehr
 ms.date: 09/28/2020
@@ -33,38 +33,41 @@ ms.dyn365.ops.version: Release 10.0.15
 
 ## Engineering companies and operational companies
 
-To ensure that the master data for products is created and maintained centrally, you can use one or more *engineering companies*. The engineering company owns the engineering products and their engineering-relevant data. The engineering company is always connected to a *legal entity*, which is also a company. With this connection, the system establishes a central entry point for all engineering-relevant data for engineering products within the company. This is where engineering products are created and engineering-relevant data is maintained. From this central point, the engineering products and engineering-relevant data will be released to *operational companies*, which are the other legal entities. (For more information about the release management, see [Release product structure](release-product-structure.md).) These operational companies will use the engineering data as it is designed by the engineering company. Any logistical data will be maintained locally by each company itself.
+To ensure that the master data for products is centrally created and maintained, you can use one or more *engineering companies*. An engineering company owns the engineering products and their engineering-relevant data. It's always connected to (based on) an existing *legal entity*, which is also a company. Through this connection, the system establishes a central entry point for all engineering-relevant data for engineering products in the company. In this central entry point, engineering products are created, and engineering-relevant data is maintained. From it, the engineering products and engineering-relevant data will be released to *operational companies*, which are other legal entities. (For more information about the release management, see [Release product structures](release-product-structure.md).) These operational companies will use the engineering data as it has been designed by the engineering company. Any logistical data is locally maintained by each company.
 
-To create an engineering company, go to **Engineering change management> Setup \> Engineering organizations**. The select **New**, enter a name for the company, and select the existing company (legal entity) that it is based on.
+To create an engineering company, go to **Engineering change management \> Setup \> Engineering organizations**. Select **New**, enter a name for the engineering company, and select the existing company (legal entity) that it's based on.
 
-If you are integrating with external PLM systems you would need to create a business unit (type of company) that would become an external company.
+If you're integrating with external product lifecycle management (PLM) systems, you must create a business unit (type of company) that will become an external company.
 
-## Engineering product category and engineering companies
+## Engineering product categories and engineering companies
 
-Engineering product categories help to ensure that engineering products are created according to your company's business rules. Engineering product categories ensure that each product behaves as required. For more information on engineering product categories, see [Engineering versions and engineering product category](engineering-versions-product-category.md).
+*Engineering product categories* help ensure that engineering products are created according to your company's business rules and behave as required. For more information about engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
-Each engineering product category belongs to a specific engineering company, and each category can only create products that belong to that same company. Likewise, the right to maintain an engineering product also belongs to the company associated with that product's engineering product category.
+Each engineering product category belongs to a specific engineering company and can create only products that belong to that company. Likewise, the right to maintain an engineering product also belongs to the company that is associated with that product's engineering product category.
 
-## Data owned by the engineering company
+## Data that is owned by the engineering company
 
-Because the engineering company owns the engineering-relevant data, they control the following:
+Because the engineering company owns the engineering-relevant data, it controls the following processes:
 
-- **Creation of engineering products**: Each engineering company can only create new engineering products based on an engineering product category owned by that company. In some cases, operational companies will maintain their own local data related to these products.
-- **Creation of engineering versions**: When a company creates a new engineering product, the system automatically creates an initial engineering version for that product. Only the owning engineering company will be able to create new versions of the product.
-- **Creation and maintenance of engineering attributes**: When a company creates a new engineering product, the system automatically adds engineering attributes to the product. Only the owning engineering company will be able to create maintain these values. For more information about engineering attributes, see [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).
-- **Creation and maintenance of bill of materials connected to the engineering versions**: The owning engineering company can directly connect a bill of materials to an engineering product version. When these bills of materials are released to other legal entities, the engineering data on the bills of materials are protected from being changed as follows:
-  - The released bill of material lines can't be removed by the operational company.
-  - The engineering fields on the bill of material lines are read-only to the operational company. All other fields are logistical implementation fields, which can be edited by the operational company.
-  - The operational company can add bill of material lines to the same bill of materials, which lets them add local additions such as packaging materials or lubrication fluids.
-  - The operational company can add a completely new, local bill of materials. This can be necessary, for example, in cases where no bill of materials is provided during the release. The operational company owns and maintains these local bills of materials. For more information about the release management, see [Release product structure](release-product-structure.md).
-  - All local bills of materials and bill of materials lines are preserved when the engineering company updates their bill of materials.
+- **Creation of engineering products:** Each engineering company can only create new engineering products that are based on an engineering product category that it owns. In some cases, operational companies maintain their own local data that is related to those products.
+- **Creation of engineering versions:** When a company creates a new engineering product, the system automatically creates an initial engineering version for it. Only the owning engineering company will be able to create new versions of that product.
+- **Creation and maintenance of engineering attributes:** When a company creates a new engineering product, the system automatically adds engineering attributes to it. Only the owning engineering company will be able to create and maintain the values for those attributes. For more information about engineering attributes, see [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).
+- **Creation and maintenance of bills of materials (BOMs) that are connected to the engineering versions:** The owning engineering company can directly connect a BOM to an engineering product version. When these BOMs are released to other legal entities, changes to the engineering data on the BOMs are limited in the following ways:
 
-- **Creation and maintenance of routes connected to the engineering versions**: The engineering company can directly connect a route to each engineering version. When these routes are released to other legal entities, they are protected as follows:
-  - The engineering data on the routes are protected from being removed.
-  - Other legal entities can add operations to the route, which enables them to add local route steps.
-  - Operational companies can  add completely new routes, which can be necessary, for example, if you've chosen not to include routes during the release. The operational companies owns and maintains these local routes. For more information about the release management, see [Release product structure](release-product-structure.md).
-  - All changes made locally are preserved when updates from the engineering company to the routes are released again.
+    - The operational company can't remove released BOM lines.
+    - The engineering fields on the BOM lines are read-only for the operational company. All other fields are logistical implementation fields and can be edited by the operational company.
+    - The operational company can add BOM lines to the same BOM. In this way, it can add local additions, such as packaging materials or lubrication fluids.
+    - The operational company can add a completely new, local BOM. This change might be required in cases where, for example, no BOM is provided during the release. The operational company owns and maintains these local BOMs. For more information about release management, see [Release product structures](release-product-structure.md).
+    - All local BOMs and BOM lines are preserved when the engineering company updates its BOM.
 
-- **Creation and maintenance of engineering documents**: The engineering company can attach engineering documents to each engineering version.
-  - When these documents are released to other legal entities, the documents are protected from being removed by the operational company.
-  - Other legal entities can add completely new documents. The operational company owns and maintains these local documents.
+- **Creation and maintenance of routes that are connected to the engineering versions:** The engineering company can directly connect a route to each engineering version. When these routes are released to other legal entities, changes to the data on the routes are limited in the following ways:
+
+    - The other legal entities can't remove the engineering data on the routes.
+    - The other legal entities can add operations to the route. In this way, they can add local route steps.
+    - Operational companies can add completely new, local routes. This change might be required if, for example, you haven't included routes during the release. The operational companies own and maintain these local routes. For more information about release management, see [Release product structures](release-product-structure.md).
+    - All changes that are made locally are preserved when updates from the engineering company are released again to the routes.
+
+- **Creation and maintenance of engineering documents:** The engineering company can attach engineering documents to each engineering version.
+
+    - When these documents are released to other legal entities, the documents are protected from being removed by the operational company.
+    - Other legal entities can add completely new, local documents. The operational company owns and maintains these local documents.
