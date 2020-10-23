@@ -5,7 +5,7 @@ title: Create call center orders
 description: This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer. 
 author: josaw1
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 10/23/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
