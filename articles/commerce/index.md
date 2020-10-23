@@ -5,7 +5,7 @@ title: Commerce home page
 description: Home page for Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.5
 ---
 
 # Commerce home page
-
 
 [!include [banner](includes/banner.md)]
 
