@@ -83,5 +83,4 @@ The system evaluates the location directive against each individual work line an
 ### Additional resources
 
 - Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Help topic: [Work with location directives](location-directives.md)
 - Help topic: [Create location directives](create-location-directive.md)
