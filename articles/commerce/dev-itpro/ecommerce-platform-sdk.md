@@ -5,7 +5,7 @@ title: e-Commerce platform software development kit (SDK)
 description: This topic describes the e-Commerce Platform SDK.
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
