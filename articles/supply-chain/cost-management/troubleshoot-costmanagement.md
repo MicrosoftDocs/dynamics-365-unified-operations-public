@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot cost management
-description: This topic describes how to fix issues that you might encounter while working with cost management
+description: This topic describes how to fix issues that you might encounter while working with cost management.
 author: riluan
 manager: tfehr
 ms.date: 10/13/2020
@@ -44,13 +44,13 @@ Subtotals can cause issues when the result is exported, especially if users chan
 
 To check the subtotals, you can export the result into Microsoft Excel. Alternatively, if you want to check subtotals within Supply Chain Management, use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the *New grid control* and *(Preview) Grouping in grids* features, which provide a much more flexible way to see the subtotal for any group by column. For more information, see [Grid capabilities](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
-### The inventory value storage report doesn't support ledger account information
+### Inventory value storage report doesn't support ledger account information
 
-You can run the trail balance to get the inventory accounts balance and compare that to the inventory value storage report.
+You can run the trial balance to get the inventory accounts balance and compare that to the **Inventory value storage** report.
 
 ## Warnings or errors are shown when changing a ledger period status without closing inventory
 
-Microsoft introduced the following validations to prevent issues caused by "incorrect" period-end process around costing. If you see any of the error messages listed below refer to [KB 4561987](https://fix.lcs.dynamics.com/Issue/Details?kb=4561987&bugId=445351&dbType=3&qc=f514f2adcddcddceec43af58c26ae8a9020effdc7cdfe085d9d0deeb8cc7b6a3) for more information about how to solve these issues.
+Microsoft introduced the following validations to prevent issues caused by an incorrect period-end process around costing. If you encounter any of the following error messages refer to [KB 4561987](https://fix.lcs.dynamics.com/Issue/Details?kb=4561987&bugId=445351&dbType=3&qc=f514f2adcddcddceec43af58c26ae8a9020effdc7cdfe085d9d0deeb8cc7b6a3) for more information about how to resolve these issues.
 
 - You are about to execute a Recalculation with a date %1 (10-02-2019). The last registered Recalculation was executed in a previous period with a date %2 (20-01-2019). No execution of an inventory close with a date %3 (31-01-2019) matching period end has been registered. Please remember to execute an inventory close as of %3 (31-01-2019) matching the period end. The valuation of inventories, cost of goods sold and variances may not be correct in subledger or general ledger until this has been executed.
 
@@ -65,5 +65,5 @@ Please remember to execute an inventory close as of %3 (31-01-2019) matching a p
 
 ## Inventory aging report discrepancies
 
-The inventory aging report shows different value when viewed at different storage dimensions (such as site or warehouse). Please refer to [Inventory aging report examples and logic](inventory-aging-report.md) for the reporting logic.
+The **Inventory aging report** shows different values when viewed at different storage dimensions (such as site or warehouse). For more information about the reporting logic, see [Inventory aging report examples and logic](inventory-aging-report.md).
 
