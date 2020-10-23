@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Transportation management status
+title: Transportation management statuses
 description: Set up master codes for transportation statuses to interpret codes that are provided by your shipping carriers. This lets you integrate with shipping carriers to provide a status.
 author: Henrikan
 manager: tfehr
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: Release 10.0.14
 ---
 
-# Transportation management status
+# Transportation management statuses
 
 [!include [banner](../includes/banner.md)]
 
