@@ -5,7 +5,7 @@ title: Commerce home page
 description: Home page for Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/23/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -53,7 +53,7 @@ Select a feature area to learn more about it.
 - [Configure a Commerce preview environment](provisioning-guide.md)
 - [Commerce architecture](retail-components.md)
 - [Set up your channels](channels-overview.md)
-- [Merchandizing your products and services](set-up-retail-products.md)
+- [Merchandising your products and services](set-up-retail-products.md)
 - [Manage your orders](Order-fulfillment-overview.md)
 - [Manage your customers](set-up-customer-loyalty-program.md)
 - [Manage your financials](retail-statements.md)
