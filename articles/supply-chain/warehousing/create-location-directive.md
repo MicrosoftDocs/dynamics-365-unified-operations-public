@@ -47,6 +47,7 @@ You can use location directives to perform the following tasks:
 
 Before you can create a location directive, you must follow these steps to make sure that the prerequisites are in place.
 
+1. Go to **System administration \> Setup \> License configuration**. Expand the **Trade** license key, and then select the **Warehouse and Transportation management** configuration key (if it isn't already).
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 1. Create a warehouse.
 1. On the **Warehouse** FastTab, set the **Use warehouse management processes** option to *Yes*.
@@ -119,14 +120,6 @@ For this scenario, you must define two location directive actions. The first act
 ## Next step
 
 After you create location directives, you can associate each directive code with a work template code for work creation. For more information, see [Control warehouse work by using work templates and location directives](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
-
-## Technical information for system admins
-
-If you don't have access to the pages that are used to complete this task, contact your system admin, and provide the information that is shown in the following table.
-
-| Category | Prerequisite |
-|---|---|
-| Configuration keys | Go to **System administration \> Setup \> License configuration**. Expand the **Trade** license key, and then select the **Warehouse and Transportation management** configuration key. |
 
 ### Additional resources
 
