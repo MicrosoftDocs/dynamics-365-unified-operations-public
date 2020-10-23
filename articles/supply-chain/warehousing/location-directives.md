@@ -163,7 +163,7 @@ The fields displayed on the **Location directives** FastTab are specific to the 
 
 ## The Lines FastTab
 
-Use the **Lines** FastTab to add additional restrictions on where the location directive applies. You can specify a minimum quantity and a maximum quantity that the directive should apply to, and you can specify that the directive should be for a specific inventory unit.
+Use the **Lines** FastTab to establish conditions for applying the related actions specified in the **Location directive actions** FastTab. For each line, you can specify a minimum quantity and a maximum quantity that the actions should apply to, and you can specify that the actions should apply for a specific inventory unit.
 
 - **Sequence number** - Enter the sequence in which each location directive line should be processed for the selected work type. You can modify the sequence, if needed, using the **Move up** and **Move down** buttons in the **Lines** toolbar.
 
@@ -197,33 +197,30 @@ Use the **Lines** FastTab to add additional restrictions on where the location d
 
 - **Round up to unit** - This field works together with the field **Restrict by unit**. If the location directive line **Restrict by unit** is set, for example, to *box*, and **Round up to unit** is selected, this indicates that the work generated out of the directive for raw material picking should be rounded up to a multiple of one handling unit specified on the **Restrict by unit** page.
 
-    >[!IMPORTANT]
-    >Please note that this **Round up to unit** setup works only for **Work order type** *Raw material picking*. This works only with the location directives of **Work type** *Pick*.
+    >[!NOTE]
+    >This **Round up to unit** setup works only for **Work order type** *Raw material picking*. This works only with the location directives of **Work type** *Pick*.
 
 - **Locate Packing Qty** – If you specify a packing quantity on a sales order, transfer order or a production order, this checkbox restricts the system to only select locations with at least that packing quantity in the location.
 
-    >[!IMPORTANT]
-    >This works only with the location directives of type pick.
+    >[!NOTE]
+    >This works only with the location directives of type *pick*.
 
 - **Allow Split** – This specifies if location directive is allowed to split the quantity being received or the quantity being reserved across multiple warehouse locations or if the entire quantity must be located to a single location or reserved from a single location in order to create work.
 
 - **Immediate replenishment template** - Create a connection to a replenishment template, so that replenishment is started immediately if items aren't allocated. If you leave this field blank, item replenishment won't be started until all lines of the location directive have been processed.
 
-    >[!IMPORTANT]
-    >This field is available only on selected **Work order types** where replenishment is permitted, see the table **Fields specific to work order types** at the beginning of this topic for the complete list.
+    >[!NOTE]
+    >This field is available only on selected **Work order types** where replenishment is permitted. For a complete list, see [Fields specific to work order types](#fields-specific-types).
 
 ## The Location directive actions FastTab
 
 You can define multiple location directive actions for each line. Once again, a sequence number is used to determine the order that the actions are assessed in. On this level, you can set up a query to define how to find the best location in the warehouse. You can also use predefined **Strategy** settings to find an optimal location.
 
-- **Sequence number** - The sequence in which the location directive is processed for the selected work type is displayed. You can modify the sequence, if needed.
-
-    >[!IMPORTANT]
-    >Be careful about sequence numbers as they will always run by these.
+- **Sequence number** - Establishes sequence in which the actions are processed for the selected work type. You can modify the sequence, if needed, using the **Move up** and **Move down** buttons in the **Location directive actions** toolbar.
 
 - **Name** - Enter the name for the location directive action. Be specific so it is clear from the name what action is performed.
 
-- **Fixed location usage** - Determines which locations the location directive considers. If you select Fixed and non-fixed locations, all locations are considered. Select one of the following values:
+- **Fixed location usage** - Establishes which locations the location directive considers. Select one of the following values:
 
   - **Fixed and non-fixed locations** - The location directive will consider all locations.
 
@@ -231,37 +228,37 @@ You can define multiple location directive actions for each line. Once again, a 
 
   - **Only fixed locations for the product variant** - The location directive will consider only fixed locations for product variants.
 
-- **Allow negative inventory:** -Select this check box to allow negative inventory at the specified warehouse location in location directives.
+- **Allow negative inventory:** - Select this check box to allow negative inventory at the specified warehouse location in location directives.
 
-- **Batch Enabled** - Select this check box to use batch strategies for the items that are batch enabled. For processes using the **Location directives** to find locations to pick  batch number tracked items from, it is important to select the **Batch enabled** setting to include the search for locations holding batch number tracked items. If this check box is selected, and the **Strategy** field is set to *None*, the system will move on to the next action line.
+- **Batch Enabled** - Select this check box to use batch strategies for items that are batch enabled. For processes using location directives to find locations from which to pick batch-number tracked items, it is important to select the **Batch enabled** check box to include the search for locations holding batch-number tracked items. If this check box is selected, and the **Strategy** field is set to *None*, the system will move on to the next action line.
 
-- **Strategy** - To make it easier and quicker to define the actions that are associated with each location directive line, use one of the predefined strategies.
+- **Strategy** - To make it easier and quicker to define the actions that are associated with each location directive line, select one of the following predefined strategies.
 
   - **None** - No strategy will be used.
 
-  - **Match packing quantity** -  This strategy is used to verify whether a pick location has the specified packing quantity. This strategy is valid only when the **Work type** field is set to *Pick*.
+  - **Match packing quantity** -  This strategy verifies whether a pick location has the specified packing quantity. This strategy is valid only when the **Work type** is set to *Pick*.
 
-  - **Consolidate** - This strategy consolidates items in a specific location when similar items are already available. This strategy is valid only when the **Work type** field is set to *Put*. Common setup for put will be to try to consolidate on first action line and on second try to put without consolidation. Consolidating goods makes later picking more efficient.
+  - **Consolidate** - This strategy consolidates items in a specific location when similar items are already available. This strategy is valid only when **Work type** is set to *Put*. A typical setup for put will to try to consolidate on the first action line and then, on the second line, try to put without consolidation. Consolidating goods makes later picking more efficient.
 
-  - **FEFO batch reservation** -  This strategy is used when inventory is located using a batch expiration date and is allocated for batch reservation. You can only use this strategy for batch enabled items. See above. This strategy is only working for *Pick* work type of location directive.
+  - **FEFO batch reservation** -  This strategy uses first expiry first out (FEFO) batch reservations. Use it when inventory is located using a batch expiration date and is allocated for batch reservation. You can only use this strategy for batch enabled items. This strategy only works when the **Work type** is set to *Pick*.
   
-  - **Round up to the full LP and FEFO batch** - This strategy combines the elements of **FEFO batch reservation** and **Round up to a full LP**. It is only valid for batch enabled items and *Pick* work type location directives. The line must be batch enabled to use FEFO Batch Reservation strategy and rounding up to LP strategies can only be used for replenishment. Please note, if this strategy is configured together with location stocking limit, it can cause selected Put work location overload and ignore stocking limits.
+  - **Round up to the full LP and FEFO batch** - This strategy combines the elements of the *FEFO batch reservation* and *Round up to a full LP* strategies. It is only valid for batch-enabled items and *Pick* work type location directives. The line must be batch enabled to use the *FEFO batch reservation* strategy and rounding up to license plate (LP) strategies can only be used for replenishment. Please note, if this strategy is configured together with a location stocking limit, it can cause selected put-work location overload and ignore stocking limits.
 
-  - **Round up to a full LP** - This strategy is used to round up the inventory quantity to match the license plate (LP) quantity that is assigned to the items to be picked. You can only use this strategy for replenishment type of Location directives for type Pick. Please note, if this strategy is configured together with location stocking limit, it can cause selected Put work location overload and ignore stocking limits.
+  - **Round up to a full LP** - This strategy is used to round up the inventory quantity to match the license plate (LP) quantity that is assigned to the items to be picked. You can only use this strategy for replenishment location directives of type Pick. Please note, if this strategy is configured together with a location stocking limit, it can cause selected put-work location overload and ignore stocking limits.
   
-  - **License plate guided** - When you release the order to the warehouse to create the pick-and-put work, the **License plate guided** strategy on the location directive is used. You can do this for multiple license plates. The License plate guided strategy will try to reserve and create picking work against the locations holding the requested license plates that have been associated with the transfer order lines. But if this isn't possible and you still would like to create picking work, you should fall back to another location directive action strategy, and perhaps also search for inventory in another area of the warehouse, depending on your business process needs.
+  - **License plate guided** - When you release the order to the warehouse to create the pick-and-put work, use the *License plate guided* strategy. You can do this for multiple license plates. The *License plate guided* strategy will try to reserve and create picking work against the locations holding the requested license plates that have been associated with the transfer order lines. But if this isn't possible and you still would like to create picking work, you should fall back to another location directive action strategy, and perhaps also search for inventory in another area of the warehouse, depending on your business process needs.
 
-  - **Empty location with no incoming work** - This strategy is used to locate empty locations. The location is considered empty if it has no physical inventory and no expected incoming work. This strategy is used only for PUT type of location directive.
+  - **Empty location with no incoming work** - Use this strategy to locate empty locations. The location is considered empty if it has no physical inventory and no expected incoming work. You can only use this strategy for location directives with a **Work type** of *Pick*.
   
-  - **Location aging FIFO** - You can use the FIFO strategy to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where an expiration date isn't available to use for sorting. The FIFO strategy finds the location that contains the oldest aging date, and it allocates picking based on that aging date.
+  - **Location aging FIFO** - Use the first in, first out (FIFO) strategy to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where an expiration date isn't available to use for sorting. The FIFO strategy finds the location that contains the oldest aging date, and it allocates picking based on that aging date.
   
-  - **Location aging LIFO** - You can use the LIFO strategy to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where an expiration date isn't available to use for sorting. The LIFO strategy finds the location that contains the newest aging date, and it allocates picking based on that aging date.
+  - **Location aging LIFO** - Use the last in, last out (LIFO) strategy to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where an expiration date isn't available to use for sorting. The LIFO strategy finds the location that contains the newest aging date, and it allocates picking based on that aging date.
 
-## Example of the use of location directives
+## Example of using location directives
 
 For this example, consider a purchase order process where the location directive must find free capacity within a warehouse for inventory items that have just been registered at the receiving dock. First, you need to find free capacity within the warehouse by consolidating with existing on-hand inventory. If consolidation isn't possible, then you need to find an empty location.
 
-For this scenario, you must define two location directive actions. The first action in the sequence must use the **Consolidate** strategy, and the second should use the **Empty location with no incoming work** strategy. Unless you define a third action to handle an overflow scenario, two outcomes are possible when there is no more capacity in the warehouse: work can be created even though no locations are defined, or the work creation process can fail. The outcome is determined by the setup on the **Location directive failures** page, where you can decide whether to select the **Stop work on location directive failure** option for each work order type.
+For this scenario, you must define two location directive actions. The first action in the sequence must use the *Consolidate* strategy, and the second should use the *Empty location with no incoming work* strategy. Unless you define a third action to handle an overflow scenario, two outcomes are possible when there is no more capacity in the warehouse: work can be created even though no locations are defined, or the work creation process can fail. The outcome is determined by the setup on the **Location directive failures** page, where you can decide whether to select the **Stop work on location directive failure** option for each work order type.
 
 ### Additional resources
 
