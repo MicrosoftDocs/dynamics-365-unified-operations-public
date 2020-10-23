@@ -2,7 +2,7 @@
 # required metadata
 
 title: Engineering change management parameters
-description: This topic describes how to configure engineering change management features for Supply Chain Management.
+description: This topic explains how to configure engineering change management features for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 manager: tfehr
 ms.date: 09/28/2020
@@ -31,34 +31,34 @@ ms.dyn365.ops.version: Release 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-**Engineering change management parameters** contains setup parameters that modify the default behavior related to the release product structure and the engineering change management processes.
+The **Engineering change management parameters** page contains setup parameters that change the default behavior that is related to the release product structure and engineering change management processes.
 
 ## Open the Engineering change management parameters page
 
-To open the **Engineering change management parameters** page, go to **Engineering change management \> Setup \> Engineering change management parameters**. Then make the settings described in the other sections of this topic.
+To open the **Engineering change management parameters** page, go to **Engineering change management \> Setup \> Engineering change management parameters**. You can then set the fields as described in the remaining sections of this topic.
 
-## The Release control tab
+## Release control tab
 
-The following table describes the settings available on the **Release control** tab of the **Engineering change management parameters** page. These settings affect the release product structure process.
+The following table describes the fields that are available on the **Release control** tab of the **Engineering change management parameters** page. These fields affect the release product structure process.
 
-| Setting | Description |
-| --- | --- |
-| **Item number rule** | Choose how the item number should be defined when the product is released to a legal entity. Select *Engineering product number* if the product number in the receiving legal entity should be the same as in the engineering company. Select *Local item number sequence* if the product should take the following number in the receiving legal entity number sequence for product number.  |
-| **BOM name rule** | Choose how is the BOM name is defined when the product is received (released) in a legal entity. Select *Engineering name* or *Receiving item number*. |
-| **Route name rule** | Choose how the route name should be defined when the route of a product is received (released) in a legal entity. Select *Engineering name* or *Receiving item number*.  |
-| **Run BOM check** | Choose whether a BOM check will be run when the product is received (released) in a legal entity. |
-| **Release behavior of inactive BOM** | Choose whether to allow a product to be released when it has an inactive BOM. Options are *Accept*, *Warning only*, and *Not allowed*. |
-| **Release behavior of inactive route** | Choose whether to allow a product to be released when it has an inactive route. Options are *Accept*, *Warning only*, and *Not allowed*.|
-| **Product acceptance** | Choose whether an additional step for acceptance is needed before the product is released in the legal entity. To add the acceptance step, choose *Manual*, in which case the products will be shown on the **Open product releases** page. Select *Automatic* show the product directly on the **Released products** page in the target legal entity immediately after it is released with the release product structure. |
+| Field | Description |
+|---|---|
+| Item number rule | Select how the item number should be defined when the product is released to a legal entity. Select *Engineering product number* if the product number in the receiving legal entity should match the product number in the engineering company. Select *Local item number sequence* if the product should take the next number in the number sequence for product numbers in the receiving legal entity. |
+| BOM name rule | Select how the name of the bill of materials (BOM) is defined when the product is received (released) in a legal entity. Select either *Engineering name* or *Receiving item number*. |
+| Route name rule | Select how the route name should be defined when the route of a product is received (released) in a legal entity. Select either *Engineering name* or *Receiving item number*. |
+| Run BOM check | Select whether a BOM check will be run when the product is received (released) in a legal entity. |
+| Release behavior of inactive BOM | Select whether a product can be released if it has an inactive BOM. Select *Accept*, *Warning only*, or *Not allowed*. |
+| Release behavior of inactive route | Select whether a product can be released if it has an inactive route. Select *Accept*, *Warning only*, or *Not allowed*.|
+| Product acceptance | Select whether an additional step for acceptance is required before the product can be released in the legal entity. Select *Manual* to add the acceptance step. In this case, the **Open product releases** page will show the products. Select *Automatic* to show the product directly on the **Released products** page in the target legal entity immediately after the product is released with the release product structure. |
 
-## The Engineering change management tab
+## Engineering change management tab
 
-The following table describes the settings available on the **Engineering change management** tab of the **Engineering change management parameters** page. These settings affect the engineering change process.
+The following table describes the fields that are available on the **Engineering change management** tab of the **Engineering change management parameters** page. These settings affect the engineering change management process.
 
-| Setting | Description |
-| --- | --- |
-| **Category** | Default value of the category that will be used when an engineering change request is created |
-| **Priority** | Default value of the Priority that will be used when an engineering change request is created |
-| **Severity rule** | Choose how the severity of an engineering change order should be established. Select *Manual* if the user is expected to enter a value for the **Severity** field. Select *Calculate* to have the system calculate the value when you select **Calculate severity** from the Action Pane of the engineering change order; the system will use the severity rules established in the **Severity rule set** page. Select *Calculate automatically* do calculate the **Severity** field directly and default according to the severity rule sets. |
-| **Re-release impacted products** | This parameter is applicable when re-releasing products via an engineering change order. You can choose if all products should be proposed in the re-release dialog or if only the impacted products  |
-| **BOM levels to release** | Indicates the depth of the BOM level to be released. If the BOM is deeper (has more levels) than the value specified here, only the first levels (up to this value) will be released. |
+| Field | Description |
+|---|---|
+| Category | The default category that will be used when an engineering change request is created. |
+| Priority | The default priority that will be used when an engineering change request is created. |
+| Severity rule | Select how the severity of an engineering change order should be established. Select *Manual* if the user is expected to enter a value in the **Severity** field. Select *Calculate* to have the system calculate the value of the **Severity** field when you select **Calculate severity** on the Action Pane of the engineering change order. In this case, the system will use the severity rules that are defined on the **Severity rule set** page. Select *Calculate automatically* to have the value of the **Severity** field automatically calculated and filled in according to the severity rule sets. |
+| Re-release impacted products | This field is applicable when you re-release products via an engineering change order. You can select whether all products or only the affected products should be proposed in the re-release dialog box. |
+| BOM levels to release | The depth of the BOM level to release. If the BOM has more levels (that is, if it's deeper) than the value that is specified here, only the levels up to the specified value will be released. |
