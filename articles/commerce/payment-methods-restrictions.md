@@ -28,6 +28,7 @@ ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
 
+
 ---
 
 # Restrict payment methods for returns without a receipt
