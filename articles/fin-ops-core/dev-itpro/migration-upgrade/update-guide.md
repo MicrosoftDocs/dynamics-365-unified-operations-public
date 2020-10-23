@@ -28,6 +28,47 @@ The main goal is to illustrate the following:
 
 The document does not go into the mechanics of how to use the different Azure DevOps and Lifecycle Services (LCS) tools, the sole purpose is to describe processes and best practices.
 
+[Environments](#Environments)
+    [Environments running your current release](#environments-running-your-current-release)
+    [Environments running the next version of your custom code](#environments-running-the-next-version-of-your-custom-code)
+[Manage source code branches](#manage-source-code-branches)
+[Apply the next version of a Microsoft service update](#apply-the-next-version-of-a-microsoft-service-update)
+    [Backward compatibility of Microsoft updates, what does it mean?](#backward-compatibility-of-microsoft-updates,-what-does-it-mean?)
+        [Runtime compatibility](#runtime-compatibility)
+        [Design-time compatibility](#design-time-compatibility)
+    [Phase 1: Update F\&O](#phase-1-update-app)
+        [Track 1: Update your runtime environments](#track-1:-update-your-runtime-environments)
+            [Update Test 1](#update-test-1)
+            [Update UAT](#update-uat)
+            [Update Prod](#update-prod)
+        [Track 2: Update your development environments](#track-2:-update-your-development-environments)
+        [Error situations](#error-situations)
+            [Case 1](#case-1)
+            [Case 2](#case-2)
+            [Case 3](#case-3)
+    [Phase 2: Update Commerce Scale Unit (CSU) to 10.0.11](#phase-2:-update-commerce-scale-unit-(csu)-to-10.0.11)
+        [Pre-requisites](#pre-requisites)
+        [Track 1: Update your Commerce Scale Unit](#track-1:-update-your-commerce-scale-unit)
+            [Update Test 1](#update-test-1)
+            [Update UAT](#update-uat)
+            [Update Prod](#update-prod)
+        [Track 2: Update your development environments](#track-2:-update-your-development-environments)
+    [Phase 3: Update POS to 10.0.11](#phase-3:-update-pos-to-10.0.11)
+        [Pre-requisites](#pre-requisites)
+        [Update your Commerce Development Environment](#update-your-commerce-development-environment)
+        [Option 1: Store Component updates with only runtime changes](#option-1:-store-component-updates-with-only-runtime-changes)
+        [Option 2: Store Component updates with runtime and custom changes](#option-2:-store-component-updates-with-runtime-and-custom-changes)
+        [Update Process](#update-process)
+            [Update Test 1](#update-test-1)
+            [Update UAT](#update-uat)
+            [Update Prod](#update-prod)
+[Apply a new version of your custom code](#apply-a-new-version-of-your-custom-code)
+    [Create a hotfix of your code](#create-a-hotfix-of-your-code)
+    [Update custom code from N to N+1](#update-custom-code-from-n-to-n1)
+[Appendix](#appendix)
+    [Uploading, Updating & Deploying Store Components](#uploading,-updating-&-deploying-store-components)
+
+
 ## Environments
 
 The ALM scenarios in this article relies on a collection of Finance and Operations environments described in the image below. This is a typical configuration for organizations with implementations that relies on custom code (extensions), including customizations provided by independent software vendors (ISVs).
