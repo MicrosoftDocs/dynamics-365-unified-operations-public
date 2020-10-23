@@ -38,7 +38,12 @@ This topic describes how to set up Azure Key Vault to provide secure key managem
 
 Some Dynamics 365 Commerce e-Commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
 
-The following instructions show how to create a Key Vault to securely store sensitive information, how to configure your e-Commerce site to securely communicate with Retail Server, how to set up Retail Server to securely communicate with your Key Vault, and how to access secret values from within your e-Commerce components.
+This topic shows how to do the following: 
+
+- Create a Key Vault to securely store sensitive information.
+- Configure your e-Commerce site to securely communicate with Retail Server.
+- Set up Retail Server to securely communicate with your Key Vault.
+- Access secret values from within your e-Commerce components.
 
 ## Create a Key Vault to store application secrets
 
@@ -103,7 +108,7 @@ To add your Node application details into Retail Server's authentication allow l
 1. Provide a name for your Node application.
 1.	In the third section named **SERVER RESOURCE IDS**, add an entry with the server resource ID of `https://commerce.dynamics.com`, and then select **Save**.
 
-You should now have a configuration similar to the one in the following example image.
+You should now have a configuration similar to the one in the following example.
 ![Retail Server authentication allow list](media/key-vault-02.png)
 
 To synchronize the changes into the channel database, in Commerce headquarters go to **Distribution schedule** and execute job 1110 (Global configuration), as shown in the following image. 
@@ -131,12 +136,12 @@ To create a new app registration, follow these steps.
 1. Select **Certificates & secrets**, and then under **Client secrets** select **New client secret**. 
 1. In the **Add a client secret** dialog box, enter a description under **Description** (for example, "retail-server-secret"). 
 1. Under **Expires**, select **Never**, and then select **OK**.
-1. On the **Certificates & secrets** page, copy the secret value In the **Value** box of your new client secret and store it safe place. This secret value is what will enable communication between Retail Server and your Key Vault.
+1. On the **Certificates & secrets** page, copy the secret value In the **Value** box of your new client secret and store it in a safe place. This secret value is what will enable communication between Retail Server and your Key Vault.
 
     ![App registration](media/key-vault-03.png)
  
  > [!NOTE]
- > You will only have once chance to copy the secret value so it's important to do so now.
+ > You will only have one opportunity to copy the secret value so it's important to do so now.
  
  ### Add an access policy in your Key Vault
 
@@ -160,7 +165,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
 1. Enter the **Key Vault client**. This is the application ID of the registered app. 
 1. Enter the **Key Vault secret key**. This is the secret value saved from the app registration process.
 1.	Add the secrets you want to access from Retail Server. For example, if the secret name is "retail-server-test-secret", add "retail-server-test-secret" as the **Name**, and "vault:///retail-server-test-secret" as the **Secret**. The **Secret type** should be set to **Manual**.
-1.	Select **Validate** to test your configuration. If everything was configured correctly, you will see a message that says "Validation successful."
+1.	Select **Validate** to test your configuration. If everything was configured correctly, you will see a message that says, "Validation successful."
  
  ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
  
@@ -169,7 +174,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
 
 ## Access secret values within your e-Commerce Node application
 
-Once the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
+After the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as a second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
 
 ```typescript
 export interface ISecretManager {
@@ -178,7 +183,7 @@ export interface ISecretManager {
 
 export interface ISecretValue {
     value: string; // secret value
-    id?: string; // secret id (if applicable)
+    id?: string; // secret ID (if applicable)
     error?: Error; // Error details (set if request to fetch secret value failed)
     expiresOn: number; // Unix timestamp (in seconds) when the secret value will expire
 }
@@ -196,9 +201,9 @@ The following example shows how to use the `SecretManager` class to access the s
 const secretValue: ISecretValue | undefined = await msdyn365Commerce.secretManager?.getSecretValue('secretKey', requestContext.apiSettings.baseUrl);
 ```
 
-Note that `secretManager` is a nullable property on msdyn365Commerce, since the `SecretManager` class can only fetch secrets when running server-side. This is to prevent leaking the secret value to your browser. If the `secretManager` property is undefined, it means that the code is running in the context of a browser (client-side). 
+Note that `secretManager` is a nullable property on msdyn365Commerce because the `SecretManager` class can only fetch secrets when running server-side. This is to prevent leaking the secret value to your browser. If the `secretManager` property is undefined, it means that the code is running in the context of a browser (client-side). 
 
-What this means practically for you as a developer is that you should only use the `SecretManager` class on code that is guaranteed to run server-side (for example, data actions that will run only on server-side), since you will otherwise be unable to access the secret value. If you include this property in code that will run in both contexts (server-side and client-side), it is important to include a fallback option if the `secretManager` property happens to be undefined.
+As a developer, you should only use the `SecretManager` class on code that is ensured to run server-side (for example, data actions that will run only on server-side), because you will otherwise be unable to access the secret value. If you include this property in code that will run in both contexts (server-side and client-side), it is important to include a fallback option if the `secretManager` property is undefined.
 
 If the request to fetch the secret value fails, the error property will be set. You can use this to debug any issues you may encounter when trying to fetch secret values.
 
@@ -209,7 +214,7 @@ Your e-Commerce Node application is only able to communicate with Retail Server 
 > [!NOTE]
 > Everything under the secrets/ directory should be added to your .gitignore file to help prevent secrets from being leaked online.
 
-The following example shows the contents of a "secrets/secrets.json" file:
+The following example shows the contents of a "secrets/secrets.json" file.
 
 ```json
 {
@@ -217,7 +222,7 @@ The following example shows the contents of a "secrets/secrets.json" file:
 }
 ```
 
-If you do not configure this file, during local development you may run into errors as the `SecretManager` class attempts to communicate with your Key Vault but fails to do so.
+If you do not configure this file, during local development you may encounter errors as the `SecretManager` class attempts to communicate with your Key Vault but fails to do so.
 
 ## Additional resources
 
