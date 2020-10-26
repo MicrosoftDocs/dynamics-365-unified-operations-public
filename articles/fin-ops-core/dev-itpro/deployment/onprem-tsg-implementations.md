@@ -54,6 +54,8 @@ For more information about how to resolve issues in on-premises environments, se
     #& $agentShare\scripts\TSG_WindowsAzureStorage.ps1 -agentShare $agentShare
 
     #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
+    
+    #& $agentShare\scripts\TSG_RemoveFilesFromZip.ps1 -agentShare $agentShare -filesToRemove 'Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.dll','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.pdb'
     ```
 
 3. From the relevant section of this topic, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
@@ -226,4 +228,88 @@ foreach( $file in $delete)
 }
 
 Write-Output "TSG WindowsAzureStorage script succeeded"
+```
+
+
+## <a name="taxengine"></a>TSG\_RemoveFilesFromZip.ps1
+
+The following script is used to fix an issue that occurs for some customers who were previously on versions 10.0.5 through 10.0.9. Due to how the prepare process works, there are some older versions of DLLs that remain in the TaxEngine folder, that have now been moved in newer releases to different module folders. This script ensures that these DLLs are removed from the downloaded asset, before being deployed to the AOS nodes.
+
+```powershell
+<#
+SAMPLE CODE NOTICE
+
+THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED, 
+OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.  
+THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.  
+NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+
+.Synopsis
+  Removes files from the Packages.zip file.
+
+#>
+[CmdletBinding()]
+param
+(
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [ValidateScript({ Test-Path -Path $_ })]
+    [string] $agentShare,
+
+    [ValidateNotNullOrEmpty()]
+    [string[]]$filesToRemove
+)
+
+#requires -Version 5
+$ErrorActionPreference = 'Stop'
+$InformationPreference = 'Continue'
+$files = @()
+
+[Reflection.Assembly]::LoadWithPartialName('System.IO.Compression')
+
+if(! (Test-Path $AgentShare))
+{
+    throw "The path provided for the agentshare is not valid/accessible."
+}
+
+ForEach($file in $FilesToRemove)
+{
+    if(!$file.StartsWith('Packages'))
+    {
+        throw "The path of $file does not start with Packages."
+    }
+    $file = $file.Replace('\', '/')
+    $files += $file
+} 
+
+$basePath = Get-ChildItem $AgentShare\wp\*\StandaloneSetup-*\Apps | Select-Object -First 1 -Expand FullName
+
+#Some customers experience an unexpected behavior with the previous command.
+if($basePath -notmatch "\AOS")
+{
+    $basePath = Join-Path $basePath -ChildPath "\AOS" 
+}
+
+$basePath = Join-Path $basePath -ChildPath "AXServiceApp\AXSF\Code"
+$zipfile = Join-Path $basePath -ChildPath "Packages.zip"
+
+try
+{
+    $stream = New-Object IO.FileStream($zipfile, [IO.FileMode]::Open)
+    $mode   = [IO.Compression.ZipArchiveMode]::Update
+    $zip    = New-Object IO.Compression.ZipArchive($stream, $mode)
+
+    ($zip.Entries | ? { $files -contains $_.FullName }) | % { $_.Delete() } | Write-Host
+}
+catch
+{
+    throw 'An Error Occurred'
+}
+finally
+{
+    $zip.Dispose()
+    $stream.Close()
+    $stream.Dispose() 
+}
+
 ```
