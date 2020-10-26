@@ -51,7 +51,7 @@ A gift card product should be configured in headquarters similar to other produc
 
 
 ## Enabling Gift card feature in Headquarters
-**xx** feature flag must be enabled in headquarters for gift card purchase flow.
+**Purchasing gift card on e-commerce feature** feature flag must be enabled in headquarters for gift card purchase flow to work on e-commerce. 
 
 ## e-commerce Experience
 On e-commerce, the gift card purchase flow goes through the same flow as other products in the sytem and does not require any additional modules to be configured.
@@ -60,20 +60,16 @@ If the product is configured to allow a custom amount, this needs to also enable
 
 ## Additional resources
 
-[Cart icon module](cart-icon-module.md)
+[Buybox module](add-buy-box.md)
 
 [Checkout module](add-checkout-module.md)
 
-[Payment module](payment-module.md)
+[Cart module](add-cart-module.md)
 
-[Shipping address module](ship-address-module.md)
+[Creating a product](create-new-product-commerce.md)
 
-[Delivery options module](delivery-options-module.md)
+[Setup up modes of delivery](./appuser-itpro/set-up-modes-of-delivery.md)
 
-[Order details module](order-confirmation-module.md)
+[Product dimensions](product-dimensions.md)
 
-[Gift card module](add-giftcard.md)
-
-[Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
-
-[Create an online functionality profile](online-functionality-profile.md)
+[Setup email notification](email-notification-profiles.md)
