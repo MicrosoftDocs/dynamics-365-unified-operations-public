@@ -142,7 +142,7 @@ Before using the service, you must complete the configurations described in the 
 
 Partitioning can significantly influence the performance of the Inventory Visibility API. It's a good idea to define a scheme that allows for small groupings of data while still allowing for meaningful data queries.
 
-The `organizationId` (`dataAreaId` in Supply Chain Management) will always be part of the partitioning, and by default Inventory Visibility is set to partition by dimensions as *Site* and *Location*. This means that the service must always be queried with these dimensions defined on the filters.
+The `organizationId` (`dataAreaId` in Supply Chain Management) will always be part of the partitioning, and by default Inventory Visibility is set to partition by dimensions as *Site + Location*. This means that the service must always be queried with these dimensions defined on the filters.
 
 > [!NOTE]
 > *Site* and *Location* are two general default dimensions in Inventory Visibility. In Supply Chain Management, those dimensions are called *Site* (`InventSiteId`) and *Warehouse* (`InventLocationId`)
