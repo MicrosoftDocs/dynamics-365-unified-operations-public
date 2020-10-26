@@ -33,6 +33,8 @@ ms.dyn365.ops.version: 10.0.2
 
 The **Impact analysis** report can help you focus your testing efforts for a new release. It provides insight into the Microsoft code that was changed in the release, together with usage information for the production environments that are associated with the project in Microsoft Dynamics Lifecycle Services (LCS). This content provides an overview of the capabilities and also some important considerations. However, the report doesn't provide comprehensive information. Therefore, you should use it in combination with other tools when you're planning test activities for a release.
 
+After accessing a project, the report can be accessed via the hamburger in Lifecycle Services (LCS).
+
 ## Code churn
 
 One key measure in the report is the amount of code change, or churn, that Microsoft made for selected models in recent releases. Code change measures the number of lines of code that were changed, added, or deleted. The report has a code change measure for each file check-in that contributed to a release.

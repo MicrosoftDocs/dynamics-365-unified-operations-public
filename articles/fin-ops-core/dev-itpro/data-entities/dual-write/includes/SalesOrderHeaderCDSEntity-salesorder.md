@@ -4,7 +4,7 @@ This template synchronizes data between Finance and Operations apps and Common D
 
 Reversed source filter: msdyn_ordertype eq 192350000
 
-Finance and Operations apps | Map type | model-driven apps in Dynamics 365 | Default value
+Finance and Operations apps | Map type | Customer engagement apps | Default value
 ---|---|---|---
 SALESORDERNUMBER | >< | msdyn_salesordernumber | 
 ORDERINGCUSTOMERACCOUNTNUMBER | >< | customerid.Account(accountnumber).Contact(msdyn_contactpersonid) | 

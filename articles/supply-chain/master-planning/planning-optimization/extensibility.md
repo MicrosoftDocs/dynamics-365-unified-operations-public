@@ -5,7 +5,7 @@ title: Planning Optimization extensibility
 description: This topic describes the extensibility scenarios that are supported in Planning Optimization. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 07/07/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,13 +39,13 @@ This topic describes the extensibility scenarios that are related to master plan
 
 In the most common extensibility scenario in Planning Optimization, custom processing is done after the plan has been updated. For example, you might add a column to the planned orders table (`ReqPO`), or you might want to derive some statistical information from the generated plan. The main extensibility point that enables these scenarios is the `jobCompletedSuccessfully` method in the `MpsMasterPlanningEvents` class.
 
-```csharp
+```X++
 public static void jobCompletedSuccessfully(MpsMasterPlanningJobCompletedSuccessfullyEventArgs _args)
 ```
 
 Here is an example of an extension that sets a custom `CstmOrderPriority` field on the planned order.
 
-```csharp
+```X++
 [ExtensionOf(classStr(MpsMasterPlanningEvents))]
 public static final class MpsMasterPlanningEvents_Cstm_Extension
 {

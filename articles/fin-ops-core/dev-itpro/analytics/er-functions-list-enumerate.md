@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ENUMERATE">ENUMERATE ER function</a>
+# ENUMERATE ER function
 
 [!include [banner](../includes/banner.md)]
 

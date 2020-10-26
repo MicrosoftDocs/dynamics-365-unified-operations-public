@@ -3,7 +3,7 @@
 
 title: Workflow subsystem updates in Finance and Operations
 description: This topic reviews the workflow system in Finance and Operations.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 13511
 ms.assetid: 0e3aa2cd-2327-45ba-bf38-0ef543fa8f67
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

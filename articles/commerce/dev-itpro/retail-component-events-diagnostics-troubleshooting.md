@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail component events for diagnostics and troubleshooting
-description: To enable diagnostics and troubleshooting, all Commerce components, which include clients such as the Retail Modern POS and server components, such as Commerce Scale Unit, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Commerce-specific components.
+title: Commerce component events for diagnostics and troubleshooting
+description: This topic explains where to find events from Commerce-specific components.
 author: aamirallaqaband
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,59 +30,60 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail component events for diagnostics and troubleshooting
+# Commerce component events for diagnostics and troubleshooting
 
 [!include [banner](../includes/banner.md)]
 
-To enable diagnostics and troubleshooting, all Commerce components, which include clients such as the Retail Modern POS and server components, such as Commerce Scale Unit, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Commerce-specific components.
+This topic explains where to find events from Commerce-specific components. To enable diagnostics and troubleshooting, Commerce components, which include self-hosted components such as the Retail Modern POS and cloud-hosted components, such as Commerce Scale Unit and E-Commerce modules, log their events locally to Event Viewer (or to the browser developer tools console such as F12). Events are also logged in the Microsoft Dynamics Lifecycle Services (LCS) log search experience.
 
-Viewing events in Event Viewer
-------------------------------
+## Viewing events in Event Viewer
 
 You can use Event Viewer to view events for components that are installed on computers that run Microsoft Windows, if you have physical access to the computer where the events are logged. For more information about Event Viewer, see [Event Viewer](https://technet.microsoft.com/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5) on TechNet. You can also use Event Viewer to view events remotely from computers that you have access to. For more information about how to use Event Viewer to view events remotely, see [Work with Event Logs on a Remote Computer](https://technet.microsoft.com/library/cc766438.aspx) on TechNet. Typically, Event Viewer is used for troubleshooting in the following use cases:
 
--   Development on a developer topology or on a downloadable virtual hard disk (VHD) that provides access to Event Viewer
--   Client components, when you're running a conference room pilot and have access to Event Viewer for that computer
+- Development on a developer topology or on a downloadable virtual hard disk (VHD) that provides access to Event Viewer.
+- Client components, when you're running a conference room pilot and have access to Event Viewer for that computer.
 
-However, for most other cases, and especially when you don't have access to Event Viewer for the computer, you can use Log Search on Microsoft Dynamics Lifecycle Services (LCS). Log Search is discussed later in this article. This section applies to the following components:
+However, for most other cases, and especially when you don't have access to Event Viewer for the computer, you can use Log Search on LCS. For E-Commerce modules, events are currently available only in browser developer tools (such as F12). Log Search is discussed later in this topic. This section applies to the following components:
 
--   Commerce Scale Unit
--   Retail Modern POS
--   Retail Hardware Station
+- Commerce Scale Unit
+- Retail Modern POS
+- Retail Hardware Station
 
 ### Find Commerce-specific events in Event Viewer
 
-To start Event Viewer on a computer, right-click the **Start** button, and then click **Event Viewer**. 
+To start Event Viewer on a computer, right-click the **Start** button, and then click **Event Viewer**.
 
-[![Event Viewer command on the shortcut menu for the Start button](./media/launch-event-viewer.png)](./media/launch-event-viewer.png) 
+[![Event Viewer command on the shortcut menu for the Start button](./media/launch-event-viewer.png)](./media/launch-event-viewer.png)
 
 All Commerce-specific event logs can be found under the following path in Event Viewer: Application and Services Logs\\Microsoft\\Dynamics We provide the following Commerce-specific event logs:
 
--   **Commerce-RetailServer** – This log contains events that are logged by the Commerce Scale Unit components.
--   **Commerce-ModernPos** – This log contains events that are logged by Retail Modern POS. These events include events from the TypeScript and C\# (CRT) layer.
--   **Commerce-LoggingProvider** – This log contains events that are logged by all other Commerce components that aren't included in the list earlier in this article.
+- **Commerce-RetailServer** – This log contains events that are logged by the Commerce Scale Unit components.
+- **Commerce-ModernPos** – This log contains events that are logged by Retail Modern POS. These events include events from the TypeScript and C\# (CRT) layer.
+- **Commerce-LoggingProvider** – This log contains events that are logged by all other Commerce components that aren't included in the list earlier in this article.
 
 ### Enable debug event logs
 
 Currently, some of the events that are logged by various components are sent to debug event logs. These events are verbose events that are logged at very high rates and are useful only for detailed debugging scenarios. Follow this step to enable the debug event logs in Event Viewer.
 
--   Right-click a debug log, and then click **Enable Log**.
+- Right-click a debug log, and then click **Enable Log**.
 
-[![Enable Log command on the shortcut menu for a debug log](./media/enable-debugging-log.png)](./media/enable-debugging-log.png)
+![Enable Log command on the shortcut menu for a debug log](./media/enable-debugging-log.png)
 
 ## Viewing events by using the (F12) browser developer tools console
-Because Retail Cloud POS is a browser-based component, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://msdn.microsoft.com/library/dn255006(v=vs.85).aspx) on MSDN. To use the browser developer tools for Retail Cloud POS, you must use a supported browser version.
+
+Because Retail Cloud POS and E-Commerce modules are browser-based components, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://docs.microsoft.com/microsoft-edge/devtools-guide/console). To use the browser developer tools for Retail Cloud POS or E-Commerce modules, you must use a supported browser version.
 
 ### View events in the browser developer tools console
 
-1.  Start Internet Explorer or Microsoft Edge, and go to Retail Cloud POS.
-2.  Press F12, and then click the **Console** tab.
-3.  As you perform operations on Retail Cloud POS, events are logged in the console. You can filter by event severity to view events that have different severity levels.
+1. Start your browser, and navigate to Retail Cloud POS or your E-Commerce website.
+2. Press F12, and then click the **Console** tab.
+3. As you perform operations on Retail Cloud POS or on your E-Commerce website, events are logged in the console. You can filter by event severity to view events that have different severity levels.
 
 [![Console tab in the browser developer tools](./media/browser-console-1024x522.png)](./media/browser-console.png)
 
 ## Correlating events
-This sections explains how to correlate events from various Commerce components.
+
+This section explains how to correlate events from various Commerce components.
 
 ### Data flow between a POS client and Commerce Scale Unit
 
@@ -102,7 +103,7 @@ Whenever a POS client makes a call to the Commerce Scale Unit, the AppSessionID 
 
 #### Request activity on Commerce Scale Unit
 
-Every event that is logged as part of a Commerce Scale Unit request has the same ActivityID as the initial event that was logged for the initial incoming request event (Event ID 5000). These events are available in both Event Viewer and LCS Log Search. 
+Every event that is logged as part of a Commerce Scale Unit request has the same ActivityID as the initial event that was logged for the initial incoming request event (Event ID 5000). These events are available in both Event Viewer and LCS Log Search.
 
 [![Data flow between a POS client and Commerce Scale Unit](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
 
@@ -110,10 +111,10 @@ Every event that is logged as part of a Commerce Scale Unit request has the same
 
 Every event that is logged by Retail Modern POS includes the following data points:
 
--   **AppSessionID** – A unique ID that is generated when the app is first started. It's included with every event that is logged.
--   **UserSessionID** – A unique ID that is generated when a user signs in to Retail Modern POS. It's included with every event that is logged, for as long as the user remains signed in. When a new user signs in, a new UserSessionID is created.
+- **AppSessionID** – A unique ID that is generated when the app is first started. It's included with every event that is logged.
+- **UserSessionID** – A unique ID that is generated when a user signs in to Retail Modern POS. It's included with every event that is logged, for as long as the user remains signed in. When a new user signs in, a new UserSessionID is created.
 
-You can find the AppSessionID and UserSessionID values on the **Details** tab in Event Viewer on the machine where Retail Modern POS is installed. 
+You can find the AppSessionID and UserSessionID values on the **Details** tab in Event Viewer on the machine where Retail Modern POS is installed.
 
 [![Details tab in Event Viewer](./media/correlation-1024x672.png)](./media/correlation.png)
 
@@ -121,54 +122,190 @@ You can find the AppSessionID and UserSessionID values on the **Details** tab in
 
 To correlate data for incoming Commerce Scale Unit requests in Event Viewer, you must first enable the **Analytic** channel. To enable the Analytic channel, follow these steps.
 
-1.  In Event Viewer, in the left pane, select **Commerce-RetailServer**.
-2.  Click **View** &gt; **Enable Analytic and Debug log**. A new node for the Analytic channel appears under the **Commerce-RetailServer** logging provider.
-3.  Right-click the **Analytic** node, and then click **Enable log**.
+1. In Event Viewer, in the left pane, select **Commerce-RetailServer**.
+2. Click **View** &gt; **Enable Analytic and Debug log**. A new node for the Analytic channel appears under the **Commerce-RetailServer** logging provider.
+3. Right-click the **Analytic** node, and then click **Enable log**.
 
 In Event Viewer, all incoming Commerce Scale Unit requests are logged to the Analytic channel of the Commerce-RetailServer source as event 5000. These events also have the AppSessionID and UserSessionID that were described earlier. Every event also has a unique ActivityID that is instrumented for every logged event for the same request.
 
 ## Using LCS Log Search
-LCS Log Search lets you view data from all the components from a single portal. You can access events from both cloud-hosted components (such as Commerce Scale Unit) and in-store components (such as Retail Modern POS and Retail Hardware Station). Event data from all cloud-hosted and in-store components flows to LCS Log Search, where it's indexed and made searchable. Data is typically available within 5 minutes after it's logged. For POS clients and Retail Hardware Station, all events are locally queued in persistent storage and then uploaded in batches after the queue is filled. This behavior enables network traffic to be optimized. It also enables events to be saved even when there is no Internet connectivity. After connectivity is restored, all pending events are uploaded. 
+
+LCS Log Search lets you view data from all the components from a single portal. You can access events from both cloud-hosted components (such as Commerce Scale Unit) and in-store components (such as Retail Modern POS and Retail Hardware Station). Event data from all cloud-hosted and in-store components flows to LCS Log Search, where it's indexed and made searchable. Data is typically available within 5 minutes after it's logged. For POS clients and Retail Hardware Station, all events are locally queued in persistent storage and then uploaded in batches after the queue is filled. This behavior enables network traffic to be optimized. It also enables events to be saved even when there is no Internet connectivity. After connectivity is restored, all pending events are uploaded.
 
 LCS Log Search is available for the HA production topology. It can be used for the following Commerce components:
 
--   Retail Modern POS
--   Retail Cloud POS
--   Commerce Scale Unit (running on Retail Cloud Scale Unit)
+- Retail Modern POS
+- Retail Cloud POS
+- Commerce Scale Unit (running on Retail Cloud Scale Unit)
 
 LCS Log Search does **not** include logs from the following Commerce components:
 
--   Commerce layout designer
--   Commerce receipt designer
--   Self-service installer for Retail Modern POS
--   Self-service installer for Retail Hardware Station
--   Commerce Scale Unit (running on Retail Store Scale Unit)
--   Retail Hardware Station
+- Commerce layout designer
+- Commerce receipt designer
+- Self-service installer for Retail Modern POS
+- Self-service installer for Retail Hardware Station
+- Commerce Scale Unit (running on Retail Store Scale Unit)
+- Retail Hardware Station
 
 ### Access LCS Log Search
 
 To access LCS Log Search, follow these steps.
 
-1.  Go to [Lifecycle Services](https://lcs.dynamics.com/).
-2.  Sign in by using the credentials that are associated with your project.
-3.  On the project page, select the correct project.
-4.  On the **Project details** page, select the correct environment.
-5.  On the **Environment details** page, click **Environment Monitoring**.
-6.  On the **Environment monitoring** page, click **View raw logs**.
-7.  On the **Log Search** page, select one of the following queries:
-    -   **Commerce client events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Commerce Scale Unit (running on Retail Cloud Scale Unit)
-    -   **All logs** query, which includes data from Commerce Scale Unit, Commerce Data Exchange, and Commerce Data Exchange: Real-time Service
+1. Go to [Lifecycle Services](https://lcs.dynamics.com/).
+2. Sign in by using the credentials that are associated with your project.
+3. On the project page, select the correct project.
+4. On the **Project details** page, select the correct environment.
+5. On the **Environment details** page, click **Environment Monitoring**.
+6. On the **Environment monitoring** page, click **View raw logs**.
+7. On the **Log Search** page, select one of the following queries:
+
+    - **Commerce client events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Commerce Scale Unit (running on Retail Cloud Scale Unit)
+    - **All logs** query, which includes data from Commerce Scale Unit, Commerce Data Exchange, and Commerce Data Exchange: Real-time Service
 
 You can filter by the following criteria to refine your query:
 
--   Start and end dates and times (in Coordinated Universal Time \[UTC\])
--   Device ID
--   POS user
--   POS application session ID
--   POS user session ID
--   Severity level
+- Start and end dates and times (in Coordinated Universal Time \[UTC\])
+- Device ID
+- POS user
+- POS application session ID
+- POS user session ID
+- Severity level
 
-[![Search results on the Environment monitoring page](./media/log-search-results.png)](./media/log-search-results.png)
+![Search results on the Environment monitoring page](./media/log-search-results.png)
 
+### E-Commerce events
 
+The following events are logged by the E-Commerce website, and can be consumed for troubleshooting directly in the browser, or programmatically by partner extensions for analytics, experimentation, or other purposes.
 
+### Button and link clicks
+
+Button and link clicks for the following types of elements on an E-Commerce website are logged as telemetry events.
+
+- Header
+  - Navigation hierarchy
+  - Cart icon
+  - Sign-in
+  - Search icon
+  - Wishlist icon
+- Content block action links (This represents the hero, tile, and feature modules for marketing content.)
+- Video player
+- Product cards
+- Footer links
+- Breadcrumbs
+- Promo banner
+- Add to cart button
+- Checkout button
+- Place order button
+
+The schema for **Click** action is:
+
+```json
+Click
+IPayLoad = {
+        contentCategory: Name of element clicked on,
+        contentAction:  {
+            pgname: Name of page,
+            mname: name of module,
+            etext: Text of element clicked on,
+            recid: Product ID if a product was clicked on,
+            etype: ‘click’,
+        }
+    };
+```
+
+### Page views
+
+Page view events are logged for each page view operation.
+
+The schema for a **PageView** action is:
+
+```json
+PageView
+IPageViewInfo = {
+    title;
+}
+```
+
+### Cart operations
+
+The following **Cart** related events are logged.
+
+- Add item to cart.
+- Update item in cart.
+- Remove item from cart.
+- Checkout.
+- Product Page view.
+
+The schema for **Cart** events is:
+
+```json
+/***
+ * Defines the telemetry properties to track for a Cart object
+ * @property products       {IProductInfo[]}    - Array of product information
+ * @property orderId        {string}            - ID for the order
+ * @property cartId         {string}            - ID for the current cart object
+ * @property cartVersion    {string}            - Version number for the current cart object
+ */
+export interface ICartInfo {
+    products: IProductInfo[];
+    orderId: string;
+    cartId: string;
+    cartVersion: string;
+}
+```
+
+### Purchase
+
+When an order is submitted, a Purchase event is logged. The schema for a **Purchase** event is:
+
+```json
+/***
+ * Defines the telemetry properties to track for a Purchase event
+ * @property id            {string}         - Transaction ID
+ * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
+ * @property revenue       {number}         - Revenue from this transaction
+ * @property tax           {number}         - Tax amount
+ * @property shippingCost  {number}         - Shipping cost
+ * @property products      {IProductInfo[]} - List of products in this transaction
+ */
+export interface IProductTransaction {
+    id: string;
+    affiliation?: string;
+    revenue?: number;
+    tax?: number;
+    shippingCost?: number;
+    products?: IProductInfo[];
+}
+```
+
+### Product details
+
+Product details are logged for **Cart** and **Purchase** operations. The schema for **Product** details is:
+
+```json
+/***
+ * Defines the telemetry properties to track for a Product object
+ * @property productChannelId       {string}   - Product channel ID
+ * @property productChannelName     {string}   - Product channel name
+ * @property productCategoryId      {string}   - Product category ID
+ * @property productCategoryName    {string}   - Product category name
+ * @property productId              {string}   - Product ID
+ * @property productName            {string}   - Product name
+ * @property productSku             {string}   - Product SKU
+ * @property productPrice           {string}   - Product price
+ * @property productQuantity        {string}   - Product quantity
+ * @property productCurrency        {string}   - Product currency code
+ */
+export interface IProductInfo {
+    productChannelId: string;
+    productChannelName: string;
+    productCategoryId: string;
+    productCategoryName: string;
+    productId: string;
+    productName: string;
+    productSku: string;
+    productPrice: string;
+    productQuantity: string;
+    productCurrency: string;
+}
+```

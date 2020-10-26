@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Release 10.0.11
 ---
 
 # License plate receiving via the warehouse app
+
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up the warehouse app so that it supports using a license plate receiving process to receive physical inventory.
 

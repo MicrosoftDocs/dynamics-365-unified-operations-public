@@ -24,13 +24,12 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Order details module
-
 
 [!include [banner](includes/banner.md)]
 
@@ -77,16 +76,16 @@ To add an order details module to a new page and set the required properties, fo
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
-
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
 [Cart module](add-cart-module.md)
+
+[Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
 
-[Header module](author-header-module.md)
+[Payment module](payment-module.md)
 
-[Footer module](author-footer-module.md)
+[Shipping address module](ship-address-module.md)
+
+[Delivery options module](delivery-options-module.md)
+
+[Gift card module](add-giftcard.md)

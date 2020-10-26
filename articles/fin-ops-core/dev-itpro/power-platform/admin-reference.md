@@ -38,7 +38,7 @@ This topic provides step-by-step instructions about how to set up and configure 
 ## Getting the solution
 The Common Data Service solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
-Ensure the following solutions are installed in Common Data Service. These solutions must be extracted from the downloaded package.
+Ensure the following solutions are installed in Common Data Service.
 
 - **Dynamics365Company** - This adds the **Company** entity, which is referenced by all Finance and Operations entities with a PrimaryCompanyContext metadata value.
 
@@ -135,7 +135,7 @@ The next step in the process is to provide Common Data Service with the Finance 
 
 Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
 
-1. In Common Data Service, go to **Advanced find**.
+1. In Common Data Service, go to **Advanced find** (filter icon).
 
 2. Look for “Available Finance and Operations Entities” and select **Results**.
 

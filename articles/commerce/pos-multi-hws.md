@@ -7,7 +7,7 @@ author: rubendel
 manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
-ms.prod: tonyafehr
+ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 
@@ -83,8 +83,8 @@ To set up the hardware profile that is assigned to the register, follow these st
 
     | Device | Type | Device name | Additional details |
     |---|---|---|---|
-    | Printer | Fallback | **Epson** or **Star** | The device name is case-sensitive. The **Receipt profile ID** should be the same as the **Receipt profile ID** that is mapped to the network printer that is set up in the hardware profile that is assigned to the hardware station at the channel level. |
-    | Cash drawer | Fallback | **Epson** or **Star** | The device name is case-sensitive. Set the **Use shared shift** option to **Yes**. |
+    | Printer | Fallback | *Any* | The device name is case-sensitive. The **Receipt profile ID** should be the same as the **Receipt profile ID** that is mapped to the network printer that is set up in the hardware profile that is assigned to the hardware station at the channel level. |
+    | Cash drawer | Fallback | *Any* | The device name is case-sensitive. Set the **Use shared shift** option to **Yes**. |
     | EFT service | Adyen | Not applicable | For information about how to set up the out-of-box Adyen connector, see [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Other payment connectors can be supported via the [Commerce software development kit (SDK) for payments](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
     | PIN pad | Network | **MicrosoftAdyenDeviceV001** | None. |
 
@@ -108,7 +108,7 @@ To set up the hardware profile that is used to group the network receipt printer
     | Device | Type | Description | Additional details |
     |---|---|---|---|
     | Printer | Network | **Epson** or **Star** | The device name is case-sensitive. The **Receipt profile ID** should be the same as the **Receipt profile ID** that is mapped to the printer that is set up in the hardware profile that is assigned to the register. |
-    | Cash drawer | Fallback | **Epson** or **Star** | The device name is case-sensitive. set the **Use shared shift** option to **Yes**. |
+    | Cash drawer | Network | **Epson** or **Star** | The device name is case-sensitive. set the **Use shared shift** option to **Yes**. |
 
 5. Select **Save**.
 

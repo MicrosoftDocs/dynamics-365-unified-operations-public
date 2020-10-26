@@ -21,7 +21,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 
@@ -69,7 +69,7 @@ The results of the on-hand inventory calculation on the inventory closing date a
 
 ### Inventory balance turnover inquiry
 
-1. Go to **Inventory management** \> **Inquires and reports** \> **Transactions** \> **Inventory balance turnover**.
+1. Go to **Inventory management** \> **Inquires and reports** \> **Transactional reports (Russia)** \> **Inventory balance turnover**.
 
     ![Inventory balance turnover page](media/3_Inventory_balance_turnover.png)
 

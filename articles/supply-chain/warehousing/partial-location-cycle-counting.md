@@ -5,7 +5,7 @@ title: Partial location cycle counting
 description: Cycle count plans guide the actual counting operations. You can request that only specific products and product variants be counted instead of all on-hand inventory in a location.
 author: perlynne
 manager: tfehr
-ms.date: 11/02/2017
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
+ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -48,7 +48,7 @@ If you associate cycle count plans with work templates by using the **Work lines
 
 Before partial cycle count work can be processed, you must, at a minimum, select **Display item number** for the mobile device menu item as part of the cycle counting setup. The warehouse operator will be asked to record only counting information that is related to the counting lines (item numbers and product dimensions). All other on-hand inventory will be ignored for this counting process. 
 
-For the partial cycle count process, the **Last cycle count** date/time won’t be updated for the location.
+For the partial cycle count process, the **Last cycle count** date/time won’t be updated for the location, even though all the items on hand at a given location are counted. The partial cycle count doesn't consider the parameter **Days between cycle counting** on  the **Cycle count plans** page. Partial cycle count doesn't support simultaneous counting of multiple items at the same location. Partial cycle count functionality may result in the same location being counted multiple times for an item when **Process cycle counting plan** is run. To avoid that scenario, specify filters in the **Select locations** field.
 
 ## Example
 For this example, only item number A0001 must be counted in warehouse 61.

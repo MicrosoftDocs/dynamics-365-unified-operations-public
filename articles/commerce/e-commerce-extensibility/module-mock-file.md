@@ -81,6 +81,8 @@ To render a module by using a different mock file, run the **yarn start** comman
 
 ## Additional resources
 
+[Modules overview](modules-overview.md)
+
 [Module definition file](module-definition-file.md)
 
 [Module React component file](module-react-file.md)

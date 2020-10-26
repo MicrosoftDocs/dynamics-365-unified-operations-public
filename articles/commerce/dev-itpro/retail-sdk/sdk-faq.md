@@ -5,7 +5,7 @@ title: Retail SDK FAQ
 description: This topic summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -70,7 +70,7 @@ public class MyHandler : IRequestHandlerAsync
 }
 ```
 
-The following examples, which is not recommended, uses **ISupportedTypesAware**.
+The following example, which is not recommended, uses **ISupportedTypesAware**.
 
 ```csharp
 // NOT RECOMMENDED
@@ -126,6 +126,15 @@ Additionally, to exempt more than one column for a given entity, use a comma as 
 > [!NOTE]
 > ITEMTAXGROUPID, TAXAMOUNT, TOTALAMOUNT are the column names of the properties in the examples above, not the actual property names.
 
-
-
 After adding the config run job 1110 to push this change.
+
+## - Deployment failed with error - Could not load file or assembly Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts
+
+**Deployment of the new retail deployable package fails with the message:**
+
+*An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. 
+Could not load file or assembly "Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" or one of its dependencies. The system cannot find the file specified.*
+
+This error may occur if the extension project upgraded from Retail SDK version 10.0.10 or 10.0.11 to Retail SDK version 10.0.12 or later, and there are extension projects referencing Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts.
+
+To fix this issue, remove the reference to Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts in the extension project and regenerate the package and deploy again. Removing this reference library will not impact extension code/functionality because it’s not needed for extension solutions. Starting in version 10.0.11, extensions can refer to Microsoft.Dynamics.Commerce.Hosting.Contracts for Retail server APIs.

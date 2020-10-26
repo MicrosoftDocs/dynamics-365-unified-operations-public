@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Human Resources
-description: Each week, we provide a new release for Microsoft Dynamics 365 Human Resources. The articles listed in here detail the changes made each week.
+description: Each week, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made each week.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/22/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,9 +32,17 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Human Resources
 
-Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources. The articles in this section detail the changes made with each release.
+Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made with each release.
 
-For more information about upcoming features or the update process for Human Resources, see the following articles:
+>[!NOTE]
+>To account for holidays, the release schedule for November and December 2020 is as follows:
+>
+>- November release: November 2 - November 13
+>- December release: November 30 - December 11
+> 
+>The two-week release cadence will resume as usual on January 11, 2021.
+
+For more information about upcoming features or the update process for Human Resources, see the following articles: 
 
 - [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
@@ -44,8 +52,12 @@ For more information about upcoming features or the update process for Human Res
 
 ## Human Resources weekly releases
 
-To see what's new or changed in each biweekly release of Human Resources, see the following articles:
+To find out what's new or changed in each biweekly release of Human Resources, see the following articles:
 
+[September 16, 2020](hr-whats-new-2020-09-16.md)</br>
+[September 3, 2020](hr-whats-new-2020-09-03.md)</br>
+[August 20, 2020](hr-whats-new-2020-08-20.md)</br>
+[August 6, 2020](hr-whats-new-2020-08-06.md)</br>
 [July 23, 2020](hr-whats-new-2020-07-23.md)</br>
 [July 8, 2020](hr-whats-new-2020-07-08.md)</br>
 [June 23, 2020](hr-whats-new-2020-06-23.md)</br>

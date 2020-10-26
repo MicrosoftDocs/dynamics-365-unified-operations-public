@@ -1,25 +1,25 @@
 ---
 # required metadata
 title: PageLinkMetadata type
-description: Pagelink metadata type.
+description: Page link metadata type.
 author: shadykdc
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 # optional metadata
 # ms.search.form:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
+ms.search.scope:
+# ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
+# ms.search.industry:
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
@@ -67,183 +67,156 @@ Pagelink metadata type.
 
 ### BoundEntity
 
-BoundEntity: string (optional) 
+BoundEntity: string (optional)
 
 The entity to which the control is bound.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundEntity](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundEntity](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundentity)
 
 ### BoundField
 
-BoundField: string (optional) 
+BoundField: string (optional)
 
-
-
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundField](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundField](view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield)
 
 ### Description
 
-Description: string (optional) 
+Description: string (optional)
 
 Description of the control.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Description](view-model-control-basecontrol-icontrol-icontrolmetadata.md#description)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Description](view-model-control-basecontrol-icontrol-icontrolmetadata.md#description)
 
 ### Editable
 
-Editable: boolean (optional) 
+Editable: boolean (optional)
 
 Boolean indicating if the control is editable.
-False when either the control or it's parent is not editable.
-True when both the control and it's parent are editable.
-True when either the control or it's parent is editable and the other is undefined.
-Undefined if both the control's edit-ability and it's parent's edit-ability is undefined.
+False when either the control or its parent is not editable.
+True when both the control and its parent are editable.
+True when either the control or its parent is editable and the other is undefined.
+Undefined if both the control's edit-ability and its parent's edit-ability is undefined.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)
 
 ### ExcludeContext
 
-ExcludeContext: boolean (optional) 
-
-
-
+ExcludeContext: boolean (optional)
 
 ### ExtType
 
-ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional) 
+ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional)
 
-The extended control type. E.g. a control of type Input might have an extended type of Barcode.
+The extended control type. For example, a control of type Input might have an extended type of Barcode.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)
 
 ### HelpText
 
-HelpText: string (optional) 
+HelpText: string (optional)
 
-The keyboard shortcut for a command. E.g. "(Shift+F5)"
+The keyboard shortcut for a command. For example, "(Shift+F5)"
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)
 
 ### Hidden
 
-Hidden: boolean (optional) 
+Hidden: boolean (optional)
 
 Boolean indicating if the control is hidden or not.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden)
 
 ### Icon
 
-Icon: string (optional) 
+Icon: string (optional)
 
-Name of the icon that is displayed in the pagelink control.
+Name of the icon that is displayed in the page link control.
 Here is a [list of available icons](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont).
-
 
 ### IconSize
 
-IconSize: number (optional) 
+IconSize: number (optional)
 
-Determines the size of the icon that is displayed in the pagelink control.
-
+Determines the size of the icon that is displayed in the page link control.
 
 ### Id
 
-Id: string (optional) 
+Id: string (optional)
 
 Identification string for a control.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](view-model-control-basecontrol-icontrol-icontrolmetadata.md#id)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](view-model-control-basecontrol-icontrol-icontrolmetadata.md#id)
 
 ### Label
 
-Label: string (optional) 
+Label: string (optional)
 
-Label for a control. E.g. a control representing a person's first name might have a label "First Name".
+Label for a control. For example, a control representing a person's first name might have a label "First Name".
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)
 
 ### Name
 
-Name: string (optional) 
+Name: string (optional)
 
 Name of a control.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](view-model-control-basecontrol-icontrol-icontrolmetadata.md#name)
 
 ### Navigation
 
-Navigation: [NavigationArgs](view-model-ipage-inavigationargs.md) (optional) 
+Navigation: [NavigationArgs](view-model-ipage-inavigationargs.md) (optional)
 
-Navigation object of the pagelink.
-
+Navigation object of the page link.
 
 ### Order
 
-Order: number (optional) 
+Order: number (optional)
 
 Number indicating the order in which a control will appear on a page.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](view-model-control-basecontrol-icontrol-icontrolmetadata.md#order)
 
 ### ShowCount
 
-ShowCount: boolean (optional) 
+ShowCount: boolean (optional)
 
 If true, shows a count of the records present in the list on the target page.
 This property is only suitable when the navigation target is a Page which contains on a List control.
 
-
 ### Style
 
-Style: string (optional) 
+Style: string (optional)
 
-Determines the visual style of the pagelink control.
+Determines the visual style of the page link control.
 Options:
 * "inline": takes up the full width its container, with the label in-line with the icon
 * "button": takes up only as much width as needed by the label, with the label below the icon
 
-
 ### Target
 
-Target: string (optional) 
+Target: string (optional)
 
-Name of the target action or page to navigate to when the pagelink is selected.
-
+Name of the target action or page to navigate to when the page link is selected.
 
 ### Type
 
-Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional) 
+Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional)
 
 String indicating the control type.
 
-> Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)
-
+Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)
 
 ### UseDataContext
 
-UseDataContext: boolean (optional) 
-
-
-
+UseDataContext: boolean (optional)
 
 ## Events
 
 ### OnNavigate
 
-OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationargs.md) &#124; string): any (optional) 
+OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationargs.md) &#124; string): any (optional)
 
 An event that is triggered when the navigation is triggered.
-
 

@@ -5,7 +5,7 @@ title: Set up Commerce SDK build pipeline
 description: This topic shows how to set up the Azure DevOps build pipeline for the Retail SDK.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -45,9 +45,6 @@ The Retail SDK must be added to Azure Repos (Git repository), GitHub, or Azure D
 2. Select **Pipeline** and click **New pipeline**.
 3. Select your source repo.
 4. Click the pipeline and provide a name for your pipeline. For **Agent pool**, choose **Azure Pipelines**. For **Agent Specification**, enter **vs2017-win2016**.
-
-    :::image type="content" source="media/Step1.png" alt-text="Pipeline":::
-
 5. On the **Get sources** tab, select your Retail SDK repo.
 
     :::image type="content" source="media/Step2.png" alt-text="Get sources":::

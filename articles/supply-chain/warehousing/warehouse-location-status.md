@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: WHSLocationProfile,WHSLocation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -81,6 +81,9 @@ The example scenario requires that you prepare two location profiles.
     These options control whether the reference fields on the location are active.
 
 1. Repeat steps 3 through 4 for the **PICK-06** profile.
+
+> [!NOTE]
+> When the parameters on the location profile (**Enable item in location**, **Enable location activity**, **Enable location status**) are set to *Yes*, the system immediately updates the relevant locations by executing the *warehouse location status consistency check* job.
 
 ### Scenario
 
