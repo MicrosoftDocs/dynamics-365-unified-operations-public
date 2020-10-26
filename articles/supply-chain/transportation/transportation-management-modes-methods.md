@@ -2,7 +2,7 @@
 # required metadata
 
 title: Transportation management modes and methods
-description: The mode represents the type of transport that the carrier uses for freight deliveries, such as less than load (LTL), truckload (TL), or parcel. The transportation method represents the form of transport that the carrier uses for freight deliveries, such as air, ground, ocean, or rail.
+description: This topic shows how to set up Transportation management modes and methods.
 author: Henrikan
 manager: tfehr
 ms.date: 10/16/2020
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Release 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-The mode represents the type of transport that the carrier uses for freight deliveries, such as less than load (LTL), truckload (TL), or parcel. The transportation method represents the form of transport that the carrier uses for freight deliveries, such as air, ground, ocean, or rail.
+The transportation management  mode represents the type of transport that the carrier uses for freight deliveries, such as less than load (LTL), truckload (TL), or parcel. The transportation method represents the form of transport that the carrier uses for freight deliveries, such as air, ground, ocean, or rail.
 
-Modes and transportation methods are used in several contexts. Only modes are used in route plans, while both modes and transportation methods are used in when setting up shipping carriers and carrier services. No explicit relationship or hierarchy exists between mode and transportation methods.
+Modes and transportation methods are used in several contexts. Only modes are used in route plans, while both modes and transportation methods are used when setting up shipping carriers and carrier services. No explicit relationship or hierarchy exists between modes and transportation methods.
 
 ## Create a mode
 
