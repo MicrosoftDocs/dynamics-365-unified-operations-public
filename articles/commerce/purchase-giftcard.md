@@ -40,13 +40,15 @@ In Dynamics 365 Commerce 10.0.15 release, we support purchase of digital gift ca
 ## Configuring a digital gift card in Headquarters
 A gift card product should be configured in headquarters similar to other products. Here are the important steps for configuring a gift card for e-commerce purchase.
 
-- If the product is a digital gift card set Item Type= Service item when configuring the product. If a product is of type Service item it will not be checked for available inventory before placing an order.
-- If the gift card has multiple pre-defined values such as $25, $50 etc. This has to be setup using the Size dimension and each predetermined amount will be a variant.
+- If the product is a digital gift card set **Item Type= Service item** when configuring the product. If a product is of type Service item it will not be checked for available inventory before placing an order. For more details refer to [Creating a product](create-new-product-commerce.md)
+- If the gift card needs to support multiple pre-defined values such as $25, $50 etc. This should be setup using the Size dimension and each pre-determined amount will be a variant. For more details refer to [Product dimensions](product-dimensions.md)
 - If the gift card allows a custom amount, it should have xyz = Key in Price. This ensures a price can be entered by the customer when browsing the product on the product details page.
-- Set the delivery mode for gift cards to be of type Electronic
-- Add a product image for the gift card product in Site Builder's Digital Asset Management. The gift card image file name(s) should follow the same pattern as defined in the Media template. 
-- The product needs to be configured to be of type Gift card. 
-Set up the email template for "Issue Giftcard" action so the customer receives an email once the gift card is invoiced
+- Set the delivery mode for gift cards to be of type Electronic. For more details refer to [Setup up modes of delivery](./appuser-itpro/set-up-modes-of-delivery.md)
+- Add product image(s) for the gift card product in Site Builder's Digital Asset Management. The gift card image file name(s) should follow the same pattern as defined in the Media template. 
+- The product needs to be configured to be of type Gift card.  For more details refer to [Setup email notification](email-notification-profiles.md)
+- Set up the email template for "Issue Giftcard" action so the customer receives an email once the gift card is invoiced.
+
+
 
 ## Enabling Gift card feature in Headquarters
 **xx** feature flag must be enabled in headquarters for gift card purchase flow.
