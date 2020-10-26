@@ -2,9 +2,9 @@
 
 This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Source filter: (SalesOrderNumber != "")
+Source filter: `(SalesOrderNumber != "")`
 
-Finance and Operations apps | Map type | model-driven apps in Dynamics 365 | Default value
+Finance and Operations apps | Map type | Customer engagement apps | Default value
 ---|---|---|---
 none | >> | ispricelocked | False
 none | >> | statuscode | 4
@@ -28,3 +28,4 @@ TOTALDISCOUNTAMOUNT | >> | totaldiscountamount |
 TOTALDISCOUNTCUSTOMERGROUPCODE | >> | discountamount | 
 TOTALINVOICEAMOUNT | >> | totalamount | 
 TOTALTAXAMOUNT | >> | totaltax | 
+

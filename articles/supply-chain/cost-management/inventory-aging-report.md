@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 # ROBOTS:
 audience: Application User
 # ms.devlang: 

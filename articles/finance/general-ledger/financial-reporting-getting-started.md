@@ -2,10 +2,10 @@
 # required metadata
 
 title: Financial reporting overview
-description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
+description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Financial reporting overview
+# Get started with Financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ This topic describes where to access financial reporting and how to use the fina
 Accessing financial reporting
 -----------------------------
 
-You can find the **Financial reporting** menu in the following places:
+You can find the **Financial reporting** menu in the following locations:
 
 -   **General Ledger** &gt; **Inquiries and reports**
 -   **Budgeting** &gt; **Inquires and reports** &gt; **Basic budgeting**
@@ -54,6 +54,7 @@ To create and generate financial reports for a legal entity, you must set up the
 -   Chart of accounts
 -   Currency
 
+## Granting security access to Financial Reporting
 The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
 
 ### Duties
@@ -83,21 +84,24 @@ The financial reporting functions are available to users who have the appropriat
 | Generate financial reports            | Generate financial reports            | CEO, CFO, Accountant                                                            |
 | View financial reports                | Review financial performance          | None assigned                                                                   |
 
-After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes. **Note:** The sysadmin role is added to all roles in financial reporting.
+After a user is added or a role is changed, the user should be able to access financial reporting within a few minutes. 
+
+> [!NOTE]
+> The sysadmin role is added to all roles in financial reporting.
 
 ## Report deletions and expirations
 Users who generate a report can delete their own reports. Users with the **Maintain financial reporting security** duty can delete other's reports. 
 
-In version 10.0.8, the concept of expiration dates has been introduced. A new required feature will be enabled in the **All** page within the feature management workspace. The **Financial report retention policies** feature contains the following changes:
-* Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated
+In release 10.0.8, the concept of expiration dates was introduced. A new required feature is enabled in the **All** page within the feature management workspace. The **Financial report retention policies** feature contains the following changes:
+* Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated.
 * Any existing reports from before the feature was installed will be given a 90-day expiration period. The date may show as blank for a short period of time until the financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
-* Users with **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available. 
+* Users with **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available: 
   * An expiration of 90 days.
   * An option to set the report to never expire.
   
-Additional options will be considered in future functionality. The expiration of 90 days will be the default, and users with appropriate permissions can override the default on the **Financial reports** list page.    
+When an expiration, such as 90 days, is selected, it's applied 90 days from today. This is different behavior than the 90 days from the original generation date set when the report was generated. 
   
-When an expiration such as 90 days is selected, it grants 90 days from today, which is different behavior than the 90 days from the original generation date set during report generation. 
+Additional options will be considered in future functionality. The expiration of 90 days will be the default, and users with appropriate permissions can override the default on the **Financial reports** list page.    
 
 ## Default reports
 Financial reporting provides 22 default financial reports. Every report uses the default main account categories. You can use these reports as is or as a starting point for your financial reporting needs. In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create. 
@@ -130,16 +134,46 @@ Financial reporting provides 22 default financial reports. Every report uses the
 | Budget Funds Available - Default                         | View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts                                                                                                                                                                                  |
 
 ## Opening financial reports
-When you click the **Financial reporting** menu, the list of default financial reports for the company is shown. You can then open or modify a report. To open one of the default reports, select the report name. The first time that a report is opened, it's automatically generated for the previous month. For example, if you open a report for the first time in August 2016, the report is generated for July 31, 2016. After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.
+When you select the **Financial reporting** menu, the list of default financial reports for the company is shown. You can then open or modify a report. To open one of the default reports, select the report name. The first time that a report is opened, it's automatically generated for the previous month. For example, if you open a report for the first time in August 2019, the report is generated for July 31, 2019. After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.
 
 ## Creating and modifying financial reports
-From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Finance. 
+From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by selecting **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Dynamics 365 Finance. 
 
-> [!NOTE] 
-> The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345). If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. You can also modify a report that appears in the financial reports list. When the area around the report name is selected, click **Edit** on the Action Pane. The report designer program starts.
+## Reporting tree definitions 
+One of the components that's used to build financial reports is a reporting tree definition. A reporting tree definition helps define the structure and hierarchy of your organization. It's a cross-dimensional hierarchical structure that is based on the dimensional relationships in your financial data. It provides information at the reporting unit level and at a summary level for all units in the tree.
+
+You can create an unlimited number of reporting trees to display your organization’s data in various ways. Each reporting tree can contain any combination of departments and summary units, but a report definition can link to only one reporting tree at a time. 
+
+
+## Troubleshooting issues opening Report Designer
+There are a few common issues that can cause problems when you open Report Designer. Those issues and the steps to resolve them are as follows.
+
+Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
+
+* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
+* In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
+* Disable the pop-up blocker in your browser.
+* Workstations are required to install Microsoft .NET Framework 4.6.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* If you use Microsoft Edge with the Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode. 
+     1. Open a new browser in Microsoft Edge.
+     2. Enter **edge://flags** and select **Enter**.
+     3. Search for the **ClickOnce Support** option or use this direct link: **edge://flags/#edge-click-once**.
+     4. Set the drop-down menu option to **Enabled**.
+     5. Select **Restart Browser**.
+
+Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
+
+* To verify if the user does not have permission, select **Yes** on the error, “Unable to connect to the Financial Reporting server. Select Yes if you want to continue and specify a different server address.” Then select **Test Connection**. If you don't have permission, you will see a message that says, "Connection attempt failed. User does not have appropriate permissions to connect to the server. Contact your system administrator.”
+* Required permissions are listed above in [Granting security access to Financial Reporting](#granting-security-access-to-financial-reporting). Security in Financial Reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
+* The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to take effect in Financial Reporting. 
+  If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial Reporting. 
+* It may be possible that another error has prevented **Dynamics user to Financial Reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
+
+Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but are unable to complete sign in within Report Designer. 
+
+* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial Reporting server. If there is a difference of more than five minutes, the system will not allow sign in. 
+* In this case, we recommend enabling the Windows option to set your PC's time automatically. 
 
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
-
-
-
+- [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

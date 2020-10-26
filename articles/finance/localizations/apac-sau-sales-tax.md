@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Saudi Arabia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

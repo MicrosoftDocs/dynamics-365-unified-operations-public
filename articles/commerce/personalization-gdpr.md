@@ -5,7 +5,7 @@ title: Opt out of personalized recommendations
 description: This topic explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -78,7 +78,7 @@ The following example shows how a retailer can accomplish this task.
 1. The retailer creates a custom extension to pull personal recommendations data on behalf of the user. For information about how to create modules, clone existing modules, call Retail Server APIs, and call data actions, see [Online channel extensibility](e-commerce-extensibility/overview.md).
 2. The custom extension makes a call to the **get-recommendations** core data action and passes the required information to it, based on the requirements of the list. In the case of the **Picks for you** list, the extension must pass the correct list name and customer ID to the data action.
 
-    One way to create the custom extension is to clone the existing product collection module that is used to return recommendations results. By cloning this existing module, a retailer can modify the existing code and add a new button that exports the recommendations results to a CSV file. For more information, see [Clone a starter kit module](e-commerce-extensibility/clone-starter-module.md) and [Product collection modules](product-collection-module-overview.md).
+    One way to create the custom extension is to clone the existing product collection module that is used to return recommendations results. By cloning this existing module, a retailer can modify the existing code and add a new button that exports the recommendations results to a CSV file. For more information, see [Clone a module library module](e-commerce-extensibility/clone-starter-module.md) and [Product collection modules](product-collection-module-overview.md).
 
     For a full view of the Retail Server API library, see [Retail Server Customer and Consumer APIs](dev-itpro/retail-server-customer-consumer-api.md).
 
@@ -94,6 +94,8 @@ The following example shows how a retailer can accomplish this task.
 [Enable product recommendations](enable-product-recommendations.md)
 
 [Enable personalized recommendations](personalized-recommendations.md)
+
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
 [Add product recommendations on POS](product.md)
 

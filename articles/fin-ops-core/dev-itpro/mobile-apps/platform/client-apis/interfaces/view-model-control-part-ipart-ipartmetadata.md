@@ -19,7 +19,7 @@ ms.search.scope:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
@@ -94,10 +94,10 @@ Design for the target page.
 Editable: boolean (optional) 
 
 Boolean indicating if the control is editable.
-False when either the control or it's parent is not editable.
-True when both the control and it's parent are editable.
-True when either the control or it's parent is editable and the other is undefined.
-Undefined if both the control's edit-ability and it's parent's edit-ability is undefined.
+False when either the control or its parent is not editable.
+True when both the control and its parent are editable.
+True when either the control or its parent is editable and the other is undefined.
+Undefined if both the control's edit-ability and its parent's edit-ability is undefined.
 
 > Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable)
 
@@ -106,7 +106,7 @@ Undefined if both the control's edit-ability and it's parent's edit-ability is u
 
 ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional) 
 
-The extended control type. E.g. a control of type Input might have an extended type of Barcode.
+The extended control type. For example, a control of type Input might have an extended type of Barcode.
 
 > Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype)
 
@@ -115,7 +115,7 @@ The extended control type. E.g. a control of type Input might have an extended t
 
 HelpText: string (optional) 
 
-The keyboard shortcut for a command. E.g. "(Shift+F5)"
+The keyboard shortcut for a command. For example, "(Shift+F5)"
 
 > Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext)
 
@@ -142,7 +142,7 @@ Identification string for a control.
 
 Label: string (optional) 
 
-Label for a control. E.g. a control representing a person's first name might have a label "First Name".
+Label for a control. For example, a control representing a person's first name might have a label "First Name".
 
 > Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](view-model-control-basecontrol-icontrol-icontrolmetadata.md#label)
 

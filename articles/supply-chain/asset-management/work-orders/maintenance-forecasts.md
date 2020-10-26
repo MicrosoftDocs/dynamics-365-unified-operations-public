@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

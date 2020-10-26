@@ -37,7 +37,7 @@ This portfolio will continue to grow as the service expands into new regions and
 
 The following list captures the portfolio of font families available for documents produced using SQL Server Reporting Services (SSRS) services in Finance and Operations apps.
 
-## Supported fonts for application version 8.3 with Platfrom update 32 or later
+## Supported fonts for application version 8.3 with Platform update 32 or later
 
 | Font family              | Source              |
 |--------------------------|-----------------------------|
@@ -317,7 +317,7 @@ The following list captures the portfolio of font families available for documen
 
 ## Supported fonts for application version 8.0 with Platform update 23
 
-|     | Font family            |
+|  Number   | Font family            |
 |-----|--------------------------|
 | 1   | Agency FB                |
 | 2   | Algerian                 |

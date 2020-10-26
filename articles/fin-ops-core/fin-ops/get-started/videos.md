@@ -3,9 +3,9 @@
 
 title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
-author: josaw1
+author: sericks007
 manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
@@ -88,6 +88,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
 - [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
 - [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk)
+- [The improved Excel experience in Regression Suite Automation Tool (RSAT) 2.0](https://youtu.be/fcEkSIVQ1Bg)
 
 
 ## Videos for Dynamics 365 Finance
@@ -130,7 +131,8 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 
 ### Customer portal
-- [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8)
+- [Overview of the Customer portal template](https://youtu.be/nPrqoLuHfV8)
+- [Invite customers to register and use your customer portal](https://youtu.be/drGUYHX9QIQ)
 
 ### Help system
 

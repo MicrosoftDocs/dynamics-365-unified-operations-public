@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: 
+ms.author: rhaertle
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2019-07-15
 
@@ -71,8 +70,6 @@ LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
 [!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
 
 [!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Ledger fiscal periods](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
 
 [!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
 

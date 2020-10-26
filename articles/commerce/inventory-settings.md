@@ -5,7 +5,7 @@ title: Apply inventory settings
 description: This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version:
 
 # Apply inventory settings
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
@@ -43,6 +42,9 @@ Inventory settings specify whether inventory should be checked before products a
 Dynamics 365 Commerce provides estimates of on-hand availability for products. For information about how estimated on-hand availability is calculated, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
 In Commerce site builder, inventory thresholds and ranges can be defined for a product or a category. They determine whether inventory can be classified as in stock, low stock, or out of stock. For details, see [Configure inventory buffers and inventory levels](inventory-buffers-levels.md).
+
+> [!NOTE]
+> Support for inventory thresholds and ranges is available in the Dynamics 365 Commerce 10.0.12 release.
 
 ## Inventory settings
 
@@ -60,6 +62,9 @@ In Commerce, inventory settings are defined at **Site Settings \> Extensions \> 
     - When **Out of stock** is selected, only the "Out of stock" message will be shown.
 
 - **Out of stock threshold** – This old numeric setting will take effect only if the **Out of stock threshold** value is selected for the **Inventory level based on** setting.
+
+> [!IMPORTANT] 
+> These settings are available in the Dynamics 365 Commerce 10.0.12 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Modules that use inventory settings
 
@@ -79,7 +84,7 @@ The following image shows an example of a cart that is showing an in-stock ("Ava
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Configure inventory buffers and inventory levels](inventory-buffers-levels.md)
 
@@ -90,3 +95,5 @@ The following image shows an example of a cart that is showing an in-stock ("Ava
 [Account management pages and modules](account-management.md)
 
 [Store selector module](store-selector.md)
+
+[SDK and module library updates](e-commerce-extensibility/sdk-updates.md)

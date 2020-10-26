@@ -106,6 +106,8 @@ If not completed already, follow the steps for [enabling product recommendations
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
 
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
+
 [Add product recommendations on POS](product.md)
 
 [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)

@@ -3,7 +3,7 @@
 
 title: Configure parallel branches in a workflow
 description: To configure a parallel branch, complete the following procedures in the workflow editor.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 196043
 ms.assetid: dfdae2b8-6a4f-4760-b339-b755c66f3f89
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

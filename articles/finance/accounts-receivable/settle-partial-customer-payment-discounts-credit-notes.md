@@ -56,13 +56,11 @@ From the **Customer transactions** page, Arnie opens the **Settle transactions**
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
-|                              |           |
-|------------------------------|-----------|
-| Cash discount date           | 7/12/2015 |
-| Cash discount amount         | -1.00     |
-| Use cash discount            | Normal    |
-| Cash discount taken          | 0.00      |
-| Cash discount amount to take | -1.00     |
+- **Cash discount date**: 7/12/2015 
+- **Cash discount amount**: -1.00     
+- **Use cash discount**: Normal    
+- **Cash discount taken**: 0.00      
+- **Cash discount amount to take**: -1.00     
 
 The settlement will be 100.00, and will include a payment of 99.00 and a discount of 1.00.
 

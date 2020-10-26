@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -63,7 +63,7 @@ ms.dyn365.ops.version: 10.0.4
 
 8. Select **OK**.
 
-## Validate the tax details
+## Review and accept the tax details
 
 1. On the Action Pane, on the **Reply** tab, in the **Financials** group, select **Tax document**.
 2. Select the **GST** node.
@@ -99,7 +99,7 @@ ms.dyn365.ops.version: 10.0.4
 
 7. Select **OK**.
 
-## Validate the tax details
+## Review and confirm the tax details
 
 1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
 2. Review the tax applicability, tax attributes, and tax calculation.

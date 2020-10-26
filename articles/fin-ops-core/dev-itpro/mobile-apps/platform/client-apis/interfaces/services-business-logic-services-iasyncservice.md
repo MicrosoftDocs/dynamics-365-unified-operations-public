@@ -22,7 +22,7 @@ ms.search.scope:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 
@@ -49,11 +49,7 @@ AsyncService <br>
 
 ### all
 
-
-all(...args: any [ ]): Promise &lt;any [ ]&gt;
-
-
-
+`all(...args: any [ ]): Promise <any [ ]>`
 
 #### Parameters
 
@@ -65,10 +61,8 @@ all(...args: any [ ]): Promise &lt;any [ ]&gt;
 
 ### defer
 
-
-defer &lt;T&gt;(): [Deferred](defer-ideferred.md) &lt;T&gt;
+`defer <>(): [Deferred](defer-ideferred.md) <>`
 
 Creates a deferred object which can be used to return a promise from event handlers (where applicable) and resolve/reject them asynchronously.
 
 #### Returns [Deferred](defer-ideferred.md) &lt;T&gt;
-
