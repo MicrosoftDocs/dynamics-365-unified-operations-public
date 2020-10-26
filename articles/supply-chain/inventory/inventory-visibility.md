@@ -113,7 +113,7 @@ Do the following:
 
 To uninstall the add-in, select the **Uninstall** button. Then refresh LCS and the Inventory Visibility Add-in will be removed. The uninstall will remove the add-in registration and also start a job to clean up all of the business data stored in the service.
 
-## Interact with the Inventory Visibility Add-in public API
+## The Inventory Visibility Add-in public API
 
 The public REST API of the of the Inventory Visibility Add-in presents several specific endpoints of integration. It supports three main interaction types:
 
@@ -169,22 +169,22 @@ The following tables lists the inventory dimensions that will be the default dim
 | Warehouse Specific | `LicensePlateId` |
 
 > [!NOTE]
-> The dimension type listed in the previous table is for reference only, you don't need to define the dimension type in Inventory Visibility.
+> The dimension type listed in the previous table is for reference only. You don't need to define the dimension type in Inventory Visibility.
 
 In the case that a custom dimension may exist and needs to flow to a default value when consumed by Inventory Visibility, user can configure the **Custom dimension** name in Inventory Visibility.
 
 External system access Inventory Visibility through RESTful APIs that enable on-hand information on given sets of dimensions to be queried. For the integration, Inventory Visibility enables the user to configure the *external channel data source* and the source dimension to the *target dimensions* in Inventory Visibility.
 
-The target dimensions should be either the:
+The target dimensions should be one of the following:
 
 - Default dimensions in Inventory Visibility, or
 - Custom dimensions
 
-The dimension configuration is to standardize the multiple system integration for the query on dimensions and posting event with dimensions.
+The purpose of dimension configuration is to standardize the multi-system integration for the query on dimensions and the posting event with dimensions.
 
 #### Indexing
 
-Most of the time, the inventory on-hand query will not only on the highest "total" level, but you may want to see results aggregated based on the inventory dimensions.
+Most of the time, the inventory on-hand query will not only be on the highest "total" level, but you may want to see results aggregated based on the inventory dimensions.
 
 Inventory Visibility provides the flexibility by allow you to set up the indexes, which are based on the dimension or the combination of the dimensions.
 
