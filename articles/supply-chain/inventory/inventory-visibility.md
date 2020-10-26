@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: The Inventory Visibility Add-in
-description: This topic describes how to install and configure the Inventory Visibility Add-in for Dynamics 365 Supply Chain Management, and how to use its application programming interface (API).
+title: Inventory Visibility Add-in
+description: This topic describes how to install and configure the Inventory Visibility Add-in for Dynamics 365 Supply Chain Management.
 author: chuzheng
 manager: tfehr
 ms.date: 10/26/2020
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
 ---
 
-# The Inventory Visibility Add-in
+# Inventory Visibility Add-in
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,9 +35,9 @@ This topic describes how to install and configure the Inventory Visibility Add-i
 
 ## Install the Inventory Visibility Add-in
 
-You will install the Inventory Visibility Add-in using Lifecycle Service for Microsoft Dynamics (LCS). LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your Dynamics 365 Finance and Operations apps.
+You need to install the Inventory Visibility Add-in using Microsoft Dynamics Lifecycle Services (LCS). LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your Dynamics 365 Finance and Operations apps.
 
-For more information of LCS, see [Lifecycle Services resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
+For more information, see [Lifecycle Services resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
 
 ### Prerequisites
 
@@ -46,23 +46,23 @@ Before you install the Inventory Visibility Add-in, you must do the following:
 - Obtain an LCS implementation project with at least one environment deployed.
 - Generate the beta keys for your offering in LCS.
 - Enable the beta keys for your offering for your user in LCS.
-- Contact the Microsoft Inventory Visibility product team and send them the environment ID where you want to deploy the Inventory Visibility Add-in.
+- Contact the Microsoft Inventory Visibility product team and provide an environment ID where you want to deploy the Inventory Visibility Add-in.
 
 If you have any questions about these prerequisites, please contact the Microsoft Dynamics 365 Supply Chain Management Inventory Visibility Product team.
 
 ### <a name="install-add-in"></a>Install the add-in
 
-Do the following:
+To install the Inventory Visibility Add-in, do the following:
 
-1. Sign in to the [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) portal.
-1. From the home page, select the project where your environment is deployed.
-1. From the project page, select the environment where you want to install the add-in.
-1. From the environment page, scroll down until you see the **Environment add-ins** section. If the section isn't visible, make sure the prerequisite beta keys have been fully processed.
-1. In the **Environment add-ins** section, select the **Install a new add-in** button.
+1. Sign in to the [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) portal.
+1. On the home page, select the project where your environment is deployed.
+1. On the project page, select the environment where you want to install the add-in.
+1. On the environment page, scroll down until you see the **Environment add-ins** section. If the section isn't visible, make sure the prerequisite beta keys have been fully processed.
+1. In the **Environment add-ins** section, select **Install a new add-in**.
     ![The environment page in LCS](media/inventory-visibility-environment.png "The environment page in LCS")
 1. Select the **Install a new add-in** link. A list of available add-ins opens.
-1. Select **Inventory service** from the list. (Note: This will soon, and may already, be renamed to **Inventory Visibility Add-in for Dynamics 365 Supply Chain Management**.)
-1. In the **Configuration parameters**, enter the following values for your environment:
+1. Select **Inventory service** from the list. (Note, this may now be listed as **Inventory Visibility Add-in for Dynamics 365 Supply Chain Management**.)
+1. In **Configuration parameters**, enter the following values for your environment:
 
     - **AAD application ID**
     - **AAD tenant ID**
@@ -70,23 +70,23 @@ Do the following:
     ![Add in setup page](media/inventory-visibility-setup.png "Add-in setup page")
 
 1. Agree to the terms and condition by selecting the **Terms and conditions** check box.
-1. Select the **Install** button. The status of the add-in will show as **Installing**. When it's done, refresh the page to see the status change to **Installed**.
+1. Select **Install**. The status of the add-in will show as **Installing**. When it's done, refresh the page to see the status change to **Installed**.
 
 ### Get a security service token
 
-Do the following:
+To get a security service token, do the following:
 
 1. Get your `aadToken` and call the endpoint: https://securityservice.operations365.dynamics.com/token.
 1. Replace the `client_assertion` in the body with your `aadToken`.
 1. Replace the context in the body with the environment where you want to deploy the add-in.
-1. Replace the scope in body with the following:
+1. Replace the scope in the body with the following:
 
     - Scope for MCK - "https://inventoryservice.operations365.dynamics.cn/.default"  
-    (You can find the AAD application ID and tenant ID for MCK in `appsettings.mck.json`.)
+    (You can find the Azure Active Directory application ID and tenant ID for MCK in `appsettings.mck.json`.)
     - Scope for PROD - "https://inventoryservice.operations365.dynamics.com/.default"  
-    (You can find the AAD application ID and tenant ID for MCK in `appsettings.prod.json`.)
+    (You can find the Azure Active Directory application ID and tenant ID for MCK in `appsettings.prod.json`.)
 
-    The result should resemble the following example:
+    The result should resemble the following example.
 
     ```json
     {
@@ -99,7 +99,7 @@ Do the following:
     }
     ```
 
-1. You will get an `access_token` in response. This is what you need as a bearer token to call the Inventory Visibility API. Here is an example:
+1. You will get an `access_token` in response. This is what you need as a bearer token to call the Inventory Visibility API. Here is an example.
 
     ```json
     {
@@ -111,21 +111,21 @@ Do the following:
 
 ### Uninstall the add-in
 
-To uninstall the add-in, select the **Uninstall** button. Then refresh LCS and the Inventory Visibility Add-in will be removed. The uninstall will remove the add-in registration and also start a job to clean up all of the business data stored in the service.
+To uninstall the add-in, select **Uninstall**. Refresh LCS and the Inventory Visibility Add-in will be removed. The uninstall process will remove the add-in registration and also start a job to clean up all of the business data stored in the service.
 
-## The Inventory Visibility Add-in public API
+## Inventory Visibility Add-in public API
 
 The public REST API of the of the Inventory Visibility Add-in presents several specific endpoints of integration. It supports three main interaction types:
 
-- Posting on-hand changes to the add-in from an external system
-- Querying current on-hand quantities from an external system
+- Posting on-hand changes to the add-in from an external system.
+- Querying current on-hand quantities from an external system.
 - Automatic synchronization with Supply Chain Management on-hand.
 
 The automatic synchronization isn't part of the public API but is instead handled in the background for environments that have enabled the Inventory Visibility Add-in.
 
 ### Authentication
 
-The platform security token is used to call the Inventory Visibility Add-in, so you must generate an AAD token using your Azure AAD application.
+The platform security token is used to call the Inventory Visibility Add-in, so you must generate an Azure Active Directory token using your Azure Active Directory application.
 
 For more information about how to get the security token, see [Install the Inventory Visibility Add-in](#install-add-in).
 
@@ -151,7 +151,7 @@ The `organizationId` (`dataAreaId` in Supply Chain Management) will always be pa
 
 Inventory Visibility will provide a list of general default dimensions to enable the multiple source system integration.
 
-The following tables lists the inventory dimensions that will be the default dimension names in Inventory Visibility.
+The following table lists the inventory dimensions that will be the default dimension names in Inventory Visibility.
 
 | Dimension type | Dimension name |
 |---|---|
@@ -171,13 +171,13 @@ The following tables lists the inventory dimensions that will be the default dim
 > [!NOTE]
 > The dimension type listed in the previous table is for reference only. You don't need to define the dimension type in Inventory Visibility.
 
-In the case that a custom dimension may exist and needs to flow to a default value when consumed by Inventory Visibility, user can configure the **Custom dimension** name in Inventory Visibility.
+If a custom dimension exists and needs to flow to a default value when consumed by Inventory Visibility, users can configure the **Custom dimension** name in Inventory Visibility.
 
-External system access Inventory Visibility through RESTful APIs that enable on-hand information on given sets of dimensions to be queried. For the integration, Inventory Visibility enables the user to configure the *external channel data source* and the source dimension to the *target dimensions* in Inventory Visibility.
+External systems access Inventory Visibility through RESTful APIs that enable on-hand information on given sets of dimensions to be queried. For the integration, Inventory Visibility enables the user to configure the *external channel data source* and the source dimension to the *target dimensions* in Inventory Visibility.
 
 The target dimensions should be one of the following:
 
-- Default dimensions in Inventory Visibility, or
+- Default dimensions in Inventory Visibility
 - Custom dimensions
 
 The purpose of dimension configuration is to standardize the multi-system integration for the query on dimensions and the posting event with dimensions.
@@ -186,17 +186,15 @@ The purpose of dimension configuration is to standardize the multi-system integr
 
 Most of the time, the inventory on-hand query will not only be on the highest "total" level, but you may want to see results aggregated based on the inventory dimensions.
 
-Inventory Visibility provides the flexibility by allow you to set up the indexes, which are based on the dimension or the combination of the dimensions.
+Inventory Visibility provides flexibility by allowing you to set up the indexes, which are based on the dimension or the combination of the dimensions.
 
 > [!NOTE]
-> Currently, you can only configure indexes to maximum as five. You need to consider carefully which dimension or dimension combination you will use before the implementation to ensure it will meet your business needs.
-
-For example, suppose you want to query products as follows:
+> Currently, you can only configure indexes to a maximum of five. You need to carefully consider which dimension or dimension combination you will use before the implementation to ensure that it will meet your business needs. For example, if you want to query products as follows:
 
 - Query the aggregated product on-hand by the *Color* and *Size* dimensions.
 - In some cases, you just want to query on the product in total.
 
-In that case, you'd have two indexes defined:
+You would have two indexes defined as the following:
 
 - `["ColorId", "SizeId"]`
 - `[]`
@@ -207,7 +205,7 @@ The indexing defines how you can group your results based on the `groupBy` query
 
 You can put your query criteria in the request body.
 
-Here is a sample query on the product with color and size combination:
+Here is a sample query on the product with color and size combination.
 
 ```json
 {
@@ -228,7 +226,7 @@ Here is a sample query on the product with color and size combination:
 
 #### Custom measurements
 
-The default measurement quantities are linked to Supply Chain Management, however you may want to have a quantity that is made up of a combination of the default measurements. For this we allow the configuration of custom quantities, which will be added to the output of the on-hand queries.
+The default measurement quantities are linked to Supply Chain Management, however you may want to have a quantity that is made up of a combination of the default measurements. To do this, you can have a configuration of custom quantities, which will be added to the output of the on-hand queries.
 
 The functionality simply allows you to define a set of measures that will be added, and/or a set of measures that will be subtracted, in order to form the custom measurement.
 
@@ -275,7 +273,7 @@ For example, with the following query condition, the user will configure the cus
 | `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `issued` | Subtraction |
 | `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `reserved` | Subtraction |
 
-With that, the query on the custom measurement quantity will return the following output:
+With that, the query on the custom measurement quantity will return the following output.
 
 ```json
 [
@@ -316,13 +314,13 @@ The exact URL that the event will be posted to will depend on your geographical 
 
 `https://{serviceURL}/api/environment/{environmentId}/onhand`
 
-Once authenticated, this URL can be used along with the HTTP `POST` method to send on-hand change events to the service.
+When authenticated, this URL can be used along with the HTTP `POST` method to send on-hand change events to the service.
 
 A special header is used for communicating with Dynamics 365 services through HTTP requests, denoting the environment ID of the Supply Chain Management instance the data is linked to. For example:
 
 `x-ms-environment-id: 2db79622-f97a-4d64-9844-d12efed41796`
 
-The body of the post event will be JSON, such as in the following example:
+The body of the post event will be JSON, such as in the following example.
 
 
 ```json
@@ -344,12 +342,12 @@ The body of the post event will be JSON, such as in the following example:
 }
 ```
 
-The fields of this JSON document have the properties listed in the following table:
+The fields of this JSON document have the properties listed in the following table.
 
 | Field ID | Description |
 |---|---|
 | `id` | A unique ID for the specific change event. This ID is used to ensure that if communication with the service fails during posting, resubmitting the event would not result in the same event being counted twice in the system. |
-| `organizationId` | The identifier of the organization linked to the event. Maps to Supply Chain Management organizations, or data area IDs. |
+| `organizationId` | The identifier of the organization linked to the event. This maps to Supply Chain Management organizations or data area IDs. |
 | `productId` | The identifier of the product in question. |
 | `quantity` | The quantity by which the on-hand needs to be changed. If, for instance, 10 new bagels were added to a shelf, this value would be 10. If 3 bagels were then removed from the shelf or sold, this value would be -3. |
 | `dimensions` | A dynamic bag of key/value pairs. These will map to some of the dimensions in Supply Chain Management, but you could also add custom dimensions (like *Source*) that may denote if the event was coming from Supply Chain Management or an external system. |
@@ -362,7 +360,7 @@ The endpoint for querying the current on-hand will have a similar URL:
 
 It will be queried with the HTTP `POST` method.
 
-An example query could be:
+An example query might look like the following.
 
 
 ```json
@@ -382,7 +380,7 @@ An example query could be:
 }
 ```
 
-This could return a result like this:
+This could return a result like this.
 
 ```json
 [
@@ -414,6 +412,4 @@ This could return a result like this:
 ]
 ```
 
-Most notable is that the quantities field are structured as a dictionary of measures and their associated values.
-
-
+Note that the quantities fields are structured as a dictionary of measures and their associated values.
