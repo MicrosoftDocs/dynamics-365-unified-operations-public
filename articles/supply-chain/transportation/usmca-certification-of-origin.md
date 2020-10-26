@@ -119,30 +119,30 @@ In addition to the optional elements that you select using the **Certificate or 
 
 ### Invoice number
 
-IDs of sales invoice(s) related to shipments are printed on the document irrespective of the blanket period. Invoice numbers are printed irrespective of the Single Shipment selection. Only IDs of sales invoices are printed.
+The IDs of sales invoices related to shipments are printed on the document irrespective of the blanket period. Invoice numbers are printed irrespective of the **Is single shipment** selection. Only IDs of sales invoices are printed. <!-- FKM: What do you mean with the last sentence? -->
 
 ### Item details
 
-Sections 6.1 to 9 in the printed document include specific item details. These are SKU Number, Description, Harmonized System (HS) Tariff Classification, Origin Criterion, Country of Origin.
+The document provides several sections that list specific item details, which are:
 
-- **SKU Number**: Prints the item number of the released product.
+- **SKU number**: Prints the item number of the released product.
 
-- **Description**: Prints either the description or name for the released product. If a description in the user's language exists, then this is printed. If no such exists, then the name in the user's language is printed. If no such exists, then the item name is printed.
+- **Description**: Prints either the description or name for the released product. If a description in the user's language exists, then this is printed. If no such description exists, then the name in the user's language is printed. If that name doesn't exist, then the item name is printed.
 
-- **Harmonized System (HS) Tariff Classification**: Prints the Harmonized Tariff Schedule associated to the product. The schedules are setup under Transportation Management&gt;Setup&gt;Transportation standard&gt;Harmonized Tariff Schedules.
+- **Harmonized System (HS) Tariff Classification**: Prints the Harmonized Tariff Schedule associated to the product. You can set up these schedules by going to **Transportation Management \> Setup \> Transportation standard \> Harmonized Tariff Schedules**.
 
-- **Origin Criterion:** Data in this section must be filled in manually in the first release of the report.
+- **Origin criterion:** You must manually enter data in this section the first time you release the document.
 
-- **Country of origin:** Prints the country of origin is applied using the Product Information Management &gt; Setup&gt;Product Compliance&gt;Country of Origin. The ISO code for the country of origin is printed based on the country of destination in the shipment delivery address and the item. If no country of origin data has been setup here, then fall back to released product&gt;foreign trade&gt;origin. If no country of origin data has been setup here, then the country of origin will have to be filled in manually.
+- **Country of origin:** Prints the country of origin, which you apply by going to **Product information management \> Setup \> Product compliance \> Country of origin** (see also [Country of origin](../pim/country-of-origin.md)). The ISO code for the country of origin is printed based on the country of destination in the shipment delivery address and the item. If no country of origin data has been set up, then this value falls back to the setting found at **Released product \> Foreign trade \> Origin**. If still no country of origin data is found, then you must manually enter the country of origin after generating the document.
 
 ### Certifier signature and date
 
-Data in this section must be filled in manually.
+You must enter this manually after generating the document.
 
 ### Consists of number of pages
 
-Number of pages must be filled in manually by the user signing the certification.
+The user signing the certification must manually enter the number of pages after generating the document.
 
 ### Number of pages
 
-Current page and number of pages printed in the bottom of the document.
+Current page and number of pages printed in the bottom of the document. <!-- FKM: Is the "number of pages" mentioned here the same as in the previous section?  -->
