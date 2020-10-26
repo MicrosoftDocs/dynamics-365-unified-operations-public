@@ -1,11 +1,12 @@
-﻿---
+﻿
+---
 # required metadata
 
-title: USMCA certification of origin
-description: This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
-author: Henrikan
+title: Transportation management overview
+description: This topic gives an overview of the transportation management functionality in Supply Chain Management.
+author: MarkusFogelberg
 manager: tfehr
-ms.date: 10/23/2020
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,18 +14,21 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench
+# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: 30251
+ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: henrikan
-ms.search.validFrom: 2020-10-23
-ms.dyn365.ops.version: Release 10.0.16
+# ms.search.industry: 
+ms.author: mafoge
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # USMCA certification of origin
