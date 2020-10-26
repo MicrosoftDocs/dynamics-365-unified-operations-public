@@ -24,7 +24,8 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
 ms.search.validFrom: 2020-10-23
-ms.dyn365.ops.version: Release 10.0.xx
+ms.dyn365.ops.version: Release 10.0.16
+
 ---
 
 # USMCA certification of origin
@@ -48,8 +49,8 @@ Before you can use this feature, it must be turned on in your system. Admins can
 - **Module:** *Transportation management*
 - **Feature name:** *USMCA certification of origin document*
 
-## Print selection
-<!-- KFM: I'm not sure what this section is telling me. Needs more intro I think -->
+## Document content
+
 The USMCA certification of origin document contains the following data elements:
 
 - Address elements
@@ -62,6 +63,8 @@ The USMCA certification of origin document contains the following data elements:
 - Number of pages
 
 SysLastValue is applied to the selection. <!-- KFM: What is this? I think we need few more details. -->
+
+See the remaining sections of this topic for more information about each of these elements and how their values are found.
 
 ## Print a USMCA certification of origin document
 
@@ -76,7 +79,7 @@ To print a USMCA certification of origin document for a shipment, do the followi
 
 ### Certifying party
 
-In the **Certificate or origin** dialog box, use the **Certifying party** drop-down list to identify the type  of party that is printing the document. Specify whether the certifying party is the *Exporter*, *Exporter and Producer*, *Producer*, or *Importer*; or leave it blank if the certifying party is none of these. The option you select determines what is printed in the address sections of the document.
+Use the **Certifying party** drop-down list to identify the type  of party that is printing the document. Specify whether the certifying party is the *Exporter*, *Exporter and Producer*, *Producer*, or *Importer*; or leave it blank if the certifying party is none of these. The option you select determines what is printed in the address sections of the document.
 
 The **Certifying party** that you choose will be included in the printed document.
 
@@ -94,7 +97,7 @@ The following table describes which types of information are included in the doc
 
 ### Has various producers
 
-In the **Certificate or origin** dialog box, the **Certifying party** drop-down list controls the text to be used for the producer details in the document. Choose one of the following:
+The **Certifying party** drop-down list controls the text to be used for the producer details in the document. Choose one of the following:
 
 - *Various producers* - Prints print the text "Various" in the producer details.
 - *Available upon request* - Prints the text "Available upon request by the importing authorities" in the producer details.
@@ -103,7 +106,7 @@ When the **Certifying party** is set to *Exporter and Producer* or *Producer*, t
 
 ### Blanket period
 
-In the **Certificate or origin** dialog box, use the **Blanket period from** and **Blanket period to** settings to establish a blanket period of up to 12 months, during which the document will cover multiple shipments of identical goods, even though the document is printed for only one shipment. You can set the blanket period dates without any constraints, and it will be added to the document. You can also leave these settings blank or even set them in the past.
+Use the **Blanket period from** and **Blanket period to** settings to establish a blanket period of up to 12 months, during which the document will cover multiple shipments of identical goods, even though the document is printed for only one shipment. You can set the blanket period dates without any constraints, and it will be added to the document. You can also leave these settings blank or even set them in the past.
 <!-- KFM: Is the blanket period "max 12 months" or "without constraints"? I think we should add a bit more detail about the practical considerations, like how this will work (doc kept on file, or doc automatically printed for each shipment, or what?). -->
 
 ### Is single shipment
