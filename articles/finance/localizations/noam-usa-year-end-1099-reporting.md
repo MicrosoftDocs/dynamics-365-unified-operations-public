@@ -43,10 +43,10 @@ After you settle payments against an invoice, you can modify any 1099 amount usi
 
 We recommend that you review IRS rule changes for the applicable tax year before you set up and process 1099 statements. When you are ready to process 1099 statements, use the Vendor settlements for 1099s page.
 
-## Example of a typical yearend 1099 process
+## Example of a typical year-end 1099 process
 You might follow these steps to generate either an export file or a printed 1099 statement to send to the vendor, IRS, or tax firm that transmits the 1099 forms to the IRS on behalf of your organization.
 1. Verify the 1099 fields in the periodic tasks area for Tax 1099 . Then verify the minimum amounts that are required for 1099 reporting for the current tax year.
-2. Print a Tax 1099 summary report and a Tax 1099 detail report  to review vendor information and locate any vendors who might need changes.
+2. Print a Tax 1099 detail report  to review vendor information and locate any vendors who might need changes.
    > [!NOTE]
    > To minimize the amount of data that you see, you can click Select to apply a filter.
    > 
@@ -54,7 +54,7 @@ You might follow these steps to generate either an export file or a printed 1099
    > -   If the 1099-G form is the only 1099 tax form that the vendor will receive, you can clear the Report 1099 option in the Vendors page so the vendor will not receive any 1099 forms.
    > -   The Tax 1099 transactions page contains 1099 information from paid invoices, and you can modify that information.
 
-3. You can print the 1099 tax information in paper form or transmit 1099 tax information by electronic or magnetic filing using the Vendor settlement for 1099s page. After you post a payment for an invoice, the invoice amount appears in the Tax 1099 summary page. When totals for a box reach the amount in the 1099 fields page, the IRS reportable option is selected. After you load the printer with blank 1099 tax forms, you can print data to the form. You can also create an export file.
+3. You can print the 1099 tax information in paper form or transmit 1099 tax information by electronic file using the Vendor settlement for 1099s page. After you post a payment for an invoice, the invoice amount appears in the Tax 1099 summary page. When totals for a box reach the amount in the 1099 fields page, the IRS reportable option is selected. After you load the printer with blank 1099 tax forms, you can print data to the form. You can also create an export file.
    > [!NOTE]
    > If you try to create an export file and a form opens that displays validation errors, you can click 1099 software vendor and 1099 transmitter in the Tax 1099 validation errors form to enter missing field values. Then click Recheck for errors to revalidate the file. 
 
@@ -73,9 +73,14 @@ If you use these forms, the following tips provide more information:
 -   An individual 1099 report is associated with each 1099-S invoice. You can use the Tax 1099 detail report to view detailed 1099-S information.
 -   In the lines of many journals, you cannot enter an S-2 amount. This amount is the same as the 1099 amount field. However, you can enter S-2 details on the 1099 tab in these forms. Also, you cannot select S-5 in these forms because you must manually enter this amount in the S-5 buyer part of real estate tax field. Click Accounts payable &gt; Periodic &gt; Vendor settlement for 1099s.
 
-## 1099OID form
+## 1099-OID form
 An original issue discount (OID) is a type of interest that is created when debt instruments, such as bonds or notes, are issued at a discount. The OID is the difference between the stated redemption price of the instrument at maturity and its original issue price. The redemption price is the face value of the bond or note, and the issue price is the amount for which the bond or note was first sold by the issuer. An OID is treated as taxable income for the owner of the debt obligation. The issuer must report the issue of the bonds or notes to the Internal Revenue Service (IRS) using the 1099-OID form within 30 days of the date of issue. The issuer is liable for a penalty of one percent of the issue price, up to a maximum of USD 50,000, if the OID is not reported.
 
+## 1099-NEC form
+The IRS has released a new form, the 1099-NEC, to report Non-employee compensation. Non-employee compensation, which had previously been included in the 1099 MISC form, has been moved to its own form. Additionally, the 1099-MISC form has been revised to meet the IRS regulatory changes for the 2020 tax year.
+
+## 1099-DIV reporting option for total ordinary dividends
+You can specify how the total ordinary dividend amounts will be reported for 1099-DIV processing. Specifying whether or not to total ordinary dividend amounts for 1099-DIV processing can help make it easier to ensure regulatory compliance. To run the 1099-DIV reporting process, select **Accounts payable > Periodic tasks > Tax 1099 > Vendor settlement for 1099s**. Select the option **Box 1a represents sum of box 1a and 1b** to report the summed result on box 1a of the 1099-DIV. This feature is available if the **1099-DIV reporting options** on the **Feature management** page is turned on.
 
 
 
