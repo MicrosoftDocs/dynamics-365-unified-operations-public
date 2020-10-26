@@ -86,7 +86,7 @@ Due to these changes, information may appear in a different location than you're
 
 ## Work history
 
-The **Work history** tab shows work history accross all legal entities and is available for exited, active, and pending employees and contractors. You can now view all work history at once for the legal entities you have access to. In addition, you can edit information for each of the work history entries without changing the data context. You can update all information directly on the page. 
+The **Work history** tab shows work history across all legal entities and is available for exited, active, and pending employees and contractors. You can now view all work history at once for the legal entities you have access to. In addition, you can edit information for each of the work history entries without changing the data context. You can update all information directly on the page. 
 
 [![Work history](./media/Worker-work-history.png)](./media/Worker-work-history.png)
 

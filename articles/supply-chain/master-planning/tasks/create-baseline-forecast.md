@@ -46,7 +46,7 @@ A production planner can create a baseline forecast either by using time series 
 7. Close the page.
 8. Close the page.
 
-## Set up the demand forecasting paramters
+## Set up the demand forecasting parameters
 1. Go to Master planning > Setup > Demand forecasting > Demand forecasting parameters.
 2. Expand the Forecast algorithm parameters section.
 3. In the Forecast generation strategy field, select 'Copy over historical demand'.

@@ -88,6 +88,6 @@ This inquiry is unique in that it allows users to customize the terminology for 
 Optional: 
 
 - Set the **Suppress accounts with all zeroes** option to **Yes** to exclude accounts that ahve all zero balances from the inquiry.
-- Set the **Display segments in seperate columns** option to **Yes** to show the account names for each dimension as seperate columns in the grid.
+- Set the **Display segments in separate columns** option to **Yes** to show the account names for each dimension as separate columns in the grid.
 - If you want to filter the values for a specific dimension selected, select the dimensions you want in the fields below the **Financial dimension set** field. The choices you have to select from depend on which financial dimension set you selected.
 
