@@ -2,7 +2,7 @@
 # required metadata
 
 title: Transportation management zone master
-description: Transport management lets you divide geographic locations into zones, which can help simplify transportation pricing, optimize load planning, and optimize route planning
+description: This topic explains howw transport management lets you divide geographic locations into zones.
 author: Henrikan
 manager: 
 ms.date: 10/16/2020
