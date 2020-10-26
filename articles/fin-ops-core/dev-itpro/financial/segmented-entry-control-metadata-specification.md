@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Describes the design-time metadata properties for Segmented Entry controls.
 
-The custom properties for the Segmented Entry control are found under the Controller group. Here is an example. 
+The custom properties for the Segmented Entry control are found under the Controller group. Here is an example.
 
-[![SEC Property Sheet Example](./media/10.jpg)](./media/10.jpg) 
+[![SEC Property Sheet Example](./media/10.jpg)](./media/10.jpg)
 
-Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  For more information, see [Valid properties](#valid-properties)
+Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  For more information, see [Valid properties](#valid-properties).
 
 ## Property details
 
@@ -59,11 +59,11 @@ Certain properties may be non-editable based on the Controller class that is sel
 
 The following sections show which properties are valid for each Controller type.
 
-### Validate Blocked For Manual Entry 
+### Validate Blocked For Manual Entry
 
 BudgetLedgerDimension: Yes
 
-BudgetPlanningLedgerDimension: Yes 
+BudgetPlanningLedgerDimension: Yes
 
 DimensionDynamicAccount: Yes
 
@@ -73,7 +73,7 @@ LedgerDimensionDefaultAccount: Yes
 
 LedgerDimensionAccountAlias: Yes
 
-### Account Type Field     
+### Account Type Field
 
 BudgetLedgerDimension: No
 
@@ -87,7 +87,7 @@ LedgerDimensionDefaultAccount: No
 
 LedgerDimensionAccountAlias: No
 
-### Is Default Account     
+### Is Default Account
 
 BudgetLedgerDimension: No
 
@@ -101,7 +101,7 @@ LedgerDimensionDefaultAccount: No
 
 LedgerDimensionAccountAlias: No
 
-### Lock Main Account Segment        
+### Lock Main Account Segment
 
 BudgetLedgerDimension: No
 
@@ -115,7 +115,7 @@ LedgerDimensionDefaultAccount: Yes
 
 LedgerDimensionAccountAlias: No
 
-### Posting Type 
+### Posting Type
 
 BudgetLedgerDimension: No
 
@@ -125,11 +125,11 @@ DimensionDynamicAccount: Yes
 
 LedgerDimensionAccount: Yes
 
-LedgerDimensionDefaultAccount: Yes 
+LedgerDimensionDefaultAccount: Yes
 
 LedgerDimensionAccountAlias: Yes
 
-### Include Total Accounts 
+### Include Total Accounts
 
 BudgetLedgerDimension: No
 
@@ -143,7 +143,7 @@ LedgerDimensionDefaultAccount: Yes
 
 LedgerDimensionAccountAlias: No
 
-### Include Financial Accounts       
+### Include Financial Accounts
 
 BudgetLedgerDimension: No
 
@@ -156,7 +156,6 @@ LedgerDimensionAccount: No
 LedgerDimensionDefaultAccount: Yes
 
 LedgerDimensionAccountAlias: No
-
 
 ## Additional resources
 
@@ -167,6 +166,3 @@ LedgerDimensionAccountAlias: No
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
-
-
-
