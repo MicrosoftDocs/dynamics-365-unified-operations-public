@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: USMCA certification of origin
