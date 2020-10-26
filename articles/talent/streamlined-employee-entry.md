@@ -78,7 +78,7 @@ The action pane of the worker page has been re-organized to include fewer option
 - Benefits
 - Compliance
 
-In addtion, a new **Links** tab on the main worker page gives users a central location to access all related information for a worker.
+In addition, a new **Links** tab on the main worker page gives users a central location to access all related information for a worker.
 
 Due to these changes, information may appear in a different location than you're used to. For example, payroll information that previously displayed on the worker form now appears in the action pane under **Compensation > Payroll**, and the **Personal information** tab now has a **More information** button to hide fields that aren't accessed often.
 
