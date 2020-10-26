@@ -52,7 +52,7 @@ Deploy the environments by completing the following steps.
 You can complete the steps as listed or use the attached PowerShell script to speed up the configuration. 
 
 
-# [Configuration steps](#tab/configuration-steps)
+# [Manual configuration steps](#tab/configuration-steps)
 
 1. Create a new Common data services environment in the same Active Directory Tenant. To do this, open the Environments page on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
    
@@ -749,7 +749,7 @@ A PowerShell script has been provided to easily set up the Azure resources descr
     }
 
 ```
----
+
 
 ### Manual setup
 
@@ -870,7 +870,8 @@ If you are unable to find any of the preceding applications, try the following i
     |     Display name of the new application you created     |     Storage Blob Data   Owner        |
     |     AI Builder Authorization Service                    |     Storage Blob Data   Reader       | 
  
-  
+---
+
   ## Configure entity store
   
   Set up the entity store in your Dynamics 365 Finance environment. 
