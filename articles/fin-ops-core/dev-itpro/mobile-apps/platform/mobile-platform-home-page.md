@@ -156,7 +156,7 @@ During development it can be useful to attach a debugger to get more detailed in
 ## Troubleshooting the app
 
 ### **[Resolved]** - No support for iOS14 due to issues with date and time controls
-Version 2.2.8 of the Finance and Operations mobile app fixes the known issues with the date and time pickers in iOS14. Please ensure you have the latest version of the app if you are experiencing issues running the application on iOS14.  
+Version 2.2.8 of the Finance and Operations mobile app fixes the known issues with the date and time pickers in iOS14. Ensure that you have the latest version of the app if you are experiencing issues running the application on iOS14.  
 
 ### The Mobile Client app is not working on particular devices
 Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
