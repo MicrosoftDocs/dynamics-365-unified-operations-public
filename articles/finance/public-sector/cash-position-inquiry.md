@@ -59,14 +59,14 @@ This inquiry is unique in that it allows users to customize the terminology for 
 - Specify a label for the third column (for example, "Cash disbursements") and fourth column (for example, "Interfund transfers").
 - For both columns, specify account numbers for the debit and credit main accounts, debit-only main accounts, and credit-only main accounts.
 
-5. In the **Column five** groupsection, specify a label for the fifth column (for example, ""Ending balance""). 
+5. In the **Column five** group section, specify a label for the fifth column (for example, ""Ending balance""). 
 
 > [!NOTE]
 > Dynamics 365 Finance automatically calculates a sum from the accounts you specified for the first four columns: Beginning balance plus cash receipts, minus cash disbursements, minus interfund transfers.
 
 6. In the **Column six** and **Column seven** sections: 
 
-- Specify a label for column six (for example, General budget reservations or Encunbrances") and column seven (for example, "Pre-encumbrances").
+- Specify a label for column six (for example, General budget reservations or Encumbrances") and column seven (for example, "Pre-encumbrances").
 - For both columns, specify account numbers for the **Debit and credit main accounts**, **Debit-only main accounts**, and **Credit-only main accounts**.
 
 7. In the **Column eight** section, specify a column label (for example, "Unencumbered balance"). 
@@ -78,7 +78,7 @@ This inquiry is unique in that it allows users to customize the terminology for 
 
 ## Running the inquiry
 
-1. Go to **General ledger** > **Inqiuries and reports** > **Cash position**.
+1. Go to **General ledger** > **Inquiries and reports** > **Cash position**.
 2. In the **Parameters** section: 
 
 - Select the **Date interval** code, or the **From date** and **To date**.
@@ -87,7 +87,7 @@ This inquiry is unique in that it allows users to customize the terminology for 
 
 Optional: 
 
-- Set the **Suppress accounts with all zeroes** option to **Yes** to exclude accounts that ahve all zero balances from the inquiry.
+- Set the **Suppress accounts with all zeroes** option to **Yes** to exclude accounts that have zero balances from the inquiry.
 - Set the **Display segments in separate columns** option to **Yes** to show the account names for each dimension as separate columns in the grid.
 - If you want to filter the values for a specific dimension selected, select the dimensions you want in the fields below the **Financial dimension set** field. The choices you have to select from depend on which financial dimension set you selected.
 
