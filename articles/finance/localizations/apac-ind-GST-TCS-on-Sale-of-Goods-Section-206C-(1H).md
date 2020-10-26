@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a business vertical
-description: This topic explains how to create a business vertical. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
+title: TCS on sales of goods under section 206C (1H)
+description: This topic provides information about how to post Tax Collection at Source (TCS) on sales of goods in Microsoft Dynamics 365.
 author: prabhatb
 manager: EricWang
 ms.date: 10/11/2020
@@ -28,158 +28,198 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# TCS on Sale of Goods under Section 206C(1H) 
-## Introduction :
-This document covers the functionality of the Tax collection at Source (TCS) on sale of goods. This feature describes how to do the basic setup for TCS  deduction on sale of goods transaction, calculate TCS on transactions from customer or on group of customer , TCS on transaction when customer do not have PAN number etc. 
+# TCS on sales of goods under section 206C (1H)
 
-As per section 206C (1H) TCS should be collected at the time of receipt of payment from customer in view of this interim accounting is introduced for this feature. Where TCS amount will be posted to interim account and added to invoice value at the time of issuance of  invoice and liability of TCS will be recorded in the books at the time of receipt of payment. 
+[!include [banner](../includes/banner.md)]
 
-Another important aspect of this feature is that if multiple customer have same PAN number than accumulate transaction amount will be taken to compare with threshold limit to determine the eligibility of transaction for TCS deduction. 
+This topic provides information about the functionality for Tax Collection at Source (TCS) on sales of goods. For example, it describes how to do the basic setup for TCS deduction on sale of goods transaction, how to calculate TCS on transactions from customers or on groups of customers, and how to calculate TCS on transactions when customers don't have a permanent account number (PAN).
 
-![](media/TCS-on-Sale-of-Goods-001.PNG)
+Per section 206C (1H), TCS should be collected when payment is received from a customer. Therefore, interim accounting is introduced for this feature. The TCS amount will be posted to an interim account and added to the invoice value when the invoice is issued. The liability for TCS will then be recorded in the books when payment is received.
 
-## Base amount for TCS deduction: 
-No specific clarification is available regarding base amount for TCS deduction on sale of goods, in absence of any specific provision or circular or clarification by CBDT, it is unclear as to whether TCS will be levied on GST charged in invoice or not.
+Another important aspect of this feature is that if multiple customers have the same PAN number, the transaction amount will be accumulated and compared with a threshold to determine whether the transaction is eligible for TCS deduction.
 
-There are two views whether TCS on Sales value including GST or excluding GST. Both views are supported by different analysis. However, till the clarification by CBDT, it will be more appropriate that TCS should be collected on Sales Value including GST.
+The following illustration shows the process flow for this feature.
 
+![Flow diagram](media/TCS-on-Sale-of-Goods-001.PNG)
 
-## PAN based accumulation of transaction of multiple customers: 
-In case of TCS on “sale of goods” deduction of TCS will be made based on PAN number. If multiple customers have same PAN number than all transactions executed by different customers have same PAN will be accumulated and compared against threshold limit prescribed by the government. 
+## Base amount for TCS deduction
 
-User has option to accumulate purchase threshold based on PAN number of vendors like customers. However, accumulation will take place based on vendor or customer within one legal entity. Inter legal entity accumulation will be out of scope. 
+Because the Central Board of Direct Taxes (CBDT) has issued no specific provision, circular, or clarification about the base amount for TCS deduction on sales of goods, it's unclear whether TCS will be levied on Goods and Services Tax (GST) that is charged on an invoice.
 
-## The point of collection of tax 
-As per the interpretation of TCS on sales of goods u/s 206C (1H), tax should be collected ‘at the time of receipt’ . It is clarified under law that TCS on sales of goods will be collected when actual payment is received by the seller.
-However to collect TCS on sale of goods, the seller needs to raise sale invoice including the amount of TCS, account in the books as a TCS liability even in actual sense it is not payable. Even though the TCS amount is debited to the buyer, the liability under Section 206C (1H) does not arise until the time the amount is collected. In order to cater this requirement new option “Tax liability on payment” is added under “Withholding tax group”. 
-On marking this option system will activate “interim account” field under the withholding tax code. At the time of posting of sale of goods invoice Tax amount will be posted to “Interim TCS payable account” and debit to “customer account”. When user receive payment from buyer at that time system generate “Related voucher” for posted invoice transaction to accrue TCS liability on payment.
+There are two views about whether TCS on the sales value includes or excludes GST. Both views are supported by analysis. However, until the CBDT issues a clarification, it will be more appropriate for GST to be included in TCS that is collected on the sales value.
 
-## TCS on Advance receipt of payment: 
+## PAN-based accumulation of transactions for multiple customers
 
-Every time the seller receives part of the sale consideration in advance, the seller is mandated to deduct TCS under Section 206C(1H). The difficulty arises in the calculation of the amount when TCS is deducted on multiple advance payment transaction and when payments transactions are adjusted against Invoice amount. Currently in the system user must manually adjust the TCS amount computed on invoice transaction to ensure that TCS amount on invoice is equal to TCS amount on payment.
+In the case of TCS on sales of goods, TCS will deducted based on PANs. If multiple customers have the same PAN, all transactions by those customers will be accumulated and compared against the threshold that is prescribed by the government. You can also accumulate the purchase threshold based on the PANs of vendors.
 
-## The feature is supported in following or later versions of Finance:
-- Dynamics 365 Finance versions:
+However, the accumulation will be based on vendors or customers in one legal entity. Accumulation among multiple legal entities is out of scope.
+
+## The point of collection of tax
+
+According to the interpretation of TCS on sales of goods under section 206C (1H), tax should be collected "at the time of receipt." The law clarifies that TCS on sales of goods will be collected when actual payment is received by the seller.
+
+However, to collect TCS on sales of goods, the seller must increase the amount of the sale invoice so that it includes the amount of TCS. The seller must also account for the amount in the books as a TCS liability, even though it isn't actually payable. Although the TCS amount is debited to the buyer, under section 206C (1H), the liability doesn't arise until the amount is collected. To accommodate this requirement, a new **Tax liability on payment** option is added for the withholding tax group.
+
+When this option is selected, the **Interim account** field for the withholding tax code becomes available. When a sale of goods is posted, the tax amount on the invoice is posted to the interim TCS payable account and debited to the customer account. When payment is received from the buyer, the system generates a related voucher for the posted invoice transaction to accrue the TCS liability on the payment.
+
+## TCS on advance receipt of payment
+
+Under section 206C (1H), every time that part of the sale consideration is received in advance, the seller is required to deduct TCS. However, a difficulty arises in the calculation of the amount when TCS is deducted on multiple advance payment transactions and when payments transactions are adjusted against the invoice amount. Currently, users must manually adjust the TCS amount that was calculated on invoice transactions in the system, to ensure that the TCS amount on the invoice equals the TCS amount on the payment.
+
+## Feature support
+
+The feature is supported in following versions of Microsoft Dynamics 365 Finance, or later versions:
+
 - 10.0.12
 - 10.0.13
 
-## Steps to do setup for TCS on sale of goods: 
-** Please note that it is mandatory for user to apply “Advance threshold” feature to enable deduction of TCS on sales of goods scenarios.** 
+## Set up TCS on sales of goods
 
-## Create new withholding tax code “Sale of goods”: 
-** Tax>Setup>withholding tax code >Sale of goods **
-When user attach “withholding tax component” of type “TCS” new field “Interim account” will enable.
-Do not select any account until mark check box “Tax liability on payment” under “Withholding tax group. 
-Select “Enable threshold hierarchy”- “Yes”. 
-On selection of “Yes” “PAN based accumulation “option will enable
-User can mark this option if dealing with customers have same PAN number. 
+> [!IMPORTANT]
+> To enable deduction of TCS on sales of goods, you must turn on the **Advance threshold** feature.
 
-![](media/TCS-on-Sale-of-Goods-002.PNG)
+## Create a new withholding tax code for sales of goods
 
-## Create new withholding tax group “Sale of goods.” 
-** Tax>setup>withholding tax group>Sale of goods ** 
-Create withholding tax group with tax type “TCS” and mark check box “Tax liability on payment”-Yes.
-After this go back to withholding tax code form and select  “ “Interim TCS payable account” in the field “Interim account”  created in the chart of account with posting type “India withholding tax (TCS)
-Include GST tax component if part of TCS base amount calculation under field “Include GST tax component for TDS or TCS calculation “
-If charges are not part of TCS calculation selection “Yes” under field “Exclude charges for TDS or TCS calculation” 
-Click on “Designer” button on action pane and define TCS calculation formula.
+1. Go to **Tax \> Setup \> Withholding tax code**.
+2. In the left pane, select **Sale of Goods**.
 
-![](media/TCS-on-Sale-of-goods-003.PNG)
+    When you attach a withholding tax component of the **TCS** type, the new **Interim account** field on the **General** FastTab becomes available.
 
-## Define Threshold definitions: 
-** Navigate to Tax > Setup > Threshold definitions**
-Define threshold definition for “Sale of goods.” 
-Two threshold slabs have to be defined. 
-- 0-Max 
-- Max-0 
+    > [!IMPORTANT]
+    > Don't select an interim account yet. You will select it after you set the **Tax liability on payment** option to **Yes** for the withholding tax group in the next procedure.
 
-![](media/TCS-on-Sale-of-Goods-004.PNG)
+3. Set the **Enable threshold hierarchy** option to **Yes**. The **PAN based accumulation** option become available.
+4. If multiple customers have the same PAN, set the **PAN based accumulation** option to **Yes**.
 
-## TCS Threshold setup for “Sale of goods” 
-TCS on sales of goods apply on single customer or multiple customers having same PAN number. 
-If customer PAN number is not available higher tax rate will apply after crossing the exempted turnover amount.
-If customer have PAN number than lower tax rate will apply. 
-Users need to define threshold reference for customers: 
+![Withholding tax codes page](media/TCS-on-Sale-of-Goods-002.PNG)
 
-![](media/TCS-on-Sale-of-goods-005.PNG)
+## Create a new withholding tax group for sales of goods
 
-## Click on Threshold designer 
+1. Go to **Tax \> Setup \> Withholding tax group**.
+2. In the left pane, select **Sale of Goods**.
+3. Create a withholding tax group that has the **TCS** tax type, and set the **Tax liability on payment** option to **Yes**.
+4. Go to **Tax \> Setup \> Withholding tax code**.
+5. On the **Withholding tax codes** page, in the **Interim account** field, select **Interim TCS payable account**. This account was created in the chart of account and has the **India withholding tax (TCS)** posting type.
+6. Return to the **Withholding tax groups** page.
+7. In the **Include GST tax component for TDS or TCS calculation** field, include the GST tax component if it's part of the calculation of the TCS base amount.
+8. If charges aren't part of the TCS calculation, in the **Exclude charges for TDS or TCS calculation** field, select **Yes**.
+9. On the Action Pane, select **Designer**, and define the formula for TCS calculation.
 
-Define two slabs with option:
- -	With PAN number
- - Without PAN number 
-Define separate TCS rate for each option. 
-When defining calculation basis for exempted slab
-  - Calculate tax – No
-(Another option Calculate tax – Yes and value – 0)  
-  - Calculate previous non-tax transactions-No.
-  -  Include in turnover base – Yes. 
-When defining calculation basis for Taxable slab
- -	Calculate tax – Yes.
- -  Calculate previous non-tax transactions-No.
- - 	Include in turnover base – Yes. 
+![Withholding tax groups page](media/TCS-on-Sale-of-goods-003.PNG)
 
-![](media/TCS-on-Sale-of- Goods-006.PNG)
+## Define threshold definitions
 
-## Activate calculation of TCS for customer: 
-** Accounts Receivable>Customers > All customers **
+1. Go to **Tax \> Setup \> Threshold definitions**.
+2. Define a threshold definition for sales of goods.
+3. Define two threshold slabs:
 
-![](media/TCS-on-Sale-of-Goods-007.PNG)
+    - 0-Max
+    - Max-0
 
-## Posting of Invoice: 
-** When invoice is posted, and the accumulated transaction cross the threshold limit following accounting entry is posted:**
+![Threshold designer page](media/TCS-on-Sale-of-Goods-004.PNG)
 
-![](media/TCS-on-Sale-of-Goods-Tab1.PNG)
+## Set up the TCS threshold for sales of goods
 
+TCS on sales of goods applies to either a single customer or multiple customers that have the same PAN.
 
-## TCS rate @ 0.1% (If PAN number is available ) 
-** Note : TCS rate would be 0.0750% from 1st October - 31st March,2020 ** 
-** Invoice is posted as below:** 
+If the customer PAN isn't available, a higher tax rate will be applied after the exempted turnover amount is passed. If the customer PAN is available, the lower tax rate will be applied.
 
-| Account                                       	| Debit  	| Credit  	|
-|-----------------------------------------------	|--------	|---------	|
-| Customer A/C (Invoice amount)                 	| 66,016 	|         	|
-| Ledger A/C (Sales A/C)                        	|        	| 60,000  	|
-| GST Payable                                   	|        	|  6,000  	|
-| Interim TCS Payable A/C (0.1% on 66000-50000) 	|        	|     16  	|
+1. Define threshold references for customers.
 
-## TCS liability will arise on collection of payment
-When user receive payment and attach Invoice with payment transaction, TCS amount is computed on full payment amount and reverse through related voucher. However, one more related voucher is generated with Invoice to show tax liability recognition in books for eligible amount only. 
+    ![Threshold references page](media/TCS-on-Sale-of-goods-005.PNG)
 
-| Account              	| Debit  	| Credit  	|
-|----------------------	|--------	|---------	|
-| Bank                 	| 66,016 	|         	|
-| Customer             	|        	| 66,016  	|
-| Interim TCS Payable  	| 65.95  	|         	|
-| TCS Payable          	|        	| 65.95   	|
+2. Select **Threshold designer**.
+3. Define two threshold slabs that have the following options:
 
-Related voucher will generate as below: 
+    - With PAN number
+    - Without PAN number
 
-| Account              	| Debit  	| Credit  	|
-|----------------------	|--------	|---------	|
-| Interim TCS payable  	|        	| 65.95   	|
-| TCS Payable          	| 65.95  	|         	|
+4. Define a separate TCS rate for each option.
+5. Define the calculation basis for each slab:
 
-** Important:**  
-One more related voucher will generate with posted sales Invoice to book actual TCS liability. 
-Users have to go to posted sales invoice voucher and check the related voucher entry. 
+    - For the exempted slab, set the following values:
 
-| Account              	| Debit 	| Credit 	|
-|----------------------	|-------	|--------	|
-| Interim TCS payable  	| 16.00 	|        	|
-| TCS Payable          	|       	| 16.00  	|
+        - **Calculate tax:** No
 
-** Note: In case of purchase transaction where vendor is deducting TCS, user have to create new TCS withholding group **
+            Alternatively, set the **Calculate tax** option to **Yes**, and set the value to **0** (zero).
 
-** TCS on Purchase of goods deducted by vendor: 
-In case TCS is deducted against the organization by the selling vendor, user must create separate withholding tax group “TCS on purchase of goods”. In the “Withholding tax group” under field group “Apply threshold” mark check box “PAN based accumulation “. User must define threshold definition for vendor and attach withholding tax group with the¬ respective vendor. On posting purchase order TCS amount deducted by vendor posted to TCS recoverable account. 
-Every Organization will claim credit of TCS deduction after reconciling the deduction with Form 26AS. 
-** Go to Tax>>Inquiries and reports>TDS/TCS inquiry **
-User can select required column fields to generate report. 
+        - **Calculate previous non-tax transactions:** No
+        - **Include in turnover base:** Yes
 
-![](media/TCS-on-Sale-of-Goods-008.PNG)
+    - For the taxable slab, set the following values:
 
+        - **Calculate tax:** Yes
+        - **Calculate previous non-tax transactions:** No
+        - **Include in turnover base:** Yes
 
+![Threshold designer page](media/TCS-on-Sale-of-Goods-006.PNG)
 
+## Activate the calculation of TCS for customers
 
+- Go to **Accounts receivable \> Customers \> All customers**.
 
+![All customer page](media/TCS-on-Sale-of-Goods-007.PNG)
+
+## Invoice posting
+
+When an invoice is posted, if the accumulated transaction passes the threshold limit, the following accounting entry is posted.
+
+| Item | Qty | Unit price | Net amt. | Tax group | IGST     | Tax rate | Threshold value |
+|------|-----|------------|----------|-----------|----------|----------|-----------------|
+| A    | 6   | 10,000     | 60,000   | Cust1     | IGST @10 | 10       | 50,000          |
+
+If the customer PAN is available, the TCS rate is 0.1 percent.
+
+> [!NOTE]
+> From October 1, 2019, through March 31, 2020, the TCS rate is 0.0750 percent.
+
+The invoice is posted as shown here.
+
+| Account                                       | Debit  | Credit |
+|-----------------------------------------------|--------|--------|
+| Customer A/C (Invoice amount)                 | 66,016 |        |
+| Ledger A/C (Sales A/C)                        |        | 60,000 |
+| GST Payable                                   |        | 6,000  |
+| Interim TCS Payable A/C (0.1% on 66000-50000) |        | 16     |
+
+## TCS liability that arises when payment is collected
+
+When payment is received, and the invoice is attached to the payment transaction, the TCS amount is calculated based on the full payment amount and reversed through a related voucher. However, another related voucher is generated together with the invoice. This related vouched shows tax liability recognition in books for the eligible amount only.
+
+| Account             | Debit  | Credit |
+|---------------------|--------|--------|
+| Bank                | 66,016 |        |
+| Customer            |        | 66,016 |
+| Interim TCS Payable | 65.95  |        |
+| TCS Payable         |        | 65.95  |
+
+The related voucher is generated as shown here.
+
+| Account             | Debit | Credit |
+|---------------------|-------|--------|
+| Interim TCS payable |       | 65.95  |
+| TCS Payable         | 65.95 |        |
+
+> [!IMPORTANT]
+> Another related voucher will be generated together with the posted sales invoice to book the actual TCS liability.
+
+Go to the posted sales invoice voucher, and check the related voucher entry.
+
+| Account             | Debit | Credit |
+|---------------------|-------|--------|
+| Interim TCS payable | 16.00 |        |
+| TCS Payable         |       | 16.00  |
+
+> [!NOTE]
+> In the case of a purchase transaction where the vendor is deducting TCS, you must create a new TCS withholding group.
+
+## TCS that vendors deduct on purchases of goods
+
+If the selling vendor deducts TCS against the organization, you must create a separate **TCS on purchase of goods** withholding tax group. On the **Withholding tax group** page, in the **Apply threshold** section, set the **PAN based accumulation** option to **Yes**. You must define a threshold definition for the vendor and attach the withholding tax group to the vendor. When the purchase order is posted, the TCS amount that the vendor deducted will be posted to the TCS recoverable account.
+
+Every organization will claim a credit for the TCS deduction after the deduction is reconciled by using Form 26AS.
+
+1. Go to **Tax \> Inquiries and reports \> TDS/TCS inquiry**.
+2. Select the required column fields to generate the report.
+
+![Tax transaction inquiry page](media/TCS-on-Sale-of-Goods-008.PNG)
