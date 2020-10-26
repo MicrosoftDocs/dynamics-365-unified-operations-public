@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Customer electronic invoices in Germany
-description: This topic explains how to set up and process customers electronic invoices in Germany.
+title: Customer electronic invoices in Germany (DE-00022)
+description: This topic explains how to set up and process customer electronic invoices in Germany.
 author: ilkond
 manager: AnnBe
 ms.date: 10/05/2020
@@ -32,20 +32,19 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-To comply with European Union's Directive 2014/55/EU, the Germany-specific format **xRechnung** version 1.2 has been implemented.
+To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format, version 1.2, has been implemented.
 
-This article explains how to set up and process customer electronic invoices in **xRechnung** format.
+This topic explains how to set up and process customer electronic invoices in **xRechnung** format.
 
 ## Prerequisites
 
-- The primary address of the legal entity must be in Germany.
+The primary address of the legal entity must be in Germany.
 
 ## Customer electronic invoices
 
-The setup and the specifics of electronic invoices use in Germany depends on the Microsoft Dynamics 365 Finance version you are using.
+The setup and the specifics of electronic invoices that are used in Germany depend on the version of Microsoft Dynamics 365 Finance that you use.
 
-For more details how to set up and use customer electronic invoices in Germany, see the following KB articles for the respective supported version:
+For more information about how to set up and use customer electronic invoices in Germany, see the Knowledge Base (KB) article for the appropriate supported version:
 
- - [Dynamics 365 Finance](https://support.microsoft.com/help/4490705)
- 
- - [Dynamics AX 2012 R3](https://fix.lcs.dynamics.com/Issue/Details?kb=4494484&bugId=3979521)
+- [Dynamics 365 Finance](https://support.microsoft.com/help/4490705)
+- [Dynamics AX 2012 R3](https://fix.lcs.dynamics.com/Issue/Details?kb=4494484&bugId=3979521)
