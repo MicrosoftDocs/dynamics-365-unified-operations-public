@@ -6,7 +6,7 @@ description: This topic describes the options that are available for setting up 
 author: abruer
 manager: AnnBe
 ms.date: 10/16/2020
-ms.topic: articl
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
