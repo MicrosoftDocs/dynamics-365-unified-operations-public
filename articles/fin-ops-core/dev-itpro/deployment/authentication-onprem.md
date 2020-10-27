@@ -82,10 +82,10 @@ Also these sections:
 ```
 
 [!NOTE]
-> The settings above represent a deployment configured with Microsoft 365 compatibility. You can find more information [here](./onprem-adfscompatibility.md)
+> The settings above represent a deployment configured with Microsoft 365 compatibility. For more information, see [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
 The AOS is using these configuration values to know where to redirect an unathenticated request when a user hits the application URL:
-    1. Request is sent by the browser to the application URL (https://ax.contoso.com/namespaces/AXSF/).
+    1. Request is sent by the browser to the application URL (`https://ax.contoso.com/namespaces/AXSF/`).
     2. The request is processed by the Gateway and gets forwarded to an AOS node accepting interactive sessions.
     3. The request reaches an AOS server and checks for the authentication cookies.
     4. No authentication is present so the AOS server returns a redirect request for the user to authenticate with AD FS. At this point the AOS also sets an affinity cookie to bind the user session to that AOS.
@@ -95,17 +95,15 @@ The AOS is using these configuration values to know where to redirect an unathen
     8. The Gateway receives this response and forwards the affinitized request to the appropriate AOS node.
     9. The AOS checks the authentication information provided and checks against the UserInfo table whether the user is allowed to access the application and which permissions it has.
     
-If values in the AOS config file are incorrect, then that typically means the value provided for the AD FS endpoint during environment deployment was wrong. The easiest thing is
-to delete and redeploy the environment from LCS with the right value. It is possible to manually edit the configuration files, but to be safe, do a redeploy. Otherwise you will need to manually change the values after each servicing operation on each AOS node. If you do edit the config files then you need to restart the AOS services for it to take effect. You can do that from the Service Fabric explorer (right click the AOS node under Nodes, choose restart, then wait for a minute or so for it's status to go back to green) or by rebooting the machine.
+If values in the AOS config file are incorrect, then that typically means the value provided for the AD FS endpoint during environment deployment was wrong. The easiest thing is to delete and redeploy the environment from LCS with the right value. It is possible to manually edit the configuration files, but to be safe, do a redeploy. Otherwise you will need to manually change the values after each servicing operation on each AOS node. If you do edit the config files, then you need to restart the AOS services for it to take effect. You can do that from the Service Fabric explorer (right-click the AOS node under **Nodes**, choose **Restart**, and then wait for a minute or so for its status to go back to green) or by rebooting the machine.
 
-Receiving a 500 error when accessing the application URL is a symptom of having specified an invalid URL for ADFS. This is because the AOS on startup will reach to that url to obtain information from the AD FS server. If the URL is wrong or inaccessible the AOS will be unable to startup. 
+Receiving a 500 error when accessing the application URL is a symptom of having specified an invalid URL for AD FS. This is because the AOS on startup will reach to that URL to obtain information from the AD FS server. If the URL is wrong or inaccessible, the AOS will be unable to start. 
 
-The second piece to the authentication process is ADFS itself. On the ADFS server if you open "AD FS Management" (from Control Panel\\System and Security\\Administrative Tools), and look under "Application groups", you'll
-find a group called "Microsoft Dynamics 365 for Operations On-premises". Within this group the settings for AD FS for your Dynamics application are kept.
+The second piece to the authentication process is ADFS itself. On the ADFS server if you open "AD FS Management" (from **Control Panel > System and Security > Administrative Tools**), and look under **Application groups**, you'll find a group called **Microsoft Dynamics 365 for Operations On-premises**. Within this group, the settings for AD FS for your Dynamics application are kept.
 
 ![AD FS application group setup](media/ADFS.png)
 
-AD FS uses the Client ID and the URLs to decide whether the request for access should be honored. You will notice that the Client ID from the screenshot above matches the IDs specified in the OfficeApps and OpenIDConnect sections from earlier. If both the client ID and the redirect URL don't match what the AOS is requesting, then AD FS will deny the request to authenticate. If that happens you'll find an error in the Event Log on the ADFS server. There's a special event log for AD FS under "Application and Services logs\\AD FS\\Admin"
+AD FS uses the client ID and the URLs to decide whether the request for access should be honored. You will notice that the client ID from the screenshot above matches the IDs specified in the OfficeApps and OpenIDConnect sections from earlier. If both the client ID and the redirect URL don't match what the AOS is requesting, then AD FS will deny the request to authenticate. If that happens you'll find an error in the Event Log on the ADFS server. There's a special event log for AD FS under **Application and Services logs > AD FS > Admin**.
 
 ![AD FS event log error](media/ADFSredirectwrong.png)
 
