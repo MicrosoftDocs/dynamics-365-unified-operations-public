@@ -61,8 +61,6 @@ The USMCA certification of origin document contains the following data elements:
 - Certifier signature
 - Number of pages
 
-SysLastValue is applied to the selection. <!-- KFM: What is this? I think we need few more details. -->
-
 For more information about each of these elements and how their values are found, see the remaining sections of this topic.
 
 ## Print a USMCA certification of origin document
@@ -105,15 +103,14 @@ When the **Certifying party** is set to *Exporter and Producer* or *Producer*, t
 
 ### Blanket period
 
-Use the **Blanket period from** and **Blanket period to** settings to establish a blanket period of up to 12 months, during which the document will cover multiple shipments of identical goods, even though the document is printed for only one shipment. You can set the blanket period dates without any constraints, and it will be added to the document. You can also leave these settings blank or even set them in the past.
-<!-- KFM: Is the blanket period "max 12 months" or "without constraints"? I think we should add a bit more detail about the practical considerations, like how this will work (doc kept on file, or doc automatically printed for each shipment, or what?). -->
+Use the **Blanket period from** and **Blanket period to** settings to establish a blanket period, during which the document will cover multiple shipments of identical goods, even though the document is printed for only one shipment. You can set the blanket period dates without any constraints, and it will be added to the document. You can also leave these settings blank or even set them in the past.
 
 ### Is single shipment
 
-In the **Certificate or origin** dialog box, set **Single shipment** to one of the following:
+In the **Certificate or origin** dialog box, set **Is single shipment** to one of the following:
 
-- *Yes* - Prints "Single Shipment: Yes" next to the invoice number.
-- *No* - Prints nothing.
+- *Yes* - Adds "Single Shipment: Yes" next to the invoice number.
+- *No* - Adds nothing.
 
 ## Other information included in the document
 
@@ -121,7 +118,7 @@ In addition to the optional elements that you select using the **Certificate or 
 
 ### Invoice number
 
-The IDs of sales invoices related to shipments are printed on the document irrespective of the blanket period. Invoice numbers are printed irrespective of the **Is single shipment** selection. Only IDs of sales invoices are printed. <!-- FKM: What do you mean with the last sentence? -->
+The IDs of sales invoices related to shipments are printed on the document irrespective of the blanket period. Invoice numbers are printed irrespective of the **Is single shipment** selection.
 
 ### Item details
 
@@ -143,8 +140,8 @@ You must enter this manually after generating the document.
 
 ### Consists of number of pages
 
-The user signing the certification must manually enter the number of pages after generating the document.
+The user signing the certification must manually enter the number of pages (for verification) after generating the document.
 
-### Number of pages
+### Page numbers
 
-Current page and number of pages printed in the bottom of the document. <!-- FKM: Is the "number of pages" mentioned here the same as in the previous section?  -->
+Current page and number of pages printed in the bottom of the document.
