@@ -56,6 +56,6 @@ To configure the property, follow these steps.
 
 [Credit card setup, authorization, and capture](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-card-authorizations)
 
-[Configure cash denominations for the point of sale (POS)](../cash-denominations)
+[Configure cash denominations for the point of sale (POS)](../cash-denominations.md)
 
 [Configure credit card processing](../tasks/configure-credit-card-processing.md)
