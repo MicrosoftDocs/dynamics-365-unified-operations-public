@@ -5,7 +5,7 @@ title: Dual reporting
 description: This topic guides you through an example that shows how you can fulfill the requirements for both International Financial Reporting Standard (IFRS) reporting and statutory reporting in Asset leasing.
 author: moaamer
 manager: Ann Beebe
-ms.date: 08/10/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,15 +25,14 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-08-10
+ms.author: moaamer
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 ---
 
 # Dual reporting
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic guides you through an example that shows how you can fulfill the requirements for both International Financial Reporting Standard (IFRS) reporting and statutory reporting in Asset leasing. Familiarity with posting layers in Microsoft Dynamics 365 Finance is required and will make the example easier to understand.
 
