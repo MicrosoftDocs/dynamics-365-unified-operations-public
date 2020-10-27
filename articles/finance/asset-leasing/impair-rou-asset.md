@@ -5,7 +5,7 @@ title: Impair right-of-use assets
 description: This topic describes the functionalty that records an impairment and adjusts the asset depreciation schedule of an Accounting Standards Codification Topic 842 (ASC 842) operating lease.
 author: moaamer
 manager: Ann Beebe
-ms.date: 08/05/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,15 +25,14 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-08-05
+ms.author: moaamer
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 ---
 
 # Impair right-of-use assets
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 If a right-of-use (ROU) asset's carrying amount isn't recoverable, you might have to test whether the asset is impaired. If you determine that the asset is impaired, Asset leasing can record the impairment and adjust the depreciation schedule accordingly. This topic describes the functionality that records the impairment and adjusts the depreciation schedule of an Accounting Standards Codification Topic 842 (ASC 842) operating lease. The same method also applies to International Financial Reporting Standard 16 (IFRS 16) leases.
 
