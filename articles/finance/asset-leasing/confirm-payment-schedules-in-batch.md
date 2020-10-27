@@ -5,7 +5,7 @@ title: Confirm Asset leasing payment schedules in a batch
 description: This topic explains how to confirm multiple payment schedules in a batch. 
 author: moaamer
 manager: Ann Beebe
-ms.date: 08/07/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,15 +25,14 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-08-07
+ms.author: moaamer
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 ---
 
 # Confirm Asset leasing payment schedules in a batch
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to confirm multiple payment schedules in a batch. Payment schedules are confirmed either on a lease-to-lease basis or through the confirmation batch process. A journal entry can be posted only against a lease that has a confirmed payment schedule. Confirmation of the payment schedule serves as a final approval of the financial information for the lease. All future changes to the financial information for the lease, such as payments and the lease term, constitute a lease adjustment and should be processed in that way.
 
