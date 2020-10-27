@@ -5,7 +5,7 @@ title: Asset leasing reports
 description: This topic lists and briefly describes the reports that are available in Asset leasing.
 author: moaamer
 manager: Ann Beebe
-ms.date: 08/19/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,15 +25,14 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-08-18
+ms.author: moaamer
+ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
 ---
 
 # Asset leasing reports
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists and briefly describes the reports that are available in Asset leasing. Most reports display by completing these steps or steps that are very similar, as noted). 
 
