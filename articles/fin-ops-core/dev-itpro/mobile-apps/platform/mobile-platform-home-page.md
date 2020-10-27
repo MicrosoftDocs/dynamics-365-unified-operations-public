@@ -3,7 +3,7 @@
 
 title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
-author: RobinARH
+author: robinarh
 manager: AnnBe
 ms.date: 10/26/2020
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544

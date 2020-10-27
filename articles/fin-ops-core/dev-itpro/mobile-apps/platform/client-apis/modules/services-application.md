@@ -2,7 +2,7 @@
 # required metadata
 title: Application module
 description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it. Each application consists of pages, actions, data queries and logic that glue them together. An application is primarily described with a declarative metadata system, and can have an accompanying imperative extension model.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:

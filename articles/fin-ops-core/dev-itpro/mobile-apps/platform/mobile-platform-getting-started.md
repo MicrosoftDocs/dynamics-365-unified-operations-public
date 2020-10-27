@@ -3,7 +3,7 @@
 
 title: Get started with the mobile platform
 description: This topic describes how to develop on the mobile platform.
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
 
