@@ -40,7 +40,7 @@ This topic lists the system requirements for the current version of Dynamics 365
 
 The web application can run in any of the following web browsers that run on the specified operating systems:
 
-- Microsoft Edge (latest publicly available version) on Windows 10
+- Microsoft Edge (latest publicly available version) on Windows 10. This both Legacy Edge and as well as the chromium-based Edge. 
 - Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
 - Google Chrome (latest publicly available version) 
 - Apple Safari (latest publicly available version)
