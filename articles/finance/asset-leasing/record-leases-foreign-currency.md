@@ -5,7 +5,7 @@ title: Record leases in foreign currencies
 description: This topic explains how to record leases in currencies other than the accounting or reporting currency.
 author: moaamer
 manager: Ann Beebe
-ms.date: 08/05/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,15 +25,14 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-08-05
+ms.author: moaamer
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 ---
 
 # Record leases in foreign currencies
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Asset leasing accounts for leases that are in currencies other than the accounting currency or the reporting currency are established on the **Ledger setup** page. All leases should be entered in their transaction currency. In other words, they should be entered in the currency that is specified in the lease contract. This topic explains how to record leases in currencies other than the accounting or reporting currency.
 
