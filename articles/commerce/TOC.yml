@@ -510,6 +510,8 @@
             href: cash-denominations.md
           - name: Configure credit card processing
             href: tasks/configure-credit-card-processing.md
+          - name: Skip "change due" dialog box in POS
+            href: dev-itpro/skip-change-due.md 
           - name: Adyen payment connector
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
