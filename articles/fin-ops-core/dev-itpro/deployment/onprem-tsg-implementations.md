@@ -236,18 +236,6 @@ Write-Output "TSG WindowsAzureStorage script succeeded"
 The following script is used to fix an issue that occurs for some customers who were previously on versions 10.0.5 through 10.0.9. Due to how the prepare process works, there are some older versions of DLLs that remain in the TaxEngine folder, that have now been moved in newer releases to different module folders. This script ensures that these DLLs are removed from the downloaded asset, before being deployed to the AOS nodes.
 
 ```powershell
-<#
-SAMPLE CODE NOTICE
-
-THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED, 
-OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.  
-THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.  
-NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-
-.Synopsis
-  Removes files from the Packages.zip file.
-
-#>
 [CmdletBinding()]
 param
 (
