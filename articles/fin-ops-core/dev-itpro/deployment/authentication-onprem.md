@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How authentication works in Dynamics 365 for Finance and Operations On-premises
+title: How authentication works in Dynamics 365 Finance + Operations (on-premises)
 description: This topic...
 author: faix
 manager: AnnBe
@@ -27,11 +27,11 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# How authentication works in Dynamics 365 for Finance and Operations On-premises
+# How authentication works in Dynamics 365 Finance + Operations (on-premises)
 
 [!include[banner](../includes/banner.md)]
 
-In this article we are going to explain authentication in on-premises Dynamics 365 for Finance and Operations. The intention of this article is to provide some background information on how the process works, so that if you have issues you can work through them to figure out what's wrong.
+In this article we are going to explain authentication in Dynamics 365 Finance + Operations (on-premises). The intention of this article is to provide some background information on how the process works so that if you have issues you can work to resolve them.
 
 First off - there's one option you provide during environment deployment, the URL for Active Directory Federation Services (AD FS), which looks similar to: https://adfs.contoso.com/adfs/.well-known/openid-configuration
 
