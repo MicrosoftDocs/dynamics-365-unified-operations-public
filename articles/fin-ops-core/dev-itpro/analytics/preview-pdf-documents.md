@@ -47,7 +47,7 @@ The legacy HTML-based preview experience is being replaced by a true document pr
 - A built-in tooling that allows users to quickly navigate the contents of the business document.
 
 ## Accessing the PDF preview experience (Platform update 36 or later)
-The PDF preview experience is enabled by default in [Self-Service deployments](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack) and environments hosted on Platform update 39 or later. To use the PDF preview experience in Platform updates 36 - 38, use Feature Management to enable the **Report PDF viewer** feature.
+The PDF preview experience is enabled by default in [Self-Service deployments](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack) and environments hosted on Platform update 39 or later. To use the PDF preview experience in Platform updates 36 thru 38, use Feature Management to enable the **Report PDF viewer** feature.
 
 ## Additional feature information
 - Expandable/collapsible sections are available by default. These interactive operations do not function after the PDF document has been created.
