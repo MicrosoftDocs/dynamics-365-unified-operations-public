@@ -5,7 +5,7 @@ title: Upload and serve static files
 description: This topic describes how to upload a static file in Microsoft Dynamics 365 Commerce site builder and create a custom URL and file name that can be used to request the file.
 author: StuHarg
 manager: annbe
-ms.date: 10/26/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Upload and serve static files
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to upload a static file in Microsoft Dynamics 365 Commerce site builder and create a custom URL and file name that can be used to request the file.
 
@@ -41,22 +41,23 @@ Some third party connectors require a file be hosted and served from the e-comme
 
 To create a site URL that returns a static file in Commerce site builder, follow these steps.
 
-1. Go to the URLs section of your site in site builder and select **+ New** -> **Create new URL**
-2. Choose Media library URL
-3. Enter the URL path, including the file name in the URL path field
-4. Click **Next**, which will open the media library
-5. Select a previously uploaded file, or click **Upload** to upload a new file
-6. Click **Save**.
+1. Go to **URLs** for your site.
+1. Select **+ New \> New URL**.
+2. In the **New URL** dialog box, select a Media Library URL.
+3. In the **URL path** box, enter the URL path, including the file name.
+4. Select **Next**, which will open the Media Library.
+5. Select a previously uploaded file, or select **Upload** to upload a new file.
+6. Select **Save**.
 
 At this point, the URL you created is in draft state, and the file it points to will not be returned by that URL until you publish it. This allows you to validate that the correct data is being returned by the URL. 
 
-## Validate an URL prior to publishing it
+## Validate an URL before publishing it
 
-To validate an URL prior to publishing it, follow these steps.
+To validate an URL before publishing it, follow these steps.
 
-1. Go to the URLs section of your site and select the URL you wish to preview.
-2. Click on the link below the Edit button. This will launch a new browser window which will return a 404
-3. Add the `preview=inprogress` query string name/value pair onto the URL (e.g. https://yoursite.com/callback.html?**preview=inprogress**)
+1. Go to **URLs** for your site and select the URL you want to preview.
+2. Below the **Edit** button in the properties pane on the right, select the correct URL link. This will launch a new browser window which will return a 404 error.
+3. Add the `preview=inprogress` query string to the URL (for example, `https://yoursite.com/callback.html?preview=inprogress`).
 
 The file you uploaded to the media library should be returned in the response. Once you have validated the URL, you can make it go live by going into the URLs section within your site, selecting the URL and clicking **Publish**.
 
