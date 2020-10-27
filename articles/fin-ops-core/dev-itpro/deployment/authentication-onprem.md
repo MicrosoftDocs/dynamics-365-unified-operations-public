@@ -33,15 +33,18 @@ ms.dyn365.ops.version: 10.0.15
 
 In this article we are going to explain authentication in Dynamics 365 Finance + Operations (on-premises). The intention of this article is to provide some background information on how the process works so that if you have issues you can work to resolve them.
 
+## The URL for Active Directory Federation Services (AD FS)
+
 First off, there's one option you provide during environment deployment: the URL for Active Directory Federation Services (AD FS). The URL will look similar to this: `https://adfs.contoso.com/adfs/.well-known/openid-configuration` 
 
-You'll find the URL mentioned in the deployment instructions [here](./setup-deploy-on-premises-pu12.md#configureadfs)
+You'll find the URL mentioned in the deployment instructions in the [Configure AD FS](./setup-deploy-on-premises-pu12.md#configureadfs) section. During deployment the URL is going to be used to set various options in the AOS startup variables of each AOS instance. These startup variables reside in an .XML config file located in a Service Fabric directory. This directory will vary from machine to machine, but the path should look similar to: 
 
-During deployment this is going to be used to set various options in the AOS startup variables of each AOS instance. These startup variables reside in an xml config file located in a Service Fabric directory. This directory will vary from machine to machine but should look similar to: C:\\ProgramData\\SF\\AOS_10\\Fabric\\work\\Applications\\AXSFType_App218\\AXSF.Package.1.0.xml
+C:\\ProgramData\\SF\\AOS_10\\Fabric\\work\\Applications\\AXSFType_App218\\AXSF.Package.1.0.xml
 
+## XML configuration file
 Note that there is also a file called AXSF.Package.Current.xml. This file will be a copy of the AXSF.Package.1.0.xml in Finance and Operations deployments. The AXSF.Package.Current.xml represents the variable that have been used to initialize the currently running AOS instance (AxService.exe).
 
-Within this configuration file (which is on each AOS machine) you'll find a few sections which are set from the LCS deployment setting for AD FS, this bit:
+Within this configuration file (which is on each AOS machine), you'll find a few sections which are set from the LCS deployment setting for AD FS, such as:
 
 ```xml
 <Section Name="Aad">
