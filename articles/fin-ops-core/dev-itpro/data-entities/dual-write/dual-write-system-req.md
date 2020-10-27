@@ -19,6 +19,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
+ms.search.scope: ["Core", "Operations", "CrossApp", "ShowInHelp"]
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 
