@@ -65,7 +65,7 @@ However, you might wonder why you would model an aggregate measurement so that i
 If one of the preceding reasons covers your situation, you should stage your aggregate measurement in Entity store and it use for Power BI integration.
 
 ## Update Entity store
-Entity store refresh is automated and managed by the system. In the client, you can find the **Entity Store** page at **Systems administration** &gt; **Setup** &gt; **Entity Store**. For more information, check out the [Automated Entity store refresh](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh) article.
+Entity store refresh is automated and managed by the system. In the client, you can find the **Entity Store** page at **Systems administration** &gt; **Setup** &gt; **Entity Store**. For more information, see [Automated Entity store refresh](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh).
 
 ### Connecting to the Entity store database
 For troubleshooting and diagnostics, you can connect to the Entity store database directly from a related sandbox environment.  To connect:
