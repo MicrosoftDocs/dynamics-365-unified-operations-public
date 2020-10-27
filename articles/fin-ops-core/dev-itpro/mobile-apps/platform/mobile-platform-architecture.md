@@ -3,7 +3,7 @@
 
 title: Architecture and design considerations for the mobile platform
 description: This topic provides in-depth information on designing mobile apps.
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 

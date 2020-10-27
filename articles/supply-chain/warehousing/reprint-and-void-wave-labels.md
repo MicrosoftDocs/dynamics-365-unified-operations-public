@@ -6,7 +6,7 @@ description: This topic explains how to void and reprint existing wave labels.
 author: GarmMSFT
 manager: PJacobse
 ms.date: 07/09/2020
-ms.topic: reprint-and-void-wave-labels
+ms.topic: article
 # ms.prod:
 ms.service: dynamics-ax-applications
 # ms.technology:

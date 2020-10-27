@@ -6,7 +6,7 @@ description: This topic describes wave label printing and explains how to set it
 author: GarmMSFT
 manager: PJacobse
 ms.date: 05/01/2020
-ms.topic: configure-wave-label-printing
+ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology:
