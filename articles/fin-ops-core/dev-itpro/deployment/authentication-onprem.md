@@ -85,15 +85,15 @@ Also these sections:
 > The settings above represent a deployment configured with Microsoft 365 compatibility. For more information, see [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
 The AOS is using these configuration values to know where to redirect an unathenticated request when a user hits the application URL:
-    1. Request is sent by the browser to the application URL (`https://ax.contoso.com/namespaces/AXSF/`).
-    2. The request is processed by the Gateway and gets forwarded to an AOS node accepting interactive sessions.
-    3. The request reaches an AOS server and checks for the authentication cookies.
-    4. No authentication is present so the AOS server returns a redirect request for the user to authenticate with AD FS. At this point the AOS also sets an affinity cookie to bind the user session to that AOS.
-    5. The gateway returns this response to the Gateway and it in turn forwards it back to the browser.
-    6. The browser receives the redirect request and brings up the AD FS authentication page so the user logs in.
-    7. Once successfully authenticated against AD FS, then the AD FS redirects you back to the application URL and provides the authentication cookies.
-    8. The Gateway receives this response and forwards the affinitized request to the appropriate AOS node.
-    9. The AOS checks the authentication information provided and checks against the UserInfo table whether the user is allowed to access the application and which permissions it has.
+1. Request is sent by the browser to the application URL (`https://ax.contoso.com/namespaces/AXSF/`).
+2. The request is processed by the Gateway and gets forwarded to an AOS node accepting interactive sessions.
+3. The request reaches an AOS server and checks for the authentication cookies.
+4. No authentication is present so the AOS server returns a redirect request for the user to authenticate with AD FS. At this point the AOS also sets an affinity cookie to bind the user session to that AOS.
+5. The gateway returns this response to the Gateway and it in turn forwards it back to the browser.
+6. The browser receives the redirect request and brings up the AD FS authentication page so the user logs in.
+7. Once successfully authenticated against AD FS, then the AD FS redirects you back to the application URL and provides the authentication cookies.
+8. The Gateway receives this response and forwards the affinitized request to the appropriate AOS node.
+9. The AOS checks the authentication information provided and checks against the UserInfo table whether the user is allowed to access the application and which permissions it has.
     
 If values in the AOS config file are incorrect, then that typically means the value provided for the AD FS endpoint during environment deployment was wrong. The easiest thing is to delete and redeploy the environment from LCS with the right value. It is possible to manually edit the configuration files, but to be safe, do a redeploy. Otherwise you will need to manually change the values after each servicing operation on each AOS node. If you do edit the config files, then you need to restart the AOS services for it to take effect. You can do that from the Service Fabric explorer (right-click the AOS node under **Nodes**, choose **Restart**, and then wait for a minute or so for its status to go back to green) or by rebooting the machine.
 
