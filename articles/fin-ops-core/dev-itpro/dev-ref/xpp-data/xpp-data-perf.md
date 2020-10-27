@@ -50,7 +50,7 @@ In some situations, these record set–based operations can be converted to slow
 | Alerts are set up for the table. | Yes | Yes | Yes | No | **skipEvents** |
 | The **ValidTimeStateFieldType** property on a table is set to a value other than **None**. | Yes | Yes | Yes | Yes | Not applicable |
 
-You can use the **skip\*** settings that are shown in the "Used to override" column to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
+You can use the **skip\*** settings that are shown in the "Used to override" column to explicitly skip or ignore one or more factors that adversely affect performance. If one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are ignored. In the following example code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
 
 ```xpp
 public void tutorialRecordInsertList()
