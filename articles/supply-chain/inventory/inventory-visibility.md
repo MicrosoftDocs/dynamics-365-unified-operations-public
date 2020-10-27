@@ -30,6 +30,15 @@ ms.dyn365.ops.version: Release 10.0.15
 # Inventory Visibility Add-in
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+The Inventory Visibility Add-in is an independent and highly scalable microservice that enables real-time on-hand inventory tracking, thus providing a global view of inventory visibility.
+
+All information that relates to on-hand inventory is exported to the service in near real-time through low-level SQL integration. External systems access the service through RESTful APIs to query on-hand information on given sets of dimensions, thus retrieving a list of available on-hand positions.
+
+Inventory Visibility is a microservice built on the Common Data Service, which means you can extend it by building Power Apps and applying Power BI to provide customized functionality to meet your business requirements. It is also possible to upgrade the index to do inventory queries.
+
+Inventory Visibility provides configuration options that let it integrate with multiple third-party systems. It supports the standardized inventory dimension, customized extensibility, and standardized, configurable calculated quantities.
 
 This topic describes how to install and configure the Inventory Visibility Add-in for Dynamics 365 Supply Chain Management, and how to use its application programming interface (API).
 
@@ -48,7 +57,7 @@ Before you install the Inventory Visibility Add-in, you must do the following:
 - Enable the beta keys for your offering for your user in LCS.
 - Contact the Microsoft Inventory Visibility product team and provide an environment ID where you want to deploy the Inventory Visibility Add-in.
 
-If you have any questions about these prerequisites, please contact the Microsoft Dynamics 365 Supply Chain Management Inventory Visibility Product team.
+If you have any questions about these prerequisites, please contact the Inventory Visibility product team.
 
 ### <a name="install-add-in"></a>Install the add-in
 
@@ -84,7 +93,7 @@ To get a security service token, do the following:
     - Scope for MCK - "https://inventoryservice.operations365.dynamics.cn/.default"  
     (You can find the Azure Active Directory application ID and tenant ID for MCK in `appsettings.mck.json`.)
     - Scope for PROD - "https://inventoryservice.operations365.dynamics.com/.default"  
-    (You can find the Azure Active Directory application ID and tenant ID for MCK in `appsettings.prod.json`.)
+    (You can find the Azure Active Directory application ID and tenant ID for PROD in `appsettings.prod.json`.)
 
     The result should resemble the following example.
 
@@ -224,7 +233,7 @@ Here is a sample query on the product with color and size combination.
 }
 ```
 
-#### Custom measurements
+#### Custom measurement
 
 The default measurement quantities are linked to Supply Chain Management, however you may want to have a quantity that is made up of a combination of the default measurements. To do this, you can have a configuration of custom quantities, which will be added to the output of the on-hand queries.
 
