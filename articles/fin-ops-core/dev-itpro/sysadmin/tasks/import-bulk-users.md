@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Import users in bulk
-description: This procedure can be used by system administrators to import a large number of users from Azure Active Directory. 
+title: Import users from Azure Active Directory
+description: This procedure can be used by system administrators to manually import selected users or to import a large number of users from Azure Active Directory. 
 author: peakerbl
 manager: AnnBe 
 ms.date: 07/07/2017
@@ -26,19 +26,33 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+# Import users from Azure Active Directory
+
+[!include [banner](../../includes/banner.md)]
+
+This procedure can be used by system administrators to imported selected users from Azure Active Directory.
+
+1. User will be imported with the current sesssion Compnay as thier default compnay. Change current company is applicable before importing users.
+2. Go to System administration > Users > Users.
+3. Click Import users.
+4. Select the user that shouls be imported and Select Import users
+
+After import is completed it will be required to assing roles to users.
+
 # Import users in bulk
 
 [!include [banner](../../includes/banner.md)]
 
 This procedure can be used by system administrators to import a large number of users from Azure Active Directory.
+Note that it is not possible to select users when using the Batch import option.
 
 
-## Run as a batch job
-1. Go to System administration > Users > Users.
-2. Click Batch import.
-3. Expand the Run in the background section.
+## Run the import as a batch job
+1  User will be imported with the current sesssion Compnay as thier default compnay. Change current company is applicable before importing users.
+2. Go to System administration > Users > Users.
+3. Click Batch import.
+4. Expand the Run in the background section.
 4. Select Yes in the Batch processing field.
-5. In the Task description field, type a value.
 6. In the Batch group field, enter or select a value.
     * This is an optional step.  
 7. Select Yes in the Private field.
@@ -47,6 +61,8 @@ This procedure can be used by system administrators to import a large number of 
     * This is an optional step.  
 9. In the Monitoring category field, select an option.
 10. Click OK.
+
+After import is completed, it will be required to assing roles to users.
 
 ## Run in a sandbox environment
 1. Click Batch import.
