@@ -3,7 +3,7 @@
  
 title: Import users in bulk
 description: This procedure can be used by system administrators to import a large number of users from Azure Active Directory. 
-author: maertenm
+author: peakerbl
 manager: AnnBe 
 ms.date: 07/07/2017
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
