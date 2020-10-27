@@ -30,25 +30,24 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure can be used by system administrators to imported selected users from Azure Active Directory.
+## Import select users
 
-1. User will be imported with the current sesssion Compnay as thier default compnay. Change current company is applicable before importing users.
+This procedure can be used by system administrators to import select users from Azure Active Directory.
+
+1. User will be imported with the current sesssion company as their default company. Change current company if applicable before importing users.
 2. Go to System administration > Users > Users.
 3. Click Import users.
-4. Select the user that shouls be imported and Select Import users
+4. Select the users that should be imported and select Import users.
 
-After import is completed it will be required to assing roles to users.
+After import is completed it will be required to assign roles to users.
 
-# Import users in bulk
-
-[!include [banner](../../includes/banner.md)]
+## Import users in bulk
 
 This procedure can be used by system administrators to import a large number of users from Azure Active Directory.
 Note that it is not possible to select users when using the Batch import option.
 
-
 ## Run the import as a batch job
-1  User will be imported with the current sesssion Compnay as thier default compnay. Change current company is applicable before importing users.
+1. User will be imported with the current sesssion company as their default company. Change current company if applicable before importing users.
 2. Go to System administration > Users > Users.
 3. Click Batch import.
 4. Expand the Run in the background section.
@@ -62,7 +61,7 @@ Note that it is not possible to select users when using the Batch import option.
 9. In the Monitoring category field, select an option.
 10. Click OK.
 
-After import is completed, it will be required to assing roles to users.
+After import is completed, it will be required to assign roles to users.
 
 ## Run in a sandbox environment
 1. Click Batch import.
