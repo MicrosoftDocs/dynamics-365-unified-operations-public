@@ -32,9 +32,7 @@ ms.dyn365.ops.version: Release 10.0.16
 # Customize transactional emails by mode of delivery
 
  
-
-[!include [banner](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/commerce/includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
  
 
 This topic describes how to set up custom email templates for specific notification types and modes of delivery
