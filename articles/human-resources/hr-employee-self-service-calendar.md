@@ -70,5 +70,13 @@ Calendar configuration in Leave and absence parameters determine available view 
 
 You can also filter calendars by manager or department. The primary position assignment determines the employees displayed when these filters are set. 
 
+> [!IMPORTANT]
+> Viewing leave and absence across companies is currently in preview. It will need to be enabled in your **Sandbox** environment and enabled in Human resources shared parameters to display the legal entity filter in calendars. 
+
+- [Manage features](hr-admin-manage-features.md)
+- [Configure leave and absence parameters](hr-leave-and-absence-parameters.md)
+
+You can filter the calendar by legal entity. If you want to see all employees regardless of legal entity, clear the filter box and select enter. 
+
 For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
