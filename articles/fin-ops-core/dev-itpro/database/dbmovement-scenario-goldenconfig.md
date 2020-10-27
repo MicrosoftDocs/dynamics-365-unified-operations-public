@@ -184,11 +184,11 @@ Now that the UAT environment is hydrated with the golden configuration, you can 
 
 ## Copy the sandbox database to production
 
-When you're ready to do a mock go-live or actual go-live, you can copy the UAT environment to production. This process is often referred to as *cutover*. We recommend that you do a cutover more than one time before your actual go-live. In this way, you can get detailed time estimates for each step of the process, including the step where you submit a **Sandbox to Production** service request to ask that Microsoft run the copy action.
+When you're ready to do a mock go-live or actual go-live, you can copy the UAT environment to production. This process is often referred to as *cutover*. We recommend that you do a cutover more than one time before your actual go-live. In this way, you can get detailed time estimates for each step of the process.
 
-> [!NOTE]
-> You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
+Check what kind of **Environment type** the Production environment is and follow the relevant steps below accordingly.
 
+### Microsoft Managed
 1. In LCS, on the project home page, select **Service requests**.
 2. On the **Service requests** page, select **Add**, and then select **Sandbox to Production**.
 3. In the **Sandbox to Production** dialog box, follow these steps:
@@ -196,6 +196,16 @@ When you're ready to do a mock go-live or actual go-live, you can copy the UAT e
     1. In the **Source environment name** field, select the sandbox environment to copy the database from.
     2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least four hours after the start date. To help ensure that resources are available to run the request, it's recommended to submit your request at least 24 hours before your preferred downtime window.
     3. Select the check boxes at the bottom to agree to the terms.
+
+### Self-Service
+1. In LCS, open the **Full details** for the production environment to load the **Environment page**.
+2. In the **Maintain** menu, select **Move database**.
+3. In the options of operations select **Refresh database**.
+4. In the **Source environment** chose the sandbox where your Golden configuration is. Notice the important instructions found in the [Technical documentation](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations) for this kind of operation.
+5. Check the **Checkbox** to confirm you understand this operation will overwrite production database. The operation starts immediately after submitting the request.
+
+> [!IMPORTANT]
+> Every Database refresh will reset the **Point-in-time-restore** chain of restore points.
 
 ## Reconfigure environment specific settings
 
