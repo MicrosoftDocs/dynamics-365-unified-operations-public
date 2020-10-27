@@ -2,10 +2,10 @@
 # required metadata
 
 title: How authentication works in Dynamics 365 Finance + Operations (on-premises)
-description: This topic...
+description: This topic provides some background information on how the process works so that if you have issues you can work to resolve them.
 author: faix
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -84,6 +84,7 @@ Also these sections:
 [!NOTE]
 > The settings above represent a deployment configured with Microsoft 365 compatibility. For more information, see [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
+## Configuration values used by the AOS
 The AOS is using these configuration values to know where to redirect an unathenticated request when a user hits the application URL:
 1. Request is sent by the browser to the application URL (`https://ax.contoso.com/namespaces/AXSF/`).
 2. The request is processed by the Gateway and gets forwarded to an AOS node accepting interactive sessions.
@@ -99,6 +100,7 @@ If values in the AOS config file are incorrect, then that typically means the va
 
 Receiving a 500 error when accessing the application URL is a symptom of having specified an invalid URL for AD FS. This is because the AOS on startup will reach to that URL to obtain information from the AD FS server. If the URL is wrong or inaccessible, the AOS will be unable to start. 
 
+## AD FS
 The second piece to the authentication process is ADFS itself. On the ADFS server if you open "AD FS Management" (from **Control Panel > System and Security > Administrative Tools**), and look under **Application groups**, you'll find a group called **Microsoft Dynamics 365 for Operations On-premises**. Within this group, the settings for AD FS for your Dynamics application are kept.
 
 ![AD FS application group setup](media/ADFS.png)
