@@ -43,7 +43,7 @@ This topic describes the various options for configuring job card devices.
 
 ## Turn on the production floor execution interface and its related optional features
 
-The production floor execution interface itself, plus several of the optional settings that are described in this topic, must be turned on in your system before they will be available to you. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
+The production floor execution interface itself, plus several of the optional settings that are described in this topic, must be turned on in your system before you can use them. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
 
 ### The production floor execution interface
 
