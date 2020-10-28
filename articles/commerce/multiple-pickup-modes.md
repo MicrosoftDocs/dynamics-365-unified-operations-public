@@ -56,8 +56,8 @@ After defining additional pick up modes of delivery, add these new modes to the 
 > Once you have defined more than one pick up mode of delivery in **Commerce parameters** you will note the **Support for multiple pickup delivery modes** feature becomes a **Mandatory** feature and can no longer be disabled.  If you need to disable this feature, you must first remove all but one pick up delivery mode from the **Commerce parameter**, if only one pick up mode is defined, the feature will no longer be considered mandatory and can be disabled if needed.
 
 ### e-Commerce site configurations
-Once the **Support for multiple pickup delivery modes** feature is enabled the following modules will show the new pick up modes delivery modes as configured
-– BuyBox
+Once the **Support for multiple pickup delivery modes** feature is enabled, the following modules will show the new pick up modes delivery modes as configured
+- BuyBox
 - Store selector
 - Cart
 - Pickup information
