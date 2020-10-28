@@ -2,7 +2,7 @@
 # required metadata
 
 title: Impair right-of-use assets
-description: This topic describes the functionalty that records an impairment and adjusts the asset depreciation schedule of an Accounting Standards Codification Topic 842 (ASC 842) operating lease.
+description: This topic describes the functionality that records an impairment and adjusts the asset depreciation schedule of an Accounting Standards Codification Topic 842 (ASC 842) operating lease.
 author: moaamer
 manager: Ann Beebe
 ms.date: 10/28/2020
