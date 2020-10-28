@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Recall order operation in POS
-description: This topic explains feature capabilities available for improved order recall pages in POS.
+title: Enabling multiple pick up delivery modes for Commerce customer orders
+description: This topic explains feature capabilities available for creating customer orders for pick up in a store
 author: hhainesms
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 10/29/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -54,6 +54,17 @@ After defining additional pick up modes of delivery, add these new modes to the 
 
 > [!IMPORTANT]
 > Once you have defined more than one pick up mode of delivery in **Commerce parameters** you will note the **Support for multiple pickup delivery modes** feature becomes a **Mandatory** feature and can no longer be disabled.  If you need to disable this feature, you must first remove all but one pick up delivery mode from the **Commerce parameter**, if only one pick up mode is defined, the feature will no longer be considered mandatory and can be disabled if needed.
+
+### e-Commerce site configurations
+Once the **Support for multiple pickup delivery modes** feature is enabled the following modules will show the new pick up modes delivery modes as configured
+– BuyBox
+- Store selector
+- Cart
+- Pickup information
+- Order confirmation 
+- Order details 
+
+There are no additional steps needed on e-Commerce pages to enable the new pick up modes of delivery.
 
 ## Working with multiple pick up modes of delivery
 
