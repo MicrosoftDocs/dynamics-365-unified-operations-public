@@ -103,6 +103,9 @@ A data entity should provide a holistic object that encapsulates the relevant bu
 
 -   Name the EntitySet in plural form. For example, the EntitySet for the **ReleasedProduct** EntityType is **ReleasedProducts**.
 
+### Number of columns in a data entity
+It must be taken into account that, excel based imports/exports supports a maximum of 255 columns. If it is expected for an entity to be able to export/import more than 255 columns, then a non-excel format must be planned or the entity should have less than or equal to 255 columns.
+
 
 
 
