@@ -54,7 +54,7 @@ This topic explains how to update the local agent. The latest version of the loc
 ## What's new in local agent 2.6.0
 
 - Local agent 2.6.0 uptakes a new Service Fabric SDK and runtime.
-- This release also fixes a bug where, if refresh state is triggered when the environment is stuck in the Downloading phase, the environment would automatically move to a deployed state without updating the environment. In this situation, the refresh state will mark the Downloading stage as failed.
+- This release also fixes a bug where, if refresh state is triggered when the environment is stuck in the Downloading phase, the environment would automatically move to a deployed state without updating the environment. In this situation, the refresh state will mark the Downloading phase as failed.
 - Additionally the timeout for provisioning an application has been increased.
 
 > [!IMPORTANT]
