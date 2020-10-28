@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a lease group (Preview)
+title: Create a lease group
 description: This topic explains how to set up lease groups. Lease groups are required to create new leases.
 author: moaamer
 manager: Ann Beebe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Create a lease group (Preview)
+# Create a lease group
 
 [!include [banner](../includes/banner.md)]
 
