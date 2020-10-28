@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up expense types (Preview)
+title: Set up expense types
 description: This topic explains how to set up expense types in Asset leasing.
 author: moaamer
 manager: Ann Beebe
-ms.date: 08/14/2019
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,15 +26,14 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2019-08-14
-ms.dyn365.ops.version: 10.0.6
+ms.search.validFrom: 2019-10-28
+ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Set up expense types (Preview)
+# Set up expense types
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to set up expense types in Asset leasing. Costs that aren't represented by the payment schedule are known as *expense costs*. Examples of these costs include property taxes, common area maintenance costs, and insurance expenses.
 
