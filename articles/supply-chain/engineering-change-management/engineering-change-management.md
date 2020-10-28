@@ -114,7 +114,7 @@ When you review a request for change, you can search for dependencies. In this w
 
 ### Create a change order from a change request
 
-An engineer who is reviewing an engineering change request can create an engineering change order directly from the change request page. On the Action Pane, on the **Change request** tab, in the **Engineering change order** group, select **Copy link and products**.
+An engineer who is reviewing an engineering change request can create an engineering change order directly from the **Engineering change requests** page. On the Action Pane, on the **Change request** tab, in the **Engineering change order** group, select **Copy link and products**.
 
 ## Engineering change orders
 
@@ -156,7 +156,7 @@ As is described in [Engineering companies and data ownership rules](engineering-
 
     When engineering change orders are processed in the engineering company, the products are created and/or updated only in the engineering company. Therefore, if the product master data should also be updated, you must also release the products to operational companies.
 
-- You can release products directly from engineering change orders. Open the change order, and then, on the Action Pane, on the **Change order** tab, in the **Product releases** group, select **Release product structure**. The process works just as it works when you release products from a released products page. For more information, see [Release product structures](release-product-structure.md).
+- You can release products directly from engineering change orders. Open the change order, and then, on the Action Pane, on the **Change order** tab, in the **Product releases** group, select **Release product structure**. The process works just as it works when you release products from the **Released products** page. For more information, see [Release product structures](release-product-structure.md).
 - You can have products automatically released from engineering change orders, based on the following factors:
 
     - Re-releases to companies where products were previously released. Select **Search** to scan all previous releases, and then select **View** to view the results. The **View** page shows the previous product releases, and you can select which products you want to re-release. Then close the **View** page, and select **Process** to re-release the selected products.
@@ -183,7 +183,7 @@ Most of the fields on engineering change orders are the same as the fields for r
 | Engineering change reasons | Select the reason for changing the affected product. |
 | Change description | Enter a description of the change. |
 | Required special tooling | Specify whether special tooling is required to apply the change. |
-| Engineering material disposition | Select a material disposition code for the waste when the change is applied. |
+| Engineering material disposition | Select a material disposition code for any waste that is produced when the change is applied. |
 | Customer approval required | Specify whether customer approval is required before the change can be applied. |
 | Received customer approval | Specify the status of the customer approval. |
 | Environmental health and safety | Specify whether environmental health and safety rules are applicable to the change. If they are, you can then select the applicable rules. |

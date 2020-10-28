@@ -73,7 +73,7 @@ An engineering organization owns the engineering data, and is responsible for pr
 1. Select **New** to create a product dimension group.
 1. Set the **Name** field to *Version*.
 1. Select **Save** to save the new dimension and load values onto the **Product dimensions** FastTab.
-1. On the **Product dimensions** FastTab, set **Version** as an active version dimension.
+1. On the **Product dimensions** FastTab, set **Version** as an active product dimension.
 
     ![Adding a product dimension group](media/product-dimension-groups.png "Adding a product dimension group")
 
@@ -180,7 +180,7 @@ Engineering product categories provide the basis for creating engineering produc
 
 ## Create a new engineering product
 
-An engineering product is a product that is versioned and controlled through engineering change management. In other words, you can control the changes during its life, and the change information will be kept with engineering change orders. To create engineering products, follow these steps.
+An engineering product is a product that is versioned and controlled through engineering change management. In other words, you can control the changes during its life, and the change information will be saved using engineering change orders. To create engineering products, follow these steps.
 
 1. Make sure that you're in the legal entity of your engineering organization (*DEMF* for this example). Use the company picker on the right side of the navigation bar as required.
 1. Open the **Released products** page by following one of these steps:
@@ -242,7 +242,7 @@ An engineering product is a product that is versioned and controlled through eng
 
 1. Close the page.
 
-## Release an engineering product to a local company
+## <a name="release"></a>Release an engineering product to a local company
 
 The product has now been designed by the Engineering department. For this example, the product is a prototype that engineering has designed for a customer. Because the customer is a customer of the *USMF* legal entity, the product must be released to that legal entity.
 
@@ -275,7 +275,7 @@ The product has now been designed by the Engineering department. For this exampl
 1. Select **Next** to open the **Confirm selection** page.
 1. Select **Finish**.
 
-## Review and accept the product before you release it in the local company
+## <a name="accept"></a>Review and accept the product before you release it in the local company
 
 The Engineering department has now released the information to the local companies where the product will be used. For this example, the local company is *USMF*.
 
@@ -292,7 +292,7 @@ To review the product and release it in the *USMF* company, follow these steps.
 
 1. Select the value in the **Product number** column to open the **Product release details** page. Notice the following details:
 
-    - The **General** FastTab shows information about the product release, such as the releasing company (*DEMF* for this example), the releasing site (*1*), and the receiving site (*1*). Because you didn't specify a site in the **Release products** wizard, the site from the releasing site is copied over.
+    - The **General** FastTab shows information about the product release, such as the releasing company (*DEMF* for this example), the releasing site (*1*), and the receiving site (*1*). Because you didn't specify a receiving site in the **Release products** wizard, the the releasing site value is copied to the receiving site.
     - The **Release details** FastTab shows information about the product and the version that was released. Here, you can modify settings such as the effectivity dates.
     - The **Route** FastTab shows the route of the product. However, for this example, you didn't release any routes.
 
@@ -363,7 +363,7 @@ The engineer now reviews the request from the customer and creates a change orde
 1. Because the engineer works in the *DEMF* company, set the legal entity to *DEMF*. (Use the company picker on the right side of the navigation bar.)
 1. Go to **Engineering change management &gt; Common &gt; Engineering change requests**.
 1. Open change request *555*.
-1. Review the information, and then approve the change. On the Action Pane, on the **Change request** tab, in the **Change status** group, select **Approve**. The **Change lifecycle state** drop-down dialog box appears.
+1. Review the information, and then approve the change. On the Action Pane, on the **Change request** tab, in the **Change status** group, select **Approve**.
 1. Go to **Engineering change management &gt; Common &gt; Engineering change orders**.
 1. On the Action Pane, select **New** to create a change order, and set the following values for it:
 

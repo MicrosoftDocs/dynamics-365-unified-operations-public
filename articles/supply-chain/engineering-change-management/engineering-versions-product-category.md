@@ -39,7 +39,7 @@ Engineering products evolve during their product lifecycle, for many reasons. Fo
 
 *Engineering versions* ensure that the various states of a product and its data are kept current and clear, and that they can be visualized in the system. This concept helps you maintain consistency, lock down the bill of materials (BOM) for production, eliminate variability, and easily identify changes.
 
-Generally, the *form-fit-function* rule is applied to determine whether a change requires a new product, a new version, or an update to an existing version. Each defines a specific aspect of a part, to help engineers match parts to needs. The form-fit-function rule increases the flexibility of design changes, because minimal documentation and design cost are required to change a part, provided that the fit, form, and function of the product are maintained.
+Generally, the *form-fit-function* rule is applied to determine whether a change requires a new product, a new version, or an update to an existing version. Each of the three terms in the name of this rule refers to a specific aspect of a part, which helps engineers match parts to needs. The form-fit-function rule increases the flexibility of design changes, because minimal documentation and design cost are required to change a part, provided that the fit, form, and function of the product are maintained.
 
 - **Fit** refers to the ability of the part or feature to connect to, mate with, or join to another feature or part in an assembly. The fit enables the part to meet the required assembly tolerances so that it can be useful.
 - **Form** refers to characteristics of a part or assembly, such as the external dimensions, weight, size, and visual appearance. The form is the aspect that is most affected by an engineer's aesthetic choices. It includes the enclosure, chassis, and control panel, which become the outward "face" of the product.
@@ -70,7 +70,7 @@ When you use engineering change management, your product master data always incl
 
 - The Logistics department must ship two pieces of a product to a customer. In this case, you must decide whether you want or will allow two different versions to be shipped.
 - It's later discovered that a problem occurs, and that it's related to a specific change. In this case, it might be beneficial to determine exactly which version was shipped in each order.
-- Companies typically want to ship old versions first, to phase them out of inventory. Especially for low-volume products, this approach can often be managed by determining the effectivity dates of the new version in relation to predictions about when stock of the old version will be depleted. However, this sometimes isn't possible, or the uncertainty of stock level predictions is considered too high.
+- Companies typically want to ship old versions first, to phase them out of inventory. Especially for low-volume products, this approach can often be managed by determining the effectivity dates of the new version in relation to predictions about when stock of the old version will be depleted. However, sometimes you might not be able to make this comparison, or you may consider the uncertainty of stock level predictions to be too high.
 
 The decision about whether to make versions visible in inventory depends on factors such as those that were previously mentioned, plus company practice and other considerations that are specific to each company. You can specify the behavior for the *engineering product category*. It will then apply to all products that are created from that category, for all companies that the product is released to.
 
@@ -80,7 +80,7 @@ For products that are set up so that they have logistical impact, the engineerin
 
 An engineering product category provides a basis for creating a specific engineering product. Each category establishes a set of default values and policies. Therefore, when you create an engineering product, you first select the category to create it from.
 
-Note that a new category hierarchy type (*engineering product hierarchy*) is automatically set up for you. You can directly create the categories by going to **Engineering change management \> Setup \> Engineering product category details**.
+Note that a new category hierarchy type (*engineering product hierarchy*) is automatically set up for you. You can manually create the categories by going to **Engineering change management \> Setup \> Engineering product category details**.
 
 Each engineering product category establishes the default behavior of the engineering products that are created based on that category. After you've created an engineering product, you can't change its engineering product category. However, if you select the incorrect category, you can delete the product and then re-create it.
 

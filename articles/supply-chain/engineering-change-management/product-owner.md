@@ -54,7 +54,7 @@ To assign a product owner to a product, follow these steps.
 
 While a product owner is assigned to a product, only the members of the product owner group can edit the **Product owner** setting.
 
-The product owner is also visible on the released product page.
+The product owner is also visible on the **Released products** page.
 
 ## Product owners and product releases
 

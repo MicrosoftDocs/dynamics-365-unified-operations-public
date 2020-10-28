@@ -27,9 +27,6 @@ ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
 ---
 
-<!-- Beatriz: note that the topic that the reference to the product lifecycle state in the doc page refers to 
- https://docs.microsoft.com/dynamics365/supply-chain/pim/product-lifecycle. Note that the topic cannot be merged with the topic above as this topic needs to be under a Product engineering section. All the topics for the product engineering need to be under a product engineering section (as it happens with other add-ins) so it is clear that this only applies if the customer gets the add-on. -->
-
 # Product lifecycle states and transactions
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +61,7 @@ Set the following fields on the **General** FastTab.
 
 | Field | Description |
 |---|---|
-| Default when released to a legal entity | For standard products, set this option to *Yes* if this lifecycle state should be applied to all products by default when they are first released. Set it to *No* if this lifecycle state will be manually applied later.<p>This setting isn't applicable to engineering products. The lifecycle state of an engineering product version after it's created in the engineering legal entity that is specified in its engineering change category. When the product is released to another legal entity, the lifecycle state of the product is copied. In other words, when an engineering product is released in a legal entity, it has the same lifecycle state that it had in the engineering legal entity. The lifecycle state can be overwritten in the company.</p> |
+| Default when released to a legal entity | For standard products, set this option to *Yes* if this lifecycle state should be applied to all products by default when they are first released. Set it to *No* if this lifecycle state will be manually applied later.<p>This setting isn't applicable to engineering products. The lifecycle state of an engineering product version after it's created in the engineering company is specified in its engineering change category. When the product is released to an operational company, the lifecycle state of the product is copied. In other words, when an engineering product is released to an operational company, it has the same lifecycle state that it had in the engineering company. The lifecycle state can be overwritten in the operational company.</p> |
 | Is active for planning | Set this option to *Yes* to include products that are in this lifecycle state in calculations at the master planning and bill of materials (BOM) levels. Set it to *No* to exclude products that are in this lifecycle state from the calculations. |
 
 ### Enabled business processes FastTab

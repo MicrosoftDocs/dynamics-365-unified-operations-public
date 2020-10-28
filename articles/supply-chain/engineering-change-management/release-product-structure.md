@@ -41,7 +41,7 @@ For more information about engineering companies and operational companies, see 
 
 Note that you can release both standard products and engineering products together with the release product structure. During this process, the whole product structure will be released, even the BOM and route from the company that the products are being released in.
 
-<!-- KFM: Add a link somewhere here to the demo script for how to release a product. -->
+For an example of how to release a product, see [Release an engineering product to a local company](engineering-scenarios.md#release)
 
 ## Released data for a product when the release product structure is used
 
@@ -50,8 +50,8 @@ The following data is included in the release of engineering products:
 - **Product data** – A new released product is created.
 - **Engineering version data** – The engineering version and its data are created or updated. Note that if you release the same engineering version again to an operational company, the engineering data will be overwritten.
 - **Engineering attributes** – The engineering attributes and their values are created or updated.
-- **Engineering bill of materials** – The engineering BOM and its lines can be created or updated. Information about how to set this option is provided later in this topic. For more information about data ownership, see [Product owners](product-owner.md).
-- **Engineering routes** – The engineering routes and their operations can be created or updated. Information about how to set this option is provided later in this topic. For more information about data ownership, see [Product owners](product-owner.md).
+- **Engineering bill of materials** – The engineering BOM and its lines can be created or updated. For more information about data ownership, see [Product owners](product-owner.md).
+- **Engineering routes** – The engineering routes and their operations can be created or updated. For more information about data ownership, see [Product owners](product-owner.md).
 - **Engineering documents** – The engineering documents that are connected to the engineering version are created or updated.
 
 When you turn on engineering change management on your system, the release product structure is available. In addition, standard products will include their BOMs and routes when they are released.
@@ -73,7 +73,7 @@ Each release of engineering products starts when somebody from the engineering c
 - The user can choose whether the product should be released together with their BOMs and/or routes, and whether they should be released as approved and active.
 - The user can change the effective-from dates of the products.
 
-<!-- KFM: Add a link somewhere here to the demo script for how to accept a product. -->
+For an example of how to accept a product, see [Review and accept the product before you release it in the local company](engineering-scenarios.md#accept)
 
 > [!NOTE]
 > For standard products, you can release from any legal entity to any other legal entity. For engineering products, the only legal entity that you can release from is the engineering company.
@@ -145,7 +145,7 @@ For each row that is shown on the **Option parameters for engineering products**
 | Template BOM | When a product that has a BOM is released, the lines of the specified template BOM will be added. This field is useful for adding local components, such as packaging or instructions in the local language. |
 | Template route | When a product that has a route is released, the lines of the specified template will be added. |
 | Copy effectivity | Select whether effectivity dates should be copied from the engineering company to the operational company when you release products. |
-| Automatically add to release proposal | Select this check box for products that should automatically be released on the engineering change order. In this way, products that belong to engineering product categories that use this release policy can automatically be released to operational companies where this option is set up. You can do this as part of the workflow for the engineering change order. (For more information, see [Manage changes to engineering products](engineering-change-management.md).)
+| Automatically add to release proposal | Select this check box for products that should automatically be released on the engineering change order. In this way, products that belong to engineering product categories that use this release policy can automatically be released to operational companies where this option is set up. (For more information, see [Manage changes to engineering products](engineering-change-management.md).)
 
 ### Review each product when you release it
 

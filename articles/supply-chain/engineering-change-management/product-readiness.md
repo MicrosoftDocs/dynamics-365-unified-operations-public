@@ -66,7 +66,7 @@ If a new engineering **version** is created for a product, the system checks whe
 
 To find the open readiness checks for a product, open the **Released products details** page. Then, on the Action Pane, on the **Product** tab, in the **Readiness checks** group, select **Readiness checks**.
 
-To find the open readiness checks for a product version, open the **Product version** page. Then, in the **Checklist** group, select **Readiness checks**.
+To find the open readiness checks for a product version, open the **Engineering versions** page for a released product and choose a version. Then, on the Action Pane, on the **Product** tab, in the **Checklist** group, select **Readiness checks**.
 
 ### View open readiness checks that are assigned to you
 
@@ -81,9 +81,9 @@ The setup that specifies who a readiness check is assigned to is done for the en
 
 ### Process system and manual readiness checks
 
-After you open the readiness page, you can view the subject of system and manual readiness checks by selecting **View related information** on the Action Pane. You can then complete and/or validate the data for the readiness check. Open readiness checks have a **Status** value of *Pending*. This status indicates that the readiness check must still be processed. To process a readiness check, follow one of these steps.
+After you open the **Readiness checks** page, you can view the subject of system and manual readiness checks by selecting **View related information** on the Action Pane. You can then complete and/or validate the data for the readiness check. Open readiness checks have a **Status** value of *Pending*. This status indicates that the readiness check must still be processed. To process a readiness check, follow one of these steps.
 
-- On the Action Pane, select **Check/complete** to check and complete the readiness check. When you've finished, the **Status** field is updated to *Passed*.
+- On the Action Pane, select **Check/complete** to review and complete the readiness check. When you've finished, the **Status** field is updated to *Passed*.
 - On the Action Pane, select **Skip** if you want to skip a readiness check that isn't mandatory. For example, you set up a readiness check for price calculations. However, you decide to skip this check while the product is still in the design phase. In this case, the **Status** field is updated to *Skipped*.
 
 Depending on the configuration of the readiness policy, when the **Status** field for a readiness check is updated to *Passed*, an extra step might be required to approve the readiness check. In this case, select **Approval** to complete the readiness check. This approval step is always mandatory when the readiness check is skipped.
@@ -92,7 +92,7 @@ When all the open readiness checks for a new product, variant, or version have b
 
 ### Process checklist readiness checks
 
-To open a checklist, open the readiness checks page, and then, on the Action Pane, select **Start checklist**. When you've completed the checklist, the system validates whether the readiness check is passed, based on the settings in the questionnaire. If the check is passed, the **Status** field is updated to *Passed*. If the readiness check isn't mandatory, you can skip it. In this case, the **Status** field is updated to *Skipped*.
+To open a checklist, open the **Readiness checks** page, and then, on the Action Pane, select **Start checklist**. When you've completed the checklist, the system validates whether the readiness check is passed, based on the settings in the questionnaire. If the check is passed, the **Status** field is updated to *Passed*. If the readiness check isn't mandatory, you can skip it. In this case, the **Status** field is updated to *Skipped*.
 
 Depending on the configuration of the readiness policy, when the **Status** field for a readiness check is updated to *Passed*, an extra step might be required to approve the readiness check. In this case, select **Approval** to complete the readiness check. This approval step is always mandatory when the readiness check is skipped.
 
@@ -144,7 +144,7 @@ Set the following fields on the **General** FastTab of a product readiness polic
 | Field | Description |
 |---|---|
 | Product type | Select whether the policy applies to products of the *Item* or *Service* type. You can't change this setting after you save the record. |
-| Active | Use this option to help maintain your release policies. Set it to *Yes* for all readiness policies that you use. Set it to *No* to mark a readiness policy as inactive when it isn't used. Note that you can't inactivate a readiness policy that is assigned to an engineering product category, and you can delete only inactive release policies. |
+| Active | Use this option to help maintain your readiness policies. Set it to *Yes* for all readiness policies that you use. Set it to *No* to mark a readiness policy as inactive when it isn't used. Note that you can't inactivate a readiness policy that is assigned to an engineering product category, and you can delete only inactive release policies. |
 
 ### Readiness control FastTab
 

@@ -85,9 +85,7 @@ For more information about how to work with engineering product categories, incl
 
 ### Set values for engineering attributes
 
-The engineering attributes that are connected to an engineering product category are presented when you create a new engineering product that is based on that category. At that time, you can set values for the attributes. Later, those values can be changed on the engineering version page or as part of engineering change management in an engineering change order. For more information, see [Manage changes to engineering products](engineering-change-management.md).
-
-<!-- KFM: Add a link to the HOL procedure for creating an engineering product and/or category. -->
+The engineering attributes that are connected to an engineering product category are presented when you create a new engineering product that is based on that category. At that time, you can set values for the attributes. Later, those values can be changed on the **Engineering version** page or as part of engineering change management in an engineering change order. For more information, see [Manage changes to engineering products](engineering-change-management.md).
 
 ### Create an engineering product
 

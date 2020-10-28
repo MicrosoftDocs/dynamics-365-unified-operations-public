@@ -52,7 +52,7 @@ First, turn on engineering change management by following these steps.
 
 1. Go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Check for updates.
-1. Turn on the feature that is named **(Preview) Engineering Change Management**.
+1. Turn on the feature that is named **Engineering Change Management**.
 
 Next, turn on the **Engineering Change Management** configuration key by following these steps.
 
