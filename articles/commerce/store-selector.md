@@ -70,6 +70,9 @@ The following image shows an example of a store selector module used on a PDP.
 
 ![Example of a store selector module used on a PDP](./media/BOPIS.PNG)
 
+> [!NOTE]
+> In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](https://docs.microsoft.com/en-us/dynamics365/commerce/multiple-pickup-modes). 
+
 ## Find stores mode
 
 The store selector module also supports a **Find stores** mode. This mode can be used to create a store locations page that shows available stores and their information. In this mode, the store selector module works without product context and can be used as a standalone module on any site page. In addition, if the relevant settings are turned on for the module, users can select a store as their preferred store. When a store is selected as a user's preferred store, the store ID is maintained in the browser cookie. Therefore, the user must accept a cookie consent message.
