@@ -76,7 +76,7 @@ This feature adds a button to the production floor execution interface that enab
 
 To make this feature available, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- (Preview) Feature for locking job card device and job card terminal so that they can be sanitized
+- Feature for locking job card device and job card terminal so that they can be sanitized
 
 ## Work with production floor execution configurations
 
