@@ -266,8 +266,7 @@ ForEach($file in $FilesToRemove)
     {
         throw "The path of $file does not start with Packages."
     }
-    $file = $file.Replace('\', '/')
-    $files += $file
+    $files += $file.Replace('\', '/')
 } 
 
 $basePath = Get-ChildItem $AgentShare\wp\*\StandaloneSetup-*\Apps | Select-Object -First 1 -Expand FullName
