@@ -5,7 +5,7 @@ title: Create a lease group (Preview)
 description: This topic explains how to set up lease groups. Lease groups are required to create new leases.
 author: moaamer
 manager: Ann Beebe
-ms.date: 07/20/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,15 +26,14 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2020-07-20
-ms.dyn365.ops.version: 10.0.13
+ms.search.validFrom: 2020-10-28
+ms.dyn365.ops.version: 10.0.14
 
 ---
 
 # Create a lease group (Preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to set up lease groups. Lease groups are required to create new leases. Lease books are associated with each lease group. Lease books determine the default books that must be created for each lease. You can assign specific accounts to a lease group on the **Lease posting parameters** page.
 
