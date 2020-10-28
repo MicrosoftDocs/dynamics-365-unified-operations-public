@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 # e-Commerce Browser Requirements
 
-The e-commerce SDK and module library are supported in the following web browsers:
+The e-commerce site and its expereinces are best supported in the following web browsers:
 
 - Microsoft Edge (up to the current version minus 1)
 - Mozilla Firefox (up to the current version minus 1)
