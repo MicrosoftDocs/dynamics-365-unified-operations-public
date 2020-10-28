@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up index rates (Preview)
+title: Set up index rates
 description: This topic explains how to set up index rates. Index rates are required if your organization associates lease payment amounts with a set of index rates.
 author: moaamer
 manager: Ann Beebe
-ms.date: 07/20/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,15 +26,14 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2020-07-20
-ms.dyn365.ops.version: 10.0.13
+ms.search.validFrom: 2020-10-28
+ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Set up index rates (Preview)
+# Set up index rates
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 If lease payments depend on an index, the index rate types can be added and maintained in the system. To revalue the lease payments from the **Index rate type** page, the index rate revaluation process uses the most recent index rate from the date of revaluation.
 
