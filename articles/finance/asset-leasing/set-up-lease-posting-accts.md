@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up lease posting accounts (Preview)
+title: Set up lease posting accounts
 description: This topic lists the posting accounts that are required for Asset leasing transactions and explains how to define posting accounts on the Lease posting parameters page.
 author: moaamer
 manager: Ann Beebe
-ms.date: 07/22/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,15 +26,14 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2020-07-22
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Set up lease posting accounts (Preview)
+# Set up lease posting accounts
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists the posting accounts that are required for Asset leasing transactions and explains how to define posting accounts on the **Lease posting parameters** page.
 
