@@ -43,11 +43,11 @@ Dual-write has these limitations:
 
 + You can't run dual-write and the [Prospect to cash solution](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) for Data integrator side by side. If you're running the Prospect to cash solution for Data integrator, you must uninstall it.
 + Dual-write setup is not supported on trial instances of Finance and Operations apps.
-+ Dual-write must be used to integrate a single Finance and Operations apps instance and a single Dynamics 365 apps instance.
++ Dual-write must be used to integrate a single Finance and Operations app instance and a single customer engagement app instance.
 + Dual-write currently has a limit of 40 legal entities.
 + Dual-write does not support [cross-company data sharing](../../sysadmin/cross-company-data-sharing.md).
-+ Dual-write requires that Finance and Operations apps and the customer engagement apps must be in the same Microsoft Azure Active Directory (Azure AD) tenant.
-+ Dual-write requires that Finance and Operations apps and the customer engagement apps must be deployed in the same Microsoft Azure datacenter.
++ Dual-write requires that the Finance and Operations app and the customer engagement app must be in the same Microsoft Azure Active Directory (Azure AD) tenant.
++ Dual-write requires that the Finance and Operations app and the customer engagement app must be deployed in the same Microsoft Azure datacenter.
 
 ## One Version
 
