@@ -5,7 +5,7 @@ title: Create payment invoices
 description: This topic explains how to create monthly lease invoices. You can create invoices for individual leases, or you can use a batch process to create them for multiple leases.
 author: moaamer
 manager: Ann Beebe
-ms.date: 07/28/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,15 +25,14 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-07-28
+ms.author: moaamer
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 
 ---
 # Create payment invoices
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 You can create monthly invoices for individual leases, or you can use a batch process to create them for multiple leases. The following procedure shows how to create an individual lease payment entry when the **Pay to Vendor** parameter on the **Lease book setup** page is turned on.
 
