@@ -42,9 +42,14 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  
-- 
-- 
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
+
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
+
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
 
 ## Additional resources
 
