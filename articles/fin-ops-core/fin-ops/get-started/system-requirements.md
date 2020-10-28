@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
