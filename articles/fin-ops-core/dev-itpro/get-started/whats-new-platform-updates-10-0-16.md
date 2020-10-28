@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.16
 
 ---
-# Platform updates for version 10.0.16 of Finance and Operations apps (January 2021)
+# Platform updates for version 10.0.16 of Finance and Operations apps (February 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
