@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up lease journal names (Preview)
+title: Set up lease journal names
 description: This topic explains how to define lease journal names. Lease journal names specify the journals that entries that originate in Asset leasing are posted to.
 author: moaamer
 manager: Ann Beebe
-ms.date: 08/14/2019
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,15 +26,14 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2019-08-14
-ms.dyn365.ops.version: 10.0.6
+ms.search.validFrom: 2020-10-28
+ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Set up lease journal names (Preview)
+# Set up lease journal names
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Lease journal names specify the journals that Asset leasing transactions are posted to. Only journal names that are assigned to the **Asset leasing** journal type appear in the **Initial Recognition** and **Monthly Journal Name** fields on the **Asset leasing parameters** page. Only **vendor invoice recording** journal type can be assigned to the **Invoice journal name** field.
 
