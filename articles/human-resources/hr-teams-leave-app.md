@@ -200,7 +200,7 @@ The Human Resources app in Teams has the following accessibility issues that we'
 | Issue | Workaround or explanation |
 | --- | --- |
 | Zooming to 400% on desktop hides some of the action buttons from view. | We recommend using a magnifier instead until we can support this zoom level. |
-| On the **Time off** tab, voiceover announces a button action while reading the header for the time-off grid. | The header and elements within the grid grouped by year, and they're collabsible. Voiceover interprets this as an actionable item, but it isn't. |
+| On the **Time off** tab, voiceover announces a button action while reading the header for the time-off grid. | The header and elements within the grid grouped by year, and they're collapsible. Voiceover interprets this as an actionable item, but it isn't. |
 | If you swipe while a popup or menu is open, voiceover skips reading the popup or menu contents. | Explore the content using finger scanning. |
 | On the **Time off** tab, there's an extra swipe gesture when navigating to **Reason code** in a new request. | There isn't a hidden control that the swipe is trying to get to. |
 | On the **Time off** tab, if you swipe while the calendar is open, you end up outside the control instead of at the top in a new request or while editing a request. | When you reach **Go to today**, consider that to be the end of the control and swipe in the reverse direction to get back to the top. |
