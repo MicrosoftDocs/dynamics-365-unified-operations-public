@@ -5,7 +5,7 @@ title: Configure lease parameters (Preview)
 description: This topic describes the configuration settings for Asset leasing, such as security information and accounting settings.
 author: moaamer
 manager: Ann Beebe
-ms.date: 07/28/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,16 +25,15 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
-ms.search.validFrom: 2020-07-28
+ms.author: moaamer
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Configure lease parameters (Preview)
+# Configure lease parameters
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Several configuration settings affect how Asset leasing behaves. These settings include journal names, general parameters, and posting profile settings.
 
