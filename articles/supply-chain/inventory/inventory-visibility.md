@@ -180,9 +180,9 @@ The following table lists the inventory dimensions that will be the default dime
 > [!NOTE]
 > The dimension type listed in the previous table is for reference only. You don't need to define the dimension type in Inventory Visibility.
 
-If a custom dimension exists and needs to flow to a default value when consumed by Inventory Visibility, users can configure the **Custom dimension** name in Inventory Visibility.
+If a custom dimension exists and needs to flow to a default value when consumed by Inventory Visibility, you can configure the **Custom dimension** name in Inventory Visibility.
 
-External systems access Inventory Visibility through RESTful APIs that enable on-hand information on given sets of dimensions to be queried. For the integration, Inventory Visibility enables the user to configure the *external channel data source* and the source dimension to the *target dimensions* in Inventory Visibility.
+External systems access Inventory Visibility through RESTful APIs that enable on-hand information on given sets of dimensions to be queried. For the integration, Inventory Visibility enables you to configure the *external channel data source* and the source dimension to the *target dimensions* in Inventory Visibility.
 
 The target dimensions should be one of the following:
 
@@ -239,7 +239,7 @@ The default measurement quantities are linked to Supply Chain Management, howeve
 
 The functionality simply allows you to define a set of measures that will be added, and/or a set of measures that will be subtracted, in order to form the custom measurement.
 
-For example, with the following query condition, the user will configure the custom measurement quantity as `MyCustomAvailableforReservation` to be consumed by the consumption system.
+For example, with the following query condition, you will configure the custom measurement quantity as `MyCustomAvailableforReservation` to be consumed by the consumption system.
 
 ```json
 [
