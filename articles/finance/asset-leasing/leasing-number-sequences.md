@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Assign number sequences (Preview)
+title: Assign number sequences
 description: This topic explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
 author: moaamer
 manager: Ann Beebe
-ms.date: 07/22/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,15 +26,14 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2020-07-22
+ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Assign number sequences (Preview)
+# Assign number sequences
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
 
