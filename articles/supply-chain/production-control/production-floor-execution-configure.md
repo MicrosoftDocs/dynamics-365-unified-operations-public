@@ -45,6 +45,10 @@ This topic describes the various options for configuring job card devices.
 
 A few of the settings that are described in this topic must be turned on in your system before they are available to you. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the following features as required.
 
+### Enable the production floor execution interface
+
+To make this feature available, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md): Production floor execution. This is the page for the production floor execution interface.
+
 ### Generate license plate
 
 To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
