@@ -71,7 +71,7 @@ To install the Inventory Visibility Add-in, do the following:
     ![The environment page in LCS](media/inventory-visibility-environment.png "The environment page in LCS")
 1. Select the **Install a new add-in** link. A list of available add-ins opens.
 1. Select **Inventory service** from the list. (Note, this may now be listed as **Inventory Visibility Add-in for Dynamics 365 Supply Chain Management**.)
-1. In **Configuration parameters**, enter the following values for your environment:
+1. Enter values for the following fields for your environment:
 
     - **AAD application ID**
     - **AAD tenant ID**
