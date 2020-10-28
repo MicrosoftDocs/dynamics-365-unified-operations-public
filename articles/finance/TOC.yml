@@ -808,29 +808,7 @@
           href: fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
           href: fixed-assets/straight-line-service-life-depreciation.md
-    - name: Asset leasing
-      items:
-      - name: Asset leasing setup
-        items:
-        - name: Configure Asset leasing parameters
-          href: asset-leasing/config-lease-parameters.md
-        - name: Set up lease books
-          href: asset-leasing/set-up-lease-books.md
-        - name: Create a lease group
-          href: asset-leasing/create-lease-group.md
-        - name: Set up index rates
-          href: asset-leasing/set-up-index-rate-types.md
-        - name: Set up expense types
-          href: asset-leasing/set-up-expense-types.md
-        - name: Set up lease journal names
-          href: asset-leasing/set-up-lease-journal-names.md
-        - name: Set up lease posting accounts
-          href: asset-leasing/set-up-lease-posting-accts.md
-        - name: Assign number sequences
-          href: asset-leasing/leasing-number-sequences.md
-        - name: Assign user roles
-          href: asset-leasing/lease-user-roles.md          
-     - name: General ledger
+    - name: General ledger
       items:
       - name: General ledger overview
         href: general-ledger/general-ledger.md
