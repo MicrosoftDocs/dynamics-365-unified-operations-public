@@ -99,12 +99,12 @@ To get a security service token, do the following:
 
     ```json
     {
-    "grant_type": "client_credentials",
-    "client_assertion_type":"aad_app",
-    "client_assertion": "{**Your_AADToken**}",
-    "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-    "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
-    "context_type": "finops-env"
+        "grant_type": "client_credentials",
+        "client_assertion_type":"aad_app",
+        "client_assertion": "{**Your_AADToken**}",
+        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
+        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "context_type": "finops-env"
     }
     ```
 
@@ -112,9 +112,9 @@ To get a security service token, do the following:
 
     ```json
     {
-    "access_token": "{Returned_Token}",
-    "token_type": "bearer",
-    "expires_in": 1200
+        "access_token": "{Returned_Token}",
+        "token_type": "bearer",
+        "expires_in": 1200
     }
     ```
 
@@ -218,18 +218,18 @@ Here is a sample query on the product with color and size combination.
 
 ```json
 {
-"filters": {
-"OrganizationId": ["usmf"],
-"ProductId": ["MyProduct"],
-"LocationId": ["21"],
-"SiteId": ["2"]
-"ColorId": ["Red"]
-},
-"groupByValues": [
-"SizeId",
-"ColorId"
-],
-"returnNegative": true
+    "filters": {
+        "OrganizationId": ["usmf"],
+        "ProductId": ["MyProduct"],
+        "LocationId": ["21"],
+        "SiteId": ["2"]
+        "ColorId": ["Red"]
+    },
+    "groupByValues": [
+        "SizeId",
+        "ColorId"
+    ],
+    "returnNegative": true
 }
 ```
 
@@ -243,28 +243,29 @@ For example, with the following query condition, you will configure the custom m
 
 ```json
 [
-    {​​​​​​​
-        "productId": "MyProduct",
-        "dimensions": {​​​​​​​
-            "colorid": "Red"
-        }​​​​​​​,
-        "quantities": {​​​​​​​
-            "mypos": {​​​​​​​
-                "outbound": 20.0,
-                "inbound": 80.0,
-            }​​​​​​​,
-            "fno": {​​​​​​​
-                "availphysical": 100.0
-"orderedintotal": 50.0
-"orderedreserved": 10.0
-            }​​​​​​​,
-            "exterchannel": {​​​​​​​
-                "received": 90.0
-"scheduled": 30.0
-"issued": 60.0
-"reserved": 40.0
-        }​​​​​​​
-    }​​​​​​​
+    {
+        "productId": "MyProduct",
+        "dimensions": {
+            "colorid": "Red"
+        },
+        "quantities": {
+            "mypos": {
+                "outbound": 20.0,
+                "inbound": 80.0,
+            },
+            "fno": {
+                "availphysical": 100.0
+                "orderedintotal": 50.0
+                "orderedreserved": 10.0
+            },
+            "exterchannel": {
+                "received": 90.0
+                "scheduled": 30.0
+                "issued": 60.0
+                "reserved": 40.0
+
+        }
+    }
 ]
 ```
 
@@ -286,31 +287,32 @@ With that, the query on the custom measurement quantity will return the followin
 
 ```json
 [
-    {​​​​​​​
-        "productId": "MyProduct",
-        "dimensions": {​​​​​​​
-            "colorid": "Red"
-        }​​​​​​​,
-        "quantities": {​​​​​​​
-            "mypos": {​​​​​​​
-                "outbound": 20.0,
-                "inbound": 80.0,
-            }​​​​​​​,
-            "fno": {​​​​​​​
-                "availphysical": 100.0
-"orderedintotal": 50.0
-"orderedreserved": 10.0
-            }​​​​​​​,
-            "exterchannel": {​​​​​​​
-                "received": 90.0
-"scheduled": 30.0
-"issued": 60.0
-"reserved": 40.0
-            }​​​​​​​,
-            "CustomChannel": {​​​​​​​
-                "MyCustomAvailableforReservation": 220.0
-        }​​​​​​​
-    }​​​​​​​
+    {
+        "productId": "MyProduct",
+        "dimensions": {
+            "colorid": "Red"
+        },
+        "quantities": {
+            "mypos": {
+                "outbound": 20.0,
+                "inbound": 80.0,
+            },
+            "fno": {
+                "availphysical": 100.0
+                "orderedintotal": 50.0
+                "orderedreserved": 10.0
+            },
+            "exterchannel": {
+                "received": 90.0
+                "scheduled": 30.0
+                "issued": 60.0
+                "reserved": 40.0
+            },
+            "CustomChannel": {
+                "MyCustomAvailableforReservation": 220.0
+
+        }
+    }
 ]
 ```
 
@@ -334,20 +336,20 @@ The body of the post event will be JSON, such as in the following example.
 
 ```json
 {
-"id": "demo-test-00007",
-"organizationId": "usmf",
-"productId": "MyProduct",
-"quantities": {
-"pos": {
-"Outbound": 1
-}
-},
-"dimensions": {
-"SizeId": "Large",
-"ColorId": "Red",
-"SiteId": "2",
-"LocationId": "21"
-}
+    "id": "demo-test-00007",
+    "organizationId": "usmf",
+    "productId": "MyProduct",
+    "quantities": {
+        "pos": {
+            "Outbound": 1
+        }
+    },
+    "dimensions": {
+        "SizeId": "Large",
+        "ColorId": "Red",
+        "SiteId": "2",
+        "LocationId": "21"
+    }
 }
 ```
 
@@ -371,21 +373,20 @@ It will be queried with the HTTP `POST` method.
 
 An example query might look like the following.
 
-
 ```json
 {
-"filters": {
-"OrganizationId": ["usmf"],
-"ProductId": ["MyProduct"],
-"LocationId": ["21"],
-"SiteId": ["2"]
-"ColorId": ["Red"]
-},
-"groupByValues": [
-"SizeId",
-"ColorId"
-],
-"returnNegative": true
+    "filters": {
+        "OrganizationId": ["usmf"],
+        "ProductId": ["MyProduct"],
+        "LocationId": ["21"],
+        "SiteId": ["2"]
+        "ColorId": ["Red"]
+    },
+    "groupByValues": [
+        "SizeId",
+        "ColorId"
+    ],
+    "returnNegative": true
 }
 ```
 
@@ -393,31 +394,32 @@ This could return a result like this.
 
 ```json
 [
-    {​​​​​​​
-        "productId": "MyProduct",
-        "dimensions": {​​​​​​​
-            "colorid": "Red"
-        }​​​​​​​,
-        "quantities": {​​​​​​​
-            "mypos": {​​​​​​​
-                "outbound": 20.0,
-                "inbound": 80.0,
-            }​​​​​​​,
-            "fno": {​​​​​​​
-                "availphysical": 100.0
-"orderedintotal": 50.0
-"orderedreserved": 10.0
-            }​​​​​​​,
-            "exterchannel": {​​​​​​​
-                "received": 90.0
-"scheduled": 30.0
-"issued": 60.0
-"reserved": 40.0
-            }​​​​​​​,
-            "CustomChannel": {​​​​​​​
-                "MyCustomAvailableforReservation": 220.0
-        }​​​​​​​
-    }​​​​​​​
+    {
+        "productId": "MyProduct",
+        "dimensions": {
+            "colorid": "Red"
+        },
+        "quantities": {
+            "mypos": {
+                "outbound": 20.0,
+                "inbound": 80.0,
+            },
+            "fno": {
+                "availphysical": 100.0
+                "orderedintotal": 50.0
+                "orderedreserved": 10.0
+            },
+            "exterchannel": {
+                "received": 90.0
+                "scheduled": 30.0
+                "issued": 60.0
+                "reserved": 40.0
+            },
+            "CustomChannel": {
+                "MyCustomAvailableforReservation": 220.0
+
+        }
+    }
 ]
 ```
 
