@@ -140,7 +140,7 @@ Here are some typical stakeholders who might have to approve an engineering chan
 
 You can choose whether the engineering change order should be processed directly after it's approved, as part of the workflow, or whether the processing should be done later, as a manual step. During processing of an engineering change order, engineering data on the actual product is updated.
 
-While you're reviewing a request for change, you can use the **Dependencies** button on the Action Pane to assess the impact of the proposed change on open transactions, such as sales orders, production orders, and inventory on-hand. You can select **Search** to scan all open transactions, and then select **View** to view the results. You can then block the open transactions or notify the responsible user via processing the actions.
+While you're reviewing a request for change, on the Action Pane, on the **Change request** tab, in the **Business impact** group, select **Search** to assess the impact of the proposed change on open transactions, such as sales orders, production orders, and inventory on-hand. The results are shown in the **Business impact to open transactions** dialog box, where you can select impacted transactions and then use commands in the toolbar to view more information, notify the responsible user, or block the transaction.
 
 ### Engineering change orders in engineering or operational companies
 

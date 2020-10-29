@@ -98,27 +98,9 @@ Depending on the configuration of the readiness policy, when the **Status** fiel
 
 When all the open readiness checks for a new product, variant, or version have been processed and approved as needed, the item automatically becomes active and therefore ready to use.
 
-## Set up readiness checks
-
-Because the types of data that must be verified typically vary by product type, you can assign different readiness rules to each engineering product category. (For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).)
-
-You can set up the readiness checks on the readiness policy. Select **Add system checks** to add system and manual readiness checks. Alternatively, select **Add existing questionnaire** to add a checklist. Then set the fields in the following table to complete the setup.
-
-| Field | Description |
-|---|---|
-| Free text | You can enter a free-text description. |
-| Apply check on | Select whether the readiness check should be created for each new released product, released variant, or engineering version. |
-| Execute in | Select whether the readiness check applies to all companies or a single company. |
-| Company | If you set the **Execute in** field to *Single company*, select the company. |
-| Owner type | Select whether the readiness check is assigned to a person or a team. |
-| Name | Select the person or team that the readiness check should be assigned to. |
-| Questionnaire | Select the questionnaire that should be used for the checklist. The checklist is a local checklist in the company where the readiness check is done. The system must be able to evaluate whether the checklist is correctly answered. Therefore, the checklist must be set up so that an evaluation is done based on correct answers. For more information about how to create questionnaires, see [Using questionnaires](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) and its related topics. |
-| Automatic approval | Select whether the readiness check should be set to approved when **Check/complete** is selected on the Action Pane. |
-| Mandatory | Select whether the readiness check is mandatory, or whether it can be skipped. |
-
 ## Create and manage product readiness policies
 
-Use product readiness policies to manage the readiness checks that apply to a product. Because a readiness policy is assigned to the engineering category, all the checks in the readiness policy apply to all the engineering products that are based on the engineering category.
+Use product readiness policies to manage the readiness checks that apply to a product. Because a readiness policy is assigned to the engineering category, all the checks in the readiness policy apply to all the engineering products that are based on the engineering category. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
 Each readiness policy contains a set of readiness checks. When a readiness policy is assigned to an engineering product category, all the products that are created from that engineering product category will have the readiness checks that are indicated in the readiness policy.
 
@@ -148,7 +130,7 @@ Set the following fields on the **General** FastTab of a product readiness polic
 
 ### Readiness control FastTab
 
-For each type of readiness check that you want to include in the policy, add a row on the **Readiness control** FastTab. Use the following buttons on the **All products** FastTab to add and remove rows as you require:
+For each type of readiness check that you want to include in the policy, add a row on the **Readiness control** FastTab. Use the following buttons on the FastTab toolbar to add and remove rows as you require:
 
 - **Add check** – Add a standard readiness check to the policy. When you select this button, the **Add check** dialog box appears. There, you can select from a list of available checks.
 - **Add existing questionnaire** – Add a blank row to the grid. You can then assign an existing questionnaire by setting the fields in the following table.
