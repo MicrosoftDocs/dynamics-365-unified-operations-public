@@ -70,6 +70,8 @@ To use Planning Optimization, install the Planning Optimization Add-in for Dynam
 1. On the **Environment add-ins** FastTab you should see that Planning Optimization is installing.
 1. After a few minutes **Installing** should change to **Installed** (you may need to refresh the page). When installed, you are ready to activate Planning Optimization in Dynamics 365 Supply Chain Management.
 
+Main purpose of the Planning Optimization add-in installation is to ensure connection between the service and the environment. Due to this, Planning Optimization add-in needs to be installed separately on all the environments where Planning Optimization will be used, regardless of any code move between the environments.
+
 ### Planning Optimization integration
 
 To configure whether the Planning Optimization Add-in should be used for master planning, go to **Master planning** \> **Setup** \> **Planning Optimization parameters**.
@@ -98,7 +100,7 @@ The setting of the **Use Planning Optimization** option determines which plannin
 
 ### Integration with the setup
 
-If the Planning Optimization preview is turned on, master planning is done by using the Planning Optimization Add-in. In this case, master planning results and features are affected.
+If the Planning Optimization is turned on, master planning is done by using the Planning Optimization Add-in. In this case, master planning results and features are affected.
 
 ## Additional resources
 
