@@ -44,8 +44,6 @@ The VAT return form in Dynamics 365 Finance includes the following reports:
  - Sales transactions details grouped by box classification from Box1 to Box6.
  - Purchase transaction details grouped by box classification from Box8 to Box12.
  
- The feature is available 
- 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Bahrain.
