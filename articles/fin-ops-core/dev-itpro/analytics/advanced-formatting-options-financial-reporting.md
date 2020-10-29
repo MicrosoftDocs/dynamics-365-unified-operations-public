@@ -284,7 +284,7 @@ The **THEN** and **ELSE** formulas can be any valid calculation, from very simpl
 
 ### Restricting a calculation to a reporting unit in a row definition
 
-To restrict a calculation to a single reporting unit in a reporting tree, so that the resulting amount isn't rolled up to a higher-level unit, you can use the **@Unit** code in the **Related Formulas/Rows/Units** cell in the row definition. The **@Unit** code is listed in column B of the reporting tree, **Unit Name**. When you use the **@Unit** code, the values aren't rolled up, but the calculation is evaluated at every level of the reporting tree.
+To restrict a calculation to a single reporting unit in a reporting tree, so that the resulting amount isn't rolled up to a higher-level unit, you can use the **\@Unit** code in the **Related Formulas/Rows/Units** cell in the row definition. The **\@Unit** code is listed in column B of the reporting tree, **Unit Name**. When you use the **\@Unit** code, the values aren't rolled up, but the calculation is evaluated at every level of the reporting tree.
 
 > [!NOTE]
 > To use this function, a reporting tree must be associated with the row definition.
