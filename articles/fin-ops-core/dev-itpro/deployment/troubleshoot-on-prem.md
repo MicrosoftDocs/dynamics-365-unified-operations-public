@@ -515,13 +515,13 @@ At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
     + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand" 
 ```
 
-**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, that causes it to fail when there are invalid entries.
+**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that not valid.
 
-**Steps:** On the machine where the script is failing, open local users and groups. Go to the administrators group and remove any entries that have an entry like the one highlighted below:
+**Steps:** On the machine where the script is failing, open **local users and groups**. Go to the administrators group and remove any entries that have an entry like the one highlighted in the following image.
 
 ![Invalid SID](media/InvalidSID.png)
 
-Do this on all of the machines that face the issue. After the changes are done, try running the script again.
+Do this on all of the machines that receive this error. After the changes are complete, try running the script again.
 
 ## <a name="restartapplications"></a>Restart applications (such as AOS)
 
