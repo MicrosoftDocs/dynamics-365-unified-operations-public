@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-Use the **Number sequences** page in the transportation management module to set up various pro numbers.
+Use the **Number sequences** page in the transportation management module to set up various pro numbers. Pro numbers are used by carriers to organize and track the progress of each shipment.
 
 ## Create a number sequence for a pro number
 
