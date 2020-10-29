@@ -65,7 +65,7 @@ This procedure shows you how to set up a rate master. The logistic manager usual
     * Break masters are used to define the pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on physical dimensions.  
 6. For this example, use weight. This is already defined in the demo data.
 7. In the list, select the link in the highlighted row.
-8. Toggle the expansion of the **Details** section.
+8. Expand the **Details** section.
 9. Select **New**.
 10. In the **Drop-off Postal Code From** field, type "30301".
 11. In the **Drop-off Postal Code To** field, type "30318".
@@ -85,7 +85,7 @@ This procedure shows you how to set up a rate master. The logistic manager usual
 
 ## Assign rate base
 
-1. Toggle the expansion of the **Rate base assignments** section.
+1. Expand the **Rate base assignments** section.
 2. Select **New**.
     * You can have several rate base assignments for each rate master. This makes it possible to create several different price points for each carrier depending on destinations, services, or different rate bases. In this procedure you will only create one rate base assignment.  
 3. In the **Name** field, type a value.
