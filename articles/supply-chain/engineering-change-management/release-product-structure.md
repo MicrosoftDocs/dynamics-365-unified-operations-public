@@ -73,7 +73,7 @@ Each release of engineering products starts when somebody from the engineering c
 - The user can choose whether the product should be released together with their BOMs and/or routes, and whether they should be released as approved and active.
 - The user can change the effective-from dates of the products.
 
-For an example of how to accept a product, see [Review and accept the product before you release it in the local company](engineering-scenarios.md#accept)
+For an example of how to accept a product, see [Review and accept the product before you release it in the local company](engineering-scenarios.md#accept).
 
 > [!NOTE]
 > For standard products, you can release from any legal entity to any other legal entity. For engineering products, the only legal entity that you can release from is the engineering company.
@@ -84,7 +84,7 @@ Not all operational companies need the same product data. In general, operationa
 
 For engineering products, the release policy is assigned in the engineering product category, and the field is mandatory. For standard products, the policy is assigned to the shared product, and the field is optional.
 
-For more information about engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md)
+For more information about engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
 During the release process, you can influence the settings.
 
