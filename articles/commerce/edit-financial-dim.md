@@ -51,10 +51,10 @@ To edit financial dimensions for retail transactions in Commerce headquarters, f
 
 ## Additional resources
 
-[]()
+[Edit and audit cash and carry and cash management transactions](edit-cash-trans.md)
 
-[]()
+[Edit and audit online order and asynchronous customer order transactions](edit-order-trans.md)
 
-[]()
+[Create an Excel spreadsheet to edit retail transactions](create-excel-edit.md)
 
-[]()
+[Add fields to an Excel spreadsheet to edit retail transactions](add-fields-excel.md)
