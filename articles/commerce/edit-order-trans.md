@@ -78,10 +78,10 @@ To edit and audit order transactions in Commerce headquarters, follow these step
 
 ## Additional resources
 
-[]()
+[Edit and audit cash and carry and cash management transactions](edit-cash-trans.md)
 
-[]()
+[Edit financial dimensions for retail transactions](edit-financial-dim.md)
 
-[]()
+[Create an Excel spreadsheet to edit retail transactions](create-excel-edit.md)
 
-[]()
+[Add fields to an Excel spreadsheet to edit retail transactions](add-fields-excel.md)
