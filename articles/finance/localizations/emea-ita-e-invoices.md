@@ -128,6 +128,8 @@ When you create **Fee** or **Expense** journal lines, select the category that w
 
 > [!NOTE]
 > You can use only one of the journal types (**Fee** or **Expense**) for stamp duty. A company that uses only payable stamp duty can use the **Fee** journal type. If a company uses both payable and non-payable stamp duty, it's better to use the **Expense** journal type.
+>
+>In case the Expenses journal is used for non-payable stamp duties, it is recommended to use for expenses the same tax code as used for other chargeable transactions. In this case no separate line with zero amounts will be created in Sales tax book for stamp duties.
 
 ### <a name="customers"></a>Customers
 
