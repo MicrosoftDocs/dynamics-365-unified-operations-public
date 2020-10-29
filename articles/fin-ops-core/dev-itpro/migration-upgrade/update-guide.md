@@ -29,7 +29,7 @@ This topic applies to Dynamics 365 Finance, Dynamics 365 Supply Chain Management
 
 The **main** goal is to illustrate the following tasks:
 
-+ Stay current and manage Microsoft service updates (or quality updates) for Finance and Operations apps and Dynamics 365 Commerce in incremental phases independently from the lifecycle of your own customization. This simplifies the update process and reduces the cost and risk of regressions associated with all-in-one upgrade projects.
++ Stay current and manage Microsoft service updates (or quality updates) for Finance and Operations apps and Dynamics 365 Commerce in incremental phases independently from the lifecycle of your own customization. This approach simplifies the update process and reduces the cost and risk of regressions associated with all-in-one upgrade projects.
 + Capitalize on the use of source code branches for version control of your custom code. Using version control, you can isolate the rollout of critical changes and hotfixes from development of new features and capabilities.
 
 The document does not go into the mechanics of how to use the different Azure DevOps and Lifecycle Services (LCS) tools. Instead, it focuses on processes and best practices. The sections [Apply the next version of a Microsoft service update](#apply-next-update) and [Apply a new version of your custom code](#apply-new-custom-code) contain both an overview of the stages and the steps of the process.
@@ -67,11 +67,11 @@ The document does not go into the mechanics of how to use the different Azure De
 
 ## <a id="environments"></a>Environments
 
-The ALM scenarios in this topic rely on a collection of Finance and Operations environments described in the following image. These are the environments in your current release. This is a typical configuration for organizations with implementations that rely on custom code (extensions), including customizations provided by independent software vendors (ISVs).
+The ALM scenarios in this topic rely on a collection of Finance and Operations environments described in the following image. These environments are the environments in your current release. This configuration is a typical configuration for organizations with implementations that rely on custom code (extensions), including customizations provided by independent software vendors (ISVs).
 
 ### <a id="current-environments"></a>Environments running your current release
 
-These are the environments in your current release.
+These environments are the environments in your current release.
 
 :::image type="content" source="media/uguide-environments.png" alt-text="Environments running your current release":::
 
@@ -82,13 +82,13 @@ These are the environments in your current release.
 
 - **Test 1** is a tier 1 test environment used for functional and configuration testing. It is running the same Finance and Operations version as the production environment. It is also running the latest release version of your custom code extensions.
 
-+ **UAT** is a pre-production environment us for user acceptance testing. This is a tier 2 (Standard Acceptance Test) or better environment. It is running the same Finance and Operations version as the production environment. It is also running the latest release version of your custom code extensions. UAT is typically connected to a copy of the production database.
++ **UAT** is a pre-production environment us for user acceptance testing. This environment is a tier 2 (Standard Acceptance Test) or better environment. It is running the same Finance and Operations version as the production environment. It is also running the latest release version of your custom code extensions. UAT is typically connected to a copy of the production database.
 
 + **Prod** is your live production environment running on your production database.
 
 ### <a id="next-environments"></a>Environments running the next version of your custom code
 
-These are the environments running the next version of your custom code.
+These environments are the environments running the next version of your custom code.
 
 :::image type="content" source="media/uguide-next-environments.png" alt-text="Environments running the next version of your custom code":::
 
@@ -158,7 +158,7 @@ All these changes may require work on your solution. Design-time breaking change
 
 This section summarizes the process of updating your Finance and Operations implementation to the latest service update. For the sake of example, the description assumes you are updating from version 10.0.7 to 10.0.11.
 
-This phase is divided into 2 tracks that can happen in parallel.
+This phase is divided into two tracks that can happen in parallel.
 
 - Track 1: Updating your runtime environments.
 - Track 2: Updating your development environments.
@@ -222,7 +222,7 @@ A bug is found during Track 1, and the bug requires a Microsoft service update t
 Microsoft proposes a change to your custom code to work around the problem.
 
 1. Modify your code on Dev 1 (Release branch) and test your updates.
-2. Check-in to the release branch.
+2. Check in to the release branch.
 3. Create a new deployable package out of the release branch.
 4. Apply the new deployable package on Test 1 and/or UAT.
 
@@ -231,10 +231,10 @@ Microsoft proposes a change to your custom code to work around the problem.
 
 ##### Case 3
 
-A bug is found during Track 1 that requires a change to your custom code. This could be a bug in your code or the ISV code.
+A bug is found during Track 1 that requires a change to your custom code. This bug could be in your code or the ISV code.
 
 1. Modify your code on Dev 1 (the release branch) and test your updates.
-2. Check-in to the release branch.
+2. Check in to the release branch.
 3. Create a new deployable package out of the release branch.
 4. Apply the new deployable package on Test 1 and/or UAT.
 
@@ -246,7 +246,7 @@ This section summarizes the process of updating your Commerce Scale Units to the
 
 Update the HQ environments (Finance and Operations) to the same or later release before updating the Commerce Scale Unit(s). In this example, that is 10.0.11.
 
-This phase is divided into 2 tracks that can happen in parallel.
+This phase is divided into two tracks that can happen in parallel.
 
 - Track 1: Updating your CSU runtime environments.
 - Track 2: Updating your development environments.
@@ -292,7 +292,7 @@ UAT is running CSU corresponding to release 10.0.7 with the same version of your
 
 This section summarizes the process of updating your Store Components such as Modern Point of Sale and Hardware Station to the latest service update. For the sake of example, the description assumes you are updating from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21).
 
-Unlike HQ (Finance and Operations) and CSU, the updates for store components are delivered in the same packages. After updating HQ and CSU you have the following options:
+Unlike HQ (Finance and Operations) and CSU, the updates for store components are delivered in the same packages. After updating HQ and CSU, you have the following options:
 
 - Option 0 (no operation needed): Leave the store components in their previous release if the version is supported and in-policy.
 - Option 1: Update the store components runtime (Microsoft code) to match the same release as CSU.
@@ -317,7 +317,7 @@ See the steps for [Track 2: Update your development environments](#update-csu-de
 
 This option generates a new retail deployable package containing you store components, with changes only to the Microsoft code
 
-1. Update your release branch (with the code that is currently being used in production) to the Retail SDK matching your target release. In this example, the is version 10.0.11(9.21). See the steps for [Track 2: Update your development environments](#update-csu-dev).
+1. Update your release branch (with the code that is currently being used in production) to the Retail SDK matching your target release. In this example, the version is 10.0.11(9.21). See the steps for [Track 2: Update your development environments](#update-csu-dev).
 
 2. Generate a new build for the Retail Deployable Package. It contains same set of customizations currently in production + 10.0.11 (9.21) Microsoft code.
 
@@ -339,16 +339,16 @@ The SaaS components of Dynamics 365 Commerce are not currently supported on dev 
 
 Test 1 is running version 10.0.11 HQ and local version of RCSU (from previous phases). Updating test 1 is not a prerequisite in this flow. Given there is no CSU in this environment this step is mostly for verification.
 
-1. Upload, Update and Deploy the Store Components. For more information, see [Upload, update, and deploy Store components](#upload-store-components) in this topic.
-2. Sign-off on functional scenarios.
+1. Upload, update, and deploy the Store Components. For more information, see [Upload, update, and deploy Store components](#upload-store-components) in this topic.
+2. Sign off on functional scenarios.
 3. If regressions are encountered, see Error situations below.
 
 ##### Update UAT (Update process)
 
-Clients pointing to UAT are running applications (e.g. MPOS) for release 10.0.7 (the same version as currently in production).
+Clients pointing to UAT are running applications (for example, MPOS) for release 10.0.7 (the same version as currently in production).
 
-1. Upload, update and deploy the Store components. For more information, see [Upload, update, and deploy Store components](#upload-store-components) in this topic.
-2. Sign-off on functional scenarios.
+1. Upload, update, and deploy the Store components. For more information, see [Upload, update, and deploy Store components](#upload-store-components) in this topic.
+2. Sign off on functional scenarios.
 3. If regressions are encountered, see [Error situations](#error-situations) in this topic.
 
 ##### Update Prod (Update process)
@@ -358,7 +358,7 @@ Clients pointing to UAT are running applications (e.g. MPOS) for release 10.0.7 
 
 ## <a id="apply-new-custom-code"></a>Apply a new version of your custom code
 
-This section describes the recommended flow of 2 use cases that require updating your UAT and/or Prod environments with a new build of your custom extension.
+This section describes the recommended flow of two use cases that require updating your UAT and/or Prod environments with a new build of your custom extension.
 
 ### <a id="create-hotfix"></a>Create a hotfix of your code
 
@@ -394,12 +394,12 @@ When you are ready to release the next version of your custom code, follow this 
 3. Upload Retail Deployable Package to your asset library.
 
     + Legacy: Software Deployable Package
-    + New (10.0.11+) : Retail Self-Service Installers for 10.0.11+ deployments
+    + New (10.0.11+): Retail Self-Service Installers for 10.0.11+ deployments
 
 4. Update HQ with the new self-service installers for store components.
 
     + Legacy: Deploy the Retail Deployable Package to HQ via LCS
-    + New (10.0.11+): In HQ go to the "Commerce parameters" form, "Channel deployment" tab and click on "Check for package updates" – this will bring in the packages available in LCS Asset library under "Retail Self-service package"
+    + New (10.0.11+): In HQ go to the **Commerce parameters** form, **Channel deployment** tab and select **Check for package updates**. This update will bring in the packages available in LCS Asset library under **Retail Self-service package**.
 
 5. Assign the client versions to your devices.
 6. Download the installers for the desired client type and device.
