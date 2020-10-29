@@ -2635,6 +2635,18 @@
         href: transportation/reconcile-freight-transportation-management.md
       - name: Register driver check-in and check-out for an appointment
         href: transportation/tasks/register-driver-check-check-out-appointment.md
+      - name: Discounts
+        href: transportation/transportation-management-discount.md
+      - name: Miscellaneous charges
+        href: transportation/transportation-management-misc-charge.md
+      - name: Modes and methods
+        href: transportation/transportation-management-modes-methods.md
+      - name: Number sequences
+        href: transportation/transportation-management-number-sequence.md
+      - name: Status
+        href: transportation/transportation-management-status.md
+      - name: Zone master
+        href: transportation/transportation-management-zone-master.md
       - name: Set up a carrier fuel index
         href: transportation/tasks/set-up-carrier-fuel-index.md
       - name: Set up a transportation tender
