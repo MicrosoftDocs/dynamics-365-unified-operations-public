@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-# Details
+## Details
 Between Retail version 10.0.5 & 10.0.6, support to edit cash and carry transactions like sales and returns along with editing cash management transactions like Float entry, Tender removal etc. was introduced. With the 10.0.7 version, support to edit async customer order transactions and online order transactions is also being introduced. The below points describe the process to do the same.  
 1.	Install the Dynamics Excel Add-in.
 2.	Specify a Hold code in the field **Hold code for order synchronization errors** under **Retail parameters > Customer orders > Order** fast tab 
