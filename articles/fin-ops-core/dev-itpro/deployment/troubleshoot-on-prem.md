@@ -504,7 +504,7 @@ The local agent user can't connect to the SQL Server instance or the database.
 
 ### Issue
 
-**Error:** When you run Test-D365FOConfiguration.ps1 or Test-D365FOConfiguration-AllVMs.ps1 you receive:
+**Error:** When you run Test-D365FOConfiguration.ps1 or Test-D365FOConfiguration-AllVMs.ps1, you receive the message:
 
 ```stacktrace
 "Get-LocalGroupMember : Failed to compare two elements in the array.
@@ -515,9 +515,9 @@ At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
     + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand" 
 ```
 
-**Reason:** There is a bug in the powershell commandlet Get-LocalGroupMember that causes it to fail when there are invalid entries.
+**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, that causes it to fail when there are invalid entries.
 
-**Steps:** In the machine where the script is failing open local users and groups. Go to the Administrators group and remove any entries that have an entry like the one highlighted below:
+**Steps:** On the machine where the script is failing, open local users and groups. Go to the administrators group and remove any entries that have an entry like the one highlighted below:
 
 ![Invalid SID](media/InvalidSID.png)
 
