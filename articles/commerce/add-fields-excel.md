@@ -5,7 +5,7 @@ title: Add fields to Excel spreadsheets to edit retail transactions
 description: This topic describes how to add fields to Microsoft Excel spreadsheets to edit retail transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/20/2020
+ms.date: 10/29/2020
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -53,10 +53,10 @@ The new field and data for the field should now be available in Excel for editin
 
 ## Additional resources
 
-[]()
+[Edit and audit cash and carry and cash management transactions](edit-cash-trans.md)
 
-[]()
+[Edit and audit online order and asynchronous customer order transactions](edit-order-trans.md)
 
-[]()
+[Edit financial dimensions for retail transactions](edit-financial-dim.md)
 
-[]()
+[Create an Excel spreadsheet to edit retail transactions](create-excel-edit.md)
