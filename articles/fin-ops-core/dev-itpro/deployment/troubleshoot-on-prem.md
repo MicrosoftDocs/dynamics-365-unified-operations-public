@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 manager: AnnBe
-ms.date: 10/02/2020
+ms.date: 10/29/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
