@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Edit & audit of online order & async customer order transactions
-description: This topic describes the feature to edit & audit online order and async customer order transactions in Dynamics 365 Commerce.
+title: Edit and audit online order and asynchronous customer order transactions
+description: This topic describes how to edit and audit online order and asynchronous customer order transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/20/2020
+ms.date: 10/29/2020
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,41 +29,59 @@ ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 
 ---
-# Edit & audit of online order & async customer order transactions
+# Edit and audit online order and asynchronous customer order transactions
 
 [!include [banner](includes/banner.md)]
 
-## Details
-Between Retail version 10.0.5 & 10.0.6, support to edit cash and carry transactions like sales and returns along with editing cash management transactions like Float entry, Tender removal etc. was introduced. With the 10.0.7 version, support to edit async customer order transactions and online order transactions is also being introduced. The below points describe the process to do the same.  
-1.	Install the Dynamics Excel Add-in.
-2.	Specify a Hold code in the field **Hold code for order synchronization errors** under **Retail parameters > Customer orders > Order** fast tab 
-3.	Go to the **Retail store financials** workspace. The **Online order synchronization** errors tile and **Customer order synchronization errors** tile provides a pre-filtered view of the retail transaction form with the transaction records that has failed synchronization for each of those types. 
-4.	Open the from. Click a record to see the synchronization error details for it which is available in the **Synchronization status** fast tab. The fast tab provides the following error details:
+This topic describes how to edit and audit online order and asynchronous customer order transactions in Microsoft Dynamics 365 Commerce.
+
+## Overview
+
+Between Commerce versions 10.0.5 and 10.0.6, support was added to edit cash and carry transactions (such as sales and returns) and cash management transactions (such as float entry and tender removal). With Commerce version 10.0.7, support was added to edit asynchronous customer order transactions and online order transactions. 
+
+## Edit and audit order transactions
+
+To edit and audit order transactions in Commerce headquarters, follow these steps. 
+
+1. Install the [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/en-us/product/office/WA104379629?tab=Overview).
+1. Under the **Retail parameters \> Customer orders \> Order** FastTab, specify a hold code for **Hold code for order synchronization errors**.
+1. Go **Store financials**. The **Online order synchronization errors** and **Customer order synchronization errors** tiles provide a prefiltered view of the retail transaction form with the transaction records that have failed synchronization for each of those types. 
+1. Open either the **Online order synchronization errors** or **Customer order synchronization errors** form. Select a record to see the synchronization error details. The **Synchronization status** FastTab provides the following error details:
     - Pending order status
     - Order error details
     - Modified date and time
     - Retry count
-5.	Based on the error details, if the record needs a data fix, click **Office Add in**, and then click **Edit selected transaction** 
-6.	If the transaction being edited is an online order transaction, then an Excel file with the details of the selected transaction opens, with the following worksheets:
+1. Based on the error details, if the record needs a data fix, select **Office Add in**, and then select **Edit selected transaction**. 
+1. If the transaction being edited is an online order transaction, then an Excel file with the details of the selected transaction opens, with the following worksheets:
     - Transaction: This worksheet has the header details for the transaction.
     - Sales transaction: This worksheet has the line details for the transaction.
     - Payment transactions: This worksheet has the details of the payment lines for the transaction.
     - Discount transactions: This worksheet has the discount-related details for the transaction.
     - Tax transactions: This worksheet has the tax-related details for the transaction.
     - Charges transactions: This worksheet has the charges-related data for the transaction.
-7.	If the transaction being edited is an async customer order transaction, then an Excel file with the details of the selected transaction opens, with the following worksheets:
+1. If the transaction being edited is an asynchronous customer order transaction, then an Excel file with the details of the selected transaction opens, with the following worksheets:
     - Lines: This worksheet has the header and line details for the transaction.
     - Payments: This worksheet has the details of the payment lines for the transaction.
     - Discounts: This worksheet has the discount-related details for the transaction.
     - Taxes: This worksheet has the tax-related details for the transaction.
     - Charges: This worksheet has the charges-related data for the transaction
-8.	In the Excel file, first set the **Pending order status** field to **Editing** and publish the change. This will prevent the **Synchronize order** job that is running in batch to skip this record from processing. 
-9.	In the Excel file, you modify the appropriate fields and then upload the data back into Retail Headquarters using the Dynamics Excel Add-in publish functionality. Once published, the changes will be reflected in the system. During publish, no validation is done on changes that users make.
-10.	A complete audit trail of the changes can be viewed by clicking **View audit trail** in the **Retail transaction** header for the header-level changes and in the relevant section and record on the appropriate transaction page. For example, all changes relating to sales lines will be visible on the **Sales transactions** page, changes relating to payments will be visible on the **Payment transactions** page, etc. The audit details that are maintained for the changes are as follows.
+1. In the Excel file, enter **Editing** for **Pending order status**, and then publish the change. This will prevent the **Synchronize order** job that is running in batch to skip this record from processing. 
+1. In the Excel file, modify the appropriate fields and then upload the data back into Commerce headquarters using the Dynamics Excel Add-in publish functionality. Once published, the changes will be reflected in the system. During publish, no validation is done on changes that users make.
+1. A complete audit trail of the changes can be viewed by selecting **View audit trail** in the **Retail transaction** header for the header-level changes, and in the relevant section and record on the appropriate transaction page. For example, all changes relating to sales lines will be visible on the **Sales transactions** page, and changes relating to payments will be visible on the **Payment transactions** page. The audit details that are maintained for the changes are as follows.
     - Modified date and time
     - Field
     - Old value
     - New value
     - Modified by
-11.	After your changes are made and published, click on the **Synchronize order** button to immediately start the synchronization process. Alternatively, the user can wait for the synchronization process that is being run in batch to process the transaction.
-12.	 Once the orders are synchronized successfully, these orders by default are placed in a Hold status using the Hold code as defined in the Retail parameters. The Hold on the orders needs to be removed before the order can be processed further for fulfillment or other operations.  
+1. After your changes are made and published, select **Synchronize order** to immediately start the synchronization process. Alternatively, you can wait for the synchronization process that is being run in batch to process the transaction.
+1. Once the orders are synchronized successfully, these orders are by default placed in a hold status using the hold code as defined in the Commerce parameters. The hold on the orders needs to be removed before the order can be processed further for fulfillment or other operations.  
+
+## Additional resources
+
+[]()
+
+[]()
+
+[]()
+
+[]()
