@@ -86,7 +86,7 @@ Use this procedure to set up inventory dimensions for NVFAs, working clothes, an
 
 ## Set up officials for the NVFA Statement of writing-off (No. MB-8)
 
-Use this procedure to set up the members and chairman of the commission that is responsible for the NVFA Statement of writing off (No. MB-8).
+Use this procedure to set up the members and chairperson of the commission that is responsible for the NVFA Statement of writing off (No. MB-8).
 
 1. Go to **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 2. On the **Fixed assets** tab, select **NVFA Statement of writing-off (No. MB-8)**.

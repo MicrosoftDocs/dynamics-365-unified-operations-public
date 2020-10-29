@@ -73,7 +73,7 @@ Before you can use the **Financial period close** workspace, you must configure 
 
 On the **Resources** tab, you define the people who are involved in the closing processes. Any employee who will be responsible for a closing task must first be assigned here. You must also specify the employee's view of the workspace. The following options are available:
 
--   **Only assigned tasks** – The user will see only the tasks that are assigned to him or her.
+-   **Only assigned tasks** – The user will see only the tasks that are assigned to them.
 -   **All tasks and status** – The user will see all closing tasks and the status of the overall process.
 
 Users who have permissions to view only their assigned tasks won't be able to add tasks to the task list, edit tasks, or remove tasks from the task list.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use a customer payment to settle multiple invoices that span multiple discount periods
-description: This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
+description: This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in this article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
+This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in this article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 
 Fabrikam sells goods to customer 4032. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the **Accounts receivable parameters** page.
 
