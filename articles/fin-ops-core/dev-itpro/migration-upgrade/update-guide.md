@@ -11,7 +11,7 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: rbadawy
+ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
 ---
@@ -34,26 +34,26 @@ The **main** goal is to illustrate the following tasks:
 
 The document does not go into the mechanics of how to use the different Azure DevOps and Lifecycle Services (LCS) tools. Instead, it focuses on processes and best practices. The sections [Apply the next version of a Microsoft service update](#apply-the-next-version-of-a-microsoft-service-update) and [Apply a new version of your custom code](#apply-a-new-version-of-your-custom-code) contain both an overview of the stages and the steps of the process.
 
-+ [Environments](#Environments)
-    + [Environments running your current release](#environments-running-your-current-release)
-    + [Environments running the next version of your custom code](#environments-running-the-next-version-of-your-custom-code)
++ [Environments](#environments)
+    + [Environments running your current release](#current-environments)
+    + [Environments running the next version of your custom code](#next-environments)
 + [Manage source code branches](#manage-source-code-branches)
-+ [Apply the next version of a Microsoft service update](#apply-the-next-version-of-a-microsoft-service-update)
-    + [Backward compatibility of Microsoft updates, what does it mean?](#backward-compatibility-of-microsoft-updates,-what-does-it-mean?)
++ [Apply the next version of a Microsoft service update](#apply-next-update)
+    + [Backwards compatibility of Microsoft updates](#compatibility)
         + [Runtime compatibility](#runtime-compatibility)
-        + [Design-time compatibility](#design-time-compatibility)
-    + [Phase 1: Update Finance and Operations](#phase-1-update-app)
+        + [Design-time compatibility](#design-compatibility)
+    + [Phase 1: Update Finance and Operations](#phase-1)
         + [Track 1: Update your runtime environments](#track-1:-update-your-runtime-environments)
             + [Update Test 1](#update-test-1), [Update UAT](#update-uat), [Update Prod](#update-prod)
         + [Track 2: Update your development environments](#track-2:-update-your-development-environments)
         + [Error situations](#error-situations)
             + [Case 1](#case-1), [Case 2](#case-2), [Case 3](#case-3)
-    + [Phase 2: Update Commerce Scale Unit (CSU) to 10.0.11](#phase-2:-update-commerce-scale-unit-(csu)-to-10.0.11)
+    + [Phase 2: Update Commerce Scale Unit (CSU) to 10.0.11](#phase-2)
         + [Pre-requisites](#pre-requisites)
         + [Track 1: Update your Commerce Scale Unit](#track-1:-update-your-commerce-scale-unit)
             [Update Test 1](#update-test-1), [Update UAT](#update-uat), [Update Prod](#update-prod)
         + [Track 2: Update your development environments](#track-2:-update-your-development-environments)
-    + [Phase 3: Update POS to 10.0.11](#phase-3:-update-pos-to-10.0.11)
+    + [Phase 3: Update POS to 10.0.11](#phase-3)
         + [Pre-requisites](#pre-requisites)
         + [Update your Commerce Development Environment](#update-your-commerce-development-environment)
         + [Option 1: Store Component updates with only runtime changes](#option-1:-store-component-updates-with-only-runtime-changes)
@@ -69,7 +69,7 @@ The document does not go into the mechanics of how to use the different Azure De
 
 The ALM scenarios in this topic rely on a collection of Finance and Operations environments described in the following image. These are the environments in your current release. This is a typical configuration for organizations with implementations that rely on custom code (extensions), including customizations provided by independent software vendors (ISVs).
 
-### Environments running your current release
+### <a id="current-environments"></a>Environments running your current release
 
 These are the environments in your current release.
 
@@ -86,7 +86,7 @@ These are the environments in your current release.
 
 + **Prod** is your live production environment running on your production database.
 
-### Environments running the next version of your custom code
+### <a id="next-environments"></a>Environments running the next version of your custom code
 
 These are the environments running the next version of your custom code.
 
@@ -116,7 +116,7 @@ When you are ready to release a new version of your custom code, create a new re
 
 You may have private branches that individual developers will be working on when working on a specific work item based on a particular branch of your code. Private branches are merged back into their parent branch when the work is complete. For more information, see [Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy](https://docs.microsoft.com/azure/devops/repos/tfvc/branching-strategies-with-tfvc).
 
-## Apply the next version of a Microsoft service update
+## <a id="apply-next-update"></a>Apply the next version of a Microsoft service update
 
 Maximize the efficiency of taking service updates by following a phased approach. Each phase updates one component of your implementation.
 
@@ -126,15 +126,15 @@ Maximize the efficiency of taking service updates by following a phased approach
 
 2. Phase 2: Update the Commerce Scale Unit (CSU).
 
-3. Phase 3: Update the Commerce POS.
+3. <a id="phase-3"></a>Phase 3: Update the Commerce POS.
 
 When you take a Microsoft update, you don't have to update your custom code to the next version. Taking Microsoft updates without bundling them with custom code updates simplifies the update process and reduces the cost and risk of regressions associated with all-in-one upgrade projects.
 
-### Backwards compatibility of Microsoft updates
+### <a id="compatibility"></a>Backwards compatibility of Microsoft updates
 
 It’s important to understand what Microsoft means by backwards compatibility of service updates to set some context for the next sections. Service and quality updates are *run-time* backwards compatible. Updates are not always *design-time* (compile-time) backwards compatible.
 
-#### Run-time compatibility
+#### <a id="runtime-compatibility"></a>Run-time compatibility
 
 All Microsoft updates are intended to be run-time backwards-compatible. This compatibility covers both binary compatibility and functional compatibility. Runtime compatibility means that customizations that exist in production and sandbox environments will continue to work after Microsoft service updates are deployed to those environments. These updates include service updates and quality updates.
 
@@ -142,7 +142,7 @@ Runtime compatibility also means that Microsoft updates are backward-compatible 
 
 Binary compatibility is backwards only. You can compile a customization on an older application and platform version, and deploy it to an environment that is running a later version. You cannot deploy code compiled on a later version than the one running on the environment you deploy to.
 
-#### Design-time compatibility
+#### <a id="design-compatibility"></a>Design-time compatibility
 
 Design-time (Compile-time) backward compatibility means that developers can apply updates to their development environments and successfully compile their code without having to make any changes.
 
@@ -154,7 +154,7 @@ Microsoft also aims for design-time compatibility. However, some updates may inc
 
 All these changes may require work on your solution. Design-time breaking changes that are binary-compatible don't require a 12-month deprecation notice, and are documented with each service update. For more information, see [What's new and changed in Platform updates](../get-started/whats-new-home-page.md).
 
-### Phase 1: Update the Finance and Operations implementation
+### <a id="phase-1"></a>Phase 1: Update the Finance and Operations implementation
 
 This section summarizes the process of updating your Finance and Operations implementation to the latest service update. For the sake of example, the description assumes you are updating from version 10.0.7 to 10.0.11.
 
@@ -238,7 +238,7 @@ A bug is found during Track 1 that requires a change to your custom code. This c
 3. Create a new deployable package out of the release branch.
 4. Apply the new deployable package on Test 1 and/or UAT.
 
-### Phase 2: Update Commerce Scale Unit (CSU) to 10.0.11
+### <a id="phase-2"></a>Phase 2: Update Commerce Scale Unit (CSU) to 10.0.11
 
 This section summarizes the process of updating your Commerce Scale Units to the latest service update. For the sake of example, the description assumes you are updating from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21).
 
