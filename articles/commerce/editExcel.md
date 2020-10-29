@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add fields to Excel worksheets to edit retail transactions
-description: This topic describes how to add fields to Microsoft Excel worksheets to edit retail transactions in Microsoft Dynamics 365 Commerce.
+title: Add fields to Excel spreadsheets to edit retail transactions
+description: This topic describes how to add fields to Microsoft Excel spreadsheets to edit retail transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 10/20/2020
@@ -29,11 +29,11 @@ ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: 
 
 ---
-# Add fields to Excel worksheets to edit retail transactions
+# Add fields to Excel spreadsheets to edit retail transactions
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic describes how to add fields to Microsoft Excel worksheets to edit retail transactions in Microsoft Dynamics 365 Commerce.
+This topic describes how to add fields to Microsoft Excel spreadsheets to edit retail transactions in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -41,7 +41,7 @@ When an Excel file is generated to edit retail transactions, the Excel file is p
 
 ## Add fields to an Excel sheet
 
-To add fields to an Excel worksheet to edit transactions, follow these steps.
+To add fields to an Excel spreadsheet to edit transactions, follow these steps.
 
 1. Download and open the Excel file from the **Statements** page, **Retail transactions** page, or the **Transaction validation failures** tile on the **Store financials** workspace.
 1. Select **Design**.
