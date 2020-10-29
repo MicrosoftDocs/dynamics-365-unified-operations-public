@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes the functionality that lets you transition a lease portfolio to the new lease accounting standards: Accounting Standards Codification Topic 842 (ASC 842), which is the standard in Generally Accepted Accounting Principles in the US (US GAAP), and International Financial Reporting Standard 16 (IFRS 16).
 
-For a full review of the transition methods, see [Transition methods](transition-methods.md). For information about how to set up a book for the transition to the new standards, see [Set up lease books](set-up-lease-books.md).
+For information about how to set up a book for the transition to the new standards, see [Set up lease books](set-up-lease-books.md).
 
 When you create a transition adjustment journal entry, a journal entry is generated. This entry reflects the balance sheet impact of recording the lease under the new standards on that date. The appropriate asset account is debited for the carrying amount on that date, and the liability account is credited. The difference is either debited or credited to retained earnings.
 
