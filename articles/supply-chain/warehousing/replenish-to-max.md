@@ -31,27 +31,36 @@ ms.dyn365.ops.version: Release 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-The replenishment strategy on the wave demand replenishment template lines allows for users to choose how to do replenishment. The wave demand quantity strategy is the default strategy, and it works in exactly the same way as the wave demand replenishment before the introduction of the replenishment strategy field. It uses the replenishment location directives to find locations that could be replenished and replenishes them until the demand is covered.
+On **Replenishment templates** the replenishment strategy on the wave demand replenishment template lines allows for users to choose how to do replenishment. The *wave demand quantity* strategy is the default strategy, and it works in exactly the same way as the wave demand replenishment before the introduction of the replenishment strategy field. It uses the replenishment location directives to find locations that could be replenished and replenishes them until the demand is covered.
 
-The maximum location capacity strategy introduces some new functionality. This strategy will use the location directives to find locations that could be replenished, and it will replenish them until the demand is covered. The difference with the wave demand quantity strategy, is that all the replenished locations are replenished to the maximum of their capacity as it is defined by the location stocking limits.
+The *maximum location capacity* strategy introduces some new functionality. This strategy will use the location directives to find locations that could be replenished, and it will replenish them until the demand is covered. The difference with the *wave demand quantity* strategy, is that all the replenished locations are replenished to the maximum of their capacity as it is defined by the location stocking limits.
 
-When we are using the maximum location capacity strategy, we are trying to create work to bring the requested quantity plus some extra quantity to fill the locations we are replenishing. Sometimes, that won’t be possible. For example, when the bulk locations don’t have enough inventory to cover the extra quantity. In these cases, we detect the failure, and we try to recover.
+When we are using the *maximum location capacity* strategy, we are trying to create work to bring the requested quantity plus some extra quantity to fill the locations we are replenishing. Sometimes, that won’t be possible. For example, when the bulk locations don’t have enough inventory to cover the extra quantity. In these cases, we detect the failure, and we try to recover.
 
-An example, where this replenishment strategy would be preferred over the wave demand quantity strategy, is during peak season, where some items are selling a lot we want to proactively replenish the picking locations as much as possible to reduce the number of work created for replenishment.
+An example, where this replenishment strategy would be preferred over the *wave demand quantity* strategy, is during peak season, where some items are selling a lot we want to proactively replenish the picking locations as much as possible to reduce the number of work created for replenishment.
 
-> [!NOTE]
-> For the maximum location capacity strategy to work, the stocking limits of the location need to be defined. If not, the strategy will work as the wave demand quantity strategy.
+> [!IMPORTANT]
+> For the *maximum location capacity* strategy to work, the stocking limits of the location need to be defined. If not, the strategy will work as the wave demand quantity strategy.
+
+## Enable the Replenish to max based on stocking limits feature
+
+Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+
+- **Module** - *Warehouse management*
+- **Feature name** - *Replenish to max based on stocking limits*
 
 ## Set up replenishment strategies
 
-The replenishment strategy is a property of the replenishment template lines.
+The replenishment strategy is a property of the replenishment template detail lines. If you do not see the **replenishment strategy** field on the line in the **replenishment Template Details** section, ensure that the feature has been enabled and that the selected **replenish template** has the **replenishment type** of *Wave demand*.
 
-Go to **Warehouse management > Setup > Replenishment > Replenishment templates**.
+Access the templates by navigating to **Warehouse management \> Setup \> Replenishment \> Replenishment templates**.
 
-Select or create the wave demand replenishment template you want to set up. The replenishment strategy can be edited on the replenishment template lines appearing in the replenishment template details section.
+Select or create the wave demand replenishment template you want to set up. The replenishment strategy can be edited on the replenishment template lines appearing in the **replenishment template details** section.
 
 > [!NOTE]
-> The default strategy is the wave demand quantity. This means you only need to update the replenishment template lines that you want to use the maximum location capacity strategy.
+> The default strategy is the *wave demand quantity*. This means you only need to update the replenishment template lines that you want to use the *maximum location capacity* strategy.
+
+![Replenishment template](media/ReplenTempWaveDmdMaxLocCap.png "Replenishment template")
 
 ## Examples
 
@@ -59,7 +68,7 @@ In this example, we assume that there is only one replenishment template with on
 
 We create a sales order for item A0001 of 130 pcs. Before we release to warehouse, the setup of the warehouse is the following.
 
-There is only one bulk location with available on-hand 500 pcs. There are three pick locations, that have stocking limits 100 pcs. The replenishment put locations are the same as the sales pick locations, and the replenishment unit is in boxes (1 Box = 20 pcs).
+There is only one bulk location with available on-hand 500 pcs. There are three pick locations, that have stocking limits 100 pcs. (Remember that stocking limits is required for the strategy.) The replenishment put locations are the same as the sales pick locations, and the replenishment unit is in boxes (1 Box = 20 pcs).
 
 At the time of the order the on-hand on the sales pick locations is as follows:
 
