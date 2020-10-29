@@ -42,28 +42,28 @@ The document does not go into the mechanics of how to use the different Azure De
     + [Backwards compatibility of Microsoft updates](#compatibility)
         + [Runtime compatibility](#runtime-compatibility)
         + [Design-time compatibility](#design-compatibility)
-    + [Phase 1: Update Finance and Operations](#phase-1)
-        + [Track 1: Update your runtime environments](#track-1:-update-your-runtime-environments)
+    + [Phase 1: Update the Finance and Operations implementation](#phase-1)
+        + [Track 1: Update your runtime environments](update-finops-runtime)
             + [Update Test 1](#update-test-1), [Update UAT](#update-uat), [Update Prod](#update-prod)
-        + [Track 2: Update your development environments](#track-2:-update-your-development-environments)
+        + [Track 2: Update your development environments](#update-finops-dev)
         + [Error situations](#error-situations)
             + [Case 1](#case-1), [Case 2](#case-2), [Case 3](#case-3)
     + [Phase 2: Update Commerce Scale Unit (CSU) to 10.0.11](#phase-2)
-        + [Pre-requisites](#pre-requisites)
+        + [Phase 2 prerequisites](#phase2-prerequisites)
         + [Track 1: Update your Commerce Scale Unit](#track-1:-update-your-commerce-scale-unit)
             [Update Test 1](#update-test-1), [Update UAT](#update-uat), [Update Prod](#update-prod)
         + [Track 2: Update your development environments](#track-2:-update-your-development-environments)
     + [Phase 3: Update POS to 10.0.11](#phase-3)
-        + [Pre-requisites](#pre-requisites)
+        + [Phase 3 prerequisites](#phase3-prerequisites)
         + [Update your Commerce Development Environment](#update-your-commerce-development-environment)
         + [Option 1: Store Component updates with only runtime changes](#option-1:-store-component-updates-with-only-runtime-changes)
         + [Option 2: Store Component updates with runtime and custom changes](#option-2:-store-component-updates-with-runtime-and-custom-changes)
         + [Update Process](#update-process)
             + [Update Test 1](#update-test-1), [Update UAT](#update-uat), [Update Prod](#update-prod)
-+ [Apply a new version of your custom code](#apply-a-new-version-of-your-custom-code)
-    + [Create a hotfix of your code](#create-a-hotfix-of-your-code)
-    + [Update your custom code from N to N+1](#update-your-custom-code-from-n-to-n1)
-+ [Uploading, Updating & Deploying Store Components](#uploading,-updating-&-deploying-store-components)
++ [Apply a new version of your custom code](#apply-new-custom-code)
+    + [Create a hotfix of your code](#create-hotfix)
+    + [Update your custom code from N to N+1](#update-custom-code)
++ [Upload, update, and deploy Store components](#upload-store-components)
 
 ## <a id="environments"></a>Environments
 
@@ -165,11 +165,11 @@ This phase is divided into 2 tracks that can happen in parallel.
 
 You are live on 10.0.11 after completing Track 1, unless you run into one of the error situations described in [Error situations](#error-situations) in this topic.
 
-### Track 1: Update your runtime environments
+#### <a id="update-finops-runtime"></a>Track 1: Update your runtime environments
 
 By completing track 1, you will practically complete your Finance and Operations update to 10.0.11 because your production environment will be live on 10.0.11. There is no need to recompile your custom code as part of this track.
 
-#### Update Test 1
+##### Update Test 1
 
 Test 1 is running version 10.0.7 with the latest released version of your custom extension. Updating test 1 is not a prerequisite in this flow but is recommended. It adds an additional level of functional verification and predictability and should be completed before the UAT environment is updated. The sooner you update and validate on Test 1, the more predictable your "real" update (UAT and Prod) will be.
 
@@ -177,7 +177,7 @@ Test 1 is running version 10.0.7 with the latest released version of your custom
 2. Sign off on functional scenarios. You can use the [Regression Suite Automation Tool](../perf-test/rsat/rsat-overview.md) to automate user acceptance testing on test and UAT environments.
 3. If regressions are encountered, see [Error situations](#error-situations) in this topic.
 
-#### Update UAT
+##### Update UAT
 
 UAT is running version 10.0.7 with a released version of your custom extension. (The UAT is the same as Prod).
 
@@ -196,7 +196,7 @@ UAT is running version 10.0.7 with a released version of your custom extension. 
 
 2. Sign-off.
 
-### Track 2: Update your development environments
+#### <a id="update-finops-dev"></a>Track 2: Update your development environments
 
 The purpose of Track 2 is to update Dev 1 to 10.0.11. Dev 1 is your **main** development environment connected to the current release branch of your custom code. Dev 1 is running Finance and Operations version 10.0.7. By completing Track 2, you make sure that Dev 1 is running 10.0.11 with your latest release and that it is ready for any future hotfixes to your code when needed.
 
@@ -209,13 +209,13 @@ The purpose of Track 2 is to update Dev 1 to 10.0.11. Dev 1 is your **main** dev
     - Apply Finance and Operations version 10.0.11 to the development environment.
     - Synchronize and compile your latest custom code from the target code branch.
 
-### Error situations
+#### Error situations
 
-#### Case 1
+##### Case 1
 
 A bug is found during Track 1, and the bug requires a Microsoft quality update. If Microsoft releases the update in a timely manner, complete Track 1 with the new Microsoft update instead of the original service update.
 
-#### Case 2
+##### Case 2
 
 A bug is found during Track 1, and the bug requires a Microsoft service update that cannot be shipped in a timely manner.
 
@@ -229,7 +229,7 @@ Microsoft proposes a change to your custom code to work around the problem.
 > [!NOTE]
 > Custom code that is compiled on version 10.0.7 can be deployed on any runtime environment that is running 10.0.7 or later. This means you do not need (yet) to update Dev 1 to 10.0.11 unless you have already done so as part of Track 2.
 
-#### Case 3
+##### Case 3
 
 A bug is found during Track 1 that requires a change to your custom code. This could be a bug in your code or the ISV code.
 
@@ -242,7 +242,7 @@ A bug is found during Track 1 that requires a change to your custom code. This c
 
 This section summarizes the process of updating your Commerce Scale Units to the latest service update. For the sake of example, the description assumes you are updating from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21).
 
-### Prerequisites (Phase 2)
+#### <a id="phase2-prerequisites"></a>Phase 2 prerequisites
 
 Update the HQ environments (Finance and Operations) to the same or later release before updating the Commerce Scale Unit(s). In this example, that is 10.0.11.
 
@@ -253,15 +253,15 @@ This phase is divided into 2 tracks that can happen in parallel.
 
 You are live on 10.0.11 (9.21) after completing Track 1, unless you run into one of the error situations described in phase 1.
 
-### Track 1: Update your Commerce Scale Unit (Update Commerce Scale Unit)
+#### Track 1: Update your Commerce Scale Unit (Update Commerce Scale Unit)
 
 By completing track 1, you will practically complete your Commerce Scale Unit update to 10.0.11 because your production environment will be live on 10.0.11. There is no need to recompile your custom code as part of this track.
 
-#### Update Test 1 (Track 1)
+##### Update Test 1 (Track 1)
 
 The SaaS components of Commerce are not currently supported on Tier 1 environments (Dev/Test environments). Each Tier 1 environment has a copy of Retail Server running locally, and the deployment of both Microsoft code for Retail Server and retail customizations will be done through the legacy system of Application Binary package and Retail Deployable Package against the IaaS instance.
 
-##### Update UAT (Track 1)
+###### Update UAT (Track 1)
 
 UAT is running CSU corresponding to release 10.0.7 with the same version of your Retail extension as production
 
@@ -269,7 +269,7 @@ UAT is running CSU corresponding to release 10.0.7 with the same version of your
 2. Complete user acceptance testing and sign-off.
 3. If regressions are encountered, see [Error situations](#error-situations) in this topic.
 
-##### Update Prod (Track 1)
+###### Update Prod (Track 1)
 
 1. Go through the update workflow under Commerce Scale Unit – selecting the "9.21 (10.0.11)" version as the target.
 2. Sign-off.
@@ -302,14 +302,14 @@ The rest of this section will assume that you want or need to update the store c
 
 After this phase you'll be live on 10.0.11 (9.21) for store components, unless you run into one of the error situations described below.
 
-#### Prerequisites (Phase 3)
+#### <a id="phase2-prerequisites"></a>Phase 3 prerequisites
 
 The prerequisites for Phase 3 are:
 
 - The HQ components (Finance and Operations) should have been updated to the same or later release before updating the Commerce Scale Unit(s). In this example, the version is 10.0.11.
 - The Commerce Scale Units should have been updated to the same or later release than the store components. In this example, that is 10.0.11.
 
-### Update your Commerce Development Environment
+#### Update your Commerce Development Environment
 
 See the steps for [updating your development environment for CSU](#track-2-update-your-development-environments-1).
 
@@ -321,7 +321,7 @@ This option generates a new retail deployable package containing you store compo
 
 2. Generate a new build for the Retail Deployable Package. It contains same set of customizations currently in production + 10.0.11 (9.21) Microsoft code.
 
-### Option 2: Store Component updates with runtime and custom changes
+#### Option 2: Store Component updates with runtime and custom changes
 
 This option will generate a new retail deployable package containing you store components, with changes from both Microsoft code and customizations.
 
@@ -339,7 +339,7 @@ The SaaS components of Dynamics 365 Commerce are not currently supported on dev 
 
 Test 1 is running version 10.0.11 HQ and local version of RCSU (from previous phases). Updating test 1 is not a prerequisite in this flow. Given there is no CSU in this environment this step is mostly for verification.
 
-1. Upload, Update and Deploy the Store Components. For more information, see [Uploading, updating, and deploying Store components](#uploading-updating-deploying-store-components) in this topic.
+1. Upload, Update and Deploy the Store Components. For more information, see [Upload, update, and deploy Store components](#upload-store-components) in this topic.
 2. Sign-off on functional scenarios.
 3. If regressions are encountered, see Error situations below.
 
@@ -356,11 +356,11 @@ Clients pointing to UAT are running applications (e.g. MPOS) for release 10.0.7 
 1. Upload, update, and deploy the Store components.
 2. Sign-off.
 
-## Apply a new version of your custom code
+## <a id="apply-new-custom-code"></a>Apply a new version of your custom code
 
 This section describes the recommended flow of 2 use cases that require updating your UAT and/or Prod environments with a new build of your custom extension.
 
-### Create a hotfix of your code
+### <a id="create-hotfix"></a>Create a hotfix of your code
 
 When a critical bug is found on UAT or Prod, fix the bug in the release branch (not in the **main** or development branch) and follow the standard process of applying a deployable package to UAT and Prod.
 
@@ -373,7 +373,7 @@ When a critical bug is found on UAT or Prod, fix the bug in the release branch (
 5. Follow the standard process of deploying custom code to UAT then Prod.
 6. Integrate the code fix with your **main** code branch.
 
-## Update custom code from N to N+1
+### <a id="update-custom-code"></a>Update custom code from N to N+1
 
 When you are ready to release the next version of your custom code, follow this process to create and deploy the new release.
 
@@ -387,7 +387,7 @@ When you are ready to release the next version of your custom code, follow this 
 6. Follow the standard process of deploying custom code to UAT then Prod.
 7. Retire the old release branch.
 
-## Uploading, updating & deploying Store components
+## <a id="upload-store-components"></a>Upload, update, and deploy Store components
 
 1. Upload the resulting Retail Deployable Package to LCS.
 2. Update AOS with the latest client.
