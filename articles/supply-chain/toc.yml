@@ -1957,6 +1957,32 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
+    - name: Engineering change management
+      items:
+      - name: Engineering change management overview
+        href: engineering-change-management/product-engineering-overview.md
+      - name: Engineering change management feature walkthrough
+        href: engineering-change-management/engineering-scenarios.md
+      - name: Engineering change management parameters
+        href: engineering-change-management/engineering-parameters.md
+      - name: Establish common values for engineering change management
+        href: engineering-change-management/engineering-change-management-setup.md
+      - name: Engineering organizations and data ownership rules
+        href: engineering-change-management/engineering-org-data-ownership-rules.md
+      - name: Product owner
+        href: engineering-change-management/product-owner.md
+      - name: Engineering attributes and engineering attribute search
+        href: engineering-change-management/engineering-attributes-and-search.md
+      - name: Engineering versions and engineering product categories
+        href: engineering-change-management/engineering-versions-product-category.md
+      - name: Product lifecycle state and transactions
+        href: engineering-change-management/product-lifecycle-state-transactions.md
+      - name: Manage changes to engineering products
+        href: engineering-change-management/engineering-change-management.md
+      - name: Product readiness
+        href: engineering-change-management/product-readiness.md
+      - name: Release product structure
+        href: engineering-change-management/release-product-structure.md
     - name: Production control
       items:
       - name: Production process overview
