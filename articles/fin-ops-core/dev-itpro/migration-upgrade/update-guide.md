@@ -51,8 +51,8 @@ The document does not go into the mechanics of how to use the different Azure De
     + [Phase 2: Update Commerce Scale Unit (CSU) to 10.0.11](#phase-2)
         + [Phase 2 prerequisites](#phase2-prerequisites)
         + [Track 1: Update your Commerce Scale Unit](#track-1:-update-your-commerce-scale-unit)
-            [Update Test 1](#update-test-1), [Update UAT](#update-uat), [Update Prod](#update-prod)
-        + [Track 2: Update your development environments](#track-2:-update-your-development-environments)
+            + [Update Test 1](#update-test-1-csu), [Update UAT](#update-uat-csu), [Update Prod](#update-prod-csu)
+        + [Track 2: Update your development environments](#update-csu-dev)
     + [Phase 3: Update POS to 10.0.11](#phase-3)
         + [Phase 3 prerequisites](#phase3-prerequisites)
         + [Update your Commerce Development Environment](#update-your-commerce-development-environment)
@@ -257,11 +257,11 @@ You are live on 10.0.11 (9.21) after completing Track 1, unless you run into one
 
 By completing track 1, you will practically complete your Commerce Scale Unit update to 10.0.11 because your production environment will be live on 10.0.11. There is no need to recompile your custom code as part of this track.
 
-##### Update Test 1 (Track 1)
+##### <a id="update-test-1-csu"></a>Update Test 1 (Track 1)
 
 The SaaS components of Commerce are not currently supported on Tier 1 environments (Dev/Test environments). Each Tier 1 environment has a copy of Retail Server running locally, and the deployment of both Microsoft code for Retail Server and retail customizations will be done through the legacy system of Application Binary package and Retail Deployable Package against the IaaS instance.
 
-###### Update UAT (Track 1)
+###### <a id="update-uat-csu"></a>Update UAT (Track 1)
 
 UAT is running CSU corresponding to release 10.0.7 with the same version of your Retail extension as production
 
@@ -269,12 +269,12 @@ UAT is running CSU corresponding to release 10.0.7 with the same version of your
 2. Complete user acceptance testing and sign-off.
 3. If regressions are encountered, see [Error situations](#error-situations) in this topic.
 
-###### Update Prod (Track 1)
+###### <a id="update-prod-csu"></a>Update Prod (Track 1)
 
 1. Go through the update workflow under Commerce Scale Unit – selecting the "9.21 (10.0.11)" version as the target.
 2. Sign-off.
 
-#### Track 2: Update your development environments (Update Commerce Scale Unit)
+#### <a id="update-csu-dev"></a>Track 2: Update your development environments (Update Commerce Scale Unit)
 
 1. Get the latest version of the Retail SDK.
 
