@@ -500,7 +500,7 @@ The local agent user can't connect to the SQL Server instance or the database.
     uswedpl1catalog.blob.core.windows.net:443
     ```
 
-## Local agent errors
+## Infrastructure scripts errors
 
 ### Issue
 
