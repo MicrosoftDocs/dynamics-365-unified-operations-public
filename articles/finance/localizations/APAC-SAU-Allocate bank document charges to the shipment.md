@@ -1,6 +1,36 @@
 ---
-title: Allocate bank document charges to shipment
+# required metadata
+
+title: Allocate bank document charges to shipment.
+description: This topic explains how you can allocate document bank charges to shipment in a purchase order
+author: v-oloski
+manager: 
+ms.date: 
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Saudi Arabia
+# ms.search.industry: 
+ms.author: v-oloski
+ms.search.validFrom: 2019-11-29
+ms.dyn365.ops.version: 10.0.8
+
 ---
+ 
+# Allocate bank document charges to shipment
+
+[!include [banner](../includes/banner.md)]
 
 This functionality allows a user to allocate bank document charges, posted in
 the general journal, to purchase order lines. Purchase order should have related
@@ -14,19 +44,19 @@ How to create a purchase order with Letter of credit/Import collection see
 [Import letter of
 credit](https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/tasks/import-letter-credit).
 
-# Setup of charge code for bank document charges
+## Setup of charge code for bank document charges
 
 Before using this functionality set up special charge code (Accounts payable \>
 Setup \> Charges setup \> Charges code) for bank document charges.
 
-![](media/14bd04f0e754e4abb80ecc1c82c3b7a3.png)
+![Charge code for document bank](media/apac-sau-bank-document-charge-setup.PNG)
 
 Set **Item** in the **Type** field in the **Debit** group. When you set Item in
 the **Type** field the option **Bank document charge code** is available for
 edit. Set this option to **Yes** and **Type** in **Credit** group is filled in
 automatically and unavailable for editing.
 
-# Allocation of bank document charges
+## Allocation of bank document charges
 
 Follow up the procedure, described below:
 
