@@ -64,6 +64,8 @@ Select or create the wave demand replenishment template you want to set up. The 
 
 ## Examples
 
+### Example 1
+
 In this example, we assume that there is only one replenishment template with only one replenishment template line.
 
 We create a sales order for item A0001 of 130 pcs. Before we release to warehouse, the setup of the warehouse is the following.
@@ -89,6 +91,10 @@ If the replenishment strategy were set to maximum location capacity the replenis
 
 - Replenishment work 1: Pick 4 Boxes from Bulk and put it on Pick-001
 - Replenishment work 2: Pick 5 Boxes from Bulk and put it on Pick-002
+
+![Example 1](media/ReplenTemp_example_1.png "Example 1")
+
+### Example 2
 
 To demonstrate what would happens when there is not enough inventory in the bulk location to cover the extra quantity, we consider the same scenario as above, with the difference that the bulk location holds 160 pcs (8 Boxes)
 
