@@ -41,7 +41,7 @@ Asset leasing is an advanced capability for managing, tracking, and automating f
 ## Asset leasing topics
 The following topic is available to help configure and use Asset leasing. 
 
- - [Asset leasing overview](asset-leasing-overview.md) - This topic describes the general capabilities of Asset leasing, and lists and defines the terms used in the software and in the documentation.
+ - [Asset leasing get started](asset-leasing-quick-start.md) - This topic describes the general capabilities of Asset leasing, and lists and defines the terms used in the software and in the documentation.
  
  ### Set up Asset leasing
  This group of topics can help you configure Asset leasing in a manner that's optimal for your organizations' business situation.  
@@ -75,8 +75,6 @@ This group of topics describes the process for adding leases, creating payment i
  - [Compound interval functionality](compound-interval-functionality.md)
  - [Confirm monthly journal entries in a batch](confirm-payment-schedules-in-batch.md)
  - [Create monthly journal entries in a batch](create-monthly-journals-batch.md)
- - [Transition methods](transition-methods.md)
- - [Post transaction adjustment journal entries](post-transition-adjustment-entries.md)
  - [Dual reporting](dual-reporting.md)
  - [Set up a lease workflow](set-up-lease-wrkflw.md)
  - [Use lease approval workflows](use-create-lease-wrkflw.md)
