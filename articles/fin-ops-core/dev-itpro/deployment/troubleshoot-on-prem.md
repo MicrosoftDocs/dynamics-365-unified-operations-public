@@ -521,20 +521,7 @@ At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
 
 ![Invalid SID](media/InvalidSID.png)
 
-
-You can also manually add the following values in the **components** section of the localagent-config.json file.
-```json
-{
-    "name": "LBDTelemetry",
-    "placementCriteria": "(IsOrchestratorEnabled == True)",
-    "parameters": {
-        "applicationPackagePath": {
-            "value": "Applications\\LBDTelemetry"
-        }
-    }
-},
-```
-
+Do this on all of the machines that face the issue. After the changes are done, try running the script again.
 
 ## <a name="restartapplications"></a>Restart applications (such as AOS)
 
