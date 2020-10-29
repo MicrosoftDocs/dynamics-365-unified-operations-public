@@ -32,7 +32,7 @@ The **main** goal is to illustrate the following tasks:
 + Stay current and manage Microsoft service updates (or quality updates) for Finance and Operations apps and Dynamics 365 Commerce in incremental phases independently from the lifecycle of your own customization. This simplifies the update process and reduces the cost and risk of regressions associated with all-in-one upgrade projects.
 + Capitalize on the use of source code branches for version control of your custom code. Using version control, you can isolate the rollout of critical changes and hotfixes from development of new features and capabilities.
 
-The document does not go into the mechanics of how to use the different Azure DevOps and Lifecycle Services (LCS) tools. Instead, it focuses on processes and best practices. The sections [Apply the next version of a Microsoft service update](#apply-the-next-version-of-a-microsoft-service-update) and [Apply a new version of your custom code](#apply-a-new-version-of-your-custom-code) contain both an overview of the stages and the steps of the process.
+The document does not go into the mechanics of how to use the different Azure DevOps and Lifecycle Services (LCS) tools. Instead, it focuses on processes and best practices. The sections [Apply the next version of a Microsoft service update](#apply-next-update) and [Apply a new version of your custom code](#apply-new-custom-code) contain both an overview of the stages and the steps of the process.
 
 + [Environments](#environments)
     + [Environments running your current release](#current-environments)
@@ -43,21 +43,21 @@ The document does not go into the mechanics of how to use the different Azure De
         + [Runtime compatibility](#runtime-compatibility)
         + [Design-time compatibility](#design-compatibility)
     + [Phase 1: Update the Finance and Operations implementation](#phase-1)
-        + [Track 1: Update your runtime environments](update-finops-runtime)
+        + [Track 1: Update your runtime environments](#update-finops-runtime)
             + [Update Test 1](#update-test-1), [Update UAT](#update-uat), [Update Prod](#update-prod)
         + [Track 2: Update your development environments](#update-finops-dev)
         + [Error situations](#error-situations)
             + [Case 1](#case-1), [Case 2](#case-2), [Case 3](#case-3)
     + [Phase 2: Update Commerce Scale Unit (CSU) to 10.0.11](#phase-2)
         + [Phase 2 prerequisites](#phase2-prerequisites)
-        + [Track 1: Update your Commerce Scale Unit](#track-1:-update-your-commerce-scale-unit)
+        + [Track 1: Update your Commerce Scale Unit](#update-csu)
             + [Update Test 1](#update-test-1-csu), [Update UAT](#update-uat-csu), [Update Prod](#update-prod-csu)
         + [Track 2: Update your development environments](#update-csu-dev)
     + [Phase 3: Update POS to 10.0.11](#phase-3)
         + [Phase 3 prerequisites](#phase3-prerequisites)
         + [Update your Commerce Development Environment](#update-your-commerce-development-environment)
-        + [Option 1: Store Component updates with only runtime changes](#option-1:-store-component-updates-with-only-runtime-changes)
-        + [Option 2: Store Component updates with runtime and custom changes](#option-2:-store-component-updates-with-runtime-and-custom-changes)
+        + [Option 1: Store Component updates with only runtime changes](#store-runtime-only)
+        + [Option 2: Store Component updates with runtime and custom changes](#store-runtime-custom)
         + [Update Process](#update-process)
             + [Update Test 1](#update-test-1), [Update UAT](#update-uat), [Update Prod](#update-prod)
 + [Apply a new version of your custom code](#apply-new-custom-code)
@@ -253,7 +253,7 @@ This phase is divided into 2 tracks that can happen in parallel.
 
 You are live on 10.0.11 (9.21) after completing Track 1, unless you run into one of the error situations described in phase 1.
 
-#### Track 1: Update your Commerce Scale Unit (Update Commerce Scale Unit)
+#### <a id="update-csu"></a>Track 1: Update your Commerce Scale Unit (Update Commerce Scale Unit)
 
 By completing track 1, you will practically complete your Commerce Scale Unit update to 10.0.11 because your production environment will be live on 10.0.11. There is no need to recompile your custom code as part of this track.
 
@@ -302,7 +302,7 @@ The rest of this section will assume that you want or need to update the store c
 
 After this phase you'll be live on 10.0.11 (9.21) for store components, unless you run into one of the error situations described below.
 
-#### <a id="phase2-prerequisites"></a>Phase 3 prerequisites
+#### <a id="phase3-prerequisites"></a>Phase 3 prerequisites
 
 The prerequisites for Phase 3 are:
 
@@ -311,21 +311,21 @@ The prerequisites for Phase 3 are:
 
 #### Update your Commerce Development Environment
 
-See the steps for [updating your development environment for CSU](#track-2-update-your-development-environments-1).
+See the steps for [Track 2: Update your development environments](#update-csu-dev).
 
-#### Option 1: Store Component updates with only runtime changes
+#### <a id="store-runtime-only"></a>Option 1: Store Component updates with only runtime changes
 
 This option generates a new retail deployable package containing you store components, with changes only to the Microsoft code
 
-1. Update your release branch (with the code that is currently being used in production) to the Retail SDK matching your target release. In this example, the is version 10.0.11(9.21). See the steps for [updating your development environment for CSU](#track-2-update-your-development-environments-1).
+1. Update your release branch (with the code that is currently being used in production) to the Retail SDK matching your target release. In this example, the is version 10.0.11(9.21). See the steps for [Track 2: Update your development environments](#update-csu-dev).
 
 2. Generate a new build for the Retail Deployable Package. It contains same set of customizations currently in production + 10.0.11 (9.21) Microsoft code.
 
-#### Option 2: Store Component updates with runtime and custom changes
+#### <a id="store-runtime-custom"></a>Option 2: Store Component updates with runtime and custom changes
 
 This option will generate a new retail deployable package containing you store components, with changes from both Microsoft code and customizations.
 
-1. Update your release branch (with the code that is currently being used in production) to the Retail SDK matching your target release. In this example, the version is 10.0.11(9.21). See the steps for [updating your development environment for CSU](#track-2-update-your-development-environments-1)
+1. Update your release branch (with the code that is currently being used in production) to the Retail SDK matching your target release. In this example, the version is 10.0.11(9.21). See the steps for [Track 2: Update your development environments](#update-csu-dev).
 
 2. Commit changes.
 3. Update custom code for store components, or update references to ISV updated components.
@@ -347,7 +347,7 @@ Test 1 is running version 10.0.11 HQ and local version of RCSU (from previous ph
 
 Clients pointing to UAT are running applications (e.g. MPOS) for release 10.0.7 (the same version as currently in production).
 
-1. Upload, update and deploy the Store components. For more information, see [Uploading, updating, and deploying Store components](#uploading-updating-deploying-store-components) in this topic.
+1. Upload, update and deploy the Store components. For more information, see [Upload, update, and deploy Store components](#upload-store-components) in this topic.
 2. Sign-off on functional scenarios.
 3. If regressions are encountered, see [Error situations](#error-situations) in this topic.
 
