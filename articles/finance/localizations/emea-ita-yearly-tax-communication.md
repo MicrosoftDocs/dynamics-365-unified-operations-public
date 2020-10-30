@@ -1137,20 +1137,30 @@ Fields with **Total** selected in the **Calculation** field are marked in bold.
 
 ## Appendix 2. Example of the Yearly tax communication setup for 2020
 
-For an example of a setup table for the 2020 declaration, see [IVA setup 2020]().
+To download example setup for the 2020 declaration, see [IVA example setup 2020](https://mbs.microsoft.com/customersource/Global/AX/downloads/tax-regulatory-updates/ItalianAnnualVATdeclaration). To access the link, you need to have access to CustomerSource.
 
 1.  Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
 2.  Select the **Open in Microsoft Office** button, and then, under **Open in
     Excel**, select the Yearly tax communication setup.
 
-![](media/5_Export_to_Excel.png)
+![](media/6_Export_to_Excel.png)
 
 3.  Select **Download**.
 
 4.  Open the downloaded file, and enable editing.
 
-5.  Paste the data from the file downloaded from the link described above, and
+5.  Copy the data from the file downloaded above and paste the data to the file that is opened, and
     then select **Publish**.
 
-![](media/6_Export_to_Excel.png)
+![](media/5_Export_to_Excel.png)
+
+6.  Review settings and make necessary updates. For example, set up sales tax codes that exist in the application.
+
+7.  Consider the following information. Some totals are not configured in the example and should be calculated manually using the formula specified in official guidance. These are the following totals:
+   - VF037001 VAT admissible for deduction (IVA ammessa in detrazione)
+   - VF071002 VAT admissible for deduction (IVA ammessa in detrazione)
+   - VL032001 VAT payable (IVA a debito)
+   - VL033001 VAT credit (IVA a credito)
+   
+
