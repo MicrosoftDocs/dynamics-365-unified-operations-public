@@ -46,8 +46,8 @@ credit](https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-managemen
 
 ## Setup of charge code for bank document charges
 
-Before using this functionality set up special charge code (Accounts payable \>
-Setup \> Charges setup \> Charges code) for bank document charges.
+Before using this functionality set up special charge code (**Accounts payable** \>
+**Setup** \> **Charges setup** \> **Charges code**) for bank document charges.
 
 ![Charge code for document bank](media/apac-sau-bank-document-charge-setup.PNG)
 
@@ -68,11 +68,10 @@ Follow up the procedure, described below:
 
 2.  Create and post bank document charges in a **General journal** (**General
     ledger** \> **Journal entries** \> **General journal**), click **Lines** and
-    fill in the fields on Payment tab in Letter of credit / Import collection
-    block in the line.
+    fill in the fields on Payment tab in **Letter of credit / Import collection**
+    group in the line.
 
-    [!NOTE] The  **Offset account type** and **Offset account** fields are
-    filled in automatically.
+   > [!NOTE] The  **Offset account type** and **Offset account** fields are filled in automatically.
 
     Fill in **Account** and **Debit** fields on **List** tab.
 
@@ -80,22 +79,18 @@ Follow up the procedure, described below:
 
 3.  Open the Letter of credit/ Import collection that you created in the
     purchase order (**Active panel** \> **Manage** \> **Bank document**) and
-    select **Bank document charge** on the Letter of credit/ Import collection
+    select **Bank document charge** on the **Letter of credit/ Import collection**
     page.
 
 ![Allocate bank document charge](media/apac-sau-allocate-bank-docment-charge.PNG)
 
->   You can see bank document charge that posted in the general journal for this
->   Letter of credit/ Import collection.
+  You can see bank document charge that posted in the general journal for this Letter of credit/ Import collection.
 
 ![LC/IC bank document transactions](media/apac-sau-lc-bank-document-transactions.PNG)
 
->   Select bank document charge transaction in the **Edit** mode and click the
->   **Letter of credit/ Import collection** button to allocate the selected bank
->   document charge to the lines of the Letter of credit/ Import collection.
+   Select bank document charge transaction in the **Edit** mode and click the **Letter of credit/ Import collection** button to allocate the selected bank document charge to the lines of the Letter of credit/ Import collection.
 
->   You can validate allocation clicking the **Shipment charge transactions**
->   button in the **Lines** FastTab.
+   You can validate allocation clicking the **Shipment charge transactions** button in the **Lines** FastTab.
 
 4.  To allocate shipment charge transactions to the purchase order lines, open
     **Maintain charges** page (on Action pane click Purchase \> Charges \>
