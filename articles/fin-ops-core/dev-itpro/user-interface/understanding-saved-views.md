@@ -87,11 +87,10 @@ This section provides a list of known issues for saved views while the feature i
 
 ### Open issues
 -  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid excluding the QuickFilter. If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
--  View support for workspaces, dashboards, and dialogs
--  [KB 4553227] After adding (reference group) fields via personalization, the fields remain blank
--  [KB 4562254] Table permission error after accessing a shared custom workspace
--  Cannot move a view with a QuickFilter condition saved to it to another environment. The fix in 10.0.13 more gracefully handles the situation, but does not allow these conditions to move between environments.  
-
+-  View support for workspaces, dashboards, and dialog boxes.
+-  [KB 4553227] After adding (reference group) fields via personalization, the fields remain blank.
+-  [KB 4562254] Table permission error after accessing a shared custom workspace.
+-  Cannot move a view with a QuickFilter condition saved to it to another environment. The fix in release 10.0.13 more gracefully handles the situation, but does not allow these conditions to move between environments.  
 
 ### Fixed in release 10.0.15
 
@@ -114,7 +113,7 @@ This section provides a list of known issues for saved views while the feature i
 -  [Bug 474817] User options > Personalization doesn't list all personalizations for the user 
 -  [KB 4574781] Duplicate record exception on saving a view
 -  [KB 4575278] Tiles, lists, and links lose their link to the published view if the view is republished
-     > [!Note]
+     > [!NOTE]
      > Because additional information is needed to restore the link, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13 and re-pin the elements to your workspace.
 -  [KB 4575285] Publishing to an existing view name overwrites configuration changes already made
 -  [KB 4574778] Pin and publish as default do not respect companies that the view was published to
