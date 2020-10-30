@@ -68,11 +68,11 @@ To edit and audit order transactions in Commerce headquarters, follow these step
 1. In the Excel file, enter **Editing** for **Pending order status**, and then publish the change. This will prevent the **Synchronize order** job that is running in batch to skip this record from processing. 
 1. In the Excel file, modify the appropriate fields and then upload the data back into Commerce headquarters using the Dynamics Excel Add-in publish functionality. Once published, the changes will be reflected in the system. During publish, no validation is done on changes that users make.
 1. A complete audit trail of the changes can be viewed by selecting **View audit trail** in the **Retail transaction** header for the header-level changes, and in the relevant section and record on the appropriate transaction page. For example, all changes relating to sales lines will be visible on the **Sales transactions** page, and changes relating to payments will be visible on the **Payment transactions** page. The audit details that are maintained for the changes are as follows.
-    - Modified date and time
-    - Field
-    - Old value
-    - New value
-    - Modified by
+    - **Modified date and time**
+    - **Field**
+    - **Old value**
+    - **New value**
+    - **Modified by**
 1. After your changes are made and published, select **Synchronize order** to immediately start the synchronization process. Alternatively, you can wait for the synchronization process that is being run in batch to process the transaction.
 1. Once the orders are synchronized successfully, these orders are by default placed in a hold status using the hold code as defined in the Commerce parameters. The hold on the orders needs to be removed before the order can be processed further for fulfillment or other operations.  
 
