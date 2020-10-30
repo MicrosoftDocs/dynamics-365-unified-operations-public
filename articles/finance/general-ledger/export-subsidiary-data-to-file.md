@@ -35,9 +35,9 @@ ms.dyn365.ops.version: 8.0.1
 
 The **Consolidate [Export to]** page is used to prepare the export of subsidiary data to files that can be imported into the consolidated legal entity. For more information about the import and export processes, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
 
-1.	Create a new legal entity in the consolidatin process. For information about creating legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
+1. Create a new legal entity in the consolidatin process. For information about creating legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
 
-*The following sentences refer people to AX 2012 topics. We don't link to these because AX 2012 is considered archived content and isn't maintained. I've suggested alternate topics in the Dynamics 365 documentation in place of those: Set up a subsidiary legal entity for consolidation. For more information see [Prepare a legal entity for use in the consolidation process](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/prepare-a-legal-entity-for-use-in-the-consolidation-process) and [Set up a subsidiary legal entity for consolidation](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-a-subsidiary-legal-entity-for-consolidation).*
+For more information see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md). These are AX 2012 topics, which aren't maintained anymore. I tried to find alternate topics in Dynamics 365.
 
 2. Open the **Export company balances** page (**Consolidations > Export company balances**). On the **Criteria** tab, specify the details of the consolidation as suggested in the following table.
           
@@ -71,7 +71,7 @@ The **Consolidate [Export to]** page is used to prepare the export of subsidiary
 - Select Profit and Loss or Balance Sheet in **Account type of conversion differences** field.
 - Enter a file name for the export file that will be created.
 
-5.	Click **OK** to run the export.
+5. Click **OK** to run the export.
 
 When the export is finished, a message will display the number of records that were saved in each file. You can then import the file into the consolidated legal entity.
 
