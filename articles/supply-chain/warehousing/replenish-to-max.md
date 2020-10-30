@@ -112,4 +112,6 @@ If the allow split is not set to true, then the replenishment work that will be 
 
 The reason for the different results has to do with the information that is available when we create the work. When the allow split is set on the location directives for replenishment picks, we know that we managed to find 160 pcs, so we can create work for that. On the other hand, when we don’t have the allow split enabled, then we don’t know of the existence of the 160 pcs. Since the extra quantity that we decided to replenish was 3 Boxes, we drop them, and we try again the original quantity.
 
+![Example 1](media/ReplenTemp_example_2.png "Example 1")
+
 So, to get the maximum quantity possible to the replenished locations the allow split should be enabled on the location directives for replenishment picks.
