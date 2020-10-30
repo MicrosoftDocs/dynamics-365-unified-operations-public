@@ -3,9 +3,9 @@
  
 title: Set up Carrier group
 description: This procedure shows how to set up data for carrier group. 
-author: kamaybac
+author: Henrikan
 manager:  
-ms.date: 10/16/2020
+ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -22,29 +22,25 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: 
-ms.search.validFrom: 2020-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: henrikan
+ms.search.validFrom: 2020-10-30 
+ms.dyn365.ops.version: 10.0.15
 ---
 
-# Set up Carrier groups
+# Set up carrier groups
 
-A Carrier Group is a collection of shipping carriers and carrier services along with preferred sequence for each shipping carrier and carrier service in the group.
+A carrier group is a collection of shipping carriers and carrier services. Each group specifies a preferred sequence for each shipping carrier and carrier service in the group.
 
-When multiple shipping carriers and carrier services exist for the same Route Segment, a carrier Group may be specified instead of a specific shipping carrier and carrier service in the Route plan or Route guide.
+When multiple shipping carriers and carrier services exist for the same route segment, a carrier group may be specified instead of a specific shipping carrier and carrier service in the route plan or route guide.
 
 ## Create a carrier group
 
 To create a carrier group, follow these steps:
 
-1.  Open Transportation management &gt; Setup &gt; Carriers &gt; Carrier group.
-
-2.  Select New.
-
-3.  Enter a unique ID and a descriptive name for the carrier group.
-
-4.  Select a shipping carrier and select a carrier service.
-
-5.  Close the page.
-
-
+1. Go to **Transportation management &gt; Setup &gt; Carriers &gt; Carrier group**.
+1. Select **New**.
+1. In the **Carrier group** filed, enter a unique ID for the group.
+1. In the **Name** field, enter a descriptive name for the group.
+<!-- KFM: What is the **Carrier count** field for? -->
+1. On the **Details** FastTab, add a row and select a **Shipping carrier** and a **Carrier service** for it. Repeat this step to add as many carriers as you need for this group.
+1. Close the page.
