@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a subsidiary legal entity for consolidation
-description: 
+description: The method that you use to prepare subsidiary accounts for consolidation depends, in part, on the extent to which the structure of the chart of accounts in the subsidiary legal entity reflects the chart of accounts in the consolidated legal entity. This topic includes procedures for working with charts of accounts for consolidation companies.  
 author: jinniew
 manager: AnnBe
 ms.date: 10/30/2020
