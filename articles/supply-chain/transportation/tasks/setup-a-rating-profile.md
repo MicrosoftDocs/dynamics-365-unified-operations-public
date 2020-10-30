@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Set up rating profile
+title: Rating profiles
 description: This procedure shows how to set up data for a rating profile. 
 author: Henrikan
 manager: 
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# Set up a rating profile
+# Rating profiles
 
 A rating profile is similar to a logistics contract (though not a legal contract).
 

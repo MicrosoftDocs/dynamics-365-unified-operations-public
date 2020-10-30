@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Set up Carrier group
+title: Carrier groups
 description: This procedure shows how to set up data for carrier group. 
 author: Henrikan
 manager:  
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# Set up carrier groups
+# Carrier groups
 
 A carrier group is a collection of shipping carriers and carrier services. Each group specifies a preferred sequence for each shipping carrier and carrier service in the group.
 

@@ -2647,6 +2647,14 @@
         href: transportation/transportation-management-status.md
       - name: Zone master
         href: transportation/transportation-management-zone-master.md
+      - name: Carrier groups
+        href: transportation/tasks/carrier-groups.md
+      - name: Load building workbench
+        href: transportation/tasks/load-building-workbench.md
+      - name: Load templates
+        href: transportation/tasks/load-template.md
+      - name: Rating profiles
+        href: transportation/tasks/setup-a-rating-profile.md
       - name: Set up a carrier fuel index
         href: transportation/tasks/set-up-carrier-fuel-index.md
       - name: Set up a transportation tender
