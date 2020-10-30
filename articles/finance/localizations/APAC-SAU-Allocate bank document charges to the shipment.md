@@ -83,12 +83,12 @@ Follow up the procedure, described below:
     select **Bank document charge** on the Letter of credit/ Import collection
     page.
 
-![](media/eba40338d769c55bc251dbad84dd9984.png)
+![Allocate bank document charge](media/apac-sau-allocate-bank-docment-charge.PNG)
 
 >   You can see bank document charge that posted in the general journal for this
 >   Letter of credit/ Import collection.
 
-![](media/bf544cf5933d456b8060d617b245594a.png)
+![LC/IC bank document transactions](media/apac-sau-lc-bank-document-transactions.PNG)
 
 >   Select bank document charge transaction in the **Edit** mode and click the
 >   **Letter of credit/ Import collection** button to allocate the selected bank
@@ -97,7 +97,7 @@ Follow up the procedure, described below:
 >   You can validate allocation clicking the **Shipment charge transactions**
 >   button in the **Lines** FastTab.
 
-1.  To allocate shipment charge transactions to the purchase order lines, open
+4.  To allocate shipment charge transactions to the purchase order lines, open
     **Maintain charges** page (on Action pane click Purchase \> Charges \>
     Maintain charges) and then click **Allocate** button. The Bank document
     charge, allocated to lines Letter of credit/ Import collection, should
