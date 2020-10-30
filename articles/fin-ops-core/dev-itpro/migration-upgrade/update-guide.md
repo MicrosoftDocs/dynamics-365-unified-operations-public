@@ -227,10 +227,10 @@ The purpose of track 2 is to update the Dev 1 environment to version 10.0.11. De
 2. Compile your custom code, and do testing.
 3. Make any required changes to your custom code.
 4. Check code changes in to the release branch.
-5. If you have more than one development environment, follow these steps:
+5. If you have more than one development environment, follow these steps for each environment:
 
-    - Apply version 10.0.11 of Finance and Operations apps to the development environment.
-    - Sync and compile your latest custom code from the target code branch.
+    1. Apply version 10.0.11 of Finance and Operations apps to the development environment.
+    2. Sync and compile your latest custom code from the target code branch.
 
 #### Error situations
 
@@ -267,7 +267,7 @@ This section summarizes the process that you use to update your Commerce Scale U
 
 #### <a id="phase2-prerequisites"></a>Phase 2 prerequisites
 
-Before you update your CSUs, you must update the HQ environments (Finance and Operations) to the same release or a later release. For this example, that release is 10.0.11.
+Before you update your CSUs, you must update the HQ environments (in the Finance and Operations app) to the same release or a later release. For this example, that release is 10.0.11.
 
 This phase is divided into two tracks. These tracks can occur in parallel.
 
@@ -278,7 +278,7 @@ After you complete track 1, you will be live on release 10.0.11 (Commerce versio
 
 #### <a id="update-csu"></a>Track 1: Update your CSU runtime environments
 
-By completing track 1, you essentially complete your CSU update to 10.0.11, because your production environment will be live on 10.0.11. You don't have to recompile your custom code as part of this track.
+By completing track 1, you essentially complete your CSU update to version 10.0.11, because your production environment will be live on version 10.0.11. You don't have to recompile your custom code as part of this track.
 
 ##### <a id="update-test-1-csu"></a>Update Test 1
 
@@ -288,25 +288,25 @@ The software as a service (SaaS) components of Commerce aren't currently support
 
 The UAT environment is running CSU that corresponds to release 10.0.7, together with the same version of your retail extension that the production environment is running.
 
-1. Go through the update workflow under Commerce Scale Unit. Select **9.21 (10.0.11)** as the target version.
+1. Update the Commerce Scale Unit. Select **9.21 (10.0.11)** as the target version. For more information, see [Phase 2: Update CSU to version 10.0.11](#phase-2)
 2. Complete user acceptance testing, and sign off.
 3. If regressions are encountered, see the [Error situations](#error-situations) section.
 
 ###### <a id="update-prod-csu"></a>Update Prod
 
-1. Go through the update workflow under Commerce Scale Unit. Select **9.21 (10.0.11)** as the target version.
+1. Update the Commerce Scale Unit. Select **9.21 (10.0.11)** as the target version. For more information, see [Phase 2: Update CSU to version 10.0.11](#phase-2)
 2. Sign off.
 
 #### <a id="update-csu-dev"></a>Track 2: Update your development environments
 
 1. Get the latest version of the Retail software development kit (SDK).
 
-    - Apply the Finance and Operations service update for release 10.0.11 to Dev 1.
-    - Get the updated version of the Retail SDK from **%ServiceDrive%\\RetailSDK\\Update\\\<newest directory\>**
+    1. Apply the Finance and Operations service update for release 10.0.11 to Dev 1.
+    2. Get the updated version of the Retail SDK from **%ServiceDrive%\\RetailSDK\\Update\\\<newest directory\>**
 
 2. In your **main** (development) branch, update the Retail artifacts from the new version of the Retail SDK.
 3. Compile. The new version should be backward-compatible and should not require any changes to your code.
-4. Commit the change with the Retail SDK update.
+4. Commit the change that includes the Retail SDK update.
 5. Make any required changes to your custom code.
 6. Commit code changes to the target branch.
 7. Optional: If you have more than one development environment, merge the latest changes from step 4, and compile the latest custom code.
@@ -315,7 +315,7 @@ The UAT environment is running CSU that corresponds to release 10.0.7, together 
 
 This section summarizes the process that you use to update your store components, such as Modern POS and Hardware Station, to the latest service update. An update from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21) is used as an example.
 
-Unlike updates for HQ (Finance and Operations) and CSU, updates for store components are delivered in the same packages. After you update HQ and CSU, you have the following options:
+Unlike updates for HQ (in the Finance and Operations app) and CSU, updates for store components are delivered in the same packages. After you update HQ and CSU, you have the following options:
 
 - **Option 0 (no operation is required)** – Leave the store components in their previous release if the version is supported and in-policy.
 - **Option 1** – Update the store components runtime (Microsoft code) so that it matches the same release as CSU.
@@ -329,7 +329,7 @@ After you complete this phase, you will be live on release 10.0.11 (Commerce ver
 
 Phase 3 has the following prerequisites:
 
-- The HQ components (Finance and Operations) were updated to the same release or a later release before the CSUs were updated. In this example, the version is 10.0.11.
+- The HQ components (in the Finance and Operations app) were updated to the same release or a later release before the CSUs were updated. In this example, the version is 10.0.11.
 - The CSUs were updated to the same release as, or a later release than, the store components. In this example, the release is 10.0.11.
 
 #### Update your Commerce development environment
@@ -338,7 +338,7 @@ Follow the steps in the [Track 2: Update your development environments](#update-
 
 #### <a id="store-runtime-only"></a>Option 1: Store component updates that include only runtime changes
 
-This option generates a new retail deployable package that contains your store components. It includes changes only to the Microsoft code.
+This option generates a new retail deployable package that contains your store components. It includes changes only from the Microsoft code.
 
 1. Update your release branch, which has the code that is currently being used in the production environment, to the Retail SDK that matches your target release. In this example, the version is 10.0.11 (9.21). Follow the steps in the [Track 2: Update your development environments](#update-csu-dev) section.
 2. Generate a new build for the retail deployable package. This build contains the same set of customizations that is currently in the production environment, plus version 10.0.11 (9.21) of the Microsoft code.
