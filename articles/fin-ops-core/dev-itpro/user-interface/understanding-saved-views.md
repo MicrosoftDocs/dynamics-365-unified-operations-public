@@ -86,7 +86,7 @@ While most forms will work well with saved views, there are some areas that may 
 This section provides a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
--  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid, excluding the QuickFilter)If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
+-  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid excluding the QuickFilter. If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
 -  View support for workspaces, dashboards, and dialogs
 -  [KB 4553227] After adding (reference group) fields via personalization, the fields remain blank
 -  [KB 4562254] Table permission error after accessing a shared custom workspace
