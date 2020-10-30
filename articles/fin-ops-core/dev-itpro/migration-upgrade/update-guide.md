@@ -267,7 +267,7 @@ This section summarizes the process that you use to update your Commerce Scale U
 
 #### <a id="phase2-prerequisites"></a>Phase 2 prerequisites
 
-Before you update your CSUs, you must update the HQ environments (in the Finance and Operations app) to the same release or a later release. For this example, that release is 10.0.11.
+Before you update your CSUs, you must update the Commerce headquarters environments (in the Finance and Operations app) to the same release or a later release. For this example, that release is 10.0.11.
 
 This phase is divided into two tracks. These tracks can occur in parallel.
 
@@ -315,7 +315,7 @@ The UAT environment is running CSU that corresponds to release 10.0.7, together 
 
 This section summarizes the process that you use to update your store components, such as Modern POS and Hardware Station, to the latest service update. An update from release 10.0.7 (Commerce version 9.17) to release 10.0.11 (Commerce version 9.21) is used as an example.
 
-Unlike updates for HQ (in the Finance and Operations app) and CSU, updates for store components are delivered in the same packages. After you update HQ and CSU, you have the following options:
+Unlike updates for Commerce headquarters (in the Finance and Operations app) and CSU, updates for store components are delivered in the same packages. After you update Commerce headquarters and CSU, you have the following options:
 
 - **Option 0 (no operation is required)** – Leave the store components in their previous release if the version is supported and in-policy.
 - **Option 1** – Update the store components runtime (Microsoft code) so that it matches the same release as CSU.
@@ -329,7 +329,7 @@ After you complete this phase, you will be live on release 10.0.11 (Commerce ver
 
 Phase 3 has the following prerequisites:
 
-- The HQ components (in the Finance and Operations app) were updated to the same release or a later release before the CSUs were updated. In this example, the version is 10.0.11.
+- The Commerce headquarters components (in the Finance and Operations app) were updated to the same release or a later release before the CSUs were updated. In this example, the version is 10.0.11.
 - The CSUs were updated to the same release as, or a later release than, the store components. In this example, the release is 10.0.11.
 
 #### Update your Commerce development environment
@@ -358,7 +358,7 @@ This option generates a new retail deployable package that contains your store c
 
 The SaaS components of Commerce aren't currently supported in development or test one-box environments. A copy of Retail Server runs locally in each development or test one-box environment, and the deployment of both Microsoft code for Retail Server and retail customizations will be done through the previous system, where application binary packages and retail deployable packages are applied against the IaaS instance.
 
-The Test 1 environment is running version 10.0.11 of HQ and a local version of RCSU from previous phases. An update of Test 1 isn't a prerequisite in this flow. Because there is no CSU in this environment, this step is mostly for verification.
+The Test 1 environment is running version 10.0.11 of Commerce headquarters and a local version of CSU from previous phases. An update of Test 1 isn't a prerequisite in this flow. Because there is no CSU in this environment, this step is mostly for verification.
 
 1. Upload, update, and deploy the store components. For more information, see the [Upload, update, and deploy store components](#upload-store-components) section.
 2. Sign off on functional scenarios.
@@ -417,10 +417,10 @@ When you're ready to release the next version of your custom code, use the follo
     + **Older deployments (earlier than version 10.0.11):** Software deployable package
     + **New deployments (version 10.0.11 and later):** Retail self-service installers
 
-4. Update HQ with the new self-service installers for store components:
+4. Update Commerce headquarters with the new self-service installers for store components:
 
-    + **Older deployments (earlier than version 10.0.11):** Deploy the retail deployable package to HQ via LCS.
-    + **New deployments (version 10.0.11 and later):** In HQ, on the **Commerce parameters** form, on the **Channel deployment** tab, select **Check for package updates**. This update will bring in the packages that are available on the **Retail Self-service package** tab in the LCS Asset library.
+    + **Older deployments (earlier than version 10.0.11):** Deploy the retail deployable package to Commerce headquarters via LCS.
+    + **New deployments (version 10.0.11 and later):** In Commerce headquarters, on the **Commerce parameters** form, on the **Channel deployment** tab, select **Check for package updates**. This update will bring in the packages that are available on the **Retail Self-service package** tab in the LCS Asset library.
 
 5. Assign the client versions to your devices.
 6. Download the installers for the desired client type and device.
