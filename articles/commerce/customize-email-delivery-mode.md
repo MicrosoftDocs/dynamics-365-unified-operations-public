@@ -63,10 +63,11 @@ These instructions assume that you have already created and added your new, cust
 To configure email templates for specific delivery modes in Commerce headquarters, follow these steps.
 
 1. Go to **Commerce email notification profile**.
-1. Select an existing notification type, or add a new one.
+1. Under **Retail event notification settings**, select an existing notification type, or add a new one.
 1. While the notification type is selected, select **Configure modes of delivery**.
-1. Select **+New**, and then select a mode of delivery from the drop-down menu options for the mode of delivery row you just created.
-1. Select the email template you want to map to the specific mode of delivery from the drop-down menu options for the **Email ID** column for the row you just created.
+1. Select **+New**. A new notification type row appears under **Retail event notification settings**.
+1. In the **Email notification type** column, select a mode of delivery from the drop-down menu options.
+1. In the **Email ID** column, select the email template you want to map to the specific mode of delivery from the drop-down menu options.
 1. In the **Active** column, select the check box. 
 1. Add additional modes of delivery by repeating steps 4 through 6 above, or if done select **OK**. 
 
