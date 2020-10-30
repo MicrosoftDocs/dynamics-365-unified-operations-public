@@ -114,7 +114,8 @@ This section provides a list of known issues for saved views while the feature i
 -  [Bug 474817] User options > Personalization doesn't list all personalizations for the user 
 -  [KB 4574781] Duplicate record exception on saving a view
 -  [KB 4575278] Tiles, lists, and links lose their link to the published view if the view is republished
-    -  Note that because additional information is needed to restore the link, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13 and re-pin the elements to your workspace.
+     > [!Note]
+     > Because additional information is needed to restore the link, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13 and re-pin the elements to your workspace.
 -  [KB 4575285] Publishing to an existing view name overwrites configuration changes already made
 -  [KB 4574778] Pin and publish as default do not respect companies that the view was published to
 -  [KB 4568154] View import flow doesn't surface if views apply to the grid or details aspect of Details pages
