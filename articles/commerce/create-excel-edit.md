@@ -5,7 +5,7 @@ title: Create an Excel spreadsheet to edit retail transactions
 description: This topic describes how to create an Excel spreadsheet to edit retail transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/29/2020
+ms.date: 10/30/2020
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -37,7 +37,7 @@ This topic describes how to create an Excel spreadsheet to edit retail transacti
 
 ## Overview
 
-While there is a predefined Excel template that customers can access from different parts of the system to edit and audit retail transactions, customers also have a choice to creatrt a custom Excel sheet for this purpose.
+While there is a predefined Excel template that customers can access from different parts of the system to edit and audit retail transactions, customers also have a choice to create a custom Excel sheet for this purpose.
 
 ## Create and configure the spreadsheet
 
@@ -45,14 +45,14 @@ To create and configure the Excel spreadsheet to edit retail transactions, follo
 
 1. Open Excel and create a blank spreadsheet.
 1. Select the **Insert** tab, and then select **My add-ins**.
-1. Select the **Add server information** link on the right side pane. 
+1. Select the **Add server information** link on the right pane. 
 1. Enter the **Server URL**, and then select **OK**.
 1. If you get the **No applet registrations found** error message, follow these steps to resolve the issue.
     1. Go to **System administration > Setup > Office app parameters**.
-    1. In the App parameters FastTab, select **Initialize app parameters**.
+    1. In the **App parameters** FastTab, select **Initialize app parameters**.
     1. In the confirmation dialog box, select **OK**.
     1. In the **Registered applets** FastTab, select **Initialize applet registration**.
-    1. Repeat steps 2-4 as needed.   
+    1. Repeat steps ii-iv as needed.   
 1. Select **Design**, and then select **Add table**.
 1. Based on the data that needs to be modified, select the entities that need to be added to the Excel sheet for editing using the following table as a reference.
     
@@ -66,10 +66,10 @@ To create and configure the Excel spreadsheet to edit retail transactions, follo
     | Declare starting amount / Tender removal / Float entry / Change tender / Invoice payment / Customer deposit | Transaction (auditable), Payment transactions (auditable) |
 
     > [!NOTE]
-    > It is important to add only one entity to each Excel spreadsheet. Also, all fields that are indicated with key icon needs to be added to the relevant spreadsheet.
+    > It is important to add only one data entity to each Excel spreadsheet. Also, all fields that are indicated with key symbol must be added to the relevant spreadsheet.
 
-1. Once the spreadsheet is designed, apply the required filters. Make sure to apply the same filters to all the worksheets in the file. Avoid loading huge amounts of data to the Excel file since this can impact performance, slowing down your system and Excel. It is recommended to always use "Company" and "Statement Number" or "Transaction Number" as filters on your file.
-1. After the filter is configured, select **Refresh** to load the data.
+1. Once the spreadsheet is configured, apply the required filters. Make sure to apply the same filters to all the worksheets in the file. Avoid loading huge amounts of data to the Excel file since this can impact performance, slowing down Excel and your system. It is recommended to always use "Company" and "Statement Number" or "Transaction Number" as filters on your file.
+1. After the filters are configured, select **Refresh** to load the data.
 1. Edit the required data and then publish it. If the **Publish** button is disabled, it is probably because not all key fields were added to the Excel spreadsheet.
 
 ## Additional resources
