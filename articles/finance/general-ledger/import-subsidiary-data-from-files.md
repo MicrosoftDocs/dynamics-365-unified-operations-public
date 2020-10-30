@@ -37,7 +37,7 @@ This topic lists the steps for preparing data from external systems so that it c
 
 1. Prepare for the consolidation process by creating up a subsidiary legal entity for the consolidation. For information about creating legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
 
-*For more information see [Prepare a legal entity for use in the consolidation process](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/prepare-a-legal-entity-for-use-in-the-consolidation-process) and [Set up a subsidiary legal entity for consolidation](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-a-subsidiary-legal-entity-for-consolidation). These are AX 2012 topics, which aren't maintained anymore. I tried to find alternate topics in Dynamics 365.* 
+For more information see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md). These are AX 2012 topics, which aren't maintained anymore. I tried to find alternate topics in Dynamics 365. 
 
 2. Prepare file that will contain the data to be imported. For more information about the import process, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
 
