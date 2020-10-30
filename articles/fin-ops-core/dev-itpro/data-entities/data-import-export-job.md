@@ -218,3 +218,36 @@ moving window thereby, always leaving the history for the specified number of da
 
 > [!NOTE]
 > If records in the staging tables are not cleaned up completely, ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any clean up execution the job will only clean up as many execution ID's as is possible within the provided maximum hours. In order to continue cleanup of any remaining staging records, the job must be scheduled to run periodically.
+
+## Job history clean up and archival (available from platform update 39 or 10.0.15 for preview)
+The job history clean up and archival functionality replaces the previous versions of the clean up functionality. This section will explain the capabilities in the new iteration.
+
+One of the main changes made to the clean up functionality in this iteration is the use of system batch job for cleaning up the history. The use of system batch job allows Finance and Operations to have the clean up batch job automatically scheduled and running as soon as the system is up and running. Hence, it is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at 12 midnight and will retain the execution history for the most recent 7 days. Users can however change the time of execution of the batch job if required as explained below. However, the 7 days of retaining the execution history cannot be changed since the purged history is archived for future retrieval.
+
+> [!NOTE]
+> Since this functionality is in preview, the system batch job will not delete any execution history until it is enabled via the flight DMFEnableExecutionHistoryCleanupSystemJob. Once the feature is generally available in a future release, this flight will not be required and the system batch job will start to purge and archive once the system is up and running based on the defined schedule as explained above.
+
+> [!NOTE]
+> When this functionality will be generally available in a future release, the previous versions of the clean up functionality will be removed from Finance and Operations.
+
+
+The second change in this iteration of the clean up process is the archival of the purged execution history. The clean up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be avaialble for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
+
+### Changing the default settings
+This functionality is currently in preview and hence must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. 
+
+To change the default setting for the longevity of the archived file, go to the data management workspace and click **Job history cleanup**. Set **Days to retain package in blob** to a value between 7 and 90 (inclusive). This will take effect on the archives that are created after this change was made.
+
+### Downloading the archived package
+This functionality is currently in preview and hence must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. 
+
+To download the archived execution history, go to the data management workspace and click **Job history cleanup**. Now click **Package backup history** to open the history form. This form shows the list of all archived files. An archive can be selected in this from and can be downloaded by ciicking **Download package**. The downloaded package will be in the DIXF package format and has the following files in it.
+
+-   The entity staging table file
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
