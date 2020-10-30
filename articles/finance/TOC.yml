@@ -838,6 +838,10 @@
             href: general-ledger/export-subsidiary-data-to-file.md
           - name: Consolidate with Import - Format
             href: general-ledger/consolidate-with-import-format.md
+          - name: Prepare a legal entity for use in the consolidation process
+            href: general-ledger/prepare-company-for-consolidation.md
+          - name: Set up a subsidiary legal entity for consolidation
+            href: geneal-ledger/set-up-subsidiary-company-for-consolidation.md
         - name: Create consolidation groups and additional consolidation account
           href: general-ledger/tasks/create-consolidation-groups.md
         - name: Main account types
