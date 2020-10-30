@@ -5,7 +5,7 @@ title: Customer electronic invoices
 description: This topic provides information about management of customer electronic invoices for Italy.
 author: v-oloski
 manager: 
-ms.date: 08/26/2020
+ms.date: 10/15/2020
 ms.topic: article
 ms.: 
 ms.service: dynamics-ax-applications
@@ -53,6 +53,7 @@ Before you can begin to work with the electronic invoice functionality, the foll
 - [Electronic invoice parameters](#einvoicesparameters)
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
+- [Items](#items)
 - [Digital certificates](#digitalcert)
 - [Optional: Destination for XML file output](#destination)
 
@@ -153,7 +154,22 @@ Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a 
 
 In the **E-invoice** section, you can also set the **eInvoice attachment** option to **Yes**. In this case, after you print an invoice (either during or after posting), the system automatically attaches the PDF file to the invoice and eInvoice (see [Electronic invoice register](#einvoiceregister)), and the file is included in the XML file (**Allegatti** block).
 
-### <a name="digitalcert"></a>Digital certificates
+### <a name="items"></a>Items
+
+If there are product lines on an invoice, the **CodiceArticolo** block is filled in based on product data. This data includes the product bar code, the internal product number or item number, and the external item description. This information can be found by going to, **Product information management** > **Products** > **Released products**, and on the Action Pane, select **Sell** > **Related information**.    
+
+The **CodiceTipo** field is filled in as follows:
+- If there is a bar code, this field = **EAN**.
+- If there isn't a bar code, and the record in the **External item description** exists for the product and the customer, then this field has the value from the **Description** field.
+- If there isn't a bar code, and the record in the **External item description** does not exist for the product, this field includes the **Codice Art. fornitore** text.
+
+**CodiceValore** field is filled in as follows:
+- If there is a bar code, this field includes the bar code.
+- If there isn't a bar code, and the record in the **External item description** exists for the product and the customer, then this field includes the value from **External item number** field.
+- If there isn't a bar code, and the record in the **External item description** does not exist for the product and customer, this field includes the value from the **Item number** field. 
+
+
+### <a name="digitalcert"> </a>Digital certificates
 
 Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates** to electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type.
 

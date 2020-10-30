@@ -73,6 +73,8 @@ Configuration properties that are defined in the module definition file (MODULE\
 
 ## Additional resources
 
+[Modules overview](modules-overview.md)
+
 [Module definition file](module-definition-file.md)
 
 [Module view file](module-view-file.md)

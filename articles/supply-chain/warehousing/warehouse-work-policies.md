@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: WHSWorkPolicy
+ms.search.form: WHSWorkPolicy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

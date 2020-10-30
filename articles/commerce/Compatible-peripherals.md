@@ -20,10 +20,10 @@ ms.search.scope:
 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [author's Microsoft alias]
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
+ms.author: rubendel
+ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: 
 
 ---
@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-Devices listed on this page have been tested for compatiblity with Dynamics 365 Commerce using the [Peripheral simulator for Commerce](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator). For each device, the party who performed the test and submitted successful results to Microsoft is listed in the 'Tested by' column. For devices listed as tested by 'Microsoft Corp.', support requests should be directed to Microsoft. Issues with devices tested by a party other than Microsoft should be first reported to the testing party.
+Devices listed on this page have been tested for compatibility with Dynamics 365 Commerce using the [Peripheral simulator for Commerce](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator). For each device, the party who performed the test and submitted successful results to Microsoft is listed in the 'Tested by' column. For devices listed as tested by 'Microsoft Corp.', support requests should be directed to Microsoft. Issues with devices tested by a party other than Microsoft should be first reported to the testing party.
 
 ## Compatible devices by type
 
@@ -61,15 +61,15 @@ Devices listed on this page have been tested for compatiblity with Dynamics 365 
 | 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | N3680-HP | N3680-HP | 1.14.0.5 | DX000010BAA | OPOS | USB | https://www.hp.com |
 
 > [!NOTE]
-> This compatiblity list is new as September 2018. The list will grow over time as devices are tested successfully and results are submitted to Microsoft.
+> This compatibility list is new as September 2018. The list will grow over time as devices are tested successfully and results are submitted to Microsoft.
 
-## Device compatiblity testing
+## Device compatibility testing
 
 Devices can be tested for compatibility using the Peripheral simulator. For details around device testing and how to produce test logs for submission to Microsoft, see [Peripheral simulator for Commerce](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator).
 
-Once a device has been successfully tested, in order for compatiblity to be acknowledged, the test results must be submitted to <drpc@microsoft.com>. This simulator is can be obtained via a download link on the hardware profile within Dynamics 365. Device manufacuturers likely do not have access to Dynamics 365. To obtain a copy of the Peripheral simulator, contact <drpc@microsoft.com>.
+Once a device has been successfully tested, in order for compatibility to be acknowledged, the test results must be submitted to <drpc@microsoft.com>. This simulator is can be obtained via a download link on the hardware profile within Dynamics 365. Device manufacturers likely do not have access to Dynamics 365. To obtain a copy of the Peripheral simulator, contact <drpc@microsoft.com>.
 
-Testing must be performed for every peripheral setup that goes into production. If the compatiblity list indicates that the exact same device/POS setup has been tested in the past, testing should still be done as part of UAT testing. In those cases, test results do not need to be submitted to Microsoft. For all other successful test results, it is encouraged to submit results to <drpc@microsoft.com> to help build the list of compatible devices.
+Testing must be performed for every peripheral setup that goes into production. If the compatibility list indicates that the exact same device/POS setup has been tested in the past, testing should still be done as part of UAT testing. In those cases, test results do not need to be submitted to Microsoft. For all other successful test results, it is encouraged to submit results to <drpc@microsoft.com> to help build the list of compatible devices.
 
 ## Supported devices
 

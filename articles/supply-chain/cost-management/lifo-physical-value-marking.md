@@ -26,7 +26,7 @@ ms.custom: 55021
 ms.assetid: 49c492b0-b018-44e0-928f-9671e54eee20
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

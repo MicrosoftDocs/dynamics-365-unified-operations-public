@@ -5,7 +5,7 @@ title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information and start a leave request. The **Time off** tab provides more detailed information. In addition, you can send people information about your upcoming time off in teams and chats outside the Human Resources app.
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information and start a leave request. The **Time off** tab provides more detailed information. You can also send people information about your upcoming time off in teams and chats outside the Human Resources app.
 
 ## Install the app
 
@@ -176,6 +176,36 @@ If you're a manager with direct reports, you can view your team's approved and p
 The calendar displays your direct reports' approved and pending time off.
 
 ![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
+
+## Troubleshooting
+
+If you're having trouble signing into or using the Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](hr-admin-troubleshooting-support.md).
+
+### Can't sign into the Human Resources app in Teams
+
+If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
+
+### Error when approving leave requests in the Human Resources app in Teams
+
+If you receive an error when you're trying to approve leave requests in the Teams app, try the following troubleshooting steps:
+
+1. Verify that the account you're using to sign into Microsoft Teams is the same one you use for accessing Dynamics 365 Human Resources.
+
+2. Verify that you're a valid approver for the request by checking the workflow settings for leave approval. For more information about leave request workflows, see [Create a leave request workflow](hr-leave-and-absence-workflow.md).
+
+## Known accessibility issues
+
+The Human Resources app in Teams has the following accessibility issues that we're working on fixing in future releases.
+
+| Issue | Workaround or explanation |
+| --- | --- |
+| Zooming to 400% on desktop hides some of the action buttons from view. | We recommend using a magnifier instead until we can support this zoom level. |
+| On the **Time off** tab, voiceover announces a button action while reading the header for the time-off grid. | The header and elements within the grid are grouped by year, and they're collapsible. Voiceover interprets this as an actionable item, but it isn't. |
+| If you swipe while a popup or menu is open, voiceover skips reading the popup or menu contents. | Explore the content using finger scanning. |
+| On the **Time off** tab, there's an extra swipe gesture when navigating to **Reason code** in a new request. | There is no hidden control that the swipe navigation is trying to get to. |
+| On the **Time off** tab, if you swipe while the calendar is open, you end up outside the control instead of at the top in a new request or while editing a request. | When you reach **Go to today**, consider that to be the end of the control and swipe in the reverse direction to get back to the top. |
+| Voiceover doesn't read the labels for dates. | The dates encountered in pairs are always **Start date** and **End date**. |
+| On the **Chat** tab, the focus jumps back to the top when you enter a date while using the assistive tool or keyboard navigation. | Tab until you reach your input area again. |
 
 ## Privacy notice
 

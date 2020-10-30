@@ -6,14 +6,14 @@ description: This topic explains how to void and reprint existing wave labels.
 author: GarmMSFT
 manager: PJacobse
 ms.date: 07/09/2020
-ms.topic: reprint-and-void-wave-labels
+ms.topic: article
 # ms.prod:
 ms.service: dynamics-ax-applications
 # ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 # ROBOTS:
 audience: Application User
 # ms.devlang:
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
 

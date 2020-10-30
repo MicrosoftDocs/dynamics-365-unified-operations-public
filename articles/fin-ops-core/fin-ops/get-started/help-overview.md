@@ -54,7 +54,7 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365](https://docs.micro
 
 You can find content on docs.microsoft.com by using any search engine. For the best results, we recommend that you use a site search, such as **site:docs.microsoft.com dynamics 365 "search term"**.
 
-### Get notified about changes through an RSS feed
+## Get notified about changes through an RSS feed
 
 To subscribe to a Really Simple Syndication (RSS) feed of all updates that are to the content on docs.microsoft.com, use the following link:
 
@@ -73,7 +73,7 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 > [!NOTE]
 > If you want to submit documentation feedback, you must sign in by using a GitHub account. For more information, see [Setting up and managing your GitHub profile](https://help.github.com/github/setting-up-and-managing-your-github-profile).
 
-### Contribute to the documentation
+## Contribute to the documentation
 
 You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on a topic. The following video shows how you can contribute to our documentation.
 

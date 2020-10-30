@@ -101,7 +101,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **WrkCtrBulkResReqEditWizard** 
 
-[![Wizard example](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
+![Wizard example](./media/wizard2.png)
 
 ## Appendix
 ### Frequently asked questions

@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 261824
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansandness
+ms.author: ryansand
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
 

@@ -5,7 +5,7 @@ title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -45,18 +45,18 @@ The SDK packages.json file that is included in the SDK root directory controls w
 ```json
 ...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.20.8",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.20.8",
-    "@msdyn365-commerce/retail-proxy": "9.20.2",
+    "@msdyn365-commerce-modules/starter-pack": "9.22",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.22",
     "@msdyn365-commerce/bootloader": "^1.0.0",
+    "@msdyn365-commerce/retail-proxy": "9.22",
 }
 ...
 ```
 
-- **@msdyn365-commerce-modules/starter-pack** – This entry represents the SSK, which includes the set of starter modules and data actions. The preceding example is configured to pull down only the specified version.
-- **@msdyn365-commerce-modules/fabrikam-design-kit** – This entry represents the Fabrikam design kit, which includes the Fabrikam theme. The Fabrikam theme defines specific Cascading Style Sheets (CSS) and module view overrides for the set of modules in the SSK. The preceding example is configured to pull down only the specified version.
-- **@msdyn365-commerce/retail-proxy** – This entry represents the Retail Server proxy, which is used to access the set of APIs for the Commerce Scale Unit. The preceding example is configured to pull down only the specified version.
-- **@msdyn365-commerce/bootloader** – This entry represents the SDK. The caret (\^) symbol ensures that the **yarn** command always pulls down the latest released version.
+- **\@msdyn365-commerce-modules/starter-pack** – This entry represents the SSK, which includes the set of starter modules and data actions. The preceding example is configured to pull down only the specified version.
+- **\@msdyn365-commerce-modules/fabrikam-design-kit** – This entry represents the Fabrikam design kit, which includes the Fabrikam theme. The Fabrikam theme defines specific Cascading Style Sheets (CSS) and module view overrides for the set of modules in the SSK. The preceding example is configured to pull down only the specified version.
+- **\@msdyn365-commerce/retail-proxy** – This entry represents the Retail Server proxy, which is used to access the set of APIs for the Commerce Scale Unit. The preceding example is configured to pull down only the specified version.
+- **\@msdyn365-commerce/bootloader** – This entry represents the SDK. The caret (\^) symbol ensures that the **yarn** command always pulls down the latest released version.
 
 The version numbers that are used in the preceding example are in the format *X.Y.Z*, where *X* is the major version, *Y* is the minor version, and *Z* is the patch version.
 
@@ -67,22 +67,22 @@ Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, 
 ```json
 ...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "~9.21.0",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.21.0",
-    "@msdyn365-commerce/retail-proxy": "~9.21.0",
+    "@msdyn365-commerce-modules/starter-pack": "~9.22.0",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.22.0",
     "@msdyn365-commerce/bootloader": "^1.0.0",
+    "@msdyn365-commerce/retail-proxy": "~9.22.0",
 }
 ...
 ```
-
-The following table maps SSK versions to Commerce Scale Unit versions. The same SSK versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit.
+The following table maps SSK versions to Commerce Scale Unit versions. The same SSK versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **October 2nd, 2020**.
 
 | Commerce Scale Unit version | Maximum SSK version |
 | --------------- | --------------- |
 | 10.0.10 | 9.20.x |
 | 10.0.11 | 9.21.x |
 | 10.0.12 | 9.22.x |
-| 10.0.13 (not live yet) | 9.23.x |
+| 10.0.13 | 9.23.x |
+| 10.0.14 | 9.24.x |
 
 ## Pull updates
 

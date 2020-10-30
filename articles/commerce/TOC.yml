@@ -74,8 +74,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-      - name: Get support for Dynamics 365 Commerce
-        href: retail-support.md
+      - name: Get support
+        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support
         items:
         - name: Upgrade and N-1 support for Commerce
@@ -92,12 +92,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.15 (January 2021)
+            href: get-started/whats-new-commerce-10-0-15.md
           - name: Commerce 10.0.14 (November 2020)
             href: get-started/whats-new-commerce-10-0-14.md
           - name: Commerce 10.0.13 (October 2020)
             href: get-started/whats-new-commerce-10-0-13.md
-          - name: Commerce 10.0.12 (August 2020)
-            href: get-started/whats-new-commerce-10-0-12.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -274,6 +274,8 @@
           href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json 
         - name: Move LCS implementation projects to different Azure AD tenants
           href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json 
+        - name: Move LCS implementation projects from on-premises to cloud
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
         - name: Implement Finance and Operations Commerce projects
@@ -364,8 +366,6 @@
             href: dev-itpro/retail-POS-activation-changes.md
           - name: Enable Azure Active Directory authentication for POS sign-in
             href: aad-pos-logon.md
-          - name: Demo data screen layouts in MPOS and Cloud POS
-            href: demo-data.md
           - name: Product and customer search in the POS
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
@@ -508,6 +508,8 @@
             href: cash-denominations.md
           - name: Configure credit card processing
             href: tasks/configure-credit-card-processing.md
+          - name: Skip "change due" dialog box in POS
+            href: dev-itpro/skip-change-due.md 
           - name: Adyen payment connector
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
@@ -706,6 +708,8 @@
           href: customer-orders-overview.md
         - name: Hybrid customer orders
           href: hybrid-customer-orders.md
+        - name: Recall order operation in POS
+          href: enhancedorderrecall.md
       - name: Sales orders   
         items:
         - name: Create a call center order 
@@ -780,8 +784,6 @@
         href: statement-posting-eod.md
       - name: Improved handling of batch tracked items
         href: batch.md
-      - name: Configure Commerce parameters that affect statements 
-        href: tasks/parameter-configurations-retail-statements.md
       - name: Configure payment method settings that affect retail statements 
         href: tasks/payment-configurations-retail-statements.md
       - name: Configure and run a job to calculate statements 
@@ -868,6 +870,8 @@
           href: document-states-overview.md
         - name: Work with publish groups
           href: publish-groups.md
+        - name: Enable and use cross-channel sharing
+          href: cross-channel-sharing.md
         - name: Brand your site and add store details
           items:
           - name: Add a logo
@@ -1034,6 +1038,8 @@
             href: add-breadcrumb.md
           - name: Navigation menu module
             href: nav-menu-module.md
+          - name: Site selector module
+            href: site-selector.md
         - name: Compliance modules
           items:
           - name: Cookie consent module
@@ -1048,6 +1054,24 @@
         items:
         - name: Generate online channel reports
           href: generate-reports.md
+      - name: Experimentation
+        items:
+        - name: Experimentation in Dynamics 365 Commerce
+          href: experimentation-overview.md
+        - name: Identify a hypothesis and determine metrics for an experiment
+          href: experimentation-identify.md
+        - name: Set up an experiment
+          href: experimentation-setup.md
+        - name: Connect and edit an experiment
+          href: experimentation-connect-edit.md
+        - name: Preview and publish an experiment
+          href: experimentation-preview-publish.md
+        - name: Run and monitor an experiment
+          href: experimentation-run-monitor.md
+        - name: Promote a variation and complete an experiment
+          href: experimentation-review-complete.md
+        - name: Review the status of an experiment
+          href: experimentation-status.md       
       - name: Error handling
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
@@ -1076,10 +1100,16 @@
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+      - name: User-defined certificate profiles for retail stores
+        href: localizations/certificate-profiles-for-retail-stores.md
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+      - name: Brazil
+        items:
+        - name: Commerce localization for Brazil
+          href: localizations/latam-bra-commerce-localization.md 
       - name: Eastern Europe
         items: 
         - name: Common
@@ -1956,6 +1986,8 @@
             href: e-commerce-extensibility/cli-command-reference.md
         - name: Anatomy of a module
           items:
+          - name: Modules overview
+            href: e-commerce-extensibility/modules-overview.md
           - name: Module definition file
             href: e-commerce-extensibility/module-definition-file.md
           - name: Module React component file
@@ -2004,12 +2036,18 @@
             href: e-commerce-extensibility/cookie-api-overview.md
           - name: Interactive components overview
             href: e-commerce-extensibility/interactive-components.md
+          - name: Mock the signed-in state during local development
+            href: e-commerce-extensibility/mock-sign-in.md 
           - name: Globalize modules by using the CultureInfoFormatter class
             href: e-commerce-extensibility/globalize-modules.md
+          - name: Set up Azure Key Vault for secure key management
+            href: e-commerce-extensibility/set-up-key-vault.md
         - name: Develop data actions
           items:
           - name: Data actions overview
             href: e-commerce-extensibility/data-actions.md
+          - name: Data action cache options
+            href: e-commerce-extensibility/data-action-cache.md
           - name: Test data actions with mocks
             href: e-commerce-extensibility/test-data-action-mocks.md
           - name: Page load data actions
@@ -2050,8 +2088,12 @@
             href: e-commerce-extensibility/theme-style-presets.md
           - name: Extend a theme to add module extensions
             href: e-commerce-extensibility/theme-module-extensions.md
+          - name: Override a module library component in a theme
+            href: e-commerce-extensibility/override-theme-component.md
           - name: Extend a theme from a base theme
             href: e-commerce-extensibility/extend-theme.md
+          - name: Add custom resources to your customization code
+            href: e-commerce-extensibility/add-custom-resources.md
         - name: Inject script
           items:
           - name: Script injectors
@@ -2070,6 +2112,10 @@
             href: e-commerce-extensibility/package-deploy.md
           - name: SDK and module library updates
             href: e-commerce-extensibility/sdk-updates.md
+        - name: Best practices
+          items:
+          - name: Best practices for Dynamics 365 Commerce development
+            href: e-commerce-extensibility/best-practices-dev.md
       - name: Retail SDK
         items:
         - name: Retail SDK architecture
@@ -2146,6 +2192,8 @@
           href: implementation-considerations-devices.md
         - name: POS Cart view events and handlers
           href: dev-itpro/cart-view-handlers.md
+        - name: Add custom buttons to the POS header bar
+          href: dev-itpro/pos-header-bar.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
@@ -2162,6 +2210,8 @@
           href: dev-itpro/retail-server-extension.md
         - name: Retail Typescript and C# proxies
           href: dev-itpro/typescript-proxy-retail-pos.md
+        - name: Consume Retail Server APIs in external applications
+          href: dev-itpro/consume-retail-server-api.md
       - name: Commerce Runtime (CRT) extensibility
         items:
         - name: CRT architecture and configuration

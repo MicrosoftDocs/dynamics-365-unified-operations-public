@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: VendSearchCriterion, VendSearchAddCategory   
+ms.search.form: VendSearchCriterion, VendSearchAddCategory, VendSearchAddReviewCriterionGroup, VendSearchResults, VendSearchAddReviewCriterion
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac

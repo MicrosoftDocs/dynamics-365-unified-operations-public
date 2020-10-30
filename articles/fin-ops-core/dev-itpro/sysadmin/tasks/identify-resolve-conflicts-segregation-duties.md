@@ -3,7 +3,7 @@
  
 title: Identify and resolve conflicts in segregation of duties
 description: This topic explains how to identify and resolve conflicts in segregation of duties.
-author: maertenm
+author: peakerbl
 manager: AnnBe 
 ms.date: 07/08/2019
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

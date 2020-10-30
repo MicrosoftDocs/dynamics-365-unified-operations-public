@@ -2,7 +2,7 @@
 
 This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Finance and Operations apps | Map type | model-driven apps in Dynamics 365 | Default value
+Finance and Operations apps | Map type | Customer engagement apps | Default value
 ---|---|---|---
 EXPIRATIONTIMEUNIT | >< | msdyn_expirationtimeunit | 
 EXPIRATIONTIMEVALUE | = | msdyn_expirationtimevalue | 

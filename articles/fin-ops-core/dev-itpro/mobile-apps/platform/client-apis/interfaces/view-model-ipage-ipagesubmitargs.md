@@ -2,7 +2,7 @@
 # required metadata
 title: PageSubmitArgs type
 description: Args supplied to the OnSubmit event of the page.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---

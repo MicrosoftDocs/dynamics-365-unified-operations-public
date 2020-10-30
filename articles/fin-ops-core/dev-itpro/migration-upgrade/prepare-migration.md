@@ -107,8 +107,6 @@ After you have resolved all of the compilation errors, all packages will compile
 4.  Validate that all scenarios work in multiple browsers with different sizes for custom patterns.
 5.  Write and run tests.
 
-<!--For more information, see [Resolve Conflicts Using Visual Studio Tools (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7).-->
-
 ## Best practice setup
 In the Best Practice framework, there is a subset of Best Practice warnings that need to be resolved to complete migration. This applies if you are migrating from Dynamics AX 2012 R3 or earlier.
 

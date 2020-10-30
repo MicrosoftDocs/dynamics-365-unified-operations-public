@@ -4,7 +4,7 @@ title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -180,3 +180,29 @@ Feature flights are real-time on/off switches that Microsoft controls. They are 
 
 ### Do features ever get flighted off without the customer knowing about it? 
 Yes, if a feature is impacting the functioning of an environment that doesn't have a functional impact then they can be enabled by default.
+
+### How can feature enablement be checked in code?
+Use the **isFeatureEnabled** method on the **FeatureStateProvider** class, passing it an instance of the feature class. Example:
+
+```xpp
+if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```
+
+### How can feature enablement be checked in metadata?
+The **FeatureClass** property can be used to indicate that some metadata is associated with a feature. The class name used for the feature should be used, such as **BatchContentionPreventionFeature**. This metadata is visible only in that feature. The **FeatureClass** property is available on menus, menu items, enum values, and table/view fields.
+
+### What is a feature class?
+Features in Feature Management are defined as *feature classes*. A feature class **implements IFeatureMetadata** and uses the feature class attribute to identify itself to the Feature Management workspace. There are numerous examples of feature classes available that can be checked for enablement in code using the **FeatureStateProvider** API and in metadata using the **FeatureClass** property. Example:
+
+```xpp
+[ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+```
+
+### What is the IFeatureLifecycle implemented by some feature classes?
+IFeatureLifecycle is a Microsoft-internal mechanism for indicating the feature lifecycle stage. 
+Features can be:
+- PrivatePreview - Needs a flight to be visible.
+- PublicPreview - Shown by default but with a warning that the feature is in preview.
+- Released - Fully released.
+
