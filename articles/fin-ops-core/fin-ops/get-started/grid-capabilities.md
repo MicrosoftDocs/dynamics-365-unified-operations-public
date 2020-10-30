@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -175,7 +175,7 @@ This section maintains a list of known issues for the new grid control while the
     
 ### Fixed as part of 10.0.15    
 
--  [KB 4582723]  Display options not showing when done later in the form lifecycle
+-  [KB 4582723]  Display options not showing when done later in the form life cycle
 
 ### Fixed as part of 10.0.14
 
@@ -184,12 +184,12 @@ This section maintains a list of known issues for the new grid control while the
 ### Fixed as part of 10.0.13
 
 -  (Quality update) [KB 4583880] Regression Suite Automation Tool (RSAT) tests fail on OpenLookup action with "Cannot read property RowIndex of undefined"
--  (Quality update) [KB 4583847] Unexpected client error when arrowing through lookups 
+-  (Quality update) [KB 4583847] Unexpected client error when navigating through lookups 
 -  (Quality update) [Bug 471777] Cannot select fields in a grid to edit or create a mobile app
 -  [Bug 474851] Hyperlinks in reference group controls don't work 
 -  [Bug 474848] Enhanced previews with grids do not display
 -  [KB 4582726] The RotateSign property isn't being respected  
--  [Bug 470173] Checkboxes in inactive rows toggle when the whitespace in the cell is clicked
+-  [Bug 470173] Check boxes in inactive rows toggle when the whitespace in the cell is clicked
 -  [Bug 474848] Enhanced previews with grids do not display
 -  [Bug 474851] Hyperlinks in reference group controls don't work 
 -  [Bug 471777] Cannot select fields in a grid to edit or create a mobile app
