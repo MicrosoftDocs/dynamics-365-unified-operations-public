@@ -53,4 +53,10 @@ To change the value, follow these steps:
 3. Select **Save**. 
 
     If you set the value to greater than 30, you will be prompted to confirm your selection. The confirmation prompt says "Increasing the idle session timeout can cause extra load on your system, which can lead to a decrease in performance. Are you sure you want to continue?" The higher the value, the higher the load will be, which can affect negatively system performance. Select **Yes** to save the changes, or **No** to revert to the existing value.
+    
+### Alerting users before sessions end due to inactivity
+To give users awareness of an impending session suspension due to inactivity and to help prevent users from losing any unsaved changes when this occurs, users will be notified before their sessions are set to be terminated due to inactivity and given an opportunity to reconnect. The amount of forewarning given to the user is depedent on the **Session idle timeout** setting. 
 
+-  If the **Session idle timeout** is more than 30 minutes, the user will see a countdown notification starting **5 minutes** before the session is set to close. 
+-  If the **Session idle timeout** is between 10 and 30 minutes, the user will see a countdown notification starting **2 minutes** before the session is set to close. 
+-  If the **Session idle timeout** is less than 10 minutes, the user will see a countdown notification starting **30 seconds** before the session is set to close. 
