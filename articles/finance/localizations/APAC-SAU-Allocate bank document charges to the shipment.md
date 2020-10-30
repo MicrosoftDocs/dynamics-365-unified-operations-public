@@ -71,12 +71,12 @@ Follow up the procedure, described below:
     fill in the fields on Payment tab in Letter of credit / Import collection
     block in the line.
 
-    **Note.** The fields **Offset account type** and **Offset account** are
+    [!NOTE] The  **Offset account type** and **Offset account** fields are
     filled in automatically.
 
     Fill in **Account** and **Debit** fields on **List** tab.
 
-    ![](media/da6b2a70b2a31c27dea7e780d110b3d8.png)
+    ![Filling bank document charge code in journal line](media/apac-sau-general-journal-voucher.PNG)
 
 3.  Open the Letter of credit/ Import collection that you created in the
     purchase order (**Active panel** \> **Manage** \> **Bank document**) and
