@@ -215,7 +215,7 @@ The UAT environment is running version 10.0.7 together with a released version o
 
 1. Apply version 10.0.11 of Finance and Operations apps to Prod.
 
-    Your UAT production might be configured so that it's automatically updated by Microsoft. However, you can always pull the update as soon as it's available.
+    Your Prod environment might be configured so that it's automatically updated by Microsoft. However, you can always pull the update as soon as it's available.
 
 2. Sign off.
 
