@@ -14,6 +14,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
         - name: One Version service updates FAQ
           href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
+        - name: Manage updates and the custom code lifecyle, including Dynamics 365 Commerce
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/commerce/toc.json
         - name: Software lifecycle policy - Cloud
           href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
         - name: Software lifecycle policy - On-premises
