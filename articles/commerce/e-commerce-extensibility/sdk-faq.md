@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions that are frequently asked by users of the Dynamics 365 Commerce Online SDK.
 
-## After upgrading to module library version 10.0.14, some cloned modules that use the below list of data actions may throw an error **UserAuthorizationException. Customer account number on the request was wrong"**. 
+## After upgrading to module library version 9.24 (10.0.14 release), some cloned modules that use the below list of data actions may throw an error **UserAuthorizationException. Customer account number on the request was wrong**. 
 
 The below list of [core data actions](core-data-actions.md) have a signature change which move the user account number parameter to the second parameter (instead of the first) and is now set an optional parameter.  In most scenarios the user account number is no longer needed, the data action will execute in the context of current signed in user. In some custom scenario where this user account number is different than the signed in user, then you can fetch the user account number using the **get-customer** data action and pass it to the data action.
  
