@@ -155,68 +155,69 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 The following table lists APIs exposed to perform cart-related functionality.
 
-| POS API                                         |
-|-------------------------------------------------|
-| AddPreprocessedTenderLineToCartClientRequest    |
-| AddTenderLineToCartClientRequest                |
-| ConcludeTransactionClientRequest                |
-| GetCurrentCartClientRequest                     |
-| GetCurrentCartClientResponse                    |
-| GetKeyedInPriceClientRequest                    |
-| GetPickupDateClientRequest                      |
-| GetReasonCodeLinesClientRequest                 |
-| GetReceiptEmailAddressClientRequest             |
-| GetShippingDateClientRequest                    |
-| RefreshCartClientRequest                        |
-| ResumeSuspendedCartClientRequest                |
-| SaveAttributesOnCartClientRequest               |
-| SaveAttributesOnCartLinesClientRequest          |
-| SaveExtensionPropertiesOnCartClientRequest      |
-| SaveExtensionPropertiesOnCartLinesClientRequest |
-| SaveReasonCodeLinesOnCartClientRequest          |
-| SaveReasonCodeLinesOnCartLinesClientRequest     |
-| SelectSalesLinesForPickUpClientRequest          |
-| SetCartAttributesClientRequest                  |
-| ShowChangeDueClientRequest                      |
-| AddAffiliationOperationRequest                  |
-| AddItemToCartOperationRequest                   |
-| CalculateTotalOperationRequest                  |
-| ChangeCartLineUnitOfMeasureOperationRequest     |
-| CreateCustomerOrderOperationRequest             |
-| CreateCustomerQuoteOperationRequest             |
-| CustomerAccountDepositOperationRequest          |
-| DepositOverrideOperationRequest                 |
-| EditCustomerOrderOperationRequest               |
-| LineDiscountAmountOperationRequest              |
-| LineDiscountPercentOperationRequest             |
-| OverrideLineTaxFromListOperationRequest         |
-| OverrideLineTaxOperationRequest                 |
-| OverrideTransactionTaxOperationRequest          |
-| PickupAllOperationRequest                       |
-| PriceOverrideOperationRequest                   |
-| SetCartLineCommentOperationRequest              |
-| SetCartLineQuantityOperationRequest             |
-| SetCustomerOnCartOperationRequest               |
-| SetTransactionCommentOperationRequest           |
-| SuspendCurrentCartOperationRequest              |
-| TotalDiscountAmountOperationRequest             |
-| TotalDiscountPercentOperationRequest            |
-| VoidCartLineOperationRequest                    |
-| VoidTenderLineOperationRequest                  |
-| VoidTransactionOperationRequest                 |
-| CreateEmptyCartServiceRequest                   |
-| GetTaxOverridesServiceRequest                   |
-| UpdateTenderLineSignatureServiceRequest         |
-| CarryoutSelectedProductsOperationRequest |
-| AddCouponsOperationRequest |
-| CreateNonSalesTransactionServiceRequest |
-| ReturnTransactionOperationRequest |
-| AddLoyaltyCardToCartOperationRequest |
-| ReturnCartLineOperationRequest |
-| ReturnItemOperationRequest |
-| AddExpenseAccountLineToCartOperationRequest |
-| ShipAllCartLinesOperationRequest |
-| ShipSelectedCartLinesOperationRequest |
+| POS API                                   | Description                            | Release                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| AddPreprocessedTenderLineToCartClientRequest    |                                        |                          |
+| AddTenderLineToCartClientRequest                |                                        |                          |
+| ConcludeTransactionClientRequest                |                                        |                          |
+| GetCurrentCartClientRequest                     |                                        |                          |
+| GetCurrentCartClientResponse                    |                                        |                          |
+| GetKeyedInPriceClientRequest                    |                                        |                          |
+| GetPickupDateClientRequest                      |                                        |                          |
+| GetReasonCodeLinesClientRequest                 |                                        |                          |
+| GetReceiptEmailAddressClientRequest             |                                        |                          |
+| GetShippingDateClientRequest                    |                                        |                          |
+| RefreshCartClientRequest                        |                                        |                          |
+| ResumeSuspendedCartClientRequest                |                                        |                          |
+| SaveAttributesOnCartClientRequest               |                                        |                          |
+| SaveAttributesOnCartLinesClientRequest          |                                        |                          |
+| SaveExtensionPropertiesOnCartClientRequest      |                                        |                          |
+| SaveExtensionPropertiesOnCartLinesClientRequest |                                        |                          |
+| SaveReasonCodeLinesOnCartClientRequest          |                                        |                          |
+| SaveReasonCodeLinesOnCartLinesClientRequest     |                                        |                          |
+| SelectSalesLinesForPickUpClientRequest          |                                        |                          |
+| SetCartAttributesClientRequest                  |                                        |                          |
+| ShowChangeDueClientRequest                      |                                        |                          |
+| AddAffiliationOperationRequest                  |                                        |                          |
+| AddItemToCartOperationRequest                   |                                        |                          |
+| CalculateTotalOperationRequest                  |                                        |                          |
+| ChangeCartLineUnitOfMeasureOperationRequest     |                                        |                          |
+| CreateCustomerOrderOperationRequest             |                                        |                          |
+| CreateCustomerQuoteOperationRequest             |                                        |                          |
+| CustomerAccountDepositOperationRequest          |                                        |                          |
+| DepositOverrideOperationRequest                 |                                        |                          |
+| EditCustomerOrderOperationRequest               |                                        |                          |
+| LineDiscountAmountOperationRequest              |                                        |                          |
+| LineDiscountPercentOperationRequest             |                                        |                          |
+| OverrideLineTaxFromListOperationRequest         |                                        |                          |
+| OverrideLineTaxOperationRequest                 |                                        |                          |
+| OverrideTransactionTaxOperationRequest          |                                        |                          |
+| PickupAllOperationRequest                       |                                        |                          |
+| PriceOverrideOperationRequest                   |                                        |                          |
+| SetCartLineCommentOperationRequest              |                                        |                          |
+| SetCartLineQuantityOperationRequest             |                                        |                          |
+| SetCustomerOnCartOperationRequest               |                                        |                          |
+| SetTransactionCommentOperationRequest           |                                        |                          |
+| SuspendCurrentCartOperationRequest              |                                        |                          |
+| TotalDiscountAmountOperationRequest             |                                        |                          |
+| TotalDiscountPercentOperationRequest            |                                        |                          |
+| VoidCartLineOperationRequest                    |                                        |                          |
+| VoidTenderLineOperationRequest                  |                                        |                          |
+| VoidTransactionOperationRequest                 |                                        |                          |
+| CreateEmptyCartServiceRequest                   |                                        |                          |
+| GetTaxOverridesServiceRequest                   |                                        |                          |
+| UpdateTenderLineSignatureServiceRequest         |                                        |                          |
+| CarryoutSelectedProductsOperationRequest |                                        |                          |
+| AddCouponsOperationRequest |                                        |                          |
+| CreateNonSalesTransactionServiceRequest |                                        |                          |
+| ReturnTransactionOperationRequest |                                        |                          |
+| AddLoyaltyCardToCartOperationRequest |                                        |                          |
+| ReturnCartLineOperationRequest |                                        |                          |
+| ReturnItemOperationRequest |                                        |                          |
+| AddExpenseAccountLineToCartOperationRequest |                                        |                          |
+| ShipAllCartLinesOperationRequest |                                        |                          |
+| ShipSelectedCartLinesOperationRequest |                                        |                          |
+|PickupSelectedOperationRequest | Marks the included lines for pickup |  10.0.16 |
 
 
 ### Payments
@@ -341,9 +342,10 @@ The following table lists APIs exposed to perform dialog-related functionality.
 
 The following table lists APIs exposed to perform employee-related functionality.
 
-| POS API                          |
-|----------------------------------|
-| GetLoggedOnEmployeeClientRequest |
+| POS API                                   | Description                            | Release                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| GetLoggedOnEmployeeClientRequest |        |       |
+| SelectStoreEmployeeClientRequest | Gets the current store employee list for selection. | 10.0.16 |
 
 ### Formatters
 
@@ -428,33 +430,37 @@ The following table lists APIs exposed to perform stock count journals-related f
 
 The following table lists APIs exposed to perform store operations-related functionality.
 
-| POS API                                         |
-|-------------------------------------------------|
-| DeclareStartingAmountClientRequest              |
-| GetSalesOrdersWithNoFiscalTransactionsRequest   |
-| RegisterCustomAuditEventClientRequest           |
-| GetOfflinePendingTransactionCountClientRequest  |
-| SaveFiscalTransactionClientRequest              |
-| SafeDropOperationRequest                        |
-| TenderDeclarationOperationRequest               |
-| TenderRemovalOperationRequest                   |
-| CreateBankDropTransactionClientRequest          |
-| CreateFloatEntryTransactionClientRequest        |
-| CreateStartingAmountTransactionClientRequest    |
-| CreateTenderDeclarationTransactionClientRequest |
-| CreateTenderRemovalTransactionClientRequest     |
-| GetDenominationTotalsClientRequest              |
-| SelectZipCodeInfoClientRequest                  |
-| CreateSafeDropTransactionClientRequest          |
-| GetTenderDetailsClientRequest                   |
-| LoyaltyCardPointsBalanceOperationRequest        |
-| GetCommissionSalesGroupsServiceRequest          |
-| GetCurrenciesServiceRequest                     |
-| GetSrsReportDataSetServiceRequest               |
-| SearchCommissionSalesGroupsServiceRequest       |
-| IssueLoyaltyCardOperationRequest                |
-| GetPickingAndReceivingOrdersClientRequest       |
-| BankDropOperationRequest                 |
-| DeclareStartAmountOperationRequest        | 
+| POS API                                   | Description                            | Release                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| DeclareStartingAmountClientRequest              |                                        |                          |
+| GetSalesOrdersWithNoFiscalTransactionsRequest   |                                        |                          |
+| RegisterCustomAuditEventClientRequest           |                                        |                          |
+| GetOfflinePendingTransactionCountClientRequest  |                                        |                          |
+| SaveFiscalTransactionClientRequest              |                                        |                          |
+| SafeDropOperationRequest                        |                                        |                          |
+| TenderDeclarationOperationRequest               |                                        |                          |
+| TenderRemovalOperationRequest                   |                                        |                          |
+| CreateBankDropTransactionClientRequest          |                                        |                          |
+| CreateFloatEntryTransactionClientRequest        |                                        |                          |
+| CreateStartingAmountTransactionClientRequest    |                                        |                          |
+| CreateTenderDeclarationTransactionClientRequest |                                        |                          |
+| CreateTenderRemovalTransactionClientRequest     |                                        |                          |
+| GetDenominationTotalsClientRequest              |                                        |                          |
+| SelectZipCodeInfoClientRequest                  |                                        |                          |
+| CreateSafeDropTransactionClientRequest          |                                        |                          |
+| GetTenderDetailsClientRequest                   |                                        |                          |
+| LoyaltyCardPointsBalanceOperationRequest        |                                        |                          |
+| GetCommissionSalesGroupsServiceRequest          |                                        |                          |
+| GetCurrenciesServiceRequest                     |                                        |                          |
+| GetSrsReportDataSetServiceRequest               |                                        |                          |
+| SearchCommissionSalesGroupsServiceRequest       |                                        |                          |
+| IssueLoyaltyCardOperationRequest                |                                        |                          |
+| GetPickingAndReceivingOrdersClientRequest       |                                        |                          |
+| BankDropOperationRequest                 |                                        |                          |
+| DeclareStartAmountOperationRequest        |                                        |                          |
+| GetAllDiscountsServiceRequest        | Gets the discosunt applicable for the current cart.  | 10.0.16 |
+
+
+
 
 
