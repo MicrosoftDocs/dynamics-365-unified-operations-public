@@ -201,7 +201,7 @@ The job history clean-up functionality in data management must be used to schedu
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-The functionality must be enabled in feature management and then can be accessed from **Data management \> Job history cleanup**.
+The **Execution history cleanup** feature must be enabled in feature management and then can be accessed from **Data management \> Job history cleanup**.
 
 ### Scheduling parameters
 
