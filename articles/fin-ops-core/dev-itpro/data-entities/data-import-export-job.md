@@ -233,12 +233,12 @@ One of the main changes to the clean up functionality is the use of system batch
 The second change in the clean up process is the archival of the purged execution history. The clean up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
 
 ### Changing the default settings
-This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob and also the staging clean up feature must be turned ON in feature management.
+This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging clean up feature must also be turned on in feature management.
 
 To change the default setting for the longevity of the archived file, go to the data management workspace and select **Job history cleanup**. Set **Days to retain package in blob** to a value between 7 and 90 (inclusive). This will take effect on the archives that are created after this change was made.
 
 ### Downloading the archived package
-This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob and also the staging clean up feature must be turned ON in feature management.
+This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging clean up feature must also be turned on in feature management.
 
 To download the archived execution history, go to the data management workspace and select **Job history cleanup**. Select **Package backup history** to open the history form. This form shows the list of all archived packages. An archive can be selected and downloaded by selecting **Download package**. The downloaded package will be in the DIXF package format and contain the following files:
 
