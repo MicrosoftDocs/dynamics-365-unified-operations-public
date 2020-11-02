@@ -3,7 +3,7 @@
 # required metadata
 
 title: Manage employee leave
-description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
+description: Manage employee leave in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/30/2020
