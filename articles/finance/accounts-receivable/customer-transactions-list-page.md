@@ -52,7 +52,7 @@ The **View settlements** button on the Action Pane provides quick access to the 
 
 ## Global transactions
 
-The **Global transactions** button also displays on the **Customer transactions** list page. This button lets you view all transactions for a customer across all legal entities. The **Customer transactions** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
+The **Global transactions** button also displays on the **Customer transactions** list page. This button lets you view all transactions for a customer across all legal entities. The **Customer transactions** list page shows transactions only for the legal entities that the user has access to, based on their security settings.
 
 The list page shows all transactions for customers that have the same party ID as the customer that you started with. For example, if customer US-001 in one legal entity has the same party ID as customer DE-001 in another legal entity, all transactions for both customer IDs are shown.
 

@@ -53,7 +53,7 @@ The **View settlements** button on the Action Pane provides quick access to the 
 
 ## Global transactions
 
-The **Global transactions** button also displays on the **Vendor transactions** list page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transactions** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
+The **Global transactions** button also displays on the **Vendor transactions** list page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transactions** list page shows transactions only for the legal entities that the user has access to, based on their security settings.
 
 The list page will show all transactions for vendors that have the same party ID as the vendor that you started with. For example, if vendor US-001 in one legal entity has the same party ID as vendor DE-001 in another legal entity, all transactions for both vendor IDs are shown.
 

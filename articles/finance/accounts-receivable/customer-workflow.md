@@ -65,4 +65,4 @@ After you have at least one proposed change, two additional menus appear on the 
 
     The status on the page is changed to **Changes pending approval**.
 
-The workflow follows the standard workflow process in the application. The approver is directed to the **Customer** page, where he or she can review the changes on the **Proposed changes** page and then select **Workflow \> Approve** to approve the workflow. After all approvals are completed, the fields are updated with the values that you proposed.
+The workflow follows the standard workflow process in the application. The approver is directed to the **Customer** page where the changes can be reviewed on the **Proposed changes** page and then select **Workflow \> Approve** to approve the workflow. After all approvals are completed, the fields are updated with the values that you proposed.
