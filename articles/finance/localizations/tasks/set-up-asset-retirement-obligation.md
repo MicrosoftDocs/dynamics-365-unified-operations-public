@@ -66,7 +66,7 @@ This procedure was created using the demo data company JPMF.
 8. In the Document ID field, select the ID of the asset retirement document to attach to the fixed asset.
 
 ## Enter the asset retirement oblgiation amounts
-1. Click Create to open the drop dialog.
+1. On the fixed asset **Asset retirement obligation** page, on the **Estimated retirement** FastTab,  click **Create** to open the drop dialog.
 2. In the Transaction date field, enter the date on which to recognize the asset retirement obligation
 3. In the Estimated retirement cost adjustment field, enter the cash flow amount
 4. Click OK.
