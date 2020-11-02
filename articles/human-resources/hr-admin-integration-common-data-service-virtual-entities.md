@@ -5,7 +5,7 @@ title: Configure Common Data Service virtual entities
 description: This topic shows how to configure virtual entities for Dynamics 365 Human Resources. Generate and update existing virtual entities, and analyze generated and available entities. 
 author: andreabichsel
 manager: tfehr
-ms.date: 10/05/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure Common Data Service virtual entities
-
-[!include [banner](includes/preview-feature.md)]
 
 Dynamics 365 Human Resources is a virtual data source in Common Data Service. It provides full create, read, update, and delete (CRUD) operations from Common Data Service and Microsoft Power Platform. The data for virtual entities isn't stored in Common Data Service, but in the application database. 
 
