@@ -51,6 +51,18 @@ You can manage an employee's leave by leave type. This includes expiring leave e
 
 You can include a reason code and comment when adjusting an employee's leave balance. 
 
+> [!IMPORTANT]
+> Viewing addditional information about leave balances is in preview. It will need to be enabled in your **Sandbox** environment.
+
+- [Manage features](hr-admin-manage-features.md)
+- [Configure leave and absence parameters](hr-leave-and-absence-parameters.md)
+
+When hovering over any leave balance, you will now see:
+
+- Available: Total this year - Take this year
+- Total this year: All accruals, adjustments and carry forward for the year
+- Taken this year: All approved time off
+
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
