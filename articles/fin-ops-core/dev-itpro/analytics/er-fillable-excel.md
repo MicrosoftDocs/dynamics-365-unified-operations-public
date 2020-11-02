@@ -170,6 +170,17 @@ When you validate an ER format that can be edited, a consistency check is done t
 
 ![Validation error message](./media/er-excel-format-validate.png)
 
+## Control calculation of Excel formulas
+
+When an outbound document in a Microsoft Excel workbook format is generated, some cells of this document might contain Excel formulas. When the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled, you can control when calculation of those formulas occurs by changing the value of the **Calculation Options** [parameter](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) in the using Excel template:
+
+- Select the **Automatic** value to recalculate all dependent formulas every time when a generated document is appended by new ranges, cells, etc.
+    >[!NOTE]
+    >Be aware that this might cause a performance issue for Excel templates containing many formulas that are related to each other.
+- Select the **Manual** value to avoid formulas recalculation during a document generation.
+    >[!NOTE]
+    > It is expected that formulas recalculation will be forced manually when a generated document is opened for preview by using the Excel application.
+    > Do not use this option if you configure an ER destination that assume the usage of a generated document without its preview in Excel application (PDF conversion, emailing, etc.) as it might cause a situation when a generated document will contain no values in cells that contain formulas.
 
 ## Additional resources
 
