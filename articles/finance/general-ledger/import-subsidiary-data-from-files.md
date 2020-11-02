@@ -63,9 +63,9 @@ For more information see [Prepare a legal entity for use in the consolidation pr
 |     Source legal   entity           	|     Select the   legal entity you are importing.          	|
 |     Source   accounting currency    	|     This default   currency is the currency associated with source legal entity you selected.                    	|
 |     From and To   accounts          	|     Enter accounts   to define a range accounts to import from the source company.                                  	|
-|     Exchange   rate type            	|     Select the rate   type. Rate types are defined in *Currency exchange rates*. See [POL Set up   ledger accounts for posting currency exchange differences](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/pol-set-up-ledger-accounts-for-posting-currency-exchange-differences).    	|
-|     Apply   exchange rate from      	|     Enter a date   to apply the exchange rate that was set on that date or enter a value to use   as the exchange rate.                                                                                                                                                                                	|
-|     Exchange   rate                 	|     The default entry   is based on the exchange rate type you selected. You can also define a rate   if you entered a user-defined exchange rate.                                                                                                                                                     	|
+|     Exchange   rate type            	|     Select the exchange rate type. Exhange rate types are assigned when you create a main account. For more information, see [Create a main account](tasks/create-main-account.md).    	|
+|     Apply   exchange rate from      	|     Enter a date   to apply the exchange rate that was set on that date or enter a value to use as the exchange rate.                                                                                                                                                                                	|
+|     Exchange   rate                 	|     The default entry   is based on the exchange rate type you selected. You can also define a rate if you entered a user-defined exchange rate.                                                                                                                                                     	|
 
 7. Set the **Run in background** field to **Yes** to let the import process run in the background.
 
