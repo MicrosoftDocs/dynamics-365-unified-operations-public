@@ -5,7 +5,7 @@ title: Design a configuration for generating documents in Excel format
 description: This topic provides information about how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -170,17 +170,17 @@ When you validate an ER format that can be edited, a consistency check is done t
 
 ![Validation error message](./media/er-excel-format-validate.png)
 
-## Control calculation of Excel formulas
+## Control the calculation of Excel formulas
 
-When an outbound document in a Microsoft Excel workbook format is generated, some cells of this document might contain Excel formulas. When the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled, you can control when calculation of those formulas occurs by changing the value of the **Calculation Options** [parameter](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) in the using Excel template:
+When an outbound document in a Microsoft Excel workbook format is generated, some cells of this document might contain Excel formulas. When the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled, you can control when the formulas are calculated by changing the value of the **Calculation Options** [parameter](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) in the Excel template that is being used:
 
-- Select the **Automatic** value to recalculate all dependent formulas every time when a generated document is appended by new ranges, cells, etc.
+- Select **Automatic** to recalculate all dependent formulas every time a generated document is appended by new ranges, cells, etc.
     >[!NOTE]
-    >Be aware that this might cause a performance issue for Excel templates containing many formulas that are related to each other.
-- Select the **Manual** value to avoid formulas recalculation during a document generation.
+    > This might cause a performance issue for Excel templates that contain multiple related formulas.
+- Select **Manual** to avoid formula recalculation when a document is generated.
     >[!NOTE]
-    > It is expected that formulas recalculation will be forced manually when a generated document is opened for preview by using the Excel application.
-    > Do not use this option if you configure an ER destination that assume the usage of a generated document without its preview in Excel application (PDF conversion, emailing, etc.) as it might cause a situation when a generated document will contain no values in cells that contain formulas.
+    > Formula recalculation is manually forced when a generated document is opened for preview using Excel.
+    > Don't use this option if you configure an ER destination that assumes the usage of a generated document without its preview in Excel (PDF conversion, emailing, etc.)because the generated document might not contain values in cells that contain formulas.
 
 ## Additional resources
 
