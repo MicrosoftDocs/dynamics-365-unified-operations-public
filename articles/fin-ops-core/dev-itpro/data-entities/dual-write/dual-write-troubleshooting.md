@@ -90,7 +90,7 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 3. Run the scenario that is generating errors.
 4. The verbose logs are available in the DualWriteErrorLog table. To look up data in the table browser, use the following URL (replace **XXX** as appropriate):
 
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
 
 ## Check synchronization errors on the virtual machine for the Finance and Operations app
 
