@@ -38,9 +38,9 @@ Your eCommerce channel may want to support options like delivery or pickup for o
 
 ## Orders ship to customer address 
 
-In general, taxes for online orders with ship to customer address are defined by the destination. Every **Sales Tax Group** has **retail destination based tax** configuration in which business can define destination configuration such as County/Region, State, County, City etc. in a hierarchical form. When an online order is placed, tax engine uses delivery address of every line item in the order, and finds Sales Tax Groups with matching destination based tax criteria.   For e.g. for an online order with line item delivery address to San Francisco, CA, Tax Engine finds **Sales Tax Group** CA and finds the appropriate **Sales tax code** and calculates tax for the line item.  
+In general, taxes for online orders with ship to customer address are defined by the destination. Every **Sales Tax Group** has **retail destination based tax** configuration in which business can define destination configuration such as County/Region, State, County, City etc. in a hierarchical form. When an online order is placed, tax engine uses delivery address of every line item in the order, and finds Sales Tax Groups with matching destination based tax criteria.   For e.g. an online order with line item delivery address to San Francisco, CA, Tax Engine finds **Sales Tax Group** CA and finds the appropriate **Sales tax code** and calculates tax for the line item.  
 
-
+![Dyanamics 365 Commerce Sales Tax Group and Sales Tax Code selection](media/d365-commerce-sales-tax-groups.png)
 
 
 ## Customer based Tax Groups
