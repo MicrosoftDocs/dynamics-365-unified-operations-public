@@ -69,7 +69,10 @@ The next step is to manage the endpoints.
 ## Business events parameters and processing
 The application allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
 
-The business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. Prior to Platform update 33, the corresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, you can manually create a batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. In Platform update 33 and later, the batch job can be enabled and scheduled from the **Business events parameters** page. It’s important that you do not run this as a manual batch job unless it is absolutely necessary as a workaround.
+> [!IMPORTANT]
+> The dedicated batch threads has been reported to have reliability issues. Microsoft is working on fixing this issue and as a result, Microsoft recommends to schedule the manual batch job to process business events as explained below. Once the issues with the dedicated threads is fixed, Microsoft will update this section with updated recommendation.
+
+The business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The batch job can be enabled and scheduled from the **Business events parameters** page. 
 
 In the event of an error while sending business events to its end point, the system retries to send the business events three times with an interval of one second per retry. This is the default setting that can be changed on the **Business events parameters** page.
 
