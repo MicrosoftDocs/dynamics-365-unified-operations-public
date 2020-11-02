@@ -53,7 +53,7 @@ You can include a reason code and comment when adjusting an employee's leave bal
 
 >[!IMPORTANT]
 >Viewing additional information about leave balances is in preview. You'll need to enable it in your **Sandbox** environment. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br>
->When hovering over any leave balance, you will now see:<br><br>
+>When hovering over any leave balance, you will now see:<br>
 >- **Available**: Total this year - Take this year
 >- **Total this year**: All accruals, adjustments, and carry forward for the year
 >- **Taken this year**: All approved time off
