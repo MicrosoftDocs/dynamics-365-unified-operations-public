@@ -205,7 +205,7 @@ Check what kind of **Environment type** the production environment is and follow
 5. Select the check box to confirm that you understand this operation will overwrite the production database. The operation starts immediately after submitting the request.
 
 > [!IMPORTANT]
-> Every database refresh will create a new database which will resets the **Point-in-time-restore** chain of restore points.
+> Every database refresh will create a new database which will reset the **Point-in-time-restore** chain of restore points.
 
 ## Reconfigure environment specific settings
 
