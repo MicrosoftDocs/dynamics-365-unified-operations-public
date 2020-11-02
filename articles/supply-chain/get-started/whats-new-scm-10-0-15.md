@@ -58,6 +58,8 @@ The following features are included in this release. Some of the listed features
 
 - [Process warehouse app events](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - For more information, see [Warehouse app event processing](../warehousing/warehouse-app-events.md).
 
+- USMCA certification of origin document<br> - For more information, see [USMCA certification of origin](../transportation/usmca-certification-of-origin.md).
+
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## Additional resources
