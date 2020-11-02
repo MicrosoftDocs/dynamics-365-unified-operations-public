@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 8.0.1
 
 The method that you use to prepare subsidiary accounts for consolidation depends, in part, on the extent to which the structure of the chart of accounts in the subsidiary legal entity reflects the chart of accounts in the consolidated legal entity.
 
-Before you start a consolidation as part of period-end closing, complete the preparatory activities for the period-end closing, but do not close the subsidiary accounts until the consolidation is completed. For more information about period-end closing, see [Closing the month, period, and fiscal year](closing-the-month-period-and-fiscal-year.md) and [Fiscal year closing checklist](fiscal-year-closing-checklist.md).
+Before you start a consolidation as part of period-end closing, complete the preparatory activities for the period-end closing, but do not close the subsidiary accounts until the consolidation is completed. For more information about period-end closing, see [Close the general ledger at period end](close-general-ledger-at-period-end.md) and [Close the fiscal year](tasks/close-fiscal-year.md).
 
 
 > [!NOTE]
