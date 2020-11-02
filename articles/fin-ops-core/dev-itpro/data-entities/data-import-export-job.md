@@ -232,7 +232,7 @@ The second change in the clean up process is the archival of the purged executio
 
 ### Changing the default settings
 This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. 
-To change the default setting for the longevity of the archived file, go to the data management workspace and selec **Job history cleanup**. Set **Days to retain package in blob** to a value between 7 and 90 (inclusive). This will take effect on the archives that are created after this change was made.
+To change the default setting for the longevity of the archived file, go to the data management workspace and select **Job history cleanup**. Set **Days to retain package in blob** to a value between 7 and 90 (inclusive). This will take effect on the archives that are created after this change was made.
 
 ### Downloading the archived package
 This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. 
