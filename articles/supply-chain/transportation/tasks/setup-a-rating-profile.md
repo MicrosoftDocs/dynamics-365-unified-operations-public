@@ -47,7 +47,7 @@ To review all available rating profiles and create a new one using a setup page,
     - **Shipping carrier** - Select a shipping carrier. The profile you are setting up will also be shown on the **Shipping carriers** page for the selected carrier.
     - **Site**, and **Warehouse** - Select a site, and warehouse, respectively.
     - **Rate engine** - Select the rate engine that you want to use for the rating profile.
-    - **Rate master** - Select the rate master that you want to use for the rating profile. You can use the rate master to define a rate base type and a rate base. For more information, see [Set up rate masters](https://docs.microsoft.com/en-us/dynamics365/supply-chain/transportation/tasks/set-up-rate-masters).
+    - **Rate master** - Select the rate master that you want to use for the rating profile. You can use the rate master to define a rate base type and a rate base. For more information, see [Set up rate masters](set-up-rate-masters.md).
     - **Transit time engine** - Select the transit time engine for the rating profile.
     - **Carrier fuel index** - Select the carrier fuel index for the rating profile.
     - **Effect start date and time** and **Effective end date and time** - Establish the time span where the rating profile should be active.
