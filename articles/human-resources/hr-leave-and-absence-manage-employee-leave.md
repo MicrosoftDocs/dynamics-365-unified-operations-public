@@ -5,8 +5,8 @@
 title: Manage employee leave
 description: Manage employee leave in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/30/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -50,6 +50,13 @@ You can manage an employee's leave by leave type. This includes expiring leave e
 6. Optionally, you can select a **Date**. 
 
 You can include a reason code and comment when adjusting an employee's leave balance. 
+
+>[!IMPORTANT]
+>Viewing additional information about leave balances is in preview. You'll need to enable it in your **Sandbox** environment. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br>
+>When hovering over any leave balance, you will now see:<br>
+>- **Available**: Total this year - Take this year
+>- **Total this year**: All accruals, adjustments, and carry forward for the year
+>- **Taken this year**: All approved time off
 
 ## See also
 
