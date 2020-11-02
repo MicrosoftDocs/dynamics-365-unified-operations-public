@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include banner] 
 
-The **Consolidate [Export to]** page is used to prepare the export of subsidiary data to files that can be imported into the consolidated legal entity. For more information about the import and export processes, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+The **Export** page (**System administration > Workspaces > Import/Export**) is used to prepare the export of subsidiary data to files that can be imported into the consolidated legal entity. For more information about the import and export processes, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
 
 1. Create a new legal entity in the consolidatin process. For information about creating legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
 
