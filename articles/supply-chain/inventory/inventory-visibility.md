@@ -222,7 +222,7 @@ Here is a sample query on the product with color and size combination.
         "OrganizationId": ["usmf"],
         "ProductId": ["MyProduct"],
         "LocationId": ["21"],
-        "SiteId": ["2"]
+        "SiteId": ["2"],
         "ColorId": ["Red"]
     },
     "groupByValues": [
@@ -251,22 +251,23 @@ For example, with the following query condition, you will configure the custom m
         "quantities": {
             "mypos": {
                 "outbound": 20.0,
-                "inbound": 80.0,
+                "inbound": 80.0
             },
             "fno": {
-                "availphysical": 100.0
-                "orderedintotal": 50.0
+                "availphysical": 100.0,
+                "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
             "exterchannel": {
-                "received": 90.0
-                "scheduled": 30.0
-                "issued": 60.0
+                "received": 90.0,
+                "scheduled": 30.0,
+                "issued": 60.0,
                 "reserved": 40.0
-
+            }
         }
     }
 ]
+
 ```
 
 
@@ -295,22 +296,22 @@ With that, the query on the custom measurement quantity will return the followin
         "quantities": {
             "mypos": {
                 "outbound": 20.0,
-                "inbound": 80.0,
+                "inbound": 80.0
             },
             "fno": {
-                "availphysical": 100.0
-                "orderedintotal": 50.0
+                "availphysical": 100.0,
+                "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
             "exterchannel": {
-                "received": 90.0
-                "scheduled": 30.0
-                "issued": 60.0
+                "received": 90.0,
+                "scheduled": 30.0,
+                "issued": 60.0,
                 "reserved": 40.0
             },
             "CustomChannel": {
                 "MyCustomAvailableforReservation": 220.0
-
+            }
         }
     }
 ]
@@ -379,7 +380,7 @@ An example query might look like the following.
         "OrganizationId": ["usmf"],
         "ProductId": ["MyProduct"],
         "LocationId": ["21"],
-        "SiteId": ["2"]
+        "SiteId": ["2"],
         "ColorId": ["Red"]
     },
     "groupByValues": [
@@ -402,22 +403,22 @@ This could return a result like this.
         "quantities": {
             "mypos": {
                 "outbound": 20.0,
-                "inbound": 80.0,
+                "inbound": 80.0
             },
             "fno": {
-                "availphysical": 100.0
-                "orderedintotal": 50.0
+                "availphysical": 100.0,
+                "orderedintotal": 50.0,
                 "orderedreserved": 10.0
             },
             "exterchannel": {
-                "received": 90.0
-                "scheduled": 30.0
-                "issued": 60.0
+                "received": 90.0,
+                "scheduled": 30.0,
+                "issued": 60.0,
                 "reserved": 40.0
             },
             "CustomChannel": {
                 "MyCustomAvailableforReservation": 220.0
-
+            }
         }
     }
 ]
