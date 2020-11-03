@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope:
+# ms.search.scope:
   - Core
   - Operations
   - CrossApp
