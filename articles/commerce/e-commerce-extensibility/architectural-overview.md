@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Architectural overview
+title: E-Commerce architectural overview
 description: This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
