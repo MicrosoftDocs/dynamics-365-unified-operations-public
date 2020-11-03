@@ -34,22 +34,25 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes payments SDK support for tipping through the payment terminal. It is intended to support scenarios where a payment terminal can be configured to present the customer with predefined tip amounts or percentages, which can be designated at the time of payment. For processors which support device level tipping, and that can return the tip amount as part of the authorization response,  a new property has been added to the payments SDK. This property can then be added to the transaction using extensiblity. This feature does not add support for tipping or tip reporting at the point of sale. To build full tipping capabilities, POS extensions will be needed. 
+This topic describes payments SDK support for tipping through the payment terminal. The new **TipAmount** property is provided to support scenarios where a payment terminal can be configured to present the customer with predefined tip amounts or percentages, selectable at the time of payment. This feature does not add support for tipping or tip reporting at the point of sale. To build full tipping capabilities, POS extensions will be needed. 
 
 ## Key terms
 
 | Term | Description |
 |---|---|
 | Tips | Also known as a gratuities, tips are common in quick service and hospitalities to provide a payment directly to the store or restaurant employee who is providing services |
-| Header level charge | A charge that can be applied to a purchase that is not for a specific line item. 
-| Call center order | An order that a call center user creates in Commerce headquarters. |
-| Accounts receivable (AR) sales order | An order that a user who isn't a call center user creates through Accounts receivable in Commerce headquarters. Payments for AR sales orders can't be edited through call center order completion. |
+| Header level charge | A charge that can be applied to a purchase that is not for a specific line item. |
 
 ## Overview
 
-Dynamics 365 Commerce consists of three main channels: POS, e-commerce, and call center. In Commerce version 10.0.12 and earlier, the management of payment lines for orders that are created in each channel isn't uniform. For example, when orders are created and edited in the call center, an order completion flow ensures that payments are specified for those orders before fulfillment. However, POS and e-commerce orders don't support call center order completion. To see the lack of uniformity, go to the **Customer service** page in Commerce headquarters, and notice which orders you can access the **Payments** page for by using the **Payments** button.
+Tipping is very common in certain locales and industries. For example, in quick service and hospitality tipping has become nearly ubiquitous in the United States. For many businesses, the ability to support tipping through payment terminals is becoming a differentiator when attracting employees. This feature adds a discrete **TipAmount** field to the payments SDK so tips selected at the payment terminal can flow back to the point of sale as part of the authorization response. 
 
-The following illustration shows an order that was created in the call center. Notice that the **Payments** button is available when the row for this order is selected. 
+While this feature adds support for tipping at the payments SDK level, it does not include support for other critical aspects of tipping support. Those may include reporting to indicate tip payouts at the end of shifts, the ability to pool tips, and the ability to report tips for payroll. To enable full tipping support, those capabilities will need to be implemented via extensions. 
+
+### Tipping support by payment processor
+
+This feature adds 
+
 
 ![Call center order that the Payments button is available for](../dev-itpro/media/COP_CC_PAY.png)
 
