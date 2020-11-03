@@ -3,7 +3,7 @@ title: Scripts for resolving issues in on-premises environments
 description: This topic will serve as a central repository for scripts that you can use to fix issues in on-premises environments.
 author: faix
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
