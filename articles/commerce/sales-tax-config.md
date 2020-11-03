@@ -34,20 +34,15 @@ ms.dyn365.ops.version: 10.0.16
 
 This topic provides an overview and details of sales tax group selection for different online order types. 
 
-
 ## Overview
 
-
 Your eCommerce channel may want to support options like delivery or pickup for online orders and the sales tax applicability is based on option selected by your online user. When user chooses buy online and get shipped to an address, the sales tax is determined by destination based tax group using the shipping address and when user chooses pickup at a store, the sales tax is determined based on the pickup store's tax group setting. 
-
-
 
 ## Orders ship to customer address 
 
 In general, taxes for online orders with ship to customer address are defined by the destination. Every **Sales Tax Group** has **retail destination based tax** configuration in which business can define destination configuration such as County/Region, State, County, City etc. in a hierarchical form. When an online order is placed, tax engine uses delivery address of every line item in the order, and finds Sales Tax Groups with matching destination based tax criteria.   For e.g. an online order with line item delivery address to San Francisco, CA, Tax Engine finds **Sales Tax Group** CA and finds the appropriate **Sales tax code** and calculates tax for the line item.  
 
-![Dyanamics 365 Commerce Sales Tax Group and Sales Tax Code selection](media/d365-commerce-sales-tax-groups.png)
-
+![Dynamics 365 Commerce Sales Tax Group and Sales Tax Code selection](media/d365-commerce-sales-tax-groups.png)
 
 ## Customer based Tax Groups
 
@@ -57,20 +52,29 @@ In HQ, there are two places where a customer can have Tax groups configured as f
 	2. **Customer's shipping address** in HQ can have a Tax group configured
 
 ### When customer has a Tax group configured
+
 Your customer record in the HQ may have a sales tax group configured. But for online orders, Sales Tax group configured in customer profile will not be used by tax engine. 
 
 ### When customer's shipping address has a Tax group configured
 In a scenario where HQ customer's shipping address has a Tax group configured and the online order (or line item) is going to be shipped to the same address, Tax group configured in customer's address will be used by tax engine for Tax calculations. 
 !Hlep: If you want to configure a tax group for customer's shipping address, go to **All customers**, and then select the desired customer. In the **Addresses** fast tab, select the desired address, and then click on **More options** > **Advanced**. On the Manage addresses form, under **General** tab, set the Sales Tax value as needed.
 
-The Tax group will be defined using the delivery address of the line and the destination based taxes configured at the Tax group itself, more details here: https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination
+The Tax group will be defined using the delivery address of the line and the destination based taxes configured at the Tax group itself. For more information, see [Set up taxes for online stores based on destination](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## Orders pick up in store
 
 For order lines with pickup in store and curb-side pickup, the tax group comes from the store selected to pick up. You can find more details on how to configure the tax group for a given store @ https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores
 !Note: in the scenario where an order line is pick up at store, customer address's tax settings, when address has one set up,  will be ignored by tax engine and pick up store's tax configuration will be applied. 
 
-###References
+## Additional resources
 
-Add references to other sections of taxes appropriately. 
+[Sales tax overview](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
+
+[Sales tax calculation methods in the Origin field](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
+
+[Sales tax assignment and overrides](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
+
+[Whole amount and Interval calculation options for sales tax codes](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
+
+[Calculation of tax exemption](tax-exempt-price-inclusive.md) 
 
