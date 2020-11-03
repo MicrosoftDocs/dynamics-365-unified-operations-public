@@ -43,7 +43,7 @@ To edit financial dimensions for retail transactions in Commerce headquarters, f
 1. Select the active **Default dimensions integration** record.
 1. On the **Financial dimensions** FastTab, make sure that all the dimensions that you want to edit in the Excel worksheet are present in the **Selected** list. For more information, see [Data entities](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration#data-entities).
 1. Download and open the Excel file from the **Statements** page, the **Retail transactions** page, or the **Transaction validation failures** tile in the **Store financials** workspace.
-1. To change the transaction header financial dimension, select **Design**, and then select the pencil symbol next to the **Transaction (auditable)** row.
+1. To change the transaction financial dimension, select **Design**, and then select the pencil symbol next to the **Transaction (auditable)** row.
 1. Find and select the **FinancialDimensionDisplayValue** field, select a cell in the header part of the Excel worksheet, and then select **Add label**.
 1. Select a cell below the cell that you selected in the previous step, select **Add Value**, and then select **Refresh**. The financial dimensions are added to the Excel worksheet, and they can then be edited and published.
 1. To change the dimensions on the transaction lines, select the **Sales transactions (auditable)** row, select the pencil symbol, and then repeat steps 6 and 7.
