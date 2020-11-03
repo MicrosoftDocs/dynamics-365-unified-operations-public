@@ -119,6 +119,12 @@ When **Coupon code required** is set to **Yes** on a discount, the discount is a
 
 These two fields work together. When **Override priority** is set to **Yes** , the **Pricing priority** field becomes available for editing. You can then select a pricing priority to set directly on the discount. When **Override priority** is set to **No** , the priority is inherited from the priority of the price group associated with the discount. In the case of multiple price groups association, the priority number is determined by selecting the highest pricing priority of all the price groups associated with the discount.
 
+### Match all associated price groups
+Starting with 10.0.16, a new configuration named "Match all associated price groups" is available on all discount forms. If this configuration is turned ON, then this discount will be considered only if all the price groups associated to the discount are applicable on the transaction. For e.g. if two price groups named "PG-Student" and "RP-Houston" are associated to a discount and this configuration is turned ON, then the discount will be considered only for students who are shopping in the Houston store. This provides a way to restrict affiliation and loyalty based discounts to limited stores.
+
+> [!NOTE]
+> If more than one channel price groups are associated to a discount and this configuration is turned ON, then the discount will not apply because, a transaction can be associated to only one store and hence all the price groups associated to the discount would not match.
+
 ### Description
 
 This field is a free-form text field. It isn't used in the MPOS/CPOS system or in transactions.
