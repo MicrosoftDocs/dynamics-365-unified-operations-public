@@ -272,7 +272,7 @@ public UpdateLineItemsPaymentTerminalDeviceRequest(string token, string totalAmo
 ##### AuthorizePaymentTerminalDeviceRequest
 ###### Signature
 ``` csharp
-public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnectorName, decimal amount, string currency, TenderInfo tenderInfo, string voiceAuthorization, bool isManualEntry, ExtensionTransaction extensionTransactionProperties)
+public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnectorName, decimal amount, string currency, TenderInfo tenderInfo, string voiceAuthorization, bool isManualEntry, transactionReferencedata, isTippingEnabled, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
@@ -286,20 +286,24 @@ public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnect
 | tenderInfo | The card information that is sent from the POS that is retrieved from an external source (if an external source is present). |
 | voiceAuthorization | The voice approval code that is sent from the POS if voice authorization is required. |
 | isManualEntry | A value that defines whether the card number was entered manually. |
+| transactionReferenceData | Merchant's transaction reference that is sent to the processor. |
+| isTippingEnabled | Indicates if tipping is supported by the payment connector. Optional.|
 | extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
+
 
 ###### Response
 The **AuthorizePaymentCardPaymentResponse** response object must be returned when the **AuthorizePaymentTerminalDeviceRequest** request is handled. The response must contain an instance of the **PaymentInfo** object that has the following required properties.
 
 | Property | Description |
 |---|---|
-| ApprovedAmount | The amount that was approved for the transaction. |
+| ApprovedAmount | The amount that was approved for the transaction. Includes tip amount if tipping is enabled. |
 | CardNumberMasked | The masked credit card number. The value must contain at least the first digit of the credit card to support bin range lookup in the POS. (Most devices return the first six digits and the last four digits.) |
 | CardType | The type of card that was used for the payment (for example, **Credit** or **Debit**) by using the **Microsoft.Dynamics.Commerce.HardwareStation.CardPayment.CardType** entity. |
 | CashbackAmount | For debit transactions, the cash-back amount that was defined on the payment terminal. |
 | Errors | The list of errors that occurred during the authorize call. |
 | IsApproved | A flag that indicates whether the payment was approved. |
 | PaymentSdkData | The response data that is used to support state between the authorize/refund and capture/void calls or cross-channel payment operations. |
+| TipAmount | The tip amount that was selected by the customer on the device. |
 
 The **PaymentSdkData** property must contain the following data.
 
