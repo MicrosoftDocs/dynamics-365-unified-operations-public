@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enable Cash flow forecasts 
-description: This topic describes the steps for enabling the Cash flow forecasts feature within Finance Insights. 
+title: Enable cash flow forecasts (preview)
+description: This topic explains how to turn on the Cash flow forecasts feature in Finance Insights.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/24/2020
@@ -29,43 +29,45 @@ ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Enable Cash flow forecasting (preview)
+# Enable cash flow forecasts (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the steps for enabling the Cash flow forecasts feature within Finance Insights. 
+This topic explains how to turn on the Cash flow forecasts feature in Finance Insights.
 
 > [!NOTE]
-   > Set up Customer payment prediction functionlity descibed in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to use payment predictions in cash flow.  
-   
-Complete the following steps to enable the Cash flow forecasts capability within Finance Insights. 
+> To use payment predictions in the cash flow, you must set up the Customer payment predictions feature as described in [Enable customer payment predictions](enable-cust-paymnt-prediction.md).
 
-1. If your Dynamics 365 Finance deployment is a Service Fabric deployment, you can skip this step. The Finance Insights team should have already tuned ON the flight for you. If you don't see the features on the Feature management workspace or have issues turning them ON, please contact fiap@microsoft.com. 
+1. Use information from the environment page in Microsoft Dynamics Lifecycle Services (LCS) to connect to the primary instance of Azure SQL for that environment. Run the following Transact-SQL (T-SQL) command to turn on flights for the sandbox environment. (You might have to turn on access for your IP address in LCS before you can connect remotely to Application Object Server \[AOS\].)
 
-	Using information from the Lifecycle Services (LCS) environment page, connect to the primary Azure SQL instance for the environment. Run the following T-SQL commands to enable flights for the sandbox environment (may need to enable access in LCS for your IP before connecting remotely to AOS):
-	INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
 
-2. Go to the **Feature management** workspace and complete the following steps. 
-   - Click **Check for updates**.
-   - Turn ON following features:
-     - New grid control
-     - Grouping in grids (preview) 
-     - Customer payment predictions (preview)
-     - Cash flow forecasts (preview)
+    > [!NOTE]
+    > If your deployment of Microsoft Dynamics 365 Finance is a Service Fabric deployment, you can skip this step. The Finance Insights team should already have turned on the flight for you. If you don't see the features in the **Feature management** workspace, or if experience issues when you try to turn them on, contact <fiap@microsoft.com>.
+  
+2. Open the **Feature management** workspace, and follow these steps:
 
-3. Open the **Cash flow forecasts setup** page (**Cash and bank management > Cash flow forecast setup**) and add the liquidity accounts that should be included in the forecasts.
+    1. Select **Check for updates**.
+    2. Turn on the following features:
 
- > [!NOTE]
- > If liquidity accounts aren't set up, the cash flow cannot be generated.
+        - New grid control
+        - Grouping in grids (preview) 
+        - Customer payment predictions (preview)
+        - Cash flow forecasts (preview)
 
-4. Open the **Cash flow forecasts** page (**Cash and bank management > Setup > Finance Insights (preview) > Cash flow forecasts (preview)**).
-   - On the **Cash flow forecast** tab.
-   - Click **Enable feature**.
-   - Click **Create prediction model**.
-	
-For more information about the Cash flow forecasting capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
+3. Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts.
 
- #### Privacy notice
+    > [!NOTE]
+    > If liquidity accounts aren't set up, the cash flow can't be generated.
+
+4. Go to **Cash and bank management \> Setup \> Finance Insights (preview) \> Cash flow forecasts (preview)**, and follow these steps:
+
+    1. On the **Cash flow forecast** tab, select **Enable feature**.
+    2. Select **Create prediction model**.
+
+For more information about the cash flow forecasting functionality, see [Cash flow forecasting](cash-flow-forecast-intro.md).
+
+## Privacy notice
 
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
