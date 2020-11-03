@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: E-Commerce Online SDK Frequently Asked Questions
-description: This topic summarizes answers to questions that are frequently asked by users of the Dynamics 365 Commerce Online SDK.
+title: Dynamics 365 Commerce online SDK FAQ
+description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software develpoment kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,21 +28,29 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# E-Commerce Online SDK Frequently Asked Questions
+# Dynamics 365 Commerce online SDK FAQ
 
 [!include [banner](../includes/banner.md)]
 
-This topic summarizes answers to questions that are frequently asked by users of the Dynamics 365 Commerce Online SDK.
+This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce Online SDK.
 
 ## After upgrading to module library version 9.24 (10.0.14 release), some cloned modules that use the below list of data actions may throw an error **UserAuthorizationException. Customer account number on the request was wrong**. 
 
 The below list of [core data actions](core-data-actions.md) have a signature change which move the user account number parameter to the second parameter (instead of the first) and is now set an optional parameter.  In most scenarios the user account number is no longer needed, the data action will execute in the context of current signed in user. In some custom scenario where this user account number is different than the signed in user, then you can fetch the user account number using the **get-customer** data action and pass it to the data action.
  
-* add-address
-* get-address
-* get-customer
-* get-loyalty-card
-* get-loyalty-transaction-estimation
-* issue-loyalty
+- add-address
+- get-address
+- get-customer
+- get-loyalty-card
+- get-loyalty-transaction-estimation
+- issue-loyalty
 
 The module library modules have been updated with the correct calling pattern to the above data actions, so you won't see any errors in these modules, however if one of them was previously [cloned](clone-starter-module) it will still have the older data action signature and throw the above error at runtime.  The signatures will need to be updated accordingly. One way to solve this, is to temporarily clone the module library module again with a new name, then diff the code with the previously cloned custom module and merge the changes. The temp module can then be deleted.
+
+## Additional resources
+
+[Core data actions](core-data-actions.md)
+
+[Clone a module library module](clone-starter-module.md)
+
+[Best practices for Dynamics 365 Commerce development](best-practices-dev.md)
