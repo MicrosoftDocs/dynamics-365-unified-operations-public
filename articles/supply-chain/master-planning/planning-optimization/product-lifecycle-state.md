@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Exclude products with product lifecycle state
+title: Exclude products with certain product lifecycle states
 description: This topic explains how to exclude products with product lifecycle state when Planning Optimization functionality is used. 
 author: ChristianRytt
 manager: tfehr
@@ -29,23 +29,22 @@ ms.search.validFrom: 2019-11-03
 ms.dyn365.ops.version: AX 10.0.12
 
 ---
-# Exclude products with product lifecycle state
+# Exclude products with certain product lifecycle states
 
 [!include [banner](../../includes/banner.md)]
-
-The **Product lifecycle state** can be used to control the released products or released product variants that are included during master planning. 
-The user defined product lifecycle state has a control **Is active for planning**. By default, this is set to **Yes** for all created product lifecycle states, but it can be changed to **No**. When set to **No**, the associated released products or released product variants are:
+<!-- KFM: We should orient the reader a bit more here. Where are these settings? -->
+Use the **Product lifecycle state** to control the released products (or released product variants) that are included during master planning. The user-defined product lifecycle state has a control **Is active for planning**. By default, this is set to *Yes* for all created product lifecycle states, but it can be changed to *No*. When set to *No*, the associated released products (or released product variants) are:
 
 - Excluded from master planning.
 - Excluded from BOM-level calculation.
 
-When **Product lifecycle state** is left blank the released product or released product variant is considered **Is active for planning** meaning that it will be covered during master planning.
+When **Product lifecycle state** is left blank, the released product (or released product variant) is considered **Is active for planning** <!-- KFM: Is this a setting I can see somewhere? -->, which means that it will be covered during master planning.
 
 > [!NOTE]
-> To avoid unnecessary supply suggestions, it is highly recommended to associate all obsolete released products, and product variants, with a product lifecycle state that is deactivated for master planning. This is especially important when working with non-reusable product configuration variants, to avoid waist.
+> To avoid unnecessary supply suggestions, we strongly recommend that you associate all obsolete released products (and product variants) with a product lifecycle state that is deactivated for master planning. To avoid waste, this is especially important when working with non-reusable product configuration variants.
 
 ## Related resources
 
-For more information related to product life cycle state, see [Product lifecycle state overview]( https://docs.microsoft.com/dynamics365/supply-chain/pim/product-lifecycle)
+For more information related to product the life cycle state, see [Product lifecycle state overview](../../pim/product-lifecycle.md).
 
-For detailed information with steps for how to use product lifecycle state to exclude products from master planning and BOM-level calculation, see [Create a product lifecycle state to exclude products from Master planning](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/product-lifecycle-state-released-product)
+For detailed information with steps for how to use the product lifecycle state to exclude products from master planning and BOM-level calculation, see [Create a product lifecycle state to exclude products from Master planning](../../pim/tasks/exclude-products-master-planning.md).
