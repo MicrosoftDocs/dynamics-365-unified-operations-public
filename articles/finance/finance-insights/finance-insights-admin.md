@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance Insights home page (preview)
-description: This topic walks through the prerequisites and the broad steps required for using a trial version of Finance Insights. 
+description: This topic walks through the prerequisites and the broad steps that are required to use a trial version of Finance Insights.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/20/2020
@@ -34,69 +34,81 @@ ms.dyn365.ops.version: AX 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights provides configurable and extensible models to help you accurately and intelligently predict your company’s cash flow, predict when you'll receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent, machine learning models. These new capabilities, paired with automation in vendor payments and collections, provide a rich and intelligent financial system to drive decision making and help you take actions that respond effectively to current and anticipated business challenges.
+Finance Insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models. When these new capabilities are combined with automation in vendor payments and collections, they provide a rich and intelligent financial system that drives decision making and helps you take action to respond effectively to current and anticipated business challenges.
 
-Finance Insights preview is available to for trial deployments in the United Stated of America, Europe and United Kingdom. We are incrementally adding support in additional regions.
+Finance Insights preview is available for trial deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
 
-Public preview features should only be enabled on Tier 2 sandbox environments. Setup and AI models created in sandbox environment can't be migrated to a production environment. See [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.) for more information.
+Public preview features can and should be turned on only in Tier-2 sandbox environments. Setup and artificial intelligence (AI) models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## Prerequisites
 
-A list of the requirements for using Finance Insights follows, along with links to sources of additional information where possible. 
+This section lists the requirements for using Finance Insights. Wherever possible, links to sources of additional information are provided.
 
 ### Legal requirements
-To apply for the preview program, fill out [Finance Insights Preview for Dynamics 365 Finance agreement](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).   
+
+To apply for the preview program, fill out the [Finance Insights Preview for Dynamics 365 Finance agreement](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
 
 ### System requirements
-A Tier 2 Sandbox environment (multi-box) is required to preview Finance Insights. For more background on environments, see [Environment planning](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
-### Version information
-This document applies to Finance and Operations 10.0.11 (PU35) or after.
+A Tier-2 sandbox environment (multi-box) is required to preview Finance Insights. For background information about environments, see [Environment planning](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
-### Historical data needs
-At least one year of customer invoices is needed to properly train the machine learning model used for customer payment predictions. 
+### Version requirements
 
-Sample data is available for demo systems that have the Contoso demo data set on them. 
+This document applies to version 10.0.11 of Finance and Operations apps (Platform update 35), and later versions.
 
-### Roles and permissions
-Changes will be made to Microsoft Dynamics 365 for Finance, Lifecycle Services, Power Apps, and Azure. Proper permissions will be required across these three environments. For example:
+### Historical data requirements
 
-- A new environment will be created in the Power Platform.
+At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the Customer payment predictions feature.
+
+Sample data is available for demo systems that have the Contoso demo data set.
+
+### Role and permission requirements
+
+Changes will be made to Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifecycle Services (LCS), Power Apps, and Azure. Correct permissions are required across these three environments. Here are some examples of the changes that will be made:
+
+- A new environment will be created in Microsoft Power Platform.
 - A storage account, key vault, and application will be created in Azure.
-- The AI Builder application will need to be authorized to access the data lake by the Active Directory tenant administrator.
-- Feature will be enabled in Dynamics 365.
+- The Active Directory tenant administrator will have to authorize the AI Builder application to access the data lake.
+- The feature will be turned on in Dynamics 365.
 
-Familiarity with creating and managing resources in Azure, CDS, and Lifecycle Services (LCS) will be helpful for completing this process.
+Familiarity with the process of creating and managing resources in Azure, Common Data Service, and LCS will be helpful as you complete this process.
 
-## Configuring Finance Insights 
+## Configure Finance Insights
 
-Some configuration steps must be completed to use Finance Insights. For more information about the procedures that configure Finance Insights see [Configuration for Finance Insights](configure-for-fin-insites.md).
+You must complete some configuration steps before you can use Finance Insights. For more information about how to configure Finance Insights, see [Configuration for Finance Insights](configure-for-fin-insites.md).
 
-### Configure CDS and Azure resources
-Complete the steps described in [Configuration for Finance Insights](configure-for-fin-insites.md) to configure CDS and Azure resources.
+### Configure Common Data Service and Azure resources
 
-### Create data integrator project
-Create a data integrator project to flow data back into Dynamics 365 for Finance by completing the steps in [Create data integrator project](create-data-integrate-project.md).  
+Follow the steps in [Configuration for Finance Insights](configure-for-fin-insites.md) to configure Common Data Service and Azure resources.
+
+### Create a data integrator project
+
+Follow the steps in [Create a data integrator project](create-data-integrate-project.md) to create a data integrator project so that data flows back into Finance.
 
 ## Enable Finance Insights capabilities
 
-When you've completed the configuration steps and set up demo data, you must also enable each of the capabilities that you plan to use, Cash flow forecasts, Customer payment predictions, and Budget proposals. 
+When you've completed the configuration steps and set up demo data, you must turn on and set up each capability that you plan to use: customer payment predictions, cash flow forecasting, and budget proposals.
 
 ### Enable customer payment predictions
-Complete the steps described in [Enable Customer payment predictions](enable-cust-paymnt-prediction.md) to build and use a machine learning model along with your organization's data to generate predictions of when customers are likely to pay outstanding invoices, as well as predictions of when specific invoices are likely to be paid.
 
-### Enable cashflow forecasting
-Complete the steps described in [Enable Cash flow forecasts](enable-cash-flow-forecasting.md) to build and use a machine learning model along with your organization's data to generate cash flow forecasts.
-  
-### Enable Budget proposals
-Complete the steps described in [Enable Budget proposals](enable-budget-proposal.md) to use a machine learning model along with your organization's historical data to generate a budget proposal that help you begin your budgeting process with more effectiveness than a manual process provides. 
+Follow the steps in [Enable customer payment predictions](enable-cust-paymnt-prediction.md) to build a machine learning model and use it with your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid.
 
-### Setup and use Cash flow forecasting
-To see the steps to set up and use cash flow forecasting, see [Enable Cash flow forecasting](enable-cash-flow-forecasting.md). To learn more about how to use this capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
+### Enable cash flow forecasting
 
-## Understand and improve initial payment predictor model
+Follow the steps in [Enable cash flow forecasting](enable-cash-flow-forecasting.md) to build a machine learning model and use it with your organization's data to generate cash flow forecasts.
 
-See [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md) for information that can help you evaluate the effectiveness of the prediction model, or [Improve the prediction model](improve-model.md) for information help you adjust the data that's used to build the prediction so improve its effectiveness.
+### Set up and use cash flow forecasting
 
-#### Privacy notice
+For information about how to set up and use cash flow forecasting, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md). For more information about how to use this capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
+
+### Enable budget proposals
+
+Follow the steps in [Enable budget proposals](enable-budget-proposal.md) to use a machine learning model with your organization's historical data to generate a budget proposal that can help you begin a budgeting process that is more effective than a manual process.
+
+## Understand and improve the initial payment predictor model
+
+For information that can help you evaluate the effectiveness of the prediction model, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md). For information that can help you adjust the data that is used to build the prediction, to improve its effectiveness, see [Improve the prediction model](improve-model.md).
+
+## Privacy notice
+
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
