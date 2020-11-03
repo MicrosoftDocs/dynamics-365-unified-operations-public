@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Architectural overview
+# E-Commerce Architectural overview
 
 [!include [banner](../includes/banner.md)]
 
