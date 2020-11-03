@@ -775,7 +775,17 @@
       - name: Disable rules in retail transaction consistency checker
         href: disable-consistency-check-rule.md
       - name: Edit and audit retail store transactions
-        href: edit-audit-retail-transactions.md
+        items:
+        - name: Edit and audit cash and carry and cash management transactions
+          href: edit-cash-trans.md
+        - name: Edit and audit online order and asynchronous customer order transactions
+          href: edit-order-trans.md
+        - name: Edit financial dimensions for retail transactions
+          href: edit-financial-dim.md
+        - name: Create an Excel workbook to edit retail transactions
+          href: create-excel-edit.md
+        - name: Add fields to an Excel workbook to edit retail transactions
+          href: add-fields-excel.md
       - name: Trickle feed-based order creation for retail store transactions 
         href: trickle-feed.md
       - name: Create, calculate, and post statements for a retail store 
