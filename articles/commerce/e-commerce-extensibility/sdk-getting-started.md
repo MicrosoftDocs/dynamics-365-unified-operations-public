@@ -69,11 +69,11 @@ The online SDK includes a **.env** file in the root folder which has several env
 The following topic [debug against a tier 1 Commerce development environment](debug-tier-1) provides the details on how to configure the .env file to point to a cloud environment.  It will guide you in getting the correct URLs to set for each variable in the .env file.  There are two main scenarios you can setup, the first is to point to a cloud retail server and the second to point the cloud e-Commerce site.
 
 #### Configure against a cloud Retail server
-A development environment can be configured to point to a cloud hosted Retail server to allow for debuggin modules against live data.  When the server is configured, all data action calls will go directly to that server, passing back real data to your development environment.  This is a great way to see how a module will render.  Without this set, you will need to use mock data to render your modules, see the [test modules with mock data](test-module-mock.md) and [test data action with mocks](test-data-action-mocks.md) topics for more information.
+A development environment can be configured to point to a cloud hosted Retail server to allow for debugging modules and data actions against live data.  When the server is configured, all data action calls will go directly to that server, passing back real data to your development environment.  This is a great way to see how a module will render.  Without this set, you will need to use mock data to render your modules, see the [test modules with mock data](test-module-mock.md) and [test data action with mocks](test-data-action-mocks.md) topics for more information.
 
 The .env file contains a variable **"MsDyn365Commerce_BASEURL"** which needs to point to a cloud based Retail server URL. You will also need to point to a specific channel and channel OUN(operating unit number).
 
-The below example shows an example .env file set to point to a specific Retail server, channel and OUN.  Note the catalog ID (MSDyn365Commerce_CATALOGID) must always be 0.
+The below example shows an example .env file set to point to a specific Retail server, channel and OUN.  Note the catalog ID (MSDyn365Commerce_CATALOGID) must always be 0 since e-Commerce does not support multiple catalogs.
 
 json
 ```
@@ -86,11 +86,11 @@ MSDyn365Commerce_OUN=128
 ```
 
 #### Configure against a cloud hosted e-Commerce site
-A development environment can be further configured to point to a cloud hosted e-Commerce site to allow the e-Commerce pages created in the site builder tool to be rendered in the local environment under the local Node.js JavaScript server.  This is useful when testing out changes to modules, data actions and themes against live pages without affecting the live site.  For example you could test out module changes you have locally for any e-Commerce page.
+A development environment can be further configured to point to a cloud hosted e-Commerce site to allow the e-Commerce pages created in the site builder tool to be rendered in the local environment under the local Node.js JavaScript server.  This is useful when testing out changes to modules, data actions and themes against live pages without affecting the live site.  For example you could test out module view changes you have locally for any e-Commerce page, but customers hitting the live site would not see the changes nor will it impact the live e-Commerce site.
 
-E-Commerce site pages are stored in a CMS system as JSON files which can be saved and used for mock files, see the [test modules by using page mocks](test-page-mock.md) topic for more info including how to create a page mock from a live page using the "?item=nodeserviceproxy:true" query string parameter.  These json files contain the break down of modules and their configuration values used to render the page.  The local development environment will do the rendering in this scenario, allowing for fast testing and iterating on your changes.  
+E-Commerce site pages are stored in a CMS system as JSON files which can be saved and used for mock files, see the [test modules by using page mocks](test-page-mock.md) topic for more info including how to create a page mock from a live page using the "?item=nodeserviceproxy:true" query string parameter.  These json files contain the break down of modules and their configuration values used to render the page.  The local development environment will do the rendering with local modules in this scenario, allowing for fast testing and iterating of your changes.
 
-Details can be found in the [debug against a tier 1 Commerce development environment](debug-tier-1) topic to setup the **"MSDyn365_HOST"** variable to point to your e-Commerce  environment, which can be seen in the below example
+Details can be found in the [debug against a tier 1 Commerce development environment](debug-tier-1) topic to setup the **"MSDyn365_HOST"** variable to point to your e-Commerce  environment, which can be seen in the below example:
 
 ```json
 MSDyn365_HOST=www.fabrikam.com
@@ -102,7 +102,7 @@ MSDyn365Commerce_OUN=128
 ```
 
 ## Changing modules, data actions and themes
-Once an Online SDK environment is set up, you are ready to build custom [modules](create-new-module.md), [data actions](data-actions.md) and [themes](create-theme.md). 
+Once an online SDK environment is set up, you are ready to build custom [modules](create-new-module.md), [data actions](data-actions.md) and [themes](create-theme.md).
 
 ## Package creation and deployment
 Once you are complete with all your changes, you can follow the instructions on the [Package configurations and deploy them to an online environment](package-deploy.md) topic to build a zip file package and upload it on the LCS site.  You should then see all your changes in the cloud hosted environment it was deployed to.
