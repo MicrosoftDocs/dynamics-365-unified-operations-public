@@ -51,8 +51,8 @@ To understand the architecture of virtual entities for Finance and Operations ap
 
 All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from Finance and Operations with full CRUD capability and without copying to Common Data Service. Power Apps Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
 
-## Virtual entities vs Dual write
-Virtual entities provides a mechanism to use Microsoft Power Platform with Finance and Operations without having to physically copy data to Common Data Service. Hence, this guidance must be used to determine if the requirements will need Dual write or Data integrator or virtual entities. Virtual entities and Dual write/Data integrator are complimentary technologies such that, they can be used together if required. Each technology exists for specific scenarios as explained in the [Integration strategies](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview).
+## Virtual entities vs. dual-write
+Virtual entities provide a mechanism to use Microsoft Power Platform with Finance and Operations without having to physically copy data to Common Data Service. Use this guidance to determine if the requirements will need dual-write or data integrator or virtual entities. Virtual entities and dual-write/data integrator are complementary technologies, meaning that they can be used together if required. Each technology exists for specific scenarios, as explained in [Integration strategies](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview).
 
 ## Architecture
 
