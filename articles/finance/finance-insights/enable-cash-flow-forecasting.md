@@ -66,7 +66,7 @@ This topic explains how to turn on the Cash flow forecasts feature in Finance In
     1. On the **Cash flow forecast** tab, select **Enable feature**.
     2. Select **Create prediction model**.
 
-For more information about the cash flow forecasting functionality, see [Cash flow forecasting](cash-flow-forecast-intro.md).
+For more information about the cash flow forecasting capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
 
 ## Privacy notice
 
