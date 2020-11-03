@@ -71,6 +71,7 @@ This topic includes information and links to resources that can help you set up 
 - [Invoice processing](emea-invoice-processing.md)
 - [Issue an EU entry certificate](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Supported standards for electronic invoicing](emea-oioubl-standards-electronic-invoicing.md)
+- [Forced electronic invoices generation](emea-eur-forced-einvoices.md)
 - [Original invoice reference (Eastern Europe)](tasks/ee-00004-original-invoice-reference.md)
 - [Party search using VAT ID](tasks/eur-00015-party-search-vat-id.md)
 - [Payment reference generation tool](tasks/ee-00015-payment-reference-generation-tool.md)
