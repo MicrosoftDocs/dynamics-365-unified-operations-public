@@ -121,9 +121,6 @@ With self-service migrations, we are changing the outbound IP addresses in regio
 | UK South | 51.11.26.192/26
 | Australia East | 20.40.190.0/26
 | Australia SouthEast | 20.40.165.192/26
-| West US | 52.250.195.128/26
-| East US | 52.255.218.64/26
-| Central US | 13.86.98.128/26
 | Canada Central | 20.151.60.0/26
 | Canada East | 52.155.27.128/26
 | Brazil South | 191.234.130.0/26
