@@ -32,15 +32,14 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-To comply with European Union's Directive 2014/55/EU...
-
-This article describes how to configure...
+This article describes how to configure forced generation of electronic invoices files right after posting of related customer invoices regardless of the selected printing options.
 
 ## Prerequisites
 
 - In the **Feature management** workspace, turn on the **Forced electronic invoices generation** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- Configure the system to enable electronic invoices generation. Although Electronic invoices configuration is country-specific process, it contains the steps which are in common for all the supported countries. For example, please see how to configure [Norwegian electronic invoices](emea-nor-e-invoices.md).
 
-## Import 
+## Configure
 
 Test.
 
