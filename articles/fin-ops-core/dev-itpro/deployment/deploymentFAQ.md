@@ -105,7 +105,9 @@ With self-service migrations, we are changing the outbound IP addresses in regio
 
 * If none of your external components have dependencies on an explicit inclusion list of IPs or special handling of outbound IP addresses for routing or firewall, no action is required.
 * If any of your external components have special handling for the outbound IP addresses to communicate to the AOS, add the new outbound IP addresses where the existing ones appear. Don’t replace the existing IP addresses. You can find the new outbound IP addresses in the following list. For example, an outbound IP address may be explicitly included in a firewall outside your AOS, or an external service may have an allowed list that contains the outbound IP address for your AOS.
-* Note that these IP ranges are subject to change.
+
+> [!Note]
+> The IP ranges are subject to change — Microsoft will publish the new list if it changes. Please be sure to check back for updates
 
 | Region | IP prefix
 |---------------------|-------------|
