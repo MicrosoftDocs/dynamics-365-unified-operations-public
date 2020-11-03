@@ -102,7 +102,7 @@ MSDyn365Commerce_OUN=128
 ```
 
 ## Changing modules, data actions and themes
-Once an online SDK environment is set up, you are ready to build custom [modules](create-new-module.md), [data actions](data-actions.md) and [themes](create-theme.md).
+Once an e-Commerce development environment is set up, you are ready to build custom [modules](create-new-module.md), [data actions](data-actions.md) and [themes](create-theme.md).
 
 ## Package creation and deployment
 Once you are complete with all your changes, you can follow the instructions on the [Package configurations and deploy them to an online environment](package-deploy.md) topic to build a zip file package and upload it on the LCS site.  You should then see all your changes in the cloud hosted environment it was deployed to.
