@@ -371,7 +371,7 @@ Now you can specify the `dimensionDataSource` and use custom dimensions in your 
 
 #### Posting on-hand changes query example 2
 
-This example shows a scenario where no mappings are set up for the dimension configuration in Power Apps, so the posting should also use the base dimensions. Dimensions must be base dimensions when the `dimensionDataSource` field is null, empty, or whitespace.
+This example shows a scenario where no mappings are set up for the dimension configuration in Power Apps, so the posting should also use the base dimensions. All dimensions must be base dimensions when the `dimensionDataSource` field is null, empty, or whitespace.
 
 ```json
 {
@@ -436,7 +436,7 @@ This example shows a scenario where you have already completed the dimension con
 
 #### Current on-hand query example 2
 
-This example shows a scenario where no mappings are set up for the dimension configuration in Power Apps, so the posting should also use the base dimensions. Dimensions must be base dimensions when the `dimensionDataSource` field, under `filters` is null, empty, or whitespace.
+This example shows a scenario where no mappings are set up for the dimension configuration in Power Apps, so the posting should also use the base dimensions. All dimensions must be base dimensions when the `dimensionDataSource` field, under `filters` is null, empty, or whitespace.
 
 ```json
 {
