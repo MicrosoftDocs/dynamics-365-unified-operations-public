@@ -5,7 +5,7 @@ title: Edit and audit online order and asynchronous customer order transactions
 description: This topic describes how to edit and audit online order and asynchronous customer order transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/30/2020
+ms.date: 11/03/2020
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
