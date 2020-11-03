@@ -45,7 +45,7 @@ The following table lists the integration patterns that are available.
 
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
-| Power platform integration    | [Virtual entities](power-platform/overview.md) |
+| Power Platform integration    | [Virtual entities](power-platform/overview.md) |
 | Dual-write                    | [Dual-write overview](dual-write/dual-write-home-page.md) |
 | Classic data integration      | [Classic data integration overview](data-integration-cds.md) |
 | OData                         | [Open Data Protocol (OData)](odata.md) |
