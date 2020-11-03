@@ -48,7 +48,7 @@ The typical process when extending the e-Commerce platform includes the followin
 * Deploy configuration package to a cloud environment
 
 ## Architectural Overview
-Before starting e-Commerce extensibilty development it would be good to have an understanding of the architecture.  The [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) and e-Commerce [architectural overview](architectural-overview.md) topics are great places to get started.  The [e-Commerce component](ecommerce-components.md) topic will also provide an overview of the main extensibile e-Commerce components including modules, data actions and themes.
+Before starting e-Commerce extensibilty development it would be good to have an understanding of the architecture.  The [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) and [e-Commerce architectural overview](architectural-overview.md) topics are great places to get started.  The [e-Commerce component](ecommerce-components.md) topic will also provide an overview of the main extensibile e-Commerce components including modules, data actions and themes.
 
 
 ## Setting up a local online SDK development environment
