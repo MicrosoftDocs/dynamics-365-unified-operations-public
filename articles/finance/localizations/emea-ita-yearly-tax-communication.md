@@ -1,53 +1,68 @@
+---
+# required metadata
+
+title: Yearly tax communication
+description: This topic provides information about the yearly tax communication report in Italy. 
+author: anasyash
+manager: AnnBe
+ms.date: 11/03/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 264294
+ms.search.region: Italy
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: AX 7.0.1
+
+---
+
 # Yearly tax communication
 
-The **Yearly tax communication** report contains annual tax information for
-Italy that will be submitted to the tax authority.
+[!include [banner](../includes/banner.md)]
+
+The **Yearly tax communication** report contains annual tax information for Italy that will be submitted to the tax authority.
 
 ## Prerequisites
 
-Set up Italian sales tax books by following the instructions in [Italian sales
-tax books](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-ita-fiscal-books.md#set-up-sales-tax-books).
+Set up Italian sales tax books by following the instructions in [Italian sales tax books](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-ita-fiscal-books.md#set-up-sales-tax-books).
 
 ## Set up the Yearly tax communication report
 
-1.  In Microsoft Dynamics 365 Finance, go to **Organization administration \>
-    Organizations \> Legal entities**.
+1. In Microsoft Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. On the **Registration numbers** FastTab, in the **Tax registration number** field, enter the tax registration number of your company.
+3. On the **Tax registration** FastTab, in the **Fiscal code** field, enter the fiscal code of your company.
+4. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following value-added tax (VAT) declaration formats:
 
-2.  On the **Registration numbers** FastTab, in the **Tax registration number**
-    field, enter the tax registration number of your company.
-
-3.  On the **Tax registration** FastTab, in the **Fiscal code** field, enter the
-    fiscal code of your company.
-
-4.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following value-added tax (VAT) declaration formats:
-
--   **Italian tax reports model**
-
--   **Yearly tax communication (IT)**
-
--   **Yearly VAT communication model mapping**
+    - **Italian tax reports model**
+    - **Yearly tax communication (IT)**
+    - **Yearly VAT communication model mapping**
 
 For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-5.  In Finance, go to **Tax \> Setup \> Parameters \> General ledger
-    parameters**.
+5. In Finance, go to **Tax \> Setup \> Parameters \> General ledger parameters**.
+6. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
+7. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select the **Yearly tax communication (IT)** format that you downloaded earlier.
+8. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 
-6.  On the **Number sequences** tab, select a number sequence for the **Tax
-    communication ID** reference.
-
-7.  On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in
-    the **Format mapping** field, select the **Yearly tax communication (IT)**
-    format that you downloaded earlier.
-
-8.  Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
-
-![](media/1_Yearly_tax_communication_setup.png)
+![Yearly tax communication setup page](media/1_Yearly_tax_communication_setup.png)
 
 > [!NOTE]
 > To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
 
-9.  On the **Field setup** tab, create lines, and set the following fields on
-    them.
+9. On the **Field setup** tab, create lines, and set the following fields on them.
 
 <table>
 <tbody>
@@ -140,52 +155,40 @@ For more information, see [Download Electronic reporting configurations from Lif
 > [!NOTE]
 > If any changes are made in the declaration, you must change the field settings.
 
-10.  For fields where the **Calculation** field is set to **Tax transactions**,
-    on the **Selected tax codes** tab, select **New** to a add a line for each
-    sales tax code that should be available as a field value.
+10. For fields where the **Calculation** field is set to **Tax transactions**, on the **Selected tax codes** tab, select **New** to a add a line for each sales tax code that should be available as a field value.
 
-![](media/2_Yearly_tax_communication_setup.png)
+    ![Yearly tax communication setup page, Selected tax codes tab](media/2_Yearly_tax_communication_setup.png)
 
-11.  Select **Exceptions** to set up main accounts that should be excluded from
-    the query.
+11. Select **Exceptions** to set up main accounts that should be excluded from the query.
 
-You should create enough unique sales tax codes so that each is linked to a single field in the yearly declaration. This approach helps simplify the setup of the yearly declaration.
+    Create enough unique sales tax codes so that each is linked to a single field in the yearly declaration. This approach helps simplify the setup of the yearly declaration.
 
-However, if the same sales tax code can be linked to multiple fields, you should set up additional filters for the tax transaction.
+    However, if the same sales tax code can be linked to multiple fields, you should set up additional filters for the tax transaction.
 
-12.  Select **Query**, and specify additional filtering rules for posted sales
-    tax. For example, you can specify additional filters for the sales tax
-    direction or sales tax book section.
+12. Select **Query**, and specify additional filtering rules for posted sales tax. For example, you can specify additional filters for the sales tax direction or sales tax book section.
 
 You can do the following additional setup for fields where the **Calculation** field is set to **Total**. The system can then automatically calculate values for tags that should represent a result that is calculated by using a formula that consists of the values of other fields (but only fields where the **Calculation** field isn't set to **Total**).
 
-13.  Select the line where the **Calculation** field is set to **Total**.
+13. Select the line where the **Calculation** field is set to **Total**.
+14. On the **Total amount** tab, select **New** to add lines for all fields that should be totaled.
 
-14.  On the **Total amount** tab, select **New** to add lines for all fields that
-    should be totaled.
+    ![Yearly tax communication setup page, Total amount tab](media/3_Yearly_tax_communication_setup.png)
 
-![](media/3_Yearly_tax_communication_setup.png)
+15. Set the following fields.
 
-15.  Set the following fields.
-
-| Field name | Description                                                                                                                 |
-|------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Sign       | Enter **1** if the value from the field should be taken as is. Enter **-1** if the value from the field should be inverted. |
-| Field ID   | Select the field that should be totaled. Fields where the **Calculation** field is set to **Total** can't be selected here. |
+    | Field name | Description                                                                                                                 |
+    |------------|-----------------------------------------------------------------------------------------------------------------------------|
+    | Sign       | Enter **1** if the value from the field should be taken as is. Enter **-1** if the value from the field should be inverted. |
+    | Field ID   | Select the field that should be totaled. Fields where the **Calculation** field is set to **Total** can't be selected here. |
 
 ### Formats of the fields
 
-Usually, fields values can be either numeric (**NU** format) or alphanumeric
-(**AN** format).
+Usually, fields values can be either numeric (**NU** format) or alphanumeric (**AN** format).
 
--   **Numeric (NU)** – These values are amounts. They are right-aligned and have
-    a fixed length of 16 characters. Space characters are used for padding,
+- **Numeric (NU)** – These values are amounts. They are right-aligned and have a fixed length of 16 characters. Space characters are used for padding,
+- **Alphanumeric (AN)** – These values are strings. They are left-aligned and have a fixed length of 16 characters. Space characters are used for padding.
 
--   **Alphanumeric (AN)** – These values are strings. They are left-aligned and
-    have a fixed length of 16 characters. Space characters are used for padding.
-
-In the **Format** column, you can specify a field format. In addition to **NU**
-and **AN**, the following formats are available for selection.
+In the **Format** column, you can specify a field format. In addition to **NU**and **AN**, the following formats are available for selection.
 
 | Format | Description                                                                                                                                               | Padding character | Example                                    |
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------------------------------------------|
@@ -205,30 +208,24 @@ and **AN**, the following formats are available for selection.
 
 ## Create a yearly tax declaration
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
+1. Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
+2. Select **Create new** to create header information for the **Yearly tax communication** report for the previous year. The number of lines that are created matches the number of Italian sales tax books.
 
-2.  Select **Create new** to create header information for the **Yearly tax
-    communication** report for the previous year. The number of lines that are
-    created matches the number of Italian sales tax books.
+![Yearly tax communication page, Overview tab](media/4_Yearly_tax_communication_setup.png)
 
-![](media/4_Yearly_tax_communication_setup.png)
+3. On the **General** tab, review the following information.
 
-3.  On the **General** tab, review the following information.
+    | Field                | Description                                                                                                                                                                                                                                                                                                                |
+    |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Tax communication ID | The identification number of the **Yearly tax communication** report.                                                                                                                                                                                                                                                      |
+    | Years                | The year of the tax communication. This field is automatically set to the previous year. For example, if you're creating the report in 2020, this field is set to **2019**.                                                                                                                                                |
+    | ATECOFIN Code        | The tax code that is associated with the classification of possible company activities. This field is filled in from the **Italian sales tax books** page. For more information, see [Italian sales tax books](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-fiscal-books#set-up-sales-tax-books). |
+    | Exported             | A value that indicates whether the .ivc file has been exported. This field and the next two fields are automatically set when you select **Export and generate file**.                                                                                                                                                     |
+    | Date of export       | The date when the .ivc file was exported.                                                                                                                                                                                                                                                                                  |
+    | Export file name     | The name of the .ivc file that was exported.                                                                                                                                                                                                                                                                               |
 
-| Field                | Description                                                                                                                                                                                                                                                                                                                |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tax communication ID | The identification number of the **Yearly tax communication** report.                                                                                                                                                                                                                                                      |
-| Years                | The year of the tax communication. This field is automatically set to the previous year. For example, if you're creating the report in 2020, this field is set to **2019**.                                                                                                                                                |
-| ATECOFIN Code        | The tax code that is associated with the classification of possible company activities. This field is filled in from the **Italian sales tax books** page. For more information, see [Italian sales tax books](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-fiscal-books#set-up-sales-tax-books). |
-| Exported             | A value that indicates whether the .ivc file has been exported. This field and the next two fields are automatically set when you select **Export and generate file**.                                                                                                                                                     |
-| Date of export       | The date when the .ivc file was exported.                                                                                                                                                                                                                                                                                  |
-| Export file name     | The name of the .ivc file that was exported.                                                                                                                                                                                                                                                                               |
-
-4.  Select the required line, and then select **Open** to open the **Yearly tax
-    communication** page, which has the information about the selected
-    declaration.
-
-5.  On the **Header** tab, review the following information.
+4. Select the required line, and then select **Open** to open the **Yearly tax communication** page, which has the information about the selected declaration.
+5. On the **Header** tab, review the following information.
 
 <table>
 <tbody>
@@ -363,7 +360,7 @@ and **AN**, the following formats are available for selection.
 <td>
 <p>Select the declarer's role:</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Legal representative</strong> &ndash; The declarer is a managing partner.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Administrator of under aged</strong> &ndash; The declarer is an administrator for minors or for people who have disabilities.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Administrator of underaged</strong> &ndash; The declarer is an administrator for minors or for people who have disabilities.</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Controller of sequestered goods</strong> &ndash; The declarer is an administrator for seized goods.</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Fiscal representative</strong> &ndash; The declarer is a tax representative for non-residents.</p>
 <p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>General legatee</strong> &ndash; The declarer is an heir to the company.</p>
@@ -444,31 +441,16 @@ and **AN**, the following formats are available for selection.
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-6.  On the **Report lines** tab, review or edit the lines and amounts that you
-    previously set up for the **Yearly tax communication** report on the
-    **Yearly tax communication setup** page. For lines where the **Calculation**
-    field is set to **Manual**, manually enter the amounts.
-
-7.  On the **Details** tab, review or edit the details of each line on the
-    **Yearly tax communication** report.
-
-8.  Close the **Yearly tax communication** page that has the information about
-    the selected declaration.
-
-9.  On the **Yearly tax communication** page that has the list of declarations,
-    select **Export**.
-
-10.  In the **Create export file** dialog box, in the **File name** field, enter
-    a value. Then select **OK** to create and export the .ivc file.
-
-11.  Select **Delete export** to delete the .ivc file that has been created and
-    exported.
+6. On the **Report lines** tab, review or edit the lines and amounts that you previously set up for the **Yearly tax communication** report on the **Yearly tax communication setup** page. For lines where the **Calculation** field is set to **Manual**, manually enter the amounts.
+7. On the **Details** tab, review or edit the details of each line on the **Yearly tax communication** report.
+8. Close the **Yearly tax communication** page that has the information about the selected declaration.
+9. On the **Yearly tax communication** page that has the list of declarations, select **Export**.
+10. In the **Create export file** dialog box, in the **File name** field, enter a value. Then select **OK** to create and export the .ivc file.
+11. Select **Delete export** to delete the .ivc file that has been created and exported.
 
 ## Appendix 1. Structure of the yearly VAT declaration
 
-The following table provides an example of the structure of the yearly VAT
-declaration. This example is based on the 2020 declaration. Sections that aren't
-included in the setup example are *italicized*.
+The following table provides an example of the structure of the yearly VAT declaration. This example is based on the 2020 declaration. Sections that aren't included in the setup example are *italicized*.
 
 <table>
 <tbody>
@@ -616,7 +598,7 @@ included in the setup example are *italicized*.
 </tr>
 <tr>
 <td>
-<p>Section 2 - Total purchases and imports, total tax, intra-community purchases, imports and purchases from San Marino</p>
+<p>Section 2 - Total purchases and imports, total tax, intra-community purchases, imports, and purchases from San Marino</p>
 </td>
 <td>
 <p>VF023001-VF027004</p>
@@ -1032,79 +1014,65 @@ included in the setup example are *italicized*.
 
 Here is an example for the **ITCO** legal entity.
 
-1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up
-    the following sales tax codes.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up the following sales tax codes.
 
-| Sales tax code | Percentage | Description                                                                              |
-|----------------|------------|------------------------------------------------------------------------------------------|
-| DOMP22         | 22         | Domestic purchases at a rate of 22 percent.                                              |
-| DOMS22         | 22         | Domestic sales at a rate of 22 percent.                                                  |
-| EUP22          | 22         | EU purchases at a rate of 22 percent, where the **Use tax** option is set to **Yes**.    |
-| RC             | 22         | Domestic sales reverse charge where the **Exempt** option is set to **Yes**.             |
-| EUS            | 22         | EU sales where the **Exempt** option is set to **Yes** on the **Sales tax groups** page. |
+    | Sales tax code | Percentage | Description                                                                              |
+    |----------------|------------|------------------------------------------------------------------------------------------|
+    | DOMP22         | 22         | Domestic purchases at a rate of 22 percent.                                              |
+    | DOMS22         | 22         | Domestic sales at a rate of 22 percent.                                                  |
+    | EUP22          | 22         | EU purchases at a rate of 22 percent, where the **Use tax** option is set to **Yes**.    |
+    | RC             | 22         | Domestic sales reverse charge where the **Exempt** option is set to **Yes**.             |
+    | EUS            | 22         | EU sales where the **Exempt** option is set to **Yes** on the **Sales tax groups** page. |
 
-2.  Go to **Tax \> Setup \> Parameters \> General ledger parameters**.
+2. Go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters**.
+3. On the **Number sequences** tab, select a number sequence for the **Tax communication ID** reference.
+4. On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in the **Format mapping** field, select **Yearly tax communication (IT)**.
+5. Go to **Tax** \> **Setup** \> **Sales tax** \> **Yearly tax communication setup**, and add the following lines.
 
-3.  On the **Number sequences** tab, select a number sequence for the **Tax
-    communication ID** reference.
-
-4.  On the **Sales tax** tab, on the **Yearly tax communication** FastTab, in
-    the **Format mapping** field, select **Yearly tax communication (IT)**.
-
-5.  Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**, and
-    add the following lines.
-
-| Field ID | Description                                                                                                                                              | Format | Calculation      | Tax        | Sign | Selected sales tax code tab | Totals tab                   |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|--------|------------------|------------|------|-----------------------------|------------------------------|
-| VE023001 | 22% tax base of agricultural tax transactions (art.34, c.1) and professional operations                                                                  | NU     | Tax transactions | Tax base   | 1    | DOMS22                      |                              |
-| VE023002 | 22% tax on agricultural tax transactions (art.34, c.1) and professional operations                                                                       | NU     | Tax transactions | Tax amount | 1    | DOMS22                      |                              |
-| VE030003 | Intra-community sales                                                                                                                                    | NU     | Tax transactions | Tax base   | 1    | EUS                         |                              |
-| VE030001 | Total operations which contribute to formation of ceiling (plafond)                                                                                      | NU     | Total            |            | 1    |                             | VE030003                     |
-| VE035007 | Sales of electronic products                                                                                                                             | NU     | Tax transactions | Tax base   | 1    | RC                          |                              |
-| VE035001 | Operations with application of reverse charge                                                                                                            | NU     | Total            |            | 1    |                             | VE035007                     |
-| VE050001 | Business turnover                                                                                                                                        | NU     | Total            |            | 1    |                             | VE023001, VE030003, VE035007 |
-| VF014001 | Taxable purchases and imports (22%)                                                                                                                      | NU     | Tax transactions | Tax base   | 1    | DOMP22, EUP22               |                              |
-| VF014002 | Tax on purchases and imports (22%)                                                                                                                       | NU     | Tax transactions | Tax amount | 1    | DOMP22, EUP22               |                              |
-| VF023001 | Total PURCHASES AND IMPORTS                                                                                                                              | NU     | Total            |            | 1    |                             | VF014001                     |
-| VF023002 | Total PURCHASES AND IMPORTS - TAX                                                                                                                        | NU     | Total            |            | 1    |                             | VF014002                     |
-| VF025002 | Total TAX ON TAXABLE PURCHASES AND IMPORTS                                                                                                               | NU     | Total            |            | 1    |                             | VF014002                     |
-| VF026001 | Intra-Community purchases – tax base                                                                                                                     | NU     | Tax transactions | Tax base   | 1    | EUP22                       |                              |
-| VF026002 | Intra-Community purchases - tax                                                                                                                          | NU     | Tax transactions | Tax amount | 1    | EUP22                       |                              |
-| VJ009001 | Intra-community purchases of goods (including purchases of industrial gold, pure silver, and goods as referred to in art. 74, paragraphs 7 and 8)        | NU     | Tax transactions | Tax base   | 1    | EUP22                       |                              |
-| VJ009002 | Tax on Intra-community purchases of goods (including purchases of industrial gold, pure silver, and goods as referred to in art. 74, paragraphs 7 and 8) | NU     | Tax transactions | Tax amount | 1    | EUP22                       |                              |
-| VJ019002 | Total tax                                                                                                                                                | NU     | Total            |            | 1    |                             | VJ009002                     |
-| VE024001 | Total TAX BASE of active operations                                                                                                                      | NU     | Total            |            | 1    |                             | VE023001                     |
-| VE024002 | Total TAX on active operations                                                                                                                           | NU     | Total            |            | 1    |                             | VE023002                     |
-| VE026002 | Total tax (VE24 +/- VE25)                                                                                                                                | NU     | Total            |            | 1    |                             | VE023002                     |
-| VF037001 | Admissible deductible VAT (Section 3-A)                                                                                                                  | NU     | Total            |            | 1    |                             | VF014002                     |
-| VF071002 | Admissible deductible VAT (Section 4)                                                                                                                    | NU     | Total            |            | 1    |                             | VF014002                     |
-| VL001001 | Output VAT                                                                                                                                               | NU     | Total            |            | 1    |                             | VJ009002, VE023002           |
-| VL002001 | Deductible VAT                                                                                                                                           | NU     | Total            |            | 1    |                             | VF014002                     |
+    | Field ID | Description                                                                                                                                              | Format | Calculation      | Tax        | Sign | Selected sales tax code tab | Totals tab                   |
+    |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|--------|------------------|------------|------|-----------------------------|------------------------------|
+    | VE023001 | 22% tax base of agricultural tax transactions (art.34, c.1) and professional operations                                                                  | NU     | Tax transactions | Tax base   | 1    | DOMS22                      |                              |
+    | VE023002 | 22% tax on agricultural tax transactions (art.34, c.1) and professional operations                                                                       | NU     | Tax transactions | Tax amount | 1    | DOMS22                      |                              |
+    | VE030003 | Intra-community sales                                                                                                                                    | NU     | Tax transactions | Tax base   | 1    | EUS                         |                              |
+    | VE030001 | Total operations which contribute to formation of ceiling (plafond)                                                                                      | NU     | Total            |            | 1    |                             | VE030003                     |
+    | VE035007 | Sales of electronic products                                                                                                                             | NU     | Tax transactions | Tax base   | 1    | RC                          |                              |
+    | VE035001 | Operations with application of reverse charge                                                                                                            | NU     | Total            |            | 1    |                             | VE035007                     |
+    | VE050001 | Business turnover                                                                                                                                        | NU     | Total            |            | 1    |                             | VE023001, VE030003, VE035007 |
+    | VF014001 | Taxable purchases and imports (22%)                                                                                                                      | NU     | Tax transactions | Tax base   | 1    | DOMP22, EUP22               |                              |
+    | VF014002 | Tax on purchases and imports (22%)                                                                                                                       | NU     | Tax transactions | Tax amount | 1    | DOMP22, EUP22               |                              |
+    | VF023001 | Total PURCHASES AND IMPORTS                                                                                                                              | NU     | Total            |            | 1    |                             | VF014001                     |
+    | VF023002 | Total PURCHASES AND IMPORTS - TAX                                                                                                                        | NU     | Total            |            | 1    |                             | VF014002                     |
+    | VF025002 | Total TAX ON TAXABLE PURCHASES AND IMPORTS                                                                                                               | NU     | Total            |            | 1    |                             | VF014002                     |
+    | VF026001 | Intra-Community purchases – tax base                                                                                                                     | NU     | Tax transactions | Tax base   | 1    | EUP22                       |                              |
+    | VF026002 | Intra-Community purchases - tax                                                                                                                          | NU     | Tax transactions | Tax amount | 1    | EUP22                       |                              |
+    | VJ009001 | Intra-community purchases of goods (including purchases of industrial gold, pure silver, and goods as referred to in art. 74, paragraphs 7 and 8)        | NU     | Tax transactions | Tax base   | 1    | EUP22                       |                              |
+    | VJ009002 | Tax on Intra-community purchases of goods (including purchases of industrial gold, pure silver, and goods as referred to in art. 74, paragraphs 7 and 8) | NU     | Tax transactions | Tax amount | 1    | EUP22                       |                              |
+    | VJ019002 | Total tax                                                                                                                                                | NU     | Total            |            | 1    |                             | VJ009002                     |
+    | VE024001 | Total TAX BASE of active operations                                                                                                                      | NU     | Total            |            | 1    |                             | VE023001                     |
+    | VE024002 | Total TAX on active operations                                                                                                                           | NU     | Total            |            | 1    |                             | VE023002                     |
+    | VE026002 | Total tax (VE24 +/- VE25)                                                                                                                                | NU     | Total            |            | 1    |                             | VE023002                     |
+    | VF037001 | Admissible deductible VAT (Section 3-A)                                                                                                                  | NU     | Total            |            | 1    |                             | VF014002                     |
+    | VF071002 | Admissible deductible VAT (Section 4)                                                                                                                    | NU     | Total            |            | 1    |                             | VF014002                     |
+    | VL001001 | Output VAT                                                                                                                                               | NU     | Total            |            | 1    |                             | VJ009002, VE023002           |
+    | VL002001 | Deductible VAT                                                                                                                                           | NU     | Total            |            | 1    |                             | VF014002                     |
 
 > [!NOTE]
 > To view the "Yearly VAT communication" form for the year 2020, and instructions for it, see [Model and instructions - VAT 2020](https://www.agenziaentrate.gov.it/portale/web/guest/iva-2020/modello-e-istruzioni-imprese).
 
-6.  Refresh the page.
+6. Refresh the page.
+7. Post the following transactions. For example, for customer invoices, go to **Accounts receivable \> Invoices \> All free text invoices**. For vendor invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
 
-7.  Post the following transactions. For example, for customer invoices, go to
-    **Accounts receivable \> Invoices \> All free text invoices**. For vendor
-    invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
+    | Date              | Transaction type | Amount net | VAT amount | Sales tax code | Expected field                                        | Expected sum            |
+    |-------------------|------------------|------------|------------|----------------|-------------------------------------------------------|-------------------------|
+    | February 1, 2019  | Vendor invoice   | 1000       | 220        | DOMP22         | VF014001 VF014002                                     | 1000 220                |
+    | February 10, 2019 | Vendor invoice   | 800        | 176        | EUP22          | VF014001 VF014002 VF026001 VF026002 VJ009001 VJ009002 | 800 176 800 176 800 176 |
+    | February 2, 2019  | Customer invoice | 1000       | 220        | DOMS22         | VE023001 VE023002                                     | 1000 220                |
+    | February 5, 2019  | Customer invoice | 1500       | 0          | EUS            | VE030003                                              | 1500                    |
+    | March 1, 2019     | Customer invoice | 500        | 0          | RC             | VE035007                                              | 500                     |
 
-| Date              | Transaction type | Amount net | VAT amount | Sales tax code | Expected field                                        | Expected sum            |
-|-------------------|------------------|------------|------------|----------------|-------------------------------------------------------|-------------------------|
-| February 1, 2019  | Vendor invoice   | 1000       | 220        | DOMP22         | VF014001 VF014002                                     | 1000 220                |
-| February 10, 2019 | Vendor invoice   | 800        | 176        | EUP22          | VF014001 VF014002 VF026001 VF026002 VJ009001 VJ009002 | 800 176 800 176 800 176 |
-| February 2, 2019  | Customer invoice | 1000       | 220        | DOMS22         | VE023001 VE023002                                     | 1000 220                |
-| February 5, 2019  | Customer invoice | 1500       | 0          | EUS            | VE030003                                              | 1500                    |
-| March 1, 2019     | Customer invoice | 500        | 0          | RC             | VE035007                                              | 500                     |
-
-8.  Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
-
-9.  Select **Create new** to create a yearly tax communication record for the
-    previous year (2019).
-
-10.  Select the new line, select **Open**, and review the data that is generated
-    for the declaration.
+8. Go to **Tax \> Declarations \> Sales tax \> Yearly tax communication**.
+9. Select **Create new** to create a yearly tax communication record for the previous year (2019).
+10. Select the new line, select **Open**, and review the data that is generated for the declaration.
 
 Fields with **Total** selected in the **Calculation** field are marked in bold.
 
@@ -1139,28 +1107,22 @@ Fields with **Total** selected in the **Calculation** field are marked in bold.
 
 To download example setup for the 2020 declaration, see [IVA example setup 2020](https://mbs.microsoft.com/customersource/Global/AX/downloads/tax-regulatory-updates/ItalianAnnualVATdeclaration). To access the link, you need to have access to CustomerSource.
 
-1.  Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
+1. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
+2. Select the **Open in Microsoft Office** button, and then, under **Open in Excel**, select **Yearly tax communication setup (DEMF)**.
 
-2.  Select the **Open in Microsoft Office** button, and then, under **Open in
-    Excel**, select the Yearly tax communication setup.
+    ![Yearly tax communication setup (DEMF) selection](media/6_Export_to_Excel.png)
 
-![](media/6_Export_to_Excel.png)
+3. Select **Download**.
+4. Open the downloaded file, and enable editing.
+5. Copy the data from the file downloaded above and paste the data to the file that is opened, and then select **Publish**.
 
-3.  Select **Download**.
+    ![Publish button](media/5_Export_to_Excel.png)
 
-4.  Open the downloaded file, and enable editing.
+6. Review settings and make necessary updates. For example, set up sales tax codes that exist in the application.
+7. Consider the following information. Some totals are not configured in the example and should be calculated manually using the formula specified in official guidance. These are the following totals:
 
-5.  Copy the data from the file downloaded above and paste the data to the file that is opened, and
-    then select **Publish**.
-
-![](media/5_Export_to_Excel.png)
-
-6.  Review settings and make necessary updates. For example, set up sales tax codes that exist in the application.
-
-7.  Consider the following information. Some totals are not configured in the example and should be calculated manually using the formula specified in official guidance. These are the following totals:
    - VF037001 VAT admissible for deduction (IVA ammessa in detrazione)
    - VF071002 VAT admissible for deduction (IVA ammessa in detrazione)
    - VL032001 VAT payable (IVA a debito)
    - VL033001 VAT credit (IVA a credito)
    
-
