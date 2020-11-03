@@ -5,7 +5,7 @@ title: Business events overview
 description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 Finance and Operations applications.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/23/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,7 +70,7 @@ The next step is to manage the endpoints.
 The application allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
 
 > [!IMPORTANT]
-> The dedicated batch threads has been reported to have reliability issues. Microsoft is working on fixing this issue and as a result, Microsoft recommends to schedule the manual batch job to process business events as explained below. Once the issues with the dedicated threads is fixed, Microsoft will update this section with updated recommendation.
+> There may be reliability issues with dedicated batch threads. Microsoft is working to resolve this issue and as a result, we recommend that you schedule the manual batch job to process business events, as explained below. We will update this topic when this issue is resolved.
 
 The business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The batch job can be enabled and scheduled from the **Business events parameters** page. 
 
