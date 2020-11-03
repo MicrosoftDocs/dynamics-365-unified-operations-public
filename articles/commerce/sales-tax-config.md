@@ -1,29 +1,35 @@
 ---
 # required metadata
-title: [Sales tax configurations for online orders ]
-description: [This topic provides an overview and details of sales tax group selection for different online order types in Dynamics 365 Commerce.]
-author: [gvrmohanreddy]
-manager: jeffbl
-ms.date: 10/15/2020
+
+title: Sales tax configurations for online orders
+description: This topic provides an overview and details of sales tax group selection for different online order types in Dynamics 365 Commerce.
+author: gvrmohanreddy
+manager: AnnBe
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
 ms.technology: 
+
 # optional metadata
-# ms.search.form:  
-#ROBOTS: 
+
+# ms.search.form: 
+# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
+ms.custom: 
+ms.assetid:
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: gmohanv
-ms.search.validFrom: 2020-09-20
-ms.dyn365.ops.version: 10.0.15
+ms.search.validFrom: 2020-11-01
+ms.dyn365.ops.version: 10.0.16
+
 ---
+
 # Sales taxes configuration for online orders
 
 This topic provides an overview and details of sales tax group selection for different online order types. 
