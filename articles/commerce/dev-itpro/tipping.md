@@ -34,14 +34,14 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce. This feature lets you edit e-commerce and point of sale (POS) order payments from Commerce headquarters.
+This topic describes payments SDK support for tipping through the payment terminal. It is intended to support scenarios where a payment terminal can be configured to present the customer with predefined tip amounts or percentages, which can be designated at the time of payment. For processors which support device level tipping, and that can return the tip amount as part of the authorization response,  a new property has been added to the payments SDK. This property can then be added to the transaction using extensiblity. This feature does not add support for tipping or tip reporting at the point of sale. To build full tipping capabilities, POS extensions will be needed. 
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Commerce payment | A payment that is associated with a customer order that was generated at the POS or in the e-commerce storefront. |
-| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion). 
+| Tips | Also known as a gratuities, tips are common in quick service and hospitalities to provide a payment directly to the store or restaurant employee who is providing services |
+| Header level charge | A charge that can be applied to a purchase that is not for a specific line item. 
 | Call center order | An order that a call center user creates in Commerce headquarters. |
 | Accounts receivable (AR) sales order | An order that a user who isn't a call center user creates through Accounts receivable in Commerce headquarters. Payments for AR sales orders can't be edited through call center order completion. |
 
