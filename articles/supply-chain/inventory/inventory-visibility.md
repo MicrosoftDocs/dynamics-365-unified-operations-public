@@ -332,8 +332,46 @@ A special header is used for communicating with Dynamics 365 services through HT
 
 `x-ms-environment-id: 2db79622-f97a-4d64-9844-d12efed41796`
 
-The body of the post event will be JSON, such as in the following example.
+#### Posting on-hand changes query example 1
 
+This example shows a scenario where you will set up the dimension configuration in Power Apps.
+
+Use the following query to configure the dimension mapping in Power Apps:
+
+```json
+{
+    "PosSizeId": "SizeId",
+    "PosColorId": "ColorId",
+    "PosSiteId": "SiteId",
+    "PosLocationId": "LocationId"
+}
+```
+
+Now you can specify the `dimensionDataSource` and use custom dimensions in your queries. The system will automatically convert custom dimensions to base dimensions.
+
+```json
+{
+    "id": "demo-test-00007",
+    "organizationId": "usmf",
+    "productId": "MyProduct",
+    "quantities": {
+        "pos": {
+            "Outbound": 1
+        }
+    },
+    "dimensionDataSource": "pos",
+    "dimensions": {
+        "PosSizeId": "Large",
+        "PosColorId": "Red",
+        "PosSiteId": "2",
+        "PosLocationId": "21"
+    }
+}
+```
+
+#### Posting on-hand changes query example 2
+
+This example shows a scenario where no mappings are set up for the dimension configuration in Power Apps, so the posting should also use the base dimensions. Dimensions must be base dimensions when the `dimensionDataSource` field is null, empty, or whitespace.
 
 ```json
 {
@@ -354,7 +392,9 @@ The body of the post event will be JSON, such as in the following example.
 }
 ```
 
-The fields of this JSON document have the properties listed in the following table.
+#### JSON document field properties
+
+The fields from the JSON query examples provided previously have the properties listed in the following table.
 
 | Field ID | Description |
 |---|---|
@@ -372,7 +412,31 @@ The endpoint for querying the current on-hand will have a similar URL:
 
 It will be queried with the HTTP `POST` method.
 
-An example query might look like the following.
+#### Current on-hand query example 1
+
+This example shows a scenario where you have already completed the dimension configuration in Power Apps. You can specify the `DimensionDataSource` in `filters` and specify custom dimensions in both `filters` and `groupByValues`. The system will automatically convert custom dimensions to base dimensions.
+
+```json
+{
+    "filters": {
+        "OrganizationId": ["usmf"],
+        "ProductId": ["MyProduct"],
+        "DimensionDataSource": ["Pos"],
+        "PosLocationId": ["21"],
+        "PosSiteId": ["2"],
+        "PosColorId": ["Red"]
+    },
+    "groupByValues": [
+        "PosSizeId",
+        "PosColorId"
+    ],
+    "returnNegative": true
+}
+```
+
+#### Current on-hand query example 2
+
+This example shows a scenario where no mappings are set up for the dimension configuration in Power Apps, so the posting should also use the base dimensions. Dimensions must be base dimensions when the `dimensionDataSource` field, under `filters` is null, empty, or whitespace.
 
 ```json
 {
@@ -391,7 +455,9 @@ An example query might look like the following.
 }
 ```
 
-This could return a result like this.
+#### Example return result
+
+The queries shown in the previous examples could return a result like this.
 
 ```json
 [
