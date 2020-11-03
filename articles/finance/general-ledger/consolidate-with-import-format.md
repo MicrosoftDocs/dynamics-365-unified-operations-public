@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consolidate with Import - Format
-description: 
+description: This topic lists detailed information about the import format that's used when you're consolidating financial data from multiple legal entities. The import format must be saved as a text (.txt) file. 
 author: jinniew
 manager: AnnBe
 ms.date: 10/09/2020
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include banner] 
 
-This topic lists the import format that's used when you're consolidating financial data from multiple legal entities. The information must be saved as a text (.txt) file. 
+This topic lists detailed information about the import format that's used when you're consolidating financial data from multiple legal entities. The import format must be saved as a text (.txt) file. 
 
 Below is the import format that you would use when using Consolidate with Import. You would save the file as a .txt file.
 
