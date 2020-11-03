@@ -233,7 +233,7 @@ Write-Output "TSG WindowsAzureStorage script succeeded"
 
 ## <a name="taxengine"></a>TSG\_RemoveFilesFromZip.ps1
 
-The following script is used to fix an issue that occurs for some customers who were previously on versions 10.0.5 through 10.0.9. Due to how the prepare process works, there are some older versions of DLLs that remain in the TaxEngine folder, that have now been moved in newer releases to different module folders. This script ensures that these DLLs are removed from the downloaded asset, before being deployed to the AOS nodes.
+The following script is used to fix an issue that occurs for some customers who were previously on versions 10.0.5 through 10.0.9. Due to how the prepare process works, there are some older versions of DLLs that remain in the TaxEngine folder, which in newer releases have been moved to different module folders. This script ensures that these DLLs are removed from the downloaded asset, before being deployed to the AOS nodes.
 
 ```powershell
 [CmdletBinding()]
