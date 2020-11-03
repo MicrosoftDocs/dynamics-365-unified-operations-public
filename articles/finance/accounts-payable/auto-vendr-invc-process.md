@@ -67,7 +67,7 @@ Posting simulation completes the validation steps that are done during the posti
 
 ## Vendor invoice automation – Enhanced experience for viewing workflow and automation historical information for vendor invoices
 
-An easy-to-read view of vendor invoice workflow history is provided. Vendor invoice workflow history can be accessed directly from the vendor invoice. Therefore, fewer clicks are required to find that information. Also, if your organization has enabled the ability to automatically submit imported vendor invoices to workflow, the automation history is provided for the imported invoices. The automation history helps you identify the current process step, as well as the steps that have already been completed. When a step is unsuccessful, detailed information is provided to help you understand the reason for the failure
+An easy-to-read view of vendor invoice workflow history is provided. Vendor invoice workflow history can be accessed directly from the vendor invoice. Therefore, fewer clicks are required to find that information. If your organization has enabled the ability to automatically submit imported vendor invoices to workflow, the automation history is provided for the imported invoices. The automation history helps you identify the current process step, as well as the steps that have already been completed. When a step is unsuccessful, the system provides detailed information to help you understand the reason for the failure.
 
 ## Vendor invoice automation – Analytics and metrics
 
