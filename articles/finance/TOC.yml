@@ -3746,9 +3746,9 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
-          - name: By subscribing to an event to request a response from subscribing handler
+          - name: Subscribe to an event to request a response from subscribing handler
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
-          - name: By delegating the creation of an ER destination to a custom destination factory
+          - name: Delegate the creation of an ER destination to a custom destination factory
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
     - name: Mobile app
       items:
