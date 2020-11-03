@@ -45,6 +45,7 @@ The following table lists the integration patterns that are available.
 
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
+| Power platform integration    | [Virtual entities](power-platform/overview.md) |
 | Dual-write                    | [Dual-write overview](dual-write/dual-write-home-page.md) |
 | Classic data integration      | [Classic data integration overview](data-integration-cds.md) |
 | OData                         | [Open Data Protocol (OData)](odata.md) |
@@ -56,7 +57,10 @@ The following table lists the integration patterns that are available.
 > [!NOTE]
 > For on premise deployments, the only supported API is the [Data management package REST API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
 
-## Dual-write vs. classic data integration patterns
+## Power platform integration
+Finance and Operations is a virtual data source in Common Data Service, and enables full create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in Finance and Operations. To enable CRUD operations on Finance and Operations entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. This allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations apps. This is explained in [Microsoft Power platform integration](power-platform/overview.md).
+
+## Dual-write vs. classic data integration patterns vs Virtual entities
 
 Dual-write provides synchronous, bi-directional, near-real time experience between model-driven applications in Dynamics 365 and Finance and Operations applications. Data synchronization happens with little or no intervention and is triggered by create, update and delete actions on an entity. Dual-write is suitable for interactive business scenarios that span across Dynamics 365 applications.
 
@@ -67,6 +71,7 @@ Classic data integration provides asynchronous and uni-directional data synchron
 | Dual-write             | Synchronous<br>Bi-directional   | No    | OData | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent | 
 | Classic data integration | Asynchronous, uni-directional | Yes   | DIXF | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent |
 
+Virtual entities provides a mechanism to use Microsoft Power Platform with Finance and Operations without having to physically copy data to Common Data Service. Hence, this guidance must be used to determine if the requirements will need Dual write or Data integrator or virtual entities. Virtual entities and Dual write/Data integrator are complimentary technologies such that, they can be used together if required.
 
 ## Synchronous vs. asynchronous integration patterns
 
