@@ -136,7 +136,7 @@ A job can be secured by roles, users, and legal entity at the same time.
 You can run a job one time by selecting the **Import** or **Export** button after you define the job. To set up a recurring job, select **Create recurring data job**.
 
 > [!NOTE]
-> An import or an export job can be run asynchronously by selecting the **Import** or **Export** button. Running in async uses the async framework, which is different than batch framework. However, like batch framework, async framework can also undergo throttling and as a result, the job may not execute immediately. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if async or a batch does not start due to throttling. The jobs can also be executed in a batch by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. The async option is useful when users interact directly with the user interface and are not power users to understand batch scheduling. Using a batch is an alternate option if large volumes need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective. If async and batch are both undergoing throttling due to high resource utilization on the system, then as an immediate workaround, the synchronous version of import/export can be used. The synchronous option will start immediately and will block the user interface because its executing synchronously. The browser window must remain open when the synchronous operation is in progress.
+> An import or an export job can be run by selecting the **Import** or **Export** button. This will schedule a batch job to run only once. The job may not execute immediately if batch service is throttling due to the load on the batch service. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if the batch does not start due to throttling. The jobs can also be scheduled to execute at a later time. This can be done by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. Using a batch is the recommended option because it will also help with large volumes of data that need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective.
 
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
@@ -201,7 +201,7 @@ The job history clean-up functionality in data management must be used to schedu
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-The functionality must be enabled in feature management and then can be accessed from **Data management \> Job history cleanup**.
+The **Execution history cleanup** feature must be enabled in feature management and then can be accessed from **Data management \> Job history cleanup**.
 
 ### Scheduling parameters
 
