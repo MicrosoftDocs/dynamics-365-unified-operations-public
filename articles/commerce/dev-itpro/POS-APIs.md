@@ -5,7 +5,7 @@ title: Point of sale (POS) APIs
 description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -155,68 +155,68 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 The following table lists APIs exposed to perform cart-related functionality.
 
-| POS API                                         |
-|-------------------------------------------------|
-| AddPreprocessedTenderLineToCartClientRequest    |
-| AddTenderLineToCartClientRequest                |
-| ConcludeTransactionClientRequest                |
-| GetCurrentCartClientRequest                     |
-| GetCurrentCartClientResponse                    |
-| GetKeyedInPriceClientRequest                    |
-| GetPickupDateClientRequest                      |
-| GetReasonCodeLinesClientRequest                 |
-| GetReceiptEmailAddressClientRequest             |
-| GetShippingDateClientRequest                    |
-| RefreshCartClientRequest                        |
-| ResumeSuspendedCartClientRequest                |
-| SaveAttributesOnCartClientRequest               |
-| SaveAttributesOnCartLinesClientRequest          |
-| SaveExtensionPropertiesOnCartClientRequest      |
-| SaveExtensionPropertiesOnCartLinesClientRequest |
-| SaveReasonCodeLinesOnCartClientRequest          |
-| SaveReasonCodeLinesOnCartLinesClientRequest     |
-| SelectSalesLinesForPickUpClientRequest          |
-| SetCartAttributesClientRequest                  |
-| ShowChangeDueClientRequest                      |
-| AddAffiliationOperationRequest                  |
-| AddItemToCartOperationRequest                   |
-| CalculateTotalOperationRequest                  |
-| ChangeCartLineUnitOfMeasureOperationRequest     |
-| CreateCustomerOrderOperationRequest             |
-| CreateCustomerQuoteOperationRequest             |
-| CustomerAccountDepositOperationRequest          |
-| DepositOverrideOperationRequest                 |
-| EditCustomerOrderOperationRequest               |
-| LineDiscountAmountOperationRequest              |
-| LineDiscountPercentOperationRequest             |
-| OverrideLineTaxFromListOperationRequest         |
-| OverrideLineTaxOperationRequest                 |
-| OverrideTransactionTaxOperationRequest          |
-| PickupAllOperationRequest                       |
-| PriceOverrideOperationRequest                   |
-| SetCartLineCommentOperationRequest              |
-| SetCartLineQuantityOperationRequest             |
-| SetCustomerOnCartOperationRequest               |
-| SetTransactionCommentOperationRequest           |
-| SuspendCurrentCartOperationRequest              |
-| TotalDiscountAmountOperationRequest             |
-| TotalDiscountPercentOperationRequest            |
-| VoidCartLineOperationRequest                    |
-| VoidTenderLineOperationRequest                  |
-| VoidTransactionOperationRequest                 |
-| CreateEmptyCartServiceRequest                   |
-| GetTaxOverridesServiceRequest                   |
-| UpdateTenderLineSignatureServiceRequest         |
-| CarryoutSelectedProductsOperationRequest |
-| AddCouponsOperationRequest |
-| CreateNonSalesTransactionServiceRequest |
-| ReturnTransactionOperationRequest |
-| AddLoyaltyCardToCartOperationRequest |
-| ReturnCartLineOperationRequest |
-| ReturnItemOperationRequest |
-| AddExpenseAccountLineToCartOperationRequest |
-| ShipAllCartLinesOperationRequest |
-| ShipSelectedCartLinesOperationRequest |
+| POS API                                   | Description                            | Release                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| AddPreprocessedTenderLineToCartClientRequest    | Adds the pre-processed tender line to the cart.   | 10.0.14  |
+| AddTenderLineToCartClientRequest                | Adds the tender line to the cart.  | 10.0.14  |
+| ConcludeTransactionClientRequest                | Concludes the transaction.    | 10.0.14  |
+| GetCurrentCartClientRequest                     | Gets the current cart.   | 10.0.14  |
+| GetKeyedInPriceClientRequest                    |  Gets the keyed in price.                                      | 10.0.14  |
+| GetPickupDateClientRequest                      |  Gets the pickup date.                                      | 10.0.14  |
+| GetReasonCodeLinesClientRequest                 |  Gets the reason code.                                      | 10.0.14  |
+| GetReceiptEmailAddressClientRequest             |  Gets the receipt email address.                                     | 10.0.14  |
+| GetShippingDateClientRequest                    |  Gets the shipping date.                                      | 10.0.14  |
+| RefreshCartClientRequest                        |  Refresh the current cart with the cart data from the server.                                      | 10.0.14  |
+| ResumeSuspendedCartClientRequest                | Resumes the suspended transaction based on the ID passed.                                       | 10.0.14  |
+| SaveAttributesOnCartClientRequest               | Saves the attributes on the cart.                                       | 10.0.14  |
+| SaveAttributesOnCartLinesClientRequest          | Saves the attributes on the cart line.                                       | 10.0.14  |
+| SaveExtensionPropertiesOnCartClientRequest      | Saves the extension properties on the cart.                                        | 10.0.14  |
+| SaveExtensionPropertiesOnCartLinesClientRequest | Saves the extension properties on the cart line.                                       | 10.0.14  |
+| SaveReasonCodeLinesOnCartClientRequest          | Saves the reason code lines on the cart.                                       | 10.0.14  |
+| SaveReasonCodeLinesOnCartLinesClientRequest     |  Saves the reason code lines on the cart line.                                      | 10.0.14  |
+| SelectSalesLinesForPickUpClientRequest          |  Select the sales lines for pickup.                                      | 10.0.14  |
+| SetCartAttributesClientRequest                  |   Sets the cart attribute.                                     | 10.0.14  |
+| ShowChangeDueClientRequest                      |  Shows the change due dialog.                                      | 10.0.14  |
+| AddAffiliationOperationRequest                  |  Adds affiliation to the cart.                                      | 10.0.14  |
+| AddItemToCartOperationRequest                   |  Add items to the cart.                                      | 10.0.14  |
+| CalculateTotalOperationRequest                  |  Calculate the total for the cart.                                      | 10.0.14  |
+| ChangeCartLineUnitOfMeasureOperationRequest     |  Changes the cart line unit of measure.                                      | 10.0.14  |
+| CreateCustomerOrderOperationRequest             |   Creates the customer order.                                     | 10.0.14  |
+| CreateCustomerQuoteOperationRequest             |   Creates the customer quote.                                     | 10.0.14  |
+| CustomerAccountDepositOperationRequest          |                                        | 10.0.14  |
+| DepositOverrideOperationRequest                 |  Overrides the deposit amount.                                      | 10.0.14  |
+| EditCustomerOrderOperationRequest               |   Edit the customer order.                                     | 10.0.14  |
+| LineDiscountAmountOperationRequest              |  Add line discount amount to the cart line.                                      | 10.0.14  |
+| LineDiscountPercentOperationRequest             |  Add line discount percent to the cart line.                                      | 10.0.14  |
+| OverrideLineTaxFromListOperationRequest         |  Override the cart line tax from the list.                                      | 10.0.14  |
+| OverrideLineTaxOperationRequest                 |   Override the cart line tax.                                     | 10.0.14  |
+| OverrideTransactionTaxOperationRequest          |    Override the transaction tax.                                       | 10.0.14  |
+| PickupAllOperationRequest                       |   Picks up the order.                                     | 10.0.14  |
+| PriceOverrideOperationRequest                   | Override the price for the cart line.                                       | 10.0.14  |
+| SetCartLineCommentOperationRequest              |  Sets the cart line comment.                                      | 10.0.14  |
+| SetCartLineQuantityOperationRequest             |   Sets the cart line quantity.                                     | 10.0.14  |
+| SetCustomerOnCartOperationRequest               |   Sets the customer on the cart.                                     | 10.0.14  |
+| SetTransactionCommentOperationRequest           |   Sets the transaction comment.                                     | 10.0.14  |
+| SuspendCurrentCartOperationRequest              | Suspends the current transaction.                                       | 10.0.14  |
+| TotalDiscountAmountOperationRequest             |   Add total discount amount to the transaction.                                     | 10.0.14  |
+| TotalDiscountPercentOperationRequest            |  Add total discount percent to the transaction.                                         | 10.0.14  |
+| VoidCartLineOperationRequest                    |  Voids the cart line.                                      | 10.0.14  |
+| VoidTenderLineOperationRequest                  | Voids the tender line.                                       | 10.0.14  |
+| VoidTransactionOperationRequest                 |  Voids the transaction.                                      | 10.0.14  |
+| CreateEmptyCartServiceRequest                   |  Creates empty cart.                                      | 10.0.14  |
+| GetTaxOverridesServiceRequest                   |  Gets the tax override list.                                      | 10.0.14  |
+| UpdateTenderLineSignatureServiceRequest         |  Updates the tender line signature data.                                      | 10.0.14  |
+| CarryoutSelectedProductsOperationRequest |   Marks the selected line as carry out.                                            | 10.0.14  |
+| AddCouponsOperationRequest |    Add coupon to the transaction.                                                         | 10.0.14  |
+| CreateNonSalesTransactionServiceRequest | Create non sales transaction cart.                                               | 10.0.14  |
+| ReturnTransactionOperationRequest |  Returns the transaction.                                                    | 10.0.14  |
+| AddLoyaltyCardToCartOperationRequest | Adds loyalty card to the transaction.                                                  | 10.0.14  |
+| ReturnCartLineOperationRequest |   Returns the cart line.                                                      | 10.0.14  |
+| ReturnItemOperationRequest |  Returns the item.                                                           | 10.0.14  |
+| AddExpenseAccountLineToCartOperationRequest | Add expense account line to the cart.                                           | 10.0.14  |
+| ShipAllCartLinesOperationRequest |   Ships all the cart lines.                                                    | 10.0.14  |
+| ShipSelectedCartLinesOperationRequest |    Ships the selected cart line.                                              | 10.0.14  |
+|PickupSelectedOperationRequest | Marks the included lines for pickup                      |  10.0.16 |
 
 
 ### Payments
@@ -225,9 +225,9 @@ The following table lists APIs exposed to perform payment-related functionality.
 
 | POS API                                   | Description                            | Release                  |
 |-------------------------------------------|----------------------------------------|--------------------------|
-| GetGiftCardByIdServiceRequest             |                                        |                          |
-| GetPaymentCardTypeByBinRangeClientRequest |                                        |                          |
-| GetSignatureClientRequest                 | Shows the signature capture dialog in POS or send the message to signature capture device based on the configuration. | 10.0.15 |
+| GetGiftCardByIdServiceRequest             | Gets the gift card ID.     |   10.0.12   |
+| GetPaymentCardTypeByBinRangeClientRequest | Get the card type bin range.  |  10.0.12     |
+| GetSignatureClientRequest                 | Shows the signature capture dialog in POS or sends the message to the signature capture device based on the configuration. | 10.0.15 |
 
 ### Peripherals
 
@@ -341,9 +341,10 @@ The following table lists APIs exposed to perform dialog-related functionality.
 
 The following table lists APIs exposed to perform employee-related functionality.
 
-| POS API                          |
-|----------------------------------|
-| GetLoggedOnEmployeeClientRequest |
+| POS API                                   | Description                            | Release                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| GetLoggedOnEmployeeClientRequest |  Gets the current logged in POS employee details.      | 10.0.14      |
+| SelectStoreEmployeeClientRequest | Gets the current store employee list for selection. | 10.0.16 |
 
 ### Formatters
 
@@ -428,33 +429,32 @@ The following table lists APIs exposed to perform stock count journals-related f
 
 The following table lists APIs exposed to perform store operations-related functionality.
 
-| POS API                                         |
-|-------------------------------------------------|
-| DeclareStartingAmountClientRequest              |
-| GetSalesOrdersWithNoFiscalTransactionsRequest   |
-| RegisterCustomAuditEventClientRequest           |
-| GetOfflinePendingTransactionCountClientRequest  |
-| SaveFiscalTransactionClientRequest              |
-| SafeDropOperationRequest                        |
-| TenderDeclarationOperationRequest               |
-| TenderRemovalOperationRequest                   |
-| CreateBankDropTransactionClientRequest          |
-| CreateFloatEntryTransactionClientRequest        |
-| CreateStartingAmountTransactionClientRequest    |
-| CreateTenderDeclarationTransactionClientRequest |
-| CreateTenderRemovalTransactionClientRequest     |
-| GetDenominationTotalsClientRequest              |
-| SelectZipCodeInfoClientRequest                  |
-| CreateSafeDropTransactionClientRequest          |
-| GetTenderDetailsClientRequest                   |
-| LoyaltyCardPointsBalanceOperationRequest        |
-| GetCommissionSalesGroupsServiceRequest          |
-| GetCurrenciesServiceRequest                     |
-| GetSrsReportDataSetServiceRequest               |
-| SearchCommissionSalesGroupsServiceRequest       |
-| IssueLoyaltyCardOperationRequest                |
-| GetPickingAndReceivingOrdersClientRequest       |
-| BankDropOperationRequest                 |
-| DeclareStartAmountOperationRequest        | 
-
-
+| POS API                                   | Description                            | Release                  |
+|-------------------------------------------|----------------------------------------|--------------------------|
+| DeclareStartingAmountClientRequest              | Declare start amount using this request. | 10.0.14        |
+| GetSalesOrdersWithNoFiscalTransactionsRequest   | Gets sales order with no fiscal transaction request.  |   10.0.14        |
+| RegisterCustomAuditEventClientRequest           | Register custom audit event request.   |  10.0.14        |
+| GetOfflinePendingTransactionCountClientRequest  | Gets the offline pending transaction count.  | 10.0.14        |
+| SaveFiscalTransactionClientRequest              | Save fiscal transaction request.   |   10.0.14        |
+| SafeDropOperationRequest                        | Safe drop operation request.  |  10.0.14        |
+| TenderDeclarationOperationRequest               | Tender declaration operation request.      |   10.0.14        |
+| TenderRemovalOperationRequest                   | Tender removal operation request.  |  10.0.14        |
+| CreateBankDropTransactionClientRequest          | Bank drop transaction request.    | 10.0.14        |
+| CreateFloatEntryTransactionClientRequest        | Float entry transaction request. |  10.0.14        |
+| CreateStartingAmountTransactionClientRequest    | Create start amount transaction request.       |   10.0.14        |
+| CreateTenderDeclarationTransactionClientRequest | Create tender declaration transaction request.     |   10.0.14        |
+| CreateTenderRemovalTransactionClientRequest     | Remove tender declaration transaction request.       |  10.0.14        |
+| GetDenominationTotalsClientRequest              | Gets the denomination total request.        | 10.0.14        |
+| SelectZipCodeInfoClientRequest                  | Selects the Zip code information request.    | 10.0.14        |
+| CreateSafeDropTransactionClientRequest          | Create safe drop transaction request.                                       |  10.0.14        |
+| GetTenderDetailsClientRequest                   | Gets the tender details.    | 10.0.14        |
+| LoyaltyCardPointsBalanceOperationRequest        | Gets the loyalty card balance.  | 10.0.14        |
+| GetCommissionSalesGroupsServiceRequest          | Gets the commission sales group.  |  10.0.14        |
+| GetCurrenciesServiceRequest                     | Gets the store currencies. | 10.0.14        |
+| GetSrsReportDataSetServiceRequest               | Gets the Srs report data.  |  10.0.14        |
+| SearchCommissionSalesGroupsServiceRequest       |  Search commission sales groups request.   | 10.0.14        |
+| IssueLoyaltyCardOperationRequest                |  Issues loyalty card.  |  10.0.14        |
+| GetPickingAndReceivingOrdersClientRequest       |  Gets the picking and receiving orders list.  |    10.0.14        |
+| BankDropOperationRequest                 |  Bank drop request.   |        10.0.14        |
+| DeclareStartAmountOperationRequest        |   Declare start amount request.       |          10.0.14        |
+| GetAllDiscountsServiceRequest        | Gets the discount applicable for the current cart.  | 10.0.16 |
