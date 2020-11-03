@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Getting started with e-Commerce online SDK development
+title: Getting started with e-Commerce online extensibility development
 description: This topic provides an overview of how to get started developing e-Commerce customizations with the Dynamics 365 Commerce online SDK.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Getting started with e-Commerce online SDK development
+# Getting started with e-Commerce online extensibility development
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ Below, you will find all the details to get started with e-Commerce extensibilit
 The typical process when extending the e-Commerce platform includes the following:
 * Install the necessary development tools
 * Install the latest online SDK
-* Optionally set up an Azure DevOps build pipeline for code sharing and build management
+* Optionally [set up an Azure DevOps build pipeline for code sharing and build management](set-up-code-sharing-build-pipeline.md)
 * Build and extend modules, data actions and themes as needed
 * Test modules/data actions and themes using mock data
 * Optionally test modifications against a cloud environment
@@ -48,7 +48,7 @@ The typical process when extending the e-Commerce platform includes the followin
 * Deploy configuration package to a cloud environment
 
 ## Architectural Overview
-Before starting e-Commerce extensibilty development it would be good to have an understanding of the architecture.  The [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) and [e-Commerce architectural overview](architectural-overview.md) topics are great places to get started.  The [e-Commerce component](ecommerce-components.md) topic will also provide an overview of the main extensibile e-Commerce components including modules, data actions and themes.
+Before starting e-Commerce extensibility development it would be good to have an understanding of the architecture.  The [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) and [e-Commerce architectural overview](architectural-overview.md) topics are great places to get started.  The [e-Commerce component](ecommerce-components.md) topic will also provide an overview of the main extensible e-Commerce components including modules, data actions and themes.
 
 
 ## Setting up a local online SDK development environment
@@ -65,7 +65,7 @@ The e-Commerce online SDK allows development and debugging of modules, data acti
 ### SDK environment .env file
 The online SDK includes a **.env** file in the root folder which has several environment variables to configure your development environment against a cloud environment.  Details for each variable can be found in the [Configure a development (.env) file](configure-env-file.md) topic.  
 
-### Configure against a cloud enviroment
+### Configure against a cloud environment
 The following topic [debug against a tier 1 Commerce development environment](debug-tier-1) provides the details on how to configure the .env file to point to a cloud environment.  It will guide you in getting the correct URLs to set for each variable in the .env file.  There are two main scenarios you can setup, the first is to point to a cloud retail server and the second to point the cloud e-Commerce site.
 
 #### Configure against a cloud Retail server
