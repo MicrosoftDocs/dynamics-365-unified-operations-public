@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable cash flow forecasts (preview)
+title: Enable cash flow forecasting (preview)
 description: This topic explains how to turn on the Cash flow forecasts feature in Finance Insights.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Enable cash flow forecasts (preview)
+# Enable cash flow forecasting (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
