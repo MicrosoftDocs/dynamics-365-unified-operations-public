@@ -46,6 +46,6 @@ When **Product lifecycle state** is left blank the released product or released 
 
 ## Related resources
 
-For more information related to product life cycle state, see [Product lifecycle state overview]( https://docs.microsoft.com/en-us/dynamics365/supply-chain/pim/product-lifecycle)
+For more information related to product life cycle state, see [Product lifecycle state overview]( https://docs.microsoft.com/dynamics365/supply-chain/pim/product-lifecycle)
 
-For detailed information with steps for how to use product lifecycle state to exclude products from master planning and BOM-level calculation, see [Create a product lifecycle state to exclude products from Master planning](https://docs.microsoft.com/en-us/dynamics365/supply-chain/pim/tasks/product-lifecycle-state-released-product)
+For detailed information with steps for how to use product lifecycle state to exclude products from master planning and BOM-level calculation, see [Create a product lifecycle state to exclude products from Master planning](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/product-lifecycle-state-released-product)
