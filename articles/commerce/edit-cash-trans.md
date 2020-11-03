@@ -5,7 +5,7 @@ title: Edit and audit cash and carry and cash management transactions
 description: This topic describes how to edit and audit cash and carry and cash management transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/30/2020
+ms.date: 11/03/2020
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -78,7 +78,7 @@ Commerce version 10.0.6 and later support the option to bulk-edit transactions a
 To bulk-edit transactions that are linked to a statement in Commerce headquarters, follow these steps.
 
 1. Open the **Statements** page, and select the statement that contains the transactions that must be edited.
-1. Select the Microsoft Office logo button.
+1. Select the **Open in Microsoft Office** button.
 1. Depending on what must be edited, select one of the following options:
 
     - **Edit cash and carry transactions** – This option lets you edit all the cash and carry transactions that are included in the statement. The following Excel worksheets are available:
@@ -113,7 +113,7 @@ Commerce version 10.0.10 and later support the option to bulk-edit transactions 
 To bulk-edit transactions that aren't linked to a statement in Commerce headquarters, follow these steps.
 
 1. Open the **All stores** page, and select the store that transactions must be edited for.
-1. Select the Microsoft Office logo, and then select **Edit cash and carry transactions**.
+1. Select the **Open in Microsoft Office** button, and then select **Edit cash and carry transactions**.
 1. Edit the required transactions, and then publish them.
 
 ## Additional resources
