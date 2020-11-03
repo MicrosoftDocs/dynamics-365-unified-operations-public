@@ -101,11 +101,11 @@ Log a support ticket, and Microsoft will help you perform the action on your env
 If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
 
 ## For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?
-With self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available so you can add them, now, in preparation for the upcoming self-service migrations or post migrations.
+With self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available so you can add them in preparation for the upcoming self-service migrations or post migrations.
 
 * If none of your external components have dependencies on an explicit inclusion list of IPs or special handling of outbound IP addresses for routing or firewall, no action is required.
-* If any of your external components have special handling for the outbound IP addresses to communicate to the AOS, add the new outbound IP addresses wherever the existing ones appear. Don’t replace the existing IP addresses. You can find the new outbound IP addresses below. For example, an outbound IP address may be explicitly included in a firewall outside your AOS, or an external service may have an allowed list that contains the outbound IP address for your AOS.
-* Please note these IP ranges are subject to change.
+* If any of your external components have special handling for the outbound IP addresses to communicate to the AOS, add the new outbound IP addresses where the existing ones appear. Don’t replace the existing IP addresses. You can find the new outbound IP addresses in the following list. For example, an outbound IP address may be explicitly included in a firewall outside your AOS, or an external service may have an allowed list that contains the outbound IP address for your AOS.
+* Note that these IP ranges are subject to change.
 
 | Region | IP prefix
 |---------------------|-------------|
