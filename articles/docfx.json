@@ -164,11 +164,11 @@
         "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"},
       "ms.search.scope" : {
         "fin-ops-core/dev-itpro/data-entities/dual-write/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
-        "fin-ops-core/dev-itpro/dev-ref/**/**.md": ["Operations","Developer"],
-        "fin-ops-core/dev-itpro/dev-ref/system-classes/**/**.md": ["Operations","Developer"],
-        "fin-ops-core/dev-itpro/dev-ref/xpp-data/**/**.md": ["Operations","Developer"],
-        "fin-ops-core/dev-itpro/dev-tools/**/**.md": ["Operations","Developer"],
-        "fin-ops-core/dev-itpro/extensibility/**/**.md": ["Operations","Developer"]
+        "fin-ops-core/dev-itpro/dev-ref/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-ref/system-classes/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-ref/xpp-data/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-tools/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/extensibility/**/**.md": "Operations, Developer"
         }
     },
     "template": [],

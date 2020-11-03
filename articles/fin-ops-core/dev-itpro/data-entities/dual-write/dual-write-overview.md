@@ -18,11 +18,7 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope:
-  - Core
-  - Operations
-  - CrossApp
-  - ShowInHelp
+# ms.search.scope:
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
