@@ -129,7 +129,9 @@ The next step is to configure the virtual entity data source in the Power Apps e
      
      https://\<hostname\>.hr.talent.dynamics.com/namespaces/\<namespaceID\>
 
-     For example: `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c`
+     For example:
+     
+     `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c`
 
    - **Tenant ID**: The Azure Active Directory (Azure AD) tenant ID.
 
