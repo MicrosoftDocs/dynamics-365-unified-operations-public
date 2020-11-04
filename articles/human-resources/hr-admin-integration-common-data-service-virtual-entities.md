@@ -127,11 +127,14 @@ The next step is to configure the virtual entity data source in the Power Apps e
 
    - **Target URL**: The URL of your Human Resources namespace. The format of the target URL is:
      
-     https://\<hostname\>.hr.talent.dynamics.com/namespaces/\<namespaceID\>
+     https://\<hostname\>.hr.talent.dynamics.com/namespaces/\<namespaceID\>/
 
      For example:
      
-     `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c`
+     `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c/`
+
+     >[!NOTE]
+     >Be sure to include the **/** at the end of the URL to avoid receiving an error.
 
    - **Tenant ID**: The Azure Active Directory (Azure AD) tenant ID.
 
