@@ -30,7 +30,9 @@ ms.dyn365.ops.version: 10.0.16
 
 ---
 
-# Sales taxes configuration for online orders
+# Configure sales tax for online orders
+
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview and details of sales tax group selection for different online order types. 
 
