@@ -123,7 +123,7 @@ The next step is to configure the virtual entity data source in the Power Apps e
 
 7. Select the **Microsoft HR Data Source** record.
 
-8. Enter the required information for the data source configuration.
+8. Enter the required information for the data source configuration:
 
    - **Target URL**: The URL of your Human Resources namespace. The format of the target URL is:
      
