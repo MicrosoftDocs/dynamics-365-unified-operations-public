@@ -2234,7 +2234,7 @@
           - name: Production posting
             href: cost-management/production-posting.md
         - name: Troubleshoot process manufacturing
-          items: production-control/troubleshoot-processmanufacturing.md
+          href: production-control/troubleshoot-processmanufacturing.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
