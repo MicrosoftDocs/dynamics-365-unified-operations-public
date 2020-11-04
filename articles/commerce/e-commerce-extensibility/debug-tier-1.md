@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Debug against a Tier 1 Commerce development environment
-description: This topic describes how to set up an e-Commerce online development environment to debug against a Tier 1 Commerce development environment.
+title: Configure an e-Commerce development environment against a Commerce cloud environment
+description: This topic describes how to set up an e-Commerce online development environment to debug against a Commerce cloud development environment.
 author: samjarawan
 manager: annbe
 ms.date: 10/08/2020
@@ -28,27 +28,25 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Debug against a Tier 1 Commerce development environment
+# Configure an e-Commerce development environment against a Commerce cloud environment
 
 [!include [banner](../includes/banner.md)]
-
-This topic describes how to set up an e-Commerce online development environment to debug against a Tier 1 Commerce development environment.
+This topic describes how to set up an e-Commerce online development environment to debug against a Commerce cloud development environment.
 
 ## Overview
 
-Dynamics 365 Commerce Tier 1 environments are generally deployed for Commerce runtime (CRT) and point of sale (POS) extension development. These are standalone environments that do not include e-Commerce components due to the software as a service (SaaS) nature of the e-Commerce architecture.
+An e-Commerce development environment can be configured to debug your live e-Commerce web site or test e-Commerce configuration changes against various Commerce cloud environment including "Dev", "Test", "UAT" or "Prod" environments. This is useful in testing and debugging e-Commerce modules and data actions against Retail Server extensions.  Once configured, modules and data actions that leverage Retail Server APIs will call the Commerce cloud Retail Server directly, otherwise mock data will be needed.
 
-There may be scenarios where you want to test calling extensions on a Tier 1 environment to allow extension debugging from e-Commerce components. This topic describes how to set up these kind of scenarios.
+## Install the Commerce online SDK
 
-## Install the SDK
+TO get started, you will need to install the Dynamics 365 Commerce online software development kit (SDK).  The online SDK can be installed on any Windows 10 environment including directly on a Commerce Dev virtual machine (VM). For setup instructions, see [Setup a development environment](setup-dev-environment.md).
 
-The Dynamics 365 Commerce software development kit (SDK) can be installed on any environment including the Tier 1 virtual machine (VM) itself. For setup instructions, see [Setup a development environment](setup-dev-environment.md).
+## Debug against a Commerce cloud Retail server
 
-## Configure the .env file
+The online SDK leverages Node.js for the JavaScript runtime to render modules and e-Commerce pages with a development environment. To configure a local development environment to point to a Commerce cloud environment, set the **MsDyn365Commerce_BASEURL** variable value in the .env file to the cloud environment Retail Server URL. For details about how to set up the .env file, see the [configure a development environment (.env) file](configure-env-file.md) topic.  You will also need to specify the channel ID (MSDyn365Commerce_CHANNELID) and channel operating unit number (MSDyn365Commerce_OUN).  Note: catalogs are not supported in e-Commerce, so the MSDyn365Commerce_CATALOGID variable will always be set to "0".
 
-To hit the Tier 1 environment from the local node server on the e-Commerce development environment, set the **MsDyn365Commerce_BASEURL** variable value in the .env file to the Tier 1 Retail Server URL. For details about how to set up an .env file, see [Configure a development environment (.env) file](configure-env-file.md).
-
-To obtain the Retail Server URL, go to the [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/) webpage and select the project and Tier 1 environment. Next, select **Login** at the top right and then select **Retail Server URL** as shown in the following illustration.
+### Retrieving a Commerce Dev environment Retail Server URL
+If you are debugging against a Commerce dev environment, you can obtain the Retail Server UR by going to the [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/) webpage and selecting the project and the specific environment. Next, select **Login** at the top right and then select **Retail Server URL** as shown in the following illustration.
 
 ![LCS Retail Server URL](media/lcs-retail-server-url.png)
 
@@ -56,21 +54,23 @@ Selecting the **Retail Server URL** link should open a new tab with a URL simila
 
 `https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/Commerce`
 
-Copy this URL, except for the last part "Commerce", into the .env file as the value for the **MsDyn365Commerce_BASEURL** variable. The remaining variables should be configured to a desired online channel on the environment. The following example shows configured variables using the URL that was noted above.  
+Copy this URL, except for the last part ("Commerce"), into the .env file as the value for the **MsDyn365Commerce_BASEURL** variable. The **MSDyn365Commerce_CHANNELID** and **MSDyn365Commerce_OUN** variables should be configured to a desired online channel on the environment, see the above see the [configure a development environment (.env) file](configure-env-file.md) topic for details on how to get these values. The following example shows configured variables using the URL that was noted above.  
 
-```text
-…
+```json
 MSDyn365Commerce_BASEURL=https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/
 MSDyn365Commerce_CHANNELID=68719478279
 MSDyn365Commerce_CATALOGID=0
 MSDyn365Commerce_OUN=128
-…
+...
 ```
-Make sure to restart the Node.js server with a "yarn start" command so that the server picks up these new values. As you build modules and debug data actions, calls will now be made directly to the Tier 1 Retail Server.
 
-## Debug against a live e-Commerce environment
+Make sure to restart the Node.js server with a "yarn start" command so that the server picks up these new values once the .env file is saved. As you build modules and debug data actions, calls will now be made directly to the Retail Server specified in the .env file.
 
-You may want to test the rendering of your live e-Commerce site pages within the local Node development environment while still calling the Tier 1 Retail Server. This is useful when you want to make changes to modules and themes, or to debug Retail Server extensions.
+## Debug against a prod e-Commerce site
+
+The e-Commerce online SDK allows you to point your development to a production e-Commerce site to retrieve pages definitions that can be rendered on the local Node.js environment.  This will allow you to see how your local e-Commerce changes (modules, data action and themes) will render prior to uploading the configuration package to a live environment.  You can then debug and make further changes and see how they will look on a production page.
+
+On a production site, the site builder tool is used to build e-Commerce pages that are stored as JSON files in the Commerce CMS system.  When you configure an e-Commerce development environment **MSDyn365_HOST** variable in the .env file to point to a production e-Commerce site, the json will be retrieved and the local Node.js will do the rendering using the local online SDK and customizations on that local environment.  This will allow you to test e-Commerce changes with your live e-Commerce site pages without deploying and potentially destabalizing your production environment.  
 
 To support this scenario, configure the **MSDyn365_HOST** variable in the .env file to point to your e-Commerce domain name. When this step is complete, you can run the "yarn start" command and navigate to `https://localhost:4000` to view your online website rendered on the local Node.js server. When this happens, the live page will be pulled from the Dynamics 365 Commerce content management system. All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
 
