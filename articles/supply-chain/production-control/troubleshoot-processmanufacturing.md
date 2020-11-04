@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot Process Manufacturing
+title: Troubleshoot process manufacturing
 description: This topic describes how to fix issues that you might encounter while working with Process Manufacturing.
 author: SmithaNataraj
 manager: tfehr
-ms.date: 05/07/2020
+ms.date: 11/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,21 +25,21 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: smnatara
-ms.search.validFrom: 2020-5-7
-ms.dyn365.ops.version: AX 10.0.14
+ms.search.validFrom: 2020-11-04
+ms.dyn365.ops.version: 10.0.15
 
 ---
-# Troubleshoot Process Manufacturing
+# Troubleshoot process manufacturing
 
-This topic describes how to fix common issues that you might encounter while working with Process Manufacturing.
+This topic describes how to fix common issues that you might encounter while working with process manufacturing.
 
-## When reporting a partial quantity on a job on the job card device, and the job is the last job for the production order, then all previous jobs on the production order that are in status *In progress* will be automatically ended.
+## When I use the job card device to report a partial quantity on the last job in a production order, then all the previous jobs with a status of "In progress" on that order are automatically ended.
 
-This is working by design. In the production defaults parameters, there is a parameter called 'End-mark route' under the 'Report as Finished' tab. When this parameter is selected, a route card journal is posted when reporting on the last operation on the job card device or job card terminal. This journal is marking all the operations as completed and ending all the production jobs. The End-mark route parameter will not consider the desired job status the user is selecting when reporting on the last operation. The system will also not consider if the user is reporting a full or partial quantity.
+This is by design. On the **Production order defaults** page, there is a setting called **End-mark route** on the **Report as finished** tab. When **End-mark route** is set to *Yes*, a route card journal is posted when a worker reports the last operation using the job card device or job card terminal. This journal marks all the operations as completed and ends all the production jobs. The **End-mark route** setting won't consider the desired job status selected by the worker when reporting on the last operation. The system also won't consider whether the worker is reporting a full or partial quantity.
 
-## When attempting a stock closing a warning occurs stating "No execution of backflush costing calculation with a date of xxx has been registered". When lean manufacturing is not user, this message should not appear.
-This issue has been fixed from 10.0.13 and onwards. See more here: KB 4582468.
+## When I attempt a stock closing, I see the warning "No execution of backflush costing calculation with a date of %1 has been registered."
 
-**Issue description:**
-Before 10.0.13, when not using lean production costing flow, a warning message is still displayed during inventory closing "You are about to execute an Inventory close with a date X. No execution of Backflush costing calculation with a date X matching period end has been registered. Please remember to execute a Backflush costing calculation with a date of X matching period end. The valuation of inventories, cost of goods sold and variances may not be correct in Subledger or General ledger until this has been executed.", which is a bug.
+This issue has been fixed in release 10.0.13 and onwards. See more here: KB 4582468.
+
+Before release 10.0.13, when you aren't using lean production costing flow, the following erroneous warning message was displayed during inventory closing: "You are about to execute an Inventory close with a date %1. No execution of Backflush costing calculation with a date %1 matching period end has been registered. Please remember to execute a Backflush costing calculation with a date of %1 matching period end. The valuation of inventories, cost of goods sold and variances may not be correct in Subledger or General ledger until this has been executed."
 
