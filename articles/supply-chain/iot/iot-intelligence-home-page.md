@@ -61,7 +61,7 @@ You can set up and configure IoT Intelligence without writing any code. Here are
 ## Tracking and maintenance
 
 + [Monitor scenarios in Dynamics 365 Supply Chain Management](iot-management.md#monitor-scenarios)
-+ [Disable a scenario](iot-scenario-setup.md#how-to-disable-a-scenario)
++ [Disable a scenario](iot-scenario-setup.md#disable-a-scenario)
 + [Uninstall the add-in](iot-lcs-setup.md#uninstall-addin)
 + [Modify a running IoT Intelligence scenario](iot-management.md#modify-a-running-iot-intelligence-scenario)
 + [Simulation options](iot-management.md#simulation-options)

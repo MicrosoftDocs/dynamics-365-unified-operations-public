@@ -5,7 +5,7 @@ title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -99,3 +99,34 @@ Log a support ticket, and Microsoft will help you perform the action on your env
 ## I don't have Remote Desktop access to my sandbox environment, and the critical action that I must perform isn't listed in this topic. How do I get help?
 
 If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
+
+## For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?
+With self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available so you can add them in preparation for the upcoming self-service migrations or post migrations.
+
+* If none of your external components have dependencies on an explicit inclusion list of IPs or special handling of outbound IP addresses for routing or firewall, no action is required.
+* If any of your external components have special handling for the outbound IP addresses to communicate to the AOS, add the new outbound IP addresses where the existing ones appear. Don’t replace the existing IP addresses. You can find the new outbound IP addresses in the following list. For example, an outbound IP address may be explicitly included in a firewall outside your AOS, or an external service may have an allowed list that contains the outbound IP address for your AOS.
+* Note that these IP ranges are subject to change.
+
+| Region | IP prefix
+|---------------------|-------------|
+| West US | 52.250.195.128/26
+| East US | 52.255.218.64/26
+| Central US | 13.86.98.128/26
+| West EUR | 51.105.159.192/26
+| West EUR-2 | 20.61.88.128/26
+| North EUR | 52.155.160.192/26
+| UK West | 51.137.139.0/26
+| UK South | 51.11.26.192/26
+| Australia East | 20.40.190.0/26
+| Australia SouthEast | 20.40.165.192/26
+| West US | 52.250.195.128/26
+| East US | 52.255.218.64/26
+| Central US | 13.86.98.128/26
+| Canada Central | 20.151.60.0/26
+| Canada East | 52.155.27.128/26
+| Brazil South | 191.234.130.0/26
+| East Asia | 52.229.231.64/26
+| South East Asia | 20.44.247.0/26
+| Japan East | 20.48.77.192/26
+| Japan West | 20.39.179.192/26
+

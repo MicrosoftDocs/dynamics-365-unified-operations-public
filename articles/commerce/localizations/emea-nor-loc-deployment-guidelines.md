@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for Norway
 description: This topic is a deployment guide for the Commerce localization for Norway.
 author: AlexChern0v
 manager: olegkl
-ms.date: 07/08/2019
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,12 +17,11 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
 ms.search.industry: Retail
-ms.author: v-alexec
+ms.author: josaw
 ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
@@ -43,6 +42,31 @@ This sample consists of extensions for the Commerce runtime (CRT), Retail Server
 
 > [!NOTE]
 > Some steps in the procedures in this topic differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
+
+### Using certificate profiles in Commerce channels
+
+In Commerce versions 10.0.15 and later, you can use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Commerce headquarters aren't available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
+
+To apply this functionality in the CRT extension, follow these steps.
+
+1. Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail software development kit (SDK) (RetailSDK\SampleExtensions\CommerceRuntime).
+
+2. Add custom handler for CertificateSignatureServiceRequest in the SequentialSignatureRegister project.
+
+3. To read a secret call, GetUserDefinedSecretCertificateServiceRequest using a constructor with profileId parameter. That will start the functionality working with settings from Certificate profiles. Based on the settings, the certificate will be retrieved either from Azure Key Vault or local machine storage.
+	
+	GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
+	GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+	
+	X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
+	
+4. When the certificate is retrieved, proceed with data signing.
+
+5. Build the CRT extension project.
+
+6. Copy the output class library and paste it into ...\RetailServer\webroot\bin\Ext for manual testing.
+
+7. In the CommerceRuntime.Ext.config file, update the extension composition section with the custom library information.
 
 ## Development environment
 

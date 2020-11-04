@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations, Retail
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubencdelgado
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 

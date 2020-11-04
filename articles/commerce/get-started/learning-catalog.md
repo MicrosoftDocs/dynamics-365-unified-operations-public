@@ -124,10 +124,6 @@ Find the right online training, in person workshops, and events for your role as
 
     [Get started](learning-catalog-partner-sales.md#get-started)
 
-    [Commerce](learning-catalog-partner-sales.md#commerce)
-
-    [e-Commerce](learning-catalog-partner-sales.md#e-commerce)
-
     :::column-end:::
 
     :::column:::

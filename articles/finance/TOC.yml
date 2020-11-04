@@ -16,6 +16,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
         - name: One Version service updates FAQ
           href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
+        - name: Manage updates and the custom code lifecyle, including Dynamics 365 Commerce
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
         - name: Software lifecycle policy - Cloud
           href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
         - name: Software lifecycle policy - On-premises
@@ -70,14 +72,12 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.15 (January 2021)
+            href: get-started/whats-new-changed-10-0-15.md
           - name: Finance 10.0.14 (November 2020)
             href: get-started/whats-new-changed-10-0-14.md
           - name: Finance 10.0.13 (October 2020)
-            href: get-started/whats-new-changed-10-0-13.md     
-          - name: Finance 10.0.12 (August 2020)
-            href: get-started/whats-new-changed-10-0-12.md     
-          - name: Finance 10.0.11 (July 2020)
-            href: get-started/whats-new-changed-10-0-11.md                    
+            href: get-started/whats-new-changed-10-0-13.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
@@ -160,7 +160,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-        - name: Embed Microsoft Power Apps 
+        - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -195,7 +195,9 @@
         - name: Move licenses between agreement types
           href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json 
         - name: Move LCS implementation projects to different Azure AD tenants
-          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json 
+          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+        - name: Move LCS implementation projects from on-premises to cloud
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json    
     - name: Accounts payable
@@ -228,6 +230,18 @@
           href: accounts-payable/accounts-payable-invoice-matching.md
         - name: Set up Accounts payable invoice matching validation
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+      - name: Vendor invoice automation    
+        items: 
+        - name: Automated vendor invoicing processes overview
+          href: accounts-payable/auto-vendr-invc-process.md
+        - name: Setup options for vendor invoice automation
+          href: accounts-payable/vnd-invoice-set-up-options.md
+        - name: Submit invoices to the workflow system and match product receipt lines
+          href: accounts-payable/submit-invoice-workflow-automatically.md
+        - name: View vendor invoice automation results
+          href: accounts-payable/view-automated-vendor-invoice.md
+        - name: Vendor invoice entry workspace
+          href: accounts-payable/vendor-invoices-workspace.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
@@ -260,7 +274,7 @@
         href: accounts-payable/mobile-invoice-approvals.md
       - name: Vendor collaboration invoicing workspace
         href: accounts-payable/vendor-portal-invoicing-workspace.md
-      - name: Vendor invoice automation
+      - name: Invoice automation for scanned documents
         href: accounts-payable/vendor-invoice-automation.md
       - name: Broker contract management
         href: accounts-payable/broker-contract.md
@@ -452,6 +466,8 @@
         href: accounts-receivable/tasks/process-collection-letters.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Customer aging report
+        href: accounts-receivable/customer-aging.md
       - name: Create a write-off journal for a customer
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Advanced notes management
@@ -794,6 +810,74 @@
           href: fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
           href: fixed-assets/straight-line-service-life-depreciation.md
+    - name: Asset leasing
+      items: 
+      - name: Asset leasing home page
+        href: asset-leasing/asset-leasing-homepage.md
+      - name: Asset leasing get started
+        href: asset-leasing/asset-leasing-quick-start.md
+      - name: Asset leasing setup
+        items:
+        - name: Configure Asset leasing parameters
+          href: asset-leasing/config-lease-parameters.md
+        - name: Set up lease books
+          href: asset-leasing/set-up-lease-books.md
+        - name: Create a lease group
+          href: asset-leasing/create-lease-group.md
+        - name: Set up index rates
+          href: asset-leasing/set-up-index-rate-types.md
+        - name: Set up expense types
+          href: asset-leasing/set-up-expense-types.md
+        - name: Set up lease journal names
+          href: asset-leasing/set-up-lease-journal-names.md
+        - name: Set up lease posting accounts
+          href: asset-leasing/set-up-lease-posting-accts.md
+        - name: Assign number sequences
+          href: asset-leasing/leasing-number-sequences.md
+        - name: Assign user roles
+          href: asset-leasing/lease-user-roles.md          
+      - name: Manage Asset leases 
+        items:
+        - name: Add or copy a lease
+          href: asset-leasing/add-lease.md
+        - name: Create a payment invoice
+          href: asset-leasing/create-payment-invoice.md
+        - name: Record right-of-use asset depreciation
+          href: asset-leasing/record-rou-asset-depreciation.md
+        - name: Reverse posted lease transactions 
+          href: asset-leasing/reverse-posted-lease-trans.md
+        - name: Adjust a lease 
+          href: asset-leasing/adjust-lease.md
+        - name: Impair a right-of-use asset
+          href: asset-leasing/impair-rou-asset.md
+        - name: Associate a lease with a fixed asset          
+          href: asset-leasing/associate-lease-with-fixed-asset.md
+        - name: Record leases in foreign currencies
+          href: asset-leasing/record-leases-foreign-currency.md
+        - name: Revalue lease payments tied to an Index Rate
+          href: asset-leasing/revalue-payments-tied-2-index-rate.md
+        - name: Reclassify short-term portion of lease liability
+          href: asset-leasing/reclassify-st-lease-liability.md
+        - name: View liability, asset, and expense transactions
+          href: asset-leasing/view-asset-transactions.md
+        - name: Compound interval functionality
+          href: asset-leasing/compound-interval-functionality.md
+        - name: Confirm payment schedules in batch
+          href: asset-leasing/confirm-payment-schedules-in-batch.md
+        - name: Create monthly journal entries in batch
+          href: asset-leasing/create-monthly-journals-batch.md
+        - name: Lease posting types
+          href: asset-leasing/lease-posting-types.md
+        - name: Dual reporting
+          href: asset-leasing/dual-reporting.md
+        - name: Set up a lease workflow
+          href: asset-leasing/set-up-lease-wrkflw.md
+        - name: Use lease approval workflows
+          href: asset-leasing/use-create-lease-wrkflw.md
+        - name: Manage leases through the Lease import framework
+          href: asset-leasing/manage-leases-thru-imprt-framewrk.md
+      - name: Asset leasing reports 
+        href: asset-leasing/asset-leasing-rprts.md
     - name: General ledger
       items:
       - name: General ledger overview
@@ -888,6 +972,8 @@
           href: general-ledger/tasks/create-assign-advanced-rule-structures.md
         - name: Ledger journal types
           href: general-ledger/ledger-journal-types.md
+        - name: Configure ledgers
+          href: general-ledger/configure-ledger.md
         - name: Create and validate journals
           href: general-ledger/tasks/create-validate-journals.md
         - name: View journal entries or transactions
@@ -904,6 +990,8 @@
           href: general-ledger/open-lines-excel-journals-documents.md
         - name: View journal entries and transactions
           href: general-ledger/view-journal-entries-transactions.md
+        - name: Trial balance with transactional detail report
+          href: public-sector/general-ledger-public-sector-trial-balance.md          
         - name: Journalize posted journal entries
           href: general-ledger/tasks/journalize-posted-journal-entries.md
         - name: Currency revaluation in a consolidation company
@@ -1152,8 +1240,6 @@
           href: public-sector/advanced-ledger-entries-public-sector.md
         - name: Create an advanced ledger entry in the public sector
           href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-        - name: Trial balance with transactional detail report
-          href: public-sector/general-ledger-public-sector-trial-balance.md          
         - name: Use cash control limits
           href: public-sector/cash-control.md
         - name: Year-end processing in the public sector
@@ -1228,6 +1314,22 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
+      - name: Electronic invoicing add-on
+        items: 
+        - name: Electronic invoicing add-on overview
+          href: localizations/e-invoicing-service-overview.md
+        - name: Create an Azure storage account and a Key Vault
+          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+        - name: Get started with the Electronic invoicing add-on
+          href: localizations/e-invoicing-get-started.md
+        - name: Get started with Electronic invoicing add-on for Brazil
+          href: localizations/e-invoicing-bra-get-started.md
+        - name: Get started with Electronic invoicing add-on for Italy
+          href: localizations/e-invoicing-ita-get-started.md
+        - name: Get started with the Electronic invoicing add-on for Mexico
+          href: localizations/e-invoicing-mex-get-started.md
+        - name: Set up the Electronic invoicing add-on
+          href: localizations/e-invoicing-setup.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1268,6 +1370,8 @@
           href: localizations/emea-bel-coda-bank-statement-import.md
         - name: Create and transfer transactions to the BLWI
           href: localizations/tasks/be-00011-create-transfer-blwi.md
+        - name: Export ledger transactions
+          href: localizations/emea-bel-export-ledger-transactions.md          
         - name: INTERVAT tax declaration
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
@@ -1362,6 +1466,8 @@
             href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
           - name: NF-e certificates
             href: localizations/latam-bra-nfe-certs.md
+          - name: NF-e custom certificate validation
+            href: localizations/nf-e-custom-certificate-validation.md
           - name: Set up, import, and verify NF-e XML documents and DANFE
             href: localizations/latam-bra-set-up-import-nfe.md
           - name: Set up NF-e federal parameters
@@ -1868,7 +1974,7 @@
           items:
           - name: India GST overview
             href: localizations/apac-ind-gst.md
-          - name: What's new or changed for APAC India GST localization
+          - name: What's new or changed for India GST localization
             items: 
             - name: What's new or changed in 10.0.0
               href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1896,6 +2002,8 @@
               href: localizations/apac-ind-news-letter-10-0-11.md
             - name: What's new or changed in 10.0.12
               href: localizations/apac-ind-news-letter-10-0-12.md
+            - name: What's new or changed in 10.0.13
+              href: localizations/ind-news-letter-10-0-13.md
           - name: India GST reference groups
             href: localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
@@ -2006,6 +2114,8 @@
               href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
           - name: Stock transaction
             items:
+            - name: Stock transfer orders
+              href: localizations/apac-ind-stock-transfer.md    
             - name: Stock transfer orders that have tax on the transfer price
               href: localizations/apac-ind-GST-stock-transfer-transactions.md
           - name: Customer payment transaction
@@ -2036,8 +2146,12 @@
             href: localizations/apac-ind-GST-tax-journal.md
           - name: Generate the GSTR report data for tax returns
             href: localizations/apac-ind-GST-tax-returns.md
+          - name: Enable multi-batch processing for GSTR reports
+            href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
           - name: Tax inquiry
             href: localizations/apac-ind-GST-tax-inquiry.md
+          - name: Clean up the TaxDocumentJSON table
+            href: localizations/gte-clean-up-tax-document-json-table.md
         - name: Tax engine
           items: 
           - name: Tax engine overview
@@ -2058,8 +2172,6 @@
             href: localizations/tax-engine-trouble-shooting.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
-        - name: Stock transfers
-          href: localizations/apac-ind-stock-transfer.md    
       - name: Italy
         items:
         - name: Italy overview
@@ -2118,6 +2230,8 @@
           href: localizations/emea-ita-exil-tax-plafond.md
         - name: Customer electronic invoices
           href: localizations/emea-ita-e-invoices.md
+        - name: Yearly tax communication
+          href: localizations/emea-ita-yearly-tax-communication.md
       - name: Japan
         items:
         - name: Japan overview
@@ -2611,7 +2725,7 @@
             - name: Inventory profile overview
               href: localizations/rus-inventory-profile-overview.md
             - name: Set up an inventory profile
-              hreF: localizations/rus-set-up-inventory-profile.md
+              href: localizations/rus-set-up-inventory-profile.md
             - name: Use an inventory profile in documents and queries
               href: localizations/rus-use-inventory-profile-documents-queries.md
         - name: Reporting
@@ -3066,7 +3180,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
         - name: Add financial dimensions to aggregate measurements
           href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-        - name: Create analytical reports using PowerBI Desktop
+        - name: Create analytical reports using Power BI Desktop
           href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json 
         - name: Add analytics to workspaces by using Power BI Embedded
           href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -3486,6 +3600,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
         - name: Design a new ER solution to print a custom report
           href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
+        - name: Adjust an ER solution to generate a custom electronic document
+          href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/finance/toc.json
       - name: Tutorials
         items: 
         - name: Learn how to use data sources
@@ -3560,6 +3676,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
           - name: Design multilingual reports
             href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+          - name: Compress large outbound documents
+            href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations
@@ -3630,8 +3748,12 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
         - name: API changes for Application update 7.3
           href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
-        - name: Specify a custom storage location for generated documents
-          href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+        - name: Specify a custom storage location for generated documents 
+          items:
+          - name: Subscribe to an event to request a response from subscribing handler
+            href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+          - name: Delegate the creation of an ER destination to a custom destination factory
+            href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
     - name: Mobile app
       items:
       - name: Mobile app home page

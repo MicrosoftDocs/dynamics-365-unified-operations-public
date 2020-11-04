@@ -5,7 +5,7 @@ title: Omni-channel payments overview
 description: This topic provides an overview of omni-channel payments in Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -98,6 +98,9 @@ The following omni-channel payment scenarios are supported:
 - Buy in call center, pick up in store
 - Buy in store A, pick up in store B
 - Buy in store A, ship to customer
+
+    > [!NOTE]
+    > Payments made in the call center that map to the "Normal" payment function must be marked as **Prepay** = **Yes** to be reflected in the amount due when recalling the order in the POS. Non-prepay payments of type "Normal" are not recognized when the order is recalled in POS. 
 
 Variations of these scenarios are also supported. For example, an online order might include both lines that will be shipped to the customer and lines that will be picked up in a store. All order fulfillment options are supported via omni-channel payments. 
 
@@ -197,8 +200,8 @@ Follow these steps to run the scenario.
 2. On the **Transaction** page, add Karen Berg to the transaction by using the number pad to enter **2001**.
 3. Add one or more lines to the transaction.
 4. Select **Orders** to see the order options.
-5. Select **Pick up all**, and then, when you're prompted, select **Customer order**.
-6. In the search bar, enter **Seattle**, and then select the **Seattle** store for pickup. 
+5. Select **Ship all**, and then, when you're prompted, select **Customer order**.
+6. In the shipping method page, select **Standard overnight**, and then select **OK** to accept today's date as the shipping date. 
 7. Select **OK** to accept the current date as the date of pickup.
 8. Select **Pay card** to initiate the payment.
 9. Tender the card payment for the amount that is due for the deposit. 
@@ -240,5 +243,5 @@ When an order that has multiple tenders and multiple lines is picked up, the cas
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Configure BOPIS in a Dynamics 365 Commerce evaluation environment](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [Configure BOPIS in a Dynamics 365 Commerce evaluation environment](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

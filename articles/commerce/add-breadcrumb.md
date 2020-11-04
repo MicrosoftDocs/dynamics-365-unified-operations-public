@@ -5,7 +5,7 @@ title: Breadcrumb module
 description: This topic covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -87,6 +87,10 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 ## Additional resources
 
 [Module library overview](starter-kit-overview.md)
+
+[Navigation menu module](nav-menu-module.md)
+
+[Site selector module](site-selector.md)
 
 [Overview of default category landing page and search results page](category-search-page-overview.md)
 

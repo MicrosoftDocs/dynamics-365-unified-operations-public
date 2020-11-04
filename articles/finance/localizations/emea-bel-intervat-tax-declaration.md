@@ -673,7 +673,7 @@ You can also close the tax period by generating a sales tax payment (**Tax \> De
 4.  Select **OK**. The system generates the INTERVAT tax declaration line and an INTERVAT XML file.
 5.  Review the information in the declaration.
 
-![](media/2_Intervat_tax declaration.png)
+![INTERVAT tax declaration page](media/2_Intervat_tax%20declaration.png)
 
 6.  On the **General** tab, review the following fields: **INTERVAT ID**, **Date**, **Period**, **Start date**, **End date**, **Period frequency**, **Status**, and **File name**.
 7.  On the **Frame I: General information** tab, review the following fields. You can edit these fields, even if the period was closed. The exceptions are the fields in the **Pro-rata percentages** section. Those fields are read-only.

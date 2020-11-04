@@ -54,6 +54,7 @@ For more information about upcoming features or the update process for Human Res
 
 To find out what's new or changed in each biweekly release of Human Resources, see the following articles:
 
+[September 16, 2020](hr-whats-new-2020-09-16.md)</br>
 [September 3, 2020](hr-whats-new-2020-09-03.md)</br>
 [August 20, 2020](hr-whats-new-2020-08-20.md)</br>
 [August 6, 2020](hr-whats-new-2020-08-06.md)</br>

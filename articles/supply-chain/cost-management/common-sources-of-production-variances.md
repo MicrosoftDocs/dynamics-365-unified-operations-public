@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: InventCostTrans
+ms.search.form: InventCostTrans, ProdCalcVarianceTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
