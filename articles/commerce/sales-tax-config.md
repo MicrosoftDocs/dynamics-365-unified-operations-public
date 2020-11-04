@@ -40,11 +40,9 @@ This topic provides an overview and details of sales tax group selection for dif
 
 Your e-commerce channel may want to support options like delivery or pickup for online orders and the sales tax applicability is based on the option selected by your online user. When a site customer chooses to buy an item online and gets it shipped to an address, the sales tax is determined based on the customer's shipping address tax group setting. When a customer opts to pick up a purchased item at a store, the sales tax is determined based on the pickup store's tax group setting. 
 
-## Orders shippped to customer address 
+## Orders shipped to customer address 
 
 In general, taxes for online orders that ship to customer addresses are defined by the destination. Every sales tax group has a "retail destination based tax" configuration in which your business can define destination details such as county/region, state, county, and city in a hierarchical form. When an online order is placed, the tax engine uses the delivery address of every line item in the order, and finds sales tax groups with matching destination-based tax criteria. For example, for an online order with line item delivery address to San Francisco, CA the tax engine finds the sales tax group and sales tax code for CA and then calculates tax for each line item accordingly.  
-
-![Dynamics 365 Commerce sales tax group and sales tax code selection](media/d365-commerce-sales-tax-groups.png)
 
 ## Customer-based tax groups
 
