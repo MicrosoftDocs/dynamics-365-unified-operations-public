@@ -2124,10 +2124,12 @@
             href: e-commerce-extensibility/package-deploy.md
           - name: SDK and module library updates
             href: e-commerce-extensibility/sdk-updates.md
-        - name: Best practices
+        - name: Best practices and FAQ
           items:
           - name: Best practices for Dynamics 365 Commerce development
             href: e-commerce-extensibility/best-practices-dev.md
+          - name: Dynamics 365 Commerce online SDK FAQ
+            href: e-commerce-extensibility/sdk-faq.md
       - name: Retail SDK
         items:
         - name: Retail SDK architecture
