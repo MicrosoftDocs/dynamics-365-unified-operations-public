@@ -1902,7 +1902,7 @@
         - name: BOM calculations
           href: cost-management/bom-calculations.md
         - name: Troubleshoot product information
-          href: cost-management/troubleshooting-productinformation.md
+          href: pim/troubleshooting-productinformation.md
       - name: Product configuration
         items:
         - name: Product configuration overview
