@@ -402,6 +402,7 @@ The fields from the JSON query examples provided previously have the properties 
 | `organizationId` | The identifier of the organization linked to the event. This maps to Supply Chain Management organizations or data area IDs. |
 | `productId` | The identifier of the product in question. |
 | `quantity` | The quantity by which the on-hand needs to be changed. If, for instance, 10 new bagels were added to a shelf, this value would be 10. If 3 bagels were then removed from the shelf or sold, this value would be -3. |
+| `dimensionDataSource` | The data source of the dimensions used in the posting change event and query. If you specify the data source, you can use the custom dimensions from the specified data source. With the dimension configuration, Inventory Visibility can map the custom dimensions to the general default dimensions. If the `dimensionDataSource` is not specified, you can only use the general default dimensions in your queries.   |
 | `dimensions` | A dynamic bag of key/value pairs. These will map to some of the dimensions in Supply Chain Management, but you could also add custom dimensions (like *Source*) that may denote if the event was coming from Supply Chain Management or an external system. |
 
 ### Querying current on-hand
@@ -414,7 +415,20 @@ It will be queried with the HTTP `POST` method.
 
 #### Current on-hand query example 1
 
-This example shows a scenario where you have already completed the dimension configuration in Power Apps. You can specify the `DimensionDataSource` in `filters` and specify custom dimensions in both `filters` and `groupByValues`. The system will automatically convert custom dimensions to base dimensions.
+This example shows a scenario where you have already completed the dimension configuration in Power Apps.
+
+Use the following query to configure the dimension mapping in Power Apps:
+
+```json
+{
+    "PosSizeId": "SizeId",
+    "PosColorId": "ColorId",
+    "PosSiteId": "SiteId",
+    "PosLocationId": "LocationId"
+}
+```
+
+Now you can specify the `dimensionDataSource` and use custom dimensions in your queries. The system will automatically convert custom dimensions to base dimensions. You can specify the `DimensionDataSource` in `filters` and specify custom dimensions in both `filters` and `groupByValues`. The system will automatically convert custom dimensions to base dimensions.
 
 ```json
 {
