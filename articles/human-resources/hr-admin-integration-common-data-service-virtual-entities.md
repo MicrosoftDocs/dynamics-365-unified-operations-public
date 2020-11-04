@@ -127,9 +127,9 @@ The next step is to configure the virtual entity data source in the Power Apps e
 
    - **Target URL**: The URL of your Human Resources namespace. The format of the target URL is:
      
-     https://*HostName*.hr.talent.dynamics.com/namespaces/*NamespaceID*/
+     https://\<HostName\>.hr.talent.dynamics.com/namespaces/\<NamespaceID\>/
 
-     For example: \https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c
+     For example: `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c`
 
    - **Tenant ID**: The Azure Active Directory (Azure AD) tenant ID.
 
@@ -137,9 +137,9 @@ The next step is to configure the virtual entity data source in the Power Apps e
 
    - **AAD Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-9. Select **Save & Close**.
-
    ![Microsoft HR Data Source](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+
+9. Select **Save & Close**.
 
 ### Grant app permissions in Human Resources
 
