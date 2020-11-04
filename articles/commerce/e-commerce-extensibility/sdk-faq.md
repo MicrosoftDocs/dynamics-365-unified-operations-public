@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Commerce online SDK FAQ
-description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software develpoment kit (SDK).
+description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
 ms.date: 11/04/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce Online SDK.
+This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
 ## After upgrading to module library version 9.24 (10.0.14 release), cloned modules that use some data actions may throw an error ("UserAuthorizationException. Customer account number on the request was wrong"). 
 
