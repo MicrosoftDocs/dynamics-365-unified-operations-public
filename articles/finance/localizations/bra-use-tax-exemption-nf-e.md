@@ -52,7 +52,7 @@ Through this feature, the user will:
 
 # Enabling the technical note feature
 
-Only for Finance and Supply chain management:
+Only for Finance or Supply Chain Management:
 
 1.  Go to **Organization administration \> Organizations \> Fiscal
     establishments \> Fiscal establishments.**
@@ -207,9 +207,8 @@ When the fiscal document direction is inbound and fiscal document issuer is a
 third party, it requires the configuration of the rules at the state of the
 issuer of the fiscal document.
 
-Important: after KB xxxxxx, the validation when the fiscal document direction is
-inbound and fiscal document issuer is a third party became obsolete and it is
-not executed anymore.
+Important (only for Finance or Supply Chain Management): after KB 4582589, the validation when the fiscal document direction is
+inbound and fiscal document issuer is a third party became obsolete.
 
 # Validation exceptions
 
