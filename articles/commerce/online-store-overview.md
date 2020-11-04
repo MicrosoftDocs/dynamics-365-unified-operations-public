@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.5
 
 This topic provides an overview of the Dynamics 365 Commerce e-Commerce site support.
 
-This topic explains how e-Commerce online stores are used in Microsoft Dynamics 365 Commerce. It also provides a link to more information about online stores and information about how to set up and configure an e-Commerce site.  This topic does not cover everything needed to setup a production e-Commerce site, but covers many of the basics, more advanced topics can be found within the e-Commerce documention table of contents.
+This topic explains how e-Commerce online stores are used in Microsoft Dynamics 365 Commerce. It also provides a link to more information about online stores and information about how to set up and configure an e-Commerce site.  This topic does not cover everything needed to setup a production e-Commerce site, but covers many of the basics, more advanced topics can be found within the e-Commerce documentation table of contents.
 
 ## Online store channel
 Before you can build your site in Dynamics 365 Commerce, at least one online store channel must be set up, details can be found on the [set up an online channel](channel-setup-online) topic. 
@@ -55,7 +55,7 @@ Launching the site builder tool from LCS will take you to the "Sites" page with 
 
 ![e-Commerce site list](media/e-commerce-site-01.png)
 
-Selecting one of the sites will prompt you to select a domain name, a default online store channel, a supported language for the selected channel and a path.  If only one channel is used, the path can be left empty.  More online store channels or languages can be configured later within the site builder, each additional one will require a unique path.  For example if you have two online channels associated with a single site and the site domain name is www.fabrikam.com, the path for one channel can be the default with no path, ie: "https://www.fabrikam.com" and the second channel could be set to a new path such as "site2" which would have a URL: "https://www.fabrikam.com/site2".  The below images shows an example site initiatlization dialog box.
+Selecting one of the sites will prompt you to select a domain name, a default online store channel, a supported language for the selected channel and a path.  If only one channel is used, the path can be left empty.  More online store channels or languages can be configured later within the site builder, each additional one will require a unique path.  For example if you have two online channels associated with a single site and the site domain name is www.fabrikam.com, the path for one channel can be the default with no path, ie: "https://www.fabrikam.com" and the second channel could be set to a new path such as "site2" which would have a URL: "https://www.fabrikam.com/site2".  The below images shows an example site initialization dialog box.
 
 ![e-Commerce site initialization](media/e-commerce-site-02.png)
 
