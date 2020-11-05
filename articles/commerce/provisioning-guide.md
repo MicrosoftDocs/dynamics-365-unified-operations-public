@@ -52,6 +52,7 @@ For information about how to configure your Commerce evaluation environment afte
 
 The following prerequisites must be in place before you can provision your Commerce evaluation environment:
 
+- You have been onboarded into the evaluation program and granted capacity for an evaluation environment
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.
 - You have administrator access to your Microsoft Azure subscription, or you're in contact with a subscription administrator who can assist you if required.
@@ -95,7 +96,7 @@ To deploy the environment, follow these steps.
 
 1. On the top menu, select **Cloud-hosted environments**.
 1. Select **Add** to add an environment.
-1. In the **Application version** field, select the most current version. If you have a specific need to select an application version other than the most current version, do not select a version prior to **10.0.8**.
+1. In the **Application version** field, select the most current version. If you have a specific need to select an application version other than the most current version, do not select a version prior to **10.0.14**.
 1. In the **Platform version** field, use the platform version that is automatically chosen for the application version you selected. 
 
     ![Selecting application and platform versions](./media/project1.png)
