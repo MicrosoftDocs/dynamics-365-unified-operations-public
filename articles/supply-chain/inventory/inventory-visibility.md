@@ -145,7 +145,7 @@ Before using the service, you must complete the configurations described in the 
 - [Partitioning](#partitioning)
 - [Dimension configurations](#dimension-configurations)
 - [Indexing](#indexing)
-- [Custom Measurement](#custom-measurements)
+- [Custom measurement](#custom-measurement)
 
 #### Partitioning
 
