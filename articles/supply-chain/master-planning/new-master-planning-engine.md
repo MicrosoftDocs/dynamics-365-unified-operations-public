@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrating to Planning Optimization
+title: Migrating to Planning Optimization for master planning
 description: This topic provides information about Planning Optimization, which is the new master planning engine, and describes how to migrate from the existing engine. 
 author: ChristianRytt
 manager: tfehr
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Migrating to Planning Optimization
+# Migrating to Planning Optimization for master planning
 
 [!include [banner](../includes/banner.md)]
 
