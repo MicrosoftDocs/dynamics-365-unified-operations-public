@@ -68,10 +68,10 @@ After a URL is published, you can change the file that it points to, or change t
 
 To update the document that a URL points to, follow these steps.
 
-1. Go **URLs** in site builder, and then select the URL you want to update.
+1. Go to **URLs** in site builder, and then select the URL you want to update.
 1. In the properties pane on the right, select **Edit**.
-1. Under **URL assignment**, select the **Step 2** box, and then a new document from the Media library.
-1. Select **Apply**
+1. Under **URL assignment**, select the **Step 2** box, and then select a new document from the Media library.
+1. Select **Apply**.
 
 ## Update the URL to point to a different asset type
 
@@ -83,11 +83,11 @@ To update the URL to point to a different asset type, follow these steps.
 1. In the properties pane on the right, select **Edit**.
 1. Under **URL assignment**, select a different asset type under **Step1**.
 1. Select the **Step 2** box, and then select the new asset.
-1. Select **Apply**
+1. Select **Apply**.
 
 ## Change the URL path
 
-Once a URL is created, its path cannot be modified. If you need to change the URL path that serves a file, or any other type of resource, you will need to create a new URL, map it to the existing file or other resource, and then unpublish and delete the old URL. 
+Once a URL is created, its path cannot be modified. If you need to change the URL path that serves a file or any other type of resource, you will need to create a new URL, map it to the existing file or other resource, and then unpublish and delete the old URL. 
 
 To change the URL path, follow these steps.
 
