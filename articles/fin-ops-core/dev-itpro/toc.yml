@@ -1490,12 +1490,14 @@
           href: sysadmin/security-architecture.md
         - name: Encryption in Finance and Operations apps
           href: sysadmin/encryption.md
-        - name: Set the session idle timeout
+        - name: Set the session inactivity timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
           href: sysadmin/security-reports.md
         - name: Create new users
           href: sysadmin/tasks/create-new-users.md
+        - name: User session management
+          href: sysadmin/user-session-management.md
         - name: Import users in bulk
           href: sysadmin/tasks/import-bulk-users.md
         - name: Set up segregation of duties
