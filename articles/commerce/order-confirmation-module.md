@@ -37,7 +37,7 @@ This topic covers order confirmation modules and describes how to use them in Mi
 
 ## Overview
 
-The order confirmation module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, pickup options, and shipping method.
+The order confirmation module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, pickup options, and the shipping method.
 
 ## Order confirmation module properties
 
