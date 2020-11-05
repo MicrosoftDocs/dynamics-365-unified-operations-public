@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Title
+title: User session management
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: paulliew
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
 ---
 
-# Title
+# User session management
 
 [!include[banner](../includes/banner.md)]
 
