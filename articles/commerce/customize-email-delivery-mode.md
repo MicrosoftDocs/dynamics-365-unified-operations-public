@@ -5,7 +5,7 @@ title: Customize transactional emails by mode of delivery
 description: This topic describes how to set up custom email templates for specific notification types and modes of delivery in Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: annbe
-ms.date: 10/30/2020
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -63,10 +63,10 @@ These instructions assume that you have already created and added your new, cust
 To configure email templates for specific delivery modes in Commerce headquarters, follow these steps.
 
 1. Go to **Commerce email notification profile**.
-1. Under **Retail event notification settings**, select an existing notification type. If there are none listed, select **+New** on the Action Pane to add a new one.
+1. Under **Retail event notification settings**, select an existing notification type. 
 1. While the notification type is selected, select **Configure modes of delivery**.
-1. Select **+New**. A new notification type row appears under **Retail event notification settings**.
-1. In the **Email notification type** column, select a mode of delivery from the drop-down menu options.
+1. In the **Modes of delivery** dialog box, select **+New**. A new notification type row appears under **Retail event notification settings**.
+1. In the **Mode of delivery** column, select a mode of delivery from the drop-down menu options.
 1. In the **Email ID** column, select the email template you want to map to the specific mode of delivery from the drop-down menu options.
 1. In the **Active** column, select the check box. 
 1. Add additional modes of delivery by repeating steps 4 through 6 above, or if done select **OK**. 
