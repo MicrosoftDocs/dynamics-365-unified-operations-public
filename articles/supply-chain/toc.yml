@@ -2841,6 +2841,8 @@
             href: warehousing/change-work-pool-on-work.md
           - name: Item consolidation - location utilization
             href: warehousing/item-consolidation-location-utilization.md
+          - name: Work split
+            href: warehousing/work-split.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
