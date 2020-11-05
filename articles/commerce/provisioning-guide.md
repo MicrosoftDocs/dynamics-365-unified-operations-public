@@ -5,7 +5,7 @@ title: Provision a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -52,7 +52,7 @@ For information about how to configure your Commerce evaluation environment afte
 
 The following prerequisites must be in place before you can provision your Commerce evaluation environment:
 
-- You have been onboarded into the evaluation program and granted capacity for an evaluation environment
+- You have been onboarded into the evaluation program and granted capacity for an evaluation environment.
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.
 - You have administrator access to your Microsoft Azure subscription, or you're in contact with a subscription administrator who can assist you if required.
