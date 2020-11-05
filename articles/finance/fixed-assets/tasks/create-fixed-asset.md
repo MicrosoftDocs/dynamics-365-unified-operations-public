@@ -57,4 +57,4 @@ If you didn't define the fixed asset number in the template of the Excel add-in,
 > After posting the depreciation, the **Placed in service** and **Depreciation run date** fields will be locked on the **Book** page. Also, both neither field will be updated from the data entity.
 
 > [!WARNING]
-> The fixed asset record won't be deleted if there are posted transactions to the associated book, or if the newly created fixed asset is entered on a journal line but not posted. 
+> The fixed asset record won't be deleted if transactions were posted to the associated book, or if the newly created fixed asset is entered on a journal line but not posted. 
