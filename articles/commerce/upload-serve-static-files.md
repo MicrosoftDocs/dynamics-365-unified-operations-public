@@ -5,7 +5,7 @@ title: Upload and serve static files
 description: This topic describes how to upload a static file in Microsoft Dynamics 365 Commerce site builder and create a custom URL and file name that can be used to request the file.
 author: StuHarg
 manager: annbe
-ms.date: 10/27/2020
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -35,21 +35,22 @@ This topic describes how to upload a static file in Microsoft Dynamics 365 Comme
 
 ## Overview
 
-Some third party connectors require a file be hosted and served from the e-commerce site, which serves as a callback URL. These connectors expect the file to be returned by requests to a specific URL path and file name. This help topic explains how to upload and serve a static file on a Dynamics 365 Commerce e-commerce site, with a user-definable URL and file name. 
+Some third-party connectors require a file to be hosted and served from the e-commerce site which then serves as a callback URL. These connectors expect the file to be returned by requests to a specific URL path and file name. This topic explains how to upload and serve a static file on a Dynamics 365 Commerce e-commerce site, with a user-definable URL and file name. 
 
 ## Create a site URL that returns a static file
 
 To create a site URL that returns a static file in Commerce site builder, follow these steps.
 
-1. Go to **URLs** for your site.
+1. Go to your site's **Media library** and upload the document that will be served by requests to the URL that you will define below. If you have already done this, you can skip this step.
+1. Go to **URLs**.
 1. Select **+ New \> New URL**.
-2. In the **New URL** dialog box, select a Media Library URL.
-3. In the **URL path** box, enter the URL path, including the file name.
-4. Select **Next**, which will open the Media Library.
-5. Select a previously uploaded file, or select **Upload** to upload a new file.
-6. Select **Save**.
+1. In the **New URL** dialog box, select **Media library asset**.
+1. In the **URL path** box, enter the URL path, including the file name.
+1. Select **Next**, which will open the Media library and display all media assets of type "document" that have been uploaded.
+1. Select the document that will be served for requests to the URL that you defined in step 5.
+1. Select **Save**.
 
-At this point, the URL you created is in draft state, and the file it points to will not be returned by that URL until you publish it. This allows you to validate that the correct data is being returned by the URL. 
+At this point, the URL you created is in draft state, and the file it points to will not be returned by that URL until you publish the URL. This allows you to validate that the correct data is being returned by the URL. 
 
 ## Validate an URL before publishing it
 
@@ -57,9 +58,9 @@ To validate an URL before publishing it, follow these steps.
 
 1. Go to **URLs** for your site and select the URL you want to preview.
 2. Below the **Edit** button in the properties pane on the right, select the correct URL link. This will launch a new browser window which will return a 404 error.
-3. Add the `preview=inprogress` query string to the URL (for example, `https://yoursite.com/callback.html?preview=inprogress`).
+3. Append the `?preview=inprogress` query string to the URL (for example, `https://yoursite.com/callback.html?preview=inprogress`) and reload the page.
 
-The file you uploaded to the media library should be returned in the response. Once you have validated the URL, you can make it go live by going into the URLs section within your site, selecting the URL and clicking **Publish**.
+The file you uploaded to the Media library should be returned in the response. Once you have validated the URL, you can publish it by going to **URLs** within your site, selecting the URL, and then selecting **Publish**.
 
 ## Update the file a URL points to
 
