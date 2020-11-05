@@ -92,7 +92,7 @@ Our environment admin received a mail from Microsoft. This mail states that we s
 
 ### Is master planning blocked?
 
-I'm using version 10.0.16, or later, and when running master planning, I get the following error message:
+I'm using version 10.0.16, or later, and when running master planning, I get the following error message. Did my master planning run fail?
 
 > You receive this error message because the built-in master planning engine was used for scenarios supported by Planning Optimization. You should migrate to Planning Optimization now, as the current built-in master planning will be deprecated. Note that this master planning run did complete successfully.
 >
