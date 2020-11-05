@@ -34,6 +34,8 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+This topic describes the change in master planning engine used for Supply Chain Management. The new Planning Optimization will replace the current built-in master planning engine, that has started to deprecate. On this topic you will find information related to the impact on new and existing deployments, including the related actions needed.
+
 ## Planning Optimization
 
 The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL database during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.
@@ -50,7 +52,7 @@ See the announcements on [Removed or deprecated features.](https://docs.microsof
 
 Owners of existing environments running the built-in master planning engine without generation of Planned production orders will receive a mail with details about the exception process. We recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
 
-Starting in version 10.0.16, an error will be shown when running built-in master planning without generation of planned production orders. This error message includes guidance for migration and, if needed, the relevant steps needed to request an exception.
+Starting in version 10.0.16, an error will be shown when running built-in master planning without generation of planned production orders. This error message includes guidance for migration and instructions on how to request an exception.
 
 **New deployment**
 
