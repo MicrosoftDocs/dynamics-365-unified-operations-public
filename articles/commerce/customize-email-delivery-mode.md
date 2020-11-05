@@ -39,11 +39,11 @@ This topic describes how to set up custom email templates for specific notificat
 
 Transactional emails can now be customized by a combination of notification type (for example, order created, order packed, or order invoiced) and mode of delivery (for example, overnight, in-store pickup, or curbside pickup). Custom transactional emails enable retailers to provide order fulfillment experiences for their customers that are tailored to the order's mode of delivery. For example, the "order packed" event can be customized to provide curbside pickup instructions when customers choose curbside pickup, or shipping carrier and delivery information for customers who choose to have their order shipped.
 
-Emails can be customized by mode of delivery for the following notification types:
+Emails can be customized by mode of delivery for the following notification types.
 
 | **Notification type**      | **Notes**                                                    |
 | -------------------------- | ------------------------------------------------------------ |
-| Order cancellation         | New email notification type                                 |
+| Order cancellation         | New email notification type.                               |
 | Order created              |                                                              |
 | Order confirmed            |                                                              |
 | Order invoiced             | New email notification type. This notification type can be used in place of the "order shipped" notification type, which will send a notification for any invoice event with a shipped mode of delivery (not for pickup, carry out, and electronic modes of delivery). |
@@ -65,7 +65,7 @@ To configure email templates for specific delivery modes in Commerce headquarter
 1. Go to **Commerce email notification profile**.
 1. Under **Retail event notification settings**, select an existing notification type. 
 1. While the notification type is selected, select **Configure modes of delivery**.
-1. In the **Modes of delivery** dialog box, select **+New**. A new notification type row appears under **Retail event notification settings**.
+1. In the **Modes of delivery** dialog box, select **+New**. A new notification type row appears.
 1. In the **Mode of delivery** column, select a mode of delivery from the drop-down menu options.
 1. In the **Email ID** column, select the email template you want to map to the specific mode of delivery from the drop-down menu options.
 1. In the **Active** column, select the check box. 
