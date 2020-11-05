@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: E-Commerce site overview
+title: E-commerce site overview
 description: This topic provides an overview of Microsoft Dynamics 365 Commerce e-commerce site support.
 author: bicyclingfool
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# E-Commerce site overview
+# E-commerce site overview
 
 [!include [banner](includes/banner.md)]
 
