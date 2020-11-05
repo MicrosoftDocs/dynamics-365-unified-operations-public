@@ -57,21 +57,26 @@ The repo will contain multiple branches for each release, please use the right r
 To clone a single branch, use the following command:
 git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dynamics365Commerce.ScaleUnit.git
 
-The Commerce.ScaleUnit repo folders and projects:
+### Commerce.ScaleUnit repo folders and projects:
 
 | Folder           | Project                                                                                                                                       | Contents                                                                                   | Description                                   |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------|
 | Channel Database | ChannelDatabase.csproj                                                                                                                        | Contoso.ExampleTable.ChannelDatabase.sql                                                   | Sample database extension.                    |
-| CommerceRuntime  | [CommerceRuntime.csproj](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.26/CommerceRuntime/CommerceRuntime.csproj) | Controller – Sample code for how to implement new RS APIs. Entities, Messages and RequestHandlers – Sample code for how to implement new CRT service.  | Sample CRT extensions.                        |
-| ScaleUnit        | [ScaleUnit.csproj](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.26/ScaleUnit/ScaleUnit.csproj)                   | Project required to generate the CSU package.                                              | Project required to generate the CSU package. |
+| CommerceRuntime  | CommerceRuntime.csproj| Controller – Sample code for how to implement new RS APIs. Entities, Messages and RequestHandlers – Sample code for how to implement new CRT service.  | Sample CRT extensions.                        |
+| ScaleUnit        | ScaleUnit.csproj                  | Project required to generate the CSU package.                                              | Project required to generate the CSU package. |
 
 
-Note: Repos for instore components like Modern POS, Cloud POS, Hardware station and Retail scale unit and other samples will be available in later releases.
-Download reference packages for creating Commerce APIs and consuming messages, request, entities, and contracts:
-Commerce contracts, messages, entities, and request packages are published in this public feed for commerce extension code to consume and customize existing functionalities or build new functionalities for Dynamics 365 Commerce product. 
-Consume the commerce packages from this location, extension can add package source location in the nuget.config of their extension project file.
+> [!NOTE]
+> Repos for instore components like Modern POS, Cloud POS, Hardware station and Retail scale unit and other samples will be available in later releases.
 
-```
+## Download reference packages for creating Commerce APIs and consuming messages, request, entities, and contracts:
+
+Commerce contracts, messages, entities, and request packages are published in this public feed for commerce extension code to consume and customize existing functionalities or build new functionalities for Dynamics 365 Commerce product.
+
+Consume the commerce packages from this [location](https://msazure.pkgs.visualstudio.com/D365/_packaging/Commerce-SDK-Feed/nuget/v3/index.json), extension can add package source location in the nuget.config of their extension project file.
+
+
+```xml
 <packageSources>
 	<add key="Commerce-SDK-Feed" value="https://msazure.pkgs.visualstudio.com/D365/_packaging/Commerce-SDK-Feed/nuget/v3/index.json" />
 	    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
@@ -125,7 +130,7 @@ Microsoft.Dynamics.Commerce.Runtime.Services.Messages</td>
 
 Extension project can consume the correct version by adding the package reference to the project with full version number or use wild card to always get the latest version, recommend option is to use the full version number and update the version based on your go-live version.
 
-```
+```xml
 <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Runtime" Version="9.26" />;
 
 Or
@@ -135,11 +140,11 @@ Or
 
 With every hotfix and new application release new version of the package will be published in the same public feed, consume the right package version based on the version required for your go-live. Consuming the higher version of the package than your go-live application version will result in runtime and deployment failures.
 
-**Setup Azure DevOps pipeline for build automation and package generation:**
+## Setup Azure DevOps pipeline for build automation and package generation:
 
 -   Information will be added later.
 
-**Best practice and branching strategies:**
+## Best practice and branching strategies:
 
 Detailed information on git branching strategy refer [Git branching strategy](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops) doc.
 
@@ -153,7 +158,7 @@ Keep your branch strategy simple. Build your strategy from these three concepts:
 
 -   Keep a high quality, up-to-date main branch.
 
-**Create a new feature branch for development and bug fixes:**
+### Create a new feature branch for development and bug fixes:
 
 Create a new feature branch based of commerce release/x.x.x branch, Clone the Commerce release/x.x.x branch and then create a new branch based on that, Follow the proper naming convention (refer the [Git branching doc for sample naming convention](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#name-your-feature-branches-by-convention))
 
@@ -165,7 +170,7 @@ Create a new feature branch based of commerce release/x.x.x branch, Clone the Co
 -   git checkout -b private/{username}/{feature/description}
 ```
 
-Add and commit new changes to the development branch using git -add . and git commit -m" commit message."
+Add and commit new changes to the development branch using git -add . and git commit -m"commit message."
 
 After the development is completed, tested, and validated push the changes to the main branch by doing git push &lt;remote&gt; &lt;branch&gt;
 
@@ -173,7 +178,7 @@ After the development is completed, tested, and validated push the changes to th
 -   git push origin {private branch name}
 ```
 
-**Create a release branch after development:**
+### Create a release branch after development:
 
 After the development changes pushed into the main branch, create a new release branch, and create the deployable packages from the release branch.
 
@@ -185,11 +190,11 @@ Merge the changes from the release branch back to main branch if any changes don
 -   git checkout master git merge release/x.x.x
 ```
 
-**Extension hotfix branch:**
+### Extension hotfix branch:
 
 Like release branch, create hotfix branch for extension from main branch and release the fix and later merge the changes back to the main branch.
 
-**Merge new SDK release branch to main and development branch:**
+### Merge new SDK release branch to main and development branch:
 
 After a new version of the SDK samples released, if required branch it with your new branch. The SDK contains only samples, so it’s not required to always get the updated changes from the new SDK release branch.
 
