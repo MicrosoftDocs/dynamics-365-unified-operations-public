@@ -91,7 +91,7 @@ Once a URL is created, its path cannot be modified. If you need to change the UR
 
 To change the URL path, follow these steps.
 
-1. To create a new URL and map it to the existing file or other resource, follow the steps to [Create a site URL that returns a static file](#create-a-site-URL-that-returns-a-static-file).
+1. To create a new URL and map it to the existing file or other resource, follow the steps to [Create a site URL that returns a static file](#create-a-site-url-that-returns-a-static-file).
 1. With the new URL selected, select **Publish** on the command bar to publish the new URL.
 1. To unpublish the old URL, select the old URL, and then select **Unpublish** on the command bar. Then delete the old URL if desired.
 
