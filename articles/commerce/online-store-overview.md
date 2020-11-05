@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of Microsoft Dynamics 365 Commerce e-commerce site support, including how e-commerce online stores are used in Dynamics 365 Commerce. It also provides links to more information about online stores and how to set up and configure an e-commerce site. While this topic covers many of the basics, it does not cover everything needed to set up a production e-commerce site. More advanced topics can be found within the Commerce documentation.
+This topic provides an overview of Microsoft Dynamics 365 Commerce e-commerce site support, including how e-commerce online stores are initialized and managed in Dynamics 365 Commerce. It also provides links to more information about online stores and how to set up and configure an e-commerce site. While this topic covers many of the basics, it does not cover everything needed to set up a production e-commerce site. More advanced topics can be found within the Commerce documentation.
 
 ## Online store channel
 
