@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Tax benefits and exemptions rules for NF-e/NFC-e from NT2019.001 
+# NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
 
 [!include [banner](../includes/banner.md)]
 
@@ -150,7 +150,7 @@ When the fiscal document direction is inbound and fiscal document issuer is the 
 When the fiscal document direction is inbound and fiscal document issuer is a third party, it requires the configuration of the rules at the state of the issuer of the fiscal document.
 
 > [!IMPORTANT]
-> For Finance or Supply chain managment, after KB 4582589, the validation becomes obsolete and it is not executed anymore when the fiscal document direction is inbound and the fiscal document issuer is a third party.
+> For Finance or Supply Chain Managment, after KB 4582589, the validation during posting of incoming fiscal documents became obsolete and it is not executed anymore, by default, when the fiscal document direction is inbound and the fiscal document issuer is a third party. However, if turns necessary to return the original behavior, and perform the validation, the feature flighting  **FiscalDocumentNotSkipBenefitValidationIncomingThirdPartyFlight** must be enabled. Its default value is **disabled**.
 
 ## Validation exceptions
 
