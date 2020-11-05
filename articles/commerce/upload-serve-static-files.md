@@ -62,13 +62,40 @@ To validate an URL before publishing it, follow these steps.
 
 The file you uploaded to the Media library should be returned in the response. Once you have validated the URL, you can publish it by going to **URLs** within your site, selecting the URL, and then selecting **Publish**.
 
-## Update the file a URL points to
+## Update the document that a URL points to
 
-After a URL is published, you can change the file that it points to, or change the URL to a different type of resource such as an internal file or a redirect. 
+After a URL is published, you can change the file that it points to, or change the URL to a different type of resource such as an internal file or a redirect.
 
-## Update a URL
+To update the document that a URL points to, follow these steps.
 
-If you need to change the URL path that serves a file, or any other type of resource, you will need to create a new URL, map it to the existing file or other resource, and then unpublish and delete the old URL. 
+1. Go **URLs** in site builder, and then select the URL you want to update.
+1. In the properties pane on the right, select **Edit**.
+1. Under **URL assignment**, select the **Step 2** box, and then a new document from the Media library.
+1. Select **Apply**
+
+## Update the URL to point to a different asset type
+
+You can also update the URL to point to a different asset type such as an internal page or a redirect.
+
+To update the URL to point to a different asset type, follow these steps.
+
+1. Go **URLs** section in site builder, and then select the URL you want to update.
+1. In the properties pane on the right, select **Edit**.
+1. Under **URL assignment**, select a different asset type under **Step1**.
+1. Select the **Step 2** box, and then select the new asset.
+1. Select **Apply**
+
+## Change the URL path
+
+Once a URL is created, its path cannot be modified. If you need to change the URL path that serves a file, or any other type of resource, you will need to create a new URL, map it to the existing file or other resource, and then unpublish and delete the old URL. 
+
+To change the URL path, follow these steps.
+
+1. Follow the steps to [Create a site URL that returns a static file](#create-a-site-URL-that-returns-a-static-file).
+1. Create a new URL and enter the URL path for the URL you wish to update to.
+1. Point the URL at the asset you're updating the URL for and click Save.
+1. With new URL selected, select **Publish** on the command bar to publish the new URL.
+1. To unpublish the old URL, select the old URL, and then select **Unpublish** on the command bar. Then delete the old URL if desired.
 
 ## Additional resources
 
