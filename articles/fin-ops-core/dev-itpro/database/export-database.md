@@ -5,7 +5,7 @@ title: Export a database
 description: This topic explains how to export a database for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 11/5/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,6 +37,32 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database fro
 ## Self-service export database
 
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
+
+### Maximum limit 40GB on exported bacapcs 
+To maintain the system that performs the database exports from LCS, a limit on the maximum bacpac size is being imposed.  This limit is set at 40GB for each bacpac exported.  The reason for this is two-fold: firstly, a centralized system is performing the exports for multiple customers in the same geographic region, and this system has constraints on disk space.  Secondly, Azure SQL compresses the data very well in the bacpac format and in many cases where customers exceeded 40GB there were customizations or binary data involved that drastically oversized the backup file.  
+
+If you experience an export failure because the resulting bacpac is over 40GB in size, try running the below SQL script against your Sandbox database to identify the top 15 tables by size in megatbytes.  Any tables which are for data entity staging ( they have 'staging' at the end of the table name ) can be truncated.  Any tables which are storing binary or blob data (JSON / XML / binary) should either be truncated or the contents of that field should be deleted to free up space.  Binary data is not able to be compressed and so storing such large volumes of data in the database itself will cause you to quickly hit the 40GB limit.
+
+```sql
+USE [YourDBName] -- replace your dbname
+GO
+SELECT top 15
+s.Name AS SchemaName,
+t.Name AS TableName,
+p.rows AS RowCounts,
+CAST(ROUND((SUM(a.used_pages) / 128.00), 2) AS NUMERIC(36, 2)) AS Used_MB,
+CAST(ROUND((SUM(a.total_pages) - SUM(a.used_pages)) / 128.00, 2) AS NUMERIC(36, 2)) AS Unused_MB,
+CAST(ROUND((SUM(a.total_pages) / 128.00), 2) AS NUMERIC(36, 2)) AS Total_MB
+FROM sys.tables t
+INNER JOIN sys.indexes i ON t.OBJECT_ID = i.object_id
+INNER JOIN sys.partitions p ON i.object_id = p.OBJECT_ID AND i.index_id = p.index_id
+INNER JOIN sys.allocation_units a ON p.partition_id = a.container_id
+INNER JOIN sys.schemas s ON t.schema_id = s.schema_id
+GROUP BY t.Name, s.Name, p.Rows
+ORDER BY Total_MB DESC
+GO
+```
+
 
 ### Export operation failure
 
