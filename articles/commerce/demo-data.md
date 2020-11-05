@@ -79,7 +79,7 @@ Screen layout IDs can have a maximum of 10 characters. The ID is a string that c
 
 ### Example layout
 
-Here is an example of a screen layout ID for the Fabrikam company, layout version 3, and the Store Manager persona:
+Here is an example of a screen layout ID for the Fabrikam company, layout version 4, and the Store Manager persona:
 
 F3MGR
 
@@ -107,6 +107,7 @@ The following table shows the layout sizes that are provided for typical screen 
 | Full\*      | 1280 × 720 | 16:9         | Tablets                 |
 | Full        | 1366 × 768 | 16:9         | Tablets, larger screens |
 | Full        | 1440 × 960 | 3:2          | Tablets, larger screens |
+| Full\*      | 1536 × 864 | 16:9         | Tablets, larger screens |
 
 \* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.
 
@@ -124,7 +125,7 @@ Each fictitious company is targeted to a different retail segment and includes p
 | Company         | Location | Segment        | Accent | Theme |
 |-----------------|----------|----------------|--------|-------|
 | Adventure Works | Seattle  | Sporting Goods | Blue   | Dark  |
-| Fabrikam        | Houston  | Fashion        | Green  | Light |
+| Fabrikam        | San Francisco  | Fashion        | Green  | Light |
 | Contoso         | Boston   | Electronics    | Red    | Dark  |
 
 > [!NOTE]
