@@ -43,17 +43,10 @@ This article describes how to configure forced generation of electronic invoices
 When posting invoices with **Forced electronic invoices generation** feature enabled, two scenarios are available.
 
 - If no **Electronic reporting destinations** are defined then output files for electronic invoices will be generated in **Electronic reporting jobs**. To inquire about XML files of generated electronic invoices, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** and select a required job, then select **Show files**, and then select **Open** to download the file with the electronic invoice:
-
 ![Show e-invoice](media/emea-nor-ger-einvoice-open.jpg)
 
-- If **Electronic reporting destinations** are defined for electronic invoices formats then generated output files will be sent to a related file destination ...
-
+- If **Electronic reporting destinations** are defined for electronic invoices formats then generated output files will be sent to a related **File destination** configured for Electronic reporting destination.
 For more details about Electronic reporting destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
-
-
-
-Test.
-
 > [!NOTE]
-> These formats...
+> Italy...
