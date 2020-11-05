@@ -46,9 +46,9 @@ Only one online store channel has to be set up before you can get started with D
 
 After an online store is set up, it can be associated with the Dynamics 365 Commerce site that will serve as your online storefront. For more information about online stores and how to set them up, see [Set up online stores](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
 
-## Deploy a new e-Commerce tenant
+## Deploy a new e-commerce tenant
 
-During initialization of an e-commerce site, you will be prompted for a domain name. For more information on domains in Commerce, see [configure your domain name](configure-your-domain-name.md) and [domains in Dynamics 365 Commerce](domains-commerce.md). To deploy a new e-commerce tenant using [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-Commerce tenant](deploy-ecommerce-site). Once your e-commerce tenant is setup in LCS, a link will be provided to Commerce site builder wjere you can initialize and configure your e-commerce site(s).
+During initialization of an e-commerce site, you will be prompted for a domain name. For more information on domains in Commerce, see [configure your domain name](configure-your-domain-name.md) and [domains in Dynamics 365 Commerce](domains-commerce.md). To deploy a new e-commerce tenant using [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site). Once your e-commerce tenant is setup in LCS, a link will be provided to Commerce site builder wjere you can initialize and configure your e-commerce site(s).
 
 ## Initialize your e-commerce site
 
@@ -60,7 +60,7 @@ Selecting one of the sites will prompt you to select a domain name, a default on
 
 ![Site initialization site dialog box in Commerce site builder](media/e-commerce-site-02.png)
 
-The **Sites** page also has a **New site** button that will bring up a similar dialog box to create a new site, however new sites will be blank and not include the same default templates, fragments, pages, and images provided with the "default" and "fabrikam" sites. If required, a support ticket can be opened to have a copy of default content added to a new blank site. For more information, see [Create an e-Commerce site](create-ecommerce-site.md).
+The **Sites** page also has a **New site** button that will bring up a similar dialog box to create a new site, however new sites will be blank and not include the same default templates, fragments, pages, and images provided with the "default" and "fabrikam" sites. If required, a support ticket can be opened to have a copy of default content added to a new blank site. For more information, see [Create an e-commerce site](create-ecommerce-site.md).
 
 Once the new site is initialized, the Commerce site builder **Home** page will load with links with to common actions and guidance content as shown in the following image.
 
@@ -68,7 +68,7 @@ Once the new site is initialized, the Commerce site builder **Home** page will l
 
 ## Modify or add additional online store channels to an e-commerce site
 
-Once an e-commerce site is created, the channel it is associated with can be changed by following the information in [Associate an e-Commerce site with an online channel](associate-site-online-store.md). The following example image shows how a new channel operating unit number (OUN) can be changed from the **Site settings \> Channels** page.  Once a change is made, be sure to select **Save and publish** to ensure that the changes to go live.  
+Once an e-commerce site is created, the channel it is associated with can be changed by following the information in [Associate an e-commerce site with an online channel](associate-site-online-store.md). The following example image shows how a new channel operating unit number (OUN) can be changed from the **Site settings \> Channels** page.  Once a change is made, be sure to select **Save and publish** to ensure that the changes to go live.  
 
 ![Commerce site builder Channels page](media/e-commerce-site-04.png)
 
@@ -93,7 +93,7 @@ The Commerce "default" and "fabrikam" sites come with preconfigured templates, f
 
 For information on managing your site settings, see the following topics.
 
-- [Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+- [Manage e-commerce users and roles](manage-ecommerce-users-roles.md)
 - [Search engine optimization (SEO) considerations for your site](/search-engine-optimization-considerations.md)
 - [Manage Content Security Policy (CSP)](manage-csp.md)
 - [Select a site theme](select-site-theme.md)
@@ -112,9 +112,9 @@ For information on managing site content, see the following topics.
 
 ## Additional resources
 
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce site](deploy-ecommerce-site.md)
 
 [Associate an online site with a channel](associate-site-online-store.md)
 
