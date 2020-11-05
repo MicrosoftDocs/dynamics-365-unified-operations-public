@@ -68,6 +68,7 @@ Screen layout IDs can have a maximum of 10 characters. The ID is a string that c
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | The base version that supports multiple screen sizes for various devices and aspect ratios |
 | 3.1            | The base version that has additional support for the **Recommended products** panel        |
+| 4              | The extended version for extended Fabrikam updated layout                                  |
 
 ### Persona
 
