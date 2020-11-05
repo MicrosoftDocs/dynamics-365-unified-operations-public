@@ -38,7 +38,7 @@ This topic provides an overview of Microsoft Dynamics 365 Commerce e-commerce si
 
 ## Online store channel
 
-Before you can build your site in Dynamics 365 Commerce, at least one online store channel must be set up. For more information, see [Set up an online channel](channel-setup-online). 
+Before you can build your site in Dynamics 365 Commerce, at least one online store channel must be set up. For more information, see [Set up an online channel](channel-setup-online.md). 
 
 In Dynamics 365 Commerce, you use an online store channel to establish the products, pricing, languages, payment methods, delivery modes, fulfillment centers, and other aspects of the online experience that should be available to your customers.
 
@@ -48,7 +48,7 @@ After an online store is set up, it can be associated with the Dynamics 365 Comm
 
 ## Deploy a new e-commerce tenant
 
-During initialization of an e-commerce site, you will be prompted for a domain name. For more information on domains in Commerce, see [Configure your domain name](configure-your-domain-name.md) and [Domains in Dynamics 365 Commerce](domains-commerce.md). To deploy a new e-commerce tenant using [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site). Once your e-commerce tenant is setup in LCS, a link will be provided to Commerce site builder where you can initialize and configure your e-commerce site(s).
+During initialization of an e-commerce site, you will be prompted for a domain name. For more information on domains in Commerce, see [Configure your domain name](configure-your-domain-name.md) and [Domains in Dynamics 365 Commerce](domains-commerce.md). To deploy a new e-commerce tenant using [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site.md). Once your e-commerce tenant is setup in LCS, a link will be provided to Commerce site builder where you can initialize and configure your e-commerce site(s).
 
 ## Initialize your e-commerce site
 
