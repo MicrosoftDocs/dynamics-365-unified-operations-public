@@ -132,7 +132,7 @@ If you try to release a product master without variants, and then create the var
 
 This is working as designed. The product master and the dimensions that the master could take are kept at a "shared" level. Because these relations are kept at a shared level, it isn't possible to create the available dimensions for a shared product master in the specific legal entity where they are released and then replicate the process in each legal entity where needed. Instead, you must change your release process to adapt to the designed process.
 
-The process to release products is to create the shared product master and the dimensions that could be released to the legal entities and using variant suggestions or the combinations needed can be manually created and then released to the needed companies. <!-- KFM: This isn't clear. I'm not sure how to fix it. -->
+The process to release products is to create the shared product master and the dimensions that could be released to the legal entities. Then, release the products to the companies either by using variant suggestions or by manually adding the combinations that should be released. 
 
 Alternatively, you could directly create the released product.
 
