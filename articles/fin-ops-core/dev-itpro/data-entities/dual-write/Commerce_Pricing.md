@@ -3,7 +3,7 @@
 
 title: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
 description: This topic describes how to use the Commerce pricing engine for Sales quote creation in Dynamics 365 Sales.
-author: Shalabh Jain
+author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
@@ -43,7 +43,7 @@ Microsoft Dynamics 365 Commerce pricing engine supports most of the B2C pricing 
 When the user initiates a quote in the Sales application, the dual write framework copies the quote details in the Dynamics 365 Commerce application. Any changes to the existing quote lines or newly added quote lines from Sales application get copied to the Commerce application. Whenever the users want to price the quote based on the Commerce pricing engine, they can click on the "Price quote" button to update the prices of the quote based on Commerce pricing engine. With this action, the prices are updated automatically in both Sales and Commerce applications.  
 
 ## Prerequisites   
-- Steps provided in the "Prospect to cash" document are a prerequisite for using Commerce pricing from Sales application. Here is a link to [Prospect to cash](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/) 
+- Steps provided in the "Prospect to cash" document are a prerequisite for using Commerce pricing from Sales application. Here is a link to [Prospect to cash](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/) 
 
 - The trade agreement evaluation for Manual entry should be disabled. Here are the steps:
     - Navigate to your Dynamics 365 Commerce environment.
