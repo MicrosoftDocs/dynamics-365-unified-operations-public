@@ -24,8 +24,8 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Creators in the Acceptance test library
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Creator classes provide fluent application programming interfaces (APIs) that are used to create test data.
 
@@ -49,7 +47,7 @@ In this naming convention:
 
 ## Examples
 
-```
+```xpp
 AtlCreatorCostGroup
 
 AtlCreatorCustomer
@@ -67,7 +65,7 @@ In this naming convention, `<EntityPropertyName>` is the name of the property th
 
 ### Example
 
-```
+```xpp
 item = new AtlCreatorProductsReleasedVariant()
     .setItemId('DemoItem')
     .setColor(ecoResColor)

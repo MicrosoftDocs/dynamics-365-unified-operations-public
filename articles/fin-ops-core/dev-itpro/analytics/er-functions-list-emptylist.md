@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="EMPTYLIST">EMPTYLIST ER function</a>
+# EMPTYLIST ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `EMPTYLIST` function returns an empty *Record list* value by using the speci
 
 ## Syntax
 
-```
+```vb
 EMPTYLIST (list)
 ```
 

@@ -40,7 +40,7 @@ This topic explains how you can use the Trace parser to consume traces and analy
 > There are many more features in the Trace parser are similar to Microsoft Dynamics AX 2012. See the [Dynamics Ax Performance Team Blog](https://blogs.msdn.com/axperf) for more information.
 
 ## Finding the Trace parser
-Trace parser should be preinstalled with your developer deployment or VHD. The install location is here: C:\\Program Files (x86)\\Microsoft Dynamics AX\\Microsoft.Dynamics.AX.Tracing.TraceParser.exe In case it is not installed you can find the "traceparser.msi" in C:\\PerfSDK. If the for any reason the PerfSDK is not installed you can find the .msi here: C:\\Services\\PerfSDK\\Scripts.
+Trace parser should be preinstalled with your developer deployment or VHD. The install location is here: **C:\\Program Files (x86)\\Microsoft Dynamics Trace Parser**. If it's not installed, you can run the installer from **C:\\PerfSDK\\PerfTools\\traceparser.msi**.
 
 ## Capturing events
 There are two ways that you can obtain the data that you will analyze in the Trace parser. They include:

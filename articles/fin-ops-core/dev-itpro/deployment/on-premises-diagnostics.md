@@ -3,7 +3,7 @@
 
 title: On-premises diagnostics
 description: This topic provides information about how to expose the diagnostic data for Dynamics 365 Finance + Operations (on-premises) deployments. 
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
 ms.date: 09/18/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
 
@@ -130,7 +130,7 @@ To help ensure that Logstash runs on startup, we used the Non-Sucking Service Ma
 1. Copy nssm.exe to the Logstash bin folder (for example, C:\\ELK\\Logstash\\6.2.4\\bin\\).
 2. Open Windows PowerShell from the bin folder, and run the following command.
 
-    ```
+    ```Console
     .\nssm.exe install Logstash
     ```
 
@@ -144,7 +144,7 @@ To help ensure that Logstash runs on startup, we used the Non-Sucking Service Ma
 
 4. Run the following command.
 
-    ```
+    ```Console
     .\nssm.exe start Logstash
     ```
 
@@ -167,7 +167,7 @@ When Winlogbeat runs on an Orchestrator node, the **Tags** field can be changed 
 
 Winlogbeat includes a service installer. Microsoft used this installer to set up Winlogbeat as a service on each node. Press the Windows logo key+R to start the Run tool, and then run the following command.
 
-```
+```powershell
 powershell.exe -ExecutionPolicy Bypass -File C:\ELK\Winlogbeat\install-service-winlogbeat.ps1
 ```
 
@@ -176,7 +176,7 @@ Kibana provides the interface to query the diagnostic data in Elasticsearch.
 
 Microsoft downloaded Kibana to C:\\ELK\\Kibana and configured the kibana.yml file in the following manner.
 
-```
+```Console
 server.host: "10.0.0.14"
 server.name: "Dyn365FinOps On-Premises Diagnostics"
 elasticsearch.url: "http://ORCH1:9200"
@@ -230,7 +230,7 @@ Microsoft installed the free version to enable query data to be exported from Ki
 
 To enable only the free features and avoid using other X-Pack trial features, Microsoft added the following settings to our elasticsearch.yml and kibana.yml configuration files:
 
-```
+```Console
 xpack.graph.enabled: false
 xpack.ml.enabled: false
 xpack.security.enabled: false
@@ -241,7 +241,7 @@ These settings also stop Kibana and Elasticsearch from asking for credentials be
 
 For X-Pack to work, the logstash.yml configuration file must also be configured in the following manner.
 
-```
+```Console
 xpack.monitoring.elasticsearch.url: "http://orch1:9200"
 ```
 

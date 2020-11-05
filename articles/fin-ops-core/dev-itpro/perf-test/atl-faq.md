@@ -24,8 +24,8 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Acceptance test library FAQ
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## Which fluent prefix should I use: set, for, or with?
 
@@ -56,7 +54,7 @@ In most of the cases, the order of the chained fluent setters doesn't matter. Ho
 
 ### Option 1
 
-```
+```xpp
 salesLine.setQuantity(10).setUnitPrice(100).setAmount(2000).save()
 ```
 
@@ -64,7 +62,7 @@ This option produces a sales line where the amount == 2,000, because the amount 
 	
 ### Option 2
 
-```
+```xpp
 salesLine.setAmount(2000).setQuantity(10).setUnitPrice(100).save()
 ```
 

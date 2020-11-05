@@ -4,7 +4,7 @@
 title: Phantom items
 description: This topic describes, in detail, how the Phantom line type can be used for the lines of a bill of materials (BOM) and a formula in Dynamics 365 Supply Chain Management.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 06/15/2018
 ms.topic: article
 ms.prod: 
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: SysOperationTemplateForm   
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validfrom: 
 ms.dyn365.ops.version: 8.1
 ---

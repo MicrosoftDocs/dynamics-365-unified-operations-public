@@ -22,13 +22,15 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
 ---
 
 # Purchase return orders
+
+[!include [banner](../includes/banner.md)]
 
 1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 2. Create a purchase order.

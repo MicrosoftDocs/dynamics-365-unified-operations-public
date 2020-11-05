@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,7 +40,7 @@ This topic lists the system requirements for the current version of Dynamics 365
 
 The web application can run in any of the following web browsers that run on the specified operating systems:
 
-- Microsoft Edge (latest publicly available version) on Windows 10
+- Microsoft Edge (latest publicly available version) on Windows 10. This applies to both legacy Edge as well as the Microsoft Edge based on Chromium. 
 - Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
 - Google Chrome (latest publicly available version) 
 - Apple Safari (latest publicly available version)
@@ -54,7 +54,7 @@ To find the latest release for each web browser, go to the software manufacturer
 
 ## Network requirements
 
-- The app is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts the app. We recommend that you test network latency at [AzureSpeed.com](http://www.azurespeed.com).
+- The app is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts the app. We recommend that you test network latency at [AzureSpeed.com](https://www.azurespeed.com).
 - Bandwidth requirements for the app depend on your scenario. Most typical scenarios require a bandwidth that is more than 50 kilobytes per second (KBps). However, we recommend more bandwidth for scenarios that have high payload requirements, such as scenarios that involve workspaces or extensive customization.
 
 In general, the app is optimized for the internet. The number of round trips from a browser client to the Azure datacenter is very small, and the whole payload is compressed.
@@ -75,7 +75,7 @@ The following Microsoft Office applications are supported in cloud:
 
 ## Requirements for development on local VMs
 
-For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises).
+For information about the requirements for development on local virtual machines (VMs), see [VM that is running locally](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-locally).
 
 ## Database collation
 

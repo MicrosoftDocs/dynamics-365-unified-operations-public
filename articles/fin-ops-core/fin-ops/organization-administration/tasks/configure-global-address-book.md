@@ -3,7 +3,7 @@
  
 title: Configure the global address book
 description: Use this procedure to set the default values and security policies for the global address book. 
-author: kfend
+author: msftbrking 
 manager: AnnBe 
 ms.date: 07/23/2019
 ms.topic: business-process 
@@ -22,13 +22,13 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: brking
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Configure the global address book
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to set the default values and security policies for the global address book. 
 

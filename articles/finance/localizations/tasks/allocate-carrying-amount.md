@@ -22,13 +22,13 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Allocate carrying amount of shared asset and goodwill to cash generating units
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through allocating the carrying amount of shared asset and goodwill to each of the cash generating units. The allocation must be done before activating the CGU group.
 

@@ -4,7 +4,7 @@
 
 title: Class extension - Method wrapping and Chain of Command
 description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping.
-author: ChrisGarty
+author: jorisdg
 manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
@@ -19,12 +19,11 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: cgarty
+ms.author: jorisde
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -38,7 +37,7 @@ The functionality for class extension, or class augmentation, has been improved.
 
 For example, a model contains the following code.
 
-```
+```xpp
 class BusinessLogic1
 {
     str doSomething(int arg) 
@@ -50,7 +49,7 @@ class BusinessLogic1
 
 You can now augment the functionality of the **doSomething** method inside an extension class by reusing the same method name. An extension class must belong to a package that references the model where the augmented class is defined.
 
-```
+```xpp
 [ExtensionOf(classStr(BusinessLogic1))]
 final class BusinessLogic1_Extension
 {
@@ -69,7 +68,7 @@ In this example, the wrapper around **doSomething** and the required use of the 
 
 We now run the following code.
 
-```
+```xpp
 BusinessLogic1 object = new BusinessLogic1();
 info(object.doSomething(33));
 ```
@@ -95,7 +94,7 @@ Methods that have default parameters can be wrapped by extension classes. Howeve
 
 For example, the following simple class has a method that has a default parameter.
 
-``` 
+```xpp
 class Person 
 {
     public void salute(str message = "Hi") {...}
@@ -104,7 +103,7 @@ class Person
 
 In this case, the wrapper method must resemble the following example.
 
-```
+```xpp
 [ExtensionOf(classStr(Person))]
 final class APerson_Extension
 {
@@ -122,7 +121,7 @@ Instance and static methods can be wrapped by extension classes. If a static met
 
 For example, we have the following **A** class.
 
-```
+```xpp
 class A 
 {
     public static void aStaticMethod(int parameter1)
@@ -134,7 +133,7 @@ class A
  
 In this case, the wrapper method must resemble the following example.
 
-```
+```xpp
 [ExtensionOf(classStr(A)]
 final class An_Extension
 {
@@ -168,7 +167,7 @@ Here are some important rules:
 ### Wrapping a base method in an extension of a derived class
 The following example shows how to wrap a base method in an extension of a derived class. For this example, the following class hierarchy is used.
 
-```
+```xpp
 class A
 {
     public void salute(str message)
@@ -183,7 +182,7 @@ class C extends A {}
 
 Therefore, there is one base class, **A**. Two classes, **B** and **C**, are derived from **A**. We will augment or create an extension class of one of the derived classes (in this case, **B**), as shown here.
 
-```
+```xpp
 [ExtensionOf(classStr(B))]
 final class B_Extension
 {
@@ -199,7 +198,7 @@ Although the **B_Extension** class is an extension of **B**, and **B** doesn't h
 
 This behavior becomes clearer if we implement a method that uses these three classes.
 
-```
+```xpp
 class ProgramTest 
 {
     public static void main(Args args)
@@ -225,20 +224,23 @@ As of Platform update 9, you can access protected members from extension classes
 ### The Hookable attribute
 If a method is explicitly marked as **[Hookable(false)]**, the method can't be wrapped in an extension class. In the following example, **anyMethod** can't be wrapped in a class that augments **AnyClass1**.
 
-```
+```xpp
 class AnyClass1 
 {
-    [HookableAttribute(false)]
+    [Hookable(false)]
     public void anyMethod() {...}
 }
 ```
+
+> [!NOTE]
+> For compatibility reasons, **[Hookable(false)]** overrides the behavior of chain of command in addition to pre- and post-handlers. However, **[Hookable(true)]** only applies to pre- and post-handlers and does not influence chain of command wrapping.
 
 ### Final methods and the Wrappable attribute
 Public and protected methods that are marked as **final** can't be wrapped in extension classes. You can override this restriction by using the **Wrappable** attribute and setting the attribute parameter to **true** (**[Wrappable(true)]**). Similarly, to override the default capability for (non-final) public or protected methods, you can mark those methods as non-wrappable (**[Wrappable(false)]**).
 
 In the following example, the **doSomething** method is explicitly marked as non-wrappable, even though it's a public method. The **doSomethingElse** method is explicitly marked as wrappable, even though it's a final method.
 
-```
+```xpp
 class AnyClass2 
 {
     [Wrappable(false)]
@@ -437,6 +439,9 @@ In a CoC extension method, the next call must not be called conditionally. Howev
 
 ### Extensions of extensions are not yet supported
 Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is planned for a future release.
+
+### Extensions of constructors
+Constructors cannot be extended. A **new** method that is defined on an extension class will define a constructor for the extension class itself. Additionally, the **new** method has to be public, and it can't have any arguments. For more information, see [Constructors](class-extensions.md#constructors).
 
 ### Tooling
 For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense.

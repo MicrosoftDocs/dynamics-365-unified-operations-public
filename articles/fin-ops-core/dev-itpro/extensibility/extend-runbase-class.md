@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
@@ -48,7 +47,7 @@ To avoid collisions with other eventual extensions, we followed these best pract
 
 The following example shows how to implement this scenario.
 
-```
+```xpp
 [ExtensionOf(classStr(SysUserLogCleanup))]
 final class MySysUserLogCleanup_Extension
 {

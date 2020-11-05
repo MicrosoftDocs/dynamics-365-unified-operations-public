@@ -4,7 +4,7 @@
 title: Negative days and dynamic negative days
 description: This topic provides information about negative days and dynamic negative days, and how you can use them to help your business.
 author: t-benebo
-manager: AnnBe
+manager: tfehr
 ms.date: 06/06/2019
 ms.topic: article
 ms.prod: 
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: 
+ms.author: kamaybac
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
 

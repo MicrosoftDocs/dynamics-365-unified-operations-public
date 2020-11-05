@@ -52,10 +52,6 @@ Changes described in this section apply to build number 8.1.2239. Numbers in par
 
 With this release, these Common Data Service entities have been updated to include the ability to include custom field added through Talent: Core HR.
 
-### New Common Data Service entity support for: Compensation vesting rules, Compensation variable plan, Variable compensation
-
-With this release, Compensation vesting rules, Compensation variable plan, and Variable compensation entities have been added to Common Data Service. These entities also support custom fields added through Talent: Core HR.
-
 ### PowerBI refresh issues (314342)
 
 This change corrects an issue with PowerBI reports refreshing correctly.

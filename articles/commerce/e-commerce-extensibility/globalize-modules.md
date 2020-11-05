@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Globalize modules by using the CultureInfoFormatter class
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to globalize modules by using the **CultureInfoFormatter** class.
@@ -340,3 +339,9 @@ export interface INumberFormatOptions {
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
+
+[Interactive components overview](interactive-components.md)
+
+[Mock the signed-in state during local development](mock-sign-in.md)
+
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)

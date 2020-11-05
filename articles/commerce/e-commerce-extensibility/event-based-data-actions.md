@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 ---
 # Use event-based data actions
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to use event-based data actions.
@@ -120,6 +119,8 @@ export default ProductButton;
 ## Additional resources
 
 [Data actions overview](data-actions.md)
+
+[Data action cache options](data-action-cache.md)
 
 [Test data actions with mocks](test-data-action-mocks.md)
 

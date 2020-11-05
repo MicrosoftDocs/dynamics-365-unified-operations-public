@@ -22,7 +22,7 @@ ms.search.scope: Operations
 ms.custom: 
 ms.search.region: France
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -57,7 +57,7 @@ This topic includes information and links to resources that can help you set up 
 - [RB/SL depreciation](emea-fra-rbsl-depreciation.md)
 - [Setup method of payment](tasks/fr-00004-setup-method-payment.md)
 - [Update method of payment on customer](tasks/fr-00004-update-method-payment-customer.md)
-- Retail
+- Commerce
   - [Cash register functionality](../../retail/localizations/emea-fra-cash-registers.md)
   - [Deployment guidelines for cash registers](../../retail/localizations/emea-fra-deployment.md)
 

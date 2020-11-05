@@ -4,7 +4,7 @@
 title: Item and raw material tracing in inventory, production, and sales
 description: This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes. 
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 30191
@@ -49,7 +49,7 @@ Item tracing is a business intelligence (BI) tool that provides visibility into 
 -   Investigate where an item or raw material was consumed in the production of another item.
 
 ## What can I trace, and are there any limitations?
-You can trace historical inventory transactions for items and raw materials, based on an item number and a tracking dimension, such as a serial number, batch number, or vendor batch number. You can trace an item or raw material only if a tracking dimension is assigned to it. Because tracing is based on inventory transactions, there are some limitations when you trace items. For example, there are limitations that are related to transactions for projects, fixed assets, and retail. Additionally, co-products are shown in the trace details, but by-products aren't included. The trace includes all warehouse transactions from one location to another. Therefore, users might find the amount of information overwhelming. The trace is displayed for one legal entity at a time. There are no cross-company capabilities in an intercompany context. You must start a new trace for each company where an item is received or issued.
+You can trace historical inventory transactions for items and raw materials, based on an item number and a tracking dimension, such as a serial number, batch number, or vendor batch number. You can trace an item or raw material only if a tracking dimension is assigned to it. Because tracing is based on inventory transactions, there are some limitations when you trace items. For example, there are limitations that are related to transactions for projects, fixed assets, and commerce. Additionally, co-products are shown in the trace details, but by-products aren't included. The trace includes all warehouse transactions from one location to another. Therefore, users might find the amount of information overwhelming. The trace is displayed for one legal entity at a time. There are no cross-company capabilities in an intercompany context. You must start a new trace for each company where an item is received or issued.
 
 ## What criteria can I specify for an item trace?
 The criteria that are required for an item trace are the item number, a tracking dimension (such as a batch number or serial number), and the direction. The following table describes the criteria that you can use in an item trace.

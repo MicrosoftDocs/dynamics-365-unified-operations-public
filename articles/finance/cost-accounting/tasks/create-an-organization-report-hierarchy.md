@@ -22,13 +22,13 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create an organization report hierarchy
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to create a report hierarchy for organization reporting. The purpose of this recording is to guide you through the dimension hierarchy so that you can continue until the whole organization reporting structure is created. This recording uses the USP2 demo data company.
 

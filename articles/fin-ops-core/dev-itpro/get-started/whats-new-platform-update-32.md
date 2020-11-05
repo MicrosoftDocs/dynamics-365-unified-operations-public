@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Platform update 32 for Finance and Operations apps (February 2020)
+title: What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
 description: This topic lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 12/09/2019
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,12 +29,11 @@ ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
 
 ---
-# Preview features in Platform update 32 for Finance and Operations apps (February 2020)
+# What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-This topic lists the preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
+This topic lists features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020
@@ -88,13 +87,13 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
-### Removed and deprecated features
+### Removed and deprecated platform features
 
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
+The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months before the removal of any feature from the product.
+A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.

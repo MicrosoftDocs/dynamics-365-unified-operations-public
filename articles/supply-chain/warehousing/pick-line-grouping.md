@@ -4,7 +4,7 @@
 title: Pick line grouping
 description: This topic provides an overview of pick line grouping.
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -135,3 +135,4 @@ Before you can set up pick line grouping, you must create some eligible outbound
 >    - Piece picking.
 >    - Work lines that have unfinished replenishment work.
 >    - Over-picking.
+>    - Short picking with item reallocation

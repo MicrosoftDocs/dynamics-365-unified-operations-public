@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMSEQVALUE">NUMSEQVALUE ER function</a>
+# NUMSEQVALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,19 +38,19 @@ The `NUMSEQVALUE` function returns a *String* value that represents the new gene
 
 ## Syntax 1
 
-```
+```vb
 NUMSEQVALUE (number sequence code)
 ```
 
 ## Syntax 2
 
-```
+```vb
 NUMSEQVALUE (number sequence record ID)
 ```
 
 ## Syntax 3
 
-```
+```vb
 NUMSEQVALUE (number sequence code, scope type, scope ID)
 ```
 

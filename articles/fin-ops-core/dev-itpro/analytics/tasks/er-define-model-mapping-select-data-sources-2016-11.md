@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define ER model mappings and select data sources for them
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model. The data sources will be bound to individual components of the selected data model at design time and populate business data to that data model at run-time. In this example, you will select data sources for an existing data model that has been created for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the “Create a new data model” procedure.
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model. The data sources will be bound to individual components of the selected data model at design time and populate business data to that data model at run-time. In this example, you will select data sources for an existing data model that has been created for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Create a new data model" procedure.
 
 
 ## Open the Electronic Reporting configurations tree
@@ -81,7 +81,7 @@ The following steps explain how a user in the System Administrator or Electronic
 17. In the tree, select 'Transactions\Voucher'.
 18. Click Add data source.
 19. In the Formula field, enter 'CONCATENATE(Transactions.Voucher, "-", '.
-    * Type [ , “-“, ] at the end of the formula.  
+    * Type [ , "-", ] at the end of the formula.  
 20. In the tree, select 'String\TEXT'.
 21. Click Add function.
 22. In the tree, select 'Transactions\Record-ID(RecId)'.
@@ -115,7 +115,7 @@ The following steps explain how a user in the System Administrator or Electronic
 43. In the tree, expand or collapse 'Transactions'.
 44. In the tree, select 'Dynamics 365 for Operations\Table records'.
 45. Click Add root.
-    * Enter this data source to access the company’s bank account details.  
+    * Enter this data source to access the company's bank account details.  
 46. In the Name field, type 'BankAccount'.
     * BankAccount  
 47. In the Label field, enter 'Bank Account'.
@@ -129,7 +129,7 @@ The following steps explain how a user in the System Administrator or Electronic
 51. Click OK.
     * Select the BankAccountTable table as a data source for the current data model.  
 52. Click Add root.
-    * Enter this data source to access the company’s requisites.  
+    * Enter this data source to access the company's requisites.  
 53. In the Name field, type 'Company'.
     * Company  
 54. In the Label field, type a value.

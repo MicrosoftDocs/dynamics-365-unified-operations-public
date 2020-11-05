@@ -5,7 +5,7 @@ title: Deploy and use an environment that supports continuous build and test aut
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
-ms.date: 02/22/2018
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,7 +50,7 @@ This workflow includes an LCS deployment of a developer VM and a build/test VM i
 
 + LCS creates developer and the build/test environments in Azure. To create a build/test environment, LCS must be able to determine where the source code for the Azure DevOps project is.
 + The developer works on source code on the developer VM, and the work is synced to the Azure DevOps project.
-+ The build process synchonizes the code from Azure DevOps onto the build/test VM and produces deployable packages that you can apply to sandbox and production environments. The source code doesn't flow directly from the development VM to the build/test VM. They are synced through Azure DevOps.
++ The build process synchronizes the code from Azure DevOps onto the build/test VM and produces deployable packages that you can apply to sandbox and production environments. The source code doesn't flow directly from the development VM to the build/test VM. They are synced through Azure DevOps.
 
 For information about how to write custom test code or generate automated test code to integrate with the build infrastructure, see [Testing and validations](testing-validation.md).
 
@@ -98,7 +98,7 @@ As part of code Migration process or development activities, we expect you to ch
 
 ### Deploy a Build environment
 
-The topic [Deploy and access development environments](../dev-tools/access-instances.md) describes how to deploy developer environments. Use the same flow to deploy a build environment. As you are going through the deployment or configuration wizard, when prompted to **Select a Topology**, select **DevTest** than select a **Build and Test** topology.
+The topic [Deploy and access development environments](../dev-tools/access-instances.md) describes how to deploy developer environments. Use the same flow to deploy a build environment. As you are going through the deployment or configuration wizard, when prompted to **Select a Topology**, select **DevTest** then select a **Build and Test** topology.
 
 As part of the deployment wizard, you can configure the build agent name and build agent pool.
 

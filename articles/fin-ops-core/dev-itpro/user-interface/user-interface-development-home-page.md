@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191453
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic contains links to topics about developing user interface elements.
 
-The user interface for Finance and Operation applcications differs significantly from the interface for Microsoft Dynamics AX 2012. The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls. The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server. For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client. The client is an HTML web client that runs in all major browsers. These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../../fin-ops/get-started/system-requirements.md)). The move to a web client has produced the following changes to client forms and controls:
+The user interface for Finance and Operation applications differs significantly from the interface for Microsoft Dynamics AX 2012. The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls. The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server. For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client. The client is an HTML web client that runs in all major browsers. These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../../fin-ops/get-started/system-requirements.md)). The move to a web client has produced the following changes to client forms and controls:
 
 -   The physical presentation of forms and controls is now HTML, JavaScript, and CSS within the browser.
 -   Form controls are split into logical and physical parts. The X++ logical API and related state run on the server.
@@ -51,7 +51,6 @@ The form metamodel continues to be used to define controls and application logic
 
 ## Forms
 -   [Navigation concepts](page-navigation.md)
-<!---   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)-->
 -   [Page layout in the web client](page-layout.md)
 -   [Dynamics Symbol font](symbol-font.md)
 -   [Test forms that use custom patterns](testing-forms-custom-patterns.md)

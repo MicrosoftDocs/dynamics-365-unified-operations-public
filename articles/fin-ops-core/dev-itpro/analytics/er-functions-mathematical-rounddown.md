@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUNDDOWN">ROUNDDOWN ER function</a>
+# ROUNDDOWN ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ROUNDDOWN` function returns the specified number as a *Real* value after it
 
 ## Syntax
 
-```
+```vb
 ROUNDDOWN (number, decimals)
 ```
 

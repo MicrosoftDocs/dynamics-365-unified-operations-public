@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NULLDATE">NULLDATE ER function</a>
+# NULLDATE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `NULLDATE` function returns a *Date* value that represents the **null** date
 
 ## Syntax
 
-```
+```vb
 NULLDATE () as 
 ```
 

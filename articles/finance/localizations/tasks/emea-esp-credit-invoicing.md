@@ -22,13 +22,13 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a corrective invoice (Spain)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through how to create a corrective invoice. This procedure was created using the demo data company DEMF with a primary address in Spain.
 

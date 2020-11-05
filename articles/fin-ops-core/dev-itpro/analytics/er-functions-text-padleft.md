@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="PADLEFT">PADLEFT ER function</a>
+# PADLEFT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `PADLEFT` function returns a *String* value of the specified length, where t
 
 ## Syntax
 
-```
+```vb
 PADLEFT (text, length, padding chars)
 ```
 

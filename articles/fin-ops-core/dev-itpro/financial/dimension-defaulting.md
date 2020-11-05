@@ -252,7 +252,7 @@ The following illustration shows the code that is required in order to merge the
 
 This section explains how default dimensions can be merged to create new ledger dimensions.
 
-Default dimensions provide values that will be used later to create ledger account combinations that are used in journals and accounting distributions. According to the definition in the [Ledger account combinations series of blog posts](https://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/02/15/ledger-account-combinations-part-5-_2800_ledger-dimensions_2900_-.aspx), a ledger account combination is just a set of MainAccount and dimension values that structure and order are applied to.
+Default dimensions provide values that will be used later to create ledger account combinations that are used in journals and accounting distributions. A ledger account combination is just a set of MainAccount and dimension values that structure and order are applied to. For more information, see [Part 5: Ledger dimensions](ledgeraccountcombinations.md#part-5-ledger-dimensions)
 
 Default dimensions provide all the dimensions, except MainAccount, that are required for a ledger account combination. Default dimensions can be combined with a default account, or they can be combined another ledger dimension to produce a ledger dimension.
 
@@ -298,7 +298,7 @@ The **serviceMergeDefaultDimensions()** API is the most frequently used API for 
 
 **Example: DimensionDefaultFacade::serviceMergeDefaultDimensions()**
 
-```
+```xpp
 public static DimensionDefault serviceMergeDefaultDimensions(
     DimensionDefault _value1,
     DimensionDefault _value2,
@@ -312,7 +312,7 @@ The **serviceReplaceAttributeValue()** API is useful if a single dimension value
 
 **Example: DimensionDefaultFacade::serviceReplaceAttributeValue()** 
 
-```
+```xpp
 public static DimensionDefault serviceReplaceAttributeValue(
     DimensionDefault _target,
     DimensionDefault _source,
@@ -323,9 +323,9 @@ public static DimensionDefault serviceReplaceAttributeValue(
 
 The **serviceMergeValidDefaultDimensions()** API is useful if you want the merge to merge only values that are valid for the current ledger. It works just like **serviceMergeDefaultDimensions** but includes a check for valid values.
 
-**Example: DimensionDefaultFacade::serviceReplaceAttributeValue()** 
+**Example: DimensionDefaultFacade::serviceMergeValidDefaultDimensions()** 
 
-```
+```xpp
 public static DimensionDefault serviceMergeValidDefaultDimensions(
     DimensionDefault _defaultDimension1,
     DimensionDefault _defaultDimension2,
@@ -341,7 +341,7 @@ The **serviceCreateLedgerDimension()** API is the most frequently used API for l
 
 **Example: LedgerDimensionFacade.serviceCreateLedgerDimension()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceCreateLedgerDimension(
     RecId            _ledgerDimensionId,
     DimensionDefault _dimensionDefault1 = 0,
@@ -356,7 +356,7 @@ The **serviceCreateLedgerDimensionForType()** API resembles the **serviceCreateL
 
 **Example: LedgerDimensionFacade.serviceCreateLedgerDimensionForType()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceCreateLedgerDimensionForType(
     LedgerDimensionType _ledgerDimensionType,
     LedgerDimensionBase _ledgerDimensionId,
@@ -371,7 +371,7 @@ The **serviceCreateLedgerDimForDefaultDim()** API resembles the **serviceCreateL
 
 **Example: LedgerDimensionFacade::serviceCreateLedgerDimForDefaultDim()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceCreateLedgerDimForDefaultDim(
     DimensionDefault    _defaultDimension,
     LedgerDimensionBase _ledgerDimensionId)
@@ -383,7 +383,7 @@ The **serviceLedgerDimensionFromLedgerDims()** API resembles the previous APIs, 
 
 **Example LedgerDimensionFacade::serviceLedgerDimensionFromLedgerDims()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceLedgerDimensionFromLedgerDims(
     LedgerDimensionBase _ledgerDimensionId1,
     LedgerDimensionBase _ledgerDimensionId2 = 0,
@@ -398,7 +398,7 @@ The **serviceMergeLedgerDimensions()** API resembles the **serviceLedgerDimensio
 
 **Example: LedgerDimensionFacade::serviceMergeLedgerDimensions()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceMergeLedgerDimensions(
     LedgerDimensionBase _ledgerDimension1,
     LedgerDimensionBase _ledgerDimension2,
@@ -411,6 +411,6 @@ The **serviceCreateLedgerDimFromLedgerDim()** API is useful if you want to copy 
 
 **Example: LedgerDimensionFacade::serviceCreateLedgerDimFromLedgerDim()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceCreateLedgerDimFromLedgerDim(LedgerDimensionAccount _ledgerDimension)
 ```

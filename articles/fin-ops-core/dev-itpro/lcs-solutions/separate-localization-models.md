@@ -40,7 +40,7 @@ Multinational customers must comply with regulatory requirements in all countrie
 
 The number of models is expected to grow over time. Splitting a monolithic code base provides many benefits, such as better scalability, manageability, and serviceability. The localization requirement to split a localization solution into more granular models builds on this effort. The goal is to provide the same benefits to multinational customers. 
 
-After you've classified features as either regulatory or competitive, as described in [Classification of localization features](classify-localization-features.md), split the code for these features into at least two models, one model for the regulatory features and at least one model for the competitive features. If the competitive features can be split further (for example, into features that are related to Retail and features that are related to Fixed assets), it's a good idea to split them. However, further splitting isn't mandatory. For more information about how to split the stack into multiple models, see [Model split](../dev-tools/model-split.md).
+After you've classified features as either regulatory or competitive, as described in [Classification of localization features](classify-localization-features.md), split the code for these features into at least two models, one model for the regulatory features and at least one model for the competitive features. If the competitive features can be split further (for example, into features that are related to Commerce and features that are related to Fixed assets), it's a good idea to split them. However, further splitting isn't mandatory. For more information about how to split the stack into multiple models, see [Model split](../dev-tools/model-split.md).
 
 
 

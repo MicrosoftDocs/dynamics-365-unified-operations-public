@@ -5,7 +5,7 @@ title: Set up custom pages for user sign-ins
 description: This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
 author: brianshook
 manager: annbe
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Set up custom pages for user logins
+# Set up custom pages for user sign-ins
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
@@ -186,17 +186,17 @@ To update the "Password reset" policy with custom page information, follow these
 
 ## Customize default text strings for labels and descriptions
 
-In the starter kit, sign in modules are prefilled with default text strings for the labels and descriptions. You can customize these strings in the software development kit (SDK) by updating the values in the global.json file for the sign in module.
+In the module library, sign-in modules are prefilled with default text strings for the labels and descriptions. You can customize these strings in the software development kit (SDK) by updating the values in the global.json file for the sign in module.
 
 For example, the default text for the forgotten password link is **Forgotten password?**. The following shows this default text on the sign-in page.
 
 ![Default text for the forgotten password link on the sign-in page](./media/B2C_SignUp_ModuleFace.png)
 
-However, in the global.json file for the starter kit sign in module, you can edit the text to **Forgot Password?**, as shown in the following illustration.
+However, in the global.json file for the module library sign-in module, you can edit the text to **Forgot Password?**, as shown in the following illustration.
 
 ![Updated link text in the sign in module's global.json file](./media/B2C_CustomizingStringsForModule.png)
 
-After you update the global.json file and publish your changes, the new link text appears in the sign in module in both Commerce and on the live sign-in page.
+After you update the global.json file and publish your changes, the new link text appears in the sign-in module in both Commerce and on the live sign-in page.
 
 ## Additional resources
 
@@ -209,6 +209,12 @@ After you update the global.json file and publish your changes, the new link tex
 [Associate an online site with a channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
+
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 

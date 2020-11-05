@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Define access rights for cost object controllers
+title: Access rights for cost object controllers
 description: This topic provides information about access rights for cost object controllers. 
 author: AndersGirke
 manager: AnnBe
@@ -24,13 +24,13 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Define access rights for cost object controllers
+# Access rights for cost object controllers
 
 [!include [banner](../includes/banner.md)]
 

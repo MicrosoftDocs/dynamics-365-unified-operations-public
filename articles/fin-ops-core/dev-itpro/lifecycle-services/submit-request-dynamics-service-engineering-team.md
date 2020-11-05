@@ -3,9 +3,9 @@
 
 title: Submit service requests to the Dynamics Service Engineering team
 description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS). 
-author: manalidongre
+author: laneswenka
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 254564
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -99,7 +99,12 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
-      - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
+      - Tenant move of a live Production environment. Request the Microsoft Service Engineering team to move the Production database and Azure Blob Storage from the old tenant to the new tenant if you are moving tenant on a live Production environment. Make sure that you only request this service when you are ready with all prerequisites. For more details, see [Move LCS implementation projects to different Azure AD tenants](../../fin-ops/get-started/move-lcs-implementation-project-tenant.md).
+      - Define explicit Internet Protocol (IP) safe list rules in a production environment.
+        
+        > [!NOTE]
+        > Support for explicit safe list rules is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-safe-lists-for-self-service-environments).
+        
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
 
@@ -124,9 +129,9 @@ Here are some typical examples of service requests that will be denied:
 | Environment deployment         | Any | Environment deployment | Service level agreement (SLA): within two business days | |
 | Package application            | Production | Deployable package application | Five hours | Five hours |
 | Sandbox point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | Four hours |
-| Production point-in-time restore | Production | Database point-in-time restore | Five hours | Four hours |
+| Production point-in-time restore | Production | Database point-in-time restore | Based on data volume | Based on data volume |
 | Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | Five hours | Four hours |
 | Other                          | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
-|                                | Production | IP whitelist rules | Five hours | Two hours |
+|                                | Production | IP safe list rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 

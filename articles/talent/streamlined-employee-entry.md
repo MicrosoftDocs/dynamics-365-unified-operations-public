@@ -78,7 +78,7 @@ The action pane of the worker page has been re-organized to include fewer option
 - Benefits
 - Compliance
 
-In addtion, a new **Links** tab on the main worker page gives users a central location to access all related information for a worker.
+In addition, a new **Links** tab on the main worker page gives users a central location to access all related information for a worker.
 
 Due to these changes, information may appear in a different location than you're used to. For example, payroll information that previously displayed on the worker form now appears in the action pane under **Compensation > Payroll**, and the **Personal information** tab now has a **More information** button to hide fields that aren't accessed often.
 
@@ -86,7 +86,7 @@ Due to these changes, information may appear in a different location than you're
 
 ## Work history
 
-The **Work history** tab shows work history accross all legal entities and is available for exited, active, and pending employees and contractors. You can now view all work history at once for the legal entities you have access to. In addition, you can edit information for each of the work history entries without changing the data context. You can update all information directly on the page. 
+The **Work history** tab shows work history across all legal entities and is available for exited, active, and pending employees and contractors. You can now view all work history at once for the legal entities you have access to. In addition, you can edit information for each of the work history entries without changing the data context. You can update all information directly on the page. 
 
 [![Work history](./media/Worker-work-history.png)](./media/Worker-work-history.png)
 

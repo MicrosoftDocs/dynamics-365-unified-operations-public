@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24321
 ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -64,14 +64,16 @@ Access to data is controlled through the existing form-level queries. When a for
 ## Usage
 The URL Generator is a .NET library that is accessible from X++, under the following namespace.
 
-    Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
+```xpp
+Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
+```
 
 #### Requirements
 
 The URL Generator must be used from code running on the AOS, in an active user session or batch process. This requirement ensures that the URL can be secured through encryption specific to the instance that generates the URL. At a minimum, the following information must be specified and passed to the URL Generator in order to generate a working URL.
 
 -   **Host URL**
-    -   The URL of the web root for the instance. For example: https://ax.dynamics.contoso.com/
+    -   The URL of the web root for the instance. For example: `https://ax.dynamics.contoso.com/`
 -   AOT name of the **Menu Item Display**
     -   The menu item display to be used to open the form.
 -   **Partition**
@@ -81,7 +83,7 @@ The URL Generator must be used from code running on the AOS, in an active user s
 
 #### Example
 
-```
+```xpp
 // gets the generator instance
 var generator     = new Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator();
 var currentHost   = new System.Uri(UrlUtility::getUrl());

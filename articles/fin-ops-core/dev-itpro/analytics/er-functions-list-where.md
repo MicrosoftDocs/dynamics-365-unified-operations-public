@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="WHERE">WHERE ER function</a>
+# WHERE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `WHERE` function returns the specified list as a *Record list* value after i
 
 ## Syntax
 
-```
+```vb
 WHERE (list, condition)
 ```
 

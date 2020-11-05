@@ -5,7 +5,7 @@ title: Import a database
 description: This topic explains how to import a database for Finance and Operations apps.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 08/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
 
@@ -60,6 +60,6 @@ The system admin account in the target environment (**Admin** user ID) is reset 
 
 If you've used the Admin User Provisioning Tool on your environment to change the web.config file, the value might not match the value in LCS. If you require that a different account be used, you must deallocate and delete the target sandbox, redeploy, and select another account. You can then do another database refresh action to restore the data.
 
-## Steps to complete after a database import for environments that use Retail functionality
+## Steps to complete after a database import for environments that use Commerce functionality
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]

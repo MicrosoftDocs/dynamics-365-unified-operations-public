@@ -1,4 +1,4 @@
-- name: Development and administration for Finance and Operations apps
+﻿- name: Development and administration for Finance and Operations apps
   items:
   - name: Development and administration for Finance and Operations apps
     items:
@@ -8,38 +8,30 @@
       href: index.md
     - name: What's new or changed
       items:
-      - name: Preview features in Platform update 32 (February 2020)
-        href: get-started/whats-new-platform-update-32.md
-      - name: Platform update 31 (January 2020)
-        href: get-started/whats-new-platform-update-31.md
-      - name: Platform update 30 (November 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-30.md
-      - name: Platform update 29 (October 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-29.md
-      - name: Platform update 28 (July 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-28.md 
-      - name: Platform update 27 (June 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-27.md 
-      - name: Platform update 26 (May 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-26.md 
-      - name: Platform update 25 (April 2019)
-        href: ../fin-ops/get-started/whats-new-platform-25.md 
-      - name: Platform update 24 (March 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-24.md
-      - name: Platform update 23 (January 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-23.md
-      - name: Platform update 22 (December 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-22.md
-      - name: Platform update 21 (November 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-21.md
-      - name: Platform update 20 (September 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-20.md
-      - name: Platform update 15 (March 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-15.md  
-      - name: What's new or changed in previous versions
+      - name: What's new or changed in Finance and Operations apps
+        href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: What's new or changed in Platform updates
         items:
-        - name: What's new or changed in Finance and Operations home page
-          href: ../fin-ops/get-started/whats-new-changed.md
+        - name: What's new or changed in Platform updates home page
+          href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.15 (January 2021)
+          href: get-started/whats-new-platform-updates-10-0-15.md
+        - name: Platform updates for 10.0.14 (November 2020)
+          href: get-started/whats-new-platform-updates-10-0-14.md
+        - name: Platform updates for 10.0.13 (October 2020)
+          href: get-started/whats-new-platform-updates-10-0-13.md
+      - name: Removed or deprecated features
+        items:
+        - name: Removed or deprecated platform features
+          href: get-started/removed-deprecated-features-platform-updates.md
+        - name: Removed or deprecated features in previous releases
+          href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: AX 2012 features that were postponed
+        href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: Features not implemented in on-premises deployments
+        href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
     - name: Business events
       items:
       - name: Business events overview
@@ -84,12 +76,18 @@
         href: dev-tools/exclude-test-packages.md
       - name: Manage third-party models and runtime packages using source control
         href: dev-tools/manage-runtime-packages.md
+      - name: All-in-one deployable packages
+        href: dev-tools/aio-deployable-packages.md
       - name: Update model versions in the automated build
         href: dev-tools/version-models-build.md
     - name: Data integration
       items:
       - name: Choose a data integration (import/export) strategy
         href: data-entities/integration-overview.md
+      - name: Priority-based throttling
+        hreF: data-entities/priority-based-throttling.md
+      - name: Priority-based throttling FAQ
+        href: data-entities/throttling-faq.md
       - name: Data integration APIs
         items:
         - name: Data management package REST API
@@ -130,39 +128,119 @@
           items:
           - name: Data integration using Common Data Service overview
             href: data-entities/data-integration-cds.md
-          - name: Synchronous, bidirectional integration
+          - name: Dual-write integration
             items: 
-            - name: Near-real time data integration
-              href: data-entities/dual-write-overview.md
-            - name: Organization hierarchy on Common Data Service
-              href: data-entities/dual-write-organization.md
-            - name: Company integration
+            - name: Dual-write home page
+              href: data-entities/dual-write/dual-write-home-page.md
+            - name: What's new or changed in dual-write
+              href: data-entities/dual-write/whats-new-dual-write.md
+            - name: Dual-write overview
+              href: data-entities/dual-write/dual-write-overview.md
+            - name: Dual-write setup
               items:
-              - name: Company concept in Common Data Services
-                href: data-entities/dual-write-company.md
-              - name: Bootstrap with company data
-                href: data-entities/dual-write-bootstrap.md
-            - name: Integrated customer master
-              href: data-entities/dual-write-customer.md
-            - name: Integrated ledger
-              href: data-entities/dual-write-ledger.md            
-            - name: Unified product experience
-              href: data-entities/dual-write-product.md
-            - name: Vendor integration
+                - name: System requirements for dual-write
+                  href: data-entities/dual-write/dual-write-system-req.md
+                - name: Guidance for how to set up dual-write
+                  href: data-entities/dual-write/connection-setup.md
+                - name: Considerations for initial synchronization
+                  href: data-entities/dual-write/initial-sync-guidance.md
+                - name: Dual-write setup from Lifecycle Services
+                  href: data-entities/dual-write/lcs-setup.md
+                - name: Enable dual-write for existing Finance and Operations apps
+                  items:
+                    - name: Enable dual-write for existing Finance and Operations apps
+                      href: data-entities/dual-write/enable-dual-write.md
+                    - name: System requirements and prerequisites
+                      href: data-entities/dual-write/requirements-and-prerequisites.md
+                    - name: How to use the dual-write wizard to link your environments
+                      href: data-entities/dual-write/link-your-environment.md
+                    - name: Enable entity map for dual-write
+                      href: data-entities/dual-write/enable-entity-map.md
+                - name: Currency data-type migration for dual-write
+                  href: data-entities/dual-write/currrency-decimal-places.md
+                - name: Set up the mapping for the sales order status fields
+                  href: data-entities/dual-write/sales-status-map.md
+            - name: Managing dual-write
               items:
-              - name: Integrated vendor master
-                href: data-entities/dual-write-vendor.md
-              - name: Switch between vendor designs
-                href: data-entities/dual-write-vendor-switch.md
-            - name: Integrated sites and warehouses
-              href: data-entities/dual-write-sites-and-warehouses.md
-            - name: Integrated tax master
-              href: data-entities/dual-write-tax.md
-            - name: Initial synchronization
-              href: data-entities/dual-write-initial.md
-            - name: Troubleshooting data integration
-              href: data-entities/dual-write-troubleshooting.md
-          - name: Asynchronous, unidirectional integration
+                - name: Customize entity and field mappings
+                  href: data-entities/dual-write/customizing-mappings.md
+                - name: Handling multiple entity maps
+                  href: data-entities/dual-write/multiple-entity-maps.md
+                - name: Edit a legal entity after dual-write setup
+                  href: data-entities/dual-write/edit-legal-entity.md
+                - name: Error management and alert notifications
+                  href: data-entities/dual-write/errors-and-alerts.md
+                - name: Application lifecycle management
+                  href: data-entities/dual-write/app-lifecycle-management.md
+            - name: Mapping concepts between apps
+              items:
+                - name: Integrated customer master
+                  href: data-entities/dual-write/customer-mapping.md
+                - name: Vendor integration
+                  items:
+                  - name: Integrated vendor master
+                    href: data-entities/dual-write/vendor-mapping.md
+                  - name: Switch between vendor designs
+                    href: data-entities/dual-write/vendor-switch.md
+                - name: Customer loyalty cards and reward points
+                  href: data-entities/dual-write/loyalty-mapping.md
+                - name: Product integration
+                  items:
+                  - name: Unified product experience
+                    href: data-entities/dual-write/product-mapping.md
+                  - name: Integrated sites and warehouses
+                    href: data-entities/dual-write/sites-warehouses-mapping.md
+                - name: Company integration
+                  items:
+                  - name: Company concept in Common Data Services
+                    href: data-entities/dual-write/company-data.md
+                  - name: Bootstrap with company data
+                    href: data-entities/dual-write/bootstrap-company-data.md
+                - name: Organization hierarchy on Common Data Service
+                  href: data-entities/dual-write/organization-mapping.md
+                - name: Finance and tax data
+                  items:
+                  - name: Access to finance and tax reference data
+                    href: data-entities/dual-write/finance-tax-reference.md
+                  - name: Integrated ledger
+                    href: data-entities/dual-write/ledger-mapping.md            
+                  - name: Integrated tax master
+                    href: data-entities/dual-write/tax-mapping.md
+                - name: Sync with the Dynamics 365 Supply Chain Management pricing engine on demand
+                  href: data-entities/dual-write/pricing-engine.md
+                - name: Prospect to cash in dual-write
+                  href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                - name: In-house assets for servicing
+                  href: data-entities/dual-write/in-house-assets.md
+                - name: Integrated worker, job, and position
+                  href: data-entities/dual-write/integrated-hr.md
+                - name: Inventory availability
+                  href: data-entities/dual-write/inventory-availability.md
+            - name: Support for dual-write
+              items:
+                - name: Support for Field Service solutions and Project Service Automation solutions
+                  href: data-entities/dual-write/field-service-project-service-automation.md
+                - name: Troubleshooting
+                  items:
+                  - name: Verify that dual-write is configured in Finance and Operations apps and Common Data Service
+                    href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                  - name: Troubleshoot issues during initial setup
+                    href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                  - name: Troubleshoot issues during initial synchronization
+                    href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                  - name: Troubleshoot issues with the Dual-write module in Finance and Operations apps
+                    href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                  - name: Troubleshoot live synchronization issues
+                    href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                  - name: Troubleshoot issues related to solution awareness
+                    href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                  - name: Troubleshoot issues related to upgrades of Finance and Operations apps
+                    href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                  - name: General troubleshooting
+                    href: data-entities/dual-write/dual-write-troubleshooting.md
+            - name: Dual-write frequently asked questions
+              href: data-entities/dual-write/dual-write-faq.md                  
+          - name: Integration with Power Platform
             items:
             - name: Configure a prospect to cash scenario
               items:
@@ -240,8 +318,6 @@
             href: data-entities/configuration-data-packages.md
           - name: Configuration data packages (July 2017 release only)
             href: data-entities/configuration-data-packages.md
-          - name: Make Entity Store available as a Data Lake
-            href: data-entities/entity-store-data-lake.md
         - name: Configuration data templates
           href: data-entities/configuration-data-templates.md
         - name: Track changes to an entity
@@ -300,10 +376,22 @@
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
+    - name: Azure Data Lake
+      items: 
+      - name: Azure Data Lake overview
+        href: data-entities/azure-data-lake-overview.md
+      - name: Configure export to Azure Data Lake
+        href: data-entities/configure-export-data-lake.md
+      - name: Finance and Operations apps in Azure Data Lake 
+        href: data-entities/finance-data-azure-data-lake.md 
+      - name: Make entity store available as a Data Lake 
+        href: data-entities/entity-store-data-lake.md
     - name: Database movement operations
       items:
       - name: Overview
         href: database/dbmovement-operations.md
+      - name: Database movement toolkit
+        href: database/database-movement-toolkit.md
       - name: Quick start guides
         items:
         - name: Refresh database
@@ -314,6 +402,10 @@
           href: database/import-database.md
         - name: Database point-in-time restore
           href: database/database-point-in-time-restore.md
+        - name: Point-in-time restore of the production database to a sandbox environment
+          href: database/database-pitr-prod-sandbox.md
+        - name: Enable just-in-time database access
+          href: database/database-just-in-time-jit-access.md
       - name: Tutorials
         items:
         - name: Refresh for training purposes
@@ -344,6 +436,8 @@
             href: database/api/v1/reference-list-backups.md
           - name: Create database refresh
             href: database/api/v1/reference-create-refresh.md
+          - name: Create a database export
+            href: database/api/v1/reference-create-export.md
           - name: Get operation activity status
             href: database/api/v1/reference-get-status.md
     - name: Demo data
@@ -384,64 +478,76 @@
           href: ../fin-ops/imp-lifecycle/architecture-overview.md
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
-        - name: Apply updates and extensions to cloud hosted Retail channel components
+        - name: Apply updates and extensions to Commerce Scale Unit (cloud)
           href: deployment/Update-retail-channel.md  
-        - name: Initialize Retail Cloud Scale Unit
+        - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
+        - name: Migrate channels to a different Commerce Scale Unit
+          href: deployment/Reassign-CSU.md
         - name: Retail data residency
           href: deployment/retail-data-residency.md
       - name: On-premises deployment
         items:
         - name: On-premises deployment home page
           href: deployment/on-premises-deployment-landing-page.md
-        - name: On-premises deployment overview
-          href: deployment/on-premises-overview.md
-        - name: Plan and prepare for on-premises deployments
-          href: deployment/plan-onprem-deployment.md
-        - name: Hardware sizing requirements
-          href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-        - name: Set up on-premises projects
-          href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-        - name: Set up and deploy on-premises environments
+        - name: Prepare for on-premises deployments
           items:
-          - name: Set up and deploy on-premises environments home page
-            href: deployment/setup-deploy-on-premises-environments.md
-          - name: Deploy on-premises environments (Platform update 12 and later)
+          - name: On-premises deployment overview
+            href: deployment/on-premises-overview.md
+          - name: Plan and prepare for on-premises deployments
+            href: deployment/plan-onprem-deployment.md
+          - name: Hardware sizing requirements
+            href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+        - name: Set up and deploy on-premises environments
+          items: 
+          - name: Set up on-premises projects in LCS
+            href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+          - name: Set up and deploy on-premises environments
             href: deployment/setup-deploy-on-premises-pu12.md
-          - name: Deploy on-premises environments (Platform updates 8 and 11)
-            href: deployment/setup-deploy-on-premises-pu8-pu11.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
-        - name: Develop and deploy custom models to on-premises environments
-          href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: PowerBI.com integration with on-premises environments
-          href: analytics/entity-store-on-prem.md
-        - name: Configure proxies for on-premises environments
-          href: deployment/onprem-reverseproxy.md
-        - name: Apply updates to an on-premises deployment
-          href: deployment/apply-updates-on-premises.md
-        - name: On-premises diagnostics
-          href: deployment/on-premises-diagnostics.md
-        - name: Redeploy on-premises deployments
-          href: deployment/redeploy-on-prem.md
+          - name: Develop and deploy custom models to on-premises environments
+            href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: Environment maintenance
+          items:
+          - name: Apply updates to an on-premises deployment
+            href: deployment/apply-updates-on-premises.md
+          - name: Certificate rotation
+            href: deployment/certificate-rotation-on-prem.md
+          - name: Client internet connectivity
+            href: user-interface/client-disconnected.md
+          - name: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
+            href: deployment/onprem-batchonly.md
+          - name: Configure proxies for on-premises environments
+            href: deployment/onprem-reverseproxy.md
+          - name: On-premises diagnostics
+            href: deployment/on-premises-diagnostics.md
+          - name: On-premises disaster recovery configuration
+            href: deployment/onprem-dr.md
+          - name: PowerBI.com integration with on-premises environments
+            href: analytics/entity-store-on-prem.md
+          - name: Reconfigure environments
+            href: lifecycle-services/reconfigure-environment.md
+          - name: Redeploy on-premises deployments
+            href: deployment/redeploy-on-prem.md
+          - name: Remove and reinstall, or add an AOS node
+            href: deployment/onprem-remove-reinstall-AOS-node.md
+          - name: Reuse the same AD FS instance for multiple environments
+            href: deployment/onprem-reuseadfs.md
         - name: Local agent
           items:
-          - name: AD FS Office 365 compatibility
+          - name: AD FS Microsoft 365 compatibility
             href: deployment/onprem-adfscompatibility.md
           - name: Local agent pre-deployment and post-deployment scripts
             href: lifecycle-services/pre-post-scripts.md
           - name: Update the local agent
             href: lifecycle-services/update-local-agent.md
-        - name: Reconfigure environments
-          href: lifecycle-services/reconfigure-environment.md
-        - name: Client internet connectivity
-          href: user-interface/client-disconnected.md
-        - name: Troubleshoot on-premises deployments
-          href: deployment/troubleshoot-on-prem.md
-        - name: Scripts for resolving issues in on-premises environments
-          href: deployment/onprem-tsg-implementations.md
-        - name: Certificate rotation
-          href: deployment/certificate-rotation-on-prem.md
+        - name: Troubleshooting
+          items:
+          - name: Troubleshoot on-premises deployments
+            href: deployment/troubleshoot-on-prem.md
+          - name: Scripts for resolving issues in on-premises environments
+            href: deployment/onprem-tsg-implementations.md
       - name: Deploy custom code
         items:
         - name: Create deployable packages of models
@@ -452,6 +558,32 @@
           href: deployment/uninstall-deployable-package.md
         - name: Troubleshoot package application issues
           href: deployment/deployable-package-troubleshooting.md
+      - name: Deploy custom help
+        items:
+        - name: Custom help overview
+          href: help/custom-help-overview.md
+        - name: Preparing content for use with the Help pane
+          href: help/preparing-content.md
+        - name: Deploying custom help to Azure
+          href: help/walkthrough-help-azure.md
+        - name: Connect your custom help to the Help pane
+          href: help/connect-help-pane.md
+        - name: Custom help toolkit
+          items:
+            - name: Overview
+              href: help/custom-help-toolkit.md
+            - name: The HTML From Repo Generator tool
+              href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+            - name: The Convert HTML To JSON tool
+              href: help/custom-help-toolkit-ConvertHtmlToJson.md
+            - name: The HTML Locale Changer tool
+              href: help/custom-help-toolkit-HtmlLocaleChanger.md
+            - name: Convert Dynamics AX custom help for use in Dynamics 365
+              href: help/migrate-dynamicsax2012.md
+        - name: Language and locale descriptors in across product and help
+          href: help/language-locale.md
+        - name: Extend, customize, and collaborate on the help
+          href: help/contributor-guide.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page
@@ -478,6 +610,24 @@
           href: dev-tools/development-system-requirements.md
       - name: Version control, metadata search, and navigation
         href: dev-tools/version-control-metadata-navigation.md
+      - name: Build automation using Azure
+        items:
+        - name: Build automation using Microsoft-hosted agents and Azure Pipelines
+          href: dev-tools/hosted-build-automation.md
+        - name: Add license files to a deployable package in Azure Pipelines
+          href: dev-tools/pipeline-add-license-package.md
+        - name: Create deployable packages in Azure Pipelines
+          href: dev-tools/pipeline-create-deployable-package.md
+        - name: X++ model-versioning in Azure Pipelines
+          href: dev-tools/pipeline-model-version.md
+        - name: Download assets by using Azure Pipelines
+          href: dev-tools/pipeline-asset-download.md
+        - name: Upload assets by using Azure Pipelines
+          href: dev-tools/pipeline-asset-upload.md
+        - name: Deploy assets by using Azure Pipelines
+          href: dev-tools/pipeline-deploy-asset.md
+        - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
+          href: dev-tools/pipeline-lcs-connection.md        
       - name: Fleet Management sample application
         items:
         - name: End-to-end scenario for the Fleet Management sample application
@@ -490,10 +640,8 @@
           href: dev-tools/development-tools-overview.md
         - name: Development tools tutorial
           href: dev-tools/introduction-visual-studio.md
-        - name: Application Checker
-          items:
-          - name: Install BaseX for Application Checker
-            href: dev-tools/install-basex.md
+        - name: Application checker
+          href: dev-tools/application-checker.md
         - name: Application Explorer
           href: dev-tools/application-explorer.md
         - name: Build and debug projects
@@ -593,9 +741,29 @@
             - name: Events
               href: dev-ref/xpp-events.md
           - name: X++ data selection and manipulation
-            href: dev-ref/xpp-data-query.md
-          - name: Data access using the SysDa API
-            href: dev-ref/sysda.md
+            items:
+            - name: X++ data selection and manipulation overview
+              href: dev-ref/xpp-data/xpp-data-home-page.md
+            - name: Select statement
+              href: dev-ref/xpp-data/xpp-select-statement.md
+            - name: Select data
+              href: dev-ref/xpp-data/xpp-select.md
+            - name: Insert data
+              href: dev-ref/xpp-data/xpp-insert.md
+            - name: Update data
+              href: dev-ref/xpp-data/xpp-update.md
+            - name: Delete data
+              href: dev-ref/xpp-data/xpp-delete.md
+            - name: While select statement
+              href: dev-ref/xpp-data/xpp-while-select.md
+            - name: Writing a select statement as an expression
+              href: dev-ref/xpp-data/xpp-select-expression.md
+            - name: Transactional integrity
+              href: dev-ref/xpp-data/xpp-transaction.md
+            - name: Conversion of operations from set-based to record-by-record
+              href: dev-ref/xpp-data/xpp-data-perf.md
+            - name: Data access using the SysDa API
+              href: dev-ref/sysda.md
           - name: X++ macros
             href: dev-ref/xpp-macros.md
           - name: X++ attribute classes
@@ -634,76 +802,58 @@
           href: dev-ref/system-tables.md
         - name: System classes
           items:
-          - name: A classes
-            href: dev-ref/a-classes.md
-          - name: B classes
-            href: dev-ref/b-classes.md
-          - name: C classes
-            href: dev-ref/c-classes.md
-          - name: D classes
-            href: dev-ref/d-classes.md
-          - name: E classes
-            href: dev-ref/e-classes.md
-          - name: F classes (FieldBinding to FormBuildAnimateControl)
-            href: dev-ref/fieldbinding-classes.md
-          - name: F classes (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
-            href: dev-ref/formbuildbuttoncontrol-classes.md
-          - name: F classes (FormBuildFilterPaneControl to FormBuildRealControl)
-            href: dev-ref/formbuildfilterpanecontrol-classes.md
-          - name: F classes (FormBuildReferenceControl to FormButtonSeparatorControl)
-            href: dev-ref/formbuildreferencecontrol-classes.md
-          - name: F classes (FormChangeTracker to FormControlEventArgs)
-            href: dev-ref/formchangetracker-classes.md
-          - name: F classes (FormDataObject to FormFastTabHeaderControl)
-            href: dev-ref/formdataobject-classes.md
-          - name: F classes (FormFastTabSummarySeparator to FormGridControl)
-            href: dev-ref/formfasttabsummaryseparator-classes.md
-          - name: F classes (FormGroupControl to FormIntControl)
-            href: dev-ref/formgroupcontrol-classes.md
-          - name: F classes (FormListBoxControl to FormNotifyEventArgs)
-            href: dev-ref/formlistboxcontrol-classes.md
-          - name: F classes (FormObject to FormRealControl)
-            href: dev-ref/formobject-classes.md
-          - name: F classes (FormReferenceControl to FormStringControl)
-            href: dev-ref/formreferencecontrol-classes.md
-          - name: F classes (FormTabControl to FormWindowControl)
-            href: dev-ref/formtabcontrol-classes.md
-          - name: G classes
-            href: dev-ref/g-classes.md
-          - name: H classes
-            href: dev-ref/h-classes.md
-          - name: I classes
-            href: dev-ref/i-classes.md
-          - name: J classes
-            href: dev-ref/j-classes.md
-          - name: K classes
-            href: dev-ref/k-classes.md
-          - name: L classes
-            href: dev-ref/l-classes.md
-          - name: M classes
-            href: dev-ref/m-classes.md
-          - name: N classes
-            href: dev-ref/n-classes.md
-          - name: O classes
-            href: dev-ref/o-classes.md
-          - name: P classes
-            href: dev-ref/p-classes.md
-          - name: Q classes
-            href: dev-ref/q-classes.md
-          - name: R classes
-            href: dev-ref/r-classes.md
-          - name: S classes
-            href: dev-ref/s-classes.md
-          - name: T classes
-            href: dev-ref/t-classes.md
-          - name: U classes
-            href: dev-ref/u-classes.md
-          - name: V classes
-            href: dev-ref/v-classes.md
-          - name: W classes
-            href: dev-ref/w-classes.md
-          - name: X classes
-            href: dev-ref/x-classes.md
+          - name: System class list
+            href: dev-ref/system-classes/toc.yml
+          - name: System classes grouped alphabetically
+            items:
+            - name: A classes
+              href: dev-ref/a-classes.md
+            - name: B classes
+              href: dev-ref/b-classes.md
+            - name: C classes
+              href: dev-ref/c-classes.md
+            - name: D classes
+              href: dev-ref/d-classes.md
+            - name: E classes
+              href: dev-ref/e-classes.md
+            - name: F classes
+              href: dev-ref/f-classes.md
+            - name: G classes
+              href: dev-ref/g-classes.md
+            - name: H classes
+              href: dev-ref/h-classes.md
+            - name: I classes
+              href: dev-ref/i-classes.md
+            - name: J classes
+              href: dev-ref/j-classes.md
+            - name: K classes
+              href: dev-ref/k-classes.md
+            - name: L classes
+              href: dev-ref/l-classes.md
+            - name: M classes
+              href: dev-ref/m-classes.md
+            - name: N classes
+              href: dev-ref/n-classes.md
+            - name: O classes
+              href: dev-ref/o-classes.md
+            - name: P classes
+              href: dev-ref/p-classes.md
+            - name: Q classes
+              href: dev-ref/q-classes.md
+            - name: R classes
+              href: dev-ref/r-classes.md
+            - name: S classes
+              href: dev-ref/s-classes.md
+            - name: T classes
+              href: dev-ref/t-classes.md
+            - name: U classes
+              href: dev-ref/u-classes.md
+            - name: V classes
+              href: dev-ref/v-classes.md
+            - name: W classes
+              href: dev-ref/w-classes.md
+            - name: X classes
+              href: dev-ref/x-classes.md
       - name: Extensibility
         items:
         - name: Extensibility home page
@@ -751,7 +901,7 @@
           - name: Extensibility changes version 8.0.1
             href: extensibility/extensibility-changes-801.md
           - name: Extensibility changes in version 8.0
-            href: extensibility/changes-80.md
+            href: extensibility/Changes-80.md
           - name: Extensibility changes in version 7.3
             href: extensibility/extensibility-changes-73.md
           - name: Extensibility changes July 2017
@@ -838,6 +988,8 @@
             href: extensibility/extensibility-attributes.md
           - name: Breaking changes
             href: extensibility/breaking-changes.md
+          - name: Compatibility checker tool
+            href: extensibility/compatibility-checker-tool.md
       - name: Performance
         items:
         - name: Take traces using Trace parser
@@ -912,7 +1064,7 @@
           href: gdpr/gdpr-extend-person-search-report.md
         - name: Manage access to sensitive data
           href: gdpr/gdpr-auditing-sensitive-data.md
-        - name: Respond to requests for personal data using Talent
+        - name: Respond to requests for personal data using Human Resources
           href: gdpr/respond-dsr-request-talent.md
         - name: Respond to requests for personal data in AX 2012
           href: gdpr/gdpr-ax2012.md
@@ -928,7 +1080,7 @@
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS for partners
           href: lifecycle-services/getting-started-lcs.md
-        - name: What's new
+        - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
         - name: Known issues
           href: lifecycle-services/known-issues.md
@@ -936,6 +1088,8 @@
           href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
         href: lifecycle-services/lcs-user-guide.md
+      - name: Project onboarding
+        href: lifecycle-services/project-onboarding.md
       - name: Subscription estimator
         href: lifecycle-services/subscription-estimator.md
       - name: Configure security
@@ -952,26 +1106,38 @@
         href: lifecycle-services/configure-execute-code-upgrade.md
       - name: Create or update methodologies
         href: lifecycle-services/create-methodology.md
-      - name: Business process modeler
-        href: lifecycle-services/bpm-overview.md
-      - name: Business process libraries in Business process modeler
-        href: lifecycle-services/business-process-libraries-business-process-modeler.md
-      - name: Create, edit, and browse Business process modeler libraries
-        href: lifecycle-services/creating-editing-browsing.md
-      - name: Complete tasks in Business process modeler
-        href: lifecycle-services/complete-tasks-bpm.md
-      - name: Work with activity diagrams in BPM libraries
-        href: lifecycle-services/using-activity-diagrams.md
-      - name: Synchronize BPM libraries with Azure DevOps
-        href: lifecycle-services/synchronize-bpm-vsts.md
-      - name: Create user acceptance test libraries using task guides and BPM
-        href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-      - name: Flowcharts in Business process modeler
-        href: lifecycle-services/flowcharts-business-process-modeler.md
-      - name: Upload custom business processes to Business process modeler
-        href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+      - name: Business process modeler (BPM)
+        items:
+        - name: Business process modeler (BPM) overview
+          href: lifecycle-services/bpm-overview.md
+        - name: Business process libraries in Business process modeler
+          href: lifecycle-services/business-process-libraries-business-process-modeler.md
+        - name: Create, edit, and browse Business process modeler libraries
+          href: lifecycle-services/creating-editing-browsing.md
+        - name: Complete tasks in Business process modeler
+          href: lifecycle-services/complete-tasks-bpm.md
+        - name: Work with activity diagrams in BPM libraries
+          href: lifecycle-services/using-activity-diagrams.md
+        - name: Synchronize BPM libraries with Azure DevOps
+          href: lifecycle-services/synchronize-bpm-vsts.md
+        - name: Create user acceptance test libraries using task guides and BPM
+          href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+        - name: Flowcharts in Business process modeler
+          href: lifecycle-services/flowcharts-business-process-modeler.md
+        - name: Upload custom business processes to Business process modeler
+          href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+      - name: Service requests
+        items:
+        - name: Cloud operations and servicing
+          href: lifecycle-services/cloud-operations-servicing.md
+        - name: Submit service requests to the Dynamics Service Engineering team
+          href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+        - name: Planned maintenance window FAQ
+          href: lifecycle-services/planned-maintenance-window-faq.md
       - name: Monitoring and diagnostics
         href: lifecycle-services/monitoring-diagnostics.md
+      - name: Impact analysis report
+        href: lifecycle-services/impact-analysis-report.md
       - name: Restart environment services
         href: lifecycle-services/restart-environment-services.md
       - name: Report a production outage
@@ -994,6 +1160,20 @@
           href: lifecycle-services/use-translation-service-ua.md
         - name: Translation memory files
           href: lifecycle-services/use-translation-service-tm.md
+    - name: Microsoft Power Platform integration
+      items:
+      - name: Microsoft Power Platform integration with Finance and Operations
+        href: power-platform/overview.md
+      - name: Entity modeling
+        href: power-platform/entity-modeling.md
+      - name: Application lifecycle management
+        href: power-platform/application-lifecycle-management.md
+      - name: Finance and Operations and Common Data Service admin reference
+        href: power-platform/admin-reference.md
+      - name: Power Apps portals with Finance and Operations
+        href: power-platform/power-portal-reference.md
+      - name: Finance and Operations virtual entities FAQ
+        href: power-platform/faq.md
     - name: Mobile platform
       items:
       - name: Mobile platform resources
@@ -1200,15 +1380,31 @@
             href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
           - name: ValueMetadata type
             href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+    - name: Process automation framework
+      items:
+      - name: Process automation framework development
+        href: process-automation/process-automation-framework.md
+      - name: Type registration
+        href: process-automation/type-registration.md
+      - name: Series registration
+        href: process-automation/series-registration.md
+      - name: Process parameters
+        href: process-automation/process-parameters.md
+      - name: User-configurable queries
+        href: process-automation/user-queries.md
+      - name: Run the process
+        href: process-automation/run-process.md
+      - name: Log results and messages
+        href: process-automation/log-results.md
+      - name: Customize the user interface
+        href: process-automation/ui-customization.md
     - name: Regression suite automation tool
       items:
       - name: Regression suite automation tool overview
         href: perf-test/rsat/rsat-overview.md
       - name: Installation and configuration
         href: perf-test/rsat/rsat-install-configure.md
-      - name: Data agnostic testing using the Regression Suite Automation Tool
-        href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-      - name: Run test cases
+      - name: Use the Regression suite automation tool
         href: perf-test/rsat/rsat-run.md
       - name: Validate expected values
         href: perf-test/rsat/rsat-validate-expected.md
@@ -1216,10 +1412,12 @@
         href: perf-test/rsat/rsat-chain-test-cases.md
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
-      - name: Use the Regression suite automation tool tutorial
+      - name: Regression suite automation tool tutorial and other features
         href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
       - name: Best practices
         href: perf-test/rsat/rsat-best-practices.md
+      - name: Data agnostic testing using the Regression Suite Automation Tool
+        href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
     - name: Release solutions using Lifecycle Services
@@ -1227,7 +1425,7 @@
       - name: Develop and release
         href: lcs-solutions/lcs-solutions-app-source.md
       - name: Stage and publish
-        href: lcs-solutions/marketing-content-lcs-solutions.md
+        href: /azure/marketplace/partner-center-portal/create-new-operations-offer
       - name: Add methodologies
         href: lcs-solutions/methodologies-lcs-solutions.md
       - name: Set up Business process modeler libraries
@@ -1264,15 +1462,9 @@
         href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
       - name: Get support for Finance and Operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
-      - name: Submit requests to the Dynamics Service Engineering team
-        href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-      - name: Set up technical support for Finance and Operations
+      - name: Set up technical support for Finance and Operations apps
         href: lifecycle-services/support-experience.md
-      - name: Planned maintenance window FAQ
-        href: lifecycle-services/planned-maintenance-window-faq.md
-      - name: Cloud operations and servicing
-        href: lifecycle-services/cloud-operations-servicing.md
-      - name: Manage Finance and Operations support experiences
+      - name: Manage support experiences for Finance and Operations apps
         href: lifecycle-services/cloud-powered-support-lcs.md
     - name: System administration
       items:
@@ -1296,6 +1488,8 @@
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
+        - name: Encryption in Finance and Operations apps
+          href: sysadmin/encryption.md
         - name: Set the session idle timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
@@ -1310,6 +1504,18 @@
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: sysadmin/tasks/assign-users-security-roles.md
+        - name: Import or export customized security configuration using Data management
+          href: sysadmin/import-export-customized-security.md
+        - name: Security diagnostics for task recordings
+          href: sysadmin/tasks/security-diagstics-task-recordings.md
+        - name: Extensible data security policies
+          href: sysadmin/extensible-data-security-policies.md
+        - name: Create a security policy
+          href: sysadmin/create-simple-security-policy.md
+      - name: Stay compliant with user licensing requirements
+        href: sysadmin/stay-compliant-user-license-requirement.md
+      - name: Process automation
+        href: sysadmin/process-automation.md
       - name: Batch processing
         items:
         - name: Batch processing overview
@@ -1322,6 +1528,8 @@
           href: sysadmin/copy-batch-job.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
+        - name: Daylight saving time support for active batch periods
+          href: sysadmin/batch-active-period-dst.md
         - name: Batch manager security role
           href: sysadmin/runby.md
         - name: Batch job to handle SQL index defragmentation
@@ -1342,6 +1550,14 @@
           href: sysadmin/create-rules-optimization-advisor.md
       - name: Report a production outage
         href: lifecycle-services/report-production-outage.md
+      - name: Configure and manage database logging
+        href: sysadmin/configure-manage-database-log.md
+      - name: Build OData metadata cache when the AOS starts
+        href: sysadmin/odata-warmup.md
+      - name: Setting Up Azure Key Vault client
+        href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+      - name: Cleanup routines
+        href: sysadmin/cleanuproutines.md
     - name: Upgrades, updates, and hotfixes
       items:
       - name: Upgrades, updates, and hotfixes resources
@@ -1360,8 +1576,12 @@
           href: migration-upgrade/data-upgrade-2012.md
         - name: AX 2012 upgrade - Pre-upgrade checklist for data upgrade
           href: migration-upgrade/prepare-data-upgrade.md
+        - name: AX 2012 upgrade - Data upgrade in sandbox environments using dacpac process
+          href: migration-upgrade/upgrade-data-sandbox-dacpac.md
         - name: AX 2012 upgrade - Data upgrade in sandbox environments
           href: migration-upgrade/upgrade-data-sandbox.md
+        - name: AX 2012 upgrade - On-premises environments
+          href: migration-upgrade/on-prem-upgrade-2012.md
         - name: AX 2012 upgrade - Cutover testing
           href: migration-upgrade/upgrade-cutover-testing.md
         - name: AX 2012 upgrade - Post-upgrade tasks
@@ -1442,7 +1662,7 @@
           href: deployment/apply-updates-on-premises.md
         - name: Redeploy an on-premises deployment
           href: deployment/redeploy-on-prem.md
-        - name: In-place upgrade for on-premises 7.x to 8.1
+        - name: In-place upgrade process for on-premises environments
           href: migration-upgrade/on-prem-upgrade.md
       - name: Hotfixes
         items:
@@ -1508,7 +1728,7 @@
           href: user-interface/check-box-tree-controls.md
         - name: Filtering options
           href: user-interface/filtering.md
-        - name: PowerApps Host control
+        - name: Power Apps Host control
           href: user-interface/powerapps-host-control.md
       - name: Window management
         items:
@@ -1672,6 +1892,6 @@
     href: ../../supply-chain/index.md
   - name: Dynamics 365 Finance 
     href: ../../finance/index.md
-  - name: Dynamics 365 Retail
-    href: ../../retail/index.md
+  - name: Dynamics 365 Commerce
+    href: ../../commerce/index.md
    

@@ -5,7 +5,7 @@ title: Supplemental Terms of Use for Microsoft Dynamics 365 Previews
 description: Topic description
 author: ShellyBakke
 manager: AnnBe
-ms.date: 12/19/2019
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include[banner](../includes/banner.md)]
 
-These Supplemental Terms of Use ("Terms") cover use of those Microsoft Dynamics 365 previews that link to these Terms.
+These Supplemental Terms of Use ("Terms") cover use of those Microsoft Dynamics 365 previews that link to or incorporate these Terms.
 
 ## General terms
 
@@ -43,21 +43,17 @@ use of Dynamics 365.
 
 PREVIEWS ARE PROVIDED "AS-IS", "WITH ALL FAULTS", AND "AS AVAILABLE", AND ARE EXCLUDED FROM
 THE SERVICE LEVEL AGREEMENTS AND LIMITED WARRANTY.  Previews may not be covered by customer
-support.  Preview may be subject to reduce or different security, compliance and privacy
-commitments, as further explained in the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=131004&clcid=0x409 "Microsoft Privacy Statement"), [Microsoft Dynamics 365 Trust Center](https://www.microsoft.com/trust-center/product-overview "Microsoft Dynamics 365 Trust Center"), the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31 "Online Services Terms"), and any additional notices provided with the Preview.
+support.  Preview may be subject to reduced or different security, compliance and privacy
+commitments, as further explained in the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=131004&clcid=0x409 "Microsoft Privacy Statement"), [Microsoft Dynamics 365 Trust Center](https://www.microsoft.com/trust-center/product-overview "Microsoft Dynamics 365 Trust Center"), the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31 "Online Services Terms"), and any additional notices provided with the Preview. The following terms in the DPA do not apply to Previews: Processing of Personal Data; GDPR, Data Security, and HIPAA Business Associate. Customers should not use Previews to process Personal Data or other data that is subject to heightened compliance requirements. In addition, Customers should not use production data in Previews or use Previews in a 'live operating' or production environment. 
 
-Customers should not use Previews to process Personal Data or other data that is subject to 
-heightened compliance requirements.  In addition, Customers should not use Previews in a 'live 
-operating' or production environment.  Certain named Previews may also be subject to additional 
-terms, if any, set forth below.  We may change or discontinue Previews at any time without notice.
-We also may choose not to release a Preview into "General Availability".
+Certain named Previews may also be subject to additional terms, if any, set forth below. We may change or discontinue Previews at any time without notice. We also may choose not to release a Preview into "General Availability".  In addition, a Preview that is released into General Availability may be subject to a fee even if the Preview was free of charge.
 
 You will provide, as your own expense, the equipment, technology, and infrastructure necessary
 to participate in the Previews, unless otherwise specified in the applicable Preview program 
 description.  In addition, you may use consultants, contractors, advisors, or other third parties 
 to assist with performing the activities or any professional services in connection with the 
 Preview, but only if you have entered into an agreement with any such third party that contains 
-terms at least as protective of Microsoft's rights as those in the Agreement.  You will bear all 
+terms at least as protective of Microsoft's rights as those in the agreement governing your use of Dynamics 365. You will bear all 
 costs and expenses associated with engaging a third party to perform any of your activities in the 
 Previews.  You may use the Preview only if you have a valid license or subscription to the 
 required Dynamics 365 application.  You may not access or use the Previews if you do not have the 
@@ -65,7 +61,7 @@ required license or subscription.
 
 ## Use Preview in a Production Environment
 
-The "General Terms" section applies generally to all Previews that link to these Terms.  This 
+The "General terms" section applies generally to all Previews that link to these Terms.  This 
 section contains terms that apply only if a Preview allows you to use Customer Data or Personal 
 Data (collectively "Data") in a 'live operating' or production environment and is in addition to 
 the General Terms.  These "Use Preview in a Production Environment" terms govern if there are any 
@@ -73,8 +69,8 @@ conflicts with the "General Terms" or the "Service-Specific Terms" sections.
 
 Notwithstanding any provision to the contrary in the General Terms, Microsoft hereby grants you 
 permission to use the Preview to access or process Data in a 'live operating' or production 
-environment in connection with participating in the Preview.  By accessing or processing Data 
-in a 'live operations' or production environment, you consent to share your Data with external 
+environment for Dynamics 365 in connection with participating in the Preview.  By accessing or processing Data 
+in a 'live operating' or production environment, you consent to share your Data with external 
 systems outside of the geography where your production environment is deployed.
 
 ## Service-specific terms

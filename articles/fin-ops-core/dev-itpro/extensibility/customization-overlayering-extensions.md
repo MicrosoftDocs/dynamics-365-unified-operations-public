@@ -3,28 +3,27 @@
 
 title: Customize through extension and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: rhaertle
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: robadawy
+# ms.search.industry:
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -38,51 +37,49 @@ This topic discusses the two methods of customizing source code and metadata of 
 
 ## Overlayering
 
-You can customize source code and metadata of model elements that are shipped by Microsoft or third-party Microsoft partners. In order to customize metadata and source code of a model, the developer must create a new model that overlays the model they want to customize. For example, solution developers can provide code in the SLN layer, independent software vendors can use the ISV layer, and value-added resellers can use the VAR layer. Functionality defined in higher layers (VAR layer in this example) can override the functionality of lower layers. The overlaying model must belong to the same **Package** as the source model and belong to a layer that is higher than the source model. Overlayering is a powerful tool to perform advanced customizations of metadata and source code, but may increase the cost of upgrading a solution to a new version. 
-
-<!--Click on this [link](https://mix.office.com/watch/1ol6ov90jrd4w) to open an Office Mix that provides a good introduction on how to customize model elements.-->
+You can customize source code and metadata of model elements that are shipped by Microsoft or third-party Microsoft partners. In order to customize metadata and source code of a model, the developer must create a new model that overlays the model they want to customize. For example, solution developers can provide code in the SLN layer, independent software vendors can use the ISV layer, and value-added resellers can use the VAR layer. Functionality defined in higher layers (VAR layer in this example) can override the functionality of lower layers. The overlaying model must belong to the same **Package** as the source model and belong to a layer that is higher than the source model. Overlayering is a powerful tool to perform advanced customizations of metadata and source code, but may increase the cost of upgrading a solution to a new version.
 
 ## Extensions
 You can customize an application by using *extensions*. An extension enables you to add functionality to existing model elements and source code. Extensions provide the following capabilities:
 
--   Creating new model elements.
--   Extending existing model elements.
--   Extending source code using class extensions.
--   Customizing business logic. Ways to customize business logic include:
-    -   Creating event handlers to respond to framework events, such as data events.
-    -   Creating event handlers to respond to event delegates that are defined by the application.
-    -   Creating new plug-ins.
+- Creating new model elements.
+- Extending existing model elements.
+- Extending source code using class extensions.
+- Customizing business logic. Ways to customize business logic include:
+    - Creating event handlers to respond to framework events, such as data events.
+    - Creating event handlers to respond to event delegates that are defined by the application.
+    - Creating new plug-ins.
 
 To get started, review or complete this tutorial: [Customize model elements through extension](customize-model-elements-extensions.md).
 
 ## Extension models and packages
-You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step. 
+You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step.
 
-![./media/1_cust.png](./media/1_cust.png) 
+![./media/1_cust.png](./media/1_cust.png)
 
 Extension models have several advantages, including:
 
--   **Application lifecycle management (ALM):** Extension models simplify and improve the performance of deployments, builds, test automation and delivery to customers.
--   **Design time performance:** Building your model or project doesn't require you to recompile the entire application.
--   **Servicing:** In the cloud, Microsoft can install, patch, upgrade, and change internal APIs without affecting your customizations.
--   **Upgrades:** Unlike overlayering, extensions reduce the cost of upgrading to a new version, as this approach eliminates costly code and metadata conflicts.
+- **Application lifecycle management (ALM):** Extension models simplify and improve the performance of deployments, builds, test automation and delivery to customers.
+- **Design time performance:** Building your model or project doesn't require you to recompile the entire application.
+- **Servicing:** In the cloud, Microsoft can install, patch, upgrade, and change internal APIs without affecting your customizations.
+- **Upgrades:** Unlike overlayering, extensions reduce the cost of upgrading to a new version, as this approach eliminates costly code and metadata conflicts.
 
-The following diagram illustrates how extensions get isolated in their assemblies. 
+The following diagram illustrates how extensions get isolated in their assemblies.
 
 ![media/ax7customization1.png](media/ax7customization1.png)
 
 ## Code extensions
 You can extend source code in 3 ways:
 
--   By subscribing to events (framework events and delegates)
--   By writing plug-ins.
--   By creating class extensions (aka class Augmentation), see section below.
+- By subscribing to events (framework events and delegates)
+- By writing plug-ins.
+- By creating class extensions (aka class Augmentation), see section below.
 
 You should understand the following characteristics of framework events:
 
--   Events are implemented as multi-cast delegates, which means that more than one event handler can be subscribed to any particular event.
--   Events are broadcast; there's no sequencing of calls to event handlers.
--   Event handlers execute within the transaction scope of the base methods.
+- Events are implemented as multi-cast delegates, which means that more than one event handler can be subscribed to any particular event.
+- Events are broadcast; there's no sequencing of calls to event handlers.
+- Event handlers execute within the transaction scope of the base methods.
 
 ### Events
 
@@ -99,14 +96,14 @@ Class extensions enable you to augment a class by adding methods and variables t
 ## Form extensions
 You can extend the functionality of a form by extending its controls and data sources. For example, in a form extension, you can:
 
--   Add a new control.
--   Enable or disable a control.
--   Change the text or label property of a control.
--   Change a control's visibility.
--   Change a form's help text.
--   Change a form's caption.
--   Add a new data source.
--   Add a form part.
+- Add a new control.
+- Enable or disable a control.
+- Change the text or label property of a control.
+- Change a control's visibility.
+- Change a form's help text.
+- Change a form's caption.
+- Add a new data source.
+- Add a form part.
 
 Other ways to customize a form, such as reordering controls in the form are planned to be included in a future release. In Microsoft Dynamics AX 2012, you could override form methods. In the current version, you use extensions to implement event handlers that are called from the base implementations of form methods. The following table lists each method and its associated events.
 
@@ -182,31 +179,31 @@ Validation events capture and return results by using the **DataEventArgs** para
 You can extend a View or Data entity to achieve much of the functionality available with table extensions.
 
 ## Enum extensions
-You can extend any Enum that is marked extensible (IsExtensible=True). 
+You can extend any Enum that is marked extensible (IsExtensible=True).
 
-[![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png) 
+[![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png)
 
 By extending an Enum, you can add new Enum values to it. It is important to keep the following in mind when dealing with extensible Enums:
 
 1.  You cannot have X++ logic that depends on the integer value of Enum values (For example. *If (Enum1.v1 &gt; Enum1.v2) ...* is not supported for extensible enums)
 2.  When Enum values of extensible Enums are synchronized into the database:
-    -   Integer values that belong to the baseline enum are deterministic, they come from the metadata.
-    -   Integer values that are an extension are generated during the synchronization process and are not deterministic.
+    - Integer values that belong to the baseline enum are deterministic, they come from the metadata.
+    - Integer values that are an extension are generated during the synchronization process and are not deterministic.
 
 ## EDT extensions
 You can extend an EDT element in order to modify any of the following properties:
 
--   Form help
--   Label
--   String size
--   Help text
+- Form help
+- Label
+- String size
+- Help text
 
 ## Query extensions
 You can extend a Query element to achieve the following:
 
--   Add ranges to an existing data source.
--   Add new (embedded) data sources to an existing data source.
--   Add new fields to an existing data source.
+- Add ranges to an existing data source.
+- Add new (embedded) data sources to an existing data source.
+- Add new fields to an existing data source.
 
 ## Menu extensions
 You can extend a Menu element to achieve the following:
@@ -220,13 +217,13 @@ You can extend a Menu element to achieve the following:
 You can extend a Security Role or a Security Duty to add new duties/privileges to these elements.
 
 ## Report extensions
-You can customize reports and business docs using extensions, below is a list of tutorials that help you learn more. 
+You can customize reports and business docs using extensions, below is a list of tutorials that help you learn more.
 
-[Customize App Suite reports by using extensions](../analytics/customize-app-suite-reports-with-extensions.md): Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some… 
+[Customize App Suite reports by using extensions](../analytics/customize-app-suite-reports-with-extensions.md): Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some…
 
-[Create custom designs for business documents](../analytics/custom-designs-business-docs.md): This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance…. 
+[Create custom designs for business documents](../analytics/custom-designs-business-docs.md): This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance….
 
-[Expand Application Suite report data sets](../analytics/expand-app-suite-report-data-sets.md): This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without… 
+[Expand Application Suite report data sets](../analytics/expand-app-suite-report-data-sets.md): This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without…
 
 [Extend report menu items to redirect user navigation](../analytics/extend-report-menu-items.md): This article focuses on the process of extending existing application menu items to redirect navigations with minimal code changes. Using this technique you will avoid the hassle of tracking down and replacing all references to an existing application…
 
@@ -254,9 +251,8 @@ You can specify additional country/region codes in their extension. The effectiv
 ## Event argument types
 When an event takes place, the delegates described in the sections above get triggered. In this section, we provide the details of the types of the arguments that are passed as the event arguments. Some of the entries in the table below have a null in the column designating the event args; this means that no arguments are passed - the relevant information is in the first argument (typically called sender) in this case.
 
-|                                 |                                  |
+| Event                           | Argument type                |
 |---------------------------------|----------------------------------|
-| **Event**                       | **Argument type**                |
 | onDefaultedField                | DefaultFieldEventArgs            |
 | onDefaultedRow                  | null                             |
 | onDefaultingField               | DefaultFieldEventArgs            |
@@ -303,28 +299,28 @@ When an event takes place, the delegates described in the sections above get tri
 | onValidatingWrite               | ValidateEventArgs                |
 
 ## Development tools support
-The development tools in Visual Studio provide integrated features to help you create and work with extensions. For example, when you right-click an element name in **Application Explorer**, you can create an extension for that element. 
+The development tools in Visual Studio provide integrated features to help you create and work with extensions. For example, when you right-click an element name in **Application Explorer**, you can create an extension for that element.
 
-[![3\_Cust](./media/3_cust.png)](./media/3_cust.png) 
+![Create extension on context menu](./media/3_cust.png)
 
-To create an extension, the current project in **Solution Explorer** must belong to a model that references the model of the selected element in **Application Explorer**. To view the model for a particular project, view the project properties. 
+To create an extension, the current project in **Solution Explorer** must belong to a model that references the model of the selected element in **Application Explorer**. To view the model for a particular project, view the project properties.
 
-[![4\_Cust](./media/4_cust.png)](./media/4_cust.png) 
+![Property page for project](./media/4_cust.png)
 
 Visual Studio creates the extension file for you, either in the current project or in a new project. You can then work with the extension file either as source code or by using a designer. You package a code-extension model for deployment exactly like you would package any other model. On the **Dynamics 365** menu, point to **Deploy**, click **Create Deployment Package**, and then select the check box for the package name.
 
 ### Framework events
 
-Tables, form data sources, form controls, and other element types that support extension events list the available events (and delegates) under an **Events** collection node. For example, viewing the **Events** node of a table extension shows events that are defined by the framework, and delegate methods that are defined by application developers. 
+Tables, form data sources, form controls, and other element types that support extension events list the available events (and delegates) under an **Events** collection node. For example, viewing the **Events** node of a table extension shows events that are defined by the framework, and delegate methods that are defined by application developers.
 
-[![5\_Cust](./media/5_cust.png)](./media/5_cust.png) 
+![List of framework events](./media/5_cust.png)
 
-**Note**: Events are exposed on the designer on different element and sub-element types, like table events, form events, form data source events, form control events, and others. Open the context menu of an event node to interact with events: 
+**Note**: Events are exposed on the designer on different element and sub-element types, like table events, form events, form data source events, form control events, and others. Open the context menu of an event node to interact with events:
 
-[![6\_Cust](./media/6_cust.png)](./media/6_cust.png)
+![Copy event handler method on context menu](./media/6_cust.png)
 
--   **Copy event handler method**: This option copies a method signature to the clipboard. You can paste it in any X++ code editor to define a method that subscribes to the selected event.
--   **Find event handlers**: Searches and lists all methods subscribed to the selected event.
+- **Copy event handler method**: This option copies a method signature to the clipboard. You can paste it in any X++ code editor to define a method that subscribes to the selected event.
+- **Find event handlers**: Searches and lists all methods subscribed to the selected event.
 
 
 ## Additional resources

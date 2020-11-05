@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 12/05/2019
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
@@ -52,7 +50,7 @@ To create a new document type, follow these steps.
 5. In the **Class** field, specify a class to define the behavior for the document type:
 
     - **Attach file** – The user is prompted for a file.
-    - **Attach URL** – The user can enter a URL in the **Notes** field, such as `http://www.microsoft.com`. The **Open** button on the **Attachments** page will open the URL on a browser tab.
+    - **Attach URL** – The user can enter a URL in the **Notes** field, such as `https://www.microsoft.com`. The **Open** button on the **Attachments** page will open the URL on a browser tab.
     - **Simple note** – The user can add a simple note in the **Notes** field.
 
 6. If you specified **Attach file** in the **Class** field, in the **Location** field, specify the storage mechanism to use.
@@ -69,7 +67,7 @@ To configure SharePoint storage, follow these steps.
 1. Go to the **Document management parameters** page.
 2. On the **SharePoint** tab, in the **Default SharePoint server** field, review the host name that was automatically detected for the SharePoint site, such as contosoax7.sharepoint.com. Typically, the SharePoint host name is in the form tenantname.sharepoint.com, and accounts on that tenant are in the form `user1@tenantname.onmicrosoft.com`.
 
-    Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft Office 365 license isn't associated with the current user (the admin).
+    Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft 365 license isn't associated with the current user (the admin).
 
 4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
@@ -78,9 +76,20 @@ To configure SharePoint storage, follow these steps.
 
 SharePoint communication works for the current user only if the following conditions are met:
 
-- An Office 365 license is associated with the user's account.
+- A Microsoft 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
+- The user has access to the folder that the document is stored in.
+
+If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
+
+1. Verify the Admin account has an associated email account (verify or change this in the **User** page). If this isn't set up, you need to add the email and provider  via the OData Excel add-in. By default, the email address isn't present in the Excel design. The user needs to edit the Excel design, add all fields, apply, and refresh. Once complete, you can update the Admin account.
+
+2. After the Admin account has an associated email account, sign in to Dynamics as the admin.
+
+3. Open an attachment that is stored in SharePoint.
+
+4. Sign in with another user account that has read access to the attachments page and the configured SharePoint folder. Verify that they can also open and preview the attachment.
 
 ## Configure file types
 
@@ -102,9 +111,9 @@ The default cloud-based WOPI server in Finance + Operations can't read the attac
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message "No preview available" instead of an error message.
 
-### Document preview (WOPI) will not work in environments with IP whitelisting enabled
+### Document preview (WOPI) will not work in environments with an IP safe list enabled
 
-Document preview (WOPI) will not work in environments with IP whitelisting enabled, because the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.
+Document preview (WOPI) will not work in environments with an IP safe list enabled, because the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.
 
 ## Other configuration
 
@@ -116,9 +125,11 @@ Here are some other configuration options to consider, although these options ar
 
 ## Accessing document management attachments 
 
-Document management appears to users as the **Attach** button (keyboard shortcut: **Ctrl**+**Shift**+**A**) at the top of most forms that contain data sources. Clicking the **Attach** button will open the **Attachments** form in the context of the data source of the currently selected control on the form.
+Document management appears to users as the **Attach** button at the top of most pages that contain data. When you select the **Attach** button (or when you use the corresponding keyboard shortcut, **Ctrl**+**Shift**+**A**), the **Attachments** page is opened in the context of the data source of the control that is currently selected on the page. This page shows all the attachments that are related to the corresponding data source. 
 
-The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening that form. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
+The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
+
+In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. First, when the feature is enabled, the **Attachments** page doesn't show only attachments that are related to a single data source. Instead, it shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users can move and copy attachments between the related data sources on the **Attachments** page.  
 
 ## Attachment recovery
 
@@ -126,7 +137,7 @@ In Platform update 29, an attachment recovery feature has been added that provid
 
 ### Configuration of attachment recovery
 
-Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days, but can be changed as needed. If the **Number of days to defer deletion** value is zero this means that the deleted attachments will be recoverable for an indefinite period. 
+Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days but can be changed as needed. If the **Number of days to defer deletion** value is zero, this means that the deleted attachments will be recoverable for an indefinite period. 
 
 After attachment recovery is enabled, a batch job with this name will be created, "Scans for deleted references which have reached the end of their retention period". This batch job will use the **Number of days to defer deletion** to determine how long to retain a deleted attachment based on the **Deleted data and time**.
 
@@ -142,6 +153,63 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 1. Immediately after deletion, the user can use the undo link in the **Attachment deleted** notification.
 2. On the **Attachments** page, a **Deleted attachments** button provides access to the list of deleted attachments that can be recovered for a particular record. The deleted attachments can be opened for review, permanently deleted, or restored.
 3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
+
+## Scanning attachments for viruses and malicious code
+When you work with attachments, you might want to scan the files for viruses and malicious code. Therefore, in version 10.0.12 and later, extension points are available so that customers can integrate with the file scanning software of their choice when they work with attachments. A similar extension point is also available for file upload. For more information, see [File upload control](../../dev-itpro/user-interface/file-upload-control.md).
+
+> [!IMPORTANT]
+> Out of the box, Finance and Operations apps don't scan files for viruses and malicious code, and we don't recommend specific software for file scanning. Instead, customers are responsible for choosing their own file scanning software, and for adding the appropriate code to the delegate handlers so that they can use the software or service of their choice to scan files.
+
+The **Docu** class exposes the following two delegates. Handlers can be implemented for these delegates for document scanning purposes:
+
+- **Docu.delegateScanDocument()** – This delegate applies the file scanning logic when a new document attachment is uploaded, or when a user tries to preview or download an existing attachment. The corresponding action will fail if the scanning service determines that the file is malicious.
+-  **Docu.delegateScanDeletedDocument()** – This delegate applies the file scanning logic to documents in the attachments recycle bin when a user tries to preview or download a file. The corresponding action will fail if the scanning service determines that the file is malicious.
+
+### Implementation details
+The following example of the **ScanDocuments** class shows boilerplate code for the two handlers. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-itpro/dev-tools/event-handler-result-class.md).
+
+```xpp
+    public final class ScanDocuments
+    {
+
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDocument))]
+        public static void Docu_delegateScanDocument(DocuRef _docuRef, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanDocument(_docuRef))
+            {
+                _validationResult.reject();
+            }
+        }
+
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDeletedDocument))]
+        public static void Docu_delegateScanDeletedDocument(DocuDeletedRef _docuDeletedRef, EventHandlerRejectResult _validationResult)
+        {
+            if (!ScanDocuments::scanDeletedDocument(_docuDeletedRef))
+            {
+                _validationResult.reject();
+            }
+        }
+
+        private static boolean scanDocument(DocuRef _docuRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+
+        private static boolean scanDeletedDocument(DocuDeletedRef _docuDeletedRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
+
+    }
+```
 
 ## Frequently asked questions
 
@@ -161,13 +229,13 @@ Document types are used to categorize the documents that you attach to records o
 
 File types include Microsoft Word documents and images. A file type is denoted by the extension of the file, such as .txt, .png, .doc, .xlsx, or .pdf.
 
-### Does document management integrate with Office 365?
+### Does document management integrate with Microsoft 365?
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
 
 ### How does the default storage location for Document Management change in Finance + Operations environments?
 
-For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
+For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premises instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
 
 ### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
 
@@ -187,7 +255,7 @@ Database storage is Azure SQL Database. File storage is Azure Blob storage. Azur
 
 ### How much storage do we get for Azure Blob storage?
 
-That information is in the [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf). Currently, you get 40 gigabytes (GB) of storage.
+That information is in the [licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). Currently, you get 40 gigabytes (GB) of storage.
 
 ### What is the cost for additional storage?
 
@@ -205,3 +273,6 @@ Although attachments can be exported, that capability isn't a standard capabilit
 
 To extract attachments, an Attachments entity must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can find examples in the Application explorer by searching for "Attachment" under the **AOT > Data Model > Data Entities** node.
 
+### How does the document preview work for attachments stored in SharePoint?
+
+The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.

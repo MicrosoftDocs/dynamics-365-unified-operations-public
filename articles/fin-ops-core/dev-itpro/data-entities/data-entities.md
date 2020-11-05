@@ -5,7 +5,7 @@ title: Data entities overview
 description: This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -137,7 +137,7 @@ Entities are categorized based on their functions and the type of data that they
 ### Transaction
 
 - The operational transaction data of the business.
-- Posted transactions. These are non‑idempotent items such as posted invoiced and balances. Typically, these items are excluded during a full dataset copy.
+- Posted transactions. These are non idempotent items such as posted invoiced and balances. Typically, these items are excluded during a full dataset copy to reduce the volume of data that is copied/migrated. Migrating completed transactions can also lead to further complexity in trying to preserve the referential integrity of related data in the new system. In general, transactions from a completed business process are not migrated in detail but in summary.
 - Examples include pending invoices.
 
 ## Building an entity
@@ -151,7 +151,7 @@ The simplest way to build an entity is to use a wizard. This wizard lets you sel
 |-------------------------------------|-------------|
 | Primary data source                 | The root data source (table or view) that is used to construct the entity. You can add more related data sources, based on this root data source. |
 | Data entity name                    | The name of the entity. |
-| Entity category                     | Thy type of entity. Entity categories are similar to table groups for tables. The available categories include **Parameter**, **Reference**, **Master**, **Document**, and **Transaction**. |
+| Entity category                     | The type of entity. Entity categories are similar to table groups for tables. The available categories include **Parameter**, **Reference**, **Master**, **Document**, and **Transaction**. |
 | Public entity name                  | The public resource name for the entity. |
 | Public collection name              | The public resource set name. |
 | Enable public API                   | Select this option to enable the entity for OData services. |

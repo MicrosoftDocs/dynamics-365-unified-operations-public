@@ -21,7 +21,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -206,7 +206,7 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
 
      - Select **Revenue calculation** to open the **Revenue calculation** dialog box, where you can view the list of customer invoices in the current period.  The list is generated based on the value of the **Revenue calculation method** field on the **General ledger parameters** page.
 
-         ![](media/3%20Revenue%20calculation.jpg)
+         ![Revenue calculation](media/3%20Revenue%20calculation.jpg)
            
          For each invoice in the **Revenue calculation** dialog box, you can perform the following actions:
          

@@ -87,7 +87,7 @@ The new workspace is used to look at the status of the revenues schedule records
 
 [![Revenue recognition workspace screenshot](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)
 
-## Project contact committed detail
+## Project contract committed detail
 You can now drilldown into the details of the committed amount on the funding source of a project contract, allowing the user to easily see the activity that makes up the committed amount.
 
 ## Additional resources

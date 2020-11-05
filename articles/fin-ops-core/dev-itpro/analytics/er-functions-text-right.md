@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="RIGHT">RIGHT ER function</a>
+# RIGHT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `RIGHT` function returns a *String* value that presents the specified number
 
 ## Syntax
 
-```
+```vb
 RIGHT (text, number)
 ```
 

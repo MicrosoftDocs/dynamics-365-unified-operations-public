@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="">SESSIONNOW ER function</a>
+# SESSIONNOW ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `SESSIONNOW` function returns a *DateTime* value that represents the current
 
 ## Syntax
 
-```
+```vb
 SESSIONNOW ()
 ```
 

@@ -3,7 +3,7 @@
 
 title: Independent software vendor (ISV) licensing (on-premises)
 description: This topic describes the independent software vendor (ISV) licensing feature for on-premises environments.
-author: manalidongre
+author: jorisdg
 manager: AnnBe
 ms.date: 03/08/2018
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
 
@@ -76,7 +75,7 @@ The following procedure can be used for a sandbox environment or a production en
 
     Here is an example of the command.
 
-    ```
+    ```Console
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
     ```
 

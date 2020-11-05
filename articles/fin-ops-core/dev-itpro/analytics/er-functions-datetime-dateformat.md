@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="DATEFORMAT">DATEFORMAT ER function</a>
+# DATEFORMAT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,13 +38,13 @@ The `DATEFORMAT` function returns a *String* value that presents a given date va
 
 ## Syntax 1
 
-```
+```vb
 DATEFORMAT (date, format)
 ```
 
 ## Syntax 2
 
-```
+```vb
 DATEFORMAT (date, format, culture)
 ```
 

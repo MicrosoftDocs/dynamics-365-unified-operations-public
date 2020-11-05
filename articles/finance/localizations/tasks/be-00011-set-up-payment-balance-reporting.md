@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up payment balance reporting (Belgium)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium. This procedure was created by using the USSI demo data company.
 
@@ -63,7 +63,7 @@ This functionality is available for legal entities that have their primary addre
 5. In the Telephone field, type a value.
 6. In the Fax field, type a value.
 7. In the Check BLWI code on journals field, select an option.
-    * In the Check BLWI code field, select the rule for checking that a payment purpose code is specified in documents. The available options are None, Warning, and Error. If a transaction has a customer/vendor that is located in a foreign country/region (that is, the country/region of the customer/vendor differs from the country/region of the legal entity), the transaction doesn’t have an assigned payment purpose code, and the check is set to Warning or Error, either a warning or error message will be shown during posting. This validation is applied for all customer/vendor transactions except payment transactions.  
+    * In the Check BLWI code field, select the rule for checking that a payment purpose code is specified in documents. The available options are None, Warning, and Error. If a transaction has a customer/vendor that is located in a foreign country/region (that is, the country/region of the customer/vendor differs from the country/region of the legal entity), the transaction doesn't have an assigned payment purpose code, and the check is set to Warning or Error, either a warning or error message will be shown during posting. This validation is applied for all customer/vendor transactions except payment transactions.  
 8. In the Format mapping field, enter or select a value.
     * Prerequisite: You should upload the BLWI format (BE) configuration for Electronic reporting (ER) from Microsoft Dynamics Lifecycle Services (LCS).  
 

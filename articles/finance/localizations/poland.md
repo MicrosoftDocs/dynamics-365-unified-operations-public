@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -45,3 +45,4 @@ This topic provides links to documentation resources for Poland.
 - [Standard audit file (SAF)](emea-pol-standard-audit-file-saf.md)
 - [Tax interest and free-hand interest](emea-pol-interest-calculation.md)
 - [Turnover and balances statement](emea-pol-turnover-balances-statement.md)
+- [Split AP/AR exchange difference](emea-pol-split-ap-ar-exchange-difference.md)

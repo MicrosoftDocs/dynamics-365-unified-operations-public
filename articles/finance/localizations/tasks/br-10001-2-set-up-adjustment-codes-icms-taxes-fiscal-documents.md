@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up adjustment codes for ICMS taxes on fiscal documents (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can create tax adjustment codes to manually adjust ICMS tax amounts on fiscal documents.
 

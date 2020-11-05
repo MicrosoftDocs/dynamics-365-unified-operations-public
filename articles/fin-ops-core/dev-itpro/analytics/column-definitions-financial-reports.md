@@ -125,7 +125,7 @@ The following table describes the column restriction codes.
 | ADJ                     | Restrict the amounts in the column to period adjustment amounts, if these amounts are available. |
 | XAD                     | Restrict the amounts in the column, so that period adjustment amounts are excluded. |
 | PT                      | Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available. |
-| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.<p><strong>Note:</strong> Not all data providers support unposted transactions. For more information, see the <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>data integration guide</a> for your Microsoft Dynamics ERP system.</p> |
+| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.<p><strong>Note:</strong> Not all data providers support unposted transactions. </p> |
 
 ### Restrict a column to a reporting unit
 
@@ -219,8 +219,7 @@ Conditional spanning headers can span multiple columns that are based on specifi
 
 Phyllis is creating a report for a dynamic six-month forecast. She wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts. Each month that the report is run, there is one more actual column and one less budget column. Although Phyllis can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, she decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run. Phyllis opens Report Designer, clicks **Column Definition** in the navigation pane, and opens the column definition for the report. She then enters the following information. The base period in the report definition is 4.
 
-
-|                     |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
+|      Format         |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
 | Header 1            |      | Actual        | Budget        |               |               |               |               |               |               |               |               |               |               |
 | Header 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
@@ -486,7 +485,7 @@ Attributes are financial data values that further define an account or transacti
 
 The following example shows part of a column description that has an account attribute in the **Book Code/Attribute Category** row. The attribute filter for this column specifies the range of values to include in the report.
 
-|                              | A    | B                   |
+|      Filter                  | A    | B                   |
 |------------------------------|------|---------------------|
 | Column Type                  | DESC | FD                  |
 | Book Code/Attribute Category |      | ACTUAL              |

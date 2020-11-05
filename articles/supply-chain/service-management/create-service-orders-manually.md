@@ -4,7 +4,7 @@
 title: Create service orders manually   
 description: You can create service orders manually by using a service agreement or by using the **Service orders** form. 
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -17,14 +17,14 @@ ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -62,7 +62,7 @@ You can create service orders manually by using a service agreement or by using 
 
 1.  Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.
 
-2.  In the **Projects** form, on the **Action pane**, click the **Manage** tab \> click **Service** \> **Service orders**.
+2.  In the **Projects** form, on the **Action Pane**, click the **Manage** tab \> click **Service** \> **Service orders**.
 
 3.  Follow the previous procedure to create a service order manually in the **Service orders** form. The **Project ID** field displays the project reference.
 

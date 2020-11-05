@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Navigation concepts
+title: Navigation concepts for test data
 description: This topic provides information about how to use navigation to simplify the discoverability of test data generation methods.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -24,29 +24,27 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Navigation concepts
+# Navigation concepts for test data
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 To simplify the discoverability of generation methods for test data, a set of navigation objects is introduced. For more information about the generation methods, see [Test data methods](test-data-methods.md).
 
 Navigation should start from the root object, the module must be specified, and then the entity must be specified together with the test data methods.
 
-```
+```xpp
 data.module().entity().testDataMethod();
 ```
 
 ### Examples
 
-```
+```xpp
 modelGroup = data.invent().modelGroups().fifo();
 
 itemBuilder = data.products().items().whsBuilder();
@@ -108,7 +106,7 @@ The plural of the entity name should be used as the name of the entity navigatio
 
 #### Examples
 
-```
+```xpp
 data.products().items();
 
 data.whs().warehouses();
@@ -120,7 +118,7 @@ data.whs().warehouses();
 
 #### Examples
 
-```
+```xpp
 AtlDataProductsItems
 
 AtlDataInventChargeGroups
@@ -140,7 +138,7 @@ The helpers navigation node should be named `helpers`.
 
 #### Examples
 
-```
+```xpp
 data.helpers();
 
 data.whs().helpers();
@@ -152,7 +150,7 @@ data.whs().helpers();
 
 #### Examples
 
-```
+```xpp
 AtlDataHelpers
 
 AtlDataWHSHelpers

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # MX-00010 Post a free text invoice
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use the Free text invoice form to create and post a customer invoice as an electronic invoice by using CFDI method. You must to be logged in a Mexican legal entity. This task guide was created using the MXMF demo data company.
 
@@ -54,7 +54,7 @@ Use the Free text invoice form to create and post a customer invoice as an elect
 16. Close the page.
 17. Go to Accounts receivable > Invoices > E-Invoices > Export/import electronic invoice process.
 18. Click OK.
-    * This batch job executes the connection with the PAC web services to get the approval or cancellation of a CFDI electronic invoice. The task in the batch can run manually or scheduled by specific period of time.   	After you press OK, a web connection with the  is established in order to get the validation and digital signature. If the electronic invoice is approved,  the PAC sends the response XML message and the status of the electronic invoice is set to Approved. An email is automatically sent out to the customer with the XML and PDF file attached. Send mail and Send report file - PDF checkboxes must be enable in the electronic invoice parameters. Otherwise, you can email or print a PDF report based on customer's request by using Inquire and Reports > CFDI (electronic invoices) menu.    
+    * This batch job executes the connection with the PAC web services to get the approval or cancellation of a CFDI electronic invoice. The task in the batch can run manually or scheduled by specific period of time.       After you press OK, a web connection with the  is established in order to get the validation and digital signature. If the electronic invoice is approved,  the PAC sends the response XML message and the status of the electronic invoice is set to Approved. An email is automatically sent out to the customer with the XML and PDF file attached. Send mail and Send report file - PDF checkboxes must be enable in the electronic invoice parameters. Otherwise, you can email or print a PDF report based on customer's request by using Inquire and Reports > CFDI (electronic invoices) menu.    
 19. Go to Accounts receivable > Inquiries and reports > CFDI (electronic invoices).
 20. In the list, mark the selected row.
 21. In the list, click the link in the selected row.

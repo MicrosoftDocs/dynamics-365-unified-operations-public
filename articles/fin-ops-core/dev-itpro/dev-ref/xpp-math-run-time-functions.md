@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31361
 ms.assetid: 8982f158-f638-46d7-b3f7-ba8cfd356d57
@@ -48,7 +47,9 @@ Retrieves the absolute value of a real number. Examples:
 
 ### Syntax
 
-    real abs(real arg)
+```xpp
+real abs(real arg)
+```
 
 ### Parameters
 
@@ -62,19 +63,21 @@ The absolute value of *arg*.
 
 ### Example
 
-    static void absExample(Args _args)
+```xpp
+static void absExample(Args _args)
+{
+    real r1;
+    real r2;
+    ;
+    r1 = abs(-3.14);
+    r2 = abs(3.14);
+    if (r1 == r2)
     {
-        real r1;
-        real r2;
-        ;
-        r1 = abs(-3.14);
-        r2 = abs(3.14);
-        if (r1 == r2)
-        {
-            print "abs of values are the same";
-            pause;
-        }
+        print "abs of values are the same";
+        pause;
     }
+}
+```
 
 ## acos
 Retrieves the arc cosine of a real number.
@@ -84,7 +87,9 @@ Retrieves the arc cosine of a real number.
 
 ### Syntax
 
-    real acos(real arg)
+```xpp
+real acos(real arg)
+```
 
 ### Parameters
 
@@ -98,16 +103,18 @@ The arc cosine of *arg*.
 
 ### Example
 
-    static void acosExample(Args _args)
-    {
-        real r;
-        str  s;
-        ;
-        r = acos(0.0);
-        s = strFmt("The arc cosine of 0.0 is %1 ", r);
-        print s;
-        pause;
-    }
+```xpp
+static void acosExample(Args _args)
+{
+    real r;
+    str  s;
+    ;
+    r = acos(0.0);
+    s = strFmt("The arc cosine of 0.0 is %1 ", r);
+    print s;
+    pause;
+}
+```
 
 ## asin
 Retrieves the arc sine of a real number.
@@ -117,7 +124,9 @@ Retrieves the arc sine of a real number.
 
 ### Syntax
 
-    real asin(real arg)
+```xpp
+real asin(real arg)
+```
 
 ### Parameters
 
@@ -138,7 +147,9 @@ Retrieves the arc tangent of a real number.
 
 ### Syntax
 
-    real atan(real arg)
+```xpp
+real atan(real arg)
+```
 
 ### Parameters
 
@@ -156,21 +167,25 @@ The arc tangent of the specified number.
 
 ### Example
 
-    static void atanExample(Args _args)
-    {
-        real r;
-        ;
-        r = atan(1.0);
-        print strFmt("The Arc Tangent of 1.0 is %1", r);
-        pause;
-    }
+```xpp
+static void atanExample(Args _args)
+{
+    real r;
+    ;
+    r = atan(1.0);
+    print strFmt("The Arc Tangent of 1.0 is %1", r);
+    pause;
+}
+```
 
 ## corrFlagGet
 Retrieves the state of the correction flag for a real number.
 
 ### Syntax
 
-    int corrFlagGet(real arg)
+```xpp
+int corrFlagGet(real arg)
+```
 
 ### Parameters
 
@@ -186,19 +201,23 @@ A non-zero value if the flag is set; **0** (zero) if the flag is cleared.
 
 The following example displays **1**.
 
-    static void corrFlagGetExample(Args _args)
-    {
-        real rr;
-        rr = corrFlagSet(0.36,2);
-        print(corrFlagGet(rr));
-    }
+```xpp
+static void corrFlagGetExample(Args _args)
+{
+    real rr;
+    rr = corrFlagSet(0.36,2);
+    print(corrFlagGet(rr));
+}
+```
 
 ## corrFlagSet
 Controls the correction flag for a real number.
 
 ### Syntax
 
-    real corrFlagSet(real real, int arg)
+```xpp
+real corrFlagSet(real real, int arg)
+```
 
 ### Parameters
 
@@ -218,7 +237,9 @@ Retrieves the cosine of a real number.
 
 ### Syntax
 
-    real cos(real arg)
+```xpp
+real cos(real arg)
+```
 
 ### Parameters
 
@@ -238,14 +259,16 @@ The value of the *arg* parameter must be in radians.
 
 The following code example displays **0.76**.
 
-    static void cosExample(Args _arg)
-    {
-        real r;
-        ;
-        r = cos(15);
-        print strFmt("Cos of 15 is %1", r);
-        pause;
-    }
+```xpp
+static void cosExample(Args _arg)
+{
+    real r;
+    ;
+    r = cos(15);
+    print strFmt("Cos of 15 is %1", r);
+    pause;
+}
+```
 
 ## cosh
 Retrieves the hyperbolic cosine of a real number.
@@ -255,7 +278,9 @@ Retrieves the hyperbolic cosine of a real number.
 
 ### Syntax
 
-    real cosh(real arg)
+```xpp
+real cosh(real arg)
+```
 
 ### Parameters
 
@@ -273,21 +298,25 @@ The value of the *arg* parameter must be in radians.
 
 ### Example
 
-    static void coshExample(Args _arg)
-    {
-        real r;
-        ;
-        r = cosh(0.1);
-        print "The hyperbolic cosine of 0.1 is " + num2Str(r, 2, 2, 1, 1);
-        pause;
-    }
+```xpp
+static void coshExample(Args _arg)
+{
+    real r;
+    ;
+    r = cosh(0.1);
+    print "The hyperbolic cosine of 0.1 is " + num2Str(r, 2, 2, 1, 1);
+    pause;
+}
+```
 
 ## decRound
 Rounds a number to the specified number of decimal places.
 
 ### Syntax
 
-    real decRound(real figure, int decimals)
+```xpp
+real decRound(real figure, int decimals)
+```
 
 ### Parameters
 
@@ -317,7 +346,9 @@ Retrieves the natural antilogarithm of the specified real number.
 
 ### Syntax
 
-    real exp(real arg)
+```xpp
+real exp(real arg)
+```
 
 ### Parameters
 
@@ -335,24 +366,28 @@ The calculated natural antilogarithm is the natural logarithm e raised to the po
 
 ### Example
 
-    static void expExample(Args _arg)
-    {
-        real r1;
-        real r2;
-        ;
-        r1 = exp(2.302585093);
-        r2 = exp10(2.302585093);
-        print strFmt("exp of 2.302585093 is %1", r1);
-        print strFmt("exp10 of 230258 is %1", r2);
-        pause;
-    }
+```xpp
+static void expExample(Args _arg)
+{
+    real r1;
+    real r2;
+    ;
+    r1 = exp(2.302585093);
+    r2 = exp10(2.302585093);
+    print strFmt("exp of 2.302585093 is %1", r1);
+    print strFmt("exp10 of 230258 is %1", r2);
+    pause;
+}
+```
 
 ## exp10
 Retrieves the base-10 antilogarithm of the specified real number.
 
 ### Syntax
 
-    real exp10(real decimal)
+```xpp
+real exp10(real decimal)
+```
 
 ### Parameters
 
@@ -366,24 +401,28 @@ The 10-based antilogarithm of the value of the *decimal* parameter.
 
 ### Example
 
-    static void exp10Example(Args _arg)
-    {
-        real r1;
-        real r2;
-        ;
-        r1 = exp(2.302585093);
-        r2 = exp10(2.302585093);
-        print strFmt("exp of 2.302585093 is %1", r1);
-        print strFmt("exp10 of 230258 is %1", r2);
-        pause;
-    }
+```xpp
+static void exp10Example(Args _arg)
+{
+    real r1;
+    real r2;
+    ;
+    r1 = exp(2.302585093);
+    r2 = exp10(2.302585093);
+    print strFmt("exp of 2.302585093 is %1", r1);
+    print strFmt("exp10 of 230258 is %1", r2);
+    pause;
+}
+```
 
 ## frac
 Retrieves the decimal part of a real number.
 
 ### Syntax
 
-    real frac(real decimal)
+```xpp
+real frac(real decimal)
+```
 
 ### Parameters
 
@@ -404,7 +443,9 @@ Retrieves the 10-digit logarithm of a real number.
 
 ### Syntax
 
-    real log10(real arg)
+```xpp
+real log10(real arg)
+```
 
 ### Parameters
 
@@ -425,7 +466,9 @@ Retrieves the natural logarithm of the specified real number.
 
 ### Syntax
 
-    real logN(real arg)
+```xpp
+real logN(real arg)
+```
 
 ### Parameters
 
@@ -446,7 +489,9 @@ max
 
 Retrieves the larger of two specified values.
 
-    anytype max(anytype object1, anytype object2)
+```xpp
+anytype max(anytype object1, anytype object2)
+```
 
 ### Parameters
 
@@ -469,7 +514,9 @@ min
 
 Retrieves the smaller of two specified values.
 
-    anytype min(anytype object1, anytype object2)
+```xpp
+anytype min(anytype object1, anytype object2)
+```
 
 ### Parameters
 
@@ -488,22 +535,26 @@ The smaller of the two values that are specified by the *object1* and *object2* 
 
 ### Example
 
-    static void minExample(Args _arg)
-    {
-            anytype a;
-            real r = 3.0;
-            real s = 2.0;
+```xpp
+static void minExample(Args _arg)
+{
+    anytype a;
+    real r = 3.0;
+    real s = 2.0;
 
-            a = min(r, s);
-            print num2Str(a, 1, 2, 1, 1) + " is less than the other number.";
-    }
+    a = min(r, s);
+    print num2Str(a, 1, 2, 1, 1) + " is less than the other number.";
+}
+```
 
 ## power
 Raises a real number to the power of another real number.
 
 ### Syntax
 
-    real power(real arg, real exponent)
+```xpp
+real power(real arg, real exponent)
+```
 
 ### Parameters
 
@@ -526,7 +577,9 @@ Rounds a real number to the nearest multiple of another real number.
 
 ### Syntax
 
-    real round(real _arg, real _decimals)
+```xpp
+real round(real _arg, real _decimals)
+```
 
 ### Parameters
 
@@ -557,7 +610,9 @@ Retrieves the sine of a real number.
 
 ### Syntax
 
-    real sin(real _arg)
+```xpp
+real sin(real _arg)
+```
 
 ### Parameters
 
@@ -575,28 +630,32 @@ The value of the *\_arg* parameter must be in radians.
 
 ### Example
 
-    static void sinExample(Args _arg)
-    {
-        real angleDegrees = 15.0;
-        real angleRadians;
-        real pi = 3.14;
-        real r;
-        ;
-        angleRadians = pi * angleDegrees / 180;
-        r = sin(angleRadians);
-        print "sin of a "
-            + num2Str(angleDegrees, 2, 2, 1, 1)
-            + " degree angle is "
-            + num2Str(r, 2, 10, 1, 1);
-        pause;
-    }
+```xpp
+static void sinExample(Args _arg)
+{
+    real angleDegrees = 15.0;
+    real angleRadians;
+    real pi = 3.14;
+    real r;
+    ;
+    angleRadians = pi * angleDegrees / 180;
+    r = sin(angleRadians);
+    print "sin of a "
+        + num2Str(angleDegrees, 2, 2, 1, 1)
+        + " degree angle is "
+        + num2Str(r, 2, 10, 1, 1);
+    pause;
+}
+```
 
 ## sinh
 Retrieves the hyperbolic sine of a real number.
 
 ### Syntax
 
-    real sinh(real _arg)
+```xpp
+real sinh(real _arg)
+```
 
 ### Parameters
 
@@ -616,21 +675,23 @@ Values for the *\_arg* parameter that are outside the -250 to 250 range cause th
 
 The following example illustrates the **sinh** function.
 
-    static void sinhExample(Args _arg)
-    {
-        real angleDegrees = 45.0;
-        real angleRadians;
-        real pi = 3.14;
-        real r;
-        ;
-        angleRadians = pi * angleDegrees / 180;
-        r = sinh(angleRadians);
-        print "sinh of a "
-        + num2Str(angleDegrees, 2, 2, 1, 1)
-        + " degree angle is "
-        + num2Str(r, 2, 15, 1, 1);
-        pause;
-    }
+```xpp
+static void sinhExample(Args _arg)
+{
+    real angleDegrees = 45.0;
+    real angleRadians;
+    real pi = 3.14;
+    real r;
+    ;
+    angleRadians = pi * angleDegrees / 180;
+    r = sinh(angleRadians);
+    print "sinh of a "
+    + num2Str(angleDegrees, 2, 2, 1, 1)
+    + " degree angle is "
+    + num2Str(r, 2, 15, 1, 1);
+    pause;
+}
+```
 
 tan
 ---
@@ -639,7 +700,9 @@ Retrieves the tangent of a real number.
 
 ### Syntax
 
-    real tan(real arg)
+```xpp
+real tan(real arg)
+```
 
 ### Parameters
 
@@ -659,21 +722,25 @@ Values for the *arg* parameter that are outside the -250 to 250 range cause the 
 
 The following example illustrates the **tan** function.
 
-    static void tanExample(Args _arg)
-    {
-        real r;
-        ;
-        r = tan(250);
-        print strFmt("Tan of 250 is %1", r);
-        pause;
-    }
+```xpp
+static void tanExample(Args _arg)
+{
+    real r;
+    ;
+    r = tan(250);
+    print strFmt("Tan of 250 is %1", r);
+    pause;
+}
+```
 
 ## tanh
 Retrieves the hyperbolic tangent of a real number.
 
 ### Syntax
 
-    real tanh(real _arg)
+```xpp
+real tanh(real _arg)
+```
 
 ### Parameters
 
@@ -689,22 +756,26 @@ The hyperbolic tangent of the specified real number.
 
 The following example illustrates the **tanh** function.
 
-    static void tanhExample(Args _arg)
-    {
-        real r;
-        ;
-        r = tanh(0.1);
-        print "The hyperbolic tangent of angle 0.1 is "
-        + num2Str(r, 2, 10, 1, 1);
-        pause;
-    }
+```xpp
+static void tanhExample(Args _arg)
+{
+    real r;
+    ;
+    r = tanh(0.1);
+    print "The hyperbolic tangent of angle 0.1 is "
+    + num2Str(r, 2, 10, 1, 1);
+    pause;
+}
+```
 
 ## trunc
 Truncates a real number by removing any decimal places.
 
 ### Syntax
 
-    real trunc(real _decimal)
+```xpp
+real trunc(real _decimal)
+```
 
 ### Parameters
 
@@ -724,14 +795,15 @@ This function always rounds numbers down to a complete integer.
 
 The following example truncates 2.7147 to 2.00.
 
-    static void truncExample(Args _arg)
-    {
-        real r;
-        ;
-        r = trunc(2.7147);
-        print strFmt("r = %1",  r);
-        pause;
-    }
-
+```xpp
+static void truncExample(Args _arg)
+{
+    real r;
+    ;
+    r = trunc(2.7147);
+    print strFmt("r = %1",  r);
+    pause;
+}
+```
 
 

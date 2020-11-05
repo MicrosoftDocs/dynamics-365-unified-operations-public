@@ -3,7 +3,7 @@
 
 title: Client-side design APIs
 description: This topic provides an overview of the client-side design APIs and includes recommendations for using them.
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
 
@@ -79,7 +79,7 @@ The following code is a modified segment of business logic code from a Reservati
 
 After a control is created that doesn't have any children or items, the control name just has to be written in quotation marks (see **FMCustomer\_FullName** in the following code). However, if any customization will be applied to that control, the code must be blocked, and the **name** label must be used (see **FMCustomer\_Image** in the following code).
 
-```
+```json
 // Page root container
 "flexFlow":"column nowrap",
 "items":[

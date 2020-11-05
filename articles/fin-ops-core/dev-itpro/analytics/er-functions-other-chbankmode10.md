@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CH_BANK_MOD_10">CH_BANK_MOD_10 ER function</a>
+# CH_BANK_MOD_10 ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `CH_BANK_MOD_10` function returns a *String* value that represents a credito
 
 ## Syntax
 
-```
+```vb
 CH_BANK_MOD_10 (invoice number digits)
 ```
 

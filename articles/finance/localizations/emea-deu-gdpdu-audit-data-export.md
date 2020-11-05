@@ -2,7 +2,7 @@
 # required metadata
 
 title: German audit file (GDPdU/GoBD) overview
-description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 Finance Operations supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
+description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 Finance supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 author: mrolecki
 manager: AnnBe
 ms.date: 07/25/2019
@@ -56,11 +56,11 @@ The following sections list the tables that are set up as examples in the **Germ
 
 ### General ledger
 
-The following tables show the General leger data structure definitions.
+The following tables show the General ledger data structure definitions.
 
 #### Sachkonten
 
-|     | Feldname                  | Feldtyp | Beschreibung                                      | Electronic Reporting Data Source Path |
+| Number | Feldname                  | Feldtyp | Beschreibung                                      | Electronic Reporting Data Source Path |
 |-----|---------------------------|---------|---------------------------------------------------|------------------------------------------------------------|
 | 1   | SACHKONTONUMMER           | Zeichen | Nummer des Sachkontos                             | MainAccount/MainAccountId                                  |
 | 2   | SACHKONTONAME             | Zeichen | Bezeichnung des Sachkontos                        | MainAccount/Name                                           |
@@ -72,7 +72,7 @@ The following tables show the General leger data structure definitions.
 
 #### Sachkontobuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                      | Electronic Reporting Data Source Path                                             |
+| Number | Feldname               | Feldtyp   | Beschreibung                                      | Electronic Reporting Data Source Path                                             |
 |-----|------------------------|-----------|---------------------------------------------------|-----------------------------------------------------------------------------------|
 | 1   | SACHKONTONUMMER        | Zeichen   | Nummer des Sachkontos                             | $GeneralJournalEntry/$GeneralJournalAccountEntry/$LedgerDimension/DisplayValue    |
 | 2   | STEUERBUCHUNGSREFERENZ | Numerisch | Gibt es hierzu eine Mehrwertsteuerbuchung?-lfd Nr | $GeneralJournalEntry/$GeneralJournalAccountEntry/RecId                            |
@@ -101,7 +101,7 @@ The following tables show the Tax data structure definitions.
 
 #### Umsatzsteuercodes
 
-|     | Feldname          | Feldtyp   | Beschreibung      | Electronic Reporting Data Source Path|
+| Number | Feldname          | Feldtyp   | Beschreibung      | Electronic Reporting Data Source Path|
 |-----|-------------------|-----------|-------------------|-------------------------------------------------------------------------|
 | 1   | BUCHUNGSGRUNDLAGE | Zeichen   | Buchungsgrundlage | TaxData/$TaxTable/TaxBase                             |
 | 2   | NAME              | Zeichen   | Name              | TaxData/$TaxTable/TaxName                             |
@@ -111,7 +111,7 @@ The following tables show the Tax data structure definitions.
 
 #### MehrwertsteuerGruppen
 
-|     | Feldname                      | Feldtyp | Beschreibung               | Electronic Reporting Data Source Path |
+| Number | Feldname                      | Feldtyp | Beschreibung               | Electronic Reporting Data Source Path |
 |-----|-------------------------------|---------|----------------------------|-------------------------------------------------|
 | 1   | BESCHREIBUNG                  | Zeichen | Beschreibung               | TaxGroupData/$TaxGroupHeading/TaxGroupName     |
 | 2   | MEHRWERTSTEUERGRUPPE          | Zeichen | Mehrwertsteuergruppe       | TaxGroupData/TaxGroup       |
@@ -122,7 +122,7 @@ The following tables show the Tax data structure definitions.
 
 #### Umsatzsteuerbuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                | Electronic Reporting Data Source Path |
+| Number | Feldname               | Feldtyp   | Beschreibung                                | Electronic Reporting Data Source Path |
 |-----|------------------------|-----------|---------------------------------------------|--------------------------------------|
 | 1   | STEUERART              | Zeichen   | Beschreibung der Steuerart                  | $TaxTrans/taxName()                                      |
 | 2   | STEUERBUCHUNGSREFERENZ | Numerisch | Gibt es hierzu eine MWST-Buchung? - lfd Nr. | $TaxTrans/$TaxTransGeneralJournalAccountEntry/$GeneralJournalAccountEntryRecId                                          |
@@ -148,7 +148,7 @@ The following tables show the Accounts receivable data structure definitions.
 
 #### Kunden
 
-|     | Feldname             | Feldtyp | Beschreibung                          | Electronic Reporting Data Source Path|
+| Number | Feldname             | Feldtyp | Beschreibung                          | Electronic Reporting Data Source Path|
 |-----|----------------------|---------|---------------------------------------|--------------------------------------|
 | 1   | KUNDENKONTONUMMER    | Zeichen | Nummer des Kundenkontos               | CustTable/AccountNum                                     |
 | 2   | KUNDENUSTIDNR        | Zeichen | USt-IdNr des Kunden                   | CustTable/getVatNumPrimaryRegistrationNumber()                                         |
@@ -166,7 +166,7 @@ The following tables show the Accounts receivable data structure definitions.
 
 #### Kundenbuchungen
 
-|     | Feldname                 | Feldtyp   | Beschreibung                          | Electronic Reporting Data Source Path |
+| Number | Feldname                 | Feldtyp   | Beschreibung                          | Electronic Reporting Data Source Path |
 |-----|--------------------------|-----------|---------------------------------------|-----------------------------------------------------------------------------------|
 | 1   | KUNDENKONTONUMMER        | Zeichen   | Kontonummer des Kundenkontos          | $CustTrans/AccountNum                                     |
 | 2   | BUCHUNGSNUMMER           | Zeichen   | Interne Belegnummer der Buchung       | $CustTrans/Voucher                                        |
@@ -187,7 +187,7 @@ The following tables show the Accounts payable data structure definitions.
 
 #### Lieferanten
 
-|     | Feldname                  | Feldtyp | Beschreibung                             | Electronic Reporting Data Source Path |
+| Number | Feldname                  | Feldtyp | Beschreibung                             | Electronic Reporting Data Source Path |
 |-----|---------------------------|---------|------------------------------------------|------------------------------------------------------------------------------------|
 | 1   | LIEFERANTENKONTONUMMER    | Zeichen | Nummer des Lieferantenkontos             | VendTable/AccountNum                                     |
 | 2   | LIEFERANTENUSTIDNR        | Zeichen | USt-IdNr des Lieferanten                 | VendTableVendTable/getVatNumPrimaryRegistrationNumber()                                         |
@@ -203,7 +203,7 @@ The following tables show the Accounts payable data structure definitions.
 
 #### Lieferantenbuchungen
 
-|     | Feldname                 | Feldtyp   | Beschreibung                          | Electronic Reporting Data Source Path |
+| Number | Feldname                 | Feldtyp   | Beschreibung                          | Electronic Reporting Data Source Path |
 |-----|--------------------------|-----------|---------------------------------------|-------------------------------------------------------------------------------------|
 | 1   | LIEFERANTENKONTONUMMER   | Zeichen   | Nummer des Lieferantenkontos          | $VendTrans/AccountNum                                     |
 | 2   | BUCHUNGSNUMMER           | Zeichen   | Interne Belegnummer der Buchung       | $VendTrans/Voucher                                        |

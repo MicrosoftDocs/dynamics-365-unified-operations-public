@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: ER Import a configuration from Lifecycle Services
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS). 
+title: Import a configuration from Lifecycle Services
+description: This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS). 
 author: NickSelin
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata 
 
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport   
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
@@ -28,50 +28,84 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ---
 
-# ER Import a configuration from Lifecycle Services
+# Import a configuration from Lifecycle Services
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS).
+This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) from the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).
 
-In this example, you will select the desired version of the ER configuration and import it for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the “Upload an ER configuration into Lifecycle Services” procedure. Access to LCS is also required for completion of these steps.
+In this example, you will select the desired version of the ER configuration and import it for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies. To complete these steps, you must first complete the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Access to LCS is also required.
 
-1. Go to Organization administration > Workspaces > Electronic reporting.
-2. Click Configurations.
+1. Sign in to the application by using one of the following roles:
 
-## Delete a shared version of data model configuration
-1. In the tree, select 'Sample model configuration'.
-    * The first version of a sample data model configuration has been created and published to LCS during the “Upload an ER configuration into Lifecycle Services” procedure. In this procedure, you will delete this version of the ER configuration. This version of a sample data model configuration will be imported later from LCS.  
+    - Electronic reporting developer
+    - System administrator
+
+2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+3. Select **Configurations**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the Asset library that the user wants to [access](../../lifecycle-services/asset-library.md#asset-library-support) to import ER configurations.
+>
+> You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance. If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS. To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.
+
+## Delete a shared version of a data model configuration
+
+1. On the **Configurations** page, in the configurations tree, select **Sample model configuration**.
+
+    You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). In this procedure, you will delete that version of the ER configuration. You will then import that version from LCS later in this topic.
+
 2. In the list, find and select the desired record.
-    * Select the version of this configuration that is in the ‘Shared’ status. This status indicates that the configuration has been published to LCS.  
-3. Click Change status.
-4. Click Discontinue.
-    * Change the status of the selected version from ‘Shared’ to ‘Discontinued’ to make it available for deletion.  
-5. Click OK.
+
+    For this example, select the version of the configuration that has a status of **Shared**. This status indicates that the configuration has been published to LCS.
+
+3. Select **Change status**.
+4. Select **Discontinue**.
+
+    By changing the status of the selected version from **Shared** to **Discontinued**, you make the version available for deletion.
+
+5. Select **OK**.
 6. In the list, find and select the desired record.
-    * Select the version of this configuration that has a status of ‘Discontinued’.  
-7. Click Delete.
-8. Click Yes.
-    * Note that the only draft version 2 of the selected data model configuration is available.  
+
+    For this example, select the version of the configuration that has a status of **Discontinued**.
+
+7. Select **Delete**.
+8. Select **Yes**.
+
+    Notice that the only draft version 2 of the selected data model configuration is now available.
+
 9. Close the page.
 
-## Import a shared version of data model configuration from LCS
-1. In the list, mark the selected row.
-    * Open the list of repositories for the ‘Litware, Inc.’ configuration provider.  
-2. Click Repositories.
-3. Click Open.
-    * Select the LCS repository and open it.  
-4. In the list, mark the selected row.
-    * Select the first version of the 'Sample model configuration' in the versions list.  
-5. Click Import.
-6. Click Yes.
-    * Confirm the import of the selected version from LCS .  
-    * Note that the information message (above the form) confirms the successful completion of the import of the selected version.  
-7. Close the page.
-8. Close the page.
-9. Click Configurations.
-10. In the tree, select 'Sample model configuration'.
-11. In the list, find and select the desired record.
-    * Select the version of this configuration that has a status of ‘Shared’.  
-    * Note that the shared version 1 of the selected data model configuration is available now as well.  
+## Import a shared version of a data model configuration from LCS
 
+1. Go to **Organization administration \> Workspaces \> Electronic reporting**.
+
+2. In the **Configuration providers** section, select the **Litware, Inc.** tile.
+
+3. On the **Litware, Inc.** tile, select **Repositories**.
+
+    You can now open the list of repositories for the Litware, Inc. configuration provider.
+
+4. Select **Open**.
+
+    For this example, select the **LCS** repository, and open it. You must have [access](#accessconditions) to the LCS project and to the Asset library that is accessed by the selected ER repository.
+
+5. In the list, mark the selected row.
+
+    For this example, select the first version of **Sample model configuration** in the version list.
+
+6. Select **Import**.
+7. Select **Yes** to confirm the import of the selected version from LCS.
+
+    An informational message confirms that the selected version was successfully imported.
+
+8. Close the page.
+9. Close the page.
+10. Select **Configurations**.
+11. In the tree, select **Sample model configuration**.
+12. In the list, find and select the desired record.
+
+    For this example, select the version of the configuration that has a status of **Shared**.
+
+    Notice that shared version 1 of the selected data model configuration is also available now.

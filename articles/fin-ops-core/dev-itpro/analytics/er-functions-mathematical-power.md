@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="POWER">POWER ER function</a>
+# POWER ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `POWER` function returns a *Real* value that represents the result of raisin
 
 ## Syntax
 
-```
+```vb
 POWER (number, power)
 ```
 

@@ -4,7 +4,7 @@
 title: Price simulation
 description: This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -13,18 +13,18 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SalesQuotationPriceSimulation
+ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -80,7 +80,7 @@ You create a quotation that has the following lines:
 
 The following table shows the quotation lines.
 
-|                            | Calculation                          | Result   |
+|    &nbsp;                  | Calculation                          | Result   |
 |----------------------------|--------------------------------------|----------|
 | Sales quantity             | 10 units + 12 units                  | 22 units |
 | Sales value in USD         | (10 × 15.32) + (12 × 13.75)          | 318.20   |
@@ -90,7 +90,7 @@ The following table shows the quotation lines.
 
 You run a price simulation and apply a 15-percent total discount for the whole quotation, or the quotation header. The following table shows the new totals of the quotation after the price simulation is run.
 
-|                                                      | Calculation                               | Result   |
+|     &nbsp;                                           | Calculation                               | Result   |
 |------------------------------------------------------|-------------------------------------------|----------|
 | Sales quantity                                       | 10 units + 12 units                       | 22 units |
 | Old sales value in USD                               | (10 × 15.32) + (12 × 13.75)               | 318.20   |
@@ -111,7 +111,7 @@ You create a quotation that has the following lines:
 
 The following table shows the quotation lines.
 
-|                                      | Calculation                          | Result   |
+|      &nbsp;                          | Calculation                          | Result   |
 |--------------------------------------|--------------------------------------|----------|
 | Sales quantity                       | 10 units + 12 units                  | 22 units |
 | Sales value in USD for BR-12         | 10 × 15.32                           | 153.20   |
@@ -129,7 +129,7 @@ The following table shows the quotation lines.
 
 You run a price simulation and apply a 10-percent total discount to the BR-12 units. The following table shows the new totals of the quotation after the price simulation is run for the single line item.
 
-|                                                   | Calculation                             | Result   |
+|    &nbsp;                                         | Calculation                             | Result   |
 |---------------------------------------------------|-----------------------------------------|----------|
 | Sales quantity                                    | 10 units + 12 units                     | 22 units |
 | Old sales value in USD for BR-12                  | 10 × 15.32                              | 153.20   |

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ALLITEMSQUERY">ALLITEMSQUERY ER function</a>
+# ALLITEMSQUERY ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ALLITEMSQUERY` function runs as a joined SQL query. It returns a new flatte
 
 ## Syntax
 
-```
+```vb
 ALLITEMSQUERY (path)
 ```
 
@@ -70,7 +70,7 @@ You define the following data sources in your model mapping:
 
 When you run the model mapping to call the **JourLines** data source, the following SQL statement is run:
 
-```
+```sql
 SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN
 CUSTINVOICETRANS T3 WHERE...
 ```

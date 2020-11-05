@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Ratings and reviews overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers ratings and reviews in Microsoft Dynamics 365 Commerce.
@@ -61,4 +61,4 @@ The ratings and reviews solution also provides a business intelligence (BI) temp
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
-[Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+[Sync product ratings in Dynamics 365 Commerce](sync-product-ratings.md)

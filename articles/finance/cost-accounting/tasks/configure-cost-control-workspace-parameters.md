@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
@@ -22,13 +22,13 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Configure cost control workspace parameters
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects, such as cost centers and product groups. The USP2 demo company was used to create this recording.
 

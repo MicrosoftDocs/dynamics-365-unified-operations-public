@@ -83,6 +83,26 @@
       }
     },
     "fileMetadata": {
+      "search.app":{
+        "finance/**/*.md": [
+          "Finance"
+        ],
+        "supply-chain/**/*.md": [
+          "SCM"
+        ],
+        "commerce/**/*.md": [
+          "Commerce"
+        ],
+        "human-resources/**/*.md": [
+          "HumanResources"
+        ],
+        "talent/**/*.md": [
+          "HumanResources"
+        ],
+        "fin-ops-core/**/*.md": [
+          "FinanceAndOperations"
+        ]
+      },
       "featureFlags": {
         "dev-itpro/**/*.md": [
           "show_learn_banner"
@@ -124,10 +144,32 @@
             "Dynamics 365",
             "Unified Operations",
             "Retail"
+        ],
+           "human-resources/**/**.md": [
+           "Dynamics 365",
+           "Unified Operations",
+           "Human Resources"
         ]
        },
+      "titleSuffix": {
+        "commerce/**.md": "Commerce | Dynamics 365",
+        "fin-ops-core/**.md": "Finance & Operations | Dynamics 365",
+        "fin-ops-core/fin-ops/hr/**.md": "Human Resources | Dynamics 365",
+        "finance/**.md": "Finance | Dynamics 365",                
+        "human-resources/**.md": "Human Resources | Dynamics 365",
+        "supply-chain/**.md": "Supply Chain Management | Dynamics 365",
+        "talent/**.md": "Talent | Dynamics 365"
+      },
       "breadcrumb_path": {
-        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"}
+        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"},
+      "ms.search.scope" : {
+        "fin-ops-core/dev-itpro/data-entities/dual-write/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/dev-ref/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-ref/system-classes/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-ref/xpp-data/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-tools/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/extensibility/**/**.md": "Operations, Developer"
+        }
     },
     "template": [],
     "dest": "d365F-O",

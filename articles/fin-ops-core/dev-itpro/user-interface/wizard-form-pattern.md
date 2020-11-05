@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14671
@@ -101,7 +101,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **WrkCtrBulkResReqEditWizard** 
 
-[![Wizard example](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
+![Wizard example](./media/wizard2.png)
 
 ## Appendix
 ### Frequently asked questions

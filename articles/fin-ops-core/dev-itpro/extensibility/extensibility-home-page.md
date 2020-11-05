@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -33,9 +32,9 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance, Supply Chain, and Retail are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
+Dynamics 365 Finance, Supply Chain, and Commerce are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
 
-Extensibility is the only customization framework in Finance, Supply Chain, and Retail. Overlayering isn't supported.
+Extensibility is the only customization framework in Finance, Supply Chain, and Commerce. Overlayering isn't supported.
 
 ## Introduction
 
@@ -56,7 +55,6 @@ The topics in this section will help you start to build extensions. They will al
 + [Migrate from overlayering to extensions](migrate-overlayer-extension.md)
 + [Customize model elements through extension](customize-model-elements-extensions.md)
 + [Customize through extension and overlayering](customization-overlayering-extensions.md)
-<!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## Fundamentals on extensions
 
@@ -83,7 +81,7 @@ This section includes "How do I?" topics that explain how to customize specific 
 + [Customize application startup by using delegates](startup-customizations.md)
 
 ### Tables
-+ [Modify existing fields in a table through extension(modify-existing-field.md)
++ [Modify existing fields in a table through extension](modify-existing-field.md)
 + [Add fields to tables through extension](add-field-extension.md)
 + [Add indexes to tables through extension](add-index.md)
 + [Add relations to tables through extension](add-relation.md)
@@ -98,6 +96,7 @@ This section includes "How do I?" topics that explain how to customize specific 
 
 ### Others
 + [Extending decimal point precision for selected data types](decimal-point-precision.md)
++ [Add new inventory dimensions through extension](inventory-dimensions.md)
 
 ### Reports
 + [Extend the list of Electronic reporting (ER) functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
@@ -107,16 +106,13 @@ This section includes "How do I?" topics that explain how to customize specific 
 
 Information about customization is also shared through blogs where various topics are discussed. This section includes reference to some of these blogs.
 
-+ [Extending Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
-+ [Extending class state](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-class-state/)
-+ [Extension methods](https://blogs.msdn.microsoft.com/mfp/2015/12/15/x-in-ax7-extension-methods/)
++ [Extending Dynamics 365 for Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extending-dynamics-365-for-operations)
++ [Extension methods](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-extension-methods/)
 + [Extensible base enumerations](https://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
-+ [Static event subscription](https://blogs.msdn.microsoft.com/mfp/2015/12/10/x-in-ax7-static-event-subscription/)
-+ [Responding through delegates](https://blogs.msdn.microsoft.com/mfp/2017/01/31/responding-through-delegates/)
-+ [Subscribing to onValidatingWrite](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
-+ [Extending inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
-+ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
-+ [Extensible X++ - Method Signatures](https://blogs.msdn.microsoft.com/mfp/2017/08/31/extensible-x-method-signatures/)
++ [Static event subscription](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-static-event-subscription/)
++ [Subscribing to onValidatingWrite](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/subscribing-to-onvalidatingwrite/)
++ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://community.dynamics.com/ax/b/axinthefield/posts/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework)
++ [Extensible X++ - Method Signatures](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-method-signatures/)
 
 ## How do I create an extensible solution?
 
@@ -133,4 +129,8 @@ This section includes some best practices on how to create/make your solution ex
 + [Attributes that make methods extensible](extensibility-attributes.md)
 
 ## Breaking changes
-When you make your solution extensible, you also help guarantee that you won't break those extension points later. For pointers that can help you avoid breaking your consumers, see [Breaking changes](breaking-changes.md).
+
+When you make your solution extensible, you also help guarantee that you won't break those extension points later. 
+
++ For pointers that can help you avoid breaking your consumers, see [Breaking changes](breaking-changes.md).
++ The [compatibility checker tool](compatibility-checker-tool.md) can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility.

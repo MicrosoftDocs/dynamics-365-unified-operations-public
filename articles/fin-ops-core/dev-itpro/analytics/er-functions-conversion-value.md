@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="VALUE">VALUE ER function</a>
+# VALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `VALUE` function returns a *Real* value that is converted from the specified
 
 ## Syntax
 
-```
+```vb
 VALUE (text)
 ```
 

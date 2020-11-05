@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="COUNT">COUNT ER function</a>
+# COUNT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `COUNT` function returns an *Integer* value that represents the number of re
 
 ## Syntax
 
-```
+```vb
 COUNT (list)
 ```
 

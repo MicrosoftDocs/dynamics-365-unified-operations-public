@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ISEMPTY">ISEMPTY ER function</a>
+# ISEMPTY ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified li
 
 ## Syntax
 
-```
+```vb
 ISEMPTY (list)
 ```
 

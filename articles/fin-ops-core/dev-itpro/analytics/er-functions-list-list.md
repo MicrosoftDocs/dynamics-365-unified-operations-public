@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LIST">LIST ER function</a>
+# LIST ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `LIST` function returns a *Record list* value that consists of a new list of
 
 ## Syntax
 
-```
+```vb
 LIST (record 1 [, record 2, …, record N])
 ```
 

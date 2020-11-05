@@ -75,7 +75,7 @@ We have added a new API on common **allowIndexHint** with a default behavior of 
 
 If there is an existing X++ code that specifies index hint, there is no change to the current behavior until the new API is invoked. See the following example for details.
 
-```
+```xpp
 public void testIndexHintRegularTable()
 {
     SysDataAccessDBLogTestTable tbl1;

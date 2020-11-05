@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FORMAT">FORMAT ER function</a>
+# FORMAT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `FORMAT` function returns the specified string as a *String* value after it 
 
 ## Syntax
 
-```
+```vb
 FORMAT (string, argument 1[, argument 2, …, argument N])
 ```
 
@@ -86,7 +86,7 @@ In the Electronic reporting (ER) format that is designed to generate an electron
 
 Here is the expression that can be designed.
 
-```
+```vb
 FORMAT (CONCATENATE (@"SYS70894", ". ", @"SYS18389"), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, "d"))
 ```
 
@@ -101,7 +101,7 @@ If the same report is processed for the **Litware Retail** customer on December 
 >[!NOTE]
 > The following syntax is applied in ER formulas for labels:
 >
-> - **For labels from resources in the Microsoft Dynamics 365 Finance app:** **@X**, where **X** is the label ID in the Application Object Tree (AOT)
+> - **For labels from resources in the Microsoft Dynamics 365 Finance app:** **\@X**, where **X** is the label ID in the Application Object Tree (AOT)
 > - **For labels that reside in ER configurations:** **@"GER_LABEL:X"**, where **X** is the label ID in the ER configuration
 
 ## Additional resources

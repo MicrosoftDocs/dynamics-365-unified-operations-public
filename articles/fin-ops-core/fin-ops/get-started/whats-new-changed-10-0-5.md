@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes features that are either new or changed in Finance and Operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
 
 
-To learn about the new features and changes in the latest releases of Dynamics 365 Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.5](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5).
+To learn about the new features and changes in the latest releases of Dynamics 365 Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.5](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5).
 
 
 ## Revenue recognition
@@ -76,7 +76,7 @@ This feature helps you control the currency (either the accounting or reporting 
 
 You can now define the currency gender. On **Currencies** page, select **Declension**. In the **Gender** field, select **Masculine**, **Feminine**, or **Neuter**. This parameter may have influence on declension of the amount written in text in local language on a Cash order. For example, if the amount of 1,01 EUR is written in English text as *One euro 01 cent* on a cash order, when you set up **Gender** for EUR currency as **Neuter**, this amount will be translated to Czech language and written on a cash order as *Edno euro 01 cent*.
 
-For information about existing functionality, see [Update how amounts are displayed on reports and documents](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-amount-printing-forms).
+For information about existing functionality, see [Update how amounts are displayed on reports and documents](https://docs.microsoft.com/dynamics365/finance/localizations/emea-amount-printing-forms).
 
 ## Cash control (Public Sector)
 
@@ -91,7 +91,7 @@ You can validate whether the default dimensions for a forecast position are corr
 ## Deferred put
 The deferred processing functionality lets warehouse workers continue to do other work while the put operation is processed in the background. Deferred processing is useful when many work lines must be processed and the worker can let that work be processed asynchronously. It's also useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect the user's productivity.
 
-For more information, see [Deferred processing of warehouse work](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)
+For more information, see [Deferred processing of warehouse work](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)
 
 ## Journal unlock
 A new button is available on the journal page to unlock a journal that has a status of **Locked by system** set to Yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal Unlock button** on the **Feature management** page.

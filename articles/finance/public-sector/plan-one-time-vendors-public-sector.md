@@ -94,7 +94,7 @@ The following table show the fields that the import file must contain. Each fiel
 | Field                                                | Details                                  |
 |------------------------------------------------------|------------------------------------------|
 | Number                                               | Accounting distribution line number      |
-| Ledger account                                       |                                          |
+| Financial dimensions                                 | If the file you import has financial dimensions, you need to include all of the financial dimensions with the proper naming, otherwise an error message will appear stating that the ledger dimension is invalid. You’ll then need to either correct the financial dimensions or remove the columns from the file.                                         |
 | Percent                                              | Decimal values are allowed.              |
 
 

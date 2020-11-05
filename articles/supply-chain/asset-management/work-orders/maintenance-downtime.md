@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Maintenance downtime
-description: This topic describes maintenance downtime in Asset Management.
+title: Maintenance downtime for work orders
+description: This topic describes how to create maintenance downtime registrations on the asset that is selected on a work order.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Maintenance downtime
+# Maintenance downtime for work orders
 
 [!include [banner](../../includes/banner.md)]
 

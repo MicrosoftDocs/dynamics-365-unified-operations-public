@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30141
 ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -221,9 +221,11 @@ This section explores the control criteria in more detail.
 
 -   To enable the form developer to determine the control layout and size, set the width and height that are specified by the form developer on the control by using the $dyn.layout.sizing API, as shown in the following code. This is standard code that should be applied to all HTML control templates.
 
-        <div id="MyControl" data-dyn-bind="
-        sizing: $dyn.layout.sizing($data)>
-        </div>
+    ```xml
+    <div id="MyControl" data-dyn-bind="
+    sizing: $dyn.layout.sizing($data)>
+    </div>
+    ```
 
 #### Task Recorder recording support
 

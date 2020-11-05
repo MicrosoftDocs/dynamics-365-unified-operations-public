@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/30/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,6 +82,10 @@ If you're using the BYOD feature for integration with a business intelligence (B
     In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name in Azure portal. The following illustration shows an example of a connection string.
 
     ![Connection string on the New record page](media/NewRecord.png)
+    
+    
+> [!NOTE]
+> The default extension field shown in the image above does not apply to BYOD.
 
 4. Select **Validate**, and make sure that the connection is successful.
 
@@ -162,7 +166,7 @@ The same job can also be used to export data from all companies. In prior to Pla
 
 > [!NOTE]
 > Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with smaller number of entities is recommended.
-
+>
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is discouraged. You must use the **Export in batch** option.
 
 ### Incremental export
@@ -207,15 +211,17 @@ You might face this limitation especially when you try to incrementally export r
 
 **Issue** - Export to BYOD fails with an SSIS exception shown below.
 
-    An OLE DB error has occurred. Error code: 0x80004005.
+```Console
+An OLE DB error has occurred. Error code: 0x80004005.
 
-    An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "Communication link failure".
+An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "Communication link failure".
 
-    An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "TCP Provider: An existing connection was forcibly closed by the remote host.
+An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "TCP Provider: An existing connection was forcibly closed by the remote host.
 
-    Failed to open a fastload rowset for <entityStaging>. Check that the object exists in the database.
+Failed to open a fastload rowset for <entityStaging>. Check that the object exists in the database.
 
-    OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
+OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
+```
 
 **Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture)
 

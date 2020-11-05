@@ -4,7 +4,7 @@
 title: Change the ownership of consignment inventory based on production demand
 description: This procedure shows how to change the owner of consignment inventory from the vendor to your legal entity when there is demand for the inventory in production. 
 author: perlynne
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/14/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Change the ownership of consignment inventory based on production demand
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to change the owner of consignment inventory from the vendor to your legal entity when there is demand for the inventory in production. This change of ownership is done by creating and posting an inventory ownership change journal. The ownership change journal lines can be created manually or, as shown in this recording, based on existing production demand. Typically, a shop floor supervisor performs this task. You can use this procedure in the USMF demo data company or on your own data. If you're using your own data, make sure that you have the following prerequisites: an inventory journal name that has been set up for inventory ownership change, physically recorded vendor-owned on-hand items, and one or more production order lines for the material. This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
 

@@ -81,7 +81,7 @@ The following walkthrough shows the process of expanding an existing application
 8. **Add a new report handler (X++) class to the project.** Give the class a name that appropriately describes that it's a handler for an existing application report. For this example, rename the class **FERentalsByCustomerHandler** to distinguish it from other report handlers.
 9. **Add a PostHandler method to begin to use your custom report.** In this example, extend the controller class in the standard solution, **FMRentalsByCustController**, by using the following code.
 
-    ```
+    ```xpp
     class FERentalsByCustomerHandler
     {
         [PostHandlerFor(classStr(FMRentalsByCustController), staticMethodStr(FMRentalsByCustController, construct))]
@@ -99,7 +99,7 @@ The following walkthrough shows the process of expanding an existing application
 
     - **Option 1: Add a data processing post-handler.** Apply this technique for bulk insert operations that use a single pass over the result set of the standard solution. Here is the code that expands the data set by using a table lookup.
 
-        ```
+        ```xpp
         class FERentalsByCustomerHandler
         {
             [PostHandlerFor(classStr(FMRentalsByCustDP), methodstr(FMRentalsByCustDP, processReport))]
@@ -122,7 +122,7 @@ The following walkthrough shows the process of expanding an existing application
 
     - **Option 2: Add a temp table Inserting event.** Apply this technique for row-by-row calculations. Here is the code that expands the data set by using a table lookup.
 
-        ```
+        ```xpp
         class FERentalsByCustomerHandler
         {
             [DataEventHandlerAttribute(tableStr(TmpFMRentalsByCust), DataEventType::Inserting)]

@@ -5,7 +5,7 @@ title: Test data actions with mocks
 description: This topic describes how to test data actions with mock data.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,42 +30,23 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Test data actions with mocks
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to test data actions with mock data.
 
 ## Overview
 
-
-By mocking data actions in Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. Action mocks are useful if you want to test your module without invoking the actual action.
+By mocking data actions in Microsoft Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. An action mock is useful if you want to test your module without invoking the actual action. You will have to use this approach if you haven't configured your Commerce server (**MSDyn365Commerce_BASEURL** property) in the .env file. For more information about .env files, see [Configure a development environment (.env) file](configure-env-file.md).
 
 ## Action mock structure
 
-Action mocks represent the expected output data of an action. They should be created by the action developer.
+To create a data action mock, create a new file under the **/src/module/&lt;MODULE_NAME&gt;/mocks/** directory for your module. The name of the new file should be in the format **&lt;MODULE\_MOCK\_NAME&gt;.actionmock.json**, as in the following example.
 
-The following example shows the placement of the action mock file.
+```/src/modules/product-feature/mocks/myModuleMock.actionmock.json```
 
-```
-src
-|__actions
-|__modules
-|__mocks
-|__|__my-package.actionmock.json
-```
+After the file is created, you can simulate the data action return object inside the file by specifying the **CasheObjectType** and **CacheKey** values that are defined in the data action. The **CacheKey** value can be set to "**&#42;**" to accept any cache key. For more information, see [Data actions](data-actions.md).
 
-Alternatively, the mock file can be put under a module.
-
-```
-src
-|__actions
-|__modules
-|__|__MODULE_NAME
-|__|__|__mocks
-|__|__|__|__MODULE_NAMEMock.actionmock.json
-```
-
-The following example shows how the MODULE\_NAMEMock.actionmock.json file should be structured.
+The following example shows how the **&lt;MODULE\_MOCK\_NAME&gt;.actionmock.json** file should be structured.
 
 ```json
 {
@@ -77,29 +58,79 @@ The following example shows how the MODULE\_NAMEMock.actionmock.json file should
 }
 ```
 
-If no **CacheKey** value is specified, all actions that have the corresponding **CacheObjectType** value receive the mock output.
+If no **CacheKey** value is specified, or if "**&#42;**" is specified, all actions that have the corresponding **CacheObjectType** value will receive the mock output.
 
 ## Example
 
-The following example shows a data action mock that returns product data.
+The following example shows a module definition file that uses a data action, and the corresponding data action mock that returns product data.
 
+Example module definition file:
+
+```json
+{
+    "$type": "contentModule",
+    "friendlyName": "Product Feature",
+    "name": "product-feature",
+    "description": "Feature module used to highlight a product.",
+    "categories": [
+        "storytelling"
+    ],
+    "tags": [
+        ""
+    ],
+    "dataActions": {
+        "products": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products",
+            "runOn": "server"
+        }
+    },
+    "config": {
+        "imageAlignment": {
+            "friendlyName": "Image Alignment",
+            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "type": "string",
+            "enum": {
+                "left": "Left",
+                "right": "Right"
+            },
+            "default": "left",
+            "scope": "module",
+            "group": "Layout Properties"
+        }
+    },
+    "resources": {
+        "resourceKey": {
+            "comment": "resource description",
+            "value": "resource value"
+        }
+    }
+}
 ```
+
+Example module mock file:
+
+```json
 [
     {
-        "CacheObjectType": "Product",
+        "CacheObjectType": "SimpleProduct",
         "CacheKey": "*",
         "Mock": {
             "RecordId": 22565423455,
             "ItemId": "2101",
-            "Name": "Men's Wingtip Shoe",
-            "Description": "Genuine leather crafted to perfection.",
+            "Name": "Retro Horn-Rimmed Keyhole Sunglasses",
+            "Description": "High-quality with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
             "ProductTypeValue": 3,
             "DefaultUnitOfMeasure": "Ea",
-            "BasePrice": 129,
-            "Price": 129,
-            "AdjustedPrice": 103.2,
+            "BasePrice": 15,
+            "Price": 15,
+            "AdjustedPrice": 14,
             "MasterProductId": null,
-            "PrimaryImageUrl": "https://renderingdynrush73-1e0adbc991eb8c2f0ret.cloud.retail.dynamics.com/MediaServer/Products/2101_000_001.png"            
+            "Components": null,
+            "Dimensions": null,
+            "Behavior": null,
+            "LinkedProducts": null,            
+            "PrimaryImageUrl": "https://bit.ly/33cMGxr",
+            "ExtensionProperties": null
         }
     }
 ]
@@ -112,7 +143,7 @@ The following example shows a data action mock that returns product data.
 
 To use an action mock in your module preview, include the query string parameter for the action mock **actionMock=MODULE_NAME:MOCK_FILE_NAME**, as shown in the following example.
 
-`https://localhost:4000/modules?type=productFeature&actionMock=productFeature:myModuleMock`
+`https://localhost:4000/modules?type=product-feature&actionMock=product-feature:myModuleMock`
 
 Here is the syntax of the query string parameter.
 
@@ -123,6 +154,8 @@ If no action mock file name is specified, the package name is used to search for
 ## Additional resources
 
 [Data actions overview](data-actions.md)
+
+[Data action cache options](data-action-cache.md)
 
 [Page load data actions](page-load-data-action.md)
 

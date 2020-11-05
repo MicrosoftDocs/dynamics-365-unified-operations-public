@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 12/11/2019
+ms.date: 06/19/2020
 
 ms.topic: article
 ms.prod: 
@@ -57,6 +57,9 @@ For more information about OData, see the following webpages.
 
 The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
 
+> [!NOTE]
+> OData actions added via extensions are currently not supported.
+
 ## Addressing
 The following table describes the resources and the corresponding URLs in the Fleet Management sample.
 
@@ -72,7 +75,8 @@ The following table describes the resources and the corresponding URLs in the Fl
 ## OData services
 We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology.
 
-<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
+> [!NOTE]
+> When working with data entities using OData, all fields in the entity key must be provided to make a successful OData call.
 
 Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
 
@@ -88,10 +92,10 @@ The following are the high-level features that are enabled for the OData service
     - $orderby
     - $skip
     - $top
-    - $expand
+    - $expand (only first-level expansion is supported)
     - $select
 
-- The OData service supports serving driven paging with a maximum page size of 1,000.
+- The OData service supports serving driven paging with a maximum page size of 10,000.
 
 For more information, see: [OData actions that are bound to entities](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).
 
@@ -201,7 +205,7 @@ Links between OData entities are described by a navigation property. Navigation 
 #### Adding actions on OData entities
 Actions let you inject behaviors into the data model. To add actions, add a method to the updatable view, and decorate that method with specific attributes. Here is an example.
 
-```
+```xpp
 [SysODataActionAttribute("CalcMaintenanceDuration", true)]
 public int CalculateMaintenanceDuration()
 {
@@ -212,17 +216,16 @@ public int CalculateMaintenanceDuration()
 
 In this example, the **SysODataActionAttribute** class decorates the **CalculateMaintenanceDuration** method that is exposed as an action. The first argument of the attribute is the publicly exposed name of the action, and the second argument indicates whether this action is always available. Methods that are exposed as actions can return any primitive type or another public updatable view. After this method is exposed, it appears in the OData $metadata. Here is an example.
 
-```
+```xml
 <Action Name="CalcMaintenanceDuration" IsBound="true">
     <Parameter Name="ViewMaintenance" Type="Microsoft.Dynamics.AX.Resources.ViewMaintenance"/>
     <ReturnType Type="Edm.String" />
 </Action>
-
 ```
 
 The following example of an OData action takes in a parameter and returns a list.
 
-```
+```xpp
 [SysODataActionAttribute("GetColors", true),
     SysODataCollectionAttribute("return", Types::Record, "CarColor")]
 public List GetColorsByAvailability(boolean onlyAvailableVehicles)
@@ -258,15 +261,15 @@ The OData protocol supports many similar filtering and querying options on entit
 ## Using Enums
 Enums are under namespace **Microsoft.Dynamics.DataEntities**. Enums can be included in an OData query is by using the following syntax.
 
-Microsoft.Dynamics.DataEntities.Gender'Unknown'
+`Microsoft.Dynamics.DataEntities.Gender'Unknown'`
 
-Microsoft.Dynamics.DataEntities.NoYes'Yes'
+`Microsoft.Dynamics.DataEntities.NoYes'Yes'`
 
 An example query for using the above enum values is shown below.
 
-https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'
+`https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'`
 
-https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'
+`https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'`
 
 The operations supported for enums are **eq** and **ne**.
 
@@ -280,7 +283,7 @@ The OData batch framework uses *changesets*. Each changeset contains a list of r
 
 The **SaveChangesOptions.BatchWithSingleChangeset** option in **SaveChanges()** helps guarantee that all requests are bundled into a single changeset.
 
-```
+```xpp
 public static void CreateProductColors(Resources context)
 {
     var productColorsCollection = new DataServiceCollection<ProductColor>(context);
@@ -302,7 +305,7 @@ When you create a new record by using an OData client, as shown in example 1, pr
 
 **Example 1**
 
-```
+```xpp
 public static void CreateVendor(Resources context)
 {
     var vendorCollection = new DataServiceCollection<Vendor>(context);
@@ -315,7 +318,7 @@ public static void CreateVendor(Resources context)
 
 **Example 2**
 
-```
+```xpp
 public static void CreateVendor(Resources context)
 {
     var vendorCollection = new DataServiceCollection<Vendor>(context);
@@ -329,7 +332,10 @@ public static void CreateVendor(Resources context)
 ```
 
 ### Handling duplicate names between enums and entities in metadata
-There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in gitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
+There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in GitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
 
 ### Array fields
 OData does not support array fields in entities. This must be taken into consideration when designing entities that will be used with OData.
+
+### After restarting AOS, the first OData call may take a long time to process
+The first OData call processed by an AOS that was restarted may take a long time to process because the metadata is not being cached. This latency can be avoided by warming up OData on AOS startup. For more details, see  [Build OData metadata cache when the AOS starts](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup).

@@ -22,13 +22,13 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up master data for inclusion of deductible expenses for multiple posting layers
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through creating fixed asset rules with required master data for inclusion of deductible expenses for multiple posting layers. Before you can complete this procedure, the Fixed Assets configuration key must be selected. This procedure was created using the demo data company JPMF.
 

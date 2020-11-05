@@ -4,7 +4,7 @@
 title: Arrival overview
 description: This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 274363

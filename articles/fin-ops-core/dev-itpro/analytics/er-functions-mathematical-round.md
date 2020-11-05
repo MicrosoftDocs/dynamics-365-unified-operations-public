@@ -5,7 +5,7 @@ title: ROUND ER function
 description: This topic provides information about how the ROUND Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUND">ROUND ER function</a>
+# ROUND ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ROUND` function returns the specified number as a *Real* value after it has
 
 ## Syntax
 
-```
+```vb
 ROUND (number, decimals)
 ```
 
@@ -62,7 +62,7 @@ The resulting numeric value.
 
 If the value of the `decimals` argument is more than 0 (zero), the specified number is rounded to that many decimal places.
 
-If the value of the `decimals` argument is **0** (zero), the specified number is rounded to the nearest integer.
+If the value of the `decimals` argument is **0** (zero), the specified number is rounded to the nearest even integer.
 
 If the value of the `decimals` argument is less than 0 (zero), the specified number is rounded to the left of the decimal point.
 
@@ -73,6 +73,10 @@ If the value of the `decimals` argument is less than 0 (zero), the specified num
 ## Example 2
 
 `ROUND (1200.767, -3)` rounds to the nearest multiple of 1,000 and returns **1000**.
+
+## Example 3
+
+`ROUND (1200.5, 0)` rounds to the nearest even integer and returns **1200**, while `ROUND (1201.5, 0)` does the same and returns **1202**.
 
 ## Additional resources
 

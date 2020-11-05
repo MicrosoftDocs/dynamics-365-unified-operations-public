@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUNDUP">ROUNDUP ER function</a>
+# ROUNDUP ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ROUNDUP` function returns the specified number as a *Real* value after it h
 
 ## Syntax
 
-```
+```vb
 ROUNDDOWN (number, decimals)
 ```
 

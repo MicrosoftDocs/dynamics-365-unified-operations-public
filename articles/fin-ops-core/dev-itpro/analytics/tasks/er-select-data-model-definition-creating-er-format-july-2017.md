@@ -28,16 +28,16 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Select data model definitions when you create formats
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active. 
 
-This procedure shows how a model’s root item can be selected as a data model definition for inserting an Electronic reporting (ER) format configuration that is designed to generate electronic documents. In this procedure, you will add a new ER format configuration for the sample company Litware, Inc. 
+This procedure shows how a model's root item can be selected as a data model definition for inserting an Electronic reporting (ER) format configuration that is designed to generate electronic documents. In this procedure, you will add a new ER format configuration for the sample company Litware, Inc. 
 
 This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them. The steps can be completed by using any dataset.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don’t see this configuration provider, complete the steps in the procedure, Create a configuration provider and mark it as active.  
+    * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don't see this configuration provider, complete the steps in the procedure, Create a configuration provider and mark it as active.  
 2. Click Reporting configurations.
 
 ## Add a new ER data model configuration
@@ -84,7 +84,7 @@ This procedure is intended for users who have the System administrator or Electr
 1. Click Designer.
     * Use the ER designer to specify the model mappings for the required root items.  
 2. Click Designer.
-    * Simulate setting of selected model mapping for the selected model’s root item.  
+    * Simulate setting of selected model mapping for the selected model's root item.  
 3. In the tree, select 'Dynamics 365 for Operations\Table records'.
 4. Click Add root.
 5. In the Name field, type 'Ledger'.
@@ -100,6 +100,6 @@ This procedure is intended for users who have the System administrator or Electr
 2. Click Create configuration to open the drop dialog.
 3. In the New field, enter 'Format based on data model Payment model (fictitious)'.
 4. In the Data model definition field, enter or select a value.
-    * Note that now only one root item is available to map to the application data sources. When at least one model mapping is introduced, only the model’s root items that are mapped to application data sources can be selected as a model definition while the ER format is added.   
+    * Note that now only one root item is available to map to the application data sources. When at least one model mapping is introduced, only the model's root items that are mapped to application data sources can be selected as a model definition while the ER format is added.   
 5. Close the page.
 

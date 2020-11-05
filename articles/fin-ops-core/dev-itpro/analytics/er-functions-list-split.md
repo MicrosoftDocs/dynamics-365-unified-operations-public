@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="SPLIT">SPLIT ER function</a>
+# SPLIT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `SPLIT` function splits the specified input string into substrings and retur
 
 ## Syntax 1
 
-```
+```vb
 SPLIT (input, length)
 ```
 
@@ -46,7 +46,7 @@ This syntax is used to split the specified input string into substrings, each of
 
 ## Syntax 2
 
-```
+```vb
 SPLIT (input, delimiter)
 ```
 

@@ -25,7 +25,7 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Canada
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: kfend
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: 10.0.6
 
 
 # Canada GST/HST Internet File Transfer 
+
+[!include [banner](../includes/banner.md)]
 
 Taxpayers in Canada use form GST 34 to manually file Goods and Services Tax or Harmonized Sales Tax (GST/HST) returns and to remit payments to the Canada Revenue Agency (CRA). However, the CRA allows taxpayers to file and remit taxes calculated on acquired fixed assets electronically. You can file GST/HST returns electronically using any of the following methods:
 

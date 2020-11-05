@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Establish customer payment fees
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Create payment fees for customer payments.
 
@@ -46,7 +46,7 @@ This task uses the USMF demo company.
 10. In the **Groupings** field, select either Table, Group or All to define which bank accounts will be assessed this fee. If you select All, all bank accounts could be assessed this fee.  If you select Table, only the bank account you select could be assessed this fee. If you select Group, only the bank accounts in the selected bank group could be assessed this fee.  
 11. In the **Bank relation** field, select either a bank group or a bank account. If you selected Table, the lookup will display bank accounts. If you selected Group, the lookup will display bank groups.  
 12. In the list, click the link in the selected row.
-13. In the **Mehtod of payment** field, select the Method of payment for which this fee will be assessed. For example, you may assess a fee to your customers if they send payments as a check, rather than as an electronic payment.  
+13. In the **Method of payment** field, select the Method of payment for which this fee will be assessed. For example, you may assess a fee to your customers if they send payments as a check, rather than as an electronic payment.  
 14. In the list, find and select the desired record.
 15. If relevant, in the **Payment currency** field, enter a payment currency. The payment currency is used as an additional criteria for whether the fee will be assessed.  For example, your bank may charge an extra fee for payments received in USD currency, since they normally only transact in EUR currency.  
 16. Select whether the fee will be a percent, amount or interval.

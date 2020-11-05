@@ -2,10 +2,10 @@
 # required metadata
 
 title: Regulatory updates
-description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 Finance.
+description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
 
@@ -46,44 +46,52 @@ Regulatory updates that are released as part of the monthly updated are indicate
 
 For the latest regulatory update plans, refer to the following table.   
 
-|Planned release date|Release version|Country|Regulatory update|
+|Country|Planned release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------|
-|      Brazil        |   December 2019       | 10.0.8      |   Sped Fiscal Layout 014 |
-|      Brazil         |   November - August 2019       | 10.0.7, 10.0.6HF, 10.0.5HF, 10.0.4HF      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
-|      Brazil          |   November - August 2019       | 10.0.7, 10.0.6      |   DRCST declaration SC   |
-|      Brazil         |   August 2019       | 10.0.6HF, 10.0.5HF, 10.0.4HF      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
-|      Brazil          |   August 2019      | 10.0.6HF, 10.0.5HF, 10.0.4HF     |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
-|      Brazil          |   August 2019      | 10.0.6, 10.0.5HF     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
-|      Brazil          |   August 2019      | 10.0.6        |   Tax statement CAT 42/18    |
-|      Brazil          |   July 2019     | 10.0.5, 10.0.4HF, 10.0.2HF      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00  |
-|      Brazil          |   July 2019     | 10.0.5      |   Sped contributions practical guide 1.31. new guidance    |
-|      Brazil          |   May 20191     | 10.0.4      |   Incoming fiscal document 66    |
-|      Brazil          |   May 2019      | 10.0.4      |   NF-e Decree 54.308/18 - RS    |
-|      Brazil          |   May 2019      | 10.0.4      |   NF-e and NFC-e - Resolution 13/2019 and Ordinance SUCIEF 55/2019- RJ - new conditions for exempt tags output in NF-e    |
-|      India          |   August 2019     | 10.0.6       |   Retail: Management of customer registration numbers from POS for India    |
-|      India          |   May 2019     | 10.0.4      |   Display of "Place of supply" and "State" in the GST Tax Invoice    |
-|      Italy          |   December 2019       | 10.0.8      |   Changes in VAT management by D.L. 119 of 23 Oct 2018: Yearly tax communication |
-|      Italy         |   November 2019       | 10.0.7      |   Changes in VAT management by D.L. 119 of 23 Oct 2019: Quarterly VAT communication  ("Lipe 2018")    |
-|      Italy         |   November 2019     | 10.0.7      |   Retail - Managing customer information in POS |
-|      Italy         |   November 2019      | 10.0.7      |   Retail - Printing customer information in fiscal receipt |
-|      Italy         |   November - August 2019     | 10.0.7, 10.0.6      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations  |
-|      Italy          |   August 2019      | 10.0.6      |   Date of VAT register    |
-|      Italy          |   August 2019     | 10.0.6      |   VAT management by Date of VAT register    |
-|      Japan          |   December - November 2019     | 10.0.8, 10.0.7HF       |   Consumption tax rate change and reduced tax rate is introduced (Consumption tax report) |
-|      Japan         |   November 2019      | 10.0.7       |   Consumption rate change and reduced tax rate is introduced (invoice layouts) |
-|      Japan          |   November 2019     | 10.0.6HF     |   Consumption tax rate change and reduced tax rate is introduced (Consumption tax report)  |
-|      Japan          |   August 2019      | 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      |   Consumption tax rate change and reduced tax rate is introduced    |
-|      Mexico          |   December - October 2019    | 10.0.8, 10.0.7HF, 10.0.6HF        |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
-|     Mexico          |   November - September 2019       | 10.0.7, 10.0.6HF      |   Updating Rule 2.7.2.9 - Using the time zone of ZIP code of the establishment that is issuing the CFDI document |
-|      Mexico           |   December - October 2019      | 10.0.8, 10.0.7HF, 10.0.6HF     |   Code validation in Products and Services catalog |
-|      Mexico         |   July 2019     | 10.0.5      |   MX -CFDI 3.3 - The detail of IEPS tax transactions in XML should be optional depending on customer profile    |
-|      Mexico          |   May 2019     | 10.0.4      |   DIOT third party declaration - changes in layout 2019    |
-|      Poland          |   November - October 2019     | 10.0.7, 10.0.6HF Poland     |   Mandatory split payment - 10.0.7 |
-|      Singapore           |   December 2019     | 10.0.7      |   GST return report |
-|      Spain          |   August - July 2019      | 10.0.5, 10.0.4HF      |   Spain: SII: Validation rules change from October 1, 2019    |
-|      United Kingdom          |   December 2019       | 10.0.8      |   Making Tax Digital (MTD) - Consent of system administrator to transmit information outside of D365 using the integration with HMRC |
-|      United Kingdom          |   November 2019     | 10.0.7     |   Making Tax Digital - VAT return report creation for companies reporting as VAT group within the same system database v.10 |
-|      United Kingdom          |   June - July 2019      | 10.0.5     |   Making Tax Digital - Fraud prevention parameters about originating device - 10.0.5    |
+|      Austria         |   September 2020      | 10.0.15      |   VAT declaration format U30 has been updated for 2020 reporting   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Reverse charge   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Invoice issue deadline (GCC)   |
+|      Bahrain         |   July 2020      | 10.0.12      |   VAT declaration for Bahrain   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Sales invoices for Bahrain   |
+|      Brazil         |   August 2020      | 10.0.14, 10.0.13, 10.0.12      |   ADRCST declaration PR   |
+|      Brazil         |   March 2020      | 10.0.11      |   SPED ECD layout 8   |
+|      Brazil         |   April 2020      | 10.0.11      |   Technical note NT2019.001 v1.40   |
+|      Brazil         |   May 2020      | 10.0.12, 10.0.11HF      |   ADCR ICMS-ST statement for Parana state   |
+|      Brazil         |   July 2020 - May 2020      | 10.0.13, 10.0.12, 10.0.11      |   SPED ECF layout 6   |
+|      Brazil         |   July 2020      | 10.0.13, 10.0.12HF      |   SPED Fiscal - Record C176 - RS state   |
+|      Czech Republic      |   July 2020      | 10.0.13      |   VAT control statement changes in XML schema (invoice listing)   |
+|      Czech Republic         |   July 2020      | 10.0.13      |   VAT declaration in XML, VAT declaration preview in Excel, and VAT control statement XML formats based on Tax declaration model   |
+|      Estonia         |   May 2020       | 10.0.11      |   Electronic invoicing in Estonia: customers invoices export in Estonian specific format version 1.2.  |
+|      Europe        |   August 2020       | 10.0.14      |   Transfer Partner VAT ID to Intrastat  |
+|      Finland         |   July 2020       | 10.0.13      |   Support of electronic invoices for Finland  |
+|      Germany         |   May 2020       | 10.0.12      |   Germany - Retail - Cash register requirements    |
+|      Hungary         |   March 2020       | 10.0.11     |   Online invoicing system v.2.0 in Finance and Operations    |
+|      India         |   August 2020, July 2020      | 10.0.3, 10.0.12HF      |   TCS on Sales of Goods as per section 206C (1H) - Threshold as per PAN based accumulation of transactions.  |
+|      India         |   August 2020, June 2020      | 10.0.13, 10.0.12HF      |   Credit/Debit note against export Invoice  |
+|      India         |   August 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Electronic Invoice under GST  |
+|      India         |   May 2020      | 10.0.13, 10.0.12      |   New GSTR-1 and GSTR-2 return format  |
+|      India         |   July 2020      | 10.0.13      |   New GSTR (ANX-1 & ANX-2)  offline Tool (Beta version)  |
+|      India         |   May 2020      | 10.0.12      |   Improvements in unit price and cost price handling in Stock transfer orders  |
+|      India         |   May 2020      | 10.0.12      |   Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt)  |
+|      Italy         |   May 2020      | 10.0.12, 10.0.11      |   Modello 770 / 2019 format change |
+|      Italy         |   July 2020      | 10.0.13, 10.0.12HF      |   Changes in the format of Italian electronic invoices - FatturaPA |
+|      Kuwait         |   July 2020      | 10.0.12      |   Reverse charge |
+|      Malaysia         |   July 2020      | 10.0.13      |   SST report |
+|      Mexico         |   September 2020      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   CFDI URL schema location based on Anexo 20 document |
+|      Norway          |   May 2020   | 10.0.12     |   SAF-T report redesign: Opening balances by "operating" transaction type and Tax information in Tax code currency in Finance (version 10) |
+|      Norway          |   May 2020   | 10.0.12     |   SAF-T report dialog change: to provide possibility to select Contact person across companies |
+|      Norway          |   May 2020   | 10.0.12     |   SAF-T Name space declarations on each line instead of only on the header |
+|      Oman         |   July 2020      | 10.0.12H      |   Reverse charge |
+|      Poland          |   September 2020     | 10.0.14     |   Poland: JPK-V7M (VDEK) Excel format - to replace SSRS report  |
+|      Poland          |   May 2020     | 10.0.11     |   Split AP/AR realized exchange difference amount into exchange difference of invoice net value and of VAT amount  |
+|      Poland          |   May 2020     | 10.0.11     |   SAF Accounting books  – Posting layers filtering improvements |
+|      Poland          |   March 2020     | 10.0.11     |   JPK_VDEK supplemented pack I |
+|      Poland          |   May 2020     | 10.0.12     |   JPK_VDEK supplemented pack II |
+|      Poland          |   March 2020     | 10.0.11     |   Partial credit note for sales order with advance invoice |
+|      Poland          |   July 2020     | 10.0.13     |   Mandatory split payment enhancements |
+|      Qatar         |   July 2020      | 10.0.12H      |   Reverse charge |
+|      Russia          |   August 2020     | 10.0.14    |   Format of accounting reporting is changing starting from 2020 year  |
+|      Russia          |   July 2020     | 10.0.13    |   Depreciation calculation on the base of Acquisition cost and major repairs with applying the Depreciation bonus in Tax accounting  |
 
 
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FIRST">FIRST ER function</a>
+# FIRST ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `FIRST` function returns the first record of the specified list as a *Contai
 
 ## Syntax
 
-```
+```vb
 FIRST (list)
 ```
 

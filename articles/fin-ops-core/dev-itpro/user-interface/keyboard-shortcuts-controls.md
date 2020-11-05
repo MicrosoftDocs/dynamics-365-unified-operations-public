@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinarh
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -238,7 +238,7 @@ We recommend that you use the registration mechanism that is described in this s
 
 1. Define a Shortcuts object on the control's prototype. Then define the keyboard shortcuts inside the Shortcuts object. These shortcuts should have the following structure. Make sure that the key code that you're trying to use is defined in the $dyn.ui.KeyCodes object.
 
-    ```
+    ```Text
     Shortcuts: {
         Name: {
             Keys: { modifier1: true, modifier2:true, 
@@ -254,7 +254,7 @@ We recommend that you use the registration mechanism that is described in this s
 
     If more than one key code should apply to your keyboard shortcut, pass in an array of codes, as shown here.
 
-    ```
+    ```Text
     Keys: {modifier1:true, 
         keyCode:[$dyn.ui.KeyCodes.*, $dyn.ui.KeyCodes.*, ... ] } 
     // Note: If any of these keyCodes match then the handler is called. I.E. 
@@ -262,7 +262,7 @@ We recommend that you use the registration mechanism that is described in this s
     ```
 2. Add the keydown handler by using the following code.
 
-    ```
+    ```Text
     keydown: function (event) {
         $dyn.util.handleShortcuts(this, event);
     },
@@ -273,14 +273,14 @@ We recommend that you use the registration mechanism that is described in this s
     > [!IMPORTANT]
     > "keyDown" is case sensitive.
 
-    ```
+    ```Text
     <div data-dyn-bind="keyDown: $data.keydown"></div>;
     ```
 
 ### Examples
 Here is a Form example.
 
-```
+```Text
 Shortcuts: {
     Save: {
         Keys: { ctrl: true, keyCode: $dyn.ui.KeyCodes.letterS },
@@ -307,7 +307,8 @@ Shortcuts: {
 ```
 
 Here is a Dialogs example that extends the Form control.
-```
+
+```Text
 Shortcuts: $dyn.extendPrototype($dyn.controls.Form.prototype.Shortcuts, {
     InvokeDefaultButton: {
         Keys: { keyCode: $dyn.ui.KeyCodes.enter },

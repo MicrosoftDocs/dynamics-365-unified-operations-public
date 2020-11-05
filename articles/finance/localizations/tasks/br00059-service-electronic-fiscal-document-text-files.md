@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Service electronic fiscal document using text files (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 After a sales invoice for a service is issued in São Paulo city, you can generate the RPS (Recibo Provisorio de Serviço) for a given service fiscal document that has been posted. This recording uses the BRMF demo company.
 

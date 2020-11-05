@@ -5,7 +5,7 @@ title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Page load data actions
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic covers page load data actions in Microsoft Dynamics 365 Commerce. 
@@ -101,22 +100,13 @@ The following example shows a module that uses the data action earlier in this t
             "runOn": "server"
         }
     },
-    "config": {
-        "productId": {
-            "friendlyName": "Id of Product to show",
-            "description": "The Id of the Product that will be rendered in this module",
-            "type": "string",
-            "default": "12345"
-        },
-    }
+...
 }
 ```
 
-Here, the **module.dataActions** property indicates the data actions that should be run when a module is loaded on a page. The name of every key in the data actions object refers to the name of the property that the result will be assigned to in the module's data properties (in this case, the **this.props.data.product** property). Additionally, the **path** property of every data action points to a file that exports the data action that should be run. Generally the data action is the default export of the file it was written in.
+Here, the **dataActions** node indicates the data actions that should be run when a module is loaded on a page. The name of every key in the data actions object refers to the name of the property that the result will be assigned to in the module's data properties (in this case, the **this.props.data.product** property). Additionally, the **path** property of every data action points to a file that exports the data action that should be run. Generally, the data action is the default export of the file it was written in.
 
-Notice that the **productId** configuration property defines what is used as input for the data action. Page authors can use this configuration property to specify a product ID as input for the module when the page is built. This configuration property is also required by the example of the **createInput** method earlier in this topic. When the module is configured on a page, the **productId** value that is specified in the module's configuration is loaded on that page.
-
-To help guarantee that you have the correct typing for the module when you develop your module view, you must update the module data file with corresponding types, based on the data actions that you've registered. Here is an example.
+To help ensure that you have the correct typing for the module when you develop your module view, you must update the module data file with corresponding types, based on the data actions that you've registered. Here is an example.
 
 ```typescript
 import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
@@ -129,27 +119,84 @@ export interface IProductModuleData {
 
 Now, when you develop this module, you will have access to the product information via the **this.props.data.product** property.
 
+## Client-side rendering
+Dynamics 365 Commerce renders pages server side and [hydrates](https://reactjs.org/docs/react-dom.html#hydrate) the page on the client after the initial load. Data actions defined in a module definition are executed on the server by default, which causes modules to render server side. If a module explicitly needs to render on client, the **runOn** parameter value needs to be set to 'client' in the module definition file as shown below. 
+
+```json
+{
+    "$type": "moduleDefinition",
+    "name": "product-module",
+    "friendlyName": "Product module",
+    "description": "Product module",
+    "categories": ["Product"],
+    "dataActions": {
+        "product": {
+            "path": "../../actions/get-product",
+            "runOn": "client"
+        }
+    },
+...
+}
+```
+> [!NOTE] 
+> If a data action is being used in multiple modules with both server/client "runOn" configurations, the data action will run only on the server side. Therefore, it is important to avoid conflicting the **runOn** configurations if the module needs to be rendered explicitly on the client side.
+
 ## Register a core data action
 
-The Dynamics 365 Commerce online SDK contains a set of core data actions for performing typical retail data tasks. Interfaces for core data actions can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory. To register a core data action so that you can use it inside your module, use the following format in your MODULE\_data.ts file.
+The Dynamics 365 Commerce online SDK contains a set of core data actions that can be used to perform typical Commerce data tasks. Interfaces for core data actions can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory. To register a core data action so that you can use it inside your module, use the following format in the **dataActions** node of your MODULE\_definition.json file.
+
+```json
+{
+    "$type": "contentModule",
+    "friendlyName": "Product Feature",
+    "name": "product-feature",
+    "description": "Feature module used to highlight a product.",
+    "categories": [
+        "storytelling"
+    ],
+    "tags": [
+        ""
+    ],
+    "dataActions": {
+        "products": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products",
+            "runOn": "server"
+        }
+    },
+    "config": {
+        "productIds": {
+            "friendlyName": "Product ID",
+            "description": "Provide a Product Id that the module will display",
+            "type": "string",
+            "scope": "module",
+            "group": "Content Properties"
+        }
+    },
+    "resources": {
+        "resourceKey": {
+            "comment": "resource description",
+            "value": "resource value"
+        }
+    }
+}
+```
+
+Notice that this example calls a core data action that is named **get-simple-products**. This data action uses the **productIds** config property to get the list of product IDs and returns an array of **SimpleProduct** results. The following example shows the module data.ts file that defines the return value. The interface for the **SimpleProduct** return type is defined in the \\node\_modules\\@msdyn365-commerce\\commerce-entities\\dist\\types\\commerce-entities directory that is imported at the top of the example.
+
 
 ```typescript
-import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';
-import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
+import { AsyncResult, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
+
 export interface IProductFeatureData {
-    /**
-     * @dataAction @msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products
-     * @runAt server
-     */
     products: AsyncResult<SimpleProduct>[];
 }
 ```
 
-Notice that this example calls a core data action that is named **get-simple-products**. This data action returns an array of **SimpleProduct** results. The interface for the **SimpleProduct** return type is defined in the \\node\_modules\\@msdyn365-commerce\\commerce-entities\\dist\\types\\commerce-entities directory that is imported at the top of the example.
-
 ## Additional resources
 
 [Data actions overview](data-actions.md)
+
+[Data action cache options](data-action-cache.md)
 
 [Test data actions with mocks](test-data-action-mocks.md)
 

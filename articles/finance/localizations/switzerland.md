@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 
 ms.search.region: Switzerland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,3 +35,4 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides links to documentation resources for Switzerland. 
 
 - [ESR customer payments import](emea-che-esr-customer-payments-import.md)
+- [Swiss QR-bills](emea-che-swiss-qr-bills.md)

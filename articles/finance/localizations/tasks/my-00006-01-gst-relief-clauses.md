@@ -28,8 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # MY-00006 01 Set up GST relief clauses
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 After you complete these procedures, when you generate a tax invoice for a customer who has bought a GST relieved item or service, the relief clause is automatically included in the final printed invoice. You must be in the Accounting supervisor role to complete these procedures. This procedure was created using the demo data company MYMF.
 
 

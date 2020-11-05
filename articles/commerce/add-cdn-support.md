@@ -5,7 +5,7 @@ title: Add support for a content delivery network (CDN)
 description: This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add support for a content delivery network (CDN)
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
@@ -40,7 +40,7 @@ This topic describes how to add a content delivery network (CDN) to your Microso
 
 When you set up an e-Commerce environment in Dynamics 365 Commerce, you can configure it to work with your CDN service. 
 
-Your custom domain can be enabled during the provisioning process for your e-Commerce environment. Alternatively, you can use a service request to set it up after the provisioning process is completed. The provisioning process for the e-Commerce environment generates a host name that is associated with the environment. This host name has the following format, where *e-commerce-tenant-name* is the name of your environment:
+Your custom domain can be enabled during the provisioning process for your e-Commerce environment. Alternatively, you can use a service request to set it up after the provisioning process is completed. The provisioning process for the e-Commerce environment generates a host name that is associated with the environment. This host name has the following format, where \<*e-commerce-tenant-name*\> is the name of your environment:
 
 &lt;e-commerce-tenant-name&gt;.commerce.dynamics.com
 
@@ -70,7 +70,7 @@ Any CDN service can be used with a Commerce environment. Here are two examples:
 The CDN setup process consists of these general steps:
 
 1. Add a front-end host.
-1. Configure a back-end pool.
+1. Configure a backend pool.
 1. Set up rules for routing and caching.
 
 ### Add a front-end host
@@ -79,18 +79,20 @@ Any CDN service can be used, but for the example in this topic, Azure Front Door
 
 For information about how to set up Azure Front Door Service, see [Quickstart: Create a Front Door for a highly available global web application](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### Configure a back-end pool in Azure Front Door Service
+### Configure a backend pool in Azure Front Door Service
 
-To configure a back-end pool in Azure Front Door Service, follow these steps.
+To configure a backend pool in Azure Front Door Service, follow these steps.
 
-1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a back-end pool as a custom host that has an empty back-end host header.
-1. Under **Health probes**, in the **Path** field, enter **/keepalive**.
-1. In the **Intervals (seconds)** field, enter **255**.
+1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a backend pool as a custom host that has an empty backend host header.
 1. Under **Load balancing**, leave the default values.
 
-The following illustration shows the **Add a backend pool** dialog box in Azure Front Door Service.
+The following illustration shows the **Add a backend** dialog box in Azure Front Door Service with the backend host name entered.
 
 ![Add a backend pool dialog box](./media/CDN_BackendPool.png)
+
+The following illustration shows the **Add a backend pool** dialog box in Azure Front Door Service with the default load balancing values.
+
+![Add a backend pool dialog box continued](./media/CDN_BackendPool_2.png)
 
 ### Set up rules in Azure Front Door Service
 
@@ -126,20 +128,22 @@ The following illustration shows the **Add a rule** dialog box in Azure Front Do
 
 ![Add a rule dialog box](./media/CDN_CachingRule.png)
 
-After this initial configuration is deployed, you must add your custom domain to the configuration for Azure Front Door Service. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
+> [!WARNING]
+> If the domain that you will use is already active and live, create a support ticket from the **Support** tile in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to get assistance for your next steps. For more information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+If your domain is new and is not a pre-existing live domain, you can add your custom domain to the configuration for Azure Front Door Service. This will enable web traffic to direct to your site via the Azure Front Door instance. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 
 The following illustration shows the **CNAME configuration** dialog box in Azure Front Door Service.
 
 ![CNAME Configuration dialog box](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> If the domain that you will use is already active and live, contact support to enable this domain with Azure Front Door Service to set up a test.
 
 You can use Azure Front Door Service to manage the certificate, or you can use your own certificate for the custom domain.
 
 The following illustration shows the **Custom Domain HTTPS** dialog box in Azure Front Door Service.
 
 ![Custom Domain HTTPS dialog box](./media/Custom_Domain_HTTPS.png)
+
+For detailed instructions on adding a custom domain to your Azure Front Door, see [Add a custom domain to your Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
 Your CDN should now be correctly configured so that it can be used with your Commerce site.
 
@@ -155,6 +159,12 @@ Your CDN should now be correctly configured so that it can be used with your Com
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Enable location-based store detection](enable-store-detection.md)

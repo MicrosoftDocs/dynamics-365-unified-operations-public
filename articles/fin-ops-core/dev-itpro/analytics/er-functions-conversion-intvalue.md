@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="INTVALUE">INTVALUE ER function</a>
+# INTVALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,13 +38,13 @@ The `INTVALUE` function returns an *Int* value that represents the specified str
 
 ## Syntax 1
 
-```
+```vb
 INTVALUE (text)
 ```
 
 ## Syntax 2
 
-```
+```vb
 INTVALUE (number)
 ```
 

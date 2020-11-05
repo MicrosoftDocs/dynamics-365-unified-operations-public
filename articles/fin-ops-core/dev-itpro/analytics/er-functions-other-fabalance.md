@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FA_BALANCE">FA_BALANCE ER function</a>
+# FA_BALANCE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `FA_BALANCE` function returns a *Container (record)* value that consists of 
 
 ## Syntax
 
-```
+```vb
 FA_BALANCE (fixed asset code, value model code, reporting year, reporting date)
 ```
 

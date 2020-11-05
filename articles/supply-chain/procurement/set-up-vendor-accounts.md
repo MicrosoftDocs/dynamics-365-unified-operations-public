@@ -4,8 +4,8 @@
 title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
 author: mkirknel
-manager: AnnBe
-ms.date: 06/20/2017
+manager: tfehr
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: smmContactPerson, VendBankAccounts, VendTable
+ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191053
@@ -71,7 +71,7 @@ You can create vendor contacts from scratch. Alternatively, you can copy details
 
 You can't delete a contact person record if the contact is referenced on a document. Instead, you can inactivate the contact.  
 
-You can add vendor contacts to your personal contacts in Microsoft Office 365. However, you must first set up synchronization between Supply Chain Management and Office 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
+You can add vendor contacts to your personal contacts in Microsoft 365. However, you must first set up synchronization between Supply Chain Management and Microsoft 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
 
 ## Vendors in different legal entities
 If a vendor is registered for only one legal entity in your organization, and other legal entities must register the same vendor, you can use the **Add vendor to another legal entity** page to configure the vendor to do business with another legal entity. You must select a vendor group, currency, and hold status for the vendor in the selected legal entity.  
@@ -93,7 +93,7 @@ You can put a vendor on hold for various transaction types. The following option
 -   **Invoice** – No invoices can be posted for the vendor.
 -   **All** – The vendor is on hold for all transaction types. These transaction types include purchase requisitions, invoices, and payments.
 -   **Payment** – No payments can be generated for the vendor.
--   **Requisition** – Only purchase requisitions can be created. No other transactions can be created.
+-   **Requisition** – Purchase requisitions can't be created for the vendor, and requisition lines already created before the vendor was set on hold can't be converted to a purchase order. Requisition lines for the vendor will be canceled if your policy is set to create purchase orders automatically.
 -   **Never** – The vendor is never put on hold for inactivity.
 
 When you put a vendor on hold, you can also specify a reason and a date when the on-hold status will end. If you don't enter an end date, the vendor's on-hold status lasts indefinitely.

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NULLDATETIME">NULLDATETIME ER function</a>
+# NULLDATETIME ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `NULLDATETIME` function returns a *DateTime* value that represents the **nul
 
 ## Syntax
 
-```
+```vb
 NULLDATETIME ()
 ```
 

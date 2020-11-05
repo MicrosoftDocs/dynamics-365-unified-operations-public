@@ -22,13 +22,15 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
 ---
 
 # Quality orders that involve destruction of the sampling item
+
+[!include [banner](../includes/banner.md)]
 
 ## Purchase order page
 

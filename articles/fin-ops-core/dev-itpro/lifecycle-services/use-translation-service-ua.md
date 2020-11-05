@@ -24,7 +24,7 @@ ms.custom: 6154
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ejchoGIT
+ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
 
@@ -84,7 +84,7 @@ With the translation memory file you are providing, you have an option to decide
 
 After you've finished uploading file, select **Submit** to start the translation process. 
 
-After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status is displayed in a seperate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.
+After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status is displayed in a separate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.
 
 To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information..
 

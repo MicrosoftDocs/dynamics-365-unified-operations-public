@@ -24,8 +24,8 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Test data methods
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Entity and helper navigation objects expose test methods that let you set up test data. This topic provides information about the most common types of test data methods.
 
@@ -52,7 +50,7 @@ In this naming convention, `<EntitySpecification>` is the description of the key
 
 ### Examples
 
-```
+```xpp
 salesOrder = data.sales().salesOrders().initDefault();
 
 purchaseOrder = data.purch().purchaseOrders().createDefault();
@@ -64,7 +62,7 @@ The `create` method should always call the `init` method that has the same entit
 
 #### Example
 
-```
+```xpp
 public AtlEntitySalesOrder createDefault()
 {
     AtlEntitySalesOrder salesOrder = this.initDefault();
@@ -81,7 +79,7 @@ Before some entities can be created, specific prerequisites must be set up. In t
 
 #### Example
 
-```
+```xpp
 public AtlEntitySalesOrder initDefault()
 {
     AtlEntitySalesOrder salesOrder;
@@ -109,7 +107,7 @@ In this naming convention, `<EntitySpecification>` is the description of the key
 
 ### Example
 
-```
+```xpp
 catchWeightItem = data.invent().items().cwBuilder();
 ```
 
@@ -125,7 +123,7 @@ In this naming convention, `<EntitySpecification>` is the description of the key
 
 ### Example
 
-```
+```xpp
 fifo = data.invent().modelGroup().fifo();
 ```
 
@@ -133,7 +131,7 @@ In this example, the contract of the method specifies that the model group shoul
 
 Sometimes, a real-world name communicates the contract better.
 
-```
+```xpp
 pieces = data.common().units().pieces();
 ```
 
@@ -145,7 +143,7 @@ Here are a few things to remember about the common contract of the well-known da
 
 - Two calls to the same well-known data method should provide the caller with the reference to the same entity.
 
-    ```
+    ```xpp
     fifo1 = data.invent().modelGroups().fifo();
     fifo2 = data.invent().modelGroups().fifo();
     fifo1.InventModelGroupId == fifo2.InventModelGroupId;
@@ -153,13 +151,13 @@ Here are a few things to remember about the common contract of the well-known da
 
 - Creation of a test entity isn't always worth the effort. If a test entity isn't created, the corresponding record buffer should be returned from the well-known data method. For example, if you don't invest the time and effort to create the Site entity, the `site` well-known data method will return InventSite records.
 
-    ```
+    ```xpp
     InventSite site = data.invent().sites().default();
     ```
 
 - Well-known data methods can take IDs as optional parameters when this approach makes sense.
 
-    ```
+    ```xpp
     item1 = data.products().items().default('Item1');
     item2 = data.products().items().default('item2');
     ```
@@ -170,7 +168,7 @@ If there is already a builder or a factory method that is named `<EntitySpecific
 
 #### Example
 
-```
+```xpp
 public InventTable whsBatchAbove(ItemId _itemId = this.whsBatchAboveItemId())
 {
     InventTable whsItem = InventTable::find(_itemId, true);
@@ -194,7 +192,7 @@ In this naming convention, `<ExecuteBusinessOperation>` is a verb that describes
 
 ### Examples
 
-```
+```xpp
 data.sales().salesOrders().ensureCanCreate();
 
 data.purch().purchaseOrders().ensureCanPostProductReceipt();
@@ -206,7 +204,7 @@ Figuring out prerequisites for a complex business operation, such as invoice pos
 
 #### Example
 
-```
+```xpp
 public void ensureCanCreate()
 {
     data.helpers().setNumberSequenceReference(extendedTypeNum(InventDimId));
@@ -227,7 +225,7 @@ Query methods are responsible for initializing new queries for the entity type o
 
 ### Examples
 
-```
+```xpp
 loadLinesQuery = data.whs().loadLines().query();
 
 purchaseLinesQuery = data.invent().transferOrderLines().query();
@@ -243,7 +241,7 @@ Specification methods are responsible for initializing new specification objects
 
 ### Example
 
-```
+```xpp
 loadLinesSpec = data.whs().loadLines().spec();
 ```
 
@@ -257,7 +255,7 @@ Find methods let you find an entity based on the primary key.
 
 ### Example
 
-```
+```xpp
 salesOrder = data.sales().salesOrders().find(salesOrderId);
 ```
 

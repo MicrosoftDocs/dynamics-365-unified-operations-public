@@ -22,13 +22,13 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Map a cost element dimension
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A cost controller can use this procedure to map a cost element dimension to a cost element dimension in the MXMF legal entity. This recording uses the USP2 demo data company.
 

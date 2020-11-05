@@ -48,6 +48,25 @@ This topic shows how to modify DimensionCombinationEntity to enable the dimensio
 > [!NOTE]
 > This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
 
+## Add dimensions to Dynamics 365 Finance
+
+With the November 2016 release, modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio.
+
+1. In Microsoft Visual Studio, click **Dynamics 365 > Addins > Add financial dimensions for Odata.**
+2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer. Click **Apply**. 
+
+    ![financial dimensions for odata](media/financial-dimensions-odata.png).
+
+3. Compile the project, and then synchronize it with the database.
+
+    ![8](media/8-300x260.png)
+
+4. Your customization is now completed. You can test it in SQL using the following statement.
+
+    ```sql
+    select * from DIMENSIONCOMBINATIONENTITY 
+    ```
+
 ## Add dimensions  before Dynamics 365 for Finance and Operations
 To support interactions with dimensions as columns, for example, in the Microsoft Excel integration, you must first create the dimension columns through a customization. 
 
@@ -61,7 +80,7 @@ To support interactions with dimensions as columns, for example, in the Microsof
 5. Create a new private static method that returns a str named **departmentValue**. 
 6. In this method, you must get the dimension's value from **DimensionAttributeValueCombination**. The final method will look something like this.
 
-    ```
+    ```xpp
     /// <summary>
     /// This method returns the value of Department.
     /// </summary>
@@ -101,7 +120,7 @@ To support interactions with dimensions as columns, for example, in the Microsof
 
 10. Your customization is now complete. You can test it in SQL using the following statement.
 
-    ```
+    ```sql
     select * from DIMENSIONCOMBINATIONENTITY
     ```
 

@@ -36,22 +36,26 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Describes the code pattern to add Segmented Entry controls to dialogs.
 
-The process to add Segmented Entry controls to dialogs has changed. This is an example from Dynamics AX 2012:
+The process to add Segmented Entry controls to dialogs has changed. This code is an example from Dynamics AX 2012:
 
-    DialogField dialogFeeLedgerDimension;
-    LedgerDimensionAccountController ledgerDimensionAccountController;
-    dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703");
-    ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
+```xpp
+DialogField dialogFeeLedgerDimension;
+LedgerDimensionAccountController ledgerDimensionAccountController;
+dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703");
+ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
+```
 
 In the current release, this code would be converted to:
 
-    DialogField dialogFeeLedgerDimension;
-    dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
-        dialog, 
-        classstr(LedgerDimensionAccountController), 
-        extendedTypeStr(LedgerDimensionAccount), 
-        "@SYS119703", 
-        feeLedgerDimension);
+```xpp
+DialogField dialogFeeLedgerDimension;
+dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
+    dialog, 
+    classstr(LedgerDimensionAccountController), 
+    extendedTypeStr(LedgerDimensionAccount), 
+    "@SYS119703", 
+    feeLedgerDimension);
+```
 
 For the second parameter, choose the class that satisfies the requirements for your dialog.  The options are:
 
@@ -61,15 +65,14 @@ For the second parameter, choose the class that satisfies the requirements for y
 -   BudgetLedgerDimensionController
 -   BudgetPlanningLedgerDimensionController
 
-This is a simple dialog scenario around Segmented Entry. More advanced scenarios include:
+This scenario is a simple dialog scenario around Segmented Entry. More advanced scenarios include:
 
 -   Binding the dynamic account type.
 -   Company selection support.
 -   Account structure selection support.
 
 
-Additional resources
---------
+## Additional resources
 
 [Design-time metadata for Segmented Entry controls](segmented-entry-control-metadata-specification.md)
 
@@ -78,6 +81,3 @@ Additional resources
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
-
-
-

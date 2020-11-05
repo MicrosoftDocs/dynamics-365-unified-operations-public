@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -49,7 +49,9 @@ ms.dyn365.ops.version: 10.0.4
 
     ![Active configuration](media/active_upd.png)
 
-    The configuration that you activated is updated as the current configuration.
+    The configuration that you activated is updated as the current configuration. 
+    > [NOTE]
+    > It's suggested to mark **Skip model mapping** if the configuration is the standard configuration (which is provided by Microsoft), or extended configuration without adding/modifying model mapping.
 
 10. Select the **Report configurations** tab.
 

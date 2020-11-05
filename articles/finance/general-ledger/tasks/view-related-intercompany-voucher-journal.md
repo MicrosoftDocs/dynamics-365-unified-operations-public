@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # View related intercompany voucher from journal
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.
 

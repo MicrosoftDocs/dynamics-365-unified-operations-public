@@ -5,7 +5,7 @@ title: Export a copy of the standard user acceptance testing (UAT) database
 description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 
@@ -72,8 +72,7 @@ After you've downloaded a database backup (.bacpac) file, you can begin the manu
 
 To ensure the best performance, copy the \*.bacpac file to the local computer that you're importing from. Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](https://docs.microsoft.com/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
 
-```
-
+```Console
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
 ```
 
@@ -90,7 +89,7 @@ Here is an explanation of the parameters:
 
 Run the following SQL script against the imported database. This script adds back the users that you deleted from the source database and correctly links them to the SQL logins for this SQL Server instance. The script also turns change tracking back on. Remember to edit the final **ALTER DATABASE** statement so that it uses the name of your database.
 
-```
+```sql
 CREATE USER axdeployuser FROM LOGIN axdeployuser
 EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
@@ -157,7 +156,7 @@ DEALLOCATE retail_ftx;
 
 If change tracking was turned on in the source database, be sure to turn it on in the newly provisioned database in the target environment. To turn on change tracking, use the **ALTER DATABASE** command.
 
-```
+```sql
 ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON);
 ```
 
@@ -174,6 +173,12 @@ To switch environments and use the new database, first stop the following servic
 After these services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
+
+### Post steps for Commerce environments
+If you are using Commerce channels, when importing a database to a developer environment, which was originally exported from a self-service sandbox, the following additional steps must be performed on the destination developer environment. Without completing these steps, Commerce channels will not function.
+
+1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update, which will create the channel database.
+2.	To restore any previously deployed channel database extensions, re-apply the corresponding Retail self-service deployable package.
 
 ### Reprovision the target environment
 
@@ -245,7 +250,7 @@ This issue can occur when the platform build number of the current environment i
 - Use the **Updates** tiles on the environment page in LCS to upgrade the platform in the current environment so that it matches the platform in the source environment.
 - Run the following query to adjust the expected version in the database.
 
-    ```
+    ```sql
     UPDATE SQLSYSTEMVARIABLES
 
     SET VALUE = 138

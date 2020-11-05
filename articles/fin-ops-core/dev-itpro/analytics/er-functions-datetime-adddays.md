@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ADDDAYS">ADDDAYS ER function</a>
+# ADDDAYS ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `ADDDAYS` function calculates a *DateTime* value that is the specified numbe
 
 ## Syntax
 
-```
+```vb
 ADDDAYS (datetime, days)
 ```
 

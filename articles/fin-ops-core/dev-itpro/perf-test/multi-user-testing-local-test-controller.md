@@ -5,7 +5,7 @@ title: Multi-user testing with the Performance SDK and a local test controller
 description: This topic explains how to do multi-user testing by using Microsoft Visual Studio and the Performance SDK together with performance test scripts that are generated from Task recorder.
 author: hasaid
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,7 +43,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
-- You have a development environment that has Platform update 21 or later in own your Microsoft Azure subscription.
+- You have a development environment that has Platform update 21 or later in your Microsoft Azure subscription.
+> [!IMPORTANT]
+> If your Finance and Operations apps were deployed in 21Vianet, the platform update of your environment must be Platform Update for 10.0.11 or above.
 - You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
@@ -51,13 +53,13 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ## Configure a development environment for multi-user testing
 
-1. Download [ODBC Driver 17 for SQL Server](https://download.microsoft.com/download/E/6/B/E6BFDC7A-5BCD-4C51-9912-635646DA801E/en-US/msodbcsql_17.2.0.1_x64.msi), rename the download file **msodbcsql**, and copy it to the **Visual Studio Online** folder under the **PerfSDK** folder.
+1. Download [ODBC Driver 17 for SQL Server](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15), rename the download file **msodbcsql**, and copy it to the **Visual Studio Online** folder under the **PerfSDK** folder.
 
     [![msodbcsql file in Visual Studio Online folder](./media/multi-user-test-local-01.png)](./media/multi-user-test-local-01.png)
 
 2. Create an environment variable that is named **TestRoot**, and point it to the **PerfSDK** folder by running the following cmdlet in Microsoft Windows PowerShell.
 
-    ```
+    ```Console
     [ENVIRONMENT]::SETENVIRONMENTVARIABLE("TESTROOT", "K:\PERFSDK\PERFSDKLOCALDIRECTORY", "USER")
     ```
 
@@ -67,7 +69,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 	
 3. Open a **Command Prompt** window as an admin, and enter the following commands to generate and install the required certificate. When you're prompted for a private key password, select **None**.
 
-    ```
+    ```Console
     "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -n "CN=127.0.0.1" -ss Root -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
 
     "c:\Program Files (x86)\Windows Kits\8.1\bin\x64\pvk2pfx" -pvk c:\temp\authCert.pvk -spc c:\temp\authcert.cer -pfx c:\temp\authcert.pfx
@@ -94,7 +96,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 6. Replace the **setup.md** file in the **Visual Studio Online** folder with the following.
 
-    ```
+    ```Console
     setx testroot "%DeploymentDirectory%"
     ECHO Installing D365 prerequisites
     ECHO MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
@@ -113,7 +115,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 1. In Microsoft Visual Studio, on the **Test** menu, point to **Test settings**, point to **Default processor architecture**, and then select **x64**.
 2. Retrieve the thumbprint of the **authcert.pfx** certificate in your development environment by running the following cmdlets as an admin. Save the thumbprint somewhere, because you will need it when you configure the tier-2 or above sandbox environment.
 
-    ```
+    ```Console
     cd Cert:\LocalMachine\My
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
@@ -128,11 +130,17 @@ Before you complete the steps in this topic, verify that the following prerequis
 3. Update the **CloudEnvironment.config** file to reflect your configurations. As part of this update, follow these steps:
 
     - Verify that **HostName** and **SOAPHostName** match your tier-2 or above sandbox environment.
+    
+    > [!NOTE]
+    > If you don't know the **HostName** or **SOAPHostName** of your test environment, you can find it in the web.config file for the AOS server in **Infrastructure.HostUrl** or **Infrastructure.SoapServicesUrl**.
+    
     - Add the thumbprint of the **authcert.pfx** certificate as a value of **SelfSigningCertificateThumbprint**.
     - Update **UserCount** to reflect the number of test users in your case.
     - Update **UserFormat** to reflect your naming convention for test users.
 
     [![Updated CloudEnvironment.config file](./media/multi-user-test-local-10.png)](./media/multi-user-test-local-10.png)
+
+    - If your Finance and Operations apps were deployed in 21Vianet, make sure to specify **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
 4. Configure **vsonline.testsettings**. In the **Test Settings** dialog box, on the **General** tab, in the **Test run Location** field group, select the **Run tests using local computer or a test controller** option.
 
@@ -158,7 +166,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 7. Select **Apply**, and then close the **Test Settings** dialog box.
 8. Modify your C\# performance class by adding the following statement to your C\# performance tests.
 
-    ```
+    ```csharp
     using MS.Dynamics.TestTools.UIHelpers.Core;
     ```
 
@@ -166,7 +174,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 9. Modify the **TestSetup** method by adding the following lines to the beginning of the **TestSetup()** method.
 
-    ```
+    ```csharp
     var testroot = System.Environment.GetEnvironmentVariable("DeploymentDir");
     if (string.IsNullOrEmpty(testroot))
     {
@@ -179,7 +187,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 10. In the **TestSetup** method, uncomment lines in the code titled "for multi-user uncomment following lines", and comment out the following line.
 
-    ```
+    ```csharp
     Client = DispatchedClient.DefaultInstance;
     ```
 
@@ -187,7 +195,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 11. Modify the **TestCleanup** method so that it resembles the following example.
 
-    ```
+    ```csharp
     public void TestCleanup()
     {
         Client.Close();
@@ -213,25 +221,50 @@ Before you complete the steps in this topic, verify that the following prerequis
 	
 ## Configure a tier-2 or above sandbox environment for multi-user testing
 
-1. On each Application Object Server (AOS) computer, install the **authcert.pfx** and **authcert.cer** certificates under **Local Machine\\Personal**.
+### If your AOS allows Remote Desktop connections
 
-    [![Certificates installed](./media/multi-user-test-local-21.png)](./media/multi-user-test-local-21.png)
+1. Open Microsoft Internet Information Services (IIS) Manager from **Administrative Tools**, and then, under **Sites**, select **AOSService**.
+2. On the right, select **Explore in Actions**, and then find the **wif.config** file at the bottom of the window.
+3. Add the thumbprint of the **authcert.pfx** certificate to the bottom of the `https://fakeacs.accesscontrol.windows.net/` authority and save the change.
 
-2. Add the thumbprint of the **authcert.pfx** certificate in the **wif.config** file of your tier-2 or above sandbox environment.
-3. Open Microsoft Internet Information Services (IIS) Manager from **Administrative Tools**, and then, under **Sites**, select **AOSService**.
-4. On the right, select **Explore in Actions**, and then find the **wif.config** file at the bottom of the window.
-5. Add the thumbprint of the generated certificate to the bottom of the `https://fakeacs.accesscontrol.windows.net/` authority.
+    [![Thumbprint added from the generated certificate](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-22.png)
 
-    [![Thumbprint added from the generated certificate](./media/multi-user-test-local-22.png)](./media/multi-user-test-local-21.png)
+4. Repeat steps 1 through 3 on each AOS computer.
+5. Restart all AOS instances.
 
-6. Save the change, and do an IIRESET.
-7. Repeat steps 3 through 6 on each AOS computer.
-8. Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
+### If you do not have Remote Desktop access to the server
 
-    [![Users page in the target environment](./media/multi-user-test-local-23.png)](./media/multi-user-test-local-22.png)
+In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured. Follow these steps to retrieve the RSAT certificate, which is necessary to use with PerfSDK.
 
-    > [!NOTE]
-    > You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to do an IISRESET.
+1. Under **Maintain** on your environment details page in Lifecycle Services you'll see two new options.
+  - Download RSAT certificate
+  - Regenerate RSAT certificate
+
+![Download and regenerate RSAT certificate options](rsat/media/rsat-lcs1.png)
+
+Use the **Download** button to retrieve the certificate bundle as a .zip file.
+
+2. You'll receive a warning that a clear-text password will be displayed on your screen. Select **Yes** to continue.
+
+3. Copy the clear-text password for later use. You'll see the .zip file has been downloaded. Inside the .zip file is a certificate (.cer) and a personal information exchange (.pfx) file. Unzip the file.
+
+4. Double-click the certificate to open it, and then select **Install**. Install this certificate to your local machine, and then browse to the **Personal** store. Repeat this process for the local machine, and browse specifically to the **Trusted Root Certification Authorities** store.
+
+5. Double-click the personal information exchange (.pfx) file to open it, and select **Install**. Install this certificate to your local machine, enter the password saved in step 2, and browse to the **Personal** store. Repeat this process for the local machine location, enter the password saved in step 2, and browse specifically to the **Trusted Root Certification Authorities** store.
+
+6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and copy the ID in the text box. Use this thumbprint for RSAT and to update your PerfSDK **CloudEnvironment.config** thumbprint.
+![Thumbprint settings](rsat/media/rsat-lcs4.png)
+
+You can now run your tests against the environment using this certificate. The certificate will be auto-rotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
+
+## Create test users
+
+Open the **SampleLoadTest.load** test to create test users and import them into your target environment. Then assign the **System Administrator** security role to each user.
+
+![Users page in the target environment](./media/multi-user-test-local-23.png)
+
+> [!NOTE]
+> You can also create test users by running **MS.Dynamics.Performance.CreateUsers.exe**. In this case, you don't have to use IISRESET.
 
 ## Run multi-user testing by using a local test controller
 

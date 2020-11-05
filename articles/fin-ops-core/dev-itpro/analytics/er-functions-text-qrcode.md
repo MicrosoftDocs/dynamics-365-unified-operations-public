@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="QRCODE">QRCODE ER function</a>
+# QRCODE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `QRCODE` function returns a *Container* value that presents the Quick Respon
 
 ## Syntax
 
-```
+```vb
 QRCODE (text)
 ```
 
@@ -58,7 +58,7 @@ The resulting binary stream.
 
 You can configure an Electronic reporting (ER) format to generate an outbound document in Microsoft Office format (Excel workbooks or Word documents) by using a predefined template. This template may contain a **Picture** object (Excel workbook) or a **Picture Content Control** (Word document) as a placeholder for a QR code image. You need to add to the configured ER format a **Cell** element that will be used to fill this placeholder in. To specify what information will be stored in a QR code, you need to define a binding for this **Cell** element. For example, you can configure such binding as containing the following expression:
 
-```
+```vb
 QRCODE (model.ListOfShelfLabels.LabelText)`
 ```
 

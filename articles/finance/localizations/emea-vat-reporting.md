@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -270,13 +270,13 @@ The VAT statement for each country must meet the requirements of the country’s
 | Belgium        |                                                                                 |
 | Czech Republic |  [VAT statement for the Czech Republic](emea-cze-vat-statement-details.md)   |
 | Estonia        |  [VAT statement details for Estonia](emea-est-vat-statement-details.md) |
-| Finland        |                                                                                 |
-| Germany        |                                                                                 |
+| Finland        | [Sales tax report for Finland](emea-fin-sales-tax-payment-report-finland.md)          |
+| Germany        | [VAT declaration for Germany](emea-de-vat-declaration.md)                       |
 | Italy          | [VAT statements details for Italy](emea-ita-vat-statements-details.md)            |
 | Latvia         | [VAT statement details for Latvia](emea-lva-vat-statement-details.md)           |
 | Lithuania      | [VAT statement details for Lithuania](emea-ltu-vat-statement-details.md)         |
-| Netherlands    |                                                                                 |
-| Sweden         |                                                                                 |
+| Netherlands    | [VAT declaration for the Netherlands](emea-nl-vat-declaration.md)           |
+| Sweden         | [Sales tax report for Sweden](emea-swe-sales-tax-payment-report-sweden.md)          |
 
 
 

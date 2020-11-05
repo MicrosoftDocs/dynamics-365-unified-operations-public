@@ -86,28 +86,32 @@ Isaac, a developer, builds a customer entity that has fields that contain region
 
 The behavior of configuration keys and a country/region that are applied at the data source resembles the behavior of fields. These values are inferred from the data source, just as if they are applied to the field level. Here's an example.
 
-    Entity E1
+```Text
+Entity E1
 
-        |_ Data Source 1 (DS1)
+    |_ Data Source 1 (DS1)
 
-              Field1
+        Field1
 
-              Field2
+        Field2
 
-        |_Data Source 2 (DS2) UK
+    |_Data Source 2 (DS2) UK
 
-              Field3
+        Field3
 
-              Field4
+            Field4
+```
 
 #### Evaluation at the entity E1 level
 
-    Entity E1
+```Text
+Entity E1
 
-    |_F1
+|_F1
 
-    |_F2
+|_F2
 
-    |_F3 (UK inferred)
+|_F3 (UK inferred)
 
-    |_F4 (UK inferred)
+|_F4 (UK inferred)
+```

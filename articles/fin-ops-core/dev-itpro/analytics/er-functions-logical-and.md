@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="AND">AND ER function</a>
+# AND ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `AND` function returns a *Boolean* value of **TRUE** if all the specified co
 
 ## Syntax
 
-```
+```vb
 AND (condition 1[, condition 2, …, condition N])
 ```
 

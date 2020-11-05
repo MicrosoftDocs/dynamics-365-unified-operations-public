@@ -4,7 +4,7 @@
 title: Purchasing policies overview
 description: This article provides information about purchasing policies. A purchasing policy is a collection of rules that control the requisition process. Purchasing policies help procurement administrators implement their procurement strategy by creating a policy structure that is aligned with the organization’s strategic purchasing requirements.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
+ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11614
@@ -108,9 +108,9 @@ The purchase requisition RFQ rule defines criteria for requiring a request for q
 
 ### Purchase requisition control rule
 
-The purchase requisition control rule is an optional rule. When you create rules of this type, you can set options on various tabs:
+The purchase requisition control rule for requisitions of type **consumption** is an optional rule. When you create rules of this type, you can set options on various tabs:
 
--   On the **Workflow submission** tab, you can configure the fields that must be entered on the requisition line for the requisition to be submitted for approval when the requisition purpose is **Consumption**.
+-   On the **Workflow submission** tab, you can configure the fields that must be entered on the requisition line for the requisition to be submitted for approval.
 -   On the **Order quantities** tab, you can configure the fields that are required on the purchase requisition under certain conditions. You can also enforce order quantities.
 -   On the **Dates** tab, you can configure whether the accounting date is the same as the requested date
 -   On the **Address** tab, you can define whether the user is allowed to create new addresses in the system to apply to the purchase requisition.

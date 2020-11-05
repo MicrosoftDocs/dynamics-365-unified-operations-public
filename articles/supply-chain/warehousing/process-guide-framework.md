@@ -4,7 +4,7 @@
 title: Process guide framework
 description: This topic provides information about the process guide framework for developers who are extending our warehouse mobile processes in X++.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -165,9 +165,10 @@ The user can either cancel to go back to the start of the process or click **OK*
 The first step in building the business process is creating the controller class, extending from the **ProcessGuideController** abstract class which implements the default behaviors of a controller. The new class name is **ProdProcessGuideProductionStartController** and decorated with the **WHSWorkExecuteMode** value of **StartProdOrder**. The same **SysExtension** based instantiation that was used in the **WHSWorkExecuteDisplay** classes is used, which helps instantiate the controller when the user executes a menu item
 for this mode.
 
-<pre><code>
+```xpp
 [WHSWorkExecuteMode(WHSWorkExecuteMode::StartProdOrder)]
-public class ProdProcessGuideProductionStartController extends ProcessGuideController</code></pre>
+public class ProdProcessGuideProductionStartController extends ProcessGuideController
+```
 
 > [!NOTE]
 > The naming pattern of the class is **\<FunctionalArea\>ProcessGuide\<Businessprocessname\>Controller**. This is the pattern that is used for the controller classes and to extend to other classes.
@@ -181,18 +182,18 @@ The task of instantiating the class is delegated to a step factory, which is inv
 
 -   Decorate the **ProdProcessGuidePromptProductionIdStep** class with a **ProcessGuideStepName** attribute.
 
-    ```X++
+    ```xpp
     [ProcessGuideStepName(classStr(ProdProcessGuidePromptProductionIdStep))] public class ProdProcessGuidePromptProductionIdStep extends ProcessGuideStep
     ```
 
 -   In the controller class, implement the abstract method **initialStepName()** to return the step name.
 
-    ```X++
+    ```xpp
     protected final ProcessGuideStepName initialStepName()
     {
         return classStr(ProdProcessGuidePromptProductionIdStep);
-     }
-     ````   
+    }
+    ````   
     
 > [!NOTE]
 > The value in the **ProcessGuideStepName** attribute does not need to exactly match the class name as shown above. However, implementing this allows for uniformity and type-safety around cross-references when using the class. Using this naming convention is recommended.
@@ -212,14 +213,18 @@ The instantiation mechanism of the class is similar to how the step was instanti
 
 -   Decorate the **ProdProcessGuidePromptProductionIdPageBuilder** class with a **ProcessGuidePageBuilderName** attribute.
 
-``[ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))] public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder``
+    ```xpp
+    [ProcessGuidePageBuilderName(classStr(ProdProcessGuidePromptProductionIdPageBuilder))] public class ProdProcessGuidePromptProductionIdPageBuilder extends ProcessGuidePageBuilder
+    ```
 
 -   In the **ProdProcessGuidePromptProductionIdStep** class, implement the abstract method **pageBuilderName()** to return this name.
 
-    ``protected final ProcessGuidePageBuilderName pageBuilderName()
+    ```xpp
+    protected final ProcessGuidePageBuilderName pageBuilderName()
     {
         return classStr(ProdProcessGuidePromptProductionIdPageBuilder);
-     }``    
+    }
+    ```    
 
 > [!TIP]
 > Similar to the step factory, there is also an abstract factory pattern implemented for the page builder factory. So, in the rare case that you want a different strategy for instantiating the page builder, you can do the following:
@@ -233,19 +238,23 @@ To implement this, you need to override two methods in the **ProdProcessGuidePro
 
 -   Use the **addDataControls()** method to add the text box.
 
-    ``protected final void addDataControls(ProcessGuidePage _page)
+    ```xpp
+    protected final void addDataControls(ProcessGuidePage _page)
     {
         _page.addTextBox(ProcessGuideDataTypeNames::ProdId, "@SYS4398", extendedTypeNum(ProdId));
-     }``   
+    }
+    ```   
 
 -   Use the **addActionControls()** method to add the **OK** and **Cancel** buttons.
 
-    ``protected final void addActionControls(ProcessGuidePage _page)
+    ```xpp
+    protected final void addActionControls(ProcessGuidePage _page)
     {
         #ProcessGuideActionNames
         _page.addButton(step.createAction(#ActionOK), true);
         _page.addButton(step.createAction(#ActionCancelExitProcess));
-     }``   
+    }
+    ``` 
 
 This adds the data controls, followed by the buttons. However, if you want to build a screen with interspersed data controls and buttons, you can override the **addControls()** method instead for flexibility.
 
@@ -262,12 +271,14 @@ The processing of the data is done in the **ProcessGuideDataProcessorDefault** c
 
 When the validation is successful, it is time to mark the step as completed. This is done in the base class, however, you need to implement the condition to determine the step completion. The following overridden method does that.
 
-``protected final boolean isComplete()
+```xpp
+protected final boolean isComplete()
 {
     WhsrfPassthrough pass = controller.parmSessionState().parmPass();
     ProdId prodId = pass.lookup(ProcessGuideDataTypeNames::ProdId);
         return (prodId != '');
- }``   
+}
+```   
 
 ### Step two: View order details and confirm
 
@@ -275,14 +286,16 @@ In the second step in the process, the user is shown a screen with details about
 
 The ProdProcessGuideConfirmProductionOrderStep class looks like the following.
 
-``[ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
+```xpp
+[ProcessGuideStepName(classStr(ProdProcessGuideConfirmProductionOrderStep))]
 public class ProdProcessGuideConfirmProductionOrderStep extends ProcessGuideStep
 {
     protected final ProcessGuidePageBuilderName pageBuilderName()
     {
         return classStr(ProdProcessGuideConfirmProductionOrderPageBuilder);
      }
- }``     
+}
+```     
 
 Because the user does not enter any values here, you do not need to override the **isComplete()** method. The step is complete when the user clicks **OK**.
 
@@ -290,7 +303,7 @@ The page builder class overrides the **addDataControls()** method to add three l
 
 The **addActionControls()** is then overridden to add 2 buttons – the **OK** button, and the **Cancel** button to cancel the process and go back to the start of the process.
 
-```X++
+```xpp
 /// <summary>
 /// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
 /// and then confirm.
@@ -333,7 +346,7 @@ The **ProcessGuideStepWithoutPrompt** abstract class implements the default beha
 
 The following code example shows the class and the **doExecute()** method implementation. The method simply retrieves the order ID and user ID from the session state and invokes the method to start this production order.
 
-```X++
+```xpp
 /// <summary>
 /// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
 /// </summary>
@@ -366,7 +379,7 @@ In case of an exception, the framework exception handling logic ensures that the
 
 The **ProcessGuideController** base class instantiates the **ProcessGuideNavigationAgentDefault** class, which relies on a pre-defined navigation route, which is a simple map of source and destination steps. For the production start scenario, because there is no conditional branching, this implementation would suffice. Therefore, you only need to override the **initializeNavigationRoute()** method to define the navigation route.
 
-```X++
+```xpp
     protected ProcessGuideNavigationRoute initializeNavigationRoute()
     {
         ProcessGuideNavigationRoute navigationRoute = new ProcessGuideNavigationRoute();
@@ -392,7 +405,7 @@ There are processes where there will be conditional branching (based on user act
 
 Action classes represent user actions, so this example uses the **OK** action to show how the actions are created.
 
-```X++
+```xpp
 [ProcessGuideActionName(#ActionOK)]
 public class ProcessGuideOKAction extends ProcessGuideAction
 {
@@ -404,8 +417,8 @@ public class ProcessGuideOKAction extends ProcessGuideAction
      {
         step.executeOKAction();
       }
-  }
-  ```    
+}
+```    
 
 The class must implement 2 abstract methods:
 
@@ -415,7 +428,7 @@ The class must implement 2 abstract methods:
 
 The actions are instantiated using **SysExtension** framework based on the **ProcessGuideActionName** attribute. Similar to the instantiation of page builders, the step class implements the default action factory, and it is possible to override that. The page builder adds a button control like this.
 
-```X++
+```xpp
 _page.addButton(step.createAction(#ActionOK), true);
 ```
 
@@ -430,7 +443,7 @@ To summarize everything that's been explained in this topic, here's a comprehens
     1.  Override **initialStepName()** to provide the name of the first step.
     2.  Override **initializeNavigationRoute()** to construct the navigation map.
 
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuideProductionStartController</c> class is the controller class for the production order start process guide.
         /// </summary>
@@ -460,7 +473,7 @@ To summarize everything that's been explained in this topic, here's a comprehens
     1.  Override **isComplete()** to specify when the step is considered complete.
     2.  Override **pageBuilderName()** to specify the page builder to be used.
 
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuidePromptProductionIdStep</c> represents a step that 
         /// that prompts the user for a production order id.
@@ -489,7 +502,7 @@ To summarize everything that's been explained in this topic, here's a comprehens
     1.  Override **addDataControls()** to add the **Prod ID** textbox.
     2.  Override **addActionControls()** to add the **OK** and **Cancel** buttons.
         
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuidePromptProductionIdPageBuilder</c> class builds a page 
         /// that prompts the user for a production order id.
@@ -516,7 +529,7 @@ To summarize everything that's been explained in this topic, here's a comprehens
 
     1.  Override **pageBuilderName()** to specify the page builder to be used.
         
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuideConfirmProductionOrderStep</c> class represents the step for viewing production order
         /// details and confirming the same.
@@ -538,7 +551,7 @@ To summarize everything that's been explained in this topic, here's a comprehens
 
     2.  Override **addActionControls()** to add the **OK** and **Cancel** buttons.
         
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuideConfirmProductionOrderPageBuilder</c> builds a page that allows the user to see details of a production order
         /// and then confirm.
@@ -579,7 +592,7 @@ To summarize everything that's been explained in this topic, here's a comprehens
     1.  Override **doExecute()** to perform the production start process and add the
         process completion message.
 
-        ```X++
+        ```xpp
         /// <summary>
         /// The <c>ProdProcessGuideStartProductionOrderStep</c> represents a step that starts a production order.
         /// </summary>

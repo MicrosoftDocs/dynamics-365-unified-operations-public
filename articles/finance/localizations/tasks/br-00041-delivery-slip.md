@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Delivery slips (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can post a delivery slip for a sales order that has multiple sales order lines that have a delivery Código Fiscal de Operações e Prestações (CFOP) code. For each sales order line, you must specify the CFOP code that has a delivery CFOP code assigned to it. A delivery slip is used when the customer that you deliver items to differs from the customer that is invoiced. (In other words, the customer account and invoice account differ.) Delivery slips are posted in chronological order. You must attach fiscal references to delivery slips before you post them. This task uses the BRMF demo company.
 

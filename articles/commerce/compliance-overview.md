@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Compliance overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic is an overview of the compliance guidance that is provided with Microsoft Dynamics 365 Commerce to help you make your company's sites compliant. Compliance is an important factor for all businesses, because it helps their user base connect with their site content. By staying compliant, you can also help protect your company from expensive legal action or hefty fines.
@@ -49,3 +49,5 @@ To learn more about the basic principles that Microsoft uses, visit the [Microso
 [Cookie compliance](cookie-compliance.md)
 
 [Add a privacy policy page](add-privacy-page.md)
+
+[Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)

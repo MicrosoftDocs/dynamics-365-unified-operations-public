@@ -3,11 +3,9 @@
 
 title: Upgrade from AX 2012 - Data upgrade in sandbox environments
 description: This topic explains how to perform a data upgrade from Microsoft Dynamics AX 2012 to Finance and Operations in a sandbox environment. 
-author: tariqbell
+author: laneswenka
 manager: AnnBe
-
-ms.date: 07/10/2019
-
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +22,7 @@ ms.search.scope:  Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
@@ -34,6 +32,9 @@ ms.dyn365.ops.version: Platform update 8
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
+
+> [!NOTE]
+> This topic is being phased out in favor of a new process that is based on the dacpac file format. For information about the new process, see [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](upgrade-data-sandbox-dacpac.md).
 
 The output of this task is an upgraded database that you can use in a sandbox environment. In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database. On this environment business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
@@ -72,119 +73,112 @@ This step must be done by the database administrator (DBA) or a person who has s
 
 To create a database copy, make a backup of the original database, and restore it under a new name. Make sure that enough space is available for both databases. You can create the copy on a different server. The version of the SQL Server instance that runs the database isn't important.
 
-Here is an example of the code that creates a database copy. You must modify this example to reflect your specific database names.
+To perform this action, right-click the source database, and then select **Tasks** \> **Backup**. Create a full-copy backup. To avoid overwriting your existing database backups, you might want to save the file under a different name in the backup directory.
 
-```
-    BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
-    NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
-    GO
-
-    RESTORE DATABASE [AxDB_copyForUpgrade] FROM  DISK = N'D:\Backups\axdb_copyForUpgrade.bak'   WITH  FILE = 1,  
-    MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_copyForUpgrade.mdf',  
-    MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
-    NOUNLOAD,  STATS = 5
-```
 ## Run the T-SQL script to prepare the database
 
 This script prepares the database by removing users, removing procedures related to the AX 2012 RTM model store, cleaning up schemas, dropping views, and dropping references to tempDB. 
 
 After the copy is created, run the following Transact-SQL (T-SQL) script against it.
 
-```
-    --remove NT users as these are not supported in Azure SQL Database
-    declare 
-    @SQL varchar(255),
-    @UserName varchar(255)
+```sql
+--remove NT users as these are not supported in Azure SQL Database
+declare 
+@SQL varchar(255),
+@UserName varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     userCursor CURSOR for
-    select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
+declare     userCursor CURSOR for
+select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
 
-    OPEN userCursor
-        FETCH userCursor into @UserName
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL = 'DROP USER [' + @UserName + ']'
-            exec(@SQL)
-            FETCH userCursor into @UserName
-          END
-    CLOSE userCursor
-    DEALLOCATE userCursor
+OPEN userCursor
+    FETCH userCursor into @UserName
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL = 'DROP USER [' + @UserName + ']'
+           exec(@SQL)
+           FETCH userCursor into @UserName
+       END
+CLOSE userCursor
+DEALLOCATE userCursor
 
-    go
+go
 
-    --remove any AX 2012 RTM model store procedures that still exist
-    declare 
-    @SQL varchar(255),
-    @procname varchar(255)
+--remove any AX 2012 RTM model store procedures that still exist
+declare 
+@SQL varchar(255),
+@procname varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     procCursor CURSOR for
-    select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
+declare     procCursor CURSOR for
+select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
 
-    OPEN procCursor
-        FETCH procCursor into @procname
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL = 'DROP PROCEDURE [' + @procname + ']'
-            exec(@SQL)
-            FETCH procCursor into @procname
-          END
-    CLOSE procCursor
-    DEALLOCATE procCursor
+OPEN procCursor
+    FETCH procCursor into @procname
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL = 'DROP PROCEDURE [' + @procname + ']'
+           exec(@SQL)
+           FETCH procCursor into @procname
+       END
+CLOSE procCursor
+DEALLOCATE procCursor
 
-    go
+go
 
-    --If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
-    --Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
-    --The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
+--If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
+--Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
+--The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
 
-        if exists (select 1 from sys.schemas where name = 'contoso\admin')
-    begin
-        drop schema [contoso\admin]
-    end
-    if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
-    begin
-        drop schema [CONTOSO\Domain Users]
-    end
-    go
+    if exists (select 1 from sys.schemas where name = 'contoso\admin')
+begin
+    drop schema [contoso\admin]
+end
+if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
+begin
+    drop schema [CONTOSO\Domain Users]
+end
+go
 
-    --drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Databases
-    declare 
-    @SQL2 varchar(255),
-    @ViewName varchar(255)
+--drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Databases
+declare 
+@SQL2 varchar(255),
+@ViewName varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     viewCursor CURSOR for
+declare     viewCursor CURSOR for
 
-    select viewname = v.name
-    from sys.views v
-    order by v.name
+select viewname = v.name
+from sys.views v
+order by v.name
 
-    OPEN viewCursor
+OPEN viewCursor
 
-    FETCH viewCursor into @ViewName
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL2 = 'DROP VIEW ' + @ViewName
-            exec(@SQL2)
-            FETCH viewCursor into @ViewName
-          END
-    CLOSE viewCursor
-    DEALLOCATE viewCursor
-    go
+FETCH viewCursor into @ViewName
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL2 = 'DROP VIEW ' + @ViewName
+           exec(@SQL2)
+           FETCH viewCursor into @ViewName
+       END
+CLOSE viewCursor
+DEALLOCATE viewCursor
+go
 
-    -- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
-    If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
-    begin
-        drop procedure MaintainShipCarrierRole
-    end
+-- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
+If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
+begin
+    drop procedure MaintainShipCarrierRole
+end
 ```
 
 ## Export the copied database to a bacpac file
+
+> [!NOTE]
+> This topic is being phased out in favor of a new process that is based on the dacpac file format. For information about the new process, see [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](upgrade-data-sandbox-dacpac.md).
 
 Export the copied database to a bacpac file by using the SQLPackage.exe tool. This step should be done by the DBA or a team member who has equivalent knowledge.
 
@@ -199,7 +193,7 @@ This step is important, because the export will have to be done again during the
 
 Next, open a **Command Prompt** window as an administrator, and run the following commands.
 
-```
+```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
 SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
@@ -207,10 +201,10 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 Here is an explanation of the parameters:
 
-- **ssn** (source server name) – The name of the SQL Server to export from. For our process, this parameter should always be set to **localhost**.
+- **ssn** (source server name) – The name of the SQL Server to export from. For this process, the parameter should always be set to **localhost**.
 - **sdn** (source database name) – The name of the database to export.
 - **tf** (target file) – The path and name of the file to export to. The folder should already exist, but the file will be created by the process.
-- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
+- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without a timeout.
 
 ## Upload the bacpac file to Azure storage or the LCS Asset Library
 
@@ -220,16 +214,18 @@ The bacpac file you have created will need to be copied to the AOS machine in yo
 
 You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service. We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself). There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](https://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then on your download it on your development environment.
 
-Another (free) option is to use the LCS asset library, however, the upload and download will take longer than Azure storage. To use this option:
-1. Log into your project in LCS and go to your Asset library.
+Another option is to use the Asset library in Microsoft Dynamics Lifecycle Services (LCS). However, the upload and download will take longer than Azure storage. To use this option:
+1. Sign in to your project in LCS and go to your Asset library.
 2. Select the Database backup tab.
 3. Upload the bacpac file.
 You can later download the bacpac onto the sandbox AOS VM by logging into LCS on that VM and downloading it from the LCS Asset library.
 
 ## Import the bacpac file into SQL Database
 
-During this step, you will import the exported bacpac file to the SQL Database instance that your sandbox environment uses. You must first install the latest version of Management Studio on your sandbox AOS machine. You will then import the file by using the SQLPackage.exe tool.
+> [!NOTE]
+> This topic is being phased out in favor of a new process that is based on the dacpac file format. For information about the new process, see [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](upgrade-data-sandbox-dacpac.md).
 
+During this step, you will import the exported bacpac file into the SQL Database instance that your sandbox environment uses. You must first install the latest version of Management Studio on your sandbox AOS machine. You will then import the file by using the SQLPackage.exe tool.
 
 You will perform these tasks directly on the AOS machine in your sandbox environment, because there are firewall rules that restrict access to the SQL Database instance. However, by using the AOS machine, you can gain access.
 
@@ -239,25 +235,30 @@ For performance reasons, we recommend that you put the bacpac file on drive D on
 
 Open a **Command Prompt** window as an administrator, and run the following commands.
 
-```
-    cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
+```Console
+cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-    SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tdn:<New database name> /tu:sqladmin /tp:<password from LCS> /mp:64 /p:CommandTimeout=1200 /p:DatabaseEdition=<Edition> /p:DatabaseServiceObjective=<Service objective> /p:DatabaseMaximumSize=<Maximum size>
 ```
 
 Here is an explanation of the parameters:
 
+- **sf** (source file) – The path and name of the file to import from.
 - **tsn** (target server name) – The name of the SQL Azure server to import to. The name can be found in LCS. Suffix it with **.database.windows.net**.
 - **tdn** (target database name) – The name of the database to import to. The database should not already exist. The import process will create it.
-- **sf** (source file) – The path and name of the file to import from.
-- **tp** (target password) – The SQL password for the target SQL Database instance.
 - **tu** (target user) – The SQL user name for the target SQL Database instance. We recommend that you use **sqladmin**. You can retrieve the password for this user from your LCS project.
-- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
-- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this envrironment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **tp** (target password) – The SQL password for the target SQL database instance.
+- **mp** (max parallelism) - Specifies the degree of parallelism for concurrent operations running against a database. The default value is 8. A value of 64 provides the best performance in most scenarios.
+- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without a timeout.
+- **/p:DatabaseEdition** – Specifies the edition of the database such as Basic, Standard, Premium, GeneralPurpose, BusinessCritical, or Hyperscale. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2, P4, or GP_Gen5_8. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseMaximumSize** – Defines the maximum size in GB of an Azure SQL database. You may need to use this parameter to allow a large database to be imported.
 
-After you run the commands, you may see the following warning. You can safely ignore it.
+After you run the commands, you may receive the following warning. You can safely ignore it.
 
 ![Sandbox error](./media/sandbox-2.png)
+
+If you receive an error message about a non-valid value, double-check your parameters. If they are okay, you may need to use a newer version of SqlPackage. You can use the [Windows .NET Core](/sql/tools/sqlpackage-download) version without the need to install. It is a .zip file that can be extracted to C:\Temp\Sqlpackage-dotnetcore, for example. Now when you import the database, instead of using the Sqlpackage.exe under C:\Program Files (x86) you can use the Sqlpackage.exe in C:\Temp\Sqlpackage-dotnetcore.
 
 
 ## Run a T-SQL script to update the database
@@ -267,47 +268,42 @@ Run the following script against the imported database. The script performs the 
 -   Sets the correct performance parameters
 -   Enables the SQL Query Store feature
 
-```
-    CREATE USER axdeployuser FROM LOGIN axdeployuser
-    EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+```sql
+CREATE USER axdeployuser FROM LOGIN axdeployuser
+EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
-    CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'db_owner', 'axdbadmin'
 
-    CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
+CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
+EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
 
-    CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
+CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
+EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
+EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
-    CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
+EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
-    CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-    ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-    ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
-    ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
-    ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
+ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
+ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ```
 
 ## Run the data upgrade deployable package
 
-Tier 2 Sandbox environments do not allow running DataUpgrade packages against them via LCS. To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+For Tier-2 sandbox environments, you can now run the data upgrade package directly from LCS, just as you can do for Tier-1 DevTest environments. To apply the package, go to your environment in LCS, and select **Maintain** \> **Apply updates**. Scroll to the bottom of the list, and wait for the data upgrade packages to be loaded from the Shared asset library. It might take some time for the packages to be loaded. If no data upgrade packages appear in the list, go to your project settings in LCS, and make sure that your legacy system is set to **AX2012 Upgrade**. You can then apply the packages.
 
-1. Sign in to [LCS](https://lcs.dynamics.com/)
-2. Select the **Shared asset library** tile.
-3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
-4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade. For example, if you're upgrading from AX 2012, the package name starts with AX2012DataUpgrade. Select the package that corresponds to the release you are upgrading to. For example: AX2012DataUpgrade-July2017.
-
-Next, execute the package manually via Remote Desktop on the AOS VM. 
+The name of the package that you select should match your version. For example, to upgrade to version 10.0.14, select **AX2012DataUpgrade-10-0-14**.
 
 For more information, see [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md). 
 

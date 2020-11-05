@@ -3,7 +3,7 @@
 
 title: Deploy a new environment
 description: This topic explains how to deploy a new environment using the self-service deployment experience.
-author: manado
+author: rashmansur
 manager: AnnBe
 ms.date: 12/03/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 
@@ -46,7 +46,7 @@ This topic walks through the process of deploying sandbox (Tier 2 and above) and
 8. Specify **two user email addresses** that will receive **notifications** related to this environment. These users are in addition to the users who are already on the project team (such as an ISV or a partner).
 9. Select the **email address** of the **user** that will be set as the **system administrator** in the product.
 10. After you validate the configurations, click **Submit** to trigger the deployment.
-11. If you plan to use Retail channels, you must also [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md).
+11. If you plan to use channels, you must also [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md).
 
 The environment deployment starts immediately and could take anywhere between **1-2 hours** to complete. 
 
@@ -64,4 +64,4 @@ You can delete an environment that is in the deployed state directly through the
 > To redeploy an environment, you will need to delete the environment and then deploy it again using the steps listed above. 
 
 > [!IMPORTANT]
-> For existing customers using Retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md) no later than January 31, 2020. There is no action required for customers who exclusively use Store Scale Unit. Contact your Microsoft FastTrack Solution Architect if you require an extension.
+> For existing customers using channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md) no later than January 31, 2020. There is no action required for customers who exclusively use Store Scale Unit. Contact your Microsoft FastTrack Solution Architect if you require an extension.

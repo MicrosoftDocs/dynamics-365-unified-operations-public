@@ -90,7 +90,7 @@ Follow these steps to extend the form definition for the **Reservation managemen
 8. Right-click, and then select **New Tab Page**.
 9. Rename the tab page to something meaningful, such as **Analytics**.
 10. In the form designer, select **Analytics (Tab Page)**.
-11. Set the **Caption** property to **Analytics**.
+11. Set the **Caption** property to **Analytics**, and set the **Auto Declaration** property to **Yes**.
 12. Right-click the control, and then select **New** \> **Group** to add a new form group control.
 13. Rename the form group to something meaningful, such as **powerBIReportGroup**.
 14. In the form designer, select **PanoramaBody (Tab)**, and then drag the control onto the **Workspace** tab.
@@ -117,7 +117,7 @@ Follow these steps to add business logic that initializes the report viewer cont
 2. Press F7 to access the code behind the code definition.
 3. Add the following X++ code.
 
-    ```
+    ```xpp
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
@@ -162,7 +162,7 @@ You've now completed the task of adding business logic to initialize the embedde
 This section provides information about the helper class that is used to embed a Power BI report (.pbix resource) in a form group control.
 
 #### Syntax
-```
+```xpp
 public static void initializeReportControl(
     str                 _resourceName,
     FormGroupControl    _formGroupControl,

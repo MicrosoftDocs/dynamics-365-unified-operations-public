@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="UPPER">UPPER ER function</a>
+# UPPER ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `UPPER` function returns the specified text string as a *String* value after
 
 ## Syntax
 
-```
+```vb
 UPPER (text )
 ```
 

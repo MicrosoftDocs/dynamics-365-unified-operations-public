@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="JSONVALUE">JSONVALUE ER function</a>
+# JSONVALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `JSONVALUE` function parses data in JavaScript Object Notation (JSON) format
 
 ## Syntax
 
-```
+```vb
 JSONVALUE (input, path)
 ```
 

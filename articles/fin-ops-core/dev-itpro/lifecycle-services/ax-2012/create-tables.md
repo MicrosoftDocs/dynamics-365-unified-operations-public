@@ -37,9 +37,9 @@ ms.dyn365.ops.version: 2012
 Create tables to store data in by using the Application Object Tree (AOT).
 
 > [!NOTE]
-> Before creating new tables, review the tables that ship with Microsoft Dynamics AX to determine whether you can use existing tables. For more information, see [Application Tables](http://msdn.microsoft.com/library/a905f039-ef71-4c61-8f3f-71dadf27b09e(AX.60).aspx).
+> Before creating new tables, review the tables that ship with Microsoft Dynamics AX to determine whether you can use existing tables. For more information, see [Application Tables](https://msdn.microsoft.com/library/a905f039-ef71-4c61-8f3f-71dadf27b09e(AX.60).aspx).
 
-Table fields are based on a primitive data type or an extended data type. For more information, see [Primitive Data Types](http://msdn.microsoft.com/library/29e7d464-b72d-4a86-a982-12f9e90e704e(AX.60).aspx) and [How to: Create an Extended Data Type](http://msdn.microsoft.com/library/6292481f-1d73-46e9-8b46-18ab7de9a71d(AX.60).aspx). The AutoReport and AutoLookup groups are automatically created when you create a table. For more information, see [Implementing Automatic Reports for Forms](http://msdn.microsoft.com/library/86ee1f62-8325-4bcb-a884-a5ae521355c8(AX.60).aspx) and [How to: Add a Control with a Lookup Form](http://msdn.microsoft.com/library/2e365e4b-842a-44eb-b0fa-6fa4c8c1e0fe(AX.60).aspx). To manage changes to AOT objects, a version control system is available. For more information, see [Version Control System](http://msdn.microsoft.com/library/522708f8-80a0-4bfd-9634-b7cb868d1874(AX.60).aspx).
+Table fields are based on a primitive data type or an extended data type. For more information, see [Primitive Data Types](https://msdn.microsoft.com/library/29e7d464-b72d-4a86-a982-12f9e90e704e(AX.60).aspx) and [How to: Create an Extended Data Type](https://msdn.microsoft.com/library/6292481f-1d73-46e9-8b46-18ab7de9a71d(AX.60).aspx). The AutoReport and AutoLookup groups are automatically created when you create a table. For more information, see [Implementing Automatic Reports for Forms](https://msdn.microsoft.com/library/86ee1f62-8325-4bcb-a884-a5ae521355c8(AX.60).aspx) and [How to: Add a Control with a Lookup Form](https://msdn.microsoft.com/library/2e365e4b-842a-44eb-b0fa-6fa4c8c1e0fe(AX.60).aspx). To manage changes to AOT objects, a version control system is available. For more information, see [Version Control System](https://msdn.microsoft.com/library/522708f8-80a0-4bfd-9634-b7cb868d1874(AX.60).aspx).
 
 ## Create a Table
 1.  In the AOT, expand the **Data Dictionary** node.
@@ -68,13 +68,13 @@ When you insert data in a table during development, the SQL statement you use to
 Additional resources
 --------
 
-[Use the Table Browser to View, Add, Modify, or Delete Records](http://msdn.microsoft.com/library/89402b55-02ea-40bc-ad0e-0774b1655426(AX.60).aspx)
+[Use the Table Browser to View, Add, Modify, or Delete Records](https://msdn.microsoft.com/library/89402b55-02ea-40bc-ad0e-0774b1655426(AX.60).aspx)
 
-[How to: Add a Relation to a Table](http://msdn.microsoft.com/library/1b164b99-de08-4557-8da5-1931d9469ca1(AX.60).aspx)
+[How to: Add a Relation to a Table](https://msdn.microsoft.com/library/1b164b99-de08-4557-8da5-1931d9469ca1(AX.60).aspx)
 
-[How to: Create an Index](http://msdn.microsoft.com/library/5c412c46-724b-4498-ab42-51725f15c71a(AX.60).aspx)
+[How to: Create an Index](https://msdn.microsoft.com/library/5c412c46-724b-4498-ab42-51725f15c71a(AX.60).aspx)
 
-[Tables, Views, and Maps](http://msdn.microsoft.com/library/9c62bde0-46a1-4b48-87b2-778a68627cd1(AX.60).aspx)
+[Tables, Views, and Maps](https://msdn.microsoft.com/library/9c62bde0-46a1-4b48-87b2-778a68627cd1(AX.60).aspx)
 
 
 

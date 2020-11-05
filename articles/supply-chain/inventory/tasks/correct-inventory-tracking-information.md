@@ -4,7 +4,7 @@
 title: Correct inventory tracking information
 description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. 
 author: MarkusFogelberg
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Correct inventory tracking information
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch. You can walk through this procedure in demo data company USPI, or using your own data. If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled. You also need to have an inventory journal name set up for inventory transfers. These tasks would normally be carried out by a warehouse employee.
+This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. In this example, we'll update the information of a batch controlled item by changing an incorrectly registered batch to another batch. You can walk through this procedure in demo data company USPI, or using your own data. If you use your own data, you need to have an item that's batch-enabled, and it must not be location-controlled. You also need to have an inventory journal name set up for inventory transfers. These tasks would normally be carried out by a warehouse employee.
 
 
 ## Create an inventory transfer journal

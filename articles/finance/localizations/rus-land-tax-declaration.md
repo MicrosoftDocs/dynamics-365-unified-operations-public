@@ -147,28 +147,28 @@ Here is an overview of the steps for setting up land tax:
 
 3.  Set the following values for the tax allowance.
 
-| **Field**       | **Description**                                                                                                                                                                                                                       |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Privilege       | Enter the tax allowance code.                                                                                                                                                                                                         |
-| Type of tax     | Select **Land tax**.                                                                                                                                                                                                                  |
-| Benefit type    | Select the type of tax allowance. The following values are applicable to land tax allowances: **Exemption from tax**, **Tax base reduction**, **Reduction of tax rate**, **Reduction of tax amount**, and **Non-taxable area share**. |
-| Name            | Enter the name of the tax allowance.                                                                                                                                                                                                  |
-| Allowance value | Define the tax allowance value, depending on type of tax allowance that you selected in the **Benefit type** field:                                                                                                                   |
+    | Field       | Description                                                                                                                                                                                                                       |
+    |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Privilege       | Enter the tax allowance code.                                                                                                                                                                                                         |
+    | Type of tax     | Select **Land tax**.                                                                                                                                                                                                                  |
+    | Benefit type    | Select the type of tax allowance. The following values are applicable to land tax allowances: **Exemption from tax**, **Tax base reduction**, **Reduction of tax rate**, **Reduction of tax amount**, and **Non-taxable area share**. |
+    | Name            | Enter the name of the tax allowance.                                                                                                                                                                                                  |
+    | Allowance value | Define the tax allowance value, depending on type of tax allowance that you selected in the **Benefit type** field:                                                                                                                   |
 
--   **Exemption from tax:** Don't define the allowance value, because exemption
+    -   **Exemption from tax:** Don't define the allowance value, because exemption
     from tax is always considered 100 percent, and the tax amount is 0 (zero).
 
--   **Tax base reduction:** Define the amount, in the local currency, that is
+    -   **Tax base reduction:** Define the amount, in the local currency, that is
     reducing the tax base amount for each asset.
 
--   **Reduction of tax rate:** Define the percentage of the tax rate reduction.
+    -   **Reduction of tax rate:** Define the percentage of the tax rate reduction.
     For example, if the tax rate is 10 percent, and the allowance value is 2
     percent, the reduced tax rate is 8 percent.
 
--   **Reduction of tax amount:** Define the amount, in the local currency, that
+    -   **Reduction of tax amount:** Define the amount, in the local currency, that
     is reducing the calculated tax amount for each asset.
 
--   **Non-taxable area share:** A value will be defined for each land asset in
+    -   **Non-taxable area share:** A value will be defined for each land asset in
     the fixed asset record.
 
 ### Assign tax allowances to a sales tax code as a reduction of the tax rate, a reduction of the tax amount, and a tax base reduction
@@ -194,18 +194,17 @@ Here is an overview of the steps for setting up land tax:
 4.  In the **Registration type** field, select the registration type for
     OKATO/OKTMO.
 
->   If the required registration type isn't listed, follow these steps to add
->   it:
+    If the required registration type isn't listed, follow these steps to add it:
 
-1.  On the **Registration types** page (**Organization administration \> Global
+    1.  On the **Registration types** page (**Organization administration \> Global
     address book \> Registration types \> Registration types**), create a
     registration type.
 
-2.  On the **Registration categories** page (**Organization administration \>
+    2.  On the **Registration categories** page (**Organization administration \>
     Global address book \> Registration types \> Registration categories**),
     assign the new registration type to the **RCOAD** registration category.
 
-3.  In the **Registration number** field, enter the OKTMO code for the legal
+    3.  In the **Registration number** field, enter the OKTMO code for the legal
     entity's location.
 
 ### Set up tax authorities and related OKTMO codes
@@ -236,7 +235,8 @@ declarations to.
 
     4.  In the **Registration number** field, enter the OKTMO code.
 
-        **Note:** For realty objects that are located at the organization's main
+        > [!NOTE]
+        > For realty objects that are located at the organization's main
         location, the tax authority that assessed tax is reported to is defined
         as the tax authority that has the same OKTMO code as the legal entity.
 
@@ -288,17 +288,20 @@ company divisions.
 
 3.  On the **General** FastTab, in the **Separate division ID** field, select
     the company division that you created in the previous procedure.
+    
+    If the **Separate division ID** field is left blank, the location is the
+    same as the location of the organization's head office.
 
-    **Note:** For land assets that are located in territories that differ from
+    > [!NOTE]
+    > For land assets that are located in territories that differ from
     the organization's main location, the tax authority that land tax is
     reported to is defined as the tax authority that has the same OKTMO code as
-    the separate division that is associated with the land location. For
-    information about how to associate a fixed asset with a location, see the
+    the separate division that is associated with the land location. 
+    >
+    > For information about how to associate a fixed asset with a location, see the
     [Specify the location of the land](#specify-the-location-of-the-land)
     section later in this topic.
 
-    If the **Separate division ID** field is left blank, the location is the
-    same as the location of the organization's head office.
 
 ### Set up territories for distributed land assets
 
@@ -332,9 +335,8 @@ authorities.
 
     5.  Create lines for the OKTMO codes that are related to the tax authority.
 
->   Alternatively, create all the OKTMO codes, and then assign a code to the tax
->   authority on the **RCOAD codes** page (**Tax \> Setup \> Sales tax \> RCOAD
->   codes**).
+> [!NOTE]
+>  Alternatively, create all the OKTMO codes, and then assign a code to the tax authority on the **RCOAD codes** page (**Tax \> Setup \> Sales tax \> RCOAD codes**).
 
 ### Set up Fixed assets parameters for posting land tax
 
@@ -349,13 +351,13 @@ authorities.
 4.  In the **Compression** field, select the level of compression for land tax
     transactions:
 
--   **Tax** – A detailed ledger journal for land tax transactions will be
+    -  **Tax** – A detailed ledger journal for land tax transactions will be
     created for each sales tax code.
 
--   **Total** – A ledger journal for land tax transactions will be created as
+    -  **Total** – A ledger journal for land tax transactions will be created as
     one line that has the default sales tax code.
 
-1.  Close the page.
+5.  Close the page.
 
 ### Set up the journal for posting land tax
 
@@ -383,8 +385,7 @@ registers, you should set up posting groups.
 3.  In the **Ledger posting group** field, select a ledger posting group for
     land tax.
 
->   If no ledger posting group is listed, create one. In the **Sales tax
->   payable** field, enter the ledger account code for posting land tax.
+    If no ledger posting group is listed, create one. In the **Sales tax payable** field, enter the ledger account code for posting land tax.
 
 1.  In the **Account for FA taxes** field, select a ledger account for the land
     tax expenses.
@@ -489,9 +490,8 @@ the land asset.
     **Owned share denominator** fields, define your ownership share in the
     specified territory as a simple fraction.
 
->   **Note:** When the line for the change in cadastral value is created, the
->   **Tax base** and **Sales tax** fields in the fixed asset record can no
->   longer be edited.
+    > [!NOTE]
+    > When the line for the change in cadastral value is created, the **Tax base** and **Sales tax** fields in the fixed asset record can no longer be edited.
 
 ### Change the cadastral cost of land and specify the tax allowance history
 
@@ -515,29 +515,23 @@ change in cadastral value.
     specify any other values that have changed: **Category**, **Cadastral
     number**, **Owned share numerator**, or **Owned share denominator**.
 
->   **Note:** If this change is the first change in cadastral value, you must
->   also create a line for the previous values that were originally entered in
->   the fixed asset record.
+    > [!NOTE]
+    > If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the fixed asset record.
+    >  
+    > When the line for the change in cadastral value is created, corresponding fields in the fixed asset record can no longer be edited. They show the actual values from the tax reporting data history record.
+    >  
+    > Use the **History of tax reporting data** page to define the history of tax allowance changes.
 
->   When the line for the change in cadastral value is created, corresponding
->   fields in the fixed asset record can no longer be edited. They show the
->   actual values from the tax reporting data history record.
-
->   Use the **History of tax reporting data** page to define the history of tax
->   allowance changes.
-
-1.  In the **Land tax exemption (art 387)** field, specify the code for the tax
+7.  In the **Land tax exemption (art 387)** field, specify the code for the tax
     allowance as an exemption from tax in accordance with federal law.
     Alternatively, in the **Land tax exemption (art 395)** field, specify the
     code for the tax allowance as an exemption from tax in accordance with
     regional law.
 
-2.  Set the **Land tax allowance as non-taxable share** field, if it's
+8.  Set the **Land tax allowance as non-taxable share** field, if it's
     applicable.
 
->   When the values for tax allowances are added, corresponding fields in the
->   fixed asset record show the actual values from the tax reporting data
->   history record.
+    When the values for tax allowances are added, corresponding fields in the fixed asset record show the actual values from the tax reporting data history record.
 
 ### Change the cadastral cost of a distributed land asset
 
@@ -563,13 +557,10 @@ changes, follow these steps to specify the new cadastral cost in each territory.
     specify any other values that have changed: **Owned share numerator** or
     **Owned share denominator**.
 
->   **Note:** If this change is the first change in cadastral value, you must
->   also create a line for the previous values that were originally entered in
->   the distribution record.
-
->   When the line for the change in cadastral value is created, corresponding
->   fields in the distribution record can no longer be edited. They show the
->   actual values from the history record.
+> [!NOTE] 
+> If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the distribution record.
+>
+> When the line for the change in cadastral value is created, corresponding fields in the distribution record can no longer be edited. They show the actual values from the history record.
 
 Calculate land tax registers
 ----------------------------
@@ -584,7 +575,7 @@ land tax registers. The following tax registers are available:
 
     -   The land category and cadastral number.
 
-    -   **Design and building period** – The possible values are **3 years** and
+-   **Design and building period** – The possible values are **3 years** and
         **More than 3 years**.
 
     -   The cadastral cost, and the owned share as a simple fraction.
@@ -600,14 +591,14 @@ land tax registers. The following tax registers are available:
     -   The cost change period and factor, if the cadastral cost changed during
         the period.
 
-    -   **Calculated advance payment/Tax** – If the tax register is calculated
+-   **Calculated advance payment/Tax** – If the tax register is calculated
         for the first quarter, second quarter, or third quarter, the tax advance
         amount before tax allowances are applied as a reduction of the tax rate
         or a reduction of tax amount. If the tax register is calculated for the
         year, the land tax amount before tax allowances are applied as a
         reduction of the tax rate or a reduction of the tax amount.
 
-    -   **Advance payment amount/Tax amount** – If the tax register is
+-   **Advance payment amount/Tax amount** – If the tax register is
         calculated for the first quarter, second quarter, or third quarter, the
         final tax advance amount. If the tax register is calculated for the
         year, the final land tax amount.
@@ -615,7 +606,7 @@ land tax registers. The following tax registers are available:
 -   **Land tax** – This tax register calculates total land tax amounts for each
     sales tax code and OKTMO code.
 
->   To calculate and approve land tax registers, follow these steps.
+To calculate and approve land tax registers, follow these steps.
 
 1.  Go to **Fixed assets (Russia) \> Journals \> Tax register journal**.
 
@@ -706,21 +697,17 @@ Generate a land tax declaration
     the latest versions of the Electronic reporting (ER) configurations for the
     land tax declaration.
 
->   For example, to generate the land tax declaration for the year 2018
->   reporting period, download the latest version of the following
->   configurations:
+    For example, to generate the land tax declaration for the year 2018 reporting period, download the latest version of the following configurations:
 
--   Assets declarations model
+    -   Assets declarations model
 
--   Land tax declaration model mapping
+    -   Land tax declaration model mapping
 
--   Land tax advance calculation format 5.06
+    -   Land tax advance calculation format 5.06
 
->   For more information, see [Download Electronic reporting configurations from
->   Lifecycle
->   Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-1.  You can upload Data management package settings to work with the assessed
+2.  You can upload Data management package settings to work with the assessed
     tax declaration. Follow these steps:
 
     -   In the LCS Shared asset library, select **Data package** as the asset
@@ -745,25 +732,25 @@ Generate a land tax declaration
 
     -   After the data entities are uploaded, select **Import**.
 
-2.  Go to **Tax \> Setup \> Electronic messages \> Electronic message
+3.  Go to **Tax \> Setup \> Electronic messages \> Electronic message
     processing**, and validate the electronic message processing that is
     imported. (Most of the data that is imported is presented in the Russian
     language.)
 
-| **Processing**       | **Processing code**  | **Name**                               |
-|----------------------|----------------------|----------------------------------------|
-| Land tax declaration | ЗемНалог 5.06 (2018) | Декларация по земельному налогу (2018) |
+    | Processing       | Processing code  | Name                               |
+    |----------------------|----------------------|----------------------------------------|
+    | Land tax declaration | ЗемНалог 5.06 (2018) | Декларация по земельному налогу (2018) |
 
-3.  Set up the ER format that is run when accounting reporting is generated in
+4.  Set up the ER format that is run when accounting reporting is generated in
     electronic format:
 
-4.  Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
+5.  Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
 
-5.  Select the **Generate ZEMND 5.06** action, and then select **Edit**.
+6.  Select the **Generate ZEMND 5.06** action, and then select **Edit**.
 
-6.  Set the **Show dialog** option to **Yes**.
+7.  Set the **Show dialog** option to **Yes**.
 
-7.  In the **Format mapping** field, select the **Land tax declaration format
+8.  In the **Format mapping** field, select the **Land tax declaration format
     5.06** ER configuration that you downloaded earlier.
 
 ### Generate a land tax declaration
@@ -810,14 +797,14 @@ quarter.
 12. In the **Electronic reporting parameters** dialog box, on the **Parameter**
     FastTab, set the following values.
 
-| **Field**                                                        | **Description**                                                                                                                             |
-|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| At place of                                                      | Select the place where the declaration is submitted: **Ground location** or **Registration of the largest taxpayer**.                       |
-| Correction number                                                | Enter the number of the correction if you didn't specify it in step 7.                                                                      |
-| Signatory type                                                   | Select the person who signs the accounting reporting: **Taxpayer** or **Representative**.                                                   |
-| Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the signatory.                                                                                                       |
-| Representative company                                           | If you selected **Representative** as the signatory type, and if the representative is an organization, enter the name of the organization. |
-| Representative document                                          | If you selected **Representative** as the signatory type, enter the document that confirms the representative's authority.                  |
+    | Field                                                        | Description                                                                                                                             |
+    |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+    | At place of                                                      | Select the place where the declaration is submitted: **Ground location** or **Registration of the largest taxpayer**.                       |
+    | Correction number                                                | Enter the number of the correction if you didn't specify it in step 7.                                                                      |
+    | Signatory type                                                   | Select the person who signs the accounting reporting: **Taxpayer** or **Representative**.                                                   |
+    | Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the signatory.                                                                                                       |
+    | Representative company                                           | If you selected **Representative** as the signatory type, and if the representative is an organization, enter the name of the organization. |
+    | Representative document                                          | If you selected **Representative** as the signatory type, enter the document that confirms the representative's authority.                  |
 
 13. On the first **Records to include** FastTab, apply a filter for separate
     divisions, if this type of filter is applicable. In this case, declarations
@@ -829,14 +816,12 @@ quarter.
 
 15. Select **OK**.
 
->   When the report is generated, the status of the message is changed to
->   **Generated**. If an error occurs during generation, the status is changed
->   to **Technical error**.
+    When the report is generated, the status of the message is changed to **Generated**. If an error occurs during generation, the status is changed to **Technical error**.
 
-1.  On the **Action log** FastTab, review all user actions for the current
+16.  On the **Action log** FastTab, review all user actions for the current
     message.
 
-2.  To review the report that is generated, select the **Attachments** button
+17.  To review the report that is generated, select the **Attachments** button
     (the paper clip symbol) in the upper-right corner of the page, and then
     select **Open** to view the file.
 

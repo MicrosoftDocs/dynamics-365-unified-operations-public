@@ -20,7 +20,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -42,7 +41,7 @@ For example, a new field that is named **MyInventLocationId** was added to the I
 
 You first create a new class in the extension model. This class will augment the InventTable table, and enable access to the table's fields and methods in a manner that is easy to read and understand. It's important that you choose the correct name for your augmentation class. This name must be unique across all types in all models that are deployed. For more information, see [Naming guidelines for extensions](naming-guidelines-extensions.md).
 
-```
+```xpp
 [ExtensionOf(tableStr(InventTable))]
 final class InventTableMy_Extension
 {
@@ -64,7 +63,7 @@ There are a few rules for augmentation classes:
 
 Now you can use your new method, for example, from an event handler:
 
-```
+```xpp
 class InventTableMy_EventHandler
 {
     [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]

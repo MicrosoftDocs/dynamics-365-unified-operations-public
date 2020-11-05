@@ -4,7 +4,7 @@
 title: Service subscriptions
 description: Subscriptions are based on a time-and-materials project. You can create subscriptions from a project, from the Service subscriptions page, or by using a service subscription group.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
@@ -17,14 +17,14 @@ ms.search.form: SMASubscriptionTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="TRIM">TRIM ER function</a>
+# TRIM ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `TRIM` function returns the specified text string as a *String* value after 
 
 ## Syntax
 
-```
+```vb
 TRIM (text )
 ```
 

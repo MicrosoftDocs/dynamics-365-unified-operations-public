@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a bank facility agreement for a letter of credit
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task walks through the creating a Bank facility agreement to process a Letter of credit. You will want to set up bank facilities and posting profiles before this task.  This task uses the demo company 'USMF'.  
 

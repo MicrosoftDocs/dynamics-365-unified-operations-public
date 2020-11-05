@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CONVERTCURRENCY">CONVERTCURRENCY ER function</a>
+# CONVERTCURRENCY ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `CONVERTCURRENCY` function returns a *Real* value that represents the result
 
 ## Syntax
 
-```
+```vb
 CONVERTCURRENCY (amount, source currency, target currency, date, company)
 ```
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Approve application inbox records
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to review applications received through the Employee self-service pages. In addition to reviewing the applications, you can approve the application in box records that you select. Application inbox records represent employment applications that were submitted to the company for consideration. After approving a record, an applicant record will be created for the person who submitted the application. The demo data company used to create this procedure is USMF.
 

@@ -4,8 +4,8 @@
 title: Calendars and master planning
 description: This topic provides an overview of supply chain calendars and how they affect master planning.
 author: t-benebo
-manager: AnnBe
-ms.date: 05/08/2019
+manager: tfehr
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and reciving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
+This topic provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
 
 ## Definition of a calendar
 
@@ -115,29 +115,29 @@ Sometimes, vendors need a few days of margin between when they receive the purch
 
 ### Delivery date of a planned purchase order
 The receipt date of a purchase indicates the date when you will receive the goods. It will be an open date in the calendar. The calendar that will be taken into account to indicate which days the purchase orders can be received are the following, in order from highest to lowest priority: 
-	1. Vendor's calendar
-	2. Coverage group calendar
-	3. Warehouse calendar for the receiving warehouse
+1. Vendor's calendar
+1. Coverage group calendar
+1. Warehouse calendar for the receiving warehouse
 
 Note that the coverage group calendar can be set in different pages and will take priority in the following order:
-	1. Item coverage group on the **Released products details** page
-	2. Item coverage group on the **Item coverage** page
-	3. Default item coverage group in **Master planning parameters**
+1. Item coverage group on the **Item coverage** page
+1. Item coverage group on the **Released products details** page
+1. Default item coverage group in **Master planning parameters**
 
 ### Shipping date of a planned transfer order
 When creating a transfer order between two warehouses, the shipping date and the receipt date are included in the transfer order header, along with the "From" warehouse and "To" warehouse. The difference between these two dates is the expected transportation time (in days) between the warehouses.
 
 The shipping date of a planned transfer order indicates the date that the goods are shipped from the "From" warehouse. The calendars used for specifying the available shipping date are listed by priority: 
-	1. Warehouse calendar of the "From" warehouse
-	2. Coverage group calendar (see fallback order for this calendar above)
+1. Warehouse calendar of the "From" warehouse
+1. Coverage group calendar (see fallback order for this calendar above)
 If there is a warehouse calendar set, the shipping date will be an open date in the calendar. If there is not a warehouse calendar set, it will take the coverage group calendar. 
 
 ### Receipt date of a planned transfer order
 The receipt date for a transfer order indicates the date that the goods are received in the "To" warehouse.
 
 The calendars used for specifying the receipt date are the ones listed by priority: 
-	1. Coverage group calendar 
-	2. Warehouse calendar of the "To" warehouse
+1. Coverage group calendar 
+1. Warehouse calendar of the "To" warehouse
 If there is a coverage calendar set, the receipt date will be an open date in the calendar. If there is not a coverage group calendar set, it will take the warehouse calendar. 
 
 When finding the shipment and receiving dates for the planned transfer, the margins established by the user for shipping and receiving will also be considered. 

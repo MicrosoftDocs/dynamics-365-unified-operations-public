@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
@@ -22,13 +22,13 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Manage a data source for the cost accounting ledger
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to manage the general ledger data source for a cost accounting ledger. Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides. This recording uses the USP2 demo data company.
 

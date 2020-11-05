@@ -5,7 +5,7 @@ title: Customize embedded reports in analytical workspaces
 description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
 author: TJVass
 manager: AnnBe
-ms.date: 7/08/2019
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,6 +46,12 @@ Power users can use web-friendly design tools to customize the analytical report
 > [!IMPORTANT]
 > Customizations that are made to the embedded analytical reports are automatically deployed by the service and made available to other users of the system.
 
+### Edit embedded reports in analytical workspaces
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3nnj4]
+
+The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
 ### Important points about embedded analytical reports
 
 Although the standard reports deliver insights that are tailored to a given business persona, customizations can often maximize the value of these standard reports.
@@ -57,7 +63,7 @@ Here are some important points to note about this service capability:
 - The service automatically preserves report customizations during product upgrades.
 - The service doesn't support the export of customizations that are made to analytical workspaces.
 
-### Customize an analytical workspace
+## Customize an analytical workspace
 
 To customize the embedded application solutions, a user must be a member of the System Report Editors security group. Members of this security group can do customizations by using the buttons on the **Options** tab on the Action Pane of the application workspaces. This example shows how to customize one of the standard analytical workspaces that are bundled with the application suite.
 
@@ -85,6 +91,9 @@ To customize the embedded application solutions, a user must be a member of the 
 4. Use the Power BI web designer tools to customize the report canvas. The intuitive web controls let you perform typical actions such as adding and removing visuals, changing visual types, and formatting the content. You can also inspect the source of the report visualizations to make sure that decisions are based on the most relevant data that is available in the system. For more information, see [Add visualizations to a Power BI report](https://docs.microsoft.com/power-bi/visuals/power-bi-report-add-visualizations-i).
 5. After you've completed your report customizations, select the **Save** button to promote the report edits. Customizations to the report are reflected immediately in the service. Therefore, users in your organization have access to the latest innovations.
 
+    > [!NOTE]
+    > Customizations made in the web editor are not saved back to the underlying PBIX report and are not retrievable if the PBIX report is later customized on a development environment.
+
 ## Restore the standard application solution
 
 Follow these steps to restore the analytical workspaces that are bundled with the application solution.
@@ -92,3 +101,15 @@ Follow these steps to restore the analytical workspaces that are bundled with th
 1. In the analytical workspace, on the Action Pane, on the **Options** tab, in the **Power BI** group, select **Restore Analytics**.
 2. To view the updates to the workspace, reload the page. Either move away from the workspace and then return, or refresh your browser.
 3. In the **Compensation management** workspace, select the **Analytics** tab to access the original analytical workspace that was packaged with the application.
+
+## Troubleshooting
+
+Follow these steps to address common issues encountered while attempting to use analytical workspaces.
+
+**Error message:** ***Please log into Power BI to access its resource***
+
+The Power BI service requires explicit permission from the user to allow access to hosted content. Use the following steps to ensure the current user is able to connect to reports hosted on PowerBI.com from the application suite.
+
+1. Open any application workspace containing a section titled **Link**. For example, "Bank management".
+2. Select **Options**, and then select **Open report catalog** on the top left.
+3. Follow the steps in the dialog box to **Authorize to Power BI** to access Finance and Operations apps for the current user.

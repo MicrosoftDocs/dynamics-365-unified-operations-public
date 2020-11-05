@@ -3,7 +3,7 @@
 
 title: Create read-only entities that expose financial dimensions
 description: In this topic, we describe how to build an entity for registered transactions. 
-author: margoc
+author: robinarh
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: pbj
+ms.author: rhaertle
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -100,33 +100,35 @@ For version 1611 or later, you should use the wizard that is available in Micros
 
 If you're working with earlier versions, you must complete the steps that are outlined here. First, we add the entity extension itself. Select **Create extension** on the context menu (shortcut menu). Next, we create the code that retrieves the data. Because the entity extension is already in place, we must create a new class. The following example adds code for an arbitrary dimension that is named **ProductLine**.
     
-      [ExtensionOf(dataentityviewstr(DimensionCombinationentity))]
-        public final class DimensionCombinationentity_Extension
+```xpp    
+[ExtensionOf(dataentityviewstr(DimensionCombinationentity))]
+  public final class DimensionCombinationentity_Extension
+  {
+    private static server str getEmptyOrDimensionValueSqlString(str _attributeName)
+    {
+        str sqlStatement;
+
+        DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(_attributeName);
+
+        if (!dimensionAttribute)
         {
-            private static server str getEmptyOrDimensionValueSqlString(str _attributeName)
-            {
-                str sqlStatement;
-
-                DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(_attributeName);
-
-                if (!dimensionAttribute)
-                {
-                    sqlStatement = SysComputedColumn::returnLiteral('');
-                }
-                else
-                {
-                    sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
-                }
-
-                return sqlStatement;
-            }
-
-            /// Generates the sql to populate the FOTA view field.
-            public static server str ProductLineValue()
-            {
-                return DimensionCombinationentity::getEmptyOrDimensionValueSqlString('ProductLine');
-            }
+            sqlStatement = SysComputedColumn::returnLiteral('');
         }
+        else
+        {
+            sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
+        }
+
+        return sqlStatement;
+    }
+
+    /// Generates the sql to populate the FOTA view field.
+    public static server str ProductLineValue()
+    {
+        return DimensionCombinationentity::getEmptyOrDimensionValueSqlString('ProductLine');
+    }
+  }
+```
 
 We now add fields to the newly created entity extension by using custom fields that reference these methods. 
 

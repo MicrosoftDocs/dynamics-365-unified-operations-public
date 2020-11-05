@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up a day-based fiscal calendar (India)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through creating a day-based fiscal calendar that includes one fiscal year. Before you can complete this task, you must set the Companies Act depreciation option to Yes on the Fixed assets parameters page to create a day-based calendar. The demo data company used to create this procedure is INMF.
 

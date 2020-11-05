@@ -4,7 +4,7 @@
 title: Import historical data for demand forecasts
 description: To get accurate demand forecasts, you require historical demand data per item or item allocation key. This topic explains how to use data entities to import historical demand data from any system, so that you have a longer history of demand forecast data.
 author: roxanadiaconu
-manager: AnnBe
+manager: tfehr
 ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
@@ -16,14 +16,14 @@ ms.technology:
 ms.search.form:  ReqDemPlanCreateForecastDialog
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 

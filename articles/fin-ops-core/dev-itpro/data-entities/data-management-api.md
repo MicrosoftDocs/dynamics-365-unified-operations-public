@@ -4,7 +4,7 @@
 title: Data management package REST API
 description: This topic describes the Data management framework's package REST API.
 author: Sunil-Garg
-ms.date: 12/04/2019
+ms.date: 06/18/2020
 manager: AnnBe
 ms.topic: article
 ms.prod: 
@@ -70,26 +70,27 @@ The GetImportStagingErrorFileUrl API is used to get the URL of the error file co
 
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImportStagingErrorFileUrl
 
-	Body
-	{
-	    "executionId":"<string>",
-	    "entityName":"<string>"
-	}
+```json
+Body
+{
+	"executionId":"<string>",
+	"entityName":"<string>"
+}
 
+Successful Response:
 
-	Successful Response:
-
-	HTTP/1.1 200 OK
-	{
-	  "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
-	  "value":"<errorfileurl>"
-	}
+HTTP/1.1 200 OK
+{
+	"@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+	"value":"<errorfileurl>"
+}
+```
 
 **Input parameters**
 
 | Parameter     | Description |
 |---------------------|--------------------------------------|
-| string executionId          | Execution ID of import. |
+| string executionId          | Execution ID of import. This is called as Job ID in the UI. |
 | string entityName        | Name of the entity for which to get the error file. |
 
 
@@ -109,20 +110,22 @@ If this API returns true, then use the GetImportTargetErrorKeysFileUrl API to ge
 
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GenerateImportTargetErrorKeysFile
 
-	Body
+```json
+Body
 
-	{
-	  "executionId":"<string>",
-	  "entityName":"<string>"
-	}
+{
+	"executionId":"<string>",
+	"entityName":"<string>"
+}
 
-	Successful Response:
+Successful Response:
 
-	HTTP/1.1 200 OK
-	{
-	  "@odata.context":"https://<baseurl>/data/$metadata#Edm.Boolean",
-	  "value": <errorsExist>
-	}
+HTTP/1.1 200 OK
+{
+	"@odata.context":"https://<baseurl>/data/$metadata#Edm.Boolean",
+	"value": <errorsExist>
+}
+```
 
 **Input parameters**
 
@@ -148,7 +151,7 @@ If the error file is available, this API returns the URL. If the error file is s
 
 **Pseudocode example**
 
-```
+```csharp
 errorsExist = GenerateImportTargetErrorKeysFile(executionId, entityName)
 
 if (errorsExist)
@@ -166,7 +169,7 @@ if (errorsExist)
 }
 ```
 
-```CSharp
+```csharp
 POST
 /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetImportTargetErrorKeysFileUrl
 
@@ -191,7 +194,7 @@ HTTP/1.1 200 OK
 
 | Parameter         | Description |
 |-------------------|-------------|
-| string executionId | The execution ID of the import. |
+| string executionId | The execution ID of the import. This is called as Job ID in the UI.|
 | string entityName | The name of the entity to get the error file for. |
 
 **Output parameters**
@@ -208,7 +211,7 @@ The **GetAzureWritableUrl** API is used to get a writable blob URL. The method i
 > [!NOTE]
 > An SAS is valid only during an expiry time window. Any request that is issued after the window has passed returns an error. For more information, see [Using shared access signatures (SAS)](/azure/storage/common/storage-dotnet-shared-access-signature-part-1).
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl
 BODY
 {
@@ -222,9 +225,7 @@ Here is an example of a successful response.
 HTTP/1.1 200 OK
 {
     "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
-    "value":{
-        "BlobId":"{<GUID>}",
-        "BlobUrl":"https://<baseurl_id>.blob.core.windows.net/dmf/<uniqueFileName>?<SAS Token>"
+    "value": "{\"BlobId\":\"{<GUID>}\",\"BlobUrl\":\"https://<baseurl_id>.blob.core.windows.net/dmf/<uniqueFileName>?<SAS Token>\"}"
     }
 }
 ```
@@ -233,7 +234,7 @@ HTTP/1.1 200 OK
 
 | Parameter         | Description |
 |-------------------|-------------|
-| string packageUrl | A unique file name that is used to track blob IDs. You can include a globally unique identifier (GUID) to help guarantee a unique file name. |
+| string uniqueFileName | A unique file name that is used to track blob IDs. You can include a globally unique identifier (GUID) to help guarantee a unique file name. |
 
 **Output parameters**
 
@@ -249,7 +250,7 @@ The **ImportFromPackage** API is used to initiate an import from the data packag
 > [!NOTE]
 > Starting in Platform update 12, the **ImportFromPackage** API supports composite entities. However, the limitation is that there can be only one composite entity in a package.
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
 BODY
 {
@@ -268,9 +269,7 @@ Here is an example of a successful response.
 HTTP/1.1 200 OK
 {
     "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
-    "value":{
-        "value":"<executionId>"
-    }
+    "value":"<executionId>"
 }
 ```
 
@@ -280,7 +279,7 @@ HTTP/1.1 200 OK
 |--------------------------|-------------|
 | string packageUrl        | The URL of the data package in the Blob storage that is associated with a Finance and Operations app. |
 | string definitionGroupId | The name of the data project for import. |
-| string executionId       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
+| string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID will be created. |
 | bool execute             | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
 | bool overwrite           | This parameter must always be set to **False** when a composite entity is used in a package. Otherwise, set it to **True**. |
 | string legalEntityId     | The legal entity for the data import. |
@@ -289,7 +288,7 @@ HTTP/1.1 200 OK
 
 | Parameter          | Description |
 |--------------------|-------------|
-| string executionId | The execution ID of the data import. |
+| string executionId | The execution ID of the data import. This is called as Job ID in the UI. |
 
 > [!NOTE]
 > **ImportFromPackage()** uses a batch to perform the import. Therefore, parallel processing rules must be used in Data management to perform parallel imports. **ImportFromPackage()** must not be called in parallel threads. Otherwise, it will fail.
@@ -305,11 +304,11 @@ The **ExportToPackage** API is used to initiate an export of a data package. Thi
 - The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
 BODY
 {
-    "definitionGroupId":"<Data project Id>",
+    "definitionGroupId":"<Data project name>",
     "packageName":"<Name to use for downloaded file.>",
     "executionId":"<Execution Id if it is a rerun>",
     "reExecute":<bool>,
@@ -335,7 +334,7 @@ HTTP/1.1 200 OK
 |--------------------------|-------------|
 | string definitionGroupId | The name of the data project for export. |
 | string packageName       | The name of the exported data package. |
-| string executionId       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
+| string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID will be created. |
 | bool reExecute           | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
 | string legalEntityId     | The legal entity for the data import. |
 	
@@ -343,13 +342,13 @@ HTTP/1.1 200 OK
 
 | Parameter          | Description |
 |--------------------|-------------|
-| string executionId | The execution ID of the data export. |
+| string executionId | The execution ID of the data export. This is called as Job ID in the UI. |
 
 ### GetExportedPackageUrl
 
 The **GetExportedPackageUrl** API is used to get the URL of the data package that was exported by a call to **ExportToPackage**. This API is applicable to both cloud deployments and on-premises deployments.
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
 BODY
 {"executionId":"<Execution Id>"}
@@ -371,7 +370,7 @@ HTTP/1.1 200 OK
 
 | Parameter          | Description |
 |--------------------|-------------|
-| string executionId | The execution ID of the data project run. |
+| string executionId | The execution ID of the data project run. This is called as Job ID in the UI. |
 
 **Output parameters**
 
@@ -387,7 +386,7 @@ The following APIs are used to check status. They are used during both import fl
 
 The **GetExecutionSummaryStatus** API is used for both import jobs and export jobs. It's used to check the status of a data project execution job. This API is applicable to both cloud deployments and on-premises deployments.
 
-```CSharp
+```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
 BODY
 {"executionId":"<executionId>"}
@@ -399,9 +398,7 @@ Here is an example of a successful response.
 HTTP/1.1 200 OK
 {
     "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
-    "value":{
-        "value":"<executionStatus>"
-    }
+    "value":"<executionStatus>"
 }
 ```
 
@@ -409,7 +406,7 @@ HTTP/1.1 200 OK
 
 | Parameter          | Description |
 |--------------------|-------------|
-| string executionId | The execution ID of the data project run. |
+| string executionId | The execution ID of the data project run. This is called as Job ID in the UI. |
 
 **Output parameters**
 
@@ -444,12 +441,10 @@ HTTP/1.1 200 OK
 ## Getting the list of errors
 GetExecutionErrors can be used to get the list of errors in a job execution. The API takes the Execution ID as the parameter, and returns a set of error messages in a JSON list.
 
-```
-
+```json
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors
 BODY
 {"executionId":"<executionId>"}
-
 ```
 
 ## Import and export processes

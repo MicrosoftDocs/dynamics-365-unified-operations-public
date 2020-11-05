@@ -22,13 +22,13 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Post vouchers from other modules, like sales invoices
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices. When you post from these sources, the default Chinese voucher type and Chinese voucher number will be assigned to those financial vouchers.
 This task walks you through posting Chinese vouchers from the Inventory movement journal and from a sales invoice.

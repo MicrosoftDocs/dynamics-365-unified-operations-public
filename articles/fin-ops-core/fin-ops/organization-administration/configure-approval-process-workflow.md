@@ -3,9 +3,9 @@
 
 title: Configure approval processes in a workflow
 description: Use the following procedure to configure the properties of the approval process.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -144,11 +144,12 @@ You can send notifications to people when a document has been approved, rejected
 
 ## Specify a final approver
 
-You may want to designate a final approver for scenarios where the approver is the person who submitted the document for approval. Follow these steps to specify a final approver.
+You can designate a final approver for scenarios where the approver is the person who submitted the document for approval and the "disallow approval by submitter" is being used. Follow these steps to specify a final approver.
 
-1. In the left pane, click **Advanced settings**.
-2. Select the **Use final approver** check box.
-3. In the list, select the user to be the final approver.
+1. In the workflow editor, right-click the approval element, and then select **Properties** to open the **Properties** form.
+2. In the left pane, click **Advanced settings**.
+3. Select the **Use final approver** check box.
+4. In the list, select a user to be the final approver.
 
 ## Set a time limit
 

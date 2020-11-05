@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14721
@@ -137,15 +137,17 @@ This section will have answers to frequently asked questions that are related to
 -   **How do I make the More button work?**
     -   The **More** button at the bottom of the FactBox takes the user to a backing form that contains the full list of related records. This button should be implemented by using a regular Button control that overrides the **clicked** method as shown in the following example. Be sure to fill in the **TableRef** and **ListPageRef** properties on the table that provides data for the grid.
 
-            [Control("Button")]
-            class More
-            {
-            public void clicked()
-                   {    
-                        super();  
-                        FormPartUtil::openShowMoreForm(element, <TableName>);     
-                   }
+        ```xpp
+        [Control("Button")]
+        class More
+        {
+        public void clicked()
+            {    
+                super();  
+                FormPartUtil::openShowMoreForm(element, <TableName>);     
             }
+        }
+        ```
 
 ### Open issues
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NULLCONTAINER">NULLCONTAINER ER function</a>
+# NULLCONTAINER ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `NULLCONTAINER` function returns a null *Container (record)* value that has 
 
 ## Syntax
 
-```
+```vb
 NULLCONTAINER (list)
 ```
 

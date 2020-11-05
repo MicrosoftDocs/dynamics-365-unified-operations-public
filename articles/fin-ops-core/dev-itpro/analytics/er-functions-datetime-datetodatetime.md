@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="DATETODATETIME">DATETODATETIME ER function</a>
+# DATETODATETIME ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `DATETODATETIME` function returns a *DateTime* value that is converted from 
 
 ## Syntax
 
-```
+```vb
 DATETODATETIME (date)
 ```
 

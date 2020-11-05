@@ -4,8 +4,8 @@
 title: Set up containerization
 description: This topic describes how to automate the containerization of loads in Warehouse management. 
 author: ShylaThompson
-manager: AnnBe 
-ms.date: 07/22/19
+manager: tfehr 
+ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,10 +13,10 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak   
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up containerization
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to automate the containerization of loads in Warehouse management. Automated containerization creates containers and the picking work for shipments when a wave is processed and work lines can be split into quantities that fit the containers. This helps warehouse workers to pick the items directly into the chosen container. Compared to the manual packing process, tasks such as creating containers, assigning items, and closing containers are automated by the system. This procedure uses the USMF demo company and is performed by a Warehouse manager.
 
@@ -41,7 +41,7 @@ This topic describes how to automate the containerization of loads in Warehouse 
 5. In the **Site** field, enter or select a value.
 6. In the **Warehouse** field, enter or select a value.
 7. Expand the **Methods** section. The **Selected methods** pane lists the methods for the selected wave template type. The wave template must include the containerize method.  
-8. In the **Wave step code** field, type a value. Enter a Wave step code for the added method, which can be any code. It’s possible to add the method more than once and assign different wave step codes. To do this, select **Repeatable for this method** in the **Wave process methods** page.  
+8. In the **Wave step code** field, type a value. Enter a Wave step code for the added method, which can be any code. It's possible to add the method more than once and assign different wave step codes. To do this, select **Repeatable for this method** in the **Wave process methods** page.  
 9. Select **Save**.
 10. Close the page.
 
@@ -62,7 +62,7 @@ This topic describes how to automate the containerization of loads in Warehouse 
 
 ## Set up a container group
 1. In the navigation pane, go to **Modules > Warehouse management > Setup > Containers > Container groups**.
-2. In the action pane, select **New**. You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill.The size dimensions of the item is used to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.    
+2. On the Action Pane, select **New**. You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill.The size dimensions of the item is used to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.    
 3. In the **Container group ID** field, type a value that you created earlier.
 4. In the **Description field**, type a value.
 5. Repeat steps 2-4 for all three container types you created earlier.
@@ -77,7 +77,7 @@ This topic describes how to automate the containerization of loads in Warehouse 
 5. In the **Wave step code** field, type a value.
 6. Select the **Allow split picks** check box.
 7. Select **Save**.
-8. Select **Containier mixing constraints**. Mixing logic breaks allows you to set up rules for packing allocation lines in containers. For example, if you add the **Item number field**, when items are assigned to containers, a new container will be created when there is a new item number. This is will prevent workers from packing allocations lines for two different customers in the same container.  
+8. Select **Container mixing constraints**. Mixing logic breaks allows you to set up rules for packing allocation lines in containers. For example, if you add the **Item number field**, when items are assigned to containers, a new container will be created when there is a new item number. This is will prevent workers from packing allocations lines for two different customers in the same container.  
 9. Select **New**.
 10. In the **Table** field, select an option.
 11. In the **Field Select** field, enter or select a value.

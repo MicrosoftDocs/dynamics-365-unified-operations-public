@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -70,7 +69,7 @@ When code is written like in this manner, methods are short, often less than 5 t
 
 Here is an example.
 
-```
+```xpp
 public void processOrder(SalesOrder _salesOrder)
     {
         if (this.approveOrder(_salesOrder))

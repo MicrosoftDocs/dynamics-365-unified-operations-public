@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMBERFORMAT">NUMBERFORMAT ER function</a>
+# NUMBERFORMAT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,13 +39,13 @@ The `NUMBERFORMAT` function returns a *String* value that presents the specified
 
 ## Syntax 1
 
-```
+```vb
 NUMBERFORMAT (number, format)
 ```
 
 ## Syntax 2
 
-```
+```vb
 NUMBERFORMAT (number, format, culture)
 ```
 

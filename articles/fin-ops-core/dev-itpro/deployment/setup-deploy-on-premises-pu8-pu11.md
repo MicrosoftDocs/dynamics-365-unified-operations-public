@@ -3,9 +3,9 @@
 
 title: Set up and deploy on-premises environments (Platform updates 8 and 11)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -20,11 +20,11 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
+ms.custom: NotInToc
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 8
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform updates 8 and 11.
 
 > [!IMPORTANT]
-> This topic applies only to deploying on-premises environments on Platform updates 8 and 11. For information about deploying to Platform update 12, see [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md).
+> This documentation is no longer updated. For information about deploying on-premises environments on Platform update 12 and later, see [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md).
 
 ## Finance and Operations components
 
@@ -220,13 +220,13 @@ The following is an example of a Service Fabric Server certificate combined with
 
 #### Subject name
 
-```
+```Text
 CN = *.d365ffo.onprem.contoso.com
 ```
 
 #### Subject Alternative Names
 
-```
+```Text
 DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
@@ -369,13 +369,13 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
-> [!WARNING]
-> Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
-> ```powershell
-> dir cert:\CurrentUser\My
-> dir cert:\LocalMachine\My
-> dir cert:\LocalMachine\Root
-> ```
+    > [!WARNING]
+    > Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
+    > ```powershell
+    > dir cert:\CurrentUser\My
+    > dir cert:\LocalMachine\My
+    > dir cert:\LocalMachine\Root
+    > ```
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
@@ -396,12 +396,12 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 2. Download the following Microsoft Windows Installers (MSIs) into a file share that is accessible by all VMs.
 
-| Component | Download link |
-|-----------|---------------|
-| SNAC – ODBC driver | <https://www.microsoft.com/download/details.aspx?id=53339> |
-| Microsoft SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
-| Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
-| Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
+    | Component | Download link |
+    |-----------|---------------|
+    | SNAC – ODBC driver | <https://www.microsoft.com/download/details.aspx?id=53339> |
+    | Microsoft SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+    | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
+    | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
 
 #### Follow these steps for each VM
 
@@ -472,7 +472,7 @@ Use the on-premises agent certificate that you acquired from a CA or the self-si
 
 The on-premises agent certificate can be reused across multiple sandbox and production environments per tenant.
 
-Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
+Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft 365 for your organization is the global administrator for the directory.
 
 > [!IMPORTANT]
 > You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
@@ -521,7 +521,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox enviornments to test high availability scenarios.)
+1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high availability scenarios.)
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
 
@@ -569,10 +569,10 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 3. On the **Model** tab, select the demo data for the release you want and download the zip file.
 
-| Release | Demo Data |
-|-------|------|
-| On-premises General Availability (GA) release | Dynamics 365 for Operations (on-premises) - Demo data |
-| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations, Enterprise edition (on-premises) - Update 11 Demo data |
+    | Release | Demo Data |
+    |-------|------|
+    | On-premises General Availability (GA) release | Dynamics 365 for Operations (on-premises) - Demo data |
+    | On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations, Enterprise edition (on-premises) - Update 11 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 

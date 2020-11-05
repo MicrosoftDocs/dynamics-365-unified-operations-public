@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="SPLITLISTBYLIMIT">SPLITLISTBYLIMIT ER function</a>
+# SPLITLISTBYLIMIT ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `SPLITLISTBYLIMIT` function splits the specified list into a new list of sub
 
 ## Syntax
 
-```
+```vb
 SPLITLISTBYLIMIT (list, limit value, limit source)
 ```
 

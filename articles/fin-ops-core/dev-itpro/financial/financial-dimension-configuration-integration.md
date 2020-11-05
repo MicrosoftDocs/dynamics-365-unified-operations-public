@@ -35,26 +35,27 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include [banner](../includes/banner.md)]
 
 This topic describes the Financial dimension configuration. There are two important areas for setup: 
-- the order of financial dimensions for financial reporting. This is configured on the **Financial reporting setup** page. 
-- the data entity integration formats. This is configured on the **Integrating applications** page. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
 
-Financial reporting
--------------------
+- The order of financial dimensions for financial reporting. The order is configured on the **Financial reporting setup** page. 
+- The data entity integration formats. The formats are configured on the **Integrating applications** page. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
+
+## Financial reporting
 
 The **Financial reporting setup** page has a list of all financial dimensions in the system (**General ledger** > **Ledger setup** > **Financial reporting setup**).  
 
 The **Financial reporting setup** page has two sections that determine the data you report on in Financial reporting:
- - **Dimensions** tab - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting. 
 
- - **Attributes** tab - This is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design. Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions. Choosing Vendor and/or Customer will add additional time to the integration.  
+- **Dimensions** tab - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting. 
+- **Attributes** tab - This tab is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design. Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions. Choosing Vendor and/or Customer will add additional time to the integration.  
 
 ## Data entities
+
 The **Data entities** tab is where you define the order of financial dimensions for importing data. There is no rule about how you should set the order of your dimension formats. They are designed to be flexible enough that you can take your source files from an external system and import the data without spending time to make the source files match your account structures. Dimension validation still occurs during the import process, to verify that you aren't importing financial dimension values that don't exist for a particular segment. However, outside validation, account structures and dimension formats are independent of each other. There are four dimension format types:
 
--   **Default dimension format** – This format type is required any time that you import default dimensions, through both Data Management and the Microsoft Excel integration. For example, you might require a default dimension format if you're importing the financial dimensions that are associated with a customer account.
--   **Ledger dimension format** – This format type is required any time that you import ledger dimensions, through both Data Management and the Excel integration. The ledger dimension format is the most common format, because it's used any time that transactions are imported, such as through the general journal, or any time that setup information is imported, such as on posting profiles.
--   **Budget register dimension format** – This format type is required any time that you import dimensions for budgeting and budget control, through both Data Management and the Excel integration.
--   **Budget planning dimension format** – This format type is required any time that you import dimensions for budget planning, through both Data Management and the Excel integration.
+- **Default dimension format** – This format type is required when you import default dimensions, through both Data Management and the Microsoft Excel integration. For example, you might require a default dimension format if you're importing the financial dimensions that are associated with a customer account.
+- **Ledger dimension format** – This format type is required when you import ledger dimensions, through both Data Management and the Excel integration. The ledger dimension format is the most common format, because it's used any time that transactions are imported, such as through the general journal, or any time that setup information is imported, such as on posting profiles.
+- **Budget register dimension format** – This format type is required any time that you import dimensions for budgeting and budget control, through both Data Management and the Excel integration.
+- **Budget planning dimension format** – This format type is required any time that you import dimensions for budget planning, through both Data Management and the Excel integration.
 
 The dimension format types are not company-specific. The setup is a global setup. You can set up as many of each format type as you require, but only one format type can be active at one time. If no dimension format type is set up, you will receive an error when you import. You will also receive errors if the order is incorrect. Let's look at some examples that show how the dimension formats work. We will use the ledger dimension format for these examples.
 
@@ -88,11 +89,8 @@ For the first row of the import file, because only three segments are defined, a
 
 Therefore, the string looks like this: **605140-001-02-** 
 
-The second row is imported just as defined in the import file: **Main account == 110110** **Department == 002** **Cost Center == 04** **Customer == ABC**
+The second row is imported as defined in the import file: **Main account == 110110** **Department == 002** **Cost Center == 04** **Customer == ABC**
 
 ## Additional resources
 
 [Add dimensions to Excel templates](dimensions-overview.md)
-
-
-

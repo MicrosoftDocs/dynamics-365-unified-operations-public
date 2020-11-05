@@ -29,27 +29,27 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Design ER expressions to call application class methods
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This guide provides information about how to reuse the existing application logic in Electronic reporting (ER) configurations by calling required methods of application classes in ER expressions. Values of arguments for calling classes can be defined dynamically at run-time: for example, based on information in the parsing document to ensure its correctness. In this guide, you will create the required ER configurations for the sample company, Litware, Inc. This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. 
 
 These steps can be completed using any data set. You must also download and save the following file locally: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
-To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.”
+To complete these steps, you must first complete the steps in the procedure, "ER Create a configuration provider and mark it as active."
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * Verify that the configuration provider for sample company, Litware, Inc. is available and marked as active. If you don’t see this configuration provider, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active”.   
-    * Uou are designing a process for parsing incoming bank statements for an application data update. You will receive the incoming bank statements as TXT files that contain IBAN codes. As part of the bank statement import process, you need to validate the correctness of this IBAN codes using the logic that is already available.   
+    * Verify that the configuration provider for sample company, Litware, Inc. is available and marked as active. If you don't see this configuration provider, you must first complete the steps in the procedure, "Create a configuration provider and mark it as active".   
+    * You are designing a process for parsing incoming bank statements for an application data update. You will receive the incoming bank statements as TXT files that contain IBAN codes. As part of the bank statement import process, you need to validate the correctness of this IBAN codes using the logic that is already available.   
 
 ## Import a new ER model configuration
 1. In the list, find and select the desired record.
     * Select the Microsoft provider tile.  
 2. Click Repositories.
 3. Click Show filters.
-4. Add a filter field ‘Type name’. In the Name field, enter the value “resources”, select the “contains” filter operator, and then click Apply.
+4. Add a filter field 'Type name'. In the Name field, enter the value "resources", select the "contains" filter operator, and then click Apply.
 5. Click Open.
 6. In the tree, select 'Payment model'.
-    * If the Import button on the Versions FastTab is not enabled, you have already imported the version 1 one of the ER configuration ‘Payment model’. You can skip the rest steps in this sub-task.   
+    * If the Import button on the Versions FastTab is not enabled, you have already imported the version 1 one of the ER configuration 'Payment model'. You can skip the rest steps in this sub-task.   
 7. Click Import.
 8. Click Yes.
 9. Close the page.
@@ -74,14 +74,14 @@ To complete these steps, you must first complete the steps in the procedure, “
 4. In the Name field, type 'Root'.
     * Root  
 5. In the Special characters field, select 'New line - Windows (CR LF)'.
-    * The option ‘New line - Windows (CR LF)’ has been selected in the ‘Special characters’ field. Based on this setting, each line in the parsing file is considered a separate record.  
+    * The option 'New line - Windows (CR LF)' has been selected in the 'Special characters' field. Based on this setting, each line in the parsing file is considered a separate record.  
 6. Click OK.
 7. Click Add to open the drop dialog.
 8. In the tree, select 'Text\Sequence'.
 9. In the Name field, type 'Rows'.
     * Rows  
 10. In the Multiplicity field, select 'One many'.
-    * The option ‘One many’ has been selected in the ‘Multiplicity’ field. Based on this setting, it is expected that at least one line will be presented in the parsing file.  
+    * The option 'One many' has been selected in the 'Multiplicity' field. Based on this setting, it is expected that at least one line will be presented in the parsing file.  
 11. Click OK.
 12. In the tree, select 'Root\Rows'.
 13. Click Add Sequence.
@@ -147,7 +147,7 @@ To complete these steps, you must first complete the steps in the procedure, “
     * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
 39. Click Save.
 40. Close the page.
-    * The validation condition has been configured to return FALSE for any invalid IBAN code by calling the existing method ‘verifyMOD1271_36’ of the application class ‘ISO7064’. Note that the value of the IBAN code is defined dynamically at run-time as the argument of the calling method based on the content of the parsing TXT file.   
+    * The validation condition has been configured to return FALSE for any invalid IBAN code by calling the existing method 'verifyMOD1271_36' of the application class 'ISO7064'. Note that the value of the IBAN code is defined dynamically at run-time as the argument of the calling method based on the content of the parsing TXT file.   
 41. Click Edit message.
 42. In the Formula field, enter 'CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)'.
     * CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)  

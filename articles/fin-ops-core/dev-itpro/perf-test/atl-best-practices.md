@@ -24,8 +24,8 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -34,9 +34,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
-
 ## Use var and declare variables inline
 
 + Use the `var` keyword (type inference).
@@ -44,7 +41,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ### Do this
 
-```
+```xpp
 var item = items.default(); 
 var salesOrder = data.sales().salesOrders().createDefault();
 var salesLine = salesOrder.addLine().setItem(item).setInventDims([warehouse]).setQuantity(10).save();
@@ -52,7 +49,7 @@ var salesLine = salesOrder.addLine().setItem(item).setInventDims([warehouse]).se
 
 ### Don't do this
 
-```
+```xpp
 InventTable item; 
 AtlEntitySalesOrder salesOrder;
 AtlEntitySaleOrderLine salesLine;
@@ -79,13 +76,13 @@ Well-known data methods, creator methods, and `init` methods usually return reco
 
 ### Do this
 
-```
+```xpp
 var salesLine = salesOrder.addLine().setItem(item).save();
 ```
 
 ### Don't do this
 
-```
+```xpp
 var salesLine = salesOrder.addLine().setItemId(item.ItemId).save();
 ```
 
@@ -103,7 +100,7 @@ When you automate a new domain area, introduce a base class that holds shortcuts
 
 For example, for the warehouse management area, there is a base class that is named `AtlWHSTestCase`. It contains shortcuts to `data.whs()`, `data.invent()`, `data.invent().items()`, `data.invent().units()`, and other navigation objects. The shortcuts simplify your test code.
 
-```
+```xpp
 class AtlWHSTestCase extends SysTestCase
 {
     AtlDataRootNote          data;
@@ -125,7 +122,7 @@ It also makes sense to introduce shortcuts that are shared among many test metho
 
 ### Do this
 
-```
+```xpp
 class WHSMinMaxReplenishmentScenarioTest extends AtlWHSTestCase
 …
     var item = items.default(); 
@@ -134,7 +131,7 @@ class WHSMinMaxReplenishmentScenarioTest extends AtlWHSTestCase
 
 ### Don't do this
 
-```
+```xpp
 class WHSMinMaxReplenishmentScenarioTest extends SysTestCase
 …
     var item = data.invent().items().default(); 

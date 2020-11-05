@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CASE">CASE ER function</a>
+# CASE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `CASE` function evaluates the value of the specified expression against the 
 
 ## Syntax
 
-```
+```vb
 CASE (expression, option 1, result 1[, option 2, result 2, …, option N, result N, default result])
 ```
 

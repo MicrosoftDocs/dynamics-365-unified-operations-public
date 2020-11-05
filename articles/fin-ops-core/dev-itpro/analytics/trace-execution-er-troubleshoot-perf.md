@@ -307,7 +307,7 @@ Repeat the steps in the [Import an ER configuration from RCS into Finance and Op
 
 Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.
 
-## Review the execution trace
+## Work with the execution trace
 
 ### Export the generated trace from the application
 
@@ -353,7 +353,7 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution.
 
-![Trace information for the executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Performance trace information in PerfView format](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## Use external tools to review an execution trace that includes database queries
 
@@ -369,7 +369,7 @@ Because of improvements that have been made to the ER framework, the performance
     - Set the **Collect query statistics** option to **Yes**.
     - Set the **Trace query** option to **Yes**.
 
-    ![User parameters dialog box](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Execution tracing section, User parameters dialog box](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### Run the ER format
 
@@ -378,3 +378,8 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution. This trace now includes the details of SQL database access during the execution of the ER format.
 
 ![Trace information for the executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+
+## Additional resources
+
+- [Electronic Reporting overview](general-electronic-reporting.md)
+- [Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md)

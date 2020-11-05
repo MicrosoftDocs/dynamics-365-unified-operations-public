@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Maintenance downtime
-description: This topic explains maintenance downtime in Asset Management.
+title: Maintenance downtime activities
+description: This topic explains how maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -30,11 +30,9 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Maintenance downtime
+# Maintenance downtime activities
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period. For example, you can create a maintenance downtime registration for Production line 10 in Production Hall 29-A on production site 02. The maintenance downtime registration has a start and end time indicating the period in which the assets related to the maintenance stop are not available for production.
 
@@ -80,11 +78,11 @@ The illustration below shows an example of the **Maintenance downtime activities
 
 9. In the **Calculate capacity load** dialog, edit start and end times if required, and select if you want to include work orders and maintenance schedules in the calculation. You can use the **Level** field to indicate how detailed you want the capacity load calculation to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location, which are selected on the maintenance downtime activity, will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all capacity load lines on all the functional location levels to which they are related.
 
-10. Click **OK** to start the calculation. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours. The illustration below shows the results of a **Capacity load** calculation.
+10. Click **OK** to start the calculation. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** Action Pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours. The illustration below shows the results of a **Capacity load** calculation.
 
 ![Figure 3](media/21-preventive-maintenance.png)
 
-11. After you get an overview of the capacity load, if you want to make adjustments on work order maintenance jobs or maintenance schedule lines, return to the **Maintenance downtime activites** details view and select the lines you want to adjust on the **Resulting work order maintenance jobs** and **Maintenance schedule lines** FastTabs.
+11. After you get an overview of the capacity load, if you want to make adjustments on work order maintenance jobs or maintenance schedule lines, return to the **Maintenance downtime activities** details view and select the lines you want to adjust on the **Resulting work order maintenance jobs** and **Maintenance schedule lines** FastTabs.
 
 12. Click the **Adjust** button and update expected start/end dates, service level, or responsible maintenance workers for the selected work order maintenance jobs or maintenance schedule lines.
 
@@ -97,7 +95,7 @@ The illustration below shows an example of the **Maintenance downtime activities
 
 15. In the **Calculate item forecast** dialog, edit start and end times if required, and select if you want to include work orders and maintenance schedules in the calculation. You can use the **Level** field to indicate how detailed you want the capacity load calculation to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location, which are selected on the maintenance downtime activity, will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all capacity load lines on all the functional location levels to which they are related.
 
-16. Click **OK** to start the calculation. The total number of item forecasts is shown in the  **Item forecast** overview. On the **Item forecast** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted items.The illustration below shows the results of an **Item forecast** calculation.
+16. Click **OK** to start the calculation. The total number of item forecasts is shown in the  **Item forecast** overview. On the **Item forecast** tab > the **Group by...** Action Pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted items.The illustration below shows the results of an **Item forecast** calculation.
 
 ![Figure 4](media/22-preventive-maintenance.png)
 

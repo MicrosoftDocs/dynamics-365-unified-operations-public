@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="IF">IF ER function</a>
+# IF ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `IF` function returns the first specified value if the specified condition i
 
 ## Syntax
 
-```
+```vb
 IF (condition, first value, second value) as any of the supported data types
 ```
 

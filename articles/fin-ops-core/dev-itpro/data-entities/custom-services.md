@@ -5,7 +5,7 @@ title: Custom service development
 description: This topic describes how to create a custom service.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/18/2018
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,16 +56,12 @@ Code examples for consuming custom services using SOAP are available in the [Mic
 
 **Example endpoint for a non-dev environment**
 
-`https://<env-name>soap.cloudax.dynamics.com/soap/services/UserSessionService?wsdl`
+`https://<baseurl>/soap/services/UserSessionService?wsdl`
 
 For more information about custom services, see:
 
 - [Using Custom Services \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
 - [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
-
-<!--
-- [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). -->
-
 
 ### JSON-based custom service
 

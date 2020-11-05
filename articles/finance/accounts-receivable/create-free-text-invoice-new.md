@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create free text invoices
+title: Create a free text invoice
 description: This topic explains how to create free text invoices. 
 author: mikefalkner
 manager: AnnBe 
@@ -22,13 +22,13 @@ ms.search.scope: Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-08-30 
 ms.dyn365.ops.version: 8.0.4
 
 ---
 
-# Create free text invoices
+# Create a free text invoice
 
 [!include [banner](../includes/banner.md)]
 

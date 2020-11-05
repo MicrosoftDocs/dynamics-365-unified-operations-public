@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # MX-00010 Set parameters for an electronic invoice
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through setting up an electronic invoice and the PAC account to get the approval and the digital stamp. This procedure can only be completed for a legal entity with a primary address in Mexico. This procedure was created using the demo data company MXMF. The certificates used to encrypt the XML message must be previously installed and the schema XSD file must be copied in the application as well before to start this procedure.
 

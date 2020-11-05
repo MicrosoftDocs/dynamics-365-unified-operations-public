@@ -5,7 +5,7 @@ title: Power BI integration with Entity store
 description: Entity store is an operational data store that is included with Microsoft Dynamics 365 Finance. This topic describes how Entity store enables Power BI integration.
 author: MilindaV2
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -65,20 +65,12 @@ However, you might wonder why you would model an aggregate measurement so that i
 If one of the preceding reasons covers your situation, you should stage your aggregate measurement in Entity store and it use for Power BI integration.
 
 ## Update Entity store
-In the client, you can find the **Entity Store** page at **Systems administration** &gt; **Setup** &gt; **Entity Store**.
-
-[![Entity Store page](./media/entity-store-form-1024x548.jpg)](./media/entity-store-form.jpg)
-
-This page includes a list of aggregate measurements. You can stage any of these aggregate measurements in Entity store. If you're a developer and are familiar with the aggregate measurements that are available in the Application Object Tree (AOT), you might wonder why some aggregate measurements aren't shown here. If you have aggregate measurements that you migrated from AX 2012 R3 (that is, SQL Server Analysis Services projects that were migrated as part of the upgrade process), they can't be deployed until a developer changes the usage property to **StagedEntityStore**. This behavior is intentional. We have enabled best practice warnings and errors that are intended to capture some of the common upgrade issues that affect aggregate measurements. You should fix best practice errors and warnings if you plan to use near-real-time (NCCI) mode. As of the May 2016 update, the administrator must schedule a periodic update by clicking **Refresh** on the **Entity Store** page. You can use the **Refresh** button for a one-time update (that is, demo) or to schedule periodic updates, as shown in the following illustration.
-
-[![Configure refresh dialog box](./media/retail-cube-refresh-1024x548.jpg)](./media/retail-cube-refresh.jpg)
-
-The batch framework is used for scheduling. Therefore, refresh jobs can be monitored, load balanced, and prioritized by using the capabilities of the batch framework. As of the May 2016 update, we support only full updates. However, we will enable incremental updates soon. Eventually, in a future update, the system will update Entity store based on actual usage patterns. Therefore, as an administrator, you will have to use the **Configure refresh** dialog box only as an exception.
+Entity store refresh is automated and managed by the system. In the client, you can find the **Entity Store** page at **Systems administration** &gt; **Setup** &gt; **Entity Store**. For more information, see [Automated Entity store refresh](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh).
 
 ### Connecting to the Entity store database
 For troubleshooting and diagnostics, you can connect to the Entity store database directly from a related sandbox environment.  To connect:
 
-1. Use Remote Desktop to access the sandbox.  The RDP file can be downloaded from the **Environment Details** page after you have whitelisted your IP address.
+1. Use Remote Desktop to access the sandbox.  The RDP file can be downloaded from the **Environment Details** page after you have included your IP address in a safe list.
 2. Open SQL Server Management Studio, and connect to the server specified on the **Environment Details** page.  
     * Find the section titled **Database Accounts**.  Locate the entry for the user with the name **axdwadmin**.  
     * The server name is the first portion of the **SQL Server\Database Name** field.  This should be used in the format of **SQLServerName.database.windows.net** where SQLServerName is the value from LCS.

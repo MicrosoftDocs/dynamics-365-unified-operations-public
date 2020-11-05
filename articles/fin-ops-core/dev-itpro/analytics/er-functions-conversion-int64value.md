@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="INT64VALUE">INT64VALUE ER function</a>
+# INT64VALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,13 +38,13 @@ The `INT64VALUE` function returns an *Int64* value that represents the specified
 
 ## Syntax 1
 
-```
+```vb
 INT64VALUE (text)
 ```
 
 ## Syntax 2
 
-```
+```vb
 INT64VALUE (number)
 ```
 

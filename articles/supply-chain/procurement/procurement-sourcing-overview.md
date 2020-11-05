@@ -3,9 +3,9 @@
 
 title: Procurement and sourcing overview
 description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+author: mkirknel
+manager: tfehr
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,18 +13,18 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58021
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,6 +39,7 @@ This article gives an overview of the functionality that's available in the Proc
 Procurement and sourcing covers all the steps from identifying a need for product and services through procuring the product, receipt, invoicing, and processing of payment with vendors. Procurement processes can be configured toward specific business needs by defining purchasing policies and workflows.
 
 ## Identifying a need for product and services
+
 The need for products or services may arise from *requisitions*, for example, when an employee requires a product. *Product catalogs* can be set up to guide the selection of available products to select from, or requests can be made for products that are not yet made available in a catalog, allowing the purchasing department to consider how the product can be supplied.  
 
 *Spending limits* can be used to constrain requisition spending, and the *purchasing workflow* adds the option of requiring approval before ordering happen. It's also possible to specify budget fund allocation, if required.  
@@ -50,22 +51,23 @@ Purchase orders include an option to send out a *purchase inquiry* to the vendor
 *Vendor catalogs* can be used to collect information on the product assortment that vendors can supply. Vendors can publish their own catalog, so it's easier to keep the catalog up to date. It's possible to attach an *approved vendor list* to a product, and this can help guide vendor selection when new purchase orders are opened, and prevent the use of unintended vendors.
 
 ## Procurement
+
 *Purchase orders* can be created in a number of different ways including:
 
--   As an outcome of master planning which has identified a demand that requires a purchase. This process generates planned purchase orders, and when these are released, purchase orders are generated.
--   Through the processing of purchase requisitions that result in procurement.
--   Through the processing of purchase agreements, where purchase orders are created as released orders from the agreements. This is commonly used when purchase agreements are used to represent blanket orders.
--   Manually, when the purchase order that's created is not based on another document.
+- As an outcome of master planning which has identified a demand that requires a purchase. This process generates planned purchase orders, and when these are released, purchase orders are generated.
+- Through the processing of purchase requisitions that result in procurement.
+- Through the processing of purchase agreements, where purchase orders are created as released orders from the agreements. This is commonly used when purchase agreements are used to represent blanket orders.
+- Manually, when the purchase order that's created is not based on another document.
 
-Purchase orders that are configured with *purchase approval workflows* require approval before they are recorded as approved, and this is required before the order can be processed further.  
+Purchase orders that are configured with *purchase approval workflows* require approval before they are recorded as approved, and this is required before the order can be processed further.
 
 Purchase orders are *confirmed* to represent that an agreement has been established with the vendor. The purchase order will then gradually progress through different states until ultimately being invoiced or canceled.  
 
-When you create a purchase order, many of the fields are prepopulated with values that default from the information stored about the vendor in the **Vendors** page. This means that there are a limited number of fields that you need to fill in on the purchase order, although you can choose to override the default values.
+When you create a purchase order, many of the fields are pre-populated with values that default from the information stored about the vendor in the **Vendors** page. This means that there are a limited number of fields that you need to fill in on the purchase order, although you can choose to override the default values.
 
 ### Prices and discounts
 
-Prices and discounts includes information about the prices, discounts, and rebate terms that they offer. Prices and discounts can be represented as *trade* *agreements*. Trade agreements represent vendor price lists with prices or discounts, and have a specific set of dates for which the agreement is valid. Prices and discounts can be negotiated and represented through *purchase agreements* with conditions like commitments to buy certain volumes or monetary amounts as a precondition for the negotiated terms. *Rebate agreements* can be created with vendors where the procurement of specific products or groups of products may trigger a rebate from the vendor depending on the purchase amount or volume.
+Prices and discounts includes information about the prices, discounts, and rebate terms that they offer. Prices and discounts can be represented as *trade agreements*. Trade agreements represent vendor price lists with prices or discounts, and have a specific set of dates for which the agreement is valid. Prices and discounts can be negotiated and represented through *purchase agreements* with conditions like commitments to buy certain volumes or monetary amounts as a precondition for the negotiated terms. *Rebate agreements* can be created with vendors where the procurement of specific products or groups of products may trigger a rebate from the vendor depending on the purchase amount or volume.
 
 ### Delivery options
 
@@ -80,6 +82,7 @@ Products can be set up to include *supplementary items*. This is to propose prod
 Charges can be assigned to the purchase order. This can happen automatically through setup of automatic charges or by adding the charges manually. Charges can be assigned to the order at the header level, or at the order line level. Accounting of charges can be set up in different ways. For example, you can set up a charge to be accounted as a product cost. If you do this, the charges must be assigned at the order line level before the order can be confirmed. There is an option that can help allocate charges from the order header to the lines.
 
 ## Product receipt and invoicing
+
 Purchase orders that include physical products commonly require *arrival registration* to happen within a warehouse, and after this a *product receipt* is registered for the order. Purchase orders with products that fulfill requisitions may be configured so that the employee who has requested the products also needs to provide a *confirmation of receipt*.  
 
 Some purchase orders include products that are services or other non-physical products where receipt in a warehouse is not needed. Products can be created as services or *procurement categories* can be used directly on the purchase order for such orders. With these orders, accounting of product receipt is sometimes skipped and the order is invoiced directly, or alternatively product receipt registration is done on the purchase order without any prior arrival registration.  
@@ -90,10 +93,8 @@ When *vendor invoices* arrive from the vendor they may first be recorded in the 
 
 *Accounting distributions* can be specified on the purchase order to describe how accounting should be done within the ledger, and can also define how budget fund allocation is obtained when this is included in your configuration.  
 
-Invoiced purchase orders will record the liability into the vendor account within accounts payable, from where the *v*e*ndor payment* can be processed.
+Invoiced purchase orders will record the liability into the vendor account within accounts payable, from where the *vendor payment* can be processed.
 
 ## Vendor performance
-Performance and review of purchasing is supported through *procurement and account payable reports,* which include spend analysis and vendor performance analysis.
 
-
-
+Performance and review of purchasing is supported through *procurement and account payable reports*, which include spend analysis and vendor performance analysis.

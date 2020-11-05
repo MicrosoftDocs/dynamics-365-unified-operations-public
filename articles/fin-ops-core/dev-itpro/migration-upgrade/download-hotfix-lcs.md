@@ -5,7 +5,7 @@ title: Download updates from Lifecycle Services (LCS)
 description: This topic covers what updates you should expect to see and how you can get the updates from Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
-ms.date: 12/09/2019
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 56171
 ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: amarshall
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -47,9 +47,11 @@ To view available updates:
 
 - **Binary updates** are pre-compiled and cumulative. Every subsequent binary update includes all previous updates. These updates don't have to be compiled in a development environment, and they can be applied directly to a non-development environment from LCS.
         
-    If you're running an environment that has Retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 Retail, all updates, even updates for application models, are released as binary updates.    
+    If you're running an environment that has Commerce functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under the SDK packaging. For Microsoft Dynamics 365 Commerce, all updates, even updates for application models, are released as binary updates.    
     
-    For all versions of Finance and Operations apps that are version 8.1 and later, all updates, including updates for application models, are released as binary updates.
+
+    For all versions of Commerce and Finance and Operations apps that are version 8.1 and later, all updates, including updates for application models, are released as binary updates.
+
 
 - **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Dependent X++ updates are automatically selected and downloaded. X++ updates are source code updates. Before they can be applied to a non-development environment, X++ updates must be compiled in a developer environment and merged with any customizations. X++ updates apply only to version 8.0 and earlier. 
 
@@ -67,7 +69,7 @@ Based on your product and version, you will have different update options from L
 
    | Update        | Description           | Availability  |
    | ------------- |-------------| -----|
-   | Quality update      | A quality update is a cumulative, roll-up build that contains fixes for issues that are specific to the    product version that you’re currently running. | A quality update is available when your environment is running the same version of the current service update (n), or when your environment is running on one version older than the current service update (n-1). For example, if the current service update is version 10.0.2, you will have the option to choose a quality update if you’re running version 10.0.2, or if you’re running one version older, which is 10.0.1.<br><br>There will be no quality update available for any version that’s older than 2 versions of the current service update. You will have to apply the latest service update to stay current. |
+   | Quality update      | A quality update is a cumulative, roll-up build that contains fixes for known issues that are specific to the service update. | A quality update is available when your environment is running the same version of the current service update (n), or when your environment is running on one version older than the current service update (n-1). For example, if the current service update is version 10.0.2, you will have the option to choose a quality update if you’re running version 10.0.2, or if you’re running one version older, which is 10.0.1.<br><br>There will be no quality update available for any version that’s older than 2 versions of the current service update. You will have to apply the latest service update to stay current. |
    | Service update     | A service update is the version currently automatically applied to customer environments based on the LCS project update settings.<br><br>A service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | A service update is available if your environment has not been updated to the current service update version available for auto-update.<br><br>Only the designated sandbox or production environment will be auto-updated if you have configured the update settings for the LCS project. However, you can manually apply the current service update version to other sandbox environments or your cloud-hosted environments.|
    | Upcoming service update | An upcoming service update is the latest version that is generally available for self-update.<br><br>An upcoming service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | An upcoming service update will be made generally available for self-deployment approximately 2 weeks prior to when Microsoft starts automatically applying this version based on your update settings for the LCS project.|
 

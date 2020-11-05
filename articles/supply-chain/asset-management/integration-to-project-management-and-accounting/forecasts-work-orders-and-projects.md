@@ -4,7 +4,7 @@
 title: Forecasts, work orders, and projects
 description: This topic explains forecasts and work order integration with the Project management and accounting module in Asset Management.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2019
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetWorkOrderProjCostInfoPart 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

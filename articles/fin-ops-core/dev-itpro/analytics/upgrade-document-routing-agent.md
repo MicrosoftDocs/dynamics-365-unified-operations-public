@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade the Document Routing Agent
-description: This topic explains how to upgrade the Document Routing Agent.
+title: Update the Document Routing Agent
+description: This topic explains how to update the Document Routing Agent.
 author: TJVass
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,13 +27,13 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Upgrade the Document Routing Agent
+# Update the Document Routing Agent
 
 [!include[banner](../includes/banner.md)]
 
-Platform update 12 includes several important enhancements to the components that provide network printing capabilities. For example, the solution for managing the print job queue has been redesigned so that the Print Job Management service can be scaled to satisfy high-volume printing requirements. Although the Print Job Management service is backward-compatible with in-market versions of the Document Routing Agent (DRA) client, we strongly recommend that customers upgrade **all** existing DRA clients that are hosted on-premises.
+The solution for managing the print job queue is designed to allow customers to properly scale Dynamics 365 Finance and Operations apps to satisfy high-volume printing requirements. Although public service endpoints used to manage print jobs are backward-compatible, we strongly recommend that customers update **all** existing Document Routing Agent (DRA) clients.
 
-If you don't upgrade existing installations of the DRA to Platform update 12 or later, you might experience the following issues:
+If you don't update existing installations of the DRA the most current version, you might experience issues such as:
 
 - Observable performance degradation in applications
 - Document loss that is associated with orphaned print jobs
@@ -41,8 +41,11 @@ If you don't upgrade existing installations of the DRA to Platform update 12 or 
 
 IT administrators must perform the following procedures on each domain resource that is used to host a DRA.
 
+> [!NOTE]
+> When you complete a DRA update, IT administrators should register any printers that are connected through the host server. For network printers that are identified by their network paths, if the paths have not changed, updates are not required.
+
 ## Get started
-To continue to run the DRA as a Microsoft Windows service, you must have both the user name and the password of the domain account that is used to run the service. This information must be available after the upgrade is completed. To find the information for the active service account, start the Microsoft Management Console (MMC) Services snap-in, and select **Microsoft Dynamics 365 Document Routing Service** in the list.
+To continue to run the DRA as a Microsoft Windows service, you must have both the user name and the password of the domain account that is used to run the service. This information must be available after the update is completed. To find the information for the active service account, start the Microsoft Management Console (MMC) Services snap-in, and select **Microsoft Dynamics 365 Document Routing Service** in the list.
 
 ![Services snap-in](media/Services_dialog.png)
 

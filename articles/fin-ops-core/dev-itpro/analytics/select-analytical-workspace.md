@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Select analytical workspaces from PowerBI.com 
-description: This topic explains how to select a report that is hosted on PowerBI.com and use it for an application workspace.
+title: Select analytical workspaces from Power BI 
+description: This topic explains how to select a report that is hosted in Power BI and use it for an application workspace.
 author: tjvass
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
 ---
 
-# Select analytical workspaces from PowerBI.com
+# Select analytical workspaces from Power BI
 
 [!include[banner](../includes/banner.md)]
 
@@ -53,7 +53,7 @@ Here are some of the top motivations for selecting reports that are hosted on Po
 
 ### Embed a PowerBI.com report in an analytical workspace
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3lP5m]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3lP5m]
 
 The [How to embed PowerBI.com reports](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 

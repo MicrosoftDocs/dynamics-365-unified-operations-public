@@ -4,7 +4,7 @@
 title: Maintenance forecasts
 description: This topic explains maintenance forecasts in Asset Management.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -62,7 +62,7 @@ You might be able to add forecast lines to a work order or delete them from a wo
 
 There are three ways to add items to a work order maintenance forecast. You can create lines for items (spare parts) that aren't included on the spare parts list or the asset bill of materials (BOM), you can select spare parts from the approved spare parts list, or you can select items from the asset BOM.
 
-- On the **Work order maintenance forecast** page, select the work order job to to add a forecast to.
+- On the **Work order maintenance forecast** page, select the work order job to add a forecast to.
 
 - On the **Items** FastTab, add items to the maintenance forecast by using the appropriate method.
 

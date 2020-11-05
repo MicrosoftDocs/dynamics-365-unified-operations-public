@@ -4,7 +4,7 @@
 title: Vendor rebates
 description: This topic provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -16,18 +16,19 @@ ms.technology:
 ms.search.form:  TAMVendRebateAgreement
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: no wiki topic
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012 
 ---
 
 # Vendor rebates
+
 [!include [banner](../includes/banner.md)]
 
 Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
@@ -54,6 +55,7 @@ People in these positions are looking for ways to achieve various goals. Here ar
 - Have a quantified basis for ongoing and future negotiations with vendors about rebates.
 
 ## Review details of a vendor rebate agreement
+
 A vendor rebate agreement is a record of a contract with a vendor that specifies the negotiated terms and conditions under which the company qualifies for a monetary reward in return for achieving preset purchase targets. Vendor rebate agreements are recorded on the **Rebate agreements** page.
 
 To open the **Vendor rebate agreements** page, select **Procurement and sourcing** &gt; **Vendor rebates** &gt; **Rebate agreements**.
@@ -62,9 +64,11 @@ To open the **Vendor rebate agreements** page, select **Procurement and sourcing
 
 On the **Vendor rebate agreements** page, you can view details about the negotiated conditions of a vendor agreement.
 
-The agreement’s header specifies the general conditions that qualify a company for rebates. In effect, the header information specifies that a vendor grants a rebate when a specific product is bought in a specific quantity. On the header, you also specify the unit of measure rebate option and the calculation date type.
+The agreement's header specifies the general conditions that qualify a company for rebates. In effect, the header information specifies that a vendor grants a rebate when a specific product is bought in a specific quantity. On the header, you also specify the unit of measure rebate option and the calculation date type.
 
-- On the **General** tab, in the **Unit of measure rebate option** field, you can define whether a unit of measure should be a condition for the purchase order line to qualify for a rebate claim. 
+- On the **Overview** tab, if you have lines with **Item code** set to *table* to specify the item, then the agreement is for that specific item. If you have lines with **Item code** set to *Group* or *All* to specify the items, then the vendor rebate agreement will be individually processed per item qualifying for the item code, not across all items qualifying for the item code.
+
+- On the **General** tab, in the **Unit of measure rebate option** field, you can define whether a unit of measure should be a condition for the purchase order line to qualify for a rebate claim.
 
     - **Convert** – A purchase order line qualifies for a vendor rebate per the rebate agreement. You will receive a rebate regardless of the unit of measure that is applied on the line.
     - **Exact match** – To qualify for a rebate, a purchase line must have the same unit of measure that is specified on the agreement.
@@ -101,6 +105,7 @@ On the agreement lines, you can specify the vendor rebate agreement in more deta
 When purchase orders are placed with a vendor that the company has a rebate agreement with, the program identifies any future vendor credit payments. If the purchase orders qualify for a rebate, a rebate claim is generated for every order line as soon as a purchase invoice has been posted. This process is automatic. Later, you can review the expected rebates and see the impact of those rebates on the product’s cost and profit margin.
 
 ### View details of rebates that are applied to a purchase order line per the vendor rebate agreement
+
 1. On the **Purchase order** page, select an order line, and then select **Purchase order line** &gt; **View** &gt; **Price details**.
 2. On the **Price details** page, select the **Rebates** FastTab.
 
@@ -110,15 +115,18 @@ The rebate information is also shown in the **Vendor rebate** field in the **Mar
 > On the **Procurement and sourcing parameters** page, on the **Prices** tab, verify that the **Enable price details** option is set to **Yes**. If the option is set to **No**, you won’t be able to view the rebates.
 
 ## Review and approve claims
+
 Rebate claims that are generated represent the future payments that can be expected from the vendor. Before a credit note is issued to the vendor, the agreement owner typically wants to review the claims and approve them. However, note that the status of a claim determines whether the claim is ready to go through the approval process.
 
 ### The status of claims and the effect on the approval process
+
 When a claim is generated, its status is set to **To be calculated** if the rebate is granted on a cumulative basis or **Calculated** if the rebate is granted per invoice. If the status of a claim is **To be calculated**, the claim must go through a calculation process that is handled by the Cumulate function. Only claims that have a status of **Calculated** can be included in the approval process.
 
 > [!NOTE]
 > If the **Approval required** option on a vendor rebate agreement is set to **No**, any claims that are generated will have a status of **Approved**. The approval is mandatory for claims that are granted on a cumulative basis.
 
 ### Approve claims, and view postings and invoice details
+
 When claims have been approved, they can be processed by Accounts payable (A/P). A credit memo (vendor invoice) for the rebate claim amount is automatically generated. The credit can then be added to the vendor balance, and the A/P team can include it in the regular settlement process.
 
 1. Select **Procurement and sourcing** &gt; **Vendor Rebates** &gt; **Rebate claims** to open a rebate claim.
@@ -157,6 +165,7 @@ When claims have been approved, they can be processed by Accounts payable (A/P).
 9. On the **All vendors** page, select the vendor that you receive a rebate from, and then, on the Action Pane, select **Transactions**. Find the line for the invoice. The rebate amount has now been added to the vendor balance.
 
 ## Summary
+
 The process for handling vendor rebates involves multiple manual tracking tasks that are often tedious. By automating these tasks, the vendor rebate management feature can help you move through the following processes:
 
 - Generating accurate rebate claims

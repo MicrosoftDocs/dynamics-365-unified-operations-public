@@ -66,4 +66,4 @@ The **Analytics** page provides important metrics about the bank accounts in the
 -   Balance by bank account
 -   Balance by currency
 
-You can view bank analytics across all companies from the **Cash overview – all companies** workspace.
+You can view bank analytics across all companies from the **Cash overview – all companies** workspace. For more information, see [Cash overview Power BI content](Cash-Overview-Power-BI-content.md).

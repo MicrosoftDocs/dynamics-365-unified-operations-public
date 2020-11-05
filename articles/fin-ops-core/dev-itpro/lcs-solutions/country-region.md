@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: AX 7.0.0
 ## Local and regional deployments
 If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider during deployment. Consider the following resources that might be relevant to you:
 
-[Microsoft Dynamics 365 Finance and Operations apps operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations apps operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## Localization and regulatory features
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance and Operations apps include functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
+Finance and Operations apps include functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
 
 This topic includes lists of resources that can help you do the following: 
 - Learn more about developing country/region-specific solutions.

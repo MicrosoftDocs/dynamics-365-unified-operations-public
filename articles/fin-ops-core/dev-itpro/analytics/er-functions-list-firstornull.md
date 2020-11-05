@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FIRSTORNULL">FIRSTORNULL ER function</a>
+# FIRSTORNULL ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ The `FIRSTORNULL` function returns the first record of the specified list as a *
 
 ## Syntax
 
-```
+```vb
 FIRSTORNULL (list)
 ```
 
