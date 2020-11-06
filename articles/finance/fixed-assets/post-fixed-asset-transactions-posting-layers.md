@@ -46,7 +46,6 @@ You can designate ledger accounts for fixed asset transactions on the Fixed asse
 
 The fixed asset could be entered in documents that only supports **Current** posting layer like **Purchase order**, **Pending vendor invoice**, **Sales order** or **Free text invoice**. While selecting a fixed asset ID in any of those documents the asset book is filtered to the book with **Current** posting layer and get filled in automatically, during posting the system validates the fixed asset posting layer is **Current** or it will stop the posting process. 
 
-
 > [!NOTE] 
 > By using derived books, you can post transactions to different posting layers at the same time. You create the transactions of the primary book in a journal or source document where the posting layer corresponds to the book posting layer. During posting, the derived book transactions are posted to the appropriate posting layers. 
 
