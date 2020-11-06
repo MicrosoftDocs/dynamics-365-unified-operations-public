@@ -84,7 +84,7 @@ You will also find the following sections.
 > The settings shown above represent a deployment configured with Microsoft 365 compatibility. For more information, see [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
 ## Configuration values used by the AOS
-The AOS uses these configuration values to determine where to redirect an unauthenticated request when a user hits the application URL:
+The AOS uses the configuration values above to determine where to redirect an unauthenticated request when a user sends a request to the application URL:
 
 1. Request is sent by the browser to the application URL (`https://ax.contoso.com/namespaces/AXSF/`).
 2. The request is processed by the Gateway and gets forwarded to an AOS node that accepts interactive sessions.
