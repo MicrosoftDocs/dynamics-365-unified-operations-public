@@ -324,7 +324,7 @@ The examples **RUMF** company.
 9.  On the **Deferrals creating** page, on the ActionPane, select the sequence
     of calculation, select **Calculate marked**.
 
-10. On the **Parameters** FastTab
+ 10. On the **Parameters** FastTab
 
 -   In the **Start date** field, **1/1/2019**
 
