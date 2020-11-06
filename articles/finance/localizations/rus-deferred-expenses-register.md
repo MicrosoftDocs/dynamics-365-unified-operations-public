@@ -1,23 +1,30 @@
-Contents
+---
+# required metadata
+title: Deferred expenses register
+description: This topic explains how to set up defferals reister
+author: anasyash
+manager: anasyash
+ms.date: 11/06/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-Introduction 1
+# optional metadata
+ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 2020-11-06
+ms.dyn365.ops.version: 10.0.1
 
-Preliminary setup 2
-
->   Set up the deferrals module 2
-
->   Set up deferrals creation when selling fixed asset 2
-
-Deferrals register 2
-
->   Set up the deferrals register 3
-
->   Examples 3
-
->   Example of automatic deferral creation as a result of selling fixed asset
->   with loss 3
-
->   Example of automatic deferral creation by using a periodic task 6
+---
 
 Deferrals register
 
