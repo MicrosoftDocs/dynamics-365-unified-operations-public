@@ -29,10 +29,7 @@ ms.dyn365.ops.version:
 ---
 # Sales tax reports for Hungary
 
-This topic provides information about the **Sales tax declaration information**
-and **Itemized VAT statement** reports. You can generate these Microsoft Excel
-reports and use them to create the value-added tax (VAT) returns that must be
-submitted to the tax authorities.
+This topic provides information about the **Sales tax declaration information** and **Itemized VAT statement** reports. You can generate these Microsoft Excel reports and use them to create the value-added tax (VAT) returns that must be submitted to the tax authorities.
 
 -   **Sales tax declaration information** – This report includes a list of invoices that are grouped by sales tax direction (sales tax receivable, sales tax payable, or use tax) and by sales tax code. For each sales tax direction and sales tax code, the report also includes the total sales tax amount and total gross invoice amount.
 
@@ -56,19 +53,14 @@ This report also includes the same information for each partner separately, and 
 
   * **Sales tax declaration info report format (HU)**
 
-    For more information, see [Download Electronic reporting configurations from
-    Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
 1. On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable to print itemized VAT statement** option to **Yes** to use the **Sales tax declaration info Itemized Excel format (HU) ER format and generate the Itemized VAT statement report**.
 
 Alternatively, set the option to **No** to use the **Sales tax declaration info report format (HU) ER format and generate the Sales tax declaration information** report.
 
-1. If you set the **Enable to print itemized VAT statement option to Yes**, in
-    the **Itemized VAT statement limit (HUF)** field, enter an amount limit in
-    Hungarian forints (HUF). This field determines which invoice transactions
-    will be included in the **Itemized VAT statement** report. Any invoice where
-    the VAT amount exceeds the value of this field will be included.
+1. If you set the **Enable to print itemized VAT statement option to Yes**, in the **Itemized VAT statement limit (HUF)** field, enter an amount limit in Hungarian forints (HUF). This field determines which invoice transactions will be included in the **Itemized VAT statement** report. Any invoice where the VAT amount exceeds the value of this field will be included.
 
 ## Generate and export the Sales tax declaration information report or Itemized VAT statement report
 
@@ -76,17 +68,13 @@ Alternatively, set the option to **No** to use the **Sales tax declaration info 
 
 1.  Go to **Tax \> Periodic tasks \> VAT reporting**.
 
-1.  In the upper part of the **VAT reporting** page, set the **Date** and
-    **Settlement period** fields. The grid shows settlement periods that are
-    available for VAT reporting.
+1.  In the upper part of the **VAT reporting** page, set the **Date** and **Settlement period** fields. The grid shows settlement periods that are available for VAT reporting.
 
     ![](media/HU-sales-tax-reports-1.png)
 
-1.  Select the line for the required settlement period, and then select **Create
-    report**.
+1.  Select the line for the required settlement period, and then select **Create report**.
 
-1.  In the **Sales tax declaration information** dialog box, set the following
-    fields.
+1.  In the **Sales tax declaration information** dialog box, set the following fields.
 
 <table>
 <tbody>
@@ -138,9 +126,7 @@ Alternatively, set the option to **No** to use the **Sales tax declaration info 
 </tbody>
 </table>
 
-5.  Select **OK**. In the grid in the lower part of the page, a line is created
-    that has the VAT reporting data. Additionally, a ZIP archive that contains
-    the report is generated.
+5.  Select **OK**. In the grid in the lower part of the page, a line is created that has the VAT reporting data. Additionally, a ZIP archive that contains the report is generated.
 
 6.  Review the data on the line that is created.
 
@@ -154,26 +140,19 @@ Alternatively, set the option to **No** to use the **Sales tax declaration info 
 
 ### Reprint a generated report
 
-1.  On the **VAT reporting** page, select **Print report to** print the
-    generated VAT report.
+1.  On the **VAT reporting** page, select **Print report to** print the generated VAT report.
 
-2.  In the **Sales tax declaration information** dialog box, set the
-    **Approve**, **Include foreign trade**, **Generate file**, and **Run mode**
-    fields as described in the previous section.
+2.  In the **Sales tax declaration information** dialog box, set the **Approve**, **Include foreign trade**, **Generate file**, and **Run mode** fields as described in the previous section.
 
 3.  Select **OK**. Review the generated ZIP archive that contains the report.
 
 ### Re-create the report for a period
 
-1.  On the **VAT reporting** page, select **Cancel period** to clear the
-    **Approved** check box from the previous reporting.
+1.  On the **VAT reporting** page, select **Cancel period** to clear the **Approved** check box from the previous reporting.
 
-2.  Select **Clear period** to delete the previously created line in the lower
-    part of the page.
+2.  Select **Clear period** to delete the previously created line in the lower part of the page.
 
-3.  Select **Create report**, and follow the instructions in the [Generate and
-    print VAT](#generateandprintvatreporting) reporting section to create a new line in the lower part of the
-    **VAT reporting** page.
+3.  Select **Create report**, and follow the instructions in the [Generate and print VAT](#generateandprintvatreporting) reporting section to create a new line in the lower part of the **VAT reporting** page.
 
 ## Example
 
@@ -181,8 +160,7 @@ This example can be done in the **DEMF** legal entity.
 
 ### Setup
 
-1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up
-    the following three sales tax codes.
+1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up the following three sales tax codes.
 
 | **Sales tax code** | **Percentage** | **Description**                                                                       |
 |--------------------|----------------|---------------------------------------------------------------------------------------|
@@ -190,8 +168,7 @@ This example can be done in the **DEMF** legal entity.
 | InVAT27            | 27             | Domestic purchases at a rate of 27 percent.                                           |
 | EU18               | 18             | EU purchases at a rate of 18 percent, where the **Use tax** option is set to **Yes**. |
 
-2.  Go to **Tax \> Setup \> Sales tax \> Tax exempt number**, and select **New**
-    to create the following two lines.
+2.  Go to **Tax \> Setup \> Sales tax \> Tax exempt number**, and select **New** to create the following two lines.
 
 | **Country/region** | **Tax exempt number** |
 |--------------------|-----------------------|
@@ -200,25 +177,19 @@ This example can be done in the **DEMF** legal entity.
 
 ### Create and post customer transactions
 
-1.  Go to **Accounts receivable \> Customers \> All customers**, and select
-    customer **DE-010**.
+1.  Go to **Accounts receivable \> Customers \> All customers**, and select customer **DE-010**.
 
-2.  On the **Address** FastTab, set **HUN** as the country, and then, on the
-    **Invoice and Delivery** FastTab, set the **Tax exempt number** field to
-    **HU11651273**.
+2.  On the **Address** FastTab, set **HUN** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **HU11651273**.
 
 3.  Select **Save**.
 
-4.  Go to **Accounts receivable \> Orders \> All sales orders**, create the
-    following order, and then generate an invoice.
+4.  Go to **Accounts receivable \> Orders \> All sales orders**, create the following order, and then generate an invoice.
 
 | **Date**        | **Customer** | **Amount net** | **VAT amount** | **Sales tax code** |
 |-----------------|--------------|----------------|----------------|--------------------|
 | January 1, 2020 | DE-010       | 800.00         | 216.00         | VAT27              |
 
-5.  Create a credit note for the order. Select the order that you just created,
-    and then select **Sell \> Create \> Credit note**. The following two new
-    lines are added.
+5.  Create a credit note for the order. Select the order that you just created, and then select **Sell \> Create \> Credit note**. The following two new lines are added.
 
 | **Date**        | **Customer** | **Amount net** | **VAT amount** | **Sales tax code** |
 |-----------------|--------------|----------------|----------------|--------------------|
@@ -232,10 +203,7 @@ This example can be done in the **DEMF** legal entity.
 | January 2, 2020 | DE-010       | \-800.00       | \-216.00       | VAT27              |
 | January 2, 2020 | DE-010       | **1,000.00**   | **270.00**     | VAT27              |
 
-**Note**: If you manually create a credit note instead of selecting **Sell \>
-Create \> Credit note** (for example, you create a free text invoice that has a
-negative amount), the credit note will appear in item 01 (sales invoices) and
-will have a negative amount.
+[!Note]: If you manually create a credit note instead of selecting **Sell \> Create \> Credit note** (for example, you create a free text invoice that has a negative amount), the credit note will appear in item 01 (sales invoices) and will have a negative amount.
 
 ### Create and post vendor transactions
 
