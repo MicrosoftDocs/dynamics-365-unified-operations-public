@@ -54,3 +54,12 @@ For outbound work, use items that have an available inventory status. If you hav
 After you set up inventory statuses, you can set the default inventory status for a site, item, and warehouse. You can also set a default status for sales, transfer, and purchase orders. The default status for sales orders and outbound transfer order can't have the **Inventory blocking** option set to **Yes**. The inventory status that is inherited from the default settings on a site, warehouse, item, purchase order, transfer order or sales order can be changed by using the mobile device, or on the purchase order, sales order, or transfer order line.
 
 To plan coverage for items that have an available inventory status, select the **Coverage plan by dimension** option for a storage dimension on the **Storage dimension groups** page. When you open the **Item Coverage** wizard, items that have an available status appear on the **Status** page. To create coverage settings for these items, select the inventory status ID for the available inventory statuses. Based on the coverage settings, you can calculate the item requirements and forecast the supply and demand of available items during master planning. You can't create an item coverage setup that has a blocked inventory status. Alternatively, use the **Item coverage** page to create or modify the item coverage parameters.
+
+# Examples on how to change inventory statuses
+
+You can change inventory status using the periodic task **Inventory status change** or through the **On-hand by location** page. When using the periodic task **Inventory status change** you can select the records to include and set it to run in the batch at the desired interval. If you need to change inventory status as an ad-hoc process you can select records on the **On-hand by location** page and selecting the **Inventory status change** button. 
+
+ > [!NOTE]
+ > You can enable the **Change the inventory status of items controlled by tracking dimensions** feature, to allow you to change the inventory status of items controlled by tracking dimensions, including the ability to update only selected records. 
+On the **On-hand by location** page you will be able to group lines based on shown dimensions using the **Display dimensions** button and change the status for the selected lines. This feature also lets you multi-select records and then use the **Inventory status change** button.
+On the **Inventory status change** periodic task you will be able to filter by tracking dimensions.
