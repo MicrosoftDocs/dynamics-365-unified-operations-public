@@ -49,16 +49,16 @@ This report also includes the same information for each partner separately, and 
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the report format:
 
-  * **Sales tax declaration info Itemized Excel format (HU)**
+   * **Sales tax declaration info Itemized Excel format (HU)**
 
-  * **Sales tax declaration info report format (HU)**
+   * **Sales tax declaration info report format (HU)**
 
     For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
 1. On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable to print itemized VAT statement** option to **Yes** to use the **Sales tax declaration info Itemized Excel format (HU) ER format and generate the Itemized VAT statement report**.
 
-Alternatively, set the option to **No** to use the **Sales tax declaration info report format (HU) ER format and generate the Sales tax declaration information** report.
+   Alternatively, set the option to **No** to use the **Sales tax declaration info report format (HU) ER format and generate the Sales tax declaration information** report.
 
 1. If you set the **Enable to print itemized VAT statement option to Yes**, in the **Itemized VAT statement limit (HUF)** field, enter an amount limit in Hungarian forints (HUF). This field determines which invoice transactions will be included in the **Itemized VAT statement** report. Any invoice where the VAT amount exceeds the value of this field will be included.
 
@@ -203,7 +203,7 @@ This example can be done in the **DEMF** legal entity.
 | January 2, 2020 | DE-010       | \-800.00       | \-216.00       | VAT27              |
 | January 2, 2020 | DE-010       | **1,000.00**   | **270.00**     | VAT27              |
 
-[!Note]: If you manually create a credit note instead of selecting **Sell \> Create \> Credit note** (for example, you create a free text invoice that has a negative amount), the credit note will appear in item 01 (sales invoices) and will have a negative amount.
+![Note]: If you manually create a credit note instead of selecting **Sell \> Create \> Credit note** (for example, you create a free text invoice that has a negative amount), the credit note will appear in item 01 (sales invoices) and will have a negative amount.
 
 ### Create and post vendor transactions
 
