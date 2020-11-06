@@ -259,7 +259,7 @@ will have a negative amount.
 6.  In the **Sales tax declaration information** dialog box, set the **Include
     use-tax** option to **Yes**.
 
-7.  Select **OK**, and review the generated report.
+7.  Select **OK**, and review [the generated report](https://mbs.microsoft.com/customersource/Global/AX/downloads/tax-regulatory-updates/SalesTaxDeclarationInformationHungary).
 
 ### Generate and print the Itemized VAT statement report
 
