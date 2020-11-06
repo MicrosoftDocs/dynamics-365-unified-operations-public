@@ -52,8 +52,7 @@ submitted to the tax authorities.
 | 05              | Credit note purchase orders                   |
 | 06              | Purchase invoices that don't exceed the limit |
 
->   This report also includes the same information for each partner separately,
->   and a list of invoices for each item.
+This report also includes the same information for each partner separately, and a list of invoices for each item.
 
 ## Setup
 
