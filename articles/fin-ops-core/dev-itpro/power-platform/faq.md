@@ -115,3 +115,8 @@ Dual-write is only provided for a few key data entities where the data needs to 
 
 ### When adding records using virtual entities is there any way to use number sequences?
 Yes, if the Finance and Operations entity can auto generate number sequences, then it will work the same way from the virtual entity.
+
+### Why does the 'search vew' does not work in Power Apps?
+If there are no fields added in the quickfind view for the entity, then the search box does nothing. The workaround until this is fixed in UCI is just to add one or more fields of the entity to the quickfind view.
+
+
