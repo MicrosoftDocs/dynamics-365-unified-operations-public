@@ -82,7 +82,7 @@ Screen layout IDs can have a maximum of 10 characters. The ID is a string that c
 
 Here is an example of a screen layout ID for the Fabrikam company, layout version 4, and the Store Manager persona:
 
-F3MGR
+F4MGR
 
 The following illustration shows an example of the Welcome screen for a Fabrikam store manager.
 
@@ -159,7 +159,7 @@ Users have been provided for the various screen layouts. By using the following 
 | Adventure Works | A3MGR            | Store Manager | 000154, 000137, 000073 |
 | Adventure Works | A3CSH            | Cashier       | 000150, 000175, 000165 |
 | Adventure Works | A3STK            | Stock Clerk   | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Store Manager | 000160, 000168, 000163 |
+| Fabrikam        | F4MGR            | Store Manager | 000160, 000713         |
 | Fabrikam        | F3CSH            | Cashier       | 000161, 000113, 000114 |
 | Fabrikam        | F3STK            | Stock Clerk   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Store Manager | 000100, 000111         |
