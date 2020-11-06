@@ -106,7 +106,7 @@ created.
 The register calculates the total for each expense code. The register totals are
 used calculat totals for revenue and expense codes.
 
-he register lines the following information:
+The register lines the following information:
 
 -   **Line number**
 
@@ -175,7 +175,7 @@ The examples **RUMF** company.
 |--------------|-----------|
 | Inventory    | Inventory |
 
-6.  reate .
+6.  Create .
 
 | **Product number** | **Product name** | **FA group** |
 |--------------------|------------------|--------------|
@@ -192,7 +192,7 @@ The examples **RUMF** company.
         For register, on the **Hide** FastTab, select the fields be hidden from
         the register.
 
-8.  reate the following fixed asset
+8.  Create the following fixed asset
 
 | **FA group** | **Number** | **Acquisition date** | **Acquisition cost** |
 |--------------|------------|----------------------|----------------------|
@@ -294,9 +294,9 @@ The examples **RUMF** company.
 
 4.  On the **Counter setup** page, create sequence
 
-5.  n the upper pane, in the **Expense code** field, select **902010100**
+5.  On the upper pane, in the **Expense code** field, select **902010100**
 
-6.  the **Lines** FastTab, create the following lines
+6.  On the **Lines** FastTab, create the following lines
 
 | **Line number** | **Operator** | **Line type** | **Period types** | **Output**  |
 |-----------------|--------------|---------------|------------------|-------------|
@@ -305,7 +305,7 @@ The examples **RUMF** company.
 
 7.  Go to **Accounts payable \> Invoices \> Invoice journal**reate a journal
 
-8.  n the Action ane, select **Lines** the following fields
+8.  On the Action ane, select **Lines** the following fields
 
 | **Column**              | **Value**                                         |
 |-------------------------|---------------------------------------------------|
@@ -337,7 +337,7 @@ The examples **RUMF** company.
 
 2.  On the Action ane, select **Create deferrals**
 
-3.  the **Deferrals** page, verify that the deferral master record was created
+3.  On the **Deferrals** page, verify that the deferral master record was created
 
 4.  Make sure that the **Deferrals models** page has the following lines
 
@@ -352,7 +352,7 @@ The examples **RUMF** company.
 6.  On the **Journal voucher** page, on the Action ane, select **Group
     operations \> Writing off**
 
-7.  n the **Deferrals writing off** page, in the **Transaction date** field,
+7.  On the **Deferrals writing off** page, in the **Transaction date** field,
     select **3/1/2019**, and select **OK**.
 
 8.  Verify that for the **TAX** value model lines the **Writing off** and amount
