@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: E-Commerce architectural overview
+title: E-commerce architectural overview
 description: This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# E-Commerce Architectural overview
+# E-commerce architectural overview
 
 [!include [banner](../includes/banner.md)]
 
