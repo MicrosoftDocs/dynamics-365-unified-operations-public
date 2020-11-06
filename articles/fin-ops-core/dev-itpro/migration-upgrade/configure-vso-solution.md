@@ -52,9 +52,11 @@ The LCS code upgrade service automatically checks your upgraded code into Azure 
 2.  Enter the URL to your team project. Click **Close**.
 3.  Make sure the Azure DevOps account shows up. On the right, choose the project that you want to work on. Click **Connect**.
 4.  Now you need to map your workspace to the Azure DevOps folders. Go to the **Source Code Explorer** and do this mapping:
-    1.  Projects &gt; C:\\Users\\&lt;username&gt;\\Documents\\Visual Studio 2015\\Projects
+    1.  Projects &gt;
+        - For **Visual Studio 2015** : C:\\Users\\&lt;username&gt;\\Documents\\Visual Studio 2015\\Projects
+        - For **Visual Studio 2017** or newer : C:\\Users\\&lt;username&gt;\\source\\repos
     2.  Metadata &gt; C:\\AOSService\\PackagesLocalDirectory
-        -   On cloud VMs, this folder is located on the I:\\ or J:\\ drive
+        -   On cloud VMs, this folder is located on the I:\\, J:\\ or K:\\ drive
         -   On earlier versions, this folder is C:\\packages
         -   **Important**:
             -   If you are migrating from Dynamics AX 2012 R3 or earlier, you will be mapping to the metadata folder under the **Main** branch.

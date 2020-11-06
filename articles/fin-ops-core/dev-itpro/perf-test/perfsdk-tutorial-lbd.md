@@ -51,7 +51,7 @@ This topic explains how to use the Performance software development kit (SDK) to
 - An on-premises environment that has volume data
 - A development environment that has the following characteristics:
 
-    - Microsoft Visual Studio 2015 Enterprise or a later version is installed.
+    - Microsoft Visual Studio Enterprise or a later version is installed.
     - The Performance SDK is installed. (The SDK will likely be in K:\\PerfSDK\\PerfSDKLocalDirectory. However, depending on your environment, it might be in another location, such as C:\\PerfSDK.)
     - The on-premises environment can be accessed in a web browser. (The development virtual machine [VM] might be in the same domain as the on-premises environment, or the on-premises environment might have a publicly registered domain name.)
 
