@@ -53,7 +53,7 @@ You are currently running under stock/inventory management using basic stock fun
 
 ### Issue Resolution
 
-See the following blog posts and documentation for more information about the process of moving from basic to advanced warehousing:
+For more information about the process of moving from basic to advanced warehousing, see the following blog posts and documentation:
 
 - [Enable warehouse management process for existing items and warehouses](https://cleverax.wordpress.com/2017/12/06/d365fo-enable-warehouse-management-process-for-existing-items-and-warehouses/)
 - [Migration of Microsoft Dynamics AX WMS to new R3 warehouse and transportation functionality](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)

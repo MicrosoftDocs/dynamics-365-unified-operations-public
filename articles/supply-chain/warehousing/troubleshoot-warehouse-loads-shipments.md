@@ -55,7 +55,7 @@ On sales order transactions, you can't reference inventory dimensions that are l
 
 If you choose the process path of manually creating loads or have the process set up such that loads are created already upon sales order line entry, then the assumption is that the subsequent releasing will be done manually following the route and rating from the load.
 
-Another possible scenario is that you are trying to perform an automatic release to warehouse, but the wave process failed to create work, which results in an open shipment or load still being created. This then blocks subsequent attempts to automatically release the order until you either (a) delete the open shipment or load, or (b) re-process the wave manually.
+Another possible scenario is that you are trying to perform an automatic release to warehouse, but the wave process failed to create work, which results in an open shipment or load still being created. This then blocks subsequent attempts to automatically release the order until you either (a) delete the open shipment or load, or (b) reprocess the wave manually.
 
 ### Issue resolution
 

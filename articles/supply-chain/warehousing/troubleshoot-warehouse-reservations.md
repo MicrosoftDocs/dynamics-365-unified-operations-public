@@ -43,7 +43,7 @@ You can't unreserve inventory on a sales line because there is open work against
 
 ### Issue resolution
 
-Please investigate if open packing group work exists to bring item from a packing station to another location (e.g., Baydoor). Review the **Work creation history log** and **Work details** to verify what is physically reserving the inventory, then complete or delete the work to free up the reservation.
+Investigate whether open packing group work exists to bring the item from a packing station to another location (such as Baydoor). Review the **Work creation history log** and **Work details** to verify what is physically reserving the inventory, then complete or delete the work to free up the reservation.
 
 ## I receive an error "Inventory quantity -%1 could not be updated due to insufficient inventory transactions for item %2 with ..."
 
@@ -67,7 +67,7 @@ This issue may occur when the system can't update an inventory quantity due to i
 
 ### Issue resolution
 
-This is probably be due to open work. Either complete work or receive without work creation. Ensure that there are no inventory transactions that are physically reserving the quantity. It could be an open quality order, an inventory blocking record, or an output order, for example.
+This issue is probably caused by open work. Either complete work or receive without work creation. Ensure that there are no inventory transactions that are physically reserving the quantity. It could be an open quality order, an inventory blocking record, or an output order, for example.
 
 ## I receive the error "To be assigned to wave, load lines must specify the dimensions above the location. To assign these dimensions, reserve and recreate the load line."
 

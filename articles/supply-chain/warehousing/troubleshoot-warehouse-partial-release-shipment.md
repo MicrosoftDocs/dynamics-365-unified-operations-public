@@ -41,7 +41,7 @@ This topic describes how to fix common issues that you might encounter while wor
 
 When a sales order is a delivery order but the same order has one or more items with a different mode of delivery, once the order is invoiced, it still shows a released status of *Partially released*.
 
-For example, suppose a sales order includes two items, one item was for delivery and a second item was for pick up. The delivery was done and so was the pickup, so both lines are invoiced, but the status still shows *Partially released*, which is misleading.
+For example, suppose a sales order includes two items, one item was for delivery and a second item was for pickup. The delivery was done and so was the pickup, so both lines are invoiced, but the status still shows *Partially released*, which is misleading.
 
 ### Issue resolution
 

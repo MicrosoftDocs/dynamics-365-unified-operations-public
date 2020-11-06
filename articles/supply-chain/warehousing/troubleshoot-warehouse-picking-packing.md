@@ -43,7 +43,7 @@ This error occurs if you create a transfer order for a serial item using a wareh
 
 ### Issue resolution
 
-The "from" warehouse has a transit warehouse that had an empty **Default receipt location** value. To resolve this, specify a location for default receipt location in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
+The "from" warehouse has a transit warehouse that had an empty **Default receipt location** value. To resolve this issue, specify a location for default receipt location in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
 
 ## I receive the error "Invalid license plate."
 
@@ -55,7 +55,7 @@ This error message is received on the warehouse app when scanning a license plat
 
 Ensure the license plate ID exists in the license plates table and that the items and quantities on the license plate are available (in other words, not blocked).
 
-## I receive the error "Field 'Load weight'(=-%1) can only contain positive numbers. Update has been cancelled."
+## I receive the error "Field 'Load weight'(=-%1) can only contain positive numbers. Update has been canceled."
 
 ### Issue description
 
@@ -75,7 +75,7 @@ The error is shown when you can't perform a *split pick* across multiple batches
 
 The warehouse worker must use the *Short picking* process on the warehouse app. If you are trying to pick multiple batches from the same location, then you could also use the **Full** option on the warehouse app.
 
-## I can't move inventory to a license plate controlled location
+## I can't move inventory to a license-plate controlled location
 
 ### Issue description
 
@@ -83,7 +83,7 @@ You can't reduce picked quantities on a load.
 
 ### Issue resolution
 
-This used to be true in earlier versions. However, it's now possible to unpick to a license plate controlled location. You must specify the **Location** *and* **License Plate ID** in **Reduce picked quantity** on the load line.
+This used to be true in earlier versions. However, it's now possible to unpick to a license-plate controlled location. You must specify the **Location** *and* **License Plate ID** in **Reduce picked quantity** on the load line.
 
 ## Can I print a delivery note or packing content by warehouse?
 
@@ -99,7 +99,7 @@ When you print a document with print management settings, limit the scope (site/
 
 ### Issue description
 
-WHen picking and shipping processes enabled for advanced warehouse management, you can't cancel the packing slip after it was posted from the sales order.
+When picking and shipping processes enabled for advanced warehouse management, you can't cancel the packing slip after it was posted from the sales order.
 
 ### Issue resolution
 

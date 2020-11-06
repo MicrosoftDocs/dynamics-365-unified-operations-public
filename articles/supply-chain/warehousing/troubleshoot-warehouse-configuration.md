@@ -53,7 +53,7 @@ The error occurs if you create a transfer order using a warehouse enabled for an
 
 ### Issue resolution
 
-The "from" warehouse has a transit warehouse which had an empty **Default receipt location** value for the transit warehouse. To resolve this, specify a location for the **Default receipt location** in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
+The "from" warehouse has a transit warehouse that had an empty **Default receipt location** value for the transit warehouse. To resolve this issue, specify a location for the **Default receipt location** in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
 
 ## I received the error "You can't create a work template line for Inventory status change because the work type is not valid. Select a different work type."
 
