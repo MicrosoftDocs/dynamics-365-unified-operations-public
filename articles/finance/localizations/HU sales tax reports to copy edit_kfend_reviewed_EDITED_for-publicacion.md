@@ -151,8 +151,6 @@ This report also includes the same information for each partner separately, and 
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
 5.  Select **OK**. In the grid in the lower part of the page, a line is created
     that has the VAT reporting data. Additionally, a ZIP archive that contains
