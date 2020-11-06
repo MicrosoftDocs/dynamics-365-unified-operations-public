@@ -88,7 +88,7 @@ We use planned production orders, but I'm concerned about what will happen when 
 
 Our environment admin received an email from Microsoft. This email states that we should migrate to Planning Optimization or request an exception. Do I need to take any action?
 
-**Answer:** Yes. Your environment will be affected unless you follow the instructions in the email. You can either migrate to Planning Optimization in due time or request an exception by using the link in the email. This link opens a questionnaire. After you've completed and submitted this questionnaire, you will receive a reply via email. Although this process is manual, Microsoft tries to reply within a week after the questionnaire is submitted.
+**Answer:** Yes. Your environment will be affected unless you follow the instructions in the email. You can either migrate to Planning Optimization by the date specified or request an exception by using the link in the email. This link opens a questionnaire. After you've completed and submitted this questionnaire, you will receive a reply via email. Although this process is manual, Microsoft tries to reply within a week after the questionnaire is submitted.
 
 ### Error messages
 
