@@ -60,9 +60,9 @@ This report also includes the same information for each partner separately, and 
     download the latest versions of the following Electronic reporting (ER)
     configurations for the report format:
 
--   **Sales tax declaration info Itemized Excel format (HU)**
+  * **Sales tax declaration info Itemized Excel format (HU)**
 
--   **Sales tax declaration info report format (HU)**
+  * **Sales tax declaration info report format (HU)**
 
     For more information, see [Download Electronic reporting configurations from
     Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
