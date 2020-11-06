@@ -83,6 +83,8 @@ A payment module can be added only to a checkout module. For more information ab
 
 [Delivery options module](delivery-options-module.md)
 
+[Pickup information module](pickup-info-module.md)
+
 [Order details module](order-confirmation-module.md)
 
 [Gift card module](add-giftcard.md)
