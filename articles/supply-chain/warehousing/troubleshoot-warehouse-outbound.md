@@ -39,15 +39,15 @@ This topic describes how to fix common issues that you might encounter while wor
 
 ### Issue description
 
-This error can be for several reasons. One reason is that the order is in credit management hold and a valid postal address must be entered for all sales lines associated with sales order %1 before shipments can be created.
+This error can be for several reasons. One reason is that the order is in credit management hold and a valid postal address must be entered for all sales lines associated with a sales order before shipments can be created.
 
-Another reason is that there is an order hold that must be addressed before the order can be released to the warehouse. The hold could be order specific or on the customer account.
+Another reason is that there is an order hold that must be addressed before the order can be released to the warehouse. The hold could be order-specific or on the customer account.
 
 ### Issue resolution
 
-Add or update the address on the sales order/line(s) and then release to warehouse. Orders cannot be released to the warehouse without a valid delivery address (per the address format set-up in the Organization Administration module).
+Add or update the address on the sales order and order line(s) and then release to warehouse. Orders can't be released to the warehouse without a valid delivery address (per the address format setup in the Organization administration module).
 
-Investigate the order hold and address the issues then remove the hold from the order/customer and release to the warehouse.
+Investigate the order hold and address the issues, then remove the hold from the order or customer and release to the warehouse.
 
 ## The message "The shipment for load 1% has been confirmed." is displayed but no lines are posted.
 
@@ -67,4 +67,4 @@ An item is added to a sales line for direct delivery from a warehouse management
 
 ### Issue resolution
 
-Microsoft has evaluated this issue and determined it to be a feature limitation. At the moment Direct delivery is not supported. You'll need to select a non-WMS Item and warehouse.
+Microsoft has evaluated this issue and determined it to be a feature limitation. Currently, direct delivery isn't supported by WMS, so you'll need to select a non-WMS item and warehouse to use it.

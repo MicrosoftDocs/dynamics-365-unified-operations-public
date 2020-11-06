@@ -38,22 +38,22 @@ This topic describes how to fix common issues that you might encounter while upg
 ## I receive the error "java.security.cert.certPathValidatorException: Trust anchor for certification path is not found."
 
 ### Issue description
-<!-- KFM: some context is needed for this heading-->
-On OnPrem environments, self-signed certificates are not trusted on Android 8+ causing this error to occur on the warehouse mobile app.
+
+On on-premises environments, self-signed certificates are not trusted on Android 8+, which causes this error to occur on the warehouse app.
 
 ### Issue resolution
 
-Use external (public) CA. A fix for this issue has been made available in 1.9.0.0. <!-- KFM: is this the same as the issue already described in [Troubleshoot warehouse app connection issues](troubleshoot-warehouse-app-connection.md)? --> <!-- HHM: Yes it is. Should we delete this or add a link to the troubleshoot warehouse app connection issues page? -->
+Use external (public) certifying authority (CA). A fix for this issue has been made available in version 1.9.0.0 of the warehouse app. For more information about this issue and how to solve it, see [Troubleshoot warehouse app connection issues](troubleshoot-warehouse-app-connection.md).
 
-## I want to migrate from Basic to Advanced Warehousing (WMS) configuration.
+## What is the approved process to move from basic to advanced warehousing?
 
 ### Issue description
 
-We are currently running under stock/inventory management and using basic stock functionality. We want to move to advanced warehousing to take advantage of mobile devices, waves, and work. We cannot change our products to use storage dimensions (site, warehouse, and location) as they have transactions against them. What is the approved process to move from basic to advanced warehousing?
+You are currently running under stock/inventory management using basic stock functionality, and want to move to advanced warehousing to take advantage of mobile devices, waves, and work. However, you are running into issues, such as being unable to change your products to use storage dimensions (site, warehouse, and location) as they have transactions against them. What is the approved process to move from basic to advanced warehousing?
 
 ### Issue Resolution
 
-See the following blog posts and documentation for more information about the process:
+See the following blog posts and documentation for more information about the process of moving from basic to advanced warehousing:
 
 - [Enable warehouse management process for existing items and warehouses](https://cleverax.wordpress.com/2017/12/06/d365fo-enable-warehouse-management-process-for-existing-items-and-warehouses/)
 - [Migration of Microsoft Dynamics AX WMS to new R3 warehouse and transportation functionality](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)

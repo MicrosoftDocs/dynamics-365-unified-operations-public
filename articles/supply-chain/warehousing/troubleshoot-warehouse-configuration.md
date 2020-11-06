@@ -43,7 +43,7 @@ Scanning a license plate ID or location generates the error message.
 
 ### Issue resolution
 
-Check that the License Plate ID is not reserved by something else. This used to occur when a user scanned a value on the Warehouse Mobile App that was *both* a valid Location and License Plate ID; however, this issue has been resolved in 10.0.11.
+Check that the license plate ID is not reserved by something else. This used to occur when a user scanned a value on the warehouse app that was *both* a valid location and a valid license plate ID; however, this issue was resolved as of version 10.0.11.
 
 ## I received the error "License plate must be specified for this location."
 
@@ -53,17 +53,17 @@ The error occurs if you create a transfer order using a warehouse enabled for an
 
 ### Issue resolution
 
-The "from" warehouse has a transit warehouse which had an empty Default receipt location value for the transit warehouse. To resolve this, specify a location for default receipt location in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
+The "from" warehouse has a transit warehouse which had an empty **Default receipt location** value for the transit warehouse. To resolve this, specify a location for the **Default receipt location** in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
 
 ## I received the error "You can't create a work template line for Inventory status change because the work type is not valid. Select a different work type."
 
 ### Issue description
 
-On a **Work template**, you cannot select a **Work type** of *Inventory status change* in **Work template details**.
+On a work template, you can't select a **Work type** of *Inventory status change* in **Work template details**.
 
 ### Issue resolution
 
-This is by design. The *inventory status change* **work type** is only used by system processes and is not configurable. Because the list of work types is just enum values, they cannot be filtered out of the Work Template drop-down view.
+This is by design. The *Inventory status change* **Work type** is only used by system processes and is not configurable. Because the list of work types is fixed as an enum, the extra entries can't be filtered out of the **Work template** drop-down menu.
 
 ## I received the error "The Quantity is not valid for unit 1%."
 
@@ -73,21 +73,21 @@ The quantity is not valid for the unit *ea*, when there is picking work with mul
 
 ### Issue resolution
 
-Verify the defined **Unit Sequence Group ID** and **Unit Conversions** on the Released Product/Product Variant are configured.
+Verify the defined **Unit sequence group ID** and **Unit conversions** on the released product or product variant are configured correctly.
 
-The error message was improved with the release of version 10.0.15 on KB number: 486531: Improving the error message so it shows the expected quantity. "The quantity is not valid. Expected %1 %2.".
+The error message was improved with the release of version 10.0.15 ([KB number: 4581627](https://fix.lcs.dynamics.com/Issue/Details/?bugId=486531)). The new error message is "The quantity is not valid. Expected %1 %2."
 
-## Location directives for sales order Put work, Multiple SKU does not evaluate multiple location directive actions.
+## In location directives for sales order put work, the multiple SKU option doesn't evaluate multiple location directive actions.
 
 ### Issue description
 
-Location directives of the **Work order type** *Sales orders* and **Work type** of *Put*, with the **Multiple SKU** parameter selected, does not evaluate multiple location directive actions. It is evaluating only the first location directive action.
+Location directives of the **Work order type** *Sales orders* and **Work type** of *Put*, with the **Multiple SKU** parameter selected, don't evaluate multiple location directive actions. The system only evaluates the first location directive action.
 
 ### Issue resolution
 
-A new feature **Evaluate all actions for Multi SKU location directives** has been added in version 10.0.15. See Lifecycle Services (LCS) [KB number: 4579866:](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091) Location directives for Sales order put with Multi SKU does not evaluate multiple location directive actions, for more information. Added feature "Evaluate all actions for Multi SKU location directives" to evaluate all actions for Multi SKU location directives.
+A new feature *Evaluate all actions for Multi SKU location directives* has been added in version 10.0.15 ([KB number: 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091). The new feature evaluates all actions for multi-SKU location directives. If you require this feature, use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable it.
 
-## I am unable to do partial picking using mobile device.
+## I am unable to do partial picking using the warehouse app.
 
 ### Issue description
 
@@ -95,14 +95,21 @@ For sales and transfer orders, you are unable to skip items and do partial picki
 
 ### Issue resolution
 
-On the Sales order and Transfer order menu items, enable **Allow splitting of work** under the **mobile device menu items** General FastTab.
+Go to the **Mobile device menu items** page. For each menu item set up to process sales order or transfer orders, open the **General** FastTab and set **Allow splitting of work** to *Yes*.
 
-## How can I perform an Inventory Status change for Partial quantity work.
+## How can I perform an inventory status change for partial quantity work.
 
 ### Issue description
 
-How do you do an Inventory Status change for Partial quantity of a batch?
+It isn't clear how to do an inventory status change for partial quantity of a batch.
 
 ### Issue resolution
 
-Requirement can be fulfilled if warehouse app is used and change the status with the help of one of the menus. The *Movement* **Work creation process** menu item can be used for this requirement. Note that **Display inventory status** must be **Yes** for the relevant mobile device menu item.
+You can create a menu item for the warehouse app that will enable workers to do this. To do so, go to the **Mobile device menu items** page and create (or edit) a menu item that has the following properties:
+
+- **Mode** - *Work*
+- **Use existing work** - *No*
+- **Work creation process** - *Movement*
+- **Display inventory status** - *Yes*
+
+You can make other settings as needed.

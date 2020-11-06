@@ -43,4 +43,4 @@ Picking work is blocked with dependent replenishment work.
 
 ### Issue resolution
 
-When using wave demand replenishment; if it is determined that a picking location must be replenished in order to fulfil the source order demand, then the system creates *both* the replenishment work and the picking work. However, it blocks the picking work until the replenishment work is completed. This is intentional because without completing the replenishment work, the picking location wouldn't have sufficient inventory. Complete the replenishment work then process the picking work.
+When using wave demand replenishment, if a picking location must be replenished to fulfil the source order demand, then the system creates *both* the replenishment work and the picking work. However, it blocks the picking work until the replenishment work is completed. This is intentional because without completing the replenishment work, the picking location wouldn't have sufficient inventory. Complete the replenishment work then process the picking work.

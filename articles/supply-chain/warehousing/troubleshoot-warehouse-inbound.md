@@ -39,28 +39,33 @@ This topic describes how to fix common issues that you might encounter while wor
 
 ### Issue description
 
-This error is related to a receiving process where Quality Management (QMS) is enabled. Depending upon the configurations in your environment, additional details about the transaction generating the error could further enhance the resolution.
+This error is related to a receiving process where quality management (QMS) is enabled. Depending on the configurations in your environment, additional details about the transaction generating the error could further enhance the resolution.
 
 ### Issue resolution
 
-First, check the [Cluster profile](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/set-up-cluster-picking) setup. You can't use a cluster picking mobile device menu item without the cluster profiles. Depending on your environment, other related configurations may need to be reviewed.
+First, check the [cluster picking](set-up-cluster-picking.md) setup and make sure your cluster profiles are set up correctly. You can't use a cluster picking mobile device menu item without the cluster profiles. Depending on your environment, other related configurations may need to be reviewed too.
 
 ## Mixed license plate receiving doesn't work for disposition codes other than credit.
 
 ### Issue description
 
-You can only use the [Mixed license plate receiving](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/mixed-license-plate-receiving) menu item when the returns **Disposition code** **Action** is *Credit* or *Scrap*.
+You can only use the [Mixed license plate receiving](mixed-license-plate-receiving.md) menu item to process returned items when the disposition code **Action** is *Credit* or *Scrap*.
 
 ### Issue resolution
 
-Microsoft has evaluated this issue and determined it to be a feature limitation. The [Returns](https://docs.microsoft.com/en-us/dynamics365/supply-chain/service-management/set-up-disposition-codes) **Disposition codes** with the **Action** set to *Credit* or *Scrap* are only supported at this time.
+Microsoft has evaluated this issue and determined it to be a feature limitation. Only [disposition codes](../service-management/set-up-disposition-codes.md) with the **Action** set to *Credit* or *Scrap* are currently supported for mixed license plate receiving.
 
-## When I run the Update product receipts periodic task, unconfirmed purchase orders are getting confirmed.
+## When I run the "Update product receipts" periodic task, unconfirmed purchase orders are getting confirmed.
 
 ### Issue description
 
-After running the periodic task "Update product receipts", the system automatically confirms unconfirmed purchase orders with a status of inventory transaction *Registered*.
+After running the periodic task *Update product receipts*, the system automatically confirms unconfirmed purchase orders with an inventory transaction status of *Registered*.
 
 ### Issue resolution
 
-Use the new inbound load handling feature, *Over receipt of load quantities*. You must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable this feature. First enable the **Associate purchase order inventory transactions with load** feature, then enable **Over receipt of load quantities**. For more information, see [Post registered product quantities against purchase orders](inbound-load-handling.md#post-registered-quantities)
+This issue is solved by the new inbound load handling feature *Over receipt of load quantities*. To enable this feature, go to [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and enable the following features in the following order:
+
+1. *Associate purchase order inventory transactions with load*
+1. *Over receipt of load quantities*
+
+For more information, see [Post registered product quantities against purchase orders](inbound-load-handling.md#post-registered-quantities)

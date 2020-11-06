@@ -41,8 +41,8 @@ This topic describes how to fix common issues that you might encounter while wor
 
 The following error message is shown when trying to release to warehouse a return sales order:
 
-"You can't create a load line for this order line because it contains inventory dimensions that are invalid. You can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. Remove the invalid dimensions from the order line."
-<!-- HHM: I put the first sentence of the error message with an ellipsis in the heading and the full error in the Issue description.  -->
+> You can't create a load line for this order line because it contains inventory dimensions that are invalid. You can't reference inventory dimensions that are located below the location dimension in the reservation hierarchy. Remove the invalid dimensions from the order line.
+
 ### Issue resolution
 
 Unfortunately, the product does not support load processing for a sales return process, which means you can't release to the warehouse.
@@ -53,9 +53,9 @@ On sales order transactions, you can't reference inventory dimensions that are l
 
 ### Issue description
 
-If you choose the process path of manually creating loads or have the process setup such that loads are created already upon sales order line entry, then the assumption is that the subsequent releasing is done manually following the route and rating from the load.
+If you choose the process path of manually creating loads or have the process set up such that loads are created already upon sales order line entry, then the assumption is that the subsequent releasing will be done manually following the route and rating from the load.
 
-Another possible scenario is that you are trying to perform an automatic release to warehouse, but the wave process failed to create work, which results in an open shipment/load still being created. This then blocks subsequent attempts to automatically release the order until you either (a) delete the open shipment/load, or (b) re-process the wave manually.
+Another possible scenario is that you are trying to perform an automatic release to warehouse, but the wave process failed to create work, which results in an open shipment or load still being created. This then blocks subsequent attempts to automatically release the order until you either (a) delete the open shipment or load, or (b) re-process the wave manually.
 
 ### Issue resolution
 
@@ -65,11 +65,11 @@ To release from the sales order page, or to release automatically from the relea
 
 ### Issue description
 
-After posting of delivery note, you can't cancel the posted delivery note because the button **Cancel** is disabled. Also, you can't correct the delivery note, while performing the attempted correction the error is thrown.
+After posting a delivery note, you can't cancel the posted delivery note because the  **Cancel** button is disabled. Also, you can't correct the delivery note, and while performing the attempted correction, the error is thrown.
 
 ### Issue resolution
 
-In order to correct posted packing slips for items which are enabled for advanced warehouse management (WMS), the posting must occur from the load, not from the order directly.
+To correct posted packing slips for items that are enabled for advanced warehouse management (WMS), the posting must occur from the load, not from the order directly.
 
 ## How can I create work from outbound loads rather than waves?
 
@@ -97,5 +97,4 @@ A partially shipped load can't be released to the warehouse. The message "Operat
 
 ### Issue resolution
 
-[KB issue 470069](https://fix.lcs.dynamics.com/Issue/Details?kb=4574490&bugId=470069&dbType=3&qc=84ce1e09d7032d8b8ef86f5a0c68b86badf3dfaf29686c5ebbe97c53c0957b5f): "Partially shipped loads can be re-waved and re-processed." is resolved in [Release 10.0.15](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
-<!-- HHM: This KB actually was a code change with a release schedule, so I added the links to the issue and release schedule (which was provided in the issue for this KB.) -->
+[KB issue 470069](https://fix.lcs.dynamics.com/Issue/Details?kb=4574490&bugId=470069&dbType=3&qc=84ce1e09d7032d8b8ef86f5a0c68b86badf3dfaf29686c5ebbe97c53c0957b5f) ("Partially shipped loads can be re-waved and re-processed") is resolved in [release 10.0.15](../get-started/whats-new-scm-10-0-15.md).

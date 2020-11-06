@@ -43,7 +43,7 @@ This error occurs if you create a transfer order for a serial item using a wareh
 
 ### Issue resolution
 
-The "from" warehouse has a transit warehouse which had an empty **Default receipt location** value for the transit warehouse. To resolve this, specify a location for default receipt location in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
+The "from" warehouse has a transit warehouse that had an empty **Default receipt location** value. To resolve this, specify a location for default receipt location in the transit warehouse. Ensure that the default receipt location on the transit warehouse is license plate controlled.
 
 ## I receive the error "Invalid license plate."
 
@@ -69,11 +69,11 @@ Run the **System administration \> Periodic tasks \> Database \> Consistency che
 
 ### Issue description
 
-The error is generated when the user is unable to perform a *split pick* across multiple batches.
+The error is shown when you can't perform a *split pick* across multiple batches.
 
 ### Issue resolution
 
-The warehouse worker will need to use the *Short picking* process on the Warehouse Mobile App. Assuming that you are trying to pick multiple batches from the same location, then you could also use the **Full** option on the warehouse app.
+The warehouse worker must use the *Short picking* process on the warehouse app. If you are trying to pick multiple batches from the same location, then you could also use the **Full** option on the warehouse app.
 
 ## I can't move inventory to a license plate controlled location
 
@@ -85,31 +85,31 @@ You can't reduce picked quantities on a load.
 
 This used to be true in earlier versions. However, it's now possible to unpick to a license plate controlled location. You must specify the **Location** *and* **License Plate ID** in **Reduce picked quantity** on the load line.
 
-## Can I Print a delivery note or packing content by warehouse?
+## Can I print a delivery note or packing content by warehouse?
 
 ### Issue description
 
-Is it possible to print by *Warehouse* or *Site* in **Work audit template line update**?
+Is it possible to print by *Warehouse* or *Site* on the **Work audit template line update** page?
 
 ### Issue resolution
 
-If you are printing a document with print management settings; you can limit the scope (site/warehouse) through print management, instead of directly through the work audit template lines update form, under edit print settings.
+When you print a document with print management settings, limit the scope (site/warehouse) through print management instead of by selecting **Edit print settings** on the **Work audit template line update** page.
 
 ## I can't cancel a packing slip when posted in a sales order
 
 ### Issue description
 
-For picking/shipping processes enabled for advanced warehouse management, you can't cancel the packing slip when it was posted from the sales order.
+WHen picking and shipping processes enabled for advanced warehouse management, you can't cancel the packing slip after it was posted from the sales order.
 
 ### Issue resolution
 
-To correct posted packing slips for items that are enabled for advanced warehouse management, the posting must occur from the load, not from the order directly. Microsoft has evaluated this issue and determined it to be a feature limitation. Generally, a sales order that has been picked and shipped through warehouse management processes can be packing-slip updated from the load or shipment and the sales order document itself. However, if you choose the latter, then packing slip reversal still isn't possible from the load or sales order. We therefore recommend that you use the packing slip posting from the load, in which case the reversal (to be done from the load) will be enabled.
+To correct posted packing slips for items that are enabled for advanced warehouse management, the posting must occur from the load, not from the order. Microsoft has evaluated this issue and determined it to be a feature limitation. Generally, a sales order that has been picked and shipped through warehouse management processes can be packing-slip updated from the load or shipment and the sales order document itself. However, if you choose the latter, then packing slip reversal still isn't possible from the load or sales order. We therefore recommend that you use the packing slip posting from the load, in which case the reversal (to be done from the load) will be enabled.
 
 ## I receive the error "Not enough work can be found for cluster."
 
 ### Issue description
 
-When using the **System directed cluster picking** process, configuring a cluster profile where it's possible to pick, for example, 10 positions, this process works as planned when there is enough work to pick to 10 positions. However, when there are only 8 positions (work) to be picked, the error is shown because there is not enough work for one cluster.
+When using the *System directed cluster picking* process, configuring a cluster profile where it's possible to pick, for example, 10 positions, this process works as planned when there is enough work to pick to 10 positions. However, when there are only 8 positions (work) to be picked, the error is shown because there is not enough work for one cluster.
 
 ### Issue resolution
 
