@@ -536,6 +536,8 @@
             href: dev-itpro/payments-retail.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
+        - name: Create and update time slots for customer pickup
+          href: dev-itpro/pickup-timeslots.md
     - name: Merchandising your products and services  
       items:
       - name: Categories, products, and assortments 
@@ -1026,6 +1028,8 @@
             href: ship-address-module.md
           - name: Delivery options module
             href: delivery-options-module.md
+          - name: Pickup information module
+            href: pickup-info-module.md
           - name: Order details module
             href: order-confirmation-module.md 
           - name: Gift card module

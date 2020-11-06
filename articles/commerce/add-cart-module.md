@@ -112,6 +112,8 @@ To add a cart module to a new page and set the required properties, follow these
 
 [Delivery options module](delivery-options-module.md)
 
+[Pickup information module](pickup-info-module.md)
+
 [Order details module](order-confirmation-module.md)
 
 [Gift card module](add-giftcard.md)
