@@ -34,11 +34,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic provides an overview of how to get started developing e-commerce customizations with the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
-Below, you will find all the details to get started with e-commerce extensibility development. 
-
 The Commerce online SDK allows development and debugging of e-commerce [modules](modules-overview.md), [data actions](data-actions.md), and [themes](theming.md). The SDK can be installed and used on any Windows 10 environment without the need for a deployed Commerce environment. However, it can also be useful to connect to a live cloud environment (for example, "Dev," "Test," "UAT," or "Prod") for deeper debugging and testing changes against a cloud environment without the need to deploy or destabilize the environment.
 
-The typical process when extending the Commerce platform includes the following steps.
+The typical process when extending the Commerce platform includes the following actions.
 
 - Install the necessary development tools.
 - Install the latest online SDK.
@@ -59,13 +57,13 @@ Before starting Commerce extensibility development, it's recommended to have a g
 
 Before setting up a development environment, ensure that your environment meets the minimum requirements specified in [System requirements for a Dynamics 365 Commerce online extensibility environment](system-requirements.md).
 
-### Install development tools and online SDK
+### Install development tools and the online SDK
 
-Commerce development uses some free open sources tools including Node.js for the JavaScript runtime, Yarn for dependency management, and Visual Studio Code for source editing.  For detailed steps on installing each of these tools, see [Set up a development environment](setup-dev-environment.md). The topic also covers how to run a Node app to test and preview modules under development, as well the [CLI tools](cli-command-reference.md) used to create and clone a module.
+Commerce development uses some free open sources tools including Node.js for the JavaScript runtime, Yarn for dependency management, and Visual Studio Code for source editing.  For detailed steps on installing each of these tools, see [Set up a development environment](setup-dev-environment.md). This topic also covers how to run a Node app to test and preview modules under development, as well the [CLI tools](cli-command-reference.md) used to create and clone a module.
 
 ## Develop against a cloud-hosted Commerce environment
 
-The Commerce online SDK allows development and debugging of modules, data actions, and themes without the need for a deployed Commerce environment, which is the default behavior if you followed the above section to set up a development environment. There may be scenarios where you need to debug your live e-commerce web site or test configuration changes against a live [cloud environment](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/update-guide?toc=/dynamics365/commerce/toc.json#environments), including "Dev," "Test," "UAT," or "Prod" environments. This section covers how to configure your development environment against a cloud-hosted Commerce environment.
+The Commerce online SDK allows development and debugging of modules, data actions, and themes without the need for a deployed Commerce environment. There may be scenarios where you need to debug your live e-commerce web site or test configuration changes against a live [cloud environment](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/update-guide?toc=/dynamics365/commerce/toc.json#environments), including "Dev," "Test," "UAT," or "Prod" environments. This section covers how to configure your development environment against a cloud-hosted Commerce environment.
 
 ### Configure the SDK environment .env file
 
@@ -85,8 +83,8 @@ The .env file contains a **MsDyn365Commerce_BASEURL** variable that needs to poi
 
 The following example shows an .env file set to point to a specific Retail Server, channel, and OUN. 
 
-json
-```
+
+```json
 ...
 MSDyn365Commerce_BASEURL=https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/
 MSDyn365Commerce_CHANNELID=68719478279
@@ -124,7 +122,8 @@ Once a Commerce development environment is set up, you are ready to build custom
 
 ## Package creation and deployment
 
-Once all of your changes are completed, you can build a zip file package and upload it to the LCS site to see all your changes in the cloud-hosted environment it was deployed to. For more inormation and instructions, see [Package configurations and deploy them to an online environment](package-deploy.md). 
+Once all of your changes are completed, you can build a zip file package and upload it to the 
+[Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) site to see all your changes in the cloud-hosted environment it was deployed to. For more information and instructions, see [Package configurations and deploy them to an online environment](package-deploy.md). 
 
 ## Additional resources
 
