@@ -34,15 +34,9 @@ and **Itemized VAT statement** reports. You can generate these Microsoft Excel
 reports and use them to create the value-added tax (VAT) returns that must be
 submitted to the tax authorities.
 
--   **Sales tax declaration information** – This report includes a list of
-    invoices that are grouped by sales tax direction (sales tax receivable,
-    sales tax payable, or use tax) and by sales tax code. For each sales tax
-    direction and sales tax code, the report also includes the total sales tax
-    amount and total gross invoice amount.
+-   **Sales tax declaration information** – This report includes a list of invoices that are grouped by sales tax direction (sales tax receivable, sales tax payable, or use tax) and by sales tax code. For each sales tax direction and sales tax code, the report also includes the total sales tax amount and total gross invoice amount.
 
--   **Itemized VAT statement** – This report includes the total number of
-    invoices, total number of counteragents (partners), total VAT base, and
-    total VAT amount for each item in the following table.
+-   **Itemized VAT statement** – This report includes the total number of invoices, total number of counteragents (partners), total VAT base, and total VAT amount for each item in the following table.
 
 | **Item number** | **Transactions that are included**            |
 |-----------------|-----------------------------------------------|
@@ -56,9 +50,7 @@ This report also includes the same information for each partner separately, and 
 
 ## Setup
 
-1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library,
-    download the latest versions of the following Electronic reporting (ER)
-    configurations for the report format:
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the report format:
 
   * **Sales tax declaration info Itemized Excel format (HU)**
 
@@ -67,17 +59,12 @@ This report also includes the same information for each partner separately, and 
     For more information, see [Download Electronic reporting configurations from
     Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-1.  Go to **General ledger \> Ledger setup \> General ledger parameters**.
-1.  On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable
-    to print itemized VAT statement** option to **Yes** to use the **Sales tax
-    declaration info Itemized Excel format (HU) ER format and generate the
-    Itemized VAT statement report**.
+1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
+1. On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable to print itemized VAT statement** option to **Yes** to use the **Sales tax declaration info Itemized Excel format (HU) ER format and generate the Itemized VAT statement report**.
 
-    Alternatively, set the option to **No** to use the **Sales tax declaration
-    info report format (HU) ER format and generate the Sales tax declaration
-    information** report.
+Alternatively, set the option to **No** to use the **Sales tax declaration info report format (HU) ER format and generate the Sales tax declaration information** report.
 
-1.  If you set the **Enable to print itemized VAT statement option to Yes**, in
+1. If you set the **Enable to print itemized VAT statement option to Yes**, in
     the **Itemized VAT statement limit (HUF)** field, enter an amount limit in
     Hungarian forints (HUF). This field determines which invoice transactions
     will be included in the **Itemized VAT statement** report. Any invoice where
