@@ -115,3 +115,8 @@ Dual-write is only provided for a few key data entities where the data needs to 
 
 ### When adding records using virtual entities is there any way to use number sequences?
 Yes, if the Finance and Operations entity can auto generate number sequences, then it will work the same way from the virtual entity.
+
+### Why does 'search view' not work in Power Apps?
+If there are no fields added in the quick find view for the entity, then the search box does nothing. The workaround is to add one or more fields of the entity to the quick find view.
+
+
