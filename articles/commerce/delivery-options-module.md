@@ -75,6 +75,8 @@ A delivery options module can be added only to a checkout module. For more infor
 
 [Shipping address module](ship-address-module.md)
 
+[Pickup information module](pickup-info-module.md)
+
 [Order details module](order-confirmation-module.md)
 
 [Gift card module](add-giftcard.md)
