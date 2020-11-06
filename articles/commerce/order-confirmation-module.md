@@ -88,4 +88,6 @@ To add an order details module to a new page and set the required properties, fo
 
 [Delivery options module](delivery-options-module.md)
 
+[Pickup information module](pickup-info-module.md)
+
 [Gift card module](add-giftcard.md)
