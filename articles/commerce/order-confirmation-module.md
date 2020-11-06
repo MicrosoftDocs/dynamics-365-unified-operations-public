@@ -5,7 +5,7 @@ title: Order confirmation module
 description: This topic covers order confirmation modules and describes how to use them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/13/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
