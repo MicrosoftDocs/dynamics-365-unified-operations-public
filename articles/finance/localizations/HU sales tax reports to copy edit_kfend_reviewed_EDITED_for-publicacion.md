@@ -87,7 +87,7 @@ submitted to the tax authorities.
 
 ## Generate and export the Sales tax declaration information report or Itemized VAT statement report
 
-### Generate and print VAT reporting
+### <a name= "generateandprintvatreporting"></a>Generate and print VAT reporting
 
 1.  Go to **Tax \> Periodic tasks \> VAT reporting**.
 
@@ -143,8 +143,8 @@ submitted to the tax authorities.
 2.  Select **Clear period** to delete the previously created line in the lower
     part of the page.
 
-3.  Select **Create report**, and follow the instructions in the Generate and
-    print VAT reporting section to create a new line in the lower part of the
+3.  Select **Create report**, and follow the instructions in the [Generate and
+    print VAT](#generateandprintvatreporting) reporting section to create a new line in the lower part of the
     **VAT reporting** page.
 
 ## Example
