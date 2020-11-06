@@ -35,43 +35,43 @@ ms.dyn365.ops.version: Release 10.0.15
 
 This topic covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
+The pickup information module can be used in a checkout module to show order pickup information. Customers can view available pickup dates and time slots, and then select a suitable time to pick up their order. For example, a customer can choose to pick up an order at 3 PM on March 21 from the San Francisco store.
 
-The pickup information module can be used in a checkout module to view order pickup information and to choose an available pickup timeslot for an order. It allows customers to view available pickup dates and timeslots so that they can choose a suitable time to pick up their order. For example, a customer can choose to pick up an order at 3 PM on March 21 from the San Francisco store. 
+Pickup time slots for the appropriate stores must be configured in Commerce headquarters. For more information, see [Create and update time slots for customer pickup](dev-itpro/pickup-timeslots.md).
 
-Pickup timeslots for respective stores need to be configured in Commerce headquarters. For more information, see [Timeslot for pickup](dev-itpro/pickup-timeslots.md).
+If a pickup information module is created on a checkout page, but no time slots are defined for the store that is selected for pickup, the module will show information, but the user won't be able to select any time slots. Time slots are optional and aren't required to place an order.
 
-If a module is authored on a checkout page but the store selected for pickup does not have timeslots defined, the module will display information without allowing the user to select any timeslots. Timeslots are optional and not required to place an order.
-
-If multiple items are selected for pickup across multiple stores, the pickup information module will allow the user to select a timeslot for each store (if available).
+If multiple items are selected for pickup across multiple stores, the pickup information module will let the user select a time slot for each store, provided that time slots are available for it.
 
 > [!NOTE]
-> Support for timeslots and the checkout pickup information module is available starting with the Dynamics 365 Commerce 10.0.15 release.
+> Support for time slots and the checkout pickup information module is available in Dynamics 365 Commerce version 10.0.15 and later.
 
-The following image shows an example of timeslot selection using the pickup information module displayed on a checkout page.
-![Example of a pickup information module displayed on a checkout page](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+The following illustration shows an example of time slot selection through the pickup information module on a checkout page.
+
+![Example of a pickup information module on a checkout page](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## Module properties
 
-- **Heading** - This property allows you to configure a heading for the module.
+- **Heading** – Enter a heading for the module.
 
-## Display timeslot information after placing an order
+## Show time slot information after an order is placed
 
-Once an order is placed, the timeslot information that was selected can be viewed in the [order confirmation module](order-confirmation-module.md) and [order details module](account-management.md#order-details-page). These modules have a property called **Show timeslot information** that must be set to "true" to display the selected timeslot during the order process.
+After an order is placed, information about the selected time slot can be viewed in the [order confirmation module](order-confirmation-module.md) and the [order details module](account-management.md#order-details-page). Both these modules have a **Show timeslot information** property. Before they can show the selected time slot during the order process, this property must be set to **True**.
 
 ## Add a checkout pickup information module to a page
 
-For instructions on how to add a pickup information module to a checkout page and set the required properties, see [Checkout module](add-checkout-module.md).
+For instructions about how to add a pickup information module to a checkout page and set the required properties, see [Checkout module](add-checkout-module.md).
 
-The following image shows an example of an e-Commerce checkout page with timeslots for pickup line items.
-![Example of an e-Commerce checkout page with timeslots for pickup line items](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+The following illustration shows an example of an e-Commerce checkout page that includes time slots for pickup line items.
+
+![Example of an e-Commerce checkout page that includes time slots for pickup line items](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## Additional resources
 
-[Timeslot for pickup](dev-itpro/pickup-timeslots.md)
+[Create and update time slots for customer pickup](dev-itpro/pickup-timeslots.md)
 
 [Checkout module](add-checkout-module.md)
 
-[Order confirmation module](order-confirmation-module.md) 
+[Order confirmation module](order-confirmation-module.md)
 
 [Order details module](account-management.md)
