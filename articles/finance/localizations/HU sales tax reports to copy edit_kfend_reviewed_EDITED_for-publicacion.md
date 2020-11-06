@@ -1,4 +1,33 @@
-**Sales tax reports for Hungary**
+---
+# required metadata
+
+title: Sales tax reports for Hungary
+description: This topic provides information about the Sales tax declaration information and Itemized VAT statement reports
+author: v-lurodi
+manager: Anasyash
+ms.date: 11/06/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 12641
+ms.search.region: Hungary
+# ms.search.industry: 
+ms.author: roschlom
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
+
+---
+# Sales tax reports for Hungary
 
 This topic provides information about the **Sales tax declaration information**
 and **Itemized VAT statement** reports. You can generate these Microsoft Excel
@@ -26,9 +55,9 @@ submitted to the tax authorities.
 >   This report also includes the same information for each partner separately,
 >   and a list of invoices for each item.
 
-# Setup
+## Setup
 
-1.  In Microsoft Dynamics Lifecycle Services (LCS), in the Shared asset library,
+1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library,
     download the latest versions of the following Electronic reporting (ER)
     configurations for the report format:
 
@@ -36,8 +65,8 @@ submitted to the tax authorities.
 
 -   **Sales tax declaration info report format (HU)**
 
-    For more information, see Download Electronic reporting configurations from
-    Lifecycle Services.
+    For more information, see [Download Electronic reporting configurations from
+    Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 1.  Go to **General ledger \> Ledger setup \> General ledger parameters**.
 
@@ -56,9 +85,9 @@ submitted to the tax authorities.
     will be included in the **Itemized VAT statement** report. Any invoice where
     the VAT amount exceeds the value of this field will be included.
 
-# Generate and export the Sales tax declaration information report or Itemized VAT statement report
+## Generate and export the Sales tax declaration information report or Itemized VAT statement report
 
-## Generate and print VAT reporting
+### Generate and print VAT reporting
 
 1.  Go to **Tax \> Periodic tasks \> VAT reporting**.
 
@@ -66,7 +95,7 @@ submitted to the tax authorities.
     **Settlement period** fields. The grid shows settlement periods that are
     available for VAT reporting.
 
-    ![](media/af54605430954acae4f7970732eb127e.png)
+    ![](media/HU-sales-tax-reports-1.png)
 
 3.  Select the line for the required settlement period, and then select **Create
     report**.
@@ -95,7 +124,7 @@ submitted to the tax authorities.
 | Reporting date | The date when the report is generated.                                                                                                                                                                                                       |
 | Use tax        | A selected check box indicates that use tax sales tax transactions were included in the processing. The setting of this check box is transferred from the **Include use-tax** field in the **Sales tax declaration information** dialog box. |
 
-## Reprint a generated report
+### Reprint a generated report
 
 1.  On the **VAT reporting** page, select **Print report to** print the
     generated VAT report.
@@ -106,7 +135,7 @@ submitted to the tax authorities.
 
 3.  Select **OK**. Review the generated ZIP archive that contains the report.
 
-## Re-create the report for a period
+### Re-create the report for a period
 
 1.  On the **VAT reporting** page, select **Cancel period** to clear the
     **Approved** check box from the previous reporting.
@@ -118,11 +147,11 @@ submitted to the tax authorities.
     print VAT reporting section to create a new line in the lower part of the
     **VAT reporting** page.
 
-# Example
+## Example
 
 This example can be done in the **DEMF** legal entity.
 
-## Setup
+### Setup
 
 1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up
     the following three sales tax codes.
@@ -141,7 +170,7 @@ This example can be done in the **DEMF** legal entity.
 | HUN                | HU11651273            |
 | HUN                | HU34532985            |
 
-## Create and post customer transactions
+### Create and post customer transactions
 
 1.  Go to **Accounts receivable \> Customers \> All customers**, and select
     customer **DE-010**.
@@ -180,7 +209,7 @@ Create \> Credit note** (for example, you create a free text invoice that has a
 negative amount), the credit note will appear in item 01 (sales invoices) and
 will have a negative amount.
 
-## Create and post vendor transactions
+### Create and post vendor transactions
 
 1.  Go to **Accounts payable \> Vendors \> All vendors**, and select vendor
     **DE-001**.
@@ -210,7 +239,7 @@ will have a negative amount.
 negative amount), the credit note will appear in item 04 (purchase invoices) and
 will have a negative amount.
 
-## Generate and print the Sales tax declaration information report
+### Generate and print the Sales tax declaration information report
 
 1.  Go to **General ledger \> Ledger setup \> General ledger parameters**.
 
@@ -232,7 +261,7 @@ will have a negative amount.
 
 7.  Select **OK**, and review the generated report.
 
-## Generate and print the Itemized VAT statement report
+### Generate and print the Itemized VAT statement report
 
 1.  Go to **General ledger \> Ledger setup \> General ledger parameters**.
 
