@@ -44,8 +44,12 @@ Fixed asset journals are defined by using the Journal names page at General ledg
 
 You can designate ledger accounts for fixed asset transactions on the Fixed asset posting profiles page. For each posting profile, you must select the relevant transaction type and book, and then designate the ledger accounts. Set up a posting profile record for each book that will post to the general ledger.
 
+The fixed asset could be entered in documents that only supports **Current** posting layer like **Purchase order**, **Pending vendor invoice**, **Sales order** or **Free text invoice**. While selecting a fixed asset ID in any of those documents the asset book is filtered to the book with **Current** posting layer and get filled in automatically, during posting the system validates the fixed asset posting layer is **Current** or it will stop the posting process. 
+
+
 > [!NOTE] 
-> By using derived books, you can post transactions to different posting layers at the same time. You create the transactions of the primary book in a journal where the posting layer corresponds to the book posting layer. During posting, the derived book transactions are posted to the appropriate posting layers.
+> By using derived books, you can post transactions to different posting layers at the same time. You create the transactions of the primary book in a journal or source document where the posting layer corresponds to the book posting layer. During posting, the derived book transactions are posted to the appropriate posting layers. 
+
 
 For more information see, [Derived books](derived-books.md) and [Post with derived books](post-derived-value-models.md).
 
