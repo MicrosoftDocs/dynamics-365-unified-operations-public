@@ -49,4 +49,5 @@ When posting invoices with **Forced electronic invoices generation** feature ena
 For more details about Electronic reporting destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 > [!NOTE]
-> Italy...
+> **Forced electronic invoices generation** feature is not applicable to Italy. Italian electronic invoices depend only on the existance of related Electronic reporting destinations and always disregard printing options used during invoices posting.
+
