@@ -1351,6 +1351,8 @@
       items:
       - name: Master planning home page
         href: master-planning/master-planning-home-page.md
+      - name: Migration to Planning Optimization for master planning
+        href: master-planning/new-master-planning-engine.md
       - name: Planning Optimization
         items:
         - name: Planning Optimization overview
