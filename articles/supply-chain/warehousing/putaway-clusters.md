@@ -2,7 +2,7 @@
 # required metadata
 
 title: Putaway clusters
-description: Putaway clusters are a way to pick multiple license plates at once and take them for putaway at different locations. It can be very useful for retail businesses, where license plates typically aren't full pallets of inventory.
+description: Putaway clusters offer a way to pick multiple license plates at the same time and then take them for putaway in different locations. They can be very useful for retail businesses, where license plates typically aren't full pallets of inventory.
 author: Mirzaab
 manager: tfehr
 ms.date: 10/19/2020
@@ -31,251 +31,273 @@ ms.dyn365.ops.version: Release 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-Putaway clusters are a way to pick multiple license plates at once and take them for putaway at different locations. It can be very useful for retail businesses, where license plates typically aren't full pallets of inventory. This process is often called a *milk run*.
+Putaway clusters offer a way to pick multiple license plates at the same time and then take them for putaway in different locations. This process is often referred to as a *milk run*. Putaway clusters can be very useful for retail businesses, where license plates typically aren't full pallets of inventory. 
 
-## Enable the cluster putaway feature
+## Turn on the cluster putaway feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
-- **Module** - *Warehouse management*
-- **Feature name** - *Cluster putaway feature*
+- **Module:** *Warehouse management*
+- **Feature name:** *Cluster putaway feature*
 
 ## Setup for the example scenario
 
 ### Cluster profiles
 
-The putaway cluster profile determines where an item will go based on the location assigned to the item at receipt. If different clusters are needed, different putaway clusters should be created, one for each mobile device menu item.
+The putaway cluster profile determines where an item will go, based on the location that is assigned to the item at the time of receipt. If different clusters are required, different putaway clusters should be created, one for each mobile device menu item.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Cluster profiles**.
-1. Select **New** on the Action Pane.
-1. In the **Header**, enter the following:
+1. On the Action Pane, select **New**.
+1. In the **Header** view, set the following values:
 
-    - **Putaway cluster profile ID** – *Cluster putaway*
-    - **Putaway cluster profile ID Name** – *Cluster putaway*
-    - **Cluster type** – *Putaway*
-    - **Sequence number** - *Accept default*
+    - **Putaway cluster profile ID:** *Cluster putaway*
+    - **Putaway cluster profile ID Name:** *Cluster putaway*
+    - **Cluster type:** *Putaway*
+    - **Sequence number:** Accept the default value.
 
-1. Select **Save** to enable the required fields on the **General** FastTab.
-1. On the **General** FastTab, specify the following:
+1. Select **Save** to make the required fields on the **General** FastTab available.
+1. On the **General** FastTab, set the following values:
 
-    - **Cluster assignment timing** - *At receipt*
-        - Should the putaway cluster be assigned immediately when the inventory is being received, or sorted later?
+    - **Cluster assignment timing:** *At receipt*
 
-    - **Cluster assignment rule** - *Manual*
-        - Should the cluster assignment be determined automatically by the system, or manually by the user?
+        This field defines whether the putaway cluster should be assigned immediately when the inventory is received, or whether it should be sorted later.
 
-    - **Directive code** - *Leave blank*
-    - **Putaway cluster locate** - *Receipt*  
-        The following values are available here:
-        - **Receipt**: Location found immediately during receipt.
-        - **Cluster close**: Location found when cluster is closed.
-        - **User directed**: Location found when the license plate is picked from cluster to putaway.
-            - The putaway work is created without location and during the putaway itself, the user has to scan the license plate or work ID to initiate the put step. The system finds the put location again and tells the user where to put the picked quantity.
+    - **Cluster assignment rule:** *Manual*
 
-    - **Putaway cluster per user** – *No*
-        - When assigning clusters automatically, should each cluster be unique per user? Only enabled when **Cluster assignment rule** is set to *Automatic*.
+        This field defines whether the cluster assignment should be determined automatically by the system or manually by the user.
 
-    - **Unit restriction** - *Leave blank*
-        - Unit that is required to be received for the profile to valid. If left blank, all units will be valid.
+    - **Directive code:** Leave this field blank.
+    - **Putaway cluster locate:** *Receipt*
 
-    - **Work unit break** – *Individual*
-        - When closing a cluster, should all inventory be consolidated onto one license plate (using the cluster ID and the license plate), and putaway as a single license plate, or putaway separately on the license plates that were received? Disabled when **Putaway cluster locate** is set to *Receipt*.
+        The following values are available:
 
-    - **Cluster persists as Parent License Plate** – *No*
-        - If *Yes*, when the Put step is complete, the cluster ID will become a Parent License Plate and all items on the cluster ID will be tied to that Parent license plate.
+        - **Receipt** – A location is found immediately during receipt.
+        - **Cluster close** – A location is found when the cluster is closed.
+        - **User directed** – A location is found when the license plate is picked from the cluster for putaway. In this case, no location is specified when the putaway work is created. During the putaway itself, the user must scan the license plate or work ID to initiate the put step. The system then finds the put location again and tells the user where to put the picked quantity.
 
-1. On the **Cluster sorting** FastTab, putaway sorting criteria can be determined. Select **New** in the Toolbar and enter the following:
+    - **Putaway cluster per user:** *No*
 
-    - **Sequence number** – *Accept default*
-    - **Field name** – *WMSLocationId*
-        - Determines what field this line will use for sorting criteria.
-    - **Sorting** – *Ascending*
-        - Determines whether sorting should be Ascending or Descending.
+        This field defines whether each cluster should be unique per user when clusters are automatically assigned. It's available only when the **Cluster assignment rule** field is set to *Automatic*.
 
-1. On the **Cluster work template** FastTab, select **New** in the Toolbar to add a line. Enter the following:
-    - **Work order type** - *Purchase orders*
-    - **Work template** - *61 PO Direct*
+    - **Unit restriction:** Leave this field blank.
 
-1. On the Action Pane, select **Save**, then select **Edit query**.
-1. In the **Cluster putaway** dialog box, on the **Range** tab, select **Add** to add a second line to the query, then update the query lines as follows:
+        This field defines the unit that must be received for the profile to be valid. If it's left blank, all units are valid.
+
+    - **Work unit break:** *Individual*
+
+        This field defines whether all inventory should be consolidated (by using the cluster ID and the license plate) onto one license plate when a cluster is closed, and whether it should be put away as a single license plate or separately on the license plates that were received. This field is unavailable when the **Putaway cluster locate** field is set to *Receipt*.
+
+    - **Cluster persists as Parent License Plate:** *No*
+
+        If this option is set to *Yes*, when the put step is completed, the cluster ID will become a parent license plate, and all items on the cluster ID will be linked to that parent license plate.
+
+1. On the **Cluster sorting** FastTab, you can define putaway sorting criteria. Select **New** on the toolbar to add a line, and then set the following values:
+
+    - **Sequence number:** Accept the default value.
+    - **Field name:** *WMSLocationId*
+
+        This field defines the field that this line should use as a sorting criterion.
+
+    - **Sorting:** *Ascending*
+
+        This field defines whether sorting should be done in ascending or descending order.
+
+1. On the **Cluster work template** FastTab, select **New** on the toolbar to add a line, and then set the following values:
+
+    - **Work order type:** *Purchase orders*
+    - **Work template:** *61 PO Direct*
+
+1. On the Action Pane, select **Save**, and then select **Edit query**.
+1. In the **Cluster putaway** dialog box, on the **Range** tab, select **Add** to add a second line to the query. Then update the query lines as shown in the following table.
 
     | Table | Derived table | Field | Criteria |
-    | -- | -- | -- | -- |
-    | Work | Work | Warehouse | 61 |
-    | Work | Work | Work ID | *Leave blank* |
+    |---|---|---|---|
+    | Work | Work | Warehouse | *61* |
+    | Work | Work | Work ID | Leave this field blank. |
 
 1. Select **OK** to save the query and close the dialog box.
-1. Select **Save** on the Action Pane and exit the form.
+1. On the Action Pane, select **Save**, and close the page.
 
 > [!IMPORTANT]
-> Fields on the cluster profile that are greyed out when enabling *Generate cluster ID* are inactive and will not be considered when using the feature.
+> Fields in the cluster profile that appear dimmed when *Generate cluster ID* is enabled are unavailable and won't be considered when this feature is used.
 
 ### Mobile device menu items
 
-Two new mobile device menu items are available for this functionality. *Receive and sort cluster* is used to sort the received inventory to a putaway cluster upon receipt. *Cluster putaway* is used to put away the cluster once it has been assigned.
+Two new mobile device menu items are available for this feature. The **Receive and sort cluster** menu item is used to sort the received inventory into a putaway cluster upon receipt. The **Cluster putaway** menu item is used to put the cluster away after it has been assigned.
 
 #### Receive and sort cluster
 
-Create new mobile device menu item for *Receive* and *Sort cluster*, which will create Inbound Work after receiving the inventory. This where it is indicated that the receiving menu item will be used for Putaway clusters.
+Create a new mobile device menu item for receiving inventory and sorting into a cluster. This menu item will create inbound work after inventory is received. This indicates that the receiving menu item will be used for putaway clusters.
 
 > [!NOTE]
-> **Receive and sort cluster** can be used with the following menu items:
+> The **Receive and sort cluster** menu item can be used with the following receiving menu items:
 >
 > - Purchase order line receiving
 > - Purchase order item receiving
 > - Load item receiving
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. Select **New** on the Action Pane.
-1. In the **Header**, enter the following:
+1. On the Action Pane, select **New**.
+1. In the **Header** view, set the following values:
 
-    - **Menu item name** – *Receive and sort cluster*
-    - **Title** – *Receive and sort cluster*
-    - **Mode** – *Work*
-    - **Use existing work** – *No*
+    - **Menu item name:** *Receive and sort cluster*
+    - **Title:** *Receive and sort cluster*
+    - **Mode:** *Work*
+    - **Use existing work:** *No*
 
-1. In the **General** FastTab, make the following settings:
+1. On the **General** FastTab, set the following values:
 
-    - **Work creation process** – *Purchase order item receiving*
-    - **Generate license plate** – *Yes*
-    - **Assign putaway cluster** – *Yes*
-    
-    Accept the default values of the remaining parameters
+    - **Work creation process:** *Purchase order item receiving*
+    - **Generate license plate:** *Yes*
+    - **Assign putaway cluster:** *Yes*
 
-1. Select **Save** on the Action Pane.
+        > [!NOTE]
+        > The **Assign putaway cluster** option is available only for the one-step *Work creation process* activity for receiving.
 
-> [!NOTE]
-> The **Assign putaway cluster** parameter is only available for the one-step receiving *Work creation process* activity.
+    Accept the default values for the remaining fields.
+
+1. On the Action Pane, select **Save**.
 
 #### Cluster putaway
 
-Create new mobile device menu item to be used for putting away the cluster once it has been assigned.
+Create a new mobile device menu item for putting the cluster away after it has been assigned.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. Select **New** on the Action Pane.
-1. In the **Header**, enter the following:
+1. On the Action Pane, select **New**.
+1. In the **Header** view, set the following values:
 
-    - **Menu item name** – *Cluster putaway*
-    - **Title** – *Cluster putaway*
-    - **Mode** – *Work*
-    - **Use existing work** – *Yes*
+    - **Menu item name:** *Cluster putaway*
+    - **Title:** *Cluster putaway*
+    - **Mode:** *Work*
+    - **Use existing work:** *Yes*
 
-1. In the **General** FastTab, set **Directed by** to *Cluster putaway*. Accept the default values of the remaining parameters
+1. On the **General** FastTab, set the **Directed by** field to *Cluster putaway*. Accept the default values for the remaining fields.
+1. On the **Work classes** FastTab, set up the valid work class for this mobile device menu item:
 
-1. In the **Work classes** FastTab, set up the valid work class for this mobile device menu item:
+    - **Work class ID:** *Purchase*
+    - **Work order type:** *Purchase orders*
 
-    - **Work class ID** – *Purchase*
-    - **Work order type** – *Purchase orders*
-
-1. Select **Save** on the Action Pane.
+1. On the Action Pane, select **Save**.
 
 ### Mobile device menu
 
-Add the menu items just created to the inbound menu of the mobile app.
+Add the menu items that you just created to the inbound menu of the mobile app.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu** to add the newly created menu items to the desired menu.
-1. Select **Edit** on the Action Pane.
-1. Select **Inbound** in the menu list.
-1. Scroll in the **Available menus and menu items** until you find **Receive and sort cluster**.
-1. Select **Receive and sort cluster**, the move right arrow ( **→** ) is enabled.
-1. Select the arrow button ( **→** ) to move the selected menu item into the **Menu structure** list.
-1. Use the up ( **↑** ) or down ( **↓** ) arrow buttons to move the menu item into the desired position in the menu.
-1. Select **Save** on the Action Pane.
-1. Repeat steps 4 through 8 above to add the remaining menu items:
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
+1. On the Action Pane, select **Edit**.
+1. In the menu list, select **Inbound**.
+1. In the **Available menus and menu items** list, find and select **Receive and sort cluster**.
+1. Select the right arrow button to move the selected menu item to the **Menu structure** list.
+1. Use the up arrow or down arrow button to move the menu item into the desired position in the menu.
+1. On the Action Pane, select **Save**.
+1. Repeat steps 4 through 7 to add the remaining menu items:
 
-    - **Assign cluster**
-    - **Cluster putaway**
+    - Assign cluster
+    - Cluster putaway
 
 ## Example scenario
 
 This scenario simulates putaway cluster processing.
 
-### Create Purchase order
+### Create a purchase order
 
 1. Go to **Accounts payable \> Purchase orders \> All purchase orders**.
-1. Select **New** on the Action Pane.
-1. In the **Create purchase order** dialog box, enter the following:
+1. On the Action Pane, select **New**.
+1. In the **Create purchase order** dialog box, set the following values:
 
-    - **Vendor account** - *1001*
-    - **Warehouse** - *61*
+    - **Vendor account:** *1001*
+    - **Warehouse:** *61*
 
 1. Select **OK**.
-1. The **All purchase orders** page opens.
-1. In the **Purchase order lines FastTab** add the following lines (use **Add line** in the toolbar to add lines):
 
-    - **Item number** - *A0001* : **Quantity** - *10*
-    - **Item number** - *A0002* : **Quantity** - *20*
-    - **Item number** - *M9215* : **Quantity** - *30*
+    The **All purchase orders** page appears.
 
-1. Select **Save** on the Action Pane.
-1. Make note of the purchase order number.
+1. On the **All purchase orders** page, on the **Purchase order lines** FastTab, use the **Add line** button to add the following lines:
 
-### Receive and put away from the mobile device
+    - Purchase order line 1:
+
+        - **Item number:** *A0001*
+        - **Quantity:** *10*
+
+    - Purchase order line 2:
+
+        - **Item number:** *A0002*
+        - **Quantity:** *20*
+
+    - Purchase order line 3:
+
+        - **Item number:** *M9215*
+        - **Quantity:** *30*
+
+1. On the Action Pane, select **Save**.
+1. Make a note of the purchase order number.
+
+### Receive inventory and put it away from the mobile device
 
 #### Receive and sort the inventory into a cluster
 
-1. Sign in to the warehouse app with a user setup for warehouse 61.
-1. Select **Inbound** from the **Main Menu**.
-1. Select **Receive and sort cluster** from the **Inbound** menu.
+1. Sign in to the warehouse app as a user who is set up for warehouse *61*.
+1. On the main menu, select **Inbound**.
+1. On the **Inbound** menu, select **Receive and sort cluster**.
 1. In the **Ponum** field, enter the purchase order number.
-1. Select **OK** (displayed as a checkmark **(✔)** on the warehouse app.)
-1. Select the **Item** field, enter the item number *A0001*, and select **OK**.
-1. Select the **Qty** field, enter *10* in the number pad and select the checkmark.
-1. Select **OK** **(✔)** on the **Qty** task screen to confirm the quantity entered.
-1. Select **OK** on the **Item** task screen to confirm item *A0001* was entered.
-1. Next assign an ID for the cluster being created. Select the **Cluster ID** field and enter a value.
+1. Select **OK** (the check mark button).
+1. Select the **Item** field, enter item number *A0001*, and then select **OK**.
+1. Select the **Qty** field, enter *10* by using the number pad, and then select the check mark button.
+1. On the **Qty** task page, select **OK** (the check mark button) to confirm the quantity that you entered.
+1. On the **Item** task page, select **OK** to confirm that item *A0001* was entered.
+1. Select the **Cluster ID** field, and enter a value to assign an ID for the cluster that you're creating.
 
-    - The ID number you enter here will be used when receiving the remaining two items on the purchase order.
+    The ID that you enter here will be used when the two remaining items on the purchase order are received.
 
 1. Select **OK**.
-1. The task screen for **Ponum** opens with a message **Work completed**.
 
-    - Item *A0001* has been received into the RECV location and assigned to the cluster ID entered in step 10.
+    The **Ponum** task page appears and shows a "Work completed" message.
 
-1. Repeat steps 4 through 11 to receive the remaining two items from the purchase order and assign them to the cluster ID.
+    Item *A0001* has now been received into the *RECV* location and assigned to the cluster ID that you entered in step 10.
 
-    - **Item** *A0002* with a **Qty** of *20*
-    - **Item** *M9215* with a **Qty** of *30*
+1. Repeat steps 4 through 11 to receive the remaining two items from the purchase order and assign them to the cluster ID:
 
-#### Close cluster
+    - A quantity of *20* for item *A0002*
+    - A quantity of *30* for item *M9215*
 
-Before the items in the cluster can be put away, the cluster must first be closed. Do the following in Supply Chain Management:
+#### Close the cluster
 
-1. Go to **Warehouse management \> Work \> Outbound \> Work clusters**.
-1. In the **Work cluster** section of the page, search the **Cluster ID** field for the cluster ID entered previously.
-1. If the cluster is not displayed, it may have already been closed. To verify this, select the **Show closed work** check box, and search from the cluster ID entered previously.
+Before the items in the cluster can be put away, the cluster must be closed.
 
-    - If the cluster has been closed go to **Cluster putaway** section below.
-    - If the cluster has not been closed, the following steps describe how to manually close the cluster.
+1. In Supply Chain Management, go to **Warehouse management \> Work \> Outbound \> Work clusters**.
+1. On the **Work clusters** page, in the **Work cluster** section, search the **Cluster ID** field for the cluster ID that you entered earlier.
+1. If the cluster isn't shown, it might already have been closed. To determine whether the cluster was closed, select the **Show closed work** check box, and search for the cluster ID that you entered earlier. Then follow one of these steps:
 
-1. From the **Work clusters** page, in the **Work cluster** section, select the cluster ID created previously.
+    - If the cluster has been closed, skip the remaining steps of this procedure, and move on to the next procedure, [Put the cluster away](#put-the-cluster-away).
+    - If the cluster hasn't been closed, follow the remaining steps of this procedure to manually close the cluster. Then move on to the next procedure.
+
+1. In the **Work cluster** section, select the cluster ID that you entered earlier.
 1. On the Action Pane, select **Close cluster**.
-1. When the cluster has been closed it will no longer be displayed in the **Work cluster** section (with **Show closed work** unselected).
 
-#### Cluster putaway
+    After the cluster has been closed, it's no longer shown in the **Work cluster** section (unless the **Show closed work** check box is selected).
 
-Do the following steps using the warehouse app:
+#### Put the cluster away
 
-1. Sign in to the warehouse app with a user setup for warehouse 61.
-1. Select **Inbound** from the **Main menu**.
-1. Select **Cluster putaway** from the **Inbound** menu.
-1. Select **Cluster ID** and enter the closed cluster ID created previously.
+1. Sign in to the warehouse app as a user who is set up for warehouse *61*.
+1. On the main menu, select **Inbound**.
+1. On the **Inbound** menu, select **Cluster putaway**.
+1. Select **Cluster ID**, and enter the cluster ID that you entered earlier for the closed cluster.
 1. Select **OK**.
-1. The **Cluster putaway: Pick** screen is displayed.
 
-    - The **Cluster ID** is displayed along with the picking location (**Loc**), items (**Multiple** will be displayed) and total quantity (**Total qty**) in the cluster to be picked.
+    The **Cluster putaway: Pick** page appears. It shows the cluster ID, the picking location, the items (the value *Multiple* will be shown), and the total quantity in the cluster that must be picked.
 
 1. Select **OK**.
-1. The **Cluster putaway: Put** screen is displayed.
 
-    - The **Put** instructions identify the cluster ID, the put location, items, quantity as well as the license plate ID's for the items received on the cluster.
-    - The user has the standard option to **Override** or **Pass** this step.
+    The **Cluster putaway: Put** page appears. The **Put** instructions identify the cluster ID, the put location, the items, the total quantity, and the license plate IDs for the items that have been received on the cluster.
 
-    ![Cluster Putaway-Put](media/Cluster_putaway-Put.png "Cluster Putaway-Put")
+    You have the standard options to override or pass this step.
+
+    ![Cluster putaway: Put page](media/Cluster_putaway-Put.png "Cluster putaway: Put page")
 
 1. Select **OK** to confirm the putaway of the cluster.
-1. The message **Cluster completed** will be displayed.
+
+    A "Cluster completed" message is shown.
 
 ## Notes and tips
 
-For the instances where the cluster ID becomes the parent license plate for a nested pallet, when the cluster ID is scanned, the put position is automatically given and no further license plate needs to be scanned, even if license plate generation is set to be manual.
+For cases where the cluster ID becomes the parent license plate for a nested pallet, the put position is automatically given when the cluster ID is scanned. No further license plate must be scanned, even if license plate generation is set to manual.
