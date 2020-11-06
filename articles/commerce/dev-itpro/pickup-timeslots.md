@@ -5,7 +5,7 @@ title: Create and update time slots for customer pickup
 description: This topic describes how to create, configure, and update customer pickup time slots in Commerce headquarters.
 author: anupamar-ms
 manager: AnnBe
-ms.date: 10/20/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -55,7 +55,7 @@ A time slot is defined by using the following properties:
 
     The **Minimum Days** property ensures that there is enough time for the retailer to process the order before it's ready for pickup. The **Maximum Days** property ensures that the user can't select a date that is too far in the future. For example, if the minimum value is set to **1**, and an order is placed on September 20, the earliest day that the order will be available for pickup is the next eligible day (September 21). In a similar way, by setting a maximum value, you can define the maximum number of days that an order can be picked up. When minimum and maximum values are defined, site users can see and select only a specific set of days during their checkout experience.
 
-    You can set the minimum value to a decimal value that is less than 1. For example, if pickup is available four hours after an order is placed, set the minimum value to **0.17** (= 4 ÷ 24, rounded up to two decimal places). However, if you set the minimum value to a decimal value that is more than 1, it's always rounded to the nearest whole number.
+    You can set the minimum value to a decimal value that is less than 1. For example, if pickup is available four hours after an order is placed, set the minimum value to **0.17** (= 4 ÷ 24, rounded up to two decimal places). However, if you set the minimum value to a decimal value that is more than 1, it's always rounded to the nearest whole number (up or down).
 
     If you set the maximum value to a decimal value, it's always rounded up. For example, a value of **1.2** will be rounded up to **2**.
 
