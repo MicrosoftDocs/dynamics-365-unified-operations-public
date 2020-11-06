@@ -68,8 +68,7 @@ This report also includes the same information for each partner separately, and 
     Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 1.  Go to **General ledger \> Ledger setup \> General ledger parameters**.
-
-2.  On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable
+1.  On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable
     to print itemized VAT statement** option to **Yes** to use the **Sales tax
     declaration info Itemized Excel format (HU) ER format and generate the
     Itemized VAT statement report**.
@@ -78,7 +77,7 @@ This report also includes the same information for each partner separately, and 
     info report format (HU) ER format and generate the Sales tax declaration
     information** report.
 
-3.  If you set the **Enable to print itemized VAT statement option to Yes**, in
+1.  If you set the **Enable to print itemized VAT statement option to Yes**, in
     the **Itemized VAT statement limit (HUF)** field, enter an amount limit in
     Hungarian forints (HUF). This field determines which invoice transactions
     will be included in the **Itemized VAT statement** report. Any invoice where
@@ -90,16 +89,16 @@ This report also includes the same information for each partner separately, and 
 
 1.  Go to **Tax \> Periodic tasks \> VAT reporting**.
 
-2.  In the upper part of the **VAT reporting** page, set the **Date** and
+1.  In the upper part of the **VAT reporting** page, set the **Date** and
     **Settlement period** fields. The grid shows settlement periods that are
     available for VAT reporting.
 
     ![](media/HU-sales-tax-reports-1.png)
 
-3.  Select the line for the required settlement period, and then select **Create
+1.  Select the line for the required settlement period, and then select **Create
     report**.
 
-4.  In the **Sales tax declaration information** dialog box, set the following
+1.  In the **Sales tax declaration information** dialog box, set the following
     fields.
 
 <table>
