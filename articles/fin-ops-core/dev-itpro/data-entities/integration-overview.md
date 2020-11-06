@@ -67,7 +67,7 @@ Dual-write provides synchronous, bi-directional, near-real time experience betwe
 Classic data integration provides asynchronous and uni-directional data synchronization experience between model-driven applications in Dynamics 365 and Dynamics 365 Finance and Operations applications. It's an IT-administrator led experience and you must schedule the data sync jobs to run on a specific cadence. Classic data integration is suitable for business scenarios that involves bulk ingress/egress of data across Dynamics 365 applications.
 
 | Pattern                       | Timing                        | Batch | Technology | Finance and Operations app | Model-driven apps in Dynamics 365 |
-|-------------------------------|-------------------------------|-------|---|
+|-------------------------------|-------------------------------|-------|---|------|------------|
 | Dual-write             | Synchronous<br>Bi-directional   | No    | OData | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent | 
 | Classic data integration | Asynchronous, uni-directional | Yes   | DIXF | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent |
 
