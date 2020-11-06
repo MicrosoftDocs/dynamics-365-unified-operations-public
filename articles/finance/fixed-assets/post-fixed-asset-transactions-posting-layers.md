@@ -3,7 +3,7 @@
 
 title: Post fixed asset transactions to posting layers
 description: This article gives an overview of posting layer functionality for fixed asset transactions.
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -44,10 +44,10 @@ Fixed asset journals are defined by using the Journal names page at General ledg
 
 You can designate ledger accounts for fixed asset transactions on the Fixed asset posting profiles page. For each posting profile, you must select the relevant transaction type and book, and then designate the ledger accounts. Set up a posting profile record for each book that will post to the general ledger.
 
-The fixed asset could be entered in documents that only supports **Current** posting layer like **Purchase order**, **Pending vendor invoice**, **Sales order** or **Free text invoice**. While selecting a fixed asset ID in any of those documents the asset book is filtered to the book with **Current** posting layer and get filled in automatically, during posting the system validates the fixed asset posting layer is **Current** or it will stop the posting process. 
+The fixed asset cna be entered in documents that only support the **Current** posting layer, like **Purchase order**, **Pending vendor invoice**, **Sales order**, or **Free text invoice**. While selecting a fixed asset ID in any of those documents the asset book is filtered to the book with **Current** posting layer, and will be filled in automatically, during posting when the system validates that the fixed asset posting layer is **Current**. If that validation can't be completed, the posting process will be stopped. 
 
 > [!NOTE] 
-> By using derived books, you can post transactions to different posting layers at the same time. You create the transactions of the primary book in a journal or source document where the posting layer corresponds to the book posting layer. During posting, the derived book transactions are posted to the appropriate posting layers. 
+> By using derived books, you can post transactions to different posting layers at the same time. The transactions of the primary book are created in a journal or source document where the posting layer corresponds to the book posting layer. During posting, the derived book transactions will be posted to the appropriate posting layers. 
 
 
 For more information see, [Derived books](derived-books.md) and [Post with derived books](post-derived-value-models.md).
