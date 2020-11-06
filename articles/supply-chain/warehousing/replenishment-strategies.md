@@ -93,7 +93,7 @@ If the replenishment strategy were set to *Maximum location capacity*, we would 
 - Replenishment work 1: Pick 4 boxes from bulk and put them at location pick-001
 - Replenishment work 2: Pick 5 boxes from bulk and put them at location pick-002
 
-[![Example 1](media/ReplenTemp_example_1.png "Example 1")](media/ReplenTemp_example_1_large)
+[![Example 1](media/ReplenTemp_example_1.png "Example 1")](media/ReplenTemp_example_1_large.png)
 
 ### Example 2
 
@@ -113,6 +113,6 @@ If **Allow split** is set to *No*, then the following replenishment work would b
 
 The reason for the different results has to do with the information that is available when we create the work. When **Allow split** is set on the location directives for replenishment picks, we know that we managed to find 160 pcs, so we can create work for that. On the other hand, when we don't have **Allow split** enabled, then we don't know of the existence of the 160 pcs. Since the extra quantity that we decided to replenish was 3 boxes, we drop them, and we try again the original quantity.
 
-[![Example 2](media/ReplenTemp_example_2.png "Example 2")](media/ReplenTemp_example_2_large)
+[![Example 2](media/ReplenTemp_example_2.png "Example 2")](media/ReplenTemp_example_2_large.png)
 
 So, to get the maximum possible quantity to the replenished locations, **Allow split** should be enabled on the location directives for replenishment picks.
