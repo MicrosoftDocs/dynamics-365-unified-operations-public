@@ -102,12 +102,57 @@ This report also includes the same information for each partner separately, and 
 4.  In the **Sales tax declaration information** dialog box, set the following
     fields.
 
-| **Field**       | **Description**                                                                                                                                                                                                                                                                                                                                           |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Approve         | Set this option to **Yes** to approve the VAT report.                                                                                                                                                                                                                                                                                                     |
-| Include use-tax | Set this option to **Yes** to include use tax transactions on the settlement report.                                                                                                                                                                                                                                                                      |
-| Generate file   | Set this option to **Yes** to create an export file for the **Itemized VAT statement** report.                                                                                                                                                                                                                                                            |
-| Run mode        | Select the currency that amounts on the report should be shown in: **Amounts in company currency for accounting** – Show the values in the accounting currency. **Amounts in company currency for sales tax reporting** – Show the values in the sales tax code currency. **Amounts in original currency** – Show the values in the transaction currency. |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Approve</p>
+</td>
+<td>
+<p>Set this option to <strong>Yes</strong> to approve the VAT report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Include use-tax</p>
+</td>
+<td>
+<p>Set this option to <strong>Yes</strong> to include use tax transactions on the settlement report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Generate file</p>
+</td>
+<td>
+<p>Set this option to <strong>Yes</strong> to create an export file for the <strong>Itemized VAT statement</strong> report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Run mode</p>
+</td>
+<td>
+<p>Select the currency that amounts on the report should be shown in:</p>
+<ul>
+<li><strong>Amounts in company currency for accounting</strong> &ndash; Show the values in the accounting currency.</li>
+<li><strong>Amounts in company currency for sales tax reporting</strong> &ndash; Show the values in the sales tax code currency.</li>
+<li><strong>Amounts in original currency</strong> &ndash; Show the values in the transaction currency.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 5.  Select **OK**. In the grid in the lower part of the page, a line is created
     that has the VAT reporting data. Additionally, a ZIP archive that contains
