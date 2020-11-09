@@ -362,33 +362,33 @@ The following two examples use the **RUMF** company.
 
 -   Set the **Preview** option to **Yes**.
 
-1.  Select **OK**, and then, on the page that appears, set the **Name** field to
+9.  Select **OK**, and then, on the page that appears, set the **Name** field to
     **«Расходы перечисление» (ENU: «Expenses transfer»)**.
 
-2.  On the Action Pane, select **Create deferrals**, and then, on the
+10. On the Action Pane, select **Create deferrals**, and then, on the
     **Deferrals** page, verify that the deferral master record was created.
 
-3.  Make sure that the **Deferrals models** page has the following lines.
+11. Make sure that the **Deferrals models** page has the following lines.
 
 | **Model number** | **Deferrals group** | **Beginning date of write-off** | **Deferrals sum** |
 |------------------|---------------------|---------------------------------|-------------------|
 | RAP              | 1                   | 1/1/2019                        | 10,000.00         |
 | TAX              | Yearly              | 1/1/2019                        | 10,000.00         |
 
-4.  On the **Deferrals journal** page, create a new journal, and then, on the
+12. On the **Deferrals journal** page, create a new journal, and then, on the
     Action Pane, select **Lines**.
 
-5.  On the **Journal voucher** page, on the Action Pane, select **Group
+13. On the **Journal voucher** page, on the Action Pane, select **Group
     operations \> Writing off**.
 
-6.  On the **Deferrals writing off** page, in the **Transaction date** field,
+14. On the **Deferrals writing off** page, in the **Transaction date** field,
     select **3/1/2019**, and then select **OK**.
 
-7.  Verify that two lines were created for the **TAX** value model. For both
+15. Verify that two lines were created for the **TAX** value model. For both
     lines, the operation type should be **Writing off**, and the amount should
     equal 10,000.00 ÷ 12 = **833.33**. When you've finished, post the journal.
 
-8.  Create the tax register journal for one month of the 2019 calendar year, and
+16. Create the tax register journal for one month of the 2019 calendar year, and
     then calculate all the registers. In the **Deferrals** register, you should
     see the following information.
 
@@ -405,9 +405,9 @@ The following two examples use the **RUMF** company.
 | Amount of months             | 1.00                                                                                                         |
 | Write-off sum                | \-833.33                                                                                                     |
 
-9.  Approve the journal, and then create the tax register journal for two months
+17.  Approve the journal, and then create the tax register journal for two months
     of the 2019 calendar year.
 
-10. Calculate the registers. In the **Deferrals** register, you should see the
+18. Calculate the registers. In the **Deferrals** register, you should see the
     same line that you saw in the **Deferrals** register for one month. However,
     the **Amount of months** field will be set to **2.00** instead of **1.00**.
