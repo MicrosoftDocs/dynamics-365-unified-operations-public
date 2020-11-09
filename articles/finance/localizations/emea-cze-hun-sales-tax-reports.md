@@ -203,7 +203,8 @@ This example can be done in the **DEMF** legal entity.
 | January 2, 2020 | DE-010       | \-800.00       | \-216.00       | VAT27              |
 | January 2, 2020 | DE-010       | **1,000.00**   | **270.00**     | VAT27              |
 
-> [!NOTE] If you manually create a credit note instead of selecting **Sell \> Create \> Credit note** (for example, you create a free text invoice that has a negative amount), the credit note will appear in item 01 (sales invoices) and will have a negative amount.
+   > [!NOTE] 
+   > If you manually create a credit note instead of selecting **Sell \> Create \> Credit note** (for example, you create a free text invoice that has a negative amount), the credit note will appear in item 01 (sales invoices) and will have a negative amount.
 
 ### Create and post vendor transactions
 
@@ -224,7 +225,8 @@ This example can be done in the **DEMF** legal entity.
 | January 1, 2020 | DE-001     | 1,500          | 405            | InVAT27            |
 | January 1, 2020 | DE-01001   | 1,100          | 198            | EU18               |
 
-> [!NOTE] If you manually a create credit note instead of selecting **Purchase \> Create \> Credit note** (for example, you create a vendor invoice that has a negative amount), the credit note will appear in item 04 (purchase invoices) and will have a negative amount.
+   > [!NOTE] 
+   > If you manually a create credit note instead of selecting **Purchase \> Create \> Credit note** (for example, you create a vendor invoice that has a negative amount), the credit note will appear in item 04 (purchase invoices) and will have a negative amount.
 
 ### Generate and print the Sales tax declaration information report
 
