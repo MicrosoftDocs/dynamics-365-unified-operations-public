@@ -72,9 +72,9 @@ Complete the following steps to allocate bank document charges.
 
    ![Allocate bank document charge](media/apac-sau-allocate-bank-docment-charge.PNG)
 
-  You can see bank document charge that posted in the general journal for this letter of credit/import collection.
+   You can see bank document charge that posted in the general journal for this letter of credit/import collection.
 
-   ![LC/IC bank document transactions](media/apac-sau-lc-bank-document-transactions.PNG)
+    ![LC/IC bank document transactions](media/apac-sau-lc-bank-document-transactions.PNG)
 
 6. Select bank document charge transaction in the **Edit** mode, and then select **Letter of credit/ Import collection** to allocate the selected bank document charge. 
 
