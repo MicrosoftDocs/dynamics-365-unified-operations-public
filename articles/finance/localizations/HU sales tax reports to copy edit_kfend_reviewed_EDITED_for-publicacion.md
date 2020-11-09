@@ -203,44 +203,36 @@ This example can be done in the **DEMF** legal entity.
 | January 2, 2020 | DE-010       | \-800.00       | \-216.00       | VAT27              |
 | January 2, 2020 | DE-010       | **1,000.00**   | **270.00**     | VAT27              |
 
-![Note]: If you manually create a credit note instead of selecting **Sell \> Create \> Credit note** (for example, you create a free text invoice that has a negative amount), the credit note will appear in item 01 (sales invoices) and will have a negative amount.
+[!NOTE]: 
+If you manually create a credit note instead of selecting **Sell \> Create \> Credit note** (for example, you create a free text invoice that has a negative amount), the credit note will appear in item 01 (sales invoices) and will have a negative amount.
 
 ### Create and post vendor transactions
 
-1.  Go to **Accounts payable \> Vendors \> All vendors**, and select vendor
-    **DE-001**.
+1.  Go to **Accounts payable \> Vendors \> All vendors**, and select vendor **DE-001**.
 
-2.  On the **Address** FastTab, set **HUN** as the country, and then, on the
-    **Invoice and Delivery** FastTab, set the **Tax exempt number** field to
-    **HU34532985**.
+2.  On the **Address** FastTab, set **HUN** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **HU34532985**.
 
 3.  Select **Save**, and close page.
 
 4.  Select vendor **DE-01001**.
 
-5.  On the **Address** FastTab, verify that **DEU** is set as the country, and
-    then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number**
-    field to **DE192873939**.
+5.  On the **Address** FastTab, verify that **DEU** is set as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **DE192873939**.
 
-6.  Go to **Accounts payable \> Invoices \> Invoice journal**, create the
-    following two invoices, and then post them.
+6.  Go to **Accounts payable \> Invoices \> Invoice journal**, create the following two invoices, and then post them.
 
 | **Date**        | **Vendor** | **Amount net** | **VAT amount** | **Sales tax code** |
 |-----------------|------------|----------------|----------------|--------------------|
 | January 1, 2020 | DE-001     | 1,500          | 405            | InVAT27            |
 | January 1, 2020 | DE-01001   | 1,100          | 198            | EU18               |
 
-**Note**: If you manually a create credit note instead of selecting **Purchase
-\> Create \> Credit note** (for example, you create a vendor invoice that has a
-negative amount), the credit note will appear in item 04 (purchase invoices) and
-will have a negative amount.
+[!NOTE]
+If you manually a create credit note instead of selecting **Purchase \> Create \> Credit note** (for example, you create a vendor invoice that has a negative amount), the credit note will appear in item 04 (purchase invoices) and will have a negative amount.
 
 ### Generate and print the Sales tax declaration information report
 
 1.  Go to **General ledger \> Ledger setup \> General ledger parameters**.
 
-2.  On the **Sales tax** tab, on the **VAT statement** FastTab, make sure that
-    the **Enable to print itemized VAT statement** option is set to **No**.
+2.  On the **Sales tax** tab, on the **VAT statement** FastTab, make sure that the **Enable to print itemized VAT statement** option is set to **No**.
 
 3.  Go to **Tax \> Periodic tasks \> VAT reporting.**
 
@@ -252,8 +244,7 @@ will have a negative amount.
 
 5.  Select **Create report**.
 
-6.  In the **Sales tax declaration information** dialog box, set the **Include
-    use-tax** option to **Yes**.
+6.  In the **Sales tax declaration information** dialog box, set the **Include use-tax** option to **Yes**.
 
 7.  Select **OK**, and review [the generated report](https://mbs.microsoft.com/customersource/Global/AX/downloads/tax-regulatory-updates/SalesTaxDeclarationInformationHungary).
 
@@ -261,8 +252,7 @@ will have a negative amount.
 
 1.  Go to **General ledger \> Ledger setup \> General ledger parameters**.
 
-2.  On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable
-    to print itemized VAT statement** option to **Yes**.
+2.  On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable to print itemized VAT statement** option to **Yes**.
 
 3.  Select **Save**.
 
@@ -276,8 +266,7 @@ will have a negative amount.
 
 6.  Select **Clear period**, and then select **Create report**.
 
-7.  In the **Sales tax declaration information** dialog box, set the **Include
-    use-tax** option to **Yes**.
+7.  In the **Sales tax declaration information** dialog box, set the **Include use-tax** option to **Yes**.
 
 8.  Select **OK**, and review the generated report.
 
@@ -295,8 +284,8 @@ The **Itemized VAT statement** report contains the following data:
 | 107. | Total of 00 Line 06 | 0                  | 0                  | 0.00     | 0.00       |
 |      | Lines 105+106+107   | 2                  | 2                  | 2,600.00 | 405.00     |
 
->   In this table, line 102 includes the sales order, line 103 includes the
->   credit note for the sales order, and line 105 includes two vendor invoices.
+   In this table, line 102 includes the sales order, line 103 includes the
+   credit note for the sales order, and line 105 includes two vendor invoices.
 
 -   Other sections contain the same information for each partner separately, and
     the list of invoices for each item.
