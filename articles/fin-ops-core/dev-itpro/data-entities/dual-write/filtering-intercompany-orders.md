@@ -27,5 +27,7 @@ Quotations do not have an intercompany relationship. However, in the event that 
  
  
  <Picture 9 to 12>
+ ![alt text](media/image1.png)
+ 
      
 
