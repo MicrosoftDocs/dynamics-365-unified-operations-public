@@ -152,7 +152,7 @@ This report also includes the same information for each partner separately, and 
 
 2.  Select **Clear period** to delete the previously created line in the lower part of the page.
 
-3.  Select **Create report**, and follow the instructions in the [Generate and print VAT](#generateandprintvatreporting) reporting section to create a new line in the lower part of the **VAT reporting** page.
+3.  Select **Create report**, and follow the instructions in the [Generate and print VAT reporting](#generateandprintvatreporting) section to create a new line in the lower part of the **VAT reporting** page.
 
 ## Example
 
@@ -266,7 +266,7 @@ This example can be done in the **DEMF** legal entity.
 
 7.  In the **Sales tax declaration information** dialog box, set the **Include use-tax** option to **Yes**.
 
-8.  Select **OK**, and review the generated report.
+8.  Select **OK**, and review [the generated report](https://mbs.microsoft.com/customersource/Global/AX/downloads/tax-regulatory-updates/ItemizedVATStatementHungary).
 
 The **Itemized VAT statement** report contains the following data:
 
