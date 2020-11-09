@@ -44,7 +44,7 @@ Complete the following steps to set up a charge code for bank document charges.
 
 1. Go to **Accounts payable** \> **Setup** \> **Charges setup** \> **Charges code**. 
 
-  ![Charge code for document bank](media/apac-sau-bank-document-charge-setup.PNG)
+   ![Charge code for document bank](media/apac-sau-bank-document-charge-setup.PNG)
 
 2. In the **Debit** group, in the **Type** field, select **Item**. When you make this selection, the field, **Bank document charge code** is activated and can be edited. 
 3. In the **Bank document charge code** field, select **Yes**. The **Type** field in **Credit** group is filled in automatically and not available to edit.
@@ -70,11 +70,11 @@ Complete the following steps to allocate bank document charges.
 
 5. On the **Letter of credit/Import collection** page, on the toolbar, select **Bank document** > **Bank document charge**. This will open the letter of credit/import collection that you created in the purchase order. 
 
-  ![Allocate bank document charge](media/apac-sau-allocate-bank-docment-charge.PNG)
+   ![Allocate bank document charge](media/apac-sau-allocate-bank-docment-charge.PNG)
 
   You can see bank document charge that posted in the general journal for this letter of credit/import collection.
 
-  ![LC/IC bank document transactions](media/apac-sau-lc-bank-document-transactions.PNG)
+   ![LC/IC bank document transactions](media/apac-sau-lc-bank-document-transactions.PNG)
 
 6. Select bank document charge transaction in the **Edit** mode, and then select **Letter of credit/ Import collection** to allocate the selected bank document charge. 
 
