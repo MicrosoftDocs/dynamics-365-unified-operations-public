@@ -1,4 +1,34 @@
-Deferrals register
+---
+# required metadata
+
+title: Deferred expenses register
+description: This topic provides information about how to generate and set up deferrals.
+author: v-akroshkina
+manager: anasyash
+ms.date: 09/11/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: v-lenest
+ms.search.validFrom: 2020-09-11
+ms.dyn365.ops.version: 10.0.0
+
+---
+
+#Deferrals register
 
 Separate Deferrals functionality is used to account for deferred expenses in the
 system. This functionality enables an unlimited number of models to be used to
@@ -28,12 +58,12 @@ Here are some examples of deferrals:
 
 -   Loss on the sale of depreciable property.
 
-# Deferrals setup
+## Deferrals setup
 
 For more information about how to set up deferrals, see [Set up deferrals
 (Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-set-up-deferrals).
 
-## Set up deferral creation when you sell fixed assets
+### Set up deferral creation when you sell fixed assets
 
 When you sell fixed assets at a loss in bookkeeping accounting and tax
 accounting, a deferral must be created for the amount that is lost from the
@@ -66,7 +96,7 @@ of fixed assets.
     fixed asset master record, the **Deferrals** FastTab is automatically filled
     in.
 
-# Deferrals register
+## Deferrals register
 
 The deferrals register is created to summarize information about expenses that
 can be included in expenses for tax purposes in future periods. These expenses
@@ -116,16 +146,16 @@ The register lines show the following information:
 -   **Writing-off sum** – The write-off sum for the deferral in the current
     register.
 
-## Set up the deferrals register
+### Set up the deferrals register
 
 Set up the deferrals register by following the instructions in Profit tax
 registers journal. In the **Register type** field, select **Deferrals**.
 
-## Examples
+### Examples
 
 The following two examples use the **RUMF** company.
 
-### Example: Deferrals are automatically created when fixed assets are sold at a loss
+#### Example: Deferrals are automatically created when fixed assets are sold at a loss
 
 1.  On the **Deferrals groups** page (**General ledger \> Deferrals**), create
     the following deferrals group.
@@ -276,7 +306,7 @@ The following two examples use the **RUMF** company.
     months. However, the **Amount of months** field will be set to **2.00**
     instead of **1.00**.
 
-### Example: Deferrals are automatically created by using a periodic task
+#### Example: Deferrals are automatically created by using a periodic task
 
 1.  Go to **General ledger \> Deferrals setup \> Value models**, and verify that
     the following value models and deferral groups are created.
