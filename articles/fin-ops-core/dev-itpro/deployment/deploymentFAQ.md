@@ -5,7 +5,7 @@ title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 11/05/2020
+ms.date: 11/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -109,7 +109,7 @@ With self-service migrations, we are changing the outbound IP addresses in regio
 The inbound IP address to the AOS is dynamic and not under our control. This can, and will, change over time as infrastructure change occur.
 
 > [!NOTE]
->We only guarantee the outbound IP address from the AOS will remain static for the duration of an individual AOS session until June 2021. 
+> We only guarantee the outbound IP address from the AOS will remain static for the duration of an individual AOS session until June 2021. 
 
 | Region | IP prefix
 |---------------------|-------------|
