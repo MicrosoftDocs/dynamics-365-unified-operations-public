@@ -5,7 +5,7 @@ title: Deferred expenses register
 description: This topic provides information about how to generate and set up deferrals.
 author: v-akroshkina
 manager: anasyash
-ms.date: 09/11/2020
+ms.date: 11/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.0
 
 ---
 
-#Deferrals register
+# Deferrals register
 
 Separate Deferrals functionality is used to account for deferred expenses in the
 system. This functionality enables an unlimited number of models to be used to
