@@ -5,7 +5,7 @@ title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 11/05/2020
+ms.date: 11/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -106,8 +106,10 @@ With self-service migrations, we are changing the outbound IP addresses in regio
 * If none of your external components have dependencies on an explicit inclusion list of IPs or special handling of outbound IP addresses for routing or firewall, no action is required.
 * If any of your external components have special handling for the outbound IP addresses to communicate to the AOS, add the new outbound IP addresses where the existing ones appear. Don’t replace the existing IP addresses. You can find the new outbound IP addresses in the following list. For example, an outbound IP address may be explicitly included in a firewall outside your AOS, or an external service may have an allowed list that contains the outbound IP address for your AOS.
 
+The inbound IP address to the AOS is dynamic. This can, and will, change over time as infrastructure changes occur.
+
 > [!NOTE]
-> The IP ranges in the following table are subject to change. Please be sure to check back for updates to this list. 
+> The outbound IP address from the AOS will remain static for the duration of an individual AOS session, which is currently listed to end in June 2021. 
 
 | Region | IP prefix
 |---------------------|-------------|
