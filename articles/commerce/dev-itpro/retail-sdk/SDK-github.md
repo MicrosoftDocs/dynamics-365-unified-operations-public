@@ -34,11 +34,11 @@ ms.dyn365.ops.version: 10.0.16
 [!include [banner](../../includes/banner.md)]
 
 This document explains to how to get Retail SDK samples from GitHub and reference package from the public NuGet feed.
-The Retail SDK includes the code samples, templates, and tools that are required to extend or customize existing Commerce functionality, SDK is published into different repos in GitHub based on the Commerce extension components. This topic applies to Retail SDK version 10.0.16 or greater. To get the SDK for earlier version, please refer this doc.
+The Retail SDK includes the code samples, templates, and tools that are required to extend or customize existing Commerce functionality, SDK is published into different repos in GitHub based on the Commerce extension components. This topic applies to Retail SDK version 10.0.16 or greater. For information about downloading earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md)
 
 ## Commerce.ScaleUnit repo
 
-This repo contains the sample code for how to customize the Commerce runtime (CRT), Retail server (RS) and channel database.
+This repo contains the sample code for how to customize the Commerce runtime (CRT), Retail server (RS), and channel database.
 
 Clone or download the Commerce scale unit (CSU) repo from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
 
@@ -48,7 +48,7 @@ To clone the **Commerce.ScaleUnit** repo, use the following command. (This comma
 git clone https://github.com/microsoft/Dynamics365Commerce.ScaleUnit.git
 ```
 
-The repo will contain multiple branches for each release, please use the right release branch based on your go-live version. Note: The repo contains only samples, so its not really required to clone this repo.
+The repo will contain multiple branches for each release, please use the right release branch based on your go-live version. Note: The repo contains only samples, so it's not required that you clone this repo.
 
 | Release branch name | Version | Application release version |
 |---|---|---|
@@ -56,14 +56,17 @@ The repo will contain multiple branches for each release, please use the right r
 | [Release/9.27](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.26) | 9.27.\* | 10.0.17 |
 
 To clone a single branch, use the following command:
+
+```DOS
 git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dynamics365Commerce.ScaleUnit.git
+```
 
 ### Commerce.ScaleUnit repo folders and projects
 
 | Folder | Project | Contents | Description |
 |---|---|---|---|
 | Channel Database | ChannelDatabase.csproj | Contoso.ExampleTable.ChannelDatabase.sql | Sample database extension. |
-| CommerceRuntime  | CommerceRuntime.csproj| Controller – Sample code for how to implement new RS APIs. Entities, Messages and RequestHandlers – Sample code for how to implement new CRT service.  | Sample CRT extensions. |
+| CommerceRuntime  | CommerceRuntime.csproj| Controller – Sample code for how to implement new RS APIs.<br/>Entities, Messages, and RequestHandlers – Sample code for how to implement new CRT service.  | Sample CRT extensions. |
 | ScaleUnit | ScaleUnit.csproj | Project required to generate the CSU package. | Project required to generate the CSU package. |
 
 > [!NOTE]
@@ -86,7 +89,7 @@ Consume the commerce packages from this [location](https://msazure.pkgs.visualst
 
 ### Microsoft.Dynamics.Commerce.Sdk.Runtime package
 
-This meta package which contains all the required packages for doing the CRT and Retail server extension. All the required Commerce contracts, messages, request/response, entities are included in this package.
+This meta package contains all the required packages for doing the CRT and Retail server extension. All the required Commerce contracts, messages, request/response, entities are included in this package.
 
 Dependencies:
 
@@ -116,41 +119,6 @@ Dependencies:
 
 + Channel database packaging dependencies.
 
-<table>
-<thead>
-<tr class="header">
-<th>Package name</th>
-<th>Dependencies</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft.Dynamics.Commerce.Sdk.Runtime</td>
-<td>Microsoft.Dynamics.Commerce.Diagnostics<br />
-Microsoft.Dynamics.Commerce.Runtime.Data<br />
-Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages<br />
-Microsoft.Dynamics.Commerce.Runtime.Entities<br />
-Microsoft.Dynamics.Commerce.Runtime.Framework<br />
-Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts<br />
-Microsoft.Dynamics.Commerce.Runtime.Messages<br />
-Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages<br />
-Microsoft.Dynamics.Commerce.Runtime.Services.Messages</td>
-<td>This meta package which contains all the required packages for doing the CRT and Retail server extension. All the required Commerce contracts, messages, request/response, entities are included in this package.</td>
-</tr>
-<tr class="even">
-<td>Microsoft.Dynamics.Commerce.Sdk.ScaleUnit</td>
-<td>CSU Packaging dependencies.</td>
-<td>This package is required to generate the CSU package for deployment.</td>
-</tr>
-<tr class="odd">
-<td>Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase</td>
-<td>Channel database packaging dependencies.</td>
-<td>This package is required to generate the DB packages with CSU.</td>
-</tr>
-</tbody>
-</table>
-
 ### Package versioning
 
 | Package version | Application release      |
@@ -175,13 +143,13 @@ Extension project can consume the correct version by adding the package referenc
 
 With every hotfix and new application release new version of the package will be published in the same public feed, consume the right package version based on the version required for your go-live. Consuming the higher version of the package than your go-live application version will result in runtime and deployment failures.
 
-## Setup Azure DevOps pipeline for build automation and package generation:
+## Set up Azure Pipelines for build automation and package generation
 
 Information will be added later.
 
-## Best practice and branching strategies:
+## Best practice and branching strategies
 
-Detailed information on git branching strategy refer [Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance) doc.
+Detailed information on git branching strategy refers [Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance) doc.
 
 The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](https://docs.microsoft.com/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
@@ -193,7 +161,7 @@ Keep your branch strategy simple. Build your strategy from these three concepts:
 
 ### Create a new feature branch for development and bug fixes
 
-Create a new feature branch based of commerce release/x.x.x branch, Clone the Commerce release/x.x.x branch and then create a new branch based on that, Follow the proper naming convention (refer the [Git branching doc for sample naming convention](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance?view=azure-devops#name-your-feature-branches-by-convention))
+Create a new feature branch based of commerce release/x.x.x branch, Clone the Commerce release/x.x.x branch and then create a new branch, following the proper naming convention. For more information, see [Git branching doc for sample naming convention](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
 
 #### Command to clone and create a new branch
 

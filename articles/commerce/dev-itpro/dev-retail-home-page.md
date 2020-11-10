@@ -123,7 +123,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Download samples and packages from GitHub and NuGet](retail-sdk/sdk-github.md)
-- [Channel database extensions](channel-db-extensions.md) 
+- [Channel database extensions](channel-db-extensions.md)
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)
 - [Define and set order attributes](order-attributes.md)
 - [Customer attributes](customer-attributes.md)
