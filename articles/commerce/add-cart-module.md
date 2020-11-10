@@ -5,7 +5,7 @@ title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/20/2020
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -57,7 +57,7 @@ The following image shows an example of a cart page on the Fabrikam site. In thi
 | Heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | A heading for the cart, such as "Shopping bag" or "Items in your cart." |
 | Show out of stock errors | **True** or **False** | If this property is set to **True**, the cart page will show stock-related errors. We recommend that you set this property to **True** if inventory checks are applied on the site. |
 | Show shipping charges for line items | **True** or **False** | If this property is set to **True**, cart line items will show the shipping charges, if this information is available. This feature isn't supported in the Fabrikam theme, because users select shipping only in the checkout flow. However, this feature can be turned on in other workflows if it's applicable. |
-| Show available promotions| **True** or **False** | If this property is set to **True**, cart shows available promotions based on items in the Cart. This capability is available in Dynamics 365 Commerce 10.0.16 release |
+| Show available promotions| **True** or **False** | If this property is set to **True**, the cart shows available promotions based on items in the cart. This capability is available in the Dynamics 365 Commerce 10.0.16 release. |
 
 ## Modules that can be used in a cart module
 
