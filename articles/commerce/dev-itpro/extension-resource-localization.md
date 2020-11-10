@@ -62,24 +62,10 @@ You can override the default strings in the POS by using the language text entri
 
 ### Get the text ID for POS strings
 
-To get the text ID for a POS string, you must run the POS by using the Retail software development kit (SDK) in Debug mode. In the POS, text IDs are referred to as string IDs.
+To get the text ID for a POS string, open the Modern POS/Cloud POS application. Press F12 to launch the developer command tools and select the **Console** tab to open the JavaScript console. Run the **Commerce.Helpers.DeveloperModeHelper.setDeveloperMode(true);** command in the JavaScript console to turn on the developer mode.
 
-1. Start Microsoft Visual Studio 2015 in Administrator mode.
-2. Open **ModernPOS** solution from **…\\RetailSDK\\POS**.
-3. Set the **Solution configuration** property to **Debug**, the **Solution platforms** property to **x86**, and the **Deploy** property to **Local machine**.
-4. Compile and build the solution, and then select **Deploy \> Local Machine**.
-5. After the POS is deployed, sign in to it by using your operator ID and password.
-6. Select the **Settings** button in the upper right of the POS window.
-7. On the **Settings** page, under **Developer mode**, set the **Developer Mode** option to **Yes**.
-8. Set the **Show Strings IDs** option to **Yes**.
-9. Sign out of the POS, and then sign in again. The POS now shows the strings IDs in front of all the labels and messages. 
+After enabling the developer mode in the JavaScript console, navigate to the **Settings** page in POS, under the **Developer mode**, set **Developer Mode** to **Yes**. Set **Show Strings IDs** to **Yes**. Sign out of the POS, and then sign in again. The POS now shows the strings IDs in front of all the labels and messages.
 
-### Troubleshooting
-
-If the **Developer Mode** option doesn't appear on the **Settings** page in the POS, verify that you're running in Debug mode. Open the **pos.js** file, and verify that **Config.isDebugMode** is set to **true**. If it's set to **false**, change the value to **true**, and then deploy the POS again. If you are unable to find **Config.isDebugMode** in the **pos.js** file. then run the **Commerce.Helpers.DeveloperModeHelper.setDeveloperMode(true);** command in the JavaScript console to turn on the developer mode. Press F12 to launch the developer command tools and select the **Console** tab to open the JavaScript console.
-
-> [!IMPORTANT]
-> You should edit the pos.js file **only** to do quick testing and to get string IDs. In these cases, after you edit the file, you should revert your changes. Any changes that you make in Microsoft cores files will be overridden during deployment. Therefore, you will lose the changes. Additionally, future versions might not support editing the pos.js file.
 
 ## Error messages or receipt strings
 
