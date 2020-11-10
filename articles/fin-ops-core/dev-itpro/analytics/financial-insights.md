@@ -251,6 +251,6 @@ Power BI doesn't provide an option to hide and show empty rows. If a row doesn't
 
 The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Accessing Analytical Workspaces and Reports on 1Box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Add analytics to workspaces by using Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
