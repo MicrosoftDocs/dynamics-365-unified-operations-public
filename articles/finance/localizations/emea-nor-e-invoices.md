@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.08
 
 [!include [banner](../includes/banner.md)]
 
-To comply with European Union's Directive 2014/55/EU, the Norway-specific format of electronic invoices, **EHF Billing 3.0** have been implemented based on the [PEPPOL Billing 3.0](https://docs.peppol.eu/poacc/billing/3.0/) specification.
+For compliance with European Union Directive 2014/55/EU, the Norway-specific **EHF Billing 3.0** format for electronic invoices has been implemented based on the [PEPPOL Billing 3.0](https://docs.peppol.eu/poacc/billing/3.0/) specification.
 
 This topic provides information about how to configure and issue customer electronic invoices in Norway.
 
@@ -41,6 +41,7 @@ This topic provides information about how to configure and issue customer electr
 The primary address of the legal entity must be in Norway.
 
 ## Import Electronic reporting configurations
+
 In the **Electronic reporting** workspace, import the following Electronic reporting (ER) formats from the repository:
 
 - OIOUBL Sales invoice
@@ -49,149 +50,171 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 - OIOUBL Project credit note
 
 > [!NOTE]
-> These formats are based on the **Invoice model** configuration, and use the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
+> These formats are based on the **Invoice model** configuration and use the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-### Reference imported ER format configurations
+### Reference the imported ER format configurations
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
-2. On the **Electronic documents** tab, select the imported format options for electronic documents.
+2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents:
 
-![Configuring Electronic documents](media/emea-nor-ger-configs.jpg)
+    - **Sales and Free text invoice:** OIOUBL Sales invoice
+    - **Sales and Free text credit note:** OIOUBL Sales credit note
+    - **Project invoice:** OIOUBL Project invoice
+    - **Project credit note:** OIOUBL Project credit note
 
+![Formats for electronic documents](media/emea-nor-ger-configs.jpg)
 
 ## Configure parameters
 
 ### Configure legal entity parameters
 
-1. Go to **Organization administration** \> **Organization** \> **Legal entities**.
-2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company VAT number.
-3. On the **Registration numbers** FastTab, turn on the **Print Foretaksregisteret on sales documents** option for Norway.
-4. On the **Bank account information** FastTab, in the **Routing number** field, enter the company organization number. 
-5. In the **Bank account** field, enter the company bank acount number. 
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's value-added tax (VAT) number.
+3. On the **Registration numbers** FastTab, set the **Print Foretaksregisteret on sales documents** option for Norway to **Yes**.
+4. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's organization number.
+5. In the **Bank account** field, enter the company's bank account number.
 
     > [!NOTE]
-    > The company bank account must already be set up under **Cash and bank management** > **Bank accounts** > **Bank accounts**.
+    > The company bank account must already be set up at **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 
 ### Configure customer parameters
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers** and select a required customer.
-2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes**. This enables electronic invoices to be generated.
-3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of a printable invoice to the electronic invoice.
-4. In the **Tax exempt number** field, enter the customer’s VAT exempt number.
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
+2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
+3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
+4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
 
 ![Customer parameters](media/emea-nor-ger-customer.jpg)
 
 ### Units of measure configuration
 
-1. Go to **Organization administration** \> **Setup** \> **Units** > **Units**.
-2. Select a unit and then select **External codes**.
-3. In the **Overview** section, in **Code** field, enter a code which coincides with the select unit ID.
-4. In **Value** section, in **Value** field, enter the external code that will be used as international trade units of measure code. This code is recommended by United Nations Economic Commission for Europe ([UN/ECE](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/)).
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+2. Select a unit ID in the list, and then select **External codes**.
+3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
+4. In **Value** section, in **Value** field, enter the external code that should be used as the units of measure code for international trade. This code is recommended by the [United Nations Economic Commission for Europe (UN/ECE)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
 
 ![Units of measure configuration](media/emea-nor-ger-units.jpg)
 
 ### Sales tax codes transformation
-When you generate electronic invoices, the sales tax code rates are analyzed and transformed to [UNCL5305-compliant categories](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/) according to the following logic:
 
- - For all non-zero tax rates, the **S** category is used
- - For all zero tax rates, either the **E** or **Z** category is used depending on the configured reporting code for tax-free sales.
+When you generate electronic invoices, the sales tax code rates are analyzed and transformed into [UNCL5305-compliant categories](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/). The following logic is used:
+
+- For all non-zero tax rates, the **S** category is used.
+- For all zero tax rates, either the **E** category or the **Z** category is used, depending on the reporting code that is configured for tax-free sales.
 
 ### Customer requisition
-When you register free text invoices, invoices based on salse orders, or project invoices, you must enter a customer requisition. You can also add a customer reference which is optional.
+
+When you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter a customer requisition. You can also add an optional customer reference.
 
 #### Free text invoices
- 
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
-2. Create a new  invoice or select an existing one. 
-3. On the **Header** view, on the **Customer** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
- 
-#### Sales orders
- 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Create a new sales order or select an existing one. 
-3. On the **Header** view, on the **General** FastTab, in the **References** section, enter values in **Customer requisition** and **Customer reference** fields.
- 
- #### Project invoices
- 
-1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
-2. Create a new project contract or select an existing one. 
-3. On **Funding sources** FastTab, select or create a new **Customer** type funding source and select **Details**.
 
-![Funding sources](media/emea-nor-ger-proj-contracts.jpg)
- 
-4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, enter contract defualt values in **Customer requisition** and **Customer reference** fields. Alternatively, you can enter procect-specific values in the similar fields on **E-invoice** FastTab.
- 
- ![Project references](media/emea-nor-ger-proj-refs.jpg)
- 
-5. You can also enter customer requisition and reference values directly on the project invoice proposal by going to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**. 
-6. Create a new invoice proposal or select an existing one.
-7. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter values in **Customer requisition** and **Customer reference** fields.
- 
- ![Project proposal](media/emea-nor-ger-proj-prop.jpg)
- 
+1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+2. Create a new invoice, or select an existing invoice.
+3. In the **Header** view, on the **Customer** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
+
+#### Sales orders
+
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+2. Create a new sales order, or select an existing sales order. 
+3. In the **Header** view, on the **General** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
+
+#### Project invoices
+
+1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
+2. Create a new project contract, or select an existing project contract.
+3. On **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
+
+    ![Funding sources](media/emea-nor-ger-proj-contracts.jpg)
+
+4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, in the **Customer requisition** and **Customer reference** fields, enter default values for the contract. Alternatively, you can enter project-specific values in the corresponding fields on the **E-invoice** FastTab.
+
+    ![Project references](media/emea-nor-ger-proj-refs.jpg)
+
+5. To enter customer requisition and reference values directly on the project invoice proposal, follow these steps:
+
+    1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
+    2. Create a new invoice proposal, or select an existing invoice proposal.
+    3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter values in **Customer requisition** and **Customer reference** fields.
+
+    ![Project proposal](media/emea-nor-ger-proj-prop.jpg)
+
 ### Customer accounting code registration
 
-You can enter customer accuonting codes when working with free text invoices, invoices based on sales orders, or project invoices.
+You can enter customer accounting codes when you work with free text invoices, invoices that are based on sales orders, or project invoices.
 
 #### Free text invoices
- 
+
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
-2. Create a new invoice or select an existing one. 
-3. On the **Header** view, on the **General** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code. 
-4. To have individual accounting codes for each invoice line, turn on the **Line-specific** option and switch to the **Lines** view.
-5. On the **General** tab, on the **Line details** FastTab, in the **Dimension account** field, enter a line-specific accounting code.
- 
-![FTI cost](media/emea-nor-ger-fti-cost.jpg)
+2. Create a new invoice, or select an existing invoice. 
+3. In the **Header** view, on the **General** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code for the invoice. 
+4. To have a separate accounting code for each invoice line, follow these steps:
+
+    1. Set the **Line-specific** option to **Yes**.
+    2. Switch to the **Lines** view.
+    3. On the **Line details** FastTab, on the **General** tab, in the **Dimension account** field, enter a line-specific accounting code for each invoice line.
+
+    ![Line-specific accounting code for a free text invoice](media/emea-nor-ger-fti-cost.jpg)
 
 #### Sales orders
- 
+
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Create a new sales order or select an existing one. 
-3. On the **Header** view, on the **General** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the order-specific accounting code. 
-4. Or, enable the **Line-specific** option, and swith to **Lines** view.
-5. On the **Line details** FastTab, on the **General** tab, in the **Dimension account** field, enter line-specific accounting codes for each order line.
- 
- #### Project invoices
- 
+2. Create a new sales order, or select an existing sales order.
+3. In the **Header** view, on the **General** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code for the order.
+4. To have a separate accounting code for each order line, follow these steps:
+
+    1. Set the **Line-specific** option to **Yes**.
+    2. Switch to the **Lines** view.
+    3. On the **Line details** FastTab, on the **General** tab, in the **Dimension account** field, enter a line-specific accounting code for each order line.
+
+#### Project invoices
+
 1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
-2. Create a new project contract or select an one. 
-3. On **Funding sources** FastTab, create a new or select an existing **Customer** type funding source and select **Details**. 
-4. On **Funding source details** page, on the **E-invoice** FastTab, in the **Dimension account** field, enter a project-specific default accounting code.
+2. Create a new project contract, or select an existing project contract.
+3. On **Funding sources** FastTab, create or select a funding source of the **Customer** type, and then select **Details**.
+4. On **Funding source details** page, on the **E-invoice** FastTab, in the **Dimension account** field, enter the project-specific default accounting code.
 
-![Project default cost](media/emea-nor-ger-proj-cost.jpg)
+    ![Project-specific accounting code](media/emea-nor-ger-proj-cost.jpg)
 
-5. You can also enter customer acounting codes directly in project invoice proposals by going to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
-6. Create a new invoice proposal or select an existing one. 
-7. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code. 
-8. Or, enable the **Line-specific** option, and on the **Invoice proposal transactions** FastTab, in the **Dimension account** field, enter line-specific accounting codes for each transaction line.
+5. To enter customer accounting codes directly in project invoice proposals, follow these steps:
 
-![Project default cost](media/emea-nor-ger-proj-prop-cost.jpg)
+    1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
+    2. Create a new invoice proposal, or select an existing invoice proposal.
+    3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code.
 
+6. To have a separate accounting code for each transaction line, follow these steps:
+
+    1. Set the **Line-specific** option to **Yes**.
+    2. On the **Invoice proposal transactions** FastTab, in the **Dimension account** field, enter a line-specific accounting code for each transaction line.
+
+    ![Transaction line-specific accounting code](media/emea-nor-ger-proj-prop-cost.jpg)
 
 ## Export customer electronic invoices
 
 ### Send e-invoices
-When an invoice is posted, you can generate an electronic invoice by selecting **Send** > **Original** for the selected invoice.
 
-![Send e-invoice](media/emea-nor-ger-einvoice.jpg)
+When an invoice is posted, you can generate an electronic invoice by selecting **Send** \> **Original** for the selected invoice.
+
+![Sending an e-invoice](media/emea-nor-ger-einvoice.jpg)
 
 ### View e-invoices
 
-1. To inquire about XML files of generated electronic invoices, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
-2. Select a required job, and then select **Show files**:
+To inquire about the XML files of electronic invoices that have been generated, follow these steps.
 
-![Send e-invoice](media/emea-nor-ger-einvoice-open.jpg)
+1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
+2. Select a job, and then select **Show files**.
 
-3. Select **Open** to download the file with the electronic invoice.
+    ![Show files button](media/emea-nor-ger-einvoice-open.jpg)
 
-If generating the electronic invoices fails with errors, select **Show log** > **Message details** to see additional details of the error message.
+3. Select **Open** to download the file that contains the electronic invoice.
 
-![Show log](media/emea-nor-ger-einvoice-log.jpg)
+If generation of the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error message.
 
-### Send to Electronic reporting destinations
+![Message details](media/emea-nor-ger-einvoice-log.jpg)
 
-You can set up **Electronic reporting destinations** for e-invoice formats. In this case, output XML files with electronic invoices will automatically be sent to the defined destinations right after the invoices are posted. When posting, you must enable the **Print invoice** parameter.
+### Send e-invoices to ER destinations
 
-For more details about Electronic reporting destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+You can set up ER destinations for electronic invoice formats. In this case, output XML files that contain electronic invoices will automatically be sent to the defined destinations immediately after the invoices are posted. When you post the invoices, you must turn on the **Print invoice** parameter.
+
+For more information about ER destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
