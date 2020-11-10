@@ -647,9 +647,14 @@ When you want to use the new entity in a service, the process is straightforward
             }
 ```
 
+
+> [!NOTE]
+> Commerce entities are not thread safe it means same object should not be read/modify when another thread is writing to it, this applicable to both Custom entities and OOB entities, in the extension code avoid two different threads doing read/write for the same shared object synchronously.
+
+
 For the preceding example, the CRT runtime engine automatically makes a query to the channel database via the registered data adapter. It queries a type that has the name **crt.ISVRetailStoreHoursView**, and generates a **where** clause and columns as specified in the code. The customizer is responsible for providing the SQL objects as part of the customization.
 
-## Adding pre-triggers and post-triggers for a specific request
+## Adding pre-triggers and post-triggers for a specific request 
 
 For information about how to create CRT triggers extension, see [Commerce runtime (CRT) triggers extension](commerce-runtime-extensibility-trigger.md).
 
