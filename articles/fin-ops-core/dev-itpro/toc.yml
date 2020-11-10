@@ -161,7 +161,7 @@
                 - name: Set up the mapping for the sales order status fields
                   href: data-entities/dual-write/sales-status-map.md
                 - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
-                  href: filtering-intercompany-orders.md)
+                  href: data-entities/dual-write/filtering-intercompany-orders.md
             - name: Managing dual-write
               items:
                 - name: Customize entity and field mappings
