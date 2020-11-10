@@ -137,7 +137,7 @@ Users can filter the report by using the **Filter** pane on the left. This pane 
 - **Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters.
 - **Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.
 
-![Filter](./media/filter.png)
+![Filter options](./media/filter.png)
 
 To remove a specific filter value, select the eraser symbol next to it. Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option. If you accidentally remove a field from the filter, close the workspace, and then reopen it. The default filter settings will be reapplied.
 
