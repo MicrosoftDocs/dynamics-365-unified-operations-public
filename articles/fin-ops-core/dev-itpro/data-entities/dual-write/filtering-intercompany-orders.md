@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Bootstrap with company data FAQ
-description: How to bootstrap Common Data Service or other Dynamics 365 app data with company information before enabling dual-write connection. 
-author:  
-manager: AnnBe
-ms.date: 09/20/2019
+title: Filtering of intercompany orders to avoid synchronizing Orders and OrderLines
+description: 
+author:  Negudava
+manager: 
+ms.date: 11/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,14 +30,14 @@ ms.search.validFrom: 2019-09-20
 
 ---
 
-# Bootstrap with company data FAQ
+# Filtering of intercompany orders to avoid synchronizing Orders and OrderLines
  
 [!include [banner](../../includes/banner.md)]
 Issue:
 
 To facilitate the filtering of intercompany orders to avoid synchronizing Orders and OrderLines.
 
-The Intercompany Accounts do not synchronize correctly if the accounts are linked to the legal entities in the different FO companies. This is because the accounts have a PartyType=LegalEntity reference which is not handled by the mappings. Then Either the Customer account or the sales header fails to synchronize which causes downstream dependency failures. This can be resolved by manually creating the missing Account records in CE, but in some scenarios, the intercompany order details are not necessary in CE at all.
+The Intercompany Accounts do not synchronize  if the accounts are linked to the legal entities in the different FO companies. This is because the accounts have a PartyType=LegalEntity reference which is not handled by the mappings. Then Either the Customer account or the sales header fails to synchronize which causes downstream dependency failures. This can be resolved by manually creating the missing Account records in CE, but in some scenarios, the intercompany order details are not necessary in CE at all.
 
 Solution:
 
