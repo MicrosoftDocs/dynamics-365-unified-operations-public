@@ -38,28 +38,28 @@ You can filter the intercompany orders to avoid synchronizing the **Orders** and
 
 Each of the standard Common Data Service entities is extended with references to intercompany, and the dual-write maps are modified to refer to the additional fields in the filters. The result is that the intercompany orders are no longer synchronized. This avoids unnecessary data in the customer engagement app.
 
-Add “Intercompany Order” reference to "CDS Sales Order Headers" Is only populated on Intercompany orders. Field "InterCompanyOrder" available in "SalesTable"
+1. Add a reference to **IntercompanyOrder** to **CDS Sales Order Headers**. It is populated on only Intercompany orders. The field **InterCompanyOrder** is available in **SalesTable**.
 
-![Map staging to target, SalesOrderHeader](media/filter-sales-order-header-field-display.png)
+    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Map staging to target, SalesOrderHeader":::
 
-![Sales orders headers, edit query](media/filter-sales-order-header.png)
+    :::image type="content" source="media/filter-sales-order-header.png" alt-text="Sales orders headers, edit query":::
 
-Add “IntercompanyInventTransId” reference to "CDS Sales Order Lines".  Is only populated on Intercompany orders. Field "InterCompanyInventTransID" available in table "SalesLine"
+2. Add a reference to **IntercompanyInventTransId** to **CDS Sales Order Lines**.  It is populated on only Intercompany orders. The field **InterCompanyInventTransID** is available in **SalesLine**.
 
-![Map staging to target, SalesOrderLine](media/filter-sales-order-line-field-display.png)
+    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Map staging to target, SalesOrderLine":::
 
-![Sales order lines, edit query](media/filter-sales-order-lines.png)
+    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Sales order lines, edit query":::
 
-The Sales Invoice Header V2 and Sales Invoice Lines V2 are extended the same method as the CDS entities.
+3. Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same waqy you extended the Common Data Service entities in steps 1 and 2.
 
-![Map staging to target, Sales Invoice Headers](media/SalesInvoiceHeaderFieldDisplay.png)
+    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Map staging to target, Sales Invoice Headers":::
 
-![Sales invoice headers, edit query](media/SalesInvoiceHeaderFilter.png)
+    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Sales invoice headers, edit query":::
 
-![Sales invoice headers, edit query](media/SalesInvoiceLinesFilter.png)
+    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Sales invoice lines, edit query":::
 
-Quotations do not have an intercompany relationship. However, in the event that someone ends up creating a quote to one of our intercompany Customers, you can put all of these customers in one Customer Group.  Header and lines can be extended to add the customer group field and filter to not include this group.
+4. **Quotations** doesn't have an intercompany relationship. If someone creates a quote for one of your intercompany Customers, you can put all of these customers in one Customer Group.  Header and lines can be extended to add the customer group field and filter to not include this group.
 
-![Map staging to target, Sales Quotation Header](media/filter-cust-group.png)
+    :::image type="content" source="media/filter-cust-group.png" alt-text="Map staging to target, Sales Quotation Header":::
 
-![Sales Quotation Header, edit query](media/filter-cust-group-edit.png)
+    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Sales Quotation Header, edit query":::
