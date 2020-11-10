@@ -41,6 +41,5 @@ To create a carrier group, follow these steps:
 1. Select **New**.
 1. In the **Carrier group** filed, enter a unique ID for the group.
 1. In the **Name** field, enter a descriptive name for the group.
-<!-- KFM: What is the **Carrier count** field for? -->
 1. On the **Details** FastTab, add a row and select a **Shipping carrier** and a **Carrier service** for it. Repeat this step to add as many carriers as you need for this group.
 1. Close the page.

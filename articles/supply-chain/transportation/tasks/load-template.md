@@ -52,8 +52,8 @@ To set up load templates, follow these steps:
 To associate a load template with a new load, follow these steps:
 
 1. Go to **Transportation management \> Planning \> Load planning workbench**.
-1. On the Action Pane, open the **Supply and demand** tab and, from the **Add** group, select **To new load**. <!-- KFM: What are we assigning to? Do we need to select a shipment or load or something here? -->
+1. Depending on which type of source document you are creating a load for, select one of the tabs in the top section (**Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**). 
+1. Select the specific document you want to plan the load for.
+1. On the Action Pane, open the **Supply and demand** tab and, from the **Add** group, select **To new load**.
 1. The **Load template** dialog box opens. In the **Load template ID** field, select the template you want to apply.
 1. Select **OK** to apply the template.
-
-<!-- KFM: The load building workbench appears also to use load templates. Shouldn't we mention that? We could link to the existing topic. -->
