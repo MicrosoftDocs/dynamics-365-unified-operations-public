@@ -43,26 +43,29 @@ Each of the Standard CDS entities were extended with references to intercompany 
 
 Add “Intercompany Order” reference to "CDS Sales Order Headers" Is only populated on Intercompany orders. Field "InterCompanyOrder" available in "SalesTable"
 
- 
+![alt text](media/CDSSalesOrderHeaderFieldDisplay.png)
 
-<Picture1>
- <Picture2>
-
-Add “IntercompanyInventTransId” reference to "CDS Sales Order Lines".  Is only populated on Intercompany orders. Field "InterCompanyInventTransID" avilable in table "SalesLine" 
+![alt text](media/CDSSalesOrderHeaderFilter.png)
  
-<picture3>
- <picture4>
+Add “IntercompanyInventTransId” reference to "CDS Sales Order Lines".  Is only populated on Intercompany orders. Field "InterCompanyInventTransID" avilable in table "SalesLine"
+
+![alt text](media/CDSSalesOrderLineFieldDisplay.png)
+
+![alt text](media/CDSSalesOrderLinesFilter.png)
 
 The Sales Invoice Header V2 and Sales Invoice Lines V2 are extended the same method as the CDS entities.
 
- <Picture 5 to 8>
- 
+![alt text](media/SalesInvoiceHeaderFieldDisplay.png)
+
+![alt text](media/SalesInvoiceHeaderFilter.png)
+
+![alt text](media/SalesInvoiceLinesFilter.png)
 
 Quotations do not have an intercompany relationship. However, in the event that someone ends up creating a quote to one of our intercompany Customers, you can put all of these customers in one Customer Group.  Header and lines can be extended to add the customer group field and filter to not include this group.
  
+ ![alt text](media/Custgroup.png)
  
- <Picture 9 to 12>
- ![alt text](media/image1.png)
+ ![alt text](media/Custgroupfilter.png)
  
      
 
