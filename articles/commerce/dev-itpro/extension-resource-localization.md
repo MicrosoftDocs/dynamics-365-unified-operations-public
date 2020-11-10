@@ -62,9 +62,10 @@ You can override the default strings in the POS by using the language text entri
 
 ### Get the text ID for POS strings
 
-To get the text ID for a POS string, open the Modern POS/Cloud POS application, press F12 to launch the developer command tools and select the **Console** tab to open the JavaScript console then run the **Commerce.Helpers.DeveloperModeHelper.setDeveloperMode(true);** command in the JavaScript console to turn on the developer mode.
+To get the text ID for a POS string, open the Modern POS/Cloud POS application. Press F12 to launch the developer command tools and select the **Console** tab to open the JavaScript console. Run the **Commerce.Helpers.DeveloperModeHelper.setDeveloperMode(true);** command in the JavaScript console to turn on the developer mode.
 
-After enabling the developer mode in the JavaScript console, navigate to the **Settings** page in POS, under **Developer mode**, set the **Developer Mode** option to **Yes** and set  the **Show Strings IDs** option to **Yes**. After that sign out of the POS, and then sign in again. The POS now shows the strings IDs in front of all the labels and messages.
+After enabling the developer mode in the JavaScript console, navigate to the **Settings** page in POS, under the **Developer mode**, set **Developer Mode** to **Yes**. Set **Show Strings IDs** to **Yes**. Sign out of the POS, and then sign in again. The POS now shows the strings IDs in front of all the labels and messages.
+
 
 ## Error messages or receipt strings
 
