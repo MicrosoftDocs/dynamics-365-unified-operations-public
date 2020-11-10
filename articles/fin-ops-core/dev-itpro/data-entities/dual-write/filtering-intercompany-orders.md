@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Filter intercompany Orders to avoid synchronizing Orders and OrderLines
+title: Filter intercompany orders to avoid synchronizing Orders and OrderLines
 description: This topic describes how to filter intercompany orders to avoid synchronizing Orders and OrderLines.
 author:  negudava
 manager: tfehr

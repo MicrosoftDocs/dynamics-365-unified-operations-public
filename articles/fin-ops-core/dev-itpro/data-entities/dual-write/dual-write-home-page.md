@@ -34,8 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 These topics describe dual-write integration.
 
 + [What is dual-write?](dual-write-overview.md)
@@ -45,7 +43,7 @@ These topics describe dual-write integration.
 
 + [What's new or changed in dual-write](whats-new-dual-write.md)
 + [Frequently asked questions](dual-write-faq.md)    
-    
+
 ## Dual-write setup
 
 + [System requirements for dual-write](dual-write-system-req.md)
@@ -61,6 +59,7 @@ These topics describe dual-write integration.
 
 + [Currency data-type migration for dual-write](currrency-decimal-places.md)
 + [Set up the mapping for the sales order status fields](sales-status-map.md)
++ [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
 
 ## Managing dual-write after setup
 

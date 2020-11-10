@@ -1,4 +1,4 @@
-﻿- name: Development and administration for Finance and Operations apps
+- name: Development and administration for Finance and Operations apps
   items:
   - name: Development and administration for Finance and Operations apps
     items:
@@ -160,6 +160,8 @@
                   href: data-entities/dual-write/currrency-decimal-places.md
                 - name: Set up the mapping for the sales order status fields
                   href: data-entities/dual-write/sales-status-map.md
+                - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
+                  href: filtering-intercompany-orders.md)
             - name: Managing dual-write
               items:
                 - name: Customize entity and field mappings
@@ -1894,4 +1896,4 @@
     href: ../../finance/index.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
-   
+
