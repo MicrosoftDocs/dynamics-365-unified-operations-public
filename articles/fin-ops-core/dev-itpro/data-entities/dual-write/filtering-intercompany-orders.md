@@ -36,19 +36,21 @@ ms.search.validFrom: 2019-09-20
 Issue:
 
 To facilitate the filtering of intercompany orders to avoid synchronizing Orders and OrderLines.
+
 The Intercompany Accounts do not synchronize correctly if the accounts are linked to the legal entities in the different FO companies. This is because the accounts have a PartyType=LegalEntity reference which is not handled by the mappings. Then Either the Customer account or the sales header fails to synchronize which causes downstream dependency failures. This can be resolved by manually creating the missing Account records in CE, but in some scenarios, the intercompany order details are not necessary in CE at all.
 
 Solution:
 
 Each of the Standard CDS entities were extended with references to intercompany and the DualWrite Maps were modified to refer to the additional fields in the filters. The result is that the intercompany orders are no longer synchronized. This avoids unnecessary data in the CRM system.
-Add “Intercompany Order” reference to CDS Sales Order Headers Is only populated on Intercompany orders.
+
+Add “Intercompany Order” reference to "CDS Sales Order Headers" Is only populated on Intercompany orders. Field "InterCompanyOrder" available in "SalesTable"
+
  
 
 <Picture1>
  <Picture2>
 
-Add “IntercompanyInventTransId” reference to CDS Sales Order Lines.  Is only populated on Intercompany orders.
- 
+Add “IntercompanyInventTransId” reference to "CDS Sales Order Lines".  Is only populated on Intercompany orders. Field "InterCompanyInventTransID" avilable in table "SalesLine" 
  
 <picture3>
  <picture4>
