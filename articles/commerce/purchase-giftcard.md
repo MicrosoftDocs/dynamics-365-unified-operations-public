@@ -40,14 +40,14 @@ In Dynamics 365 Commerce 10.0.16 release, we support purchase of digital gift ca
 ## Configuring a digital gift card in Headquarters
 A gift card product should be configured in headquarters similar to other products. Here are the important steps for configuring a gift card for e-commerce purchase.
 
-- If the product is a digital gift card set **Item Type= Service item** when configuring the product. If a product is of type Service item it will not be checked for available inventory before placing an order. For more details refer to [Creating a product](create-new-product-commerce.md)
-- If the gift card needs to support multiple pre-defined values such as $25, $50 etc. This should be setup using the Size dimension and each pre-determined amount will be a variant. For more details refer to [Product dimensions](product-dimensions.md)
+- If the product is a digital gift card set **Item Type= Service item** when configuring the product. If a product is of type Service item it will not be checked for available inventory before placing an order. For more details refer to [Creating a product](create-new-product-commerce.md).
+- If the gift card needs to support multiple pre-defined values such as $25, $50 etc. This should be setup using the Size dimension and each pre-determined amount will be a variant. For more details refer to [Product dimensions](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
 - If the gift card allows a custom amount, setup a variant that allows a custom amount and go to the product and set Key in Price = **Must key in price**. This ensures a price can be entered by the customer when browsing the product on the product details page. For this open the product from *Released Products in Category* and navigate down to *Commerce* section which should have this property.
-- Set the delivery mode for gift cards to be of type Electronic. For more details refer to [Setup up modes of delivery](./appuser-itpro/set-up-modes-of-delivery.md)
+- Set the delivery mode for gift cards to be of type Electronic. For more details refer to [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 - Add product image(s) for the gift card product in Site Builder's Digital Asset Management. The gift card image file name(s) should follow the same pattern as defined in the Media template. 
-- Please ensure you have an **Online Functionality Profile** created and associated to your **Online store** in Headquarters. In the functionality profile set cart aggreation to **True**. This will ensure all items except gift card are aggregated. For details refer to [Online Functionality Profile](online-functionality-profile.md)
+- Please ensure you have an **Online Functionality Profile** created and associated to your **Online store** in Headquarters. In the functionality profile set cart aggreation to **True**. This will ensure all items except gift card are aggregated. For details refer to [Online Functionality Profile](online-functionality-profile.md).
 - The product needs to be configured to be of type Gift card.  For details refer to [External gift card setup](./dev-itpro/gift-card.md)
-- Set up the email template for "Issue Giftcard" action so the customer receives an email once the gift card is invoiced. For more details refer to [Setup email notification](email-notification-profiles.md)
+- Set up the email template for "Issue Giftcard" action so the customer receives an email once the gift card is invoiced. For more details refer to [Set up email notification](email-notification-profiles.md).
 
 
 ## Enabling Gift card feature in Headquarters
@@ -73,9 +73,9 @@ When multiple gift cards are added to cart, the items will not be aggregated in 
 
 [Creating a product](create-new-product-commerce.md)
 
-[Setup up modes of delivery](./appuser-itpro/set-up-modes-of-delivery.md)
+[Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Product dimensions](product-dimensions.md)
+[Product dimensions](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.jso)
 
 [Setup email notification](email-notification-profiles.md)
 
