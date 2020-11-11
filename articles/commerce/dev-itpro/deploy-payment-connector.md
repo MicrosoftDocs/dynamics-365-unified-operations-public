@@ -88,7 +88,7 @@ The self-service package contains the installers for both Hardware station and M
 
 ## Manual deployment
 
-This section describes how to manually deploy a payment connector. You can use a manual deployment to test locally in a developer environment. This developer environment can be either cloud-hosted or on a downloadable virtual hard disk (VHD), these steps are not applicable for sandbox or production environment.
+This section describes how to manually deploy a payment connector. You can use a manual deployment to test locally in a developer environment. This developer environment can be either cloud-hosted or on a downloadable virtual hard disk (VHD). These steps are not applicable for sandbox or production environments.
 
 ### Put the payment connector assemblies and files in the correct locations
 
