@@ -87,6 +87,8 @@ When you've completed the configuration steps and set up demo data, you must tur
 
 ### Enable customer payment predictions
 
+If you are using demo data to test customer payment predictions, you may have to import additional demo data to create AI model successfully. Please follow the steps mentioned here: https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bob-fi-admin-topics/articles/finance/finance-insights/set-up-demo-data.md to import demo data.
+
 Follow the steps in [Enable customer payment predictions](enable-cust-paymnt-prediction.md) to build a machine learning model and use it with your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid.
 
 ### Enable cash flow forecasting
@@ -105,29 +107,30 @@ Follow the steps in [Enable budget proposals](enable-budget-proposal.md) to use 
 
 ### Using Customer payment predictions
 
-If you are not using production data to test customer payment predictions, you may have to import additional demo data. Here are the steps: https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bob-fi-admin-topics/articles/finance/finance-insights/set-up-demo-data.md
-
-https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/enable-cust-paymnt-prediction?branch=bob-fi-admin-topics#using-the-customer-payment-predictions-feature
+Customer payment predictions can help you collect proactively, learn how here: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/enable-cust-paymnt-prediction?branch=bob-fi-admin-topics#using-the-customer-payment-predictions-feature
 
 For information that can help you evaluate the effectiveness of the prediction model, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md). For information that can help you adjust the data that is used to build the prediction, to improve its effectiveness, see [Improve the prediction model](improve-model.md).
 
-Understanding results of machine learning model: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/confusion-matrix?branch=bob-fi-daves-blogs
+If you want to further understand the results from the AI model, please read: Understanding results of machine learning model: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/confusion-matrix?branch=bob-fi-daves-blogs
 
 ### Using cash flow feature
 
-What's new in cash flow forecast: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/cash-flow-forecast-intro?branch=bob-fi-intro-cashflow-forecasting
+Learn what’s new in cashflow forecasting here: What's new in cash flow forecasting: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/cash-flow-forecast-intro?branch=bob-fi-intro-cashflow-forecasting
 
-External data: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/external-data-in-cash-flow?branch=bob-finance-insites-external-data-in-cashflow
+Learn how to import external data to include in your cashflow forecast here: External data: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/external-data-in-cash-flow?branch=bob-finance-insites-external-data-in-cashflow
 
-Cash position: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/cash-position?branch=bob-fi-cash-position
+Learn how payment prediction can help you more accurately estimated your cash position here: Cash position: 
 
-Cash flow forecast:
+Learn how you can use forecasting using AI to project long term cash flow here: Cash flow forecast:https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/cash-position?branch=bob-fi-cash-position
 
-Snapshots: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/payment-snapshots?branch=bob-fi-cust-payment-snapshots
+Learn how you can save cash flow positions and cash flow forecasts and compare snapshot to actuals, here: Snapshots: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/payment-snapshots?branch=bob-fi-cust-payment-snapshots
 
 ### Using Budget proposal
 
-https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/budget-proposals?branch=bob-budget-proposals-thru-ai-ml
+Learn how you can accelerate budget creation using intelligent budget proposal here: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/budget-proposals?branch=bob-budget-proposals-thru-ai-ml
+
+Demo data for budget proposal:
+
 
 ## Feedback and support
 
