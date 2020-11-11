@@ -31,6 +31,7 @@ ms.dyn365.ops.version: Release 10.0.15
 # Configure digital gift cards
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to configure digital gift cards in Dynamics 365 Commerce.
 
