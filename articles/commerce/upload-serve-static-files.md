@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 # Upload and serve static files
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to upload a static file into Microsoft Dynamics 365 Commerce site builder, and how to create a custom URL and file name that can be used to request that file.
 
