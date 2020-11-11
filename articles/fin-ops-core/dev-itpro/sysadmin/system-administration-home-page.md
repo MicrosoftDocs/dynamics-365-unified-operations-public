@@ -129,6 +129,6 @@ The process automation framework allows administrators to view and create automa
 - [Maintenance mode](maintenance-mode.md)
 - [Preconfigured system accounts](pre-configured-system-accounts.md)
 - [Export business-to-business (B2B) users to Azure Active Directory](implement-b2b.md)
-- [Set the session idle timeout](session-idle-timeout.md)
+- [Set the session inactivity timeout](session-idle-timeout.md)
 - [Build Odata metadata cache when AOS starts](odata-warmup.md)
 - [Configure and manage database logging](configure-manage-database-log.md)
