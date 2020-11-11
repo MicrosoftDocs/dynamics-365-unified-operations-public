@@ -43,7 +43,6 @@ This function has a default value of 30 minutes. You can set the value up to 60 
 > [!NOTE] 
 > This feature is available as of Platform update 29.
 
-> [!IMPORTANT]
 > If you previously set a session inactivity timeout in the web.config (**WebClientStatefulSessionTimeoutInSeconds** key) through a support request, then that old value will still be honored. The change in default will only affect those who had not explicitly set a new session inactivity timeout in the web config.
 
 To change the value, follow these steps:
