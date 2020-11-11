@@ -37,27 +37,27 @@ The user session setting represents the amount of time a user can be logged in b
 You can set the **Maximum session length** up to 2,160 hours (90 days) with a minimum of 1 hour.  
 
 > [!NOTE] 
-> This feature is available in Public Preview as of Platform update 40.  It needs to be enabled in System administration/Feature management under (Preview) Enable session management for users. 
+> This feature is available in Public Preview as of version 10.0.16.  To enable this feature, go to the Feature management page and emable the **(Preview) Enable session management for users** feature. 
 
 To change the value, follow these steps: 
 
 1. Go to **System administration > Users > User session management** page. 
-2. Click on **+New**.  
-3. In the new row, click on the dropdown under the **User ID**.  
+2. Select **New**.  
+3. In the new row, select the dropdown in the **User ID** field.  
 4. In the user list, select a user. 
-5. In the **Maximum session length (hours)** column, enter an hour. 
+5. In the **Maximum session length (hours)** field, enter an hour. 
 6. Click on the **Save** button. 
 
 To update the user’s maximum session length: 
 
 1. Select the user you want to update by clicking on the row. 
-2. In the **Maximum session length (hours)** column, enter an hour. 
+2. In the **Maximum session length (hours)** field, enter an hour. 
 3. Click on the **Save** button. 
 
 To replace the user’s maximum session length with another user: 
 
 1. Select the user you want to update by clicking on the row. 
-2. In the **User ID** column, click on the dropdown and select another user. 
+2. In the **User ID** field, select the dropdown and select another user. 
 3. In the **Maximum session length (hours)** column, enter an hour. 
 4. Click on the **Save** button. 
  
