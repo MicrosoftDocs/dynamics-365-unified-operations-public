@@ -5,7 +5,7 @@ title: Batch and license plate confirmation
 description: This topic describes how to set up and apply batch and license plate confirmation from a mobile device.
 author: Mirzaab
 manager: tfehr
-ms.date: 05/26/2017
+ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
