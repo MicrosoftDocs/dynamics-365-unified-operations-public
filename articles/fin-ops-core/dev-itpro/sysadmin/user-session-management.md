@@ -2,10 +2,10 @@
 # required metadata
 
 title: User session management
-description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
+description: The user session setting represents the amount of time a user can be logged in before the user’s session expires.
 author: paulliew
 manager: AnnBe
-ms.date: 11/05/2020
+ms.date: 11/11/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.16
 [!include[banner](../includes/banner.md)]
 
 
-The user session setting represents the amount of time a user can be logged in before the user’s session expires. Once the user’s session expires, the user is required to log in with his/her credentials. 
+The user session setting represents the amount of time a user can be logged in before the user’s session expires. Once the user’s session expires, the user is required to log in with his or her credentials. 
 
 You can set the **Maximum session length** up to 2,160 hours (90 days) with a minimum of 1 hour.  
 
@@ -41,7 +41,7 @@ You can set the **Maximum session length** up to 2,160 hours (90 days) with a mi
 
 To change the value, follow these steps: 
 
-1. Go to **Navigation pane > Modules > System administration > Users > User session management** page. 
+1. Go to **System administration > Users > User session management** page. 
 2. Click on **+New**.  
 3. In the new row, click on the dropdown under the **User ID**.  
 4. In the user list, select a user. 
