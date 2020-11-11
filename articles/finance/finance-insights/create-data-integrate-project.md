@@ -64,7 +64,7 @@ This topic explains how to create a data integrator project.
 5. Open the [Power Apps environments](https://admin.powerapps.com/environments), and follow these steps:
 
 > [!NOTE]
-> If you do not see the required entities in CDS, please go to **Credit and collections > Setup > Finance Insights > Finance insights parameters**, enable Customer payment predictions feature and click on **Create prediction model** button. The deployment of AI model is successful or failed, the CDS entities needed to create integration will be deployed in CDS.  
+> If you do not see the required entities in CDS, please go to **Credit and collections > Setup > Finance Insights > Finance insights parameters**, enable Customer payment predictions feature and click on **Create prediction model** button. When the deployment of AI model is completed (successful or failed), the CDS entities needed to create integration will be deployed in CDS.  
 
     1. Create data integration projects for the following templates by using the connection set that you just created:
 
