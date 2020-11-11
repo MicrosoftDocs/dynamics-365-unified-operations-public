@@ -5,7 +5,7 @@ title: Authentication in Dynamics 365 Finance + Operations (on-premises)
 description: This topic provides background information about how the authentication process works so that if you have issues you can work to resolve them.
 author: faix
 manager: AnnBe
-ms.date: 10/27/2020
+ms.date: 11/11/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -84,7 +84,7 @@ You will also find the following sections.
 > The settings shown above represent a deployment configured with Microsoft 365 compatibility. For more information, see [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
 ## Configuration values used by the AOS
-The AOS uses the configuration values above to determine where to redirect an unauthenticated request when a user sends a request to the application URL:
+The AOS uses the configuration values above to determine where to redirect an unauthenticated request when a user sends a request to the application URL.
 
 1. Request is sent by the browser to the application URL (`https://ax.contoso.com/namespaces/AXSF/`).
 2. The request is processed by the Gateway and gets forwarded to an AOS node that accepts interactive sessions.
