@@ -5,7 +5,7 @@ title: Set the session inactivity timeout
 description: This topic describes how to set the session inactivity timeout.
 author: hasaid
 manager: AnnBe
-ms.date: 10/30/2020
+ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
