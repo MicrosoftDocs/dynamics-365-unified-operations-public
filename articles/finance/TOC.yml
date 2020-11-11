@@ -1796,6 +1796,8 @@
           href: localizations/tasks/de-00003-electronic-transmission-elster.md
         - name: VAT declaration for Germany
           href: localizations/emea-de-vat-declaration.md
+        - name: Customer electronic invoices report
+          href: localzations/emea-deu-e-invoices.md
         - name: Journal list report
           href: localizations/emea-deu-journal-list-report.md
         - name: Set up electronic tax declarations
