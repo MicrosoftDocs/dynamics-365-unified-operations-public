@@ -65,7 +65,7 @@ To configure email templates for specific modes of delivery in Commerce headquar
 1. In the new row, in the **Mode of delivery** field, select a mode of delivery.
 1. In the **Email ID** field, select the email template to map to the mode of delivery.
 1. Select the **Active** check box.
-1. Repeat steps 4 through 6 to add more modes of delivery.
+1. Repeat steps 4 through 7 to add more modes of delivery.
 1. When you've finished, select **OK**.
 
 > [!NOTE]
