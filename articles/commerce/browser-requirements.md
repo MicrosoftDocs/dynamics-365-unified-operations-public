@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: e-Commerce browser requirements
-description: This topic covers the browser requirements for the e-commerce site 
+title: Browser requirements for Dynamics 365 Commerce sites
+description: This topic covers the browser requirements for Dynamics 365 Commerce sites 
 author:  anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -29,19 +29,25 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# e-Commerce Browser Requirements
+# Browser requirements for Dynamics 365 Commerce sites
 
-The e-commerce site and its expereinces are best supported in the following web browsers:
+[!include [banner](includes/banner.md)]
 
-- Microsoft Edge (up to the current version minus 1)
-- Mozilla Firefox (up to the current version minus 1)
-- Google Chrome (up to the current version minus 1)
-- Safari (up to the current version minus 1)
+This topic covers the browser requirements for Dynamics 365 Commerce sites.
 
-To find the latest release for each web browser, go to the software manufacturer's website.
+Dynamics 365 Commerce sites are best supported using the following web browsers. To find the latest release for each web browser, go to the software manufacturer's website.
 
->[!Note]
->Microsoft Internet Explorer is not supported. When using Internet Explorer, some features may not work and the user may have a sub-par experience.
+- [Microsoft Edge](https://www.microsoft.com/edge) (up to the current version minus 1)
+- [Mozilla Firefox](https://www.mozilla.org/firefox/new) (up to the current version minus 1)
+- [Google Chrome](https://www.google.com/chrome) (up to the current version minus 1)
+- [Safari](https://support.apple.com/downloads/safari) (up to the current version minus 1)
+
+> [!NOTE]
+> Microsoft Internet Explorer is not supported. When using Internet Explorer, some features may not work and users may have a substandard experience.
+
+## Additional resources
+
+
 
 
 
