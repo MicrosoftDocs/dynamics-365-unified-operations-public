@@ -2691,6 +2691,8 @@
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Location product dimension mixing
           href: warehousing/location-product-dimension-mixing.md
+        - name: Putaway clusters
+          href: warehousing/putaway-clusters.md
         - name: Quality check
           href: warehousing/quality-check.md
       - name: Outbound warehouse operations
