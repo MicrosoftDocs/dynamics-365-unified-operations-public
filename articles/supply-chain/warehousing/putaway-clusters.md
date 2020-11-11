@@ -119,7 +119,7 @@ The putaway cluster profile determines where an item will go, based on the locat
 1. On the Action Pane, select **Save**, and close the page.
 
 > [!IMPORTANT]
-> Fields in the cluster profile that appear dimmed when *Generate cluster ID* is enabled are unavailable and won't be considered when this feature is used.
+> Fields in the cluster profile that appear dimmed when **Generate cluster ID** is set to *Yes* are unavailable and won't be considered when this feature is used.
 
 ### Mobile device menu items
 
@@ -127,7 +127,7 @@ Two new mobile device menu items are available for this feature. The **Receive a
 
 #### Receive and sort cluster
 
-Create a new mobile device menu item for receiving inventory and sorting into a cluster. This menu item will create inbound work after inventory is received. This indicates that the receiving menu item will be used for putaway clusters.
+Create a new mobile device menu item for receiving inventory and sorting into a cluster. This menu item will create inbound work after inventory is received, which indicates that the receiving menu item will be used for putaway clusters.
 
 > [!NOTE]
 > The **Receive and sort cluster** menu item can be used with the following receiving menu items:
