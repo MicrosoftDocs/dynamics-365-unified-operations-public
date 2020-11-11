@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuration for Finance Insights (preview)
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance Insights.
+title: Configuration for Finance insights (preview)
+description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/20/2020
@@ -29,12 +29,12 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Configuration for Finance Insights (preview)
+# Configuration for Finance insights (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights combines functionality from Microsoft Dynamics 365 Finance with Common Data Service, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance Insights.
+Finance insights combines functionality from Microsoft Dynamics 365 Finance with Common Data Service, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 
 ## Deploy Dynamics 365 Finance
 
@@ -46,7 +46,7 @@ Deploy the environments by following these steps.
 
 ## Configure Common Data Service
 
-You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided.
+You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided. Once the PowerShell script has finished running, it will give you values to use to configure Finance insights.
 
 # [Manual configuration steps](#tab/configuration-steps)
 
@@ -283,7 +283,7 @@ catch {
     2. Select the user's name.
     3. Copy the **Object ID** value, and enter it as the Common Data Service initial user object ID.
 
-### Use Azure Cloud Shell to set up Finance Insights Data Lake resources
+### Use Azure Cloud Shell to set up Finance insights Data Lake resources
 
 # [Use a Windows PowerShell script](#tab/use-a-powershell-script)
 
@@ -935,6 +935,10 @@ The add-in will be installed within a few minutes.
     | CDS Tenant ID (Directory ID from AAD)               | The tenant ID of the Common Data Service instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value. |
     | Provide user object ID who has system administrator role | The Azure AD user object ID of the user in Common Data Service. This user must be a system administrator of the Common Data Service instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value. |
     | Is this the default CDS environment for the tenant?      | If the Common Data Service instance was the first production instance that was created, select this check box. If the Common Data Service instance was manually created, clear this check box. |
+
+## Feedback and support
+
+Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.
 
 ## Privacy notice
 
