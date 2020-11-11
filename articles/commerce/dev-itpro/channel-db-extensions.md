@@ -181,6 +181,8 @@ In this scenario we will explain how to create a new table and add it to the cha
     [CLOSINGTIME] [int] NOT NULL DEFAULT ((0)),
     [RETAILSTORETABLE] [bigint] NOT NULL DEFAULT ((0)),
     [REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,
+    [ROWVERSION] [timestamp] NOT NULL,
+    [DATAAREAID] [nvarchar](4) NOT NULL,
     CONSTRAINT [I_CONTOSORETAILSTOREHOURSTABLE_RECID] PRIMARY KEY CLUSTERED
     (
         [RECID] ASC
@@ -193,7 +195,7 @@ In this scenario we will explain how to create a new table and add it to the cha
     GO
 
 > [!NOTE]
-> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
+> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), [ROWVERSION] [timestamp] NOT NULL and [DATAAREAID] [nvarchar](4) NOT NULL (required if the table data is per company). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 
@@ -214,7 +216,7 @@ GRANT INSERT ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
 GO
 GRANT DELETE ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
 GO
-GRANT UPDATE ON [ext\].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
+GRANT UPDATE ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
 GO
 GRANT SELECT ON [ext].[RETAILTRANSACTIONTABLE] TO [DataSyncUsersRole];
 GO
