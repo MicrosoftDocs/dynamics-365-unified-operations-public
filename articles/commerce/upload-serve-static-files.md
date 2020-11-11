@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic describes how to upload a static file into Microsoft Dynamics 365 Commerce site builder, and how to create a custom URL and file name that can be used to request that file.
 
-Some third-party connectors require that a file be hosted and served from the e-commerce site. This then serves as a callback URL. These connectors expect that the file will be returned by requests to a specific URL path and file name. Therefore, this topic explains how to upload and serve a static file that has a user-definable URL and file name on a Dynamics 365 Commerce e-commerce site.
+Some third-party connectors require that a file be hosted and served from the e-commerce site. These connectors expect that the file will be returned by requests to a specific callback URL path and file name. Therefore, this topic explains how to upload and serve a static file that has a user-definable URL and file name on a Dynamics 365 Commerce e-commerce site.
 
 ## Create a site URL that returns a static file
 
@@ -82,7 +82,7 @@ To update the asset type that a URL points to, follow these steps.
 
 1. Go to **URLs** for your site, and select the URL to update.
 1. In the properties pane on the right, select **Edit**.
-1. Under **URL assignment**, under **Step1**, select a different asset type.
+1. Under **URL assignment**, under **Step 1**, select a different asset type.
 1. Select the **Step 2** box, and then select the new asset.
 1. Select **Apply**.
 
