@@ -47,24 +47,24 @@ This topic also doesn't include information about how to deploy the payment web 
 A payment provider or a payment ISV creates a payment connector. The payment connector will include some or all of the following folders:
 
 > [!NOTE]
-> You can find these folders in ...\\RetailSDK\\PaymentExternals.
+> You can find these folders in \\RetailSDK\\PaymentExternals.
 
 - **IPaymentProcessor Assemblies** – This folder contains the assembly that implements the IPaymentProcessor interface, and its dependent assemblies.
 - **Payment Web Files** – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page. Payment connector developers will provide these web files if their payment accepting page requires them.
 - **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface and payment request handlers, and the interface's dependent assemblies. These assemblies are used in Hardware station and Modern Point of Sale (Modern POS) to communicate with payment terminal devices, such as VeriFone MX925. If you don't have a payment terminal device, you don't need these files.
 
-To package the payment connector files, copy the payment assemblies to the folder in ...\\RetailSDK\\PaymentExternals. After the payment assemblies are copied, use **msbuild** from the root of the Retail SDK folder to generate the deployable packages. After the **msbuild** operation is completed, you can find the deployable package in ...\\RetailSDK\\Packages\\RetailDeployablePackage.
+To package the payment connector files, copy the payment assemblies to the folder in \\RetailSDK\\PaymentExternals. After the payment assemblies are copied, use **msbuild** from the root of the Retail SDK folder to generate the deployable packages. After the **msbuild** operation is completed, you can find the deployable package in \\RetailSDK\\Packages\\RetailDeployablePackage.
 
-- **Retail deployable package** – This package includes payment plus all the other channel extension components. This package is this combined package for all extension components. RetailDeployablePackage includes the payment connectors in the below components:
+- **Retail deployable package** – This package includes payments plus all the other channel extension components. This is this combined package for all extension components. RetailDeployablePackage includes the payment connectors for the following components:
     
     - Commerce Scale Unit (CSU)
     - Self-service installer, which enables installation of the following:
         - Hardware station
         - Modern POS
-        - Commerce scale unit (Self-hosted).
+        - Commerce scale unit (self-hosted)
 
 > [!NOTE]
-> Releases earlier than 10.0.10 the RetailDeployablePackage can be deployed to both AOS and CSU, for later releases the RetailDeployablePackage can be deployed only to CSU, to deploy the payment connector to AOS application version 10.0.10 and later follow the [Create payment packaging for Application Explorer for self-service deployment](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/payment-connector-package) document.
+> In releases earlier than 10.0.10, the RetailDeployablePackage can be deployed to both AOS and CSU. For later releases, the RetailDeployablePackage can be deployed only to CSU. To deploy the payment connector to AOS application version 10.0.10 and later, follow the information in [Create payment packaging for Application Explorer for self-service deployment](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/payment-connector-package).
 
 ### Upload and deploy deployable packages
 
