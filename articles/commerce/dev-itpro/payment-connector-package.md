@@ -64,6 +64,10 @@ To create a payment package that you can deploy through self-service, follow the
     ![Add Reference dialog box](./media/Reference.png)
 
 8. If you don't have any other payment X++ extensions that are related to the payment connector, build the solution.
+
+> [!NOTE]
+> If you there is no other extensions package then continue with these steps, if you have additional extensions packages then combine all of them into  All-in-one deployable packages, if you didnt combine this package will override other packages. For more information see [All-in-one deployable packages document.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages)
+
 9. To create the deployable package, on the **Dynamics 365** menu, select **Deploy \> Create Deployment Package**.
 10. Select the model that you created earlier, specify the location of the package file, and then select **Create**.
 
