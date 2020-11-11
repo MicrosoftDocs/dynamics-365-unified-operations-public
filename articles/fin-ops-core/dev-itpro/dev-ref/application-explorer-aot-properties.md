@@ -6,7 +6,7 @@ description: This topic describes the properties that appear in the Properties w
 author: RobinARH
 manager: AnnBe
 ms.date: 11/03/2017
-ms.topic: reference
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 85213
 ms.assetid: ca186dda-8a78-4969-9be0-b81be00892e5

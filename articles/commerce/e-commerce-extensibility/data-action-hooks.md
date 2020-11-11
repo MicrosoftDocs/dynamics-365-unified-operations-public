@@ -5,7 +5,7 @@ title: Data action hooks
 description: This topic describes how to hook into pre- and post- data action events to further process data if needed.
 author: samjarawan
 manager: annbe
-ms.date: 06/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,10 +44,10 @@ The modules included with the Dynamics 365 Commerce software development kit (SD
 ## Supported data action hook events
 
 The following data action hook events are supported:
-- **preHook**: Runs before the action starts to modify the data action input. This is only applied to uncached data actions.
-- **preReadOnlyHook**: Runs before the action starts but cannot modify the data action input. This can be applied to both cached and uncached data actions.
-- **postHook**: Runs after the data action completes and can modify the data action output. This is only applied to uncached data actions.
-- **postReadOnlyHook**: Runs after the data action completes but cannot modify the data action output. This is supported on both cached and uncached data actions.
+- **preHook**: Runs before the action starts to modify the data action input. This event is only applied to uncached data actions.
+- **preReadOnlyHook**: Runs before the action starts but cannot modify the data action input. This event can be applied to both cached and uncached data actions.
+- **postHook**: Runs after the data action completes and can modify the data action output. This event is only applied to uncached data actions.
+- **postReadOnlyHook**: Runs after the data action completes but cannot modify the data action output. This event is supported on both cached and uncached data actions.
 
 ## Use data action hooks
 
@@ -106,3 +106,5 @@ createDataActionHook({
 [Share state across modules](share-state-across-modules.md)
 
 [Data action overrides](data-action-overrides.md)
+
+[Data action cache settings](data-action-cache-settings.md)

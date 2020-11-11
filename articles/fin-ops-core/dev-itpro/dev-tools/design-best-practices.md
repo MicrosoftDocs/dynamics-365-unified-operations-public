@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26421
 ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
@@ -104,6 +103,6 @@ A data entity should provide a holistic object that encapsulates the relevant bu
 
 -   Name the EntitySet in plural form. For example, the EntitySet for the **ReleasedProduct** EntityType is **ReleasedProducts**.
 
-
-
+### Number of columns in a data entity
+Note that Microsoft Excel based import/export supports a maximum of 255 columns. If it is expected for an entity to be able to export/import more than 255 columns, then a non-Excel format must be planned or the entity should have less than or equal to 255 columns.
 

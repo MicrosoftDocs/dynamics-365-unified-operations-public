@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (June 25, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for June 23, 2020.
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/25/2020
+ms.date: 06/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -93,7 +93,7 @@ Some organizations provide a benefit that allows employees to buy or sell their 
 
 ## Leave accrual for a single company or single plan
 
-Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity into the accrual process for customers with different leave years or leave accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity into the accrual process for customers with different leave years or leave accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md).
 
 ## Add attachments to time off requests
 
@@ -124,3 +124,10 @@ A new option will be available in **Human Resources parameters** to update the n
 ## Checklist entities included in Common Data Service
 
 Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within Common Data Service.
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)

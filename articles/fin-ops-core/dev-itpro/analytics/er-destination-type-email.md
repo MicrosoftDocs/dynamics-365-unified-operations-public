@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# <a name="EmailDestinationType">Email destination</a>
+# Email destination
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,7 +66,7 @@ If you enter a string value, such as `"DE-001"`, and save a formula, an email wi
 
 [![ER formula designer page](./media/ER_Destinations-EmailDefineAddressSourceFormula.png)](./media/ER_Destinations-EmailDefineAddressSourceFormula.png)
 
-[![Configure email source account](./media/ER_Destinations-EmailDefineAddressSourceAttributes.png)](./media/ER_Destinations-EmailDefineAddressSourceAttributes.png)
+[![Configure email source attributes account](./media/ER_Destinations-EmailDefineAddressSourceAttributes.png)](./media/ER_Destinations-EmailDefineAddressSourceAttributes.png)
 
 
 

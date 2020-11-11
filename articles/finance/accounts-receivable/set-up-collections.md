@@ -101,7 +101,7 @@ You can use email to communicate with both customers and salespeople about colle
 ### Set up email and address settings for collections customer contacts
 Set up email addresses for customer contacts to send email messages to those contacts from the **Collections** page. The collections contact is used as the default contact on the **Collections** page. You can set up a statement address for a customer if statements should use an address other than the primary address. 
 
-On the **Credit and Collections** FastTab for a customer, in the **Collections contact** field, select the person in the customer organization who works with your collections agent. This person is used as the default contact on the **Collections** page, and email messages are sent to him or her. 
+On the **Credit and Collections** FastTab for a customer, in the **Collections contact** field, select the person in the customer organization who works with your collections agent. This person is used as the default contact on the **Collections** page, and email messages are sent to them. 
 
 > [!NOTE] 
 > If a collections contact isn't specified for a customer, the primary contact for the customer is used. If a primary contact isn't specified, email messages are sent to the first address that is listed on the **Contacts** page.

@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 263824
 ms.search.region: Italy
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

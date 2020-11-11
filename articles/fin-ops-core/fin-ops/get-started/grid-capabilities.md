@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 10/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Platform update 33
 # Grid capabilities
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The new grid control provides a number of useful and powerful capabilities that can be used to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
 -  Calculating totals
--  Grouping data
 -  Typing ahead of the system
 -  Evaluating math expressions 
+-  Grouping tabular data (enabled separately using the **(Preview) Grouping in grids** feature)
+-  Pinned system columns
 
 ## Calculating totals
 In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. These totals are shown in a footer section at the bottom of the grid. 
@@ -75,21 +75,6 @@ If the calculation is taking too long, you can cancel the operation by selecting
 
 Totals will update automatically as you update, delete, or create rows in the dataset.  
 
-## Grouping data
-Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping** capability in tabular grids allows users to organize their data in interesting ways within Finance and Operations apps. As this feature extends the **Totals** feature, **Grouping** also allows you to get meaningful insights into the data by providing subtotals at the group level.
-
-To use this feature, right-click on the column you wish to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new Group by column to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
--  Data value for the group 
--  Column label (This information will be especially useful after multiple levels of grouping are supported.)
--  Number of data rows in this group
--  Subtotals for any column configured to show totals
-
-With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.  
-
-If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported in version 10.0.9 with Platform update 33.
-
-To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
-
 ## Typing ahead of the system
 In many business scenarios, the ability to quickly enter data into the system is very important. Before the new grid control was introduced, users could change data only in the current row. Before they could create a new row or switch to a different row, they were forced to wait for the system to successfully validate any changes. In an attempt to reduce the amount of time that users wait for these validations to be completed, and to improve user productivity, the new grid adjusts these validations so that they are asynchronous. Therefore, the user can move to other rows to make changes while previous row validations are pending. 
 
@@ -113,13 +98,44 @@ As a productivity booster, users can enter mathematical formulas in numeric cell
 
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
+## Grouping tabular data
+[!include [preview banner](../includes/preview-banner.md)]
+
+Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **(Preview) Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within Finance and Operations apps. Because this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
+
+To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by column** to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
+-  Data value for the group 
+-  Column name (This information will be especially useful after multiple levels of grouping are supported.)  
+-  Number of data rows in this group
+-  Subtotals for any column configured to show totals
+
+With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.  
+
+If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported as of version 10.0.9/Platform update 33.
+
+To undo grouping in a grid, right-click the grouping column and select **Ungroup**.  
+
+### Expanding and collapsing groups
+The initial grouping of data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron (>) button in the corresponding group header row. Note that the expand/collapse state of individual groups is **not** saved in personalization.
+
+### Selecting and unselecting rows at the group level
+In the same way that you can select (or unselect) all rows in the grid by selecting the check box at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by selecting the check box in the corresponding group header row. The check box in the group header row will always reflect the current selection state of rows in that group, regardless if all rows are selected, no rows are selected, or only some rows are selected.
+
+### Hiding column names
+When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
+
+## Pinned system columns
+The row selection column and row status column in the new grid are pinned, or frozen, on the leftmost part of the grid. Therefore, when these columns are included in a grid, they will always be visible to the user, regardless of the horizontal scroll position in the grid.   
+
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
 
 **10.0.9 / Platform update 33 and later**
+
 The **New grid control** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8 / Platform update 32 and 10.0.7 / Platform update 31**
+
 The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes by following the steps below.
 
 1.	**Enable the flight**: Execute the following SQL statement: 
@@ -134,20 +150,67 @@ The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 
 
 All subsequent user sessions will start with the new grid control enabled.
 
+## [Developer] Opting out individual pages from using the new grid 
+If your organization discovers a page that has some issues utilizing the new grid, an API is available starting in version 10.0.13/Platform update 37 to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the `run()` method for the form.
+
+ ```this.forceLegacyGrid();```
+
+This API will be honored until the October 2021 release, when the new grid control becomes mandatory. If any issues require that this API be used, report them to Microsoft.
+
+## [Developer] Size-to-available-width columns
+If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.  
+
 ## Known issues
 This section maintains a list of known issues for the new grid control while the feature is in a preview state.  
 
 ### Open issues
+-  After enabling the **New grid control** feature, some pages will continue to utilize the existing grid control. This will happen in the following situations:  
+    -  A card list exists on the page that is rendered in multiple columns.
+    -  A grouped card list exists on the page.
+    -  A grid column with a non-react extensible control.
 
-- Card lists that were rendered as multiple columns are now rendered as a single column.
-- Grouped lists aren't rendered as groups or in separate columns.
+    When a user first encounters one of these situations, a message will display about refreshing the page. After this message appears, the page will continue to utilize the existing grid for all users until the next product version update. Better handling of these scenarios, so that the new grid can be utilized, will be considered for a future update.    
+    
+-  [KB 4582758] Records are blurry when you change zoom from 100 to any other percentage
+    
+### Fixed as part of 10.0.15    
+
+-  [KB 4582723]  Display options not showing when done later in the form life cycle
+
+### Fixed as part of 10.0.14
+
+-  (Quality update) [KB 4584752] Unexpected client error with Project invoice proposals page
 
 ### Fixed as part of 10.0.13
 
-> [!NOTE]
-> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Tooltips aren't shown for images.
+-  (Quality update) [KB 4583880] Regression Suite Automation Tool (RSAT) tests fail on OpenLookup action with "Cannot read property RowIndex of undefined"
+-  (Quality update) [KB 4583847] Unexpected client error when navigating through lookups 
+-  (Quality update) [Bug 471777] Cannot select fields in a grid to edit or create a mobile app
+-  [Bug 474851] Hyperlinks in reference group controls don't work 
+-  [Bug 474848] Enhanced previews with grids do not display
+-  [KB 4582726] The RotateSign property isn't being respected  
+-  [Bug 470173] Check boxes in inactive rows toggle when the whitespace in the cell is clicked
+-  [Bug 474848] Enhanced previews with grids do not display
+-  [Bug 474851] Hyperlinks in reference group controls don't work 
+-  [Bug 471777] Cannot select fields in a grid to edit or create a mobile app
+-  [KB 4569441] Issues with rendering multi-column card lists, tooltips on images, and display options on some fields
+-  [KB 4575279] Not all marked rows are deleted in General Journal
+-  [KB 4575233] Display options are not restored after moving to another row
+-  [Bug 477884] Lookups return wrong value/record if new grid control is activated
+-  [KB 4571095] Product receipt posting occurs when accidentally pressing Enter (correct handling of a page's default action)
+-  [KB 4575437] Lookups with editable controls close unexpectedly
+-  [KB 4569418] Duplicate line created in delivery schedule form
+-  [KB 4575435] Enhanced preview sometimes persists even when the mouse pointer isn't near the field
+-  [KB 4575434] Lookup isn't filtering when the field has been modified
+-  [KB 4575430] Values in password fields aren't masked in the grid
+-  [KB 4569438] "Processing has stopped because of a validation issue" displays after marking lines while settling supplier transactions
+-  [KB 4569434] Refreshing the Legal entities form results in fewer records
+-  [KB 4575297] Focus keeps moving to the task recorder pane when editing and tabbing through a grid
+-  [KB 4566773] Correction transactions not showing as negative on voucher transactions inquiry 
+-  [KB 4575288] Focus resets to the active row when selecting the border between rows in a simple list
+-  [KB 4575287] Focus doesn't return to the first column when using the down arrow to create a new row in journals
+-  [KB 4564819] Cannot delete lines in a free text invoice (because the datasource ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Tooltips/enhanced previews aren't shown for images
 
 ### Fixed as part of 10.0.12
 
@@ -164,6 +227,7 @@ This section maintains a list of known issues for the new grid control while the
 - [KB 4562647] Focus is reset to the first control in the **Publish** dialog box after a new row is added in the security roles grid.
 - [KB 4563310] The enhanced preview isn't closed after a row is changed.
 - [KB 4563313] An "unexpected client error" occurs in Internet Explorer when a value is selected in a lookup.
+- [KB 4564557] Lookups and drop-down menus won't open in Internet Explorer
 - [KB 4563324] Navigation doesn't work after the **Personnel management** workspace is opened.
 
 ### Fixed as part of 10.0.11
@@ -182,7 +246,7 @@ This section maintains a list of known issues for the new grid control while the
 - [KB 4558383] Controls outside the grid aren't updated after the last record is deleted.
 - [KB 4558587] Reference groups that have combo boxes for replacement fields don't show values.
 - [KB 4562143] Fields aren't updated after a row change / Grid processing becomes stuck after row deletion.
-- [KB 4562645] An exception occurs when a lookup is opened while Remote Server Administration Tools (RSAT) tests are running.
+- [KB 4562645] An exception occurs when a lookup is opened while Regression Suite Automation Tool (RSAT) tests are running.
 
 ### Fixed as part of 10.0.10
 

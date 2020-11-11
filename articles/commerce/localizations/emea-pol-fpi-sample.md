@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations, Retail
 # ms.custom: 
 ms.search.region: Poland
 ms.search.industry: Retail
-ms.author: v-dmpere
+ms.author: josaw
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
 

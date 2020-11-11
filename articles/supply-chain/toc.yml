@@ -16,6 +16,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: One Version service updates FAQ
           href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Manage updates and the custom code lifecyle, including Dynamics 365 Commerce
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
         - name: Software lifecycle policy - Cloud
           href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
         - name: Software lifecycle policy - On-premises
@@ -70,12 +72,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.12 (August 2020)
-            href: get-started/whats-new-scm-10-0-12.md
-          - name: Supply Chain Management 10.0.11 (July 2020)
-            href: get-started/whats-new-scm-10-0-11.md
-          - name: Supply Chain Management 10.0.10 (May 2020)
-            href: get-started/whats-new-scm-10-0-10.md
+          - name: Supply Chain Management 10.0.15 (December 2020)
+            href: get-started/whats-new-scm-10-0-15.md
+          - name: Supply Chain Management 10.0.14 (November 2020)
+            href: get-started/whats-new-scm-10-0-14.md
+          - name: Supply Chain Management 10.0.13 (October 2020)
+            href: get-started/whats-new-scm-10-0-13.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -109,23 +111,23 @@
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business decision makers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
         - name: Business users
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-business-user.md
         - name: Implementation project managers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-project-manager.md
         - name: Administrators
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-administrator.md
         - name: Developers
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-developer.md
         - name: Partner sales and marketing
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-partner-sales.md
         - name: Functional consultants
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-functional-consultant.md
         - name: Solution architects
-          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -158,7 +160,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Embed PowerApps apps
+        - name: Embed canvas apps from Power Apps 
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -194,6 +196,8 @@
           href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Move LCS implementation projects to different Azure AD tenants
           href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json 
+        - name: Move LCS implementation projects from on-premises to cloud
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
     - name: Globalization
@@ -202,6 +206,10 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
       - name: Regulatory updates
         href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+      - name: India
+        items: 
+        - name: Stock transfer orders
+          href: ../finance/localizations/apac-ind-stock-transfer.md    
       - name: Russia
         items: 
         - name: Russia overview
@@ -333,7 +341,7 @@
           href: asset-management/work-orders/automatic-update-of-asset-counters.md
         - name: Maintenance checklists
           href: asset-management/work-orders/maintenance-checklists.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime for work orders
           href: asset-management/work-orders/maintenance-downtime.md
         - name: Add fault to work order
           href: asset-management/work-orders/add-fault-to-work-order.md
@@ -367,7 +375,7 @@
           href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
         - name: Create work orders
           href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-        - name: Maintenance downtime
+        - name: Maintenance downtime activities
           href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
       - name: Capacity planning
         items:
@@ -627,19 +635,21 @@
           href: cost-management/amortize-constant-costs-manufactured-item.md
       - name: Cost management Power BI content pack
         href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+      - name: Troubleshoot cost management
+        href: cost-management/troubleshoot-costmanagement.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-      - name: Personalization options with PowerBI.com
+      - name: Personalization options with Power BI
         items:
-        - name: Features available through PowerBI.com integration
+        - name: Features available through the Power BI integration
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Pin PowerBI.com content
+        - name: Pin Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Select analytical workspaces from PowerBI.com
+        - name: Select analytical workspaces from Power BI
           href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
       - name: Power BI content
         items:
@@ -1257,6 +1267,8 @@
         items:
         - name: Inventory journals
           href: inventory/inventory-journals.md
+        - name: Inventory journal approval workflows
+          href: inventory/inventory-journal-workflow.md
         - name: Inventory locations
           href: inventory/inventory-locations.md
         - name: Inventory statuses
@@ -1267,6 +1279,8 @@
           href: inventory/tasks/maintain-barcode-types.md
         - name: Check the availability of stock
           href: inventory/tasks/check-availability-stock.md
+        - name: Inventory on-hand list
+          href: inventory/inventory-on-hand-list.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
         - name: Transfer physical inventory within the warehouse
@@ -1337,12 +1351,12 @@
       items:
       - name: Master planning home page
         href: master-planning/master-planning-home-page.md
+      - name: Migration to Planning Optimization for master planning
+        href: master-planning/new-master-planning-engine.md
       - name: Planning Optimization
         items:
         - name: Planning Optimization overview
           href: master-planning/planning-optimization/planning-optimization-overview.md
-        - name: Planning with negative on-hand quantities
-          href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
@@ -1351,16 +1365,22 @@
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
-        - name: View plan history and planning logs
-          href: master-planning/planning-optimization/plan-history-logs.md
+        - name: Safety margins
+          href: master-planning/planning-optimization/safety-margins.md
+        - name: Approve planned orders
+          href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+        - name: Planning with negative on-hand quantities
+          href: master-planning/planning-optimization/negative-on-hand.md 
+        - name: View plan history and planning logs
+          href: master-planning/planning-optimization/plan-history-logs.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Planning Optimization extensibility
-          href: master-planning/planning-optimization/extensibility.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+        - name: Planning Optimization extensibility
+          href: master-planning/planning-optimization/extensibility.md
       - name: Master plans
         items:
         - name: Master plans overview
@@ -1399,6 +1419,8 @@
           href: master-planning/supply-chain-calendars-master-planning.md
         - name: Improve master planning performance
           href: master-planning/master-planning-performance.md
+        - name: Improve scheduling engine performance
+          href: master-planning/scheduling-engine-performance.md
         - name: Master plans and multisite functionality
           items:
           - name: Master planning and multisite functionality overview
@@ -1647,6 +1669,8 @@
         href: procurement/procurement-sourcing-overview.md
       - name: Procurement and sourcing workflow
         href: procurement/procurement-sourcing-workflows.md
+      - name: Troubleshoot procurement and sourcing workflows
+        href: procurement/troubleshoot-procurementworkflows.md
       - name: Procurement catalogs
         items:
         - name: Procurement catalogs overview
@@ -1687,6 +1711,8 @@
           href: procurement/purchase-order-mobile-workspace.md
         - name: Record the receipt of goods on the purchase order
           href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+        - name: Troubleshoot purchase orders
+          href: procurement/troubleshoot-purchaseorders.md
       - name: Purchase order creation
         items:
         - name: Create purchase orders manually
@@ -1715,8 +1741,12 @@
           href: procurement/purchase-agreements.md
         - name: Create a purchase agreement
           href: procurement/tasks/create-purchase-agreement.md
+        - name: Automatic allocation of charges
+          href: procurement/automatic-charges-allocation.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
+        - name: Troubleshoot prices, discounts, agreements, and rebates
+          href: procurement/troubleshooting-pricediscountagreements.md
       - name: Purchasing policies
         items:
         - name: Purchasing policies overview
@@ -1731,6 +1761,8 @@
           href: procurement/product-receipt-against-purchase-orders.md
         - name: Overview of vendor invoices
           href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Troubleshoot product receipts and invoicing
+          href: procurement/troubleshooting-productreceiptinvoicing.md
       - name: Vendor management and collaboration
         items:
         - name: Set up and maintain vendor collaboration
@@ -1755,9 +1787,11 @@
           href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
         - name: Import vendor catalogs
           href: procurement/vendor-catalogs-import.md
-        - name: Set up an external catalog for PunchOut eProcurement
+        - name: Set up an external catalog for PunchOut e-procurement
           href: procurement/set-up-external-catalog-for-punchout.md
-        - name: Use external catalogs for PunchOut eProcurement
+        - name: Purchasing cXML enhancements
+          href: procurement/purchasing-cxml-enhancements.md
+        - name: Use external catalogs for PunchOut e-procurement
           href: procurement/use-external-catalogs-for-punchout.md
         - name: Vendor collaboration mobile workspace
           href: procurement/vendor-collaboration-mobile-workspace.md
@@ -1831,6 +1865,20 @@
           href: pim/tasks/create-batch-attributes-product.md
         - name: Add an image to a product
           href: pim/tasks/add-image-product.md
+        - name: Country of origin
+          href: pim/country-of-origin.md
+        - name: Dual-use goods
+          href: pim/dual-use.md
+        - name: Hazardous materials
+          items:
+          - name: Hazardous materials overview
+            href: pim/hazmat-overview.md
+          - name: Set up hazardous materials
+            href: pim/hazmat-setup.md
+          - name: Hazardous materials in products, orders, shipments, and loads
+            href: pim/hazmat-items.md
+          - name: Hazardous materials inquiries and reports
+            href: pim/hazmat-reports.md
         - name: Translation of product information FAQ
           href: pim/translations-product-related-information.md
         - name: Search for product during order entry
@@ -1907,10 +1955,38 @@
             href: pim/tasks/maintain-bom-product-configuration-model.md
           - name: Maintain a route for a product model
             href: pim/tasks/maintain-route-product-model.md
+          - name: Attribute-based sales prices for constraint-based product configuration
+            href: pim/attribute-based-product-configurator.md
           - name: Approve a product configuration model
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
+    - name: Engineering change management
+      items:
+      - name: Engineering change management overview
+        href: engineering-change-management/product-engineering-overview.md
+      - name: Engineering change management feature walkthrough
+        href: engineering-change-management/engineering-scenarios.md
+      - name: Engineering change management parameters
+        href: engineering-change-management/engineering-parameters.md
+      - name: Establish common values for engineering change management
+        href: engineering-change-management/engineering-change-management-setup.md
+      - name: Engineering organizations and data ownership rules
+        href: engineering-change-management/engineering-org-data-ownership-rules.md
+      - name: Product owner
+        href: engineering-change-management/product-owner.md
+      - name: Engineering attributes and engineering attribute search
+        href: engineering-change-management/engineering-attributes-and-search.md
+      - name: Engineering versions and engineering product categories
+        href: engineering-change-management/engineering-versions-product-category.md
+      - name: Product lifecycle state and transactions
+        href: engineering-change-management/product-lifecycle-state-transactions.md
+      - name: Manage changes to engineering products
+        href: engineering-change-management/engineering-change-management.md
+      - name: Product readiness
+        href: engineering-change-management/product-readiness.md
+      - name: Release product structure
+        href: engineering-change-management/release-product-structure.md
     - name: Production control
       items:
       - name: Production process overview
@@ -1947,7 +2023,7 @@
             href: production-control/tasks/define-resource-capabilities.md
           - name: Routes and operations
             href: production-control/routes-operations.md
-          - name: Warehouse work policies
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
           - name: Create working time scheduling properties
             href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -1999,10 +2075,20 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
+          - name: Set up and use the production floor execution interface
+            items:
+            - name: Configure the production floor execution interface
+              href: production-control/production-floor-execution-configure.md
+            - name: Set up a device to run the production floor execution interface
+              href: production-control/production-floor-execution-setup.md
+            - name: How workers use the production floor execution interface
+              href: production-control/production-floor-execution-use.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md
+          - name: Provide mixed-reality Guides for workers in production
+            href: production-control/instruction-guides-in-production-overview.md
           - name: Reverse the production order status
             href: production-control/reverse-production-order-status.md
           - name: Visibility into material exceptions
@@ -2231,6 +2317,8 @@
           href: sales-marketing/tasks/ship-orders-direct-deliveries.md
         - name: Ship sales orders without warehousing
           href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+        - name: Automatic allocation of charges
+          href: procurement/automatic-charges-allocation.md
         - name: Create a purchase order from a sales order
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
@@ -2239,6 +2327,8 @@
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
           href: sales-marketing/tasks/confirm-sales-orders.md
+        - name: Troubleshoot sales orders
+          href: sales-marketing/troubleshooting-sales.md
       - name: Sales agreements
         items:
         - name: Sales agreements overview
@@ -2261,6 +2351,8 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
+        - name: Troubleshoot sales quotations
+          href: sales-marketing/troubleshooting-salesquotation.md
       - name: Returns
         items:
         - name: Sales returns
@@ -2529,6 +2621,8 @@
         href: transportation/create-new-transportation-management-engine.md
       - name: Associate a fuel index with a carrier as an accessorial charge
         href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+      - name: USMCA certification of origin
+        href: transportation/usmca-certification-of-origin.md
       - name: Create a bill of lading
         href: transportation/create-bill-of-lading.md
       - name: Plan freight transportation routes
@@ -2547,6 +2641,18 @@
         href: transportation/reconcile-freight-transportation-management.md
       - name: Register driver check-in and check-out for an appointment
         href: transportation/tasks/register-driver-check-check-out-appointment.md
+      - name: Discounts
+        href: transportation/transportation-management-discount.md
+      - name: Miscellaneous charges
+        href: transportation/transportation-management-misc-charge.md
+      - name: Modes and methods
+        href: transportation/transportation-management-modes-methods.md
+      - name: Number sequences
+        href: transportation/transportation-management-number-sequence.md
+      - name: Status
+        href: transportation/transportation-management-status.md
+      - name: Zone master
+        href: transportation/transportation-management-zone-master.md
       - name: Set up a carrier fuel index
         href: transportation/tasks/set-up-carrier-fuel-index.md
       - name: Set up a transportation tender
@@ -2587,6 +2693,8 @@
           href: warehousing/location-product-dimension-mixing.md
         - name: Putaway clusters
           href: warehousing/putaway-clusters.md
+        - name: Quality check
+          href: warehousing/quality-check.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
@@ -2603,12 +2711,18 @@
           items:
           - name: Set up cluster picking
             href: warehousing/set-up-cluster-picking.md
+          - name: Cluster position full
+            href: warehousing/cluster-position-full.md
+          - name: System-directed cluster picking
+            href: warehousing/system-directed-cluster-pick.md
           - name: Set up containerization
             href: warehousing/tasks/set-up-containerization.md
           - name: Batch and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
           - name: Enable license plate label printing
             href: warehousing/tasks/license-plate-label-printing.md
+          - name: Create transfer orders from the warehouse app
+            href: warehousing/create-transfer-order-from-warehouse-app.md
           - name: Piece picking confirmation
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
@@ -2619,14 +2733,18 @@
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: Cancel warehouse work for exception handling
             href: warehousing/cancel-warehouse-work.md
-          - name: System-directed cluster picking
-            href: warehousing/system-directed-cluster-pick.md
           - name: System-directed work sequencing
             href: warehousing/system-directed-work-sequencing.md
           - name: Pick line grouping
-            href: warehousing/pick-line-grouping.md 
+            href: warehousing/pick-line-grouping.md
           - name: Warehouse slotting
-            href: warehousing/warehouse-slotting.md 
+            href: warehousing/warehouse-slotting.md
+          - name: Location directive inventory picking aging
+            href: warehousing/location-directive-inventory-picking-aging.md
+          - name: Outbound sorting
+            href: warehousing/outbound-sorting.md
+          - name: Put to wall - put to store
+            href: warehousing/put-to-wall-put-to-store.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -2639,10 +2757,14 @@
             href: warehousing/tasks/set-up-min-max-replenishment-process.md
           - name: Zone threshold replenishment
             href: warehousing/zone-threshold-replenishment.md
+          - name: Replenishment over location capacity
+            href: warehousing/replenishment-over-location-capacity.md
         - name: Load building and shipments
           items:
           - name: Confirm and transfer
             href: warehousing/confirm-and-transfer.md
+          - name: Confirm outbound shipments from batch jobs
+            href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
           - name: Advanced load building during wave
             href: warehousing/advanced-load-building-during-wave.md
           - name: Release to warehouse rule
@@ -2671,10 +2793,8 @@
         items:
         - name: Warehouse work policies
           items:
-          - name: Warehouse work policies overview
+          - name: Work policies
             href: warehousing/warehouse-work-policies.md
-          - name: Set up warehouse work policies
-            href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
           - name: Movement of inventory with associated work in Warehouse management
             href: warehousing/move-inventory-associated-work.md
           - name: Create a work class
@@ -2707,7 +2827,7 @@
             href: warehousing/tasks/define-partial-location-cycle-counting-process.md
           - name: Warehouse management on-hand entries cleanup job
             href: warehousing/onhand-cleanup.md
-          - name: Inventory journal
+          - name: Inventory journals
             href: inventory/inventory-journals.md
           - name: Inventory location
             href: inventory/inventory-locations.md
@@ -2721,6 +2841,12 @@
             href: warehousing/work-line-details.md
           - name: Location license plate positioning
             href: warehousing/location-license-plate-positioning.md
+          - name: Change work pool on work
+            href: warehousing/change-work-pool-on-work.md
+          - name: Item consolidation - location utilization
+            href: warehousing/item-consolidation-location-utilization.md
+          - name: Work split
+            href: warehousing/work-split.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
@@ -2731,6 +2857,8 @@
             href: inventory/warehouse-template.md
           - name: Control work by using work templates and location directives
             href: warehousing/control-warehouse-location-directives.md
+          - name: Create location directives
+            href: warehousing/create-location-directive.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
@@ -2769,18 +2897,22 @@
           items:
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
+          - name: Scan bar codes using a camera in the warehouse app
+            href: warehousing/scan-bar-codes-using-a-camera.md
           - name: Configure field names in warehouse app
             href: warehousing/configure-app-field-names-priorities-warehouse.md
           - name: Set up mobile devices for warehouse work
             href: warehousing/configure-mobile-devices-warehouse.md
-          - name: Scan bar codes using a camera in the warehouse app
-            href: warehousing/scan-bar-codes-using-a-camera.md
+          - name: Warehouse app event processing
+            href: warehousing/warehouse-app-events.md
           - name: License plate receiving with the warehouse app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
             href: warehousing/tasks/set-up-mobile-device-menu.md
           - name: Set up a mobile device menu item to register received items
             href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+          - name: Set up a mobile device menu item to provide a pick line overview
+            href: warehousing/pick-line-overview.md
           - name: Create a mobile device menu item for license plate consolidation
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
@@ -2791,6 +2923,8 @@
             href: warehousing/pick-oldest-batch.md
           - name: Process guide framework
             href: warehousing/process-guide-framework.md
+          - name: Troubleshoot warehouse app connection issues
+            href: warehousing/troubleshoot-warehouse-app-connection.md
         - name: Upgrade and migration
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
@@ -2801,6 +2935,8 @@
         href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
       - name: Create a new transportation management engine
         href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+      - name: Extend inventory on-hand data entities
+        href: inventory/extend-on-hand-entities.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

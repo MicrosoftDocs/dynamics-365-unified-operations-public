@@ -58,6 +58,8 @@ export default (props: IProductFeatureViewProps) => {
 
 ## Additional resources
 
+[Modules overview](modules-overview.md)
+
 [Module definition file](module-definition-file.md)
 
 [Module React component file](module-react-file.md)

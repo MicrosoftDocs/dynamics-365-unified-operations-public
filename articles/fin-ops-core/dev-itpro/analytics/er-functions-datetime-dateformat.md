@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="DATEFORMAT">DATEFORMAT ER function</a>
+# DATEFORMAT ER function
 
 [!include [banner](../includes/banner.md)]
 

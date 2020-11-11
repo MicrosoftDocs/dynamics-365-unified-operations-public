@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="SPLITLIST">SPLITLIST ER function</a>
+# SPLITLIST ER function
 
 [!include [banner](../includes/banner.md)]
 

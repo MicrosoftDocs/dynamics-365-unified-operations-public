@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
 
@@ -48,48 +48,50 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Planned release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------|
-|      Brazil         |   April 2020 - January 2020      | 10.0.10, 10.0.9HF      |   DRCST SC – Ordinance SEF Nº 416    |
-|      Brazil         |   April 2020      | 10.0.10      |   SPED Contribuições (PIS/COFINS) - Blocks M115 and M515    |
-|      Brazil         |   April 2020      | 10.0.10      |   Sped Contributions - Record C100 and D100 updates when the credit is not recoverable    |
-|      Brazil         |   April 2020  - January 2020     | 10.0.10, 10.0.9HF      |   SPED Contribution - Layout for Jan-2020    |
-|      Brazil         |   March 2020       | 10.0.9      |   Sped fiscal - changes in record D100 field COD_MUN_ORI    |
-|      Brazil         |   March 2020 - January 2020       | 10.0.9      |   DRCST SC – Ordinance SEF Nº 254/19    |
-|      Brazil         |   March 2020 - January 2020       | 10.0.9      |   Sped Fiscal Layout 014 |
-|      Brazil         |   March 2020 - January 2020       | 10.0.9      |   DRCST SC – Ordinance SEF Nº 343DR   |
-|      Brazil         |   May 2020 - March 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD layout 8   |
-|      Brazil         |   May 2020 - April 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   Technical note NT2019.001 v1.40   |
-|      Brazil         |   May 2020      | 10.0.12, 10.0.11HF, 10.0.10HF,      |   ADCR ICMS-ST statement for Parana state   |
+|      Austria         |   September 2020      | 10.0.15      |   VAT declaration format U30 has been updated for 2020 reporting   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Reverse charge   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Invoice issue deadline (GCC)   |
+|      Bahrain         |   July 2020      | 10.0.12      |   VAT declaration for Bahrain   |
+|      Bahrain         |   July 2020      | 10.0.12      |   Sales invoices for Bahrain   |
+|      Brazil         |   August 2020      | 10.0.14, 10.0.13, 10.0.12      |   ADRCST declaration PR   |
+|      Brazil         |   March 2020      | 10.0.11      |   SPED ECD layout 8   |
+|      Brazil         |   April 2020      | 10.0.11      |   Technical note NT2019.001 v1.40   |
+|      Brazil         |   May 2020      | 10.0.12, 10.0.11HF      |   ADCR ICMS-ST statement for Parana state   |
+|      Brazil         |   July 2020 - May 2020      | 10.0.13, 10.0.12, 10.0.11      |   SPED ECF layout 6   |
+|      Brazil         |   July 2020      | 10.0.13, 10.0.12HF      |   SPED Fiscal - Record C176 - RS state   |
+|      Czech Republic      |   July 2020      | 10.0.13      |   VAT control statement changes in XML schema (invoice listing)   |
+|      Czech Republic         |   July 2020      | 10.0.13      |   VAT declaration in XML, VAT declaration preview in Excel, and VAT control statement XML formats based on Tax declaration model   |
 |      Estonia         |   May 2020       | 10.0.11      |   Electronic invoicing in Estonia: customers invoices export in Estonian specific format version 1.2.  |
-|      France         |   April 2020       | 10.0.10      |   Legal fees declaration to tax authorities for self-employed people (DAS2)    |
-|      France         |   March 2020       | 10.0.9      |   French localization: ISO 20022 format for international payment and treasury transfer    |
+|      Europe        |   August 2020       | 10.0.14      |   Transfer Partner VAT ID to Intrastat  |
+|      Finland         |   July 2020       | 10.0.13      |   Support of electronic invoices for Finland  |
 |      Germany         |   May 2020       | 10.0.12      |   Germany - Retail - Cash register requirements    |
-|      Hungary         |   May 2020 - March 2020       | 10.0.11, 10.0.10, 10.0.9HF     |   Online invoicing system v.2.0 on Finance and Operations    |
-|      India         |   March 2020      | 10.0.9      |   New GSTR (ANX-1 & ANX-2) Return offline Tool    |
+|      Hungary         |   March 2020       | 10.0.11     |   Online invoicing system v.2.0 in Finance and Operations    |
+|      India         |   August 2020, July 2020      | 10.0.3, 10.0.12HF      |   TCS on Sales of Goods as per section 206C (1H) - Threshold as per PAN based accumulation of transactions.  |
+|      India         |   August 2020, June 2020      | 10.0.13, 10.0.12HF      |   Credit/Debit note against export Invoice  |
+|      India         |   August 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Electronic Invoice under GST  |
+|      India         |   May 2020      | 10.0.13, 10.0.12      |   New GSTR-1 and GSTR-2 return format  |
+|      India         |   July 2020      | 10.0.13      |   New GSTR (ANX-1 & ANX-2)  offline Tool (Beta version)  |
 |      India         |   May 2020      | 10.0.12      |   Improvements in unit price and cost price handling in Stock transfer orders  |
-|      Italy         |   March 2020      | 10.0.9      |   Retail - Managing customer information in POS |
-|      Italy         |   March 2020      | 10.0.9      |   Retail - Printing customer information in fiscal receipt |
-|      Italy         |   May 2020      | 10.0.12. 10.0.11      |   Modello 770 / 2019 format change |
-|      Japan          |   March 2020     | 10.0.9     |   Japan Bankers Association replacing JBA fixed-length payment formats with ISO20022 |
-|      Japan          |   January 2020      | 10.0.8       |   Consumption tax rate change and reduced tax rate is introduced (Consumption tax report) |
-|      Netherlands          |   April 2020   | 10.0.10     |   Dutch Taxonomy new version - NT14 |
-|      Norway          |   March 2020   | 10.0.9     |   SAF-T XSD update to version 1.1 for Dynamics 365 for Finance and Operations |
-|      Norway          |   May 2020   | 10.0.12     |   SAF-T report redesign: Opening balances by "operating" transaction type and Tax information in Tax code currency in Finance (v.10) |
+|      India         |   May 2020      | 10.0.12      |   Stock transfer same tax rate applicability at the time of shipment and receipt (Including partial receipt)  |
+|      Italy         |   May 2020      | 10.0.12, 10.0.11      |   Modello 770 / 2019 format change |
+|      Italy         |   July 2020      | 10.0.13, 10.0.12HF      |   Changes in the format of Italian electronic invoices - FatturaPA |
+|      Kuwait         |   July 2020      | 10.0.12      |   Reverse charge |
+|      Malaysia         |   July 2020      | 10.0.13      |   SST report |
+|      Mexico         |   September 2020      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   CFDI URL schema location based on Anexo 20 document |
+|      Norway          |   May 2020   | 10.0.12     |   SAF-T report redesign: Opening balances by "operating" transaction type and Tax information in Tax code currency in Finance (version 10) |
 |      Norway          |   May 2020   | 10.0.12     |   SAF-T report dialog change: to provide possibility to select Contact person across companies |
-|      Norway          |   May 2020   | 10.0.12     |   SAF-T Name space declarations on each line instead of on the header only |
-|      Poland          |   March 2020    | 10.0.9     |   Purchase VAT register and SAF VAT register: Custom agency from SAD documents must be replaced by third-party name and tax-exempt number |
-|      Poland          |   March 2020 - January 2020   | 10.0.9     |   Retail - Managing customer information in POS |
-|      Poland          |   March 2020 - January 2020     | 10.0.9    |   Retail - Printing customer information in fiscal receipt |
-|      Poland          |   March 2020     | 10.0.9     |   SAF invoices (JPK_FA) v.3 from 2Dec2019 |
-|      Poland          |   April 2020     | 10.0.10, 10.0.9     |   JPK_VDEK replacing JPK_VAT (SAF VAT) |
+|      Norway          |   May 2020   | 10.0.12     |   SAF-T Name space declarations on each line instead of only on the header |
+|      Oman         |   July 2020      | 10.0.12H      |   Reverse charge |
+|      Poland          |   September 2020     | 10.0.14     |   Poland: JPK-V7M (VDEK) Excel format - to replace SSRS report  |
 |      Poland          |   May 2020     | 10.0.11     |   Split AP/AR realized exchange difference amount into exchange difference of invoice net value and of VAT amount  |
 |      Poland          |   May 2020     | 10.0.11     |   SAF Accounting books  – Posting layers filtering improvements |
-|      Poland          |   May 2020     | 10.0.11     |   JPK_VDEK supplemented pack I |
+|      Poland          |   March 2020     | 10.0.11     |   JPK_VDEK supplemented pack I |
 |      Poland          |   May 2020     | 10.0.12     |   JPK_VDEK supplemented pack II |
-|      Poland          |   May 2020     | 10.0.11     |   Partial credit note for sales order with advance invoice |
-|      Russia          |   March 2020     | 10.0.9     |   Format of property tax declaration for 2019 reporting |
-|      Russia          |   March 2020     | 10.0.9     |   Profit tax declaration format updates |
-|      Switzerland           |   March 2020     | 10.0.9      |   Swiss payment slip ISR gets new format (QR-code) |
-|      United Kingdom           |   April 2020     | 10.0.10      |   MTD fraud prevention supplemented pack |
+|      Poland          |   March 2020     | 10.0.11     |   Partial credit note for sales order with advance invoice |
+|      Poland          |   July 2020     | 10.0.13     |   Mandatory split payment enhancements |
+|      Qatar         |   July 2020      | 10.0.12H      |   Reverse charge |
+|      Russia          |   August 2020     | 10.0.14    |   Format of accounting reporting is changing starting from 2020 year  |
+|      Russia          |   July 2020     | 10.0.13    |   Depreciation calculation on the base of Acquisition cost and major repairs with applying the Depreciation bonus in Tax accounting  |
 
 
 

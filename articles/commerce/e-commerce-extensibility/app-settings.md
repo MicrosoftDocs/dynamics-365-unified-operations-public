@@ -147,4 +147,10 @@ Here is an example of a resource file.
 
 [Cookie API overview](cookie-api-overview.md)
 
+[Interactive components overview](interactive-components.md)
+
+[Mock the signed-in state during local development](mock-sign-in.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)

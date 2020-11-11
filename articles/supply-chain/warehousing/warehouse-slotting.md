@@ -4,7 +4,7 @@
 title: Warehouse slotting
 description: This topic provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 author: mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

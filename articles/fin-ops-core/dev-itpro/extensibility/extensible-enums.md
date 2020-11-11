@@ -19,13 +19,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---

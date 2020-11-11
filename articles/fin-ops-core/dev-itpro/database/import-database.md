@@ -5,7 +5,7 @@ title: Import a database
 description: This topic explains how to import a database for Finance and Operations apps.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 07/01/2020
+ms.date: 08/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
 
@@ -63,7 +63,3 @@ If you've used the Admin User Provisioning Tool on your environment to change th
 ## Steps to complete after a database import for environments that use Commerce functionality
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
-
-### Re-activate POS devices
-
-If you use point of sale (POS) devices, after you import a database you must activate POS devices again. Previously activated devices in the destination environment will no longer function. For more information, see [Point of sale device activation](../../../commerce/dev-itpro/retail-device-activation.md).

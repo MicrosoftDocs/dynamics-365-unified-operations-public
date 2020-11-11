@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSCrossDockOpportunityPolicy
+ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

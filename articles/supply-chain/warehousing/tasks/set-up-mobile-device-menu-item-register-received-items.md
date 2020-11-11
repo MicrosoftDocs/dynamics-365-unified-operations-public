@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSRFMenuItem, WHSRFMenu   
+ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

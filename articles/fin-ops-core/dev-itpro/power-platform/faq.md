@@ -5,7 +5,7 @@ title: Finance and Operations virtual entities FAQ
 description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 10.0.12
 # Finance and Operations virtual entities FAQ
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic is a collection of frequently asked questions about Finance and Operations virtual entities. 
 
@@ -109,3 +108,15 @@ Finance and Operations business logic that resides on forms isn't invoked throug
 ### If I develop a new Finance and Operations entity and want to see it in Common Data Service, do I have to select Refresh entity list in Finance and Operations? Do I have to do anything in Common Data Service?
 
 In theory, no, you don't have to refresh the entity list. At most, you might have to either reset Internet Information Services (IIS) or restart IIS Express, depending on where Application Object Server (AOS) is running. The fact that the list of entities is accurate is cached in SysGlobalObjectCache, which is a per-process cache. Any time that this cache doesn't indicate that the list is accurate, the list is rebuilt. The rebuild process takes about five seconds. Therefore, when you restart your AOS process (w3wp.exe or iisexpress.exe), the list will be accurate the next time that you query it from Common Data Service. Additionally, although recompilation *should* flush the SysGlobalObjectCache cache, it might not. In that case, an AOS restart will flush it.
+
+### Do you have guidance on when to use a virtual entity and when to use dual-write?
+
+Dual-write is only provided for a few key data entities where the data needs to be natively in Common Data Service. Those data entities are not available as virtual entities.
+
+### When adding records using virtual entities is there any way to use number sequences?
+Yes, if the Finance and Operations entity can auto generate number sequences, then it will work the same way from the virtual entity.
+
+### Why does 'search view' not work in Power Apps?
+If there are no fields added in the quick find view for the entity, then the search box does nothing. The workaround is to add one or more fields of the entity to the quick find view.
+
+

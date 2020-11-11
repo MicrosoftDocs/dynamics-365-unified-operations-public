@@ -5,7 +5,7 @@ title: Microsoft Power Platform integration with Finance and Operations
 description: This topic describes virtual entities for Finance and Operations in Common Data Service.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 10.0.0
 # Microsoft Power Platform integration with Finance and Operations
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 Finance and Operations is a virtual data source in Common Data Service, and enables full create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in the application where it belongs. To enable CRUD operations on Finance and Operations entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. The allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations apps.
 
@@ -51,6 +50,9 @@ To understand the architecture of virtual entities for Finance and Operations ap
 ## Virtual entities for Finance and Operations apps
 
 All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from Finance and Operations with full CRUD capability and without copying to Common Data Service. Power Apps Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
+
+## Virtual entities vs. dual-write
+Virtual entities provide a mechanism to use Microsoft Power Platform with Finance and Operations without having to physically copy data to Common Data Service. Use this guidance to determine if the requirements will need dual-write or data integrator or virtual entities. Virtual entities and dual-write/data integrator are complementary technologies, meaning that they can be used together if required. Each technology exists for specific scenarios, as explained in [Integration strategies](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview).
 
 ## Architecture
 

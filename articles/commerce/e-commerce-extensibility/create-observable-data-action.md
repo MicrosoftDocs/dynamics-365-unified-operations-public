@@ -5,7 +5,7 @@ title: Create an observable data action
 description: This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 03/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -175,7 +175,7 @@ export interface IAsyncTestModuleData {
     testResult: AsyncResult<string>;
 }
 ```
-When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result** and **error** properties. The **status** property contains the current state of the data action which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error the **result** property will not be filled in. Instead, the **error** property can be used to see the error details.
+When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result**, and **error** properties. The **status** property contains the current state of the data action, which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error, the **result** property won't be filled in. Instead, the **error** property can be used to see the error details.
 
 By taking advantage of the **status**, **result**, and **error** properties that are provided by observable data actions, complicated scenarios can be better handled in a module. Examples include showing a loading screen while a data action call runs and providing contextual error messages in response to a failed data action.
 
@@ -186,6 +186,8 @@ By taking advantage of the **status**, **result**, and **error** properties that
 [Batch data actions](batch-data-actions.md)
 
 [Share state across modules](share-state-across-modules.md)
+
+[Data action cache settings](data-action-cache-settings.md)
 
 [Data action overrides](data-action-overrides.md)
 

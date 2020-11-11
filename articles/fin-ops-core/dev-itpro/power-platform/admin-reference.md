@@ -5,7 +5,7 @@ title: Finance and Operations and Common Data Service admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -29,17 +29,16 @@ ms.dyn365.ops.version: 10.0.12
 
 # Finance and Operations and Common Data Service admin reference
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires Platform update 36 for Finance and Operations and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires [Platform updates for version 10.0.12 of Finance and Operations apps](../get-started/whats-new-platform-update-10-0-12.md) and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
 
 ## Getting the solution
 The Common Data Service solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
-Ensure the following solutions are installed in Common Data Service. These solutions must be extracted from the downloaded package.
+Ensure the following solutions are installed in Common Data Service.
 
 - **Dynamics365Company** - This adds the **Company** entity, which is referenced by all Finance and Operations entities with a PrimaryCompanyContext metadata value.
 
@@ -136,7 +135,7 @@ The next step in the process is to provide Common Data Service with the Finance 
 
 Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
 
-1. In Common Data Service, go to **Advanced find**.
+1. In Common Data Service, go to **Advanced find** (filter icon).
 
 2. Look for “Available Finance and Operations Entities” and select **Results**.
 

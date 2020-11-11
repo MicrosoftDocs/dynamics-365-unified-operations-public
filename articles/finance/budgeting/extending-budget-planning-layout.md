@@ -5,7 +5,7 @@ title: Extend the budget planning layout
 description: This topic explains how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout.
 author: ryansandness
 manager: AnnBe
-ms.date: 07/20/2019
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: 10.0.4
 # Extend the budget planning layout
 
 [!include [banner](../includes/banner.md)]
-
-## Overview
 
 This topic describes the process for extending the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. This process might be required if you're comparing information over multiple years, if many scenarios are being evaluated, or if weekly or daily periods are being evaluated. This topic was written for a developer audience.
 
@@ -125,10 +123,12 @@ To extend the mapping between the BudgetPlanLineActiveView and BudgetPlanLine ta
     }
     ```
 
-## Sync the database and build the project
+## Build the project
 
-Synchronize your database, and build your project.
+Build your project, and synchronize the database.
 
 ## Validate your changes
 
 To validate your changes, you must create a layout in budget planning beyond 36 monetary and/or quantity columns. If you completed all the steps correctly, you should be able to enter a value in every column, save the value, and edit it in Excel.
+
+After the changes are verified, the extension can be published and promoted beyond the local development environment. 

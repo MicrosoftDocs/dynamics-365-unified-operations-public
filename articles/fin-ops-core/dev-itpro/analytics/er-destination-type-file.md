@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# <a name="FileDestinationType">File destination</a>
+# File destination
 
 [!include [banner](../includes/banner.md)]
 

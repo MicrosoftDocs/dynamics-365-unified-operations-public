@@ -13,7 +13,8 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CustPosting
+ms.search.form: CustPosting, CustVendExternalItem
+
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

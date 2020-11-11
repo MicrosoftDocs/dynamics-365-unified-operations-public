@@ -5,7 +5,7 @@ title: Currency capabilities in financial reporting
 description: Financial reporting includes features that support complex currency reporting requirements.
 author: ryansandness
 manager: AnnBe
-ms.date: 01/09/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 261824
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansandness
+ms.author: ryansand
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
 
@@ -87,8 +87,10 @@ The Currency translation type will determine how each main account is translated
 
 ### Setup for Retained Earnings
 Currency translation for retained earnings accounts is subject to some specific requirements:
-- Any retained earnings account must be assigned to the Retained earnings main account category on the **Main accounts** page if the account balance should be translated using the appropriate calculation.
-- If the default category was renamed, financial reporting is still expecting the original with the backing ID number of 29. 
+- Any retained earnings account must be assigned to the Retained earnings main account category **Reference ID** of 29 on the **Main accounts** page if the account balance should be translated using the appropriate calculation.
+- If the default category was renamed, financial reporting still expects the original with **Reference ID** of 29. 
+   > [!NOTE]
+   > You may have to personalize the form and add **Reference ID** as a column in order for this to display on the page.
 - The retained earnings account only translates system-generated transactions initiated through the fiscal year-end close process. If any transactions are posted directly, they will not be accurately reflected through translation. 
 - The retained earnings balance is translated at the rate that exists at the end of the most recently closed year. This means that it is a point-in time-calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
 

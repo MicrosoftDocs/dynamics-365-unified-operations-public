@@ -87,14 +87,14 @@ You can define a recurring batch to regularly update the data in the entities. B
 ## Security
 Currently, the data on embedded Power BI reports can't be limited to the legal entities that the user has access to. Therefore, the embedded Power BI reports are controlled through duties in the security setup. The duties that are defined allow access to data for either all legal entities or only the active company. The following table shows the duties that exist and the roles that they are assigned to. The duties can be removed or assigned to different roles, based on your organization's requirements.
 
-| Duty                                    | Roles | Decription |
+| Duty                                    | Roles | Description |
 |-----------------------------------------|-------|------------|
 | View CFO Overview workspace             | Chief Financial Officer | This duty provides access to the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
 | View financial insights current company | <ul><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Auditor</li><li>Budget manager</li><li>Chief executive officer</li><li>Chief financial officer</li><li>Financial controller</li></ul> | This duty provides access to Financial Insights. By default, the active company is used as a filter. You can't add other legal entities. |
 | View financial insights cross company   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role. In the next release, this duty will be assigned to the Chief financial officer role. | This duty provides access to the menu item for the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
 
 
-## Financial reporting vs. Finanical insights
+## Financial reporting vs. Financial insights
 Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in the application. The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
 
 The following comparison chart will help differentiate the two options:
@@ -137,9 +137,9 @@ Users can filter the report by using the **Filter** pane on the left. This pane 
 - **Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters.
 - **Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.
 
-![Filter](./media/filter.png)
+![Filter options](./media/filter.png)
 
-To remove a specific filter value, select the eraser symbol next to it. Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option. If you accidently remove a field from the filter, close the workspace, and then reopen it. The default filter settings will be reapplied.
+To remove a specific filter value, select the eraser symbol next to it. Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option. If you accidentally remove a field from the filter, close the workspace, and then reopen it. The default filter settings will be reapplied.
 
 By default, when you first open workspaces, the active legal entity is used as the report-level filter. Depending on their security, users might be able to add other legal entities or change the default legal entity that is selected in the filter.
 
@@ -182,25 +182,25 @@ Various levels of drilling are available through Power BI. Each level has a diff
 
 In the following illustration, the **Trial balance** statement is collapsed to the highest level of the row hierarchy, the main account type.
 
-![Trial Balance](./media/trial-balance.png)
+![Trial balance statement](./media/trial-balance.png)
 
 To view the next level of the hierarchy, the main account categories, you can set the **Drill on** field to **Rows** and then select the **Expand** button (the third button after the Drill on field). You now see all the main account categories expanded. Currently, Power BI doesn't let you expand only one row or column but still see all the other rows or columns.
 
-![Trial Balance](./media/trial-balance2.png)
+![Trial balance drill down on rows](./media/trial-balance2.png)
 
 To expand to the main accounts for all rows, you can again use the **Expand** button. However, to drill down to the main accounts for only one row, first select the **Drill down** button (the single downward-pointing arrow on the right side of the window), and then select the row to drill down on. The following illustration shows the result when the **Sales** row is selected after the **Drill down** button is selected.
 
-![Trial Balance](./media/trial-balance3.png)
+![Trial balance expand button](./media/trial-balance3.png)
 
 After you drill down on a single row, multiple clicks are required in order to return to the full trial balance. The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.
 
-![Trial Balance](./media/trial-balance4.png)
+![Trial balance drill up button](./media/trial-balance4.png)
 
 You can continue to use the **Drill up** button to return to the highest level of summarization for the rows.
 
 Power BI also has a button that lets you go to the next level in the hierarchy (the second button after the **Drill on** field). The effect of this button differs from the effect of the **Expand** button (the third button after the **Drill on** field), which is used to expand the hierarchy. When you expand the hierarchy, the hierarchy is maintained on the report. For example, as was shown earlier, if you expand on the main account type, you still see the main account type on the report. However, when you go to the next level in the hierarchy, the report no longer shows the parent in the hierarchy, as shown in the following illustration.
 
-![Trial Balance](./media/trial-balance5.png)
+![Trial balance drill back button](./media/trial-balance5.png)
 
 To see the transaction details behind the summarized balances, you can select some amounts to drill back into Financial and Operations.
 
@@ -251,6 +251,6 @@ Power BI doesn't provide an option to hide and show empty rows. If a row doesn't
 
 The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Accessing Analytical Workspaces and Reports on 1-box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Add analytics to workspaces by using Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

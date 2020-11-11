@@ -5,7 +5,7 @@ title: Override POS request handler
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time service enables clients to interact with Commerce functionality in real time.
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -121,6 +121,8 @@ In each monthly update we will be adding additional extension points, so check t
 | LoyaltyCardPointsBalanceOperationRequestHandler     | Executed when you do a loyalty card balance operation in POS. |
 | GetReportParametersClientRequestHandler     	      | Executed when you use a report parameter. If your POS report needs an input parameter this dialog will be executed to capture the parameters. |
 | GetPickingAndReceivingOrdersClientRequestHandler     	      | Executed when orders fetched for picking and receiving processing. |
+| GetStartingAmountClientRequestHandler     	      | Executed when you do a start amount declaration in POS (before navigating to the view). |
+
 
 
 **Tender counting request handler**

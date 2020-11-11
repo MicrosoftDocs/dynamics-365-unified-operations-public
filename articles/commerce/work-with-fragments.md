@@ -3,9 +3,9 @@
 
 title: Work with fragments
 description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
-author: v-chgri
+author: phinneyridge
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -22,14 +22,13 @@ ms.search.scope: Retail, Core, Operations
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: phinneyridge
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
 # Work with fragments 
-
 
 [!include [banner](includes/banner.md)]
 
@@ -63,30 +62,27 @@ You can either create a new fragment or save an existing module configuration as
 
 ### Save an existing module configuration as a fragment
 
-To convert a previously configured module to a reusable fragment, follow these steps.
+To convert a previously configured module to a reusable fragment in Commerce site builder, follow these steps.
 
 1. Open a page or template that contains the module that you want to convert to a fragment.
-1. In the outline pane on the left, select the ellipsis button (**...**) next to the name of the module. 
-1. Select **Share as Fragment**. 
-1. A dialog box appears. Enter a name and metadata for the fragment.
+1. In the outline pane on the left or directly in visual page builder, select the previously configured module.
+1. Select the ellipsis (**...**) next to the name of the module in either the outline pane or the selected module's toolbar in visual page builder. 
+1. Select **Share as fragment**. 
+1. In the **Save as fragment** dialog box, enter a name for the fragment.
 1. Select **OK** to save the module configuration as a fragment that can be added to other pages.
-
-The following image shows how to save a module configuration as a fragment.
-
-![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)
+<!-- The following image shows how to save a module configuration as a fragment.-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
 ### Create a new fragment
 
-To create a new fragment, follow these steps.
+To create a new fragment in Commerce site builder, follow these steps.
 
 1. In the navigation pane on the left, select **Fragments**.
-1. Select **New Page Fragment**. A dialog box appears that shows all the available module types. As was mentioned earlier, fragments can be created from any module type.
+1. Select **New**. A **New fragment** dialog box appears that shows all the available module types. As was mentioned earlier, fragments can be created from any module type.
 1. Select a module type for your fragment.
 
-The following image shows where to create a new fragment.
-
-![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)
-
+<!-- The following image shows where to create a new fragment.-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > By selecting a generic container module type, you get the most flexibility when you need to update and configure your fragment later.
 
@@ -96,29 +92,28 @@ The following procedures describe how to add, remove, and edit fragments.
 
 ### Add a fragment
 
-To add a fragment to a page, follow these steps.
+To add a fragment to a page in Commerce site builder, follow these steps.
 
-1. In the outline pane on the left, select a container or slot that child modules can be added to.
-1. Select the ellipsis button next to the name of the container or slot, and then select **Add Fragment**. A dialog box appears.
-
-    ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)
+1. In the outline pane on the left or directly in visual page builder, select a container or slot to which child modules can be added.
+1. Select the ellipsis (**...**) next to the name of the container or slot.  Alternately, if using visual page builder, select the plus symbol (**+**).  
+1. Select **Add fragment**.
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
-    > If the container or slot doesn't support new child modules, the **Add Fragment** option is unavailable.
+    > If the container or slot doesn't support new child modules, the **Add fragment** option is unavailable.
     
-1. In the dialog box, search for and select a fragment to add. If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.
+1. In the **Select fragment** dialog box, search for and select a fragment to add. If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.
 1. Select your desired fragment to add it to the container or slot on your page.
-
-    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > The modules that are allowed in a container or slot are defined by the page's template or the modules' own definitions.
 
 ### Remove a fragment
 
-To remove a fragment from a slot or container on a page, follow these steps.
+To remove a fragment from a slot or container on a page in Commerce site builder, follow these steps.
 
-1. In the outline pane on the left, select the ellipsis button next to the name of the fragment to remove, and then select the trash can button.
+1. In the outline pane on the left, select the ellipsis (**...**) next to the name of the fragment to be removed, and then select the trash can symbol.  Alternately, you can select the fragment in visual page builder and select the trash can symbol in the fragment's toolbar.
 1. When you're prompted to confirm that you want to remove the fragment, select **OK**.
 
 > [!NOTE]
@@ -128,7 +123,7 @@ To remove a fragment from a slot or container on a page, follow these steps.
 
 To edit fragments, you must use the fragment editor UI. This restriction is by design. It helps guarantee that authors don't confuse the process of editing the modules for a specific page with the process of editing fragments that might be shared across many pages.
 
-To edit a fragment, follow these steps.
+To edit a fragment in Commerce site builder, follow these steps.
 
 1. In the navigation pane on the left, select **Fragments**.
 1. Under **Fragments**, select the fragment to edit.

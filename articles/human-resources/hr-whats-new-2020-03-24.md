@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (March 24, 2020)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for March 24, 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/24/2020
@@ -118,3 +118,10 @@ Beginning in April, the release cadence for Human Resources will shift from a we
 ## Employment Detail entity
 
 The **Employment Detail** entity has been updated with the following fields: **PayFrequency**, **Employment Category ID**, **Employment Type**, **EmploymentType ID**, and **Benefit Employment Status**. The setup data for these fields rely on benefits management being enabled in Feature management. These fields shouldn't be populated or updated in the **Employment Detail** entity, because it will result in errors during import.
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)

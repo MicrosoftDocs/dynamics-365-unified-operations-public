@@ -5,7 +5,7 @@ title: Hungary overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Hungary. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 
 ms.search.region: Hungary
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -42,3 +42,4 @@ This topic provides links to documentation resources for Hungary.
 - [Tax reimbursement documents](emea-hun-tax-reimbursement-docs.md)
 - [Year-end close](emea-cze-hun-year-end.md)
 - [Online invoicing system](emea-hun-online-invoicing.md)
+- [Deferred sales tax calculations](emea-hun-deferred-vat.md)

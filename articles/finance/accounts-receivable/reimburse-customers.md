@@ -3,9 +3,9 @@
 
 title: Reimburse customers
 description: This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
-author: ShivamPandey-msft
+author: JodiChristiansen
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

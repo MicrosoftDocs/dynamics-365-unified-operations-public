@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable
+ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable, DeliveryReason, DeliveryTerms, DestinationCode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

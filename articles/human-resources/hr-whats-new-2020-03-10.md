@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (March 10, 2020)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for March 10, 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/10/2020
@@ -102,3 +102,10 @@ The following preview features are available on February 3, 2020:
 - Recommended fields - Users often need to add fields to a grid or page. This can be difficult with so many available fields. Instead of having to search through a large list, this feature enables the system to surface a set of recommended fields based on what other users most often add in similar scenarios.
 
 - Sticky default actions in grids - This feature ensures that the default action in a grid is linked to a specific column in a grid, regardless of whether that column is moved or hidden.
+
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)

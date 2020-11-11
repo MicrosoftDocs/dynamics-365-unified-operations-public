@@ -157,6 +157,8 @@ TypeScript files for new custom data actions are created under the \\src\\action
 
 ## Additional resources
 
+[Data action cache options](data-action-cache.md)
+
 [Test data actions with mocks](test-data-action-mocks.md)
 
 [Page load data actions](page-load-data-action.md)

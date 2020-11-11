@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LEFT">LEFT ER function</a>
+# LEFT ER function
 
 [!include [banner](../includes/banner.md)]
 

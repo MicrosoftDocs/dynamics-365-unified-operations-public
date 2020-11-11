@@ -2,7 +2,7 @@
 # required metadata
 title: List module
 description: A list is a control that contains any numbers of rows.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
@@ -131,7 +131,7 @@ Lists come in two styles: simple and card.
 | [color](../interfaces/view-model-control-list-ilist-ilistdesign.md#color) |color: string (optional)  <br>|The foreground color of the container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) <br> |
 | [design](../interfaces/view-model-control-list-ilist-ilistdesign.md#design) |design: [GroupDesign](../interfaces/view-model-control-group-igroup-igroupdesign.md) (optional)  <br>|The design object that will be applied to each row.<br>  |
 | [flexFlow](../interfaces/view-model-control-list-ilist-ilistdesign.md#flexflow) |flexFlow: string (optional)  <br>|Specifying this property makes the component a flex container component.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) <br> |
-| [flexSize](../interfaces/view-model-control-list-ilist-ilistdesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) <br> |
+| [flexSize](../interfaces/view-model-control-list-ilist-ilistdesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. For example, "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) <br> |
 | [fontSize](../interfaces/view-model-control-list-ilist-ilistdesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)  <br>|The proportional text size<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) <br> |
 | [fontWeight](../interfaces/view-model-control-list-ilist-ilistdesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (optional)  <br>|Normal or bold text.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) <br> |
 | [hideArrow](../interfaces/view-model-control-list-ilist-ilistdesign.md#hidearrow) |hideArrow: boolean (optional)  <br>|Allows an arrow ( > ) on a default styled navigation control to be hidden.<br>  |
@@ -164,15 +164,15 @@ Lists come in two styles: simple and card.
 | [DetailsPageId](../interfaces/view-model-control-list-ilist-ilistmetadata.md#detailspageid) |DetailsPageId: string (optional)  <br>|The ID of the page to which each row will navigate.<br>  |
 | [Editable](../interfaces/view-model-control-list-ilist-ilistmetadata.md#editable) |Editable: boolean (optional)  <br>|Boolean indicating if the control is editable.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable) <br> |
 | [EmptyListMessage](../interfaces/view-model-control-list-ilist-ilistmetadata.md#emptylistmessage) |EmptyListMessage: string (optional)  <br>|If set, overrides the default message for empty lists.<br>  |
-| [ExtType](../interfaces/view-model-control-list-ilist-ilistmetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|The extended control type. E.g. a control of type Input might have an extended type of Barcode.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) <br> |
-| [HelpText](../interfaces/view-model-control-list-ilist-ilistmetadata.md#helptext) |HelpText: string (optional)  <br>|The keyboard shortcut for a command. E.g. "(Shift+F5)"<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) <br> |
+| [ExtType](../interfaces/view-model-control-list-ilist-ilistmetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|The extended control type. For example, a control of type Input might have an extended type of Barcode.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) <br> |
+| [HelpText](../interfaces/view-model-control-list-ilist-ilistmetadata.md#helptext) |HelpText: string (optional)  <br>|The keyboard shortcut for a command. For example, "(Shift+F5)"<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) <br> |
 | [Hidden](../interfaces/view-model-control-list-ilist-ilistmetadata.md#hidden) |Hidden: boolean (optional)  <br>|Boolean indicating if the control is hidden or not.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden) <br> |
 | [HideEmptyListMessage](../interfaces/view-model-control-list-ilist-ilistmetadata.md#hideemptylistmessage) |HideEmptyListMessage: boolean (optional)  <br>|If true, the empty list message will be hidden.<br>  |
 | [HideSearchBar](../interfaces/view-model-control-list-ilist-ilistmetadata.md#hidesearchbar) |HideSearchBar: boolean (optional)  <br>|If true, the search bar will be hidden.<br>  |
 | [Id](../interfaces/view-model-control-list-ilist-ilistmetadata.md#id) |Id: string (optional)  <br>|Identification string for a control.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id) <br> |
 | [InfiniteScroll](../interfaces/view-model-control-list-ilist-ilistmetadata.md#infinitescroll) |InfiniteScroll: boolean (optional)  <br>|If set to true then the list will allow infinite scroll.<br>  |
 | [InfiniteScrollPageSize](../interfaces/view-model-control-list-ilist-ilistmetadata.md#infinitescrollpagesize) |InfiniteScrollPageSize: number (optional)  <br>|Number of rows to load initially and the number of rows to load after the user reaches the end of the currently displayed rows.<br>  |
-| [Label](../interfaces/view-model-control-list-ilist-ilistmetadata.md#label) |Label: string (optional)  <br>|Label for a control. E.g. a control representing a person's first name might have a label "First Name".<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) <br> |
+| [Label](../interfaces/view-model-control-list-ilist-ilistmetadata.md#label) |Label: string (optional)  <br>|Label for a control. For example, a control representing a person's first name might have a label "First Name".<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) <br> |
 | [ListStyle](../interfaces/view-model-control-list-ilist-ilistmetadata.md#liststyle) |ListStyle: string (optional)  <br>|Dictates the list template type.<br>  |
 | [MultiSelect](../interfaces/view-model-control-list-ilist-ilistmetadata.md#multiselect) |MultiSelect: boolean (optional)  <br>|If true, then the list will be a multi-select list.<br>  |
 | [Name](../interfaces/view-model-control-list-ilist-ilistmetadata.md#name) |Name: string (optional)  <br>|Name of a control.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) <br> |

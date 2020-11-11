@@ -98,4 +98,8 @@ Default grid breakpoint settings can also be set in the theme.settings.json file
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
 
+[Override a module library component in a theme](override-theme-component.md)
+
 [Extend a theme from a base theme](extend-theme.md)
+
+[Add custom resources to your customization code](add-custom-resources.md)

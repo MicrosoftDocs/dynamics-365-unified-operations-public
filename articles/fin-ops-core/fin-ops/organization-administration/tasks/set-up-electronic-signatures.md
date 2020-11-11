@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

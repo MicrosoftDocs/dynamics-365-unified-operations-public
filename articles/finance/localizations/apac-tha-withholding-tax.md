@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 265904
 ms.search.region: Thailand
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
