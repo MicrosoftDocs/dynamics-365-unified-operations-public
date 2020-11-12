@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 10.0.12
 This topic explains how to turn on and configure the Customer payment predictions feature in Finance Insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Financial insights parameters** page. This topic also includes information that can help you effectively use the feature.
 
 > [!NOTE]
-> Before you complete the following steps, be sure to complete the prerequisite steps.
+> Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance Insights](configure-for-fin-insites.md) topic.
 
 1. Use information from the environment page in Microsoft Dynamics Lifecycle Services (LCS) to connect to the primary instance of Azure SQL for that environment. Run the following Transact-SQL (T-SQL) command to turn on flights for the sandbox environment. (You might have to turn on access for your IP address in LCS before you can connect remotely to Application Object Server \[AOS\].)
 
