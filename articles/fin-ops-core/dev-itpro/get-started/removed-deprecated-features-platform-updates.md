@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -150,7 +150,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Virtual machines deployed on or after 10.0.13 (PU37) contain Visual Studio 2017. 10.0.16 (PU40) is the final release with support for Visual Studio 2015. Virtual machines with only Visual Studio 2015 will not be able to update to 10.0.17 (PU41). |
+| **Status**                         | Virtual machines deployed on version 10.0.13 (PU37) or later contain Visual Studio 2017. Version 10.0.16 (PU40) is the final release with support for Visual Studio 2015. Virtual machines with only Visual Studio 2015 will not be able to update to 10.0.17 (PU41). |
 
 ### Field groups containing invalid field references
 
