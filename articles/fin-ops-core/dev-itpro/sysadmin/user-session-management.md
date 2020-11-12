@@ -2,7 +2,7 @@
 # required metadata
 
 title: User session management
-description: The user session setting represents the amount of time a user can be logged in before the user’s session expires.
+description: The user session setting represents the amount of time a user can be signed in before the user’s session expires.
 author: paulliew
 manager: AnnBe
 ms.date: 11/11/2020
@@ -32,41 +32,41 @@ ms.dyn365.ops.version: 10.0.16
 [!include[banner](../includes/banner.md)]
 
 
-The user session setting represents the amount of time a user can be logged in before the user’s session expires. Once the user’s session expires, the user is required to log in with his or her credentials. 
+The user session setting represents the amount of time a user can be signed in before the user’s session expires. After the user’s session expires, the user is required to sign in with their credentials.
 
-You can set the **Maximum session length** up to 2,160 hours (90 days) with a minimum of 1 hour.  
+The **Maximum session length** can be up to 2,160 hours (90 days), with a minimum of 1 hour.  
 
 > [!NOTE] 
-> This feature is available in Public Preview as of version 10.0.16.  To enable this feature, go to the Feature management page and emable the **(Preview) Enable session management for users** feature. 
+> This feature is available in public preview as of version 10.0.16. To enable this feature, go to the Feature management page and enable the **(Preview) Enable session management for users** feature. 
 
-To change the value, follow these steps: 
+To change the maximum session length, follow these steps: 
 
-1. Go to **System administration > Users > User session management** page. 
+1. Go to **System administration > Users > User session management**. 
 2. Select **New**.  
-3. In the new row, select the dropdown in the **User ID** field.  
+3. In the new row, select the drop-down menu in the **User ID** field.  
 4. In the user list, select a user. 
-5. In the **Maximum session length (hours)** field, enter an hour. 
-6. Click on the **Save** button. 
+5. In **Maximum session length (hours)**, enter a value. 
+6. Select **Save**. 
 
 To update the user’s maximum session length: 
 
-1. Select the user you want to update by clicking on the row. 
-2. In the **Maximum session length (hours)** field, enter an hour. 
-3. Click on the **Save** button. 
+1. Select the user that you want to update by selecting the row. 
+2. In **Maximum session length (hours)**, enter a value. 
+3. Select **Save**. 
 
 To replace the user’s maximum session length with another user: 
 
-1. Select the user you want to update by clicking on the row. 
-2. In the **User ID** field, select the dropdown and select another user. 
+1. Select the user that you want to update by selecting the row. 
+2. In the **User ID** field, select the drop-down menu and select another user. 
 3. In the **Maximum session length (hours)** column, enter an hour. 
-4. Click on the **Save** button. 
+4. Select **Save**. 
  
 To delete the user’s maximum session length: 
 
-1. Select the user you want to delete by clicking on the row. 
-2. Click on the **Delete** button.
+1. Select the user that you want to delete by selecting the row. 
+2. Select **Delete**.
 
 To delete the multiple users’ maximum session length: 
 
-1. Check the rows you want to delete. 
-2. Click on the **Delete** button. 
+1. Select the rows that you want to delete. 
+2. Select **Delete**.
