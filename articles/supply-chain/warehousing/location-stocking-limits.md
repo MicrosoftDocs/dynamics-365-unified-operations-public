@@ -5,7 +5,7 @@ title: Location stocking limits
 description: This topic describes the location stocking limits functionality
 author: perlynne
 manager: tfehr
-ms.date: 09/15/2020
+ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,8 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: perlynne
-ms.search.validFrom: 2020-09-15
-ms.dyn365.ops.version: 10.0.15
+ms.search.validFrom: 2020-11-11
+ms.dyn365.ops.version: 10.0.16
 
 ---
 
@@ -34,31 +34,31 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-The  **Warehouse management \> Setup \> Warehouse \> Location stocking limits** can be used to control the load capacity on warehouse locations without using the more advanced physical product volumetric calculation processes.
-The concept of the **Location stocking limits** is to evaluate a maximum quantity, a location can contain.
-The setup can get defined on three levels:
--	Products
--	Product variants
--	Container types
+Use the **Warehouse management \> Setup \> Warehouse \> Location stocking limits** page to control the load capacity at warehouse locations without using the more advanced physical product volumetric calculation processes.
 
-For each level, different field values can get defined, but the evaluation of the capacity on a specific location will happen based on the selected **Location stocking limits** **Quantity** and **Unit** record values, which will get selected for the most detailed matching record first. This e.g. means that a record including a value in the **Location profile ID** field will get evaluated before a record only including a value in the **Warehouse** field. The remaining capacity will as well get evaluated based on the used **Location stocking limit** **Quantity**.
+The purpose of location stocking limits is to evaluate a maximum quantity that a location can contain. You can set up the feature on any of three levels, each of which has its own tab on the **Location stocking limits** page:
 
-For the **Products** section, the following field values can get defined for the **Location stocking limits** search:
--	Warehouse
--	Location profile ID
--	Location
--	Pack size category ID
--	Item number
--	Unit
+- **Products**
+- **Product variants**
+- **Container types**
 
->[!Note]
-> It is not mandatory to define an **Unit** for the **Location stocking limit**. The location capacity calculations will be done based on the inventory unit quantities and in case of using a value without a defined unit conversion, the **Location directive limit** record will get skipped (like it had another **Item number** defined).
+For each level, you can define different field values. The system will evaluate the capacity of a specific location based on the **Quantity** and **Unit** values for each row, and will select the most detailed matching record first. This means, for example, that a row that includes a value in the **Location profile ID** field will be evaluated before a row that only includes a value in the **Warehouse** field. The remaining capacity will also be evaluated based on the **Quantity** for the used location stocking limit record.
 
+For the **Products** section, you can define the following field values for the location stocking limits search:
+
+- **Warehouse**
+- **Location profile ID**
+- **Location**
+- **Pack size category ID**
+- **Item number**
+- **Unit**
+
+> [!Note]
+> It is not mandatory to define a **Unit** for each location stocking limit record. The location capacity calculations will be done based on the inventory unit quantities and, when using a value without a defined unit conversion, the **Location directive limit** record will get skipped (as if it had another **Item number** defined). <!-- KFM: should "Location directive limit record" be "location stocking limit record"? -->
 
 ## Example – Purchase order receiving
 
-This example shows the process based on a clean _USMF_ demo data set having the **Location stocking limits \> Product variant** setup defined as:
-
+This example shows the process based on a clean *USMF* demo data set having the **Location stocking limits \> Product variant** setup defined as:
 
 |Warehouse|Location profile ID|Item number|Size|Quantity|Unit|
 |---------|-------------------|-----------|----|--------|----|
@@ -66,50 +66,44 @@ This example shows the process based on a clean _USMF_ demo data set having the 
 |24       |FLOOR              |D0013      |L   |240     |Ea  |
 |24       |FLOOR              |D0013      |S   |360     |Ea  |
 
-The products have different unit of measure product variant setup defined which is aligned with the **Location stocking limits** for 3 pallets (PL):
+The products have different unit of measure product variant setups defined, which is aligned with the location stocking limits for 3 pallets (PL):
 
-> **Size** **_M_** 1 pallet (PL) = 100 each (Ea)
->
-> **Size** **_L_** 1 pallet (PL) = 80 each (Ea). 
->
->**Size** **_S_** 1 pallet (PL) = 120 each (Ea). 
+- **Size** *M*: 1 pallet (PL) = 100 each (Ea)
+- **Size** *L*: 1 pallet (PL) = 80 each (Ea)
+- **Size** *S*: 1 pallet (PL) = 120 each (Ea)
 
-This basically means that each location having the **Location profile** **_FLOOR_** defined can carry 3 pallets (PL) of item **_D0013_**.
+This means that each location that has its **Location profile ID** set to *FLOOR* can carry 3 pallets (PL) of **Item number** *D0013*.
 
 ### Prepare for the example
-To illustrate the concept, let’s run a purchase order receiving flow for two lines. But please make the following two updates in the demo data to make sure the locations allow to carry mixed items and that we only use the empty locations: _FL-002_ - _FL-004_ without any open inbound work.
 
-> Change the **Location profile** from **_FLOOR_** to **_FLOOR-05_** for **Location** **_FL-001_**.
+To illustrate the concept, let's run a purchase order receiving flow for two lines. But first make the following updates in the demo data to make sure the locations allow carrying mixed items and that we only use the empty locations  *FL-002* to *FL-004* without any open inbound work.
 
-And
-
-> Select the **Allow mixed items** to **_Yes_** for the **Location profile** **_FLOOR_**.
-
->Then create a purchase order with two lines:
->|Warehouse|Item number|Size|Quantity|Unit|
->|---------|-----------|----|--------|----|
->|24       |D0013      |S   |4       |PL  |
->|24       |D0013      |L   |4       |PL  |
-
+1. Change the **Location profile** from *FLOOR* to *FLOOR-05* for **Location** *FL-001*.
+1. Select the **Allow mixed items** to *Yes* for the **Location profile** *FLOOR*.
+1. Create a purchase order with two lines:
+    |Warehouse|Item number|Size|Quantity|Unit|
+    |---------|-----------|----|--------|----|
+    |24       |D0013      |S   |4       |PL  |
+    |24       |D0013      |L   |4       |PL  |
 
 ### Process the example
 
-Start receiving **_4_** **_PL_** **Size** **_S_** following looking at the put line locations for the created work.
-Then receive **_4_** **_PL_** of **Size** **_L_** and then look at the put line locations for the created work.
-1.	Use the **Warehouse app** and login with **User ID** **_24_** Password **_1_** 
-2.	Use the **Inbound** \> **Purchase Receive** menu item and receive **_4_** **_PL_** of **_D0013_** **Size** **_S_**.
-3.	Receive **_4_** **_PL_** of **Size** **_S_**
-4.	Look at the put-away work getting created. You should see the following result:
-> - 3 PL -> FL-002
-> - 1 PL -> FL-003
-5.	Receive **_4_** **_PL_** of **Size** **_L_**
-6.	Look at the put-away work getting created. You should see the following result:
-> - 1 PL -> FL-003
-> -	3 PL -> FL-004
+Start receiving **Quantity** *4*, **Unit** *PL*, **Size** *S* after looking at the put line locations for the created work. Then receive **Quantity** *4*, **Unit** *PL*, **Size** *L* and look at the put line locations for the created work.
 
-Logically one would ague that the system has failed in allocating the proper put-away locations. Why did the system not assign 2 more pallets of **Size** **_L_** to location **_FL-003_**, so we in total would have 3 pallets for put-away into this location?
+1. Open the warehouse app and sign in with **User ID** *24*, **Password** *1*.
+1. Use the **Inbound** \> **Purchase Receive** menu item and receive *4* *PL* of *D0013* with **Size** *S*.
+1. Receive *4* *PL* of **Size** *S*.
+1. Look at the putaway work that was created. You should see the following result:
+    - 3 PL -> FL-002
+    - 1 PL -> FL-003
+1. Receive *4* *PL* of **Size** *L*
+1. Look at the putaway work that was created. You should see the following result:
+    - 1 PL -> FL-003
+    - 3 PL -> FL-004
 
-To explain this, we need to understand the selection criteria for the **Location stocking limit** where the most detailed record match gets selected. In our case this will be the line for **Size** **_L_** containing the **Quantity** **_240_** of **Unit** **_Ea_**.
-Because we already have open work from the previous receiving of **Size** **_S_**  of **_120_** **_Ea_** the remaining capacity gets calculated as 240-120 =120 Ea which then only can carry 1 pallet of 80 Ea.
+Logically, you might assume that the system has failed in allocating the proper putaway locations. Why did the system not assign 2 more pallets of **Size** *L* to **Location** *FL-003*, so we would have a total of 3 pallets for putaway into this location?
+
+To explain this, we need to understand the selection criteria for the location stocking limit, where the system selects the most detailed matching record. In our case, this is the line for **Size** *L* containing the **Quantity** *240* of **Unit** *Ea*. Because we already have open work from the previous receipt of **Size** *S*  of **Quantity** *120*, **Unit**  *Ea*, the remaining capacity is calculated as *240 &ndash; 120 = 120 Ea*, which can only carry 1 pallet of 80 Ea.
+
 > [!Note]
-> **Location stocking limits** is not a process you can use to control e.g. replenishment of items with different quantities within the same location, here you should use the **Replenishment templates**.
+> You can't use location stocking limits to control, for example, the replenishment of items with different quantities within the same location. In this case, use a *replenishment template*.
