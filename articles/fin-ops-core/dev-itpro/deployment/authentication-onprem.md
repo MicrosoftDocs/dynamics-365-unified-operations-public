@@ -5,7 +5,7 @@ title: Authentication in Dynamics 365 Finance + Operations (on-premises)
 description: This topic provides background information about how the authentication process works so that if you have issues you can work to resolve them.
 author: faix
 manager: AnnBe
-ms.date: 11/11/2020
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -80,7 +80,7 @@ You will also find the following sections.
 </Section>
 ```
 
-[!NOTE]
+> [!NOTE]
 > The settings shown above represent a deployment configured with Microsoft 365 compatibility. For more information, see [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
 ## Configuration values used by the AOS
