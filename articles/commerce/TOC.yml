@@ -822,7 +822,7 @@
         href: task-mgmt-pos.md
     - name: Manage your e-Commerce site 
       items:
-      - name: Online store overview
+      - name: E-commerce site overview
         href: online-store-overview.md
       - name: Create an e-Commerce site
         items:
