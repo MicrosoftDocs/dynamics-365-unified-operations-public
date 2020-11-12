@@ -54,9 +54,9 @@ To update the user’s maximum session length:
 2. In **Maximum session length (hours)**, enter a value. 
 3. Select **Save**. 
 
-To replace the user’s maximum session length with another user: 
+To delete a user’s maximum session length and replace it with another user: 
 
-1. Select the user that you want to update by selecting the row. 
+1. Select the user that you want to delete by selecting the row. 
 2. In the **User ID** field, select the drop-down menu and select another user. 
 3. In the **Maximum session length (hours)** column, enter an hour. 
 4. Select **Save**. 
