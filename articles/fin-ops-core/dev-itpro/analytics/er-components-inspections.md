@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Inspect the configured ER component for preventing potential runtime issues
-description: This topic explains how to inspect the configured Electronic reporting (ER) component for preventing potential runtime issues.
+title: Inspect the configured ER component to prevent potential runtime issues
+description: This topic explains how to inspect the configured Electronic reporting (ER) components to prevent potential runtime issues.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/09/2020
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,55 +30,57 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ---
 
-# Consistency checks of ER components
+# Inspect the configured ER component to prevent potential runtime issues
 
 [!include[banner](../includes/banner.md)]
 
-Every configured [Electronic reporting (ER)](general-electronic-reporting.md) [format](general-electronic-reporting.md#FormatComponentOutbound) and [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) component can be [validated](er-fillable-excel.md#validate-an-er-format) at design time to do the consistency check for preventing potential runtime issues (execution errors, performance degradation, etc.). For every discovered issue, the path to a problematic element is provided. For some of these issues, the automatic fix is offered.
+Every configured [Electronic reporting (ER)](general-electronic-reporting.md) [format](general-electronic-reporting.md#FormatComponentOutbound) and [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) component can be [validated](er-fillable-excel.md#validate-an-er-format) at design time to complete the consistency check to prevent potential runtime issues including execution errors and performance degradation. For every discovered issue, the path to a problematic element is provided. For some of these issues, the automatic fix is offered.
 
-By default, this validation is applied automatically in the following cases for an ER configuration that contains mentioned above ER components:
+By default, this validation is applied automatically in the following cases for an ER configuration that contains the ER components mentioned above:
 
-- When you [import](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) to your Finance instance a new [version](general-electronic-reporting.md#component-versioning) of an ER configuration.
+- When you [import](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) a new [version](general-electronic-reporting.md#component-versioning) of an ER configuration to your Dynamics 365 Finance instance.
 - When you change the [status](general-electronic-reporting.md#component-versioning) of the editable ER configuration from **Draft** to **Completed**.
 - When you [rebase](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) an editable ER configuration by applying a new base version.
 
-You can explicitly run this validation. For doing this, perform one of the following set of steps:
+You can explicitly run this validation. To do this, select one of the following three options, and complete the steps:
 
 - Option 1
-    1.  Open the **Organization administration \> Electronic reporting \> Configurations** page.
-    2.  In the configurations tree in the left pane, select the desire ER configurations containing either ER format or ER model mapping component.
-    3.  On the **Versions** FastTab, select the desire version of the selected ER configuration.
+    1.  Go to **Organization administration \> Electronic reporting \> Configurations**.
+    2.  In the configurations tree in the left pane, select the  ER configurations you want that contain the ER format or ER model mapping component.
+    3.  On the **Versions** FastTab, select the version you want of the selected ER configuration.
     4.  On the **Configurations** page, on the Action Pane, select **Validate**.
+    
 - Option 2 for an ER format
-    1.  Open the **Organization administration \> Electronic reporting \> Configurations** page.
-    2.  In the configurations tree in the left pane, select the desire ER configurations containing ER format component.
-    3.  On the **Versions** FastTab, select the desire version of the selected ER configuration.
-    4.  On the **Configurations** page, on the Action Pane, select the **Designer** option.
+    1.  Go to **Organization administration \> Electronic reporting \> Configurations** page.
+    2.  In the configurations tree in the left pane, select the ER configurations you want that contain the ER format component.
+    3.  On the **Versions** FastTab, select the version you want of the selected ER configuration.
+    4.  On the **Configurations** page, on the Action Pane, select **Designer**.
     5.  On the **Format designer** page, on the Action Pane, select **Validate**.
+    
 - Option 3 for an ER model mapping
-    1.  Open the **Organization administration \> Electronic reporting \> Configurations** page.
-    2.  In the configurations tree in the left pane, select the desire ER configurations containing ER model mapping component.
-    3.  On the **Versions** FastTab, select the desire version of the selected ER configuration.
-    4.  On the **Configurations** page, on the Action Pane, select the **Designer** option.
-    5.  On the **Model to datasource mapping** page, on the Action Pane, select the **Designer** option.
+    1.  Go to **Organization administration \> Electronic reporting \> Configurations** page.
+    2.  In the configurations tree in the left pane, select the ER configurations you want that contain the ER model mapping component.
+    3.  On the **Versions** FastTab, select the version you want of the selected ER configuration.
+    4.  On the **Configurations** page, on the Action Pane, select **Designer**.
+    5.  On the **Model to datasource mapping** page, on the Action Pane, select **Designer**.
     6.  On the **Model mapping designer** page, on the Action Pane, select **Validate**.
 
-You can skip this validation during the configuration's import. For doing this, perform the following steps:
+You can skip this validation during the configuration's import. To do this, complete the following steps:
 
-1.  Open the **Organization administration \> Electronic reporting \> Configurations** page.
+1.  Go to **Organization administration \> Electronic reporting \> Configurations** page.
 2.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3.  Set the **Validate the configuration after importing** option to **No**.
 
-You can also skip this validation during the version's status change or rebase. For doing this, perform the following steps:
+You can also skip this validation during the version's status change or rebase. To do this, complete the following steps:
 
-1.  Open the **Organization administration \> Electronic reporting \> Configurations** page.
+1.  Go to **Organization administration \> Electronic reporting \> Configurations** page.
 2.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3.  Set the **Skip validation at configuration's status change and rebase** option to **Yes**.
 
 ER groups consistency check inspections by the following categories:
- - **Executability** category includes inspections that detect critical issues that may happen at runtime, mostly with **Error** level. 
- - **Performance** category includes inspections that detect issues that may cause non-efficient execution of configured ER components, mostly with **Warning** level.
- - **Data integrity** category includes inspections that detect issues that may cause data loss or runtime issues, mostly with **Warning** level.
+ - **Executability**: Includes inspections that detect critical issues that may happen at runtime, mostly at an **Error** level. 
+ - **Performance**: Includes inspections that detect issues that may cause non-efficient execution of configured ER components, mostly at a **Warning** level.
+ - **Data integrity**: Includes inspections that detect issues that may cause data loss or runtime issues, mostly at a **Warning** level.
 
 ## List of inspections
 
@@ -113,78 +115,72 @@ Review the content of the provided article to find out what kind of componentsâ€
 
 ## <a name="i1">Type conversion</a>
 
-ER checks whether data type of a data model field is compatible with data type of an expression that is configured as the binding of this field. When they are incompatible, the validation error is thrown in the ER model mapping designer telling that ER cannot convert an expression of type A to a field of type B. The presented below steps show how this issue may occurs.
+ER checks whether the data type of a data model field is compatible with data type of an expression that is configured as the binding of this field. When the data types are incompatible, a validation error occurs in the ER model mapping designer stating that ER can't convert an expression of type A to a field of type B. The following steps show how this issue may occur.
 
 1.  Start configuring the ER data model and the ER model mapping components simultaneously.
-2.  In the data model tree, add a new field:
-    1.  Name it as **X**.
-    2.  Select for this field the *Integer* data type.
-
+2.  In the data model tree, add a new field named **X**, select the **Integer** data type.
+  
     ![Configure ER data model component on the Data model page](./media/er-components-inspections-01.png)
 
-3.  In the model mapping data sources pane, add a new data source of the *Calculated field* type:
-    1.  Name it as **Y**.
-    2.  Configure it as containing the `INTVALUE(100)` expression.
-    3.  Bind **X** to **Y**.
-4.  In the data model designer, change data type of **X** from *Integer* to *Int64*.
-5.  Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
+3.  In the **Model mapping data sourcesMM pane, add a new data source of the type, **Calculated field**.
+4.  Name the data source **Y**, and configure it to contain the `INTVALUE(100)` expression.
+5.  Bind **X** to **Y**.*
+6.  In the data model designer, change the data type of **X** from **Integer** to **Int64**.
+7.  Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
 
     ![Validate ER model mapping component on the Model mapping designer page](./media/er-components-inspections-01.gif)
 
-6.  Select **Validate** to inspect the model mapping component of the selected ER configurations on the **Configurations** page.
+8.  Select **Validate** to inspect the model mapping component of the selected ER configurations on the **Configurations** page.
 
     ![Validate ER model mapping component on the Configurations page](./media/er-components-inspections-01a.png)
 
-    >[!NOTE]
-    > The validation error is thrown informing that the expression `INTVALUE(100)` of the data source **Y** returns the value of the *Integer* type that cannot be stored in the **X** data model's field of the *Int64* type.
+    > [!NOTE]
+    > A validation error occurs which states that the expression `INTVALUE(100)` of the data source **Y** returns the value of the **Integer** type that can't be stored in the **X** data model's field of the **Int64** type.
 
-This illustration shows the runtime error that is thrown when you ignore this warning and select **Run** to execute a format that is configured to use this model mapping:
+The following illustration shows the runtime error that occurs when you ignore this warning and select **Run** to execute a format that is configured to use this model mapping:
 
 ![Run the editable format on the Format designer page](./media/er-components-inspections-01b.png)
 
 ### Automatic resolution availability
 
-The option to automatically resolve this issue is not offered.
+The option to automatically resolve this issue is not available.
 
 ### Manual resolution
 
 #### Option 1
 
-Update the data model structure by changing data type of the data model field to make it equal to data type of the expression that is configured for the binding of this field. For the example above, the field **X** data type must be changed back to *Integer*.
+Update the data model structure by changing data type of the data model field to make it equal to data type of the expression configured for the binding of this field. For the example above, the data type of field **X** must be changed back to **Integer**.
 
 #### Option 2
 
-Update the model mapping by changing the expression of the data source that is bound with the data model field. For the example above, the expression of the data source **Y** must be changed to `INT64VALUE(100)`.
+Update the model mapping by changing the expression of the data source that is bound with the data model field. Using the example, the expression of the data source **Y** must be changed to `INT64VALUE(100)`.
 
 ## <a name="i2">Type compatibility</a>
 
-ER checks whether data type of a format element is compatible with data type of an expression that is configured as the binding of this format element. When they are incompatible, the validation error is thrown in the ER Operations designer telling that the configured expression cannot be used as the binding of the current format element to a data source as this expression returns value of data type A that is beyond the scope of data types that are supported by the current format element of type B. The presented below steps show how this issue may occurs.
+ER checks if the data type of a format element is compatible with the data type of an expression that is configured as the binding of this format element. When they are incompatible, a validation error occurs in the ER Operations designer. The error states that the configured expression can't be used as the binding of the current format element to a data source. This is because the expression returns a value of data type A that is beyond the scope of data types supported by the current format element of type B. The following steps show how this issue may occur.
 
 1.  Start configuring the ER data model and the ER format components simultaneously.
-2.  In the data model tree, add a new field:
-    1.  Name it as **X**.
-    2.  Select for this field the *Integer* data type.
-3.  In the format structure tree, add a new format element of the *Numeric* type:
-    1.  Name it as **Y**.
-    2.  In the **Numeric type** field, select the *Integer* data type.
-    3.  Bind **X** to **Y**.
-4.  In the format structure tree, change the **Numeric type** value of the **Y** format element from *Integer* to *Int64*.
-5.  Select **Validate** to inspect the editable format component on the **Format designer** page.
+2.  In the data model tree, add a new field, name it **X** and select the **Integer** data type.
+3.  In the format structure tree, add a new format element of the **Numeric** type.
+4.  Name the new format element **Y**, and in the **Numeric type** field, select the **Integer** data type.
+5.  Bind **X** to **Y**.
+6.  In the format structure tree, change the **Numeric type** value of the **Y** format element from **Integer** to **Int64**.
+7.  Select **Validate** to inspect the editable format component on the **Format designer** page.
 
     ![Validate ER format component on the Format designer page](./media/er-components-inspections-02.gif)
 
-    >[!NOTE]
-    > The validation error is thrown informing that the configured to accept only *Int64* values format element **Y** cannot be populated with the value of the data model's field **X** of the *Integer* type.
+    > [!NOTE]
+    > A validation error occurs that states the configured expression can only accept **Int64** values. The format element **Y** can't be populated with the value of the data model's field **X** of the **Integer** type.
 
 ### Automatic resolution availability
 
-The option to automatically resolve this issue is not offered.
+The option to automatically resolve this issue is not available.
 
 ### Manual resolution
 
 #### Option 1
 
-Update the format structure by changing data type of the **Numeric** format element to make it equal to data type of the expression that is configured for the binding of this element. For the example above, the **Numeric type** value of the format element **X** must be changed back to *Integer*.
+Update the format structure by changing data type of the **Numeric** format element to make it equal to the data type of the expression configured for the binding of this element. In the example above, the **Numeric type** value of the format element **X** must be changed back to **Integer**.
 
 #### Option 2
 
@@ -192,30 +188,27 @@ Update the format mapping of the format element **X** by changing the expression
 
 ## <a name="i3">Missing configuration element</a>
 
-ER checks whether binding expressions contain only data sources that are configured in the editable ER component. The validation error is thrown in the ER Operations designer or the ER model mapping designer for every binding containing a data source that is missing in the editable ER component.
+ER checks if the binding expressions contains only data sources that are configured in the editable ER component. The validation error occurs in the ER Operations designer or the ER model mapping designer for every binding that contains a data source that is missing in the editable ER component.
 
 1.  Start configuring the ER data model and the ER model mapping components simultaneously.
-2.  In the data model tree, add a new field:
-    1.  Name it as **X**.
-    2.  Select for this field the *Integer* data type.
+2.  In the data model tree, add a new field, name it **X**, and select the **Integer** data type.
 
     ![Configure ER data model component on the Data model page](./media/er-components-inspections-01.png)
 
-3.  In the model mapping data sources pane, add a new data source of the *Calculated field* type:
-    1.  Name it as **Y**.
-    2.  Configure it as containing the `INTVALUE(100)` expression.
-    3.  Bind **X** to **Y**.
-4.  In the model mapping designer, on the data sources pane, delete the data source **Y**.
-5.  Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
+3.  In the model mapping data sources pane, add a new data source of the *Calculated field* type and name it **Y**.
+4.  Configure it as containing the `INTVALUE(100)` expression.
+5.  Bind **X** to **Y**.
+6.  In the model mapping designer, on the data sources pane, delete the data source **Y**.
+7.  Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
 
     ![Validate ER model mapping component on the Model mapping designer page](./media/er-components-inspections-03.gif)
 
-    >[!NOTE]
-    > The validation error is thrown informing that the path to the data source **Y** is not found while this data source is used in the binding of the **X** data model's field.
+    > [!NOTE]
+    > A validation error occurs which states that the path to the data source **Y** is not found while this data source is used in the binding of the **X** data model's field.
 
 ### Automatic resolution availability
 
-The **Unbind** option is offered to automatically resolve this issue. When you selected this option, the containing a missing data source binding is removed.
+The **Unbind** option is offered to automatically resolve this issue. When you selected this option, the missing data source binding is removed.
 
 ### Manual resolution
 
