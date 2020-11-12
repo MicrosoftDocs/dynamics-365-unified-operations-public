@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Forced electronic invoices generation
-description: This topic explains how to set up and use forced electronic invoices generation.
+title: Generate forced electronic invoices
+description: This topic explains how to set up and use functionality to force generating electronic invoices.
 author: ilkond
 manager: AnnBe
-ms.date: 11/03/2020
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,19 +32,19 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure forced generation of electronic invoices files right after posting of related customer invoices regardless of the selected printing options.
+This article describes how to configure a forced generation of electronic invoices files immediately after related customer invoices are posted regardless of the selected printing options.
 
 ## Prerequisites
 
-- In the **Feature management** workspace, turn on the **Forced electronic invoices generation** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
-- Configure the system to enable electronic invoices generation. Although Electronic invoices configuration is a country-specific process, it contains the steps which are in common for all the supported countries. For example, please see how to configure [Norwegian electronic invoices](emea-nor-e-invoices.md).
+1. In the **Feature management** workspace, turn on the **Forced electronic invoices generation** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+2. Configure the system to enable electronic invoice generation. Although Electronic invoices configuration is a country-specific process, it contains the steps which are in common for all supported countries. For example, see how to configure [Norwegian electronic invoices](emea-nor-e-invoices.md).
 
-## Posting invoices
-When posting invoices with **Forced electronic invoices generation** feature enabled, two scenarios are available.
+## Post invoices
+When you post invoices with the **Forced electronic invoices generation** feature enabled, two scenarios are possible.
 
-- If no **Electronic reporting destinations** are defined then output files for electronic invoices will be generated in **Electronic reporting jobs**. To inquire about the files of generated electronic invoices, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** and select a required job, then select **Show files**, and then select **Open** to download the file with the electronic invoice.
+- If no electronic reporting destinations are defined, output files for electronic invoices will be generated in **Electronic reporting jobs**. To view the files of generated electronic invoices, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**, select a required job, and then select **Show files**. Select **Open** to download the file with the electronic invoice.
 
-- If **Electronic reporting destinations** are defined for electronic invoices formats then generated output files will be sent to a related **File destination** configured for Electronic reporting destination.
+- If there are electronic reporting destinations defined for electronic invoices formats,  generated output files will be sent to a related file destination that is configured for Electronic reporting destination.
 For more details about Electronic reporting destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 > [!NOTE]
