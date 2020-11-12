@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration for Finance insights (preview)
+title: Configuration for Finance Insights (preview)
 description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
 manager: AnnBe
