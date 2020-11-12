@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot the product configurator
-description: This topic describes how to fix issues that you might encounter while working with Product Configurator.
+description: This topic describes how to fix issues that you might encounter while you work with product configurator.
 author: SmithaNataraj
 manager: tfehr
 ms.date: 11/04/2020
@@ -31,47 +31,50 @@ ms.dyn365.ops.version: 10.0.15
 ---
 # Troubleshoot the product configurator
 
-This topic describes how to fix common issues that you might encounter while working with the product configurator.
+This topic describes how to fix issues that you might encounter while you work with the product configurator.
 
 ## Item text is overwritten when I configure a product on a sales order line.
 
 ### Issue description
 
-This issue happens when you create a sales order line for a configurable item and then modify the item text. When you configure the item and then select **OK**, the text is overwritten with the standard text.
+This issue occurs when you create a sales order line for a configurable item and then modify the item text. When you configure the item and then select **OK**, the text is overwritten with the standard text.
 
 ### Issue resolution
 
-This is working as expected. The text field includes the variant name, which is only populated after you configure the line. Therefore, you must only change the text after you have configured the line, not before.
+This behavior is expected. The text field includes the variant name, which is filled in only after you configure the line. Therefore, you must change the text after you've configured the line, not before.
 
-## While calculating product configuration models, integer attributes a rounded incorrectly.
+## Integer attributes are incorrectly rounded when product configuration models are calculated.
 
 ### Issue description
 
-This issue can occur when you do the following series of actions:
+This issue can occur when you perform the following series of actions:
 
 1. Set up the following attributes on a production configuration model:
+
     - Input (integer)
     - Percent (decimal)
     - Result (integer)
 
-2. Create a calculation that has the following expression:<br>*Result = Input \* Percent/100*.
+2. Create a calculation that has the following expression:
 
-3. The integer result doesn't always round correctly&mdash;sometimes it does, but not always. For example: When the input is 1000 and the percentage is 2.40, you would expect the integer result to be 24 because 2.40% of 1000 is 24 (24.00 when decimalized). However, the result is instead shown as 23. When the percentage is 2.50, the calculation rounds to 25 as expected, but when the percentage is 2.39, it rounds to 24 instead 23.
+    *Result* = *Input* × *Percent* ÷ 100
+
+In this case, the integer result isn't always correctly rounded. For example, the input is 1,000, and the percentage is 2.40. Therefore, you expect the integer result to be 24, because 2.40 percent of 1,000 is 24 (or 24.00 in decimal form). Instead, the result is shown as 23. However, when the percentage is 2.39, the calculation is rounded to 24 instead of 23. When the percentage is 2.50, the calculation is rounded to 25, as expected.
 
 ### Issue resolution
 
-This happens because of the way Microsoft Solver Foundation represents numbers internally by using fractions. The result of the calculation for the 2.4 example is represented as 27021597764222975 / 1125899906842624 = 23.99999999999999911182158029987476766109466552734375 and .NET will return 23 when casting this value to an integer.
+This issue occurs because of the way that Microsoft Solver Foundation internally represents numbers by using fractions. For the preceding example, the result of the calculation where the percentage is 2.40 is represented as 27021597764222975 ÷ 1125899906842624 = 23.99999999999999911182158029987476766109466552734375. When .NET casts this value as an integer, it will return 23.
 
-This behavior will not be changed because other scenarios depend on it. In the given example, the problem can be solved by introducing and additional decimal attribute and a calculation.
+This behavior won't be changed, because other scenarios depend on it. For the preceding example, you can fix the issue by introducing an additional decimal attribute and a calculation.
 
-For example, you could set up the following attributes on a production configuration model:
+For example, you can set up the following attributes on a production configuration model:
 
 - Input (integer)
 - Percent (decimal)
 - ResultDecimal (decimal)
 - ResultInteger (integer)
 
-And then add these calculations:
+You can then add the following calculations:
 
-- *ResultDecimal = Input \* Percent/100*
-- *ResultInteger = ResultDecimal*
+- *ResultDecimal* = *Input* × *Percent* ÷ 100
+- *ResultInteger* = *ResultDecimal*
