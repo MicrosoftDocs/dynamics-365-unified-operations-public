@@ -66,7 +66,7 @@ The following illustration shows the class structure of the extension.
 ![Commerce Scale Unit extension class diagram](media/RSClassFlow.png)
 
 > [!NOTE]
-> Retail server (RS) doesn’t support loading both IController and CommerceController extensions, if you include both type of extensions then RS load will fail. Extension should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the RS extension to IController.
+> Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
 
 ### Steps
 
