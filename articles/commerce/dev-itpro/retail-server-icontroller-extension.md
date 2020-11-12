@@ -55,6 +55,9 @@ The following illustration shows the class structure of the extension.
 
 ![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
 
+> [!NOTE]
+> Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
+
 ## Create a new Retail Server API
 
 1. Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
