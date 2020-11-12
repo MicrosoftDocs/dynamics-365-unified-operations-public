@@ -48,7 +48,7 @@ Engineering change management helps you plan and manage product versioning, and 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
 
-The [Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Turn on engineering change management for your system
 
