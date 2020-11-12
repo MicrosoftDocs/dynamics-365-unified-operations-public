@@ -54,7 +54,7 @@ The preview for cloud and edge scale units becomes available for existing custom
 To access the October preview release 10.0.15/Platform update 39 for deployment in your [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) environment, you must be part of the preview early access program (also known as PEAP) for Supply Chain Management. You can join PEAP if you're already a member of the broader [Dynamics Insider Program](https://experience.dynamics.com/insider). Just select the specific program that is named "Finance & Operations: Preview early access program (PEAP)."
 
 > [!IMPORTANT]
-> The scale unit capability for Supply Chain Management is made available only if you agree to the [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274).
+> The scale unit capability for Supply Chain Management is made available only if you agree to the [Cloud + Edge Preview for Finance and Operations terms](https://Aka.ms/SCMCnETerms).
 
 ### Data processing for the preview
 
@@ -88,7 +88,7 @@ To sign up for the preview, go to the [Scale Unit Manager portal](https://aka.ms
 > [!IMPORTANT]
 > For the initial phase of the preview program for this feature, Microsoft is supporting only hubs that have cloud scale units, not hubs that have edge scale units. Edge scale units are installed on-premises and are expected to become available during an upcoming phase of the program.
 
-Because cloud and edge scale units are a preview feature, services that are related to them are currently available in limited countries and regions. By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. By enabling cloud and edge scale units, you also agree to the [Preview Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2105274). To learn more about cloud and edge scale units, see the [documentation](https://aka.ms/scmcne).
+Because cloud and edge scale units are a preview feature, services that are related to them are currently available in limited countries and regions. By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. By enabling cloud and edge scale units, you also agree to the [Cloud + Edge Preview for Finance and Operations terms](https://Aka.ms/SCMCnETerms). To learn more about cloud and edge scale units, see the [documentation](https://aka.ms/scmcne).
 
 Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://aka.ms/privacy).
 
