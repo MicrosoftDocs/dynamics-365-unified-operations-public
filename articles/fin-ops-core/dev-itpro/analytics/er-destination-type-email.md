@@ -5,7 +5,7 @@ title: Email ER destination type
 description: This topic provides information about how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/03/2020
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
