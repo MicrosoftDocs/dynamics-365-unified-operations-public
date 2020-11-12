@@ -42,7 +42,7 @@ This topic explains how to split a percentage of one asset book to a new asset b
 
 ## Split a fixed asset
 
-Before a fully depreciated asset is split, the asset book status should be manually changed from **Closed** to **Open**. This step is required because the book status has to be **Open** if you must post transactions for the asset (for example, for a disposal sale). After the asset book status is changed, follow these steps to split the asset.
+Before a fully depreciated asset is split, the asset book status should be manually changed from **Closed** to **Open**. This step is required because the book status has to be **Open** if you must post transactions for the asset (for example, for a disposal sale). You must also turn on the **Allow multiple transactions within one voucher** parameter on the **General** tab of the **General ledger parameters** page. After the asset book status is changed and multiple transactions within one voucher have been allowed, complete the following steps to split the asset.
 
 1. In the list, find and select the link of the fixed asset to split.
 2. Select **Books**. Select the book to split to the new asset.

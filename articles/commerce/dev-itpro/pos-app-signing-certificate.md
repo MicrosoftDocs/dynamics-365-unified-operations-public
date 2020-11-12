@@ -5,7 +5,7 @@ title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/24/2020
+ms.date: 11/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -85,4 +85,24 @@ If you use thumbprint to sign the MPOS app, then install the certificate locally
 This option will work if the build user is a local user. However if you are using the Azure DevOps agents to generate the build, then the agent may not have permission to access the cert store to use the certificate for signing or the build machine will not have the certificate installed. In this case, the workaround is to change the build user to local user and install the certificate in the box. However, this option will not work if you don’t have admin access to the box.
 
 > [!NOTE]
-> If the .pfx file or Secure File task option is used to sign the app, then leave the **ModernPOSPackageCertificateThumbprint** node in the **Customization.settings** file empty. If the thumbprint option is used, then leave **ModernPOSPackageCertificateKeyFile** empty. If both the values are updated, then the build will fail.
+> If the .pfx file or Secure File task option is used to sign the app, then leave the **ModernPOSPackageCertificateThumbprint** node in **Customization.settings** empty. If the thumbprint option is used, then leave **ModernPOSPackageCertificateKeyFile** empty. If both the values are updated, then the build will fail.
+
+> Don’t use the sample certificate available in the Retail SDK for production. It can be used only for development purposes. The sample Contoso certificate can't be renewed and the sample certificate included in Retail SDK version 10.0.16 or before expires on December 31, 2020. Expired certificates will not break the existing MPOS app from running. It will continue to work unless there is a policy on the machine enabled to prevent this. If a policy is set to prevent apps to run with expired certificates, then MPOS will not load after the certificate expiration. MPOS upgrade will also fail if the expired certificate is used. We recommend that you use a certificate from a trusted certifying authority (CA) for production. Follow steps mentioned in the “Certification renewal” section about how to renew the certificate.
+
+## Certification renewal
+
+The certificate used for MPOS app signing must be renewed before it expires. Expired certificates will not break the existing MPOS app from running. However, you need to renew the certificate before it expires.
+
+### Renew a certificate from trusted CA
+
+Contact your certifying authority (CA) for the certificate renewal process. For a trusted certificate, no action is required on the MPOS side.
+
+### Renew a self-signed certificate
+
+If you used self-signed certificate or test certificate or sample certificate form Retail SDK, these are not renewable. Your policy will not allow MPOS to run with an expired certificate, so may need to try the following options:
+
+- Relax the policy temporarily, until you can sign the MPOS with a new certificate and deploy it. This is not a recommend solution because it’s a security risk to remove policies.
+
+- Generate a new MPOS package by signing it with new certificate from trusted CA. Deploy the new certificate to the machine where MPOS is installed and then redeploy MPOS. This requires reactivation of MPOS and app registration in Azure.
+
+- Generate a new MPOS package by signing it with new self-signed certificate or test certificate or sample certificate form Retail SDK. Use the same public key and provider that you used before. Deploy the new certificate to the machine where MPOS is installed and then redeploy MPOS. This will not require reactivation and new app registration in Azure because you are using the same public key. The option of using a self-signed certificate for production is not recommended. We recommend that you use a certificate from a trusted CA.

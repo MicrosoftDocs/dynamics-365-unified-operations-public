@@ -5,7 +5,7 @@ title: Engineering change management overview
 description: This topic provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: t-benebo
 manager: tfehr
-ms.date: 09/28/2020
+ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,6 +45,10 @@ Engineering change management helps you plan and manage product versioning, and 
 - Improved product lifecycle management through fine-grained control over when a released product can be used in specific business processes
 - Engineering change requests that are supported by workflows
 - Engineering change orders that are supported by workflows
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+
+The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Turn on engineering change management for your system
 
