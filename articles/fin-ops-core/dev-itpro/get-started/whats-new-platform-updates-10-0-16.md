@@ -46,6 +46,9 @@ This topic lists the features that are included in the platform updates for vers
 [Article that provides details](URL to article that provides feature details).
 
 -  [Session inactivity timeout] renamed from [Session idle timeout]
+
+-  [Warning of deprecation of Visual Studio 2015](removed-deprecated-features-platform-updates#visual-studio-2015). 10.0.16 is the last version to support Visual Studio 2015.
+
 ## Additional resources
 
 ### Bug fixes

@@ -150,7 +150,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Once the availability of new virtual machines (VMs) with Visual Studio 2017 is announced, existing VMs with only Visual Studio 2015 will have to be redeployed by Release Wave 1 of 2021. |
+| **Status**                         | Virtual machines deployed on or after 10.0.13 (PU37) contain Visual Studio 2017. 10.0.16 (PU40) is the final release with support for Visual Studio 2015. Virtual machines with only Visual Studio 2015 will not be able to update to 10.0.17 (PU41). |
 
 ### Field groups containing invalid field references
 
