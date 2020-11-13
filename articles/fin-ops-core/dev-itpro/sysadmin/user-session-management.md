@@ -5,7 +5,7 @@ title: User session management
 description: The user session setting represents the amount of time a user can be signed in before the user’s session expires.
 author: paulliew
 manager: AnnBe
-ms.date: 11/11/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.16
 # User session management
 
 [!include[banner](../includes/banner.md)]
+[!include[preview banner](../includes/preview-banner.md)]
 
 
 The user session setting represents the amount of time a user can be signed in before the user’s session expires. After the user’s session expires, the user is required to sign in with their credentials.
