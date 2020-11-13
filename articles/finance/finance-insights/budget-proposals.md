@@ -41,7 +41,7 @@ Budget proposals provide the following benefits:
 * Provides the budget proposal output as a budget register document, which is easy to modify, import, export, and use for standard reporting throughout Dynamics 365 Finance.
 
 ### Importing sufficient data for a good prediction
-The quality of the predictions depends on having sufficient cleansed data that are consistent for several years. In some cases, three years of consistent data are sufficient, but often five to 10 years is best. If 10 years of historical data do not exist in the system today, consider cleansing previous historical data that may not exist in the systen, and uploading that as a historical budget. 
+The quality of the predictions depends on having sufficient cleansed data that are consistent for several years. In some cases, three years of consistent data are sufficient, but often five to 10 years is best. If 10 years of historical data do not exist in the system today, consider cleansing previous historical data that may not exist in the system, and uploading that as a historical budget. 
 
 The term *cleansing data* refers to ensuring that the data is consistent in terms of accounts and financial dimensions when a reorganization has happened, or importing legacy data generated before a change in the chart of accounts or financial dimensions. 
 
@@ -101,7 +101,7 @@ The actuals versus budget inquiry can be used to have a line-by-line view of act
 A yearly view that includes the actual amount, budget amount, variance amount, and percentage used is available in the results. This page can then open the **Period balance** page where you can review any account on a period-by-period basis for deeper evaluation showing variance amount. 
 
 #### Proving out with financial reporting
-You can use the **Actual vs Budget - Default financial** report to see summary and detailed views of actuals versus the budget proposal. The default report design includes a single yearly view for original budget, revised budget, actuals, variance amount, variance percent, and percent of budget. The report can be easily updated to include 12 monthly columns with corresponding values, rather than a single amount with variances. You can set the budget proposal budget model by selecting **Report Options** and then selecting the budget model from the **Scenarios** drop-down meuu. This will refresh the report to the correct budget model. 
+You can use the **Actual vs Budget - Default financial** report to see summary and detailed views of actuals versus the budget proposal. The default report design includes a single yearly view for original budget, revised budget, actuals, variance amount, variance percent, and percent of budget. The report can be easily updated to include 12 monthly columns with corresponding values, rather than a single amount with variances. You can set the budget proposal budget model by selecting **Report Options** and then selecting the budget model from the **Scenarios** drop-down menu. This will refresh the report to the correct budget model. 
 
 When a 12-month financial report is exported to Excel, you can easily insert a line chart or sparkline to provide a graphical view of the input or output data that helps reveal trends in the data.
 
