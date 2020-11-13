@@ -5,7 +5,7 @@ title: Warehouse slotting
 description: This topic provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 author: mirzaab
 manager: tfehr
-ms.date: 07/01/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,36 +32,21 @@ ms.dyn365.ops.version: Release 10.0.9
 
 Several warehouse slotting features are available to help warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 
-The **Warehouse slotting feature** lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
+The *Warehouse slotting feature* lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
 
-The **Warehouse slotting for transfer orders** feature allows warehouse managers to replenish picking locations based on demand from transfer orders that aren't yet released to the warehouse. It ensures that picking locations will include all the items needed for the transfer orders once they are released to warehouse.
+The *Warehouse slotting for transfer orders* feature allows warehouse managers to replenish picking locations based on demand from transfer orders that aren't yet released to the warehouse. It ensures that picking locations will include all the items needed for the transfer orders once they are released to warehouse.
 This feature requires that you also enable the *warehouse slotting feature*.
 
-The **Warehouse slotting allocation enhancements** feature adds an option for the template lines used by the *warehouse slotting feature*. The option enables the system to consider existing on-hand inventory at a target location, which can result in fewer replenishments being generated for slotting.
+The *Warehouse slotting allocation enhancements* feature adds an option for the template lines used by the *warehouse slotting feature*. The option enables the system to consider existing on-hand inventory at a target location, which can result in fewer replenishments being generated for slotting.
 This feature requires that you also enable the *warehouse slotting feature* and can optionally be used together with the *warehouse slotting for transfer orders* feature.
 
 ## Turn on the warehouse slotting features
 
-Before you can use these features, they must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the features are listed in the following way:
+Before you can use these features, they must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. Enable the following features as needed:
 
-### Warehouse slotting feature
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Warehouse slotting feature*
-
-### Warehouse Slotting for transfer orders
-
-Requires that the *warehouse slotting feature* be enabled first.
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Warehouse Slotting for transfer orders*
-
-### Warehouse Slotting allocation enhancements
-
-Requires that the *warehouse slotting feature* be enabled first.
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Warehouse Slotting allocation enhancements*
+- *Warehouse slotting feature*
+- *Warehouse slotting for transfer orders*<br>(*warehouse slotting feature* must be enabled first)
+- *Warehouse slotting allocation enhancements*<br>(*warehouse slotting feature* must be enabled first)
 
 ## Set up warehouse slotting
 
@@ -123,7 +108,7 @@ Each slotting template controls how inventory is assigned to locations for a spe
 1. Go to **Warehouse management \> Setup \> Replenishment \> Slotting templates**.
 1. Select **New** to create a template.
 
-Next, you must set up the template header, slotting specifications, and location directives, as explained in the following subsections. Setup below follows the setup for slotting for sales orders. Slotting for transfer orders will follow the same guidelines, except that the **Demand type** will be *Transfer orders*.
+Next, you must set up the template header, slotting specifications, and location directives, as explained in the following subsections. The following setup is similar to the setup for slotting for sales orders. Slotting for transfer orders will follow the same guidelines, except that the **Demand type** will be *Transfer orders*.
 
 #### Set up a sales orders slotting template header
 
@@ -133,7 +118,7 @@ Next, you must set up the template header, slotting specifications, and location
     - **Description:** _61_
     - **Demand type:** *Sales order*
 
-        - Currently, *Sales orders* and *Transfer orders* are the only demand types that are supported. *Warehouse Slotting for transfer orders* feature must be enabled in order to select the transfer orders option.
+        - Currently, *Sales orders* and *Transfer orders* are the only demand types that are supported. The *Warehouse Slotting for transfer orders* feature must be enabled if you want to select the *Transfer orders* option.
 
     - **Demand strategy:** _Ordered_
 
@@ -150,7 +135,7 @@ You can also specify a query to narrow the scope of the demand that is evaluated
 
 #### Set up slotting specifications for each template
 
-For each *sales orders* template that you create, follow these steps to add a line for each slotting specification.
+For each *sales orders* template that you create, follow these steps to add a line for each slotting specification:
 
 1. On the **Slotting template details** FastTab, select **New** to create a template line.
 1. On the new line, set the following values:
@@ -179,8 +164,7 @@ For each *sales orders* template that you create, follow these steps to add a li
 
         - **Assume empty** – This system should assume that all locations in the picking area are empty and should not check those locations for inventory.
         - **Consider qty** – The system should check the locations in the picking area for inventory and should skip any locations that aren't empty.
-        - **Consider on-hand** - When this option is active the system will consider if any of the target locations contains unreserved quantities for the item in the demand line. If this quantity is sufficient to satisfy at least one unit of the demand line, the slotting plan record generated is reduced by the available amount. i.e: if the demand is 10 cases, and 1 case is on-hand, the located demand will be 9 cases. If the demand is 10 cases, and 1 each is on-hand, the located demand will be 10 cases.
-            - This option is enabled when the *Warehouse slotting allocation enhancements* feature is enabled.
+        - **Consider on-hand** - When this option is active, the system will consider whether any of the target locations contains unreserved quantities for the item in the demand line. If this quantity is sufficient to satisfy at least one unit of the demand line, the generated slotting plan record  is reduced by the available amount. For example, if the demand is 10 cases, and 1 case is on-hand, the located demand will be 9 cases. If the demand is 10 cases, and 1 each is on-hand, the located demand will be 10 cases. This option is only available when the *Warehouse slotting allocation enhancements* feature is enabled.
 
     - **Directive code:** _Slotting_
 
@@ -203,7 +187,7 @@ For each *sales orders* template that you create, follow these steps to add a li
         - **Only fixed locations for the product variant** – The system should slot only to locations that are fixed locations for the product variant.
 
 > [!NOTE]
-> When the slotting template contains at least one line with **Assign slot criteria** set to *consider on-hand* let ups are no longer allowed for any line in the template.
+> When the slotting template contains at least one line with **Assign slot criteria** set to *consider on-hand*, let ups are no longer allowed for any line in the template.
 
 1. Select **Save**.
 1. Select **New** to create a second template line.
@@ -264,7 +248,7 @@ At least one location directive must be set up to support slotting picks. Use th
     - **From quantity:** _0_
     - **To quantity:** _1000000_
 
-1. Accept the remaining fields default values.
+1. Accept the default values for the remaining fields.
 1. Select **Save** to make the **Location Directive Actions** FastTab available.
 
 ##### Configure the Location Directive Actions FastTab
@@ -272,11 +256,11 @@ At least one location directive must be set up to support slotting picks. Use th
 1. On the **Location Directive Actions** FastTab, select **New** to create a line.
 1. On the new line, set the following values. Accept the default values for all other fields.
 
-    - **Sequence number**: Accept the default
+    - **Sequence number**: Accept the default.
     - **Name:** _Bulk_
     - **Strategy:** _None_
 
-1. Accept the remaining fields default values.
+1. Accept the default values for the remaining fields.
 1. Select **Save** to make the **Edit query** button available.
 
 ##### Edit the query
@@ -358,17 +342,17 @@ After demand has been generated, you must use the **Locate demand** command to g
 
 #### Slotting plan
 
-The slotting plan shows the location that each item/quantity was assigned to, whether overflow was used, whether let-up work was created, and the template line that was used. **Any demand that could not be slotted is highlighted in red.**
+The slotting plan shows the location that each item/quantity was assigned to, whether overflow was used, whether let-up work was created, and the template line that was used. *Any demand that could not be slotted is highlighted in red.*
 
 - On the Action Pane, select **Slotting plan** to view the results.
 
 > [!NOTE]
 >
-> - The “Generate demand,” “Locate demand,” and “Run replenishment” processes (in the buttons in the Slot templates form) now are run in sandbox.
-> - Generate, locate demand, and run replenishment have a lock such that these processes cannot be triggered at the same time and potentially delete the data in use.
-> - Demand and locate show a warning if the run did not generate records or if the records are missing information.
-> - The slotting plan page does not have *New, Edit,* or *Delete* buttons in the toolbar since the data source is non-editable.
-> - The *Run slotting* page validates the slot template and processes selected.
+> - The **Generate demand**, **Locate demand**, and **Run replenishment** processes (available on the **Slotting templates** page Action Pane) now are run in a sandbox.
+> - **Generate demand**, **Locate demand**, and **Run replenishment** have a lock that ensures these processes can't be triggered at the same time, which could otherwise delete the data in use.
+> - **Generate demand** and **Locate demand** show a warning if the run did not generate records or if the records are missing information.
+> - When you select **Slotting plan**, the page doesn't have **New**, **Edit**, or **Delete** buttons in the toolbar because the data source is non-editable.
+> - When you select **Run replenishment**, the system validates the selected slot template and processes.
 
 #### Create replenishment
 
