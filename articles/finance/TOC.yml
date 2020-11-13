@@ -1014,8 +1014,8 @@
           href: finance-insights/evaluate-payment-prediction.md
         - name: Improve the prediction model
           href: finance-insights/evaluate-payment-prediction.md
-        - name: Use external data in cash flow forecasts
-          href: finance-insights/external-data-in-cash-flow.md
+      - name: Use external data in cash flow forecasts
+        href: finance-insights/external-data-in-cash-flow.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
