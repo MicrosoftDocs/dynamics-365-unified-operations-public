@@ -54,19 +54,19 @@ For the **Products** section, you can define the following field values for the 
 - **Unit**
 
 > [!Note]
-> It is not mandatory to define a **Unit** for each location stocking limit record. The location capacity calculations will be done based on the inventory unit quantities and, when using a value without a defined unit conversion, the **Location directive limit** record will get skipped (as if it had another **Item number** defined). <!-- KFM: should "Location directive limit record" be "location stocking limit record"? -->
+> It is not mandatory to define a **Unit** for each location stocking limit record. The location capacity calculations will be done based on the inventory unit quantities and, when using a value without a defined unit conversion, the location stocking limit record record will get skipped (as if it had another **Item number** defined).
 
 ## Example – Purchase order receiving
 
-This example shows the process based on a clean *USMF* demo data set having the **Location stocking limits \> Product variant** setup defined as:
+This example shows the process based on a clean *USMF* demo data set with the following setting on the **Product variants** tab of the **Location stocking limits** page:
 
 |Warehouse|Location profile ID|Item number|Size|Quantity|Unit|
 |---------|-------------------|-----------|----|--------|----|
-|24       |FLOOR              |D0013      |M   |100     |Ea  |
+|24       |FLOOR              |D0013      |M   |300     |Ea  |
 |24       |FLOOR              |D0013      |L   |240     |Ea  |
 |24       |FLOOR              |D0013      |S   |360     |Ea  |
 
-The products have different unit of measure product variant setups defined, which is aligned with the location stocking limits for 3 pallets (PL):
+The products have different unit of measure product variant setups defined, which are aligned with the location stocking limits for three pallets (PL):
 
 - **Size** *M*: 1 pallet (PL) = 100 each (Ea)
 - **Size** *L*: 1 pallet (PL) = 80 each (Ea)
@@ -76,10 +76,10 @@ This means that each location that has its **Location profile ID** set to *FLOOR
 
 ### Prepare for the example
 
-To illustrate the concept, let's run a purchase order receiving flow for two lines. But first make the following updates in the demo data to make sure the locations allow carrying mixed items and that we only use the empty locations  *FL-002* to *FL-004* without any open inbound work.
+To illustrate the concept, let's run a purchase order receiving flow for two lines. But first make the following updates to the demo data to make sure the locations allow carrying mixed items and that we only use the empty locations *FL-002* to *FL-004* without any open inbound work.
 
-1. Change the **Location profile** from *FLOOR* to *FLOOR-05* for **Location** *FL-001*.
-1. Select the **Allow mixed items** to *Yes* for the **Location profile** *FLOOR*.
+1. For **Location** *FL-001*, change the **Location profile** from *FLOOR* to *FLOOR-05*.
+1. For the **Location profile** *FLOOR*, set **Allow mixed items** to *Yes* .
 1. Create a purchase order with two lines:
     |Warehouse|Item number|Size|Quantity|Unit|
     |---------|-----------|----|--------|----|
@@ -101,9 +101,9 @@ Start receiving **Quantity** *4*, **Unit** *PL*, **Size** *S* after looking at t
     - 1 PL -> FL-003
     - 3 PL -> FL-004
 
-Logically, you might assume that the system has failed in allocating the proper putaway locations. Why did the system not assign 2 more pallets of **Size** *L* to **Location** *FL-003*, so we would have a total of 3 pallets for putaway into this location?
+Logically, you might assume that the system has failed to allocate the proper putaway locations. Why did the system not assign 2 more pallets of **Size** *L* to **Location** *FL-003*, so we would have a total of 3 pallets for putaway into this location?
 
-To explain this, we need to understand the selection criteria for the location stocking limit, where the system selects the most detailed matching record. In our case, this is the line for **Size** *L* containing the **Quantity** *240* of **Unit** *Ea*. Because we already have open work from the previous receipt of **Size** *S*  of **Quantity** *120*, **Unit**  *Ea*, the remaining capacity is calculated as *240 &ndash; 120 = 120 Ea*, which can only carry 1 pallet of 80 Ea.
+To explain this, we need to understand the selection criteria for the location stocking limits, where the system selects the most detailed matching record. In our case, this is the line for **Size** *L* containing the **Quantity** *240* of **Unit** *Ea*. Because we already have open work from the previous receipt of **Size** *S*, **Quantity** *120*, **Unit**  *Ea*, the remaining capacity is calculated as *240 &ndash; 120 = 120 Ea*, which can only carry 1 pallet of 80 Ea.
 
 > [!Note]
 > You can't use location stocking limits to control, for example, the replenishment of items with different quantities within the same location. In this case, use a *replenishment template*.
