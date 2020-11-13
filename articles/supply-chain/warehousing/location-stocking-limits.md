@@ -101,7 +101,7 @@ Start receiving **Quantity** *4*, **Unit** *PL*, **Size** *S* after looking at t
     - 1 PL -> FL-003
     - 3 PL -> FL-004
 
-Logically, you might assume that the system has failed to allocate the proper putaway locations. Why did the system not assign 2 more pallets of **Size** *L* to **Location** *FL-003*, so we would have a total of 3 pallets for putaway into this location?
+Logically, you might assume that the system has failed to allocate the proper putaway locations. At the last step, why didn't the system add 2 pallets of **Size** *L* to **Location** *FL-003* (rather than 1) so we would have a total of 3 pallets for putaway into this location?
 
 To explain this, we need to understand the selection criteria for the location stocking limits, where the system selects the most detailed matching record. In our case, this is the line for **Size** *L* containing the **Quantity** *240* of **Unit** *Ea*. Because we already have open work from the previous receipt of **Size** *S*, **Quantity** *120*, **Unit**  *Ea*, the remaining capacity is calculated as *240 &ndash; 120 = 120 Ea*, which can only carry 1 pallet of 80 Ea.
 
