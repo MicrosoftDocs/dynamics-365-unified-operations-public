@@ -63,3 +63,5 @@ Digital assets and management features are located within site builder under **M
 [Crop images](dam-crop-images.md)
 
 [Customize image focal points](dam-custom-focal-point.md)
+
+[Upload and serve static files](upload-serve-static-files.md)
