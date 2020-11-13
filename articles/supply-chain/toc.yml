@@ -240,9 +240,9 @@
         - name: Functional location lifecycle states
           href: asset-management/setup-for-functional-locations/functional-location-stages.md
         - name: Maintenance attribute types
-          href: asset-management/setup-for-functional-locations/functional-location-types.md
-        - name: Functional location types
           href: asset-management/setup-for-functional-locations/specification-types.md
+        - name: Functional location types
+          href: asset-management/setup-for-functional-locations/functional-location-types.md  
       - name: Functional locations
         items:
         - name: Introduction to functional locations
