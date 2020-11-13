@@ -77,10 +77,10 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart**, **Do not navigate to cart**, and **Show notifications**. When the value is set to **Navigate to cart**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart**, users aren't sent to the cart page after they add an item. When the value is set to **Show notifications**, users are shown a confirmation notification and can continue to browse on the product details page. 
+- **Add product to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart page**, **Do not navigate to cart page**, and **Show notification**. When the value is set to **Navigate to cart page**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart page**, users aren't sent to the cart page after they add an item. When the value is set to **Show notification**, users are shown a confirmation notification and can continue to browse on the product details page. 
 
 > [!IMPORTANT]
-> The **Add to cart** site settings are available in the Dynamics 365 Commerce 10.0.11 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> The **Add product to cart** site settings are available in the Dynamics 365 Commerce 10.0.11 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
 The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
 
