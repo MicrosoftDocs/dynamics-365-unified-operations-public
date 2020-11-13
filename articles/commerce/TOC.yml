@@ -820,19 +820,19 @@
         href: task-mgmt-assign-lists.md
       - name: Task management in POS
         href: task-mgmt-pos.md
-    - name: Manage your e-Commerce site 
+    - name: Manage your e-commerce site 
       items:
       - name: E-commerce site overview
         href: online-store-overview.md
-      - name: Create an e-Commerce site
+      - name: Create an e-commerce site
         items:
         - name: Configure your domain name
           href: configure-your-domain-name.md
-        - name: Deploy a new e-Commerce tenant
+        - name: Deploy a new e-commerce tenant
           href: deploy-ecommerce-site.md          
-        - name: Create an e-Commerce site
+        - name: Create an e-commerce site
           href: create-ecommerce-site.md
-        - name: Associate an e-Commerce site with an online channel
+        - name: Associate a Dynamics 365 Commerce site with an online channel
           href: associate-site-online-store.md
         - name: Manage robots.txt files
           href: manage-robots-txt-files.md
@@ -2236,7 +2236,7 @@
           href: dev-itpro/commerce-runtime-overview.md
         - name: CRT services
           href: dev-itpro/crt-services.md
-        - name: CRT and Retail Server extensibility
+        - name: CRT extension pattern
           href: dev-itpro/commerce-runtime-extensibility.md
         - name: Manage secrets for Retail channels
           href: dev-itpro/manage-secrets.md
