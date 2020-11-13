@@ -32,13 +32,10 @@ ms.dyn365.ops.version: AX 10.0.12
 # Exclude products with certain product lifecycle states
 
 [!include [banner](../../includes/banner.md)]
-<!-- KFM: We should orient the reader a bit more here. Where are these settings? -->
-Use the **Product lifecycle state** to control the released products (or released product variants) that are included during master planning. The user-defined product lifecycle state has a control **Is active for planning**. By default, this is set to *Yes* for all created product lifecycle states, but it can be changed to *No*. When set to *No*, the associated released products (or released product variants) are:
 
-- Excluded from master planning.
-- Excluded from BOM-level calculation.
+Released products (and released product versions) include a **Product lifecycle state** setting, which you can use to control (among other things) which products are included during master planning. You can add, remove, and edit lifecycle states as needed by going to **Product information management \> Setup \> Product lifecycle state**. For each product lifecycle state, set **Is active for planning** to *Yes* to include products that have that state during master planning. When set to *No*, the associated products and variants will be excluded from all master planning and BOM-level calculations.
 
-When **Product lifecycle state** is left blank, the released product (or released product variant) is considered **Is active for planning** <!-- KFM: Is this a setting I can see somewhere? -->, which means that it will be covered during master planning.
+Released products and variants where **Product lifecycle state** is left blank are treated as though they belong to a lifecycle state where **Is active for planning** is set to *Yes*, which means that they will be covered during master planning.
 
 > [!NOTE]
 > To avoid unnecessary supply suggestions, we strongly recommend that you associate all obsolete released products (and product variants) with a product lifecycle state that is deactivated for master planning. To avoid waste, this is especially important when working with non-reusable product configuration variants.
