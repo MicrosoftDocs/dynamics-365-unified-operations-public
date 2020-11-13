@@ -45,7 +45,7 @@ After your site is created, you can verify that it's associated with your online
 
 [Configure your domain name](configure-your-domain-name.md)
 
-[Deploy a new e-commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
 [Create an e-commerce site](create-ecommerce-site.md)
 
