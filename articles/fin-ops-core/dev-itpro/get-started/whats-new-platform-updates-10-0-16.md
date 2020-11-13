@@ -36,17 +36,21 @@ ms.dyn365.ops.version: 10.0.16
 
 This topic lists the features that are included in the platform updates for version 10.0.16 of Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
 
-- **Preview release:** November 2020
-- **General availability (self-update):** January 2021
-- **Auto-update:** February 2021
+- **Preview of release:** November 2020
+- **General availability of release (self-update):** January 2021
+- **General availability of release (auto-update):** February 2021
 
 ## Features included in this release
 
--  [User session management](../sysadmin/user-session-management.md)<br>- Administrators have the ability to set a maximum session timeout for individual users.  The range of the session can be from 1 hour to 2160 hours.  When this session length expires, the user is required to log-in with his or her credentials.
+The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. Follow the links to the [release plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) to see the official release dates for each feature.
 
--  [Renamed 'Session idle timeout' to 'Session inactivity timeout'](../sysadmin/session-idle-timeout.md)<br>- To differentiate the types of session timeouts between maximum user session and inactivity user session, a change in the name was implemented.
+-  User session management<br>- Administrators have the ability to set a maximum session timeout for individual users.  The range of the session can be from 1 hour to 2160 hours.  When this session length expires, the user is required to log-in with his or her credentials. For more inforamtion, see [User session management](../sysadmin/user-session-management.md).
+
+-  Renamed 'Session idle timeout' to 'Session inactivity timeout'<br>- To differentiate the types of session timeouts between maximum user session and inactivity user session, a change in the name was implemented. For more information, see [Session inactivity timeout](../sysadmin/session-idle-timeout.md).
 
 -  [Warning of deprecation of Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015)<br>- Version 10.0.16 is the last version to support Visual Studio 2015.
+
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## Additional resources
 
