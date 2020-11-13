@@ -107,7 +107,7 @@ Follow the steps in [Enable budget proposals](enable-budget-proposal.md) to use 
 
 ### Using Customer payment predictions
 
-The intellignet cash flow forecasting is built on top of exisiting cash flow forecasting feature in Dyanmics 365 Finance. As a quick revision of existing cash flow forecating please read: https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-flow-forecasting.
+The intelligent cash flow forecasting is built on top of existing cash flow forecasting feature in Dynamics 365 Finance. As a quick revision of existing cash flow forecasting please read: https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-flow-forecasting.
 
 Customer payment predictions can help you collect proactively, learn how here: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/enable-cust-paymnt-prediction?branch=bob-fi-admin-topics#using-the-customer-payment-predictions-feature.
 
