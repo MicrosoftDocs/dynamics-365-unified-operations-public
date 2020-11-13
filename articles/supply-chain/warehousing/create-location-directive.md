@@ -5,7 +5,7 @@ title: Work with location directives
 description: This topic describes how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
 author: Mirzaab
 manager: tfehr
-ms.date: 10/20/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-10-20
+ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
 ---
 # Work with location directives
@@ -154,11 +154,11 @@ The fields on the **Location directives** FastTab are specific to the work order
 - **Multiple SKU** – Set this option to *Yes* to enable multiple stockkeeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
 
     > [!IMPORTANT]
-    > To be able to do both multi-item puts and single-SKU puts, you must specify two lines that have same structure and setup, but you must set the **Multiple SKU** option to *Yes* for one line and *No* for the other. Therefore, for put operations, you must have two identical location directives, even if you don't have to distinguish single SKUs and multiple SKUs on a work ID. Often, if you don't set up both these location directives, unexpected business process locations will come from the applied Location directive. You must set it up for pick to if you have an order that has more than one item.
+    > To be able to do both multi-item puts and single-SKU puts, you must specify two lines that have same structure and setup, but you must set the **Multiple SKU** option to *Yes* for one line and *No* for the other. Therefore, for put operations, you must have two identical location directives, even if you don't have to distinguish single SKUs and multiple SKUs on a work ID. Often, if you don't set up both these location directives, unexpected business process locations will come from the applied Location directive. You must use a similar setup for location directives that have a **Work type** of *pick*, if you need to process orders that include multiple SKUs.
 
     Use the **Multiple SKU** option for work lines that handle more than one item number. (The item number will be blank in the work details, and it will be shown as **Multiple** on the processing pages in the warehouse app.)
 
-    In a typical example scenario, a work template is set up so that it has more than one pick/put pair. In this case, you might want to search for a specific put staging location type.
+    In a typical example scenario, a work template is set up so that it has more than one pick/put pair. In this case, you might want to search for a specific staging location to use for lines with a **Work type** of *Put*.
 
     > [!NOTE]
     > If the **Multiple SKU** option is set to *Yes*, you can't select **Edit query** on the Action Pane, because the query can't evaluate at the item level when there are multiple items. To ensure that the desired location directive is selected, use the **Directive code** field to guide the selection of the location directive that is related to the put lines where that directive code is assigned in the work template.
@@ -170,7 +170,7 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!NOTE]
     > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section earlier in this topic.
 
-- **Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for **ASN** (license plate receiving), **Mixed license plate** receiving, and **Cluster** receiving processes. (The **Cluster** receiving process requires that the *Cluster putaway feature* feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The lines restriction section will be used only when you use **Item**.
+- **Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for **ASN** (license plate receiving), **Mixed license plate** receiving, and **Cluster** receiving processes. (The **Cluster** receiving process requires that the *Cluster putaway feature* feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
 
     > [!NOTE]
     > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
@@ -204,7 +204,7 @@ Use the **Lines** FastTab to establish conditions for applying the related actio
     1. On the **Lines** FastTab, select **Restrict by unit** on the toolbar. (This button becomes available only after you select the **Restrict by unit** check box on the line and then select **Save**.)
     1. On the **Restrict by units** page, in the **Unit** field, select the unit of measure that you want to restrict by for the pick and put processes.
 
-- **Round up to unit** – This field works together with the **Restrict by unit** check box. For example, if **Restrict by unit** is set to *box* on the location directive line, and **Round up to unit** is selected, the work that is generated from the directive for raw material picking should be rounded up to a multiple of one of the handling unit that is specified on the **Restrict by unit** page.
+- **Round up to unit** – This field works together with the **Restrict by unit** check box. For example, if  **Restrict by unit** is selected on the location directive line, and **Round up to unit** is selected, the work that is generated from the directive for raw material picking should be rounded up to a multiple of one of the handling unit that is specified on the **Restrict by unit** page.
 
     > [!NOTE]
     > This **Round up to unit** setup works only for the *Raw material picking* work order type, and only for location directives where the **Work type** field is set to *Pick*.
