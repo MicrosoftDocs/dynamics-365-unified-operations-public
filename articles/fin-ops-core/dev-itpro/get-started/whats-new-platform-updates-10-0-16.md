@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.16 of Finance and Operations apps (Febr
 description: This topic lists the features that are included in the platform updates for version 10.0.16 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 10/28/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,10 +42,9 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  [User Session Management](URL to feature description in the Release Plans)<br>- For more information, see 
-[Article that provides details](URL to article that provides feature details).
+-  [User session management](sysadmin/user-session-management.md)<br>- Administrators have the ability to set a maximum session timeout for individual users.  The range of the session can be from 1 hour to 2160 hours.  When this session length expires, the user is required to log-in with his or her credentials.
 
--  [Session inactivity timeout] renamed from [Session idle timeout]
+-  [Renamed 'Session idle timeout' to 'Session inactivity timeout']<br>- To differentiate the types of session timeouts between maximum user session and inactivity user session, a change in the name was implemented.
 
 -  [Warning of deprecation of Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015)<br>- Version 10.0.16 is the last version to support Visual Studio 2015.
 
