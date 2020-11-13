@@ -84,13 +84,15 @@ The following CSP directives can be used on Commerce sites.
 
 | Directive   | Description |
 |-------------|-------------|
-| child-src   | This directive defines valid sources of web workers and nested browsing contexts that are loaded by using elements such as **&lt;frame&gt;** and **&lt;iframe&gt;**. |
+| child-src   | This directive defines valid sources of web workers and nested browsing contextsThese violation reports consist of JSON documents sent via an HTTP POST request to the specified URI. that are loaded by using elements such as **&lt;frame&gt;** and **&lt;iframe&gt;**. |
 | connect-src | This directive defines the URLs that AJAX requests can be made from. |
 | font-src    | This directive defines valid sources of fonts. |
+| frame-ancestors | This directive specifies valid parents that may embed a page using <frame>, <iframe>, <object>, <embed>, or <applet>. Setting this directive to 'none' is similar to X-Frame-Options: deny (which is also supported in older browsers). |
 | frame-src   | This directive defines valid sources for nested browsing context loading using elements such as **&lt;frame&gt;** and **&lt;iframe&gt;**. |
 | img-src     | This directive defines valid sources of images. |
 | media-src   | This directive defines valid sources of audio and video, such as HTML5 **&lt;audio&gt;** and **&lt;video&gt;** elements. |
 | object-src  | This directive defines valid sources of plug-ins, such as **&lt;object&gt;**, **&lt;embed&gt;**, and **&lt;applet&gt;** elements. |
+| report-uri  | This directive defines URI(s) that the browser will POST CSP violation reports to. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI. |
 | script-src  | This directive defines valid sources of JavaScript. |
 | style-src   | This directive defines valid sources of stylesheets. |
 
