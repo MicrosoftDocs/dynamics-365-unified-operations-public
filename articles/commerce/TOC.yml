@@ -2236,7 +2236,7 @@
           href: dev-itpro/commerce-runtime-overview.md
         - name: CRT services
           href: dev-itpro/crt-services.md
-        - name: CRT and Retail Server extensibility
+        - name: CRT extension pattern
           href: dev-itpro/commerce-runtime-extensibility.md
         - name: Manage secrets for Retail channels
           href: dev-itpro/manage-secrets.md
