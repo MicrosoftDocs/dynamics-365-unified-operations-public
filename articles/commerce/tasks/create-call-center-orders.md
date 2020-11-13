@@ -60,7 +60,7 @@ This procedure walks through looking up a customer, creating a new order, search
 
 ## Additional resources
 
-[Customize transactional emails by mode of delivery](customize-email-delivery-mode.md)
+[Customize transactional emails by mode of delivery](../customize-email-delivery-mode.md)
 
-[Change mode of delivery in POS](tasks/pos-change-delivery-mode.md)
+[Change mode of delivery in POS](../pos-change-delivery-mode.md)
 
