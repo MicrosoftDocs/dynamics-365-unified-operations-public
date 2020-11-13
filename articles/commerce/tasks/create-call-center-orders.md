@@ -58,3 +58,9 @@ This procedure walks through looking up a customer, creating a new order, search
 17. Select **OK**.
 18. Select **Submit**.
 
+## Additional resources
+
+[Customize transactional emails by mode of delivery](customize-email-delivery-mode.md)
+
+[Change mode of delivery in POS](pos-change-delivery-mode.md)
+
