@@ -91,7 +91,7 @@ The following table summarizes this principle for the confusion matrices in this
 | Model 1 | 0.50        | 0.75   | 0.73           | Almost. This model significantly improves upon the guess. |
 | Model 2 | 0.80        | 0.90   | 0.83           | No. Improvement is required.                              |
 
-## Classifcation F1 accuracy
+## Classification F1 accuracy
 
 The final consideration in this topic is a more advanced measure of classification ML performance that is known as F1 accuracy.
 
