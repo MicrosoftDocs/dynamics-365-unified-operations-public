@@ -2,10 +2,10 @@
 # required metadata
 
 title: Exclude products with certain product lifecycle states
-description: This topic explains how to exclude products with product lifecycle state when Planning Optimization functionality is used. 
+description: This topic explains how to exclude products based on their lifecycle state when Planning Optimization functionality is used. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 11/02/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,8 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2019-11-03
-ms.dyn365.ops.version: AX 10.0.12
+ms.search.validFrom: 2019-11-13
+ms.dyn365.ops.version: 10.0.15
 
 ---
 # Exclude products with certain product lifecycle states

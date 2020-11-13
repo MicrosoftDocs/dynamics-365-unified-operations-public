@@ -1365,6 +1365,8 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Exclude products with certain product lifecycle states
+          href: master-planning/product-lifecycle-state.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
