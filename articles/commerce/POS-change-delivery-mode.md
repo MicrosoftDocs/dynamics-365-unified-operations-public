@@ -51,4 +51,4 @@ After you select the new mode of delivery, the transaction page is displayed. To
 
 [Create call center orders](/tasks/create-call-center-orders.md)
 
-[customize-email-delivery-mode](customize-email-delivery-mode.md)
+[Customize transactional emails by mode of delivery](customize-email-delivery-mode.md)
