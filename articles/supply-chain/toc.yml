@@ -2769,6 +2769,8 @@
             href: warehousing/control-warehouse-location-directives.md
           - name: Create location directives
             href: warehousing/create-location-directive.md
+          - name: Location stocking limits
+            href: warehousing/location-stocking-limits.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
