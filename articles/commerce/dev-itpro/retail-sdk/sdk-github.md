@@ -82,11 +82,11 @@ Consume the commerce packages from [https://msazure.pkgs.visualstudio.com/D365/\
     </packageSources>
 ```
 
-## Commerce packages available in the public feed
+## Commerce packages available in the public NuGet feed
 
 ### Microsoft.Dynamics.Commerce.Sdk.Runtime package
 
-This meta package contains all the required packages for doing the CRT and Retail server extension. All the required Commerce contracts, messages, request/response, entities are included in this package.
+This meta package contains all the required packages for implementing the CRT and Retail server extension. All the required Commerce contracts, messages, request/response, entities are included in this package.
 
 Dependencies:
 
@@ -110,7 +110,7 @@ Dependencies:
 
 ### Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase package
 
-This package is required to generate the DB packages with CSU.
+This package is required to generate the database packages with CSU.
 
 Dependencies:
 
@@ -120,11 +120,11 @@ Dependencies:
 
 | Package version | Application release      |
 |-----------------|--------------------------|
-| 9.26.x_Preview | 10.016 PEAP release      |
+| 9.26.x_Preview  | 10.016 PEAP release      |
 | 9.26.x          | 10.0.16 Customer preview |
 | 9.26.x          | 10.016 GA                |
 
-Extension project can consume the correct version by adding the package reference to the project with full version number or use wild card to always get the latest version, recommend option is to use the full version number and update the version based on your go-live version. There are two options:
+An extension project can consume the correct version by adding the package reference to the project with full version number, or it can use a wildcard to always get the latest version. We recommend that you use the full version number and update the version based on your go-live version. There are two options:
 
 + Without the wildcard.
 
@@ -138,29 +138,29 @@ Extension project can consume the correct version by adding the package referenc
     <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Runtime" Version="9.26.*" />;
     ```
 
-With every hotfix and new application release new version of the package will be published in the same public feed, consume the right package version based on the version required for your go-live. Consuming the higher version of the package than your go-live application version will result in runtime and deployment failures.
-
-## Set up Azure Pipelines for build automation and package generation
-
-Information will be added later.
+With every hotfix and new application release a new version of the package will be published in the same public feed. Consume the package version based on the version required for your go-live. Consuming the higher version of the package than your go-live application version will result in runtime and deployment failures.
 
 ## Best practice and branching strategies
 
-Detailed information on git branching strategy refers [Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance) doc.
+For detailed information on Git branching strategy, see [Git branching strategy](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance) doc.
 
-The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](https://docs.microsoft.com/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+The following branching strategies are based on the way we use Git here at Microsoft.
 
-Keep your branch strategy simple. Build your strategy from these three concepts:
+Keep your branch strategy simple. Build your strategy from these concepts:
 
 + Use feature branches for all new features and bug fixes.
 + Merge feature branches into the main branch using pull requests.
 + Keep a high quality, up-to-date main branch.
 
+For more information, see [How we use Git at Microsoft](https://docs.microsoft.com/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+
 ### Create a new feature branch for development and bug fixes
 
-Create a new feature branch based of commerce release/x.x.x branch, Clone the Commerce release/x.x.x branch and then create a new branch, following the proper naming convention. For more information, see [Git branching doc for sample naming convention](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
+Create a new feature branch based on Commerce release/x.x.x branch. Clone the Commerce release/x.x.x branch and then create a new branch, following the proper naming convention. For more information, see [Git branching doc for sample naming convention](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
 
 #### Command to clone and create a new branch
+
+1. Create the clone.
 
 ```DOS
 git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dynamics365Commerce.ScaleUnit.git
@@ -168,14 +168,14 @@ git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dyn
 git checkout -b private/{username}/{feature/description}
 ```
 
-Add and commit new changes to the development branch.
+2. Add and commit new changes to the development branch.
 
 ```DOS
 git -add .
 git commit -m"commit message
 ```
 
-After the development is completed, tested, and validated push the changes to the main branch by doing `git push <remote> <branch>'.
+3. After the development is completed, tested, and validated, push the changes to the main branch by doing `git push <remote> <branch>'.
 
 ```DOS
 git push origin {private branch name}
@@ -183,7 +183,7 @@ git push origin {private branch name}
 
 ### Create a release branch after development
 
-After the development changes pushed into the main branch, create a new release branch, and create the deployable packages from the release branch.
+After you push the development changes into the main branch, create a new release branch, and create the deployable packages from the release branch.
 
 ```DOS
 git checkout -b release/x.x.x
@@ -197,11 +197,11 @@ git checkout master git merge release/x.x.x
 
 ### Extension hotfix branch
 
-Like release branch, create hotfix branch for extension from main branch and release the fix and later merge the changes back to the main branch.
+Like the release branch, create hotfix branch for extension from main branch and release the fix and later merge the changes back to the main branch.
 
 ### Merge new SDK release branch to main and development branch
 
-After a new version of the SDK samples released, if required branch it with your new branch. The SDK contains only samples, so it’s not required to always get the updated changes from the new SDK release branch.
+After a new version of the SDK samples is released, it's required to branch it with your new branch. The SDK contains only samples, so you don't have to get the updated changes from the new SDK release branch.
 
 ```DOS
 git checkout master git merge release/x.x.x
