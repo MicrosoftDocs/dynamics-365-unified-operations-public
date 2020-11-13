@@ -120,16 +120,6 @@ If not all BOM line items are physically available when a production order is re
 
 This behavior is by design and is working as expected.
 
-## When I start a batch order from the warehouse app, the picking list journal isn't created or posted, even though the production start parameters are set to Always for Automatic BOM Consumption, and the Complete picking list journal flag is set.
-
-### Issue description
-
-In the dialog box that appears when you select **Production control \> Start**, default values can be set. However, the warehouse app doesn't use those default values to start a production order or batch order. Automatic BOM consumption in the warehouse app is fixed to the flushing principle. Therefore, only formula lines or BOM lines where the flushing principle is set to *Start* will be flushed when the warehouse app is used to start production.
-
-### Issue resolution
-
-The warehouse app for *Start* is fixed so that only formula lines or BOM lines where the flushing principle is set to *Start* are flushed.
-
 ## When I try to end a production order and report as finished, I receive the following error message: "Total good quantity reported as finished for the production will be %1. Feedback for the last operation is 0.00 in total."
 
 ### Issue description
@@ -140,7 +130,7 @@ When you try to post a report as finished journal on a production order, you rec
 
 ### Possible cause
 
-This issue occurs if the quantities that were posted in the last operations were incorrect. For example, if production is started, but the quantity that must be started isn't allocated, the route card journal will be posted with nothing. To confirm the situation, open the production order, and then, on the Action Pane, on the **View** tab, select **Route card**.
+This issue occurs if the quantities that were posted in the last operations were incorrect. For example, if production is started, but the quantity that must be started isn't allocated, the route card journal will be posted without any lines. To confirm the situation, open the production order, and then, on the Action Pane, on the **View** tab, select **Route card**.
 
 ### Workaround
 
