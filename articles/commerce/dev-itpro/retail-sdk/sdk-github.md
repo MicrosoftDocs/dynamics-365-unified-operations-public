@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Download Retail SDK samples and Reference packages from GitHub and NuGet feed
-description: This document explains to how to get Retail SDK samples from GitHub and reference package from the public NuGet feed.
+title: Download Retail SDK samples and reference packages from GitHub and NuGet
+description: This document explains to how to download Retail SDK samples from GitHub and reference packages from NuGet.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/04/2020
@@ -29,26 +29,23 @@ ms.search.validFrom: 2020-11-10
 ms.dyn365.ops.version: 10.0.16
 ---
 
-# Download Retail SDK samples and Reference packages from GitHub and NuGet feed
+# Download Retail SDK samples and reference packages from GitHub and NuGet
 
 [!include [banner](../../includes/banner.md)]
 
-This document explains to how to get Retail SDK samples from GitHub and reference package from the public NuGet feed.
-The Retail SDK includes the code samples, templates, and tools that are required to extend or customize existing Commerce functionality, SDK is published into different repos in GitHub based on the Commerce extension components. This topic applies to Retail SDK version 10.0.16 or greater. For information about downloading earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md)
+This document explains to how to download Retail SDK samples from GitHub and reference packages from NuGet. The Retail SDK includes the code samples, templates, and tools that you need to extend or customize Commerce functionality. The SDK is published into different repos in GitHub based on the Commerce extension components. This topic applies to Retail SDK version 10.0.16 or later. For more information about downloading earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md)
 
 ## Commerce.ScaleUnit repo
 
-This repo contains the sample code for how to customize the Commerce runtime (CRT), Retail server (RS), and channel database.
+The **Commerce.ScaleUnit** repo contains the sample code customizing the Commerce runtime (CRT), Retail server (RS), and channel database.
 
-Clone or download the Commerce scale unit (CSU) repo from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
-
-To clone the **Commerce.ScaleUnit** repo, use the following command. (This command will work only if you have [Git tools](https://git-scm.com/downloads) installed.)
+Clone or download the repo from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). To clone the **Commerce.ScaleUnit** repo, use the following command. (This command will work only if you have [Git tools](https://git-scm.com/downloads) installed.)
 
 ```DOS
 git clone https://github.com/microsoft/Dynamics365Commerce.ScaleUnit.git
 ```
 
-The repo will contain multiple branches for each release, please use the right release branch based on your go-live version. Note: The repo contains only samples, so it's not required that you clone this repo.
+The repo contains multiple branches for each release. Use the release branch based on your go-live version. The repo contains only samples, so cloning this repo is optional.
 
 | Release branch name | Version | Application release version |
 |---|---|---|
@@ -66,17 +63,17 @@ git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dyn
 | Folder | Project | Contents | Description |
 |---|---|---|---|
 | Channel Database | ChannelDatabase.csproj | Contoso.ExampleTable.ChannelDatabase.sql | Sample database extension. |
-| CommerceRuntime  | CommerceRuntime.csproj| Controller – Sample code for how to implement new RS APIs.<br/>Entities, Messages, and RequestHandlers – Sample code for how to implement new CRT service.  | Sample CRT extensions. |
+| CommerceRuntime  | CommerceRuntime.csproj| Controller – Sample code for how to implement new Retail Server APIs.<br/>Entities, Messages, and RequestHandlers – Sample code for how to implement new CRT service.  | Sample CRT extensions. |
 | ScaleUnit | ScaleUnit.csproj | Project required to generate the CSU package. | Project required to generate the CSU package. |
 
 > [!NOTE]
-> Repos for in-store components like Modern POS, Cloud POS, Hardware station and Retail scale unit and other samples will be available in later releases.
+> Repos for in-store components like Modern POS, Cloud POS, Hardware station,Retail scale unit, and other samples will be available in later releases.
 
 ## Download reference packages for creating Commerce APIs and consuming messages, request, entities, and contracts
 
-Commerce contracts, messages, entities, and request packages are published in this public feed for commerce extension code to consume and customize existing functionalities or build new functionalities for Dynamics 365 Commerce product.
+Commerce contracts, messages, entities, and request packages are published in the public NuGet feed. You can use the extension code to consume and customize existing functionalities or build new functionalities for Dynamics 365 Commerce product.
 
-Consume the commerce packages from this [location](https://msazure.pkgs.visualstudio.com/D365/_packaging/Commerce-SDK-Feed/nuget/v3/index.json), extension can add package source location in the nuget.config of their extension project file.
+Consume the commerce packages from [https://msazure.pkgs.visualstudio.com/D365/\_packaging/Commerce-SDK-Feed/nuget/v3/index.json](https://msazure.pkgs.visualstudio.com/D365/_packaging/Commerce-SDK-Feed/nuget/v3/index.json). You can add package source location in the **nuget.config** of your extension project file.
 
 ```xml
 <packageSources>
