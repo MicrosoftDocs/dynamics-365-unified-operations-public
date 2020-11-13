@@ -42,9 +42,9 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
--  [User session management](sysadmin/user-session-management.md)<br>- Administrators have the ability to set a maximum session timeout for individual users.  The range of the session can be from 1 hour to 2160 hours.  When this session length expires, the user is required to log-in with his or her credentials.
+-  [User session management](../sysadmin/user-session-management.md)<br>- Administrators have the ability to set a maximum session timeout for individual users.  The range of the session can be from 1 hour to 2160 hours.  When this session length expires, the user is required to log-in with his or her credentials.
 
--  [Renamed 'Session idle timeout' to 'Session inactivity timeout']<br>- To differentiate the types of session timeouts between maximum user session and inactivity user session, a change in the name was implemented.
+-  [Renamed 'Session idle timeout' to 'Session inactivity timeout'](../sysadmin/session-idle-timeout.md)(<br>- To differentiate the types of session timeouts between maximum user session and inactivity user session, a change in the name was implemented.
 
 -  [Warning of deprecation of Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015)<br>- Version 10.0.16 is the last version to support Visual Studio 2015.
 
