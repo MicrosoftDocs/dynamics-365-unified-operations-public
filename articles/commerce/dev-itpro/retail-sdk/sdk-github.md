@@ -206,3 +206,5 @@ After a new version of the SDK samples is released, it's required to branch it w
 ```DOS
 git checkout master git merge release/x.x.x
 ```
+
+
