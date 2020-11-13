@@ -978,13 +978,13 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
-    - name: Finance Insights
+    - name: Finance insights
       items:
-      - name: Finance Insights home page
+      - name: Finance insights home page
         href: finance-insights/finance-insights-admin.md
       - name: Configuration and administration
         items:
-        - name: Configure Finance Insights
+        - name: Configure Finance insights
           href: finance-insights/configure-for-fin-insites.md
         - name: Set up demo data for Payment predictions
           href: finance-insights/set-up-demo-data.md
@@ -996,6 +996,26 @@
           href: finance-insights/enable-budget-proposal.md
         - name: Create data integrator project
           href: finance-insights/create-data-integrate-project.md
+      - name: Use Finance insights
+        items: 
+        - name: Budget proposals
+          href: finance-insights/budget-proposals.md
+        - name: Cash position
+          href: finance-insights/cash-position.md
+        - name: Cash flow forecast
+          href: finance-insights/cash-flow-forecast-intro.md
+        - name: Customer payment predictions
+          href: finance-insights/payment-insights-overview.md
+        - name: Snapshots overview
+          href: finance-insights/payment-snapshots.md
+        - name: Results of machine learning models
+          href: finance-insights/confusion-matrix.md
+        - name: Evaluate the initial customer payment prediction model
+          href: finance-insights/evaluate-payment-prediction.md
+        - name: Improve the prediction model
+          href: finance-insights/evaluate-payment-prediction.md
+        - name: Use external data in cash flow forecasts
+          href: finance-insights/external-data-in-cash-flow.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
