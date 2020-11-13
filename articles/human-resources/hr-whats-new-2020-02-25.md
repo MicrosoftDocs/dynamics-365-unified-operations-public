@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (February 25, 2020)
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2927. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
 ## Enable Case Management navigation and data management framework (DMF) entity (414754)

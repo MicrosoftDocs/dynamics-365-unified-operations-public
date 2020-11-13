@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 The out-of-box entity maps have predefined entity and field mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default entity maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change entity maps and field mappings.

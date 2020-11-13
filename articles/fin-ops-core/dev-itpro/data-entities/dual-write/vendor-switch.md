@@ -33,6 +33,8 @@ ms.search.validFrom: 2019-09-20
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 ## Vendor data flow 
