@@ -44,11 +44,12 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  User session management<br>- Administrators have the ability to set a maximum session timeout for individual users.  The range of the session can be from 1 hour to 2160 hours.  When this session length expires, the user is required to log-in with his or her credentials. For more inforamtion, see [User session management](../sysadmin/user-session-management.md).
+-  User session management<br>- Administrators have the ability to set a maximum session timeout for individual users.  The range of the session can be from 1 hour to 2160 hours.  When this session length expires, the user is required to sign in with their credentials. For more information, see [User session management](../sysadmin/user-session-management.md).
 
 -  Renamed 'Session idle timeout' to 'Session inactivity timeout'<br>- To differentiate the types of session timeouts between maximum user session and inactivity user session, a change in the name was implemented. For more information, see [Set the session inactivity timeout](../sysadmin/session-idle-timeout.md).
 
--  [Warning of deprecation of Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015)<br>- Version 10.0.16 is the last version to support Visual Studio 2015.
+-  Removing support for Visual Studio 2015<br>- Version 10.0.16 is the last version to support Visual Studio 2015. For more information, see [
+Removing support for Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
