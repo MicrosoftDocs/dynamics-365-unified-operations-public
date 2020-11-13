@@ -1,0 +1,36 @@
+**Reduce balance depreciation after split.**
+
+This topic describes the method that is used in fixed assets to calculate
+depreciation after splitting an asset using reduce balance method with
+depreciation year as fiscal, see [reduce balance
+depreciation](https://docs.microsoft.com/en-us/dynamics365/finance/fixed-assets/reduce-balance-depreciation)
+and [Split a fixed
+asset](https://docs.microsoft.com/en-us/dynamics365/finance/fixed-assets/tasks/split-fixed-asset).
+
+When you split a fixed asset in a following fiscal period of the acquisition
+period, the reduce balance depreciation will consider the asset net book value
+of the prior year as well as the acquisition and depreciation adjustments
+transactions of which generated from the split transaction.
+
+Assumes the asset acquired in a fiscal year and split in the second fiscal year.
+And amount to depreciate for the original asset after split is considering the
+asset NBV before splitting as well as the acquisition and depreciation
+adjustment of which posted during split transaction.
+
+For example, the fiscal period is from June 30th to July 1st, the reducing
+balance percentage is 18% and there is an asset is acquired in June 2019 with
+acquisition price \$10,000 the depreciation of the first fiscal year equals
+\$18,000 and monthly depreciation equals \$150, then depreciated till Nov 2019
+which equals \$738.75. Split 80% of this asset in Nov 2019 to another fixed
+asset.
+
+[![Reduce balance depreciation after split](./media/Reduce_balance_depreciation_after_split.png)](./media/Reduce_balance_depreciation_after_split.png)
+
+The amount to depreciate for the original asset equals \$1,822.25, NBV before
+posting split transaction 9,111.25 + the generated acquisition adjustment during
+posting split transaction \$(-8,000) + the generated depreciation adjustment
+during split transaction \$711. Hence the second-year depreciation of the second
+year is (1,822.25\*18%)/12 = 27.33.
+
+The amount to depreciate for the new fixed asset in the first year equals
+(8,000\*18%)/12 = \$120.
