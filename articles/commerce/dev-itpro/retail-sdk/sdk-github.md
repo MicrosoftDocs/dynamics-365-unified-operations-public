@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This document explains to how to download Retail SDK samples from GitHub and reference packages from NuGet. The Retail SDK includes the code samples, templates, and tools that you need to extend or customize Commerce functionality. The SDK is published into different repos in GitHub based on the Commerce extension components. This topic applies to Retail SDK version 10.0.16 or later. For more information about downloading earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md)
+This document explains to how to download Retail SDK samples from GitHub and reference packages from NuGet. The Retail SDK includes the code samples, templates, and tools that you need to extend or customize Dynamics 365 Commerce functionality. The SDK is published into different repos in GitHub based on the extension components. This topic applies to Retail SDK version 10.0.16 or later. For more information about downloading earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md)
 
 ## Commerce.ScaleUnit repo
 
@@ -69,11 +69,11 @@ git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dyn
 > [!NOTE]
 > Repos for in-store components like Modern POS, Cloud POS, Hardware station,Retail scale unit, and other samples will be available in later releases.
 
-## Download reference packages for creating Commerce APIs and consuming messages, request, entities, and contracts
+## Download reference packages for creating APIs and consuming messages, request, entities, and contracts
 
-Commerce contracts, messages, entities, and request packages are published in the public NuGet feed. You can use the extension code to consume and customize existing functionalities or build new functionalities for Dynamics 365 Commerce product.
+Contracts, messages, entities, and request packages are published in the public NuGet feed. You can use the extension code to consume and customize existing functionalities or build new functionalities.
 
-Consume the commerce packages from [https://msazure.pkgs.visualstudio.com/D365/\_packaging/Commerce-SDK-Feed/nuget/v3/index.json](https://msazure.pkgs.visualstudio.com/D365/_packaging/Commerce-SDK-Feed/nuget/v3/index.json). You can add package source location in the **nuget.config** of your extension project file.
+Consume the packages from [https://msazure.pkgs.visualstudio.com/D365/\_packaging/Commerce-SDK-Feed/nuget/v3/index.json](https://msazure.pkgs.visualstudio.com/D365/_packaging/Commerce-SDK-Feed/nuget/v3/index.json). You can add package source location in the **nuget.config** of your extension project file.
 
 ```xml
 <packageSources>
@@ -82,11 +82,11 @@ Consume the commerce packages from [https://msazure.pkgs.visualstudio.com/D365/\
     </packageSources>
 ```
 
-## Commerce packages available in the public NuGet feed
+## Reference packages available in the public NuGet feed
 
 ### Microsoft.Dynamics.Commerce.Sdk.Runtime package
 
-This meta package contains all the required packages for implementing the CRT and Retail server extension. All the required Commerce contracts, messages, request/response, entities are included in this package.
+This meta package contains all the required packages for implementing the CRT and Retail server extension. All the required contracts, messages, request/response, entities are included in this package.
 
 Dependencies:
 
@@ -156,7 +156,7 @@ For more information, see [How we use Git at Microsoft](https://docs.microsoft.
 
 ### Create a new feature branch for development and bug fixes
 
-Create a new feature branch based on Commerce release/x.x.x branch. Clone the Commerce release/x.x.x branch and then create a new branch, following the proper naming convention. For more information, see [Git branching doc for sample naming convention](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
+Create a new feature branch based on Dynamics 365 Commerce release/x.x.x branch. Clone the release/x.x.x branch and then create a new branch, following the proper naming convention. For more information, see [Git branching doc for sample naming convention](https://docs.microsoft.com/azure/devops/repos/git/git-branching-guidance#name-your-feature-branches-by-convention).
 
 #### Command to clone and create a new branch
 
