@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce runtime (CRT) and Retail Server extensibility
+title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail server. 
 author: mugunthanm
 manager: AnnBe
