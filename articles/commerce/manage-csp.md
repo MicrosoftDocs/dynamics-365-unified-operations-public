@@ -84,7 +84,7 @@ The following CSP directives can be used on Commerce sites.
 
 | Directive   | Description |
 |-------------|-------------|
-| child-src   | This directive defines valid sources of web workers and nested browsing contexts. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI. that are loaded by using elements such as **\<frame\>** and **\<iframe\>**. |
+| child-src   | This directive defines valid sources of web workers and nested browsing contexts that are loaded by using elements such as **\<frame\>** and **\<iframe\>**. |
 | connect-src | This directive defines the URLs that AJAX requests can be made from. |
 | font-src    | This directive defines valid sources of fonts. |
 | frame-ancestors | This directive specifies valid parents that may embed a page using **\<frame\>**, **\<iframe\>**, **\<object\>**, **\<embed\>**, or **\<applet\>** elements. Setting this directive to "none" is similar to specifying the "X-Frame-Options: DENY" directive (which is also supported in older browsers). |
