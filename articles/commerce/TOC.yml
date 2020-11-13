@@ -2154,6 +2154,8 @@
           href: dev-itpro/cloud-dev-box.md
         - name: Set up Commerce SDK build pipeline
           href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+        - name: Download samples and packages from GitHub and NuGet
+          href: dev-itpro/retail-sdk/sdk-github.md
         - name: Retail SDK FAQ
           href: dev-itpro/retail-sdk/sdk-faq.md
       - name: Point of sale extensibility
