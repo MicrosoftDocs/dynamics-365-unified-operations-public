@@ -1477,6 +1477,8 @@
           href: master-planning/tasks/create-baseline-forecast.md
         - name: Modify a demand forecast manually
           href: master-planning/tasks/modify-demand-forecast-manually.md
+      - name: Troubleshoot master planning
+        href: master-planning/troubleshoot-masterplanning.md
     - name: Mobile app
       items:
       - name: Mobile app home page
@@ -1909,6 +1911,8 @@
           href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
         - name: BOM calculations
           href: cost-management/bom-calculations.md
+        - name: Troubleshoot product information
+          href: pim/troubleshooting-productinformation.md
       - name: Product configuration
         items:
         - name: Product configuration overview
@@ -1969,6 +1973,8 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
+        - name: Troubleshoot the product configurator
+          href: pim/troubleshooting-productconfigurator.md
     - name: Engineering change management
       items:
       - name: Engineering change management overview
@@ -2145,6 +2151,8 @@
             href: production-control/absence-registration-in-time-and-attendance.md
           - name: Flex groups
             href: production-control/time-attendance-flex-groups.md
+        - name: Troubleshoot discrete manufacturing
+          href: production-control/troubleshoot-discretemanufacturing.md
       - name: Lean manufacturing
         items:
         - name: Lean manufacturing overview
@@ -2297,6 +2305,8 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
+        - name: Troubleshoot process manufacturing
+          href: production-control/troubleshoot-processmanufacturing.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
