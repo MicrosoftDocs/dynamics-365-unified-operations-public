@@ -213,7 +213,7 @@ The following steps show the CRT code changes:
     private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransactionReceipts( GetSalesTransactionCustomReceiptFieldServiceRequest request)
     {
         string receiptFieldName = request.CustomReceiptField;
-        string returnValue = string.Empty;
+        string returnValue = null;
         switch (receiptFieldName)
         {
             case "WARRANTYID":
