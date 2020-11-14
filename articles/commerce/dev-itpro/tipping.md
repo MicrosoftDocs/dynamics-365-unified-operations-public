@@ -68,11 +68,19 @@ If **isTippingEnabled** is set to **True** and the cutomer chooses a tip on the 
 
 ### Tipping support for the Adyen connector
 
-Tip support is included with the Adyen connector. Customization will be required to set the **isTippingEnabled** variable when the authorization response is passed to the connector, but if that is done and the customer selects a tip on the device, then the tip will be returned in the **TipAmount** field of the authorization response.
+Tip support is included with the Adyen connector. Customization will be required to set the **isTippingEnabled** variable to **True** when the authorization response is passed to the connector, but if that is done and the customer selects a tip on the device, then the tip will be returned in the **TipAmount** field of the authorization response.
+
+To prompt the customer to select a tip on the Adyen terminal, the terminal must be configured for tipping. This is done through the Adyen customer area. To enable tipping, navigate to the **Point of Sale** tab in the Adyen portal. Tipping can be enabled by device or through the fleet wide **Terminal settings** option. Within the settings of both the individual terminal or fleet wide teriminal settings, tipping is enabled through the **Payment features** tab. Once tipping is enabled on your Adyen device, settings on the device will need to be updated for the change to take effect. 
 
 ### Suggested implementation
 
-It is recommended that a header-level charge is used to add the tip amount to the transaction after the authorization response is returned from the payment connector. To support this, an extension should be created for the **PaymentTerminalAuthorizePaymentRequestHandler**. That extension should add logic to add the header level charge line to the transaction if a **TipAmount** is returned in the authorization response. 
+It is recommended that a header-level charge is used to add the tip amount to the transaction after the authorization response is returned from the payment connector. To support this, an extension should be created for the **PaymentTerminalAuthorizePaymentRequestHandler**. That extension should include logic to add a header level charge to the transaction if a **TipAmount** is returned in the authorization response. 
 
+## Additional resources
+
+- [Adyen connector overview](## Additional resources
+
+- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/end-to-end-payment-extension)
 
 
