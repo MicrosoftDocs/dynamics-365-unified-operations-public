@@ -78,9 +78,7 @@ It is recommended that a header-level charge is used to add the tip amount to th
 
 ## Additional resources
 
-- [Adyen connector overview](## Additional resources
-
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Adyen connector overview](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=10-0-14)
 - [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/end-to-end-payment-extension)
 
 
