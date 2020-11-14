@@ -51,6 +51,8 @@ Tipping is very common in certain locales and industries. For example, in quick 
 
 While this feature adds support for tipping at the payments SDK level, it does not include support for other critical aspects of tipping support. Those may include reporting to indicate tip payouts at the end of shifts, the ability to pool tips, and the ability to report tips for payroll. To enable full tipping support, those capabilities will need to be implemented via extensions. 
 
+For more information about creating payment terminal integrations and SDK references in this article, visit [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/end-to-end-payment-extension).
+
 ### High level requirements
 
 | Prerequisite | Description |
