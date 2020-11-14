@@ -36,6 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+
 These topics describe dual-write integration.
 
 + [What is dual-write?](dual-write-overview.md)
