@@ -54,7 +54,7 @@ Each of the standard Common Data Service entities is extended with references to
 
     :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Sales order lines, edit query":::
 
-5. Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same way you extended the Common Data Service entities in steps 1 and 2. Then add the filter queries.
+5. Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same way you extended the Common Data Service entities in steps 1 and 2. Then add the filter queries. filter strings are **(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")** and **INTERCOMPANYINVENTTRANSID == ""**.
 
     :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Map staging to target, Sales Invoice Headers":::
 
