@@ -52,5 +52,7 @@ There are four types of discounts:
 - **Quantity discount** – A discount that is applied when two or more products are purchased.
 - **Mix and match discount** – A discount that is applied when a specific combination of products is purchased.
 - **Threshold discount** – A discount that is applied when the transaction total is more than a specified amount.
+- **Tender based discount** – A discount that is applied when the transaction total is more than a specified amount and a specific payment type e.g. Cash, credit or debit card is used for payment.
+- **Shipping discount** – A discount that is applied when the transaction total is more than a specified amount and a specific mode of delivery e.g. Two day shipping, Overnight shipping etc. is used on the order 
 
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
