@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Common Data Service entities
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Microsoft Dynamics 365 Human Resources uses Common Data Service to enable extensibility and integration scenarios.
 
 For more information about Common Data Service, see [What is Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).

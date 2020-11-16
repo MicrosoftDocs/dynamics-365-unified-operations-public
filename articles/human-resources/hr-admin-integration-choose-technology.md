@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Choose a data integration technology
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This article provides information for integrating with data managed by Dynamics 365 Human Resources. It describes different integration technologies to help you decide which technologies best fit your needs.
 
 ## Data integration background
