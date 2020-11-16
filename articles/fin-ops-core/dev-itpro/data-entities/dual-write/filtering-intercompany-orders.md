@@ -41,16 +41,20 @@ Each of the standard Common Data Service entities is extended with references to
 1. Add a reference to **IntercompanyOrder** to **CDS Sales Order Headers**. It is populated on only intercompany orders. The field **IntercompanyOrder** is available in **SalesTable**.
 
     :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Map staging to target, SalesOrderHeader":::
+    
+2. After **CDS Sales Order Headers** is extended, the **IntercompanyOrder** field is available in the mapping. Apply a filter with **INTERCOMPANYORDER == ""** as the query string.
 
     :::image type="content" source="media/filter-sales-order-header.png" alt-text="Sales orders headers, edit query":::
 
-2. Add a reference to **IntercompanyInventTransId** to **CDS Sales Order Lines**.  It is populated on only intercompany orders. The field **InterCompanyInventTransID** is available in **SalesLine**.
+3. Add a reference to **IntercompanyInventTransId** to **CDS Sales Order Lines**.  It is populated on only intercompany orders. The field **InterCompanyInventTransID** is available in **SalesLine**.
 
     :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Map staging to target, SalesOrderLine":::
 
+3. After **CDS Sales Order Lines** is extended, the **IntercompanyInventTransId** field is available in the mapping. Apply a filter with **INTERCOMPANYINVENTTRANSID == ""** as the query string.
+
     :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Sales order lines, edit query":::
 
-3. Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same way you extended the Common Data Service entities in steps 1 and 2.
+4. Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same way you extended the Common Data Service entities in steps 1 and 2. Then add the filter queries.
 
     :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Map staging to target, Sales Invoice Headers":::
 
@@ -58,8 +62,10 @@ Each of the standard Common Data Service entities is extended with references to
 
     :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Sales invoice lines, edit query":::
 
-4. The **Quotations** entity doesn't have an intercompany relationship. If someone creates a quote for one of your intercompany customers, you can put all of these customers in one customer group by using the **CustGroup** field.  Header and lines can be extended to add the **CustGroup** field and then filter to not include this group.
+5. The **Quotations** entity doesn't have an intercompany relationship. If someone creates a quote for one of your intercompany customers, you can put all of these customers in one customer group by using the **CustGroup** field.  Header and lines can be extended to add the **CustGroup** field and then filter to not include this group.
 
     :::image type="content" source="media/filter-cust-group.png" alt-text="Map staging to target, Sales Quotation Header":::
+
+6. After you extent the **Quotations** entity, apply a filter with **CUSTGROUP !=  "\<company\>"** as the query string.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Sales Quotation Header, edit query":::
