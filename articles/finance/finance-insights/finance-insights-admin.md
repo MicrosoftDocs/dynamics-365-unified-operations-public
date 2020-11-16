@@ -87,7 +87,7 @@ When you've completed the configuration steps and set up demo data, you must tur
 
 ### Enable customer payment predictions
 
-If you are using demo data to test customer payment predictions, you may have to import additional demo data to create AI model successfully. Please follow the steps mentioned here: https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bob-fi-admin-topics/articles/finance/finance-insights/set-up-demo-data.md to import demo data.
+If you are using demo data to test customer payment predictions, you may have to import additional demo data to create AI model successfully. For the specific steps to import demo data, see [Set up demo data for payment predictions](set-up-demo-data.md).
 
 Follow the steps in [Enable customer payment predictions](enable-cust-paymnt-prediction.md) to build a machine learning model and use it with your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid.
 
