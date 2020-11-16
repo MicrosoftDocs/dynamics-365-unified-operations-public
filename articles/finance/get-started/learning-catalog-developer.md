@@ -23,6 +23,8 @@ ms.dyn365.ops.version: 8.1
 
 # Learning catalog for Dynamics 365 Finance developers
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 
 The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs.

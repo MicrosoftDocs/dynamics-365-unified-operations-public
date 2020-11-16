@@ -34,6 +34,8 @@ ms.search.validFrom: 2020-03-16
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Common Data Service. Specifically, it provides information that can help you fix issues that might occur during the initial setup of dual-write integration.
