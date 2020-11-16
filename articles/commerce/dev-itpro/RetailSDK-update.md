@@ -40,7 +40,7 @@ This topic provides information about how to upgrade to the latest update of the
 The following sections will walk through how to manually move your extension to the new Retail SDK, however you can do this using any source control system like Azure DevOps or Git.
 
 ## Update the Retail SDK
-When you update the Retail SDK by applying a new binary hotfix, a new **Update** folder is created inside the existing RetailSDK folder and a copy of the updated SDK is created. If you deploy a new environment, the new Retail SDK is located in the services volume of the virtual machine (VM) or in the C drive of the downloadable VHD.
+If you deploy a new environment, the new Retail SDK is located in the services volume of the virtual machine (VM) or in the C drive of the downloadable VHD. When you update the Retail SDK by applying a new binary hotfix from LCS, a new **Update** folder is created inside the existing RetailSDK folder and a copy of the new updated SDK is created inside the Update folder with name {{Guid.RetailSDKUpdate.Date}}, its recommend to rename this folder with shorter name instead of lengthy Guid and datetime because during coping you may get an error saying the path or file name is too long.
 
 ### Retail SDK components
 
