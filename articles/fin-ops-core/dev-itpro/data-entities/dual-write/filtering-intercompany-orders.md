@@ -66,6 +66,6 @@ Each of the standard Common Data Service entities is extended with references to
 
     :::image type="content" source="media/filter-cust-group.png" alt-text="Map staging to target, Sales Quotation Header":::
 
-7. After you extent the **Quotations** entity, apply a filter with `CUSTGROUP !=  "\<company\>"` as the query string.
+7. After you extent the **Quotations** entity, apply a filter with `CUSTGROUP !=  "<company>"` as the query string.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Sales Quotation Header, edit query":::
