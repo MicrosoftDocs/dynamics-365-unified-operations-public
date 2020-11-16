@@ -146,7 +146,7 @@ There are two entry points for viewing the history of a record attachment:
 
 ## Attachment recovery
 
-In Platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments to be recovered within a configured period of time.
+In Platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments to be recovered within a configured period of time. 
 
 ### Configuration of attachment recovery
 
