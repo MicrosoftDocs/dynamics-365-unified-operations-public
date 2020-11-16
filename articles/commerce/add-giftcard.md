@@ -91,6 +91,8 @@ For instructions on how to add a gift card module to a checkout page and set the
 
 [Delivery options module](delivery-options-module.md)
 
+[Pickup information module](pickup-info-module.md)
+
 [Order details module](order-confirmation-module.md)
 
 [Support for external gift cards](./dev-itpro/gift-card.md)

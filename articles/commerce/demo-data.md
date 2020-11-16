@@ -68,6 +68,7 @@ Screen layout IDs can have a maximum of 10 characters. The ID is a string that c
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | The base version that supports multiple screen sizes for various devices and aspect ratios |
 | 3.1            | The base version that has additional support for the **Recommended products** panel        |
+| 4              | The extended version for extended Fabrikam updated layout                                  |
 
 ### Persona
 
@@ -79,9 +80,9 @@ Screen layout IDs can have a maximum of 10 characters. The ID is a string that c
 
 ### Example layout
 
-Here is an example of a screen layout ID for the Fabrikam company, layout version 3, and the Store Manager persona:
+Here is an example of a screen layout ID for the Fabrikam company, layout version 4, and the Store Manager persona:
 
-F3MGR
+F4MGR
 
 The following illustration shows an example of the Welcome screen for a Fabrikam store manager.
 
@@ -107,6 +108,7 @@ The following table shows the layout sizes that are provided for typical screen 
 | Full\*      | 1280 × 720 | 16:9         | Tablets                 |
 | Full        | 1366 × 768 | 16:9         | Tablets, larger screens |
 | Full        | 1440 × 960 | 3:2          | Tablets, larger screens |
+| Full\*      | 1536 × 864 | 16:9         | Tablets, larger screens |
 
 \* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.
 
@@ -124,7 +126,7 @@ Each fictitious company is targeted to a different retail segment and includes p
 | Company         | Location | Segment        | Accent | Theme |
 |-----------------|----------|----------------|--------|-------|
 | Adventure Works | Seattle  | Sporting Goods | Blue   | Dark  |
-| Fabrikam        | Houston  | Fashion        | Green  | Light |
+| Fabrikam        | San Francisco  | Fashion        | Green  | Light |
 | Contoso         | Boston   | Electronics    | Red    | Dark  |
 
 > [!NOTE]
@@ -157,7 +159,7 @@ Users have been provided for the various screen layouts. By using the following 
 | Adventure Works | A3MGR            | Store Manager | 000154, 000137, 000073 |
 | Adventure Works | A3CSH            | Cashier       | 000150, 000175, 000165 |
 | Adventure Works | A3STK            | Stock Clerk   | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Store Manager | 000160, 000168, 000163 |
+| Fabrikam        | F4MGR            | Store Manager | 000160, 000713         |
 | Fabrikam        | F3CSH            | Cashier       | 000161, 000113, 000114 |
 | Fabrikam        | F3STK            | Stock Clerk   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Store Manager | 000100, 000111         |

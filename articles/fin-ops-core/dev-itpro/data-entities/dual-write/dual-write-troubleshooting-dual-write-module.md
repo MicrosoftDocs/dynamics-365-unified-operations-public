@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: ["Core", "Operations", "CrossApp", "ShowInHelp"]
+# ms.search.scope: ["Core", "Operations", "CrossApp", "ShowInHelp"]
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.search.validFrom: 2020-03-16
 # Troubleshoot issues with the dual-write module in Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Common Data Service. Specifically, it provides information that can help you fix issues with the **Dual-write** module in Finance and Operations apps.
 

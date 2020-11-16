@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Talent July 2017 update
 ---
 # Provision Talent
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Talent project. Unless a licensing issue prevents you from provisioning Talent, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.

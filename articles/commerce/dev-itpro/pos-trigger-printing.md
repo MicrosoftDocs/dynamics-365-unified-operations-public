@@ -172,10 +172,13 @@ The following table lists the available triggers and denotes whether they can be
 
 
 ## Shift triggers
-| Trigger              | Type           | Description                                             |
-|----------------------|----------------|---------------------------------------------------------|
-| PostOpenShiftTrigger | Non-cancelable | This trigger is executed after the new shift is opened. |
-| PreCloseShiftTrigger | Cancelable | This trigger is executed before the shift is closed. |
+
+| Trigger              | Type           | Description                                             | Release    |
+|----------------------|----------------|---------------------------------------------------------|--------------|
+| PostOpenShiftTrigger | Non-cancelable | This trigger is executed after the new shift is opened. | 	|
+| PreCloseShiftTrigger | Cancelable | This trigger is executed before the shift is closed. |	|
+| PreResumeShiftTrigger | Cancelable | This trigger is executed before the shift is resumed. |10.0.16	|
+| PostResumeShiftTrigger | Non-cancelable | This trigger is executed after the shift is resumed. | 10.0.16 |
 
 ## Tax override triggers
 
@@ -224,6 +227,13 @@ The following table lists the available triggers and denotes whether they can be
 |----------------------|----------------|---------------------------------------------------------|--------------------------|
 | PreCreateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is created (executed after the order input). | 10.0.15 |
 | PreUpdateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is updated. | 10.0.15 |
+
+## Stock count triggers
+
+| Trigger              | Type           | Description                                             | Release    |
+|----------------------|----------------|---------------------------------------------------------|--------------|
+| PreAdjustStockCountLineQuantityTrigger | Cancelable | This trigger is executed before the stock count for a line is adjusted. |10.0.16	|
+| PreSaveStockCountJournalTrigger | Cancelable | This trigger is executed before the stock count journal is saved. | 10.0.16 |
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.

@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Dual-write home page
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 These topics describe dual-write integration.
 
