@@ -710,7 +710,7 @@
           href: hybrid-customer-orders.md
         - name: Recall order operation in POS
           href: enhancedorderrecall.md
-        - name: Enabling multiple pick up delivery modes
+        - name: Enable multiple pickup delivery modes
           href: multiple-pickup-modes.md
       - name: Sales orders   
         items:
