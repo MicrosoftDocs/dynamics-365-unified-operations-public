@@ -45,21 +45,19 @@ For example, your objective is to predict whether a pet is a dog or a cat, based
 
 The numbers in the green cells represent correct predictions. As you can see, the model predicted a higher percentage of the actual cats correctly. The overall accuracy of the model is easy to calculate. In this case, it's 42 ÷ 50, or 0.84.
 
-### Binary classifiers in a confusion matrix
+### Multi-class classifiers in a confusion matrix
 
 Most discussions about the confusion matrix are focused on binary classifiers, as in the preceding example. This case is a special case where other metrics can be considered, such as sensitivity and recall.
 
 Next, we will consider a classification problem for a finance scenario that has three states. The model predicts whether a customer invoice will be paid on time, late, or very late. For example, out of 100 test invoices, 50 are paid on time, 35 are paid late, and 15 are paid very late. In this case, a model might produce a confusion matrix that resembles the following illustration.
 
-[![Payment prediction vs. actuals example](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+[![Model 1](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+Model 1
 
 A confusion matrix provides significantly more information than a simple accuracy metric. However, it's still relatively easy to understand. A confusion matrix tells you whether you have a balanced dataset where the output classes have similar counts. For the multi-class scenario, it tells you how far off a prediction might be when the output classes are ordinal, as in the preceding example about customer payments.
 
-Different accuracy metrics have the advantage of quantifying the model quality. A later section in this topic will discuss metrics that are used with classification problems.
-
-[![Payment prediction vs. actuals example](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
-
-For the earlier binary classifier the accuracy was 42/50 = .84
+## Model accuracy 
+Different accuracy metrics have the advantage of quantifying the model quality. 
 
 Because accuracy is an easy metric to understand, it's a good starting point for explaining a model to other people, especially to users of the model who aren't data scientists. No understanding of statistics is required to understand the model's accuracy. When a confusion matrix is available, it provides further insight into the model's performance.
 
@@ -67,7 +65,7 @@ However, for a more thorough understanding, several challenges that are associat
 
 [![Payment prediction example with a larger sample](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
 
-A quick calculation shows that this model's accuracy is (70 + 10 + 3) ÷ 100, or 0.83. On the surface, this result seems better than result for the previous model (model 1), which has an accuracy of 0.73. But is it better?
+A quick calculation shows that this model's accuracy is (70 + 10 + 3) ÷ 100, or 0.83. On the surface, this result seems better than result for the previous multi-class model (model 1), which has an accuracy of 0.73. But is it better?
 
 To begin to address this question, consider the accuracy of a naïve guess. For a classification problem, a simple guess will always predict the most common class. For model 1, that guess will be "on time," and it will produce an accuracy of 0.50. The guess for model 2 will also be "on time," and it will produce an accuracy of 0.80. Because model 1 improves on the naïve guess by 0.73 – 0.50 = 0.23, whereas model 2 improves on the naïve guess by 0.83 – 0.80 = 0.03, model 1 is a better model, even though it has lower accuracy. The calculation reveals that effective assessment of a model's quality requires more context than the accuracy value.
 
@@ -122,7 +120,7 @@ As you can see, the F1 value is between the values for precision and recall.
 
 Although F1 accuracy isn't as easy to understand, it adds nuance to the basic accuracy number. It can also help with unbalanced datasets, as the following discussion will show.
 
-The [Classify machine learning accuracy](#classify-machine-learning-accuracy) section of this topic compared the following two confusion matrices. Even though the first model had lower accuracy, it was deemed a more useful model because it showed more improvement than the default guess of an on-time payment.
+The [Model accuracy](#classify-machine-learning-accuracy) section of this topic compared the following two confusion matrices. Even though the first model had lower accuracy, it was deemed a more useful model because it showed more improvement than the default guess of an on-time payment.
 
 [![Payment prediction vs. actuals example](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
 
