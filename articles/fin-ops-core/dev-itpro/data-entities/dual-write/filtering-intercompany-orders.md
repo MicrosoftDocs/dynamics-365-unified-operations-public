@@ -42,7 +42,7 @@ Each of the standard Common Data Service entities is extended with references to
 
     :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Map staging to target, SalesOrderHeader":::
     
-2. After **CDS Sales Order Headers** is extended, the **IntercompanyOrder** field is available in the mapping. Apply a filter with **INTERCOMPANYORDER == ""** as the query string.
+2. After **CDS Sales Order Headers** is extended, the **IntercompanyOrder** field is available in the mapping. Apply a filter with `INTERCOMPANYORDER == ""` as the query string.
 
     :::image type="content" source="media/filter-sales-order-header.png" alt-text="Sales orders headers, edit query":::
 
@@ -50,11 +50,11 @@ Each of the standard Common Data Service entities is extended with references to
 
     :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Map staging to target, SalesOrderLine":::
 
-4. After **CDS Sales Order Lines** is extended, the **IntercompanyInventTransId** field is available in the mapping. Apply a filter with **INTERCOMPANYINVENTTRANSID == ""** as the query string.
+4. After **CDS Sales Order Lines** is extended, the **IntercompanyInventTransId** field is available in the mapping. Apply a filter with `INTERCOMPANYINVENTTRANSID == ""` as the query string.
 
     :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Sales order lines, edit query":::
 
-5. Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same way you extended the Common Data Service entities in steps 1 and 2. Then add the filter queries. filter strings are **(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")** and **INTERCOMPANYINVENTTRANSID == ""**.
+5. Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same way you extended the Common Data Service entities in steps 1 and 2. Then add the filter queries. The filter strings are `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")` and `INTERCOMPANYINVENTTRANSID == ""`.
 
     :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Map staging to target, Sales Invoice Headers":::
 
@@ -66,6 +66,6 @@ Each of the standard Common Data Service entities is extended with references to
 
     :::image type="content" source="media/filter-cust-group.png" alt-text="Map staging to target, Sales Quotation Header":::
 
-7. After you extent the **Quotations** entity, apply a filter with **CUSTGROUP !=  "\<company\>"** as the query string.
+7. After you extent the **Quotations** entity, apply a filter with `CUSTGROUP !=  "\<company\>"` as the query string.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Sales Quotation Header, edit query":::
