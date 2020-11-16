@@ -51,8 +51,19 @@ The following features are included in this release. Some of the listed features
 -  Removing support for Visual Studio 2015<br>- Version 10.0.16 is the last version to support Visual Studio 2015. For more information, see [
 Removing support for Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
--  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
-[Article that provides details](URL to article that provides feature details).
+-  [Email throttling](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ad72a029-2a28-eb11-a813-000d3a579c38&recordSetQueryKey=rn_releasenote-1aae8fd9-d373-e811-a965-000d3a1362e3%253A%2520rn_entityimage_url%253A%2520%253A%2520%253A%2520%253A%2520%253A%2520false%253A%2520%253A%2520%253A%252050)<br>- For more information, see 
+[Configure and send email](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
+
+-  [Document (attachment) history](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=401a96ad-2b28-eb11-a813-000d3a579c38)<br>- For more information, see 
+[Configure document management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+
+-  [General availability of the Grouping with grids feature](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- For more information, see 
+[Grid capabilities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities#grouping-tabular-data).
+
+-  [New HTML editor control](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-html-editor-control)<br>
+
+-  Enhanced the Message::AddAction API to surface the action in notifications when messages are routed to the Action center or Message details pane<br>- For more information, see 
+[Messaging APIs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details#message).
 
 -  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
 [Article that provides details](URL to article that provides feature details).
