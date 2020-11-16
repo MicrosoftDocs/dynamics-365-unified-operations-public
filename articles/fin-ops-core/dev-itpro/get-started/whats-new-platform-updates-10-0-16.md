@@ -51,6 +51,12 @@ The following features are included in this release. Some of the listed features
 -  Removing support for Visual Studio 2015<br>- Version 10.0.16 is the last version to support Visual Studio 2015. For more information, see [
 Removing support for Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
+
+-  [Feature name](URL to feature description in the Release Plans)<br>- For more information, see 
+[Article that provides details](URL to article that provides feature details).
+
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## Additional resources
