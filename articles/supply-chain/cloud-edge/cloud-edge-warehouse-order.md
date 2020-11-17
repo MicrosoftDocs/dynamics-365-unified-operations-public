@@ -39,7 +39,7 @@ ms.dyn365.ops.version: 10.0.16
 
 ## Warehouse orders
 
-Warehouse orders are only used as part of deployments using warehouse management workloads for cloud and edge scale units ([Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md)).
+Warehouse orders are only used as part of deployments using [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md)).
 
 Warehouse orders are used as part of the warehouse management processing, for example as part of an inbound purchase order warehouse app registration of physical inventory on-hand.
 With a hub and scale unit warehouse deployment, the warehouse orders will get created as part of the **Release to warehouse** process for purchase order lines containing a scale unit warehouse and items enabled to use warehouse management processes.
