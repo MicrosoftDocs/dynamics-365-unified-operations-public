@@ -95,6 +95,7 @@ For more information about how to set up and use customer electronic invoices, s
 - [Norway](emea-nor-e-invoices.md)
 - [Germany](emea-deu-e-invoices.md)
 - [Finland](https://support.microsoft.com/help/4559937)
+- [Estonia](https://support.microsoft.com/help/4552679)
 - [PEPPOL](https://support.microsoft.com/help/4490320)
 
 ## Additional resources
