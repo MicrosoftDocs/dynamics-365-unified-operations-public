@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.16
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.16 (January 2021)
+# Preview of Dynamics 365 Supply Chain Management 10.0.16 (February 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
