@@ -4,7 +4,7 @@ title: Supported standards for electronic invoicing in Europe
 description: This topic explains the level of coverage that exists for electronic invoicing for Europe. 
 author: mrolecki
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -86,10 +86,8 @@ Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/ana
 
 The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
 
-## Electronic invoices configuration
-The setup and the specifics of electronic invoices depend on the country which it is implemented for.
-
-For more information about how to set up and use customer electronic invoices, see the related country-specific articles:
+## Electronic invoice configuration
+The set up and specifics of electronic invoices depend on the country that it's implemented for. For more information about how to set up and use customer electronic invoices, see the related country-specific articles:
 
 - [Italy](emea-ita-e-invoices.md)
 - [Norway](emea-nor-e-invoices.md)
