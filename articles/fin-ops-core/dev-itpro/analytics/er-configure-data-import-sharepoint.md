@@ -146,7 +146,7 @@ You can also open the **File states for the sources** page by selecting **Organi
 
     [![Run ER model mapping](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
-4. The model mapping can run unattended in batch mode. In this case, every time that a batch runs this ER format, a single file is imported from the configured file sources.
+4. The model mapping can run [unattended](#limitations) in batch mode. In this case, every time that a batch runs this ER format, a single file is imported from the configured file sources.
 
     When a file is successfully imported from the SharePoint folder, it's deleted from that folder and moved to folder for successful imported files or to the folder to imported files with warnings. Otherwise it's moved to folder for failed files or stays in this folder if the folder for failed files isn't set up. 
 
@@ -197,3 +197,18 @@ You can also open the **File states for the sources** page by selecting **Organi
 11. Select **Accounts payable** \> **Periodic tasks** \> **Tax 1099** \> **Vendor settlement for 1099s**, enter appropriate values in the **From date** and **To date** fields, and then select **Manual 1099 transactions**.
 
     Only transactions for voucher V-00001 are available. No transactions for voucher V-00002 are available even though the error for the last imported transaction has been found in the Excel file.
+
+## <a name="limitations">Limitations</a>
+
+Currently the ER framework does not offer you the possibility to initiate a new batch job that will execute a model mapping in unattended mode for data import. For doing this, you must develop new logic so that the configured ER model mapping can be called from the application user interface (UI) to import data from inbound files. Therefore, some engineering work is required. 
+
+See the [Code to run a format mapping for data import](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) section of the [ER framework API changes for Application update 7.3](er-apis-app73.md) article to learn more about the relevant ER API.
+
+Review the code of the `BankImport_RU` class of the `Application Suite` model to see how your custom logic can be implemented. Note that this class extends the `RunBaseBatch` one. Pay attention to the `runER()` method where the `ERIModelMappingDestinationRun` object is created as the runner of an ER model mapping.
+
+## Additional resources
+
+[Electronic Reporting overview](general-electronic-reporting.md)
+
+[ER framework API changes for Application update 7.3](er-apis-app73.md)
+
