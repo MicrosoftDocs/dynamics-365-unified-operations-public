@@ -2,10 +2,10 @@
 # required metadata
 
 title: Enable multiple pickup delivery modes for customer orders
-description: This topic explains functionality available in Dynamics 365 Commerce for creating customer orders for pickup in a store.
+description: This topic explains functionality available in Dynamics 365 Commerce for creating customer orders for pickup at a store.
 author: hhainesms
 manager: annbe
-ms.date: 10/29/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.16
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-In Dynamics 365 Commerce version 10.0.16 and later, organizations can define multiple modes of delivery that shoppers or sales associates may choose from when creating a pick up in store order. This functionality allows organizations to enable multiple pickup options for their shoppers to choose from. For example, many retailers now offer shoppers the choice of in-store or curbside pickup for their orders. Commerce supports the configuration of these different pickup types as needed. Users can leverage these pickup delivery mode options when creating a customer order in any supported Commerce channel (e-commerce, call center, or store).
+In Dynamics 365 Commerce version 10.0.16 and later, organizations can define multiple modes of delivery that shoppers or sales associates can choose from when creating an order to be picked up in store. This functionality allows organizations to enable multiple pickup options for their shoppers to choose from. For example, many retailers now offer shoppers the choice of in-store or curbside pickup for their orders. Commerce supports the configuration of these different pickup types as needed. Users can leverage these pickup delivery mode options when creating a customer order in any supported Commerce channel (e-commerce, call center, or store).
 
 ## Enable and configure pickup delivery modes
 To use this functionality, enable the **Support for multiple pickup delivery modes** feature from the **Feature management** workspace in Commerce headquarters. After you enable the feature, additional configurations are required.
