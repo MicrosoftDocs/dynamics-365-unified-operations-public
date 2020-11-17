@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Overview
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
 
 - [System requirements](hr-admin-system-requirements.md)

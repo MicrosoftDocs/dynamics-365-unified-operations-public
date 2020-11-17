@@ -34,6 +34,8 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“**21Vianet**”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
 Microsoft strives to maintain functional parity between our commercially available service and Finance and Operations apps operated by 21Vianet in China. However, there are notable exceptions to this, which are affected by dependent service or partner-solution availability, market priorities, or compliance regulations.

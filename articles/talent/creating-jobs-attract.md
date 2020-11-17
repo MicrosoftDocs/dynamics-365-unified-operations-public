@@ -34,6 +34,8 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include [banner](includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic describes the elements of a job in Microsoft Dynamics 365 Talent: Attract. It also explains how to create a job.
 
 ## Job creation

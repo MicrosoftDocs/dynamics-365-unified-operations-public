@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 When you enable an entity map for dual-write, it begins at the **Not running** status. The entity map then goes through an initialization phase, where it does an initial write by copying pre-existing data on entities on both sides. Finally, when the entity is completely enabled, the entity map sets the status to **Running**.

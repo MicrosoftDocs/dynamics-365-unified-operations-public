@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 > [!IMPORTANT]
 > This topic is no longer updated. To see a current list of features that have been removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.
 
