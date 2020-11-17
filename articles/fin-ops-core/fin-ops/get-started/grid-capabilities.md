@@ -104,7 +104,7 @@ Business users often need to perform ad-hoc analysis of data. While this can be 
 
 To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by** column to the beginning to the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
 -  Data value for the group 
--  Column name (This information is especially once you have multiple levels of grouping.)  
+-  Column name (This information is especially useful when you have multiple levels of grouping.)  
 -  Number of data rows in this group
 -  Subtotals for any column configured to show totals
 
