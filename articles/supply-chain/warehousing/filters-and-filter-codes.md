@@ -41,12 +41,13 @@ The following table shows the prerequisites that must be in place before you sta
 
 | Category | Prerequisite |
 | -- | -- |
-| Before you start configuring products in the **Released product details** form, you must enable the Warehouse processing for the product’s storage dimension group. | 1. Click **Product information management \> Setup \> Dimension and variant groups \> Storage dimension groups**.|
+| Before you start configuring products in the **Released product details** form, you must enable the Warehouse processing for the product’s storage dimension group. | 1. Select **Product information management \> Setup \> Dimension and variant groups \> Storage dimension groups**.|
 | | 2. Select or create a storage dimension group where the **Use warehouse management processes** check box is set to *Yes*. |
+| If you will be using customer or vendor filters, you must first enable their use in **Warehouse management parameters**. | 3. Select **Warehouse management \> Setup \> Warehouse management parameters**. Go to the **Product filters** tab, then enable the customer and or vendor filters by setting the toggle to *Yes*. |
 
 ## Set up product filters
 
-There are 10 **Filter title** characteristics (enum values) available to select when creating a product filter. The enum values *Code 1*, *Code 2* through *Code 10* are system defined to represent a given characteristic or attribute of an item.
+Product filters have been expanded to 10 **Filter title** characteristics (enum values) available to select when creating a product filter. The enum values *Code 1*, *Code 2* through *Code 10* are system defined to represent a given characteristic or attribute of an item.
 
 For example, Code 1 could represent items that have hazardous material classification. Code 2 could represent items that can only be purchased by Vendors.  Product filters define the specific **Filter code** associated with the **Filter title**.
 
@@ -67,23 +68,27 @@ By setting up filter codes on an item group, you can make the codes required for
 
 To set up filter codes on item groups, follow these steps:
 
-1. Click **Inventory management** \> **Setup** \> **Inventory** \> **Item groups**.
-
-1. Click **New** to create a new item group. Enter the required details for the item group.
-
+1. Select **Inventory management** \> **Setup** \> **Inventory** \> **Item groups**.
+1. Select **New** in the Action Pane to create a new item group. Enter a value in **Item group** and the description in **Name**.
 1. On the **Warehouse** FastTab, in the **Filter required** group, select the appropriate check boxes to define one or more filter codes that must be specified for products that are associated with the item group.
+
     1. To update a released product, in the **Released product details** form, on the **Action Pane** select **Edit**. The filters associated with codes become available on the **Warehouse** FastTab.
 
 1. In the grouping for **Item group filter**, select the appropriate check boxes to define which filters must match for the filter group to be the default for an item.
     1. For example, if *Use filter code 1* and *Use filter code 2* are selected, then both *filter code 1* and *filter code 2* of the item must match the setup of the filter group for the item group before the filter group can be selected. When you create a new item, the selected filter group will be the default in the **Released product details** form, on the **Warehouse** FastTab, in the **Group 1** and **Group 2** fields.
 
+![Item groups](media/ItemGroup10.png "Item groups")
+
+> [!IMPORTANT]
+> Product filter codes are only enabled for items using advanced warehouse management.
+
 ## Specify filter codes for released products
 
-Follow these steps to specify filter codes for released products. For example, you can use filter codes to group products that must be located in a storage zone with a specific temperature.
+Follow these steps to specify filter codes for released products. For example, you can use filter codes to group products that are hazardous and purchased by specific vendors.
 
 To specify filter codes for specific products, follow these steps:
 
-1. Click **Product information management** \> **Products** \> **Released products**.
+1. Select **Product information management** \> **Products** \> **Released products**.
 1. On the **Action Pane** select **New** to create a new product.
 1. On the **New released product** Flyout, enter the data needed to create the base of a new product, then select **OK**.
 
@@ -94,11 +99,14 @@ To specify filter codes for specific products, follow these steps:
 
 ## Set up generally available items
 
-You can make specific inventory items available only for customers or vendors, or for both customers and vendors. For any item that you set up as generally available, customer filters and vendor filters do not apply.
+You can make specific inventory items available only for customers or vendors, or for both customers and vendors.
+
+> [!NOTE]
+> For any item that you set up as generally available, customer filters and vendor filters do not apply.
 
 To set up generally available items, follow these steps:
 
-1. Click **Warehouse management** \> **Setup** \> **Product filters** \> **Generally available products**.
+1. Select **Warehouse management** \> **Setup** \> **Product filters** \> **Generally available products**.
 
 1. In the Action Pane select **New** to create a new record.
 1. In the **Customer or vendor** field, select **Customer**, **Vendor**, or **All** to make the items available for customers, vendors, or both.
@@ -115,13 +123,13 @@ This procedure shows how to specify items that should be available for a custome
 
 To set up customer filter codes, follow these steps:
 
-1. Click **Accounts receivable** \> **Customers** \> **All customers**.
+1. Select **Sales and marketing** \> **Customers** \> **All customers**.
 1. Select a customer.
-1. On the **Customer** tab, in the **Set up** group, click **Filters**.
-1. In the **Filter codes** form, click **New**.
+1. On the **Customer** tab, in the **Set up** group, select **Product filters**.
+1. On the **Product filter codes** page, select **New** in the Action Pane.
 1. In the **Start date/time** and **End date/time** fields, enter the information for the selected customer.
 1. In the **Item group** field, select an item group.
-1. In the **Code 1**, **Code 2** through **Code 10** fields, select codes to use as criteria for limiting the items that are available for customers in the selected item group.
+1. In the **Code 1**, **Code 2** through **Code 10** fields, select codes to use as criteria for limiting the items that are available for customers in the selected item group. You must make a selection for each *Code #* that has been setup on the **Item group**.
 
 ## Optional: Set up vendor filter codes
 
@@ -129,13 +137,16 @@ This procedure shows how to specify items that should be available for a vendor 
 
 To set up vendor filter codes, follow these steps:
 
-1. Click **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Select **Procurement and sourcing \> Vendors \> All vendors**.
 1. Select a vendor.
-1. On the **Vendor** tab, in the **Set up** group, click **Filters**.
-1. In the **Filter codes** form, click **New**.
-1. In the **Start date/time** and **End date/time** fields, enter the information for the selected vendor.
-1. In the **Item group** field, select an item group.
-1. In the **Code 1**, **Code 2** through **Code 10** fields, select codes to use as criteria for limiting the items that are available for vendors in the selected item group.
+1. In the Action Pane on the **Vendor** tab, in the **Set up** group, select **Product filters**.
+1. In the **Filter codes** form, Select **New**.
+1. In the **Start date/time** and **End date/time** fields, enter a start and end date for the selected **Item group**.
+1. In the **Item group** field, select a value.
+1. In the **Code 1**, **Code 2** through **Code 10** fields, select codes to use as criteria for limiting the items that are available for vendors in the selected item group. You must make a selection for each *Code #* that has been setup on the **Item group**.
+
+> [!NOTE]
+> The enabling of vendor filters applies to released products where the associated storage dimension group has warehouse management processes enabled. The filter codes are used to determine if it is approved to purchase an item from a vendor during the creation of purchase order lines. Operations has two different methods to handle vendor approval. One or more released products exists, where approved vendor method is warning or not allowed. You are potentially enabling two vendor approval method for this released item. This may cause issues when creating purchase order lines.
 
 ## See also
 
