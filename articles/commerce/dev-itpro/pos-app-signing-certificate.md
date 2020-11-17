@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -38,7 +38,7 @@ To install Modern POS (MPOS) you must sign the MPOS app with a signing certifica
 
 - Add the Secure file task part of Azure DevOps build steps and upload the certificate to secure the file task. Use the secure file task output path variable as a parameter in the Customization.settings file.
 
-    > [!NOTE] 
+    > [!NOTE]
     > The Secure File task doesn’t support a password protected certificate. You must remove the password before uploading this task. Because the certificate is uploaded to the secure file system task in Azure, you can remove the password only for this step. However, you should discuss removing the password with your security experts to determine if this is the correct action for your project. Don’t remove the certificate password for other scenarios.
 - Use a certificate that is in the file system. To do this, download or generate a certificate and place it in the file system where the build is running. The Microsoft-hosted agent or build user should have access to this path and file.
 - Use thumbprint to look up in the certificate in the store and sign in with that certificate.
@@ -49,14 +49,14 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 
 ![MPOS app signing flow](media/POSSigningFlow.png)
 
-> [!NOTE] 
+> [!NOTE]
 > Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools. The certificate used for signing the appx file must be installed in the machine where Modern POS is installed.
 
 ## Steps to configure the certificate for signing
 
 ### Certificate in the file system/secure location
 
-Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild/downloadfile-task?view=vs-2019) and add it as the first step in the build process. The advantage of using the Secure File task is that the file is encrypted and placed in the disk during build no matter if the build pipeline succeeds, fails, or is canceled. The file is deleted from the download location after the build process is completed.
+Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild/downloadfile-task) and add it as the first step in the build process. The advantage of using the Secure File task is that the file is encrypted and placed in the disk during build no matter if the build pipeline succeeds, fails, or is canceled. The file is deleted from the download location after the build process is completed.
 
 1. Download and add the Secure File task as the first step in the Azure DevOps build pipeline. You can download the Secure File task from [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
 2. Upload the certificate to the Secure File task and set the Reference name under Output Variables, as shown in the following image.
@@ -66,6 +66,7 @@ Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild
 4. Provide a name for the variable in the value field **$(MySigningCert.secureFilePath)**, for example, **CertFile**.
 5. Save the variable.
 6. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the Azure DevOps pipeline (step 3). For example:
+
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(CertFile)</ModernPOSPackageCertificateKeyFile>
     ```
@@ -74,7 +75,9 @@ Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild
 
 If a downloaded or generated certificate is used to sign the MPOS app, then the update the **ModernPOSPackageCertificateKeyFile** node in the **BuildTools\\Customization.settings** file to point to the pfx file location (**$(SdkReferencesPath)\\appxsignkey.pfx**). For example:
 
-<ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(SdkReferencesPath)\\appxsignkey.pfx</ModernPOSPackageCertificateKeyFile>
+```xml
+<ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(SdkReferencesPath)\appxsignkey.pfx</ModernPOSPackageCertificateKeyFile>
+```
 
 In this case, the certificate file name is **appxsignkey.pfx**, located in the **Retail SDK\\Reference** folder.
 
