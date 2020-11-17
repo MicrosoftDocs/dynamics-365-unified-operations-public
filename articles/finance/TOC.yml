@@ -1006,6 +1006,8 @@
           href: finance-insights/cash-flow-forecast-intro.md
         - name: Customer payment predictions
           href: finance-insights/payment-insights-overview.md
+        - name: Use Customer payment predictions
+          href: finance-insights/use-customer-payment-predictions.md
         - name: Snapshots overview
           href: finance-insights/payment-snapshots.md
         - name: Results of machine learning models
