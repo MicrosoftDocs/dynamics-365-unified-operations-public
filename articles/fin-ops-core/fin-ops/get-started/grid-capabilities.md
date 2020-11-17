@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 10/30/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Platform update 33
 # Grid capabilities
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The new grid control provides a number of useful and powerful capabilities that can be used to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
