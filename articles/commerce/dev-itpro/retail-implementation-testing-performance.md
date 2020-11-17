@@ -17,7 +17,7 @@ ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-# ms.search.scop: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

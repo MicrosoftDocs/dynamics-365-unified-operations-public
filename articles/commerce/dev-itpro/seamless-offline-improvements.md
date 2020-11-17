@@ -18,7 +18,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-# ms.search.scop: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: 
