@@ -1650,7 +1650,7 @@
           href: localizations/emea-invoice-processing.md
         - name: Issue an EU entry certificate
           href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
-        - name: OIOUBL standards
+        - name: Supported standards for electronic invoicing
           href: localizations/emea-oioubl-standards-electronic-invoicing.md
         - name: Original invoice reference (Eastern Europe)
           href: localizations/tasks/ee-00004-original-invoice-reference.md
