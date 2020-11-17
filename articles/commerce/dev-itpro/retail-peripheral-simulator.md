@@ -18,7 +18,7 @@ ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetails
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations, Retail
+# ms.search.scop: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 266544
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5

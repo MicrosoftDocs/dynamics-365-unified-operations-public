@@ -163,12 +163,14 @@
       "breadcrumb_path": {
         "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/ops-bc/toc.json"},
       "ms.search.scope" : {
+        "commerce/dev-itpro/**/**.md": "Operations, Retail, Commerce, Developer",
+        "commerce/dev-itpro/retail-sdk/**/**.md": "Operations, Retail, Commerce, Developer",
         "fin-ops-core/dev-itpro/data-entities/dual-write/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
         "fin-ops-core/dev-itpro/dev-ref/**/**.md": "Operations, Developer",
         "fin-ops-core/dev-itpro/dev-ref/system-classes/**/**.md": "Operations, Developer",
         "fin-ops-core/dev-itpro/dev-ref/xpp-data/**/**.md": "Operations, Developer",
         "fin-ops-core/dev-itpro/dev-tools/**/**.md": "Operations, Developer",
-        "fin-ops-core/dev-itpro/extensibility/**/**.md": "Operations, Developer"
+        "fin-ops-core/dev-itpro/extensibility/**/**.md": "Operations, Developer",
         }
     },
     "template": [],
