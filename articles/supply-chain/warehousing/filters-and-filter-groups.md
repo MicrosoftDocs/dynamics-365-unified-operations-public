@@ -13,7 +13,8 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended
+
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -36,40 +37,43 @@ ms.dyn365.ops.version: Release 10.0.16
 
 This topic describes how to set up filters and filter groups for filter codes. A filter is associated with a filter code and it can be used to categorize items in the item handling, purchase, and sales processes. For example, for item handling you can use filters to make sure that heavy products are always located on the ground floor in a warehouse location. For purchase and sales processes, you can make specific items available for specific customers or vendors.
 
-## Associate filters with filter codes
+## Associate product filters with filter codes
 
 A filter is always associated with a filter code. You can associate the filter with one or more filter codes when you create the filter. You can associate an unlimited number of filters with a filter code.
 
-To associate filters with filter codes, follow these steps:
+Product filters have been expanded to 10 **Filter title** characteristics (enum values) available to select when creating a product filter. The enum values *Code 1*, *Code 2* through *Code 10* are system defined to represent a given characteristic or attribute of an item.
 
-1.  Click **Warehouse management** \> **Setup** \> **Filters** \> **Filters**.
+For example, Code 1 could represent items that have hazardous material classification. Code 2 could represent items that can only be purchased by Vendors.  Product filters define the specific **Filter code** associated with the **Filter title**.
 
-2.  Click **New**. In the **Filter title** field, select **Code 1**.
+![Product filter codes](media/Product_Filters10.png "Product filter codes")
 
-3.  In the **Filter code** field, enter a name for the filter.
+1. Go to **Warehouse management \> Setup \> Product filters \> Product filters**.
+1. Select **New** in the **Action Pane** to create a new product filter.
+1. Select an enum value from **Filter title**.
+1. Enter a value in the **Filter code** field.
+1. Enter a name for the code in the **Description** field.
+    1. For example, *Code 2* represents vendors. You could create a product filter for a specific vendor, or a group of vendors. See "Setup vendor filter codes" below.
 
-4.  Optional: Repeat steps 2 and 3. Select **Code 2**, **Code 3**, and **Code 4** for additional filters that you want to create.
+![Product filters](media/Product_Filters.png "Product filters")
 
-## Set up filter groups
+## Set up product filter groups
 
 You can use filter groups to filter codes. This is useful when the group is used in a query in a location directive and you want to search for the group instead of for a series of codes. A filter group is associated with an item group.
 
 To set up filter groups, follow these steps:
 
-1.  Click **Warehouse management** \> **Setup** \> **Filters** \> **Filter groups**.
+1. Go to **Warehouse management \> Setup \> Product filters \> Product filter groups**.
+1. Select **New** in the Action Pane.
+1. In the **Group 1** and **Group 2** fields, enter the names that will be used to categorize items.
+1. Select **New** in the **Details** FastTab to add a new line.
+1. Enter the **Start date/time** and **End date/time** for the filter group.
+1. Select the **Item group** to which the product filter will apply.
+1. In the **Code 1**, **Code 2** through **Code 10** fields, select the filter codes to include in the group.
 
-2.  Click **New**. In the **Group 1** and **Group 2** fields, enter the names that will be used to categorize items.
+![Item group](media/ProdFilterGroup.png "Item group")
 
-3.  Select the start date and end date for the filter group.
-
-4.  In the **Code 1**, **Code 2**, **Code 3**, and **Code 4** fields, select the filter codes to include in the group.
-    
-
-    > [!NOTE]
-    > <P>If you receive an error message when you close the form, a code setup may be missing. In the <STRONG>Item groups</STRONG> form, you can make the codes mandatory for an item group by selecting <STRONG>Assign filter code 1 for item group</STRONG>, <STRONG>Assign filter code 2 for item group</STRONG>, and so on.</P>
-
-    
-    For more information, see [Configure item filters and filter codes for warehouse transactions](filters-and-filter-codes.md).
+> [!NOTE]
+> If you receive an error message when you close the form, a code setup may be missing. In the **Item groups** form, you can make the codes mandatory for an item group by selecting **Assign filter code 1 for item group**, **Assign filter code 2 for item group**, and so on.
 
 ## Next step
 
