@@ -35,7 +35,7 @@ Dynamics 365 Supply Chain Management has robust procurement functionality. Dynam
 
 This integration supports purchase order creation and, in most cases, update from both applications. However, Supply Chain Management controls pricing, addresses, and product receipt. This enables a number of powerful cross-functional use cases for organizations using both Field Service and Supply Chain Management to allow procurements to be initiated and tracked across both systems.
 
-The following illustration shows the entities in each of the different system and how they are mapped to one another. Note that purchase orders in Field Service reference an *account*, while purchase orders in Supply Chain Management reference a*vendor*. To resolve this correctly, the system makes use of a reference to link vendors with accounts (see also [Integrated vendor master](vendor-mapping.md)). Other entities map directly as shown in the illustration.
+The following illustration shows the entities in each of the different system and how they are mapped to one another. Note that purchase orders in Field Service reference an *account*, while purchase orders in Supply Chain Management reference a *vendor*. To resolve this correctly, the system makes use of a reference to link vendors with accounts (see also [Integrated vendor master](vendor-mapping.md)). Other entities map directly as shown in the illustration.
 
 ![Entity mappings](media/dual-write-entities.png "Entity mappings")
 
@@ -53,7 +53,7 @@ For more information on setting up dual-write, see the [Dual-write home page](du
 
 For more information on how to install Dynamics 365 Field Service, see [How to install Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service)
 
-When enabled in Dataverse, dual-write and Field Service will introduce a number of solution layers which extend the environment with new metadata, forms, views, and logic, as shown in the following figure. These solutions can be enabled in any order.
+When enabled in Dataverse, dual-write and Field Service will introduce a number of solution layers that extend the environment with new metadata, forms, views, and logic, as shown in the following figure. These solutions can be enabled in any order.
 
 ![Solution layers](media/solution-layers.png "Solution layers")
 
@@ -65,7 +65,7 @@ The figure references the following elements, which you typically install in the
 
 ## Initial synchronization
 
-To create purchase orders and work with existing purchase order, it is required that reference data is synchronized between Supply Chain Management and Dataverse. Please use the *initial write* functionality to detect the entity relationships and find the entities you need to enable for a given map.
+To create purchase orders and work with existing purchase order, you must synchronize the reference data between Supply Chain Management and Dataverse. Please use the *initial write* functionality to detect the entity relationships and find the entities you need to enable for a given map.
 
 Major entities that are needed are:
 
@@ -116,8 +116,8 @@ The following templates are available for integrating procurement related docume
 |---|---|---|
 | Purchase order header V2 | msdyn\_Purchaseorders | This entity contains the fields from representing the purchase order header. |
 | Dataverse purchase order line entity | msdyn\_PurchaseOrderProducts | This entity contains the fields that represents the purchase order lines |
-| Product receipt header | msdyn\_purchaseorderreceipts | This entity is the product receipt headers that is created when a product receipt is posted in Supply Chain Management. |
-| Product receipt line | msdyn\_purchaseorderreceiptproducts | This entity is the product receipt lines that is created when a product receipt is posted in Supply Chain Management. |
+| Product receipt header | msdyn\_purchaseorderreceipts | This entity contains the product receipt headers that are created when a product receipt is posted in Supply Chain Management. |
+| Product receipt line | msdyn\_purchaseorderreceiptproducts | This entity contains the product receipt lines that are created when a product receipt is posted in Supply Chain Management. |
 | CDS purchase order line soft deleted entity | msdyn\_purchaseorderproducts | This entity contains information about which purchase order lines that are soft deleted. |
 
 ## Mappings
@@ -241,7 +241,7 @@ This template synchronizes data between Supply Chain Management and Dataverse.
 | DELIVERYADDRESSDESCRIPTION | \> | msdyn\_deliveryaddressdescription |
 | DELIVERYADDRESSNAME | \> | msdyn\_deliveryaddressname |
 
-\*) THe product number is used for synchronization. This identifies the product as a SKU (including product dimensions). For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md).
+\*) The product number is used for synchronization. This identifies the product as a SKU (including product dimensions). For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md).
 
 ### Product receipt header (msdyn\_purchaseorderreceipts)
 
@@ -336,7 +336,7 @@ The procurement integration extends the product mapping with the following logic
 - If **Product type** is *Product* and **Item model group, Stocked product** is *False*, then **Field Service Product Type** is *Non-Inventory*.
 - If **Product Type** is *Service*, then **Field Service Product Type** is *Service*.
 
-In addition, there is logic in Dataverse that maps vendors with their related accounts. It sets the default *Invoice Vendor Account*. On create, server-side plug-in logic defaults the *Invoice Vendor Account* from the Account's related Vendor. Vendor has a reference to Invoice Account which is used to populate this value.
+In addition, there is logic in Dataverse that maps vendors with their related accounts. It sets the default *Invoice Vendor Account*. On create, server-side plug-in logic defaults the *Invoice Vendor Account* from the Account's related Vendor. Vendor has a reference to Invoice Account that is used to populate this value.
 
 ## Supported scenarios
 
