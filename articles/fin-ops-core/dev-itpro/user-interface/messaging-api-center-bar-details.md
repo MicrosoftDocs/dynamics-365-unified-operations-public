@@ -88,7 +88,7 @@ Message::Remove(messageId);
 
 Starting in version 10.0.10 / Platform update 34, you can use the **Message::AddAction()** method to embed an action within a message. This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. The actions are only supported in messages that are routed to the message bar until version 10.0.16 / Platform update 40, at which time these actions can be seen in messages that are routed to the Action center or the Message details pane.
 
-In this example, a message is triggered for a system administrator indicating a particular required batch job is not running and exposes an action to go directly to the Batch jobs page.  
+In this example, a message is triggered for a system administrator indicating a particular required batch job is not running and exposes an action to go directly to the **Batch jobs** page.  
 
 ![Example of the Message:AddAction API used for embedding an action in a message](./media/cli-messageAddAction.png)
 
