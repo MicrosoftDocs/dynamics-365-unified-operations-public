@@ -109,28 +109,29 @@ Follow the steps in [Enable budget proposals](enable-budget-proposal.md) to use 
 
 The intelligent cash flow forecasting is built on top of existing cash flow forecasting feature in Dynamics 365 Finance. As a quick revision of existing cash flow forecasting please read: [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
-Customer payment predictions can help you collect proactively, learn how here: [Using the Customer payment predictions feature](https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/enable-cust-paymnt-prediction?branch=bob-fi-admin-topics#using-the-customer-payment-predictions-feature).
+Customer payment predictions can help you collect proactively, learn how here: [Use Customer payment predictions](use-customer-payment-predictions.md).
 
 For information that can help you evaluate the effectiveness of the prediction model, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md). For information that can help you adjust the data that is used to build the prediction, to improve its effectiveness, see [Improve the prediction model](improve-model.md).
 
-If you want to further understand the results from the AI model, please read: Understanding results of machine learning model: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/confusion-matrix?branch=bob-fi-daves-blogs
+If you want to further understand the results from the AI model, please read: Understanding results of machine learning model: [Results of maching learning models](confusion-matrix.md).
 
 ### Using cash flow feature
 
+Learn what’s new in cashflow forecasting here: What's new in cash flow forecasting: [Cash flow forecasts](cash-flow-forecast-intro.md).
 
-Learn what’s new in cashflow forecasting here: What's new in cash flow forecasting: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/cash-flow-forecast-intro?branch=bob-fi-intro-cashflow-forecasting
+Learn how to import external data to include in your cashflow forecast here: External data: [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
 
-Learn how to import external data to include in your cashflow forecast here: External data: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/external-data-in-cash-flow?branch=bob-finance-insites-external-data-in-cashflow
+Learn how payment prediction can help you more accurately estimated your cash position here: 
 
-Learn how payment prediction can help you more accurately estimated your cash position here: Cash position: 
+ - Learn how you can use forecasting using AI to project long term cash flow here: [Cash flow forecast overview](cash-position.md).
 
-Learn how you can use forecasting using AI to project long term cash flow here: Cash flow forecast:https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/cash-position?branch=bob-fi-cash-position
-
-Learn how you can save cash flow positions and cash flow forecasts and compare snapshot to actuals, here: Snapshots: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/payment-snapshots?branch=bob-fi-cust-payment-snapshots
+ - Learn how you can save cash flow positions and cash flow forecasts and compare snapshot to actuals, here: [Snapshots overview](payment-snapshots.md).
 
 ### Using Budget proposal
 
-Learn how you can accelerate budget creation using intelligent budget proposal here: https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/budget-proposals?branch=bob-budget-proposals-thru-ai-ml
+Learn how you can accelerate budget creation using intelligent budget proposal here: [Budget proposals](budget-proposals.md). 
+
+https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/budget-proposals?branch=bob-budget-proposals-thru-ai-ml
 
 Demo data for budget proposal:
 
