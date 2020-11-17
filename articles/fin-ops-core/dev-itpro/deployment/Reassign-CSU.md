@@ -74,7 +74,7 @@ This procedure and the next procedure must be completed during the planned downt
 
 1. On the **Store details** page, set the **Live channel database** field to the destination CSU database.
 2. Set the **Channel profile** field to the channel profile that is associated with the destination CSU.
-3. On the **Distribution schedule** page, run **1070** (**Channel configuration job**) and **1110** (**Global configuration**) jobs by selecting **Run now** for each job. (For asynchronous processing, select **Create batch job** instead of **Run now**.) After the jobs are completed, your channels have been migrated to the new CSU.
+3. On the **Distribution schedule** page, run job **1070** (**Channel configuration job**) and job **1110** (**Global configuration job**) by selecting **Run now** for each job. (For asynchronous processing, select **Create batch job** instead of **Run now**.) After the jobs are completed, your channels have been migrated to the new CSU.
 4. If you're using Cloud POS, you must use the URL of Cloud POS for the new CSU and reactivate the POS device. If you reactivate the POS device before all P-jobs on the origin channel database are completed, you might lose transactions because of duplicate transaction numbers.
 
     If you're using Modern POS, close each POS device, reopen it, and sign in.
