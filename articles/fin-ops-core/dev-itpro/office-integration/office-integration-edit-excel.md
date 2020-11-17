@@ -5,7 +5,7 @@ title: Create Open in Excel experiences
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -81,7 +81,7 @@ Define the AutoReport and AutoLookup field groups and test them using the Excel 
 Currently, a filter is not added to these options, hence the term “(unfiltered)”. In the future, an attempt will be made to apply the filter from the form to these options. For example, if a list of Customers was filtered to just Customers in the state of California, then, in the future, the entity will be scanned for the state field and if it is found then a filter would be added automatically.
 
 ## How can an entity be added as an Open in Excel option on a form that doesn’t share the same root datasource?
-A generated Open in Excel option can be added on any form by implementing the ExportToExcelIGeneratedCustomExport interface. When adding a generated option programmatically, the set of fields can be explicitly specified.
+A generated Open in Excel option can be added on any form by implementing the OfficeIGeneratedWorkbookCustomExporter interface. When adding a generated option programmatically, the set of fields can be explicitly specified. For more information, see [Modifying the Open in Office menu through interfaces](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu#modifying-the-open-in-office-menu-through-interfaces).
 
 ## What are the region-specific considerations for defining entities?
 The Open in Excel generated experiences can be made region-specific by adding region-specific fields into the AutoLookup group. These region-specific fields will then be included in the generated workbook.
