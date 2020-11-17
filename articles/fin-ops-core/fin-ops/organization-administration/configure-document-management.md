@@ -134,7 +134,7 @@ In version 10.0.12, the **Show related document attachments** feature changes th
 
 ## Document attachment history
 
-Starting in 10.0.16 / Platform update 40, a history mechanism has been made available for record attachments. This allows your organization to maintain an audit of actions related to individual attachments. In particular, you can see when an attachment was created, marked for pending deletion, restored, deleted, or moved and who performed that action. Note that attachment history is not maintained until 10.0.16 / Platform update 40, so any actions on attachments prior to that version will not be available.  
+Starting in version 10.0.16/Platform update 40, a history mechanism has been made available for record attachments. This allows your organization to maintain an audit of actions related to individual attachments. In particular, you can see when an attachment was created, marked for pending deletion, restored, deleted, or moved and who performed that action. Note that attachment history is not maintained until 10.0.16/Platform update 40, so any actions on attachments prior to that version will not be available.  
 
 ### Configuration of document attachment history
 Document attachment history can be enabled (or disabled) by going to **Document management parameters** > **General** > **History** > **Enable document history**. The default history retention period is 180 days, but this value can be modified as needed using the **Number of days to retain history** field. 
@@ -142,12 +142,12 @@ Document attachment history can be enabled (or disabled) by going to **Document 
 ### Viewing an attachment's history
 There are two entry points for viewing the history of a record attachment:
 
-1.  When you are looking at the attachments for a specific record (see the [Accessing document management attachments](configure-document-management.md#accessing-document-management-attachments) section for more details), you can view the history for the current set of attachments on the **Attachments** page by selecting the **Document history** button in the Action pane.   
-2.  Administrators can select the **Document history** button in the **History** section of the **Document management parameters** page. This action navigates you to the **Document history** page, which shows a list of all attachments in the system. You can then drill into any record to see the detailed history for the selected attachment.  
+- When you are looking at the attachments for a specific record (see the [Accessing document management attachments](configure-document-management.md#accessing-document-management-attachments) section for more details), you can view the history for the current set of attachments on the **Attachments** page by selecting the **Document history** button in the Action pane.   
+- Administrators can select the **Document history** button in the **History** section of the **Document management parameters** page. This action opens the **Document history** page, which shows a list of all attachments in the system. You can then drill into any record to see the detailed history for the selected attachment.  
 
 ## Attachment recovery
 
-In Platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments to be recovered within a configured period of time. 
+In Platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments to be recovered within a configured period of time.
 
 ### Configuration of attachment recovery
 
