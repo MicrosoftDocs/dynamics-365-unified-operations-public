@@ -131,7 +131,6 @@ Learn how payment prediction can help you more accurately estimated your cash po
 
 Learn how you can accelerate budget creation using intelligent budget proposal here: [Budget proposals](budget-proposals.md). 
 
-https://review.docs.microsoft.com/en-us/dynamics365/finance/finance-insights/budget-proposals?branch=bob-budget-proposals-thru-ai-ml
 
 Demo data for budget proposal:
 
