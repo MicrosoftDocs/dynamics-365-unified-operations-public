@@ -41,19 +41,25 @@ The following table shows the prerequisites that must be in place before you sta
 
 | Category | Prerequisite |
 | -- | -- |
-| Before you start configuring products in the **Released product details** form, you must enable the Warehouse processing for the product’s storage dimension group. | 1. Click **Product information management \> Setup \> Storage dimension groups**.|
-| | 2. Select a storage dimension group, and then select the **Use warehouse management processes** check box. |
+| Before you start configuring products in the **Released product details** form, you must enable the Warehouse processing for the product’s storage dimension group. | 1. Click **Product information management \> Setup \> Dimension and variant groups \> Storage dimension groups**.|
+| | 2. Select or create a storage dimension group where the **Use warehouse management processes** check box is set to *Yes*. |
 
 ## Set up product filters
 
-There are 10 **Filter title** characteristics (enum values) available to select when creating a product filter. The enum values *Code 1*, *Code 2* through *Code 10* are system defined to represent a given characteristic or attribute of an item. For example, Code 1 could represent items that can only be purchased by Vendor A; Code 2 could represent items that require special handling. Product filters define the specific **Filter code** associated with the **Filter title**.
+There are 10 **Filter title** characteristics (enum values) available to select when creating a product filter. The enum values *Code 1*, *Code 2* through *Code 10* are system defined to represent a given characteristic or attribute of an item.
+
+For example, Code 1 could represent items that have hazardous material classification. Code 2 could represent items that can only be purchased by Vendors.  Product filters define the specific **Filter code** associated with the **Filter title**.
+
+![Product filter codes](media/Product_Filters10.png "Product filter codes")
 
 1. Go to **Warehouse management \> Setup \> Product filters \> Product filters**.
 1. Select **New** in the **Action Pane** to create a new product filter.
 1. Select an enum value from **Filter title**.
 1. Enter a value in the **Filter code** field.
 1. Enter a name for the code in the **Description** field.
-    1. For example, *Code 2* represents an items general weight. you want to identify items as either heavy or light. You would create 2 **Product filters** using the **Filter title** value *Code 1*. One **Filter code** would be *Heavy*, the second **Filter code** would be *Light*.
+    1. For example, *Code 2* represents vendors. You could create a product filter for a specific vendor, or a group of vendors. See "Setup vendor filter codes" below.
+
+![Product filters](media/Product_Filters.png "Product filters")
 
 ## Set up filter codes on item groups
 
