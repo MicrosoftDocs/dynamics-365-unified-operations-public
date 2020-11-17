@@ -83,6 +83,8 @@ When you select  **Transactions - reduction key**  or  **Transactions - dynamic 
 - Select **All transactions**  if all transactions should reduce the forecast
 - Select **Orders**  if only sales orders should reduce the forecast.
 
+Note with **All transaction** selected, Transactions with both demand and supply within the same inventory dimensions are considered neutral and ignored during the forecast reduction. E.g. when planning dimension is set to site only, and no warehouse, a transfer order between site 1 warehouse 11 and site 1 warehouse 13 will be ignored and not reduce the remaining demand forecast.
+
 #### Include intercompany orders
 Specify if intercompany orders should be included when reducing the forecast.
 
@@ -105,7 +107,7 @@ To include a forecast in a master plan and select the method that is used to red
 
 - None
 - Percent – reduction key
-- Transactions – reduction key
+- Transactions – reduction key (not yet supported with Planning Optimization)
 - Transactions – dynamic period
 
 The following sections provide more information about each option.
