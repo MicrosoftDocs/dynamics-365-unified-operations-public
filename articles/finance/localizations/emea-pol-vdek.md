@@ -605,7 +605,7 @@ Follow these steps to limit access to the JPK_V7M processing.
     message processing**.
 
 2.  Select the **JPK_V7M** processing, and add the security groups that must
-    work with it. If no security group is defined for the processing, only a
+    work with it on the **Security roles** fast tab. If no security group is defined for the processing, only a
     system admin can see it on the **Electronic messages** page.
 
 ### Set up an office code for electronic message processing
