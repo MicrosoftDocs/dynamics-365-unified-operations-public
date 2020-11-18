@@ -126,7 +126,7 @@ Define conditions from the current company's master data sources to determine wh
 
 The following table shows the lookup results for **ImportTransaction**.
 
-| **Name** | **Label (En)** |   | **Label (Pl)** | **Description (En)**                                                                                                                         | **Description (Pl)**                                                                                                            |
+| **Name** | **Label (En)** | &nbsp;  | **Label (Pl)** | **Description (En)**                                                                                                                         | **Description (Pl)**                                                                                                            |
 |----------|----------------|---|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Import   | Import         |   | Import         | A designation that is related to input tax on imports of goods, including goods that are taxed in accordance with article 33a of the VAT Act | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
 | Inne     | Other          |   |                |                                                                                                                                              |                                                                                                                                 |
@@ -560,7 +560,7 @@ Version 72.150 of the **JPK-V7M XML format (PL)** configuration, and later versi
 When there is an overdue customer invoice, the invoice that is issued to a customer can go through three stages:
 
 1. The invoice is issued to the customer, tax transactions are posted, and the invoice is included in **JPK** \> **Ewidencja** \> **SprzedazWiersz** as usual according to the tax setup and marker setup.
-2. If the invoice isn't paid within 150 days after the payment due date, the company can apply the [Overdue debt VAT](emea-pol-sales-tax-reports#allowance-for-bad-debts.md) periodic task by going to **Accounts receivable** \> **Periodic tasks** \> **Overdue debt VAT**. Tax transactions that are produced by this task are reflected in the JPK-V7M report. The following information is included:
+2. If the invoice isn't paid within 150 days after the payment due date, the company can apply the [Overdue debt VAT](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task by going to **Accounts receivable** \> **Periodic tasks** \> **Overdue debt VAT**. Tax transactions that are produced by this task are reflected in the JPK-V7M report. The following information is included:
 
     - All the customer information from the original invoice that was posted in stage 1 is included.
     - Amounts are reported in the same **K_\*** elements as in the original invoice, but they have a negative sign.
