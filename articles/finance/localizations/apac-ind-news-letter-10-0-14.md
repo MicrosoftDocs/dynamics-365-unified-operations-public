@@ -5,7 +5,7 @@ title: What's new or changed for India GST Localization in 10.0.14 (October 2020
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.14.
 author: prabhatb
 manager: annbe
-ms.date: 11/17/2020
+ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
