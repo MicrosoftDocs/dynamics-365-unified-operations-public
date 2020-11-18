@@ -1,8 +1,16 @@
+---
+author: robinarh
+ms.service: dynamics-ax-applications
+ms.topic: include
+ms.date: 11/17/2020
+ms.author: rhaertle
+---
+
 ## Customers V3 to accounts
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Source filter: `((PartyType == "Organization"))`
+Source filter: ((PartyType == "Organization"))
 
 Reversed source filter: customertypecode eq 3
 
@@ -69,3 +77,4 @@ none | >> | customertypecode | 3
 PARTYTYPE | << | none | Organization
 PARTYNUMBER | = | msdyn_partynumber | 
 CONTACTPERSONID | = | primarycontactid.msdyn_contactpersonid | 
+SALESTAXGROUP | = | msdyn_salestaxgroup.msdyn_name | 
