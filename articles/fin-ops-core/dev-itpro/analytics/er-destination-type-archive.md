@@ -55,7 +55,8 @@ You can save a file in a designated SharePoint folder. To define the default Sha
 
 When the document type location is set to **Azure storage**, you can save a file to Azure Storage.
 
-> [!NOTE] Note that the ER framework permanently stores files in Azure Blob storage unlike the Data management framework that applies the 7 days retention policy for documents that must be processed (see [API for getting message status](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/recurring-integrations#api-for-getting-message-status) and [Status check API](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api#status-check-api) for more). The ER related files will be stored in Azure Blob storage as attachments of application table records as long as you would need to. A single file will be deleted from Azure Blob storage only along with an application table record to which this file was attached.
+> [!NOTE] 
+> Note that the ER framework permanently stores files in Azure Blob storage unlike the Data management framework that applies the 7 days retention policy for documents that must be processed (see [API for getting message status](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/recurring-integrations#api-for-getting-message-status) and [Status check API](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api#status-check-api) for more). The ER related files will be stored in Azure Blob storage as attachments of application table records as long as you would need to. A single file will be deleted from Azure Blob storage only along with an application table record to which this file was attached.
 
 ## Additional resources
 
