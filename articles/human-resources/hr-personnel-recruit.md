@@ -63,7 +63,7 @@ Managers can submit recruiting requests in Human Resources. If you use a separat
    ![Start a recruiting request](./media/hr-recruit-1-select-to-recruit.png)
 
 4. Complete the **Description**, **Job**, and **Estimated start date** fields.
-   ![Start a recruiting request](./media/hr-recruit-2-select-to-recruit.png)
+   ![Complete the recruiting request](./media/hr-recruit-2-select-to-recruit.png)
 
 5. Select **Continue**. The recruiting request for your position appears.
 
