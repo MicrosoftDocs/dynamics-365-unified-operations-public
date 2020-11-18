@@ -41,7 +41,7 @@ This mobile workspace is intended to be used with the Finance and Operations mob
 ## Overview
 The **Cost controlling** mobile workspace provides an instant view of the current performance of cost centers by comparing actual costs against the budgeted costs. You can drill down to the status of individual cost elements.
 
-For example, an employee receives an invitation to an international conference, but the organization must cover all the travel expenses. The employee asks his manager whether he can attend the conference. The manager opens the **Cost controlling** mobile workspace on her mobile device to see whether she has budget for the employee to attend the conference.
+For example, an employee receives an invitation to an international conference, but the organization must cover all the travel expenses. The employee asks their manager whether they can attend the conference. The manager opens the **Cost controlling** mobile workspace on their mobile device to see whether there is budget for the employee to attend the conference.
 
 ### Data security
 The data in the **Cost controlling** mobile workspace is secured through user credentials. Cost center managers are allowed to see data only for their own cost center. The access-level security is managed in the **Cost accounting** module.

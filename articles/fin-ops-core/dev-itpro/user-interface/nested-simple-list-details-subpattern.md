@@ -46,7 +46,8 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 -   The details portion of the NSL+D subpattern is simpler than the SL+D pattern. The NSL+D subpattern uses only groups, whereas the SL+D pattern organizes content into FastTabs.
 
 ## Wireframe
-[![Wireframe for Simple List and Details pattern](./media/patternnsld.png)](./media/patternnsld.png)[](./media/nestedsimplelistanddetails1.png)
+
+![Wireframe for Simple List and Details pattern](./media/nestedsimplelistanddetails1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:

@@ -170,7 +170,7 @@ The **Review** function validates the following issues in an outbound document:
 - **Location not set** – location is not specified for a location-controlled item where location is not allowed to be blank.
 - **Deleted lines** – the order has lines deleted by a Commerce headquarters (HQ) user that is not known to the POS application.
 
-If you set the **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory**, validation is executed automatically when you select the **Finish fulfillment** function.
+If you set the **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory operations**, validation is executed automatically when you select the **Finish fulfillment** function.
 
 ### Finish fulfillment
 

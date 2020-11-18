@@ -35,6 +35,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Development and administration for Finance and Operations apps includes:
 
 - Administrator experience and Lifecycle Services
@@ -77,3 +79,6 @@ Data from Finance and Operations can easily be integrated with Microsoft and non
 
 ## Office integration
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration overview](office-integration/office-integration.md).
+
+## eLearning courses
+For online courses and training, check out [Dynamics 365 Finance and Operations on Microsoft Learn](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2Cdeveloper).

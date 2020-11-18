@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
+# ms.search.scope:
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.search.validFrom: 2020-01-06
 # Dual-write overview
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -90,7 +92,7 @@ Dual-write creates a mapping between concepts in Finance and Operations apps and
 Dual-write provides data integration across Microsoft Dynamics 365 applications. This robust framework links environments and enables different business applications to work together. Here are the top reasons why you should use dual-write:
 
 + Dual-write provides tightly coupled, near-real-time, and bidirectional integration between Finance and Operations apps and model-driven apps in Dynamics 365. This integration makes Microsoft Dynamics 365 the one-stop shop for all your business solutions. Customers who use Dynamics 365 Finance and Dynamics 365 Supply Chain Management, but who use non-Microsoft solutions for customer relationship management (CRM), are moving toward Dynamics 365 for its dual-write support.
-+ Data from customers, products, operations, projects, and the Internet of Things (IoT) automatically flows to Common Data Service through dual-write. This connection is useful for businesses that are interested in Microsoft Power Platform expansions.
++ Data from customers, products, operations, projects, and the Internet of Things (IoT) automatically flows to Common Data Service through dual-write. This connection is useful for businesses that are interested in Power Platform expansions.
 + The dual-write infrastructure follows the no-code/low-code principle. Minimal engineering effort is required to extend the standard table-to-table maps and to include custom maps.
 + Dual-write supports both online mode and offline mode. Microsoft is the only company that offers support for online and offline modes.
 

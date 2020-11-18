@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,6 +34,7 @@ ms.search.validFrom: 2019-09-20
  
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## Why do I need bootstrapping? 
 You might have an existing Common Data Service or other Dynamics 365 app instance with business data, and you want to enable dual-write connection against it. In this case, you need to bootstrap Common Data Service or other Dynamics 365 app data with company information before enabling dual-write connection.  

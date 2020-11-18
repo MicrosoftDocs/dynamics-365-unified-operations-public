@@ -5,7 +5,7 @@ title: Control warehouse work by using work templates and location directives
 description: This topic describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 author: perlynne
 manager: tfehr
-ms.date: 02/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -44,17 +44,22 @@ The **Work templates** page lets you define the work operations that must be per
 
 Work templates consists of a header and associated lines. Each work template is for a specific *work order type*. Many work order types are associated with source documents, such as purchase or sales orders. However, other work order types represent separate warehouse processes, such as cycle counting. The *work pool ID* lets you organize work into groups. 
 
-The settings in the work header definition can be used to determine when a new piece of work should be created. For example, you can set a maximum number of pick lines and a maximum expected pick time. Then, if the work for a sales order picking process exceeds either of those values, that work is split into two pieces of work. 
+Use the settings in the work header definition to determine when a new piece of work should be created. For example, you can set a maximum number of pick lines and a maximum expected pick time. Then, if the work for a sales order picking process exceeds either of those values, that work is split into two pieces of work.
 
-The work lines represent the physical tasks that are required in order to process the work. For example, for an outbound warehouse process, there might be a work line for picking up the items within the warehouse and another line for putting those items into a staging area. There can then be an additional line for picking the items from staging, and another line for putting the items into a truck as part of the loading process. You can set a *directive code* on work template lines. A directive code is linked to a location directive and therefore helps guarantee that the warehouse work is processed in the correct location in the warehouse. 
+Use the **Work header breaks** button to define when the system should create new work headers. For example, to create a work header for each _order number_, select **Edit query** on the Action Pane, and then add the **Order number** field to the **Sorting** tab of the query editor. Fields that are added to the **Sorting** tab are available for selection as *grouping fields*. To set your grouping fields, select **Work header breaks** on the Action Pane, and then, for each field that you want to use as a grouping field, select the check box in the **Group by this field** column.
 
-You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can be used for work only in a specific warehouse. Alternatively, you might have several templates that are used to create work for outbound sales order processing, depending on the sales origin. The system uses the **Sequence number** field to determine the order that the available work templates are assessed in. Therefore, if you have a very specific query for a particular work template, you should give it a low sequence number. That query will then be evaluated before other, more general queries. 
+The work lines represent the physical tasks that are required to process the work. For example, for an outbound warehouse process, there might be one line for picking up the items in the warehouse and another line for putting those items into a staging area. There can then be an additional line for picking the items from staging and another line for putting the items into a truck as part of the loading process. You can set a *directive code* on work template lines. A directive code is linked to a location directive, and therefore helps ensure that the warehouse work is processed in the correct location in the warehouse.
+
+You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can be used for work only in a specific warehouse. Alternatively, you might have several templates that create work for outbound sales order processing, depending on the sales origin. The system uses the **Sequence number** field to determine the order that the available work templates are assessed in. Therefore, if you have a very specific query for a particular work template, you should give it a low sequence number. That query will then be evaluated before the other, more general queries.
+
+> [!NOTE]
+> To prevent the system from automatically overwriting work template *sequence numbers* after a template has been deleted, turn on the *Preserve work template sequence numbers on delete* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 To stop or pause a work process, you can use the **Stop work** setting on the work line. In that case, the worker who is performing the work won't be asked to perform the next work line step. To move on to the next step, that worker or another worker must select the work again. You can also separate the tasks within a piece of work by using a different *work class ID* on the work template lines.
 
 ## Location directives
 
-Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines, and you create them on the **Location directives** page. 
+Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines, and you create them on the **Location directives** page.
 
 On the header, each location directive must be associated with a *work order type* that specifies the type of inventory transaction that the directive will be used for, such as sales orders, replenishment, or raw material picking. The *work type* specifies whether the location directive will be used for picking or putting work, or for some other warehouse process, such as counting or inventory status changes. You must also specify a *site* and a *warehouse*. A *directive code* that you specify on the header can be used to link the location directive to one or more work templates. 
 
@@ -65,3 +70,15 @@ The location directive lines set additional restrictions on the application of t
 Location directives have one additional level of detail: *location directive actions*. You can define multiple location directive actions for each line. Once again, a sequence number is used to determine the order that the actions are assessed in. On this level, you can set up a query to define how to find the best location in the warehouse. You can also use predefined **Strategy** settings to find an optimal location.
 
 For more information about how to create and configure location directives, see [Create a location directive](create-location-directive.md).
+
+### How location directives work
+
+Location directives determine *where* items should be picked and *where* they should be put. The system evaluates a location directive against each work line and then selects a location, based on the work line details. The system first finds all location directives that match a particular work line (for example, they are for the correct warehouse and match the query). It then sequentially evaluates the directives that it has found.
+
+> [!NOTE]
+> There are special cases where the pick location or put location is pre-selected. For example, during _purchase registration_, the first pick is always from the location where the registration occurs. Another example is *inventory movement by template*, where the warehouse worker selects the pick location, and only the put locations are found through location directives.
+
+## Additional resources
+
+- Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
+- Help topic: [Create location directives](create-location-directive.md)

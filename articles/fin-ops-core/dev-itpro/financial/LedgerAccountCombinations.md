@@ -52,7 +52,7 @@ This part of the topic covers the "Dimensions," "Dimension Values," "Categorizat
 
 A dimension attribute, which will be referred to as just a dimension, represents an additional piece of classifying information that a user wants to associate with a ledger account combination. It represents classes of things, not specific instances. All the things that can be used to create a dimension are either classes of entities that already exist in the system (for example, department, cost center, expense purpose, customer, vendor, and item) or custom entities that are specific to a particular installation (for example, license plate number, event name, and ticket number).
 
-When a dimension is created, the user can choose where its values come from. Dimension values can come from an existing entity in the system, such as Customer or Department entities, or from a custom list that the user creates. For each dimension that is defined, the dimension framework keeps track of a reference to a table in the system. For example, for the exisiting Customer entity, a reference to the CustTable table is used. For custom entities that are defined by the user, a reference to the DimensionFinancialTag table is used. The metadata about what each dimension represents is stored in the DimensionAttribute table.
+When a dimension is created, the user can choose where its values come from. Dimension values can come from an existing entity in the system, such as Customer or Department entities, or from a custom list that the user creates. For each dimension that is defined, the dimension framework keeps track of a reference to a table in the system. For example, for the existing Customer entity, a reference to the CustTable table is used. For custom entities that are defined by the user, a reference to the DimensionFinancialTag table is used. The metadata about what each dimension represents is stored in the DimensionAttribute table.
 
 In the example in the following illustration, there are two dimensions on the **Financial dimensions** page. The Customer dimension represents customers that already exist in the application, and the LicensePlate dimension represents a new custom list.
 
@@ -62,7 +62,7 @@ The data about each dimension is stored in the DimensionAttribute table. The SQL
 
 [![Query results for DimensionAttribute storage](./media/FinancialDimensionSQL.png)](./media/FinancialDimensionSQL.png)
 
-The **Type** value indicates whether the dimension is backed by an existing entity in the system or a custom list. Note that the dimension framework doesn't directly reference the backing table for an existing entity, such as CustTable. Instead, a custom view is created to make an entity available in the system, so that it can be used in the dimension framework. By default, 36 existing entities can be used as dimensions.
+The **Type** value indicates whether the dimension is backed by an existing entity in the system or a custom list. The dimension framework doesn't directly reference the backing table for an existing entity, such as CustTable. Instead, a custom view is created to make an entity available in the system, so that it can be used in the dimension framework. By default, 36 existing entities can be used as dimensions.
 
 More than one dimension can be created based on the same entity. Sometimes, an entity in the system might be used for multiple purposes when transaction activity is classified in the system. In this case, multiple dimensions can be defined for the entity, one for each purpose. A typical example is a cost center backing entity that is used to represent both the primary cost center (for example, selling) and the cost center that the transaction is being traded against (for example, purchasing).
 
@@ -70,7 +70,7 @@ Internally, special dimensions exist that are automatically created to support k
 
 ### Dimension attribute values
 
-A dimension attribute value is a specific instance of a dimension that is used in the dimension framework. The values for a dimension are determined by the **ViewName** property that is specified on the DimensionAttribute record. In the case of an existing entity, such as CustTable, values consist of the records in that table. In the case of a custom list, values consist of a specific set of records in the DimensionFinancialTag table. You can view the values that are available for a specific dimension by selecting the **Financial dimension values** button on the **Financial dimensions** page.
+A dimension attribute value is a specific instance of a dimension that is used in the dimension framework. The values for a dimension are determined by the **ViewName** property that is specified on the DimensionAttribute record. For an existing entity, such as CustTable, values consist of the records in that table. For a custom list, values consist of a specific set of records in the DimensionFinancialTag table. You can view the values that are available for a specific dimension by selecting the **Financial dimension values** button on the **Financial dimensions** page.
 
 If the list of values is provided by an existing entity, such as CustTable, the user can't edit it from the **Financial dimensions** page. To create a new dimension value for Customer, the user must go directly to the **Customer** page and create a new customer. After the new customer is created, it can be used in the dimension framework. If the list of values is provided by the user as a custom list, the user can edit the list directly on the **Financial dimensions** page.
 
@@ -86,7 +86,7 @@ The following illustration shows the query results from the dimension setup tabl
 
 [![Query results for dimension setup tables](./media/DimensionSetupDataSQL.png)](./media/DimensionSetupDataSQL.png) 
 
-In both these examples, the **Financial dimension values** page shows the values that exist for the entity, not the values that have actually been used in the dimension framework. Because the representation of these values in the dimension framework isn't created until the these values are used in the framework, it must still hold a reference to the backing value. Therefore, values that haven't yet been used can be deleted. This behavior allows for optimization of storage size and performance.
+In both these examples, the **Financial dimension values** page shows the values that exist for the entity, not the values that have been used in the dimension framework. Because the representation of these values in the dimension framework isn't created until these values are used in the framework, it must still hold a reference to the backing value. Therefore, values that haven't yet been used can be deleted. This behavior allows for optimization of storage size and performance.
 
 After a dimension value is referenced, so that it must be saved by the dimension framework, it's stored in the DimensionAttributeValue table. This table is the link between the DimensionAttribute record and the specific **RecId** value of the record in the ViewName view or table that is referenced on the DimensionAttribute record. Both the DimensionAttribute and DimensionAttributeValue records are required in order to go back to the originating value that the user entered.
 
@@ -98,13 +98,13 @@ This part of the topic covers the "Dimension Enumerations" and "Default Dimensio
 
 [![Sets in the framework](./media/SetsInFramework.png)](./media/SetsInFramework.png)
 
-Dimension enumerations and default dimensions are two mechanisms that are used to store a set of references to either dimensions or dimension values. Both are typically exposed on a **Financial dimensions** tab on master data pages, such as **Customers** (CustTable) or **Vendors** (VendTable).
+Dimension enumerations and default dimensions are two mechanisms that are used to store a set of references to either dimensions or dimension values. Both are typically exposed on a **Financial dimensions** tab on primary data pages, such as **Customers** (CustTable) or **Vendors** (VendTable).
 
 ### Dimension enumerations
 
 A dimension enumeration is a set of references to existing dimensions that are persisted for later use. These dimensions have no particular ordering, and the dimension framework imposes no constraints on the dimensions that appear in the set. However, in most cases, the consuming code constrains the set to the set of dimensions that are available in the current ledger. Dimension enumerations are stored in the DimensionAttributeSet and DimensionAttributeSetItem tables.
 
-Each set specifies an enumeration type. This enumeration type is the enumeration Id of the BaseEnum that represents the source of enumeration values that are associated with each dimension. You can find the enumeration number by using the **enumNum()** method. Therefore, it isn't a list of user-entered values from backing entities but a list of enumeration values that are defined by the developer. An example is the storage of a list of dimensions that are associated with each main account, and that are either fixed (labeled **Fixed value**) or not fixed (**Not fixed**).
+Each set specifies an enumeration type. This enumeration type is the enumeration ID of the BaseEnum that represents the source of enumeration values that are associated with each dimension. You can find the enumeration number by using the **enumNum()** method. Therefore, it isn't a list of user-entered values from backing entities but a list of enumeration values that are defined by the developer. An example is the storage of a list of dimensions that are associated with each main account, and that are either fixed (labeled **Fixed value**) or not fixed (**Not fixed**).
 
 The following illustration shows an example of dimension enumerations on a page.
 
@@ -174,7 +174,7 @@ The following illustration shows the resulting constraint definition.
 
 [![Query results for advanced constraint trees](./media/AdvancedConstraintTreeSQL.png)](./media/AdvancedConstraintTreeSQL.png)
 
-Note that if a user enters **150-B** for a main account and customer, a specific license plate number must also be entered. However, if the user enters **150-W**, no license plate number is required. In both cases, the user will always see three segments in the ledger account combination, even if one of those segments is left blank. For examples of the effects that these structures, segments, and constraints have when ledger dimension accounts are entered, see the [part 5](#part-5-ledger-dimensions) section of this topic section of this topic that discusses the entry and storage of ledger account combinations.
+If a user enters **150-B** for a main account and customer, a specific license plate number must also be entered. However, if the user enters **150-W**, no license plate number is required. In both cases, the user will always see three segments in the ledger account combination, even if one of those segments is left blank. For examples of the effects that these structures, segments, and constraints have when ledger dimension accounts are entered, see the [part 5](#part-5-ledger-dimensions) section of this topic section of this topic that discusses the entry and storage of ledger account combinations.
 
 If a user wants to show trailing segments only when they must be entered, advanced rules can be combined with the account structure to provide the additional versatility.
 
@@ -184,7 +184,7 @@ This part of the topic covers the "Advanced Rules" region that is highlighted in
 
 [![Advanced rules in framework](./media/AdvancedRulesGraph.png)](./media/AdvancedRulesGraph.png)
 
-Account structures and constraints let users build very simple to very complex trees of valid combinations. However, there is sometimes a business requirement to show a dimension as a segment in a ledger account combination only at specific times, instead of just constraining the valid values that are allowed and showing the dimension all the time. Advanced rules support this requirement.
+Account structures and constraints let users build simple to complex trees of valid combinations. However, there is sometimes a business requirement to show a dimension as a segment in a ledger account combination only at specific times, instead of just constraining the valid values that are allowed and showing the dimension all the time. Advanced rules support this requirement.
 
 ### Advanced rules
 
@@ -197,11 +197,11 @@ Advanced rules can be added to an account structure and its constraints. Althoug
 - Any duplication automatically joins and uses the most restrictive constraint.
 - The location of the duplicated segment appears only in the first occurrence of the segment.
 
-To set up an advanced rule, you must define a filter that controls when additional segments are added to a ledger account combination. You must then link rule structures that specify the additional segments that must added, their order in the hierarchy, and any constraints between them. (Rule structures resemble account structures.)
+To set up an advanced rule, you must define a filter that controls when additional segments are added to a ledger account combination. You must then link rule structures that specify the additional segments that must be added, their order in the hierarchy, and any constraints between them. (Rule structures resemble account structures.)
 
 For example, the following account structure is set up.
 
-[![Basic structure and constraints](./media/BasicStructureAndConstraint.png)](./media/BasicStructureAndConstraint.png)
+![Basic structure and constraints for two accounts](./media/BasicStructureAndConstraint.png)
 
 You configure the following advanced rule to optionally add one or more segments only if the user enters main account 145 and customers G through Q.
 
@@ -233,7 +233,7 @@ To understand ledger dimensions, you must understand how users enter ledger acco
 
 This section uses the account structure and rule setup from [part 4](#part-4-advanced-rules) of this topic, and explains the user interaction with the account entry control when an account is entered. Here is the account structure, as a reminder.
 
-[![Basic structure and constraints](./media/BasicStructureAndConstraintForm.png)](./media/BasicStructureAndConstraintForm.png)
+![Basic structure and constraints got My Account Structure](./media/BasicStructureAndConstraintForm.png)
 
 A single account rule is associated with the account structure.
 
@@ -253,7 +253,7 @@ When the user clicks in the field, nothing changes. However, if the user selects
 
 For this example, the user enters the combination **150-A**.
 
-[![Completed ledger account field](./media/CompletedLedgerAccountField.png)](./media/CompletedLedgerAccountField.png)
+![Completed ledger account field with value 150-A](./media/CompletedLedgerAccountField.png)
 
 As soon as the second segment is entered, and the user presses **Tab** to move out of the control, the dimension framework saves the combination and then validates it, based on the constraints. In this example, the combination is valid. The user can enter segments either as a string or by using the lookup.
 
@@ -266,7 +266,7 @@ For this example, the following information is known about the combination:
 
 Therefore, the two segment values are stored across the four tables, as shown in the following illustration.
 
-[![Query results for ledger dimension storage](./media/LedgerDimensionStorageSQL.png)](./media/LedgerDimensionStorageSQL.png)
+![Query results for ledger dimension storage across four tables](./media/LedgerDimensionStorageSQL.png)]
 
 The first table is named **DimensionAttributeValueCombination**. It stores a full multisegment account combination, together with some denormalized information about the combination. For example, it stores the concatenated segments as a single string, a foreign key reference to the account structure, and a foreign key to the main account that was used (150).
 
@@ -296,7 +296,7 @@ If the user opens the lookup while the third segment has the focus, the possible
 
 The user can now enter a license number.
 
-[![Completed ledger account field](./media/CompletedLedgerAccountFieldWithAllRules.png)](./media/CompletedLedgerAccountFieldWithAllRules.png)
+![Completed ledger account field with license number](./media/CompletedLedgerAccountFieldWithAllRules.png)
 
 As soon as a value is entered in the third field, and the user presses **Tab** to move out of the control, the combination is validated. If the combination is valid, it's saved as a Ledger Dimension.
 
@@ -308,7 +308,7 @@ For this example, the following information is known about the new combination:
 - Because the values match the rule for the first two segments, an account rule structure that is named **MyRuleStructure1** was added. Therefore, one additional segment was added.
 - The third segment is the LicensePlate dimension. It has a value of **AAA 111**.
 
-[![Query results for ledger dimension storage](./media/LedgerDimensionValuesStorageSQL.png)](./media/LedgerDimensionValuesStorageSQL.png)
+![Query results for ledger dimension storage with value AAA 111](./media/LedgerDimensionValuesStorageSQL.png)]
 
 For this combination, a total of eight rows was inserted across the four tables that store the ledger dimension. The difference between the first ledger account combination that was discussed in the previous post([part 4](#part-4-advanced-rules)) and this ledger account combination is that multiple structures are used to drive the dimensions that make up this ledger account combination. Two records are stored in the DimensionAttributeValueGroupCombination and DimensionAttributeValueGroup tables. Each record represents a structure that is used and joined to the full combination.
 
@@ -374,7 +374,12 @@ The dimension framework uses hashes to uniquely identify data in the following t
 
 ### Hash messages
 
-To produce a hash, a message is created that contains individual pieces of ordered information about the contents of the set or combination. Although this message varies, depending on the hash that is being generated, the hash message basically includes information about the dimensions, values, and structures, and the order within the set or combination, if applicable. This information is internally calculated in a prescribed manner and passed on to a hashing routine. This hashing routing then generates a SHA-1 hash to generate a hashe key by using a binary container. The exact order and contents of these messages are provided by the methods in the storage supporting classes of the dimension framework. These classes include **DimensionAttributeSetStorage**, **DimensionAttributeValueSetStorage**, and **DimensionStorage**.
+To produce a hash, a message is created that contains individual pieces of ordered information about the contents of the set or combination. Although this message varies, depending on the hash that is being generated, the hash message basically includes information about the dimensions, values, and structures, and the order within the set or combination, if applicable. This information is internally calculated in a prescribed manner and passed on to a hashing routine. This hashing routing then generates a hash to generate a hash key by using a binary container. The exact order and contents of these messages are provided by the methods in the storage supporting classes of the dimension framework. These classes include **DimensionAttributeSetStorage**, **DimensionAttributeValueSetStorage**, and **DimensionStorage**.
+
+> [!NOTE]
+> The internal hash function has been updated in Dynamics 365 Finance. For more information, see [Verify hash function changes after update to Dynamics 365 Finance 2020 release wave 2](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/03/verify-hash-function-changes-after-update-to-dynamics-365-finance-2020-release-wave-2/)
+
+
 
 ### Hash keys
 
@@ -382,7 +387,7 @@ Generation of a hash message requires something that uniquely identifies each di
 
 ### Risks of changing data directly
 
-It's very important that no data be directly modified outside the application framework (for example, in Microsoft SQL Server Management Studio). This guideline applies to the modification of data in *any* column of the table, not just the columns that have been discussed in this topic. It also applies to the replication of data from one row to another, and to attempts to create "new" sets or combinations outside the dimension framework storage classes.
+It's important that no data be directly modified outside the application framework (for example, in Microsoft SQL Server Management Studio). This guideline applies to the modification of data in *any* column of the table, not just the columns that have been discussed in this topic. It also applies to the replication of data from one row to another, and to attempts to create "new" sets or combinations outside the dimension framework storage classes.
 
 It's important that you understand this guideline when you're considering backups and partial restorations of data that might affect referential and hash integrity. For example, if you back up only the Ledger Dimension related records and import them into another partition, you might cause issues unless you also import all the other records in the dimension framework, in addition to all the backing entity records, such as records from the CustTable table or other table that were used to create any combinations. Any attempt to modify the data in these tables, or to synthesize GUIDs or hashes, will cause data to become corrupted, and will require complex, time-consuming analysis to find the source of the corruption and try to fix it.
 

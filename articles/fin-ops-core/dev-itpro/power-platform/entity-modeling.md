@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
@@ -109,7 +111,7 @@ Because the primary field in Common Data Service is expected to have only one fi
 
 Relations in Finance and Operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations aren't supported in Finance and Operations.
 
-For example, in Finance and Operations, if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters won't be generated in the virtual entity in Common Data Service.
+For example, in Finance and Operations, if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 92 characters. Any relation where the schema name will produce a name that exceeds 92 characters won't be generated in the virtual entity in Common Data Service.
 
 The external name of this relationship uses the naming convention **FK\_\<relation name\>**. The external name is used to determine the relation in Finance and Operations when the query that is sent to Finance and Operations is built.
 
@@ -120,7 +122,7 @@ A relationship in the virtual entity in Common Data Service will be generated on
 In summary, a relationship to another Finance and Operations virtual entity might not exist in the virtual entity for either of the following reasons:
 
 - The Finance and Operations entity that is participating in the relationship doesn't exist as a virtual entity.
-- The length of the name of the relationship exceeds 120 characters.
+- The length of the name of the relationship exceeds 92 characters.
 
 Note that if an error is encountered when any part of a Finance and Operations virtual entity is generated in Common Data Service, the virtual entity won't be created at all. If relationships don't exist for either of the preceding reasons, the situation isn't considered an error.
 

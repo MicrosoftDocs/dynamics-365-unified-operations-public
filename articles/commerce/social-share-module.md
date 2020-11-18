@@ -5,7 +5,7 @@ title: Social share module
 description: This topic covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: Release 10.0.14
 # Social share module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -83,7 +82,7 @@ To add a social share module to a buy box module, follow these steps.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Buy box module](add-buy-box.md)
 

@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Checkout module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to add a checkout module to a page and set the required properties.
 
@@ -127,6 +126,8 @@ To add a checkout module to a new page and set the required properties, follow t
 [Shipping address module](ship-address-module.md)
 
 [Delivery options module](delivery-options-module.md)
+
+[Pickup information module](pickup-info-module.md)
 
 [Order details module](order-confirmation-module.md)
 

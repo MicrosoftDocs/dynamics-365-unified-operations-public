@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -135,3 +135,4 @@ Before you can set up pick line grouping, you must create some eligible outbound
 >    - Piece picking.
 >    - Work lines that have unfinished replenishment work.
 >    - Over-picking.
+>    - Short picking with item reallocation

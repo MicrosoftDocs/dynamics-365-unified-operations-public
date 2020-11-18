@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 
 ms.search.region: Norway
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -41,3 +41,4 @@ This topic provides links to documentation resources for Norway.
 - [Standard Audit File for Tax (SAF-T)](emea-nor-satndard-audit-file-for-tax.md)
 - [Cash register functionality](../../retail/localizations/emea-nor-cash-registers.md)
 - [Deployment guidelines for cash registers](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+- [Customer electronic invoices export](emea-nor-e-invoices.md)

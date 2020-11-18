@@ -5,7 +5,7 @@ title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: rubencdelgado 
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Application update 4
 This topic explains how to set up external gift cards in Retail Modern point of sale (MPOS), the call center, and the storefront.
 
 > [!NOTE]
-> Support for external gift cards in the call center is new in version 10.0.10. Support for external gift cards in the storefront will be added in a future version. 
+> Support for external gift cards in the storefront will be added in a future version. 
 
 Microsoft Dynamics 365 Commerce supports both *internal* and *external* gift cards. Internal gift cards are managed entirely in Dynamics 365 Commerce, whereas external gift cards are administered by a third party. If a retailer's operations are run entirely in Microsoft Dynamics, internal gift cards are sometimes the best solution. For complex enterprises that span multiple countries or regions, and multiple point of sale (POS) systems, it's often best to use a third party to manage gift card balances and enable gift cards to be used across those systems.
 
@@ -180,9 +180,7 @@ When you use the test connector to demonstrate support for external gift cards, 
 ## External gift cards for the call center and storefront
 
 > [!NOTE]
-> This feature is new in version 10.0.9. To use it, you must set the **Enable advanced external gift card** option to **Yes** on the **Omni-channel payments** tab of the **Commerce shared parameters** page. Support for gift cards in the out-of-box storefront will be added in a future release. You should also set the **Use omni-channel payments** option to **Yes**.
-
-![Enable advanced external gift card option](media/Configure-external-gift.png)
+> External gift card support for call center and storefront can be enabled in the **Feature management** workspace. Enable **Omni-channel payments**, then enable **Enable advanced external gift card**. 
 
 ### Tokenization
 

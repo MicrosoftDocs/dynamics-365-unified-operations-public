@@ -129,6 +129,13 @@ The Document Routing Agent now supports running in the background as a service. 
 
 Yes. The Azure Active Directory token must be refreshed every 90 days. Failing to do so will prevent the DRA from being able to authenticate and retrieve printing instructions applications.
 
+### Is the Document Routing Agent supported on Microsoft Windows Server 2019?
+
+Yes. The Document Routing Agent is supported on Microsoft Windows Server 2019.
+
+> [!NOTE]
+> If the server is configured to prevent background service, the Document Routing Agent client will not be able to run as a service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
+
 ### Will Microsoft add support for Microsoft Windows Server 2008 servers?
 
 No, not at this time. There are several dependencies on Azure capabilities that are available only in Microsoft Windows Server 2012 R2 and Microsoft Windows Server 2016.

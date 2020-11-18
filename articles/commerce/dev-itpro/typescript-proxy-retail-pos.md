@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -52,7 +52,7 @@ The steps to generate the Typescript proxy and the C# proxy differ. The rest of 
 
 ## Generate the Typescript proxy (10.0.11 or lower) Retail Server
 
-If you are using Microsoft Dynamics Commerce version 10.0.12 or greater, follow the steps mentioned in [Create a new Retail Server extension API](../retail-server-icontroller-extension.md).
+If you are using Microsoft Dynamics Commerce version 10.0.12 or greater, follow the steps mentioned in [Create a new Retail Server extension API](retail-server-icontroller-extension.md).
 
 > [!IMPORTANT]
 > Run MSBuild from the Retail SDK root folder to restore the CommerceProxyGenerator.exe package. Use the Visual Studio developer command prompt or MSBuild command prompt to restore all the packages in the reference folder before generating the proxy. If you do not perform this step, the CommerceProxyGenerator.exe package will not be available in the RetailSDK\Reference folder.

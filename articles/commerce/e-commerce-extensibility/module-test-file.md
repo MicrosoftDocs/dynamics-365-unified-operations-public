@@ -88,6 +88,8 @@ Note that the mock data fields are set inside this file.
 
 ## Additional resources
 
+[Modules overview](modules-overview.md)
+
 [Module definition file](module-definition-file.md)
 
 [Module React component file](module-react-file.md)

@@ -108,8 +108,8 @@ There are many topics about manufacturing and supply chain management on the [Dy
 ## White papers
 
 - [Lean manufacturing: Capable to promise and kanban job scheduling](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
-- [BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/)
+- [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 on Microsoft Learn](https://docs.microsoft.com/learn/dynamics365/).
+For online courses and training, check out [Dynamics 365 Supply Chain Management on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).

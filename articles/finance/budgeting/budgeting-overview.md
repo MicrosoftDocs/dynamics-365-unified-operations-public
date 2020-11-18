@@ -24,7 +24,7 @@ ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -69,7 +69,7 @@ For information about how to bring planning data from other modules into budget 
 ## User interface and reporting capabilities
 Users can create budget plans either directly in the client (by using a configurable budget plan document page) or through Excel. Excel provides several additional capabilities. For example, you can use external data as a source for a budget plan, do custom calculations, and use Microsoft PivotTable and charts. Most of the variables in the budget planning process can be configured. 
 
-For example, you can define who does budgeting, what is budgeted, and what the process looks like. Although you can use Excel for budget planning, the application is kept as a single source of truth and helps prevent budget control issues. Periodic processes can be used to bring initial data for budgeting into the budget plan. For reporting, the application offers a set of standard inquiry pages that let you view and analyze budgeting data. Budget plan data can be accessed through Management Reporter, and separate budget plan scenarios can be displayed as columns on the Management Reporter report.
+For example, you can define who does budgeting, what is budgeted, and what the process looks like. Although you can use Excel for budget planning, the application is kept as a single source of truth and helps prevent budget control issues. Periodic processes can be used to bring initial data for budgeting into the budget plan. For reporting, the application offers a set of standard inquiry pages that let you view and analyze budgeting data. Budget plan data can be accessed through [Financial reporting](../general-ledger/financial-reporting-getting-started.md), and separate budget plan scenarios can be displayed as columns on the Financial report.
 
 
 

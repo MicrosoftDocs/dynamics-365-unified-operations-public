@@ -5,7 +5,7 @@ title: Payment module
 description: This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Payment module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
@@ -47,6 +46,9 @@ The payment module also lets signed-in customers save their payment information.
 The payment module covers any order charges that aren't already covered by loyalty points or a gift card. If the total for an order is fully covered by loyalty points or gift card credits, the payment module will be hidden, and the customer will be able to place the order without it.
 
 The Adyen payment connector also supports strong customer authentication (SCA). Part of the European Union (EU) Payment Services Directive 2.0 (PSD2.0) requires that online shoppers be authenticated outside their online shopping experience when they use an electronic payment method. During the checkout flow,  customers are redirected to their banking site. Then, after authentication, they are redirected back to the Commerce checkout flow. During this redirection, the information that a customer entered in the checkout flow (for example, the shipping address, delivery options, gift card information, and loyalty information) will persist. Before you can turn on this feature, the payment connector must be configured for SCA in Commerce headquarters. For more information, see [Strong Customer Authentication using Adyen](adyen_redirect.md).
+
+> [!NOTE]
+> For the Adyen payment connector, the iframe module in the payment module can be rendered only if you add the Adyen URL to your site's allow list. To complete this step, add **\*.adyen.com** to the **child-src**, **connect-src**, **img-src**, **script-src**, and **style-src** directives of your site's content security policy. For more information, see [Manage Content Security Policy](manage-csp.md). 
 
 The following illustration shows an example of gift card, loyalty, and payment modules on a checkout page.
 
@@ -80,6 +82,8 @@ A payment module can be added only to a checkout module. For more information ab
 [Shipping address module](ship-address-module.md)
 
 [Delivery options module](delivery-options-module.md)
+
+[Pickup information module](pickup-info-module.md)
 
 [Order details module](order-confirmation-module.md)
 

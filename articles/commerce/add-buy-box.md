@@ -5,7 +5,7 @@ title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Buy box module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -78,11 +77,14 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart**, **Do not navigate to cart**, and **Show notifications**. When the value is set to **Navigate to cart**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart**, users aren't sent to the cart page after they add an item. When the value is set to **Show notifications**, users are shown a confirmation notification and can continue to browse on the product details page. 
+- **Add product to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart page**, **Do not navigate to cart page**, and **Show notification**. When the value is set to **Navigate to cart page**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart page**, users aren't sent to the cart page after they add an item. When the value is set to **Show notification**, users are shown a confirmation notification and can continue to browse on the product details page. 
 
-    The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
+> [!IMPORTANT]
+> The **Add product to cart** site settings are available in the Dynamics 365 Commerce 10.0.11 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
+The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
+
+![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
 
 ## Commerce Scale Unit interaction
 
@@ -93,7 +95,7 @@ The buy box module retrieves product information by using Commerce Scale Unit ap
 To add a buy box module to a new page and set the required properties, follow these steps.
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
-1. In the **New fragment** dialog box, select the **Buybox** module.
+1. In the **New fragment** dialog box, select the **Buy box** module.
 1. Under **Fragment name**, enter the name **Buy box fragment**, and then select **OK**.
 1. In the **Media Gallery** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Media gallery** module, and then select **OK**.
@@ -116,7 +118,7 @@ To add a buy box module to a new page and set the required properties, follow th
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Store selector module](store-selector.md)
 
@@ -137,3 +139,5 @@ To add a buy box module to a new page and set the required properties, follow th
 [Social share module](social-share-module.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
+
+[SDK and module library updates](e-commerce-extensibility/sdk-updates.md)

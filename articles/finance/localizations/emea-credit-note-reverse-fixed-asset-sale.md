@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 266944
 ms.search.region: Estonia, Lithuania
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 

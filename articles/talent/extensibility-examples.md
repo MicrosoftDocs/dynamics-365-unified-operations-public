@@ -9,7 +9,7 @@ ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
+ms.technology:
 # optional metadata
 
 ms.search.form: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Talent October 2018 update
 ---
 
 # Extend Talent with Power Apps and Power Automate
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This article describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent: Attract that use Microsoft Power Apps and Microsoft Power Automate. You can import the solution package that is associated with each example into your Power Apps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 

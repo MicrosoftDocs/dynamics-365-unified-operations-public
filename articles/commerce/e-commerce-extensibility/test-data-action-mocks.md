@@ -155,6 +155,8 @@ If no action mock file name is specified, the package name is used to search for
 
 [Data actions overview](data-actions.md)
 
+[Data action cache options](data-action-cache.md)
+
 [Page load data actions](page-load-data-action.md)
 
 [Event-based data actions](event-based-data-actions.md)

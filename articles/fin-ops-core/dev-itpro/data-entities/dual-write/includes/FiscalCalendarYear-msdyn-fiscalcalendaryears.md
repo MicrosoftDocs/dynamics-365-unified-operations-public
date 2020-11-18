@@ -2,7 +2,7 @@
 
 This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 FISCALCALENDAR_CALENDARID | = | msdyn_fiscalcalendarname | 
 NAME | = | msdyn_name | 
