@@ -532,6 +532,10 @@
             href: dev-itpro/commerce-payments.md
           - name: Process credit cards without a hardware station
             href: dev-itpro/cnp-pos.md
+          - name: Dynamics 365 Payment Connector for PayPal
+            href: paypal.md
+          - name: Wallet payment support
+            href: wallets.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Manage Bing Maps for your organization
