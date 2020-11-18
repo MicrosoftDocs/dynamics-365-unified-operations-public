@@ -1,8 +1,8 @@
-﻿---
+---
 # required metadata
 
 title: Troubleshoot warehouse replenishment
-description: This topic describes how to fix common issues that you might encounter while working with warehouse replenishment in Dynamics 365 Supply Chain Management.
+description: This topic describes how to fix common issues that you might encounter while you work with warehouse replenishment in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
 manager: tfehr
 ms.date: 10/19/2020
@@ -33,14 +33,14 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to fix common issues that you might encounter while working with warehouse replenishment in Dynamics 365 Supply Chain Management.
+This topic describes how to fix common issues that you might encounter while you work with warehouse replenishment in Microsoft Dynamics 365 Supply Chain Management.
 
-## I receive the error "Work %1 cannot be unblocked because it has unfinished replenishment work."
+## I receive the following error message: "Work %1 cannot be unblocked because it has unfinished replenishment work."
 
 ### Issue description
 
-Picking work is blocked with dependent replenishment work.
+Picking work is blocked because of dependent replenishment work.
 
 ### Issue resolution
 
-When using wave demand replenishment, if a picking location must be replenished to fulfill the source order demand, then the system creates *both* the replenishment work and the picking work. However, it blocks the picking work until the replenishment work is completed. This is intentional because without completing the replenishment work, the picking location wouldn't have sufficient inventory. Complete the replenishment work then process the picking work.
+When you use wave demand replenishment, if a picking location must be replenished to fulfill the source order demand, the system creates both the replenishment work and the picking work. However, it blocks the picking work until the replenishment work is completed. This behavior is intentional, because the picking location won't have enough inventory unless the replenishment work is completed. Complete the replenishment work, and then process the picking work.
