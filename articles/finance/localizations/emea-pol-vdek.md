@@ -28,8 +28,42 @@ ms.author: elgolu
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks you through the process of setting up VAT declaration with registers (also called JPK_V7M, VDEK) in Poland. 
+This topic explains how to set up a value-added tax (VAT) declaration with
+registers (also known as a JPK_V7M, VDEK) in Poland.
 
-## Overview
+As of October 1, 2020, businesses in Poland are responsible for reporting VAT in
+an electronic document that consists of a Jednolity Plik Kontrolny VAT (JPK_VAT)
+together with the declaration (Jednolity Plik Kontrolny VDEK). The requested
+electronic document includes the following information:
 
-For periods starting from October 1, 2020, businesses in Poland are responsible for reporting Value-added tax (VAT) in an electronic document that consist of Jednolity Plik Kontrolny VAT (JPK_VAT) with the declaration (Jednolity Plik Kontrolny VDEK). Requested electronic document includes both VAT records (a set of information on purchases and sales, which results from the entrepreneur's VAT records for a given period), as well as a VAT declaration (VAT-7 and VAT-7K declaration).
+-   Both VAT records (a set of information about purchases and sales that is
+    produced from the entrepreneur's VAT records for a given period)
+
+-   A VAT declaration (VAT-7 declaration)
+
+## Prerequisites
+
+Before you can prepare Microsoft Dynamics 365 Finance to report a JPK_V7M, your
+business processes and the system must meet the following conditions:
+
+-   On the **Sales tax authorities** page (**Tax** \> **Indirect tax** \>
+    **Sales tax** \> **Sales tax authorities**), for the tax authority that is
+    associated with tax codes that are used in tax transactions that must be
+    considered by the JPK_V7M report, the **Report layout** field must be set to
+    **Default**. For more information about how to set up sales tax authorities,
+    see [Set up sales tax
+    authorities](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-authorities).
+
+-   When tax transactions that must be considered by the JPK_V7M report are
+    posted, the **Date of VAT register** field must be set.
+
+-   On the **Sales tax codes** page (**Tax** \> **Indirect tax** \> **Sales
+    tax** \> **Sales tax codes**), for the sales tax codes that are used in tax
+    transactions that must be considered by the JPK_V7M report, the **Type of
+    tax** field must be set to **Standard VAT** or **Reduced VAT**.
+
+-   On the **Sales tax codes** page, for the sales tax codes that are used in
+    tax transactions that must be considered by the JPK_V7M report, the sales
+    tax reporting codes that are used in the Electronic reporting (ER) format of
+    the report must be appropriately defined.
+
