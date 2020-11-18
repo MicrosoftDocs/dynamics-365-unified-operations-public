@@ -56,10 +56,10 @@ Managers can submit recruiting requests in Human Resources. If you use a separat
 2. Select the **My team** tab.
 
 3. Select  **Request to recruit**.
-   ![Start a recruiting request](./media/hr-recruit-1-select-to-recruit.png)
+   ![Start a recruiting request](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Complete the **Description**, **Job**, and **Estimated start date** fields.
-   ![Complete the recruiting request](./media/hr-recruit-2-select-to-recruit.png)
+   ![Complete the recruiting request](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Select **Continue**. The recruiting request for your position appears.
 
@@ -179,5 +179,5 @@ If needed, you can dismiss a candidate after hiring them. For example, a candida
 ## See also
 
 [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Organize your workforce](hr-personnel-departments-jobs-positions)<br>
-[Set up the components of a job](hr-personnel-jobs)
+[Organize your workforce](hr-personnel-departments-jobs-positions.md)<br>
+[Set up the components of a job](hr-personnel-jobs.md)
