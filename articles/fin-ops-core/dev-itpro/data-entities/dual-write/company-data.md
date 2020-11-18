@@ -5,7 +5,7 @@ title: Company concept in Common Data Service
 description: This topic describes the integration of company data between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.search.validFrom: 2019-07-15
 # Company concept in Common Data Service
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 In Finance and Operations, the concept of a *company* is both a legal construct and a business construct. It's also a security and visibility boundary for data. Users always work in the context of a single company, and most of the data is striped by company.
@@ -76,3 +78,32 @@ Common Data Service integration brings company parity by using a company identif
 + For records, after a company is added and saved, the value becomes read-only. Therefore, users should make sure that they select the correct company.
 + Only records that have company data are eligible for dual-write between the application and Common Data Service.
 + For existing Common Data Service data, an admin-led bootstrapping experience will soon be available.
+
+
+## Autopopulate company name in customer engagement apps
+
+There are several ways to auto-populate the company name in customer engagement apps.
+
++ If you are a system administrator, you can set the default company by navigating to **Advanced Settings > System > Security > Users**. Open the **User** form, and in the **Organization Information** section, set the **Company to default on Forms** value.
+
+    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Set default company on Organization Information section.":::
+
++ If you have **Write** access to the **SystemUser** entity for the **Business Unit** level, then you can change the default company on any form by selecting a company from the **Company** drop-down menu.
+
+    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Changing the company name on a new account.":::
+
++ If you have **Write** access to data in more than one company, then you can change the default company by choosing a record that belongs to different company.
+
+    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Choosing a record changes the default company.":::
+
++ If you are a system configurator or administrator, and you want to auto-populate company data on a custom form, then you can use [form events](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use the following events. You can use any out-of-the-box form, for example, the **Account** form.
+
+    + **OnLoad** event for the form: Set the **defaultCompany** field.
+    + **OnChange** event for the **Company** field: Set the **updateDefaultCompany** field.
+
+## Apply filtering based on the company context
+
+To apply filtering based on the company context on your custom forms or on custom lookup fields added to the standard forms, open the form and use the **Related Records Filtering** section to apply the company filter. You must set this for each lookup field that requires filtering based on the underlying company on a given record. The setting is shown for **Account** in the following illustration.
+
+:::image type="content" source="media/apply-company-context.png" alt-text="Apply company context":::
+

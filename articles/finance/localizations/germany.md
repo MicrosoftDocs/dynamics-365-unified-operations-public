@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom
 ms.search.region: Germany
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -49,6 +49,9 @@ This topic includes information and links to resources that should be considered
 - [Elster Testmerker (PDF download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
 - [VAT declaration for Germany](emea-de-vat-declaration.md)
 
+## Electronic invoices in Germany
+- [Customer electronic invoices export](emea-deu-e-invoices.md)
+
 ## Credit memos originating from sales
 You can specify the label that appears on credit memos that originate from sales.
 
@@ -69,4 +72,4 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization and regulatory features](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
-- [Create a VAT declaration in the XML format without transferring it to ELSTER (White paper)](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/VATdeclarationXMLELSTER)
+- [Create a VAT declaration in the XML format without transferring it to ELSTER (White paper)](https://www.microsoft.com/download/details.aspx?id=101929)

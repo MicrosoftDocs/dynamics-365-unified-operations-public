@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Personalize the user experience
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how you can personalize the app and covers the following subjects: 
 

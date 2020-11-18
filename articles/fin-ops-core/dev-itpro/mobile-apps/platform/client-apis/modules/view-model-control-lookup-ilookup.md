@@ -2,7 +2,7 @@
 # required metadata
 title: Lookup module
 description: A lookup is an input control that is used to select an input from a list of options.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
@@ -96,7 +96,7 @@ For example, a lookup could be used to lookup a customer when linking a customer
 | [border](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|The border behavior of a control. This property will not be inherited by the children.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) <br> |
 | [color](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#color) |color: string (optional)  <br>|The foreground color of the container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) <br> |
 | [flexFlow](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#flexflow) |flexFlow: string (optional)  <br>|Specifying this property makes the component a flex container component.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) <br> |
-| [flexSize](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) <br> |
+| [flexSize](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. For example, "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) <br> |
 | [fontSize](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)  <br>|The proportional text size<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) <br> |
 | [fontWeight](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (optional)  <br>|Normal or bold text.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) <br> |
 | [justifyItems](../interfaces/view-model-control-lookup-ilookup-ilookupdesign.md#justifyitems) |justifyItems: "flex-start" &#124; "flex-end" &#124; "center" &#124; "space-between" (optional)  <br>|This property is an alias for the CSS property "justify-content".<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[justifyItems](../interfaces/view-model-ipage-idesign.md#justifyitems) <br> |
@@ -123,12 +123,12 @@ For example, a lookup could be used to lookup a customer when linking a customer
 | [DisplayField](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#displayfield) |DisplayField: string (optional)  <br>|The name of a control on the page, whose value should be displayed to the user. Usually, this value is user-friendly user-readable text.<br>  |
 | [DisplayKey](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#displaykey) |DisplayKey: string (optional)  <br>|  |
 | [Editable](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#editable) |Editable: boolean (optional)  <br>|Boolean indicating if the control is editable.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable) <br> |
-| [ExtType](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|The extended control type. E.g. a control of type Input might have an extended type of Barcode.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) <br> |
+| [ExtType](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|The extended control type. For example, a control of type Input might have an extended type of Barcode.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) <br> |
 | [FilterContext](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#filtercontext) |FilterContext: DataFilter (optional)  <br>|  |
-| [HelpText](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#helptext) |HelpText: string (optional)  <br>|The keyboard shortcut for a command. E.g. "(Shift+F5)"<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) <br> |
+| [HelpText](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#helptext) |HelpText: string (optional)  <br>|The keyboard shortcut for a command. For example, "(Shift+F5)"<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) <br> |
 | [Hidden](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#hidden) |Hidden: boolean (optional)  <br>|Boolean indicating if the control is hidden or not.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden) <br> |
 | [Id](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#id) |Id: string (optional)  <br>|Identification string for a control.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id) <br> |
-| [Label](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#label) |Label: string (optional)  <br>|Label for a control. E.g. a control representing a person's first name might have a label "First Name".<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) <br> |
+| [Label](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#label) |Label: string (optional)  <br>|Label for a control. For example, a control representing a person's first name might have a label "First Name".<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) <br> |
 | [LookupEntity](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#lookupentity) |LookupEntity: any (optional)  <br>|The entity that is being looked up in the lookup.<br>  |
 | [LookupPage](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#lookuppage) |LookupPage: string (optional)  <br>|  |
 | [LookupPageId](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#lookuppageid) |LookupPageId: string (optional)  <br>|  |

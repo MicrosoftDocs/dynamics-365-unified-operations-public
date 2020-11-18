@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUNDAMOUNT">ROUNDAMOUNT ER function</a>
+# ROUNDAMOUNT ER function
 
 [!include [banner](../includes/banner.md)]
 

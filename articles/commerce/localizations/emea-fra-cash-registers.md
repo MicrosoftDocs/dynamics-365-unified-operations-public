@@ -5,7 +5,7 @@ title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: vastrup
-ms.date: 05/07/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -348,7 +348,7 @@ After you import the configurations, on the **Commerce parameters** page, on the
 ### Renitialize Commerce components
 
 > [!NOTE]
-> You only need to complete the steps of this section if you are updating an existing evironment.
+> You only need to complete the steps of this section if you are updating an existing environment.
 
 To enable audit events, you must reinitialize the Commerce Extensible enumerations. To enable transmitting France-specific data from POS to HQ, you must reinitialize the Commerce Scheduler.
 
@@ -359,3 +359,4 @@ There is an option to separately configure the scheduler. Click **Commerce sched
 ### Configure channel components
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).
+

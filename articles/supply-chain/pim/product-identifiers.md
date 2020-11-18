@@ -22,13 +22,15 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 
 ---
 
 # Product identifiers
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [!include [banner](../includes/banner.md)]
 

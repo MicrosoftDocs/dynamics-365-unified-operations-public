@@ -5,7 +5,7 @@ title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -97,7 +97,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
     > [!NOTE]
     > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    > - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed.
+    > - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 6. Select **Download**, and then select **Retail Modern POS**.
@@ -280,7 +280,7 @@ The device should now be activated and ready to use.
 
 - If you're using a downloaded virtual hard disk (VHD) instead of a cloud-hosted environment, the downloader might fail.
 
-    - **Solution 1:** In a downloaded VHD, the Azure storage emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
+    - **Solution 1:** In a downloaded VHD, the Azure Storage Emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
     - **Solution 2:** A failure might have occurred during the process of integrating the VHD into Microsoft Hyper-V. You must manually edit permissions before the packages can be downloaded correctly. Follow these steps:
 
         1. In File Explorer, browse to **C:\\Microsoft Dynamics 365\\70\\Retail Server**.

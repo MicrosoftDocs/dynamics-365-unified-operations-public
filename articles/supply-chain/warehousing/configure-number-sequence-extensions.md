@@ -6,14 +6,14 @@ description: This topic provides an overview of the functionality that provides 
 author: GarmMSFT
 manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSNumberSequenceExtension
+ms.search.form: WHSNumberSequenceExt
 # ROBOTS:
 audience: Application User
 # ms.devlang:
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
 

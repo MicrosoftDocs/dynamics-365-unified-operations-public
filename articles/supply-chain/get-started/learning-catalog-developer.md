@@ -6,6 +6,10 @@ ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
 
+ms.prod:
+ms.service: Dynamics365Operations
+ms.technology:
+
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
@@ -18,6 +22,8 @@ ms.dyn365.ops.version: 8.1
 ---
 
 # Learning catalog for Dynamics 365 Supply Chain Management developers
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 

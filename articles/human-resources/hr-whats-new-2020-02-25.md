@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (February 25, 2020)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 25, 2020.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/25/2020
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (February 25, 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2927. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 

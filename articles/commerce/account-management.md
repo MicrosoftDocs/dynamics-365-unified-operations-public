@@ -5,7 +5,7 @@ title: Account management pages and modules
 description: This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 ---
 
 # Account management pages and modules
-
 
 [!include [banner](includes/banner.md)]
 
@@ -79,7 +78,7 @@ To join loyalty program, a marketing page can be created with loyalty sign up an
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Container module](add-container-module.md)
 

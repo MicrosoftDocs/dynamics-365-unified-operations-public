@@ -18,7 +18,7 @@ ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail, Core
+# ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 44351
 ms.search.region: Global
@@ -400,7 +400,7 @@ The following list describes all the KBs that are required for N-1 to work corre
 | 4095190 | Expose RetailSharedParameter's TransactionServiceProfileID in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow the official upgrade process to move data from 6.3 to Dynamics 365. |
 | 4095209 | The Real-timeServiceAX63 N-1 component's webconfig contains an invalid authentication type name. This causes issue when the component tries to authenticate with the transaction service in Dynamics 365 |
 | 4095189 | RetialTransactionServiceProfile table's Protocol column is not being synced to the old version channel databases from the new version Dynamics 365 AX database. |
-| 4095191 | The user is not allowed to set the retail server URL to be http based URL as only secured URLs are allowed. This prevents the user from connecting to old (6.3) version retail servers while running in backward compatiility mode. |
+| 4095191 | The user is not allowed to set the retail server URL to be http based URL as only secured URLs are allowed. This prevents the user from connecting to old (6.3) version retail servers while running in backward compatibility mode. |
 | 4132456 | \[Upgrade \& N-1\]\[Designer\] Number pad height should be extensible |
 | 4095926 | Upgrade \& N-1: Return order fails from 63MPOS as the transaction was not found on a N-1 non upgrade environment. |
 | 4095664 | Allow Microsoft Dynamics AX 2012 clients connecting to AX7.2 HQ to create new customers. |

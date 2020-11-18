@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail 
+# ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -50,7 +50,7 @@ The following features are available across products and users. Some features ap
     - In version 10.0.10 and later, custom payment connectors for card-not-present can be included in your deployable package.
     - In version 10.0.13, all-in-one packages will be **mandatory**.
 
-- The commerce deployable package that is created by using the [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md) is longer deployed to Application Object Server (AOS). Instead, you upload your self-service installers to Microsoft Dynamics Lifecycle Services (LCS) and use synchronization. For more information, see [Synchronize self-service installers in Dynamics 365 Commerce](synchronize-installers.md).
+- The commerce deployable package that is created by using the [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md) is no longer deployed to Application Object Server (AOS). Instead, you upload your self-service installers to Microsoft Dynamics Lifecycle Services (LCS) and use synchronization. For more information, see [Synchronize self-service installers in Dynamics 365 Commerce](synchronize-installers.md).
 - Use a Microsoft-hosted build agent instead of a dedicated build machine for these purposes:
 
     - To build [application deployable packages](../../fin-ops-core/dev-itpro/dev-tools/hosted-build-automation.md)
@@ -115,9 +115,9 @@ For a general overview of each application release, always check the "What's new
     > [!WARNING]
     > Your build server will probably fail, because the names of the NuGet reference folders are very long and will exceed the file path limit of 260 characters.
 
-- Retail SDK file size: The size of an unmodified retail deployable package is now about 340 MB. If customizations are included, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (previously known as Retail Cloud Scale Unit \[RCSU\]), you will receive an error message that states that you can't deploy [packages that are larger than 300 MB](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages). Follow these steps to fix this issue:
+- Retail SDK file size: The size of an unmodified retail deployable package is now about 340 MB. If customizations are included, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (previously known as Retail Cloud Scale Unit \[RCSU\]), you will receive an error message that states that you can't deploy [packages that are larger than 300 MB](retail-sdk/retail-sdk-packaging.md#deploy-the-packages). Follow these steps to fix this issue:
 
-    1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages), and manually remove the self-service installer files.
+    1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-packages), and manually remove the self-service installer files.
     2. Upload the much smaller package to LCS, and then continue your deployment as usual.
 
     > [!NOTE]

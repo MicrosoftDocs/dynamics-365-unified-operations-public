@@ -51,6 +51,9 @@ The payment module covers any order charges that aren't already covered by loyal
 
 The Adyen payment connector also supports strong customer authentication (SCA). Part of the European Union (EU) Revised Payment Services Directive (PSD2) requires that online shoppers be authenticated outside of their online shopping experience when they use an electronic payment method. During the checkout flow, customers are redirected to their banking site, and then after authentication they are redirected back to the Commerce checkout flow. During this redirection, the information that a customer has entered during the checkout flow (for example, shipping address, delivery options, gift card information, and loyalty information) will persist. Before you can turn on the Adyen payment connector feature, the payment connector must be configured for SCA in Commerce headquarters. For more information, see [Strong Customer Authentication using Adyen](adyen_redirect.md). This feature was enabled in Commerce release 10.0.12.
 
+> [!NOTE]
+> For the Adyen payment connector, the iframe module in the payment module can be rendered only if you add the Adyen URL to your site's allow list. To complete this step, add **\*.adyen.com** to the **child-src**, **connect-src**, **img-src**, **script-src**, and **style-src** directives of your site's content security policy. For more information, see [Manage Content Security Policy](manage-csp.md). 
+
 The following illustration shows an example of gift card, loyalty, and Adyen payment modules on a checkout page.
 
 ![Example of gift card, loyalty, and Adyen payment modules on a checkout page](./media/ecommerce-payments.PNG)
@@ -110,6 +113,8 @@ If both Adyen and PayPal payment connectors are needed, add both modules to the 
 [Shipping address module](ship-address-module.md)
 
 [Delivery options module](delivery-options-module.md)
+
+[Pickup information module](pickup-info-module.md)
 
 [Order details module](order-confirmation-module.md)
 

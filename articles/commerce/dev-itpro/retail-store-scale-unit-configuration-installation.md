@@ -5,7 +5,7 @@ title: Configure and install Commerce Scale Unit (self-hosted)
 description: This topic explains how you can use self-service to configure Commerce Scale Unit (self-hosted) in Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, Retai
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail, Core
+# ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 219744
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
@@ -132,7 +132,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 4. On the drop-down menu, select **Configuration file**.
 
     > [!NOTE]
-    > To help ensure that the Commerce Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer.
+    > To ensure that the Commerce Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.   
     >
     > For on-premises deployments, the configuration file (at this time) requires manual editing:
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (for example, `https://myContosoURL.com/namespaces/AXSF/`).

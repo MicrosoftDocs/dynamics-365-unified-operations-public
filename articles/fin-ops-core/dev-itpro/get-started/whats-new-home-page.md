@@ -5,7 +5,7 @@ title: What's new and changed in Platform updates
 description: This topic points to topics that describe the new and changed features in each Platform update for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,6 +37,8 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Platform updates for 10.0.15 | 7.0.5816     | January 2021     | [Platform updates for version 10.0.15 of Finance and Operations apps](whats-new-platform-updates-10-0-15.md)  |
+| Platform updates for 10.0.14 | 7.0.5778      | November 2020     | [Platform updates for version 10.0.14 of Finance and Operations apps](whats-new-platform-updates-10-0-14.md)  |
 | Platform updates for 10.0.13 | 7.0.5746      | October 2020     | [Platform updates for version 10.0.13 of Finance and Operations apps](whats-new-platform-updates-10-0-13.md)  |
 | Platform updates for 10.0.12 | 7.0.5688     | August 2020     | [Platform updates for version 10.0.12 of Finance and Operations apps](whats-new-platform-update-10-0-12.md)  |
 | Platform updates for 10.0.11 | 7.0.5644     | July 2020     | [Platform updates for version 10.0.11 of Finance and Operations apps](whats-new-platform-update-35.md)  |

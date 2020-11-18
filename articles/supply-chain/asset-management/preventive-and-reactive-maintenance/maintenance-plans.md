@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetMaintenancePlan 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

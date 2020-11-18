@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -86,12 +86,13 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
-|                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send/recieve business events within intranet)              |
+|                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send/receive business events within intranet)              |
 
 ## Dynamics 365 Supply Chain Management 
 
 | **Area**                | **Feature**             | **Cloud** | **On-premises** |
 |-------------------------|-------------------|-----------|-----------------|
+| Asset management                     |                                                                                           | Yes       | No |
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
 | Cost accounting                      |                                                                                           | Yes       | Yes             |

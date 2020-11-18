@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Retail, Operations 
+# ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 ms.search.region: Global 
 ms.search.industry: retail

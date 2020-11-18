@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WMSLocation
+ms.search.form: WMSLocation, WMSBlockingCause, WHSLocation
 # ROBOTS:
 audience: Application User
 # ms.devlang:

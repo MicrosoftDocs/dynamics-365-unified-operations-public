@@ -17,7 +17,6 @@ ms.search.form:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-douklo
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -31,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # System requirements and prerequisites
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 ## What regions are available?
@@ -187,7 +188,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     
     > [!NOTE]
     > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
-    > It may take few minutes for the solution packages to be created in powerapps solutions section. Wait for it to appear before moving to the next step.
+    > It may take few minutes for the solution packages to be created in Power Apps solutions section. Wait for it to appear before moving to the next step.
 
 8. Uninstall the Prospect to Cash (P2C) solution.
 

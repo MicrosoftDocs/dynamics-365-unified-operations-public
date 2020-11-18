@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Delivery options module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
 
@@ -75,6 +74,8 @@ A delivery options module can be added only to a checkout module. For more infor
 [Payment module](payment-module.md)
 
 [Shipping address module](ship-address-module.md)
+
+[Pickup information module](pickup-info-module.md)
 
 [Order details module](order-confirmation-module.md)
 

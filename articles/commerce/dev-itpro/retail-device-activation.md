@@ -18,7 +18,7 @@ ms.search.form: RetailSharedParameters, RetailDevice
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail, Core
+# ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 18341
 ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
@@ -40,7 +40,7 @@ Checklist to follow before activation
 -------------------------------------
 
 1.  Complete the **Validate devices for activation** check in Headquarters (HQ), and make sure that the device passes validation.
-2.  On the client machine where you're activating the device, access the Commerce Scale Unit URL health check, and make sure that the health check is passed. Use the following format: https://clxtestax404ret.cloud.test.dynamics.com/en/healthcheck?testname=ping
+2.  On the client machine where you're activating the device, access the Commerce Scale Unit URL health check, and make sure that the health check is passed. Use the following format: `https://clxtestax404ret.cloud.test.dynamics.com/en/healthcheck?testname=ping`.
 3.  The worker must be mapped to a Microsoft Azure Active Directory (AAD) account (under **External identity**).
 4.  The AAD account to map must belong to the same tenant.
 5.  To map the worker to the AAD account, sign in to HQ by using the Admin account for Microsoft Dynamics Lifecycle Services (LCS).

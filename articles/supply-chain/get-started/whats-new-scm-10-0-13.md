@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.13. 
 author: kamaybac
 manager: tfehr
@@ -29,12 +29,11 @@ ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
 ---
 
-# Preview features in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.13 (October 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.13. This version has a build number of 10.0.569 and is available as follows: 
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.13. This version has a build number of 10.0.569 and is available as follows:
 
 - **Preview release:** August 2020
 - **General availability (self-update):** September 2020
@@ -56,8 +55,6 @@ The following features are included in this release. The feature titles link to 
 
 - [Order-committed reservation based on license plates](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For more information, see [Flexible license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
-- [Outbound workload visualization](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
-
 - [Work pick line overview](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
 - [Work policy enhancements for inbound work](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - For more information, see [Warehouse policies](../warehousing/warehouse-work-policies.md).
@@ -66,7 +63,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.13 includes platform updates. To learn more, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### Bug fixes
 

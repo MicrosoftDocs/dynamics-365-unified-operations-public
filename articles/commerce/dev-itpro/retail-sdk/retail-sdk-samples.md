@@ -2,10 +2,10 @@
 # required metadata
 
 title: Retail software development kit (SDK) samples
-description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
+description: This topic describes the samples that are included in the Retail SDK.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/22/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 266164
 ms.assetid: d24470fd-07ad-4c3f-b23a-3f6c1401edc6
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes three new samples that were released together with the Retail SDK in December 2016.
+This topic describes the samples that are included in the Retail SDK.
 
 ## Override message handler sample
 
@@ -213,7 +213,7 @@ The following steps show the CRT code changes:
     private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransactionReceipts( GetSalesTransactionCustomReceiptFieldServiceRequest request)
     {
         string receiptFieldName = request.CustomReceiptField;
-        string returnValue = string.Empty;
+        string returnValue = null;
         switch (receiptFieldName)
         {
             case "WARRANTYID":

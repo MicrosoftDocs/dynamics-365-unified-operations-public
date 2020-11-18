@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage  
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Onboard vendors
+
 [!include [banner](../includes/banner.md)]
 
 ---

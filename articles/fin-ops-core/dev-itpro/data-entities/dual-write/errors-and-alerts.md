@@ -17,7 +17,6 @@ ms.search.form:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-douklo
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -31,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Error management and alert notifications
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 

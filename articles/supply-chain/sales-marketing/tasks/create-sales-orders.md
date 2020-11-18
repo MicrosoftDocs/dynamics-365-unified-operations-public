@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata 
  
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals   
-audience: Application User 
+audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 # ms.devlang:  
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

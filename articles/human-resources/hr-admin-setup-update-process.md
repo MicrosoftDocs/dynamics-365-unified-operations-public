@@ -5,7 +5,7 @@ title: Update process
 description: Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates for application and platform changes.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,13 +32,15 @@ ms.dyn365.ops.version: Human Resources
 
 # Update process
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates.
 
 ## Update policy
 
 Updates are released on a regular cadence to all environments. Human Resources is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for the availability of support.
 
-## Release cadence
+## Release cadence 
 
 Human Resources updates are applied to all environments automatically. Human Resources provides two types of releases:
 
@@ -61,14 +63,12 @@ Releases are reviewed, tested, and validated on an internal environment. After b
 
 ## Release cadence exceptions in 2020
 
-The following dates are exceptions to the regular release schedule:
+To account for holidays, the release schedule for November and December 2020 is as follows:
 
-| Date | Description |
-| --- | --- |
-| Week of November 23 | No updates |
-| Week of December 14 | Minor updates only |
-| Week of December 21 | No updates |
-| Week of December 28 | No updates |
+- November release: November 2 - November 13
+- December release: November 30 - December 11
+ 
+The two-week release cadence will resume as usual on January 11, 2021.
 
 ## Communications
 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
+ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability, WrkCtrResourceGroup, WrkCtrResourceAbilityMap, OpResCapacityPlanningWorkspace, WrkCtrCapResGraph, WrkCtrResourceRequirementPart, WrkCtrCapResGraphDialog, WrkCtrResourceCopy, WrkCtrCapResStatistic
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
