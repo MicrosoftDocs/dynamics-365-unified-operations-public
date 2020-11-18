@@ -1,11 +1,3 @@
----
-author: robinarh
-ms.service: dynamics-ax-applications
-ms.topic: include
-ms.date: 11/17/2020
-ms.author: rhaertle
----
-
 ## Customers V3 to accounts
 
 This template synchronizes data between Finance and Operations apps and Dataverse.
