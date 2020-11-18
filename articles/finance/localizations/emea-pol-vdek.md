@@ -179,7 +179,7 @@ For this lookup field, the following master data sources are available for setup
 
 - Sales tax code
 - Item sales tax group
-- Customer account Id
+- Customer account ID
 - Customer group
 
 This lookup field defines conditions that are based on current company's master data sources. These conditions will produce a mark of **1** for the corresponding element from the list of designations that are related to the supply of goods and services under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be available in the company's master data.
@@ -217,9 +217,9 @@ For this lookup field, the following master data sources are available for setup
 - Sales tax code
 - Item sales tax group
 - Sales tax group
-- Customer account Id
+- Customer account ID
 - Customer group
-- Vendor account Id
+- Vendor account ID
 - Vendor group
 
 This lookup field defines conditions that are based on current company's master data sources. These conditions will produce a mark of **1** for the **P_65** and **P_67** elements of the **\<Deklaracja\>** part of the report when they are met by at least one document in the reporting period.
@@ -268,7 +268,7 @@ For this lookup field, the following master data sources are available for setup
 - Sales tax code
 - Item sales tax group
 - Sales tax group
-- Customer account Id
+- Customer account ID
 - Customer group
 
 The following table shows the lookup results for **SalesDocumentTypesSelector**.
@@ -320,7 +320,7 @@ For this lookup field, the following master data sources are available for setup
 - Sales tax code
 - Item sales tax group
 - Sales tax group
-- Supplier account Id
+- Supplier account ID
 - Supplier group
 
 This lookup field defines the combination of a sales tax code (**Tax code**), a vendor account ID (**Account ID**), and a vendor group (**PartyGroup**) from the current company's database that will produce a document type under the **\<ZakupWiersz\>** tag. Several combinations can be defined.
@@ -355,7 +355,7 @@ For more information about Data management, see [Data management](../../fin-ops-
 You must now import data from the PL JPK_V7M EM setup.zip file into the selected company.
 
 1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**and create new importing project by New button on the Action pane.
-2. Click Add file on the Select entities fast tab.
+2. Click Add file on the Select entities FastTab.
 3. Select **Upload and add**, select the **PL JPK_V7M EM setup**.**zip** file on your computer, and upload it.
 4. Click Close button when entities from the package are listed in the grid.
 5. Click Import on the Action pane to start importing data from the data entities.
@@ -395,7 +395,7 @@ Different groups of users might require access to the JPK_V7M processing. You ca
 Follow these steps to limit access to the JPK_V7M processing.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
-2. Select the **JPK_V7M** processing, and add the security groups that must work with it on the **Security roles** fast tab. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
+2. Select the **JPK_V7M** processing, and add the security groups that must work with it on the **Security roles** FastTab. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
 
 ### Set up an office code for electronic message processing
 
