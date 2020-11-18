@@ -83,7 +83,7 @@ In certain cases, processor payment method mapping may not be granular enough fo
 
 In some scenarios, a payment connector may return a card that does not have a BIN range or processor payment method mapping. If this occurs, the payment is authorized by the payment terminal, but is then reversed when the point of sale (POS) can't map the authorization response to a specific card type. To address this, a capability is provided to map unknown authorization responses to a default card type. 
 
-![Default for unmapped cards](media/Payments/DefaultUnMapped.png)
+![Default for unmapped cards](media/Payments/DefaultUnmapped.png)
 
 This capability ensures that the payment is never authorized by the terminal and then reversed by the POS. This helps avoid confusion for customers and store associates. When this setting is used, the default card for unknown authorizations should be checked periodically to ensure that wanted card types are not accidentally being mapped to the default for unknown card types. If a card type is truly unwanted for processing, it should be turned off at the processor level.
 
