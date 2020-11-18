@@ -7,7 +7,7 @@ author: v-lurodi
 manager: Anasyash
 ms.date: 11/06/2020
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 
@@ -17,9 +17,9 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 12641
+ms.search.scope:
+# ms.tgt_pltfrm:
+ms.custom:
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: roschlom
