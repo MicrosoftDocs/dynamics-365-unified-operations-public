@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Release 10.0.14
 
 This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The payment module lets customers pay for orders by using credit or debit cards. Payment integration for this module is provided by the Dynamics 365 Payment Connector for Adyen. For more information about how to set up and configure the payment connector, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md).  
 
 As of Commerce release 10.0.14, the payment module has also been integrated with the Dynamics 365 Payment Connector for PayPal to allow customers to pay for orders using PayPal. For more information on how to set up and configure the Dynamics 365 Payment Connector for PayPal, see [Dynamics 365 Payment Connector for PayPal](paypal.md). 
