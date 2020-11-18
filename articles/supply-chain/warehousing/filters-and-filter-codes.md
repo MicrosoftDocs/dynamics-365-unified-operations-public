@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: Release 10.0.16
 ---
 
-# Configure item filters and filter codes for warehouse transactions
+# Configure product filters  for warehouse transactions
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,9 +41,10 @@ The following table shows the prerequisites that must be in place before you sta
 
 | Category | Prerequisite |
 | -- | -- |
-| Before you start configuring products in the **Released product details** form, you must enable the Warehouse processing for the product’s storage dimension group. | 1. Select **Product information management \> Setup \> Dimension and variant groups \> Storage dimension groups**.|
-| | 2. Select or create a storage dimension group where the **Use warehouse management processes** check box is set to *Yes*. |
-| If you will be using customer or vendor filters, you must first enable their use in **Warehouse management parameters**. | 3. Select **Warehouse management \> Setup \> Warehouse management parameters**. Go to the **Product filters** tab, then enable the customer and or vendor filters by setting the toggle to *Yes*. |
+| Before you start configuring products in the **Released product details** form, you must enable the Warehouse processing for the product’s *storage dimension group*. | Go to **Product information management \> Setup \> Dimension and variant groups \> Storage dimension groups** and select or create a storage dimension group where the **Use warehouse management processes** check box is set to *Yes*. |
+| If you will be using customer or vendor filters, you must first enable their use in **Warehouse management parameters**. | Select **Warehouse management \> Setup \> Warehouse management parameters**. Go to the **Product filters** tab, then enable the customer and or vendor filters by setting the toggle to *Yes*. |
+
+![Enable Customer-Vendor filter](media/ProdFilterCusVenFilter.png "Enable Customer-Vendor filter")
 
 ## Set up product filters
 
@@ -61,6 +62,25 @@ For example, Code 1 could represent items that have hazardous material classific
     1. For example, *Code 2* represents vendors. You could create a product filter for a specific vendor, or a group of vendors. See "Setup vendor filter codes" below.
 
 ![Product filters](media/Product_Filters.png "Product filters")
+
+## Set up product filter groups
+
+You can use filter groups to filter codes. This is useful when the group is used in a query in a location directive and you want to search for the group instead of for a series of codes. A filter group is associated with an item group.
+
+To set up filter groups, follow these steps:
+
+1. Go to **Warehouse management \> Setup \> Product filters \> Product filter groups**.
+1. Select **New** in the Action Pane.
+1. In the **Group 1** and **Group 2** fields, enter the names that will be used to categorize items.
+1. Select **New** in the **Details** FastTab to add a new line.
+1. Enter the **Start date/time** and **End date/time** for the filter group.
+1. Select the **Item group** to which the product filter will apply.
+1. In the **Code 1**, **Code 2** through **Code 10** fields, select the filter codes to include in the group.
+
+![Item group](media/ProdFilterGroup.png "Item group")
+
+> [!NOTE]
+> If you receive an error message when you close the form, a code setup may be missing. In the **Item groups** form, you can make the codes mandatory for an item group by selecting **Assign filter code 1 for item group**, **Assign filter code 2 for item group**, and so on.
 
 ## Set up filter codes on item groups
 
@@ -117,9 +137,9 @@ To set up generally available items, follow these steps:
     1. When you select an item group, you set this group of items to be generally available.
     1. By selecting filter codes in these fields, you limit the items that are available.
 
-## Optional: Set up customer filter codes
+## Set up customer product filters
 
-This procedure shows how to specify items that should be available for a customer in addition to the items that are made available via the filter setup in the **Generally available items** form. You can set up multiple filters for a single customer.
+This optional procedure shows how to specify items that should be available for a customer in addition to the items that are made available via the filter setup in the **Generally available items** form. You can set up multiple filters for a single customer.
 
 To set up customer filter codes, follow these steps:
 
@@ -131,9 +151,9 @@ To set up customer filter codes, follow these steps:
 1. In the **Item group** field, select an item group.
 1. In the **Code 1**, **Code 2** through **Code 10** fields, select codes to use as criteria for limiting the items that are available for customers in the selected item group. You must make a selection for each *Code #* that has been setup on the **Item group**.
 
-## Optional: Set up vendor filter codes
+## Set up vendor product filters
 
-This procedure shows how to specify items that should be available for a vendor in addition to the items that are made available via the filter setup in the **Generally available items** form. You can set up multiple filters for a single vendor.
+This optional procedure shows how to specify items that should be available for a vendor in addition to the items that are made available via the filter setup in the **Generally available items** form. You can set up multiple filters for a single vendor.
 
 To set up vendor filter codes, follow these steps:
 
