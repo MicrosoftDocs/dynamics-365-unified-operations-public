@@ -1,8 +1,8 @@
-﻿---
+---
 # required metadata
 
 title: Troubleshoot upgrade and migration to advanced warehouse management
-description: This topic describes how to fix common issues that you might encounter while upgrading and migrating to advanced warehouse management.
+description: This topic describes how to fix common issues that you might encounter while you upgrade and migrate to advanced warehouse management.
 author: perlynne
 manager: tfehr
 ms.date: 10/19/2020
@@ -33,29 +33,29 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to fix common issues that you might encounter while upgrading and migrating to advanced warehouse management.
+This topic describes how to fix common issues that you might encounter while you upgrade and migrate to advanced warehouse management.
 
-## I receive the error "java.security.cert.certPathValidatorException: Trust anchor for certification path is not found."
+## I receive the following error message: "java.security.cert.certPathValidatorException: Trust anchor for certification path is not found."
 
 ### Issue description
 
-On on-premises environments, self-signed certificates are not trusted on Android 8+, which causes this error to occur on the warehouse app.
+You receive this error message in the warehouse app, because self-signed certificates aren't trusted on Android 8+ in on-premises environments.
 
 ### Issue resolution
 
-Use external (public) certifying authority (CA). A fix for this issue has been made available in version 1.9.0.0 of the warehouse app. For more information about this issue and how to solve it, see [Troubleshoot warehouse app connection issues](troubleshoot-warehouse-app-connection.md).
+Use an external (public) certifying authority (CA). A fix for this issue is available in version 1.9.0.0 of the warehouse app. For more information about this issue and how to fix it, see [Troubleshoot warehouse app connection issues](troubleshoot-warehouse-app-connection.md).
 
-## What is the approved process to move from basic to advanced warehousing?
+## What is the approved process for moving from basic warehousing to advanced warehousing?
 
 ### Issue description
 
-You are currently running under stock/inventory management using basic stock functionality, and want to move to advanced warehousing to take advantage of mobile devices, waves, and work. However, you are running into issues, such as being unable to change your products to use storage dimensions (site, warehouse, and location) as they have transactions against them. What is the approved process to move from basic to advanced warehousing?
+You're currently running under stock/inventory management and using basic stock functionality, and you want to move to advanced warehousing to take advantage of mobile devices, waves, and work. However, you're experiencing issues when you try to make this move. For example, you can't change your products so that they use storage dimensions (site, warehouse, and location), because the products have transactions against them. Therefore, you must learn the approved process for moving from basic warehousing to advanced warehousing.
 
-### Issue Resolution
+### Issue resolution
 
-For more information about the process of moving from basic to advanced warehousing, see the following blog posts and documentation:
+For more information about the process for moving from basic warehousing to advanced warehousing, see the following blog posts and documentation:
 
 - [Enable warehouse management process for existing items and warehouses](https://cleverax.wordpress.com/2017/12/06/d365fo-enable-warehouse-management-process-for-existing-items-and-warehouses/)
 - [Migration of Microsoft Dynamics AX WMS to new R3 warehouse and transportation functionality](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)
 - [WMSI/WMS2 item migration](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/05/03/wmsiwms2-item-migration/)
-- [Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/upgrade-migration-warehouse-management-processes)
+- [Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/upgrade-migration-warehouse-management-processes)
