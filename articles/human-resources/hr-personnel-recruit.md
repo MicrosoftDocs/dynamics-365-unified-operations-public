@@ -36,9 +36,9 @@ ms.dyn365.ops.version: Human Resources
 
 Dynamics 365 Human Resources helps you to manage recruiting requests. It also helps you seamlessly transition job candidates to employees. If your organization uses a separate recruiting application, your recruiting process might include the following steps:
 
-- Enter your recruiting request in Human Resources
-- Receive candidate referrals in Human Resources from the recruiting application
-- Complete the candidate approval process in Human Resources
+- Enter your recruiting request in Human Resources.
+- Receive candidate referrals in Human Resources from the recruiting application.
+- Complete the candidate approval process in Human Resources.
 
 If you aren't using a separate recruiting application, you can also manually manage candidates in Human Resources.
 
