@@ -5,7 +5,7 @@ title: Mock the signed-in state during local development
 description: This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 author: samjarawan
 manager: annbe
-ms.date: 10/21/2020
+ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -174,7 +174,7 @@ The credentials will live under the `secrets/` directory in your Node applicatio
 After using the information collected in the Azure setup steps to populate your credentials.json file, you need to add test accounts that you want to use during local development. The accounts defined here should be valid accounts that have already been created in Dynamics 365 Commerce headquarters.
 
 - **defaultUser**: The default user that will be used when the **mockUser** query parameter is set to **true**. The name value should be **default**.
-- **additionalUsers**: An array of user objects that allows you to configure additional users to test with. Each entry in this array should be an object with a name, email address, password and customer account number. To sign in as one of these users, use the query parameter **mockUser=\<name>**.
+- **additionalUsers**: An array of user objects that allows you to configure additional users to test with. Each entry in this array should be an object with a name, email address, password, and customer account number. To sign in as one of these users, use the query parameter **mockUser=\<name>**.
 
 ## Mock sign-in status
 
