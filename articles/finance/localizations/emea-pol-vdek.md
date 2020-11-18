@@ -935,7 +935,7 @@ and **P_69** elements of the declaration part of the report aren't affected.
 
 Version 83.169 of the **JPK-V7M XML format (PL)** configuration, and later
 versions, support reporting of the **RO** and **FP** document types for retail
-operations when the local Polish feature is used.
+operations when the [**Supplementary invoices for retail sales for Poland**](https://docs.microsoft.com/dynamics365/finance/localizations/emea-pol-vdek.md) feature is used.
 
 ### Business requirements
 
