@@ -99,7 +99,7 @@ To test the PayPal Payment Connector, you must first create PayPal developer cre
 
 ## Set up the connector in Dynamics 365 Commerce
 
-### Map the PayPal wallet payment method to a proccesor payment method
+### Map the PayPal wallet payment method to a processor payment method
 
 > [!NOTE]
 > Some of these steps leverage a new capability for supporting wallet payment methods. For more information on this feature, see the [wallet payment support](wallets.md) topic.
