@@ -49,7 +49,7 @@ The October 2020 release of the [Dual-write application orchestration solution v
 | Feature | Description |Status |
 |------|---------|-------|
 | Camel-cased field mappings | Adds support for field mappings with camel-cased navigation properties. | General availability
-| Bug fix | Fixes the bug where an unrecognized tag configuration would cause dual-write execution to be skipped | 
+| Bug fix | Fixes the bug where an unrecognized tag configuration would cause dual-write execution to be skipped | General availability
 
 
 ## September 2020 release
