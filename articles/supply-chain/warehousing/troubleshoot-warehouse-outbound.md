@@ -1,8 +1,8 @@
-﻿---
+---
 # required metadata
 
 title: Troubleshoot outbound warehouse operations
-description: This topic describes how to fix common issues that you might encounter while working with outbound warehouse operations in Dynamics 365 Supply Chain Management.
+description: This topic describes how to fix common issues that you might encounter while you work with outbound warehouse operations in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
 manager: tfehr
 ms.date: 10/19/2020
@@ -33,38 +33,36 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to fix common issues that you might encounter while working with outbound warehouse operations in Dynamics 365 Supply Chain Management.
+This topic describes how to fix common issues that you might encounter while you work with outbound warehouse operations in Microsoft Dynamics 365 Supply Chain Management.
 
-## I received the error "Sales order could not be released."
-
-### Issue description
-
-This error can be for several reasons. One reason is that the order is in credit management hold and a valid postal address must be entered for all sales lines associated with a sales order before shipments can be created.
-
-Another reason is that there is an order hold that must be addressed before the order can be released to the warehouse. The hold could be order-specific or on the customer account.
-
-### Issue resolution
-
-Add or update the address on the sales order and order line(s) and then release to warehouse. Orders can't be released to the warehouse without a valid delivery address (per the address format setup in the Organization administration module).
-
-Investigate the order hold and address the issues, then remove the hold from the order or customer and release to the warehouse.
-
-## The message "The shipment for load 1% has been confirmed." is displayed but no lines are posted.
+## I receive the following error message: "Sales order could not be released."
 
 ### Issue description
 
-A shipment on a load was confirmed but no further posting happened.
+This issue can occur for several reasons. For example, the order is on credit management hold, and no shipments can be created until a valid postal address is entered for all sales lines that are associated with a sales order. Alternatively, there is an order hold that must be addressed before the order can be released to the warehouse. This hold might be order-specific, or it might be on the customer account.
 
 ### Issue resolution
 
-Shipment confirmation has no impact on posting; it only updates the shipment and load status. Posting must occur in a separate process.
+Add or update the address on the sales order and order lines, and then release the order to the warehouse. Orders can be released to the warehouse only if they have a valid delivery address (per the address format setup in the **Organization administration** module).
 
-## I received the error "Direct delivery is not able to process for warehouse 1% as it has warehouse management enabled. Please specify another warehouse that is not enabled for warehouse management."
+Investigate the order hold, and address the issues. Then remove the hold from the order or customer, and release the order to the warehouse.
+
+## I receive the following message: "The shipment for load 1% has been confirmed." However, no lines are posted.
 
 ### Issue description
 
-An item is added to a sales line for direct delivery from a warehouse management enabled warehouse (WMS). The error message is displayed when updating the sales line.
+A shipment on a load was confirmed, but no further posting occurred.
 
 ### Issue resolution
 
-Microsoft has evaluated this issue and determined it to be a feature limitation. Currently, direct delivery isn't supported by WMS, so you'll need to select a non-WMS item and warehouse to use it.
+Shipment confirmation doesn't affect posting. It just updates the shipment and load status. Posting must occur in a separate process.
+
+## I receive the following error message: "Direct delivery is not able to process for warehouse 1% as it has warehouse management enabled. Please specify another warehouse that is not enabled for warehouse management."
+
+### Issue description
+
+An item is added to a sales line for direct delivery from a warehouse that is enabled for warehouse management (WMS). You receive this error message when the sales line is updated. 
+
+### Issue resolution
+
+Microsoft has evaluated this issue and has determined that it's a feature limitation. Currently, WMS doesn't support direct delivery. Therefore, to use direct delivery, you must select a non-WMS item and warehouse.
