@@ -53,7 +53,7 @@ acquisition price \$10,000 the depreciation of the first fiscal year equals
 which equals \$738.75. Split 80% of this asset in Nov 2019 to another fixed
 asset.
 
-[![Reduce balance depreciation after split](./media/Reduce_balance_depreciation_after_split.png)](./media/Reduce_balance_depreciation_after_split.png)
+[![Reduce balance depreciation after split](./media/reduce_balance_depreciation_after_split.png)](./media/reduce_balance_depreciation_after_split.png)
 
 The amount to depreciate for the original asset equals \$1,822.25, NBV before
 posting split transaction 9,111.25 + the generated acquisition adjustment during
