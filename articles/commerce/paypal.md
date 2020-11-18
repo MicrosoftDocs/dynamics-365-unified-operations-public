@@ -47,7 +47,7 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 
 Microsoft Dynamics 365 Commerce now offers an out-of-box integration for PayPal Wallet. When the PayPal Connector is configured, the PayPal button is a selectable payment method as part of online order checkout. When users select **PayPal** they are directed to complete their payment directly with PayPal and then are returned to the online storefront for order completion.  
 
-The PayPal Connector is implemented using the same payments SDK that is leveraged for credit card payments. To better support PayPal payments, support for non-credit card payments has also been enhanced with the addition of support for "wallet" payment types. Specifically, PayPal payments do not return a BIN range. To support PayPal and other wallet payments, a new mapping was introduced for payments that do not include BIN range. This new mapping can also be used to augment existing BIN range mapping for credit card payment methods. For more details, visit [Wallet payment support](articles/commerce/wallets.md). 
+The PayPal Connector is implemented using the same payments SDK that is leveraged for credit card payments. To better support PayPal payments, support for non-credit card payments has also been enhanced with the addition of support for "wallet" payment types. Specifically, PayPal payments do not return a BIN range. To support PayPal and other wallet payments, a new mapping was introduced for payments that do not include BIN range. This new mapping can also be used to augment existing BIN range mapping for credit card payment methods. For more details, see the [wallet payment support](wallets.md) topic. 
 
 The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China. For other locales where Dynamics 365 Commerce is available, there are currently no restrictions. 
 
@@ -102,7 +102,7 @@ To test the PayPal Payment Connector, you must first create PayPal developer cre
 ### Map the PayPal wallet payment method to a procesor payment method
 
 > [!NOTE]
-> Some of these steps leverage a new capability for supporting wallet payment methods. For more information on this feature, see [Wallet payment support](articles/commerce/wallets.md).
+> Some of these steps leverage a new capability for supporting wallet payment methods. For more information on this feature, see the [wallet payment support](wallets.md) topic.
 
 1. Go to **Retail and Commerce \> Channel Setup \> Payment methods \> Payment methods**.
 2. Select **New**.
