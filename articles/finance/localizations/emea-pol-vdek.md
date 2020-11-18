@@ -153,13 +153,13 @@ The format includes the following lookup fields for setup.
 
 ![](media/setup-app-spec-params.jpg)
 
-1.  On the **Application specific parameters** page, select the latest version
+4.  On the **Application specific parameters** page, select the latest version
     of the format that you want to define conditions for.
 
-2.  On the **Lookups** FastTab, select each lookup, and define appropriate
+5.  On the **Lookups** FastTab, select each lookup, and define appropriate
     conditions for it.
 
-3.  On the **Conditions** FastTab, define which tax codes or other available
+6.  On the **Conditions** FastTab, define which tax codes or other available
     criteria must correspond to a specific lookup result. If conditions are
     defined on one line, the system applies them to a source tax transaction by
     using the **AND** operator. If conditions must be applied by using the
@@ -169,7 +169,7 @@ The format includes the following lookup fields for setup.
     information about the setup of each lookup field, see the subsections that
     follow.
 
-4.  In the **State** field, select **Completed**, and then save the
+7.  In the **State** field, select **Completed**, and then save the
     configuration.
 
 ![](media/complete-app-spec-params.jpg)
