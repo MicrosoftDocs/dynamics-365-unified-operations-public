@@ -42,6 +42,16 @@ Check out the latest information about dual-write features and changes in the [r
 + [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Finance and Operations data in Common Data Service – Phase 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
+## October 2020 release
+
+The October 2020 release of the [Dual-write application orchestration solution version 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 10.0.22](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Camel-cased field mappings | Adds support for field mappings with camel-cased navigation properties. | General availability
+| Bug fix | Fixes the bug where an unrecognized tag configuration would cause dual-write execution to be skipped | 
+
+
 ## September 2020 release
 
 The September 2020 release of the [Dual-write application orchestration solution version 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 10.0.21](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
