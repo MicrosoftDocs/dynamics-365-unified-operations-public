@@ -47,9 +47,9 @@ If you aren't using a separate recruiting application, you can also manually man
 >[!NOTE]
 >If you're an admin or developer and want to integrate Human Resources with a third-party recruiting application, see the following topics:
 >- [Configure Common Data Service integration](hr-admin-integration-common-data-service.md)
->- [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)
-> You can also find recruiting integration apps on AppSource.
-> To try out our preview feature for integrating with LinkedIn Talent Hub, see [ntegrate with LinkedIn Talent Hub](hr-admin-integration-linkedin.md).
+>- [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)<br><br>
+> You can also find recruiting integration apps on [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).<br><br>
+> To try out our preview feature for integrating with LinkedIn Talent Hub, see [Integrate with LinkedIn Talent Hub](hr-admin-integration-linkedin.md).
 
 ## Add a recruiting request
 
