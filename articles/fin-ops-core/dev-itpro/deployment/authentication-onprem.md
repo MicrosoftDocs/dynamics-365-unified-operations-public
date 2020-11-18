@@ -5,7 +5,7 @@ title: Authentication in Dynamics 365 Finance + Operations (on-premises)
 description: This topic provides background information about how the authentication process works so that if you have issues you can work to resolve them.
 author: faix
 manager: AnnBe
-ms.date: 11/12/2020
+ms.date: 11/18/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -88,17 +88,17 @@ The AOS uses the configuration values above to determine where to redirect an un
 
 1. Request is sent by the browser to the application URL (`https://ax.contoso.com/namespaces/AXSF/`).
 2. The request is processed by the Gateway and gets forwarded to an AOS node that accepts interactive sessions.
-3. The request reaches an AOS server and checks for the authentication cookies.
+3. The request reaches the AOS server and checks for the authentication cookies.
 4. No authentication is present so the AOS server returns a redirect request for the user to authenticate with AD FS. At this point, the AOS also sets an affinity cookie to bind the user session to that AOS.
-5. The gateway returns this response to the Gateway and it in turn forwards it back to the browser.
+5. The Gateway receives the response and it in turn forwards it back to the browser.
 6. The browser receives the redirect request and displays the AD FS authentication page so the user signs in.
-7. When successfully authenticated against AD FS, then the AD FS redirects you back to the application URL and provides the authentication cookies.
+7. When successfully authenticated against AD FS, the AD FS then redirects the user back to the application URL and provides the authentication cookies.
 8. The Gateway receives this response and forwards the affinitized request to the appropriate AOS node.
 9. The AOS checks the authentication information provided and checks against the **UserInfo** table to determine whether the user is allowed to access the application and which permissions are available.
     
-If values in the AOS config file are incorrect, then that typically means the value provided for the AD FS endpoint during environment deployment was wrong. The easiest thing is to delete and redeploy the environment from LCS with the right value. It is possible to manually edit the configuration files, but to be safe, do a redeploy. Otherwise you will need to manually change the values after each servicing operation on each AOS node. If you do edit the config files, then you need to restart the AOS services for it to take effect. You can do that from the Service Fabric explorer (right-click the AOS node under **Nodes**, choose **Restart**, and then wait at least a minute for the status to change  to green). You can also reboot the machine.
+If values in the AOS config file are incorrect, then that typically means the value provided for the AD FS endpoint when deploying the environment was wrong. The easiest thing is to delete and redeploy the environment from LCS with the correct value. It is possible to manually edit the configuration files, but to be safe, do a redeploy. Otherwise you will need to manually change the values after each servicing operation on each AOS node. If you do edit the config files, then you need to restart the AOS service (AxService.exe) for it to take effect. You can do that from the Service Fabric explorer (right-click the AOS node under **Nodes**, choose **Restart**, and then wait at least a minute for the status to change to green). You can also reboot the machine.
 
-Receiving a 500 error when accessing the application URL is an indication that there’s an invalid URL for AD FS. This is because on startup the AOS will use that URL to obtain information from the AD FS server. If the URL is incorrect or inaccessible, the AOS will be unable to start.
+Receiving a 500 error when accessing the application URL is an indication that there may be an invalid URL for AD FS. This is because on startup the AOS will use that URL to obtain information from the AD FS server. If the URL is incorrect or inaccessible, the AOS will be unable to start.
 
 ## AD FS
 The second part of the authentication process is AD FS itself. On the AD FS server if you open AD FS Management ((from **Control Panel > System and Security > Administrative Tools**), and go to **Application groups**, you'll find a group called **Microsoft Dynamics 365 for Operations On-premises**. Within this group, the settings for AD FS for your Dynamics 365 application are stored.
