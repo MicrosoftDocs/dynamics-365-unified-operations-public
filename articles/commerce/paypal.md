@@ -55,7 +55,7 @@ The Microsoft Dynamics 365 Payment Connector for PayPal is not available in Chin
 
 ### PayPal Wallet in storefront 
 
-The connector supports the use of the PayPal Wallet, or PayPal button, for e-commerce payments. When the connector is configured for the online storefront, customers will be presented with the option to pay using the PayPal button at the time of payment. When the customer selects the PayPal button, they will be redirected to a PayPal Wallet mini-browser window where they will be authenticated by PayPal and can select their method of payment. Upon succesful authentication and selection of a payment method, the customer will be redirected back to the storefront with the PayPal payment loaded into the checkout form. Once the order is placed, the PayPal payment will be included as a payment line on the order and it will by synchronized to Commerce headquarters.
+The connector supports the use of the PayPal Wallet, or PayPal button, for e-commerce payments. When the connector is configured for the online storefront, customers will be presented with the option to pay using the PayPal button at the time of payment. When the customer selects the PayPal button, they will be redirected to a PayPal Wallet mini-browser window where they will be authenticated by PayPal and can select their method of payment. Upon successful authentication and selection of a payment method, the customer will be redirected back to the storefront with the PayPal payment loaded into the checkout form. Once the order is placed, the PayPal payment will be included as a payment line on the order and it will by synchronized to Commerce headquarters.
 
 For more information on PayPal Wallet, please visit the [PayPal Checkout page](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) hosted by PayPal. 
 
@@ -67,7 +67,7 @@ Fulfillment for PayPal orders supports incremental capture. This means that if a
 
 ### Authorization expiration
 
-Orders made using the PayPal Payment Connector should be fulfilled within 30 days. If an order cannot be fulfilled or invoiced within 30 days, the original authorization will expire. The PayPal Connector does not currently support billing agreements. Recurring billing agreements, similar to recurring card references/tokens are required to automatically generate new authorizations after original authorization exipry. This means that if an authorization expires, the order will fall into a "do not process" state and the customer must be contacted to arrange for an alternate form of payment. 
+Orders made using the PayPal Payment Connector should be fulfilled within 30 days. If an order cannot be fulfilled or invoiced within 30 days, the original authorization will expire. The PayPal Connector does not currently support billing agreements. Recurring billing agreements, similar to recurring card references/tokens are required to automatically generate new authorizations after original authorization expiry. This means that if an authorization expires, the order will fall into a "do not process" state and the customer must be contacted to arrange for an alternate form of payment. 
 
 Billing agreement support, which allows for creation of new authorizations upon expiration of the original authorization, will be added in a future release. 
 
@@ -99,7 +99,7 @@ To test the PayPal Payment Connector, you must first create PayPal developer cre
 
 ## Set up the connector in Dynamics 365 Commerce
 
-### Map the PayPal wallet payment method to a procesor payment method
+### Map the PayPal wallet payment method to a proccesor payment method
 
 > [!NOTE]
 > Some of these steps leverage a new capability for supporting wallet payment methods. For more information on this feature, see the [wallet payment support](wallets.md) topic.
@@ -166,11 +166,11 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
 > [!NOTE]
 > When testing payments in a Sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API key**s must never be used. Sandbox environments are for Sandbox testing only.
 
-Once the above changes have been made in Commerce headquaters, synchronize the changes using the **1070** distribution schedule.
+Once the above changes have been made in Commerce headquarters, synchronize the changes using the **1070** distribution schedule.
 
 ### Configure PayPal for the Storefront checkout module
 
-For details related to configuring storefront to use PayPal in the checkout module, please visit the [Payment module](payment-module.md) topic.  
+For details related to configuring storefront to use PayPal in the checkout module, see the [Payment module](payment-module.md) topic.  
 
 ## Entering a merchant relationship with PayPal
 
