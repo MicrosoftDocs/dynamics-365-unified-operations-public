@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure item filters and filter codes for warehouse transactions
-description: This topic describes how to configure item filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and specify the items that can be purchased from a particular vendor.
+title: Configure product filters for warehouse transactions
+description: This topic describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and specify the items that can be purchased from a particular vendor.
 author: Mirzaab
 manager: tfehr
 ms.date: 11/16/2020
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Release 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure item filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and specify the items that can be purchased from a particular vendor.
+This topic describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and specify the items that can be purchased from a particular vendor.
 
-Additionally, you can set up and use filter codes to automatically organize inventory items in a warehouse and combine filtered items into filter groups. Filters can be used to place items into categories for handling, purchasing and selling processes. You may want to group items together or separate them from each other when handling based on weight or handling restrictions.  You can also specify which customers or vendors an item can be purchase from or sold to.
+Additionally, you can set up and use product filters to automatically organize inventory items in a warehouse and combine filtered items into filter groups. Filters can be used to place items into categories for handling, purchasing and selling processes. You may want to group items together or separate them from each other when handling based on weight or handling restrictions.  You can also specify which customers or vendors an item can be purchase from or sold to.
 
 ## Prerequisites
 
@@ -67,6 +67,9 @@ For example, Code 1 could represent items that have hazardous material classific
 
 You can use filter groups to filter codes. This is useful when the group is used in a query in a location directive and you want to search for the group instead of for a series of codes. A filter group is associated with an item group.
 
+> [!NOTE]
+> Not all product filter groups will be enabled for the additional filter codes (Code 5 through Code 10). For instance, on released products all of the product filter codes will be added, but the grouping of filter codes will not be updated. This may be updated in later releases.
+
 To set up filter groups, follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Product filters \> Product filter groups**.
@@ -88,7 +91,7 @@ By setting up filter codes on an item group, you can make the codes required for
 
 To set up filter codes on item groups, follow these steps:
 
-1. Select **Inventory management** \> **Setup** \> **Inventory** \> **Item groups**.
+1. Select **Inventory management \> Setup \> Inventory \> Item groups**.
 1. Select **New** in the Action Pane to create a new item group. Enter a value in **Item group** and the description in **Name**.
 1. On the **Warehouse** FastTab, in the **Filter required** group, select the appropriate check boxes to define one or more filter codes that must be specified for products that are associated with the item group.
 
@@ -113,6 +116,7 @@ To specify filter codes for specific products, follow these steps:
 1. On the **New released product** Flyout, enter the data needed to create the base of a new product, then select **OK**.
 
     1. See Microsoft Docs [Create a new product](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/create-new-product) for more information.
+    1. Product filter codes are not enabled unless the Item group attached to the product has been configured for filter codes.
 
 1. Expand the **Warehouse** FastTab.
 1. In the **Product Filter Codes** group *Code 1*, *Code 2* through *Code 10* fields, select the filter codes that you want to specify for the product.
@@ -143,11 +147,11 @@ This optional procedure shows how to specify items that should be available for 
 
 To set up customer filter codes, follow these steps:
 
-1. Select **Sales and marketing** \> **Customers** \> **All customers**.
+1. Select **Sales and marketing \> Customers \> All customers**.
 1. Select a customer.
 1. On the **Customer** tab, in the **Set up** group, select **Product filters**.
 1. On the **Product filter codes** page, select **New** in the Action Pane.
-1. In the **Start date/time** and **End date/time** fields, enter the information for the selected customer.
+1. In the **Start date/time** and **End date/time** fields, enter a start and end date for the selected **Item group**.
 1. In the **Item group** field, select an item group.
 1. In the **Code 1**, **Code 2** through **Code 10** fields, select codes to use as criteria for limiting the items that are available for customers in the selected item group. You must make a selection for each *Code #* that has been setup on the **Item group**.
 
