@@ -88,10 +88,10 @@ When you've completed the configuration steps and set up demo data, you must tur
 ### Enable Customer payment predictions
 If you are using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. For the specific steps to import demo data, see [Set up demo data for payment predictions](set-up-demo-data.md).
 
-To enable Customer payment predictions, you must complete a set of steps to build a marchine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to comlete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
+To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to comlete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
 
 ### Enable Cash flow forecasting
-To enable Cash flow forecasting, you must complete a set of steps to build a marchine learning model that uses your organization's data your organization's data to to generate cash flow forecasts. For more information and the specific steps to comlete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md) 
+To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to to generate cash flow forecasts. For more information and the specific steps to comlete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md) 
 
 ### Set up and use cash flow forecasting
 For information about how to set up and use cash flow forecasting, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md). For more information about how to use this capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
