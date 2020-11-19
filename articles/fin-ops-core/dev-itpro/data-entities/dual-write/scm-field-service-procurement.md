@@ -59,13 +59,13 @@ The figure references the following elements, which you typically install in the
 1. Field Service Common: Both solutions' installation package will introduce a solution called Field Service Common. This solution introduces several common components required across both Field Service and Supply Chain Management Extended.
 2. Field Service (Anchor): While Field Service is composed of many solutions and patches working together, the Field Service (Anchor) solution (version 8.8.31.60 or higher) signifies that there are many specific solution components present. 
 3.Supply Chain Management Extended: This solution installs tables, attributes, and behaviors that are specific to Supply Chain Management. They are required for dual-write to work correctly with Dataverse. 
-3. One Field Service / Dynamics 365 Supply Chain Management: If both Field Service (Anchor) and Supply Chain Management Extended are installed and meet the minimum versions, another solution called *One Field Service / Dynamics 365 Supply Chain Management* will be installed. This solution contains logic and some solution components that don't otherwise merge and allows for comprehensive solution behavior across common functionality between Field Service and Supply Chain Management.
+4. One FS/SCM: If both Field Service (Anchor) and Supply Chain Management Extended are installed and meet the minimum versions, another solution called *One Field Service / Dynamics 365 Supply Chain Management* will be installed. This solution contains logic and some solution components that don't otherwise merge and allows for comprehensive solution behavior across common functionality between Field Service and Supply Chain Management.
 
 ## Initial synchronization
 
 To create purchase orders and work with existing purchase order, you must synchronize the reference data between Supply Chain Management and Dataverse. Please use the *initial write* functionality to detect the entity relationships and find the entities you need to enable for a given map.
 
-Major entities that are needed are:
+You must sync the following tables.
 
 - Products templates, such as:
   - All products
@@ -84,64 +84,45 @@ Major entities that are needed are:
 
 This will ensure that all documents (purchase orders and Product receipts) in Supply Chain Management are available in Dataverse.
 
-> [!NOTE]
-> The Field Service Purchase Order relies on the Account entity to track Vendors. This means that the Dataverse tables for Purchase Order use the Account to track Vendor. In order to accommodate this key difference, there are four key workflows that must be enabled which will keep the Accounts as Vendors in sync. 
->
-> The following four processes must be activated:
->
->- *Create Vendors in Accounts Entity*
->- *Create Vendors in Vendors Entity*
->- *Update Vendors in Accounts Entity*
->- *Update Vendors in Vendors Entity*
->
-> If One FS/SCM installs because both Field Service and Supply Chain Management Extended are present, these workflows will be enabled automatically. If Field Service is not present, but an organization would still like to integrate the Purchase Order tables with Dataverse, this should be possible but it will require that these workflows are activated.
->
-> In either case, unless an organization is starting from scratch, it may be necessary to ensure that all Vendors are created in Dataverse as Accounts before creating Purchase Orders, otherwise you may see errors.
+### Account and Vendor tables
+The Field Service Purchase Order relies on the Account entity to track Vendors. This means that the Dataverse tables for Purchase Order use the Account to track Vendor. In order to accommodate this key difference, there are four key workflows that must be enabled which will keep the Accounts as Vendors in sync. 
 
-Once all of the prerequisites are in pace, if you want existing purchase orders and product receipts to be available in both systems, then you should do an initial sync of the following templates:
+The following four processes must be activated:
 
-- *Purchase Order Header V2*
-- *CDS Purchase Order Line*
-- *CDS Purchase Order Line soft delete*
-- *Purchase Order Receipt*
-- *Purchase Order Receipt Product*
+- Create Vendors in Accounts Entity
+- Create Vendors in Vendors Entity
+- Update Vendors in Accounts Entity
+- Update Vendors in Vendors Entity
+
+If One FS/SCM installs because both Field Service and Supply Chain Management Extended are present, these workflows will be enabled automatically. If Field Service is not present, but an organization would still like to integrate the Purchase Order tables with Dataverse, this should be possible but it will require that these workflows are activated.
+
+In either case, unless an organization is starting from scratch, it may be necessary to ensure that all Vendors are created in Dataverse as Accounts before creating Purchase Orders, otherwise you may see errors.
+
+### Initial sync
+
+Once all of the prerequisites are in place, if you want existing purchase orders and product receipts to be available in both systems, then you should do an initial sync of the following templates:
+
+- Purchase Order Header V2
+- CDS Purchase Order Line
+- CDS Purchase Order Line soft delete
+- Purchase Order Receipt
+- Purchase Order Receipt Product
 
 ## Templates
 
 The following templates are available for integrating procurement related documents.
 
-| Supply Chain Management | Other Dynamics 365 apps<br>(such as Field Service) | Description |
+| Supply Chain Management | Field Service | Description |
 |---|---|---|
 | Purchase order header V2 | msdyn\_Purchaseorders | This entity contains the fields from representing the purchase order header. |
-| Dataverse purchase order line entity | msdyn\_PurchaseOrderProducts | This table contains the rows that represent lines on a purchase order. |
+| CDS purchase order line entity | msdyn\_PurchaseOrderProducts | This table contains the rows that represent lines on a purchase order.  The product number is used for synchronization. This identifies the product as a SKU (including product dimensions). For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md).|
 | Product receipt header | msdyn\_purchaseorderreceipts | This entity contains the product receipt headers that are created when a product receipt is posted in Supply Chain Management. |
 | Product receipt line | msdyn\_purchaseorderreceiptproducts | This entity contains the product receipt lines that are created when a product receipt is posted in Supply Chain Management. |
-| CDS purchase order line soft deleted entity | msdyn\_purchaseorderproducts | This entity contains information about which purchase order lines that are soft deleted. |
-
-## Mappings
-
-### Mapping types
-
-### Purchase order header V2 (`msdyn\_Purchaseorders`)
-
-### Dataverse purchase order line entity (msdyn\_PurchaseOrderProducts)
-
-
-\*) The product number is used for synchronization. This identifies the product as a SKU (including product dimensions). For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md).
-
-### Product receipt header (msdyn\_purchaseorderreceipts)
-
-### Product receipt line (msdyn\_purchaseorderreceiptproducts)
-
-### Dataverse purchase order line soft deleted entity (msdyn\_purchaseorderproducts)
-
-This template synchronizes data between Supply Chain Management and Dataverse.
-
-A purchase order line in Supply Chain Management can only be soft-deleted when the purchase order has been confirmed or approved if change management is enabled. The record exists in the Supply Chain Management database with a marking as IsDeleted. Dataverse does not have a concept of soft delete so this information is important to synchronize to Dataverse to automatically delete lines from Dataverse when they are soft deleted in Supply Chain Management. Logic for deleting a line in Dataverse in this case is located in Supply Chain Management extended 
+| CDS purchase order line soft deleted entity | msdyn\_purchaseorderproducts | This entity contains information about which purchase order lines that are soft deleted. A purchase order line in Supply Chain Management can only be soft-deleted when the purchase order has been confirmed or approved if change management is enabled. The record exists in the Supply Chain Management database with a marking as IsDeleted. Dataverse does not have a concept of soft delete so this information is important to synchronize to Dataverse to automatically delete lines from Dataverse when they are soft deleted in Supply Chain Management. Logic for deleting a line in Dataverse in this case is located in Supply Chain Management extended. |
 
 ## Mappings with logic
 
-The procurement integration extends the product mapping with the following logic to ensure that products in Dataverse get the **Field Service Product Type** field set correctly:
+The procurement integration extends the product mapping with the following logic to ensure that the **Field Service Product Type** column is set correctly in the products table in Dataverse:
 
 - If **Product Type** is *Product* and **Item model group, Stocked product** is *True*, then **Field Service Product Type** is *Inventory*.
 - If **Product type** is *Product* and **Item model group, Stocked product** is *False*, then **Field Service Product Type** is *Non-Inventory*.
@@ -151,35 +132,25 @@ In addition, there is logic in Dataverse that maps vendors with their related ac
 
 ## Supported scenarios
 
-Purchase orders can be created and updated, with some limitations based on lifecycle, by Dataverse users but the process and data are controlled by Supply Chain Management.
++ Purchase orders can be created and updated by Dataverse users but the process and data are controlled by Supply Chain Management. There are some limitations based on lifecycle.
++ If the purchase order is controlled by change management in Supply Chain Management, then a Field Service user can only update the purchase order when the Supply Chain Management approval status is `Draft`.
++ Several fields are managed by Supply Chain Management only. Those fields cannot be updated in Field Service. Read the mapping tables in this document to get more information about which fields this is, mapping is indicated by \> or \>\>. Most such fields will be set to read-only in the Dataverse forms to simplify use. One example of fields managed by Supply Chain Management is the price information. Supply Chain Management has trade agreements that Field Service can benefit from. Fields such as Unit price, Discount and Net Amount come only from Supply Chain Management. To ensure that the price is synced to Field Service the **Sync** button should by used on the Purchase Order and Purchase Order Product form in Dataverse when purchase order data has been entered. For more information, see [Sync with the Dynamics 365 Supply Chain Management procurement data on demand](#sync-procurement).
++ The **Totals** field is only available in Field Service as there are no up-to-date totals of the purchase order in Supply Chain Management. The totals in Supply Chain Management are calculated based on multiple parameters that are not available in Field Service.
++ Purchase order lines with only a procurement category specified or where the product specified is an item of **Type** or **Field Service Product Type** *Service* can only be initiated in Supply Chain Management, however they are synced to Dataverse and are visible in the Field Service app.
++ When Supply Chain Management is not installed and only Field Service is installed then the warehouse field is mandatory on the purchase order; however, when Supply Chain Management is installed this requirement is relaxed because Supply Chain Management allows a purchase order line without a warehouse in certain situations.
++ Product receipts (purchase order receipts in Dataverse) are managed by Supply Chain Management and cannot be created from Dataverse when Supply Chain Management is installed. The product receipts from Supply Chain Management are synced from Supply Chain Management to Dataverse.
++ Since under delivery can be allowed in Supply Chain Management, **One FS/SCM** adds logic that, on create or update of the Product Receipt Line (Purchase Order Receipt Product in Dataverse), an Inventory Journal record in Dataverse is created to adjust the remaining on order quantity for under-delivery scenarios.
 
-If the purchase order is controlled by change management in Supply Chain Management a Field Service user can only update the purchase order when the Supply Chain Management approval status is DRAFT.
+## Unsupported scenarios
 
-Several fields are managed by Supply Chain Management only, which implies that such fields cannot be updated by Field Service. Read the mapping tables in this document to get more information about which fields this is, mapping is indicated by \> or \>\>. Most such fields will be set to read-only in the Dataverse forms to simplify use.
-
-One example of fields managed by Supply Chain Management is the price information. Supply Chain Management has trade agreements that Field Service can benefit from. Fields such as Unit price, Discount and Net Amount come only from Supply Chain Management. To ensure that the price is synced to Field Service the **Sync** button should by used on the Purchase Order and Purchase Order Product form in Dataverse when purchase order data has been entered. <!-- (add a link to a later section where the Sync is described) -->
-
-The **Totals** field is only available in Field Service as there are no up-to-date totals of the purchase order in Supply Chain Management. The totals in Supply Chain Management are calculated based on multiple parameters that are not available in Field Service.
-
-Purchase order lines with only a procurement category specified or where the product specified is an item of **Type** or **Field Service Product Type** *Service* can only be initiated in Supply Chain Management, however they are synced to Dataverse and are visible in the Field service app.
-
-When Supply Chain Management is not installed and only Field Service is installed then warehouse is mandatory on the purchase order; however, when Supply Chain Management is installed this requirement is relaxed because Supply Chain Management allows a purchase order line without a warehouse in certain situations.
-
-Product receipts (purchase order receipts in Dataverse) are managed by Supply Chain Management and cannot be created from Dataverse when Supply Chain Management is installed. The product receipts from Supply Chain Management are synced from Supply Chain Management to Dataverse.
-
-Since under delivery can be allowed in Supply Chain Management, One FS/SCM adds logic that, on create or update of the Product Receipt Line (Purchase Order Receipt Product in Dataverse), an Inventory Journal record in Dataverse is created to adjust the remaining on order quantity for under-delivery scenarios.
-
-## A few unsupported scenarios
-
-Adding a line to a Canceled Purchase Order in Supply Chain Management. This will be blocked by Field Service logic. Workaround is to change the PO System Status in Field Service, then to add the new line in either Field Service or Supply Chain Management.
-
-While procurement records will impact inventory levels in both systems, this integration does not assure inventory alignment across Supply Chain Management and Field Service. Both Field Service and Supply Chain Management have other processes which update inventory levels that are outside the scope of procurement.
++ Adding a line to a Canceled Purchase Order in Supply Chain Management is blocked by Field Service. The workaround is to change the PO System Status in Field Service, then to add the new line in either Field Service or Supply Chain Management.
++ While procurement records will impact inventory levels in both systems, this integration does not assure inventory alignment across Supply Chain Management and Field Service. Both Field Service and Supply Chain Management have other processes which update inventory levels that are outside the scope of procurement.
 
 <!-- Mai: Delivery Date/Lead Time Delivery date defaulting controlled by Supply Chain Management. ( this is what does not work and I need to test this) -->
 
 ## Status Management
 
-The status for a purchase order in field services is different from the statues in Supply Chain Management
+The status for a purchase order in Field Service is different from the status in Supply Chain Management.
 
 Field service Purchase order and purchase order product statuses
 
@@ -211,7 +182,7 @@ When the document header status in Supply Chain Management changes to `Cancelled
 
 When purchase order line status in Supply Chain Management is `Cancelled` then field service purchase order product status should be `Cancelled`. In addition, when Purchase order Line Status in Supply Chain Management is changed from **Canceled** to **Back Order**, then the Purchase Order Product Item Status in Field service should be updated to **Pending**
 
-## Sync with the Dynamics 365 Supply Chain Management procurement data on demand
+##  <a id="sync-procurement"></a>Sync with the Dynamics 365 Supply Chain Management procurement data on demand
 
 Microsoft Dynamics 365 Supply Chain Management includes a procurement data that handles trade agreements, discounts, and many other scenarios which rely on secondary processes within Supply Chain Management. The procurement engine uses complex rules to determine the best price for a given purchase order. When you use dual-write, data is not always kept synchronous across the two machines, especially in scenarios where the record was created or updated from Dataverse and may trigger follow-on processes in Supply Chain Management.
 
