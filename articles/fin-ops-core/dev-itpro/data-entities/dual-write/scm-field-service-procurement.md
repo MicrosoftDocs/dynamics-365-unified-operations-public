@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Integrate procurement in Supply Chain Management with Field Service through dual-write
+title: Integrate procurement in Supply Chain Management with Field Service
 description: Supply Chain Management has robust procurement functionality. Field Service offers functionality to support the purchasing processes associated with the service motion. Dual-write integration supports purchase order creation and updates from both applications.
 author: mkirknel
 manager: tfehr
@@ -13,14 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mkirknel
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
@@ -42,25 +39,27 @@ The following illustration shows the tables and entities in each system and how 
 
 To integrate Dynamics 365 Supply Chain Management with Field Service, you must run the following versions of the components:
 
-- Field Service version 8.8.31.60 or later for comprehensive purchase order integration
+- Field Service, version 8.8.31.60 or later for comprehensive purchase order integration
+- Dynamics 365 Supply Chain Management, version 10.0.14 or higher.
 - Dual-write version **missing** or later is required to run the *One Field Service / Dynamics 365 Supply Chain Management* solution.
-- Dynamics 365 Supply Chain Management version 10.0.14 or higher.
 
 ## Installation guidelines
 
-For more information on setting up dual-write, see the [Dual-write home page](dual-write-home-page.md#dual-write-setup)
+### Prerequisites
 
-For more information on how to install Dynamics 365 Field Service, see [How to install Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service)
++ Dual-write: For more information, see the [Dual-write home page](dual-write-home-page.md#dual-write-setup).
++ Dynamics 365 Field Service: For more information, see [How to install Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
-When enabled in Dataverse, dual-write and Field Service will introduce a number of solution layers that extend the environment with new metadata, forms, views, and logic, as shown in the following figure. These solutions can be enabled in any order.
+When enabled in Microsoft Dataverse, dual-write and Field Service introduce a number of solution layers that extend the environment with new metadata, forms, views, and logic, as shown in the following figure. These solutions can be enabled in any order.
 
-![Solution layers](media/solution-layers.png "Solution layers")
+![Solution layers for dual-write](media/solution-layers.png)
 
 The figure references the following elements, which you typically install in the following order:
 
-1. **Field Service Common**: Both solutions' installation package will introduce a solution called Field Service Common. This solution introduces several common components required across both Field Service and Supply Chain Management Extended.
-1. **Filed Service (Anchor) and/or Supply Chain Management Extended**: The Filed Service (Anchor) and/or Supply Chain Management Extended can be installed next and can be introduced independently. While Field Service is composed of many solutions and patches working together, the Field Service (Anchor) solution (version 8.8.31.60 or higher) signifies that there are many specific solution components present. The Supply Chain Management Extended solution installs many tables, attributes, and behaviors that are specific to Supply Chain Management, and which are required for dual-write to work correctly with Microsoft Dataverse.
-1. **One FS/SCM:** If both the Field Service (Anchor) and Supply Chain Management Extended solutions are present and meet the minimum versions, another solution called *One FS/SCM* will be installed. This solution contains logic and some solution components that don't otherwise merge and allows for comprehensive solution behavior across common functionality between Field Service and Supply Chain Management.
+1. Field Service Common: Both solutions' installation package will introduce a solution called Field Service Common. This solution introduces several common components required across both Field Service and Supply Chain Management Extended.
+2. Field Service (Anchor): While Field Service is composed of many solutions and patches working together, the Field Service (Anchor) solution (version 8.8.31.60 or higher) signifies that there are many specific solution components present. 
+3.Supply Chain Management Extended: This solution installs tables, attributes, and behaviors that are specific to Supply Chain Management. They are required for dual-write to work correctly with Dataverse. 
+3. One Field Service / Dynamics 365 Supply Chain Management: If both Field Service (Anchor) and Supply Chain Management Extended are installed and meet the minimum versions, another solution called *One Field Service / Dynamics 365 Supply Chain Management* will be installed. This solution contains logic and some solution components that don't otherwise merge and allows for comprehensive solution behavior across common functionality between Field Service and Supply Chain Management.
 
 ## Initial synchronization
 
@@ -123,209 +122,22 @@ The following templates are available for integrating procurement related docume
 
 ### Mapping types
 
-There are several different mapping types. The following table explains the symbols used in the template tables.
-
-| **Symbol** | **Description** |
-|---|---|
-| \> | One-way |
-| \>\> | One-way, and data is transformed in the process. |
-| = | Bidirectional |
-| \>\< | Bidirectional, and data is transformed in the process. |
-| \<\< | One-way, and data is transformed in the process. |
-
 ### Purchase order header V2 (`msdyn\_Purchaseorders`)
-
-This template synchronizes data between Supply Chain Management and Dataverse.
-
-| Supply Chain Management | Map type | Dataverse |
-|---|---|---|
-| DELIVERYADDRESSNAME | \> | msdyn\_addressname |
-| REQUESTEDDELIVERYDATE | = | msdyn\_dateexpected |
-| PURCHASEORDERNUMBER | = | msdyn\_name |
-| PAYMENTTERMSNAME | = | msdyn\_paymentterm.msdyn\_name |
-| DEFAULTRECEIVINGWAREHOUSEID | = | msdyn\_receivetowarehouse.msdyn\_warehouseidentifier |
-| ACCOUNTINGDATE | = | msdyn\_accountingdate |
-| AREPRICESINCLUDINGSALESTAX | \>\< | msdyn\_arepriceincludingsalestax |
-| ATTENTIONINFORMATION | \> | msdyn\_attentioninformation |
-| CASHDISCOUNTCODE | = | msdyn\_cashdiscountcode |
-| CASHDISCOUNTPERCENTAGE | = | msdyn\_cashdiscountpercentage |
-| CONTACTPERSONID | = | msdyn\_contactpersonid.msdyn\_contactpersonid |
-| CURRENCYCODE | = | transactioncurrencyid.isocurrencycode |
-| DEFAULTRECEIVINGSITEID | = | msdyn\_defaultreceivingsiteid.msdyn\_siteid |
-| DELIVERYTERMSID | = | msdyn\_deliveryterm.msdyn\_termscode |
-| EMAIL | = | msdyn\_email |
-| ISCHANGEMANAGEMENTACTIVE | \>\> | msdyn\_ischangemanagementactive |
-| ISDELIVEREDDIRECTLY | \>\> | msdyn\_isdeliverydirectly |
-| LANGUAGEID | \>\< | msdyn\_language |
-| ORDERERPERSONNELNUMBER | = | msdyn\_ordererpersonnelnumber.cdm\_workernumber |
-| REASONCODE | = | msdyn\_reasoncode |
-| REASONCOMMENT | = | msdyn\_reasoncomment |
-| TOTALDISCOUNTPERCENTAGE | = | msdyn\_totaldiscountpercentage |
-| URL | = | msdyn\_url |
-| VENDORORDERREFERENCE | = | msdyn\_vendororderreference |
-| VENDORPAYMENTMETHODNAME | = | msdyn\_vendorpaymentmethod.msdyn\_name |
-| VENDORPAYMENTMETHODSPECIFICATIONNAME | \> | msdyn\_vendorpaymentmethodspecificationname |
-| ORDERVENDORACCOUNTNUMBER | = | msdyn\_vendor.accountnumber |
-| DELIVERYMODEID | = | msdyn\_shipvia.msdyn\_name |
-| INVOICEVENDORACCOUNTNUMBER | = | msdyn\_invoicevendoraccount.accountnumber |
-| DOCUMENTAPPROVALSTATUS | \>\> | msdyn\_documentapprovalstatus |
-| PURCHASEORDERSTATUS | \>\> | msdyn\_purchaseorderstatus |
-| DELIVERYADDRESSCITY | \> | msdyn\_city |
-| DELIVERYADDRESSCOUNTRYREGIONISOCODE | \> | msdyn\_country |
-| DELIVERYADDRESSSTATEID | \> | msdyn\_stateorprovince |
-| DELIVERYADDRESSZIPCODE | \> | msdyn\_postalcode |
-| DELIVERYADDRESSSTREET | \> | msdyn\_address1 |
-| DELIVERYADDRESSSTREETNUMBER | \> | msdyn\_address2 |
-| CONFIRMEDDELIVERYDATE | = | msdyn\_confirmeddeliverydate |
-| DELIVERYADDRESSLONGITUDE | \> | msdyn\_longitude |
-| DELIVERYADDRESSLATITUDE | \> | msdyn\_latitude |
-| DELIVERYADDRESSCOUNTRYREGIONID | \> | msdyn\_deliveryaddresscountryregionid |
-| DELIVERYADDRESSDESCRIPTION | \> | msdyn\_deliveryaddressdescription |
-| DELIVERYADDRESSDISTRICTNAME | \> | msdyn\_deliveryaddressdistrictname |
-| DELIVERYADDRESSDUNSNUMBER | \> | msdyn\_deliveryaddressdunsnumber |
-| DELIVERYADDRESSLOCATIONID | \> | msdyn\_deliveryaddresslocationid |
-| DELIVERYADDRESSPOSTBOX | \> | msdyn\_deliveryaddresspostbox |
-| DELIVERYADDRESSTIMEZONE | \> | msdyn\_deliveryaddresstimezone |
-| DELIVERYBUILDINGCOMPLIMENT | \> | msdyn\_deliverybuildingcompliment |
-| FORMATTEDDELIVERYADDRESS | \> | msdyn\_formatteddeliveryaddress |
-| INVOICEADDRESSCITY | \> | msdyn\_invoiceaddresscity |
-| INVOICEADDRESSCOUNTRYREGIONID | \> | msdyn\_invoiceaddresscountryregionid |
-| INVOICEADDRESSCOUNTY | \> | msdyn\_invoiceaddresscounty |
-| INVOICEADDRESSSTATE | \> | msdyn\_invoiceaddressstate |
-| INVOICEADDRESSSTREET | \> | msdyn\_invoiceaddressstreet |
-| INVOICEADDRESSSTREETNUMBER | \> | msdyn\_invoiceaddressstreetnumber |
-| INVOICEADDRESSZIPCODE | \> | msdyn\_invoiceaddresszipcode |
 
 ### Dataverse purchase order line entity (msdyn\_PurchaseOrderProducts)
 
-This template synchronizes data between Supply Chain Management and Dataverse.
-
-| Supply Chain Management | Map type | Dataverse |
-|---|-|---|
-| REQUESTEDDELIVERYDATE | = | msdyn\_dateexpected |
-| LINEDESCRIPTION | = | msdyn\_description |
-| LINENUMBER | = | msdyn\_lineorder |
-| PRODUCTNUMBER \*) | = | msdyn\_product.msdyn\_productnumber |
-| PURCHASEORDERNUMBER | = | msdyn\_purchaseorder.msdyn\_name |
-| ORDEREDPURCHASEQUANTITY | = | msdyn\_quantity |
-| LINEAMOUNT | \> | msdyn\_lineamount |
-| PURCHASEPRICE | \> | msdyn\_unitcost |
-| BARCODE | = | msdyn\_barcode |
-| CATCHWEIGHTUNITSYMBOL | = | msdyn\_catchweightunitsymbol.msdyn\_symbol |
-| CONFIRMEDSHIPPINGDATE | = | msdyn\_confirmedshippingdate |
-| CUSTOMERREFERENCE | = | msdyn\_customerreference |
-| CUSTOMERREQUISITIONNUMBER | = | msdyn\_customerrequisitionnumber |
-| EXTERNALITEMNUMBER | = | msdyn\_externalitemnumber |
-| ISPARTIALDELIVERYPREVENTED | \>\< | msdyn\_ispartialdeliveryprevented |
-| LINEDISCOUNTAMOUNT | \> | msdyn\_linediscountamount |
-| LINEDISCOUNTPERCENTAGE | \> | msdyn\_linediscountpercentage |
-| ORDEREDCATCHWEIGHTQUANTITY \[ | = | msdyn\_orderedcatchweightquantity |
-| PURCHASEORDERLINESTATUS | \>\> | msdyn\_purchaseorderlinestatus |
-| PURCHASEPRICEQUANTITY | = | msdyn\_purchasepricequantity |
-| RECEIVINGSITEID | = | msdyn\_receivingsiteid.msdyn\_siteid |
-| REQUESTEDSHIPPINGDATE | = | msdyn\_requestedshippingdate |
-| REQUESTERPERSONNELNUMBER | = | msdyn\_requesterpersonnelnumber.cdm\_workernumber |
-| PROCUREMENTPRODUCTCATEGORYNAME | \> | msdyn\_procurementproductcategory.msdyn\_name |
-| PROCUREMENTPRODUCTCATEGORYHIERACHYNAME | \> | msdyn\_procurementproductcategory.msdyn\_hierarchy.msdyn\_name |
-| CURRENCYCODE | \> | transactioncurrencyid.isocurrencycode |
-| CONFIRMEDDELIVERYDATE | = | msdyn\_confirmeddeliverydate |
-| DELIVERYADDRESSCITY | \> | msdyn\_deliveryaddresscountryregionid |
-| DELIVERYADDRESSSTATEID | \> | msdyn\_deliveryaddressstate |
-| DELIVERYADDRESSSTREET | \> | msdyn\_deliveryaddressstreet |
-| DELIVERYADDRESSSTREETNUMBER | \> | msdyn\_deliveryaddressstreetnumber |
-| DELIVERYADDRESSZIPCODE | \> | msdyn\_deliveryaddresszipcode |
-| FORMATTEDDELVERYADDRESS | \> | msdyn\_formatteddeliveryaddress |
-| PURCHASEUNITSYMBOL | = | msdyn\_unit.msdyn\_symbol |
-| RECEIVINGWAREHOUSEID | = | msdyn\_associatetowarehouse.msdyn\_warehouseidentifier |
-| DELIVERYADDRESSDESCRIPTION | \> | msdyn\_deliveryaddressdescription |
-| DELIVERYADDRESSNAME | \> | msdyn\_deliveryaddressname |
 
 \*) The product number is used for synchronization. This identifies the product as a SKU (including product dimensions). For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md).
 
 ### Product receipt header (msdyn\_purchaseorderreceipts)
 
-This template synchronizes data between Supply Chain Management and Dataverse.
-
-| Supply Chain Management | Map type | Dataverse |
-|---|---|---|
-| RECORDID | \> | msdyn\_recordid |
-| PRODUCTRECEIPTDATE | \> | msdyn\_datereceived |
-| DELIVERYADDRESSLATITUDE | \> | msdyn\_deliveryaddresslatitude |
-| DELIVERYADDRESSLONGITUDE | \> | msdyn\_deliveryaddresslongitude |
-| PURCHASEORDERNUMBER | \> | msdyn\_purchaseorder.msdyn\_name |
-| DELIVERYMODEID | \> | msdyn\_shipvia.msdyn\_name |
-| DELIVERYTERMSID | \> | msdyn\_deliveryterm.msdyn\_termscode |
-| ORDERVENDORACCOUNTNUMBER | \> | msdyn\_ordervendor.msdyn\_vendoraccountnumber |
-| REQUESTERPERSONNELNUMBER | \> | msdyn\_requesterpersonnel.cdm\_workernumber |
-| ISDELIVERYADDRESSPRIVATE | \> | msdyn\_isdeliveryaddressprivate |
-| DELIVERYADDRESSCOUNTRYREGIONID | \> | msdyn\_deliveryaddresscountryregionid |
-| DELIVERYADDRESSCOUNTYID | \> | msdyn\_deliveryaddresscountyid |
-| DELIVERYADDRESSSTATEID | \> | msdyn\_deliveryaddressstateid |
-| DELIVERYADDRESSZIPCODE | \> | msdyn\_deliveryaddresszipcode |
-| DELIVERYADDRESSNAME | \> | msdyn\_deliveryaddressname |
-| DELIVERYADDRESSTIMEZONE | \> | msdyn\_deliveryaddresstimezone |
-| DELIVERYADDRESSPOSTBOX | \> | msdyn\_deliveryaddresspostbox |
-| DELIVERYADDRESSSTREETNUMBER | \> | msdyn\_deliveryaddressstreetnumber |
-| DELIVERYADDRESSSTREET | \> | msdyn\_deliveryaddressstreet |
-| PRODUCTRECEIPTNUMBER | \> | msdyn\_name |
-| ATTENTIONINFORMATION | \> | msdyn\_note |
-| DELIVERYCITYINKANA | \> | msdyn\_deliverycityinkana |
-| DELIVERYSTREETINKANA | \> | msdyn\_deliverystreetinkana |
-| FORMATTEDDELIVERYADDRESS | \> | msdyn\_formatteddeliveryaddress |
-| DELIVERYADDRESSLOCATIONID | \> | msdyn\_deliveryaddresslocationid |
-| DELIVERYADDRESSCITY | \> | msdyn\_deliveryaddresscity |
-| DELIVERYADDRESSDESCRIPTION | \> | msdyn\_deliveryaddressdescription |
-| DELIVERYADDRESSDISTRICTNAME | \> | msdyn\_deliveryaddressdistrictname |
-| DELIVERYBUILDINGCOMPLIMENT | \> | msdyn\_deliverybuildingcompliment |
-| DELIVERYADDRESSDUNSNUMBER | \> | msdyn\_deliveryaddressdunsnumber |
-
 ### Product receipt line (msdyn\_purchaseorderreceiptproducts)
-
-This template synchronizes data between Supply Chain Management and Dataverse.
-
-| Supply Chain Management | Map type | Dataverse |
-|---|---|---|
-| RECORDID | \> | msdyn\_recordid |
-| DELIVERYADDRESSCOUNTRYREGIONID | \> | msdyn\_deliveryaddresscountryregionid |
-| DELIVERYADDRESSCOUNTYID | \> | msdyn\_deliveryaddresscountyid |
-| DELIVERYADDRESSSTATEID | \> | msdyn\_deliveryaddressstateid |
-| EXPECTEDDELIVERYDATE | \> | msdyn\_expecteddeliverydate |
-| EXTERNALITEMNUMBER | \> | msdyn\_externalitemnumber |
-| ITEMBATCHNUMBER | \> | msdyn\_itembatchnumber |
-| ITEMSERIALNUMBER | \> | msdyn\_itemserialnumber |
-| LINEDESCRIPTION | \> | msdyn\_linedescription |
-| ORDEREDPURCHASEQUANTITY | \> | msdyn\_orderedpurchasequantity |
-| PROCUREMENTPRODUCTCATEGORYNAME | \> | msdyn\_procurementproductcategory.msdyn\_name |
-| PROCUREMENTPRODUCTCATEGORYHIERARCHYNAME | \> | msdyn\_procurementproductcategory.msdyn\_hierarchy.msdyn\_name |
-| PRODUCTRECEIPTDATE | \> | msdyn\_productreceiptdate |
-| PRODUCTRECEIPTHEADERRECORDID | \> | msdyn\_purchaseorderreceipt.msdyn\_recordid |
-| PRODUCTRECEIPTNUMBER | \> | msdyn\_productreceiptnumber |
-| PURCHASEORDERLINENUMBER | \> | msdyn\_purchaseorderproduct.msdyn\_lineorder |
-| PURCHASEORDERNUMBER | \> | msdyn\_purchaseorderproduct.msdyn\_purchaseorder.msdyn\_name |
-| PURCHASEORDERNUMBER | \> | msdyn\_purchaseorder.msdyn\_name |
-| PURCHASEUNITSYMBOL | \> | msdyn\_purchaseunitsymbol.msdyn\_symbol |
-| RECEIVEDINVENTORYQUANTITY | \> | msdyn\_receivedinventoryquantity |
-| RECEIVEDINVENTORYSTATUSID | \> | msdyn\_receivedinventorystatusid |
-| RECEIVEDPURCHASEQUANTITY | \> | msdyn\_quantity |
-| RECEIVINGSITEID | \> | msdyn\_receivingsiteid.msdyn\_siteid |
-| RECEIVINGWAREHOUSEID | \> | msdyn\_associatetowarehouse.msdyn\_warehouseidentifier |
-| RECEIVINGWAREHOUSELOCATIONID | \> | msdyn\_receivingwarehouselocation.msdyn\_warehouselocationid |
-| RECEIVINGWAREHOUSEID | \> | msdyn\_receivingwarehouselocation.msdyn\_warehouse.msdyn\_warehouseidentifier |
-| REMAININGINVENTORYQUANTITY | \> | msdyn\_remaininginventoryquantity |
-| REMAININGPURCHASEQUANTITY | \> | msdyn\_remainingpurchasequantity |
-| PRODUCTNUMBER | \> | msdyn\_product.msdyn\_productnumber |
 
 ### Dataverse purchase order line soft deleted entity (msdyn\_purchaseorderproducts)
 
 This template synchronizes data between Supply Chain Management and Dataverse.
 
-A purchase order line in Supply Chain Management can only be soft-deleted when the purchase order has been confirmed or approved if change management is enabled. The record exists in the Supply Chain Management database with a marking as IsDeleted. Dataverse does not have a concept of soft delete so this information is important to synchronize to Dataverse to automatically delete lines from Dataverse when they are soft deleted in Supply Chain Management. Logic for deleting a line in Dataverse in this case is located in Supply Chain Management extended <!-- Mai: is this correct)? -->
-
-| Supply Chain Management | Map type | Dataverse |
-|---|---|---|
-| LINENUMBER | \> | msdyn\_lineorder |
-| PURCHASEORDERNUMBER | \> | msdyn\_purchaseorder.msdyn\_name |
-| ISDELETED | \> | msdyn\_issoftdeletedinscm |
+A purchase order line in Supply Chain Management can only be soft-deleted when the purchase order has been confirmed or approved if change management is enabled. The record exists in the Supply Chain Management database with a marking as IsDeleted. Dataverse does not have a concept of soft delete so this information is important to synchronize to Dataverse to automatically delete lines from Dataverse when they are soft deleted in Supply Chain Management. Logic for deleting a line in Dataverse in this case is located in Supply Chain Management extended 
 
 ## Mappings with logic
 
@@ -408,11 +220,8 @@ Microsoft Dynamics 365 Supply Chain Management includes a procurement data that 
 To sync the procurement data from Supply Chain Management:
 
 1. In Dataverse, go to **Inventory \> Purchase Order.**
-
 2. Select **New** to create a new purchase order or select an existing purchase order record.
-
 3. From the Purchase Order or Purchase Order line.
-
 4. Select **Sync** on the Action Pane.
 
 All fields from Dataverse/Field Service which are shared by Supply Chain Management will be synced.
@@ -420,7 +229,5 @@ All fields from Dataverse/Field Service which are shared by Supply Chain Managem
 When to use the **Sync** function:
 
 - Users should consider using the **Sync** function, when they make multiple changes to the same record in succession from the Dataverse-side.
-
 - If users are not sure if this might be the second successive change from the Dataverse-side, it may make sense to use the **Sync** function.
-
 - If users are getting an error about updating a value from Supply Chain Management, it may be resolve by triggering the sync function and then retrying their update on Dataverse.
