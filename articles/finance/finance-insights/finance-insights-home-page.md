@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance insights home page (preview)
-description: This topic walks through the prerequisites and the broad steps that are required to use a trial version of Finance insights.
+description: Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/20/2020
