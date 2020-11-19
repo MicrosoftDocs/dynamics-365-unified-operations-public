@@ -57,9 +57,6 @@ For more information about the Power BI Embedded service, see the [Power BI FAQ]
 ## Service availability
 **The Power BI Embedded service is automatically deployed and configured for all cloud-hosted, multi-box deployments.** Because the service relies on Microsoft Azure services, application analytical workspaces and reports are unavailable in one-box environments. The Power BI Embedded service is already available in most Azure datacenters. You can check the latest availability on the [Azure status](https://azure.microsoft.com/status/) page.
 
-> [!NOTE]
-> The Microsoft Dynamics 365 team is working on a solution that will enable analytical workspaces in one-box environments without requiring that customers host their own instance of the Power BI Embedded service. Watch for announcements on the [Dynamics 365 Roadmap](https://roadmap.dynamics.com) site.
-
 ## Frequently asked questions
 
 ### Can I customize the Power BI embedded reports?
