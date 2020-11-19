@@ -2,7 +2,7 @@
 # required metadata
 
 title: Number of books per journal
-description: This topic describes the relationship between journal and asset books when you create a fixed asset aquisition or depreciation proposal. You can define the maximum nunmber of books to be included per acquisition and for depreciation using the Number of books per journal parameter group. 
+description: This topic describes the relationship between journal and asset books when you create a fixed asset acquisition or depreciation proposal. You can define the maximum number of books to be included per acquisition and for depreciation using the Number of books per journal parameter group. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 11/19/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the relationship between journal and asset books when you create a fixed asset aquisition or depreciation proposal. You can define the maximum nunmber of books to be included per acquisition and for depreciation using the **Number of books per journal** parameter group. You can also define the maximum number of books to be included per acquisition and depreciation journal using the same parameter group. Aquisition and depreciation journals are created in a batch job. The **Number of books per journal** parameter helps you to distribute the number of asset books per acquisition and depreciation journal. You can access this parameter by in the **General** tab of the Fixed Assets parameters page (**Fixed assets > Setup > Fixed assets parameters**).
+This topic describes the relationship between journal and asset books when you create a fixed asset acquisition or depreciation proposal. You can define the maximum number of books to be included per acquisition and for depreciation using the **Number of books per journal** parameter group. You can also define the maximum number of books to be included per acquisition and depreciation journal using the same parameter group. Acquisition and depreciation journals are created in a batch job. The **Number of books per journal** parameter helps you to distribute the number of asset books per acquisition and depreciation journal. You can access this parameter by in the **General** tab of the Fixed Assets parameters page (**Fixed assets > Setup > Fixed assets parameters**).
 
 The default values are for an acquisition proposal is at least 10,000 books, and for a depreciation proposal, at least 2,000 books.
 
@@ -52,8 +52,8 @@ The batch processing excludes the closed books. Assumes there are 10 books withi
 > [!NOTE] 
 > The derived books are not considered in the maximum number of books per journal.
 
-The limit on the number of books is applied if duplicate asset IDs aren't don't exist in the same journal. But if the asset ID is the as the book ID, the number of books per journal could be exceeded to keep the asset ID in the same journal.
+The limit on the number of books is applied if duplicate asset IDs don't exist in the same journal. But if the asset ID is same the as the book ID, the number of books per journal could be exceeded to keep the asset ID in the same journal.
 
-Assumes, you have 5,001 fixed asset IDs along with three books that are associated to each fixed asset ID. Also assume that each asset ID posts to the same posting layer, and that you run depreciation for three consecutive months without summarization. The depreciation journal will be created thru a batch job, and the system will create seven journals with 667 fixed asset IDs and three books for each fixed asset ID. This results in 2,001 books. In three months, this results in 6,003 journal lines to maintain the same asset IDs in the same journal. One journal with 332 fixed asset IDs and three books for each fixed asset ID and 3 months this result 2988 lines.
+If there are 5,001 fixed asset IDs along with three books that are associated to each fixed asset ID. Also assume that each asset ID posts to the same posting layer, and that you run depreciation for three consecutive months without summarization. The depreciation journal will be created thru a batch job, and the system will create seven journals with 667 fixed asset IDs and three books for each fixed asset ID. This results in 2,001 books. In three months, this results in 6,003 journal lines to maintain the same asset IDs in the same journal. One journal with 332 fixed asset IDs and three books for each fixed asset ID and 3 months this result 2,988 lines.
 
  
