@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Reduce balance depreciation after split
 
-This topic describes the method that's used in Fixed assets to calculate depreciation after an asset has been split to another asset using the reduce balance method, the configured depreciation year in asset book is the fiscal year. For more information, see [Reduce balance depreciation](reduce-balance-depreciation.md) and [Split a fixed asset](tasks/split-fixed-asset.md). 
+This topic describes the method that's used in Fixed assets to calculate depreciation after an asset has been split to another asset using the reduce balance method. The configured depreciation year in the asset book is the fiscal year. For more information, see [Reduce balance depreciation](reduce-balance-depreciation.md) and [Split a fixed asset](tasks/split-fixed-asset.md). 
 
 When you split a fixed asset in fiscal period that's later than the period that the asset was acquired in, the reduced balance depreciation will account for the asset net book value (NBV) of the prior year, as well as the acquisition and depreciation adjustment transactions that were generated from the transaction that split the asset. 
 
