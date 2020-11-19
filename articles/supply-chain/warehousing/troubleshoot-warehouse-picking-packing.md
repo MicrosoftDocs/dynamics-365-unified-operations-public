@@ -83,7 +83,7 @@ You can't reduce picked quantities on a load.
 
 ### Issue resolution
 
-In earlier versions, you can't reduce picked quantities on a load. However, you can now unpick to a license plate–controlled location. You must specify both a **Location** value and a **License Plate ID** value in **Reduce picked quantity** on the load line.
+In earlier versions, you can't reduce picked quantities on a load. However, you can now unpick to a license plate–controlled location. You must specify both a **Location** value and a **License plate** value for the load line on the **Reduce picked quantity** page.
 
 ## Can I print a delivery note or packing content by warehouse?
 
@@ -99,11 +99,11 @@ When you print a document by using Print management settings, limit the scope (s
 
 ### Issue description
 
-When picking and shipping processes are enabled for advanced warehouse management, you can't cancel a packing slip after it's posted from a sales order.
+When picking and shipping processes are enabled for WMS, you can't cancel a packing slip after it's posted from a sales order.
 
 ### Issue resolution
 
-To correct posted packing slips for items that are enabled for advanced warehouse management, the posting must occur from the load, not from the order. Microsoft has evaluated this issue and has determined that it's a feature limitation. In general, a sales order that has been picked and shipped through warehouse management processes can be packing slip–updated from the load or shipment and the sales order document itself. However, if you packing slip–update the sales order from the shipment, packing slip reversal still can't be done from the load or sales order. Therefore, we recommend that you use the packing slip posting from the load. In this case, the reversal that must be done from the load will be enabled.
+To correct posted packing slips for items that are enabled for WMS, the posting must occur from the load, not from the order. Microsoft has evaluated this issue and has determined that it's a feature limitation. In general, a sales order that has been picked and shipped through warehouse management processes can be packing slip–updated from the load or shipment and the sales order document itself. However, if you packing slip–update the sales order from the sales order document, packing slip reversal still can't be done from the load or sales order. Therefore, we recommend that you use the packing slip posting from the load. In this case, the reversal that must be done from the load will be enabled.
 
 ## I receive the following error message: "Not enough work can be found for cluster."
 

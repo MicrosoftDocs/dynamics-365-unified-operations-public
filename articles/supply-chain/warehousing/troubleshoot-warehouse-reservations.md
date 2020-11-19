@@ -43,7 +43,7 @@ You can't unreserve inventory on a sales line, because there is open work agains
 
 ### Issue resolution
 
-Investigate whether open packing group work exists to bring the item from a packing station to another location (such as *Baydoor*). Review the **Work creation history log** and **Work details** to determine what is physically reserving the inventory, and then complete or delete the work to free up the reservation.
+Investigate whether open packing group work exists to bring the item from a packing station to another location (such as *Baydoor*). Review the records on the **Work creation history log** and **Work details** pages to determine what is physically reserving the inventory, and then complete or delete the work to free up the reservation.
 
 ## I receive the following error message: "Inventory quantity -%1 could not be updated due to insufficient inventory transactions for item %2...."
 

@@ -59,11 +59,11 @@ The **Default receipt location** field is blank for a transit warehouse of the "
 
 ### Issue description
 
-For a work template, you can't select *Inventory status change* in the **Work type** field in **Work template details**.
+For a work template, you can't select *Inventory status change* in the **Work type** column of the **Work template details** section.
 
 ### Issue resolution
 
-This behavior is by design. The *Inventory status change* work type is used only by system processes. It can't be configured. Because the list of work types is fixed as an enumeration, the extra entries can't be filtered out of the **Work template** drop-down menu.
+This behavior is by design. The *Inventory status change* work type is used only by system processes. It can't be configured. Because the list of work types is fixed as an enumeration, the extra entries can't be filtered out of the **Work type** drop-down menu.
 
 ## I receive the following error message: "The Quantity is not valid for unit 1%."
 
