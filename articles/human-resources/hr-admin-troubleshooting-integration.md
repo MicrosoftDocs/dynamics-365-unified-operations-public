@@ -38,7 +38,11 @@ This topic answers common questions associated about what data is synchronized w
 
 ## Can I edit the Dynamics 365 Talent application user in Power Apps?
 
-No. If you edit the Talent application user, the integration between Human Resources and Common Data Service might fail. The default settings for Talent are:
+No. If you edit the Talent application user, the integration between Human Resources and Common Data Service might fail. The following table shows the default settings for the Talent application user.
+
+| Full Name | Application ID | Azure AD Object ID | Application ID URI |
+| --- | --- | --- | --- |
+| Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
 ![Dynamics Application User](media/DynamicsApplicationUser.png)
 
