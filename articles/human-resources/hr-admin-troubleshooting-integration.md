@@ -36,10 +36,10 @@ ms.dyn365.ops.version: Human Resources
 
 This topic answers common questions associated about what data is synchronized when Dynamics 365 Human Resources is integrated with Dynamics 365 Finance.
 
-## Can I edit the Dynamics365 for Talent Application User in PowerApps?
+## Can I edit the Dynamics 365 Talent application user in Power Apps?
 
-No, the Dynamics365 for Talent Application User should not be edited. Editing this user can cause the integration between Dynamics 365 Human Resources and Common Data Service. 
-Below is the default settings for Dynamics365 for Talent Application
+No. If you edit the Talent application user, the integration between Human Resources and Common Data Service might fail. The default settings for Talent are:
+
 ![Dynamics Application User](media/DynamicsApplicationUser.png)
 
 ## Is all data synchronized or just some data entities?
