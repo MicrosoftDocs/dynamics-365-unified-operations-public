@@ -200,11 +200,11 @@ You can also open the **File states for the sources** page by selecting **Organi
 
 ## <a name="limitations">Limitations</a>
 
-The ER framework doesn't offer the possibility to initiate a new batch job that will execute a model mapping in unattended mode for data import. To do this, you must develop new logic so that the configured ER model mapping can be called from the application user interface (UI) to import data from inbound files. Therefore, some engineering work is required. 
+The ER framework doesn't offer the capability to initiate a new batch job that will execute a model mapping in unattended mode for data import. To do this, you must develop new logic so that the configured ER model mapping can be called from the application user interface (UI) to import data from inbound files. Therefore, some engineering work is required. 
 
-See the section, [Code to run a format mapping for data import](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) in the topic, [ER framework API changes for Application update 7.3](er-apis-app73.md) to learn more about the relevant ER API.
+To learn more about the relevant ER API, see the [Code to run a format mapping for data import](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) section in the [ER framework API changes for Application update 7.3](er-apis-app73.md) topic.
 
-Review the code of the `BankImport_RU` class of the `Application Suite` model to see how your custom logic can be implemented. This class extends the `RunBaseBatch` class. Pay attention to the `runER()` method where the `ERIModelMappingDestinationRun` object is created as the runner of an ER model mapping.
+Review the code in the `BankImport_RU` class of the `Application Suite` model to see how your custom logic can be implemented. This class extends the `RunBaseBatch` class. In particular, review the `runER()` method where the `ERIModelMappingDestinationRun` object is created as the runner of an ER model mapping.
 
 ## Additional resources
 
