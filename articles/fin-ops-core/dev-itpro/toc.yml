@@ -206,6 +206,8 @@
                     href: data-entities/dual-write/ledger-mapping.md            
                   - name: Integrated tax master
                     href: data-entities/dual-write/tax-mapping.md
+                - name: Integrate procurement in Supply Chain Management with Field Service
+                  href: data-entities/dual-write/scm-field-service-procurement.md
                 - name: Sync with the Dynamics 365 Supply Chain Management pricing engine on demand
                   href: data-entities/dual-write/pricing-engine.md
                 - name: Prospect to cash in dual-write
