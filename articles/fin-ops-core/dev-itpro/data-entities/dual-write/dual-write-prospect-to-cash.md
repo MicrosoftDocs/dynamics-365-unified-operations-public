@@ -103,7 +103,7 @@ If you sync from Supply Chain Management to Sales, you get the following result:
 
 ## Dual-write solution for Sales
 
-New fields have been added to the **Order** entity and appear on the page. Most of these fields appear on the **Integration** tab in Sales. To learn more about how the status fields are mapped refer to the documentation topic to [Set up the mapping for sales order status fields](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
+New fields have been added to the **Order** entity and appear on the page. Most of these fields appear on the **Integration** tab in Sales. To learn more about how the status fields are mapped refer to the documentation topic to [Set up the mapping for sales order status fields](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map)
 
 + The **Create Invoice** and **Cancel Order** buttons on the **Sales order** page are hidden in Sales.
 + The **Sales order status** value will remain **Active** to help ensure that changes from Supply Chain Management can flow to the sales order in Sales. To control this behavior, set the default **Statecode \[Status\]** value to **Active**.
