@@ -5,7 +5,7 @@ title: Preview of Dynamics 365 Supply Chain Management 10.0.16 (February 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.16. 
 author: kamaybac
 manager: tfehr
-ms.date: 10/13/2020
+ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,9 +44,9 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-- [Customizable shop floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - For more information, see [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md)
-- [Validate license plates on source document lines](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - For more information, see [Warehouse configuration overview](../warehousing/warehouse-configuration.md)
-- [Update the aging date of reused license plates](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/update-aging-date-reused-license-plates)<br> - For more information, see [Location directive inventory picking aging](../warehousing/location-directive-inventory-picking-aging.md)
+- [Customizable shop floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - For more information, see [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md).
+- [Validate license plates on source document lines](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - For more information, see [Warehouse configuration overview](../warehousing/warehouse-configuration.md).
+- [Update the aging date of reused license plates](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/update-aging-date-reused-license-plates)<br> - For more information, see [Location directive inventory picking aging](../warehousing/location-directive-inventory-picking-aging.md).
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
