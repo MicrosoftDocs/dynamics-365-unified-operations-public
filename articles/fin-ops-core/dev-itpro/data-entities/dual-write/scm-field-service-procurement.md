@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrate procurement in Supply Chain Management with Field Service through dual-write
-description: Supply Chain Management has robust procurement functionality. Field Service offers similar functionality to support the purchasing processes associated with the service motion. This integration supports purchase order creation and, in most cases, update from both applications.
+description: Supply Chain Management has robust procurement functionality. Field Service offers functionality to support the purchasing processes associated with the service motion. Dual-write integration supports purchase order creation and updates from both applications.
 author: mkirknel
 manager: tfehr
 ms.date: 11/11/2020
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -27,25 +26,25 @@ ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
-# Integrate procurement in Supply Chain Management with Field Service through dual-write
+# Integrate procurement in Supply Chain Management with Field Service
 
 [!include [banner](../../includes/banner.md)]
 
-Dynamics 365 Supply Chain Management has robust procurement functionality. Dynamics 365 Field Service offers similar functionality to support the purchasing processes associated with the service motion. This dual-write integration and the resulting cross-functional use-cases are enabled by detailed table mappings, supporting solution logic, with combined views and forms.
+Dynamics 365 Supply Chain Management provides robust procurement functionality. Dynamics 365 Field Service offers similar functionality to support the purchasing processes associated with the service motion. These functions are integrated through dual-write. The resulting cross-functional use-cases are enabled through table mappings, solution logic, views, and forms.
 
-This integration supports purchase order creation and, in most cases, update from both applications. However, Supply Chain Management controls pricing, addresses, and product receipt. This enables a number of powerful cross-functional use cases for organizations using both Field Service and Supply Chain Management to allow procurements to be initiated and tracked across both systems.
+This integration supports purchase order creation and, in most cases, updates from both applications. However, Dynamics 365 Supply Chain Management controls pricing, addresses, and product receipt. Several powerful cross-functional use cases are enabled for organizations using both Field Service and Dynamics 365 Supply Chain Management. These use cases allow procurements to be initiated and tracked across both systems.
 
-The following illustration shows the entities in each of the different system and how they are mapped to one another. Note that purchase orders in Field Service reference an *account*, while purchase orders in Supply Chain Management reference a *vendor*. To resolve this correctly, the system makes use of a reference to link vendors with accounts (see also [Integrated vendor master](vendor-mapping.md)). Other entities map directly as shown in the illustration.
+The following illustration shows the tables and entities in each system and how map to one another. Purchase orders in Field Service reference an *account* row, while purchase orders in Dynamics 365 Supply Chain Management reference a *vendor* row. To resolve this correctly, dual-write makes use of a reference to link *vendor* rows with *account* rows. For more information, see [Integrated vendor master](vendor-mapping.md).
 
-![Entity mappings](media/dual-write-entities.png "Entity mappings")
+![Mappings for procurement](media/dual-write-entities.png)
 
 ## Prerequisites
 
-To integrate Supply Chain Management with Field Service, you must be running the following versions of the relevant components:
+To integrate Dynamics 365 Supply Chain Management with Field Service, you must run the following versions of the components:
 
-- Field Service version 8.8.31.60 or higher for comprehensive purchase order integration
-- Dual-write version <!-- #### --> or higher (required to run the *One FS/SCM* solution) <!-- Mai: [@Rama Krishnamoorthy](mailto:ramasri@microsoft.com) [@Jitender Verma](mailto:Jitender.Verma@microsoft.com) can one of you help us with providing what version of DW is needed for procurement integration)? -->
-- Supply Chain Management version 10.0.14 or higher
+- Field Service version 8.8.31.60 or later for comprehensive purchase order integration
+- Dual-write version **missing** or later is required to run the *One Field Service / Dynamics 365 Supply Chain Management* solution.
+- Dynamics 365 Supply Chain Management version 10.0.14 or higher.
 
 ## Installation guidelines
 
