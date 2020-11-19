@@ -98,39 +98,37 @@ For information about how to set up and use cash flow forecasting, see [Enable c
 
 ### Enable budget proposals
 
-Follow the steps in [Enable budget proposals](enable-budget-proposal.md) to use a machine learning model with your organization's historical data to generate a budget proposal that can help you begin a budgeting process that is more effective than a manual process.
+The Budget proposals feature uses a machine learning model along with your organization's historical data to generate a budget proposal. The generated proposal can help you begin a budgeting process that is more effective and efficient than a manual process. For the specific steps to enable this feature, see  [Enable budget proposals](enable-budget-proposal.md). 
 
 ## Using Finance insights features
 
 ### Using Customer payment predictions
 
-The intelligent cash flow forecasting is built on top of existing cash flow forecasting feature in Dynamics 365 Finance. As a quick revision of existing cash flow forecasting please read: [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
+The intelligent cash flow forecasting is built on top of existing cash flow forecasting feature in Dynamics 365 Finance. To review the existing cash flow forecasting capability, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
 Customer payment predictions can help you collect proactively, learn how here: [Use Customer payment predictions](use-customer-payment-predictions.md).
 
-For information that can help you evaluate the effectiveness of the prediction model, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md). For information that can help you adjust the data that is used to build the prediction, to improve its effectiveness, see [Improve the prediction model](improve-model.md).
+For information that can help you evaluate the effectiveness of the prediction model after you've started using the feature, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md). For information that can help you adjust the data that is used to build the prediction and thereby improve its effectiveness, see [Improve the prediction model](improve-model.md).
 
-If you want to further understand the results from the AI model, please read: Understanding results of machine learning model: [Results of maching learning models](confusion-matrix.md).
+To learn more about the results of AI prediction models, see Understanding results of machine learning model: [Results of maching learning models](confusion-matrix.md).
 
-### Using cash flow feature
+### Using Cash flow forecasts
 
-Learn what’s new in cashflow forecasting here: What's new in cash flow forecasting: [Cash flow forecasts](cash-flow-forecast-intro.md).
+To learn about the new capabiities in Cash flow forecasts see [Cash flow forecast](cash-flow-forecast-intro.md).
 
-Learn how to import external data to include in your cashflow forecast here: External data: [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
+For information about importing external data to include in your cashflow forecast here, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
 
-Learn how payment prediction can help you more accurately estimated your cash position here: 
+The Cash flow forecast capability can help you more accurately estimate your cash position here: 
 
- - Learn how you can use forecasting using AI to project long term cash flow here: [Cash flow forecast overview](cash-position.md).
+ - For information about how to use an AI model to project long term cash flow, see [Cash flow forecasts overview](cash-position.md).
 
- - Learn how you can save cash flow positions and cash flow forecasts and compare snapshot to actuals, here: [Snapshots overview](payment-snapshots.md).
+ - For information about saving cash flow positions and cash flow forecasts as snapshots, and to compare a snapshot to actuals, see [Snapshots overview](payment-snapshots.md).
 
 ### Using Budget proposal
 
-Learn how you can accelerate budget creation using intelligent budget proposal here: [Budget proposals](budget-proposals.md). 
-
+For information about accelerating the creation of a budget, see [Budget proposals](budget-proposals.md). 
 
 Demo data for budget proposal:
-
 
 ## Feedback and support
 
