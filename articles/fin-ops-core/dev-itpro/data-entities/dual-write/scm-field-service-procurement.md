@@ -114,8 +114,8 @@ The following templates are available for integrating procurement related docume
 
 | Supply Chain Management | Field Service | Description |
 |---|---|---|
-| Purchase order header V2 | msdyn\_Purchaseorders | This entity contains the fields from representing the purchase order header. |
-| CDS purchase order line entity | msdyn\_PurchaseOrderProducts | This table contains the rows that represent lines on a purchase order.  The product number is used for synchronization. This identifies the product as a SKU (including product dimensions). For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md).|
+| Purchase order header V2 | msdyn\_Purchaseorders | This entity contains the fields from representing the purchase order header. |
+| CDS purchase order line entity | msdyn\_PurchaseOrderProducts | This table contains the rows that represent lines on a purchase order.  The product number is used for synchronization. This identifies the product as a SKU (including product dimensions). For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md).|
 | Product receipt header | msdyn\_purchaseorderreceipts | This entity contains the product receipt headers that are created when a product receipt is posted in Supply Chain Management. |
 | Product receipt line | msdyn\_purchaseorderreceiptproducts | This entity contains the product receipt lines that are created when a product receipt is posted in Supply Chain Management. |
 | CDS purchase order line soft deleted entity | msdyn\_purchaseorderproducts | This entity contains information about which purchase order lines that are soft deleted. A purchase order line in Supply Chain Management can only be soft-deleted when the purchase order has been confirmed or approved if change management is enabled. The record exists in the Supply Chain Management database with a marking as IsDeleted. Dataverse does not have a concept of soft delete so this information is important to synchronize to Dataverse to automatically delete lines from Dataverse when they are soft deleted in Supply Chain Management. Logic for deleting a line in Dataverse in this case is located in Supply Chain Management extended. |
@@ -125,7 +125,7 @@ The following templates are available for integrating procurement related docume
 The procurement integration extends the product mapping with the following logic to ensure that the **Field Service Product Type** column is set correctly in the products table in Dataverse:
 
 - If **Product Type** is *Product* and **Item model group, Stocked product** is *True*, then **Field Service Product Type** is *Inventory*.
-- If **Product type** is *Product* and **Item model group, Stocked product** is *False*, then **Field Service Product Type** is *Non-Inventory*.
+- If **Product type** is *Product* and **Item model group, Stocked product** is *False*, then **Field Service Product Type** is *Non-Inventory*.
 - If **Product Type** is *Service*, then **Field Service Product Type** is *Service*.
 
 In addition, there is logic in Dataverse that maps vendors with their related accounts. It sets the default *Invoice Vendor Account*. On create, server-side plug-in logic defaults the *Invoice Vendor Account* from the Account's related Vendor. Vendor has a reference to Invoice Account that is used to populate this value.
@@ -152,53 +152,47 @@ In addition, there is logic in Dataverse that maps vendors with their related ac
 
 The status for a purchase order in Field Service is different from the status in Supply Chain Management.
 
-Field service Purchase order and purchase order product statuses
+### Field Service Purchase order and purchase order product statuses
 
 | Header – System status | Header - Approval status | Item status |
 |---|---|---|
 | `Draft`<br>`Submitted`<br>`Cancelled`<br>`Product received`<br>`Billed` | `Null`<br>`Approved`<br>`Rejected` | `Pending`<br>`Received`<br>`Cancelled` |
 
-Supply Chain Management purchase order and purchase order line statuses.
+### Supply Chain Management purchase order and purchase order line statuses
 
-| Header – documents status | Header - Approval status | Line status | Line approval status\* |
+Line approval status is only active when there is a line workflow.
+
+| Header – documents status | Header - Approval status | Line status | Line approval status |
 |---|---|---|---|
-| Open Order (Back order)<br>Received<br>Invoiced<br>`Cancelled` | Draft<br>In Review<br>Approved<br>Rejected<br>In External Review<br>Confirmed<br>Finalized | Open Order (back order)<br>Received<br>Invoiced<br>`Cancelled` | Not Submitted<br>In Review<br>Approved<br>Rejected |
+| `Open Order (Back order)`<br>`Received`<br>`Invoiced`<br>`Cancelled` | `Draft`<br>`In Review`<br>`Approved`<br>`Rejected`<br>`In External Review`<br>`Confirmed`<br>`Finalized` | `Open Order (back order)`<br>`Received`<br>`Invoiced`<br>`Cancelled` | `Not Submitted`<br>`In Review`<br>`Approved`<br>`Rejected` |
 
- \* Line approval status is only active when there is a line workflow
+The following rules are applied to the status fields:
 
-Statuses in Supply Chain Management cannot be updated from Field Service.
-
-However statuses in Field Service will in some cases be updated when the purchase order status in Supply Chain Management changes.
-
-When the purchase order in Supply Chain Management is under change management and processing a change, this is when **Approval** status is Draft or In Review. In this case the Field Service approval status will be set to **Null**
-
-When the purchase order approval status in Supply Chain Management is set to **Approved, In External review, Confirmed or Finalized** the Field Service purchase order approval status will be set to **Approved**
-
-When the purchase order approval status in Supply Chain Management is set to **Rejected** the Field Service purchase order approval status will be set to **Rejected**
-
-When the document header status in Supply Chain Management changes to **Open order (Back order)** and the Field Service purchase order status is **Draft** or `Cancelled` then the Fields service purchase order status will change to **Submitted**.
-
-When the document header status in Supply Chain Management changes to `Cancelled` there are no purchase order receipt products in Field Service associated with the purchase order (Via purchase order products), then the field service System status is set to `Cancelled`.
-
-When purchase order line status in Supply Chain Management is `Cancelled` then field service purchase order product status should be `Cancelled`. In addition, when Purchase order Line Status in Supply Chain Management is changed from **Canceled** to **Back Order**, then the Purchase Order Product Item Status in Field service should be updated to **Pending**
++ The status in Supply Chain Management cannot be updated from Field Service. However the status in Field Service will in some cases be updated when the purchase order status in Supply Chain Management changes.
++ When the purchase order in Supply Chain Management is under change management and processing a change, this is when `Approval` status is `Draft` or `In Review`. In this case the Field Service approval status will be set to `Null`.
++ If the purchase order approval status in Supply Chain Management is set to `Approved`, `In External review`, `Confirmed`, or `Finalized`, then the Field Service purchase order approval status will be set to `Approved`.
++ When the purchase order approval status in Supply Chain Management is set to `Rejected` the Field Service purchase order approval status will be set to `Rejected`.
++ When the document header status in Supply Chain Management changes to `Open order (Back order)` and the Field Service purchase order status is `Draft` or `Cancelled` then the Fields service purchase order status will change to `Submitted`.
++ When the document header status in Supply Chain Management changes to `Cancelled` there are no purchase order receipt products in Field Service associated with the purchase order (Via purchase order products), then the field service System status is set to `Cancelled`.
++ When purchase order line status in Supply Chain Management is `Cancelled` then field service purchase order product status should be `Cancelled`. In addition, when Purchase order Line Status in Supply Chain Management is changed from `Cancelled` to `Back Order`, then the Purchase Order Product Item Status in Field service should be updated to `Pending`.
 
 ##  <a id="sync-procurement"></a>Sync with the Dynamics 365 Supply Chain Management procurement data on demand
 
-Microsoft Dynamics 365 Supply Chain Management includes a procurement data that handles trade agreements, discounts, and many other scenarios which rely on secondary processes within Supply Chain Management. The procurement engine uses complex rules to determine the best price for a given purchase order. When you use dual-write, data is not always kept synchronous across the two machines, especially in scenarios where the record was created or updated from Dataverse and may trigger follow-on processes in Supply Chain Management.
+Dynamics 365 Supply Chain Management includes a procurement data that handles trade agreements, discounts, and other scenarios that rely on secondary processes within Supply Chain Management. The procurement engine uses complex rules to determine the best price for a given purchase order. When you use dual-write, data is not always kept synchronous across the two machines, especially in scenarios where the record was created or updated from Dataverse and may trigger follow-on processes in Supply Chain Management.
 
 ## Sync the procurement data from Supply Chain Management
 
 To sync the procurement data from Supply Chain Management:
 
-1. In Dataverse, go to **Inventory \> Purchase Order.**
-2. Select **New** to create a new purchase order or select an existing purchase order record.
+1. In Dataverse, go to **Inventory \> Purchase Order.**
+2. Select **New** to create a new purchase order or select an existing purchase order record.
 3. From the Purchase Order or Purchase Order line.
-4. Select **Sync** on the Action Pane.
+4. Select **Sync** on the Action Pane.
 
-All fields from Dataverse/Field Service which are shared by Supply Chain Management will be synced.
+All fields from Dataverse and Field Service which are shared by Supply Chain Management will be synced.
 
 When to use the **Sync** function:
 
-- Users should consider using the **Sync** function, when they make multiple changes to the same record in succession from the Dataverse-side.
-- If users are not sure if this might be the second successive change from the Dataverse-side, it may make sense to use the **Sync** function.
-- If users are getting an error about updating a value from Supply Chain Management, it may be resolve by triggering the sync function and then retrying their update on Dataverse.
+- You should consider using the **Sync** function, when you make multiple changes to the same record in succession from Dataverse.
+- If you are not sure if this might be the second successive change from the Dataverse, it may make sense to use the **Sync** function.
+- If you are getting an error about updating a value from Supply Chain Management, it may be resolved by triggering the sync function and then retrying the update in Dataverse.
