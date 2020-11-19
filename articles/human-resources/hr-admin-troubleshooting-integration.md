@@ -44,7 +44,7 @@ No. If you edit the Talent application user, the integration between Human Resou
 | --- | --- | --- | --- |
 | Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Dynamics Application User](media/DynamicsApplicationUser.png)
+![Default settings for Talent application user](media/DynamicsApplicationUser.png)
 
 ## Is all data synchronized or just some data entities?
 
