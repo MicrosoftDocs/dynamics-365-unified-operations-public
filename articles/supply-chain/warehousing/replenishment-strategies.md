@@ -2,7 +2,7 @@
 # required metadata
 
 title: Replenishment strategies
-description: The replenishment strategy on the wave demand replenishment template lines allows for users to choose how to do replenishment. 
+description: This topic provides information about replenishment strategies and explains how you can use the Replenishment strategy field on wave demand replenishment template lines to select how replenishment is done.
 author: mirzaab
 manager: tfehr
 ms.date: 10/29/2020
@@ -31,88 +31,92 @@ ms.dyn365.ops.version: Release 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-The templates defined on the **Replenishment templates** page include wave demand replenishment template lines that let you control how replenishment is done. Each line now provides a **Replenishment strategy** setting.
+The templates that are defined on the **Replenishment templates** page include wave demand replenishment template lines that let you select how replenishment is done. Each line now includes a **Replenishment strategy** field.
 
-The *Wave demand quantity* strategy is the default strategy, and is the replenishment strategy that was used before the introduction of the **Replenishment strategy** field. It uses the replenishment location directives to find locations that could be replenished and replenishes them until the demand is covered.
+The *Wave demand quantity* strategy is the default strategy. It's the replenishment strategy that was used before the introduction of the **Replenishment strategy** field. It uses the replenishment location directives to find locations that can be replenished. It then replenishes those locations until the demand is covered.
 
-The *Maximum location capacity* strategy introduces some new functionality. This strategy uses the location directives to find locations that could be replenished, and it will replenish them until the demand is covered. It differs from the *Wave demand quantity* strategy in that all the replenished locations are replenished to the maximum of their capacity, as defined by the location stocking limits. The *Maximum location capacity* strategy tries to create work to bring the requested quantity plus some extra quantity to fill the locations being replenished. Sometimes that won't be possible, such as when the bulk locations don't have enough inventory to cover the extra quantity. In these cases, the system will detect the failure and try to recover.
+The *Maximum location capacity* strategy introduces some new functionality. Like the *Wave demand quantity* strategy, this strategy uses the replenishment location directives to find locations that can be replenished, and then it replenishes those locations until the demand is covered. It differs from the *Wave demand quantity* strategy in that all the replenished locations are replenished to their maximum capacity, as defined by the location stocking limits. The *Maximum location capacity* strategy tries to create work to bring in the requested quantity, plus some extra quantity, to fill the locations that are being replenished. However, in some cases, that attempt might fail. For example, the bulk locations might not have enough inventory to cover the extra quantity. In these cases, the system detects the failure and tries to recover.
 
-One example where the *Maximum location capacity* strategy would be preferred over the *Wave demand quantity* strategy is during peak season. Here, some items could be selling at high volume, so you might want to proactively replenish the relevant picking locations as much as possible to reduce the number of work IDs created for replenishment.
+Peak season is one example of a situation where the *Maximum location capacity* strategy is preferable to the *Wave demand quantity* strategy. During peak season, some items might be selling at high volume. Therefore, you might want to proactively replenish the relevant picking locations as much as possible, to reduce the number of work IDs that are created for replenishment.
 
 > [!IMPORTANT]
-> For the *Maximum location capacity* strategy to work, you must redefine the stocking limits for the relevant location. Otherwise, the strategy will work just like the *Wave demand quantity* strategy.
+> To take full advantage of the *Maximum location capacity* strategy, you must redefine the stocking limits for the relevant locations. Otherwise, this strategy works just like the *Wave demand quantity* strategy.
 
-## Enable the Replenish to max based on stocking limits feature
+## Turn on the Replenish to max based on stocking limits feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use this feature, it must be turned on in your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of this feature and turn it on if it's required. There, the feature is listed in the following way:
 
-- **Module** - *Warehouse management*
-- **Feature name** - *Replenish to max based on stocking limits*
+- **Module:** *Warehouse management*
+- **Feature name:** *Replenish to max based on stocking limits*
 
 ## Set up replenishment strategies
 
-Access the templates by going to **Warehouse management \> Setup \> Replenishment \> Replenishment templates**. Select or create a wave demand replenishment template with a **Replenishment type** of *Wave demand*. Then set up its replenishment template lines in the **Replenishment template details** section. For each line, select the **Replenishment strategy** you want to use.
+To access the templates, go to **Warehouse management \> Setup \> Replenishment \> Replenishment templates**. In the **Overview** section, select or create a wave demand replenishment template where the **Replenishment type** field is set to *Wave demand*. Then set up the replenishment template lines in the **Replenishment template details** section. For each line, in the **Replenishment strategy** field, select the replenishment strategy that you want to use.
 
-![Replenishment template](media/ReplenTempWaveDmdMaxLocCap.png "Replenishment template")
+![Replenishment templates page](media/ReplenTempWaveDmdMaxLocCap.png "Replenishment templates page")
 
-If you don't see the **Replenishment strategy** column in the grid in the **Replenishment template details** section, make sure that the feature has been enabled and that the selected replenish template has a **Replenishment type** of *Wave demand*.
+If the **Replenishment strategy** column doesn't appear in the grid in the **Replenishment template details** section, make sure that the feature has been turned on, and that the selected replenishment template has a replenishment type of *Wave demand*.
 
 > [!NOTE]
-> The default strategy is *Wave demand quantity*. This means you only need to update the replenishment template lines where you want to use the *Maximum location capacity* strategy.
+> The *Wave demand quantity* strategy is the default strategy. Therefore, you just have to update the replenishment template lines where you want to use the *Maximum location capacity* strategy instead.
 
 ## Example scenarios
 
 ### Example 1
 
-In this example, we assume that there is only one replenishment template with only one replenishment template line.
+For this example, there is only one replenishment template that has only one replenishment template line.
 
-We create a sales order for 130 pcs of item A0001. Before we release to warehouse, the setup of the warehouse is as follows:
+You create a sales order for 130 pieces (pcs) of item A0001. Before you release the order to the warehouse, the warehouse is set up in the following way:
 
-- There is only one bulk location with 500 pcs available on-hand inventory.
-- There are three pick locations, which have stocking limits of 100 pcs. (Remember that stocking limits are required for the *Maximum location capacity* strategy.) 
+- There is only one bulk location, and it has 500 pcs of available on-hand inventory.
+- There are three pick locations, each of which has a stocking limit of 100 pcs. (Remember that stocking limits are required for the *Maximum location capacity* strategy.)
 - The replenishment put locations are the same as the sales pick locations.
-- The replenishment unit is in boxes (1 Box = 20 pcs).
+- The replenishment unit is a box (1 box = 20 pcs).
 
-At the time of the order, the on-hand inventories at the sales pick locations are:
+At the time of the order, the following inventory is on hand at the sales pick locations:
 
-- Pick-001: 20 pcs (1 Box)
-- Pick-002: 0 pcs
-- Pick-003: 0 pcs
+- **Pick-001:** 20 pcs (1 box)
+- **Pick-002:** 0 pcs
+- **Pick-003:** 0 pcs
 
 Initially, the replenishment strategy is set to *Wave demand quantity*.
 
-After releasing the sales order to the warehouse and wave processing runs for the wave, we get the following replenishment work:
+After you release the sales order to the warehouse, and wave processing runs for the wave, you get the following replenishment work:
 
-- Replenishment work 1: Pick 4 boxes from bulk and put them at location pick-001
-- Replenishment work 2: Pick 2 boxes from bulk and put them at location pick-002
+- **Replenishment work 1:** Pick 4 boxes from the bulk location, and put them in location pick-001.
+- **Replenishment work 2:** Pick 2 boxes from the bulk location, and put them in location pick-002.
 
-We get two replenishment work IDs because we need to replenish two different locations, and multi-puts are not supported.
+You get two replenishment work IDs because you must replenish two locations, and multi-puts aren't supported.
 
-If the replenishment strategy were set to *Maximum location capacity*, we would get the following replenishment work:
+If you set the replenishment strategy to *Maximum location capacity* instead, you get the following replenishment work:
 
-- Replenishment work 1: Pick 4 boxes from bulk and put them at location pick-001
-- Replenishment work 2: Pick 5 boxes from bulk and put them at location pick-002
+- **Replenishment work 1:** Pick 4 boxes from the bulk location, and put them in location pick-001.
+- **Replenishment work 2:** Pick 5 boxes from the bulk location, and put them in location pick-002.
 
 [![Example 1](media/ReplenTemp_example_1.png "Example 1")](media/ReplenTemp_example_1_large.png)
 
 ### Example 2
 
-To see what would happen when there isn't enough inventory in the bulk location to cover the extra quantity, consider the same scenario as above, but with the difference that the bulk location holds 160 pcs (8 Boxes).
+This example shows what happens when the bulk location doesn't have enough inventory to cover the extra quantity. It uses the same scenario as example 1, but the bulk location has 160 pcs (8 boxes).
 
-The *Wave demand quantity* strategy would create the same work as before. However, the *Maximum location capacity* strategy would try to create the work IDs as before, so it could fail. At that point the system would try to recover.
+The *Wave demand quantity* strategy creates the same work that it did in example 1.
 
-Based on whether the **Allow split** option is set on the location directives for replenishment picking, the following two outcomes are possible. If **Allow split** is set to *Yes*, then the following replenishment work would be created:
+However, because the *Maximum location capacity* strategy tries to create the work IDs as it did in example 1, it might fail. At that point, the system tries to recover.
 
-- Replenishment work 1: Pick 4 boxes from bulk and put them at location pick-001
-- Replenishment work 2: Pick 4 boxes from bulk and put them at location pick-002
+Depending on the setting of the **Allow split** option on the location directives for replenishment picking, two outcomes are possible:
 
-If **Allow split** is set to *No*, then the following replenishment work would be created:
+- If the **Allow split** option is set to *Yes*, the following replenishment work is created:
 
-- Replenishment work 1: Pick 4 boxes from bulk and put them at location pick-001
-- Replenishment work 2: Pick 2 boxes from bulk and put them at location pick-002
+    - **Replenishment work 1:** Pick 4 boxes from the bulk location, and put them in location pick-001.
+    - **Replenishment work 2:** Pick 4 boxes from the bulk location, and put them in location pick-002.
 
-The reason for the different results has to do with the information that is available when we create the work. When **Allow split** is set on the location directives for replenishment picks, we know that we managed to find 160 pcs, so we can create work for that. On the other hand, when we don't have **Allow split** enabled, then we don't know of the existence of the 160 pcs. Since the extra quantity that we decided to replenish was 3 boxes, we drop them, and we try again the original quantity.
+- If the **Allow split** option is set to *No*, the following replenishment work is created:
+
+    - **Replenishment work 1:** Pick 4 boxes from the bulk location, and put them in location pick-001.
+    - **Replenishment work 2:** Pick 2 boxes from the bulk location, and put them in location pick-002.
+
+The outcomes differ because of the information that is available when you create the work. When the **Allow split** is set to *Yes* on the location directives for replenishment picking, you know that you managed to find 160 pcs. Therefore, you can create work for that quantity. However, when the **Allow split** option is set to *No*, you don't know about the existence of the 160 pcs. Because the extra quantity that you decided to replenish was 3 boxes, you drop that extra quantity and try the original quantity again.
 
 [![Example 2](media/ReplenTemp_example_2.png "Example 2")](media/ReplenTemp_example_2_large.png)
 
-So, to get the maximum possible quantity to the replenished locations, **Allow split** should be enabled on the location directives for replenishment picks.
+Therefore, to get the maximum quantity to the replenished locations, you should set the **Allow split** option to *Yes* on the location directives for replenishment picking.
