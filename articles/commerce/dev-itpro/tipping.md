@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tips support in payments SDK
+title: Support for tipping in payments SDK
 description: This topic describes support in the payments software development kit (SDK) for accepting tips on payment terminals.
 author: rubendel
 manager: annbe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Tips support in the POS payments SDK
+# Support for tipping in the POS payments SDK
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,7 +51,7 @@ Tipping is very common in certain locales and industries. For example, in quick 
 
 While this feature adds support for tipping at the payments SDK level, it does not include support for other critical aspects of tipping support. For example, reporting to indicate tip payouts at the end of shifts, the ability to pool tips, and the ability to report tips for payroll. To enable full tipping support, those capabilities must be implemented with extensions. 
 
-For more information about creating payment terminal integrations and SDK references in this article, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
+For more information about creating payment terminal integrations and SDK references in this article, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
 
 ### Prerequisites
 
@@ -70,7 +70,7 @@ If **isTippingEnabled** is set to **True** and the cutomer chooses a tip on the 
 
 ### Tipping support for the Adyen connector
 
-Tip support is included with the Adyen connector. Customization will be required to set the **isTippingEnabled** variable to **True** when the authorization response is passed to the connector, but if that is done and the customer selects a tip on the device, then the tip will be returned in the **TipAmount** field of the authorization response.
+Tip support is included with the Adyen connector. Customization is required to set the **isTippingEnabled** variable to **True** when the authorization response is passed to the connector, but if that is done and the customer selects a tip on the device, then the tip will be returned in the **TipAmount** field of the authorization response.
 
 To prompt the customer to select a tip on the Adyen terminal, the terminal must be configured for tipping. This is done through the Adyen customer area. To enable tipping, navigate to the **Point of Sale** tab in the Adyen portal. Tipping can be enabled by device or through the fleet wide **Terminal settings** option. Within the settings of both the individual terminal or fleet wide teriminal settings, tipping is enabled through the **Payment features** tab. Once tipping is enabled on your Adyen device, settings on the device will need to be updated for the change to take effect. 
 
@@ -80,7 +80,7 @@ It is recommended that a header-level charge is used to add the tip amount to th
 
 ## Additional resources
 
-- [Adyen connector overview](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=10-0-14)
-- [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/end-to-end-payment-extension)
+- [Adyen connector overview](adyen-connector?tabs=10-0-14.md)
+- [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
 
 
