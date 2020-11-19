@@ -33,7 +33,7 @@ This integration supports purchase order creation and, in most cases, updates fr
 
 The following illustration shows the tables and entities in each system and how map to one another. Purchase orders in Field Service reference an *account* row, while purchase orders in Dynamics 365 Supply Chain Management reference a *vendor* row. To resolve this correctly, dual-write makes use of a reference to link *vendor* rows with *account* rows. For more information, see [Integrated vendor master](vendor-mapping.md).
 
-![Mappings for procurement](media/dual-write-entities.png)
+![Mappings for procurement](media/scm-field-service-tables.png)
 
 ## Prerequisites
 
