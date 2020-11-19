@@ -80,9 +80,12 @@ This limitation applies to only the initial sync from Common Data Service for en
 5 Attempts to get data from https://XXXX.azure-apim.net/apim... Failed
 ```
 
-As a workaround you can split the initial sync in to 3 steps. In the first step, remove some of the lookup fields from the dual-write entity map that are not mandatory and bring the number of lookups to 10. Once the lookup fields are removed, save the map and do the initial sync. Once the initial sync for the first step is successful, add the remaining lookup fields and remove the lookup fields that got initial synced in first step. Once again make sure the number of lookup fields is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup fields are initial synced. Now add all the lookup fields back to the map, save the map and run the map with skip initial sync. This will enable the map for live sync mode.
+As a workaround you can split the initial sync into these steps:
 
-
+1. Remove some of the lookup fields from the dual-write entity map that are not mandatory and bring the number of lookups to 10. 
+2. After the lookup fields are removed, save the map and do the initial sync. 
+3. After the initial sync for the first step is successful, add the remaining lookup fields and remove the lookup fields that were initial synced in first step. Once again make sure the number of lookup fields is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup fields are synced. 
+3. Add all the lookup fields back to the map, save the map and run the map with skip initial sync. This will enable the map for live sync mode.
 
 ### 5-minute limit for Finance and Operations data export
 
