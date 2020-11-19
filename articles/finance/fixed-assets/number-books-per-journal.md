@@ -38,19 +38,17 @@ This topic describes the relationship between journal and asset books when you c
 
 The default values are for an acquisition proposal is at least 10,000 books, and for a depreciation proposal, at least 2,000 books.
 
-Assume that there are 4000 fixed assets, and each asset has two associated books, one book is posting to the current layer and the other book is posting to tax layer.
-
-Acquiring 4000 fixed assets thru batch processing. The batch job creates one fixed asset acquisition journal contains 10,000 asset books.
+If there are 4,000 fixed assets and each asset has two associated books, one book will post to the current layer, and the other book will post to the tax layer. If you create 4,000 fixed assets thru batch processing, the batch job that creates one fixed asset acquisition journal will contain 10,000 asset books.
 
 > [!NOTE] 
-> The created journal will remain as in use till the batch job finish.
+> The created journal will remain in use until the batch job finishes.
 
-Run depreciation for the same set of acquired assets thru batch processing. The batch job creates two depreciation journals, each journal consists of 2000 asset book.
+You can run depreciation for the same set of acquired assets thru batch processing. The batch job creates two depreciation journals. Each journal consists of 2c000 asset books.
 
-The batch processing excludes the closed books. Assumes there are 10 books within the first 2000 books have been closed, while running the batch job for depreciation the first journal will contain associated books to fixed assets from 1 to 2011, and the second journal will contain associated book to fixed asset 2012 till 4000.
+The batch processing job excludes closed books. For example, assume that there are 10 closed books within the first 2,000, in a batch job for depreciation. The first journal will contain books that are associated with fixed assets, numbered from 1 to 2011. The second journal will contain books that are associated with fixed assets numbered 2012 through 4000.
 
 > [!NOTE] 
-> The derived books are not considered in the maximum number of books per journal.
+> The derived books are not included in the maximum number of books per journal.
 
 The limit on the number of books is applied if duplicate asset IDs don't exist in the same journal. But if the asset ID is same the as the book ID, the number of books per journal could be exceeded to keep the asset ID in the same journal.
 
