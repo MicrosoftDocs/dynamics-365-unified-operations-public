@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable customer payment predictions (preview)
-description: This topic explains how to turn on and configure the Customer payment predictions feature in Finance Insights.
+description: This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/27/2020
@@ -35,17 +35,17 @@ ms.dyn365.ops.version: AX 10.0.12
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains how to turn on and configure the Customer payment predictions feature in Finance Insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Financial insights parameters** page. This topic also includes information that can help you effectively use the feature.
+This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Financial insights parameters** page. This topic also includes information that can help you effectively use the feature.
 
 > [!NOTE]
-> Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance Insights](configure-for-fin-insites.md) topic.
+> Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) topic.
 
 1. Use information from the environment page in Microsoft Dynamics Lifecycle Services (LCS) to connect to the primary instance of Azure SQL for that environment. Run the following Transact-SQL (T-SQL) command to turn on flights for the sandbox environment. (You might have to turn on access for your IP address in LCS before you can connect remotely to Application Object Server \[AOS\].)
 
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
 
     > [!NOTE]
-    > If your deployment of Microsoft Dynamics 365 Finance is a Service Fabric deployment, you can skip this step. The Finance Insights team should already have turned on the flight for you. If you don't see the feature in the **Feature management** workspace, or if experience issues when you try to turn it on, contact <fiap@microsoft.com>.
+    > If your deployment of Microsoft Dynamics 365 Finance is a Service Fabric deployment, you can skip this step. The Finance insights team should already have turned on the flight for you. If you don't see the feature in the **Feature management** workspace, or if experience issues when you try to turn it on, contact <fiap@microsoft.com>.
 
 2. Turn on the Customer payment insights feature:
 
@@ -57,7 +57,7 @@ This topic explains how to turn on and configure the Customer payment prediction
 
 3. Configure the Customer payment insights feature:
 
-    1. Go to **Credit and collections \> Setup \> Finance Insights \> Finance insights parameters**.
+    1. Go to **Credit and collections \> Setup \> Finance insights \> Finance insights parameters**.
 
         [![Financial insights parameters page before the feature is configured](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
@@ -152,7 +152,7 @@ The data in the **Top factors** section, and on the **Customer insights** and **
 
 ## Improving the accuracy of payment predictions
 
-You can view the accuracy of payment predictions by going to **Credit and collections \> Setup \> Finance Insights \> Finance Insights parameters**. On the **Customer payment insights** tab, the **Prediction model** section shows the accuracy of the prediction model as a percentage.
+You can view the accuracy of payment predictions by going to **Credit and collections \> Setup \> Finance insights \> Finance insights parameters**. On the **Customer payment insights** tab, the **Prediction model** section shows the accuracy of the prediction model as a percentage.
 
 [![Accuracy of payment predictions](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
@@ -162,7 +162,7 @@ If you aren't satisfied with the accuracy, select the **Improve model accuracy**
 
 ## Release details
 
-Finance Insights public preview is available to try for deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
+Finance insights public preview is available to try for deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
 
 Public preview features can and should be turned on only in Tier-2 sandbox environments. Setup and AI models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
 
