@@ -50,6 +50,32 @@ The following features are included in this release. Some of the listed features
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
+## New and updated documentation resources
+
+We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
+
+- [Attribute-based sales prices for constraint-based product configuration](../pim/attribute-based-product-configurator.md)
+- [Automatic allocation of charges](../procurement/automatic-charges-allocation.md)
+- [Hazardous materials overview](../pim/hazmat-overview.md) (and related topics)
+- [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md)
+- [Purchasing cXML Enhancements](../procurement/purchasing-cxml-enhancements.md)
+- [Troubleshoot cost management](../cost-management/troubleshoot-costmanagement.md)
+- [Troubleshoot master planning](../master-planning/troubleshoot-masterplanning.md)
+- [Troubleshoot the product configurator](../pim/troubleshooting-productconfigurator.md)
+- [Troubleshoot product information](../pim/troubleshooting-productinformation.md)
+- [Troubleshoot procurement and sourcing workflows](../procurement/troubleshoot-procurementworkflows.md)
+- [Troubleshoot purchase orders](../procurement/troubleshoot-purchaseorders.md)
+- [Troubleshoot prices, discounts, agreements, and rebates](../procurement/troubleshooting-pricediscountagreements.md)
+- [Troubleshoot product receipts and invoicing](../procurement/troubleshooting-productreceiptinvoicing.md)
+- [Troubleshoot discrete manufacturing](../production-control/troubleshoot-discretemanufacturing.md)
+- [Troubleshoot process manufacturing](../production-control/troubleshoot-processmanufacturing.md)
+- [Troubleshoot sales orders](../sales-marketing/troubleshooting-sales.md)
+- [Troubleshoot sales quotations](../sales-marketing/troubleshooting-salesquotation.md)
+- [Troubleshoot warehouse app connection issues](../warehousing/troubleshoot-warehouse-app-connection.md)
+- [Putaway clusters](../warehousing/putaway-clusters.md)
+- [Work split](../warehousing/work-split.md)
+- [Work with location directives](../warehousing/create-location-directive.md)
+
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
