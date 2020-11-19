@@ -2556,6 +2556,8 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+        - name: VAT declaration with registers (JPK_V7M, VDEK)
+          href: localizations/emea-pol-vdek.md
       - name: Qatar
         items: 
         - name: Qatar overview
