@@ -36,7 +36,7 @@ This topic provides links to documentation resources for Saudi Arabia.
 
 - [Sales tax](apac-sau-sales-tax.md)
 - [Zakat reporting](emea-sau-zakat-reporting.md)
-- [Allocate bank document charges to shipment](APAC-SAU-Allocate-bank-document-charges-to-the-shipment.md)
+- [Allocate bank document charges to a shipment](APAC-SAU-Allocate-bank-document-charges-to-the-shipment.md)
 
 ## Additional resources
 
