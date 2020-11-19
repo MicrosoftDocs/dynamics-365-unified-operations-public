@@ -80,11 +80,16 @@ This limitation applies to only the initial sync from Common Data Service for en
 5 Attempts to get data from https://XXXX.azure-apim.net/apim... Failed
 ```
 
-In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, skipping the initial sync.
+As a workaround you can split the initial sync into these steps:
+
+1. Remove some of the lookup fields that are not mandatory from the dual-write entity map and bring the number of lookups to 10. 
+2. After the lookup fields are removed, save the map and do the initial sync. 
+3. After the initial sync for the first step is successful, add the remaining lookup fields and remove the lookup fields that were synced in first step. Once again make sure the number of lookup fields is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup fields are synced. 
+3. Add all the lookup fields back to the map, save the map and run the map with skip initial sync. This will enable the map for live sync mode.
 
 ### 5-minute limit for Finance and Operations data export
 
-If you are running the initial sync from the Finance and Operations app to Common Data Service and the Finance and Operations data export takes more than 5 minutes, then the initial sync might time out. The time out can happen if the data entity has virtual fields with the **postLoad** method, or the export query isn't optimized (for example, it has missing indexes).
+If you are running the initial sync from the Finance and Operations app to Common Data Service and the Finance and Operations data export takes more than 5 minutes, then the initial sync might time out. The time-out can happen if the data entity has virtual fields with the `postLoad` method, or the export query isn't optimized (for example, it has missing indexes).
 
 This kind of sync will be supported after PU37. You should update your Finance and Operations app to PU37 or later.
 
