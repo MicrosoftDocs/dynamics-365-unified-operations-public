@@ -49,7 +49,10 @@ This document reviews these options and provides a summarized break down of each
 
 ​	C.    Using an **external Front Door** service
 
-![Front Door and Commerce overview architecture](/commerce/media/Commerce_CDN-Options_Overview.png "Front Door and Commerce overview architecture")
+
+![Front Door and Commerce overview architecture](media/Commerce_CDN-Options_Overview.png)
+
+
 
 For these scenarios, only html content (which is dynamic content, with custom domain) is relevant to these options. Commerce will automatically handle all JS/CSS/Images/Video and other static content through Microsoft managed CDNs. Different options are provided for the orange box ‘*Front Door’ as seen in the diagram above. The Front-End option chosen will affect the operations, control, and additional security capabilities.
 
@@ -57,9 +60,10 @@ For these scenarios, only html content (which is dynamic content, with custom do
 
 For more information in setting up a Front Door for your Commerce site, review the [Add CDN Support](https://docs.microsoft.com/en-us/dynamics365/commerce/add-cdn-support) article.
 
+
 ## Option Comparisons
 
-**Option A : Dynamics 365  Commerce Azure Front Door**
+### Option A : Dynamics 365  Commerce Azure Front Door
 
 <table>
  <tbody>
@@ -93,9 +97,11 @@ For more information in setting up a Front Door for your Commerce site, review t
 </table>
 
 
-![Commerce Azure Front Door](/commerce/media/Commerce_CDN-Option_CommerceFrontDoor.png "Commerce Azure Front Door") 
+![Commerce Azure Front Door](media/Commerce_CDN-Option_CommerceFrontDoor.png) 
 
-**Option B: Customer Owned Azure Front Door**
+
+
+### Option B: Customer Owned Azure Front Door
 
 <table>
 <tbody>
@@ -128,9 +134,11 @@ For more information in setting up a Front Door for your Commerce site, review t
 </table>
 
 
-![Customer Owned Azure Front Door](/commerce/media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png "Customer Owned Azure Front Door") 
+![Customer Owned Azure Front Door](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png) 
 
-**Option C: External Front Door Option**
+
+
+### Option C: External Front Door Option
 
 <table>
 <tbody>
@@ -162,4 +170,4 @@ For more information in setting up a Front Door for your Commerce site, review t
 </table>
 
 
-![External Front Door](/commerce/media/Commerce_CDN-Option_ExternalFrontDoor.png "External Front Door") 
+![External Front Door](media/Commerce_CDN-Option_ExternalFrontDoor.png) 
