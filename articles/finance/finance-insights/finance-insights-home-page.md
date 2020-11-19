@@ -88,10 +88,10 @@ When you've completed the configuration steps and set up demo data, you must tur
 ### Enable Customer payment predictions
 If you are using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. For the specific steps to import demo data, see [Set up demo data for payment predictions](set-up-demo-data.md).
 
-To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to comlete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
+To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
 
 ### Enable Cash flow forecasting
-To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to to generate cash flow forecasts. For more information and the specific steps to comlete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md) 
+To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to to generate cash flow forecasts. For more information and the specific steps to complete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md) 
 
 ### Set up and use cash flow forecasting
 For information about how to set up and use cash flow forecasting, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md). For more information about how to use this capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
@@ -110,13 +110,13 @@ The intelligent cash flow forecasting is built on top of existing the cash flow 
 - For information that can help you evaluate the effectiveness of the prediction model after you've started using the feature, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md).
 - For information that can help you adjust the data that is used to build the prediction and thereby improve its effectiveness, see [Improve the prediction model](improve-model.md).
 
-To learn more about the results of AI prediction models, see [Results of maching learning models](confusion-matrix.md).
+To learn more about the results of AI prediction models, see [Results of machine learning models](confusion-matrix.md).
 
 ### Using Cash flow forecasts
 
 The Cash flow forecast capability can help you more accurately estimate your cash position. 
 
-- To learn about the new capabiities in Cash flow forecasts see [Cash flow forecast](cash-flow-forecast-intro.md).
+- To learn about the new capabilities in Cash flow forecasts see [Cash flow forecast](cash-flow-forecast-intro.md).
 - For information about importing external data to include in your cashflow forecast here, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
 - For information about how to use an AI model to project long term cash flow, see [Cash flow forecasts overview](cash-position.md).
 - For information about saving cash flow positions and cash flow forecasts as snapshots, and to compare a snapshot to actuals, see [Snapshots overview](payment-snapshots.md).
