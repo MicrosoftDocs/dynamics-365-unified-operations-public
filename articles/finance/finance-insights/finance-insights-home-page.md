@@ -104,25 +104,22 @@ The Budget proposals feature uses a machine learning model along with your organ
 
 ### Using Customer payment predictions
 
-The intelligent cash flow forecasting is built on top of existing cash flow forecasting feature in Dynamics 365 Finance. To review the existing cash flow forecasting capability, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
+The intelligent cash flow forecasting is built on top of existing the cash flow forecasting functionality in Dynamics 365 Finance. To review the existing capability, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
-Customer payment predictions can help you collect proactively, learn how here: [Use Customer payment predictions](use-customer-payment-predictions.md).
+- To learn how Customer payment predictions can provide the information needed to proactively being collection activities, see [Use Customer payment predictions](use-customer-payment-predictions.md).
+- For information that can help you evaluate the effectiveness of the prediction model after you've started using the feature, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md).
+- For information that can help you adjust the data that is used to build the prediction and thereby improve its effectiveness, see [Improve the prediction model](improve-model.md).
 
-For information that can help you evaluate the effectiveness of the prediction model after you've started using the feature, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md). For information that can help you adjust the data that is used to build the prediction and thereby improve its effectiveness, see [Improve the prediction model](improve-model.md).
-
-To learn more about the results of AI prediction models, see Understanding results of machine learning model: [Results of maching learning models](confusion-matrix.md).
+To learn more about the results of AI prediction models, see [Results of maching learning models](confusion-matrix.md).
 
 ### Using Cash flow forecasts
 
-To learn about the new capabiities in Cash flow forecasts see [Cash flow forecast](cash-flow-forecast-intro.md).
+The Cash flow forecast capability can help you more accurately estimate your cash position. 
 
-For information about importing external data to include in your cashflow forecast here, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
-
-The Cash flow forecast capability can help you more accurately estimate your cash position here: 
-
- - For information about how to use an AI model to project long term cash flow, see [Cash flow forecasts overview](cash-position.md).
-
- - For information about saving cash flow positions and cash flow forecasts as snapshots, and to compare a snapshot to actuals, see [Snapshots overview](payment-snapshots.md).
+- To learn about the new capabiities in Cash flow forecasts see [Cash flow forecast](cash-flow-forecast-intro.md).
+- For information about importing external data to include in your cashflow forecast here, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
+- For information about how to use an AI model to project long term cash flow, see [Cash flow forecasts overview](cash-position.md).
+- For information about saving cash flow positions and cash flow forecasts as snapshots, and to compare a snapshot to actuals, see [Snapshots overview](payment-snapshots.md).
 
 ### Using Budget proposal
 
