@@ -5,7 +5,7 @@ title: Set the session inactivity timeout
 description: This topic describes how to set the session inactivity timeout.
 author: hasaid
 manager: AnnBe
-ms.date: 11/11/2020
+ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 29
 # Set the session inactivity timeout
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 The session inactivity timeout setting represents the amount of time a user can be inactive before the user's session times out and closes. It only affects user browser sessions.
 
