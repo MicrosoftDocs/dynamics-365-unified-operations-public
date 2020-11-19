@@ -97,7 +97,7 @@ The data in the **Top factors** section, and on the **Customer insights** and **
 
 ## Improving the accuracy of payment predictions
 
-You can view the accuracy of payment predictions by going to **Credit and collections \> Setup \> Finance Insights \> Finance Insights parameters**. On the **Customer payment insights** tab, the **Prediction model** section shows the accuracy of the prediction model as a percentage.
+You can view the accuracy of payment predictions by going to **Credit and collections \> Setup \> Finance insights \> Finance insights parameters**. On the **Customer payment insights** tab, the **Prediction model** section shows the accuracy of the prediction model as a percentage.
 
 [![Accuracy of payment predictions](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
@@ -107,7 +107,7 @@ If you aren't satisfied with the accuracy, select the **Improve model accuracy**
 
 ## Release details
 
-Finance Insights public preview is available to try for deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
+Finance insights public preview is available to try for deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
 
 Public preview features can and should be turned on only in Tier-2 sandbox environments. Setup and AI models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
 
