@@ -52,12 +52,12 @@ Finding a qualified pool of candidates to fill vacancies can be difficult, espec
 17. Click Result.
 18. Click Resume.
 19. Click Certificates.
-    * You can drill further into each person listed and see details regarding their education, skills, professional experience etc.  
+    * You can drill further into each person listed and see details regarding their education, skills, and professional experience.  
 20. Close the page.
 21. Close the page.
 22. Select result again.
 23. Click Report.
-    * The report will list the best matches at the top of the report.  You can see that there is a gap element listed.  This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.  
+    * The report will list the best matches at the top of the report.  You can see that a gap element is listed.  This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.  
 24. Close the page.
 25. Click Save.
 
