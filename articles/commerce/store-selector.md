@@ -71,7 +71,7 @@ The following image shows an example of a store selector module used on a PDP.
 ![Example of a store selector module used on a PDP](./media/BOPIS.PNG)
 
 > [!NOTE]
-> In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](https://docs.microsoft.com/en-us/dynamics365/commerce/multiple-pickup-modes). 
+> In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
 
 ## Find stores mode
 
