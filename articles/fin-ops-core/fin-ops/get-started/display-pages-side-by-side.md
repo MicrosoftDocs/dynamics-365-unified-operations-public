@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Show pages side by side by using the Open in new window feature
+title: Show pages side-by-side using the Open in new window feature
 description: This article explains how to display pages side-by-side.
 author: aneesmsft
 manager: AnnBe
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Show pages side by side by using the Open in new window feature
+# Show pages side-by-side using the Open in new window feature
 
 [!include [banner](../includes/banner.md)]
 
 This article explains how to display pages side-by-side.
 
-You may want to view multiple pages side-by-side to complete tasks quickly. As an example, you might want to validate or enter lines in more than one journal. Typically, to do this you would have to go back and forth between the page that displays a list of journals, and the page that displays lines for a given journal. However, the **Open in new window** feature enables you to display these pages side-by-side so that you can perform your tasks quickly.
+You may want to view multiple pages side-by-side to complete tasks quickly. As an example, you might want to validate or enter lines in more than one journal. Typically, to validate or enter lines in more than one journal, you would have to go back and forth between the page that displays a list of journals, and the page that displays lines for a given journal. However, the **Open in new window** feature enables you to display these pages side-by-side so that you can perform your tasks quickly.
 
 Continuing with the example mentioned above, when viewing the lines, you can click the **Open in new window** icon.
 
@@ -54,4 +54,4 @@ Before using the **Open in new window** feature, you should configure your brows
 
 The **Open in new window** feature is only available when there is more than one page open in the window. Also, the pop-up window automatically closes when there are no more pages open (that is, when the last page in that window is closed). The system also closes open pages when you navigate to a different area in the application. Therefore, if you have pop-up windows open and navigate to a different area in the application, the pop-up windows are automatically closed because the pages in those windows were closed by the system.
 
-The top bar in the pop-up windows displays information about the company the page was opened in and is read-only. The pop-up windows also rely on the main browser window. If the main window is closed or refreshed, all open pop-up windows will become read only. This means that you can still view the information in these windows, but you will not be able to interact with it.
+The top bar in the pop-up windows displays information about the company the page was opened in and is read-only. The pop-up windows also rely on the main browser window. If the main window is closed or refreshed, all open pop-up windows will become read only. If this situation occurs, you can still view the information in these windows, but you will not be able to interact with it.
