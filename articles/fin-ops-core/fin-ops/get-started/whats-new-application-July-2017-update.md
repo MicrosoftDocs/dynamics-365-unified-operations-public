@@ -663,7 +663,7 @@ In the kanban schedule board, these call outs are added to key elements.
 
 The **Cost controlling** mobile workspace provides an instant view of the current performance of cost centers by comparing actual costs against the budgeted costs. You can drill down to view statuses of individual cost elements.
 
-The data in the **Cost controlling** mobile workspace is secured by user credentials. The cost center manager is only allowed to view data for the cost center that he owns. The access-level security is managed in the Cost accounting module.
+The data in the **Cost controlling** mobile workspace is secured by user credentials. Cost center managers are only allowed to view data for the cost center that they own. The access-level security is managed in the Cost accounting module.
 
 ### Inventory on-hand mobile workspace
 
