@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide creates and validates journals and journal lines. This tasks uses the USMF demo company.  
+This procedure creates and validates journals and journal lines. You can try this procedure using the USMF demo company.  
 
 1. Go to **General ledger > Journal entries > General journals**.
 2. Click **New**.
@@ -39,8 +39,8 @@ This task guide creates and validates journals and journal lines. This tasks use
 5. Click **Lines**.
 6. In the **Account** field enter an appropriate account based on the Account type.
 7. In the **Description** field, type a value.
-8. Enter an amount for the account as either a **Debit** or **Credit**. For this example, assume this is a debit amount.
-9. In the **Offset account** field enter an appropriate account based on the Offset account type.
+8. Enter an amount for the account as either a **Debit** or **Credit**. 
+9. In the **Offset account** field, enter an appropriate account based on the Offset account type.
 10. Click **Validate**.
 11. Click **Validate**.
 12. Click **Post**.
