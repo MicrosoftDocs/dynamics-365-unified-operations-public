@@ -106,7 +106,7 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <th>Has data to run the initial synchronization</th>
 <th>Description</th>
 <th>Maximum volume in an entity</th>
-<th>Data entity type (single-threaded or multi-threaded)</th>
+<th>Single-threaded or multi-threaded</th>
 <th>Approach</th>
 </tr>
 </thead>
