@@ -1,10 +1,11 @@
 ---
+
 # required metadata
 
 title: Dynamics 365 Commerce: Front Door Options Comparison
 description: This topic the differences between Front Door options with Dynamics 365 Commerce. 
-author: Brian Shook
-manager: Brendan Sullivan
+author: BrianShook
+manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
@@ -14,26 +15,24 @@ ms.technology:
 # optional metadata
 
 ms.search.form:  
+# ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BrianShook
+ms.author: brshoo
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
 
 ---
 
 # Dynamics 365 Commerce: Front Door Options Comparison
 
 This topic reviews the different options of Front Door set ups which can be used with Dynamics 365 Commerce. The article will review the pros and cons of different Front Door setup approaches.
-
-
 
 ## Overview
 
