@@ -42,10 +42,10 @@ Finding a qualified pool of candidates to fill vacancies can be difficult, espec
 7. Click Job.
 8. In the Job field, enter or select a value.
 9. Click OK.
-10. Expand the range fast tab, and add any additional information, such as department.
-11. Expand the certificates fast tab to view or edit the certificates.
-12. Expand the Skills fast tab to view or edit the skills.
-13. Expand the Education fast tab to view or edit the education criteria.
+10. Expand the Range FastTab, and add any additional information, such as department.
+11. Expand the Certificates FastTab to view or edit the certificates.
+12. Expand the Skills FastTab to view or edit the skills.
+13. Expand the Education FastTab to view or edit the education criteria.
 14. Click Execute.
 15. Click OK.
 16. Click Result.
