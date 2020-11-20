@@ -137,7 +137,7 @@ This example can be done in the **DEMF** legal entity.
     |-----------------|--------------|----------------|----------------|--------------------|
     | January 1, 2020 | DE-010       | 800.00         | 216.00         | VAT27              |
 
-5. Create a credit note for the order. Select the order that you just created, and then select **Sell \> Create \> Credit note**. The following two new lines are added.
+5. Create a credit note for the order. Select the order that you created, and then select **Sell \> Create \> Credit note**. The following two new lines are added.
 
     | **Date**        | **Customer** | **Amount net** | **VAT amount** | **Sales tax code** |
     |-----------------|--------------|----------------|----------------|--------------------|
