@@ -71,7 +71,7 @@ This report includes the following fields:
 -   Currency
 -   Debit or credit amount of the document
 
-![](media/ITA-Competence-date-for-transactions-1-fiscal-journal.png)
+![Fiscal journal report transactions](media/ITA-Competence-date-for-transactions-1-fiscal-journal.png)
 
 ## Example
 
