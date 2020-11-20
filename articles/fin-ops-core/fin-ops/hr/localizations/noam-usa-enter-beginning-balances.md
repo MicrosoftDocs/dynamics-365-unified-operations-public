@@ -121,7 +121,7 @@ This step manually creates an earnings statement for each worker for the last pa
 
 #### Why the Disable Accounting slider needs to set to Yes when generating pay statements?
 
-Setting the slider to **Yes** prevents lines in the pay statement from being districuted to General ledger. General ledger amounts were updating earlier when account balances from the legacy system were entered. Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefit and tax purposes.
+Setting the slider to **Yes** prevents lines in the pay statement from being distributed to General ledger. General ledger amounts were updating earlier when account balances from the legacy system were entered. Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefit and tax purposes.
 
 ### C. Create pay statements for employees
 
