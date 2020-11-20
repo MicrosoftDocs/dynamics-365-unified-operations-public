@@ -5,7 +5,7 @@ title: Case management overview
 description: This topic provides an overview of case management, including planning, tracking, and analyzing, in Microsoft Dynamics AX. 
 author: kfend
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
