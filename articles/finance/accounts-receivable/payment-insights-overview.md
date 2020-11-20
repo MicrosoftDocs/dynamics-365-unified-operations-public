@@ -39,7 +39,7 @@ This topic describes the payment insights capability that helps improve understa
 
 ## Overview
 
-It can be hard to predict when customers will pay their invoices. This lack of insight leads to less accurate cash flow forecasts, collections processes that start too late, and orders that are released to customers who may default on their payment. Customer payment insights (Preview) helps organizations predict when a customer invoice will be paid, helping organization create collections strategies that improve the probability of being paid on time. 
+It can be hard to predict when customers will pay their invoices. This lack of insight leads to less accurate cash flow forecasts, collections processes that start too late, and orders that are released to customers who may default on their payment. Customer payment insights (Preview) helps organizations predict when a customer invoice will be paid. This information can help organizations create collections strategies that improve the probability of being paid on time. 
 
 ## Predictions
 
@@ -68,11 +68,11 @@ With Customer payment insights (Preview), organizations can be more proactive ab
 
 ## Methodology
 
-Developing and deploying an AI solution is hard. It takes a team of data scientists, subject matter experts and engineers, working for an extended period of time to formulate, develop, deploy and maintain a usable AI solution. We are making it easy to deploy and use AI solutions in Finance. We are prepackaging AI solutions in Finance that are built on top of Microsoft AI Builder. An end user, with the single click of button, can deploy the AI solution and start leveraging the benefits of intelligent predictions. If an organization isn't satisfied with the accuracy of predictions, a power user, again using a single click, can enter the AI builder extension experience, and then select or deselect the fields used to generate predictions. Once ready, they can train and publish the changes, and the newly trained model will be automatically picked up for predictions in Finance.
+Developing and deploying an AI solution is hard. It takes a team of data scientists, subject matter experts and engineers, working for an extended period of time to formulate, develop, deploy, and maintain a usable AI solution. We are making it easy to deploy and use AI solutions in Finance. We are prepackaging AI solutions in Finance that are built on top of Microsoft AI Builder. An end user, with the single click of button, can deploy the AI solution and start leveraging the benefits of intelligent predictions. If an organization isn't satisfied with the accuracy of predictions, a power user, again using a single click, can enter the AI builder extension experience, and then select or deselect the fields used to generate predictions. Once ready, they can train and publish the changes, and the newly trained model will be automatically picked up for predictions in Finance.
 
 ## How to get Customer payment insights (Preview)
 
-Please send email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in trying the Customer payment insights (Preview).
+Send email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in trying the Customer payment insights (Preview).
 
 ## Privacy Notice
 
