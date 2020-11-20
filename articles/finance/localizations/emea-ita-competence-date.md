@@ -34,7 +34,7 @@ This topic provides information about the competence date and explains how to tu
 
 In Italy, companies must use a posting date when they post transactions. The posting date in the fiscal journal is the date when the company acknowledges the transaction.
 
-Usually, adjustment and closing transactions occur on the date when the balance sheet is approved by the Board of Directors. However, they can also be completed several months after the last day of the fiscal year. These transactions must be reported in the Italian fiscal journal on the posting date, which must be the same as the acknowledgement date. However, the transactions must have a reference to their competence date, which represents the date when the transaction affects the balance amount.
+Usually, adjustment and closing transactions occur on the date when the balance sheet is approved by the Board of Directors. However, they can also be completed several months after the last day of the fiscal year. These transactions must be reported in the Italian fiscal journal on the posting date, which must be the same as the acknowledgment date. However, the transactions must have a reference to their competence date, which represents the date when the transaction affects the balance amount.
 
 ## Turn on the competence date functionality
 
@@ -42,7 +42,7 @@ Usually, adjustment and closing transactions occur on the date when the balance 
 
 2.  On the **General ledger parameters** page, on the **Ledger** tab, set the **Transaction date reference to competence date** option to **Yes**.
 
-    After the competence date functionality is turned on, you can specify **Transaction date** as an acknowledgement date for each journal that can be used to post the adjustment and closing transactions for the fiscal year:
+    After the competence date functionality is turned on, you can specify **Transaction date** as an acknowledgment date for each journal that can be used to post the adjustment and closing transactions for the fiscal year:
 
     -   General journal (**General ledger** \> **Journal entries** \> **General journals**)
     -   Fixed assets journal (**Fixed assets** \> **Journal entries** \> **Fixed assets journal**)
