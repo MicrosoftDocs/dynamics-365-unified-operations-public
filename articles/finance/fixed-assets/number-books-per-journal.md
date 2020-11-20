@@ -46,10 +46,9 @@ If there are 4,000 fixed assets and each asset has two associated books, one boo
 > [!NOTE] 
 > The derived books are not included in the maximum number of books per journal.
 
-You can run depreciation for the same set of acquired assets thru batch processing. The batch job creates two depreciation journals. Each journal consists of 2,000 asset books.
-The first journal will contain books that are associated with fixed assets, numbered from 1 to 2,000. The second journal will contain books that are associated with fixed assets, numbered from 2,001 to 4,000.
+You can run depreciation for the same set of acquired assets thru batch processing. Suppose that a batch job creates two depreciation journals. Each journal consists of 2,000 asset books. The first journal will contain books that are associated with fixed assets, numbered from 1 to 2,000. The second journal will contain books that are associated with fixed assets numbered from 2,001 to 4,000.
 
-The batch processing job excludes closed books. For example, assume that there are 10 closed books within the first 2,000, in a batch job for depreciation. The first journal will contain books that are associated with fixed assets, numbered from 1 to 2011. The second journal will contain books that are associated with fixed assets numbered 2012 through 4000. 
+The batch processing job will exclude closed books. For example, assume that there are 10 closed books within the first 2,000, in a batch job for depreciation. The first journal will contain books that are associated with fixed assets numbered from 1 to 2011. The second journal will contain books that are associated with fixed assets numbered 2012 through 4000. 
 
 The limit on the number of books is applied if duplicate asset IDs don't exist in the same journal. But if the asset ID is same the as the book ID, the number of books per journal could be exceeded to keep the asset ID in the same journal.
 
