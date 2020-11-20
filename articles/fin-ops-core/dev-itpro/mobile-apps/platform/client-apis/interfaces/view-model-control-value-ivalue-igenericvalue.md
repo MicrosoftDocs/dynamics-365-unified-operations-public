@@ -2,7 +2,7 @@
 # required metadata
 title: GenericValue type
 description: Generic value control type.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -161,10 +161,10 @@ Returns the value of the control.
 isEditable(): boolean
 
 Boolean indicating if the control is editable.
-Returns false when either the control or it's parent is not editable.
-Returns true when both the control and it's parent are editable.
-Returns true when either the control or it's parent is editable and the other is undefined.
-Returns undefined if both the control's edit-ability and it's parent's edit-ability is undefined.
+Returns false when either the control or its parent is not editable.
+Returns true when both the control and its parent are editable.
+Returns true when either the control or its parent is editable and the other is undefined.
+Returns undefined if both the control's edit-ability and its parent's edit-ability is undefined.
 
 > Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable)
 

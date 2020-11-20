@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 10.0.12
 # Get started with the Electronic invoicing add-on
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides information that will help you get started with the Electronic invoicing add-on. First, it guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Services (RCS), and Dynamics 365 Finance. Next, it describes the process for submitting documents through the service by using Dynamics 365 Finance or Dynamics 365 Supply Chain Management. You will also learn how to interpret the submission logs.
 

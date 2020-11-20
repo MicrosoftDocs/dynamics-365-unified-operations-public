@@ -20,8 +20,6 @@
           href: get-started/whats-new-platform-updates-10-0-14.md
         - name: Platform updates for 10.0.13 (October 2020)
           href: get-started/whats-new-platform-updates-10-0-13.md
-        - name: Platform updates for 10.0.12 (August 2020)
-          href: get-started/whats-new-platform-update-10-0-12.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated platform features
@@ -142,8 +140,10 @@
               items:
                 - name: System requirements for dual-write
                   href: data-entities/dual-write/dual-write-system-req.md
-                - name: Supported scenarios for dual-write setup
+                - name: Guidance for how to set up dual-write
                   href: data-entities/dual-write/connection-setup.md
+                - name: Considerations for initial synchronization
+                  href: data-entities/dual-write/initial-sync-guidance.md
                 - name: Dual-write setup from Lifecycle Services
                   href: data-entities/dual-write/lcs-setup.md
                 - name: Enable dual-write for existing Finance and Operations apps
@@ -404,6 +404,8 @@
           href: database/database-point-in-time-restore.md
         - name: Point-in-time restore of the production database to a sandbox environment
           href: database/database-pitr-prod-sandbox.md
+        - name: Enable just-in-time database access
+          href: database/database-just-in-time-jit-access.md
       - name: Tutorials
         items:
         - name: Refresh for training purposes
@@ -480,6 +482,8 @@
           href: deployment/Update-retail-channel.md  
         - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
+        - name: Migrate channels to a different Commerce Scale Unit
+          href: deployment/Reassign-CSU.md
         - name: Retail data residency
           href: deployment/retail-data-residency.md
       - name: On-premises deployment
@@ -494,6 +498,8 @@
             href: deployment/plan-onprem-deployment.md
           - name: Hardware sizing requirements
             href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+          - name: Authentication in Dynamics 365 Finance + Operations (on-premises)
+            href: deployment/authentication-onprem.md
         - name: Set up and deploy on-premises environments
           items: 
           - name: Set up on-premises projects in LCS
@@ -1552,6 +1558,8 @@
         href: sysadmin/odata-warmup.md
       - name: Setting Up Azure Key Vault client
         href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+      - name: Cleanup routines
+        href: sysadmin/cleanuproutines.md
     - name: Upgrades, updates, and hotfixes
       items:
       - name: Upgrades, updates, and hotfixes resources

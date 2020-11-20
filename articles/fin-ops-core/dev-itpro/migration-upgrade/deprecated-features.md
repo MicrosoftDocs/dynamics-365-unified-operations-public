@@ -5,7 +5,7 @@ title: Removed or deprecated features in previous releases
 description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases of that product.
 author: sericks007
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Removed or deprecated features in previous releases
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > This topic is no longer updated. To see a current list of features that have been removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.
@@ -122,7 +124,10 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Payroll |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By October 1, 2021, we plan to no longer provide tax updates to US Payroll customers. The functionality will remain in the product, however enhancements will no longer keep the functionality up to date and any product defects will be evaluated on a case-by-case basis. For more information, see [Tax updates being retired for US Payroll feature in Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+| **Status**                         | Deprecated: By July 31, 2024, we plan to no longer provide tax updates to US Payroll customers. The functionality will remain in the product, but enhancements will no longer keep the functionality up to date, and any product defects will be evaluated on a case-by-case basis. |
+
+>[!NOTE]
+> This represents a change from the original discontinuation date of October 1, 2021. For more information, see [Tax updates being retired for US Payroll feature in Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq).
 
 
 ### Data management staging clean up

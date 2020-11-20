@@ -4,6 +4,7 @@
 title: Language and locale descriptors in the product and in Help
 description: This topic maps the language names between the Finance and Operations client and the GitHub repos that contain translated Microsoft Help content. 
 author: edupont04
+ms.topic: article
 ms.service: dynamics-ax-platform
 ms.date: 05/11/2020
 

@@ -116,6 +116,10 @@ In a similar way, if you're mocking data for a custom module, you can add new mo
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
 
+[Override a module library component in a theme](override-theme-component.md)
+
 [Extend a theme from a base theme](extend-theme.md)
+
+[Add custom resources to your customization code](add-custom-resources.md)
 
 [Configure a development .env file](configure-env-file.md)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Version control, metadata search, and navigation
-description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models. It’ll also help you learn about other productivity features in the development tools.
+description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models. It will also help you learn about other productivity features in the development tools.
 author: RobinARH
 manager: AnnBe
 ms.date: 07/24/2020
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This tutorial will walk you through configuring Microsoft Azure DevOps to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
+This tutorial will walk you through configuring Microsoft Azure DevOps to enable source control on your models. It will also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
 
-## Configure your Azure DevOps account and project
+## Configure your Azure DevOps organization and project
 
-In this section, you'll create a new project in Azure DevOps. This project will host the source code of your model. You'll use the Fleet Management model as an example. If you don't have a Azure DevOps account, you'll create one.
+In this section, you'll create a new project in Azure DevOps. This project will host the source code of your model. You'll use the Fleet Management model as an example. If you don't have a Azure DevOps organization, you'll create one.
 
 ### Sign up to Azure DevOps, create an account, and create a new project
 
@@ -48,7 +48,7 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
     > [!NOTE]
     > You can also use an organizational account (Microsoft 365 domain).
 
-2. Create a Azure DevOps account, and select a URL for your account. This is the URL that you'll connect to from your development computer when you're configuring source control in Visual Studio. The following is an example of the account URL.
+2. Create a Azure DevOps organization, and select a URL for your account. You'll use this URL to connect from your development computer when you're configuring source control in Visual Studio. The following image is an example of the account URL.
 
     ![Select URL for account](./media/accounturl_usingdevotools.png)
 
@@ -59,7 +59,7 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
 
 ### Create a Azure DevOps team project
 
-If you already have a Azure DevOps account, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have a Azure DevOps organization, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
 
 1. Go to <https://www.visualstudio.com/>.
 2. Under **Recent projects & teams**, click **New** to create a new project.
@@ -80,12 +80,12 @@ The **Metadata** folder contains your source XML files organized by packages and
 
 1. Start Visual Studio. If you are logged into the machine as an administrator, then you must start Visual Studio as an administrator.
 2. Click **Tools &gt; Options &gt; Source Control &gt; Plug-in Selection**.
-3. In the Current source control plug-in field, select **Visual studio Team Foundation Server**.
+3. In the Current source control plug-in field, select **Visual Studio Team Foundation Server**.
 4. Select **Team &gt; Connect to Team Foundation Server**.
 5. In **Team Explorer**, click **Select Team Projects**.
-6. In the **Select a Team Foundation Server** drop-down list, select the **Azure DevOps account** that hosts the Fleet Management project, or click **Servers** if it isn't in the menu.
+6. In the **Select a Team Foundation Server** drop-down list, select the **Azure DevOps organization** that hosts the Fleet Management project, or click **Servers** if it isn't in the menu.
     1. When the **Add/Remove Team Foundation Server** dialog opens, click **Add**.
-    2. Enter the URL of your Azure DevOps account.
+    2. Enter the URL of your Azure DevOps organization.
     3. Click **OK**.
     4. If prompted, enter your Microsoft Account username and password.
 
@@ -95,7 +95,7 @@ The **Metadata** folder contains your source XML files organized by packages and
 
 ### Map your Azure DevOps project to your local model store and projects folder
 
-Your model store root folder contains source files of all packages and models that are part of your application. During deployment, you'll probably use source files from more than one model across more than one package. Because of this, we recommend that you map your model store root folder to the Azure DevOps team project metadata folder.
+Your model store root folder contains source files of all packages and models that are part of your application. During deployment, you'll probably use source files from more than one model across more than one package. We recommend that you map your model store root folder to the Azure DevOps team project metadata folder.
 
 1. In Visual studio **Team Explorer**, connect to the team project as described earlier in this document.
 2. Open **Source Control Explorer** from **Team Explorer**.
@@ -116,7 +116,7 @@ This section describes the steps needed to add a solution to Azure DevOps source
 ### Open the FleetManagement solution
 
 > [!NOTE]
-> This is only an example. You can open any project/solution to learn about the process of adding a solution to source control.
+> This project is only an example. You can open any project/solution to learn about the process of adding a solution to source control.
 
 1. On the **File** menu, point to **Open**, and then click **Project/Solution**.
 2. Browse to the desktop and open the **FleetManagement** folder.
@@ -155,13 +155,13 @@ All Visual Studio projects belong to models. Models are source code distribution
     > [!NOTE]
     > Because your solution contained elements from two models, you'll need to add an additional model descriptor file to source control: K:\\AOSService\\PackagesLocalDirectory\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
 
-5. Check-in your pending items. Your item is now ready for development of the fleet management application using a state-of-the-art, cloud-based source control system and many other application lifecycle features of Azure DevOps.
+5. Check-in your pending items. Your item is now ready for development of the fleet management application using a state-of-the-art, cloud-based source control system, and many other application lifecycle features of Azure DevOps.
 
 ### Experiment with source control
 
 In this section, you'll make minor changes to the **FMRental** table and compare your changes with the latest version in your source code repository.
 
-1. In **Solution Explorer**, click **Fleet Management Migrated &gt; Data model &gt; Tables &gt; FMRental**.
+1. In **Solution Explorer**, select **Fleet Management Migrated &gt; Data model &gt; Tables &gt; FMRental**.
 2. Double-click **FMRental** to open the designer.
 3. Right-click the **Fields** node, and then click **New &gt; Integer**.
 
@@ -184,28 +184,28 @@ In this section, you'll make minor changes to the **FMRental** table and compare
 
 ## Scenario 2: Synchronize models from source control
 
-In this section, you will synchronize existing models and model elements from your Azure DevOps project. This is relevant in the following cases: 1) You have migrated your code from a previous version via LCS, or 2) another developer has checked-in a new model or new model elements and you would like to synchronize them to your development environment.
+In this section, you will synchronize existing models and model elements from your Azure DevOps project. Synchronization is relevant in the following cases: 1) You have migrated your code from a previous version via LCS, or 2) another developer has checked-in a new model or new model elements and you would like to synchronize them to your development environment.
 
-1. In Source Control Explorer, right-click on Metadata and select **Get Latest Version**. This will synchronize you local packages folder with the latest code.
+1. In Source Control Explorer, right-click on Metadata and select **Get Latest Version**. Getting the latest version will synchronize you local packages folder with the latest code.
 2. Alternatively you can use the **Advanced** menu to synchronize specific build version or change sets.
 
     ![Get the latest version](./media/getlatest.png)
 
-3. Once synchronization is complete, and if this leads to synchronizing new models to your environment, you need to refresh your metadata from Visual Studio.
+3. Once synchronization is complete, and if the synchronization leads to synchronizing new models to your environment, you need to refresh your metadata from Visual Studio.
 4. Go to **Dynamics 365 &gt; Model Management &gt; Refresh models**.
 
 ## Organize TODO tasks in a project
 
 This section describes how you can create a Visual Studio project out of tasks (TODO comments) embedded in your X++ code.
 
-1. In **Solution Explorer**, click **Fleet Management Migrated &gt; Code &gt; Classes &gt; FMDataHelper**, and then double-click **FMDataHelper**. This will open the X++ code editor.
+1. In **Solution Explorer**, select **Fleet Management Migrated &gt; Code &gt; Classes &gt; FMDataHelper**, and then double-click **FMDataHelper**. The X++ code editor opens.
 2. Enter a TODO comment (//TODO: my comment) inside any method.
 
     [![Example of TODO comments](./media/code_usingdevotools.png)](./media/code_usingdevotools.png)
 
 3. Open other Fleet Management classes or tables and add more TODO comments.
 4. Rebuild the **FleetManagement Migrated** project.
-5. Click **View &gt; Task List**, to open the Visual Studio **Task List** window.
+5. Select **View &gt; Task List**, to open the Visual Studio **Task List** window.
 
     [![Opening the Task List](./media/tasklist_usingdevotools.png)](./media/tasklist_usingdevotools.png)
 
@@ -217,7 +217,7 @@ This section describes how you can create a Visual Studio project out of tasks (
 
     [![Selecting TODO comments](./media/addnewproject_usingdevotools.png)](./media/addnewproject_usingdevotools.png)
 
-8. This will open the **New project** dialog and enable you to create a new project that contains all of your TODOs.
+8. Adding the items will open the **New project** dialog and enable you to create a new project that contains all of your TODOs.
 9. You can save this project as a working project to manage your TODO list.
 10. When you're finished, undo all of your pending changes in **Team Explorer**.
 
@@ -232,22 +232,34 @@ This section demonstrates how you can perform meta-data based searches throughou
 ### Use the Metadata search window
 
 1. Click **Dynamics 365 &gt; Metadata search**.
-2. In the **Metadata search** window, in the **Search** field, enter the following text to find all of the table insert methods in the Application Suite model that contain a cross-company query. *type:table,method name:insert code:"crosscompany" model:"Application Suite"*
+2. In the **Metadata search** window, in the **Search** field, enter the following text to find all of the table insert methods in the Application Suite model that contain a cross-company query. `type:table,method name:insert code:"crosscompany" model:"Application Suite"`.
 3. Wait for the search to complete. It may take a while.
 
    ![Metadata search results](./media/metadatasearchresults_usingdevotools.png)
 
 4. Double-click a result in the list. The code editor will open and place the cursor at the line that matches your search criteria.
-5. Select several elements in the results list by holding down the Ctrl key for multiple selections, right-click, and then select **Add to new project**. This will let you to create a new solution and project containing the selected elements.
+5. Select several elements in the results list by holding down the Ctrl key for multiple selections, right-click, and then select **Add to new project**. Adding the elements will let you to create a new solution and project containing the selected elements.
 
 ### Try other search examples
 
-**Tip**: You don't need to wait for the search to complete before you interact with search results. You can double-click results at any time to view the metadata or source code that matches your search criteria. The following are some suggested search examples:
+You don't need to wait for the search to complete before you interact with search results. You can double-click results at any time to view the metadata or source code that matches your search criteria. The following are some suggested search examples:
 
-- Find vertical tab controls defined in view mode and auto-width mode in the model Application Suite. *type:form,formtabcontrol property:arrangeMethod=Vertical,ViewEditMode=view,WidthMode=Auto model:"Application Suite"*
-- Find all grid controls in forms that aren't editable and with the property heightmode = column. *type:form,formgridcontrol:allowedit=no,heightmode=column*
-- Find all SimpleListDetail forms in the Application Suite model. *type:formdesign property:style=simplelistdetail model:"Applicaiton Suite"*
-- Find all tables that have an index field name that contains the keyword xpNum. *type:table,tableindexfield anem: xpNum*
+- Find vertical tab controls defined in view mode and autowidth mode in the model Application Suite. 
+
+    `type:form,formtabcontrol property:arrangeMethod=Vertical,ViewEditMode=view,WidthMode=Auto model:"Application Suite"`
+
+- Find all grid controls in forms that aren't editable and with the property heightmode = column.
+
+    `type:form,formgridcontrol:allowedit=no,heightmode=column`
+
+- Find all SimpleListDetail forms in the Application Suite model.
+
+    `type:formdesign property:style=simplelistdetail model:"Application Suite"`
+
+- Find all tables that have an index field name that contains the keyword xpNum.
+
+    `type:table,tableindexfield anem: xpNum*`
+
 - Use the search bar drop-down menu to access previous searches.
 
     [![Using the drop-down menu](./media/accessprevious_usingdevotools.png)](./media/accessprevious_usingdevotools.png)

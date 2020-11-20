@@ -5,7 +5,7 @@ title: Mock the signed-in state during local development
 description: This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 author: samjarawan
 manager: annbe
-ms.date: 10/16/2020
+ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -52,18 +52,18 @@ To create a new ROPC flow, follow these steps.
 1.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name, as it will be used later as the `ropcUserFlowName` value in your credentials.json file.
 1.	Under **Application claims**, select **Show more**.
 1.	Select the following application claims: 
-  - **Display Name**
-  - **Email Addresses**
-  - **Given Name**
-  - **Identity provider**
-  - **SurName**
-  - **User’s object ID**
+    - **Display Name**
+    - **Email Addresses**
+    - **Given Name**
+    - **Identity provider**
+    - **SurName**
+    - **User’s object ID**
 1.	Select **OK**, and then select **Create**.
 1.	Select the new user flow, and then select **Run user flow**. 
 
-You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://**<B2C_TENANT>**.b2clogin.com **<LOGIN_DOMAIN>**/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Note the **<B2C_TENANT>** and **<LOGIN_DOMAIN>** values from the URL, because this information will  be used later in your credentials.json file.
+You have now created a new ROPC policy to enable local sign-in. Under **Run user flow** you should see an endpoint URL similar to ```https://<LOGIN_DOMAIN>//<B2C_TENANT>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```. Take note of the **<LOGIN_DOMAIN>** and **<B2C_TENANT>** values from the URL, because this information will be used later in your credentials.json file.
 
-In the following example image, the endpoint URL listed under **Run user flow** is ```https://rushmoreb2c.b2clogin.com/login.fabrikam.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
+In the following example image, the endpoint URL listed under **Run user flow** is ```https://commerceonboardingb2c.b2clogin.com/commerceonboardingb2c.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
 
 ![Run user flow example](media/local-sign-in-01.png)
 
@@ -72,15 +72,15 @@ From the example above, you can obtain values for the `ropcUserFlowName`, `login
 | Property name | Example value |
 | ----------- | ----------- |
 | ropcFlowUserName | B2C_1_ROPC_Auth |
-| loginDomain | login.fabrikam.com |
-| b2cTenant | rushmoreb2c |
+| loginDomain | commerceonboardingb2c.b2clogin.com |
+| b2cTenant | commerceonboardingb2c |
 
 ### Create a native application
 
 Next, you will create a native application meant to represent the Node application you will run during local development.
  
 1.	In the **Azure AD B2C** settings, select **App Registrations**, and then select **New registration**.
-1.	Enter a name for the application, for example "Local_Node_App".
+1.	Enter a name for the application, for example "local_node_app".
 1.	For **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
 1.	For **Redirect URIs**, select **Public client/native (mobile & desktop)** from the drop-down list, and leave the URI as is.
 1.	Leave all other default values as is, and select **Register**.
@@ -104,15 +104,15 @@ From the examples above, you have now obtained the following information:
 | Property name | Example value |
 | ----------- | ----------- |
 | ropcFlowUserName | B2C_1_ROPC_Auth |
-| loginDomain | login.fabrikam.com |
-| b2cTenant | rushmoreb2c |
-| nativeApplicationId | 0fb41a53-fcae-45df-b4cb-ab78471ad919 |
+| loginDomain | commerceonboardingb2c.b2clogin.com |
+| b2cTenant | commerceonboardingb2c |
+| nativeApplicationId | 25f6742d-f8b8-44d9-a6a0-f06d2854ac5f |
 
 ### Configure scope and register the native application
 
 1.	In the Azure AD B2C settings, go to **App registrations**.
 1.	Open the application created above which is currently being used by the e-Commerce rendering application.
-1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one. Enter "user_impersonation" for the **Scope name** and then enter friendly values for **Admin consent display name** and **Admin consent description**.
+1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
 
     ![Expose an API](media/local-sign-in-04.png)
 
@@ -131,10 +131,10 @@ The Azure AD setup portion is now complete and you should now have your versions
 | Property name | Example value |
 | ----------- | ----------- |
 | ropcFlowUserName | B2C_1_ROPC_Auth |
-| loginDomain | login.fabrikam.com |
-| b2cTenant | rushmoreb2c |
-| nativeApplicationId | 0fb41a53-fcae-45df-b4cb-ab78471ad919 |
-| userImpersonationScopeURL | `https://login.fabrikam.com/B2CAPI/user_impersonation` |
+| loginDomain | commerceonboardingb2c.b2clogin.com |
+| b2cTenant | commerceonboardingb2c |
+| nativeApplicationId | 25f6742d-f8b8-44d9-a6a0-f06d2854ac5f |
+| userImpersonationScopeURL | `https://commerceonboardingb2c.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation` |
 
 ## Configure your Node application
 
@@ -144,23 +144,25 @@ The credentials will live under the `secrets/` directory in your Node applicatio
 
 ```json
 {
-    "loginDomain" : "login.fabrikam.com",
-    "b2cTenant" : "rushmoreb2c",
-    "nativeApplicationId": "0fb41a53-fcae-45df-b4cb-ab78471ad919",
+    "loginDomain": "commerceonboardingb2c.b2clogin.com",
+    "b2cTenant": "commerceonboardingb2c",
+    "nativeApplicationId": "25f6742d-f8b8-44d9-a6a0-f06d2854ac5f",
     "ropcUserFlowName": "B2C_1_ROPC_Auth",
-    "userImpersonationScopeURL": "https://login.fabrikam.com/B2CAPI/user_impersonation",
+    "userImpersonationScopeURL": "https://commerceonboardingb2c.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation",
     "defaultUser": {
         "name": "default",
         "email": "",
-        "password": ""
+        "password": "",
+        "customerAccountNumber": ""
     },
-    "additionalUsers": [
+    "additionalUsers":[ 
         {
             "name": "test-user-1",
-            "email": "",
-            "password": ""
+            "email": "test-user-1@example.com",
+            "password": "password",
+            "customerAccountNumber": ""
         }
-    ]   
+    ]
 }
 ```
 
@@ -172,7 +174,7 @@ The credentials will live under the `secrets/` directory in your Node applicatio
 After using the information collected in the Azure setup steps to populate your credentials.json file, you need to add test accounts that you want to use during local development. The accounts defined here should be valid accounts that have already been created in Dynamics 365 Commerce headquarters.
 
 - **defaultUser**: The default user that will be used when the **mockUser** query parameter is set to **true**. The name value should be **default**.
-- **additionalUsers**: An array of user objects that allows you to configure additional users to test with. Each entry in this array should be an object with a name, email address, and password. To sign in as one of these users, use the query parameter **mockUser=\<name>**.
+- **additionalUsers**: An array of user objects that allows you to configure additional users to test with. Each entry in this array should be an object with a name, email address, password, and customer account number. To sign in as one of these users, use the query parameter **mockUser=\<name>**.
 
 ## Mock sign-in status
 
@@ -205,3 +207,5 @@ You can also make use of the sign-in and sign-out buttons on the webpage itself 
 [Interactive components overview](interactive-components.md)
 
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)

@@ -18,6 +18,7 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
+# ms.search.scope: ["Core", "Operations"]
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -32,6 +33,8 @@ ms.search.validFrom: 2020-03-16
 # Troubleshoot issues related to upgrades of Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 

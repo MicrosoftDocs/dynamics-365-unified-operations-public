@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (September 16, 2020)
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3557. The numbers in parentheses next to some features refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Included in this release
@@ -43,7 +45,7 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 - If you set **Restrict access to worker information** to yes in **Advanced access** in **Human Resources Shared parameters**, benefits forms now show only the appropriate workers (393384).
 
-- New calender generation options in the **WorkCalendar** entity (477055):<br>- Default ending time<br>-	Default starting time<br>-	Is Friday working day<br>-	Is Monday working day<br>-	Is Saturday working day<br>- Is Sunday working day<br>- Is Thursday working day<br>- Is Tuesday working day<br>- Is Wednesday working day<br>- Work calendar holiday ID
+- New calendar generation options in the **WorkCalendar** entity (477055):<br>- Default ending time<br>-	Default starting time<br>-	Is Friday working day<br>-	Is Monday working day<br>-	Is Saturday working day<br>- Is Sunday working day<br>- Is Thursday working day<br>- Is Tuesday working day<br>- Is Wednesday working day<br>- Work calendar holiday ID
 
 - The **LeaveBankTransactionV1** entity now includes the reason code (477823).
 

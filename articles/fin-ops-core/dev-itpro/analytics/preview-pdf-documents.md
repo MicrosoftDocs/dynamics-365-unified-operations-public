@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include[banner](../includes/banner.md)]
 
-You can streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF Preview option. Finance and Operations applications deliver a modern experience to preview business documents that are produced by the service. You can use the built-in toolbar to navigate and download the document or to print to locally connected devices.
+Streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF Preview option. Finance and Operations applications deliver a modern experience to preview business documents that are produced by the service. You can use the built-in toolbar to navigate and download the document or to print to locally connected devices.
 
 The embedded viewer offers consistency between the screen presentation and the printed output. In addition, report viewing times are drastically reduced when compared to the legacy experience. The Preview option is available on all supported devices and does not require any additional third-party software. Documents can be easily downloaded and navigated by using the built-in viewer toolbar options.
 
@@ -46,18 +46,10 @@ The legacy HTML-based preview experience is being replaced by a true document pr
 - The server-side rendering improves the performance when producing the document.
 - A built-in tooling that allows users to quickly navigate the contents of the business document.
 
-## Accessing the PDF preview experience (Platform update 35 or earlier)
-The hosted PDF document viewer control is presented by default in most deployment types. However, the PDF preview experience must be enabled on OneBox environments using the **Report Administration** page.
-
-1. Go to the **Report Options** page by adding "**&mi=SysReportAdministration**" to the URL.
-2. Set the **Preview documents using embedded viewer** option to **Yes**.
-3. Select **Save**.
-
 ## Accessing the PDF preview experience (Platform update 36 or later)
-In Platform updates 36 or later, use Feature Management to enable the **Report PDF viewer** feature.
+The PDF preview experience is enabled by default in [Self-Service deployments](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack) and environments hosted on Platform update 39 or later. To use the PDF preview experience in Platform updates 36 thru 38, use Feature Management to enable the **Report PDF viewer** feature.
 
 ## Additional feature information
-
 - Expandable/collapsible sections are available by default. These interactive operations do not function after the PDF document has been created.
 - The printer drop-down menu allows users to choose from locally connected devices. This list does not include network printers connected through the service.
 - Documents are downloaded to the local device using the built-in toolbar actions.
@@ -66,5 +58,5 @@ In Platform updates 36 or later, use Feature Management to enable the **Report P
 ## Feature limitations
 The Embedded PDF viewer experience delivers a closed document that exactly matches the printed output of the document.  These documents cannot be modified by the recipient making the format ideal for business operations.  However, as a closed format, the documents are far less interactive on the screen when compared to HTML presentations.  The following end-user capabilities are not supported when previewing documents using the embedded PDF viewer.
 
-- Embedded drill-thru navigation is not actionable while previewing PDF documents. 
+- By default, embedded drill-thru navigation links are only available while previewing PDF documents.
 - PDF documents do not support expandable and collapsible sections. 

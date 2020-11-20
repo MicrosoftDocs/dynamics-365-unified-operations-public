@@ -113,6 +113,8 @@ After the year end, generate the report for each settlement period. The transmis
 | **Date of export**       | The date when the .ivc file was exported.                                                     |
 | **Export file name**     | The name of the .ivc file.                                                                    |
 
+Find more details in [Yearly tax communication](emea-ita-yearly-tax-communication.md).
+
 ## VAT summary report
 For VAT reporting, Italy has specific information to be reported and formatted. In the **Sales tax authorities** page, on **Tax setup**, configure the Italian authority.
 

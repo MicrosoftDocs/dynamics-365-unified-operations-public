@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -54,6 +54,9 @@ The Retail SDK includes only a few samples of end-to-end Retail Server extension
 The following illustration shows the class structure of the extension.
 
 ![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
+
+> [!NOTE]
+> Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
 
 ## Create a new Retail Server API
 

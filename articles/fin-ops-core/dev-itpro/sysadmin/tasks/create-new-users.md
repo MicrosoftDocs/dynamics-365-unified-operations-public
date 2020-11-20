@@ -3,7 +3,7 @@
  
 title: Create new users
 description: Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. 
-author: maertenm
+author: peakerbl
 manager: AnnBe 
 ms.date: 06/08/2020
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

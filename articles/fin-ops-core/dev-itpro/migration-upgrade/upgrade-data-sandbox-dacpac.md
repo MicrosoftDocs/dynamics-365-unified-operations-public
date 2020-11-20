@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-
 description: This topic will help customers who no longer have Remote Desktop protocol (RDP) access to their Tier-2 through Tier-5 sandbox environments when they upgrade from Microsoft Dynamics AX 2012 to Finance and Operations apps.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/02/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -72,9 +72,9 @@ Note that firewall rules are deleted whenever you do a database refresh or whene
 
 ### Microsoft-managed environments without RDP access
 
-If you no longer have RDP access to your sandbox, you can add your IP address to the allow list in a self-service manner from LCS. In LCS, open the environment details page for your sandbox environment, select **Maintain** > **Enable access**, and then, in the dialog box, add the IP address of your source environment. This entry will expire after several hours.
+Follow the process for [Enable just-in-time database access](../database/database-just-in-time-JIT-access.md) to allow-list your IP address to the database.
 
-Before the entry expires, connect to the sandbox database by entering the server, user name, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
+Before the allow-list entry expires, connect to the sandbox database by entering the server, user name, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
 After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
 

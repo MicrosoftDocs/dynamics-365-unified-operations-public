@@ -18,6 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 
@@ -33,6 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 These topics describe dual-write integration.
@@ -48,7 +50,8 @@ These topics describe dual-write integration.
 ## Dual-write setup
 
 + [System requirements for dual-write](dual-write-system-req.md)
-+ [Supported scenarios for dual-write setup](connection-setup.md)
++ [Guidance for how to set up dual-write](connection-setup.md)
++ [Considerations for initial synchronization](initial-sync-guidance.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
 + Enable dual-write for existing Finance and Operations apps
 

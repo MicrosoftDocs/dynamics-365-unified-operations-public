@@ -373,6 +373,8 @@ Generic editable field components wrap any custom components and enable interact
 
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)
+
 [Work with modules](../work-with-modules.md)
 
 [Work with fragments](../work-with-fragments.md)
