@@ -4,7 +4,7 @@ title: Supported standards for electronic invoicing in Europe
 description: This topic explains the level of coverage that exists for electronic invoicing for Europe. 
 author: mrolecki
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,7 +51,22 @@ The following country-specific formats of electronic invoices are available:
 -   Estonian specific format version 1.2
 -   Finvoice 3.0 for Finland
 
-Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). An **Invoice model** data model, invoice model mapping, and several country/region-specific ER format configurations have been created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE), the Netherlands (NL), Germany (DE), Estonia (EE), Finland (FI), and the European Union (EU).
+Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). An **Invoice model** data model, invoice model mapping, and several country/region-specific ER format configurations have been created for the following countries/regions: 
+
+- Austria (AT)
+- Denmark (DK)
+- Italy (IT)
+- Norway (NO)
+- Spain (ES)
+- France (FR)
+- Belgium (BE)
+- The Netherlands (NL)
+- Germany (DE)
+- Estonia (EE)
+- Finland (FI)
+- The European Union (EU)
+
+The **Invoice model** data model, invoice model mapping, and country/region-specific ER format configurations include:
 
 -   OIOUBL Sales invoice - for AT, DK, and NO
 -   OIOUBL Sales credit note - for AT, DK, and NO
@@ -84,7 +99,17 @@ Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/ana
 -   Sales invoice (FI)
 -   Project invoice (FI)
 
-The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
+The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle Services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
+
+## Electronic invoice configuration
+The setup and specifics of electronic invoices depend on the country/region that it's implemented for. For more information about how to set up and use customer electronic invoices, see the related country-specific topics:
+
+- [Italy](emea-ita-e-invoices.md)
+- [Norway](emea-nor-e-invoices.md)
+- [Germany](emea-deu-e-invoices.md)
+- [Finland](https://support.microsoft.com/help/4559937)
+- [Estonia](https://support.microsoft.com/help/4552679)
+- [PEPPOL](https://support.microsoft.com/help/4490320)
 
 ## Additional resources
 For more details about how to set up electronic invoices, you can play the following [Task guides](../../fin-and-ops/get-started/help-overview.md#task-guides) in the Help pane:
@@ -94,4 +119,4 @@ For more details about how to set up electronic invoices, you can play the follo
  - Set up customer accounts for OIOUBL electronic invoicing
 
 > [!NOTE] 
-> Although these Task guides were created for Danish-specific e-invoice format *OIOUBL*, they are applicable for other supported countries with minor deviations.
+> Although these Task guides were created for Danish-specific e-invoice format *OIOUBL*, they are applicable for other supported countries/regions with minor deviations.
