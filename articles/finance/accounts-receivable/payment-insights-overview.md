@@ -39,7 +39,7 @@ This topic describes the payment insights capability that helps improve understa
 
 ## Overview
 
-Organizations often find it challenging to predict when customers will pay their invoices. This lack of insight leads to less accurate cash flow forecasts, collections processes that start too late, and orders that are released to customers who may default on their payment. Customer payment insights (Preview) helps organizations predict when a customer invoice will be paid, helping organization create collections strategies that improve the probability of being paid on time. 
+It can be hard to predict when customers will pay their invoices. This lack of insight leads to less accurate cash flow forecasts, collections processes that start too late, and orders that are released to customers who may default on their payment. Customer payment insights (Preview) helps organizations predict when a customer invoice will be paid, helping organization create collections strategies that improve the probability of being paid on time. 
 
 ## Predictions
 
