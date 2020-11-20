@@ -5,7 +5,7 @@ title: Configure data import from SharePoint
 description: This topic explains how to import data from Microsoft SharePoint.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/18/2020
+ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -61,7 +61,7 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
 
 - Excel file **1099import-data.xlsx**, with vendor transactions that should be imported.
 
-![Sample Microsoft Excel file for importing from SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Sample  Excel file for importing from SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > The format for importing vendor transactions is selected as the default model mapping. Therefore, if you run a model mapping of the **1099 Payments model**, and that model mapping is of the **To destination** type, the model mapping runs this format to import data from external files. It then uses that data to update application tables.
@@ -132,7 +132,7 @@ You can also open the **File states for the sources** page by selecting **Organi
     - **Failed** – Assigned automatically by an ER report when the file import completed with errors or exceptions.
     - **On hold** – Assigned manually by user on this page. This status means that the file will not be imported for now. This status can be used to postpone the import of some files.
 
-    [![ER file states page for the selected sources](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
+    [![Refreshed ER file states page for the selected sources](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
 ## Import data from SharePoint files
 1. Open the ER configurations tree, select the **1099 Payment model**, and expand the list of ER model components.
@@ -144,7 +144,7 @@ You can also open the **File states for the sources** page by selecting **Organi
 
     In this example, you're importing only one file. However, if there are multiple files, they are selected for importing in the order in which they were added to the SharePoint folder. Every run of an ER format imports a single selected file.
 
-    [![Run ER model mapping](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
+    [![Import from SharePoint and run ER model mapping](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
 4. The model mapping can run [unattended](#limitations) in batch mode. In this case, every time that a batch runs this ER format, a single file is imported from the configured file sources.
 
@@ -156,7 +156,7 @@ You can also open the **File states for the sources** page by selecting **Organi
 
 6. On the **File states for the sources** page, select **Refresh** to refresh the page.
 
-    [![ER file states page for the selected sources](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
+    [![ER file states for the sources page](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
 
 7. In the **Files** section, review the list of files. The **Sources log for the import format** section provides the history of the Excel file import. Because this file was successfully imported, it's marked as **Deleted** in the SharePoint folder.
 8. Review the **Files import source (main)** SharePoint folder. The Excel files that were successfully imported have been deleted from this folder.
@@ -186,7 +186,7 @@ You can also open the **File states for the sources** page by selecting **Organi
 
     Note that the Infolog contains a notification that there's a file in the SharePoint folder that contains incorrect vendor account and can’t be imported.
 
-    [![Run ER model mapping](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
+    [![Finished Run ER model mapping](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
 10. On the **File states for the sources** page, select **Refresh**, and then, in the **Files** section, review the list of files.
 
