@@ -2,7 +2,7 @@
 # required metadata
 
 title: Number of books per journal
-description: This topic describes the relationship between journal and asset books when you create a fixed asset acquisition or depreciation proposal through batch job. You can define the maximum number of books to be included per acquisition and for depreciation using the Number of books per journal parameter group. 
+description: This topic describes the relationship between journals and asset books when you create a fixed asset acquisition or depreciation proposal through a batch job. You can define the maximum number of books to be included per acquisition and for depreciation using the Number of books per journal parameter group. 
 author: moaamer
 manager: Ann Beebe
 ms.date: 11/19/2020
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the relationship between journal and asset books when you create a fixed asset acquisition or depreciation proposal through batch job. You can define the maximum number of books to be included per acquisition and for depreciation using the **Number of books per journal** parameter group. //You can also define the maximum number of books to be included per acquisition and depreciation journal using the same parameter group//. //Acquisition and depreciation journals are created in a batch job.// The **Number of books per journal** parameter helps you to distribute the number of asset books per acquisition and depreciation journal. You can access this parameter by in the **General** tab of the Fixed Assets parameters page (**Fixed assets > Setup > Fixed assets parameters**).
+This topic describes the relationship between journals and asset books when you create a fixed asset acquisition or depreciation proposal through a batch job. You can define the maximum number of books to be included per acquisition and for depreciation using the **Number of books per journal** parameter group. The **Number of books per journal** parameter lets you distribute the number of asset books per acquisition and depreciation journal. You can access this parameter by in the **General** tab of the Fixed Assets parameters page (**Fixed assets > Setup > Fixed assets parameters**).
 
-The default values are for an acquisition proposal is at least 10,000 books, and for a depreciation proposal, at least 2,000 books.
+The default value are for an acquisition proposal is at least 10,000 books, and for a depreciation proposal, at least 2,000 books.
 
 If there are 4,000 fixed assets and each asset has two associated books, one book will post to the current layer, and the other book will post to the tax layer. If you acquire 4,000 fixed assets thru batch processing, the batch job that creates one fixed asset acquisition journal will contain 4,000 asset books.
 
