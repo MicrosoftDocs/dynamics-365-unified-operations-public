@@ -2791,7 +2791,9 @@
         - name: Sales tax
           href: localizations/apac-sau-sales-tax.md
         - name: Zakat reporting for Saudi Arabia
-          href: localizations/emea-sau-zakat-reporting.md          
+          href: localizations/emea-sau-zakat-reporting.md     
+        - name: Allocate bank document charges to a shipment
+          href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
       - name: Singapore
         items:
         - name: Singapore overview
