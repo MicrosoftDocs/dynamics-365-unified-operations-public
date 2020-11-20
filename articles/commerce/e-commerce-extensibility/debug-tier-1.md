@@ -5,7 +5,7 @@ title: Configure an e-commerce development environment against a Commerce cloud 
 description: This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 author: samjarawan
 manager: annbe
-ms.date: 11/06/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
