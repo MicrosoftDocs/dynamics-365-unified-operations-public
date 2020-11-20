@@ -48,7 +48,7 @@ To complete the examples in this topic, you must have the following access:
 - ER format and model configurations for 1099 payments.
 
 ### Create required ER configurations
-Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Excel format](parse-incoming-documents-excel.md). After you have completed the task guides, you will have the following set up.
+Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Excel format](parse-incoming-documents-excel.md). After you have completed the task guides, you will have the following setup.
 
 #### ER configurations
 
@@ -85,7 +85,7 @@ To store electronic report files in a SharePoint location, you must configure ac
     - Files error folder - This folder would be for files that failed to import.
 
 4. Go to **Organization administration > Document management > Document types**.
-5. Create the following document types that will be used to access the SharePoint folders that you just created. For instructions, see [Configure document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Create the following document types that will be used to access the SharePoint folders that you created. For instructions, see [Configure document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Document type       | Group              | Location      | SharePoint folder      |
 |--------------------|--------------------|---------------|------------------------|
@@ -101,7 +101,7 @@ To store electronic report files in a SharePoint location, you must configure ac
 1. Click **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
 2. On the **Electronic reporting source** page, configure the source files for data import by using the configured ER format.
 3. Define a file name mask, so that only files with the .xlsx extension are imported. The file name mask is optional and is used only when it has been defined. You can define only one mask for each ER format.
-4. Change **Sort files before import** to **Do not sort**, if there are a lot of files for import and the import order is not important
+4. Change **Sort files before import** to **Do not sort**, if there are several files for import and the import order is not important
 5. Select all SharePoint folders that you created earlier.
 
     [![ER files source setting](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
@@ -124,7 +124,7 @@ You can also open the **File states for the sources** page by selecting **Organi
 
     [![SharePoint content – Microsoft Excel file for importing](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
-2. On the **File states for the sources** page, select **Refresh** to refresh the page. Note that the Excel file that was uploaded to SharePoint appeared on this page with the status **Ready**. The following statuses are currently supported:
+2. On the **File states for the sources** page, select **Refresh** to refresh the page. The Excel file that was uploaded to SharePoint appeared on this page with the status **Ready**. The following statuses are currently supported:
 
     - **Ready** – Assigned automatically for each new file in a SharePoint folder. This status means that the file is ready for import.
     - **Importing** – Assigned automatically by an ER report when the file will be locked by the import process to prevent its usage by other processes (if many of them are running simultaneously).
@@ -184,7 +184,7 @@ You can also open the **File states for the sources** page by selecting **Organi
 8. Select **Run** to run the modified ER model mapping.
 9. Enter the voucher ID, such as **V-00002**, and then select **OK**.
 
-    Note that the Infolog contains a notification that there's a file in the SharePoint folder that contains incorrect vendor account and can’t be imported.
+    The Infolog contains a notification that there's a file in the SharePoint folder that contains incorrect vendor account and can’t be imported.
 
     [![Finished Run ER model mapping](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
