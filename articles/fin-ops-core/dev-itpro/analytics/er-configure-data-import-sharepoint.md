@@ -138,13 +138,13 @@ You can also open the **File states for the sources** page by selecting **Organi
 1. Open the ER configurations tree, select the **1099 Payment model**, and expand the list of ER model components.
 2. Select the name of the model mapping to open the list of model mappings of the selected ER model configuration.
 
-    [![ER file states page for the selected sources](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
+    [![Configuration page](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
 
 3. Select **Run** to run the selected model mapping. Because you configured file sources for the ER format, you can change the setting of the **File source** option, if needed. If you keep the setting of this option, the .xslx files are imported from the configured sources (the SharePoint folders, in this example).
 
     In this example, you're importing only one file. However, if there are multiple files, they are selected for importing in the order in which they were added to the SharePoint folder. Every run of an ER format imports a single selected file.
 
-    [![Configurations page](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
+    [![Import from SharePoint and run ER model mapping](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
 4. The model mapping can run [unattended](#limitations) in batch mode. In this case, every time that a batch runs this ER format, a single file is imported from the configured file sources.
 
