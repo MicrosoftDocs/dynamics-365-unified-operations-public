@@ -16,7 +16,7 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
         - name: One Version service updates FAQ
           href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
-        - name: Manage updates and the custom code lifecyle, including Dynamics 365 Commerce
+        - name: Manage updates and the custom code lifecycle, including Dynamics 365 Commerce
           href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
         - name: Software lifecycle policy - Cloud
           href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
@@ -72,6 +72,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.16 (February 2021)
+            href: get-started/whats-new-changed-10-0-16.md
           - name: Finance 10.0.15 (January 2021)
             href: get-started/whats-new-changed-10-0-15.md
           - name: Finance 10.0.14 (November 2020)
