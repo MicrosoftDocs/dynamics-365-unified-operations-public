@@ -5,7 +5,7 @@ title: Show pages side by side by using the Open in new window feature
 description: This article explains how to display pages side-by-side.
 author: aneesmsft
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
