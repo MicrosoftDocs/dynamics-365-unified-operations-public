@@ -57,7 +57,10 @@ To plan coverage for items that have an available inventory status, select the *
 
 # Examples of how to change inventory statuses
 
-You can change inventory status using the periodic task *Inventory status change* or the **On-hand by location** page. When using the periodic task *Inventory status change*, you can select which records to include and set the task to run in the batch at the desired interval. To change inventory status as an ad-hoc process, go to **On-hand by location** page, select the relevant records, and then select the **Inventory status change** button.
+You can change inventory statuses either by using the **On-hand by location** page or by using the *Inventory status change* periodic task.
+
+- When using the *Inventory status change* periodic task, you can select which records to include and set the task to run in the batch at the desired interval.
+- To change inventory status as an ad-hoc process, go to **On-hand by location** page, select the relevant records, and then select the **Inventory status change** button.
 
 > [!NOTE]
 > The *Change the inventory status of items controlled by tracking dimensions* feature allows you to change the inventory status of items controlled by tracking dimensions, including the ability to update only selected records. Use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the feature as needed. When the feature is enabled, you'll be able to do the following:
