@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer payment insights (Preview)
-description: This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices and can identify circumstances that justify initiating collection processes earlier than you have done otherwise.
+description: This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.8
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices and that can identify circumstances that justify initiating collection processes earlier than you might have done otherwise. 
+This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise. 
 
 ## Overview
 
@@ -47,13 +47,13 @@ Payment predictions will enable organizations to improve their business processe
 
 Using a machine learning model, which leverages historical invoices, payments and customer data, Customer payment insights (Preview) more accurately predicts when a customer will pay an outstanding invoice.
 
-For each open invoice, Customer payment insights (Preview) predicts three payment probabilities:
+For each open invoice, Customer payment insights (Preview) can predict three payment probabilities:
 
 -	Probability of payment being made on time 
 -	Probability of payment being made late
 -	Probability of payment being made very late
 
-To help Organizations understand the total payment amount they can expect from a customer in one of the three buckets, On time, Late and Very late, Customer payment insights (Preview) also provides an aggregated view of expected payments.
+Customer payment insights (Preview) also provides an aggregated view of expected payments, which can help organizations understand the total payment amount they can expect from a customer in one of the three buckets, On time, Late and Very late.
 
 [![Aggregated view of payment predictions](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
