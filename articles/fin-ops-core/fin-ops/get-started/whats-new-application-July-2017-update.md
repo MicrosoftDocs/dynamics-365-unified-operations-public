@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
