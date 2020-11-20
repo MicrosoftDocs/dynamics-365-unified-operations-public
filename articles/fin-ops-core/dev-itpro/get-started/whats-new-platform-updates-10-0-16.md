@@ -70,7 +70,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com/Issue/).
 
 ### Dynamics 365: 2020 release wave 2 plan
 
