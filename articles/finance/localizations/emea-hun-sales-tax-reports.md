@@ -54,7 +54,7 @@ This report also includes the same information for each partner separately, and 
    * **Sales tax declaration info Itemized Excel format (HU)**
    * **Sales tax declaration info report format (HU)**
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 3. On the **Sales tax** tab, on the **VAT statement** FastTab, set the **Enable to print itemized VAT statement** option to **Yes** to use the **Sales tax declaration info Itemized Excel format (HU) ER format and generate the Itemized VAT statement report**.
