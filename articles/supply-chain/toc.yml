@@ -72,12 +72,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.15 (December 2020)
+          - name: Supply Chain Management 10.0.16 (February 2021)
+            href: get-started/whats-new-scm-10-0-16.md
+          - name: Supply Chain Management 10.0.15 (January 2021)
             href: get-started/whats-new-scm-10-0-15.md
           - name: Supply Chain Management 10.0.14 (November 2020)
             href: get-started/whats-new-scm-10-0-14.md
-          - name: Supply Chain Management 10.0.13 (October 2020)
-            href: get-started/whats-new-scm-10-0-13.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -144,7 +144,7 @@
           href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure and filter workspaces
           href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Show pages side by side by using the Open in new window feature
+        - name: Show pages side-by-side by using the Open in new window feature
           href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/supply-chain/toc.json
         - name: Keyboard shortcuts
           href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/supply-chain/toc.json

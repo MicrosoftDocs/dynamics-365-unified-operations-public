@@ -163,8 +163,12 @@ To install a new certificate on a developer environment, replace the public key 
 
 ## Additional resources
 
+[Get started with e-commerce online extensibility development](sdk-getting-started.md)
+
 [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
+
+[Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)

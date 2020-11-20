@@ -94,6 +94,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.16 (February 2021)
+            href: get-started/whats-new-commerce-10-0-16.md
           - name: Commerce 10.0.15 (January 2021)
             href: get-started/whats-new-commerce-10-0-15.md
           - name: Commerce 10.0.14 (November 2020)
@@ -166,7 +168,7 @@
           href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/commerce/toc.json
         - name: Configure and filter workspaces
           href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/commerce/toc.json
-        - name: Show pages side by side by using the Open in new window feature
+        - name: Show pages side-by-side by using the Open in new window feature
           href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/commerce/toc.json
         - name: Keyboard shortcuts
           href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/commerce/toc.json
@@ -1994,21 +1996,23 @@
           href: e-commerce-extensibility/overview.md
         - name: Get started
           items:
+          - name: Get started with e-commerce online extensibility development
+            href: e-commerce-extensibility/sdk-getting-started.md
           - name: System requirements
             href: e-commerce-extensibility/system-requirements.md
           - name: Set up a development environment
             href: e-commerce-extensibility/setup-dev-environment.md
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
-          - name: Debug against a Tier 1 Commerce development environment
+          - name: Configure an e-commerce development environment against a Commerce cloud environment
             href: e-commerce-extensibility/debug-tier-1.md
           - name: Set up Azure DevOps code sharing and create a build pipeline
             href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
           items:
-          - name: Architectural overview
+          - name: E-commerce architectural overview
             href: e-commerce-extensibility/architectural-overview.md
-          - name: Online components
+          - name: E-commerce components
             href: e-commerce-extensibility/ecommerce-components.md 
           - name: CLI command reference
             href: e-commerce-extensibility/cli-command-reference.md
