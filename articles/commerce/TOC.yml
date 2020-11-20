@@ -326,6 +326,8 @@
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
             - name: Calculation of tax exemption
               href: tax-exempt-price-inclusive.md
+            - name: Configure sales tax for online orders
+              href: sales-tax-config.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
@@ -718,10 +720,14 @@
           href: hybrid-customer-orders.md
         - name: Recall order operation in POS
           href: enhancedorderrecall.md
+        - name: Enable multiple pickup delivery modes
+          href: multiple-pickup-modes.md
       - name: Sales orders   
         items:
-        - name: Create a call center order 
+        - name: Create call center orders 
           href: tasks/create-call-center-orders.md
+        - name: Customize transactional emails by mode of delivery
+          href: customize-email-delivery-mode.md
         - name: Change mode of delivery in POS
           href: POS-change-delivery-mode.md
       - name: Distributed order management   
@@ -964,6 +970,8 @@
           href: dam-crop-images.md 
         - name: Customize image focal points
           href: dam-custom-focal-point.md
+        - name: Upload and serve static files
+          href: upload-serve-static-files.md
       - name: Make your site compliant
         items:
         - name: Compliance overview
