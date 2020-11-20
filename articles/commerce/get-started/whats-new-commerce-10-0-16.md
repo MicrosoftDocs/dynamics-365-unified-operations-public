@@ -44,9 +44,11 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- Use the Dynamics 365 Commerce pricing engine with Dynamics 365 Sales<br> - For more information, see [Use the Dynamics 365 Commerce pricing engine with Dynamics 365 Sales<](../dev-itpro/data-entities/dual-write/commerce-pricing.md)
-- Customize transactional emails by mode of delivery<br> - For more information, see [Customize transactional emails by mode of delivery](../customize-email-delivery-mode.md)
+- Use the Dynamics 365 Commerce pricing engine with Dynamics 365 Sales<br> - For more information, see [Use the Dynamics 365 Commerce pricing engine with Dynamics 365 Sales<](../dev-itpro/data-entities/dual-write/commerce-pricing.md).
+- Customize transactional emails by mode of delivery<br> - For more information, see [Customize transactional emails by mode of delivery](../customize-email-delivery-mode.md).
 - Upload and serve static files<br> - For more information, see [Upload and serve static files](../upload-serve-static-files.md).
+- Remove system discounts<br> - For more information, see [Online and offline point of sale (POS) operations](../pos-operations.md)
+- Enable multiple pickup delivery modes for customer orders<br> - For more information, see [Enable multiple pickup delivery modes for customer orders](../multiple-pickup-modes.md)
 
 - [Commerce localization for Brazil](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - For more information, see [Commerce localization for Brazil](../localizations/latam-bra-commerce-localization.md).
 
