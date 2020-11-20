@@ -63,7 +63,7 @@ For more information in setting up a Front Door for your Commerce site, review t
 ## Option Comparisons
 
 ### Option A : Dynamics 365  Commerce Azure Front Door
-
+<!--
 <table>
  <tbody>
    <tr>
@@ -94,14 +94,14 @@ For more information in setting up a Front Door for your Commerce site, review t
    </tr>
  </tbody>
 </table>
-
+-->
 
 ![Commerce Azure Front Door](media/Commerce_CDN-Option_CommerceFrontDoor.png) 
 
 
 
 ### Option B: Customer Owned Azure Front Door
-
+<!--
 <table>
 <tbody>
 <tr>
@@ -131,14 +131,14 @@ For more information in setting up a Front Door for your Commerce site, review t
 </tr>
 </tbody>
 </table>
-
+-->
 
 ![Customer Owned Azure Front Door](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png) 
 
 
 
 ### Option C: External Front Door Option
-
+<!--
 <table>
 <tbody>
 <tr>
@@ -167,6 +167,6 @@ For more information in setting up a Front Door for your Commerce site, review t
 </td>
 </tbody>
 </table>
-
+-->
 
 ![External Front Door](media/Commerce_CDN-Option_ExternalFrontDoor.png) 
