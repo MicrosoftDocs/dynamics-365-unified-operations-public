@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.9
 
 In the **Template structure** pane of the [Business document management](er-business-document-management.md) template editor, you can modify a business document template by [adding new fields](er-bdm-add-field-to-excel-template.md) to a template in Microsoft Excel. The structure of the template is then automatically updated in Dynamics 365 Finance, so that it reflects the changes that you made in the **Template structure** pane.
 
-You can also modify a template by using Office 365 online functionality. For example, you can add a new named item, such as a picture or shape, to the editable worksheet. In this case, the structure of the template isn't automatically updated in Finance, and the item that you added doesn't appear in the **Template structure** pane. You must manually update the template structure in Finance by selecting **Update structure** on the template editor page.
+You can also modify a template by using Office 365 online functionality. For example, you can add a new named item, such as a picture or shape, to the editable worksheet. In this case, the structure of the template isn't automatically updated in Finance, and the item that you added doesn't appear in the **Template structure** pane. Manually update the template structure in Finance by selecting **Update structure** on the template editor page.
 
 For more information about this feature, complete the following example.
 
