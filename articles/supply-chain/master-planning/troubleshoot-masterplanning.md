@@ -73,7 +73,7 @@ When you use operation scheduling where there is finite capacity, and where the 
 
 If it's essential that no overbooking occur for operation scheduling, you can make the scheduling part of master planning single-threaded by turning on the **Accurate finite capacity for Operation Scheduling** option on the **Master planning parameters** page. This option isn't available by default. You must manually add it to the page by using personalization features. When you use this option, scheduling will run more slowly because of the lack of parallel processing.
 
-## Planned orders performance issues
+## Planned orders take a long time to update.
 
 ### Issue description
 
