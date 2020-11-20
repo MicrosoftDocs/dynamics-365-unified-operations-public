@@ -1994,21 +1994,23 @@
           href: e-commerce-extensibility/overview.md
         - name: Get started
           items:
+          - name: Get started with e-commerce online extensibility development
+            href: e-commerce-extensibility/sdk-getting-started.md
           - name: System requirements
             href: e-commerce-extensibility/system-requirements.md
           - name: Set up a development environment
             href: e-commerce-extensibility/setup-dev-environment.md
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
-          - name: Debug against a Tier 1 Commerce development environment
+          - name: Configure an e-commerce development environment against a Commerce cloud environment
             href: e-commerce-extensibility/debug-tier-1.md
           - name: Set up Azure DevOps code sharing and create a build pipeline
             href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
           items:
-          - name: Architectural overview
+          - name: E-commerce architectural overview
             href: e-commerce-extensibility/architectural-overview.md
-          - name: Online components
+          - name: E-commerce components
             href: e-commerce-extensibility/ecommerce-components.md 
           - name: CLI command reference
             href: e-commerce-extensibility/cli-command-reference.md
