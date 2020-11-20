@@ -1,11 +1,10 @@
 ---
-
 # required metadata
 
 title: Dynamics 365 Commerce: Front Door Options Comparison
-description: This topic the differences between Front Door options with Dynamics 365 Commerce. 
+description: This topic the differences between Front Door options with Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
@@ -14,19 +13,20 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-ms.search.industry: retail
-ms.author: brshoo
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.custom: 
+ms.assetid:
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: gmohanv
+ms.search.validFrom: 2020-11-01
+ms.dyn365.ops.version: 10.0.14
 
 ---
 
