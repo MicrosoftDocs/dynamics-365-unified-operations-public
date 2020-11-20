@@ -73,12 +73,12 @@ This issue is probably caused by open work. Either complete the work or receive 
 
 ### Issue description
 
-When you use an item that has a "batch above" reservation hierarchy, the **Release to warehouse** command on the **Load planning workbench** page for a partial quantity doesn't work. You receive this error message, and no work is created for the partial quantity.
+When you use an item that has a "batch above" reservation hierarchy (with the **Batch number** dimension placed *above* the **Location** dimension), the **Release to warehouse** command on the **Load planning workbench** page for a partial quantity doesn't work. You receive this error message, and no work is created for the partial quantity.
 
-However, if you use an item that has a "batch below" reservation hierarchy, you can release a load from the **Load planning workbench** page for a partial quantity.
+However, if you use an item that has a "batch below" reservation hierarchy (with the **Batch number** dimension placed *below* the **Location** dimension), you can release a load from the **Load planning workbench** page for a partial quantity.
 
 ### Issue resolution
 
-This behavior is by design. If you put a dimension above **Location** in the reservation hierarchy, it must be specified before the release to the warehouse. Microsoft has evaluated this issue and has determined that it's a feature limitation during releases to the warehouse from the load planning workbench. Partial quantities can't be released if some dimensions above **Location** aren't specified.
+This behavior is by design. If you put a dimension above the **Location** dimension in the reservation hierarchy, it must be specified before the release to the warehouse. Microsoft has evaluated this issue and has determined that it's a feature limitation during releases to the warehouse from the load planning workbench. Partial quantities can't be released if one or more dimensions above **Location** aren't specified.
 
 For more information, see [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).
