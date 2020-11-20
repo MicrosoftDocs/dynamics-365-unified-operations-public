@@ -126,6 +126,16 @@ After you've completed all your changes, you can build a zip file package and up
 
 ## Additional resources
 
+[System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
+
+[Set up a development environment](setup-dev-environment.md)
+
+[Configure a development environment (.env) file](configure-env-file.md)
+
+[Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
+
+[Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
+
 [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 
 [E-commerce architectural overview](architectural-overview.md)
@@ -138,17 +148,11 @@ After you've completed all your changes, you can build a zip file package and up
 
 [Data actions](data-actions.md)
 
-[set up an Azure DevOps build pipeline for code sharing and build management](set-up-code-sharing-build-pipeline.md)
-
-[Configure a development (.env) file](configure-env-file.md)
-
 [Test modules with mock data](test-module-mock.md)
 
 [Test data action with mocks](test-data-action-mocks.md)
 
-[test modules by using page mocks](test-page-mock.md)
-
-[Debug against a tier 1 Commerce development environment](debug-tier-1.md)
+[Test modules by using page mocks](test-page-mock.md)
 
 [Create a new theme](create-theme.md)
 
