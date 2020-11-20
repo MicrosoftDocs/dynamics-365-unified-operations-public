@@ -48,7 +48,7 @@ This task guide will show how to record vendor invoices that are not associated 
     * The **Due date** will be calculated based on the Terms of payment.  
     * The **Cash discount** will default from the Vendor account.
 12. If you have enabled Vendor invoice journal workflow, click **Workflow > Submit**.
-    * At the time of approval, if the transaction posting date falls within a period that is On hold or Closed for ledger posting, the date will be advanced to the first day of the next open period.
+    * When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is On hold or Closed for ledger posting.
 12. Click **Post**.
 13. Close the page.
 
