@@ -4,8 +4,8 @@
 title: Preview of Dynamics 365 Supply Chain Management 10.0.16 (February 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.16. 
 author: kamaybac
-manager: tfehr
-ms.date: 11/19/2020
+manager: annbe
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -95,7 +95,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.16 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.16, sign in to Lifecycle Services (LCS) and view the [KB article](#). <!-- KFM: find link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.16, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=528995&dbType=3&qc=267a545fabd24e111868bedc16716f5713a785ed096cdb6209526f41631e41db)
 
 ### Dynamics 365: 2020 release wave 2 plan
 
