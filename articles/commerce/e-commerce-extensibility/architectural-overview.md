@@ -75,6 +75,6 @@ The compiled partner package contains both the SDK and a module library. The SDK
 
 ## Additional resources
 
-[e-Commerce components](ecommerce-components.md)
+[E-commerce components](ecommerce-components.md)
 
 [CLI command reference](cli-command-reference.md)
