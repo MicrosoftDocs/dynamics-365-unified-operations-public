@@ -1756,7 +1756,7 @@
           href: localizations/emea-invoice-processing.md
         - name: Issue an EU entry certificate
           href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
-        - name: OIOUBL standards
+        - name: Supported standards for electronic invoicing
           href: localizations/emea-oioubl-standards-electronic-invoicing.md
         - name: Original invoice reference (Eastern Europe)
           href: localizations/tasks/ee-00004-original-invoice-reference.md
@@ -2006,6 +2006,8 @@
               href: localizations/apac-ind-news-letter-10-0-12.md
             - name: What's new or changed in 10.0.13
               href: localizations/ind-news-letter-10-0-13.md
+            - name: What's new or changed in 10.0.14
+              href: localizations/apac-ind-news-letter-10-0-14.md 
           - name: India GST reference groups
             href: localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
@@ -2554,6 +2556,8 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+        - name: VAT declaration with registers (JPK_V7M, VDEK)
+          href: localizations/emea-pol-vdek.md
       - name: Qatar
         items: 
         - name: Qatar overview
@@ -3736,14 +3740,18 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
         - name: Trace execution of ER formats to troubleshoot performance issues
           href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-        - name: Business document management 
+        - name: Business document management (BDM)
           items:
-          - name: Business document management overview
+          - name: BDM overview
             href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-          - name: New document user interface in Business document management
-            href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
-          - name: Add new fields to a business document template in Microsoft Excel
-            href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+          - name: New document user interface in BDM
+            href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
+          - name: Edit business document templates in BDM 
+            items:
+            - name: Add new fields to a business document template in Microsoft Excel
+              href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+            - name: Update the structure of a business document template
+              href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/finance/toc.json
       - name: ER framework API
         items: 
         - name: Extend the list of built-in functions

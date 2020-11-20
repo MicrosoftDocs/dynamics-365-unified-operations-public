@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md",
+      "redirect_url": "setup-deploy-on-premises-pu12",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/edit-audit-retail-transactions.md",
       "redirect_url": "edit-cash-trans",
       "redirect_document_id": "false"
