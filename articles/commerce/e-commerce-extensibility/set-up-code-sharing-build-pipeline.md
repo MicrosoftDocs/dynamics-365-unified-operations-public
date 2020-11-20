@@ -206,8 +206,12 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
 ## Additional resources
 
+[Get started with e-commerce online extensibility development](sdk-getting-started.md)
+
 [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
 
 [Set up a development environment](setup-dev-environment.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
+
+[Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
