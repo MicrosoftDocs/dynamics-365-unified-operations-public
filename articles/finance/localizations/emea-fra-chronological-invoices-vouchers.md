@@ -43,7 +43,7 @@ In some countries, there is a legal requirement that all invoices and related vo
 -   Free text credit note voucher
 -   Sales invoice
 -   Sales invoice voucher
--   Sales credit note
+-   Sales credit note 
 -   Sales credit note voucher
 
 ## Prerequisites
