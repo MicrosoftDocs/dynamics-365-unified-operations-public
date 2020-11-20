@@ -117,9 +117,14 @@ When the Retail Server is configured with HTTP instead of HTTPS, you may receive
 ### Retail calls are failing 404 error
 404 errors may result if the channel ID and OUN are incorrect. To avoid those errors, ensure that the channel ID and OUN are correct in the **.env** file. See the [Configure a development environment (.env) file](configure-env-file.md) topic for details.
 
-
 ## Additional resources
 
-[Setup a development environment](setup-dev-environment.md)
+[Get started with e-commerce online extensibility development](sdk-getting-started.md)
+
+[System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
+
+[Set up a development environment](setup-dev-environment.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
+
+[Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
