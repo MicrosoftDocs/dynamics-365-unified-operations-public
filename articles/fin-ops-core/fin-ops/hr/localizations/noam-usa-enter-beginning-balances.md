@@ -3,7 +3,7 @@
 
 title: Enter payroll beginning balances
 description: The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for Partners to migrate or transfer data for a new Payroll implementation from another system.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 
