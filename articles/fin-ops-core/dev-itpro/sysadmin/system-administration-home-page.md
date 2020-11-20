@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -129,6 +129,6 @@ The process automation framework allows administrators to view and create automa
 - [Maintenance mode](maintenance-mode.md)
 - [Preconfigured system accounts](pre-configured-system-accounts.md)
 - [Export business-to-business (B2B) users to Azure Active Directory](implement-b2b.md)
-- [Set the session idle timeout](session-idle-timeout.md)
-- [Build Odata metadata cache when AOS starts](odata-warmup.md)
+- [Set the session inactivity timeout](session-idle-timeout.md)
+- [Build OData metadata cache when AOS starts](odata-warmup.md)
 - [Configure and manage database logging](configure-manage-database-log.md)
