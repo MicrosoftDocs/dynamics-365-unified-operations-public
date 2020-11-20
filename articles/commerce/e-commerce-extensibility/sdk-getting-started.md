@@ -143,17 +143,3 @@ After you've completed all your changes, you can build a zip file package and up
 [E-commerce components](ecommerce-components.md)
 
 [Modules overview](modules-overview.md)
-
-[Create a new module](create-new-module.md)
-
-[Data actions](data-actions.md)
-
-[Test modules with mock data](test-module-mock.md)
-
-[Test data action with mocks](test-data-action-mocks.md)
-
-[Test modules by using page mocks](test-page-mock.md)
-
-[Create a new theme](create-theme.md)
-
-[Package configurations and deploy them to an online environment](package-deploy.md)
