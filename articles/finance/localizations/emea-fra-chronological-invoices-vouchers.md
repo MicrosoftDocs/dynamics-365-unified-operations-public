@@ -43,15 +43,15 @@ In some countries, there is a legal requirement that all invoices and related vo
 -   Free text credit note voucher
 -   Sales invoice
 -   Sales invoice voucher
--   Sales credit note 
+-   Sales credit note
 -   Sales credit note voucher
 
 ## Prerequisites
 
 | Category            | Prerequisite                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   | |
-| Country/region      | If the primary address of the legal entity is in **France**, set the **Chronological numbering** option to **Yes** on the **Accounts receivable parameters** page, on the **Updates** tab.                                                                                                                                                                                                |
+| Country/region  | The primary address of the legal entity must be in **France**|
+| Parameters      | Set the **Chronological numbering** option to **Yes** on the **Accounts receivable parameters** page, on the **Updates** tab.                                                                                                                                                                                                |
 | Related setup tasks | On the **Number sequences** page, define as many number sequences as you require to cover the affected fiscal periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.  |
 
 ## Set up chronological numbering
