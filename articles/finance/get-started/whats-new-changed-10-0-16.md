@@ -57,7 +57,7 @@ The following features are included in this release. The feature titles link to 
 Dynamics 365 Finance 10.0.16 includes platform updates. To learn more, see [Platform updates for version 10.0.16 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffix.lcs.dynamics.com%2FIssue%2FDetails%3FbugId%3D514518%26dbType%3D3%26qc%3D8fbe12733a7e1aa197e91fb11530f69fa89b9b39c08d89a19873f755c9430988&data=04%7C01%7CRobert.Schlomann%40microsoft.com%7C495e3dd0cca5452e926008d86bd27166%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377898874725396%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=m0cXPouayEKK9zv2s5JK45EPxPucQHLG9cOtmY8uxv4%3D&reserved=0).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=528995&dbType=3&qc=267a545fabd24e111868bedc16716f5713a785ed096cdb6209526f41631e41db).
 
 ### Regulatory updates
 For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
