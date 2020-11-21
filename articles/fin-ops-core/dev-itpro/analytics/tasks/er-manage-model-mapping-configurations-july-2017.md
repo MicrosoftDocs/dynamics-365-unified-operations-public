@@ -35,7 +35,7 @@ The following steps explain how a user assigned to the System administrator or E
 Because ER configurations are shared among companies, you can complete this task guide using the company data set of your choice. The functionality for this task guide is available if you have installed one of the following hotfixes: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 for the Dynamics AX 7.0 version or https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 for the Dynamics 365 for Operations version.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * Verify that the configuration provider for the sample company Litware, Inc. is available and marked as active. If you don't see this configuration provider, you must first complete the steps in the task guide, Create a configuration provider and mark it as active.   
+    * Verify that the configuration provider for the sample company Litware, Inc. is available and marked as active. If you don't see this configuration provider, you must first complete the steps in the task guide, Create a configuration provider, and mark it as active.   
 
 ## Add a new ER model configuration
 1. Click Reporting configurations.
@@ -63,16 +63,16 @@ Because ER configurations are shared among companies, you can complete this task
 18. Click Complete.
 19. Click OK.
 
-## Add a new ER model mapping configuration
+## Add a new ER model-mapping configuration
 1. Click Create configuration to open the drop dialog.
 2. In the New field, enter 'Model Mapping based on data model Sample data model'.
 3. In the Name field, type 'Sample mapping'.
     * Sample mapping  
 4. Click Create configuration.
 5. Expand the Prerequisites section.
-    * Note that the Implementations prerequisites group has been added automatically. The group contains the prerequisite component that refers to the parent data model configuration and is marked as Implementation. This means that this Sample mapping model mapping configuration is considered the implementation of the data model, Sample data model. Therefore, this component will force ER to download the model mapping configuration, Sample mapping from an ER repository when the model configuration, Sample data model, is downloaded.   
+    * The Implementations prerequisites group has been added automatically. The group contains the prerequisite component that refers to the parent data model configuration and is marked as Implementation. This means that this Sample-mapping model-mapping configuration is considered the implementation of the data model, Sample data model. Therefore, this component will force ER to download the model-mapping configuration, Sample mapping from an ER repository when the model configuration, Sample data model, is downloaded.   
 6. Click Designer.
-    * Note that the created model mapping configuration contains a new blank mapping with the same name as the created configuration. Be aware that when a selected parent model configuration contains model mappings, they will be copied to a new model mapping configuration.   
+    * The created model-mapping configuration contains a new blank mapping with the same name as the created configuration. When a selected parent model configuration contains model mappings, they will be copied to a new model-mapping configuration.   
 7. Click Designer.
 8. In the tree, select 'Dynamics 365 for Operations\Table'.
 9. Click Add root.
@@ -116,9 +116,9 @@ Because ER configurations are shared among companies, you can complete this task
 16. Click Run.
     * On the Versions FastTab, click Run.  
 17. Click OK.
-    * Review the output that contains the name of the company in which the user who is running this format configuration is logged into. Note that the created model mapping configuration is used by this format configuration because there is only one configuration available that contains required model mappings.   
+    * Review the output that contains the name of the company in which the user who is running this format configuration is logged into. The created model-mapping configuration is used by this format configuration because there is only one configuration available that contains required model mappings.   
 
-## Add alternative ER model mapping configuration
+## Add alternative ER model-mapping configuration
 1. In the tree, select 'Sample data model'.
 2. Click Create configuration to open the drop dialog.
 3. In the New field, enter 'Model Mapping based on data model Sample data model'.
@@ -154,15 +154,15 @@ Because ER configurations are shared among companies, you can complete this task
 28. Close the page.
 29. Select Yes in the Run Draft field.
 
-## Use an existing ER model mapping configuration
+## Use an existing ER model-mapping configuration
 1. In the tree, select 'Sample data model\Sample format'.
 2. Click Run.
-    * Note that the selected draft version of the ER format configuration can't be executed because there is more than one model mapping configuration available for the undefined data model that has been selected as the data source of the running ER format.   
-    * Next, you will define the alternative model mapping configuration as the one from which model mappings will be used as data sources for running ER format.   
+    * The selected draft version of the ER format configuration can't be executed because there is more than one model-mapping configuration available for the undefined data model that has been selected as the data source of the running ER format.   
+    * Next, you will define the alternative model-mapping configuration as the one from which model mappings will be used as data sources for running ER format.   
 3. In the tree, select 'Sample data model\Sample mapping (alternative)'.
-4. Select Yes in the Default for model mapping field.
+4. Select Yes in the Default for model-mapping field.
 5. In the tree, select 'Sample data model\Sample format'.
 6. Click Run.
 7. Click OK.
-    * Note that the default model mapping configuration is used by this format configuration for generating the electronic document (the created output contains the company code).  
+    * The default model-mapping configuration is used by this format configuration for generating the electronic document (the created output contains the company code).  
 
