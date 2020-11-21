@@ -272,7 +272,7 @@ public UpdateLineItemsPaymentTerminalDeviceRequest(string token, string totalAmo
 ##### AuthorizePaymentTerminalDeviceRequest
 ###### Signature
 ``` csharp
-public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnectorName, decimal amount, string currency, TenderInfo tenderInfo, string voiceAuthorization, bool isManualEntry, transactionReferencedata, isTippingEnabled, ExtensionTransaction extensionTransactionProperties)
+public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnectorName, decimal amount, string currency, TenderInfo tenderInfo, string voiceAuthorization, bool isManualEntry, Retail.PaymentSDK.Portable.PaymentTransactionReferenceData transactionReferencedata, bool isTippingEnabled, ExtensionTransaction extensionTransactionProperties)
 ```
 
 ###### Variables
@@ -287,8 +287,8 @@ public AuthorizePaymentTerminalDeviceRequest(string token, string paymentConnect
 | voiceAuthorization | The voice approval code that is sent from the POS if voice authorization is required. |
 | isManualEntry | A value that defines whether the card number was entered manually. |
 | transactionReferenceData | Merchant's transaction reference that is sent to the processor. |
-| isTippingEnabled | Indicates if tipping is supported by the payment connector. Optional.|
-| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
+| isTippingEnabled | Indicates if tipping is supported by the payment connector. Optional. The default value is **false**. |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. Optional. The default value is **null**. |
 
 
 ###### Response
