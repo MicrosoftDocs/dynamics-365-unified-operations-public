@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.14 (November 2020)
+title: What's new and changed in Dynamics 365 Commerce 10.0.14 (November 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.14. 
 author: josaw1
 manager: AnnBe
@@ -29,10 +29,10 @@ ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
 
 ---
-# Preview features in Dynamics 365 Commerce 10.0.14 (November 2020)
+# What's new and changed in Dynamics 365 Commerce 10.0.14 (November 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.14. This version has a build number of 10.0.605 and is available on the following schedule:
 

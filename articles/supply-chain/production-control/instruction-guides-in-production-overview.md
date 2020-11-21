@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 10.0.15
 
 # Provide mixed-reality Guides for workers in production
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Workers in production processes will benefit from relevant instructions that are provided at the right time in the context of their work. *Instructions* apply in several domains of work, including: assembly, service, operations, certification, and safety. Across all of these core business functions, ongoing training instructions can help empower workers to achieve more and work better.
 
 ## Introduction
@@ -128,7 +130,7 @@ To configure how Guides appear on the shop floor, go to **Mixed Reality \> Dynam
 
 Set the following fields:
 
-- **CDS environment subdomain** - This field should already show a value. This field holds the subdomain for the Common Data Service environment where you create your Guides. The subdomain is the first part of the URL and is typically named after your organization. For example, if your Common Data Service URL is "contoso.crm4.dynamics.com", you should enter *contoso* here. This value is used to compose addresses for your guides and will be encoded into the QR codes.
+- **Common Data Service subdomain** - This field should already show a value. This field holds the subdomain for the Common Data Service environment where you create your Guides. The subdomain is the first part of the URL and is typically named after your organization. For example, if your Common Data Service URL is "contoso.crm4.dynamics.com", you should enter *contoso* here. This value is used to compose addresses for your guides and will be encoded into the QR codes.
 - **QR code size** - Set the size of the rendered QR code. We recommend choosing a size that will fill most of your display screen, but not more. Typically, *15* is a good value.
 - **QR code error correction level** - Set the granularity of the QR code. Higher granularity can help increase the code's reliability, but your **QR code size** must be large enough to support the level of detail required by your selected correction level.
 

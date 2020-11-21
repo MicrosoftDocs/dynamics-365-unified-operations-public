@@ -3,7 +3,7 @@
 
 title: Support for upgrade and N-1 for India
 description: This topic provides an overview N-1 support for Commerce customers in India.
-author: DmitryAkimoff 
+author: kfend 
 manager: ezubov
 ms.date: 10/03/2018
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Retail, Operations
 # ms.custom: 
 ms.search.region: India
 ms.search.industry: Retail
-ms.author: dmakimo
+ms.author: kfend
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
 ---

@@ -28,7 +28,10 @@ ms.dyn365.ops.version: 10.0.12
 ---
 
 # Finance and Operations and Common Data Service admin reference
+
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > This functionality requires [Platform updates for version 10.0.12 of Finance and Operations apps](../get-started/whats-new-platform-update-10-0-12.md) and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
@@ -135,7 +138,7 @@ The next step in the process is to provide Common Data Service with the Finance 
 
 Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
 
-1. In Common Data Service, go to **Advanced find**.
+1. In Common Data Service, go to **Advanced find** (filter icon).
 
 2. Look for “Available Finance and Operations Entities” and select **Results**.
 

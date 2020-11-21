@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
@@ -112,3 +114,11 @@ In theory, no, you don't have to refresh the entity list. At most, you might hav
 ### Do you have guidance on when to use a virtual entity and when to use dual-write?
 
 Dual-write is only provided for a few key data entities where the data needs to be natively in Common Data Service. Those data entities are not available as virtual entities.
+
+### When adding records using virtual entities is there any way to use number sequences?
+Yes, if the Finance and Operations entity can auto generate number sequences, then it will work the same way from the virtual entity.
+
+### Why does 'search view' not work in Power Apps?
+If there are no fields added in the quick find view for the entity, then the search box does nothing. The workaround is to add one or more fields of the entity to the quick find view.
+
+

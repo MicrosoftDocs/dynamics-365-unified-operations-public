@@ -66,7 +66,7 @@ Complete the procedures in this topic to create a stock transfer order that has 
 5. Select **Close**.
 6. Select **OK**.
 
-## Validate the voucher
+## Validate the shipment voucher
 
 1. Select **Inquiries** \> **Transfer order history**.
 2. Select the record where the **Update type** field is set to **Shipment**.
@@ -86,7 +86,7 @@ Complete the procedures in this topic to create a stock transfer order that has 
 5. Select **Close**.
 6. Select **OK**.
 
-## Validate the voucher
+## Validate the receipt voucher
 
 1. Select **Inquiries** \> **Transfer order history**.
 2. Select the record where the **Update type** field is set to **Receive**.

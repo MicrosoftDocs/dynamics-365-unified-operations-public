@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure and manage database logging
+title: Configure database logging
 description: This topic provides information about database logging. It explains how to set up database logging, how to manage security and performance, and how to clean up database logs.
 author: hasaid
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure and manage database logging
+# Configure database logging
 
 [!include [banner](../includes/banner.md)]
 

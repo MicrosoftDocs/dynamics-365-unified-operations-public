@@ -74,9 +74,12 @@ As the tool runs, the following information is displayed:
 -   The number of errors that have occurred
 
 After processing is completed, the tool writes the DPLog.xml log file to the current directory. To find errors, search for ‘failed’ in the log file.
+
 ### Syntax
 
-    DP.exe direction directory database server
+```dos
+DP.exe direction directory database server
+```
 
 All arguments are optional.
 
@@ -89,7 +92,9 @@ All arguments are optional.
 
   You can view a summary of the command-line options by using the following command.
 
-    DP.exe -?
+```dos
+DP.exe -?
+```
 
 ### Stop the tool
 

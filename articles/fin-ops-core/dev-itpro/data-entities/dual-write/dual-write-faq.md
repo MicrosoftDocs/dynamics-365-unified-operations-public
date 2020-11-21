@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang:
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm:
 ms.custom: 21311
 ms.assetid:
@@ -33,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Dual-write FAQ
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic lists frequently asked questions about dual-write and provides brief answers to help you quickly get the information that you require.
 
@@ -50,7 +51,11 @@ Dual-write is transaction-based. For example, if a change in a Finance and Opera
 
 You must have two Azure Active Directory (Azure AD) applications set up for the Finance and Operations environment and two application users set up in the Common Data Service environment. These application users should contain the appropriate application IDs. For the connection to work properly, you must give the applications the relevant entity permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites.md#verify-requirements-and-grant-access).
 
-End users who are configuring dual-write mappings should have System Administrator security roles assigned in both Common Data Service and Finance and Operations environments. 
+### Do end users require any special permissions to enable or configure dual-write?
+
+End users who are configuring dual-write mappings should have System Administrator security roles assigned in both Common Data Service and Finance and Operations environments.
+
+Dual-write mappings can be accessed by multiple users, as long as all the users and environments belong to a single tenant, and the user has the required security and licenses assignment.
 
 ### I have multiple legal entities. Some of my maps are legal entity–specific or valid for only some of the legal entities. What is the best way to address this requirement? Can I apply a filter such as Company = USMF to address it?
 
@@ -70,7 +75,7 @@ After the bootstrapping is done, you can configure the initial synchronization t
 
 The integration key is the natural key that uniquely identifies records. Integration keys are required only for Common Data Service entities. You can manually create an integration key in dual-write. An integration key can also be automatically created from the entity's alternate keys, if an alternate key is already provided for the entity. Integration keys are used for the same purpose as alternate keys: they provide an efficient and accurate way to integrate data with external systems. Integration keys are essential in cases where an external system doesn't store the globally unique identifiers (GUIDs) that uniquely identify records in Common Data Service.
 
-Dual-write uses integration keys to uniquely identify records, by using one or more entity field values that represent a unique combination. For example, to identify an account record by using an integration key, you can use the account number field. Alternatively, you can use the account number field together with other fields that have values that should not change. For more information, see [Define alternate keys using Power Apps portal](https://docs.microsoft.com/powerapps/maker/common-data-service/define-alternate-keys-portal.md).
+Dual-write uses integration keys to uniquely identify records, by using one or more entity field values that represent a unique combination. For example, to identify an account record by using an integration key, you can use the account number field. Alternatively, you can use the account number field together with other fields that have values that should not change. For more information, see [Define alternate keys using Power Apps portal](https://docs.microsoft.com/powerapps/maker/common-data-service/define-alternate-keys-portal).
 
 It's important that keys be matched between the Finance and Operations environment and the Common Data Service environment. Otherwise, issues might occur during the initial synchronization phase.
 

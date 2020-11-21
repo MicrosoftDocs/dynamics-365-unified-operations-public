@@ -121,6 +121,9 @@ A workflow instance that has stopped because of an unrecoverable error will have
 
 You can use the **Workflow history** page to reset the workflow status to **Draft**. You can open this page from **Vendor invoice**  or from the **Common > Inquires > Workflow** navigation. To reset the workflow status to **Draft**, select **Recall**. You can also reset the workflow status to Draft by selecting the **Recall** action on the **Vendor invoice** or **Pending vendor invoices** page. After the workflow status is reset to **Draft**, it becomes available for editing on the **Vendor invoice** page.
 
+## Viewing the invoice total on the Pending vendor invoices page
+You can view the invoice total on the **Pending vendor invoices** page by enabling the **Display invoice total on pending vendor invoices list** parameter on the **Accounts payable parameters** page. 
+
 
 
 ## Additional resources

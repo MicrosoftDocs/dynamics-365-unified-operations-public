@@ -2,7 +2,7 @@
 # required metadata
 title: PageLinkDesign type
 description: Pagelink design object type.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -88,7 +88,7 @@ background: string (optional)
 
 Sets the background color.
 If "theme" is used, then the color will match the app's theme color. <br>
-![Image of available colors](../../../platform/media/colors_pagelink.PNG)
+![Image of available background colors](../../../platform/media/colors_pagelink.PNG)
 
 
 ### bindings
@@ -118,7 +118,7 @@ This will modify the color of all headers, items, labels, and icons within the c
 Consider setting the background color at the same time as necessary when setting this attribute.<br>
 Note: if color is set to "theme", the theme color of the app will be used.<br>
 The following colors are available: <br>
-![Image of available colors](../../../media/colors.PNG)
+![Image of available foreground colors](../../../media/colors.PNG)
 
 > Inherited from [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color)
 
@@ -145,7 +145,7 @@ Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-f
 
 flexSize: string (optional) 
 
-One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.
+One number or two numbers written as a string. For example, "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.
 This property is an alias for the CSS property "flex". Please refer to
 [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex" property.
 

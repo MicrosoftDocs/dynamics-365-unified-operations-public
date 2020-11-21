@@ -3,7 +3,7 @@
 
 title: Server-side development (workspace X++ APIs)
 description: This topic provides details about the platform that supports the mobile phone app, which enables rich offline and mobile interactions, and an easy-to-use designer experience.
-author: RobinARH
+author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article

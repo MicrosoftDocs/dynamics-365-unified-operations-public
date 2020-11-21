@@ -5,7 +5,7 @@ title: Identify and deploy candidate selection tools
 description: Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills. 
 author: andreabichsel
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -42,22 +42,22 @@ Finding a qualified pool of candidates to fill vacancies can be difficult, espec
 7. Click Job.
 8. In the Job field, enter or select a value.
 9. Click OK.
-10. Expand the range fast tab, and add any additional information, such as department.
-11. Expand the certificates fast tab to view or edit the certificates.
-12. Expand the Skills fast tab to view or edit the skills.
-13. Expand the Education fast tab to view or edit the education criteria.
+10. Expand the Range FastTab, and add any additional information, such as department.
+11. Expand the Certificates FastTab to view or edit the certificates.
+12. Expand the Skills FastTab to view or edit the skills.
+13. Expand the Education FastTab to view or edit the education criteria.
 14. Click Execute.
 15. Click OK.
 16. Click Result.
 17. Click Result.
 18. Click Resume.
 19. Click Certificates.
-    * You can drill further into each person listed and see details regarding their education, skills, professional experience etc.  
+    * You can drill further into each person listed and see details regarding their education, skills, and professional experience.  
 20. Close the page.
 21. Close the page.
 22. Select result again.
 23. Click Report.
-    * The report will list the best matches at the top of the report.  You can see that there is a gap element listed.  This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.  
+    * The report will list the best matches at the top of the report.  You can see that a gap element is listed.  This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.  
 24. Close the page.
 25. Click Save.
 

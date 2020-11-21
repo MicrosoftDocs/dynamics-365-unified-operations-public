@@ -17,7 +17,7 @@ ms.search.form:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-douklo
-ms.search.scope: Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -32,6 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 By making dual-write solution-aware, you enable basic application lifecycle management (ALM) capabilities, such as transportation and backup/restore of dual-write entity maps across environments. You also enable scenarios where you can get solutions that are published by Microsoft or an independent software vendor (ISV) from AppSource.
 

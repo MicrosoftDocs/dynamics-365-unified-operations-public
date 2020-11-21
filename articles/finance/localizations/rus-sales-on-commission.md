@@ -36,7 +36,7 @@ The intermediary performs the following actions:
 
 - Register a facture that was issued to a third-party buyer on the **Issued** worksheet of the facture accounting journal when goods are shipped.
 - Don't register a facture in the sales book, because the goods belong to the principal, and the intermediary doesn't have the obligation to charge VAT.
-- Inform the principal about the facture details, so that the principal can reissue the facture in his or her own name.
+- Inform the principal about the facture details, so that the principal can reissue the facture in their own name.
 
 After the reissued facture is received from the principal, the commissioner registers it on the **Received** worksheet of the facture accounting journal. However, the commissioner doesn't make an entry in the purchase book.
 

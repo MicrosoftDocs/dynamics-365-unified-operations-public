@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.13
 # SST-02 declaration for Malaysia
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up and generate the SST-02 return form for legal entities in Malaysia.
 
@@ -90,9 +89,8 @@ The **Application-specific parameters** option lets you define the criteria that
 
     The following table provides an example of a configuration. However, you can use a different combination of a tax code and a name, depending on your Finance implementation.
 
-    | Form            | ReportFieldLookup                     |                                                                                                      |          |              |                          |
+    | Form (section)           | Lookup result (ReportFieldLookup)                     |        Description                                                                                              |    Line      |   Tax code           |     Name                     |
     |-----------------|---------------------------------------|------------------------------------------------------------------------------------------------------|----------|--------------|--------------------------|
-    | **Section**     | **Lookup result**                     | **Description**                                                                                      | **Line** | **Tax code** | **Name**                 |
     | PART B2-11a     | TaxableGoods5                         | Taxable goods at 5% Rate                                                                             | 1        | SST5         | Sales                    |
     | PART B2-11a     | TaxableGoods5                         | Taxable goods at 5% Rate                                                                             | 2        | SST5\_O      | Sales                    |
     | PART B2-11b     | TaxableGoods10                        | Taxable goods at 10% Rate                                                                            | 3        | SST10        | Sales                    |
@@ -127,9 +125,8 @@ The **Application-specific parameters** option lets you define the criteria that
 
 9. Repeat the previous steps for the **ReportFieldDetailed** lookup. The following table provides an example of a configuration. However, you can use a different combination of a tax code and a name, depending on your Finance implementation.
 
-    | Form           | ReportFieldDetailed      |                                                                    |          |              |                 |
+    | Form (section)         | Lookup result (ReportFieldDetailed)      |          Description                                                          |    Line      |  Tax code             |    Name             |
     |----------------|--------------------------|--------------------------------------------------------------------|----------|--------------|-----------------|
-    | **Section**    | **Lookup result**        | **Description**                                                    | **Line** | **Tax code** | **Name**        |
     | PART B1-8      | TaxableGoods\_B18        | Value of Taxable Goods Sold Value of Work Performed                | 1        | SST5         | Sales           |
     | PART B1-8      | TaxableGoods\_B18        | Value of Taxable Goods Sold Value of Work Performed                | 2        | SST10        | Sales           |
     | PART B1-8      | TaxableGoods\_B18        | Value of Taxable Goods Sold Value of Work Performed                | 3        | SST5         | SalesCreditNote |

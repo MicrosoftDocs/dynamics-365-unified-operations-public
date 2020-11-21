@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -54,6 +54,9 @@ The Retail SDK includes only a few samples of end-to-end Retail Server extension
 The following illustration shows the class structure of the extension.
 
 ![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
+
+> [!NOTE]
+> Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
 
 ## Create a new Retail Server API
 
@@ -239,6 +242,10 @@ public static class CommerceRoles
 2. To call the Retail Server extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new Retail Server APIs from the client.
 
 You don't have to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you're using Retail SDK version 10.0.10 or earlier.
+
+### Debugging RS extension
+
+To debug the RS extension project in Visual Studio. Go to **Debug > Attach to Process**. Select w3wp.exe (the IIS process for Retail Server). If there are multiple w3wp.exe processes, use the correct process based on the process ID. The retail server process ID can be found using **IIS > Worker processes** or by using the command prompt and the tasklist command.
 
 ## Generate the Typescript proxy for POS
 

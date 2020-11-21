@@ -16,7 +16,7 @@ ms.search.form:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Considerations for initial synchronization
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Before you start dual-write on an entity, you can run an initial synchronization to handle existing data on both sides: Finance and Operations apps and customer engagement apps. You can skip the initial synchronization if you don't have to sync data between the two environments.
 
@@ -74,11 +76,16 @@ This limitation applies only to the initial synchronization from Common Data Ser
 5 Attempts to get data from https://XXXX.azure-apim.net/apim... Failed
 ```
 
-In this situation, you should migrate data into the Finance and Operations app and Common Data Service separately, and skip the initial synchronization.
+As a workaround you can split the initial sync into these steps:
+
+1. Remove some of the lookup fields that are not mandatory from the dual-write entity map and bring the number of lookups to 10. 
+2. After the lookup fields are removed, save the map and do the initial sync. 
+3. After the initial sync for the first step is successful, add the remaining lookup fields and remove the lookup fields that were synced in first step. Once again make sure the number of lookup fields is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup fields are synced. 
+4. Add all the lookup fields back to the map, save the map and run the map with skip initial sync. This will enable the map for live sync mode.
 
 ### Five-minute limit for Finance and Operations data export
 
-If you're running the initial synchronization from the Finance and Operations app to Common Data Service, and the Finance and Operations data export takes more than five minutes, the initial synchronization might time out. The time-out can occur if the data entity has virtual fields that use the **postLoad** method. It can also occur if the export query isn't optimized (for example, if it has missing indexes).
+If you're running the initial synchronization from the Finance and Operations app to Common Data Service and the Finance and Operations data export takes more than five minutes, then the initial sync might time out. The time-out can happen if the data entity has virtual fields with the `postLoad` method, or the export query isn't optimized (for example, if it has missing indexes).
 
 This type of synchronization is supported in Platform update 37 (PU37) and later. Therefore, you should update your Finance and Operations app to PU37 or later.
 

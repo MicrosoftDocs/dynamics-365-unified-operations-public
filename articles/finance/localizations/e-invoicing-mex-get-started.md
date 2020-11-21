@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 10.0.12
 # Get started with the Electronic invoicing add-on for Mexico
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > The Electronic invoicing add-on for Mexico might not currently support all the functions that are available in the Comprobante Fiscal Digital por Internet (CFDI) document, and in the related integration that is built into Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
@@ -189,7 +188,7 @@ To set up the Electronic invoicing add-on in Finance, you will complete these ta
 1. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** title.
 3. Select **Repositories**.
 4. Select **Global resource \> Open**.
-5. Import **Response message model**, **CFDI error log import (MX)**, **CFDI error log import (MX)**, and **CFDI response message import (MX)**.
+5. Import **Response message model**, **CFDI error log import (MX)**, and **CFDI response message import (MX)**.
 
 #### Set up the response types
 

@@ -3,7 +3,7 @@
 
 title: AsyncService type
 description: Provides ability to perform async operations from business logic code.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -49,11 +49,7 @@ AsyncService <br>
 
 ### all
 
-
-all(...args: any [ ]): Promise &lt;any [ ]&gt;
-
-
-
+`all(...args: any [ ]): Promise <any [ ]>`
 
 #### Parameters
 
@@ -65,10 +61,8 @@ all(...args: any [ ]): Promise &lt;any [ ]&gt;
 
 ### defer
 
-
-defer &lt;T&gt;(): [Deferred](defer-ideferred.md) &lt;T&gt;
+`defer <>(): [Deferred](defer-ideferred.md) <>`
 
 Creates a deferred object which can be used to return a promise from event handlers (where applicable) and resolve/reject them asynchronously.
 
 #### Returns [Deferred](defer-ideferred.md) &lt;T&gt;
-

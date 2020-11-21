@@ -131,3 +131,8 @@ The following example resembles the previous example. It shows that you can also
 [Configure theme style presets](theme-style-presets.md)
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
+
+[Override a module library component in a theme](override-theme-component.md)
+
+[Add custom resources to your customization code](add-custom-resources.md)
+

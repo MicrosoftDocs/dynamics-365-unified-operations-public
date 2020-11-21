@@ -6,7 +6,7 @@ description: This topic describes the system tables.
 author: RobinARH
 manager: AnnBe
 ms.date: 11/06/2017
-ms.topic: reference
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104503
 ms.assetid: 90f8562a-075d-4d5a-96ec-b0ff1ae98fb5
