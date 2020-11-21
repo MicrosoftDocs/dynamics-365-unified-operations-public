@@ -36,11 +36,11 @@ Provides ability to perform async operations from business logic code.
 
 ### Hierarchy
 
-AsyncService <br>
+AsyncService
 
 ## Index
 
-### Methods
+### Method list
 
 * [all](services-business-logic-services-iasyncservice.md#all)
 * [defer](services-business-logic-services-iasyncservice.md#defer)
@@ -63,6 +63,6 @@ AsyncService <br>
 
 `defer <>(): [Deferred](defer-ideferred.md) <>`
 
-Creates a deferred object which can be used to return a promise from event handlers (where applicable) and resolve/reject them asynchronously.
+Creates a deferred object that can be used to return a promise from event handlers (where applicable) and resolve/reject them asynchronously.
 
 #### Returns [Deferred](defer-ideferred.md) &lt;T&gt;

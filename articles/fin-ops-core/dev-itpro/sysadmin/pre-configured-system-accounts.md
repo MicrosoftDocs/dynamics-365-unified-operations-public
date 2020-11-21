@@ -39,10 +39,9 @@ Pre-configured system accounts are included on deployed environments so that Mic
 > [!IMPORTANT] 
 > Do not delete these system accounts. Deleting these accounts will cause a disruption in key functionality provided by Microsoft.
 
-|                               Account detail                               |                                                                    Purpose/use case of the account                                                                    |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                  Axrunner                                  |                                   This account is used to monitor the health of the environment and provide alerts when necessary.                                    |
-|                               FRServiceUser                                | This is the Financial Reporting service user account, which is used by the Management Reporter application for integrations with Finance and Operations. |
-|                            RetailServiceAccount                            |                              This account is used for Retail services to connect to the Finance and Operations environment.                              |
-| SysHealthServiceUser or Axping (depending on the deployed product version) |                           This account is used to monitor the availability and health of the environment and provide alerts when necessary.                           |
-
+| Account detail | Purpose/use case of the account|
+|---|---|
+| `Axrunner` | This account is used to monitor the health of the environment and provide alerts when necessary. |
+| `FRServiceUser` | This account is the Financial Reporting service user account, which is used by the Management Reporter application for integrations with Finance and Operations. |
+| `RetailServiceAccount` | This account is used for Retail services to connect to the Finance and Operations environment. |
+| `SysHealthServiceUser` or `Axping` (depending on the deployed product version) | This account is used to monitor the availability and health of the environment and provide alerts when necessary. |
