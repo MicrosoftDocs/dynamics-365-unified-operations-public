@@ -2769,6 +2769,8 @@
             href: warehousing/outbound-sorting.md
           - name: Put to wall - put to store
             href: warehousing/put-to-wall-put-to-store.md
+          - name: Outbound workload visualization
+            href: warehousing/outbound-workload-visualization.md
           - name: Troubleshoot picking and packing
             href: warehousing/troubleshoot-warehouse-picking-packing.md
         - name: Replenishment
