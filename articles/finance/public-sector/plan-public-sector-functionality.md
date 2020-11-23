@@ -61,7 +61,7 @@ Budget analysis Budget analysis for revised budgets Budget analysis for actual e
 -   The **French regulatory** configuration subkey is selected.
 -   The **Use French Public sector accounting rules** option is selected on the **Budget parameters** page.
 
-Balance summary Commitment Commitment close Maintain mandats de paiement Maintain titres de recette Purchase agreement department access Purchase agreement tree Spending thresholds by category Vendor invoice payment hold history
+Balance summary Commitment close Maintain mandats de paiement Maintain titres de recette Purchase agreement department access Purchase agreement tree Spending thresholds by category Vendor invoice payment hold history
 
 ### General ledger
 
