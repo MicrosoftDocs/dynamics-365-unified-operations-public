@@ -43,7 +43,7 @@ This topic explains how to turn on the Budget proposal feature in Finance Insigh
     > [!NOTE]
     > If your deployment of Microsoft Dynamics 365 Finance is a Service Fabric deployment, you can skip this step. The Finance Insights team should already have turned on the flight for you. If you don't see the feature in the **Feature management** workspace, or if you experience issues when you try to turn it on, send email to the [Finance Insights App Preview team](mailto:fiap@microsoft.com).
 
-2. After step 1 from the previous page, **Enabled cash flow forecasting**, open the **Feature management** workspace, and follow these steps:
+2. Open the **Feature management** workspace, and follow these steps:
 
     1. Select **Check for updates**.
     2. Search for **Budget proposal**, and turn on that feature.
