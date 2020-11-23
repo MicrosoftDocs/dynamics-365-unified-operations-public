@@ -295,10 +295,9 @@ Follow these steps to configure Azure by using the Windows PowerShell script. Yo
 2. Select **PowerShell**.
 3. Create storage, if you're prompted to do so. Then upload the Windows PowerShell script to the session.
 4. Run the script.
-5. Select the device sign-in link, and enter the sign-in information.
-6. Follow the prompts to run the script.
-7. Use the information from the script output to install the **Export to Data Lake** add-in in LCS.
-8. Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).
+5. Follow the prompts to run the script.
+6. Use the information from the script output to install the **Export to Data Lake** add-in in LCS.
+7. Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).
 
 ### Manual setup
 
@@ -453,11 +452,6 @@ function New-FinanceDataLakeAzureResources {
     $AIBuilderAuthorizationServiceAppId = 'ad40333e-9910-4b61-b281-e3aeeb8c3ef3'
     $KeyVaultServicePrincipalAppId = 'cfa8b339-82a2-471a-a3c9-0fc0be7a4093'
     $GraphServicePrincipalAppId = '00000003-0000-0000-c000-000000000000'
-
-    $subscriptionContext = Connect-AzAccount
-    if ($null -eq $subscriptionContext) {
-        throw 'Unable to connect to Azure account.'
-    }
 
     Import-Module AzureAD.Standard.Preview
     $connectAzureADParameters = @{ 'Identity' = $true; 'TenantId' = $env:ACC_TID }
