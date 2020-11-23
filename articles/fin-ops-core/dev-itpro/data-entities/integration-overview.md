@@ -97,7 +97,7 @@ The following examples illustrate this point. You can't assume that the caller w
 | OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
 | Custom service | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
-| Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
+| Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md) |
 
 Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run. Here are some examples:
 
