@@ -39,7 +39,7 @@ This topic suggests the first steps to setting up Public sector functionality.
 What should I do first?
 -----------------------
 
-Before you set up Public sector and begin adding your data, consider how you'll use this capability. You consideration should identify the modules that must be set up to use Public sector functionality. Public sector integrates with the following: 
+Before you set up Public sector and begin adding your data, consider how you'll use this capability. Your consideration should identify the modules that must be set up to use Public sector functionality. Public sector integrates with the following: 
 
 ### Accounts payable
 
