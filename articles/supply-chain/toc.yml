@@ -1375,6 +1375,8 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Exclude products with certain product lifecycle states
+          href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
@@ -2769,6 +2771,8 @@
             href: warehousing/outbound-sorting.md
           - name: Put to wall - put to store
             href: warehousing/put-to-wall-put-to-store.md
+          - name: Outbound workload visualization
+            href: warehousing/outbound-workload-visualization.md
           - name: Troubleshoot picking and packing
             href: warehousing/troubleshoot-warehouse-picking-packing.md
         - name: Replenishment
@@ -2895,6 +2899,8 @@
             href: warehousing/control-warehouse-location-directives.md
           - name: Work with location directives
             href: warehousing/create-location-directive.md
+          - name: Location stocking limits
+            href: warehousing/location-stocking-limits.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
