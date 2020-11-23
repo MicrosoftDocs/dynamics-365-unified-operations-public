@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Multiple LCS projects and production environments on one Azure AD tenant
+title: Multiple LCS projects and environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ---
 
-# Multiple LCS projects and production environments on one Azure AD tenant
+# Multiple LCS projects and environments on one Azure AD tenant
 
 [!include [banner](../includes/banner.md)]
 
