@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up Ledger posting groups for sales tax
-description: Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups. 
+description: Sales tax is calculated and posted to main accounts that are specified in Ledger posting groups. 
 author: twheeloc
 manager: AnnBe 
 ms.date: 07/01/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups. Ledger posting groups are attached to each sales tax code. You can set up individual ledger posting groups for each sales tax code, use one ledger posting group for all sales tax codes or assign multiple ledger posting groups to the sales tax codes. This recording uses the DEMF demo company. 
+Sales tax is calculated and posted to main accounts that are specified in Ledger posting groups. Ledger posting groups are attached to each sales tax code. You can set up individual ledger posting groups for each sales tax code, use one ledger posting group for all sales tax codes or assign multiple ledger posting groups to the sales tax codes. This recording uses the DEMF demo company. 
 
 1. Go to **Navigation pane > Modules > Tax > Setup > Sales tax > Ledger posting groups**.
 2. Click **New**.
