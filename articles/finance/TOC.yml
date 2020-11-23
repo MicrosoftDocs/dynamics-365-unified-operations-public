@@ -986,8 +986,6 @@
         items:
         - name: Configure Finance insights
           href: finance-insights/configure-for-fin-insites.md
-        - name: Set up demo data for Payment predictions
-          href: finance-insights/set-up-demo-data.md
         - name: Enable Customer payment predictions
           href: finance-insights/enable-cust-paymnt-prediction.md
         - name: Enable Cash flow forecasting
@@ -1004,6 +1002,8 @@
           href: finance-insights/cash-position.md
         - name: Cash flow forecast
           href: finance-insights/cash-flow-forecast-intro.md
+        - name: Use external data in cash flow forecasts
+          href: finance-insights/external-data-in-cash-flow.md
         - name: Customer payment predictions
           href: finance-insights/payment-insights-overview.md
         - name: Use Customer payment predictions
@@ -1016,8 +1016,6 @@
           href: finance-insights/evaluate-payment-prediction.md
         - name: Improve the prediction model
           href: finance-insights/evaluate-payment-prediction.md
-      - name: Use external data in cash flow forecasts
-        href: finance-insights/external-data-in-cash-flow.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
