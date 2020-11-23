@@ -66,7 +66,7 @@ First, you must enable virtual entities in the **Feature management** workspace.
 
 3. Select **Virtual Entity support in HR/CDS**, and then select **Enable**.
 
-For more information about enabling and disabling features, see [Manage features](../hr-admin-manage-features.md).
+For more information about enabling and disabling features, see [Manage features](hr-admin-manage-features.md).
 
 ### Register the app in Microsoft Azure
 
