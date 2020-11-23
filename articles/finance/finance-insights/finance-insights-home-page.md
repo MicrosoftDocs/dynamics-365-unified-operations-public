@@ -64,7 +64,7 @@ Sample data is available for demo systems that have the Contoso demo data set.
 
 ### Role and permission requirements
 
-Changes will be made to Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifecycle Services (LCS), Power Apps, and Azure. Correct permissions are required across these three environments. Here are some examples of the changes that will be made:
+Changes will be made to Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifecycle Services (LCS), Power Apps, and Azure. Correct permissions are required across these environments. Here are some examples of the changes that will be made:
 
 - A new environment will be created in Microsoft Power Platform.
 - A storage account, key vault, and application will be created in Azure.
