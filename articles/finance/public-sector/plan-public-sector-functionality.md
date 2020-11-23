@@ -39,7 +39,7 @@ This topic suggests the first steps to setting up Public sector functionality.
 What should I do first?
 -----------------------
 
-Before you begin to adjust the settings and input your data, consider which modules must be set up for your Public sector organization. Public sector functionality is integrated with the following Dynamics 365 Finance modules and Microsoft products.
+Before you set up Public sector and begin adding your data, consider how you'll use this capability. You consideration should identify the modules that must be set up to use Public sector funtionality. Public sector integrates with the following: 
 
 ### Accounts payable
 
