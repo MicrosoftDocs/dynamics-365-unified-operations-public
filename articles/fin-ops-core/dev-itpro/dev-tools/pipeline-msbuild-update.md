@@ -41,7 +41,7 @@ An **Azure Pipelines** pipeline explicitly specifies the versions of **Visual St
 
 ## Determine if your pipeline needs to be updated
 
-Build and development virtual machines deployed with 10.0.13 include **Visual Studio 2017**. Support for [Visual Studio 2015 will be deprecated](../get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10011-of-finance-and-operations-apps) in the April 2021 release. If your build virtual machine does not include **Visual Studio 2017** you must plan to deploy a new build virtual machine with 10.0.13 or above, or consider using the new [hosted build pipeline](hosted-build-automation.md).
+Build and development virtual machines deployed with 10.0.13 include **Visual Studio 2017**. Support for [Visual Studio 2015 will be deprecated](../get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10011-of-finance-and-operations-apps) in the April 2021 release. If your build virtual machine does not include **Visual Studio 2017** you must plan to deploy a new build virtual machine with 10.0.13 or above, or consider using the new [hosted build pipeline](hosted-build-automation.md).
 
 If your build virtual machine has Visual Studio 2017 installed, you can use the newer versions of **MSBuild** and **VS Test**. If your pipeline was created by a virtual machine deployment prior to 10.0.13, you will have to manually update the pipeline.
 
