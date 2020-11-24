@@ -2158,6 +2158,8 @@
           href: dev-itpro/POS-APIs.md
         - name: POS payment extension
           href: dev-itpro/pos-payment-extension.md
+        - name: Support for tipping in the POS payments SDK
+          href: dev-itpro/tipping.md
         - name: Support for external gift cards
           href: dev-itpro/gift-card.md
         - name: Create and apply branding to the Retail Experience app
