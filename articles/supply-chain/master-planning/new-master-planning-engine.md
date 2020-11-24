@@ -70,7 +70,26 @@ Currently, exceptions for Planning Optimization migration are only relevant if y
 
 After the required features become available, Microsoft will provide a grace period until the exception expires. The environment admin will be informed when the required features have become available and the grace period has started.
 
+> [!NOTE]
+> You can only request an exception for production environments, not for sandbox environments. If you require to disable the Planning Optimization exception error on sandbox environments you can run the query listed below in Frequently asked questions.
+
 ## Frequently asked questions
+
+### Sandbox environments
+
+How can I use built-in master planning on my sandbox environment. Do I need an exception?
+
+**Answer:** No. An exception isn't relevant for sandbox environments. You can disable the Planning Optimization exception error on sandbox environments by running the following query in your database:
+
+```sql
+-- Insert or update an enabled flight:
+DECLARE @flightName NVARCHAR(100) = 'ReqPlanningOptimizationExceptionToggle';
+IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)
+    INSERT INTO SYSFLIGHTING(FLIGHTNAME,ENABLED, FLIGHTSERVICEID,PARTITION)
+    SELECT @flightName, 1, 12719367,RECID FROM DBO.[PARTITIONS];
+ELSE
+    UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;
+```
 
 ### On-premises environments
 
