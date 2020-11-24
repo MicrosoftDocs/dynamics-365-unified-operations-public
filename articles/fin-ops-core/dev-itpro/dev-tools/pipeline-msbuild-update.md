@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Update legacy Azure Build Pipeline
-description: This topic explains how to update the legacy Azure Build Pipeline to a newer version of Visual Studio
+title: Update a legacy pipeline in Azure Pipelines
+description: This topic explains how to update a legacy pipeline in Azure Pipelines to use a newer version of Visual Studio.
 author: jorisdg
 manager: AnnBe
 ms.date: 09/23/2020
@@ -29,22 +29,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Updating the legacy Azure Pipeline
+# Update a legacy pipeline in Azure Pipelines
 
 > [!NOTE]
-> This documentation does not apply to the [new build pipeline](hosted-build-automation.md), even if run on the build virtual machine.
+> This documentation does not apply to the [new build pipeline](hosted-build-automation.md), even if you run it on the build virtual machine.
 
 > [!NOTE]
 > Even though **Visual Studio 2017** is available on virtual machines deployed with 10.0.13 or later, the build scripts needed to support unit testing using **VSTest** require 10.0.15.
 
-The **Azure Build Pipeline** explicitly specifies a version of **Visual Studio** tools such as **MSBuild** and **VS Test**. To continue supporting newer versions of these products, new virtual machines will be deployed with newer versions of **Visual Studio** pre-installed. Any existing **Azure Build Pipeline** needs to be manually
-updated to use this newer version.
+An **Azure Pipelines** pipeline explicitly specifies the versions of **Visual Studio** tools such as **MSBuild** and **VS Test**. To continue supporting newer versions of these products, new virtual machines will be deployed with newer versions of **Visual Studio** pre-installed. Any existing pipelines need to be manually updated to use the newer version.
 
-## Identify if your pipeline needs to be updated
+## Determine if your pipeline needs to be updated
 
-Build and development virtual machines deployed with 10.0.13 include **Visual Studio 2017**. Support for [Visual Studio 2015 will be deprecated](/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10011-of-finance-and-operations-apps) in the April 2021 release. If your build virtual machine does not include **Visual Studio 2017** you must plan to deploy a new build virtual machine with 10.0.13 or above, or consider using the new [hosted build pipeline](hosted-build-automation.md).
+Build and development virtual machines deployed with 10.0.13 include **Visual Studio 2017**. Support for [Visual Studio 2015 will be deprecated](../get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10011-of-finance-and-operations-apps) in the April 2021 release. If your build virtual machine does not include **Visual Studio 2017** you must plan to deploy a new build virtual machine with 10.0.13 or above, or consider using the new [hosted build pipeline](hosted-build-automation.md).
 
-If your build virtual machine has Visual Studio 2017 installed, you can use the newer versions of **MSBuild** and **VS Test**. If your **Azure Build Pipeline** was created by a virtual machine deployment prior to 10.0.13, you will have to manually update the **Azure Build Pipeline**.
+If your build virtual machine has Visual Studio 2017 installed, you can use the newer versions of **MSBuild** and **VS Test**. If your pipeline was created by a virtual machine deployment prior to 10.0.13, you will have to manually update the pipeline.
 
 Finally, you can check your build pipeline on the **Build the solution** step. The **MSBuild Version** property indicates the version of **Visual Studio** in use.
 
@@ -53,12 +52,12 @@ Finally, you can check your build pipeline on the **Build the solution** step. T
 | MSBuild 14.0 | Visual Studio 2015 |
 | MSBuild 15.0 | Visual Studio 2017 |
 
-## Updating the Azure Build Pipeline
+## Updating the Azure Pipelines pipeline
 
 > [!NOTE]
-> To update an **Azure Build Pipeline** to use **Visual Studio 2017**, ensure your build virtual machine has been updated to version 10.0.15 or newer.
+> To update an **Azure Pipelines** pipeline to use **Visual Studio 2017**, ensure your build virtual machine has been updated to version 10.0.15 or newer.
 
-Four properties in three tasks in the **Azure Build Pipeline** have to be updated:
+Four properties in three tasks in the pipeline have to be updated:
 
 | Task Name | Task Property | Old Value | New Value|
 | --- | --- | --- | ---|
