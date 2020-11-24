@@ -46,7 +46,10 @@ Deploy the environments by following these steps.
 
 ## Configure Common Data Service
 
-You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided. Once the PowerShell script has finished running, it will give you values to use to configure Finance insights.
+You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided. Once the PowerShell script has finished running, it will give you values to use to configure Finance insights. 
+
+> [!NOTE]
+> Please open PowerShell on your PC to run the script. You may need PowerShell version 5. The Azure CLI "Try it" option may not work.
 
 # [Manual configuration steps](#tab/configuration-steps)
 
@@ -275,19 +278,22 @@ catch {
     1. Open the [Azure portal](https://portal.azure.com).
     2. Sign in by using the user ID that was used to create the Common Data Service environment.
     3. Go to **Azure Active Directory**.
-    4. Copy the **Tenant ID** value, and enter it as the Common Data Service directory ID.
+    4. Copy the **Tenant ID** value.
 
 2. Enter the user's Azure Active Directory (Azure AD) object ID:
 
     1. In the [Azure portal](https://portal.azure.com), go to **Users**, and search for the user by email address.
     2. Select the user's name.
-    3. Copy the **Object ID** value, and enter it as the Common Data Service initial user object ID.
+    3. Copy the **Object ID** value.
 
 ### Use Azure Cloud Shell to set up Finance insights Data Lake resources
 
 # [Use a Windows PowerShell script](#tab/use-a-powershell-script)
 
 A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.
+
+> [!NOTE]
+> Please follow the steps below to run the PowerShell script. The Azure CLI "Try it" option, or running the script on your PC may not work.
 
 Follow these steps to configure Azure by using the Windows PowerShell script. You must have rights to create an Azure resource group, Azure resources, and an Azure AD application. For information about the required permissions, see [Check Azure AD permissions](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
@@ -443,7 +449,7 @@ If you can't find any of the preceding applications, try the following steps.
 
 # [Azure CLI](#tab/azure-azure-cli)
 
-```azurecli-interactive
+```
 function New-FinanceDataLakeAzureResources {
     $defaultSecretExpiryInYear = 1
 
@@ -602,282 +608,283 @@ function New-FinanceDataLakeAzureResources {
     Write-Output ("  DNS name:                          " + $keyVault.VaultUri)
     Write-Output "  Secret name:                       storage-account-connection-string"
     Write-Warning "Copy this information for the System parameters as it is not saved. Azure Cloud Shell will eventually time out and close."
-    }
+}
 
-    $azureTemplate = @"
-    {
-        "contentVersion": "1.0.0.0",
-        "parameters": {
-          "aibuilderAppObjectId": {
-            "type": "string",
-            "metadata": {
-              "description": "Specifies the object ID of the AI Builder application."
-            }
-          },
-          "clientAppId": {
-            "type": "string",
-            "metadata": {
-              "description": "Specifies the application ID of client application."
-            }
-          },
-          "clientAppSecret": {
-            "type": "String",
-            "metadata": {
-              "description": "Specifies the Azure App ID client secret to in azure key vault."
-            }
-          },
-          "clientAppSpObjectId": {
-            "type": "string",
-            "metadata": {
-              "description": "Specifies the object ID of a client application service principal."
-            }
-          },
-          "userSpObjectId": {
-            "type": "string",
-            "metadata": {
-              "description": "Specifies the object ID of tenant admin service principal."
-            }
-          },
-          "microserviceSpObjectId": {
-            "type": "string",
-            "metadata": {
-              "description": "Specifies the object ID of Microsoft Dynamics ERP Microservices service principal."
-            }
-          },
-          "storageAccountType": {
-            "type": "string",
-            "defaultValue": "Standard_LRS",
-            "allowedValues": [
-              "Standard_LRS",
-              "Standard_GRS",
-              "Standard_ZRS",
-              "Premium_LRS"
-            ],
-            "metadata": {
-              "description": "Storage Account type"
-            }
-          }
-        },
-        "variables": {
-          "storageAccountApiVersion": "2019-06-01",
-          "keyVaultApiVersion": "2018-02-14",
-          "secretsPermissions": [
-            "list",
-            "get"
-          ],
-            "location": "[resourceGroup().location]",
-            "storageAccountName": "[concat('store', uniquestring(resourceGroup().id))]",
-            "keyVaultName": "[concat('keyvault', uniquestring(resourceGroup().id))]",
-            "owner": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', '8e3af657-a8ff-443c-a75c-2fe8c4bcb635')]",
-            "contributor": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
-            "storageAccountContributor": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', '17d1049b-9a84-46fb-8f53-869881c3d3ab')]",
-            "storageBlobDataOwner": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'b7e6dc6d-f1e8-4753-8033-0f276bb0955b')]",
-            "storageBlobDataReader": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', '2a2b9908-6ea1-4ae2-8e65-a410df84e7d1')]"
-          },
-          "resources": [
-            {
-              "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "[variables('storageAccountApiVersion')]",
-            "name": "[variables('storageAccountName')]",
-            "location": "[variables('location')]",
-            "sku": {
-              "name": "[parameters('storageAccountType')]"
-            },
-            "kind": "StorageV2",
-            "properties": {
-              "accessTier": "Hot",
-              "supportsHttpsTrafficOnly": true,
-              "isHnsEnabled": true
-            },
-            "resources": [
-              {
-                "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
-                "apiVersion": "2018-09-01-preview",
-                "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'1')))]",
-                "dependsOn": [
-                  "[variables('storageAccountName')]"
-                ],
-                "properties": {
-                  "roleDefinitionId": "[variables('owner')]",
-                  "principalId": "[parameters('clientAppSpObjectId')]"
-                }
-              },
-              {
-                "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
-                "apiVersion": "2018-09-01-preview",
-                "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'2')))]",
-                "dependsOn": [
-                  "[variables('storageAccountName')]"
-                ],
-                "properties": {
-                  "roleDefinitionId": "[variables('contributor')]",
-                  "principalId": "[parameters('clientAppSpObjectId')]"
-                }
-              },
-              {
-                "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
-                "apiVersion": "2018-09-01-preview",
-                "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'3')))]",
-                "dependsOn": [
-                  "[variables('storageAccountName')]"
-                ],
-                "properties": {
-                  "roleDefinitionId": "[variables('storageAccountContributor')]",
-                  "principalId": "[parameters('clientAppSpObjectId')]"
-                }
-              },
-              {
-                "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
-                "apiVersion": "2018-09-01-preview",
-                "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'4')))]",
-                "dependsOn": [
-                  "[variables('storageAccountName')]"
-                ],
-                "properties": {
-                  "roleDefinitionId": "[variables('storageBlobDataOwner')]",
-                  "principalId": "[parameters('clientAppSpObjectId')]"
-                }
-              },
-              {
-                "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
-                "apiVersion": "2018-09-01-preview",
-                "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'5')))]",
-                "dependsOn": [
-                  "[variables('storageAccountName')]"
-                ],
-                "properties": {
-                  "roleDefinitionId": "[variables('storageBlobDataReader')]",
-                  "principalId": "[parameters('aibuilderAppObjectId')]"
-                }
-              }
-            ]
-          },
-          {
-            "type": "Microsoft.KeyVault/vaults",
-            "apiVersion": "[variables('keyVaultApiVersion')]",
-            "name": "[variables('keyVaultName')]",
-            "location": "[variables('location')]",
-            "dependsOn": [
-              "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
-            ],
-            "tags": {
-            },
-            "properties": {
-              "enabledForDeployment": false,
-              "enabledForTemplateDeployment": false,
-              "enabledForDiskEncryption": false,
-              "enableRbacAuthorization": false,
-              "accessPolicies": [
-                {
-                  "objectId": "[parameters('clientAppSpObjectId')]",
-                  "tenantId": "[subscription().tenantId]",
-                  "permissions": {
-                    "secrets": "[variables('secretsPermissions')]"
-                  }
-                },
-                {
-                  "objectId": "[parameters('microserviceSpObjectId')]",
-                  "tenantId": "[subscription().tenantId]",
-                  "permissions": {
-                    "secrets": "[variables('secretsPermissions')]"
-                  }
-                },
-                {
-                  "objectId": "[parameters('userSpObjectId')]",
-                  "tenantId": "[subscription().tenantId]",
-                  "permissions": {
-                    "secrets": "[variables('secretsPermissions')]"
-                  }
-                }
-              ],
-              "tenantId": "[subscription().tenantId]",
-              "sku": {
-                "name": "Standard",
-                "family": "A"
-              },
-              "enableSoftDelete": false,
-              "networkAcls": {
-                "defaultAction": "Allow",
-                "bypass": "AzureServices"
-              }
-            }
-          },
-          {
-            "type": "Microsoft.KeyVault/vaults/secrets",
-            "name": "[concat(variables('keyVaultName'), '/', 'app-id')]",
-            "apiVersion": "[variables('keyVaultApiVersion')]",
-            "location": "[variables('location')]",
-            "dependsOn": [
-              "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
-            ],
-            "properties": {
-              "value": "[parameters('clientAppId')]"
-            }
-          },
-          {
-            "type": "Microsoft.KeyVault/vaults/secrets",
-            "name": "[concat(variables('keyVaultName'), '/', 'app-secret')]",
-            "apiVersion": "[variables('keyVaultApiVersion')]",
-            "location": "[variables('location')]",
-            "dependsOn": [
-              "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
-            ],
-            "properties": {
-              "value": "[parameters('clientAppSecret')]"
-            }
-          },
-          {
-            "type": "Microsoft.KeyVault/vaults/secrets",
-            "name": "[concat(variables('keyVaultName'), '/', 'storage-account-name')]",
-            "apiVersion": "[variables('keyVaultApiVersion')]",
-            "location": "[variables('location')]",
-            "dependsOn": [
-              "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
-            ],
-            "properties": {
-              "value": "[variables('storageAccountName')]"
-            }
-          },
-          {
-            "type": "Microsoft.KeyVault/vaults/secrets",
-            "name": "[concat(variables('keyVaultName'), '/', 'storage-account-connection-string')]",
-            "apiVersion": "[variables('keyVaultApiVersion')]",
-            "location": "[variables('location')]",
-            "dependsOn": [
-              "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
-            ],
-            "properties": {
-              "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), variables('storageAccountApiVersion')).keys[0].value, ';EndpointSuffix=core.windows.net')]"
-            }
-          }
+$azureTemplate = @"
+{
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "aibuilderAppObjectId": {
+        "type": "string",
+        "metadata": {
+          "description": "Specifies the object ID of the AI Builder application."
+        }
+      },
+      "clientAppId": {
+        "type": "string",
+        "metadata": {
+          "description": "Specifies the application ID of client application."
+        }
+      },
+      "clientAppSecret": {
+        "type": "String",
+        "metadata": {
+          "description": "Specifies the Azure App ID client secret to in azure key vault."
+        }
+      },
+      "clientAppSpObjectId": {
+        "type": "string",
+        "metadata": {
+          "description": "Specifies the object ID of a client application service principal."
+        }
+      },
+      "userSpObjectId": {
+        "type": "string",
+        "metadata": {
+          "description": "Specifies the object ID of tenant admin service principal."
+        }
+      },
+      "microserviceSpObjectId": {
+        "type": "string",
+        "metadata": {
+          "description": "Specifies the object ID of Microsoft Dynamics ERP Microservices service principal."
+        }
+      },
+      "storageAccountType": {
+        "type": "string",
+        "defaultValue": "Standard_LRS",
+        "allowedValues": [
+          "Standard_LRS",
+          "Standard_GRS",
+          "Standard_ZRS",
+          "Premium_LRS"
         ],
-        "outputs": {
-          "storageAccountName": {
-            "type": "string",
-            "value": "[variables('storageAccountName')]"
-          },
-          "keyVaultName": {
-            "type": "string",
-            "value": "[variables('keyVaultName')]"
-          }
+        "metadata": {
+          "description": "Storage Account type"
         }
       }
-    "@
+    },
+    "variables": {
+      "storageAccountApiVersion": "2019-06-01",
+      "keyVaultApiVersion": "2018-02-14",
+      "secretsPermissions": [
+        "list",
+        "get"
+      ],
+      "location": "[resourceGroup().location]",
+      "storageAccountName": "[concat('store', uniquestring(resourceGroup().id))]",
+      "keyVaultName": "[concat('keyvault', uniquestring(resourceGroup().id))]",
+      "owner": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', '8e3af657-a8ff-443c-a75c-2fe8c4bcb635')]",
+      "contributor": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
+      "storageAccountContributor": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', '17d1049b-9a84-46fb-8f53-869881c3d3ab')]",
+      "storageBlobDataOwner": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'b7e6dc6d-f1e8-4753-8033-0f276bb0955b')]",
+      "storageBlobDataReader": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', '2a2b9908-6ea1-4ae2-8e65-a410df84e7d1')]"
+    },
+    "resources": [
+      {
+        "type": "Microsoft.Storage/storageAccounts",
+        "apiVersion": "[variables('storageAccountApiVersion')]",
+        "name": "[variables('storageAccountName')]",
+        "location": "[variables('location')]",
+        "sku": {
+          "name": "[parameters('storageAccountType')]"
+        },
+        "kind": "StorageV2",
+        "properties": {
+          "accessTier": "Hot",
+          "supportsHttpsTrafficOnly": true,
+          "isHnsEnabled": true
+        },
+        "resources": [
+          {
+            "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'1')))]",
+            "dependsOn": [
+              "[variables('storageAccountName')]"
+            ],
+            "properties": {
+              "roleDefinitionId": "[variables('owner')]",
+              "principalId": "[parameters('clientAppSpObjectId')]"
+            }
+          },
+          {
+            "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'2')))]",
+            "dependsOn": [
+              "[variables('storageAccountName')]"
+            ],
+            "properties": {
+              "roleDefinitionId": "[variables('contributor')]",
+              "principalId": "[parameters('clientAppSpObjectId')]"
+            }
+          },
+          {
+            "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'3')))]",
+            "dependsOn": [
+              "[variables('storageAccountName')]"
+            ],
+            "properties": {
+              "roleDefinitionId": "[variables('storageAccountContributor')]",
+              "principalId": "[parameters('clientAppSpObjectId')]"
+            }
+          },
+          {
+            "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'4')))]",
+            "dependsOn": [
+              "[variables('storageAccountName')]"
+            ],
+            "properties": {
+              "roleDefinitionId": "[variables('storageBlobDataOwner')]",
+              "principalId": "[parameters('clientAppSpObjectId')]"
+            }
+          },
+          {
+            "type": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[concat(variables('storageAccountName'), '/Microsoft.Authorization/', guid(uniqueString(variables('storageAccountName'),'5')))]",
+            "dependsOn": [
+              "[variables('storageAccountName')]"
+            ],
+            "properties": {
+              "roleDefinitionId": "[variables('storageBlobDataReader')]",
+              "principalId": "[parameters('aibuilderAppObjectId')]"
+            }
+          }
+        ]
+      },
+      {
+        "type": "Microsoft.KeyVault/vaults",
+        "apiVersion": "[variables('keyVaultApiVersion')]",
+        "name": "[variables('keyVaultName')]",
+        "location": "[variables('location')]",
+        "dependsOn": [
+          "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
+        ],
+        "tags": {
+        },
+        "properties": {
+          "enabledForDeployment": false,
+          "enabledForTemplateDeployment": false,
+          "enabledForDiskEncryption": false,
+          "enableRbacAuthorization": false,
+          "accessPolicies": [
+            {
+              "objectId": "[parameters('clientAppSpObjectId')]",
+              "tenantId": "[subscription().tenantId]",
+              "permissions": {
+                "secrets": "[variables('secretsPermissions')]"
+              }
+            },
+            {
+              "objectId": "[parameters('microserviceSpObjectId')]",
+              "tenantId": "[subscription().tenantId]",
+              "permissions": {
+                "secrets": "[variables('secretsPermissions')]"
+              }
+            },
+            {
+              "objectId": "[parameters('userSpObjectId')]",
+              "tenantId": "[subscription().tenantId]",
+              "permissions": {
+                "secrets": "[variables('secretsPermissions')]"
+              }
+            }
+          ],
+          "tenantId": "[subscription().tenantId]",
+          "sku": {
+            "name": "Standard",
+            "family": "A"
+          },
+          "enableSoftDelete": false,
+          "networkAcls": {
+            "defaultAction": "Allow",
+            "bypass": "AzureServices"
+          }
+        }
+      },
+      {
+        "type": "Microsoft.KeyVault/vaults/secrets",
+        "name": "[concat(variables('keyVaultName'), '/', 'app-id')]",
+        "apiVersion": "[variables('keyVaultApiVersion')]",
+        "location": "[variables('location')]",
+        "dependsOn": [
+          "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
+        ],
+        "properties": {
+          "value": "[parameters('clientAppId')]"
+        }
+      },
+      {
+        "type": "Microsoft.KeyVault/vaults/secrets",
+        "name": "[concat(variables('keyVaultName'), '/', 'app-secret')]",
+        "apiVersion": "[variables('keyVaultApiVersion')]",
+        "location": "[variables('location')]",
+        "dependsOn": [
+          "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
+        ],
+        "properties": {
+          "value": "[parameters('clientAppSecret')]"
+        }
+      },
+      {
+        "type": "Microsoft.KeyVault/vaults/secrets",
+        "name": "[concat(variables('keyVaultName'), '/', 'storage-account-name')]",
+        "apiVersion": "[variables('keyVaultApiVersion')]",
+        "location": "[variables('location')]",
+        "dependsOn": [
+          "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
+        ],
+        "properties": {
+          "value": "[variables('storageAccountName')]"
+        }
+      },
+      {
+        "type": "Microsoft.KeyVault/vaults/secrets",
+        "name": "[concat(variables('keyVaultName'), '/', 'storage-account-connection-string')]",
+        "apiVersion": "[variables('keyVaultApiVersion')]",
+        "location": "[variables('location')]",
+        "dependsOn": [
+          "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]"
+        ],
+        "properties": {
+          "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), variables('storageAccountApiVersion')).keys[0].value, ';EndpointSuffix=core.windows.net')]"
+        }
+      }
+    ],
+    "outputs": {
+      "storageAccountName": {
+        "type": "string",
+        "value": "[variables('storageAccountName')]"
+      },
+      "keyVaultName": {
+        "type": "string",
+        "value": "[variables('keyVaultName')]"
+      }
+    }
+  }
+"@
 
-    try {
-      New-FinanceDataLakeAzureResources
-    }
-    catch {
-      Write-Error $_.Exception.Message
-      Write-Warning $_.Exception.StackTrace
-      $inner = $_.Exception.InnerException
-      while ($null -ne $inner) {
-        Write-Output 'Inner Exception:'
-        Write-Error $_.Exception.Message
-        Write-Warning $_.Exception.StackTrace
-        $inner = $inner.InnerException
-    }
+try {
+  New-FinanceDataLakeAzureResources
 }
+catch {
+  Write-Error $_.Exception.Message
+  Write-Warning $_.Exception.StackTrace
+  $inner = $_.Exception.InnerException
+  while ($null -ne $inner) {
+    Write-Output 'Inner Exception:'
+    Write-Error $_.Exception.Message
+    Write-Warning $_.Exception.StackTrace
+    $inner = $inner.InnerException
+  }
+}
+
 ```
 ---
 
