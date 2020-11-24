@@ -65,8 +65,8 @@ git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dyn
 | Folder | Project | Contents | Description |
 |---|---|---|---|
 | Channel Database | ChannelDatabase.csproj | Contoso.ExampleTable.ChannelDatabase.sql | A sample database extension. |
-| CommerceRuntime | CommerceRuntime.csproj | <ul><li><b>Controller</b> – Sample code for implement new Retail Server APIs.</li><li><b>Entities, Messages, and RequestHandlers</b> – Sample code for implementing the new CRT service.</li></ul> | Sample CRT extensions. |
-| ScaleUnit | ScaleUnit.csproj | The project that is required to generate the CSU package | The project that is required to generate the CSU package. |
+| CommerceRuntime | CommerceRuntime.csproj | <ul><li><b>Controller</b> – Sample code for implement new Retail Server APIs.</li><li><b>Entities, messages, and request handlers</b> – Sample code for implementing the new CRT service.</li></ul> | Sample CRT extensions. |
+| ScaleUnit | ScaleUnit.csproj | The project that is required to generate the Commerce Scale Unit (CSU) package | The project that is required to generate the CSU package. |
 
 > [!NOTE]
 > Repos aren't currently available for in-store components such as Modern point of sale (POS), Cloud POS, Hardware station, Retail scale unit, and other samples. However, Microsoft plans to make them available in later releases.
@@ -201,7 +201,7 @@ As you did for the release branch, create a hotfix branch for extension from the
 
 ### Merge the new SDK release branch to the main and development branches
 
-After a new version of the SDK samples is released, you must branch it with your new branch. Because the SDK contains only samples, you don't have to get the updated changes from the new SDK release branch.
+After a new version of the SDK samples is released, you must merge it with your new branch. Because the SDK contains only samples, you don't have to get the updated changes from the new SDK release branch.
 
 ```DOS
 git checkout master git merge release/x.x.x
