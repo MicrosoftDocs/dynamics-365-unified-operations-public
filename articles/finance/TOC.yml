@@ -1073,7 +1073,7 @@
     - name: Finance insights
       items:
       - name: Finance insights home page
-        href: finance-insights/finance-insights-admin.md
+        href: finance-insights/finance-insights-home-page.md
       - name: Configuration and administration
         items:
         - name: Configure Finance insights
@@ -1107,7 +1107,7 @@
         - name: Evaluate the initial customer payment prediction model
           href: finance-insights/evaluate-payment-prediction.md
         - name: Improve the prediction model
-          href: finance-insights/evaluate-payment-prediction.md
+          href: finance-insights/improve-model.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
