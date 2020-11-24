@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Load building workbench
-description: This procedure shows how to work with the Load building workbench. 
+description: This topic describes how to work with the load building workbench.
 author: Henrikan
 manager:  
 ms.date: 10/30/2020
@@ -28,43 +28,44 @@ ms.dyn365.ops.version: 10.0.15
 ---
 # Load building workbench
 
-The load building workbench allows you to apply load building strategies when creating loads.
+The load building workbench lets you apply load building strategies when you create loads.
 
-## Create a Load building strategy
+## Create a load building strategy
 
-Use load building strategies automatically build loads, which can be beneficial in the following situations:
+You use load building strategies to automatically build loads. This capability can be beneficial in the following situations:
 
-- When you ship a certain set of products regularly, using a load strategies saves time because you won't have to build the same load every time.
-- When you want to maximize efficiency by avoiding half full loads, load strategies can help fill each load as much as possible.
+- If you regularly ship a specific set of products, load strategies help save time, because you don't have to build the same load every time.
+- If you want to avoid half-full loads to maximize efficiency, load strategies can help fill each load as much as possible.
 
-A load building strategy class called `TMSLoadBuildingVolumeStrategy` provides a load building strategy called the *Volume-based load building strategy*. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. This is the only strategy included out of the box (but you may have other custom strategies).
+A load building strategy class that is named `TMSLoadBuildingVolumeStrategy` provides a load building strategy that is named *Volume-based load building strategy*. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. This strategy is the only strategy that is included out of the box. (However, you might have some custom strategies.)
 
-To use this strategy, select it in the **Load building strategy** field on the **Transportation management &gt; Planning &gt; Load building workbench** page.
+To use the out-of-box *Volume-based load building strategy* strategy, select it in the **Load building strategy** field on the **Load building workbench** page (**Transportation management &gt; Planning &gt; Load building workbench**).
 
-To create a load building strategy, follow these steps:
+To create a load building strategy, follow these steps.
 
-1. Go to **Transportation management &gt; Setup &gt; Load Building &gt; Load building strategies**.
-1. On the Action Pane, select **Generate class list** to make sure you have the latest versions of all classes available.
+1. Go to **Transportation management &gt; Setup &gt; Load building &gt; Load building strategies**.
+1. On the Action Pane, select **Generate class list** to make sure that you have the latest versions of all available classes.
 1. On the Action Pane, select **New**.
-1. Enter a unique **Name**, select the **Load building strategy class**, and enter a **Description** for the strategy.
+1. Enter a unique name for the strategy, select the load building strategy class for it, and enter a description.
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **Parameters**.
-1. The **Load building strategy parameters** page opens. Enter percentages in the **Value** fields values for the **Volume capacity** and **Weight capacity** to be applied for the newly created load building strategy. The value that you enter will be applied as a percentage of the total volume and weight capacity for the load.
+1. On the **Load building strategy parameters** page, select **Volume capacity** in the list, and then, in the **Value** field, enter the percentage of the load's total volume capacity that should be applied for the new load building strategy.
+1. Select **Weight capacity** in the list, and then, in the **Value** field, enter the percentage of the load's total weight capacity that should be applied for the new load building strategy.
 1. Close the **Load building strategy parameters** page.
-1. Close the **Load building strategy** page.
+1. Close the **Load building strategies** page.
 
-You can now assign the load building strategy to a load building template, or use it directly in the load planning workbench.
+You can now assign the load building strategy to a load building template. Alternatively, you can use it directly in the load planning workbench.
 
-## Use load building strategy in the load building workbench
+## Use a load building strategy in the load building workbench
 
-To use a load building strategy in the load building workbench, follow these steps:
+1. Go to **Transportation management &gt; Planning &gt; Load building workbench**.
+1. Follow one of these steps:
 
-1. Open **Transportation management &gt; Planning &gt; Load building workbench**.
-1. Do one of the following:
-    - To choose a strategy directly, select it from the **Load building strategy** drop-down list.
-    - Alternatively, if you have defined a load building template and assigned the load building strategy to the template, on the Action Pane, open the **Manage templates** tab and select Apply template to open the **Apply load building template** drop-down dialog box. Then select a template from the **Load building template name** drop-down list.
-1. On the **Load templates sequence** FastTab, select one or more [load templates](load-template.md). The workbench will attempt to fit the load into these types of containers using the sequence specified here. Typically, you would place the smallest containers at the top of the list to make sure that the smallest possible container will be selected first.
+    - Select a strategy in the **Load building strategy** field.
+    - If you've defined a load building template and assigned the load building strategy to it, on the Action Pane, on the **Manage templates** tab, select **Apply template**. Then, in the **Apply load building template** drop-down dialog box, select a template in the **Load building template name** field.
+
+1. On the **Load templates sequence** FastTab, select one or more [load templates](load-template.md). The workbench will try to fit the load into these types of containers, in the sequence that is specified here. Typically, you should put the smallest containers at the top of the list to ensure that the smallest possible container is selected first.
 1. On the Action Pane, select **Propose loads**.
 1. Review the proposed loads and proposed load lines.
-1. On the Action Pane, select **Create loads**, to create loads based on the source document lines shown on the **Proposed load lines** FastTab.
+1. On the Action Pane, select **Create loads** to create loads that are based on the source document lines on the **Proposed load lines** FastTab.
 1. Close the **Load building workbench** page.
