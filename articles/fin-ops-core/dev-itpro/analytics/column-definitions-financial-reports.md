@@ -217,7 +217,7 @@ Conditional spanning headers can span multiple columns that are based on specifi
 
 #### Example of a conditional spanning header
 
-Phyllis is creating a report for a dynamic six-month forecast. She wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts. Each month that the report is run, there is one more actual column and one less budget column. Although Phyllis can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, she decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run. Phyllis opens Report Designer, clicks **Column Definition** in the navigation pane, and opens the column definition for the report. She then enters the following information. The base period in the report definition is 4.
+A user is creating a report for a dynamic six-month forecast. The user wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts. Each month that the report is run, there is one more actual column and one less budget column. Although the user can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, the user decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run. The user opens Report Designer, clicks **Column Definition** in the navigation pane, and opens the column definition for the report. The user then enters the following information. The base period in the report definition is 4.
 
 |      Format         |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
@@ -232,7 +232,7 @@ Phyllis is creating a report for a dynamic six-month forecast. She wants the wor
 | Column Width        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Print Control       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Phyllis double-clicks a column header cell to open the **Column Header** dialog box, where she enters the following information.
+The user double-clicks a column header cell to open the **Column Header** dialog box, and enters the following information.
 
 | Field              | Value                 |
 |--------------------|-----------------------|
@@ -244,7 +244,7 @@ Phyllis double-clicks a column header cell to open the **Column Header** dialog 
 | Spread to          | BASE                  |
 | Budget header      | BASE+1 to end column  |
 
-After she has finished entering information, Phyllis clicks **OK**. She then double-clicks the column header cell in column C to open the **Column Header** dialog box, where she enters the following information.
+After entering information, the user clicks **OK**. The user then double-clicks the column header cell in column C to open the **Column Header** dialog box, and enters the following information.
 
 | Field              | Value                 |
 |--------------------|-----------------------|
@@ -536,16 +536,16 @@ To determine a company's accounting currency, follow these steps.
 
 ### Example for Currency Display and Currency Filter cells
 
-Phyllis has made the following currency selections in her column definition:
+A user has made the following currency selections in her column definition:
 
 - **Currency Filter:** Yen
 - **Currency Display:** Accounting currency from Ledger (U.S. dollars)
 
-Because of the currency filter that Phyllis selected, the report includes only transactions that were entered in Japanese yen (JPY). Because of the currency display that she selected, the report displays those transactions in the accounting currency, U.S. dollars (USD).
+Because of the currency filter that is selected, the report includes only transactions that were entered in Japanese yen (JPY). Because of the currency display that is selected, the report displays those transactions in the accounting currency, U.S. dollars (USD).
 
 #### Currency Filter and Currency Display combinations
 
-The following table shows the report results that can occur for various combinations of the options in **Currency Display** and **Currency Filter** cells because of the selections that Phyllis made. The functional currency is USD.
+The following table shows the report results that can occur for various combinations of the options in **Currency Display** and **Currency Filter** cells because of the selections that were made. The functional currency is USD.
 
 
 | Currency Display cell                        | Currency Filter cell | Report result |

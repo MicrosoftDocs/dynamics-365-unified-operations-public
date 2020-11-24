@@ -1070,6 +1070,44 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
+    - name: Finance insights
+      items:
+      - name: Finance insights home page
+        href: finance-insights/finance-insights-admin.md
+      - name: Configuration and administration
+        items:
+        - name: Configure Finance insights
+          href: finance-insights/configure-for-fin-insites.md
+        - name: Enable Customer payment predictions
+          href: finance-insights/enable-cust-paymnt-prediction.md
+        - name: Enable Cash flow forecasting
+          href: finance-insights/enable-cash-flow-forecasting.md
+        - name: Enable Budget proposals
+          href: finance-insights/enable-budget-proposal.md
+        - name: Create data integrator project
+          href: finance-insights/create-data-integrate-project.md
+      - name: Use Finance insights
+        items: 
+        - name: Budget proposals
+          href: finance-insights/budget-proposals.md
+        - name: Cash position
+          href: finance-insights/cash-position.md
+        - name: Cash flow forecast
+          href: finance-insights/cash-flow-forecast-intro.md
+        - name: Use external data in cash flow forecasts
+          href: finance-insights/external-data-in-cash-flow.md
+        - name: Customer payment predictions
+          href: finance-insights/payment-insights-overview.md
+        - name: Use Customer payment predictions
+          href: finance-insights/use-customer-payment-predictions.md
+        - name: Snapshots overview
+          href: finance-insights/payment-snapshots.md
+        - name: Results of machine learning models
+          href: finance-insights/confusion-matrix.md
+        - name: Evaluate the initial customer payment prediction model
+          href: finance-insights/evaluate-payment-prediction.md
+        - name: Improve the prediction model
+          href: finance-insights/evaluate-payment-prediction.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
@@ -3074,6 +3112,13 @@
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Personalization options with Power BI.com
+        items:
+        - name: Features available through Power BI.com integration
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+        - name: Pin Power BI.com content
+          href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+        - name: Select analytical workspaces from Power BI.com
       - name: Personalization options with Power BI
         items:
         - name: Features available through the Power BI integration

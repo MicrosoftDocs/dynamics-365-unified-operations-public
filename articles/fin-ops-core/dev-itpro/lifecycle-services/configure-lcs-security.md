@@ -103,7 +103,7 @@ You can invite users from inside or outside your organization to join your proje
 </tr>
 <tr class="even">
 <td>Project team member (prospect)</td>
-<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as his or her organization.</td>
+<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as the organization.</td>
 </tr>
 <tr class="odd">
 <td>Operations user</td>

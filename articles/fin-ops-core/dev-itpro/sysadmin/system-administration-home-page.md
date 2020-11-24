@@ -79,7 +79,7 @@ For information to help you move a database to new environment and restore a dat
 ## Security
 Finance and Operation apps uses role-based security. Access is granted only to security roles, not to individual users. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who isn't assigned to any role has no privileges.
 
-Role-based security is aligned with the structure of the business. The security roles that a user is assigned to depend on the user's responsibilities in the organization, and his or her participation in business processes. The administrator grants access to the duties that users in a role perform, not to the program elements that users must use.
+Role-based security is aligned with the structure of the business. The security roles that a user is assigned to depend on the user's responsibilities in the organization, and their participation in business processes. The administrator grants access to the duties that users in a role perform, not to the program elements that users must use.
 
 Because rules can be set up for automatic role assignment, the administrator doesn't have to be involved every time that a user's responsibilities change. After security roles and rules have been set up, business managers can control day-to-day user access, based on business data.
 
