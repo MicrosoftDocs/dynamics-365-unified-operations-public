@@ -70,6 +70,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
 - [Add custom controls to POS views](pos-custom-control.md)
 - [Point of sale (POS) payment extension](pos-payment-extension.md)
+- [Support for tipping in the POS payments SDK](tipping.md)
 - [Run the point of sale (POS) samples](pos-run-samples.md)
 - [Extend POS views to add custom columns and app bar buttons](pos-view-extension.md)
 - [Add custom controls to Modern POS (MPOS) transaction pages](pos-custom-transaction.md)
