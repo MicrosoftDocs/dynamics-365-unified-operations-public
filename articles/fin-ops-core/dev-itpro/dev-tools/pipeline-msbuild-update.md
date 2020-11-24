@@ -56,9 +56,9 @@ Finally, you can check your build pipeline on the **Build the solution** step. T
 ## Updating the Azure Build Pipeline
 
 > [!NOTE]
-> To update an **Azure Build Pipeline** to use **Visual Studio 2017**, ensure your build virtual machine has been updated to version 10.0.15.
+> To update an **Azure Build Pipeline** to use **Visual Studio 2017**, ensure your build virtual machine has been updated to version 10.0.15 or newer.
 
-Three tasks in the **Azure Build Pipeline** have to be updated:
+Four properties in three tasks in the **Azure Build Pipeline** have to be updated:
 
 | Task Name | Task Property | Old Value | New Value|
 | --- | --- | --- | ---|
