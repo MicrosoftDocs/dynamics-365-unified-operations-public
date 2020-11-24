@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Rating profiles
-description: This procedure shows how to set up data for a rating profile. 
+description: This topic describes how to set up data for rating profiles.
 author: Henrikan
 manager: 
 ms.date: 10/30/2020
@@ -29,38 +29,38 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Rating profiles
 
-A rating profile is similar to a logistics contract (though not a legal contract).
+A rating profile resembles a logistics contract (but not a legal contract). It's used to determine transportation tariffs for loads. 
 
-A rating profile is used to determine transportation tariffs for loads. A rating profile is used to associate the shipping carrier with a rate master. The rate master defines the rate base assignment and the rate base. The rate base determines the rate of the carrier.
+Each rating profile is unique to a shipping carrier. In the profile, you associate the shipping carrier with a rate master. The rate master defines the rate base assignment and the rate base. The rate base determines the rate of the carrier.
 
-A rating profile is unique for a shipping carrier. You can set up a rating profile using a generic page, which has an overview of all existing rating profiles. You can also set up the rating profile directly from the shipping carrier. The information that you set up for the rating profile is the same, regardless of how you access the setup.
+You can set up a rating profile by using a generic page that shows an overview of all existing rating profiles. Alternatively, you can set up a rating profile directly from the shipping carrier. In both cases, the information that you set up for the rating profile is the same.
 
-## Create or edit a rating profile from the Rating profile page
+## Create or edit a rating profile on the Rating profiles page
 
-To review all available rating profiles and create a new one using a setup page, follow these steps:
+On the **Rating profiles** page, you can review all available rating profiles. You can also edit existing profiles and create new profiles.
 
 1. Go to **Transportation management \> Setup \> Rating \> Rating profile**.
-1. Select **New** on the Action Pane to add a new rating profile to the grid, or select **Edit** to edit an existing profile.
-1. Make the following settings for a new or selected row:
-    - **Rating profile** - Enter a unique identifier (ID) for the profile.
-    - **Name** - Enter a descriptive name for the rating profile.
-    - **Shipping carrier** - Select a shipping carrier. The profile you are setting up will also be shown on the **Shipping carriers** page for the selected carrier.
-    - **Site**, and **Warehouse** - Select a site, and warehouse, respectively.
-    - **Rate engine** - Select the rate engine that you want to use for the rating profile.
-    - **Rate master** - Select the rate master that you want to use for the rating profile. You can use the rate master to define a rate base type and a rate base. For more information, see [Set up rate masters](set-up-rate-masters.md).
-    - **Transit time engine** - Select the transit time engine for the rating profile.
-    - **Carrier fuel index** - Select the carrier fuel index for the rating profile.
-    - **Effect start date and time** and **Effective end date and time** - Establish the time span where the rating profile should be active.
-1. Select **Save** on the Action Pane.
+1. On the Action Pane, select **New** to add a new rating profile to the grid, or select **Edit** to edit an existing profile.
+1. In the row for the new or existing rating profile, set the following fields:
 
-## Create a rating profile directly from the Shipping carriers page
+    - **Rating profile** – Enter a unique identifier (ID) for the rating profile.
+    - **Name** – Enter a descriptive name for the rating profile.
+    - **Shipping carrier** – Select a shipping carrier. The rating profile that you're setting up will also be shown on the **Shipping carriers** page for the selected carrier.
+    - **Site** and **Warehouse** – Select a site and warehouse.
+    - **Rate engine** – Select the rate engine for the rating profile.
+    - **Rate master** – Select the rate master for the rating profile. You can use the rate master to define a rate base type and a rate base. For more information, see [Set up rate masters](set-up-rate-masters.md).
+    - **Transit time engine** – Select the transit time engine for the rating profile.
+    - **Carrier fuel index** – Select the carrier fuel index for the rating profile.
+    - **Effect start date and time** and **Effective end date and time** – Define the period when the rating profile should be active.
 
-To create a rating profile directly from the **Shipping carriers** page, follow these steps:
+1. On the Action Pane, select **Save**.
+
+## Create a rating profile directly on the Shipping carriers page
 
 1. Go to **Transportation management \> Setup \> Carriers \> Shipping carriers**.
-1. Select a shipping carrier from the list pane.
-1. On the **Rating profile** FastTab toolbar, select **New** to create a rating profile.
-1. Fill out the fields for the new rating profile. These fields correspond to the settings on the **Rating profile** page, as described previously in this topic.
+1. Select a shipping carrier in the list.
+1. On the **Rating profiles** FastTab, select **New** to create a rating profile.
+1. Set the fields for the new rating profile. These fields correspond to the fields on the **Rating profiles** page, as described in previous section of this topic.
 
 > [!NOTE]
-> Profiles created from the **Shipping carriers** page are also shown on the **Rating profile** page.
+> Profiles that are created on the **Shipping carriers** page are also shown on the **Rating profiles** page.
