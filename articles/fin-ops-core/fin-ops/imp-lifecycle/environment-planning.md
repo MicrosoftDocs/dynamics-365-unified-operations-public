@@ -5,7 +5,7 @@ title: Environment planning
 description: This topic provides an overview of various aspects that you must consider while you plan for your project's environment.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 05/08/2020
+ms.date: 11/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
