@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Master planning with Demand forecast
-description: This topic explains how to include Demand forecast during master planning with Planning Optimization.
+title: Master planning with demand forecast
+description: This topic explains how to include demand forecast during master planning with Planning Optimization.
 author: ChristianRytt
 manager: tfehr
 ms.date: 11/16/2020
@@ -29,23 +29,26 @@ ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Master planning with Demand forecast
+# Master planning with demand forecast
 
 [!include [banner](../../includes/banner.md)]
 
-A demand forecast can be used together with master planning to account for expected demand, based on a demand forecast expressed with quantity and date. A demand forecast can be created manually, imported, or generated using the demand forecasting functionality. For more information about demand forecasting, see [Demand forecasting overview](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/introduction-demand-forecasting).
+You can use a demand forecast together with Planning Optimization to account for expected demand in your master planning. You can create a demand forecast manually, import it, or generate it using the demand forecasting functionality in Supply Chain Management. For more information about demand forecasting, see the [Demand forecasting overview](../introduction-demand-forecasting.md).
 
-Note that separate forecast planning is not supported with Planning Optimization. Hence the parameter Current forecast plan on Master planning parameters is not used.
+> [!NOTE]
+> Separate forecast planning is not supported with Planning Optimization. Therefore, the **Current forecast plan** setting on the **Master planning parameters** page has no effect when you use Planning Optimization.
 
 ## Include a demand forecast
 
-The setup to include demand forecast during master planning is done on Master plan and Item group.
+The set up to include demand forecast during master planning is done on the Master plan and Item group. <!-- KFM: What is the "Master plan and Item group"? -->
 
 ### Master plan setup
 
+<!-- KFM: Where are we here? We need some navigation instructions. Is each section here description a setting that exists somewhere? We need to name each setting. I don't know where any of these settings are, so I can't confirm any of this. -->
+
 #### Forecast model
 
-The desired forecast model must be selected to be considered when generating supply suggestion for this master plan.
+The desired forecast model must be selected to be considered when generating supply suggestion for this master plan. <!-- KFM: How are these made, and where do they come from? Can we give a link? -->
 
 #### Include demand forecast
 
@@ -53,17 +56,17 @@ After you select a forecast model, select this option to include the demand fore
 
 #### Method used to reduce forecast requirements
 
-This parameter is explained in detail under Forecast reduction keys.
+This setting is explained in detail under [Forecast reduction keys](#reduction-keys).
 
 #### Included forecast period (not yet supported with Planning Optimization)
 
-Under Time fence in days, you can specify the period to include demand forecast. Specified, from today&#39;s date, with number of days under Forecast plan. By setting the Forecast plan option to Yes you can overwrite the Forecast plan time fence originating from the individual Coverage groups. If Forecast plan option is set to No the values from the individual Coverage groups is used for this Master plan.
+Under **Time fence in days**, you can specify the period to include demand forecast. Specified, from today's date, with number of days under Forecast plan. By setting the Forecast plan option to Yes you can overwrite the Forecast plan time fence originating from the individual Coverage groups. If Forecast plan option is set to No the values from the individual Coverage groups is used for this Master plan.
 
 ### Coverage group setup
 
 #### Forecast plan time fence
 
-Period in days to include demand forecast. Specified, from today&#39;s date, with number of days under Forecast plan. Note that this value can be overwritten by on the Master plan with the Forecast plan option.
+Period in days to include demand forecast. Specified, from today's date, with number of days under Forecast plan. Note that this value can be overwritten by on the Master plan with the Forecast plan option.
 
 #### Reduction key
 
@@ -86,6 +89,7 @@ When you select  **Transactions - reduction key**  or  **Transactions - dynamic 
 Note with **All transaction** selected, Transactions with both demand and supply within the same inventory dimensions are considered neutral and ignored during the forecast reduction. E.g. when planning dimension is set to site only, and no warehouse, a transfer order between site 1 warehouse 11 and site 1 warehouse 13 will be ignored and not reduce the remaining demand forecast.
 
 #### Include intercompany orders
+
 Specify if intercompany orders should be included when reducing the forecast.
 
 #### Include customer forecast in the demand forecast
@@ -95,9 +99,9 @@ You can specify whether a customer forecast is included in the overall forecast.
 - If a customer forecast is included in the overall forecast, actual customer demand reduces both the customer forecast and the overall forecast. Master planning generates planned orders to cover only the overall forecast quantity.
 - If a customer forecast is not included in the overall forecast, actual customer demand reduces only the customer forecast. Master planning generates planned orders to cover both the overall forecast quantity and the forecast for each customer quantity.
 
-## Forecast reduction keys
+## <a name="reduction-keys"></a>Forecast reduction keys
 
-This sub-topic provides information about the different methods that are used to reduce forecast requirements. It includes examples of the results of each method. It also explains how to create, set up, and use a forecast reduction key. Some methods use a forecast reduction key to reduce forecast requirements.
+This section provides information about the different methods that are used to reduce forecast requirements. It includes examples of the results of each method. It also explains how to create, set up, and use a forecast reduction key. Some methods use a forecast reduction key to reduce forecast requirements.
 
 ### Methods that are used to reduce forecast requirements
 
