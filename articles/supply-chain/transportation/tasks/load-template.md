@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Load templates
-description: This topic describes how to set up load templates and how to associate a load template with a new load. 
+description: This topic describes how to set up load templates, and how to associate a load template with a new load.
 author: Henrikan
 manager: 
 ms.date: 10/30/2020
@@ -29,31 +29,31 @@ ms.dyn365.ops.version: 10.0.15
 
 # Load templates
 
-When you create a new load, you can assign a load template that contains information about equipment and measures such as height, width, depth, and volume of the load.
+When you create a new load, you can assign a load template. The load template contains information about equipment, and about measures such as the height, width, depth, and volume of the load.
 
-This topic describes how to set up load templates and how to associate a load template with a new load.
+This topic describes how to set up load templates, and how to associate a load template with a new load.
 
-To set up load templates, follow these steps:
+## Set up a load template
 
 1. Go to **Transportation management \> Setup \> Load Building \> Load template**.
-1. On the Action Pane, select **New** to add a new template or **Edit** to edit an existing one.
-1. Make the following settings for your new or existing template row:
-    - **Load template ID** - Enter a unique identifier (ID) for the load template.
-    - **Equipment** - Select the equipment to use for shipping the load.
-    - **Load height**, **Load width**, and **Load depth** - Enter the dimensions of the load.
-    - **Max. allowed load volume** and **Max. allowed load weight** - Enter the maximum allowed volume and weight of the load.
-    - **Maximum allowed gross weight** - Enter the maximum allowed gross weight of the load. The load's gross weight includes both its tare weight and its loading weight.
-    - **Maximum number of freight pieces allowed** - Enter the maximum number of freight pieces that the load can contain.
-    - **Stack load on floor** - Select this check box if you want to use floor loading. In a floor loading scenario, boxes are stacked floor-to-ceiling, wall-to-wall inside the container to maximize capacity.
+1. On the Action Pane, select **New** to add a new template or **Edit** to edit an existing template.
+1. In the row for the new or existing template, set the following fields:
+
+    - **Load template ID** – Enter a unique identifier (ID) for the load template.
+    - **Equipment** – Select the equipment that should be used to ship the load.
+    - **Load height**, **Load width**, and **Load depth** – Enter the dimensions of the load.
+    - **Max. allowed load volume** and **Max. allowed load weight** – Enter the maximum allowed volume and weight of the load.
+    - **Maximum allowed gross weight** – Enter the maximum allowed gross weight of the load. A load's gross weight includes both its tare weight and its loading weight.
+    - **Maximum number of freight pieces allowed** – Enter the maximum number of freight pieces that the load can contain.
+    - **Stack load on floor** – Select this check box to use floor loading. In a floor loading scenario, boxes are stacked floor to ceiling and wall to wall inside the container, to maximize capacity.
+
 1. On the Action Pane, select **Save**.
 
 ## Associate a load template with a new load
 
-To associate a load template with a new load, follow these steps:
-
 1. Go to **Transportation management \> Planning \> Load planning workbench**.
-1. Depending on which type of source document you are creating a load for, select one of the tabs in the top section (**Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**). 
-1. Select the specific document you want to plan the load for.
-1. On the Action Pane, open the **Supply and demand** tab and, from the **Add** group, select **To new load**.
-1. The **Load template** dialog box opens. In the **Load template ID** field, select the template you want to apply.
+1. In the upper part of the page, select one of the following tabs, depending on the type of source document that you're creating a load for: **Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**. 
+1. Select the specific document to plan the load for.
+1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
+1. In the **Load template** dialog box, in the **Load template ID** field, select the template to apply.
 1. Select **OK** to apply the template.
