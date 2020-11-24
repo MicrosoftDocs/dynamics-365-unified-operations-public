@@ -356,7 +356,7 @@ The slotting plan shows the location that each item/quantity was assigned to, wh
 > - The **Generate demand**, **Locate demand**, and **Run replenishment** processes are now run in a sandbox. (These processes are available from the Action Pane on the **Slotting templates** page.)
 > - The **Generate demand**, **Locate demand**, and **Run replenishment** processes have a lock to ensure that they can't be triggered at the same time. Otherwise, the data that is used could be deleted.
 > - The **Generate demand** and **Locate demand** processes show a warning if the run didn't generate records, or if the records are missing information.
-> - When you select **Slotting plan**, the page doesn't have **New**, **Edit**, or **Delete** buttons on the toolbar, because the data source can't be edited.
+> - When you select **Slotting plan**, the page doesn't have **New**, **Edit**, or **Delete** buttons on the Action Pane, because the data source can't be edited.
 > - When you select **Run replenishment**, the system validates the selected slot template and processes.
 
 #### Create replenishment
