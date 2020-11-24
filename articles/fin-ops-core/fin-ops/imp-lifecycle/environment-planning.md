@@ -66,7 +66,7 @@ You can use the following environment types for your project:
 | All components are installed on the same server. These components include Application Object Server (AOS), the database, Dynamics 365 Commerce, and Management Reporter. | Components are installed on multiple servers. |
 | Microsoft SQL Server is used. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is used. |
 | The architecture differs from the architecture of the production environment to maximize efficiency and cost of the development team. | The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery. |
-| The environment can be cloud-hosted (CHE), or it can be deployed as an environment image (VHD). | The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted. |
+| The environment can be cloud-hosted, or it can be deployed as an environment image (VHD). | The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted. |
 | The environment isn't suitable for UAT or performance testing. | The environment is suitable for UAT and performance testing. |
 
 ## Standard cloud offer
@@ -88,7 +88,7 @@ The standard environments are provisioned at different times. The following tabl
 
 | Environment                     | When does provisioning occur? | Is it self-service? |
 |---------------------------------|-------------------------------|---------------------|
-| Tier-2 Standard Acceptance Test | Immediately after Project onboarding has been completed in LCS | Yes |
+| Tier-2 Standard Acceptance Test | Immediately after project onboarding has been completed in LCS | Yes |
 | Production                      | At production system readiness | A Go-live assessment must be completed prior to configuring the production deployment request in LCS.|
 
 > [!IMPORTANT]
