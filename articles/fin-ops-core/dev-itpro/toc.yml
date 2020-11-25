@@ -634,6 +634,8 @@
           href: dev-tools/pipeline-deploy-asset.md
         - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
           href: dev-tools/pipeline-lcs-connection.md        
+        - name: Update a legacy pipeline in Azure Pipelines
+          href: dev-tools/pipeline-msbuild-update.md
       - name: Fleet Management sample application
         items:
         - name: End-to-end scenario for the Fleet Management sample application
