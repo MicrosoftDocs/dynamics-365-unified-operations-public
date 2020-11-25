@@ -41,7 +41,7 @@ To integrate Dynamics 365 Supply Chain Management with Field Service, you must r
 
 - Field Service, version 8.8.31.60 or later for comprehensive purchase order integration
 - Dynamics 365 Supply Chain Management, version 10.0.14 or higher.
-- Dual-write version **missing** or later is required to run the *One Field Service / Dynamics 365 Supply Chain Management* solution.
+- Dual-write version **missing** or later is required to run the OneFSSCM solution.
 
 ## Installation guidelines
 
@@ -56,10 +56,13 @@ When enabled in Microsoft Dataverse, dual-write and Field Service introduce a nu
 
 The figure references the following elements, which you typically install in the following order:
 
-1. Field Service Common: Both solutions' installation package will introduce a solution called Field Service Common. This solution introduces several common components required across both Field Service and Supply Chain Management Extended.
-2. Field Service (Anchor): While Field Service is composed of many solutions and patches working together, the Field Service (Anchor) solution (version 8.8.31.60 or higher) signifies that there are many specific solution components present. 
-3.Supply Chain Management Extended: This solution installs tables, attributes, and behaviors that are specific to Supply Chain Management. They are required for dual-write to work correctly with Dataverse. 
-4. One FS/SCM: If both Field Service (Anchor) and Supply Chain Management Extended are installed and meet the minimum versions, another solution called *One Field Service / Dynamics 365 Supply Chain Management* will be installed. This solution contains logic and some solution components that don't otherwise merge and allows for comprehensive solution behavior across common functionality between Field Service and Supply Chain Management.
+1. Field Service Common: Field Service Common is installed when Field Service is installed in the environment.
+2. Field Service (Anchor): Field Service (Anchor) is installed when Field Service is installed in the environment. 
+3. Supply Chain Management Extended: Supply Chain Management Extended is installed automatically when dual-write is enabled in an environment. 
+4. OneFSSCM solution: OneFSSCM is installed automatically by whichever of the two solution packages (Field Service or Supply Chain Management) installs last.
+
+    + If Field Service is installed in the environment already and you enable dual-write, which installs Supply Chain Management Extended, then OneFSSCM is installed.
+    + If Supply Chain Management Extended is installed and you install Field Service in the environment, then OneFSSCM is installed.
 
 ## Initial synchronization
 
@@ -94,7 +97,7 @@ The following four processes must be activated:
 - Update Vendors in Accounts Entity
 - Update Vendors in Vendors Entity
 
-If One FS/SCM installs because both Field Service and Supply Chain Management Extended are present, these workflows will be enabled automatically. If Field Service is not present, but an organization would still like to integrate the Purchase Order tables with Dataverse, this should be possible but it will require that these workflows are activated.
+If OneFSSCM installs because both Field Service and Supply Chain Management Extended are present, these workflows will be enabled automatically. If Field Service is not present, but an organization would still like to integrate the Purchase Order tables with Dataverse, this should be possible but it will require that these workflows are activated.
 
 In either case, unless an organization is starting from scratch, it may be necessary to ensure that all Vendors are created in Dataverse as Accounts before creating Purchase Orders, otherwise you may see errors.
 
@@ -139,7 +142,7 @@ In addition, there is logic in Dataverse that maps vendors with their related ac
 + Purchase order lines with only a procurement category specified or where the product specified is an item of **Type** or **Field Service Product Type** *Service* can only be initiated in Supply Chain Management, however they are synced to Dataverse and are visible in the Field Service app.
 + When Supply Chain Management is not installed and only Field Service is installed then the warehouse field is mandatory on the purchase order; however, when Supply Chain Management is installed this requirement is relaxed because Supply Chain Management allows a purchase order line without a warehouse in certain situations.
 + Product receipts (purchase order receipts in Dataverse) are managed by Supply Chain Management and cannot be created from Dataverse when Supply Chain Management is installed. The product receipts from Supply Chain Management are synced from Supply Chain Management to Dataverse.
-+ Since under delivery can be allowed in Supply Chain Management, **One FS/SCM** adds logic that, on create or update of the Product Receipt Line (Purchase Order Receipt Product in Dataverse), an Inventory Journal record in Dataverse is created to adjust the remaining on order quantity for under-delivery scenarios.
++ Since under delivery can be allowed in Supply Chain Management, the OneFSSCM solution adds logic that, on create or update of the Product Receipt Line (Purchase Order Receipt Product in Dataverse), an Inventory Journal record in Dataverse is created to adjust the remaining on order quantity for under-delivery scenarios.
 
 ## Unsupported scenarios
 
