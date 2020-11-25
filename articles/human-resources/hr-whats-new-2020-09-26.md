@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources September 26, 2020
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
 For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).

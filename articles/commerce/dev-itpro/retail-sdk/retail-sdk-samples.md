@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 266164
 ms.assetid: d24470fd-07ad-4c3f-b23a-3f6c1401edc6
@@ -213,7 +213,7 @@ The following steps show the CRT code changes:
     private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransactionReceipts( GetSalesTransactionCustomReceiptFieldServiceRequest request)
     {
         string receiptFieldName = request.CustomReceiptField;
-        string returnValue = string.Empty;
+        string returnValue = null;
         switch (receiptFieldName)
         {
             case "WARRANTYID":

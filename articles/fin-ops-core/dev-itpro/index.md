@@ -35,6 +35,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Development and administration for Finance and Operations apps includes:
 
 - Administrator experience and Lifecycle Services

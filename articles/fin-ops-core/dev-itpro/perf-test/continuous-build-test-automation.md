@@ -121,7 +121,7 @@ When a Build VM is deployed in Developer topology through LCS, it is pre-configu
 
 ### Review a pre-configured customizable build environment
 
-The build VM contains the vNext build agent which was released as part of TFS 2015. When you deploy the Build VM, the build agent is configured by default to connect and sync with the Azure DevOps project. As a part of the Build VM configuration, the default build definition is also created and configured, as shown below. 
+The build VM contains the vNext build agent which was released as part of **Azure DevOps**. When you deploy the Build VM, the build agent is configured by default to connect and sync with the Azure DevOps project. As a part of the Build VM configuration, the default build definition is also created and configured, as shown below. 
 
 [![Default build definition](./media/build1-1024x488.jpg)](./media/build1.jpg) 
 

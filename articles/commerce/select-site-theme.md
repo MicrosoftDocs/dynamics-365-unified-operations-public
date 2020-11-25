@@ -36,7 +36,7 @@ This topic describes how to set or change your site's theme in Microsoft Dynamic
 
 ## Overview
 
-A site's layout and style (for example, fonts, sizes, and colors) are defined by the theme that you select and apply to the site. A theme is created and deployed by a developer at your company. For an overview of themes, see [Theming overview](http://). For more information about how to create and deploy themes, see [Create a new theme](http://).
+A site's layout and style (for example, fonts, sizes, and colors) are defined by the theme that you select and apply to the site. A theme is created and deployed by a developer at your company. For an overview of themes, see [Theming overview](e-commerce-extensibility/theming.md). For more information about how to create and deploy themes, see [Create a new theme](e-commerce-extensibility/create-theme.md).
 
 By default, when you first create a site, it uses a theme that is named **Fabrikam**. This default theme is provided as part of the Commerce module library. After you've deployed additional themes for your site, you can configure the site so that it uses one of them instead.
 
@@ -67,3 +67,8 @@ To select the theme that is applied to your site, follow these steps.
 [Add languages to your site](add-languages-to-site.md)
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
+
+[Theming overview](e-commerce-extensibility/theming.md)
+
+[Create a new theme](e-commerce-extensibility/create-theme.md)
+

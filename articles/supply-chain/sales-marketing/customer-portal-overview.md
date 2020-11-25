@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Customer portal for Dynamics 365 Supply Chain Management overview
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 ## What is the Customer portal?
 
 Modern supply chain systems rely on integration. They require that inventory, customer demand, and sales departments be integrated instead of residing in separate silos. The Customer portal helps organizations that run Microsoft Dynamics 365 Supply Chain Management enhance this integration and more effectively keep their customers informed.

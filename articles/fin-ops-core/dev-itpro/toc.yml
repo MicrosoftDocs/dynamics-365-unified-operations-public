@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.16 (February 2021)
+          href: get-started/whats-new-platform-updates-10-0-16.md
         - name: Platform updates for 10.0.15 (January 2021)
           href: get-started/whats-new-platform-updates-10-0-15.md
         - name: Platform updates for 10.0.14 (November 2020)
@@ -212,6 +214,8 @@
                   href: data-entities/dual-write/pricing-engine.md
                 - name: Prospect to cash in dual-write
                   href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
+                  href: data-entities/dual-write/commerce-pricing.md
                 - name: In-house assets for servicing
                   href: data-entities/dual-write/in-house-assets.md
                 - name: Integrated worker, job, and position
@@ -500,6 +504,8 @@
             href: deployment/plan-onprem-deployment.md
           - name: Hardware sizing requirements
             href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+          - name: Authentication in Dynamics 365 Finance + Operations (on-premises)
+            href: deployment/authentication-onprem.md
         - name: Set up and deploy on-premises environments
           items: 
           - name: Set up on-premises projects in LCS
@@ -630,6 +636,8 @@
           href: dev-tools/pipeline-deploy-asset.md
         - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
           href: dev-tools/pipeline-lcs-connection.md        
+        - name: Update a legacy pipeline in Azure Pipelines
+          href: dev-tools/pipeline-msbuild-update.md
       - name: Fleet Management sample application
         items:
         - name: End-to-end scenario for the Fleet Management sample application
@@ -1492,12 +1500,14 @@
           href: sysadmin/security-architecture.md
         - name: Encryption in Finance and Operations apps
           href: sysadmin/encryption.md
-        - name: Set the session idle timeout
+        - name: Set the session inactivity timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
           href: sysadmin/security-reports.md
         - name: Create new users
           href: sysadmin/tasks/create-new-users.md
+        - name: User session management
+          href: sysadmin/user-session-management.md
         - name: Import users in bulk
           href: sysadmin/tasks/import-bulk-users.md
         - name: Set up segregation of duties

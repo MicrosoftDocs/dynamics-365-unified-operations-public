@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new and changed in Dynamics 365 Supply Chain Management 10.0.7 (January 2020)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.7 (January 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.7. 
 author: josaw1
 manager: tfehr
@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
 
 ---
-# What's new and changed in Dynamics 365 Supply Chain Management 10.0.7 (January 2020)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.7 (January 2020)
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,7 +54,7 @@ Feature management now allows you to enable all new features by default, require
 For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=4528173&bugId=386529&dbType=3&qc=d6f5cd3ead06907477eae511043a52c1d4290a12bf52374dd55faf0d28ae732e).
 
 ### Platform update 31
-Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [What's new and changed in Platform update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [What's new or changed in Platform update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?

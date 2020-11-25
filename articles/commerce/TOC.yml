@@ -94,6 +94,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.16 (February 2021)
+            href: get-started/whats-new-commerce-10-0-16.md
           - name: Commerce 10.0.15 (January 2021)
             href: get-started/whats-new-commerce-10-0-15.md
           - name: Commerce 10.0.14 (November 2020)
@@ -166,7 +168,7 @@
           href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/commerce/toc.json
         - name: Configure and filter workspaces
           href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/commerce/toc.json
-        - name: Show pages side by side by using the Open in new window feature
+        - name: Show pages side-by-side by using the Open in new window feature
           href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/commerce/toc.json
         - name: Keyboard shortcuts
           href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/commerce/toc.json
@@ -326,6 +328,8 @@
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
             - name: Calculation of tax exemption
               href: tax-exempt-price-inclusive.md
+            - name: Configure sales tax for online orders
+              href: sales-tax-config.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
@@ -532,6 +536,10 @@
             href: dev-itpro/commerce-payments.md
           - name: Process credit cards without a hardware station
             href: dev-itpro/cnp-pos.md
+          - name: Dynamics 365 Payment Connector for PayPal
+            href: paypal.md
+          - name: Wallet payment support
+            href: wallets.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Manage Bing Maps for your organization
@@ -714,10 +722,14 @@
           href: hybrid-customer-orders.md
         - name: Recall order operation in POS
           href: enhancedorderrecall.md
+        - name: Enable multiple pickup delivery modes
+          href: multiple-pickup-modes.md
       - name: Sales orders   
         items:
-        - name: Create a call center order 
+        - name: Create call center orders 
           href: tasks/create-call-center-orders.md
+        - name: Customize transactional emails by mode of delivery
+          href: customize-email-delivery-mode.md
         - name: Change mode of delivery in POS
           href: POS-change-delivery-mode.md
       - name: Distributed order management   
@@ -820,19 +832,19 @@
         href: task-mgmt-assign-lists.md
       - name: Task management in POS
         href: task-mgmt-pos.md
-    - name: Manage your e-Commerce site 
+    - name: Manage your e-commerce site 
       items:
-      - name: Online store overview
+      - name: E-commerce site overview
         href: online-store-overview.md
-      - name: Create an e-Commerce site
+      - name: Create an e-commerce site
         items:
         - name: Configure your domain name
           href: configure-your-domain-name.md
-        - name: Deploy a new e-Commerce tenant
+        - name: Deploy a new e-commerce tenant
           href: deploy-ecommerce-site.md          
-        - name: Create an e-Commerce site
+        - name: Create an e-commerce site
           href: create-ecommerce-site.md
-        - name: Associate an e-Commerce site with an online channel
+        - name: Associate a Dynamics 365 Commerce site with an online channel
           href: associate-site-online-store.md
         - name: Manage robots.txt files
           href: manage-robots-txt-files.md
@@ -960,6 +972,8 @@
           href: dam-crop-images.md 
         - name: Customize image focal points
           href: dam-custom-focal-point.md
+        - name: Upload and serve static files
+          href: upload-serve-static-files.md
       - name: Make your site compliant
         items:
         - name: Compliance overview
@@ -1982,21 +1996,23 @@
           href: e-commerce-extensibility/overview.md
         - name: Get started
           items:
+          - name: Get started with e-commerce online extensibility development
+            href: e-commerce-extensibility/sdk-getting-started.md
           - name: System requirements
             href: e-commerce-extensibility/system-requirements.md
           - name: Set up a development environment
             href: e-commerce-extensibility/setup-dev-environment.md
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
-          - name: Debug against a Tier 1 Commerce development environment
+          - name: Configure an e-commerce development environment against a Commerce cloud environment
             href: e-commerce-extensibility/debug-tier-1.md
           - name: Set up Azure DevOps code sharing and create a build pipeline
             href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
           items:
-          - name: Architectural overview
+          - name: E-commerce architectural overview
             href: e-commerce-extensibility/architectural-overview.md
-          - name: Online components
+          - name: E-commerce components
             href: e-commerce-extensibility/ecommerce-components.md 
           - name: CLI command reference
             href: e-commerce-extensibility/cli-command-reference.md
@@ -2154,6 +2170,8 @@
           href: dev-itpro/cloud-dev-box.md
         - name: Set up Commerce SDK build pipeline
           href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+        - name: Download samples and packages from GitHub and NuGet
+          href: dev-itpro/retail-sdk/sdk-github.md
         - name: Retail SDK FAQ
           href: dev-itpro/retail-sdk/sdk-faq.md
       - name: Point of sale extensibility
@@ -2236,7 +2254,7 @@
           href: dev-itpro/commerce-runtime-overview.md
         - name: CRT services
           href: dev-itpro/crt-services.md
-        - name: CRT and Retail Server extensibility
+        - name: CRT extension pattern
           href: dev-itpro/commerce-runtime-extensibility.md
         - name: Manage secrets for Retail channels
           href: dev-itpro/manage-secrets.md

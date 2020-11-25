@@ -101,3 +101,5 @@ To upload a file to Commerce site builder, follow these steps.
 [Crop images](dam-crop-images.md)
 
 [Customize image focal points](dam-custom-focal-point.md)
+
+[Upload and serve static files](upload-serve-static-files.md)

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Common Data Service integration
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 You can turn integration between Common Data Service and Dynamics 365 Human Resources on or off. You can also view the synchronization details, clear tracking data, and resync an entity to help troubleshoot data issues between the two environments.
 
 When you turn off integration, users can make changes in Human Resources or Common Data Service, but those changes aren't synced between the two environments.

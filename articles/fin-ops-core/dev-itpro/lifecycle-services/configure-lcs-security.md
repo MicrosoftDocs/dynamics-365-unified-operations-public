@@ -3,7 +3,7 @@
 
 title: Configure Lifecycle Services (LCS) security
 description: Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
-author: RobinARH
+author: AngelMarshall
 manager: AnnBe
 ms.date: 02/05/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 6154
 ms.assetid: 79396ff8-538f-4f6f-80d0-898fc5618fb5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jorisde
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -103,7 +103,7 @@ You can invite users from inside or outside your organization to join your proje
 </tr>
 <tr class="even">
 <td>Project team member (prospect)</td>
-<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as his or her organization.</td>
+<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as the organization.</td>
 </tr>
 <tr class="odd">
 <td>Operations user</td>
