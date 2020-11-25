@@ -67,19 +67,19 @@ To create purchase orders and work with existing purchase order, you must synchr
 
 You must sync the following tables.
 
-- Products templates, such as:
+- Products templates. When you run the initial write, you will get a full list of the entities needed. Some examples are:
   - All products
   - Released products V2
   - Dataverse released distinct products
 - Sites
 - Warehouses
-- Procurement categories templates, such as:
+- Procurement categories templates. Some examples are:
   - Procurement categories
   - Pro
   - Product category hierarchy ro
   - Product category assignments
 - Vendor templates, such as Vendor V2 (see also the note following this list).
-- Contact person template, such as Dataverse Contacts V2
+- Contact person template, for example Dataverse Contacts V2
 - Worker template, such as Worker
 
 This will ensure that all documents (purchase orders and Product receipts) in Supply Chain Management are available in Dataverse.
@@ -132,7 +132,7 @@ In addition, there is logic in Dataverse that maps vendors with their related ac
 
 ## Supported scenarios
 
-+ Purchase orders can be created and updated by Dataverse users but the process and data are controlled by Supply Chain Management. There are some limitations based on lifecycle.
++ Purchase orders can be created and updated by Dataverse users but the process and data are controlled by Supply Chain Management. The constraints of updating purchase order fields in Supply Chain Management apply when updates come from Field Service. For example if a purchase order is finalized you cannot update it. 
 + If the purchase order is controlled by change management in Supply Chain Management, then a Field Service user can only update the purchase order when the Supply Chain Management approval status is `Draft`.
 + Several fields are managed by Supply Chain Management only. Those fields cannot be updated in Field Service. Read the mapping tables in this document to get more information about which fields this is, mapping is indicated by \> or \>\>. Most such fields will be set to read-only in the Dataverse forms to simplify use. One example of fields managed by Supply Chain Management is the price information. Supply Chain Management has trade agreements that Field Service can benefit from. Fields such as Unit price, Discount and Net Amount come only from Supply Chain Management. To ensure that the price is synced to Field Service the **Sync** button should by used on the Purchase Order and Purchase Order Product form in Dataverse when purchase order data has been entered. For more information, see [Sync with the Dynamics 365 Supply Chain Management procurement data on demand](#sync-procurement).
 + The **Totals** field is only available in Field Service as there are no up-to-date totals of the purchase order in Supply Chain Management. The totals in Supply Chain Management are calculated based on multiple parameters that are not available in Field Service.
@@ -145,8 +145,6 @@ In addition, there is logic in Dataverse that maps vendors with their related ac
 
 + Adding a line to a Canceled Purchase Order in Supply Chain Management is blocked by Field Service. The workaround is to change the PO System Status in Field Service, then to add the new line in either Field Service or Supply Chain Management.
 + While procurement records will impact inventory levels in both systems, this integration does not assure inventory alignment across Supply Chain Management and Field Service. Both Field Service and Supply Chain Management have other processes which update inventory levels that are outside the scope of procurement.
-
-<!-- Mai: Delivery Date/Lead Time Delivery date defaulting controlled by Supply Chain Management. ( this is what does not work and I need to test this) -->
 
 ## Status Management
 
