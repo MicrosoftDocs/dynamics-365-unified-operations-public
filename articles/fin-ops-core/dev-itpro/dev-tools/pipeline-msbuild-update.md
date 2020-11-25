@@ -49,7 +49,7 @@ If your build virtual machine has Visual Studio 2017 installed, you can use the 
 
 Finally, you can check your build pipeline on the **Build the solution** step. The **MSBuild Version** property indicates the version of **Visual Studio** in use.
 
-| MSBuild Version | Visual Studio Version |
+| MSBuild version | Visual Studio version |
 |---|---|
 | MSBuild 14.0 | Visual Studio 2015 |
 | MSBuild 15.0 | Visual Studio 2017 |
@@ -61,7 +61,7 @@ Finally, you can check your build pipeline on the **Build the solution** step. T
 
 Four properties in three tasks in the pipeline have to be updated:
 
-| Task Name | Task Property | Old Value | New Value|
+| Task name | Task property | Old value | New value|
 | --- | --- | --- | ---|
 | Build the solution | MSBuild Version | MSBuild 14.0 | MSBuild 15.0 |
 | Database Sync | MSBuild Version | MSBuild 14.0 | MSBuild 15.0 |
