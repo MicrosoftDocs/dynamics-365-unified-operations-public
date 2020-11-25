@@ -71,7 +71,7 @@ Currently, exceptions for Planning Optimization migration are only relevant if y
 After the required features become available, Microsoft will provide a grace period until the exception expires. The environment admin will be informed when the required features have become available and the grace period has started.
 
 > [!NOTE]
-> You can only request an exception for production environments, not for sandbox environments. If you need to disable the Planning Optimization exception error on an IaaS sandbox environment, run the SQL query provided in [Sandbox environments](#faq-sandbox).
+> You can only request an exception for production environments, not for sandbox environments. If you need to disable the Planning Optimization exception error on an infrastructure as a service (IaaS) sandbox environment, run the SQL query provided in [Sandbox environments](#faq-sandbox).
 
 ## Frequently asked questions
 
@@ -79,7 +79,7 @@ After the required features become available, Microsoft will provide a grace per
 
 Can I use built-in master planning on my sandbox environment? Do I need an exception?
 
-**Answer:** Exceptions aren't normally relevant for sandbox environments, as the error message is not preventing a successful master plannig run with the built-in master planning. You can disable the Planning Optimization exception error on an IaaS (not Service Fabric) sandbox environment  by running the following query on your database:
+**Answer:** Exceptions aren't normally relevant for sandbox environments because the Planning Optimization exception error doesn't prevent the built-in master planning engine from running successfully. However, if the error message disturbs you, you can disable it on an IaaS (not Service Fabric) sandbox environment by running the following query on your database:
 
 ```sql
 -- Insert or update an enabled flight:
