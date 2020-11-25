@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update a legacy pipeline in Azure Pipelines
 
+[!include [banner](../includes/banner.md)]
+
 > [!NOTE]
 > This documentation does not apply to the [new build pipeline](hosted-build-automation.md), even if you run it on the build virtual machine.
 
