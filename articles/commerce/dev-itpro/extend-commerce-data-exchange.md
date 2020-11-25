@@ -153,4 +153,25 @@ After you've finished building your new extension methods, the project will be d
         }
  ```
 
+## CDX offline :
+
+When there is no connectivity to the HQ, client/Retail Server will not be able to call the CDX method, in this case extension code can follow the best practice mentioned below:
+
+-   Check before calling the CDX method whether CRT is connected to the online (Retail server) or offline (local) database. The Check can be done both in POS and CRT.
+
+### How to check the connection status:
+
+**POS:**
+
+Use the **GetConnectionStatusClientRequest** POS API.
+
+**CRT:**
+
+```C#
+if(request.RequestContext.Runtime.Configuration.IsMasterDatabaseConnectionString)
+{ }
+```
+
+-   Handle the exception, if connection to the CDX method failed throw error message saying the operation cannot be performed when there is no connectivity to HQ or have mitigation logic if this operation must work when there is no connectivity to the CDX method.
+
 
