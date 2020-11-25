@@ -5,7 +5,7 @@ title: Configuration for Finance Insights (preview)
 description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,10 +46,10 @@ Deploy the environments by following these steps.
 
 ## Configure Common Data Service
 
-You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided. Once the PowerShell script has finished running, it will give you values to use to configure Finance insights. 
+You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided. When the PowerShell script has finished running, it will give you values to use to configure Finance insights. 
 
 > [!NOTE]
-> Please open PowerShell on your PC to run the script. You may need PowerShell version 5. The Azure CLI "Try it" option may not work.
+> Open PowerShell on your PC to run the script. You may need PowerShell version 5. The Microsoft Azure CLI "Try it" option may not work.
 
 # [Manual configuration steps](#tab/configuration-steps)
 
@@ -293,7 +293,7 @@ catch {
 A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.
 
 > [!NOTE]
-> Please follow the steps below to run the PowerShell script. The Azure CLI "Try it" option, or running the script on your PC may not work.
+> Follow the steps below to run the PowerShell script. The Azure CLI "Try it" option, or running the script on your PC may not work.
 
 Follow these steps to configure Azure by using the Windows PowerShell script. You must have rights to create an Azure resource group, Azure resources, and an Azure AD application. For information about the required permissions, see [Check Azure AD permissions](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
