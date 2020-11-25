@@ -63,7 +63,7 @@ There are certain elements of the database that are not copied over to the targe
 * All users except the admin will be set to **Disabled** status.
 
 #### When refreshing from sandbox environment to production environment
-This is also referred to as [Golden DB promotion](/dbmovement-scenario-goldenconfig.md)
+This is also referred to as [Golden configuration promotion](/dbmovement-scenario-goldenconfig.md)
 * Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 
 #### These elements are removed for all database refresh operations
