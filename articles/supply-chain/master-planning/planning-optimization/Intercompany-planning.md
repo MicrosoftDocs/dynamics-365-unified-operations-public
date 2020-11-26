@@ -59,13 +59,15 @@ If you run a master planning from a master plan that includes planned downstream
 
 Follow these steps to configure your master plan to include planned downstream demand.
 
-1. Go to  **Master planning > Setup > Plans > Master plans**.
+1. Go to  **Master planning** > **Setup** > **Plans** > **Master plans**.
 2. On the  **Intercompany planning** tab, set the following value:
 
 - **Include planned downstream demand**  – Set this option to  **Yes**  to enable intercompany for this Master plan.
 - **Downstream plans** – Add the desired Master plan(s) from other companies with **New** or remove downstream Master plans with **Delete**.
 
 ## Pegging cross companies with Multilevel pegging
+
+With multilevel pegging you can view view pegging cross companies to see the initial source of demand that a supply is covering. From a planned order you find multilevel pegging under **View** > **Requirements** > **Multilevel pegging**.
 
 ### Intercompany example with two companies: USMF, DEMF
 
