@@ -84,6 +84,7 @@ The hub owns the following data:
 
 - All source documents, such as purchase orders and sales return orders
 - Inbound load processing
+- All cost and financial updates
 
 > [!NOTE]
 > The inbound purchase order flow is conceptually different from the outbound flow, where the scale unit that does the processing depends on whether the order has been released to a warehouse.
@@ -129,7 +130,7 @@ The following work order types are currently supported for WES workloads on scal
 No other processing of source documents and warehouse work types are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (Transfer receipt) or process a cycle counting work.
 
 > [!IMPORTANT]
-> If you use a workload on a scale unit, you can't run unsupported processes for the specific warehouse on the hub.
+> If you use a workload on a scale unit, you can't run unsupported processes for the specific warehouse on the hub. The following tables document the supported capabilities. Selected warehouse work types can get created on hub and on scale units, but only get maintained at the owner.
 
 The following warehouse management functionality isn't currently supported on scale units:
 
@@ -152,12 +153,13 @@ The following table shows which outbound features are supported, and where they 
 | Source document processing                                   | Yes | No |
 | Load and transportation management processing                | Yes | No |
 | Release to warehouse                                         | Yes | No |
-| Shipment consolidation                                       | No  | No |
-| Cross docking (picking work)                                 | No  | No |
+| Planned cross docking                                        | No  | No |
+| Shipment consolidation                                       | Yes | No |
 | Shipment wave processing                                     | Yes, but finalization of the wave status is handled in the hub |<p>Yes, but initialization and finalization gets handled by the hub and the **Load building and sorting** are not supported<p><b>Note:</b> Access to the hub is required to finalize the wave status as part of the wave processing.</p> |
-| Warehouse work processing (incl. license plate print)     | No  | <p>Yes, but only for the above mentioned supported capabilities. |
+| Maintain shipments for wave                                  | Yes | No |
+| Warehouse work processing (incl. license plate print)        | No  | <p>Yes, but only for the above mentioned supported capabilities. |
 | Cluster picking                                              | No  | Yes|
-| Packing processing                                           | No  | No |
+| Manual packing processing, incl. 'Packed container picking' work processing                                           | No <P>Some processing can be done after a initial picking process handled by a scale unit, but not recommended due to following blocked operations.</p>  | No  |
 | Outbound sorting processing                                  | No  | No |
 | Printing of load related documents                           | Yes | No |
 | Bill of lading and ASN generation                            | Yes | No |
@@ -192,8 +194,11 @@ The following table shows which inbound features are supported, and where they a
 | Transfer order line receiving and put away                        | Yes | No |
 | Work cancellation                                                | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) isn't supported.</p> |
 | Purchase order product receipt processing                        | Yes | No |
-| Cross docking work creation as part of receiving                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
-
+| Receiving with creation of 'Cross docking'  work                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Receiving with creation of 'Quality order' work                  | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Receiving with creation of 'Quality item sampling' work          | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Receiving with creation of 'Quality in quality check' work       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Receiving with quality order creation                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 ### Warehouse operations and exception handing
 
 The following table shows which warehouse operations and exception handing features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
@@ -207,8 +212,9 @@ The following table shows which warehouse operations and exception handing featu
 | Movement                                           | No  | Yes                          |
 | Movement by template                               | No  | Yes                          |
 | Adjustment (in/out)                                | Yes | No                           |
+| Inventory status change                            | Yes | No                           |
 | Cycle counting and Counting discrepancy processing | Yes | No                           |
-| Reprint label (license plate printing)             | Yes | Yes                           |
+| Reprint label (license plate printing)             | Yes | Yes                          |
 | License plate build                                | Yes | No                           |
 | License plate break                                | Yes | No                           |
 | Driver check in                                    | Yes | No                           |
@@ -217,9 +223,9 @@ The following table shows which warehouse operations and exception handing featu
 | Display open work list                             | Yes | Yes                           |
 | Consolidate license plates                         | No  | No                           |
 | Remove container from group                        | No  | No                           |
-| Cancel work                                        | No  | Yes                           |
-| Min/max replenishment processing                   | No  | Yes                           |
-| Slotting replenishment processing                  | No  | Yes                           |
+| Cancel work                                        | Yes  | Yes                           |
+| Min/max and zone threshold replenishment processing                   | Yes | Yes                           |
+| Slotting replenishment processing                  | Yes <p>Note that the setup must be done on the scale unit</p>   | Yes                           |
 
 ### Production
 
@@ -227,7 +233,7 @@ Warehouse management production scenarios isn't currently supported on scale uni
 
 | Process | Hub | WES workload on a scale unit |
 |---------|-----|------------------------------|
-| <p>All warehouse management processes that are related to production. Here are some examples:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>Finished goods put away</li><li>Co-product and by-product put away</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
+| <p>All warehouse management processes that are related to production. Here are some examples:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>RAF and finished goods put away</li><li>Co-product and by-product put away</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
 
 ## Maintaining scale units for WES
 
