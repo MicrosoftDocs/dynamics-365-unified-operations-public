@@ -131,6 +131,8 @@ No other processing of source documents and warehouse work types are currently s
 
 > [!IMPORTANT]
 > If you use a workload on a scale unit, you can't run unsupported processes for the specific warehouse on the hub. The following tables document the supported capabilities. Selected warehouse work types can get created on hub and on scale units, but only get maintained at the owner.
+><p>Even though a specific process is scale unit supported, be aware that all the needed data might not get synchronized from the hub and thereby risk resulting in unexpected system processing. One example being a location directive query joining a data table record which only exists at the hub deployment.</p>
+
 
 The following warehouse management functionality isn't currently supported on scale units:
 
@@ -192,13 +194,15 @@ The following table shows which inbound features are supported, and where they a
 | License plate receiving and put away                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Transfer order item receiving and put away                        | Yes | No |
 | Transfer order line receiving and put away                        | Yes | No |
-| Work cancellation                                                | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) isn't supported.</p> |
-| Purchase order product receipt processing                        | Yes | No |
-| Receiving with creation of 'Cross docking'  work                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Work cancellation                                                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) isn't supported.</p> |
+| Purchase order product receipt processing                          | Yes | No |
+| Receiving with creation of 'Cross docking'  work                   | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of 'Quality order' work                  | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of 'Quality item sampling' work          | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of 'Quality in quality check' work       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with quality order creation                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Work processing with 'Cluster putaway'                             | Yes | No |
+
 ### Warehouse operations and exception handing
 
 The following table shows which warehouse operations and exception handing features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
