@@ -73,6 +73,10 @@ The **Welcome** page provides general guidance and information that you will nee
 - Set the **Primary contact for FastTrack** option to **Yes** for at least two users who have an active email address in the user list. If this option isn't set to **Yes** for any team member, FastTrack will reach out to all team members for implementation guidance during your implementation. If necessary, you should nominate at least one customer and one partner team member to be contacted by FastTrack.
 - Each team member will be assigned a project security role and an implementation role. The project security role is relevant to access to the LCS project workspace, and the implementation role is relevant to the individual team member's role on the implementation team. We highly recommend that you include representatives from the customer among the project team members who have a monitored email address.
 
+Refer [Project security Role](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#configuring-project-security) here.
+
+Refer [Implementation Role](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles) here.
+
 ## Define milestone dates
 
 - Define all mandatory milestone steps. Milestones are associated with the methodology of the project. If the milestone dates haven't yet been decided, use tentative dates.
