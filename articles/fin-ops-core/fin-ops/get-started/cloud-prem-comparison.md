@@ -173,11 +173,11 @@ To see a list of capabilities that are available in on-premises deployments, see
 | Servicing                  |                                           | Yes       | Yes             |
 |                            | Servicing environments                    | Yes       | No              |
 | Trace Parser               |                                           | Yes       | Yes             |
-| PerTimer                   |                                           | Yes       | Yes\*           |
+| PerfTimer                  |                                           | Yes       | Yes\*           |
 | Upgrade                    |                                           | Yes       | Yes             |
 |                            | Upgrade                                   | Yes       | No              |
 |                            | Upgrade and support for previous versions | Yes       | No              |
 | Visual Studio development  |                                           | Yes       | Yes             |
 
-\* In on-premises environments, PerTimer only shows results for the client.
+\* In on-premises environments, PerfTimer only shows results for the client.
 
