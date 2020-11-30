@@ -64,7 +64,7 @@ There are certain elements of the database that are not copied over to the targe
 
 #### When refreshing from sandbox environment to production environment
 This is also referred to as [Golden configuration promotion](/dbmovement-scenario-goldenconfig.md)
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
+* Batch job history is stored in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 
 #### These elements are removed for all database refresh operations
 
