@@ -53,7 +53,7 @@ In case of failure, the option to perform a rollback is available.  By clicking 
 To determine the root cause of the failure, use the available buttons to download the runbook logs before you start the rollback operation.  
 
 ### Data elements that aren't copied during refresh
-There are certain elements of the database that are not copied over to the target environment during a database refresh operation.
+The information in this section lists certain elements of the database that are not copied over to the target environment during a database refresh operation.
 
 #### When refreshing a production environment to a sandbox environment or a sandbox to another sandbox environment
 
