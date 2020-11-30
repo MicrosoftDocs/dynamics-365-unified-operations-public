@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: X++ container runtime functions
+description: This topic describes the container run-time functions.
+author: RobinARH
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+# ms.tgt_pltfrm: 
+ms.custom: 31301
+ms.assetid: 5b4741a5-dec1-4a3b-b739-6c12142ac668
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rhaertle
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
 # Injection attack mitigation
 Injection attacks is the term used for attacks where an adversary uses specially crafted data values to wreak havoc in a database. It can only happen if the developer who crafted the code is not vigilant about how he is passing data that came from an uncontrolled source (e.g. user input) to a query that gets executed by the SQL database. This is normally not an issue at all in Dynamics AX for F&O, since using the built-in data access statements in X++ precludes the possiblity of this attach, but it can happen when the developer resorts to using Direct-SQL where "raw" SQL code is passed to the server.
 
