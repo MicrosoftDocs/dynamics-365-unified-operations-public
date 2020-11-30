@@ -161,7 +161,8 @@ Before requesting the production environment, ensure that all pre-requisites are
 
 	 - **Cloud deployment to self-service deployment**: [Submit a service request](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) of type **Other** to request that the Microsoft Service Engineering team copy the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in that service request.
 	 
-	 - Both projects (old and new) are **self-service deployments**: Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in that support ticket.
+	 - **Both projects (old and new) are self-service deployments**: Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in that support ticket.
+	 
 	 
 	1. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request. 
 	2. After Microsoft has completed the activity and informed you about it, you will need to validate the new production environment. 
