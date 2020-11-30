@@ -5,7 +5,7 @@ title: Archive ER destination type
 description: This topic provides information about how to configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-You can configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents. Based on the destination setting, a generated document is stored as an attachment of a record of the ER jobs list. You can view the results at **Organization administration \> Electronic reporting \> Electronic reporting jobs**.
+You can configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents. Based on the destination setting, a generated document is stored as an attachment of a record of the ER jobs list. To view the results, go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 
 You can use this option to send the generated document to a Microsoft SharePoint folder or Microsoft Azure Storage. Set **Enabled** to **Yes** to send output to a destination that is defined by the selected document type. Only document types where the group is set to **File** are available for selection. You define document [types](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) at **Organization administration** \> **Document management** \> **Document types**. The configuration for ER destinations is the same as the configuration for the document management system.
 
@@ -56,7 +56,7 @@ You can save a file in a designated SharePoint folder. To define the default Sha
 When the document type location is set to **Azure storage**, you can save a file to Azure Storage.
 
 > [!NOTE] 
-> Note that the ER framework permanently stores files in Azure Blob storage unlike the Data management framework that applies the 7 days retention policy for documents that must be processed (see [API for getting message status](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/recurring-integrations#api-for-getting-message-status) and [Status check API](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api#status-check-api) for more). The ER related files will be stored in Azure Blob storage as attachments of application table records as long as you would need to. A single file will be deleted from Azure Blob storage only along with an application table record to which this file was attached.
+> The ER framework permanently stores files in Azure Blob storage unlike the Data management framework that applies the seven day retention policy for documents that must be processed. For more information, see [API for getting message status](../data-entities/recurring-integrations.md#api-for-getting-message-status) and [Status check API](../data-entities/data-management-api.md#status-check-api). The ER-related files will be stored in Azure Blob storage as attachments of application table records as long as necessary. A single file will be deleted from Azure Blob storage along with the application table record that this file was attached to.
 
 ## Additional resources
 
