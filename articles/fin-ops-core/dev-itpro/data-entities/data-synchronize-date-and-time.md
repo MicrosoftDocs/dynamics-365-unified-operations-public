@@ -44,6 +44,6 @@ This dual conversion causes dates to change between applications. For example, t
 
    [![Change source date format to UTC](./media/data-source-date-format.png)](./media/data-source-date-format.png)
 
-4. Change the **Timezone** to **Coordinated Universal Timezone**, and change **Language** to **En-US**.
+4. Change **Timezone** to **Coordinated Universal Timezone**, and change **Language** to **En-US**.
 
 
