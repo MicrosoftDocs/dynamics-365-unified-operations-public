@@ -39,7 +39,7 @@ In this tutorial, you will create a new tile and include it in the summary secti
 Prerequisites
 -------------
 
-For this tutorial, you must access the Microsoft Dynamics AX environment by using Remote Desktop, and you must be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](../dev-tools/access-instances.md).
+For this tutorial, you must access the Microsoft Dynamics AX environment by using Remote Desktop, and you must be provisioned as an administrator on the Dynamics AX instance. For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).
 
 ## Key concepts
 -   Learn about and use form patterns that are related to workspaces.
