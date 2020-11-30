@@ -84,3 +84,4 @@ It is recommended that a header-level charge is used to add the tip amount to th
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
 
 
+
