@@ -67,3 +67,4 @@ Four properties in three tasks in the pipeline have to be updated:
 | Database Sync | MSBuild Version | MSBuild 14.0 | MSBuild 15.0 |
 | Execute Tests | Test platform version | Visual Studio 2015 | Visual Studio 2017 |
 | Execute Tests | Other console options | `/Platform:X64 /InIsolation /UseVsixExtensions:true` | `/Platform:X64 /InIsolation /TestAdapterPath:"$(VsixExtensionFolder)"` |
+
