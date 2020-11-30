@@ -42,7 +42,7 @@ For example, the following conditions are in effect:
 
 - The fiscal period is from June 30 to July 1.
 - The reducing balance percentage is 18 percent, and an asset is acquired in June 2019 at an acquisition price of $10,000.
-- The depreciation of the first fiscal year equals $18,000, the monthly depreciation equals $150, and the asset is then depreciated until November 2019, which $738.75.
+- The depreciation of the first fiscal year equals $18,000, the monthly depreciation equals $150, and the asset is then depreciated until November 2019, in the amount of $738.75.
 - In November 2019, 80 percent of the asset is split to another fixed asset.
 
 [![Reduce balance depreciation after a split](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
