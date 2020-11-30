@@ -124,8 +124,8 @@ This will set the environment back into a state of **Configure** and allow you t
 
 ## Requesting the production environment
 
-> [!Note]
-> The Production environment is exclusively for running your business operations. Do not use it for testing. You will be able to perform the cutover, and if planned, to mock the cutover in Production. For testing the solution, you must use a UAT environment, which is designed with the necessary elements and services for testing.
+> [!NOTE]
+> The Production environment is exclusively for running your business operations and shouldn't be used for testing. You will be able to perform the cutover, and if planned, to mock the cutover in Production. To test the solution, you must use a UAT environment, which is designed with the necessary elements and services for testing.
 
 After you've completed the analysis, design and develop, and test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.
 
