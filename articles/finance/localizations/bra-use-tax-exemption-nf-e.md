@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Tax benefits and exemption rules for NF-e/NFC-e from NT2019.001
-description: This topic provides information about the ICMS tax benefits and exemptions in fiscal documents for Brazil. 
+title: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
+description: This topic provides information about the ICMS tax benefits and exemptions in fiscal documents for Brazil.
 author: gionoder
 manager: AnnBe
 ms.date: 11/12/2020
@@ -32,123 +32,117 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-The introduction of the NF-e technical note NT2019.001 created requirements to enforce the description of ICMS tax benefits and exemptions more accurately when fiscal document models 55 (NF-e) and 65 (NFC-e) are issued.
+NF-e technical note NT2019.001 requires that the description of ICMS tax benefits and exemptions be more accurately enforced when fiscal document models 55 (NF-e) and 65 (NFC-e) are issued.
 
-Specific validation rules have been introduced in the NF-e/NFC-e web services reception services. These rules verify the compatibility between the usage of benefit codes that associated to the ICMS tax benefit or exemption, and the informed Taxation code (CST) in the XML. Verification is complete when the NF-e/NFC-e authorization is requested.
+Specific validation rules have been introduced in the reception services of the NF-e/NFC-e web services. These rules verify the compatibility between the use of benefit codes that are associated with the ICMS tax benefit or exemption, and the taxation code (CST) that is entered in the XML. Verification is completed when the NF-e/NFC-e authorization is requested.
 
-However, the technical note specifications left the adoption of such validation rules, and the determination of their own compatibility rules between the benefit code and the CST, to the discretion of the state legislation. The state also determines the exception rules for when the compatibility check between the benefit code and the CST must be skipped by the web service reception service.
+However, the specifications of the technical note leave it to the discretion of state legislation to adopt the validation rules, and to determine their own compatibility rules between the benefit code and the CST. The state also determines the exception rules when the compatibility check between the benefit code and the CST must be skipped by the reception services of the web services.
 
-For more information about the compatibility rules and exceptions, see the latest version of technical note NT2019.001, available in the [NF-e portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx). For more details about the validation rules, check the rules N12-85, N12-86, N12-90, N12-94, N12-97 and N12-98 from the same technical note. Also, you can view the additional documentation “TABELA_cBenef_X_CST” (the cBenef x CST table), published in the [NF-e portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx), which describes the valid relationship between the benefit code and the CST, per state.
+For more information about the compatibility rules and exceptions, see the latest version of technical note NT2019.001 in the [NF-e portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx). For more information about the validation rules, see rules N12-85, N12-86, N12-90, N12-94, N12-97, and N12-98 in the same technical note. In the [NF-e portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx), you can also view the additional documentation "TABELA\_cBenef\_X\_CST" (the **cBenef x CST** table), which describes the valid relationship between the benefit code and the CST for each state.
 
-Details about the adoption of the rules by each state legislation can be found in the technical note NT2019.001.
+Technical note NT2019.001 also includes detailed information about the adoption of the rules by each state legislation.
 
 > [!NOTE]
-> The concept, set up and use tax benefits and exemptions under the context of the Brazilian localization, isn't within the scope of this topic. For further references, see [Brazil tax overview](latam-bra-calculate-taxes.md).
+> The concept, setup, and use of tax benefits and exemptions in the context of the Brazilian localization aren't in the scope of this topic. For more information, see [Brazil tax overview](latam-bra-calculate-taxes.md).
 
 ## Feature overview
 
-Through this feature, the user will:
+Through this feature, users will perform the following tasks:
 
-- Add the tags \<vICMSDeson\> and \<motDesICMS\> to the XML generated from the NF-e/NFC-e issuing scenarios.
-- Configure the benefit code for ICMS tax benefit and exemptions in accordance with the cBenef x CST table.
-- Populate the tag \<cBenef\> with the benefit code in accordance with the cBenef x CST table.
-- Validate the compatibility between the Benefit code and CST, in accordance with the validation rules from the technical note NT2019.001 and the cBenef x CST table.
+- Add the **\<vICMSDeson\>** and **\<motDesICMS\>** tags to the XML that is generated from scenarios where NF-e/NFC-e are issued.
+- Configure the benefit code for ICMS tax benefits and exemptions in accordance with the **cBenef x CST** table.
+- Enter the benefit code in the **\<cBenef\>** tag, in accordance with the **cBenef x CST** table.
+- Validate the compatibility between the benefit code and the CST, in accordance with the validation rules from technical note NT2019.001 and the **cBenef x CST** table.
 
-## Enable the technical note feature
+## Turn on the technical note feature
 
-Only for Dynamics 365 Finance or Dynamics 365 Supply chain management:
+> [!NOTE]
+> This information applies only to Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-1. Go to **Organization administration** \> **Organizations** \> **Fiscal establishments** \> **Fiscal establishments**.
-2. Select the fiscal establishment, and then expand the **NF-e and NFC-e federal** FastTab.
-3. Select **Edit**.
-4. In the **NF-E TECHNICAL NOTES** field group, enable parameter **Enable NF-e technical note.**.
-5. In the **NF-e technical notes** field, select **2019.001 v1.40 technical note**, and then select **Save**.
+1. Go to **Organization administration \> Organizations \> Fiscal establishments \> Fiscal establishments**.
+2. Select the fiscal establishment.
+3. On the **NF-e and NFC-e federal** FastTab, select **Edit**.
+4. In the **NF-e technical notes** section, set the **Enable NF-e technical note** option to **Yes**.
+5. In the **NF-e technical notes** field, select **2019.001 v1.40 technical note**.
+6. Select **Save**.
 
 > [!IMPORTANT]
-> After version **2019.001 v1.10 technical note**, from the field **NF-e technical notes**, the **Tax \> Setup \> Sales tax \> Types of benefit codes** form became obsolete and is no longer used.
+> After you select a version that is later than **2019.001 v1.10 technical note** in the **NF-e technical notes** field, the **Types of benefit codes** page (**Tax \> Setup \> Sales tax \> Types of benefit codes**) becomes obsolete and is no longer used.
 
-## Add exempt tags and Validate benefit codes setup
+## Add exempt tags and Validate benefit codes parameters
 
 The following new parameters have been introduced:
 
-- **Add exempt tags**:When this parameter is enabled, the tags \<vICMSDeson\> and \<motDesICMS\> are added to the XML when the NF-e/NFC-e is issued.
-- **Validate benefit code**: With this parameter enabled, when fiscal documents are posted, the compatibility between the CST and the ICMS tax benefit or exemptions codes is validated.
+- **Add exempt tags** – When this parameter is turned on, the **\<vICMSDeson\>** and **\<motDesICMS\>** tags are added to the XML when the NF-e/NFC-e is issued.
+- **Validate benefit code** – When this parameter is turned on, the compatibility between the CST and the ICMS tax benefit or exemption code is validated when fiscal documents are posted.
 
 > [!IMPORTANT]
-> When the **Validate benefit code** parameter is enabled, the following message opens, **Do you want to copy taxation codes from benefit code types to adjustment code for ‘XX’ state?**. This message occurs because a version of the feature **NT2019.001 v1.10 technical note** has been used before, and the type of benefits have already been entered on the **Type of benefits** page. It is possible however, to convert the type of benefits into adjustment codes. By answering **Yes**, any existing data from the obsolete form **Types of benefit codes** will be convered into **Adjustment and information for fiscal documents**.
+> When you turn on the **Validate benefit code** parameter, you receive the following message: "Do you want to copy taxation codes from benefit code types to adjustment code for 'XX' state?" This message is shown because a version of the **NT2019.001 v1.10 technical note** feature has been used before, and the types of benefits have already been entered on the **Type of benefits** page. However, you can convert the types of benefits to adjustment codes. If you select **Yes** in the message box, any existing data from the obsolete **Types of benefit codes** page will be converted to records on the **Adjustment and information for fiscal documents** page.
 
-Those parameters must be set up for the same Authority as what is configured in the Fiscal establishment, which must be referred to the state from the fiscal establishment address.
-
-![Fiscal establishmend and authority settings](media/bra_tax_benefits_from_NT2019_001_parameters.png)
+The **Add exempt tags** and **Validate benefit codes** parameters must be set up for the same authority that is configured in the fiscal establishment, which must be referred to the state from the fiscal establishment address.
 
 1. Go to **Organization administration \> Organizations \> Electronic fiscal documents \> NF-e federal parameters**.
-2. On the **Web services** tab, in the **Authority** field, select the same Authority that is configured in the Fiscal establishment.
-3. On the **States using authority**, select or clear the **Add exempt tags** and **Validate benefit codes** fields according to the state legislation.
+2. On the **Web services** tab, in the **Authority** field, select the same authority that is configured in the fiscal establishment.
+3. On the **States using authority** tab, select or clear the **Add exempt tags** and **Validate benefit codes** check boxes according to the state legislation.
 
-## Benefit codes setup
+![Fiscal establishment and authority settings](media/bra_tax_benefits_from_NT2019_001_parameters.png)
 
-The Benefit codes, given by the cBenef x CST table, must be entered as special adjustment codes in **Fiscal books** module.
+## Set up benefit codes
+
+The benefit codes that are provided by the **cBenef x CST** table must be entered as special adjustment codes in the **Fiscal books** module.
 
 1. Go to **Fiscal books \> Setup \> Tax adjustment codes \> Adjustment and information for fiscal documents**.
-2. Select **New** to add a new adjustment codes. The adjustment code must have the following attributes:
+2. Select **New** to add an adjustment code, and set the following values:
 
-![Adjustment code attributes](media/bra_tax_benefits_from_NT2019_001_adjustment_codes.png)
+    - **Tax type:** Select **ICMS**.
+    - **Table 5.2:** Set this option to **Yes**.
+    - **State:** Select the state of the authority from the **NF-e federal parameters** page.
+    - **Classification:** Select **8: Special Control**.
+    - **Occurrence code:** Enter the numeric part of the benefit code that is given by the **cBenef x CST** table.
+    - **Adjustment code:** This code is formed from the state and the occurrence code. This code should match the benefit code that is given by the **cBenef x CST** table.
 
-- **Tax type** = **ICMS**
-- **Table 5.2** = **Yes**
-- **State** = the state from the Authority from NF-e federal parameter form
-- **Classification** = **8: Special**
-- **Occurrence code** = Enter the numeric figures from the benefit code given by the **cBenef x CST** table
-- **Adjustment code** = Formed by state and the occurrence code. This should match to the benefit code given by the **cBenef x CST** table
+![Properties for adjustment codes](media/bra_tax_benefits_from_NT2019_001_adjustment_codes.png)
 
-Special controls for adjustment codes:
+Note the following special properties for adjustment codes:
 
-![Special controls for adjustment codes](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_special_controls.png)
+- **Literal adjustment code** – Set this option to **Yes** only in scenarios where you issue electronic fiscal documents models 55 and 65 that have regular taxation that has no benefits or exemptions, when the **cBenef x CST** table requires or allows the adjustment code to be used as a fixed value or a literal word, such as "NULO" or "SEM BENEF," in the **\<cBenef\>** tag.
+- **Suppress code** – Set this option to **Yes** only in scenarios where you issue electronic fiscal documents models 55 and 65 that have regular taxation that has no benefits or exemptions, when the **cBenef x CST** table requires or allows the empty **\<cBenef\>** tag to be used.
 
-- **Literal adjustment code** = **Yes**
+![Special properties for adjustment codes](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_special_controls.png)
 
-    Use only on scenarios of issuing electronic fiscal documents model 55/65, with regular taxations that have no benefits or exemptions, when the **cBenef x CST** table requires or allows using the adjustment code as a fixed value or a literal word, such as “NULO” or “SEM BENEF” filled in the tag \<cBenef\>.
+## Set up benefit codes by CST
 
-- **Suppress code** = **Yes**
+The CST by benefit code that is given by the **cBenef x CST** table must be entered as adjustment codes in the **Fiscal books** module.
 
-    Use only on scenarios of issuing electronic fiscal documents model 55/65, with regular taxations that have no benefits or exemptions, when the **cBenef x CST** table requires or allows using the empty tag \<cBenef\>.
-
-## Benefit codes by CST setup
-
-The CST by Benefit code, given by the **cBenef x CST** table, must be entered as adjustment codes in **Fiscal books** module.
-
-1. Go to **Fiscal books \> Setup \> Tax adjustment codes \> Adjustment and information for fiscal documents.**
+1. Go to **Fiscal books \> Setup \> Tax adjustment codes \> Adjustment and information for fiscal documents**.
 2. Select **Add** to enter CST for the **Benefit code**.
 
-![Adjustment and information for fiscal documents page, Taxation codes FastTab](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_CST.png)
+![Taxation codes FastTab on the Adjustment and information for fiscal documents page](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_CST.png)
 
-## Benefit code by Item/State setup
+## Set up benefit codes by item/state
 
-Complete the following steps to set up rules to validate benefit codes by CST for a given state, as described in the **cBenef x CST** table.
+Follow these steps to set up rules to validate benefit codes by CST for a given state, as described in the **cBenef x CST** table.
 
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Benefit code per Item/State**.
+1. Go to **Tax \> Setup \> Sales tax \> Benefit code per Item/State**.
 2. Select **New**.
-3. On the **NF-e federal parameter** page, select **State**.
+3. On the **NF-e federal parameters** page, in the **State** field, select a value.
 4. Select **Add** to enter a new relation.
 
-![Benefit code per Item/State page, State field](media/bra_tax_benefits_from_NT2019_001_benefit_codes_per_item_state.png)
+![State field on the Benefit code per Item/State page](media/bra_tax_benefits_from_NT2019_001_benefit_codes_per_item_state.png)
 
-## Validations during posting of fiscal documents 
+## Validations that are done when fiscal documents are posted
 
-When the parameter **Validate benefit code** is enabled in the **NF-e federal parameters,** the posting of fiscal documents model 55/65 is validated per the rules configured in the **Benefit code per Item/State**.
+When the **Validate benefit code** parameter is enabled on the **NF-e federal parameters** page, the posting of fiscal documents models 55 and 65 is validated according to the rules that are configured on the **Benefit code per Item/State** page.
 
-The validation occurs for the rules configured in the **Benefit code per Item/State** for all directions of fiscal documents (inbound or outbound) and for all type of issuers (fiscal establishments or third party).
+The validation occurs for the rules that are configured on the **Benefit code per Item/State** page, for both directions of fiscal documents (inbound and outbound) and both types of issuers (fiscal establishments and third parties).
 
-When the fiscal document direction is outbound, the configuration of the rules for the state of the **Authority** must be defined in the Fiscal establishment parameters.
-
-When the fiscal document direction is inbound and fiscal document issuer is the Fiscal establishment, the configuration of the rules for the state of the **Authority** must also be defined in the Fiscal establishment parameters.
-
-When the fiscal document direction is inbound and fiscal document issuer is a third party, the configuration of the rules must be made at the state of the issuer of the fiscal document.
+- When the fiscal document direction is outbound, the configuration of the rules for the state of the authority must be defined on the **Fiscal establishment parameters** page.
+- When the fiscal document direction is inbound, and the fiscal document issuer is the fiscal establishment, the configuration of the rules for the state of the authority must also be defined on the **Fiscal establishment parameters** page.
+- When the fiscal document direction is inbound, and the fiscal document issuer is a third party, the configuration of the rules must be made at the level of the state of the issuer of the fiscal document.
 
 > [!IMPORTANT]
-> For Finance or Supply Chain Managment, after KB 4582589, the validation of incoming fiscal documents durign posting became obsolete and is no longer completed by default when the fiscal document direction is inbound and the fiscal document issuer is a third party. However, if it is necessary to keep this behavior and perform the validation, the feature flighting  **FiscalDocumentNotSkipBenefitValidationIncomingThirdPartyFlight** must be enabled. 
+> For Finance or Supply Chain Management, after KB 4582589, the validation of incoming fiscal documents during posting became obsolete and is no longer completed by default when the fiscal document direction is inbound and the fiscal document issuer is a third party. However, if you must continue to do the validation, the **FiscalDocumentNotSkipBenefitValidationIncomingThirdPartyFlight** feature flighting must be turned on.
 
 ## Validation exceptions
 
-The technical note NT2019.001 specifies exception rules adopted at the discretion of each state legislation. For more details, consult the validation rules N12-85, N12-86, N12-90, N12-94, N12-97 and N12-98 from the same technical note.
-
+Technical note NT2019.001 specifies exception rules that are adopted at the discretion of each state legislation. For more information, see validation rules N12-85, N12-86, N12-90, N12-94, N12-97 and N12-98 in the technical note.
