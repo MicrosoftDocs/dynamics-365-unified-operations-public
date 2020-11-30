@@ -124,6 +124,9 @@ This will set the environment back into a state of **Configure** and allow you t
 
 ## Requesting the production environment
 
+> [!Note]
+> The Production environment is exclusively for running your business operations. Do not use it for testing. You will be able to perform the cutover, and if planned, to mock the cutover in Production. For testing the solution, you must use a UAT environment, which is designed with the necessary elements and services for testing.
+
 After you've completed the analysis, design and develop, and test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.
 
 We recommend that you select a service account, for example a generic user account, as the Admin user of the environments that you deploy. If you use a named user account, you might not be able to access an environment if that user isn't available. Here are some scenarios where the Admin user must access an environment:
