@@ -585,6 +585,8 @@
             href: hr-benefits-process-life-event-eligibility.md
           - name: Process rate changes
             href: hr-benefits-process-rate-changes.md
+        - name: ACA reporting
+          href: hr-benefits-management-aca-reports.md
       - name: Define and manage a benefits program
         href: hr-benefits-manage-program.md
       - name: Benefit eligibility policies
