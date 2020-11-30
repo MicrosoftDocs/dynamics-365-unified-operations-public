@@ -5,7 +5,7 @@ title: Move LCS implementation projects to different Azure AD tenants
 description: This topic explains how to move your subscriptions and LCS Implementation project to a different Azure AD tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 10/13/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
