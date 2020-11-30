@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: vetric
 ms.search.validFrom: 2020-5-12 
 ms.dyn365.ops.version:  
 ---
