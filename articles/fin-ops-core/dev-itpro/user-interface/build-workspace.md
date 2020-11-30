@@ -7,22 +7,22 @@ author: jasongre
 manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: rhaertle
 ms.search.scope: Operations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 10794
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -100,7 +100,7 @@ Operational workspaces can optionally include a panorama section that contains u
 ### View the workspace
 
 1. In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
-2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
+2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer.
 
     ![Open form](./media/fmtworkspaceinitial.png)
 
@@ -113,7 +113,7 @@ Now that you understand the content structure of a workspace, you will see how t
 All tiles require a backing query to retrieve the correct information.
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Queries** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** \> **Data Model** \> **Query**. For the **Name** property, enter **FMTRental\_Current**.
+2. Click **Dynamics 365 Items** \> **Data Model** \> **Query**. For the **Name** property, enter **FMTRental\_Current**.
 3. Click **Add**.
 4. If the new **FMTRental\_Current** query isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the designer, right-click **Data Sources**, and then click **New Data Source**.
@@ -146,7 +146,7 @@ All tiles require a backing query to retrieve the correct information.
 ### Add the corresponding menu item
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Menu items** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** \> **User Interface** \> **Display menu item**. Set the **Name** property to **FMTRental\_Current**.
+2. Click **Dynamics 365 Items** \> **User Interface** \> **Display menu item**. Set the **Name** property to **FMTRental\_Current**.
 3. Click **Add**.
 4. If the new **FMTRental\_Current** menu item isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the **Properties** window, set the following properties.
@@ -162,7 +162,7 @@ All tiles require a backing query to retrieve the correct information.
 ### Add a tile
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Tiles** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** &gt; **User Interface** &gt; **Tile**. Set the **Name** property to **FMTCurrentRentalsTile**.
+2. Click **Dynamics 365 Items** &gt; **User Interface** &gt; **Tile**. Set the **Name** property to **FMTCurrentRentalsTile**.
 3. Click **Add**.
 4. If the new **FMTRental\_Current** tile isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the **Properties** window, set the following properties.
@@ -196,7 +196,7 @@ Tiles also have a refresh frequency property that controls how often the counts 
 Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 1. In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
-2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
+2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer.
 
     [![Rentals tile](./media/currentrentalstile.png)](./media/currentrentalstile.png)
 
@@ -209,16 +209,16 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 A system administrator can modify tile cache parameters at run time by using the **Tile data cache configuration** page.
 
 1. Click in the navigation search field on the navigation bar.
-2. Type **Tile data**, and then click **Tile data cache configuration** in the search results. 
-3. Find the **FMTCurrentRentalsTile** record. 
+2. Type **Tile data**, and then click **Tile data cache configuration** in the search results.
+3. Find the **FMTCurrentRentalsTile** record.
 
-   [![Tile cache parameters](./media/tilecacheparams-1024x328.png)](./media/tilecacheparams.png)
-
+    ![Tile cache parameters](./media/tilecacheparams.png)
 
 From this page, the system administrator can perform several run-time modifications to a tile cache. For example, the system administrator can enable/disable the data cache, modify the refresh frequency, and enable/disable the ability to manually refresh the count tile. Note that tile caches are registered when a form that has a tile is first opened. Therefore, the list of tiles that is shown in your environment might differ from the list in the preceding illustration.
 
 ## Exercise 3: Create a new tabbed list in the workspace
-Next, you will next see how to include an additional list in the workspace. This section will give you some experience with building forms in Dynamics AX and will also expose you to form patterns. You will add a list of available vehicles, so that you will be able to initiate a new rental by selecting an available vehicle. In this section, you will just add the new list to the new workspace but won't add the action to initiate the rental. To add this list, you will have to complete the following tasks:
+
+Next, you will next see how to include an additional list in the workspace. This section will give you some experience with building forms and will also expose you to form patterns. You will add a list of available vehicles, so that you will be able to initiate a new rental by selecting an available vehicle. In this section, you will just add the new list to the new workspace but won't add the action to initiate the rental. To add this list, you will have to complete the following tasks:
 
 1. Add a new tab page to the workspace.
 2. Add a new form that has the list content.
@@ -231,16 +231,14 @@ Next, you will next see how to include an additional list in the workspace. This
 2. Right-click **Design** &gt; **PanoramaBody** &gt; **TabbedListSection** &gt; **TabbedLists**, and then click **New Tab Page**.
 3. In the **Properties** window, set the following properties.
 
+   | Property | Value |
+   |----------|-------|
+   | Name     | AvailableVehiclesContainer                           |
+   | Caption  | @FMT199 This value corresponds to “Available vehicles”. |
 
-   | Property |                                     Value                                      |
-   |----------|--------------------------------------------------------------------------------|
-   |   Name   |                           AvailableVehiclesContainer                           |
-   | Caption  | @FMT199 <strong>Note:</strong> This value corresponds to “Available vehicles”. |
+4. Right-click **AvailableVehiclesContainer**, point to **New**, and then click **Form Part**. **Form Part** is the only control type that the Operational Workspace pattern allows here. This control will be used to link to the form that you will build to hold the content for this section.
 
-
-4. Right-click **AvailableVehiclesContainer**, point to **New**, and then click **Form Part**. **Note:** **Form Part **is the only control type that the Operational Workspace pattern allows here. This control will be used to link to the form that you will build to hold the content for this section. 
-
-   [![Add section](./media/addsection1.png)](./media/addsection1.png)
+   ![Add section](./media/addsection1.png)
 
 5. In the **Properties** window, set the **Name** property to **AvailableVehiclesPart**.
 6. Press **Ctrl+S** to save.
@@ -248,7 +246,7 @@ Next, you will next see how to include an additional list in the workspace. This
 ### Add a new form that has the new workspace content
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Forms** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** &gt; **User Interface** &gt; **Form**. Set the **Name** property to **FMTAvailableVehicles**.
+2. Click **Dynamics 365 Items** &gt; **User Interface** &gt; **Form**. Set the **Name** property to **FMTAvailableVehicles**.
 3. Click **Add**.
 4. If the new **FMTAvailableVehicles** form isn’t already open in the designer, double-click it in Solution Explorer.
 5. Add the **FmtVehicle** table as a data source for the form.
@@ -272,15 +270,15 @@ Next, you will next see how to include an additional list in the workspace. This
         | Link Type   | Inner Join                                                                                                                                                      |
 
 7. Notice the **Pattern: &lt;select&gt;** notation next to **Form Design**. This indicates the required pattern for this node. Right-click **Design**, point to **Apply pattern**, and then click **Form Part Section List**. This form pattern is typically used by workspace lists.
-8. Click the **Pattern** tab to see the expected content for this pattern. This information will help guide you as you create content for the form. **Note:** In the future, we plan to provide a mechanism for automatically creating a form structure, based on a selected form pattern. 
+8. Click the **Pattern** tab to see the expected content for this pattern. This information will help guide you as you create content for the form. **Note:** In the future, we plan to provide a mechanism for automatically creating a form structure, based on a selected form pattern.
 
-    [![Section list](./media/formpartsectionlist.png)](./media/formpartsectionlist.png) 
+    [![Section list](./media/formpartsectionlist.png)](./media/formpartsectionlist.png)
 
     In particular, this pattern looks for the following elements:
-    -   An optional header group that contains any filters and actions that are required for this workspace list.
-    -   A required grid. As the red border in the preceding illustration indicates, the patterns engine can't currently find this element.
-    -   An optional default action, which can provide navigation to a backing form for an individual record in the grid.
-    -   An optional button that takes the user to a backing form that shows the full list of items in this section.
+    - An optional header group that contains any filters and actions that are required for this workspace list.
+    - A required grid. As the red border in the preceding illustration indicates, the patterns engine can't currently find this element.
+    - An optional default action, which can provide navigation to a backing form for an individual record in the grid.
+    - An optional button that takes the user to a backing form that shows the full list of items in this section.
 
 9. Right-click **Design**, point to **New**, and then click **Grid**.
 10. In the **Properties** window, set the following properties. **Note:** The grid that we are building will contain cards and will be two cards wide.
@@ -324,7 +322,7 @@ Next, you will next see how to include an additional list in the workspace. This
 ### Add a new query that limits the data to available vehicles
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Queries** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** &gt; **Data Model** &gt; **Query**. Set the **Name** property to **FMTAvailableVehicles**.
+2. Click **Dynamics 365 Items** &gt; **Data Model** &gt; **Query**. Set the **Name** property to **FMTAvailableVehicles**.
 3. Click **Add**.
 4. If the new **FMTAvailableVehicles** query isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the designer, right-click **Data Sources**, and then click **New Data Source**.
@@ -348,7 +346,7 @@ Next, you will next see how to include an additional list in the workspace. This
 ### Add a new menu item that references the new form
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Menu items** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** &gt; **User Interface** &gt; **Display menu item**. Set the **Name** property to **FMTAvailableVehicles**.
+2. Click **Dynamics 365 Items** &gt; **User Interface** &gt; **Display menu item**. Set the **Name** property to **FMTAvailableVehicles**.
 3. Click **Add**.
 4. If the new **FMTAvailableVehicles** menu item isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the **Properties** window, set the following properties.
@@ -366,19 +364,20 @@ Next, you will next see how to include an additional list in the workspace. This
 2. Click **Design** &gt; **PanoramaBody** &gt; **TabbedListSection** &gt; **TabbedLists** &gt; **AvailableVehiclesContainer** &gt; **AvailableVehiclesPart**.
 3. In the **Properties** window, set the **Menu item name** property to **FmtAvailableVehicles**.
 
-### View the updated form
+### View the new menu item
 
 Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 1. In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
-2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
+2. Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer.
 
-    [![Available list](./media/availablelist.png)](./media/availablelist.png)
+    ![Available list](./media/availablelist.png)
 
 3. Click the **Available vehicles** tab to see the new list.
 4. Click in the QuickFilter, type **Lit**, and then press **Enter** to filter down to Litware model vehicles that are available.
 
 ## Exercise 4: Create a backing data cache for a list (Extra credit)
+
 For lists that have expensive queries, or lists where multiple users might use and work from the same workspace, consider caching the list to improve performance. In this section, you will add the necessary artifacts to create a data cache for a list. These artifacts include a query that maps fields to the cache, a table that holds the cache, and a class that provides the mapping between the query and the table. You will then uptake this cache on one of the tabbed lists in the workspace.
 
 ### Add a query that maps fields to the data cache
@@ -386,7 +385,7 @@ For lists that have expensive queries, or lists where multiple users might use a
 The first step is to build a query that will be used to populate the cache table. This query should include all the tables that you want to get your cache data from, and it should limit the results to those records/columns that you want cached.
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Queries** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** &gt; **Data Model** &gt; **Query**. Set the **Name** property to **FMTPickupAndReturnQuery**.
+2. Click **Dynamics 365 Items** &gt; **Data Model** &gt; **Query**. Set the **Name** property to **FMTPickupAndReturnQuery**.
 3. Click **Add**.
 4. If the new **FMTPickupAndReturnQuery** query isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the designer, right-click **Data Sources**, and then click **New Data Source**.
@@ -398,11 +397,11 @@ The first step is to build a query that will be used to populate the cache table
     | Dynamics Fields | No        |
 
 7. Add the following five fields to the FMTRental data source. For each field, right-click **Fields**, point to **New**, and then click **Field**. In the **Properties** window, set the **Field** property as appropriate.
-    -   StartDate
-    -   EndDate
-    -   Vehicle
-    -   State
-    -   RentalId
+    - StartDate
+    - EndDate
+    - Vehicle
+    - State
+    - RentalId
 
 8. Right-click **Ranges**, and then click **New Range**.
 9. In the **Properties** window, set the following properties.
@@ -421,9 +420,9 @@ The first step is to build a query that will be used to populate the cache table
     | Dynamics Fields | No          |
 
 12. Add the following three fields to the FMTCustomer data source. For each field, right-click **Fields**, point to **New**, and then click **Field**. In the **Properties** window, set the **Field** property as appropriate.
-    -   FirstName
-    -   LastName
-    -   Image
+    - FirstName
+    - LastName
+    - Image
 
 13. Right-click **Relations**, and then click **New Relation**.
 14. In the **Properties** window, set the following properties.
@@ -434,7 +433,7 @@ The first step is to build a query that will be used to populate the cache table
     | Field            | Customer  |
     | Related Field    | RecID     |
 
-    The query that you've constructed should match the following illustration. 
+    The query that you've constructed should match the following illustration.
 
     ![Cache query](./media/cachequery.png)
 
@@ -445,7 +444,7 @@ The first step is to build a query that will be used to populate the cache table
 The second step is to define a table that has the fields that are returned from the cache query. You must also add a **SysDataCacheContextId** field that will be used to map the cache row to the base framework cache tables. Additionally, you should also define any required relations between this table and other tables, and also any data methods that you require that involve the cached fields.
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Tables** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** &gt; **Data Model** &gt; **Table**. Set the **Name** property to **FMTPickupAndReturnTableCache**.
+2. Click **Dynamics 365 Items** &gt; **Data Model** &gt; **Table**. Set the **Name** property to **FMTPickupAndReturnTableCache**.
 3. Click **Add**.
 4. If the new **FMTPickupAndReturnTableCache** table isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the designer, right-click **Fields**, and then add the following fields. For each field, the following table shows the data type and the extended data type (EDT) or enum type.
@@ -484,6 +483,7 @@ The second step is to define a table that has the fields that are returned from 
 13. Click **SysDataCacheContextId**. In the **Properties** window, set the **Map Field To** property to **SysDataCacheContextId**. **Note:** If the field doesn't appear in the list, you might have to save the table first, by pressing **Ctrl+S**.
 14. Press **F7** to view the table’s code. Alternatively, right-click **FMTReturnAndPickupTableCache**, and then click **View Code**.
 15. Add the following display methods to the table. The form will use these methods later.
+
     ```xpp
     public display FMTName fullName()
     {
@@ -524,7 +524,7 @@ The second step is to define a table that has the fields that are returned from 
 The third step is to create a class that defines the relationship between the cache query and the catch table.
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Classes** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics AX Artifacts** &gt; **Code** &gt; **Class**. Set the **Name** property to **FMTPickupAndReturnClass**.
+2. Click **Dynamics 365 Items** &gt; **Code** &gt; **Class**. Set the **Name** property to **FMTPickupAndReturnClass**.
 3. Click **Add**.
 4. If the new **FMTPickupAndReturnClass** class isn’t already open in the designer, double-click it in Solution Explorer.
 5. Add the following code to the class.
@@ -575,7 +575,7 @@ After you've set up the data cache, you can start to use the cache in your forms
     {
         public void registerDatasourceOnQueryingEvent()
         {
-            FMTPickupAndReturnTableCache_DS.OnQueryExecuting += 
+            FMTPickupAndReturnTableCache_DS.OnQueryExecuting +=
                 eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);
         }
     }
@@ -645,7 +645,7 @@ Actions that are performed from the workspace might expect records from the base
 3. In the **Properties** window, update the **Table** property to **FMTPickupAndReturnTableCache**. **Note:** The **Name** property should be updated automatically to the same value.
 4. Press **Ctrl+S** to save.
 
-### View the updated form
+### View the updated query
 
 Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
@@ -688,9 +688,6 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 5. Set **End Mileage** to **100**, and then click **OK**. Notice that the rental that you just returned no longer appears in the list.
 
 ## Related tutorials
--   [Build the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
--   [Build navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the Dynamics AX menu structure.
 
-
-
-
+- [Build the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
+- [Build navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the menu structure.
