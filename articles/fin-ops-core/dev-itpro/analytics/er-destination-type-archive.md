@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Archive destination
+# Archive ER destination type
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,7 +43,7 @@ You can use this option to send the generated document to a Microsoft SharePoint
 The location determines where the file is saved. After the **Archive** destination is enabled, the results can be saved in the Job archive. You can view the results at **Organization administration** \> **Electronic reporting** \> **Electronic reporting archived jobs**.
 
 > [!NOTE]
-> Select a document type for the Job archive by navigating to **Organization administration** \> **Workspaces** \> **Electronic reporting** \> **Electronic reporting parameters**. For more information, [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md#prerequisites-for-er-setup).
+> Select a document type for the Job archive by navigating to **Organization administration** \> **Workspaces** \> **Electronic reporting** \> **Electronic reporting parameters**. For more information, see [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md#prerequisites-for-er-setup).
 
 ## SharePoint
 
@@ -56,7 +56,7 @@ You can save a file in a designated SharePoint folder. To define the default Sha
 When the document type location is set to **Azure storage**, you can save a file to Azure Storage.
 
 > [!NOTE] 
-> The ER framework permanently stores files in Azure Blob storage unlike the Data management framework that applies the seven day retention policy for documents that must be processed. For more information, see [API for getting message status](../data-entities/recurring-integrations.md#api-for-getting-message-status) and [Status check API](../data-entities/data-management-api.md#status-check-api). The ER-related files will be stored in Azure Blob storage as attachments of application table records as long as necessary. A single file will be deleted from Azure Blob storage along with the application table record that this file was attached to.
+> The ER framework permanently stores files in Azure Blob storage unlike the Data management framework that applies the seven-day retention policy for documents that must be processed. For more information, see [API for getting message status](../data-entities/recurring-integrations.md#api-for-getting-message-status) and [Status check API](../data-entities/data-management-api.md#status-check-api). The ER-related files will be stored in Azure Blob storage as attachments of application table records as long as necessary. A single file will be deleted from Azure Blob storage along with the application table record that this file was attached to.
 
 ## Additional resources
 
