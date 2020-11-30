@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.16 of Finance and Operations apps (Febr
 description: This topic lists the features that are included in the platform updates for version 10.0.16 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 11/20/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,10 +51,10 @@ The following features are included in this release. Some of the listed features
 -  Removing support for Visual Studio 2015<br>- Version 10.0.16 is the last version to support Visual Studio 2015. For more information, see [
 Removing support for Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
--  Email throttling<br>- This feature allows non-interactive email providers to adhere to a per-minute email sending limit, which prevents errors that are currently triggered when the system attempts to send more emails than the provider can handle. When email throttling is enabled, sending limits for Microsoft 365 email providers will be set automatically; manual configuration is required for all other email providers. For more information, see 
+-  [Email throttling](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/email-throttling)<br>- This feature allows non-interactive email providers to adhere to a per-minute email sending limit, which prevents errors that are currently triggered when the system attempts to send more emails than the provider can handle. When email throttling is enabled, sending limits for Microsoft 365 email providers will be set automatically; manual configuration is required for all other email providers. For more information, see 
 [Configure and send email](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
 
--  Document (attachment) history<br>- This document management feature creates a history mechanism for record attachments. This allows your organization to maintain an audit of actions related to individual attachments. For example, you can see when an attachment was created, marked for pending deletion, restored, deleted, or moved and who performed the action. The default history retention period is 180 days, however this is configurable on the **Document management parameters** page. For more information, see 
+-  [Document (attachment) history](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/document-attachment-history)<br>- This document management feature creates a history mechanism for record attachments. This allows your organization to maintain an audit of actions related to individual attachments. For example, you can see when an attachment was created, marked for pending deletion, restored, deleted, or moved and who performed the action. The default history retention period is 180 days, however this is configurable on the **Document management parameters** page. For more information, see 
 [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 
 -  [General availability of the Grouping with grids feature](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- For more information, see 
