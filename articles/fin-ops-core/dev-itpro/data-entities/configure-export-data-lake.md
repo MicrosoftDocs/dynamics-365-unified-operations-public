@@ -50,7 +50,7 @@ To configure the export to Data Lake, you must create a storage account in your 
 
 The steps, which take place in the Azure portal, are as follows:
 > [!NOTE]
-    > When you are working in the Azure portal, you will be instructed to save several values for subsequent steps. You will also provide some of these values to your Finance and Operations apps by using Lifecycle Services (LCS). You will need Administrator access to LCS in order to do this.
+> When you are working in the Azure portal, you will be instructed to save several values for subsequent steps. You will also provide some of these values to your Finance and Operations apps by using Lifecycle Services (LCS). You will need Administrator access to LCS in order to do this.
 1. [Create an application in Azure Active Directory](#createapplication)
 2. [Grant access control roles to applications](#grantaccess)
 3. [Create a Data Lake Storage (Gen2 account) in your subscription](#createsubscription)
@@ -73,8 +73,8 @@ The steps, which take place in the Azure portal, are as follows:
 6. Select **Delegated permissions**, select **user_impersonation**, and then select **Add permissions**.
 7. On the left navigation pane, select **Certificates & secrets**, and then select **New client secret**. 
 8. In the **Description** field, enter a name.
-9. In the **Expires** field, select an option, and then select **Add**. The system will generate a secret and display under the grid. 
-10. Copy secret **Value** to the clipboard, as will have to <a name="secret"></a>provide this secret value when you set up the key vault later.
+9. In the **Expires** field, select an option, and then select **Add**. The system will generate a secret and display it under the grid. 
+10. Copy the secret **Value** to the clipboard. This is the  <a name="secret"></a>value you will need to provide when you set up the key vault later.
 
 ## <a name="createsubscription"></a>Create a Data Lake Storage (Gen2) account in your subscription
 
@@ -105,13 +105,13 @@ You need to grant your application permissions to read and write to the storage 
 > Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
 
 6. In the **Select** field, select the application that you registered earlier.
-7. Select **Save**
-8. Add the remaining roles shown in the following table by repeating steps 4 - 7.
+7. Select **Save**.
+8. Add the remaining roles shown in the following table by repeating steps 4-7.
 
 |   Application to be selected     |     Role to be assigned     |
 |----------------------------------|-----------------------------|
-| [Your application](#appid) you created earlier | Storage blob data contributor |
-| [Your application](#appid) you created earlier | Storage blob data reader     |
+| [The application](#appid) you created earlier | Storage blob data contributor |
+| [The application](#appid) you created earlier | Storage blob data reader     |
 
 ## <a name="createkeyvault"></a>Create a key vault
 
@@ -126,7 +126,7 @@ A key vault is a secure way to share details such as storage account name to you
 
 You are going to create three secrets in the Key vault and then add the values saved from previous steps. For each of the secrets, you will need to provide a secret name and provide the value you saved from earlier steps.
 
-| <a name="suggest"></a>**Suggested secret name** | **Secret value (what you saved earlier)**  | **Example** |
+| <a name="suggest"></a>**Suggested secret name** | **Secret value that you saved earlier**  | **Example** |
 |---------------------------|------------------------------------------------------------------|-------------|
 | app-id                    | The ID of the application [created earlier](#appid).             |8936e905-197b-xxx-xxxx-xxxxxxxxx|
 | app-secret                | The [client secret](#secret) specified earlier.                  |NaeIxxxxxxx---xxxx7eixxx~1g-|
@@ -147,7 +147,7 @@ You will notice the secret created in the list of secrets.
 1. In **Azure portal**, open the key vault that you created earlier.  
 2. In the **Add access policy** dialog box, select **Add**.
 3. On the left navigation pane, select **Access policies > Add Access Policy** to create a new policy. 
-4. On the **Add access policy** dialog, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
+4. In the **Add access policy** dialog box, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
 
 > [!NOTE]
 > If you can't find **Microsoft Dynamics ERP Microservices**, see the [troubleshooting section](#troubleshooting) at the end of this document.
@@ -201,7 +201,7 @@ You will need **Azure Active Directory tenant administrator** rights to perform 
 | Microsoft Dynamics ERP Microservices     | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
 
 
-If you are unable to find above applications, complete steps 3 - 7:
+If you are unable to find above applications, complete steps 3-7:
 
 3. On your local machine, open the Start menu and search for **PowerShell**.
 4. Right-click **Windows PowerShell** and select **Run as administrator**.
