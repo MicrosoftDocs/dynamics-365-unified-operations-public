@@ -724,6 +724,8 @@
         href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
       - name: Post with derived books
         href: fixed-assets/post-derived-value-models.md
+      - name: Number of books per journal
+        href: fixed-assets/number-books-per-journal.md
       - name: Post fixed asset transactions to posting layers
         href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
       - name: Fixed asset transaction options
@@ -732,6 +734,8 @@
         href: fixed-assets/tasks/transfer-fixed-asset.md
       - name: Split a fixed asset
         href: fixed-assets/tasks/split-fixed-asset.md
+      - name: Reduce balance depreciation after a split
+        href: fixed-assets/reduce-balance-depreciation-after-split.md
       - name: Set up fixed asset groups
         href: fixed-assets/tasks/set-up-fixed-asset-groups.md
       - name: Change a fixed asset group
