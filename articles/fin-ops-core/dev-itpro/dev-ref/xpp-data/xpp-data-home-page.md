@@ -64,4 +64,4 @@ The [Conversion of operations from set-based to record-by-record](xpp-data-perf.
 
 You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. The extensible SysDa API provides almost all the data access possibilities that are available in X++.
 
-The **executeQueryWithParameters** API can help [../mitigate a SQL injection attack](../query-with-parameters.md).
+The **executeQueryWithParameters** API can help [mitigate a SQL injection attack](../query-with-parameters.md).
