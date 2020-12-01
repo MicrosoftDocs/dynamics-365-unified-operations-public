@@ -376,7 +376,7 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 3. Click the **Available vehicles** tab to see the new list.
 4. Click in the QuickFilter, type **Lit**, and then press **Enter** to filter down to Litware model vehicles that are available.
 
-## Exercise 4: Create a backing data cache for a list (Extra credit)
+## Exercise 4: Create a backing data cache for a list
 
 For lists that have expensive queries, or lists where multiple users might use and work from the same workspace, consider caching the list to improve performance. In this section, you will add the necessary artifacts to create a data cache for a list. These artifacts include a query that maps fields to the cache, a table that holds the cache, and a class that provides the mapping between the query and the table. You will then uptake this cache on one of the tabbed lists in the workspace.
 
