@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
@@ -22,9 +21,9 @@ ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: gmohanv
+ms.search.region: Global
+# ms.search.industry:
+ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
 
