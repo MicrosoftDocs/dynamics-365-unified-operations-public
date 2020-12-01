@@ -120,15 +120,13 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 ### Dynamics 365 Retail POS version 10.0.11
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_45p9 | adyen_v1_51p7 |
-| | *Note: Validation testing has been performed on adyen_v1_56p5* |
+| adyen_v1_45p9 | adyen_v1_56p5 |
 
 # [10.0.12](#tab/10-0-12)
 ### Dynamics 365 Retail POS version 10.0.12
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_48p7 | adyen_v1_51p7 |
-| | *Note: Validation testing has been performed on adyen_v1_56p5* |
+| adyen_v1_48p7 | adyen_v1_56p5 |
 
 # [10.0.13](#tab/10-0-13)
 ### Dynamics 365 Retail POS version 10.0.13
@@ -136,10 +134,11 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_51p7 | adyen_v1_56p5 |
 
-> [!NOTE]
-> Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it is OK to have minor version updates within the same major version. These updates are normally very targeted fixes and do not meet the bar for full retesting as long as the same major firmare version was previously tested.
 
 ---
+
+> [!NOTE]
+> Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it is OK to have minor version updates within the same major version. These updates are normally very targeted fixes and do not meet the bar for full retesting as long as the same major firmare version was previously tested. Updates should not exceed the Maximum Adyen firmware version listed in documentation. 
 
 ### Supported payment terminals
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
