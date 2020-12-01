@@ -48,7 +48,7 @@ In this process guide, you will learn how to complete the following steps:
 > * Copy the database to production for mock go-live validation and actual go-live.
 
 ## Before you get started
-Network latency is a critical component to the data transfer.  If your source SQL Server is geogrpahically far, or has poor network latency, to your Sandbox Azure Datacenter then the process can take many additional hours or potentially timeout.  Latency under 75 miliseconds is preferred.  You can find your latency using a tool such as [Azure Speed Test](https://www.azurespeed.com/).  If your latency is poor, you may optionally backup your AX2012 database and restore it on a Cloud-hosted DevTest environment deployed to the same Azure Datacenter as your target Sandbox, and perform the steps from there.
+Network latency is a critical component to the data transfer.  If your source SQL Server is geographically far, or has poor network latency, to your Sandbox Azure Datacenter then the process can take many additional hours or potentially timeout.  Latency under 75 miliseconds is preferred.  You can find your latency using a tool such as [Azure Speed Test](https://www.azurespeed.com/).  If your latency is poor, you may optionally backup your AX2012 database and restore it on a Cloud-hosted DevTest environment deployed to the same Azure Datacenter as your target Sandbox, and perform the steps from there.
 
 ## Open firewall access to your sandbox environment database
 
@@ -150,7 +150,7 @@ Use Windows PowerShell to change the directory to the folder location where you 
 During execution, if a linked server between the source server and the sandbox server doesn't already exist, the script creates one. It then copies data from all the AX 2012 tables to the target database. It uses the **DegreeOfParallelism** parameter to process multiple tables at the same time.
 
 > [!NOTE]
-> If you must start over because of an error, go back to the [Clear the sandbox database of all objects](#clear-the-sandbox-database-of-all-objects) step.
+> If you must start over because of an error, go back to the [Publish the schema from AX 2012 to the sandbox database](#publish-the-schema-from-ax-2012-to-the-sandbox-database) step.
 
 ## Apply the data upgrade package from LCS
 
@@ -169,7 +169,7 @@ If the upgrade fails while an upgrade script is running, you can view the errors
 If you can fix the data, you can resume the upgrade from LCS. However, note that you can't resume from LCS more than eight times. Any attempt to resume more than eight times will cause another failure, because the servicing systems don't allow more attempts. In this case, you can use the **Abort** button to cancel the upgrade package and try again later.
 
 > [!NOTE]
-> If you must start over because of an error, go back to the [Clear the sandbox database of all objects](#clear-the-sandbox-database-of-all-objects) step.
+> If you must start over because of an error, go back to the [Publish the schema from AX 2012 to the sandbox database](#publish-the-schema-from-ax-2012-to-the-sandbox-database) step.
 
 ## Copy the database to production for mock go-live and actual go-live
 
