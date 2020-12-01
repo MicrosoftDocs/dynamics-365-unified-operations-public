@@ -37,7 +37,7 @@ This topic lists the steps for preparing data from external systems so that it c
 
 1. Prepare for the consolidation process by creating up a subsidiary legal entity for the consolidation. For information about creating legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
 
-For more information see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md). These are AX 2012 topics, which aren't maintained anymore. I tried to find alternate topics in Dynamics 365. 
+For more information, see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md).  
 
 2. Prepare file that will contain the data to be imported. For more information about the import process, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
 
@@ -45,7 +45,7 @@ For more information see [Prepare a legal entity for use in the consolidation pr
 
 4. Open the **Consolidate with import** page (**Consolidations > Consolidate with Import)**. On the **Criteria** tab, specify the details of the report, and/or the import, as follows. 
 
-|      Field                                   	|      Entries for    reporting                                                                                                                      	|      Entries for    inporting                                                                                                                      	|
+|      Field                                   	|      Entries for    reporting                                                                                                                      	|      Entries for    importing                                                                                                                      	|
 |----------------------------------------------	|--------------------------------------------------|-----------------------------------------------|
 |     Description                              	|                                                                                                                                                    	|     Create a description to identify this   import.                                                                                                	|
 |     Main account                             	|     Identify FROM and TO accounts to define a   range. Not entering a range will cause all accounts to be included.                                	|     Identify FROM and TO accounts to define a   range. Not entering a range will cause all accounts to be included.                                	|
@@ -63,7 +63,7 @@ For more information see [Prepare a legal entity for use in the consolidation pr
 |     Source legal   entity           	|     Select the   legal entity you are importing.          	|
 |     Source   accounting currency    	|     This default   currency is the currency associated with source legal entity you selected.                    	|
 |     From and To   accounts          	|     Enter accounts   to define a range accounts to import from the source company.                                  	|
-|     Exchange   rate type            	|     Select the exchange rate type. Exhange rate types are assigned when you create a main account. For more information, see [Create a main account](tasks/create-main-account.md).    	|
+|     Exchange   rate type            	|     Select the exchange rate type. Exchange rate types are assigned when you create a main account. For more information, see [Create a main account](tasks/create-main-account.md).    	|
 |     Apply   exchange rate from      	|     Enter a date   to apply the exchange rate that was set on that date or enter a value to use as the exchange rate.                                                                                                                                                                                	|
 |     Exchange   rate                 	|     The default entry   is based on the exchange rate type you selected. You can also define a rate if you entered a user-defined exchange rate.                                                                                                                                                     	|
 
