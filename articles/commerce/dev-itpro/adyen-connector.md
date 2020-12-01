@@ -136,18 +136,8 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_51p7 | adyen_v1_56p5 |
 
-# [10.0.14](#tab/10-0-14)
-### Dynamics 365 Retail POS version 10.0.14
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_56p5 | adyen_v1_56p5 |
-
-# [10.0.14](#tab/10-0-14)
-### Dynamics 365 Retail POS version 10.0.14
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_56p5 | adyen_v1_56p5 |
-
+> [!NOTE]
+> Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it is OK to have minor version updates within the same major version. These updates are normally very targeted fixes and do not meet the bar for full retesting as long as the same major firmare version was previously tested.
 
 ---
 
