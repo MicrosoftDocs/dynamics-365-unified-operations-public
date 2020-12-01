@@ -5,7 +5,7 @@ title: Initiate data source values of the USER INPUT PARAMETER type from source 
 description: This topic describes how the data source values of the USER INPUT PARAMETER type can be initiated from source code.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-When you design ER [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) and ER [format](general-electronic-reporting.md#FormatComponentOutbound) components, you can use the data sources of the *User input parameter* type to obtain necessary values from the ER user dialog that is offered at runtime before the execution of an ER format begins. This dialog can be programmatically turned off when the required parameters are entered on another page or when an ER format is executed in unattended (batch) mode. When the ER dialog is turned off, you must initiate the data source values of the *User input parameter* type from source code.
+When you design ER [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) and ER [format](general-electronic-reporting.md#FormatComponentOutbound) components, you can use the data sources of the *User input parameter* type to obtain necessary values from the ER user dialog box that is offered at runtime before the execution of an ER format begins. This dialog box can be programmatically turned off when the required parameters are entered on another page or when an ER format is executed in unattended (batch) mode. When the ER dialog box is turned off, you must initiate the data source values of the *User input parameter* type from source code.
 
 ## Format components for outgoing electronic documents
 
-You can configure an ER [format](general-electronic-reporting.md#FormatComponentOutbound) to generate an outbound document. When you configure the format, an ER [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) is selected as the data source used to fill in the outbound document. You must configure an ER [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) to specify how the selected data model is filled in by application data at runtime. When you design your model mapping, specify data sources to collect the desired values from different sources and populate them to your data model. Among others, you might use data sources of the *User input parameter* type to fill in your data model with values that are entered by users on the ER user dialog page that is offered when you first [run](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) an ER format. 
+You can configure an ER [format](general-electronic-reporting.md#FormatComponentOutbound) to generate an outbound document. When you configure the format, an ER [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) is selected as the data source used to fill in the outbound document. You must configure an ER [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) to specify how the selected data model is filled in by application data at runtime. When you design your model mapping, specify data sources to collect the desired values from different sources and populate them to your data model. Among others, you might use data sources of the *User input parameter* type to fill in your data model with values that are entered by users on the ER user dialog box that is offered when you first [run](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) an ER format. 
 
-For an ER format that is configured to generate an outbound document, the ER dialog can be programmatically turned off by using the `_showPromptDialog` parameter of the `createFormatMappingRunByFormatMappingId()` method of the `ERObjectsFactory` class. In this case, you need to initiate values of data sources of the *User input parameter* type from the source code. To do this, use the following pattern.
+For an ER format that is configured to generate an outbound document, the ER dialog box can be programmatically turned off by using the `_showPromptDialog` parameter of the `createFormatMappingRunByFormatMappingId()` method of the `ERObjectsFactory` class. In this case, you need to initiate values of data sources of the *User input parameter* type from the source code. To do this, use the following pattern.
 
 ```xpp
 ERModelDefinitionInputParametersAction Obj = new ERModelDefinitionInputParametersAction();
@@ -80,7 +80,7 @@ For more information, review the source code of the `BankPaymBalanceXML` applica
     }
 ```
 
-The `email`, `fromDate`, and `toDate` variables are used to store values that have been entered on other pages other than the ER dialog page before an ER format has been called. The `runER()` method of this class [runs](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) an ER format mapping that uses these variables to initiate values of several data sources. The prefix of every path of such a data source (such as `erParmEmail`, `erParmFromDate`, or `erParmToDate` constants in the sample code) is defined as the name of a format data source of the *Model* type (**model** value).
+The `email`, `fromDate`, and `toDate` variables are used to store values that have been entered on other pages other than the ER dialog box before an ER format has been called. The `runER()` method of this class [runs](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) an ER format mapping that uses these variables to initiate values of several data sources. The prefix of every path of such a data source (such as `erParmEmail`, `erParmFromDate`, or `erParmToDate` constants in the sample code) is defined as the name of a format data source of the *Model* type (**model** value).
 
 ![ER format designer showing the list of data sources of the 'BLWI format (BE)' configuration that includes the 'model' data source](./media/er-initiate-uip-data-source-value-from-source-code-1.png)
 
@@ -90,9 +90,9 @@ The suffix of every path of such a data source is defined as the path to the rel
 
 ## Format components for inbound electronic documents
 
-You can also configure an ER [format](general-electronic-reporting.md#FormatComponentInbound) that can be [run](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) to parse an inbound document and update application data. This format must contain a format mapping that refers to a model mapping of the *To destination* type that is used to update application data based on the content of an inbound document. In this type of model mapping, you can also use data sources of the *User input parameter* type to get values at runtime from the ER user dialog page and then use them for application data update.
+You can also configure an ER [format](general-electronic-reporting.md#FormatComponentInbound) that can be [run](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) to parse an inbound document and update application data. This format must contain a format mapping that refers to a model mapping of the *To destination* type that is used to update application data based on the content of an inbound document. In this type of model mapping, you can also use data sources of the *User input parameter* type to get values at runtime from the ER user dialog box and then use them for application data update.
 
-When an ER format is executed to parse an inbound document, the ER dialog can be programmatically turned off by using the `_showPromptDialog` parameter of the `createMappingDestinationRunByImportFormatMappingId()` method of the `ERObjectsFactory` class.
+When an ER format is executed to parse an inbound document, the ER dialog box can be programmatically turned off by using the `_showPromptDialog` parameter of the `createMappingDestinationRunByImportFormatMappingId()` method of the `ERObjectsFactory` class.
 
 For ER formats that are configured to parse an inbound document, the path to an ER data source is constructed as the path to a data source of the *User input parameter* type that resides in a model mapping of the *To destination* type that is called from the running ER format to update application data.
 
