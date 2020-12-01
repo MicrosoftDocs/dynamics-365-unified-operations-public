@@ -63,3 +63,5 @@ Here are some other statements that you will use in data access:
 The [Conversion of operations from set-based to record-by-record](xpp-data-perf.md) topic provides information about how you can use the record set–based statements and methods more efficiently.
 
 You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. The extensible SysDa API provides almost all the data access possibilities that are available in X++.
+
+The **executeQueryWithParameters** API can help [../mitigate a SQL injection attack](query-with-parameters.md).
