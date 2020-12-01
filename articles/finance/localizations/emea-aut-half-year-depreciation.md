@@ -35,10 +35,10 @@ ms.search.validFrom: 2016-11-30
 
 This topic provides information for users in legal entities in Austria about the depreciation of additional acquisitions when the Half year convention is used for fixed asset depreciation.
 
-In legal entities in Austria depreciation for additional acquisitions and acquisition adjustments is calculated according the following rules:
+In legal entities in Austria depreciation for additional acquisitions and acquisition adjustments is calculated according to the following rules:
 
--   Amount of additional acquisitions posted in the year of initial acquisition is depreciated starting from the Depreciation run date (if a Fixed asset is purchased before June 30th and additional acquisition posted before June 30th or a fixed asset is purchased after July 1st and additional acquisition posted after July 1st) or from the July 1st if a fixed asset is purchased before June 30th and additional acquisition posted after July 1st.
--   Amount of additional acquisitions posted in the year later than year of initial acquisition is depreciated according to half year convention rule starting from the January 1st or the July 1st of the year where the additional acquisitions is posted.
+-   The number of additional acquisitions posted in the year of initial acquisition is depreciated starting from the Depreciation run date (if a Fixed asset is purchased before June 30th and additional acquisition posted before June 30th or a fixed asset is purchased after July 1st and additional acquisition posted after July 1st) or from the July 1st if a fixed asset is purchased before June 30th and additional acquisition posted after July 1st.
+-   The number of additional acquisitions posted in the year later than year of initial acquisition is depreciated according to half year convention rule starting from the January 1st or the July 1st of the year where the additional acquisitions are posted.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ In legal entities in Austria depreciation for additional acquisitions and acquis
 | Set up **Fixed assets parameters**    | Open **Fixed assets** &gt; **Setup** &gt; **Fixed assets parameters.** On the **General** tab, select the following parameters:  **Apply specific rules for half year depreciation** , **Automatically create depreciation adjustment amounts with disposal**.                                                                                  |
 
 ## Half year depreciation on additional acquisitions calculation
-When **Apply specific rules for half year depreciation** checkbox is marked, and **Automatically create depreciation adjustment amounts with disposal** checkbox is marked, the depreciation adjustment amount for fixed assets with **Straight line life remaining** depreciation method and **Half year (start of year)** convention used, is posted automatically with the disposal calculated according to the half year convention rules.
+When the **Apply specific rules for half year depreciation** and **Automatically create depreciation adjustment amounts with disposal** check boxes are marked, the depreciation adjustment amount for fixed assets with the **Straight line life remaining** depreciation method and **Half year (start of year)** convention, is posted automatically with the disposal that is calculated according to the half year convention rules.
 
 
 
