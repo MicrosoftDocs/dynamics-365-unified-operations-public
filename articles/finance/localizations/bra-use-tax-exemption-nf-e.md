@@ -36,11 +36,11 @@ NF-e technical note NT2019.001 requires that the description of ICMS tax benefit
 
 Specific validation rules have been introduced in the reception services of the NF-e/NFC-e web services. These rules verify the compatibility between the use of benefit codes that are associated with the ICMS tax benefit or exemption, and the taxation code (CST) that is entered in the XML. Verification is completed when the NF-e/NFC-e authorization is requested.
 
-However, the specifications of the technical note leave it to the discretion of state legislation to adopt the validation rules, and to determine their own compatibility rules between the benefit code and the CST. The state also determines the exception rules when the compatibility check between the benefit code and the CST must be skipped by the reception services of the web services.
+However, the specifications of the technical note leave it to the discretion of the state to adopt the validation rules, and to determine the own compatibility rules between the benefit code and the CST. The state also determines the exception rules when the compatibility check between the benefit code and the CST must be skipped by the reception services of the web services.
 
 For more information about the compatibility rules and exceptions, see the latest version of technical note NT2019.001 in the [NF-e portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx). For more information about the validation rules, see rules N12-85, N12-86, N12-90, N12-94, N12-97, and N12-98 in the same technical note. In the [NF-e portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx), you can also view the additional documentation "TABELA\_cBenef\_X\_CST" (the **cBenef x CST** table), which describes the valid relationship between the benefit code and the CST for each state.
 
-Technical note NT2019.001 also includes detailed information about the adoption of the rules by each state legislation.
+Technical note NT2019.001 also includes detailed information about the adoption of the rules by each state.
 
 > [!NOTE]
 > The concept, setup, and use of tax benefits and exemptions in the context of the Brazilian localization aren't in the scope of this topic. For more information, see [Brazil tax overview](latam-bra-calculate-taxes.md).
@@ -79,7 +79,7 @@ The following new parameters have been introduced:
 > [!IMPORTANT]
 > When you turn on the **Validate benefit code** parameter, you receive the following message: "Do you want to copy taxation codes from benefit code types to adjustment code for 'XX' state?" This message is shown because a version of the **NT2019.001 v1.10 technical note** feature has been used before, and the types of benefits have already been entered on the **Type of benefits** page. However, you can convert the types of benefits to adjustment codes. If you select **Yes** in the message box, any existing data from the obsolete **Types of benefit codes** page will be converted to records on the **Adjustment and information for fiscal documents** page.
 
-The **Add exempt tags** and **Validate benefit codes** parameters must be set up for the same authority that is configured in the fiscal establishment, which must be referred to the state from the fiscal establishment address.
+The **Add exempt tags** and **Validate benefit codes** parameters must be set up for the same authority that is configured in the fiscal establishment, and the authority must be from the same state from the fiscal establishment address.
 
 1. Go to **Organization administration \> Organizations \> Electronic fiscal documents \> NF-e federal parameters**.
 2. On the **Web services** tab, in the **Authority** field, select the same authority that is configured in the fiscal establishment.
@@ -110,12 +110,12 @@ Note the following special properties for adjustment codes:
 
 ![Special properties for adjustment codes](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_special_controls.png)
 
-## Set up benefit codes by CST
+## Set up Taxation code by benefit code
 
-The CST by benefit code that is given by the **cBenef x CST** table must be entered as adjustment codes in the **Fiscal books** module.
+The Taxation code by benefit code that is given by the **cBenef x CST** table must be entered as an adjustment code in the **Fiscal books** module.
 
 1. Go to **Fiscal books \> Setup \> Tax adjustment codes \> Adjustment and information for fiscal documents**.
-2. Select **Add** to enter CST for the **Benefit code**.
+2. Select **Add** to enter **Taxation code** for the adjustment code.
 
 ![Taxation codes FastTab on the Adjustment and information for fiscal documents page](media/bra_tax_benefits_from_NT2019_001_adjustment_codes_CST.png)
 
@@ -145,4 +145,4 @@ The validation occurs for the rules that are configured on the **Benefit code pe
 
 ## Validation exceptions
 
-Technical note NT2019.001 specifies exception rules that are adopted at the discretion of each state legislation. For more information, see validation rules N12-85, N12-86, N12-90, N12-94, N12-97 and N12-98 in the technical note.
+Technical note NT2019.001 specifies exception rules that are adopted at the discretion of each state. For more information, see validation rules N12-85, N12-86, N12-90, N12-94, N12-97 and N12-98 in the technical note.
