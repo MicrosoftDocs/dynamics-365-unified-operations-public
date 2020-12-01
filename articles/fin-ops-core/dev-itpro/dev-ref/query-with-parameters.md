@@ -122,8 +122,8 @@ There is a related method on the **Statement** type that is used to run statemen
            WHERE Wages.Level = @Level";
 
         Map paramMap = SqlParams::create();
-        paramMap.add('percent', 1.1);     // 10 percent increase
-        paramMap.add('Level', 'Boss');    // For the top brass
+        paramMap.add('percent', 1.1);        // 10 percent increase
+        paramMap.add('Level', 'Manager');    // Management increase
 
         int cnt = statement.executeUpdateWithParameters(sql, paramMap);
         statement.close();
