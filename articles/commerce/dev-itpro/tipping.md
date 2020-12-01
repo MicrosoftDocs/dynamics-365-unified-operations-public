@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Support for tipping in payments SDK
-description: This topic describes support in the payments software development kit (SDK) for accepting tips on payment terminals.
+title: Support for tipping in the payments SDK
+description: This topic describes the support for accepting tips on payment terminals in the payments software development kit (SDK).
 author: rubendel
 manager: annbe
 ms.date: 11/18/2020
@@ -30,57 +30,55 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Support for tipping in the POS payments SDK
+# Support for tipping in the payments SDK
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how the Dynamics 365 Commerce payments software development kit (SDK) supports tips entered through the payment terminal. To enable tipping support in point of sale (POS), extensions are needed. The purpose of this capability is to add first-class support to the payments SDK in the form of a discrete field for tip amount in authorization responses. 
+This topic describes how the payments software development kit (SDK) for Microsoft Dynamics 365 Commerce supports tip amounts that are entered through a payment terminal. The purpose of this feature is to add first-class support to the payments SDK by including a separate field for the tip amount in authorization responses.
 
-This capability does not add support for tipping or tip reporting at the POS. To build full tipping capabilities, POS extensions are needed. 
+This feature doesn't add support for tipping or tip reporting at the point of sale (POS). Implementation of full tipping capabilities requires POS extensions.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Tips | Also known as gratuities, tips are common in quick service and hospitalities to provide a payment directly to the store or restaurant employee who provides services. |
-| Header level charge | A charge that can be applied to a purchase that is not for a specific line item. |
+| Tips | Tips, which are also known as gratuities, are common in the quick service and hospitality industries. They enable a payment to be given directly to the store or restaurant employee who provides services. |
+| Header-level charge | A charge that can be applied to a purchase, but that isn't for a specific line item. |
 
-## Overview
+## Overview of the tipping feature
 
-Tipping is common in certain locales and industries. For example, in quick service and hospitality, tipping has become nearly ubiquitous in the United States. For many businesses, the ability to support tipping through payment terminals is becoming a differentiator when attracting employees. This feature adds a discrete **TipAmount** field to the payments SDK so tips selected at the payment terminal can flow back to the POS as part of the authorization response. 
+Tipping is common in some locales and industries. For example, in the quick service and hospitality industries, tipping is now done almost everywhere in the United States. For many businesses, the ability to support tipping through payment terminals is becoming an important factor that helps attract employees. This feature adds a separate **TipAmount** field to the payments SDK, so that tip amounts that are selected on the payment terminal can be sent back to the POS as part of the authorization response.
 
-While this feature adds support for tipping at the payments SDK level, it does not include support for other critical aspects of tipping support. For example, reporting to indicate tip payouts at the end of shifts, the ability to pool tips, and the ability to report tips for payroll. To enable full tipping support, those capabilities must be implemented with extensions. 
+Although this feature adds support for tipping at the level of the payments SDK, it doesn't include support for other important aspects of tipping functionality. For example, the feature doesn't support reporting of tip payouts at the end of shifts, the ability to pool tips, or the ability to report tips for payroll. To enable full tipping support, you must implement those capabilities through extensions.
 
-For more information about creating payment terminal integrations and SDK references in this article, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
+For more information about how to create the payment terminal integrations and SDK references that are mentioned in this topic, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
 
 ### Prerequisites
 
 | Prerequisite | Description |
 |---|---|
-| Tip on device | Customer must be able to select tip amount on the payment terminal. |
+| Tip support on devices | Customers must be able to select a tip amount on the payment terminal. |
 | **isTippingEnabled** support | Payment connectors must support the **isTippingEnabled** variable for payment initialization. |
-| **TipAmount** | The tip amount must be returned from the payment connector in the **TipAmount** authorization response field. |
-| POS tip support by extension | The tip returned from the payment connector should be added to the sale as a header-level charge. In addition, tip reporting and management are not provided out-of-box. |
+| **TipAmount** field | The tip amount must be returned from the payment connector in the **TipAmount** field of the authorization response. |
+| POS tip support through extension | The tip amount that is returned from the payment connector should be added to the sale as a header-level charge. Tip reporting and management aren't provided out of the box. |
 
-### Tipping support by payment processor
+### Tipping support by payment processors
 
-This feature adds a new variable called **isTippingEnabled** to the **AuthorizePaymentTerminalDeviceRequest**. This variable indicates at the time a payment is requested from the POS if the authorization request is eligible for a tip to be added. Payment connectors receiving this request can then request a tip eligible authorization from the connected payment service or terminal. 
+This feature adds a new **isTippingEnabled** variable to the **AuthorizePaymentTerminalDeviceRequest** request. When a payment is requested from the POS, this variable indicates whether the authorization request is eligible to have a tip added. Payment connectors that receive this request can then request a tip-eligible authorization from the connected payment service or terminal.
 
-If **isTippingEnabled** is set to **True** and the customer chooses a tip on the payment terminal, that amount should be returned in the **TipAmount** property of the **AuthorizePaymentCardPaymentResponse** returned from the payment connector. The tip amount is also included in the **ApprovedAmount** property of the authorization response. 
+When the **isTippingEnabled** variable is set to **True**, if a customer selects a tip amount on the payment terminal, that amount should be returned in the **TipAmount** field of the **AuthorizePaymentCardPaymentResponse** response that is returned from the payment connector. The tip amount is also included in the **ApprovedAmount** field of the authorization response.
 
 ### Tipping support for the Adyen connector
 
-Tip support is included with the Adyen connector. Customization is required to set the **isTippingEnabled** variable to **True** when the authorization response is passed to the connector, but if that is done and the customer selects a tip on the device, then the tip will be returned in the **TipAmount** field of the authorization response.
+The Adyen connector includes tip support. Customization is required to set the **isTippingEnabled** variable to **True** when the authorization response is passed to the connector. When the **isTippingEnabled** variable is set to **True**, if a customer selects a tip amount on the device, that amount should be returned in the **TipAmount** field of the authorization response.
 
-To prompt the customer to select a tip on the Adyen terminal, the terminal must be configured for tipping. This is done through the Adyen customer area. To enable tipping, navigate to the **Point of Sale** tab in the Adyen portal. Tipping can be enabled by device or through the fleet-wide **Terminal settings** option. Within the settings of both the individual terminal or fleet-wide terminal settings, tipping is enabled through the **Payment features** tab. Once tipping is enabled on your Adyen device, settings on the device will need to be updated for the change to take effect. 
+Before a customer can be prompted to select a tip amount on the Adyen terminal, the terminal must be configured for tipping. This configuration is done through the Adyen customer area. To enable tipping, select the **Point of Sale** tab in the Adyen portal. Tipping can be enabled by terminal or through the fleet-wide **Terminal settings** option. In both the settings for individual terminals and the fleet-wide terminal settings, tipping is enabled on the **Payment features** tab. After tipping is enabled on your Adyen device, settings on the device must be updated. The change won't take effect until this update is done.
 
 ### Suggested implementation
 
-It is recommended that a header-level charge is used to add the tip amount to the transaction after the authorization response is returned from the payment connector. To support this, an extension should be created for the **PaymentTerminalAuthorizePaymentRequestHandler**. That extension should include logic to add a header level charge to the transaction if a **TipAmount** is returned in the authorization response. 
+We recommend that a header-level charge be used to add the tip amount to the transaction after the authorization response is returned from the payment connector. To support this functionality, an extension should be created for the **PaymentTerminalAuthorizePaymentRequestHandler** handler. That extension should include logic to add a header-level charge to the transaction if a **TipAmount** value is returned in the authorization response.
 
 ## Additional resources
 
-- [Adyen connector overview](adyen-connector?tabs=10-0-14.md)
+- [Adyen connector overview](adyen-connector.md?tabs=10-0-14.md)
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
-
-
