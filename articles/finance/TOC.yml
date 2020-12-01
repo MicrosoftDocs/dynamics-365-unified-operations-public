@@ -1516,6 +1516,8 @@
             href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+          - name: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
+            href: localizations/bra-use-tax-exemption-nf-e.md
         - name: SPED ECD
           href: localizations/latam-bra-sped-ecd.md
         - name: SPED-Reinf tax statement
