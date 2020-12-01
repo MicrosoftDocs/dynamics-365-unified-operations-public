@@ -71,8 +71,8 @@ Use Microsoft Visual Studio to import the tutorial project. The tutorial project
 Use Visual Studio to open the FMTutorial project. If you have Visual Studio open and have already loaded the FMTutorial project, you can continue to the next section.
 
 1. If the development environment isn’t already open, on the desktop, double-click the Visual Studio shortcut to open it.
-2. On the **File** menu, click **Open** &gt; **Project/Solution**.
-3. In the **Open Project** dialog box, browse to **Documents** &gt; **Visual Studio 15.0** &gt; **Projects**, select the **FMTutorial** solution, and then click **Open**.
+2. On the **File** menu, click **Open** \> **Project/Solution**.
+3. In the **Open Project** dialog box, browse to **Documents** \> **Visual Studio 15.0** \> **Projects**, select the **FMTutorial** solution, and then click **Open**.
 4. The FMTutorial project appears in Solution Explorer.
 
 ## Exercise 1: Understand the operational workspace pattern
@@ -162,7 +162,7 @@ All tiles require a backing query to retrieve the correct information.
 ### Add a tile
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Tiles** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics 365 Items** &gt; **User Interface** &gt; **Tile**. Set the **Name** property to **FMTCurrentRentalsTile**.
+2. Click **Dynamics 365 Items** \> **User Interface** \> **Tile**. Set the **Name** property to **FMTCurrentRentalsTile**.
 3. Click **Add**.
 4. If the new **FMTRental\_Current** tile isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the **Properties** window, set the following properties.
@@ -180,7 +180,7 @@ Tiles also have a refresh frequency property that controls how often the counts 
 ### Add a tile button to the workspace form
 
 1. In Solution Explorer, double-click the **FmtClerkWorkspace** form to open it in the designer.
-2. Right-click **Design** &gt; **PanoramaBody** &gt; **TileContainer**, point to **New**, and then click **Tile Button**.
+2. Right-click **Design** \> **PanoramaBody** \> **TileContainer**, point to **New**, and then click **Tile Button**.
 3. Press **Alt+Up arrow** four times to move the tile button to the top of TileContainer.
 4. In the **Properties** window, set the following properties.
 
@@ -228,7 +228,7 @@ Next, you will next see how to include an additional list in the workspace. This
 ### Add space in the workspace for a new list
 
 1. In Solution Explorer, double-click the **FmtClerkWorkspace** form to open it in the designer.
-2. Right-click **Design** &gt; **PanoramaBody** &gt; **TabbedListSection** &gt; **TabbedLists**, and then click **New Tab Page**.
+2. Right-click **Design** \> **PanoramaBody** \> **TabbedListSection** \> **TabbedLists**, and then click **New Tab Page**.
 3. In the **Properties** window, set the following properties.
 
    | Property | Value |
@@ -246,7 +246,7 @@ Next, you will next see how to include an additional list in the workspace. This
 ### Add a new form that has the new workspace content
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Forms** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics 365 Items** &gt; **User Interface** &gt; **Form**. Set the **Name** property to **FMTAvailableVehicles**.
+2. Click **Dynamics 365 Items** \> **User Interface** \> **Form**. Set the **Name** property to **FMTAvailableVehicles**.
 3. Click **Add**.
 4. If the new **FMTAvailableVehicles** form isn’t already open in the designer, double-click it in Solution Explorer.
 5. Add the **FmtVehicle** table as a data source for the form.
@@ -269,7 +269,7 @@ Next, you will next see how to include an additional list in the workspace. This
         | Join Source | FMTVehicle                                                                                                                                                      |
         | Link Type   | Inner Join                                                                                                                                                      |
 
-7. Notice the **Pattern: &lt;select&gt;** notation next to **Form Design**. This indicates the required pattern for this node. Right-click **Design**, point to **Apply pattern**, and then click **Form Part Section List**. This form pattern is typically used by workspace lists.
+7. Notice the **Pattern: \<select\>** notation next to **Form Design**. This indicates the required pattern for this node. Right-click **Design**, point to **Apply pattern**, and then click **Form Part Section List**. This form pattern is typically used by workspace lists.
 8. Click the **Pattern** tab to see the expected content for this pattern. This information will help guide you as you create content for the form. **Note:** In the future, we plan to provide a mechanism for automatically creating a form structure, based on a selected form pattern.
 
     [![Section list](./media/formpartsectionlist.png)](./media/formpartsectionlist.png)
@@ -304,7 +304,7 @@ Next, you will next see how to include an additional list in the workspace. This
     | Data Source | FMTVehicleModel |
     | Data Method | vehicleImage    |
 
-16. Expand **Data Sources** &gt; **FMTVehicle** &gt; **Fields**.
+16. Expand **Data Sources** \> **FMTVehicle** \> **Fields**.
 17. Drag the **VehicleId** and **DisplayRelationType** fields into the **VehicleCard** group.
 18. Right-click **Design**, point to **New**, and then click **Group**. Update the new group's **Name** property to **HeaderGroup**.
 19. The new HeaderGroup element requires a subpattern, because there are two variants for the arrangement of filters and actions in these sections. Right-click **HeaderGroup**, point to **Apply pattern**, and then click **Filters and Toolbar – Inline**.
@@ -322,7 +322,7 @@ Next, you will next see how to include an additional list in the workspace. This
 ### Add a new query that limits the data to available vehicles
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Queries** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics 365 Items** &gt; **Data Model** &gt; **Query**. Set the **Name** property to **FMTAvailableVehicles**.
+2. Click **Dynamics 365 Items** \> **Data Model** \> **Query**. Set the **Name** property to **FMTAvailableVehicles**.
 3. Click **Add**.
 4. If the new **FMTAvailableVehicles** query isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the designer, right-click **Data Sources**, and then click **New Data Source**.
@@ -346,7 +346,7 @@ Next, you will next see how to include an additional list in the workspace. This
 ### Add a new menu item that references the new form
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Menu items** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics 365 Items** &gt; **User Interface** &gt; **Display menu item**. Set the **Name** property to **FMTAvailableVehicles**.
+2. Click **Dynamics 365 Items** \> **User Interface** \> **Display menu item**. Set the **Name** property to **FMTAvailableVehicles**.
 3. Click **Add**.
 4. If the new **FMTAvailableVehicles** menu item isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the **Properties** window, set the following properties.
@@ -361,7 +361,7 @@ Next, you will next see how to include an additional list in the workspace. This
 ### Link the new list to the workspace
 
 1. In Solution Explorer, double-click the **FmtClerkWorkspace** form to open it in the designer.
-2. Click **Design** &gt; **PanoramaBody** &gt; **TabbedListSection** &gt; **TabbedLists** &gt; **AvailableVehiclesContainer** &gt; **AvailableVehiclesPart**.
+2. Click **Design** \> **PanoramaBody** \> **TabbedListSection** \> **TabbedLists** \> **AvailableVehiclesContainer** \> **AvailableVehiclesPart**.
 3. In the **Properties** window, set the **Menu item name** property to **FmtAvailableVehicles**.
 
 ### View the new menu item
@@ -385,7 +385,7 @@ For lists that have expensive queries, or lists where multiple users might use a
 The first step is to build a query that will be used to populate the cache table. This query should include all the tables that you want to get your cache data from, and it should limit the results to those records/columns that you want cached.
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Queries** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics 365 Items** &gt; **Data Model** &gt; **Query**. Set the **Name** property to **FMTPickupAndReturnQuery**.
+2. Click **Dynamics 365 Items** \> **Data Model** \> **Query**. Set the **Name** property to **FMTPickupAndReturnQuery**.
 3. Click **Add**.
 4. If the new **FMTPickupAndReturnQuery** query isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the designer, right-click **Data Sources**, and then click **New Data Source**.
@@ -444,7 +444,7 @@ The first step is to build a query that will be used to populate the cache table
 The second step is to define a table that has the fields that are returned from the cache query. You must also add a **SysDataCacheContextId** field that will be used to map the cache row to the base framework cache tables. Additionally, you should also define any required relations between this table and other tables, and also any data methods that you require that involve the cached fields.
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Tables** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics 365 Items** &gt; **Data Model** &gt; **Table**. Set the **Name** property to **FMTPickupAndReturnTableCache**.
+2. Click **Dynamics 365 Items** \> **Data Model** \> **Table**. Set the **Name** property to **FMTPickupAndReturnTableCache**.
 3. Click **Add**.
 4. If the new **FMTPickupAndReturnTableCache** table isn’t already open in the designer, double-click it in Solution Explorer.
 5. In the designer, right-click **Fields**, and then add the following fields. For each field, the following table shows the data type and the extended data type (EDT) or enum type.
@@ -524,7 +524,7 @@ The second step is to define a table that has the fields that are returned from 
 The third step is to create a class that defines the relationship between the cache query and the catch table.
 
 1. In Solution Explorer, in the **FMTutorial** project, right-click the **Classes** folder, point to **Add**, and then click **New item**.
-2. Click **Dynamics 365 Items** &gt; **Code** &gt; **Class**. Set the **Name** property to **FMTPickupAndReturnClass**.
+2. Click **Dynamics 365 Items** \> **Code** \> **Class**. Set the **Name** property to **FMTPickupAndReturnClass**.
 3. Click **Add**.
 4. If the new **FMTPickupAndReturnClass** class isn’t already open in the designer, double-click it in Solution Explorer.
 5. Add the following code to the class.
@@ -563,7 +563,7 @@ After you've set up the data cache, you can start to use the cache in your forms
 2. Expand the **Data Sources** node.
 3. Delete the **FMTCustomer** data source.
 4. Click the **FMTRental** data source. In the **Properties** window, set the **Table** property to **FMTPickupAndReturnTableCache**.
-5. Click **Design** &gt; **ReturningTodayGrid**. In the **Properties** window, set the **Data Source** property to **FMTPickupAndReturnTableCache**.
+5. Click **Design** \> **ReturningTodayGrid**. In the **Properties** window, set the **Data Source** property to **FMTPickupAndReturnTableCache**.
 6. Inside **ReturningTodayGrid**, click **CustomerImage**. Update the **Data Source** property to **FMTPickupAndReturnTableCache** and the **Data Method** property to **customerImage**.
 7. Inside **ReturningTodayGrid**, click **FirstNameCopy1**. Update the **Data Source** property to **FMTPickupAndReturnTableCache** and the **Data Method** property to **fullName**.
 8. Press **F7** to view code for the form.
