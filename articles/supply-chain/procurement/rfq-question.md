@@ -107,3 +107,5 @@ If you receive the same question from multiple vendors, you can group the questi
 You can make changes to allow or disallow questions to RFQs until the RFQ is awarded. You can also extend or shorten the time frame in which vendors can submit questions.
 For published RFQs, you must modify a request for quotation  to allow or disallow vendor questions or adjust the time frame for questions.
 
+> [!IMPORTANT]
+> If you amend an existing RFQ for the purpose of allowing vendor questions, the system will clear all existing responses when you resend the RFQ.
