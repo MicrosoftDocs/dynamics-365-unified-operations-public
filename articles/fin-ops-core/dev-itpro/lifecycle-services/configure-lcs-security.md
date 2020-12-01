@@ -122,37 +122,6 @@ You can invite users from inside or outside your organization to join your proje
 After you've configured security for one project, you can import the users to another project.
 
 ## Configure implimentation roles 
-If you have an implementation project, you will also have the option to specify project user's implementation roles. The following table describes the implementation roles that are available for implementation project users.
+If you have an implementation project, you will also have the option to specify project user's implementation roles. See .[Roles in a Dynamics 365 implementation](https://docs.microsoft.com/en-us/learn/modules/get-started-implementation-project/01-2-roles) for more infomation. 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Role</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Project Manager</td>
-<td>Implementation project manager is in charge of making sure a company’s implementation goes smoothly.</td>
-</tr>
-<tr class="even">
-<td>Functional consultant</td>
-<td>Functional Consultants analyze business requirements and translate those requirements into fully realized business processes and solutions that implement industry best practices. Functional Consultants have a fundamental understanding of accounting principles and financial operations of businesses, customer service, field service, manufacturing, retail, and supply chain management concepts.</td>
-</tr>
-<tr class="odd">
-<td>Technical consultant</td>
-<td>Technical consultants implement and extend applications to meet the requirements of the business. Technical consultants provide fully realized solutions by using standardized application coding patterns, extensible features, and external integrations.</td>
-</tr>
-<tr class="even">
-<td>Architect</td>
-<td>Architects are trusted advisors who understand business recommended practices, software capabilities, and implementation delivery so they can lead implementation team members to implement Dynamics solutions that can achieve the predefined implementation goals.</td>
-</tr>
-<tr class="odd">
-<td>Business user</td>
-<td>Business users are the people who use the system after deployment.</td>
-</tr>  
+ 
