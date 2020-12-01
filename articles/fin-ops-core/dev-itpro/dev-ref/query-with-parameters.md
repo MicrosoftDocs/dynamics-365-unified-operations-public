@@ -63,7 +63,9 @@ public str GetFirstName(str name)
 
 Suppose also that there is a form that allows the user to enter the name in a string field, or perhaps a service endpoint that allows names to come into the server. All is well when the user enters a valid name like "Jones". A malicious user might enter a name that looks like this:
 
+```xpp
 '; drop table Customer --
+```
 
 The final query that the server runs is:
 
