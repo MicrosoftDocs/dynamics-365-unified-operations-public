@@ -62,25 +62,25 @@ To create and configure a new tab, follow these steps:
 1. Make the following settings in the header of the page:
 
     - **Tab name** - Specify a name for the tab.
-    - **Main view** - Select between the two pre-defined job lists (*Active jobs* or*All jobs*).
-    - **Details view** - Select between a blank value or *Job details***.** If you select the blank value, there will be no detailed view in the tab. If you select **Job details**, the detailed view will contain a detailed description of the job selected in the job list in the main view.
+    - **Main view** - Select between the two pre-defined job lists (*Active jobs* or *All jobs*).
+    - **Details view** - Select between a blank value or **Job details**. If you select the blank value, there will be no detailed view in the tab. If you select **Job details**, the detailed view will contain a detailed description of the job selected in the job list in the main view.
 
-1. In the **Primary toolbar** section, choose which buttons should be available in the primary toolbar. The **Available actions co**lumn shows a list of all the buttons can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control in which the buttons are presented in the user interface.
+1. In the **Primary toolbar** section, choose which buttons should be available in the primary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
 
-1. In the **Secondary** **toolbar** section, choose which buttons should be available in the secondary toolbar. The **Available actions co**lumn shows a list of all the buttons can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control in which the buttons are presented in the user interface.
+1. In the **Secondary** **toolbar** section, choose which buttons should be available in the secondary toolbar. The **Available actions** column shows a list of all the buttons that can be added. The **Selected actions** columns shows a list of all the buttons that are included in the current configuration. Use the buttons between the columns to move selected items between the columns as needed. Use the up and down buttons next to the **Selected actions** column to control the order in which the buttons are presented in the user interface.
 
 ## Associate a tab with a configuration
 
-When you designed all the tabs you need, you can associate them with a configuration.
+After you designed all the tabs you need, you can associate them with a configuration.
 
 1. Go to **Production control &gt; Setup &gt; Configure production floor execution**.
 
     ![Configure production floor execution](media/pfe-config-prod-floor-execution.png "Configure production floor execution")
 
-1. On the **Tab selection** FastTab toolbar, select **Add**.
+1. On the **Tab selection** FastTab, select **Add**.
 
-1. A new row is added to the grid. For this new row, select the name of a tab you want to add to the configuration.
+1. A new row is added to the grid. For this new row, select the name of a tab that you want to add to the configuration.
 
 1. Continue to add additional tabs as needed.
 
-1. Use the **Move up** and **Move down** buttons on the toolbar to arrange the tabs as needed. The tabs will be displayed from left to right in the order shown here (the tab at the top is shown on the left).
+1. Use the **Move up** and **Move down** buttons on the toolbar to arrange the tabs as needed. The tabs will be displayed from left to right in the order shown in the above screenshot (the tab at the top is shown on the left).
