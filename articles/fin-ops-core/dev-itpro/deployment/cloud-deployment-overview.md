@@ -175,24 +175,7 @@ To provide the best experience and performance, Microsoft performs maintenance o
 While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
 
 ### How do I connect to the SQL database on my Sandbox environment?
-Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
-
-> [!IMPORTANT]
-> You will not be able to connect to the Production database directly.
-
-1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment with a database that you want to connect to.
-2. Open SQL Server Management Studio.
-3. Use these steps to get the connection details:
-    1. Go to the **Environment Details** page in **Lifecycle Services portal**.
-    2. Get the SQL Server, Database Name, and AXDBAdmin credentials from the **Database Accounts** section.
-4. In the **Connect to SQL Server** dialog box, complete the following steps:
-    1. Enter (ServerName).database.windows.net, where (ServerName) is the name of your database server obtained from LCS.
-    2. Select SQL Server Authentication for **Authentication**.
-    3. Use axdbadmin for **Login**.
-    4. Enter the password obtained from LCS for axdbadmin.
-    5. Select **Options**.
-    6. Enter the name of the database obtained from LCS in the **Connect to database** drop-down list.
-    7. Select **Connect**.
+Follow the steps under [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
 
 ### How do I access a development instance?
 For information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators, see [Deploy and access development environments](../dev-tools/access-instances.md).
