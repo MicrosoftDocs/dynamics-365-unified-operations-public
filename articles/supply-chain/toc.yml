@@ -2095,6 +2095,8 @@
             items:
             - name: Configure the production floor execution interface
               href: production-control/production-floor-execution-configure.md
+            - name: Design the content of the production floor execution interface
+              href: production-control/production-floor-execution-tabs.md
             - name: Set up a device to run the production floor execution interface
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface
