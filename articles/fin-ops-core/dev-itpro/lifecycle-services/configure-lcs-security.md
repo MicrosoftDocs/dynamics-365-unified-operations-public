@@ -122,6 +122,6 @@ You can invite users from inside or outside your organization to join your proje
 After you've configured security for one project, you can import the users to another project.
 
 ## Configure implimentation roles 
-If you have an implementation project, you will also have the option to specify project user's implementation roles. See .[Roles in a Dynamics 365 implementation](https://docs.microsoft.com/en-us/learn/modules/get-started-implementation-project/01-2-roles) for more infomation. 
+If you have an implementation project, you will have the option to specify project user's implementation roles. See .[Roles in a Dynamics 365 implementation](https://docs.microsoft.com/en-us/learn/modules/get-started-implementation-project/01-2-roles) for more infomation. 
 
  
