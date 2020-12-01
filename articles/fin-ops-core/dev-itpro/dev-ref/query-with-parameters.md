@@ -5,7 +5,7 @@ title: Mitigate a SQL injection attack
 description: This topic describes how to mitigate a SQL injection attack in X++.
 author: pvillads
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -23,7 +23,7 @@ ms.custom: 31301
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -115,27 +115,27 @@ The updated example uses the new API named **executeQueryWithParameters** instea
 There is a related method on the **Statement** type that is used to run statements that return integer values instead or rows. Typically, the integer value is the number of rows impacted. This example uses the X++ data statements with the **executeQueryWithParameters** API:
 
 ```xpp
-    public void InsertWithStrParameter()
-    {
-        var connection = new Connection();
-        Statement statement = connection.createStatement();
+public void InsertWithStrParameter()
+{
+    var connection = new Connection();
+    Statement statement = connection.createStatement();
 
-        connection.ttsbegin();
+    connection.ttsbegin();
 
-        str sql = @"
-           UPDATE Wages
-           SET Wages.Wage = Wages.Wage * @percent
-           WHERE Wages.Level = @Level";
+    str sql = @"
+        UPDATE Wages
+        SET Wages.Wage = Wages.Wage * @percent
+        WHERE Wages.Level = @Level";
 
-        Map paramMap = SqlParams::create();
-        paramMap.add('percent', 1.1);        // 10 percent increase
-        paramMap.add('Level', 'Manager');    // Management increase
+    Map paramMap = SqlParams::create();
+    paramMap.add('percent', 1.1);        // 10 percent increase
+    paramMap.add('Level', 'Manager');    // Management increase
 
-        int cnt = statement.executeUpdateWithParameters(sql, paramMap);
-        statement.close();
+    int cnt = statement.executeUpdateWithParameters(sql, paramMap);
+    statement.close();
 
-        connection.ttscommit();
-    }
+    connection.ttscommit();
+}
 ```
 
 ## Conclusion
