@@ -81,13 +81,13 @@ Before you start to make adjustments to **FmtClerkWorkspace** form, you will loo
 
 1. In Solution Explorer, double-click the **FmtClerkWorkspace** form to open it in the designer.
 2. Click the **Design** node.
-3. Click the **Pattern** tab. Operational workspaces have an optional Action Pane and optional filter group (as indicated by the 0..1 notation to the left of those nodes). However, the panorama-style tab is required by this pattern. Note that the **Patterns** tab shows that the PanoramaBody control matches the required Tab in the pattern, but there are no corresponding controls for the optional items at this level of the pattern.
+3. Click the **Pattern** tab. Operational workspaces have an optional Action Pane and optional filter group (as indicated by the 0..1 notation to the left of those nodes). However, the panorama-style tab is required by this pattern. The **Patterns** tab shows that the PanoramaBody control matches the required Tab in the pattern, but there are no corresponding controls for the optional items at this level of the pattern.
 
     ![Operational workspace pattern](./media/workspacepattern1.png)
 
 4. Click **PanoramaBody**.
 
-    ![Operational workspace pattern](./media/workspacepattern2.png)
+    ![Pattern tab, PanoramaBody](./media/workspacepattern2.png)
 
 All workspaces have three required sections:
 
