@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare a legal entity for use in the consolidation process
-description: This topic lists the steps for preparing data from external systems to be imported to Dynamics 365 Finance.
+description: In a consolidation, you gather transactions from several sets of legal entity accounts into a single set of legal entity accounts. This topic lists the steps for preparing a legal entity for consolidation.
 author: jinniew
 manager: AnnBe
 ms.date: 10/30/2020
@@ -33,10 +33,10 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include banner] 
 
- In a consolidation, you gather transactions from several sets of legal entity accounts into a single set of legal entity accounts.
+In a consolidation, you gather transactions from several sets of legal entity accounts into a single set of legal entity accounts. This topic lists the steps for preparing a legal entity for consolidation. 
 
 > [!NOTE]
-> We recommend that you use Management Reporter for Microsoft Dynamics ERP to combine the financial results for multiple legal entities in a consolidated format. Management Reporter lets you create consolidated financial reports across legal entities, use Microsoft Excel to import consolidation data from other sources, and translate amounts into any number of reporting currencies without having to run the consolidation process in Microsoft Dynamics AX.
+> We recommend that you use Management Reporter for Microsoft Dynamics 365 Finance to combine the financial results for multiple legal entities in a consolidated format. Management Reporter lets you create consolidated financial reports across legal entities, use Microsoft Excel to import consolidation data from other sources, and translate amounts into any number of reporting currencies without having to run the consolidation process in Microsoft Dynamics AX.
 
 You can print reports, such as financial statements, from the consolidated legal entity. However, you cannot use the consolidated legal entity for daily transactions.
 
@@ -86,6 +86,6 @@ Click **General ledger** \> **Periodic** \> **Consolidate** \> **Consolidate \[O
 
 
 > [!NOTE]
-> Before you can process the consolidation, prepare the subsidiary legal entities for consolidation. For more information, see <A href="set-up-a-subsidiary-legal-entity-for-consolidation.md">Set up a subsidiary legal entity for consolidation</A>.
+> Before you can process the consolidation, prepare the subsidiary legal entities for consolidation. For more information, see [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md).
 
 
