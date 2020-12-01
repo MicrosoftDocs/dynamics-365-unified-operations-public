@@ -30,11 +30,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Mitigate a SQL injection attack
 
-A SQL injection attack happens when malicious data values are passed to SQL Server in a query string. Those values can wreak havoc in a database. SQL injections can happen if you are not vigilant in how you are passing data that came from an uncontrolled source, for example, user input, to a query, and then that query runs against the SQL database. A SQL injection no usually an issue in Finance and Operations apps, because using the built-in data access statements in X++ precludes the possibility of this attack. It can happen when you use Direct-SQL, and raw SQL code is passed to the server.
+[!include [banner](../includes/banner.md)]
+
+[!include [preview-banner](../includes/preview-banner.md)]
+
+A SQL injection attack happens when malicious data values are passed to SQL Server in a query string. Those values can wreak havoc in a database. A SQL injection can happen if you are not vigilant in how you pass data that comes from an uncontrolled source, such as user input, to SQL Server by using a query. A SQL injection is not usually an issue in Finance and Operations apps, because using the built-in data access statements in X++ precludes the possibility of this attack. It can happen when you use Direct-SQL, and raw SQL code is passed to the server.
 
 ## The problem
 
-To illustrate the scenario, let's consider this example. A developer writes code to look up the first name of a customer given their last name, using the code in the following example:
+To illustrate the scenario, let's consider this example. Suppose that a developer writes code to look up the first name of a customer given their last name, using the code in the following example:
 
 ```xpp
 public str GetFirstName(str name)
@@ -57,19 +61,19 @@ public str GetFirstName(str name)
 }
 ```
 
-Suppose that there is a form that allows the user to enter the name in a string field, or perhaps a service endpoint that allows names to come into the server. All is well when the user enters a valid name like "Jones". A malicious user might enter a name that looks like this:
+Suppose also that there is a form that allows the user to enter the name in a string field, or perhaps a service endpoint that allows names to come into the server. All is well when the user enters a valid name like "Jones". A malicious user might enter a name that looks like this:
 
 '; drop table Customer --
 
-As you can see, the final query that the server runs is:
+The final query that the server runs is:
 
 ```xpp
 SELECT TOP(1) firstName FROM Customer WHERE customer.Name = ''; drop table Customer --'
 ```
 
-The first quote in the given string just ends the string literal that should contain the name we are looking for. Then another SQL statement is run, because of the `;` statement terminator token. This second statement irretrievably wipes out the **Customer** table and all the data in it. Finally, the commenting characters, `--`, are there to make sure that the ending single quote does not cause syntax errors, making the string perfectly valid T/SQL. The developer will be looking for a new job soon.
+The first quote in the given string just ends the string literal that should contain the name we are looking for. Then another SQL statement is run, because of the `;` statement terminator token. This second statement irretrievably wipes out the **Customer** table and all the data in it. Finally, the commenting characters, `--`, make sure that the ending single quote does not cause syntax errors, making the string perfectly valid T/SQL. The developer will be looking for a new job soon.
 
-SQL injection occurs because we consider developers as gods in the X++ pantheon who are assumed to be reasonable people who know what they are doing. The connection to the SQL server does not impose any restrictions that preclude it from doing operations that create or delete tables, views, and stored procedures at runtime.
+SQL injection occurs because we consider developers are assumed to be reasonable people who know what they are doing. The connection to the SQL server does not impose any restrictions that preclude it from doing operations that create or delete tables, views, and stored procedures at runtime.
 
 ## The solution
 
