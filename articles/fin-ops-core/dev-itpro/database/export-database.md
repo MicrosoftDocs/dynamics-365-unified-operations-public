@@ -38,10 +38,10 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database fro
 
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
-### Maximum limit 40GB on exported bacapcs 
-To maintain the system that performs the database exports from LCS, a limit on the maximum bacpac size is being imposed.  This limit is set at 40GB for each bacpac exported.  The reason for this is two-fold: firstly, a centralized system is performing the exports for multiple customers in the same geographic region, and this system has constraints on disk space.  Secondly, Azure SQL compresses the data very well in the bacpac format and in many cases where customers exceeded 40GB there were customizations or binary data involved that drastically oversized the backup file.  
+### Maximum limit 50GB on exported bacapcs 
+To maintain the system that performs the database exports from LCS, a limit on the maximum bacpac size is being imposed.  This limit is set at 50GB for each bacpac exported.  The reason for this is two-fold: firstly, a centralized system is performing the exports for multiple customers in the same geographic region, and this system has constraints on disk space.  Secondly, Azure SQL compresses the data very well in the bacpac format and in many cases where customers exceeded 50GB there were customizations or binary data involved that drastically oversized the backup file.  
 
-If you experience an export failure because the resulting bacpac is over 40GB in size, try running the below SQL script against your Sandbox database to identify the top 15 tables by size in megatbytes.  Any tables which are for data entity staging ( they have 'staging' at the end of the table name ) can be truncated.  Any tables which are storing binary or blob data (JSON / XML / binary) should either be truncated or the contents of that field should be deleted to free up space.  Binary data is not able to be compressed and so storing such large volumes of data in the database itself will cause you to quickly hit the 40GB limit.
+If you experience an export failure because the resulting bacpac is over 50GB in size, try running the below SQL script against your Sandbox database to identify the top 15 tables by size in megatbytes.  Any tables which are for data entity staging ( they have 'staging' at the end of the table name ) can be truncated.  Any tables which are storing binary or blob data (JSON / XML / binary) should either be truncated or the contents of that field should be deleted to free up space.  Binary data is not able to be compressed and so storing such large volumes of data in the database itself will cause you to quickly hit the 50GB limit.
 
 ```sql
 USE [YourDBName] -- replace your dbname
