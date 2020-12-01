@@ -5,7 +5,7 @@ title: Configure Lifecycle Services (LCS) security
 description: Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
 author: AngelMarshall
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -122,6 +122,6 @@ You can invite users from inside or outside your organization to join your proje
 After you've configured security for one project, you can import the users to another project.
 
 ## Configure implimentation roles 
-If you have an implementation project, you will have the option to specify project user's implementation roles. See .[Roles in a Dynamics 365 implementation](https://docs.microsoft.com/en-us/learn/modules/get-started-implementation-project/01-2-roles) for more infomation. 
+If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles). 
 
  
