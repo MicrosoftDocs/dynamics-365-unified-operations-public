@@ -200,6 +200,7 @@
         "fin-ops-core/dev-itpro/office-integration/**/**.md": "Operations, CrossApp",
         "fin-ops-core/dev-itpro/perf-test/**/**.md": "Operations, CrossApp",
         "fin-ops-core/dev-itpro/perf-test/rsat/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/process-automation/**/**.md": "Operations, Developer",
         "fin-ops-core/dev-itpro/power-platform/**/**.md": "Operations, CrossApp",
         "fin-ops-core/dev-itpro/sysadmin/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
         "fin-ops-core/dev-itpro/sysadmin/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
