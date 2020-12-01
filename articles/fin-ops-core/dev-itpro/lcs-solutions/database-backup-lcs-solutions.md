@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Lifecycle Services
+# ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196833
 ms.assetid: fc0f06e8-1a20-45f7-ae98-ee074fe1f030

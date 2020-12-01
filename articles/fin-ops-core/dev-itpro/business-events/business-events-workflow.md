@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
+# ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 

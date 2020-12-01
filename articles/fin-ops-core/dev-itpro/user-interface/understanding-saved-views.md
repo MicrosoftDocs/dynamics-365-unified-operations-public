@@ -17,7 +17,7 @@ ms.search.form: SysUserSetup, DefaultDashboard
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

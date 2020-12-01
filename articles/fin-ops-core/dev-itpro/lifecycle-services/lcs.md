@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 71724
 ms.assetid: 5bd51009-9047-4694-9f95-9fc1207ed583
