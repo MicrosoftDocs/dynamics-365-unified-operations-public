@@ -1704,7 +1704,7 @@
           href: user-interface/build-customer-form.md
         - name: Build navigation
           href: user-interface/build-navigation.md
-        - name: Build workspaces
+        - name: Modify a workspace
           href: user-interface/build-workspace.md
       - name: Forms
         items:
