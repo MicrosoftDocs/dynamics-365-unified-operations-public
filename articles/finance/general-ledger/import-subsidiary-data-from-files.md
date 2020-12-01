@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jiwo
-ms.search.validFrom: 2018-5-31
+ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
 
 ---
