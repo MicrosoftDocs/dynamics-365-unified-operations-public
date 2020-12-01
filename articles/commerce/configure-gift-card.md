@@ -45,7 +45,8 @@ When multiple gift cards are added to the cart, gift card items will not be aggr
 
 ## Enable the digital gift card feature in Commerce headquarters
 
-The **Purchasing gift card on e-commerce feature** feature flag must be enabled in Commerce headquarters for gift card purchase flow to work in Dymamics 365 Commerce. 
+The **Purchasing gift card on e-commerce feature** feature flag must be enabled in Commerce headquarters for gift card purchase flow to work in Dymamics 365 Commerce. The feature flag can be found in **Feature Management** in Head quarters. Below is an image of the Feature Management page that shows the new feature flag.
+![Feature Management form in Headquarters](./media/Featureflag.png)
 
 ## Configure a digital gift card in Commerce headquarters
 
@@ -53,11 +54,17 @@ Digital gift card products should be configured in Commerce headquarters similar
 
 Here are important steps specific to configuring a gift card for purchase in Commerce headquarters.
 
-- When configuring digital gift card products, set the **Product type** property to **Service item**. If a product is of type **Service item**, it will not be checked for available inventory before placing an order. For more information, see [Create a new product](create-new-product-commerce.md#create-a-new-product).
-- The product needs to be configured to be of type **Gift card**. For more information, see [Support for external gift cards](./dev-itpro/gift-card.md).
+- When configuring digital gift card products, set the **Product type** property to **Service item**. If a product is of type **Service item**, it will not be checked for available inventory before placing an order. For more information, see [Create a new product](create-new-product-commerce.md#create-a-new-product). See image below for details.
+![Creating a product as Service Item](./media/ServiceItem.png)
+
+- The product needs to be configured as a Gift card. For more information on how to configure a product as gift card, see [Support for external gift cards](./dev-itpro/gift-card.md).
 - If a gift card needs to support multiple predefined values (for example, $25, $50, $100), the predefined values should be set up using the **Size** dimension. Each predetermined amount will be a variant. For more information, see [Product dimensions](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
 - If a gift card needs to allow customers to specify a custom amount, first set up a variant that allows a custom amount. Then open the product from the **Released Products in Category** page, navigate down to **Commerce** section, and set the **Key in Price** property to **Must key in price**. This ensures that a price can be entered by the customer when browsing the product on a product details page (PDP).
-- Set the delivery mode for gift cards to be of type **Electronic**. For more information, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+![Set a Key in price](./media/KeyInPrice.png)
+
+- Set the delivery mode for gift cards to be of type **Electronic**. Navigate to Retail Commerce->Channel Setup->Modes of delivery and assign **Electronic** to gift card product. For more information, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+![Set Electronic Mode of Delivery](./media/ElectronicMode.png)
+
 - Ensure that you have an online functionality profile created and associated with your online store in Commerce headquarters. In the functionality profile, set the **Aggregate products** property to **Yes**. This will ensure that all items except gift cards are aggregated. For more information, see [Create an online functionality profile](online-functionality-profile.md).
 - To ensure that customers receive an email once a gift card is invoiced, go to **Email notification profiles**, create a new email notification type, and set the **Email notification type** property to **Issue gift card**. For more information, see [Set up an email notification profile](email-notification-profiles.md).
 
