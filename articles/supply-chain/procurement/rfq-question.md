@@ -35,20 +35,35 @@ When your agency has sent a request for quotation (RFQ), vendors sometimes have 
 
 Users can publish answers to vendor questions more than once. Vendors can't no longer post questions after a vendor is selected and the RFQ is awarded, or after the cutoff date for questions is reached.
 
+## Turn on the feature
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Procurement and sourcing*
+- **Feature name:** *RFQ questions and answers*
+
+## Allow questions and answers to be used in RFQs
+
+1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
+1. Open the **Request for quotation** tab.
+1. Set the following options as needed:
+    - **Allow vendor questions**: Enables vendor questions for RFQ cases. You must set this to *Yes* to use the features described in this topic.
+    - **Default direct response**: When you reply to a question, you can choose to reply to all vendors who received the RFQ or to reply only to the specific vendor who submitted the question. You can make choose this option each time you reply, but this setting controls the default. If you usually reply to all vendors, set this to *No*. If you usually reply to individual vendors, set this to *Yes*.
+
 ## Setting up for vendor questions
 
 When creating a request for quotation, you determine whether vendors can ask questions about the RFQ.
 
 1. Navigate to **Procurement and sourcing > Requests for quotations** then click **New > Request for quotation** 
 1. In the **New request for quotation** page, **Header** to set the **Vendor question options** fields to allow questions before a certain date.
-1. Set the **Allow vendor question** option to **Yes** so the Vendors can enter questions. Users can enter and answer questions and designate commonly asked questions to publish for vendors when the RFQ is sent to vendors.
+1. Set the **Allow vendor question** option to **Yes** so the vendors can enter questions. Users can enter and answer questions and designate commonly asked questions to publish for vendors when the RFQ is sent to vendors.
 1. Optional: In the **Cutoff date** field, define the final date by which questions must be submitted. If no cutoff date is entered, questions are accepted as long as the RFQ is open and accepting bids.
 1. Click **Save** to save the RFQ.
 1. Click **Send** to send the RFQ to the vendors for bidding.
 
 ## Entering and replying to vendor questions
 
-Vendors enter questions in the **Vendor Collaboration > Request for quotations bid** page, **Vendor questions** FastTab. The question is visible only to the vendor and users.
+Vendors enter questions in the **Vendor Collaboration > Request for quotations bid** page, **Vendor questions** FastTab. The question is visible only to the vendor and users.
 
 ## Entering a vendor question
 
@@ -56,7 +71,7 @@ Vendors enter questions in the **Vendor Collaboration > Request for quotations 
 click **+ Ask a question**.
 
     > [!NOTE]
-    > Alternately, a user can enter questions for a vendor on the **Request for quotation** page, by clicking **Manage replies**, **Edit RFQ reply** then clicking **Questions and asnwers**.
+    > Alternately, a user can enter questions for a vendor on the **Request for quotation** page, by clicking **Manage replies**, **Edit RFQ reply** then clicking **Questions and asnwers**.
 
 2. On the **Question** field, enter the question text.
 3. Click the **Submit**. Repeat steps 1-3 to add a question.
