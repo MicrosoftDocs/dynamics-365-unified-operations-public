@@ -1,34 +1,3 @@
----
-# required metadata
-
-title: Dynamics 365 Commerce: Front Door Options Comparison
-description: This topic the differences between Front Door options with Dynamics 365 Commerce.
-author: BrianShook
-manager: AnnBe
-ms.date: 11/20/2020
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-commerce
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
-ms.search.region: Global
-# ms.search.industry:
-ms.author: brshoo
-ms.search.validFrom: 2020-11-01
-ms.dyn365.ops.version: 10.0.14
-
----
-
 # Dynamics 365 Commerce: Front Door Options Comparison
 
 This topic reviews the different options of Front Door set ups which can be used with Dynamics 365 Commerce. The article will review the pros and cons of different Front Door setup approaches.
@@ -37,27 +6,19 @@ This topic reviews the different options of Front Door set ups which can be used
 
 Dynamics 365 Commerce customers have options when considering which Front Door service to use with their Commerce environment. Commerce ships with basic Azure Front Door support which covers basic hosting and custom domain SSL needs. Companies looking for greater control and more specific security abilities like Web Application Firewall (WAF)- utilizing your own instance of Azure Front Door or an external Front Door might prove the best option. 
 
- 
-
 This document reviews these options and provides a summarized break down of each. It will review the following options:
 
-​	A.   Using the **Dynamics 365 Commerce Azure Front Door** instance
+- A.   Using the **Dynamics 365 Commerce Azure Front Door** instance
 
-​	B.   Using your own instance of **Azure Front Door** for increased control and additional security features
+- B.   Using your own instance of **Azure Front Door** for increased control and additional security features
 
-​	C.    Using an **external Front Door** service
-
+- C.    Using an **external Front Door** service
 
 ![Front Door and Commerce overview architecture](media/Commerce_CDN-Options_Overview.png)
 
-
-
-For these scenarios, only html content (which is dynamic content, with custom domain) is relevant to these options. Commerce will automatically handle all JS/CSS/Images/Video and other static content through Microsoft managed CDNs. Different options are provided for the orange box ‘*Front Door’ as seen in the diagram above. The Front-End option chosen will affect the operations, control, and additional security capabilities.
-
- 
+For these scenarios, only html content (which is dynamic content, with custom domain) is relevant to these options. Commerce will automatically handle all JS/CSS/Images/Video and other static content through Microsoft managed CDNs. Different options are provided for the orange box ‘Front Door’ as seen in the diagram above. The Front-End option chosen will affect the operations, control, and additional security capabilities.
 
 For more information in setting up a Front Door for your Commerce site, review the [Add CDN Support](https://docs.microsoft.com/en-us/dynamics365/commerce/add-cdn-support) article.
-
 
 ## Option Comparisons
 
@@ -97,8 +58,6 @@ For more information in setting up a Front Door for your Commerce site, review t
 
 ![Commerce Azure Front Door](media/Commerce_CDN-Option_CommerceFrontDoor.png) 
 
-
-
 ### Option B: Customer Owned Azure Front Door
 <!--
 <table>
@@ -134,8 +93,6 @@ For more information in setting up a Front Door for your Commerce site, review t
 
 ![Customer Owned Azure Front Door](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png) 
 
-
-
 ### Option C: External Front Door Option
 <!--
 <table>
@@ -169,3 +126,7 @@ For more information in setting up a Front Door for your Commerce site, review t
 -->
 
 ![External Front Door](media/Commerce_CDN-Option_ExternalFrontDoor.png) 
+
+## Additional resources
+
+
