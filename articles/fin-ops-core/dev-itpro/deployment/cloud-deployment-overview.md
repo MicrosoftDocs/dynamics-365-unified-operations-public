@@ -50,7 +50,7 @@ At some phases of a project, you may have all of the environments live at once. 
 
 You may notice the terms cloud hosted or Microsoft subscriptions. A *cloud hosted subscription* means that the customer or partner brings their own Azure subscription and deploys Finance and Operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. A *Microsoft subscription* means that the customer purchases Finance and Operations licenses, which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. 
 
-With each Enterprise offer, three environments are included by default:
+With each Enterprise offer, two environments are included by default:
 - One Tier 2 sandbox (multi-box environment) for user acceptance testing (UAT).
 - One production environment with high availability (HA). 
 
