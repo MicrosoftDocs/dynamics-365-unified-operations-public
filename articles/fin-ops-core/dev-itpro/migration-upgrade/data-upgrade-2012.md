@@ -78,6 +78,14 @@ After the database is restored, stop the following services:
 - Data Import / Export service
 
 Next, rename the original AXDB database **AXDB_orig**. This database might be useful as reference later, when you develop code.
+```sql
+ALTER DATABASE AXDB SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+GO
+ALTER DATABASE AXDB MODIFY NAME = AXDB_Orig
+GO
+ALTER DATABASE AXDB_Orig SET MULTI_USER
+GO
+```
 
 Finally, rename the newly restored AX 2012 database **AXDB**.
 
