@@ -1375,7 +1375,7 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
-        - name: Marking firmed orders with Planning Optimization
+        - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
