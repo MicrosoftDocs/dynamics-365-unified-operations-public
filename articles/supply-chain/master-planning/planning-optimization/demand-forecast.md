@@ -5,7 +5,7 @@ title: Master planning with demand forecast
 description: This topic explains how to include demand forecast during master planning with Planning Optimization.
 author: ChristianRytt
 manager: tfehr
-ms.date: 11/16/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2020-11-16
+ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
@@ -62,7 +62,7 @@ To configure a coverage group to include a demand forecast:
 1. Select a coverage group or create a new one.
 1. On the **Other** FastTab, make the following settings:
     - **Forecast plan time fence** - Enter the number of days (from today's date) to apply the demand forecast. This value can be overridden using the **Forecast plan** option on the master plan (as described in the previous section).
-    - **Reduction key** - Select a reduction key to apply. For more information, see [Create and set up a forecast reduction key](#create-reduction-key) and [Use a reduction key](#use-reduction-key).
+    - **Reduction key** - Select a reduction key to apply. For more information, see [Create and set up a forecast reduction key](#create-reduction-key) and [Use a reduction key](#use-reduction-key) (later in this topic).
     - **Reduce forecast by** - For master plans where the **Method used to reduce forecast requirements** is set to *Transactions - reduction key*  or  *Transactions - dynamic period*, use this setting to specify which transactions reduce the forecast. Choose one of the following values:
         - **All transactions** - Select this option if all transactions should reduce the forecast.
         - **Orders** - Select this option if only sales orders should reduce the forecast.
