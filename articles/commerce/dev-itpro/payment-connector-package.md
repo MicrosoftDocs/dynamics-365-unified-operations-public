@@ -63,7 +63,7 @@ To create a payment package that you can deploy through self-service, follow the
 
     ![Add Reference dialog box](./media/Reference.png)
 
-8. If your extension needs an HTML and CSS file for the implementation, then add them as a resource file to your project. During deployment, the HTML files will be copied to the AosService\WebRoot\Resources\Html folder. The CSS files will be copied to the AosService\WebRoot\Resources\Styles folde, then accessed with the following URL format.
+8. If your extension needs an HTML and CSS file for the implementation, then add them as a resource file to your project. During deployment, the HTML files will be copied to the AosService\WebRoot\Resources\Html folder. The CSS files will be copied to the AosService\WebRoot\Resources\Styles folder, then accessed with the following URL format.
 
 ```
 https://AOSUrl/resources/html/Myhtml.html
