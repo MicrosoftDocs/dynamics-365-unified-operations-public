@@ -57,7 +57,9 @@ Here are important steps specific to configuring a gift card for purchase in Com
 - When configuring digital gift card products, set the **Product type** property to **Service item**. If a product is of type **Service item**, it will not be checked for available inventory before placing an order. For more information, see [Create a new product](create-new-product-commerce.md#create-a-new-product). See image below for details.
 ![Creating a product as Service Item](./media/ServiceItem.png)
 
-- The product needs to be configured as a Gift card. For more information on how to configure a product as gift card, see [Support for external gift cards](./dev-itpro/gift-card.md).
+- The product needs to defined under Commerce Paramters->Post as the Gift card product. If the product is an External gift card, refer to [Support for external gift cards](./dev-itpro/gift-card.md) for additional information.
+[Gift card identified for posting](./media/PostGiftcard.png)
+
 - If a gift card needs to support multiple predefined values (for example, $25, $50, $100), the predefined values should be set up using the **Size** dimension. Each predetermined amount will be a variant. For more information, see [Product dimensions](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
 - If a gift card needs to allow customers to specify a custom amount, first set up a variant that allows a custom amount. Then open the product from the **Released Products in Category** page, navigate down to **Commerce** section, and set the **Key in Price** property to **Must key in price**. This ensures that a price can be entered by the customer when browsing the product on a product details page (PDP).
 ![Set a Key in price](./media/KeyInPrice.png)
