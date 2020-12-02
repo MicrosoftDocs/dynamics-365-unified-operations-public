@@ -506,6 +506,8 @@
         href: cash-bank-management/cash-bank-management.md
       - name: Cash flow forecasting
         href: cash-bank-management/cash-flow-forecasting.md
+      - name: Troubleshoot Cash flow forecasting setup
+        href: cash-bank-management/cash-flow-forecasting-tsg.md
       - name: Bank management workspace
         href: cash-bank-management/Bank-management-workspace.md
       - name: Bank foreign currency revaluation
