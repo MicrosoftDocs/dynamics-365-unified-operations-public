@@ -1371,6 +1371,8 @@
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
+        - name: Master planning with demand forecast
+          href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
