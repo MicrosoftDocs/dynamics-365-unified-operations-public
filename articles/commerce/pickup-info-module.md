@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.15
 # Pickup information module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
 
