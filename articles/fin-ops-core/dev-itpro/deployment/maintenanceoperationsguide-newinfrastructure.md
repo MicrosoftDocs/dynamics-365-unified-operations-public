@@ -5,7 +5,7 @@ title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -65,4 +65,4 @@ To turn maintenance mode on or off, follow these steps.
 
 Remote access is turned off for environments that were deployed by using the [self-service deployment](infrastructure-stack.md) experience. During implementation, if you must connect to the database on your Tier 2, Tier 3, Tier 4 or Tier 5 standard acceptance test environments for troubleshooting purposes, access will be granted as it's required. The access won't be persistent.
 
-To connect to a database, follow these steps follow the instructions at [Enable just-in-time access](../database/database-just-in-time-jit-access.md).
+To connect to a database, follow the instructions in [Enable just-in-time access](../database/database-just-in-time-jit-access.md).
