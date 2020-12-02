@@ -46,7 +46,7 @@ When multiple gift cards are added to the cart, gift card items will not be aggr
 ## Enable the digital gift card feature in Commerce headquarters
 
 The **Purchasing gift card on e-commerce feature** feature flag must be enabled in Commerce headquarters for gift card purchase flow to work in Dymamics 365 Commerce. The feature flag can be found in **Feature Management** in Head quarters. Below is an image of the Feature Management page that shows the new feature flag.
-![Feature Management form in Headquarters](./media/Featureflag.png)
+![Feature Management form in Headquarters](./media/Featureflag.PNG)
 
 ## Configure a digital gift card in Commerce headquarters
 
@@ -63,7 +63,7 @@ Here are important steps specific to configuring a gift card for purchase in Com
 ![Set a Key in price](./media/KeyInPrice.png)
 
 - Set the delivery mode for gift cards to be of type **Electronic**. Navigate to Retail Commerce->Channel Setup->Modes of delivery and assign **Electronic** to gift card product. For more information, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
-![Set Electronic Mode of Delivery](./media/ElectronicMode.png)
+![Set Electronic Mode of Delivery](./media/ElectronicMode.PNG)
 
 - Ensure that you have an online functionality profile created and associated with your online store in Commerce headquarters. In the functionality profile, set the **Aggregate products** property to **Yes**. This will ensure that all items except gift cards are aggregated. For more information, see [Create an online functionality profile](online-functionality-profile.md).
 - To ensure that customers receive an email once a gift card is invoiced, go to **Email notification profiles**, create a new email notification type, and set the **Email notification type** property to **Issue gift card**. For more information, see [Set up an email notification profile](email-notification-profiles.md).
@@ -85,7 +85,7 @@ To configure a custom amount for a digital gift card in Commerce site builder, f
 1. Select **Finish editing**, and then select **Publish**.
 
 Below is an example of a product details page on Fabrikam e-commerce site for a digital gift card. 
-![PDP for gift card](./media/GiftcardPDP.png)
+![PDP for gift card](./media/GiftcardPDP.PNG)
 
 
 ## Additional resources
