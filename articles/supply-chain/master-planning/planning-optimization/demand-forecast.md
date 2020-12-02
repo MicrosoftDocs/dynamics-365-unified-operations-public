@@ -38,66 +38,40 @@ You can use a demand forecast together with Planning Optimization to account for
 > [!NOTE]
 > Separate forecast planning is not supported with Planning Optimization. Therefore, the **Current forecast plan** setting on the **Master planning parameters** page has no effect when you use Planning Optimization.
 
-## Include a demand forecast
+## Set up a master plan to include a demand forecast
 
-The set up to include demand forecast during master planning is done on the Master plan and Item group. <!-- KFM: What is the "Master plan and Item group"? -->
+To configure a master plan to include a demand forecast:
 
-### Master plan setup
+1. Go to **Master planning \> Setup \> Plans \> Master plans**.
+1. Select a plan or create a new one.
+1. Make the following settings on the **General** FastTab :
+    - **Forecast model** - Select the forecast model to apply. This model will be considered when generating supply suggestion for this master plan.
+    - **Include demand forecast** - Set this option to *Yes* to include the demand forecast in the current master plan. If you set this to *No*, demand forecast transactions won't be included in the master plan.
+    - **Method used to reduce forecast requirements** - Select the method used to reduce forecast requirements. For more information, see [Forecast reduction keys](#reduction-keys) (later in this topic).
+1. On the **Time fence in days** FastTab, you can specify the period during which to include the demand forecast by making the following settings:
+    - **Forecast plan** - Set to *Yes* to overwrite the forecast plan time fence originating from the individual coverage groups. Set to *No* to use the values from the individual coverage groups for this master plan.
+    - **Forecast time period** - If you set **Forecast plan** to *Yes*, use the field under the **Forecast plan** setting to define the number of days (from today's date) to apply the demand forecast.
+    > [!IMPORTANT]
+    > The **Forecast plan** setting is not yet supported with Planning Optimization.
 
-<!-- KFM: Where are we here? We need some navigation instructions. Is each section here description a setting that exists somewhere? We need to name each setting. I don't know where any of these settings are, so I can't confirm any of this. -->
+## Set up a coverage group to include a demand forecast
 
-#### Forecast model
+To configure a coverage group to include a demand forecast:
 
-The desired forecast model must be selected to be considered when generating supply suggestion for this master plan. <!-- KFM: How are these made, and where do they come from? Can we give a link? -->
-
-#### Include demand forecast
-
-After you select a forecast model, select this option to include the demand forecast in the current master plan. If you do not select this option, demand forecast transactions are not included in the master plan.
-
-#### Method used to reduce forecast requirements
-
-This setting is explained in detail under [Forecast reduction keys](#reduction-keys).
-
-#### Included forecast period (not yet supported with Planning Optimization)
-
-Under **Time fence in days**, you can specify the period to include demand forecast. Specified, from today's date, with number of days under Forecast plan. By setting the Forecast plan option to Yes you can overwrite the Forecast plan time fence originating from the individual Coverage groups. If Forecast plan option is set to No the values from the individual Coverage groups is used for this Master plan.
-
-### Coverage group setup
-
-#### Forecast plan time fence
-
-Period in days to include demand forecast. Specified, from today's date, with number of days under Forecast plan. Note that this value can be overwritten by on the Master plan with the Forecast plan option.
-
-#### Reduction key
-
-This field specify the reduction key used when
-
-For additional information, see:
-
-- Create and set up a forecast reduction key
-- Use a reduction key
-
-#### Reduce forecast by
-
-There are two options **All transactions**  and **Orders**.
-
-When you select  **Transactions - reduction key**  or  **Transactions - dynamic period**  as **Method used to reduce forecast requirements** on the master plan, you can specify which transactions reduce the forecast.
-
-- Select **All transactions**  if all transactions should reduce the forecast
-- Select **Orders**  if only sales orders should reduce the forecast.
-
-Note with **All transaction** selected, Transactions with both demand and supply within the same inventory dimensions are considered neutral and ignored during the forecast reduction. E.g. when planning dimension is set to site only, and no warehouse, a transfer order between site 1 warehouse 11 and site 1 warehouse 13 will be ignored and not reduce the remaining demand forecast.
-
-#### Include intercompany orders
-
-Specify if intercompany orders should be included when reducing the forecast.
-
-#### Include customer forecast in the demand forecast
-
-You can specify whether a customer forecast is included in the overall forecast. This setting determines how actual demand reduces the forecasted demand. You can use this setting to ensure that master planning covers the supply of items that are purchased by specific customers.
-
-- If a customer forecast is included in the overall forecast, actual customer demand reduces both the customer forecast and the overall forecast. Master planning generates planned orders to cover only the overall forecast quantity.
-- If a customer forecast is not included in the overall forecast, actual customer demand reduces only the customer forecast. Master planning generates planned orders to cover both the overall forecast quantity and the forecast for each customer quantity.
+1. Go to **Master planning \> Setup \> Plans \> Goverage groups**.
+1. Select a coverage group or create a new one.
+1. On the **Other** FastTab, make the following settings:
+    - **Forecast plan time fence** - Enter the number of days (from today's date) to apply the demand forecast. This value can be overridden using the **Forecast plan** option on the master plan (as described in the previous section).
+    - **Reduction key** - Select a reduction key to apply. For more information, see [Create and set up a forecast reduction key](#create-reduction-key) and [Use a reduction key](#use-reduction-key).
+    - **Reduce forecast by** - For master plans where the **Method used to reduce forecast requirements** is set to *Transactions - reduction key*  or  *Transactions - dynamic period*, use this setting to specify which transactions reduce the forecast. Choose one of the following values:
+        - **All transactions** - Select this option if all transactions should reduce the forecast.
+        - **Orders** - Select this option if only sales orders should reduce the forecast.
+        > [!NOTE]
+        > If you select *All transaction*, transactions with both demand and supply within the same inventory dimensions are considered neutral and ignored during the forecast reduction. For example, when the planning dimension is set to site only, and no warehouse, a transfer order between site 1 warehouse 11 and site 1 warehouse 13 will be ignored and won't reduce the remaining demand forecast.
+    - **Include intercompany orders** - Set this to *Yes* if intercompany orders should be included when reducing the forecast. Otherwise, set to *No*.
+    - **Include customer forecast in the demand forecast** - Specify whether to include a customer forecast in the overall forecast. This setting determines how actual demand reduces the forecasted demand. You can use this setting to ensure that master planning covers the supply of items that are purchased by specific customers.
+        - Set this to *Yes* to include a customer forecast in the overall forecast. In this case, actual customer demand reduces both the customer forecast and the overall forecast. Master planning generates planned orders to cover only the overall forecast quantity.
+        - Set this to *No* if you don't want to include a customer forecast in the overall forecast. In this case, actual customer demand reduces only the customer forecast. Master planning generates planned orders to cover both the overall forecast quantity and the forecast for each customer quantity.
 
 ## <a name="reduction-keys"></a>Forecast reduction keys
 
@@ -265,7 +239,7 @@ Therefore, the following planned orders are created.
 | January 5                        | 300      | Forecast requirements period January 5 to January 10 (= 500 – 200)  |
 | January 12                       | 1,000    | Forecast requirements period January 12 to end                      |
 
-### Create and set up a forecast reduction key
+### <a name="create-reduction-key"></a>Create and set up a forecast reduction key
 
 A forecast reduction key is used in the **Transactions - reduction key** and **Percent- reduction key** methods for reducing forecast requirements. Follow these steps to create and set up a reduction key.
 
@@ -278,7 +252,7 @@ A forecast reduction key is used in the **Transactions - reduction key** and **P
     - Define the periods that the forecast reduction should occur during.
     - For a specific period, specify the percentages that the forecast requirements should be reduced by. You can enter positive values to decrease requirements or negative values to increase requirements.
 
-### Use a reduction key
+### <a name="use-reduction-key"></a>Use a reduction key
 
 A forecast reduction key must be assigned to the coverage group of the item. Follow these steps to assign a reduction key to an item's coverage group.
 
