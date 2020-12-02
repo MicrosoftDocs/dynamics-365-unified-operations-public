@@ -48,7 +48,7 @@ In this process guide, you will learn how to complete the following steps:
 > * Copy the database to production for mock go-live validation and actual go-live.
 
 ## Before you get started
-Network latency is a critical component to the data transfer.  If your source SQL Server is geographically far or has poor network latency to your sandbox Azure datacenter, then the process can take many additional hours or potentially timeout.  Latency under 75 milliseconds is preferred.  You can find your latency using a tool such as [Azure Speed Test](https://www.azurespeed.com/).  If your latency is poor, you may optionally backup your AX 2012 database and restore it on a cloud-hosted DevTest environment deployed to the same Azure datacenter as your target sandbox, and perform the steps from there.
+Network latency is a critical component in data transfer. If your source SQL Server is geographically far away or has poor network latency to your sandbox Azure datacenter, then the process can take additional hours or potentially time out. Latency under 75 milliseconds is preferred. You can find your latency using a tool such as Azure Speed Test. If your latency is poor, you should consider backing up your AX 2012 database and restoring it on a cloud-hosted DevTest environment deployed to the same Azure datacenter as your target sandbox. After which you can perform the steps from there.
 
 ## Open firewall access to your sandbox environment database
 
@@ -94,7 +94,7 @@ Unfortunately, sandbox environments of the self-service type aren't supported fo
 
 ## Clear the sandbox database of all objects
 
-In versions of the [Database movement toolkit](../database/database-movement-toolkit.md) prior to Version 5, this was an explicit step that customers had to take via SSMS on the target database.  However, this is now incorporated in to the toolkit in Version 5 and later, and is handled via the Powershell scripts.
+In versions of the [Database movement toolkit](../database/database-movement-toolkit.md) prior to Version 5, this was an explicit step that customers had to take via SSMS on the target database. However, this is now incorporated into the toolkit in Version 5 and later, and is handled via the PowerShell scripts.
 
 ## Publish the schema from AX 2012 to the sandbox database
 
@@ -110,9 +110,9 @@ Use Windows PowerShell to change the directory to the folder location where you 
 
 ![Running the AX2012SchemaPublish.ps1 script](media/upgrade-dacpac-extract.png)
 
-During execution, the script performs a cleanup on the source and the target databases.  For the source database, it removes any non-essential users and non-essential schemas.  If there are errors here, it will halt the script and those errors need to be reviewed.  The source for the script is available in the toolkit called **Step1_CleanupSourceDB.sql**. For the target database, it removes all objects in a more thorough manner than was previously documented via SSMS.  Any errors here need to be reviewed, and would halt the script.  The source for the target cleanup is available in the toolkit called **Step0_CleanupTargetDB.sql**.
+During execution, the script performs a cleanup on the source and target databases. For the source database, it removes any non-essential users and non-essential schemas. If there are errors, it will stop the script and those errors will need to be reviewed. The source for the script is available in the toolkit called **Step1_CleanupSourceDB.sql**. For the target database, it removes all objects in a more thorough manner than was previously documented via SSMS. Any errors will need to be reviewed, and would stop the script. The source for the target cleanup is available in the toolkit called **Step0_CleanupTargetDB.sql**.
 
-After cleanup, the toolkit uses SqlPackage.exe to extract only the database and schema definitions from your AX 2012 database as a 2012DBSource.dacpac file in the working directory. Next, it publishes this file to your sandbox environment by using the Profile.publish.xml publishing profile that is included in the Database movement toolkit. This publishing profile will skip several object types, such as SQL views, SQL users, statistics, and other objects that aren't required for the upgrade.  If there are issues with the dacpac publish, you can find a detailed log in the working directory called **PublishDiag.log**.
+After cleanup, the toolkit uses SqlPackage.exe to extract only the database and schema definitions from your AX 2012 database as a 2012DBSource.dacpac file in the working directory. Next, it publishes this file to your sandbox environment by using the Profile.publish.xml publishing profile that is included in the Database movement toolkit. This publishing profile will skip several object types, such as SQL views, SQL users, statistics, and other objects that aren't required for the upgrade. If there are issues with the dacpac publish, you can find a detailed log in the working directory called **PublishDiag.log**.
 
 When the script has finished running, open SSMS, and verify that you can see the tables in the sandbox database. Also confirm that the tables are empty and have no data.
 
@@ -120,16 +120,16 @@ When the script has finished running, open SSMS, and verify that you can see the
 > If you must start over because of an error, this script is designed to be run again as it will clean up both the source and target databases.
 
 ### Populate legacy stored procedures 
-The data upgrade scripts require the legacy stored procedures and functions to be in place prior to running the upgrade.  To transfer these we will use SSMS.
+The data upgrade scripts require the legacy stored procedures and functions to be in place prior to running the upgrade. To transfer these scripts use SSMS.
 
-Open SSMS, and connect to your source AX 2012 database.  Right-click the database name, and then select **Tasks -> Generate scripts**. On the **Introduction** page, select **Next**. On the **Choose Objects** page, select the **Select specific database objects** option, and then select the following check boxes:
+Open SSMS, and connect to your source AX 2012 database. Right-click the database name, and then select **Tasks > Generate scripts**. On the **Introduction** page, select **Next**. On the **Choose Objects** page, select the **Select specific database objects** option, and then select the following check boxes:
 
 * Stored procedures
 * User-defined functions
 
-On the **Set Scripting Options** page, select **Advanced**, and ensure the value is set to **Script DROP and CREATE**. Select **OK**, and then select the **Save to new query window** option. Select **Next** to move through the summary. The query window that appears contains a script that lists all the objects in the correct order so that the objects can be dropped from the database.
+On the **Set Scripting Options** page, select **Advanced**, and ensure the value is set to **Script DROP and CREATE**. Select **OK**, and then select **Save to new query window**. Select **Next** to move through the summary. The query window that appears contains a script that lists all the objects in the correct order so that the objects can be dropped from the database.
 
-Taking the script that was generated, connect to your target database using SSMS and execute the script.  This will create the AX 2012 stored procedures and functions in the target spartan database.  
+Using the script that was generated, connect to your target database using SSMS, and execute the script. This will create the AX 2012 stored procedures and functions in the target spartan database.  
 
 ## Transfer data from AX 2012 to the sandbox database
 
