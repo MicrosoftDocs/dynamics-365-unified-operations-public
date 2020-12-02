@@ -47,14 +47,14 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| 394249 | Regular translation checkins for supported HCM languages | Doc title and link |
-| 528010 | PU40+ Build Errors | Doc title and link |
-| 523493 | Breaking changes resolution for BusinessProcess module | Doc title and link |
-| 444051 | Candidate Profile V1 UI implementation | Doc title and link |
-| 447078 | Add recruiting request form to security role | Doc title and link |
-| 473588 | Provide capability to add new address from recruiting request location | Doc title and link |
-| 483250 | Finalize the Candidate Model re-using Person entity and test end to end insert flow. | Doc title and link |
-| 520494 | Keyvaults need soft delete setting applied. | Doc title and link |
+| Regular translation checkins for supported HCM languages | - | 394249 |
+| PU40+ Build Errors | - | 528010 |
+| Breaking changes resolution for BusinessProcess module | - | 523493 |
+| Candidate Profile V1 UI implementation | - | 444051 |
+| Add recruiting request form to security role | - | 447078 |
+| Provide capability to add new address from recruiting request location | - | 473588 | 
+| Finalize the Candidate Model re-using Person entity and test end to end insert flow. | - | 483250 | 
+| Keyvaults need soft delete setting applied. | - | 520494 | 
 
 ### Bug fixes
 
@@ -65,26 +65,26 @@ The following bug fixes are included in this release.
 
 #HCM & HCMFabric Bugs
 
-| LCS support number | Description |
-| --- | --- |
-| 517364 | Benefit Self service - Recently created beneficiaries do not appear in the designees table |
-| 525958 | Multiple entries exist for table with the same name on Reference Type lookup |
-| 508461 | Incorrect forecast balance when carry-forward feature is enabled |
-| 509982 | Balance expiration batch job doesn't bring balance to 0 |
-| 485085 | Add more fields to BenefitPlanEmployeeDesigneeEntity |
-| 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing |
-| 526903 | Benefit Enrollment fails for plans with dependents when Auto-select designees is turned on in HR shared parameters |
-| 513558 | Leave forms emits compiler warnings with BPErrorFormDesignPatternUnspecified | 
-| 525011 | Populate assignment start/end date for candidate transfer & new hire scenarios |
-| 525957 | Candidate status doesn't update on internal candidates when transfer is completed |
-| 521922 | Show absence without detail parameter not working on team calendar view |
-| 528172 | Improve error message on Format Exception for CDS. |
-| 527316 | Title changes for Job/Positions/Worker notifications do not sync with the 2.2.4.1 Solution |
-| 512275 | Remove the color options from leave and absence parameters |
-| 437112 | Misleading error message text during employee position assignment |
-| 527816 | Performance issues on EssLeaveRequestCalendar form |
-| 523158 | BenefitPeriodMigrationUpgrade and BenefitPlanMigrationUpgrade not executing |
-| 523178 | Platform flighting not working correctly for FeatureManagement and in Dev/Int environments |
+| Issue number | Issue | Description |
+| --- | --- | --- |
+| 517364 | Benefit Self service Recently created beneficiaries do not appear in the designees table | |
+| 525958 | Multiple entries exist for table with the same name on Reference Type lookup | |
+| 508461 | Incorrect forecast balance when carry-forward feature is enabled | |
+| 509982 | Balance expiration batch job doesn't bring balance to 0 | |
+| 485085 | Add more fields to BenefitPlanEmployeeDesigneeEntity | |
+| 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing | |
+| 526903 | Benefit Enrollment fails for plans with dependents when Auto-select designees is turned on in HR shared parameters | |
+| 513558 | Leave forms emits compiler warnings with BPErrorFormDesignPatternUnspecified | |
+| 525011 | Populate assignment start/end date for candidate transfer & new hire scenarios | |
+| 525957 | Candidate status doesn't update on internal candidates when transfer is completed | |
+| 521922 | Show absence without detail parameter not working on team calendar view | |
+| 528172 | Improve error message on Format Exception for CDS. | |
+| 527316 | Title changes for Job/Positions/Worker notifications do not sync with the 2.2.4.1 Solution | |
+| 512275 | Remove the color options from leave and absence parameters | |
+| 437112 | Misleading error message text during employee position assignment | |
+| 527816 | Performance issues on EssLeaveRequestCalendar form | |
+| 523158 | BenefitPeriodMigrationUpgrade and BenefitPlanMigrationUpgrade not executing | |
+| 523178 | Platform flighting not working correctly for FeatureManagement and in Dev/Int environments | |
 
 ## In preview
 
