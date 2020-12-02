@@ -48,7 +48,7 @@ You can set up taxation codes for the following taxes:
    - Program de Integracao Social (PIS)
    - Contribuição para Financiamento da Seguridade Social (COFINS) 
 
-The taxation codes are used for fiscal reporting and generating federal electronic fiscal documents (NF-e). You can set up taxation codes for other tax types. When you set up a taxation code for a tax type, you assign a fiscal value to indicate the type of treatment that applies to taxes, such as taxable, not taxable or exempt, or taxable without credit. When a taxation code isn't set up for a tax type, set up the fiscal value by selecting the **Without tax credit** and **Exempt** options on the **Sales tax groups** and **Item sales tax groups** pages. Sales taxes are calculated and saved on the **Posted sales tax** page. Specify a default taxation code for the sales tax code in the **Taxation code** field on the **Sales tax codes** page. You can also specify the taxation code for a sales tax code when you attach the sales tax code to:
+The taxation codes are used for fiscal reporting and generating federal electronic fiscal documents (NF-e). You can set up taxation codes for other tax types. When you set up a taxation code for a tax type, you assign a fiscal value to indicate the type of treatment that applies to taxes. Types of treatment include taxable, not taxable or exempt, or taxable without credit. When a tax type doesn't have a taxation code, select **Without tax credit** and **Exempt**  on the **Sales tax groups** and **Item sales tax groups** pages to set up the fiscal value. Sales taxes are calculated and saved on the **Posted sales tax** page. Specify the default taxation code for a sales tax code in the **Taxation code** field on the **Sales tax codes** page. You can also specify the taxation code for a sales tax code when you attach the sales tax code to:
 -   A sales tax group with an exempt sales tax code
 -   An item sales tax group
 
@@ -79,7 +79,7 @@ The following tax types are available in the sales tax code configuration.
 -   ICMS-ST – ICMS tributary substitution (ICMS-ST). In addition, the user can specify the one of the following calculation methods:
     -   Own operation, IPI, and markup
     -   Own operation only
--   ICMS-DIF – ICMS differential (ICMS-DIF) . This tax type is used to calculate the ICMS differential tax amount under the following scenarios:
+-   ICMS-DIF – ICMS differential (ICMS-DIF). This tax type is used to calculate the ICMS differential tax amount under the following scenarios:
     -   Fiscal document is issued to the final consumer located in another state.
     -   Fiscal document is receipted from a different state. Applicable for fixed assets and use and consumption items.
 
@@ -100,7 +100,7 @@ For a base transaction amount of BRL 1,000.00, tax rate of 18 percent, and tax r
 | 2. without credit/debit (exempt or not taxable) |               |                         | BRL 1,000.00       |                   |                  |
 | 3. without credit/debit (other)                 |               |                         | BRL 400.00         | BRL 600.00        | BRL 108.00       |
 
-For sales transactions with taxation codes that have a **1. with credit/debit** fiscal value, or item sales tax groups for which the **Without tax credit** option isn't selected, the actual sales tax amount is posted to the main accounts for which **Sales tax** and **Sales tax expense** are selected in the **Posting type** field on the **Accounts for automatic transactions** page. For purchase transactions with taxation codes that have a **1. with credit/debit** fiscal value, or item sales tax groups for which the **Without tax credit** option isn't selected, the actual sales tax amount is posted to the main accounts for which **Sales tax** is selected in the **Posting type** field on the **Accounts for automatic transactions** page.
+For sales transactions with taxation codes that have a fiscal value of **1. with credit/debit**, or item sales tax groups where **Without tax credit** isn't selected, the actual sales tax amount is posted to the main accounts where **Sales tax** and **Sales tax expense** are selected on the **Accounts for automatic transactions** page. For purchase transactions with taxation codes that have a fiscal value of **1. with credit/debit**, or item sales tax groups where **Without tax credit** isn't selected, the actual sales tax amount is posted to the main accounts where **Sales tax** is selected in the **Posting type** field on the **Accounts for automatic transactions** page.
 
 ## Additional resources
 -   [Tax attributes for Brazil](latam-bra-tax-attributes.md)
