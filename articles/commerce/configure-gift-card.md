@@ -84,6 +84,10 @@ To configure a custom amount for a digital gift card in Commerce site builder, f
 1. To optionally define minimum and maximum amounts for custom prices, enter prices under **Minimum price** and **Maximum price**.
 1. Select **Finish editing**, and then select **Publish**.
 
+Below is an example of a product details page on Fabrikam e-commerce site for a digital gift card. 
+![PDP for gift card](./media/GiftcardPDP.png)
+
+
 ## Additional resources
 
 [Buy box module](add-buy-box.md)
