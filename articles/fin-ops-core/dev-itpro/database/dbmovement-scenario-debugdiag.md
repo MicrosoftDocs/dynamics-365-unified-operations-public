@@ -59,7 +59,7 @@ This refresh operation overwrites the UAT environment with the latest copy of th
 
 By default, all Sandbox Standard Acceptance Test environments use Microsoft Azure SQL Database as their database platform. The databases for these environments are protected by firewalls that restrict access to the Application Object Server (AOS) with which it was originally deployed.
 
-To connect to the database, follow the instructions at [Enable just-in-time access](database-just-in-time-JIT-access.md).
+To connect to the database, follow the instructions in [Enable just-in-time access](database-just-in-time-JIT-access.md).
 
 > [!NOTE]
 > Every time that a refresh is done, the firewall safe list is reset. You must add your DevTest environments back to this database when they are required in the future.
@@ -93,7 +93,7 @@ Now that your environment is correctly reconfigured, you can open Visual Studio 
 
 ### Debugging batch
 
-For scenarios where you need to debug batch jobs, on the debugging DevTest machine you may need to restart the Batch Service before it will show up as an option to attach the debugger from Visual Studio.  In addition, it may also be helpful to isolate this DevTest machine in to its own Batch Group to better guarantee any jobs you wish to debug will run on the DevTest machine.
+For scenarios where you need to debug batch jobs, on the debugging DevTest machine, you may need to restart the batch service before it will show up as an option to attach the debugger from Visual Studio.  In addition, it may also be helpful to isolate this DevTest machine in to its own batch group to better guarantee any jobs you wish to debug will run on the DevTest machine.
 
 ## Best practices
 
