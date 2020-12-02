@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Marking with Planning Optimization
-description: This topic explains how to start to use the Planning Optimization functionality. 
+title: Marking firmed orders with Planning Optimization
+description: This topic provides information about the options available for marking firmed orders when you are using Planning Optimization. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 11/18/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,33 +25,30 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2020-11-18
+ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Marking set when firming planned orders
+# Marking firmed orders with Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information about marking, related to the options available when firming a planned order. 
+This topic provides information about the options available for marking firmed orders when you are using Planning Optimization.
 
-Marking link supply and demand, like pegging that indicates how master planning expect to cover demand. From a planning point of view, the main difference is that marking is more permanent than pegging.
+Marking links supply and demand, like pegging that indicates how master planning expects to cover demand. From a planning point of view, the main difference is that marking is more permanent than pegging.
 
-**Marking** was introduced to support special costing scenarios for FIFO and LIFO but is now also used for some non-costing scenarios. Marking between supply and demand is optional and almost permanent. Marking can be removed manually by user or by running sales order line explosion with Remove marking check marked.
+*Marking* was introduced to support special costing scenarios for first in first out (FIFO) and last in first out (LIFO), but it is now also used for some non-costing scenarios. Marking between supply and demand is optional and almost permanent. Marking can be removed manually by a user or by running a sales order line explosion with the **Remove marking** option selected.
 
-**Pegging** is controlled by master planning during coverage to link demand with the required supply. Pegging can be updated for each planning run to optimize the supply needed to cover demand. When master planning update pegging information it respects any existing marking.
+*Pegging* is controlled by master planning during coverage to link demand with the required supply. Pegging can be updated for each planning run to optimize the supply needed to cover demand. When master planning updates pegging information, it respects any existing marking.
 
-Pegging starts by including relevant marking, on-hand reservations, and on-order reservations in the following order sequence:
+Pegging starts by including relevant marking, on-hand reservations, and on-order reservations in the following sequence:
 
 1. Marking between demand and supply
-2. On hand reservations
-3. Order reservations
+1. On-hand reservations
+1. On-order reservations
 
-When firming planned orders, you have 3 marking options for the orders created during firming.
+When you firm a planned order, the **Firming** dialog box provides an **Update marking** setting, which sets marking options for the orders created during firming. Choose one of the following options:
 
-- **No**  – No inventory marking is performed.
-- **Standard**  – Inventory marking is updated according to the pegging. A requirement order (demand) is marked against a fulfillment order (supply). If some quantity remains on the fulfillment order, it is not marked, and the reference information is left blank.
-Example: If a sales order for 100 ea is pegged against a purchase order for 150 ea, only the sales order will get reference information.
-
-- **Extended**  – Both the requirement order (demand) and the fulfillment order (supply) are marked, regardless of whether any quantity remains on the fulfillment order.
-Example: If a sales order for 100 ea is pegged against a purchase order for 150 ea, both the sales order and the purchase order will get reference information.
+- **No** – No inventory marking is applied.
+- **Standard** – Inventory marking is updated according to the pegging. A requirement order (demand) is marked against a fulfillment order (supply). If some quantity remains on the fulfillment order, it is not marked, and the reference information is left blank. For example, if a sales order for 100 ea is pegged against a purchase order for 150 ea, only the sales order will be assigned reference information.
+- **Extended** – Both the requirement order (demand) and the fulfillment order (supply) are marked, regardless of whether any quantity remains on the fulfillment order. For example, if a sales order for 100 ea is pegged against a purchase order for 150 ea, both the sales order and the purchase order will be assigned reference information.
