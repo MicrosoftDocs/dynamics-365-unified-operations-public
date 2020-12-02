@@ -5,7 +5,7 @@ title: Debug a copy of the production database
 description: This topic explains a debugging and diagnostics scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
