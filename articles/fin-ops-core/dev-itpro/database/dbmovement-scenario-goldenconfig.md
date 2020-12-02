@@ -82,7 +82,7 @@ The values on the following pages are either environment-specific or encrypted i
 
 ## Create a copy of the source database
 
-Back up the source database using SSMS.  Right-click the source database, and select **Tasks > Backup option**.  After this is completed, right-click on the **Databases** folder in the SSMS navigation window, and choose **Restore database**.  Choose the back-up you just made, but give the target database a new name such as AXDB_CopyForExport.  
+Back up the source database using SSMS. Right-click the source database, and select **Tasks > Backup option**.  After this is completed, right-click the **Databases** folder in the SSMS navigation window, and select **Restore database**.  Choose the backup that you just made, but give the target database a new name such as AXDB_CopyForExport.   
 
 ## Prepare the database
 
