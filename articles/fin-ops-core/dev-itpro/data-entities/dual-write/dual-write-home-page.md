@@ -88,6 +88,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Company concept in Common Data Service](company-data.md)
 
     + [Bootstrap with company data FAQ](bootstrap-company-data.md)
+    + [Bootstrap company data](bootstrap-company-data-new.md)
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)
