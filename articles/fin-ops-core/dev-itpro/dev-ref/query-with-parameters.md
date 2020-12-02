@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mitigate SQL injection attacks
+title: Mitigate a SQL injection attack
 description: This topic explains how to mitigate SQL injection attacks in X++.
 author: pvillads
 manager: tfehr
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Mitigate SQL injection attacks
+# Mitigate a SQL injection attack
 
 [!include [banner](../includes/banner.md)]
 
