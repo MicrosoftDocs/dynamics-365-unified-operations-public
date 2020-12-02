@@ -96,17 +96,7 @@ The following new features are in preview. For more information about turning fe
 
 ## Coming soon
 
-The following new features and bug fixes are scheduled for future releases.
-
-### New features
-
-For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
-
-### Bug fixes
-
-| LCS support number | Description |
-| --- | --- |
-| Number and link | Description |
+For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## See also
 
