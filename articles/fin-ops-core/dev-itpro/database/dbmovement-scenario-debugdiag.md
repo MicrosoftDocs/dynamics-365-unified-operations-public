@@ -93,7 +93,7 @@ Now that your environment is correctly reconfigured, you can open Visual Studio 
 
 ### Debugging batch
 
-For scenarios where you need to debug batch jobs, on the debugging DevTest machine, you may need to restart the batch service before it will show up as an option to attach the debugger from Visual Studio.  In addition, it may also be helpful to isolate this DevTest machine in to its own batch group to better guarantee any jobs you wish to debug will run on the DevTest machine.
+For scenarios where you need to debug batch jobs, on the debugging DevTest machine, you may need to restart the batch service before it will show up as an option to attach the debugger from Visual Studio. In addition, it may also be helpful to isolate this DevTest machine in to its own batch group to ensure that any jobs that you want to debug will run on the DevTest machine.
 
 ## Best practices
 
