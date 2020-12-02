@@ -16,7 +16,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Operations
+# ms.search.scope: Operations
 ms.custom: 255544
 ms.search.region: Global
 # ms.search.industry: 

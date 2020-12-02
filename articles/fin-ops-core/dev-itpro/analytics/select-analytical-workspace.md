@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global

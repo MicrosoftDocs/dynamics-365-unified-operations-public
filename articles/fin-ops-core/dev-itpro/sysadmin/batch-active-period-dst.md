@@ -15,7 +15,7 @@ ms.technology:
 
 audience: IT Pro 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 ms.custom: NotInToc
 ms.assetid: a6685c6f-74bf-4f09-a19d-76130d7ce2da
 ms.search.region: Global

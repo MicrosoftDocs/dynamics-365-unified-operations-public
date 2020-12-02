@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sunilg

@@ -18,7 +18,7 @@ ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27661
 ms.assetid: 

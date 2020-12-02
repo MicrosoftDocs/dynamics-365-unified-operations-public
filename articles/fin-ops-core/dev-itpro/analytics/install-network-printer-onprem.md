@@ -18,7 +18,7 @@ ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global

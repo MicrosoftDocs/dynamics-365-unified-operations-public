@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12911
 ms.assetid: 0bc7bde2-6150-4a80-8738-9a5201b51df2
