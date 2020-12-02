@@ -48,7 +48,7 @@ In this process guide, you will learn how to complete the following steps:
 > * Copy the database to production for mock go-live validation and actual go-live.
 
 ## Before you get started
-Network latency is a critical component in data transfer. If your source SQL Server is geographically far away or has poor network latency to your sandbox Azure datacenter, then the process can take additional hours or potentially time out. Latency under 75 milliseconds is preferred. You can find your latency using a tool such as Azure Speed Test. If your latency is poor, you should consider backing up your AX 2012 database and restoring it on a cloud-hosted DevTest environment deployed to the same Azure datacenter as your target sandbox. After which you can perform the steps from there.
+Network latency is a critical component in data transfer. If your source SQL Server is geographically far away or has poor network latency to your sandbox Azure datacenter, then the process can take additional hours or potentially time out. Latency under 75 milliseconds is preferred. You can find your latency using a tool such as Azure Speed Test. If your latency is poor, you should consider backing up your AX 2012 database and restoring it on a cloud-hosted DevTest environment deployed to the same Azure datacenter as your target sandbox. After which you can perform the upgrade steps.
 
 ## Open firewall access to your sandbox environment database
 
