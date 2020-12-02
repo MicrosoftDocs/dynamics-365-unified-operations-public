@@ -229,48 +229,49 @@ At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** f
 
 To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code.
 
-    ```C#
-    public IEnumerable<Type> SupportedRequestTypes
+```C#
+public IEnumerable<Type> SupportedRequestTypes
+{
+    get
     {
-        get
-        {
-            return new[] { typeof(GetSalesTransactionCustomReceiptFieldServiceRequest) };
-        }
+        return new[] { typeof(GetSalesTransactionCustomReceiptFieldServiceRequest) };
     }
-    public Response Execute(Request request)
+}
+public Response Execute(Request request)
+{
+    Type requestedType = request.GetType();
+    if (requestedType == typeof(GetSalesTransactionCustomReceiptFieldServiceRequest))
     {
-        Type requestedType = request.GetType();
-        if (requestedType == typeof(GetSalesTransactionCustomReceiptFieldServiceRequest))
-        {
-            return this.GetCustomReceiptFieldForSalesTransactionReceipts( (GetSalesTransactionCustomReceiptFieldServiceRequest)request);
-        }
-        throw new NotSupportedException(string.Format("Request '{0}' is not supported.", request.GetType()));
+        return this.GetCustomReceiptFieldForSalesTransactionReceipts( (GetSalesTransactionCustomReceiptFieldServiceRequest)request);
     }
-    ```
+    throw new NotSupportedException(string.Format("Request '{0}' is not supported.", request.GetType()));
+}
+```
 
 ### Add the business logic for the custom fields
 
-    ```C#
-    private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransactionReceipts( GetSalesTransactionCustomReceiptFieldServiceRequest request)
+```C#
+private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransactionReceipts( GetSalesTransactionCustomReceiptFieldServiceRequest request)
+{
+    string receiptFieldName = request.CustomReceiptField;
+    string returnValue = null;
+    switch (receiptFieldName)
     {
-        string receiptFieldName = request.CustomReceiptField;
-        string returnValue = null;
-        switch (receiptFieldName)
-        {
-            case "WARRANTYID":
-                {
-                    // Write your logic
-                }
-                break;
-            case "EXPIRATIONDATE":
-                {
-                    // Write your logic
-                }
-                break;
-        }
-        return new GetCustomReceiptFieldServiceResponse(returnValue);
+        case "WARRANTYID":
+            {
+                // Write your logic
+            }
+            break;
+        case "EXPIRATIONDATE":
+            {
+                // Write your logic
+            }
+            break;
     }
-    ```
+    return new GetCustomReceiptFieldServiceResponse(returnValue);
+}
+```
+
 ### Custom receipt type configuration in HQ
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Receipt formats**.
@@ -288,27 +289,27 @@ To add the custom fields to the sales receipts or any receipt format, implement 
 
 To add logic for the new receipt type, implement **GetCustomReceiptsRequest** in CRT.
 
-    ```C#
-    protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
+```C#
+protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
+{
+    Collection<Receipt> result = new Collection<Receipt>();
+        // 2. Now we can handle any additional receipt here.
+    switch (request.ReceiptRetrievalCriteria.ReceiptType)
     {
-        Collection<Receipt> result = new Collection<Receipt>();
-            // 2. Now we can handle any additional receipt here.
-        switch (request.ReceiptRetrievalCriteria.ReceiptType)
-        {
-            // An example of getting custom receipts.
-            case ReceiptType.CustomReceipt1:
-                {
-                    IEnumerable<Receipt> customReceipts = this.GetCustomReceipts(salesOrder, request.ReceiptRetrievalCriteria);
-                        result.AddRange(customReceipts);
-                }
-                break;
-            default:
-                // Add more logic to handle more types of custom receipt types.
-                break;
-        }
-        return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));
+        // An example of getting custom receipts.
+        case ReceiptType.CustomReceipt1:
+            {
+                IEnumerable<Receipt> customReceipts = this.GetCustomReceipts(salesOrder, request.ReceiptRetrievalCriteria);
+                    result.AddRange(customReceipts);
+            }
+            break;
+        default:
+            // Add more logic to handle more types of custom receipt types.
+            break;
     }
-    ```
+    return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));
+}
+```
 
 The full sample code is available in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder.
 
