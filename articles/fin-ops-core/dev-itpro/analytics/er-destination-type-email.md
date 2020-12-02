@@ -5,7 +5,7 @@ title: Email ER destination type
 description: This topic provides information about how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/12/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -73,28 +73,40 @@ If you select the **Print Management** email type, you can enter fixed email add
 
 ![Configuring a fixed email address](./media/er_destinations-emailfixedaddress.png)
 
-You can also obtain email addresses from contact details of a party for which you generate an outbound document. To use email addresses that aren't fixed, you must select the [role](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book#party-roles) of such a party for a file destination. The following values are supported: **Customer**, **Vendor**, **Prospect**, **Contact**, **Competitor**, **Worker**, **Applicant**, **Prospective vendor**, and **Disallowed vendor**. For example, to configure email destination for an ER format that is used to process vendor payments, you need to select the **Vendor** role. After you select the desire role, use the **Bind** button next to the **Email source account** field to open the [Formula designer](general-electronic-reporting-formula-designer.md) page. You can use this page to configure a formula that returns from the processed document to the email destination, at runtime, the **account number** of a party playing the configured role.
+You can also obtain email addresses from contact details of the party for which you generate an outbound document. To use email addresses that aren't fixed, select the [role](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) of the party for a file destination. The following values are supported: 
+
+  - **Customer**
+  - **Vendor**
+  - **Prospect** 
+  - **Contact**
+  - **Competitor**
+  - **Worker**
+  - **Applicant**
+  - **Prospective vendor**
+  - **Disallowed vendor**
+
+For example, to configure email destination for an ER format that is used to process vendor payments, select the **Vendor** role. After you select the desired role, select **Bind** button next to the **Email source account** field to open the [Formula designer](general-electronic-reporting-formula-designer.md) page. Use this page to configure a formula that at runtime, returns the account number of the party assigned to the configured role from the processed document to the email destination.
 
 >[!NOTE]
 > Formulas are specific to the ER configuration.
 
-In the **Formula** field, enter a document-specific reference to **Customer**, **Vendor**, or any other supported role. Instead of typing, you can find the data source node that represents an account of the configured role, and then select **Add data source** to update the formula. For example, if you configure email destination for the **ISO 20022 Credit Transfer** configuration that is used to process vendor payments, the node that represents a vendor account is `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
+In the **Formula** field, enter a document-specific reference to customer, vendor, or any other supported role. Instead of typing, find the data source node that represents an account of the configured role, and then select **Add data source** to update the formula. For example, if you configure the email destination for the **ISO 20022 Credit Transfer** configuration that is used to process vendor payments, the node that represents a vendor account is `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
 ![Selecting the Bind button to configure an email source account](./media/er_destinations-emaildefineaddresssource.gif)
 
-If account numbers of the configured role are unique for the entire Finance instance, the **Company of email source** field can be kept blank. 
+If the account numbers of the configured role are unique to the entire Finance instance, the **Company of email source** field can remain blank. 
 
 ![Formula designer page](./media/er_destinations-emaildefineaddresssourceformula.png)
 
-Alternatively, you might have a situation when different parties of the [Global address book](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book) have been registered in different companies ([legal entities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/commerce/toc.json#legal-entities)) to play the configured role by using the same account number. So, in this case account numbers for the configured role are not unique for the entire Finance instance. Therefore, for explicit party selection it is not enough to specify the only an account number. In addition, you need to specify a company in scope of which this party has been registered to play a configured role. For doing this, you must use the **Bind** button next to the **Company of email source** field to open the [Formula designer](general-electronic-reporting-formula-designer.md) page. You can use this page to configure a formula that returns, at runtime, the code of a company in scope of which the desire source must be found.
+Alternatively, you might have a situation when different parties of the [Global address book](../../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md) have been registered in different companies ([legal entities](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) to play the configured role by using the same account number. In this case, account numbers for the configured role are not unique for the entire Finance instance. For explicit party selection, it isn't enough to specify only an account number. You also need to specify a company in scope of which this party has been registered to play a configured role. Select **Bind** next to the **Company of email source** field to open the [Formula designer](general-electronic-reporting-formula-designer.md) page. You can use this page to configure a formula that returns, at runtime, the code of a company in scope of which the desire source must be found.
 
 > [!TIP]
-> When you need to use the code of a company in scope of which you run an ER format and this ER format does not provide any data source to obtain such a company code, configure the `GetCurrentCompany()` formula by using the built-in [GETCURRENTCOMPANY](er-functions-other-getcurrentcompany.md) ER function.
+> When you need to use the company code to run an ER format and the ER format doesn't provide any data source to obtain the company code, configure the `GetCurrentCompany()` formula by using the built-in [GETCURRENTCOMPANY](er-functions-other-getcurrentcompany.md) ER function.
 
 >[!NOTE]
 > Formulas are specific to the ER configuration.
 
-In the **Assign email address** dialog box, you can specify what kind of email addresses must be used at runtime:
+In the **Assign email address** dialog box, specify what kind of email addresses must be used at runtime:
 
 - In the **Purpose** field, select the desire purposes. When configured, only emails of these purposes from contacts of the discovered party will be used.
 - Set the **Primary contact** field to **Yes** to use an email address that is configured for the discovered party as **Primary**.
