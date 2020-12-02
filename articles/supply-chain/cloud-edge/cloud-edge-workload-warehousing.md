@@ -148,7 +148,8 @@ The following warehouse management functionality isn't currently supported on sc
 The following table shows which outbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
 > [!WARNING]
-> Some warehouse functionality won't be available at warehouses that are running the warehouse management workloads in a scale unit.
+> Some warehouse functionality won't be available for warehouses running the warehouse management workloads in a scale unit; not supported on the hub nor on the scale unit workload.
+Other capabilities can get processed on both, but will require careful use in scenarios where e.g. the inventory on-hand gets updated for the same warehouse on both the hub and scale unit workload due to the asynchronous data update process.
 
 | Process                                                      | Hub | WES workload on a scale unit |
 |--------------------------------------------------------------|-----|------------------------------|
@@ -175,6 +176,7 @@ The following table shows which outbound features are supported, and where they 
 | Print work report                                            | No  | No |
 | Wave label                                                   | No  | Yes|
 | Reverse work                                                 | No  | No |
+| Work processing - Directed by 'Transport loading'            | No  | No |
 
 ### Inbound
 
@@ -186,22 +188,25 @@ The following table shows which inbound features are supported, and where they a
 | Load and transportation management processing                    | Yes | No |
 | Shipment confirmation                                            | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
-| Purchase order item receiving and put away                        | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when there is a warehouse order, and when a purchase order isn't part of a <i>load</i>.</p><p>No, when there isn't a warehouse order.</p> |
-| Purchase order line receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> |
+| Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line</p>          | Yes | No |
+| Purchase order item receiving and put away                       | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when there is a warehouse order, and when a purchase order isn't part of a <i>load</i></p><p>No, when there isn't a warehouse order</p> |
+| Purchase order line receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes,&nbsp;when&nbsp;there&nbsp;is a warehouse order, and when a purchase order isn't part of a <i>load</i></p><p>No, when there isn't a warehouse order</p> |
 | Return order receiving and put away                               | Yes | No |
 | Mixed license plate receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Load item receiving                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | License plate receiving and put away                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Transfer order item receiving and put away                        | Yes | No |
 | Transfer order line receiving and put away                        | Yes | No |
-| Work cancellation                                                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) isn't supported.</p> |
+| Work cancellation                                                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) isn't supported</p> |
 | Purchase order product receipt processing                          | Yes | No |
+| Purchase order receiving with underdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No, because you can only cancel the full warehouse order line quantities |
+| Purchase order receiving with overdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes |
 | Receiving with creation of 'Cross docking'  work                   | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of 'Quality order' work                  | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of 'Quality item sampling' work          | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of 'Quality in quality check' work       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with quality order creation                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
-| Work processing with 'Cluster putaway'                             | Yes | No |
+| Work processing - Directed by 'Cluster putaway'                             | Yes | No |
 
 ### Warehouse operations and exception handing
 
