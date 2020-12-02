@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mandats de paiement in the public sector in France
-description: The mandat de paiement is used by the director to notify and authorize the accountant to pay a specific amount to another entity on behalf of the organization.
+description: The mandat de paiement is used by the director to notify and authorize the accountant to pay a specific amount to another entity.
 author: rschloma
 manager: AnnBe
 ms.date: 12/02/2020
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The mandat de paiement is used by the director to notify and authorize the accountant to pay a specific amount to another entity on behalf of the organization. As required, the mandat maintains strict separation between the director's operational role and the accountant's accounting role.
+The mandat de paiement is used by the director to notify and authorize the accountant to pay a specific amount to another entity. As required, the mandat maintains strict separation between the director's operational role and the accountant's accounting role.
 
 ## Director’s tasks
 
