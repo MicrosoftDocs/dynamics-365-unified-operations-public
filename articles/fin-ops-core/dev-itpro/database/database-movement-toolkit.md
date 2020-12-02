@@ -5,7 +5,7 @@ title: Database movement toolkit
 description: This topic explains how to download and use the Database movement toolkit, a series of scripts that enhance the customer experience for movement of data between developer environments and sandbox environments. 
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
