@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export subsidiary data to a file
-description: This topic lists the steps for preparing data from external systems to be imported to Dynamics 365 Finance.
+description: This topic lists the steps for preparing to export data from Dynamics 365 Finance to then import into a consolidated legal entity.
 author: jinniew
 manager: AnnBe
 ms.date: 10/09/2020
