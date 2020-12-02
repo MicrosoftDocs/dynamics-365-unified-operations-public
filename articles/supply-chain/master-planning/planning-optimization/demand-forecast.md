@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Master planning with demand forecast
-description: This topic explains how to include demand forecast during master planning with Planning Optimization.
+title: Master planning with demand forecasts
+description: This topic explains how to include demand forecasts during master planning with Planning Optimization.
 author: ChristianRytt
 manager: tfehr
 ms.date: 12/02/2020
@@ -29,49 +29,58 @@ ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Master planning with demand forecast
+# Master planning with demand forecasts
 
 [!include [banner](../../includes/banner.md)]
 
-You can use a demand forecast together with Planning Optimization to account for expected demand in your master planning. You can create a demand forecast manually, import it, or generate it using the demand forecasting functionality in Supply Chain Management. For more information about demand forecasting, see the [Demand forecasting overview](../introduction-demand-forecasting.md).
+You can use a demand forecast together with Planning Optimization to account for expected demand in your master planning. You can manually create a demand forecast, import it, or generate it by using the demand forecasting functionality in Microsoft Dynamics 365 Supply Chain Management. For more information about demand forecasting, see [Demand forecasting overview](../introduction-demand-forecasting.md).
 
 > [!NOTE]
-> Separate forecast planning is not supported with Planning Optimization. Therefore, the **Current forecast plan** setting on the **Master planning parameters** page has no effect when you use Planning Optimization.
+> Separate forecast planning isn't supported with Planning Optimization. Therefore, the **Current forecast plan** setting on the **Master planning parameters** page has no effect when you use Planning Optimization.
 
 ## Set up a master plan to include a demand forecast
 
-To configure a master plan to include a demand forecast:
+To configure a master plan so that it includes a demand forecast, follow these steps.
 
 1. Go to **Master planning \> Setup \> Plans \> Master plans**.
-1. Select a plan or create a new one.
-1. Make the following settings on the **General** FastTab :
-    - **Forecast model** - Select the forecast model to apply. This model will be considered when generating supply suggestion for this master plan.
-    - **Include demand forecast** - Set this option to *Yes* to include the demand forecast in the current master plan. If you set this to *No*, demand forecast transactions won't be included in the master plan.
-    - **Method used to reduce forecast requirements** - Select the method used to reduce forecast requirements. For more information, see [Forecast reduction keys](#reduction-keys) (later in this topic).
-1. On the **Time fence in days** FastTab, you can specify the period during which to include the demand forecast by making the following settings:
-    - **Forecast plan** - Set to *Yes* to overwrite the forecast plan time fence originating from the individual coverage groups. Set to *No* to use the values from the individual coverage groups for this master plan.
-    - **Forecast time period** - If you set **Forecast plan** to *Yes*, use the field under the **Forecast plan** setting to define the number of days (from today's date) to apply the demand forecast.
+1. Select an existing plan, or create a new plan.
+1. On the **General** FastTab, set the following fields:
+
+    - **Forecast model** – Select the forecast model to apply. This model will be considered when a supply suggestion is generated for the current master plan.
+    - **Include demand forecast** – Set this option to *Yes* to include the demand forecast in the current master plan. If you set it to *No*, demand forecast transactions won't be included in the master plan.
+    - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. For more information, see the [Forecast reduction keys](#reduction-keys) section later in this topic.
+
+1. On the **Time fence in days** FastTab, you can set the following fields to specify the period that the demand forecast is included during:
+
+    - **Forecast plan** – Set this option to *Yes* to override the forecast plan time fence that originates from the individual coverage groups. Set it to *No* to use the values from the individual coverage groups for the current master plan.
+    - **Forecast time period** – If you set the **Forecast plan** option to *Yes*, specify the number of days (from today's date) that the demand forecast should be applied.
+
     > [!IMPORTANT]
-    > The **Forecast plan** setting is not yet supported with Planning Optimization.
+    > The **Forecast plan** setting isn't yet supported with Planning Optimization.
 
 ## Set up a coverage group to include a demand forecast
 
-To configure a coverage group to include a demand forecast:
+To configure a coverage group so that it includes a demand forecast, follow these steps.
 
-1. Go to **Master planning \> Setup \> Plans \> Goverage groups**.
-1. Select a coverage group or create a new one.
-1. On the **Other** FastTab, make the following settings:
-    - **Forecast plan time fence** - Enter the number of days (from today's date) to apply the demand forecast. This value can be overridden using the **Forecast plan** option on the master plan (as described in the previous section).
-    - **Reduction key** - Select a reduction key to apply. For more information, see [Create and set up a forecast reduction key](#create-reduction-key) and [Use a reduction key](#use-reduction-key) (later in this topic).
-    - **Reduce forecast by** - For master plans where the **Method used to reduce forecast requirements** is set to *Transactions - reduction key*  or  *Transactions - dynamic period*, use this setting to specify which transactions reduce the forecast. Choose one of the following values:
-        - **All transactions** - Select this option if all transactions should reduce the forecast.
-        - **Orders** - Select this option if only sales orders should reduce the forecast.
+1. Go to **Master planning \> Setup \> Plans \> Coverage groups**.
+1. Select an existing coverage group, or create a new group.
+1. On the **Other** FastTab, set the following fields:
+
+    - **Forecast plan time fence** – Enter the number of days (from today's date) that the demand forecast should be applied for. This value can be overridden by using the **Forecast plan** option on the master plan, as described in the previous section.
+    - **Reduction key** – Select the reduction key to apply. For more information, see the [Create and set up a forecast reduction key](#create-reduction-key) and [Use a reduction key](#use-reduction-key) sections later in this topic.
+    - **Reduce forecast by** – For master plans where the **Method used to reduce forecast requirements** field is set to *Transactions - reduction key* or *Transactions - dynamic period*, specify which transactions should reduce the forecast. Select one of the following values:
+
+        - **All transactions** – All transactions should reduce the forecast.
+        - **Orders** – Only sales orders should reduce the forecast.
+
         > [!NOTE]
-        > If you select *All transaction*, transactions with both demand and supply within the same inventory dimensions are considered neutral and ignored during the forecast reduction. For example, when the planning dimension is set to site only, and no warehouse, a transfer order between site 1 warehouse 11 and site 1 warehouse 13 will be ignored and won't reduce the remaining demand forecast.
-    - **Include intercompany orders** - Set this to *Yes* if intercompany orders should be included when reducing the forecast. Otherwise, set to *No*.
-    - **Include customer forecast in the demand forecast** - Specify whether to include a customer forecast in the overall forecast. This setting determines how actual demand reduces the forecasted demand. You can use this setting to ensure that master planning covers the supply of items that are purchased by specific customers.
-        - Set this to *Yes* to include a customer forecast in the overall forecast. In this case, actual customer demand reduces both the customer forecast and the overall forecast. Master planning generates planned orders to cover only the overall forecast quantity.
-        - Set this to *No* if you don't want to include a customer forecast in the overall forecast. In this case, actual customer demand reduces only the customer forecast. Master planning generates planned orders to cover both the overall forecast quantity and the forecast for each customer quantity.
+        > If you select *All transactions*, transactions that have both demand and supply in the same inventory dimensions are considered neutral and are ignored during the forecast reduction. For example, if the planning dimension is set to site only, not warehouse, a transfer order between site 1, warehouse 11, and site 1, warehouse 13, will be ignored and won't reduce the remaining demand forecast.
+
+    - **Include intercompany orders** – Set this option to *Yes* if intercompany orders should be included when the forecast is reduced. Otherwise, set it to *No*.
+    - **Include customer forecast in the demand forecast** – Specify whether a customer forecast should be included in the overall forecast. This option determines how actual demand reduces the forecasted demand. You can use it to ensure that master planning covers the supply of items that are purchased by specific customers.
+
+        - Set this option to *Yes* to include a customer forecast in the overall forecast. In this case, actual customer demand reduces both the customer forecast and the overall forecast. Master planning generates planned orders to cover only the overall forecast quantity.
+        - Set this option to *No* if you don't want to include a customer forecast in the overall forecast. In this case, actual customer demand reduces only the customer forecast. Master planning generates planned orders to cover both the overall forecast quantity and the forecast for each customer quantity.
 
 ## <a name="reduction-keys"></a>Forecast reduction keys
 
