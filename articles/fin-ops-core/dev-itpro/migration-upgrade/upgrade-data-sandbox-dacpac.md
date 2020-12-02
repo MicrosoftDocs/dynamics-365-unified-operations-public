@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-
 description: This topic will help customers who no longer have Remote Desktop protocol (RDP) access to their Tier-2 through Tier-5 sandbox environments when they upgrade from Microsoft Dynamics AX 2012 to Finance and Operations apps.
 author: laneswenka
 manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
