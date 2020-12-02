@@ -78,7 +78,7 @@ You can also obtain email addresses from contact details of a party for which yo
 >[!NOTE]
 > Formulas are specific to the ER configuration.
 
-In the **Formula** field, enter a document-specific reference to **Customer**, **Vendor**, or any other supported role. Instead of typing, you can find the data source node that represents an account of the configured role, and then select **Add data source** to update the formula. For example, if you configure email destination for the **ISO 20022 Credit Transfer** configuration that is used to process vendor payments, the node that represents a vendor account is `'\$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
+In the **Formula** field, enter a document-specific reference to **Customer**, **Vendor**, or any other supported role. Instead of typing, you can find the data source node that represents an account of the configured role, and then select **Add data source** to update the formula. For example, if you configure email destination for the **ISO 20022 Credit Transfer** configuration that is used to process vendor payments, the node that represents a vendor account is `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
 ![Selecting the Bind button to configure an email source account](./media/er_destinations-emaildefineaddresssource.gif)
 
@@ -96,7 +96,7 @@ Alternatively, you might have a situation when different parties of the [Global 
 
 In the **Assign email address** dialog box, you can specify what kind of email addresses must be used at runtime:
 
-- In the **Purpose** field, select the purposes of email address of the discovered party that must be used.
+- In the **Purpose** field, select the desire purposes. When configured, only emails of these purposes from contacts of the discovered party will be used.
 - Set the **Primary contact** field to **Yes** to use an email address that is configured for the discovered party as **Primary**.
 
 >[!NOTE]
@@ -106,7 +106,7 @@ In the **Assign email address** dialog box, you can specify what kind of email a
 
 ### Configuration email
 
-Use the **Configuration email** email type if the configuration that you use has a node in the data sources that returns an **email address** or separated by ";" email addresses. You can use [data sources](general-electronic-reporting.md#FormatComponentOutbound) and [functions](er-formula-language.md#functions) in the formula designer to get a correctly formatted email address or separated by ";" email addresses. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents a primary email address of a vendor from vendor contact details to send out the covering letter is `\'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Use the **Configuration email** email type if the configuration that you use has a node in the data sources that returns an **email address** or separated by ";" email addresses. You can use [data sources](general-electronic-reporting.md#FormatComponentOutbound) and [functions](er-formula-language.md#functions) in the formula designer to get a correctly formatted email address or separated by ";" email addresses. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents a primary email address of a vendor from vendor contact details to send out the covering letter is `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![Configuring an email address source](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
