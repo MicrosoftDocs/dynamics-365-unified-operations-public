@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 11/13/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,8 +43,6 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Platform updates for version 10.0.15 of Finance and Operations apps
 
-> [!NOTE]
-> Version 10.0.15 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ### Visual Studio add-in to apply metadata hotfixes
 
