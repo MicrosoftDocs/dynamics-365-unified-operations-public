@@ -6,7 +6,7 @@ ms.date: 11/17/2020
 ms.author: rhaertle
 ---
 
-## Product receipt line to msdyn_purchaseorderreceiptproducts
+### Product receipt line to msdyn_purchaseorderreceiptproducts
 
 This template synchronizes data between Finance and Operations apps and Dataverse.
 

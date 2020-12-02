@@ -6,7 +6,7 @@ ms.date: 11/17/2020
 ms.author: rhaertle
 ---
 
-## Product receipt header to msdyn_purchaseorderreceipts
+### Product receipt header to msdyn_purchaseorderreceipts
 
 This template synchronizes data between Finance and Operations apps and Dataverse.
 

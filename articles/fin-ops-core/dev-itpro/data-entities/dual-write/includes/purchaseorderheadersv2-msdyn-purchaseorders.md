@@ -6,7 +6,7 @@ ms.date: 11/17/2020
 ms.author: rhaertle
 ---
 
-## Purchase order headers V2 to msdyn_purchaseorders
+### Purchase order headers V2 to msdyn_purchaseorders
 
 This template synchronizes data between Finance and Operations apps and Dataverse.
 

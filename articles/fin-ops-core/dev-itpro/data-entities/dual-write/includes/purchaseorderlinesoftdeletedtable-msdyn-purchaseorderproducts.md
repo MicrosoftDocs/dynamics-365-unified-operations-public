@@ -6,7 +6,7 @@ ms.date: 11/17/2020
 ms.author: rhaertle
 ---
 
-## CDS purchase order line soft deleted table to msdyn_purchaseorderproducts
+### purchase order line soft deleted table to msdyn_purchaseorderproducts
 
 This template synchronizes data between Finance and Operations apps and Dataverse.
 
