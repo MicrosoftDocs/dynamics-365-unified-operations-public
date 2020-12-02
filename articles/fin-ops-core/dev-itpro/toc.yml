@@ -196,6 +196,8 @@
                     href: data-entities/dual-write/company-data.md
                   - name: Bootstrap with company data
                     href: data-entities/dual-write/bootstrap-company-data.md
+                  - name: Bootstrap company data
+                    href: data-entities/dual-write/bootstrap-company-data-new.md
                 - name: Organization hierarchy on Common Data Service
                   href: data-entities/dual-write/organization-mapping.md
                 - name: Finance and tax data
