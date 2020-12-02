@@ -36,11 +36,11 @@ ms.dyn365.ops.version: 10.0.14
 This topic describes the options that are available for setting up and configuring vendor invoice automation. Invoice automation features use the following types of setup parameters:
 
 - Parameters for submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines.
-- Parameters for process automation background tasks. The process automation framework is used to submit imported vendor invoices to the workflow system. It's also used to automatically match posted product receipt lines to pending vendor invoice lines. Different business processes use this framework to define how often the selected process is run. The available frequencies for the **Match product receipt to invoice lines** and **Submit vendor invoices to workflow** background processes include **Hour** and **Daily**.
+- Parameters for processing automation background tasks. The process automation framework is used to submit imported vendor invoices to the workflow system. It's also used to automatically match posted product receipt lines to pending vendor invoice lines and to perform invoice matching validation for manual invoices that were automatically matched to product receipt lines. Different business processes use this framework to define how often the selected process is run. The available frequencies for the **Match product receipt to invoice lines** and **Submit vendor invoices to workflow** background processes include **Hour** and **Daily**.
 
 To set up or view information about a background task, go to **System administration \> Setup \> Process automations**, and select the **Background task** tab.
 
-To achieve touchless automation from the import process through vendor invoice posting, you must set up a Vendor invoice workflow. To set up a workflow, go to **Accounts payable > Setup > Accounts payable workflows**. To ensure that the invoice can be processed from start to finish without manual intervention, you must include an automated posting task in your workflow configuration. .
+To achieve touchless automation from the import process through vendor invoice posting, you must set up a Vendor invoice workflow. To set up a workflow, go to **Accounts payable > Setup > Accounts payable workflows**. To ensure that the invoice can be processed from start to finish without manual intervention, you must include an automated posting task in your workflow configuration.
 
 ## Parameters for submitting imported vendor invoices to the workflow system
 
@@ -67,4 +67,4 @@ The following parameters are available:
     If you set the **Match product receipts to invoice lines prior to automatically matching** option to **Yes**, this option can't be set to **No**. To set this option to **No**, you must first set the **Match product receipts to invoice lines prior to automatically matching** option to **No**.
 
 - **Number of times to attempt automatic matching** – Select the number of times that the system should try to match product receipts to an invoice line before it concludes that the process failed. When the specified number of attempts is reached, the invoice is removed from automation processing.
-- **Validate only when the matched product receipt quantity is equal to the invoice quantity** – If you select this option invoice matching is automatically validated only when the matched product receipt quantity of the invoice line equals the invoice quantity of the invoice line. If this option is cleared, invoice matching is validated every time that the system automatically matches a product receipt line to an invoice line.
+
