@@ -175,7 +175,7 @@ To provide the best experience and performance, Microsoft performs maintenance o
 While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
 
 ### How do I connect to the SQL database on my Sandbox environment?
-Follow the steps under [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
+To connect to the SQL database in your Sandbox environment, follow the steps in [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
 
 ### How do I access a development instance?
 For information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators, see [Deploy and access development environments](../dev-tools/access-instances.md).
