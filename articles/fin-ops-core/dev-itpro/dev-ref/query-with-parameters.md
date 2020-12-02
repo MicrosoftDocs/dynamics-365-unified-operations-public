@@ -110,7 +110,7 @@ public str GetFirstName(str name)
 }
 ```
 
-The updated example uses the new API named **executeQueryWithParameters** instead of the old API that did not take parameters. The code builds the map containing the mapping from parameter names onto parameter values. In this case, **Name** will be the value of **@Name** in SQL. The incoming **name** could be anything.
+The updated example uses the new API named **executeQueryWithParameters** instead of the old API that did not take parameters. The code builds the map containing the mapping from parameter names onto parameter values. In this case, **Name** will be the value of **\@Name** in SQL. The incoming **name** could be anything.
 
 There is a related method on the **Statement** type that is used to run statements that return integer values instead or rows. Typically, the integer value is the number of rows impacted. This example uses the X++ data statements with the **executeQueryWithParameters** API:
 
