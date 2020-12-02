@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Why do I need bootstrapping?
-description: 
-author: 
+title: Bootstrap company data
+description: How to bootstrap Dataverse or other Finance and Operations app data with company information before enabling dual-write connection.
+author: robinarh
 manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Why do I need bootstrapping?
+# Bootstrap company data
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../includes/preview-banner.md)]
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 You might have an existing Dataverse or Finance and Operations app instance with business data, and you want to enable dual-write connection against it. In this case, you need to bootstrap Dataverse or Finance and Operations app data with company information before enabling dual-write connection.
 
