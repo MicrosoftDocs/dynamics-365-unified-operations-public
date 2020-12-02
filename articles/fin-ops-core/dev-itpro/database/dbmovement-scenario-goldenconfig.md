@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,7 +82,7 @@ The values on the following pages are either environment-specific or encrypted i
 
 ## Create a copy of the source database
 
-Backup the source database using SSMS.  Right-click on the source database and under Tasks choose the Backup option.  After this is completed, right-click on the Databases folder in SSMS navigation window, and choose Restore database.  Choose the backup you just made, but give the target database a new name such as AXDB_CopyForExport.  
+Back up the source database using SSMS.  Right-click the source database, and select **Tasks > Backup option**.  After this is completed, right-click on the **Databases** folder in the SSMS navigation window, and choose **Restore database**.  Choose the back-up you just made, but give the target database a new name such as AXDB_CopyForExport.  
 
 ## Prepare the database
 
