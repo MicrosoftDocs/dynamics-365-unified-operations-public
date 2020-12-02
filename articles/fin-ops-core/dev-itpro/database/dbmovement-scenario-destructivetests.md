@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -40,7 +40,7 @@ In this tutorial, you will learn two approaches:
 > * Use a database backup asset.
 > * Use point-in-time restore.
 
-As an example of this scenario, a customer wants to do a Conference Room Pilot and wants to start with an environment that has no transactions (that is, no sales orders or purchase orders). The customer will be traveling from physical warehouse to physical warehouse throughout his or her geographic region to do the same pilot, and wants the environment to be "reset" before each pilot is done.
+As an example of this scenario, a customer wants to do a Conference Room Pilot and wants to start with an environment that has no transactions (that is, no sales orders or purchase orders). The customer will be traveling from physical warehouse to physical warehouse throughout the geographic region to do the same pilot, and wants the environment to be "reset" before each pilot is done.
 
 ## Prerequisites
 

@@ -5,7 +5,7 @@ title: Enable and use cross-channel sharing
 description: This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -75,7 +75,7 @@ You can create and use cross-channel content in multiple ways. For example, you 
 To create a cross-channel fragment in Commerce site builder, follow these steps.
 
 1. Go to **Fragments**, and select **New** to create a new fragment.
-1. In the **New page fragment** dialog box, select the **Promo banner** module, and then, under **Page fragment name**, enter a name (for example, **Cross-channel banner**). Then select **OK**.
+1. In the **New fragment** dialog box, select the **Promo banner** module, and then, under **Fragment name**, enter a name (for example, **Cross-channel banner**). Then select **OK**.
 1. In the property pane for the **Promo banner** module, select **Add Message**, and then select **Message**.
 1. In the **Message** dialog box, under **Text**, enter **Cross-channel**, and the select **OK**. 
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
@@ -92,8 +92,8 @@ To create a cross-channel page in Commerce site builder that uses cross-channel 
 1. In the **Choose a template** dialog box, select a template, such as **Marketing**.
 1. Under **Page name**, enter a name for the page (for example, **Cross-channel page**).
 1. Under **Page URL**, enter a page URL (for example, **examplepage**), and then select **OK**.
-1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Fragment**.
-1. In the **Add Fragment** dialog box, select the cross-channel fragment that you created earlier that has a promo banner, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add fragment**.
+1. In the **Add fragment** dialog box, select the cross-channel fragment that you created earlier that has a promo banner, and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the page. You should see the promo banner that says, "Cross-channel."
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
@@ -107,8 +107,8 @@ To create a channel-specific page in Commerce site builder that uses cross-chann
 1. In the **Choose a template** dialog box, select a template, such as **Marketing**.
 1. Under **Page name**, enter a name for the page (for example, **Channel-specific page**).
 1. Under **Page URL**, enter a page URL (for example, **channelspecificpage**), and then select **OK**.
-1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Fragment**.
-1. In the **Add Fragment** dialog box, under **Channel**, select **Cross Channel Online Store**. The cross-channel fragment that you created earlier should appear in the list. Select it, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add fragment**.
+1. In the **Add fragment** dialog box, under **Channel**, select **Cross Channel Online Store**. The cross-channel fragment that you created earlier should appear in the list. Select it, and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the page. You should see the promo banner that says, "Cross-channel."
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 

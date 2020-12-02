@@ -18,7 +18,7 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
@@ -103,7 +103,7 @@ To delete a report schedule, you must be the owner of the report schedule or hav
 
 If you do not enter credentials that are required for all companies included in the reports, you receive the following message when you save the report schedule: "You must enter your credentials for the companies that are contained in this report schedule. Select the Permissions button to enter in your credentials."
 
-For example, Phyllis logs on to Company A using her logon and password. She creates a schedule for a report that uses a reporting tree definition to collect data from multiple companies. When this report schedule is saved, Phyllis is prompted to enter the credentials for the other companies that are specified in the reporting tree definition. When your credentials expire, the affected reports in the report schedule are not generated until the credentials have been updated. A message is displayed in the report queue to indicate that permissions must be updated. The report schedule fails if any of the following scenarios occur (because they require credentials):
+For example, a user logs on to Company A using a logon and password. The user creates a schedule for a report that uses a reporting tree definition to collect data from multiple companies. When this report schedule is saved, the user is prompted to enter the credentials for the other companies that are specified in the reporting tree definition. When your credentials expire, the affected reports in the report schedule are not generated until the credentials have been updated. A message is displayed in the report queue to indicate that permissions must be updated. The report schedule fails if any of the following scenarios occur (because they require credentials):
 
 - A new company has been added to a report tree for an individual report.
 - A report in a report group has been modified.

@@ -21,7 +21,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: v-nadyuz
+ms.author: roschlom
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 

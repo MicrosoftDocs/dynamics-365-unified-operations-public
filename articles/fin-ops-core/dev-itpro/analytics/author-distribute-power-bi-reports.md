@@ -18,7 +18,7 @@ ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265864
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5
@@ -42,7 +42,9 @@ You can create Microsoft Power BI reports by using Open Data Protocol (OData) en
 When you use Power BI Desktop, you can create a report in your development or test environment by connecting directly to the local Entity Store database. When you're satisfied with the report, your administrator can help you migrate it to your production environment. The rest of this section walks you through this process.
 
 > [!NOTE]
-> To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided, Tier-1 environments. You need administrator rights to install Power BI Desktop.
+> To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided Tier-1 environments. You need administrator rights to install Power BI Desktop.
+
+> Tier-1 environments now include a service compatible version of Power BI Desktop. To develop or extend analytical workspaces and reports in the application suite, customers can use the Power BI Desktop application pre-installed on the development environment. Alternatively, you can use the latest compatible release of Power BI Desktop with Preview features turned off to author analytical reports for Finance and Operations apps. Download the September 2020 Update of Power BI Desktop at [Previous monthly updates to Power BI Desktop](https://docs.microsoft.com/power-bi/fundamentals/desktop-latest-update-archive).
 
 ### Step 1: Populate the local Entity Store database
 For this example, we will stage the aggregate models that the Commerce analytical solution consumes in the local Entity Store. The models that the application uses are defined in the RetailCube aggregate measurement. 

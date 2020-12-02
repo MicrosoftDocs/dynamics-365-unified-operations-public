@@ -17,7 +17,7 @@ ms.search.form: FinancialReportingSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -168,7 +168,7 @@ For this exercise, you will be modifying an existing default report. You will be
 14. Close **Consolidated Balance Sheet and Income Statement Side by Side**.
 15. Close **Report Designer**.
 
-## Exercise 5: Create a sidebyside departmental report
+## Exercise 5: Create a side-by-side departmental report
 In this exercise, you'll be creating a new report. The report is a side-by-side departmental income statement. You'll use an existing row definition, but create a new report definition and a new column definition that uses dimension filters. We'll start from the Financial reports list.
 
 1. Go to **Financial reports** under Inquiries and reports in General ledger.
@@ -201,4 +201,4 @@ In this exercise, you'll be creating a new report. The report is a side-by-side 
 
 [View financial reports](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics Financial Reporting Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics 365 Finance Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)

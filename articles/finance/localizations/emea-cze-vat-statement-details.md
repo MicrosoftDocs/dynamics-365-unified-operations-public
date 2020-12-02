@@ -50,9 +50,8 @@ The following is an example of how sales tax reporting codes could be set up for
 
 For users in legal entities in the Czech Republic, according VAT declaration in 2016, the following sales tax reporting codes could be created.
 
-|                              |                                                         |
+|   Sales tax reporting code   |      Description                                        |
 |------------------------------|---------------------------------------------------------|
-| **Sales tax reporting code** | **Description**                                         |
 | 2101                         | ř.210 - se zákl. sazbou daně  - Základ                  |
 | 2102                         | ř.210 - se zákl. sazbou daně  - Daň                     |
 | 2151                         | ř.215 - se sníž. sazbou daně  - Základ                  |

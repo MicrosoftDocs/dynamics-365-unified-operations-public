@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage the support experiences for Finance and Operations apps 
+title: Manage support experiences for Finance and Operations apps
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 0fa10573-8146-446e-8124-8a7af9546add
@@ -30,11 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Manage the support experiences for Finance and Operations apps 
-
+# Manage support experiences for Finance and Operations apps
 [!include [banner](../includes/banner.md)]
 
-To use the Support tool, you must have previously created a project in Lifecycle Services (LCS) and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics in Lifecycle Services (LCS)](ax-2012/system-diagnostics-lcs.md).
 
 ## Open a new incident
 1. In LCS, go to the project for which you want to file a support incident. 
@@ -115,7 +113,7 @@ If you do not find the PartnerSource Business Center account, ensure that your s
 
 ![Add contract](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
-### Sign-in specfic options
+### Sign-in specific options
 The following incidents and support benefits will appear based on your sign in, if applicable:
 
 -   MPN gold and silver incidents.

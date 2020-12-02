@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail 
+# ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -115,9 +115,9 @@ For a general overview of each application release, always check the "What's new
     > [!WARNING]
     > Your build server will probably fail, because the names of the NuGet reference folders are very long and will exceed the file path limit of 260 characters.
 
-- Retail SDK file size: The size of an unmodified retail deployable package is now about 340 MB. If customizations are included, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (previously known as Retail Cloud Scale Unit \[RCSU\]), you will receive an error message that states that you can't deploy [packages that are larger than 300 MB](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages). Follow these steps to fix this issue:
+- Retail SDK file size: The size of an unmodified retail deployable package is now about 340 MB. If customizations are included, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (previously known as Retail Cloud Scale Unit \[RCSU\]), you will receive an error message that states that you can't deploy [packages that are larger than 300 MB](retail-sdk/retail-sdk-packaging.md#deploy-the-packages). Follow these steps to fix this issue:
 
-    1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages), and manually remove the self-service installer files.
+    1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-packages), and manually remove the self-service installer files.
     2. Upload the much smaller package to LCS, and then continue your deployment as usual.
 
     > [!NOTE]

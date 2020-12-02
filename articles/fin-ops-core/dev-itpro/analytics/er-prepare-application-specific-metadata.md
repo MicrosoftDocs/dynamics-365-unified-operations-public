@@ -18,7 +18,7 @@ ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -228,7 +228,7 @@ If you've already completed the [Access application metadata by using an ER conf
 
 1. Go to **All workspaces \> Electronic reporting**.
 2. Select **Connected applications**.
-3. Make sure that the configured application is based on Microsoft Azure, and that it is accessible in general to RCS users. The current RCS user must have access to the configured application being registered as a user of this application in a role that gives him or her privileges to access the application's metadata.
+3. Make sure that the configured application is based on Microsoft Azure, and that it is accessible in general to RCS users. The current RCS user must have access to the configured application being registered as a user of this application in a role that gives them privileges to access the application's metadata.
 4. Select **New**.
 5. In the **Name** field, enter **MyConnectedApp** as the name of the connected application.
 6. In the **Application** field, specify the URL of the application.

@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
+# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -84,8 +84,8 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 38. Click OK.
 39. In the tree, select 'File\Declaration\Data\Item'.
 40. Click Add Item.
-41. In the Name field, type 'Commodity rec id'.
-    * Commodity rec id  
+41. In the Name field, type 'Commodity rec ID'.
+    * Commodity rec ID  
 42. In the Data type field, select 'Int64'.
 43. Click OK.
 44. Click the Mapping tab.
@@ -93,22 +93,23 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 46. Click Bind.
 47. In the tree, expand 'model'.
 48. In the tree, expand 'model\Transactions'.
-49. In the tree, select 'File\Declaration\Data\Item =  model.Transactions\Commodity rec id'.
-50. In the tree, select 'model\Transactions\Commodity rec id'.
+49. In the tree, select 'File\Declaration\Data\Item =  model.Transactions\Commodity rec ID'.
+50. In the tree, select 'model\Transactions\Commodity rec ID'.
 51. Click Bind.
 52. Click Save.
 
 ## Modify format to memorize details of reporting
+
 1. Click Map format to model.
 2. Click New.
 3. In the Definition field, enter or select the 'For application data update' root item.
-    * For application data update  
+    * For application data update.
 4. In the Name field, type 'Mapping to update data'.
     * Mapping to update data  
 5. Click Save.
-    * This mapping defines how the details of the Intrastat report are collected in the data model, the structure of which is specified by the selected root item 'For application data update'. These details, the model mapping with same root item 'For application data update', and the direction 'To destination' will be used for the application data update. The application data update starts immediately after the outgoing Intrastat report is generated. Note that the application data update can be skipped at run-time, but the data model must be empty (containing empty record list).   
+    * This mapping defines how the details of the Intrastat report are collected in the data model, the structure of which is specified by the selected root item 'For application data update'. These details, the model mapping with same root item 'For application data update', and the direction 'To destination' will be used for the application data update. The application data update starts immediately after the outgoing Intrastat report is generated. The application data update can be skipped at run-time, but the data model must be empty (containing empty record list).
 6. Click Designer.
-    * Note that the outgoing Intrastat report format is added by default as a data source for this model mapping.  
+    * The outgoing Intrastat report format is added by default as a data source for this model mapping.  
     * Bind elements of the designed report (presented as data source) to elements of the data model, which is filtered based on the selected model's root item.  
 7. In the tree, expand 'Archive header'.
 8. In the tree, expand 'Archive header\Archive lines'.
@@ -124,8 +125,8 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 18. Click Add function.
 19. In the tree, expand 'format'.
 20. In the tree, expand 'format\Declaration: XML Element(Declaration)'.
-21. In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.
-22. In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.
+21. In the tree, expand `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
+22. In the tree, select `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)`.
 23. Click Add data source.
 24. In the Formula field, enter 'COUNT(format.Declaration.Data.Item)'.
     * COUNT(format.Declaration.Data.Item)  
@@ -134,23 +135,22 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 27. In the tree, select 'Archive header\File name'.
 28. In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name)'.
 29. Click Bind.
-30. In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)'.
+30. In the tree, select `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)`.
 31. In the tree, select 'Archive header\Archive lines\Item number'.
 32. Click Bind.
-33. In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)'.
+33. In the tree, select `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)`.
 34. In the tree, select 'Archive header\Archive lines\Amount'.
 35. Click Bind.
-36. In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id)'.
-37. In the tree, select 'Archive header\Archive lines\Commodity rec id'.
+36. In the tree, select `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)`.
+37. In the tree, select 'Archive header\Archive lines\Commodity rec ID'.
 38. Click Bind.
 39. In the tree, select 'Archive header\Archive lines'.
-40. In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.
+40. In the tree, select `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)`.
 41. Click Bind.
 42. In the tree, select 'Archive header'.
-43. In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.
+43. In the tree, select `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
 44. Click Bind.
 45. Click Save.
 46. Close the page.
 47. Close the page.
 48. Close the page.
-

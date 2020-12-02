@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Navigation concepts
+title: Navigation concepts for test data
 description: This topic provides information about how to use navigation to simplify the discoverability of test data generation methods.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Navigation concepts
+# Navigation concepts for test data
 
 [!include [banner](../includes/banner.md)]
 

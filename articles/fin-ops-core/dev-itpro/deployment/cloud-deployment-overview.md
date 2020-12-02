@@ -3,9 +3,9 @@
 
 title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
-author: AngelMarshall
+author: LaneSwenka
 manager: AnnBe
-ms.date: 10/05/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tsmarsha
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
@@ -50,8 +50,7 @@ At some phases of a project, you may have all of the environments live at once. 
 
 You may notice the terms cloud hosted or Microsoft subscriptions. A *cloud hosted subscription* means that the customer or partner brings their own Azure subscription and deploys Finance and Operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. A *Microsoft subscription* means that the customer purchases Finance and Operations licenses, which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. 
 
-With each Enterprise offer, three environments are included by default:
-- One Tier 1 sandbox which can be used for demo, building, golden configuration or development.
+With each Enterprise offer, two environments are included by default:
 - One Tier 2 sandbox (multi-box environment) for user acceptance testing (UAT).
 - One production environment with high availability (HA). 
 
@@ -61,9 +60,9 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 
 | Lifecycle phase      | Environment tier         | Subscription            | Environment types                 | Environment sub-type 
 |-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|---------------------------------------------|
-| Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Demo
-| Customize                     | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
-| Golden configuration          | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
+| Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted | Customer Managed | Demo
+| Customize                     | Tier 1 Sandbox | Cloud hosted or VHD | Customer Managed | Develop
+| Golden configuration          | Tier 1 Sandbox | Cloud hosted | Customer Managed | Develop
 | User acceptance testing (UAT) | Tiers 2-5 Sandbox | Microsoft                 | Microsoft Managed or Self-service | Not applicable
 | Go live                       | Production | Microsoft                    | Microsoft Managed or Self-service | Not applicable     
 
@@ -176,24 +175,7 @@ To provide the best experience and performance, Microsoft performs maintenance o
 While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
 
 ### How do I connect to the SQL database on my Sandbox environment?
-Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
-
-> [!IMPORTANT]
-> You will not be able to connect to the Production database directly.
-
-1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment with a database that you want to connect to.
-2. Open SQL Server Management Studio.
-3. Use these steps to get the connection details:
-    1. Go to the **Environment Details** page in **Lifecycle Services portal**.
-    2. Get the SQL Server, Database Name, and AXDBAdmin credentials from the **Database Accounts** section.
-4. In the **Connect to SQL Server** dialog box, complete the following steps:
-    1. Enter (ServerName).database.windows.net, where (ServerName) is the name of your database server obtained from LCS.
-    2. Select SQL Server Authentication for **Authentication**.
-    3. Use axdbadmin for **Login**.
-    4. Enter the password obtained from LCS for axdbadmin.
-    5. Select **Options**.
-    6. Enter the name of the database obtained from LCS in the **Connect to database** drop-down list.
-    7. Select **Connect**.
+To connect to the SQL database in your Sandbox environment, follow the steps in [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
 
 ### How do I access a development instance?
 For information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators, see [Deploy and access development environments](../dev-tools/access-instances.md).

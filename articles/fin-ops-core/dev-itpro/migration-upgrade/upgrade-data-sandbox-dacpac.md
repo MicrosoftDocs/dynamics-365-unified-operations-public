@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-
 description: This topic will help customers who no longer have Remote Desktop protocol (RDP) access to their Tier-2 through Tier-5 sandbox environments when they upgrade from Microsoft Dynamics AX 2012 to Finance and Operations apps.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/02/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -47,6 +47,9 @@ In this process guide, you will learn how to complete the following steps:
 > * Apply the data upgrade package from Microsoft Dynamics Lifecycle Services (LCS).
 > * Copy the database to production for mock go-live validation and actual go-live.
 
+## Before you get started
+Network latency is a critical component in data transfer. If your source SQL Server is geographically far away or has poor network latency to your sandbox Azure datacenter, then the process can take additional hours or potentially time out. Latency under 75 milliseconds is preferred. You can find your latency using a tool such as Azure Speed Test. If your latency is poor, you should consider backing up your AX 2012 database and restoring it on a cloud-hosted DevTest environment deployed to the same Azure datacenter as your target sandbox. After which you can perform the upgrade steps.
+
 ## Open firewall access to your sandbox environment database
 
 By default, all sandbox Standard Acceptance Test environments use Azure SQL Database as their database platform. The databases for these environments are protected by firewalls that restrict access to the Application Object Server (AOS) that they were originally deployed with.
@@ -72,9 +75,9 @@ Note that firewall rules are deleted whenever you do a database refresh or whene
 
 ### Microsoft-managed environments without RDP access
 
-If you no longer have RDP access to your sandbox, you can add your IP address to the allow list in a self-service manner from LCS. In LCS, open the environment details page for your sandbox environment, select **Maintain** > **Enable access**, and then, in the dialog box, add the IP address of your source environment. This entry will expire after several hours.
+Follow the process for [Enable just-in-time database access](../database/database-just-in-time-JIT-access.md) to allow-list your IP address to the database.
 
-Before the entry expires, connect to the sandbox database by entering the server, user name, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
+Before the allow-list entry expires, connect to the sandbox database by entering the server, user name, and password. On the **Options** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
 
 After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
 
@@ -91,21 +94,7 @@ Unfortunately, sandbox environments of the self-service type aren't supported fo
 
 ## Clear the sandbox database of all objects
 
-In this step, you will clean out the sandbox database that has a Finance and Operations schema. This process will provide a blank or empty database that you can bring your source AX 2012 schema from. Later, you will also be able to bring the data from it. If the data upgrade fails, you can always come back to this step and start over.
-
-Open SSMS, and connect to your sandbox database as you did in the previous step. Right-click the database name, and then select **Generate scripts**. On the **Introduction** page, select **Next**. On the **Choose Objects** page, select the **Select specific database objects** option, and then select the following check boxes:
-
-* Tables
-* Views
-* Stored procedures
-* User-defined functions
-* Schemas
-* Full text catalogs
-* User-defined table types
-
-On the **Set Scripting Options** page, select **Advanced**, and then change the **Script DROP and CREATE** value to **Script DROP**. Select **OK**, and then select the **Save to new query window** option. Select **Next** to move through the summary. The query window that appears contains a script that lists all the objects in the correct order so that the objects can be dropped from the database.
-
-When you're ready to continue, run the script in the query window that was generated directly against the AXDB database of your sandbox environment. This script takes an average of 15 to 20 minutes to run.
+In versions of the [Database movement toolkit](../database/database-movement-toolkit.md) prior to Version 5, this was an explicit step that customers had to take via SSMS on the target database. However, this is now incorporated into the toolkit in Version 5 and later, and is handled via the PowerShell scripts.
 
 ## Publish the schema from AX 2012 to the sandbox database
 
@@ -121,12 +110,26 @@ Use Windows PowerShell to change the directory to the folder location where you 
 
 ![Running the AX2012SchemaPublish.ps1 script](media/upgrade-dacpac-extract.png)
 
-During execution, the script uses SqlPackage.exe to extract only the database and schema definitions from your AX 2012 database as a 2012DBSource.dacpac file in the working directory. Next, it publishes this file to your sandbox environment by using the Profile.publish.xml publishing profile that is included in the Database movement toolkit. This publishing profile will skip several object types, such as SQL Views, SQL Users, Statistics, and other objects that aren't required for the upgrade.
+During execution, the script performs a cleanup on the source and target databases. For the source database, it removes any non-essential users and non-essential schemas. If there are errors, it will stop the script and those errors will need to be reviewed. The source for the script is available in the toolkit called **Step1_CleanupSourceDB.sql**. For the target database, it removes all objects in a more thorough manner than was previously documented via SSMS. Any errors will need to be reviewed, and would stop the script. The source for the target cleanup is available in the toolkit called **Step0_CleanupTargetDB.sql**.
+
+After cleanup, the toolkit uses SqlPackage.exe to extract only the database and schema definitions from your AX 2012 database as a 2012DBSource.dacpac file in the working directory. Next, it publishes this file to your sandbox environment by using the Profile.publish.xml publishing profile that is included in the Database movement toolkit. This publishing profile will skip several object types, such as SQL views, SQL users, statistics, and other objects that aren't required for the upgrade. If there are issues with the dacpac publish, you can find a detailed log in the working directory called **PublishDiag.log**.
 
 When the script has finished running, open SSMS, and verify that you can see the tables in the sandbox database. Also confirm that the tables are empty and have no data.
 
 > [!NOTE]
-> If you must start over because of an error, go back to the [Clear the sandbox database of all objects](#clear-the-sandbox-database-of-all-objects) step.
+> If you must start over because of an error, this script is designed to be run again as it will clean up both the source and target databases.
+
+### Populate legacy stored procedures 
+The data upgrade scripts require the legacy stored procedures and functions to be in place prior to running the upgrade. To transfer these scripts use SSMS.
+
+Open SSMS, and connect to your source AX 2012 database. Right-click the database name, and then select **Tasks > Generate scripts**. On the **Introduction** page, select **Next**. On the **Choose Objects** page, select the **Select specific database objects** option, and then select the following check boxes:
+
+* Stored procedures
+* User-defined functions
+
+On the **Set Scripting Options** page, select **Advanced**, and ensure the value is set to **Script DROP and CREATE**. Select **OK**, and then select **Save to new query window**. Select **Next** to move through the summary. The query window that appears contains a script that lists all the objects in the correct order so that the objects can be dropped from the database.
+
+Using the script that was generated, connect to your target database using SSMS, and execute the script. This will create the AX 2012 stored procedures and functions in the target spartan database.  
 
 ## Transfer data from AX 2012 to the sandbox database
 
@@ -147,7 +150,7 @@ Use Windows PowerShell to change the directory to the folder location where you 
 During execution, if a linked server between the source server and the sandbox server doesn't already exist, the script creates one. It then copies data from all the AX 2012 tables to the target database. It uses the **DegreeOfParallelism** parameter to process multiple tables at the same time.
 
 > [!NOTE]
-> If you must start over because of an error, go back to the [Clear the sandbox database of all objects](#clear-the-sandbox-database-of-all-objects) step.
+> If you must start over because of an error, go back to the [Publish the schema from AX 2012 to the sandbox database](#publish-the-schema-from-ax-2012-to-the-sandbox-database) step.
 
 ## Apply the data upgrade package from LCS
 
@@ -166,7 +169,7 @@ If the upgrade fails while an upgrade script is running, you can view the errors
 If you can fix the data, you can resume the upgrade from LCS. However, note that you can't resume from LCS more than eight times. Any attempt to resume more than eight times will cause another failure, because the servicing systems don't allow more attempts. In this case, you can use the **Abort** button to cancel the upgrade package and try again later.
 
 > [!NOTE]
-> If you must start over because of an error, go back to the [Clear the sandbox database of all objects](#clear-the-sandbox-database-of-all-objects) step.
+> If you must start over because of an error, go back to the [Publish the schema from AX 2012 to the sandbox database](#publish-the-schema-from-ax-2012-to-the-sandbox-database) step.
 
 ## Copy the database to production for mock go-live and actual go-live
 

@@ -17,7 +17,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Core
+# ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -317,7 +317,7 @@ The following list captures the portfolio of font families available for documen
 
 ## Supported fonts for application version 8.0 with Platform update 23
 
-|     | Font family            |
+|  Number   | Font family            |
 |-----|--------------------------|
 | 1   | Agency FB                |
 | 2   | Algerian                 |

@@ -5,7 +5,7 @@ title: Create deployable packages
 description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/09/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 0fa3c8e7-49e4-417d-afe9-fa2055f6546f
@@ -283,15 +283,14 @@ Some of the dependency packages and references have moved to NuGet packages to m
 3. In the next window, under **System variables**, select **Path** and click **Edit**.
 4. Add an entry for the folder where you would like to store the nuget.exe file or store the nuget.exe file in a folder that is already listed.
 
-## Generate a commerce deployable package
+## Generate a Retail deployable package
 
-To generate the commerce deployable package, open a command prompt windows for MSBuild. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
+To generate the Retail deployable package, open the MSBuild command prompt or Developer command prompt for Visual Studio 2017 (for SDK version lower than 10.0.11 use MSBuild command prompt or Developer command prompt for Visual Studio 2015). On the developer virtual machine, search for **msbuild** or **Developer command prompt for VS 2017** on the **Start** menu and navigate to the root of the SDK folder. Run the following command. MSBuild will find the dirs.proj file in the SDK root folder and build all the projects included in the dirs.proj (remove the sample projects include in the dirs.proj file). If you want to build your extension project, then update the dirs.proj file with your extension projects.
 
 ```Console
 msbuild /p:Configuration=Release
 ```
 
-You can also run the same command in the Microsoft Visual Studio 2015 developer command-line tool.
 
 ### Packages
 
@@ -312,3 +311,10 @@ After the build is completed, deployable packages are generated as a zip file (R
 For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).
 
 LCS has a 300 MB limitation on the package size. If the package size is greater than 300 MB, LCS will not allow deploy the package. To reduce the size and deploy to RCSU, remove any of the self-service exes (ModernPOSSetup, StoreSystemSetup, or HardwareStationSetup installers). Unzip the package and remove any of the self-service exes and zip the package again. The self-service packages are not deployed to Cloud Commerce scale unit. Sync the self-service package to AOS following the steps in [Synchronize self-service installers in Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).
+
+## Upload self-service installers to LCS and synchronize to Dynamics 365 Commerce
+
+After the Retail deployable package is generated, go to the RetailSDK\Packages\RetailDeployablePackage\content.folder\RetailSelfService\Packages folder and upload all the self-service installers found in that folder to **LCS project > Asset library > Retail Self-service package**. Synchronize the package to Dynamics 365 Commerce by navigating to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters** and select the **Channel deployment** tab and then select **Check for package updates** to perform synchronization.
+
+For detailed information, see [Synchronize self-service installers in Dynamics 365 Commerce doc](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).
+

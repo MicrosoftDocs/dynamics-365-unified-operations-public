@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce component versioning requirements
 description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
 manager: AnnBe
-ms.date: 10/02/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -70,12 +70,12 @@ The following table describes the current supported versions of various Commerce
 
 | Component | Latest available release (first release available in Sandbox) | Latest available component version number (first release available in Sandbox) | Earliest supported release | Earliest supported component version number |
 |---|---|---|---|---|
-| Finance and Operations apps | 10.0.14 | 10.0.14 | 10.0.9 | 10.0.9 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.14 | 9.24 | 10.0.9 | 9.19 |
-| Commerce module library | 10.0.14 | 9.24 | 10.0.9 | 9.19 |
-| Commerce Scale Unit (self-hosted) | 10.0.14 | 9.24 | 10.0.5 | 9.15 |
-| Modern POS | 10.0.14 | 9.24 | 10.0.5 | 9.15 |
-| Hardware Station | 10.0.14 | 9.24 | 10.0.5 | 9.15 |
+| Finance and Operations apps | 10.0.14 | 10.0.14 | 10.0.10 | 10.0.10 |
+| Commerce Scale Unit (cloud-hosted) | 10.0.14 | 9.24 | 10.0.10 | 9.20 |
+| Commerce module library | 10.0.14 | 9.24 | 10.0.10 | 9.20 |
+| Commerce Scale Unit (self-hosted) | 10.0.14 | 9.24 | 10.0.6 | 9.16 |
+| Modern POS | 10.0.14 | 9.24 | 10.0.6 | 9.16 |
+| Hardware Station | 10.0.14 | 9.24 | 10.0.6 | 9.16 |
 
 ## One Version requirements
 

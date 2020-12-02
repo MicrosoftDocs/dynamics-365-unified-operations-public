@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.14
 # Automated vendor invoicing processes overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the capability for automating your vendor invoice processing and the benefits of using an automated process. This capability consists of features that are turned on in Feature management. These features apply only to vendor invoices, not to invoices that are processed through the **Invoice journal** or **Invoice register journal** page.
 

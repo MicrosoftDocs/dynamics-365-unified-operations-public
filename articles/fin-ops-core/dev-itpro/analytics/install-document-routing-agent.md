@@ -18,7 +18,7 @@ ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
@@ -128,6 +128,13 @@ The Document Routing Agent now supports running in the background as a service. 
 ### Do I need to update credentials or refresh Azure authentication tokens on a recurring basis?
 
 Yes. The Azure Active Directory token must be refreshed every 90 days. Failing to do so will prevent the DRA from being able to authenticate and retrieve printing instructions applications.
+
+### Is the Document Routing Agent supported on Microsoft Windows Server 2019?
+
+Yes. The Document Routing Agent is supported on Microsoft Windows Server 2019.
+
+> [!NOTE]
+> If the server is configured to prevent background service, the Document Routing Agent client will not be able to run as a service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
 
 ### Will Microsoft add support for Microsoft Windows Server 2008 servers?
 

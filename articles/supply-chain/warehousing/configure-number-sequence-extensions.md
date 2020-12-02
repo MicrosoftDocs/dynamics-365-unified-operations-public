@@ -6,14 +6,14 @@ description: This topic provides an overview of the functionality that provides 
 author: GarmMSFT
 manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSNumberSequenceExtension
+ms.search.form: WHSNumberSequenceExt
 # ROBOTS:
 audience: Application User
 # ms.devlang:

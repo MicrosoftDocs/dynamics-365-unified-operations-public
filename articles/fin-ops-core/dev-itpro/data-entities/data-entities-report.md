@@ -3,7 +3,7 @@
 
 title: Find information about standard data entities
 description: This topic describes how to get information about the standard data entities that are available and how to download the scripts to run the reports.
-author: margoc
+author: robinarh
 manager: AnnBe
 ms.date: 09/18/2020
 ms.topic: article
@@ -18,13 +18,13 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202654
 ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -37,9 +37,11 @@ ms.dyn365.ops.version: Platform update 1
 The application ships with many default data entities. Data entities are frequently updated, so for documentation, we rely on the data entity templates to indicate which order data entities should be imported in, and on reports for a list of data entities that ship with each release.
 
 ## Configuration data packages
+
 Configuration data packages on Microsoft Dynamics Lifecycle Services (LCS) contain configuration entity spreadsheets. Configuration entity spreadsheets contain best practice data that you can use to create an initial golden build of an implementation. The data entities in the data packages are also sequenced appropriately using an XML file to help guarantee a successful single-click import of the data. We recommend that you download and review the configuration data packages to understand how we recommend that you order your data imports. For more information, see [Configuration data templates](configuration-data-templates.md) and [Copy configuration data between companies or legal entities overview](copy-configuration.md).
 
 ## Reports
+
 Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep):
 
 - Aggregate data entities: Lists the aggregate data entities, and the fields that each contains.
@@ -60,4 +62,5 @@ Microsoft provides the following reports for data entities, which can be downloa
 You can download the scripts to run these reports from [fin-ops-doc-scripts](https://github.com/microsoft/fin-ops-doc-scripts).
 
 ## Additional resources
+
 [Data entities overview](data-entities.md)

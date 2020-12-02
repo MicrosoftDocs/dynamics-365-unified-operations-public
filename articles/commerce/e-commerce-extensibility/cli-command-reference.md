@@ -5,7 +5,7 @@ title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -43,6 +43,29 @@ yarn msdyn365 {command} {command-arguments}
 ```
 
 For information about each command, see the entries in this topic, or use the **yarn --help** or **yarn msdyn365 {command} --help** command.
+
+
+## add-component-override
+
+**Usage**
+
+``` bash
+yarn msdyn365 add-component-override <themeName> <componentName> <--list-components>
+```
+
+This command adds a component to the specified theme component folder. The component can then be modified as desired from that folder.
+
+The **--list-components** option is used to show a list of components.
+
+**Examples**
+
+``` bash
+yarn msdyn365 add-component-override spring-theme add-to-cart.component
+```
+
+``` bash
+yarn msdyn365 add-component-override --list-components
+```
 
 ## add-data-action
 
@@ -195,6 +218,6 @@ yarn msdyn365 validate ./
 ```
 ## Additional resources
 
-[Architectural overview](architectural-overview.md)
+[E-commerce architectural overview](architectural-overview.md)
 
-[e-Commerce components](ecommerce-components.md)
+[E-commerce components](ecommerce-components.md)

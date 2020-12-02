@@ -21,7 +21,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author:  v-gonode
+ms.author:  kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---

@@ -5,7 +5,7 @@ title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm:
 ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
@@ -53,18 +53,27 @@ In case of failure, the option to perform a rollback is available.  By clicking 
 To determine the root cause of the failure, use the available buttons to download the runbook logs before you start the rollback operation.  
 
 ### Data elements that aren't copied during refresh
-When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment. These elements include:
+The information in this section lists certain elements of the database that are not copied over to the target environment during a database refresh operation.
+
+#### When refreshing a production environment to a sandbox environment or a sandbox to another sandbox environment
 
 * Email addresses in the LogisticsElectronicAddress table.
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 * SMTP Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
+* All users except the admin will be set to **Disabled** status.
+
+#### When refreshing from sandbox environment to production environment
+This is also referred to as [Golden configuration promotion](/dbmovement-scenario-goldenconfig.md).
+* Batch job history is stored in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
+
+#### These elements are removed for all database refresh operations
+
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
 * Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
-* All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
+* [Maintenance mode](../sysadmin/maintenance-mode.md) settings will be disabled even if it was enabled in source.
 
 Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 

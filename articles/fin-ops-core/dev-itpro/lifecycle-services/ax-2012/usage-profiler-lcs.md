@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
+# ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18751
 ms.assetid: ceeb6463-00d4-41f9-88c3-61791020a9f5

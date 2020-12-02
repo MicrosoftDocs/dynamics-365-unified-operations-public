@@ -2,7 +2,7 @@
 # required metadata
 title: Control module
 description: Controls are what make up the content of a page.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -13,8 +13,8 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
+ms.reviewer: rhaertle
+# ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -86,11 +86,11 @@ ControlMetadata <br>&nbsp;&nbsp;&nbsp;└─ [PageLinkMetadata](../interfaces/vi
 | [BoundField](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield) |BoundField: string (optional)  <br>|  |
 | [Description](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#description) |Description: string (optional)  <br>|Description of the control.<br>  |
 | [Editable](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable) |Editable: boolean (optional)  <br>|Boolean indicating if the control is editable.<br>  |
-| [ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|The extended control type. E.g. a control of type Input might have an extended type of Barcode.<br>  |
-| [HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) |HelpText: string (optional)  <br>|The keyboard shortcut for a command. E.g. "(Shift+F5)"<br>  |
+| [ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|The extended control type. For example, a control of type Input might have an extended type of Barcode.<br>  |
+| [HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) |HelpText: string (optional)  <br>|The keyboard shortcut for a command. For example, "(Shift+F5)"<br>  |
 | [Hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden) |Hidden: boolean (optional)  <br>|Boolean indicating if the control is hidden or not.<br>  |
 | [Id](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id) |Id: string (optional)  <br>|Identification string for a control.<br>  |
-| [Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) |Label: string (optional)  <br>|Label for a control. E.g. a control representing a person's first name might have a label "First Name".<br>  |
+| [Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) |Label: string (optional)  <br>|Label for a control. For example, a control representing a person's first name might have a label "First Name".<br>  |
 | [Name](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) |Name: string (optional)  <br>|Name of a control.<br>  |
 | [Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) |Order: number (optional)  <br>|Number indicating the order in which a control will appear on a page.<br>  |
 | [Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|String indicating the control type.<br>  |

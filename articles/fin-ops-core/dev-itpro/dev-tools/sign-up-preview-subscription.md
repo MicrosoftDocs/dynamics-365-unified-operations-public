@@ -42,6 +42,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
 - View resources in your subscription email.
 
 ## Key terms
+
 - **Microsoft Online Services tenant** – A tenant is the group of all subscriptions and users for your organization. The tenant is created at the same time as your first subscription in Microsoft Online Services.
 - **Subscription** – A subscription gives you an online cloud environment and experience. It also lets you see how customizations that you develop can be deployed to the cloud.
 - **Microsoft Azure Active Directory** – The cloud environment includes Azure AD. Azure AD helps you manage users, groups, security roles, and licenses for online applications, much as you manage them for on-premise environments.
@@ -57,11 +58,13 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
 - **Environments** – You can deploy as many single instances of a virtual machine (VM) as you require. We call these instances *environments*.
 
 ## Prerequisites
+
 1. You've received an email that invites you to participate in the preview.
 2. If your company has an organizational account with Microsoft Online Services, and you're signed in, you must sign out before you continue. Alternatively, you can use **InPrivate Browsing** mode.
 3. If you aren't sure whether you're signed in, delete your browser cookies, and then close your browser before you continue.
 
 ## Subscribe
+
 > [!IMPORTANT]
 > Only one person (tenant administrator) in an organization must perform this task. If you aren't the person who is subscribing to this release, wait until your organization has been signed up and you've received your user credentials. Then continue with the procedure.
 
@@ -72,6 +75,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
     [![You're ready to go](./media/wizardprompt.png)](./media/wizardprompt.png)
 
 ## Start a new project in LCS
+
 To use LCS to manage your environments, you must create a new project.
 
 1. Go to <https://lcs.dynamics.com/Logon/Index>.
@@ -91,6 +95,7 @@ To use LCS to manage your environments, you must create a new project.
     ![New project](./media/projectworkspace.jpg)
 
 ## Add users to LCS
+
 You're already set up as a user of your LCS project. If you've also added other Microsoft 365 users, you must add them to this project. Other administrators and developers will then be able to deploy their own environments. These LCS users are team members who will actively work on the implementation. Don't confuse them with end users. Start on the project page in LCS.
 
 1. Scroll to the right, and then, in the **More tools** section, select the **Project users** tile.
@@ -101,10 +106,11 @@ You're already set up as a user of your LCS project. If you've also added other 
 6. Repeat steps 2 through 5 for all users in your organization.
 
 ## Deploy environments
+
 Environments should be deployed to an existing Azure subscription.
 
 > [!NOTE]
-> Each developer of an environment must deploy his or her own system to Azure. However, only the first project user must set up the Azure subscription for deployment.
+> Each developer of an environment must deploy their own system to Azure. However, only the first project user must set up the Azure subscription for deployment.
 
 You can create environments in two ways:
 
@@ -128,7 +134,7 @@ Start on the project page in LCS.
 
     > [!NOTE]
     > Developers and administrators who will use their own environments must sign in and repeat these steps.
-    
+
     After you deploy your environment, it's available in the **Environments** section.
 
     [![New environment in the Environments section](./media/pic7.jpg)](./media/pic7.jpg)
@@ -137,6 +143,7 @@ Start on the project page in LCS.
 14. When the deployment status changes to **Deployed**, select **Login** to connect to the client, or select the name of the VM to connect to the development machine by using Remote Desktop. After the deployment is completed, you can find the base URL and the information that you require to connect to the environment via Remote Desktop.
 
 ## Use the features of LCS
+
 LCS is the starting point for performing online administrative activities. Here are some of these activities:
 
 - Deploy VMs on Azure.
@@ -144,15 +151,12 @@ LCS is the starting point for performing online administrative activities. Here 
 - Access downloads of tools and resources.
 
 ### Explore the LCS project
-1. Review the methodology, and complete the tasks and phases as you progress through the life cycle.
 
-    [![Phases and tasks](./media/pic8.jpg)](./media/pic8.jpg)[](./media/methodologyreview.png)
-    
-    The phases and task information lets you view tools and resources that are available throughout your enterprise resource planning (ERP) experience.
+1. Review the methodology, and complete the tasks and phases as you progress through the life cycle. The phases and task information lets you view tools and resources that are available throughout your enterprise resource planning (ERP) experience.
 
 2. Scroll to the right, and review the tiles.
 
-    [![Tiles](./media/pic9.jpg)](./media/pic9.jpg)
+    ![Tiles](./media/pic9.jpg)]
 
     The available tiles include various tools and services in LCS. They also include the following additional tiles:
 

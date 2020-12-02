@@ -5,7 +5,7 @@ title: Configure Common Data Service virtual entities
 description: This topic shows how to configure virtual entities for Dynamics 365 Human Resources. Generate and update existing virtual entities, and analyze generated and available entities. 
 author: andreabichsel
 manager: tfehr
-ms.date: 10/05/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Common Data Service virtual entities
 
-[!include [banner](includes/preview-feature.md)]
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dynamics 365 Human Resources is a virtual data source in Common Data Service. It provides full create, read, update, and delete (CRUD) operations from Common Data Service and Microsoft Power Platform. The data for virtual entities isn't stored in Common Data Service, but in the application database. 
 
@@ -54,11 +54,23 @@ Virtual entities for Human Resources aren't the same as the natural Common Data 
 
 ## Setup
 
-Follow these setup steps to enable virtual entities in your environment. 
+Follow these setup steps to enable virtual entities in your environment.
+
+### Enable virtual entities in Human Resources
+
+First, you must enable virtual entities in the **Feature management** workspace.
+
+1. In Human Resources, select **System administration**.
+
+2. Select the **Feature management** tile.
+
+3. Select **Virtual Entity support in HR/CDS**, and then select **Enable**.
+
+For more information about enabling and disabling features, see [Manage features](hr-admin-manage-features.md).
 
 ### Register the app in Microsoft Azure
 
-First, you need to register the app in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+You must register your Human Resources instance in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 1. Open the [Microsoft Azure portal](https://portal.azure.com).
 
@@ -125,16 +137,28 @@ The next step is to configure the virtual entity data source in the Power Apps e
 
 7. Select the **Microsoft HR Data Source** record.
 
-8. Enter the required information for the data source configuration.
+8. Enter the required information for the data source configuration:
 
-   - **Target URL**: The URL of your Human Resources namespace.
+   - **Target URL**: The URL of your Human Resources namespace. The format of the target URL is:
+     
+     https://\<hostname\>.hr.talent.dynamics.com/namespaces/\<namespaceID\>/
+
+     For example:
+     
+     `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c/`
+
+     >[!NOTE]
+     >Be sure to include the "**/**" character at the end of the URL to avoid receiving an error.
+
    - **Tenant ID**: The Azure Active Directory (Azure AD) tenant ID.
+
    - **AAD Application ID**: The application (client) ID created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+
    - **AAD Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-9. Select **Save & Close**.
-
    ![Microsoft HR Data Source](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+
+9. Select **Save & Close**.
 
 ### Grant app permissions in Human Resources
 
@@ -161,31 +185,32 @@ Grant permissions for the two Azure AD applications in Human Resources:
 
 When setup completes, you can select the virtual entities you want to generate and enable in your Common Data Service instance.
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In Human Resources, open the **Common Data Service (CDS) integration** page.
 
-2. In the **Environments** list, select the Power Apps environment associated with your Human Resources instance.
-
-3. Select the **Environment URL** in the **Details** section of the page.
-
-4. In the **Solution Health Hub**, select the **Advanced Find** icon in the top right of the page.
-
-5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Available HR Entities**.
-
-6. Use the filter options to find the entity or entities you want to enable.
-
-7. Select an entity from the list.
-
-8. On the entity page, change the **Has Been Generated** property to **Yes** for the entity.
-
-9. Save and close the entity page.
+2. Select the **Virtual entities** tab.
 
 > [!NOTE]
-> You can generate multiple virtual entities at once by using the **Change Multiple Records** page. Select multiple records on the page, and select **Edit** on the ribbon. You can then change the **Has Been Generated** property for all selected records.
+> The **Enable the virtual entity** toggle will be set to **Yes** automatically when all required setup has been completed. If the toggle is set to **No**, review the steps in previous sections of this document to ensure all prerequisite setup is completed.
 
-![Available HR Entities](./media/hr-admin-integration-virtual-entities-available.jpg)
+3. Select the entity or entities you want to generate in Common Data Service.
 
-> [!NOTE]
-> To streamline the process of generating virtual entities in future releases, the process will occur in a page in Human Resources.
+4. Select **Generate/refresh**.
+
+![Common Data Service Integraton](./media/hr-admin-integration-common-data-service-integration.jpg)
+
+## Check entity generation status
+
+Virtual entities are generated in Common Data Service through an asynchronous background process. Updates on the process display in the action center. Details on the process, including error logs, appear in the **Process automations** page.
+
+1. In Human Resources, open the **Process automations** page.
+
+2. Select the **Background processes** tab.
+
+3. Select **Virtual entity poll async operation background process**.
+
+4. Select **View most recent results**.
+
+The slideout pane displays the most recent execution results for the process. You can view the log for the process, including any errors returned from Common Data Service.
 
 ## See also
 

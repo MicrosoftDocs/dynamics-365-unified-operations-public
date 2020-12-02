@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 
@@ -45,7 +45,6 @@ This topic will help you plan and prepare for your on-premises deployment.
 The features in cloud deployments and on-premises deployments differ. These differences will affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)
 - [Comparison of cloud and on-premises features](../../fin-ops/get-started/cloud-prem-comparison.md)
-- [Features not implemented in on-premises deployments](../../fin-ops/get-started/features-not-implemented-on-prem.md)
 - [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
 
 ## How LCS is used with on-premises deployments

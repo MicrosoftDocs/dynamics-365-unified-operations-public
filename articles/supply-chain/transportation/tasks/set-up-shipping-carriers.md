@@ -12,7 +12,6 @@ ms.service: dynamics-ax-applications
 ms.technology:  
  
 # optional metadata 
- 
 ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 audience: Application User 
 # ms.devlang:  

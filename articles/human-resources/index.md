@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Welcome to Dynamics 365 Human Resources
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas, including:
 
 - Compensation

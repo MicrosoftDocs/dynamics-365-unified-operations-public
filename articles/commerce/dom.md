@@ -110,7 +110,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
         The following table explains the behavior when a combination of these parameters is defined.
 
-        |      | Fulfill partial orders | Fulfill partial lines | Fulfill order from one location only | Description |
+        | Combination number | Fulfill partial orders | Fulfill partial lines | Fulfill order from one location only | Description |
         |------|------------------------|-----------------------|--------------------------------------|-------------|
         | 1    | Yes                    | Yes                   | Yes                                  | A few lines of the order can be fulfilled, and individual lines can be partially fulfilled, but all the lines must be from the same location in an instance of the DOM run. (This combination isn't currently supported.) |
         | 2    | Yes                    | No                    | Yes                                  | A few lines of the order can be fulfilled, but individual lines can't be partially fulfilled, and all the fulfilled lines must be from the same location in an instance of the DOM run. (This combination isn't currently supported.) |

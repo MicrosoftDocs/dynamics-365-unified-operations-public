@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
+# ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17571
 ms.assetid: f98591d7-f3ba-416c-982b-350823f16dad
@@ -74,9 +74,12 @@ As the tool runs, the following information is displayed:
 -   The number of errors that have occurred
 
 After processing is completed, the tool writes the DPLog.xml log file to the current directory. To find errors, search for ‘failed’ in the log file.
+
 ### Syntax
 
-    DP.exe direction directory database server
+```dos
+DP.exe direction directory database server
+```
 
 All arguments are optional.
 
@@ -89,7 +92,9 @@ All arguments are optional.
 
   You can view a summary of the command-line options by using the following command.
 
-    DP.exe -?
+```dos
+DP.exe -?
+```
 
 ### Stop the tool
 

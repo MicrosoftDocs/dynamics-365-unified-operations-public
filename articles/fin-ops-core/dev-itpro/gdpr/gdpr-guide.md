@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
 ms.search.region: Global
@@ -159,9 +159,9 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 
 ## Responding to requests to view, correct, erase, object, or export personal data
 
-Suppose that a customer decides that he or she wants to understand what personal data of theirs is maintained by an organization. That customer approaches that organization and asks to exercise his or her DSR. When data subjects exercise their DSRs, controllers must address each of the following items specifically:
+Suppose that a customer decides that they want to understand what personal data of theirs is maintained by an organization. That customer approaches that organization and asks to exercise their DSR. When data subjects exercise their DSRs, controllers must address each of the following items specifically:
 
-+ Properly identify the person and role (is the person an employee, a customer, a vendor?) by using information that the data subject gave you as part of his or her request. This information might be a name, an employee ID or customer number, or another identifier.
++ Properly identify the person and role (is the person an employee, a customer, a vendor?) by using information that the data subject gave you as part of their request. This information might be a name, an employee ID or customer number, or another identifier.
 + Record the date and time of the request. (You have 30 days to complete the request.)
 + Affirm that the DSR request is proper and valid. You will need to work with your legal counsel to determine what is valid. For example, you must make sure that compliance with a DSR request doesn't conflict with any other legal obligations that you have.
 + Verify that you have the information that is related to the request.
@@ -186,7 +186,7 @@ An organization might decide to take any of the following actions in response to
 + Use search and filter features to find specific personal data and export that data by using the Microsoft Office Export functionality or print that information to a .pdf using browser extensions.
 + Use provided documentation to identify data tables that contain data that the controller has identified as personal data.
 + Author a custom form that locates and exports personal data.
-+ Author an external portal or website that allows an authenticated customer to see his or her personal data.
++ Author an external portal or website that allows an authenticated customer to see their personal data.
 
 The Person search report might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the Microsoft Dynamics Lifecycle Services (LCS) site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities, or extending the provided entities.
 
@@ -200,7 +200,7 @@ An organization might decide to take any of the following actions in response to
 + Extend the Person search report by authoring a new entity or extending an existing entity.
 + Use search and filter features to find specific personal data.
 + Author a custom form that locates personal data.
-+ Author an external portal or website that allows an authenticated customer to correct his or her personal data.
++ Author an external portal or website that allows an authenticated customer to correct their personal data.
 
 When data is located, use in-product features to correct the data where the product offers the ability to do so.
 
@@ -278,7 +278,7 @@ Roles that are associated with party records are referred to as party roles. The
 
 ### The right to view and port: It's all about the party
 
-When a data subject approaches the controller to request a copy of his or her personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
+When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
 
 Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 
@@ -293,7 +293,7 @@ An entity represents an instance of a specific role. The data management functio
 
 The Person search report provides additional capabilities in the **Data management** workspace that export entity data by providing a party ID that is used to identify **all** roles (and corresponding entities) that are associated with the party. This capability lets you export all entity and transaction data in a single action, for either a single party or a collection of parties.
 
-When a data subject approaches the controller to request a copy of his or her personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
+When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
 
 Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 

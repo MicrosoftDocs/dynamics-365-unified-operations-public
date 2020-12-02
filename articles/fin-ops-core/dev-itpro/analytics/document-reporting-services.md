@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 69191
 ms.assetid: 57aaba22-4068-4c3f-9428-7fcd99632295
@@ -42,7 +42,7 @@ Document Reporting Services are based on Microsoft SQL Server Reporting Services
 
 ### Service deployment – Local vs. cloud
 
-In a one-box environment, developers can create, modify, and preview reports, from end to end, by using Microsoft Visual Studio 2015. A separate process isn't required in order to add reports to the application's metadata store. Changes to reports are packaged together with other solution updates and then deployed to the cloud after development is completed in the local environment.
+In a one-box environment, developers can create, modify, and preview reports, from end to end, by using Microsoft Visual Studio. A separate process isn't required in order to add reports to the application's metadata store. Changes to reports are packaged together with other solution updates and then deployed to the cloud after development is completed in the local environment.
 
 ### Viewing reports 
 
@@ -74,7 +74,7 @@ The following table compares the service administration prerequisites for Micros
 </table>
 
 ## Developing application reports
-The process for developing a report in the current version is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio 2015. The following table describes how the application simplifies the basic procedure for adding an automatic design report that is based on a query.
+The process for developing a report in the current version is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio. The following table describes how the application simplifies the basic procedure for adding an automatic design report that is based on a query.
 
 <table>
 <thead>
