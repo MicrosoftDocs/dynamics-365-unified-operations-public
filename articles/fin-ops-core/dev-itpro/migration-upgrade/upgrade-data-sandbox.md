@@ -41,7 +41,7 @@ The output of this task is an upgraded database that you can use in a sandbox en
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 > [!NOTE]
-> It's very important that you install the latest version of SQLPackage before you start this process: [Download and Install SQLPackage](/sql/tools/sqlpackage-download). We recommend the .NET Core version and it can be saved and extracted to C:\temp location.
+> It's very important that you install the latest version of SQLPackage before you start this process. To do this, go to [Download and Install SQLPackage](/sql/tools/sqlpackage-download). We recommend that you use the .NET Core version. This can be saved and extracted to C:\temp.
 
 ## Overview of the sandbox data upgrade process
 Before you start to upgrade data in a sandbox environment, you will have already upgraded data in a development environment, as explained in [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md). The two processes are very similar. The main difference is that a sandbox environment uses Microsoft Azure SQL Database for data storage, whereas a development environment uses Microsoft SQL Server. This technical difference in the database layer requires that you  modify the data upgrade procedure slightly in a sandbox environment, because a backup from the AX 2012 database instance can't just be restored to SQL Database.
