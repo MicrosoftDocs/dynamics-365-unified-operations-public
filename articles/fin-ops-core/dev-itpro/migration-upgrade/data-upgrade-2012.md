@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Data upgrade in development environments
 description: This topic explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest Finance and Operations development environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,6 +78,14 @@ After the database is restored, stop the following services:
 - Data Import / Export service
 
 Next, rename the original AXDB database **AXDB_orig**. This database might be useful as reference later, when you develop code.
+```sql
+ALTER DATABASE AXDB SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+GO
+ALTER DATABASE AXDB MODIFY NAME = AXDB_Orig
+GO
+ALTER DATABASE AXDB_Orig SET MULTI_USER
+GO
+```
 
 Finally, rename the newly restored AX 2012 database **AXDB**.
 

@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,17 +82,7 @@ The values on the following pages are either environment-specific or encrypted i
 
 ## Create a copy of the source database
 
-Because you must delete database users before you can export the source SQL Server database, you should create a copy of that database. You can then work with the copy instead of modifying the original database. The following script backs up the default AxDB database and then restores it to the same instance under a new name. To use this script, first verify that the path D:\\backups exists.
-
-```sql
-BACKUP DATABASE [AxDB] TO DISK = N'D:\Backups\axdb_golden.bak' WITH NOFORMAT, NOINIT,
-NAME = N'AxDB_golden-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION, STATS = 10
-GO
-RESTORE DATABASE [AxDB_CopyForExport] FROM DISK = N'D:\Backups\axdb_golden.bak' WITH FILE = 1,
-MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_CopyForExport.mdf',
-MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForExport_Log.ldf',
-NOUNLOAD, STATS = 5
-```
+Back up the source database using SSMS. Right-click the source database, and select **Tasks > Backup option**.  After this is completed, right-click the **Databases** folder in the SSMS navigation window, and select **Restore database**.  Choose the backup that you just made, but give the target database a new name such as AXDB_CopyForExport.   
 
 ## Prepare the database
 
