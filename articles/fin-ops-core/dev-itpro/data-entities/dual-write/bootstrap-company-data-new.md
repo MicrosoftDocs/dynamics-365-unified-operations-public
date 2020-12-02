@@ -61,7 +61,7 @@ This document describes sample scenarios explaining how to use Azure Data Factor
 
 - Azure subscription: You must have **contributor access** to an existing Azure subscription. If you don\'t have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you begin.
 - Azure storage account: If you don\'t have a storage account, see [Create an Azure storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) for steps to create one.
-- Azure data factory: - Create an Azure Data Factory resource follow the steps to [create a Data factory](https://docs.microsoft.com/en-us/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
+- Azure data factory: - Create an Azure Data Factory resource follow the steps to [create a Data factory](https://docs.microsoft.com/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
 - Finance and Operations app: Use the data management framework to export the data in csv format. For more information, see [Data management overview](../data-entities-data-packages.md)). In this template, example is used for exporting customers using **CustCustomerV3Entity**.
 - Dynamics 365 Dataverse: Dataverse administrator user credentials to bootstrap the data.
 - Dual-Write: Dual-write solutions installed, and reference data is copied using the initial write.
