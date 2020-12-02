@@ -40,16 +40,15 @@ Cash flow forecasting is configured and calculated per legal entity. The results
 ## Why doesn’t the Power BI show all the cash flow data?
 There are a number of steps to complete for cash flow forecasts to display in Power BI views. Review the following checklist to ensure that each step has been completed:
 
-•	Cash flow is setup for each legal entity.
-•	General ledger parameters for System currency and System exchange rate type have been set.
-•	The ledger accounting currency and exchange rate type have been set.
-•	Exchange rates between transaction currency and accounting currency have been entered.
-•	Exchange rates between accounting currency and system currency have been entered.
-•	Exchange rates between accounting currency and each bank currency have been entered.
+- Cash flow is setup for each legal entity.
+- General ledger parameters for System currency and System exchange rate type have been set.
+- The ledger accounting currency and exchange rate type have been set.
+- Exchange rates between transaction currency and accounting currency have been entered.
+- Exchange rates between accounting currency and system currency have been entered.
+- Exchange rates between accounting currency and each bank currency have been entered.
 
 ## Why did cash flow PowerBI work on previous versions but is now blank?
-Verify that the “Cash flow measure V2” and “LedgerCovLiquidityMeasurement” measurements from the entity store have been configured. Look for content on the entity store. For more information, see [Power BI integration with entity store](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/finance/toc.json) 
-Verify that the steps necessary for viewing Power BI content have been completed. For more information, see [Cash overview Power BI content](Cash-Overview-Power-BI-content.md). 
+Verify that the “Cash flow measure V2” and “LedgerCovLiquidityMeasurement” measurements from the entity store have been configured. For more information working with data in the entity store, see [Power BI integration with entity store](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md) Verify that the steps necessary for viewing Power BI content have been completed. For more information, see [Cash overview Power BI content](Cash-Overview-Power-BI-content.md). 
 
 ## Have the entity store entities been refreshed? 
-It’s necessary to refresh your entities periodically to ensure that the data is current and accurate. Open System administration > Setup > Entity store to access the entity store. Select a specific entity to refresh and click the Refresh button. You can also set the Automatic refresh enabled option to Yes.
+It’s necessary to refresh your entities periodically to ensure that the data is current and accurate. Open Entity store page (**System administration > Setup > Entity store**) . Select a specific entity to refresh, and click the **Refresh** button. The data can also be refreshed automatically by setting the **Automatic refresh enabled** option to **Yes** on the **Entity store** page.
