@@ -5,7 +5,7 @@ title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -65,28 +65,4 @@ To turn maintenance mode on or off, follow these steps.
 
 Remote access is turned off for environments that were deployed by using the [self-service deployment](infrastructure-stack.md) experience. During implementation, if you must connect to the database on your Tier 2, Tier 3, Tier 4 or Tier 5 standard acceptance test environments for troubleshooting purposes, access will be granted as it's required. The access won't be persistent.
 
-To connect to a database, follow these steps.
-
-1. Request access to view the database credentials in LCS. On the environment details page, in the **Reason for access** field, select your reason for requesting access. In the **Details** field, enter any additional details. 
-2. Select **Request access**.
-
-    A request to create user-specific credentials is submitted. The request is automatically approved as soon as you submit it. It has an expiration time of eight hours. In a few minutes, you will be able to view the database credentials on the environment details page in LCS.
-
-    > [!NOTE]
-    > The database credentials are valid for eight hours. After eight hours, the credentials expire, and you must request access again.
-
-3. Refresh the environment details page to view the connection string and access details.
-
-    The access that is granted to you depends on the reason that you selected in the **Reason for access** field. For example, if you selected **AX troubleshooting** as the reason, read-only access to the AX database is granted. If you selected **Performance tuning** as the reason, write access to the AX database is granted.
-
-4. Before you can access Microsoft Azure SQL Database through LCS, the IP address of the computer where you will use Microsoft SQL Server Management Studio to connect to the SQL database must be added to the approved list (sometimes referred to as the "safe list").
-
-    To complete this step, you can add a new SQL Database firewall rule:
-
-    1. In LCS, on the environment details page, select **Maintain \> Enable access**.
-    2. Add a new rule. In the **Service** field, select **Azure SQL**.
-    3. Enter a name for the rule, enter the IP address of the computer, and then select **Confirm**.
-
-    This rule also has an expiration time of eight hours.
-
-5. On the computer that has been added to the approved list, open Management Studio, and use the connection details to connect to the required database.
+To connect to a database, follow the instructions in [Enable just-in-time access](../database/database-just-in-time-jit-access.md).
