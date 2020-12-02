@@ -5,7 +5,7 @@ title: Retail software development kit (SDK) samples
 description: This topic describes the samples that are included in the Retail SDK.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/19/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -217,7 +217,7 @@ At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** f
 
 7. On the Action Pane, select **Save** to save your changes.
 8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Receipt formats**.
-9. Select existing or create new Receipt format and then click the **Designer** on the Action Pane.
+9. Select an existing or create a new receipt format and then select **Designer** on the Action Pane.
 10. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
 11. After the designer is installed, you're asked for Azure Active Directory (Azure AD) credentials. Enter the information to start the designer.
 12. In the designer, drag and drop the Custom field from the left pane to the receipt designer.
@@ -248,7 +248,7 @@ To add the custom fields to the sales receipts or any receipt format, implement 
     }
     ```
 
-### Add the business logic for the custom fields.
+### Add the business logic for the custom fields
 
     ```C#
     private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransactionReceipts( GetSalesTransactionCustomReceiptFieldServiceRequest request)
@@ -271,12 +271,12 @@ To add the custom fields to the sales receipts or any receipt format, implement 
         return new GetCustomReceiptFieldServiceResponse(returnValue);
     }
     ```
-### Custom receipt type configuration in HQ:
+### Custom receipt type configuration in HQ
 
-1. Navigate to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Receipt formats**.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Receipt formats**.
 2. Create new Receipt format and then select the **Receipt type** and choose one of the CustomReceiptType(1...20).
 3. Save the changes.
-4. Click the **Designer** on the Action Pane.
+4. Select **Designer** on the Action Pane.
 5. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
 6. After the designer is installed, you're asked for Azure Active Directory (Azure AD) credentials. Enter the information to start the designer.
 7. In the designer, drag and drop the required receipt fields from the left pane to the receipt designer.
@@ -284,7 +284,7 @@ To add the custom fields to the sales receipts or any receipt format, implement 
 9. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 10. Select the **Channel configuration** (**1070**) job, and then select **Run now**.
 
-### Sample code to implement Custom receipt type:
+### Sample code to implement Custom receipt type
 
 To add logic for the new receipt type, implement **GetCustomReceiptsRequest** in CRT.
 
