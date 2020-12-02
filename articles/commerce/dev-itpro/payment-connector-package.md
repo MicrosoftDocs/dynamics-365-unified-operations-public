@@ -5,7 +5,7 @@ title: Create payment packaging for Application Explorer for self-service deploy
 description: This topic explains how to package a payment connector for Application Explorer for self-service deployment in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -63,9 +63,7 @@ To create a payment package that you can deploy through self-service, follow the
 
     ![Add Reference dialog box](./media/Reference.png)
 
-8. If your extension need any HTML and CSS file for the implementation then add them as Resource file to your project. During deployment The HTML files will be copied to AosService\WebRoot\Resources\Html folder and CSS files will be copied to AosService\WebRoot\Resources\Styles folder and it can accessed with the below URL format:
-
-Ex:
+8. If your extension needs an HTML and CSS file for the implementation, then add them as a resource file to your project. During deployment, the HTML files will be copied to the AosService\WebRoot\Resources\Html folder. The CSS files will be copied to the AosService\WebRoot\Resources\Styles folde, then accessed with the following URL format.
 
 ```
 https://AOSUrl/resources/html/Myhtml.html
