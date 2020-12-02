@@ -65,7 +65,7 @@ The toolkit currently supports the following scenarios. More will be added over 
 ### Version 3
 | Feature | Details |
 | :------ | :------ |
-| Schema publish | Fixed the scripts to output errors in PublishDiag.log file.|
+| Schema publish | Fixed the scripts to output errors in PublishDiag.log.|
 
 ### Version 2
 | Feature | Details |
