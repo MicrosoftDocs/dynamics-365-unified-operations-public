@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Design the content of the production floor execution interface
+title: Design the production floor execution interface
 description: This topic describes how to design the content of the user interface for each configuration.
 author: johanhoffmann
 manager: tfehr
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
 ---
 
-# Design the content of the production floor execution interface
+# Design the production floor execution interface
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
