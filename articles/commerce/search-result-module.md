@@ -5,7 +5,7 @@ title: Search results module
 description: This topic covers search results module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 11/16/2020
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -66,7 +66,7 @@ The following image shows an example of a search results page on the Fabrikam si
 To add a search results module to a category page, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
-1. In the **New template** dialog box, enter name as **Search results**, and then select **OK**.
+1. In the **New template** dialog box, enter the name "Search results", and then select **OK**.
 1. In the **Body** slot, select the ellipsis (...), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
 1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add Module**.
@@ -79,7 +79,7 @@ To add a search results module to a category page, follow these steps.
 1. In the **Search results** properties pane, enter the value "1" for **Min Occurs**, and then set any other required search results module properties. Configuring these properties in the template ensures that any customizations to a specific category page will automatically include these settings. 
 1. Select **Finish editing**, and then select **Publish** to publish the template.
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select the **Search results** template you created, enter **Category page** for the **Page name**, and then select **OK**. Since all the values are set in the template, the page is ready to publish. 
+1. In the **Choose a template** dialog box, select the **Search results** template you created, enter "Category page" for the **Page name**, and then select **OK**. Since all the values are set in the template, the page is ready to publish. 
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
