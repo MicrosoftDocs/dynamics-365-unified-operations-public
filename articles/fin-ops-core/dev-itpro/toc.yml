@@ -770,6 +770,8 @@
               href: dev-ref/xpp-data/xpp-data-perf.md
             - name: Data access using the SysDa API
               href: dev-ref/sysda.md
+            - name: Mitigate a SQL injection attack
+              href: dev-ref/query-with-parameters.md
           - name: X++ macros
             href: dev-ref/xpp-macros.md
           - name: X++ attribute classes
