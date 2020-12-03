@@ -2,7 +2,7 @@
 # required metadata 
  
 title: MX-00006 Set up sales tax code
-description: Legal financial documents such as tax declarations or electronic invoices submitted to the tax authorities in Mexico must contain different types of tax registration IDs and other related information. 
+description: Legal financial documents such as tax declarations or electronic invoices that are submitted to the tax authorities in Mexico must contain different types of tax registration IDs and other related information. 
 author: sndray
 manager: AnnBe 
 ms.date: 08/29/2018
