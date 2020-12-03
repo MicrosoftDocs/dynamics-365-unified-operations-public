@@ -119,7 +119,7 @@ Sales invoices are created in Supply Chain Management and synced to Sales. Note 
 
 ## Templates
 
-Prospect-to-cash includes a collection of core entity maps that work together during data interaction, as shown in the following table.
+Prospect-to-cash includes a collection of core table maps that work together during data interaction, as shown in the following table.
 
 | Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
 |-----------------------------|-----------------------------------|-------------|
@@ -131,7 +131,7 @@ Prospect-to-cash includes a collection of core entity maps that work together du
 | CDS sales quotation header  | quotes                            |             |
 | CDS sales quotation lines   | quotedetails                      |             |
 
-Here are the related core entity maps for prospect-to-cash:
+Here are the related core table maps for prospect-to-cash:
 
 + [Customers V3 to accounts](customer-mapping.md#customers-v3-to-accounts)
 + [CDS Contacts V2 to contacts](customer-mapping.md#cds-contacts-v2-to-contacts)

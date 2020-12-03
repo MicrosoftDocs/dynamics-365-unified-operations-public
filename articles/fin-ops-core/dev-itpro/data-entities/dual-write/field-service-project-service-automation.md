@@ -41,10 +41,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Support for Field Service solutions
 
-Microsoft supports dual-write on top of existing Common Data Service environments that are based on Field Service solutions.
+Microsoft supports dual-write on top of existing Dataverse environments that are based on Field Service solutions.
 
 For more information, see [Integrate Dynamics 365 Field Service and Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## Support for Project Service Automation solutions
 
-Microsoft supports dual-write on top of existing Common Data Service environments that are based on Project Service Automation solutions.
+Microsoft supports dual-write on top of existing Dataverse environments that are based on Project Service Automation solutions.
