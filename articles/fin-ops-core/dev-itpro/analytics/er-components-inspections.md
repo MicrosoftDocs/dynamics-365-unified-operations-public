@@ -308,7 +308,7 @@ The following steps show how this issue might occur.
 
     ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-03.gif)
 
-8. Notice that a validation error occurs. The message states that the path of the **Y** data source isn't found while that data source is used in the binding of the **X** data model field.
+8. Notice that a validation error occurs. The message states that the binding of the **X** data model field contains the path that refers to the **Y** data source, but this data source isn't found.
 
 ### Automatic resolution
 
@@ -615,7 +615,7 @@ If you want to explicitly specify the data that is entered in a generated docume
 
 ### <a id="i9a"></a>Additional consideration
 
-The inspection also warns you about another potential issue. By default, as you bind the **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format elements to the appropriate fields of the **model.Vendor** data source of the **Record list** type, those bindings will be run and will take the values of the appropriate fields of the first records of the **model.Vendor** data source, if that list isn't empty.
+The inspection also warns you about another potential issue. By default, as you bind the **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format elements to the appropriate fields of the **model.Vendor** data source of the **Record list** type, those bindings will be run and will take the values of the appropriate fields of the first record of the **model.Vendor** data source, if that list isn't empty.
 
 Because you haven't bound the **Statement\\Party** format element with the **model.Vendor** data source, the **Statement\\Party** element won't be iterated for every record of the **model.Vendor** data source during format execution. Instead, a generated document will be filled with information from only the first record of the record list, if that list contains multiple records. Therefore, there might be an issue if the format is intended to fill a generated document with information about all vendors from the **model.Vendor** data source. To fix this issue, bind the **Statement\\Party** element with the **model.Vendor** data source.
 
