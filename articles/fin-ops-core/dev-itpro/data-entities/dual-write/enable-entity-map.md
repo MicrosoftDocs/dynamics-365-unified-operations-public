@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 When you enable an table map for dual-write, it begins at the **Not running** status. The table map then goes through an initialization phase, where it does an initial write by copying pre-existing data on tables on both sides. Finally, when the entity is completely enabled, the table map sets the status to **Running**.
 
 ![Enabling table maps](media/enabling-entity-map.png)
@@ -63,7 +61,7 @@ Entities have several dependent tables. For example, Customer-Contact tables hav
 
 Because these are relational apps that have relational data, if you don't enable the dependent tables, you might encounter errors later. To help prevent these errors, before you enable an table map, you're provided with a list of the related tables that we recommend that you enable.
 
-## Example: Enabling the Customers V3—Contacts table map
+## <a id="enable-table-map"></a>Example: Enabling the Customers V3—Contacts table map
 
 When you select an table map (for example, **Customers V3—Contacts**) and select **Run**, a dialog box appears before the table map is enabled. This dialog box lists all the dependent tables. You can select the **Show related table map(s)** option to show all the related table maps. To enable the selected table map and all its related tables, select **Run** in the dialog box.
 
@@ -78,7 +76,7 @@ After you've finished making your selections in the dialog box, and you select *
 
 ![Skipping initial writes](media/skip-initial-writes.png)
 
-## Criteria for linking tables
+## <a id="criteria-for-linking"></a>Criteria for linking tables
 
 To enable table maps for dual-write, you must define an alternative key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app.
 

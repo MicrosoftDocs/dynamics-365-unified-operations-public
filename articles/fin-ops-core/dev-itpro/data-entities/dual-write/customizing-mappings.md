@@ -114,7 +114,7 @@ The following example shows how to add a new table map that is named **Address b
     ![Adding a new table map](media/add-new-entity-map.png)
 
     > [!NOTE]
-    > When you [create a new solution](app-lifecycle-management.md#create-a-new-dual-write-solution-and-add-your-components-customized-entity-maps) that uses these modified table maps, you must specify the same publisher.
+    > When you [create a new solution](app-lifecycle-management.md#create-new-solution) that uses these modified table maps, you must specify the same publisher.
 
 2. Confirm the table maps that you just modified and added. Be sure to enable and test them, to ensure that they work as you expect.
 

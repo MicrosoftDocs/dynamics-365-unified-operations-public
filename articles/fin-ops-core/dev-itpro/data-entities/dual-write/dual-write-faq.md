@@ -81,7 +81,7 @@ It's important that keys be matched between the Finance and Operations environme
 
 ### How do I move table maps between environments? Is version control supported for table maps?
 
-You can export maps and then import them into a different environment. You can automate the process by using Azure DevOps. You can have version control on your dual-write mappings, because the mappings are solution-aware components. For more information, see [Update table maps and export them to other environments as a solution](app-lifecycle-management.md#update-entity-maps-and-export-them-to-other-environments-as-a-solution).
+You can export maps and then import them into a different environment. You can automate the process by using Azure DevOps. You can have version control on your dual-write mappings, because the mappings are solution-aware components. For more information, see [Update table maps and export them to other environments as a solution](app-lifecycle-management.md#update-table-maps).
 
 ### Where can I find examples and patterns for filtering dual-write maps?
 
@@ -105,10 +105,10 @@ Each linked environment-pair (Finance and Operations apps environment and Datave
 
 + Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
 + Dataverse tables: **DualwriteRuntimeConfiguration**. 
-    
+
 The environments need to be relinked and maps reactivated manually.
 
-### I need real-time integration, and I want to move some tables or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern? 
+### I need real-time integration, and I want to move some tables or scenarios from Data integrator to dual-write. How do I migrate, and what are the implications of changing my integration pattern?
 
 For information about how to migrate Prospect to cash to dual-write, see [Migrating data from Data Integrator to Dual Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/433337729024). In general, three things might change during migration:
 
@@ -143,7 +143,7 @@ Dual-write supports mappings only between cross-company tables or company-specif
 
 You can make Dataverse custom tables company-specific by adding a many-to-one (N:1) relationship between your custom tables and the out-of-box company entity. You should also include the company foreign key as part of the entity key. For more information, see [Company concept in Dataverse](company-data.md).
 
-To enable table maps for dual-write, you must define an alternate key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app. For more information, see [Criteria for linking tables](enable-entity-map.md#criteria-for-linking-entities).
+To enable table maps for dual-write, you must define an alternate key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app. For more information, see [Criteria for linking tables](enable-entity-map.md#criteria-for-linking).
 
 ### Is there a document about best practices for entity usage? Should I use Customers V2, Customers V3, or Customer Details? What is the difference between these tables, and what is the use case for each?
 

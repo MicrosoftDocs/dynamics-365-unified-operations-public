@@ -61,7 +61,7 @@ After you install the package deployer tool, install the solution package by fol
 
     ![Content of the Tools folder](media/paste_copied_files.png)
 
-## Enable and view the plug-in trace log in Dataverse to view error details
+## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 
 **Required role to turn on the trace log and view errors:** System admin
 

@@ -56,7 +56,7 @@ The dual-write core solution contains metadata for your table maps and must be i
 
     ![Importing the dual-write core solution](media/import-solution.png)
 
-## Install the dual-write table maps solution
+## <a id="install-table-maps"></a>Install the dual-write table maps solution
 
 1. In Power Apps, in the left pane, select **Solutions**.
 2. Select **Open AppSource**, and search for the solution that is named **Dataverse Add-in for Finance and Operations package**.
@@ -72,7 +72,7 @@ You've now successfully imported and applied a Microsoft-published dual-write ta
 This section explains how to import table maps from AppSource and apply them to your environment.
 
 ![Importing and applying table maps](media/import-apply-entity-maps.png)
-    
+
 1. Import the dual-write core solution.
 
     1. Create a new dual-write environment (a Finance and Operations app environment and a Dataverse environment).
@@ -81,14 +81,14 @@ This section explains how to import table maps from AppSource and apply them to 
 
 2. Import the Microsoft-published or ISV-published table maps solution.
 
-    1. Follow the instructions in the [Install the dual-write table maps solution](#install-the-dual-write-entity-maps-solution) section to download and install the Microsoft-published or ISV-published table maps from AppSource in Power Apps.
+    1. Follow the instructions in the [Install the dual-write table maps solution](#install-table-maps) section to download and install the Microsoft-published or ISV-published table maps from AppSource in Power Apps.
     2. Verify that the table maps solution is listed under **Solutions** in Power Apps.
 
 3. Apply the dual-write table maps solution to your Finance and Operations app environment.
 
-    Apply the solution that you downloaded by selecting **Apply Solutions** on the **Dual-write** page in the Finance and Operations app, as described in the [Install the dual-write table maps solution](#install-the-dual-write-entity-maps-solution) section.
+    Apply the solution that you downloaded by selecting **Apply Solutions** on the **Dual-write** page in the Finance and Operations app, as described in the [Install the dual-write table maps solution](#install-table-maps) section.
 
-## Update table maps and export them to other environments as a solution
+## <a id="update-table-maps"></a>Update table maps and export them to other environments as a solution
 
 This section explains how to export your customized table maps as a solution, use it as a backup, and move the artifacts across environments and/or publish them to AppSource.
 
@@ -105,7 +105,7 @@ The first step is to customize your table maps by modifying existing table maps 
     ![Adding a new birthday field](media/add-new-birthday-field.png)
 
     > [!NOTE]
-    > When you [create a new solution](#create-a-new-dual-write-solution-and-add-your-components-customized-entity-maps) by using these modified table maps, you must specify the same publisher.
+    > When you [create a new solution](#create-new-solution) by using these modified table maps, you must specify the same publisher.
 
     The following figure shows how to add a new table map that is named **Address books**.
 
@@ -115,7 +115,7 @@ The first step is to customize your table maps by modifying existing table maps 
 
     ![Confirmation of new table maps](media/confirm-new-entity-maps.png)
 
-### Create a new dual-write solution and add your components (Customized table maps)
+### <a id="create-new-solution"></a>Create a new dual-write solution and add your components (Customized table maps)
 
 Now that you've customized your mappings and added new mappings, the next step is to create a new dual-write solution and add the table maps to it.
 
@@ -153,7 +153,7 @@ After you run the solution checker and make sure that there are no issues, you e
     The solution, together with all its components, is exported to a zip file.
 
     ![Solution exported to a zip file](media/components-to-zip.png)
-    
+
 You've now customized your tables, added them to a new solution, and created a solution file that can be imported and applied to other environments. (This capability can be useful if you want to move table maps between test and production environments.) In a similar way, you can create a backup of all your table maps by adding them to a solution and exporting the solution as a package. That package can then be imported into to any environment to restore the table maps.
 
 For information about how to publish the package to AppSource, see [Publish your app on AppSource](https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource).
