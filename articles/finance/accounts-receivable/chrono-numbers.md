@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Chronological invoice and voucher numbers
-description: This topic explains how to set up and use chronological numbers for invoices and vouchers.  
+title: Chronological numbering of documents and voucher
+description: This topic explains how to set up and use chronological numbers for applicable documents and releted vouchers.  
 author: Ilya Kondratenko
 manager: AnnBe
 ms.date: 11/20/2020
@@ -29,19 +29,19 @@ ms.dyn365.ops.version: 10.0.17
 
 ---
 
-# Chronological invoice and voucher numbers
+# Chronological numbering of documents and vouchers
 
 [!include [banner](../includes/banner.md)]
 
-In some countries, there is a legal requirement that invoices and related vouchers that are issued be numbered in chronological order. The chronology must be supported by fiscal periods. All the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
-This article explains how to configure and use chronological numbers for required documents.  
+In some countries, there is a legal requirement that some documents and related vouchers that are issued be numbered in chronological order. The chronology must be supported by periods. All the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
+This article explains how to configure and use chronological numbers for applicable documents and releted vouchers.
 
 ## Prerequisites
 
 | Category            | Prerequisite                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Feature activation  | In the Feature management workspace, turn on the **Chronological numbering** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).                                                                                                                                                              |
-| Related setup tasks | On the **Number sequences** page, define as many number sequences as you require to cover the affected fiscal periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.  |
+| Related setup tasks | On the **Number sequences** page, define as many number sequences as you require to cover the affected periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.  |
 
 ## Configure chronological numbering
 
