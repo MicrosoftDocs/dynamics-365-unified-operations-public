@@ -67,11 +67,6 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
-| 517364 | Benefit Self service Recently created beneficiaries do not appear in the designees table | |
-| 525958 | Multiple entries exist for table with the same name on Reference Type lookup | |
-| 508461 | Incorrect forecast balance when carry-forward feature is enabled | |
-| 509982 | Balance expiration batch job doesn't bring balance to 0 | |
-| 485085 | Add more fields to BenefitPlanEmployeeDesigneeEntity | |
 | 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing | |
 | 526903 | Benefit Enrollment fails for plans with dependents when Auto-select designees is turned on in HR shared parameters | |
 | 513558 | Leave forms emits compiler warnings with BPErrorFormDesignPatternUnspecified | |
@@ -83,16 +78,15 @@ The following bug fixes are included in this release.
 | 512275 | Remove the color options from leave and absence parameters | |
 | 437112 | Misleading error message text during employee position assignment | |
 | 527816 | Performance issues on EssLeaveRequestCalendar form | |
+| 502096 | Estimated Start Date automatically decrements on recruiting request | |
+| 505338 | Recruiting request entity cannot set CompensationLevelId | |
+| 507975 | Recruiting request location labels are incorrect, display as 'Location', which conflicts with other concepts | |
 | 523158 | BenefitPeriodMigrationUpgrade and BenefitPlanMigrationUpgrade not executing | |
 | 523178 | Platform flighting not working correctly for FeatureManagement and in Dev/Int environments | |
 
 ## In preview
 
 The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
-
-| Feature | Release plan | Documentation |
-| --- | --- | --- | --- |
-| Feature name or short description | Release plan title and link | Doc title and link |
 
 ## Coming soon
 
