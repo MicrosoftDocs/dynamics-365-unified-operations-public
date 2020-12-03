@@ -40,10 +40,7 @@ This article explains how to configure and use chronological numbers for applica
 
 ## Prerequisites
 
-| Category            | Prerequisite                                                                                                                                                                                                                                                                                                                                                                                   |
-|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Feature activation  | In the Feature management workspace, turn on the **Chronological numbering** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).                                                                                                                                                              |
-| Related setup tasks | On the **Number sequences** page, define as many number sequences as you require to cover the affected periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.  |
+In the Feature management workspace, turn on the **Chronological numbering** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure chronological numbering
 
@@ -74,6 +71,11 @@ Chronological numbering affects the following documents:
 - Invoice voucher
 - Credit note
 - Credit note voucher 
+
+### Define number sequences
+On the **Number sequences** page, define as many number sequences as you require to cover the affected periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.
+
+![Number sequence setup](media/chrono-num-sequence.jpg)
 
 ### Define number sequence groups
 
