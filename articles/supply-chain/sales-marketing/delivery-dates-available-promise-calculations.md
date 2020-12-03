@@ -44,7 +44,10 @@ Order promising calculates the earliest ship and receipt dates, and is based on 
 -   **CTP (capable-to-promise)** – Availability is calculated through explosion.
 
 > [!NOTE]
-> If a sales order is updated, then the Order promising information is only updated in case the existing order promising date can't be fulfilled. Example 1: Existing date is July 20 and due to increased quantity new order promising date is July 25, in this case order promising is triggered. Example 2: Existing date is July 20 and due to decreased quantity it is possible to deliver on July 15, in this case order promising is not triggered and July 20 remains unchanged. 
+> When a sales order is updated, the order promising information is only updated if the existing order promising date can't be fulfilled, as illustrated in the following examples:
+> 
+> - **Example 1**: The current order promising date is July 20, but due to increased quantity, the date must be moved back to July 25. Because the current date can no longer be met, order promising is triggered.
+> -  **Example 2**: The current order promising date is July 20, but due to decreased quantity, it is now possible to deliver on July 15. However, because the current date can still be fulfilled, order promising is not triggered, and July 20 remains the order promising date.
 
 ## ATP calculations
 The ATP quantity is calculated by using the “cumulative ATP with look-ahead” method. The main advantage of this ATP calculation method is that it can handle cases where the sum of issues among receipts is more than the latest receipt (for example, when a quantity from an earlier receipt must be used to meet a requirement). The “cumulative ATP with look-ahead” calculation method includes all issues until the cumulative quantity to receive exceeds the cumulative quantity to issue. Therefore, this ATP calculation method evaluates whether some of the quantity from an earlier period can be used in a later period.  
