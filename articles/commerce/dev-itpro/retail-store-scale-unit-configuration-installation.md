@@ -55,6 +55,7 @@ This topic explains how you can use self-service to configure a Commerce Scale U
 To create a functioning Commerce Scale Unit, complete the procedures in all sections of this topic until the "Multiple-computer installation" section. To complete the configuration and installation, you must first do the initial configuration in Headquarters. Next, you must complete the installation. Finally, you must return to Headquarters to finish the configuration, so that Commerce Scale Unit works correctly.
 
 > [!IMPORTANT]
+> Channel functionality, in an on-premises environment, is enabled exclusively via use of Commerce Scale Unit (self-hosted). For an overview, see Commerce Scale Unit (self-hosted). Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of channel components via Lifecycle Services (LCS). The only way to use channel components is by installing Commerce Scale Unit (self-hosted).
 > For on-premises deployments, perform the following steps:
 >   1. Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Channel database group**.
 >   2. On the Action pane, select **New**.
