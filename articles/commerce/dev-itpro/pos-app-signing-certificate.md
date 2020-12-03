@@ -5,7 +5,7 @@ title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/12/2020
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -98,34 +98,33 @@ Contact your certifying authority (CA) for the certificate renewal process. For 
 
 ### Renew a self-signed certificate
 
-Don’t use the sample certificate available in the Retail SDK for production. It can be used only for development purposes. The sample Contoso certificate can't be renewed and the sample certificate included in Retail SDK version 10.0.16 or before will expire at the end of the year 2020 (12/31/2020). If this certificate, or a self-signed certificate, has been used to sign a customized Modern POS, there is a strong possibility that Modern POS will not function properly after this expiration date.
+Don’t use the sample certificate available in the Retail SDK for production. It can be used only for development purposes. The sample Contoso certificate can't be renewed and the sample certificate included in Retail SDK version 10.0.16 or earlier will expire on December 31, 2020. If this certificate, or a self-signed certificate, has been used to sign a customized Modern POS, there is a strong possibility that Modern POS will not function properly after this  date.
  
-### Impact:
+### Impact
  
-If the above is true for you, the issue you will be encountering is that the installer will not be able to run after 12/31/2020. Depending upon the corporate IT policies used, Modern POS may not be able to function at all. It is critical to test, by changing the date temporarily (To a future date), and determine the impact to your organization.  
+If the above is true for you, the issue you will be encountering is that the installer will not be able to run after December 31, 2020. Depending on the corporate IT policies used, Modern POS may not be able to function. It is critical that you test this by changing the date temporarily to a future date, to determine the impact to your organization.
  
-### Steps to determine the issue:
+### Steps to determine the issue
  
 1.	Use Windows settings to change the computer clock to a date and time in the year 2021.
-2.	Verify that Modern POS can be opened, login can occur, and a transaction can be accomplished.
+2.	Verify that Modern POS can be opened, sign in can occur, and a transaction can be completed.
 3.	Verify that Modern POS Self-service installer is able to be run, and if so, that installation will complete successfully.
 4.	Return the Windows clock settings to the correct date and time.
  
-If you can complete all of these steps without issues, then you will be able to operate on the current certificate past 12/31/2020.  
+If you can complete all of these steps without issues, then you will be able to operate on the current certificate past December 31, 2020.  
  
- 
-### Steps going forward:  
+### Steps going forward 
 
-It is highly recommended to renew the previously used certificate.  We strongly advise that you obtain a new certificate – to do so please refer to the following three possibilities:- 
+It is highly recommended that you renew the previously used certificate. We strongly recommend that you obtain a new certificate. To do this, you must perform one of the following actions:
  
-•	**Preferred** - Obtain a code signing certificate from a trusted certificate authority.
+- **Preferred** - Obtain a code signing certificate from a trusted certificate authority.
 
-•	**Preferred** - Generate a self-signed code signing certificate to use (This typically is used when within a domain).
+- **Preferred** - Generate a self-signed code signing certificate to use. This is typically used when within a domain.
 
-•	**Available as a temporary Solution** - Use the renewed Contoso code signing certificate (This typically is for testing purposes and we recommend it not be deployed in production).
+- **Available as a temporary Solution** - Use the renewed Contoso code signing certificate. This is typically used for testing purposes, so it's not recommended that it be deployed in production.
  
-Next, generate a new customized Modern POS package that is signed using this certificate obtained from above.  Depending on the certificate, one of the following steps must be followed:
+Next, generate a new customized Modern POS package that is signed using this certificate obtained from one of the actions above. Depending on the certificate, one of the following steps must be followed:
  
-- If using a new, trusted certificate (Or a new, self-signed certificate) then it will be required to place the new certificate on every device, take the newly created Modern POS Package (installer) – uninstall the existing application, reinstall the new Modern POS Package, and perform a Device activation of Modern POS on every terminal.
+- If using a new, trusted certificate (or a new, self-signed certificate), you will be  required to install a new certificate on every device. After that, you need to take the newly created Modern POS Package (installer), uninstall the existing application, and then reinstall the new Modern POS package. You will need to perform a device activation of Modern POS on every device.
 
-- If using the renewed Contoso certificate, then you will be required to place the new certificate on every device, take the Modern POS Package (installer) – You are not required to uninstall – you must however reinstall on the Device, please note Device activation of Modern POS will NOT be required.  This option is one that we would offer as a temporary solution.  Only use this option to avoid reactivation and resolve the issue quicker with a view to obtaining a new trusted certificate.
+- If using the renewed Contoso certificate, you will be required to install the new certificate on every device and install the Modern POS Package (installer). You are not required to uninstall, however you must reinstall on the device. Note that device activation of Modern POS will not be required. This option is a temporary solution. Only use this option to avoid reactivation and resolve the issue before obtaining a new trusted certificate.
