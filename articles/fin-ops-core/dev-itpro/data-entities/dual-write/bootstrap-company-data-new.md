@@ -34,16 +34,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-You might have an existing Dataverse or Finance and Operations app instance with business data, and you want to enable dual-write connection against it. In this case, you need to bootstrap Dataverse or Finance and Operations app data with company information before enabling dual-write.
+You might have an existing Dataverse or Finance and Operations app instance with business data, and you want to enable a dual-write connection against it. In this case, you need to bootstrap Dataverse or Finance and Operations app data with company information before enabling dual-write.
 
-This document includes sample scenarios that explain how to use Azure Data Factory to bootstrap data into Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this document and template as a reference to setup your own Azure Data Factory pipeline to import data into or update data in Dataverse.
+This document includes sample scenarios that explain how to use Azure Data Factory to bootstrap data into Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this document and template as a reference to set up your own Azure Data Factory pipeline to import data into or update data in Dataverse.
 
 ## High-level scenario
 
 Consider the **Customers** table in a Finance and Operations app and the **Account** table in Dataverse.
 
 - Use initial write to copy reference and dependent tables, for example, **Company**, **Customer groups**, and **Terms of payment**. Copy from the Finance and Operations app to Dataverse.
-- Use the data management framework to export data from Finance and Operations in csv format. For example, setup an export project in data management to export customers from each company, using the **DataAreaId** field in the Finance and Operations app. It's one-time manual process.
+- Use the data management framework to export data from Finance and Operations in csv format. For example, set up an export project in data management to export customers from each company, using the **DataAreaId** field in the Finance and Operations app. It's a one-time manual process.
 - Use Azure Blob Storage to store the csv files for lookup and transformation. Upload your Finance and Operations customers csv file in Azure Blob Storage.
 - Use Azure Data Factory ([Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction)) to bootstrap data into Dataverse.
 
@@ -55,17 +55,17 @@ Some assumptions about this scenario are:
 
 - Source data is the Finance and Operations app.
 - If an account exists in Dataverse and it doesn't exist in the Finance and Operations app, that account will not be bootstrapped as part of this flow.
-- All account records in the customer engagements have a natural key (account number) that matches Finance and Operations natural key (CustomerAccount).
+- All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (CustomerAccount).
 - Records have 1-to-1 mapping across the apps.
 
 ## Prerequisites
 
 - Azure subscription: You must have **contributor access** to an existing Azure subscription. If you don\'t have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you begin.
 - Azure storage account: If you don\'t have a storage account, see [Create an Azure storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) for steps to create one.
-- Azure data factory: - Create an Azure Data Factory resource follow the steps to [create a Data factory](https://docs.microsoft.com/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
-- Finance and Operations app: Use the data management framework to export the data in csv format. For more information, see [Data management overview](../data-entities-data-packages.md)). In this template, example is used for exporting customers using **CustCustomerV3Entity**.
+- Azure data factory: Create an Azure Data Factory resource follow the steps to [create a Data factory](https://docs.microsoft.com/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
+- Finance and Operations app: Use the data management framework to export the data in csv format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customers are exported by using the **CustCustomerV3Entity** table.
 - Dynamics 365 Dataverse: Dataverse administrator user credentials to bootstrap the data.
-- Dual-Write: Dual-write solutions installed, and reference data is copied using the initial write.
+- Dual-Write: Dual-write solutions installed, and reference data is copied using initial write.
 
 ## Deployment steps
 
@@ -77,9 +77,9 @@ If you don\'t have a storage account, see [Create an Azure storage account](http
 
 ### Deploy Azure Data Factory Template
 
-1. Note the Azure data factory name that you created.
+1. Note the Azure Data Factory name that you created.
 2. Note the Azure Storage account connection string.
-3. Note Dataverse instance service URI and Admin user name and password.
+3. Note the Dataverse instance service URI and Admin user name and password.
     Here are parameters you need:
 
     | Parameter name | Description | Example |
@@ -87,24 +87,24 @@ If you don\'t have a storage account, see [Create an Azure storage account](http
     |Factory name | Name of your data factory   |BootstrapDataverseDataADF |
     |Bootstrap blob storage account Linked Service_connection String | Connection string of blob storage |As copied at the time of creating storage account |
     |Bootstrap Dynamics 365 Linked Service_service Uri | URI of the Dataverse instance |`https://contosod365.crm4.dynamics.com` |
-    |Bootstrap Dynamics 365 Linked Service_properties_type Properties_username | Dynamics 365 Admin user id    | `<adminservice@contoso.onmicrosot.com>` |  
+    |Bootstrap Dynamics 365 Linked Service_properties_type Properties_username | Dynamics 365 Admin user ID | `<adminservice@contoso.onmicrosot.com>` |  
     |Bootstrap Dynamics 365 Linked Service_password | Dynamics 365 Admin user's password | \*\*\*\*\*\*\*\* | 
 
 4. Download the [ARM template file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/arm_template.json) to your local directory.
-5. Navigate to [Custom deployment](https://ms.portal.azure.com/#create/Microsoft.Template).
+5. Navigate to [Custom deployment](https://ms.portal.azure.com/#create/Microsoft.Template) on Microsoft Azure.
 6. Select **Build your own template in the editor**.
 7. Select **Load file** and locate the ARM template file you downloaded earlier. Select **Save**.
 8. Provide the required parameters, then select **Review** and **Create**.
 
     :::image type="content" source="media/boot-custom-deployment.png" alt-text="Customize a template":::
 
-9. After deployment, you will find below **Pipelines**, **Datasets** and **Data flows**.
+9. After deployment, you will see the **Pipelines**, **Datasets** and, **Data flows**.
 
-    :::image type="content" source="media/boot-pipeline.png" alt-text="Pipelines, Datasets and Data flows":::
+    :::image type="content" source="media/boot-pipeline.png" alt-text="Pipelines, Datasets, and Data flows":::
 
 ## Run the process
 
-- In the Finance and Operations app, use the data management framework to export data in csv format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, the example used exports customer records using the **CustCustomerV3Entity** table. Set up the **CustCustomerV3Entity** and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field in the csv field. Rename the exported file to **01-CustomersV3Export-Customers V3.csv** and upload to the Azure Storage account that you named **ce-data**.
+- In the Finance and Operations app, use the data management framework to export data in csv format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, the example exported customers data from the **CustCustomerV3Entity** table. Set up the **CustCustomerV3Entity** and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field in the csv field. Rename the exported file to **01-CustomersV3Export-Customers V3.csv** and upload to the Azure Storage account that you named **ce-data**.
 
     ![Finance and OperationsCustomerFileImage](media/boot-customer-file.png)
 
