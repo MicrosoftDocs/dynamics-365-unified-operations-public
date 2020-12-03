@@ -90,11 +90,7 @@ This option will work if the build user is a local user. However if you are usin
 > [!NOTE]
 > If the .pfx file or Secure File task option is used to sign the app, then leave the **ModernPOSPackageCertificateThumbprint** node in **Customization.settings** empty. If the thumbprint option is used, then leave **ModernPOSPackageCertificateKeyFile** empty. If both the values are updated, then the build will fail.
 
-> Don’t use the sample certificate available in the Retail SDK for production. It can be used only for development purposes. The sample Contoso certificate can't be renewed and the sample certificate included in Retail SDK version 10.0.16 or before expires on December 31, 2020. Expired certificates will not break the existing MPOS app from running. It will continue to work unless there is a policy on the machine enabled to prevent this. If a policy is set to prevent apps to run with expired certificates, then MPOS will not load after the certificate expiration. MPOS upgrade will also fail if the expired certificate is used. We recommend that you use a certificate from a trusted certifying authority (CA) for production. Follow steps mentioned in the “Certification renewal” section about how to renew the certificate.
-
-## Certification renewal
-
-The certificate used for MPOS app signing must be renewed before it expires. Expired certificates will not break the existing MPOS app from running. However, you need to renew the certificate before it expires.
+### Certification renewal
 
 ### Renew a certificate from trusted CA
 
@@ -102,10 +98,34 @@ Contact your certifying authority (CA) for the certificate renewal process. For 
 
 ### Renew a self-signed certificate
 
-If you used self-signed certificate or test certificate or sample certificate form Retail SDK, these are not renewable. Your policy will not allow MPOS to run with an expired certificate, so may need to try the following options:
+Don’t use the sample certificate available in the Retail SDK for production. It can be used only for development purposes. The sample Contoso certificate can't be renewed and the sample certificate included in Retail SDK version 10.0.16 or before will expire at the end of the year 2020 (12/31/2020). If this certificate, or a self-signed certificate, has been used to sign a customized Modern POS, there is a strong possibility that Modern POS will not function properly after this expiration date.
+ 
+### Impact:
+ 
+If the above is true for you, the issue you will be encountering is that the installer will not be able to run after 12/31/2020. Depending upon the corporate IT policies used, Modern POS may not be able to function at all. It is critical to test, by changing the date temporarily (To a future date), and determine the impact to your organization.  
+ 
+### Steps to determine the issue:
+ 
+1.	Use Windows settings to change the computer clock to a date and time in the year 2021.
+2.	Verify that Modern POS can be opened, login can occur, and a transaction can be accomplished.
+3.	Verify that Modern POS Self-service installer is able to be run, and if so, that installation will complete successfully.
+4.	Return the Windows clock settings to the correct date and time.
+ 
+If you can complete all of these steps without issues, then you will be able to operate on the current certificate past 12/31/2020.  
+ 
+ 
+### Steps going forward:  
 
-- Relax the policy temporarily, until you can sign the MPOS with a new certificate and deploy it. This is not a recommend solution because it’s a security risk to remove policies.
+It is highly recommended to renew the previously used certificate.  We strongly advise that you obtain a new certificate – to do so please refer to the following three possibilities:- 
+ 
+•	**Preferred** - Obtain a code signing certificate from a trusted certificate authority.
 
-- Generate a new MPOS package by signing it with new certificate from trusted CA. Deploy the new certificate to the machine where MPOS is installed and then redeploy MPOS. This requires reactivation of MPOS and app registration in Azure.
+•	**Preferred** - Generate a self-signed code signing certificate to use (This typically is used when within a domain).
 
-- Generate a new MPOS package by signing it with new self-signed certificate or test certificate or sample certificate form Retail SDK. Use the same public key and provider that you used before. Deploy the new certificate to the machine where MPOS is installed and then redeploy MPOS. This will not require reactivation and new app registration in Azure because you are using the same public key. The option of using a self-signed certificate for production is not recommended. We recommend that you use a certificate from a trusted CA.
+•	**Available as a temporary Solution** - Use the renewed Contoso code signing certificate (This typically is for testing purposes and we recommend it not be deployed in production).
+ 
+Next, generate a new customized Modern POS package that is signed using this certificate obtained from above.  Depending on the certificate, one of the following steps must be followed:
+ 
+- If using a new, trusted certificate (Or a new, self-signed certificate) then it will be required to place the new certificate on every device, take the newly created Modern POS Package (installer) – uninstall the existing application, reinstall the new Modern POS Package, and perform a Device activation of Modern POS on every terminal.
+
+- If using the renewed Contoso certificate, then you will be required to place the new certificate on every device, take the Modern POS Package (installer) – You are not required to uninstall – you must however reinstall on the Device, please note Device activation of Modern POS will NOT be required.  This option is one that we would offer as a temporary solution.  Only use this option to avoid reactivation and resolve the issue quicker with a view to obtaining a new trusted certificate.
