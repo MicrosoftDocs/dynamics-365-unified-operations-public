@@ -85,11 +85,11 @@ In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, on 
 
 Similarly configure number sequence groups in **Accounts payable** and **Project management and accounting** modules.
 
-### Configure documents references
+### Configure number sequence groups chronology
 
-On the **Accounts receivable parameters** page, on the **Number sequences** tab, select one of the supported references, such as **Free text invoice**. Then click the **Chronological numbering setup** button that will be available for the supported references. On the **Chronological numbering setup** page, define the date-effective number sequences that have valid periods.
+In **Organization administration** > **Number sequences** > **Chronological number sequence groups**, define
 
-![Chronological numbers setup](media/emea-chronological-numbering.jpg)
+![Chronological numbers setup](media/chrono-num-sequence-group-period.jpg)
 
 
 ## Invoice posting
