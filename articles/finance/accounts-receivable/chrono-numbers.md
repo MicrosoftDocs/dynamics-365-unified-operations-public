@@ -82,7 +82,8 @@ In **Organization administration** > **Number sequences** > **Number sequences**
 In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, on the **Number sequences** tab, define as many number sequences groups as you require to cover the affected periods. For each group, in the **Reference** section, select one of the supported document references, in the **Number sequence code** field, refer to a number sequence that was previously created for the related period.
 
 ![Number sequence group setup](media/chrono-num-sequence-group.jpg)
-AP Proj
+
+Similarly configure number sequence groups in **Accounts payable** and **Project management and accounting** modules.
 
 ### Configure documents references
 
