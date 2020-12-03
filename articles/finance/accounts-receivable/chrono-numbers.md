@@ -73,13 +73,16 @@ Chronological numbering affects the following documents:
 - Credit note voucher 
 
 ### Define number sequences
-In **Organization administration** > **Number sequences** > **Number sequences**, define as many number sequences as you require to cover the affected periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.
+In **Organization administration** > **Number sequences** > **Number sequences**, define as many number sequences as you require to cover the affected periods for required documents. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.
 
 ![Number sequence setup](media/chrono-num-sequence.jpg)
 
-### Define number sequence groups
+### Configure number sequence groups
 
-If different customers use different patterns for numbering, you must set up chronological numbering at the level of the number sequence group. On the **Accounts receivable parameters** page, on the **Number sequences** tab, select one of the supported references, and then click **Group**. On the **Number sequence group** page, select an existing group, or create a new group. In the **Reference** section, select one of the supported references, and then click **Chronological numbering setup**. On the **Chronological numbering setup** page, define date-effective number sequences that have valid periods.
+In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, on the **Number sequences** tab, define as many number sequences groups as you require to cover the affected periods. For each group, in the **Reference** section, select one of the supported document references, in the **Number sequence code** field, refer to a number sequence that was previously created for the related period.
+
+![Number sequence group setup](media/chrono-num-sequence-group.jpg)
+AP Proj
 
 ### Configure documents references
 
