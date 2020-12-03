@@ -155,6 +155,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 ### Run the Commerce Scale Unit installer
 
 > [!NOTE]
+> Before running the Commerce Scale Unit (Self-hosted) installer, verify the configuration file is named the same as the installer executable.  This would look like **ExecutableInstallerName.xml** and put both files in the same folder.  Alternatively, there is a command line delimiter to specify the configuration file manually.
 > If you will install and use Retail Cloud POS, you must initialize the configuration the first time that you run the installer, as described in the following procedure.
 
 Before you run the Commerce Scale Unit installer, make sure that all [system requirements](../../fin-and-ops/get-started/system-requirements.md) are met. 
