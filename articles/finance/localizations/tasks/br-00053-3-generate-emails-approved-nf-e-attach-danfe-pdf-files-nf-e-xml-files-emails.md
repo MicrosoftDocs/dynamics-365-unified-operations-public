@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-You can generate the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE) for a Nota Fiscal eletrônica (NF-e) as a PDF file. You can then send the DANFE PDF file and the NF-e XML file that are generated for an approved NF-e to a third-party customer or vendor via email. Before you can generate email messages for approved electronic fiscal documents, you must set up an email template. This task uses the BRMF demo company.
+You can generate the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE) for a Nota Fiscal eletrônica (NF-e) as a PDF file. Email the DANFE PDF file and the NF-e XML file that are generated for an approved NF-e to a third-party customer or vendor. Before you create an email message for approved electronic fiscal documents, create an email template. This task uses the BRMF demo company.
 
 1. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Generate emails for NF-e.
 2. Expand the Run in the background section.
