@@ -33,6 +33,8 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 In some countries, there is a legal requirement that some documents and related vouchers that are issued be numbered in chronological order. The chronology must be supported by periods. All the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
 This article explains how to configure and use chronological numbers for applicable documents and releted vouchers.
 
