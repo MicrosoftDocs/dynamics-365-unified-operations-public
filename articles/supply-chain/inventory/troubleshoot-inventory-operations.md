@@ -93,7 +93,7 @@ After you submit a journal approval workflow, workflow processing freezes so you
 
 There are several potential reasons why workflow processing might fail to complete. Check for the following issues:
 
-- Go to **Inventory management** &gt; **Setup**&gt; **Inventory management** **workflows** and check the configuration of the affected your workflow. For more information, see [Inventory journal approval workflows](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-journal-workflow).
+- Go to **Inventory management** &gt; **Setup**&gt; **Inventory management** **workflows** and check the configuration of the affected your workflow. For more information, see [Inventory journal approval workflows](inventory-journal-workflow.md).
 - The workflow may be running into an exception or error. Check the work item history of the affected workflow to see if it shows an application error that terminates the workflow.
 - The inventory journal can't be updated or edited when it isn't approved. You can try to recall the journal if recall is active. There are multiple reasons that can cause the workflow batch job to suspend in execution, some may be due to the workflow framework issue.
 
@@ -107,7 +107,7 @@ You may experience this issue, for example, if you try to set up an inventory jo
 
 In the current release, inventory workflow conditions only apply at the journal level, not on the line level. This is by design. We suggest that you set your condition criteria only on journal-level attributes.
 
-## The filters pane on the on-hand list page doesn't filter results as expected. 
+## The filters pane on the on-hand list page doesn't filter results as expected.
 
 ### Issue description
 
