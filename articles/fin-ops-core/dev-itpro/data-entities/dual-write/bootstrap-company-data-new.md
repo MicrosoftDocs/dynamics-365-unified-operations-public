@@ -56,7 +56,7 @@ Some assumptions about this scenario are:
 - Source data is the Finance and Operations app.
 - If an account exists in Dataverse and it doesn't exist in the Finance and Operations app, that account will not be bootstrapped as part of this flow.
 - All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (CustomerAccount).
-- Records have 1-to-1 mapping across the apps.
+- Rows have 1-to-1 mapping across the apps.
 
 ## Prerequisites
 
