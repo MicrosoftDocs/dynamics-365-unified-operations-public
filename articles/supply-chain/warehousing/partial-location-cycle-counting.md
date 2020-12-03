@@ -52,7 +52,7 @@ Before partial cycle count work can be processed, you must, at a minimum, select
 For the partial cycle count process, the **Last cycle count** date/time won’t be updated for the location, even though all the items on hand at a given location are counted. The partial cycle count doesn't consider the parameter **Days between cycle counting** on  the **Cycle count plans** page. Partial cycle count doesn't support simultaneous counting of multiple items at the same location. Partial cycle count functionality may result in the same location being counted multiple times for an item when **Process cycle counting plan** is run. To avoid that scenario, specify filters in the **Select locations** field.
 
 > [!NOTE]
-> When you use this type of counting process, the **Add LP or item** button is not available on the warehouse app.
+> The warehouse app doesn't provide the **Add LP or item** button when you use the partial cycle count process.
 
 ## Example
 
