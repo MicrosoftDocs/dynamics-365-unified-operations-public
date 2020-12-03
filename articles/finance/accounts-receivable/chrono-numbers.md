@@ -45,6 +45,34 @@ This article explains how to configure and use chronological numbers for require
 
 ## Configure chronological numbering
 
+Chronological numbering affects the following documents:
+
+**Accounts receivable**
+- Customer invoice
+- Customer invoice voucher
+- Sales credit note
+- Sales credit note voucher
+- Free text invoice
+- Free text invoice voucher
+- Free text credit note
+- Free text credit note voucher
+- Packing slip
+- Packing slip voucher
+- Packing slip correction voucher
+- Interest note voucher
+- Collection letter voucher
+
+**Accounts payable**
+- Invoice voucher
+- Credit note voucher
+- Product receipt voucher
+
+**Project management**
+- Invoice
+- Invoice voucher
+- Credit note
+- Credit note voucher 
+
 ### Define number sequence groups
 
 If different customers use different patterns for numbering, you must set up chronological numbering at the level of the number sequence group. On the **Accounts receivable parameters** page, on the **Number sequences** tab, select one of the supported references, and then click **Group**. On the **Number sequence group** page, select an existing group, or create a new group. In the **Reference** section, select one of the supported references, and then click **Chronological numbering setup**. On the **Chronological numbering setup** page, define date-effective number sequences that have valid periods.
@@ -55,16 +83,6 @@ On the **Accounts receivable parameters** page, on the **Number sequences** tab,
 
 ![Chronological numbers setup](media/emea-chronological-numbering.jpg)
 
-Accounts receivable affects the following documents:
-
--   Free text invoice
--   Free text invoice voucher
--   Free text credit note
--   Free text credit note voucher
--   Sales invoice
--   Sales invoice voucher
--   Sales credit note
--   Sales credit note voucher
 
 ## Invoice posting
 When you post an invoice or a credit note, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
