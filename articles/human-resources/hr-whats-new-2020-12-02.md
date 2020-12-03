@@ -67,15 +67,14 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing | |
 | 526903 | Benefit Enrollment fails for plans with dependents when Auto-select designees is turned on in HR shared parameters | |
-| 513558 | Leave forms emits compiler warnings with BPErrorFormDesignPatternUnspecified | |
 | 525011 | Populate assignment start/end date for candidate transfer & new hire scenarios | |
 | 525957 | Candidate status doesn't update on internal candidates when transfer is completed | |
-| 521922 | Show absence without detail parameter not working on team calendar view | |
+| 521922 | Show absence without detail parameter shows details of time off requests in Team absence calendar|The leave type, leave type color and day details were being shown in the team absence calendar when the Show absence wihtout detail was set to yes in Leave and absence parameters. This has been addressed and now the leave type doesn't display and the default leave type color (dark blue) is used for all leave types on the Team absence calendar. |
 | 528172 | Improve error message on Format Exception for CDS. | |
 | 527316 | Title changes for Job/Positions/Worker notifications do not sync with the 2.2.4.1 Solution | |
-| 512275 | Remove the color options from leave and absence parameters | |
+| 512275 | Remove the color options from leave and absence parameters |Now that colors are defined on the leave type, the colors options are no longer needed in the leave and absence parameters so they were removed. |
 | 437112 | Misleading error message text during employee position assignment | |
-| 527816 | Performance issues on EssLeaveRequestCalendar form | |
+| 527816 | Performance issues with the Time off screen |Performance has been improved on the Time off screen. |
 | 502096 | Estimated Start Date automatically decrements on recruiting request | |
 | 505338 | Recruiting request entity cannot set CompensationLevelId | |
 | 507975 | Recruiting request location labels are incorrect, display as 'Location', which conflicts with other concepts | |
@@ -86,9 +85,17 @@ The following bug fixes are included in this release.
 
 The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
 
+## In preview
+
+The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
+
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| | | |
+| Human Resources app in Microsoft Teams | [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Manage leave requests in Teams](hr-teams-leave-app.md) |
+| Enhanced workflow requests and approvals | [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Configuration option to position Work items assigned to me list](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| Virtual entities in Common Data Service for Human Resources | [Expand Dynamics 365 Human Resources core data in Common Data Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md) |
+| Integration with LinkedIn Talent Hub | [Integration with LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integrate with LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
+| Custom links in Manager self-service | [Custom links in manager self service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Custom links in manager self service](https://aka.ms/MSSCustomLinks) |
 
 ## Coming soon
 
