@@ -30,16 +30,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Use this procedure to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes. This task uses the BRMF demo company.
+Use this procedure to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes. This procedure uses the BRMF demo company.
 
-1. Go to Fiscal books > Setup > Tax adjustment codes > IPI adjustment codes table.
-2. Click New.
-3. In the Adjustment code field, type a value.
-4. In the Description field, type a value.
-5. Select Yes in the Is reversal adjustment code ? field.
-6. In the Valid From Date field, enter a date.
-7. Expand the Payment section.
-8. Expand the Posting section.
-9. Click Save.
+1. Go to **Fiscal books** > **Setup** > **Tax adjustment codes** > **IPI adjustment codes table**.
+2. Select **New**.
+3. In the **Adjustment code** field, type a value.
+4. In the **Description** field, type a value.
+5. Select **Yes** in the **Is reversal adjustment code?** field.
+6. In the **Valid From Date** field, enter a date.
+7. Expand the **Payment** section.
+8. Expand the **Posting** section.
+9. Select **Save**.
 10. Close the page.
 
