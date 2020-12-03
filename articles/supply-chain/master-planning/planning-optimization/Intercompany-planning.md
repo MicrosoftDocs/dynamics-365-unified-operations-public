@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intercompany planning
-description: This topic describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Supply Chain Management. 
+description: This topic describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: tfehr
 ms.date: 12/02/2020
@@ -33,60 +33,61 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../../includes/banner.md)]
 
-For some organizations, logistic operations depend on other legal entities (companies) within the organization. Such operations are dealt with by using intercompany sales and purchases because each of these legal entities has a separate chart of accounts.
+For some organizations, logistics operations depend on other legal entities (companies) in the organization. These operations are handled by using intercompany sales and purchases, because each legal entity has a separate chart of accounts.
 
-This topic describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Supply Chain Management.
+This topic describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
 
-Important intercompany terms used in this topic:
+This topic uses the following important intercompany terms:
 
-- *Upstream*  - Used as a relative reference in a firm or supply chain to indicate moving in the direction of the raw material supplier.
-- *Downstream*  - Used as a relative reference in a firm or supply chain to indicate moving in the direction of the customer.
-- *Planned intercompany demand*  - Planned demand for a product in a company based on planned demand for the product from a downstream company.
+- **Upstream** – A relative reference in a firm or supply chain. It indicates movement in the direction of the raw material supplier.
+- **Downstream** – A relative reference in a firm or supply chain. It indicates movement in the direction of the customer.
+- **Planned intercompany demand** – Planned demand for a product in a company, based on planned demand for the product from a downstream company.
 
-With master planning, a plan in one company can include planned intercompany demand related to planned orders from a plan in another company. This is useful to get full visibility of planned orders across companies and ensure that all required planned supply orders are created, without having to firm planned orders for the intercompany demand.
+In master planning, a plan in one company can include planned intercompany demand that is related to planned orders from a plan in another company. This capability is useful, because it provides full visibility into planned orders across companies. It also ensures that all required planned supply orders are created, but without requiring that planned orders be firmed for the intercompany demand.
 
-If you execute a master planning run from a master plan that includes planned downstream demand, then planned purchase orders from the related intercompany vendors will be included into the plan as demand.
+If you run master planning from a master plan that includes planned downstream demand, planned purchase orders from the related intercompany vendors will be included in the plan as demand.
 
-## Required set up
+## Required setup
 
-To use intercompany planning, you must prepare your system as follows:
+To use intercompany planning, you must prepare your system in the following way:
 
 1. The relevant products must be released in all the relevant companies. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) on Microsoft Learn.
-1. Downstream demand must be covered by purchases from a vendor with intercompany relation to the upstream company and relevant inventory dimension defaulting (site/warehouse) on the customer. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) on Microsoft Learn.
-1. The master plan in the upstream company must include planned downstream demand and have the relevant company and master plan specified in the downstream plans.
+1. Downstream demand must be covered by purchases from a vendor that has an intercompany relation to the upstream company and relevant default inventory dimensions (site and warehouse) on the customer. For more information, see [Configure and use intercompany trade in Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) on Microsoft Learn.
+1. The master plan in the upstream company must include planned downstream demand, and the relevant company and master plan must be specified in the downstream plans.
 
 ## Include planned downstream demand
 
-Follow these steps to configure your master plan to include planned downstream demand:
+Follow these steps to configure your master plan so that it includes planned downstream demand.
 
-1. Go to  **Master planning \> Setup \> Plans \> Master plans**.
-1. Select or create a plan.
-1. On the  **Intercompany planning** FastTab, make the following settings:
-    - **Include planned downstream demand** - Set this to  *Yes*  to enable intercompany planning for this master plan.
-    - **Downstream plans** - When **Include planned downstream demand** is set to *Yes*, use the toolbar and grid here to add the desired master plan(s) from other companies.
+1. Go to **Master planning \> Setup \> Plans \> Master plans**.
+1. Select or create a master plan.
+1. On the **Intercompany planning** FastTab, set the following fields:
 
-## Peg across companies with multilevel pegging
+    - **Include planned downstream demand** – Set this option to *Yes* to enable intercompany planning for the master plan.
+    - **Downstream plans** – If you set the **Include planned downstream demand** option to *Yes*, use the toolbar and grid to add the desired master plans from other companies.
 
-With multilevel pegging, you can view pegging across companies to see the initial source of demand being covered by a supply. 
+## Peg across companies by using multilevel pegging
 
-To view multilevel pegging information:
+In multilevel pegging, you can view pegging across companies to see the initial source of demand that is being covered by a supply.
+
+To view multilevel pegging information, follow these steps.
 
 1. Go to **Master planning \> Master planning \> Planned orders**.
 1. Select or open a planned order.
-1. On the Action Pane, open the **View** tab and, from the **Requirements** group, select **Multilevel pegging**.
+1. On the Action Pane, on the **View** tab, in the **Requirements** group, select **Multilevel pegging**.
 
-### Intercompany example with two companies
+### Intercompany example that involves two companies
 
-For this example, a planned production order is created in the USMF company to cover a sales order in the DEMF company. In USMF, the direct demand is a planned intercompany demand. For this to show up in USMF, master planning was first run in DEMF, then in USMF. 
+For this example, a planned production order is created in the USMF company to cover a sales order in the DEMF company. In USMF, the direct demand is planned intercompany demand. To make this demand appear in USMF, master planning is run first in DEMF and then in USMF.
 
-The following screenshot shows how this example could appear on the **Multilevel pegging** page for the planned production order.
+The following illustration shows how this example might appear on the **Multilevel pegging** page for the planned production order.
 
-![Intercompany example with two companies](media/IntercompanyPlanning1.png)
+![Intercompany example that involves two companies](media/IntercompanyPlanning1.png)
 
-### Intercompany example with three companies
+### Intercompany example that involves three companies
 
-For this example, a planned purchase order is created in the USMF company to cover a sales order in the FRRT company. In the DEMF and USMF companies, the direct demand is a planned intercompany demand. For this to show up in USMF, master planning was first run in FRRT, then DEMF, and finally USMF.
+For this example, a planned purchase order is created in the USMF company to cover a sales order in the FRRT company. In the DEMF and USMF companies, the direct demand is planned intercompany demand. To make this demand appear in USMF, master planning is run first in FRRT, then in DEMF, and finally in USMF.
 
-The following screenshot shows how this example could appear on the **Multilevel pegging** page for the planned production order.
+The following illustration shows how this example might appear on the **Multilevel pegging** page for the planned production order.
 
-![Intercompany example with three companies](media/IntercompanyPlanning2.png)
+![Intercompany example that involves three companies](media/IntercompanyPlanning2.png)
