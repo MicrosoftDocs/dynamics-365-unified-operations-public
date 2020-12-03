@@ -143,13 +143,16 @@ The following warehouse management functionality isn't currently supported on sc
 - Processing of catch-weight items
 - Processing of negative on-hand inventory
 
+> [!WARNING]
+> Some warehouse functionality won't be available for warehouses running the warehouse management workloads in a scale unit; not supported on the hub nor on the scale unit workload.
+Other capabilities can get processed on both, but will require careful use in scenarios where e.g. the inventory on-hand gets updated for the same warehouse on both the hub and scale unit workload due to the asynchronous data update process.
+Specific functionalities (like for example **Block work**) which is supported on both the hub and scale units will only be supported for the owner of the data.
+
 ### Outbound (supported only for sales and transfer orders)
 
 The following table shows which outbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
-> [!WARNING]
-> Some warehouse functionality won't be available for warehouses running the warehouse management workloads in a scale unit; not supported on the hub nor on the scale unit workload.
-Other capabilities can get processed on both, but will require careful use in scenarios where e.g. the inventory on-hand gets updated for the same warehouse on both the hub and scale unit workload due to the asynchronous data update process.
+
 
 | Process                                                      | Hub | WES workload on a scale unit |
 |--------------------------------------------------------------|-----|------------------------------|
@@ -168,12 +171,9 @@ Other capabilities can get processed on both, but will require careful use in sc
 | Bill of lading and ASN generation                            | Yes | No |
 | Ship confirmation and packing slip processing                | Yes | No |
 | Short picking (sales and transfer orders)                    | No  | No |
-| Work cancellation                                            | No  | Yes|
 | Change of work locations (sales and transfer orders)         | No  | Yes|
 | Complete work (sales and transfer orders)                    | No  | Yes|
-| Block and unblock work                                       | No  | No |
-| Change user                                                  | No  | Yes|
-| Print work report                                            | No  | No |
+| Print work report                                            | Yes | No |
 | Wave label                                                   | No  | Yes|
 | Reverse work                                                 | No  | No |
 | Work processing - Directed by 'Transport loading'            | No  | No |
@@ -229,12 +229,14 @@ The following table shows which warehouse operations and exception handing featu
 | Driver check in                                    | Yes | No                           |
 | Driver check out                                   | Yes | No                           |
 | Change batch disposition code                      | Yes | Yes                          |
-| Display open work list                             | Yes | Yes                           |
+| Display open work list                             | Yes | Yes                          |
 | Consolidate license plates                         | No  | No                           |
 | Remove container from group                        | No  | No                           |
-| Cancel work                                        | Yes  | Yes                           |
-| Min/max and zone threshold replenishment processing                   | Yes | Yes                           |
+| Min/max and zone threshold replenishment processing| Yes | Yes                          |
 | Slotting replenishment processing                  | Yes <p>Note that the setup must be done on the scale unit</p>   | Yes                           |
+| Block and unblock work                             | Yes | Yes                          |
+| Change user                                        | Yes | Yes                          |
+| Cancel work                                        | Yes | Yes                          |
 
 ### Production
 
@@ -248,13 +250,16 @@ Warehouse management production scenarios isn't currently supported on scale uni
 
 Several batch jobs run on both the hub and scale units.
 
-On the hub deployment, you can manually maintain the batch jobs. You can manage the following three jobs at **Warehouse management \> Periodic tasks \> Back-office workload management**:
+On the hub deployment, you can manually maintain the batch jobs. You can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Back-office workload management**:
 
 - Process work status update events
-- Process wave execution control transfer events
+- Scale unit to hub message processor
 - Register source order receipts
+- Complete warehouse orders
+- Process quantity update responses for warehouse order lines
 
-On the workload in scale units, you can manage the following two batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
+On the workload in scale units, you can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
 
 - Process wave table records
-- Process wave execution control transfer events
+- Warehouse hub to scale unit message processor
+- Process quantity update requests for warehouse order lines
