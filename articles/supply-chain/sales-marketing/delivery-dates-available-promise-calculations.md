@@ -46,7 +46,7 @@ Order promising calculates the earliest ship and receipt dates, and is based on 
 > [!NOTE]
 > When a sales order is updated, the order promising information is only updated if the existing order promising date can't be fulfilled, as illustrated in the following examples:
 > 
-> - **Example 1**: The current order promising date is July 20, but due to increased quantity, the date must be moved back to July 25. Because the current date can no longer be met, order promising is triggered.
+> - **Example 1**: The current order promising date is July 20, but due to increased quantity, you won't be able to deliver until July 25. Because the current date can no longer be met, order promising is triggered.
 > -  **Example 2**: The current order promising date is July 20, but due to decreased quantity, it is now possible to deliver on July 15. However, because the current date can still be fulfilled, order promising is not triggered, and July 20 remains the order promising date.
 
 ## ATP calculations
