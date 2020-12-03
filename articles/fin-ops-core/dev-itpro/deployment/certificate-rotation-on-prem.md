@@ -39,6 +39,10 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 > 
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
+> [!CAUTION]
+> This operation should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
+> Upgrade your Service Fabric cluster to 7.2.x before attempting certificate rotation.
+
 ## Preparation steps 
 
 1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts). Rename the folder to **InfrastructureOld**.
