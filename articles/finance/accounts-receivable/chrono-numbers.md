@@ -73,7 +73,7 @@ Chronological numbering affects the following documents:
 - Credit note voucher 
 
 ### Define number sequences
-On the **Number sequences** page, define as many number sequences as you require to cover the affected periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.
+In **Organization administration** > **Number sequences** > **Number sequences**, define as many number sequences as you require to cover the affected periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.
 
 ![Number sequence setup](media/chrono-num-sequence.jpg)
 
