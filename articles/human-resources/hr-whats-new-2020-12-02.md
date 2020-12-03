@@ -39,7 +39,7 @@ For more information about new features and their expected general availability 
 
 ## In this release
 
-This release includes the following new features and bug fixes. Changes apply to build number 8.1.3794.
+This release includes the following new features and bug fixes. Changes apply to build number 8.1.3788.
 
 ### New features
 
@@ -63,8 +63,6 @@ The following bug fixes are included in this release.
 > [!NOTE]
 > Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
-#HCM & HCMFabric Bugs
-
 | Issue number | Issue | Description |
 | --- | --- | --- |
 | 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing | |
@@ -87,6 +85,10 @@ The following bug fixes are included in this release.
 ## In preview
 
 The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
+
+| Feature | Release plan | Documentation |
+| --- | --- | --- |
+| | | |
 
 ## Coming soon
 
