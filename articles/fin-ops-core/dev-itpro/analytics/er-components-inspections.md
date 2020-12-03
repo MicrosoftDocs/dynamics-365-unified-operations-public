@@ -105,7 +105,7 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Executability</td>
 <td>Error</td>
 <td>
-<p>Cannot convert expression of type ? to field of type ?.</p>
+<p>Cannot convert expression of type &lt;type&gt; to field of type &lt;type&gt;.</p>
 <p><b>Runtime error:</b> Exception of type</p>
 </td>
 </tr>
@@ -114,7 +114,7 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Executability</td>
 <td>Error</td>
 <td>
-<p>The configured expression cannot be used as the binding of the current format element to a data source as this expression returns value of the data type ? that is beyond the scope of data types that are supported by the current format element of type ?.</p>
+<p>The configured expression cannot be used as the binding of the current format element to a data source as this expression returns value of the data type &lt;type&gt; that is beyond the scope of data types that are supported by the current format element of type &lt;type&gt;.</p>
 <p><b>Runtime error:</b> Exception of type</p>
 </td>
 </tr>
@@ -123,8 +123,8 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Executability</td>
 <td>Error</td>
 <td>
-<p>Path not found ?.</p>
-<p><b>Runtime error:</b> Element of the configuration ? not found</p>
+<p>Path not found &lt;path&gt;.</p>
+<p><b>Runtime error:</b> Element of the configuration &lt;path&gt; not found</p>
 </td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td rowspan='2'><a href='#i5'>Executability of a GROUPBY data source</a></td>
 <td>Executability</td>
 <td>Error</td>
-<td>Path ? does not support querying.</td>
+<td>Path &lt;path&gt; does not support querying.</td>
 </tr>
 <tr>
 <td>Executability</td>
@@ -155,7 +155,7 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Executability</td>
 <td>Error</td>
 <td>
-<p>Cannot join a list ? that is not a filter in query.</p>
+<p>Cannot join a list &lt;path&gt; that is not a filter in query.</p>
 <p><b>Runtime error:</b> Function Joined datasource should be a filter expression calculated field has been incorrectly called.</p>
 </td>
 </tr>
@@ -176,8 +176,8 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Executability</td>
 <td>Warning</td>
 <td>
-<p>List ? does not have any check for empty list case, it can result an error at run time. Add a check for empty list case.</p>
-<p><b>Runtime error:</b> List is empty at ?</p>
+<p>List &lt;path&gt; does not have any check for empty list case, it can result an error at run time. Add a check for empty list case.</p>
+<p><b>Runtime error:</b> List is empty at &lt;path&gt;</p>
 <p><b><a href='#i9a'>Potential issue</a>:</b> Line is getting populated once while a data source it is populated from contains multiple records</p>
 </td>
 </tr>
@@ -195,21 +195,21 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Executability</td>
 <td>Warning</td>
 <td>
-<p>Path ? has no binding to any datasource in using model's mapping.</p>
-<p><b>Runtime error:</b> Path ? is not bound</p>
+<p>Path &lt;path&gt; has no binding to any datasource in using model's mapping.</p>
+<p><b>Runtime error:</b> Path &lt;path&gt; is not bound</p>
 </td>
 </tr>
 <tr>
 <td><a href='#i12'>Not linked template</a></td>
 <td>Data integrity</td>
 <td>Warning</td>
-<td>File ? is linked to no file components and will be removed after changing status of configuration version.</td>
+<td>File &lt;name&gt; is linked to no file components and will be removed after changing status of configuration version.</td>
 </tr>
 <tr>
 <td><a href='#i13'>Not synced format</a></td>
 <td>Data integrity</td>
 <td>Warning</td>
-<td>Defined name ? does not exist in Excel sheet ?</td>
+<td>Defined name &lt;component name&gt; does not exist in Excel sheet &lt;sheet name&gt;</td>
 </tr>
 </tbody>
 </table>
