@@ -34,28 +34,29 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-You might have an existing Dataverse or Finance and Operations app instance with business data, and you want to enable dual-write connection against it. In this case, you need to bootstrap Dataverse or Finance and Operations app data with company information before enabling dual-write connection.
+You might have an existing Dataverse or Finance and Operations app instance with business data, and you want to enable dual-write connection against it. In this case, you need to bootstrap Dataverse or Finance and Operations app data with company information before enabling dual-write.
 
-This document describes sample scenarios explaining how to use Azure Data Factory (ADF) to bootstrap data into Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this document and template as a reference to setup your own ADF pipeline to import/update data into Dataverse.
+This document includes sample scenarios that explain how to use Azure Data Factory to bootstrap data into Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this document and template as a reference to setup your own Azure Data Factory pipeline to import data into or update data in Dataverse.
 
 ## High-level scenario
 
-- Consider the **Customers** table in a Finance and Operations app and the **Account** table in Dataverse, for example.
-- Use initial write to copy reference and dependent tables, for example, **Company**, **Customer groups**, and **Terms of payment**. Copy from the Finance and Operations app to Dataverse.
-- Use the data management framework to export data from Finance and Operations in csv format. For example, setup an export project in data management to export customers from each company, using the **DataAreaId** field, the in Finance and Operations app. It's one-time manual process.
-- Use Azure Blob Storage to store the csv files for lookup and transformation. Upload your Finance and Operations customers csv file in Azure Blob Storage.
-- Use Azure Data Factory ([ADF](https://docs.microsoft.com/azure/data-factory/introduction)) to bootstrap data into Dataverse.
+Consider the **Customers** table in a Finance and Operations app and the **Account** table in Dataverse.
 
-## High-level flow
+- Use initial write to copy reference and dependent tables, for example, **Company**, **Customer groups**, and **Terms of payment**. Copy from the Finance and Operations app to Dataverse.
+- Use the data management framework to export data from Finance and Operations in csv format. For example, setup an export project in data management to export customers from each company, using the **DataAreaId** field in the Finance and Operations app. It's one-time manual process.
+- Use Azure Blob Storage to store the csv files for lookup and transformation. Upload your Finance and Operations customers csv file in Azure Blob Storage.
+- Use Azure Data Factory ([Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction)) to bootstrap data into Dataverse.
+
+The workflow is shown in the following image:
 
 :::image type="content" source="media/boot-process-flow.png" alt-text="High-level flow":::
 
-## Assumptions
+Some assumptions about this scenario are:
 
 - Source data is the Finance and Operations app.
 - If an account exists in Dataverse and it doesn't exist in the Finance and Operations app, that account will not be bootstrapped as part of this flow.
 - All account records in the customer engagements have a natural key (account number) that matches Finance and Operations natural key (CustomerAccount).
-- Records have 1-1 mapping across the apps.
+- Records have 1-to-1 mapping across the apps.
 
 ## Prerequisites
 
