@@ -104,7 +104,7 @@ If you don\'t have a storage account, see [Create an Azure storage account](http
 
 ## Run the process
 
-- In the Finance and Operations app, use the data management framework to export data in csv format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, the example exported customers data from the **CustCustomerV3Entity** table. Set up the **CustCustomerV3Entity** and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field in the csv field. Rename the exported file to **01-CustomersV3Export-Customers V3.csv** and upload to the Azure Storage account that you named **ce-data**.
+- In the Finance and Operations app, use the data management framework to export data in csv format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data was exported from the **CustCustomerV3Entity** table. Set up the **CustCustomerV3Entity** and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field in the csv field. Rename the exported file to **01-CustomersV3Export-Customers V3.csv** and upload to the Azure Storage account that you named **ce-data**.
 
     ![Finance and OperationsCustomerFileImage](media/boot-customer-file.png)
 
