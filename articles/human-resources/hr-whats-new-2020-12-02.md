@@ -62,14 +62,14 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
-| 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing | |
-| 526903 | Benefit Enrollment fails for plans with dependents when Auto-select designees is turned on in HR shared parameters | |
+| 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing | BeenefitEligibity processing result now includes the datetimestamp for last processing, which was missing earlier. |
+| 526903 | Benefit Enrollment fails for plans with dependents when Auto-select designees is turned on in HR shared parameters | Fixed the issue where benefit enrollment was failing for dependants when auto-select designee option was turned on for default designees. |
 | 521922 | Show absence without detail parameter shows details of time off requests in Team absence calendar|The leave type, leave type color and day details were being shown in the team absence calendar when the Show absence wihtout detail was set to yes in Leave and absence parameters. This has been addressed and now the leave type doesn't display and the default leave type color (dark blue) is used for all leave types on the Team absence calendar. |
 | 527316 | Title changes for Job/Positions/Worker notifications do not sync | A Title relation was previously addedto the Job, Position, and Worker entities. The sync for this relation works for the sync from HR to CDS, but did not work for notifications from CDS. This has now been addressed. |
 | 512275 | Remove the color options from leave and absence parameters | Now that colors are defined on the leave type, the colors options are no longer needed in the leave and absence parameters so they were removed. |
 | 437112 | Misleading error message text during employee position assignment |Updated the error message when hiring a worker and attempting to assign the worker to a postition that isn't active.  Updated message 'The specified position is not active as of the employment start date. Please check the duration of this position.' |
 | 527816 | Performance issues with the Time off screen |Performance has been improved on the Time off screen. |
-| 523158 | BenefitPeriodMigrationUpgrade and BenefitPlanMigrationUpgrade not executing | |
+| 523158 | BenefitPeriodMigrationUpgrade and BenefitPlanMigrationUpgrade not executing | Fixed issues with Benefit Migration jobs related to Period and Plan not executing properly. |
 
 ## In preview
 
