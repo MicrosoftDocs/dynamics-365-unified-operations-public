@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.15
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
-> Not all warehouse management business functionality is fully supported for a warehouse running in a work load on a scale unit. Be sure to use only the processes that this topic explicitly describes as supported.
+> Not all warehouse management business functionality is fully supported for a warehouse running in a workload on a scale unit. Be sure to use only the processes that this topic explicitly describes as supported.
 
 ## Warehouse execution on scale units
 
@@ -59,7 +59,7 @@ The scale units own the following data:
 - **Work processing data** – The following types of work order processing are supported:
 
     - Inventory movements (manual movement and movement by template work)
-    - Purchase orders (putaway work via a warehouse order)
+    - Purchase orders (putaway work via a warehouse order when purchase orders are not associated with loads)
     - Sales orders (simple picking and loading work)
     - Transfer orders (only outbound with simple picking and loading work)
 
@@ -87,7 +87,7 @@ The hub owns the following data:
 - All cost and financial updates
 
 > [!NOTE]
-> The inbound purchase order flow is conceptually different from the outbound flow, where the scale unit that does the processing depends on whether the order has been released to a warehouse.
+> The inbound purchase order flow is conceptually different from the outbound flow. You can both operate for the same warehouse on the scale unit and hub depending on whether the purchase order has been released to warehouse or not.
 
 If you're using the *release to warehouse* process, [**Warehouse orders**](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
 
@@ -197,7 +197,7 @@ The following table shows which inbound features are supported, and where they a
 | License plate receiving and put away                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Transfer order item receiving and put away                        | Yes | No |
 | Transfer order line receiving and put away                        | Yes | No |
-| Work cancellation                                                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) isn't supported</p> |
+| Cancel work (inbound)                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but only when the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) is cleared</p> |
 | Purchase order product receipt processing                          | Yes | No |
 | Purchase order receiving with underdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No, because you can only cancel the full warehouse order line quantities |
 | Purchase order receiving with overdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes |
