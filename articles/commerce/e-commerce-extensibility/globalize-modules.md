@@ -87,7 +87,7 @@ The **CultureInfoFormatter** class provides the following formatting functions:
 
 ### Currency formatting
 
-To format currency according to the conventions for a specific locale, use the **formatCurrency()** method. Here is an example.
+To format currency according to the conventions for a specific locale, use the **formatCurrency()** method as shown the following example.
 
 ```ts
 /**
@@ -227,7 +227,7 @@ cultureInfoFormatter.formatTime(testDate, options);
 
 ### Number formatting
 
-To format a number according to the conventions for a specific locale, use the **formatNumber()** method. Here is an example.
+To format a number according to the conventions for a specific locale, use the **formatNumber()** method as shown the following example.
 
 ```ts
 /**
