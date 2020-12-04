@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.17
 [!include [banner](../includes/preview-banner.md)]
 
 In some countries, there is a legal requirement that some documents and related vouchers that are issued be numbered in chronological order. The chronology must be supported by periods. All the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
-This article explains how to configure and use chronological numbers for applicable documents and releted vouchers.
+This article explains how to configure and use chronological numbers for applicable documents and related vouchers.
 
 ## Prerequisites
 
@@ -96,7 +96,7 @@ In **Organization administration** > **Number sequences** > **Chronological numb
 | Effective  | The start date of number sequence group applicability. |
 | Expiration      | The end date of number sequence group applicability. If no end date applied then use **Never** option. |
 | Number sequence group | Number sequence group that will be used for document numbers generation during the period. |
-| Original number sequence group | This number sequence group code is used for additional filtering for the cases when documents already have a specific *permanent* number sequence group preliminary assigned. An empty value is also considered as a specific value. If you need to ignore a preliminary assigned group then use **Default** option for this setup. |
+| Original number sequence group | This number sequence group code is used for additional filtering for the cases when documents already have a specific *permanent* number sequence group preliminary assigned. An empty value is also considered as a specific value. If you need to ignore a preliminary assigned group, then use **Default** option for this setup. |
 | Default | If **turned on** then the system will ignore preliminary assigned document number sequence group and use only periods start and end dates for applicability analysis. If **turned off** the system will use the full combination **Effective** + **Expiration** + **Original number sequence group** for selection. |
 
 ## Documents posting
