@@ -96,8 +96,8 @@ In **Organization administration** > **Number sequences** > **Chronological numb
 | Effective  | The start date of number sequence group applicability. |
 | Expiration      | The end date of number sequence group applicability. If no end date applied then use **Never** option. |
 | Number sequence group | Number sequence group that will be used for document numbers generation during the period. |
-| Original number sequence group | . |
-| Default | . |
+| Original number sequence group | This number sequence group code is used for additional filtering for the cases when documents already have a specific *permanent* number sequence group preliminary assigned. An empty value is also considered as a specific value. If you need to ignore a preliminary assigned group then use **Default** option for this setup. |
+| Default | If **turned on** then the system will ignore preliminary assigned document number sequence group and use only periods start and end dates for applicability analysis. If **turned off** the system will use the full combination **Effective** + **Expiration** + **Original number sequence group** for selection. |
 
 ## Documents posting
 When you post a document, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
