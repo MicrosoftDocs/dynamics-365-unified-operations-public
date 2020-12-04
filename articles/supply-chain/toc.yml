@@ -1377,6 +1377,8 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Intercompany planning
+          href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Approve planned orders
