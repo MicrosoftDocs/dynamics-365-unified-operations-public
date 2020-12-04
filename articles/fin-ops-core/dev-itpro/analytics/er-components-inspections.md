@@ -5,7 +5,7 @@ title: Inspect the configured ER component to prevent runtime issues
 description: This topic explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
