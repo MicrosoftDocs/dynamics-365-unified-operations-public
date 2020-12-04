@@ -5,7 +5,7 @@ title: Globalize modules by using the CultureInfoFormatter class
 description: This topic describes how to globalize modules by using the CultureInfoFormatter class.
 author: samjarawan
 manager: annbe
-ms.date: 12/03/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
