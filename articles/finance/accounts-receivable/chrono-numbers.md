@@ -100,7 +100,9 @@ In **Organization administration** > **Number sequences** > **Chronological numb
 | Default | If **turned on** then the system will ignore preliminary assigned document number sequence group and use only periods start and end dates for applicability analysis. If **turned off** the system will use the full combination **Effective** + **Expiration** + **Original number sequence group** for selection. |
 
 ## Documents posting
-When you post a document, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
+When you post a document, the appropriate number sequence group will be dynamically assigned to the document (based on document's posting date) and used to generate a document number via detected number sequence. The system will inform users about number sequence group assignment in information message details.
+
+![Document number](media/chrono-num-sequence-group.jpg)
 
 > [!NOTE]
 > Countries.
