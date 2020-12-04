@@ -5,7 +5,7 @@ title: Globalize modules by using the CultureInfoFormatter class
 description: This topic describes how to globalize modules by using the CultureInfoFormatter class.
 author: samjarawan
 manager: annbe
-ms.date: 10/24/2019
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -139,7 +139,7 @@ To format a date according to the conventions for a specific locale, use the **f
 public formatDate = (date: Date | string, options?: IDateFormatOptions): string
 ```
 
-#### SDK versions lower than 1.27.7
+#### SDK versions earlier than 1.27.7
 ```ts
 /**
  * Returns a localized formatted version of a date
@@ -194,7 +194,7 @@ To format a time according to the conventions for a specific locale, use the **f
 public formatTime = (time: Date | string, options?: ITimeFormatOptions): string
 ```
 
-#### SDK versions lower than 1.27.7
+#### SDK versions earlier than 1.27.7
 ```ts
 /**
  * Returns a localized formatted version of a time
