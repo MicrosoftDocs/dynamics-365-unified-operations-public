@@ -2710,7 +2710,7 @@
     - name: Landed cost
       items:
       - name: How Landed cost compares with Transportation management
-        href: warehousing/landed-cost-vs-tms.md
+        href: landed-cost/landed-cost-vs-tms.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
