@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -42,7 +42,7 @@ In this tutorial, you will learn how to:
 > * Download the database backup.
 > * Import the database, and prepare it so that it can be used in a developer environment.
 
-As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into the development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
 
 > [!IMPORTANT]
 > Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments).

@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 10/04/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -172,9 +172,12 @@ To see a list of capabilities that are available in on-premises deployments, see
 | Platform compatibility     |                                           | Yes       | Yes             |
 | Servicing                  |                                           | Yes       | Yes             |
 |                            | Servicing environments                    | Yes       | No              |
-| Trace Parser and PerfTimer |                                           | Yes       | No              |
+| Trace Parser               |                                           | Yes       | Yes             |
+| PerfTimer                  |                                           | Yes       | Yes\*           |
 | Upgrade                    |                                           | Yes       | Yes             |
 |                            | Upgrade                                   | Yes       | No              |
 |                            | Upgrade and support for previous versions | Yes       | No              |
 | Visual Studio development  |                                           | Yes       | Yes             |
+
+\* In on-premises environments, PerfTimer only shows results for the client.
 

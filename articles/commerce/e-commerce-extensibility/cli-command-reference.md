@@ -218,6 +218,6 @@ yarn msdyn365 validate ./
 ```
 ## Additional resources
 
-[Architectural overview](architectural-overview.md)
+[E-commerce architectural overview](architectural-overview.md)
 
-[e-Commerce components](ecommerce-components.md)
+[E-commerce components](ecommerce-components.md)

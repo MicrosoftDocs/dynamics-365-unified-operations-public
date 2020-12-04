@@ -18,7 +18,7 @@ ms.search.form: OfficeAppParameters, SysEmailParameters
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
@@ -162,7 +162,7 @@ The Excel Add-In, Data Management Framework, and Power BI reporting are all desi
 
 **Issue:** After the Excel Add-in starts and updates data, you receive the following error message: "An error occurred while writing to the data cache." The details of the error state, "The argument is invalid or missing or has an incorrect format." 
 
-**Explanation:** You receive this error message if the client is open in Internet Explorer, and the user clicks **Open** immediately after he or she selects the **Open in Excel** option. The way that Internet Explorer handles temporary Internet files causes an issue in Excel. This issue, in turn, causes API calls to fail. 
+**Explanation:** You receive this error message if the client is open in Internet Explorer, and the user clicks **Open** immediately after selecting the **Open in Excel** option. The way that Internet Explorer handles temporary Internet files causes an issue in Excel. This issue, in turn, causes API calls to fail. 
 
 **Workaround:** In Internet Explorer, when you open a workbook, click **Save** first, and then click **Open**. The file will then be opened from your Downloads folder. Alternately, use the Edge or Google Chrome browser. By default, both these browsers save files to a Downloads folder. Therefore, the issue doesn't occur. 
 

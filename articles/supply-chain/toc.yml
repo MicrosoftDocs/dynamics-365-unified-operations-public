@@ -16,7 +16,7 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: One Version service updates FAQ
           href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Manage updates and the custom code lifecyle, including Dynamics 365 Commerce
+        - name: Manage updates and the custom code lifecycle, including Dynamics 365 Commerce
           href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
         - name: Software lifecycle policy - Cloud
           href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
@@ -72,12 +72,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.15 (December 2020)
+          - name: Supply Chain Management 10.0.16 (February 2021)
+            href: get-started/whats-new-scm-10-0-16.md
+          - name: Supply Chain Management 10.0.15 (January 2021)
             href: get-started/whats-new-scm-10-0-15.md
           - name: Supply Chain Management 10.0.14 (November 2020)
             href: get-started/whats-new-scm-10-0-14.md
-          - name: Supply Chain Management 10.0.13 (October 2020)
-            href: get-started/whats-new-scm-10-0-13.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -86,8 +86,6 @@
             href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
         - name: AX 2012 features that were postponed
           href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Features not implemented in on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
         - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
           href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
       - name: Documentation resources
@@ -144,7 +142,7 @@
           href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure and filter workspaces
           href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Show pages side by side by using the Open in new window feature
+        - name: Show pages side-by-side by using the Open in new window feature
           href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/supply-chain/toc.json
         - name: Keyboard shortcuts
           href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/supply-chain/toc.json
@@ -1339,6 +1337,8 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
+      - name: Inventory Visibility Add-in
+        href: inventory/inventory-visibility.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence home page
@@ -1371,12 +1371,18 @@
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
+        - name: Master planning with demand forecast
+          href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
+        - name: Intercompany planning
+          href: master-planning/planning-optimization/Intercompany-planning.md
+        - name: Exclude products with certain product lifecycle states
+          href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
@@ -2095,6 +2101,8 @@
             items:
             - name: Configure the production floor execution interface
               href: production-control/production-floor-execution-configure.md
+            - name: Design the production floor execution interface
+              href: production-control/production-floor-execution-tabs.md
             - name: Set up a device to run the production floor execution interface
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface
@@ -2673,6 +2681,14 @@
         href: transportation/transportation-management-status.md
       - name: Zone master
         href: transportation/transportation-management-zone-master.md
+      - name: Carrier groups
+        href: transportation/tasks/carrier-groups.md
+      - name: Load building workbench
+        href: transportation/tasks/load-building-workbench.md
+      - name: Load templates
+        href: transportation/tasks/load-template.md
+      - name: Rating profiles
+        href: transportation/tasks/setup-a-rating-profile.md
       - name: Set up a carrier fuel index
         href: transportation/tasks/set-up-carrier-fuel-index.md
       - name: Set up a transportation tender
@@ -2715,18 +2731,24 @@
           href: warehousing/putaway-clusters.md
         - name: Quality check
           href: warehousing/quality-check.md
+        - name: Troubleshoot inbound warehouse operations
+          href: warehousing/troubleshoot-warehouse-inbound.md
       - name: Outbound warehouse operations
         items:
         - name: Reservations in warehouse management
           items:
           - name: Flexible warehouse-level dimension reservation policy
             href: warehousing/flexible-warehouse-level-dimension-reservation.md
+          - name: Troubleshoot reservations in warehouse management
+            href: warehousing/troubleshoot-warehouse-reservations.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
             href: warehousing/partial-shipping-of-transport-loads.md
           - name: Batch release of partially reserved transfer orders
             href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+          - name: Troubleshoot partial releases and partial shipments
+            href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
         - name: Picking and packing
           items:
           - name: Set up cluster picking
@@ -2765,6 +2787,10 @@
             href: warehousing/outbound-sorting.md
           - name: Put to wall - put to store
             href: warehousing/put-to-wall-put-to-store.md
+          - name: Outbound workload visualization
+            href: warehousing/outbound-workload-visualization.md
+          - name: Troubleshoot picking and packing
+            href: warehousing/troubleshoot-warehouse-picking-packing.md
         - name: Replenishment
           items:
           - name: Replenishment overview
@@ -2777,8 +2803,12 @@
             href: warehousing/tasks/set-up-min-max-replenishment-process.md
           - name: Zone threshold replenishment
             href: warehousing/zone-threshold-replenishment.md
+          - name: Replenishment strategies
+            href: warehousing/replenishment-strategies.md
           - name: Replenishment over location capacity
             href: warehousing/replenishment-over-location-capacity.md
+          - name: Troubleshoot warehouse replenishment
+            href: warehousing/troubleshoot-warehouse-replenishment.md
         - name: Load building and shipments
           items:
           - name: Confirm and transfer
@@ -2793,6 +2823,8 @@
             href: warehousing/wave-template-grouping.md
           - name: Reprint and void wave labels
             href: warehousing/reprint-and-void-wave-labels.md
+          - name: Troubleshoot load building and shipments
+            href: warehousing/troubleshoot-warehouse-loads-shipments.md
         - name: Shipment consolidation policies
           items:
           - name: Shipment consolidation policies
@@ -2809,6 +2841,8 @@
             href: warehousing/consolidate-shipments-manual-workbench.md
           - name: Scenario 5 - Consolidate shipments manually by using the Consolidate shipments page
             href: warehousing/consolidate-shipments-manual-form.md
+        - name: Troubleshoot outbound warehouse operations
+          href: warehousing/troubleshoot-warehouse-outbound.md
       - name: Across the warehouse operations
         items:
         - name: Warehouse work policies
@@ -2865,6 +2899,8 @@
             href: warehousing/change-work-pool-on-work.md
           - name: Item consolidation - location utilization
             href: warehousing/item-consolidation-location-utilization.md
+          - name: Troubleshoot warehouse work
+            href: warehousing/troubleshoot-warehouse-work.md
           - name: Work split
             href: warehousing/work-split.md
       - name: Warehouse setup
@@ -2879,6 +2915,8 @@
             href: warehousing/control-warehouse-location-directives.md
           - name: Work with location directives
             href: warehousing/create-location-directive.md
+          - name: Location stocking limits
+            href: warehousing/location-stocking-limits.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
@@ -2913,6 +2951,8 @@
             href: warehousing/mobile-barcode-support.md
           - name: Set up warehouse for transfer orders
             href: warehousing/transfer-orders-warehouse.md
+          - name: Troubleshooting warehouse configuration
+            href: warehousing/troubleshoot-warehouse-configuration.md
         - name: Install and configure the warehouse app
           items:
           - name: Install and connect the warehouse app
@@ -2949,6 +2989,10 @@
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
             href: warehousing/upgrade-migration-warehouse-management-processes.md
+          - name: Troubleshoot upgrade and migration to advanced warehouse management
+            href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+        - name: Troubleshoot warehouse setup
+          href: warehousing/troubleshoot-warehouse-setup.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide

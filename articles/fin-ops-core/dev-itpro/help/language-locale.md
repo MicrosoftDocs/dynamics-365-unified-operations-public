@@ -15,7 +15,7 @@ ms.date: 05/11/2020
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 

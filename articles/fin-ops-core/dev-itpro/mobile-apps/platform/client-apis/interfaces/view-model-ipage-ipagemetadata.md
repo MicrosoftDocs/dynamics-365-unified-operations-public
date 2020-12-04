@@ -14,7 +14,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: 
+# ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ### Hierarchy
 
-PageMetadata <br>
+PageMetadata
 
 ## Index
 
@@ -38,7 +38,7 @@ PageMetadata <br>
 
 * [Controls](view-model-ipage-ipagemetadata.md#controls)
 * [Design](view-model-ipage-ipagemetadata.md#design)
-* [Id](view-model-ipage-ipagemetadata.md#id)
+* [ID](view-model-ipage-ipagemetadata.md#id)
 * [QuickSubmit](view-model-ipage-ipagemetadata.md#quicksubmit)
 * [SourcePageId](view-model-ipage-ipagemetadata.md#sourcepageid)
 * [SubmitButtonDesign](view-model-ipage-ipagemetadata.md#submitbuttondesign)
@@ -58,10 +58,7 @@ PageMetadata <br>
 
 ### Controls
 
-Controls: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md) \[ \] (optional) 
-
-
-
+Controls: [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md)\[\] (optional) 
 
 ### Design
 
@@ -70,9 +67,9 @@ Design: [Design](view-model-ipage-idesign.md) (optional)
 
 
 
-### Id
+### ID
 
-Id: string (optional) 
+ID: string (optional) 
 
 
 
@@ -100,7 +97,7 @@ SubmitButtonDesign: [Design](view-model-ipage-idesign.md) (optional)
 
 ### Tasks
 
-Tasks: [PageMetadata](view-model-ipage-ipagemetadata.md) \[ \] (optional) 
+Tasks: [PageMetadata](view-model-ipage-ipagemetadata.md)\[\] (optional) 
 
 
 

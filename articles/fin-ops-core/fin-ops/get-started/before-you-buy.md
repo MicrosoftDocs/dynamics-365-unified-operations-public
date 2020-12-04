@@ -5,7 +5,7 @@ title: Before you buy
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
 author: ShellyBakke
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,7 +47,7 @@ The following considerations must be taken when you choose on-premises as a depl
 
 - Regulatory and compliance needs that are not available in the cloud certifications.
 - Disconnected business process with intermittent internet connectivity required to access Microsoft Dynamics Lifecycle Services (LCS) for application lifecycle management.
-- [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md).
+- [Comparison of cloud and on-premises features](cloud-prem-comparison.md).
 - [System requirements for on-premises deployments](system-requirements-on-prem.md).
 
 > [!IMPORTANT]

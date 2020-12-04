@@ -5,6 +5,8 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: December 2, 2020
+      href: hr-whats-new-2020-12-02.md
     - name: October 22, 2020
       href: hr-whats-new-2020-10-22.md
     - name: October 6, 2020
@@ -199,7 +201,7 @@
         href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
       - name: Configure and filter workspaces
         href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
-      - name: Show pages side by side by using the Open in new window feature
+      - name: Show pages side-by-side by using the Open in new window feature
         href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
       - name: Keyboard shortcuts
         href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
@@ -477,6 +479,8 @@
         href: hr-personnel-define-jobs.md
       - name: Create a working times calendar
         href: hr-personnel-create-working-time-calendar.md
+      - name: Recruit job candidates
+        href: hr-personnel-recruit.md
       - name: Personnel actions FAQ
         href: hr-personnel-actions-faq.md
       - name: Use workflows to manage employee information

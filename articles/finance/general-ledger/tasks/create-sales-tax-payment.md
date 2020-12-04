@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create a sales tax payment
-description: The settle and post sales tax job settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period. 
+description: The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period. 
 author: twheeloc
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The settle and post sales tax job settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period.
+The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts, and offsets them to the sales tax settlement account for a given period.
 
-1. Go to Tax > Declarations > Sales tax > Settle and post sales tax.
-2. In the Settlement period field, click the drop-down button to open the lookup.
+1. Go to **Tax > Declarations > Sales tax > Settle and post sales tax**.
+2. In the **Settlement period** field, click the drop-down button to open the lookup.
 3. In the list, click the link in the selected row.
-4. In the From date field, enter a date.
-    * If the Include corrections option is not selected on the General ledger parameters page, the settlement can be processed for different versions. Original is the first settlement for a period interval and can only processed once for a period interval. Latest corrections will settle sales tax transactions which have been posted after the original version has been created.   
-5. In the Transaction date field, enter a date.
-6. Click OK.
+4. In the **From date** field, enter a date.
+    * If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. Original is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions which have been posted after the original version has been created.   
+5. In the **Transaction date** field, enter a date.
+6. Click **OK**.
 

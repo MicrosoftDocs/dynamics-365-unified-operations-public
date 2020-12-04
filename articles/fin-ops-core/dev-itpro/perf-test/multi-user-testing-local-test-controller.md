@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -46,7 +46,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 - You have a development environment that has Platform update 21 or later in your Microsoft Azure subscription.
 > [!IMPORTANT]
 > If your Finance and Operations apps were deployed in 21Vianet, the platform update of your environment must be Platform Update for 10.0.11 or above.
-- You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
+- You have Microsoft Visual Studio Enterprise edition in a development environment.
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
 - C\# performance testing classes have been generated for your end-to-end (E2E) scenarios, and you can run a single-user test by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).

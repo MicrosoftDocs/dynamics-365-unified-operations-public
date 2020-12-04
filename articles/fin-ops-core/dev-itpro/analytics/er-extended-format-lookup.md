@@ -18,7 +18,7 @@ ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -34,16 +34,13 @@ ms.dyn365.ops.version: AX 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-You can use the [Electronic reporting](general-electronic-reporting.md) (ER) framework to configure 
-[formats](general-electronic-reporting.md#FormatComponentOutbound) for outbound documents in accordance to the legal requirements of various countries/regions. You can also use the ER framework to configure [formats](general-electronic-reporting.md#FormatComponentInbound) for parsing inbound documents and use the information from those documents to append or update application data. Each of these formats can used in your Dynamics 365 Finance instance for handling inbound or outbound business documents as part of a certain business process. 
+You can use the [Electronic reporting](general-electronic-reporting.md) (ER) framework to configure [formats](general-electronic-reporting.md#FormatComponentOutbound) for outbound documents in accordance to the legal requirements of various countries/regions. You can also use the ER framework to configure [formats](general-electronic-reporting.md#FormatComponentInbound) for parsing inbound documents and use the information from those documents to append or update application data. Each of these formats can be used in your Dynamics 365 Finance instance for handling inbound or outbound business documents as part of a certain business process.
 
 Usually, you must specify what ER format must be used in a certain business process. To do that, select a single ER format in a lookup field that is configured as part of business process-specific parameters. These lookup fields are usually implemented by using the appropriate API of the ER framework. For more information, see [ER framework API - code to display a format mapping lookup](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-For example, when you configure [foreign trade 
-parameters](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters),
-you need to set up the references to individual ER formats that will be used to generate the Intrastat declaration and the Intrastat declaration control report. The screenshots below show how the ER formats lookup field looks like in the **Foreign trade parameters** page.
+For example, when you configure [foreign trade parameters](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters), you need to set up the references to individual ER formats that will be used to generate the Intrastat declaration and the Intrastat declaration control report. The screenshots below show how the ER formats lookup field looks like in the **Foreign trade parameters** page.
 
-If the current Finance instance contains no Intrastat business process related ER formats, this lookup field will be empty.
+If the current Finance instance contains no Intrastat business process-related ER formats, this lookup field will be empty.
 
 [![Foreign trade parameters page](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
@@ -54,7 +51,7 @@ If the current Finance instance contains Intrastat business process related ER f
 This lookup offers only the ER formats that have already been imported to the current Finance instance. To
 [import](./tasks/er-import-configuration-lifecycle-services.md) ER solutions to the current Finance instance, you need to have permissions to run the appropriate function of the ER framework that supports the [lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md) of ER solutions that contain ER formats.
 
-Starting in the Finance version 10.0.9 (April 2020 release), the user interface of the ER format lookup that is implemented by using the ER framework API, has been extended. You can still select the existing ER formats, which on the **Select format configuration** FastTab. In addition to that, the extended lookup offers the new option to search the Global repository (GR) to locate specific ER formats. All ER formats of the GR are offered on the **Import from Global repository** FastTab.
+Starting in the Finance version 10.0.9 (April 2020 release), the user interface of the ER format lookup that is implemented by using the ER framework API, has been extended. You can still select the existing ER formats, which on the **Select format configuration** FastTab. In addition, the extended lookup offers the new option to search the Global repository (GR) to locate specific ER formats. All ER formats of the GR are offered on the **Import from Global repository** FastTab.
 
 [![Foreign trade parameters page](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
@@ -65,14 +62,13 @@ When you select an ER format on the **Import from Global repository** FastTab, t
 
 [![Foreign trade parameters page](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Then, if the import completes successfully, the reference to the imported ER format is stored in this lookup field. Note that when you access the GR for the first time, you need to follow the link provided to sign up for the [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) that is used to manage access to the GR storage.
+Then, if the import completes successfully, the reference to the imported ER format is stored in this lookup field. When you access the GR for the first time, you need to follow the link provided to sign up for the [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) that is used to manage access to the GR storage.
 
 [![Foreign trade parameters page](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
-By default, the **Import from Global repository** FastTab presents the list of ER formats from the temporary storage that is automatically created based on the GR content for performance improvements. This happens when the **Import from
-Global repository** FastTab is opened the first time, which may take several seconds.
+By default, the **Import from Global repository** FastTab presents the list of ER formats from the temporary storage that is automatically created based on the GR content for performance improvements. This happens when the **Import from Global repository** FastTab is opened the first time, which may take several seconds.
 
-If you do not see the required ER format in the **Import from Global repository** FastTab, but you are sure that this ER format is stored in the GR, select the **Synchronize** option. This will update the temporary storage and synchronize it with the current content of the GR.
+If you do not see the required ER format in the **Import from Global repository** FastTab, but you are sure that this ER format is stored in the GR, select the **Synchronize** option. This option will update the temporary storage and synchronize it with the current content of the GR.
 
 ## Feature activation
 
@@ -84,7 +80,7 @@ The availability of this functionality is controlled by the feature **Extended l
 
 The **Maintain configuration repositories** (**ERMaintainSolutionRepositories**) privilege controls access to the GR for a user opening the ER format lookup with the enabled **Import from Global repository** FastTab. To allow users to access the GR content from the ER format lookups, you need to change the security settings by granting the **ERMaintainSolutionRepositories** privilege to users either directly or by using already assigned roles and duties.
 
-The following screenshot shows how this privilege can be granted to users who are assigned to the **Accountant** role. This role makes allows users to configure foreign trade parameters and set up references to the ER formats in the **File format mapping** and **Report format mapping** fields on the **Foreign trade parameters** page.
+The following screenshot shows how this privilege can be granted to users who are assigned to the **Accountant** role. This role allows users to configure foreign trade parameters and set up references to the ER formats in the **File format mapping** and **Report format mapping** fields on the **Foreign trade parameters** page.
 
 [![Security configuration page](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
 

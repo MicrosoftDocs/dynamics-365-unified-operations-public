@@ -46,7 +46,7 @@ Price adjustments and discounts can be applied to products, variants, or categor
 
 ## Types of discounts
 
-There are four types of discounts:
+There are many types of discounts:
 
 - **Simple discount** – A single percentage or amount.
 - **Quantity discount** – A discount that is applied when two or more products are purchased.

@@ -3,7 +3,7 @@ title: Project onboarding
 description: This topic provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
 author: vetrivicky
 manager: AnnBe
-ms.date: 08/19/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: sericks
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: vetric
 ms.search.validFrom: 2020-5-12 
 ms.dyn365.ops.version:  
 ---
@@ -72,6 +72,8 @@ The **Welcome** page provides general guidance and information that you will nee
 - Verify that all project team members are invited and configured.
 - Set the **Primary contact for FastTrack** option to **Yes** for at least two users who have an active email address in the user list. If this option isn't set to **Yes** for any team member, FastTrack will reach out to all team members for implementation guidance during your implementation. If necessary, you should nominate at least one customer and one partner team member to be contacted by FastTrack.
 - Each team member will be assigned a project security role and an implementation role. The project security role is relevant to access to the LCS project workspace, and the implementation role is relevant to the individual team member's role on the implementation team. We highly recommend that you include representatives from the customer among the project team members who have a monitored email address.
+
+For more information, see [Configuring project security](configure-lcs-security.md#configuring-project-security) and [Roles in a Dynamics 365 implementation](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles).
 
 ## Define milestone dates
 

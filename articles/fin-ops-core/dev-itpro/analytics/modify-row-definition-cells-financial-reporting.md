@@ -18,7 +18,7 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -180,7 +180,7 @@ In the **Format Code** column in a row definition, the **DES**, **LFT**, **RGT**
 
 ### Example of preventing printing of rows
 
-In the following example, Phyllis wants to prevent the heading and underscores in the **Total Cash** row of her report from being printed, because there was no activity in either of the cash accounts. Therefore, in row 220 (which, as the **---** format code indicates, is a formatting row), in the **Related Formulas/Rows/Units** cell, she enters **250**, which is the row code of the amount row that she wants to suppress.
+In the following example, a user wants to prevent the heading and underscores in the **Total Cash** row of her report from being printed, because there was no activity in either of the cash accounts. Therefore, in row 220 (which, as the **---** format code indicates, is a formatting row), in the **Related Formulas/Rows/Units** cell, the user enters **250**, which is the row code of the amount row that the user wants to suppress.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 

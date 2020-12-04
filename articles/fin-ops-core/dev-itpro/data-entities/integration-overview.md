@@ -5,7 +5,7 @@ title: Choose a data integration strategy
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -47,7 +47,7 @@ The following table lists the integration patterns that are available.
 
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
-| Power Platform integration    | [Virtual entities](power-platform/overview.md) |
+| Power Platform integration    | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) |
 | Dual-write                    | [Dual-write overview](dual-write/dual-write-home-page.md) |
 | Classic data integration      | [Classic data integration overview](data-integration-cds.md) |
 | OData                         | [Open Data Protocol (OData)](odata.md) |
@@ -60,7 +60,7 @@ The following table lists the integration patterns that are available.
 > For on premise deployments, the only supported API is the [Data management package REST API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
 
 ## Power platform integration
-Finance and Operations is a virtual data source in Common Data Service, and enables full create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in Finance and Operations. To enable CRUD operations on Finance and Operations entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. This allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations apps. For detailed information, see [Microsoft Power platform integration](power-platform/overview.md).
+Finance and Operations is a virtual data source in Common Data Service, and enables full create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in Finance and Operations. To enable CRUD operations on Finance and Operations entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. This allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations apps. For detailed information, see [Microsoft Power Platform integration](../power-platform/overview.md).
 
 ## Dual-write vs. classic data integration patterns vs. virtual entities
 
@@ -97,7 +97,7 @@ The following examples illustrate this point. You can't assume that the caller w
 | OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
 | Custom service | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
-| Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
+| Batch data API | ImportFromPackage                   | [BeginInvoke](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
 Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run. Here are some examples:
 

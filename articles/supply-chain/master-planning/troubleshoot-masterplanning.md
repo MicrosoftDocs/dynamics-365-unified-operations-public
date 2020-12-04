@@ -72,3 +72,23 @@ When you use operation scheduling where there is finite capacity, and where the 
 ### Issue resolution
 
 If it's essential that no overbooking occur for operation scheduling, you can make the scheduling part of master planning single-threaded by turning on the **Accurate finite capacity for Operation Scheduling** option on the **Master planning parameters** page. This option isn't available by default. You must manually add it to the page by using personalization features. When you use this option, scheduling will run more slowly because of the lack of parallel processing.
+
+## Planned orders take a long time to update.
+
+### Issue description
+
+When updating the requirement quantity and/or delivery date on a planned order, it typically takes at least 30 seconds per order to save the update.
+
+### Issue resolution
+
+This is a known issue with the built-in master planning engine. It is caused by the underlying auto explosion through the BOM structure during edits. This issue is addressed in Planning Optimization, where a planner can update and approve the relevant orders and, when desired, trigger a planning run to update planned orders for the underlying BOM structure.
+
+One way to improve performance with the built-in master planning engine is to do the following:
+
+1. Go to **Master planning \> Setup \> Plans \> Master plans**.
+1. Select a plan.
+1. Expand the **Time fence in days** FastTab.
+1. Set **Explosion** to *Yes*, and set the field below this setting to 0 (zero).
+
+> [!NOTE]
+> This will limit the period for explosions performed for this master plan to a single day.
