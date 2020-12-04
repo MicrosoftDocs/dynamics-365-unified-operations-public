@@ -5,7 +5,7 @@ title: Configure and install Commerce Scale Unit (self-hosted)
 description: This topic explains how you can use self-service to configure Commerce Scale Unit (self-hosted) in Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -36,8 +36,9 @@ ms.dyn365.ops.version: Version 1611
 This topic explains how you can use self-service to configure a Commerce Scale Unit (Self-hosted, previously called Retail Store Scale Unit) in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit combines the Commerce channel database, Commerce Async Client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Commerce Scale Unit.
 
 > [!IMPORTANT]
-> A basic design principle when using a Commerce Scale Unit (Self-hosted, also called a CSU) is that if you are not able to do it on a CSU (Cloud), you should not do it on a CSU (Self-hosted).  In this regard, it is critical to understand that direct database access is not supported and can easily cause breaks in customization that use this concept.  A CSU (Self-hosted) is primarily for usage such as enabling cross terminal scenarios, reducing latency or backup for a poor WAN connectivity, and providing scale out to spread the load of POS terminals across multiple CSU components.
-> It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (Formerly called Secrets) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
+> A basic design principle to follow is that if you are not able to customize in a requested manner on a CSU (Cloud), you should not customize this way with a CSU (Self-hosted).  It is critical to understand that direct database access is not supported and can easily cause breaks in customizations that use this concept.  A CSU (Self-hosted) is primarily for usage such as enabling cross-terminal scenarios, reducing latency or backup for poor WAN connectivity, and providing scale-out to spread the load of POS terminals across multiple CSU components.
+>
+> It is critical to note that this component utilizes a server certificate in addition to Azure Service-to-Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
 
 ## Before you begin
 
@@ -56,7 +57,8 @@ This topic explains how you can use self-service to configure a Commerce Scale U
 To create a functioning Commerce Scale Unit, complete the procedures in all sections of this topic until the "Multiple-computer installation" section. To complete the configuration and installation, you must first do the initial configuration in Headquarters. Next, you must complete the installation. Finally, you must return to Headquarters to finish the configuration, so that Commerce Scale Unit works correctly.
 
 > [!IMPORTANT]
-> Channel functionality, in an on-premises environment, is enabled exclusively via use of Commerce Scale Unit (self-hosted). For an overview, see Commerce Scale Unit (self-hosted). Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of channel components via Lifecycle Services (LCS). The only way to use channel components is by installing Commerce Scale Unit (self-hosted).
+> Channel functionality in an on-premises environment is enabled exclusively via use of Commerce Scale Unit (self-hosted). For an overview, see Commerce Scale Unit (self-hosted). Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of channel components via Lifecycle Services (LCS). The only way to use channel components is by installing Commerce Scale Unit (self-hosted).
+>
 > For on-premises deployments, perform the following steps:
 >   1. Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Channel database group**.
 >   2. On the Action pane, select **New**.
