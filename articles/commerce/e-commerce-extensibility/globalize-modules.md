@@ -128,6 +128,18 @@ cultureInfoFormatter.formatCurrency(34.12, 'inr');
 
 To format a date according to the conventions for a specific locale, use the **formatDate()** method. Here is an example.
 
+#### SDK version 1.27.7 and greater
+```ts
+/**
+ * Returns a localized formatted version of a date
+ *
+ * @param date Date object or valid date string representing the date that will be localized and formatted
+ * @param options An optional argument that controls the formatting.
+ */
+public formatDate = (date: Date | string, options?: IDateFormatOptions): string
+```
+
+#### SDK versions lower than 1.27.7
 ```ts
 /**
  * Returns a localized formatted version of a date
@@ -139,6 +151,7 @@ formatDate(date: Date, options?: IDateFormatOptions): string;
 ```
 
 The **options** argument is optional. It lets you control the localization and formatting. For more information about date formatting properties, see [IDateFormatOptions](#idateformatoptions).
+
 
 #### Date formatting examples
 
@@ -170,6 +183,18 @@ cultureInfoFormatter.formatDate(testDate);
 
 To format a time according to the conventions for a specific locale, use the **formatTime()** method. Here is an example.
 
+#### SDK version 1.27.7 and greater
+```ts
+    /**
+     * Returns a localized formatted version of a time
+     *
+ * @param time Date object or valid date string representing the time that will be localized and formatted
+ * @param options An optional argument that controls the formatting
+ */
+public formatTime = (time: Date | string, options?: ITimeFormatOptions): string
+```
+
+#### SDK versions lower than 1.27.7
 ```ts
 /**
  * Returns a localized formatted version of a time
