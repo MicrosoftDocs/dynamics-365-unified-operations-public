@@ -35,12 +35,10 @@ ms.dyn365.ops.version: 8.0.1
 
 This topic explains how to prepare data from external systems so that it can be imported into Microsoft Dynamics 365 Finance. You use the **Consolidate with import** page (**Consolidations \> Consolidate with import**) to prepare the transfer of subsidiary data from external systems.
 
-1. Create a subsidiary legal entity for the consolidation. For information about how to create legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
-
-    For more information, see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md).
+1. Create a subsidiary legal entity for the consolidation. For information about how to create legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). For more information, see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md).
 
 2. Prepare a file that will contain the data that is imported. For more information about the import process, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-3. Export the data to a file by following the steps in the "Data import/export process" procedure in [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md). You can use that procedure to consolidate data either from another instance of Dynamics 365 Finance or from Dynamics 365 Business Central. If you're importing data from external systems, data must be in this format.
+3. Export the data to a file by following the steps in the "Data import/export process" procedure in [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md). You can use that procedure to consolidate data either from another instance of Dynamics 365 Finance or from Dynamics 365 Business Central. If you're importing data from external systems, data must be in the format that's described in [Export subsidiary data to files](export-subsidiary-data-to-file.md).
 4. Go to **Consolidations \> Consolidate with import**. On the **Consolidate with import** page, on the **Criteria** tab, specify the details of the report and/or the import by setting the following fields.
 
     | Field                                 | Value for the report | Value for the import |
@@ -58,7 +56,7 @@ This topic explains how to prepare data from external systems so that it can be 
 
     | Field                      | Description |
     |----------------------------|-------------|
-    | Source legal entity        | Select the legal entity that you're importing. |
+    | Source legal entity        | Select the legal entity that you're importing from. |
     | Source accounting currency | This default currency is the currency that is associated with the source legal entity that you selected in the **Source legal entity** field. |
     | From and To accounts       | Define the range of accounts to import from the source legal entity. |
     | Exchange rate type         | Select the type of exchange rate. Exchange rate types are assigned when you create a main account. For more information, see [Create a main account](tasks/create-main-account.md). |
