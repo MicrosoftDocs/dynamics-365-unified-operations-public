@@ -2707,6 +2707,10 @@
         href: transportation/tasks/set-up-shipping-carriers.md
       - name: Set up transportation constraints for an item
         href: transportation/tasks/set-up-transportation-constraints-item.md
+    - name: Landed cost
+      items:
+      - name: How Landed cost compares with Transportation management
+        href: warehousing/landed-cost-vs-tms.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
