@@ -718,7 +718,7 @@ The following steps show how this issue might occur.
 
 The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run the format.
 
-![Running the editable format on the Format designer page](./media/er-components-inspections-11e.png)
+![Run the editable format on the Format designer page](./media/er-components-inspections-11e.png)
 
 ### Automatic resolution
 
