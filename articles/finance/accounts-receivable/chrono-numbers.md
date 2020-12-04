@@ -102,7 +102,7 @@ In **Organization administration** > **Number sequences** > **Chronological numb
 ## Documents posting
 When you post a document, the appropriate number sequence group will be dynamically assigned to the document (based on document's posting date) and used to generate a document number via detected number sequence. The system will inform users about number sequence group assignment in information message details.
 
-![Document number](media/chrono-num-sequence-group.jpg)
+![Document number](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
 > Countries.
