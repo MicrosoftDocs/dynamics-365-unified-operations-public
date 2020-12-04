@@ -87,15 +87,15 @@ Similarly configure number sequence groups in **Accounts payable** and **Project
 
 ### Configure number sequence groups chronology
 
-In **Organization administration** > **Number sequences** > **Chronological number sequence groups**, define
+In **Organization administration** > **Number sequences** > **Chronological number sequence groups**, define the applicability conditions for number sequence groups.
 
 ![Chronological numbers setup](media/chrono-num-sequence-group-period.jpg)
 
 | Field            | Description                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Effective  | . |
-| Expiration      | . |
-| Number sequence group | . |
+| Effective  | The start date of number sequence group applicability. |
+| Expiration      | The end date of number sequence group applicability. If no end date applied then use **Never** option. |
+| Number sequence group | Number sequence group that will be used for document numbers generation during the period. |
 | Original number sequence group | . |
 | Default | . |
 
