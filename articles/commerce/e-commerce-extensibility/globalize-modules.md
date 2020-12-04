@@ -185,9 +185,9 @@ To format a time according to the conventions for a specific locale, use the **f
 
 #### SDK version 1.27.7 and greater
 ```ts
-    /**
-     * Returns a localized formatted version of a time
-     *
+/**
+ * Returns a localized formatted version of a time
+ *
  * @param time Date object or valid date string representing the time that will be localized and formatted
  * @param options An optional argument that controls the formatting
  */
