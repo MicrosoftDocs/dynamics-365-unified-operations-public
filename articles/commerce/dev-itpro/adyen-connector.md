@@ -267,7 +267,7 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
 | [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
-| [External gift cards for call center and e-commerce] (https://docs.microsoft.com/dynamics365/commerce/dev-itpro/gift-card | ✔<br>(Starting with 10.0.10) | 
+| [External gift cards for call center and e-commerce](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/gift-card) | ✔<br>(Starting with 10.0.10) | 
 | [SCA payment redirect](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(Starting with 10.0.12) |
 | [Dedicated payment terminals and prompts for a printer and cash drawer](https://docs.microsoft.com/dynamics365/commerce/pos-multi-hws) | ✔<br>(Starting with 10.0.12) | |
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
