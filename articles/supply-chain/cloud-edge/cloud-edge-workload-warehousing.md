@@ -176,6 +176,7 @@ The following table shows which outbound features are supported, and where they 
 | Warehouse work processing (incl. license plate print)        | No  | <p>Yes, but only for the above mentioned supported capabilities. |
 | Cluster picking                                              | No  | Yes|
 | Manual packing processing, incl. 'Packed container picking' work processing                                           | No <P>Some processing can be done after a initial picking process handled by a scale unit, but not recommended due to following blocked operations.</p>  | No  |
+| Remove container from group                        | No  | No                           |
 | Outbound sorting processing                                  | No  | No |
 | Printing of load related documents                           | Yes | No |
 | Bill of lading and ASN generation                            | Yes | No |
@@ -243,12 +244,13 @@ The following table shows which warehouse operations and exception handing featu
 | Change batch disposition code                      | Yes | Yes                          |
 | Display open work list                             | Yes | Yes                          |
 | Consolidate license plates                         | Yes | No                           |
-| Remove container from group                        | No  | No                           |
 | Min/max and zone threshold replenishment processing| Yes | Yes                          |
 | Slotting replenishment processing                  | Yes <p>Note that the setup must be done on the scale unit</p>   | Yes                           |
 | Block and unblock work                             | Yes | Yes                          |
 | Change user                                        | Yes | Yes                          |
+| Change work pool on work                           | Yes | Yes                          |
 | Cancel work                                        | Yes | Yes                          |
+
 
 ### Production
 
