@@ -5,7 +5,7 @@ title: Removed or deprecated features in Dynamics 365 Finance
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: roschlom
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,6 +63,18 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By December 1, 2021, we plan to no longer support the "VAT 100 report" in SSRS format. A new "VAT Declaration Excel (UK)" format under "Tax declaration model" was introduced in the [MTD VAT feature](../localizations/emea-gbr-mtd-vat-integration.md). |
+
+## Features removed or deprecated in the Finance 10.0.15 release
+
+### Internet Explorer 11 support for Dynamics 365 is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
+| **Product areas affected**         | All Dynamics 365 products |
+| **Deployment option**              | All|
+| **Status**                         | Deprecated. Internet Explorer 11 won’t be supported after August 2021.|
 
 ## Features removed or deprecated in the Finance 10.0.12 release
 
