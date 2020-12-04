@@ -64,7 +64,7 @@ Several of the tasks that you can perform on the **Closing and adjustment** page
 The ledger accounts that are updated because of these tasks are linked to the original inventory transaction. For example, if a sales order is settled to a purchase order, the general ledger accounts that were used for the original sales order are adjusted. This behavior occurs even if the ledger accounts for the item group that is assigned to the item have changed since the sales order was posted. After inventory close creates a settlement amount, the settlement amount is still posted to the original ledger accounts, not to the new ledger accounts that are assigned to the item. The general ledger might also be updated if you reverse an inventory close. 
 
 > [!NOTE] 
-> - Inventory close is a required step in the month-end closing procedure for all inventory models except moving average.  You will be warned if you try to close the financial period without first performing the inventory close as of the period end date.
+> - Inventory close is a required step in the month-end closing procedure for all inventory models except moving average.  You will be warned if you try to close a financial period without first performing the inventory close as of the period end date.
 > - Before you run the closing procedure, you can view a list of items that can't be settled during the update.
 > - We recommend that you run inventory close during off-peak hours, to distribute computing resources more evenly.
 
