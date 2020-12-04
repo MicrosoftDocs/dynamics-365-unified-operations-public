@@ -35,9 +35,7 @@ ms.dyn365.ops.version: 8.0.1
 
 You use the **Export** page (**System administration \> Workspaces \> Import/Export**) to prepare to export subsidiary data to files that can then be imported into a consolidated legal entity. For more information about the import and export processes, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
 
-1. Create a legal entity for the consolidation process. For information about how to create legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
-
-    For more information, see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md). However, note that those topics were written for Microsoft Dynamics AX 2012 and are no longer maintained.
+1. Create a legal entity for the consolidation process. For information about how to create legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). For more information, see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md). 
 
 2. Go to **Consolidations \> Export company balances**. On the **Export company balances** page, on the **Criteria** tab, specify the details of the consolidation by setting the following fields.
 
