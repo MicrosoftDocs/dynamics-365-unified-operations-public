@@ -38,7 +38,7 @@ ms.search.validFrom: 2020-03-16
 
 
 
-This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Common Data Service. Specifically, it provides information that can help you fix issues that are related to upgrades of Finance and Operations apps.
+This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues that are related to upgrades of Finance and Operations apps.
 
 > [!IMPORTANT]
 > Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
@@ -50,7 +50,7 @@ This topic provides troubleshooting information for dual-write integration betwe
 You might receive an error message that resembles the following example when you try to use the **DualWriteProjectConfiguration** entity to update a Finance and Operations app to Platform update 30.
 
 ```console
-Infolog diagnostic message: 'Cannot select a record in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
+Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
 10/28/2019 15:18:20: Application configuration sync failed.
 Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw exception(s), please investigate before synchronizing again: 'InfoException:Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN."
 ```
@@ -80,19 +80,19 @@ On the **Dual-write** page, you might receive an error message that resembles th
 To fix the issue, first follow these steps to make sure that the fields are in the entity.
 
 1. Sign in to the VM for the Finance and Operations app.
-2. Go to **Workspaces \> Data management**, select the **Framework parameters** tile, and then, on the **Entity settings** tab, select **Refresh entity list** to refresh the entities.
-3. Go to **Workspaces \> Data management**, select the **Data entities** tab, and make sure that the entity is listed. If the entity isn't listed, sign in to the VM for the Finance and Operations app, and make sure the entity is available.
-4. Open the **Entity mapping** page from the **Dual-write** page in the Finance and Operations app.
-5. Select **Refresh entity list** to automatically fill the fields in the entity mappings.
+2. Go to **Workspaces \> Data management**, select the **Framework parameters** tile, and then, on the **Table settings** tab, select **Refresh entity list** to refresh the tables.
+3. Go to **Workspaces \> Data management**, select the **Data tables** tab, and make sure that the entity is listed. If the entity isn't listed, sign in to the VM for the Finance and Operations app, and make sure the entity is available.
+4. Open the **Table mapping** page from the **Dual-write** page in the Finance and Operations app.
+5. Select **Refresh entity list** to automatically fill the fields in the table mappings.
 
 If the issue still isn't fixed, follow these steps.
 
 > [!IMPORTANT]
 > These steps guide you through the process of deleting an entity and then adding it again. To avoid issues, be sure to follow the steps exactly.
 
-1. In the Finance and Operations app, go to **Workspaces \> Data management**, and select the **Data entities** tile.
+1. In the Finance and Operations app, go to **Workspaces \> Data management**, and select the **Data tables** tile.
 2. Find the entity that is missing the attribute. Click **Modify target mapping** in the toolbar.
 3. On the **Map staging to target** pane, click **Generate mapping**.
-4. Open the **Entity mapping** page from the **Dual-write** page in the Finance and Operations app.
+4. Open the **Table mapping** page from the **Dual-write** page in the Finance and Operations app.
 5. If the attribute is not auto-populated on the map, add it manually by clicking **Add attribute** button and then clicking **Save**. 
 6. Select the map and click **Run**.

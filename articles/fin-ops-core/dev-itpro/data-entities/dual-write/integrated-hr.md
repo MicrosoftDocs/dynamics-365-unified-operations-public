@@ -45,7 +45,7 @@ The integration of HR data involves just mapping the HR data between Finance and
 
 ## Templates
 
-HR data includes information about employees and contractors, positions, and jobs. A collection of entity maps works together during data interaction, as shown in the following table.
+HR data includes information about employees and contractors, positions, and jobs. A collection of table maps works together during data interaction, as shown in the following table.
 
 | Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
 |-----------------------------|----------------------------------|-------------|
@@ -60,7 +60,7 @@ HR data includes information about employees and contractors, positions, and job
 | Position hierarchies | cdm\_jobpositions | |
 | Position type | cdm\_positiontypes | |
 | Position worker assignments | cdm\_positionworkerassignmentmaps | |
-| Worker | cdm\_workers | In Dynamics 365 Finance and Supply Chain Management data, workers are classified as either employees or contractors. Common Data Service can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
+| Worker | cdm\_workers | In Dynamics 365 Finance and Supply Chain Management data, workers are classified as either employees or contractors. Dataverse can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
