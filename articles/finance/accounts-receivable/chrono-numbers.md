@@ -91,6 +91,13 @@ In **Organization administration** > **Number sequences** > **Chronological numb
 
 ![Chronological numbers setup](media/chrono-num-sequence-group-period.jpg)
 
+| Field            | Description                                                                                                                                                                                                                                                                                                                                                                                   |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Effective  | . |
+| Expiration      | . |
+| Number sequence group | . |
+| Original number sequence group | . |
+| Default | . |
 
 ## Invoice posting
 When you post an invoice or a credit note, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
