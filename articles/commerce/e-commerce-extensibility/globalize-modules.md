@@ -126,7 +126,7 @@ cultureInfoFormatter.formatCurrency(34.12, 'inr');
 
 ### Date formatting
 
-To format a date according to the conventions for a specific locale, use the **formatDate()** method. Here is an example.
+To format a date according to the conventions for a specific locale, use the **formatDate()** method as shown the following examples.
 
 #### SDK version 1.27.7 and greater
 ```ts
@@ -181,7 +181,7 @@ cultureInfoFormatter.formatDate(testDate);
 
 ### Time formatting
 
-To format a time according to the conventions for a specific locale, use the **formatTime()** method. Here is an example.
+To format a time according to the conventions for a specific locale, use the **formatTime()** method as shown the following examples.
 
 #### SDK version 1.27.7 and greater
 ```ts
