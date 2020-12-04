@@ -147,7 +147,7 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Error</td>
 <td>
 <p>Group by function cannot be executed with query.</p>
-<p><b>Runtime error:</b> Group by function can not be executed with query.</p>
+<p><b>Runtime error:</b> Group by function can't be executed with query.</p>
 </td>
 </tr>
 <tr>
@@ -223,7 +223,7 @@ The following steps show how this issue might occur.
 1. Start to configure the ER data model and the ER model mapping components simultaneously.
 2. In the data model tree, add a field that is named **X**, and select **Integer** as the data type.
 
-    ![Configuring the ER data model component on the Data model page](./media/er-components-inspections-01.png)
+    ![X field and Integer data type added to the data mode tree on the Data model page](./media/er-components-inspections-01.png)
 
 3. In the model mapping data sources pane, add a data source of the **Calculated field** type.
 4. Name the new data source **Y**, and configure it so that it contains the expression `INTVALUE(100)`.
@@ -231,17 +231,17 @@ The following steps show how this issue might occur.
 6. In the data model designer, change the data type of the **X** field from **Integer** to **Int64**.
 7. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-01.gif)
+    ![validating the editable model mapping component on the Model mapping designer page](./media/er-components-inspections-01.gif)
 
 8. Select **Validate** to inspect the model mapping component of the selected ER configuration on the **Configurations** page.
 
-    ![Validating the ER model mapping component on the Configurations page](./media/er-components-inspections-01a.png)
+    ![Validate to inspect the model mapping component on the Configurations page](./media/er-components-inspections-01a.png)
 
 9. Notice that a validation error occurs. The message states that the value of the **Integer** type that the `INTVALUE(100)` expression of the **Y** data source returns can't be stored in the **X** data model field of the **Int64** type.
 
 The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
 
-![Running the editable format on the Format designer page](./media/er-components-inspections-01b.png)
+![Runtime errors on the Format designer page](./media/er-components-inspections-01b.png)
 
 ### Automatic resolution
 
@@ -271,7 +271,7 @@ The following steps show how this issue might occur.
 6. In the format structure tree, change the data type of the **Y** format element from **Integer** to **Int64**.
 7. Select **Validate** to inspect the editable format component on the **Format designer** page.
 
-    ![Validating the ER format component on the Format designer page](./media/er-components-inspections-02.gif)
+    ![Validating type compatibility on the Format designer page](./media/er-components-inspections-02.gif)
 
 8. Notice that a validation error occurs. The message states that the configured expression can accept only **Int64** values. Therefore, the value of the **X** data model field of the **Integer** type can't be entered in the **Y** format element.
 
@@ -298,7 +298,7 @@ The following steps show how this issue might occur.
 1. Start to configure the ER data model and the ER model mapping components simultaneously.
 2. In the data model tree, add a field that is named **X**, and select **Integer** as the data type.
 
-    ![Configuring the ER data model component on the Data model page](./media/er-components-inspections-01.png)
+    ![Data model tree with X field and Integer data type on the Data model page](./media/er-components-inspections-01.png)
 
 3. In the model mapping data sources pane, add a data source of the **Calculated field** type.
 4. Name the new data source **Y**, and configure it so that it contains the expression `INTVALUE(100)`.
@@ -306,7 +306,7 @@ The following steps show how this issue might occur.
 6. In the model mapping designer, in the data sources pane, delete the **Y** data source.
 7. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-03.gif)
+    ![Inspect teh editable ER model mapping component on the Model mapping designer page](./media/er-components-inspections-03.gif)
 
 8. Notice that a validation error occurs. The message states that the binding of the **X** data model field contains the path that refers to the **Y** data source, but this data source isn't found.
 
@@ -340,13 +340,13 @@ The following steps show how this issue might occur.
 8. Name the new nested field **$AccNumber**, and configure it so that it contains the expression `TRIM(Vendor.AccountNum)`.
 9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the `FILTER(Vendor, Vendor.AccountNum="US-101")` expression in the **Vendor** data source can be queried.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-04.gif)
+    ![Verifying the expression can be queried on the Model mapping designer page](./media/er-components-inspections-04.gif)
 
 10. Notice that a validation error occurs, because the **Vendor** data source contains a nested field of the **Calculated field** type that doesn't allow the expression of the **FilteredVendor** data source to be translated to the direct SQL statement.
 
 The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
 
-![Running the editable format on the Format designer page](./media/er-components-inspections-04a.png)
+![Runtime errors that occur when you run the editable format on the Format designer page](./media/er-components-inspections-04a.png)
 
 ### Automatic resolution
 
@@ -387,17 +387,17 @@ The following steps show how this issue might occur.
 
 9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **GroupedTrans** data source can be queried.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-05b.png)
+    ![Validate the ER model mapping component and verify the configured data source, GroupedTrans can be queried on the Model mapping designer page](./media/er-components-inspections-05b.png)
 
 10. Notice that a validation error occurs, because the **Trans** data source contains a nested field of the **Calculated field** type that doesn't allow the call for the **GroupedTrans** data source to be translated to the direct SQL statement.
 
 The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
 
-![Running the editable format on the Format designer page](./media/er-components-inspections-05c.png)
+![Run time errors that occur when the warning is ignored on the Format designer page](./media/er-components-inspections-05c.png)
 
 ### Automatic resolution
 
-No option to automatically fic this issue is available.
+No option to automatically fix this issue is available.
 
 ### Manual resolution
 
@@ -435,11 +435,11 @@ The following steps show how this issue might occur.
 11. Change the expression of the **Vendor.FilteredTrans** data source from `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` to `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **JoinedList** data source can be queried.
 
-    ![Configuring the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-06b.png)
+    ![Validate the editable model mapping componenent and verify that the JoinedList data source can be queried on the Model mapping designer page](./media/er-components-inspections-06b.png)
 
 13. Notice that a validation error occurs, because the expression of the **Vendor.FilteredTrans** data source can't be translated to the direct SQL call. Additionally, the direct SQL call doesn't allow the call for the **JoinedList** data source to be translated to the direct SQL statement.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-06c.png)
+    ![Runtime errors from failed validation of JoinedList data source on the Model mapping designer page](./media/er-components-inspections-06c.png)
 
 The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
 
@@ -455,7 +455,7 @@ No option to automatically fix this issue is available.
 
 Change the expression of the **Vendor.FilteredTrans** data source from `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` back to `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)`, as the warning advised.
 
-![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-06d.png)
+![Updated expression of data source on the Model mapping designer page](./media/er-components-inspections-06d.png)
 
 #### Option 2
 
@@ -478,11 +478,11 @@ The following steps show how this issue might occur.
 9. Name the new data source **FilteredVendor**, and configure it so that it contains the expression `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-07a.png)
+    ![Validate to inspect the editable model mapping component on the Model mapping designer page](./media/er-components-inspections-07a.png)
 
-11. Notice that validation warnings recommed that you use the **FILTER** function instead of the **WHERE** fuction for the **FilteredVendor** and **FilteredTrans** data sources.
+11. Notice that validation warnings recommend that you use the **FILTER** function instead of the **WHERE** function for the **FilteredVendor** and **FilteredTrans** data sources.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-07b.png)
+    ![Validation warnings recommending filter function instead of where function on the Model mapping designer page](./media/er-components-inspections-07b.png)
 
 ### Automatic resolution
 
@@ -490,7 +490,7 @@ Select **Fix** to automatically replace the **WHERE** function with the **FILTER
 
 Alternatively, you can select the row for a single warning in the grid and then select **Fix selected**. In this case, the expression is automatically changed only in the data source that is mentioned in the selected warning.
 
-![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-07c.png)
+![Select Fix to automatiocally replace the where function with the filter function on the Model mapping designer page](./media/er-components-inspections-07c.png)
 
 ### Manual resolution
 
@@ -511,11 +511,11 @@ The following steps show how this issue might occur.
 7. Name the new data source **FilteredVendorTrans**, and configure it so that it contains the expression `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
 8. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-08a.png)
+    ![Model mapping designer page, Validate button](./media/er-components-inspections-08a.png)
 
 9. Notice that a validation warning occurs. The message recommends that you use the **ALLITEMSQUERY** function instead of the **ALLITEMS** function for the **FilteredVendorTrans** data source.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-08b.png)
+    ![Validatiion warning to use ALLITEMSQUERY function instead of ALLITEMS function on the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-08b.png)
 
 ### Automatic resolution
 
@@ -523,7 +523,7 @@ Select **Fix** to automatically replace the **ALLITEMS** function with the **ALL
 
 Alternatively, you can select the row for a single warning in the grid and then select **Fix selected**. In this case, the expression is automatically changed only in the data source that is mentioned in the selected warning.
 
-![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-08c.png)
+![Model mapping designer page, select Fix selected](./media/er-components-inspections-08c.png)
 
 ### Manual resolution
 
@@ -544,7 +544,7 @@ The following steps show how this issue might occur.
     - Add a nested field of the **String** type, and name it **Name**.
     - Add a nested field of the **String** type, and name it **AccountNumber**.
 
-    ![Configuring the ER data model component on the Data model page](./media/er-components-inspections-09a.png)
+    ![Adding nested fields on the Data model page](./media/er-components-inspections-09a.png)
 
 6. In the model mapping data sources pane, add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 7. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
@@ -558,7 +558,7 @@ The following steps show how this issue might occur.
     - Bind **FilteredVendor.AccountNum** to **Vendor.AccountNumber**.
     - Bind **FilteredVendor.'name()'** to **Vendor.Name**.
 
-    ![Configuring the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-09b.png)
+    ![Binding data model items on the Model mapping designer page](./media/er-components-inspections-09b.png)
 
 13. In the format structure tree, add the following items to generate an outbound document in XML format that contains the vendor details:
 
@@ -576,15 +576,15 @@ The following steps show how this issue might occur.
 
 15. Select **Validate** to inspect the editable format component on the **Format designer** page.
 
-    ![Validating the ER format component on the Format designer page](./media/er-components-inspections-09c.png)
+    ![Validate the format elements you bound to data sources on the Format designer page](./media/er-components-inspections-09c.png)
 
 16. Notice that a validation errors occur. The message states that an error might be thrown for the configured **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format components at runtime if the **model.Vendor** list is empty.
 
-    ![Validating ER format component on the Format designer page](./media/er-components-inspections-09d.png)
+    ![Validation error that notifies of potential error for the configured format compontents](./media/er-components-inspections-09d.png)
 
 The following illustration shows the runtime error that occurs if you ignore the warning, select **Run** to run the format, and select the account number of a nonexistent vendor. Because the requested vendor doesn't exist, the **model.Vendor** list will be empty (that is, it will contain no records).
 
-![Running the editable format on the Format designer page](./media/er-components-inspections-09e.png)
+![Runtime errors because that occurred during the format mapping run](./media/er-components-inspections-09e.png)
 
 ### Automatic resolution
 
@@ -596,7 +596,7 @@ For the selected row in the grid on the **Warnings** tab, you can select **Unbin
 
 You can bind the **Statement\\Party\\Name** format element to the **model.Vendor** data source item. At runtime, this binding calls the **model.Vendor** data source first. When **model.Vendor** returns an empty record list, the nested format elements aren't run. Therefore, no validation warnings occur for this format configuration.
 
-![Validating ER format component on the Format designer page](./media/er-components-inspections-09e.gif)
+![Bind the format element to the data source item on the Format designer page](./media/er-components-inspections-09e.gif)
 
 #### Option 2
 
@@ -607,7 +607,7 @@ Change the binding of the **Statement\\Party\\Name** format element from `model.
 
 Therefore, no validation warnings occur for the **Statement\\Party\\Name** format element when it's bound to the `FIRSTORNULL(model.Vendor).Name` expression.
 
-![Validating the ER format component on the Format designer page](./media/er-components-inspections-09f.gif)
+![Changed binding resolves validation warnings on the Format designer page](./media/er-components-inspections-09f.gif)
 
 #### Option 3
 
@@ -634,17 +634,17 @@ The following steps show how this issue might occur.
 7. Name the new data source **FilteredVendor**, and configure it so that it contains the expression `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)`.
 8. Mark the configured **Vendor** data source as cached.
 
-    ![Configuring the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-10a.gif)
+    ![Configure the model mapping component on the Model mapping designer page](./media/er-components-inspections-10a.gif)
 
 9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
 
-    ![Validating the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-10a.png)
+    ![Validate the filter function applied to the cache vendor data source on the Model mapping designer page](./media/er-components-inspections-10a.png)
 
 10. Notice that a validation error occurs. The message states that the **FILTER** function can't be applied to the cached **Vendor** data source.
 
 The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run the format.
 
-![Running the editable format on the Format designer page](./media/er-components-inspections-10b.png)
+![Runtime error that occurred during the Format mapping run on the Format designer page](./media/er-components-inspections-10b.png)
 
 ### Automatic resolution
 
@@ -675,7 +675,7 @@ The following steps show how this issue might occur.
     - Add a nested field of the **String** type, and name it **Name**.
     - Add a nested field of the **String** type, and name it **AccountNumber**.
 
-    ![Configuring the ER data model component on the Data model page](./media/er-components-inspections-11a.png)
+    ![Add nested fields to the vendor item on the Data model page](./media/er-components-inspections-11a.png)
 
 6. In the model mapping data sources pane, add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 7. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
@@ -691,7 +691,7 @@ The following steps show how this issue might occur.
     > [!NOTE]
     > The **Vendor.Name** data model field remains unbound.
 
-    ![Configuring the ER model mapping component on the Model mapping designer page](./media/er-components-inspections-11b.png)
+    ![Data model items bound to configured data sources and a data mode item that rem on the Model mapping designer page](./media/er-components-inspections-11b.png)
 
 13. In the format structure tree, add the following items to generate an outbound document in XML format that contains the details of the vendors that are inquired about:
 
@@ -747,7 +747,7 @@ The following steps show how this issue might occur.
 5. In the **Excel\\File** element, select workbook file A.
 6. Select **Validate** to inspect the editable format component on the **Format designer** page.
 
-    ![Validating the ER format component on the Format designer page](./media/er-components-inspections-12a.gif)
+    ![Validating the editable format component of the workbook file on the Format designer page](./media/er-components-inspections-12a.gif)
 
 7. Notice that a validation warning occurs. The message states that workbook file **B.xlsx** isn't linked to any components, and that it will be removed after the status of the configuration version is changed.
 
@@ -775,11 +775,11 @@ The following steps show how this issue might occur.
 4. Add the following **Excel\\Cell** element **Title** as the nested element of the **Report** element. In the **Excel range** field, enter **ReportTitle**.
 5. Select **Validate** to inspect the editable format component on the **Format designer** page.
 
-    ![Validating the ER format component on the Format designer page](./media/er-components-inspections-13a.png)
+    ![Validatthe nested elements and fields on the Format designer page](./media/er-components-inspections-13a.png)
 
 6. Notice that a validation warning occurs. The message states that the name **ReportTitle** doesn't exist on sheet **Sheet1** of the Excel template that you're using.
 
-    ![Validating the ER format component on the Format designer page](./media/er-components-inspections-13b.png)
+    ![Validation warning that the name ReportTitle doesn't exist on Sheet1 of the Excel template](./media/er-components-inspections-13b.png)
 
 ### Automatic resolution
 
