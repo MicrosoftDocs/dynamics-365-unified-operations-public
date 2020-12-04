@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Cash flow forecasting
-description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
+title: Troubleshoot cash flow forecasting setup
+description: This topic provides answers to questions that you might have when you configure cash flow forecasting. It addresses frequently asked questions about how to setup cash flow, updates to cash flow, and cash flow Power BI.
 author: panolte
 manager: AnnBe
 ms.date: 12/03/2020
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 10.0.15
 
 ---
 
-# Troubleshoot Cash flow forecasting setup
+# Troubleshoot cash flow forecasting setup
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to questions that you might have when you configure cash flow forecasting[?]. It addresses frequently asked questions about how to setup cash flow, updates to cash flow, and cash flow Power BI. 
+This topic provides answers to questions that you might have when you configure cash flow forecasting. It addresses frequently asked questions about how to setup cash flow, updates to cash flow, and cash flow Power BI. 
 
 ## Why does cash flow only show up for one legal entity?
 Cash flow forecasting is configured and calculated per legal entity. The results are visualized in Power BI reports and in the Cash flow forecasts capability in Finance insights.  Cash flow forecasting must be set up for each legal entity that you’d like to see a forecast for. Review the configuration for cash flow forecasting in all your legal entities. alt: Review the configuration of all the legal entities for cash flow forecasting to ensure that they’re set as you intended.
