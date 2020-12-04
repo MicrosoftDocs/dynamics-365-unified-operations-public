@@ -43,15 +43,15 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Platform updates for version 10.0.15 of Finance and Operations apps
 
-### Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
+### Internet Explorer 11 support for Dynamics 365 is deprecated
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August, 2021.<br><br>This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. |
-| **Replaced by another feature?**   | It is recommended that customers transition to Microsoft Edge.|
-| **Product areas affected**         | Dynamics 365 and Microsoft Power Platform |
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
+| **Product areas affected**         | All Dynamics 365 products |
 | **Deployment option**              | All|
-| **Status**                         | Deprecated - Internet Explorer 11 won’t be supported after August, 2021. |
+| **Status**                         | Deprecated. Internet Explorer 11 won’t be supported after August 2021.|
 
 
 ### Visual Studio add-in to apply metadata hotfixes
