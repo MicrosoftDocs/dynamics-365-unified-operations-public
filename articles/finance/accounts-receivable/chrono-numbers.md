@@ -99,5 +99,8 @@ In **Organization administration** > **Number sequences** > **Chronological numb
 | Original number sequence group | . |
 | Default | . |
 
-## Invoice posting
-When you post an invoice or a credit note, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
+## Documents posting
+When you post a document, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
+
+> [!NOTE]
+> Countries.
