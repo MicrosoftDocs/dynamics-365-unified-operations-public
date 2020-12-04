@@ -105,4 +105,4 @@ When you post a document, the appropriate number sequence group will be dynamica
 ![Document number](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
-> Countries.
+> For some countries there can be a specific logic already implemented for documents numbering. In this case, country-specific logic will override **Chronological numbering** feature.
