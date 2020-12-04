@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 8.0.1
 During a consolidation, you gather transactions from several sets of legal entity accounts into a single set of legal entity accounts. This topic explains how to prepare a legal entity for a consolidation.
 
 > [!NOTE]
-> We recommend that you use Management Reporter for Microsoft Dynamics 365 Finance to combine the financial results for multiple legal entities in a consolidated format. Management Reporter lets you create consolidated financial reports across legal entities, use Excel to import consolidation data from other sources, and translate amounts into any number of reporting currencies without having to run the consolidation process in Dynamics AX.
+> We recommend that you use Management Reporter for Microsoft Dynamics 365 Finance to combine the financial results for multiple legal entities in a consolidated format. Management Reporter lets you create consolidated financial reports across legal entities, use Excel to import consolidation data from other sources, and translate amounts into any number of reporting currencies without having to run the consolidation process in Dynamics 365 Finance.
 
 You can print reports, such as financial statements, from the consolidated legal entity. However, you can't use the consolidated legal entity for daily transactions.
 
