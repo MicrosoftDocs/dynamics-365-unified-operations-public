@@ -401,6 +401,34 @@ When you edit the template from an ER format that is owned by the current active
 1. On the **BDM template editor** page, on the **Template** tab, select **Publish**.
 2. If you select **OK** to confirm publishing, the draft version of the derived **Customer FTI report (GER) Copy** ER format that contains the modified template will be marked as completed. The modified template becomes available for other users. The completed versions of this ER format will keep only the last active revision of your template. Other revisions will be deleted. Select **Cancel** to explore other options.
 
+## Frequently asked questions
+
+#### I selected **Edit document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Microsoft 365 web page.
+This is a known issue with the Microsoft 365 redirection. This happens when you sign to Microsoft 365 the first time. To work around this issue, select the **Back** button of your browser to navigate back.
+
+#### I understand how to edit a template by using Microsoft 365 in the first application session and how to use the template in the second application session adjusting the template to see how my changes affect the generated business document. Can I do this using the Office desktop application?
+Yes, you can. In the first application session, select **Open in Desktop App**. Your template will be stored in the temporary file storage and opened in the Office desktop application. Next, complete the following steps to preview your template changes in the generated business document:
+
+1. Make changes in the template by using the Office desktop application.
+2. Select **Save** in the Office desktop application.
+3. On the **BDM template editor** page of the first application session, select **Sync stored copy**.
+4. Execute this template ER format in the second application session.
+
+#### I get the error 'Value cannot be null. Parameter name: externalId' when I select **Open in Desktop App**. How do I work around this? 
+Most likely you signed in to the current instance of the app of the Azure AD domain which differs from the Azure AD domain that was used to deploy this instance. Because the SharePoint service, which is used to store templates for making them available for editing by using the Office desktop applications, belongs to the same domain, we have no permissions to access the SharePoint service. To resolve this issue, sign in to the current instance using the credentials of a user with the correct Azure AD domain.
+
+## Additional resources
+
+[Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+[ER Design a configuration for generating reports in OPENXML format (November 2016)](tasks/er-design-reports-openxml-2016-11.md)
+
+[Design ER configurations to generate reports in Word format](tasks/er-design-configuration-word-2016-11.md)
+
+[Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md)
+
+[Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
 ## <a name="list-of-configurations-cbd">List of ER configurations that are delivered in Finance application to support configurable business documents</a>
 
 The [list](general-electronic-reporting.md#list-of-configurations) of ER configurations for Finance application is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of currently supported ER configurations. [Filter](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) the Global repository to review the list of ER configurations using to support configurable business documents.
@@ -561,32 +589,3 @@ The presented below table contains the list of ER configurations to support conf
 |                               | Sales order packing slip (LT) (Excel)           |
 |                               | Sales order packing slip (PL) (Excel)           |
 |                               | Sales order packing slip (Word)                 |
-
-## Frequently asked questions
-
-#### I selected **Edit document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Microsoft 365 web page.
-This is a known issue with the Microsoft 365 redirection. This happens when you sign to Microsoft 365 the first time. To work around this issue, select the **Back** button of your browser to navigate back.
-
-#### I understand how to edit a template by using Microsoft 365 in the first application session and how to use the template in the second application session adjusting the template to see how my changes affect the generated business document. Can I do this using the Office desktop application?
-Yes, you can. In the first application session, select **Open in Desktop App**. Your template will be stored in the temporary file storage and opened in the Office desktop application. Next, complete the following steps to preview your template changes in the generated business document:
-
-1. Make changes in the template by using the Office desktop application.
-2. Select **Save** in the Office desktop application.
-3. On the **BDM template editor** page of the first application session, select **Sync stored copy**.
-4. Execute this template ER format in the second application session.
-
-#### I get the error 'Value cannot be null. Parameter name: externalId' when I select **Open in Desktop App**. How do I work around this? 
-Most likely you signed in to the current instance of the app of the Azure AD domain which differs from the Azure AD domain that was used to deploy this instance. Because the SharePoint service, which is used to store templates for making them available for editing by using the Office desktop applications, belongs to the same domain, we have no permissions to access the SharePoint service. To resolve this issue, sign in to the current instance using the credentials of a user with the correct Azure AD domain.
-
-## Additional resources
-
-[Electronic reporting (ER) overview](general-electronic-reporting.md)
-
-[ER Design a configuration for generating reports in OPENXML format (November 2016)](tasks/er-design-reports-openxml-2016-11.md)
-
-[Design ER configurations to generate reports in Word format](tasks/er-design-configuration-word-2016-11.md)
-
-[Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md)
-
-[Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
-
