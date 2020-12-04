@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Consolidate with Import - Format
-description: This topic lists detailed information about the import format that's used when you're consolidating financial data from multiple legal entities. The import format must be saved as a text (.txt) file. 
+title: Import format for consolidation
+description: This topic provides detailed information about the import format that is used when you consolidate financial data from multiple legal entities.
 author: jinniew
 manager: AnnBe
 ms.date: 10/09/2020
@@ -29,26 +29,23 @@ ms.dyn365.ops.version: 8.0.1
 
 ---
 
-# Consolidate with Import - Format 
+# Import format for consolidation
 
-[!include banner] 
+[!include [banner](../includes/banner.md)]
 
-This topic lists detailed information about the import format that's used when you're consolidating financial data from multiple legal entities. The import format must be saved as a text (.txt) file. 
+This topic provides detailed information about the import format that is used when you consolidate financial data from multiple legal entities. The import format must be saved as a text (.txt) file.
 
-The following table lists the import format to use when performing a consolidation during an import. 
+## Import formats
 
-## Import Formats
+The following table lists the import format that you should use when you do a consolidation during an import.
 
-|     Record table    	|     Formats                                                                    	|     Notes                                                                                                                                                                                                                                                                                                                                                                                                     	|
-|---------------------	|--------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-|     1               	|     170150,   Goodwill, 4                                                      	|     Record table   <br>     Source main   account ID <br>     Main account   name <br>     Main account   type <br>                                                                                                                                                                                                                                                                                           	|
-|     2               	|     110130,   2015/01/01, 1, USD, 0,0,80699.39,0,1                             	|     Main account   ID <br>     Transaction   date <br>     Fiscal period   type (0 Opening, 1 Operating, 2 Closing     Transaction   currency <br>     Debit or   Credit (0 for Debit, 1 for Credit) <br>     Posting layer   <br>     Transaction   amounts, Quantity <br>     Local recid   (ambiguous unique int64 value for the transaction) <br>                                                         	|
-|     3               	|     USMF0000009,   2017/01/01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0    	|     Entry number   (budget header transaction number) <br>     Budget header   default date <br>     Budget model   ID <br>     Transaction   type (blank, original budget, etc.) enum integer value <br>     Line date   <br>     Line main account   ID <br>     Line currency   code <br>     Line   transaction currency amount <br>     Line budget   type (expense, revenue) enum integer value <br>    	|
-|     4               	|     DEMF                                                                       	|     RecordCompany   is the source legal entity or the originating transactions                                                                                                                                                                                                                                                                                                                                	|
-|     5               	|     110130,   2015/01/01, 1, USD, 0,0,80699.39,0,1                             	|     RecordCompany   is the source legal entity or the originating transactions                                                                                                                                                                                                                                                                                                                                	|
-|     6               	|     BusinessUnit,   1     Department, 2                                        	|     The financial   dimension attributes defined in the segment order. <br>You can use the   **Export** page to verify how the attributes are defined. <br>                                                                                                                                                                                                                                                   	|
-|     7               	|     002,1,658                                                                  	|     Financial   dimension value <br>     Financial dimension,   as the index provided in RecordDimensions <br>     Ambiguous   unique record ID that’s associated with the unique <br> record ID from   RecordTrans or RecordTrans2. <br>                                                                                                                                                                     	|
-|     8               	|     002,1,1                                                                    	|     Dimension   values associated with the transaction from RecordBudget <br>  Financial   dimension as the index provided in RecordDimensions <br>     Ambiguous   line record ID, which lines up with the order of the transactions lines in the file. <br>                                                                                                                                            	|
-
-
-  
+| Record table | Formats | Notes |
+|--------------|---------|-------|
+| 1            | 170150, Goodwill, 4 | <ul><li>The record table</li><li>The source main account ID</li><li>The main account line</li><li>The main account type</li></ul> |
+| 2            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>The main account ID</li><li>The transaction date</li><li>The fiscal period type (**0** = Opening, **1** = Operating, and **2** = Closing)</li><li>The transaction currency</li><li>Debit or credit (**0** = Debit and **1** = Credit)</li><li>The posting layer</li><li>Transaction amounts, Quantity</li><li>The local RecID (ambiguous, unique int64 value for the transaction)</li></ul> |
+| 3            | USMF0000009, 2017/01/01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0 | <ul><li>The entry number (budget header transaction number)</li><li>The default date of the budget header</li><li>The budget model ID</li><li>The enumeration integer value for the transaction type (blank, original budget, and so on)</li><li>The date of the line</li><li>The main account ID for the line</li><li>The currency code for the line</li><li>The amount for the line, in the transaction currency</li><li>The enumeration integer value for the budget type for the line (expense or revenue)</li></ul> |
+| 4            | DEMF | RecordCompany is the source legal entity or the originating transactions. |
+| 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | RecordCompany is the source legal entity or the originating transactions. |
+| 6            | BusinessUnit, 1 Department, 2 | The financial dimension attributes that are defined in the segment order.<p>You can use the **Export** page to verify how the attributes are defined.</p> |
+| 7            | 002,1,658 | <ul><li>The financial dimension value</li><li>The financial dimension, as the index that is provided in RecordDimensions</li><li>An ambiguous, unique record ID that is associated with the unique record ID from RecordTrans or RecordTrans2</li></ul> |
+| 8            | 002,1,1 | <ul><li>Dimension values that are associated with the transaction from RecordBudget</li><li>The financial dimension, as the index that is provided in RecordDimensions</li><li>An ambiguous line record ID that is aligned with the order of the transaction lines in the file</li></ul> |
