@@ -21,7 +21,6 @@ audience: Developer
 # ms.devlang: 
 
 ms.reviewer: sericks
-# ms.search.scope: Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 24841

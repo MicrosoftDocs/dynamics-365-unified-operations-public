@@ -18,7 +18,6 @@ ms.search.form: PurchaseSpendAnalysisPowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
