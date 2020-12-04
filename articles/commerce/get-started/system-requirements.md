@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: System requirements for cloud deployments of Dynamics 365 Commerece
+title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# System requirements for cloud deployments of Dynamics 365 Commerece
+# System requirements for cloud deployments of Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
 
