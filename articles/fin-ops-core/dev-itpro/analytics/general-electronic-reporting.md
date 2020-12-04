@@ -287,87 +287,11 @@ ER lets you create (derive) a new component from the current version of a compon
 
 ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).
 
-## List of ER configurations that are delivered in the Finance application
+## <a name="list-of-configurations">List of ER configurations that are delivered in the Finance application</a>
 
-| Domain-specific data model configurations: Title | Domain                | Data model–dependent format configurations: Title | Description                                                        |
-|--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
-| Audit file model                                 | Financial audit       |                                                   |                                                                    |
-|                                                  |                       | Audit file (NL)                                   | Audit file format for Netherlands                                  |
-| BAS model                                        | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | BAS (AU)                                          | BAS format for Australia                                           |
-| Construction industry scheme model               | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | CIS Monthly return (UK)                           | CIS monthly return format for the United Kingdom                   |
-| Collection letter model                          | Electronic invoicing  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Collection Letter (DK)                     | OIOUBL collection letter format for Denmark                        |
-| Electronic ledger accounting model (MX)          | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | Auxiliary Ledger XML (MX)                         | Auxiliary ledger transactions per account report format for Mexico |
-|                                                  |                       | Chart of Account XML (MX)                         | Chart of account report format for Mexico                          |
-|                                                  |                       | Journals XML (MX)                                 | Journal transactions report format for Mexico                      |
-|                                                  |                       | Trial Balance XML (MX)                            | Trial balance report format for Mexico                             |
-| Elster model                                     | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | Elster (DE)                                       | Elster format for Germany                                          |
-| EU Sales list model                              | Trade reporting       |                                                   |                                                                    |
-|                                                  |                       | EU Sales list (DE)                                | EU Sales list TXT format for Germany                               |
-|                                                  |                       | EU Sales list (DK)                                | EU Sales list TXT format for Denmark                               |
-|                                                  |                       | EU Sales list (FR)                                | EU Sales list XML format for France                                |
-|                                                  |                       | EU Sales list (NL)                                | EU Sales list XML format for Netherlands                           |
-|                                                  |                       | EU Sales list TXT (UK)                            | EU Sales list TXT format for the United Kingdom                    |
-|                                                  |                       | EU Sales list XML (UK)                            | EU Sales list XML format for the United Kingdom                    |
-|                                                  |                       | EU Sales list by columns report                   | EU Sales list by columns report                                    |
-|                                                  |                       | EU Sales list by rows report                      | EU Sales list by rows report                                       |
-| FEC accounting model (FR)                        | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | FEC Accounting data XML (FR)                      | FEC accounting data export XML format for France                   |
-| German audit file                                | Financial audit       |                                                   |                                                                    |
-|                                                  |                       | German audit file output                          | Audit file output for Germany and Austria                          |
-| Intrastat model                                  | Trade reporting       |                                                   |                                                                    |
-|                                                  |                       | Intrastat (DE)                                    | Intrastat format for Germany                                       |
-|                                                  |                       | Intrastat (DK)                                    | Intrastat format for Denmark                                       |
-|                                                  |                       | Intrastat INTRACOM (FR)                           | Intrastat INTRACOM format for France                               |
-|                                                  |                       | Intrastat SAISUNIC (FR)                           | Intrastat SAISUNIC format for France                               |
-|                                                  |                       | Intrastat (NL)                                    | Intrastat format for the Netherlands                               |
-|                                                  |                       | Intrastat (UK)                                    | Intrastat format for the United Kingdom                            |
-|                                                  |                       | Intrastat report                                  | Intrastat Excel control report                                     |
-| Customer invoice model                           | Electronic invoicing  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Project credit note (DK)                   | OIOUBL Project credit note format for Denmark                      |
-|                                                  |                       | OIOUBL Project invoice (DK)                       | OIOUBL Project invoice format for Denmark                          |
-|                                                  |                       | OIOUBL Sales credit note (DK)                     | OIOUBL Sales credit note format for Denmark                        |
-|                                                  |                       | OIOUBL Sales invoice (DK)                         | OIOUBL Sales invoice format for Denmark                            |
-| OB declaration model                             | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | OB declaration (NL)                               | OB declaration format for the Netherlands                          |
-| Payment model                                    | Payments              |                                                   |                                                                    |
-|                                                  |                       | Betalingsservice (DK)                             | Betalingsservice payment format for Denmark                        |
-|                                                  |                       | Bill of exchange remittance (FR)                  | Bill of exchange remittance format for France                      |
-|                                                  |                       | BTL91 (NL)                                        | BTL91 vendor payment format for the Netherlands                    |
-|                                                  |                       | CFONB Prelevements (FR)                           | CFONB direct debit payment format for France                       |
-|                                                  |                       | CFONB Virements (FR)                              | CFONB domestic vendor payment format for France                    |
-|                                                  |                       | Nordea Vendor (DK)                                | Nordea corporate netbank vendor payment format for Denmark         |
-|                                                  |                       | ANZ Direct Credit Service (AU)                    | Format for ANZ Direct Credit Service for Australia                 |
-|                                                  |                       | CBA Direct Credit Service (AU)                    | Format for CBA Direct Credit Service for Australia                 |
-|                                                  |                       | NAB Direct Credit Service (AU)                    | Format for NAB Direct Credit Service for Australia                 |
-|                                                  |                       | STG Direct Credit Service (AU)                    | Format for STG Direct Credit Service for Australia                 |
-|                                                  |                       | WBC Direct Entry System (AU)                      | Format for WBC Direct Entry System for Australia                   |
-|                                                  |                       | DirectLink (NZ)                                   | Format for DirectLink for New Zealand                              |
-|                                                  |                       | JBA Payment file (JP)                             | JBA Payment format for Japan                                       |
-|                                                  |                       | ISO20022 Credit transfer                          | SEPA Credit transfer format for Europe                             |
-|                                                  |                       | ISO20022 Credit transfer (FR)                     | SEPA Credit transfer format for France                             |
-|                                                  |                       | ISO20022 Credit transfer (DE)                     | SEPA Credit transfer format for Germany                            |
-|                                                  |                       | ISO20022 Credit transfer (NL)                     | SEPA Credit transfer format for the Netherlands                    |
-|                                                  |                       | ISO20022 Direct debit                             | SEPA Direct debit format for Europe                                |
-|                                                  |                       | ISO20022 Direct debit (FR)                        | SEPA Direct debit format for France                                |
-|                                                  |                       | ISO20022 Direct debit (DE)                        | SEPA Direct debit format for Germany                               |
-|                                                  |                       | ISO20022 Direct debit (NL)                        | SEPA Direct debit format for the Netherlands                       |
-|                                                  |                       | BACS (UK)                                         | BACS vendor payment format for the United Kingdom                  |
-| Reverse charge                                   | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | Reverse charge sales list                         | Reverse charge sales list format                                   |
-| Dutch XBRL integration model                     | XBRL reporting        |                                                   |                                                                    |
-|                                                  |                       | Semansys XBRL (NL)                                | Semansys XBRL export format for the Netherlands                    |
-| GAF model (MY)                                   | Financial audit       |                                                   |                                                                    |
-|                                                  |                       | GAF file (MY)                                     | Format of GAF for Malaysia                                         |
-| Vendor aging report (CN)                         | Vendors data analysis |                                                   |                                                                    |
-|                                                  |                       | Vendor aging report format (CN)                   | Vendor aging report format for China                               |
-| Vendor invoice declaration model                 | Vendors data analysis |                                                   |                                                                    |
-|                                                  |                       | Vendor invoice declaration (IS)                   | Vendor invoice declaration format for Iceland                      |
-|                                                  |                       | Vendor invoice declaration report (IS)            | Vendor invoice declaration report for Iceland                      |
+The list of ER configurations for Finance application is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of currently supported ER configurations. Pay attention to the **Discontinuation details** Fast tab for configurations the maintenance of which have been discontinued. 
+
+![Configuration repository page that presents the content of the GLobal repository](./media/er-overview-03.gif)
 
 ## Additional resources
 
