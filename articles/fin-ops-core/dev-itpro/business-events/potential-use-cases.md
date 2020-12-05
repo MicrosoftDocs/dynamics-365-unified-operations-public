@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope: Operations, Core
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
