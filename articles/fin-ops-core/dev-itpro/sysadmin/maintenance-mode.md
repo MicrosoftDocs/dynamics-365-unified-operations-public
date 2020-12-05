@@ -18,7 +18,6 @@ ms.search.form: SysConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70292
 ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc

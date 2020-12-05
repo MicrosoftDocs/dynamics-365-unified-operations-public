@@ -18,7 +18,6 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 13531
 ms.search.region: Global

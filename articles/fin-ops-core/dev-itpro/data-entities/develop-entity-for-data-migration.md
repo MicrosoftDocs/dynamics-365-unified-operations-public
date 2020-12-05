@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83692
 ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
