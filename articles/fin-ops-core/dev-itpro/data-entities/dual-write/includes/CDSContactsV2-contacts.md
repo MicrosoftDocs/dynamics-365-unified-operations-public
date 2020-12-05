@@ -1,6 +1,6 @@
 ## CDS Contacts V2 to contacts
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
 Source filter: `(AssociatedContactType = 1)`
 

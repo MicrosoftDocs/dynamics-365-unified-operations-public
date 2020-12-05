@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21551
 ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
