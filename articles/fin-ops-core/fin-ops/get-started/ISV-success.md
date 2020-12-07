@@ -63,7 +63,7 @@ Content goes here.
 
 ### Table 1.  Severity Rating and Response Times.
 
-| Severity Rating | Situation                                                                                                                      | Engagement Time with Micrososft|
+| Severity Rating | Situation                                                                                                                      | Engagement Time with Microsoft|
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | Sev 1           | Catastrophic business impact:  Complete loss of a core (mission critical) business process and work cannot reasonable continue | 15 minutes                      |
 | Sev 2           | Critical Business impact:  Significant loss or  degradation of services                                                        | 15 minutes                      |
