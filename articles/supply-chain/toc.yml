@@ -2709,8 +2709,14 @@
         href: transportation/tasks/set-up-transportation-constraints-item.md
     - name: Landed cost
       items:
+      - name: Landed cost module overview
+        href: landed-cost/landed-cost-overview.md
       - name: How Landed cost compares with Transportation management
         href: landed-cost/landed-cost-vs-tms.md
+      - name: Set up and configure the Landed cost module
+        items:
+        - name: Landed cost parameters
+          href: landed-cost/landed-cost-parameters.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
