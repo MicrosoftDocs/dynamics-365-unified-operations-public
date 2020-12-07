@@ -39,7 +39,7 @@ For each organization that offers benefits, you must configure settings for bene
    | Field | Description |
    | --- | --- |
    | **Send confirmation email** | When this feature is on, a confirmation email will be sent to employees when they check out from the benefits enrollment experience in Employee self-service. |
-   | **Confirmation email template** | Select the organization email template to use when sending the enrollment confirmation. If you don't select a template, the following generic email will be sent:<br><br>%EmployeeFirstName%,<br><br>Congratulations! You’ve successfully completed benefits enrollment.<br><br>Thank you,<br>/<Company/Org name/> Benefits. |
+   | **Confirmation email template** | Select the organization email template to use when sending the enrollment confirmation. If you don't select a template, the following generic email will be sent:<br><br>%EmployeeFirstName%,<br><br>Congratulations! You’ve successfully completed benefits enrollment.<br><br>Thank you,<br><Company/Org name> Benefits. |
    | **Default email sender address** | The email address to use when sending the confirmation email. |
 
 3. Select **Save**.
