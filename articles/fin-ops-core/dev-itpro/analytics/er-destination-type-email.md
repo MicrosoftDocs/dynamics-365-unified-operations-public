@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 When an Electronic reporting (ER) format is run, one or more outbound documents can be generated. **Folder** or **File** format components are used in ER formats to specify the structure of outbound documents. You can configure an email destination for these types of components to send outbound documents as email attachments.
 
-You can configure an email destination for each **Folder** or **File** component of an ER format. In this case, **each outbound document is emailed individually**. Based on this destination setting, a generated document is delivered as an attachment of an email.
+You can configure an email destination for each **Folder** or **File** component of an ER format. In this case, **each outbound document is emailed individually**. Based on this destination setting, a generated document is delivered as an attachment of an email. 
 
 > [!NOTE]
 > If no document is generated, because the **Enabled** expression for the relevant **File** component has been configured to return a **False** Boolean value, no email is sent, even if an email destination is configured and enabled for the component.
