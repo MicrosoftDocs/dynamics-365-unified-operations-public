@@ -537,9 +537,7 @@
           href: hr-benefits-management-overview.md
         - name: Configure Benefits management
           items: 
-          - name: Configure Benefits management parameters per company
-            href: hr-benefits-setup-parameters-per-company.md
-          - name: Set Benefits management and Employee self-service parameters for all companies
+          - name: Set Benefits management parameters
             href: hr-benefits-setup-parameters.md
           - name: Configure eligibility rules and options
             href: hr-benefits-setup-eligibility-rules.md
