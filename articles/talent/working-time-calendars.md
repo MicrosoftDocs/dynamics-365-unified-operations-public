@@ -32,11 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Working time calendars
 
-The working time calendar enables you to create a calendar with the hours and days that employees work in your organization. Calendars streamline the time off request process by default in the hours or days. When an employee submits a time off request, they don't have to worry about holidays and closures, which is handled for them through the working time calendar.
+The working time calendar enables you to create a calendar with the hours and days that employees work in your organization. Calendars streamline the time off request process by default in the hours or days. When an employee submits a time off request, they don't have to worry about holidays and closures, which are handled for them through the working time calendar.
 
 ## Setting up a working time calendar
 
-Calendars include generation details, the days and hours you want to included, the days of the calendar, working times for those days as well as enrolled employees. 
+Calendars include generation details, the days and hours you want to include, the days of the calendar, working times for those days as well as enrolled employees. 
 
 To set up a calendar, follow these steps:
 
@@ -58,6 +58,6 @@ To set up a calendar, follow these steps:
 
 9. On the **Days** tab, select **Generate** to generate the days in your calendar. Enter the date range for the calendar. The days and working times are generated based on the work days and times defined under the generation options in conjunction with the dates selected.
 
-10. To assign a calendar to employees, select **Assign to employees** in the Action Pane. Select the that employees you would like to assign this calendar to, and then click **Assign**.
+10. To assign a calendar to employees, select **Assign to employees** in the Action Pane. Select the employees that you would like to assign this calendar to, and then click **Assign**.
 
 Employees aren't required to have calendars assigned. If there is a working time calendar defined, off days are automatically excluded from the request. The amount, in hours or days, defaults to the working times defined in the calendar. If an employee doesn't have a calendar assigned, all days are available for time off and the amount of time off is not the default for the request. 
