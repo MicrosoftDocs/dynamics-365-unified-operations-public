@@ -65,7 +65,7 @@ Content goes here.
 
 | Severity Rating | Situation                                                                                                                      | Engagement Time with Microsoft|
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Sev 1           | Catastrophic business impact:  Complete loss of a core (mission critical) business process and work cannot reasonable continue | 15 minutes                      |
+| Sev 1           | Catastrophic business impact:  Complete loss of a core (mission critical) business process and work cannot reasonably continue | 15 minutes                      |
 | Sev 2           | Critical Business impact:  Significant loss or  degradation of services                                                        | 15 minutes                      |
 
 **3.4	 Resolution.**  Participant will analyze, at no additional cost to Microsoft, each Support Request and work with Customer to develop and deliver to Customer one of the resolution types set forth in Table 2 (“Resolution”) for the problem in the Support Request within the service level agreement (“SLA”) specified in Table 2 for each Resolution, based on the severity rating that Microsoft assigns.
