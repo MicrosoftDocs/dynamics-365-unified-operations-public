@@ -5,7 +5,7 @@ title: Electronic reporting (ER) overview
 description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 author: NickSelin
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -287,9 +287,9 @@ ER lets you create (derive) a new component from the current version of a compon
 
 ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).
 
-## <a name="list-of-configurations">List of ER configurations that are delivered in the Finance application</a>
+## <a name="list-of-configurations">List of ER configurations delivered in Finance</a>
 
-The list of ER configurations for Finance application is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of currently supported ER configurations. Pay attention to the **Discontinuation details** Fast tab for configurations the maintenance of which have been discontinued. 
+The list of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of currently supported ER configurations. Review the information on the **Discontinuation details** FastTab for configurations which have been discontinued or are no longer being maintained. 
 
 ![Configuration repository page that presents the content of the GLobal repository](./media/er-overview-03.gif)
 
