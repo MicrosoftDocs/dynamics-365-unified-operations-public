@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
 
