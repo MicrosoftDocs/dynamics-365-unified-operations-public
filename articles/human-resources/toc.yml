@@ -1,7 +1,7 @@
 - name: Dynamics 365 Human Resources
   href: hr-welcome.md
   items:
-  - name: What's new
+  - name: What's new 
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
