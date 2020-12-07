@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Benefits management parameters per company
 
-For each organization that offers benefits, you must configure settings for benefits confirmation emails. 
+For each organization that offers benefits, you must configure settings for benefits confirmation emails.
 
 ## Configure confirmation email settings
 

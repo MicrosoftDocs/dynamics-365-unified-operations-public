@@ -70,4 +70,4 @@ Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you
    | **Benefit verification** | The verification text to use during self-service benefits checkout. |
    | **Auto select designees** | Specifies whether to automatically select dependents and beneficiaries based on their eligibility for plan options. |
 
-3. Select **Save**. 
+3. Select **Save**.
