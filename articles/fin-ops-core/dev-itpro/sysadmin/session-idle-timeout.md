@@ -3,7 +3,7 @@
 
 title: Set the session inactivity timeout
 description: This topic describes how to set the session inactivity timeout.
-author: hasaid
+author: paulliew
 manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.reviewer: sericks
 ms.custom: 13531
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: hasaid
+ms.author: paulliew
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
 

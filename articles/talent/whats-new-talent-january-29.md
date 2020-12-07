@@ -2,8 +2,8 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (January 31, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+description: This topic describes features that are new or changed in Microsoft Dynamics 365 Talent.
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/31/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-01-29
 ms.dyn365.ops.version: Talent
 
@@ -38,7 +38,7 @@ This topic describes features that are either new or changed in Dynamics 365 Tal
 ## Core HR Changes
 
 ### Time off taken on leave people card doesn't consider leave plan dates
-For those that have leave plans that don’t run on a calendar year, the **Taken** card now displays time off that’s been taken in the plan-defined leave year. For example, if an organization’s leave year is June 1 through May 30 and an employee has taken 3 days off in December, the **Taken** card on January 15, will display 3 days. 
+For leave plans that don’t run on a calendar year, the **Taken** card now displays time off that’s been taken in the plan-defined leave year. For example, if an organization’s leave year is June 1 through May 30 and an employee has taken three days off in December, the **Taken** card on January 15, will display 3 days. 
 
 ### Accrual amounts not matching tier date basis
 New options have been added to leave and absence (**Human resources** parameters) to enable customers to determine when employees’ months of service date are effective. For some organizations, the date is the end of the month, but for others it may be the start of the next month. For example, one organization may award time off on December 31, while another may award time off on January 1. This option will allow you to choose when the award should occur. 
