@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set Benefits management and Employee self-service parameters for all companies
-description: Configure parameters for Benefits management and Employee self-service in Microsoft Dynamics 365 Human Resources.
+title: Set Benefits management parameters
+description: Configure parameters for Benefits management in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 12/07/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set Benefits management and Employee self-service parameters for all companies
+# Set Benefits management parameters
 
 Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you must configure Benefits management parameters. These parameters set default values, reason codes, and other options.
 
@@ -48,18 +48,16 @@ Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you
    | **Reopen reason code** | The reason code to use when an employee benefit plan is reopened. It displays in a dialog during the cancellation process. Users can change the **Reopen reason code** if necessary. | 
    | **Life event reason code** | The reason code to use when a life event occurs. |
    | **Rate change reason code** | The reason code to use when canceling and reopening an employee benefit plan during the rate change update process. It indicates which records were changed by the rate change update process. |
-   | **Benefits annual salary** | Enables you to set a **Benefits annual salary** amount for an employee. Human Resources will use the **Benefits annual salary** amount when determining coverage amounts, instead of the fixed compensation annual amount. |
+   | **Benefits annual salary** | Enables you to set a **Benefits annual salary** amount for an employee. Human Resources will use the **Benefits annual salary** amount when determing coverage amounts, instead of the fixed compensation annual amount. |
    | **New hire eligible** | Specifies whether new hires are eligible. |
    | **New hire enrollment period** | The period of time the new hire enrollment is allowed.</br></br>**Note**: This setting overrides any new hire enrollment period you set on the plan eligibility rule. |
    | **Default pay frequency** | The default pay frequency to use when new workers are added. |
    | **Life events enabled** | Enables life events. |
    | **Hide legacy benefit forms** | Allows you to hide legacy benefit forms. |
-   | **Benefit verification** | The verification text to use during self-service benefits checkout. |
-   | **Auto select designees** | Specifies whether to automatically select dependents and beneficiaries, based on their eligibility for plan options. |
 
 3. Select **Save**.
 
-## Configure Employee self-service parameters
+## Configure Employee self service parameters
 
 1. In the **Benefits management** workspace, under **Setup**, select **Human Resources Parameters**.
 
