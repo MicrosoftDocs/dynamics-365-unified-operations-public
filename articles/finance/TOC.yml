@@ -3737,6 +3737,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
           - name: Compress large outbound documents
             href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
+        - name: Inspect configured ER components
+          href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations
