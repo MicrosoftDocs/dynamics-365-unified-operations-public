@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,16 @@ This list is intended to help you consider these removals and deprecations for y
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Platform updates for version 10.0.15 of Finance and Operations apps
+
+### Internet Explorer 11 support for Dynamics 365 is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
+| **Product areas affected**         | All Dynamics 365 products |
+| **Deployment option**              | All|
+| **Status**                         | Deprecated. Internet Explorer 11 won’t be supported after August 2021.|
 
 
 ### Visual Studio add-in to apply metadata hotfixes
