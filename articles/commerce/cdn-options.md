@@ -45,16 +45,15 @@ The three CDN options that can be used with Dynamics 365 Commerce environments a
 
 Only custom domain dynamic HTML content is delivered using these CDN options. Commerce automatically handles all JavaScript, Cascading Style Sheets (CSS), images, video, and other static content through Microsoft-managed CDNs. The CDN option chosen determines the operational, control, and additional security capabilities.
 
-The following illustration shows an overview of how Dynamics 365 Commerce interacts with a CDN. 
+The following illustration shows an overview of Dynamics 365 Commerce and CDN service architecture. 
 
-![Overview of CDN and Dynamics 365 Commerce architecture](media/Commerce_CDN-Options_Overview.png)
+![Overview of Dynamics 365 Commerce and CDN architecture](media/Commerce_CDN-Options_Overview.png)
 
 For more information on setting up an Azure Front Door instance for your Commerce site, see [Add CDN Support](add-cdn-support.md).
 
 ## Use a Dynamics 365 Commerce Azure Front Door instance
 
-The Azure Front Door instance provided by Dynamics 365 Commerce, and is hosted by the Commerce team.
-
+The following table lists the pros and cons of using a Dynamics 365 Commerce Azure Front Door instance to manage your content endpoints.
 
 | Pros | Cons |
 | ---- | ---- |
@@ -118,7 +117,7 @@ The following illustration shows the architecture of the Commerce-provided Azure
 
 ## Use a customer-owned Azure Front Door instance
 
-Subscribe to Azure Front Door within your Azure Subscription.
+The following table lists the pros and cons of using a customer-owned Azure Front Door instance to manage your content endpoints.
 
 | Pros | Cons |
 | ---- | ---- |
@@ -175,13 +174,13 @@ Subscribe to Azure Front Door within your Azure Subscription.
 </table>
 -->
 
-The following illustration shows the architecture of the customer-owned Azure Front Door instance.
+The following illustration shows how Commerce infrastructure interacts with a customer-owned Azure Front Door instance. 
 
 ![Customer-owned Azure Front Door](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png) 
 
 ## Use an external content delivery network (CDN)
 
-Use an external CDN provider instance to manage your content endpoints.
+The following table lists the pros and cons of using an external CDN provider instance to manage your content endpoints.
 
 | Pros | Cons |
 | ---- | ---- |
@@ -238,9 +237,9 @@ Use an external CDN provider instance to manage your content endpoints.
 
 -->
 
-The following illustration shows 
+The following illustration shows how Commerce infrastructure interacts with an external CDN service. 
 
-![External Front Door](media/Commerce_CDN-Option_ExternalFrontDoor.png) 
+![External CDN](media/Commerce_CDN-Option_ExternalFrontDoor.png) 
 
 ## Additional resources
 
