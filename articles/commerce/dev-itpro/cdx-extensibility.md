@@ -171,7 +171,7 @@ To pull data from a new channel table to HQ, you have two options:
     > If you are creating an extended table and want to sync the data back to HQ, then its must to have the same primary key and Clustered index as the HQ table in the extended table, else the CDX sync will fail. And if you need to pull the data from the extension table to HQ then REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) is required in the extension table.
 
     > [!NOTE]
-    > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job.
+    > You can either add this new table as part of the existing pull job (P-0001) or create a new pull job.
 
 ## Other scenarios
 
