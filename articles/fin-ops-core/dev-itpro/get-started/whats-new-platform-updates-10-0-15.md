@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.15 of Finance and Operations apps (Janu
 description: This topic lists the features that are included in the platform updates for version 10.0.15 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 10/09/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.15
 # Platform updates for version 10.0.15 of Finance and Operations apps (January 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists the features that are included in the platform updates for version 10.0.15 of Finance and Operations apps. This version has a build number of 7.0.5816 and is available on the following schedule:
 
