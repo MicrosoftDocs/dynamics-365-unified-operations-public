@@ -5,7 +5,7 @@ title: Choose a data integration strategy
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -34,6 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 
 The topic describes integration patterns, integration scenarios, and integration solutions and best practices. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
@@ -45,6 +46,7 @@ The following table lists the integration patterns that are available.
 
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
+| Power Platform integration    | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) |
 | Dual-write                    | [Dual-write overview](dual-write/dual-write-home-page.md) |
 | Classic data integration      | [Classic data integration overview](data-integration-cds.md) |
 | OData                         | [Open Data Protocol (OData)](odata.md) |
@@ -56,17 +58,21 @@ The following table lists the integration patterns that are available.
 > [!NOTE]
 > For on premise deployments, the only supported API is the [Data management package REST API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
 
-## Dual-write vs. classic data integration patterns
+## Power platform integration
+Finance and Operations is a virtual data source in Common Data Service, and enables full create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in Finance and Operations. To enable CRUD operations on Finance and Operations entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. This allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations apps. For detailed information, see [Microsoft Power Platform integration](../power-platform/overview.md).
+
+## Dual-write vs. classic data integration patterns vs. virtual entities
 
 Dual-write provides synchronous, bi-directional, near-real time experience between model-driven applications in Dynamics 365 and Finance and Operations applications. Data synchronization happens with little or no intervention and is triggered by create, update and delete actions on an entity. Dual-write is suitable for interactive business scenarios that span across Dynamics 365 applications.
 
 Classic data integration provides asynchronous and uni-directional data synchronization experience between model-driven applications in Dynamics 365 and Dynamics 365 Finance and Operations applications. It's an IT-administrator led experience and you must schedule the data sync jobs to run on a specific cadence. Classic data integration is suitable for business scenarios that involves bulk ingress/egress of data across Dynamics 365 applications.
 
 | Pattern                       | Timing                        | Batch | Technology | Finance and Operations app | Model-driven apps in Dynamics 365 |
-|-------------------------------|-------------------------------|-------|---|
+|-------------------------------|-------------------------------|-------|---|------|------------|
 | Dual-write             | Synchronous<br>Bi-directional   | No    | OData | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent | 
 | Classic data integration | Asynchronous, uni-directional | Yes   | DIXF | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent |
 
+Virtual entities provide a mechanism to use Microsoft Power Platform with Finance and Operations without having to physically copy data to Common Data Service. This guidance must be used to determine if the requirements will need dual-write or data integrator or virtual entities. Virtual entities and dual-write/data integrator are complementary technologies such that, they can be used together if required.
 
 ## Synchronous vs. asynchronous integration patterns
 
@@ -90,7 +96,7 @@ The following examples illustrate this point. You can't assume that the caller w
 | OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
 | Custom service | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
-| Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
+| Batch data API | ImportFromPackage                   | [BeginInvoke](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
 Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run. Here are some examples:
 

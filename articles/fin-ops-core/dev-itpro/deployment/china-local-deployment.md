@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -33,6 +32,8 @@ ms.dyn365.ops.version:
 # Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“**21Vianet**”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
@@ -88,6 +89,7 @@ Due to certain technical dependencies, the following features listed will not be
     -   The **System administration \> Setup \> B2B Invitation configuration** page will not be available due to business-to-business (B2B) being unavailable in Azure Active Directory in China. For more information, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
 -   [Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 2 SKU. This is unavailable in China. 
+-   The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China.
 
 ## Additional resources
 

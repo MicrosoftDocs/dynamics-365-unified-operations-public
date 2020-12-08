@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/18/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: SysEmailParameters
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268274
 ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
@@ -32,13 +32,15 @@ ms.dyn365.ops.version: AX 7.0.0
 # Configure and send email
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
 Both administrators and users set the behavior of the email subsystem.
 
-## Administrator: Email parameters page
+## [Administrator] Email parameters page 
 
+### Configuration tab
 On the **Email parameters** page, note the following settings on the **Configuration** tab.
 
 | Field                 | Description |
@@ -48,6 +50,9 @@ On the **Email parameters** page, note the following settings on the **Configura
 
 In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. By default, the last 30 days of email history is retained. This can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
 
+In version 10.0.16/Platform 40, an **Email throttling** section is visible, if your environment has enabled the **Email throttling** feature in Feature management. This feature allows non-interactive email providers  (such as the batch email provider) to adhere to a per-minute sending limit. This can prevent errors from the system attempting to send more emails than the provider allows. The sending limits for Microsoft 365 email providers are set automatically according to [Exchange Online sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits?sending-limits#sending-limits). Manual configuration is required for all other email providers. The per-minute sending limit can be removed from a provider by resetting the **per-minute email sending limit** field to 0.
+
+### SMTP settings tab
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
 <table>
@@ -82,26 +87,26 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </tbody>
 </table>
 
-## Administrator: Email Distributor batch process
+## [Administrator] Email distributor batch process
 
 Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process. That batch process must be started to process the email queue. To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.
 
 If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be sender.
 
-## Administrator: User email
+## [Administrator] User email
 
-The default **send from** address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). Users can override this **send from** default if needed using the **Sender email** field on the **Options** page.
+The default **send from** address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). Administrators can override this **send from** default if needed using the **Sender email** field on the **Options** page.
 
-## User: Email provider selection section on the Options page
+## [User] Email provider selection section on the Options page
 
 The **Options** page can be opened via **Settings &gt; User options**. The **Email provider selection** section is on the **Account** tab.
 
 | Field             | Description |
 |-------------------|-------------|
 | Email provider ID | Allows the user to select the email provider that should be used when sending an email. Selecting an option here is the equivalent of selecting **Do not ask again** in the **How would you like to send email** dialog box. Selecting the blank option **Prompt for which email provider to use** will cause the **How would you like to send email** dialog box to display when an email is going to be sent. |
-| Sender email    | Allows the user to provide an email address override for the **From** field of the email. By default, the email alias that associated with the user account is used as the **From** field in new emails, but this user option email address will override that. When sending email via SMTP the user needs to have appropriate **Send As** and **Send On Behalf Of** permissions configured in Exchange or on the SMTP server.<blockquote>[!NOTE] You can configure **Send As** and **Send On Behalf Of** permissions in the Microsoft 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).</blockquote> |
+| Sender email    | Allows the administrator to provide an email address override for the user in the **From** field of the email. By default, the email alias that is associated with the user account is used as the **From** field in new emails, but this user option email address will override that. When sending email via SMTP, the user needs to have appropriate **Send As** and **Send On Behalf Of** permissions configured in Exchange or on the SMTP server.<blockquote>[!NOTE] You can configure **Send As** and **Send On Behalf Of** permissions in the Microsoft 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).</blockquote> |
 
-## User (optional): How would you like to send email dialog box
+## [User] How would you like to send email dialog box (optional)
 
 When an email is going to be sent, the user will see the **How would you like to send email** dialog box that will list the available options for sending email.
 
@@ -112,7 +117,7 @@ When an email is going to be sent, the user will see the **How would you like to
 | Use the system email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
-## User (optional): Send email dialog box
+## [User] Send email dialog box (optional)
 
 The **Send email** dialog box is opened to allow the user to edit the contents of the email that will be sent. Some of the following fields will be pre-populated in this window.
 
@@ -166,7 +171,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes.
 
-## Administrator: Workflow email notifications
+## [Administrator] Workflow email notifications
 
 Workflow email configuration is a collection of related settings that work in conjunction.
 

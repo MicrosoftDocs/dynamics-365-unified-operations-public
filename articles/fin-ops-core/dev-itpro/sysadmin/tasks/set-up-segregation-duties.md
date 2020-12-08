@@ -3,7 +3,7 @@
  
 title: Set up segregation of duties
 description: You can set up rules to separate tasks that must be performed by different users. 
-author: maertenm
+author: peakerbl
 manager: AnnBe 
 ms.date: 06/25/2019
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: SysSecSegregationOfDutiesRule
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

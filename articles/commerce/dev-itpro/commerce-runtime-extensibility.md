@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Commerce runtime (CRT) and Retail Server extensibility
+title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail server. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/20/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
@@ -30,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Commerce runtime (CRT) and Retail Server extensibility
+# Commerce runtime (CRT) extensibility
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes various ways that you can extend the commerce runtime (CRT) and create a new Retail Server API. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence.
+This topic describes various ways that you can extend the commerce runtime (CRT). It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence.
 
 CRT contains the core business logic. If you want to add or modify any business logic, you should customize CRT. All the CRT code is developed by using C#, and then it's compiled and released as class libraries (.NET assemblies). Point of sale (POS) is a thin client. All the business logic is done in CRT. POS calls CRT to perform any business logic, and CRT processes the information and then sends it back to POS.
 
@@ -647,9 +646,13 @@ When you want to use the new entity in a service, the process is straightforward
             }
 ```
 
+
+> [!NOTE]
+> Commerce entities are not thread safe, which means that the same object should not be read or modified when another thread is writing to it. This applies to custom entities and OOB entities in the extension code. Avoid two different threads when performing read/write activities for the same shared object synchronously.
+
 For the preceding example, the CRT runtime engine automatically makes a query to the channel database via the registered data adapter. It queries a type that has the name **crt.ISVRetailStoreHoursView**, and generates a **where** clause and columns as specified in the code. The customizer is responsible for providing the SQL objects as part of the customization.
 
-## Adding pre-triggers and post-triggers for a specific request
+## Adding pre-triggers and post-triggers for a specific request 
 
 For information about how to create CRT triggers extension, see [Commerce runtime (CRT) triggers extension](commerce-runtime-extensibility-trigger.md).
 

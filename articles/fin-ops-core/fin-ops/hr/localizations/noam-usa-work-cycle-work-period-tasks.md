@@ -18,7 +18,7 @@ ms.search.form: PayrollWorkCycle
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222654
 ms.assetid: 0411cb4d-f83a-4c0f-b8a3-9ba152b66e0d

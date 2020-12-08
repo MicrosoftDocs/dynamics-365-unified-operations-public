@@ -17,7 +17,6 @@ ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -44,14 +43,14 @@ In this example, you will use created ER configurations for sample company, 'Lit
     * Run the format for testing purposes.  
 6. Select Yes in the Negotiable check format field.
 7. Click OK.
-    * Review the created output. Note that the company logo is presented in the report as well as the authorized person's signature. The signature image is taken from the field of the 'Container' data type of the cheque layout record which is associated with the selected bank account.  
+    * Review the created output. The company logo is presented in the report as well as the authorized person's signature. The signature image is taken from the field of the 'Container' data type of the cheque layout record that is associated with the selected bank account.  
 8. Expand the Copies section.
 9. Click Edit.
 10. In the Watermark field, enter 'Print watermark as Void'.
     * Change the watermark layout setting to show the watermark text in generating document in an Excel shape element.  
 11. Click Print test.
 12. Click OK.
-    * Review the created output. Note that the watermark is shown in the created report in accordance to the selection option.  
+    * Review the created output. The watermark is shown in the created report in accordance to the selection option.  
 13. Close the page.
 14. On the Action Pane, click Manage payments.
 15. Click Checks.
@@ -59,8 +58,8 @@ In this example, you will use created ER configurations for sample company, 'Lit
 17. Apply the following filters: Enter a filter value of "381","385","389" on the "Check number" field using the "is one of" filter operator.
 18. In the list, mark all rows.
 19. Click Print check copy.
-    * Run the format to re-print the selected cheques.  
-    * Review the created output. Note that the selected cheques have been re-printed. The company logo and labels are not printed out since they are presented on the pre-printed form.  
+    * Run the format to reprint the selected cheques.  
+    * Review the created output. The selected cheques have been reprinted. The company logo and labels are not printed out since they are presented on the pre-printed form.  
 
 ## Modify the mapping of the imported data model
 1. Close the page.
@@ -70,8 +69,8 @@ In this example, you will use created ER configurations for sample company, 'Lit
 5. Click Designer.
 6. Click Map model to datasource.
 7. Click Designer.
-    * We will change the binding of the data model's signature item to get the signature image from the file that has been attached to the cheque layout record which is associated with the selected bank account.  
-8. Turn Show details off.
+    * We will change the binding of the data model's signature item to get the signature image from the file that has been attached to the cheque layout record that is associated with the selected bank account.  
+8. Turn off Show details.
 9. In the tree, expand 'layout'.
 10. In the tree, expand 'layout\signature'.
 11. In the tree, select 'layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp'.
@@ -95,7 +94,7 @@ In this example, you will use created ER configurations for sample company, 'Lit
 4. Click Check.
 5. Click Print test.
 6. Click OK.
-    * Review the created output. Note that the image from the Document Management attachment is presented as the signature of an authorized person.  
+    * Review the created output. The image from the Document Management attachment is presented as the signature of an authorized person.  
 
 ## Use MS Word document as a template in the imported format
 1. Close the page.
@@ -122,5 +121,5 @@ In this example, you will use created ER configurations for sample company, 'Lit
 21. Click Check.
 22. Click Print test.
 23. Click OK.
-    * Review the created output. Note that the output has been generated as a MS Word document with embedded images presenting the company logo, the signature of an authorized person and the selected text of the watermark.  
+    * Review the created output. The output has been generated as a Word document with embedded images presenting the company logo, the signature of an authorized person and the selected text of the watermark.  
 

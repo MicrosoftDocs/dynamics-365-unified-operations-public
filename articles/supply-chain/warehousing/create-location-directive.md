@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create location directives
-description: This topic explains how to create location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
+title: Work with location directives
+description: This topic describes how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
 author: Mirzaab
 manager: tfehr
-ms.date: 07/28/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,15 +23,14 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-07-28
-ms.dyn365.ops.version: Release 10.0.9
+ms.search.validFrom: 2020-11-13
+ms.dyn365.ops.version: Release 10.0.15
 ---
-
-# Create location directives
+# Work with location directives
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement. For example, for a sales order transaction, a location directive determines where items will be picked and where the picked items will be put.
+Location directives are rules that help identify pick and put locations for inventory movement. For example, in a sales order transaction, a location directive determines where the items will be picked, and where the picked items will be put. Location directives consist of a header and associated lines. They are created for specific *work order types*.
 
 > [!NOTE]
 > This topic applies to features in the **Warehouse management** module. It doesn't apply to features in the [Inventory management](../inventory/inventory-home-page.md) module.
@@ -47,83 +46,218 @@ You can use location directives to perform the following tasks:
 
 Before you can create a location directive, you must follow these steps to make sure that the prerequisites are in place.
 
+1. Make sure that the required license key is turned on. Go to **System administration \> Setup \> License configuration**, expand the **Trade** license key, and then select the **Warehouse and Transportation management** configuration key. Note that admin access is required for this step.
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 1. Create a warehouse.
 1. On the **Warehouse** FastTab, set the **Use warehouse management processes** option to *Yes*.
 1. Create locations, location types, location profiles, and location formats. For more information, see [Configure locations in a WMS-enabled warehouse](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 1. Create sites, zones, and zone groups. For more information, see [Warehouse set up](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) and [Configure locations in a WMS-enabled warehouse](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 
-## Setup
+## Work order types for location directives
 
-### Create location directives
+Many of the fields that can be set for location directives are common to all work order types. However, other fields are specific to particular work order types.
 
-To create a location directive, follow these steps.
+![Location directives work order types](media/Location_Directives_Work_Order_Types.png "Location directives work order types")
 
-1. Go to **Warehouse management \> Setup \> Location directives**.
-1. In the list pane, set the **Work order type** field to the type of inventory transaction that you're creating a location directive for.
-1. On the Action Pane, select **New** to create a location directive.
-1. For the new location directive, set the fields as described in the following table.
+> [!NOTE]
+> Two work order types, *Canceled work* and *Cycle counting*, are used only by the system. Location directives can't be created for these work order types.
 
-    | Field | Description |
-    |---|---|
-    | Sequence number | Enter an integer that indicates the sequence position of the location directive. Sequence positions determine when each location directive is processed for the selected work order type. |
-    | Name | Enter a name for the location directive. | 
-    | Work type | Select the type of work that should be performed. The list of values depends on the type of inventory transaction that you selected in the **Work order type** field. The following values might be available:<ul><li>**Put** – The location directive will try to find the best location to place or locate inventory that comes into the system through receiving, production, or inventory adjustments. The location directive is also used to define the put-to-stage location or final bay door shipping location in the outbound flow.</li><li>**Pick** – The location directive will try to find the best locations to physically reserve inventory from (create work). The pick can be completed (that is, the pick work line can be closed), even if the work isn't completed. The user can complete physical picking. In the system, that action is a pick step. The user can then cancel from the mobile device and complete the work (for example, put) later. However, the work header is first closed when the final put is completed.</li><li>**Counting**, **Adjustments**, **Custom**, **Inventory status change**, **License plate building**, **Print**, **Status change**, and **Pack to nested license plates** – These values can't be used in any location directive setup.</li></ul> |
-    | Site | Select the site where the work should be completed. |
-    | Warehouse | Select the warehouse location where the work should be completed. |
-    | Directive code | Select a directive code to guide the selection of location directives that are related to the work template put lines where this code is assigned. On the **Directive code** page, you can create new codes that can be used to connect a work template to a location directive. You can also use that page to establish the link between any work template line and a location directive (such as the bay door or stage location). For information about how to configure a directive code with a work template, see [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).<p>If a directive code is set, when work must be generated, the system will search location directives by directive code instead of by sequence. In this way, you can be more precise about the location template that is used for a specific step in a work template, such as the step for staging the materials.</p> |
-    | Disposition code | Select a disposition code to redirect the putaway of received items to a location. (For more information, see [Set up dispositions codes](tasks/set-up-dispositions-codes.md).) This field is available only when the **Work order type** field is set to *Purchase orders*, *Return orders*, or *Finished goods put away*. |
-    | Multiple SKU | Set this option to *Yes* to use multiple stock keeping units (SKUs) on a location. For example, this option must be set to *Yes* for the bay door.<p>If the **Multiple SKU** option is set to *Yes*, the put location will be specified in work (as expected). However, the put location will be able to handle multiple-item put only if the work includes different SKUs that must be picked and put, not if the work includes just a single SKU that must be put.</p><p>If the **Multiple SKU** option is set to *No*, the put location will be specified only if the put has only one type of SKU.</p><p>To use both approaches, you must specify two lines that have the same structure and setup, but set the **Multiple SKU** option to *Yes* for one of the lines and *No* for the other. In other words, two identical location directives are required for put operations, even though you don't have to distinguish between single and multiple SKUs in the work ID. You must also set a location directive up for pick, if you have an order that has more than one item.</p><p>**Note:** If you set the **Multiple SKU** option to *Yes* for a location directive of the *Put* work type, the system will always select the first location directive line, regardless of other restrictions that are created on the lines.</p> |
+The tables in the following subsections list the common and worker order type–specific fields that are available when you set up a location directive.
 
-1. Optional: On the Action Pane, select **Edit query** to select the locations, or to specify any restrictions that apply when you select a specific location directive.
-1. On the **Lines** FastTab, create one or more lines to specify units, and to locate or reserve quantity in a warehouse.
-1. On each new line, set the fields as described in the following table.
+### Fields that are common to all work order types
 
-    | Field | Description |
-    |---|---|
-    | Sequence number | Enter an integer that indicates the sequence position of the location directive. Sequence positions determine when each location directive is processed for the selected work type. |
-    | From quantity | Specify the beginning quantity range for when the middle-grid sequence should be selected. Specify the quantity in the unit of measure that is selected in the **Unit** field. |
-    | To quantity | Specify the ending quantity range for when the middle-grid sequence should be selected. Specify the quantity in the unit of measure that is selected in the **Unit** field. |
-    | Unit | Select the unit of measure for the items.<p>You can specify a minimum quantity and a maximum quantity that the directive should apply to. You can also specify that the directive should be used for a specific inventory unit. The **Unit** field is used only for quantity evaluation.</p><p>To determine whether a location directive line applies, the system evaluates quantities by using the **Unit** value that is specified on the line. Every time that a location directive line is accessed, the system will try to convert the demand unit to the unit that is specified on the line. If the unit conversion doesn't exist, the system will move on to the next line.</p> |
-    | Locate quantity | This field is valid only when you try to put or locate quantity in the warehouse. In other words, it's valid only for *Put* work. Select the method that is used to evaluate whether the quantity is in the range that is set in the **From quantity** and **To quantity** fields. If the location directive is for an inbound transaction, select one of the following options:<ul><li>**License plate quantity** ─ To evaluate whether a quantity is in the target quantity range, use the quantity on the license plate that is being received.</li><li>**Unitized quantity** ─ To evaluate whether a quantity is in the target quantity range, use the quantity that is being unitized during the transaction. For example, in a warehouse, if you can receive a quantity of 1,000 and break it into 10 license plates, each of which has a quantity of 100, you can use a quantity of 1,000 items instead of the license plate quantity of 100.</li><li>**Remaining quantity** ─ To evaluate whether a quantity is in the target quantity range, use the quantity that remains to be received on the purchase order line that is currently being checked in.</li><li>**Expected quantity** ─ To evaluate whether a quantity is in the target quantity range, use the total quantity of the purchase order line, regardless of the quantity that has already been received.</li></ul> |
+The following table lists the fields that are common to all work order types.
 
-1. Optional: On the **Lines** FastTab, you can set the following additional fields.
+| FastTab | Field |
+|---|---|
+| Location directives | Work type |
+| Location directives | Site |
+| Location directives | Warehouse |
+| Location directives | Directive code |
+| Location directives | Multiple SKU |
+| Lines | Sequence number |
+| Lines | From quantity |
+| Lines | To quantity |
+| Lines | Unit |
+| Lines | Locate quantity |
+| Lines | Restrict by unit |
+| Lines | Round up to unit |
+| Lines | Locate packing quantity |
+| Lines | Allow split |
+| Location Directive Actions | Sequence number |
+| Location Directive Actions | Name |
+| Location Directive Actions | Fixed location usage |
+| Location Directive Actions | Allow negative inventory |
+| Location Directive Actions | Batch enabled |
+| Location Directive Actions | Strategy |
 
-    | Field | Description |
-    |---|---|
-    | Restrict by unit | Select this check box to restrict the units of measure that are considered valid selection criteria for the location directive lines. When units of measure have been specified, only items where the unit matches at least one unit that is defined for the unit sequence group will be considered valid for the line selection.<p>For example, the unit is restricted to pallets, and the item is associated with a unit sequence group that includes the *pallets* unit. In this case, the items will be considered a valid option for the location directive.</p><p>However, the **Restrict by unit** check box doesn't control the unit or units that are applied on work lines. The unit restriction applies only to the units that are made available via the unit sequence group.</p><p>For example, an item is associated with a unit sequence group that includes both the *pallets* and the *pcs* units. A unit of measure has been defined where 1 pallet = 100 pcs, and the location directive uses the **Restrict by unit** functionality only for pallets. Furthermore, a work template has been defined that limits the work header creation to 50 pcs. In this case, work lines of 50 pcs will be created.</p><p>To specify the unit of measure for restriction, follow these steps</p><ol><li>On the **Lines** FastTab, select **Restrict by unit**. This button becomes available only after you select the **Restrict by unit** check box on the line and then select **Save**.</li><li>In the **Unit** field, select the unit of measure to restrict by for the pick and putaway processes.</li></ol> |
-    | Round up to unit | Select this option to indicate that raw material picking should be rounded up to a multiple of the handling unit that is specified in the **Restrict by unit** field. This field applies only to raw material picking and location directives of the *Pick* type. |
-    | Locate packing quantity | Select this check box if a packing unit quantity is specified on the **Sales order** page. If you select this check box, only the locations that have this packing unit quantity are selected. |
-    | Allow split | Select this check box to split the quantity across multiple locations. |
-    | Immediate replenishment template | Create a connection to a replenishment template, so that replenishment is started immediately if items aren't allocated. If you leave this field blank, item replenishment won't be started until all lines of the location directive have been processed.<p>This field is available only on selected work order types where replenishment is permitted, such as *Sales orders* and *Raw material picking*.</p> |
+### <a name="fields-specific-types"></a>Fields that are specific to work order types
 
-1. On the **Location directive actions** FastTab, select **New** to select the location or range of locations.
-1. The **Sequence number** field shows the sequence that the location directive will be processed in for the selected work type. You can modify the sequence. However, be cautious about sequence numbers for location directive actions, because location directive actions will always run in this sequence.
-1. In the **Name** field, enter the name of the location directive action. Be specific, so that it's clear what the action is.
-1. Optional: Select **Edit query** to modify the warehouse locations and other criteria.
-1. Optional: You can set the following additional fields for a location directive.
+The following table lists the fields that are specific to particular work order types.
 
-    | Field | Description |
-    |---|---|
-    | Fixed location usage | Select which locations the location directive should consider:<ul><li>**Fixed and non-fixed locations** – The location directive will consider all locations.</li><li>**Only fixed locations for the product** – The location directive will consider only fixed locations for products.</li><li>**Only fixed locations for the product variant** – The location directive will consider only fixed locations for product variants.</li></ul> |
-    | Allow negative inventory | Select this check box to allow negative inventory at the specified warehouse location. |
-    | Batch enabled | Select this check box to use batch strategies for the items that are batch-enabled. If this check box is selected, and the **Strategy** field is set to *None*, the system will move on to the next action line. |
-    | Strategy | Select the strategy that the location directive should use:<ul><li>**None** – No strategy will be used.</li><li>**Match packing quantity** – This strategy checks whether a pick location has the specified packing quantity. This strategy is valid only when the **Work type** field is set to *Pick*.</li><li>**Consolidate** – This strategy consolidates items in a specific location when similar items are already available. This strategy is valid only when the **Work type** field is set to *Put*. In a typical setup for put, the system tries to consolidate on the first action line, and then, on the second action line, it tries to put without consolidation. Consolidation of goods makes later picking more efficient.</li><li>**FEFO batch reservation** – This strategy is used when inventory is located by using a batch expiration date, and it's allocated for batch reservation. The first expiry, first out (FEFO) batch reservation strategy is also used when inventory is located by using a batch best-before date in addition to the expiration date. You can use this strategy only for batch-enabled items. This strategy is valid only when the **Work type** field is set to *Pick*. When you select this strategy, you override any query sorting for batch numbers that is applied.</li><li>**Round up to full LP** – This strategy rounds up the inventory quantity so that it matches the license plate quantity that is assigned to the items that must be picked. This strategy can only be used for replenishment type of location directives, and only when the **Work type** field is set to *Pick*.</li><li>**Empty location with no incoming work** – This strategy is used to locate empty locations. A location is considered empty if it has no physical inventory and no expected incoming work. This strategy is valid only when the **Work type** field is set to *Put*.</li></ul> |
+| FastTab | Field | Work order type |
+|---|---|---|
+| Location directives | Locate by | Purchase orders |
+| Location directives | Applicable disposition code | Purchase orders |
+| Location directives | Disposition code | Purchase orders |
+| Location directives | Applicable disposition code | Finished goods put away |
+| Location directives | Disposition code | Finished goods put away |
+| Location directives | Applicable disposition code | Return orders |
+| Location directives | Disposition code | Return orders |
+| Location directives | Applicable disposition code | Kanban put away |
+| Location directives | Applicable disposition code | Kanban picking |
+| Lines | Immediate replenishment template | Sales orders |
+| Lines | Immediate replenishment template | Raw material picking |
+| Lines | Immediate replenishment template | Transfer issue |
+| Lines | Immediate replenishment template | Kanban picking |
 
-## Example of the use of location directives
+## Open the Location directives page
+
+To open the **Location directives** page, go to **Warehouse management \> Setup \> Location directives**.
+
+From there, you can view, create, and edit your location directives by using the commands on the Action Pane. See the remaining sections of this topic for information about how to use all the fields that are available on the page.
+
+## Action Pane
+
+The Action Pane on the **Location directives** page contains buttons that you can use to create, edit, and delete directives (**Edit**, **New**, and **Delete**). It also contains the following buttons that let you adjust the sequence that the location directive is processed in and configure a query that defines the criteria for applying the location directive:
+
+- **Move up** – Move the selected location directive up in the sequence. For example, you can move it from sequence number 4 to sequence number 3.
+- **Move down** – Move the selected location directive down in the sequence. For example, you can move it from sequence number 4 to sequence number 5.
+- **Edit query** – Open a dialog box where you can define the conditions that the selected location directive should be processed under. For example, you might want it to apply only to a specific warehouse.
+
+## Location directives header
+
+The location directive header includes the following fields for the sequence number and descriptive name of the location directive:
+
+- **Sequence number** – This field indicates the sequence that the system tries to apply each location directive in for the selected work order type. Low numbers are applied first. You can change the sequence by using the **Move Up** and **Move Down** buttons on the Action Pane.
+- **Name** – Enter a descriptive name for the location directive. This name should help identify the general purpose of the directive. For example, enter *Sales order picking in warehouse 24*.
+
+## Location directives FastTab
+
+The fields on the **Location directives** FastTab are specific to the work order type that is selected in the **Work order type** field in the list pane.
+
+- **Work type** – Select the type of work that must be performed. The available values depend on the type of inventory transaction that you selected in the **Work order type** field. Select one of the following values:
+
+    - **Put** – The location directive will try to find the most ideal location to put or locate inventory that comes into the system from receiving, production, or inventory adjustments. It can also be used to define the put to the stage location or the final bay door shipping location.
+    - **Pick** – The location directive will try to find the most ideal locations to physically reserve inventory from (that is, create work). The pick can be completed (that is, the pick work line can be closed) even if the work isn't completed. The user can complete physical picking. In the system, that action is a pick step. The user can then cancel from the mobile device and complete the work later. However, the work header is first closed when the final put is completed.
+
+    > [!IMPORTANT]
+    > The other values in the **Work type** field aren't relevant for location directives. They appear only because the field isn't filtered to match the selected work order type.
+
+- **Site** – This field is mandatory, because the location directive must be able to determine the site and warehouse that it's valid for.
+- **Warehouse** – This field is mandatory, because the location directive must be able to determine the site and warehouse that it's valid for.
+- **Directive code** – Select the directive code to associate with a work template or replenishment template. On the **Directive code** page, you can create new codes that can be used to connect work templates or replenishment templates to location directives. Directive codes can also be used to establish a link between any work template line and a location directive (such as the bay door or stage location).
+
+    > [!TIP]
+    > If a directive code is set, the system won't search location directives by sequence number when work must be generated. Instead, it will search by directive code. In this way, you can be more specific about the location template that is used for a particular step in a work template, such as the step for staging the materials.
+
+- **Multiple SKU** – Set this option to *Yes* to enable multiple stockkeeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
+
+    > [!IMPORTANT]
+    > To be able to do both multi-item puts and single-SKU puts, you must specify two lines that have same structure and setup, but you must set the **Multiple SKU** option to *Yes* for one line and *No* for the other. Therefore, for put operations, you must have two identical location directives, even if you don't have to distinguish single SKUs and multiple SKUs on a work ID. Often, if you don't set up both these location directives, unexpected business process locations will come from the applied Location directive. You must use a similar setup for location directives that have a **Work type** of *pick* if you need to process orders that include multiple SKUs.
+
+    Use the **Multiple SKU** option for work lines that handle more than one item number. (The item number will be blank in the work details, and it will be shown as **Multiple** on the processing pages in the warehouse app.)
+
+    In a typical example scenario, a work template is set up so that it has more than one pick/put pair. In this case, you might want to search for a specific staging location to use for lines with a **Work type** of *Put*.
+
+    > [!NOTE]
+    > If the **Multiple SKU** option is set to *Yes*, you can't select **Edit query** on the Action Pane, because the query can't evaluate at the item level when there are multiple items. To ensure that the desired location directive is selected, use the **Directive code** field to guide the selection of the location directive that is related to the put lines where that directive code is assigned in the work template.
+
+    Unless you always work with either single-item or mixed-item operations, it's important that you define two location directives for the *Put* work type: one where the **Multiple SKU** option is set to *Yes* and one where it's set to *No*.
+
+- **Applicable disposition code** – Specify whether the disposition code of the location directive must match the disposition code that is applied when the item is received, or whether the location directive can be selected based on any disposition code. If you select *Exact match*, and the **Disposition code** field is blank, only blank disposition codes will be considered for this location directive.
+
+    > [!NOTE]
+    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section earlier in this topic.
+
+- **Locate by** – Specify whether the putaway quantity should be the whole quantity on the license plate, or whether it should be item by item. Use this field to help ensure that all the contents on a license plate is put into one location, and that the system doesn't suggest that you split the contents into several locations for **ASN** (license plate receiving), **Mixed license plate** receiving, and **Cluster** receiving processes. (The **Cluster** receiving process requires that the *Cluster putaway feature* feature be turned on.) The behavior of the location directive query, the lines, and the location directive actions will vary, depending on the value that you select. The **Lines** FastTab is only used when the **Locate by** is set to *Item*.
+
+    > [!NOTE]
+    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
+
+- **Disposition code** – This field is used for location directives that have a work order type of *Purchase orders*, *Finished goods putaway*, or *Return orders*, and a work type of *Put*. Use it to guide the flow to use a specific location directive, depending on the disposition code that a worker selected in the warehouse app. For example, you can direct returned goods to an inspection location before they are returned to stock. A disposition code can be linked to an inventory status. In this way, it can be used to change the inventory status as part of a receiving process. For example, you have a disposition code, *QA*, that sets the inventory status to *QA*. You can then have a separate location directive to move that inventory to a quarantine location.
+
+    > [!NOTE]
+    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
+
+## Lines FastTab
+
+Use the **Lines** FastTab to establish conditions for applying the related actions that are specified on the **Location directive actions** FastTab. For each line, you can specify the minimum quantity and maximum quantity that the actions should apply to. You can also specify that the actions should apply to a specific inventory unit.
+
+- **Sequence number** – Enter the sequence that each location directive line should be processed in for the selected work type. You can change the sequence as you require by using the **Move up** and **Move down** buttons on the toolbar.
+- **From quantity** – Specify the start of the range of quantities that the line applies to. Specify the quantity in the unit of measure that is selected in the **Unit** field.
+- **To quantity** – Specify the end of the range of quantities that the line applies to. Specify the quantity in the unit of measure that is selected in the **Unit** field.
+- **Unit** – Select the unit of measure for the items. You can specify a minimum quantity and a maximum quantity that the directive should apply to, and you can specify that the directive should be for a specific inventory unit. The **Unit** field is used *only* for quantity evaluation. To determine whether the location directive line is applicable at all, the system uses the quantity in the unit that is specified on that line. Every time that it reaches a location directive line, the system tries to convert the demand unit to the unit that is specified on the line. If the unit of measure conversion doesn't exist, the system moves on to the next line.
+- **Locate quantity** – This field is used only during attempts to put or locate items in the warehouse. (Therefore, it applies only when the **Work type** field is set to *Put*). Select one of the following values to specify the quantity that is used to evaluate whether a quantity is within the **From quantity** to **To quantity** range:
+
+    - **License plate quantity** – Use the quantity on the license plate that is being received.
+    - **Unitized quantity** – Use the quantity that is used during the transaction. For example, you receive a quantity of 1,000 in a warehouse and break it into 10 license plates, each of which has a quantity of 100. In this case, you can use a quantity of 1,000 items instead of the license plate quantity of 100.
+    - **Remaining quantity** – Use the quantity that must still be received on the purchase order line that is being processed.
+    - **Expected quantity** – Use the total quantity of the purchase order line, regardless of what has already been received.
+
+- **Restrict by unit** – This check box lets you make the location directive line specific to a unit of measure or multiple units of measure. Select it to restrict the units of measure that are considered valid selection criteria for the location directive lines. This functionality works only for location directives where the **Work type** field is set to *Pick*.
+
+    For example, when you reserve quantities, you want to reserve pallets only from a specific set of locations. In this case, the lines will restrict that sequence to pallets in such a way that any quantity that is less than a pallet won't be selected for the location directive.
+
+    Note that the **Restrict by unit** check box doesn't control the unit or units that are applied on work lines. The unit restriction applies only to the units that are made available via the unit sequence group. For example, an item is associated with a unit sequence group that includes both the *pallets* unit and the *pcs* units. A unit of measure has been defined, where 1 pallet = 100 pcs, and the location directive uses the **Restrict by unit** functionality only for pallets. Furthermore, a work template has been defined that limits the work header creation to 50 pcs. In this case, work lines of 50 pcs will be created. To specify the unit of measure for restriction, follow these steps:
+
+    1. On the **Lines** FastTab, select **Restrict by unit** on the toolbar. (This button becomes available only after you select the **Restrict by unit** check box on the line and then select **Save**.)
+    1. On the **Restrict by units** page, in the **Unit** field, select the unit of measure that you want to restrict by for the pick and put processes.
+
+- **Round up to unit** – This field works together with the **Restrict by unit** check box. For example, if  **Restrict by unit** and **Round up to unit** are selected on the location directive line, the work that is generated from the directive for raw material picking should be rounded up to a multiple of one of the handling unit that is specified on the **Restrict by unit** page.
+
+    > [!NOTE]
+    > This **Round up to unit** setup works only for the *Raw material picking* work order type, and only for location directives where the **Work type** field is set to *Pick*.
+
+- **Locate Packing Qty** – If you specify a packing quantity on a sales order, transfer order, or production order, this check box lets you restrict the system so that it can select only locations that have at least that packing quantity.
+
+    > [!NOTE]
+    > This functionality works only with location directives of the *Pick* type.
+
+- **Allow Split** – Specify whether the location directive can split the quantity that is being received or reserved across multiple warehouse locations, or whether the whole quantity must be located in a single location or reserved from a single location to create work.
+- **Immediate replenishment template** – Use this field to create a connection to a replenishment template, so that replenishment is started immediately if items aren't allocated. If you leave this field blank, item replenishment won't be started until all lines of the location directive have been processed.
+
+    > [!NOTE]
+    > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
+
+## Location directive actions FastTab
+
+You can define multiple location directive actions for each line. Once again, a sequence number is used to determine the order that the actions are assessed in. At this level, you can set up a query to define how the best location in the warehouse is found. You can also use predefined **Strategy** values to find an optimal location.
+
+- **Sequence number** – This field shows the sequence that the actions are processed in for the selected work type. You can change the sequence by using the **Move Up** and **Move Down** buttons on the toolbar.
+- **Name** – Enter the name of the location directive action. Be specific, so that the action that is performed is clear from the name.
+- **Fixed location usage** – Specify which locations the location directive should consider. Select one of the following values:
+
+    - **Fixed and non-fixed locations** – The location directive will consider all locations.
+    - **Only fixed locations for the product** – The location directive will consider only fixed locations for products.
+    - **Only fixed locations for the product variant** – The location directive will consider only fixed locations for product variants.
+
+- **Allow negative inventory** – Select this check box to allow negative inventory at the specified warehouse location in location directives.
+- **Batch Enabled** – Select this check box to use batch strategies for items that are batch-enabled. It's important that you select this check box for processes that use location directives to find locations to pick batch number–tracked items from. In this way, the search for locations that hold batch number–tracked items is included. If this check box is selected, and the **Strategy** field is set to *None*, the system will move on to the next action line.
+- **Strategy** – To more easily and quickly define the actions that are associated with each location directive line, you can select one of the following predefined strategies:
+
+    - **None** – No strategy will be used.
+    - **Match packing quantity** – This strategy verifies whether a pick location has the specified packing quantity. This strategy is valid only when the **Work type** field is set to *Pick*.
+    - **Consolidate** – This strategy consolidates items in a specific location when similar items are already available. This strategy is valid only when the **Work type** field is set to *Put*. A typical setup for put tries to consolidate on the first action line and then, on the second line, tries to put without consolidation. Consolidation of goods makes later picking more efficient.
+    - **FEFO batch reservation** – This strategy uses first expiry, first out (FEFO) batch reservations. Use it when inventory is located by using a batch expiration date and allocated for batch reservation. You can use this strategy only for batch-enabled items. It's valid only when the **Work type** field is set to *Pick*.
+    - **Round up to the full LP and FEFO batch** – This strategy combines the elements of the *FEFO batch reservation* and *Round up to a full LP* strategies. It's valid only for batch-enabled items and location directives that have a work type of *Pick*. The line must be batch-enabled to use the *FEFO batch reservation* strategy, and the *Round up to a full LP* strategy can be used only for replenishment. If this strategy is configured together with a location stocking limit, it can cause the selected put work location to be overloaded and stocking limits to be ignored.
+    - **Round up to a full LP** – This strategy is used to round up the inventory quantity so that it matches the license plate quantity that is assigned to the items that must be picked. You can use this strategy only for replenishment location directives of the *Pick* type. If this strategy is configured together with a location stocking limit, it can cause the selected put work location to be overloaded and stocking limits to be ignored.
+    - **License plate guided** – Use this strategy when you release the order to the warehouse to create the pick-and-put work. You can use this approach for multiple license plates. This strategy will try to reserve and create picking work against the locations that hold the requested license plates that have been associated with the transfer order lines. However, if these actions can't be completed, but you still want to create picking work, you should fall back to another strategy for location directive actions. Depending on your business process requirements, you might also want to search for inventory in another area of the warehouse.
+    - **Empty location with no incoming work** – Use this strategy to locate empty locations. A location is considered empty if it has no physical inventory and no expected incoming work. You can use this strategy only for location directives that have a work type of *Pick*.
+    - **Location aging FIFO** – Use the first in, first out (FIFO) strategy to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where no expiration date is available to use for sorting. The FIFO strategy finds the location that contains the oldest aging date, and then allocates picking based on that aging date.
+    - **Location aging LIFO** – Use the last in, last out (LIFO) strategy to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where no expiration date is available to use for sorting. The LIFO strategy finds the location that contains the newest aging date, and then allocates picking based on that aging date.
+
+## Example: Using location directives
 
 For this example, consider a purchase order process where the location directive must find free capacity within a warehouse for inventory items that have just been registered at the receiving dock. First, you need to find free capacity within the warehouse by consolidating with existing on-hand inventory. If consolidation isn't possible, then you need to find an empty location.
 
-For this scenario, you must define two location directive actions. The first action in the sequence must use the **Consolidate** strategy, and the second should use the **Empty location with no incoming work** strategy. Unless you define a third action to handle an overflow scenario, two outcomes are possible when there is no more capacity in the warehouse: work can be created even though no locations are defined, or the work creation process can fail. The outcome is determined by the setup on the **Location directive failures** page, where you can decide whether to select the **Stop work on location directive failure** option for each work order type.
+For this scenario, you must define two location directive actions. The first action in the sequence must use the *Consolidate* strategy, and the second should use the *Empty location with no incoming work* strategy. Unless you define a third action to handle an overflow scenario, two outcomes are possible when there is no more capacity in the warehouse: work can be created even though no locations are defined, or the work creation process can fail. The outcome is determined by the setup on the **Location directive failures** page, where you can choose whether to select the **Stop work on location directive failure** option for each work order type.
 
 ## Next step
 
 After you create location directives, you can associate each directive code with a work template code for work creation. For more information, see [Control warehouse work by using work templates and location directives](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
 
-## Technical information for system admins
+## Additional resources
 
-If you don't have access to the pages that are used to complete this task, contact your system admin, and provide the information that is shown in the following table.
-
-| Category | Prerequisite |
-|---|---|
-| Configuration keys | Go to **System administration \> Setup \> License configuration**. Expand the **Trade** license key, and then select the **Warehouse and Transportation management** configuration key. |
+- Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
+- Help topic: [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)

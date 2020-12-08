@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This article describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract

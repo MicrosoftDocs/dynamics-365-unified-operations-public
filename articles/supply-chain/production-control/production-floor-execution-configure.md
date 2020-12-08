@@ -41,29 +41,34 @@ When you open the production floor execution interface, it automatically loads a
 
 This topic describes the various options for configuring job card devices.
 
-## Turn on new features in feature management
+## Turn on the production floor execution interface and its related optional features
 
-A few of the settings that are described in this topic must be turned on in your system before they are available to you. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the following features as required.
+The production floor execution interface itself, plus several of the optional settings that are described in this topic, must be turned on in your system before you can use them. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
 
-### Generate license plate
+### The production floor execution interface
 
-To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
+This is the primary feature described in this topic. It adds the production floor execution interface to your system. To enable it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
+- Production floor execution
+
+### Generate license plates
+
+These features make license plate functionality available to the production floor execution interface. If you'd like to use them, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
 
 1. License plate for reporting as finished added to the Job Card Device
 1. Enable automatic generation of license plate number when reporting as finished in the job card device
 
-### Print label
+### Print labels
 
-To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
+These features make label printing functionality available to the production floor execution interface. If you'd like to use them, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
 
 1. License plate for reporting as finished added to the Job Card Device
 1. Print label from Job Card Device
 
 ### Allow locking the touch screen
 
-To make this feature available, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+This feature adds a button to the production floor execution interface that enables workers to sanitize the touch screen. If you'd like to use it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- (Preview) Feature for locking job card device and job card terminal so that they can be sanitized
+- Feature for locking job card device and job card terminal so that they can be sanitized
 
 ## Work with production floor execution configurations
 
@@ -82,6 +87,7 @@ Next, configure the various settings for the selected device configuration. The 
 - **Screen lock duration** – When the **Allow locking touchscreen** option is set to *Yes*, use this option to specify the number of seconds that the touchscreen should be locked for sanitizing. The duration must be between 5 and 120 seconds.
 - **Generate license plate** – Set this option to *Yes* to generate a new license plate every time that a worker uses the job card device to report as finished. The license plate number is generated from a number sequence that is set up on the **Warehouse management parameters** page. When this option is set to *No*, workers must specify an existing license plate when they report as finished.
 - **Print label** – Set this option to *Yes* to print a license plate label when a worker uses the job card device to report as finished. The configuration of the label is set up in document routing, as described in [Document routing layout for license plate labels](../warehousing/document-routing-layout-for-license-plates.md).
+- **Tab selection**  – Use the settings in this section to choose which tabs should be displayed by the production floor execution interface when the current configuration is active. You can design as many tabs as you need and then add and arrange them here as required. For details about how to design tabs and work with the settings here, see [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ## Clean up job configurations
 

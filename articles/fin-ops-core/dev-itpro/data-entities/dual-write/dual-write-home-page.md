@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 These topics describe dual-write integration.
@@ -56,7 +57,7 @@ These topics describe dual-write integration.
     + [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)
     + [System requirements and prerequisites](requirements-and-prerequisites.md)
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
-    + [Enable entity map for dual-write](enable-entity-map.md)
+    + [Enable table map for dual-write](enable-entity-map.md)
 
 + [Currency data-type migration for dual-write](currrency-decimal-places.md)
 + [Set up the mapping for the sales order status fields](sales-status-map.md)
@@ -64,7 +65,7 @@ These topics describe dual-write integration.
 ## Managing dual-write after setup
 
 + [Customize entity and field mappings](customizing-mappings.md)
-+ [Handling multiple entity maps](multiple-entity-maps.md)
++ [Handling multiple table maps](multiple-entity-maps.md)
 + [Edit a legal entity after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
@@ -83,7 +84,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 
     + [Integrated sites and warehouses](sites-warehouses-mapping.md)
 
-+ [Company concept in Common Data Service](company-data.md)
++ [Company concept in Dataverse](company-data.md)
 
     + [Bootstrap with company data FAQ](bootstrap-company-data.md)
 
@@ -104,7 +105,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 ## Troubleshooting
 
-+ [Verify that dual-write is configured in Finance and Operations apps and Common Data Service](dual-write-troubleshooting-verify-config.md)
++ [Verify that dual-write is configured in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
 + [Troubleshoot issues during initial setup](dual-write-troubleshooting-initial-setup.md)
 + [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md)
 + [Troubleshoot issues with the Dual-write module in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)

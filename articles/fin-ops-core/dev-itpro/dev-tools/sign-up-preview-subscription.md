@@ -110,7 +110,7 @@ You're already set up as a user of your LCS project. If you've also added other 
 Environments should be deployed to an existing Azure subscription.
 
 > [!NOTE]
-> Each developer of an environment must deploy his or her own system to Azure. However, only the first project user must set up the Azure subscription for deployment.
+> Each developer of an environment must deploy their own system to Azure. However, only the first project user must set up the Azure subscription for deployment.
 
 You can create environments in two ways:
 

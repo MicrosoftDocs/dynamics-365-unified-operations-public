@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations
+#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 7.3
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 

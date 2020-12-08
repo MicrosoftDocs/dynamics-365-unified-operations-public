@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md",
+      "redirect_url": "cloud-prem-comparison",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md",
+      "redirect_url": "setup-deploy-on-premises-pu12",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/edit-audit-retail-transactions.md",
+      "redirect_url": "edit-cash-trans",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/expense-management/expense-management-mobile-workspace.md",
       "redirect_url": "/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace",
       "redirect_document_id": "false"

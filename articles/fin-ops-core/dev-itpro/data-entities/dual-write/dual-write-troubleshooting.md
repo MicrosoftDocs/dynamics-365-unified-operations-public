@@ -2,7 +2,7 @@
 # required metadata
 
 title: General troubleshooting
-description: This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Common Data Service.
+description: This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 03/16/2020
@@ -33,9 +33,11 @@ ms.search.validFrom: 2020-03-16
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Common Data Service.
+
+This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 
 > [!IMPORTANT]
 > Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
@@ -55,11 +57,11 @@ After you install the package deployer tool, install the solution package by fol
     ![Contents of the Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 folder](media/extract_package.png)
 
 3. Paste all the copied files into the **Tools** folder of the package deployer tool. 
-4. Run **PackageDeployer.exe** to select the Common Data Service environment and install the solutions.
+4. Run **PackageDeployer.exe** to select the Dataverse environment and install the solutions.
 
     ![Content of the Tools folder](media/paste_copied_files.png)
 
-## Enable and view the plug-in trace log in Common Data Service to view error details
+## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 
 **Required role to turn on the trace log and view errors:** System admin
 
@@ -79,7 +81,7 @@ To view the trace log, follow these steps.
 ## Enable debug mode to troubleshoot live synchronization issues in Finance and Operations apps
 
 **Required role to view the errors:** System admin
-Dual-write errors that originate in Common Data Service can appear in the Finance and Operations app. In some cases, the full text of the error message isn't available because the message is too long or contains personally identifying information (PII). You can turn on verbose logging for errors by following these steps.
+Dual-write errors that originate in Dataverse can appear in the Finance and Operations app. In some cases, the full text of the error message isn't available because the message is too long or contains personally identifying information (PII). You can turn on verbose logging for errors by following these steps.
 
 1. All project configurations in Finance and Operations apps have an **IsDebugMode** property in the **DualWriteProjectConfiguration** entity. Open the **DualWriteProjectConfiguration** entity by using the Excel add-in.
 
@@ -90,7 +92,7 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 3. Run the scenario that is generating errors.
 4. The verbose logs are available in the DualWriteErrorLog table. To look up data in the table browser, use the following URL (replace **XXX** as appropriate):
 
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
 
 ## Check synchronization errors on the virtual machine for the Finance and Operations app
 
@@ -104,9 +106,9 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 6. Select **Applications and Services Logs \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operational**.
 7. Review the list of recent errors.
 
-## Unlink and link another Common Data Service environment from a Finance and Operations app
+## Unlink and link another Dataverse environment from a Finance and Operations app
 
-**Required role to unlink the environment:** System administrator for either Finance and Operations app or Common Data Service.
+**Required role to unlink the environment:** System administrator for either Finance and Operations app or Dataverse.
 
 1. Sign in to the Finance and Operations app.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.

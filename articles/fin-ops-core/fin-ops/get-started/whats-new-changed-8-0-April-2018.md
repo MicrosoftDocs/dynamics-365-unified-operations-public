@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope:  Operations
+#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: b265d51c-52d1-45c5-b578-64c5242c592a
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Release 8.0
 # What's new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
 

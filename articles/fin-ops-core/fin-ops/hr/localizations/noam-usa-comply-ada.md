@@ -18,7 +18,7 @@ ms.search.form: HcmADARequirement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2741
 ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
@@ -56,5 +56,5 @@ If you entered information about a position group, you can then copy that inform
 
 ## About work environment accommodations
 
-Accommodations represent changes to work environments or business operations that achieve equal employment opportunity for a person who has a disability. You can enter requests for special work environment accommodations that are made by employees and applicants with regard to one or more specific tasks that are required by a position. You can then evaluate whether the accommodation is reasonable or if it will impose unnecessary cost, and then either grant or deny the accommodation request. If you hire an applicant for whom you granted an accommodation, the person keeps the accommodation information after he or she is hired. Before you can start working with accommodations, you must first create one or more accommodation types. This lets you sort accommodations by type to find a particular accommodation quickly.
+Accommodations represent changes to work environments or business operations that achieve equal employment opportunity for a person who has a disability. You can enter requests for special work environment accommodations that are made by employees and applicants with regard to one or more specific tasks that are required by a position. You can then evaluate whether the accommodation is reasonable or if it will impose unnecessary cost, and then either grant or deny the accommodation request. If you hire an applicant for whom you granted an accommodation, the person keeps the accommodation information after being hired. Before you can start working with accommodations, you must first create one or more accommodation types. This lets you sort accommodations by type to find a particular accommodation quickly.
 

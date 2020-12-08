@@ -188,7 +188,7 @@ To set up the Electronic invoicing add-on in Finance, you will complete these ta
 1. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** title.
 3. Select **Repositories**.
 4. Select **Global resource \> Open**.
-5. Import **Response message model**, **CFDI error log import (MX)**, **CFDI error log import (MX)**, and **CFDI response message import (MX)**.
+5. Import **Response message model**, **CFDI error log import (MX)**, and **CFDI response message import (MX)**.
 
 #### Set up the response types
 

@@ -1,6 +1,6 @@
 ## CDS sales quotation lines to quotedetails
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
 Finance and Operations apps | Map type | Customer engagement apps | Default value
 ---|---|---|---

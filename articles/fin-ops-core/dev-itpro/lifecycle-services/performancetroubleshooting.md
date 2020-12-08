@@ -5,7 +5,7 @@ title: Performance troubleshooting using tools in Lifecycle Services (LCS)
 description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you diagnose and mitigate performance issues in your sandbox and production environments.
 author: laneswenka
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
@@ -53,7 +52,7 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
 - **Actions** – Shows a list of predefined actions that should be taken to mitigate issues in the sandbox and production environments. Examples of actions include adding/dropping an index, updating stats on a table, rebuilding indexes, and terminating a blocking statement. Any time that an action is performed, the environment history for an environment will show a record for the action performed. A history record is created only for actions and not when queries are executed. 
 
-- **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10:00 PM Coordinated Universal Time (UTC). To use the tool, select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls on other metrics. On the **Statement** tab, view the query, or download the query execution plan.
+- **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at a random time between midnight and 4 AM in the time zone in which your environment is hosted. The last run date and time is visible from your environment details page in Lifecycle Services, under the **Monitoring** tab in the **Last run** field. To use the tool, select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls based on other metrics. On the **Statement** tab, you can either view the query or download the query execution plan.
 
 - **Index Analysis** – Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index along with additional table metrics.
 

@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Operations
+#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

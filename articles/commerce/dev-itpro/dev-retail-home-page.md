@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 24411
 ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
@@ -37,39 +36,45 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This page lists the resources that are available for IT pros and developers who support Commerce.
 
 ## Online channel
+
 - [Online channel extensibility](../../commerce/e-commerce-extensibility/overview.md)
 
 ## Components and architecture
--   [Commerce components](../retail-components.md)
--   [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
--   [Commerce Scale Unit architecture](retail-server-architecture.md)
--   [Online store publishing architecture](retail-online-store-publishing-architecture.md)
--   [Retail channel performance PowerBI.com solution](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+
+- [Commerce components](../retail-components.md)
+- [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
+- [Commerce Scale Unit architecture](retail-server-architecture.md)
+- [Online store publishing architecture](retail-online-store-publishing-architecture.md)
+- [Retail channel performance PowerBI.com solution](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Deployment
--   [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
--   [Manage accounts and devices from headquarters](../set-up-activation-accounts-validate-devices-hq.md)
--   [Point of sale (POS) device activation](retail-device-activation.md)
--   [Install the POS Layout designer](../install-pos-layout-designer.md)
--   [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
--   [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
--   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
--   [Access instances](../../dev-itpro/dev-tools/access-instances.md)
+
+- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
+- [Manage accounts and devices from headquarters](../set-up-activation-accounts-validate-devices-hq.md)
+- [Point of sale (POS) device activation](retail-device-activation.md)
+- [Install the POS Layout designer](../install-pos-layout-designer.md)
+- [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
+- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+- [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
+- [Access instances](../../dev-itpro/dev-tools/access-instances.md)
 
 ## Point of Sale (POS)
--   [Modern POS configuration and installation](../retail-modern-pos-device-activation.md)
--   [Manage activation accounts and validate devices](../set-up-activation-accounts-validate-devices-hq.md)
--   [Point of sale (POS) device activation](retail-device-activation.md)
--   [Security best practices for Cloud POS in shared environments](secure-retail-cloud-pos.md)
--   [Support for external gift cards](gift-card.md)
+
+- [Modern POS configuration and installation](../retail-modern-pos-device-activation.md)
+- [Manage activation accounts and validate devices](../set-up-activation-accounts-validate-devices-hq.md)
+- [Point of sale (POS) device activation](retail-device-activation.md)
+- [Security best practices for Cloud POS in shared environments](secure-retail-cloud-pos.md)
+- [Support for external gift cards](gift-card.md)
 
 ## Customize POS
+
 - [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
 - [Install the POS layout designer](../install-pos-layout-designer.md)
 - [Modern POS (MPOS) triggers and printing](modern-pos-trigger-extensibility.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
 - [Add custom controls to POS views](pos-custom-control.md)
 - [Point of sale (POS) payment extension](pos-payment-extension.md)
+- [Support for tipping in the POS payments SDK](tipping.md)
 - [Run the point of sale (POS) samples](pos-run-samples.md)
 - [Extend POS views to add custom columns and app bar buttons](pos-view-extension.md)
 - [Add custom controls to Modern POS (MPOS) transaction pages](pos-custom-transaction.md)
@@ -83,19 +88,23 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add custom buttons to the POS header bar](pos-header-bar.md)
 
 ## Integrating Commerce
--   [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)
+
+- [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)
 
 ## Commerce Scale Unit
--   [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
--   [Commerce Scale Unit](retail-store-system-begin.md)
--   [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+
+- [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
+- [Commerce Scale Unit](retail-store-system-begin.md)
+- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
 ## Hardware station
--   [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
--   [Hardware Station extensibility](hardware-station-extensibility.md)
--   [Integrate POS with a new hardware device](hardware-device-extension.md)
+
+- [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
+- [Hardware Station extensibility](hardware-station-extensibility.md)
+- [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Commerce Runtime
+
 - [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
 - [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
 - [Manage secrets for retail channels](manage-secrets.md)
@@ -105,6 +114,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Extend Commerce Data Exchange - Real-time Service](extend-commerce-data-exchange.md)
 
 ## Retail SDK
+
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Upcoming changes in the Retail SDK](UpcomingSDKChanges.md)
 - [Important development and ALM changes from version 10.0.10 to 10.0.13](dev-changes-10-13.md)
@@ -112,7 +122,8 @@ This page lists the resources that are available for IT pros and developers who 
 - [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
-- [Channel database extensions](channel-db-extensions.md) 
+- [Download samples and packages from GitHub and NuGet](retail-sdk/sdk-github.md)
+- [Channel database extensions](channel-db-extensions.md)
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)
 - [Define and set order attributes](order-attributes.md)
 - [Customer attributes](customer-attributes.md)
@@ -133,10 +144,12 @@ This page lists the resources that are available for IT pros and developers who 
 - [Consume Retail Server APIs in external applications](consume-retail-server-api.md)
 
 ## eCommerce
--   [e-Commerce platform software development kit (SDK)](ecommerce-platform-sdk.md)
--   [Configure online stores](configure-online-store.md)
+
+- [e-Commerce platform software development kit (SDK)](ecommerce-platform-sdk.md)
+- [Configure online stores](configure-online-store.md)
 
 ## Payment connectors
+
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
 - [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)

@@ -5,7 +5,7 @@ title: Automated vendor invoicing processes overview
 description: This topic describes the capability for automating your vendor invoice processing and the benefits of using an automated process. 
 author: abruer
 manager: AnnBe
-ms.date: 10/16/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,8 +44,9 @@ The automation processes can be used to perform these tasks:
 - Automatically submit imported invoices to the workflow system.
 - Match product receipts to pending vendor invoice lines.
 - Simulate posting before a vendor invoice is posted.
-- Quickly and efficiently view workflow history.
+- Quickly and efficiently view workflow and automation history.
 - View and analyze the results of automating vendor invoice processing.
+- Resume automated processing for multiple invoices.
 
 ## Vendor invoice automation – Submit imported vendor invoices to the workflow system
 
@@ -63,10 +64,13 @@ The system can automatically match posted product receipts to invoice lines that
 
 Posting simulation completes the validation steps that are done during the posting process for vendor invoices, but no accounts are updated. To run the process, you can select either a single invoice or multiple invoices on the **Pending vendor invoices** page.
 
-## Vendor invoice automation – Enhanced experience for viewing workflow historical information for vendor invoices
+## Vendor invoice automation – Enhanced experience for viewing workflow and automation historical information for vendor invoices
 
-An easy-to-read view of vendor invoice workflow history is provided. Vendor invoice workflow history can be accessed directly from the vendor invoice. Therefore, fewer clicks are required to find that information.
+An easy-to-read view of vendor invoice workflow history is provided. Vendor invoice workflow history can be accessed directly from the vendor invoice. Therefore, fewer clicks are required to find that information. If your organization has enabled the ability to automatically submit imported vendor invoices to workflow, the automation history is provided for the imported invoices. The automation history helps you identify the current process step, as well as the steps that have already been completed. When a step is unsuccessful, the system provides detailed information to help you understand the reason for the failure.
 
 ## Vendor invoice automation – Analytics and metrics
 
 The **Vendor invoice entry** workspace lets you focus on vendor invoices that didn't make it through the automated process. Tiles on the workspace list information about vendor invoices that weren't successfully submitted to the workflow system, imported, or matched to product receipts. Microsoft Power BI metrics are also provided to give Accounts payable managers insight into the efficiencies of vendor invoice automation.
+
+## Vendor invoice automation - Resume automation processing for multiple invoices
+When an imported invoice isn’t submitted successfully to workflow through the automated process, the system will remove it from further automated processing. An accounts payable clerk can review and edit the invoice before the automated process resubmits it to workflow. When a failure reason can be resolved by the same fix for multiple invoices, you can restart the automated process on the **Resume automated invoice processing** page. 

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Reporting options
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 **Environment details**
 
 This issue applies to all environments.

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
 ms.assetid: 
@@ -89,7 +88,7 @@ However, if neither the source language nor the target language is a Microsoft G
 
 After you've finished uploading files, select **Submit** to start the translation process. 
 
-After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status displayed n a seperate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.  
+After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status displayed n a separate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.  
 
 To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information.
 

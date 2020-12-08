@@ -18,7 +18,6 @@ ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89071
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
@@ -57,8 +56,9 @@ Cross-company data sharing has the following limitations:
 -   It supports replication of fewer than one million total records per job. This total is calculated as the number of shared records × the number of shared companies. The limit is increased to two million records from the Platform Update for version 10.0.10.
 -   It supports replication for up to 100 companies per policy. The limit is increased to 300 companies from the Platform Update for version 10.0.10.
 -   Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
-- 	Fields that reference Financial dimension, for example **Ledger** or **Default** dimension, can't be shared across companies. 
+- 	Fields that reference Financial dimensions, for example **Ledger** or **Default** dimension, can't be shared across companies. 
       o	Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
+-   It can’t be used with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
 
 
 ### Policies

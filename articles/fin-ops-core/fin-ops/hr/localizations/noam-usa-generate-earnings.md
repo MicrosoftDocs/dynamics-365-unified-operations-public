@@ -18,7 +18,7 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220864
 ms.assetid: 87aac2bd-fcdb-4f97-a55f-7f25659d6940
@@ -96,7 +96,7 @@ To manually enter earnings that are based on pieces and earnings for exceptions,
 
 You can manually enter premium earnings, or you can generate them by using an automated process. When you use the automated process, the system adds premium lines to existing pay statements that have the selected pay cycle. The automated process doesn't create new earnings statements.
 
-If a worker should receive a premium for a pay period that he or she has no other earnings in, manually create an earnings statement for that worker, and then generate the premium earnings.
+If a worker should receive a premium for a pay period that the worker has no other earnings in, manually create an earnings statement for that worker, and then generate the premium earnings.
 
 To generate premium earnings for workers, follow these steps.
 

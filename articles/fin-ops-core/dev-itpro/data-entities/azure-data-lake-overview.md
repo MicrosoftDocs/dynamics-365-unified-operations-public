@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:
+# ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 34
 # Azure Data Lake overview
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## What is Azure Data Lake?
 
