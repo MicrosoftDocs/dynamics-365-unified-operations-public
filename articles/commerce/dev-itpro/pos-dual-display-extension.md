@@ -34,7 +34,7 @@ This topic explains how to extend the point of sale (POS) Dual display view so t
 You can extend the POS Dual display view by adding a custom control. In the custom control, you can add images, POS data lists, labels, and so on, to show custom information.
 
 > [!NOTE]
-> You can extend the POS Dual display view only by adding a custom control. The custom control will override the standard content that is shown in the POS Dual display view.
+> You can extend the POS Dual display view only by adding a custom control, the custom control will override the standard content that is shown in the POS Dual display view and the dual display custom control and other extension details information will not be shown in the extension details view.
 
 ## Required steps
 
