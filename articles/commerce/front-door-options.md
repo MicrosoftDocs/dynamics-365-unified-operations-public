@@ -53,10 +53,11 @@ For more information on setting up an Azure Front Door instance for your Commerc
 
 ## Use a Dynamics 365 Commerce Azure Front Door instance
 
-The Azure Front Door instance provided by Dynamics 365 Commerce. This is Azure Front Door hosted by Commerce Team
+The Azure Front Door instance provided by Dynamics 365 Commerce, and is hosted by the Commerce team.
 
+<!--
 | Pros | Cons |
-|:----:|:----:|
+| ---- | ---- |
 | - Built-in to Commerce cost
 - Managed by Commerce team (lower touch, shared setup steps required)
 - Azure hosted infrastructure is scalable, secure, reliable.
@@ -66,6 +67,7 @@ The Azure Front Door instance provided by Dynamics 365 Commerce. This is Azure F
 - Dependent upon Commerce Team for updates/changes
 - Separate AFD needed for apex domain and need extra work for apex domain with Azure DNS integration
 - No telemetry to customer (on RPS/Error rate) |
+-->
 
 ### Pros of using a Dynamics 365 Commerce Azure Front Door instance
 
@@ -83,6 +85,7 @@ The Azure Front Door instance provided by Dynamics 365 Commerce. This is Azure F
 - Separate AFD needed for apex domain and need extra work for apex domain with Azure DNS integration
 - No telemetry to customer (on RPS/Error rate)
 
+<!--
 <table>
  <tbody>
    <tr>
@@ -113,13 +116,31 @@ The Azure Front Door instance provided by Dynamics 365 Commerce. This is Azure F
    </tr>
  </tbody>
 </table>
-
+-->
 The following illustration shows the architecture of the Commerce-provided Azure Front Door instance.
 
 ![Commerce Azure Front Door](media/Commerce_CDN-Option_CommerceFrontDoor.png) 
 
 ## Use a customer-owned Azure Front Door instance
 
+Subscribe to Azure Front Door within your Azure Subscription.
+
+### Pros of using a customer-owned Azure Front Door instance
+
+- Secure, easy to manage setup and secure
+- Azure hosted infrastructure is scalable, secure, reliable
+- Allows for WAF integration and granular rule controls for finer-grade security tuned specifically for your site
+- Finer control of SSL Certificates (own cert and AFD managed cert) and domain linking
+- Paired directly with AzureDNS offers Apex domain solution
+- Telemetry/Alerting
+- SSL Cert is one-time setup and auto renewed
+
+### Cons of using a customer-owned Azure Front Door instance
+
+- Self-managed
+- Initial knowledge ramp-up needed
+
+<!--
 <table>
 <tbody>
 <tr>
@@ -149,6 +170,7 @@ The following illustration shows the architecture of the Commerce-provided Azure
 </tr>
 </tbody>
 </table>
+-->
 
 The following illustration shows the architecture of the customer-owned Azure Front Door instance.
 
@@ -156,6 +178,23 @@ The following illustration shows the architecture of the customer-owned Azure Fr
 
 ## Use an external content delivery network (CDN)
 
+Use an external CDN provider instance to manage your content endpoints.
+
+### Pros of using an external CDN
+
+- This is useful when existing domain is already hosted on external Front Door
+- Competitors (e.g. Akamai) might have more WAF capabilities
+
+### Cons of using an external CDN
+
+- Separate contract, additional costing
+- SSL might be additional cost
+- Separate from Azure cloud structure - an additional infrastructure to manage
+- Potentially longer time investments in endpoint setup, security setup
+- Self-managed
+- Self-monitored
+
+<!--
 <table>
 <tbody>
 <tr>
@@ -185,10 +224,12 @@ The following illustration shows the architecture of the customer-owned Azure Fr
 </tbody>
 </table>
 
+-->
+
 The following illustration shows 
 
 ![External Front Door](media/Commerce_CDN-Option_ExternalFrontDoor.png) 
 
 ## Additional resources
 
-
+[Add CDN Support](add-cdn-support.md)
