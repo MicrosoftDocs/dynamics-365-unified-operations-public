@@ -46,6 +46,9 @@ To provide customers with data application lifecycle management (DataALM) capabi
 3. Make a note of the warnings, and review the list of data elements that aren't copied from the source environment's previous point in time.
 4. The restore operation begins immediately.
 
+> [!IMPORTANT]
+> Self-service PITR is not supported between environments that are on different regions. Please see the known issues section for more details.
+
 ### Restore operation failure
 
 If the restore operation isn't successful, you can do a rollback. If you select the **Rollback** option after the operation originally fails, your target sandbox environment is restored to the state that it was in before the refresh began. Rollbacks are made available by the PITR capability of Azure SQL Database. They are typically required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly refreshed data.
@@ -130,3 +133,7 @@ The database refresh process (self-service or via service request) can't be comp
 If you're upgrading your sandbox UAT environment to a newer application version (for example, from 7.3 to 8.1), be sure to perform the database refresh action before you start the upgrade. After your sandbox environment is upgraded to the newer version, you can't restore an older production environment database to the sandbox UAT environment.
 
 Conversely, if your production environment is newer than your target sandbox environment, you must either upgrade the target sandbox environment before the refresh, or just deallocate, delete, and redeploy the environment before you do the refresh.
+
+### The source and target are on different infrastructure (Microsoft Managed Vs Self Service)
+
+The point in time restore process (PITR) is not supported between Microsoft Managed and Self Service environments across two different regions. For example, if the production environment is microsoft managed and in East US2 and a PITR is needed to the Sandbox which could be in East US on Self Service, PITR is not supported. The alternative here is to move the production to Self Service or opt for a regular database refresh instead. PITR is supported between environments on the same infra, both across regions and same regions.
