@@ -60,23 +60,26 @@ The Azure Front Door instance provided by Dynamics 365 Commerce, and is hosted b
 | ---- | ---- |
 | &#8226; Built-in to Commerce cost<br>&#8226; Managed by Commerce team (lower touch, shared setup steps required)<br>&#8226; Azure hosted infrastructure is scalable, secure, reliable.<br>&#8226; Secure Sockets Layer (SSL) certificate is one-time setup and autorenewed.<br>&#8226; Monitored by the Commerce team for errors and anomalies. | &#8226; WAF not supported<br>&#8226; No specific customizations or setting adjustments<br>&#8226; Dependent upon Commerce Team for updates/changes<br>&#8226; Separate AFD needed for apex domain and need extra work for apex domain with Azure DNS integration<br>&#8226; No telemetry to customer (on RPS/Error rate) |
 
-
+<!--
 ### Pros of using a Dynamics 365 Commerce Azure Front Door instance
-
+-->
+<!--
 - Built-in to Commerce cost
 - Managed by Commerce team (lower touch, shared setup steps required)
 - Azure hosted infrastructure is scalable, secure, reliable.
 - Secure Sockets Layer (SSL) certificate is one-time setup and autorenewed.
 - Monitored by the Commerce team for errors and anomalies.
-
+-->
+<!--
 ### Cons of using a Dynamics 365 Commerce Azure Front Door instance
-
+-->
+<!--
 - WAF not supported
 - No specific customizations or setting adjustments
 - Dependent upon Commerce Team for updates/changes
 - Separate AFD needed for apex domain and need extra work for apex domain with Azure DNS integration
 - No telemetry to customer (on RPS/Error rate)
-
+-->
 <!--
 <table>
  <tbody>
@@ -117,8 +120,14 @@ The following illustration shows the architecture of the Commerce-provided Azure
 
 Subscribe to Azure Front Door within your Azure Subscription.
 
-### Pros of using a customer-owned Azure Front Door instance
+| Pros | Cons |
+| ---- | ---- |
+|&#8226; Secure, easy to manage setup and secure<br>&#8226; Azure hosted infrastructure is scalable, secure, reliable<br>&#8226; Allows for WAF integration and granular rule controls for finer-grade security tuned specifically for your site<br>&#8226; Finer control of SSL Certificates (own cert and AFD managed cert) and domain linking<br>&#8226; Paired directly with AzureDNS offers Apex domain solution<br>&#8226; Telemetry/Alerting<br>&#8226; SSL Cert is one-time setup and auto renewed | &#8226; Self-managed<br>&#8226; Initial knowledge ramp-up needed |
 
+<!--
+### Pros of using a customer-owned Azure Front Door instance
+-->
+<!--
 - Secure, easy to manage setup and secure
 - Azure hosted infrastructure is scalable, secure, reliable
 - Allows for WAF integration and granular rule controls for finer-grade security tuned specifically for your site
@@ -126,12 +135,14 @@ Subscribe to Azure Front Door within your Azure Subscription.
 - Paired directly with AzureDNS offers Apex domain solution
 - Telemetry/Alerting
 - SSL Cert is one-time setup and auto renewed
-
+-->
+<!--
 ### Cons of using a customer-owned Azure Front Door instance
-
+-->
+<!--
 - Self-managed
 - Initial knowledge ramp-up needed
-
+-->
 <!--
 <table>
 <tbody>
@@ -172,19 +183,28 @@ The following illustration shows the architecture of the customer-owned Azure Fr
 
 Use an external CDN provider instance to manage your content endpoints.
 
-### Pros of using an external CDN
+| Pros | Cons |
+| ---- | ---- |
+| &#8226; This is useful when existing domain is already hosted on external Front Door<br>&#8226; Competitors (e.g. Akamai) might have more WAF capabilities | &#8226; Separate contract, additional costing<br>&#8226; SSL might be additional cost<br>&#8226; Separate from Azure cloud structure - an additional infrastructure to manage<br>&#8226; Potentially longer time investments in endpoint setup, security setup<br>&#8226; Self-managed<br>&#8226; Self-monitored |
 
+<!--
+### Pros of using an external CDN
+-->
+<!--
 - This is useful when existing domain is already hosted on external Front Door
 - Competitors (e.g. Akamai) might have more WAF capabilities
-
+-->
+<!--
 ### Cons of using an external CDN
-
+-->
+<!--
 - Separate contract, additional costing
 - SSL might be additional cost
 - Separate from Azure cloud structure - an additional infrastructure to manage
 - Potentially longer time investments in endpoint setup, security setup
 - Self-managed
 - Self-monitored
+-->
 
 <!--
 <table>
