@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Digital gift cards in Dynamics 365 Commerce
-description: This topic describes how digital gift cards work in Dynamics 365 Commerce and provides an overview of important configuration steps.
+title: E-commerce digital gift cards
+description: This topic describes how digital gift cards work in the e-commerce implementation of Dynamics 365 Commerce and provides an overview of important configuration steps.
 author: anupamar-ms
 manager: annbe
-ms.date: 12/03/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,20 +28,19 @@ ms.dyn365.ops.version: Release 10.0.15
 
 ---
 
-# Digital gift cards in Dynamics 365 Commerce
+# E-commerce digital gift cards
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how digital gift cards work in Dynamics 365 Commerce and provides an overview of important configuration steps.
+This topic describes how digital gift cards work in the e-commerce implementation of Dynamics 365 Commerce and provides an overview of important configuration steps.
 
-In Dynamics 365 Commerce, the digital gift card purchase flow follows the same flow as other products in the system and does not require any additional modules to be configured.
-
-When multiple gift cards are added to the cart, gift card items will not be aggregated in a single sales line. This is required because each sales line will be invoiced with a separate gift card number. 
+In Dynamics 365 Commerce, the digital gift card purchase flow follows the same flow as other products in the system and does not require any additional modules to be configured. When multiple gift cards are added to the cart, gift card items will not be aggregated in a single sales line. This is required because each sales line is invoiced with a separate gift card number. 
 
 The purchase of digital gift cards is supported as of the Dynamics 365 Commerce 10.0.16 release. 
 
 The following image shows an example of a digital gift card product details page (PDP) on the Fabrikam e-commerce site. 
+
 ![Example of a digital gift card product details page on the Fabrikam e-commerce site](./media/GiftcardPDP.PNG)
 
 ## Enable the digital gift card feature in Commerce headquarters
@@ -57,10 +56,6 @@ Digital gift card products should be configured in Commerce headquarters similar
 The following important steps are specific to configuring a gift card for purchase in Commerce headquarters.
 
 - When configuring digital gift card products at **Retail and commerce \> Products and categories \> Products by category \> New product**, set the **Product type** property to **Service**. If a product is of type **Service**, it will not be checked for available inventory before placing an order. For more information, see [Create a new product](create-new-product-commerce.md#create-a-new-product). 
-<!--
-See image below for details.
-![Creating a product as Service](./media/ServiceItem.png)
--->
 - At **Commerce parameters \> Posting**, the **Gift card product** property must be set to **Digital Gift Card**. If the product is an external gift card, see [Support for external gift cards](./dev-itpro/gift-card.md) for more information.
 
     The following image shows the **Gift card product** drop-down list box in Commerce headquarters.
@@ -82,7 +77,7 @@ See image below for details.
 
 ## Add product images to the Commerce site builder Media library
 
-You must add product images for digital gift card products to the Commerce site builder **Media library**. Ensure that the gift card image file names follow your site's naming conventions for product images. For more information, see [Upload images](dam-upload-images.md).
+You must add product images for digital gift card products to the Commerce site builder Media library. Ensure that the gift card image file names follow your site's naming conventions for product images. For more information, see [Upload images](dam-upload-images.md).
 
 ## Configure a custom amount for a digital gift card in Commerce site builder
 
