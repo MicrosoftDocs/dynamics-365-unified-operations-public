@@ -55,19 +55,11 @@ For more information on setting up an Azure Front Door instance for your Commerc
 
 The Azure Front Door instance provided by Dynamics 365 Commerce, and is hosted by the Commerce team.
 
-<!--
+
 | Pros | Cons |
 | ---- | ---- |
-| - Built-in to Commerce cost
-- Managed by Commerce team (lower touch, shared setup steps required)
-- Azure hosted infrastructure is scalable, secure, reliable.
-- Secure Sockets Layer (SSL) certificate is one-time setup and autorenewed.
-- Monitored by the Commerce team for errors and anomalies. | - WAF not supported
-- No specific customizations or setting adjustments
-- Dependent upon Commerce Team for updates/changes
-- Separate AFD needed for apex domain and need extra work for apex domain with Azure DNS integration
-- No telemetry to customer (on RPS/Error rate) |
--->
+| &#8226; Built-in to Commerce cost<br>&#8226; Managed by Commerce team (lower touch, shared setup steps required)<br>&#8226; Azure hosted infrastructure is scalable, secure, reliable.<br>&#8226; Secure Sockets Layer (SSL) certificate is one-time setup and autorenewed.<br>&#8226; Monitored by the Commerce team for errors and anomalies. | &#8226; WAF not supported<br>&#8226; No specific customizations or setting adjustments<br>&#8226; Dependent upon Commerce Team for updates/changes<br>&#8226; Separate AFD needed for apex domain and need extra work for apex domain with Azure DNS integration<br>&#8226; No telemetry to customer (on RPS/Error rate) |
+
 
 ### Pros of using a Dynamics 365 Commerce Azure Front Door instance
 
