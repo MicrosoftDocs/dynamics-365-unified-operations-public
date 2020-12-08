@@ -168,7 +168,7 @@ To pull data from a new channel table to HQ, you have two options:
     ```
 
     > [!NOTE]
-    > If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
+    > If you are creating an extended table and want to sync the data back to HQ, then its must to have the same primary key and Clustered index as the HQ table in the extended table, else the CDX sync will fail. And if you need to pull the data from the extension table to HQ then REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) is required in the extension table.
 
     > [!NOTE]
     > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job.
