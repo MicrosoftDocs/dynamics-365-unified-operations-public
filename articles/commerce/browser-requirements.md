@@ -47,7 +47,7 @@ Dynamics 365 Commerce sites are best supported using the following web browsers.
 
 ## Additional resources
 
-[Create an e-commerce site][(create-ecommerce-site.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
