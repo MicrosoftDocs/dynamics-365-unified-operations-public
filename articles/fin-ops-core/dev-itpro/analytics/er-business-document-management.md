@@ -80,24 +80,24 @@ Sample ER configurations are used in the example of this procedure. You must imp
 
 **Sample ER customer invoicing solution**
 
-| **File**                                  | **Content**                                |
-|-------------------------------------------|--------------------------------------------|
+| File                                      | Content |
+|-------------------------------------------|---------|
 | Customer invoicing model.version.2.xml    | [ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Customer FTI report (GER).version.2.3.xml | [Free text invoice ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Sample ER payment checks solution**
 
-| **File**                                  | **Content**                                |
-|-------------------------------------------|--------------------------------------------|
-| Model for cheques.version.10.xml          | [ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Cheques printing format.version.10.9.xml  | [Payment cheque ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| File                                     | Content |
+|------------------------------------------|---------|
+| Model for cheques.version.10.xml         | [ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Cheques printing format.version.10.9.xml | [Payment cheque ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Sample ER foreign trade solution**
 
-| **File**                                  | **Content**                                |
-|-------------------------------------------|--------------------------------------------|
-| Intrastat model.version.1.xml             | [ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Intrastat report.version.1.9.xml          | [Intrastat control report ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| File                             | Content |
+|----------------------------------|---------|
+| Intrastat model.version.1.xml    | [ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Intrastat report.version.1.9.xml | [Intrastat control report ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 Use the following procedure to import each file. Import the ER *data model* configuration of each ER solution in the tables above before you import the corresponding ER *format* configuration.
 
@@ -109,13 +109,11 @@ Use the following procedure to import each file. Import the ER *data model* conf
 
 ![ER configurations page](./media/BDM-Overview-ERSolutions.png)
 
-
 Alternatively, you can import the officially published ER format configurations from Microsoft Dynamics Lifecycle Service (LCS). For example, to complete this procedure you can import the latest version of the **Free text invoice (Excel)** ER format configuration. The corresponding ER data model and ER model mapping configurations will be imported automatically.
 
 ![LCS shared asset library content page](./media/BDM-Overview-SharedAssetLibrary.png)
 
 For more information about importing ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
-
 
 ## Enable Business document management
 
@@ -128,7 +126,7 @@ Use the following procedure to enable Business document management functionality
 3. Select **Enable now** to turn on the selected feature.
 4. Refresh the page to access the new feature.
 
->[!NOTE]
+> [!NOTE]
 > For more information about using the new document user interface in Business document management, see [New document user interface in Business document management](er-business-document-management-new-template-ui.md).
 
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
@@ -140,21 +138,22 @@ For more information about activating new features, see [Feature management over
 Use the information in the following sections to set up the basic parameters for Business document management.
 
 ### Prerequisites for parameter setup
+
 Before you can set up Business document management, you must set up the required document type in the Document management framework. This document type is used to specify a temporary storage of documents in Office formats (Excel and Word) that are used as templates for ER reports. The temporary storage template can be edited by using the Office desktop applications.
 
 For this document type, the following attribute values must be selected.
 
-| **Attribute name**  | **Attribute value**   |
-|---------------------|-----------------------|
-| Class               | Attach file           |
-| Group               | File                  |
-| Location            | SharePoint            |
+| Attribute name | Attribute value |
+|----------------|-----------------|
+| Class          | Attach file     |
+| Group          | File            |
+| Location       | SharePoint      |
 
 For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Set up Document management document type](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Set up parameters</a>
+### <a name="SetupBdmParameters"></a>Set up parameters
 
 Basic Business document management parameters can be set up on the **Business document parameters** page. Only specific users can access the page. This includes:
 
@@ -165,7 +164,7 @@ Use the following procedure to set up the basic parameters for all legal entitie
 
 1. Sign in as a user with access to the **Business document parameters** page.
 2. Go to **Organization administration** \> **Electronic reporting** \> **Business document management** \> **Business document parameters**.
-3.    On the **Business document parameters** page, on the **Attachments** tab, in the **SharePoint document type** field, define the document type that should be used to temporarily store templates in Office formats while they are edited using the Office desktop applications. 
+3. On the **Business document parameters** page, on the **Attachments** tab, in the **SharePoint document type** field, define the document type that should be used to temporarily store templates in Office formats while they are edited using the Office desktop applications. 
 
 > [!NOTE]
 > Only document types that are configured using a SharePoint location are available for this parameter.
@@ -175,7 +174,7 @@ Use the following procedure to set up the basic parameters for all legal entitie
 The selected document type is company-specific and will be used when the user is working with Business document management in the company for which the selected document type is configured. When the user is working with Business document management in another company, the same selected document type will be used if one has not been configured for this company. When a document type has been configured, it will be used instead of the one selected in the **SharePoint document type** field.
 
 > [!NOTE]
-> The **SharePoint document type** parameter defines a SharePoint folder as temporary storage for templates that are editable using either Microsoft Excel or Word. You need to set up this parameter if you plan to use these Office desktop applications for editing templates. For more information, see [Edit a template in the Office desktop application](#EditInOfficeDesktopApp). You can keep this parameter blank if you plan to modify the template by only using the functionality in  Microsoft 365. For more information, see [Edit a template in Microsoft 365](#EditInOffice365).
+> The **SharePoint document type** parameter defines a SharePoint folder as temporary storage for templates that are editable using either Microsoft Excel or Word. You need to set up this parameter if you plan to use these Office desktop applications for editing templates. For more information, see [Edit a template in the Office desktop application](#EditInOfficeDesktopApp). You can keep this parameter blank if you plan to modify the template by only using the functionality in Microsoft 365. For more information, see [Edit a template in Microsoft 365](#EditInOffice365).
 
 ## Configure access permissions
 
@@ -279,12 +278,12 @@ The **Edit template** option is available for the selected template. This option
 
 1. In the Business document management workspace, select the document that you want to use as a template.
 
-![Business document management workspace page](./media/BDM-Overview-EditingTemplate3.png)
+    ![Business document management workspace page](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Select **New document**, and in the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
-4. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
-5. In the **Comment** field, change the comment for the automatically created revision of the editable template.
-6. Select **OK** to confirm the start of the editing process
+2. Select **New document**, and in the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
+3. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
+4. In the **Comment** field, change the comment for the automatically created revision of the editable template.
+5. Select **OK** to confirm the start of the editing process.
 
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate4.png)
 
@@ -298,19 +297,19 @@ The **New document** option is always available for a template in an ER format c
 
     ![Business document management workspace page](./media/BDM-Overview-EditingTemplate5.png)
 
-5. Select **OK** to confirm the start of the editing process.
+4. Select **OK** to confirm the start of the editing process.
 
 The **BDM template editor** page will open. The selected template will be available for online editing by using Microsoft 365.
 
 ![Business document management workspace page](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Edit a template in Microsoft 365</a>
+### <a name="EditInOffice365"></a>Edit a template in Microsoft 365
 
 You can modify the template using Microsoft 365. For example, in Office online, change the font of the field prompts in the template header from **Regular** to **Bold**. These changes are automatically stored in the editable template that is stored in the primary template's storage (by default, the Azure blob storage). This is configured for the ER framework.
 
 ![Business document management template editor page](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Edit a template in the Office desktop application</a>
+### <a name="EditInOfficeDesktopApp"></a>Edit a template in the Office desktop application
 
 > [!NOTE]
 > This function is only available when the **SharePoint document type** parameter is properly configured. For more information, see [Configure parameters](#SetupBdmParameters).
@@ -359,7 +358,7 @@ The updated template is shown on the **Template** tab. Notice that the status of
     ![Print management setting page](./media/BDM-Overview-TestRun1.png)
 
 6. Press **Escape** to close the current page.
-7. Select **Print**, and then click **Selected**.
+7. Select **Print**, and then select **Selected**.
 8. Download the document and open it using the Excel desktop application.
 
 ![Free text invoices page](./media/BDM-Overview-TestRun2.png)
@@ -398,15 +397,18 @@ When you edit the template from an ER format that is owned by the current active
 3. If you select **OK** to revoke the changes introduced for the template, the modified template will be replaced by the original template and all changes will be removed. When you revoke changes to the template, you will be able to delete the template. Select **Cancel** to explore other options.
 
 ### Publish a modified template
+
 1. On the **BDM template editor** page, on the **Template** tab, select **Publish**.
 2. If you select **OK** to confirm publishing, the draft version of the derived **Customer FTI report (GER) Copy** ER format that contains the modified template will be marked as completed. The modified template becomes available for other users. The completed versions of this ER format will keep only the last active revision of your template. Other revisions will be deleted. Select **Cancel** to explore other options.
 
 ## Frequently asked questions
 
-### I selected Edit document, but instead of opening the BDM template editor page in Finance, I have been sent to the Microsoft 365 web page.
-This is a known issue with the Microsoft 365 redirection. This happens when you sign to Microsoft 365 the first time. To work around this issue, select **Back** on your browser to navigate back to the previous page.
+### I selected Edit document, but instead of going to the BDM template editor page in Finance, I was sent to the Microsoft 365 webpage.
 
-### I understand how to edit a template by using Microsoft 365 in the first application session, and how to use the template in the second application session adjusting the template to see how my changes affect the generated business document. Can I do this using the Office desktop application?
+This issue is a known issue that involves Microsoft 365 redirection. It occurs when you sign to Microsoft 365 for the first time. To work around this issue, select **Back** in your browser to return to the previous page.
+
+### I understand how to edit a template by using Microsoft 365 in the first application session, and how to use the template in the second application session and adjust the template to see how my changes affect the generated business document. Can I use the Office desktop application in the same way?
+
 Yes, you can. In the first application session, select **Open in Desktop App**. Your template will be stored in the temporary file storage and opened in the Office desktop application. Next, complete the following steps to preview your template changes in the generated business document:
 
 1. Make changes in the template by using the Office desktop application.
@@ -414,7 +416,8 @@ Yes, you can. In the first application session, select **Open in Desktop App**. 
 3. On the **BDM template editor** page of the first application session, select **Sync stored copy**.
 4. Execute this template ER format in the second application session.
 
-#### I receive the error, 'Value cannot be null. Parameter name: externalId' when I select **Open in Desktop App**. How do I work around this? 
+### When I select Open in Desktop App, I receive the following error message: "Value cannot be null. Parameter name: externalId." How do I work around this issue?
+
 Most likely you signed in to the current instance of the app of the Azure AD domain which differs from the Azure AD domain that was used to deploy this instance. Because the SharePoint service, which is used to store templates for making them available for editing by using the Office desktop applications, belongs to the same domain, we have no permissions to access the SharePoint service. To resolve this issue, sign in to the current instance using the credentials of a user with the correct Azure AD domain.
 
 ## Additional resources
@@ -429,163 +432,163 @@ Most likely you signed in to the current instance of the app of the Azure AD dom
 
 [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="list-of-configurations-cbd">List of ER configurations that are delivered in Finance application to support configurable business documents</a>
+## <a name="list-of-configurations-cbd"></a>List of ER configurations that have been released in Finance to support configurable business documents
 
-The [list](general-electronic-reporting.md#list-of-configurations) of ER configurations for the Finance application is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of currently supported ER configurations. [Filter](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) the Global repository to review the list of ER configurations used to support configurable business documents.
+The [list](general-electronic-reporting.md#list-of-configurations) of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. You can [filter](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) the Global repository to review the list of ER configurations that are used to support configurable business documents.
 
-![Configuration repository page that presents the process of filtering the content of the GLobal repository](./media/bdm-overview-filterglobalrepo.gif)
+![Filtering the content of the Global repository on the Configuration repository page](./media/bdm-overview-filterglobalrepo.gif)
 
-The following table contains the list of ER configurations to support configurable business documents that have been released in Finance up to December 2020.
+The following table shows the list of ER configurations that support configurable business documents and that have been released in Finance up until December 2020.
 
-| **Data model configurations** | **Format configurations**                       |
-|-------------------------------|-------------------------------------------------|
-| Bill of lading model          | Bill of lading (Excel)                          |
-|     &nbsp;                    | Bill of lading (Word)                           |
-| Certificate of origin model   | Certificate of origin (Excel)                   |
-|     &nbsp;                    | Certificate of origin (Word)                    |
-| Invoice model                 | Customer Debit and Credit Note (Excel)          |
-|     &nbsp;                    | Customer Debit and Credit Note (Word)           |
-|     &nbsp;                    | Free text invoice (Excel)                       |
-|     &nbsp;                    | Free text invoice (Excel) (BH)                  |
-|     &nbsp;                    | Free text invoice (FR) (Excel)                  |
-|     &nbsp;                    | Free text invoice (LT) (Excel)                  |
-|     &nbsp;                    | Free text invoice (LV) (Excel)                  |
-|     &nbsp;                    | Free text invoice (PL) (Excel)                  |
-|     &nbsp;                    | Free text invoice (CZ) (Excel)                  |
-|     &nbsp;                    | Free text invoice (EE) (Excel)                  |
-|     &nbsp;                    | Free text invoice (HU) (Excel)                  |
-|     &nbsp;                    | Free text invoice (TH) (Excel)                  |
-|     &nbsp;                    | Free text invoice (Word)                        |
-|     &nbsp;                    | Project contract line items (Excel)             |
-|     &nbsp;                    | Project contract line items (CZ) (Excel)        |
-|     &nbsp;                    | Project contract line items (Excel) (BH)        |
-|     &nbsp;                    | Project contract line items (HU) (Excel)        |
-|     &nbsp;                    | Project contract line items (LT) (Excel)        |
-|     &nbsp;                    | Project contract line items (PL) (Excel)        |
-|     &nbsp;                    | Project contract line items (Word)              |
-|     &nbsp;                    | Project customer retention release (Excel)      |
-|     &nbsp;                    | Project customer retention release (CZ) (Excel) |
-|     &nbsp;                    | Project customer retention release (HU) (Excel) |
-|     &nbsp;                    | Project customer retention release (LT) (Excel) |
-|     &nbsp;                    | Project customer retention release (PL) (Excel) |
-|     &nbsp;                    | Project customer retention release (TH) (Excel) |
-|     &nbsp;                    | Project customer retention release (Word)       |
-|     &nbsp;                    | Project invoice (Excel)                         |
-|     &nbsp;                    | Project Invoice (Word)                          |
-|     &nbsp;                    | Project invoice (AE) (Excel)                    |
-|     &nbsp;                    | Project invoice (CZ) (Excel)                    |
-|     &nbsp;                    | Project invoice (Excel) (BH)                    |
-|     &nbsp;                    | Project invoice (HU) (Excel)                    |
-|     &nbsp;                    | Project invoice (JP) (Excel)                    |
-|     &nbsp;                    | Project invoice (LT) (Excel)                    |
-|     &nbsp;                    | Project invoice (PL) (Excel)                    |
-|     &nbsp;                    | Project invoice (TH) (Excel)                    |
-|     &nbsp;                    | Project invoice full (MY) (Excel)               |
-|     &nbsp;                    | Project invoice simple (MY) (Excel)             |
-|     &nbsp;                    | Project manage invoice (Excel)                  |
-|     &nbsp;                    | Project manage invoice (CZ) (Excel)             |
-|     &nbsp;                    | Project manage invoice (Excel) (BH)             |
-|     &nbsp;                    | Project manage invoice (HU) (Excel)             |
-|     &nbsp;                    | Project manage invoice (JP) (Excel)             |
-|     &nbsp;                    | Project manage invoice (LT) (Excel)             |
-|     &nbsp;                    | Project manage invoice (PL) (Excel)             |
-|     &nbsp;                    | Project manage invoice (Word)                   |
-|     &nbsp;                    | Purchase advance invoice (Excel)                |
-|     &nbsp;                    | Purchase advance invoice (Word)                 |
-|     &nbsp;                    | Sales advance invoice (Excel)                   |
-|     &nbsp;                    | Sales advance invoice (Word)                    |
-|     &nbsp;                    | Sales advance invoice (PL) (Excel)              |
-|     &nbsp;                    | Sales invoice (Excel)                           |
-|     &nbsp;                    | Sales invoice (Excel) (BH)                      |
-|     &nbsp;                    | Sales invoice (Excel) (CZ)                      |
-|     &nbsp;                    | Sales invoice (Excel) (EE)                      |
-|     &nbsp;                    | Sales invoice (Excel) (FR)                      |
-|     &nbsp;                    | Sales invoice (Excel) (HU)                      |
-|     &nbsp;                    | Sales invoice (Excel) (IN)                      |
-|     &nbsp;                    | Sales invoice (Excel) (LT)                      |
-|     &nbsp;                    | Sales invoice (Excel) (LV)                      |
-|     &nbsp;                    | Sales invoice (Excel) (PL)                      |
-|     &nbsp;                    | Sales invoice (Excel) (TH)                      |
-|     &nbsp;                    | Sales invoice (Word)                            |
-|     &nbsp;                    | TMS Commercial Invoice (Excel)                  |
-|     &nbsp;                    | TMS Commercial Invoice (Word)                   |
-|     &nbsp;                    | Vendor invoice document (Excel)                 |
-|     &nbsp;                    | Vendor invoice document (CZ) (Excel)            |
-|     &nbsp;                    | Vendor invoice document (HU) (Excel)            |
-|     &nbsp;                    | Vendor invoice document (IN) (Excel)            |
-|     &nbsp;                    | Vendor invoice document (LT) (Excel)            |
-|     &nbsp;                    | Vendor invoice document (LV) (Excel)            |
-|     &nbsp;                    | Vendor invoice document (MY) (Excel)            |
-|     &nbsp;                    | Vendor invoice document (Word)                  |
-| Order model                   | Agreement confirmation (Excel)                  |
-|     &nbsp;                    | Agreement confirmation (Word)                   |
-|     &nbsp;                    | Purchase agreement confirmation (Excel)         |
-|     &nbsp;                    | Purchase agreement confirmation (Word)          |
-|     &nbsp;                    | Purchase order (Excel)                          |
-|     &nbsp;                    | Purchase order (CZ) (Excel)                     |
-|     &nbsp;                    | Purchase order inquiry (CZ) (Excel)             |
-|     &nbsp;                    | Purchase order (HU) (Excel)                     |
-|     &nbsp;                    | Purchase order inquiry (HU) (Excel)             |
-|     &nbsp;                    | Purchase order (Word)                           |
-|     &nbsp;                    | Purchase order inquiry (Excel)                  |
-|     &nbsp;                    | Purchase order inquiry (Word)                   |
-|     &nbsp;                    | Sales order confirmation (Excel)                |
-|     &nbsp;                    | Sales order confirmation (CZ) (Excel)           |
-|     &nbsp;                    | Sales order confirmation (HU) (Excel)           |
-|     &nbsp;                    | Sales order confirmation (Word)                 |
-| Packing list model            | Container contents (Excel)                      |
-|     &nbsp;                    | Container contents (Word)                       |
-|     &nbsp;                    | Load list (Excel)                               |
-|     &nbsp;                    | Load list (Word)                                |
-|     &nbsp;                    | Picking list (Excel)                            |
-|     &nbsp;                    | Picking list (CZ) (Excel)                       |
-|     &nbsp;                    | Picking list (Word)                             |
-|     &nbsp;                    | Production pick list (Excel)                    |
-|     &nbsp;                    | Production pick list (Word)                     |
-|     &nbsp;                    | Shipping pick list for load (Excel)             |
-|     &nbsp;                    | Shipping pick list for load (Word)              |
-|     &nbsp;                    | Shipping pick list for shipment (Excel)         |
-|     &nbsp;                    | Shipping pick list for shipment (Word)          |
-|     &nbsp;                    | Shipping pick list for wave (Excel)             |
-|     &nbsp;                    | Shipping pick list for wave (Word)              |
-| Payment model                 | Customer payment advice (Excel)                 |
-|     &nbsp;                    | Customer payment advice (Word)                  |
-|     &nbsp;                    | Vendor payment advice (Excel)                   |
-|     &nbsp;                    | Vendor payment advice (Word)                    |
-| Quotation model               | Project quotation (Excel)                       |
-|     &nbsp;                    | Project quotation (Word)                        |
-|     &nbsp;                    | Request for quotation (Excel)                   |
-|     &nbsp;                    | Request for quotation (Accept) (Excel)          |
-|     &nbsp;                    | Request for quotation (Accept) (Word)           |
-|     &nbsp;                    | Request for quotation (Reject) (Excel)          |
-|     &nbsp;                    | Request for quotation (Reject) (Word)           |
-|     &nbsp;                    | Request for quotation (Return) (Excel)          |
-|     &nbsp;                    | Request for quotation (Return) (Word)           |
-|     &nbsp;                    | Request for quotation (Word)                    |
-|     &nbsp;                    | Sales quotation (Excel)                         |
-|     &nbsp;                    | Sales quotation (CZ) (Excel)                    |
-|     &nbsp;                    | Sales quotation (HU) (Excel)                    |
-|     &nbsp;                    | Sales quotation (Word)                          |
-|     &nbsp;                    | Sales quotation confirmation (Excel)            |
-|     &nbsp;                    | Sales quotation confirmation (Word)             |
-|     Reconciliation model      | Cust account statement, Ext (Excel)             |
-|     &nbsp;                    | Cust account statement, Ext (CN) (Excel)        |
-|     &nbsp;                    | Cust account statement, Ext (Word)              |
-|     &nbsp;                    | Cust account statement, France (Excel)          |
-|     Reminder model            | Collection letter note (Excel)                  |
-|     &nbsp;                    | Collection letter note (CN) (Excel)             |
-|     &nbsp;                    | Collection letter note (Word)                   |
-|     &nbsp;                    | Customer interest note (Excel)                  |
-|     &nbsp;                    | Customer interest note (Word)                   |
-|     Waybill model             | Load tender (Excel)                             |
-|     &nbsp;                    | Load tender (Word)                              |
-|     &nbsp;                    | Purchase order packing slip (Excel)             |
-|     &nbsp;                    | Purchase order packing slip (CZ) (Excel)        |
-|     &nbsp;                    | Purchase order packing slip (Word)              |
-|     &nbsp;                    | Route (Excel)                                   |
-|     &nbsp;                    | Route (Word)                                    |
-|     &nbsp;                    | Sales order packing slip (Excel)                |
-|     &nbsp;                    | Sales order packing slip (CZ) (Excel)           |
-|     &nbsp;                    | Sales order packing slip (LT) (Excel)           |
-|     &nbsp;                    | Sales order packing slip (PL) (Excel)           |
-|     &nbsp;                    | Sales order packing slip (Word)                 |
+| Data model configuration    | Format configurations                           |
+|-----------------------------|-------------------------------------------------|
+| Bill of lading model        | Bill of lading (Excel)                          |
+|                             | Bill of lading (Word)                           |
+| Certificate of origin model | Certificate of origin (Excel)                   |
+|                             | Certificate of origin (Word)                    |
+| Invoice model               | Customer Debit and Credit Note (Excel)          |
+|                             | Customer Debit and Credit Note (Word)           |
+|                             | Free text invoice (Excel)                       |
+|                             | Free text invoice (Excel) (BH)                  |
+|                             | Free text invoice (FR) (Excel)                  |
+|                             | Free text invoice (LT) (Excel)                  |
+|                             | Free text invoice (LV) (Excel)                  |
+|                             | Free text invoice (PL) (Excel)                  |
+|                             | Free text invoice (CZ) (Excel)                  |
+|                             | Free text invoice (EE) (Excel)                  |
+|                             | Free text invoice (HU) (Excel)                  |
+|                             | Free text invoice (TH) (Excel)                  |
+|                             | Free text invoice (Word)                        |
+|                             | Project contract line items (Excel)             |
+|                             | Project contract line items (CZ) (Excel)        |
+|                             | Project contract line items (Excel) (BH)        |
+|                             | Project contract line items (HU) (Excel)        |
+|                             | Project contract line items (LT) (Excel)        |
+|                             | Project contract line items (PL) (Excel)        |
+|                             | Project contract line items (Word)              |
+|                             | Project customer retention release (Excel)      |
+|                             | Project customer retention release (CZ) (Excel) |
+|                             | Project customer retention release (HU) (Excel) |
+|                             | Project customer retention release (LT) (Excel) |
+|                             | Project customer retention release (PL) (Excel) |
+|                             | Project customer retention release (TH) (Excel) |
+|                             | Project customer retention release (Word)       |
+|                             | Project invoice (Excel)                         |
+|                             | Project Invoice (Word)                          |
+|                             | Project invoice (AE) (Excel)                    |
+|                             | Project invoice (CZ) (Excel)                    |
+|                             | Project invoice (Excel) (BH)                    |
+|                             | Project invoice (HU) (Excel)                    |
+|                             | Project invoice (JP) (Excel)                    |
+|                             | Project invoice (LT) (Excel)                    |
+|                             | Project invoice (PL) (Excel)                    |
+|                             | Project invoice (TH) (Excel)                    |
+|                             | Project invoice full (MY) (Excel)               |
+|                             | Project invoice simple (MY) (Excel)             |
+|                             | Project manage invoice (Excel)                  |
+|                             | Project manage invoice (CZ) (Excel)             |
+|                             | Project manage invoice (Excel) (BH)             |
+|                             | Project manage invoice (HU) (Excel)             |
+|                             | Project manage invoice (JP) (Excel)             |
+|                             | Project manage invoice (LT) (Excel)             |
+|                             | Project manage invoice (PL) (Excel)             |
+|                             | Project manage invoice (Word)                   |
+|                             | Purchase advance invoice (Excel)                |
+|                             | Purchase advance invoice (Word)                 |
+|                             | Sales advance invoice (Excel)                   |
+|                             | Sales advance invoice (Word)                    |
+|                             | Sales advance invoice (PL) (Excel)              |
+|                             | Sales invoice (Excel)                           |
+|                             | Sales invoice (Excel) (BH)                      |
+|                             | Sales invoice (Excel) (CZ)                      |
+|                             | Sales invoice (Excel) (EE)                      |
+|                             | Sales invoice (Excel) (FR)                      |
+|                             | Sales invoice (Excel) (HU)                      |
+|                             | Sales invoice (Excel) (IN)                      |
+|                             | Sales invoice (Excel) (LT)                      |
+|                             | Sales invoice (Excel) (LV)                      |
+|                             | Sales invoice (Excel) (PL)                      |
+|                             | Sales invoice (Excel) (TH)                      |
+|                             | Sales invoice (Word)                            |
+|                             | TMS Commercial Invoice (Excel)                  |
+|                             | TMS Commercial Invoice (Word)                   |
+|                             | Vendor invoice document (Excel)                 |
+|                             | Vendor invoice document (CZ) (Excel)            |
+|                             | Vendor invoice document (HU) (Excel)            |
+|                             | Vendor invoice document (IN) (Excel)            |
+|                             | Vendor invoice document (LT) (Excel)            |
+|                             | Vendor invoice document (LV) (Excel)            |
+|                             | Vendor invoice document (MY) (Excel)            |
+|                             | Vendor invoice document (Word)                  |
+| Order model                 | Agreement confirmation (Excel)                  |
+|                             | Agreement confirmation (Word)                   |
+|                             | Purchase agreement confirmation (Excel)         |
+|                             | Purchase agreement confirmation (Word)          |
+|                             | Purchase order (Excel)                          |
+|                             | Purchase order (CZ) (Excel)                     |
+|                             | Purchase order inquiry (CZ) (Excel)             |
+|                             | Purchase order (HU) (Excel)                     |
+|                             | Purchase order inquiry (HU) (Excel)             |
+|                             | Purchase order (Word)                           |
+|                             | Purchase order inquiry (Excel)                  |
+|                             | Purchase order inquiry (Word)                   |
+|                             | Sales order confirmation (Excel)                |
+|                             | Sales order confirmation (CZ) (Excel)           |
+|                             | Sales order confirmation (HU) (Excel)           |
+|                             | Sales order confirmation (Word)                 |
+| Packing list model          | Container contents (Excel)                      |
+|                             | Container contents (Word)                       |
+|                             | Load list (Excel)                               |
+|                             | Load list (Word)                                |
+|                             | Picking list (Excel)                            |
+|                             | Picking list (CZ) (Excel)                       |
+|                             | Picking list (Word)                             |
+|                             | Production pick list (Excel)                    |
+|                             | Production pick list (Word)                     |
+|                             | Shipping pick list for load (Excel)             |
+|                             | Shipping pick list for load (Word)              |
+|                             | Shipping pick list for shipment (Excel)         |
+|                             | Shipping pick list for shipment (Word)          |
+|                             | Shipping pick list for wave (Excel)             |
+|                             | Shipping pick list for wave (Word)              |
+| Payment model               | Customer payment advice (Excel)                 |
+|                             | Customer payment advice (Word)                  |
+|                             | Vendor payment advice (Excel)                   |
+|                             | Vendor payment advice (Word)                    |
+| Quotation model             | Project quotation (Excel)                       |
+|                             | Project quotation (Word)                        |
+|                             | Request for quotation (Excel)                   |
+|                             | Request for quotation (Accept) (Excel)          |
+|                             | Request for quotation (Accept) (Word)           |
+|                             | Request for quotation (Reject) (Excel)          |
+|                             | Request for quotation (Reject) (Word)           |
+|                             | Request for quotation (Return) (Excel)          |
+|                             | Request for quotation (Return) (Word)           |
+|                             | Request for quotation (Word)                    |
+|                             | Sales quotation (Excel)                         |
+|                             | Sales quotation (CZ) (Excel)                    |
+|                             | Sales quotation (HU) (Excel)                    |
+|                             | Sales quotation (Word)                          |
+|                             | Sales quotation confirmation (Excel)            |
+|                             | Sales quotation confirmation (Word)             |
+| Reconciliation model        | Cust account statement, Ext (Excel)             |
+|                             | Cust account statement, Ext (CN) (Excel)        |
+|                             | Cust account statement, Ext (Word)              |
+|                             | Cust account statement, France (Excel)          |
+| Reminder model              | Collection letter note (Excel)                  |
+|                             | Collection letter note (CN) (Excel)             |
+|                             | Collection letter note (Word)                   |
+|                             | Customer interest note (Excel)                  |
+|                             | Customer interest note (Word)                   |
+| Waybill model               | Load tender (Excel)                             |
+|                             | Load tender (Word)                              |
+|                             | Purchase order packing slip (Excel)             |
+|                             | Purchase order packing slip (CZ) (Excel)        |
+|                             | Purchase order packing slip (Word)              |
+|                             | Route (Excel)                                   |
+|                             | Route (Word)                                    |
+|                             | Sales order packing slip (Excel)                |
+|                             | Sales order packing slip (CZ) (Excel)           |
+|                             | Sales order packing slip (LT) (Excel)           |
+|                             | Sales order packing slip (PL) (Excel)           |
+|                             | Sales order packing slip (Word)                 |
