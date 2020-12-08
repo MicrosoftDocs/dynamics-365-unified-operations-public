@@ -34,7 +34,7 @@ ms.search.validFrom: 2019-09-20
 
 [!include [banner](../../includes/banner.md)]
 
-You can filter intercompany orders to avoid synchronizing the **Orders** and **OrderLines** entities. Intercompany accounts do not synchronize if the accounts are linked to the legal entities in the different companies in the Finance and Operations apps. They do not synchronize because the **Accounts** table has a `PartyType=LegalEntity` reference that is not handled by the mappings. Then either the **CustomerAccount** table or the **SalesHeader** table fails to synchronize, causing downstream dependency failures. You can resolve this by manually creating the missing **Account** records in the customer engagement app, but in some scenarios, the intercompany order details are not necessary in customer engagement app.
+You can filter intercompany orders to avoid synchronizing the **Orders** and **OrderLines** entities. In some scenarios, the intercompany order details are not necessary in customer engagement app.
 
 Each of the standard Common Data Service entities is extended with references to the **IntercompanyOrder** field, and the dual-write maps are modified to refer to the additional fields in the filters. The result is that the intercompany orders are no longer synchronized. This process avoids unnecessary data in the customer engagement app.
 
