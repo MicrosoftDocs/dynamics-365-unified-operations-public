@@ -134,6 +134,6 @@ If you're upgrading your sandbox UAT environment to a newer application version 
 
 Conversely, if your production environment is newer than your target sandbox environment, you must either upgrade the target sandbox environment before the refresh, or just deallocate, delete, and redeploy the environment before you do the refresh.
 
-### The source and target are on different infrastructure (Microsoft Managed Vs Self Service)
+### The source and target are on different infrastructure (Microsoft-managed vs. self-service)
 
-The point in time restore process (PITR) is not supported between Microsoft Managed and Self Service environments across two different regions. For example, if the production environment is microsoft managed and in East US2 and a PITR is needed to the Sandbox which could be in East US on Self Service, PITR is not supported. The alternative here is to move the production to Self Service or opt for a regular database refresh instead. PITR is supported between environments on the same infra, both across regions and same regions.
+The point in time restore (PITR) process is not supported between Microsoft-managed and self-service environments across two different regions. For example, if the production environment is Microsoft-managed and in East US2 and a PITR is needed to the sandbox environment, which is self-service and in East US, PITR is not supported. The alternative here is to move the production environment to self-service or opt for a regular, database refresh instead. PITR is supported between environments on the same infrastructure, both across regions and within the same region.
