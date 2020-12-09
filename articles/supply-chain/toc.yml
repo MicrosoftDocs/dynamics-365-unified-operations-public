@@ -2717,6 +2717,8 @@
         items:
         - name: Landed cost parameters
           href: landed-cost/landed-cost-parameters.md
+        - name: Landed cost procurement and sourcing parameters
+          href: landed-cost/landed-cost-procurement-parameters.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
