@@ -54,10 +54,10 @@ To assign a production reservation policy to an item model group:
 1. Select the **Override item production reservation** check box.
 1. From the **Reservation** drop-down list, select one of the following values to use as the reservation principle for items that belong to the selected model group (including items that are on a BOM or formula line):
     - **Manual** - Items in this model group won't be physically reserved for production.
-    - **Estimation** - Items in this model group will be physically reserved during the estimation phase of production planning.
-    - **Scheduling** - Items in this model group will be physically reserved during the scheduling phase of production planning.
-    - **Release** - Items in this model group will be physically reserved when a product is released for production.
-    - **Start** - Items in this model group will be physically reserved at the start of production planning.
+    - **Estimation** - Items in this model group will be physically reserved during the estimation phase of the production order.
+    - **Scheduling** - Items in this model group will be physically reserved during the scheduling of the production order.
+    - **Release** - Items in this model group will be physically reserved when production order is released.
+    - **Start** - Items in this model group will be physically reserved at the start of the production order.
 
 ## Example of using reservation principles in a bulk/pack scenario
 
