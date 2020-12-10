@@ -2721,6 +2721,8 @@
           href: landed-cost/landed-cost-procurement-parameters.md
         - name: Shipping container setup
           href: landed-cost/shipping-container-setup.md
+        - name: Delivery information setup
+          href: landed-cost/delivery-information-setup.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipping containers
-description: Shipping container types define the available types of shipping containers that are used during shipping and voyages.
+description: This topic describes how to set up shipping container options for the Landed cost module.
 author: mkirknel
 manager: tfehr
 ms.date: 12/09/2020
@@ -29,6 +29,11 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Shipping container setup
 
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+This topic describes how to set up shipping container options for the Landed cost module.
+
 ## <a name="Shipping-container-types"></a>Set up shipping container types
 
 Shipping container types define the types of shipping containers available for use during shipping and voyages.
@@ -39,7 +44,7 @@ To work with the shipping container types, go to **Landed cost \> Containers set
 | **Setting** | **Description** |
 | --- | --- |
 | **Shipping container type** | Enter a unique identification name/number for the shipping container type. |
-| **Description** | Enter the unique identification name/number of the container type. |
+| **Description** | Enter a description of the container type. |
 | **Volume** | Enter the maximum volume allowed within the shipping container type. |
 | **Weight** | Enter the maximum weight allowed within the shipping container type. |
 | **Returnable** | Choose whether or not the container can be returned to the vendor after being used in a voyage. If this is set to *Yes*, additional costs may apply for the return of shipping containers of this type to the port of origin. |
@@ -84,4 +89,4 @@ To work with refrigeration types, go to **Landed cost \> Containers setup \> Ref
 | **Setting** | **Description** |
 | --- | --- |
 | **Refrigeration type** |  Enter a unique identification name/number for the refrigeration type. |
-| **Description** | The description of the refrigeration type.|
+| **Description** | Enter a description of the refrigeration type. |
