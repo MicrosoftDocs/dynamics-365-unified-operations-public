@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
-# Shipping containers
+# Shipping container setup
 
 ## <a name="Shipping-container-types"></a>Set up shipping container types
 
@@ -64,7 +64,7 @@ To work with shipping containers, go to **Landed cost \> Containers setup \> Shi
 
 ## Set up unit types
 
-Unit types establish additional groupings and identification methods for containers. The unit type is typically used to identify the type of container the goods are packaged in, such as pallets or drums. You can select a unit type when setting up a container on the **All shipping containers** page.
+Unit types establish additional groupings and identification methods for containers. The unit type is typically used to identify the type of container the goods are packaged in, such as pallets or drums. You can select a unit type when setting up a container on the **All shipping containers** page. <!-- KFM: It seems like we don't document the All shipping containers page anywhere. Should we add that to this chapter? -->
 
 Unit types are only used in Landed cost and aren't available to TMS.
 
