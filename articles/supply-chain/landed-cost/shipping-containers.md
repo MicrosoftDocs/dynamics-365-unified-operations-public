@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Landed cost procurement and sourcing parameters
-description: This topic describes how to set up the relevant procurement and sourcing parameters when you use Landed cost.
+title: Shipping containers
+description: Shipping container types define the available types of shipping containers that are used during shipping and voyages.
 author: mkirknel
 manager: tfehr
 ms.date: 12/09/2020
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
-# Set up shipping containers
+# Shipping containers
 
 ## Shipping container types
 
