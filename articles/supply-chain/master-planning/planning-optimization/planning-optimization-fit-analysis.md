@@ -56,7 +56,7 @@ To see the Planning Optimization fit analysis result, go to **Master planning** 
 
 ## Overview of possible results from the fit analysis
 
-The following table shows the various results that can be shown after a fit analysis. Number signs (_\#_) will be replaced with a number that indicates the number of records that have the listed issue. Supported or in-preview features are available with version 10.0.9 or later, unless a higher version number is listed in the "Expected availability" column.
+The following table shows the various results that can be shown after a fit analysis. Number signs (_\#_) will be replaced with a number that indicates the number of records that have the listed issue. Supported or in-preview features are available with version 10.0.9 or later (unless a higher version number is listed in the "Expected availability" column).
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
