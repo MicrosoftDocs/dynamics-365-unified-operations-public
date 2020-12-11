@@ -163,6 +163,7 @@ This topic provides information about functionality that supports Russian regula
 ## Tax accounting
 - [Expense and income codes](rus-expense-and-income-codes.md)
 - [Assets tax registers](rus-assets-tax-registers.md)
+- [Deferrals register](rus-deferred-expenses-register)
 
 ## Additional resources
 
