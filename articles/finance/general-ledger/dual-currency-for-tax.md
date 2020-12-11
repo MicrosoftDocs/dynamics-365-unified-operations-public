@@ -50,8 +50,7 @@ For more information about dual currency, please refer to [Dual currency](dual-c
 
 As a consequence of support for dual currencies, two new features are available in feature management: 
 
-- Sales tax conversion (Release in version 10.0.9)
-- Tax settlement auto balance in reporting currency (Release in version 10.0.11)
+- Sales tax conversion (Release in version 10.0.13)
 
 Dual currency support for sales taxes ensures that taxes are calculated accurately in the tax currency, and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
 
