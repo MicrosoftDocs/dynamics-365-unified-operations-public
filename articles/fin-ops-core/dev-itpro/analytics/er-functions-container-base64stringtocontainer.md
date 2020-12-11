@@ -76,7 +76,7 @@ You define the following data sources in your model mapping:
 The **#MediaAsBase64String** data source will encode the binary content of the current media attachment to text representing a Base64 group of binary-to-text encoding schemes.
 The **#BlobFomBase64** data source will decode the Base64 string returning a binary value in BLOB format.
 
-![ER model mapping designer page presenting saple data sources](./media/er-functions-container-base64stringtocontainer-1.png)
+![ER model mapping designer page presenting sample data sources](./media/er-functions-container-base64stringtocontainer-1.png)
 
 ## Additional resources
 
