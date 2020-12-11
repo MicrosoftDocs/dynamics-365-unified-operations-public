@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Supply Chain Management
 description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Supply Chain Management.
 author: kamaybac
 manager: tfehr
-ms.date: 07/23/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
