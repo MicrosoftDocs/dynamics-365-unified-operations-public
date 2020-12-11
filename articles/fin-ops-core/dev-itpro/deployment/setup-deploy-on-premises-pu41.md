@@ -52,7 +52,7 @@ These components depend on the following system software:
 - Microsoft Windows Server 2016 (only English OS installations are supported)
 - Microsoft SQL Server 2016 SP2, which has the following features:
   - Full-text index search is enabled.
-  - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines (For HA support, the SSRS nodes should also have a database engine instance running locally).
+  - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines (the SSRS nodes should also have a database engine instance running locally).
   - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
 
     > [!WARNING]
@@ -63,6 +63,7 @@ These components depend on the following system software:
 - Microsoft Windows PowerShell 5.0 or later
 - Active Directory Federation Services (AD FS) on Windows Server 2016
 - Domain controller
+- Active Directory Certificate Services (AD CS) on Windows Server 2016 (optional but **highly** recommended)
 
   > [!WARNING]
   > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following topics:
@@ -132,11 +133,12 @@ The following table shows an example of a hardware layout. This example is used 
 | AOS 1                    | AOSNodeType      | SQLAOSF1AOS1    | 10.179.108.12 |
 | AOS 2                    | AOSNodeType      | SQLAOSF1AOS2    | 10.179.108.13 |
 | AOS 3                    | AOSNodeType      | SQLAOSF1AOS3    | 10.179.108.14 |
-| Orchestrator 1           | OrchestratorType | SQLAOSF1ORCH1   | 10.179.108.15 |
-| Orchestrator 2           | OrchestratorType | SQLAOSF1ORCH2   | 10.179.108.16 |
-| Orchestrator 3           | OrchestratorType | SQLAOSF1ORCH3   | 10.179.108.17 |
-| Management Reporter node | MRType           | SQLAOSMR1       | 10.179.108.18 |
-| SSRS node                | ReportServerType | SQLAOSFBIN1     | 10.179.108.10 |
+| Orchestrator 1           | OrchestratorType | SQLAOSF1ORCH1   | 10.179.108.21 |
+| Orchestrator 2           | OrchestratorType | SQLAOSF1ORCH2   | 10.179.108.22 |
+| Orchestrator 3           | OrchestratorType | SQLAOSF1ORCH3   | 10.179.108.23 |
+| Management Reporter node | MRType           | SQLAOSMR1       | 10.179.108.31 |
+| SSRS node 1              | ReportServerType | SQLAOSFBI1     | 10.179.108.41 |
+| SSRS node 2              | ReportServerType | SQLAOSFBI2     | 10.179.108.42 |
 
 The following table shows an example of a hardware layout where batch execution and interactive sessions are executed in dedicated nodes. For more information check the [Configure batch-only and interactive-only AOS nodes in on-premises deployments](./onprem-batchonly.md) guide.
 
@@ -159,7 +161,35 @@ The following table shows an example of a hardware layout where batch execution 
 | Orchestrator 2           | OrchestratorType | SQLAOSF1ORCH2   | 10.179.108.22 |
 | Orchestrator 3           | OrchestratorType | SQLAOSF1ORCH3   | 10.179.108.23 |
 | Management Reporter node | MRType           | SQLAOSMR1       | 10.179.108.31 |
-| SSRS node                | ReportServerType | SQLAOSFBIN1     | 10.179.108.41 |
+| SSRS node 1              | ReportServerType | SQLAOSFBI1     | 10.179.108.41 |
+| SSRS node 2              | ReportServerType | SQLAOSFBI2     | 10.179.108.42 |
+
+## Overview
+
+The following steps must be completed to set up the infrastructure for Finance + Operations. Reading all the steps before you begin will make it easier to plan your setup.
+
+1. [Plan your domain name and DNS zones](#plandomain)
+1. [Plan and acquire your certificates](#plancert)
+1. [Plan your users and service accounts](#plansvcacct)
+1. [Create DNS zones, and add A records](#createdns)
+1. [Join VMs to the domain](#joindomain)
+1. [Download setup scripts from LCS](#downloadscripts)
+1. [Describe your configuration](#describeconfig)
+1. [Configure certificates](#configurecert)
+1. [Setup VMs](#setupvms)
+1. [Set up a standalone Service Fabric cluster](#setupsfcluster)
+1. [Configure LCS connectivity for the tenant](#configurelcs)
+1. [Set up file storage](#setupfile)
+1. [Set up SQL Server](#setupsql)
+1. [Configure the databases](#configuredb)
+1. [Encrypt credentials](#encryptcred)
+1. [Set up SSIS](#setupssis)
+1. [Set up SSRS](#setupssrs)
+1. [Configure AD FS](#configureadfs)
+1. [Configure a connector and install an on-premises local agent](#configureconnector)
+1. [Tear down CredSSP, if remoting was used](#teardowncredssp)
+1. [Deploy your Finance + Operations environment from LCS](#deploy)
+1. [Connect to your Finance + Operations environment](#connect)
 
 ## Setup
 
@@ -171,6 +201,7 @@ Before you start the setup, the following prerequisites must be in place. The se
 - AD FS must be deployed.
 - SQL Server 2016 SP2 must be installed on the SSRS machines.
 - SQL Server Reporting Services 2016 must be installed (but not configured) on the SSRS machines.
+- (Optional) Active Directory Certificate Services is installed in your network.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
 
@@ -196,33 +227,6 @@ The following prerequisite software is installed on the VMs by the infrastructur
 | MR        | Visual C++ Redistributable Packages for Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
 | ORCH      | The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> |
 
-### Overview
-
-The following steps must be completed to set up the infrastructure for Finance + Operations. Reading all the steps before you begin will make it easier to plan your setup.
-
-1. [Plan your domain name and DNS zones](#plandomain)
-2. [Plan and acquire your certificates](#plancert)
-3. [Plan your users and service accounts](#plansvcacct)
-4. [Create DNS zones, and add A records](#createdns)
-5. [Join VMs to the domain](#joindomain)
-6. [Download setup scripts from LCS](#downloadscripts)
-7. [Describe your configuration](#describeconfig)
-8. [Configure certificates](#configurecert)
-9. [Setup VMs](#setupvms)
-10. [Set up a standalone Service Fabric cluster](#setupsfcluster)
-11. [Configure LCS connectivity for the tenant](#configurelcs)
-12. [Set up file storage](#setupfile)
-13. [Set up SQL Server](#setupsql)
-14. [Configure the databases](#configuredb)
-15. [Encrypt credentials](#encryptcred)
-16. [Set up SSIS](#setupssis)
-17. [Set up SSRS](#setupssrs)
-18. [Configure AD FS](#configureadfs)
-19. [Configure a connector and install an on-premises local agent](#configureconnector)
-20. [Tear down CredSSP, if remoting was used](#teardowncredssp)
-21. [Deploy your Finance + Operations environment from LCS](#deploy)
-22. [Connect to your Finance + Operations environment](#connect)
-
 ### <a name="plandomain"></a> 1. Plan your domain name and DNS zones
 
 We recommend that you use a publicly registered domain name for your production installation of AOS. In that way, the installation can be accessed outside the network, if outside access is required.
@@ -235,9 +239,12 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 ### <a name="plancert"></a> 2. Plan and acquire your certificates
 
-Secure Sockets Layer (SSL) certificates are required in order to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [Active Directory Certificate Services](https://technet.microsoft.com/library/cc772393(v=ws.10).aspx) (AD CS), you can create the certificates through AD CS. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
+Secure Sockets Layer (SSL) certificates are required in order to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [Active Directory Certificate Services](https://technet.microsoft.com/library/cc772393(v=ws.10).aspx) (AD CS), you can leverage our setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
 Self-signed certificates can be used only for testing purposes. For convenience, the setup scripts provided in LCS include scripts that generate and export self-signed certificates. If you are using self-signed scripts, you will be instructed to run the creation scripts in later steps. As we've mentioned, these certificates can be used for testing purposes only.
+
+> [!WARNING]
+> Microsoft plans to discontinue support for self-signed certificate generation through the setup scripts in favor of automatic certificate creation through Active Directory Certificate Services.
 
 Recommended settings for certificates are:
 - Signature algorithm: sha256RSA
@@ -278,8 +285,8 @@ DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
 ```
 
-> [!NOTE]
-> The wild card certificate allows you to secure only the first-level subdomain of the domain to which it is issued.
+> [!WARNING]
+> The wild card certificate allows you to secure only the first-level subdomain of the domain to which it is issued. A certificate for *.onprem.contoso.com would not be valid for ax.d365ffo.onprem.contoso.com.
 
 ### <a name="plansvcacct"></a> 3. Plan your users and service accounts
 
@@ -429,14 +436,21 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 ### <a name="configurecert"></a> 8. Configure certificates
 
 1. Navigate to the machine that has the **infrastructure** folder.
-2. If you must generate self-signed certificates, run the following command. The script will create the certificates, put them in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file.
+2. Generate certificates:
+    1. If you must generate certificates, run the following command. The script will create the certificate templates in AD CS, generate the certificates from the templates, place the certificates in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file.
 
-    ```powershell
-    # Create self-signed certs
-    .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    ```
+        ```powershell
+        # If you need to create self-signed certs, set the generateSelfSignedCert attribute to true.
+        #.\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-    If you must reuse any certificates and therefore don't have to generate certificates for them, set the **generateSelfSignedCert** tag to **false**.
+        .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -CreateTemplates
+        .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+        ```
+
+        >[!NOTE]
+        > The AD CS scripts above need to run on a Domain Controller, or a Windows Server with Remote Server Admin Tools (RSAT) installed.
+
+    1. If you must reuse any certificates and therefore don't have to generate certificates for them, set the **generateADCSCert** tag to **false**.
 
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
@@ -470,7 +484,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
     | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
-    | SNAC – ODBC driver 17.5.x | <https://docs.microsoft.com/en-us/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752> | msodbcsql\_17.msi |
+    | SNAC – ODBC driver 17.5.x | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752> | msodbcsql\_17.msi |
     | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
@@ -503,12 +517,12 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     > [!IMPORTANT]
     > 1. Each time you are prompted, restart the machine. Make sure that you rerun the `.\Configure-PreReqs.ps1` script after each restart until all of the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all of the machines are back online.
     > 2. When you use the remoting script, ensure that the current user has access to the share folder of MSIs.
-    > 3. When you use the remoting script, ensure no user is accessing the AOSNoteType, MRType, and ReportServerType type machines. Otherwise, the remoting script will fail to restart the computer because of the users being logged on to the computer.
+    > 3. When you use the remoting script, ensure no user is accessing the AOSNodeType, MRType, and ReportServerType type machines. Otherwise, the remoting script will fail to restart the computer because of the users being logged on to the computer.
 
 2. Run the following scripts, if they exist, to complete the VM setup.
 
     ```powershell
-    # If Remoting, only execute
+    # If Remoting, execute
     # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
     .\Complete-PreReqs.ps1
@@ -694,48 +708,54 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
 2. Run the SQL service as a domain user or a group-managed service account.
-3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following examples.
+3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use certificate generated through AD CS. You will need to replace the computer name and domain name in the following examples.
 
-    **Self-signed certificate for an Always-On SQL instance**
+    1. **AD CS certificate for an Always-On SQL instance**
 
-    If you are setting up testing certificates for Always-On, use the following **remoting** script. This will perform the same as the following **manual** script and steps **a-e**.
+        If you are setting up testing certificates for Always-On, use the following **remoting** script. This will perform the same as the following **manual** script and steps **a-e**.
 
-    ```powershell
-    .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
-        -SqlMachineNames DAX7SQLAOSQLA01, DAX7SQLAOSQLA02 `
-        -SqlListenerName dax7sqlaosqla
-    ```
+        ```powershell
+        #If you need to create self-signed certs
+        #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
 
-    **Manual self-signed steps for an Always-On SQL instance or Windows Server Failover Clustering with SQL Server** 
+        .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
+        ```
+
+    2. **AD CS certificate for a single SQL instance**
+
+        ```powershell
+        #If you need to create self-signed certs
+        #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
+
+        .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
+        ```
+
+    3. **Manual AD CS steps for an Always-On SQL instance or Windows Server Failover Clustering with SQL Server** 
         
-    For each node of the SQL cluster, follow these steps. 
+        For each node of the SQL cluster, follow these steps. 
 
-    1. Run the following PowerShell script on each of the SQL Server Always-On replicas.
+        1. Run the following PowerShell script on each of the SQL Server Always-On replicas.
 
-    ```powershell
-    # Manually create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
-    # Run script on each node
-    $computerName = $env:COMPUTERNAME.ToLower()
-    $domain = $env:USERDNSDOMAIN.ToLower()
-    $listenerName = 'dax7sqlaosqla'
-    $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider' -CertStoreLocation "cert:\LocalMachine\My" -KeyAlgorithm "RSA" -HashAlgorithm "sha256" -KeyLength 2048
-    ```
+        ```powershell
+        #If you need to create self-signed certs
+        #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -GenerateCertOnly
 
-    2. Grant certificate permissions to the account that is used to run the SQL service. 
-        1. Open Manage Computer Certificates (**certlm.msc**).
-        2. Right-click the certificate created, and then select **Tasks** \> **Manage Private Keys**.
-        3. Add in the SQL Server service account and grant Read access.
-    3. Enable **ForceEncryption** and the new **Certificate** in Microsoft SQL Server Configuration Manager.
-        1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for [server instance]**, and then select **Properties**.
-        2. In the **Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box.
-        3. In the **Properties** dialog box, on the **Flags** tab, in the **ForceEncryption** box, select **Yes**.
-        4. Select **OK** to save.
-    4. Export the certificate (.cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have a minimum of 2 certificates for the Always-On cluster, but there may be more if you have additional replicas. 
-    5. Restart the SQL Server service.
-   > [!NOTE] 
-   > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
+        .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -GenerateCertOnly
+        ```
 
-
+        2. Grant certificate permissions to the account that is used to run the SQL service. 
+            1. Open Manage Computer Certificates (**certlm.msc**).
+            2. Right-click the certificate created, and then select **Tasks** \> **Manage Private Keys**.
+            3. Add in the SQL Server service account and grant Read access.
+        3. Enable **ForceEncryption** and the new **Certificate** in Microsoft SQL Server Configuration Manager.
+            1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for [server instance]**, and then select **Properties**.
+            2. In the **Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box.
+            3. In the **Properties** dialog box, on the **Flags** tab, in the **ForceEncryption** box, select **Yes**.
+            4. Select **OK** to save.
+        4. Export the certificate (.cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have a minimum of 2 certificates for the Always-On cluster, but there may be more if you have additional replicas. 
+        5. Restart the SQL Server service.
+    > [!NOTE] 
+    > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 
 > [!IMPORTANT]
 > If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [20. Tear down CredSSP](#teardowncredssp) section for more information.
@@ -750,8 +770,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     | Release | Database |
     |-------|------|
-    | On-premises Platform Update 41 | Dynamics 365 for Operations on-premises, Version 10.0.14 Demo Data |
-    | On-premises Platform Update 41 | Dynamics 365 for Operations on-premises, Version 10.0.14 Empty Data |
+    | On-premises Platform Update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Demo Data |
+    | On-premises Platform Update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Empty Data |
 
 4. The zip file contains a single .bak file. Select the .bak file, based on your requirements.
 
@@ -893,9 +913,31 @@ For more information, see [Install integration services](https://docs.microsoft.
 ### <a name="setupssrs"></a> 17. Set up SSRS
 
 1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
-2. Follow the steps in [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
+
     > [!IMPORTANT]
-    > You must install then database engine when you install SSRS.
+    > You must install the database engine when you install SSRS.
+    > Additionally, do not configure the SSRS instance. The reporting service will automatically configure everything.
+
+1. For each BI node carry out the following steps:
+
+    1. Copy the **infrastructure** folder and navigate to it in a PowerShell window with elevate privileges.
+    1. Execute the following scripts.
+
+        ```powershell
+        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
+        .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
+        ```
+
+        The **Initialize-Database.ps1** script will map the gMSA account to the following databases and roles.
+
+        | User            | Database | Database role |
+        |-----------------|----------|---------------|
+        | svc-ReportSvc$  | master   | db\_owner     |
+        | svc-ReportSvc$  | msdb     | db_datareader,db_datawriter,db_securityadmin     |
+
+        The **Configure-Database.ps1** script will do the following:
+
+        1. GRANT CREATE ANY DATABASE TO [contoso\svc-ReportSvc$]
 
 ### <a name="configureadfs"></a> 18. Configure AD FS
 
@@ -1018,10 +1060,6 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
     ![Deploy your environment](./media/Deploy.png)
 
-3. If you have an existing Platform update 8 or Platform update 11 deployment: 
-    - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
-    - Validate the local agent from LCS.
-    - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
     ![Preparation phase](./media/Preparing.png)
@@ -1065,13 +1103,7 @@ If this is your first time creating and generating group Managed Service Account
 ### Error "The WinRM client cannot process the request" when running the remoting script Configure-Prereqs-AllVms cmdlet
 You need to follow the instructions in the error message to enable the computer policy **Allow delegation fresh credentials** in all machines of Service Fabric cluster.
 
-### Error "Not process argument transformation on parameter 'Test'. Cannot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when running the Config-Prereqs-AllVms cmdlet
-To work around this error, remove "-Test:$Test" in line 56 of Config-Prereqs-AllVms.ps1, which is found under the **Infrastructure** folder.
-
-### Error "Not process argument transformation on parameter 'Test'. Cannot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when running the Complete-Prereqs-AllVms cmdlet
-To work around this error, remove "-Test:$Test" in line 56, 61 and 66 of Complete-Prereqs-AllVms.ps1 which is found under the **Infrastructure** folder.
-
-### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when running Configure-Prereqs on MRType and ReportServerTyoe servers
+### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when running Configure-Prereqs on MRType and ReportServerType servers
 .NET Framework 3.5 is required in MRType and ReportServerType servers. By default, however, .NET Framework 3.5 source files aren't included in your Windows Server 2016 installation. To work around this error, install it and specify the source files using the **source** option when you manually add new features by server manager.
 
 ### Error "MSIS7628: Scope names should be a valid Scope description name in AD FS configuration" when running the Publish-ADFSApplicationGroup cmdlet
