@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Settle a partial customer payment and the final payment in full before the discount date
+title: Settle a partial payment and final payment before the discount date
 description: This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.
 author: abruer
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Settle a partial customer payment and the final payment in full before the discount date
+# Settle a partial payment and final payment before the discount date
 
 [!include [banner](../includes/banner.md)]
 
