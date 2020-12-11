@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Release 10.0.16
 
 This topic describes how to fix issues that you might encounter while you work with inventory operations.
 
-## I can't find the workflow drop-down dialog box for inventory journals.
+## I can't find the "Workflow" drop-down dialog box for inventory journals.
 
 ### Issue description
 
-You can't find the workflow drop-down dialog box on the journal page, or related workflow operations aren't available.
+You can't find the **Workflow** drop-down dialog box on the journal page, or related workflow operations aren't available.
 
 This issue can occur for three reasons, as described in the following subsections.
 
@@ -48,13 +48,13 @@ If the issue applies to all users, it might be occurring because the approval wo
 1. Go to **Inventory Management &gt; Setup &gt; Journal names &gt; Inventory**.
 1. In the list pane, select a journal name to open its settings.
 1. On the **General** FastTab, set the **Approval workflow** option to *Yes*. If you're prompted to confirm the change, select **Yes**.
-1. In the **Workflow** drop-down list, select the workflow that you want to use for the selected journal name.
+1. In the **Workflow** field, select the workflow that you want to use for the selected journal name.
 
 ### Issue resolution 2
 
 If your workflow uses customized code, issues might occur after you upgrade the system. For example, you might be unable to enable the **Submit** button.
 
-When the **Submit** button can't be enabled, your workflow might have been customized so that it uses a post-handler for **canSubmitToWorkflow()** in **FormDataUtil**. Therefore, the return value can't override the existing value in the data source (**canSubmitToWorkflow()** is now in forms). To fix this issue, change the way that you extend **canSubmitToWorkflow()**, so that the following code structure is used.
+When the **Submit** button can't be enabled, your workflow might have been customized so that it uses a post-handler for `canSubmitToWorkflow()` in `FormDataUtil`. Therefore, the return value can't override the existing value in the data source (`canSubmitToWorkflow()` is now in forms). To fix this issue, change the way that you extend `canSubmitToWorkflow()`, so that the following code structure is used.
 
 ```xpp
 [ExtensionOf(formStr(InventJournalMovement))]
@@ -81,7 +81,7 @@ One of your inventory journals is locked by some operation and isn't being relea
 
 ### Issue resolution
 
-Sign in to the SQL Server instance for Supply Chain Management, and check whether the **InventJournalTable.SystemBlocked** is set to *1*. If it is, make sure that the journal should not be in locked status, and then reset **InventJournalTable.SystemBlocked** to *0*.
+Sign in to the SQL Server instance for Supply Chain Management, and check whether **InventJournalTable.SystemBlocked** is set to *1*. If it is, make sure that the journal should not be in locked status, and then reset **InventJournalTable.SystemBlocked** to *0*.
 
 ## My inventory journal workflow is never completed, and the journal can't be edited or posted.
 
