@@ -130,7 +130,7 @@ The following work order types are currently supported for WES workloads on scal
 No other processing of source documents and warehouse work types are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (Transfer receipt) or process a cycle counting work.
 
 > [!NOTE]
-> The mobile device menu items for the unsupported functionalities cannot be seen on the _Warehouse app_ logged in against a scale unit deployment.
+> The mobile device menu items and buttons for the unsupported functionalities cannot be seen on the _Warehouse app_ logged in against a scale unit deployment.
 
 > [!IMPORTANT]
 > If you use a workload on a scale unit, you can't run unsupported processes for the specific warehouse on the hub. The following tables document the supported capabilities.
