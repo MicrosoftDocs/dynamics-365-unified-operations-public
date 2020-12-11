@@ -58,8 +58,8 @@ Dual currency support for sales taxes ensures that taxes are calculated accurate
 
 The **Sales tax conversion** parameter provides two options to convert tax amount from transaction currency to tax currency. 
 
-- Accounting currency: The path will be "Amount in transaction currency > Amount in accounting currency > Amount in tax currency". The accounting currency exhange rate type (configured in Ledger setup) will be used for the currency conversion.
-- Reporting currency: The path will be "Amount in transaction currency > Amount in reporting currency > Amount in tax currency". The reporting currency exhange rate type (configured in Ledger setup) will be used for the currency conversion.
+- Accounting currency: The path will be "Amount in transaction currency > Amount in accounting currency > Amount in tax currency". The accounting currency exchange rate type (configured in Ledger setup) will be used for the currency conversion.
+- Reporting currency: The path will be "Amount in transaction currency > Amount in reporting currency > Amount in tax currency". The reporting currency exchange rate type (configured in Ledger setup) will be used for the currency conversion.
 
 ### Example
 
@@ -114,7 +114,7 @@ This release will not include changes to reports and forms that show the tax amo
 
 ## Tax settlement auto-balance in reporting currency
 
-If the tax settlement is not balanced in the reporting currency for certain reason such as the sales tax conversion path is "Accounting currency", or the exchange rate change in a single tax settlement period, thebn the system will automatically generate accounting entries to adjust the tax amount variance and offset it against realized exchange gain/loss account, which is configured in Ledger setup.
+If the tax settlement is not balanced in the reporting currency for certain reason such as the sales tax conversion path is "Accounting currency", or the exchange rate change in a single tax settlement period, then the system will automatically generate accounting entries to adjust the tax amount variance and offset it against realized exchange gain/loss account, which is configured in Ledger setup.
 
 Using the the previous example to demonstrate this feature, suppose that the data in TAXTRANS table at the time of posting is as follows.
 
