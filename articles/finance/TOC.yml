@@ -2826,6 +2826,8 @@
             href: localizations/rus-expense-and-income-codes.md
           - name: Assets tax registers
             href: localizations/rus-assets-tax-registers.md
+          - name: Deferrals tax register
+            href: localizations/rus-deferred-expenses-register.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview

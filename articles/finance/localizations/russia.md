@@ -5,7 +5,7 @@ title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -163,6 +163,7 @@ This topic provides information about functionality that supports Russian regula
 ## Tax accounting
 - [Expense and income codes](rus-expense-and-income-codes.md)
 - [Assets tax registers](rus-assets-tax-registers.md)
+- [Deferrals tax register](rus-deferred-expenses-register.md)
 
 ## Additional resources
 
