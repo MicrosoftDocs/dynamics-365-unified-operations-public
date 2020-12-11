@@ -5,7 +5,7 @@ title: Dual currency support for tax
 description: This topic explains how to extend dual currency accounting feature in tax domain and the impact for tax calculation and posting
 author: EricWang
 manager: Ann Beebe
-ms.date: 12/16/2019
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,8 +50,7 @@ For more information about dual currency, please refer to [Dual currency](dual-c
 
 As a consequence of support for dual currencies, two new features are available in feature management: 
 
-- Sales tax conversion (Release in version 10.0.9)
-- Tax settlement auto balance in reporting currency (Release in version 10.0.11)
+- Sales tax conversion (new in version 10.0.13)
 
 Dual currency support for sales taxes ensures that taxes are calculated accurately in the tax currency, and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
 
