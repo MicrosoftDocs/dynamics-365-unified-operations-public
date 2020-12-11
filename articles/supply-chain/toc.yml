@@ -1909,6 +1909,8 @@
           href: production-control/bom-designer-functionality.md
         - name: Use the formula designer
           href: production-control/formula-designer.md
+        - name: Override the default reservation principle for materials in production
+          href: production-control/override-default-reservation-principle.md
         - name: Add variant products to purchase orders using variant weights
           href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
         - name: Create a sales order for a configurable product
@@ -2027,6 +2029,8 @@
             href: production-control/bill-of-material-bom.md
           - name: BOM designer functionality
             href: production-control/bom-designer-functionality.md
+          - name: Override the default reservation principle for materials in production
+            href: production-control/override-default-reservation-principle.md
           - name: Phantom items
             href: production-control/phantom-items.md
           - name: BOM calculations
