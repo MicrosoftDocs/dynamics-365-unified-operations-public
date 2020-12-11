@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Statistical dimension members and statistical measure provider templates
+title: Provider templates for statistical dimension members and measure providers
 description: This topic provides information about statistical dimension members and statistical measure provider templates. Statistical dimension members can be used as an allocation base in policies such as cost distribution and cost allocation. They can also be used to report non-monetary cost consumption.
 author: AndersGirke
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Statistical dimension members and statistical measure provider templates
+# Provider templates for statistical dimension members and measure providers
 
 [!include [banner](../includes/banner.md)]
 
