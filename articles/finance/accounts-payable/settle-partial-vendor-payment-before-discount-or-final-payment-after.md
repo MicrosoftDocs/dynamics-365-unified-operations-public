@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Settle a partial vendor payment before the discount date with a final payment after the discount date
+title: Settle partial payment before discount date and final payment after discount date
 description: This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
 author: abruer
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Settle a partial vendor payment before the discount date with a final payment after the discount date
+# Settle partial payment before discount date and final payment after discount date
 
 [!include [banner](../includes/banner.md)]
 
