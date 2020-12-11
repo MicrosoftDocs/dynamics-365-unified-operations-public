@@ -208,7 +208,7 @@ The following prerequisite software is installed on the VMs by the infrastructur
 | Node type | Component | Details |
 |-----------|-----------|---------|
 | AOS       | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
-| AOS       | SNAC – ODBC driver 17.5.x | This driver is needed for upgrading to PU15 or higher: <https://docs.microsoft.com/en-us/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752> |
+| AOS       | SNAC – ODBC driver 17.5.x | This driver is needed for upgrading to PU15 or higher: <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
