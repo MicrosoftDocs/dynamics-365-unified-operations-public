@@ -2723,6 +2723,10 @@
           href: landed-cost/shipping-container-setup.md
         - name: Delivery information setup
           href: landed-cost/delivery-information-setup.md
+        - name: Multi-leg journey setup
+          href: landed-cost/multi-leg-journey-setup.md
+        - name: Shipping information setup
+          href: landed-cost/shipping-information-setup.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
