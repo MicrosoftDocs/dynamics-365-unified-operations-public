@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Settle a partial vendor payment that has discounts on vendor credit notes
+title: Settle a partial vendor payment that has discounts on credit notes
 description: This article walks you through a scenario where a credit memo is settled against an invoice.
 author: abruer
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Settle a partial vendor payment that has discounts on vendor credit notes
+# Settle a partial vendor payment that has discounts on credit notes
 
 [!include [banner](../includes/banner.md)]
 
