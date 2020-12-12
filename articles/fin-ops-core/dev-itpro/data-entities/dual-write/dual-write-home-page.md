@@ -94,6 +94,7 @@ These topics describe mapping between concepts in Finance and Operations applica
     + [Integrated ledger](ledger-mapping.md)
     + [Integrated tax master](tax-mapping.md)
 
++ [Integrate procurement in Supply Chain Management with Field Service](scm-field-service-procurement.md)
 + [Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine](pricing-engine.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)

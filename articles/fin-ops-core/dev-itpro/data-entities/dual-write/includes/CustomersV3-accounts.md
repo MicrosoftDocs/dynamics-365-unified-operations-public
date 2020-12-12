@@ -69,3 +69,4 @@ none | >> | customertypecode | 3
 PARTYTYPE | << | none | Organization
 PARTYNUMBER | = | msdyn_partynumber | 
 CONTACTPERSONID | = | primarycontactid.msdyn_contactpersonid | 
+
