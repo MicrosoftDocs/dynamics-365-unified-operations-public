@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management provides robust procurement functionality. Dynamics 365 Field Service offers similar functionality that supports the purchasing processes that are associated with the service motion. The functionality in these two apps is integrated through dual-write, and the resulting cross-functional use cases are enabled through table mappings, solution logic, views, and forms.
+Microsoft Dynamics 365 Supply Chain Management provides robust procurement functionality. Dynamics 365 Field Service offers similar functionality that supports the purchasing processes that are associated with the service process. The functionality in these two apps is integrated through dual-write, and the resulting cross-functional use cases are enabled through table mappings, solution logic, views, and forms.
 
 This integration supports purchase order creation and, in most cases, updates from both apps. However, Supply Chain Management controls pricing, addresses, and product receipt. Several powerful cross-functional use cases are enabled for organizations that use both Field Service and Supply Chain Management. These use cases enable procurements to be initiated and tracked across both systems.
 
@@ -52,11 +52,7 @@ To integrate Supply Chain Management with Field Service, you must install the fo
 + **Dual-write** – For more information, see the [Dual-write home page](dual-write-home-page.md#dual-write-setup).
 + **Dynamics 365 Field Service** – For more information, see [How to install Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
-When they are enabled in Microsoft Dataverse, dual-write and Field Service introduce several solution layers that extend the environment with new metadata, forms, views, and logic, as shown in the following illustration. These solutions can be enabled in any order.
-
-![Solution layers for dual-write](media/solution-layers.png)
-
-The illustration references the following elements, which you typically install in the order that is given here:
+When they are enabled in Microsoft Dataverse, dual-write and Field Service introduce several solution layers that extend the environment with new metadata, forms, views, and logic. These solutions can be enabled in any order, though you typically install in the order that is given here:
 
 1. **Field Service Common** – Field Service Common is installed when Field Service is installed in the environment.
 2. **Field Service (Anchor)** – Field Service (Anchor) is installed when Field Service is installed in the environment. 
@@ -177,7 +173,7 @@ The following rules are applied to the status fields:
 
 ## <a id="sync-procurement"></a>Sync with the Supply Chain Management procurement data on demand
 
-Supply Chain Management includes procurement data that handles trade agreements, discounts, and other scenarios that rely on secondary processes in Supply Chain Management. The procurement engine uses complex rules to determine the best price for a given purchase order. When you use dual-write, data isn't always kept synchronous across the two machines, especially in scenarios where the row was created or updated from Dataverse and might trigger follow-on processes in Supply Chain Management.
+Supply Chain Management includes procurement data that handles trade agreements, discounts, and other scenarios that rely on secondary processes in Supply Chain Management. The procurement engine uses complex rules to determine the best price for a given purchase order. When you use dual-write, data isn't always kept synchronous across the two environments, especially in scenarios where the row was created or updated from Dataverse and might trigger follow-on processes in Supply Chain Management.
 
 ## Sync the procurement data from Supply Chain Management
 
