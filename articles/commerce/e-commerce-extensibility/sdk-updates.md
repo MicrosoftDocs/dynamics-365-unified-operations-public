@@ -5,7 +5,7 @@ title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 10/02/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -45,10 +45,10 @@ The SDK packages.json file that is included in the SDK root directory controls w
 ```json
 ...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.22",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.22",
+    "@msdyn365-commerce-modules/starter-pack": "9.24",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.24",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "9.22",
+    "@msdyn365-commerce/retail-proxy": "9.24",
 }
 ...
 ```
@@ -67,14 +67,14 @@ Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, 
 ```json
 ...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "~9.22.0",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.22.0",
+    "@msdyn365-commerce-modules/starter-pack": "~9.25.0",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.25.0",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "~9.22.0",
+    "@msdyn365-commerce/retail-proxy": "~9.25.0",
 }
 ...
 ```
-The following table maps SSK versions to Commerce Scale Unit versions. The same SSK versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **October 2nd, 2020**.
+The following table maps SSK versions to Commerce Scale Unit versions. The same SSK versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **December 4, 2020**.
 
 | Commerce Scale Unit version | Maximum SSK version |
 | --------------- | --------------- |
@@ -83,6 +83,7 @@ The following table maps SSK versions to Commerce Scale Unit versions. The same 
 | 10.0.12 | 9.22.x |
 | 10.0.13 | 9.23.x |
 | 10.0.14 | 9.24.x |
+| 10.0.15 | 9.25.x |
 
 ## Pull updates
 

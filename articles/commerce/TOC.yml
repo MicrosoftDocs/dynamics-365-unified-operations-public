@@ -100,8 +100,6 @@
             href: get-started/whats-new-commerce-10-0-15.md
           - name: Commerce 10.0.14 (November 2020)
             href: get-started/whats-new-commerce-10-0-14.md
-          - name: Commerce 10.0.13 (October 2020)
-            href: get-started/whats-new-commerce-10-0-13.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -110,8 +108,6 @@
             href: get-started/removed-deprecated-features-commerce.md
         - name: AX 2012 features that were postponed
           href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-        - name: Features not implemented in on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/commerce/toc.json
         - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
           href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
       - name: Documentation resources
@@ -2192,6 +2188,8 @@
           href: dev-itpro/POS-APIs.md
         - name: POS payment extension
           href: dev-itpro/pos-payment-extension.md
+        - name: Support for tipping in the POS payments SDK
+          href: dev-itpro/tipping.md
         - name: Support for external gift cards
           href: dev-itpro/gift-card.md
         - name: Create and apply branding to the Retail Experience app

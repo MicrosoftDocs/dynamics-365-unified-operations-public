@@ -5,7 +5,7 @@ title: Create payment packaging for Application Explorer for self-service deploy
 description: This topic explains how to package a payment connector for Application Explorer for self-service deployment in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid:
@@ -63,20 +62,30 @@ To create a payment package that you can deploy through self-service, follow the
 
     ![Add Reference dialog box](./media/Reference.png)
 
-8. If you don't have any other payment X++ extensions that are related to the payment connector, build the solution.
+8. If your extension needs an HTML and CSS file for the implementation, then add them as a resource file to your project. During deployment, the HTML files will be copied to the AosService\WebRoot\Resources\Html folder. The CSS files will be copied to the AosService\WebRoot\Resources\Styles folder, then accessed with the following URL format.
+
+```
+https://AOSUrl/resources/html/Myhtml.html
+https://AOSUrl/resources/styles/Mycss.css
+```
+> [!NOTE]
+> Only HTML and CSS file formats added as Resources to the project will be copied to the AosService\WebRoot\, other file formats added as Resources will not be copied to AosService\WebRoot\. If you need the file in AosService\WebRoot\ folder then migrate it to HTML file format.
+
+9. If you don't have any other payment X++ extensions that are related to the payment connector, build the solution.
 
 > [!NOTE]
 > If there are no other extensions package, then continue with these steps. If you have additional extensions packages, then combine all of them into  all-in-one deployable packages. If you do not do this, this package will override other packages. For more information, see [All-in-one deployable packages](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages).
 
-9. To create the deployable package, on the **Dynamics 365** menu, select **Deploy \> Create Deployment Package**.
-10. Select the model that you created earlier, specify the location of the package file, and then select **Create**.
+10. To create the deployable package, on the **Dynamics 365** menu, select **Deploy \> Create Deployment Package**.
+11. Select the model that you created earlier, specify the location of the package file, and then select **Create**.
+
 
     ![Create Deployment Package dialog box](./media/Create.png)
 
     Visual Studio builds the model and creates the deployable package.
 
-10. After the deployable package has been created, sign in to Microsoft Dynamics Lifecycle Services (LCS), and then, in your LCS project, select the **Asset Library** tile.
-11. Upload the deployable package that you created.
+12. After the deployable package has been created, sign in to Microsoft Dynamics Lifecycle Services (LCS), and then, in your LCS project, select the **Asset Library** tile.
+13. Upload the deployable package that you created.
 
 ## Apply a deployable package
 

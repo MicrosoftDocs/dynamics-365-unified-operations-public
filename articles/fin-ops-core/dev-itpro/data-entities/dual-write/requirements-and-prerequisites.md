@@ -51,9 +51,9 @@ Currently, we support dual-write in the following regions:
 
 ## Verify requirements and grant access
 
-Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Common Data Service environment.
+Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Dataverse environment.
 
-You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Common Data Service and already has **Enable Dynamics 365 apps** set to **Yes**.
+You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
 
 :::image type="content" source="media/add_database.png" alt-text="Enable apps switch" lightbox="media/add_database_expanded.png":::
 
@@ -69,7 +69,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 2. Install the dual-write core solution.
 
-    The dual-write core solution contains metadata for your entity maps and must be installed in your environments.
+    The dual-write core solution contains metadata for your table maps and must be installed in your environments.
 
     1. In Power Apps, in the left pane, select **Solutions**.
     2. Select **Open AppSource**.
@@ -82,27 +82,27 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     *The dual-write core solution was found*
 
-    *The dual-write core solution contains metadata for your entity maps and must be installed in the environment*
+    *The dual-write core solution contains metadata for your table maps and must be installed in the environment*
 
-3. Grant Common Data Service access so that it can connect to a Finance and Operations app.
+3. Grant Dataverse access so that it can connect to a Finance and Operations app.
 
     1. Open your instance of the Finance and Operations app, search and navigate to Azure Active Directory applications.
 
-    2. Select **New** to add a new client ID record: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This record is the application ID for an app that will be used to connect from Common Data Service to the Finance and Operations app.
+    2. Select **New** to add a new client ID record: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This record is the application ID for an app that will be used to connect from Dataverse to the Finance and Operations app.
     3. Repeat the previous two steps to add another client ID record: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
-    When you've finished, follow these steps to refresh the list of entities:
+    When you've finished, follow these steps to refresh the list of tables:
 
-    1. Go to **Workspaces \> Data management**, select the **Data entities** tile, and make sure that the entity list is filled in.
-    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entities** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entities list**.
+    1. Go to **Workspaces \> Data management**, select the **Data tables** tile, and make sure that the entity list is filled in.
+    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entities** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh tables list**.
 
     **Related health check result:**<br>
-    *The Common Data Service can connect to the Finance and Operations app*<br>
+    *The Dataverse can connect to the Finance and Operations app*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
-4. Grant a Finance and Operations app access so that it can connect to Common Data Service.
+4. Grant a Finance and Operations app access so that it can connect to Dataverse.
 
     1. In Power Apps, select the **Settings** button (gear symbol) in the upper-right corner, go to **Advanced settings \> Security**, and then select **Users**.
 
@@ -116,7 +116,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
         ![Switching to Application user](media/create-new-user.png)
 
-    4. In the **Application ID** field, enter **00000015-0000-0000-c000-000000000000**. This application ID is for a Finance and Operations app and will enable the app to connect to Common Data Service. When you've finished, follow the prompts to fill in the other fields, and then save the user account.
+    4. In the **Application ID** field, enter **00000015-0000-0000-c000-000000000000**. This application ID is for a Finance and Operations app and will enable the app to connect to Dataverse. When you've finished, follow the prompts to fill in the other fields, and then save the user account.
 
         ![Entering the application ID](media/add-application-id.png)
 
@@ -140,7 +140,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
         ![Assigning the application ID](media/assign-application-id.png)
 
     **Related health check result:**<br>
-    *The Finance and Operations app can connect to the Common Data Service*<br>
+    *The Finance and Operations app can connect to the Dataverse*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 00000015-0000-0000-c000-000000000000 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
@@ -171,13 +171,13 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     **Related health check result:**<br>
     *The dual-write registration and runtime plugins are enabled*<br>
-    *To ensure listening into CRUD operations on the Common Data Service, the dual-write plugins need to be enabled*
+    *To ensure listening into CRUD operations on the Dataverse, the dual-write plugins need to be enabled*
 
 7. Install the **Dual-write application orchestration solution** maps solution.
 
     In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview). 
  
-    While the dual-write core solution contains metadata for your entity maps, the dual-write application orchestration solution covers these additional master data scenarios:
+    While the dual-write core solution contains metadata for your table maps, the dual-write application orchestration solution covers these additional master data scenarios:
     
     + Customers, products, and vendors.
     + End-to-end process flows like prospect to cash.
@@ -196,7 +196,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 9. Provide the supported tenant configuration.
 
-    Make sure that the Finance and Operations app and Common Data Service are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
+    Make sure that the Finance and Operations app and Dataverse are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
     > [!NOTE]
     > For dual-write core solution versions lower than 1.0.16.0, see the following section for modifications and additional steps. 
@@ -212,7 +212,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     2. Select **Accept**.
 
-        By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Common Data Service requires this app to communicate with the Finance and Operations app.
+        By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Dataverse requires this app to communicate with the Finance and Operations app.
 
     
     **Related health check result:**<br>

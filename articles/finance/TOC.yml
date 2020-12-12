@@ -78,8 +78,6 @@
             href: get-started/whats-new-changed-10-0-15.md
           - name: Finance 10.0.14 (November 2020)
             href: get-started/whats-new-changed-10-0-14.md
-          - name: Finance 10.0.13 (October 2020)
-            href: get-started/whats-new-changed-10-0-13.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
@@ -88,8 +86,6 @@
             href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
       - name: AX 2012 features that were postponed
         href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-      - name: Features not implemented in on-premises deployments
-        href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
         href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
       - name: Documentation resources
@@ -726,6 +722,8 @@
         href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
       - name: Post with derived books
         href: fixed-assets/post-derived-value-models.md
+      - name: Number of books per journal
+        href: fixed-assets/number-books-per-journal.md
       - name: Post fixed asset transactions to posting layers
         href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
       - name: Fixed asset transaction options
@@ -734,6 +732,8 @@
         href: fixed-assets/tasks/transfer-fixed-asset.md
       - name: Split a fixed asset
         href: fixed-assets/tasks/split-fixed-asset.md
+      - name: Reduce balance depreciation after a split
+        href: fixed-assets/reduce-balance-depreciation-after-split.md
       - name: Set up fixed asset groups
         href: fixed-assets/tasks/set-up-fixed-asset-groups.md
       - name: Change a fixed asset group
@@ -1514,6 +1514,8 @@
             href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+          - name: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
+            href: localizations/bra-use-tax-exemption-nf-e.md
         - name: SPED ECD
           href: localizations/latam-bra-sped-ecd.md
         - name: SPED-Reinf tax statement
@@ -2824,6 +2826,8 @@
             href: localizations/rus-expense-and-income-codes.md
           - name: Assets tax registers
             href: localizations/rus-assets-tax-registers.md
+          - name: Deferrals tax register
+            href: localizations/rus-deferred-expenses-register.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -3735,6 +3739,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
           - name: Compress large outbound documents
             href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
+        - name: Inspect configured ER components
+          href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations
@@ -3805,16 +3811,20 @@
         items: 
         - name: Extend the list of built-in functions
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-        - name: API changes for Application update 10.0.11
-          href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-        - name: API changes for Application update 7.3
-          href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+        - name: API changes
+          items:
+          - name: Application update 7.3
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+          - name: Application update 10.0.11
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
           - name: Delegate the creation of an ER destination to a custom destination factory
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+        - name: Initiate data source values of the USER INPUT PARAMETER type from source code
+          href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
     - name: Mobile app
       items:
       - name: Mobile app home page

@@ -16,7 +16,7 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: One Version service updates FAQ
           href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Manage updates and the custom code lifecyle, including Dynamics 365 Commerce
+        - name: Manage updates and the custom code lifecycle, including Dynamics 365 Commerce
           href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
         - name: Software lifecycle policy - Cloud
           href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
@@ -86,8 +86,6 @@
             href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
         - name: AX 2012 features that were postponed
           href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Features not implemented in on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
         - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
           href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
       - name: Documentation resources
@@ -1373,10 +1371,16 @@
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
+        - name: Master planning with demand forecast
+          href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Inventory marking with Planning Optimization
+          href: master-planning/planning-optimization/marking.md
+        - name: Intercompany planning
+          href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Approve planned orders
@@ -2097,6 +2101,8 @@
             items:
             - name: Configure the production floor execution interface
               href: production-control/production-floor-execution-configure.md
+            - name: Design the production floor execution interface
+              href: production-control/production-floor-execution-tabs.md
             - name: Set up a device to run the production floor execution interface
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface
@@ -2675,6 +2681,14 @@
         href: transportation/transportation-management-status.md
       - name: Zone master
         href: transportation/transportation-management-zone-master.md
+      - name: Carrier groups
+        href: transportation/tasks/carrier-groups.md
+      - name: Load building workbench
+        href: transportation/tasks/load-building-workbench.md
+      - name: Load templates
+        href: transportation/tasks/load-template.md
+      - name: Rating profiles
+        href: transportation/tasks/setup-a-rating-profile.md
       - name: Set up a carrier fuel index
         href: transportation/tasks/set-up-carrier-fuel-index.md
       - name: Set up a transportation tender

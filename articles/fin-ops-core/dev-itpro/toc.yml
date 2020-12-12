@@ -1,4 +1,4 @@
-﻿- name: Development and administration for Finance and Operations apps
+- name: Development and administration for Finance and Operations apps
   items:
   - name: Development and administration for Finance and Operations apps
     items:
@@ -20,8 +20,6 @@
           href: get-started/whats-new-platform-updates-10-0-15.md
         - name: Platform updates for 10.0.14 (November 2020)
           href: get-started/whats-new-platform-updates-10-0-14.md
-        - name: Platform updates for 10.0.13 (October 2020)
-          href: get-started/whats-new-platform-updates-10-0-13.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated platform features
@@ -30,8 +28,6 @@
           href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: AX 2012 features that were postponed
         href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-      - name: Features not implemented in on-premises deployments
-        href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
         href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
     - name: Business events
@@ -162,6 +158,8 @@
                   href: data-entities/dual-write/currrency-decimal-places.md
                 - name: Set up the mapping for the sales order status fields
                   href: data-entities/dual-write/sales-status-map.md
+                - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
+                  href: data-entities/dual-write/filtering-intercompany-orders.md
             - name: Managing dual-write
               items:
                 - name: Customize entity and field mappings
@@ -774,6 +772,8 @@
               href: dev-ref/xpp-data/xpp-data-perf.md
             - name: Data access using the SysDa API
               href: dev-ref/sysda.md
+            - name: Mitigate a SQL injection attack
+              href: dev-ref/query-with-parameters.md
           - name: X++ macros
             href: dev-ref/xpp-macros.md
           - name: X++ attribute classes
@@ -1708,7 +1708,7 @@
           href: user-interface/build-customer-form.md
         - name: Build navigation
           href: user-interface/build-navigation.md
-        - name: Build workspaces
+        - name: Modify a workspace
           href: user-interface/build-workspace.md
       - name: Forms
         items:
@@ -1906,4 +1906,4 @@
     href: ../../finance/index.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
-   
+

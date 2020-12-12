@@ -5,7 +5,7 @@ title: Financial reporting overview
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -53,6 +53,8 @@ To create and generate financial reports for a legal entity, you must set up the
 -   Ledger
 -   Chart of accounts
 -   Currency
+-   Post a transaction to at least one account
+-   MainAccount is listed in the Selected column in **General Ledger > Ledger Setup > Financial Reporting Setup**
 
 ## Granting security access to Financial Reporting
 The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
@@ -154,7 +156,8 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
 * Workstations are required to install Microsoft .NET Framework 4.6.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* If you use Microsoft Edge with the Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode. 
+* If you are using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* If you are using Microsoft Edge with a Chrome browser, you do not need to install a ClickOnce extension for Edge Chromium. However, you must enable the ClickOnce option in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode.
      1. Open a new browser in Microsoft Edge.
      2. Enter **edge://flags** and select **Enter**.
      3. Search for the **ClickOnce Support** option or use this direct link: **edge://flags/#edge-click-once**.

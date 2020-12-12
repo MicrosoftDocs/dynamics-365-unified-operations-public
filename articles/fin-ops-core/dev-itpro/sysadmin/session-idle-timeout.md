@@ -3,7 +3,7 @@
 
 title: Set the session inactivity timeout
 description: This topic describes how to set the session inactivity timeout.
-author: hasaid
+author: paulliew
 manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
@@ -18,12 +18,11 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 13531
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: hasaid
+ms.author: paulliew
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
 
@@ -42,7 +41,7 @@ This function has a default value of 30 minutes. You can set the value up to 60 
 
 > [!NOTE] 
 > This feature is available as of Platform update 29.
-
+>
 > If you previously set a session inactivity timeout in the web.config (**WebClientStatefulSessionTimeoutInSeconds** key) through a support request, then that old value will still be honored. The change in default will only affect those who had not explicitly set a new session inactivity timeout in the web config.
 
 To change the value, follow these steps:

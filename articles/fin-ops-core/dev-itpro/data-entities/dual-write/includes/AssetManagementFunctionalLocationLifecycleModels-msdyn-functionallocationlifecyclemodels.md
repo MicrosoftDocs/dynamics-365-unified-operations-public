@@ -1,6 +1,6 @@
 ## Asset management functional location lifecycle models to msdyn_functionallocationlifecyclemodels
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
 Finance and Operations apps | Map type | Customer engagement apps | Default value
 ---|---|---|---

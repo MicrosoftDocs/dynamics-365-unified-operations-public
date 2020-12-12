@@ -18,7 +18,6 @@ ms.search.form: OfficeAppParameters, SysEmailParameters
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6

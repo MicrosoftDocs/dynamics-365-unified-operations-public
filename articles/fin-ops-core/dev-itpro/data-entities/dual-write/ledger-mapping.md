@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated ledger
-description: This topic describes the integration of ledger data between Finance and Operations and other Dynamics 365 applications using the Common Data Service.
+description: This topic describes the integration of ledger data between Finance and Operations and other Dynamics 365 applications using the Dataverse.
 author:  robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -41,7 +41,7 @@ In a business application, ledger data defines the core set up for how a company
 
 ## Templates
 
-Ledger data includes a collection of core financial entity maps that work together during data interaction, as shown in the following table.
+Ledger data includes a collection of core financial table maps that work together during data interaction, as shown in the following table.
 
 Finance and Operations apps      | Model-driven app in Dynamics 365 | Description
 ---------------------------------|----------------------------------|------------

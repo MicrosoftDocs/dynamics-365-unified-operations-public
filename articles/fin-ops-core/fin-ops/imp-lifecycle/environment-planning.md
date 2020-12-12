@@ -3,7 +3,7 @@
 
 title: Environment planning
 description: This topic provides an overview of various aspects that you must consider while you plan for your project's environment.
-author: ClaudiaBetz-Haubold
+author: petryo
 manager: AnnBe
 ms.date: 11/24/2020
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS:
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: sericks
+#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chaubold
+ms.author: petryo
 ms.search.validFrom: 2018-08-01
 ms.dyn365.ops.version: Finance and Operations
 

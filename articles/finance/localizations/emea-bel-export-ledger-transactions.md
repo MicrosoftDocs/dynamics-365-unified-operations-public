@@ -2,10 +2,10 @@
 # required metadata
 
 title: Export ledger transactions
-description: This topic provides information about how to export ledger account balances to a plain text (ASCII) file in .CED format for Belgium.
+description: This topic provides information about how to export ledger account balances to a plain text (ASCII) file in CED format for Belgium.
 author: anasyash
 manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-05-31
 
 [!include [banner](../includes/banner.md)]
 
-The feature described in this topic is used to export the total balance of each ledger account for a specific period to a plain text (ASCII) file in .CED format. You can then import the generated file into third-party software to create an accounting report according to country/region-specific requirements.
+The feature described in this topic is used to export the total balance of each ledger account for a specific period to a plain text (ASCII) file in CED format. You can then import the generated file into third-party software to create an accounting report according to country/region-specific requirements.
 
 This functionality is available for legal entities that have their primary address in Belgium.
 
@@ -45,23 +45,46 @@ This functionality is available for legal entities that have their primary addre
 
 ## Export ledger transactions to a plain text file in CED format
 
-1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following report format:
+### Setup
 
-    - Ledger transaction export format (BE)
+1. From the [Microsoft global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md), import the latest versions of the Electronic reporting (ER) configurations for the following report format.
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    | **Dynamics 365 Finance version**          | **Configuration name**                                                                                           |
+    |-------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+    | Before 10.0.16                            | **Ledger transaction export format (BE)** under **Ledger accounting reports** > **Ledger transaction export (BE)** model. |
+    | Starting from 10.0.16                     | **General ledger data export (BE)** under **Standard Audit File (SAF-T)** model.                                  |
 
-2. In Dynamics 365 Finance, go to **General ledger** \> **Periodic tasks** \> **Export ledger transactions**.
-3. In the **Export ledger transactions to an ASCII file in CED format** dialog box, in the **Format mapping** field, select the **Ledger transaction export format (BE)** format that you just downloaded, and then select **OK**.
-4. In the **Electronic report parameters** dialog box, set the following fields.
+    > ![ER configurations](media/be-audit-er-configs.png)
 
-| **Field**          | **Description**                                                             |
-|--------------------|-----------------------------------------------------------------------------|
-| From date          | Enter the first day of the reporting period.                                |
-| To date            | Enter the last day of the reporting period.                                 |
-| Reporting in euros | Set this option to **Yes** if the company uses a currency other than euros. |
+2. After import, you must have the following or later versions of ER configurations.
 
-5. Select **OK** to generate and download the .txt file.
+    | **ER configuration name**         | **Type**           | **Version** | **Description**                                                                                                             |
+    |-----------------------------------|--------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------|
+    | Standard Audit File (SAF-T)       | Model              | 82          | The common ER model for Standard Audit Files.                                                                               |
+    | General ledger data model mapping | Model mapping      | 82.13       | The model mapping that defines data sources for General ledger data.                                                        |
+    | General ledger data export (BE)   | Format (exporting) | 82.8        | The text format representing General ledger data that can be imported into third-party software. |
+
+    > [!NOTE]
+    > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **General ledger data model mapping** configuration on the **Configurations** page.
+
+    > ![Default for model mapping option](media/be-audit-default-mm.png)
+
+3. Starting in version 10.0.16, to use the **General ledger data export (BE)** format, define the ER configuration name in a new General ledger parameter. Go to **General ledger** > **Ledger setup** > **General ledger parameters**. 
+4. Expand the **Electronic reporting** FastTab and then select the **Ledger** tab. 
+5. In the **Ledger transactions export** group, in the **Ledger transactions export** field, select the format **General ledger data export (BE)**, and then save the new setting.
+
+    ![GL parameter](media/be-audit-gl-parameter.png)
+
+### Generate the Export ledger transactions report
+
+1. In Finance, go to **General ledger** \> **Periodic tasks** \> **Export ledger transactions**.
+2. If your Finance version is lower than 10.0.16, in the **Export ledger transactions to an ASCII file in CED format** dialog box, in the **Format mapping** field, select the **Ledger transaction export format (BE)** format that you downloaded, and then select **OK**. Starting in version 10.0.16, specify the ER format in the General ledger parameters. When the ER format is defined in the General ledger parameters, the system uses it to generate reports.
+3. Specify the reporting period in the **From date** and **To date** fields in the **Electronic report parameters** dialog box.
+4. If the accounting currency of your legal entity isn't EURO, and you want to generate the report in EURO, select **Recalculate to Euro** in the dialog box. 
+When the accounting currency isn't EURO but the reporting currency is, and you select **Recalculate to Euro**, a report is generated with the amounts stored in the general ledger in the reporting currency. 
+When neither the accounting or reporting currencies are EURO, and you select **Recalculate to Euro**, the report automatically recalculates the amounts in the accounting currency to EURO by using the exchange rate stored in the system on the date of each transaction in general ledger. Generating the report may take longer than a report that is generated without any recalculation.
+5. When you generate the **Export ledger transactions** report for a longer period, run it in batch. To run the report in batch, expand the **Run in the background** FastTab in the dialog box, mark the **Batch processing** parameter, and specify other parameters of the batch as needed. Follow up the report generation on the **Electronic reporting jobs** page.
+6. Select **OK** to generate and download the .txt file.
 
     For example, you post the following ledger transactions in the DEMF company.
 

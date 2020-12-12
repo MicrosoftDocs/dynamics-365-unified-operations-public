@@ -18,7 +18,7 @@ ms.search.form: EventCreateRule
 audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
+#ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
