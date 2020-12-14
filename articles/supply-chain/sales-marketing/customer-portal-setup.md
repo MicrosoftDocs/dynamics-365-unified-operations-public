@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10.0.13
 To implement the Customer portal, you must have the following licenses:
 
 - **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For more information, see the [Power Apps portals licensing requirements](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management entities. For more information, see the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management tables. For more information, see the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## Dependencies on dual-write and Power Apps portals
 
@@ -44,13 +44,13 @@ The Customer portal depends on Power Apps portals and dual-write, as shown in th
 
 ![Customer portal dependencies](media/customer-portal-elements.png "Customer portal dependencies")
 
-Unlike other features from Supply Chain Management, the Customer portal template resides in Power Apps portals. Therefore, the Customer portal is limited by the functionality and capabilities that are provided by Power Apps portals and the entities in dual-write.
+Unlike other features from Supply Chain Management, the Customer portal template resides in Power Apps portals. Therefore, the Customer portal is limited by the functionality and capabilities that are provided by Power Apps portals and the tables in dual-write.
 
 ## <a name="required-setup"></a>Required setup to enable the Customer portal
 
 After you've made sure that you have the required licenses, you can set up dual-write as described in the [dual-write initial synchronization instructions](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
 
-Be sure to enable the following entity mappings in dual-write:
+Be sure to enable the following table mappings in dual-write:
 
 - Sales Order Header
 - Sales Order Details
@@ -85,7 +85,7 @@ To learn how you can set up and customize the Customer portal, you should start 
 - [Power Apps portals documentation](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [Dual-write documentation](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-To effectively manage your portals, you must understand the Power Apps portals and Common Data Service lifecycle. For more information, see the following resources:
+To effectively manage your portals, you must understand the Power Apps portals and Microsoft Dataverse lifecycle. For more information, see the following resources:
 
 - [About portal lifecycle](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
 - [Upgrade a portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
