@@ -69,7 +69,7 @@ After a configuration has been created under your configuration provider, you ca
 3. Select the configuration that you want to share.
 4. On the **Shared with** FastTab, select **Organization**.
 
-    ![Shared with FastTab](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Shared with FastTab](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. In the dialog box, enter the domain name for the external organization, and then select **OK**.
 
