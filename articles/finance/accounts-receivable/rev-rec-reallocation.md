@@ -31,13 +31,18 @@ ms.dyn365.ops.version: 10.0.14
 # Revenue recognition reallocation
 
 Reallocation allows an organization to recalculate the revenue price when to the terms of a contractual sale are changed.  The sales order documents are considered the contract for the purpose of recognizing revenue. 
-The need for a reallocation will be determined by the organization, since adding - a new line to a sales order, or adding a new sales order for the customer, may not constitute a change to the contract. The following scenarios could require a reallocation:
-- Items on the sales order were added or removed by the customer after the order was fully or partially invoiced  
+
+The need for a reallocation will be determined by the organization, since adding a new line to a sales order, or adding a new sales order for the customer, may not constitute a change to the contract. The following scenarios could require a reallocation:
+
+- Items on the sales order were added or removed by the customer after the order was fully or partially invoiced
 - Multiple sales orders were entered for the same negotiated contract, whether the sales orders were in a confirmed or invoiced state
-A customer ret  - ne  - or received a credit for an item after the original sales order has been fully or partially invoiced. A few important restrictions exist for the reallocation process  - - Reallocation- an only be run once.  This means it’s important to run this process only after all changes are finalized. 
-- Reallocation  - s not permitted on any project sales orders.
-- If multiple   - les orders are involved, they must be for the same customer account.
-- All sales or  - rs reallocated must be in the same transaction currency. 
+
+A customer returned or received a credit for an item after the original sales order has been fully or partially invoiced. A few important restrictions exist for the reallocation process:
+
+- Reallocation can only be run once.  This means it’s important to run this process only after all changes are finalized. 
+- Reallocation is not permitted on any project sales orders.
+- If multiple sales orders are involved, they must be for the same customer account.
+- All sales orders reallocated must be in the same transaction currency. 
 - The reallocation process cannot be reversed or undone after it is processed. 
 
 ## Reallocation setup
