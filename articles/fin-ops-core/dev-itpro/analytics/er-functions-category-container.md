@@ -5,7 +5,7 @@ title: List of ER functions in the container category
 description: This topic provides information about the container functions that are supported in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/12/2020
+ms.date: 12/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[Electronic reporting (ER)](general-electronic-reporting.md) container [functions](er-formula-language.md#functions) can be used to perform operations with data sources of the *Container* data type when the processing data represents a collection of binary data in binary large object (BLOB) format. This topic provides a summary of these functions.
+[Electronic reporting (ER)](general-electronic-reporting.md) container [functions](er-formula-language.md#functions) can be used to perform operations with data sources of the *Container* data type. These operations occur when the processing data represents a collection of binary data in binary large object (BLOB) format. This topic provides a summary of these functions.
 
 ## List of supported functions
 
