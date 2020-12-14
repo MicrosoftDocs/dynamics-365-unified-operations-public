@@ -34,11 +34,15 @@ This topic has been compiled to assist with year-end closing activities. The doc
 
 ## General ledger:  Running year-end close vs Undoing year-end close
 We have seen organizations run the year-end close but were actually performing an undo of the year-end close.  If the year-end close is finishing really quickly or the year end close produces no opening balances, validate the ‘Undo previous close’ setting on the year-end close dialog. 
+
 General ledger – Period close – Year end close – Run fiscal close drop dialog
- 
+
+[![Run fiscal close drop dialog](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
 If “Undo previous close” = Yes, the previous year-end close is being reversed. When running an undo, all closing balance and opening balance entries will be deleted, as if the year-end close never ran.  The vouchers are deleted.  The year-end close will not run again automatically.  You must initiate the year-end close again, this time changing Undo previous close = No. 
-NOTE:  The closing balance entry is optionally created in the year being closed; only if the GL parameter “Create closing transactions during transfer” = Yes.  The opening balance entry is always created, as this is the beginning balance for the next year. 
+
+> [!Note]
+> The closing balance entry is optionally created in the year being closed; only if the GL parameter “Create closing transactions during transfer” = Yes.  The opening balance entry is always created, as this is the beginning balance for the next year. 
 
  
 ## General ledger: Difference between Undo and Delete GL parameter for year-end close
