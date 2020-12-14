@@ -39,7 +39,7 @@ ms.dyn365.ops.version: 10.0.17
 
 | Function | Description |
 |----------|-------------|
-| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | This function returns a *Container* value with binary content that is decoded from the specified ASCII string representing a Base64 group of binary-to-text encoding schemes. |
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | This function returns a *Container* value with binary content that is decoded from the specified ASCII string that represents a Base64 group of binary-to-text encoding schemes. |
 
 ## Additional resources
 
