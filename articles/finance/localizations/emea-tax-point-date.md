@@ -5,7 +5,7 @@ title: Tax point date (Date of VAT register)
 description: This topic provides information about how to indicate when the tax date is different from the transaction date regarding VAT registration.
 author: LizaGolub
 manager: AnnBe
-ms.date: 09/10/2019
+ms.date: 012/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,7 +66,7 @@ When you create an invoice, the **Date of VAT register** field is automatically 
 - **Document date** – The value will be defined automatically on the date that the invoice is updated.
 - **Posting date** - The value will be the date that the invoice is posted.
 - **Last delivery date** - The date of the last packing slip (for a sales order) or product receipt (for a purchase order) for the invoice.
-- **Customize** – The value can be calculated based on either posting date or document date. The date of VAT register will be determined by adding a number of periods (Day, Month, or Year) to the posting date or document date. The option is available under the **Date of VAT register filling: new calculation choice** feature in the **Feature management** workspace starting from the version 10.0.17.
+- **Customize** – The value can be calculated based on the posting date or the document date. The date of VAT register is determined by adding a number of periods (Day, Month, or Year) to the posting date or document date. The option is available under the **Date of VAT register filling: new calculation choice** feature in the **Feature management** workspace starting in version 10.0.17.
 
 ## Filling the **Date of VAT register** field after the invoice is posted
 
