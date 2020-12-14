@@ -53,67 +53,75 @@ To open the tracking control center, go to **Landed cost \> Delivery information
 
 The **Tracking control center** shows one of three different page views depending what is selected for the **Create type** drop-down list on the list pane (*Blank*, *Lead time*, or *Status update*). Each of the different create types updates a different set of information associated with the progress of a voyage from the point of origin to the final destination.
 
+### Common rule settings
+
 Fields listed below are shown on the **Tracking control center** with all three create types available for update and configuration.
 
 | **Setting** | **Description** |
 | --- | --- |
-| **Activity** | Identifies the type of activity applied to a shipping container. |
+| **Source&nbsp;table** and **Source&nbsp;field** | Identifies a source table and field in the database. The rule will load the value in that field and then use it as defined by other settings of the rule. |
+| **Target table** and **Target&nbsp;field** | Identifies a source table and field in the database. The rule will load the value in that field and then use it (or overwrite it) as defined by other settings of the rule. |
+| **Activity** | Identifies the type of activity applied to a shipping container to be matched by a rule. |
 | **Matching criteria** | This determines how the system identifies a match with a rule. In each instance, it will review the data in the source and destination tables to determine when and if a field is updated.<p>**Example**: The **Source table** is *voyages* and the **Destination table** is *Purchase header* or *Purchase lines*. The voyages table has a **From port** of *Hong Kong* and the purchase header has a **From port** of *Shanghai*. A rule is then created that has uses the from-port *Hong Kong*. The **Matching criteria** values in that control center will then work as follows:</p><ul><li>**Both** – Nothing will update because the two ports do not match.</li><li>**Source** – This would update because the source table's from-port is *Hong Kong*.</li><li>**Target** – This would not update because the destination table's from-port is *Shanghai*. |
 | **Copy action** | The options are *Copy* and *Default*. Select *Copy* to copy the value in the source field to the destination field. Select *Default* to set a static value for the destination field. |
 | **Default** | When the **Copy action** is set to *Default*, the **Default** field sets the value of the default in the destination field. For example, if the action is regarding a port update and the copy action is set to default, the default field will be a port identified here. |
 | **Leg** | The leg of the journey for which the specified action occurs, such as loading or customs. |
 | **Service provider** | If a specific service provider is used for this status update/leg of the journey, the service provider is listed. Service providers are defined in the vendor account. |
 
-### Lead time types
+### Lead time rules
 
 The *Lead time* is the estimated time a voyage will require to complete a defined leg of a journey on a voyage. The lead time on each leg of a journey is used to calculate the estimated delivery date of a voyage. This date is then populated on every purchase line within a voyage in the **Confirmed delivery date** field on the purchase line.
 
-Use lead times to manage the updating of dates. Activities are automatically generated when a journey template is used on a voyage. Link activities to legs of a journey by creating the lead time and status rules from the leg.
+Use lead time rules to manage the updating of dates. Activities are automatically generated when a journey template is used on a voyage.
 
-> [!NOTE]
-> The **Tracking control center** should be accessed from the **Legs** page to configure lead times. Set the **Create type** to *Lead time* and then select **New** to create a new record in the tracking control center.<!-- KFM: I don't understand this note. If this is required, it should be part of the procedure, but it still needs to be clearer. -->
+To add a lead time rule to the tracking control center:
 
-Lead times can be created between two different dates within the Landed cost module and the purchasing module. Matching fields can be used to further control this setting. If a date is altered for the source field, the target field and shipment status on the purchase line will be updated (depending on the matching fields selected). <!-- KFM: I don't understand any of this. -->
-
-<!-- KFM: What does this procedure do? It doesn't really match the advice given so far (eg, to start from a leg). -->
-
-1. On the list pane, set **Create type** to **Lead time**
+1. Do one of the following:
+    - Go to **Landed cost \> Multi-leg journey setup \> Legs**. Select the leg you want to set up lead times for and select **Tracking control center** from the Action Pane. This will pre-load the **Tracking control center**  with information about your selected leg.
+    - Go to **Landed cost \> Delivery information setup \> Tracking control center**. This will require you to manually choose a leg later during this procedure.
+1. On the list pane, set **Create type** to *Lead time*
 1. Select **New** on the Action Pane.
-1. Several fields are automatically populated as follows:
+1. If you started from the **Tracking control center**, then set **Leg** to the leg you want to create the lead time rule for. If you came from the **Legs** page, then the **Leg** field is pre-filled with the leg you had selected before opening the **Tracking control center**.
+1. Based on the **Leg** setting, several fields are automatically populated as follows:
     - **Source table** - *Container activities*
     - **Source field** - *Start date*
     - **Target table** - *Container activities*
     - **Target field** - *Estimated end date*
-1. Select the **Activity**.
-1. Enter the **Lead time** in days.
+1. Select the **Activity** for which your rule will apply
+1. Enter the **Lead time** (in days) that will apply when the current rule is triggered.
 
-### Status update types
+### Status update rules
 
-Records with a **Create type** of *Status update* will update the status of a purchase order lines or the status at the voyage/shipping-container/folio level, and they can be independently set. Use this to inform the user or department teh stage of a particular voyage (such as documents received or goods in transit).
+Records with a **Create type** of *Status update* will update the status of a purchase order lines or the status at the voyage/shipping-container/folio level, and they can be independently set. Use this to inform the user or department of the stage of a particular voyage (such as documents received or goods in transit).
 
-> [!NOTE]
-> The **Tracking control center** should be accessed from the **Legs** page to configure status updates. Set the **Create type** to *Status update* and then select **New** to create a new record in the tracking control center.<!-- KFM: I don't understand this note. If this is required, it should be part of the procedure, but it still needs to be clearer. -->
+When the **Create type** is set to *Status update*, the **Tracking control center** provides a **Lines** section where you can define a cost area and the updated status of the voyage. For example, if you have a line where the **Cost area** is set to *Container* and the **Voyage status** is set to *Goods in transit*, then when an order completes the specified leg, the **Voyage status** of the shipping container will update to *Goods in Transit*.
 
-When the **Create type** is set to *Status update*, the **Tracking control center** provides a **Lines** section where you can define a cost area and the updated status of the voyage. For example, if the **Cost area** is set to *Container* and the **Voyage status** is set to *Goods in transit*, then when an order completes the specified step, the voyage status of the shipping container will update to *Goods in Transit*.
+Status updates provide the status of the voyage throughout the voyage lines and purchase order lines associated to the voyage. As a voyage moves through its journey from the port, sailing, customs, and to the destination warehouse, the **Voyage status** field of the voyage record provides a quick reference into what stage the items are at.
 
-Status updates provide the status of the voyage throughout the voyage lines and purchase order lines associated to the voyage. As a voyage moves through its journey from the port, sailing, customs, and to the destination warehouse, the **Voyage status** field provides a quick reference into what stage the items are at. <!-- KFM: Where is the **Status update** field? -->
+To add a status update rule to the tracking control center:
 
-1. On the list pane, set **Create type** to **Lead time**
+1. Do one of the following:
+    - Go to **Landed cost \> Multi-leg journey setup \> Legs**. Select the leg you want to set up a status update for and select **Tracking control center** from the Action Pane. This will pre-load the **Tracking control center**  with information about your selected leg.
+    - Go to **Landed cost \> Delivery information setup \> Tracking control center**. This will require you to manually choose a leg later during this procedure.
+1. On the list pane, set **Create type** to *Status update*
 1. Select **New** on the Action Pane.
-1. Several fields are automatically populated as follows:
+1. If you started from the **Tracking control center**, then set **Leg** to the leg you want to create status update rule for. If you came from the **Legs** page, then the **Leg** field is pre-filled with the leg you had selected before opening the **Tracking control center**.
+1. Based on the **Leg** setting, several fields are automatically populated as follows:
     - **Source table** - *Container activities*
     - **Source field** - *Actual end date*
     - **Target table** - (blank)
     - **Target field** - (blank)
-1. Select the **Activity**.
-1. In the **Lines** fast tab, enter the status updates for each cost area.
+1. Select the **Activity** for which your rule will apply
+1. On the **Lines** fast tab, enter the status updates for each cost area.
 
-### Blank types
+### Blank type rules
 
 Use records with a **Create type** of *Blank* to override or input a field value based on the data of another field. A field from the Landed cost module will overwrite data in other areas of Supply Chain Management based on rules set up within the **Tracking control center**.
 
-> [!NOTE]
-> The tracking control center should be accessed from the tracking control center form to configure override scenarios. Set the **Create type** to *Blank* to create a new record in the tracking control center. <!-- KFM: I don't understand this note. Replace with a procedure, maybe? -->
+1. Go to **Landed cost \> Delivery information setup \> Tracking control center**.
+1. On the list pane, set **Create type** to *Blank*
+1. Select **New** on the Action Pane.
+1. Define the source and destination values, matching criteria, copy action, and other relevant parameters as needed for your rule.
 
 ### Required tracking control setup
 
