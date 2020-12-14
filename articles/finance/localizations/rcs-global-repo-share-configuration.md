@@ -77,6 +77,4 @@ After a configuration has been created under your configuration provider, you ca
 
 The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of Finance and Operations apps.
 
-![Configuration shared with an external organization](media/1_RCS_Repo_for_Share_with_test.com)
-
 6. To unshare a configuration that has been previously shared with an external organization, select the configuration and click **Unshare**, and then select **OK**
