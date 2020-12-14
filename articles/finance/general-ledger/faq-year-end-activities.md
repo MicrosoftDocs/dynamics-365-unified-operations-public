@@ -46,12 +46,14 @@ If the  **Undo previous close** selection is set to **Yes**, the previous year-e
 ## General ledger: Difference between Undo and Delete GL parameter for year-end close
 Confusion exists over the difference between the “Undo previous close” (on the year-end close dialog) and the GL parameter “Delete close-of-year transactions during transfer”.  
 General ledger – Period close – Year end close – Run fiscal close drop dialog
- 
+
+[![Run fiscal close drop dialog](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 The **Undo previous close** selection in the dialog of the year-end close process will delete all closing balance and opening balance entries, as if the year-end close had never been run. The vouchers are deleted. The year-end close will not run again automatically. To run the year-end close, you must initiate again, this time changing the **Undo previous close** to **No**. 
 
 General ledger – Ledger setup – General ledger parameters
- 
+
+[![General ledger parameters](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
 
 The GL parameter “Delete close-of-year transactions during transfer” is only used when running (not Undoing) the year end close (Undo previous close = No).  If the GL parameter is set to Yes, all closing balance and opening balance entries will be deleted and the year-end close will run again.  This is used when the organization wants all transactions, including adjustments since the last year-end close, to be posted in a single accounting entry for the closing balance and opening balance entries. 
 
@@ -71,7 +73,8 @@ When running the year end close, each dimension set balance is rebuilt, having a
 
 The unnecessary dimension sets also impact the batch job “BudgetDimensionFocusInitializeBalance.”
 General ledger – Chart of accounts – Dimensions – Financial dimension sets
- 
+
+[![Financial dimension sets](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### Year-end close template configuration
 The year-end close template allows an organization to select the financial dimension level to maintain when transferring Profit and loss balances to retained earnings.  The settings allow an organization to maintain the detailed financial dimensions (Close all) when moving the balances to retained earnings or choose to ‘summarize’ the amounts to a single dimension value (Close single). This can be defined for each financial dimension. Please see the documentation for the year end close for more information on these settings.
@@ -81,13 +84,16 @@ Each organization should evaluate their requirements and if possible, close as m
  
 ## General ledger – Period close – Year end close
  
-Performance improvements for rebuilding financial dimension sets (new feature)
+[![Year-end close](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
+
+** Performance improvements for rebuilding financial dimension sets (new feature)
+
 A new feature has been added to 10.0.16 that improves the performance of the year-end close and consolidation.  This feature changes the rebuild of the dimension sets to only happen for the relevant time frame, where previously it would rebuild for all dates. For example, if running a year end close for 2020, it will only rebuild the balances for transactions within the fiscal year 2020.  And if running consolidation for a date range of Nov 1, 2020 to Nov 30, 2020, it will only rebuild the balances for that date range. 
+
 Because this feature is considered a breaking change, it must be enabled through feature management.  Feature name:  Performance improvements for rebuilding financial dimension sets. 
  
+[![Year-end close](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
 
-
- 
 ## Accounts payable: 1099 2020 year-end reporting changes
 
 Two new regulatory features have been added for the 2020 1099 year-end changes. The first feature was released mid-year as a mandatory feature labeled “Apply changes to 1099-NEC and 1099-MISC forms for 2020” in Feature management. The purpose of this feature was to ensure that 1099 transactional data for the year 2020 could be tracked for the new 1099-NEC form. This feature added the 1099 fields to support the new 1099-NEC and updated the 1099-MISC fields. This update also upgraded vendor record data for the 1099 box information. 
@@ -118,15 +124,16 @@ Accounts payable: 1099 – “Recalculate existing 1099 amounts” versus “Upd
 The “Recalculate existing 1099 amounts” checkbox will reset the 1099 amount to the total paid values, when used in conjunction with the “Update all” checkbox. The “Recalculate existing 1099 amounts” checkbox only comes into play when there are partial 1099 values on the invoice or if it was modified on the Tax 1099 form. For example, assume you have an invoice valued at 1000.00, but the user manually types in a 1099 amount on the invoice of 500.00. When this is paid, 500.00 will be the 1099 amount paid. If you perform the recalculation routine, the system will change the 1099 amount to be 1000, which is the total that was paid.
 
 Screenshot after payment of 1000, prior to running Update routine:
- 
+
+[![Tax 1099 transactions: Prior to running the Update routine](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
+
 
 Screenshot after payment of 1000, after running Update 1099 routine. Marking both Update all and Recalculate existing 1099 amounts:
- 
- 
 
+[![Tax 1099 transactions: Marking both Update all and Recalculate existing 1099 amounts](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
+[![Tax 1099 transactions: After running 1099 routine](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
- 
 ## Accounts payable: 1099 – Manually create 1099 transaction
 There may be times an organization may need to manually create 1099 transactions that are not associated with an invoice. You can add manual 1099 transactions by navigating to Accounts payable>Periodic tasks >Tax 1099> Vendor settlement for 1099s. Select the button labeled “Manual 1099 transactions.” 
 
