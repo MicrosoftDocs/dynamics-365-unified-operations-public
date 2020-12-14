@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revenue recognition reallocation 
-description: 
+description: Reallocation allows an organization to recalculate the revenue price when to the terms of a contractual sale are changed. The sales order documents are considered the contract for the purpose of recognizing revenue. This topic includes multiple scenarios that describe how to recognize revenue in specific situations.
 author: kweekley
 manager: aolson
 ms.date: 12/21/2020
@@ -135,7 +135,7 @@ The General ledger parameter, **Post invoice corrections to Accounts receivable*
 
 A sales order is created for customer US_SI_0003. The customer is purchasing software installation (S0001) and support (S0008) for a laptop, but they haven’t selected the laptop yet. The software installation’s revenue is deferred until the date the laptop is purchased. The revenue from the support plan will be deferred and recognized over 12 months as defined by the date range in the contract. 
 
-[![Sales order lines with software installation added](./media/13_RevRecScenarios.png)](./media/13_RevRecScenarios.png)
+[![Sales order lines with software installation added](./media/13_rev-rec-scenarios.png)](./media/13_rev-rec-scenarios.png)
 
 The sales order is confirmed. Both items are set up for revenue price allocation so the revenue price is calculated when the sales order is confirmed.. The revenue to recognize can be seen from the **Sales order** Action Pane, (**Manage – Revenue recognition – Revenue price allocation**). The support item will post to a Deferred Revenue account in the amount of $150.00. The software installation will also post to the Deferred Revenue account in the amount of $250.00.  The sum of the revenue prices must equal the sum of the lines’ setup for revenue price allocation, which is equal to $400.00. 
 
