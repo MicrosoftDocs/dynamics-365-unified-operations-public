@@ -55,7 +55,7 @@ Follow these steps to verify that the configuration that you want to share has a
 
 1. In the **Electronic reporting** workspace, select **Repositories** for your configuration provider.
 
-    ![Configuration providers](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
+    ![Configuration providers](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Select **Global repository** \> **Open**.
 3. Search for the configuration that you want to share. You can use the filter field to narrow your search. If you can't find the configuration in the Global repository, follow the steps in [Create and upload a new version of an Electronic reporting (ER) configuration](rcs-global-repo-upload.md).
