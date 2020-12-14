@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: Customer
+ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
@@ -33,13 +33,11 @@ ms.dyn365.ops.version: 10.0.14
 This topic has been compiled to assist with year-end closing activities. The document primarily focuses on questions that risen multiple times among General ledger and Accounts payable over the last year. 
 
 ## General ledger:  Running year-end close vs Undoing year-end close
-We have seen organizations run the year-end close but were actually performing an undo of the year-end close.  If the year-end close is finishing really quickly or the year end close produces no opening balances, validate the ‘Undo previous close’ setting on the year-end close dialog. 
-
-General ledger – Period close – Year end close – Run fiscal close drop dialog
+We have seen organizations run the year-end close but were actually performing an undo of the year-end close. If the year-end close is finishing really quickly or the year end close produces no opening balances, validate the **Undo previous close** setting in the **Year-end close** (**General ledger – Period close – Year end close – Run fiscal close drop dialog**). 
 
 [![Run fiscal close drop dialog](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
-If “Undo previous close” = Yes, the previous year-end close is being reversed. When running an undo, all closing balance and opening balance entries will be deleted, as if the year-end close never ran.  The vouchers are deleted.  The year-end close will not run again automatically.  You must initiate the year-end close again, this time changing Undo previous close = No. 
+If the  **Undo previous close** selection is set to **Yes**, the previous year-end close is being reversed. When running an undo, all closing balance and opening balance entries will be deleted, as if the year-end close had never been run. The vouchers are deleted. The year-end close will not run again automatically. You must initiate the year-end close again, this time changing **Undo previous close** selection to **No**. 
 
 > [!Note]
 > The closing balance entry is optionally created in the year being closed; only if the GL parameter “Create closing transactions during transfer” = Yes.  The opening balance entry is always created, as this is the beginning balance for the next year. 
@@ -50,27 +48,34 @@ Confusion exists over the difference between the “Undo previous close” (on t
 General ledger – Period close – Year end close – Run fiscal close drop dialog
  
 
-The “Undo previous close” found on the dialog of the year-end close process will delete all closing balance and opening balance entries, as if the year-end close had never been run.  The vouchers are deleted.  The year-end close will not run again automatically.  You must initiate the year-end close again, this time changing Undo previous close = No. 
+The **Undo previous close** selection in the dialog of the year-end close process will delete all closing balance and opening balance entries, as if the year-end close had never been run. The vouchers are deleted. The year-end close will not run again automatically. To run the year-end close, you must initiate again, this time changing the **Undo previous close** to **No**. 
+
 General ledger – Ledger setup – General ledger parameters
  
 
 The GL parameter “Delete close-of-year transactions during transfer” is only used when running (not Undoing) the year end close (Undo previous close = No).  If the GL parameter is set to Yes, all closing balance and opening balance entries will be deleted and the year-end close will run again.  This is used when the organization wants all transactions, including adjustments since the last year-end close, to be posted in a single accounting entry for the closing balance and opening balance entries. 
+
 If this option is set to No, all closing balance and opening balance entries remain. They are not deleted. Instead, a new closing balance and opening balance entry will be created for only the delta or new transactions posted since the last year-end close for that fiscal year.  
-NOTE:  The closing balance entry is optionally created in the year being closed; only if the GL parameter “Create closing transactions during transfer” = Yes.  The opening balance entry is always created, as this is the beginning balance for the next year. 
+
+> [!Note]
+> The closing balance entry is optionally created in the year being closed; only if the GL parameter “Create closing transactions during transfer” = Yes.  The opening balance entry is always created, as this is the beginning balance for the next year. 
 
 
 
  
 ## General ledger: Performance considerations
 There are numerous settings and changes that can be made to improve performance of the year-end close.  These should be evaluated to determine if they can be utilized to improve performance. 
+
 Dimension sets
-When running the year end close, each dimension set balance is rebuilt, having a direct impact on the performance.  We have encountered organizations that needlessly create dimension sets because they were used at one point or might be used at some point.  These unnecessary dimension sets are still rebuilt during the year end close, which adds time to the process. Please evaluate your dimension sets and delete any unnecessary dimension sets.  
+When running the year end close, each dimension set balance is rebuilt, having a direct impact on the performance.  We have encountered organizations that needlessly create dimension sets because they were used at one point or might be used at some point.  These unnecessary dimension sets are still rebuilt during the year end close, which adds time to the process. Please evaluate your dimension sets and delete any unnecessary dimension sets.
+
 The unnecessary dimension sets also impact the batch job “BudgetDimensionFocusInitializeBalance.”
 General ledger – Chart of accounts – Dimensions – Financial dimension sets
  
 
 ### Year-end close template configuration
-The year-end close template allows an organization to select the financial dimension level to maintain when transferring Profit and loss balances to retained earnings.  The settings allow an organization to maintain the detailed financial dimensions (Close all) when moving the balances to retained earnings or choose to ‘summarize’ the amounts to a single dimension value (Close single). This can be defined for each financial dimension. Please see the documentation for the year end close for more information on these settings.  
+The year-end close template allows an organization to select the financial dimension level to maintain when transferring Profit and loss balances to retained earnings.  The settings allow an organization to maintain the detailed financial dimensions (Close all) when moving the balances to retained earnings or choose to ‘summarize’ the amounts to a single dimension value (Close single). This can be defined for each financial dimension. Please see the documentation for the year end close for more information on these settings.
+
 Each organization should evaluate their requirements and if possible, close as many dimensions as possible using ‘Close single’ to improve performance. By closing to a single dimension value (which can also be a blank value), less detail has to be calculated when determining the balances for retained earnings account entries.
 
  
