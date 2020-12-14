@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Landed cost parameters
-description: Supply Chain Management provides two different modules for working with transportation (Transportation management (TMS) and Landed cost). This topic summarizes the functionality the two modules have in common and highlights the differences between them.
+description: The Landed cost parameters page sets up general information and configuration settings used across the module for posting, status updates, number sequences, and behavior.
 author: mkirknel
 manager: tfehr
 ms.date: 12/07/2020
