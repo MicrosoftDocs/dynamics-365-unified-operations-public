@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic has been compiled to assist with year-end closing activities. The document primarily focuses on questions that risen multiple times among General ledger and Accounts payable over the last year. 
 
-## General ledger:  Running year-end close vs Undoing year-end close
+## General ledger:  Running year-end close versus undoing year-end close
 We have seen organizations run the year-end close but were actually performing an undo of the year-end close. If the year-end close is finishing really quickly or the year end close produces no opening balances, validate the **Undo previous close** setting in the **Year-end close** (**General ledger – Period close – Year end close – Run fiscal close drop dialog**). 
 
 [![Run fiscal close drop dialog](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
@@ -49,13 +49,11 @@ General ledger – Period close – Year end close – Run fiscal close drop dia
 
 [![Run fiscal close drop dialog](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
-The **Undo previous close** selection in the dialog of the year-end close process will delete all closing balance and opening balance entries, as if the year-end close had never been run. The vouchers are deleted. The year-end close will not run again automatically. To run the year-end close, you must initiate again, this time changing the **Undo previous close** to **No**. 
-
-General ledger – Ledger setup – General ledger parameters
+The **Undo previous close** selection in the dialog of the year-end close process will delete all closing balance and opening balance entries, as if the year-end close had never been run. The vouchers are deleted. The year-end close will not run again automatically. To run the year-end close, you must initiate again, this time changing the **Undo previous close** to **No** (**General ledger > Ledger setup > General ledger parameters**). 
 
 [![General ledger parameters](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
 
-The GL parameter “Delete close-of-year transactions during transfer” is only used when running (not Undoing) the year end close (Undo previous close = No).  If the GL parameter is set to Yes, all closing balance and opening balance entries will be deleted and the year-end close will run again.  This is used when the organization wants all transactions, including adjustments since the last year-end close, to be posted in a single accounting entry for the closing balance and opening balance entries. 
+The **Delete close-of-year transactions during transfer** parameter in General ledger is used only when running (not undoing) the year-end close (the **Undo previous close** selection is set to **No**).  If that parameter is set to **Yes**, all closing balance and opening balance entries will be deleted and the year-end close will run again.  This process is used when the organization wants all transactions, including adjustments since the last year-end close, to be posted in a single accounting entry for the closing balance and opening balance entries. 
 
 If this option is set to No, all closing balance and opening balance entries remain. They are not deleted. Instead, a new closing balance and opening balance entry will be created for only the delta or new transactions posted since the last year-end close for that fiscal year.  
 
