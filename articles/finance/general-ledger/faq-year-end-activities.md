@@ -129,5 +129,5 @@ Dynamics 365 Finance doesn’t print the 1096 Annual Summary and Transmittal of 
 ## Accounts payable: 1099 – Public sector new feature 
 A new public sector feature has been added to feature management, named Update 1099 information by main account. This feature lets you associate the 1099 values for a vendor by the main account in the accounting distribution, rather than the default account on the vendor record.
 
-Link to documentation: https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/associate-1099-default-value-main-account
+For more information, see [Set up vendors for 1099 reporting](../localizations/noam-usa-set-up-vndrs-1099-rprtg).
 
