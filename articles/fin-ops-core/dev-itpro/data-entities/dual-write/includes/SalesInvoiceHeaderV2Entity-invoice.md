@@ -1,6 +1,6 @@
 ## Sales invoice headers V2 to invoices
 
-This template synchronizes data between Finance and Operations apps and Dataverse.
+This template synchronizes data between Finance and Operations apps and Dataverse. Please note that Sales invoice headers V2 entity in Finance and Operations contains invoices for Sales orders and Free text invoices. A filter is applied in Dataverse for dual write that will filter out any Free text invoice documents. 
 
 Source filter: `(SalesOrderNumber != "")`
 
