@@ -122,7 +122,7 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 
 | Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
 |-----------------------------|-----------------------------------|-------------|
-| Sales invoice headers V2    | invoices                          |             |
+| Sales invoice headers V2    | invoices                          | The Sales invoice headers V2 table in the Finance and Operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
 | Sales invoice lines V2      | invoicedetails                    |             |
 | CDS sales order headers     | salesorders                       |             |
 | CDS sales order lines       | salesorderdetails                 |             |
