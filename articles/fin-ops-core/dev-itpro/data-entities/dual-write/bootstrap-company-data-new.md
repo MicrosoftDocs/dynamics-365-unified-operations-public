@@ -53,7 +53,7 @@ The following illustration shows the workflow.
 
 This scenario is based on the following assumptions:
 
-- Source data is the Finance and Operations app.
+- The source data is in the Finance and Operations app.
 - If an account exists in Dataverse, but it doesn't exist in the Finance and Operations app, it won't be initialized as part of this flow.
 - All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (**CustomerAccount**).
 - Rows have a one-to-one (1:1) mapping across the apps.
@@ -105,9 +105,10 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
 
 ## Run the process
 
-- In the Finance and Operations app, use the Data management framework to export data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data was exported from the **CustCustomerV3Entity** table. Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field in the CSV field. Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.
+1. In the Finance and Operations app, use the Data management framework to export data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data was exported from the **CustCustomerV3Entity** table. Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field to the CSV file. Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.
 
     :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations customer file":::
 
-- Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
-- Run **BootstrapAccountsPipeline** from Azure Data Factory.
+2. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
+
+3. Run **BootstrapAccountsPipeline** from Azure Data Factory.
