@@ -102,7 +102,7 @@ public str GetFirstName(str name)
 
     // Execute the query, providing both the query
     // and the parameters.
-    var results= statement.executeQueryWithParameters(sqlStatementText);
+    var results= statement.executeQueryWithParameters(sqlStatementText, paramMap);
 
     // Capture the results:
     results.next();
