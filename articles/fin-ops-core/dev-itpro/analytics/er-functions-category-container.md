@@ -33,13 +33,13 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[Electronic reporting (ER)](general-electronic-reporting.md) container [functions](er-formula-language.md#functions) can be used to perform operations with data sources of the *Container* data type. These operations occur when the processing data represents a collection of binary data in binary large object (BLOB) format. This topic provides a summary of these functions.
+[Electronic reporting (ER)](general-electronic-reporting.md) container [functions](er-formula-language.md#functions) can be used to perform operations that involve data sources of the *Container* data type. These operations occur when the processing data represents a collection of binary data in binary large object (BLOB) format. This topic provides a summary of these functions.
 
 ## List of supported functions
 
 | Function | Description |
 |----------|-------------|
-| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | This function returns a *Container* value with binary content that is decoded from the specified ASCII string that represents a Base64 group of binary-to-text encoding schemes. |
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | This function returns a *Container* value that consists of binary content that is decoded from the specified ASCII string that represents a Base64 group of binary-to-text encoding schemes. |
 
 ## Additional resources
 
