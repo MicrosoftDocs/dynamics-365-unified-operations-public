@@ -73,10 +73,10 @@ After a configuration has been created under your configuration provider, you ca
 
 5. In the dialog box, enter the domain name for the external organization, and then select **OK**.
 
-    ![Share configuration version with external organization dialog box](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Share configuration version with external organization dialog box](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of Finance and Operations apps.
 
-![Configuration shared with an external organization](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
+![Configuration shared with an external organization](media/1_RCS_Repo_for_Share_with_test.com)
 
 6. To unshare a configuration that has been previously shared with an external organization, select the configuration and click **Unshare**, and then select **OK**
