@@ -41,7 +41,7 @@ The **Date of VAT register** field is shared globally and can be enabled in lega
 
 The **Date of VAT register** feature is enabled in the **Feature management** workspace.
 
-![date-of-vat-activating](./media/date-of-vat-activating.png)
+![Feature management workspace](./media/date-of-vat-activating.png)
 
 After the feature is enabled, you can also define tax point transactions dates by using the **Date of VAT register** field in all of the legal entities in your application.
 
@@ -58,7 +58,7 @@ The **Date of VAT register** field is also included in the following reports:
 
 You can use the functionality in the **Date of VAT register** feature to auto-fill the **Date of VAT register** field. To set this up, set the **Date of VAT register filling** parameter on the **Sales tax groups** page.
 
-![date-of-vat-filling](./media/date-of-vat-filling.png)
+![Date of VAT register filling parameter on the Sales tax groups page](./media/date-of-vat-filling.png)
 
 When you create an invoice, the **Date of VAT register** field is automatically filled in. One of the following methods will be added based on the selection in the **Date of VAT register filling** field:
 
