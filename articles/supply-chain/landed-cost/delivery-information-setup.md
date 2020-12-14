@@ -51,14 +51,14 @@ Use the **Tracking control center** to set up the lead times, status updates, an
 
 To open the tracking control center, go to **Landed cost \> Delivery information setup \> Tracking control center**.
 
-The **Tracking control center** shows one of three different page views depending on the *area type* selected for the **Create type** drop-down list on the list pane (*Blank*, *Lead time*, or *Status update*) <!-- KFM: Do we call these "create types" or "area types"? -->. Each of the different area types updates a different set of information associated with the progress of a voyage from the point of origin to the final destination.
+The **Tracking control center** shows one of three different page views depending what is selected for the **Create type** drop-down list on the list pane (*Blank*, *Lead time*, or *Status update*). Each of the different create types updates a different set of information associated with the progress of a voyage from the point of origin to the final destination.
 
-Fields listed below are shown on the **Tracking control center** with all three area types available for update and configuration.
+Fields listed below are shown on the **Tracking control center** with all three create types available for update and configuration.
 
 | **Setting** | **Description** |
 | --- | --- |
-| **Activity** | Applicable to the container activities form. <!-- KFM: I don't understand this. What does this setting do? --> |
-| **Matching criteria** | This determines how the system identifies a match with a rule. In each instance, it will review the data in the source and destination tables to determine when and if a field is updated.<p>**Example**: The **Source table** is *voyages* and the **Destination table** is *Purchase header* or *Purchase lines*. The voyages table has a **From port** of *Hong Kong* and the purchase header has a **From port** of *Shanghai*. A rule is then created that has uses the from-port *Hong Kong*. The **Matching criteria** values in tht control center will then work as follows:</p><ul><li>**Both** – Nothing will update because the two ports do not match.</li><li>**Source** – This would update because the source table's from-port is *Hong Kong*.</li><li>**Target** – This would not update because the destination table's from-port is *Shanghai*. |
+| **Activity** | Identifies the type of activity applied to a shipping container. |
+| **Matching criteria** | This determines how the system identifies a match with a rule. In each instance, it will review the data in the source and destination tables to determine when and if a field is updated.<p>**Example**: The **Source table** is *voyages* and the **Destination table** is *Purchase header* or *Purchase lines*. The voyages table has a **From port** of *Hong Kong* and the purchase header has a **From port** of *Shanghai*. A rule is then created that has uses the from-port *Hong Kong*. The **Matching criteria** values in that control center will then work as follows:</p><ul><li>**Both** – Nothing will update because the two ports do not match.</li><li>**Source** – This would update because the source table's from-port is *Hong Kong*.</li><li>**Target** – This would not update because the destination table's from-port is *Shanghai*. |
 | **Copy action** | The options are *Copy* and *Default*. Select *Copy* to copy the value in the source field to the destination field. Select *Default* to set a static value for the destination field. |
 | **Default** | When the **Copy action** is set to *Default*, the **Default** field sets the value of the default in the destination field. For example, if the action is regarding a port update and the copy action is set to default, the default field will be a port identified here. |
 | **Leg** | The leg of the journey for which the specified action occurs, such as loading or customs. |
@@ -85,7 +85,7 @@ Lead times can be created between two different dates within the Landed cost mod
     - **Target table** - *Container activities*
     - **Target field** - *Estimated end date*
 1. Select the **Activity**.
-1. Enter the **Lead time**. <!-- KFM: In days? -->
+1. Enter the **Lead time** in days.
 
 ### Status update types
 
@@ -96,7 +96,7 @@ Records with a **Create type** of *Status update* will update the status of a pu
 
 When the **Create type** is set to *Status update*, the **Tracking control center** provides a **Lines** section where you can define a cost area and the updated status of the voyage. For example, if the **Cost area** is set to *Container* and the **Voyage status** is set to *Goods in transit*, then when an order completes the specified step, the voyage status of the shipping container will update to *Goods in Transit*.
 
-Status updates provide the status of the voyage throughout the voyage lines and purchase order lines associated to the voyage. As a voyage moves through its journey from the port, sailing, customs, and to the destination warehouse, the **Status update** field provides a quick reference into what stage the items are at. <!-- KFM: Where is the **Status update** field? -->
+Status updates provide the status of the voyage throughout the voyage lines and purchase order lines associated to the voyage. As a voyage moves through its journey from the port, sailing, customs, and to the destination warehouse, the **Voyage status** field provides a quick reference into what stage the items are at. <!-- KFM: Where is the **Status update** field? -->
 
 1. On the list pane, set **Create type** to **Lead time**
 1. Select **New** on the Action Pane.

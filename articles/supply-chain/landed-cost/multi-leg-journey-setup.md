@@ -42,8 +42,8 @@ To work with the legs, go to **Landed cost \> Multi-leg journey setup \> Legs**.
 | --- | --- |
 | **Leg** | Enter a unique identification name/number for the journey leg. |
 | **Description** | Enter a description of the journey leg, typically describing the to and from port or the step of the journey. |
-| **From port** | Enter the point of origin of the goods on the voyage. <!-- KFM: Do we mean really mean voyage, or should this be journey leg? --> |
-| **To port** | Enter the point of destination of the goods on the voyage. <!-- KFM: Do we mean really mean voyage, or should this be journey leg? --> |
+| **From port** | Enter the point of origin of the goods on the leg. |
+| **To port** | Enter the point of destination of the goods on the leg. |
 | **Delivery method** | Enter the method of transport for the leg. |
 
 ## Journey templates
@@ -65,8 +65,8 @@ In the **Lines** section of the page, add a row for each leg of the journey and 
 | --- | --- |
 | **Leg** | Select a leg to add to the journey. |
 | **Description** | The description of the selected leg. |
-| **From port** | The point of origin of the goods in the voyage. <!-- KFM: Do we mean really mean voyage, or should this be journey leg? --> This is the to port used when identifying auto costs for a voyage. |
-| **To port** | The final destination port of the goods in a voyage.<!-- KFM: Do we mean really mean voyage, or should this be journey leg? --> |
+| **From port** | The point of origin of the goods in the leg. This is the to port used when identifying auto costs for a voyage. |
+| **To port** | The final destination port of the goods in a leg. |
 | **Mode of delivery** | The mode of delivery used for the specified leg of a voyage. |
 | **Journey from port** | If the port specified in the selected leg is used to determine the auto costs, select this check box to identify it as the journey from port. This will be the port that is displayed on the voyage header. |
 | **Journey to port** | If the port specified in the selected leg is used to determine the auto costs, select this check box to identify it as the journey to port. This will be the port that is displayed on the voyage header.
