@@ -17,7 +17,7 @@ ms.search.form: CustPaymFee, CustPaymModeFee, BankAccountTableLookUp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
+# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
