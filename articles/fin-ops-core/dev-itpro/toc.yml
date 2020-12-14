@@ -340,6 +340,8 @@
         items:
         - name: Data import and export jobs overview
           href: data-entities/data-import-export-job.md
+        - name: Synchronize date and time in import jobs
+          href: data-entities/data-synchronize-date-and-time.md
         - name: Best practices for importing vouchers using the General journal entity
           href: data-entities/tips-tricks-import-general-journal-entity.md
       - name: Development for data entities
