@@ -2727,6 +2727,14 @@
           href: landed-cost/multi-leg-journey-setup.md
         - name: Shipping information setup
           href: landed-cost/shipping-information-setup.md
+      - name: Work with voyages, containers, and folios
+        items:
+        - name: Manage voyages
+          href: landed-cost/manage-voyages.md
+        - name: Manage shipping containers
+          href: landed-cost/manage-shipping-containers.md
+        - name: Manage folios
+          href: landed-cost/manage-folios.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
