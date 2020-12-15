@@ -69,7 +69,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 <tbody>
 <tr>
 <td colspan="5">
-<p><strong>GST</strong></p>
+<p style="text-align: center;"><strong>GST</strong></p>
 </td>
 </tr>
 <tr>
