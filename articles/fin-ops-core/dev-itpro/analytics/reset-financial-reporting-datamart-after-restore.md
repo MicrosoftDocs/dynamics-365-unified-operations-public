@@ -34,12 +34,8 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
-In specific scenarios, you might have to reset the data mart for Financial reporting. Here are some examples:
-
-- The application database was restored, but the data mart database wasn't restored.
-- You see incorrect data for a period, and you've determined that the issue isn't a report design issue.
-- You see incorrect data for a period, and records appear under integration attempts on Report designer integration status page (start the Report designer and select **Tools** > **Integration status**).
-- Support instructs you to reset the data mart as part of a troubleshooting step.
+> [!Note}
+> To confirm that it's necessary to reset your data mart, see [When to do a data mart reset](URL).
 
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
