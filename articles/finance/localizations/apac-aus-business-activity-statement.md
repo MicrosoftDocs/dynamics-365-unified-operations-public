@@ -44,7 +44,7 @@ The BAS includes the following taxation liabilities:
 
 ## Set up sales tax reporting codes
 
-Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes). The following reporting codes are associated with fields on the BAS report.
+Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following reporting codes are associated with fields on the BAS report.
 
 <table>
 <thead>
@@ -588,7 +588,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 
     - BAS(AU)
 
-  For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 4. Back in Finance, go to **General ledger > Ledger setup > General ledger parameters**.
 5. On the **Sales tax** tab, set the **Apply sales tax taxation rules** option to **No**.
