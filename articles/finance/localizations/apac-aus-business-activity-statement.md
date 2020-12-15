@@ -2470,7 +2470,6 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
 
 3. Go to **Tax > Setup > Sales tax > BAS fringe benefit reason codes**.
 4. Select **New** , and create the following line.
@@ -2557,7 +2556,6 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
 
 8. On the **Back cover page** tab, set the following values.
 
@@ -2823,7 +2821,6 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
 
 > [!Note]
 > Transactions weren&#39;t generated for amounts in fields **W1** , **F1** , and **F2** , because those fields aren&#39;t related to tax.
