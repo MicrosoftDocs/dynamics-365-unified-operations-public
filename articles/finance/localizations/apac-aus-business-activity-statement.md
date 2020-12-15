@@ -586,7 +586,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 2. On the **Legal entities** page, on the **Tax registration** FastTab, in the **Tax registration number** field, enter the tax registration number.
 3. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following report format:
 
-- BAS(AU)
+    - BAS(AU)
 
   For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
@@ -622,48 +622,48 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 1. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
 2. Select **New**, and set the following fields.
 
-| **Field** | **Description** |
-| --- | --- |
-| Settlement period | Select the settlement period for sales tax reporting. |
-| From date | Enter the start date of the settlement period. |
-| To date | Enter the end date of the settlement period. |
-| Document identification number | Enter the document identification number for the BAS. |
-| Date | The date when tax is settled. This field is automatically set when you create a sales tax payment. |
-| Voucher | The voucher number of the sales tax payment. This field is automatically set when you create a sales tax payment. |
+    | **Field** | **Description** |
+    | --- | --- |
+    | Settlement period | Select the settlement period for sales tax reporting. |
+    | From date | Enter the start date of the settlement period. |
+    | To date | Enter the end date of the settlement period. |
+    | Document identification number | Enter the document identification number for the BAS. |
+    | Date | The date when tax is settled. This field is automatically set when you create a sales tax payment. |
+    | Voucher | The voucher number of the sales tax payment. This field is automatically set when you create a sales tax payment. |
 
-![](media/apac-aus-bas-additional-boxes.png)
+    ![](media/apac-aus-bas-additional-boxes.png)
 
-> [!NOTE]
-> When you create a sales tax payment, the date and voucher are filled in for the period, and you can no longer edit the line. If a line on the **Additional BAS report boxes** page wasn&#39;t manually created, it&#39;s automatically created when the _Sales tax payment_ or _Settle and post GST_ procedure is run.
+    > [!NOTE]
+    > When you create a sales tax payment, the date and voucher are filled in for the period, and you can no longer edit the line. If a line on the **Additional BAS report boxes** page wasn&#39;t manually created, it&#39;s automatically created when the _Sales tax payment_ or _Settle and post GST_ procedure is run.
 
 3. On the **Cover page** tab, manually set the following fields if you didn&#39;t post tax transactions on the corresponding reporting codes.
 
-| **Field** | **Description** |
-| --- | --- |
-| 7 Deferred installment | Enter the company or fund of the deferred installment. |
-| 7A Deferred GST on imports | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of official BAS form, you could use this field to enter the deferred GST amount on imports that organizations can use under the Deferred GST Imports Scheme. |
-| 1G Credit for wholesale sales tax | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of the official BAS form, you could use this field to enter the sales tax for items that are traded wholesale. |
-| 5B Credit from PAYG | Enter the credit that is created when PAYG installments are reduced. |
-| 6B Credit fringe benefits tax | Enter the credit that is created when FBT installments are reduced. |
+    | **Field** | **Description** |
+    | --- | --- |
+    | 7 Deferred installment | Enter the company or fund of the deferred installment. |
+    | 7A Deferred GST on imports | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of official BAS form, you could use this field to enter the deferred GST amount on imports that organizations can use under the Deferred GST Imports Scheme. |
+    | 1G Credit for wholesale sales tax | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of the official BAS form, you could use this field to enter the sales tax for items that are traded wholesale. |
+    | 5B Credit from PAYG | Enter the credit that is created when PAYG installments are reduced. |
+    | 6B Credit fringe benefits tax | Enter the credit that is created when FBT installments are reduced. |
 
 4. On the **Back cover page** tab, manually set the following fields if you didn&#39;t post tax transactions on the corresponding reporting codes.
 
-| **Field** | **Description** |
-| --- | --- |
-| W1 Total payroll | Enter the total for salary, wages, and other payments. |
-| W-2 Withheld from payroll | Enter the amount that is withheld from salary, wages, and other payments. |
-| W3 Withheld from investment where no TFN | Enter the amount that is withheld from investment distributions that no tax file number (TFN) is available for. |
-| W4 Withheld from invoices where no ABN | Enter the amount that is withheld from invoice payments that no Australian Business Number (ABN) is available for. |
-| T1 Installment income | Enter the PAYG installment income. |
-| T2 Installment rate | Enter the PAYG commissioner&#39;s installment rate as a percentage. |
-| T3 New varied installment rate | Enter the PAYG new varied installment rate as a percentage. |
-| T4 Reason for variation | Select the reason code for the variation. The list of available reason codes is shown on the **BAS PAYG reason codes** page. For more information, see the [Set up PAYG reason codes](#_Set_up_PAYG) section earlier in this topic. |
-| F1 ATO fringe benefit | Enter the FBT installment that is calculated by the ATO. |
-| F2 Estimated total fringe benefits | Enter the estimated total FBT that must be paid. |
-| F3 Varied fringe benefits tax | Enter the varied FBT installment. |
-| F4 Reason for variation | Select the reason code that explains why the amount on the BAS was changed. The list of available reason codes is shown on the **BAS fringe benefit reason codes** page. For more information, see the [Set up fringe benefit reason codes](#_Set_up_fringe) section earlier in this topic. |
-| 7C Fuel tax credit over claim | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of the official BAS, you could use this field to enter the amount of credit that must be claimed on tax for fuel that was used for business activities, machinery, plant equipment, and heavy vehicles. |
-| 7D Fuel tax credit | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of the official BAS, you could use this field to enter the amount that you want to reduce your previously claimed fuel tax refund by. |
+    | **Field** | **Description** |
+    | --- | --- |
+    | W1 Total payroll | Enter the total for salary, wages, and other payments. |
+    | W-2 Withheld from payroll | Enter the amount that is withheld from salary, wages, and other payments. |
+    | W3 Withheld from investment where no TFN | Enter the amount that is withheld from investment distributions that no tax file number (TFN) is available for. |
+    | W4 Withheld from invoices where no ABN | Enter the amount that is withheld from invoice payments that no Australian Business Number (ABN) is available for. |
+    | T1 Installment income | Enter the PAYG installment income. |
+    | T2 Installment rate | Enter the PAYG commissioner&#39;s installment rate as a percentage. |
+    | T3 New varied installment rate | Enter the PAYG new varied installment rate as a percentage. |
+    | T4 Reason for variation | Select the reason code for the variation. The list of available reason codes is shown on the **BAS PAYG reason codes** page. For more information, see the [Set up PAYG reason codes](#_Set_up_PAYG) section earlier in this topic. |
+    | F1 ATO fringe benefit | Enter the FBT installment that is calculated by the ATO. |
+    | F2 Estimated total fringe benefits | Enter the estimated total FBT that must be paid. |
+    | F3 Varied fringe benefits tax | Enter the varied FBT installment. |
+    | F4 Reason for variation | Select the reason code that explains why the amount on the BAS was changed. The list of available reason codes is shown on the **BAS fringe benefit reason codes** page. For more information, see the [Set up fringe benefit reason codes](#_Set_up_fringe) section earlier in this topic. |
+    | 7C Fuel tax credit over claim | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of the official BAS, you could use this field to enter the amount of credit that must be claimed on tax for fuel that was used for business activities, machinery, plant equipment, and heavy vehicles. |
+    | 7D Fuel tax credit | This field isn&#39;t used in the official BAS form. **Note:** In earlier versions of the official BAS, you could use this field to enter the amount that you want to reduce your previously claimed fuel tax refund by. |
 
 ### Generate and preview a BAS report, and settle and post GST
 
