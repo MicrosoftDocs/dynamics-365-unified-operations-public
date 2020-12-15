@@ -920,6 +920,16 @@
             href: general-ledger/consolidate-online.md
           - name: Generate consolidated financial statements
             href: general-ledger/generating-consolidated-financial-statements.md
+          - name: Import subsidiary data from files
+            href: general-ledger/import-subsidiary-data-from-files.md
+          - name: Export subsidiary data to a file
+            href: general-ledger/export-subsidiary-data-to-file.md
+          - name: Consolidate with Import - Format
+            href: general-ledger/consolidate-with-import-format.md
+          - name: Prepare a legal entity for use in the consolidation process
+            href: general-ledger/prepare-company-for-consolidation.md
+          - name: Set up a subsidiary legal entity for consolidation
+            href: general-ledger/set-up-subsidiary-company-for-consolidation.md
         - name: Create consolidation groups and additional consolidation account
           href: general-ledger/tasks/create-consolidation-groups.md
         - name: Main account types
