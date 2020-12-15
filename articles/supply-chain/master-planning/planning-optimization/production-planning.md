@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Production
+title: Production planning
 description: This topic describes planning with production and explains how to modify planned production orders with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: tfehr
