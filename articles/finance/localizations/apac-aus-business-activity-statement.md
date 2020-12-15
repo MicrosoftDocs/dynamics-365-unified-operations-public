@@ -333,25 +333,244 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 You can also set up the following reporting codes, and then make transactions or manually fill in corresponding fields of the BAS report. For more information, see the [Generate additional BAS report boxes for the settlement period](#_Generate_additional_BAS) section later in this topic.
 
-| **Report layout** | **Reporting code** | **Report text** | **Field on the BAS report** |
-| --- | --- | --- | --- |
-| Default | 700 | 7 Deferred company/ fund instalment | 7 |
-| Default | 701 | 7A Deferred GST on imports | 7A |
-| **PAYG** |
-| Default | 400 | 4 Pay-As You Go Withholding | 4 |
-| Default | 501 | 5A Pay As You Go Instalment | 5A |
-| Default | 502 | 5B Credit arising from reduced Pay As You Go instalment | 5B |
-| Default | 31 | W1 Total of salary, wages and other payments | W1 |
-| Default | 32 | W2 Amounts withheld from salary, wages and other payments | W2 |
-| Default | 33 | W3 Amounts withheld from investment distributions where no TFN is quoted | W3 |
-| Default | 34 | W4 Amounts withheld from payment of invoices where no ABN is quoted | W4 |
-| Default | 51 | T1 Instalment income | T1 |
-| **FBT** |
-| Default | 601 | 6A Fringe benefit tax instalment | 6A |
-| Default | 602 | 6B Credit arising from fringe benefits tax instalment | 6B |
-| Default | 61 | F1 ATO-calculated fringe benefits tax instalment | F1 |
-| Default | 62 | F2 Estimated total fringe benefits tax payable | F2 |
-| Default | 63 | F3 Varied fringe benefits tax instalment | F3 |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Report layout</strong></p>
+</td>
+<td>
+<p><strong>Reporting code</strong></p>
+</td>
+<td>
+<p><strong>Report text</strong></p>
+</td>
+<td>
+<p><strong>Field on the BAS report</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>700</p>
+</td>
+<td>
+<p>7 Deferred company/ fund instalment</p>
+</td>
+<td>
+<p>7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>701</p>
+</td>
+<td>
+<p>7A Deferred GST on imports</p>
+</td>
+<td>
+<p>7A</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p style="text-align: center;"><strong>PAYG</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>400</p>
+</td>
+<td>
+<p>4 Pay-As You Go Withholding</p>
+</td>
+<td>
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>501</p>
+</td>
+<td>
+<p>5A Pay As You Go Instalment</p>
+</td>
+<td>
+<p>5A</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>502</p>
+</td>
+<td>
+<p>5B Credit arising from reduced Pay As You Go instalment</p>
+</td>
+<td>
+<p>5B</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>31</p>
+</td>
+<td>
+<p>W1 Total of salary, wages and other payments</p>
+</td>
+<td>
+<p>W1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>32</p>
+</td>
+<td>
+<p>W2 Amounts withheld from salary, wages and other payments</p>
+</td>
+<td>
+<p>W2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>33</p>
+</td>
+<td>
+<p>W3 Amounts withheld from investment distributions where no TFN is quoted</p>
+</td>
+<td>
+<p>W3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>34</p>
+</td>
+<td>
+<p>W4 Amounts withheld from payment of invoices where no ABN is quoted</p>
+</td>
+<td>
+<p>W4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>51</p>
+</td>
+<td>
+<p>T1 Instalment income</p>
+</td>
+<td>
+<p>T1</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p style="text-align: center;"><strong>FBT</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>601</p>
+</td>
+<td>
+<p>6A Fringe benefit tax instalment</p>
+</td>
+<td>
+<p>6A</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>602</p>
+</td>
+<td>
+<p>6B Credit arising from fringe benefits tax instalment</p>
+</td>
+<td>
+<p>6B</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>61</p>
+</td>
+<td>
+<p>F1 ATO-calculated fringe benefits tax instalment</p>
+</td>
+<td>
+<p>F1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>62</p>
+</td>
+<td>
+<p>F2 Estimated total fringe benefits tax payable</p>
+</td>
+<td>
+<p>F2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>63</p>
+</td>
+<td>
+<p>F3 Varied fringe benefits tax instalment</p>
+</td>
+<td>
+<p>F3</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 You can also set up the following reporting codes. However, we recommend that you use reporting codes 1013 through 1015, which generate both field G10 and fields G13 through G15, because the amount in field G10 of the BAS report must contain the amounts in fields G13 through G15.
 
