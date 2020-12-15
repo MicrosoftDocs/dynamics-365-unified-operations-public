@@ -631,7 +631,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 | Date | The date when tax is settled. This field is automatically set when you create a sales tax payment. |
 | Voucher | The voucher number of the sales tax payment. This field is automatically set when you create a sales tax payment. |
 
-![](RackMultipart20201215-4-1fxazi9_html_fff743ec49718145.png)
+![](media/apac-aus-bas-additional-boxes.png)
 
 > [!NOTE]
 > When you create a sales tax payment, the date and voucher are filled in for the period, and you can no longer edit the line. If a line on the **Additional BAS report boxes** page wasn&#39;t manually created, it&#39;s automatically created when the _Sales tax payment_ or _Settle and post GST_ procedure is run.
