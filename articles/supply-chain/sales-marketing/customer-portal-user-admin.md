@@ -44,11 +44,11 @@ The [Invite customers to register and use your customer portal](https://youtu.be
 
 ## Prerequisite setup
 
-Contacts in Power Apps portals are stored as records in the **Contacts** entity in Common Data Service. Dual-write then syncs these records to Microsoft Dynamics 365 Supply Chain Management as required.
+Contacts in Power Apps portals are stored as records in the **Contacts** table in Microsoft Dataverse. Dual-write then syncs these records to Microsoft Dynamics 365 Supply Chain Management as required.
 
 ![System diagram for Customer portal contacts](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
 
-Before you start to invite new customers, make sure that you've enabled the **Contact** entity mapping in dual-write.
+Before you start to invite new customers, make sure that you've enabled the **Contact** table mapping in dual-write.
 
 ## The invitation process
 
@@ -63,15 +63,15 @@ After a contact is created, you should be able to see it in Supply Chain Managem
 
 For more information, see [Configure a contact for use on a portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
 
-## Out-of-box web roles and entity permissions
+## Out-of-box web roles and table permissions
 
-User roles in Power Apps portals are defined by [web roles](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [entity permissions](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). A few roles are defined for the Customer portal out of the box. You can create new roles, and you can modify or remove existing roles.
+User roles in Power Apps portals are defined by [web roles](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [table permissions](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). A few roles are defined for the Customer portal out of the box. You can create new roles, and you can modify or remove existing roles.
 
 ### Out-of-box web roles
 
 This section describes the web roles that are delivered with the Customer portal.
 
-For more information about how to modify the out-of-box user roles, see [Create web roles for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [Add record-based security by using entity permissions for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in the Power Apps portals documentation.
+For more information about how to modify the out-of-box user roles, see [Create web roles for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [Add record-based security by using table permissions for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in the Power Apps portals documentation.
 
 #### Administrator
 
