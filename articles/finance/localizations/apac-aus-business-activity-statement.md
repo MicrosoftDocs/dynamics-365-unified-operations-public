@@ -1588,57 +1588,291 @@ The following example shows how you can set up sales tax codes and sales tax rep
 2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **AU89434123400**.
 3. Go to **Tax > Indirect taxes > Sales tax > Sales tax codes** , and set up the following sales tax codes.
 
-| **Sales tax code** | **Percentage** | **Description** |
-| --- | --- | --- |
-| CAPITAL | 10 | Capital acquisitionsat a rate of 10 percent. |
-| --- | --- | --- |
-| GST | 10 | Taxable sales and purchases at a rate of 10 percent. |
-| NONDED CAP | 10 (non-deductible part = 25%) | Capital acquisitions at a rate of 10 percent, where the non-deductible part of tax is 25 percent. |
-| EXPORTS | 0 | Export sales where the **Exempt** option is set to **Yes**. |
-| FREE | 0 | GST-free sales and purchases where the **Exempt** option is set to **Yes**. |
-| CAPFREE | 0 | GST-free capital acquisitionswhere the **Exempt** option is set to **Yes**. |
-| LUX | 10 | Luxury car sales and purchases at a rate of 10 percent. |
+<table>
+<thead>
+<tr>
+<td>
+<p><strong>Sales tax code</strong></p>
+</td>
+<td>
+<p><strong>Percentage</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>CAPITAL</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>Capital acquisitions at a rate of 10 percent.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>GST</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>Taxable sales and purchases at a rate of 10 percent.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>NONDED CAP</p>
+</td>
+<td>
+<p>10 (non-deductible part = 25%)</p>
+</td>
+<td>
+<p>Capital acquisitions at a rate of 10 percent, where the non-deductible part of tax is 25 percent.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>EXPORTS</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>Export sales where the <strong>Exempt</strong> option is set to <strong>Yes</strong>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>FREE</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>GST-free sales and purchases where the <strong>Exempt</strong> option is set to <strong>Yes</strong>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CAPFREE</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>GST-free capital acquisitions where the <strong>Exempt</strong> option is set to <strong>Yes</strong>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LUX</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>Luxury car sales and purchases at a rate of 10 percent.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 4. On the **Report setup** FastTab, assign reporting codes to sales tax codes.
 
    The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
-| **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Tax-free purchase** | **Sales tax receivable** |
-| --- | --- | --- | --- | --- | --- | --- |
-| CAPITAL |
- |
- |
- | 10 |
- | 10 |
-| --- | --- | --- | --- | --- | --- | --- |
-| GST | 1 |
- | 1 | 11 |
- | 11 |
-| NONDEDCAP |
- |
- |
- | 1015 |
- | 1015 |
-| EXPOTRS | 2 | 2 |
- |
- |
- |
- |
-| FREE | 3 | 3 |
- |
- |
- |
- |
-| CAPFREE |
- |
- |
- | 1014 | 1014 |
- |
-| LUX |
- |
- | 201 |
- |
- | 202 |
+<table>
+<thead>
+<tr>
+<td>
+<p><strong>Sales tax code</strong></p>
+</td>
+<td>
+<p><strong>Taxable sales</strong></p>
+</td>
+<td>
+<p><strong>Tax-free sale</strong></p>
+</td>
+<td>
+<p><strong>Sales tax payable</strong></p>
+</td>
+<td>
+<p><strong>Taxable purchases</strong></p>
+</td>
+<td>
+<p><strong>Tax-free purchase</strong></p>
+</td>
+<td>
+<p><strong>Sales tax receivable</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>CAPITAL</p>
+</td>
+<td>&nbsp;</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>&nbsp;</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>GST</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>11</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>NONDEDCAP</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>1015</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>1015</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>EXPOTRS</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p>FREE</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CAPFREE</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>1014</p>
+</td>
+<td>
+<p>1014</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LUX</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>201</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>202</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 > [!Note]
 > This configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
@@ -1647,22 +1881,232 @@ The following example shows how you can set up sales tax codes and sales tax rep
 
 For example, for customer invoices, go to **Accounts receivable > Invoices > All free text invoices**. For vendor invoices, go to **Accounts payable > Invoices > Invoice journal**.
 
-| **Date** | **Transaction type** | **Amount net** | **VAT amount** | **Sales tax code** | **Amount is expected on the reporting code** | **Amount is expected on BAS report in the field** |
-| --- | --- | --- | --- | --- | --- | --- |
-| January 1, 2020 | Customer invoice | 2,000 | 200 | GST | 1 | G1 |
-| January 1, 2020 | Vendor invoice | 800 | 80 | CAPITAL | 10 | G10 |
-| January 1, 2020 | Vendor invoice | 1,400 | 140 (includes a non-deductible amount of 35) | NONDEDCAP | 1015 | G10, G15 |
-| January 1, 2020 | Vendor invoice | 700 | 0 | CAPFREE | 1014 | G10, G14 |
-| January 1, 2020 | Customer invoice | 1,200 | 0 | EXPOTRS | 2 | G2 |
-| January 1, 2020 | Customer invoice | 500 | 0 | FREE | 3 | G3 |
-| January 1, 2020 | Customer invoice | 300 | 30 | LUX | 201 | 1E |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Date</strong></p>
+</td>
+<td>
+<p><strong>Transaction type</strong></p>
+</td>
+<td>
+<p><strong>Amount net</strong></p>
+</td>
+<td>
+<p><strong>VAT amount</strong></p>
+</td>
+<td>
+<p><strong>Sales tax code</strong></p>
+</td>
+<td>
+<p><strong>Amount is expected on the reporting code</strong></p>
+</td>
+<td>
+<p><strong>Amount is expected on BAS report in the field</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>January 1, 2020</p>
+</td>
+<td>
+<p>Customer invoice</p>
+</td>
+<td>
+<p>2,000</p>
+</td>
+<td>
+<p>200</p>
+</td>
+<td>
+<p>GST</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>G1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>January 1, 2020</p>
+</td>
+<td>
+<p>Vendor invoice</p>
+</td>
+<td>
+<p>800</p>
+</td>
+<td>
+<p>80</p>
+</td>
+<td>
+<p>CAPITAL</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>G10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>January 1, 2020</p>
+</td>
+<td>
+<p>Vendor invoice</p>
+</td>
+<td>
+<p>1,400</p>
+</td>
+<td>
+<p>140 (includes a non-deductible amount of 35)</p>
+</td>
+<td>
+<p>NONDEDCAP</p>
+</td>
+<td>
+<p>1015</p>
+</td>
+<td>
+<p>G10, G15</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>January 1, 2020</p>
+</td>
+<td>
+<p>Vendor invoice</p>
+</td>
+<td>
+<p>700</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>CAPFREE</p>
+</td>
+<td>
+<p>1014</p>
+</td>
+<td>
+<p>G10, G14</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>January 1, 2020</p>
+</td>
+<td>
+<p>Customer invoice</p>
+</td>
+<td>
+<p>1,200</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>EXPOTRS</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>G2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>January 1, 2020</p>
+</td>
+<td>
+<p>Customer invoice</p>
+</td>
+<td>
+<p>500</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>FREE</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>G3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>January 1, 2020</p>
+</td>
+<td>
+<p>Customer invoice</p>
+</td>
+<td>
+<p>300</p>
+</td>
+<td>
+<p>30</p>
+</td>
+<td>
+<p>LUX</p>
+</td>
+<td>
+<p>201</p>
+</td>
+<td>
+<p>1E</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 6. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
 7. Select **New** , and create the following line.
 
-| **Settlement period** | **From date** | **To date** | **Document identification number** |
-| --- | --- | --- | --- |
-| ND | 1/1/2020 | 3/31/2020 | BAS1 |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Settlement period</strong></p>
+</td>
+<td>
+<p><strong>From date</strong></p>
+</td>
+<td>
+<p><strong>To date</strong></p>
+</td>
+<td>
+<p><strong>Document identification number</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ND</p>
+</td>
+<td>
+<p>1/1/2020</p>
+</td>
+<td>
+<p>3/31/2020</p>
+</td>
+<td>
+<p>BAS1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 8. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 9. In the **Australian BAS** dialog box, set the following values:
@@ -1675,37 +2119,298 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 11. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **No**.
 12. Select **OK** , and review the following data in the printed form.
 
-| **Field** | **Description** | **Value** |
-| --- | --- | --- |
-| **GST** |
-| G1 | Total sales and income and other supplies | 3,900 (= 2,000 + 200 + 1,200 + 500) |
-| G2 | Exports | 1,200 |
-| G3 | Other GST-free supplies | 500 |
-| G5 | Total GST-free and input taxed supplies | 1,700 (= 1,200 + 500) |
-| G6 | Total taxable supplies | 2,200 (= 3,900 – 1,700) |
-| G8 | Total taxable supplies after adjustments | 2,200 |
-| G9 | GST on sales | 200 |
-| G10 | Capital acquisitions | 3,120 (= 800 + 80 + 700 + 1,400 + 140) |
-| G12 | Total acquisitions | 3,120 |
-| G14 | Acquisitions with no GST in price | 700 |
-| G15 | Total of estimated private use of acquisitions and non-income tax deductible acquisitions | 385 (= [1,400 + 140] × 25%) |
-| G16 | Total of non-creditable acquisitions | 1,085 (= 700 + 385) |
-| G17 | Total of creditable acquisitions | 2,035 (= 3,120 – 1,085) |
-| G19 | Total of creditable acquisitions after adjustments | 2,035 |
-| G20 | GST on purchases | 185 (= 80 + [140 × 75%]) |
-| **Totals** |
-| 1A | Goods and services tax payable | 200 |
-| 1B | Credits for goods and services tax paid | 185 |
-| 1E | Luxury car tax payable | 30 |
-| 2A | Total amounts owed to the ATO | 230 (= 200 + 30) |
-| 2B | Total amounts owed by the ATO | 185 |
-| 3 | GST net amount | 45 (= 230 – 185) |
-| 8A | Total amounts owed to the ATO | 230 |
-| 8B | Total amounts owed by the ATO | 185 |
-| 9 | Net amount for the statement | 45 (= 230 – 185) |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+<td>
+<p><strong>Value</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><strong>GST</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G1</p>
+</td>
+<td>
+<p>Total sales and income and other supplies</p>
+</td>
+<td>
+<p>3,900 (= 2,000 + 200 + 1,200 + 500)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G2</p>
+</td>
+<td>
+<p>Exports</p>
+</td>
+<td>
+<p>1,200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G3</p>
+</td>
+<td>
+<p>Other GST-free supplies</p>
+</td>
+<td>
+<p>500</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G5</p>
+</td>
+<td>
+<p>Total GST-free and input taxed supplies</p>
+</td>
+<td>
+<p>1,700 (= 1,200 + 500)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G6</p>
+</td>
+<td>
+<p>Total taxable supplies</p>
+</td>
+<td>
+<p>2,200 (= 3,900 &ndash; 1,700)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G8</p>
+</td>
+<td>
+<p>Total taxable supplies after adjustments</p>
+</td>
+<td>
+<p>2,200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G9</p>
+</td>
+<td>
+<p>GST on sales</p>
+</td>
+<td>
+<p>200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G10</p>
+</td>
+<td>
+<p>Capital acquisitions</p>
+</td>
+<td>
+<p>3,120 (= 800 + 80 + 700 + 1,400 + 140)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G12</p>
+</td>
+<td>
+<p>Total acquisitions</p>
+</td>
+<td>
+<p>3,120</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G14</p>
+</td>
+<td>
+<p>Acquisitions with no GST in price</p>
+</td>
+<td>
+<p>700</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G15</p>
+</td>
+<td>
+<p>Total of estimated private use of acquisitions and non-income tax deductible acquisitions</p>
+</td>
+<td>
+<p>385 (= [1,400 + 140] &times; 25%)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G16</p>
+</td>
+<td>
+<p>Total of non-creditable acquisitions</p>
+</td>
+<td>
+<p>1,085 (= 700 + 385)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G17</p>
+</td>
+<td>
+<p>Total of creditable acquisitions</p>
+</td>
+<td>
+<p>2,035 (= 3,120 &ndash; 1,085)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G19</p>
+</td>
+<td>
+<p>Total of creditable acquisitions after adjustments</p>
+</td>
+<td>
+<p>2,035</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>G20</p>
+</td>
+<td>
+<p>GST on purchases</p>
+</td>
+<td>
+<p>185 (= 80 + [140 &times; 75%])</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><strong>Totals</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1A</p>
+</td>
+<td>
+<p>Goods and services tax payable</p>
+</td>
+<td>
+<p>200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1B</p>
+</td>
+<td>
+<p>Credits for goods and services tax paid</p>
+</td>
+<td>
+<p>185</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1E</p>
+</td>
+<td>
+<p>Luxury car tax payable</p>
+</td>
+<td>
+<p>30</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2A</p>
+</td>
+<td>
+<p>Total amounts owed to the ATO</p>
+</td>
+<td>
+<p>230 (= 200 + 30)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2B</p>
+</td>
+<td>
+<p>Total amounts owed by the ATO</p>
+</td>
+<td>
+<p>185</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>GST net amount</p>
+</td>
+<td>
+<p>45 (= 230 &ndash; 185)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8A</p>
+</td>
+<td>
+<p>Total amounts owed to the ATO</p>
+</td>
+<td>
+<p>230</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8B</p>
+</td>
+<td>
+<p>Total amounts owed by the ATO</p>
+</td>
+<td>
+<p>185</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>9</p>
+</td>
+<td>
+<p>Net amount for the statement</p>
+</td>
+<td>
+<p>45 (= 230 &ndash; 185)</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 13. Create an XML file that contains the following information.
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <DATA>
         <field ID="fA1">BAS1</field>
@@ -1715,7 +2420,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
     <FIELD_LIST>
     </FIELD_LIST>
 </DATA>
-
+```
 
 14. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 15. In the **Australian BAS** dialog box, set the following values:
@@ -1728,7 +2433,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 17. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **Yes** , and then select **OK**.
 18. Browse to the XML file that you created in step 13 to generate the printed form and XML file.
 19. Select **OK** , and review the following data in the XML file.
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <DATA>
         <field ID="fA1">BAS1</field>
@@ -1738,23 +2443,58 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
     <FIELD_LIST>
     <FIELD ID="fG10"><VALUE>3120</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG1"><VALUE>3900</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="f1E"><VALUE>30</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG2"><VALUE>1200</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG3"><VALUE>500</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG9"><VALUE>200</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG14"><VALUE>700</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG15"><VALUE>385</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG20"><VALUE>185</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD></FIELD_LIST>
 </DATA>
-
+```
 
 ## Generate a BAS statement with manual transactions
 
 1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
 2. Select **New** , and create the following line.
 
-| **Reason code** | **Description** |
-| --- | --- |
-| 21 | Change in investments |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Reason code</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>21</p>
+</td>
+<td>
+<p>Change in investments</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 3. Go to **Tax > Setup > Sales tax > BAS fringe benefit reason codes**.
 4. Select **New** , and create the following line.
 
-| **Reason code** | **Description** |
-| --- | --- |
-| 22 | Current business structure not continuing |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Reason code</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>22</p>
+</td>
+<td>
+<p>Current business structure not continuing</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 5. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
 6. Select **New** , and set the following values:
@@ -1765,32 +2505,186 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 
 7. On the **Cover page** tab, set the following values.
 
-| **Field** | **Value** |
-| --- | --- |
-| 7 Deferred installment | 100 |
-| 7A Deferred GST on imports | 200 |
-| 1G Credit for wholesale sales tax | 300 |
-| 5B Credit from PAYG | 400 |
-| 6B Credit fringe benefits tax | 500 |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Value</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7 Deferred installment</p>
+</td>
+<td>
+<p>100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7A Deferred GST on imports</p>
+</td>
+<td>
+<p>200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1G Credit for wholesale sales tax</p>
+</td>
+<td>
+<p>300</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5B Credit from PAYG</p>
+</td>
+<td>
+<p>400</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6B Credit fringe benefits tax</p>
+</td>
+<td>
+<p>500</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 8. On the **Back cover page** tab, set the following values.
 
-| **Field** | **Value** |
-| --- | --- |
-| W1 Total payroll | 600 |
-| W-2 Withheld from payroll | 700 |
-| W3 Withheld from investment where no TFN | 800 |
-| W4 Withheld from invoices where no ABN | 900 |
-| T1 Installment income | 1,000 |
-| T2 Installment rate | 10 |
-| T3 New varied installment rate | 15 |
-| T4 Reason for variation | 21 |
-| F1 ATO fringe benefit | 1,100 |
-| F2 Estimated total fringe benefits | 1,200 |
-| F3 Varied fringe benefits tax | 1,300 |
-| F4 Reason for variation | 22 |
-| 7C Fuel tax credit over claim | 1,400 |
-| 7D Fuel tax credit | 1,500 |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Value</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>W1 Total payroll</p>
+</td>
+<td>
+<p>600</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>W-2 Withheld from payroll</p>
+</td>
+<td>
+<p>700</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>W3 Withheld from investment where no TFN</p>
+</td>
+<td>
+<p>800</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>W4 Withheld from invoices where no ABN</p>
+</td>
+<td>
+<p>900</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>T1 Installment income</p>
+</td>
+<td>
+<p>1,000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>T2 Installment rate</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>T3 New varied installment rate</p>
+</td>
+<td>
+<p>15</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>T4 Reason for variation</p>
+</td>
+<td>
+<p>21</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>F1 ATO fringe benefit</p>
+</td>
+<td>
+<p>1,100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>F2 Estimated total fringe benefits</p>
+</td>
+<td>
+<p>1,200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>F3 Varied fringe benefits tax</p>
+</td>
+<td>
+<p>1,300</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>F4 Reason for variation</p>
+</td>
+<td>
+<p>22</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7C Fuel tax credit over claim</p>
+</td>
+<td>
+<p>1,400</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7D Fuel tax credit</p>
+</td>
+<td>
+<p>1,500</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 9. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 10. In the **Australian BAS** dialog box, set the following values:
@@ -1804,28 +2698,132 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 12. Go to **Tax > Inquiries and reports > Sales tax inquiries > Sales tax payments**.
 13. Select the required line, select **Voucher** , and review the following data.
 
-| **Description** | **Debit** | **Credit** |
-| --- | --- | --- |
-| 7 Deferred installments | 100 |
- |
-| 7A Deferred GST on imports | 200 |
- |
-| 1G Credit for wholesale sales tax |
- | 300 |
-| 5B Credit from PAYG |
- | 400 |
-| 6B Credit fringe benefits tax |
- | 500 |
-| Pay as you go withholding | 2,400 (= 700 + 800 + 900) |
- |
-| Pay as you go – installment | 150 (= 1,000 × 0.15) |
- |
-| Fringe benefits tax installment | 1,300 |
- |
-| 7C Fuel tax credit over claim | 1,400 |
- |
-| 7D Fuel tax credit |
- | 1,500 |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Description</strong></p>
+</td>
+<td>
+<p><strong>Debit</strong></p>
+</td>
+<td>
+<p><strong>Credit</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7 Deferred installments</p>
+</td>
+<td>
+<p>100</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7A Deferred GST on imports</p>
+</td>
+<td>
+<p>200</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1G Credit for wholesale sales tax</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>300</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5B Credit from PAYG</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>400</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6B Credit fringe benefits tax</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>500</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pay as you go withholding</p>
+</td>
+<td>
+<p>2,400 (= 700 + 800 + 900)</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pay as you go &ndash; installment</p>
+</td>
+<td>
+<p>150 (= 1,000 &times; 0.15)</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fringe benefits tax installment</p>
+</td>
+<td>
+<p>1,300</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7C Fuel tax credit over claim</p>
+</td>
+<td>
+<p>1,400</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7D Fuel tax credit</p>
+</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>1,500</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 > [!Note]
 > Transactions weren&#39;t generated for amounts in fields **W1** , **F1** , and **F2** , because those fields aren&#39;t related to tax.
