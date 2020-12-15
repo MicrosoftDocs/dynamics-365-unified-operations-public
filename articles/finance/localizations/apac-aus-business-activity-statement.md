@@ -49,7 +49,6 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 | **Report layout** | **Reporting code** | **Report text** | **Report setup** | **Field on the BAS report** |
 | --- | --- | --- | --- | --- |
 | **GST** |
-| --- |
 | Default | 1 | G1 Total sales &amp; income and other supplies | Taxable sales and Sales tax payable | G1 |
 | Default | 2 | G2 GST free exports | Tax-free sales or Taxable sales | G2 |
 | Default | 3 | G3 Other GST free supplies | Tax-free sales or Taxable sales | G3 |
