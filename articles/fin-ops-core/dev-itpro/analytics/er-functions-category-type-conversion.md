@@ -44,6 +44,14 @@ Electronic reporting (ER) type conversion functions can be used to convert value
 | [NumberValue](er-functions-conversion-numbervalue.md) | This function returns a *Real* value that is converted from the specified *String* value. During the conversion, the specified decimal and digit grouping separators are considered. |
 | [Value](er-functions-conversion-value.md)             | This function returns a *Real* value that is converted from the specified *String* value. |
 
+## Type conversion functions in the container category
+
+The following table describes the type conversion functions in the [container](er-functions-category-container.md) category.
+
+| Function | Description |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | This function converts the specified input of the *String* type to a data item of the *Container* type. |
+
 ## Type conversion functions in the date and time category
 
 The following table describes the type conversion functions in the [date and time category](er-functions-category-datetime.md).

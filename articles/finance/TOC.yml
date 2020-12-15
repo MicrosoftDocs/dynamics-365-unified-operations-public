@@ -3309,6 +3309,12 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json  
         - name: Functions
           items:
+          - name: Container 
+            items: 
+            - name: Container functions
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/finance/toc.json
+            - name: Base64StringToContainer
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
           - name: Date and time 
             items: 
             - name: Date and time functions
@@ -3531,6 +3537,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
             - name: "Type: Value"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
+            - name: "Container: Base64StringToContainer"
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
             - name: "Date and Time: DateTimeValue"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
             - name: "Date and Time: DateToDateTime"
