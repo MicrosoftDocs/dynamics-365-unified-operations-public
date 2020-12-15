@@ -620,7 +620,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 ## Generate additional BAS report boxes for the settlement period
 
 1. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
-2. Select **New** , and set the following fields.
+2. Select **New**, and set the following fields.
 
 | **Field** | **Description** |
 | --- | --- |
