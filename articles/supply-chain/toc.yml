@@ -1377,6 +1377,8 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Production planning
+          href: master-planning/planning-optimization/production-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
