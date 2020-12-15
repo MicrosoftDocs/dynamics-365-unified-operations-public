@@ -1018,6 +1018,8 @@
           href: general-ledger/tasks/close-fiscal-year.md
         - name: Mass financial period close
           href: general-ledger/tasks/mass-financial-period-close.md
+        - name: FAQ for year-end activities
+          href: general-ledger/faq-year-end-activities.md
       - name: Sales tax
         items:
         - name: Sales tax overview
