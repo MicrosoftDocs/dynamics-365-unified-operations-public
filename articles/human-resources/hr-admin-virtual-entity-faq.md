@@ -49,7 +49,7 @@ Any user of Microsoft Power Platform who tries to access Human Resources data th
 
 ### Where do I find the catalog entity?
 
-The entity catalog is listed on the **Virtual entities** tab of the **Common Data Service (CDS) integration** page in the Human Resources application. All available entities are listed after setup and configuration is completed. For more information, see [Configure Common Data Service virtual entities](./hr-admin-integration-common-data-service-virtual-entities).
+The entity catalog is listed on the **Virtual entities** tab of the **Common Data Service (CDS) integration** page in the Human Resources application. All available entities are listed after setup and configuration is completed. For more information, see [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities).
 
 ### Is there a way to specify a company when I perform data operations on a virtual entity?
 
