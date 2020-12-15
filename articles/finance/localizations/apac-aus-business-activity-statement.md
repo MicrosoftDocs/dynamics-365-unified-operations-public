@@ -726,7 +726,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 </td>
 <td>
 <p>Set this option to <strong>Yes</strong> to post and settle the transactions for GST and create a sales tax payment.</p>
-<p>Before you complete the <em>Post and settle GST</em> procedure, make sure that you set up the BAS reconciliation account as described in the <a href="Set_up_an_additional_bas">Set up an additional BAS reconciliation account</a> section earlier in this topic.</p>
+<p>Before you complete the <em>Post and settle GST</em> procedure, make sure that you set up the BAS reconciliation account as described in the [Set up an additional BAS reconciliation account](#Set_up_an_additional_bas) section earlier in this topic.</p>
 </td>
 </tr>
 </tbody>
