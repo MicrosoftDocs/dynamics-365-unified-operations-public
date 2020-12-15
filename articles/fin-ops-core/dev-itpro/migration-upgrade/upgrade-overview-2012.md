@@ -56,17 +56,9 @@ The following diagram shows the end-to-end upgrade process, and the activities t
 
 The activities in the Analyze phase help you estimate the effort that is required for the upgrade. They also help you prepare a project plan. These activities can be done before you buy Finance and Operations. They will help you make an informed purchase decision by providing a data point about the effort and resources that you will require.
 
-### Sign up for a Lifecycle Services trial or partner project
+### Sign up for a preview subscription
 
-To perform Analyze activities before you purchase Finance and Operations, you need to sign up for a Microsoft Dynamics Lifecycle Services (LCS) trial or partner project. This lets you deploy your own Finance and Operations environments. It also gives you access to the tools in LCS that are used to evaluate your AX 2012 environment and your existing custom code.
-
-If you have an existing LCS project for AX 2012, you must still sign up for an additional LCS project for Finance and Operations.
-
-For information about how to get an LCS trial project for customers, go to https://go.microsoft.com/fwlink/?LinkId=2017742&clcid=0x409.
-
-For information about how to get an LCS partner project, go to https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
-
-Be aware that this differs from a [30-day trial](https://aka.ms/D365OperationTrials). Thirty-day trials provide a deployed instance of Finance and Operations that you can use to explore and evaluate the application. However, the Analyze activities require the full LCS experience and tools.
+To sign up for a preview subscription, see [Sign up for preview subscriptions](../dev-tools/sign-up-preview-subscription.md).
 
 ### Select the upgrade methodology
 In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
