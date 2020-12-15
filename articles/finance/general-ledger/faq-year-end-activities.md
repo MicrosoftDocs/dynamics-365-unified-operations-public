@@ -42,7 +42,7 @@ If the  **Undo previous close** selection is set to **Yes**, the previous year-e
 > [!Note]
 > The closing balance entry is optionally created in the year being closed; only if the GL parameter “Create closing transactions during transfer” = Yes.  The opening balance entry is always created, as this is the beginning balance for the next year. 
  
-## General ledger: Difference between Undo and Delete GL parameter for year-end close
+## General ledger: What is the difference between Undo and Delete GL parameter for year-end close?
 Confusion exists over the difference between the **Undo previous close** (which is in the **Year-end close** dialog) and the **Delete close-of-year transactions during transfer** parameter in General ledger (**General ledger > Period close > Year-end close > Run fiscal close** drop dialog).  
 
 [![ifference between Undo and Delete GL parameter for year-end close](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
@@ -59,7 +59,7 @@ If this option is set to **No**, all closing balance and opening balance entries
 > The closing balance entry is created in the year being closed; only if the **Create closing transactions during transfer** parameter in General ledger is set to **Yes**. The opening balance entry is always created, because this is the beginning balance for the next year. 
 
  
-## General ledger: Performance considerations
+## General ledger: What can be changed to enhance performance of year-end processing? 
 You can make a number of changes to improve performance of the year-end close. We recommend that you evaluate these to consider whether they're appropriate for your organization.  
 
 ### Dimension sets
@@ -86,16 +86,16 @@ Because this feature is considered a breaking change, you'll need to enable it u
  
 [![Year-end close](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
 
-## Accounts payable: 1099 2020 year-end reporting changes
+## Accounts payable: What changes have been made to support 1099 year-end reporting for 2020?
 
 Two new regulatory features have been added for the 2020 1099 year-end changes. The first feature, **Apply changes to 1099-NEC and 1099-MISC forms for 2020**, was released mid-year as a mandatory feature. Its purpose is to ensure that 1099 transactional data for the year 2020 can be tracked for the new 1099-NEC form. This feature added the 1099 fields that are needed to support the new 1099-NEC and updated the 1099-MISC fields. This update also upgraded vendor record data for the 1099 box information. 
 
 The second regulatory feature, **1099 statements updated for 2020 tax law**, contains the following changes.
 
-a.	1099-OID - IRS has converted the form to continuous use.
-   - As such the year’s 3rd and 4th digit must be filled in when printed – use the Reporting year field’s 3rd and 4th digits from the Tax 1099 print options form.
+a.	1099-OID - The IRS has converted the form to continuous use.
+   - As such the reporting year’s 3rd and 4th digit must be filled in when printed – use the **Reporting year** field’s 3rd and 4th digits from **Tax 1099 print options**. 
 
-b.	1099-NEC – A new form for 2020. This records non-employee compensation. 
+b.	1099-NEC – A new form for 2020. This records nonemployee compensation. 
 
 c.	1099-MISC – Due to the creation of Form 1099-NEC, the IRS has revised Form 1099-MISC and rearranged box numbers for reporting certain income.
 Changes in the reporting of income and the form’s box numbers are listed below.
@@ -108,12 +108,12 @@ Changes in the reporting of income and the form’s box numbers are listed below
 
 d.	No changes to 1099-DIV or 1099-INT in 2020.
 
-e.	Electronic filing – The format has changed to accommodate the new NEC form, and the MISC box changes described above. Publication for electronic filing requirements https://www.irs.gov/pub/irs-pdf/p1220.pdf
+e.	Electronic filing – The format has changed to accommodate the new NEC form, and the MISC box changes described above. For specific information on electronic filing requirements, see [IRS Publication 1220](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
 
 ## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn’t tracking 1099 information throughout the year?
 Use the Update 1099 functionality (Accounts payable>Vendors>All vendors>Select a vendor>Vendor tab in ribbon>Update 1099) to go through previously paid invoice transactions to reassign the 1099 data appropriately according to the settings on the Tax 1099 tab on the Vendor form.
 
-Can I run the Update 1099 for all my vendors at once? No, the Update 1099 routine is performed against a single vendor at a time. If this requirement is needed by your organization, please vote for the Idea titled “Batch Process for Update of Vendor's 1099 Data” located here:  https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8
+Can I run the Update 1099 for all my vendors at once? No, the Update 1099 routine is performed against a single vendor at a time. If this requirement is needed by your organization, please vote for the Idea titled [Batch Process for Update of Vendor's 1099 Data](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
 
 ## Accounts payable: 1099 – “Recalculate existing 1099 amounts” versus “Update all” in the Update 1099 utility.
 The **Recalculate existing 1099 amounts** check box will reset the 1099 amount to the total paid values, when used in conjunction with the **Update all** check box. The **Recalculate existing 1099 amounts** check box only comes into play when there are partial 1099 values on the invoice or if it was modified on the Tax 1099 form. For example, assume you have an invoice valued at $1000.00, but the user manually types in a 1099 amount on the invoice of $500.00. When this is paid, $500.00 will be the 1099 amount paid. If you perform the recalculation routine, the system will change the 1099 amount to be 1000, which is the total that was paid.
@@ -133,7 +133,7 @@ Manually created 1099 transactions are not updated with the **Update all** proce
 
 Dynamics 365 Finance doesn’t print the 1096 Annual Summary and Transmittal of U.S. Information Returns form.
 
-## Accounts payable: 1099 – Public sector new feature 
+## Accounts payable: 1099 – Are there any new features that support 1099 reporting for Public sector? 
 A new Public sector feature, named **Update 1099 information by main account**, has been added; you can enable the feature in the **Feature management** workspace. This feature lets you associate the 1099 values for a vendor by the main account in the accounting distribution, rather than the default account on the vendor record.
 
 For more information, see [Set up vendors for 1099 reporting](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
