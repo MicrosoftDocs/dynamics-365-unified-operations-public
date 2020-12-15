@@ -5,7 +5,7 @@ title: Pick line grouping
 description: This topic provides an overview of pick line grouping.
 author: Mirzaab
 manager: tfehr
-ms.date: 12/10/2019
+ms.date: 12/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
