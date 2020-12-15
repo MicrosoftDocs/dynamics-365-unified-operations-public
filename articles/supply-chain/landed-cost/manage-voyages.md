@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Release 10.0.17
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-**Voyage details** , **delivery** , **costing** , and **item/purchase order/transfer order** information is visible from this form. The header section of the form relates to the voyage details and costing information pertaining at a voyage level.
+The **All voyages** page provides voyage details, delivery, costing, and item/purchase-order/transfer-order information. The header section of the page relates to the voyage details and costing information pertaining at a voyage level.
 
 On the **Lines** the shipping containers, folios and items attached to the voyage are visible and available for review. Additionally, the price and quantity of the items on the voyage are visible within the lines section of the voyage form.
 
-The Voyages form is accessed by going to **Landed cost \> Voyages \>All voyages**.
+To open the **All voyages** page, go to **Landed cost \> Voyages \>All voyages**.
 
 Shipping containers and folios can be viewed by selecting the shipping container or folio hyperlink listed on each item line within the lines view of the voyage.
 
