@@ -763,25 +763,18 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **Yes** to generate the E-BAS statement. If you set this option on the **Select a file** page, browse to the XML file that you want to use as a template.
 
 For example, create an XML template file that contains the following information.
+```
+<?xml version="1.0" encoding="UTF-8"?>
 
-\&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?\&gt;
-
-\&lt;DATA\&gt;
-
-\&lt;field ID=&quot;fA1&quot;\&gt;BAS1\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fA3&quot;\&gt;1/1/2020\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fA4&quot;\&gt;31/3/2020\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fMANUAL\_MODE&quot;\&gt;true\&lt;/field\&gt;
-
-\&lt;FIELD\_LIST\&gt;
-
-\&lt;/FIELD\_LIST\&gt;
-
-\&lt;/DATA\&gt;
-
+<DATA>
+        field ID="fA1">BAS1</field>
+        <field ID="fA3">1/1/2020</field>
+        <field ID="fA4">31/3/2020</field>
+        <field ID="fMANUAL_MODE">true</field>
+    <FIELD\_LIST>
+    </FIELD\_LIST>
+</DATA>
+```
 Replace the values in the **fA1** , **fA3** , and **fA4** fields with the document identification number and dates that you require. To use this XML file as a template, browse to it on the **Select a file** page.
 
 > [!Note]
@@ -931,23 +924,16 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 
 13. Create an XML file that contains the following information.
 
-\&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?\&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+        <field ID="fA1">BAS1</field>
+        <field ID="fA3">1/1/2020</field>
+        <field ID="fA4">31/3/2020</field>
+        <field ID="fMANUAL_MODE">true</field>
+    <FIELD_LIST>
+    </FIELD_LIST>
+</DATA>
 
-\&lt;DATA\&gt;
-
-\&lt;field ID=&quot;fA1&quot;\&gt;BAS1\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fA3&quot;\&gt;1/1/2020\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fA4&quot;\&gt;31/3/2020\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fMANUAL\_MODE&quot;\&gt;true\&lt;/field\&gt;
-
-\&lt;FIELD\_LIST\&gt;
-
-\&lt;/FIELD\_LIST\&gt;
-
-\&lt;/DATA\&gt;
 
 14. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 15. In the **Australian BAS** dialog box, set the following values:
@@ -961,23 +947,16 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 18. Browse to the XML file that you created in step 13 to generate the printed form and XML file.
 19. Select **OK** , and review the following data in the XML file.
 
-\&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?\&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+        <field ID="fA1">BAS1</field>
+        <field ID="fA3">1/1/2020</field>
+        <field ID="fA4">31/3/2020</field>
+        <field ID="fMANUAL_MODE">true</field>
+    <FIELD_LIST>
+    <FIELD ID="fG10"><VALUE>3120</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG1"><VALUE>3900</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="f1E"><VALUE>30</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG2"><VALUE>1200</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG3"><VALUE>500</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG9"><VALUE>200</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG14"><VALUE>700</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG15"><VALUE>385</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD><FIELD ID="fG20"><VALUE>185</VALUE><IS_EDITABLE>true</IS_EDITABLE><VISIBILITY>normal</VISIBILITY></FIELD></FIELD_LIST>
+</DATA>
 
-\&lt;DATA\&gt;
-
-\&lt;field ID=&quot;fA1&quot;\&gt;BAS1\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fA3&quot;\&gt;1/1/2020\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fA4&quot;\&gt;31/3/2020\&lt;/field\&gt;
-
-\&lt;field ID=&quot;fMANUAL\_MODE&quot;\&gt;true\&lt;/field\&gt;
-
-\&lt;FIELD\_LIST\&gt;
-
-\&lt;FIELD ID=&quot;fG10&quot;\&gt;\&lt;VALUE\&gt;3120\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;FIELD ID=&quot;fG1&quot;\&gt;\&lt;VALUE\&gt;3900\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;FIELD ID=&quot;f1E&quot;\&gt;\&lt;VALUE\&gt;30\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;FIELD ID=&quot;fG2&quot;\&gt;\&lt;VALUE\&gt;1200\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;FIELD ID=&quot;fG3&quot;\&gt;\&lt;VALUE\&gt;500\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;FIELD ID=&quot;fG9&quot;\&gt;\&lt;VALUE\&gt;200\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;FIELD ID=&quot;fG14&quot;\&gt;\&lt;VALUE\&gt;700\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;FIELD ID=&quot;fG15&quot;\&gt;\&lt;VALUE\&gt;385\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;FIELD ID=&quot;fG20&quot;\&gt;\&lt;VALUE\&gt;185\&lt;/VALUE\&gt;\&lt;IS\_EDITABLE\&gt;true\&lt;/IS\_EDITABLE\&gt;\&lt;VISIBILITY\&gt;normal\&lt;/VISIBILITY\&gt;\&lt;/FIELD\&gt;\&lt;/FIELD\_LIST\&gt;
-
-\&lt;/DATA\&gt;
 
 ## Generate a BAS statement with manual transactions
 
