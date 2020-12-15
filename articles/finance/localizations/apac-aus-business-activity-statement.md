@@ -251,7 +251,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 </td>
 <td>
 <p>G10, G15 Capital acquisitions for private use or with non-deductible tax</p>
-<p><strong>Note:</strong> On the <strong>Sales tax codes</strong> page (<strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax codes</strong>), enter a value in the <strong>Non deductible</strong> field for the sales tax code that uses this reporting code in the setup.</p>
+<p><strong>Note:</strong> On the <strong>Sales tax codes</strong> page (<strong>Tax > Indirect taxes > Sales tax > Sales tax codes</strong>), enter a value in the <strong>Non deductible</strong> field for the sales tax code that uses this reporting code in the setup.</p>
 </td>
 <td>
 <p>Taxable purchases and Sales tax receivable</p>
@@ -582,7 +582,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 
 # Set up the BAS
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration \&gt; Organizations \&gt; Legal entities**.
+1. In Microsoft Dynamics 365 Finance, go to **Organization administration > Organizations > Legal entities**.
 2. On the **Legal entities** page, on the **Tax registration** FastTab, in the **Tax registration number** field, enter the tax registration number.
 3. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the Shared asset library, download the latest versions of the Electronic reporting (ER) configurations for the following report format:
 
@@ -603,14 +603,14 @@ You can also set up the following reporting codes. However, we recommend that yo
 
 ## Set up PAYG reason codes
 
-1. Go to **Tax \&gt; Setup \&gt; Sales tax \&gt; BAS PAYG reason codes**.
+1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
 2. Select **New** , and set the **Reason code** and **Description** fields.
 
 For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/Rates/PAYG-instalment-variations---reason-codes/).
 
 ## Set up fringe benefit reason codes
 
-1. Go to **Tax \&gt; Setup \&gt; Sales tax \&gt; BAS fringe benefit reason codes**.
+1. Go to **Tax > Setup > Sales tax > BAS fringe benefit reason codes**.
 2. Select **New** , and set the **Reason code** and **Description** fields.
 
 For a list of fringe benefit reason codes, see [FBT reason codes](https://www.ato.gov.au/Business/Business-activity-statements-(BAS)/In-detail/Instructions/FBT---how-to-complete-your-activity-statement-labels/?page=1#F4Reasoncodeforvariation).
@@ -619,7 +619,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 
 ## Generate additional BAS report boxes for the settlement period
 
-1. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Additional BAS report boxes**.
+1. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
 2. Select **New** , and set the following fields.
 
 | **Field** | **Description** |
@@ -667,7 +667,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 
 ## Generate and preview a BAS report, and settle and post GST
 
-1. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
+1. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 2. In the **Australian BAS** dialog box, set the following fields.
 
 | **Field** | **Description** |
@@ -756,7 +756,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 | 7D | Fuel tax credit | The value from the **Additional BAS report boxes** page | Not used |
 | 8A | Total amounts you owe the ATO | 2A + 4 + 5A + 6A + 7 + 7A | 8A |
 | 8B | Total amounts the ATO owes you | 2B + 5B + 6B | 8B |
-| 9 | Net amount for the statement | 8A – 8B, if 8A \&gt; 8B.8B – 8A, if 8B \&gt; 8A. | 9 |
+| 9 | Net amount for the statement | 8A – 8B, if 8A > 8B.8B – 8A, if 8B > 8A. | 9 |
 
 ### Generate an E-BAS XML file
 
@@ -787,21 +787,21 @@ Replace the values in the **fA1** , **fA3** , and **fA4** fields with the docume
 > [!Note]
 > If you&#39;ve previously selected the **Generate E-BAS** option, you don&#39;t have to generate the XML file again the next time that you run the procedure. Instead, follow these steps:
 
-1. Go to **Settings \&gt; User options**.
+1. Go to **Settings > User options**.
 2. Select **Usage data**.
 3. On the **General** tab, select **Reset**.
 
 ## Print the BAS report from Sales tax payments page
 
-1. Go to **Tax \&gt; Inquiries and reports \&gt; Sales tax inquiries \&gt; Sales tax payments**.
+1. Go to **Tax > Inquiries and reports > Sales tax inquiries > Sales tax payments**.
 2. Select the required line.
 3. Select **Print Australian BAS**.
 
 ## Print the BAS report from the Additional BAS report boxes page
 
-1. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Additional BAS report boxes**.
+1. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
 2. Select the required line.
-3. Select **Additional BAS report boxes \&gt; Print Australian BAS**.
+3. Select **Additional BAS report boxes > Print Australian BAS**.
 
 # Example
 
@@ -809,9 +809,9 @@ Replace the values in the **fA1** , **fA3** , and **fA4** fields with the docume
 
 The following example shows how you can set up sales tax codes and sales tax reporting codes, post transactions, and generate and print the BAS report. It uses the USMF legal entity.
 
-1. Go to **Organization administration \&gt; Organizations \&gt; Legal entities**.
+1. Go to **Organization administration > Organizations > Legal entities**.
 2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **AU89434123400**.
-3. Go to **Tax \&gt; Indirect taxes \&gt; Sales tax \&gt; Sales tax codes** , and set up the following sales tax codes.
+3. Go to **Tax > Indirect taxes > Sales tax > Sales tax codes** , and set up the following sales tax codes.
 
 | **Sales tax code** | **Percentage** | **Description** |
 | --- | --- | --- |
@@ -870,7 +870,7 @@ The following example shows how you can set up sales tax codes and sales tax rep
 
 5. Post the following transactions.
 
-For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \&gt; All free text invoices**. For vendor invoices, go to **Accounts payable \&gt; Invoices \&gt; Invoice journal**.
+For example, for customer invoices, go to **Accounts receivable > Invoices > All free text invoices**. For vendor invoices, go to **Accounts payable > Invoices > Invoice journal**.
 
 | **Date** | **Transaction type** | **Amount net** | **VAT amount** | **Sales tax code** | **Amount is expected on the reporting code** | **Amount is expected on BAS report in the field** |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -882,14 +882,14 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 | January 1, 2020 | Customer invoice | 500 | 0 | FREE | 3 | G3 |
 | January 1, 2020 | Customer invoice | 300 | 30 | LUX | 201 | 1E |
 
-6. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Additional BAS report boxes**.
+6. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
 7. Select **New** , and create the following line.
 
 | **Settlement period** | **From date** | **To date** | **Document identification number** |
 | --- | --- | --- | --- |
 | ND | 1/1/2020 | 3/31/2020 | BAS1 |
 
-8. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
+8. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 9. In the **Australian BAS** dialog box, set the following values:
 
 - **Settlement period:** ND
@@ -949,7 +949,7 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 
 \&lt;/DATA\&gt;
 
-14. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
+14. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 15. In the **Australian BAS** dialog box, set the following values:
 
 - **Settlement period:** ND
@@ -981,21 +981,21 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 
 ## Generate a BAS statement with manual transactions
 
-1. Go to **Tax \&gt; Setup \&gt; Sales tax \&gt; BAS PAYG reason codes**.
+1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
 2. Select **New** , and create the following line.
 
 | **Reason code** | **Description** |
 | --- | --- |
 | 21 | Change in investments |
 
-3. Go to **Tax \&gt; Setup \&gt; Sales tax \&gt; BAS fringe benefit reason codes**.
+3. Go to **Tax > Setup > Sales tax > BAS fringe benefit reason codes**.
 4. Select **New** , and create the following line.
 
 | **Reason code** | **Description** |
 | --- | --- |
 | 22 | Current business structure not continuing |
 
-5. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Additional BAS report boxes**.
+5. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
 6. Select **New** , and set the following values:
 
 - **Settlement period:** ND
@@ -1031,7 +1031,7 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 | 7C Fuel tax credit over claim | 1,400 |
 | 7D Fuel tax credit | 1,500 |
 
-9. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
+9. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 10. In the **Australian BAS** dialog box, set the following values:
 
 - **Settlement period:** ND
@@ -1040,7 +1040,7 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 - **Post and settle GST:** Yes
 
 11. Select **OK**.
-12. Go to **Tax \&gt; Inquiries and reports \&gt; Sales tax inquiries \&gt; Sales tax payments**.
+12. Go to **Tax > Inquiries and reports > Sales tax inquiries > Sales tax payments**.
 13. Select the required line, select **Voucher** , and review the following data.
 
 | **Description** | **Debit** | **Credit** |
