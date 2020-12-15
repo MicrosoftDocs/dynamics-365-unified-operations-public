@@ -5,7 +5,7 @@ title: Create an organization hierarchy
 description: Use the following procedure to create an organizational hierarchy. 
 author: sericks007
 manager: AnnBe 
-ms.date: 07/01/2019
+ms.date: 12/15/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -42,7 +42,7 @@ The demo data company used to create this procedure is USMF.
 3. In the **Name** field, type a value.
 4. In the **Purpose** section, click **Assign purpose**.
 5. In the list, find and select the desired record. Select a purpose to assign to your organization hierarchy.  
-6. In the **Assigned hierarchies** sectiom, click **Add**.
+6. In the **Assigned hierarchies** section, click **Add**.
 7. In the list, mark the selected row. Find the hierarchy you just created.  
 8. Click **OK**.
 
