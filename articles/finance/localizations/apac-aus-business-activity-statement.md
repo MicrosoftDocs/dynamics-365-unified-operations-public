@@ -3,7 +3,7 @@
 
 title: Business activity statement 
 description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
-author: anasyash
+author: anasyashhttps://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/apac-aus-business-activity-statement.md
 manager: tfehr
 ms.date: 12/15/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 12641
 ms.search.region: Australia
 # ms.search.industry: 
-ms.author: 
+ms.author: anasyash
 ms.search.validFrom: 
 ms.dyn365.ops.version:
 
@@ -251,7 +251,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 </td>
 <td>
 <p>G10, G15 Capital acquisitions for private use or with non-deductible tax</p>
-<p><strong>Note:</strong> On the <strong>Sales tax codes</strong> page (<strong>Tax > Indirect taxes > Sales tax > Sales tax codes</strong>), enter a value in the <strong>Non deductible</strong> field for the sales tax code that uses this reporting code in the setup.</p>
+<p><strong>Note:</strong> On the <strong>Sales tax codes</strong> page (<strong>Tax > Indirect taxes > Sales tax > Sales tax codes</strong>), enter a value in the <strong>Non-deductible</strong> field for the sales tax code that uses this reporting code in the setup.</p>
 </td>
 <td>
 <p>Taxable purchases and Sales tax receivable</p>
@@ -357,7 +357,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>700</p>
 </td>
 <td>
-<p>7 Deferred company/ fund instalment</p>
+<p>7 Deferred company/ fund installment</p>
 </td>
 <td>
 <p>7</p>
@@ -404,7 +404,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>501</p>
 </td>
 <td>
-<p>5A Pay As You Go Instalment</p>
+<p>5A Pay As You Go Installment</p>
 </td>
 <td>
 <p>5A</p>
@@ -418,7 +418,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>502</p>
 </td>
 <td>
-<p>5B Credit arising from reduced Pay As You Go instalment</p>
+<p>5B Credit arising from reduced Pay As You Go installment</p>
 </td>
 <td>
 <p>5B</p>
@@ -432,7 +432,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>31</p>
 </td>
 <td>
-<p>W1 Total of salary, wages and other payments</p>
+<p>W1 Total of salary, wages, and other payments</p>
 </td>
 <td>
 <p>W1</p>
@@ -446,7 +446,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>32</p>
 </td>
 <td>
-<p>W2 Amounts withheld from salary, wages and other payments</p>
+<p>W2 Amounts withheld from salary, wages, and other payments</p>
 </td>
 <td>
 <p>W2</p>
@@ -488,7 +488,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>51</p>
 </td>
 <td>
-<p>T1 Instalment income</p>
+<p>T1 Installment income</p>
 </td>
 <td>
 <p>T1</p>
@@ -507,7 +507,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>601</p>
 </td>
 <td>
-<p>6A Fringe benefit tax instalment</p>
+<p>6A Fringe benefit tax installment</p>
 </td>
 <td>
 <p>6A</p>
@@ -521,7 +521,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>602</p>
 </td>
 <td>
-<p>6B Credit arising from fringe benefits tax instalment</p>
+<p>6B Credit arising from fringe benefits tax installment</p>
 </td>
 <td>
 <p>6B</p>
@@ -535,7 +535,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>61</p>
 </td>
 <td>
-<p>F1 ATO-calculated fringe benefits tax instalment</p>
+<p>F1 ATO-calculated fringe benefits tax installment</p>
 </td>
 <td>
 <p>F1</p>
@@ -563,7 +563,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>63</p>
 </td>
 <td>
-<p>F3 Varied fringe benefits tax instalment</p>
+<p>F3 Varied fringe benefits tax installment</p>
 </td>
 <td>
 <p>F3</p>
@@ -606,7 +606,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
 2. Select **New**, and set the **Reason code** and **Description** fields.
 
-For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/Rates/PAYG-instalment-variations---reason-codes/).
+For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/Rates/PAYG-installment-variations---reason-codes/).
 
 ### <a name= "_Set_up_fringe"></a>Set up fringe benefit reason codes
 
@@ -631,7 +631,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
     | Date | The date when tax is settled. This field is automatically set when you create a sales tax payment. |
     | Voucher | The voucher number of the sales tax payment. This field is automatically set when you create a sales tax payment. |
 
-    ![](media/apac-aus-bas-additional-boxes.png)
+    ![Additional BAS report boxes page](media/apac-aus-bas-additional-boxes.png)
 
     > [!NOTE]
     > When you create a sales tax payment, the date and voucher are filled in for the period, and you can no longer edit the line. If a line on the **Additional BAS report boxes** page wasn&#39;t manually created, it&#39;s automatically created when the _Sales tax payment_ or _Settle and post GST_ procedure is run.
@@ -1054,7 +1054,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>W1</p>
 </td>
 <td style="width: 278px;">
-<p>Total of salary, wages and other payments</p>
+<p>Total of salary, wages, and other payments</p>
 </td>
 <td style="width: 551px;">
 <p>[31] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1110,7 +1110,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>T1</p>
 </td>
 <td style="width: 278px;">
-<p>Instalment income</p>
+<p>Installment income</p>
 </td>
 <td style="width: 551px;">
 <p>[51] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1124,7 +1124,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>T2</p>
 </td>
 <td style="width: 278px;">
-<p>Commissioner's instalment rate</p>
+<p>Commissioner's installment rate</p>
 </td>
 <td style="width: 551px;">
 <p>[52] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1138,7 +1138,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>T3</p>
 </td>
 <td style="width: 278px;">
-<p>New varied instalment rate</p>
+<p>New varied installment rate</p>
 </td>
 <td style="width: 551px;">
 <p>[53] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1171,7 +1171,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>F1</p>
 </td>
 <td style="width: 278px;">
-<p>ATO-calculated fringe benefits tax instalment</p>
+<p>ATO-calculated fringe benefits tax installment</p>
 </td>
 <td style="width: 551px;">
 <p>[61] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1199,7 +1199,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>F3</p>
 </td>
 <td style="width: 278px;">
-<p>Varied fringe benefits tax instalment</p>
+<p>Varied fringe benefits tax installment</p>
 </td>
 <td style="width: 551px;">
 <p>[63] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1260,7 +1260,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>1C</p>
 </td>
 <td style="width: 278px;">
-<p>Wine equalisation tax payable</p>
+<p>Wine equalization tax payable</p>
 </td>
 <td style="width: 551px;">
 <p>[101] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1274,7 +1274,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>1D</p>
 </td>
 <td style="width: 278px;">
-<p>Wine equalisation tax refundable</p>
+<p>Wine equalization tax refundable</p>
 </td>
 <td style="width: 551px;">
 <p>[102] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1386,7 +1386,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>5A</p>
 </td>
 <td style="width: 278px;">
-<p>PAYG instalment</p>
+<p>PAYG installment</p>
 </td>
 <td style="width: 551px;">
 <p>T1 &times; T3 &divide; 100, if T3 is entered. Otherwise, T1 &times; T2 &divide; 100.</p>
@@ -1400,7 +1400,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>5B</p>
 </td>
 <td style="width: 278px;">
-<p>Credit arising from reduced PAYG instalments</p>
+<p>Credit arising from reduced PAYG installments</p>
 </td>
 <td style="width: 551px;">
 <p>[502] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1414,7 +1414,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>6A</p>
 </td>
 <td style="width: 278px;">
-<p>FBT instalment</p>
+<p>FBT installment</p>
 </td>
 <td style="width: 551px;">
 <p>F3, if a value is entered for that field. Otherwise, F1.</p>
@@ -1428,7 +1428,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>6B</p>
 </td>
 <td style="width: 278px;">
-<p>Credit arising from reduced FBT instalments</p>
+<p>Credit arising from reduced FBT installments</p>
 </td>
 <td style="width: 551px;">
 <p>[602] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
@@ -1586,7 +1586,7 @@ The following example shows how you can set up sales tax codes and sales tax rep
 
 1. Go to **Organization administration > Organizations > Legal entities**.
 2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **AU89434123400**.
-3. Go to **Tax > Indirect taxes > Sales tax > Sales tax codes** , and set up the following sales tax codes.
+3. Go to **Tax > Indirect taxes > Sales tax > Sales tax codes**, and set up the following sales tax codes.
 
 <table>
 <thead>
@@ -2507,7 +2507,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 </table>
 
 5. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
-6. Select **New** , and set the following values:
+6. Select **New**, and set the following values:
 
 - **Settlement period:** ND
 - **From date:** 4/1/2020
