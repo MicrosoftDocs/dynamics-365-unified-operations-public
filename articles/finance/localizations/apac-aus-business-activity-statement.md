@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 12641
 ms.search.region: Australia
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: 
 ms.search.validFrom: 
 ms.dyn365.ops.version:
 
