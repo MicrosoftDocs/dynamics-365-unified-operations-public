@@ -858,9 +858,9 @@
           href: add-cdn-support.md
         - name: Enable location-based store detection
           href: enable-store-detection.md
-          name: E-commerce digital gift cards
+        - name: E-commerce digital gift cards
           href: digital-gift-cards.md
-          name: Browser requirements for Dynamics 365 Commerce sites
+        - name: Browser requirements for Dynamics 365 Commerce sites
           href: browser-requirements.md
       - name: Sample site overview
         items:
