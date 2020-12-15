@@ -712,10 +712,12 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 </td>
 <td>
 <p>Select the version of the sales tax report to settle:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Original</strong> &ndash; Include sales tax transactions of the first settlement calculation that was posted for the period.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Corrections</strong> &ndash; Include sales tax transactions of subsequent settlement calculations for the period.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Latest corrections</strong> &ndash; Include sales tax transactions of the last settlement calculation that was posted for the period.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Total list</strong> &ndash; Include all sales transactions for the period. These transactions include original and corrected transactions.</p>
+<ul>
+<li><strong>Original</strong> &ndash; Include sales tax transactions of the first settlement calculation that was posted for the period.</li>
+<li><strong>Corrections</strong> &ndash; Include sales tax transactions of subsequent settlement calculations for the period.</li>
+<li><strong>Latest corrections</strong> &ndash; Include sales tax transactions of the last settlement calculation that was posted for the period.</li>
+<li><strong>Total list</strong> &ndash; Include all sales transactions for the period. These transactions include original and corrected transactions.</li>
+</ul>
 </td>
 </tr>
 <tr>
