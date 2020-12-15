@@ -633,7 +633,8 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 
 ![](RackMultipart20201215-4-1fxazi9_html_fff743ec49718145.png)
 
-**Note** : When you create a sales tax payment, the date and voucher are filled in for the period, and you can no longer edit the line. If a line on the **Additional BAS report boxes** page wasn&#39;t manually created, it&#39;s automatically created when the _Sales tax payment_ or _Settle and post GST_ procedure is run.
+> [!NOTE]
+> When you create a sales tax payment, the date and voucher are filled in for the period, and you can no longer edit the line. If a line on the **Additional BAS report boxes** page wasn&#39;t manually created, it&#39;s automatically created when the _Sales tax payment_ or _Settle and post GST_ procedure is run.
 
 1. On the **Cover page** tab, manually set the following fields if you didn&#39;t post tax transactions on the corresponding reporting codes.
 
