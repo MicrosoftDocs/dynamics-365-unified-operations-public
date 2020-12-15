@@ -743,66 +743,802 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 > [!Note]
 > In the following table, in the formulas in the &quot;Calculation&quot; column, brackets ([…]) enclose the values of reporting codes.
 
-| **Field** | **Description** | **Calculation** | **Reference to the box in official BAS report** |
-| --- | --- | --- | --- |
-| **GST** |
-| G1 | Total sales and income and other supplies | [1] + G2 + G3 + G4 | G1 |
-| G2 | Exports | [2] | G2 |
-| G3 | Other GST-free supplies | [3] | G3 |
-| G4 | Input taxed sales and income and other supplies | [4] | This data isn&#39;t printed. It&#39;s used to calculate G9. |
-| G5 | Total GST-free and input taxed supplies | G2 + G3 + G4 | This data isn&#39;t printed. It&#39;s used to calculate G9. |
-| G6 | Total taxable supplies | G1 – G5 | This data isn&#39;t printed. It&#39;s used to calculate G9. |
-| G7 | Adjustments | [7] or the manual calculation on the **Additional BAS report boxes** page. For more information, see the [Generate additional BAS report boxes for the settlement period](#_Generate_additional_BAS) section earlier in this topic. | This data isn&#39;t printed. It&#39;s used to calculate G9. |
-| G8 | Total taxable supplies after adjustments | G6 + G7 | This data isn&#39;t printed. It&#39;s used to calculate G9. |
-| G9 | GST on sales | The sales tax amount that is included in G1 + [9] | This data isn&#39;t printed. It&#39;s used to calculate 1A. |
-| G10 | Capital acquisitions | [10] + [1013] + [1014] + [1015] | G10 |
-| G11 | Other acquisitions | [11] + G13 + G14 + G15 | G11 |
-| G12 | Total acquisitions | G10 + G11 | This data isn&#39;t printed. It&#39;s used to calculate G20. |
-| G13 | Acquisitions for making input taxed sales and income and other supplies | [13] + [1013] | This data isn&#39;t printed. It&#39;s used to calculate G20. |
-| G14 | Acquisitions with no GST in price | [14] + [1014] | This data isn&#39;t printed. It&#39;s used to calculate G20. |
-| G15 | Total of estimated private use of acquisitions and non-income tax deductible acquisitions | [15] + [1015] | This data isn&#39;t printed. It&#39;s used to calculate G20. |
-| G16 | Total of non-creditable acquisitions | G13 + G14 + G15 | This data isn&#39;t printed. It&#39;s used to calculate G20. |
-| G17 | Total of creditable acquisitions | G12 – G16 | This data isn&#39;t printed. It&#39;s used to calculate G20. |
-| G18 | Adjustments | [18] | This data isn&#39;t printed. It&#39;s used to calculate G20. |
-| G19 | Total of creditable acquisitions after adjustments | G17 + G18 | This data isn&#39;t printed. It&#39;s used to calculate G20. |
-| G20 | GST on purchases | The sales tax amount that is included in G12 | This data isn&#39;t printed. It&#39;s used in 1B. |
-| **PAYG** |
-| W1 | Total of salary, wages and other payments | [31] or the manual calculation on the **Additional BAS report boxes** page | W1 |
-| W2 | Amounts withheld from salary, wages and other payments | [32] or the manual calculation on the **Additional BAS report boxes** page | W2 |
-| W3 | Amounts withheld from investments distributions where no tax file number (TFN) is quoted. | [33] or the manual calculation on the **Additional BAS report boxes** page | W3 |
-| W4 | Amounts withheld from payment of invoices where no Australian business number (ABN) is quoted. | [34] or the manual calculation on the **Additional BAS report boxes** page | W4 |
-| T1 | Instalment income | [51] or the manual calculation on the **Additional BAS report boxes** page | T1 |
-| T2 | Commissioner&#39;s instalment rate | [52] or the manual calculation on the **Additional BAS report boxes** page | T2 |
-| T3 | New varied instalment rate | [53] or the manual calculation on the **Additional BAS report boxes** page | T3 |
-| T4 | Reason for variation | The value from the **Additional BAS report boxes** page | T4 |
-| **FBT** |
-| F1 | ATO-calculated fringe benefits tax instalment | [61] or the manual calculation on the **Additional BAS report boxes** page | F1 |
-| F2 | Estimated total fringe benefits tax payable | [62] or the manual calculation on the **Additional BAS report boxes** page | F2 |
-| F3 | Varied fringe benefits tax instalment | [63] or the manual calculation on the **Additional BAS report boxes** page | F3 |
-| F4 | Reason for fringe benefits tax variation | The value from the **Additional BAS report boxes** page | F4 |
-| **Totals** |
-| 1A | Goods and services tax payable | G9 | 1A |
-| 1B | Credits for goods and services tax paid | G20 | 1B |
-| 1C | Wine equalisation tax payable | [101] or the manual calculation on the **Additional BAS report boxes** page | 1C |
-| 1D | Wine equalisation tax refundable | [102] or the manual calculation on the **Additional BAS report boxes** page | 1D |
-| 1E | Luxury car tax payable | [201] or the manual calculation on the **Additional BAS report boxes** page | 1E |
-| 1F | Luxury car tax refundable | [202] or the manual calculation on the **Additional BAS report boxes** page | 1F |
-| 1G | Credit for wholesale sales tax | The value from the **Additional BAS report boxes** page | Not used |
-| 2A | Total amounts you owe the ATO | 1A + 1C + 1E | Not used |
-| 2B | Total amounts the ATO owes you | 1B + 1D + 1F + 1G | Not used |
-| 3 | GST net amount | 2A – 2B | Not used |
-| 4 | PAYG tax withheld | W2 + W3 + W4 + [400] | 4 |
-| 5A | PAYG instalment | T1 × T3 ÷ 100, if T3 is entered. Otherwise, T1 × T2 ÷ 100. | 5A |
-| 5B | Credit arising from reduced PAYG instalments | [502] or the manual calculation on the **Additional BAS report boxes** page | 5B |
-| 6A | FBT instalment | F3, if a value is entered for that field. Otherwise, F1. | 6A |
-| 6B | Credit arising from reduced FBT instalments | [602] or the manual calculation on the **Additional BAS report boxes** page | 6B |
-| 7 | Deferred company or fund installment | [700] or the manual calculation on the **Additional BAS report boxes** page | 7 |
-| 7A | Deferred GST on imports | [701] or the manual calculation on the **Additional BAS report boxes** page | Not used |
-| 7C | Fuel tax credit over claim | The value from the **Additional BAS report boxes** page | Not used |
-| 7D | Fuel tax credit | The value from the **Additional BAS report boxes** page | Not used |
-| 8A | Total amounts you owe the ATO | 2A + 4 + 5A + 6A + 7 + 7A | 8A |
-| 8B | Total amounts the ATO owes you | 2B + 5B + 6B | 8B |
-| 9 | Net amount for the statement | 8A – 8B, if 8A > 8B.8B – 8A, if 8B > 8A. | 9 |
+<table style="width: 1025px;">
+<tbody>
+<tr>
+<td style="width: 30px;">
+<p><strong>Field</strong></p>
+</td>
+<td style="width: 278px;">
+<p><strong>Description</strong></p>
+</td>
+<td style="width: 551px;">
+<p><strong>Calculation</strong></p>
+</td>
+<td style="width: 138px;">
+<p><strong>Reference to the box in official BAS report</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 997px;" colspan="4">
+<p style="text-align: center;"><strong>GST</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G1</p>
+</td>
+<td style="width: 278px;">
+<p>Total sales and income and other supplies</p>
+</td>
+<td style="width: 551px;">
+<p>[1] + G2 + G3 + G4</p>
+</td>
+<td style="width: 138px;">
+<p>G1</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G2</p>
+</td>
+<td style="width: 278px;">
+<p>Exports</p>
+</td>
+<td style="width: 551px;">
+<p>[2]</p>
+</td>
+<td style="width: 138px;">
+<p>G2</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G3</p>
+</td>
+<td style="width: 278px;">
+<p>Other GST-free supplies</p>
+</td>
+<td style="width: 551px;">
+<p>[3]</p>
+</td>
+<td style="width: 138px;">
+<p>G3</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G4</p>
+</td>
+<td style="width: 278px;">
+<p>Input taxed sales and income and other supplies</p>
+</td>
+<td style="width: 551px;">
+<p>[4]</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G9.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G5</p>
+</td>
+<td style="width: 278px;">
+<p>Total GST-free and input taxed supplies</p>
+</td>
+<td style="width: 551px;">
+<p>G2 + G3 + G4</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G9.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G6</p>
+</td>
+<td style="width: 278px;">
+<p>Total taxable supplies</p>
+</td>
+<td style="width: 551px;">
+<p>G1 &ndash; G5</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G9.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G7</p>
+</td>
+<td style="width: 278px;">
+<p>Adjustments</p>
+</td>
+<td style="width: 551px;">
+<p>[7] or the manual calculation on the <strong>Additional BAS report boxes</strong> page. For more information, see the <a href="#_Generate_additional_BAS">Generate additional BAS report boxes for the settlement period</a> section earlier in this topic.</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G9.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G8</p>
+</td>
+<td style="width: 278px;">
+<p>Total taxable supplies after adjustments</p>
+</td>
+<td style="width: 551px;">
+<p>G6 + G7</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G9.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G9</p>
+</td>
+<td style="width: 278px;">
+<p>GST on sales</p>
+</td>
+<td style="width: 551px;">
+<p>The sales tax amount that is included in G1 + [9]</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate 1A.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G10</p>
+</td>
+<td style="width: 278px;">
+<p>Capital acquisitions</p>
+</td>
+<td style="width: 551px;">
+<p>[10] + [1013] + [1014] + [1015]</p>
+</td>
+<td style="width: 138px;">
+<p>G10</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G11</p>
+</td>
+<td style="width: 278px;">
+<p>Other acquisitions</p>
+</td>
+<td style="width: 551px;">
+<p>[11] + G13 + G14 + G15</p>
+</td>
+<td style="width: 138px;">
+<p>G11</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G12</p>
+</td>
+<td style="width: 278px;">
+<p>Total acquisitions</p>
+</td>
+<td style="width: 551px;">
+<p>G10 + G11</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G20.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G13</p>
+</td>
+<td style="width: 278px;">
+<p>Acquisitions for making input taxed sales and income and other supplies</p>
+</td>
+<td style="width: 551px;">
+<p>[13] + [1013]</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G20.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G14</p>
+</td>
+<td style="width: 278px;">
+<p>Acquisitions with no GST in price</p>
+</td>
+<td style="width: 551px;">
+<p>[14] + [1014]</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G20.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G15</p>
+</td>
+<td style="width: 278px;">
+<p>Total of estimated private use of acquisitions and non-income tax deductible acquisitions</p>
+</td>
+<td style="width: 551px;">
+<p>[15] + [1015]</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G20.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G16</p>
+</td>
+<td style="width: 278px;">
+<p>Total of non-creditable acquisitions</p>
+</td>
+<td style="width: 551px;">
+<p>G13 + G14 + G15</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G20.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G17</p>
+</td>
+<td style="width: 278px;">
+<p>Total of creditable acquisitions</p>
+</td>
+<td style="width: 551px;">
+<p>G12 &ndash; G16</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G20.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G18</p>
+</td>
+<td style="width: 278px;">
+<p>Adjustments</p>
+</td>
+<td style="width: 551px;">
+<p>[18]</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G20.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G19</p>
+</td>
+<td style="width: 278px;">
+<p>Total of creditable acquisitions after adjustments</p>
+</td>
+<td style="width: 551px;">
+<p>G17 + G18</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used to calculate G20.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>G20</p>
+</td>
+<td style="width: 278px;">
+<p>GST on purchases</p>
+</td>
+<td style="width: 551px;">
+<p>The sales tax amount that is included in G12</p>
+</td>
+<td style="width: 138px;">
+<p>This data isn't printed. It's used in 1B.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 997px;" colspan="4">
+<p style="text-align: center;"><strong>PAYG</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>W1</p>
+</td>
+<td style="width: 278px;">
+<p>Total of salary, wages and other payments</p>
+</td>
+<td style="width: 551px;">
+<p>[31] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>W1</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>W2</p>
+</td>
+<td style="width: 278px;">
+<p>Amounts withheld from salary, wages and other payments</p>
+</td>
+<td style="width: 551px;">
+<p>[32] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>W2</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>W3</p>
+</td>
+<td style="width: 278px;">
+<p>Amounts withheld from investments distributions where no tax file number (TFN) is quoted.</p>
+</td>
+<td style="width: 551px;">
+<p>[33] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>W3</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>W4</p>
+</td>
+<td style="width: 278px;">
+<p>Amounts withheld from payment of invoices where no Australian business number (ABN) is quoted.</p>
+</td>
+<td style="width: 551px;">
+<p>[34] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>W4</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>T1</p>
+</td>
+<td style="width: 278px;">
+<p>Instalment income</p>
+</td>
+<td style="width: 551px;">
+<p>[51] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>T1</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>T2</p>
+</td>
+<td style="width: 278px;">
+<p>Commissioner's instalment rate</p>
+</td>
+<td style="width: 551px;">
+<p>[52] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>T2</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>T3</p>
+</td>
+<td style="width: 278px;">
+<p>New varied instalment rate</p>
+</td>
+<td style="width: 551px;">
+<p>[53] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>T3</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>T4</p>
+</td>
+<td style="width: 278px;">
+<p>Reason for variation</p>
+</td>
+<td style="width: 551px;">
+<p>The value from the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>T4</p>
+</td>
+</tr>
+<tr>
+<td style="width: 997px;" colspan="4">
+<p style="text-align: center;"><strong>FBT</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>F1</p>
+</td>
+<td style="width: 278px;">
+<p>ATO-calculated fringe benefits tax instalment</p>
+</td>
+<td style="width: 551px;">
+<p>[61] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>F1</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>F2</p>
+</td>
+<td style="width: 278px;">
+<p>Estimated total fringe benefits tax payable</p>
+</td>
+<td style="width: 551px;">
+<p>[62] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>F2</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>F3</p>
+</td>
+<td style="width: 278px;">
+<p>Varied fringe benefits tax instalment</p>
+</td>
+<td style="width: 551px;">
+<p>[63] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>F3</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>F4</p>
+</td>
+<td style="width: 278px;">
+<p>Reason for fringe benefits tax variation</p>
+</td>
+<td style="width: 551px;">
+<p>The value from the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>F4</p>
+</td>
+</tr>
+<tr>
+<td style="width: 997px;" colspan="4">
+<p style="text-align: center;"><strong>Totals</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>1A</p>
+</td>
+<td style="width: 278px;">
+<p>Goods and services tax payable</p>
+</td>
+<td style="width: 551px;">
+<p>G9</p>
+</td>
+<td style="width: 138px;">
+<p>1A</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>1B</p>
+</td>
+<td style="width: 278px;">
+<p>Credits for goods and services tax paid</p>
+</td>
+<td style="width: 551px;">
+<p>G20</p>
+</td>
+<td style="width: 138px;">
+<p>1B</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>1C</p>
+</td>
+<td style="width: 278px;">
+<p>Wine equalisation tax payable</p>
+</td>
+<td style="width: 551px;">
+<p>[101] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>1C</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>1D</p>
+</td>
+<td style="width: 278px;">
+<p>Wine equalisation tax refundable</p>
+</td>
+<td style="width: 551px;">
+<p>[102] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>1D</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>1E</p>
+</td>
+<td style="width: 278px;">
+<p>Luxury car tax payable</p>
+</td>
+<td style="width: 551px;">
+<p>[201] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>1E</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>1F</p>
+</td>
+<td style="width: 278px;">
+<p>Luxury car tax refundable</p>
+</td>
+<td style="width: 551px;">
+<p>[202] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>1F</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>1G</p>
+</td>
+<td style="width: 278px;">
+<p>Credit for wholesale sales tax</p>
+</td>
+<td style="width: 551px;">
+<p>The value from the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>Not used</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>2A</p>
+</td>
+<td style="width: 278px;">
+<p>Total amounts you owe the ATO</p>
+</td>
+<td style="width: 551px;">
+<p>1A + 1C + 1E</p>
+</td>
+<td style="width: 138px;">
+<p>Not used</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>2B</p>
+</td>
+<td style="width: 278px;">
+<p>Total amounts the ATO owes you</p>
+</td>
+<td style="width: 551px;">
+<p>1B + 1D + 1F + 1G</p>
+</td>
+<td style="width: 138px;">
+<p>Not used</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>3</p>
+</td>
+<td style="width: 278px;">
+<p>GST net amount</p>
+</td>
+<td style="width: 551px;">
+<p>2A &ndash; 2B</p>
+</td>
+<td style="width: 138px;">
+<p>Not used</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>4</p>
+</td>
+<td style="width: 278px;">
+<p>PAYG tax withheld</p>
+</td>
+<td style="width: 551px;">
+<p>W2 + W3 + W4 + [400]</p>
+</td>
+<td style="width: 138px;">
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>5A</p>
+</td>
+<td style="width: 278px;">
+<p>PAYG instalment</p>
+</td>
+<td style="width: 551px;">
+<p>T1 &times; T3 &divide; 100, if T3 is entered. Otherwise, T1 &times; T2 &divide; 100.</p>
+</td>
+<td style="width: 138px;">
+<p>5A</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>5B</p>
+</td>
+<td style="width: 278px;">
+<p>Credit arising from reduced PAYG instalments</p>
+</td>
+<td style="width: 551px;">
+<p>[502] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>5B</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>6A</p>
+</td>
+<td style="width: 278px;">
+<p>FBT instalment</p>
+</td>
+<td style="width: 551px;">
+<p>F3, if a value is entered for that field. Otherwise, F1.</p>
+</td>
+<td style="width: 138px;">
+<p>6A</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>6B</p>
+</td>
+<td style="width: 278px;">
+<p>Credit arising from reduced FBT instalments</p>
+</td>
+<td style="width: 551px;">
+<p>[602] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>6B</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>7</p>
+</td>
+<td style="width: 278px;">
+<p>Deferred company or fund installment</p>
+</td>
+<td style="width: 551px;">
+<p>[700] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>7</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>7A</p>
+</td>
+<td style="width: 278px;">
+<p>Deferred GST on imports</p>
+</td>
+<td style="width: 551px;">
+<p>[701] or the manual calculation on the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>Not used</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>7C</p>
+</td>
+<td style="width: 278px;">
+<p>Fuel tax credit over claim</p>
+</td>
+<td style="width: 551px;">
+<p>The value from the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>Not used</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>7D</p>
+</td>
+<td style="width: 278px;">
+<p>Fuel tax credit</p>
+</td>
+<td style="width: 551px;">
+<p>The value from the <strong>Additional BAS report boxes</strong> page</p>
+</td>
+<td style="width: 138px;">
+<p>Not used</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>8A</p>
+</td>
+<td style="width: 278px;">
+<p>Total amounts you owe the ATO</p>
+</td>
+<td style="width: 551px;">
+<p>2A + 4 + 5A + 6A + 7 + 7A</p>
+</td>
+<td style="width: 138px;">
+<p>8A</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>8B</p>
+</td>
+<td style="width: 278px;">
+<p>Total amounts the ATO owes you</p>
+</td>
+<td style="width: 551px;">
+<p>2B + 5B + 6B</p>
+</td>
+<td style="width: 138px;">
+<p>8B</p>
+</td>
+</tr>
+<tr>
+<td style="width: 30px;">
+<p>9</p>
+</td>
+<td style="width: 278px;">
+<p>Net amount for the statement</p>
+</td>
+<td style="width: 551px;">
+<p>8A &ndash; 8B, if 8A &gt; 8B.</p>
+<p>8B &ndash; 8A, if 8B &gt; 8A.</p>
+</td>
+<td style="width: 138px;">
+<p>9</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 ### Generate an E-BAS XML file
 
