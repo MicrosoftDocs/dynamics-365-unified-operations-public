@@ -5,7 +5,7 @@ title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
 manager: AnnBe
-ms.date: 12/11/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -52,11 +52,11 @@ To use Business document management for editing templates in Excel or Word forma
 
 ## Business document availability
 
-A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+For a complete list of all the reports planned for the October 2019 release, see [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-A complete list of all the reports planned for the October 2020 release can be found in [Configurable business documents – Word templates](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+For a complete list of all the reports planned for the October 2020 release, see [Configurable business documents – Word templates](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
-More reports will become available. Special notifications about additional reports will be sent separately. To learn how to review the list of currently available reports, read the section [List of ER configurations that have been released in Finance to support configurable business documents](#list-of-configurations-cbd) below.
+More reports will become available in future releases. Special notifications about additional reports will be sent separately. To learn how to review the list of currently available reports, see the section [List of ER configurations that have been released in Finance to support configurable business documents](#list-of-configurations-cbd) below.
 
 To learn more about this feature, complete the example in this topic.
 
