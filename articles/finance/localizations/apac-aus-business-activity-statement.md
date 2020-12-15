@@ -596,19 +596,19 @@ You can also set up the following reporting codes. However, we recommend that yo
 
 ## Set up additional BAS report boxes
 
-### Set up an additional BAS reconciliation account
+### <a name= "#_Set_up_an"></a>Set up an additional BAS reconciliation account
 
 1. Go to **Tax > Setup > Sales tax > Additional BAS reconciliation account**.
 2. In the **BAS reconciliation account** field, specify the ledger account that will be used in the _Settle and post GST_ procedure to post sales tax amounts that are manually entered.
 
-### Set up PAYG reason codes
+### <a name= "_Set_up_PAYG"></a>Set up PAYG reason codes
 
 1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
 2. Select **New**, and set the **Reason code** and **Description** fields.
 
 For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/Rates/PAYG-instalment-variations---reason-codes/).
 
-### Set up fringe benefit reason codes
+### <a name= "_Set_up_fringe"></a>Set up fringe benefit reason codes
 
 1. Go to **Tax > Setup > Sales tax > BAS fringe benefit reason codes**.
 2. Select **New**, and set the **Reason code** and **Description** fields.
