@@ -590,7 +590,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 
   For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-4. Back in Finance, go to **General ledger \&gt; Ledger setup \&gt; General ledger parameters**.
+4. Back in Finance, go to **General ledger > Ledger setup > General ledger parameters**.
 5. On the **Sales tax** tab, set the **Apply sales tax taxation rules** option to **No**.
 6. In the **Format mapping** field, select the **BAS(AU)** format that you downloaded earlier.
 
@@ -598,7 +598,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 
 ## Set up an additional BAS reconciliation account
 
-1. Go to **Tax \&gt; Setup \&gt; Sales tax \&gt; Additional BAS reconciliation account**.
+1. Go to **Tax > Setup > Sales tax > Additional BAS reconciliation account**.
 2. In the **BAS reconciliation account** field, specify the ledger account that will be used in the _Settle and post GST_ procedure to post sales tax amounts that are manually entered.
 
 ## Set up PAYG reason codes
