@@ -3315,7 +3315,6 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/finance/toc.json
             - name: Base64StringToContainer
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
-          items:
           - name: Date and time 
             items: 
             - name: Date and time functions
