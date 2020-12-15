@@ -604,14 +604,14 @@ You can also set up the following reporting codes. However, we recommend that yo
 ## Set up PAYG reason codes
 
 1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
-2. Select **New** , and set the **Reason code** and **Description** fields.
+2. Select **New**, and set the **Reason code** and **Description** fields.
 
 For a list of PAYG reason codes, see [PAYG reason codes](https://www.ato.gov.au/Rates/PAYG-instalment-variations---reason-codes/).
 
 ## Set up fringe benefit reason codes
 
 1. Go to **Tax > Setup > Sales tax > BAS fringe benefit reason codes**.
-2. Select **New** , and set the **Reason code** and **Description** fields.
+2. Select **New**, and set the **Reason code** and **Description** fields.
 
 For a list of fringe benefit reason codes, see [FBT reason codes](https://www.ato.gov.au/Business/Business-activity-statements-(BAS)/In-detail/Instructions/FBT---how-to-complete-your-activity-statement-labels/?page=1#F4Reasoncodeforvariation).
 
@@ -1557,7 +1557,7 @@ For example, create an XML template file that contains the following information
     </FIELD\_LIST>
 </DATA>
 ```
-Replace the values in the **fA1** , **fA3** , and **fA4** fields with the document identification number and dates that you require. To use this XML file as a template, browse to it on the **Select a file** page.
+Replace the values in the **fA1**, **fA3**, and **fA4** fields with the document identification number and dates that you require. To use this XML file as a template, browse to it on the **Select a file** page.
 
 > [!Note]
 > If you&#39;ve previously selected the **Generate E-BAS** option, you don&#39;t have to generate the XML file again the next time that you run the procedure. Instead, follow these steps:
@@ -2072,7 +2072,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 <p>&nbsp;</p>
 
 6. Go to **Tax > Declarations > Sales tax > Additional BAS report boxes**.
-7. Select **New** , and create the following line.
+7. Select **New**, and create the following line.
 
 <table>
 <tbody>
@@ -2117,7 +2117,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 
 10. Select **OK**.
 11. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **No**.
-12. Select **OK** , and review the following data in the printed form.
+12. Select **OK**, and review the following data in the printed form.
 
 <table>
 <tbody>
@@ -2430,9 +2430,9 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 - **Transaction date:** 1/1/2020
 
 16. Select **OK**.
-17. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **Yes** , and then select **OK**.
+17. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **Yes**, and then select **OK**.
 18. Browse to the XML file that you created in step 13 to generate the printed form and XML file.
-19. Select **OK** , and review the following data in the XML file.
+19. Select **OK**, and review the following data in the XML file.
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <DATA>
@@ -2459,7 +2459,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 ## Generate a BAS statement with manual transactions
 
 1. Go to **Tax > Setup > Sales tax > BAS PAYG reason codes**.
-2. Select **New** , and create the following line.
+2. Select **New**, and create the following line.
 
 <table>
 <tbody>
@@ -2483,7 +2483,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 </table>
 
 3. Go to **Tax > Setup > Sales tax > BAS fringe benefit reason codes**.
-4. Select **New** , and create the following line.
+4. Select **New**, and create the following line.
 
 <table>
 <tbody>
@@ -2705,7 +2705,7 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 
 11. Select **OK**.
 12. Go to **Tax > Inquiries and reports > Sales tax inquiries > Sales tax payments**.
-13. Select the required line, select **Voucher** , and review the following data.
+13. Select the required line, select **Voucher**, and review the following data.
 
 <table>
 <tbody>
@@ -2834,4 +2834,4 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 </table>
 
 > [!Note]
-> Transactions weren&#39;t generated for amounts in fields **W1** , **F1** , and **F2** , because those fields aren&#39;t related to tax.
+> Transactions weren&#39;t generated for amounts in fields **W1**, **F1**, and **F2**, because those fields aren&#39;t related to tax.
