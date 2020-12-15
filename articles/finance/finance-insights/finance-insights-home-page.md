@@ -71,7 +71,7 @@ Changes will be made to Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifec
 - The Active Directory tenant administrator will have to authorize the AI Builder application to access the data lake.
 - The feature will be turned on in Dynamics 365.
 
-Familiarity with the process of creating and managing resources in Azure, Common Data Service, and LCS will be helpful as you complete this process.
+Familiarity with the process of creating and managing resources in Azure, Microsoft Dataverse, and LCS will be helpful as you complete this process.
 
 ## Configure Finance insights
 
