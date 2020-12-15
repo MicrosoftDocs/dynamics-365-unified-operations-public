@@ -588,11 +588,11 @@ You can also set up the following reporting codes. However, we recommend that yo
 
 - BAS(AU)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+  For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-1. Back in Finance, go to **General ledger \&gt; Ledger setup \&gt; General ledger parameters**.
-2. On the **Sales tax** tab, set the **Apply sales tax taxation rules** option to **No**.
-3. In the **Format mapping** field, select the **BAS(AU)** format that you downloaded earlier.
+4. Back in Finance, go to **General ledger \&gt; Ledger setup \&gt; General ledger parameters**.
+5. On the **Sales tax** tab, set the **Apply sales tax taxation rules** option to **No**.
+6. In the **Format mapping** field, select the **BAS(AU)** format that you downloaded earlier.
 
 # Set up additional BAS report boxes
 
