@@ -46,24 +46,290 @@ The BAS includes the following taxation liabilities:
 
 Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes). The following reporting codes are associated with fields on the BAS report.
 
-| **Report layout** | **Reporting code** | **Report text** | **Report setup** | **Field on the BAS report** |
-| --- | --- | --- | --- | --- |
-| **GST** |
-| Default | 1 | G1 Total sales &amp; income and other supplies | Taxable sales and Sales tax payable | G1 |
-| Default | 2 | G2 GST free exports | Tax-free sales or Taxable sales | G2 |
-| Default | 3 | G3 Other GST free supplies | Tax-free sales or Taxable sales | G3 |
-| Default | 4 | G4 Input taxed sales &amp; income and other supplies | Taxable purchases and Sales tax receivable | G4 |
-| Default | 7 | G7 Adjustment payable | Sales tax payable | G7 |
-| Default | 10 | G10 Capital acquisitions | Taxable purchases and Sales tax receivable | G10 |
-| Default | 11 | G11 Other acquisitions | Taxable purchases and Sales tax receivable | G11 |
-| Default | 18 | G18 Adjustment (credit) | Sales tax receivable | G18 |
-| Default | 1013 | G10 and G13 Acquisitions for making input taxed sales, income, and other supplies | Taxable purchases and Sales tax receivable | G10 and G13 |
-| Default | 1014 | G10, G14 Capital acquisitions with no GST in the price | Tax-free purchases or Taxable purchases | G10 and G14 |
-| Default | 1015 | G10, G15 Capital acquisitions for private use or with non-deductible tax **Note:** On the **Sales tax codes** page ( **Tax \&gt; Indirect taxes \&gt; Sales tax \&gt; Sales tax codes** ), enter a value in the **Non deductible** field for the sales tax code that uses this reporting code in the setup. | Taxable purchases and Sales tax receivable | G10 and G15 |
-| Default | 101 | 1C Wine equalization tax payable | Sales tax payable | 1C |
-| Default | 102 | 1D Wine equalization tax refundable | Sales tax receivable | 1D |
-| Default | 201 | 1E Luxury car tax payable | Sales tax payable | 1E |
-| Default | 202 | 1F Luxury car tax refundable | Sales tax receivable | 1F |
+<table>
+<thead>
+<tr>
+<td>
+<p><strong>Report layout</strong></p>
+</td>
+<td>
+<p><strong>Reporting code</strong></p>
+</td>
+<td>
+<p><strong>Report text</strong></p>
+</td>
+<td>
+<p><strong>Report setup</strong></p>
+</td>
+<td>
+<p><strong>Field on the BAS report</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5">
+<p><strong>GST</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>G1 Total sales &amp; income and other supplies</p>
+</td>
+<td>
+<p>Taxable sales and Sales tax payable</p>
+</td>
+<td>
+<p>G1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>G2 GST free exports</p>
+</td>
+<td>
+<p>Tax-free sales or Taxable sales</p>
+</td>
+<td>
+<p>G2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>G3 Other GST free supplies</p>
+</td>
+<td>
+<p>Tax-free sales or Taxable sales</p>
+</td>
+<td>
+<p>G3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>G4 Input taxed sales &amp; income and other supplies</p>
+</td>
+<td>
+<p>Taxable purchases and Sales tax receivable</p>
+</td>
+<td>
+<p>G4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>G7 Adjustment payable</p>
+</td>
+<td>
+<p>Sales tax payable</p>
+</td>
+<td>
+<p>G7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>G10 Capital acquisitions</p>
+</td>
+<td>
+<p>Taxable purchases and Sales tax receivable</p>
+</td>
+<td>
+<p>G10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>11</p>
+</td>
+<td>
+<p>G11 Other acquisitions</p>
+</td>
+<td>
+<p>Taxable purchases and Sales tax receivable</p>
+</td>
+<td>
+<p>G11</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>18</p>
+</td>
+<td>
+<p>G18 Adjustment (credit)</p>
+</td>
+<td>
+<p>Sales tax receivable</p>
+</td>
+<td>
+<p>G18</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>1013</p>
+</td>
+<td>
+<p>G10 and G13 Acquisitions for making input taxed sales, income, and other supplies</p>
+</td>
+<td>
+<p>Taxable purchases and Sales tax receivable</p>
+</td>
+<td>
+<p>G10 and G13</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>1014</p>
+</td>
+<td>
+<p>G10, G14 Capital acquisitions with no GST in the price</p>
+</td>
+<td>
+<p>Tax-free purchases or Taxable purchases</p>
+</td>
+<td>
+<p>G10 and G14</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>1015</p>
+</td>
+<td>
+<p>G10, G15 Capital acquisitions for private use or with non-deductible tax</p>
+<p><strong>Note:</strong> On the <strong>Sales tax codes</strong> page (<strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax codes</strong>), enter a value in the <strong>Non deductible</strong> field for the sales tax code that uses this reporting code in the setup.</p>
+</td>
+<td>
+<p>Taxable purchases and Sales tax receivable</p>
+</td>
+<td>
+<p>G10 and G15</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>101</p>
+</td>
+<td>
+<p>1C Wine equalization tax payable</p>
+</td>
+<td>
+<p>Sales tax payable</p>
+</td>
+<td>
+<p>1C</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>102</p>
+</td>
+<td>
+<p>1D Wine equalization tax refundable</p>
+</td>
+<td>
+<p>Sales tax receivable</p>
+</td>
+<td>
+<p>1D</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>201</p>
+</td>
+<td>
+<p>1E Luxury car tax payable</p>
+</td>
+<td>
+<p>Sales tax payable</p>
+</td>
+<td>
+<p>1E</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default</p>
+</td>
+<td>
+<p>202</p>
+</td>
+<td>
+<p>1F Luxury car tax refundable</p>
+</td>
+<td>
+<p>Sales tax receivable</p>
+</td>
+<td>
+<p>1F</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 You can also set up the following reporting codes, and then make transactions or manually fill in corresponding fields of the BAS report. For more information, see the [Generate additional BAS report boxes for the settlement period](#_Generate_additional_BAS) section later in this topic.
 
