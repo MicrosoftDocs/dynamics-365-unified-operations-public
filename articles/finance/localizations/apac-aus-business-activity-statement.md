@@ -596,7 +596,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 
 ## Set up additional BAS report boxes
 
-### <a name= "#_Set_up_an"></a>Set up an additional BAS reconciliation account
+### <a name= "Set_up_an_additional_bas"></a>Set up an additional BAS reconciliation account
 
 1. Go to **Tax > Setup > Sales tax > Additional BAS reconciliation account**.
 2. In the **BAS reconciliation account** field, specify the ledger account that will be used in the _Settle and post GST_ procedure to post sales tax amounts that are manually entered.
@@ -726,7 +726,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 </td>
 <td>
 <p>Set this option to <strong>Yes</strong> to post and settle the transactions for GST and create a sales tax payment.</p>
-<p>Before you complete the <em>Post and settle GST</em> procedure, make sure that you set up the BAS reconciliation account as described in the <a href="#_Set_up_an">Set up an additional BAS reconciliation account</a> section earlier in this topic.</p>
+<p>Before you complete the <em>Post and settle GST</em> procedure, make sure that you set up the BAS reconciliation account as described in the <a href="Set_up_an_additional_bas">Set up an additional BAS reconciliation account</a> section earlier in this topic.</p>
 </td>
 </tr>
 </tbody>
