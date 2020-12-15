@@ -636,7 +636,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 > [!NOTE]
 > When you create a sales tax payment, the date and voucher are filled in for the period, and you can no longer edit the line. If a line on the **Additional BAS report boxes** page wasn&#39;t manually created, it&#39;s automatically created when the _Sales tax payment_ or _Settle and post GST_ procedure is run.
 
-1. On the **Cover page** tab, manually set the following fields if you didn&#39;t post tax transactions on the corresponding reporting codes.
+3. On the **Cover page** tab, manually set the following fields if you didn&#39;t post tax transactions on the corresponding reporting codes.
 
 | **Field** | **Description** |
 | --- | --- |
@@ -646,7 +646,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 | 5B Credit from PAYG | Enter the credit that is created when PAYG installments are reduced. |
 | 6B Credit fringe benefits tax | Enter the credit that is created when FBT installments are reduced. |
 
-2. On the **Back cover page** tab, manually set the following fields if you didn&#39;t post tax transactions on the corresponding reporting codes.
+4. On the **Back cover page** tab, manually set the following fields if you didn&#39;t post tax transactions on the corresponding reporting codes.
 
 | **Field** | **Description** |
 | --- | --- |
@@ -689,11 +689,13 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 3. Select **OK**.
 4. In the **Print Australian BAS** dialog box, select **OK**.
 
-**Note** : You can find the form for the 2020 official Quarterly BAS report in [BAS C - Quarterly business activity statement](https://www.ato.gov.au/Forms/BAS-C---quarterly-BAS/). For GST, option 1 is supported. For PAYG, option 2 is supported.
+> [!Note] 
+> You can find the form for the 2020 official Quarterly BAS report in [BAS C - Quarterly business activity statement](https://www.ato.gov.au/Forms/BAS-C---quarterly-BAS/). For GST, option 1 is supported. For PAYG, option 2 is supported.
 
-1. On the generated BAS report, you can review the following data. You can then use the data to fill in the official BAS form.
+5. On the generated BAS report, you can review the following data. You can then use the data to fill in the official BAS form.
 
-**Note:** In the following table, in the formulas in the &quot;Calculation&quot; column, brackets ([…]) enclose the values of reporting codes.
+> [!Note]
+> In the following table, in the formulas in the &quot;Calculation&quot; column, brackets ([…]) enclose the values of reporting codes.
 
 | **Field** | **Description** | **Calculation** | **Reference to the box in official BAS report** |
 | --- | --- | --- | --- |
@@ -782,7 +784,8 @@ For example, create an XML template file that contains the following information
 
 Replace the values in the **fA1** , **fA3** , and **fA4** fields with the document identification number and dates that you require. To use this XML file as a template, browse to it on the **Select a file** page.
 
-**Note** : If you&#39;ve previously selected the **Generate E-BAS** option, you don&#39;t have to generate the XML file again the next time that you run the procedure. Instead, follow these steps:
+> [!Note]
+> If you&#39;ve previously selected the **Generate E-BAS** option, you don&#39;t have to generate the XML file again the next time that you run the procedure. Instead, follow these steps:
 
 1. Go to **Settings \&gt; User options**.
 2. Select **Usage data**.
@@ -823,7 +826,7 @@ The following example shows how you can set up sales tax codes and sales tax rep
 
 4. On the **Report setup** FastTab, assign reporting codes to sales tax codes.
 
-The following table shows how to assign the sales tax reporting codes to sales tax codes.
+   The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
 | **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Tax-free purchase** | **Sales tax receivable** |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -862,9 +865,10 @@ The following table shows how to assign the sales tax reporting codes to sales t
  |
  | 202 |
 
-**Note:** This configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
+> [!Note]
+> This configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
 
-1. Post the following transactions.
+5. Post the following transactions.
 
 For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \&gt; All free text invoices**. For vendor invoices, go to **Accounts payable \&gt; Invoices \&gt; Invoice journal**.
 
@@ -878,23 +882,23 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 | January 1, 2020 | Customer invoice | 500 | 0 | FREE | 3 | G3 |
 | January 1, 2020 | Customer invoice | 300 | 30 | LUX | 201 | 1E |
 
-1. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Additional BAS report boxes**.
-2. Select **New** , and create the following line.
+6. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Additional BAS report boxes**.
+7. Select **New** , and create the following line.
 
 | **Settlement period** | **From date** | **To date** | **Document identification number** |
 | --- | --- | --- | --- |
 | ND | 1/1/2020 | 3/31/2020 | BAS1 |
 
-3. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
-4. In the **Australian BAS** dialog box, set the following values:
+8. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
+9. In the **Australian BAS** dialog box, set the following values:
 
 - **Settlement period:** ND
 - **From date:** 1/1/2020
 - **Transaction date:** 1/1/2020
 
-1. Select **OK**.
-2. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **No**.
-3. Select **OK** , and review the following data in the printed form.
+10. Select **OK**.
+11. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **No**.
+12. Select **OK** , and review the following data in the printed form.
 
 | **Field** | **Description** | **Value** |
 | --- | --- | --- |
@@ -925,7 +929,7 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 | 8B | Total amounts owed by the ATO | 185 |
 | 9 | Net amount for the statement | 45 (= 230 – 185) |
 
-4. Create an XML file that contains the following information.
+13. Create an XML file that contains the following information.
 
 \&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?\&gt;
 
@@ -945,17 +949,17 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 
 \&lt;/DATA\&gt;
 
-1. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
-2. In the **Australian BAS** dialog box, set the following values:
+14. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
+15. In the **Australian BAS** dialog box, set the following values:
 
 - **Settlement period:** ND
 - **From date:** 1/1/2020
 - **Transaction date:** 1/1/2020
 
-1. Select **OK**.
-2. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **Yes** , and then select **OK**.
-3. Browse to the XML file that you created in step 13 to generate the printed form and XML file.
-4. Select **OK** , and review the following data in the XML file.
+16. Select **OK**.
+17. In the **Print Australian BAS** dialog box, set the **Generate E-BAS** option to **Yes** , and then select **OK**.
+18. Browse to the XML file that you created in step 13 to generate the printed form and XML file.
+19. Select **OK** , and review the following data in the XML file.
 
 \&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?\&gt;
 
@@ -998,7 +1002,7 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 - **From date:** 4/1/2020
 - **To date:** 6/30/2020
 
-1. On the **Cover page** tab, set the following values.
+7. On the **Cover page** tab, set the following values.
 
 | **Field** | **Value** |
 | --- | --- |
@@ -1008,7 +1012,7 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 | 5B Credit from PAYG | 400 |
 | 6B Credit fringe benefits tax | 500 |
 
-2. On the **Back cover page** tab, set the following values.
+8. On the **Back cover page** tab, set the following values.
 
 | **Field** | **Value** |
 | --- | --- |
@@ -1027,17 +1031,17 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 | 7C Fuel tax credit over claim | 1,400 |
 | 7D Fuel tax credit | 1,500 |
 
-3. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
-4. In the **Australian BAS** dialog box, set the following values:
+9. Go to **Tax \&gt; Declarations \&gt; Sales tax \&gt; Australian BAS**.
+10. In the **Australian BAS** dialog box, set the following values:
 
 - **Settlement period:** ND
 - **From date:** 4/1/2020
 - **Transaction date:** 4/1/2020
 - **Post and settle GST:** Yes
 
-1. Select **OK**.
-2. Go to **Tax \&gt; Inquiries and reports \&gt; Sales tax inquiries \&gt; Sales tax payments**.
-3. Select the required line, select **Voucher** , and review the following data.
+11. Select **OK**.
+12. Go to **Tax \&gt; Inquiries and reports \&gt; Sales tax inquiries \&gt; Sales tax payments**.
+13. Select the required line, select **Voucher** , and review the following data.
 
 | **Description** | **Debit** | **Credit** |
 | --- | --- | --- |
@@ -1062,13 +1066,5 @@ For example, for customer invoices, go to **Accounts receivable \&gt; Invoices \
 | 7D Fuel tax credit |
  | 1,500 |
 
-**Note:**
-
-Transactions weren&#39;t generated for amounts in fields **W1** , **F1** , and **F2** , because those fields aren&#39;t related to tax.
-
-> [!NOTE]
-> The dates must be in dd/mm/yyyy format.
-
-## Additional resources
-
-[Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
+> [!Note]
+> Transactions weren&#39;t generated for amounts in fields **W1** , **F1** , and **F2** , because those fields aren&#39;t related to tax.
