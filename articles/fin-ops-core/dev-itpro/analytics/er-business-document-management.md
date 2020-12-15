@@ -5,7 +5,7 @@ title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
 manager: AnnBe
-ms.date: 12/11/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,26 +46,19 @@ Currently, the Business document management feature is implemented only for clou
 
 ## Supported Microsoft Office applications
 
-To use Business document management for editing templates in Excel or Word formats by using Microsoft Office desktop applications, you must have Microsoft Office 2010 or later installed. This is supported in cloud and on-premises deployment.
+To use Business document management for editing templates in Excel or Word formats by using Microsoft Office desktop applications, you must have Microsoft Office 2010 or later installed. This is supported in cloud and on-premises deployments.
+
+To use Business document management for editing templates in Excel or Word formats by using Microsoft 365 applications, you must have Microsoft 365 Office for the web subscription. This is supported in cloud deployment.
 
 ## Business document availability
 
-The following reports, with Excel-based templates, will become available with the release of the public preview:
+For a complete list of all the reports planned for the October 2019 release, see [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-**Accounts receivable** (August 2019)
+For a complete list of all the reports planned for the October 2020 release, see [Configurable business documents – Word templates](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
-- Sales advance invoice
-- Sales order packing slip
+More reports will become available in future releases. Special notifications about additional reports will be sent separately. To learn how to review the list of currently available reports, see the section [List of ER configurations that have been released in Finance to support configurable business documents](#list-of-configurations-cbd) below.
 
-**Accounts payable** (August 2019)
-
-- Purchase advance invoice
-- Purchase order
-- Purchase order packing slip
-
-More reports will become available. Special notifications about additional reports will be sent separately. 
-
-A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). To learn more about this feature, complete the example in this topic.
+To learn more about this feature, complete the example in this topic.
 
 ## Configure ER parameters
 
