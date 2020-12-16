@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate Affordable Care Act (ACA) reports
-description: Benefits management assists employers who must track the information reported on Form 1095-B and Form 1095-C in support of the Affordable Care Act Employer Mandate.
+description: Benefits management helps you track information reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
 author: andreabichsel
 manager: tfehr
 ms.date: 02/03/2020
@@ -34,19 +34,63 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-Benefits management assists employers who must track the information reported on Form 1095-B and Form 1095-C in support of the Affordable Care Act Employer Mandate. This functionality is enabled only for legal entities in the United States, similar to the ACA reporting capability in the legacy **Benefits** workspace.
+Benefits management helps you track information reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate. This functionality applies only to legal entities in the United States, like the ACA reporting capability in the legacy **Benefits** workspace.
 
 To use this feature, you must first enable **Advanced Benefits Management**. For more information, including important caveats about Benefits management, see [Enable or disable Benefits management](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
-## Considerations
-
-ACA coverage reporting is available only from one of the Benefits modules that you choose for the Benefit enrollment year. Eg.. If you have switched over to the new Benefits Management module, reporting is only available from there and not from Legacy Benefits. 
-
-If you are making the switch over to Benefits Management during middle of the enrollment year, please ensure that data for the entire year for each employee is configured correctly in the Benefits Management module to get accurate reporting information for the whole year. 
+> [!IMPORTANT]
+>You can only use ACA reporting either from the Benefits management workspace or from the legacy Benefits workspace, not both. For example, if you switched to Benefits management, ACA reporting is only available from that workspace and not from legacy Benefits.
+>If you're switching to Benefits management during the middle of an enrollment year, you must correctly configure employee data for the entire year in Benefits management. This will ensure you receive accurate reporting information for the whole year.
 
 ## Getting started
 
-When beginning to track information to report on forms 1095-B and 1095-C, you must first create one or more Affordable Care coverage groups. These Affordable Care coverage groups will be used to indicate the offer of coverage that was provided to an employee, the employee’s share of the lowest cost monthly premium (if the cost is above the federal poverty line) as well as Safe Harbor used by the employer, if applicable. Using Affordable Care Act groups enables you to manage the information for these fields without needing to touch every employee record where the conditions are the same. In addition, Affordable Care coverage groups can easily be assigned to one or more employees using the Mass assign functionality on the page.
+To track information for 1095 forms, first create one or more Affordable Care coverage groups. These groups indicate:
+
+- The offer of coverage provided to an employee
+- The employee's share of the lowest-cost month premium, if the cost is above the federal poverty line
+- The safe harbor used by the employer, if applicable
+
+Affordable Care coverage groups help you manage this information for multiple employee records with the same conditions. You can easily assign groups to one or more employees.
+
+### Create or edit an Affordable Care coverage group
+
+1. Select the **Benefits management** workspace, and then select **Affordable Care coverage group**.
+
+   ![Select Affordable Care coverage group](./media/hr-benefits-management-aca-coverage-group.png)
+
+2. Select **New** to create a new Affordable Care coverage group, or select **Edit** to make changes to an existing group.
+
+   ![Select New or Edit](./media/hr-benefits-management-aca-new.png)
+
+3. Enter information for each field as follows:
+
+   | Field | Description |
+   | **Name** | Enter a name for the group. |
+   | **Description** | Enter a description for the group. |
+   | **Offer of coverage** | The coverage offered to employees and their spouse or partner and dependents. |
+   | **Employee share of cost** | The amount the employee is responsible for. |
+   | **Applicable section 4980H safe harbor** | 4980H safe harbor or transition relief code. |
+   | **Plan start month** | Select the calendar month for which your benefit plan year begins. |
+   | **Group valid from** | The date from which this record is valid. |
+   | **Group valid through** | The date up to which this record is valid. If there is no expiration date, enter **Never**. |
+
+   ![Create new coverage group](./media/hr-benefits-management-aca-new-group.png)
+
+4. Select **Save**.
+
+### Assign multiple employees to an Affordable Care coverage group
+
+1. Select the **Benefits management** workspace, and then select **Affordable Care coverage group**.
+
+2. Select the group to assign employees to.
+
+3. Select **Mass assignment**.
+
+   ![Select Mass assignment](./media/hr-benefits-management-aca-mass-assignment.png)
+
+4. Select employees from the list, and then select **Assign**.
+
+   ![Assign employees to a group](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## Maintaining multiple versions of a coverage group
 
