@@ -540,25 +540,10 @@ When payment transactions aren't successfully processed through the Adyen paymen
 
 #### Invoicing sales orders failed due to stale authorization
 
-<table>
-<tbody>
-<tr>
-<td><strong>Title</strong></td>
-<td>Capture failed due to stale authorization</td>
-</tr>
-<tr>
-<td><strong>Symptom</strong></td>
-<td>Invoicing sales orders fails with "Exception has been thrown by the target of an invocation. System.ArgumentNullException: Value cannot be null." The underlying error in the logs is "The following error occurred during the capture call - Dynamics 365 Payment Connector for Adyen: Error code Decline message Capture failed due to stale authorization."</td>
-</tr>
-<tr>
-<td><strong>Root cause</strong></td>
-<td>This error happens when an authorization older than the <strong>Authorization stale period (days)</strong> is sent to the payment connector for capture.</td>
-</tr>
-<td><strong>Fix</strong></td>
-<td>Ensure the value of <strong>Number of days before expired</strong> in <strong>Accounts receivable parameters, Credit Card</strong> is set to <strong>1 less day</strong> than the value set in merchant properties for all channels and then retry invoicing. The recommended value for <strong>Authorization stale period (days)</strong> is 14 in Adyen merchant properties and 13 in Accounts receivables parameters.</td>
-</tr>
-</tbody>
-</table>
+| Title | Capture failed due to stale authorization |
+| Symptom | Invoicing sales orders fails with "Exception has been thrown by the target of an invocation. System.ArgumentNullException: Value cannot be null." The underlying error in the logs is "The following error occurred during the capture call - Dynamics 365 Payment Connector for Adyen: Error code Decline message Capture failed due to stale authorization." |
+| Root cause | This error happens when an authorization older than the **Authorization stale period (days)** is sent to the payment connector for capture. |
+| Fix | Ensure the value of **Number of days before expired** in **Accounts receivable parameters, Credit Card** is set to **1 less day** than the value set in merchant properties for all channels and then retry invoicing. The recommended value for **Authorization stale period (days)** is 14 in Adyen merchant properties and 13 in Accounts receivables parameters. |
 
 ## Additional resources
 
