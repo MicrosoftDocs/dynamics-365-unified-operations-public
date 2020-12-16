@@ -1,7 +1,7 @@
 ---
 
-title: Customize entity and field mappings
-description: This topic explains how to customize entity and field mappings.
+title: Customize table and column mappings
+description: This topic explains how to customize table and column mappings.
 author: sabinn-msft
 manager: AnnBe
 ms.date: 03/20/2020
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Customize entity and field mappings
+# Customize table and column mappings
 
 [!include [banner](../../includes/banner.md)]
 
@@ -35,18 +35,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-The out-of-box table maps have predefined entity and field mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default table maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change table maps and field mappings.
+The out-of-box table maps have predefined table and column mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default table maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change table maps and column mappings.
 
-## Customize field mappings, add transforms, and enable filtering
+## Customize column mappings, add transforms, and enable filtering
 
 1. In your Finance and Operations app, on the **Dual-write** page, on the **Table mappings** tab, select the table map to customize.
 
     > [!NOTE]
     > Before you change table mappings, they must be stopped (not running). Otherwise, your changes won't be saved.
 
-2. On the **Table mappings** tab, you can customize a field by selecting a new or custom field from either the Finance and Operations app or Dataverse.
+2. On the **Table mappings** tab, you can customize a column by selecting a new or custom column from either the Finance and Operations app or Dataverse.
 
-    ![Customizing a field](media/customize-a-field.png)
+    ![Customizing a column](media/customize-a-field.png)
 
 3. You can customize the synchronization direction (unidirectional or bidirectional) and add transforms by selecting the map type.
 
@@ -56,27 +56,27 @@ The out-of-box table maps have predefined entity and field mappings that enable 
 
     | Symbol | Description |
     |---|---|
-    | ![Equal sign](media/equal-symbol.png) | Bidirectional field assignment |
-    | ![Greater than/less than sign](media/greater-less-symbol.png) | Bidirectional field assignment that uses transforms |
-    | ![Greater than sign](media/greater-than-symbol.png) | Unidirectional field assignment (left to right) |
-    | ![Less than sign](media/less-than-symbol.png) | Unidirectional field assignment (right to left) |
-    | ![Right arrow](media/right-arrow-symbol.png) | Unidirectional field assignment that uses transforms (left to right) |
-    | ![Left arrow](media/left-arrow-symbol.png) | Unidirectional field assignment that uses transforms (right to left) |
+    | ![Equal sign](media/equal-symbol.png) | Bidirectional column assignment |
+    | ![Greater than/less than sign](media/greater-less-symbol.png) | Bidirectional column assignment that uses transforms |
+    | ![Greater than sign](media/greater-than-symbol.png) | Unidirectional column assignment (left to right) |
+    | ![Less than sign](media/less-than-symbol.png) | Unidirectional column assignment (right to left) |
+    | ![Right arrow](media/right-arrow-symbol.png) | Unidirectional column assignment that uses transforms (left to right) |
+    | ![Left arrow](media/left-arrow-symbol.png) | Unidirectional column assignment that uses transforms (right to left) |
 
     The following table describes the available transform types.
 
     | Transform type | Description |
     |---|---|
-    | Default | Default values are values that are applied to destination fields when no source field value is available. Use default values for fields that are required on the destination entity when you have no corresponding source field. |
-    | Value map | Value maps define how values that are present in one entity should be mapped to values in the other entity. |
+    | Default | Default values are values that are applied to destination columns when no source column value is available. Use default values for columns that are required on the destination table when you have no corresponding source column. |
+    | Value map | Value maps define how values that are present in one table should be mapped to values in the other table. |
 
-4. You can add a new field by selecting **Add mapping** and then selecting an existing or custom field in the list.
+4. You can add a new column by selecting **Add mapping** and then selecting an existing or custom column in the list.
 
-    The following illustration shows an example where a new **birthdate** field is being added.
+    The following illustration shows an example where a new **birthdate** column is being added.
 
-    ![Adding a new birthdate field](media/add-new-field.png)
+    ![Adding a new birthdate column](media/add-new-field.png)
 
-5. When you've finished customizing the field mappings, select **Save**. Then follow the prompts to specify a publisher and a version number.
+5. When you've finished customizing the column mappings, select **Save**. Then follow the prompts to specify a publisher and a version number.
 
     ![Specifying a publisher and a version number](media/choose-publisher-version.png)
 
@@ -101,7 +101,7 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
 
     For more examples that show how to use expressions in query ranges, see [Using Expressions in Query Ranges](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges).
     
-    Currently, we do not support nested lookups in dual-write source filter. Only standard filter operators directly against entity fields are supported. For more examples, see [Standard filter operators](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
+    Currently, we do not support nested lookups in dual-write source filter. Only standard filter operators directly against table columns are supported. For more examples, see [Standard filter operators](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
     
 ## Add new table maps
 

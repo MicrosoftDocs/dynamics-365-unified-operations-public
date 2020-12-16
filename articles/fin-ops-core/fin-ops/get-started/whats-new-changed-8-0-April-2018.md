@@ -107,9 +107,9 @@ Organizations can add custom fields to tailor their application to their busines
 
 ## Integration 
 
-### Integration with Common Data Service (CDS)
+### Integration with Dataverse
 
-Dynamics 365 for Finance and Operations has enabled cross-application business processes between Finance and Operations and Dynamics 365 for Field Service and between Finance and Operations and Dynamics 365 for Project Service Automation. These scenarios are configured using extensible Data integrator templates and CDS to enable the cross-application scenarios.
+Dynamics 365 for Finance and Operations has enabled cross-application business processes between Finance and Operations and Dynamics 365 for Field Service and between Finance and Operations and Dynamics 365 for Project Service Automation. These scenarios are configured using extensible Data integrator templates and Dataverse to enable the cross-application scenarios.
 
 ### Integration with Dynamics 365 for Field Service
 
