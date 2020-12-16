@@ -5,7 +5,7 @@ title: Point-in-time restore of the production database to a sandbox environment
 description: This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a sandbox user acceptance testing (UAT) environment.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 12/09/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -47,7 +47,7 @@ To provide customers with data application lifecycle management (DataALM) capabi
 4. The restore operation begins immediately.
 
 > [!IMPORTANT]
-> Self-service PITR is not supported between environments that are on different regions. For more details, refer to the "Known issues" section later in this topic .
+> Self-service point in time restore (PITR) is not supported between environments that are on different regions. For more details, refer to the "Known issues" section later in this topic.
 
 ### Restore operation failure
 
@@ -134,7 +134,10 @@ If you're upgrading your sandbox UAT environment to a newer application version 
 
 Conversely, if your production environment is newer than your target sandbox environment, you must either upgrade the target sandbox environment before the refresh, or just deallocate, delete, and redeploy the environment before you do the refresh.
 
-### The source and target are on different infrastructure (Microsoft-managed vs. self-service)
+### The source and target are on different infrastructure (Microsoft-managed vs. self-Service)
 
-The point in time restore (PITR) process is not supported between Microsoft-managed and self-service environments across two different regions. For example, if the production environment is Microsoft-managed and in East US2 and a PITR is needed to the sandbox environment, which is self-service and in East US, PITR is not supported. The alternative is to move the production environment to self-service or opt for a regular, database refresh instead. PITR is supported between environments on the same infrastructure, both across regions and within the same region.
+The PITR process is not supported between Microsoft-managed and self-service environments across different regions. For example, if the production environment is Microsoft-managed and in East US2 and a PITR is needed to the sandbox environment, which is self-service and in East US, PITR is not supported. The alternative is to move the production environment to self-service or opt for a regular database refresh instead.
+
+### Point in time restore between source and target that are both on self-Service, in different regions
+The PITR process is not supported between self-service environments across different regions. For example, if the production environment is in East US and a PITR is needed for the sandbox environment, which is self-service and in West Europe, PITR is not supported. The alternative is to get both the environments in the same region or opt for a regular database refresh instead.
 
