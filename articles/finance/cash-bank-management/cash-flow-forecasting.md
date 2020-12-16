@@ -51,8 +51,7 @@ Cash flow forecasting can be integrated with General ledger, Accounts payable, A
 - **Budget register entries** – Budget register entries that are selected for cash flow forecasts.
 - **Demand forecasts** – Inventory forecast model lines that are selected for cash flow forecasts.
 - **Supply forecasts** – Inventory forecast model lines that are selected for cash flow forecasts.
-
-Although there is no direct integration with Project management and accounting, there are several ways to include project transactions in the cash flow forecast. Posted project invoices are included in the forecast as part of open customer transactions. Project-initiated sales orders and purchase orders are included in the forecast as open orders after they are entered in the system. You can also transfer project forecasts to a ledger budget model. This ledger budget model is then included in the cash flow forecast as part of the budget register entries.
+- **Project forecasts** - Project management and accounting forecasts using forecast model.
 
 ## Configuration
 
@@ -102,6 +101,14 @@ Inventory supply and demand forecasts can be included in cash flow forecasts. On
 A new tab on the **Cash flow forecasting setup** page lets you control what financial dimensions to use for filtering in the **Cash flow forecasting** workspace. This tab will only appear when the Cash flow forecasts feature is enabled. 
 
 On the **Dimensions** tab, choose from the list of dimensions to use for filtering, and use the arrow keys to move them to the right-hand column. Only two dimensions can be selected for filtering cash flow forecast data. 
+
+### Project management and accounting
+
+In version 10.0.17 a new feature enables integration with Project management and accounting with Cash flow forecasting. On the **Feature management** workspace enable the **Cash flow Project forecast** feature to include the forecasted costs and revenues in the Cash flow forecast. On the **Project management and accounting** tab of the **Cash flow forecast setup** page, mark which project types and transaction types to include in the cash flow forecast. Then select the Project forecast model, a Reduction type submodel works best. No liquidity account is needed as the default accounts from Accounts receivable setup are used. A budget model can also be used but only one type can be selected in the Cash flow forecast setup page for Project management and accounting. A forecast model allows for the most flexibility when using Project management and accounting or Project Operations.
+
+Once enabled the cash flow forecast can be viewed on each project on the All Projects page by selecting Plan in the action bar and then Cash flow forecast in the Forecast section. On the Cash overview workspaces (see Reporting section below) the **Project forecast** displays the inflows (project forecast revenue) and the outflows (project forecast costs). The project stage needs to be set to In process for the amounts to be included on the Cash overview workspaces.
+
+Project transactions are still included in the cash flow forecast in several ways regardless of this new feature. Posted project invoices are included in the forecast as part of open customer transactions. Project-initiated sales orders and purchase orders are included in the forecast as open orders after they are entered in the system. You can also transfer project forecasts to a ledger budget model. This ledger budget model is then included in the cash flow forecast as part of the budget register entries. If the **Cash flow project forecast** feature is enabled do not transfer project forecasts to a ledger budget model as this would double count them.
 
 ### Calculation
 
