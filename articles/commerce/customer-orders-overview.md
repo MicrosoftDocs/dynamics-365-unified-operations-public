@@ -105,6 +105,7 @@ Make sure that the POS [screen layout](https://docs.microsoft.com/dynamics365/co
 ![Operations on the POS transaction screen](media/customer-order-screen-layout.png)
 
 ## Working with customer orders in POS
+> [!NOTE] Using Revenue recognition in Commerce channels - Revenue Recognition functionality is not currently supported for use in Commerce channels (e-Commerce, Point of Sale, Call Center).  Items configured with revenue recognition should not be added to orders created in Commerce channels. 
 
 ### Create a customer order for products that will be shipped to the customer
 
