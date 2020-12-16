@@ -37,7 +37,7 @@ We have seen organizations run the year-end close but were actually performing a
 
 [![Running year-end close versus undoing year-end close](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
-If the  **Undo previous close** selection is set to **Yes**, the previous year-end close is being reversed. When running an undo, all closing balance and opening balance entries will be deleted, as if the year-end close had never been run. The vouchers are deleted. The year-end close will not run again automatically. You must initiate the year-end close again, this time changing **Undo previous close** selection to **No**. 
+If the  **Undo previous close** selection is set to **Yes**, the previous year-end close is being reversed. When running an undo, all closing balance and opening balance entries will be deleted, as if the year-end close had never been run. The vouchers are deleted. The year-end close will not run again automatically. You must start the process again, this time changing **Undo previous close** selection to **No**. 
 
 > [!Note]
 > The closing balance entry is optionally created in the year being closed; only if the GL parameter “Create closing transactions during transfer” = Yes.  The opening balance entry is always created, as this is the beginning balance for the next year. 
@@ -45,7 +45,7 @@ If the  **Undo previous close** selection is set to **Yes**, the previous year-e
 ## General ledger: What is the difference between Undo and Delete GL parameter for year-end close?
 Confusion exists over the difference between the **Undo previous close** (which is in the **Year-end close** dialog) and the **Delete close-of-year transactions during transfer** parameter in General ledger (**General ledger > Period close > Year-end close > Run fiscal close** drop dialog).  
 
-[![ifference between Undo and Delete GL parameter for year-end close](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
+[![Difference between Undo and Delete GL parameter for year-end close](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 Selecting **Undo previous close** in the drop dialog when running the year-end close process will delete all closing balance and opening balance entries, as if the year-end close had never been run. The vouchers are deleted. The year-end close will not run again automatically. To run the year-end close, you must initiate again, this time changing the **Undo previous close** to **No** (**General ledger > Ledger setup > General ledger parameters**). 
 
@@ -76,11 +76,11 @@ We recommend that you evaluate your organization's requirements and if possible,
  
 ## General ledger – Period close – Year end close
  
-[![Year-end close](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
+[![Period close, year-end close](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
 ### Performance improvements for rebuilding financial dimension sets (new feature)
 
-A new feature was been added in version 10.0.16 that improves the performance of the year-end close and consolidation processes. The feature is named, Performance improvements for rebuilding financial dimension sets. This feature changes the way dimension sets are rebuilt so that they are rebuilt only for a relevant time frame. In previous version, dimension sets were rebuilt for all dates. For example, if you're closing the year 2020, it the systemn will only rebuild the balances for transactions within the fiscal year 2020.  And if you're running consolidation for a date range of November 1, 2020 to November 30, 2020, the system will only rebuild the balances for that date range. 
+A new feature was been added in version 10.0.16 that improves the performance of the year-end close and consolidation processes. The feature is named, Performance improvements for rebuilding financial dimension sets. This feature changes the way dimension sets are rebuilt so that they are rebuilt only for a relevant time frame. In previous version, dimension sets were rebuilt for all dates. For example, if you're closing the year 2020, it the system will only rebuild the balances for transactions within the fiscal year 2020.  And if you're running consolidation for a date range of November 1, 2020 to November 30, 2020, the system will only rebuild the balances for that date range. 
 
 Because this feature is considered a breaking change, you'll need to enable it using the **Feature management** workspace.
  
@@ -92,12 +92,12 @@ Two new regulatory features have been added for the 2020 1099 year-end changes. 
 
 The second regulatory feature, **1099 statements updated for 2020 tax law**, contains the following changes.
 
-a.	1099-OID - The IRS has converted the form to continuous use.
+- 1099-OID - The IRS has converted the form to continuous use.
    - As such the reporting year’s 3rd and 4th digit must be filled in when printed – use the **Reporting year** field’s 3rd and 4th digits from **Tax 1099 print options**. 
 
-b.	1099-NEC – A new form for 2020. This records nonemployee compensation. 
+- 1099-NEC – A new form for 2020. This records nonemployee compensation. 
 
-c.	1099-MISC – Due to the creation of Form 1099-NEC, the IRS has revised Form 1099-MISC and rearranged box numbers for reporting certain income.
+- 	1099-MISC – Due to the creation of Form 1099-NEC, the IRS has revised Form 1099-MISC and rearranged box numbers for reporting certain income.
 Changes in the reporting of income and the form’s box numbers are listed below.
    - Payer made direct sales of $5,000 or more (checkbox) in box 7.
    - Crop insurance proceeds are reported in box 9.
@@ -106,14 +106,15 @@ Changes in the reporting of income and the form’s box numbers are listed below
    - Nonqualified deferred compensation income is reported in box 14.
    - Boxes 15, 16, and 17 report state taxes withheld, state identification number, and amount of income earned in the state, respectively.
 
-d.	No changes to 1099-DIV or 1099-INT in 2020.
+- No changes to 1099-DIV or 1099-INT in 2020.
 
-e.	Electronic filing – The format has changed to accommodate the new NEC form, and the MISC box changes described above. For specific information on electronic filing requirements, see [IRS Publication 1220](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
+- Electronic filing – The format has changed to accommodate the new NEC form, and the MISC box changes described above. For specific information on electronic filing requirements, see [IRS Publication 1220](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
 
 ## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn’t tracking 1099 information throughout the year?
-Use the Update 1099 functionality (Accounts payable>Vendors>All vendors>Select a vendor>Vendor tab in ribbon>Update 1099) to go through previously paid invoice transactions to reassign the 1099 data appropriately according to the settings on the Tax 1099 tab on the Vendor form.
+Use the Update 1099 functionality (**Accounts payable > Vendors>All vendors > Select a vendor > Vendor tab in ribbon > Update 1099**) to go through previously paid invoice transactions to reassign the 1099 data appropriately according to the settings on the Tax 1099 tab on the Vendor form.
 
-Can I run the Update 1099 for all my vendors at once? No, the Update 1099 routine is performed against a single vendor at a time. If this requirement is needed by your organization, please vote for the Idea titled [Batch Process for Update of Vendor's 1099 Data](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
+## Can I run the Update 1099 for all my vendors at once?
+No. The Update 1099 routine is performed against a single vendor at a time. If this requirement is needed by your organization, please vote for the Idea titled [Batch Process for Update of Vendor's 1099 Data](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
 
 ## Accounts payable: 1099 – “Recalculate existing 1099 amounts” versus “Update all” in the Update 1099 utility.
 The **Recalculate existing 1099 amounts** check box will reset the 1099 amount to the total paid values, when used in conjunction with the **Update all** check box. The **Recalculate existing 1099 amounts** check box only comes into play when there are partial 1099 values on the invoice or if it was modified on the Tax 1099 form. For example, assume you have an invoice valued at $1000.00, but the user manually types in a 1099 amount on the invoice of $500.00. When this is paid, $500.00 will be the 1099 amount paid. If you perform the recalculation routine, the system will change the 1099 amount to be 1000, which is the total that was paid.
@@ -134,7 +135,6 @@ Manually created 1099 transactions are not updated with the **Update all** proce
 Dynamics 365 Finance doesn’t print the 1096 Annual Summary and Transmittal of U.S. Information Returns form.
 
 ## Accounts payable: 1099 – Are there any new features that support 1099 reporting for Public sector? 
-A new Public sector feature, named **Update 1099 information by main account**, has been added; you can enable the feature in the **Feature management** workspace. This feature lets you associate the 1099 values for a vendor by the main account in the accounting distribution, rather than the default account on the vendor record.
+A new Public sector feature, **Update 1099 information by main account**, has been added; you can enable the feature in the **Feature management** workspace. This feature lets you associate the 1099 values for a vendor by the main account in the accounting distribution, rather than the default account on the vendor record.
 
 For more information, see [Set up vendors for 1099 reporting](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
-
