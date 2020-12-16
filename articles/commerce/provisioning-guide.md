@@ -135,20 +135,20 @@ To initialize the CSU, follow these steps.
 
 If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.
 
-During the deployment process, you may see the following message:
+During the deployment process, you might receive the following error message:
 
-``Evaluation (demo/test) environments need to register the scale unit connector application <application ID> in headquarters.``
+> Evaluation (demo/test) environments need to register the scale unit connector application \<application ID\> in headquarters.
 
-If the CSU initialization fails with this message, make note of the application ID GUID and then follow the steps below to register the CSU deployment application in headquarters.
+If the CSU initialization fails and you receive this error message, make a note of the application ID, which is a globally unique identifier (GUID), and then follow the steps in the next section to register the CSU deployment application in Commerce headquarters.
 
 ### Register the CSU deployment application in Commerce headquarters (if required)
 
 To register the CSU deployment application in Commerce headquarters, follow these steps.
 
 1. In Commerce headquarters, go to **System administration \> Setup \> Azure Active Directory applications**.
-1. In the **Client Id** column, enter the application ID shown in the CSU initialization error message.
-1. In the **Name** column, enter any descriptive text (for example, "CSU Eval") .
-1. In the **User ID** column, enter "RetailServiceAccount".
+1. In the **Client Id** column, enter the application ID from the CSU initialization error message that you received.
+1. In the **Name** column, enter any descriptive text (for example, **CSU Eval**).
+1. In the **User ID** column, enter **RetailServiceAccount**.
 1. Retry the CSU initialization and deployment from LCS.
 
 ### Initialize e-Commerce
