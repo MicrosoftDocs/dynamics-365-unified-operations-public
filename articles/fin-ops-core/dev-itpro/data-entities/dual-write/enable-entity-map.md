@@ -33,23 +33,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-When you enable an table map for dual-write, it begins at the **Not running** status. The table map then goes through an initialization phase, where it does an initial write by copying pre-existing data on tables on both sides. Finally, when the entity is completely enabled, the table map sets the status to **Running**.
+When you enable a table map for dual-write, it begins at the **Not running** status. The table map then goes through an initialization phase, where it does an initial write by copying pre-existing data on tables on both sides. Finally, when the table is completely enabled, the table map sets the status to **Running**.
 
 ![Enabling table maps](media/enabling-entity-map.png)
 
-While the status is **Running**, you can pause an entity. All changes are then queued until you resume. When you resume, the entity goes into "catch-up mode," where all the queued changes are played back.
+While the status is **Running**, you can pause a table. All changes are then queued until you resume. When you resume, the table goes into "catch-up mode," where all the queued changes are played back.
 
-The following illustration show an example of an entity that is paused.
+The following illustration show an example of a table that is paused.
 
-![Paused entity](media/stop-pause-entity.png)
+![Paused table](media/stop-pause-entity.png)
 
 | Status | Description | Available actions |
 |---|---|---|
-| Not running | The entity has not yet been enabled for dual-write. Every entity begins at the **Not running** status. | Run |
+| Not running | The table has not yet been enabled for dual-write. Every table begins at the **Not running** status. | Run |
 | Initializing | The initial write is occurring. | None |
-| Running | The entity has been enabled for dual-write. | Stop, Pause |
-| Paused | The entity is in a paused state, and all new requests are queued. | Run |
-| Resuming | The entity is catching up on records that were queued while the entity was paused. | None |
+| Running | The table has been enabled for dual-write. | Stop, Pause |
+| Paused | The table is in a paused state, and all new requests are queued. | Run |
+| Resuming | The table is catching up on rows that were queued while the table was paused. | None |
 
 During the initialization phase, any pre-existing data that you have is copied as part of the initial write phase.
 
@@ -59,14 +59,14 @@ Entities have several dependent tables. For example, Customer-Contact tables hav
 
 ![Dependent tables](media/dependent-or-related-entities.png)
 
-Because these are relational apps that have relational data, if you don't enable the dependent tables, you might encounter errors later. To help prevent these errors, before you enable an table map, you're provided with a list of the related tables that we recommend that you enable.
+Because these are relational apps that have relational data, if you don't enable the dependent tables, you might encounter errors later. To help prevent these errors, before you enable a table map, you're provided with a list of the related tables that we recommend that you enable.
 
 ## <a id="enable-table-map"></a>Example: Enabling the Customers V3—Contacts table map
 
-When you select an table map (for example, **Customers V3—Contacts**) and select **Run**, a dialog box appears before the table map is enabled. This dialog box lists all the dependent tables. You can select the **Show related table map(s)** option to show all the related table maps. To enable the selected table map and all its related tables, select **Run** in the dialog box.
+When you select a table map (for example, **Customers V3—Contacts**) and select **Run**, a dialog box appears before the table map is enabled. This dialog box lists all the dependent tables. You can select the **Show related table map(s)** option to show all the related table maps. To enable the selected table map and all its related tables, select **Run** in the dialog box.
 
 > [!NOTE]
-> The behavior is similar when you pause an entity. In that case, you have the option to pause all the related tables too.
+> The behavior is similar when you pause a table. In that case, you have the option to pause all the related tables too.
 
 ![Listing all the dependent tables](media/related-entity-maps.png)
 
@@ -80,13 +80,13 @@ After you've finished making your selections in the dialog box, and you select *
 
 To enable table maps for dual-write, you must define an alternative key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app.
 
-For example, in a Finance and Operations app, **CustomerAccount** is the key for the Account entity.
+For example, in a Finance and Operations app, **CustomerAccount** is the key for the Account table.
 
-![Key for the Account entity in a Finance and Operations app](media/define-alternative-key.png)
+![Key for the Account table in a Finance and Operations app](media/define-alternative-key.png)
 
-In Dataverse, **accountnumber** is defined as the key for the Account entity.
+In Dataverse, **accountnumber** is defined as the key for the Account table.
 
-![Account entity defined in Dataverse](media/define-account-entity.png)
+![Account table defined in Dataverse](media/define-account-entity.png)
 
 In the Customers V3 table map, you can see that **accountnumber** is mapped to **CustomerAccount**.
 
@@ -94,4 +94,4 @@ In the Customers V3 table map, you can see that **accountnumber** is mapped to *
 
 ## Next steps
 
-[Customize entity and field mappings](customizing-mappings.md)
+[Customize table and column mappings](customizing-mappings.md)

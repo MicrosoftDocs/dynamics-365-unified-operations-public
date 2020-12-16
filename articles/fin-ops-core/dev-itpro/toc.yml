@@ -122,9 +122,9 @@
             href: data-entities/tasks/create-record-template-facilitate-data-entry.md
           - name: Create records using record templates
             href: data-entities/tasks/use-record-template-new-record.md
-        - name: Data integration using Common Data Service
+        - name: Data integration using Dataverse
           items:
-          - name: Data integration using Common Data Service overview
+          - name: Data integration using Dataverse overview
             href: data-entities/data-integration-cds.md
           - name: Dual-write integration
             items: 
@@ -192,11 +192,11 @@
                     href: data-entities/dual-write/sites-warehouses-mapping.md
                 - name: Company integration
                   items:
-                  - name: Company concept in Common Data Services
+                  - name: Company concept in Dataverse
                     href: data-entities/dual-write/company-data.md
                   - name: Bootstrap with company data
                     href: data-entities/dual-write/bootstrap-company-data.md
-                - name: Organization hierarchy on Common Data Service
+                - name: Organization hierarchy on Dataverse
                   href: data-entities/dual-write/organization-mapping.md
                 - name: Finance and tax data
                   items:
@@ -226,7 +226,7 @@
                   href: data-entities/dual-write/field-service-project-service-automation.md
                 - name: Troubleshooting
                   items:
-                  - name: Verify that dual-write is configured in Finance and Operations apps and Common Data Service
+                  - name: Verify that dual-write is configured in Finance and Operations apps and Dataverse
                     href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                   - name: Troubleshoot issues during initial setup
                     href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
@@ -1180,7 +1180,7 @@
         href: power-platform/entity-modeling.md
       - name: Application lifecycle management
         href: power-platform/application-lifecycle-management.md
-      - name: Finance and Operations and Common Data Service admin reference
+      - name: Finance and Operations and Dataverse admin reference
         href: power-platform/admin-reference.md
       - name: Power Apps portals with Finance and Operations
         href: power-platform/power-portal-reference.md

@@ -102,7 +102,7 @@ You might receive an error messages if any of your mappings have self-references
 
 ## <a id="error-vendor-map"></a>Resolve errors in the Vendors V2–to–msdyn_vendors table mapping
 
-You might encounter initial synchronization errors for the mapping of **Vendors V2** to **msdyn\_vendors** if the tables have existing rows where there are values in the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** fields. These errors occur because **InvoiceVendorAccountNumber** is a self-referencing field, and **PrimaryContactPersonId** is a circular reference in the vendor mapping.
+You might encounter initial synchronization errors for the mapping of **Vendors V2** to **msdyn\_vendors** if the tables have existing rows where there are values in the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns. These errors occur because **InvoiceVendorAccountNumber** is a self-referencing column, and **PrimaryContactPersonId** is a circular reference in the vendor mapping.
 
 The error messages that you receive will have the following form.
 
@@ -113,26 +113,26 @@ Here are some examples:
 - *Couldn't resolve the guid for the field: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. The lookup was not found: 000056. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Couldn't resolve the guid for the field: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. The lookup was not found: V24-1. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-If any rows in the vendor entity have values in the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** fields, follow these steps to complete the initial synchronization.
+If any rows in the vendor table have values in the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns, follow these steps to complete the initial synchronization.
 
-1. In the Finance and Operations app, delete the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** fields from the mapping, and then save the mapping.
+1. In the Finance and Operations app, delete the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns from the mapping, and then save the mapping.
 
     1. On the dual-write mapping page for **Vendors V2 (msdyn\_vendors)**, on the **Table mappings** tab, in the left filter, select **Finance and Operations apps.Vendors V2**. In the right filter, select **Sales.Vendor**.
-    2. Search for **primarycontactperson** to find the **PrimaryContactPersonId** source field.
+    2. Search for **primarycontactperson** to find the **PrimaryContactPersonId** source column.
     3. Select **Actions**, and then select **Delete**.
 
-        ![Deleting the PrimaryContactPersonId field](media/vend_selfref3.png)
+        ![Deleting the PrimaryContactPersonId column](media/vend_selfref3.png)
 
-    4. Repeat these steps to delete the **InvoiceVendorAccountNumber** field.
+    4. Repeat these steps to delete the **InvoiceVendorAccountNumber** column.
 
-        ![Deleting the InvoiceVendorAccountNumber field](media/vend-selfref4.png)
+        ![Deleting the InvoiceVendorAccountNumber column](media/vend-selfref4.png)
 
     5. Save your changes to the mapping.
 
-2. Turn off change tracking for the **Vendors V2** entity.
+2. Turn off change tracking for the **Vendors V2** table.
 
     1. In the **Data management** workspace, select the **Data tables** tile.
-    2. Select the **Vendors V2** entity.
+    2. Select the **Vendors V2** table.
     3. On the Action Pane, select **Options**, and then select **Change tracking**.
 
         ![Selecting the Change tracking option](media/selfref_options.png)
@@ -142,14 +142,14 @@ If any rows in the vendor entity have values in the **PrimaryContactPersonId** a
         ![Selecting Disable Change Tracking](media/selfref_tracking.png)
 
 3. Run initial synchronization for the **Vendors V2 (msdyn\_vendors)** mapping. The initial synchronization should run successfully, without any errors.
-4. Run initial synchronization for the **CDS Contacts V2 (contacts)** mapping. You must sync this mapping if you want to sync the primary contact field on the vendors entity, because initial synchronization must also be done for the contact rows.
-5. Add the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** fields back to the **Vendors V2 (msdyn\_vendors)** mapping, and then save the mapping.
+4. Run initial synchronization for the **CDS Contacts V2 (contacts)** mapping. You must sync this mapping if you want to sync the primary contact column on the vendors table, because initial synchronization must also be done for the contact rows.
+5. Add the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns back to the **Vendors V2 (msdyn\_vendors)** mapping, and then save the mapping.
 6. Run initial synchronization again for the **Vendors V2 (msdyn\_vendors)** mapping. Because change tracking is turned off, all the rows will be synced.
-7. Turn change tracking back on for the **Vendors V2** entity.
+7. Turn change tracking back on for the **Vendors V2** table.
 
 ## <a id="error-customer-map"></a>Resolve errors in the Customers V3–to–Accounts table mapping
 
-You might encounter initial synchronization errors for the mapping of **Customers V3** to **Accounts** if the tables have existing rows where there are values in the **ContactPersonID** and **InvoiceAccount** fields. These errors occur because **InvoiceAccount** is a self-referencing field, and **ContactPersonID** is a circular reference in the vendor mapping.
+You might encounter initial synchronization errors for the mapping of **Customers V3** to **Accounts** if the tables have existing rows where there are values in the **ContactPersonID** and **InvoiceAccount** columns. These errors occur because **InvoiceAccount** is a self-referencing column, and **ContactPersonID** is a circular reference in the vendor mapping.
 
 The error messages that you receive will have the following form.
 
@@ -160,26 +160,26 @@ Here are some examples:
 - *Couldn't resolve the guid for the field: primarycontactid.msdyn\_contactpersonid. The lookup was not found: 000056. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Couldn't resolve the guid for the field: msdyn\_billingaccount.accountnumber. The lookup was not found: 1206-1. Try this URL(s) to check if the reference data exists: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-If any rows in the customer entity have values in the **ContactPersonID** and **InvoiceAccount** fields, follow these steps to complete the initial synchronization. You can use this approach for any out-of-box tables, such **Accounts** and **Contacts**.
+If any rows in the customer table have values in the **ContactPersonID** and **InvoiceAccount** columns, follow these steps to complete the initial synchronization. You can use this approach for any out-of-box tables, such **Accounts** and **Contacts**.
 
-1. In the Finance and Operations app, delete the **ContactPersonID** and **InvoiceAccount** fields from the **Customers V3 (accounts)** mapping, and then save the mapping.
+1. In the Finance and Operations app, delete the **ContactPersonID** and **InvoiceAccount** columns from the **Customers V3 (accounts)** mapping, and then save the mapping.
 
     1. On the dual-write mapping page for **Customers V3 (accounts)**, on the **Table mappings** tab, in the left filter, select **Finance and Operations app.Customers V3**. In the right filter, select **Dataverse.Account**.
-    2. Search for **contactperson** to find the **ContactPersonID** source field.
+    2. Search for **contactperson** to find the **ContactPersonID** source column.
     3. Select **Actions**, and then select **Delete**.
 
-        ![Deleting the ContactPersonID field](media/cust_selfref3.png)
+        ![Deleting the ContactPersonID column](media/cust_selfref3.png)
 
-    4. Repeat these steps to delete the **InvoiceAccount** field.
+    4. Repeat these steps to delete the **InvoiceAccount** column.
 
-        ![Deleting the InvoiceAccount field](media/cust_selfref4.png)
+        ![Deleting the InvoiceAccount column](media/cust_selfref4.png)
 
     5. Save your changes to the mapping.
 
-2. Turn off change tracking for the **Customers V3** entity.
+2. Turn off change tracking for the **Customers V3** table.
 
     1. In the **Data management** workspace, select the **Data tables** tile.
-    2. Select the **Customers V3** entity.
+    2. Select the **Customers V3** table.
     3. On the Action Pane, select **Options**, and then select **Change tracking**.
 
         ![Selecting the Change tracking option](media/selfref_options.png)
@@ -194,7 +194,7 @@ If any rows in the customer entity have values in the **ContactPersonID** and **
     > [!NOTE]
     > There are two maps that have the same name. Be sure to select the map that has the following description on the **Details** tab: **Dual-write template for sync between FO.CDS Vendor Contacts V2 to CDS.Contacts. Requires new package \[Dynamics365SupplyChainExtended\].**
 
-5. Add the **InvoiceAccount** and **ContactPersonId** fields back to the **Customers V3 (Accounts)** mapping, and then save the mapping. Both the **InvoiceAccount** field and the **ContactPersonId** field are now part of live synchronization mode again. In the next step, you will do the initial synchronization for these fields.
+5. Add the **InvoiceAccount** and **ContactPersonId** columns back to the **Customers V3 (Accounts)** mapping, and then save the mapping. Both the **InvoiceAccount** column and the **ContactPersonId** column are now part of live synchronization mode again. In the next step, you will do the initial synchronization for these columns.
 6. Run initial synchronization again for the **Customers V3 (Accounts)** mapping. Because change tracking is turned off, the data for **InvoiceAccount** and **ContactPersonId** will be synced from the Finance and Operations app to Dataverse.
 7. To sync the data for **InvoiceAccount** and **ContactPersonId** from Dataverse to the Finance and Operations app, you must use a data integration project.
 
@@ -215,4 +215,4 @@ If any rows in the customer entity have values in the **ContactPersonID** and **
 
     The initial synchronization of the rows is now completed.
 
-8. In the Finance and Operations app, turn change tracking back on for the **Customers V3** entity.
+8. In the Finance and Operations app, turn change tracking back on for the **Customers V3** table.

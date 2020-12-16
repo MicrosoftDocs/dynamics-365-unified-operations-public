@@ -40,7 +40,7 @@ In Finance and Operations, the concept of a *company* is both a legal construct 
 
 Dataverse doesn't have an equivalent concept. The closest concept is *business unit*, which is primarily a security and visibility boundary for user data. This concept doesn't have the same legal or business implications as the company concept.
 
-Because business unit and company aren't equivalent concepts, it isn't possible to force a one-to-one (1:1) mapping between them for the purpose of Dataverse integration. However, because users must, by default, be able to see the same rows in the application and Dataverse, Microsoft has introduced a new entity in Dataverse that is named cdm\_Company. This entity is equivalent to the Company entity in the application. To help guarantee that visibility of rows is equivalent between the application and Dataverse out of the box, we recommend the following setup for data in Dataverse:
+Because business unit and company aren't equivalent concepts, it isn't possible to force a one-to-one (1:1) mapping between them for the purpose of Dataverse integration. However, because users must, by default, be able to see the same rows in the application and Dataverse, Microsoft has introduced a new table in Dataverse that is named cdm\_Company. This table is equivalent to the Company table in the application. To help guarantee that visibility of rows is equivalent between the application and Dataverse out of the box, we recommend the following setup for data in Dataverse:
 
 + For each Finance and Operations Company row that is enabled for dual-write, an associated cdm\_Company row is created.
 + When a cdm\_Company row is created and enabled for dual-write, a default business unit is created that has the same name. Although a default team is automatically created for that business unit, the business unit isn't used.
@@ -56,23 +56,23 @@ Because of this configuration, any row that is related to the USMF company will 
 + The "Sales Manager" role is assigned to members of the "USMF Sales" team.
 + Users who have the "Sales Manager" role can access any account rows that are members of the same business unit that they are members of.
 + The "USMF Sales" team is linked to the USMF business unit that was mentioned earlier.
-+ Therefore, members of the "USMF Sales" team can see any account that is owned by the "USMF DW" user, which would have come from the USMF Company entity in Finance and Operations.
++ Therefore, members of the "USMF Sales" team can see any account that is owned by the "USMF DW" user, which would have come from the USMF Company table in Finance and Operations.
 
 ![How teams can be used](media/dual-write-company-2.png)
 
 As the preceding illustration shows, this 1:1 mapping between business unit, company, and team is just a starting point. In this example, a new "Europe" business unit is manually created in Dataverse as the parent for both DEMF and ESMF. This new root business unit is unrelated to dual-write. However, it can be used to give members of the "EUR Sales" team access to account data in both DEMF and ESMF by setting the data visibility to **Parent/Child BU** in the associated security role.
 
-A final topic to discuss is how dual-write determines which owner team it should assign rows to. This behavior is controlled by the **Default owning team** field on the cdm\_Company row. When a cdm\_Company row is enabled for dual-write, a plug-in automatically creates the associated business unit and owner team (if it doesn't already exist), and sets the **Default owning team** field. The admin can change this field to a different value. However, the admin can't clear the field as long as the entity is enabled for dual-write.
+A final topic to discuss is how dual-write determines which owner team it should assign rows to. This behavior is controlled by the **Default owning team** column on the cdm\_Company row. When a cdm\_Company row is enabled for dual-write, a plug-in automatically creates the associated business unit and owner team (if it doesn't already exist), and sets the **Default owning team** column. The admin can change this column to a different value. However, the admin can't clear the column as long as the table is enabled for dual-write.
 
 > [!div class="mx-imgBorder"]
-![Default owning team field](media/dual-write-default-owning-team.jpg)
+![Default owning team column](media/dual-write-default-owning-team.jpg)
 
 ## Company striping and bootstrapping
 
-Dataverse integration brings company parity by using a company identifier to stripe data. As the following illustration shows, all company-specific tables are extended so that they have a many-to-one (N:1) relationship with the cdm\_Company entity.
+Dataverse integration brings company parity by using a company identifier to stripe data. As the following illustration shows, all company-specific tables are extended so that they have a many-to-one (N:1) relationship with the cdm\_Company table.
 
 > [!div class="mx-imgBorder"]
-![N:1 relationship between a company-specific entity and the cdm_Company entity](media/dual-write-bootstrapping.png)
+![N:1 relationship between a company-specific table and the cdm_Company table](media/dual-write-bootstrapping.png)
 
 + For rows, after a company is added and saved, the value becomes read-only. Therefore, users should make sure that they select the correct company.
 + Only rows that have company data are eligible for dual-write between the application and Dataverse.
@@ -87,7 +87,7 @@ There are several ways to auto-populate the company name in customer engagement 
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Set default company on Organization Information section.":::
 
-+ If you have **Write** access to the **SystemUser** entity for the **Business Unit** level, then you can change the default company on any form by selecting a company from the **Company** drop-down menu.
++ If you have **Write** access to the **SystemUser** table for the **Business Unit** level, then you can change the default company on any form by selecting a company from the **Company** drop-down menu.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Changing the company name on a new account.":::
 
@@ -97,12 +97,12 @@ There are several ways to auto-populate the company name in customer engagement 
 
 + If you are a system configurator or administrator, and you want to auto-populate company data on a custom form, then you can use [form events](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use the following events. You can use any out-of-the-box form, for example, the **Account** form.
 
-    + **OnLoad** event for the form: Set the **defaultCompany** field.
-    + **OnChange** event for the **Company** field: Set the **updateDefaultCompany** field.
+    + **OnLoad** event for the form: Set the **defaultCompany** column.
+    + **OnChange** event for the **Company** column: Set the **updateDefaultCompany** column.
 
 ## Apply filtering based on the company context
 
-To apply filtering based on the company context on your custom forms or on custom lookup fields added to the standard forms, open the form and use the **Related Records Filtering** section to apply the company filter. You must set this for each lookup field that requires filtering based on the underlying company on a given row. The setting is shown for **Account** in the following illustration.
+To apply filtering based on the company context on your custom forms or on custom lookup columns added to the standard forms, open the form and use the **Related Records Filtering** section to apply the company filter. You must set this for each lookup column that requires filtering based on the underlying company on a given row. The setting is shown for **Account** in the following illustration.
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Apply company context":::
 
