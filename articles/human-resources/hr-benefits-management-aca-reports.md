@@ -165,15 +165,27 @@ To check the status of your reports, you can navigate to the **Electronic report
 You can use the **Worker Affordable Care coverage** page to see which employees have been assigned to each coverage 
 group, which employees don’t need to be included on a report, and which employees are unassigned.
 
-If any of the default values from the Affordable Care coverage group have been overridden an asterisk will appear next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
+1. In the **Benefits management** workspace, select **Worker Affordable Care coverage**.
 
-You can also use the inquiry window to understand which employees have been flagged as not ACA reportable, meaning you don’t need to track whether coverage was offered to them and will not need to issue a 1095-C to them at the end of the year. By selecting **Not ACA reportable** in the **Filter by** field, you can generate a list of all employees that have been flagged to not receive a 1095-C.
+2. Select a group from the **Group name dropdown**.
 
-In addition to viewing a list of employees that are not ACA reportable, you can also view any employees who are unassigned (the **ACA Report coverage** field is empty) or that have been assigned to an Affordable Care coverage group that is expired for the year selected in the **Year** field.
+   ![View ACA coverage](./media/hr-benefits-management-view-coverage.png)
 
-You can export lists of employees that were generated using any of the filtering options to
-Excel.
+If any of the default values from the Affordable Care coverage group have been overridden, an asterisk will appear next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
 
-If you need to report covered individuals because as an employer you provide self-insured coverage you can also view any dependents covered under benefit plans that have been marked as **ACA reportable** by selecting the View Dependent coverage action on the action pane strip.
+You can also view employees flagged as not ACA-reportable and who won't need a form 1095-C. In the **Filter by** dropdown, select **Not ACA reportable**.
 
-**Note:** Only benefits whose plan has been marked as **ACA reportable** will display in the inquiry window.
+To view employees who are unassigned to a group or who are assigned to an expired group, select **Unassigned or expired group** in the **Filter by** dropdown.
+
+To export any of these lists to Excel:
+
+1. Select the **Open in Microsoft Office** button.
+
+2. Select **HCM Human Resources temporary table for internal use**.
+
+3. Select **Download**.
+
+If you need to report covered individuals because you provide self-insured coverage, you can also view any dependents covered under benefit plans that have been marked as **ACA reportable** by selecting **View Dependent coverage** on the top of the page.
+
+> [!NOTE]
+> Only benefits plans marked as **ACA reportable** will display on the page.
