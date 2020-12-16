@@ -160,7 +160,7 @@ You can generate ACA forms 1095-B and 1095-C and distribute them to each of your
 
 To check the status of your reports, you can navigate to the **Electronic reporting jobs** page by using the search bar.
 
-## Viewing information
+## View ACA coverage information
 
 You can use the **Worker Affordable Care coverage** page to see which employees have been assigned to each coverage 
 group, which employees don’t need to be included on a report, and which employees are unassigned.
