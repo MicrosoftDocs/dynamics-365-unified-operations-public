@@ -5,7 +5,7 @@ title: Provision a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
 manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -135,18 +135,17 @@ To initialize the CSU, follow these steps.
 
 If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.
 
-If the CSU initialization fails with the following error message: "Evaluation (demo/test) environments need to register the scale unit connector application <App-ID> in headquarters."
+If the CSU initialization fails with the error message "Evaluation (demo/test) environments need to register the scale unit connector application <application ID> in headquarters," make note of the application ID GUID and follow the steps below to register the RDS application in headquarters.
 
-Please make note of the "App-ID"-GUID and run the following steps to register the RDS application in the Headquarters
+### Register the RDS application in Commerce headquarters (if required)
 
-### Registering the RDS application in the Headquarters (if required)
+To register the RDS application in Commerce headquarters, follow these steps.
 
-1. Log in to the Headquarters.
-1. Navigate to **System administration** > **Setup** > **Azure Active Directory applications**.
-1. Enter the App-ID shown in the error message in the **Client Id** column.
-1. Enter any descriptive text (e.g. **CSU Eval**) in the **Name** column.
-1. Enter **RetailServiceAccount** in the **User ID** column.
-1. Retry the CSU deployment from the LCS
+1. In Commerce headquarters, go to **System administration \> Setup \> Azure Active Directory applications**.
+1. In the **Client Id** column, enter the application ID shown in the CSU initialization error message.
+1. In the **Name** column, enter any descriptive text (for example, **CSU Eval**) .
+1. In the **User ID** column, enter "RetailServiceAccount".
+1. Retry the CSU initialization and deployment from LCS.
 
 ### Initialize e-Commerce
 
