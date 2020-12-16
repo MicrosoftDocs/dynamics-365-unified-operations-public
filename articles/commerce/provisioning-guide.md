@@ -135,11 +135,15 @@ To initialize the CSU, follow these steps.
 
 If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.
 
-If the CSU initialization fails with the error message "Evaluation (demo/test) environments need to register the scale unit connector application <application ID> in headquarters," make note of the application ID GUID and follow the steps below to register the RDS application in headquarters.
+During the deployment process, you may see the following message:
 
-### Register the RDS application in Commerce headquarters (if required)
+``Evaluation (demo/test) environments need to register the scale unit connector application <application ID> in headquarters.``
 
-To register the RDS application in Commerce headquarters, follow these steps.
+If the CSU initialization fails with this message, make note of the application ID GUID and then follow the steps below to register the CSU deployment application in headquarters.
+
+### Register the CSU deployment application in Commerce headquarters (if required)
+
+To register the CSU deployment application in Commerce headquarters, follow these steps.
 
 1. In Commerce headquarters, go to **System administration \> Setup \> Azure Active Directory applications**.
 1. In the **Client Id** column, enter the application ID shown in the CSU initialization error message.
