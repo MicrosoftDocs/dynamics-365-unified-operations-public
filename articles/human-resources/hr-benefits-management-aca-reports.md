@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate ACA reports in Benefits management
+title: Generate Affordable Care Act reports in Benefits management
 description: Benefits management helps you track information reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
 author: andreabichsel
 manager: tfehr
@@ -123,7 +123,7 @@ To enter exceptions to any of the Affordable Care coverage group values, follow 
 
 5. Select **Edit**.
 
-6. For each month that require changes, select the **Override default** checkbox and then change the other values as needed.
+6. For each month that requires changes, select the **Override default** checkbox and then change the other values as needed.
 
    ![Override default](./media/hr-benefits-management-aca-override-default.png)
 
@@ -169,7 +169,7 @@ group, which employees don’t need to be included on a report, and which employ
 
 2. Select a group from the **Group name dropdown**.
 
-   ![View ACA coverage](./media/hr-benefits-management-view-coverage.png)
+   ![View ACA coverage](./media/hr-benefits-management-aca-view-coverage.png)
 
 If any of the default values from the Affordable Care coverage group have been overridden, an asterisk will appear next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
 
