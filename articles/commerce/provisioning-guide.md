@@ -121,7 +121,7 @@ To deploy the environment, follow these steps.
 
 ### Initialize the Commerce Scale Unit (cloud)
 
-To initialize CSU, follow these steps.
+To initialize the CSU, follow these steps.
 
 1. In the **Cloud-hosted environments** view, select your environment in the list.
 1. In the environment view on the right, select **Full details**. The environment details view appears.
@@ -134,6 +134,19 @@ To initialize CSU, follow these steps.
 1. Before you continue, make sure that the status of your CSU is **Success**. Initialization takes approximately two to five hours.
 
 If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.
+
+If the CSU initialization fails with the following error message: "Evaluation (demo/test) environments need to register the scale unit connector application <App-ID> in headquarters."
+
+Please make note of the "App-ID"-GUID and run the following steps to register the RDS application in the Headquarters
+
+### Registering the RDS application in the Headquarters (if required)
+
+1. Log in to the Headquarters.
+1. Navigate to **System administration** > **Setup** > **Azure Active Directory applications**.
+1. Enter the App-ID shown in the error message in the **Client Id** column.
+1. Enter any descriptive text (e.g. **CSU Eval**) in the **Name** column.
+1. Enter **RetailServiceAccount** in the **User ID** column.
+1. Retry the CSU deployment from the LCS
 
 ### Initialize e-Commerce
 
