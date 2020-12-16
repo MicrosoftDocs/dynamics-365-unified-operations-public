@@ -3,9 +3,9 @@
 
 title: Cash flow forecasting
 description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
-author: saraschi2
+author: JodiChristiansen
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -104,7 +104,7 @@ On the **Dimensions** tab, choose from the list of dimensions to use for filteri
 
 ### Project management and accounting
 
-In version 10.0.17 a new feature enables integration with Project management and accounting with Cash flow forecasting. On the **Feature management** workspace enable the **Cash flow Project forecast** feature to include the forecasted costs and revenues in the Cash flow forecast. On the **Project management and accounting** tab of the **Cash flow forecast setup** page, mark which project types and transaction types to include in the cash flow forecast. Then select the Project forecast model, a Reduction type submodel works best. No liquidity account is needed as the default accounts from Accounts receivable setup are used. A budget model can also be used but only one type can be selected in the Cash flow forecast setup page for Project management and accounting. A forecast model allows for the most flexibility when using Project management and accounting or Project Operations.
+In version 10.0.17 a new feature enables integration with Project management and accounting and Cash flow forecasting. On the **Feature management** workspace enable the **Cash flow Project forecast** feature to include the forecasted costs and revenues in the Cash flow forecast. On the **Project management and accounting** tab of the **Cash flow forecast setup** page, mark which project types and transaction types to include in the cash flow forecast. Then select the Project forecast model, a Reduction type submodel works best. No liquidity account is needed as the default accounts from Accounts receivable setup are used. A budget model can also be used but only one type can be selected in the Cash flow forecast setup page for Project management and accounting. A forecast model allows for the most flexibility when using Project management and accounting or Project Operations.
 
 Once enabled the cash flow forecast can be viewed on each project on the All Projects page by selecting Plan in the action bar and then Cash flow forecast in the Forecast section. On the Cash overview workspaces (see Reporting section below) the **Project forecast** displays the inflows (project forecast revenue) and the outflows (project forecast costs). The project stage needs to be set to In process for the amounts to be included on the Cash overview workspaces.
 
