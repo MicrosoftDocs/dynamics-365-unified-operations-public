@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate Affordable Care Act (ACA) reports
+title: Generate ACA reports in Benefits management
 description: Benefits management helps you track information reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
 author: andreabichsel
 manager: tfehr
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 
-# Generate Affordable Care Act (ACA) reports
+# Generate ACA reports in Benefits management
 
 [!include [banner](includes/preview-feature.md)]
 
@@ -65,6 +65,7 @@ Affordable Care coverage groups help you manage this information for multiple em
 3. Enter information for each field as follows:
 
    | Field | Description |
+   | --- | --- |
    | **Name** | Enter a name for the group. |
    | **Description** | Enter a description for the group. |
    | **Offer of coverage** | The coverage offered to employees and their spouse or partner and dependents. |
@@ -92,33 +93,77 @@ Affordable Care coverage groups help you manage this information for multiple em
 
    ![Assign employees to a group](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
-## Maintaining multiple versions of a coverage group
+## Maintain multiple versions of coverage options
 
-You can maintain multiple versions of any coverage group, which allows you to make changes that keep the group’s information current, without having to create a new group and reassign employees to it when something changes in your organization or in the benefits that are offered. 
+You can maintain multiple versions of any coverage group, so you can make changes to keep the group’s information current without having to create a new group and reassign employees to it when something changes in your organization or offered benefits. 
 
-After you’ve created the Affordable Care coverage groups that you need, you can choose to mass assign the groups to employees using the **Mass assignment** functionality on the page, or you can go to each employee and indicate whether ACA information needs to tracked and reported for that employee as well as assigning the employee to an Affordable Care coverage group.
+After you’ve created Affordable Care coverage groups, you can mass assign employees to groups or you can individually assign employees to groups and indicate whether ACA information must be tracked and reported.
 
-If affordable care coverage information doesn’t need to be tracked or reported for an employee, for example if they are a part-time employee, the **Report coverage** field could be set to No. Although each employee for which ACA information needs to be tracked needs to be assigned to an Affordable Care coverage group, you can still change the **Offer of coverage**, **Employee share of cost** and **Safe Harbor** options for any month – or months – that may need different values than those entered in the Affordable Care coverage group.
+If you don't need to track and report ACA information for an employee (for example, if they work part time), you can set the **Report coverage** field to **No**.
 
-To enter exceptions to any of the Affordable Care coverage group values, click on the Affordable Care Coverage link found on the Worker detail page, which is under the Additional information section on the Employment tab.
+### Override defaults for an employee
 
-## Reporting health care coverage
+For employees that are assigned to an Affordable Care coverage group, you can change the following options for any months that need different values than those entered in the coverage group:
 
-In addition to tracking what if any health insurance coverage was offered to a full-time employee, if the employer offers employer-sponsored self-insured health coverage for which the employee is enrolled (regardless of whether their employment status is full-time or part-time), additional information needs to be reported on the 1095-C. Each employee (including dependents) covered by the employer-sponsored benefit plans needs to be included on the report for the months they were covered. 
+- **Offer of coverage**
+- **Employee share of cost**
+- **Applicable section 4980H safe harbor**
 
-You can indicate whether or not each Benefit plan must be reported by selecting the **ACA reportable** check box.
+To enter exceptions to any of the Affordable Care coverage group values, follow these steps:
 
-In addition, if employees have chosen to have any of their dependents covered under a benefit the coverage period for the dependant is determined based on when the dependant was enrolled in the Benefits or taken off due to either Enrollment or Life event related changes. **Coverage dates for dependants** are automatically computed based on the period the dependant was aligible and active on a plan during the enrollment year.
+1. In the **Personnel management** workspace, select **Links**, and then select **Workers**.
 
-## Generate 1095B and 1095C forms
+2. Select the employee from the list.
 
-You can also generate 1095-B and 1095-C forms from with in the product, and distribute them to each of your employees. Electronically generating 1095-C and the corresponding 1094-C transmittal files which can be used to send to the IRS, can also be generated from the system.  
+3. Select the **Employment** tab.
 
-When generating the 1095-C form, enter in the appropriate tax year and indicate if social security numbers should be masked. If you are printing 1095-C forms for more than 500 employees, you will receive more than one PDF file. It’s recommended that you increase the **Maximum file size** in the **Document management parameters** window to 150 MB.
+4. Under **MORE INFORMATION**, select **Affordable Care coverage**.
+
+   ![Change options for one employee](./media/hr-benefits-management-aca-change-single-employee.png)
+
+5. Select **Edit**.
+
+6. For each month that require changes, select the **Override default** checkbox and then change the other values as needed.
+
+   ![Override default](./media/hr-benefits-management-aca-override-default.png)
+
+7. Select **Save**.
+
+## Report health care coverage
+
+In addition to health insurance provided by the company, you must also track any employer-sponsored, self-insured health coverage for full- and part-time employees. Each employee, along with their dependents, must be included on the 1095-C report for the months they were covered.
+
+To indicate whether a benefit plan must be reported:
+
+1. In the **Benefits management** workspace, select **Benefit plans**, and then select the benefit plan to report.
+
+2. Select **Edit**.
+
+3. Change the **Reported under the Affordable Care Act** toggle to **Yes**.
+
+   ![Report health care coverage](./media/hr-benefits-management-aca-report-coverage.png)
+
+4. Select **Save**.
+
+If an employee elects health care coverage for a dependent, the dependent's coverage period is determined by when the dependent was enrolled or removed. **Coverage dates for dependents** are automatically computed, based on the period the dependent was eligible and active in a plan during the enrollment year.
+
+## Generate 1095-B and 1095-C forms
+
+You can generate ACA forms 1095-B and 1095-C and distribute them to each of your employees. You can also electronically generate form 1095-C and the corresponding 1094-C transmittal files to send to the Internal Revenue Service (IRS).
+
+1. Select the **Benefits management** workspace, and then select **ACA 1095-B form** or **ACA 1095-C form**.
+
+2. Change the parameters as needed and then select **OK**.
+
+   > [!NOTE]
+   > If you're printing 1095-C forms for more than 500 employees, you'll receive more than one PDF file. We recommend increasing the **Maximum file size in megabytes** field on the **Document management parameters** page to 150. (You can navigate to that page by using the search bar.)
+
+To check the status of your reports, you can navigate to the **Electronic reporting jobs** page by using the search bar.
 
 ## Viewing information
 
-You can use the **Worker Affordable Care coverage** page to see which employees have been assigned to each coverage group, which employees don’t need to be included on a report, and which employees are unassigned.
+You can use the **Worker Affordable Care coverage** page to see which employees have been assigned to each coverage 
+group, which employees don’t need to be included on a report, and which employees are unassigned.
 
 If any of the default values from the Affordable Care coverage group have been overridden an asterisk will appear next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
 
