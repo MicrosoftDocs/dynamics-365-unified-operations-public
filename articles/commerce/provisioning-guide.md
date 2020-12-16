@@ -147,7 +147,7 @@ To register the CSU deployment application in Commerce headquarters, follow thes
 
 1. In Commerce headquarters, go to **System administration \> Setup \> Azure Active Directory applications**.
 1. In the **Client Id** column, enter the application ID shown in the CSU initialization error message.
-1. In the **Name** column, enter any descriptive text (for example, **CSU Eval**) .
+1. In the **Name** column, enter any descriptive text (for example, "CSU Eval") .
 1. In the **User ID** column, enter "RetailServiceAccount".
 1. Retry the CSU initialization and deployment from LCS.
 
