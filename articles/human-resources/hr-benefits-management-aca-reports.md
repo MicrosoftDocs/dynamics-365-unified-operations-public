@@ -39,7 +39,7 @@ Benefits management helps you track information reported on Form 1095-B and Form
 To use this feature, you must first enable **Advanced Benefits Management**. For more information, including important caveats about Benefits management, see [Enable or disable Benefits management](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
 > [!IMPORTANT]
->You can only use ACA reporting either from the Benefits management workspace or from the legacy Benefits workspace, not both. For example, if you switched to Benefits management, ACA reporting is only available from that workspace and not from legacy Benefits.<br>
+>You can only use ACA reporting either from the Benefits management workspace or from the legacy Benefits workspace, not both. For example, if you switched to Benefits management, ACA reporting is only available from that workspace and not from legacy Benefits.<br><br>
 >If you're switching to Benefits management during the middle of an enrollment year, you must correctly configure employee data for the entire year in Benefits management. This will ensure you receive accurate reporting information for the whole year.
 
 ## Getting started
@@ -156,9 +156,24 @@ You can generate ACA forms 1095-B and 1095-C and distribute them to each of your
 2. Change the parameters as needed and then select **OK**.
 
    > [!NOTE]
-   > If you're printing 1095-C forms for more than 500 employees, you'll receive more than one PDF file. We recommend increasing the **Maximum file size in megabytes** field on the **Document management parameters** page to 150. (You can navigate to that page by using the search bar.)
+   > If you're printing 1095-C forms for more than 500 employees, you'll receive more than one PDF file. We recommend increasing the **Maximum file size in megabytes** field on the **Document management parameters** page to 150. (You can navigate to that page by using the search bar.)<br><br>
+   > ![Change maximum file size](./media/hr-benefits-management-aca-maximum-file-size.png)
 
-To check the status of your reports, you can navigate to the **Electronic reporting jobs** page by using the search bar.
+3. To check the status of and view your reports, navigate to the **Electronic reporting jobs** page by using the search bar.
+
+   ![Search for electronic reporting jobs](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+
+4. Select the report to view, and then select **Show files**.
+
+   ![Show files](./media/hr-benefits-management-aca-show-files.png)
+
+5. Select **Open**.
+
+   ![Open file](./media/hr-benefits-management-aca-open-file.png)
+
+6. At the bottom of the page, open the .zip file, and then select the report. You can view or print the PDF file.
+
+   ![Sample 1095-C form](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## View ACA coverage information
 
@@ -173,9 +188,11 @@ group, which employees don’t need to be included on a report, and which employ
 
 If any of the default values from the Affordable Care coverage group have been overridden, an asterisk will appear next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
 
-You can also view employees flagged as not ACA-reportable and who won't need a form 1095-C. In the **Filter by** dropdown, select **Not ACA reportable**.
+You can view employees flagged as not ACA-reportable and who won't need a form 1095-C. In the **Filter by** dropdown, select **Not ACA reportable**.
 
 To view employees who are unassigned to a group or who are assigned to an expired group, select **Unassigned or expired group** in the **Filter by** dropdown.
+
+### Export to Excel
 
 To export any of these lists to Excel:
 
@@ -185,7 +202,15 @@ To export any of these lists to Excel:
 
 3. Select **Download**.
 
+### View ACA-reportable dependents
+
 If you need to report covered individuals because you provide self-insured coverage, you can also view any dependents covered under benefit plans that have been marked as **ACA reportable** by selecting **View Dependent coverage** on the top of the page.
+
+![View dependent coverage](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+
+Coverage information for the employee's dependents displays.
+
+![Dependent coverage](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > Only benefits plans marked as **ACA reportable** will display on the page.
