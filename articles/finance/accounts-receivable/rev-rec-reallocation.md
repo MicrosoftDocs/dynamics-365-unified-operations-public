@@ -90,7 +90,7 @@ After updating reallocation
 [![Sales order lines after reallocation](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
 - **Process** – This button will process or post the reallocated revenue prices.  There is no way to reverse the reallocation after choosing Process. The reallocation will run automatically if the Update reallocation button wasn’t selected prior to selecting the Process button.
-  - If none of the sales order lines have been invoiced, the Process button will simply update the revenue price amounts on any sales orders selected for the reallocation. 
+  - If none of the sales order lines have been invoiced, the Process button will update the revenue price amounts on any sales orders selected for the reallocation. 
   - If one or more sales order line has been invoiced, the Process button will post correcting accounting entries and correct the revenue schedule details created for the invoiced sales order line (if they exist).
 - **Expected voucher** – This button will show a preview of the accounting entries created for any sales order lines that have been invoiced.  If none of the lines have been invoiced, nothing will display here.  The reallocation will run automatically if the Update reallocation button wasn’t selected prior to selecting the Expected voucher button.
 - **Revenue reallocation** – This button will open a page displaying the revenue price allocation for all the selected lines. Nothing can be modified here.  It is used to show the line amounts used for performing the reallocation. 
@@ -104,7 +104,7 @@ After updating reallocation
 The following scenario walks through a reallocation scenario where two sales orders are entered, but only confirmed. The same scenario can be done with more than two sales orders in a confirmed state, with similar results. 
 The General ledger parameter is defined as Post invoice corrections to Accounts receivable = No.
 
-[![General ledger parameter setting](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
+[![General ledger parameter setting for the first scenario](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
 
 A sales order is created for customer US_SI_0003. The customer is purchasing a laptop (S0012) and a support plan (S0008) for the laptop.  The laptop’s revenue is recognized immediately (no revenue schedule) and revenue for the support plan will be deferred and recognized over 12 months as defined by the date range in the contract. 
 
@@ -142,7 +142,7 @@ A sales order is created for customer US_SI_0003. The customer is purchasing sof
 
 [![Sales order lines with software installation added](./media/13_rev-rec-scenarios.png)](./media/13_rev-rec-scenarios.png)
 
-The sales order is confirmed. Both items are set up for revenue price allocation so the revenue price is calculated when the sales order is confirmed.. The revenue to recognize can be seen from the **Sales order** Action Pane, (**Manage – Revenue recognition – Revenue price allocation**). The support item will post to a Deferred Revenue account in the amount of $150.00. The software installation will also post to the Deferred Revenue account in the amount of $250.00.  The sum of the revenue prices must equal the sum of the lines’ setup for revenue price allocation, which is equal to $400.00. 
+The sales order is confirmed. Both items are set up for revenue price allocation so the revenue price is calculated when the sales order is confirmed.. The revenue to recognize can be seen from the **Sales order** Action Pane (**Manage – Revenue recognition – Revenue price allocation**). The support item will post to a Deferred Revenue account in the amount of $150.00. The software installation will also post to the Deferred Revenue account in the amount of $250.00.  The sum of the revenue prices must equal the sum of the lines’ setup for revenue price allocation, which is equal to $400.00. 
 
 [![Revenue price allocation with sustained engineering lines](./media/14_rev-rec-scenarios.png)](./media/14_rev-rec-scenarios.png)
 
@@ -200,7 +200,7 @@ This scenario walks through a reallocation scenario where a new line is added to
 
 The General ledger parameter, **Post invoice corrections to Accounts receivable**, should be set to Yes.
  
-[![General ledger parameters for third scenario](./media/25_rev-rec-scenarios.png)](./media/25_rev-rec-scenarios.png)
+[![General ledger parameter setting for the third scenario](./media/25_rev-rec-scenarios.png)](./media/25_rev-rec-scenarios.png)
 
 A sales order is created for customer US_SI_0003. The customer is purchasing a laptop (S0012) and support (S0008) for the laptop.  The laptop’s revenue is recognized immediately, and revenue for the support plan will be deferred and recognized over 12 months as defined by the date range defined in the contract. 
 
