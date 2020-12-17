@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.17
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The **All voyages** page provides voyage details, delivery, costing, and item/purchase-order/transfer-order information. The header section of the page relates to the voyage details and costing information pertaining at a voyage level.
+The **All voyages** page provides voyage details, delivery, costing, and item/purchase-order/transfer-order information. The header section of the page relates to the voyage details and costing information that applies at a voyage level.
 
 On the **Lines** the shipping containers, folios and items attached to the voyage are visible and available for review. Additionally, the price and quantity of the items on the voyage are visible within the lines section of the voyage form.
 
