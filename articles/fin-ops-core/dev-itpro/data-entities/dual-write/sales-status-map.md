@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up the mapping for the sales order status fields
-description: This topic explains how to set up the sales order status fields for dual-write.
+title: Set up the mapping for the sales order status columns
+description: This topic explains how to set up the sales order status columns for dual-write.
 author:  dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -28,15 +28,15 @@ ms.dyn365.ops.version:
 ms.search.validFrom: 2020-06-25
 ---
 
-# Set up the mapping for the sales order status fields
+# Set up the mapping for the sales order status columns
 
 [!include [banner](../../includes/banner.md)]
 
-The fields that indicate sales order status have different enumeration values in Microsoft Dynamics 365 Supply Chain Management and Dynamics 365 Sales. Additional setup is required to map these fields in dual-write.
+The columns that indicate sales order status have different enumeration values in Microsoft Dynamics 365 Supply Chain Management and Dynamics 365 Sales. Additional setup is required to map these columns in dual-write.
 
-## Fields in Supply Chain Management
+## columns in Supply Chain Management
 
-In Supply Chain Management, two fields reflect the status of the sales order. The fields that you must map are **Status** and **Document Status**.
+In Supply Chain Management, two columns reflect the status of the sales order. The columns that you must map are **Status** and **Document Status**.
 
 The **Status** enumeration specifies the overall status of the order. This status is shown on the order header.
 
@@ -56,9 +56,9 @@ The **Document Status** enumeration has the following values:
 - Packing Slip
 - Invoice
 
-## Fields in Sales
+## columns in Sales
 
-In Sales, two fields indicate the status of the order. The fields that you must map are **Status** and **Processing Status**.
+In Sales, two columns indicate the status of the order. The columns that you must map are **Status** and **Processing Status**.
 
 The **Status** enumeration specifies the overall status of the order. It has the following values:
 
@@ -98,7 +98,7 @@ The following table shows the mapping of **Processing Status** between Sales and
 
 ## Setup
 
-To set up the mapping for the sales order status fields, you must enable the **IsSOPIntegrationEnabled** and **isIntegrationUser** attributes.
+To set up the mapping for the sales order status columns, you must enable the **IsSOPIntegrationEnabled** and **isIntegrationUser** attributes.
 
 To enable the **IsSOPIntegrationEnabled** attribute, follow these steps.
 
@@ -115,7 +115,7 @@ To enable the **IsSOPIntegrationEnabled** attribute, follow these steps.
     true}).then(
         function success(result) {
             console.log("Account updated");
-            // perform operations on record update
+            // perform operations on row update
         },
         function (error) {
             console.log(error.message);
@@ -132,13 +132,13 @@ To enable the **IsSOPIntegrationEnabled** attribute, follow these steps.
 
 To enable the **isIntegrationUser** attribute, follow these steps.
 
-1. In Sales, go to **Setting \> Customization \> Customize the System**, select **User entity**, and then open **Form \> User**.
+1. In Sales, go to **Setting \> Customization \> Customize the System**, select **User table**, and then open **Form \> User**.
 
     ![Opening the user form](media/sales-map-user.png)
 
 2. In Field Explorer, find **Integration user mode**, and double-click it to add it to the form. Save your change.
 
-    ![Adding the Integration user mode field to the form](media/sales-map-field-explorer.png)
+    ![Adding the Integration user mode column to the form](media/sales-map-field-explorer.png)
 
 3. In Sales, go to **Setting \> Security \> Users**, and change the view from **Enabled Users** to **Application Users**.
 
@@ -148,8 +148,8 @@ To enable the **isIntegrationUser** attribute, follow these steps.
 
     ![List of application users](media/sales-map-user-mode.png)
 
-5. Change the value of the **Integration user mode** field to **Yes**.
+5. Change the value of the **Integration user mode** column to **Yes**.
 
-    ![Changing the value of the Integration user mode field](media/sales-map-user-mode-yes.png)
+    ![Changing the value of the Integration user mode column](media/sales-map-user-mode-yes.png)
 
 Your sales orders are now mapped.

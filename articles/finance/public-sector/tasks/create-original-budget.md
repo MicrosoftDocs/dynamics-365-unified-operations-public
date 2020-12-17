@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create an original budget and then reverse preliminary budget entries in the public sector
-description: When you create an original budget entry and use the budget model and dimension values that contain preliminary budget amounts, the preliminary budget amounts can be reversed. 
+description: This topic provides information about how to create and reverse an original budget entry using budget model and dimension values that have preliminary budget amounts. 
 author: twheeloc
 manager: AnnBe 
 ms.date: 08/29/2018

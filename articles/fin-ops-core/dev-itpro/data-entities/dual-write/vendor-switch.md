@@ -39,7 +39,7 @@ ms.search.validFrom: 2019-09-20
 
 ## Vendor data flow 
 
-If you choose to use the **Account** entity to store vendors of the **Organization** type and the **Contact** entity to store vendors of the **Person** type, configure the following workflows. Otherwise, this configuration isn't required.
+If you choose to use the **Account** table to store vendors of the **Organization** type and the **Contact** table to store vendors of the **Person** type, configure the following workflows. Otherwise, this configuration isn't required.
 
 ## Use the extended vendor design for vendors of the Organization type
 
@@ -52,18 +52,18 @@ The **Dynamics365FinanceExtended** solution package contains the following workf
 
 To create new workflow processes by using the workflow process templates, follow these steps.
 
-1. Create a workflow process for the **Vendor** entity, and select the **Create Vendors in Accounts Table** workflow process template. Then select **OK**. This workflow handles the vendor creation scenario for the **Account** entity.
+1. Create a workflow process for the **Vendor** table, and select the **Create Vendors in Accounts Table** workflow process template. Then select **OK**. This workflow handles the vendor creation scenario for the **Account** table.
 
     ![Create Vendors in Accounts Table workflow process](media/create_process.png)
 
-2. Create a workflow process for the **Vendor** entity, and select the **Update Vendors in Accounts Table** workflow process template. Then select **OK**. This workflow handles the vendor update scenario for the **Account** entity.
-3. Create a workflow process for the **Account** entity, and select the **Create Vendors in Vendors Table** workflow process template.
-4. Create a workflow process for the **Account** entity, and select the **Update Vendors in Vendors Table** workflow process template.
+2. Create a workflow process for the **Vendor** table, and select the **Update Vendors in Accounts Table** workflow process template. Then select **OK**. This workflow handles the vendor update scenario for the **Account** table.
+3. Create a workflow process for the **Account** table, and select the **Create Vendors in Vendors Table** workflow process template.
+4. Create a workflow process for the **Account** table, and select the **Update Vendors in Vendors Table** workflow process template.
 5. You can configure the workflows as either real-time workflows or background workflows, depending on your requirements. To configure a workflow as a background workflow, select **Convert to a background workflow**.
 
     ![Convert to a background workflow button](media/background_workflow.png)
 
-6. Activate the workflows that you created for the **Account** and **Vendor** tables to start to use the **Account** entity to store information for vendors of the **Organization** type.
+6. Activate the workflows that you created for the **Account** and **Vendor** tables to start to use the **Account** table to store information for vendors of the **Organization** type.
 
 ## Use the extended vendor design for vendors of the Person type
 
@@ -76,9 +76,9 @@ The **Dynamics365FinanceExtended** solution package contains the following workf
 
 To create new workflow processes by using the workflow process templates, follow these steps.
 
-1. Create a workflow process for the **Vendor** entity, and select the **Create Vendors of type Person in Contacts Table** workflow process template. Then select **OK**. This workflow handles the vendor creation scenario for the **Contact** entity.
-2. Create a workflow process for the **Vendor** entity, and select the **Update Vendors of type Person in Contacts Table** workflow process template. Then select **OK**. This workflow handles the vendor update scenario for the **Contact** entity.
-3. Create a workflow process for the **Contact** entity, and select the **Create Vendors of type Person in Vendors Table** template.
-4. Create a workflow process for the **Contact** entity, and select the **Update Vendors of type Person in Vendors Table** template.
+1. Create a workflow process for the **Vendor** table, and select the **Create Vendors of type Person in Contacts Table** workflow process template. Then select **OK**. This workflow handles the vendor creation scenario for the **Contact** table.
+2. Create a workflow process for the **Vendor** table, and select the **Update Vendors of type Person in Contacts Table** workflow process template. Then select **OK**. This workflow handles the vendor update scenario for the **Contact** table.
+3. Create a workflow process for the **Contact** table, and select the **Create Vendors of type Person in Vendors Table** template.
+4. Create a workflow process for the **Contact** table, and select the **Update Vendors of type Person in Vendors Table** template.
 5. You can configure the workflows as either real-time workflows or background workflows, depending on your requirements. To configure a workflow as a background workflow, select **Convert to a background workflow**.
-6. Activate the workflows that you created on the **Contact** and **Vendor** tables to start to use the **Contact** entity to store information for vendors of the **Person** type.
+6. Activate the workflows that you created on the **Contact** and **Vendor** tables to start to use the **Contact** table to store information for vendors of the **Person** type.

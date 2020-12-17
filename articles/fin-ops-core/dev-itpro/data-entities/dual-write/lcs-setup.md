@@ -60,7 +60,7 @@ Follow these steps to set up the dual-write connection.
     - If a Dataverse environment is already provisioned for your tenant, you can select it.
 
         1. Set the **Configure Dataverse** option to **Yes**.
-        2. In the **Available environments** field, select the environment to integrate with your Finance and Operations data. The list includes all environments where you have admin privileges.
+        2. In the **Available environments** column, select the environment to integrate with your Finance and Operations data. The list includes all environments where you have admin privileges.
         3. Select the **Agree** check box to indicate that you agree to the terms and conditions.
 
         ![Dataverse tab when a Dataverse environment is already provisioned for your tenant](../dual-write/media/lcs_setup_1.png)

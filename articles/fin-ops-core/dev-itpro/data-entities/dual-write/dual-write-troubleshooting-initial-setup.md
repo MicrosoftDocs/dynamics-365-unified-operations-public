@@ -75,13 +75,13 @@ To provide app consent, follow these steps.
 
 ## Verify that company data and dual-write teams are set up correctly during linking
 
-To ensure that dual-write works correctly, the companies that you select during configuration are created in the Dataverse environment. By default, these companies are read-only, and the **IsDualWriteEnable** property is set to **True**. In addition, the default owning business unit owner and team are created and include the company name. Before you enable the maps, verify that the default team owner is specified. To find the **Companies (CDM\_Company)** entity, follow these steps.
+To ensure that dual-write works correctly, the companies that you select during configuration are created in the Dataverse environment. By default, these companies are read-only, and the **IsDualWriteEnable** property is set to **True**. In addition, the default owning business unit owner and team are created and include the company name. Before you enable the maps, verify that the default team owner is specified. To find the **Companies (CDM\_Company)** table, follow these steps.
 
 1. In the model-driven app in Dynamics 365, select the filter in the upper-right corner.
 2. In the drop-down list, select **Company**.
 3. Select **Run** to see the results.
 4. Select the company that was linked when you configured dual-write.
-5. Verify that the **Default owning team** field has a value. In the following illustration, the **Default owning team** field is set to **USMF Dual Write**.
+5. Verify that the **Default owning team** column has a value. In the following illustration, the **Default owning team** column is set to **USMF Dual Write**.
 
     ![Verifying the default owning team](media/default_owning_team.png)
 

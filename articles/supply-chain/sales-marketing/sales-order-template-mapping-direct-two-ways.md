@@ -34,6 +34,8 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
 
 ## Data flow in Prospect to cash
@@ -68,8 +70,8 @@ The following synchronization tasks are required before synchronization of sales
 
 | Supply Chain Management  | Sales             |
 |-------------------------|-------------------|
-| CDS sales order headers | SalesOrders       |
-| CDS sales order lines   | SalesOrderDetails |
+| Dataverse sales order headers | SalesOrders       |
+| Dataverse sales order lines   | SalesOrderDetails |
 
 ## Entity flow
 
@@ -79,7 +81,7 @@ You don't have to create orders in Sales. You can create new sales orders in Sup
 
 In Supply Chain Management, filters in the template help guarantee that only the relevant sales orders are included in the synchronization:
 
-- On the sales order, both the ordering customer and the invoicing customer have to originate from Sales to be included in the synchronization. In Supply Chain Management, the **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** fields are used to filter sales orders from the data entities.
+- On the sales order, both the ordering customer and the invoicing customer have to originate from Sales to be included in the synchronization. In Supply Chain Management, the **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** columns are used to filter sales orders from the data tables.
 - The sales order in Supply Chain Management must be confirmed. Only confirmed sales orders or sales orders that have a higher processing status, such as **Shipped** or **Invoiced**, are synchronized to Sales.
 - After a sales order is created or modified, the **Calculate sales totals** batch job in Supply Chain Management must be run. Only sales orders where sales totals are calculated will be synchronized to Sales.
 
@@ -107,10 +109,10 @@ When a sales order line is synchronized from Sales to Supply Chain Management, t
 
 ## Prospect to cash solution for Sales
 
-New fields have been added to the **Order** entity and appear on the page:
+New columns have been added to the **Order** table and appear on the page:
 
 - **Is Maintained Externally** – Set this option to **Yes** when the order is coming from Supply Chain Management.
-- **Processing status** – This field shows the processing status of the order in Supply Chain Management. The following values are available:
+- **Processing status** – This column shows the processing status of the order in Supply Chain Management. The following values are available:
 
     - **Draft** – The initial status when an order is created in Sales. In Sales, only orders with this processing status can be edited.
     - **Active** – The status after the order is activated in Sales by using the **Activate** button.
@@ -145,7 +147,7 @@ Before you synchronize sales orders, it's important that you update the followin
 - Go to **Settings** &gt; **Administration** &gt; **System settings** &gt; **Sales**, and make sure that the following settings are used:
 
     - The **Use system prizing calculation system** option is set to **Yes**.
-    - The **Discount calculation method** field is set to **Line item**.
+    - The **Discount calculation method** column is set to **Line item**.
 
 ### Setup in Supply Chain Management
 
@@ -155,10 +157,10 @@ If you also use work order integration, you need to set up the sales origin. The
 
 1. Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Sales origin**.
 2. Select **New** to create a new sales origin.
-3. In the **Sales origin** field, enter a name for the sales origin, such as **SalesOrder**.
-4. In the **Description** field, enter a description, such as **Sales Order from Sales**.
+3. In the **Sales origin** column, enter a name for the sales origin, such as **SalesOrder**.
+4. In the **Description** column, enter a description, such as **Sales Order from Sales**.
 5. Select the **Origin type assignment** check box.
-6. Set the **Sales origin type** field to **Sales order integration**.
+6. Set the **Sales origin type** column to **Sales order integration**.
 7. Select **Save**.
 
 ### Setup in the Sales Orders (Sales to Supply Chain Management) - Direct Data integration project
@@ -185,12 +187,12 @@ If you also use work order integration, you need to set up the sales origin. The
 ## Template mapping in Data integration
 
 > [!NOTE]
-> The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't part of the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synchronized between.
+> The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** columns aren't part of the default mappings. To map these columns, you must set up a value mapping that is specific to the data in the organizations that the table is synchronized between.
 
 The following illustrations show an example of a template mapping in Data integration.
 
 > [!NOTE]
-> The mapping shows which field information will be synchronized from Sales to Supply Chain Management, or from Supply Chain Management to Sales.
+> The mapping shows which column information will be synchronized from Sales to Supply Chain Management, or from Supply Chain Management to Sales.
 
 ### Sales Orders (Supply Chain Management to Sales) - Direct: OrderHeader
 
