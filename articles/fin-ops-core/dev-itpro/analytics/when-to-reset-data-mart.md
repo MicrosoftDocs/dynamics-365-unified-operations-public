@@ -2,7 +2,7 @@
 # required metadata
 
 title: When to reset a data mart
-description: Resetting a data mart can be time consuming. Depending on the circumstances, it might or might not be the solution that's needed. This topics lists the circumstances that might be improved by resetting a data mart, as well as circumstances in which resetting your data mart is unlikely to help.
+description: Resetting a data mart can be time consuming. Depending on the circumstances, it might or might not be the solution that's needed. This topic lists the circumstances that might be improved by resetting a data mart, as well as circumstances in which resetting your data mart is unlikely to help.
 author: jinniew
 manager: AnnBe
 ms.date: 12/15/2020
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.15
 
 # When to reset a data mart
 
-Resetting a data mart can be time consuming. Depending on the circumstances, it might or might not be the solution that's needed. This topics lists the circumstances that might be improved by resetting a data mart, as well as circumstances in which resetting your data mart is unlikely to help.  
+Resetting a data mart can be time consuming. Depending on the circumstances, it might or might not be the solution that's needed. This topic lists the circumstances that might be improved by resetting a data mart, as well as circumstances in which resetting your data mart is unlikely to help.  
 
 ## When do you need to do a data mart reset?
 Consider the following questions before resetting a data mart. Answering yes to one or more questions might indicate that your organization can benefit by resetting the data mart.
@@ -49,7 +49,7 @@ There are some circumstances when we don't recommend resetting a data mart. Thes
 - If you have a recurring reset pattern due to any of the following reasons: 
   - **Missing data** - First eliminate report design issues and data sync timing issues, for example, you observe that the fact map hasn’t run since missing data was posted.
   - **Stuck** integration state - If the integration is slow or seems stuck, resetting the data mart is unlikely to resolve the issue.
-  - If there are high number of attempts and missing data, we recommend opening a support incident and working with a support engineer to analyze your situation before doing resetting the data mart.
+  - If a number of attempts to complete a reset have been made, and have been unsuccessful because of missing data, we recommend opening a support incident and working with a support engineer to analyze your situation before attempting to reset to reset the data mart again.
   - Stale records by themselves don't necessarily justify resetting the data mart.  If you have a large data set, the reset process will take some time to run, but is unlikely to result in improvement.
  
 ## What happens during a reset?  
