@@ -66,3 +66,27 @@ Please remember to execute an inventory close as of %3 (31-01-2019) matching a p
 ## Inventory aging report discrepancies
 
 The **Inventory aging report** shows different values when viewed at different storage dimensions (such as site or warehouse). For more information about the reporting logic, see [Inventory aging report examples and logic](inventory-aging-report.md).
+
+## An update conflict can occur in case inventory valuation method is either Standard cost or Moving average
+
+When posting documents like Inventory journals, Purchase
+order - invoices or Sales order – invoices in parallel for scalability and
+performance you may get an update conflict error and some of the documents will not get posted. 
+
+An update conflict can occur in case inventory valuation
+method is either **Standard cost** or **Moving average**. Both are perpetual costing methods meaning that final cost is determine at the time of posting.
+
+The error message could be:
+**Inventory value xx.xx is not expected after the
+proportional expense calculation** *(Moving
+average)*
+
+**The standard cost does not match with the financial inventory value after the update. Value = xx.xx, Qty = yy.yy, Standard cost = zz.zz** *(Standard cost)*
+
+Before Microsoft release the solution to solve the issue, please consider using following work arounds to avoid or reduce occurences:
+Re-post the fail documents.
+1. Re-post the fail documents.
+2. Create documents with less lines.
+2. Avoid decimals on the standard cost. Try to define the Standard cost with **Price quantity** as 1. If you have to specify the **Price quantity** more than 1, try to minimize the decimals of the unit standard cost, ideally less than 2. For example, avoid defining standard cost like **Price**: 10, **Price quantity**: 3, since now the unit standard cost is 3.333333...... 
+3. Avoid having lines holding the same Product + Financial inventory dimensions in majority of the documents.
+4. Lower the degree of parallelization. (May even run faster as it has less update conflicts and retries)
