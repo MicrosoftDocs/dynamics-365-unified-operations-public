@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -537,6 +537,14 @@ When payment transactions aren't successfully processed through the Adyen paymen
 </tr>
 </tbody>
 </table>
+
+#### Invoicing sales orders failed due to stale authorization
+
+| Title | Capture failed due to stale authorization |
+|---|---|---|
+| Symptom | Invoicing sales orders fails with "Exception has been thrown by the target of an invocation. System.ArgumentNullException: Value cannot be null." The underlying error in the logs is "The following error occurred during the capture call - Dynamics 365 Payment Connector for Adyen: Error code Decline message Capture failed due to stale authorization." |
+| Root cause | This error happens when an authorization older than the **Authorization stale period (days)** is sent to the payment connector for capture. |
+| Fix | Ensure the value of **Number of days before expired** in **Accounts receivable parameters, Credit Card** is set to **1 less day** than the value set in merchant properties for all channels and then retry invoicing. The recommended value for **Authorization stale period (days)** is 14 in Adyen merchant properties and 13 in Accounts receivables parameters. |
 
 ## Additional resources
 

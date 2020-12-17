@@ -99,9 +99,9 @@ The first step is to customize your table maps by modifying existing table maps 
 
 1. In the Finance and Operations app, on the **Table mappings** tab, customize the mappings for the default table map that you just installed by using a solution. To add a new table map, select **Add Table**. In both cases, when you save the table map, you're prompted to specify the publisher and the version number.
 
-    The following figure shows how to add a new field that is named **birthday** to the contacts - CDS Contacts V2 table map and select the default publisher.
+    The following figure shows how to add a new column that is named **birthday** to the contacts - CDS Contacts V2 table map and select the default publisher.
 
-    ![Adding a new birthday field](media/add-new-birthday-field.png)
+    ![Adding a new birthday column](media/add-new-birthday-field.png)
 
     > [!NOTE]
     > When you [create a new solution](#create-new-solution) by using these modified table maps, you must specify the same publisher.
@@ -179,7 +179,7 @@ You can test your exported solution package by importing and applying it to anot
 
 ### Use the table map version
 
-Sometimes, a solution might contain different implementations of an table map. For example, the version of the contacts - CDS Contacts V2 table map might have a different publisher or a newer version number. In these cases, you can use the **Table Map version** button to select which table map you want to use in your environment.
+Sometimes, a solution might contain different implementations of a table map. For example, the version of the contacts - CDS Contacts V2 table map might have a different publisher or a newer version number. In these cases, you can use the **Table Map version** button to select which table map you want to use in your environment.
 
 ![Selecting the table map to use in an environment](media/select-entity-map.png)
 

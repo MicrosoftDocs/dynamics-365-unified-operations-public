@@ -58,14 +58,14 @@ The sample code is a C# application that you can load in Visual Studio. It takes
 
 After unzipping and opening the solution in Visual Studio and restoring the NuGet packages, search for **TODO** in the code. Each decision you need to make about how you want to bootstrap company information is noted by a **TODO**, with sample code for a canonical implementation. 
 
-The sample code shows only one of many ways you might categorize entity rows by company. By changing the logic in the **TODO** sections, you can create your custom categorization. 
+The sample code shows only one of many ways you might categorize table rows by company. By changing the logic in the **TODO** sections, you can create your custom categorization. 
  
 ## What should I expect?
-By default, the sample application lets you provide a dictionary of business unit-to-company code mappings. Any entity you bootstrap with an **OwningBusinessUnit** field is automatically set to use the specified company. Any entity without an **OwningBusinessUnit** field, such as product, will set the company based on the mapping with an empty business unit value.
+By default, the sample application lets you provide a dictionary of business unit-to-company code mappings. Any table you bootstrap with an **OwningBusinessUnit** column is automatically set to use the specified company. Any table without an **OwningBusinessUnit** column, such as product, will set the company based on the mapping with an empty business unit value.
 
-The console application expects one parameter, either **–simulate** or **–apply**. If you use the **–simulate** command line parameter, then no data is updated. Only **simulation_<entityname>.csv** files are generated in the same directory as the tool, one for each entity that would have been updated. You can iteratively review these files while working to ensure the code updates company values as expected. 
+The console application expects one parameter, either **–simulate** or **–apply**. If you use the **–simulate** command line parameter, then no data is updated. Only **simulation_<tablename>.csv** files are generated in the same directory as the tool, one for each table that would have been updated. You can iteratively review these files while working to ensure the code updates company values as expected. 
 
-When you finish with the simulated updates, then use the **–apply** parameter. This updates all rows that currently have an incorrect company value, in batches of 1000 rows at a time (by default). The code is idempotent as provided, meaning you can re-run it and only the incorrectly assigned companies will be updated. When running with **–apply**, the code outputs CSV files of the changes made, which are named **applied_<entityname>.csv**. 
+When you finish with the simulated updates, then use the **–apply** parameter. This updates all rows that currently have an incorrect company value, in batches of 1000 rows at a time (by default). The code is idempotent as provided, meaning you can re-run it and only the incorrectly assigned companies will be updated. When running with **–apply**, the code outputs CSV files of the changes made, which are named **applied_<tablename>.csv**. 
 
  ```csharp
  using Microsoft.Crm.Sdk.Messages;
@@ -81,13 +81,13 @@ using System.IO;
 namespace BootstrapCompany
 {
     /// <summary>
-    /// Application to bootstrap the company field on existing rows in CDS in preparation for integration to Finance and Operations.
+    /// Application to bootstrap the company column on existing rows in Dataverse in preparation for integration to Finance and Operations.
     /// </summary>
     /// <remarks>
-    /// This application assumes that the target companies already exist in the CDS environment in the cdm_Company table and are
+    /// This application assumes that the target companies already exist in the Dataverse environment in the cdm_Company table and are
     /// identified by their company code. It also assumes that the current owning business unit of each row should be used
     /// to categorize by company. This logic can easily be updated to utilize alternate sources of categorization including
-    /// custom tables, teams, custom fields on tables, or any other data. This code is provided only as a sample. 
+    /// custom tables, teams, custom columns on tables, or any other data. This code is provided only as a sample. 
     /// 
     /// To utilize this code, update each of the locations currently denoted with a TODO statement.
     /// 
@@ -96,7 +96,7 @@ namespace BootstrapCompany
     public class Program
     {
         /// <summary>
-        /// The number of rows to query and update in CDS in a single operation.
+        /// The number of rows to query and update in Dataverse in a single operation.
         /// </summary>
         /// <remarks>
         /// The larger this number, the fewer calls will need to be made, so the faster the updates
@@ -109,7 +109,7 @@ namespace BootstrapCompany
         const int requestBatchSize = 1000;
 
         /// <summary>
-        /// The number of faults that may be seen in CDS before the operation is aborted and an exception is thrown.
+        /// The number of faults that may be seen in Dataverse before the operation is aborted and an exception is thrown.
         /// </summary>
         /// <remarks>
         /// An occassional error due to contention when updating large tables in production is expected, so by default
@@ -188,25 +188,25 @@ namespace BootstrapCompany
                 // TODO: Provide a mapping of OwningBusinessUnit name to cdm_Company company ID. You can reuse
                 // the same company ID for multiple business units if desired. In this example, it assumes that
                 // the business unit named "USMF" is related to the company "USMF". If all rows were owned
-                // by the same root business unit, then the first field in the dictionary should be set to the 
+                // by the same root business unit, then the first column in the dictionary should be set to the 
                 // name of the root business unit, usually the same value as the organization (eg, "Contoso").
                 Dictionary<string, string> businessUnitToCompanyMapping = new Dictionary<string, string>()
                 {
-                    { "", "USMF" }, // The default mapping to use for any entity that doesn't have an owningbusinessunit field
+                    { "", "USMF" }, // The default mapping to use for any table that doesn't have an owningbusinessunit column
                     { "USMF", "USMF" },
                     { "FRRT", "FRRT" },
                 };
 
-                // TODO: Provide a list of tables for which the company field should be backfilled based
+                // TODO: Provide a list of tables for which the company column should be backfilled based
                 // on owning business unit. The list below represents all existing tables for which a cdm_Company
-                // lookup field was added as part of the Finance and Operations dual write project.
+                // lookup column was added as part of the Finance and Operations dual write project.
                 BatchUpdateEntity(orgService, "account", "msdyn_company", businessUnitToCompanyMapping, true, isSimulate, "accountnumber", "name");
                 BatchUpdateEntity(orgService, "contact", "msdyn_company", businessUnitToCompanyMapping, true, isSimulate, "fullname");
                 // ... Add more here
 
-                // Note, the product entity does not have an owningbusinessunit field like most other tables, so
+                // Note, the product table does not have an owningbusinessunit column like most other tables, so
                 // assigning company by Business Unit is not applicable. In this case, whichever mapping specifies an
-                // empty business unit will be used to categorize tables without an owningbusinessunit field.
+                // empty business unit will be used to categorize tables without an owningbusinessunit column.
                 BatchUpdateEntity(orgService, "product", "msdyn_companyid", businessUnitToCompanyMapping, false, isSimulate, "productnumber");
             }
             else
@@ -219,16 +219,16 @@ namespace BootstrapCompany
         }
 
         /// <summary>
-        /// Updates all incorrectly assigned company relationships for the specified entity.
+        /// Updates all incorrectly assigned company relationships for the specified table.
         /// </summary>
-        /// <param name="orgService">The connection to CDS.</param>
-        /// <param name="entityName">The logical name of the entity to update.</param>
-        /// <param name="companyFieldName">The physical name of the field in the entity being updated which contains the cdm_Company id.</param>
+        /// <param name="orgService">The connection to Dataverse.</param>
+        /// <param name="entityName">The logical name of the table to update.</param>
+        /// <param name="companyFieldName">The physical name of the field in the table being updated which contains the cdm_Company id.</param>
         /// <param name="businessUnitToCompanyMapping">A dictionary of business unit name to company code.</param>
-        /// <param name="hasOwningBusinessUnit">true if the entity has an owningbusinessunit field; otherwise, false.</param>
+        /// <param name="hasOwningBusinessUnit">true if the table has an owningbusinessunit field; otherwise, false.</param>
         /// <param name="isSimulate">true to simulate output; otherwise, false.</param>
-        /// <param name="fieldsToExport">A set of fields to export into a CSV for this entity if simulating.</param>
-        /// <returns>true if the entity was successfully processed without any errors; otherwise, false.</returns>
+        /// <param name="fieldsToExport">A set of fields to export into a CSV for this table if simulating.</param>
+        /// <returns>true if the table was successfully processed without any errors; otherwise, false.</returns>
         private static bool BatchUpdateEntity(
             IOrganizationService orgService, 
             string entityName, 
@@ -278,7 +278,7 @@ namespace BootstrapCompany
 
                     // Find the first batch of rows for this business unit with the wrong company ID. Ordering
                     // is not explicity specified, but SQL will most likely process based on the index starting with
-                    // company ID, since all new company ID fields added for Finance and Operations integration have
+                    // company ID, since all new company ID columns added for Finance and Operations integration have
                     // also added a new index starting with company ID. Explicitly specifying order would reduce the
                     // query plan options for SQL and introduce unnecessary overhead.
                     QueryExpression query = new QueryExpression(entityName);
@@ -409,11 +409,11 @@ namespace BootstrapCompany
         }
 
         /// <summary>
-        /// Gets an entity reference to the company with the specified ID if one exists.
+        /// Gets a table reference to the company with the specified ID if one exists.
         /// </summary>
-        /// <param name="orgService">The CDS connection.</param>
+        /// <param name="orgService">The Dataverse connection.</param>
         /// <param name="companyId">The company ID to search for.</param>
-        /// <returns>An entity reference if one exists; otherwise, null.</returns>
+        /// <returns>a table reference if one exists; otherwise, null.</returns>
         private static EntityReference GetCompanyReference(IOrganizationService orgService, string companyId)
         {
             if (cachedCompanyReferences.ContainsKey(companyId))

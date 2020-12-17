@@ -59,14 +59,14 @@ These topics describe dual-write integration.
     + [Enable table map for dual-write](enable-entity-map.md)
 
 + [Currency data-type migration for dual-write](currrency-decimal-places.md)
-+ [Set up the mapping for the sales order status fields](sales-status-map.md)
++ [Set up the mapping for the sales order status columns](sales-status-map.md)
 + [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
 
 ## Managing dual-write after setup
 
-+ [Customize entity and field mappings](customizing-mappings.md)
++ [Customize table and column mappings](customizing-mappings.md)
 + [Handling multiple table maps](multiple-entity-maps.md)
-+ [Edit a legal entity after dual-write setup](edit-legal-entity.md)
++ [Edit a legal table after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 

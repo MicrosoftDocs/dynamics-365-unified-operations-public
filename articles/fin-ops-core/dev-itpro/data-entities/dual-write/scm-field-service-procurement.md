@@ -126,15 +126,15 @@ In addition, Dataverse includes logic that maps vendors with their related accou
 
 ## Supported scenarios
 
-+ Purchase orders can be created and updated by Dataverse users. However, the process and data are controlled by Supply Chain Management. The constraints on updates to purchase order fields in Supply Chain Management apply when updates come from Field Service. For example, you can't update a purchase order if it has been finalized. 
++ Purchase orders can be created and updated by Dataverse users. However, the process and data are controlled by Supply Chain Management. The constraints on updates to purchase order columns in Supply Chain Management apply when updates come from Field Service. For example, you can't update a purchase order if it has been finalized. 
 + If the purchase order is controlled by change management in Supply Chain Management, a Field Service user can update the purchase order only when the Supply Chain Management approval status is *Draft*.
-+ Several fields are managed only by Supply Chain Management and can't be updated in Field Service. To learn which fields can't be updated, review the mapping tables in the product. For the sake of simplicity, most of these fields are set to read-only on Dataverse pages. 
++ Several columns are managed only by Supply Chain Management and can't be updated in Field Service. To learn which columns can't be updated, review the mapping tables in the product. For the sake of simplicity, most of these columns are set to read-only on Dataverse pages. 
 
-    For example, the fields for price information are managed by Supply Chain Management. Supply Chain Management has trade agreements that Field Service can benefit from. Fields such as **Unit price**, **Discount**, and **Net amount** come only from Supply Chain Management. To ensure that the price is synced to Field Service, you should use the **Sync** feature on the **Purchase Order** and **Purchase Order Product** pages in Dataverse when purchase order data has been entered. For more information, see [Sync with the Dynamics 365 Supply Chain Management procurement data on demand](#sync-procurement).
+    For example, the columns for price information are managed by Supply Chain Management. Supply Chain Management has trade agreements that Field Service can benefit from. columns such as **Unit price**, **Discount**, and **Net amount** come only from Supply Chain Management. To ensure that the price is synced to Field Service, you should use the **Sync** feature on the **Purchase Order** and **Purchase Order Product** pages in Dataverse when purchase order data has been entered. For more information, see [Sync with the Dynamics 365 Supply Chain Management procurement data on demand](#sync-procurement).
 
-+ The **Totals** field is available only in Field Service, because there are no up-to-date totals of the purchase order in Supply Chain Management. The totals in Supply Chain Management are calculated based on multiple parameters that aren't available in Field Service.
++ The **Totals** column is available only in Field Service, because there are no up-to-date totals of the purchase order in Supply Chain Management. The totals in Supply Chain Management are calculated based on multiple parameters that aren't available in Field Service.
 + Purchase order lines where only a procurement category is specified, or where the product that is specified is an item of the *Service* product type or Field Service product type, can be initiated only in Supply Chain Management. The lines are then synced to Dataverse and are visible in Field Service.
-+ If only Field Service is installed, not Supply Chain Management, the **Warehouse** field is mandatory on the purchase order. However, if Supply Chain Management is installed, this requirement is relaxed, because Supply Chain Management allows for purchase order lines where no warehouse is specified in certain situations.
++ If only Field Service is installed, not Supply Chain Management, the **Warehouse** column is mandatory on the purchase order. However, if Supply Chain Management is installed, this requirement is relaxed, because Supply Chain Management allows for purchase order lines where no warehouse is specified in certain situations.
 + Product receipts (purchase order receipts in Dataverse) are managed by Supply Chain Management and can't be created from Dataverse if Supply Chain Management is installed. The product receipts from Supply Chain Management are synced from Supply Chain Management to Dataverse.
 + Under-delivery is allowed in Supply Chain Management. The OneFSSCM solution adds logic so that, when the product receipt line (or purchase order receipt product in Dataverse) is created or updated, an inventory journal row is created in Dataverse to adjust the remaining quantity that is on order for under-delivery scenarios.
 
@@ -161,7 +161,7 @@ Line approval statuses are active only when there is a line workflow.
 |---|---|---|---|
 | <ul><li>Open Order (Back order)</li><li>Received</li><li>Invoiced</li><li>Cancelled</li></ul> | <ul><li>Draft</li><li>In Review</li><li>Approved</li><li>Rejected</li><li>In External Review</li><li>Confirmed</li><li>Finalized</li></ul> | <ul><li>Open Order (back order)</li><li>Received</li><li>Invoiced</li><li>Cancelled</li></ul> | <ul><li>Not Submitted</li><li>In Review</li><li>Approved</li><li>Rejected</li></ul> |
 
-The following rules are applied to the status fields:
+The following rules are applied to the status columns:
 
 + The status in Supply Chain Management can't be updated from Field Service. However, in some cases, the status in Field Service will be updated when the purchase order status in Supply Chain Management is changed.
 + If a purchase order in Supply Chain Management is under change management, and a change is being processed, the approval status is *Draft* or *In Review*. In this case, the Field Service approval status will be set to *Null*.
@@ -182,7 +182,7 @@ Supply Chain Management includes procurement data that handles trade agreements,
 3. From the purchase order or purchase order line.
 4. On the Action Pane, select **Sync**.
 
-All fields from Dataverse and Field Service that are shared by Supply Chain Management are synced.
+All columns from Dataverse and Field Service that are shared by Supply Chain Management are synced.
 
 Here are the situations where you might use the **Sync** function:
 
@@ -196,7 +196,7 @@ The following templates are available for the integration of procurement-related
 
 | Supply Chain Management | Field Service | Description |
 |---|---|---|
-| Purchase order header V2 | msdyn\_Purchaseorders | This table contains the fields that represent the purchase order header. |
+| Purchase order header V2 | msdyn\_Purchaseorders | This table contains the columns that represent the purchase order header. |
 | Purchase order line entity | msdyn\_PurchaseOrderProducts | This table contains the rows that represent lines on a purchase order. The product number is used for synchronization. This identifies the product as a stock keeping unit (SKU), including product dimensions. For more information about product integration with Dataverse, see [Unified product experience](product-mapping.md). |
 | Product receipt header | msdyn\_purchaseorderreceipts | This table contains the product receipt headers that are created when a product receipt is posted in Supply Chain Management. |
 | Product receipt line | msdyn\_purchaseorderreceiptproducts | This table contains the product receipt lines that are created when a product receipt is posted in Supply Chain Management. |

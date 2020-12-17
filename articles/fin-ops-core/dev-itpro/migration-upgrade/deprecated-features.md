@@ -976,7 +976,7 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Dynamics
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This functionality has been replaced by another feature. |
-| **Replaced by another feature?**   | Common data service                                      |
+| **Replaced by another feature?**   | Dataverse                                      |
 | **Product areas affected**         | Connector for Dynamics                         |
 | **Status**                         | Removed as of Dynamics AX 7.0.                           |
 
