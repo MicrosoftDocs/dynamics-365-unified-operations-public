@@ -171,7 +171,7 @@ The following table shows which outbound features are supported, and where they 
 | Release to warehouse                                         | Yes | No |
 | Planned cross docking                                        | No  | No |
 | Shipment consolidation                                       | Yes | No |
-| Shipment wave processing                                     | Yes, but finalization of the wave status is handled in the hub |<p>Yes, but initialization and finalization gets handled by the hub and the **Load building and sorting** are not supported<p><b>Note:</b> Access to the hub is required to finalize the wave status as part of the wave processing.</p> |
+| Shipment wave processing                                     | Yes, but only initialization and finalization of the wave is handled in the hub. This means that outbound transfer and sales order processing only can get handled by the scale unit.|<p>No, initialization and finalization gets handled by the hub and the **Load building and sorting** are not supported<p><b>Note:</b> Access to the hub is required to finalize the wave status as part of the wave processing.</p> |
 | Maintain shipments for wave                                  | Yes | No |
 | Warehouse work processing (incl. license plate print)        | No  | <p>Yes, but only for the above mentioned supported capabilities. |
 | Cluster picking                                              | No  | Yes|
