@@ -67,26 +67,22 @@ Please remember to execute an inventory close as of %3 (31-01-2019) matching a p
 
 The **Inventory aging report** shows different values when viewed at different storage dimensions (such as site or warehouse). For more information about the reporting logic, see [Inventory aging report examples and logic](inventory-aging-report.md).
 
-## An update conflict can occur in case inventory valuation method is either Standard cost or Moving average
+## An update conflict occurs when the inventory valuation method is either standard cost or moving average
 
-When posting documents like Inventory journals, Purchase
-order - invoices or Sales order – invoices in parallel for scalability and
-performance you may get an update conflict error and some of the documents will not get posted. 
+When posting documents such as inventory journals, purchase order invoices, or sales order invoices in parallel for scalability and performance, you may get an update conflict error and some of the documents will not get posted. The error can occur when the inventory valuation method is either *Standard cost* or *Moving average*. Both are perpetual costing methods, which means that final cost is determine at the time of posting.
 
-An update conflict can occur in case inventory valuation
-method is either **Standard cost** or **Moving average**. Both are perpetual costing methods meaning that final cost is determine at the time of posting.
+If you are using moving average, the error message looks something like this:
 
-The error message could be:
-**Inventory value xx.xx is not expected after the
-proportional expense calculation** *(Moving
-average)*
+> Inventory value xx.xx is not expected after the proportional expense calculation
 
-**The standard cost does not match with the financial inventory value after the update. Value = xx.xx, Qty = yy.yy, Standard cost = zz.zz** *(Standard cost)*
+If you are using standard cost, the error message looks something like this:
 
-Before Microsoft release the solution to solve the issue, please consider using following work arounds to avoid or reduce occurences:
-Re-post the fail documents.
-1. Re-post the fail documents.
-2. Create documents with less lines.
-2. Avoid decimals on the standard cost. Try to define the Standard cost with **Price quantity** as 1. If you have to specify the **Price quantity** more than 1, try to minimize the decimals of the unit standard cost, ideally less than 2. For example, avoid defining standard cost like **Price**: 10, **Price quantity**: 3, since now the unit standard cost is 3.333333...... 
-3. Avoid having lines holding the same Product + Financial inventory dimensions in majority of the documents.
-4. Lower the degree of parallelization. (May even run faster as it has less update conflicts and retries)
+> The standard cost does not match with the financial inventory value after the update. Value = xx.xx, Qty = yy.yy, Standard cost = zz.zz
+
+Until Microsoft release a solution to solve the issue, consider using following workarounds to avoid or reduce these errors:
+
+- Re-post the failed documents.
+- Create documents with fewer lines.
+- Avoid decimals in the standard cost. Try to define the standard cost with **Price quantity** set to *1*. If you need to specify a **Price quantity** of more than *1*, try to minimize the number of decimal places in the unit standard cost (ideally to less than 2). For example, avoid defining standard cost settings such as **Price** = *10* and **Price quantity** = *3* because that would produce a unit standard cost of 3.333333 (repeating decimal).
+- Avoid having multiple lines that hold the same combination of product and financial inventory dimensions in the majority of the documents.
+- Lower the degree of parallelization. (As a result, your system may actually run faster due to reduced update conflicts and retries.)
