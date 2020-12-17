@@ -52,9 +52,9 @@ If the issue applies to all users, it might be occurring because the approval wo
 
 ### Issue resolution 2
 
-If your workflow uses customized code, issues might occur after you upgrade the system. For example, you might be unable to enable the **Submit** button.
+If your workflow uses customized code, issues might occur after you upgrade the system. For example, in the journal workflow, the **Submit** button might be grayed out so you can't select it to approve a submission.
 
-When the **Submit** button can't be enabled, your workflow might have been customized so that it uses a post-handler for `canSubmitToWorkflow()` in `FormDataUtil`. Therefore, the return value can't override the existing value in the data source (`canSubmitToWorkflow()` is now in forms). To fix this issue, change the way that you extend `canSubmitToWorkflow()`, so that the following code structure is used.
+If the **Submit** button is grayed out, your workflow might have been customized, which means the method of the workflow, `canSubmitToWorkflow()` in `FormDataUtil`, has been extended. To fix this issue, change the way that you extend the method of the `canSubmitToWorkflow()` to use the structure in the following example.
 
 ```xpp
 [ExtensionOf(formStr(InventJournalMovement))]
