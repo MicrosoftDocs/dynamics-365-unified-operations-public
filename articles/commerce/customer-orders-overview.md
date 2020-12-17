@@ -5,7 +5,7 @@ title: Customer orders in Point of Sale (POS)
 description: This topic provides information about customer orders in Point of Sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -104,8 +104,10 @@ Make sure that the POS [screen layout](https://docs.microsoft.com/dynamics365/co
 
 ![Operations on the POS transaction screen](media/customer-order-screen-layout.png)
 
-## Working with customer orders in POS
-> [!NOTE] Using Revenue recognition in Commerce channels - Revenue Recognition functionality is not currently supported for use in Commerce channels (e-Commerce, Point of Sale, Call Center).  Items configured with revenue recognition should not be added to orders created in Commerce channels. 
+## Work with customer orders in POS
+
+> [!NOTE]
+> Revenue recognition functionality isn't currently supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition shouldn't be added to orders created in Commerce channels. 
 
 ### Create a customer order for products that will be shipped to the customer
 
