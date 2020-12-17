@@ -66,7 +66,7 @@ If Post invoice corrections to Accounts receivable is set to Yes, processing of 
 - A new accounting entry is posted to only general ledger base d on the new reallocation revenue prices.  It will not post to Inventory and COGS accounts again because those entries are maintained on the original invoice’s accounting entry. 
 - The invoice in Customer transactions is not impacted or changed and will still reflect the original accounting entry.  There is no reference to the reversing or new accounting entries. 
 
-There are pros and cons to updating General ledger only vs updating Accounts receivable and General ledger. We recommend that you evaluate the requirements for your organization to determine which option to use. By updating Accounts receivable and General ledger, the correct accounting entries will display on the new invoice and can be viewed from the document in Customer transactions.  Also, the settlement process will now use the updated accounting entries for posting any cash discounts and gains orlosses. Some cons include that the credit document and new invoice will appear on customer statements and aging reports, just as any other customer invoice and credit document. The new documents have a description to indicate that they were created as the result of an accounting correction. 
+There are pros and cons to updating General ledger only vs updating Accounts receivable and General ledger. We recommend that you evaluate the requirements for your organization to determine which option to use. By updating Accounts receivable and General ledger, the correct accounting entries will display on the new invoice and can be viewed from the document in Customer transactions.  Also, the settlement process will now use the updated accounting entries for posting any cash discounts and gains or losses. Some cons include that the credit document and new invoice will appear on customer statements and aging reports, just as any other customer invoice and credit document. The new documents have a description to indicate that they were created as the result of an accounting correction. 
 
 ## Perform a reallocation
 The reallocation process can be started by selecting **Reallocate price with new order lines** from any sales order you need to reallocate or under Revenue recognition – Periodic tasks.  If opening the page from Periodic tasks, enter the appropriate filters such as the Customer account. 
@@ -75,11 +75,11 @@ The reallocation process can be started by selecting **Reallocate price with new
 
 The top grid is a list of the sales orders for the customer. You start by selecting the sales order(s) that need to be reallocated. Project sales orders and any sales order with a reallocation ID can’t be selected.  That is because project sales orders can’t be reallocated, and non-project sales orders can be reallocated only once. If a reallocation ID exists, that means the sales order is marked for reallocation by another user. 
 
-After selecting one or more sales orders, the sales order lines display in the bottom grid. Select the sales order lines that need to be reallocated.  If you only select one sales order, that means you have lines on the same sales order that need to be reallocated.  This can occur when one of the sales order lines has already been invoiced and then a new line is added, or an existing line is removed orcancelled. If a line has been removed, that line won’t display so it can’t be selected, but will still be considered when the reallocation process runs. 
+After selecting one or more sales orders, the sales order lines display in the bottom grid. Select the sales order lines that need to be reallocated.  If you only select one sales order, that means you have lines on the same sales order that need to be reallocated.  This can occur when one of the sales order lines has already been invoiced and then a new line is added, or an existing line is removed or canceled. If a line has been removed, that line won’t display so it can’t be selected, but will still be considered when the reallocation process runs. 
 
 After selecting the necessary sales order lines, use the buttons on the page as follows:
 
-- **Update reallocation** – This button calculates the new revenue price amounts for the selected sales order lines. If a line had been removed or cancelled, the reallocation will happen with only the existing lines selected. The new amounts are shown in the **Reallocated amount** column in the sales order **Lines** grid. The reallocation has been processed  but not yet calculated.
+- **Update reallocation** – This button calculates the new revenue price amounts for the selected sales order lines. If a line had been removed or canceled, the reallocation will happen with only the existing lines selected. The new amounts are shown in the **Reallocated amount** column in the sales order **Lines** grid. The reallocation has been processed  but not yet calculated.
 
 Before updating reallocation
 
@@ -168,7 +168,7 @@ Next select **Expected voucher** to see the accounting entries that will be post
 [![Expected voucher](./media/19_rev-rec-scenarios.png)](./media/19_rev-rec-scenarios.png)
 
 The last three lines are reversing the original accounting entry from the posted invoice. 
-The top four lines comprise the new accounting entry posted for the invoice. It’s important to understand that the customer is not presented with a new invoice.  After the reallocation, the customer still owes $426.00, whichis the amount that must post to Accounts receivable in the new accounting entry.  The offsetting tax and deferred revenue is equal to $188.69 + $314.48 + $26.00 = $529.17. The deferred revenue amount has changed due to the reallocation.  The difference of $103.17 is posted to a Partial invoice revenue clearing account.  This balance will be cleared when the invoice is posted for the second sales order that was included in the reallocation. 
+The top four lines comprise the new accounting entry posted for the invoice. It’s important to understand that the customer is not presented with a new invoice.  After the reallocation, the customer still owes $426.00, which is the amount that must post to Accounts receivable in the new accounting entry.  The offsetting tax and deferred revenue is equal to $188.69 + $314.48 + $26.00 = $529.17. The deferred revenue amount has changed due to the reallocation.  The difference of $103.17 is posted to a Partial invoice revenue clearing account.  This balance will be cleared when the invoice is posted for the second sales order that was included in the reallocation. 
 The reallocation is completed by choosing the **Process** button.  It will prompt for a posting date, even if nothing is posted. After the reallocation is complete, the **Revenue price allocation** page on both sales orders will show the price allocation for all items across both sales orders. This means you will see an item in Revenue price allocation that doesn’t exist on the sales order because it’s part of the same contract, but on a different sales order.  
 
 > [!Hint]
@@ -255,13 +255,13 @@ The sales order is invoiced again for the item that was added. The total invoice
 Because the sum of the revenue and sales is more than $319.50, the difference is posted for $14.48.  This clears the balance from the Partial invoice revenue clearing account that was updated in the new accounting entry that was posted after the reallocation.
 
 ### Scenario 4
-The following scenario walks through a reallocation scenario where a new line is removed from an existing, partially invoiced sales order.  The results of this scenario are the same whether the lines is removed from the sales order or is set to a cancelled status.
+The following scenario walks through a reallocation scenario where a new line is removed from an existing, partially invoiced sales order.  The results of this scenario are the same whether the lines is removed from the sales order or is set to a canceled status.
 
 The General ledger parameter, **Post invoice corrections to Accounts receivable** is set to  No.
  
 [![General ledger parameters setting for fourth scenario](./media/37_rev-rec-scenarios.png)](./media/37_rev-rec-scenarios.png)
 
-A sales order is created for customer US_SI_0003. The customer is purchasing a laptop (S0012), installation services (S0001) and support (S0008) for the laptop.  The laptop and install services’ revenue will be recognized immediately and revenue from the supportplan will be deferred and recognized over 12 months, as defined by the date range defined in the contract. 
+A sales order is created for customer US_SI_0003. The customer is purchasing a laptop (S0012), installation services (S0001) and support (S0008) for the laptop.  The laptop and install services’ revenue will be recognized immediately and revenue from the support plan will be deferred and recognized over 12 months, as defined by the date range defined in the contract. 
 
 [![Sales order lines for fourth scenario](./media/38_rev-rec-scenarios.png)](./media/38_rev-rec-scenarios.png)
 
