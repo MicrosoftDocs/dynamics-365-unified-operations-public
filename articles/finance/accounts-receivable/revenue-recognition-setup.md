@@ -36,6 +36,9 @@ A new **Revenue recognition** module has been added that includes menu items for
 > [!NOTE]
 > The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
 
+> [!NOTE]
+> Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition shouldn't be added to orders or transactions created in Commerce channels.
+
 The **Revenue recognition** module has the following setup options:
 
 - Revenue recognition journals
