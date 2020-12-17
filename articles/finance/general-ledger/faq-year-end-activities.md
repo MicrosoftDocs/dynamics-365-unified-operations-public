@@ -4,7 +4,7 @@
 title: Year-end activities FAQ 
 description: This topic has been compiled to assist with year-end closing activities.
 author: kweekley
-manager: aolson
+manager: tfehr
 ms.date: 12/14/2020
 ms.topic: index-page
 ms.prod: 
