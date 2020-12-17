@@ -39,7 +39,7 @@ Benefits management helps you track information reported on Form 1095-B and Form
 To use this feature, you must first enable **Advanced Benefits Management**. For more information, including important caveats about Benefits management, see [Enable or disable Benefits management](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
 > [!IMPORTANT]
->You can only use ACA reporting either from the Benefits management workspace or from the legacy Benefits workspace, not both. For example, if you switched to Benefits management, ACA reporting is only available from that workspace and not from legacy Benefits.
+>You can only use ACA reporting either from the Benefits management workspace or from the legacy Benefits workspace, not both. For example, if you switched to Benefits management, ACA reporting is only available from that workspace and not from legacy Benefits.<br>
 >If you're switching to Benefits management during the middle of an enrollment year, you must correctly configure employee data for the entire year in Benefits management. This will ensure you receive accurate reporting information for the whole year.
 
 ## Getting started
