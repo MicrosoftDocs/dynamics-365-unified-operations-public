@@ -47,7 +47,7 @@ Additionally, you can create a new 1099 transaction that isn't associated with a
 
 Before you set up and process 1099 statements, we recommend that you review Internal Revenue Service (IRS) rule changes for the applicable tax year. Then, when you're ready to process 1099 statements, use the **Vendor settlements for 1099s** page.
 
-For information about the most current changes for 1099 reporting for calendar year 2020, see [FAQ for year-end activities](../general-ledger/faq-year-end-activities.md).
+For information about the most current changes for 1099 reporting for calendar year 2020, see [Year-end activities FAQ](../general-ledger/faq-year-end-activities.md).
 
 ## Example of a typical year-end 1099 process
 
