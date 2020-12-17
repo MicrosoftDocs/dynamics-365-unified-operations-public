@@ -69,7 +69,7 @@ The unnecessary dimension sets also impact the batch job **BudgetDimensionFocusI
 [![Financial dimension sets](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### Year-end close template configuration
-The year-end close template lets organizations select the financial dimension level to maintain when transferring profit and loss balances to retained earnings. The settings allow an organization to maintain the detailed financial dimensions (**Close all**) when moving the balances to retained earnings or choose to summarize the amounts to a single dimension value (**Close single**). This can be defined for each financial dimension. For more information on these settings, see the year end close documentation.
+The year-end close template lets organizations select the financial dimension level to maintain when transferring profit and loss balances to retained earnings. The settings allow an organization to maintain the detailed financial dimensions (**Close all**) when moving the balances to retained earnings or choose to summarize the amounts to a single dimension value (**Close single**). This can be defined for each financial dimension. For more information on these settings, see the [Year-end close](year-end-close.md) topic.
 
 We recommend that you evaluate your organization's requirements and if possible, close as many dimensions as possible using the **Close single** year-end option to improve performance. By closing to a single dimension value (which can also be a blank value), the system calculates less detail when determining the balances for retained earnings account entries.
  
@@ -119,7 +119,11 @@ The **Recalculate existing 1099 amounts** check box will reset the 1099 amount t
 
 [![Tax 1099 transactions: Before running the update routine](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
+The **Recalculate existing 1099 amounts** check box only comes into play when there are partial 1099 values on the invoice or if it was modified on the Tax 1099 form. For example, assume you have an invoice valued at $1000.00, but the user manually types in a 1099 amount on the invoice of $500.00.
+
 [![Tax 1099 transactions: Marking both Update all and Recalculate existing 1099 amounts](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+
+When this is paid, $500.00 will be the 1099 amount paid. If you perform the recalculation routine, the system will change the 1099 amount to be $1000.00, which is the total that was paid.
 
 [![Tax 1099 transactions: After running the 1099 routine](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
