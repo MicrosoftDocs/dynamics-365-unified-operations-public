@@ -71,7 +71,7 @@ Affordable Care coverage groups help you manage this information for multiple em
    | **Applicable section 4980H safe harbor** | 4980H safe harbor or transition relief code. |
    | **Plan start month** | Select the calendar month for which your benefit plan year begins. |
    | **Group valid from** | The date from which this record is valid. |
-   | **Group valid through** | The date up to which this record is valid. If there is no expiration date, enter **Never**. |
+   | **Group valid through** | The date up to which this record is valid. If there's no expiration date, enter **Never**. |
 
    ![Create new coverage group](./media/hr-benefits-management-aca-new-group.png)
 
@@ -93,15 +93,15 @@ Affordable Care coverage groups help you manage this information for multiple em
 
 ## Maintain multiple versions of coverage options
 
-You can maintain multiple versions of any coverage group, so you can make changes to keep the group’s information current without having to create a new group and reassign employees to it when something changes in your organization or offered benefits. 
+You can maintain multiple versions of any coverage group. You can make changes to keep the group’s information current without having to create a new group and reassign employees to it when something changes in your organization or offered benefits. 
 
-After you’ve created Affordable Care coverage groups, you can mass assign employees to groups or you can individually assign employees to groups and indicate whether ACA information must be tracked and reported.
+After you’ve created Affordable Care coverage groups, you can mass assign employees to groups. You can also individually assign employees to groups and indicate whether ACA information is tracked and reported.
 
 If you don't need to track and report ACA information for an employee (for example, if they work part time), you can set the **Report coverage** field to **No**.
 
 ### Override defaults for an employee
 
-For employees that are assigned to an Affordable Care coverage group, you can change the following options for any months that need different values than those entered in the coverage group:
+For employees assigned to an Affordable Care coverage group, you can change the following options for any months that need different values:
 
 - **Offer of coverage**
 - **Employee share of cost**
@@ -129,7 +129,7 @@ To enter exceptions to any of the Affordable Care coverage group values, follow 
 
 ## Report health care coverage
 
-In addition to health insurance provided by the company, you must also track any employer-sponsored, self-insured health coverage for full- and part-time employees. Each employee, along with their dependents, must be included on the 1095-C report for the months they were covered.
+You must also track any employer-sponsored, self-insured health coverage for full- and part-time employees. Each employee, along with their dependents, must be included on the 1095-C report for the months they were covered.
 
 To indicate whether a benefit plan must be reported:
 
@@ -143,7 +143,7 @@ To indicate whether a benefit plan must be reported:
 
 4. Select **Save**.
 
-If an employee elects health care coverage for a dependent, the dependent's coverage period is determined by when the dependent was enrolled or removed. **Coverage dates for dependents** are automatically computed, based on the period the dependent was eligible and active in a plan during the enrollment year.
+If an employee chooses health care coverage for a dependent, the dependent's coverage period is determined by when the dependent was enrolled or removed. **Coverage dates for dependents** are automatically computed, based on the period the dependent was eligible and active in a plan during the enrollment year.
 
 ## Generate 1095-B and 1095-C forms
 
@@ -175,8 +175,7 @@ You can generate ACA forms 1095-B and 1095-C and distribute them to each of your
 
 ## View ACA coverage information
 
-You can use the **Worker Affordable Care coverage** page to see which employees have been assigned to each coverage 
-group, which employees don’t need to be included on a report, and which employees are unassigned.
+You can use the **Worker Affordable Care coverage** page to see which employees are assigned to each coverage group, which employees don’t need to be included on a report, and which employees are unassigned.
 
 1. In the **Benefits management** workspace, select **Worker Affordable Care coverage**.
 
