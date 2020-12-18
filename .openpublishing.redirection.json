@@ -1,5 +1,10 @@
-{
+﻿{
   "redirections": [
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md",
+      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
+      "redirect_document_id": "false"
+    },
     {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md",
       "redirect_url": "cloud-prem-comparison",
@@ -3482,7 +3487,7 @@
     },
     {
       "source_path": "articles/dev-itpro/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "/dynamics365/fin-and-ops/get-started/fasttrack-dynamics-365-overview",
+      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
       "redirect_document_id": "false"
     },
     {
@@ -9177,7 +9182,7 @@
     },
     {
       "source_path": "articles/fin-and-ops/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "../../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview",
+      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
       "redirect_document_id": "false"
     },
     {
