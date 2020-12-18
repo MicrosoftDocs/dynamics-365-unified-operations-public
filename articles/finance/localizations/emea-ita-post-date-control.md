@@ -49,8 +49,5 @@ In **Tax** > **Setup** > **Sales tax** > **Italain sales tax book sections**, in
 
 ![Posting date control](media/emea-ita-post-date-control.jpg)
 
- - If **turned off** (default option) – then the system will forbid posting of new invoices with dates earlier than the date of the latest posted invoice.  
+ - If **turned off** (default option) – then the system will always forbid posting of new invoices with dates earlier than the date of the latest posted invoice.  
  - If **turned on** – then the system allows posting with any date.
-
-> [!NOTE]
-> For some ...
