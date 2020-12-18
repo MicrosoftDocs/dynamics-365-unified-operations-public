@@ -53,7 +53,7 @@ The following discussion provides more information about how to use the **Open v
 
 ## Understanding invoice line quantities
 
-When you open a vendor invoice from a related purchase order, invoice lines are created from the purchase order. By default, the quantities are taken from the product receipt quantity. However, you can use any of the following default behaviors:
+When you open a vendor invoice from a related purchase order, the system creates invoice lines from the purchase order. By default, the system takes the quantities from the product receipt. However, you can use any of the following default behaviors:
 
 - **Receive now quantity** – Use this option for partial shipments. The default value in the **Quantity** field is taken from the quantity that is specified in the **Receive now** field on the purchase order.
 - **Ordered quantity** – Use this option for complete shipments. The default value in the **Quantity** field is taken from the quantity that is specified in the **Ordered** field on the purchase order.
