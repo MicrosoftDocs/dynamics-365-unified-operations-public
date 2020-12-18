@@ -58,7 +58,7 @@ When you open a vendor invoice from a related purchase order, the system creates
 - **Receive now quantity** – Use this option for partial shipments. The default value in the **Quantity** field is taken from the quantity that is specified in the **Receive now** field on the purchase order.
 - **Ordered quantity** – Use this option for complete shipments. The default value in the **Quantity** field is taken from the quantity that is specified in the **Ordered** field on the purchase order.
 - **Registered quantity** – Use this option if the item requires registration, as specified on the **Item model groups** page. The default value in the **Quantity** field is the physical update quantity that has been registered.
-- **Product receipt quantity** – Use this option if a product receipt has already been received for the order. The default value in the **Quantity** field is taken from the total quantity of available product receipts.
+- **Product receipt quantity** – Use this option if a product receipt has already been received for the order. The system takes the default value in the **Quantity** field from the total quantity of available product receipts.
 - **Registered quantity and services** – Use this option if quantities have been registered in arrival journals for stocked items or items that aren't stocked. This option also includes services, regardless of whether they are registered.
 
 If your legal entity uses invoice matching, you can view the results of the quantity matching in the **Product receipt quantity match** column. You can also use the **Matching details** button on the **Review** tab of the Action Pane to view the results of the quantity matching.
@@ -69,7 +69,7 @@ You can add a line that wasn't on the purchase order to the vendor invoice. You 
 
 ## Submitting a vendor invoice for review
 
-Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you select the control. Instead of the **Post** button, you will see a **Submit** button that you can use to send the vendor invoice through the review process.
+Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you select the control. Instead of the **Post** button, a **Submit** button displays send the vendor invoice through the review process.
 
 ### Preventing invoice from being submitted to workflow 
 
