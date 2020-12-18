@@ -18,7 +18,6 @@ ms.search.form: SysUserSetup, SystemDate
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13571
 ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e
