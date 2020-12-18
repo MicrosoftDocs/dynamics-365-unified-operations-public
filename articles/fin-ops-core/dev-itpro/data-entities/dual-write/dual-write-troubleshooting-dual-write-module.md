@@ -95,4 +95,4 @@ You might receive an error like the following when you try to set that state of 
 The fix for this error depends on the cause of the error:
 
 + If the mapping has dependent mappings, then make sure to enable the dependent mappings of this table mapping.
-+ The mapping might be missing source or destination columns. If a column in the Finance and Operations app is missing, then follow the steps in the section [Missing table columns issue on maps](dual-write-troubleshooting-finops-upgrades.md#missing-entity-columns-issue-on-maps). If a column in Dataverse is missing, then click **Refresh tables** button on the mapping so that the columns are automatically populated back into the mapping.
++ The mapping might be missing source or destination columns. If a column in the Finance and Operations app is missing, then follow the steps in the section [Missing table columns issue on maps](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). If a column in Dataverse is missing, then click **Refresh tables** button on the mapping so that the columns are automatically populated back into the mapping.
