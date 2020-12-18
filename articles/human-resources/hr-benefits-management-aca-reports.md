@@ -97,7 +97,7 @@ You can maintain multiple versions of any coverage group. You can make changes t
 
 After you’ve created Affordable Care coverage groups, you can mass assign employees to groups. You can also individually assign employees to groups and indicate whether ACA information is tracked and reported.
 
-If you don't need to track and report ACA information for an employee (for example, if they work part time), you can set the **Report coverage** field to **No**.
+If you don't need to track and report ACA information for an employee, you can set the **Report coverage** field to **No**. For example, you might have part-time employees who don't require ACA reporting.
 
 ### Override defaults for an employee
 
@@ -132,7 +132,7 @@ To enter exceptions to any of the Affordable Care coverage group values, follow 
 
 ## Report health care coverage
 
-You must also track any employer-sponsored, self-insured health coverage for full- and part-time employees. Each employee, along with their dependents, must be included on the 1095-C report for the months they were covered.
+You must track any employer-sponsored, self-insured health coverage for full- and part-time employees. Include each employee, along with their dependents, on the 1095-C report for the months they were covered.
 
 To indicate whether a benefit plan must be reported:
 
@@ -178,7 +178,11 @@ You can generate ACA forms 1095-B and 1095-C and distribute them to each of your
 
 ## View ACA coverage information
 
-You can use the **Worker Affordable Care coverage** page to see which employees are assigned to each coverage group, which employees don’t need to be included on a report, and which employees are unassigned.
+You can use the **Worker Affordable Care coverage** page to see:
+
+- Employees assigned to each coverage group
+- Employees you don’t need to include on a report
+- Unassigned employees
 
 1. In the **Benefits management** workspace, select **Worker Affordable Care coverage**.
 
@@ -186,11 +190,11 @@ You can use the **Worker Affordable Care coverage** page to see which employees 
 
    ![View ACA coverage](./media/hr-benefits-management-aca-view-coverage.png)
 
-If any of the default values from the Affordable Care coverage group have been overridden, an asterisk will appear next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
+If any of the default values from the Affordable Care coverage group have been overridden, an asterisk appears next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
 
 You can view employees flagged as not ACA-reportable and who won't need a form 1095-C. In the **Filter by** dropdown, select **Not ACA reportable**.
 
-To view employees who are unassigned to a group or who are assigned to an expired group, select **Unassigned or expired group** in the **Filter by** dropdown.
+To view employees not assigned to a group or assigned to an expired group, select **Unassigned or expired group** in the **Filter by** dropdown.
 
 ### Export to Excel
 
@@ -204,7 +208,7 @@ To export any of these lists to Excel:
 
 ### View ACA-reportable dependents
 
-If you need to report covered individuals because you provide self-insured coverage, you can also view any dependents covered under benefit plans that have been marked as **ACA reportable** by selecting **View Dependent coverage** on the top of the page.
+If you need to report covered individuals because you provide self-insured coverage, you can view dependents covered under benefit plans marked as **ACA reportable**. Select **View Dependent coverage** on the top of the page.
 
 ![View dependent coverage](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
