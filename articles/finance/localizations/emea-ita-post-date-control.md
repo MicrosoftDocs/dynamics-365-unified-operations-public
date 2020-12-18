@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article explains how to configure chronology control for invoices posting dates. 
+This article explains how to configure chronology control of invoices posting dates within a specific Sales Tax book section.
 
 ## Prerequisites
 
@@ -49,17 +49,8 @@ In **Tax** > **Setup** > **Sales tax** > **Italain sales tax book sections**, in
 
 ![Posting date control](media/emea-ita-post-date-control.jpg)
 
- - If **turned off** (default option) – then the system will forbid posting of new invoices with dates earlier than the date of the latest posted invoice. The exception is for Customer invoices and Free text invoices - to enable posting, a reason code must be entered either in an invoice/order header or in one of the lines. 
+ - If **turned off** (default option) – then the system will forbid posting of new invoices with dates earlier than the date of the latest posted invoice.  
  - If **turned on** – then the system allows posting with any date.
-
-## Documents posting
-When you post a document, the system performs document posting date control:
-
-### Reason codes for customer invoices
-
-- 
- -A warning is raised if the new invoice date is later than the system date.
-
 
 > [!NOTE]
 > For some ...
