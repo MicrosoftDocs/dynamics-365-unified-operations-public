@@ -17,7 +17,7 @@ ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePa
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

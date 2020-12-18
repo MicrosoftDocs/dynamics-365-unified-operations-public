@@ -19,7 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 
-ms.search.scope: Core, Operations, Retail
+# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 13111

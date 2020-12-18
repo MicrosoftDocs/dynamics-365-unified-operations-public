@@ -16,7 +16,7 @@ ms.search.form: TaxEvatParameters_NL
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Finance
+# ms.search.scope: Core, Finance
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Netherlands
