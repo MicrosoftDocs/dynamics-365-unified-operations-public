@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SalesTable, SalesTableListPage
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -62,6 +62,8 @@ You can create a purchase order from a sales order. For more information, see [C
 You can cancel only sales orders and return orders that are in a *Created* state. For more information, see [Cancel a return order](../service-management/cancel-return-order.md).
 
 ## When I try to cancel a sales order, I receive a "Reservations cannot be removed because there is work created which relies on the reservations" error.
+
+Error code: WAX4661
 
 If work is associated with a sales order, you can't cancel the sales order until the work is canceled and reversed. This requirement applies even if the work that is associated with the sales order is closed.
 
