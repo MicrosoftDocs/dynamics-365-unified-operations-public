@@ -18,7 +18,7 @@ ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94

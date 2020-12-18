@@ -22,7 +22,7 @@ ms.reviewer: josaw
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 

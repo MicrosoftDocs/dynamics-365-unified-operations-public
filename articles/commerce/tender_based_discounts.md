@@ -18,7 +18,7 @@ ms.search.form: RetailTenderDiscount
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

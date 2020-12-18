@@ -17,7 +17,7 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang:
 ms.reviewer: josaw
-ms.search.scope: Retail
+#ms.search.scope: Retail
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Germany
