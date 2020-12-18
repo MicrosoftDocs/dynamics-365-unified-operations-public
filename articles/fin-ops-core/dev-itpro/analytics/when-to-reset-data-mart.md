@@ -52,8 +52,8 @@ There are some circumstances when we don't recommend resetting a data mart. Thes
   - **Attempts to reset have been unsuccessful** - If a number of attempts to complete a reset have been made, and have been unsuccessful because of missing data, we recommend opening a support incident and working with a support engineer to analyze your situation before attempting to reset the data mart again.
   - **Stale records** - Stale records by themselves don't necessarily justify resetting the data mart. If you have a large data set, the reset process will take some time to run, but is unlikely to result in improvement.
  
-## What happens during a reset?  
-- A reset will only start when existing tasks are complete. This ensure that old data is not inserted. At this point you may see a message such as, “The data mart reset was unable to be processed because of an active task. Please try again later.”
+## What a data mart reset does not do  
+- A reset will only start when existing tasks are complete. This ensures that old data is not inserted. At this point you may see a message such as, “The data mart reset was unable to be processed because of an active task. Please try again later.”
 - The reset will disable the integration tasks and delete all the data mart data. The integration is re-enabled.
 
 > [!NOTE]
