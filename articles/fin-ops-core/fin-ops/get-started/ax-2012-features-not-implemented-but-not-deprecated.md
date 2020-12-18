@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. In the following table, the **Current status** column indicates whether the feature has been implemented since the AX 7.0 release.
 
-For a detailed list of when each version of the product was released, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+For a detailed list of the release date for each version, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
 <table>
 <thead>
@@ -68,7 +68,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Client drag-and-drop</td>
-<td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned so that they work on the new web client platform. APIs that support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
+<td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and they require a redesign so that they work on the new web client platform. APIs that support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
@@ -130,17 +130,17 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Procurement site</td>
-<td>In previous versions, the Employee self-service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. YOu could configure different procurement catalogs to show on the site depending on policy. You could also design procurement catalogs by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hierarchy. Additionally, on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
+<td>In previous versions, the Employee self-service procurement site lets you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. You could configure different procurement catalogs to show on the site depending on policy. You could also design procurement catalogs by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hierarchy. Additionally, on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
 <td>Secure global address book</td>
-<td>The ability to help secure the global address book by legal entity and address book hasn't been implemented yet. This feature will be available in a future update.</td>
+<td>The ability to help secure the global address book by legal entity and address book is not available. This feature will be available in a future update.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are curently supported per payment format.
+<td>Currently, you must enter the payment format specifications manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are curently supported per payment format.
 <blockquote>[!NOTE] Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.</blockquote>
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>

@@ -33,10 +33,10 @@ ms.dyn365.ops.version: Platform update 15
 
 Alerts are processed by the batch processing functionality. You must set up batch processing before alerts can be delivered.
 
-Two types of events are supported:
+Batch processing functionality supports two types of events:
 
-- Events that are triggered by change-based events. These events are also referred to as create/delete and update events.
-- Events that are triggered by due dates.
+- Events triggered by change-based events. These events are also referred to as create/delete and update events.
+- Events triggered by due dates.
 
 You can set up batch processes for each type of event.
 
@@ -50,11 +50,11 @@ For change-based events, you can set up a batch job that triggers the processing
 
 On the other hand, a batch job that recurs less often, and that you schedule for times when the system load is low, might help improve system performance. However, a low frequency for batch processing might not meet the users' demands for timely alerts.
 
-Therefore, when you set up the frequency of batch processing for change-based events, consider the balance between the timeliness of alerts and the performance of the whole system. These considerations become more relevant as the number of users who create alert rules increases. The frequency doesn't affect the number of events that must be processed. However, if more users create rules, more checks must be done. This type of data exchange might affect system performance.
+Therefore, when you set up the frequency of batch processing for change-based events, consider the balance between the timeliness of alerts and the performance of the whole system. These considerations become more relevant as the number of users who create alert rules increases. The frequency doesn't affect the number of events that the system processes. However, if more users create rules, more checks must be done. This type of data exchange might affect system performance.
 
 #### The risks of low batch frequency
 
-If you set up a low frequency for batch processing for change-based events, data that is relevant to the conditions in alert rules might be changed before the batch is processed. Therefore, you might lose alerts.
+If you set up a low frequency for batch processing for change-based events, data that is relevant to the conditions in alert rules might change before the batch is processed. Therefore, you might lose alerts.
 
 For example, an alert rule is set up to trigger an alert when the event is **customer contact changes** and the condition is **customer = BB**. In other words, when the customer contact for customer BB changes, the event is logged. However, the batch processing system is set up so that batch processing occurs less often than data entry. If the customer name is changed from **BB** to **AA** before the event is processed, the data in the database no longer matches the condition in the rule, **customer = BB**. Therefore, when the event is finally processed, no alert is generated.
 

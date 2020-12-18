@@ -215,30 +215,30 @@ The following table provides an overview of the inspections that ER provides. Fo
 
 ## <a id="i1"></a>Type conversion
 
-ER checks whether the data type of a data model field is compatible with the data type of an expression that is configured as the binding of that field. If the data types are incompatible, a validation error occurs in the ER model mapping designer. The message that you receive states that ER can't convert an expression of type A to a field of type B.
+ER checks whether the data type of a data model field is compatible with the data type of an expression that is configured as the binding of that field. If the data types are incompatible, a validation error occurs in the ER model-mapping designer. The message that you receive states that ER can't convert an expression of type A to a field of type B.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER data model and the ER model mapping components simultaneously.
+1. Start to configure the ER data model and the ER model-mapping components simultaneously.
 2. In the data model tree, add a field that is named **X**, and select **Integer** as the data type.
 
     ![X field and Integer data type added to the data mode tree on the Data model page](./media/er-components-inspections-01.png)
 
-3. In the model mapping data sources pane, add a data source of the **Calculated field** type.
+3. In the model-mapping data sources pane, add a data source of the **Calculated field** type.
 4. Name the new data source **Y**, and configure it so that it contains the expression `INTVALUE(100)`.
 5. Bind **X** to **Y**.
 6. In the data model designer, change the data type of the **X** field from **Integer** to **Int64**.
-7. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
+7. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page.
 
-    ![validating the editable model mapping component on the Model mapping designer page](./media/er-components-inspections-01.gif)
+    ![validating the editable model-mapping component on the Model mapping designer page](./media/er-components-inspections-01.gif)
 
-8. Select **Validate** to inspect the model mapping component of the selected ER configuration on the **Configurations** page.
+8. Select **Validate** to inspect the model-mapping component of the selected ER configuration on the **Configurations** page.
 
-    ![Validate to inspect the model mapping component on the Configurations page](./media/er-components-inspections-01a.png)
+    ![Validate to inspect the model-mapping component on the Configurations page](./media/er-components-inspections-01a.png)
 
 9. Notice that a validation error occurs. The message states that the value of the **Integer** type that the `INTVALUE(100)` expression of the **Y** data source returns can't be stored in the **X** data model field of the **Int64** type.
 
-The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
+The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model-mapping.
 
 ![Runtime errors on the Format designer page](./media/er-components-inspections-01b.png)
 
@@ -254,7 +254,7 @@ Update the data model structure by changing the data type of the data model fiel
 
 #### Option 2
 
-Update the model mapping by changing the expression of the data source that is bound with the data model field. For the preceding example, the expression of the **Y** data source must be changed to `INT64VALUE(100)`.
+Update the model-mapping by changing the expression of the data source that is bound with the data model field. For the preceding example, the expression of the **Y** data source must be changed to `INT64VALUE(100)`.
 
 ## <a id="i2"></a>Type compatibility
 
@@ -290,22 +290,22 @@ Update the format mapping of the **X** format element by changing the expression
 
 ## <a id="i3"></a>Missing configuration element
 
-ER checks whether the binding expressions contain only data sources that are configured in the editable ER component. For every binding that contains a data source that is missing in the editable ER component, a validation error occurs in the ER Operations designer or the ER model mapping designer.
+ER checks whether the binding expressions contain only data sources that are configured in the editable ER component. For every binding that contains a data source that is missing in the editable ER component, a validation error occurs in the ER Operations designer or the ER model-mapping designer.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER data model and the ER model mapping components simultaneously.
+1. Start to configure the ER data model and the ER model-mapping components simultaneously.
 2. In the data model tree, add a field that is named **X**, and select **Integer** as the data type.
 
     ![Data model tree with X field and Integer data type on the Data model page](./media/er-components-inspections-01.png)
 
-3. In the model mapping data sources pane, add a data source of the **Calculated field** type.
+3. In the model-mapping data sources pane, add a data source of the **Calculated field** type.
 4. Name the new data source **Y**, and configure it so that it contains the expression `INTVALUE(100)`.
 5. Bind **X** to **Y**.
-6. In the model mapping designer, in the data sources pane, delete the **Y** data source.
-7. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
+6. In the model-mapping designer, in the data sources pane, delete the **Y** data source.
+7. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page.
 
-    ![Inspect teh editable ER model mapping component on the Model mapping designer page](./media/er-components-inspections-03.gif)
+    ![Inspect teh editable ER model-mapping component on the Model mapping designer page](./media/er-components-inspections-03.gif)
 
 8. Notice that a validation error occurs. The message states that the binding of the **X** data model field contains the path that refers to the **Y** data source, but this data source isn't found.
 
@@ -321,29 +321,29 @@ Unbind the **X** data model field to stop referring to the nonexistent **Y** dat
 
 #### Option 2
 
-In the data sources pane of the ER model mapping designer, add the **Y** data source again.
+In the data sources pane of the ER model-mapping designer, add the **Y** data source again.
 
 ## <a id="i4"></a>Executability of an expression with FILTER function
 
-The built-in [FILTER](er-functions-list-filter.md) ER function is used to access application tables, views, or data entities by placing a single SQL call to get the required data as a list of records. A data source of the **Record list** type is used as an argument of this function and specifies the application source for the call. ER checks whether a direct SQL query can be established to a data source that is referred to in the `FILTER` function. If a direct query can't be established, a validation error occurs in the ER model mapping designer. The message that you receive states that the ER expression that includes the `FILTER` function can't be run at runtime. 
+The built-in [FILTER](er-functions-list-filter.md) ER function is used to access application tables, views, or data entities by placing a single SQL call to get the required data as a list of records. A data source of the **Record list** type is used as an argument of this function and specifies the application source for the call. ER checks whether a direct SQL query can be established to a data source that is referred to in the `FILTER` function. If a direct query can't be established, a validation error occurs in the ER model-mapping designer. The message that you receive states that the ER expression that includes the `FILTER` function can't be run at runtime. 
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER model mapping component.
+1. Start to configure the ER model-mapping component.
 2. Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 3. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
 4. Add a data source of the **Calculated field** type.
 5. Name the new data source **FilteredVendor**, and configure it so that it contains the expression `FILTER(Vendor, Vendor.AccountNum="US-101")`.
-6. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the `FILTER(Vendor, Vendor.AccountNum="US-101")` expression in the **Vendor** data source can be queried.
+6. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page and verify that the `FILTER(Vendor, Vendor.AccountNum="US-101")` expression in the **Vendor** data source can be queried.
 7. Modify the **Vendor** data source by adding a nested field of the **Calculated field** type to get the trimmed vendor account number.
 8. Name the new nested field **$AccNumber**, and configure it so that it contains the expression `TRIM(Vendor.AccountNum)`.
-9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the `FILTER(Vendor, Vendor.AccountNum="US-101")` expression in the **Vendor** data source can be queried.
+9. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page and verify that the `FILTER(Vendor, Vendor.AccountNum="US-101")` expression in the **Vendor** data source can be queried.
 
     ![Verifying the expression can be queried on the Model mapping designer page](./media/er-components-inspections-04.gif)
 
 10. Notice that a validation error occurs, because the **Vendor** data source contains a nested field of the **Calculated field** type that doesn't allow the expression of the **FilteredVendor** data source to be translated to the direct SQL statement.
 
-The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
+The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model-mapping.
 
 ![Runtime errors that occur when you run the editable format on the Format designer page](./media/er-components-inspections-04a.png)
 
@@ -363,11 +363,11 @@ Change the expression of the **FilteredVendor** data source from `FILTER(Vendor,
 
 ## <a id="i5"></a>Executability of a GROUPBY data source
 
-The **GROUPBY** data source divides the query result into groups of records, usually for the purpose of doing one or more aggregations on each group. Every **GROUPBY** data source can be configured so that it's run either at the database level or in memory. When a **GROUPBY** data source is configured so that it's run at the database level, ER checks whether a direct SQL query can be established to a data source that is referred to in that data source. If a direct query can't be established, a validation error occurs in the ER model mapping designer. The message that you receive states that the configured **GROUPBY** data source can't be run at runtime.
+The **GROUPBY** data source divides the query result into groups of records, usually for the purpose of doing one or more aggregations on each group. Every **GROUPBY** data source can be configured so that it's run either at the database level or in memory. When a **GROUPBY** data source is configured so that it's run at the database level, ER checks whether a direct SQL query can be established to a data source that is referred to in that data source. If a direct query can't be established, a validation error occurs in the ER model-mapping designer. The message that you receive states that the configured **GROUPBY** data source can't be run at runtime.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER model mapping component.
+1. Start to configure the ER model-mapping component.
 2. Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 3. Name the new data source **Trans**. In the **Table** field, select **VendTrans** to specify that this data source will request the VendTrans table.
 4. Add a data source of the **Group by** type.
@@ -378,19 +378,19 @@ The following steps show how this issue might occur.
 
     ![Configuring the data source on the Edit 'Group By' parameters page](./media/er-components-inspections-05a.gif)
 
-6. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **GroupedTrans** data source can be queried.
+6. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page and verify that the configured **GroupedTrans** data source can be queried.
 7. Modify the **Trans** data source by adding a nested field of the **Calculated field** type to get the trimmed vendor account number.
 8. Name the new data source **$AccNumber**, and configure it so that it contains the expression `TRIM(Trans.AccountNum)`.
 
     ![Configuring the data source on the Model mapping designer page](./media/er-components-inspections-05a.png)
 
-9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **GroupedTrans** data source can be queried.
+9. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page and verify that the configured **GroupedTrans** data source can be queried.
 
-    ![Validate the ER model mapping component and verify the configured data source, GroupedTrans can be queried on the Model mapping designer page](./media/er-components-inspections-05b.png)
+    ![Validate the ER model-mapping component and verify the configured data source, GroupedTrans can be queried on the Model mapping designer page](./media/er-components-inspections-05b.png)
 
 10. Notice that a validation error occurs, because the **Trans** data source contains a nested field of the **Calculated field** type that doesn't allow the call for the **GroupedTrans** data source to be translated to the direct SQL statement.
 
-The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
+The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model-mapping.
 
 ![Run time errors that occur when the warning is ignored on the Format designer page](./media/er-components-inspections-05c.png)
 
@@ -410,11 +410,11 @@ Change the value of the **Execution location** field for the **GroupedTrans** da
 
 ## <a id="i6"></a>Executability of a JOIN data source
 
-The [JOIN](er-join-data-sources.md) data source combines records from two or more database tables, based on related fields. Every **JOIN** data source can be configured so that it's run either at the database level or in memory. When a **JOIN** data source is configured so that it's run at the database level, ER checks whether a direct SQL query can be established to data sources that are referred to in that data source. If a direct SQL query can't be established with at least one referenced data source, a validation error occurs in the ER model mapping designer. The message that you receive states that the configured **JOIN** data source can't be run at runtime.
+The [JOIN](er-join-data-sources.md) data source combines records from two or more database tables, based on related fields. Every **JOIN** data source can be configured so that it's run either at the database level or in memory. When a **JOIN** data source is configured so that it's run at the database level, ER checks whether a direct SQL query can be established to data sources that are referred to in that data source. If a direct SQL query can't be established with at least one referenced data source, a validation error occurs in the ER model-mapping designer. The message that you receive states that the configured **JOIN** data source can't be run at runtime.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER model mapping component.
+1. Start to configure the ER model-mapping component.
 2. Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 3. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
 4. Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
@@ -430,17 +430,17 @@ The following steps show how this issue might occur.
 
     ![Configuring the data source on the Join designer page](./media/er-components-inspections-06a.gif)
 
-10. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **JoinedList** data source can be queried.
+10. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page and verify that the configured **JoinedList** data source can be queried.
 11. Change the expression of the **Vendor.FilteredTrans** data source from `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` to `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
-12. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **JoinedList** data source can be queried.
+12. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page and verify that the configured **JoinedList** data source can be queried.
 
-    ![Validate the editable model mapping componenent and verify that the JoinedList data source can be queried on the Model mapping designer page](./media/er-components-inspections-06b.png)
+    ![Validate the editable model-mapping componenent and verify that the JoinedList data source can be queried on the Model mapping designer page](./media/er-components-inspections-06b.png)
 
 13. Notice that a validation error occurs, because the expression of the **Vendor.FilteredTrans** data source can't be translated to the direct SQL call. Additionally, the direct SQL call doesn't allow the call for the **JoinedList** data source to be translated to the direct SQL statement.
 
     ![Runtime errors from failed validation of JoinedList data source on the Model mapping designer page](./media/er-components-inspections-06c.png)
 
-The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
+The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model-mapping.
 
 ![Running the editable format on the Format designer page](./media/er-components-inspections-06e.png)
 
@@ -462,11 +462,11 @@ Change the value of the **Execute** field for the **JoinedList** data source fro
 
 ## <a id="i7"></a>Preferability of FILTER vs WHERE function
 
-The built-in [FILTER](er-functions-list-filter.md) ER function is used to access application tables, views, or data entities by placing a single SQL call to get the required data as a list of records. The [WHERE](er-functions-list-where.md) function fetches all records from the given source and does record selection in memory. A data source of the **Record list** type is used as an argument of both functions and specifies a source for getting records. ER checks whether a direct SQL call can be established to a data source that is referred to in the **WHERE** function. If a direct call can be established, a validation warning occurs in the ER model mapping designer. The message that you receive recommends that you use the **FILTER** function instead of the **WHERE** function to help improve efficiency.
+The built-in [FILTER](er-functions-list-filter.md) ER function is used to access application tables, views, or data entities by placing a single SQL call to get the required data as a list of records. The [WHERE](er-functions-list-where.md) function fetches all records from the given source and does record selection in memory. A data source of the **Record list** type is used as an argument of both functions and specifies a source for getting records. ER checks whether a direct SQL call can be established to a data source that is referred to in the **WHERE** function. If a direct call can be established, a validation warning occurs in the ER model-mapping designer. The message that you receive recommends that you use the **FILTER** function instead of the **WHERE** function to help improve efficiency.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER model mapping component.
+1. Start to configure the ER model-mapping component.
 2. Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 3. Name the new data source **Trans**. In the **Table** field, select **VendTrans** to specify that this data source will request the VendTrans table.
 4. Add a data source of the **Calculated field** type as the nested field of the **Vendor** data source.
@@ -475,9 +475,9 @@ The following steps show how this issue might occur.
 7. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
 8. Add a data source of the **Calculated field** type.
 9. Name the new data source **FilteredVendor**, and configure it so that it contains the expression `WHERE(Vendor, Vendor.AccountNum="US-101")`.
-10. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
+10. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page.
 
-    ![Validate to inspect the editable model mapping component on the Model mapping designer page](./media/er-components-inspections-07a.png)
+    ![Validate to inspect the editable model-mapping component on the Model mapping designer page](./media/er-components-inspections-07a.png)
 
 11. Notice that validation warnings recommend that you use the **FILTER** function instead of the **WHERE** function for the **FilteredVendor** and **FilteredTrans** data sources.
 
@@ -497,18 +497,18 @@ You can manually adjust the expressions of all the data sources in the validatio
 
 ## <a id="i8"></a>Preferability of ALLITEMSQUERY vs ALLITEMS function
 
-The built-in [ALLITEMS](er-functions-list-allitems.md) and [ALLITEMSQUERY](er-functions-list-allitemsquery.md) ER functions return a flattened **Record list** value that consists of a list of records that represent all items that match the specified path. ER checks whether a direct SQL call can be established to a data source that is referred to in the **ALLITEMS** function. If a direct call can be established, a validation warning occurs in the ER model mapping designer. The message that you receive recommends that you use the **ALLITEMSQUERY** function instead of the **ALLITEMS** function to help improve efficiency.
+The built-in [ALLITEMS](er-functions-list-allitems.md) and [ALLITEMSQUERY](er-functions-list-allitemsquery.md) ER functions return a flattened **Record list** value that consists of a list of records that represent all items that match the specified path. ER checks whether a direct SQL call can be established to a data source that is referred to in the **ALLITEMS** function. If a direct call can be established, a validation warning occurs in the ER model-mapping designer. The message that you receive recommends that you use the **ALLITEMSQUERY** function instead of the **ALLITEMS** function to help improve efficiency.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER model mapping component.
+1. Start to configure the ER model-mapping component.
 2. Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 3. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
 4. Add a data source of the **Calculated field** type to get records for several vendors.
 5. Name the new data source **FilteredVendor**, and configure it so that it contains the expression `FILTER(Vendor, OR(Vendor.AccountNum="US-101",Vendor.AccountNum="US-102"))`.
 6. Add a data source of the **Calculated field** type to get transactions of all filtered vendors.
 7. Name the new data source **FilteredVendorTrans**, and configure it so that it contains the expression `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
-8. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
+8. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page.
 
     ![Model mapping designer page, Validate button](./media/er-components-inspections-08a.png)
 
@@ -530,11 +530,11 @@ You can manually adjust the expressions of all the data sources that are mention
 
 ## <a id="i9"></a>Consideration of empty list cases
 
-You can configure your ER format or model mapping component to get the field value of a data source of the **Record list** type. ER checks whether your design considers the case where a data source that is called contains no records (that is, it's empty), to prevent runtime errors when a value is fetched from a field of a nonexistent record.
+You can configure your ER format or model-mapping component to get the field value of a data source of the **Record list** type. ER checks whether your design considers the case where a data source that is called contains no records (that is, it's empty), to prevent runtime errors when a value is fetched from a field of a nonexistent record.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER data model, the ER model mapping, and the ER format components simultaneously.
+1. Start to configure the ER data model, the ER model-mapping, and the ER format components simultaneously.
 2. In the data model tree, add a root item that is named **Root3**.
 3. Modify the **Root3** item by adding a nested item of the **Record list** type.
 4. Name the new nested item **Vendor**.
@@ -545,7 +545,7 @@ The following steps show how this issue might occur.
 
     ![Adding nested fields on the Data model page](./media/er-components-inspections-09a.png)
 
-6. In the model mapping data sources pane, add a data source of the **Dynamics 365 for Operations \\ Table records** type.
+6. In the model-mapping data sources pane, add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 7. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
 8. Add a data source of the **General \\ User input parameter** type to search for a vendor account in the runtime dialog box.
 9. Name the new data source **RequestedAccountNum**. In the **Label** field, enter **Vendor account number**. In the **Operations data type name** field, leave the default value, **Description**.
@@ -620,11 +620,11 @@ Because you haven't bound the **Statement\\Party** format element with the `mode
 
 ## <a id="i10"></a>Executability of an expression with FILTER function (caching)
 
-Several built-in ER functions, including [FILTER](er-functions-list-filter.md) and [ALLITEMSQUERY](er-functions-list-allitemsquery.md), are used to access application tables, views, or data entities by placing a single SQL call to get the required data as a list of records. A data source of the **Record list** type is used as an argument of each of these functions and specifies an application source for the call. ER checks whether a direct SQL call can be established to a data source that is referred to in one of these functions. If a direct call can't be established because the data source was marked as [cached](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace), a validation error occurs in the ER model mapping designer. The message that you receive states that the ER expression that contains one of these functions can't be run at runtime.
+Several built-in ER functions, including [FILTER](er-functions-list-filter.md) and [ALLITEMSQUERY](er-functions-list-allitemsquery.md), are used to access application tables, views, or data entities by placing a single SQL call to get the required data as a list of records. A data source of the **Record list** type is used as an argument of each of these functions and specifies an application source for the call. ER checks whether a direct SQL call can be established to a data source that is referred to in one of these functions. If a direct call can't be established because the data source was marked as [cached](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace), a validation error occurs in the ER model-mapping designer. The message that you receive states that the ER expression that contains one of these functions can't be run at runtime.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER model mapping component.
+1. Start to configure the ER model-mapping component.
 2. Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 3. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
 4. Add a data source of the **General \\ User input parameter** type to search for a vendor account in the runtime dialog box.
@@ -633,9 +633,9 @@ The following steps show how this issue might occur.
 7. Name the new data source **FilteredVendor**, and configure it so that it contains the expression `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)`.
 8. Mark the configured **Vendor** data source as cached.
 
-    ![Configure the model mapping component on the Model mapping designer page](./media/er-components-inspections-10a.gif)
+    ![Configure the model-mapping component on the Model mapping designer page](./media/er-components-inspections-10a.gif)
 
-9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
+9. Select **Validate** to inspect the editable model-mapping component on the **Model mapping designer** page.
 
     ![Validate the filter function applied to the cache vendor data source on the Model mapping designer page](./media/er-components-inspections-10a.png)
 
@@ -661,11 +661,11 @@ Change the expression of the **FilteredVendor** data source from `FILTER(Vendor,
 
 ## <a id="i11"></a>Missing binding
 
-When you configure an ER format component, the base ER data model is offered as a default data source for the ER format. When the configured ER format is run, the [default model mapping](er-country-dependent-model-mapping.md) for the base model is used to fill the data model with application data. The ER format designer shows a warning if you bind a format element to a data model item that isn't bound to any data source in the model mapping that is currently selected as the default model mapping for the editable format. This type of binding can't be run at runtime, because the format that runs can't fill a bound element with application data. Therefore, an error occurs at runtime.
+When you configure an ER format component, the base ER data model is offered as a default data source for the ER format. When the configured ER format is run, the [default model mapping](er-country-dependent-model-mapping.md) for the base model is used to fill the data model with application data. The ER format designer shows a warning if you bind a format element to a data model item that isn't bound to any data source in the model-mapping that is currently selected as the default model-mapping for the editable format. This type of binding can't be run at runtime, because the format that runs can't fill a bound element with application data. Therefore, an error occurs at runtime.
 
 The following steps show how this issue might occur.
 
-1. Start to configure the ER data model, the ER model mapping, and the ER format components simultaneously.
+1. Start to configure the ER data model, the ER model-mapping, and the ER format components simultaneously.
 2. In the data model tree, add a root item that is named **Root3**.
 3. Modify the **Root3** item by adding a new nested item of the **Record list** type.
 4. Name the new nested item **Vendor**.
@@ -676,7 +676,7 @@ The following steps show how this issue might occur.
 
     ![Add nested fields to the vendor item on the Data model page](./media/er-components-inspections-11a.png)
 
-6. In the model mapping data sources pane, add a data source of the **Dynamics 365 for Operations \\ Table records** type.
+6. In the model-mapping data sources pane, add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 7. Name the new data source **Vendor**. In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
 8. Add a data source of the **General \\ User input parameter** type to inquire about a vendor account in the runtime dialog box.
 9 Name the new data source **RequestedAccountNum**. In the **Label** field, enter **Vendor account number**. In the **Operations data type name** field, leave the default value, **Description**.
@@ -711,7 +711,7 @@ The following steps show how this issue might occur.
 
     ![Validating the ER format component on the Format designer page](./media/er-components-inspections-11c.png)
 
-16. Notice that a validation warning occurs. The message states that the **model.Vendor.Name** data source field isn't bound to any data source in the model mapping that is configured to be used by the format. Therefore, the **Statement\\Party\\Name** format element might not be filled at runtime, and a runtime exception might occur.
+16. Notice that a validation warning occurs. The message states that the **model.Vendor.Name** data source field isn't bound to any data source in the model-mapping that is configured to be used by the format. Therefore, the **Statement\\Party\\Name** format element might not be filled at runtime, and a runtime exception might occur.
 
     ![Validating ER format component on the Format designer page](./media/er-components-inspections-11d.png)
 
@@ -727,7 +727,7 @@ No option to automatically fix this issue is available.
 
 #### Option 1
 
-Modify the configured model mapping by adding a binding for the **model.Vendor.Name** data source field.
+Modify the configured model-mapping by adding a binding for the **model.Vendor.Name** data source field.
 
 #### Option 2
 
