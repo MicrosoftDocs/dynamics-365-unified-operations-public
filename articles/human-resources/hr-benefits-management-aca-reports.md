@@ -107,6 +107,9 @@ For employees assigned to an Affordable Care coverage group, you can change the 
 - **Employee share of cost**
 - **Applicable section 4980H safe harbor**
 
+> [!NOTE]
+> For 2020 ACA reports, you must report both the work and home ZIP Codes in the form 1095-C. These automatically populate in the form based on active locations. If either location was different during any part of the year, you must override the value.
+
 To enter exceptions to any of the Affordable Care coverage group values, follow these steps:
 
 1. In the **Personnel management** workspace, select **Links**, and then select **Workers**.
