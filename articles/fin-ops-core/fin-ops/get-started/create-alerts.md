@@ -45,7 +45,7 @@ The batch jobs for data change and due date alerts need to be running for the al
 
 The event that triggers an alert rule can be a date that arrives or a specific change that occurs. Triggers for events are defined on the **Alert me when** FastTab of the **Create alert rule** dialog box. The events that are available for a particular field depend on the trigger that is selected.
 
-For example, if you're setting up an alert rule for the **Start date** field, due date events are appropriate. Therefore, the **is due in** event type is available for that field. However, for a field such as **Cost center**, a due date event isn't appropriate. Therefore, the **is due in** event type isn't available. Instead, the **has changed** event type is available.
+For example, if you're setting up an alert rule for the **Start date** field, due date events are appropriate. Therefore, the `is due in` event type is available for that field. However, for a field such as **Cost center**, a due date event isn't appropriate. Therefore, the `is due in` event type isn't available. Instead, the `has changed` event type is available.
 
 ## Event types
 

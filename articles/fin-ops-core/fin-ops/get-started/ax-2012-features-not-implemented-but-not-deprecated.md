@@ -140,7 +140,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 </tr>
 <tr>
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td>Currently, you must enter the payment format specifications manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are curently supported per payment format.
+<td>Currently, you must enter the payment format specifications manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are currently supported per payment format.
 <blockquote>[!NOTE] Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.</blockquote>
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
@@ -164,35 +164,35 @@ For a detailed list of the release date for each version, see [Software lifecycl
 <td>Cheque, Opdrachtgever</td>
 </tr>
 <tr>
-<td>TrfBenBen</td>
+<td>`TrfBenBen`</td>
 <td>Overboeking Begunstigde/Begunstigde</td>
 </tr>
 <tr>
-<td>TrfBenBenUrg</td>
+<td>`TrfBenBenUrg`</td>
 <td>Overboeking Begunstigde/Begunstigde Spoed</td>
 </tr>
 <tr>
-<td>TrfEurBen</td>
+<td>`TrfEurBen`</td>
 <td>Overboeking Euro/Begunstigde</td>
 </tr>
 <tr>
-<td>TrfEurBenUrg</td>
+<td>`TrfEurBenUrg`</td>
 <td>Overboeking Euro/Begunstigde Spoed</td>
 </tr>
 <tr>
-<td>TrfEurEur</td>
+<td>`TrfEurEur`</td>
 <td>Overboeking Euro/Euro</td>
 </tr>
 <tr>
-<td>TrfEurEurUrg</td>
+<td>`TrfEurEurUrg`</td>
 <td>Overboeking Euro/Euro Spoed</td>
 </tr>
 <tr>
-<td>TrfForBen</td>
+<td>`TrfForBen`</td>
 <td>Overboeking VV-rekening/Begunstigde</td>
 </tr>
 <tr>
-<td>TrfForBenUrg</td>
+<td>`TrfForBenUrg`</td>
 <td>Overboeking VV-rekening/Begunstigde Spoed</td>
 </tr>
 <tr>
@@ -416,7 +416,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 <tr>
 <td>Vendor collaboration (Vendor Portal)</td>
 <td>Dynamics AX 2012 provided vendor portal capabilities via Enterprise Portal. Financial and Operations also provides these capabilities. In version 7.1 (also known as Dynamics 365 for Operations 1611), a vendor could view and respond to purchase orders.
-<p>In version 7.3, the vendor can view and respond to RFQ's. Vendors can also view and edit selected information from the vendor record such as addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.</p>
+<p>In version 7.3, the vendor can view and respond to RFQs. Vendors can also view and edit selected information from the vendor record such as addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.</p>
 </td>
 <td>Implemented in version 7.3</td>
 </tr>
@@ -514,8 +514,8 @@ For a detailed list of the release date for each version, see [Software lifecycl
 <td>Not implemented</td>
 </tr>
 <tr>
-<td>[Russia] AP/AR - 3rd party miscellaneous charges</td>
-<td>Registration of 3rd party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties re-allocation to other expense accounts.</td>
+<td>[Russia] AP/AR - Third-party miscellaneous charges</td>
+<td>Registration of third-party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties re-allocation to other expense accounts.</td>
 <td>Implemented in 8.1.1</td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 </tr>
 <tr>
 <td>[Russia] Localization of Process Industries solution</td>
-<td>Basic localization in two areas: correspondence of accounts for all new general ledger postings, and functional co-existence of Process Industries features and Russian country context (no issues when both Process Industries and Russian country context are enabled).</td>
+<td>Basic localization in two areas: correspondence of accounts for all new general ledger postings, and functional coexistence of Process Industries features and Russian country context (no issues when both Process Industries and Russian country context are enabled).</td>
 <td>Not implemented</td>
 </tr>
 <tr>
