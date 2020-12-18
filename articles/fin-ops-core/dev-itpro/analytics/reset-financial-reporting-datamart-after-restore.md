@@ -34,12 +34,11 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
-> [!Note}
-> To confirm that it's necessary to reset your data mart, see [When to reset a data mart](when-to-reset-data-mart.md).
-
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
 > [!NOTE]
+> To confirm that it's necessary to reset your data mart, see [When to reset a data mart](when-to-reset-data-mart.md).
+
 > A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports, which you accomplish by exporting them. The steps for exporting report definitions are included at the end of this topic in the section titled, Export and import report definitions, later in this topic.
 
 ### Reset the Financial reporting data mart from Report designer
