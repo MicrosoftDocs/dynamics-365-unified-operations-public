@@ -340,14 +340,6 @@
         href: accounts-receivable/copy-customer.md
       - name: Customer workflow
         href: accounts-receivable/customer-workflow.md
-      - name: Revenue recognition overview
-        href: accounts-receivable/revenue-recognition-overview.md
-      - name: Revenue recognition setup
-        href: accounts-receivable/revenue-recognition-setup.md
-      - name: Recognize deferred revenue
-        href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
-      - name: Revenue recognition on sales orders
-        href: accounts-receivable/revenue-recognition-so-basics.md        
       - name: Set up and process recurring invoices
         href: accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
@@ -384,6 +376,26 @@
         href: accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
         href: accounts-receivable/close-accounts-receivable.md
+      - name: Revenue recognition
+        items:
+      - name: Revenue recognition overview
+        href: accounts-receivable/revenue-recognition-overview.md
+      - name: Revenue recognition setup
+        href: accounts-receivable/revenue-recognition-setup.md
+      - name: Recognize deferred revenue
+        href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
+      - name: Revenue recognition on sales orders
+        href: accounts-receivable/revenue-recognition-so-basics.md        
+      - name: Revenue recognition reallocation
+        href: accounts-receivable/rev-rec-reallocation.md
+      - name: Revenue recognition reallocation - scenario 1
+        href: accounts-receivable/rev-rec-reallocation-scenario-1.md
+      - name: Revenue recognition reallocation scenario 2
+        href: accounts-receivable/rev-rec-reallocation-scenario-2.md
+      - name: Revenue recognition reallocation scenario 3
+        href: accounts-receivable/rev-rec-reallocation-scenario-3.md
+      - name: Revenue recognition reallocation scenario 4
+        href: accounts-receivable/rev-rec-reallocation-scenario-4.md
       - name: Payments and settlements
         items:
         - name: Revenue recognition overview
