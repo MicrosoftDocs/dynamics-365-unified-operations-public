@@ -17,7 +17,6 @@ ms.search.form:  FormRunConfigurationAddPAControl, FormRunConfigurationEditPACon
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

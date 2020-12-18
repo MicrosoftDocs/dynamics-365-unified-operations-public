@@ -18,7 +18,6 @@ ms.search.form: PayrollPayStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220964
 ms.assetid: c16043b0-ccdc-4d4d-bf18-67d4c7e3e5f0
