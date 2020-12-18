@@ -64,9 +64,8 @@ The **Public sector** configuration key enables pages and controls that suppleme
 ## How does the Public sector configuration key relate to other configuration keys?
 The following table provides information about how this configuration key relates to other configuration keys.
 
-|            |                                                                                                                                                                                                                     |
+|   **Detail**         |              **Description**                                                                                                                                                                                        |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Detail** | **Description**                                                                                                                                                                                                     |
 | Parent key | None                                                                                                                                                                                                                |
 | Child keys | **Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key |
 
