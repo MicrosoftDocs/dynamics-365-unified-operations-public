@@ -5,7 +5,7 @@ title: Vendor invoices overview
 description: This topic provides general information about vendor invoices.
 author: abruer
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
