@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.13
 Planning Optimizations offers support for several production scenarios. If you are migrating from the existing, built-in master planning engine, it is important to be aware of some changed behaviors.
 
 <!-- The following video gives a short introduction to some of the current capabilities. 
-KFM: Link to video for production functionality -->
+KFM: Link to video for production functionality, coming soon...  -->
 
 ## Planned production orders
 
