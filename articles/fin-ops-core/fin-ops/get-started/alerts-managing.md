@@ -39,16 +39,16 @@ Two types of events are supported:
 - Events that are triggered by due dates.
 
 You can set up batch processes for each type of event.
-		
+
 ## Batch processing for change-based events
 
-The system reads all change-based events that have occurred since batch processing was last run. Change-based events include updates to fields, the deletion of records, and the creation of records. These events are compared with the conditions that are set up in alert rules. When an event matches the conditions in a rule, the batch process generates an alert.
+The system reads all change-based events that have occurred since batch processing was last run. Change-based events include updates to fields, the deletion of records, and the creation of records. These events are compared with the conditions that you set up in alert rules. When an event matches the conditions in a rule, the batch process generates an alert.
 
 ### Frequency for change-based events
 
-For change-based events, you can set up a batch job that triggers the processing of an event soon after the event is logged by the system. If you set up the batch job to recur more often, users receive their alerts sooner after changes occur. However, a high frequency for batch processing might adversely affect system performance.
+For change-based events, you can set up a batch job that triggers the processing of an event soon after the system logs the event. If you set up the batch job to recur more often, users receive their alerts sooner after changes occur. However, a high frequency for batch processing might adversely affect system performance.
 
-On the other hand, a batch job that recurs less often, and that is scheduled for times when the system load is low, might help improve system performance. However, a low frequency for batch processing might not meet the users' demands for timely alerts.
+On the other hand, a batch job that recurs less often, and that you schedule for times when the system load is low, might help improve system performance. However, a low frequency for batch processing might not meet the users' demands for timely alerts.
 
 Therefore, when you set up the frequency of batch processing for change-based events, consider the balance between the timeliness of alerts and the performance of the whole system. These considerations become more relevant as the number of users who create alert rules increases. The frequency doesn't affect the number of events that must be processed. However, if more users create rules, more checks must be done. This type of data exchange might affect system performance.
 
@@ -56,7 +56,7 @@ Therefore, when you set up the frequency of batch processing for change-based ev
 
 If you set up a low frequency for batch processing for change-based events, data that is relevant to the conditions in alert rules might be changed before the batch is processed. Therefore, you might lose alerts.
 
-For example, an alert rule is set up to trigger an alert when the event is **customer contact changes** and the condition is **customer = BB**. In other words, when the customer contact for customer BB is changed, the event is logged. However, the batch processing system is set up so that batch processing occurs less often than data entry. If the customer name is changed from **BB** to **AA** before the event is processed, the data in the database no longer matches the condition in the rule, **customer = BB**. Therefore, when the event is finally processed, no alert is generated.
+For example, an alert rule is set up to trigger an alert when the event is **customer contact changes** and the condition is **customer = BB**. In other words, when the customer contact for customer BB changes, the event is logged. However, the batch processing system is set up so that batch processing occurs less often than data entry. If the customer name is changed from **BB** to **AA** before the event is processed, the data in the database no longer matches the condition in the rule, **customer = BB**. Therefore, when the event is finally processed, no alert is generated.
 
 ### Set up processing for change-based alerts
 
@@ -82,7 +82,7 @@ The processing of alert rules in a company can be stopped for several reasons. T
 
 To prevent due-date alerts from becoming obsolete because the batch job hasn't been run for several days, you can set up a batch processing window. A batch processing window can be used to prevent a batch job from being run for a specified number of days.
 
-If you set up a batch processing window, an alert is sent when the alert rule is processed, even if the alert exceeds the time limit that is defined in the due-date criteria. An alert continues to be sent for as long as the period that is defined by this time limit plus the batch processing window isn't exceeded. However, when the period that is defined by the time limit plus the batch processing window is exceeded, an alert is no longer sent.
+If you set up a batch processing window, an alert is sent when the alert rule is processed, even if the alert exceeds the time limit that is defined in the due-date criteria. An alert continues to be sent for as long as the period that is defined by this time limit plus the batch processing window isn't exceeded. However, when the period exceeds the value defined by the time limit plus the batch processing window, an alert is no longer sent.
 
 ### Set up processing for due-date alerts
 

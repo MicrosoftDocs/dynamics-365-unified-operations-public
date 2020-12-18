@@ -201,7 +201,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 ### What is the IFeatureLifecycle implemented by some feature classes?
 IFeatureLifecycle is a Microsoft-internal mechanism for indicating the feature lifecycle stage. 
 Features can be:
-- PrivatePreview - Needs a flight to be visible.
-- PublicPreview - Shown by default but with a warning that the feature is in preview.
-- Released - Fully released.
+- `PrivatePreview` - Needs a flight to be visible.
+- `PublicPreview` - Shown by default but with a warning that the feature is in preview.
+- `Released` - Fully released.
 

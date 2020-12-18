@@ -124,10 +124,10 @@ The batch transfer rules for subledger journal account entries have been changed
 
 ## Cost accounting
 
-Three Cost accounting ledgers are created in demo data. The Cost accounting ledger USP2 provide an E2E demo experience based on data from legal entity USP2. The Cost control unit consist of 2 Cost object dimensions (Cost centers and Product groups). Actual cost, Budget cost and Statistical measures are transferred for all 12 fiscal periods of year 2017. Overhead calculation has also been performed for all fiscal periods of year 2017.
+Three Cost accounting ledgers are created in demo data. The Cost accounting ledger USP2 provides an E2E demo experience based on data from legal entity USP2. The Cost control unit consists of 2 Cost object dimensions (Cost centers and Product groups). Actual cost, Budget cost and Statistical measures are transferred for all 12 fiscal periods of year 2017. Overhead calculation has also been performed for all fiscal periods of year 2017.
 
 Access level security is configured but not enabled. This is enabled in the **Cost accounting parameters** page.
 
 [![Cost accounting paramters](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
 
-After Access level security has been enabled, you have assign Alica to the role Cost object controller. You can log in as Alica and access the **Cost control** workspace. Alicia can now see her Cost center performance and drill into details of how these was calculated.
+After Access level security has been enabled, you can assign an employee to the role Cost object controller. You can log in as the employee and access the **Cost control** workspace. The employee can now see their Cost center performance and drill into details of how these were calculated.

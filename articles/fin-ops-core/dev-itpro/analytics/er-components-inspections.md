@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Every configured [Electronic reporting (ER)](general-electronic-reporting.md) [format](general-electronic-reporting.md#FormatComponentOutbound) and [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) component can be [validated](er-fillable-excel.md#validate-an-er-format) at design time. During this validation, a consistency check is done to help prevent runtime issues that might occur, such as execution errors and performance degradation. For every issue that is found, the path of a problematic element is provided. For some issues, an automatic fix is available.
+Every configured [Electronic reporting (ER)](general-electronic-reporting.md) [format](general-electronic-reporting.md#FormatComponentOutbound) and [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) component can be [validated](er-fillable-excel.md#validate-an-er-format) at design time. During this validation, a consistency check runs to help prevent runtime issues that might occur, such as execution errors and performance degradation. For every issue found, the check provides the path of a problematic element. For some issues, an automatic fix is available.
 
 By default, the validation is automatically applied in the following cases for an ER configuration that contains the previously mentioned ER components:
 
@@ -73,7 +73,7 @@ To skip the validation when the configuration is imported, follow these steps.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. Set the **Validate the configuration after importing** option to **No**.
 
-To skip the validation when the version's status is changed or rebased, follow these steps.
+To skip the validation when you change or rebase the version's status, follow these steps.
 
 1. Go to **Organization administration \> Electronic reporting \> Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
@@ -105,7 +105,7 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Error</td>
 <td>
 <p>Cannot convert expression of type &lt;type&gt; to field of type &lt;type&gt;.</p>
-<p><b>Runtime error:</b> Exception of type</p>
+<p><b>Runtime error:</b> Exception for type</p>
 </td>
 </tr>
 <tr>
@@ -282,7 +282,7 @@ No option to automatically fix this issue is available.
 
 #### Option 1
 
-Update the format structure by changing the data type of the **Numeric** format element so that it matches the data type of the expression that is configured for the binding of that element. In the preceding example, the **Numeric type** value of the **X** format element must be changed back to **Integer**.
+Update the format structure by changing the data type of the **Numeric** format element so that it matches the data type of the expression that you configured for the binding of that element. In the preceding example, the **Numeric type** value of the **X** format element must be changed back to **Integer**.
 
 #### Option 2
 
@@ -458,7 +458,7 @@ Change the expression of the **Vendor.FilteredTrans** data source from `WHERE(Tr
 
 #### Option 2
 
-Change the value of the **Execute** field for the **JoinedList** data source from **Query** to **In memory**. We don't recommend that you change the value for a table that has a large volume of data (transactional table), because all records will be fetched, and the join will be done in memory. Therefore, this approach can cause poor performance. A validation warning is shown to inform you about this risk.
+Change the value of the **Execute** field for the **JoinedList** data source from **Query** to **In memory**. We don't recommend that you change the value for a table that has a large volume of data (transactional table), because all records will be fetched, and the join occurs in memory. Therefore, this approach can cause poor performance. A validation warning is shown to inform you about this risk.
 
 ## <a id="i7"></a>Preferability of FILTER vs WHERE function
 
@@ -493,11 +493,11 @@ Alternatively, you can select the row for a single warning in the grid and then 
 
 ### Manual resolution
 
-You can manually adjust the expressions of all the data sources that are mentioned in the validation grid by replacing the **WHERE** function with the **FILTER** function.
+You can manually adjust the expressions of all the data sources in the validation grid by replacing the **WHERE** function with the **FILTER** function.
 
 ## <a id="i8"></a>Preferability of ALLITEMSQUERY vs ALLITEMS function
 
-The built-in [ALLITEMS](er-functions-list-allitems.md) and [ALLITEMSQUERY](er-functions-list-allitemsquery.md) ER functions are used to get a flattened **Record list** value that consists of a list of records that represent all items that match the specified path. ER checks whether a direct SQL call can be established to a data source that is referred to in the **ALLITEMS** function. If a direct call can be established, a validation warning occurs in the ER model mapping designer. The message that you receive recommends that you use the **ALLITEMSQUERY** function instead of the **ALLITEMS** function to help improve efficiency.
+The built-in [ALLITEMS](er-functions-list-allitems.md) and [ALLITEMSQUERY](er-functions-list-allitemsquery.md) ER functions return a flattened **Record list** value that consists of a list of records that represent all items that match the specified path. ER checks whether a direct SQL call can be established to a data source that is referred to in the **ALLITEMS** function. If a direct call can be established, a validation warning occurs in the ER model mapping designer. The message that you receive recommends that you use the **ALLITEMSQUERY** function instead of the **ALLITEMS** function to help improve efficiency.
 
 The following steps show how this issue might occur.
 
@@ -577,11 +577,11 @@ The following steps show how this issue might occur.
 
     ![Validate the format elements you bound to data sources on the Format designer page](./media/er-components-inspections-09c.png)
 
-16. Notice that a validation errors occur. The message states that an error might be thrown for the configured **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format components at runtime if the **model.Vendor** list is empty.
+16. Notice that a validation error occurs. The message states that an error might be thrown for the configured **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format components at runtime if the `model.Vendor` list is empty.
 
     ![Validation error that notifies of potential error for the configured format compontents](./media/er-components-inspections-09d.png)
 
-The following illustration shows the runtime error that occurs if you ignore the warning, select **Run** to run the format, and select the account number of a nonexistent vendor. Because the requested vendor doesn't exist, the **model.Vendor** list will be empty (that is, it will contain no records).
+The following illustration shows the runtime error that occurs if you ignore the warning, select **Run** to run the format, and select the account number of a nonexistent vendor. Because the requested vendor doesn't exist, the `model.Vendor` list will be empty (that is, it will contain no records).
 
 ![Runtime errors because that occurred during the format mapping run](./media/er-components-inspections-09e.png)
 
@@ -593,15 +593,15 @@ For the selected row in the grid on the **Warnings** tab, you can select **Unbin
 
 #### Option 1
 
-You can bind the **Statement\\Party\\Name** format element to the **model.Vendor** data source item. At runtime, this binding calls the **model.Vendor** data source first. When **model.Vendor** returns an empty record list, the nested format elements aren't run. Therefore, no validation warnings occur for this format configuration.
+You can bind the **Statement\\Party\\Name** format element to the `model.Vendor` data source item. At runtime, this binding calls the `model.Vendor` data source first. When `model.Vendor` returns an empty record list, the nested format elements aren't run. Therefore, no validation warnings occur for this format configuration.
 
 ![Bind the format element to the data source item on the Format designer page](./media/er-components-inspections-09e.gif)
 
 #### Option 2
 
-Change the binding of the **Statement\\Party\\Name** format element from `model.Vendor.Name` to `FIRSTORNULL(model.Vendor).Name`. The updated binding conditionally converts the first record of the **model.Vendor** data source of the **Record list** type to a new data source of the **Record** type. This new data source contains the same set of fields.
+Change the binding of the **Statement\\Party\\Name** format element from `model.Vendor.Name` to `FIRSTORNULL(model.Vendor).Name`. The updated binding conditionally converts the first record of the `model.Vendor` data source of the **Record list** type to a new data source of the **Record** type. This new data source contains the same set of fields.
 
-- If at least one record is available in the **model.Vendor** data source, the fields of that record are filled with the values of the fields of the first record of the **model.Vendor** data source. In this case, the updated binding returns the vendor name.
+- If at least one record is available in the `model.Vendor` data source, the fields of that record are filled with the values of the fields of the first record of the `model.Vendor` data source. In this case, the updated binding returns the vendor name.
 - Otherwise, every field of the record that is created is filled with the default value for the data type of that field. In this case, the blank string is returned as the default value of the **String** data type.
 
 Therefore, no validation warnings occur for the **Statement\\Party\\Name** format element when it's bound to the `FIRSTORNULL(model.Vendor).Name` expression.
@@ -610,13 +610,13 @@ Therefore, no validation warnings occur for the **Statement\\Party\\Name** forma
 
 #### Option 3
 
-If you want to explicitly specify the data that is entered in a generated document when the **model.Vendor** data source of the **Record list** type returns no records (the text **Not available** in this example), change the binding of the **Statement\\Party\\Name** format element from `model.Vendor.Name` to `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. You can also use the expression `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
+If you want to explicitly specify the data that is entered in a generated document when the `model.Vendor` data source of the **Record list** type returns no records (the text **Not available** in this example), change the binding of the **Statement\\Party\\Name** format element from `model.Vendor.Name` to `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. You can also use the expression `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
 
 ### <a id="i9a"></a>Additional consideration
 
-The inspection also warns you about another potential issue. By default, as you bind the **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format elements to the appropriate fields of the **model.Vendor** data source of the **Record list** type, those bindings will be run and will take the values of the appropriate fields of the first record of the **model.Vendor** data source, if that list isn't empty.
+The inspection also warns you about another potential issue. By default, as you bind the **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format elements to the appropriate fields of the `model.Vendor` data source of the **Record list** type, those bindings will be run and will take the values of the appropriate fields of the first record of the `model.Vendor` data source, if that list isn't empty.
 
-Because you haven't bound the **Statement\\Party** format element with the **model.Vendor** data source, the **Statement\\Party** element won't be iterated for every record of the **model.Vendor** data source during format execution. Instead, a generated document will be filled with information from only the first record of the record list, if that list contains multiple records. Therefore, there might be an issue if the format is intended to fill a generated document with information about all vendors from the **model.Vendor** data source. To fix this issue, bind the **Statement\\Party** element with the **model.Vendor** data source.
+Because you haven't bound the **Statement\\Party** format element with the `model.Vendor` data source, the **Statement\\Party** element won't be iterated for every record of the `model.Vendor` data source during format execution. Instead, a generated document will be filled with information from only the first record of the record list, if that list contains multiple records. Therefore, there might be an issue if the format is intended to fill a generated document with information about all vendors from the `model.Vendor` data source. To fix this issue, bind the **Statement\\Party** element with the `model.Vendor` data source.
 
 ## <a id="i10"></a>Executability of an expression with FILTER function (caching)
 
@@ -703,7 +703,7 @@ The following steps show how this issue might occur.
 
 14. Bind the format elements to provided data sources in the following way:
 
-    - Bind the **Statement\\Party** format element to the **model.Vendor** data source item.
+    - Bind the **Statement\\Party** format element to the `model.Vendor` data source item.
     - Bind the **Statement\\Party\\Name** format element to the **model.Vendor.Name** data source field.
     - Bind the **Statement\\Party\\AccountNum** format element to the **model.Vendor.AccountNumber** data source field.
 

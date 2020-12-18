@@ -83,7 +83,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Customer self-service (CSS)</td>
-<td>CSS lets you create approved customer records. It also allows users to view selected product catalogs, order items, and view the status of invoices. Additionally, CSS provides the ability to create and follow return orders.</td>
+<td>CSS lets you create approved customer records. It also allows users to view selected product catalogs, order items, and view the status of invoices. Additionally, CSS lets you create and follow return orders.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
@@ -93,7 +93,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Employee self-service (ESS)</td>
-<td>ESS shows employees several tiles which have task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
+<td>ESS shows employees several tiles that have task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
 <td>Implemented in version 1611</td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>General budget reservations</td>
-<td>Thw General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes.</td>
+<td>The General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes.</td>
 <td>Implemented in version 8.1</td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Procurement site</td>
-<td>In previous versions, the Employee self-service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. Different procurement catalogs could be configured to show on the site depending on policy. Procurement catalogs could also be designed by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hierarchy. Additionally, on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
+<td>In previous versions, the Employee self-service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. YOu could configure different procurement catalogs to show on the site depending on policy. You could also design procurement catalogs by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hierarchy. Additionally, on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
@@ -415,14 +415,14 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Vendor collaboration (Vendor Portal)</td>
-<td>Dynamics AX 2012 provided vendor portal capabilities via Enterprise Portal. These capabilities have been ported to Financial and Operations. In version 7.1 (also known as Dynamics 365 for Operations 1611), a vendor could view and respond to purchase orders.
+<td>Dynamics AX 2012 provided vendor portal capabilities via Enterprise Portal. Financial and Operations also provides these capabilities. In version 7.1 (also known as Dynamics 365 for Operations 1611), a vendor could view and respond to purchase orders.
 <p>In version 7.3, the vendor can view and respond to RFQ's. Vendors can also view and edit selected information from the vendor record such as addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.</p>
 </td>
 <td>Implemented in version 7.3</td>
 </tr>
 <tr>
 <td>Vendor requests - external request to become a new vendor</td>
-<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register additional details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account.</td>
+<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register more details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account.</td>
 <td>Implemented in version 7.3</td>
 </tr>
 <tr>
