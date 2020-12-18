@@ -38,7 +38,7 @@ This topic provides general information about vendor invoices. Vendor invoices a
 
 ## Vendor invoices
 
-A vendor invoice from a purchase order is an invoice that is produced when products or services are received according to a purchase order that was placed with a vendor. The vendor invoice contains a header, and one or more lines for items or services. A vendor invoice completes the cycle from purchase order to product receipt to vendor invoice.
+A vendor invoice from a purchase order is produced when products or services are received according to a purchase order placed with a vendor. The vendor invoice contains a header, and one or more lines for items or services. A vendor invoice completes the cycle from purchase order to product receipt to vendor invoice.
 
 Although some vendor invoices connect to a purchase order, vendor invoices can also contain lines that don't correspond to purchase order lines. You can also create vendor invoices that aren't associated with any purchase order. These vendor invoices might represent ongoing services, such as a utility bill. You don't have to reference a purchase order when you add an ongoing service.
 
@@ -55,8 +55,8 @@ The following discussion provides more information about how to use the **Open v
 
 When you open a vendor invoice from a related purchase order, the system creates invoice lines from the purchase order. By default, the system takes the quantities from the product receipt. However, you can use any of the following default behaviors:
 
-- **Receive now quantity** – Use this option for partial shipments. The default value in the **Quantity** field is taken from the quantity that is specified in the **Receive now** field on the purchase order.
-- **Ordered quantity** – Use this option for complete shipments. The default value in the **Quantity** field is taken from the quantity that is specified in the **Ordered** field on the purchase order.
+- **Receive now quantity** – Use this option for partial shipments. The system sets the default value in the **Quantity** from the quantity specified in the **Receive now** field on the purchase order.
+- **Ordered quantity** – Use this option for complete shipments. The system sets the default value in the **Quantity** from the quantity specified in the **Ordered** field on the purchase order.
 - **Registered quantity** – Use this option if the item requires registration, as specified on the **Item model groups** page. The default value in the **Quantity** field is the physical update quantity that has been registered.
 - **Product receipt quantity** – Use this option if a product receipt has already been received for the order. The system takes the default value in the **Quantity** field from the total quantity of available product receipts.
 - **Registered quantity and services** – Use this option if quantities have been registered in arrival journals for stocked items or items that aren't stocked. This option also includes services, regardless of whether they are registered.
