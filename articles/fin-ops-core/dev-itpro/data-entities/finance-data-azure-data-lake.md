@@ -105,3 +105,12 @@ Ask your administrator to re-install the Export to Data Lake add-in. If this iss
 ### Export to Data Lake feature is temporarily unavailable. Please check back later.
 If you see this error for a prolonged period of time, contact Support.  
 
+### Status codes with extended errors shown in Export to Data Lake UI
+In the event of an error in a table that you have added to Export to Data Lake, you may see an error code shown in the status column. Following error codes provide the cause of the error and how you can correct the issue
+
+---------------------------------------------------------
+| Error Code  |  Explanation     | Next steps            |
+---------------------------------------------------------
+| 400  | The table you added does not contain a RecID field | Tables that do not contain a RecID field can't be added to the Data lake at this point in time |
+| 
+
