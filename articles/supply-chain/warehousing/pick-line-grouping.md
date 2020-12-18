@@ -64,7 +64,7 @@ Before you can use this feature, it must be turned on in your system. Administra
 
     1. On the **Work classes** FastTab, elect **New**.
     2. In the **Work class ID** field, you can select either *Sales* or *SO Pick*, depending on the warehouse that you will use. For this scenario, select *SO Pick*.
-    
+
         The **Work order type** field is automatically set to *Sales orders*.
 
 ### Set up a mobile device menu
@@ -157,21 +157,22 @@ Before you can set up pick line grouping, you must create some eligible outbound
 
 1. Confirm the pick step.
 1. Go to the work page for the work ID, and notice that all three pick lines for item *M9200* were closed simultaneously.
-1. Go back to the mobile device, and continue to pick. Work line 4 for item *M9201* should be presented. Because there was only one work line on the order, there is nothing to consolidate.
+1. Go back to the mobile device, and continue to pick. Work line 4 for item *M9201* should be presented. Because there was only one work line on the order, there is nothing to aggregate.
 1. Confirm the pick step.
 1. The last pick step on the mobile device aggregates the last two pick lines from the work order.
 1. Complete the pick step for *9* each of item *M9202*.
 1. Confirm the put step and any additional pick/put pairs to complete the work.
 
 > [!IMPORTANT]
+>
 > - Work lines can be grouped only if they are in sequence.
 > - The following functionality isn't supported:
 >
->    - Catch-weight items
+>   - Catch-weight items
 >
->        If there are any catch-weight items on the work, you receive an error message before you start to pick.
+>    If there are any catch-weight items on the work, you receive an error message before you start to pick.
 >
->    - Piece picking
->    - Work lines that have unfinished replenishment work
->    - Over-picking
->    - Short picking with item reallocation
+>   - Piece picking
+>   - Work lines that have unfinished replenishment work
+>   - Over-picking
+>   - Short picking with item reallocation
