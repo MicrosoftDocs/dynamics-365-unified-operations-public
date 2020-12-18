@@ -40,7 +40,7 @@ This topic provides general information about vendor invoices. Vendor invoices a
 
 A vendor invoice from a purchase order is an invoice that is produced when products or services are received according to a purchase order that was placed with a vendor. The vendor invoice contains a header, and one or more lines for items or services. A vendor invoice completes the cycle from purchase order to product receipt to vendor invoice.
 
-Although some vendor invoices are connected to a purchase order, vendor invoices can also contain lines that don't correspond to purchase order lines. You can also create vendor invoices that aren't associated with any purchase order. These vendor invoices might represent ongoing services, such as a utility bill, and you don't have to reference a purchase order when you add them.
+Although some vendor invoices connect to a purchase order, vendor invoices can also contain lines that don't correspond to purchase order lines. You can also create vendor invoices that aren't associated with any purchase order. These vendor invoices might represent ongoing services, such as a utility bill. You don't have to reference a purchase order when you add an ongoing service.
 
 There are several ways to enter a vendor invoice:
 
@@ -75,11 +75,11 @@ Your organization might use workflows to manage the review process for vendor in
 
 Following are several ways you can prevent an invoice from being submitted to a workflow.
 
-- **Invoice total and the registered total are not equal.** The person who submitted the invoice will receive an alert that the totals aren’t equal so they can correct the balances before resubmitting the invoice to workflow. This feature is available if the **Prohibit submission to workflow when the invoice total and registered invoice total are not equal** parameter on the **Feature management** page is turned on. 
+- **Invoice total and the registered total are not equal.** The person who submitted the invoice will receive an alert that the totals aren’t equal. The alert provices an opportunity to correct the balances before resubmitting the invoice to workflow. This feature is available if the **Prohibit submission to workflow when the invoice total and registered invoice total are not equal** parameter on the **Feature management** page is turned on. 
 
 - **Invoice contains unallocated charges.** The person who submitted the invoice will receive an alert that the invoice has unallocated charges so they can correct the invoice before resubmitting it to workflow. This feature is available if the **Prohibit submission to workflow when there are unallocated charges on a vendor invoice** parameter on the **Feature management** page is turned on.
 
-- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive an alert that an invoice with a duplicate number was found, and they can correct it before resubmitting to workflow. This alert will be displayed when the Accounts payable parameter labeled **Check the invoice number used** is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.  
+- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive an alert that an invoice with a duplicate number was found, and they can correct it before resubmitting to workflow. This alert will be displayed when the **Check the invoice number used** in Accounts payable parameters is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.  
 
 ## Matching vendor invoices to product receipts
 
