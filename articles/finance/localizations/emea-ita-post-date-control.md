@@ -47,7 +47,7 @@ This topic explains how to configure chronology control for invoices posting dat
 ### Define 
 In **Organization administration** > **Number sequences** > **Number sequences**, define ...
 
-![Number sequence setup](media/chrono-num-sequence.jpg)
+![Posting date control](media/emea-ita-post-date-control.jpg)
 
 ## Documents posting
 When you post a document, 
