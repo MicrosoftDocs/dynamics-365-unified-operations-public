@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 Reallocation allows an organization to recalculate the revenue price when to the terms of a contractual sale are changed.  The sales order documents are considered the contract for the purpose of recognizing revenue. 
 
-Your own organizatoin must decide whether a reallocation is necessary. Adding a new line to a sales order, or adding a new sales order for the customer, might not constitute a change to the contract. The following scenarios might require a reallocation:
+Your own organization must decide whether a reallocation is necessary. Adding a new line to a sales order, or adding a new sales order for the customer, might not constitute a change to the contract. The following scenarios might require a reallocation:
 
 - Items on the sales order were added or removed by the customer after the order was fully or partially invoiced
 - Multiple sales orders were entered for the same negotiated contract, whether the sales orders were in a confirmed or invoiced state
