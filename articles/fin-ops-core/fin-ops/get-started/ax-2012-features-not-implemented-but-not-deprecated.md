@@ -164,35 +164,35 @@ For a detailed list of the release date for each version, see [Software lifecycl
 <td>Cheque, Opdrachtgever</td>
 </tr>
 <tr>
-<td>`TrfBenBen`</td>
+<td>TrfBenBen</td>
 <td>Overboeking Begunstigde/Begunstigde</td>
 </tr>
 <tr>
-<td>`TrfBenBenUrg`</td>
+<td>TrfBenBenUrg</td>
 <td>Overboeking Begunstigde/Begunstigde Spoed</td>
 </tr>
 <tr>
-<td>`TrfEurBen`</td>
+<td>TrfEurBen</td>
 <td>Overboeking Euro/Begunstigde</td>
 </tr>
 <tr>
-<td>`TrfEurBenUrg`</td>
+<td>TrfEurBenUrg</td>
 <td>Overboeking Euro/Begunstigde Spoed</td>
 </tr>
 <tr>
-<td>`TrfEurEur`</td>
+<td>TrfEurEur</td>
 <td>Overboeking Euro/Euro</td>
 </tr>
 <tr>
-<td>`TrfEurEurUrg`</td>
+<td>TrfEurEurUrg</td>
 <td>Overboeking Euro/Euro Spoed</td>
 </tr>
 <tr>
-<td>`TrfForBen`</td>
+<td>TrfForBen</td>
 <td>Overboeking VV-rekening/Begunstigde</td>
 </tr>
 <tr>
-<td>`TrfForBenUrg`</td>
+<td>TrfForBenUrg</td>
 <td>Overboeking VV-rekening/Begunstigde Spoed</td>
 </tr>
 <tr>
