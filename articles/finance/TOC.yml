@@ -1360,8 +1360,8 @@
         href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
       - name: Reset the financial reporting data mart
         href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
-      - name: Reset the Financial reporting data mart
-        href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md
+      - name: When to reset a data mart
+        href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
     - name: Globalization
       items:
       - name: Globalization resources
