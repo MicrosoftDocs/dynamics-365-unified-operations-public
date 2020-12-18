@@ -50,7 +50,7 @@ One parameter impacts the reallocation process. Because a reallocation can be pe
 
 Each organization needs to decide whether the correction updates only General ledger or whether Accounts receivable will be updated, as well as General ledger.  This is determined by going to **Revenue recognition > Setup > General ledger parameters > Revenue recognition** and setting the “**Post invoice corrections to Accounts receivable** parameter as appropriate. The “appropriate” settings are specified in each of the four scenarios. 
 
-[![General ledger parameters](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![General ledger parameters set to post invoice corrections](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 If Post invoice corrections to Accounts receivable is set to Yes, processing of the reallocation will result in the following:
 - A credit document is created in the Accounts receivable module to reverse the invoice that needs correcting.
@@ -79,13 +79,11 @@ After selecting one or more sales orders, the sales order lines display in the b
 
 After selecting the necessary sales order lines, use the buttons on the page as follows:
 
-- **Update reallocation** – This button calculates the new revenue price amounts for the selected sales order lines. If a line had been removed or canceled, the reallocation will happen with only the existing lines selected. The new amounts are shown in the **Reallocated amount** column in the sales order **Lines** grid. The reallocation has been processed  but not yet calculated.
+- **Update reallocation** – This button calculates the new revenue price amounts for the selected sales order lines. If a line had been removed or canceled, the reallocation will happen with only the existing lines selected. 
 
-Before updating reallocation
+[![Sales order lines before reallocation before updating reallocation](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
-[![Sales order lines before reallocation](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
-
-After updating reallocation
+The new amounts are shown in the **Reallocated amount** column in the sales order **Lines** grid. The reallocation has been processed but not yet calculated.
 
 [![Sales order lines after reallocation](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
@@ -95,33 +93,32 @@ After updating reallocation
 - **Expected voucher** – This button will show a preview of the accounting entries created for any sales order lines that have been invoiced.  If none of the lines have been invoiced, nothing will display here.  The reallocation will run automatically if the Update reallocation button wasn’t selected prior to selecting the Expected voucher button.
 - **Revenue reallocation** – This button will open a page displaying the revenue price allocation for all the selected lines. Nothing can be modified here.  It is used to show the line amounts used for performing the reallocation. 
 
-[![Reallocation update](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+[![Reallocation update showing line amounts used for reallocation](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Reset data for selected customer** – This button is used to clear the data in the reallocation table for only the selected customer if the process was started and not completed. For example, if multiple sales order lines were marked for reallocation and the page was left open without selecting the **Process** button, the page could time out and the sales order lines would remain marked.  This means the lines wouldn’t be available for another user to complete the process. Sometimes the page may even open blank when this happens. This button can be used to clear unprocessed sales orders, and then allow any user to complete the reallocation process.
  ## Scenarios for reallocation
 
 ### Scenario 1
-The following scenario walks through a reallocation scenario where two sales orders are entered, but only confirmed. The same scenario can be done with more than two sales orders in a confirmed state, with similar results. 
-The General ledger parameter is defined as Post invoice corrections to Accounts receivable = No.
+The following scenario walks through a reallocation scenario where two sales orders are entered, but only confirmed. The same scenario can be done with more than two sales orders in a confirmed state, with similar results. The **Post invoice corrections to Accounts receivable** parameter is set to **No** on the **General ledger parameters** page.
 
-[![General ledger parameter setting for the first scenario](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
+[![General ledger parameter setting with post invoice corrections to Accounts receivable set to No](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
 
 A sales order is created for customer US_SI_0003. The customer is purchasing a laptop (S0012) and a support plan (S0008) for the laptop.  The laptop’s revenue is recognized immediately (no revenue schedule) and revenue for the support plan will be deferred and recognized over 12 months as defined by the date range in the contract. 
 
-[![New sales order lines](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
+[![New sales order lines showing laptop purchase](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
 
 The sales order is confirmed. Both items are set up for revenue price allocation so confirmation calculates the revenue price. The Revenue to recognize can be seen from the **Sales order** Action Pane, (**Manage – Revenue recognition – Revenue price allocation**). The laptop’s revenue will post to the Revenue account in the amount of $1,008.01. The sustained engineering service’s revenue will post to the Deferred revenue account in the amount of $190.99.  The sum of the revenue prices must equal the sum of the lines’ that were set up to capture revenue price allocation, which equals $1,199.00. 
 
-[![Revenue price allocation](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
+[![Revenue price allocation showing laptop revenue posting to Revenue account](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
 
 At the time of the sale, the customer chose to not purchase software installation (S0001), but later changed their mind.  A second sales order is entered for the same customer.
 
-[![Sales order lines with additional sale](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
+[![Sales order lines with second sales sale](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
 
 The second sales order is confirmed. Because the sales order only contains one line, revenue price allocation is not performed on confirmation. Revenue price allocation only happens where there are two or more unique items, and the items are set up for revenue price allocation.
-If this is the only change to the customer’s contract, the reallocation process can now be run. From either sales order or from Periodic tasks, open the **Reallocate price with new order lines**.  Select the two sales orders and the corresponding sales order lines, then select the **Update reallocation** button.  The Reallocated amount column displays the new revenue prices for each sales order line.  
+If this is the only change to the customer’s contract, the reallocation process can now be run. From either sales order or from Periodic tasks, open the **Reallocate price with new order lines**.  Select the two sales orders and the corresponding sales order lines, then select the **Update reallocation** button. The Reallocated amount column displays the new revenue prices for each sales order line.  
 
-[![Reallocate price with new order lines in the first scenario](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
+[![Reallocate price with new revenue prices for each sales order line](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
 
 Nothing is shown under the **Expected voucher** button because no invoices have been posted.  
 
@@ -130,7 +127,7 @@ The reallocation is completed by choosing the **Process** button.  It will promp
 > [!Hint]
 > You can add additional columns to the grid, such as **Reallocation ID** and **Sales order**, to give context about why these additional items are displayed. 
 
-[![Revenue price allocations lines](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+[![Revenue price allocations lines with additional columns](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
 
 ### Scenario 2
 is  scenario walks through a reallocation example where two sales orders are entered.  After first sales order is invoiced, the customer adds an additional item to the contract. When adding the new item to a contract, the new item can also be added to a new sales order or to the existing sales order, as shown in Scenario 3.
@@ -140,7 +137,7 @@ The General ledger parameter, **Post invoice corrections to Accounts receivable*
 
 A sales order is created for customer US_SI_0003. The customer is purchasing software installation (S0001) and support (S0008) for a laptop, but they haven’t selected the laptop yet. The software installation’s revenue is deferred until the date the laptop is purchased. The revenue from the support plan will be deferred and recognized over 12 months as defined by the date range in the contract. 
 
-[![Sales order lines with software installation added](./media/13_rev-rec-scenarios.png)](./media/13_rev-rec-scenarios.png)
+[![Sales order lines with line added for software installation](./media/13_rev-rec-scenarios.png)](./media/13_rev-rec-scenarios.png)
 
 The sales order is confirmed. Both items are set up for revenue price allocation so the revenue price is calculated when the sales order is confirmed.. The revenue to recognize can be seen from the **Sales order** Action Pane (**Manage – Revenue recognition – Revenue price allocation**). The support item will post to a Deferred Revenue account in the amount of $150.00. The software installation will also post to the Deferred Revenue account in the amount of $250.00.  The sum of the revenue prices must equal the sum of the lines’ setup for revenue price allocation, which is equal to $400.00. 
 
@@ -148,41 +145,42 @@ The sales order is confirmed. Both items are set up for revenue price allocation
 
 The sales order is fully invoiced.  The following accounting entry is posted.
 
-[![Voucher transactions grid](./media/15_rev-rec-scenarios.png)](./media/15_rev-rec-scenarios.png)
+[![Voucher transactions where sales order is fully invoiced](./media/15_rev-rec-scenarios.png)](./media/15_rev-rec-scenarios.png)
 
 The Revenue recognition schedule is also created but none of the revenue is recognized yet. 
 
-[![Revenue recognition schedule in the first scenario](./media/16_rev-rec-scenarios.png)](./media/16_rev-rec-scenarios.png)
+[![Revenue recognition schedule with revenue recognition schedule but revenue note yet recognized](./media/16_rev-rec-scenarios.png)](./media/16_rev-rec-scenarios.png)
 
 A few days later the customer selects the laptop, and a second sales order is entered for the customer.
 
-[![Sales order details with second addition](./media/17_rev-rec-scenarios.png)](./media/17_rev-rec-scenarios.png)
+[![Sales order details with second item added for sale of laptop](./media/17_rev-rec-scenarios.png)](./media/17_rev-rec-scenarios.png)
 
 The second sales order is confirmed. Because the sales order only contains one line, revenue price allocation is not performed on confirmation. Revenue price allocation only happens where there are two or more unique items, and the items are setup for revenue price allocation.
 If this is the only change to the customer’s contract, the reallocation process can now be run. From either sales order or from Periodic tasks, open **Reallocate price with new order lines**.  Select the two sales orders and the corresponding sales order lines, then select the **Update reallocation** button.  The **Reallocated amount column** displays the new revenue prices for each sales order line.
 
 [![Reallocate price with new order lines in the second scenario](./media/18_rev-rec-scenarios.png)](./media/18_rev-rec-scenarios.png)
 
-Next select **Expected voucher** to see the accounting entries that will be posted to General ledger only.  Because of the GL parameter, nothing will change in Accounts receivable when the reallocation is processed.
+Next select **Expected voucher** to see the accounting entries that will be posted to General ledger only. Because of the GL parameter, nothing will change in Accounts receivable when the reallocation is processed.
  
 [![Expected voucher](./media/19_rev-rec-scenarios.png)](./media/19_rev-rec-scenarios.png)
 
 The last three lines are reversing the original accounting entry from the posted invoice. 
-The top four lines comprise the new accounting entry posted for the invoice. It’s important to understand that the customer is not presented with a new invoice.  After the reallocation, the customer still owes $426.00, which is the amount that must post to Accounts receivable in the new accounting entry.  The offsetting tax and deferred revenue is equal to $188.69 + $314.48 + $26.00 = $529.17. The deferred revenue amount has changed due to the reallocation.  The difference of $103.17 is posted to a Partial invoice revenue clearing account.  This balance will be cleared when the invoice is posted for the second sales order that was included in the reallocation. 
+The top four lines comprise the new accounting entry posted for the invoice. It’s important to understand that the customer is not presented with a new invoice. After the reallocation, the customer still owes $426.00, which is the amount that must post to Accounts receivable in the new accounting entry.  The offsetting tax and deferred revenue is equal to $188.69 + $314.48 + $26.00 = $529.17. The deferred revenue amount has changed due to the reallocation. The difference of $103.17 is posted to a Partial invoice revenue clearing account.  This balance will be cleared when the invoice is posted for the second sales order that was included in the reallocation. 
+
 The reallocation is completed by choosing the **Process** button.  It will prompt for a posting date, even if nothing is posted. After the reallocation is complete, the **Revenue price allocation** page on both sales orders will show the price allocation for all items across both sales orders. This means you will see an item in Revenue price allocation that doesn’t exist on the sales order because it’s part of the same contract, but on a different sales order.  
 
 > [!Hint]
 > Additional columns, such as the **Reallocation ID** and **Sales order**, can be added to the grid to give context as to why these additional items are displayed.  
 
-[![Revenue price allocation in the second scenario](./media/20_rev-rec-scenarios.png)](./media/20_rev-rec-scenarios.png)
+[![Revenue price allocation with additional columns for Reallocation ID and Sales order](./media/20_rev-rec-scenarios.png)](./media/20_rev-rec-scenarios.png)
 
 On sales order 00036, the revenue recognition schedule was also updated based on the new revenue reallocation price.  From the sales order, open the **Revenue recognition schedule** page.  Previously there were 13 lines for the item S0008 which was assigned a 12M schedule. Now there are 39 lines: 13 original schedule lines, 13 reversal schedule lines, and 13 lines based on the new revenue price.  
 
-[![Revenue recognition schedule](./media/21_rev-rec-scenarios.png)](./media/21_rev-rec-scenarios.png)
+[![Revenue recognition schedule shopwing 39 lines](./media/21_rev-rec-scenarios.png)](./media/21_rev-rec-scenarios.png)
 
 The same is true for item S0001, which originally had 2 schedule lines and now there are 6 schedule lines.
 
-[![Revenue recognition schedule showing original schedule lines and reversal schedule lines](./media/22_rev-rec-scenarios.png)](./media/22_rev-rec-scenarios.png)
+[![Revenue recognition schedule showing original, schedule lines and reversal schedule lines](./media/22_rev-rec-scenarios.png)](./media/22_rev-rec-scenarios.png)
 
 On sales order 000036, the invoice journal displays the original accounting entry when clicking on **Voucher**. To see the reversing and new accounting entry from the sales order, select the **Revenue adjustments** button from the Action Pane, then **Voucher**.  
 
@@ -200,11 +198,11 @@ This scenario walks through a reallocation scenario where a new line is added to
 
 The General ledger parameter, **Post invoice corrections to Accounts receivable**, should be set to Yes.
  
-[![General ledger parameter setting for the third scenario](./media/25_rev-rec-scenarios.png)](./media/25_rev-rec-scenarios.png)
+[![General ledger parameter setting with Post invoice corrections to Accounts receivable set to Yes](./media/25_rev-rec-scenarios.png)](./media/25_rev-rec-scenarios.png)
 
 A sales order is created for customer US_SI_0003. The customer is purchasing a laptop (S0012) and support (S0008) for the laptop.  The laptop’s revenue is recognized immediately, and revenue for the support plan will be deferred and recognized over 12 months as defined by the date range defined in the contract. 
 
-[![Sales order lines for third scenario](./media/26_rev-rec-scenarios.png)](./media/26_rev-rec-scenarios.png)
+[![Sales order lines for customer US_SI_0003](./media/26_rev-rec-scenarios.png)](./media/26_rev-rec-scenarios.png)
 
 The sales order is confirmed. Both items are set up for revenue price allocation, so confirmation calculates the revenue price. The revenue to recognize can be seen from the **Sales order** Action Pane, under **Manage > Revenue recognition > Revenue price allocation**. The support item will post to deferred revenue for $190.99. The laptop will also post to revenue for $1,008.01.  The sum of the revenue prices must equal the sum of the lines that have been set up for revenue price allocation, which is equal to $1,199.00.
 
