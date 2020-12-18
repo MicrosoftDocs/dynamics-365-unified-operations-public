@@ -5,7 +5,7 @@ title: Call Center refund payments
 description: This topic is a reference guide regarding how payment refunds are generated through call center when returns are created or order/order lines are canceled
 author: hhainesms
 manager: annbe
-ms.date: 11/6/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -29,80 +29,77 @@ ms.dyn365.ops.version:
 
 # Call Center Refunds  - Payments processing reference
 
-When creating a return order as a call center user in Commerce HQ, the user will have the ability to set up the RMA which outlines which products the customer wishes to return or exchange.   If the call center channel has ‘enable order completion’ turned on, the return order will go through a Complete/Submit flow of processing which allows for a calculation of return order totals and allows for the configuration of the refund payments.
+When creating a return order for a customer as a call center user in Commerce Headerqaurters (HQ), the user will use the **Return order** form to create the initial Return Materials Authorization (RMA).  The RMA defines which products the customer wishes to return or exchange and creates a linked return sales order with an order type of **Returned order**.  This linked returned order is used to track the postings of the returned inventory and any credit notes or payment refunds posted. 
 
-Call center  logic will determine the payment method for the refund systematically based on the original order’s payment.  If the RMA being created is not linked to an original order, a default payment method will be applied.
+If the call center channel has **Enable order completion** turned on, the user creating the RMA will be required to execute the order completion processing flow by clicking the **Complete** function from the **Return order** form.   Clicking **Complete** provides the user with a calculated **Return summary** which outlines the refund amount due and, if configured properly, will also systematically create a refund payment line against the returned order.
 
-How call center determines which payment method to apply to the return order based on the original order payment method
+Call center logic will determine the payment method for the refund payment line systematically based on the original order’s payment. If the return order being created is not linked to an original order, a default payment method pulled from a system parameter will be applied.
 
-If the original payment method was:
+## How call center determines which payment method to apply to the return order based on the original order payment method
 
-- Normal function (e.g. Cash), call center will reference configurations in the Call Center Refund Methods form.  Based on the currency code of the order, the refund can either be issued as a refund check, or a customer account credit.   Call center logic will create the customer payment journal using the AR payment method as defined in the Call Center Refund Methods form.  Once the payment journal is created, users must utilize standard Dynamics 356 Finance accounts receivable payment posting functions to complete the creation/posting of the refund payment voucher.
+If the original payment method function was:
+
+-**Normal** (e.g. Cash) or **Check**.  When creating a return order that references an original order that was paid by normal or check payment types, the call center application will reference configurations in the **Call center refund methods** form.  The **Call center refund methods** form allows the organization to define, by order currency, how the customer will be refunded in for orders originally paid by normal or check payment types. This form allows organizations to choose to send a system generated refund check to the customer in this situation, or to just created a customer account credit against the internal customer account balance.  In these scenarios, call center logic will reference hte currency of the return order and then create a refund payment line on the return sales order using the configured **Retail payment method** for that currency.  Subsequently, an accounts receivable **Customer payment journal** using the mapped **AR payment method** tied to the currency.
 
 ![Call Center refund method configurations for normal and check original payments](media/callcenterrefundmethods.png)
+The image above outlines a configuration where a customer returning products from a sales order tied to the USD currency that was originally paid by normal or check payment types will be refunded by a systematically generated refund check.   The accounts receivable payment method of REF-CHK has been configured as a refund check payment type.
 
-- Check function, see Normal function rules above.  The same rules will be used by call center when the original order being returned was paid for by check
-- Credit Card, call center will refund back to the original credit card
-- Loyalty Card, call center will refund back to the loyalty card
-- Gift Card (Internal), call center will refund back to the original gift card
-- Gift Card (External) ?? Ruben?
+- **Credit Card**. When creating a return order that references an original order that was paid by credit card, call center refund payments logic will apply that same original credit card to the return order. 
+- **Loyalty Card**. When creating a return order that references an original order that was paid by a Loyalty card, call center refund payments logic will refund back to the same loyalty card
+- **Gift Card** (Internal). When creating a return order that references an original order that was paid for by a gift card issued from Dynamics 365 Commerce (internal gift card functionality), call center refund payments logic will refund back to that same original gift card number
+- **Gift Card** (External). When creating a return order that references an original order that was paid for by an external 3rd party gift card, call center refund payments logic will apply the default return **payment method** as defined on the **RMA/Returns** tab in **Call center parameters**.
 
-If for any reason the original order payment type is unknown or if the original order was paid for with multiple payment methods, call center logic will revert to applying a refund payment method to the return order based on the configuration of the Return Payment Method parameter found in Call Center Parameters form:
+If for any reason the original order payment type is unknown or if the original order was paid for with multiple payment methods, call center logic will revert to applying the default return **payment method** as defined on the **RMA/Returns** tab in **Call center parameters**
 
 ![Call Center refund default refund payment parameters](media/callcenterrefundparameters.png)
 
 > [!NOTE]
-> The above refund processing rules also apply to orders or order lines canceled in Commerce Headquarters by a call center user.  Any overpayments resulting from the cancelation of the order or specific order lines will be generate refund payment lines using the same business rules defined above.
+> The above refund processing rules also apply to orders or order lines canceled in Commerce Headquarters by a call center user.  Any overpayments resulting from the cancelation of the order or specific order lines will generate refund payment lines using the same business rules defined above.
 
-Typically, a return order goes through a standard process of inventory receipt (or scrapping of inventory) and packing slip posting against the RMA, followed by an invoice posting process of the return sales order (which is linked and is systematically generated as part of the RMA creation process).   In typical scenarios, payment refunds are not issued to customers until the return sales order has it’s invoice posted.  At that time, any configured payments for the return sales order will get posted as payment vouchers.  
+Typically, a return order goes through a standard process of inventory receipt (or scrapping of inventory) and packing slip posting against the return order, followed by an invoice posting process of the return sales order (which is linked and is systematically generated as part of the return order creation process).   In typical scenarios, payment refunds are not issued to customers until the return sales order has it’s invoice posted.   
 
-When posting the invoice on the return sales order:
+### When posting the invoice on the return sales order:
 
-- If the refund payment is a credit card, additional logic is invoked to call the payment processor.  
+- If the refund payment on the return order is a credit card, additional logic is invoked at the time of posting the invoice to call the payment processor to refund the customer's credit card. A refund customer payment voucher is also created and posted sysetematically against the customer's account.  This payment journal will be settled against the return order credit note voucher.
 
-- If the refund payment is a check, a check payment voucher is created and must be manually posted/printed before the payment voucher is created against the customer account.  Users may process the refund check using the Customer Payment Journal form found in the Accounts Receivable Menu, or they may utilize the specialized Refund Check Processing form found in the Retail and Commerce menus.
+- If the refund payment to be issued is a check payment type, a customer payment voucher with the AR payment method is created and must then be manually posted/printed before the payment voucher is posted against the customer account.  Users may process the refund check using the **Customer payment journal** form found in the **Accounts receivable** menu, or they may utilize the specialized **Refund check processing** form found in the **Retail and commerce** menu.
 
-- If the refund payment is against an internal gift card or loyalty card, invoicing the return order not only creates the payment voucher, but will also deposit the refund amount back to the customers gift card balance or loyalty points balance.   
+- If the refund payment is issued to an internal gift card or loyalty card, invoicing the return order not only creates and posts the refund payment voucher against the customer account, but this invoicing step will also deposit the refund amount back to the customer's internally tracked gift card balance or loyalty points balance.   
 
-- If the refund payment is an external gift card??? Ruben?
-
-- If the return sales order has a Customer payment method linked (e.g. customer account) credit limit validations are ignored and no payment voucher is created (the credit note voucher created by the invoice posting process serves as the customer credit voucher to indicate a refund to the customer’s AR balance).  
+- If the return sales order has a **Customer** function payment method linked (e.g. customer account) credit limit validations are ignored when processing this payment and no payment voucher is created or posted in this context. When using a **Customer** payment type on a return order, the credit note voucher created by the invoice posting process serves as the customer credit voucher to indicate a refund to the customer’s AR balance.  
 
 ## Using Advanced Credit
-When processing return orders as a call center user, an exception to the previously outlined refund payment posting process occurs when the user creating the RMA selects, the Advanced Credit option on the RMA header.  When Advanced Credit is selected, the payment refund will occur immediately upon successful submission of the RMA using the Submit function on the return order recap form.   A prepayment payment voucher for the return value will be created and posted/processed immediately, even though the return sales order itself has not yet been invoiced.   This can be used in situations where the organization needs to issue refunds to customers in advance due to customer service issues and does not wish to require waiting for inventory receipt before refunding the customer.
+When processing return orders as a call center user in a call center where **enable order completion** is turned on, an exception to the previously outlined refund payment posting process occurs when the user creating the return order enables the **Advanced credit** option on the RMA header.  When **Advanced credit** is enabled, the payment refund will occur immediately upon successful submission of the return order using the **Submit** function on the **Return summary** form. When using **Advanced credit** the system will create a prepayment customer payment voucher for the return value immediately, even though the return sales order itself has not yet been invoiced.   This can be used in situations where the organization needs to issue refunds to customers in advance due to customer service issues and does not wish to require waiting for returned inventory to be received before refunding the customer.
 
 ## Replacement Orders
-When issuing an RMA, it is possible to use the Replacement Order function to generate a new sales order for the customer.  This can be used in exchange scenarios.  Replacement order will create another sales order for the new items to be sent, but there will be a cross-reference link (which can be found in the RMA header) linking the replacement order to the return.
+When issuing an return order, it is possible to use the **Replacement order** function to generate a new sales order for the customer.  This can be used in exchange scenarios.  Using **Replacement order** will create another sales order for the new items to be sent, but there will be a cross-reference link (which can be found in the RMA header) linking the replacement order, the RMA, and the returned sales order together.
 
-When creating a replacement order, from a payment processing perspective, organizations have two choices:
+When processing payments on a replacement order, organizations have two choices:
 
-- They can choose to refund the customer for the return order and collect a separate payment for the replacement order (no additional configuration is required for this option)
-- They can choose to apply a Customer Account payment method to both the return and replacement order.   This avoids any payment processing on the transaction and it is assumed that the credit note generated by the return order invoice will be manually settled to pay for the replacement order sales invoice.   
+- They can choose to refund the customer for the return order based on the original payment method and then collect a separate payment for the replacement order (no additional configuration is required to use this option)
+- They can choose to enable **Apply credit** functions on the RMA header which will sysetmatically apply a **Customer** payment method to both the return and replacement order.  This can be used to prevent the issuance of any external refund payment.  This option avoids any payment processing on the transaction and can be useful in situations where an even exchange is being processed and the organization would prefer to use the credit voucher generated when invoicing the return order to pay for the invoice generated by the replacmeent order. When using **Apply credit** the organization must manually settle the credit note against the replacement order's invoice once both of these financial documents have been generated.
 
-If the organization wishes to apply customer credits to the replacement order and not issue refund payments or collect new payments for replacement orders, the user can enable the Apply Credits setting on the RMA header.   Enabling this setting is only applicable when the RMA will be linked to a replacement order.  When this setting is enabled, the system will apply a Customer payment method to both the return and replacement orders.    Currently the application references the Payment methods parameters in configured in the RMA/Return tab of the Call Center Parameters form to determine which Customer payment method to apply.   
+Enabling **Apply credits** on the RMA header is only applicable when the return order will be linked to a replacement order.  When **Apply credits** is enabled, the customer payment method that will be used to sysetmatically pay for the return and the exchange order is defined in the **Apply credits payment method** parameter on the **RMA/Return** tab of the **Call center parameters** form. The only type of payment that can be configured in this parameter is a **Customer** function payment type.
 
-![Call Center refund default refund payment parameters](media/callcenterrefundparameters.png)
-
-> [!NOTE]
-> Even though the application currently allows organizations to define any payment method in the Payment Methods field of Call Center RMA/Return parameters, if  the organization wishes to use the Apply Credits functionality – they must configure this parameter with a Customer function payment type.   Configuring any other payment type in this parameter will result in out of balance financial postings.
+![Call Center refund default refund payment parameters](media/callcenterrefundparameters1.png)
 
 > [!NOTE]
-> Enabling the Apply Credit toggle on an RMA that has no linked replacement order will have no effect on the return order payment logic as this setting should only be used for replacement orders.
+> Enabling the **Apply credit** toggle on an return order that has no linked replacement order will have no effect on the return order payment logic as this setting is only applicable for replacement orders.
 
 > [!IMPORTANT NOTE]
-> When creating replacement orders with an intent to use Apply Credits, users should not click the Complete operation on the RMA prior to enabling the Apply Credits setting.  If this is done, the refund payment will be already have been calculated using the Apply Credits as disabled logic, later attempts to enable the Apply Credit setting once this refund payment has already been calculated will not trigger a recalculation of the refund payment and therefore the customer payment type will not be applied. If it is required to use apply credits in this context, the user must delete the replacement order and the RMA and start over and create a new RMA, making sure to enable Apply Credits, before clicking the Complete operation.
+> When creating replacement orders with an intent to use **Apply credits**, users should not click the **Complete** operation on the return order prior to enabling the **Apply credits** setting.  Once the **Complete** operation is executed, the refund payment is calculated and applied to the return sales order. Later attempts by the user to enable the **Apply credit** setting once this refund payment has already been calculated and applied will not trigger a recalculation of the refund payment and therefore the **Apply credits payment method** will not be applied. If it is required to use apply credits in this context, the user must delete the replacement order and the RMA and start over and create a new RMA, making sure to enable **Apply credits**, before clicking the **Complete** operation.
 
 ## Payment Overrides for Call Center returns
-While call center logic will systematically determine the refund payment method based on logic outlined earlier in this document, there may be times where a user would like to override these payments.   Users may choose to edit or remove existing refund payment lines and apply new payment lines.   Changing the system calculated refund payment is only allowed by users with the proper override permissions.    These user permissions can be configured on the Override Permissions form.   For a user to be able to perform a refund payment override, ensure the user is linked to a security role where the Allow alternate payment configuration has been enabled in the Override permissions form.
+While call center logic will systematically determine the refund payment method based on logic outlined earlier in this document, there may be times where a user would like to override these payments.   Users may choose to edit or remove existing refund payment lines and apply new payment lines.   Changing the system calculated refund payment is only allowed by users with the proper override permissions.  These user permissions can be configured on the **Override permissions** form found in the **Call center setup** menu.   For a user to be able to perform a refund payment override, ensure the user is linked to a security role where the **Allow alternate payment** configuration has been enabled in the **Override permissions** form.
 
 ![Call Center user override permissions](media/overridepermissions.png)
 
-As an alternative option, the organization can turn on the Allow payment override configuration in Call Center parameters.  When this configuration is enabled, a Security override code must be defined. This is an alphanumeric code that must be managed externally as once it is set users can not view the defined code through the application.   This is a code that is meant to be known by only a few key trusted people within the organization.   When this setting is enabled, if the user is attempting to change the method of payment on a return order but does not have the proper role permissions, the user will alternatively be offered an option to enter the security override code.  If the user doesn’t know this code, or if they are not able to have a manager or supervisor enter this code into the form for them, the user will not be able to override the return payment method.
+As an alternative option, the organization can turn on the **Allow payment override** configuration in **Call center parameters**.  When this configuration is enabled, a **Security override code** must be defined. The security code is an alphanumeric code that must be managed externally as once it is set users can not view the defined code through the Commerce HQ application interface. This is a code that is meant to be known by only a few key trusted people within the organization. When the **Allow payment override** setting is enabled, if the user attempting to change the method of payment on a return order does not have the proper role permissions, the user will alternatively be offered an option to enter the **Security override code**.  If the user doesn’t know this code, or if they are not able to have a manager or supervisor enter this code into the form for them, the user will not be able to override the return payment method.
  
 ![Call Center refund payment override parameters](media/overridepaymentparameter.png)
 
 > [!NOTE]
-> If the code is lost or forgotten, an organization can simply define a new security override code to reset the code.
+> If the override code is lost or forgotten, an organization should define a new security override code in the **Security override code** field on **Call center parameters** form to reset the code.
 
-> [!NOTE]
-> Before attempting to use this capability, ensure you verify that your credit card processor allows for unlinked returns.  Many processors require refunds to be posted back to the original card and an attempt to issue a refund to a card that has no previous captures may result in posting failures with the processor.
+> [!IMPORTANT NOTE]
+> Before attempting to use this capabilty for overriding refund payments with credit card payment types, organizations should verify that your credit card processor allows for unlinked returns.  Many processors require refunds to be posted back to the original card and an attempt to issue a refund to a card that has no previous captures may result in posting failures with the processor.
