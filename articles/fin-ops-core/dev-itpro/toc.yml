@@ -194,7 +194,7 @@
                   items:
                   - name: Company concept in Dataverse
                     href: data-entities/dual-write/company-data.md
-                  - name: Bootstrap with company data
+                  - name: Initialize company data
                     href: data-entities/dual-write/bootstrap-company-data.md
                 - name: Organization hierarchy on Dataverse
                   href: data-entities/dual-write/organization-mapping.md
