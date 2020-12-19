@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-You can set up rules to separate tasks that must be performed by different users. This concept is named segregation of duties. For example, you might not want the same person both to acknowledge the receipt of goods and to process payment to the vendor. Segregation of duties helps you reduce the risk of fraud, and it also helps you detect errors or irregularities. You can also use segregation of duties to enforce internal control policies. Complete the following procedure to create a rule. You must be a system administrator to complete the procedure. The demo data company used to create this procedure is DAT. 
+You can set up rules to separate tasks that must be performed by different users. This concept is named segregation of duties. For example, you might not want the same person both to acknowledge the receipt of goods and to process payment to the vendor. Segregation of duties helps you reduce the risk of fraud, and it also helps you detect errors or irregularities. You can also use segregation of duties to enforce internal control policies. Complete the following procedure to create a rule. You must be a system administrator to complete the procedure.
 
-1. Go to **Navigation pane > Modules > System administration > Security > Segregation of duties > Segregation of duties rules**.
+1. Go to **System administration > Security > Segregation of duties > Segregation of duties rules**.
 2. Click **New**.
 3. In the **Name** field, type a value for the rule.
 4. In the **First duty** field, click the drop-down button to open the lookup.
@@ -43,3 +43,4 @@ You can set up rules to separate tasks that must be performed by different users
 12. In the **Security mitigation** field, type a value. Enter a description of the actions that you take to mitigate the security risk. For example, you can mitigate the risk by conducting more detailed reviews of the process, by conducting a monthly managerial review, or by sharing resources with other departments.     
 13. Click **Save**.
 
+> [!IMPORTANT] Compliance with the rules for segregation of duties is not verified when you create a rule. You can create a rule that results in existing roles to be in conflict. Existing user role assignments can also be in conflict with the new rule. Therefore, you must validate compliance after creating or modifying a rule: [Identify and resolve conflicts in segregation of duties](identify-resolve-conflicts-segregation-duties.md)
