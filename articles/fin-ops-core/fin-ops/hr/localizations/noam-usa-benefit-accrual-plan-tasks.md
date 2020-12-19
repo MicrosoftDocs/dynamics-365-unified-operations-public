@@ -18,7 +18,6 @@ ms.search.form: PayrollAccrual
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221474
 ms.assetid: c6d387ac-91fd-40c0-aaaa-809f2793d28b

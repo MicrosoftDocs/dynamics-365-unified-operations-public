@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
@@ -42,7 +41,7 @@ Pages primarily expose commands on Action Panes, both the standard Action Pane t
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
-Key Tips are no longer available but have been replaced by the action search feature. This new feature lets you quickly search for and run a button from any visible Action Pane.
+The action search feature replaces Key Tips, which are no longer available. This new feature lets you quickly search for and run a button from any visible Action Pane.
 
 ## Using action search
 
@@ -60,7 +59,7 @@ You can also start action search by pressing Ctrl+/ or Alt+Q. Press the keyboard
 
 ## Understanding the results list
 
-Often, you must know both the location and the context of a button to fully understand the purpose of that button. Therefore, additional information is shown for each item in the results list, to help you understand exactly which buttons appear in the list. In particular, the "path" of the button is shown. This path might include the labels of the following UI elements, as relevant:
+Often, you must know both the location and the context of a button to fully understand the purpose of that button. Therefore, the results list shows additional information to help you understand exactly which buttons appear in the list. In particular, the "path" of the button is shown. This path might include the labels of the following UI elements, as relevant:
 
 - Action Pane tab
 - Button group
@@ -72,7 +71,7 @@ For example, you typed **tot** in the **action search** field and are now examin
 
 [![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
-In the previous example, action search showed results from the standard Action Pane at the top of a page. However, action search also shows results from visible toolbars that are located in other places on the page. For example, you're searching for the **On-hand inventory** button that is located on the **Sales order lines** FastTab. In this case, the button path in the results list (**Sales order lines** &gt; **Inventory** &gt; **View**) informs you that this button is located under the **View** heading on the **Inventory** menu button on the **Sales order lines** FastTab.
+In the previous example, action search showed results from the standard Action Pane at the top of a page. However, action search also shows results from visible toolbars that are in other places on the page. For example, you're searching for the **On-hand inventory** button that is on the **Sales order lines** FastTab. In this case, the button path in the results list (**Sales order lines** &gt; **Inventory** &gt; **View**) informs you that this button is under the **View** heading on the **Inventory** menu button on the **Sales order lines** FastTab.
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 

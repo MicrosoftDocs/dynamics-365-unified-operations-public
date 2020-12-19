@@ -18,7 +18,6 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220864
 ms.assetid: 87aac2bd-fcdb-4f97-a55f-7f25659d6940

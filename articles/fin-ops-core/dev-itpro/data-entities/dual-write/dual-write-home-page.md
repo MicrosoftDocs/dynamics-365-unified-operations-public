@@ -86,7 +86,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 + [Company concept in Dataverse](company-data.md)
 
-    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
+    + [Initialize company data](bootstrap-company-data.md)
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)

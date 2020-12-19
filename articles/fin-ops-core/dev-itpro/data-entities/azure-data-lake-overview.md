@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global

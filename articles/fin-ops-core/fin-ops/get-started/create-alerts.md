@@ -18,7 +18,6 @@ ms.search.form: EventCreateRule
 audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -46,7 +45,7 @@ The batch jobs for data change and due date alerts need to be running for the al
 
 The event that triggers an alert rule can be a date that arrives or a specific change that occurs. Triggers for events are defined on the **Alert me when** FastTab of the **Create alert rule** dialog box. The events that are available for a particular field depend on the trigger that is selected.
 
-For example, if you're setting up an alert rule for the **Start date** field, due date events are appropriate. Therefore, the **is due in** event type is available for that field. However, for a field such as **Cost center**, a due date event isn't appropriate. Therefore, the **is due in** event type isn't available. Instead, the **has changed** event type is available.
+For example, if you're setting up an alert rule for the **Start date** field, due date events are appropriate. Therefore, the `is due in` event type is available for that field. However, for a field such as **Cost center**, a due date event isn't appropriate. Therefore, the `is due in` event type isn't available. Instead, the `has changed` event type is available.
 
 ## Event types
 
@@ -83,7 +82,7 @@ On the **Alert me with** FastTab of the **Create alert rule** dialog box, you ca
 
 ## Alerts as business events
 
-Alerts can be sent externally using the business events framework. When creating an alert, set **Organization-wide** to **No** and set **Send externally** to **Yes**. After you have the alert triggering the business event, you can trigger a flow built in Power Automate using the **When a business event occurs** trigger on the Finance and Operations connector, or explicitly send the event to a business events endpoint via the **Business events catalog**.
+You can send alerts externally using the business events framework. When creating an alert, set **Organization-wide** to **No** and set **Send externally** to **Yes**. After you have the alert triggering the business event, you can trigger a flow built in Power Automate using the **When a business event occurs** trigger on the Finance and Operations connector, or explicitly send the event to a business events endpoint via the **Business events catalog**.
 
 ## Create an alert rule
 
@@ -92,16 +91,16 @@ Alerts can be sent externally using the business events framework. When creating
 2. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create alert rule**.
 3. In the **Create alert rule** dialog box, in the **Field** field, select the field to monitor.
 4. In the **Event** field, select the type of event.
-5. On the **Alert me for** FastTab, select the desired option. If you want to send the alert as a business event, ensure that **Organization-wide** is set to **No**.
+5. On the **Alert me for** FastTab, select the desired option. If you want to send the alert as a business event, set the **Organization-wide** value to **No**.
 6. If the alert rule should become inactive on a specific date, on the **Alert me until** FastTab, select an end date.
-7. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text is used as the subject heading for the email message that you receive when an alert is triggered. If you want to send the alert as a business event, set **Send externally** to **Yes**.
-8. In the **Message** field, enter an optional message. The text is used as the message that you receive when an alert is triggered.
+7. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text becomes the subject heading for the email message that you receive when an alert is triggered. If you want to send the alert as a business event, set **Send externally** to **Yes**.
+8. In the **Message** field, enter an optional message. The text becomes the message that you receive when an alert is triggered.
 9. Select **OK** to save the settings and create the alert rule.
 
 ## Limitations and workarounds
 
 ### Workaround for creating alerts for the secondary data sources of a form
-Alerts can't be created for some secondary data sources on forms. For example, when creating alerts on the customer or vendor posting profiles form, only the fields on the header (CustLedger or VendLedger) are available and not the dimension accounts. The workaround for this limitation is to use **SysTableBrowser** to open that table as primary data source. 
+You can't create alerts for some secondary data sources on forms. For example, when creating alerts on the customer or vendor posting profiles form, only the fields on the header (CustLedger or VendLedger) are available and not the dimension accounts. The workaround for this limitation is to use **SysTableBrowser** to open that table as primary data source. 
 1. Open the table in the **SysTableBrowser** form.
 	```
     	https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>

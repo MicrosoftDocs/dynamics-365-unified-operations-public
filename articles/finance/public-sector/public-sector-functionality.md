@@ -2,7 +2,7 @@
 # required metadata
 
 title: Public sector home page
-description: Microsoft Dynamics 365 Finance enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
+description: Dynamics 365 Finance supports common public sector business processes. These include budgeting, purchasing, accounts payable, and accounts receivable tasks.  
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -64,9 +64,8 @@ The **Public sector** configuration key enables pages and controls that suppleme
 ## How does the Public sector configuration key relate to other configuration keys?
 The following table provides information about how this configuration key relates to other configuration keys.
 
-|            |                                                                                                                                                                                                                     |
+|   **Detail**         |              **Description**                                                                                                                                                                                        |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Detail** | **Description**                                                                                                                                                                                                     |
 | Parent key | None                                                                                                                                                                                                                |
 | Child keys | **Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key |
 
