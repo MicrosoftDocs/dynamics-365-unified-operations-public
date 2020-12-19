@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -63,6 +62,8 @@ Removing support for Visual Studio 2015](removed-deprecated-features-platform-up
 -  [New HTML editor control](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-html-editor-control)<br>
 
 -  Enhanced the Message::AddAction API<br>- The Message::AddAction API now surfaces the action in notifications when messages are routed to the Action center or Message details pane. For more information, see [Messaging APIs](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details#message).
+
+- [Mitigate a SQL injection attack](../dev-ref/query-with-parameters.md)<br>- Use the new **Statement.executeQueryWithParameters** API to mitigate SQL injection attacks.
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 

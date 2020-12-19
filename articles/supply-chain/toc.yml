@@ -1319,6 +1319,8 @@
           href: sales-marketing/register-serial-numbers-sales-process.md
         - name: Inventory on-hand mobile workspace
           href: inventory/inventory-on-hand-mobile-workspace.md
+        - name: Troubleshoot inventory operations
+          href: inventory/troubleshoot-inventory-operations.md
       - name: Outbound process
         items:
         - name: Outbound process overview
@@ -1371,10 +1373,16 @@
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
+        - name: Master planning with demand forecast
+          href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Inventory marking with Planning Optimization
+          href: master-planning/planning-optimization/marking.md
+        - name: Intercompany planning
+          href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Approve planned orders
@@ -2095,6 +2103,8 @@
             items:
             - name: Configure the production floor execution interface
               href: production-control/production-floor-execution-configure.md
+            - name: Design the production floor execution interface
+              href: production-control/production-floor-execution-tabs.md
             - name: Set up a device to run the production floor execution interface
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface

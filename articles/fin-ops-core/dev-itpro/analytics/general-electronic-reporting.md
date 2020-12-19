@@ -5,7 +5,7 @@ title: Electronic reporting (ER) overview
 description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 author: NickSelin
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -43,6 +42,7 @@ The ER engine is targeted at business users instead of developers. Because you c
 ER currently supports the TEXT, XML, Microsoft Word document, and OPENXML worksheet formats. However, an extension interface provides support for additional formats.
 
 ## Capabilities
+
 The ER engine has the following capabilities:
 
 - It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for Finance and Operations.
@@ -52,6 +52,7 @@ The ER engine has the following capabilities:
 - It supports the ability to distribute formats to partners and customers through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Key concepts
+
 ### Components
 
 ER supports two types of components: **Data model** and **Format**.
@@ -77,7 +78,6 @@ A model mapping that supports outgoing electronic documents has the following ca
 - It can use different data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
 - It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)).
-
 
 A model mapping that supports incoming electronic documents has the following capabilities:
 
@@ -113,6 +113,7 @@ The following illustration shows how the data flows for these formats.
 To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
 
 #### <a name="FormatComponentInbound"></a>Format components for incoming electronic documents
+
 A format component is the scheme of the incoming document that is imported at run time. A scheme consists of the following elements:
 
 - A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
@@ -180,7 +181,7 @@ An **LCS shared library** repository provides access to the list of configuratio
 
 An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected when the repository was registered. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current instance of your Finance and Operations apps.
 
-A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can  import configurations from a **File system** repository into the current instance. 
+A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
 
 Note that this repository type is accessible in the following environments:
 
@@ -202,6 +203,7 @@ An **Operations resources** repository provides access to the list of configurat
 Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
 
 ## Supported scenarios
+
 ### Building a data model
 
 ER provides a model designer that you can use to build a data model for a particular business domain. All domain-specific business entities, and the relations between them, can be presented in a data model as a hierarchical structure. 
@@ -210,7 +212,7 @@ To become familiar with the details of this scenario, play the **ER Design domai
 
 ### Translating data model content
 
-Data model content (labels and descriptions) can be translated into other languages that the applications supports. You might want to translate data model content for the following reasons:
+Data model content (labels and descriptions) can be translated into other languages that the applications support. You might want to translate data model content for the following reasons:
 
 - At design time, to make the content more intelligible for format designers who speak other languages, and who will use the data model for data mapping of format components.
 - At run time, to make the content more user-friendly by presenting prompts and help for run-time parameters, and configured validation messages (errors and warnings), in the language that the currently signed-in user prefers.
@@ -222,6 +224,7 @@ ER provides a model mapping designer that lets users map data models that they h
 To become familiar with the details of this scenario, play the **ER Define model mapping and select data sources** and **ER Map data model to selected data sources** task guides (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ### Configuring data model mappings for incoming documents
+
 ER provides a model mapping designer that lets users map data models that they have designed to specific destinations. For example, data models can be mapped to the updatable data components (tables, data entities, and views). Based on the mapping, the data will be updated at run time by using the data from the data model. As abstract storage of the ER format, the data model is filled with data that is imported from an incoming electronic document. 
 
 ### Storing a designed model component as a model configuration
@@ -243,6 +246,7 @@ The ER format designer can be used to build an electronic document in OPENXML wo
 To become familiar with the details of this scenario, play the **ER Create a configuration for reports in OPENXML format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process). As part of the task guide step for importing a template, use the [Template of Payment Report (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202) Excel file as a template.
 
 ### Building a configuration to generate electronic documents in a Word document format
+
 The ER format designer can be used to build an electronic document in a Word document format. The following illustration shows an example of this type of format. Note that this format reuses the existing ER configuration that was originally designed to generate the report output in OPENXML format.
 
 To become familiar with the details of this scenario, play the ER Design a configuration for generating reports in Microsoft WORD format task guide (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). As part of the task guide step for importing a template, use the following Word files as templates for the ER format:
@@ -251,6 +255,7 @@ To become familiar with the details of this scenario, play the ER Design a confi
 - [Bounded template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### Building a configuration to import data from incoming electronic documents
+
 The ER format designer can be used to describe an electronic document that is planned for data import in either XML or text format. The designed format is used to parse an incoming document. The ER format mapping designer can be used to define the binding of the elements of the designed format to the data model. 
 
 To become familiar with the details of this scenario, play the Create required ER configurations to import data from an external file task guide (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). Use the following files to play this guide:
@@ -271,6 +276,7 @@ The application can be configured to start to use a created format to generate e
 To become familiar with the details of this scenario, play the **ER Use format to generate electronic document for payments** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ## Handling ER components
+
 ### Publishing an ER component in LCS to offer it externally (localization)
 
 The owner of a component (model or format) that has been created can use ER to publish the completed version of the component to LCS. A repository of the **LCS project** type for the current ER configuration provider is required. When the status of the completed version of a component is changed from **COMPLETED** to **SHARED**, that version is published in LCS. When a component has been published to LCS, the owner of that component becomes a provider of the service to support the component. For example, if the format component is designed to generate an electronic document that is legally required (for example, in accordance with a localization scenario), it's assumed that the format will be kept compliant with legislative changes, and that the provider will issue new versions of the component whenever new legislative requirements arise. To become familiar with the details of this scenario, play the **ER Upload a configuration into Lifecycle Services** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
@@ -287,87 +293,11 @@ ER lets you create (derive) a new component from the current version of a compon
 
 ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).
 
-## List of ER configurations that are delivered in the Finance application
+## <a name="list-of-configurations"></a>List of ER configurations that have been released in Finance
 
-| Domain-specific data model configurations: Title | Domain                | Data model–dependent format configurations: Title | Description                                                        |
-|--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
-| Audit file model                                 | Financial audit       |                                                   |                                                                    |
-|                                                  |                       | Audit file (NL)                                   | Audit file format for Netherlands                                  |
-| BAS model                                        | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | BAS (AU)                                          | BAS format for Australia                                           |
-| Construction industry scheme model               | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | CIS Monthly return (UK)                           | CIS monthly return format for the United Kingdom                   |
-| Collection letter model                          | Electronic invoicing  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Collection Letter (DK)                     | OIOUBL collection letter format for Denmark                        |
-| Electronic ledger accounting model (MX)          | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | Auxiliary Ledger XML (MX)                         | Auxiliary ledger transactions per account report format for Mexico |
-|                                                  |                       | Chart of Account XML (MX)                         | Chart of account report format for Mexico                          |
-|                                                  |                       | Journals XML (MX)                                 | Journal transactions report format for Mexico                      |
-|                                                  |                       | Trial Balance XML (MX)                            | Trial balance report format for Mexico                             |
-| Elster model                                     | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | Elster (DE)                                       | Elster format for Germany                                          |
-| EU Sales list model                              | Trade reporting       |                                                   |                                                                    |
-|                                                  |                       | EU Sales list (DE)                                | EU Sales list TXT format for Germany                               |
-|                                                  |                       | EU Sales list (DK)                                | EU Sales list TXT format for Denmark                               |
-|                                                  |                       | EU Sales list (FR)                                | EU Sales list XML format for France                                |
-|                                                  |                       | EU Sales list (NL)                                | EU Sales list XML format for Netherlands                           |
-|                                                  |                       | EU Sales list TXT (UK)                            | EU Sales list TXT format for the United Kingdom                    |
-|                                                  |                       | EU Sales list XML (UK)                            | EU Sales list XML format for the United Kingdom                    |
-|                                                  |                       | EU Sales list by columns report                   | EU Sales list by columns report                                    |
-|                                                  |                       | EU Sales list by rows report                      | EU Sales list by rows report                                       |
-| FEC accounting model (FR)                        | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | FEC Accounting data XML (FR)                      | FEC accounting data export XML format for France                   |
-| German audit file                                | Financial audit       |                                                   |                                                                    |
-|                                                  |                       | German audit file output                          | Audit file output for Germany and Austria                          |
-| Intrastat model                                  | Trade reporting       |                                                   |                                                                    |
-|                                                  |                       | Intrastat (DE)                                    | Intrastat format for Germany                                       |
-|                                                  |                       | Intrastat (DK)                                    | Intrastat format for Denmark                                       |
-|                                                  |                       | Intrastat INTRACOM (FR)                           | Intrastat INTRACOM format for France                               |
-|                                                  |                       | Intrastat SAISUNIC (FR)                           | Intrastat SAISUNIC format for France                               |
-|                                                  |                       | Intrastat (NL)                                    | Intrastat format for the Netherlands                               |
-|                                                  |                       | Intrastat (UK)                                    | Intrastat format for the United Kingdom                            |
-|                                                  |                       | Intrastat report                                  | Intrastat Excel control report                                     |
-| Customer invoice model                           | Electronic invoicing  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Project credit note (DK)                   | OIOUBL Project credit note format for Denmark                      |
-|                                                  |                       | OIOUBL Project invoice (DK)                       | OIOUBL Project invoice format for Denmark                          |
-|                                                  |                       | OIOUBL Sales credit note (DK)                     | OIOUBL Sales credit note format for Denmark                        |
-|                                                  |                       | OIOUBL Sales invoice (DK)                         | OIOUBL Sales invoice format for Denmark                            |
-| OB declaration model                             | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | OB declaration (NL)                               | OB declaration format for the Netherlands                          |
-| Payment model                                    | Payments              |                                                   |                                                                    |
-|                                                  |                       | Betalingsservice (DK)                             | Betalingsservice payment format for Denmark                        |
-|                                                  |                       | Bill of exchange remittance (FR)                  | Bill of exchange remittance format for France                      |
-|                                                  |                       | BTL91 (NL)                                        | BTL91 vendor payment format for the Netherlands                    |
-|                                                  |                       | CFONB Prelevements (FR)                           | CFONB direct debit payment format for France                       |
-|                                                  |                       | CFONB Virements (FR)                              | CFONB domestic vendor payment format for France                    |
-|                                                  |                       | Nordea Vendor (DK)                                | Nordea corporate netbank vendor payment format for Denmark         |
-|                                                  |                       | ANZ Direct Credit Service (AU)                    | Format for ANZ Direct Credit Service for Australia                 |
-|                                                  |                       | CBA Direct Credit Service (AU)                    | Format for CBA Direct Credit Service for Australia                 |
-|                                                  |                       | NAB Direct Credit Service (AU)                    | Format for NAB Direct Credit Service for Australia                 |
-|                                                  |                       | STG Direct Credit Service (AU)                    | Format for STG Direct Credit Service for Australia                 |
-|                                                  |                       | WBC Direct Entry System (AU)                      | Format for WBC Direct Entry System for Australia                   |
-|                                                  |                       | DirectLink (NZ)                                   | Format for DirectLink for New Zealand                              |
-|                                                  |                       | JBA Payment file (JP)                             | JBA Payment format for Japan                                       |
-|                                                  |                       | ISO20022 Credit transfer                          | SEPA Credit transfer format for Europe                             |
-|                                                  |                       | ISO20022 Credit transfer (FR)                     | SEPA Credit transfer format for France                             |
-|                                                  |                       | ISO20022 Credit transfer (DE)                     | SEPA Credit transfer format for Germany                            |
-|                                                  |                       | ISO20022 Credit transfer (NL)                     | SEPA Credit transfer format for the Netherlands                    |
-|                                                  |                       | ISO20022 Direct debit                             | SEPA Direct debit format for Europe                                |
-|                                                  |                       | ISO20022 Direct debit (FR)                        | SEPA Direct debit format for France                                |
-|                                                  |                       | ISO20022 Direct debit (DE)                        | SEPA Direct debit format for Germany                               |
-|                                                  |                       | ISO20022 Direct debit (NL)                        | SEPA Direct debit format for the Netherlands                       |
-|                                                  |                       | BACS (UK)                                         | BACS vendor payment format for the United Kingdom                  |
-| Reverse charge                                   | Tax reporting         |                                                   |                                                                    |
-|                                                  |                       | Reverse charge sales list                         | Reverse charge sales list format                                   |
-| Dutch XBRL integration model                     | XBRL reporting        |                                                   |                                                                    |
-|                                                  |                       | Semansys XBRL (NL)                                | Semansys XBRL export format for the Netherlands                    |
-| GAF model (MY)                                   | Financial audit       |                                                   |                                                                    |
-|                                                  |                       | GAF file (MY)                                     | Format of GAF for Malaysia                                         |
-| Vendor aging report (CN)                         | Vendors data analysis |                                                   |                                                                    |
-|                                                  |                       | Vendor aging report format (CN)                   | Vendor aging report format for China                               |
-| Vendor invoice declaration model                 | Vendors data analysis |                                                   |                                                                    |
-|                                                  |                       | Vendor invoice declaration (IS)                   | Vendor invoice declaration format for Iceland                      |
-|                                                  |                       | Vendor invoice declaration report (IS)            | Vendor invoice declaration report for Iceland                      |
+The list of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. On the **Discontinuation details** FastTab, you can review the information about configurations that have been discontinued or that are no longer being maintained. 
+
+![Content of the Global repository on the Configuration repository page](./media/er-overview-03.gif)
 
 ## Additional resources
 

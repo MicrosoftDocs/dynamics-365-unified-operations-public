@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-# # ms.search.scope: ["Core", "Operations", "CrossApp", "ShowInHelp"]
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -51,11 +50,11 @@ Before you can sync sales quotations, you must update the following settings.
 In Sales, go to **Settings \> Administration \> System settings \> Sales**, and make sure that the following settings are used:
 
 - The **Use system prizing calculation** system option is set to **Yes**.
-- The **Discount calculation method** field is set to **Line item**.
+- The **Discount calculation method** column is set to **Line item**.
 
 ### Sites and warehouses
 
-In Supply Chain Management, the **Site** and **warehouse** fields are required for quotation lines and order lines. If you set the site and warehouse in the default order settings, those fields will automatically be set when you add a product to a quotation line or an order line. 
+In Supply Chain Management, the **Site** and **warehouse** columns are required for quotation lines and order lines. If you set the site and warehouse in the default order settings, those columns will automatically be set when you add a product to a quotation line or an order line. 
 
 ### Number sequences for quotations and orders
 
@@ -67,9 +66,9 @@ For example, the number sequence in Supply Chain Management is **1, 2, 3, 4, 5, 
 
 Sales quotations can be created in either Sales or Supply Chain Management. If you create a quotation in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a quotation in Supply Chain Management, it's synced to Sales in real time. Note the following points:
 
-+ You can add a discount to the product on the quotation. In this case, the discount will be synced to Supply Chain Management. The **Discount**, **Charges**, and **Tax** fields on the header are controlled by a setup in Supply Chain Management. This setup doesn't support integration mapping. Instead, the **Price**, **Discount**, **Charge**, and **Tax** fields are maintained and handled in Supply Chain Management.
-+ The **Discount %**, **Discount**, and **Freight Amount** fields on the sales quotation header are read-only fields.
-+ The **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't part of the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synced between.
++ You can add a discount to the product on the quotation. In this case, the discount will be synced to Supply Chain Management. The **Discount**, **Charges**, and **Tax** columns on the header are controlled by a setup in Supply Chain Management. This setup doesn't support integration mapping. Instead, the **Price**, **Discount**, **Charge**, and **Tax** columns are maintained and handled in Supply Chain Management.
++ The **Discount %**, **Discount**, and **Freight Amount** columns on the sales quotation header are read-only columns.
++ The **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** columns aren't part of the default mappings. To map these columns, you must set up a value mapping that is specific to the data in the organizations that the table is synced between.
 
 If you are also using the Field Service solution, make sure to re-enable the **Quote Line Quick Create** parameter. Re-enabling the parameter lets you to continue creating quote lines using the quick create function.
 1. Navigate to your Dynamics 365 Sales application.
@@ -87,7 +86,7 @@ Sales orders can be created in either Sales or Supply Chain Management. If you c
 + Discount calculation and rounding:
 
     - The discount calculation model in Sales differs from the discount calculation model in Supply Chain Management. In Supply Chain Management, the final discount amount on a sales line can be the result of a combination of discount amounts and discount percentages. If this final discount amount is divided by the quantity on the line, rounding can occur. However, this rounding isn't considered if a rounded per-unit discount amount is synced to Sales. To help ensure that the full discount amount from a sales line in Supply Chain Management is correctly synced to Sales, the full amount must be synced without being divided by the line quantity. Therefore, you must define the discount calculation method as **Line item** in Sales.
-    - When a sales order line is synced from Sales to Supply Chain Management, the full line discount amount is used. Because Supply Chain Management has no field that can store the full discount amount for a line, the amount is divided by the quantity and stored in the **Line discount** field. Any rounding that occurs during this division is stored in the **Sales charges** field on the sales line.
+    - When a sales order line is synced from Sales to Supply Chain Management, the full line discount amount is used. Because Supply Chain Management has no column that can store the full discount amount for a line, the amount is divided by the quantity and stored in the **Line discount** column. Any rounding that occurs during this division is stored in the **Sales charges** column on the sales line.
 
 ### Example: Synchronization from Sales to Supply Chain Management
 
@@ -103,7 +102,7 @@ If you sync from Supply Chain Management to Sales, you get the following result:
 
 ## Dual-write solution for Sales
 
-New fields have been added to the **Order** entity and appear on the page. Most of these fields appear on the **Integration** tab in Sales. To learn more about how the status fields are mapped, see [Set up the mapping for sales order status fields](sales-status-map.md).
+New columns have been added to the **Order** table and appear on the page. Most of these columns appear on the **Integration** tab in Sales. To learn more about how the status columns are mapped, see [Set up the mapping for sales order status columns](sales-status-map.md).
 
 + The **Create Invoice** and **Cancel Order** buttons on the **Sales order** page are hidden in Sales.
 + The **Sales order status** value will remain **Active** to help ensure that changes from Supply Chain Management can flow to the sales order in Sales. To control this behavior, set the default **Statecode \[Status\]** value to **Active**.
@@ -112,18 +111,18 @@ New fields have been added to the **Order** entity and appear on the page. Most 
 
 Sales invoices are created in Supply Chain Management and synced to Sales. Note the following points:
 
-+ An **Invoice number** field has been added to the **Invoice** entity and appears on the page.
++ An **Invoice number** column has been added to the **Invoice** table and appears on the page.
 + The **Create invoice** button on the **Sales order** page is hidden, because invoices will be created in Supply Chain Management and synced to Sales. The **Invoice** page can't be edited, because invoices will be synced from Supply Chain Management.
 + The **Sales order status** value is automatically changed to **Invoiced** when the related invoice from Supply Chain Management has been synced to Sales. Additionally, the owner of the sales order that the invoice was created from is assigned as the owner of the invoice. Therefore, the owner of the sales order can view the invoice.
-+ The **Freight terms**, **Delivery terms**, and **Delivery mode** fields aren't included in the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synced between.
++ The **Freight terms**, **Delivery terms**, and **Delivery mode** columns aren't included in the default mappings. To map these columns, you must set up a value mapping that is specific to the data in the organizations that the table is synced between.
 
 ## Templates
 
-Prospect-to-cash includes a collection of core entity maps that work together during data interaction, as shown in the following table.
+Prospect-to-cash includes a collection of core table maps that work together during data interaction, as shown in the following table.
 
 | Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
 |-----------------------------|-----------------------------------|-------------|
-| Sales invoice headers V2    | invoices                          |             |
+| Sales invoice headers V2    | invoices                          | The Sales invoice headers V2 table in the Finance and Operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
 | Sales invoice lines V2      | invoicedetails                    |             |
 | CDS sales order headers     | salesorders                       |             |
 | CDS sales order lines       | salesorderdetails                 |             |
@@ -131,7 +130,7 @@ Prospect-to-cash includes a collection of core entity maps that work together du
 | CDS sales quotation header  | quotes                            |             |
 | CDS sales quotation lines   | quotedetails                      |             |
 
-Here are the related core entity maps for prospect-to-cash:
+Here are the related core table maps for prospect-to-cash:
 
 + [Customers V3 to accounts](customer-mapping.md#customers-v3-to-accounts)
 + [CDS Contacts V2 to contacts](customer-mapping.md#cds-contacts-v2-to-contacts)

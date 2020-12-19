@@ -31,12 +31,13 @@ ms.dyn365.ops.version: Release 10.0.15
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 The Inventory Visibility Add-in is an independent and highly scalable microservice that enables real-time on-hand inventory tracking, thus providing a global view of inventory visibility.
 
 All information that relates to on-hand inventory is exported to the service in near real-time through low-level SQL integration. External systems access the service through RESTful APIs to query on-hand information on given sets of dimensions, thus retrieving a list of available on-hand positions.
 
-Inventory Visibility is a microservice built on the Common Data Service, which means you can extend it by building Power Apps and applying Power BI to provide customized functionality to meet your business requirements. It is also possible to upgrade the index to do inventory queries.
+Inventory Visibility is a microservice built on Microsoft Dataverse, which means you can extend it by building Power Apps and applying Power BI to provide customized functionality to meet your business requirements. It is also possible to upgrade the index to do inventory queries.
 
 Inventory Visibility provides configuration options that let it integrate with multiple third-party systems. It supports the standardized inventory dimension, customized extensibility, and standardized, configurable calculated quantities.
 

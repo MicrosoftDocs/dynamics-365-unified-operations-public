@@ -2,7 +2,7 @@
 # required metadata
 
 title: Grid capabilities
-description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
+description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
 ms.date: 11/17/2020
@@ -17,7 +17,6 @@ ms.search.form:  DefaultDashboard
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: Platform update 33
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The new grid control provides a number of useful and powerful capabilities that can be used to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
+The new grid control provides several useful and powerful capabilities that you can use to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
 -  Calculating totals
 -  Typing ahead of the system
@@ -41,19 +40,19 @@ The new grid control provides a number of useful and powerful capabilities that 
 -  Pinned system columns
 
 ## Calculating totals
-In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. These totals are shown in a footer section at the bottom of the grid. 
+In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. A footer section at the bottom of the grid shows these totals. 
 
 ### Showing the grid footer
 There is a footer area at the bottom of every tabular grid in Finance and Operations apps. The footer can show valuable information that is related to the data that appears in the grid. Here are some examples of this information:
 
-- The number of selected rows in the table (when more than one record is selected)
+- The number of selected rows in the table (when you select more than one record)
 - Grand totals at the bottom of configured, numeric columns
 - The number of rows in the dataset 
 
-This footer is hidden by default but can be easily turned on. To show the footer for a grid, right-click on a column header in the grid and select the **Show footer** option. Once the footer has been turned on for a particular grid, that setting will be remembered until the user opts to hide the footer, which can be done by right-clicking on a column header and selecting **Hide footer**.  Note the placement of the **Show footer/Hide footer** action is expected to be re-located in a future update. 
+This footer is hidden by default but you can turn it on. To show the footer for a grid, right-click on a column header in the grid and select the **Show footer** option. After you turn on the footer for a particular grid, that setting will be remembered until the user opts to hide the footer. To hide the footer, right-click on a column header and select **Hide footer**.  (The placement of the **Show footer/Hide footer** action might move to a new location in a future update. 
 
 ### Specifying columns with totals
-Currently, no columns will be configured to show totals by default. Instead, this is considered a one-time setup activity, similar to adjusting the widths of columns in grids. Once you specify that you want to see totals for a column, that setting will be remembered the next time you visit the page.  
+Currently, no columns show totals by default. Instead, this is considered a one-time setup activity, similar to adjusting the widths of columns in grids. Once you specify that you want to see totals for a column, that setting will be remembered the next time you visit the page.  
 
 There are two ways to configure a column to show a total: 
 

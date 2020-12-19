@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview of Dynamics 365 Supply Chain Management 10.0.15 (January 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.15 (January 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.15. 
 author: kamaybac
 manager: tfehr
@@ -29,12 +29,11 @@ ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.15 (January 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.15 (January 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.15. This version has a build number of 10.0.644 and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.15. This version has a build number of 10.0.644 and is available as follows:
 
 - **Preview of release:** October 2020
 - **General availability of release (self-update):** November 2020

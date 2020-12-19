@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Finance and Operations and Common Data Service admin reference
+title: Finance and Operations and Dataverse admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
@@ -27,21 +26,21 @@ ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
 ---
 
-# Finance and Operations and Common Data Service admin reference
+# Finance and Operations and Dataverse admin reference
 
 [!include[banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires [Platform updates for version 10.0.12 of Finance and Operations apps](../get-started/whats-new-platform-update-10-0-12.md) and service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires [Platform updates for version 10.0.12 of Finance and Operations apps](../get-started/whats-new-platform-update-10-0-12.md) and service update 189 for Dataverse. The release information for Dataverse is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
+This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Dataverse.
 
 ## Getting the solution
-The Common Data Service solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
+The Dataverse solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
-Ensure the following solutions are installed in Common Data Service.
+Ensure the following solutions are installed in Dataverse.
 
 - **Dynamics365Company** - This adds the **Company** entity, which is referenced by all Finance and Operations entities with a PrimaryCompanyContext metadata value.
 
@@ -53,7 +52,7 @@ Ensure the following solutions are installed in Common Data Service.
 
 ## Authentication and authorization
 
-After the solutions are imported in the Common Data Service environment, both environments must be set up to connect to each other. Common Data Service will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Common Data Service environment. If you have multiple pairs of Common Data Service and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Common Data Service environments. The following procedure shows the creation of the AAD application.
+After the solutions are imported in the Dataverse environment, both environments must be set up to connect to each other. Dataverse will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Dataverse environment. If you have multiple pairs of Dataverse and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Dataverse environments. The following procedure shows the creation of the AAD application.
 
 > [!IMPORTANT]
 > The AAD application must be created on the same tenant as Finance and Operations.
@@ -82,7 +81,7 @@ After the solutions are imported in the Common Data Service environment, both en
 
     - Select **Save**. A key will be created and displayed. Copy this value for later use.
 
-The AAD application created above will be used by Common Data Service to call Finance and Operations apps. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above will be able to call this Finance and Operations environment and access the virtual entity functionality.
+The AAD application created above will be used by Dataverse to call Finance and Operations apps. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above will be able to call this Finance and Operations environment and access the virtual entity functionality.
 
 The next steps walk through this process in Finance and Operations apps.
 
@@ -90,31 +89,31 @@ The next steps walk through this process in Finance and Operations apps.
 
 2.  Select **New** to add a new user. Enter the following information:
 
-    - **User ID** - Enter **cdsintegration** (or a different value).
+    - **User ID** - Enter **dataverseintegration** (or a different value).
 
-    - **User name** - Enter **cds integration** (or a different value).
+    - **User name** - Enter **dataverse integration** (or a different value).
 
     - **Provider** - Leave at the default value.
 
-    - **Email** - Enter **cdsintegration** (or a different value, does *not* need to be a valid email account).
+    - **Email** - Enter **dataverseintegration** (or a different value, does *not* need to be a valid email account).
 
     - Assign the security role **CDS virtual entity application** to this user.
 
     - Remove all other roles including **System user**.
 
-3.  Go to **System Administration \> Setup \> Azure Active Directory applications** to register Common Data Service. 
+3.  Go to **System Administration \> Setup \> Azure Active Directory applications** to register Dataverse. 
 
     - Add a new row.
 
     - **Client ID** - The **Application (client) ID** created above
 
-    - **Name** - Enter **CDS Integration** (or a different name).
+    - **Name** - Enter **Dataverse Integration** (or a different name).
 
     - **User ID** - The user ID created above.
 
-The next step in the process is to provide Common Data Service with the Finance and Operations instance to connect to. The following steps walk through this part of the process.
+The next step in the process is to provide Dataverse with the Finance and Operations instance to connect to. The following steps walk through this part of the process.
 
-1.  In Common Data Service, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
+1.  In Dataverse, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
 
 2.  Select the data source named “Finance and Operations”.
 
@@ -136,9 +135,9 @@ The next step in the process is to provide Common Data Service with the Finance 
 
 ## Enabling virtual entities
 
-Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
+Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Dataverse. The following steps allow for enabling entities to be virtual, as needed.
 
-1. In Common Data Service, go to **Advanced find** (filter icon).
+1. In Dataverse, go to **Advanced find** (filter icon).
 
 2. Look for “Available Finance and Operations Entities” and select **Results**.
 
@@ -152,7 +151,7 @@ Due to the large number of OData enabled entities available in Finance and Opera
 
 ## Refreshing virtual entity metadata
 
-The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by setting **Refresh** to **Yes** and saving. This will sync the latest entity definition from Finance and Operations to Common Data Service and update the virtual entity.
+The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by setting **Refresh** to **Yes** and saving. This will sync the latest entity definition from Finance and Operations to Dataverse and update the virtual entity.
 
 Referencing virtual entities
 ----------------------------
@@ -162,7 +161,7 @@ in the ISV solution. It will then show as a missing dependency of the solution a
 
 To consume virtual entities:
 
-1.  Create a separate solution as usual in Common Data Service, which will contain the consuming logic.
+1.  Create a separate solution as usual in Dataverse, which will contain the consuming logic.
 
 2.  Select **Entities \> Add Existing**. Select the virtual entity that you want to reference from the list.
 

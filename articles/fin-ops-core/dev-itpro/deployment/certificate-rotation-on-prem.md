@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -35,9 +34,14 @@ ms.dyn365.ops.version: Platform update 25
 You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
 > [!WARNING]
-> The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could  cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
+> The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
 > 
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
+
+> [!CAUTION]
+> The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
+>
+> Upgrade your Service Fabric cluster to 7.2.x before attempting certificate rotation.
 
 ## Preparation steps 
 

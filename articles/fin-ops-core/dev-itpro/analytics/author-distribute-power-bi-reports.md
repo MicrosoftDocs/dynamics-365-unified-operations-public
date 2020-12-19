@@ -18,7 +18,6 @@ ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265864
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5

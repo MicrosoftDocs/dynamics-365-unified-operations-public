@@ -21,7 +21,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.search.industry: 
 ms.author: ralin
 ms.dyn365.ops.version: 7.3.1

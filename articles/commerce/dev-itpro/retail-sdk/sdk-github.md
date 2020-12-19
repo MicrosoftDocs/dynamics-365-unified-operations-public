@@ -5,7 +5,7 @@ title: Download Retail SDK samples and reference packages from GitHub and NuGet
 description: This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from NuGet.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/04/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang:
 ms.reviewer: rhaertle
-# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm:
 ms.custom:
 ms.assetid:
@@ -41,13 +40,9 @@ This topic applies to Retail SDK version 10.0.16 or later. For more information 
 
 The **Commerce.ScaleUnit** repo contains the sample code for customizing the Commerce runtime (CRT), Retail Server, and the channel database.
 
-Clone or download the repo from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). To clone the **Commerce.ScaleUnit** repo, use the following command. (This command works only if you have [Git tools](https://git-scm.com/downloads) installed.)
+Clone or download the repo from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). 
 
-```DOS
-git clone https://github.com/microsoft/Dynamics365Commerce.ScaleUnit.git
-```
-
-The repo contains multiple branches for each release. The release branch that you should use depends on your go-live version, as shown in the following table. Because the repo contains only samples, cloning it is optional.
+The repo contains multiple branches for each release. The release branch that you should use depends on your go-live version, as shown in the following table. The repo contains only samples, so cloning this repo is optional.
 
 | Release branch name | Version | Application release version |
 |---|---|---|
@@ -59,6 +54,7 @@ To clone a single branch, use the following command.
 ```DOS
 git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dynamics365Commerce.ScaleUnit.git
 ```
+This will clone the release/9.26 into your current directory.
 
 ### Commerce.ScaleUnit repo folders and projects
 
@@ -75,11 +71,11 @@ git clone --single-branch --branch release/9.26 https://github.com/microsoft/Dyn
 
 Contracts, messages, entities, and request packages are published in the public NuGet feed. You can use the extension code to consume and customize existing functionalities, or to build new functionalities.
 
-Consume the packages from [https://msazure.pkgs.visualstudio.com/D365/\_packaging/Commerce-SDK-Feed/nuget/v3/index.json](https://msazure.pkgs.visualstudio.com/D365/_packaging/Commerce-SDK-Feed/nuget/v3/index.json). You can add the package source location in the nuget.config file of your extension project file.
+Consume the packages from [https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json). You can add the package source location in the nuget.config file of your extension project file.
 
 ```xml
 <packageSources>
-    <add key="Commerce-SDK-Feed" value="https://msazure.pkgs.visualstudio.com/D365/_packaging/Commerce-SDK-Feed/nuget/v3/index.json" />
+    <add key="dynamics365-commerce" value="https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json" />
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
     </packageSources>
 ```

@@ -165,6 +165,9 @@
       "ms.search.scope" : {
         "commerce/dev-itpro/**/**.md": "Operations, Retail, Commerce, Developer",
         "commerce/dev-itpro/retail-sdk/**/**.md": "Operations, Retail, Commerce, Developer",
+        "finance/**/**.md": "Core, Operations, Finance, ShowInHelp",
+        "finance/localizations/**/**.md": "Core, Operations, Finance",
+        "finance/localizations/tasks/**/**.md": "Core, Operations, Finance",
         "fin-ops-core/dev-itpro/**/**.md": "Operations, CrossApp, ShowInHelp",
         "fin-ops-core/dev-itpro/analytics/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
         "fin-ops-core/dev-itpro/analytics/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
@@ -204,7 +207,18 @@
         "fin-ops-core/dev-itpro/power-platform/**/**.md": "Operations, CrossApp",
         "fin-ops-core/dev-itpro/sysadmin/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
         "fin-ops-core/dev-itpro/sysadmin/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
-        "fin-ops-core/dev-itpro/user-interface/**/**.md": "Operations, CrossApp"
+        "fin-ops-core/dev-itpro/user-interface/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/fin-ops/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/get-started/**/**.md": "Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/get-started/feature-management/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/get-started/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/hr/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/hr/localizations/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/fin-ops/hr/localizations/tasks/**/**.md": "Core, Operations, CrossApp",
+        "fin-ops-core/fin-ops/hr/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/imp-lifecycle/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/fin-ops/organization-administration/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/organization-administration/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp"
       }
     },
     "template": [],

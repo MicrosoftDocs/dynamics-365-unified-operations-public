@@ -18,7 +18,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -232,7 +231,7 @@ A user is creating a report for a dynamic six-month forecast. The user wants the
 | Column Width        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Print Control       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-The user double-clicks a column header cell to open the **Column Header** dialog box, and enters the following information.
+The user double-clicks a column header cell in column B to open the **Column Header** dialog box, and enters the following information.
 
 | Field              | Value                 |
 |--------------------|-----------------------|
@@ -242,7 +241,6 @@ The user double-clicks a column header cell to open the **Column Header** dialog
 | Justification      | No selection is made. |
 | Spread from        | B                     |
 | Spread to          | BASE                  |
-| Budget header      | BASE+1 to end column  |
 
 After entering information, the user clicks **OK**. The user then double-clicks the column header cell in column C to open the **Column Header** dialog box, and enters the following information.
 
@@ -252,8 +250,8 @@ After entering information, the user clicks **OK**. The user then double-clicks 
 | Insert AutoText    | No selection is made. |
 | Format options     | Box                   |
 | Justification      | No selection is made. |
-| Spread from        | C                     |
-| Spread to          | BASE+2                |
+| Spread from        | BASE+1                |
+| Spread to          | M                     |
 
 Now, every time that this report is generated, the word "Actual" will be printed over the columns that contain actual data, and the word "Budget" will be printed over the columns that contain budget forecasts. Additionally, the number of columns will be adjusted each month.
 

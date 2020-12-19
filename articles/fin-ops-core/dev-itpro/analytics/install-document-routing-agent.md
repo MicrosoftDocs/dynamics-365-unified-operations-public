@@ -18,7 +18,6 @@ ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108

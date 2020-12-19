@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTab
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 

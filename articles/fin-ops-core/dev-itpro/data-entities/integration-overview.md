@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -60,20 +59,20 @@ The following table lists the integration patterns that are available.
 > For on premise deployments, the only supported API is the [Data management package REST API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
 
 ## Power platform integration
-Finance and Operations is a virtual data source in Common Data Service, and enables full create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in Finance and Operations. To enable CRUD operations on Finance and Operations entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. This allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations apps. For detailed information, see [Microsoft Power Platform integration](../power-platform/overview.md).
+Finance and Operations is a virtual data source in Dataverse, and enables full create, read, update, delete (CRUD) operations from Dataverse and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Dataverse. Instead, it continues to reside in Finance and Operations. To enable CRUD operations on Finance and Operations entities from Dataverse, entities must be made available as virtual entities in Dataverse. This allows CRUD operations to be performed, from Dataverse and Microsoft Power Platform, on data that resides in Finance and Operations apps. For detailed information, see [Microsoft Power Platform integration](../power-platform/overview.md).
 
 ## Dual-write vs. classic data integration patterns vs. virtual entities
 
 Dual-write provides synchronous, bi-directional, near-real time experience between model-driven applications in Dynamics 365 and Finance and Operations applications. Data synchronization happens with little or no intervention and is triggered by create, update and delete actions on an entity. Dual-write is suitable for interactive business scenarios that span across Dynamics 365 applications.
 
-Classic data integration provides asynchronous and uni-directional data synchronization experience between model-driven applications in Dynamics 365 and Dynamics 365 Finance and Operations applications. It's an IT-administrator led experience and you must schedule the data sync jobs to run on a specific cadence. Classic data integration is suitable for business scenarios that involves bulk ingress/egress of data across Dynamics 365 applications.
+Classic data integration provides asynchronous and uni-directional data synchronization experience between customer engagement apps and Finance and Operations apps. It's an IT-administrator led experience and you must schedule the data sync jobs to run on a specific cadence. Classic data integration is suitable for business scenarios that involves bulk ingress/egress of data across Dynamics 365 applications.
 
 | Pattern                       | Timing                        | Batch | Technology | Finance and Operations app | Model-driven apps in Dynamics 365 |
 |-------------------------------|-------------------------------|-------|---|------|------------|
 | Dual-write             | Synchronous<br>Bi-directional   | No    | OData | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent | 
 | Classic data integration | Asynchronous, uni-directional | Yes   | DIXF | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent |
 
-Virtual entities provide a mechanism to use Microsoft Power Platform with Finance and Operations without having to physically copy data to Common Data Service. This guidance must be used to determine if the requirements will need dual-write or data integrator or virtual entities. Virtual entities and dual-write/data integrator are complementary technologies such that, they can be used together if required.
+Virtual entities provide a mechanism to use Microsoft Power Platform with Finance and Operations without having to physically copy data to Dataverse. This guidance must be used to determine if the requirements will need dual-write or data integrator or virtual entities. Virtual entities and dual-write/data integrator are complementary technologies such that, they can be used together if required.
 
 ## Synchronous vs. asynchronous integration patterns
 

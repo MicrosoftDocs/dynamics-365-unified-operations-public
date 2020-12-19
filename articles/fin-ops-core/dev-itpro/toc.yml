@@ -1,4 +1,4 @@
-﻿- name: Development and administration for Finance and Operations apps
+- name: Development and administration for Finance and Operations apps
   items:
   - name: Development and administration for Finance and Operations apps
     items:
@@ -20,8 +20,6 @@
           href: get-started/whats-new-platform-updates-10-0-15.md
         - name: Platform updates for 10.0.14 (November 2020)
           href: get-started/whats-new-platform-updates-10-0-14.md
-        - name: Platform updates for 10.0.13 (October 2020)
-          href: get-started/whats-new-platform-updates-10-0-13.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated platform features
@@ -124,9 +122,9 @@
             href: data-entities/tasks/create-record-template-facilitate-data-entry.md
           - name: Create records using record templates
             href: data-entities/tasks/use-record-template-new-record.md
-        - name: Data integration using Common Data Service
+        - name: Data integration using Dataverse
           items:
-          - name: Data integration using Common Data Service overview
+          - name: Data integration using Dataverse overview
             href: data-entities/data-integration-cds.md
           - name: Dual-write integration
             items: 
@@ -160,6 +158,8 @@
                   href: data-entities/dual-write/currrency-decimal-places.md
                 - name: Set up the mapping for the sales order status fields
                   href: data-entities/dual-write/sales-status-map.md
+                - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
+                  href: data-entities/dual-write/filtering-intercompany-orders.md
             - name: Managing dual-write
               items:
                 - name: Customize entity and field mappings
@@ -192,11 +192,11 @@
                     href: data-entities/dual-write/sites-warehouses-mapping.md
                 - name: Company integration
                   items:
-                  - name: Company concept in Common Data Services
+                  - name: Company concept in Dataverse
                     href: data-entities/dual-write/company-data.md
                   - name: Initialize company data
                     href: data-entities/dual-write/bootstrap-company-data.md
-                - name: Organization hierarchy on Common Data Service
+                - name: Organization hierarchy on Dataverse
                   href: data-entities/dual-write/organization-mapping.md
                 - name: Finance and tax data
                   items:
@@ -206,10 +206,12 @@
                     href: data-entities/dual-write/ledger-mapping.md            
                   - name: Integrated tax master
                     href: data-entities/dual-write/tax-mapping.md
-                - name: Prospect to cash in dual-write
-                  href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                - name: Integrate procurement in Supply Chain Management with Field Service
+                  href: data-entities/dual-write/scm-field-service-procurement.md
                 - name: Sync with the Dynamics 365 Supply Chain Management pricing engine on demand
                   href: data-entities/dual-write/pricing-engine.md
+                - name: Prospect to cash in dual-write
+                  href: data-entities/dual-write/dual-write-prospect-to-cash.md
                 - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
                   href: data-entities/dual-write/commerce-pricing.md
                 - name: In-house assets for servicing
@@ -224,7 +226,7 @@
                   href: data-entities/dual-write/field-service-project-service-automation.md
                 - name: Troubleshooting
                   items:
-                  - name: Verify that dual-write is configured in Finance and Operations apps and Common Data Service
+                  - name: Verify that dual-write is configured in Finance and Operations apps and Dataverse
                     href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                   - name: Troubleshoot issues during initial setup
                     href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
@@ -338,6 +340,8 @@
         items:
         - name: Data import and export jobs overview
           href: data-entities/data-import-export-job.md
+        - name: Synchronize date and time in import jobs
+          href: data-entities/data-synchronize-date-and-time.md
         - name: Best practices for importing vouchers using the General journal entity
           href: data-entities/tips-tricks-import-general-journal-entity.md
       - name: Development for data entities
@@ -770,6 +774,8 @@
               href: dev-ref/xpp-data/xpp-data-perf.md
             - name: Data access using the SysDa API
               href: dev-ref/sysda.md
+            - name: Mitigate a SQL injection attack
+              href: dev-ref/query-with-parameters.md
           - name: X++ macros
             href: dev-ref/xpp-macros.md
           - name: X++ attribute classes
@@ -1174,7 +1180,7 @@
         href: power-platform/entity-modeling.md
       - name: Application lifecycle management
         href: power-platform/application-lifecycle-management.md
-      - name: Finance and Operations and Common Data Service admin reference
+      - name: Finance and Operations and Dataverse admin reference
         href: power-platform/admin-reference.md
       - name: Power Apps portals with Finance and Operations
         href: power-platform/power-portal-reference.md
@@ -1902,4 +1908,4 @@
     href: ../../finance/index.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
-   
+

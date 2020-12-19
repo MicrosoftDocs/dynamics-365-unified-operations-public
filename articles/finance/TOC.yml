@@ -78,8 +78,6 @@
             href: get-started/whats-new-changed-10-0-15.md
           - name: Finance 10.0.14 (November 2020)
             href: get-started/whats-new-changed-10-0-14.md
-          - name: Finance 10.0.13 (October 2020)
-            href: get-started/whats-new-changed-10-0-13.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
@@ -922,6 +920,16 @@
             href: general-ledger/consolidate-online.md
           - name: Generate consolidated financial statements
             href: general-ledger/generating-consolidated-financial-statements.md
+          - name: Import subsidiary data from files
+            href: general-ledger/import-subsidiary-data-from-files.md
+          - name: Export subsidiary data to a file
+            href: general-ledger/export-subsidiary-data-to-file.md
+          - name: Consolidate with Import - Format
+            href: general-ledger/consolidate-with-import-format.md
+          - name: Prepare a legal entity for use in the consolidation process
+            href: general-ledger/prepare-company-for-consolidation.md
+          - name: Set up a subsidiary legal entity for consolidation
+            href: general-ledger/set-up-subsidiary-company-for-consolidation.md
         - name: Create consolidation groups and additional consolidation account
           href: general-ledger/tasks/create-consolidation-groups.md
         - name: Main account types
@@ -1020,6 +1028,8 @@
           href: general-ledger/tasks/close-fiscal-year.md
         - name: Mass financial period close
           href: general-ledger/tasks/mass-financial-period-close.md
+        - name: Year-end activities FAQ
+          href: general-ledger/faq-year-end-activities.md
       - name: Sales tax
         items:
         - name: Sales tax overview
@@ -1350,6 +1360,8 @@
         href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
       - name: Reset the financial reporting data mart
         href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
+      - name: When to reset a data mart
+        href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
     - name: Globalization
       items:
       - name: Globalization resources
@@ -2828,6 +2840,8 @@
             href: localizations/rus-expense-and-income-codes.md
           - name: Assets tax registers
             href: localizations/rus-assets-tax-registers.md
+          - name: Deferrals tax register
+            href: localizations/rus-deferred-expenses-register.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -3309,6 +3323,12 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json  
         - name: Functions
           items:
+          - name: Container 
+            items: 
+            - name: Container functions
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/finance/toc.json
+            - name: Base64StringToContainer
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
           - name: Date and time 
             items: 
             - name: Date and time functions
@@ -3531,6 +3551,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
             - name: "Type: Value"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
+            - name: "Container: Base64StringToContainer"
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
             - name: "Date and Time: DateTimeValue"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
             - name: "Date and Time: DateToDateTime"
@@ -3739,6 +3761,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
           - name: Compress large outbound documents
             href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
+        - name: Inspect configured ER components
+          href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations
@@ -3809,16 +3833,20 @@
         items: 
         - name: Extend the list of built-in functions
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-        - name: API changes for Application update 10.0.11
-          href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-        - name: API changes for Application update 7.3
-          href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+        - name: API changes
+          items:
+          - name: Application update 7.3
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+          - name: Application update 10.0.11
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
           - name: Delegate the creation of an ER destination to a custom destination factory
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+        - name: Initiate data source values of the USER INPUT PARAMETER type from source code
+          href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
     - name: Mobile app
       items:
       - name: Mobile app home page

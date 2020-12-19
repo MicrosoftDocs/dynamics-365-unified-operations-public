@@ -5,7 +5,7 @@ title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -219,6 +219,9 @@ This procedure should be completed before you activate Retail Cloud POS or Moder
 4. Select **OK**, and make sure that you receive the following message: "Pre-Activation validation completed for Device HOUSTON-3 and Staff 000160. Validation: Passed"
 
 ## Activate a device
+
+> [!NOTE]
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
 
 1. Start Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that they are completed. Then select **Next**.
 2. Select **Activate**. You're redirected to the Azure AD sign-in page.

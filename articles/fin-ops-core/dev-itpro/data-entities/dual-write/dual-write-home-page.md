@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-# # ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 
@@ -36,7 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
 These topics describe dual-write integration.
 
 + [What is dual-write?](dual-write-overview.md)
@@ -46,7 +44,7 @@ These topics describe dual-write integration.
 
 + [What's new or changed in dual-write](whats-new-dual-write.md)
 + [Frequently asked questions](dual-write-faq.md)    
-    
+
 ## Dual-write setup
 
 + [System requirements for dual-write](dual-write-system-req.md)
@@ -58,16 +56,17 @@ These topics describe dual-write integration.
     + [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)
     + [System requirements and prerequisites](requirements-and-prerequisites.md)
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
-    + [Enable entity map for dual-write](enable-entity-map.md)
+    + [Enable table map for dual-write](enable-entity-map.md)
 
 + [Currency data-type migration for dual-write](currrency-decimal-places.md)
-+ [Set up the mapping for the sales order status fields](sales-status-map.md)
++ [Set up the mapping for the sales order status columns](sales-status-map.md)
++ [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
 
 ## Managing dual-write after setup
 
-+ [Customize entity and field mappings](customizing-mappings.md)
-+ [Handling multiple entity maps](multiple-entity-maps.md)
-+ [Edit a legal entity after dual-write setup](edit-legal-entity.md)
++ [Customize table and column mappings](customizing-mappings.md)
++ [Handling multiple table maps](multiple-entity-maps.md)
++ [Edit a legal table after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 
@@ -85,7 +84,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 
     + [Integrated sites and warehouses](sites-warehouses-mapping.md)
 
-+ [Company concept in Common Data Service](company-data.md)
++ [Company concept in Dataverse](company-data.md)
 
     + [Initialize company data](bootstrap-company-data.md)
 
@@ -95,6 +94,7 @@ These topics describe mapping between concepts in Finance and Operations applica
     + [Integrated ledger](ledger-mapping.md)
     + [Integrated tax master](tax-mapping.md)
 
++ [Integrate procurement in Supply Chain Management with Field Service](scm-field-service-procurement.md)
 + [Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine](pricing-engine.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
@@ -106,7 +106,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 ## Troubleshooting
 
-+ [Verify that dual-write is configured in Finance and Operations apps and Common Data Service](dual-write-troubleshooting-verify-config.md)
++ [Verify that dual-write is configured in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
 + [Troubleshoot issues during initial setup](dual-write-troubleshooting-initial-setup.md)
 + [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md)
 + [Troubleshoot issues with the Dual-write module in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)

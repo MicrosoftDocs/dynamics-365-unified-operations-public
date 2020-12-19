@@ -18,7 +18,6 @@ ms.search.form: SysSecRolesEditUsers, SysSecConfiguration, SysUserGroupInfo, Sys
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15211
 ms.assetid: 48cfdd5a-7d04-4969-93ac-6cd6d10d5a09

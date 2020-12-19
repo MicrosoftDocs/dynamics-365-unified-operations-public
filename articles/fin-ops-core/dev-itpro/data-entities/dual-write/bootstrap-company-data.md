@@ -3,7 +3,7 @@
 
 title: Initialize company data
 description: This topic explains how to initialize (or bootstrap) Microsoft Dataverse data or other Finance and Operations app data with company information before you enable a dual-write connection.
-author: robinarh
+author: RamaKrishnamoorthy 
 manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 [!include [preview-banner](../../includes/preview-banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 If have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
 

@@ -5,7 +5,7 @@ title: Globalize modules by using the CultureInfoFormatter class
 description: This topic describes how to globalize modules by using the CultureInfoFormatter class.
 author: samjarawan
 manager: annbe
-ms.date: 10/24/2019
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -87,7 +87,7 @@ The **CultureInfoFormatter** class provides the following formatting functions:
 
 ### Currency formatting
 
-To format currency according to the conventions for a specific locale, use the **formatCurrency()** method. Here is an example.
+To format currency according to the conventions for a specific locale, use the **formatCurrency()** method as shown the following example.
 
 ```ts
 /**
@@ -126,8 +126,20 @@ cultureInfoFormatter.formatCurrency(34.12, 'inr');
 
 ### Date formatting
 
-To format a date according to the conventions for a specific locale, use the **formatDate()** method. Here is an example.
+To format a date according to the conventions for a specific locale, use the **formatDate()** method as shown the following examples.
 
+#### SDK version 1.27.7 and greater
+```ts
+/**
+ * Returns a localized formatted version of a date
+ *
+ * @param date Date object or valid date string representing the date that will be localized and formatted
+ * @param options An optional argument that controls the formatting.
+ */
+public formatDate = (date: Date | string, options?: IDateFormatOptions): string
+```
+
+#### SDK versions earlier than 1.27.7
 ```ts
 /**
  * Returns a localized formatted version of a date
@@ -139,6 +151,7 @@ formatDate(date: Date, options?: IDateFormatOptions): string;
 ```
 
 The **options** argument is optional. It lets you control the localization and formatting. For more information about date formatting properties, see [IDateFormatOptions](#idateformatoptions).
+
 
 #### Date formatting examples
 
@@ -168,8 +181,20 @@ cultureInfoFormatter.formatDate(testDate);
 
 ### Time formatting
 
-To format a time according to the conventions for a specific locale, use the **formatTime()** method. Here is an example.
+To format a time according to the conventions for a specific locale, use the **formatTime()** method as shown the following examples.
 
+#### SDK version 1.27.7 and greater
+```ts
+/**
+ * Returns a localized formatted version of a time
+ *
+ * @param time Date object or valid date string representing the time that will be localized and formatted
+ * @param options An optional argument that controls the formatting
+ */
+public formatTime = (time: Date | string, options?: ITimeFormatOptions): string
+```
+
+#### SDK versions earlier than 1.27.7
 ```ts
 /**
  * Returns a localized formatted version of a time
@@ -202,7 +227,7 @@ cultureInfoFormatter.formatTime(testDate, options);
 
 ### Number formatting
 
-To format a number according to the conventions for a specific locale, use the **formatNumber()** method. Here is an example.
+To format a number according to the conventions for a specific locale, use the **formatNumber()** method as shown the following example.
 
 ```ts
 /**
