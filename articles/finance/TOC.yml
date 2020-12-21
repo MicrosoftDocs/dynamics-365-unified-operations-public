@@ -378,8 +378,6 @@
         href: accounts-receivable/close-accounts-receivable.md
       - name: Payments and settlements
         items:
-        - name: Revenue recognition overview
-          href: accounts-receivable/revenue-recognition-overview.md
         - name: Customer payment overview
           href: cash-bank-management/tasks/customer-payment-overview.md
         - name: Centralized payments for Accounts receivable
