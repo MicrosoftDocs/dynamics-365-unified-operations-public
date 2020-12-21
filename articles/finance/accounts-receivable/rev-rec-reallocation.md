@@ -96,6 +96,14 @@ The new amounts are shown in the **Reallocated amount** column in the sales orde
 [![Reallocation update showing line amounts used for reallocation](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Reset data for selected customer** – This button is used to clear the data in the reallocation table for only the selected customer if the process was started and not completed. For example, if multiple sales order lines were marked for reallocation and the page was left open without selecting the **Process** button, the page could time out and the sales order lines would remain marked.  This means the lines wouldn’t be available for another user to complete the process. Sometimes the page may even open blank when this happens. This button can be used to clear unprocessed sales orders, and then allow any user to complete the reallocation process.
- ## Scenarios for reallocation
+
+## Scenarios for reallocation
+
+The following topics walk through scenarios for recognizing revenue. 
+
+- For an example of a reallocation that's done when two sales orders are entered, but only confirmed, see [Revenue recognition reallocation - scenario 1](rev-rec-reallocation-scenario-1.md). The same scenario can be done with more than two sales orders in a confirmed state, with similar results.
+- For a reallocation example where two sales orders are entered [Revenue recognition reallocation - scenario 2](rev-rec-reallocation-scenario-2.md).
+- For an example of a reallocation that's done when a new line is added to an existing, invoiced sales order [Revenue recognition reallocation - scenario 3](rev-rec-reallocation-scenario-3.md). 
+- For an example of a reallocation that's done when a new line is removed from an existing, partially invoiced sales order [Revenue recognition reallocation - scenario 4](rev-rec-reallocation-scenario-4.md).
 
 
