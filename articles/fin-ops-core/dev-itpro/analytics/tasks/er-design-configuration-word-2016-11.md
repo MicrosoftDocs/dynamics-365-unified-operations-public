@@ -29,11 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you can configure a new [Electronic reporting (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound). The format must contain the **Excel\\File** format element, and that format element must be linked to the Word document that will be used as the template for the generated report at runtime. You can add **Excel\\Range** and **Excel\\Cell** nested elements for the **Excel\\File** element to specify the structure of data that will be put in the generated report at runtime.
-
-When you save changes to the ER format at design time, the format structure is stored in the Word template as a custom XML part that is named **Report**. When you have a Word template that includes a **Report** custom XML part, you can design it by using Word content controls as placeholders for data that will be filled in at runtime. To specify how content controls are filled in, map every content control to the appropriate field of the **Report** custom XML part. Then bind the ER format elements with the required data sources of your ER format. In this way, you specify the actual data that will be entered in the generated report at runtime as the **Report** custom XML part.
-
-When you run the configured ER format, the attached Word template is used to generate a new report. The actual data is stored in the Word report as a custom XML part that is named **Report**. When the generated report is opened, the Word content controls are filled in with data from the **Report** custom XML part. Alternatively, you can reuse an ER format that has been configured to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
+To generate reports as Microsoft Word documents, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound). Alternatively, you can reuse an ER format that has been initially configured to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
 
 The following procedures show how a user in either the System administrator role or the Electronic reporting developer role can configure an ER format to generate reports as Word files by reusing an ER format that was configured to generate reports as Excel files.
 
@@ -48,7 +44,7 @@ You must also download and locally save the following templates for the sample r
 - [Template of Payment Report (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=862266)
 - [Bounded Template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=862266)
 
-This procedure is for a feature that was added in Dynamics 365 for Operations version 1611 (November 2016).
+These procedures are for a feature that was added in Dynamics 365 for Operations version 1611 (November 2016).
 
 ## Select the existing ER report configuration
 
@@ -167,12 +163,7 @@ To run the draft version of the editable format, you must make it [runnable](../
 
 ![Generated output in Word format](../media/er-design-configuration-word-2016-11-image06.png)
 
-## Frequently asked questions
-
-**Question:** I configured an ER format to print a Word document that contains a company address. In the Word template for this ER format, I inserted a rich text content control to present a company address. In Finance, I entered the company address as multiline text and selected **Enter** to add a carriage return for every line that I entered. Therefore, I expect the company address to appear as multiline text in generated documents. However, the address appears as a single line of text that contains special symbols instead of carriage returns. What is wrong with my settings?
-
-**Answer:** Instead of using a rich text content control, you must use a plain text content control and select the **Allow carriage returns (multiple paragraphs)** check box in the control's properties.
-
 ## Additional resources
 
+- [Design ER configurations to generate reports in Word format](er-design-configuration-word.md)
 - [Embed images and shapes in documents that you generate by using ER](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
