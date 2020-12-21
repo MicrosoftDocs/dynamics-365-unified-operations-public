@@ -5,7 +5,7 @@ title: Design ER configurations to generate reports in Word format
 description: The following steps explain how a user in either the System administrator or Electronic reporting functional consultant role can configure an Electronic reporting formats to generate reports as Microsoft Word files. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 17/12/2020
+ms.date: 12/17/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -34,7 +34,7 @@ To generate reports as Microsoft Word documents, you must design a template for 
 
 ![Microsoft Word desktop application with a sample report template](./media/er-design-configuration-word-image1.png)
 
-To use the created Word document as a template of your reports in Microsoft Word format, you can configure a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md) that must include an ER [configuration](general-electronic-reporting?toc=/dynamics365/finance/toc.json#Configuration) containing an ER [format](general-electronic-reporting.md#FormatComponentOutbound) component.
+To use the created Word document as a template of your reports in Microsoft Word format, you can configure a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md) that must include an ER [configuration](general-electronic-reporting.md#Configuration) containing an ER [format](general-electronic-reporting.md#FormatComponentOutbound) component.
 
 > [!NOTE]
 > When you create a new ER format configuration to generate reports in Word format, you must either select the **Word** format type or keep the **Format type** field blank on the **Create configuration** dialog box.
