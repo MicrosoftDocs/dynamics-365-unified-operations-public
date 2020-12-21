@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound). Alternatively, you can reuse an ER format that has been initially configured to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
+To generate reports as Microsoft Word documents, you can [configure](../er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound). Alternatively, you can reuse an ER format that has been initially configured to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
 
 The following procedures show how a user in either the System administrator role or the Electronic reporting developer role can configure an ER format to generate reports as Word files by reusing an ER format that was configured to generate reports as Excel files.
 
@@ -165,5 +165,5 @@ To run the draft version of the editable format, you must make it [runnable](../
 
 ## Additional resources
 
-- [Design ER configurations to generate reports in Word format](er-design-configuration-word.md)
+- [Design ER configurations to generate reports in Word format](../er-design-configuration-word.md)
 - [Embed images and shapes in documents that you generate by using ER](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
