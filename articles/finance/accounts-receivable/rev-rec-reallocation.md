@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Revenue recognition reallocation
 
-Reallocation allows an organization to recalculate the revenue price when to the terms of a contractual sale are changed.  The sales order documents are considered the contract for the purpose of recognizing revenue. 
+Reallocation allows an organization to recalculate the revenue price when to the terms of a contractual sale are changed. The sales order documents are considered the contract for the purpose of recognizing revenue. 
 
 Your own organization must decide whether a reallocation is necessary. Adding a new line to a sales order, or adding a new sales order for the customer, might not constitute a change to the contract. The following scenarios might require a reallocation:
 
@@ -39,7 +39,7 @@ Your own organization must decide whether a reallocation is necessary. Adding a 
 
 A customer returned or received a credit for an item after the original sales order has been fully or partially invoiced. A few important restrictions exist for the reallocation process:
 
-- Reallocation can be run only once.  Therefore, it’s important to run this process only after all changes are finalized. 
+- Reallocation can be run only once. Therefore, it’s important to run this process only after all changes are finalized. 
 - Reallocation is not permitted on any project sales orders.
 - If multiple sales orders are involved, they must be for the same customer account.
 - All sales orders reallocated must be in the same transaction currency. 
@@ -48,7 +48,7 @@ A customer returned or received a credit for an item after the original sales or
 ## Reallocation setup
 One parameter impacts the reallocation process. Because a reallocation can be performed on a sales order that is partially or fully invoiced, any prior accounting entries for the invoice must be corrected using the new, reallocated revenue prices. This is done by reversing the original invoice’s accounting entry and posting a new accounting entry based on the reallocated revenue prices. 
 
-Each organization needs to decide whether the correction updates only General ledger or whether Accounts receivable will be updated, as well as General ledger.  This is determined by going to **Revenue recognition > Setup > General ledger parameters > Revenue recognition** and setting the “**Post invoice corrections to Accounts receivable** parameter as appropriate. The “appropriate” settings are specified in each of the four scenarios. 
+Each organization needs to decide whether the correction updates only General ledger or whether Accounts receivable will be updated, as well as General ledger. This is determined by going to **Revenue recognition > Setup > General ledger parameters > Revenue recognition** and setting the “**Post invoice corrections to Accounts receivable** parameter as appropriate. The “appropriate” settings are specified in each of the four scenarios. 
 
 [![General ledger parameters set to post invoice corrections](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
