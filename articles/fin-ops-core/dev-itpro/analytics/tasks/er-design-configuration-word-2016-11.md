@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Design ER configurations to generate reports in Word format
-description: This topic explains how to configure Electronic reporting (ER) formats that generate reports as Microsoft Word files.
+title: Re-use ER configurations with Excel templates to generate reports in Word format
+description: This topic explains how to configure Electronic reporting (ER) formats that generate reports as Microsoft Word files re-using ER formats that have been initially designed to make reports as Excel workbooks.
 author: NickSelin
 manager: AnnBe 
 ms.date: 12/15/2020
@@ -25,7 +25,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Design ER configurations to generate reports in Word format
+# Re-use ER configurations with Excel templates to generate reports in Word format
 
 [!include [banner](../../includes/banner.md)]
 
