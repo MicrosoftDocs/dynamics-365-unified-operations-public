@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Re-use ER configurations with Excel templates to generate reports in Word format
-description: This topic explains how to configure Electronic reporting (ER) formats that generate reports as Microsoft Word files re-using ER formats that have been initially designed to make reports as Excel workbooks.
+title: Reuse ER configurations with Excel templates to generate reports in Word format
+description: This topic explains how Electronic reporting (ER) formats that were originally designed to generate reports as Microsoft Excel workbooks can be configured to generate reports as Word documents instead.
 author: NickSelin
 manager: AnnBe 
 ms.date: 12/15/2020
@@ -25,13 +25,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Re-use ER configurations with Excel templates to generate reports in Word format
+# Reuse ER configurations with Excel templates to generate reports in Word format
 
 [!include [banner](../../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you can [configure](../er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound). Alternatively, you can reuse an ER format that has been initially configured to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
+To generate reports as Microsoft Word documents, you can [configure](../er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) [format](../general-electronic-reporting.md#FormatComponentOutbound). Alternatively, you can reuse an ER format that was originally designed to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
 
-The following procedures show how a user in either the System administrator role or the Electronic reporting developer role can configure an ER format to generate reports as Word files by reusing an ER format that was configured to generate reports as Excel files.
+The following procedures show how a user in either the System administrator role or the Electronic reporting developer role can configure an ER format to generate reports as Word files by reusing an ER format that was designed to generate reports as Excel files.
 
 These procedures can be completed in the GBSI company.
 
@@ -50,7 +50,7 @@ These procedures are for a feature that was added in Dynamics 365 for Operations
 
 1. In Dynamics 365 Finance, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. Make sure that the **Litware, Inc.** configuration provider is selected as **Active**. If it isn't, follow the steps in the [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md) task guide.
-3. Select **Reporting configurations**. You will reuse the existing ER configuration that is designed to generate the report output in OPENXML format.
+3. Select **Reporting configurations**. You will reuse the existing ER configuration that was designed to generate the report output in OPENXML format.
 4. On the **Configurations** page, in the configuration tree in the left pane, expand **Payment model**, and select **Sample worksheet report**.
 
     > [!NOTE]
@@ -99,7 +99,7 @@ If you're familiar with the process of designing Word documents as forms that co
 
 ## <a id='get-word-doc'></a>Get a Word document that has a custom XML part and do data mapping
 
-1. In Finance, on the **Attachments** page, select **Open** to download the selected template from Dynamics 365 Finance and store it locally as a Word document.
+1. In Finance, on the **Attachments** page, select **Open** to download the selected template from Finance and store it locally as a Word document.
 3. In the Word desktop application, open the document that you just downloaded.
 4. On the **Developer** tab, select **XML Mapping Pane**.
 
@@ -125,7 +125,7 @@ If you're familiar with the process of designing Word documents as forms that co
     > [!NOTE]
     > You must select a document type that has been [configured](../electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) in the ER parameters to store templates of ER formats.
 
-3. Select **Browse**, and then browse to and select the **SampleVendPaymDocReportBounded.docx** file that you downloaded or prepared by completing the [Get a Word that has a custom XML part to do data mapping](#get-word-doc) section.
+3. Select **Browse**, and then browse to and select the **SampleVendPaymDocReportBounded.docx** file that you downloaded or prepared by completing the procedure in the [Get a Word that has a custom XML part to do data mapping](#get-word-doc) section.
 4. Select **OK**.
 5. Close the **Attachments** page.
 6. On the **Format designer** page, in the **Template** field, select the document that you just downloaded.
@@ -161,7 +161,7 @@ To run the draft version of the editable format, you must make it [runnable](../
 7. In the **Electronic report parameters** dialog box, select **OK**.
 8. The generated output is presented in Word format and contains the details of the processed payments. Analyze the generated output.
 
-![Generated output in Word format](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Generated output in Word format](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## Additional resources
 
