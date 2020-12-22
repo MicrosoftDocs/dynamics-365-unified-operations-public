@@ -3,7 +3,7 @@
 
 title: Optimizing Data Migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 description: The topic provides an overview of how to optimize data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-author: toskaue
+author: skaue-ms
 manager: AnnBe
 ms.date: 12/21/2020
 ms.topic: article
