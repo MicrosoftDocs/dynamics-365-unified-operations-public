@@ -131,7 +131,7 @@ Follow these steps to set up expenses for the **Cash payment issue** and
     - **Credit fields:** Set the second **Valid for** field to
  **Group** and the **Credit account** field to **Transfer**.
 
-![Exceptions](media/image1.png)
+![Exceptions](media/ruExceptions.png)
 
 ## Cash payment receipt tax register
 
@@ -142,7 +142,7 @@ transactions, based on the settings that you configured earlier in this
 topic. You can view the total for the whole tax register and also the
 totals for each **Receive reason** value.
 
-![Cash_payment_receipt ](media/image2.png)
+![Cash_payment_receipt](media/ruCash_payment_receipt.png)
 
 The tax register lines show the following information:
 
@@ -172,7 +172,7 @@ transactions, based on the settings that you configured earlier in this
 topic. You can view the total for the whole tax register and also the
 totals for each expense type.
 
-![Cash_payment_ssue](media/image3.png)
+![Cash_payment_issue](media/ruCash_payment_issue.png)
 
 The tax register lines show the following information:
 
