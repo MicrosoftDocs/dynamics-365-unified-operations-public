@@ -32,9 +32,12 @@ ms.dyn365.ops.version: AX 10.0.13
 # Configuration for Finance insights (preview)
 
 [!include [banner](../includes/banner.md)]
+
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance insights combines functionality from Microsoft Dynamics 365 Finance with Common Data Service, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 
 ## Deploy Dynamics 365 Finance
 
@@ -44,7 +47,7 @@ Deploy the environments by following these steps.
 2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features. 
 
-## Configure Common Data Service
+## Configure Dataverse
 
 You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided. When the PowerShell script has finished running, it will give you values to use to configure Finance insights. 
 
@@ -53,7 +56,7 @@ You can complete the manual configuration steps that follow, or you can speed up
 
 # [Manual configuration steps](#tab/configuration-steps)
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Common Data Service environment in the same Active Directory tenant:
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:
 
     1. Open the **Environments** page.
 
@@ -68,13 +71,13 @@ You can complete the manual configuration steps that follow, or you can speed up
     8. Select **Save**.
     9. Refresh the **Environments** page.
     10. Wait until the value of the **State** field is updated to **Ready**.
-    11. Make a note of the Common Data Service organization ID.
+    11. Make a note of the Dataverse organization ID.
     12. Select the environment, and then select **Settings**.
     13. Select **Resources \> All Legacy Settings**.
     14. On the top navigation bar, select **Settings**, and then select **Customizations**.
     15. Select **Developer Resources**.
-    16. Set the **Instance Reference Information ID** field to the Common Data Service organization ID value that you made a note of earlier.
-    17. In the browser's address bar, make a note of the URL for the Common Data Service organization. For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.
+    16. Set the **Instance Reference Information ID** field to the Dataverse organization ID value that you made a note of earlier.
+    17. In the browser's address bar, make a note of the URL for the Dataverse organization. For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.
 
 2. If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):
 
@@ -271,12 +274,12 @@ catch {
 
 ## Configure the Azure setup
 
-### Enter the Common Data Service directory ID and the user's Azure AD object ID
+### Enter the Dataverse directory ID and the user's Azure AD object ID
 
-1. Enter the Common Data Service directory ID:
+1. Enter the Dataverse directory ID:
 
     1. Open the [Azure portal](https://portal.azure.com).
-    2. Sign in by using the user ID that was used to create the Common Data Service environment.
+    2. Sign in by using the user ID that was used to create the Dataverse environment.
     3. Go to **Azure Active Directory**.
     4. Copy the **Tenant ID** value.
 
@@ -338,7 +341,7 @@ If you can't find any of the preceding applications, try the following steps.
 #### Create Azure resources
 
 > [!NOTE]
-> Make sure that you create the following resources in the same Azure AD instance as the Common Data Service environment. You can't use resources from a different Azure AD instance.
+> Make sure that you create the following resources in the same Azure AD instance as the Dataverse environment. You can't use resources from a different Azure AD instance.
 
 1. Create a new storage account:
 
@@ -931,11 +934,11 @@ The add-in will be installed within a few minutes.
 
     | Value                                                    | Description |
     |----------------------------------------------------------|-------------|
-    | CDS Organization URL                                     | The Common Data Service organization URL of the Common Data Service instance. To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Advanced settings**, and copy the URL. (The URL ends with "dynamics.com.") |
-    | CDS Org ID                                               | The environment ID of the Common Data Service instance. To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Customizations \> Developer resources \> Instance Reference Information**, and copy the **ID** value. |
-    | CDS Tenant ID (Directory ID from AAD)               | The tenant ID of the Common Data Service instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value. |
-    | Provide user object ID who has system administrator role | The Azure AD user object ID of the user in Common Data Service. This user must be a system administrator of the Common Data Service instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value. |
-    | Is this the default CDS environment for the tenant?      | If the Common Data Service instance was the first production instance that was created, select this check box. If the Common Data Service instance was manually created, clear this check box. |
+    | CDS Organization URL                                     | The Dataverse organization URL of the Dataverse instance. To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Advanced settings**, and copy the URL. (The URL ends with "dynamics.com.") |
+    | CDS Org ID                                               | The environment ID of the Dataverse instance. To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Customizations \> Developer resources \> Instance Reference Information**, and copy the **ID** value. |
+    | CDS Tenant ID (Directory ID from AAD)               | The tenant ID of the Dataverse instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value. |
+    | Provide user object ID who has system administrator role | The Azure AD user object ID of the user in Dataverse. This user must be a system administrator of the Dataverse instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value. |
+    | Is this the default CDS environment for the tenant?      | If the Dataverse instance was the first production instance that was created, select this check box. If the Dataverse instance was manually created, clear this check box. |
 
 ## Feedback and support
 
