@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -948,7 +947,7 @@ When cluster picking is applied, item confirmation is crucial to verify the item
 
 Prospect to cash integration capabilities deliver first party integration between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations, Enterprise edition.
 
-This solution leverages the strengths of the individual Dynamics 365 components and connects them via Common Data Service (CDS). While the data is flowing seamlessly between Finance and Operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides powerful integration with a flexible solution and simplification of the integration process, without dependency on third-party solutions. These advancements offer the best of both worlds, each with significant productivity enhancements that help businesses and workers achieve more.
+This solution leverages the strengths of the individual Dynamics 365 components and connects them via Dataverse. While the data is flowing seamlessly between Finance and Operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides powerful integration with a flexible solution and simplification of the integration process, without dependency on third-party solutions. These advancements offer the best of both worlds, each with significant productivity enhancements that help businesses and workers achieve more.
 
 - Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations as customers.
 - Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.
@@ -957,9 +956,9 @@ This solution leverages the strengths of the individual Dynamics 365 components 
 - Generate sales orders in Finance and Operations and sync them to Dynamics 365 for Sales.
 - Generate invoices in Finance and Operations and sync them to Dynamics 365 for Sales.
 
-**Easy access to data through the power of Common Data Service**
+**Easy access to data through the power of Dataverse**
 
-The solution leverages the power of Azure Public Cloud and the combined data will be available via Common Data Service. This enables business users to access, visualize, share, and modify the unified Sales and Operations data through Power Apps, Power BI, or create workflow automations using Flow with pre-defined templates for various business processes. This also means that Power BI dashboard lets users gain better insight into the business process information across the two systems.
+The solution leverages the power of Azure Public Cloud and the combined data will be available via Dataverse. This enables business users to access, visualize, share, and modify the unified Sales and Operations data through Power Apps, Power BI, or create workflow automations using Flow with pre-defined templates for various business processes. This also means that Power BI dashboard lets users gain better insight into the business process information across the two systems.
 
 **Fast implementation**
 

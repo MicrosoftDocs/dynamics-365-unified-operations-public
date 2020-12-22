@@ -88,12 +88,12 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     1. Open your instance of the Finance and Operations app, search and navigate to Azure Active Directory applications.
 
-    2. Select **New** to add a new client ID record: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This record is the application ID for an app that will be used to connect from Dataverse to the Finance and Operations app.
-    3. Repeat the previous two steps to add another client ID record: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
+    2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that will be used to connect from Dataverse to the Finance and Operations app.
+    3. Repeat the previous two steps to add another client ID row: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
     When you've finished, follow these steps to refresh the list of tables:
 
-    1. Go to **Workspaces \> Data management**, select the **Data tables** tile, and make sure that the entity list is filled in.
+    1. Go to **Workspaces \> Data management**, select the **Data tables** tile, and make sure that the table list is filled in.
     2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entities** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh tables list**.
 
     **Related health check result:**<br>
@@ -116,7 +116,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
         ![Switching to Application user](media/create-new-user.png)
 
-    4. In the **Application ID** field, enter **00000015-0000-0000-c000-000000000000**. This application ID is for a Finance and Operations app and will enable the app to connect to Dataverse. When you've finished, follow the prompts to fill in the other fields, and then save the user account.
+    4. In the **Application ID** column, enter **00000015-0000-0000-c000-000000000000**. This application ID is for a Finance and Operations app and will enable the app to connect to Dataverse. When you've finished, follow the prompts to fill in the other columns, and then save the user account.
 
         ![Entering the application ID](media/add-application-id.png)
 
@@ -126,14 +126,14 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
         ![Assigning the System Administrator role](media/manage-user-roles.png)
 
     7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
-    8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each entity integrated through dual-write. 
+    8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write. 
     
       For instructions on how to create a Security Role, see [Create or configure a custom security role](https://docs.microsoft.com/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
       
       > [!NOTE]
-      > The root business unit’s default team will become the default owner for all records integrated through dual-write.
+      > The root business unit’s default team will become the default owner for all rows integrated through dual-write.
       > Because that team must be assigned a security role, this means that all users in the root business unit will inherit the security role.
-      > This means that at the very least, **users from that business unit will have read access to all the records that are owned by that team**. If this isn’t the desired behavior, make sure that users are not a member of the root business unit.
+      > This means that at the very least, **users from that business unit will have read access to all the rows that are owned by that team**. If this isn’t the desired behavior, make sure that users are not a member of the root business unit.
 
     9. Repeat the previous five steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
@@ -203,7 +203,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 **For dual-write core solution lower than version 1.0.16.0 only**
 
-1. In step Step 3b above, create a new client ID record: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
+1. In step Step 3b above, create a new client ID row: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
 2. Add app consent in the tenant:
 
     1. Open the following URL, and sign in by using your admin credentials. You should be prompted for consent.

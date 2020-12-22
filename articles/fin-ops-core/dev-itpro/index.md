@@ -74,7 +74,7 @@ The Finance and Operations mobile app empowers your organization to mobilize its
 + IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don’t have constant network connectivity. 
 
 ## Data management and data entities
-Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities overview](data-entities/data-entities.md).
+Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using Dataverse, Power Apps, and Power BI. For more information, see [Data entities overview](data-entities/data-entities.md).
 
 ## Office integration
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration overview](office-integration/office-integration.md).

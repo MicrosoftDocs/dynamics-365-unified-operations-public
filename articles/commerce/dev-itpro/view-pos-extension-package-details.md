@@ -59,3 +59,7 @@ To view the details of an extension package, select **View details** on the tile
 The **Status** column shows the status of each extension in the package, the **Name** column shows the name of the extension type, and the **Path** column shows the path of the implementation file in the package. When you select a specific line item, the right pane also shows a description of the extension.
 
 The information in this view is based on the manifest file that is included in the extension package. The POS extension loader loads all the extension packages and updates the status. The status information includes any errors that have been logged.
+
+> [!NOTE]
+> Dual display custom control and other extension details information related to dual display will not be shown in the extension details view.
+

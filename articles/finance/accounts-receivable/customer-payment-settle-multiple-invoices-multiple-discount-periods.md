@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use a customer payment to settle multiple invoices that span multiple discount periods
+title: Use one payment to settle invoices that span multiple discount periods
 description: This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in this article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,7 +18,7 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Use a customer payment to settle multiple invoices that span multiple discount periods
+# Use one payment to settle invoices that span multiple discount periods
 
 [!include [banner](../includes/banner.md)]
 

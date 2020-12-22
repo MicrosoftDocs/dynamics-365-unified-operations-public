@@ -53,9 +53,9 @@ Product information contains all the information related to the product and its 
 
 Finance and Operations apps | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
-Organization hierarchy purposes | msdyn_internalorganizationhierarchypurposes | This template provides one-way synchronization of the Organization Hierarchy Purpose entity.
-Organization hierarchy type | msdyn_internalorganizationhierarchytypes | This template provides one-way synchronization of the Organization Hierarchy Type entity.
-Organization hierarchy - published | msdyn_internalorganizationhierarchies | This template provides one-way synchronization of the Organization Hierarchy Published entity.
+Organization hierarchy purposes | msdyn_internalorganizationhierarchypurposes | This template provides one-way synchronization of the Organization Hierarchy Purpose table.
+Organization hierarchy type | msdyn_internalorganizationhierarchytypes | This template provides one-way synchronization of the Organization Hierarchy Type table.
+Organization hierarchy - published | msdyn_internalorganizationhierarchies | This template provides one-way synchronization of the Organization Hierarchy Published table.
 Operating unit | msdyn_internalorganizations |
 Legal entities | msdyn_internalorganizations |
 Legal entities | cdm_companies | Provides bidirectional synchronization of legal entity (company) information.

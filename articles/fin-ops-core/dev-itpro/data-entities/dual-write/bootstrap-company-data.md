@@ -1,448 +1,116 @@
 ---
 # required metadata
 
-title: Bootstrap with company data FAQ
-description: How to bootstrap Dataverse or other Dynamics 365 app data with company information before enabling dual-write connection. 
+title: Initialize company data
+description: This topic explains how to initialize (or bootstrap) Microsoft Dataverse data or other Finance and Operations app data with company information before you enable a dual-write connection.
 author: RamaKrishnamoorthy 
-manager: AnnBe
-ms.date: 09/20/2019
+manager: tfehr
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+# ms.search.form: 
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: 
-ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2019-09-20
+ms.custom: 31301
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rhaertle
+ms.search.validFrom: 2020-12-01
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Bootstrap with company data FAQ
- 
+# Initialize company data
+
 [!include [banner](../../includes/banner.md)]
+
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-## Why do I need bootstrapping? 
-You might have an existing Dataverse or other Dynamics 365 app instance with business data, and you want to enable dual-write connection against it. In this case, you need to bootstrap Dataverse or other Dynamics 365 app data with company information before enabling dual-write connection.  
- 
-## When should I use bootstrapping? 
-You should use bootstrapping before enabling dual-write table maps (during step #5).  
-1. To setup the dual-write connection between instances of your Finance and Operations app and the Dataverse or other Dynamics 365 app, log in to the Finance and Operations app as an administrator. 
-2. Go to the **Data Management** module and click the **Dual-Write** button. This launches the **Data Integrator**. 
-3. Create the dual-write connection for one or more companies.  
-    > [!div class="mx-imgBorder"]
-    > ![Create dual-write connection](media/dual-write-boot-1.png)
-4. Enable the **Cdm_companies** table map. This synchronizes companies from the Finance and Operations app to Dataverse.  
-    > [!div class="mx-imgBorder"]
-    > ![Enable the table map](media/dual-write-boot-2.png)
-5. Run the sample bootstrapping code on the Dataverse or other Dynamics 365 app instance.  
-6. When the bootstrapping is done and the system is ready for the live sync, enable the table maps.  
+If have an existing Microsoft Dataverse instance or Finance and Operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or Finance and Operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
 
-    Enabling the table maps triggers the initial data sync for the enabled table maps. The data corresponding to the companies chosen on the dual-write connection is synchronized between the Finance and Operations app and Dataverse. 
- 
-## How to I use the code sample?
-The sample code is a C# application that you can load in Visual Studio. It takes NuGet package dependencies on the Dataverse SDK, that you can refresh through standard Visual Studio tooling. 
+This topic includes sample scenarios that explain how to use [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) to initialize data in Dataverse tables for dual-write. It doesn't cover all tables, error handling scenarios, or lookups. Use this topic and template as a reference to set up your own Azure Data Factory pipeline to import data into Dataverse or update data in Dataverse.
 
-After unzipping and opening the solution in Visual Studio and restoring the NuGet packages, search for **TODO** in the code. Each decision you need to make about how you want to bootstrap company information is noted by a **TODO**, with sample code for a canonical implementation. 
+## High-level scenario
 
-The sample code shows only one of many ways you might categorize entity rows by company. By changing the logic in the **TODO** sections, you can create your custom categorization. 
- 
-## What should I expect?
-By default, the sample application lets you provide a dictionary of business unit-to-company code mappings. Any entity you bootstrap with an **OwningBusinessUnit** field is automatically set to use the specified company. Any entity without an **OwningBusinessUnit** field, such as product, will set the company based on the mapping with an empty business unit value.
+Consider the **Customers** table in a Finance and Operations app, and the **Account** table in Dataverse.
 
-The console application expects one parameter, either **–simulate** or **–apply**. If you use the **–simulate** command line parameter, then no data is updated. Only **simulation_<entityname>.csv** files are generated in the same directory as the tool, one for each entity that would have been updated. You can iteratively review these files while working to ensure the code updates company values as expected. 
+- Use initial write to copy reference and dependent tables, such as **Company**, **Customer groups**, and **Terms of payment**, from the Finance and Operations app to Dataverse.
+- Use the Data management framework to export data from the Finance and Operations app in comma-separated values (CSV) format. For example, set up an export project in Data management to export customers from each company by using the **DataAreaId** field in the Finance and Operations app. This process is a one-time manual process.
+- Use Azure Blob Storage to store the CSV files for lookup and transformation. Upload the CSV file for your Finance and Operations customers into Azure Blob Storage.
+- Use Azure Data Factory to initialize data in Dataverse.
 
-When you finish with the simulated updates, then use the **–apply** parameter. This updates all rows that currently have an incorrect company value, in batches of 1000 rows at a time (by default). The code is idempotent as provided, meaning you can re-run it and only the incorrectly assigned companies will be updated. When running with **–apply**, the code outputs CSV files of the changes made, which are named **applied_<entityname>.csv**. 
+The following illustration shows the workflow.
 
- ```csharp
- using Microsoft.Crm.Sdk.Messages;
-using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Sdk.Messages;
-using Microsoft.Xrm.Sdk.Query;
-using Microsoft.Xrm.Tooling.Connector;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
+:::image type="content" source="media/boot-process-flow.png" alt-text="High-level flow":::
 
-namespace BootstrapCompany
-{
-    /// <summary>
-    /// Application to bootstrap the company field on existing rows in CDS in preparation for integration to Finance and Operations.
-    /// </summary>
-    /// <remarks>
-    /// This application assumes that the target companies already exist in the CDS environment in the cdm_Company table and are
-    /// identified by their company code. It also assumes that the current owning business unit of each row should be used
-    /// to categorize by company. This logic can easily be updated to utilize alternate sources of categorization including
-    /// custom tables, teams, custom fields on tables, or any other data. This code is provided only as a sample. 
-    /// 
-    /// To utilize this code, update each of the locations currently denoted with a TODO statement.
-    /// 
-    /// This code is provided AS IS with no warranties or guarantees, and confers no rights.
-    /// </remarks>
-    public class Program
-    {
-        /// <summary>
-        /// The number of rows to query and update in CDS in a single operation.
-        /// </summary>
-        /// <remarks>
-        /// The larger this number, the fewer calls will need to be made, so the faster the updates
-        /// will complete. However, larger batch sizes are more likely to cause contention. Additionally,
-        /// when SQL exceeds some threshold of locks (generally around 5,000), it will escalate to
-        /// an entire table lock, which blocks all other activity in the live system on this table. As 
-        /// such, a batch size of around 1,000 is relatively fast, while also relatively safe in terms
-        /// of contention and transaction time.
-        /// </remarks>
-        const int requestBatchSize = 1000;
+This scenario is based on the following assumptions:
 
-        /// <summary>
-        /// The number of faults that may be seen in CDS before the operation is aborted and an exception is thrown.
-        /// </summary>
-        /// <remarks>
-        /// An occassional error due to contention when updating large tables in production is expected, so by default
-        /// errors are logged and skipped. However, if a large number of errors are seen, ignoring those errors
-        /// in subsequent batches gets expensive, and is usually indicative of a larger issue that should be addressed
-        /// before continuing. Faulted requests are *not* retried, but would be picked up in a subsequent run of this script.
-        /// </remarks>
-        const int maxFaultThreshold = 100;
+- The source data is in the Finance and Operations app.
+- If an account exists in Dataverse, but it doesn't exist in the Finance and Operations app, it won't be initialized as part of this flow.
+- All account records in the customer engagement apps have a natural key (account number) that matches the Finance and Operations natural key (**CustomerAccount**).
+- Rows have a one-to-one (1:1) mapping across the apps.
 
-        /// <summary>
-        /// The maximum number of rows per business unit to export when simulating.
-        /// </summary>
-        /// <remarks>
-        /// During simulation, queries are not batched since doing so would require ordering and so be slightly
-        /// different from the actual execution logic. To keep this the same between both paths, simulates are
-        /// not batched and so a separate maximum number of rows per business unit can be specified.
-        /// </remarks>
-        const int maxSimulateRecordsPerBusinessUnit = 10000;
+## Prerequisites
 
-        /// <summary>
-        /// Whether or not operations should continue if any errors are encountered.
-        /// </summary>
-        /// <remarks>
-        /// This is different than setting maxFaultThreshold = 0, since the first batch of updates will be processed
-        /// together. If continueOnError is true and maxFaultThreshold is 0, it is possible that multiple errors may
-        /// be encountered and at the same time some rows successfully updated. In a healthy system when updating
-        /// a higher number of rows, an occasional spurious error is expected, so it is recommended this be left as true.
-        /// </remarks>
-        const bool continueOnError = true;
+- **Azure subscription** – You have **contributor access** to an existing Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/free/) before you begin.
+- **Azure storage account** – You have an Azure storage account. If you don't have a storage account, follow the steps in [Create an Azure storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one.
+- **Azure data factory** – Create an Azure Data Factory resource by following the steps in [Create a data factory](https://docs.microsoft.com/azure/data-factory/tutorial-copy-data-portal#create-a-data-factory).
+- **Finance and Operations app** – Use the Data management framework to export the data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customers are exported by using the **CustCustomerV3Entity** table.
+- **Dynamics 365 Dataverse** – Use the credentials for the Dataverse admin user to initialize the data.
+- **Dual-write** – Dual-write solutions are installed, and reference data is copied by using initial write.
 
-        #region private variables
-        private static Dictionary<string, EntityReference> cachedCompanyReferences = new Dictionary<string, EntityReference>();
-        #endregion
+## Deployment steps
 
-        /// <summary>
-        /// The main execution loop of the program.
-        /// </summary>
-        /// <param name="args">No arguments are expected.</param>
-        static void Main(string[] args)
-        {
-            if (args.Length != 1 && args[0] != "-simulate" && args[0] != "-apply")
-            {
-                Console.WriteLine("Usage: BootstrapCompany -simulate");
-                Console.WriteLine("       BootstrapCompany -apply");
-                Console.WriteLine("The -simulate flag will create a file called simulation.csv in the working");
-                Console.WriteLine("directory, but will not change any data. The -apply flag will update live data");
-                Console.WriteLine("in the same way that was demonstrated in the simulation.");
+### Set up an Azure storage account
 
-                return;
-            }
+If you don't have an Azure storage account, follow these steps in [Create an Azure storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) to create one. In your storage account, create one container that is named **ce-data**. This container will store all data files. You can change the container in your datasets and pipelines as you require. Go to **Access keys**, and copy the **Connection string** value, as shown in the following illustration. This value is required when you import the Azure Data Factory template.
 
-            bool isSimulate = args[0].Equals("-simulate", StringComparison.OrdinalIgnoreCase);
+:::image type="content" source="media/boot-storage-account.png" alt-text="Setting up access keys":::
 
-            // Delete the simulation or applied files if existing
-            foreach (string existingSimulate in Directory.EnumerateFiles(Directory.GetCurrentDirectory(), $"{(isSimulate ? "simulation" : "applied")}_*.csv"))
-            {
-                File.Delete(existingSimulate);
-            }
+### Deploy an Azure Data Factory template
 
-            IOrganizationService orgService;
+1. Make a note of the name of the Azure data factory that you created.
+2. Make a note of the connection string for the Azure storage account.
+3. Make a note of the service URI of the Dataverse instance, and the admin user name and password.
 
-            // TODO: Provide your connection string details for your environment
-            CrmServiceClient cdsConnection = new CrmServiceClient("AuthType=Office365;Username=youraliashere@yourdomainhere.com;Password=yourpasswordhere;URL=https://yourorganizationurlhere.crm.dynamics.com/;");
-            orgService = (IOrganizationService)cdsConnection.OrganizationWebProxyClient != null ? (IOrganizationService)cdsConnection.OrganizationWebProxyClient : (IOrganizationService)cdsConnection.OrganizationServiceProxy;
+    The following table shows the parameters that are required.
 
-            if (orgService != null)
-            {
-                // Get the current user ID to verify the connection was successful
-                Guid userid = ((WhoAmIResponse)orgService.Execute(new WhoAmIRequest())).UserId;
+    | Parameter name | Description | Example value |
+    |---|---|---|
+    | Factory name | The name of your data factory | *BootstrapDataverseDataADF* |
+    | Bootstrap blob storage account Linked Service\_connection String | The connection string for blob storage | The value that you copied when you created the storage account |
+    | Bootstrap Dynamics 365 Linked Service\_service Uri | The URI of the Dataverse instance | `https://contosod365.crm4.dynamics.com` |
+    | Bootstrap Dynamics 365 Linked Service\_properties\_type Properties\_username | The Dynamics 365 admin user's user ID | `<adminservice@contoso.onmicrosoft.com>` |
+    | Bootstrap Dynamics 365 Linked Service\_password | The Dynamics 365 admin user's password | _\*\*\*\*\*\*\*\*_ | 
 
-                if (userid != Guid.Empty)
-                {
-                    Console.WriteLine("Connection Successful!");
-                }
+4. Download the [Azure Resource Manager (ARM) template file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/arm_template.json) to your local directory.
+5. In the Azure portal, go to [Custom deployment](https://ms.portal.azure.com/#create/Microsoft.Template).
+6. Select **Build your own template in the editor**.
+7. Select **Load file**, and find and select the ARM template file that you downloaded earlier. Then select **Save**.
+8. Provide the required parameters, select **Review**, and then select **Create**.
 
-                // TODO: Provide a mapping of OwningBusinessUnit name to cdm_Company company ID. You can reuse
-                // the same company ID for multiple business units if desired. In this example, it assumes that
-                // the business unit named "USMF" is related to the company "USMF". If all rows were owned
-                // by the same root business unit, then the first field in the dictionary should be set to the 
-                // name of the root business unit, usually the same value as the organization (eg, "Contoso").
-                Dictionary<string, string> businessUnitToCompanyMapping = new Dictionary<string, string>()
-                {
-                    { "", "USMF" }, // The default mapping to use for any entity that doesn't have an owningbusinessunit field
-                    { "USMF", "USMF" },
-                    { "FRRT", "FRRT" },
-                };
+    :::image type="content" source="media/boot-custom-deployment.png" alt-text="Customizing a template":::
 
-                // TODO: Provide a list of tables for which the company field should be backfilled based
-                // on owning business unit. The list below represents all existing tables for which a cdm_Company
-                // lookup field was added as part of the Finance and Operations dual write project.
-                BatchUpdateEntity(orgService, "account", "msdyn_company", businessUnitToCompanyMapping, true, isSimulate, "accountnumber", "name");
-                BatchUpdateEntity(orgService, "contact", "msdyn_company", businessUnitToCompanyMapping, true, isSimulate, "fullname");
-                // ... Add more here
+9. After deployment, you will see **Pipelines**, **Datasets**, and **Data flows** sections in the list pane.
 
-                // Note, the product entity does not have an owningbusinessunit field like most other tables, so
-                // assigning company by Business Unit is not applicable. In this case, whichever mapping specifies an
-                // empty business unit will be used to categorize tables without an owningbusinessunit field.
-                BatchUpdateEntity(orgService, "product", "msdyn_companyid", businessUnitToCompanyMapping, false, isSimulate, "productnumber");
-            }
-            else
-            {
-                Console.WriteLine("Connection failed...");
-            }
+    :::image type="content" source="media/boot-pipeline.png" alt-text="Pipelines, Datasets, and Data flows":::
 
-            Console.WriteLine("Done");
-            Console.ReadLine();
-        }
+## Run the process
 
-        /// <summary>
-        /// Updates all incorrectly assigned company relationships for the specified entity.
-        /// </summary>
-        /// <param name="orgService">The connection to CDS.</param>
-        /// <param name="entityName">The logical name of the entity to update.</param>
-        /// <param name="companyFieldName">The physical name of the field in the entity being updated which contains the cdm_Company id.</param>
-        /// <param name="businessUnitToCompanyMapping">A dictionary of business unit name to company code.</param>
-        /// <param name="hasOwningBusinessUnit">true if the entity has an owningbusinessunit field; otherwise, false.</param>
-        /// <param name="isSimulate">true to simulate output; otherwise, false.</param>
-        /// <param name="fieldsToExport">A set of fields to export into a CSV for this entity if simulating.</param>
-        /// <returns>true if the entity was successfully processed without any errors; otherwise, false.</returns>
-        private static bool BatchUpdateEntity(
-            IOrganizationService orgService, 
-            string entityName, 
-            string companyFieldName, 
-            Dictionary<string, string> businessUnitToCompanyMapping, 
-            bool hasOwningBusinessUnit, 
-            bool isSimulate, 
-            params string[] fieldsToExport)
-        {
-            List<Guid> faultedIds = new List<Guid>();
-            int totalRecordsProcessed = 0;
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
+1. In the Finance and Operations app, use the Data management framework to export data in CSV format. For more information, see [Data management overview](../data-entities-data-packages.md). In this template, customer data was exported from the **CustCustomerV3Entity** table. Set up **CustCustomerV3Entity**, and remove the **FullPrimaryAddress** field map from the mapping. Add the **DataAreaId** field to the CSV file. Rename the exported file **01-CustomersV3Export-Customers V3.csv**, and upload it to the Azure storage account that you named **ce-data**.
 
-            string fileName = isSimulate ? "simulation" : "applied";
-            StreamWriter simulationWriter = new StreamWriter(Path.Combine(Directory.GetCurrentDirectory(), $"{fileName}_{entityName}.csv"), true);
-            simulationWriter.Write("EntityName,EntityId,");
-            foreach (string fieldToExport in fieldsToExport)
-            {
-                simulationWriter.Write($"{fieldToExport},");
-            }
-            simulationWriter.WriteLine("BusinessUnit,NewCompanyId");
+    :::image type="content" source="media/boot-customer-file.png" alt-text="Finance and Operations customer file":::
 
-            // Process each mapped business unit individually
-            foreach (string businessUnitName in businessUnitToCompanyMapping.Keys)
-            {
-                Console.WriteLine("Updating any {0} rows for business unit {1} to company {2}...", entityName, businessUnitName, businessUnitToCompanyMapping[businessUnitName]);
+2. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
 
-                // The empty business unit value is only applicable for tables without an owning business unit field
-                if (hasOwningBusinessUnit && string.IsNullOrEmpty(businessUnitName))
-                {
-                    continue;
-                }
-                else if (!hasOwningBusinessUnit && !string.IsNullOrEmpty(businessUnitName))
-                {
-                    continue;
-                }
-
-                var companyRef = GetCompanyReference(orgService, businessUnitToCompanyMapping[businessUnitName]);
-
-                // Iteratively loop in batches to keep transaction lock size small
-                bool moreRecordsExist = true;
-
-                while (moreRecordsExist)
-                {
-                    moreRecordsExist = false;
-
-                    // Find the first batch of rows for this business unit with the wrong company ID. Ordering
-                    // is not explicity specified, but SQL will most likely process based on the index starting with
-                    // company ID, since all new company ID fields added for Finance and Operations integration have
-                    // also added a new index starting with company ID. Explicitly specifying order would reduce the
-                    // query plan options for SQL and introduce unnecessary overhead.
-                    QueryExpression query = new QueryExpression(entityName);
-                    query.ColumnSet.AddColumns(companyFieldName);
-                    foreach (string fieldToExport in fieldsToExport)
-                    {
-                        query.ColumnSet.AddColumn(fieldToExport);
-                    }
-                    query.Criteria.AddCondition(companyFieldName, ConditionOperator.NotEqual, companyRef.Id);
-
-                    // TODO: Uncomment the line below if you only want to fill in companies that are empty
-                    // as opposed to the line above which updates the company any time it differs from the 
-                    // desired value
-                    // query.Criteria.AddCondition(companyFieldName, ConditionOperator.Equal, Guid.Empty);
-
-                    if (isSimulate)
-                    {
-                        // During simulation, get as a single block of rows to avoid positioning complexities
-                        query.TopCount = maxSimulateRecordsPerBusinessUnit;
-                    }
-                    else
-                    {
-                        // Only batch rows during actual application, otherwise retrieve all as a single operation
-                        query.TopCount = requestBatchSize + faultedIds.Count;
-                    }
-
-                    // For tables with an owning business unit, join based on business unit name
-                    if (hasOwningBusinessUnit)
-                    {
-                        // TODO: Replace this logic with different algorithms to determine the correct company
-                        // in situations where business unit is not the best way to categorize.
-                        LinkEntity linkEntity = query.AddLink("businessunit", "owningbusinessunit", "businessunitid", JoinOperator.Inner);
-                        linkEntity.Columns.AddColumns("name");
-                        linkEntity.LinkCriteria.AddCondition("name", ConditionOperator.Equal, businessUnitName);
-                    }
-
-                    var multipleRequest = new ExecuteMultipleRequest()
-                    {
-                        Settings = new ExecuteMultipleSettings()
-                        {
-                            ContinueOnError = true,
-                            ReturnResponses = true
-                        },
-                        Requests = new OrganizationRequestCollection()
-                    };
-
-                    EntityCollection result = orgService.RetrieveMultiple(query);
-
-                    int rowsAddedToBatch = 0;
-
-                    foreach (var entity in result.Entities)
-                    {
-                        // Skip any previously faulted ID's. These values will be re-queried with each batch
-                        // which is inefficient, but is more efficient than passing hundreds of ID values to 
-                        // the underlying SQL query to be skipped at the database level (assuming the 
-                        // max fault count is relatively small).
-                        if (faultedIds.Contains(entity.Id))
-                        {
-                            continue;
-                        }
-
-                        entity.Attributes[companyFieldName] = companyRef;
-                        
-                        UpdateRequest updateRequest = new UpdateRequest()
-                        {
-                            Target = entity
-                        };
-
-                        simulationWriter.Write($"{entityName},{entity.Id},");
-                        foreach (string fieldToExport in fieldsToExport)
-                        {
-                            simulationWriter.Write($"{entity.Attributes[fieldToExport]},");
-                        }
-                        simulationWriter.WriteLine($"{businessUnitName},{businessUnitToCompanyMapping[businessUnitName]}");
-
-                        // Only add the update request when applying for real
-                        if (!isSimulate)
-                        {
-                            multipleRequest.Requests.Add(updateRequest);
-                        }
-
-                        rowsAddedToBatch++;
-                        Console.Write(".");
-                    }
-
-                    totalRecordsProcessed += rowsAddedToBatch;
-
-                    if (rowsAddedToBatch > 0 && !isSimulate)
-                    {
-                        Console.Write("Sending {0} updates in a batch", rowsAddedToBatch);
-                        var updateResult = orgService.Execute(multipleRequest) as ExecuteMultipleResponse;
-                        moreRecordsExist = true;
-                        Console.WriteLine(" done");
-
-                        // If any faults are encountered, flag those IDs to not be processed again
-                        // in subsequent batches.
-                        if (updateResult.IsFaulted)
-                        {
-                            foreach (var response in updateResult.Responses)
-                            {
-                                if (response.Fault != null)
-                                {
-                                    Console.WriteLine(response.Fault);
-                                    faultedIds.Add(((UpdateRequest)multipleRequest.Requests[response.RequestIndex]).Target.Id);
-
-                                    if (faultedIds.Count > 100)
-                                    {
-                                        throw new ApplicationException("Excessive number of update failures, aborting operation");
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("No {0} rows remain to be updated for {1}->{2}", entityName, businessUnitName, businessUnitToCompanyMapping[businessUnitName]);
-                    }
-                }
-            }
-
-            simulationWriter.Close();
-            simulationWriter = null;
-
-            stopwatch.Stop();
-            Console.WriteLine("Processed {0} rows for the {1} entity in {2}ms.", totalRecordsProcessed, entityName, stopwatch.ElapsedMilliseconds);
-
-            return (faultedIds.Count == 0);
-        }
-
-        /// <summary>
-        /// Gets an entity reference to the company with the specified ID if one exists.
-        /// </summary>
-        /// <param name="orgService">The CDS connection.</param>
-        /// <param name="companyId">The company ID to search for.</param>
-        /// <returns>An entity reference if one exists; otherwise, null.</returns>
-        private static EntityReference GetCompanyReference(IOrganizationService orgService, string companyId)
-        {
-            if (cachedCompanyReferences.ContainsKey(companyId))
-            {
-                return cachedCompanyReferences[companyId];
-            }
-
-            QueryExpression query = new QueryExpression("cdm_company");
-            query.ColumnSet.AddColumns("cdm_companyid");
-            query.Criteria.AddCondition("cdm_companycode", ConditionOperator.Equal, companyId);
-            query.TopCount = 1;
-
-            EntityCollection result = orgService.RetrieveMultiple(query);
-
-            EntityReference entityRef = null;
-
-            foreach (var entity in result.Entities)
-            {
-                entityRef = entity.ToEntityReference();
-                break;
-            }
-
-            cachedCompanyReferences[companyId] = entityRef;
-
-            return entityRef;
-        }
-    }
-}
-
- ```
- 
- 
+3. Run **BootstrapAccountsPipeline** from Azure Data Factory.

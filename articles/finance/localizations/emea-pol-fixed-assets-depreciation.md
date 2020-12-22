@@ -18,7 +18,7 @@ ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosti
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264274
 ms.search.region: Poland

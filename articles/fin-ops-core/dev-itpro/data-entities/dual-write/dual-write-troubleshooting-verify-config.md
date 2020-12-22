@@ -55,7 +55,7 @@ For information about how to fix issues when you create data in Finance and Oper
 
 ## Verify that dual-write is configured in Dataverse
 
-When you create data, if you see the **Company** field on pages in Dataverse, dual-write is configured.
+When you create data, if you see the **Company** column on pages in Dataverse, dual-write is configured.
 
 ![Verifying the Dataverse connection](media/verify_cds.png)
 

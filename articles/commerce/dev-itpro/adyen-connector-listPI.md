@@ -87,7 +87,7 @@ When named users (signed-in customers) go to the payment step of the checkout pr
 
 If this check box is selected, when a new credit card is submitted for payment, the named user's unique customer ID is sent to the payment processor, and the credit card is securely saved and mapped to the that unique customer ID. 
 
-If the same customer signs in during future visits to the storefront, he or she will be able to select the same credit card for payment at checkout. 
+If the same customer signs in during future visits to the storefront, they will be able to select the same credit card for payment at checkout. 
 
 ![Previously saved payment instrument](../media/Payments/Saved_PI.jpg)
 

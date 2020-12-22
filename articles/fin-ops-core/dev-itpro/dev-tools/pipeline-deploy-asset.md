@@ -35,7 +35,7 @@ You can use the **Deploy Lifecycle Services (LCS) Asset Deployment** task in Mic
 * The task is available only in **Releases** pipelines.
 * The deployment of software deployable packages to production environments can't be automated.
 * Software deployable packages can't be deployed to build environments.
-* Software deployable packages can't be deployed to local business data (LBD) environments on-premises.
+* Software deployable packages can be deployed to local business data (LBD) environments on-premises(since update 39 10.0.15).
 
 This topic assumes that you have a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started).
 
