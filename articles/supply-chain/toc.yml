@@ -442,7 +442,7 @@
       - name: Asset management from the mobile app
         items: 
         - name: Set up the Asset management mobile workspace for the Finance and Operations (Dynamics 365) mobile app
-          href: asset-management/controlling-and-reporting/cost-and-date-control.md
+          href: asset-management/set-up-asset-management-mobile.md
         - name: Use the Asset management mobile workspace
           href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
