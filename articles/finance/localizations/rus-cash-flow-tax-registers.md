@@ -1,4 +1,15 @@
-﻿# Cash flow tax registers
+---
+title: 
+description: 
+ms.date: 12/22/2020
+ms.topic: article
+ms.service: dynamics365-financials
+author: akroshkina
+ms.author: 
+manager: anayash
+---
+
+# Cash flow tax registers
 
 ## Overview
 
