@@ -3,7 +3,7 @@
 
 title: Optimizing Data Migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 description: The topic provides an overview of how to optimize data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-author: skaue-ms
+author: toskaue
 manager: AnnBe
 ms.date: 12/21/2020
 ms.topic: article
@@ -21,7 +21,7 @@ ms.reviewer: sericks
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: skaue-ms
+ms.author: toskaue
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.13
 
@@ -106,53 +106,53 @@ Review the [configuration of the index defragmentation job](batch-job-sql-defrag
 
 ## Update statistics
 
-Prior to running a data migration job for a large volume of data consider updating the statistics across the associated tables. This is taken care of automatically in production environments. You can run [update statistics for a specific table from LCS](../lifecycle-services/querycookbook.md), or for the [whole database using sp_updatestats stored procedure using direct SQL](../../../../sql/relational-databases/system-stored-procedures/sp-updatestats-transact-sql.md).
+Prior to running a data migration job for a large volume of data consider updating the statistics across the associated tables. This is taken care of automatically in production environments. You can run [update statistics for a specific table from LCS](../lifecycle-services/querycookbook.md), or for the whole database using sp_updatestats stored procedure using direct SQL.
 
 ## Clean the data
 
 Rectify the errors related to data quality to reduce the code churn for validations and error processing. With a high volume of invalid or incisistent set of data, the time spent on validations and reporting errors will add to the total time spent doing the migration.
 
-# Configurations to test during data migration test runs
+## Configurations to test during data migration test runs
 
 The following set of configurations can impact performance of data migration and therefore it is recommended that these are tested with different values to find the optimal configuration for your data migration scenario.
 
-## Configure entity execution parameters
+### Configure entity execution parameters
 
 You can modify the execution parameters for all or specific entites here:
 Data management > Framework parameters > Entity settings > Configure entity execution parameters
 
-### Import threshold record count
+#### Import threshold record count
 
 This value represent the number of records that will be split and assigned to separate tasks.
 
-### Import task count
+#### Import task count
 
 This values is use to determine how many threads will be used for the data migration job for a specific entity. For example, if the Maximum batch threads is 8 for each server, and there are 4 servers assigned to the data migration batch group, the maximum value for Import task count should be 8 times 4 which is 32.
 
 If a data entity does not support multithreading, when you attempt to configure the entity, you will see an error message.
 Example: "Custom sequence is defined for the entity 'Customers V3', more than one task is not supported."
 
-## Validations
+### Validations
 
 Validation logic for record inserts or updates may have been incorporated into the system, and/or there may be validation on individual fields. If the validation logic is taking too long and if the data migration process is mature enough to confidently disable these options for cutover this should be considered. You will find these settings on each entity under: 
 Data management > Data entities > Entity structure
 
-### Run business validations
+#### Run business validations
 
 If this flag is enabled, the system will execute any logic written into the validateWrite() method on the table, and related event handlers.
 
-### Run business logic in insert or update method
+#### Run business logic in insert or update method
 
 If this flag is enabled, the system will execute any logic written into the insert() or update() method on the table, and related event handlers.
 
-### Call validate Field method on target
+#### Call validate Field method on target
 
 Field validation can be found under:
 Data management > Data entities > Modify target mapping
 
 If this option is enabled the validateField(FieldId p1) method will be called for the specific field.
 
-## Data migration performance optimization process
+### Data migration performance optimization process
 
 Here are some general recommendations how to approach data migration performance optimization.
 
