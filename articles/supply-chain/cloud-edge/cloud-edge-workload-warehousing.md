@@ -132,12 +132,13 @@ No other processing of source documents and warehouse work types are currently s
 > [!NOTE]
 > The mobile device menu items and buttons for the unsupported functionalities cannot be seen on the _Warehouse app_ logged in against a scale unit deployment.
 
-> [!IMPORTANT]
+> [!WARNING]
 > If you use a workload on a scale unit, you can't run unsupported processes for the specific warehouse on the hub. The following tables document the supported capabilities.
 >
-> Selected warehouse work types can both be created on hub and on scale units, but only get maintained by the owner (the deployment which created the data).
-><p>Even though a specific process is scale unit supported, be aware that all the needed data might not get synchronized from the hub and thereby risk resulting in unexpected system processing. One example being a location directive query joining a data table record which only exists at the hub deployment.</p>
-
+> Selected warehouse work types can both be created on hub and on scale units, but only get maintained by the owner (the deployment which created the data). If enabling a warehouse for scale unit workload processing with e.g. active work, this work will need to get finalized on the hub, who will be the owner of this data.
+><p>Even though a specific process is scale unit supported, be aware that all the needed data might not get synchronized from the hub to the scale unit, or from the scale unit to the hub, and thereby risk resulting in unexpected system processing. Examples being:</p>
+><p> - Location directive query joining a data table record which only exists at the hub deployment.</p>
+><p> - Use of the location status and/or location volumetric load functionalities. This data will not get synchronized between the deployments and thereby only work when updating location inventory on-hand on one of the deployments.</p>
 
 The following warehouse management functionality isn't currently supported for scale unit workloads:
 
@@ -147,7 +148,7 @@ The following warehouse management functionality isn't currently supported for s
 - Processing of inventory that has a blocking status value
 - Changing of an inventory status during any work movement process
 - Order-committed flexible warehouse-level dimension reservations
-- Use of *Warehouse location status* functionality
+- Use of *Warehouse location status* functionality (data not getting sync'ed between the deployments)
 - Use of *Location license plate positioning* functionality
 - Integration with quality management
 - Processing of catch-weight items
@@ -180,15 +181,20 @@ The following table shows which outbound features are supported, and where they 
 | Outbound sorting processing                                  | No  | No |
 | Printing of load related documents                           | Yes | No |
 | Bill of lading and ASN generation                            | Yes | No |
-| Ship confirmation and packing slip processing                | Yes | No |
+| Shipment confirm                    | Yes  | No |
+| Shipment confirmation with "Confirm and transfer"                    | No  | No |
+| Packing slip and invoicing processing                | Yes | No |
 | Short picking (sales and transfer orders)                    | No  | No |
 | Over picking (sales and transfer orders)                     | No  | No |
 | Change of work locations (sales and transfer orders)         | No  | Yes|
 | Complete work (sales and transfer orders)                    | No  | Yes|
 | Print work report                                            | Yes | No |
 | Wave label                                                   | No  | Yes|
-| Reverse work                                                 | No  | No |
+| Work split                                                   | No  | Yes|
 | Work processing - Directed by 'Transport loading'            | No  | No |
+| Reduce picked quantity                                       | No  | No |
+| Reverse work                                                 | No  | No |
+| Reverse shipment confirmation                                | No  | No |
 
 ### Inbound
 
@@ -198,7 +204,7 @@ The following table shows which inbound features are supported, and where they a
 |------------------------------------------------------------------|----------------|------------------------------|
 | Source&nbsp;document&nbsp;processing                                       | Yes | No |
 | Load and transportation management processing                    | Yes | No |
-| Shipment confirmation                                            | Yes | No |
+| Inbound shipment confirmation                                            | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
 | Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line</p>          | Yes | No |
 | Purchase order item receiving and put away                       | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p> |
@@ -220,6 +226,10 @@ The following table shows which inbound features are supported, and where they a
 | Receiving with quality order creation                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Work processing - Directed by 'Cluster putaway'                             | Yes | No |
 | Work processing with 'Short pick'                                           | Yes | No |
+| License plate loading                                           | Yes | No |
+
+
+
 ### Warehouse operations and exception handing
 
 The following table shows which warehouse operations and exception handing features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
@@ -233,12 +243,14 @@ The following table shows which warehouse operations and exception handing featu
 | Movement                                           | Yes | Yes                          |
 | Movement by template                               | Yes | Yes                          |
 | Warehouse transfer                                 | Yes | No                           |
+| Create transfer order from warehouse app           | Yes | No                           |
 | Adjustment (in/out)                                | Yes | No                           |
 | Inventory status change                            | Yes | No                           |
 | Cycle counting and Counting discrepancy processing | Yes | No                           |
 | Reprint label (license plate printing)             | Yes | Yes                          |
 | License plate build                                | Yes | No                           |
 | License plate break                                | Yes | No                           |
+| Pack to nested license plates                                | Yes | No                           |
 | Driver check in                                    | Yes | No                           |
 | Driver check out                                   | Yes | No                           |
 | Change batch disposition code                      | Yes | Yes                          |
