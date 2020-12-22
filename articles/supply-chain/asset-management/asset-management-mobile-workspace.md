@@ -51,7 +51,7 @@ Specifically, the **Asset management** mobile workspace lets users perform these
 
 ## Prerequisites
 
-Before you can use the Asset management mobile workspace, your admin must set up the required user and worker accounts and also publish the workspace. For details, see [Set up the Asset management mobile workspace for the Finance and Operations (Dynamics 365) mobile app](set-up-asset-management-mobile.md).
+Before you can use the Asset management mobile workspace, your admin must set up the required user and worker accounts and also publish the workspace. For details, see [Set up the Asset management mobile workspace](set-up-asset-management-mobile.md).
 
 ## Download and install the mobile app
 

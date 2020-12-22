@@ -89,6 +89,6 @@ To install and set up the Finance and Operations (Dynamics 365) app on a mobile 
 
 ## Work with the Asset management mobile workspace
 
-For more information about how to work with the Asset management mobile workspace, see [Asset management mobile workspace](asset-management-mobile-workspace.md).
+For more information about how to work with the Asset management mobile workspace, see [Use the Asset management mobile workspace](asset-management-mobile-workspace.md).
 
 For more information about the Finance and Operations (Dynamics 365) mobile app, see the [Mobile app home page](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
