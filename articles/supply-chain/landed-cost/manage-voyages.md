@@ -32,87 +32,110 @@ ms.dyn365.ops.version: Release 10.0.17
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The **All voyages** page provides voyage details, delivery, costing, and item/purchase-order/transfer-order information. The header section of the page relates to the voyage details and costing information that applies at a voyage level.
+The **All voyages** page provides voyage details, delivery, costing, and item/purchase-order/transfer-order information. To open the **All voyages** page, go to **Landed cost \> Voyages \>All voyages**. This page shows a list of current voyages and provides Action Pane actions to create, delete, and work with listed voyages. Select any listed voyage to see its details.
 
-On the **Lines** the shipping containers, folios and items attached to the voyage are visible and available for review. Additionally, the price and quantity of the items on the voyage are visible within the lines section of the voyage form.
+The **Voyage lines** FastTab of a voyage relates to the voyage details and costing information that applies at a voyage level.
 
-To open the **All voyages** page, go to **Landed cost \> Voyages \>All voyages**.
+On the **Voyage lines** FastTab for each voyage, the shipping containers, folios and items attached to the voyage are visible and available for review. The price and quantity of the items on the voyage are also visible here. You can view any listed shipping container or folio by selecting the relevant link.
 
-Shipping containers and folios can be viewed by selecting the shipping container or folio hyperlink listed on each item line within the lines view of the voyage.
-
-- The actions (in the functions group on the manage action pane) enables the user to find auto costs, aggregate costs, accrue costs, create arrival journals and change journey templates.
+- The actions (in the functions group on the manage action pane) enable you to find auto costs, aggregate costs, accrue costs, create arrival journals and change journey templates.
 - The Costs Inquiry Action (in the Inquiries group on the general action pane), shows all the import costs for all cost levels and can be broken down into a per item cost view. This same form is available from the Inquiries on the purchase order, folio, and shipping container levels.
   - To view click on the general action pain, under inquiries, select Costs Inquiry.
   - All import costs for this cost area are listed. The costs can be broken down to the per item ID level for auto costs, depending upon the dimensions display setup.
   - Click on the view action to change the way this form is viewed.
   - Tick the cost areas that shipment costs must be grouped by on the Shipment costs form.
 
-A voyage is typically one vessel, however depending on your own practices and procedures it could be one vendor or one purchase order, there really is no limitation for its use.
+A voyage typically represents a vessel but, depending on your own practices and procedures, it could be a vendor, a purchase order, or some other item that makes sense for your organization.
 
 > [!NOTE]
 > Shipping containers and folios link to a voyage and purchase lines link to a shipping container or should shipping containers and folios be switched off they can be linked directly to a voyage. In addition, costs entered here are apportioned to all attached purchase lines.
 
-### Header view
+## The Header view
 
-#### General
+To open the **Header** view, open a voyage and then select the Header tab at the top-right part of the voyage heading.
+
+### The General FastTab of the Header view
+
+The following table describes the settings available on the **General** FastTab of the **Header** view of a voyage.
 
 | **Setting** | **Description** |
 | --- | --- |
-| **Voyage** | Voyage number |
+| **Voyage** | Enter the voyage or flight number |
+| **Booking reference** | <!-- KFM: Description needed --> |
 | **Vessel** | The vessel is selected or entered in this field. Even though it is a drop-down field it allows free text within it. If the vessel is not listed in the drop-down and the user must enter free text for the vessel ID, it does not update the main table for future selection. |
-| **Voyage** | The voyage/flight number should be specified here. |
-| **Master air waybill** | Master air waybill number, you can specify this here if the shipment is by air. |
-| **House air waybill** | House air waybill or bill of lading can be specified against the shipping container. |
-| **Description** | This is an optional field and can be used to describe the voyage for simple recognition. There is no right or wrong for this field and no suggestion can be made for its use as it is different per company. |
-| **Status** | Options include created, in transit, documents received, and costed. There is no logic to this field and updating is only via the posting action. The costed option means that an invoice for the stock and all shipment costs has been received. Without an invoice for a shipment cost will not allow a shipment to get the status costed. |
+| **External voyage ID** | <!-- KFM: Description needed --> |
+| **Master air waybill/Bill of lading** | Enter the master air waybill or bill of lading number. You can specify this when shipping by air. |
+| **House air waybill/Bill of lading** | Enter the house air waybill or bill of lading to be specified against the shipping container. |
+| **Rental** | <!-- KFM: Description needed --> |
+| **Description** | Enter a description of the voyage to make it easier to recognize. |
+| **Voyage status** | Shows the status of the voyage. Values include *Created*, *In transit*, *Documents received*, and *Costed*. This field isn't calculated based on logic and is only updated via the posting action. The *Costed* value means that an invoice for the stock and all voyage costs have been received. Without an invoice, a voyage can't get the status *Costed*. |
+| **Purchase order status** | <!-- KFM: Description needed --> |
+| **Documents received** | <!-- KFM: Description needed --> |
 | **Shipping company** | Select the shipping company for this voyage, this can be used to determine auto-costs |
-| **Measurement** | The measurement can be selected or automatically updated depending on the parameter setting. |
-| **Measurement unit** | Unit of measure relating to the measurement |
-| **Number of pallets** | The number of cartons is automatically updated if the parameter is selected. |
+| **Name** | <!-- KFM: Description needed --> |
+| **Measurement** | The measurement can be selected or automatically updated depending on the parameter setting. <!-- KFM: More info needed. Measurement of what? --> |
+| **Measurement unit** | Unit of measure relating to the **Measurement**. |
+| **Number of pallets** | The number of cartons is automatically updated if the parameter is selected. <!-- KFM: This doesn't seem like the right description. --> |
 
-#### Delivery
+### The Delivery FastTab of the Header view
 
-| **Setting** | **Description** |
-| --- | --- |
-| **Created date** | The date that the voyage record is created. |
-| **Ex-factory date** | This date selects the earliest ex-factory from the purchase orders that are linked to the voyage. The ex-factory date field is available from the purchase order header and is set up for update using the tracking control feature. |
-| **Voyage date** | The voyage date is an estimated date that the plane or vessel leaves the point of origin. |
-| **Departure date** | The departure date is normally the date the plane or vessel actually leaves the overseas port. The shipment date and departure date do not have to be the same date ~~.~~ This date is informational only and is not used to estimate the expected delivery date. The tracking control feature is used to estimate the expected delivery date and this field can be set up to populate automatically from the tracking control feature. |
-| **Into store date** | This date selects the earliest into store date from the purchase orders that are linked to the voyage. |
-| **Estimated delivery date** | This is normally the date that the goods are due to arrive in the warehouse. This date is informational only and is not used in master planning for goods. The expected delivery date on the purchase order line is used for master planning for goods on a voyage and is updated using the tracking control feature. This field can be set up to populate by the tracking control feature. |
-| **Actual delivery date** | This date selects the earliest delivery date from the goods that are linked to the voyage. |
-| **Original documents received** | Optionally, update the date original documents were received |
-| **Broker advised** | Optionally, update the date broker was advised |
-| **Original bill of lading sent** | Optionally, update the date original Bill of Lading send |
-| **Goods released** | Optionally, update the date goods were released from customs. |
-| **Customer appointment** | Optionally, update the customer appointment date |
-| **Delivered at warehouse** | Optionally, update the date goods were delivered to the warehouse |
-| **Verification date** | Optionally, update the verification date |
-| **Delivery instructions** | Optionally, update the date delivery instructions |
-| **Mode of delivery** | This field serves two purposes, it provides information regarding the method of delivery of the voyage and cost selection of auto costs associated with the type of transit of the goods |
-| **From port** | The port the ship departs from. |
-| **To port** | The port the ship arrives at. It is possible for the shipping containers to have different ports because the ship may stop at multiple ports. By verifying the to port at the shipping container level, it will provide an accurate port detail for each shipping container on a voyage. It is the combination of the shipping container type and the to and from port of the shipping container that identifies the auto cost associated with freight for the goods. |
-| **Local forwarder** | This is for informational purposes; the local forwarder should be selectable from the vendor table. |
-| **Local transport date** | Store the date the local transport is booked for. This can assist the warehouse in their planning. |
-| **Local transport time** | Store the time slot, again this can assist the warehouse in their planning. |
-| **Journey template** | The journey template specified for the voyage. The journey template is what is used to populate the to and from port of the shipping container and voyage, which then assists with identifying the auto costs associated with the voyage. |
-
-#### Other
+The following table describes the settings available on the **Delivery** FastTab of the **Header** view of a voyage.
 
 | **Setting** | **Description** |
 | --- | --- |
-| **Remarks** | Additional information relating to the container |
-| **Valuation date** | This date selects the earliest ex-factory from the purchase orders that are linked to the voyage. |
+| **Created date and time** | The date and time that the voyage record was created. |
+| **Ex-factory date** | This date selects the earliest ex-factory date from the purchase orders that are linked to the voyage. The **Ex-factory date** field is available from the purchase order header and is updated using the tracking control feature. |
+| **Ship date** | The estimated date that the plane or vessel leaves the point of origin. |
+| **Departure date** | The departure date is usually the date the plane or vessel actually leaves the overseas port. The **Ship date** and **Departure date** do not have to be the same. This date is informational only and is not used to estimate the expected delivery date. The tracking control feature is used to estimate the expected delivery date and this field can be set up to be populated automatically by the tracking control feature. |
+| **In to store date** | This date selects the earliest in to store date from the purchase orders that are linked to the voyage. <!-- KFM: What does "in to store date" mean? -->|
+| **Estimated delivery date** | This is usually the date that the goods are due to arrive in the warehouse. This date is informational only and is not used in master planning for goods. The expected delivery date on the purchase order line is used for master planning for goods on a voyage and is updated using the tracking control feature. This field can be set up to be populated by the tracking control feature. |
+| **Actual delivery date** | The earliest delivery date based on the goods that are linked to the voyage. |
+| **ETA at shipping port** | <!-- KFM: Description needed --> |
+| **Original documents received** | Enter the date original documents were received. |
+| **Broker advised** | Enter the date broker was advised. |
+| **Original bill of lading sent** | Enter the date that the original Bill of Lading was sent. |
+| **Goods released** | Enter the date goods were released from customs. |
+| **Customer appointment** | Enter the customer appointment date. <!-- KFM: What does this mean? --> |
+| **Delivered at warehouse** | Enter the date goods were delivered to the warehouse. |
+| **Verification date** | Enter the verification date. <!-- KFM: What does this mean? --> |
+| **Delivery instructions** | Enter the delivery instructions. <!-- KFM: This is a date field. What does this mean? --> |
+| **Mode of delivery** | This field serves two purposes. It provides information regarding the method by which the voyage is delivered and the cost selection of auto costs associated with that delivery method. |
+| **From port** | The shipping port the voyage departs from. |
+| **To port** | The shipping port the voyage arrives at. It is possible for the shipping containers to have different ports because the ship may stop at multiple ports. By verifying the **To port** at the shipping container level, it will provide an accurate port detail for each shipping container on a voyage. The auto cost associated with the freight is determined based on the combination of the shipping container type, the **To port** and the **From port**. |
+| **Local forwarder** | This is for informational purposes. The local forwarder should be selectable from the vendor table. |
+| **Local transport date** | Stores the date the local transport is booked for. This can assist the warehouse in their planning. |
+| **Local transport time** | Stores the time slot the local transport is booked for. This can assist the warehouse in their planning. |
+| **Journey template** | The journey template specified for the voyage. The journey template is used to populate the to and from port of the shipping container and voyage, which then assists with identifying the auto costs associated with the voyage. |
 
-#### Action descriptions
+### The Other FastTab of the Header view
+
+The following table describes the settings available on the **Other** FastTab of the **Header** view of a voyage.
+
+| **Setting** | **Description** |
+| --- | --- |
+| **Remarks** | Enter additional information relating to the voyage. |
+| **Valuation date** | Select the earliest ex-factory from the purchase orders that are linked to the voyage. <!-- KFM: What is an "ex-factory"? Is this really the right description? -->|
+| **Pending voyage** | <!-- KFM: Description needed --> |
+| **Renaming shipping containers** | <!-- KFM: Description needed --> |
+
+## Action Pane commands
+
+The Action Pane of the **Voyages** page provides actions for working with selected voyage. 
+
+### Commands directly on the Action Pane
+
+The Action Pane includes both tabs, which open to show a collection of related actions, and buttons, each of which executes a single action. The following table describes the buttons that are directly on the Action Pane.
 
 | **Action** | **Description** |
 | --- | --- |
-| **New** | Create a voyage. The process of voyage creation will be outlined further in the scenarios documentation. |
-| **Delete** | Delete a voyage. Only a voyage that is in the confirmed status can be deleted. Once a voyage begins the sailing process and processes goods in transit, it can no longer be deleted. |
-| **Voyage costs** | View/Add voyage costs to all goods within the voyage. When voyage costs are manually added to the voyage, they are automatically added to the costs inquiry screen and apportioned across to each good according to the method specified in the voyage costs form. |
+| **New** | Create a new voyage. <!-- KFM: Link to scenario --> |
+| **Delete** | Delete the current voyage. Only voyages that have a **Voyage status** of *Confirmed* can be deleted. Once a voyage begins the sailing process and processes goods in transit, it can no longer be deleted. <!-- KFM: "Begins the sailing process" = "leaves port"? --> |
+| **Voyage editor** | <!-- KFM: Description needed --> |
+| **Voyage costs** | Opens a page where you can view and add voyage costs to all goods within the voyage. When voyage costs are manually added to the voyage, they are automatically added to the costs inquiry screen and apportioned across to each good according to the method specified in the voyage costs form. |
 
-#### Manage
+### The Manage tab of the Action Pane
+
+The following table describes the actions available on the **Manage** tab of the Action Pane.
 
 | **Action** | **Description** |
 | --- | --- |
@@ -132,7 +155,7 @@ A voyage is typically one vessel, however depending on your own practices and pr
 | **Aggregate costs** | This is used to move costs from the shipping container level to the voyage level. A typical example is in a shared services/shipping scenario where multiple entities are sharing a shipping container/carton space. Assume the voyage has a 40&#39; shipping container and a 20&#39; shipping container, the apportionment method is volume. The goods/entities that are sharing or using the space in the 20&#39; shipping container may be being penalized. To fairly distribute some organizations may want to transfer the costs to the voyage and distribute |
 | **Change journey template** | To change a journey template, it is necessary to choose this option. It may be necessary to _find auto costs_ or manually add costs once again as the voyage shipment costs will be deleted |
 
-#### General
+### General
 
 | **Action** | **Description** |
 | --- | --- |
@@ -143,9 +166,12 @@ A voyage is typically one vessel, however depending on your own practices and pr
 | **Costs inquiry** | It is possible to view all the costs of a voyage including shipping container/folio/purchase order using the Inquiry form. The exact view of the form can be adjusted using the view action.View any of the levels + item and cost type code on the Inquiry form are shown Only those cost type codes that directly relate to inventory transactions will show in this cost inquiries form. Removing these will adjust the inquiry form by grouping costs together, this can be useful if using sizes and colors. Change the dimensions that can be seen on the Inquiry costs form.The costs form only shows cost type codes where the Debit entry on the posting tab is set to Item. |
 | **Goods in transit orders** | It is possible to open the Goods in Transit form directly from the voyage. The form will display the Goods in Transit records for the selected voyage only. |
 
-### Line view
+## The Lines view
 
-#### Field descriptions
+To open the **Lines** view, open a voyage and then select the **Lines** tab at the top-right part of the voyage heading.
+
+
+### Field descriptions
 
 | **Setting** | **Description** |
 | --- | --- |
