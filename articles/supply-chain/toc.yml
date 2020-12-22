@@ -441,7 +441,7 @@
           href: asset-management/controlling-and-reporting/maintenance-status.md
       - name: Asset management from the mobile app
         items: 
-        - name: Set up the Asset management mobile workspace for the Finance and Operations (Dynamics 365) mobile app
+        - name: Set up the Asset management mobile workspace
           href: asset-management/set-up-asset-management-mobile.md
         - name: Use the Asset management mobile workspace
           href: asset-management/asset-management-mobile-workspace.md

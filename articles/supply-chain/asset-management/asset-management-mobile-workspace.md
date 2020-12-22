@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Asset management mobile workspace
+title: Use the asset management mobile workspace
 
 description: This topic provides information about the Asset management mobile workspace.
 author: josaw1 
@@ -31,7 +31,7 @@ ms.search.validFrom: 2019-08-31
 
 ---
 
-# Asset management mobile workspace
+# Use the asset management mobile workspace
 
 [!include [banner](../../includes/banner.md)]
 
