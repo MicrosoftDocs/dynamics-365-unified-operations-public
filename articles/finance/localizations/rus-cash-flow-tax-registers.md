@@ -1,6 +1,7 @@
 ---
-title: 
-description: 
+# required metadata
+title: Cash flow tax registers
+description: This topic provides information about cash flow tax registers.
 ms.date: 12/22/2020
 ms.topic: article
 ms.service: dynamics365-financials
