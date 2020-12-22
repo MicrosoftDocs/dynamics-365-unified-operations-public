@@ -57,6 +57,9 @@ A date value that represents the date to format.
 
 The format of the output string.
 
+> [!NOTE]
+> Note that format string is case sensitive when you use either standard or custom format. For example, the [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) “d” format specifier return the date by using the short date pattern while the standard “D” format specifier return the date by using the long date pattern. In addition to this, the [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) “M” format specifier returns the month from 1 through 12 while the custom  “m” format specifier returns the minute from 0 through 59.
+
 `culture`: *String*
 
 The culture to use for formatting.
