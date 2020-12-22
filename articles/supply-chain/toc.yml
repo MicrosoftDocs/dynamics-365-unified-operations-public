@@ -439,10 +439,14 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
+      - name: Asset management from the mobile app
+        items: 
+        - name: Set up the Asset management mobile workspace for the Finance and Operations (Dynamics 365) mobile app
+          href: asset-management/controlling-and-reporting/cost-and-date-control.md
+        - name: Use the Asset management mobile workspace
+          href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
         href: asset-management/asset-management-guides-integration.md
-      - name: Asset management mobile workspace
-        href: asset-management/asset-management-mobile-workspace.md
     - name: Data management
       items:
       - name: Target entities
