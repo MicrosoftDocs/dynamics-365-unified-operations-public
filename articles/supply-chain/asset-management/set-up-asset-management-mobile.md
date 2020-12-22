@@ -53,7 +53,7 @@ To make asset management features available on the Finance and Operations (Dynam
 
 1. In Supply Chain Management, go to open the **Settings** menu (select the gear icon in upper-right corner) and then select **Mobile app** from the menu.
 
-1. The **Manage mobile app** dialog box opens. Find the **Asset Management** workspace. If it shows the text "In metadata - not published" then it isn't yet published. If it shows "In metadata - published", then it's already published and you can skip the rest of this procedure.
+1. The **Manage mobile app** dialog box opens. Find the **Asset Management** workspace. If it shows the text "In metadata - not published", then it isn't yet published. If it shows "In metadata - published", then it's already published and you can skip the rest of this procedure.
 
     ![Mobile workspaces](media/mobile-workspaces.png "Mobile workspaces")
 
@@ -67,7 +67,7 @@ To install and set up the Finance and Operations (Dynamics 365) app on a mobile 
     - [For Android devices](https://go.microsoft.com/fwlink/?linkid=850662)
     - [For iOS devices](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Open the Finance and Operations (Dynamics 365) app. You should see the sign in page. In the **Sign in** field, enter your Supply Chain Management URL (or select a recent URL from the **Recent environments** list) and then tap **Connect**.
+1. Open the Finance and Operations (Dynamics 365) app. You should see the sign-in page. In the **Sign in** field, enter your Supply Chain Management URL (or select a recent URL from the **Recent environments** list) and then tap **Connect**.
 
     ![Select or enter your Supply Chain Management URL](media/mobile-app-sign-in.png "Select or enter your Supply Chain Management URL")
 
