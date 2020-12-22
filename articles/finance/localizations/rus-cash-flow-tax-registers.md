@@ -6,6 +6,7 @@ ms.date: 12/22/2020
 ms.topic: article
 ms.service: dynamics365-financials
 author: akroshkina
+ms.author: akroshkina
 manager: anayash
 ---
 
