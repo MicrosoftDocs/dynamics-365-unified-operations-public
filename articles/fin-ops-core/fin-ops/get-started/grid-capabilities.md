@@ -177,7 +177,6 @@ This section maintains a list of known issues for the new grid control.
 -  [KB 4582758] Records are blurry when you change zoom from 100 to any other percentage
 -  [KB 4592012] Unexpected client error in IE11 when pasting multiple lines from Excel
     -  Microsoft is not pursuing a fix for this issue
--  [KB 4574584] Expense attachment preview not available when hovering over the receipt icon
 
 ### Fixed as part of 10.0.16
 
@@ -186,6 +185,8 @@ This section maintains a list of known issues for the new grid control.
 -  [KB 4592104] Unable to edit records after clicking "Fix issue" and moving to a different row without fixing the validation issue
 -  [KB 4594449] "Never" and "Clear" buttons missing inside the date picker 
 -  [KB 4594448] Entering time is treated differently with the new grid
+-  [KB 4600059] Unexpected client error with email throttling
+-  [KB 4574584] Expense attachment preview not available when hovering over the receipt icon
 
 ### Fixed as part of 10.0.15    
 
