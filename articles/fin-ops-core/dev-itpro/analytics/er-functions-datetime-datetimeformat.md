@@ -58,7 +58,7 @@ A date/time value that represents the date and time to format.
 The format of the output string.
 
 > [!NOTE]
-> Note that the format string is case sensitive when you use either standard or custom format. For example, the [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) “d” format specifier returns the date by using the short date pattern while the standard “D” format specifier returns the date by using the long date pattern. In addition to this, the [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) “M” format specifier returns the month from 1 through 12 while the custom  “m” format specifier returns the minute from 0 through 59.
+> The format string is case-sensitive when you use either a standard format or a custom format. For example, the [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) "d" format specifier returns the date by using the short date pattern, whereas the standard "D" format specifier returns the date by using the long date pattern. Additionally, the [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) "M" format specifier returns the month from 1 through 12, whereas the custom "m" format specifier returns the minute from 0 through 59.
 
 `culture`: *String*
 
@@ -72,7 +72,7 @@ The resulting string value.
 
 ## Usage notes
 
-When the culture isn't defined as an argument of the called function, the value of `culture` is defined by the calling context. For example, if the `DATETIMEFORMAT` function is called by using syntax 1 in an Electronic reporting (ER) format for a **FILE** element that is configured to use the German culture, the conversion will be done by using the German culture. The default `culture` value is **EN-US**.
+If the culture isn't defined as an argument of the called function, the value of `culture` is defined by the calling context. For example, if the `DATETIMEFORMAT` function is called by using syntax 1 in an Electronic reporting (ER) format for a **FILE** element that is configured to use the German culture, the conversion will be done by using the German culture. The default `culture` value is **EN-US**.
 
 When the `DATETIMEFORMAT` function converts a given date/time value, it considers the time zone setting of the application user who is running the ER format that the function is called in the context of.
 
@@ -86,7 +86,7 @@ When the `DATETIMEFORMAT` function converts a given date/time value, it consider
 
 ## Example 3
 
-`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` returns the string value **2019-11-12T08:00:00.0000000-08:00** when it's called during a process that was initiated by an application user who has the time zone value **(GMT-08:00) Pacific Time (US & Canada)** in the **Language and country/region preferences** section.
+`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` returns the string value **2019-11-12T08:00:00.0000000-08:00** when the function is called during a process that was initiated by an application user who has the time zone value **(GMT-08:00) Pacific Time (US & Canada)** in the **Language and country/region preferences** section.
 
 ## Additional resources
 
