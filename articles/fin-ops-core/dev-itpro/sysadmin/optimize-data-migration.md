@@ -31,39 +31,32 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-Data migration is a key component towards a successful Go-Live. One of the main concerns some customers have is the speed in which the data can be migrated, especially if there are vast amounts of data and a small cutover window.
+Data migration is a key component towards a successful Go-Live. One of the main concerns some customers have is the speed in which the data can be migrated, especially if there are vast amounts of data and a small cut-over window. The Data Migration Framework is also used for moving data as part of business requirements and operations.
 
-The information below represents a set of steps/actions that can be taken in order to optimize the performance of data migration. 
+The information below represents a set of steps and actions that can be taken in order to optimize the performance of data migration. 
 
 > [!NOTE]
-> Testing results on a tier 1 environment should not be compared or extrapolated to performance on a tier 2+ environment.
+> Testing results on a tier 1 environment should not be compared or extrapolated to performance on a tier 2+ sandbox environment.
 
-The standard entities have not all been optimized for data migration, for example some have been optimized for OData integration, therefore if the required entity cannot be optimized to meet the performance requirements it is recommended that a new optimized entity be created. A developer can accelerate this process by duplicating an existing entity.
+The standard entities have not all been optimized for data migration. For example some have been optimized for OData integration and therefore if the required entity cannot be optimized to meet the performance requirements, it is recommended that a new optimized entity is created. A developer can accelerate this process by duplicating an existing entity.
 
-Begin the optimization phase by using a subset of the data, for example, if it is necessary to import 1,000,000 records, consider starting with 1,000 then increasing to 10,000 and then 100,000.
+Begin the optimization phase by using a subset of the data. For example, if it is necessary to import million records, consider starting with thousand then increasing to ten thousand and then hundred thousand.
 
-Once you have identified the entity, you will test first:
-
-* Disable Change tracking
-* Enable Set-based processing
-* Create data migration batch group
-* Priority-based batch scheduling
-* Import in batch
-* Clean staging tables
-* Defragmentation of indexes
-* Update statistics
-* Clean the data
+Once you have identified the entities you will use then you will want to go through the following sections to explore opportunities for optimizations. 
 
 ## Disable Change Tracking
 
-Change tracking can be enabled and disabled from the list of entities:
+Change tracking can be [enabled and disabled](../data-entities/entity-change-track.md) from the list of entities. 
+
 Data management > Data entities > Change tracking > Disable Change Tracking
 
 ## Enable Set-based processing
 
-Verify the entity supports set-based processing from the list of entities:
+Verify the entity supports set-based processing from the list of entities. 
+
 Data management > Data entities > Set-based processing (column in grid)
 
+See example for [how it can be done with General Journal entity](../data-entities/tips-tricks-import-general-journal-entity.md).
 Not all entities support set-based processing and you may receive a message such as "Customer definitions" (CustCustomerBaseEntity).
 
 If it is necessary to create an entity that allows set-based processing, some key considerations are:
@@ -77,7 +70,7 @@ If it is necessary to create an entity that allows set-based processing, some ke
 
 ## Create data migration batch group
 
-During cutover, data migration is a key step when normally little to no other activity is going on. Therefore it is recommended that a batch group is created with all or at least most AOS nodes are assigned.
+During cut-over, try execute the data migration while there is little to no other activity is going on. It can help to configure and use a batch group with all or at least most AOS nodes assigned.
 
 System administration > Setup > Batch group
 
@@ -87,7 +80,7 @@ In Platform update 31, we introduced is a new feature that will optimize the way
 
 ## Maximum batch threads
 
-You can configure the maximum number of threads that can be used for multithreading purposes on each AOS. This value should be changed cautiously, if the number is too high it can have negative performance implications for the environment. The default value is currently 4. If necessary, the value can be changed to 8. It should not be configured above 8 without significant performance testing.
+You can configure the maximum number of batch threads per AOS to better utilize parallelism and multithreading. This value should be changed cautiously. If the number is too high it can have negative performance implications. The default value is currently 4. If necessary, the value can be changed to 8. It should not be configured above 8 without significant performance testing.
 
 System administration > Setup > Server configuration
 
@@ -97,13 +90,13 @@ Whenever running an import job, ensure that it is run in batch. Otherwise it wil
 
 ## Clean staging tables
 
-It is recommended to clean up the staging tables. This optimization can be achieved by scheduling the Job history cleanup job (available in Platform update 29 and later). After enabling the feature "Execution history cleanup" via Feature management, you will be able to access it from:
+It is recommended to clean up the staging tables. This optimization can be achieved by scheduling the [Job history cleanup job](batch-history-cleanup.md) (available in Platform update 29 and later). After enabling the feature "Execution history cleanup" via Feature management, you will be able to access it from:
 
 Data management > Job history cleanup
 
 ## Defragmentation of indexes
 
-Review the [configuration of the index defragmentation job](batch-job-sql-defragmentation.md). It is recommended that this runs daily, though not when a data migration job is executing. Review the parameters to ensure the job captures the tables/indexes that are being changed via the data migration job. 
+Review the [configuration of the index defragmentation job](batch-job-sql-defragmentation.md). It is recommended that this runs daily, though not when a data migration job is executing. Review the parameters to ensure the job captures the tables and indexes that are being changed via the data migration job. 
 
 ## Update statistics
 
@@ -120,6 +113,7 @@ The following set of configurations can impact performance of data migration and
 ### Configure entity execution parameters
 
 You can modify the execution parameters for all or specific entities here:
+
 Data management > Framework parameters > Entity settings > Configure entity execution parameters
 
 #### Import threshold record count
@@ -136,6 +130,7 @@ Example: "Custom sequence is defined for the entity 'Customers V3', more than on
 ### Validations
 
 Validation logic for record inserts or updates may have been incorporated into the system, and/or there may be validation on individual fields. If the validation logic is taking too long and if the data migration process is mature enough to confidently disable these options for cutover this should be considered. You will find these settings on each entity under: 
+
 Data management > Data entities > Entity structure
 
 #### Run business validations
