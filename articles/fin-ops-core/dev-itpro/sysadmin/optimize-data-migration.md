@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.13
 
 Data migration is a key component towards a successful Go-Live. One of the main concerns some customers have is the speed in which the data can be migrated, especially if there are vast amounts of data and a small cutover window.
 
-The information below represents a set of steps/actions that can be taken in order to optimise the performance of data migration. 
+The information below represents a set of steps/actions that can be taken in order to optimize the performance of data migration. 
 
 > [!NOTE]
 > Testing results on a tier 1 environment should not be compared or extrapolated to performance on a tier 2+ environment.
@@ -86,7 +86,7 @@ In Platform update 31 we introduced is a new feature which will optimize the way
 
 ## Maximum batch threads
 
-You can configure the maximum number of threads that can be used for multithreading purposes on each AOS. This value should be changed cautiously, if the number is too high it can have negative performance implications for the environment. The default value is currently 4. If necessary this can be raised to 8. It should not be raised above 8 without significate performance testing to ensure it does not impact the environment.
+You can configure the maximum number of threads that can be used for multithreading purposes on each AOS. This value should be changed cautiously, if the number is too high it can have negative performance implications for the environment. The default value is currently 4. If necessary this can be raised to 8. It should not be raised above 8 without significant performance testing to ensure it does not impact the environment.
 
 System administration > Setup > Server configuration
 
@@ -110,7 +110,7 @@ Prior to running a data migration job for a large volume of data consider updati
 
 ## Clean the data
 
-Rectify the errors related to data quality to reduce the code churn for validations and error processing. With a high volume of invalid or incisistent set of data, the time spent on validations and reporting errors will add to the total time spent doing the migration.
+Rectify the errors related to data quality to reduce the code churn for validations and error processing. With a high volume of invalid or inconsistent set of data, the time spent on validations and reporting errors will add to the total time spent doing the migration.
 
 ## Configurations to test during data migration test runs
 
@@ -118,7 +118,7 @@ The following set of configurations can impact performance of data migration and
 
 ### Configure entity execution parameters
 
-You can modify the execution parameters for all or specific entites here:
+You can modify the execution parameters for all or specific entities here:
 Data management > Framework parameters > Entity settings > Configure entity execution parameters
 
 #### Import threshold record count
@@ -172,7 +172,7 @@ Example of information to collect for each entity:
 |------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
 | (Name of entity being tested) | (Number of records being imported) | (Source format of data to be imported) | (Yes/No) | (Yes/No) | (Number of records) | (Number of tasks) | (Yes/No) | (Yes/No) | (Yes/No) (Potential field list) | (Time required for import to complete in order to achieve cutover window) | (Actual time taken to import records) |
 
-There are additional areas where performance can be optimized, for example analysing the specific queries and query plans, however those processes are covered in other articles and are not intended for this article.
+There are additional areas where performance can be optimized, for example analyzing the specific queries and query plans, however those processes are covered in other articles and are not intended for this article.
 
 If you would like to read additional steps for performance troubleshooting and optimization the following articles are a good starting point:
 
