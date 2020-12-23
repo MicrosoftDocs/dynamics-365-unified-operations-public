@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Release 10.0.17
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Shipping containers are used to group goods together that either are physically grouped together or are required to share costs only across those goods (normally because they are physically together).
+Shipping containers are used to group goods that either are physically grouped together or are required to share costs only across those goods (normally because they are physically together).
 
-The format of the shipping **container form** is very similar to the format of the **voyage form**. Shipping container and costing information can be found on the top half of the form. Folios, items and purchase orders or transfer orders attached to the container are found on the lines section of the form.
+To view and process goods through the shipping container form, go to **Landed cost \> Shipping containers \> All shipping containers**. This opens a list of available shipping containers. Select a container to view its details.
 
-_To view and process goods through the shipping container form, navigate to__Landed cost \> Containers \> All Containers._
+On the shipping container details page, shipping container and costing information is shown on the top half of the page. Folios, items and purchase orders or transfer orders attached to the container are found on the lines section of the page.
 
 ## Header view
 
@@ -135,4 +135,4 @@ _To view and process goods through the shipping container form, navigate to__Lan
 | **Remove** | Remove purchase order line from the shipping container. Only lines that have not been invoiced can be removed from the shipping container and voyage |
 | **Transactions** | View inventory transactions for the selected line. **Note** : Where goods in transit is used, the original order and the goods in transit orders will also be displayed. This is where users can see the estimated and actual costs of the goods update as the overhead costs are invoiced for a voyage. |
 | **Display dimensions** | Use this form to select the inventory dimensions that appear for the transactions that you view. If you clear check boxes, the transactions appear with fewer inventory dimensions, and therefore with less detail. |
-| **Refresh** | Refresh information relating to the line amount, weight, or volume of the purchase order line |
+| **Refresh** | Refresh information relating to the line amount, weight, or volume of the purchase order line. |
