@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimizing Data Migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management
-description: The topic provides an overview of how to optimize data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+description: The article provides an overview of how to optimize data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: skaue-ms
 manager: AnnBe
 ms.date: 12/21/2020
@@ -38,11 +38,12 @@ The information below represents a set of steps/actions that can be taken in ord
 > [!NOTE]
 > Testing results on a tier 1 environment should not be compared or extrapolated to performance on a tier 2+ environment.
 
-The standard entities have not all been optimized for data migration, for example some have been optimized for OData integration, therefore if the required entity cannot be optimized to meet the performance requirements it is recommended that a new optimized entity be created. To accelerate this process a developer can duplicate an existing entity.
+The standard entities have not all been optimized for data migration, for example some have been optimized for OData integration, therefore if the required entity cannot be optimized to meet the performance requirements it is recommended that a new optimized entity be created. A developer can accelerate this process by duplicating an existing entity.
 
 Begin the optimization phase by using a subset of the data, for example, if it is necessary to import 1,000,000 records, consider starting with 1,000 then increasing to 10,000 and then 100,000.
 
-Once you have identified the entity you will test first:
+Once you have identified the entity, you will test first:
+
 * Disable Change tracking
 * Enable Set-based processing
 * Create data migration batch group
@@ -76,37 +77,37 @@ If it is necessary to create an entity that allows set-based processing, some ke
 
 ## Create data migration batch group
 
-During cutover data migration is a key step during which time little to no other activity is likely to be going on, therefore it is recommended that a batch group is created with all or at least n-1 AOS nodes are assigned.
+During cutover, data migration is a key step when normally little to no other activity is going on. Therefore it is recommended that a batch group is created with all or at least most AOS nodes are assigned.
 
 System administration > Setup > Batch group
 
 ## Priority-based batch scheduling
 
-In Platform update 31 we introduced is a new feature which will optimize the way batch jobs are executed, if contention is identified in the batch framework consider enabling this preview feature named [Priority-based batch scheduling](priority-based-batch-scheduling.md).
+In Platform update 31, we introduced is a new feature that will optimize the way batch jobs are executed. Consider enabling [Priority-based batch scheduling](priority-based-batch-scheduling.md) if contention is identified in the batch framework.
 
 ## Maximum batch threads
 
-You can configure the maximum number of threads that can be used for multithreading purposes on each AOS. This value should be changed cautiously, if the number is too high it can have negative performance implications for the environment. The default value is currently 4. If necessary this can be raised to 8. It should not be raised above 8 without significant performance testing to ensure it does not impact the environment.
+You can configure the maximum number of threads that can be used for multithreading purposes on each AOS. This value should be changed cautiously, if the number is too high it can have negative performance implications for the environment. The default value is currently 4. If necessary, the value can be changed to 8. It should not be configured above 8 without significant performance testing.
 
 System administration > Setup > Server configuration
 
 ## Import in batch
 
-Whenever running an import job, ensure that it is run in batch, otherwise it will be run using a single thread which will prevent the system from using the majority of these optimization configurations.
+Whenever running an import job, ensure that it is run in batch. Otherwise it will be run using a single thread, which will prevent the system from using the most of these optimization configurations.
 
 ## Clean staging tables
 
-It is recommended to clean up the staging tables. This can be achieved by scheduling the Job history cleanup job (available in Platform update 29 and later). After enabling the feature "Execution history cleanup" via Feature management, you will be able to access it from:
+It is recommended to clean up the staging tables. This optimization can be achieved by scheduling the Job history cleanup job (available in Platform update 29 and later). After enabling the feature "Execution history cleanup" via Feature management, you will be able to access it from:
 
 Data management > Job history cleanup
 
 ## Defragmentation of indexes
 
-Review the [configuration of the index defragmentation job](batch-job-sql-defragmentation.md). It is recommended that this is run daily though not when a data migration job is executing. Review the parameters to ensure the job captures the tables/indexes that are being changed via the data migration job. 
+Review the [configuration of the index defragmentation job](batch-job-sql-defragmentation.md). It is recommended that this runs daily, though not when a data migration job is executing. Review the parameters to ensure the job captures the tables/indexes that are being changed via the data migration job. 
 
 ## Update statistics
 
-Prior to running a data migration job for a large volume of data consider updating the statistics across the associated tables. This is taken care of automatically in production environments. You can run [update statistics for a specific table from LCS](../lifecycle-services/querycookbook.md), or for the whole database using sp_updatestats stored procedure using direct SQL.
+Prior to running a data migration job for a large volume of data, consider updating the statistics across the associated tables. This is automatically taken care of in production environments. You can run [update statistics for a specific table from LCS](../lifecycle-services/querycookbook.md), or in a sandbox environment use sp_updatestats stored procedure through direct SQL.
 
 ## Clean the data
 
@@ -123,11 +124,11 @@ Data management > Framework parameters > Entity settings > Configure entity exec
 
 #### Import threshold record count
 
-This value represent the number of records that will be split and assigned to separate tasks.
+This value configures the number of records that will be split and assigned to separate tasks.
 
 #### Import task count
 
-This values is use to determine how many threads will be used for the data migration job for a specific entity. For example, if the Maximum batch threads is 8 for each server, and there are 4 servers assigned to the data migration batch group, the maximum value for Import task count should be 8 times 4 which is 32.
+This value configures how many threads will be used for the data migration job for a specific entity. For example, if the Maximum batch threads are 8 for each server, and there are 4 servers assigned to the data migration batch group, the maximum value for Import task count should be 8 times 4 which is 32.
 
 If a data entity does not support multithreading, when you attempt to configure the entity, you will see an error message.
 Example: "Custom sequence is defined for the entity 'Customers V3', more than one task is not supported."
