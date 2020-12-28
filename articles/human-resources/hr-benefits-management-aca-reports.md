@@ -108,7 +108,9 @@ For employees assigned to an Affordable Care coverage group, you can change the 
 - **Applicable section 4980H safe harbor**
 
 > [!NOTE]
-> For 2020 ACA reports, you must report both the work and home ZIP Codes in the form 1095-C. These automatically populate in the form based on active locations. If either location was different during any part of the year, you must override the value.
+> For 2020 ACA reports, you must report both the work and home ZIP Codes in the form 1095-C. These automatically populate in the form based on current active locations. If either location was different during any part of the year, you must override the value. The ZIP Code field (Line 17) in the 1095-C report populates only if the Offer of Coverage code contains 1L through 1Q, as follows:<br><br>
+> - 1L, 1M, or 1N: primary residence ZIP code<br>
+> - 1O, 1P, 1Q: primary work ZIP Code
 
 To enter exceptions to any of the Affordable Care coverage group values, follow these steps:
 
