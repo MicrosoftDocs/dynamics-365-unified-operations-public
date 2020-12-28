@@ -93,7 +93,7 @@ Notice that the **Exchange rate** column is set to **91** for all rows.
 
 ## Average exchange rate
 
-This example walks you through the function for calculating the average exchange rate for a bank account.
+This example walks you through the function for calculating the average exchange rate for a bank account. Average rate is calculated for outgoung cash and bank transactions. 
 
 1. Go to **General ledger** \> **Currencies** \> **Currency exchange rates**, and select the **from USD to EUR** line.
 2. Select **Add**, and create the following lines.
@@ -143,6 +143,6 @@ The value **92.0000** for second line was calculated as (100 * 0.91 + 200 * 0.92
 
 The value **92.0000** for third line was calculated as (100 * 0.91 + 200 * 0.92 + 100 * 0.93 - 150 * 0.92)/(100 + 200 + 100 - 150). Three earlier incoming transactions and one earlier outgoing transaction were considered in the formula.
 
-The Average exchange rate calculation method is available for the outgoing bank transaction. It considers posted bank transactions and not-posted bank transactions in the current general journal that were created before considered outgoing bank transaction, for the period that starts on the "from date" that is specified in the dialog box and ends on the date of the outgoing bank transaction. This method calculates the average exchange rate for these transactions as a result of dividing total amount of all earlier transactions in the foreign currency by total amount of all earlier transactions in the accounting currency. The resulting exchange rate is then assigned to outgoing transaction.
+The Average exchange rate calculation method is available for the outgoing bank transaction. It considers posted bank transactions and not-posted bank transactions in the current general journal that were created before considered outgoing bank transaction, for the period that starts on the "from date" that is specified in the dialog box and ends on the date of the outgoing bank transaction. This method calculates the average exchange rate for these transactions as a result of dividing total amount of all earlier transactions in the foreign currency by total amount of all earlier transactions in the accounting currency. The resulting exchange rate is then assigned to outgoing transaction. Note that average exchange rate is calculated by dimension values for dimensions that are activate in the account structure to where cash or bank ledger account belongs to.
 
 The Daily exchange rate and Average exchange rate methods are also available for the petty cash transactions that you enter in the slip journal (**Cash and bank management** \> **Cash transactions** \> **Slip journal**). The same algorithm that is used for the bank transactions is used to calculate the average rate.
