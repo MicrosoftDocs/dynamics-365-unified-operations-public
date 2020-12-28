@@ -76,21 +76,8 @@ Once the parameters and batch details have been established, click **Next** to v
 > [!NOTE]
 > The data subject to archival includes personally identifiable customer information including the name of the cardholder. This data should be handled according to your local regultory requirements.
 
+Upon confirming 
 
-
-
-
-## Prerequisites for SCA support
-
-Support for SCA is provided by the out-of-box [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). This can be implemented by any third-party connector using the payments SDK.
-
-## Setup
-
-Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, see the [e-Commerce section](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) of the Adyen connector topic. 
-
-## Functional experience
-
-When a customer is redirected for SCA, they will be presented with a challenge by their bank, typically within a new browser window or iFrame. After they have been authenticated, they will be redirected back to the checkout session. If the validation fails, they will not be allowed to continue with checkout. 
 
 ## Additional resources
 
