@@ -35,7 +35,7 @@ ms.search.validFrom: 2019-08-31
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information about the Asset management mobile workspace. This workspace lets users view and create maintenance requests and work orders. Users can also view the assigned work order jobs in a calendar or list view. Assets and functional locations can also be viewed and searched for.
+This topic provides information about the **Asset management** mobile workspace. This workspace lets users view and create maintenance requests and work orders. Users can also view the assigned work order jobs in a calendar or list view. Assets and functional locations can also be viewed and searched for.
 
 ## Overview
 
@@ -51,7 +51,7 @@ Specifically, the **Asset management** mobile workspace lets users perform these
 
 ## Prerequisites
 
-Before you can use the Asset management mobile workspace, your admin must set up the required user and worker accounts and also publish the workspace. For details, see [Set up the Asset management mobile workspace](set-up-asset-management-mobile.md).
+Before you can use the **Asset management** mobile workspace, your admin must set up the required user and worker accounts, and publish the workspace. For more information, see [Set up the Asset management mobile workspace](set-up-asset-management-mobile.md).
 
 ## Download and install the mobile app
 
@@ -164,7 +164,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **All maintenance work orders**.
 
-1. Select the work order > work order job you want to add consumtion registrations for.
+1. Select the work order > work order job you want to add consumption registrations for.
     - Alternatively, you can also select **My work order jobs calendar** or **My work order jobs list** on the home page to navigate to the **work order job details** page.
 
 1. Select **Journals** on the **Work order job details** page.
@@ -242,7 +242,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Enter **Name** and **Notes** for the attachment.
 
-1. Select **Choose image** to select a photo from the mobile gallery, or **Take photo** to take a photo.
+1. Select **Choose image** to select a photo from the mobile gallery or **Take photo** to take a photo.
 
 1. Select **Done**.
 
