@@ -202,7 +202,7 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 <td><ul>
 <li><strong>General</strong> – Specify the following information:
 <ul>
-<li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that is set up for credit notes is also used as the code for physical goods return and is used for deviating physical returns versus correction credit notes.</li>
+<li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that is set up for credit notes is also used as the code for physical goods return and is used for deviating physical returns versus correction credit notes. Physical goods returns are reported in Intrastat transfer with the different direction: return of arrival is reported as dispatch and vise a versa.</li>
 <li>The employee who is responsible for preparing Intrastat reports.</li>
 </ul></li>
 <li><strong>Minimum limit</strong> – Specify the settings for updating transactions that are below the threshold:
