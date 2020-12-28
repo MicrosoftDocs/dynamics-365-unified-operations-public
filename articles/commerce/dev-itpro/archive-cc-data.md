@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Strong Customer Authentication (SCA) using the Adyen connector
-description: This topic describes Strong Customer Authentication (SCA) in the storefront checkout.
+title: Archive credit card transaction data
+description: This topic provides an overview for a job that archives transaction data to free up database space.
 author: rubendel
 manager: annbe
-ms.date: 05/21/2020
+ms.date: 12/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -41,7 +41,17 @@ This topic describes a job that can be used to free up database space by archivi
 
 For every credit card authorization, the response returned from the processor is stored in the database as an XML blob. These blobs contain a significant amount of data related to the authorization and over time can grow to take up a significant amount of space in the database. The job described in this article provides a way to archive this transaction data by exporting it to Azure blob storage and deleting the data from the database. 
 
-The parameters for this job are based on the age of transaction in days. Meaning, if the *Minimum transaction age in days*
+The parameters for this job are based on the age of transaction in days. Meaning, if the **Minimum transaction age in days** is set to **365**, then all credit authorization XML data older than 365 days will be subject to archival when the job is run. 
+
+When using this job, it is important to understand that the data cannot be easily restored and transactions subject to linked refund should not be archived. For example, if a merchant's returns policy allows for transactions to be returned to the same card for refund within 2 years, the parameter for the job should be set to 730 days. In this example, if a transaction is returned after 730 days, the XML required to perform a linked refund will not be found, so the customer will need to be refunded via standalone refund to a credit card(non-linked) or to some other payment method such as credit memo or gift card. 
+
+## Data in scope for archival
+
+This job archives data in the `PaymentAuthorization`, `PaymentCaptureToken`, and `PaymentCardToken`fields of `RetailTransactionPaymentTrans` table. 
+
+## Batch job setup
+
+To access the job, navigate to **Retail and commerce** > **Retail and Commerce IT** > **Clean up** > **Archive credit card transaction data**
 
 ## Prerequisites for SCA support
 
