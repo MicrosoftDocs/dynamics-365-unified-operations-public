@@ -274,7 +274,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <p>81</p>
 </td>
 <td width="71%">
-<p>Amount of all purchases of goods, raw materials, and consumables, and related acquisition costs.</p>
+<p>Amount of all purchases of goods, raw materials, and consumables, and related acquisition costs, excluding VAT deductible.</p>
 </td>
 <td width="10%">
 <p>Base</p>
@@ -285,7 +285,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <p>82</p>
 </td>
 <td width="71%">
-<p>Amount of miscellaneous goods and services, regardless of whether they are subject to VAT.</p>
+<p>Amount of miscellaneous goods and services, regardless of whether they are subject to VAT, excluding VAT deductible.</p>
 </td>
 <td width="10%">
 <p>Base</p>
@@ -296,7 +296,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <p>83</p>
 </td>
 <td width="71%">
-<p>Amount of purchases of capital goods, regardless of whether they are subject to VAT.</p>
+<p>Amount of purchases of capital goods, regardless of whether they are subject to VAT, excluding VAT deductible.</p>
 </td>
 <td width="10%">
 <p>Base</p>
@@ -340,7 +340,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <p>85</p>
 </td>
 <td width="71%">
-<p>Amount of credits received, and negative adjustments that are related to other boxes from section III, "Inputs."</p>
+<p>Amount of credits received, and negative adjustments that are related to other boxes from section III, "Inputs.", excluding VAT amount (deductible and not deductible)</p>
 </td>
 <td width="10%">
 <p>Base</p>
