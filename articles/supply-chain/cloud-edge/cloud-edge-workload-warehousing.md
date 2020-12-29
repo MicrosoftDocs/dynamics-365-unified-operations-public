@@ -153,6 +153,10 @@ The following warehouse management functionality isn't currently supported for s
 - Integration with quality management
 - Processing of catch-weight items
 - Processing of negative on-hand inventory
+- Warehouse work processing with custom work types
+- Warehouse work processing using shipment notes
+- Warehouse work processing using cycle counting threshold triggering
+- Warehouse work processing using material handling/warehouse automation
 
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads in a scale unit; not supported on the hub nor on the scale unit workload.
