@@ -150,6 +150,7 @@ The following warehouse management functionality isn't currently supported for s
 - Order-committed flexible warehouse-level dimension reservations
 - Use of *Warehouse location status* functionality (data not getting sync'ed between the deployments)
 - Use of *Location license plate positioning* functionality
+- Use of *Product filters* and *Product filter groups* incl. **Number of days to mix batches**
 - Integration with quality management
 - Processing with catch-weight items
 - Processing with only TMS enabled items
@@ -158,6 +159,7 @@ The following warehouse management functionality isn't currently supported for s
 - Warehouse work processing with shipment notes
 - Warehouse work processing with cycle counting threshold triggering
 - Warehouse work processing with material handling/warehouse automation
+- Use of product master data image (e.g. on at Warehouse management app)
 
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads in a scale unit; not supported on the hub nor on the scale unit workload.
