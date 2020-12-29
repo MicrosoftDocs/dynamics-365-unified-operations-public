@@ -34,7 +34,7 @@ These topics describe the programs, tools, and processes available related to th
 
 ## Programs
 
-[Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md)
+[Microsoft FastTrack](http://aka.ms/D365FastTrackDocs)
 
 ## Tools
 
