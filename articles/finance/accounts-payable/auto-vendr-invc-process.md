@@ -52,7 +52,7 @@ The automation processes can be used to perform these tasks:
 
 As part of a touchless Accounts payable invoicing process, you can have the system automatically submit an imported invoice to the workflow system. The process will run in the background, at a frequency that you specify (either hourly or daily). The capability to automatically submit imported invoices to the workflow system requires that your process begin with an imported invoice. To ensure that the invoice can be processed from start to finish without manual intervention, an automated posting task must be included in the workflow configuration.
 
-'Invoices that are related to purchase orders (POs), and invoices that contain a non-PO procurement category and non-stocked lines, can automatically be submitted to the workflow system. Invoices that are manually entered and invoices that are created via the **Vendor collaboration invoicing** workspace must be manually submitted to the workflow system.
+Invoices that are related to purchase orders (POs), and invoices that contain a non-PO procurement category and non-stocked lines, can automatically be submitted to the workflow system. Invoices that are manually entered and invoices that are created via the **Vendor collaboration invoicing** workspace must be manually submitted to the workflow system.
 
 The automation feature provides a flexible framework that lets you define company-specific rules for submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines.
 
@@ -72,13 +72,14 @@ An easy-to-read view of vendor invoice workflow history is provided. Vendor invo
 
 The **Vendor invoice entry** workspace lets you focus on vendor invoices that didn't make it through the automated process. Tiles on the workspace list information about vendor invoices that weren't successfully submitted to the workflow system, imported, or matched to product receipts. Microsoft Power BI metrics are also provided to give Accounts payable managers insight into the efficiencies of vendor invoice automation.
 
-## Vendor invoice automation - Resume automation processing for multiple invoices
-When an imported invoice isn’t submitted successfully to workflow through the automated process, the system will remove it from further automated processing. An accounts payable clerk can review and edit the invoice before the automated process resubmits it to workflow. When a failure reason can be resolved by the same fix for multiple invoices, you can restart the automated process on the **Resume automated invoice processing** page. 
+## Vendor invoice automation – Resume automation processing for multiple invoices
 
-## Vendor invoice automation - Tracking the Invoice received date
-The **Invoice received date** is the date that the company received the invoice from the vendor. That date provides a starting point for tracking the invoice’s progress through the automation processes. The **Invoice received date** can be included in the imported data for a vendor invoice. For invoices that were created manually, you can specify the date. If **Invoice received date** isn’t entered, the date will default to today’s date.
+When an imported invoice isn't submitted successfully to workflow through the automated process, the system will remove it from further automated processing. An accounts payable clerk can review and edit the invoice before the automated process resubmits it to workflow. When a failure reason can be resolved by the same fix for multiple invoices, you can restart the automated process on the **Resume automated invoice processing** page. 
 
-## Vendor invoice automation - Tracking Imported invoice amount and Imported sales tax amount
-The **Imported invoice amount** and **Imported sales tax amount** for vendor invoices can be provided in the vendor invoices import file. Typically, these values are an invoice that was scanned by an outside provider and included in the import file. As the invoice is processed in Accounts payable, the system calculates values, based on the invoice data. In order to post the invoice, the imported values must match the calculated values, ensuring that the invoice accurately reflects the amount due to the vendor. If your organization allows imported invoices to be submitted to workflow automatically, you can optionally require that the imported totals match the calculated totals before it can be submitted to workflow.
+## Vendor invoice automation – Tracking the Invoice received date value
 
+The **Invoice received date** value indicates the date when the company received the invoice from the vendor. It provides a starting point for tracking the invoice's progress through the automation processes. The **Invoice received date** value can be included in the imported data for a vendor invoice. For invoices that were manually created, you can specify the date. If no **Invoice received date** value is entered, the current date is used by default.
 
+## Vendor invoice automation – Tracking the Imported invoice amount and Imported sales tax amount values
+
+The **Imported invoice amount** and **Imported sales tax amount** values for vendor invoices can be provided in the vendor invoices import file. Typically, these values are from an invoice that was scanned by an outside provider and included in the import file. As the invoice is processed in Accounts payable, the system calculates values, based on the invoice data. The invoice can be posted only if the imported values match the calculated values. Matching values ensure that the invoice accurately reflects the amount that is due to the vendor. If your organization allows imported invoices to be submitted to the workflow system automatically, you can optionally require that the imported totals match the calculated totals before the invoice can be submitted to the workflow system.
