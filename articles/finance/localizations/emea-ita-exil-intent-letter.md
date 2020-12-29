@@ -5,7 +5,7 @@ title: Intent letters - Invoicing usual exporters
 description: This topic provides information about how to set up intent letters and how to use them when you issue invoices.
 author: ilkond
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 12/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -91,7 +91,7 @@ When you create a sales order or a free text invoice for a customer who is categ
 
 ![New sales order](media/emea-ita-exil-intent-new-order.jpg)
 
-The amount of the invoice transaction will be subject to sales tax calculation only if it does not exceed the amount of the intent letter.
+The amount of the invoice transaction will be subject to sales tax calculation only if it doesn't exceed the amount of the intent letter.
 
 The details of the intent letter will be also included in a printable layout of the invoice.
 
