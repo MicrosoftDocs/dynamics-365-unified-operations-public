@@ -151,12 +151,13 @@ The following warehouse management functionality isn't currently supported for s
 - Use of *Warehouse location status* functionality (data not getting sync'ed between the deployments)
 - Use of *Location license plate positioning* functionality
 - Integration with quality management
-- Processing of catch-weight items
-- Processing of negative on-hand inventory
+- Processing with catch-weight items
+- Processing with only TMS enabled items
+- Processing with negative on-hand inventory
 - Warehouse work processing with custom work types
-- Warehouse work processing using shipment notes
-- Warehouse work processing using cycle counting threshold triggering
-- Warehouse work processing using material handling/warehouse automation
+- Warehouse work processing with shipment notes
+- Warehouse work processing with cycle counting threshold triggering
+- Warehouse work processing with material handling/warehouse automation
 
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads in a scale unit; not supported on the hub nor on the scale unit workload.
