@@ -59,6 +59,10 @@ After the feature is enabled, you should see the **Export to Azure Data Lake** o
 
 ## Select data
 
+> [!NOTE]
+> If **Export to Azure Data Lake** feature is not available in the feature management in your environment, log in to the environment and add the following to the URL in your browser address: &mi=DataFeedsDefinitionWorkspace, for example https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace,
+>
+
 You can select the tables and entities that should be staged in Data Lake.
 
 1. In your environment, go to **System Administration** \> **Export to Azure Data Lake**.
