@@ -767,7 +767,6 @@ The following peripherals were tested by using a shared IIS hardware station tog
 | Epson        | TM-T88V  | OPOS      |                           |
 | Epson        | TM-T88   | Custom    | Connected via network     |
 | Star         | TSP650II | Custom    | Connected via network     |
-| Star         | TSP100   | OPOS      | Requires TSP650II drivers |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### Payment terminal
