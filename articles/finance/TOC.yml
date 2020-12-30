@@ -175,7 +175,7 @@
         - name: Architecture for Finance and Operations apps
           href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json    
         - name: Microsoft FastTrack
-          href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/finance/toc.json
+          href: /dynamics365/fasttrack/index?toc=/dynamics365/finance/toc.json
         - name: Onboard an implementation project
           href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
         - name: Environment planning
