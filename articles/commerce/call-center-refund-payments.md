@@ -2,7 +2,7 @@
 # required metadata
 
 title: Refund payment processing in call centers
-description: This topic covers how payment refunds are generated through call centers when returns are created or when orders or order lines are cancelled.
+description: This topic covers how payment refunds are generated through call centers when returns are created or when orders or order lines are canceled.
 author: hhainesms
 manager: annbe
 ms.date: 12/17/2020
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 # Refund payment processing in call centers
 
-This topic covers how payment refunds are generated through call centers when returns are created or when orders or order lines are cancelled.
+This topic covers how payment refunds are generated through call centers when returns are created or when orders or order lines are canceled.
 
 When creating a return order for a customer as a call center user in Dynamics 365 Commerce headquarters, the user will use the **Return order** form to create the initial Return Materials Authorization (RMA). The RMA defines which products the customer wishes to return or exchange and creates a linked return sales order with an order type of **Returned order**.  This linked returned order is used to track the postings of the returned inventory and any credit notes or payment refunds posted. 
 
