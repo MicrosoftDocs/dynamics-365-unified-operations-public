@@ -794,7 +794,7 @@ Notice that the amount of the credit note is shown in code **84**.
    -   **Update:** No
    -   **Format mapping:** INTERVAT format (BE)
 
-![INTERVAT tax declaration page](media/6_Intervat.png)
+![New INTERVAT tax declaration page](media/6_Intervat.png)
 
 18.  Select **OK**, open the file, and review the report.
 
