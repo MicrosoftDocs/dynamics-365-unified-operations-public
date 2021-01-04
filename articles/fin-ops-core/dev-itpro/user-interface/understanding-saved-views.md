@@ -97,7 +97,7 @@ This section provides a list of known issues for saved views while the feature i
 -  [KB 4590240] Grid resize does not work properly when switching views with the old grid
 -  [KB 4600209] Personalizations of form parts are not reflected when switching views
 -  [KB 4590224] Focus can start on the wrong control when saved views is enabled
--  [KB 4562254] Table permission error after accessing a shared custom workspace.
+-  [KB 4562254] Table permission error after accessing a shared custom workspace
 -  [KB 4600210] Unexpected client error when switching to the Hide tool
 -  [KB 4599871] Workspaces do not open if personalization is turned off for user / Unbound controls cannot be set as mandatory via personalization
 -  [KB 4594453] Duplicate key exception for forms opening as full-page forms and dialogs
