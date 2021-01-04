@@ -47,9 +47,10 @@ ms.dyn365.ops.version: Platform Update 33
 
 ## <a name="createServicePrinciple"></a> Create Service Principle for Microsoft Dynamics ERP Microservices
 
-**Export to Azure Data Lake** feature is based an independent microservice that enables exporting Finance and Operations Apps tables data to Azure Data Lake and keeps the data in the data lake fresh. Microservice uses Azure service principle **Microsoft Dynamics ERP Microservices** to securely connect customers Azure resources. Before you can configure Export to Data Lake feature, you must add service principle **Microsoft Dynamics ERP Microservices** in customers Azure active directory.
+**Export to Azure Data Lake** feature is built using a microservice that exports Finance and Operations data to Azure Data Lake and keeps the data fresh. Microservice uses Azure service principle **Microsoft Dynamics ERP Microservices** to securely connect to your Azure resources. Before you can configure Export to Data Lake feature, you must add service principle **Microsoft Dynamics ERP Microservices** in your Azure Active Directory (AAD). This step enables AAD to authenticate the microservice. 
+
 > [!NOTE]
-You will need **Azure Active Directory tenant administrator** rights to perform these steps.
+> You will need **Azure Active Directory tenant administrator** rights to perform these steps.
 >
 To add the Service Principle Perform following steps
 1. Launch the Azure portal and go to the Azure Active Directory.
