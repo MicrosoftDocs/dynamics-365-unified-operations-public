@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12-40)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12-40.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 12/08/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
