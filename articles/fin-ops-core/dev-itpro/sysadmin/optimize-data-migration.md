@@ -170,7 +170,7 @@ Example of information to collect for each entity:
 
 There are additional areas where performance can be optimized, for example analyzing the specific queries and query plans, however those processes are covered in other articles and are not intended for this article.
 
-If you would like to read additional steps for performance troubleshooting and optimization the following articles are a good starting point:
+For more information about performance troubleshooting and optimization, see the following content:
 
 * [Performance troubleshooting using tools in Lifecycle Services (LCS)](../lifecycle-services/performancetroubleshooting.md)
 * [Query cookbook](../lifecycle-services/querycookbook.md)
