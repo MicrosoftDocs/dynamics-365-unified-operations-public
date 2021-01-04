@@ -46,7 +46,7 @@ This topic explains how to configure chronology control of invoices posting date
 ## Configure posting date control
 Complete the following steps to configure posting date control.
 
-1. Go to **Tax** > **Setup** > **Sales tax** > **Italain sales tax book sections**. 
+1. Go to **Tax** > **Setup** > **Sales tax** > **Italian sales tax book sections**. 
 2. In the **Skip posting date control** column, select whether posting date control is required for a selected sales tax book section.
 
 ![Posting date control](media/emea-ita-post-date-control.jpg)
