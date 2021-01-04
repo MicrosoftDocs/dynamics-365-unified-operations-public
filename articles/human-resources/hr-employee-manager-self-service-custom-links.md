@@ -5,7 +5,7 @@ title: Create custom links in Manager self-service
 description: This topic describes how to create custom links in Manager self-service in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/21/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -32,13 +32,11 @@ ms.dyn365.ops.version: Human Resources
 
 # Create custom links in Manager self-service
 
-[!include [banner](includes/preview-feature.md)]
-
 You can add custom links on the **My team** tab in Manager self-service. This feature lets you provide quick access to important information. It's similar to adding custom links in the **My information** tab in Employee self service.
 
-## Enable the preview feature
+## Enable the  feature
 
-To use this feature, enable **(Preview) Custom links in Manager self-service** in the **Feature management** workspace. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
+To use this feature, enable **Custom links in Manager self-service** in the **Feature management** workspace. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
 
 ## Set up custom links
 

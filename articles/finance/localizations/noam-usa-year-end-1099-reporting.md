@@ -18,7 +18,7 @@ ms.search.form: Tax1099Fields, Tax1099Summary
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6861
 ms.assetid: 518633aa-b341-47e6-ac7b-7c5841b50dc3
@@ -46,6 +46,8 @@ Additionally, you can create a new 1099 transaction that isn't associated with a
 > You can run the process to update 1099 amounts for only one vendor at a time.
 
 Before you set up and process 1099 statements, we recommend that you review Internal Revenue Service (IRS) rule changes for the applicable tax year. Then, when you're ready to process 1099 statements, use the **Vendor settlements for 1099s** page.
+
+For information about the most current changes for 1099 reporting for calendar year 2020, see [Year-end activities FAQ](../general-ledger/faq-year-end-activities.md).
 
 ## Example of a typical year-end 1099 process
 

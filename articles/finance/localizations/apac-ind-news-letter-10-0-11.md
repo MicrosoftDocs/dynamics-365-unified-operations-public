@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed for India GST Localization in 10.0.11 (July 2020)
+title: What's new or changed for India GST in 10.0.11 (July 2020)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.11.
 author: prabhatb
 manager: Annbe
@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.11
 
 ---
 
-# What's new or changed for India GST Localization in 10.0.11 (July 2020)
+# What's new or changed for India GST in 10.0.11 (July 2020)
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,11 +50,10 @@ To set up the new settlement rule, go to **Tax** > **Setup** > **Sales tax hiera
 
 ![Setoff rules for sales tax hierarchies page](media/GST-tax-settlement-new-rule-1-10-0-11.PNG )
 
-A new tax settlement change has been incorporated in the tax settlement hierarchy. You can define the tax set off hierarchy for a tax component with any  tax settlement priority. Previously, each tax component recoverable amount was settled against the tax payable amount of it's own tax component and then with other tax components. Going forward, you can define the set off priority of a tax component with any other tax component. For example, you can set up a settlement priority of the input tax credit for CGST against IGST  first and then with CGST. Similarly, SGST can be set off against IGST first and then SGST.
+A new tax settlement change has been incorporated in the tax settlement hierarchy. You can define the tax set off hierarchy for a tax component with any  tax settlement priority. Previously, each tax component recoverable amount was settled against the tax payable amount of its own tax component and then with other tax components. Going forward, you can define the set off priority of a tax component with any other tax component. For example, et up a settlement priority of the input tax credit for CGST against IGST first, and then with CGST. Similarly, SGST can be set off against IGST first, and then SGST.
 
 ## Data entity for stock transfer order transaction 
-The stock transfer transaction upload through the data entity is provided so that large size stock transfer orders can use 
-data management to upload stock transfer transactions.  
+The stock transfer transaction upload is provided through the data entity so that large-size stock transfer orders can use data management to upload stock transfer transactions.  
 
 ## Critical fixes 
 
@@ -105,8 +104,7 @@ data management to upload stock transfer transactions. 
   are generated  from the **Invoice journal** and **Free text invoice**. 
 -	An issue occurs when posting the **Withholding tax adjustment journal** and the TDS main account is marked
   as **Do not allow manual entry**.  
--	The **Withholding tax** tax group can't be modified during invoice processing in the India Legal Entity when 
-  posting transactions using the **Pending invoice** page.
+-	The tax group **Withholding tax**, can't be modified during invoice processing in the India Legal Entity when posting transactions using the **Pending invoice** page.
 - It is possible to delete the source details in the GST number sequence group even when the details are attached to a transaction.   
 -	Charges are not automatically updated in the **Assessable value** field on the sales order line when charges are applied using the **Auto charges** functionality. If the **Assessable value** check box is marked when setting up auto charge,
   charges are not automatically updating on the sales order line to include charge amount in the assessable value of goods.  

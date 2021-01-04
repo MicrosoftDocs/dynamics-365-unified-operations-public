@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Common Data Service virtual entities
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Dynamics 365 Human Resources is a virtual data source in Common Data Service. It provides full create, read, update, and delete (CRUD) operations from Common Data Service and Microsoft Power Platform. The data for virtual entities isn't stored in Common Data Service, but in the application database. 
 
 To enable CRUD operations on Human Resources entities from Common Data Service, you must make the entities available as virtual entities in Common Data Service. This lets you perform CRUD operations from Common Data Service and Microsoft Power Platform on data that's in Human Resources. The operations also support the full business logic validations of Human Resources to ensure data integrity when writing data to the entities.
@@ -52,11 +54,23 @@ Virtual entities for Human Resources aren't the same as the natural Common Data 
 
 ## Setup
 
-Follow these setup steps to enable virtual entities in your environment. 
+Follow these setup steps to enable virtual entities in your environment.
+
+### Enable virtual entities in Human Resources
+
+First, you must enable virtual entities in the **Feature management** workspace.
+
+1. In Human Resources, select **System administration**.
+
+2. Select the **Feature management** tile.
+
+3. Select **Virtual Entity support in HR/CDS**, and then select **Enable**.
+
+For more information about enabling and disabling features, see [Manage features](hr-admin-manage-features.md).
 
 ### Register the app in Microsoft Azure
 
-First, you need to register the app in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+You must register your Human Resources instance in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for the app and users. For more information about registering apps in Azure, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 1. Open the [Microsoft Azure portal](https://portal.azure.com).
 

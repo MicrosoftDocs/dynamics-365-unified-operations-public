@@ -34,6 +34,8 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic discusses the templates and underlying tasks that are used to synchronize agreement invoices in Dynamics 365 Field Service to free text invoices in Dynamics 365 Supply Chain Management.
 
 ## Templates and tasks
@@ -57,23 +59,23 @@ The following synchronization is required before synchronization of agreement in
 
 | Field Service  | Supply Chain Management                 |
 |----------------|----------------------------------------|
-| invoices       | CDS customer free text invoice headers |
-| invoicedetails | CDS customer free text invoice lines   |
+| invoices       | Dataverse customer free text invoice headers |
+| invoicedetails | Dataverse customer free text invoice lines   |
 
 ## Entity flow
 
-Invoices that are created from an agreement in Field Service can be synchronized to Supply Chain Management via a Common Data Service Data integration project. Updates to these invoices will be synchronized to the free text invoices in Supply Chain Management if the accounting status of the free text invoices is **In process**. After the free text invoices are posted in Supply Chain Management, and the accounting status is updated to **Completed**, you can no longer synchronize updates from Field Service.
+Invoices that are created from an agreement in Field Service can be synchronized to Supply Chain Management via a Microsoft Dataverse Data integration project. Updates to these invoices will be synchronized to the free text invoices in Supply Chain Management if the accounting status of the free text invoices is **In process**. After the free text invoices are posted in Supply Chain Management, and the accounting status is updated to **Completed**, you can no longer synchronize updates from Field Service.
 
 ## Field Service CRM solution
 
-The **Has Lines With Agreement Origin** field has been added to the **Invoice** entity. This field helps guarantee that only invoices that are created from an agreement are synchronized. The value is **true** if the invoice contains at least one invoice line that originates from an agreement.
+The **Has Lines With Agreement Origin** column has been added to the **Invoice** table. This column helps guarantee that only invoices that are created from an agreement are synchronized. The value is **true** if the invoice contains at least one invoice line that originates from an agreement.
 
-The **Has Agreement Origin** field has been added to the **Invoice Line** entity. This field helps guarantee that only invoice lines that are created from an agreement are synchronized. The value is **true** if the invoice line originates from an agreement.
+The **Has Agreement Origin** column has been added to the **Invoice Line** table. This column helps guarantee that only invoice lines that are created from an agreement are synchronized. The value is **true** if the invoice line originates from an agreement.
 
-**Invoice date** is a mandatory field in Supply Chain Management. Therefore, the field must have a value in Field Service before synchronization occurs. To meet this requirement, the following logic is added:
+**Invoice date** is a mandatory field in Supply Chain Management. Therefore, the column must have a value in Field Service before synchronization occurs. To meet this requirement, the following logic is added:
 
-- If the **Invoice Date** field is blank on the **Invoice** entity (that is, if it has no value), it's set to the current date when an invoice line that originates from an agreement is added.
-- The user can change the **Invoice Date** field. However, when the user tries to save an invoice that originates from an agreement, he or she receives a business process error if the **Invoice Date** field is blank on the invoice.
+- If the **Invoice Date** column is blank on the **Invoice** table (that is, if it has no value), it's set to the current date when an invoice line that originates from an agreement is added.
+- The user can change the **Invoice Date** column. However, when the user tries to save an invoice that originates from an agreement, he or she receives a business process error if the **Invoice Date** column is blank on the invoice.
 
 ## Prerequisites and mapping setup
 

@@ -9,7 +9,6 @@ ms.topic: article
 ms.service: dynamics-ax-platform
 audience: Developer
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22

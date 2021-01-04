@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -31,6 +30,8 @@ ms.dyn365.ops.version: July 2017 update
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
@@ -661,7 +662,7 @@ In the kanban schedule board, these call outs are added to key elements.
 
 The **Cost controlling** mobile workspace provides an instant view of the current performance of cost centers by comparing actual costs against the budgeted costs. You can drill down to view statuses of individual cost elements.
 
-The data in the **Cost controlling** mobile workspace is secured by user credentials. The cost center manager is only allowed to view data for the cost center that he owns. The access-level security is managed in the Cost accounting module.
+The data in the **Cost controlling** mobile workspace is secured by user credentials. Cost center managers are only allowed to view data for the cost center that they own. The access-level security is managed in the Cost accounting module.
 
 ### Inventory on-hand mobile workspace
 
@@ -946,7 +947,7 @@ When cluster picking is applied, item confirmation is crucial to verify the item
 
 Prospect to cash integration capabilities deliver first party integration between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations, Enterprise edition.
 
-This solution leverages the strengths of the individual Dynamics 365 components and connects them via Common Data Service (CDS). While the data is flowing seamlessly between Finance and Operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides powerful integration with a flexible solution and simplification of the integration process, without dependency on third-party solutions. These advancements offer the best of both worlds, each with significant productivity enhancements that help businesses and workers achieve more.
+This solution leverages the strengths of the individual Dynamics 365 components and connects them via Dataverse. While the data is flowing seamlessly between Finance and Operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides powerful integration with a flexible solution and simplification of the integration process, without dependency on third-party solutions. These advancements offer the best of both worlds, each with significant productivity enhancements that help businesses and workers achieve more.
 
 - Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations as customers.
 - Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.
@@ -955,9 +956,9 @@ This solution leverages the strengths of the individual Dynamics 365 components 
 - Generate sales orders in Finance and Operations and sync them to Dynamics 365 for Sales.
 - Generate invoices in Finance and Operations and sync them to Dynamics 365 for Sales.
 
-**Easy access to data through the power of Common Data Service**
+**Easy access to data through the power of Dataverse**
 
-The solution leverages the power of Azure Public Cloud and the combined data will be available via Common Data Service. This enables business users to access, visualize, share, and modify the unified Sales and Operations data through Power Apps, Power BI, or create workflow automations using Flow with pre-defined templates for various business processes. This also means that Power BI dashboard lets users gain better insight into the business process information across the two systems.
+The solution leverages the power of Azure Public Cloud and the combined data will be available via Dataverse. This enables business users to access, visualize, share, and modify the unified Sales and Operations data through Power Apps, Power BI, or create workflow automations using Flow with pre-defined templates for various business processes. This also means that Power BI dashboard lets users gain better insight into the business process information across the two systems.
 
 **Fast implementation**
 

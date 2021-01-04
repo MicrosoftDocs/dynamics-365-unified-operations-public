@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 24
 
 # Optimize performance by scheduling batch jobs after hours
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 ## Issue
 
 Microsoft Dynamics 365 Human Resources can experience performance issues if long-running batch jobs run during typical business hours.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated tax
-description: This topic describes the integration of tax data between Finance and Operations and Common Data Service.
+description: This topic describes the integration of tax data between Finance and Operations and Dataverse.
 author: robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -33,13 +33,15 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax. It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.
 
 ## Templates
 
-Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.
+Tax data includes a collection of table maps that work together during data interaction, as shown in the following table.
 
 Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
 -------------------------|---------------------------------|----|

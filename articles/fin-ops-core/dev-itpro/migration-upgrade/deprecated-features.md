@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
@@ -33,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Removed or deprecated features in previous releases
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > This topic is no longer updated. To see a current list of features that have been removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.
@@ -975,7 +976,7 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Dynamics
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This functionality has been replaced by another feature. |
-| **Replaced by another feature?**   | Common data service                                      |
+| **Replaced by another feature?**   | Dataverse                                      |
 | **Product areas affected**         | Connector for Dynamics                         |
 | **Status**                         | Removed as of Dynamics AX 7.0.                           |
 

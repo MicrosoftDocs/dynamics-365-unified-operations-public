@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Debug against a Tier 1 Commerce development environment
-description: This topic describes how to set up an e-Commerce online development environment to debug against a Tier 1 Commerce development environment.
+title: Configure an e-commerce development environment against a Commerce cloud environment
+description: This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 author: samjarawan
 manager: annbe
-ms.date: 10/08/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,51 +28,57 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Debug against a Tier 1 Commerce development environment
+# Configure an e-commerce development environment against a Commerce cloud environment
 
 [!include [banner](../includes/banner.md)]
-
-This topic describes how to set up an e-Commerce online development environment to debug against a Tier 1 Commerce development environment.
+This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 
 ## Overview
 
-Dynamics 365 Commerce Tier 1 environments are generally deployed for Commerce runtime (CRT) and point of sale (POS) extension development. These are standalone environments that do not include e-Commerce components due to the software as a service (SaaS) nature of the e-Commerce architecture.
+An e-commerce development environment can be configured to debug your live e-commerce website or to test e-commerce configuration changes against various Commerce cloud environments, such as "Dev," "Test," "UAT," or "Prod" environments. This environment is useful for testing and debugging e-commerce modules and data actions against Retail Server extensions. After it's configured, modules and data actions that use Retail Server APIs will directly call the Retail Server in the Commerce cloud environment. Otherwise, mock data will be required.
 
-There may be scenarios where you want to test calling extensions on a Tier 1 environment to allow extension debugging from e-Commerce components. This topic describes how to set up these kind of scenarios.
+## Install the Commerce online SDK
 
-## Install the SDK
+To get started, you must install the Dynamics 365 Commerce online software development kit (SDK). The online SDK can be installed in any Windows 10 environment. It can even be installed directly on a Commerce development virtual machine (VM). For setup instructions, see [Setup a development environment](setup-dev-environment.md).
 
-The Dynamics 365 Commerce software development kit (SDK) can be installed on any environment including the Tier 1 virtual machine (VM) itself. For setup instructions, see [Setup a development environment](setup-dev-environment.md).
+## Debug against a Retail Server in a Commerce cloud environment
 
-## Configure the .env file
+The online SDK uses Node.js as the JavaScript runtime to render modules and e-commerce pages in a development environment. To configure a local development environment so that it points to a Commerce cloud environment, set the **MsDyn365Commerce_BASEURL** variable in the .env file to the URL of the Retail Server in the Commerce cloud environment. For information about how to set up the .env file, see [Configure a development environment (.env) file](configure-env-file.md). You must also specify the channel ID, **MSDyn365Commerce_CHANNELID**, and the channel operating unit number (OUN), **MSDyn365Commerce_OUN**.
 
-To hit the Tier 1 environment from the local node server on the e-Commerce development environment, set the **MsDyn365Commerce_BASEURL** variable value in the .env file to the Tier 1 Retail Server URL. For details about how to set up an .env file, see [Configure a development environment (.env) file](configure-env-file.md).
+> [!NOTE]
+> Catalogs aren't supported in e-commerce. Therefore, the **MSDyn365Commerce_CATALOGID** variable will always be set to **0** (zero).
 
-To obtain the Retail Server URL, go to the [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/) webpage and select the project and Tier 1 environment. Next, select **Login** at the top right and then select **Retail Server URL** as shown in the following illustration.
+### Retrieve the URL of a Retail Server in a Commerce development environment
 
-![LCS Retail Server URL](media/lcs-retail-server-url.png)
+To get the Retail Server URL if you're debugging against a Commerce development environment, go to [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/), and select the project and the environment. Then, in the upper-right corner of the page, select **Login \> Retail Server URL**, as shown in the following illustration.
 
-Selecting the **Retail Server URL** link should open a new tab with a URL similar to the following example URL: 
+![Retail Server URL in LCS](media/lcs-retail-server-url.png)
+
+A new tab should be opened, and the URL should resemble the following example: 
 
 `https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/Commerce`
 
-Copy this URL, except for the last part "Commerce", into the .env file as the value for the **MsDyn365Commerce_BASEURL** variable. The remaining variables should be configured to a desired online channel on the environment. The following example shows configured variables using the URL that was noted above.  
+Copy this URL, except the last part (**Commerce**), into the .env file as the value of the **MsDyn365Commerce_BASEURL** variable. The **MSDyn365Commerce_CHANNELID** and **MSDyn365Commerce_OUN** variables should be set based on the desired online channel in the environment. For information about how to get these values, see [Configure a development environment (.env) file](configure-env-file.md).
 
-```text
-…
+The following example shows configured variables that use the previously mentioned example URL.
+
+```json
 MSDyn365Commerce_BASEURL=https://e-comdevtestf1d01de665c744a7devret.cloud.retail.dynamics.com/
 MSDyn365Commerce_CHANNELID=68719478279
 MSDyn365Commerce_CATALOGID=0
 MSDyn365Commerce_OUN=128
-…
+...
 ```
-Make sure to restart the Node.js server with a "yarn start" command so that the server picks up these new values. As you build modules and debug data actions, calls will now be made directly to the Tier 1 Retail Server.
 
-## Debug against a live e-Commerce environment
+To ensure that the server picks up these new values after the .env file is saved, you should restart the Node.js server by using the **yarn start** command. As you build modules and debug data actions, calls will now be made directly to the Retail Server that is specified in the .env file.
 
-You may want to test the rendering of your live e-Commerce site pages within the local Node development environment while still calling the Tier 1 Retail Server. This is useful when you want to make changes to modules and themes, or to debug Retail Server extensions.
+## Debug against a production e-commerce site
 
-To support this scenario, configure the **MSDyn365_HOST** variable in the .env file to point to your e-Commerce domain name. When this step is complete, you can run the "yarn start" command and navigate to `https://localhost:4000` to view your online website rendered on the local Node.js server. When this happens, the live page will be pulled from the Dynamics 365 Commerce content management system. All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
+The Commerce online SDK lets you point your development environment to a production e-commerce site to retrieve page definitions that can be rendered in the local Node.js environment. Therefore, you can see how your local e-commerce changes (modules, data actions, and themes) will be rendered before you upload the configuration package to a live environment. You can then debug, make further changes, and see how those changes will look on a production page.
+
+On a production site, Commerce site builder is used to build e-commerce pages that are stored as JavaScript Object Notation (JSON) files in the Commerce content management system. When you configure an e-commerce development environment's **MSDyn365_HOST** variable in the .env file so that it points to a production e-commerce site, the JSON file will be retrieved, and the local Node.js server will use the local online SDK and customizations in that local environment to do the rendering. Therefore, you can test e-commerce changes on your live e-commerce site pages without deploying and potentially destabilizing your production environment.
+
+To support this scenario, configure the **MSDyn365_HOST** variable in the .env file to point to your e-commerce domain name. When this step is complete, you can run the "yarn start" command and navigate to `https://localhost:4000` to view your online website rendered on the local Node.js server. When this happens, the live page will be pulled from the Dynamics 365 Commerce content management system. All data action Retail Server calls will be routed to the Tier 1 environment, as specified in the .env file.
 
 The following example .env file shows the **MSDyn365_HOST** variable set to `www.fabrikam.com`. Note that this does not include the `https://` part of the URL.
 
@@ -82,11 +88,11 @@ MSDyn365Commerce_BASEURL=https://e-comdevtestf1d01de665c744a7devret.cloud.retail
 MSDyn365Commerce_CHANNELID=68719478279
 MSDyn365Commerce_CATALOGID=0
 MSDyn365Commerce_OUN=128
-…
+...
 ```
 
 > [!NOTE]
-> If you have multiple e-Commerce sites configured for a single domain name, do not include the site name in the **MSDyn365_HOST** name provided in the .env file. Instead, use the site names when navigating the development environment in the local browser. For example, if you have two sites, `www.fabrikam.com/site1` and `www.fabrikam.com/site2`, configure the .env file as shown in the example above (`www.fabrikam.com`), and navigate to `https://localhost:4000/site1` or `https://localhost:4000/site2` respectively in the development environment.
+> If you have multiple e-commerce sites configured for a single domain name, do not include the site name in the **MSDyn365_HOST** name provided in the .env file. Instead, use the site names when navigating the development environment in the local browser. For example, if you have two sites, `www.fabrikam.com/site1` and `www.fabrikam.com/site2`, configure the .env file as shown in the example above (`www.fabrikam.com`), and navigate to `https://localhost:4000/site1` or `https://localhost:4000/site2` respectively in the development environment.
 
 ### Debug a product details page
 
@@ -106,14 +112,19 @@ You may get CORS (cross origin) errors when calling Retail Server APIs from your
 ```
 
 ### Mixed content errors
-When the Retail Server is configured with HTTP instead of HTTPS, you may receive "Mixed Content" errors when rendering e-Commerce content. Ensure the Retail Server is configured with an HTTPS end point to avoid this type of error.
+When the Retail Server is configured with HTTP instead of HTTPS, you may receive "Mixed Content" errors when rendering e-commerce content. Ensure the Retail Server is configured with an HTTPS end point to avoid this type of error.
 
 ### Retail calls are failing 404 error
 404 errors may result if the channel ID and OUN are incorrect. To avoid those errors, ensure that the channel ID and OUN are correct in the **.env** file. See the [Configure a development environment (.env) file](configure-env-file.md) topic for details.
 
-
 ## Additional resources
 
-[Setup a development environment](setup-dev-environment.md)
+[Get started with e-commerce online extensibility development](sdk-getting-started.md)
+
+[System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
+
+[Set up a development environment](setup-dev-environment.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
+
+[Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)

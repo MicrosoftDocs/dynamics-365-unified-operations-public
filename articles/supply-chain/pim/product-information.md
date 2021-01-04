@@ -37,6 +37,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic provides information about product information management. Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes. 
 
 Product information is the backbone of supply chain and commerce applications across all industries. It refers to processes and technologies that focus on centrally managing information about products (for example, across supply chains). It's crucial that shared product definitions, documentation, attributes, and identifiers be used. In the various modules of a business solution, product-specific information and configuration are required in order to manage the business processes that are related to specific products, product families, or product categories.
@@ -64,7 +66,7 @@ A product is primarily defined by a product number, name, and description. Howev
 
 The product definition can be created in Supply Chain Management. It can also be imported from product lifecycle management (PLM), product data management (PDM), or product information management (PIM) systems. When more than one instance of Supply Chain Management is used, one instance is typically used as the master of the product data for all other instances. This approach is supported by a large set of data entities that enable the export and import of product definition data from one instance to another.
 
-To support the distribution of product data to many instances, Supply Chain Management lets you use Common Data Service. The product definitions can be exported from an instance of Supply Chain Management to Common Data Service. The product definitions can then be used to provision other business applications, such as Dynamics 365 Sales, with product data.
+To support the distribution of product data to many instances, Supply Chain Management lets you use Microsoft Dataverse. The product definitions can be exported from an instance of Supply Chain Management to Microsoft Dataverse. The product definitions can then be used to provision other business applications, such as Dynamics 365 Sales, with product data.
 
 Note that, in dynamic and agile organizations, product information data changes every day. Therefore, maintenance of accurate and actual product data is a critical business process on its own.
 

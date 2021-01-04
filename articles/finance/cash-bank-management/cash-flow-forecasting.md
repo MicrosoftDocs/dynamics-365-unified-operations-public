@@ -17,7 +17,7 @@ ms.search.form:  LedgerCovParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -97,6 +97,11 @@ Budgets that are created from budget models can be included in cash flow forecas
 ### Inventory management
 
 Inventory supply and demand forecasts can be included in cash flow forecasts. On the **Inventory management** tab of the **Cash flow forecast setup** page, select the forecast model to include in the cash flow forecast. Inclusion in cash flow forecasting can be overwritten on individual supply and demand forecast lines.
+
+### Setting up Dimensions for Cash flow forecasting
+A new tab on the **Cash flow forecasting setup** page lets you control what financial dimensions to use for filtering in the **Cash flow forecasting** workspace. This tab will only appear when the Cash flow forecasts feature is enabled. 
+
+On the **Dimensions** tab, choose from the list of dimensions to use for filtering, and use the arrow keys to move them to the right-hand column. Only two dimensions can be selected for filtering cash flow forecast data. 
 
 ### Calculation
 

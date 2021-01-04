@@ -1,6 +1,6 @@
 ## Sales invoice headers V2 to invoices
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
 Source filter: `(SalesOrderNumber != "")`
 
