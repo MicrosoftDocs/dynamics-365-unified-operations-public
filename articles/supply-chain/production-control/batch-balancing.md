@@ -90,6 +90,15 @@ size of 100 liters.
 | Compensating | C | 10 | Liter |
 | Filler | D | 40 | Liter |
 
+The following table provides an overview of the results of each example.
+
+| Item number | Ingredient type | Estimated quantity | Balanced quantity | Active quantity | Unit | Base value |
+|---|---|---|---|---|---|---|
+| A | None | 20 | 20 | | Liter | |
+| B | Active | 30 | 25.71 | 9.00 | Liter | 30.00 |
+| C | Compensating | 10 | 14.72 | | Liter | |
+| D | Filler | 40 | 39.57 | | Liter | |
+
 ### Active ingredients
 
 When a product that has a base attribute is added to a formula line, it's
@@ -113,13 +122,6 @@ level of the batch, which is multiplied by the estimated quantity. The
 calculation of the balanced quantity looks like this:
 
 (30 ÷ 35) × 30 liters = 25.71 liters
-
-| Item number | Ingredient type | Estimated quantity | Balanced quantity | Active quantity | Unit | Base value |
-|---|---|---|---|---|---|---|
-| A | None | 20 | 20 | | Liter | |
-| B | Active | 30 | 25.71 | 9.00 | Liter | 30.00 |
-| C | Compensating | 10 | 14.72 | | Liter | |
-| D | Filler | 40 | 39.57 | | Liter | |
 
 ### None ingredients
 
