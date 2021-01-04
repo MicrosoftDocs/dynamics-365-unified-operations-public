@@ -48,6 +48,7 @@ Dual-write has these limitations:
 + Dual-write does not support [cross-company data sharing](../../sysadmin/cross-company-data-sharing.md).
 + Dual-write requires that the Finance and Operations app and the customer engagement app must be in the same Microsoft Azure Active Directory (Azure AD) tenant.
 + Dual-write requires that the Finance and Operations app and the customer engagement app must be deployed in the same Microsoft Azure datacenter.
++ Dual-write is not triggered for doInsert/doUpdate/doDelete events of Finance and Operations apps. So use Insert/Update/Delete events in Finance and Operations apps where dual-write needs to be triggered. 
 
 ## One Version
 
