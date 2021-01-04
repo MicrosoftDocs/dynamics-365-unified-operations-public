@@ -5,7 +5,7 @@ title: Finance and Operations apps data in Azure Data Lake
 description: This topic explains how to configure your Finance and Operations apps environment so that it has a data lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,8 +60,8 @@ After the feature is enabled, you should see the **Export to Azure Data Lake** o
 ## Select data
 
 > [!NOTE]
-> If **Export to Azure Data Lake** feature is not available in the feature management in your environment, log in to the environment and add the following to the URL in your browser address: &mi=DataFeedsDefinitionWorkspace, for example https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace,
->
+> If the feature, **Export to Azure Data Lake** isn't available in the **Feature management** module in your environment, log in to the environment and add the following to the URL in your browser address: &mi=DataFeedsDefinitionWorkspace. For example, https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace,
+
 
 You can select the tables and entities that should be staged in Data Lake.
 
