@@ -37,7 +37,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database fro
 
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
-### Maximum limit 50 GB on exported bacapcs 
+### Maximum limit 50 GB on exported bacpacs 
 To maintain the system that performs database export from LCS, a limit on the maximum bacpac size is being imposed. This limit is set at 50 GB for each bacpac exported. The reasons for this limit include: 
 
 - A centralized system is performing the exports for multiple customers in the same geographic region, and this system has constraints on disk space.  
