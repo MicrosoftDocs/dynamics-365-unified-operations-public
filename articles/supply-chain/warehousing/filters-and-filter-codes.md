@@ -5,7 +5,7 @@ title: Configure product filters for warehouse transactions
 description: This topic describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchase from a particular vendor.
 author: Mirzaab
 manager: tfehr
-ms.date: 11/16/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
-ms.search.validFrom: 2020-11-16
+ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
 ---
 
@@ -46,7 +46,7 @@ The following table shows the prerequisites that must be in place before you sta
 
 ## Set up product filters
 
-Product filters provide up to 10 **Filter title** characteristics, which are enumeration (enum) values. These enum values are available for selection when you create a product filter. The enum values *Code 1* and *Code 2* through *Code 10* are system-defined and represent a specific characteristic or attribute of an item. For example, *Code 1* might represent items that have a hazardous material classification. *Code 2* might represent items that only vendors can purchase. Product filters then define the specific **Filter code** value that is associated with a **Filter title** value.
+Product filters provide up to 10 **Filter title** characteristics, which are enumeration (enum) values. These enum values are available for selection when you create a product filter. The enum values *Code 1* through *Code 10* are system-defined and represent a specific characteristic or attribute of an item. For example, *Code 1* might represent items that have a hazardous material classification. *Code 2* might represent items that only vendors can purchase. Product filters then define the specific **Filter code** value that is associated with a **Filter title** value.
 
 1. Go to **Warehouse management \> Setup \> Product filters \> Product filters**.
 1. On the Action Pane, select **New** to add a product filter to the grid.
@@ -74,7 +74,7 @@ To set up filter groups, follow these steps.
 1. On the **Details** FastTab, select **New** to add a line.
 1. In the **Start date/time** and **End date/time** fields, enter start and end dates for the filter group.
 1. In the **Item group** field, select the item group that the product filter should apply to.
-1. In the **Code 1** and **Code 2** through **Code 10** fields, select the filter codes to include in the group, as required.
+1. In the **Code 1** through **Code 10** fields, select the filter codes to include in the group, as required.
 
     ![Item group](media/ProdFilterGroup.png "Item group")
 
