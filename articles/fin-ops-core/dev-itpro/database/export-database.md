@@ -91,7 +91,7 @@ When you export a database backup from an environment, some elements of the data
 
 #### Export ran for some time and then reached a "Preparation failed" state
 
-The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can manually export by following the “Manual export” section below.
+The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. 
 
 #### Export doesn't show any progress in LCS
 
