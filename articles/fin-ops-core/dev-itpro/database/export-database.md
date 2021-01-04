@@ -75,22 +75,23 @@ To cancel an export operation that has failed, you can use the **Rollback** butt
 
 When you export a database backup from an environment, some elements of the database aren't exported in the backup file. Here are some examples:
 
-* Email addresses in the LogisticsElectronicAddress table.
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
-* SMTP Relay server in the SysEmailParameters table.
-* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
-* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
+* Email addresses in the **LogisticsElectronicAddress** table.
+* Batch job history in the **BatchJobHistory**, **BatchHistory**, and **BatchConstraintsHistory** tables.
+* SMTP Relay server in the **SysEmailParameters** table.
+* Print Management settings in the **PrintMgmtSettings** and **PrintMgmtDocInstance** tables.
+* Environment-specific records in the **SysServerConfig**, **SysServerSessions**, **SysCorpNetPrinters**, **SysClientSessions**, **BatchServerConfig**, and **BatchServerGroup** tables.
+* Document attachments in the **DocuValue** table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
-* All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
+* All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the **SysEmailSMTPPassword** table.
+
 
 ### Known issues
 
 #### Export ran for some time and then reached a "Preparation failed" state
 
-The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can manually export by following the “Manual export” section below.
+The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. 
 
 #### Export doesn't show any progress in LCS
 
