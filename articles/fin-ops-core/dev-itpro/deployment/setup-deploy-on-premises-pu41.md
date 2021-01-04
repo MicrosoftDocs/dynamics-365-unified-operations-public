@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
 manager: AnnBe
-ms.date: 10/02/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: osfaixat
-ms.search.validFrom: 2017-11-30 
+ms.search.validFrom: 2021-01-31 
 ms.dyn365.ops.version: Platform update 41
 
 ---
@@ -33,11 +33,9 @@ ms.dyn365.ops.version: Platform update 41
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
+This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later. Platform update 41 is available with version 10.0.17 of the application.
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. You can post questions or feedback you may have about the on-premises deployment there.
-
-If you have questions or feedback about the content in this topic, please post them in the **Comments** section at the bottom of this page.
 
 ## Finance + Operations components
 
