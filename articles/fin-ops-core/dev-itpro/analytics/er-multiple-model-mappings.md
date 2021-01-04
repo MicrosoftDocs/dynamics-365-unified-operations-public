@@ -30,21 +30,23 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-An [Electronic reporting (ER)](general-electronic-reporting.md) data [model](general-electronic-reporting.md#data-model-and-model-mapping-components) component is used in every configured ER [format](general-electronic-reporting.md#FormatComponentOutbound) component as the source of data to generate outbound documents. To describe a single business domain, you can configure a data model component so that it has many root definitions. 
+An [Electronic reporting (ER)](general-electronic-reporting.md) data [model](general-electronic-reporting.md#data-model-and-model-mapping-components) component is used in every configured ER [format](general-electronic-reporting.md#FormatComponentOutbound) component as the data source to generate outbound documents. To describe a single business domain, configure a data model component that has many root definitions. 
 
 Every root definition lets you represent data of that domain in the way that is best suited to specific reporting purposes. For every root definition, you can configure an ER [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) component as the Microsoft Dynamics 365 Finance–specific implementation of your data model. In this way, you describe how your data model will be filled in at runtime.
 
 ER model mapping components can reside in ER data model [configurations](general-electronic-reporting.md#Configuration) and ER model mapping configurations. A single ER configuration can contain many mapping components, each of which is configured for a single root definition. Alternatively, a single ER configuration can contain just one mapping component that is configured for a single root definition.
 
-Therefore, many configuration providers might offer ER model mapping configurations for the same ER data model, and those model mapping configurations might contain mapping components for different root definitions. You might decide to use a model mapping for one root definition that is offered by one [provider](general-electronic-reporting.md#Provider) and simultaneously use a model mapping for another root definition that is offered by another provider.
+Many configuration providers might offer ER model mapping configurations for the same ER data model. Those model mapping configurations might contain mapping components for different root definitions. You might use a model mapping for one root definition that is offered by one [provider](general-electronic-reporting.md#Provider) and use a model mapping for another root definition that is offered by another provider.
 
-The procedures in this topic explain how a user who is assigned to the System administrator or Electronic reporting developer role can manage multiple ER model mapping configurations of an ER data model when they contain different model mapping components that have been configured for the same root definition.
+The procedures in this topic explain how to manage multiple ER model mapping configurations of an ER data model when they contain different model mapping components configured for the same root definition. 
+
+To complete the procedures in this topic, you must be assigned to the System administrator or Electronic reporting developer role.
 
 All the following procedures can be done in the USMF company. No coding is required.
 
 ## Configure the ER framework
 
-As a user in the Electronic reporting developer role, you must [configure the minimal set](er-quick-start2-customize-report.md#ConfigureFramework) of ER parameters before you can start to use the ER framework to generate business documents.
+As a user in the Electronic reporting developer role, [configure the minimal set](er-quick-start2-customize-report.md#ConfigureFramework) of ER parameters before you use the ER framework to generate business documents.
 
 ## Import the standard ER format configurations
 
@@ -67,7 +69,8 @@ To add the standard ER configurations to your current instance of Finance, you m
     2. On the Action Pane, select **Designer**.
     3. On the **Format designer** page, on the **Mapping** tab, in the data sources list, select **Model**.
     4. Select **View**.
-    5. Notice that the current ER format is configured to use the **InvoiceCustomer** root definition of **Invoice model**. Therefore, when this format is run, and the **Model** data source is called, the model mapping that is configured for the **InvoiceCustomer** root definition will be used to access application data and fill in the data model.
+    
+       Thecurrent ER format is configured to use the **InvoiceCustomer** root definition of **Invoice model**. When this format is run, and the **Model** data source is called, the model mapping that is configured for the **InvoiceCustomer** root definition is used to access application data and fill in the data model.
 
         ![Reviewing the model data source on the Format designer page](./media/er-multiple-model-mappings-image2.png)
 
@@ -91,7 +94,7 @@ To add the standard ER configurations to your current instance of Finance, you m
 
     1. In the configuration tree in the left pane, select **Project invoice model mapping (RDP)**.
     2. On the Action Pane, select **Designer**.
-    3. On the **Model to datasource mapping** page, notice that the current ER model mapping configuration contains the **InvoiceProject** model mapping, and that this model mapping is configured for the **InvoiceProject** root definition of **Invoice model**. Therefore, when the **Project invoice (Excel)** ER format is run, the **InvoiceProject** model mapping of this ER configuration can be chosen to access application data and fill in the data model.
+    3. On the **Model to datasource mapping** page, notice that the current ER model mapping configuration contains the **InvoiceProject** model mapping, and that this model mapping is configured for the **InvoiceProject** root definition of **Invoice model**. When the **Project invoice (Excel)** ER format is run, select the **InvoiceProject** model mapping of this ER configuration to access application data and fill in the data model.
 
         ![Reviewing the model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image4.png)
 
@@ -145,7 +148,7 @@ You now have **Invoice model mapping** and **Invoice model mapping Litware** con
 
 8. Close the **Model to datasource mapping** page.
 
-You now have **Invoice model mapping**, **Project invoice model mapping (RDP)**, and **Project invoice model mapping Litware** configurations. Each of these has a model mapping configured for the **InvoiceProject** root definition. Explicitly assign one of the model mappings as the default model mapping that is used by any of the ER formats. For example, use the **Project invoice (Excel)** format that contains a model data source that has the **InvoiceProject** root definition. Otherwise, when you run or edit one of the ER formats, an exception is thrown to notify you that no default model mapping has been explicitly assigned.
+You now have **Invoice model mapping**, **Project invoice model mapping (RDP)**, and **Project invoice model mapping Litware** configurations. Each of these configurations has a model mapping configured for the **InvoiceProject** root definition. Explicitly assign one of the model mappings as the default model mapping that is used by any of the ER formats. For example, use the **Project invoice (Excel)** format that contains a model data source that has the **InvoiceProject** root definition. Otherwise, when you run or edit one of the ER formats, an exception is thrown to notify you that no default model mapping has been explicitly assigned.
 
 ## Select the derived Invoice model mapping Litware configuration as the configuration that contains default model mappings
 
@@ -172,7 +175,7 @@ You now have **Invoice model mapping**, **Project invoice model mapping (RDP)**,
 
     ![Setting the model mapping as virtually deleted on the Model to datasource mapping page](./media/er-multiple-model-mappings-image9.png)
 
-    Because of this setting, the **Invoice modelmapping Litware** configuration is treated as though it has no model mapping for the **InvoiceProject** root definition. The **InvoiceProject Copy** model mapping isused by default. The configuration, **Project invoice model mapping Litware** which contains this model mapping, is marked as the default configuration. Because it is marked as default, it has a higher priority than the **InvoiceProject** model mapping from the **Project invoice model mapping (RDP)** configuration.
+    Because of this setting, the **Invoice model mapping Litware** configuration is treated as though it has no model mapping for the **InvoiceProject** root definition. The **InvoiceProject Copy** model mapping issued by default. The configuration, **Project invoice model mapping Litware**, which contains this model mapping, is marked as the default configuration. Because it is marked as default, it has a higher priority than the **InvoiceProject** model mapping from the **Project invoice model mapping (RDP)** configuration.
 
 ## Other considerations
 
