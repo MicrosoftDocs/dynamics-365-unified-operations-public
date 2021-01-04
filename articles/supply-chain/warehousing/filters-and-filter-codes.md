@@ -169,6 +169,4 @@ To set up vendor filter codes, follow these steps.
 
 ## See also
 
-[Set up filters and filter groups](filters-and-filter-groups.md)
-
 [For more information see the blog post WMS-Warehouse Filter Codes](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
