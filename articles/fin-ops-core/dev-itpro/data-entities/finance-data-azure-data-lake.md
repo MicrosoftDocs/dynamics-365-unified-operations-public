@@ -5,7 +5,7 @@ title: Finance and Operations apps data in Azure Data Lake
 description: This topic explains how to configure your Finance and Operations apps environment so that it has a data lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -129,5 +129,6 @@ Due to the error, the system has paused data export – data that exists in the 
 | 900        | There is an issue with Change Data capture feature in this environment                | Export to Data lake feature uses Change Data Capture feature in Finance and Operations. Change data can’t be exported since the Change Data Capture feature is disabled in for this table in Finance and Operations database. This may be the result of a database maintenance operation in Finance and Operations. You may Deactivate and Activate the table to see if the issue is resolved. If the issue persists, contact Microsoft support.                                                                                                                                                                        |
 
 
-Note that deactivating and activating the table may cause the system to re-initialize the data in the lake by taking a full copy. If this is a large table, initialize process may take some time. In the future, system may automatically update data in the lake to reflect table structure changes. 
+> [!NOTE]
+> Deactivating and activating the table may cause the system to re-initialize the data in the lake by taking a full copy. If this is a large table, initialize process may take some time. In the future, system may automatically update data in the lake to reflect table structure changes. 
 
