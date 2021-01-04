@@ -5,7 +5,7 @@ title: INTERVAT tax declaration
 description: This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
 author: anasyash
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -109,7 +109,7 @@ Examples of sales tax reporting code are provided in the [Set up sales tax repor
 ### Tax exempt number
 
 1.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt numbers**.
-2.  For each tax-exempt number, create a record that includes the followinginformation:
+2.  For each tax-exempt number, create a record that includes the following information:
 
     -   In the **Country/region** field, select the tax registration of the counterparty.
     -   In the **Tax exempt number** field, enter the tax-exempt number of the counterparty.
@@ -121,7 +121,7 @@ For more information about how to set up the VAT statement, see [VAT reporting f
 
 ### Set up INTERVAT
 
-Create lines on the **INTERVAT setup** page (**Tax \> Setup \> Sales tax \> INTERVAT setup**). The information that you enter on this page is used when you select **Open Web site** on the **INTERVAT tax declaration** page. You should create an element for each language. Set the following fields: **Language**, **Description**, and **URL**.
+Create lines on the **INTERVAT setup** page (**Tax \> Setup \> Sales tax \> INTERVAT setup**). The information that you enter on this page is used when you select **Open Web site** on the **INTERVAT tax declaration** page. Create an element for each language. Set the following fields: **Language**, **Description**, and **URL**.
 
 ![Intervat setup page](media/1_Intervat_setup.png)
 
