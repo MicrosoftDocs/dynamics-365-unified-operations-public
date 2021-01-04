@@ -40,7 +40,7 @@ The information below represents a set of steps and actions that can be taken in
 
 The standard entities have not all been optimized for data migration. For example, some have been optimized for OData integration and therefore if the required entity cannot be optimized to meet the performance requirements, it is recommended that a new optimized entity is created. A developer can accelerate this process by duplicating an existing entity.
 
-Begin the optimization phase by using a subset of the data. For example, if it is necessary to import a million records, consider starting with 1,000 records, and then increasing to 10,000 and then 100,00.
+Begin the optimization phase by using a subset of the data. For example, if it is necessary to import a million records, consider starting with 1,000 records, and then increasing to 10,000 and then 100,000.
 
 Once you have identified the entities, you will use then you will want to go through the following sections to explore opportunities for optimizations. 
 
