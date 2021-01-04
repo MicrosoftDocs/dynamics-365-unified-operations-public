@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Chronological numbering of documents and voucher
-description: This topic explains how to set up and use chronological numbers for applicable documents and releted vouchers.  
+title: Numbering documents and vouchers chronologically
+description: This topic explains how to set up and use chronological numbers for applicable documents and related vouchers.  
 author: Ilya Kondratenko
 manager: AnnBe
-ms.date: 11/20/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,14 +29,14 @@ ms.dyn365.ops.version: 10.0.17
 
 ---
 
-# Chronological numbering of documents and vouchers
+# Numbering documents and vouchers chronologically
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-In some countries, there is a legal requirement that some documents and related vouchers that are issued be numbered in chronological order. The chronology must be supported by periods. All the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
-This article explains how to configure and use chronological numbers for applicable documents and related vouchers.
+In some countries, there is a legal requirement to number some documents and the related vouchers in chronological order. The chronology must be supported by periods. All of the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
+This topic explains how to configure and use chronological numbers for applicable documents and related vouchers.
 
 ## Prerequisites
 
@@ -73,36 +73,41 @@ Chronological numbering affects the following documents:
 - Credit note voucher 
 
 ### Define number sequences
-In **Organization administration** > **Number sequences** > **Number sequences**, define as many number sequences as you require to cover the affected periods for required documents. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.
+
+Go to **Organization administration** > **Number sequences** > **Number sequences**, and define as many number sequences as required to cover the affected periods for required documents. 
+
+Specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.
 
 ![Number sequence setup](media/chrono-num-sequence.jpg)
 
 ### Configure number sequence groups
 
-In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, on the **Number sequences** tab, define as many number sequences groups as you require to cover the affected periods. For each group, in the **Reference** section, select one of the supported document references, in the **Number sequence code** field, refer to a number sequence that was previously created for the related period.
+Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**, and on the **Number sequences** tab, define as many number sequences groups as required to cover the affected periods. 
+
+For each group, in the **Reference** section, select one of the supported document references, and in the **Number sequence code** field, refer to a number sequence that was previously created for the related period.
 
 ![Number sequence group setup](media/chrono-num-sequence-group.jpg)
 
-Similarly configure number sequence groups in **Accounts payable** and **Project management and accounting** modules.
+Similarly, configure number sequence groups in **Accounts payable** and **Project management and accounting** modules.
 
 ### Configure number sequence groups chronology
 
-In **Organization administration** > **Number sequences** > **Chronological number sequence groups**, define the applicability conditions for number sequence groups.
+Go to **Organization administration** > **Number sequences** > **Chronological number sequence groups**, and define the applicability conditions for number sequence groups.
 
 ![Chronological numbers setup](media/chrono-num-sequence-group-period.jpg)
 
 | Field            | Description                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Effective  | The start date of number sequence group applicability. |
-| Expiration      | The end date of number sequence group applicability. If no end date applied then use **Never** option. |
-| Number sequence group | Number sequence group that will be used for document numbers generation during the period. |
-| Original number sequence group | This number sequence group code is used for additional filtering for the cases when documents already have a specific *permanent* number sequence group preliminary assigned. An empty value is also considered as a specific value. If you need to ignore a preliminary assigned group, then use **Default** option for this setup. |
-| Default | If **turned on** then the system will ignore preliminary assigned document number sequence group and use only periods start and end dates for applicability analysis. If **turned off** the system will use the full combination **Effective** + **Expiration** + **Original number sequence group** for selection. |
+| Expiration      | The end date of number sequence group applicability. If no end date is applied, select **Never**. |
+| Number sequence group | Number sequence group that will be used to generate document numbers during the period. |
+| Original number sequence group | This number sequence group code is used for additional filtering for the cases when documents already have a specific *permanent* number sequence group assigned. An empty value is considered a specific value. If you need to ignore a preliminary assigned group, use the **Default** option for this setup. |
+| Default | If turned on, the system ignores the preliminary assigned document number sequence group and use only the periods start and end dates for applicability analysis. If turned off, the system uses the full combination **Effective** + **Expiration** + **Original number sequence group** for selection. |
 
-## Documents posting
-When you post a document, the appropriate number sequence group will be dynamically assigned to the document (based on document's posting date) and used to generate a document number via detected number sequence. The system will inform users about number sequence group assignment in information message details.
+## Document posting
+When you post a document, the appropriate number sequence group is assigned to the document, based on document's posting date, and then used to generate a document number based on the detected number sequence. The system provides a message regarding the number sequence group assignment.
 
 ![Document number](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
-> For some countries there can be a specific logic already implemented for documents numbering. In this case, country-specific logic will override **Chronological numbering** feature.
+> For some countries, there is a specific logic already implemented for document numbering. In this case, country-specific logic will override the **Chronological numbering** feature.
