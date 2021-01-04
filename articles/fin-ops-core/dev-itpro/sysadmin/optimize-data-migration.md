@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Optimizing Data Migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+title: Optimizing data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 description: The article provides an overview of how to optimize data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: skaue-ms
 manager: AnnBe
-ms.date: 12/21/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -22,27 +22,27 @@ ms.reviewer: sericks
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: toskaue
-ms.search.validFrom: 2020-12-21
+ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Optimizing Data Migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+# Optimizing data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-Data migration is a key component towards a successful Go-Live. One of the main concerns some customers have is the speed in which the data can be migrated, especially if there are vast amounts of data and a small cut-over window. The Data Migration Framework is also used for moving data as part of business requirements and operations.
+Data migration is a key component towards a successful go-live implementation. One of the main concerns some customers have is the speed in which the data can be migrated, especially if there are vast amounts of data and a small cut-over window. The Data Migration Framework is also used for moving data as part of business requirements and operations.
 
 The information below represents a set of steps and actions that can be taken in order to optimize the performance of data migration. 
 
 > [!NOTE]
 > Testing results on a tier 1 environment should not be compared or extrapolated to performance on a tier 2+ sandbox environment.
 
-The standard entities have not all been optimized for data migration. For example some have been optimized for OData integration and therefore if the required entity cannot be optimized to meet the performance requirements, it is recommended that a new optimized entity is created. A developer can accelerate this process by duplicating an existing entity.
+The standard entities have not all been optimized for data migration. For example, some have been optimized for OData integration and therefore if the required entity cannot be optimized to meet the performance requirements, it is recommended that a new optimized entity is created. A developer can accelerate this process by duplicating an existing entity.
 
-Begin the optimization phase by using a subset of the data. For example, if it is necessary to import million records, consider starting with thousand then increasing to ten thousand and then hundred thousand.
+Begin the optimization phase by using a subset of the data. For example, if it is necessary to import a million records, consider starting with 1,000 records, and then increasing to 10,000 and then 100,00.
 
-Once you have identified the entities you will use then you will want to go through the following sections to explore opportunities for optimizations. 
+Once you have identified the entities, you will use then you will want to go through the following sections to explore opportunities for optimizations. 
 
 ## Disable Change Tracking
 
@@ -80,7 +80,7 @@ In Platform update 31, we introduced is a new feature that will optimize the way
 
 ## Maximum batch threads
 
-You can configure the maximum number of batch threads per AOS to better utilize parallelism and multithreading. This value should be changed cautiously. If the number is too high it can have negative performance implications. The default value is currently 4. If necessary, the value can be changed to 8. It should not be configured above 8 without significant performance testing.
+You can configure the maximum number of batch threads per AOS to better utilize parallelism and multithreading. This value should be changed cautiously. If the number is too high, it can have negative performance implications. The default value is currently 4. If necessary, the value can be changed to 8. It should not be configured above 8 without significant performance testing.
 
 System administration > Setup > Server configuration
 
@@ -122,7 +122,7 @@ This value configures the number of records that will be split and assigned to s
 
 #### Import task count
 
-This value configures how many threads will be used for the data migration job for a specific entity. For example, if the Maximum batch threads are 8 for each server, and there are 4 servers assigned to the data migration batch group, the maximum value for Import task count should be 8 times 4 which is 32.
+This value configures how many threads will be used for the data migration job for a specific entity. For example, if the Maximum batch threads are 8 for each server, and there are four servers assigned to the data migration batch group, the maximum value for Import task count should be eight times four, which is 32.
 
 If a data entity does not support multithreading, when you attempt to configure the entity, you will see an error message.
 Example: "Custom sequence is defined for the entity 'Customers V3', more than one task is not supported."
