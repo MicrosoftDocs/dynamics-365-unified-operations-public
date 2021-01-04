@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 41
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later. Platform update 41 is available with version 10.0.17 of the application.
+This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later. Platform update 41 is available with version 10.0.17.
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. You can post questions or feedback you may have about the on-premises deployment there.
 
@@ -117,7 +117,7 @@ Plan your infrastructure and Service Fabric cluster based on the recommended siz
 The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup. You will need to replace the machine names and IP addresses given in the following instructions with the names and IP addresses for the machines in your environment.
 
 > [!NOTE]
-> The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than 3 vms, you should consider making that node type your Primary (Seed) node type to increase the reliability of the cluster. 
+> The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than 3 VMs, you should consider making that node type your Primary (Seed) node type to increase the reliability of the cluster. 
 
 | Machine purpose          | SF Node type     | Machine name    | IP address    |
 |--------------------------|------------------|-----------------|---------------|
@@ -138,9 +138,10 @@ The following table shows an example of a hardware layout. This example is used 
 | SSRS node 1              | ReportServerType | SQLAOSFBI1     | 10.179.108.41 |
 | SSRS node 2              | ReportServerType | SQLAOSFBI2     | 10.179.108.42 |
 
-The following table shows an example of a hardware layout where batch execution and interactive sessions are executed in dedicated nodes. For more information check the [Configure batch-only and interactive-only AOS nodes in on-premises deployments](./onprem-batchonly.md) guide.
+The following table shows an example of a hardware layout where batch execution and interactive sessions are executed in dedicated nodes. For more information, see [Configure batch-only and interactive-only AOS nodes in on-premises deployments](./onprem-batchonly.md).
 
-| Machine purpose          | SF Node type     | Machine name    | IP address    |
+| Machine  
+rpose          | SF Node type     | Machine name    | IP address    |
 |--------------------------|------------------|-----------------|---------------|
 | Domain controller        |                  | DAX7SQLAODC1    | 10.179.108.2  |
 | AD FS                    |                  | DAX7SQLAOADFS1  | 10.179.108.3  |
@@ -206,7 +207,7 @@ The following prerequisite software is installed on the VMs by the infrastructur
 | Node type | Component | Details |
 |-----------|-----------|---------|
 | AOS       | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
-| AOS       | SNAC – ODBC driver 17.5.x | This driver is needed for upgrading to PU15 or higher: <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752> |
+| AOS       | SNAC – ODBC driver 17.5.x | This driver is needed for upgrading to Platform update 15 or higher: <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
@@ -233,7 +234,7 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 - ax.d365ffo.onprem.contoso.com for AOS machines
 - sf.d365ffo.onprem.contoso.com for the Service Fabric cluster
-- bi.contoso.com for the SSRS machines (only the AOS nodes will reach out, it should not be resolveable outside the cluster)
+- bi.contoso.com for the SSRS machines (only the AOS nodes will reach out, it should not be resolvable outside the cluster)
 
 ### <a name="plancert"></a> 2. Plan and acquire your certificates
 
@@ -262,7 +263,7 @@ Recommended settings for certificates are:
 | Data Signing certificate                     | This certificate is used by the AOS to encrypt sensitive information.  | <p> This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. </p> <p> CN: DataSigning <br> DNS Name: DataSigning </p> |
 | Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and the AOS. | <p>CN: FinancialReporting <br> DNS Name: FinancialReporting </p>  |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| <p> **Do not reuse the Financial Reporting Client certificate.** </p> <p> CN: ReportingService <br> DNS Name: ReportingService </p> |
-| SSRS web server certificate                  | This certificate is used as the Server certificate that is presented to the client (AOS) for the SSRS web server. | <p> The domain name of the certificate should match the FQDN of the load balancer/listener for the SSRS nodes if setting up High Availability. Additionally it should have the FQDN of each of the SSRS nodes. CN: BI.contoso.com <br> DNS Name: BI.contoso.com <br> Subject Alternative Name: BI.contoso.com, BI1.contoso.com, BI2.contoso.com </p> <p> If not setting up HA, the domain name of the certificate should match the FQDN of the SSRS node. CN: BI1.contoso.com <br> DNS Name: BI1.contoso.com </p>
+| SSRS web server certificate                  | This certificate is used as the Server certificate that is presented to the client (AOS) for the SSRS web server. | <p> The domain name of the certificate should match the FQDN of the load balancer/listener for the SSRS nodes if setting up High Availability. Additionally it should have the FQDN of each of the SSRS nodes. CN: BI.contoso.com <br> DNS Name: BI.contoso.com <br> Subject Alternative Name: BI.contoso.com, BI1.contoso.com, BI2.contoso.com </p> <p> If not setting up High Availability, the domain name of the certificate should match the FQDN of the SSRS node. CN: BI1.contoso.com <br> DNS Name: BI1.contoso.com </p>
 | On-Premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premises local agent certificate is needed for a tenant.</p> | <p> CN: OnPremLocalAgent <br> DNS Name: OnPremLocalAgent </p> |
 
 SSL wild card certificate of your domain can be used to combine Service Fabric Server certificate and AOS SSL certificate.
@@ -311,7 +312,7 @@ DNS is integrated with AD DS, and lets you organize, manage, and find resources 
 
 - **ax**.d365ffo.onprem.contoso.com for AOS machines
 - **sf**.d365ffo.onprem.contoso.com for the Service Fabric cluster
-- **BI**.contoso.com for the SSRS load balancer/listener if setting up HA for the service.
+- **BI**.contoso.com for the SSRS load balancer/listener if setting up High Availability for the service.
 
 #### Add a DNS zone
 
@@ -348,7 +349,7 @@ In the new DNS zone, create an A record that is named **sf.d365ffo.onprem.contos
 
 ### <a name="joindomain"></a> 5. Join VMs to the domain
 
-Join each VM to the domain by completing the steps in the [Join a Computer to a Domain](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain) document. Alternatively, use the following Windows PowerShell script.
+Join each VM to the domain by completing the steps in [Join a Computer to a Domain](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain). Alternatively, use the following Windows PowerShell script.
 
 ```powershell
 $domainName = Read-Host -Prompt 'Specify domain name (ex: contoso.com)'
@@ -499,7 +500,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 #### Follow these steps for each VM, or use remoting from a single machine
 
 > [!NOTE]
-> The following section requires execution on multiple VMs. This process can be eased by using the supplied remoting scripts, which provide the option of running the necessary scripts from a single machine, such as the same machine used to execute `.\Export-Scripts.ps1`. The remoting scripts, when available, are declared after a "`# If Remoting`" comment in the PowerShell sections. When the remoting scripts are used, you may not need to execute the remaining scripts in a section, please see the section text for cases such as that. Remoting uses [WinRM](https://msdn.microsoft.com/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. See the [Tear down CredSSP](#teardowncredssp) section when you are finished setting up.
+> The following section requires execution on multiple VMs. This process can be eased by using the supplied remoting scripts, which provide the option of running the necessary scripts from a single machine, such as the same machine used to execute `.\Export-Scripts.ps1`. The remoting scripts, when available, are declared after a "`# If Remoting`" comment in the PowerShell sections. When the remoting scripts are used, you may not need to execute the remaining scripts in a section, please see the section text for cases such as that. Remoting uses [WinRM](https://msdn.microsoft.com/library/aa384426(v=vs.85).aspx) and requires [CredSSP](https://msdn.microsoft.com/library/windows/desktop/bb931352(v=vs.85).aspx) to be enabled in certain cases. The enabling and disabling of CredSSP is handled by the remoting module on a per-execution basis. Keeping CredSSP enabled when it is not in use is not advised, as it introduces security risks in the shape of credential theft. See the [Step 20. Tear down CredSSP](#teardowncredssp) section when you are finished setting up.
 
 1. Copy the contents of each infrastructure\VMs\<VMName> folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following scripts as an Administrator.
 
@@ -536,7 +537,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     ```
 
 > [!IMPORTANT]
-> If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [20. Tear down CredSSP](#teardowncredssp) section.
+> If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [Step 20. Tear down CredSSP](#teardowncredssp) section.
 
 ### <a name="setupsfcluster"></a> 10. Set up a standalone Service Fabric cluster
 
@@ -549,7 +550,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     ```powershell
    .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
     ```
-4. Additional modifications to your cluster configuration may be necessary based on your environment. For more information, see, [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
+4. Additional modifications to your cluster configuration may be necessary based on your environment. For more information, see [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
 
 5. Copy the generated ClusterConfig.json file to the \<ServiceFabricStandaloneInstallerPath\>.
 
@@ -756,7 +757,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 
 > [!IMPORTANT]
-> If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [20. Tear down CredSSP](#teardowncredssp) section for more information.
+> If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [Step 20. Tear down CredSSP](#teardowncredssp) section for more information.
 
 ### <a name="configuredb"></a> 14. Configure the databases
 
@@ -916,7 +917,7 @@ For more information, see [Install integration services](https://docs.microsoft.
     > You must install the database engine when you install SSRS.
     > Additionally, do not configure the SSRS instance. The reporting service will automatically configure everything.
 
-1. For each BI node carry out the following steps:
+1. For each BI node, perform the following steps:
 
     1. Copy the **infrastructure** folder and navigate to it in a PowerShell window with elevate privileges.
     1. Execute the following scripts.
