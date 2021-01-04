@@ -51,14 +51,29 @@ Schema dependencies
 
 The **dependentSchemas** property is used to declare that the schema should change when a specific property value is selected. The [oneOf](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/) property is used to declare the list of different configuration properties.
 
-
-
 #### Example module definition file
 In the following sample definition extension file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property will be displayed, when the **layout** property is set to "RichTextWithImage" then the "featureRichText" and "featureImage" properties will be shown (but not the "featureText" config property).
 
 ```json
 {
-    "$type": "definitionExtension",
+    "$type": "contentModule",
+    "friendlyName": "Product Feature",
+    "name": "product-feature",
+    "description": "Feature module used to highlight a product.",
+    "config": {
+        "layout": {
+            "friendlyName": "Image Alignment",
+            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "type": "string",
+            "enum": {
+                "plainTextOnly": "Plain Text Only",
+                "richTextWithImage": "Rich Text With Image"
+            },
+            "default": "plainTextOnly",
+            "scope": "module",
+            "group": "Layout Properties"
+        },
+    }
     "dependentSchemas": {
         "oneOf": [
             {
@@ -86,12 +101,22 @@ In the following sample definition extension file, you can see that when the **l
                         "type": "richText",
                         "friendlyName": "Feature Text",
                         "description":  "Main rich text to show in module.",
-                    }
+                    },
                     "featureImage" : {
                         "type": "image",
                         "friendlyName": "Feature Title",
                         "description":  "Image to show in module.",
-                    }
+                    },
+                    "imageAlignment": {
+                        "friendlyName": "Image Alignment",
+                        "description": "Sets the desired alignment of the image, either left or right on the text.",
+                        "type": "string",
+                        "enum": {
+                            "left": "Left",
+                            "right": "Right"
+                        },
+                        "default": "left",
+                    },
                 }
             }
         ]
@@ -99,5 +124,39 @@ In the following sample definition extension file, you can see that when the **l
 }
 ```
 
-### Property Dependencies:  With property dependencies, one can declare that  a certain property must be present if a given property is present. 
+### Property Dependencies
+Property dependencies can be used to declare that a certain configuration property must be present if a given property is present.
 
+For example, suppose we have a schema representing a customer. If a customer has entered their credit card number, billing address is a required and you only want to show billing address when the user has entered the credit card info. If they have not entered credit card number, a billing address would not be required and its ok to not show it. 
+
+For such use cases property dependencies are used. We represent this dependency of one property on another using the dependentSchema keyword. Below is the example on how we can achieve this scenario.
+
+In the following example, whenever a creditCard property is provided, a billingAddress property is shown and is a required property:
+
+```json
+{
+    "$type": "contentModule",
+    "friendlyName": "Product Feature",
+    "name": "product-feature",
+    "description": "Feature module used to highlight a product.",
+    "config": {
+        "productTitle": {
+            "type": "string",
+            "friendlyName": "Product Title",
+            "description": "Product title."
+        }
+    }
+    "dependentSchemas": {
+        "productTitle": {
+            "properties": {
+                "subTitle" : {
+                    "type": "string",
+                    "friendlyName": "Product Sub Title",
+                    "description":  "Product sub title",
+                }
+            },
+            "required": ["productTitle"]
+        }
+    }
+}
+```
