@@ -22,7 +22,7 @@ ms.reviewer: josaw
 ms.search.region: Austria
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

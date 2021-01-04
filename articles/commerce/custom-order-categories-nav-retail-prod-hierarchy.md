@@ -18,7 +18,7 @@ ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
 audience: Application User, Merchandising manager, Catalog manager
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 268444
 ms.search.region: global

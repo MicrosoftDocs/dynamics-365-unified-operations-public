@@ -18,7 +18,7 @@ ms.search.form: RetailTillLayout
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
