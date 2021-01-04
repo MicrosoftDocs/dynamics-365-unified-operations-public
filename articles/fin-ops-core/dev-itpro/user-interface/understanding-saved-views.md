@@ -125,7 +125,7 @@ This section provides a list of known issues for saved views while the feature i
 -  (Quality update) [KB 4600209] Personalizations of form parts are not reflected when switching views
 -  (Quality update) [KB 4584077] Error when exporting multiple views
 -  (Quality update) [KB 4582719 and KB 4578126] When multiple personalization records exist for a form, the wrong one can be selected and loaded
--  [Bug 481283] Error opening a form after moving a view with a QuickFillter condition between environments
+-  [Bug 481283] Error opening a form after moving a view with a QuickFilter condition between environments
 -  [Bug 481608] Database sync fails because of a unique index violation on the FormRunConfigurationPublishedView table
 -  [Bug 474817] User options > Personalization doesn't list all personalizations for the user 
 -  [KB 4574781] Duplicate record exception on saving a view
