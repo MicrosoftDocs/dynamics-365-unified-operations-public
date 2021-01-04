@@ -64,7 +64,8 @@ The dialog box returns the ATP information from Supply Chain Management. This in
 
 ## How it works
 
-When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, and **Invoices** pages, a live dual-write call is made to **Onhand inventory** API, which calculates the on-hand inventory for the given product. The result gets stores in InventCDSInventoryOnHandRequestEntity and InventCDSInventoryOnHandEntryEntity entities which then gets dual-written to dataverse. In order to use this functionality, you need to run the following 2 dual-write maps. Please skip initial sync while running the maps.
+When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, or **Invoices** page, a live dual-write call is made to the **Onhand inventory** API. The API calculates the on-hand inventory for the given product. The result is stored in the **InventCDSInventoryOnHandRequestEntity** and **InventCDSInventoryOnHandEntryEntity** tables, and then is written to Dataverse by dual-write. To use this functionality, you need to run the following dual-write maps. Skip initial synchronization when you run the maps.
+
 - CDS inventory on-hand entries (msdyn_inventoryonhandentries)
 - CDS inventory on-hand requests (msdyn_inventoryonhandrequests)
 
