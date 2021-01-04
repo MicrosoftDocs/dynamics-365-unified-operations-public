@@ -44,6 +44,7 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 
 ## Onboard
 - [Set up on-premises projects in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [Set up and deploy on-premises environments (Platform update 41 and later)](setup-deploy-on-premises-pu41.md)
 - [Set up and deploy on-premises environments (Platform update 12-40)](setup-deploy-on-premises-pu12.md)
 - [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 - [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md)
