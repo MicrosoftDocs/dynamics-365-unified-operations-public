@@ -44,7 +44,7 @@ Bundles use the bill of material (BOM) functionality for setup. For information 
 - Bundles must be exploded through the sales order confirmation found under **Sell – Confirm sales order** on the Action Pane of the sales order.  Bundle items must never be exploded through the **Sales order line – EXPLODE – BOM line** action, which is available on the lines of the sales order.  If you use the **Explode – BOM lines** action, the item will be treated as a BOM and not as a bundle. 
 - If a sales order contains a bundle item, the sales order must be confirmed before creating the packing slip or invoice.  
 - When the bundle is exploded through confirmation, the parent item is cancelled, and the unit price and discounts of the parent item are allocated down to the component items of the bundle. 
-  - The sum of the component items must always equal the price on the parent item. In order to ensure that, the component items are very limited with what fields can be updated or changed. For example, the unit price cannot be changed manually or indirectly through a new price agreement going into effect. To prevent a new price agreement, inventory dimensions cannot be changed either on the component items.  
+- The sum of the component items must always equal the price on the parent item. In order to ensure that, the component items are very limited with what fields can be updated or changed. For example, the unit price cannot be changed manually or indirectly through a new price agreement going into effect. To prevent a new price agreement, inventory dimensions cannot be changed either on the component items.  
 - When printing an external facing document, such as the sales order confirmation or invoice, the parent item is printed and not the component items. 
 
 ## Bundles on sales orders
@@ -64,9 +64,17 @@ The following Base sales prices are defined on the components:
 - **Support** - $500.00
 
 A sales order is entered for customer US-004, Cave Wholesales.  The only line entered is the Laptop bundle item.  The Unit price for the parent line can default from numerous places, such as the trade agreement or base sales price.  In this example, $2,300 was manually entered.
+
+[![Trade agreement example](./media/bundle-01.png)](./media/bundle-01.png)
  
 Because the sales order contains a bundle, it must be confirmed.  On the confirmation dialog, the components of the bundle are shown, but the printed confirmation report will display only the parent item of the bundle because that is the external facing document for the customer. 
  
+[![Sales order for bundle item that lists items included in the bundle](./media/bundle-02.png)](./media/bundle-02.png)
+
+The following illustration shows the confirmation document that lists only the bundle item. 
+
+[![Confirmation document showing only the bundle item](./media/bundle-03.png)](./media/bundle-03.png)
+
 After confirmation of the sales order, the parent item still displays on the sales order but moves to a **Canceled** state.  The net amount is also tracked in the Bundle net amount field.  This amount is necessary for printing the invoice because the invoice displays the parent item and not the components.
 
 The component items must sum to the parent item’s Bundle net amount because that is the amount presented to the customer on the printed invoice. If the component amounts were permitted to change, the invoice would no longer match the amounts posted to general ledger. Because of this, edits to the component items is limited.  For example, the Site and Warehouse cannot be changed because it may trigger a price change based on a trade agreement. 
@@ -79,12 +87,13 @@ Component 2:  $2,300 x (500/2550) = $450.98
 Component 3:  $2,300 x (150/2550) = $135.29
 
 The sum of the components must equal $2,300, which they do: <br> $1,713.73 + $450.98 + $135.29 = $2,300
+
 If changes are required on all component items, the parent item can be removed which will also remove the component items. The parent item can then be added again, with the necessary edits prior to confirmation. 
 
- 
+ [![Bundle item with changes to the component items](./media/bundle-04.png)](./media/bundle-04.png)
 
 When the sales order is picked and packed, the documents will include only the components of the bundle. 
-The packing slip and invoice must include a full bundle in order to post.  For example, the three component items are displayed in the dialog. If you try to delete any one of the components, the following error will result:
+The packing slip and invoice must include a full bundle in order to post.  For example, the three component items are displayed in the dialog. If you try to delete any one of the components, an error indicating that all products within the bundle myst be shipped before they can invoiced will display. 
  
 A bundle must be shipped and invoiced as a complete bundle. The packing slip and invoice cannot be posted if the quantity is changed to 4 for only item 1000 and the other component quantities remain at 5.   
 
