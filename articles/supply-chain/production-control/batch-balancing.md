@@ -67,7 +67,7 @@ To associate a base attribute with a product, the following setup is required:
 
 To look up and edit the actual value of the active ingredient for a batch:
 1. Go to **Inventory management \> Inquiries and reports \> Tracking dimensions \> Batches**.
-1. Select a batch number from the list.
+1. Select a batch number from the grid.
 1. On the Action Pane, open the **View** tab and then select **Inventory batch attributes**.
 
 ## Ingredient types and how they interact in the batch balancing process
@@ -90,7 +90,7 @@ size of 100 liters.
 | Compensating | C | 10 | Liter |
 | Filler | D | 40 | Liter |
 
-### Active type
+### Active ingredients
 
 When a product that has a base attribute is added to a formula line, it's
 referred to as an *active ingredient* of the formula. Batch orders that have
@@ -100,7 +100,7 @@ estimates the amount that is required to produce the product. The estimate of
 amounts is based on the concentration of active ingredients in the selected
 batches.
 
-#### Active type example
+#### Active ingredient example
 
 Ingredient B has base attribute X and a target level of 30, and it's included in
 a formula that requires 30 liters of ingredient B for every 100 liters of the
@@ -121,13 +121,13 @@ calculation of the balanced quantity looks like this:
 | C | Compensating | 10 | 14.72 | | Liter | |
 | D | Filler | 40 | 39.57 | | Liter | |
 
-### None type
+### None ingredients
 
 When you apply the batch balancing process when the ingredient type is **None**,
 the estimated quantity and the balanced quantity of the formula line in the batch
 order are the same.
 
-#### None type example
+#### None ingredient example
 
 Ingredient A is assigned to an ingredient of the **None** type and added to a
 formula for a finished product. The formula requires 10 liters of ingredient A
@@ -135,7 +135,7 @@ for every 100 liters of the finished product. When a batch order requires 200
 liters, both the estimated quantity and the balanced quantity of ingredient A
 are calculated as 20 liters.
 
-### Compensating type
+### Compensating ingredients
 
 A compensating ingredient can either offset or complement the effect of the
 active ingredient in a product. Therefore, the quantity of a compensating
@@ -156,7 +156,7 @@ Follow these steps to set up relations between ingredients.
 
 In the compensating principle, you also enter a positive or negative compensating factor to specify how much to compensate for, and whether the principle should be opposing or complementary. A positive factor indicates a complementary effect, and a negative factor indicates an opposing effect.
 
-#### Compensating type example
+#### Compensating ingredient example
 
 Ingredient B is an active ingredient that has base attribute X and a target
 level of 30. It's included in a formula that requires 30 liters of ingredient B
@@ -172,30 +172,27 @@ required active ingredient was calculated as 25.71, and the estimated required
 quantity was calculated as 30. In this case, the balanced quantity of the
 compensating ingredient will be calculated like this:
 
-1. The difference between the estimated and the balanced quantity is determined:
-
+1. The difference between the estimated and the balanced quantity is determined:  
     25.71 – 30 = –4.29
 
-1. The result is multiplied by the compensating factor:
-
+1. The result is multiplied by the compensating factor:  
     4.29 × 1.10 = –4.72
 
-1. The estimated compensating quantity is reduced by –4.72 to determine the balanced compensating quantity:
-
+1. The estimated compensating quantity is reduced by –4.72 to determine the balanced compensating quantity:  
     10 – (–4.72) = 14.72
 
 Because 1.10 is a positive compensating factor, this compensating principle has
 a complementary effect. In this case, the active ingredient is more potent than
 anticipated. Therefore, more of the compensating ingredient is required.
 
-### Filler type
+### Filler ingredients
 
 A *filler ingredient* is a neutral ingredient that is used to reach the desired
 output quantity of the finished product. Adjustments to filler quantities are
 calculated based on variations in the active ingredient and the compensating
 ingredient compared to the standard quantity.
 
-#### Filler type example
+#### Filler ingredient example
 
 You've formulated a product that includes ingredients A, B, C, and D for a
 formula size of 100 liters. You've calculated the balanced quantity of all the
