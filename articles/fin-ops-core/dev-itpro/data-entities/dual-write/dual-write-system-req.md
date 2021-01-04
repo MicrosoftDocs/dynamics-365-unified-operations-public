@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The setup of a dual-write connection has the following requirements:
 
 + Finance and Operations apps that have build version 10.0.9 (10.0.383.20013) (Quality update) and platform update 33 or later
-+ Model-driven apps in Microsoft Dynamics 365 that have platform version 9.1.0000.11732 or later
++ Customer engagement apps that have platform version 9.1.0000.11732 or later
 
 Dual-write has these limitations:
 
