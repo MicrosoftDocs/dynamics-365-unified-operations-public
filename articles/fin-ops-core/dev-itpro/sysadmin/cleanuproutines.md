@@ -5,7 +5,7 @@ title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Ma
 description: The topic provides an overview of cleanup routines in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dvliegen
 manager: AnnBe
-ms.date: 10/28/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,8 +43,8 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Path | Description |
 |------|-------------|
 | System administration \> Periodic tasks \> Notification clean up | <p>This cleanup routine is used to periodically delete records from the EventInbox and EventInboxData tables.</p><p>**Recommendation:** If you don't use alert functionality, turn off the alert from the batch job.</p> |
-| System administration \> Periodic tasks \> Batch job history clean-up | This regular version of the batch job history cleanup routine lets you quickly clean all history entries that are older than a specified number of days. Any entry that was created earlier will be deleted from the BatchJobHistory table, and also from linked tables that have related records (BatchHistory and BatchConstraintsHistory). This version has improved performance optimization, because it doesn't have to run any filtering. |
-| System administration \> Periodic tasks \> Batch job history clean-up (custom) | This custom batch job history cleanup routine should be used only when specific entries must be deleted. You can clean up selected types of batch job history records, based on criteria such as status, job description, company, or user. You can add other criteria by using the **Filter** button. |
+| System administration \> Periodic tasks \> Batch job history clean-up | This regular version of the [batch job history cleanup](batch-history-cleanup.md) routine lets you quickly clean all history entries that are older than a specified number of days. Any entry that was created earlier will be deleted from the BatchJobHistory table, and also from linked tables that have related records (BatchHistory and BatchConstraintsHistory). This version has improved performance optimization, because it doesn't have to run any filtering. |
+| System administration \> Periodic tasks \> Batch job history clean-up (custom) | This [custom batch job history cleanup](batch-history-cleanup.md) routine should be used only when specific entries must be deleted. You can clean up selected types of batch job history records, based on criteria such as status, job description, company, or user. You can add other criteria by using the **Filter** button. |
 | System administration \> Inquiries \> Database \> Database Log \> Clean up log | <p>This cleanup routine lets you delete database logs as you require. You can delete logs for specific tables, delete specific types of database logs, or delete logs based on the date and time when they were created.</p><p>**Note:** Records that have been electronically signed can't be deleted from logs.</p> |
 
 ## Data management
