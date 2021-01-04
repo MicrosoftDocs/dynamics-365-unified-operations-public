@@ -123,13 +123,13 @@ calculation of the balanced quantity looks like this:
 
 ### None ingredients
 
-When you apply the batch balancing process when the ingredient type is **None**,
+When you apply the batch balancing process when the **Ingredient type** is *None*,
 the estimated quantity and the balanced quantity of the formula line in the batch
 order are the same.
 
 #### None ingredient example
 
-Ingredient A is assigned to an ingredient of the **None** type and added to a
+Ingredient A is assigned to an ingredient of the *None* type and added to a
 formula for a finished product. The formula requires 10 liters of ingredient A
 for every 100 liters of the finished product. When a batch order requires 200
 liters, both the estimated quantity and the balanced quantity of ingredient A
@@ -167,7 +167,7 @@ of the compensating ingredient will be reduced by the difference between the
 active ingredient's balanced quantity and the estimated required quantity
 multiplied by 1.10.
 
-In the example for the **Active** ingredient type, the balanced quantity of the
+In the example for the *Active* ingredient type, the balanced quantity of the
 required active ingredient was calculated as 25.71, and the estimated required
 quantity was calculated as 30. In this case, the balanced quantity of the
 compensating ingredient will be calculated like this:
@@ -196,7 +196,7 @@ ingredient compared to the standard quantity.
 
 You've formulated a product that includes ingredients A, B, C, and D for a
 formula size of 100 liters. You've calculated the balanced quantity of all the
-ingredient types except the **Filler** ingredient type that is used on one line.
+ingredient types except the *Filler* ingredient type that is used on one line.
 The balanced quantity of the filler ingredient is calculated as the difference
 between the batch size of 100 liters and the sum of ingredients A, B, and C:
 
@@ -210,7 +210,7 @@ tab, select **Batch balancing**. Batch balancing is available for batch orders
 that have a status of **Started**.
 
 In general, batch balancing can be applied to batch orders if the formula has at
-least one formula line where the ingredient type is **Active**. (For the
+least one formula line where the **Ingredient type** is *Active*. (For the
 exception to this rule, see the "Batch orders that aren't applicable for batch
 balancing" section later in this topic.)
 
