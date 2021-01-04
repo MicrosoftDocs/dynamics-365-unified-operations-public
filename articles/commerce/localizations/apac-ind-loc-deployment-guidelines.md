@@ -22,7 +22,7 @@ ms.reviewer: josaw
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: jiaqia
-ms.search.scope: Retail
+#ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
 

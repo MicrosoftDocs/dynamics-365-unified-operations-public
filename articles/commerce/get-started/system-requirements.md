@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Retail
+#ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 ms.custom: 55651
 ms.search.region: Global
