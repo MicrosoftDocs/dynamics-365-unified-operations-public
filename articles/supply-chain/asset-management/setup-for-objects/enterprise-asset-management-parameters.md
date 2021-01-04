@@ -45,13 +45,8 @@ In Asset Management, general parameters relating to assets, work orders, and wor
 - In the **Standard calendar** field, select a calendar to be used for calculating asset KPIs if no resource is selected on an asset.  
 - In the **View** field, select the standard view that is shown when you open **Asset view** (**Asset management** > **Common** > **Assets** > **Asset view**).
 - **Default request type** is the standard maintenance request type, which is automatically selected when you create a new request.  
-- If you want to create projects that relate to assets, project relations regarding selection of **Main project**, **Project hierarchy**, and the option to **Auto create projects** are set up in **Asset management parameters**.  
-- In the **Work order project mask** field, you define the number of sub projects allowed for work orders and sub assets. A work order mask is used to define how many work orders can be created on an asset and used on the related work order job project. The work order mask is set up in the **Related Work order mask** field in **Asset management parameters** (**Asset management** > **Setup** > **Asset management parameters** > **Work orders**).  
-    >[!NOTE]
-    >The format for a related work order mask is a number of hash signs (#), depending on the maximum number of work orders you expect to create on an asset. Example: ## allows you to create up to 99 sub-projects.  
 - Forecasts on job types are stored on the project selected in the **Forecast project** field. For each job type, a new activity is automatically created on the forecast project. Forecasts on the job type are then saved on the forecast project.  
-- In the **Model** field, select the forecast model used on job type and work order forecasts.  
-
+- In the **Model** field, select the forecast model used on job type and work order forecasts.
 
 **Work orders** link
 
