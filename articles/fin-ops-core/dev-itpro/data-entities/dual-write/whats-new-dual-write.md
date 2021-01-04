@@ -42,6 +42,22 @@ Check out the latest information about dual-write features and changes in the [r
 + [Data in Dataverse – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Finance and Operations data in Dataverse – Phase 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
+## December 2020 release
+
+The December 2020 release of the Dual-write core solution (10.0.24) contains the features and bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Signal repeater service | Enables the dual-write runtime plugin to communicate with the Finance and Operations signal repeater service with authentication support. | General availability
+
+## November 2020 release
+
+The November 2020 release of the Dual-write core solution (10.0.23) contains the features and bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Authentication | Support for new authentication certificate to ensure security. | General availability
+
 ## October 2020 release
 
 The October 2020 release of the Dual-write application orchestration solution and the Dual-write core solution contains the features and bug fixes listed in the following table.
