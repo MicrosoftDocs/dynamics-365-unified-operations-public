@@ -70,7 +70,7 @@ If it is necessary to create an entity that allows set-based processing, some ke
 
 ## Create data migration batch group
 
-During cut-over, try execute the data migration while there is little to no other activity is going on. It can help to configure and use a batch group with all or at least most AOS nodes assigned.
+During cut-over, execute the data migration while there is little to no other activity is going on. It can help to configure and use a batch group with all or at least most AOS nodes assigned.
 
 System administration > Setup > Batch group
 
