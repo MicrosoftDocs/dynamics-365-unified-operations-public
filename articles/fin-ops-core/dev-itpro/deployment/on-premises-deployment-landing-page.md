@@ -5,7 +5,7 @@ title: On-premises deployment home page
 description: This topic provides information and links to content about on-premises deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 12/08/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
