@@ -16,7 +16,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -51,7 +51,7 @@ ms.dyn365.ops.version: 8.1
 
 ### Rules for automatically splitting product receipts and invoices
 
-When you post a purchase order invoice or product receipt, the system splits the documents by the posting profiles and kinds of activity that are defined on the order lines. For order lines that have items where the inventory profile isn't active, the **Basic** kind of activity and the posting profile that is specified in the purchase order header are used.
+When you post a purchase order invoice or product receipt, the system splits the documents by the posting profile and the kind of activity defined on the order lines. For order lines that have items with an inventory profile that isn't active, the **Basic** activity and the posting profile that is specified in the purchase order header are used.
 
 #### Example in the RUMF legal entity
 
@@ -344,10 +344,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>90,00</p>
+<p>90.00</p>
 </td>
 <td width="95">
-<p>90,00</p>
+<p>90.00</p>
 </td>
 </tr>
 <tr>
@@ -370,10 +370,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-140,00</p>
+<p>-140.00</p>
 </td>
 <td width="95">
-<p>-140,00</p>
+<p>-140.00</p>
 </td>
 </tr>
 <tr>
@@ -396,10 +396,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-140,00</p>
+<p>-140.00</p>
 </td>
 <td width="95">
-<p>-140,00</p>
+<p>-140.00</p>
 </td>
 </tr>
 <tr>
@@ -422,10 +422,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>140,00</p>
+<p>140.00</p>
 </td>
 <td width="95">
-<p>140,00</p>
+<p>140.00</p>
 </td>
 </tr>
 <tr>
@@ -448,10 +448,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>24,00</p>
+<p>24.00</p>
 </td>
 <td width="95">
-<p>24,00</p>
+<p>24.00</p>
 </td>
 </tr>
 <tr>
@@ -474,10 +474,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-74,00</p>
+<p>-74.00</p>
 </td>
 <td width="95">
-<p>-74,00</p>
+<p>-74.00</p>
 </td>
 </tr>
 <tr>
@@ -500,10 +500,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-74,00</p>
+<p>-74.00</p>
 </td>
 <td width="95">
-<p>-74,00</p>
+<p>-74.00</p>
 </td>
 </tr>
 <tr>
@@ -526,10 +526,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>74,00</p>
+<p>74.00</p>
 </td>
 <td width="95">
-<p>74,00</p>
+<p>74.00</p>
 </td>
 </tr>
 <tr>
@@ -552,10 +552,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>100,00</p>
+<p>100.00</p>
 </td>
 <td width="95">
-<p>100,00</p>
+<p>100.00</p>
 </td>
 </tr>
 <tr>
@@ -578,10 +578,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-150,00</p>
+<p>-150.00</p>
 </td>
 <td width="95">
-<p>-150,00</p>
+<p>-150.00</p>
 </td>
 </tr>
 <tr>
@@ -604,10 +604,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-150,00</p>
+<p>-150.00</p>
 </td>
 <td width="95">
-<p>-150,00</p>
+<p>-150.00</p>
 </td>
 </tr>
 <tr>
@@ -630,10 +630,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>150,00</p>
+<p>150.00</p>
 </td>
 <td width="95">
-<p>150,00</p>
+<p>150.00</p>
 </td>
 </tr>
 <tr>
@@ -656,10 +656,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>80,00</p>
+<p>80.00</p>
 </td>
 <td width="95">
-<p>80,00</p>
+<p>80.00</p>
 </td>
 </tr>
 <tr>
@@ -682,10 +682,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-130,00</p>
+<p>-130.00</p>
 </td>
 <td width="95">
-<p>-130,00</p>
+<p>-130.00</p>
 </td>
 </tr>
 <tr>
@@ -708,10 +708,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-130,00</p>
+<p>-130.00</p>
 </td>
 <td width="95">
-<p>-130,00</p>
+<p>-130.00</p>
 </td>
 </tr>
 <tr>
@@ -734,16 +734,16 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>130,00</p>
+<p>130.00</p>
 </td>
 <td width="95">
-<p>130,00</p>
+<p>130.00</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-The miscellaneous charges for the purchase order or sales order header is repeated in the cash flow forecast for all combinations of a kind of activity and a posting profile.
+The miscellaneous charges for the purchase order or sales order header are repeated in the cash flow forecast for all combinations of a kind of activity and a posting profile.
 
 Find more details in the following topics:
 

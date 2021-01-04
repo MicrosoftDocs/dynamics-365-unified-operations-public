@@ -12,7 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable
+ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

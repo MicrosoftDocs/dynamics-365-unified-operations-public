@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer electronic invoices
-description: This topic provides information about management of customer electronic invoices for Italy.
+description: This topic provides information about the management of customer electronic invoices for Italy.
 author: v-oloski
 manager: 
 ms.date: 10/15/2020
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: 
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Italy
@@ -30,9 +30,9 @@ ms.author: v-oloski
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up and work with the functionality for creating and sending sales and project invoices in an electronic format (FatturaPA).
+This topic describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
 
-Version 1.2 of FatturaPA electronic invoices can be used for all types of businesses, including public administrations, private companies, and professionals.
+Version 1.2 of FatturaPA electronic invoices can be used for all types of businesses. These businesses include public administrations, private companies, and professionals.
 
 > [!NOTE]
 > The primary address of the legal entity must be in Italy.
@@ -43,9 +43,9 @@ This topic contains the following information:
 - [How to fill in data for output of a tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])](#releteddoc)
 - [Overview of the Electronic invoice register](#einvoiceregister)
 - [Additional functionality that affects the XML file](#additionalfunctionality)
-- [Functionality that is available in monthly update 10.0.12 and later versions](#fatturaPA)
+- [Functionality that is available in monthly update 10.0.12 and later versions](#fatturapa)
 
-## <a name="setup"></a>Setup
+## <a id="setup"></a>Setup
 
 Before you can begin to work with the electronic invoice functionality, the following data must be set up:
 
@@ -57,19 +57,18 @@ Before you can begin to work with the electronic invoice functionality, the foll
 - [Digital certificates](#digitalcert)
 - [Optional: Destination for XML file output](#destination)
 
-### <a name="arparameters"></a>Accounts receivable parameters
+### <a id="arparameters"></a>Accounts receivable parameters
 
-Select the configurations that are used to create electronic invoice XML files for sales and free text invoices, sales and free text credit notes,
-project invoices, and project credit notes. You can find these configurations on the **Electronic document** tab of the **Accounts receivable parameters** page (**Accounts receivable** \> **Setup** \> **Accounts receivable parameters**).
+Select the configurations that are used to create electronic invoice XML files for sales and free text invoices, sales and free text credit notes, project invoices, and project credit notes. You can find these configurations on the **Electronic document** tab of the **Accounts receivable parameters** page (**Accounts receivable** \> **Setup** \> **Accounts receivable parameters**).
 
 ![Electronic document tab of the Accounts receivable parameters page](media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-### <a name="einvoicesparameters"></a>Electronic invoice parameters
+### <a id="einvoicesparameters"></a>Electronic invoice parameters
 
-Use these parameters to specify business scenarios and company-specific information.
+Set these parameters to specify business scenarios and company-specific information.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice parameters**.
 2. On the **General** tab, specify the electronic signature requirement.
@@ -77,7 +76,7 @@ Use these parameters to specify business scenarios and company-specific informat
 4. On the **Art. 2250 Civil code registration** tab, provide any required information if the company is registered under the terms of Article 2250 of the Italian Civil Code.
 5. On the **Number sequences** tab, fill in number sequences for the **eInvoice unique file number** and **eInvoice transmission number** references.
 
-### <a name="edproperties"></a>Electronic document properties
+### <a id="edproperties"></a>Electronic document properties
 
 The functionality for electronic document properties is used to set up the output to XML document blocks for different business cases. Here are some examples:
 
@@ -102,7 +101,7 @@ The specified values are used for output to the XML file blocks. The following t
 | Business scenario | Electronic document property type | Electronic document property type description | Applicability (table) | Where to use the values | Element in the XML file |
 |-------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
 | Customers who are outside the EU and don't have VAT registration codes. For these customers, the VAT registration number should be **00000000000**. | VATnonEU | Example: **Customer, non-EU VAT number** | **CustTable** (Customers) | In customer electronic document properties, set the **Value** field to **00000000000**. | **IdCodice** (**CessionarioCommittente\\DatiAnagrafici\\IdFiscaleIVA** block) |
-| Certified email address (PEC) for private companies or professionals | PEC | Example: **Customer, Certified e-mail address** | **CustTable** (Customers) | In customer electronic document properties, set the **Value** field to **\<PEC\>**. | **PECDestinatario** (**DatiTrasmissione** block) |
+| Certified email address (PEC) for private companies or professionals | PEC | Example: **Customer, Certified email address** | **CustTable** (Customers) | In customer electronic document properties, set the **Value** field to **\<PEC\>**. | **PECDestinatario** (**DatiTrasmissione** block) |
 | Stamp duty that isn't included in the invoice total for sales invoices, and that is or isn't included for project invoices | Bollo<p><strong>Note:</strong> This document property type is used for sales order invoices, free text invoices, and project invoices.</p> | Example: **Stamp duty, included/not included into invoice totals** | **CompanyInfo** (Legal entities) | In legal entity electronic document properties, set the **Value** field to **\<Charge code/project category that is used for stamp duties\>**:<ul><li>**Charge code** – The debit type for this charge code should be **Ledger**.</li><li>**Project category** – This project category should be billable.</li></ul> | **ImportoBollo** (**DatiBollo** block) |
 | Stamp duty that is included in the invoice total | BolloPay<p><strong>Note:</strong> This document property type is used only for sales order invoices and free text invoices.</p> | Example: **Stamp duty, included into invoice totals** | **CompanyInfo** (Legal entities) | In legal entity electronic document properties, set the **Value** field to **\<Charge code/project category that is used for stamp duties\>**:<ul><li>**Charge code** – The debit type should be **Customer/Vendor**.</li></ul> | **ImportoBollo** (**DatiBollo** block) |
 | Representative | TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | In customer electronic document properties, set the **Value** field to **IT** for the **TaxRepPaese** document property type. For other types, fill in data for the representative. | **Cognome** (**RappresentanteFiscale** block) |
@@ -113,7 +112,7 @@ The specified values are used for output to the XML file blocks. The following t
 >
 > - "Customer electronic document properties" refers to the **Electronic document properties** page that is opened by selecting **Electronic document properties** on the **Customer** tab on the Action Pane of the **All customers** page (**Accounts receivable \> Customers \> All customers**).
 > - "Legal entity electronic document properties" refers the **Electronic document properties** page that is opened by selecting **Electronic document properties** on the Action Pane of the **Legal entities** page (**Organization administration \> Organizations \> Legal entities**).
-> 
+>
 > On the **Electronic document property types** list page, the **Description** field is automatically filled in when a user enters information in the **Group description** and **Description** fields.
 >
 > The electronic document property type must have the same code that is specified in the table.
@@ -129,7 +128,7 @@ When you create **Fee** or **Expense** journal lines, select the category that w
 > [!NOTE]
 > You can use only one of the journal types (**Fee** or **Expense**) for stamp duty. A company that uses only payable stamp duty can use the **Fee** journal type. If a company uses both payable and non-payable stamp duty, it's better to use the **Expense** journal type.
 
-### <a name="customers"></a>Customers
+### <a id="customers"></a>Customers
 
 #### Authority office field
 
@@ -144,38 +143,39 @@ In both cases, the system enters the value of this field in the **CodiceDestinat
 
 ![Authority office field on the Sales demographics FastTab of a customer record](media/emea-ita-electronic-invocies-customer-authority-office.png)
 
-If the **Authority office** field is blank, the system considers the customer a private company or professional (the transmission format equals **FPR12**) and enters **0000000** in the **CodiceDestinatario** tag in the XML file. In this case, a certified e-mail address (PEC) should be set up. For more information, see the table in the [Electronic documents properties](#edproperties) section earlier in this topic.
+If the **Authority office** field is blank, the system considers the customer a private company or professional (the transmission format equals **FPR12**), and enters **0000000** in the **CodiceDestinatario** tag in the XML file. In this case, a certified email address (PEC) should be set up. For more information, see the table in the [Electronic documents properties](#edproperties) section earlier in this topic.
 
-#### Activate automatic creation of e-invoices
+#### Activate automatic creation of electronic invoices
 
-Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a customer record in **Edit** mod. Then, on the **Invoice and delivery** FastTab, in the **E-invoice** section, find the **eInvoice register** option. If this option is set to **Yes**, the system automatically creates the record on the **Electronic customer invoices** list page. For more information, see [Electronic invoice register](#einvoiceregister).
+Go to **Accounts receivable** \> **Customers** \> **All customers**, and open a customer record in **Edit** mode. Then, on the **Invoice and delivery** FastTab, in the **E-invoice** section, find the **eInvoice register** option. If this option is set to **Yes**, the system automatically creates the record on the **Electronic customer invoices** list page. For more information, see the [Electronic invoice register](#einvoiceregister) section later in this topic.
 
 ![E-invoice section on the Invoice and delivery FastTab of a customer record](media/emea-ita-electronic-invocies-customer-e-invoice.png)
 
-In the **E-invoice** section, you can also set the **eInvoice attachment** option to **Yes**. In this case, after you print an invoice (either during or after posting), the system automatically attaches the PDF file to the invoice and eInvoice (see [Electronic invoice register](#einvoiceregister)), and the file is included in the XML file (**Allegatti** block).
+In the **E-invoice** section, you can also set the **eInvoice attachment** option to **Yes**. In this case, after you print an invoice (either during or after posting), the system automatically attaches the PDF file to the invoice and electronic invoice (see the [Electronic invoice register](#einvoiceregister) section), and the file is included in the XML file (**Allegati** block).
 
-### <a name="items"></a>Items
+### <a id="items"></a>Items
 
-If there are product lines on an invoice, the **CodiceArticolo** block is filled in based on product data. This data includes the product bar code, the internal product number or item number, and the external item description. This information can be found by going to, **Product information management** > **Products** > **Released products**, and on the Action Pane, select **Sell** > **Related information**.    
+If there are product lines on an invoice, the **CodiceArticolo** block is filled in based on product data. This data includes the product bar code, the internal product number or item number, and the external item description. This information can be found by selecting options in the **Related information** group on the **Sell** tab on the Action Pane of the **Released products** page (**Product information management** \> **Products** \> **Released products**).
 
-The **CodiceTipo** field is filled in as follows:
-- If there is a bar code, this field = **EAN**.
-- If there isn't a bar code, and the record in the **External item description** exists for the product and the customer, then this field has the value from the **Description** field.
-- If there isn't a bar code, and the record in the **External item description** does not exist for the product, this field includes the **Codice Art. fornitore** text.
+The **CodiceTipo** field is set according to the following rules:
 
-**CodiceValore** field is filled in as follows:
-- If there is a bar code, this field includes the bar code.
-- If there isn't a bar code, and the record in the **External item description** exists for the product and the customer, then this field includes the value from **External item number** field.
-- If there isn't a bar code, and the record in the **External item description** does not exist for the product and customer, this field includes the value from the **Item number** field. 
+- If there is a bar code, this field is set to **EAN**.
+- If there isn't a bar code, and the record on the **External item description** page exists for the product and the customer, this field is set to the value from the **Description** field.
+- If there isn't a bar code, and the record on the **External item description** page doesn't exist for the product, this field is set to the **Codice Art. fornitore** text.
 
+The **CodiceValore** field is set according to the following rules:
 
-### <a name="digitalcert"> </a>Digital certificates
+- If there is a bar code, this field is set to the bar code.
+- If there isn't a bar code, and the record on the **External item description** page exists for the product and the customer, this field is set to the value from **External item number** field.
+- If there isn't a bar code, and the record on the **External item description** page doesn't exist for the product and customer, this field is set to the value from the **Item number** field.
+
+### <a id="digitalcert"></a>Digital certificates
 
 Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates** to electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type.
 
 ![Electronic signature certificates page](media/emea-ita-electronic-invocies-certificate.png)
 
-The party that is issuing invoices must use a qualified signature certificate to sign each FatturaPA file that is transmitted to the Exchange System - **SDI** (*Sistema di Interscambio*). A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
+The party that is issuing invoices must use a qualified signature certificate to sign each FatturaPA file that is transmitted to the Sistema di Interscambio (SdI) exchange system. A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
 
 Microsoft Dynamics 365 Finance supports the **XAdES-BES** signature format. To enable Finance to support FatturaPA, follow these steps.
 
@@ -186,14 +186,14 @@ Microsoft Dynamics 365 Finance supports the **XAdES-BES** signature format. To e
 
 2. Define company-level certificates and user-level certificates, as required.
 
-### <a name="destination"></a>Destination for XML file output
+### <a id="destination"></a>Destination for XML file output
 
 If XML files must be sent as output to a specific place when invoices are posted (for example, if they must be sent to a SharePoint folder), set up a document type, and then set up a destination. For more information about these steps, see [Configure document management](../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md) and [Electronic reporting (ER) destinations](../../dev-itpro/analytics/electronic-reporting-destinations.md).
 
 > [!NOTE]
 > The **Print invoice** option must be set to **Yes**. If the destination is set up, the status of the electronic invoice record for the invoice is automatically set to **Sent**.
 
-## <a name="releteddoc"></a>Fill in data for related documents
+## <a id="releteddoc"></a>Fill in data for related documents
 
 Companies can report additional information about some base documents that are related to invoices. Here are some examples:
 
@@ -210,7 +210,7 @@ To enable the system to enter information in these blocks, set the following fie
 - On the **Project proposal** page (**Project management and accounting** \> **Projects** \> **All projects**), on the Action Pane, on the **Manage** tab, in the **Bill** group, select **Invoice proposal**, and then set the fields in the **Base document** section.
 
 > [!NOTE]
-> Data from the fields in the **Base document** section is sent as output from different blocks, depending on the value of the **Base document** field.
+> As the following table shows, data from the fields in the **Base document** section is sent as output from different blocks, depending on the value of the **Base document** field.
 > 
 > | Value of the Base document field | Block that data is sent from |
 > |---|---|
@@ -220,16 +220,16 @@ To enable the system to enter information in these blocks, set the following fie
 > | Management system | DatiRicezione |
 > | Original invoice | DatiFattureCollegate |
 
-For each base document, users can add details about the document number and date, CUP (unique project code, which is managed by the Inter Ministerial Committee for Economic Planning), CIG (tender procedure identification code), and agreement code.
+For each base document, users can add details about the document number and date, CUP (unique project code that is managed by the Inter Ministerial Committee for Economic Planning), CIG (tender procedure identification code), and agreement code.
 
-## <a name="einvoiceregister"></a>Electronic invoice register
+## <a id="einvoiceregister"></a>Electronic invoice register
 
-To view all customer electronic invoices and perform various actions, go to **Accounts receivable** \> **Invoices** \> **E-Invoices** \> **Electronic invoices** to open the **Electronic customer invoices** page.
+To view all customer electronic invoices and perform various actions, go to **Accounts receivable** \> **Invoices** \> **E-Invoices** \> **Electronic invoices**.
 
-On this page, you can perform any of the following actions:
+On the **Electronic customer invoices** page, you can perform any of the following actions:
 
 - Select **Select** to select invoices, based on various criteria. This function is useful if the **eInvoice register** option is set to **No**.
-- Select **Create XML**, **Create signature**, and **Send** to create XML files and a digital signature for selected invoices, and send them.
+- Select **Create XML**, **Create signature**, and **Send** to create XML files and a digital signature for selected invoices, and send the invoices.
 - Select **Export** to export a selected invoice to an XML file.
 
     > [!NOTE]
@@ -242,20 +242,21 @@ On this page, you can perform any of the following actions:
 
 ![Electronic customer invoices page](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
 
-## <a name="additionalfunctionality"></a>Additional functionality that affects the XML file
+## <a id="additionalfunctionality"></a>Additional functionality that affects the XML file
 
 ### Tax invoice for goods delivered for free
 
 For information about how to set up and work with this functionality, see [Tax invoice for goods delivered for free](emea-ita-exil-goods-for-free.md).
 
-On the **Distribution** page (**Sales and marketing** \> **Setup** \> **Distribution**), if **Goods for free** is selected in the **Reason for delivery** field and the **Invoice account** field is blank, the **TipoCessionePrestazione** element is sent as output in the XML file.
+On the **Distribution** page (**Sales and marketing** \> **Setup** \> **Distribution**), if **Goods for free** is selected in the **Reason for delivery** field, and the **Invoice account** field is blank, the **TipoCessionePrestazione** element is sent as output in the XML file.
 
 ### Intent letters – Invoicing of usual exporters
 
 For information about how to set up and work with this functionality, see [Intent letters – Invoicing of usual exporters](emea-ita-exil-intent-letter.md).
+
 If an intent letter is set up for a customer, the **Causale** element (**DatiGeneraliDocumento** block) that has the number of the intent letter is sent as output in the XML file.
 
-## <a name='fatturaPA'></a>Functionality that is available in Finance version 10.0.12
+## <a id="fatturapa"></a>Functionality that is available in Finance version 10.0.12
 
 ### Reverse charge and reverse charge group configuration
 

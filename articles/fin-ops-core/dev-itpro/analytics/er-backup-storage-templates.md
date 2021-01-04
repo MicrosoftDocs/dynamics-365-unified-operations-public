@@ -18,7 +18,6 @@ ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid:
@@ -64,7 +63,7 @@ If a template of an ER format is required for generation of outbound documents, 
     - If this parameter is set to **Off**, the message recommends that you start the batch process to automatically fix similar issues for other ER format configuration templates. The message includes a link that you can use to start the batch process.
     - If this parameter is set to **On**, the message notifies you that a missing templates issue has been discovered, and that a new batch process, **Restore broken templates from internal database backup**, has been automatically scheduled. This batch process will automatically fix similar issues for other templates.
 
-To set up the he **Automatically run the procedure of restoring the broken templates in batch** parameter, complete the following steps:
+To set up the **Automatically run the procedure of restoring the broken templates in batch** parameter, complete the following steps:
 
 1. In Finance and Operations, open the **Organization administration \> Electronic reporting \> Configurations page**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.

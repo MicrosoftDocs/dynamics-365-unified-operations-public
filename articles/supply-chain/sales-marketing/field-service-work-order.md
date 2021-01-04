@@ -35,6 +35,8 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic discusses the templates and underlying tasks that are used to synchronize work orders in Dynamics 365 Field Service to sales order in Dynamics 365 Supply Chain Management.
 
 [![Synchronization of business processes between Supply Chain Management and Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
@@ -65,13 +67,13 @@ The following synchronization tasks are required before synchronization of sales
 
 | **Field Service** | **Supply Chain Management** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS sales order headers |
-| msdyn_workorderservices | CDS sales order lines   |
-| msdyn_workorderproducts | CDS sales order lines   |
+| msdyn_workorders        | Dataverse sales order headers |
+| msdyn_workorderservices | Dataverse sales order lines   |
+| msdyn_workorderproducts | Dataverse sales order lines   |
 
 ## Entity flow
 
-Work orders are created in Field Service. If the work orders include only externally maintained products, and if the **Work order status** value differs from **Open-Unscheduled** and **Closed – Cancelled**, the work orders can be synchronized to Supply Chain Management via a Common Data Service Data integration project. Updates on the work orders will be synchronized as sales orders in Supply Chain Management. These updates include the information about the origin type and status.
+Work orders are created in Field Service. If the work orders include only externally maintained products, and if the **Work order status** value differs from **Open-Unscheduled** and **Closed – Cancelled**, the work orders can be synchronized to Supply Chain Management via a Microsoft Dataverse Data integration project. Updates on the work orders will be synchronized as sales orders in Supply Chain Management. These updates include the information about the origin type and status.
 
 ## Estimated versus Used
 

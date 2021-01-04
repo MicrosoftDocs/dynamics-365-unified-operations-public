@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17311
 ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
@@ -75,7 +74,7 @@ Whenever the user interacts with the Gantt, an event is raised to notify the ser
 -   onSummaryActivityCollapse(str \_activityId)
 -   onActivityChanged(GanttControlActivityModification \_modification, GanttControlActivityModificationResponse \_response)
 
-All these events are one-way notifications from the client. However, the **onActivityChanged** event is somewhat special, because you can set a response. Typically, when a user makes a modification (for example, he or she drags an activity to a new time), either other activities must also be updated or some adjustments must be made to the activity itself (for example, the column texts must be changed). In the **GanttControlActivityModificationResponse** response, you can provide a list of activities that must be updated. If the change that the user makes is just accepted as is, no response must be set. However, at the very least, the column texts of the current activity must be updated in most cases, to guarantee that the new from and to dates appear. On an activity, the **parmAllowMove** flag determines whether the activity can be moved. However, higher-level flags on **GanttControlConfiguration** determine whether any activity can be moved (**parmAllowMoveActivities**) or resized (**parmAllowResizeActivities**), or whether the completion percentage for the activity can be changed (**parmAllowCompletionChange**).
+All these events are one-way notifications from the client. However, the **onActivityChanged** event is somewhat special, because you can set a response. Typically, when a user makes a modification (for example, dragging an activity to a new time), either other activities must also be updated or some adjustments must be made to the activity itself (for example, the column texts must be changed). In the **GanttControlActivityModificationResponse** response, you can provide a list of activities that must be updated. If the change that the user makes is just accepted as is, no response must be set. However, at the very least, the column texts of the current activity must be updated in most cases, to guarantee that the new from and to dates appear. On an activity, the **parmAllowMove** flag determines whether the activity can be moved. However, higher-level flags on **GanttControlConfiguration** determine whether any activity can be moved (**parmAllowMoveActivities**) or resized (**parmAllowResizeActivities**), or whether the completion percentage for the activity can be changed (**parmAllowCompletionChange**).
 
 
 

@@ -94,12 +94,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.16 (February 2021)
+            href: get-started/whats-new-commerce-10-0-16.md
           - name: Commerce 10.0.15 (January 2021)
             href: get-started/whats-new-commerce-10-0-15.md
           - name: Commerce 10.0.14 (November 2020)
             href: get-started/whats-new-commerce-10-0-14.md
-          - name: Commerce 10.0.13 (October 2020)
-            href: get-started/whats-new-commerce-10-0-13.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -108,8 +108,6 @@
             href: get-started/removed-deprecated-features-commerce.md
         - name: AX 2012 features that were postponed
           href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-        - name: Features not implemented in on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/commerce/toc.json
         - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
           href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
       - name: Documentation resources
@@ -166,7 +164,7 @@
           href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/commerce/toc.json
         - name: Configure and filter workspaces
           href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/commerce/toc.json
-        - name: Show pages side by side by using the Open in new window feature
+        - name: Show pages side-by-side by using the Open in new window feature
           href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/commerce/toc.json
         - name: Keyboard shortcuts
           href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/commerce/toc.json
@@ -326,6 +324,8 @@
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
             - name: Calculation of tax exemption
               href: tax-exempt-price-inclusive.md
+            - name: Configure sales tax for online orders
+              href: sales-tax-config.md
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
           - name: Number sequences 
@@ -532,6 +532,10 @@
             href: dev-itpro/commerce-payments.md
           - name: Process credit cards without a hardware station
             href: dev-itpro/cnp-pos.md
+          - name: Dynamics 365 Payment Connector for PayPal
+            href: paypal.md
+          - name: Wallet payment support
+            href: wallets.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
         - name: Manage Bing Maps for your organization
@@ -714,10 +718,14 @@
           href: hybrid-customer-orders.md
         - name: Recall order operation in POS
           href: enhancedorderrecall.md
+        - name: Enable multiple pickup delivery modes
+          href: multiple-pickup-modes.md
       - name: Sales orders   
         items:
-        - name: Create a call center order 
+        - name: Create call center orders 
           href: tasks/create-call-center-orders.md
+        - name: Customize transactional emails by mode of delivery
+          href: customize-email-delivery-mode.md
         - name: Change mode of delivery in POS
           href: POS-change-delivery-mode.md
       - name: Distributed order management   
@@ -850,6 +858,10 @@
           href: add-cdn-support.md
         - name: Enable location-based store detection
           href: enable-store-detection.md
+        - name: E-commerce digital gift cards
+          href: digital-gift-cards.md
+        - name: Browser requirements for Dynamics 365 Commerce sites
+          href: browser-requirements.md
       - name: Sample site overview
         items:
         - name: Home page overview
@@ -960,6 +972,8 @@
           href: dam-crop-images.md 
         - name: Customize image focal points
           href: dam-custom-focal-point.md
+        - name: Upload and serve static files
+          href: upload-serve-static-files.md
       - name: Make your site compliant
         items:
         - name: Compliance overview
@@ -1056,6 +1070,10 @@
             href: nav-menu-module.md
           - name: Site selector module
             href: site-selector.md
+        - name: Search modules
+          items:
+          - name: Search results module
+            href: search-result-module.md
         - name: Compliance modules
           items:
           - name: Cookie consent module
@@ -1982,21 +2000,23 @@
           href: e-commerce-extensibility/overview.md
         - name: Get started
           items:
+          - name: Get started with e-commerce online extensibility development
+            href: e-commerce-extensibility/sdk-getting-started.md
           - name: System requirements
             href: e-commerce-extensibility/system-requirements.md
           - name: Set up a development environment
             href: e-commerce-extensibility/setup-dev-environment.md
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
-          - name: Debug against a Tier 1 Commerce development environment
+          - name: Configure an e-commerce development environment against a Commerce cloud environment
             href: e-commerce-extensibility/debug-tier-1.md
           - name: Set up Azure DevOps code sharing and create a build pipeline
             href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
           items:
-          - name: Architectural overview
+          - name: E-commerce architectural overview
             href: e-commerce-extensibility/architectural-overview.md
-          - name: Online components
+          - name: E-commerce components
             href: e-commerce-extensibility/ecommerce-components.md 
           - name: CLI command reference
             href: e-commerce-extensibility/cli-command-reference.md
@@ -2176,6 +2196,8 @@
           href: dev-itpro/POS-APIs.md
         - name: POS payment extension
           href: dev-itpro/pos-payment-extension.md
+        - name: Support for tipping in the POS payments SDK
+          href: dev-itpro/tipping.md
         - name: Support for external gift cards
           href: dev-itpro/gift-card.md
         - name: Create and apply branding to the Retail Experience app

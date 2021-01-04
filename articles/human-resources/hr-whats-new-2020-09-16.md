@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (September 16, 2020)
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3557. The numbers in parentheses next to some features refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Included in this release

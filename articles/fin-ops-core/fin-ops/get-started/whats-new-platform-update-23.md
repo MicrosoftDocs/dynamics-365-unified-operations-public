@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 23 (January 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -47,7 +46,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Legal entity filtering using grid column headers
 
-Starting in Platform update 23, for grids with cross-company queries, users are able to filter the *Legal entity* column using the column drop-down menu, similar to other columns in the grid. For example, if a user is looking at the global transactions for a specific customer, he might want to find the transactions within a small subset of companies. Prior to this feature, he would have had to filter using the Customer range tab on the Advanced filter or sort dialog box, or utilize page-specific custom filters.
+Starting in Platform update 23, for grids with cross-company queries, users are able to filter the *Legal entity* column using the column drop-down menu, similar to other columns in the grid. For example, if users are looking at the global transactions for a specific customer, they might want to find the transactions within a small subset of companies. Prior to this feature, users would have had to filter using the Customer range tab on the Advanced filter or sort dialog box, or utilize page-specific custom filters.
 
 ![Filter by legal entity](media/legalEntityFiltering.png "Filter by legal entity")
 

@@ -18,7 +18,6 @@ ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

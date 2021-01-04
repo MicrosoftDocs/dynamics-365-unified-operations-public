@@ -5,7 +5,7 @@ title: Messaging APIs - Action center, message bar, and message details
 description: This topic describes the messaging system.
 author: jasongre
 manager: AnnBe
-ms.date: 05/13/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64153
 ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
@@ -32,6 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Messaging APIs - Action center, message bar, and message details
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the messaging system in Finance and Operations apps, specifically in terms of the application programming interfaces (APIs) that are used to create and route messages to end users.  
 
@@ -85,7 +85,9 @@ The message can then be cleared when a new record is shown on the page.
 Message::Remove(messageId);
 ```
 
-Starting in version 10.0.10 Platform update 34, you can use the **Message::AddAction()** method to embed an action within a message (though this is only currently supported for messages that are routed to the message bar). This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. In this example, a message is triggered for a system administrator indicating a particular required batch job is not running and exposes an action to go directly to the Batch jobs page.  
+Starting in version 10.0.10 / Platform update 34, you can use the **Message::AddAction()** method to embed an action within a message. This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. The actions are only supported in messages that are routed to the message bar until version 10.0.16 / Platform update 40, at which time these actions can be seen in messages that are routed to the Action center or the Message details pane.
+
+In this example, a message is triggered for a system administrator indicating a particular required batch job is not running and exposes an action to go directly to the **Batch jobs** page.  
 
 ![Example of the Message:AddAction API used for embedding an action in a message](./media/cli-messageAddAction.png)
 

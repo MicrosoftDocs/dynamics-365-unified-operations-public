@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Settle customer consolidated invoices by using settle transactions
-description: In Japan, payments are made and settled against consolidated invoice. 
+description: This topic provides information about payments that are made and settled against consolidated invoices. 
 author: ShylaThompson
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -17,7 +17,7 @@ ms.search.form: CustConsInvoice_JP, CustTable, CustOpenTrans
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
+# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -32,19 +32,15 @@ ms.dyn365.ops.version: Version 7.0.0
 
 In Japan, payments are made and settled against consolidated invoice.
 
-
-
 This procedure walks you through settling a consolidated invoice using settle transactions.
 
-
-
-You need to make sure that a consolidated invoice is created and confirmed, and a payment is posted before running this procedure. 
+Before you begin this procedure, make sure that a consolidated invoice is created and confirmed, and a payment has been posted. 
 
 This procedure was created using the demo data company JPMF.
 
 1. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
     * Confirm the consolidated invoice you want to settle is at status of Confirmed.  
-    * You need to create and confirm a consolidated invoice.  
+    * Create and confirm a consolidated invoice.  
 2. Go to Accounts receivable > Customers > All customers.
 3. In the list, mark the selected row.
     * Select the customer that you want to settle the consolidated invoice for.  
@@ -57,5 +53,5 @@ This procedure was created using the demo data company JPMF.
     * If you're running this procedure as a task guide, you might need to unlock the task guide before you can select the record.  
 8. Click Post.
 9. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
-    * Confirm the status of the Consolidated invoice is updated to Settled.  
+    * Confirm that the status of the Consolidated invoice is updated to Settled.  
 

@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 91213
 ms.assetid: f0bbc78f-87fc-40e9-b46a-6655893f69be

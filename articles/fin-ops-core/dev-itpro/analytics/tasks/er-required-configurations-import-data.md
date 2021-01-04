@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesig
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -101,11 +100,11 @@ The steps in this subtask show you how a new format configuration can be created
 
     Note that the designed format is presented here as a data source component.  
 
-6. In the tree, expand 'format: Record\*settlement: XML Element 1..1 (settlement): Record'.
-7. In the tree, expand 'format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list'.
-8. In the tree, expand 'format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record'.
-9. In the tree, expand 'format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record'.
-10. In the tree, select 'format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record'.
+6. In the tree, expand `format: Record\*settlement: XML Element 1..1 (settlement): Record`.
+7. In the tree, expand `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list`.
+8. In the tree, expand `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
+9. In the tree, expand `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record`.
+10. In the tree, select `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
 
     Note that the presentation of mandatory and optional format elements is different in the predefined 'format' data source component.  
 11. In the tree, expand 'Transactions: Record list= format.settlement.'$enumerated''.
@@ -240,17 +239,17 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 19. Close the page.
 20. Click Edit.
 
-    If you installed the hotfix "KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 Finance" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), execute the next step "Turn the flag 'Default for model mapping' on" for the entered format configuration. Skip the next step otherwise.  
+    If you installed the hotfix "KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 Finance" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), execute the next step "Turn the flag 'Default for model mapping' on" for the entered format configuration. Skip the next step otherwise.  
 
-21. Select Yes in the Default for model mapping field.
+21. Select Yes in the Default for model-mapping field.
 22. In the tree, select '1099 Payments model'.
 23. Click Designer.
 24. Click Map model to datasource.
 25. Click Run.
 
-    If you installed the hotfix, KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), select the preferred model mapping in the lookup field. If you haven't installed the hotfix yet, skip to the next step as the mapping has already been selected by the definition of the default format configuration.  
+    If you installed the hotfix, KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), select the preferred model mapping in the lookup field. If you haven't installed the hotfix yet, skip to the next step as the mapping has already been selected by the definition of the default format configuration.  
     
-    If you have not installed the hotfix, KB 4012871, notice that the dialog box contains an additional model mapping question that is used to parse the file that you are importing. The data is then ported from the dialog box to the data model. Currently, you can choose which format mapping must be used depending on the type of file that you plan to import.  
+    If you have not installed the hotfix, KB 4012871, notice that the dialog box contains an additional model-mapping question that is used to parse the file that you are importing. The data is then ported from the dialog box to the data model. Currently, you can choose which format mapping must be used depending on the type of file that you plan to import.  
     
     If you plan to call this model mapping from a point in the application that is specifically designed for the action, the ER destination and the format mapping must be marked as part of the integration.  
 

@@ -17,7 +17,6 @@ ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

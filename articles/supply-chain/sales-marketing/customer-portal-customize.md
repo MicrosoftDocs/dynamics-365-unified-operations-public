@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Customize and use the Customer portal
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic describes the different pages that available in the Customer portal out of the box. It explains what the pages do and how you can customize them.
 
 The Customer portal offers a few webpages and actions out of the box. The following site map provides an overview of those webpages and actions, and the roles that can perform the actions.
@@ -43,9 +45,9 @@ The following topics will help you learn the basics about Power Apps portals and
 - [Manage portal content](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) – This topic explains how you can manage and customize the content that you surface in your portal.
 - [Edit CSS](https://docs.microsoft.com/powerapps/maker/portals/edit-css) – This topic helps you make more complex customizations to the user interface (UI) of your portal.
 - [Create a theme for your portal](https://docs.microsoft.com/dynamics365/portals/create-theme) – This topic helps you create a UI theme for your portal.
-- [Create and expose portal content easily](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – This topic helps you manage the underlying data and entities that you use for your portal.
+- [Create and expose portal content easily](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – This topic helps you manage the underlying data and tables that you use for your portal.
 - [Configure a contact for use on a portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) – This topic explains how to create and customize user roles, and how security and authentication work in Power Apps portals.
-- [Configure notes for entity forms and web forms on portals](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – This topic explains how to add documents and additional storage to your portal.
+- [Configure notes for table forms and web forms on portals](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – This topic explains how to add documents and additional storage to your portal.
 - [Error handling for portal website](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) – This topic explains how to view portal error logs and store them in your Microsoft Azure Blob storage account.
 
 ## Customize the order creation process
@@ -94,7 +96,7 @@ Here are the standard steps for submitting an order from the Customer portal.
 
 To help ensure a smooth user experience, the Customer portal automatically fills in values for several required fields. These values are based on information in the contact record of the customer who is submitting the order.
 
-For each [contact record](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) that belongs to a customer who will use the Customer portal to submit orders, values must be specified for the following required fields. Otherwise, errors will occur.
+For each [contact row](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) that belongs to a customer who will use the Customer portal to submit orders, values must be specified for the following required fields. Otherwise, errors will occur.
 
 - **Company** – The legal entity that the order belongs to
 - **Potential customer** – The customer account that is associated with the order
@@ -102,7 +104,7 @@ For each [contact record](https://docs.microsoft.com/powerapps/maker/portals/con
 - **Currency** – The currency of the price
 - **Ship to country/region** – The country or region that the items will be delivered to
 
-The following fields are automatically set for the sales order entity:
+The following fields are automatically set for the sales order table:
 
 - **Language** – The language of the order (By default, the value is taken from the contact record.)
 - **Ship to country/region** – The country or region that the items will be delivered to (By default, the value is taken from the contact record.)
@@ -119,7 +121,7 @@ The following fields are automatically set for the sales order entity:
 
 You can freely modify the appearance and UI of the Customer portal if you don't change the basic order creation process. If you want to change the order creation process, there are a few points that you must keep in mind.
 
-Don't remove the following fields from the sales order entity in Common Data Service, because they are required to create a sales order in dual-write:
+Don't remove the following columns from the sales order table in Microsoft Dataverse, because they are required to create a sales order in dual-write:
 
 - **Company** – The legal entity that the order belongs to
 - **Name** – The name of the sales order
@@ -130,7 +132,7 @@ Don't remove the following fields from the sales order entity in Common Data Ser
 - **Language** – The language of the order (Typically, this language is the language of the potential customer.)
 - **Delivery address description** – The delivery address of the sales order
 
-For items, the following fields are required:
+For items, the following columns are required:
 
 - **Product** – The product to order
 - **Quantity** – The quantity of the selected product
@@ -138,11 +140,11 @@ For items, the following fields are required:
 - **Ship to country/region** – The country or region of delivery
 - **Delivery address description** – The delivery address of the order
 
-You must make sure that your Customer portal somehow submits values for all these fields.
+You must make sure that your Customer portal somehow submits values for all these columns.
 
-If you want to add fields to the page, or remove fields, see [Create or edit quick create forms for a streamlined data entry experience](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+If you want to add columns to the page, or remove columns, see [Create or edit quick create forms for a streamlined data entry experience](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
-If you want to change how fields are preset and how values are set when the page is saved, see the following information in the Power Apps portals documentation:
+If you want to change how columns are preset and how values are set when the page is saved, see the following information in the Power Apps portals documentation:
 
 - [Prepopulate field](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
 - [Set Value On Save](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)

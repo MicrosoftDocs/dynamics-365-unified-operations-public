@@ -17,7 +17,7 @@ ms.search.form:  Customer
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -32,14 +32,16 @@ ms.dyn365.ops.version: 8.0.4
 
 [!include [banner](../includes/banner.md)]
 
+Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out multi-element orders so that revenue can be recognized based on a set of company-specific and industry-specific guidelines.
+
 > [!NOTE]
 > The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
 
-Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out multi-element orders so that revenue can be recognized based on a set of company-specific and industry-specific guidelines.
+> Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
 
 In general, the revenue recognition process can be used to perform these tasks:
 
-* Allocate revenue, to help guarantee that the appropriate revenue price is recognized, based on the value of the components on multi-element orders.
+* Allocate revenue, to help ensure that the appropriate revenue price is recognized, based on the value of the components on multi-element orders.
 * Defer revenue, based on a revenue schedule that represents the contractual time frame and percentages for recognizing revenue over time.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]

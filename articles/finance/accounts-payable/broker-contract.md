@@ -17,7 +17,7 @@ ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHie
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

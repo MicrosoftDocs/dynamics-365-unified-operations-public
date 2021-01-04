@@ -18,7 +18,6 @@ ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6

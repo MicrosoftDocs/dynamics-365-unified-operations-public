@@ -5,7 +5,7 @@ title: Sign up for preview subscriptions
 description: This topic explains how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -68,7 +68,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
 > [!IMPORTANT]
 > Only one person (tenant administrator) in an organization must perform this task. If you aren't the person who is subscribing to this release, wait until your organization has been signed up and you've received your user credentials. Then continue with the procedure.
 
-1. Finance and Operations applications and Retail are available only to existing Microsoft Dynamics 365 channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details about how to access trials on [CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/news-events/news/md365financeoperationsenterprisecusttrial). Partners can find the details on [PartnerSource](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview).
+1. Finance and Operations applications and Retail are available only to existing Microsoft Dynamics 365 channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. To subscribe, visit [PartnerSource Business Center](https://businesscenter.mbs.microsoft.com/#contentdetail/Microsoft_Dynamics_AX_Public_Preview).
 2. On the **Account setup** page, in the **Country or region** field, select the country or region.
 3. Follow the wizard and prompts to complete the sign-up, until you reach the last step.
 
@@ -110,7 +110,7 @@ You're already set up as a user of your LCS project. If you've also added other 
 Environments should be deployed to an existing Azure subscription.
 
 > [!NOTE]
-> Each developer of an environment must deploy his or her own system to Azure. However, only the first project user must set up the Azure subscription for deployment.
+> Each developer of an environment must deploy their own system to Azure. However, only the first project user must set up the Azure subscription for deployment.
 
 You can create environments in two ways:
 

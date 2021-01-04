@@ -17,7 +17,7 @@ ms.search.form: CostingVersion
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265044
 ms.assetid: 1f7abefa-8f87-4aa7-8eca-51974f91068d

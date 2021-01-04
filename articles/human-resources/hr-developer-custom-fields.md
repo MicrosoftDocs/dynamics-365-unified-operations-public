@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Custom fields
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 You can add custom fields to pages in Dynamics 365 Human Resources. For more information about creating custom fields, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
 Most Common Data Service entities support custom fields. For a full list of Common Data Service entities, see [Common Data Service entities](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 

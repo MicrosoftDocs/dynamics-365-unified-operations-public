@@ -1,6 +1,6 @@
 ## CDS sales quotation header to quotes
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
 Reversed source filter: statecode eq 0
 

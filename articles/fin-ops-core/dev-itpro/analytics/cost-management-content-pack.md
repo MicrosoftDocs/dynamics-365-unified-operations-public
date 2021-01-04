@@ -18,7 +18,6 @@ ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestA
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a

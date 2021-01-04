@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated vendor master
-description: This topic describes vendor data integration between Finance and Operations apps and Common Data Service.
+description: This topic describes vendor data integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/15/2019
@@ -33,19 +33,21 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-The term *vendor* refers to a supplier organization, or a sole proprietor who supplies goods or services to a business. Although *vendor* is an established concept in Microsoft Dynamics 365 Supply Chain Management, no vendor concept exists in model-driven apps in Dynamics 365. However, you can overload the **Account/Contact** entity to store vendor information. The integrated vendor master introduces an explicit vendor concept in model-driven apps in Dynamics 365. You can either use the new vendor design or store vendor data in the **Account/Contact** entity. Dual-write supports both approaches.
+
+The term *vendor* refers to a supplier organization, or a sole proprietor who supplies goods or services to a business. Although *vendor* is an established concept in Microsoft Dynamics 365 Supply Chain Management, no vendor concept exists in model-driven apps in Dynamics 365. However, you can overload the **Account/Contact** table to store vendor information. The integrated vendor master introduces an explicit vendor concept in model-driven apps in Dynamics 365. You can either use the new vendor design or store vendor data in the **Account/Contact** table. Dual-write supports both approaches.
 
 In both approaches, the vendor data is integrated between Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service, and Power Apps portals. In Supply Chain Management, the data is available for workflows such as purchase requisitions and purchase orders.
 
 ## Vendor data flow
 
-If you don't want to store vendor data in the **Account/Contact** entity in Common Data Service, you can use the new vendor design.
+If you don't want to store vendor data in the **Account/Contact** table in Dataverse, you can use the new vendor design.
 
 ![Vendor data flow](media/dual-write-vendor-data-flow.png)
 
-If you want to continue to store vendor data in the **Account/Contact** entity, you can use the extended vendor design. To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package. For more information, see [Switch between vendor designs](vendor-switch.md).
+If you want to continue to store vendor data in the **Account/Contact** table, you can use the extended vendor design. To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package. For more information, see [Switch between vendor designs](vendor-switch.md).
 
 ![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
 
@@ -54,12 +56,12 @@ If you want to continue to store vendor data in the **Account/Contact** entity, 
 
 ## Templates
 
-Vendor data includes all information about the vendor, such as the vendor group, addresses, contact information, payment profile, and invoice profile. A collection of entity maps work together during vendor data interaction, as shown in the following table.
+Vendor data includes all information about the vendor, such as the vendor group, addresses, contact information, payment profile, and invoice profile. A collection of table maps work together during vendor data interaction, as shown in the following table.
 
 Finance and Operations apps | Other Dynamics 365 apps     | Description
 ----------------------------|-----------------------------|------------
-Vendor V2                   | Account                     | Businesses that use the Account entity to store vendor information can continue to use it in the same way. They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations apps integration.
-Vendor V2                   | Msdyn\_vendors              | Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Common Data Service because of Finance and Operations apps integration. 
+Vendor V2                   | Account                     | Businesses that use the Account table to store vendor information can continue to use it in the same way. They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations apps integration.
+Vendor V2                   | Msdyn\_vendors              | Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Dataverse because of Finance and Operations apps integration. 
 Vendor groups               | msdyn\_vendorgroups         | This template synchronizes vendor group information.
 Vendor payment method       | msdyn\_vendorpaymentmethods | This template synchronizes vendor payment method information.
 CDS Contacts V2             | contacts                    | The [contacts](customer-mapping.md#cds-contacts-v2-to-contacts) template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors.

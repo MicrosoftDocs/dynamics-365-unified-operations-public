@@ -1,5 +1,20 @@
-{
+﻿{
   "redirections": [
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md",
+      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md",
+      "redirect_url": "cloud-prem-comparison",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md",
+      "redirect_url": "setup-deploy-on-premises-pu12",
+      "redirect_document_id": "false"
+    },
     {
       "source_path": "articles/commerce/edit-audit-retail-transactions.md",
       "redirect_url": "edit-cash-trans",
@@ -3472,7 +3487,7 @@
     },
     {
       "source_path": "articles/dev-itpro/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "/dynamics365/fin-and-ops/get-started/fasttrack-dynamics-365-overview",
+      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
       "redirect_document_id": "false"
     },
     {
@@ -9167,7 +9182,7 @@
     },
     {
       "source_path": "articles/fin-and-ops/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "../../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview",
+      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
       "redirect_document_id": "false"
     },
     {

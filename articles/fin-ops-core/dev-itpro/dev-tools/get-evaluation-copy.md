@@ -5,7 +5,7 @@ title: Get evaluation copies
 description: A public preview is available. 
 author: RobinARH
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,6 @@ A public preview is available. You can sign up and deploy a cloud instance of th
 - [Partner Trial](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview)
 - [How can I setup a solution trial instance in Azure with my customization and demo data?](https://blogs.msdn.microsoft.com/lcs/2016/03/03/how-can-i-setup-a-dynamics-ax-solution-trial-instance-in-azure-with-my-customization-and-demo-data/)
 - [How do I login to the new AX as a demo user persona?](https://blogs.msdn.microsoft.com/lcs/2016/03/17/how-do-i-login-to-the-new-ax-as-a-demo-user-persona/)
-- [December 2015 release notes](https://blogs.msdn.microsoft.com/lcs/2015/12/18/december-2015-release-notes/)
 
 
 

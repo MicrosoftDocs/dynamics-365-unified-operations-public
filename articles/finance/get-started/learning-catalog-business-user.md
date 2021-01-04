@@ -15,7 +15,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
+# ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
@@ -54,6 +54,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Configure and use budgeting in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Every organization, whether it is private or public, sets financial and operational goals by creating budgets. With the collaborative and process-driven nature of budget planning, you can make your budget process more efficient. | Free, self-paced online learning path | 3.5 hours |
 | [Configure and manage fixed assets in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold. The way in which fixed assets are handled must correspond with both international accounting standards and the accounting legislation in each country or region. | Free, self-paced online learning path | 4.5 hours |
 | [Get started with cost accounting for supply chains in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Cost accounting lets you collect data from various sources, such as the general ledger, sub-ledgers, budgets, and statistical information. You can then analyze, summarize, and evaluate cost data so that management can make the best possible decisions for price updates, budgets, cost control, and so on.  | Free, self-paced online learning path | 1 hour  |
+| [Work with Expense management in Dynamics 365 Project Operations](https://docs.microsoft.com/learn/paths/work-expense-management/) | Maximize profitability and minimize cost with accurate expense management capabilities in Dynamics 365 Project Operations. Learn how to configure the system, and create, and approve expense reports. | Free, self-paced online learning path | 5.5 hours  |
 
 ## Exam<a name="exam"></a>
 

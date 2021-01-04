@@ -51,7 +51,7 @@ The store selector module lets users enter a location (city, state, address, and
 
 The store selector module is integrated with the [Bing Maps REST application programming interfaces (APIs)](https://docs.microsoft.com/bingmaps/rest-services/) to use Bing's Geocoding and Autosuggest features. A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The Geocoding API is used to convert a location to latitude and longitude values. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
 
-For the Autosuggest REST API, you must ensure that the following URLs are allowed (also known as "whitelisted") per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various CSP directives for the site (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
+For the Autosuggest REST API, you must ensure that the following URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various CSP directives for the site (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
 
 - To the **connect-src** directive, add **&#42;.bing.com**.
 - To the **img-src** directive, add **&#42;.virtualearth.net**.
@@ -69,6 +69,9 @@ For this scenario to work, products should be configured so that the **pickup** 
 The following image shows an example of a store selector module used on a PDP.
 
 ![Example of a store selector module used on a PDP](./media/BOPIS.PNG)
+
+> [!NOTE]
+> In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
 
 ## Find stores mode
 

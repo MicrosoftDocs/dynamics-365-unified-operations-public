@@ -18,7 +18,6 @@ ms.search.form: DirPartyTable, DirPartyTableRoles
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23521
 ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074

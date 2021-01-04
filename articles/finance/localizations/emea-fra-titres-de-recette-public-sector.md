@@ -2,7 +2,7 @@
 # required metadata
 
 title: Titres de recette in the public sector in France
-description: The titre de recette is used by the director to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to deposit that amount. The director or the accountant may delegate a representative to perform the task, but the responsibility for each task remains with the director or the accountant. The titre maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.
+description: The titre de recette is used by the director to notify and authorize the accountant to collect and deposit a specific amount from another entity.
 author: rschloma
 manager: AnnBe
 ms.date: 10/31/2017
@@ -18,7 +18,7 @@ ms.search.form: CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19931
 ms.search.region: France
@@ -33,16 +33,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The titre de recette is used by the director to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to deposit that amount. The director or the accountant may delegate a representative to perform the task, but the responsibility for each task remains with the director or the accountant. The titre maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.
+The director uses the titre de recette to notify and authorize the accountant to collect and deposit a specific amount from another entity. The director or the accountant may delegate a representative to perform the task. However, the responsibility for each task remains with the director or the accountant. The titre maintains the strict separation that is required between the director's operational role and the accountant's accounting role.
 
-In Dynamics 365 Finance, each titre is assigned a single free text invoice line. This guarantees that each titre concerns only one debtor and includes only one budgetary account. A group of related titres, together with all supporting documentation, are assigned to a bordereau de titre for submittal to the accountant.
+In Dynamics 365 Finance, each titre is assigned a single free text invoice line. This assignment guarantees that each titre concerns only one debtor and includes only one budgetary account. A group of related titres, together with all supporting documentation, are assigned to a bordereau de titre for submittal to the accountant.
 
 ## Director’s tasks
 From the **Maintain titres de recette** page, the director can complete the following tasks:
 
 -   **Assign invoice lines to a titre de recette.** To find the invoice lines that haven’t yet been assigned to a titre, you can filter the retrieved lines by the **Titre** column.
--   **Authorize collection of invoice lines that are assigned to titres.** This can also be done from the **Titre de recette** tab on the free text invoice page.
--   **Assign titres to a bordereau de titre.** To find the invoice lines that haven’t yet been assigned to a bordereau de titre, you can filter the retrieved lines by the **Bordereau de titre** column.
+-   **Authorize collection of invoice lines that are assigned to titres.** Authorization can also be completed from the **Titre de recette** tab on the **Free text invoice** page.
+-   **Assign titres to a bordereau de titre.** To find the invoice lines that haven’t yet been assigned to a bordereau de titre, use the **Bordereau de titre** column to filter the retrieved lines.
 
 To submit titres to the accountant for deposit, the director collects the printed titres and their related documentation under a borderau de titre.
 
@@ -50,10 +50,12 @@ To submit titres to the accountant for deposit, the director collects the printe
 -   Print the bordereau from the **Records to include** FastTab on the **Bordereau de titre report** page.
 
 ## Accountant’s tasks
-From the **Maintain titres de recette** page or from the **Titre de recette** tab on the free text invoice page, the accountant can accept, reject, or hold titres. When a titre is rejected, the director status changes to Not reviewed, and the titre and bordereau de titre numbers are cleared.
+From the **Maintain titres de recette** page or from the **Titre de recette** tab on the free text invoice page, the accountant can accept, reject, or hold titres. When a titre is rejected, the director status changes to Not reviewed. The titre and bordereau de titre numbers are cleared.
 
-## Using the database inquiry page
-To open the database inquiry page on the **Maintain titres de recette** page, specify the range of dates you want to select invoices from. Then click **Retrieve lines**. This opens the database inquiry page where you can specify the criteria for the invoice lines you want to retrieve. When you close the form, all the invoice lines that meet the selected criteria are retrieved into the grid. Lines from the invoices that are being edited will not be retrieved. **Tip**: Use the following criteria in the database inquiry page to retrieve lines.
+## Using the Database inquiry page
+To open the **Database inquiry** page from the **Maintain titres de recette** page, specify the range of dates you want to select invoices from. Then click **Retrieve lines**. Thhe **Database inquiry** page opens and you can specify the criteria for the invoice lines you want to retrieve. When you close the page, all the invoice lines that meet the selected criteria are retrieved into the grid. Lines from the invoices that are being edited will not be retrieved. 
+
+Use the following criteria in the database inquiry page to retrieve lines.
 
 - Invoice lines that have not been reviewed by the director.
 

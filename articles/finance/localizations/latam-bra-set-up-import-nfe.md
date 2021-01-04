@@ -17,7 +17,7 @@ ms.search.form: EFDocumentReceivedXML_BR
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) from emails sent by the vendor for your company. The vendor must send these emails as file attachements during the time which the acquired goods are in transit.
+You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) from emails sent by a vendor. The vendor must send these emails as file attachments during the time that the acquired goods are in transit.
 
 The following prerequisites must be in place before you begin: 
  - Configure fiscal establishments in your legal entity. 
@@ -40,7 +40,7 @@ The following prerequisites must be in place before you begin:
  - Set up NF-e parameters for fiscal establishments.
 
 ## Set up email accounts to import XML files and DANFE for NF-e
-- On the **Configure email accounts** page, click **New** and enter the account details.
+- On the **Configure email accounts** page, select **New**, and enter the account details.
    - **Server address** - Enter the POP3 server address for the email account.
    - **Port** - Enter the port number to use for the email server.
    - **Required SSL** - Select this option to indicate that the server requires a Secure Socket Layer (SSL) encrypted connection.
@@ -58,13 +58,13 @@ The imported XML and DANFE files can be viewed on the **Received NF-e XML docume
 > [!NOTE] 
 > The name of the issuer of the Nota Fiscal Eletrônica (NF-e) is left blank when the tax registration ID (CNPJ) cannot be found as an attribute of a vendor in the **All vendors** page.
 
-- For a selected Nota Fiscal Eletrônica (NF-e), click **XML document** to view the XML document.
-- For a selected Nota Fiscal Eletrônica (NF-e), click **DANFE** to view the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE).
-- For a selected Nota Fiscal Eletrônica (NF-e), click **Inquire status** to inquire on the status of the NF-e at the SEFAZ using the access key.
+- For a selected Nota Fiscal Eletrônica (NF-e), select **XML document** to view the XML document.
+- For a selected Nota Fiscal Eletrônica (NF-e), select **DANFE** to view the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE).
+- For a selected Nota Fiscal Eletrônica (NF-e), select **Inquire status** to view the status of the NF-e at the SEFAZby using the status key.
   > [!NOTE] 
   > The status, date, and time of the inquiry are updated in the Status from SEFAZ and Date and time from the last inquiry.
 
 ## Inquire about the status of NF-e access keys at the SEFAZ
 1. On the **Inquire about NF-e access key status** page, in the **Limit of cancellation** field, enter the number of hours that the vendor has to cancel the NF-e.
-2. In the **Minimum inquiry interval** field, enter the minimum interval between the inquiries in minutes for the received NF-e access key at the SEFAZ.
+2. In the **Minimum inquiry interval** field, enter the minimum interval in minutes, between the inquiries for the received NF-e access key at the SEFAZ.
 3. If necessary, enter the batch processing parameters, recurrences, and schedule.

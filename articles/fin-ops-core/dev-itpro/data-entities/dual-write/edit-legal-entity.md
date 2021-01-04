@@ -31,17 +31,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 The dual-write wizard enables you to add or remove a company or legal entity after dual-write has been set up. You can do this without having to unlink and relink your dual-write environment. 
 
-The wizard enables you to link your Finance and Operations apps to Common Data Service environments. As part of this wizard, you also can select one or more companies or legal entities. The company or legal entity list doesn’t remain static and is constantly changing. This is because you may need to add new companies, especially as part of a phased rollout or acquisitions. Until now, you were unable to add a company or legal entity without system down-time, which required you to unlink and relink your environment. All of this can be expensive, especially because of pre-existing data. With this feature, you can add a company in a live environment without the need to unlink your existing dual-write environment.
+The wizard enables you to link your Finance and Operations apps to Dataverse environments. As part of this wizard, you also can select one or more companies or legal entities. The company or legal entity list doesn’t remain static and is constantly changing. This is because you may need to add new companies, especially as part of a phased rollout or acquisitions. Until now, you were unable to add a company or legal entity without system down-time, which required you to unlink and relink your environment. All of this can be expensive, especially because of pre-existing data. With this feature, you can add a company in a live environment without the need to unlink your existing dual-write environment.
 
 ## Add a company or legal entity after dual-write has been set up 
 
 Follow these steps to add a company or legal entity after dual-write has been set up.
 
-1. On the **Dual-write entity map** list page, select the **Environment details** button.
+1. On the **Dual-write table map** list page, select the **Environment details** button.
 
 ![Select the Environment details button](media/select-environment-details.png)
 
@@ -53,18 +55,18 @@ Follow these steps to add a company or legal entity after dual-write has been se
 
 ![Add new legal entity](media/add-legal-entity.png)
 
-  At this point, the legal entities start updating. The entity maps that are currently running or paused go through the initial write process by copying pre-existing data. Until the process is completed, we recommend that you do not perform any actions to modify your entity maps. 
+  At this point, the legal entities start updating. The table maps that are currently running or paused go through the initial write process by copying pre-existing data. Until the process is completed, we recommend that you do not perform any actions to modify your table maps. 
 
 ![Update legal entities is in progress](media/update-progress.png)
 
   >[!NOTE]
   > This operation may fail if either of the following conditions are true: 
   >
-  > * You add or remove a new company when one or more entity maps is already in the Initial writes state. This the process where the system is copying pre-existing data. 
+  > * You add or remove a new company when one or more table maps is already in the Initial writes state. This the process where the system is copying pre-existing data. 
   >
-  > * You remove a company when one or more entity maps is in the Paused state. 
+  > * You remove a company when one or more table maps is in the Paused state. 
 
-4. After the process is complete, a banner displays informing you that the legal entities have been updated successfully. You can now resume updates to your entity maps. 
+4. After the process is complete, a banner displays informing you that the legal entities have been updated successfully. You can now resume updates to your table maps. 
 
 ![Legal entities update succeeded](media/legal-entities-updated.png)
 

@@ -16,7 +16,6 @@ ms.search.form:  FeatureManagementWorkspace
 audience: IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -34,7 +33,7 @@ Features are added and updated in every release. The Feature management experien
 
 ## The Feature management workspace
 
-You can open the **Feature management** workspace by selecting the appropriate tile on the dashboard. You will see a page that shows a list of features for all releases that are supported by the Feature management experience. Over time, Microsoft will enhance the Feature management experience so that it includes additional functionality to help you manage features.
+You can open the **Feature management** workspace by selecting the appropriate tile on the dashboard. You will see a page that shows a list of features for all releases that are supported by the Feature management experience. Over time, Microsoft will enhance the Feature management experience so that it includes more functionality to help you manage features.
 
 The feature list includes the following information:
 
@@ -44,7 +43,7 @@ The feature list includes the following information:
 - **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
 - **Module** – The module that is affected by the new feature.
 
-When you select a feature, additional information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you're taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
+When you select a feature, more information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you're taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
 The **Feature management** workspace also has several tabs, each of which shows a list of features.
 
@@ -65,7 +64,7 @@ Some features will display a message that provides additional information before
 
 Some features will display a message that the feature can't be enabled until an action is taken. These features are indicated by a red X symbol. You must take the actions described in the description before the feature is enabled. For example, if you can't use a feature until a configuration key is disabled, then you must disable the configuration key first and then return to Feature management to enable the feature.
 
-After a feature is turned on, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates the future date when the feature is scheduled to be turned on. It appears every time that you select the feature in the feature list.
+After a feature is turned on, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or it indicates that the future date when the feature is scheduled to be turned on. It appears every time that you select the feature in the feature list.
 
 Features that are scheduled to be turned on in the future appear on the **Scheduled** tab. A batch process will turn them on at midnight on the specified date, based on the time zone that is represented by the system date.
 
@@ -103,8 +102,8 @@ All features that can be enabled will be enabled. If a feature is already schedu
 
 By default, all features that are added to your environment are turned off, unless they are mandatory features. However, if you want to automatically turn on all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.
 
-- Select **Enable new features automatically** to automatically turn on all new features when they are added to your environment.
-- Select **Do not enable new features automatically** to default all new features to off when they are added to your environment.
+- Select `Enable new features automatically` to automatically turn on all new features when they are added to your environment.
+- Select `Do not enable new features automatically` to default all new features to off when they are added to your environment.
 
 
 When you enable all feature automatically, it will enable all of the features that would be enabled when you click the **Enable all** button. It will not enable the features that require confirmation or the features that can't be enabled until an action is taken.
@@ -140,7 +139,7 @@ The following examples describe what occurs when you use the **Feature managemen
 
 ## Feature management and flighting
 
-Feature management lets you to control the features that are delivered in each release. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. Feature management doesn't control the flighting of any features.
+Feature management lets you control the features that are delivered in each release. Flighting lets Microsoft teams release features to a limited number of customers, so that those features can be tested and validated without affecting all customers. Feature management doesn't control the flighting of any features.
 
 ## New features are optional for 12 months
 
@@ -161,13 +160,13 @@ No, a feature becoming mandatory is not an automatic action. The product teams n
 ### When do features become mandatory? 
 The policy is that all new features will be opt-in for a 12-month period and will not require any change management until you enable the feature. The product teams can choose whether to make a feature mandatory after that period has ended. 
 
-### Why isn't there a specific 'mandatory enabled date'? 
+### Why isn't there a specific 'mandatory-enabled date'? 
 Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to determine. 
 
 ### Where's the documentation for features that are being made mandatory? 
 This documentation comes from the application teams. Often, these will be mentioned in [Removed or deprecated features](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
 
-### Is there an in-product notification or signal that a feature is going to be mandatory enabled? 
+### Is there an in-product notification or signal that a feature is going to be mandatory-enabled? 
 A notification mechanism related to making a feature mandatory does not exist today.
 
 ### Do features ever get enabled without the customer knowing about it? 
@@ -202,7 +201,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 ### What is the IFeatureLifecycle implemented by some feature classes?
 IFeatureLifecycle is a Microsoft-internal mechanism for indicating the feature lifecycle stage. 
 Features can be:
-- PrivatePreview - Needs a flight to be visible.
-- PublicPreview - Shown by default but with a warning that the feature is in preview.
-- Released - Fully released.
+- `PrivatePreview` - Needs a flight to be visible.
+- `PublicPreview` - Shown by default but with a warning that the feature is in preview.
+- `Released` - Fully released.
 
