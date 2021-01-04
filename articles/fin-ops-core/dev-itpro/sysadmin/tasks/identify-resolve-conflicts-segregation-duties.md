@@ -35,14 +35,14 @@ After a rule has been added, verify that all existing roles are compliant.
 
 ## Verify that existing roles and duties comply with new rules for segregation of duties
 1. Go to **System administration** > **Security** > **Segregation of duties** > **Segregation of duties rules**.
-3. Select **Validate duties and roles**. If any roles violate the rules, a message is displayed that contains the name of the rule, the role, and the names of the conflicting duties. Conflicting roles must be modified using **Security configuration** and can't include conflicting duties. If no roles violate the selected rule, a message indicates that all roles are in compliance.   
+3. Select **Validate duties and roles**. If any roles violate the rules, a message is displayed that contains the name of the rule, the role, and the names of the conflicting duties. Conflicting roles must be modified using **Security configuration** and can't include conflicting duties. If no roles violate the selected rule, a message indicates that all roles comply.   
 
 > [!NOTE]
 > The validation is only performed for the selected rule. It is important to validate compliance for each rule.   
 
 When you create or modify a role, the rules for segregation of duties are automatically enforced. You cannot assign conflicting duties to a role.
 
-Next it is time to verify that all existing role assignments are compliant.
+Next, verify that all existing role assignments are compliant.
 
 ## Verify that user role assignments comply with new rules for segregation of duties
 1. Go to **System administration > Security > Segregation of duties > Verify compliance of user-role assignments**.
@@ -58,7 +58,7 @@ When you assign users to roles, the rules for segregation of duties are automati
 2. Select a conflict, and then select one of the following actions: 
 
   - **Deny assignment**: This will deny the assignment of the user to the additional security role. If you deny an automatic role assignment, the user is marked as excluded from the role. The excluded user isn't granted the access associated with the role and can't be assigned to the role until the administrator removes the exclusion. 
--  **Allow assignment**: This will override the conflict and allow the user to be assigned to the additional security role. If you override a conflict, you must enter a reason in the **Reason for override** field. All overridden role assignments can be viewed in the **Segregation of duties conflicts** page.  
+-  **Allow assignment**: This will override the conflict and allow the user to be assigned to the additional security role. If you override a conflict, you must enter a reason in the **Reason for override** field. All overridden role assignments can be viewed on the **Segregation of duties conflicts** page.  
 
 > [!NOTE]
-> If several conflicts are listed for the same user, click on the user record and evaluate assigned roles on the **Users** page. To avoid this conflict, validate each rule after it's added or modified.
+> If several conflicts are listed for the same user, select the user record and evaluate assigned roles on the **Users** page. To avoid this conflict, validate each rule after it's added or modified.
