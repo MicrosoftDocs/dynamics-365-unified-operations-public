@@ -5,7 +5,7 @@ title: Manage several derived mappings for a single model root
 description: This topic explains how a user in the System administrator or Electronic reporting developer role can manage several derived mappings that were configured for a single model root.
 author: NickSelin
 manager: AnnBe
-ms.date: 12/26/2020
+ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
