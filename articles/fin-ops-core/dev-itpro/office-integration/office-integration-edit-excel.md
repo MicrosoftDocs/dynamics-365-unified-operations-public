@@ -321,7 +321,7 @@ The following image shows the Excel Add-in with the **Filter** dialog box opened
 ## How do I enable relationship lookups in Excel?
 To enable relationship lookups in the Excel Data Connector, you must ensure that the following metadata is set.
 
-- The Role and Related Data Entity Role defined on the relationship need to be unique among all relationships on both the source and target entity. Also, the relation role properties must be unique across all entities. This is particularly important for relationships involving entities with lots of relationships, such as DimensionCombinationEntity. If you're not seeing an expected lookup, try changing the role names to the following format:
+- The Role and Related Data Entity Role defined on the relationship need to be unique among all relationships on both the source and target entity. Also, the relation role properties must be unique across all entities. This is particularly important for relationships involving entities with many relationships, such as DimensionCombinationEntity. If you're not seeing an expected lookup, try changing the role names to the following format:
 
    - **Role**: \[this entity's public name\] + \[target entity's public name\] + \[target entity field\] + "Source"
    - **Related Data Entity Role**: \[this entity's public name\] + \[target entity's public name\] + \[target entity field\] + "Target"
