@@ -98,9 +98,9 @@ With the dual-write functionality enabled, the products from Finance and Operati
 
 By default products from Finance and Operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**. 
 
-Note that when products are synchonized the **Sales unit** field must be filled in Finance and Operations, as it is a mandatory field in Sales.
+When products are synchonized, you must enter a value for the **Sales unit** field in the Finance and Operations app, because it is a mandatory field in Sales.
 
-Note that the synchronization of products happens from Finance and Operations apps to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a Finance and Operations app), this will overwrite the values in Dataverse. 
+The synchronization of products happens from the Finance and Operations app to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a Finance and Operations app), this will overwrite the values in Dataverse. 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
