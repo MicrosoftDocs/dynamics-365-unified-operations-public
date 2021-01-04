@@ -55,7 +55,7 @@ To use ARO, you must complete the following setup tasks:
 -   Set up basic fixed asset parameters, such as a default Book, reason codes, and number sequences on the **Fixed assets parameters** page
 -   Define a fixed asset group on the **Fixed asset groups** page
 -   Set up a fiscal calendar for depreciation
--   Set up a discount rate schedule that uses current market discount rates to calculate ARO amounts
+-   Set up a discount rate schedule (cashflow discount rate) that uses current market discount rates to calculate ARO amounts
 -   Specify the type of ARO to use for an asset, and specify how often changes to the ARO amounts are posted
 -   Set up an estimated retirement cost plan for ARO, and simulate ARO amounts for each fiscal period of the asset’s service life
 -   Set up a posting profile for the **Capitalized asset retirement obligation** and **Asset retirement obligation - accretion** **expense** document types
