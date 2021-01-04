@@ -40,19 +40,13 @@ While multiple [configuration fields](add-module-config-fields.md) can be defind
 
 A module can leverage conditional schema to define the rules that the site builder property panel will respect to show or hide various configuration fields based on values of other fields.  As an example, a module may have a "layout" property with two layouts, one is plain text and another is rich text with an image. The module designer would like to ensure that only the appropriate fields get displayed in the site builder tool when the page editor is configuring the module.
 
-This is supported in both the module definition file and [module definition extensions](theme-module-extensions.md).
-
-## Conditional Schema
- 
-Conditional schema can be defined in the module definition.  There two types of **dependentSchema**: schema dependencies and property dependencies.
+This is supported in both the module definition file and [module definition extensions](theme-module-extensions.md) using the conditional schema **dependentSchema** property. Two types of conditional schema is supported **schema dependencies** and **property dependencies**.
 
 ### Schema Dependencies
-Schema dependencies 
+Schema dependencies provide support to declare that the schema should change when a specific property value is selected. The **dependentSchemas** property is used with the [oneOf](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/) property to declare the list of different configuration properties applicable for a specific configuration value.
 
-The **dependentSchemas** property is used to declare that the schema should change when a specific property value is selected. The [oneOf](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/) property is used to declare the list of different configuration properties.
-
-#### Example module definition file
-In the following sample definition extension file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property will be displayed, when the **layout** property is set to "RichTextWithImage" then the "featureRichText" and "featureImage" properties will be shown (but not the "featureText" config property).
+#### Example schema dependency
+In the following sample module definition file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property will be displayed.  When the **layout** property is set to "RichTextWithImage", then the "featureRichText", "featureImage" and "imageAlignment" properties will be shown (but not the "featureText" config property).
 
 ```json
 {
@@ -125,13 +119,10 @@ In the following sample definition extension file, you can see that when the **l
 ```
 
 ### Property Dependencies
-Property dependencies can be used to declare that a certain configuration property must be present if a given property is present.
+Property dependencies can be used to declare that a certain configuration property must be present if another configuration property is present.
 
-For example, suppose we have a schema representing a customer. If a customer has entered their credit card number, billing address is a required and you only want to show billing address when the user has entered the credit card info. If they have not entered credit card number, a billing address would not be required and its ok to not show it. 
-
-For such use cases property dependencies are used. We represent this dependency of one property on another using the dependentSchema keyword. Below is the example on how we can achieve this scenario.
-
-In the following example, whenever a creditCard property is provided, a billingAddress property is shown and is a required property:
+#### Example property dependency
+In the following example the **dependentSchema** property is used to defined that whenever the "productTitle" is present the "subTitle" configuration property must also be present.
 
 ```json
 {
@@ -160,3 +151,34 @@ In the following example, whenever a creditCard property is provided, a billingA
     }
 }
 ```
+
+## Support for config property overrides in definition extension
+We have added support for Boolean property in definition extension named “override”  which when set to true will allow to override config properties in Definition extension. So in scenarios where you would like to override same config properties in module definition with Definition Extension config properties.  You can set the override property to true.
+
+Below is an example: 
+
+Also attaching the list of scenario along with expected behavior: 
+
+A.	Normal scenario
+
+| Scenario	| Expected outcome |
+| ------- | ---------------- |
+|1.	Dependency Schema only in definition extension, No conflicts between properties inside dependency schema and definition extension.|Apply dependency schema. |
+|2.	Dependency schema only in module definition. No conflicts between properties inside dependency schema and definition extension. | 	Apply dependency schema. |
+|3.	Dependency schema only in module definition. Conflicts between properties inside dependency schema and definition extension. i.e. PROP A inside dependency schema of Module definition is declared as is in Definition extension without dependency schema. | 	Build error. |
+|4.	Dependency schema on the same property on both module definition and definition extension.| 	Module definition gets precedence .|
+|5.	Same property on both module definition and definition extension. |	Module definition gets precedence .|
+ 
+
+B.	Override scenario
+
+|Scenario	|Expected outcome|
+| ------- | ---------------- |
+|1.	Same property on both module definition and definition extension. Property in definition extension has no override /“override”:false property | 	Module Definition  gets precedence . |
+|2.	Dependency schema on the same property on both module definition and definition extension. Property in definition extension has a “override”:true property | 	Definition extension gets precedence .|
+| 3.	Dependency schema on the same property on both module definition and definition extension. Property in definition extension has a “override”:false / no override property | Module Definition gets precedence . | 
+| 4.	Property A in module definition and Property A inside dependency schema of definition extension with a override:true 	| Property A inside dependency schema of definition extension takes precedence .|  
+| 5.	Property A in module definition and Property A inside dependency schema of definition extension with no override/ override: false | Property A module definition takes precedence . |
+ 
+
+
