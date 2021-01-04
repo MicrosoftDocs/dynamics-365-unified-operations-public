@@ -85,7 +85,7 @@ To add the standard ER configurations to your current instance of Finance, you m
         + The **Customer Invoice** model mapping is configured for the **InvoiceCustomer** root definition of **Invoice model**. Therefore, when the **Free text invoice (Excel)** ER format is run, the **Customer Invoice** model mapping of this ER configuration can be chosen to access application data and fill in the data model.
         + The **Project Invoice** model mapping is configured for the **InvoiceProject** root definition of **Invoice model**. Therefore, when the **Project invoice (Excel)** ER format is run, the **Project Invoice** model mapping of this ER configuration can be chosen to access application data and fill in the data model.
 
-        ![Reviewing the model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image3.png)
+        ![Invoice model mapping on the Model to datasource mapping page](./media/er-multiple-model-mappings-image3.png)
 
     4. Close the **Model to datasource mapping** page.
     5. On the **Versions** FastTab, select **Delete** to delete all versions of this ER configuration that are later than version 240.175.
@@ -96,7 +96,7 @@ To add the standard ER configurations to your current instance of Finance, you m
     2. On the Action Pane, select **Designer**.
     3. On the **Model to datasource mapping** page, notice that the current ER model mapping configuration contains the **InvoiceProject** model mapping, and that this model mapping is configured for the **InvoiceProject** root definition of **Invoice model**. When the **Project invoice (Excel)** ER format is run, select the **InvoiceProject** model mapping of this ER configuration to access application data and fill in the data model.
 
-        ![Reviewing the model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image4.png)
+        ![Project invoice model mapping on the Model to datasource mapping page](./media/er-multiple-model-mappings-image4.png)
 
     4. Close the **Model to datasource mapping** page.
     5. On the **Versions** FastTab, select **Delete** to delete all versions of this ER configuration that are later than version 226.35.
@@ -121,7 +121,7 @@ This section explains how to [customize](er-quick-start3-customize-report.md#cus
 
 7. On the Action Pane, select **Designer** to review the model mappings of this configuration.
 
-    ![Reviewing the model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image5.png)
+    ![Reviewing the invoice model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > You can now open any of the ER model mapping components of this ER configuration in the designer to configure your custom logic. For more information, see [Customize the model mapping configuration](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -144,7 +144,7 @@ You now have **Invoice model mapping** and **Invoice model mapping Litware** con
 6. For the **Project invoice model mapping Litware** configuration that is currently selected in the configuration tree, set the **Run Draft** option to **Yes**.
 7. On the Action Pane, select **Designer** to review the model mappings of this configuration.
 
-    ![Reviewing the model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image7.png)
+    ![Review the customized project invoice model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image7.png)
 
 8. Close the **Model to datasource mapping** page.
 
