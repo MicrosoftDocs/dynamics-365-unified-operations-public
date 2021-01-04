@@ -37,6 +37,9 @@ After a rule has been added it is required to validate that all existing roles a
 1. Go to **System administration > Security > Segregation of duties > Segregation of duties rules**
 3. Select **Validate duties and roles**. If any roles violate the rules, a message is displayed that contains the name of the rule, the role and the names of the conflicting duties. Conflicting roles must be modified using **Security configuration** and cannot include conflicting duties. If no roles violate the selected rule, a message indicates that all roles are in compliance.   
 
+> [!NOTE]
+> The validation is only performed for the selected rule. It is important to validate compliance for each rule.   
+
 When you create or modify a role, the rules for segregation of duties are automatically enforced. You cannot assign conflicting duties to a role.
 
 Next it is time to verify that all existing role assignments are compliant.
