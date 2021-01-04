@@ -39,21 +39,20 @@ In Asset Management, general parameters relating to assets, work orders, and wor
 > [!NOTE]
 > If you'd like to set up a system that includes demo data for testing Asset Management features, see [Deploy a demo environment](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) for instructions.
 
-**Assets** link
+## The Assets tab
+
+The **Assets** tab provides the following settings:
 
 - **Default functional location** is the standard functional location, which is automatically selected on assets when you create new assets.  
 - In the **Standard calendar** field, select a calendar to be used for calculating asset KPIs if no resource is selected on an asset.  
 - In the **View** field, select the standard view that is shown when you open **Asset view** (**Asset management** > **Common** > **Assets** > **Asset view**).
 - **Default request type** is the standard maintenance request type, which is automatically selected when you create a new request.  
-- If you want to create projects that relate to assets, project relations regarding selection of **Main project**, **Project hierarchy**, and the option to **Auto create projects** are set up in **Asset management parameters**.  
-- In the **Work order project mask** field, you define the number of sub projects allowed for work orders and sub assets. A work order mask is used to define how many work orders can be created on an asset and used on the related work order job project. The work order mask is set up in the **Related Work order mask** field in **Asset management parameters** (**Asset management** > **Setup** > **Asset management parameters** > **Work orders**).  
-    >[!NOTE]
-    >The format for a related work order mask is a number of hash signs (#), depending on the maximum number of work orders you expect to create on an asset. Example: ## allows you to create up to 99 sub-projects.  
 - Forecasts on job types are stored on the project selected in the **Forecast project** field. For each job type, a new activity is automatically created on the forecast project. Forecasts on the job type are then saved on the forecast project.  
-- In the **Model** field, select the forecast model used on job type and work order forecasts.  
+- In the **Model** field, select the forecast model used on job type and work order forecasts.
 
+## The Work orders tab
 
-**Work orders** link
+The **Work orders** tab provides the following settings:
 
 - **Default work order type** defines standard settings when creating a work order.  
 - **Preventive work order type** defines the work order type used when creating work orders from maintenance plans. If this field is left blank, the work order type in the **Default work order type** field is used.  
@@ -72,8 +71,9 @@ In Asset Management, general parameters relating to assets, work orders, and wor
     - Maintenance rounds setup  
 - On the **Category** FastTab, default categories relating to consumption on work orders can be defined.  
 
+## The Work order scheduling tab
 
-**Work order scheduling** link
+The **Work order scheduling** tab provides the following settings on the **General** FastTab:
 
 - **Schedule time fence** defines period in days, calculated from the expected start date of the work order, during which work order jobs are planned.  
 - The **Master plan** relates to resources in the **Organization administration** module. If you select a master plan in this field, you will be able to see capacity reservations related to work orders in **Capacity reservations** (**Organization administration** > **Resources** > **Resources** > select resource > **Resource** tab > **Capacity reservations** button). If you leave this field blank, you will be able to see capacity load related to work orders in **Capacity load** (**Organization administration** \> **Resources** \> **Resources** \> select resource \> **Resource** tab \> **Capacity load** button).  
@@ -105,10 +105,10 @@ The fields described in the following list all relate to calculated rating score
   - Assuming that no responsible worker and responsible worker group have been selected on a work order to be scheduled - you add and subtract the rating score values in the examples in the **Preferred worker**, **Preferred worker group**, **Asset location**, and **Start date** fields above, you get a total of 3,010.00. This means a high score for the worker who is already selected as preferred worker as well as included in the preferred worker group on the work order, and the worker is also located in the same facility as the asset for which a job needs to be scheduled. This means there is a good chance that the worker in question will be selected to complete the job during work order scheduling.  
   - If the value "0.00" is inserted in one of the eight fields above, that rating score will not be used during work order scheduling.  
 
-**Document types** link
+## The Document types tab
 
 Select the document types that should be available for printing attachments related to a work order report. This is done by selecting a document type in the **Available** section and selecting ![forward arrow](media/15-setup-for-objects.png). If you want to remove a selected document type, select the document type in the **Selected** section and select ![back arrow](media/16-setup-for-objects.png).
 
-**Number sequences** link
+## The Number sequences tab
 
 Select the required number sequences in this section. There are two number sequences for assets: one for manually created assets and one for assets created through pending assets.

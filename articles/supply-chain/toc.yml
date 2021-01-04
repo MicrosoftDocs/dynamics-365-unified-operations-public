@@ -1319,6 +1319,8 @@
           href: sales-marketing/register-serial-numbers-sales-process.md
         - name: Inventory on-hand mobile workspace
           href: inventory/inventory-on-hand-mobile-workspace.md
+        - name: Troubleshoot inventory operations
+          href: inventory/troubleshoot-inventory-operations.md
       - name: Outbound process
         items:
         - name: Outbound process overview
@@ -1379,6 +1381,8 @@
           href: master-planning/planning-optimization/safety-margins.md
         - name: Purchase requisitions
           href: master-planning/planning-optimization/purchase-requisitions.md
+        - name: Production planning
+          href: master-planning/planning-optimization/production-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning

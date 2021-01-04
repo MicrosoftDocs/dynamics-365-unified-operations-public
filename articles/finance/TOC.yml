@@ -175,7 +175,7 @@
         - name: Architecture for Finance and Operations apps
           href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json    
         - name: Microsoft FastTrack
-          href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/finance/toc.json
+          href: /dynamics365/fasttrack/index
         - name: Onboard an implementation project
           href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
         - name: Environment planning
@@ -1028,6 +1028,8 @@
           href: general-ledger/tasks/close-fiscal-year.md
         - name: Mass financial period close
           href: general-ledger/tasks/mass-financial-period-close.md
+        - name: Year-end activities FAQ
+          href: general-ledger/faq-year-end-activities.md
       - name: Sales tax
         items:
         - name: Sales tax overview
@@ -1358,8 +1360,8 @@
         href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
       - name: Reset the financial reporting data mart
         href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
-      - name: Reset the Financial reporting data mart
-        href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md
+      - name: When to reset a data mart
+        href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
     - name: Globalization
       items:
       - name: Globalization resources

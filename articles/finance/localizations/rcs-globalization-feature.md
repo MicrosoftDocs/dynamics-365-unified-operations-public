@@ -17,7 +17,7 @@ ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 

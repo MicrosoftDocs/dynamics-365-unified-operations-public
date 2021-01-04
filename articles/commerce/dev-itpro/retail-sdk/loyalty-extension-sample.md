@@ -47,7 +47,7 @@ Because of the flexibility that the loyalty setup provides, this scenario can qu
 
 + No tiers are associated with the loyalty program.
 + There is a single loyalty scheme and a single loyalty reward point type.
-+ There is a single earning rule that applies to all product categories. For example, this rule might specify that, for every $1 that the customer spends, he or she earns 0.1 reward point. 
++ There is a single earning rule that applies to all product categories. For example, this rule might specify that, for every $1 that the customer spends, the customer earns 0.1 reward point. 
 + There is a single redemption rule that applies to all product categories. For example, this rule might specify that one reward point is equivalent to $1.
 
 > [!NOTE] 

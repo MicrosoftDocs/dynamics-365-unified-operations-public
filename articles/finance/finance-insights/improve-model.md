@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -47,19 +47,19 @@ If your organization requires only two outcomes, change the **Late** and **Very 
 
 ## Select fields
 
-When you're selecting fields to include in the model, be aware that the list includes all available fields in the Common Data Service entity that is mapped to the data in the Azure data lake. Some of these fields should **not** be selected. The fields that should not be selected fall into one of three categories:
+When you're selecting fields to include in the model, be aware that the list includes all available fields in the Microsoft Dataverse table that is mapped to the data in the Azure data lake. Some of these fields should **not** be selected. The fields that should not be selected fall into one of three categories:
 
-- The field is required for the Common Data Service entity, but there is no backing data for it in the data lake.
+- The field is required for the Dataverse table, but there is no backing data for it in the data lake.
 - The field is an ID and therefore doesn't make sense for a machine learning feature.
 - The field represents information that won't be available during prediction.
 
 The following sections show the fields that are available for the invoice and customer entities, and list the fields that should **not** be selected for training. The category that is specified for each of those fields refers to the categories in the preceding list.
  
-### Invoice Common Data Model entity
+### Invoice Dataverse table
 
-The following illustration shows the fields that are available for the invoice entity.
+The following illustration shows the fields that are available for the invoice table.
 
-[![Available fields for the invoice entity](./media/available-fields.png)](./media/available-fields.png)
+[![Available fields for the invoice table](./media/available-fields.png)](./media/available-fields.png)
 
 The following fields should not be selected for training:
 
@@ -70,11 +70,11 @@ The following fields should not be selected for training:
 - **Source record** (category 2)
 - **Source table** (category 2)
 
-### Customer Common Data Model entity
+### Customer Dataverse table
 
-The following illustration shows the fields that are available for the customer entity.
+The following illustration shows the fields that are available for the customer table.
 
-[![Available fields for the customer entity](./media/related-entities.png)](./media/related-entities.png)
+[![Available fields for the customer table](./media/related-entities.png)](./media/related-entities.png)
 
 The following field should not be selected for training:
 
