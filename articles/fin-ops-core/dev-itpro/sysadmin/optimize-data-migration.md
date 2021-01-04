@@ -42,7 +42,7 @@ The standard entities have not all been optimized for data migration. For exampl
 
 Begin the optimization phase by using a subset of the data. For example, if it is necessary to import a million records, consider starting with 1,000 records, and then increasing to 10,000 and then 100,000.
 
-Once you have identified the entities, you will use then you will want to go through the following sections to explore opportunities for optimizations. 
+Once you have identified the entities you will use, then you will want to go through the following sections to explore opportunities for optimizations. 
 
 ## Disable Change Tracking
 
@@ -52,7 +52,7 @@ Data management > Data entities > Change tracking > Disable Change Tracking
 
 ## Enable Set-based processing
 
-Verify the entity supports set-based processing from the list of entities. 
+Verify that the entity supports set-based processing from the list of entities. 
 
 Data management > Data entities > Set-based processing (column in grid)
 
