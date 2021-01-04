@@ -2877,6 +2877,8 @@
             href: warehousing/control-warehouse-location-directives.md
           - name: Work with location directives
             href: warehousing/create-location-directive.md
+          - name: Configure product filters for warehouse transactions
+            href: warehousing/filters-and-filter-codes.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
