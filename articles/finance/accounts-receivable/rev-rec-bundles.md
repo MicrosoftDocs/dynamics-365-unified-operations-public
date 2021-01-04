@@ -59,6 +59,7 @@ Parent item:  Laptop bundle
 The Base sales price on the component items is an essential part of the setup on the components.  The Base sales price, defined on the Sell fast tab of the item, is used to calculate the allocation factor when allocating the parent item’s Unit price down to the components. The trade agreement sale prices are never used for determining the allocation of the parent item’s Unit price to the components. 
 
 The following Base sales prices are defined on the components:
+
 - **1000** - $1,900.00
 - **S0021** - $150.00
 - **Support** - $500.00
@@ -71,7 +72,7 @@ Because the sales order contains a bundle, it must be confirmed.  On the confirm
  
 [![Sales order for bundle item that lists items included in the bundle](./media/bundle-02.png)](./media/bundle-02.png)
 
-The following illustration shows the confirmation document that lists only the bundle item. 
+The following illustration shows the confirmation report that lists only the bundle item. 
 
 [![Confirmation document showing only the bundle item](./media/bundle-03.png)](./media/bundle-03.png)
 
@@ -100,8 +101,18 @@ A bundle must be shipped and invoiced as a complete bundle. The packing slip and
 A partial amount can be shipped and invoiced if the quantity is reduced for all components of the bundle.  For example, assume the Laptop bundle was entered on the sales order with a quantity of 5.  After confirmation, the three components will display on the sales order, each with a quantity of 5. When shipping and invoicing, the quantities will default to 5 for each component but can be adjusted down to 3 for all components.  Then 3 full bundles are being shipped and invoiced.  The remaining 2 bundle items (three components with a quantity of 2 each) can be shipped and invoiced later.  
 
 The final step is to invoice the sales order.  When invoicing, the invoice dialog will display the component items but the printed invoice will include the parent item. 
+
+[![Bundle item with changes to the component items](./media/bundle-06.png)](./media/bundle-06.png)
+
+The invoice journal that is created after posting does not include the parent item from the bundle because it is in a cancelled state.
+
+[![Bundle item with changes to the component items](./media/bundle-07.png)](./media/bundle-07.png)
  
- 
-The invoice journal that is created after posting does not include the parent item from the bundle because it is in a cancelled state.  This is important because any processes performed after the invoice is posted is based off the invoice journal.  For example, if a credit note is created from the Sell tab on the action pane, the credit note will be created with the components and not the parent item. 
+It's important that the invoice journal doesn't include the parent item from the bundle because any processes performed after the invoice is posted are based on that invoice journal. For example, if a credit note is created from the Sell tab on the action pane, the credit note will be created with the components and not the parent item. 
 
  
+[![Bundle item with changes to the component items](./media/bundle-08.png)](./media/bundle-08.png)
+
+The following illustation shows the credit note that will be created with the components, but not the parent item.
+
+[![Bundle item with changes to the component items](./media/bundle-09.png)](./media/bundle-09.png)
