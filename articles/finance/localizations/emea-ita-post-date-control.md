@@ -5,7 +5,7 @@ title: Unified posting date control
 description: This topic explains how to configure chronology control for invoices posting dates.  
 author: Ilya Kondratenko
 manager: AnnBe
-ms.date: 12/18/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,19 +35,21 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article explains how to configure chronology control of invoices posting dates within a specific Sales Tax book section.
+This topic explains how to configure chronology control of invoices posting dates within a specific sales tax book section.
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- Italian sales tax books and sections are configured in the system. For more information, see [Italian sales tax books](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-ita-fiscal-books).
+- Italian sales tax books and sections are configured in the system. For more information, see [Italian sales tax books](emea-ita-fiscal-books.md).
 - In the Feature management workspace, turn on the **(Italy) Unified posting date control** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure posting date control
+Complete the following steps to configure posting date control.
 
-In **Tax** > **Setup** > **Sales tax** > **Italain sales tax book sections**, in the colulmn **Skip posting date control**, select a required option for a selected sales tax book section.
+1. Go to **Tax** > **Setup** > **Sales tax** > **Italain sales tax book sections**. 
+2. In the **Skip posting date control** column, select whether posting date control is required for a selected sales tax book section.
 
 ![Posting date control](media/emea-ita-post-date-control.jpg)
 
- - If **turned off** (default option) – then the system will always forbid posting of new invoices with dates earlier than the date of the latest posted invoice.  
- - If **turned on** – then the system allows posting with any date.
+ - If the field isn't enabled, which is the default option, the system doesn't allow posting of new invoices with dates earlier than the date of the latest posted invoice.  
+ - If the field is enabled, the system allows posting with any date.
