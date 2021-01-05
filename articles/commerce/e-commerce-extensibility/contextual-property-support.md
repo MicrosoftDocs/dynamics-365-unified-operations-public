@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Contextual Property Panel Support
+title: Contextual Configuration Property Support
 description:  
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.17
 
 ---
-# Contextual Property Panel Support
+# Contextual Configuration Property Support
 
 [!include [banner](../includes/banner.md)]
 
