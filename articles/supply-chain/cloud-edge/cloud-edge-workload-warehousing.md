@@ -208,7 +208,7 @@ The following table shows which outbound features are supported, and where they 
 The following table shows which inbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
 | Process                                                          | Hub | WES workload on a scale unit<p>_Yes is only when there is a warehouse order_</p> |
-|------------------------------------------------------------------|----------------|------------------------------|
+|------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Source&nbsp;document&nbsp;processing                                       | Yes | No |
 | Load and transportation management processing                    | Yes | No |
 | Inbound shipment confirmation                                            | Yes | No |
@@ -218,7 +218,7 @@ The following table shows which inbound features are supported, and where they a
 | Purchase order line receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p></p> |
 | Return order receiving and put away                               | Yes | No |
 | Mixed license plate receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
-| Load item receiving                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Load item receiving                                             | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | License plate receiving and put away                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Transfer order item receiving and put away                        | Yes | No |
 | Transfer order line receiving and put away                        | Yes | No |
