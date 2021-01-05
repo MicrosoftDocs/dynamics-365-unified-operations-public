@@ -35,13 +35,13 @@ ms.dyn365.ops.version: Human Resources
 **Issue**
 
 - The tenant/environment admin can't create an environment in the Microsoft Power Apps Admin center.
-- A licence that gives users the right to perform the environment creation step hasn't been assigned directly to the user who is performing that step.
+- The user doesn't have a license that gives the right to create environments.
 
 **Solution**
 
-Make sure that the tenant admin has assigned a valid Power Apps P2 license directly to the user who will perform the environment creation step. Here are the Microsoft Dynamics service plans that provide that right.
+Make sure the tenant admin has assigned a valid Power Apps P2 license to the user creating the environment. The following Microsoft Dynamics service plans provide permissions to create environments:
 
-| Overall product stock keeping unit (SKU)       | Power Apps P2 service plan  |
+| Overall product stockkeeping unit (SKU)       | Power Apps P2 service plan  |
 |------------------------------------------------|----------------------------|
 | Microsoft Dynamics 365 for Operations          | Power Apps for Dynamics 365 |
 | Microsoft Dynamics 365 Plan Enterprise Edition | Power Apps for Dynamics 365 |
