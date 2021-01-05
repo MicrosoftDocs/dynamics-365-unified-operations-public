@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Contextual Configuration Property Support
-description:  
+title: Contextual configuration property support
+description: This topic describes how to configure module configuration properties to be shown or hidden based on values of other configuration properties.
 author: samjarawan
 manager: annbe
 ms.date: 09/15/2020
@@ -28,25 +28,25 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.17
 
 ---
-# Contextual Configuration Property Support
+# Contextual configuration property support
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce.
+This topic describes how to configure module configuration properties to be shown or hidden based on values of other configuration properties.
 
 ## Overview
 
-While multiple [configuration fields](add-module-config-fields.md) can be definded within a [module's definition](module-definition-file.md) file, there may be scenarios where some fields are only relevant based on the value set on other configuration fields within the module, otherwise the field should be hidden.  This will help minimize the number of configuration fields shown to a page editor as they are configuring a module, reducing the complexity and possible confusion.
+While multiple [configuration fields](add-module-config-fields.md) can be defined within a [module's definition](module-definition-file.md) file, there may be scenarios where some fields are only relevant based on the value set on other configuration fields within the module, otherwise the field should be hidden.  This will help minimize the number of configuration fields shown to a page editor as they are configuring a module, reducing the complexity and possible confusion.
 
-A module can leverage conditional schema to define the rules that the site builder property panel will respect to show or hide various configuration fields based on values of other fields.  As an example, a module may have a "layout" property with two layouts, one is plain text and another is rich text with an image. The module designer would like to ensure that only the appropriate fields get displayed in the site builder tool when the page editor is configuring the module.
+A module can leverage conditional schema to define the rules that the site builder property panel will respect to show or hide various configuration fields based on values of other fields.  As an example, a module may have a "layout" property with two layouts, one is plain text and another is rich text with an image. The module designer would like to ensure that only the appropriate fields get displayed in the site builder property panel when the page editor is configuring the module.
 
-This is supported in both the module definition file and [module definition extensions](theme-module-extensions.md) using the conditional schema **dependentSchema** property. Two types of conditional schema is supported **schema dependencies** and **property dependencies**.
+This is supported in both the [module definition file](module-definition-file.md) and [module definition extensions](theme-module-extensions.md) using the conditional schema **dependentSchema** property. There are two types of conditional schema supported **schema dependencies** and **property dependencies**.
 
 ### Schema Dependencies
 Schema dependencies provide support to declare that the schema should change when a specific property value is selected. The **dependentSchemas** property is used with the [oneOf](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/) property to declare the list of different configuration properties applicable for a specific configuration value.
 
 #### Example schema dependency
-In the following sample module definition file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property will be displayed.  When the **layout** property is set to "RichTextWithImage", then the "featureRichText", "featureImage" and "imageAlignment" properties will be shown (but not the "featureText" config property).
+In the following sample module definition file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property should be displayed.  When the **layout** property is set to "RichTextWithImage", then the "featureRichText", "featureImage" and "imageAlignment" properties should be shown (but not the "featureText" config property).
 
 ```json
 {
@@ -153,9 +153,9 @@ In the following example the **dependentSchema** property is used to defined tha
 ```
 
 ## Handling property override conflicts
-Support for **dependentSchemas** property is supported in both the modules definition file and module definition extensions.  Since it is possible to have conflicts between the two files, a boolean **override** property is supported in the definition extension which when set to true will allow override of configiguration properties.
+Since **dependentSchemas** property is supported in both the modules definition file and module definition extensions, it is possible to have conflicts between the two files, a boolean **override** property is supported in the definition extension which when set to true will allow override of specific configuration properties.
 
-The below example shows a module definition file and then a module definition extension:
+The below example shows a module definition file and then a module definition extension using the override property:
 
 ### Module definition file
 ```json
@@ -263,10 +263,10 @@ The below example shows a module definition file and then a module definition ex
 }
 ```
 
-
+### Conflict resolution scenarios
 The below table lists out possible scenarios and the expected outcome when using dependency schemas with the module defintion file and module definition extension.
 
-A. Normal scenarios
+#### Normal scenarios
 
 | Scenario | Expected outcome |
 | -------- | ---------------- |
@@ -276,7 +276,7 @@ A. Normal scenarios
 | Dependency schema on the same property on both module definition and definition extension. | 	Module definition gets precedence |
 | Same property is defined in both the module definition and definition extension. | Module definition gets precedence |
 
-B. Override scenarios
+#### Override scenarios
 
 | Scenario | Expected outcome |
 | -------- | ---------------- |
