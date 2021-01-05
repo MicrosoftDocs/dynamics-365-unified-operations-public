@@ -119,10 +119,10 @@ In the following sample module definition file, you can see that when the **layo
 ```
 
 ### Property Dependencies
-Property dependencies can be used to declare that a certain configuration property must be present if another configuration property is present.
+Property dependencies can be used to declare that certain configuration properties must be present if another configuration property value is present.
 
 #### Example property dependency
-In the following example the **dependentSchema** property is used to defined that whenever the "productTitle" is present the "subTitle" configuration property must also be present.
+In the following example the **dependentSchema** property is used to defined that whenever the "productTitle" is populate then the "subTitle" configuration property will be shown in the site builder tool.
 
 ```json
 {
@@ -136,14 +136,14 @@ In the following example the **dependentSchema** property is used to defined tha
             "friendlyName": "Product Title",
             "description": "Product title."
         }
-    }
+    },
     "dependentSchemas": {
         "productTitle": {
             "properties": {
                 "subTitle" : {
                     "type": "string",
                     "friendlyName": "Product Sub Title",
-                    "description":  "Product sub title",
+                    "description":  "Product sub title.",
                 }
             },
             "required": ["productTitle"]
@@ -152,33 +152,137 @@ In the following example the **dependentSchema** property is used to defined tha
 }
 ```
 
-## Support for config property overrides in definition extension
-We have added support for Boolean property in definition extension named “override”  which when set to true will allow to override config properties in Definition extension. So in scenarios where you would like to override same config properties in module definition with Definition Extension config properties.  You can set the override property to true.
+## Handling property override conflicts
+Support for **dependentSchemas** property is supported in both the modules definition file and module definition extensions.  Since it is possible to have conflicts between the two files, a boolean **override** property is supported in the definition extension which when set to true will allow override of configiguration properties.
 
-Below is an example: 
+The below example shows a module definition file and then a module definition extension:
 
-Also attaching the list of scenario along with expected behavior: 
+### Module definition file
+```json
+{
+    "$type": "contentModule",
+    "friendlyName": "Product Feature",
+    "name": "product-feature",
+    "description": "Feature module used to highlight a product.",
+    "config": {
+        "layout": {
+            "friendlyName": "Image Alignment",
+            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "type": "string",
+            "enum": {
+                "plainTextOnly": "Plain Text Only",
+                "richTextWithImage": "Rich Text With Image"
+            },
+            "default": "plainTextOnly",
+            "scope": "module",
+            "group": "Layout Properties"
+        }
+    }   
+}
+```
 
-A.	Normal scenario
+### Module definition extension sample
+```
+{
+    "$type": "definitionExtension",
+    "config": {
+        "layout": {
+            "friendlyName": "Image Alignment",
+            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "type": "string",
+            "enum": {
+                "plainTextOnly": "Plain Text Only",
+                "richTextOnly": "Rich Text Only",
+                "richTextWithImage": "Rich Text With Image"
+            },
+            "default": "plainTextOnly",
+            "override": true
+        }
+    },
+    "dependentSchemas": {
+        "oneOf": [
+            {
+                "properties": {
+                    "layout": {
+                        "enum" : {
+                            "plainTextOnly": "plainTextOnly"
+                        }
+                    },
+                    "featureText" : {
+                        "type": "string",
+                        "friendlyName": "Feature Text",
+                        "description":  "Main text title to show in module.",
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "layout": {
+                        "enum" : {
+                            "richTextOnly": "richTextOnly"
+                        }
+                    },
+                    "featureRichText" : {
+                        "type": "richText",
+                        "friendlyName": "Feature Text",
+                        "description":  "Main rich text to show in module.",
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "layout": {
+                        "enum" : {
+                            "richTextWithImage": "richTextWithImage"
+                        }
+                    },
+                    "featureRichText" : {
+                        "type": "richText",
+                        "friendlyName": "Feature Text",
+                        "description":  "Main rich text to show in module.",
+                    },
+                    "featureImage" : {
+                        "type": "image",
+                        "friendlyName": "Feature Title",
+                        "description":  "Image to show in module.",
+                    },
+                    "imageAlignment": {
+                        "friendlyName": "Image Alignment",
+                        "description": "Sets the desired alignment of the image, either left or right on the text.",
+                        "type": "string",
+                        "enum": {
+                            "left": "Left",
+                            "right": "Right"
+                        },
+                        "default": "left"
+                    }
+                }
+            }
+        ]
+    }
+}
+```
 
-| Scenario	| Expected outcome |
-| ------- | ---------------- |
-|1.	Dependency Schema only in definition extension, No conflicts between properties inside dependency schema and definition extension.|Apply dependency schema. |
-|2.	Dependency schema only in module definition. No conflicts between properties inside dependency schema and definition extension. | 	Apply dependency schema. |
-|3.	Dependency schema only in module definition. Conflicts between properties inside dependency schema and definition extension. i.e. PROP A inside dependency schema of Module definition is declared as is in Definition extension without dependency schema. | 	Build error. |
-|4.	Dependency schema on the same property on both module definition and definition extension.| 	Module definition gets precedence .|
-|5.	Same property on both module definition and definition extension. |	Module definition gets precedence .|
- 
 
-B.	Override scenario
+The below table lists out possible scenarios and the expected outcome when using dependency schemas with the module defintion file and module definition extension.
+
+A.	Normal scenarios
 
 | Scenario | Expected outcome |
-| ------- | ---------------- |
-|1.	Same property on both module definition and definition extension. Property in definition extension has no override /“override”:false property | 	Module Definition  gets precedence . |
-|2.	Dependency schema on the same property on both module definition and definition extension. Property in definition extension has a “override”:true property | 	Definition extension gets precedence .|
-| 3.	Dependency schema on the same property on both module definition and definition extension. Property in definition extension has a “override”:false / no override property | Module Definition gets precedence . | 
-| 4.	Property A in module definition and Property A inside dependency schema of definition extension with a override:true 	| Property A inside dependency schema of definition extension takes precedence .|  
-| 5.	Property A in module definition and Property A inside dependency schema of definition extension with no override/ override: false | Property A module definition takes precedence . |
+| -------- | ---------------- |
+| Dependency schema only in module definition. No conflicts between properties inside dependency schema and definition extension. | 	Apply dependency schema |
+| Dependency schema only in definition extension, no conflicts between properties inside dependency schema and definition extension.| Apply dependency schema |
+| Dependency schema only in module definition. Conflict exists between properties inside dependency schema and definition extension. i.e. Property A inside dependency schema of Module definition is declared as is in definition extension without dependency schema. | Build error |
+| Dependency schema on the same property on both module definition and definition extension. | 	Module definition gets precedence |
+| Same property is defined in both tge module definition and definition extension. | Module definition gets precedence |
  
 
+B.	Override scenarios
 
+| Scenario | Expected outcome |
+| -------- | ---------------- |
+| Same property on both module definition and definition extension. Property in definition extension has no override property set or has one set to false | Module definition gets precedence |
+| Dependency schema on the same property in both module definition and definition extension. Property in definition extension has the override property set to true. | Definition extension gets precedence|
+| Dependency schema on the same property on both module definition and definition extension. Property in definition extension has the override set to false or no override property. | Module Definition gets precedence | 
+| Property A in module definition and property A inside dependency schema of definition extension with an override property set to true | Property A inside dependency schema of definition extension takes precedence |  
+| Property A in module definition and property A inside dependency schema of definition extension with no override or override set to false | Property A module definition takes precedence |
