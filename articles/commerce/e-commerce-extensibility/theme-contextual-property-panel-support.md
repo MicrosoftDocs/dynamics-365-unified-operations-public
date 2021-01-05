@@ -74,7 +74,7 @@ In the following sample module definition file, you can see that when the **layo
                 "properties": {
                     "layout": {
                         "enum" : {
-                            "default": "PlainTextOnly"
+                            "plainTextOnly": "plainTextOnly"
                         }
                     },
                     "featureText" : {
@@ -88,7 +88,7 @@ In the following sample module definition file, you can see that when the **layo
                 "properties": {
                     "layout": {
                         "enum" : {
-                            "default": "RichTextWithImage"
+                            "richTextWithImage": "richTextWithImage"
                         }
                     },
                     "featureRichText" : {
@@ -109,8 +109,8 @@ In the following sample module definition file, you can see that when the **layo
                             "left": "Left",
                             "right": "Right"
                         },
-                        "default": "left",
-                    },
+                        "default": "left"
+                    }
                 }
             }
         ]
