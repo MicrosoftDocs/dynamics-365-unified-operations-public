@@ -66,7 +66,7 @@ In the following sample module definition file, you can see that when the **layo
             "default": "plainTextOnly",
             "scope": "module",
             "group": "Layout Properties"
-        },
+        }
     }
     "dependentSchemas": {
         "oneOf": [
