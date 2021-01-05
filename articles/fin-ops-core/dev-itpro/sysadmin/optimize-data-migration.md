@@ -31,18 +31,18 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-Data migration is a key component towards a successful go-live implementation. One of the main concerns some customers have is the speed in which the data can be migrated. This is especially true if there are vast amounts of data and a small cut-over window. The [Data Migration Framework](../data-entities/data-entities-data-packages.md) is also used for moving data as part of business requirements and operations.
+Data migration is a key success factor in almost every implementation. One of the main concerns some customers have is the speed in which the data can be migrated. This is especially true if there are vast amounts of data and a small cutover window. The [Data Migration Framework](../data-entities/data-entities-data-packages.md) is also used for moving data as part of business requirements and operations.
 
 The information below represents a set of steps and actions that can be taken in order to optimize the performance of data migration. 
 
 > [!NOTE]
-> Testing results on a tier 1 environment should not be compared or extrapolated to performance on a tier 2+ sandbox environment.
+> Testing results on a Tier-1 environment should not be compared or extrapolated to performance on a Tier-2+ sandbox environment.
 
 The standard entities have not all been optimized for data migration. Some have been optimized for OData integration and if the required entity cannot be optimized to meet the performance requirements, it is recommended that [a new optimized entity is created](../data-entities/build-consuming-data-entities.md). A developer can accelerate this process by duplicating an existing entity.
 
 Begin the optimization phase by using a subset of the data. For example, if it is necessary to import a million records, consider starting with 1,000 records, and then increasing to 10,000 and then 100,000.
 
-Once you have identified the entities you will use, then you will want to go through the following sections to explore opportunities for optimizations. 
+Once you have identified the entities you will use, then you will want to go through the following sections to explore opportunities for optimization. 
 
 ## Disable Change Tracking
 
@@ -71,7 +71,7 @@ If it is necessary to create an entity that allows set-based processing, some ke
 
 ## Create data migration batch group
 
-During cut-over, execute the data migration while there is little to no other activity. It can help to configure and use a batch group with all or at least most AOS nodes assigned.
+During cutover, execute the data migration while there is little to no other activity. It can help to configure and use a batch group with all or at least most compute nodes assigned.
 
 System administration > Setup > Batch group
 
@@ -143,7 +143,7 @@ If this flag is enabled, the system will execute any logic written into the vali
 
 If this flag is enabled, the system will execute any logic written into the insert() or update() method on the table, and related event handlers.
 
-#### Call validate Field method on target
+#### Call validateField method on target
 
 Field validation can be found under:
 
@@ -156,14 +156,14 @@ If this option is enabled, the validateField(FieldId p1) method will be called f
 Here are some general recommendations how to approach data migration performance optimization.
 
 * Do break up large files into smaller chunks. The reason for this is that it allows time for the SQL optimizer to determine if a new query plan will be optimal.
-* Performance should be tested in an appropriate tier 2+ environment.
+* Performance should be tested in an appropriate Tier-2+ environment.
 * Performance should be tested in a mock cutover prior to go-live. 
 
 Data migration performance testing is an iterative process. It is suggested that information regarding each test is collected and compared to determine the optimal configuration for a specific entity. You will want to collect and verify some of the following settings:
 
 * Batch group used
-* Number of AOS assigned to each batch group
-* Maximum batch threads to each AOS
+* Number of batch servers assigned to each batch group
+* Maximum batch threads to each batch server
 
 Example of information to collect for each entity:
 
