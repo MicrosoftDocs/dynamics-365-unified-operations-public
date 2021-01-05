@@ -223,7 +223,9 @@
         "fin-ops-core/fin-ops/hr/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
         "fin-ops-core/fin-ops/imp-lifecycle/**/**.md": "Operations, CrossApp",
         "fin-ops-core/fin-ops/organization-administration/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
-        "fin-ops-core/fin-ops/organization-administration/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp"
+        "fin-ops-core/fin-ops/organization-administration/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "human-resources/**/**.md": "HumanResources",
+        "talent/**/**.md": "Talent, Supply Chain, ShowInHelp"
       }
     },
     "template": [],
