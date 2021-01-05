@@ -127,7 +127,7 @@ The following illustration shows an example of an e-commerce order where a picku
 
 ## Time slot selection for call center orders
 
-In the call center app, call center agents can select the pickup store or location, as well as a date and time slot.
+In the call center app, call center agents can select the pickup store or location, as well as a date and time slot as highlighted in the following illustration.
 
 ![Example of a call center order where a pickup time slot has been selected](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
