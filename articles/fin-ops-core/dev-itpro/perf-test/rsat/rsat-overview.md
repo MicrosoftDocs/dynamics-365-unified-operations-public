@@ -78,7 +78,7 @@ The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video 
 
 
 ## End-to-end flow
-This tool is part of the end to end flow described below. The application, along with Microsoft Dynamics Lifecycle Services (LCS) and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), configuration, execution, investigation, and reporting.
+This tool is part of the end to end flow described below. RSAT, along with Microsoft Dynamics Lifecycle Services (LCS) and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), distribution, configuration, execution, investigation, and reporting.
 
 ![Author, configure, and execute](media/end-to-end.png)
 
@@ -86,7 +86,7 @@ To learn more about this this process, see [Create and automate user acceptance 
 
 ## LCS and BPM
 
-You aren't required to use the Business process modeler (BPM) tool in LCS. However, BPM is the recommended tool if you want to enable the management and distribution of test libraries across projects and tenants. These capabilities are especially useful for Microsoft partners and independent software vendors (ISVs). BPM enables the distribution of test libraries as part of LCS solutions.
+You aren't required to use the Business process modeler (BPM) tool in LCS. BPM is recommended if you want to enable the management and distribution of test libraries across projects and tenants. These capabilities are especially useful for Microsoft partners and independent software vendors (ISVs). BPM enables the distribution of test libraries as part of LCS solutions.
 
 If you are not using BPM, you can manually create test cases in Azure DevOps and attach developer recording files to your Azure DevOps test cases. You can create developer recording files directly from the Task recorder pane.
 
