@@ -44,13 +44,13 @@ Begin the optimization phase by using a subset of the data. For example, if it i
 
 Once you have identified the entities you will use, then you will want to go through the following sections to explore opportunities for optimization. 
 
-## Disable Change Tracking
+### Disable Change Tracking
 
 Change tracking can be [enabled and disabled](../data-entities/entity-change-track.md) from the list of entities. 
 
 Data management > Data entities > Change tracking > Disable Change Tracking
 
-## Enable Set-based processing
+### Enable Set-based processing
 
 Verify that the entity supports set-based processing from the list of entities. 
 
@@ -69,81 +69,81 @@ If it is necessary to create an entity that allows set-based processing, some ke
 * The main data source cannot prevent saving data across companies however embedded data sources allow it
 * The main data source cannot prevent saving data across partitions however embedded data sources allow it
 
-## Create data migration batch group
+### Create data migration batch group
 
 During cutover, execute the data migration while there is little to no other activity. It can help to configure and use a batch group with all or at least most compute nodes assigned.
 
 System administration > Setup > Batch group
 
-## Priority-based batch scheduling
+### Priority-based batch scheduling
 
 In Platform update 31, we introduced a new feature that will optimize how batch jobs are executed. Consider enabling [Priority-based batch scheduling](priority-based-batch-scheduling.md) if contention is identified in the batch framework.
 
-## Maximum batch threads
+### Maximum batch threads
 
 You can configure the maximum number of batch threads per AOS to better utilize parallelism and multithreading. This value should be changed cautiously. If the number is too high, it can have negative performance implications. The default value is currently 4. If necessary, the value can be changed to 8. Do not configured the value above 8 without significant performance testing.
 
 System administration > Setup > Server configuration
 
-## Import in batch
+### Import in batch
 
 Whenever running an import job, ensure that it is run in batch. Otherwise it will be run using a single thread, which will prevent the system from using the most of these optimization configurations.
 
-## Clean staging tables
+### Clean staging tables
 
 It is recommended to clean up the staging tables. This optimization can be achieved by scheduling the [Job history cleanup job](batch-history-cleanup.md) (available in Platform update 29 and later). After enabling the feature "Execution history cleanup" via Feature management, you will be able to access it from:
 
 Data management > Job history cleanup
 
-## Defragmentation of indexes
+### Defragmentation of indexes
 
 Review the [configuration of the index defragmentation job](batch-job-sql-defragmentation.md). It is recommended that this job runs daily, though not at the same time a data migration job is executing. Review the parameters to ensure the job captures the tables and indexes that are being changed via the data migration job. 
 
-## Update statistics
+### Update statistics
 
 Before running a data migration job with large volume of data, consider updating the statistics across the associated tables. This suggestion specifically applies to sandbox environments, as this optimization is automatically taken care of in production environments. You can run [update statistics for a specific table from LCS](../lifecycle-services/querycookbook.md), or in a sandbox environment use sp_updatestats stored procedure through direct SQL.
 
-## Clean the data
+### Clean the data
 
 The time spent on validations and reporting errors will add to the total time spent doing the migration. Consider this when importing a high volume of invalid or inconsistent data. It is better trying to resolve and reduce errors related to data quality. This way you avoid unnecessary executions of validation and error handling. 
 
-## Configurations to test during data migration test runs
+### Configurations to test during data migration test runs
 
 The following configurations can impact performance and therefore it is recommended that these changes are tested with different values suitable for your scenario.
 
-### Configure entity execution parameters
+#### Configure entity execution parameters
 
 You can modify the execution parameters for all or specific entities here:
 
 Data management > Framework parameters > Entity settings > Configure entity execution parameters
 
-#### Import threshold record count
+##### Import threshold record count
 
 This value configures the number of records that will be split and assigned to separate tasks.
 
-#### Import task count
+##### Import task count
 
 This value configures how many threads will be used for the data migration job for a specific entity. For example, consider if the maximum batch threads for each server is set to the value of 8. Then consider there are four servers assigned to the data migration batch group. This would mean the total maximum value for "Import task count" would be eight times four, which is the value of 32.
 
 If a data entity does not support multithreading, when you attempt to configure the entity, you will see an error message.
 Example: "Custom sequence is defined for the entity 'Customers V3', more than one task is not supported."
 
-### Validations
+#### Validations
 
 Validation logic for record inserts or updates may have been incorporated into the system, and/or there may be validation on individual fields. If the data migration is mature enough and this validation can be disabled, this option can significantly reduce the time used for importing. 
 You will find these settings on each entity under: 
 
 Data management > Data entities > Entity structure
 
-#### Run business validations
+##### Run business validations
 
 If this flag is enabled, the system will execute any logic written into the validateWrite() method on the table, and related event handlers.
 
-#### Run business logic in insert or update method
+##### Run business logic in insert or update method
 
 If this flag is enabled, the system will execute any logic written into the insert() or update() method on the table, and related event handlers.
 
-#### Call validateField method on target
+##### Call validateField method on target
 
 Field validation can be found under:
 
@@ -151,7 +151,7 @@ Data management > Data entities > Modify target mapping
 
 If this option is enabled, the validateField(FieldId p1) method will be called for the specific field.
 
-### Data migration performance optimization process
+#### Data migration performance optimization process
 
 Here are some general recommendations how to approach data migration performance optimization.
 
