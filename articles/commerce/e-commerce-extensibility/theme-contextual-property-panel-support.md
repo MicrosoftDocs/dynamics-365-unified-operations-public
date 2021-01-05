@@ -266,23 +266,22 @@ The below example shows a module definition file and then a module definition ex
 
 The below table lists out possible scenarios and the expected outcome when using dependency schemas with the module defintion file and module definition extension.
 
-A.	Normal scenarios
+A. Normal scenarios
 
 | Scenario | Expected outcome |
 | -------- | ---------------- |
 | Dependency schema only in module definition. No conflicts between properties inside dependency schema and definition extension. | Apply dependency schema |
-| Dependency schema only in definition extension, no conflicts between properties inside dependency schema and definition extension.| Apply dependency schema |
+| Dependency schema only in definition extension, no conflicts between properties inside dependency schema and definition extension. | Apply dependency schema |
 | Dependency schema only in module definition. Conflict exists between properties inside dependency schema and definition extension. i.e. Property A inside dependency schema of Module definition is declared as is in definition extension without dependency schema. | Build error |
 | Dependency schema on the same property on both module definition and definition extension. | 	Module definition gets precedence |
 | Same property is defined in both tge module definition and definition extension. | Module definition gets precedence |
- 
 
-B.	Override scenarios
+B. Override scenarios
 
 | Scenario | Expected outcome |
 | -------- | ---------------- |
 | Same property on both module definition and definition extension. Property in definition extension has no override property set or has one set to false | Module definition gets precedence |
-| Dependency schema on the same property in both module definition and definition extension. Property in definition extension has the override property set to true. | Definition extension gets precedence|
+| Dependency schema on the same property in both module definition and definition extension. Property in definition extension has the override property set to true. | Definition extension gets precedence |
 | Dependency schema on the same property on both module definition and definition extension. Property in definition extension has the override set to false or no override property. | Module Definition gets precedence | 
 | Property A in module definition and property A inside dependency schema of definition extension with an override property set to true | Property A inside dependency schema of definition extension takes precedence |  
 | Property A in module definition and property A inside dependency schema of definition extension with no override or override set to false | Property A module definition takes precedence |
