@@ -145,6 +145,11 @@ Here are the related core table maps for prospect-to-cash:
 + [All products to msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [Pricelist](product-mapping.md)
 
+## Limitations
+- Support for Return orders is not available.
+- Support for Credit notes is not available.
+- Financial dimensions must be set for the master data like customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flows to the order automatically. Currently dual-write does not include financial dimensions data for master data. 
+
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
