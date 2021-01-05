@@ -263,7 +263,7 @@ The following table shows which warehouse operations and exception handing featu
 | Change batch disposition code                      | Yes | Yes                          |
 | Display open work list                             | Yes | Yes                          |
 | Consolidate license plates                         | Yes | No                           |
-| Min/max and zone threshold replenishment processing| Yes | Yes                          |
+| Min/max and zone threshold replenishment processing| Yes <p>Recommendation is not to include the same locations as part of the queries</p>| Yes                          |
 | Slotting replenishment processing                  | Yes <p>Note that the setup must be done on the scale unit</p>   | Yes                           |
 | Block and unblock work                             | Yes | Yes                          |
 | Change user                                        | Yes | Yes                          |
