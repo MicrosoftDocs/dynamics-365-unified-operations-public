@@ -268,8 +268,10 @@ The below table lists out possible scenarios and the expected outcome when using
 
 A. Normal scenarios
 
-| Scenario                                                                                      | Expected outcome |
-| --------------------------------------------------------------------------------------------- | ---------------- |
+| Scenario | Expected outcome |
+| -------- | ---------------- |
+| Same property on both module definition and definition extension. Property in definition extension has no override property set or has one set to false | Module definition gets precedence |
+| Dependency schema on the same property in both module definition and definition extension. Property in definition extension has the override property set to true. | Definition extension gets precedence |
 | Dependency schema only in module definition. No conflicts between properties inside dependency schema and definition extension. | Apply dependency schema |
 | Dependency schema only in definition extension, no conflicts between properties inside dependency schema and definition extension. | Apply dependency schema |
 | Dependency schema only in module definition. Conflict exists between properties inside dependency schema and definition extension. i.e. Property A inside dependency schema of Module definition is declared as is in definition extension without dependency schema. | Build error |
