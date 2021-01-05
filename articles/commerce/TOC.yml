@@ -504,7 +504,7 @@
             href: payment-methods.md
           - name: Payment methods in call centers 
             href: work-with-payments.md
-          - name: Refund payment processing in call center
+          - name: Refund payment processing in call centers
             href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
