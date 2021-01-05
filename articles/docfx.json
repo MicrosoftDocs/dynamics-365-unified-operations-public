@@ -224,7 +224,7 @@
         "fin-ops-core/fin-ops/imp-lifecycle/**/**.md": "Operations, CrossApp",
         "fin-ops-core/fin-ops/organization-administration/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
         "fin-ops-core/fin-ops/organization-administration/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
-        "human-resources/**/**.md": "HumanResources",
+        "human-resources/**/**.md": "Human Resources",
         "talent/**/**.md": "Talent, ShowInHelp"
       }
     },
