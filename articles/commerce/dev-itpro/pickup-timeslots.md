@@ -5,7 +5,7 @@ title: Create and update time slots for customer pickup
 description: This topic describes how to create, configure, and update customer pickup time slots in Commerce headquarters.
 author: anupamar-ms
 manager: AnnBe
-ms.date: 11/06/2020
+ms.date: 01/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -64,7 +64,7 @@ A time slot is defined by using the following properties:
     > [!NOTE]
     > The hours for store pickup must be defined in the time zone of the appropriate store.
 
-- **Time Slot Interval** – Specify the duration that can be allotted to each time slot. For example, the duration of each time slot might be in increments of 15 minutes, 30 minutes, or one hour. If timeslot is 0, the timeslot is available for the entire duration of the start and end time.
+- **Time Slot Interval** – Specify the duration that can be allotted to each time slot. For example, the duration of each time slot might be in increments of 15 minutes, 30 minutes, or one hour. If time slot value is 0, the time slot is available for the entire duration between the start and end time.
 - **Slots Per Interval** – Specify the number of customer or orders that can be served for pickup during each time slot interval. For example, enter **1**, **2**, **3**, or any other whole number.
 - **Active Days** – Specify the days of the week when the pickup time slots are active. This property lets the retailer define the days when it wants to support pickup orders.
 - **Retail Channels** – Specify the retail channels. Each time slot can be associated with one or more retail stores. Depending on each store's hours of operation, one or more time slot entries can be created and associated with a channel. 
@@ -123,17 +123,13 @@ For information about how to make time slot selection available for e-commerce o
 
 The following illustration shows an example of an e-commerce order where a pickup time slot has been selected.
 
-![Example of an e-Commerce order where a pickup time slot has been selected](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Example of an e-commerce order where a pickup time slot has been selected](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
+## Time slot selection for call center orders
 
-## Time slot selection for Call center orders
+In the call center app, call center agents can select the pickup store or location, as well as a date and time slot.
 
-In the call center app, the call center agent can select the pickup store or location, and a date and timeslot 
-
-![Example of a Call center order where a pickup time slot has been selected](../dev-itpro/media/Curbside_timeslot_callcenter.png)
-
-
-
+![Example of a call center order where a pickup time slot has been selected](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## Additional resources
 
