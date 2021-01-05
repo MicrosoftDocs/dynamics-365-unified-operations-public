@@ -270,7 +270,7 @@ A.	Normal scenarios
 
 | Scenario | Expected outcome |
 | -------- | ---------------- |
-| Dependency schema only in module definition. No conflicts between properties inside dependency schema and definition extension. | 	Apply dependency schema |
+| Dependency schema only in module definition. No conflicts between properties inside dependency schema and definition extension. | Apply dependency schema |
 | Dependency schema only in definition extension, no conflicts between properties inside dependency schema and definition extension.| Apply dependency schema |
 | Dependency schema only in module definition. Conflict exists between properties inside dependency schema and definition extension. i.e. Property A inside dependency schema of Module definition is declared as is in definition extension without dependency schema. | Build error |
 | Dependency schema on the same property on both module definition and definition extension. | 	Module definition gets precedence |
