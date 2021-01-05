@@ -67,7 +67,7 @@ In the following sample module definition file, you can see that when the **layo
             "scope": "module",
             "group": "Layout Properties"
         }
-    }
+    },
     "dependentSchemas": {
         "oneOf": [
             {
@@ -172,7 +172,7 @@ A.	Normal scenario
 
 B.	Override scenario
 
-|Scenario	|Expected outcome|
+| Scenario | Expected outcome |
 | ------- | ---------------- |
 |1.	Same property on both module definition and definition extension. Property in definition extension has no override /“override”:false property | 	Module Definition  gets precedence . |
 |2.	Dependency schema on the same property on both module definition and definition extension. Property in definition extension has a “override”:true property | 	Definition extension gets precedence .|
