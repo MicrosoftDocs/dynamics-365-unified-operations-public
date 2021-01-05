@@ -41,6 +41,12 @@ In the app interfaces, you can access the processing statuses and invoice inform
 
 ![Dual-write dataflow in prospect-to-cash](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
+For customer and contact integration, see ![customer integration](customer-mapping.md) page. 
+For product integration, see ![product integration](product-mapping.md) page.
+    > [!NOTE]
+    > In Dynamics 365 Sales, both prospect and customer refer to a record in Account entity with RelationshipType field value as either Prospect or Customer. In case your business involves Account qualification process where the Account record is created and qualified as a prospect first and then to a customer, that record gets synchronized to Finance and Operations app only when it is a customer (RelationshipType=Customer). In case you want the Account record to synchronize as a prospect, then you need a custom map to integrate the prospect data. 
+
+
 ## Prerequisites and mapping setup
 
 Before you can sync sales quotations, you must update the following settings.
