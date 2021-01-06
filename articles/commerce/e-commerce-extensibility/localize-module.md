@@ -323,6 +323,36 @@ You can generate global.json files for module resources and authoring resources 
 }
 ```
 
+## Override a resource string for a theme
+The built in module library set of modules and themes may have localized strings that you would like to override.  This can be achieved by modifying the global.json resource located in the src/resources/modules directory using the following pattern for a specific theme:
+
+{ThemeNamespace}.{ThemeName}.{ResourceString}: {
+    "value" : "",
+    "_value.comment": ""
+}
+
+### Overriding resource strings for installed themes
+For the pre installed themes (fabrikam and starter) use **@msdyn365-commerce-modules** as the theme namespace.  The below example shows how to change the sign in link text on the fabrikam theme: 
+
+```json
+"@msdyn365-commerce-modules.fabrikam.signInLinkText": {
+    "value": "Sign in now",
+    "_value.comment": "Sign-in Link Text"
+}
+```
+
+### Overriding resource strings for custom themes
+For custom (or local themes), use the **__local__** for the theme namespace.  The below example shows how to change the sign in link text for a custom theme called "adventureworks": 
+
+```json
+"__local__.adventureworks.signInLinkText": {
+    "value": "Log in",
+    "_value.comment": "Log in Link Text"
+}
+```
+
+Note for [shared themes](extend-theme.md), the child theme will inherits all the resources string overrides tied to the parent theme.
+
 ## Testing localized content
 
 To test localized content, you must use a page mock and change the locale to the locale that you're testing. For more information about page mocks, see [Testing modules with page mocks](test-page-mock.md).
