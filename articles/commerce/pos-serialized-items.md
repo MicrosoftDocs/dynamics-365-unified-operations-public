@@ -97,13 +97,13 @@ To enable such validation, as a prerequisite, you need to schedule the following
 
 ## Sell serialized items in POS
 
-While the POS application has always supported selling serialized items, in Commerce version 10.0.16 and later, organizations can enable functionality that enhances the business logic that's triggered when selling products that are configured for serial number tracking.
+While the POS application has always supported selling serialized items, in Commerce version 10.0.17 and later, organizations can enable functionality that enhances the business logic that's triggered when selling products that are configured for serial number tracking.
 
 When the **Enhanced serial number validation in POS order capture and order fulfillment** feature is enabled, the following product configurations are evaluated when selling serialized products in POS:
 
-- Serial type setup (active or active in sales process).
-- Blank issue allowed settings for the product.
-- Physical negative inventory settings for the product and/or the selling warehouse.
+- **Serial type** setup for the product (**active** or **active in sales**).
+- **Blank issue allowed** settings for the product.
+- **Physical negative inventory** settings for the product and/or the selling warehouse.
 
 ### Active serial configurations
 
@@ -132,9 +132,9 @@ For serialized items sold for future pickup or shipment, POS users can skip ente
 
 ### Apply serial numbers during customer order fulfillment or pick up
 
-When fulfilling customer order lines for serialized products using the **Order Fulfillment** operation in POS, POS enforces the capture of the serial number prior to final fulfillment. Therefore, if a serial number wasn't provided during the initial order capture, it must be captured during the pick, pack, or ship processes in POS. A validation is done at each step and the user will only be asked for serial number data if it's missing. For example, if a user skips the pick or pack steps and immediately initiates a shipment, and a serial number hasn't been registered for the line, POS will require the serial number to be entered before completion of the final invoice step. When enforcing the capture of the serial number during order fulfillment operations in POS, all rules mentioned previously in this topic still apply. Only serialized items configured as **Active** go through a serial number inventory stock validation. Items configured as **Active in sales process** won't get validated. If **Physical negative inventory** is allowed for **Active** products, any serial number will be accepted, regardless of stock availability. For both **Active** and **Active in sales process** items, if **Blank issue allowed** is configured, a user can leave serial numbers blank if desired during the pick, pack, and ship steps.
+When fulfilling customer order lines for serialized products using the **Order Fulfillment** operation in POS, POS enforces the capture of the serial number prior to final fulfillment. Therefore, if a serial number wasn't provided during the initial order capture, it must be captured during the pick, pack, or ship processes in POS. A validation is done at each step and the user will only be asked for serial number data if it's missing or no longer valid. For example, if a user skips the pick or pack steps and immediately initiates a shipment, and a serial number hasn't been registered for the line, POS will require the serial number to be entered before completion of the final invoice step. When enforcing the capture of the serial number during order fulfillment operations in POS, all rules mentioned previously in this topic still apply. Only serialized items configured as **Active** go through a serial number inventory stock validation. Items configured as **Active in sales process** won't get validated. If **Physical negative inventory** is allowed for **Active** products, any serial number will be accepted, regardless of stock availability. For both **Active** and **Active in sales process** items, if **Blank issue allowed** is configured, a user can leave serial numbers blank if desired during the pick, pack, and ship steps.
 
-Validations also apply when a user performs pick up operations on customer orders in POS. The POS application doesn't allow a pick up to be finalized on a serialized product unless it passes the validations as mentioned earlier. The validations are always based on the product's tracking dimension and selling warehouse configurations. 
+Validations for serial numbers will also occur when a user performs the pick up operations on customer orders in POS. The POS application doesn't allow a pick up to be finalized on a serialized product unless it passes the validations as mentioned earlier. The validations are always based on the product's tracking dimension and selling warehouse configurations. 
 
 ## Additional resources
 
