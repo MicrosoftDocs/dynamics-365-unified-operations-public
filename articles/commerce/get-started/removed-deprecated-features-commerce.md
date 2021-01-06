@@ -42,6 +42,10 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Features removed or deprecated in the Commerce 10.0.17 release
+
+
+
 ## Features removed or deprecated in the Commerce 10.0.15 release
 
 ### Internet Explorer 11 support for Dynamics 365 is deprecated
