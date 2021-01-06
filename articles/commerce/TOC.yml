@@ -2310,7 +2310,7 @@
           href: payment-connector-data-fields.md
         - name: Enable duplicate payment protection for payment connector
           href: dev-itpro/duplicate-payments-protection.md
-        - name: Create payment packaging for Application Explorer in Service Fabric deployments
+        - name: Create commerce payment packaging for Finance and Operations deployment
           href: dev-itpro/payment-connector-package.md
       - name: Third-party e-Commerce extensibility
         items:
