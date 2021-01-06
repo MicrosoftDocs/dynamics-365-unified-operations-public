@@ -113,7 +113,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 > [!NOTE]
 > - Before you run the Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
-> - It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall out due to the antivirus solution checking active files while in use.
+> - It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
 >     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
 >     - **Property:** AllowAllTrustedApps
