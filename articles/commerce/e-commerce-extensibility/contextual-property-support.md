@@ -5,7 +5,7 @@ title: Contextual configuration property support
 description: This topic describes how to configure module configuration properties to be shown or hidden based on values of other configuration properties.
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -40,10 +40,10 @@ While multiple [configuration fields](add-module-config-fields.md) can be define
 
 A module can leverage conditional schema to define the rules that the site builder property panel will respect to show or hide various configuration fields based on values of other fields.  As an example, a module may have a "layout" property with two layouts, one is plain text and another is rich text with an image. The module designer would like to ensure that only the appropriate fields get displayed in the site builder property panel when the page editor is configuring the module.
 
-This is supported in both the [module definition file](module-definition-file.md) and [module definition extensions](theme-module-extensions.md) using the conditional schema **dependentSchema** property. There are two types of conditional schema supported **schema dependencies** and **property dependencies**.
+This is supported in both the module definition file and [module definition extensions](theme-module-extensions.md) using the conditional schema **dependentSchema** property. There are two types of conditional schema supported **schema dependencies** and **property dependencies**.
 
 ### Schema Dependencies
-Schema dependencies provide support to declare that the schema should change when a specific property value is selected. The **dependentSchemas** property is used with the [oneOf](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/) property to declare the list of different configuration properties applicable for a specific configuration value.
+Schema dependencies provide support to declare that the schema should change when a specific property value is selected. The **dependentSchemas** property is used with the [**oneOf**](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/) property to declare the list of different configuration properties applicable for a specific configuration value.
 
 #### Example schema dependency
 In the following sample module definition file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property should be displayed.  When the **layout** property is set to "RichTextWithImage", then the "featureRichText", "featureImage" and "imageAlignment" properties should be shown (but not the "featureText" config property).
@@ -182,7 +182,7 @@ The below example shows a module definition file and then a module definition ex
 ```
 
 ### Module definition extension sample
-```
+```json
 {
     "$type": "definitionExtension",
     "config": {
@@ -264,6 +264,7 @@ The below example shows a module definition file and then a module definition ex
 ```
 
 ### Conflict resolution scenarios
+
 The below table lists out possible scenarios and the expected outcome when using dependency schemas with the module defintion file and module definition extension.
 
 #### Normal scenarios
@@ -285,3 +286,11 @@ The below table lists out possible scenarios and the expected outcome when using
 | Dependency schema on the same property on both module definition and definition extension. Property in definition extension has the override set to false or no override property. | Module Definition gets precedence | 
 | Property A in module definition and property A inside dependency schema of definition extension with an override property set to true | Property A inside dependency schema of definition extension takes precedence |  
 | Property A in module definition and property A inside dependency schema of definition extension with no override or override set to false | Property A module definition takes precedence |
+
+## Additional resources
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Module definition file](module-definition-file.md)
+
+[Extend a theme to add module extensions](theme-module-extensions.md)
