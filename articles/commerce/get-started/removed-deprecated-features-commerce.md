@@ -44,7 +44,15 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Commerce 10.0.17 release
 
+### Full dataset generation interval is deprecated
 
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Beginning in this release, in the **Commerce scheduler parameters** form in Dynamics 365 headquarters, the field **Full dataset generation interval in days** will be deprecated.  Further, starting in this release, the field will be visually removed so that the value cannot be edited (Which will stay as the value **0**). |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Dynamics 365 Commerce |
+| **Deployment option**              | All|
+| **Status**                         | Deprecated. Do not use this field or change the value in it.|
 
 ## Features removed or deprecated in the Commerce 10.0.15 release
 
