@@ -201,7 +201,7 @@ The following table shows which outbound features are supported, and where they 
 | Work processing - Directed by 'Transport loading'            | No  | No |
 | Reduce picked quantity                                       | No  | No |
 | Reverse work                                                 | No  | No |
-| Reverse shipment confirmation                                | No  | No |
+| Reverse shipment confirmation                                | Yes | No |
 
 ### Inbound
 
