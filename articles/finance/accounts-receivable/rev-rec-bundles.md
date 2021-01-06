@@ -37,7 +37,7 @@ This topic describes the bundle functionality that's included in the revenue rec
 > [!NOTE] 
 > Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (including e-commerce, POS, call center). Items configured with revenue recognition shouldn't be added to orders or transactions created in Commerce channels.
 
-The revenue recognition configuration keys must be entered to set up bundles, but bundles can be used without setting up revenue recognition and vice versa. If revenue recognition is set up, the component items will determine the revenue price and revenue schedule used when recognizing or deferring revenue at the time that a sales order is invoiced.
+The revenue recognition configuration keys must be entered to set up bundles. However, bundles can be used without setting up revenue recognition and vice versa. If revenue recognition is set up, the component items will determine the revenue price and the revenue schedule that's used when recognizing or deferring revenue when a sales order is invoiced.
 
 Bundles use the bill of material (BOM) functionality for setup. For information about setting up a bundle item, see Revenue recognition setup.  If the parent item is flagged as a bundle, it’s treated differently than other BOM items in the following ways:
 
@@ -98,7 +98,7 @@ The packing slip and invoice must include a full bundle in order to post.  For e
  
 A bundle must be shipped and invoiced as a complete bundle. The packing slip and invoice cannot be posted if the quantity is changed to 4 for only item 1000 and the other component quantities remain at 5.   
 
-A partial amount can be shipped and invoiced if the quantity is reduced for all components of the bundle.  For example, assume the Laptop bundle was entered on the sales order with a quantity of 5.  After confirmation, the three components will display on the sales order, each with a quantity of 5. When shipping and invoicing, the quantities will default to 5 for each component but can be adjusted down to 3 for all components.  Then 3 full bundles are being shipped and invoiced.  The remaining 2 bundle items (three components with a quantity of 2 each) can be shipped and invoiced later.  
+A partial amount can be shipped and invoiced if the quantity is reduced for all components of the bundle.  For example, assume the Laptop bundle was entered on the sales order with a quantity of 5.  After confirmation, the three components will display on the sales order, each with a quantity of 5. When shipping and invoicing, the quantities will default to 5 for each component but can be adjusted down to 3 for all components.  Then three full bundles are being shipped and invoiced.  The remaining two bundle items (three components with a quantity of 2 each) can be shipped and invoiced later.  
 
 The final step is to invoice the sales order.  When invoicing, the invoice dialog will display the component items but the printed invoice will include the parent item. 
 
