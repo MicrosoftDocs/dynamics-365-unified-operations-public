@@ -32,11 +32,9 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure module configuration properties to be shown or hidden based on values of other configuration properties.
+This topic describes how to configure module configuration properties to be shown or hidden based on the values of other configuration properties.
 
-## Overview
-
-While multiple [configuration fields](add-module-config-fields.md) can be defined within a [module's definition](module-definition-file.md) file, there may be scenarios where some fields are only relevant based on the value set on other configuration fields within the module, otherwise the field should be hidden.  This will help minimize the number of configuration fields shown to a page editor as they are configuring a module, reducing the complexity and possible confusion.
+While multiple [configuration fields](add-module-config-fields.md) can be defined within a [module's definition](module-definition-file.md) file, there may be scenarios where some fields are only relevant based on the value set on other configuration fields within the module. Otherwise irrelevant fields should be hidden, which helps minimize the number of configuration fields shown to a page editor when configuring a module, reducing the complexity and possible confusion.
 
 A module can leverage conditional schema to define the rules that the site builder property panel will respect to show or hide various configuration fields based on values of other fields.  As an example, a module may have a "layout" property with two layouts, one is plain text and another is rich text with an image. The module designer would like to ensure that only the appropriate fields get displayed in the site builder property panel when the page editor is configuring the module.
 
@@ -47,7 +45,7 @@ Schema dependencies provide support to declare that the schema should change whe
 
 #### Example schema dependencies
 
-In the following sample module definition file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property should be displayed.  When the **layout** property is set to "RichTextWithImage", then the "featureRichText", "featureImage" and "imageAlignment" properties should be shown (but not the "featureText" config property).
+In the following example module definition file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property should be displayed.  When the **layout** property is set to "RichTextWithImage", then the "featureRichText", "featureImage" and "imageAlignment" properties should be shown (but not the "featureText" config property).
 
 ```json
 {
@@ -183,7 +181,7 @@ The below example shows a module definition file and then a module definition ex
 }
 ```
 
-### Module definition extension sample
+### Module definition extension example
 ```json
 {
     "$type": "definitionExtension",
@@ -267,7 +265,7 @@ The below example shows a module definition file and then a module definition ex
 
 ### Conflict resolution scenarios
 
-The below table lists out possible scenarios and the expected outcome when using dependency schemas with the module defintion file and module definition extension.
+The following tables list possible scenarios and expected outcomes when using dependency schemas with the module definition file and module definition extension.
 
 #### Normal scenarios
 
