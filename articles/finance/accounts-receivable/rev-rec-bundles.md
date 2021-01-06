@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revenue recognition bundles 
-description: This topic describes the bundle functionality that's included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item along with a number of component items.
+description: This topic describes the bundle functionality that's included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item along with multiple component items.
 author: kweekley
 manager: aolson
 ms.date: 01/04/2021
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the bundle functionality that's included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item along with a number of component items. The parent item is entered on a sales order, making order entry more efficient, but then is exploded into the component items. Internal documents, such as the packing slip, will list the component items but external documents will show only the parent item. 
+This topic describes the bundle functionality that's included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item along with multiple component items. The parent item is entered on a sales order, making order entry more efficient, but then is exploded into the component items. Internal documents, such as the packing slip, will list the component items but external documents will show only the parent item. 
 
 > [!NOTE] 
 > Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (including e-commerce, POS, call center). Items configured with revenue recognition shouldn't be added to orders or transactions created in Commerce channels.
@@ -43,8 +43,8 @@ Bundles use the bill of material (BOM) functionality for setup. For information 
 
 - Bundles must be exploded through the sales order confirmation found under **Sell – Confirm sales order** on the Action Pane of the sales order.  Bundle items must never be exploded through the **Sales order line – EXPLODE – BOM line** action, which is available on the lines of the sales order.  If you use the **Explode – BOM lines** action, the item will be treated as a BOM and not as a bundle. 
 - If a sales order contains a bundle item, the sales order must be confirmed before creating the packing slip or invoice.  
-- When the bundle is exploded through confirmation, the parent item is cancelled, and the unit price and discounts of the parent item are allocated down to the component items of the bundle. 
-- The sum of the component items must always equal the price on the parent item. In order to ensure that, the component items are very limited with what fields can be updated or changed. For example, the unit price cannot be changed manually or indirectly through a new price agreement going into effect. To prevent a new price agreement, inventory dimensions cannot be changed either on the component items.  
+- When the bundle is exploded through confirmation, the parent item is canceled, and the unit price and discounts of the parent item are allocated down to the component items of the bundle. 
+- The sum of the component items must always equal the price on the parent item. In order to ensure that, the component items are limited with what fields can be updated or changed. For example, the unit price cannot be changed manually or indirectly through a new price agreement going into effect. To prevent a new price agreement, inventory dimensions cannot be changed either on the component items.  
 - When printing an external facing document, such as the sales order confirmation or invoice, the parent item is printed and not the component items. 
 
 ## Bundles on sales orders
@@ -56,7 +56,7 @@ Parent item:  Laptop bundle
 - Component item: **S0021** for a quantity of 1
 - Component item: **Support** for a quantity of 1
 
-The Base sales price on the component items is an essential part of the setup on the components.  The Base sales price, defined on the Sell fast tab of the item, is used to calculate the allocation factor when allocating the parent item’s Unit price down to the components. The trade agreement sale prices are never used for determining the allocation of the parent item’s Unit price to the components. 
+The Base sales price on the component items is an essential part of the setup on the components.  The Base sales price, defined on the Sell FastTab of the item, is used to calculate the allocation factor when allocating the parent item’s Unit price down to the components. The trade agreement sale prices are never used for determining the allocation of the parent item’s Unit price to the components. 
 
 The following Base sales prices are defined on the components:
 
@@ -78,7 +78,7 @@ The following illustration shows the confirmation report that lists only the bun
 
 After confirmation of the sales order, the parent item still displays on the sales order but moves to a **Canceled** state.  The net amount is also tracked in the Bundle net amount field.  This amount is necessary for printing the invoice because the invoice displays the parent item and not the components.
 
-The component items must sum to the parent item’s Bundle net amount because that is the amount presented to the customer on the printed invoice. If the component amounts were permitted to change, the invoice would no longer match the amounts posted to general ledger. Because of this, edits to the component items is limited.  For example, the Site and Warehouse cannot be changed because it may trigger a price change based on a trade agreement. 
+The component items must sum to the parent item’s Bundle net amount because that is the amount presented to the customer on the printed invoice. If the component amounts were permitted to change, the invoice would no longer match the amounts posted to general ledger. Because of this, edits to the component items are limited.  For example, the Site and Warehouse cannot be changed because it may trigger a price change based on a trade agreement. 
 
 The Unit price from the parent line is allocated to the components as follows:
 
@@ -94,7 +94,7 @@ If changes are required on all component items, the parent item can be removed w
  [![Bundle item with changes to the component items](./media/bundle-04.png)](./media/bundle-04.png)
 
 When the sales order is picked and packed, the documents will include only the components of the bundle. 
-The packing slip and invoice must include a full bundle in order to post.  For example, the three component items are displayed in the dialog. If you try to delete any one of the components, an error indicating that all products within the bundle myst be shipped before they can invoiced will display. 
+The packing slip and invoice must include a full bundle in order to post.  For example, the three component items are displayed in the dialog. If you try to delete any one of the components, an error indicating that all products within the bundle must be shipped before they can invoiced will display. 
  
 A bundle must be shipped and invoiced as a complete bundle. The packing slip and invoice cannot be posted if the quantity is changed to 4 for only item 1000 and the other component quantities remain at 5.   
 
@@ -104,7 +104,7 @@ The final step is to invoice the sales order.  When invoicing, the invoice dialo
 
 [![Invoice dialog showing bundle parent item but not the component items](./media/bundle-06.png)](./media/bundle-06.png)
 
-The invoice journal that is created after posting does not include the parent item from the bundle because it is in a cancelled state.
+The invoice journal that is created after posting does not include the parent item from the bundle because it is in a canceled state.
 
 [![The invoices journal doesn't include the parent item](./media/bundle-07.png)](./media/bundle-07.png)
  
@@ -113,6 +113,6 @@ It's important that the invoice journal doesn't include the parent item from the
  
 [![Credit note created from the Sell tab on the Action Pane](./media/bundle-08.png)](./media/bundle-08.png)
 
-The following illustation shows the credit note that will be created with the components, but not the parent item.
+The following illustration shows the credit note that will be created with the components, but not the parent item.
 
 [![Credit note that lists component items, but not the parent item](./media/bundle-09.png)](./media/bundle-09.png)
