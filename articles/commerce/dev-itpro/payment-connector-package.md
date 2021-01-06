@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create commerce payment packaging for Finance and Operations deployment
+title: Create Commerce payment packaging for Finance and Operations deployment
 description: This topic explains how to package a payment connector for Finance and Operations deployment in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.10
 
 ---
 
-# Create commerce payment packaging for Finance and Operations deployment
+# Create Commerce payment packaging for Finance and Operations deployment
 
 [!include [banner](../../includes/banner.md)]
 
