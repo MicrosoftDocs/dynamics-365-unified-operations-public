@@ -326,7 +326,7 @@ You can generate global.json files for module resources and authoring resources 
 ## Override a resource string for a theme
 The built in module library set of modules and themes may have localized strings that you would like to override.  This can be achieved by modifying the global.json resource located in the src/resources/modules directory using the following pattern for a specific theme:
 
-```json
+```
 {ThemeNamespace}.{ThemeName}.{ResourceString}: {
     "value" : "",
     "_value.comment": ""
