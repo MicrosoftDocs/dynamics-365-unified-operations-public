@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revenue recognition bundles 
-description: 
+description: This topic describes the bundle functionality that's included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item along with a number of component items.
 author: kweekley
 manager: aolson
 ms.date: 01/04/2021
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-The Revenue recognition module includes bundle functionality. A bundle comprises a parent item and the component items. The parent item is entered on a sales order, making order entry more efficient, but then is exploded into the component items. Internal documents, such as the packing slip, will list the component items but external documents will show only the parent item. 
+This topic describes the bundle functionality that's included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item along with a number of component items. The parent item is entered on a sales order, making order entry more efficient, but then is exploded into the component items. Internal documents, such as the packing slip, will list the component items but external documents will show only the parent item. 
 
 > [!NOTE] 
 > Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (including e-commerce, POS, call center). Items configured with revenue recognition shouldn't be added to orders or transactions created in Commerce channels.
@@ -102,17 +102,17 @@ A partial amount can be shipped and invoiced if the quantity is reduced for all 
 
 The final step is to invoice the sales order.  When invoicing, the invoice dialog will display the component items but the printed invoice will include the parent item. 
 
-[![Bundle item with changes to the component items](./media/bundle-06.png)](./media/bundle-06.png)
+[![Invoice dialog showing bundle parent item but not the component items](./media/bundle-06.png)](./media/bundle-06.png)
 
 The invoice journal that is created after posting does not include the parent item from the bundle because it is in a cancelled state.
 
-[![Bundle item with changes to the component items](./media/bundle-07.png)](./media/bundle-07.png)
+[![The invoices journal doesn't include the parent item](./media/bundle-07.png)](./media/bundle-07.png)
  
-It's important that the invoice journal doesn't include the parent item from the bundle because any processes performed after the invoice is posted are based on that invoice journal. For example, if a credit note is created from the Sell tab on the action pane, the credit note will be created with the components and not the parent item. 
+It's important that the invoice journal doesn't include the parent item from the bundle because any processes performed after the invoice is posted are based on that invoice journal. For example, if a credit note is created from the Sell tab on the Action Pane, the credit note will be created with the components and not the parent item. 
 
  
-[![Bundle item with changes to the component items](./media/bundle-08.png)](./media/bundle-08.png)
+[![Credit note created from the Sell tab on the Action Pane](./media/bundle-08.png)](./media/bundle-08.png)
 
 The following illustation shows the credit note that will be created with the components, but not the parent item.
 
-[![Bundle item with changes to the component items](./media/bundle-09.png)](./media/bundle-09.png)
+[![Credit note that lists component items, but not the parent item](./media/bundle-09.png)](./media/bundle-09.png)
