@@ -109,6 +109,8 @@ The page author can configure the settings of a module on a specific page withou
 * **"dataActions"** – The **dataActions** node is used to register the data actions that should be run for the module. By default, the data actions will run on the server side. However, they can also be configured to run on the client side.
 * **"slots"** – Slots are defined only in container modules. They are exposed in the site builder tool. You can define allow and deny lists for a slot to allow or disallow specific modules from being accepted in that slot.
 * **"attributes"** – Attributes are used to control script injectors properties.  For more details, see [Script injectors](script-injector.md).
+* **"config"** - The config's section is used to add module configuration properties. For more details, see [Add module configuration fields](add-module-config-fields.md).
+* **"dependentSchemas"** - The dependentSchema's section is used configuration properties to be shown or hidden based on values of other configuration properties. For more details, see [Contextual configuration property support](contextual-property-support.md).
 
 ## Register data actions to a module
 
@@ -164,8 +166,6 @@ You can then access the results of the data action in your module.
 - **"resourcekey"** – The name of the resource. Resource keys can then be accessed in code via the **this.props.resources.resourceKey** property.
 - **"comment"** – A string that identifies the purpose of the string, to help with localization.
 - **"value"** – The resource string data that will be used in the module.
-
-To get more details on the config section, see [Add module configuration fields](add-module-config-fields.md).
 
 ## Additional resources
 
