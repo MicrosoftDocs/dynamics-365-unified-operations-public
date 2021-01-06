@@ -110,6 +110,7 @@ The page author can configure the settings of a module on a specific page withou
 * **"slots"** – Slots are defined only in container modules. They are exposed in the site builder tool. You can define allow and deny lists for a slot to allow or disallow specific modules from being accepted in that slot.
 * **"attributes"** – Attributes are used to control script injectors properties.  For more details, see [Script injectors](script-injector.md).
 * **"config"** - The config's section is used to add module configuration properties. For more details, see [Add module configuration fields](add-module-config-fields.md).
+* **"resources"** - This property is used to localize resources used within the module, see the below section "Module resource schema" for more information.
 * **"dependentSchemas"** - The dependentSchema's section is used configuration properties to be shown or hidden based on values of other configuration properties. For more details, see [Contextual configuration property support](contextual-property-support.md).
 
 ## Register data actions to a module
