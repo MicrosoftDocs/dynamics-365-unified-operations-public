@@ -190,6 +190,44 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
         - name: Understand Lifecycle Services
           href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+      - name: Implementation lifecycle management
+        items:
+        - name: Implementation lifecycle management home page
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+        - name: Architecture for Finance and Operations apps
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+        - name: Microsoft FastTrack
+          href: https://docs.microsoft.com/dynamics365/fasttrack/
+        - name: Onboard an implementation project
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+        - name: Environment planning
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json   
+        - name: Prepare for go-live
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+        - name: Go-live FAQ
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+        - name: Submit a service request
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+        - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+          href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json    
+        - name: Move environments between data centers
+          href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json      
+        - name: Move licenses between agreement types
+          href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json 
+        - name: Move LCS implementation projects to different Azure AD tenants
+          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json 
+        - name: Move LCS implementation projects from on-premises to cloud
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json 
+        - name: Multiple LCS projects and production environments on one Azure AD tenant
+          href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
+        - name: Implement Finance and Operations Commerce projects
+          href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+        - name: Set up new environments, Azure DevOps, and branches for Commerce projects
+          href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+        - name: Update code and environments for Commerce projects
+          href: dev-itpro/updating-environments.md
+        - name: Testing and performance issues
+          href: dev-itpro/retail-implementation-testing-performance.md
     - name: Architectural overview
       items:
       - name: Architecture
@@ -248,44 +286,6 @@
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
         - name: Initialize seed data in new Commerce environments
           href: enable-configure-retail-functionality.md
-      - name: Implementation lifecycle management
-        items:
-        - name: Implementation lifecycle management home page
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-        - name: Architecture for Finance and Operations apps
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Microsoft FastTrack for Finance and Operations
-          href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Onboard an implementation project
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
-        - name: Environment planning
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json   
-        - name: Prepare for go-live
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-        - name: Go-live FAQ
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
-        - name: Submit a service request
-          href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-        - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
-          href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json    
-        - name: Move environments between data centers
-          href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json      
-        - name: Move licenses between agreement types
-          href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json 
-        - name: Move LCS implementation projects to different Azure AD tenants
-          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json 
-        - name: Move LCS implementation projects from on-premises to cloud
-          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json 
-        - name: Multiple LCS projects and production environments on one Azure AD tenant
-          href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
-        - name: Implement Finance and Operations Commerce projects
-          href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-        - name: Set up new environments, Azure DevOps, and branches for Commerce projects
-          href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-        - name: Update code and environments for Commerce projects
-          href: dev-itpro/updating-environments.md
-        - name: Testing and performance issues
-          href: dev-itpro/retail-implementation-testing-performance.md
     - name: Set up your channels 
       items:
       - name: Channels overview
@@ -504,6 +504,8 @@
             href: payment-methods.md
           - name: Payment methods in call centers 
             href: work-with-payments.md
+          - name: Refund payment processing in call centers
+            href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
           - name: Configure cash denominations for the POS
