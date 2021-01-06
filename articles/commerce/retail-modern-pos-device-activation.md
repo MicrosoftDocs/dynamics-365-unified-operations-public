@@ -118,7 +118,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 >     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
 >     - **Property:** AllowAllTrustedApps
 >     - **Value:** 1
-> - If offline is to be used (an offline database created), then a default SQL Server instance must exist.  If SQL Server instances exist, but none are set as the "Default", then the installer will fail to install the offline database.
+> - If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
