@@ -5,7 +5,7 @@ title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -113,11 +113,12 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 > [!NOTE]
 > - Before you run the Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
+> - It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
->
->    - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
->    - **Property:** AllowAllTrustedApps
->    - **Value:** 1
+>     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
+>     - **Property:** AllowAllTrustedApps
+>     - **Value:** 1
+> - If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 

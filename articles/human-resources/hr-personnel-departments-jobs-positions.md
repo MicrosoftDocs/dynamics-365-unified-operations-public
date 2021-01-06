@@ -18,7 +18,7 @@ ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWork
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+# ms.search.scope: Core, Operations, Human Resources, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 87933

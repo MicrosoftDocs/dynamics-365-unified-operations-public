@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
+# ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

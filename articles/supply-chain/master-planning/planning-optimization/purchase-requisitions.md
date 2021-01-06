@@ -44,7 +44,7 @@ To include requisitions during the coverage calculation for a master plan, follo
 
 ## Approved requisitions time fence
 
-The *approved requisitions time fence* establishes how far back (in days) a master plan will include demand from approved replenishment requisitions. You can set an approved requisitions time fence at the both the coverage group level and the master plan level.
+The *approved requisitions time fence* establishes how far back (in days) a master plan will include demand from approved replenishment requisitions. You can set an approved requisitions time fence at both the coverage group level and the master plan level.
 
 ### Set the approved requisitions time fence for a coverage group
 
