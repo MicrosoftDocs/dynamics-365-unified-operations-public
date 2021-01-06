@@ -40,12 +40,13 @@ While multiple [configuration fields](add-module-config-fields.md) can be define
 
 A module can leverage conditional schema to define the rules that the site builder property panel will respect to show or hide various configuration fields based on values of other fields.  As an example, a module may have a "layout" property with two layouts, one is plain text and another is rich text with an image. The module designer would like to ensure that only the appropriate fields get displayed in the site builder property panel when the page editor is configuring the module.
 
-This is supported in both the module definition file and [module definition extensions](theme-module-extensions.md) using the conditional schema **dependentSchema** property. There are two types of conditional schema supported **schema dependencies** and **property dependencies**.
+This is supported in both the module definition file and [module definition extensions](theme-module-extensions.md) using the conditional schema **dependentSchemas** property. There are two types of conditional schema supported **schema dependencies** and **property dependencies**.
 
 ### Schema Dependencies
 Schema dependencies provide support to declare that the schema should change when a specific property value is selected. The **dependentSchemas** property is used with the [**oneOf**](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/) property to declare the list of different configuration properties applicable for a specific configuration value.
 
-#### Example schema dependency
+#### Example schema dependencies
+
 In the following sample module definition file, you can see that when the **layout** property is set to "PlainTextOnly", then the "featureText" property should be displayed.  When the **layout** property is set to "RichTextWithImage", then the "featureRichText", "featureImage" and "imageAlignment" properties should be shown (but not the "featureText" config property).
 
 ```json
@@ -118,11 +119,11 @@ In the following sample module definition file, you can see that when the **layo
 }
 ```
 
-### Property Dependencies
+### Property dependencies
 Property dependencies can be used to declare that certain configuration properties must be present if another configuration property value is present.
 
-#### Example property dependency
-In the following example the **dependentSchema** property is used to defined that whenever the "productTitle" is populate then the "subTitle" configuration property will be shown in the site builder tool.
+#### Example property dependencies
+In the following example, the **dependentSchemas** property is used to define that whenever the "productTitle" is populate then the "subTitle" configuration property will be shown in the site builder tool.
 
 ```json
 {
@@ -153,7 +154,8 @@ In the following example the **dependentSchema** property is used to defined tha
 ```
 
 ## Handling property override conflicts
-Since **dependentSchemas** property is supported in both the modules definition file and module definition extensions, it is possible to have conflicts between the two files, a boolean **override** property is supported in the definition extension which when set to true will allow override of specific configuration properties.
+
+Since the **dependentSchemas** property is supported in both the modules definition file and module definition extensions, it is possible to have conflicts between the two files, a boolean **override** property is supported in the definition extension which when set to true will allow override of specific configuration properties.
 
 The below example shows a module definition file and then a module definition extension using the override property:
 
