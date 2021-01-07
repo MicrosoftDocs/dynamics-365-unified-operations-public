@@ -140,7 +140,7 @@ The following tools are recommended for performance analysis.
 
 ## Restrict your e-commerce website from loading inside external HTML iframe elements
 
-The **frame-ancestors** directive can be used to restrict the loading of your e-commerce site inside external HTML iframe elements. For more information on how to configure this feature in Commerce site builder, see the [Manage Content Security Policy](../manage-csp.md).
+The **frame-ancestors** directive can be used to restrict the loading of your e-commerce site inside external HTML iframe elements. For more information on how to configure this feature in Commerce site builder, see [Manage Content Security Policy](../manage-csp.md).
 
 ## Additional resources
 
