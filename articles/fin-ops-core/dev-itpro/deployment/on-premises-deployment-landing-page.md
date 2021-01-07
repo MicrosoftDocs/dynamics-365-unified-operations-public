@@ -5,7 +5,7 @@ title: On-premises deployment home page
 description: This topic provides information and links to content about on-premises deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 01/04/2021
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,7 +45,7 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 ## Onboard
 - [Set up on-premises projects in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
 - [Set up and deploy on-premises environments (Platform update 41 and later)](setup-deploy-on-premises-pu41.md)
-- [Set up and deploy on-premises environments (Platform update 12-40)](setup-deploy-on-premises-pu12.md)
+- [Set up and deploy on-premises environments (Platform updates 12 through 40)](setup-deploy-on-premises-pu12.md)
 - [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 - [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md)
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
