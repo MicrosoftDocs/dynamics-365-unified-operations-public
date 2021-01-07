@@ -41,11 +41,10 @@ In the app interfaces, you can access the processing statuses and invoice inform
 
 ![Dual-write dataflow in prospect-to-cash](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
-For information about customer and contact integration, see [Integrated customer master](customer-mapping.md). 
-For information about product integration, see [Unified product experience](product-mapping.md).
+For information about customer and contact integration, see [Integrated customer master](customer-mapping.md). For information about product integration, see [Unified product experience](product-mapping.md).
 
 > [!NOTE]
-> In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account* table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizeds to the Finance and Operations app only when it is a customer (`RelationshipType=Customer`). If yiou want the **Account** row to synchronize as a prospect, then you need a custom map to integrate the prospect data.
+> In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizeds to the Finance and Operations app only when it is a customer (`RelationshipType=Customer`). If yiou want the **Account** row to synchronize as a prospect, then you need a custom map to integrate the prospect data.
 
 ## Prerequisites and mapping setup
 
