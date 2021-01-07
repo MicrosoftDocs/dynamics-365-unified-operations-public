@@ -138,6 +138,9 @@ The following tools are recommended for performance analysis.
 
 [BlazeMeter](https://blazemeter.com) can generate load on site pages from different regions to help measure load times when content is cached. 
 
+## Restricting e-Commerce website from loading inside external iFrame
+The **frame-ancestors** directive can be used to restrict loading your e-Commerce site inside an external iFrame. See the [Manage Content Security Policy](../manage-csp.md) for more information on how to set this feature from within the site builder tool.
+
 ## Additional resources
 
 [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
