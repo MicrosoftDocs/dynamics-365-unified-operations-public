@@ -5,7 +5,7 @@ title: Best practices for Dynamics 365 Commerce development
 description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
 manager: annbe
-ms.date: 10/16/2020
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -138,6 +138,10 @@ The following tools are recommended for performance analysis.
 
 [BlazeMeter](https://blazemeter.com) can generate load on site pages from different regions to help measure load times when content is cached. 
 
+## Restrict your e-commerce website from loading inside external website HTML iframe elements
+
+The **frame-ancestors** directive can be used to restrict the loading of your e-commerce site inside external website HTML iframe elements. For more information on how to configure this feature in Commerce site builder, see [Manage Content Security Policy](../manage-csp.md).
+
 ## Additional resources
 
 [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
@@ -155,5 +159,7 @@ The following tools are recommended for performance analysis.
 [Data cache settings](data-action-cache-settings.md)
 
 [Work with templates](../work-with-templates.md)
+
+[Manage Content Security Policy](../manage-csp.md)
 
 
