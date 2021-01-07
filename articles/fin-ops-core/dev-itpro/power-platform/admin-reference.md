@@ -93,7 +93,7 @@ The next steps walk through this process in Finance and Operations apps.
 
     - **User name** - Enter **dataverse integration** (or a different value).
 
-    - **Provider** - set to the value **NonAAD**
+    - **Provider** - Set to **NonAAD**.
 
     - **Email** - Enter **dataverseintegration** (or a different value, does *not* need to be a valid email account).
 
