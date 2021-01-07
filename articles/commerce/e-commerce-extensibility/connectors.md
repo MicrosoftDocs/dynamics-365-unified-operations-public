@@ -268,7 +268,7 @@ Connectors are enabled and configured in the  **connector.settings.json** file u
 ```json
 {
     "geoLookup": {
-        "name": "ipstack",
+        "name": "GeoLocationTest",
         "config": {
             "apiKey": "GEOLOCATION_SERVICE_PROVIDER_API_KEY"
         },
