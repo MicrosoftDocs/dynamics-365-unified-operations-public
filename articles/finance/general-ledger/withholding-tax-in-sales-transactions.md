@@ -1,0 +1,43 @@
+
+
+# Withholding tax in sales transactions
+
+For customers who withhold taxes on their payments to you, you can assign the default **Withholding tax group** in the customer master.
+
+1. Go to **Navigation pane > Modules > Accounts receivable > Customers > All customers**.
+
+2. Click the respective Customer account, click **Edit**.
+
+3. In sub-form **Invoice and delivery**, switch on **Calculate withholding tax**.
+
+   > [!NOTE] 
+   > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this customer in the master data.
+
+4. Select a withholding tax group in **Withholding tax group**.
+
+5. Click **Save**.
+
+For items/services which are liable to withholding tax, you can assign the default **Item withholding tax group** in **Released Products**.
+
+1. Go to **Navigation pane > Modules > Product information management > Products > Released products**.
+
+2. Click the respective Item number, click **Edit**.
+
+3. In sub-form **Sell**, switch on **Calculate withholding tax**.
+
+   > [!NOTE] 
+   > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this Item in the sub-form **Sell** of the Released product.
+
+4. Select an Item withholding tax group in **Item withholding tax group**.
+
+5. Click **Save**.
+
+Withholding tax groups and Item withholding tax groups can be assigned in form: 
+
+- **Sales order**
+
+The default Withholding tax group and Item withholding tax group will be carried into the lines when creating **Sales orders**.
+
+Withholding tax is calculated and posted with **Customer payment journal**. You can manually adjust the applicable withholding tax code as well as the actual withholding tax amount in the **Withholding tax** tab of the **Settle transactions** form.
+
+The derived withholding tax amount will be deducted from the customer payment and posted to the **Withholding tax offset** account in a related voucher.
