@@ -5,7 +5,7 @@ title: Removed or deprecated features in Dynamics 365 Commerce
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,18 +41,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
-
 ## Features removed or deprecated in the Commerce 10.0.17 release
 
 ### Full dataset generation interval is deprecated
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Beginning in this release, in the **Commerce scheduler parameters** form in Dynamics 365 headquarters, the field **Full dataset generation interval in days** will be deprecated.  Further, starting in this release, the field will be visually removed so that the value cannot be edited (Which will stay as the value **0**). |
+| **Reason for deprecation/removal** | Beginning in this release, in the **Commerce scheduler parameters** form in Dynamics 365 headquarters, the **Full dataset generation interval in days** field will be deprecated. Also starting in this release, the field will be visually removed so that the value cannot be edited. This will stay as the value **0**. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Dynamics 365 Commerce |
 | **Deployment option**              | All|
 | **Status**                         | Deprecated. Do not use this field or change the value in it.|
+
 
 ## Features removed or deprecated in the Commerce 10.0.15 release
 
