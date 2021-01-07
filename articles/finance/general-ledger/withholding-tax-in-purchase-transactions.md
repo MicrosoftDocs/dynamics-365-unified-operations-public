@@ -2,7 +2,7 @@
 # required metadata
 
 title: Withholding tax in purchase transactions
-description: 
+description: For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **Vendor master** page.
 author: roschlom
 manager: AnnBe
 ms.date: 01/12/2021
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.16
 
 # Withholding tax in purchase transactions
 
-For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** in the vendor master.
+For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **Vendor master** page.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Vendors > All vendors**.
 
@@ -70,9 +70,9 @@ Withholding tax groups and Item withholding tax groups can be assigned in forms:
 
 The default Withholding tax group and Item withholding tax group will be carried into the lines when creating **Purchase orders** and/or **Pending Vendor invoices**. For **Vendor invoice journal**, you can switch on **Calculate withholding tax** and select **Item withholding tax group** in the **General** tab in the journal.
 
-The temporary amount of withholding tax is available in the field **Adjusted withholding tax** of the sub-form **Totals** in form **Purchase order**.
+The temporary amount of withholding tax is available in the field **Adjusted withholding tax** of the sub-form **Totals** on the **Purchase order**.
 
-![](media/withholding-tax-adjusted.png)
+![Withholding tax is included on the purchase order](media/withholding-tax-adjusted.png)
 
 Withholding tax is calculated on **Vendor payment journal**. You can manual adjust the applicable withholding tax codes as well as the actual withholding tax amounts in the **Withholding tax** tab in the **Settle transactions** form.
 
@@ -80,4 +80,4 @@ Withholding tax is calculated on **Vendor payment journal**. You can manual adju
 
 The derived withholding tax amount will be deducted from the vendor payment and posted to the **Withholding tax account** in a related voucher.
 
-![](media/withholding-tax-adjusted.png)
+![Withholding tax account showing a related voucher](media/withholding-tax-adjusted.png)
