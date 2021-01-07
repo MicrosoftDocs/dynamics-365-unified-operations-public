@@ -41,11 +41,11 @@ In the app interfaces, you can access the processing statuses and invoice inform
 
 ![Dual-write dataflow in prospect-to-cash](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
-For customer and contact integration, see ![customer integration](customer-mapping.md) page. 
-For product integration, see ![product integration](product-mapping.md) page.
-    > [!NOTE]
-    > In Dynamics 365 Sales, both prospect and customer refer to a record in Account entity with RelationshipType field value as either Prospect or Customer. In case your business involves Account qualification process where the Account record is created and qualified as a prospect first and then to a customer, that record gets synchronized to Finance and Operations app only when it is a customer (RelationshipType=Customer). In case you want the Account record to synchronize as a prospect, then you need a custom map to integrate the prospect data. 
+For information about customer and contact integration, see ![Integrated customer master](customer-mapping.md). 
+For information about product integration, see ![Unified product experience](product-mapping.md).
 
+    > [!NOTE]
+    > In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account* table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizeds to the Finance and Operations app only when it is a customer (`RelationshipType=Customer`). If yiou want the **Account** row to synchronize as a prospect, then you need a custom map to integrate the prospect data.
 
 ## Prerequisites and mapping setup
 
@@ -146,9 +146,9 @@ Here are the related core table maps for prospect-to-cash:
 + [Pricelist](product-mapping.md)
 
 ## Limitations
-- Support for Return orders is not available.
-- Support for Credit notes is not available.
-- Financial dimensions must be set for the master data like customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flows to the order automatically. Currently dual-write does not include financial dimensions data for master data. 
+- Return orders are not supported.
+- Credit notes are not supported.
+- Financial dimensions must be set for the master data, for example, customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flows to the order automatically. Currently dual-write does not include financial dimensions data for master data. 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
