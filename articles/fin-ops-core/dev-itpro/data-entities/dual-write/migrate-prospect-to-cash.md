@@ -82,9 +82,9 @@ To migrate your Prospect to cash data from Data Integrator to dual-write, follow
     - Fill the **Party Number** column with with values from the **Contact Number** table.
     - Fill the **Account Number/Contact Person ID** column with values from the **Contact Number** table.
 
-## Products table
+## Invoice table
 
-Since data from the **Products** table is designed to flow one-way, from the Finance and Operations app to the customer engagement app, bootstrapping is not required. Run the initial sync to migrate all the required data from the Finance and Operations app to the customer engagement app.
+Since data from the **Invoice** table is designed to flow one-way, from the Finance and Operations app to the customer engagement app, bootstrapping is not required. Run the initial sync to migrate all the required data from the Finance and Operations app to the customer engagement app.
 
 ## Order table
 
@@ -100,12 +100,10 @@ Since data from the **Products** table is designed to flow one-way, from the Fin
 
 - Fill the **Company** column with the required company name, for example, **USMF**.
 
-## Invoice table
+## Products table
 
-Since data from the **Invoice** table is designed to flow one-way, from the Finance and Operations app to the customer engagement app, bootstrapping is not required. Run the initial sync to migrate all the required data from the Finance and Operations app to the customer engagement app.
+Since data from the **Products** table is designed to flow one-way, from the Finance and Operations app to the customer engagement app, bootstrapping is not required. Run the initial sync to migrate all the required data from the Finance and Operations app to the customer engagement app.
 
 ## Quote and Quote product tables
 
 Follow the instructions for the [Order table](#order-table) and [Order products table](order-products-table).
-
-
