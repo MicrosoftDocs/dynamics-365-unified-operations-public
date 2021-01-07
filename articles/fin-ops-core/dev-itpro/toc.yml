@@ -506,7 +506,7 @@
             href: lifecycle-services/lbd-create-lcs-on-prem-project.md
           - name: Set up and deploy on-premises environments (Platform update 41 and later)
             href: deployment/setup-deploy-on-premises-pu41.md
-          - name: Set up and deploy on-premises environments (Platform update 12-40)
+          - name: Set up and deploy on-premises environments (Platform updates 12 through 40)
             href: deployment/setup-deploy-on-premises-pu12.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
