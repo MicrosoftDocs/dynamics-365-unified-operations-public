@@ -44,7 +44,7 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](customer-mapping.md). For information about product integration, see [Unified product experience](product-mapping.md).
 
 > [!NOTE]
-> In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizeds to the Finance and Operations app only when it is a customer (`RelationshipType=Customer`). If yiou want the **Account** row to synchronize as a prospect, then you need a custom map to integrate the prospect data.
+> In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizes to the Finance and Operations app only when it is a customer (`RelationshipType=Customer`). If you want the **Account** row to synchronize as a prospect, then you need a custom map to integrate the prospect data.
 
 ## Prerequisites and mapping setup
 
@@ -75,7 +75,7 @@ Sales quotations can be created in either Sales or Supply Chain Management. If y
 + The **Discount %**, **Discount**, and **Freight Amount** columns on the sales quotation header are read-only columns.
 + The **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** columns aren't part of the default mappings. To map these columns, you must set up a value mapping that is specific to the data in the organizations that the table is synced between.
 
-If you are also using the Field Service solution, make sure to re-enable the **Quote Line Quick Create** parameter. Re-enabling the parameter lets you to continue creating quote lines using the quick create function.
+If you are also using the Field Service solution, make sure to re-enable the **Quote Line Quick Create** parameter. Re-enabling the parameter lets you continue creating quote lines using the quick create function.
 1. Navigate to your Dynamics 365 Sales application.
 2. Select the settings icon in the top navigation bar.
 3. Select **Advanced Settings**.
@@ -125,7 +125,7 @@ Sales invoices are created in Supply Chain Management and synced to Sales. Note 
 
 Prospect-to-cash includes a collection of core table maps that work together during data interaction, as shown in the following table.
 
-| Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
+| Finance and Operations apps | Customer engagement apps | Description |
 |-----------------------------|-----------------------------------|-------------|
 | Sales invoice headers V2    | invoices                          | The Sales invoice headers V2 table in the Finance and Operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
 | Sales invoice lines V2      | invoicedetails                    |             |
@@ -147,7 +147,7 @@ Here are the related core table maps for prospect-to-cash:
 ## Limitations
 - Return orders are not supported.
 - Credit notes are not supported.
-- Financial dimensions must be set for the master data, for example, customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flows to the order automatically. Currently dual-write does not include financial dimensions data for master data. 
+- Financial dimensions must be set for the master data, for example, customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flow to the order automatically. Currently dual-write does not include financial dimensions data for master data. 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
