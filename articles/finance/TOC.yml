@@ -1080,12 +1080,28 @@
           href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
         - name: Set up sales tax settlement periods
           href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-        - name: Set up withholding tax
-          href: general-ledger/tasks/set-up-withholding-tax.md
         - name: View posted sales tax transactions
           href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
         - name: Print the Sales tax payment by code report
           href: general-ledger/print-sales-tax-payment-by-code-report.md
+      - name: Withholding tax
+        items:
+        - name: Set up withholding tax
+          href: general-ledger/tasks/set-up-withholding-tax.md
+        - name: Global withholding tax
+          items: 
+          - name: Global withholding tax overview
+            href: general-ledger/global-withholding-tax-overview.md
+          - name: Enable global withholding tax
+            href: general-ledger/enable-global-withholding-tax.md
+          - name: Set up global withholding tax
+            href: general-ledger/set-up-global-withholding-tax.md
+          - name: Withholding tax in purchase transactions
+            href: general-ledger/withholding-tax-in-purchase-transactions.md
+          - name: Withholding tax in sales transactions
+            href: general-ledger/withholding-tax-in-sales-transactions.md
+          - name: Create a withholding tax payment
+            href: general-ledger/create-a-withholding-tax-payment.md
       - name: Audit workbench
         items:
         - name: Audit policy rules
