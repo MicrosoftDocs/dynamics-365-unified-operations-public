@@ -37,9 +37,9 @@ This topic describes connectors and explains how to configure and enable them in
 
 ## Overview
 
-Connectors let you connect your Dynamics 365 Commerce site to external third parties to perform tasks such as capturing analytics, logging, and experimenting. Some third-party service providers require a paid license for their service before it can be used. For more information, contact your service provider.
+Connectors let you connect your Dynamics 365 Commerce site to external third party services to perform tasks such as capturing analytics, logging, and experimenting. Some third-party service providers require a paid license for their service before it can be used. For more information, contact your service provider.
 
-In Commerce version 10.0.13, the only supported type of connector is the experimentation connector. In future versions, you will be able configure and enable other types of connectors.
+As of Commerce release version 10.0.13, the only supported type of connector is the experimentation connector and in 10.0.17 GeoLocation connector support has been added. In future versions, you will be able configure and enable other types of connectors.
 
 ## Configure and enable connectors
 
@@ -49,7 +49,7 @@ You can add connectors to your Commerce site by adding them as a dependency in y
 
 Connectors are configured and enabled in the **connector.settings.json** file under the **\\src\\settings** directory. If no **connector.settings.json** file exists, you can manually create one. In this file, you can specify the experimentation connector that you want to use and configure it as you require. Only one experimentation connector can be used at a time.
 
-The following example shows the contents of a **connector.settings.json** file.
+The following example shows the contents of the **connector.settings.json** file which defines an experimentation connector.
 
 ```json
 {
@@ -257,6 +257,111 @@ export interface IExperimentationListener {
     trackEvent(eventType: string, payload: any, attributes?: any): void;
 }
 ```
+
+
+## GeoLookup connector
+A geoLookup connector allows you to connect to an external geolocation service provider. Adding this type of connector to your e-Commerce site and configuring it will allow you to generate geolocation information for the site visitor. 
+
+### Enable and configure a geoLookup connector
+Connectors are enabled and configured in the  **connector.settings.json** file under the **\\src\\settings** directory of the SDK.  The following is an example of enabling a geoLookup connector:
+
+```json
+{
+    "geoLookup": {
+        "name": "ipstack",
+        "config": {
+            "apiKey": "84015d0c4c9d514247d654364c962a41"
+        },
+        "cacheConfig": {
+            "ttlInSeconds": {
+                "geoLookup": 10
+            }
+        }
+    }
+}
+```
+
+- **geoLookup** – This object contains all the information that is required to start and enable your experimentation connector.
+- **name** – This setting specifies the name of the geoLookup connector to use. You can find the name of the connector in the connector's definition file. The type of the connector must be **geoLookupConnector**.
+- **config** – This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file.
+- **cacheConfig** – You can specify the timings that are used when caching geolocation entities. **ttlInSeconds** refers to the amount of time that an entity can remain in the cache before it's considered stale, and **ttrInSeconds** refers to the amount of time before an entity is refreshed. The connector's README file should include a list of recommended cache timings.
+- **geoLookup** – The geoLookup controls the cache timings for getting geolocation information generated in your third party provider during getGeoInformation() . Default TTL (time-to-live) is 120 seconds.
+
+
+### Anatomy of a geoLookup connector
+An experimentation connector consists of two parts:
+
+- A connector definition file (in JavaScript Object Notation \[JSON\] format)
+- A provider file
+
+### Connector definition file
+A connector definition file CONNECTOR_NAME.connector.json is used to register and provide configuration metadata data to your application. The metadata includes the type of connector, the connector’s name, a description of the connector and the configuration schema. 
+
+Here is an example of a connector definition file:
+
+{
+    "$type": "geoLookupConnector",
+    "name": "msdyn365-geoLookup-test",
+    "description": "Test connector implementation",
+    "configSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Api key for using the geoLookup API"
+          }
+        },
+        "required": ["apiKey"]
+    }
+}
+
+#### Connector definition file schema
+
+- **$type** – The type of connector. Because the definition file in the preceding example is for an geoLookup connector, the type is **geoLookupConnector**.
+- **name** – The name of the connector. This name must be unique across all connectors.
+- **description** – The description of the connector.
+- **configSchema** – The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party experimentation service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements.
+
+### Provider file
+
+A provider file is required to initialize a connector. The name of the provider file is in the format **&lt;CONNECTOR\_NAME&gt;.provider.ts**.
+
+The provider file should implement the following interface.
+
+```typescript
+export interface IGeoLookupProvider  {
+    /**
+     * Allows the geoLocation connector to do any startup related tasks
+     * using the config provided by the partner.
+     *
+     * This method is only called once during server startup.
+     * @param config The configuration provided in connector.settings.json
+     */
+    // tslint:disable:no-any
+    initialize(config: any): Promise<boolean>;
+
+    /**
+     * Geolocation lookup connector will get location information based on the ip address
+     * @param ip The ip address
+     */
+    getGeoInformation(ip: string): Promise<IGeoLocation>;
+}
+```
+
+In addition, some of the functions use the following types for their return types and arguments.
+
+```typescript
+export interface IGeoLocation {
+    country?: string;
+    region?: string;
+    city?: string;
+    zipCode?: string;
+    [otherProperty: string]: string | undefined;
+}
+```
+
+Generated geolocation information will be saved into requestContext.geoLocation object. 
+
 
 ## Additional resources
 
