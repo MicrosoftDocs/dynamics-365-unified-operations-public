@@ -2,7 +2,8 @@
 # required metadata
 
 title: Withholding tax in sales transactions
-description: 
+description: This topic lists the steps to avoid calculation of withholding tax for selected customers. This topic For customers who withhold taxes on their payments to you, you can assign the default **Withholding tax group** on the **Customer master** page. 
+
 author: roschlom
 manager: AnnBe
 ms.date: 01/12/2021
@@ -30,10 +31,9 @@ ms.dyn365.ops.version: AX 10.0.16
 
 ---
 
-
 # Withholding tax in sales transactions
 
-For customers who withhold taxes on their payments to you, you can assign the default **Withholding tax group** in the customer master.
+This topic lists the steps to avoid calculation of withholding tax for selected customers. For customers who withhold taxes on their payments to you, you can assign the default **Withholding tax group** on the **Customer master** page. 
 
 1. Go to **Navigation pane > Modules > Accounts receivable > Customers > All customers**.
 
