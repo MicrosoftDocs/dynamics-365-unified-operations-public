@@ -67,7 +67,7 @@ RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if
  
 ![Browser driver](media/driver-2.png)
 
-Alternatively, refer to [Install Selenium Driver](#install-selenium-drivers).
+RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). The Webdriver library and browser specific drivers are downloaded to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
 
 ## Configuration
 
@@ -198,22 +198,6 @@ Use the **Download** button to retrieve the certificate bundle as a .zip file.
 ![Thumbprint settings](media/rsat-lcs4.png)
 
 You can now run your tests against the environment using this certificate. The certificate will be auto-rotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
-
-## Install Selenium drivers
-
-For manual installation of Selenium drivers, follow these steps:
-1. Download [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). Or, go to https://docs.seleniumhq.org/download and click **Previous releases**. Choose **3.13** and download **selenium-dotnet-strongnamed-3.13.1.zip**.
-2. Install the Selenium libraries:
-    + Unzip the downloaded file. 
-    + Unpack the file **dist\Selenium.WebDriver.StrongNamed.3.13.1.nupkg**. To unpack this file, add the .zip suffix to the file and unzip it. 
-    + Copy the contents of the folder named **Selenium.WebDriver.StrongNamed.3.13.1.nupkg\lib** to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
-3.	Download the [Internet Explorer driver version 3.4.0](https://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip). Or, go back in the browser, open the **3.4** folder, and download **IEDriverServer_x64_3.4.0.zip**.
-4.	Unzip the downloaded file and move the contents to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
-
-If you want to use Google Chrome as your browser, follow these steps:
-1. Go to https://sites.google.com/a/chromium.org/chromedriver/downloads. 
-2. Download **chromedriver_win32.zip** from the latest/current release.
-3. Unzip the downloaded file and move the contents to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
 
 ## Manual configuration of authentication certificates
 
