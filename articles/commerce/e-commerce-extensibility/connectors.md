@@ -56,7 +56,7 @@ The following example shows the contents of the **connector.settings.json** file
     "experimentation": {
         "name": "msdyn365-exp-test-2",
         "config": {
-            "sdkKey": "RhoXz6PsLmjvifyZfTxL2R",
+            "sdkKey": "EXPERIMENTAION_PROVIDER_KEY",
             "key2": "value2"
         },
         "cacheConfig": {
@@ -270,7 +270,7 @@ Connectors are enabled and configured in the  **connector.settings.json** file u
     "geoLookup": {
         "name": "ipstack",
         "config": {
-            "apiKey": "84015d0c4c9d514247d654364c962a41"
+            "apiKey": "GEOLOCATION_SERVICE_PROVIDER_API_KEY"
         },
         "cacheConfig": {
             "ttlInSeconds": {
@@ -283,7 +283,7 @@ Connectors are enabled and configured in the  **connector.settings.json** file u
 
 - **geoLookup** – This object contains all the information that is required to start and enable your experimentation connector.
 - **name** – This setting specifies the name of the geoLookup connector to use. You can find the name of the connector in the connector's definition file. The type of the connector must be **geoLookupConnector**.
-- **config** – This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file.
+- **config** – This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file.  Change the apiKey to one provided by the service provider.
 - **cacheConfig** – You can specify the timings that are used when caching geolocation entities. **ttlInSeconds** refers to the amount of time that an entity can remain in the cache before it's considered stale, and **ttrInSeconds** refers to the amount of time before an entity is refreshed. The connector's README file should include a list of recommended cache timings.
 - **geoLookup** – The geoLookup controls the cache timings for getting geolocation information generated in your third party provider during getGeoInformation() . Default TTL (time-to-live) is 120 seconds.
 
