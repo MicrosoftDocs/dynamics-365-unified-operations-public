@@ -81,7 +81,7 @@ The following data types in Finance and Operations aren't supported in Dataverse
 - VarArg
 - Void (Void return types on OData actions are supported.)
 
-Data type that are supported in Dataverse but not in Finance and Operations aren't supported in virtual entities for Finance and Operations.
+Data types that are supported in Dataverse but not in Finance and Operations aren't supported in virtual entities for Finance and Operations.
 
 ## Entity key/primary key
 
