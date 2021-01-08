@@ -50,7 +50,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline ("build definition") needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update). |
+| **Status**                         | Deprecated. Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline ("build definition") needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
 
 ## Platform updates for version 10.0.15 of Finance and Operations apps
