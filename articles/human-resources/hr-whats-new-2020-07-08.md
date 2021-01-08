@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (July 08, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for July 8, 2020.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/08/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (July 8, 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3382. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
@@ -110,7 +112,7 @@ Some organizations provide a benefit that allows employees to buy or sell their 
 
 ## Leave accrual for a single company or single plan
 
-Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity for the accrual process for customers with different leave years or leave accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Customers can process accruals for a single company or a single leave and absence plan. This ability provides clarity for the accrual process for customers with different leave years or leave accrual policies. For more information, see [Accrue leave per company or per leave plan](hr-leave-and-absence-accrue.md).
 
 ## Add attachments to time-off requests
 

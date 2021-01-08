@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed for APAC India GST Localization in 10.0.01 (April 2019)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.01.
+title: What's new or changed for India GST in 10.0.01 (April 2019)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.01.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/15/2020
@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 10.0.1
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.01 (April 2019)
+# What's new or changed for  India GST in 10.0.01 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.01 for APAC India GST localization. 
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.01 for India GST localization. 
 
 ## New configuration 
 The following configurations are available from the Shared Asset Library in LCS for use in version 10.0.1:
@@ -50,7 +50,7 @@ The following GSTR issues are also resolved:
 ## Non-GST item
 You can create a non-GST item that is the default for **Tax information** in taxable transactions.
 
-![](media/GST-non-gst-item-1-10-0-01.png)
+![Non-GST item](media/GST-non-gst-item-1-10-0-01.png)
 
 ## Critical fixes 
 

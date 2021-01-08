@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -74,11 +74,11 @@ If your e-Commerce site will support multiple languages, expand the **Languages*
 
 ## Set up payment account
 
-From within the **Payment account** section, you can add a third-party payment provider. For information on settting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).
+From within the **Payment account** section, you can add a third-party payment provider. For information on setting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).
 
-## Additional channel set up
+## Additional channel setup
 
-Additional tasks required for online channel setup include setting up payment methods, modes of delivery, and the fulfillment group assignment.
+Additional tasks that are required for online channel setup include setting up payment methods, modes of delivery, and the fulfillment group assignment.
 
 The following image shows **Modes of delivery**, **Payment methods**, and **Fulfillment group assignment** setup options on the **Set up** tab.
 

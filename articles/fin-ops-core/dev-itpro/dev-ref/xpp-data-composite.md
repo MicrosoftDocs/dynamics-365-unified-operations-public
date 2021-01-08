@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150183
 ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
@@ -146,7 +145,7 @@ The **container** type resembles other constructs, such as arrays and collection
 
 When you construct a **List** object, you determine the one type of data that the **List** object can store. This restriction is less flexible for a **List** than it is for a container. However, you can store objects in a **List**, whereas a container can store only value types. The difference between a container and an array is that an array can hold only items of its declared type. You can allocate memory space for an array and fill that space with values later. For example, you can fill in values in a loop. This behavior is efficient and performs well. When you want to build a new container by appending new data, you can use either the **+=** operator or the **conIns** function. The **+=** operator is the faster alternative. Use the **conIns** function only when you want to add new data before the last index of the original data. 
 
-In Dynamics AX 2012, although you could use the X++ compiler to store object references in containers, the result would fail at run time. However, in Finance and Operations applications, when the compiler sees an attempt to store an object reference in a container, it issues an error message. If the type of the element that is added to the container is **anytype**, the compiler can’t determine whether the value is a reference type. In this case, the compiler allows the attempt because it assumes that the user knows what he or she is doing. Although the compiler doesn't diagnose the code as erroneous, an error will be thrown at run time.
+In Dynamics AX 2012, although you could use the X++ compiler to store object references in containers, the result would fail at run time. However, in Finance and Operations applications, when the compiler sees an attempt to store an object reference in a container, it issues an error message. If the type of the element that is added to the container is **anytype**, the compiler can’t determine whether the value is a reference type. In this case, the compiler allows the attempt. Although the compiler doesn't diagnose the code as erroneous, an error will be thrown at run time.
 
 ### Container examples
 

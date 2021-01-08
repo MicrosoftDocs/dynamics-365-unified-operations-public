@@ -18,12 +18,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: United Kingdom
 # ms.search.industry: 
-ms.author: LizaGolub
+ms.author: kfend
 ms.search.validFrom: 2019-09-06
 ms.dyn365.ops.version: AX 10.0.6
 

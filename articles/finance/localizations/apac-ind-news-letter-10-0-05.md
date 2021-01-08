@@ -1,9 +1,9 @@
 ---
 # required metadata
-title: What's new or changed for APAC India GST Localization in 10.0.05 (October 2019)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.05.
+title: What's new or changed for India GST in 10.0.05 (October 2019)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.05.
 author: prabhatb
-manager: Wangcheng
+manager: Annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.05 (October 2019)
+# What's new or changed for India GST in 10.0.05 (October 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.05 for APAC India GST localization. 
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.05 for India GST localization. 
 
 ## New configuration 
 The following configurations are available from the Shared Asset Library in LCS for use in version 10.0.5. For more information about the released configuration details, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
@@ -58,11 +58,11 @@ In most of the taxation system, there is concept of tax rate type, similar to st
 
 You can now associate the Tax rate type to a Released product, Procurement/Sales categories, and Charge code.
 
-![](media/GST-tax-rate-type-1-10-0-05.png)
+![Released product details, Tax rate type](media/GST-tax-rate-type-1-10-0-05.png)
 
 Use the Tax rate type to determine the tax rate which will dramatically reduce the number of tax setup data records.
 
-![](media/GST-tax-rate-type-2-10-0-05.png)
+![Tax rate type lookup](media/GST-tax-rate-type-2-10-0-05.png)
 
 For Retail customers whose terminals haven't been updated to 10.0.5, use the following configurations. The only difference is tax rate types are not supported. 
 
@@ -74,16 +74,16 @@ For Retail customers whose terminals haven't been updated to 10.0.5, use the fol
 
 This feature was released in 10.0.2, but more details are now available. If you are using Microsoft's standard configuration, or you extended only the tax document, you can skip model mapping which will improve the tax calculation and posting performance.
 
-![](media/GST-skip-model-mapping-3-10-0-05.PNG)
+![Tax configuration, Skip model mapping](media/GST-skip-model-mapping-3-10-0-05.PNG)
 
 ### Support calculate/adjust tax in accounting currency
 This feature was released in 10.0.3, but more details are now available. You can adjust the actual tax amount in the accounting currency for import/export orders to mitigate the difference for customs duty.
 
 To enable this functionality, go to **Tax** > **Setup** > **Tax Configuration** > **Tax Setup** > **Parameter** and select the appropriate information in the **Calculation method** field group.
 
-![](media/GST-skip-model-mapping-4-10-0-05.PNG)
+![Tax setup parameters, Calculation method field group](media/GST-skip-model-mapping-4-10-0-05.PNG)
 
-![](media/GST-skip-model-mapping-5-10-0-05.png)
+![Tax document totals](media/GST-skip-model-mapping-5-10-0-05.png)
 
 ### Financial dimension linked to inventory dimension site is not auto-populated in stock transfer receipt order line
 
@@ -116,9 +116,9 @@ To make these changes, complete the following steps.
 
 1. Create new posting account called **Tax payable reverse charge**. 
 
-![](media/GST-skip-model-mapping-6-10-0-05.png)
+![Tax document posting types](media/GST-skip-model-mapping-6-10-0-05.png)
 
-![](media/GST-Reverse-charge-posting-7-10-0-05.PNG)
+![Tax document, Details pane](media/GST-Reverse-charge-posting-7-10-0-05.PNG)
 
 2. Identify the reverse charge liability in a separate account such as **Tax Payable (Reverse charge)**. This should be defined as a **Ledger account** instead of **Tax account** because reverse charge liability can't be directly settled with input tax credit. Instead, it must first be paid separately from the **Cash Ledger account**.
 3. Set the following field information:

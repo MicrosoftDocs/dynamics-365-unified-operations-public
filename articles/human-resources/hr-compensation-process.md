@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+# ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -50,7 +50,7 @@ Click the **Add** button in the **Plans** tab to add a compensation plan to the 
 
 Save the record, then click the **Add** button in the **Actions** tab to add fixed compensation actions for the selected plan. Use the **Enable recommendation** option to enter an amount that's different than the calculated guideline increase for the action. To calculate  an action that's based on the result of the previous action to link multiple compensation actions, mark the **Use previous result** option, Fixed compensation actions are types of compensation logic that you can give descriptive names to. For Grade and Band plans, you can only add fixed compensation actions that are of the following Types:
 
-| Fixed compensationaction type | Functionality                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Fixed compensation action type | Functionality                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Equity                        | Equity actions will compare the employee’s rate of pay as of the cycle end date with the lowest reference point for the level indicated on the employee’s job. If the employee’s pay rate is less than the minimum reference point, the increase needed to bring the employee to the minimum point in the range will be calculated.                                                                                |
 | Merit                         | Merit actions will calculate an increase based on the employee’s pay rate as of the cycle end date and the increase percent found in the fixed increase budget for the employee’s department, labor union, and location.                                                                                                                                                                                         |

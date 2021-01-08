@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -51,13 +50,11 @@ This topic explains how to use the Performance software development kit (SDK) to
 - An on-premises environment that has volume data
 - A development environment that has the following characteristics:
 
-    - Microsoft Visual Studio 2015 Enterprise or a later version is installed.
+    - Microsoft Visual Studio Enterprise or a later version is installed.
     - The Performance SDK is installed. (The SDK will likely be in K:\\PerfSDK\\PerfSDKLocalDirectory. However, depending on your environment, it might be in another location, such as C:\\PerfSDK.)
     - The on-premises environment can be accessed in a web browser. (The development virtual machine [VM] might be in the same domain as the on-premises environment, or the on-premises environment might have a publicly registered domain name.)
 
 ## Create a single-user C# test from an XML recording
-
-<!--To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).-->
 
 1. Use Task recorder to create a recording of the scenario that you want to test.
 

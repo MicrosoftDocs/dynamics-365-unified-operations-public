@@ -14,7 +14,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSReplenishmentTemplates
+ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

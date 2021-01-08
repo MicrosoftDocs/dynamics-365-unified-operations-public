@@ -5,7 +5,7 @@ title: Enable change tracking for entities
 description: Use change tracking to enable incremental export of data from Finance and Operations.
 author: Milindav2
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
@@ -68,19 +67,21 @@ The following example shows how to add a static method to an entity. You must ma
 
 ```xpp
 public static Query defaultCTQuery()
-    {
-        Query q;
-        q = new Query();
-        QueryBuildDataSource qbd = q.addDataSource(tablename2id('CustTable'));
-        qbd = qbd.addDataSource(tablename2id('DirPartyTable'));
-        qbd.relations(true);
-        qbd = qbd.addDataSource(tablename2id('DirPartyLocation'));
-        qbd.addRange(fieldname2id(tablename2id('DirPartyLocation'),'IsPrimary')).value("1");
-        qbd.relations(false);
-        qbd.addLink(fieldName2Id(tableName2Id('DirPartyTable'),'RecId'),fieldName2Id(tableName2Id('DirPartyLocation'),'Party'));
-        qbd = qbd.addDataSource(tableName2Id('LogisticsPostalAddress'));
-        qbd.relations(false);
-        qbd.addLink(fieldName2Id(tableName2Id('DirPartyLocation'),'Location'),fieldName2Id(tableName2Id('LogisticsPostalAddress'),'Location'));
-        return q;
-    }
+{
+	Query q = new Query();    
+    
+	QueryBuildDataSource custDs = q.addDataSource(tableNum(CustTable));
+
+	QueryBuildDataSource partyDs = custDs.addDataSource(tableNum(DirPartyTable));
+	partyDs.relations(true);
+
+	QueryBuildDataSource locationDs = partyDs.addDataSource(tableNum(DirPartyLocation));
+	locationDs.addRange(fieldNum(DirPartyLocation, IsPrimary)).value(queryValue(NoYes::Yes));        
+	locationDs.addLink(fieldNum(DirPartyTable, RecId), fieldNum(DirPartyLocation, Party));
+
+	QueryBuildDataSource addressDs = locationDs.addDataSource(tableStr(LogisticsPostalAddress));        
+	addressDs.addLink(fieldNum(DirPartyLocation, Location), fieldNum(LogisticsPostalAddress, Location));
+
+	return q;
+}
 ```

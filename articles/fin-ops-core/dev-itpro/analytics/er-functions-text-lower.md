@@ -18,7 +18,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -30,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LOWER">LOWER ER function</a>
+# LOWER ER function
 
 [!include [banner](../includes/banner.md)]
 

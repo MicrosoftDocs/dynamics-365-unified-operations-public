@@ -5,7 +5,7 @@ title: Dynamics 365 Finance operated by 21Vianet in China and Dynamics 365 Suppl
 description: This topic provides information about Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China.
 author: kfend
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kfend
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version:  
 
@@ -33,6 +32,8 @@ ms.dyn365.ops.version:
 # Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“**21Vianet**”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
@@ -44,21 +45,7 @@ Customers in China have two options from which to select how they want to access
 
 - Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Supply Chain Management services in China. This option provides a consistent application experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
-- Services operated by Microsoft – This option is for Finance and Supply Chain Management customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant.
-
-There are a few technical limitations during the provisioning of services that need to be taken in to account to avoid potential issues. 
-
-|Scenario  |Recommendation  |
-|---------|---------|
-|**Purchased Azure, Office 365, and Dynamics 365 via OSPA.**    |Recommended sequence for provisioning: Office 365 or Dynamics 365 must be provisioned first, followed by Azure.|
-|**Purchased Azure via OSPA first and then purchased Office 365 via OSPA. Now purchased Dynamics 365 via OSPA.**   | Customer already has two tenants, one for Azure and another for Office 365. Dynamics 365 can be added to the tenant containing Office 365 OSPA.        |
-|**Purchase Office 365 via OSPA and then purchased Azure via OSPA. Now purchased Dynamics 365 via OSPA.**     | Customer started with Office 365 and then added Azure. Dynamics 365 can be provisioned on the same tenant.        |
-|**Purchased Office 365 via OSPA and plans to add Dynamics 365.**   |If Office 365 is already provisioned, customer will be able to provision Dynamics 365 on the same tenant.         |
-|**Purchased Office 365 via OSSA or CSP and purchased Dynamics 365.**    |Dynamics 365 needs to be provisioned on a separate tenant.          |
-
-- OSPA = Online Services Premium Agreement 
-- OSSA = Online Services Standard Agreement
-- CSP = Cloud Solution Provider
+- Services operated by Microsoft – This option is for Finance and Supply Chain Management customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Microsoft 365 and/or Dynamics 365 can co-exist on the tenant.
 
 For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/create-environment).
 
@@ -92,13 +79,17 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   [Embedded Power Apps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft Power Apps and Microsoft Power Automate will be unavailable.
 
-    -   [Data integration using Common Data Service overview](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
+    -   [Data integration using Dataverse overview](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
+    
+  > [!NOTE]
+  > The Lifecycle Services URL for implementations operated by 21Vianet in China is lcs.dynamics.cn.
 
 -   The following features will not be available due to certain **current Azure Active Directory limitations** in China:
 
     -   The **System administration \> Setup \> B2B Invitation configuration** page will not be available due to business-to-business (B2B) being unavailable in Azure Active Directory in China. For more information, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
 -   [Conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference) is an Azure Active Directory feature that is available for the Azure Active Directory Premium 2 SKU. This is unavailable in China. 
+-   The Microsoft Dynamics 365 Payment Connector for PayPal is not available in China.
 
 ## Additional resources
 

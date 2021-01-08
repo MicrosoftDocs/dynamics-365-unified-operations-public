@@ -2,10 +2,10 @@
 # required metadata
 
 title: Manage ratings and reviews 
-description: This topic explains how to manage ratings and reviews by using the Microsoft Dynamics 365 Commerce ratings and reviews moderation tool.
+description: This topic explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
 author:  gvrmohanreddy 
 manager: annbe
-ms.date: 01/30/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
+#ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,27 +33,19 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to manage ratings and reviews by using the Microsoft Dynamics 365 Commerce ratings and reviews moderation tool.
+This topic explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
 
 ## Overview
 
-Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically moderate review text by redacting profane words. In addition, moderators can use the ratings and reviews moderation tool for the following manual tasks:
+Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically moderate review text by redacting profane words. In addition, moderators can use Dynamics 365 Commerce site builder to implement the following manual tasks:
 
 - Moderate reviews by responding to them or removing them.
 - Delete a customer's reviews at the customer's request.
 - Bulk-import ratings and reviews data for all products into a Microsoft Power BI template, so that trends for ratings and reviews can be analyzed.
 
-## Access ratings and reviews moderation features
-
-To access ratings and reviews moderation features in the e-Commerce site management tool, follow these steps.
-
-1. Sign in to [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com).
-1. Open the project that contains the environment where you want to initialize e-Commerce.
-1. In the **Environments** section, select the environment.
-1. Under **Environment features**, select **Retail manage**.
-1. On the **e-Commerce** tab under **Links**, select **e-Commerce Site management tool**.
-
 ## Read a review 
+
+To read to a review in Commerce site builder, follow these steps.
 
 1. Go to **Home \> Reviews \> Moderation**.
 1. Use the search field in the upper right of the page to filter the reviews that are shown by product ID, product name, or review text.
@@ -66,7 +58,7 @@ Additional filters let you limit the reviews by period, rating, channel, or conc
 
 Sometimes, customers who purchased a product express their satisfaction or dissatisfaction, or they don't understand how to use the product. As a moderator, you can post a response to a review. This response appears together with the review on the site. 
 
-To respond to a review, follow these steps.
+To respond to a review in Commerce site builder, follow these steps.
 
 1. Go to **Home \> Reviews \> Moderation**.
 1. Find and select the review that requires a response.
@@ -80,20 +72,20 @@ To respond to a review, follow these steps.
 
 Sometimes, there is a business justification for moderators to take down customer reviews. 
 
-To take down a review, follow these steps.
+To take down a review in Commerce site builder, follow these steps.
 
 1. Go to **Home \> Reviews \> Moderation**.
 1. Find and select the review that must be taken down.
-1. In the properties pane on the right, select a takedown reason, and then select **Take down**.
+1. In the properties pane on the right, select a takedown reason under **Takedown Review**, and then select **Take down**.
 	
 ## Delete a customer's reviews at the customer's request 
 
 Sometimes, customers want their ratings and reviews data to be permanently deleted from an e-Commerce website. A moderator who receives a removal request from a customer can remove the customer's data by using the review deletion feature. To find and delete a customer's data, the moderator requires the email address that the customer used to sign in and provide reviews. 
 
-To find and delete customer data, follow these steps.
+To find and delete customer data in Commerce site builder, follow these steps.
 
 1. Go to **Home \> Reviews \> Delete**.
-1. In the **Search for users by email address** field, enter the customer's email address, and then select **Search**.
+1. In the **Search for users by email address** box, enter the customer's email address, and then select **Search**.
 1. If the customer has any review activity (for example, review submissions, votes about the helpfulness of another customer's reviews, or comments about another customer's review), the results are shown. For each item, there is a **Delete** button.
 1. For each item that must be deleted, select **Delete**. When you're prompted for confirmation, select **Yes**. 
 	
@@ -105,23 +97,23 @@ To find and delete customer data, follow these steps.
 
 ## Download ratings and reviews data
 
-The ratings and reviews moderation tool lets moderators import ratings and reviews data in bulk, so that they can analyze trends. A Power BI template that includes basic metrics is available. Moderators can use this template to connect bulk-imported data and view a dashboard. They don't have to create a custom dashboard. Moderators can also customize the Power BI template to meet their specific needs. 
+Commerce site builder lets moderators import ratings and reviews data in bulk, so that they can analyze trends. A Power BI template that includes basic metrics is available. Moderators can use this template to connect bulk-imported data and view a dashboard. They don't have to create a custom dashboard. Moderators can also customize the Power BI template to meet their specific needs. 
 
-To download ratings and reviews data, follow these steps.
+To download ratings and reviews data in Commerce site builder, follow these steps.
 
 1. Go to **Home \> Reviews \> Reporting**.
-1. Select **Download reviews data** to download ratings and reviews data in bulk in comma-separated values (CSV) format.
+1. Select **Download review data** to download ratings and reviews data in bulk in comma-separated values (CSV) format.
 
 ## View ratings and reviews trends
 
 Moderators can download the Power BI template so that they can view trends in a dashboard.
 
-To view ratings and reviews trends, follow these steps.
+To view ratings and reviews trends in Commerce site builder, follow these steps.
 
 1. Go to **Home \> Reviews \> Reporting**.
 1. Select **PowerBI template** to download the template.
 
-    ![Downloading the Power BI template](media/rnr-moderation-reports.png) 
+    ![Download the Power BI template](media/rnr-moderation-reports.png) 
 
 1. Open the downloaded template by using the Power BI app. Close the **Access to web content** dialog box that appears, and then close the "Refresh" error message that appears.
 1. Go to **Home**, select **Edit queries**, and then select **Data source settings**.

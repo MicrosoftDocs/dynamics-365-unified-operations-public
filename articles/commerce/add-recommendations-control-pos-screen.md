@@ -18,7 +18,7 @@ ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
@@ -111,6 +111,8 @@ There are two configurations options available. Choose the option that works bes
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
 [Add product recommendations on POS](product.md)
 

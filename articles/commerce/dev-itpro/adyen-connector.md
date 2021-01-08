@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -78,6 +77,7 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_38p6 |
 
+
 # [10.0.5](#tab/10-0-5)
 ### Dynamics 365 Retail POS version 10.0.5
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
@@ -95,12 +95,14 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_45p3 |
+| | *Note: Validation testing has been performed on adyen_v1_56p5. See the note below for more details.* |
 
 # [10.0.8](#tab/10-0-8)
 ### Dynamics 365 Retail POS version 10.0.8
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_48p6 |
+| | *Note: Validation testing has been performed on adyen_v1_56p5.  See the note below for more details.* |
 
 # [10.0.9](#tab/10-0-9)
 ### Dynamics 365 Retail POS version 10.0.9
@@ -118,9 +120,33 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 ### Dynamics 365 Retail POS version 10.0.11
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
-| adyen_v1_45p9 | adyen_v1_51p7 |
+| adyen_v1_45p9 | adyen_v1_56p5 |
+
+# [10.0.12](#tab/10-0-12)
+### Dynamics 365 Retail POS version 10.0.12
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_48p7 | adyen_v1_56p5 |
+
+# [10.0.13](#tab/10-0-13)
+### Dynamics 365 Retail POS version 10.0.13
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_51p7 | adyen_v1_56p5 |
+
+# [10.0.14](#tab/10-0-14)
+### Dynamics 365 Retail POS version 10.0.14
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_56p5 | adyen_v1_56p5 |
 
 ---
+
+> [!NOTE]
+> Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmare version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
+>
+> Migrating from a Adyen firmware version earlier than version 53 to version 53 requires POS KB **4577957** for monthly updates of Commerce, versions 10.0.11 through 10.0.14. If one of those versions is in use and doesn't include the hotfix, post-upgrade of the payment terminal will only allow payments via NFC. Applying the hotfix to the POS resolves this issue. If the POS version is older than version 10.0.11, file a support request noting that a fix for KB **4577957** is required for an out of service MPOS.
+
 
 ### Supported payment terminals
 The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api). It supports all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, visit the [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals) page.
@@ -204,29 +230,24 @@ The following countries have Dynamics 365 Commerce components available as well 
 | Austria | ✔ |
 | Belgium | ✔ |
 | Canada | ✔ |
-| Croatia | ✔ |
-| Cyprus | ✔ |
 | Czech Republic | ✔ |
 | Denmark | ✔ |
 | Estonia | ✔ |
 | Finland | ✔ |
 | France | ✔ |
 | Germany | ✔ |
-| Greece | ✔ |
+| Hong Kong SAR | ✔ |
 | Hungary | ✔ |
-| Hong Kong | ✔ |
 | Iceland | ✔ |
 | Ireland | ✔ |
 | Italy | ✔ |
 | Latvia | ✔ |
 | Lithuania | ✔ |
+| Malaysia | ✔ |
 | Netherlands | ✔ |
 | Norway | ✔ |
 | Poland | ✔ |
-| Portugal | ✔ |
 | Singapore | ✔ |
-| Slovakia | ✔ |
-| Slovenia | ✔ |
 | Switzerland | ✔ |
 | Spain | ✔ |
 | Sweden | ✔ |
@@ -245,9 +266,10 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
 | [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
-| [External gift cards for call center and e-commerce] (https://docs.microsoft.com/dynamics365/commerce/dev-itpro/gift-card | ✔<br>(Starting with 10.0.10) | 
+| [External gift cards for call center and e-commerce](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/gift-card) | ✔<br>(Starting with 10.0.10) | 
 | [SCA payment redirect](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(Starting with 10.0.12) |
 | [Dedicated payment terminals and prompts for a printer and cash drawer](https://docs.microsoft.com/dynamics365/commerce/pos-multi-hws) | ✔<br>(Starting with 10.0.12) | |
+| [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
 
 
 ## Sign up with Adyen
@@ -286,7 +308,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only*- If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
-    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
+    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This field must be set to **Cloud** for the `Payment service account`. | Yes | Yes | Cloud |
     | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
@@ -340,7 +362,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
-    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
+    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This must be set to **Local** for POS terminals. For more information about the different Terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Local |
     | Local Password phrase | Enter the Adyen key passphrase for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | keypassphrase123 |
@@ -417,7 +439,7 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. | Yes | Yes | Live |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
+    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see, [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
@@ -515,6 +537,14 @@ When payment transactions aren't successfully processed through the Adyen paymen
 </tr>
 </tbody>
 </table>
+
+#### Invoicing sales orders failed due to stale authorization
+
+| Title | Capture failed due to stale authorization |
+|---|---|---|
+| Symptom | Invoicing sales orders fails with "Exception has been thrown by the target of an invocation. System.ArgumentNullException: Value cannot be null." The underlying error in the logs is "The following error occurred during the capture call - Dynamics 365 Payment Connector for Adyen: Error code Decline message Capture failed due to stale authorization." |
+| Root cause | This error happens when an authorization older than the **Authorization stale period (days)** is sent to the payment connector for capture. |
+| Fix | Ensure the value of **Number of days before expired** in **Accounts receivable parameters, Credit Card** is set to **1 less day** than the value set in merchant properties for all channels and then retry invoicing. The recommended value for **Authorization stale period (days)** is 14 in Adyen merchant properties and 13 in Accounts receivables parameters. |
 
 ## Additional resources
 

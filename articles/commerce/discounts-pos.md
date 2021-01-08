@@ -5,7 +5,7 @@ title: Show discounts in POS
 description: This topic explains how Microsoft Dynamics 365 Commerce helps sales associates learn about promotions and how they can be used for cross-sell and upsell motions.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-Commerce
@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
+#ms.search.scope: Core, Operations, Retail, Commerce
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -58,7 +58,7 @@ On the **All discounts** page, sales associates can also search discounts by key
 
 Multiline discounts, such as quantity discounts, mix-and-match discounts, and threshold discounts, are a great way to motivate customers to buy more products to get larger discounts. Therefore, they also help increase the size of a customer's cart and retailer revenue. These discounts can be publicized on e-commerce websites, on social media, and on banners in the store.
 
-However, even when all these publicity methods are used, customers might miss the opportunity to take advantage of promotions. To make it easy for sales associates to learn what promotions are applicable to a selected line, or even to the whole cart, retailers can add the button for the "View available discounts" operation to the button grid on the **Transaction** page. In this way, a sales associate can select a transaction line and then select the button to show all the discounts that are available for the selected line. The sales associate can also select another tab to show discounts that apply to the whole transaction.
+However, even when all these publicity methods are used, customers might miss the opportunity to take advantage of promotions. To make it easy for sales associates to learn what promotions are applicable to a selected line, or even to the whole cart, retailers can add the button for the **"View available discounts"** operation to the button grid on the **Transaction** page. As a result, sales associate can select a transaction line and then select the button to show all the discounts that are available for the selected line. The sales associate can also select another tab to show discounts that apply to the whole transaction. It is important to note that **View available discounts** does not show the discounts that are already applied on the sales line because the discount information is already shown on the sales line. The purpose of this scenario is to only show the discounts that are not yet applied. The exception to this is the discounts that are applied based on a coupon marked as "Apply without a coupon code". This makes it easy for the sales associate to easily remove the coupon they have applied.
 
 The **All discounts** page shows only discounts that don't compete with any of the applied discounts. This behavior helps ensure that, if a sales associate informs a customer about a discount, and the customer takes the required action (for example, the customer buys one more item to get 10 percent off), the discount is applied to the transaction. The coupon-based discounts are shown only when the **Apply without a coupon code** option is turned on.
 

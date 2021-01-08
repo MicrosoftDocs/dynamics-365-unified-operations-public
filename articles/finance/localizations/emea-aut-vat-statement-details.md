@@ -18,12 +18,12 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264334
 ms.search.region: Austria
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 

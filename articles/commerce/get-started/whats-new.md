@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User, IT Pro, Developer 
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail 
+#ms.search.scope: Core, Operations, Retail 
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: jeffbl

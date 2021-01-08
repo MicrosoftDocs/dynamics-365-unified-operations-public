@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+# ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
@@ -73,6 +73,9 @@ To configure a basic workflow that is started when employees request changes to 
 11. Select **Matrix**.
 12. Add the **Worker identification number** workflow to the list.
 
+## Additional resources
+
+[View and manage address changes](hr-personnel-view-address-changes.md) 
 
 
 

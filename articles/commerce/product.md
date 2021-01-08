@@ -18,7 +18,7 @@ ms.search.form: RetailParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 259664
 ms.assetid: 5dd8db08-cd96-4f7e-9e65-b05ca815d580
@@ -84,6 +84,8 @@ To set up product recommendations, follow these steps:
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
 [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
 

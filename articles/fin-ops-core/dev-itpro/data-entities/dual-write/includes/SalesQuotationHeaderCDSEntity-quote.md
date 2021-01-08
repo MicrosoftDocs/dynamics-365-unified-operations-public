@@ -1,10 +1,10 @@
 ## CDS sales quotation header to quotes
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
 Reversed source filter: statecode eq 0
 
-Finance and Operations apps | Map type | model-driven apps in Dynamics 365 | Default value
+Finance and Operations apps | Map type | Customer engagement apps | Default value
 ---|---|---|---
 SALESQUOTATIONNUMBER | = | msdyn_quotenumber | 
 REQUESTINGCUSTOMERACCOUNTNUMBER | = | customerid.Account(accountnumber).Contact(msdyn_contactpersonid) | 

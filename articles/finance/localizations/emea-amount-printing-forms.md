@@ -17,12 +17,12 @@ ms.search.form: Currency
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264254
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -44,9 +44,8 @@ To set up full and short names for currency units and subunits for a language, c
 3. On the Action Pane, select **Declension**.
 4. To add full name and short name for a language, select **New** and enter information the following fields.
 
-   |                                                                        |                                                                                                                                                                                                                                                                        |
+   |             Field                                                           |                        Description                                                                                                                                                                                                                                                |
    |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                         <strong>Field</strong>                         |                                                                                                                      <strong>Description</strong>                                                                                                                      |
    |                       <strong>Language</strong>                        |                                                                                                               Select the language for the current text.                                                                                                                |
    |    <strong>Singular nominative (Name of units field group)</strong>    |                                                                                       Enter the singular form of the currency. For example, the singular form of Litas is Litas.                                                                                       |
    |     <strong>Plural nominative (Name of units field group)</strong>     | Enter the plural form of the currency. For example, enter Litai. <strong>Note</strong>: The <strong>Singular genitive</strong> and <strong>Plural genitive</strong> fields are available based on the language that you select in the <strong>Language</strong> field. |

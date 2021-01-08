@@ -5,7 +5,7 @@ title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Buy box module
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -64,10 +63,13 @@ Themes can be used to remove or change the order of buy box product properties a
 
 - **Heading tag** – This property defines the heading tag for the product title. If the buy box is at the top of the page, this property should be set to **h1** to meet accessibility standards. 
 
+- **Enable "shop similar looks" recommendations** - This property allows the buy box to show links to products that look similar to the currently viewed item. This feature is available in Commerce release 10.0.13 and later.
+
 ## Modules that can be used in a buy box module
 
-- **Media gallery** – This module is used to showcase images of a product on a product details page. It can support one to many images. It also supports thumbnail images. The thumbnail images can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). The media gallery module can be added to the **Media** slot in the buy box module. It currently supports only images. 
+- **Media gallery** – This module is used to showcase images of a product on a product details page. For more information about this module, see [Media gallery module](media-gallery-module.md).
 - **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information about this module, see [Store selector module](store-selector.md).
+- **Social share** - This module can be added to the buy box to allow users to share product information on social media. For more information, see [Social share module](social-share-module.md).
 
 ## Buy box module settings
 
@@ -75,11 +77,14 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart**, **Do not navigate to cart**, and **Show notifications**. When the value is set to **Navigate to cart**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart**, users aren't sent to the cart page after they add an item. When the value is set to **Show notifications**, users are shown a confirmation notification and can continue to browse on the product details page. 
+- **Add product to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart page**, **Do not navigate to cart page**, and **Show notification**. When the value is set to **Navigate to cart page**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart page**, users aren't sent to the cart page after they add an item. When the value is set to **Show notification**, users are shown a confirmation notification and can continue to browse on the product details page. 
 
-    The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
+> [!IMPORTANT]
+> The **Add product to cart** site settings are available in the Dynamics 365 Commerce 10.0.11 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
+The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
+
+![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
 
 ## Commerce Scale Unit interaction
 
@@ -89,9 +94,9 @@ The buy box module retrieves product information by using Commerce Scale Unit ap
 
 To add a buy box module to a new page and set the required properties, follow these steps.
 
-1. Go to **Page Fragments**, and select **New** to create a new fragment.
-1. In the **New Page Fragment** dialog box, select the **Buybox** module.
-1. Under **Page Fragment Name**, enter the name **Buy box fragment**, and then select **OK**.
+1. Go to **Fragments**, and select **New** to create a new fragment.
+1. In the **New fragment** dialog box, select the **Buy box** module.
+1. Under **Fragment name**, enter the name **Buy box fragment**, and then select **OK**.
 1. In the **Media Gallery** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Media gallery** module, and then select **OK**.
 1. In the **Store selector** slot of the buy box module, select the ellipsis (**...**), and then select **Add Module**.
@@ -101,27 +106,27 @@ To add a buy box module to a new page and set the required properties, follow th
 1. In the **New Template** dialog box, under **Template name**, enter **PDP template**, and then select **OK**.
 1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
-1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add Page Fragment**.
-1. In the **Select Page Fragment** dialog box, select the **Buy box fragment** fragment that you created earlier, and then select **OK**.
+1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add fragment**.
+1. In the **Select fragment** dialog box, select the **Buy box fragment** fragment that you created earlier, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Choose a template** dialog box, select the **PDP template** template. Under **Page name**, enter **PDP page**, and then select **OK**.
-1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Page Fragment**.
-1. In the **Select Page Fragment** dialog box, select the **Buy box fragment** fragment that you created earlier, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add fragment**.
+1. In the **Select fragment** dialog box, select the **Buy box fragment** fragment that you created earlier, and then select **OK**.
 1. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. A buy box should appear on the product details page.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Store selector module](store-selector.md)
+
+[Media gallery module](media-gallery-module.md)
 
 [Container module](add-container-module.md)
 
 [Cart module](add-cart-module.md)
-
-[Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
 
@@ -131,4 +136,8 @@ To add a buy box module to a new page and set the required properties, follow th
 
 [Footer module](author-footer-module.md)
 
+[Social share module](social-share-module.md)
+
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
+
+[SDK and module library updates](e-commerce-extensibility/sdk-updates.md)

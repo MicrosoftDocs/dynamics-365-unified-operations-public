@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+#ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -87,4 +87,4 @@ Custom health checks can also be created to test devices that aren't supported o
 
 ## Related articles
 
-[Modern POS (MPOS) triggers and printing](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pos-trigger-printing)
+[Modern POS (MPOS) triggers and printing](dev-itpro/pos-trigger-printing.md)

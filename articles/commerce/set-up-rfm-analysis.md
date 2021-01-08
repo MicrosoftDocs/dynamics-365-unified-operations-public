@@ -18,7 +18,7 @@ ms.search.form: MCRRFMDefinition
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 78943
 ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53

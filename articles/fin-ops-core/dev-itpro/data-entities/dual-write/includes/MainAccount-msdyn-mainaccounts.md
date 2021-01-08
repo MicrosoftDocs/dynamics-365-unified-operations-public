@@ -1,8 +1,8 @@
 ## Main account to msdyn_mainaccounts
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 MAINACCOUNTID | = | msdyn_accountnumber | 
 CHARTOFACCOUNTS | = | msdyn_chartofaccounts.msdyn_name | 

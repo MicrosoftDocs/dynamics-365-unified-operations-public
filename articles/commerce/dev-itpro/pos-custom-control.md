@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -53,8 +52,8 @@ The following table shows the views that support custom controls in POS.
 | Cart view/Transaction page | Yes                      | Yes                             |
 | Customer details view      | Yes                      | No                              |
 | Product details view       | Yes                      | No                              |
-| Customer Add/Edit view     | Yes (work in progress)   | No                              |
-| Address Add/Edit view      | Yes (work in progress)   | No                              |
+| Customer Add/Edit view     | Yes    | No                              |
+| Address Add/Edit view      | Yes    | No                              |
 
 > [!NOTE]
 > Custom controls are supported only in the following product versions:

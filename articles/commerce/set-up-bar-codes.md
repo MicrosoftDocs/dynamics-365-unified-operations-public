@@ -5,7 +5,7 @@ title: Set up bar codes
 description: This article describes how to use bar codes in Dynamics 365 Commerce.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15971
 ms.assetid: 6b4b2ac2-0344-41aa-8818-62c30017d5ac
@@ -47,7 +47,7 @@ You can create bar codes manually or automatically. To create bar codes, complet
 1. [Set up bar code mask characters](set-up-bar-code-masks.md).
 2. [Set up bar code masks](set-up-bar-code-masks.md).
 3. Configure bar code setups.
-4. Create bar codes for products.
+4. [Create bar codes for products](../supply-chain/pim/tasks/create-bar-code-product.md).
 
 ## Additional resources
 

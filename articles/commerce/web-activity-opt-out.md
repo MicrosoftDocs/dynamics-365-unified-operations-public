@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global

@@ -17,7 +17,7 @@ ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBen
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+# ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

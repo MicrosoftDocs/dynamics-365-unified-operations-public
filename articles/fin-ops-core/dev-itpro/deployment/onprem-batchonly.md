@@ -5,7 +5,7 @@ title: Configure batch-only and interactive-only AOS nodes in on-premises deploy
 description: This topic explains how to configure your environment so that you can deploy batch-only and interactive-only AOS nodes.
 author: faix
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -31,7 +30,6 @@ ms.dyn365.ops.version: Platform update 36
 # Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > This feature is supported starting in application update 10.0.12, Platform update 36.

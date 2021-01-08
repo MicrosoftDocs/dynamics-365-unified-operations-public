@@ -3,7 +3,7 @@
 
 title: Reconcile a bank account
 description: This topic describes how to reconcile a bank account.
-author: ShivamPandey-msft
+author: panolte
 manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
+# ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: shpandey
+ms.author: panolte
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: 10.0.5
 ---

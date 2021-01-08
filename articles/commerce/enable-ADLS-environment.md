@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
+#ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -105,6 +105,8 @@ If not completed already, follow the steps for [enabling product recommendations
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
 [Add product recommendations on POS](product.md)
 

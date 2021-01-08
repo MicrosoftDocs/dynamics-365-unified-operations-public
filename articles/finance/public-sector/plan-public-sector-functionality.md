@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan for public sector functionality
-description: This article suggests the first steps to setting up Public sector functionality.
+description: This topic suggests the first steps to setting up Public sector functionality.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,7 @@ ms.search.form: SysConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19851
 ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35
@@ -34,12 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article suggests the first steps to setting up Public sector functionality.
+This topic suggests the first steps to setting up Public sector functionality.
 
 What should I do first?
 -----------------------
 
-Before you begin to adjust the settings and input your data, you should consider which modules you’ll need to set up for your Public sector organization. Public sector functionality is integrated with the following Dynamics 365 Finance modules and Microsoft products.
+Before you set up Public sector and begin adding your data, consider how you'll use this capability. Your consideration should identify the modules that must be set up to use Public sector functionality. Public sector integrates with the following: 
 
 ### Accounts payable
 
@@ -61,7 +61,7 @@ Budget analysis Budget analysis for revised budgets Budget analysis for actual e
 -   The **French regulatory** configuration subkey is selected.
 -   The **Use French Public sector accounting rules** option is selected on the **Budget parameters** page.
 
-Balance summary Commitment Commitment close Maintain mandats de paiement Maintain titres de recette Purchase agreement department access Purchase agreement tree Spending thresholds by category Vendor invoice payment hold history
+Balance summary Commitment close Maintain mandats de paiement Maintain titres de recette Purchase agreement department access Purchase agreement tree Spending thresholds by category Vendor invoice payment hold history
 
 ### General ledger
 

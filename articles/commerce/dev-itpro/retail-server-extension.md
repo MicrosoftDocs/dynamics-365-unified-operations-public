@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -30,11 +29,13 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Create a new Retail Server extension
+# Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)
 
 [!include [banner](../includes/banner.md)]
 
 This document explains how to create a new Commerce Scale Unit application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Commerce Scale Unit APIs isn't supported.
+
+This topic applies to Retail SDK version 10.0.10 and earlier.
 
 The Retail software development kit (SDK) includes only a few samples of end-to-end Commerce Scale Unit extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
 
@@ -62,6 +63,9 @@ The following illustration shows the flow of the extension.
 The following illustration shows the class structure of the extension.
 
 ![Commerce Scale Unit extension class diagram](media/RSClassFlow.png)
+
+> [!NOTE]
+> Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
 
 ### Steps
 

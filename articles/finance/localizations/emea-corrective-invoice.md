@@ -17,12 +17,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1174003
 ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
 # ms.search.industry: 
-ms.author: v-semaz
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

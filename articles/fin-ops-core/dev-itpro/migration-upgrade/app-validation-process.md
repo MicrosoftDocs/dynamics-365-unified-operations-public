@@ -3,7 +3,7 @@
 
 title: Upgrade from AX 2012 - Post-upgrade tasks
 description: This topic describes the tasks that you might have to perform in Finance and Operations apps after you complete a code and data upgrade from Microsoft Dynamics AX 2012.
-author: tariqbell
+author: LaneSwenka
 manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 

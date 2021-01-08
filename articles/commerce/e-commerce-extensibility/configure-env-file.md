@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -197,8 +197,12 @@ After you've finished changing the .env file, restart the Node server by using t
 
 ## Additional resources
 
+[Get started with e-commerce online extensibility development](sdk-getting-started.md)
+
 [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
 
 [Set up a development environment](setup-dev-environment.md)
+
+[Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)

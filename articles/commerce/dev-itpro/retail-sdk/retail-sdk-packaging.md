@@ -5,7 +5,7 @@ title: Create deployable packages
 description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 0fa3c8e7-49e4-417d-afe9-fa2055f6546f
@@ -46,9 +45,9 @@ This topic explains how to create a Commerce deployable package (which is a pack
 - Payment connector
 - Hybrid app (IOS and Android POS app)
 
-## Commerce deployable package
+## Retail deployable package
 
-A commerce deployable package is one combined package that contains all your customizations together with all the metadata that is required for deployment. You can use this deployable package to deploy your customizations to various environments. You can do the deployment by using the automated flow in LCS, or you can do it manually by using the scripts that are provided inside the package. This topic guides you through the process of generating the deployable package.
+Retail deployable package is one combined package that contains all your customizations together with all the metadata that is required for deployment. You can use this deployable package to deploy your customizations to various environments. You can do the deployment by using the automated flow in LCS, or you can do it manually by using the scripts that are provided inside the package. This topic guides you through the process of generating the deployable package.
 
 > [!IMPORTANT]
 > All customizations for the Commerce components are packaged as a single deployable package. Separate packages for individual components, such as Modern POS, Cloud POS, Commerce Scale Unit, CRT are not supported. You must package all extensions as a single deployable package, even if you must merge or combine extensions from independent software vendors (ISVs) or various partners.
@@ -57,7 +56,56 @@ A commerce deployable package is one combined package that contains all your cus
 
 For detailed information about the Retail SDK, see [Retail software development kit (SDK) architecture](retail-sdk-overview.md).
 
-### Steps to create a deployable package
+## Generate a separate package for Commerce Cloud Scale Unit (CSU)
+
+If you have only CSU extension (CRT, RS, and channel database) then you can generate the separate CSU package instead of generating the full Retail Deployable package, which includes both CSU and self-service packages (MPOS, CPOS, RSSU and HWS). 
+
+Retail SDK version 10.0.16 or later supports generating a separate package for Commerce Cloud Scale Unit. This package can be uploaded to **LCS > Asset library > Commerce Cloud Scale Unit Extensions** and deployed to CSU. 
+
+### Steps to generate a CSU package
+
+### Option 1
+
+1.	Clone or download the Scale unit packaging project from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
+
+Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](sdk-github.md).
+
+2.	Add the extension Commerce runtime, Retail server, and channel database extension project as a Project reference to the scale unit packaging project.
+3.	Build the scale unit project. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
+
+Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
+
+### Option 2
+
+1.	Create a new C# class library project with Target framework .NET Standard 2.0.
+2.	Add the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet package as a dependency to the project.
+
+Select the correct version of the Microsoft.Dynamics.Commerce.Sdk.ScaleUnit NuGet version according to your SDK/application version.
+
+Consume the Microsoft.Dynamics.Commerce.Sdk.ScaleUnit package from [https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json). You can add the package source location in the nuget.config file of your extension project file.
+
+```xml
+<packageSources>
+    <add key="dynamics365-commerce" value="https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json" />
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
+    </packageSources>
+```
+
+3.	Add the extension Commerce runtime, Retail server, and channel database extension projects as a Project reference to the scale unit packaging project.
+4.	Build the scale unit project. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
+
+The Commerce runtime extension config, Web.Config, will be generated by the scale unit packaging project. You do not have to create the extension config files manually.
+
+### Deploy the package to CSU
+
+1.	Go to https://lcs.dynamics.com/v2.
+2.	Sign in to LCS and open a project. Then, on the hamburger menu, select Asset library.
+3.	Select the Commerce **Cloud Scale Unit Extension** asset type, and then select the + button to upload the package. Provide a package name and description and then add the package file by selecting Add file.
+4.	After the upload is complete, select Confirm to complete the upload process.
+5.	The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
+6.	After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in Apply updates and extensions to Commerce Scale Unit (cloud).
+
+## Steps to create a combined Retail deployable package
 
 There are two ways to generate a commerce deployable package. You can use the Commerce build automation, or you can generate the package manually by using the build tools in the Retail SDK. This topic focuses on the manual method.
 
@@ -283,15 +331,14 @@ Some of the dependency packages and references have moved to NuGet packages to m
 3. In the next window, under **System variables**, select **Path** and click **Edit**.
 4. Add an entry for the folder where you would like to store the nuget.exe file or store the nuget.exe file in a folder that is already listed.
 
-## Generate a commerce deployable package
+## Generate a Retail deployable package
 
-To generate the commerce deployable package, open a command prompt windows for MSBuild. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
+To generate the Retail deployable package, open the MSBuild command prompt or Developer command prompt for Visual Studio 2017 (for SDK version lower than 10.0.11 use MSBuild command prompt or Developer command prompt for Visual Studio 2015). On the developer virtual machine, search for **msbuild** or **Developer command prompt for VS 2017** on the **Start** menu and navigate to the root of the SDK folder. Run the following command. MSBuild will find the dirs.proj file in the SDK root folder and build all the projects included in the dirs.proj (remove the sample projects include in the dirs.proj file). If you want to build your extension project, then update the dirs.proj file with your extension projects.
 
 ```Console
 msbuild /p:Configuration=Release
 ```
 
-You can also run the same command in the Microsoft Visual Studio 2015 developer command-line tool.
 
 ### Packages
 
@@ -300,8 +347,22 @@ After the build is completed, deployable packages are generated as a zip file (R
 > [!NOTE]
 > There won't be separate packages the various Commerce components. All the packages will be combined into one bundle package that is named RetailDeployablePackage.
 
-## Deploy the deployable packages
+## Deploy the packages
+
+1. Go to https://lcs.dynamics.com/v2.
+2. Sign in to LCS, and open a project. Then, on the hamburger menu, select Asset library.
+3. Select the **Software deployable package** asset type, and then select the **+** button to upload the package. Provide a package name and description and then add the package file by selecting **Add file**. 
+4. After the upload is complete, select **Confirm** to complete the upload process.
+5. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
+6. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in [Apply updates and extensions to Commerce Scale Unit (cloud)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/update-retail-channel).
 
 For information about how to deploy the packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../dev-itpro/deployment/install-deployable-package.md).
 
 LCS has a 300 MB limitation on the package size. If the package size is greater than 300 MB, LCS will not allow deploy the package. To reduce the size and deploy to RCSU, remove any of the self-service exes (ModernPOSSetup, StoreSystemSetup, or HardwareStationSetup installers). Unzip the package and remove any of the self-service exes and zip the package again. The self-service packages are not deployed to Cloud Commerce scale unit. Sync the self-service package to AOS following the steps in [Synchronize self-service installers in Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).
+
+## Upload self-service installers to LCS and synchronize to Dynamics 365 Commerce
+
+After the Retail deployable package is generated, go to the RetailSDK\Packages\RetailDeployablePackage\content.folder\RetailSelfService\Packages folder and upload all the self-service installers found in that folder to **LCS project > Asset library > Retail Self-service package**. Synchronize the package to Dynamics 365 Commerce by navigating to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters** and select the **Channel deployment** tab and then select **Check for package updates** to perform synchronization.
+
+For detailed information, see [Synchronize self-service installers in Dynamics 365 Commerce doc](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).
+

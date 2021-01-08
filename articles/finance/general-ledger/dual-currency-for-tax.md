@@ -5,7 +5,7 @@ title: Dual currency support for tax
 description: This topic explains how to extend dual currency accounting feature in tax domain and the impact for tax calculation and posting
 author: EricWang
 manager: Ann Beebe
-ms.date: 12/16/2019
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
+# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
 
@@ -50,8 +50,7 @@ For more information about dual currency, please refer to [Dual currency](dual-c
 
 As a consequence of support for dual currencies, two new features are available in feature management: 
 
-- Sales tax conversion (Release in version 10.0.9)
-- Tax settlement auto balance in reporting currency (Release in version 10.0.11)
+- Sales tax conversion (new in version 10.0.13)
 
 Dual currency support for sales taxes ensures that taxes are calculated accurately in the tax currency, and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
 
@@ -59,8 +58,8 @@ Dual currency support for sales taxes ensures that taxes are calculated accurate
 
 The **Sales tax conversion** parameter provides two options to convert tax amount from transaction currency to tax currency. 
 
-- Accounting currency: The path will be "Amount in transaction currency > Amount in accounting currency > Amount in tax currency". The accounting currency exhange rate type (configured in Ledger setup) will be used for the currency conversion.
-- Reporting currency: The path will be "Amount in transaction currency > Amount in reporting currency > Amount in tax currency". The reporting currency exhange rate type (configured in Ledger setup) will be used for the currency conversion.
+- Accounting currency: The path will be "Amount in transaction currency > Amount in accounting currency > Amount in tax currency". The accounting currency exchange rate type (configured in Ledger setup) will be used for the currency conversion.
+- Reporting currency: The path will be "Amount in transaction currency > Amount in reporting currency > Amount in tax currency". The reporting currency exchange rate type (configured in Ledger setup) will be used for the currency conversion.
 
 ### Example
 
@@ -115,7 +114,7 @@ This release will not include changes to reports and forms that show the tax amo
 
 ## Tax settlement auto-balance in reporting currency
 
-If the tax settlement is not balanced in the reporting currency for certain reason such as the sales tax conversion path is "Accounting currency", or the exchange rate change in a single tax settlement period, thebn the system will automatically generate accounting entries to adjust the tax amount variance and offset it against realized exchange gain/loss account, which is configured in Ledger setup.
+If the tax settlement is not balanced in the reporting currency for certain reason such as the sales tax conversion path is "Accounting currency", or the exchange rate change in a single tax settlement period, then the system will automatically generate accounting entries to adjust the tax amount variance and offset it against realized exchange gain/loss account, which is configured in Ledger setup.
 
 Using the the previous example to demonstrate this feature, suppose that the data in TAXTRANS table at the time of posting is as follows.
 

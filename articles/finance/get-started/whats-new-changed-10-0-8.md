@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope:  Operations
+# ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -43,7 +43,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Financial report retention policies](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
 
-- [Retained earnings calculation enhancements for financial reporting when using currency translation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
+- [Retained earnings calculation enhancements for financial reporting when using currency translation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
 
 - [Purchase agreement enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
 

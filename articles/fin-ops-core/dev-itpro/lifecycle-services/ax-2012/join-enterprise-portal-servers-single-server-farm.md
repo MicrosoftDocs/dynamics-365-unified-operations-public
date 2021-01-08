@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 27431
 ms.assetid: 05316e9d-818e-4f4b-901c-2e67fe8edfd1
@@ -109,7 +108,9 @@ The following image shows the process for joining EP servers into a single serve
 8.  Export the configuration by running the **Export-CacheClusterConfig** command. Specify a name for the file. This file can be saved anywhere on the local computer.
 9.  Open the file that you just created, and add the following configuration to the **&lt;advancedProperties&gt;** section.
 
-        <transportProperties maxBufferSize="1000000000" />
+    ```xml
+    <transportProperties maxBufferSize="1000000000" />
+    ```
 
 10. Import the configuration by running the following command: **Import-CacheClusterConfig c:\\newConfig.xml** When you're asked whether you want to continue, enter **Y**.
 11. Run the **Start-CacheCluster** command to start the cache.
@@ -125,8 +126,7 @@ The following image shows the process for joining EP servers into a single serve
     1.  Replace every instance of “Host\_server\_name” with the name of an EP server.
     2.  Replace “default” with the name that you specified when you ran the **New-Cache** command.
 
-    <!-- -->
-
+        ```xml
         <!-- velocity -->
         <dataCacheClient dataCacheServiceAccountType="DomainAccount">
         <localCache isEnabled="false" />
@@ -143,6 +143,7 @@ The following image shows the process for joining EP servers into a single serve
         <AppFabricCaching CacheName="default" />
         </Microsoft.Dynamics>
         <!-- velocity -->
+        ```
 
 15. Repeat steps 12 through 14 on every EP server that is deployed by LCS.
 16. On the EP-01 server, in a Windows PowerShell window, run the **stop-cachecluster** command.

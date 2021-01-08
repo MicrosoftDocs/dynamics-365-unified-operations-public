@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28251
 ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
@@ -106,7 +105,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 
 **ArrangeMethod**=**HorizontalWrap** and **Columns**=**1**
 
-|     |     |
+| &npsp; | &npsp;    |
 |-----|-----|
 | 1 2 |     |
 | 3 4 |     |
@@ -114,7 +113,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 
 **ArrangeMethod**=**HorizontalWrap** and **Columns**=**2**
 
-|     |     |
+|  &npsp;   |  &npsp;   |
 |-----|-----|
 | 1 2 | 6 7 |
 | 3 4 | 8 9 |
@@ -122,7 +121,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 
 **ArrangeMethod**=**HorizontalWrap** and **Columns**=**Fill** For this example, we assume that only three lines of items can fit in the container height.
 
-|     |       |       |
+|  &npsp;   |  &npsp;     |  &npsp;     |
 |-----|-------|-------|
 | 1 2 | 7 8   | 13 14 |
 | 3 4 | 9 10  | 15    |
@@ -132,7 +131,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 
 **ArrangeMethod**=**Vertical** and **Columns**=**1**
 
-|     |     |
+|  &npsp;   |  &npsp;   |
 |-----|-----|
 | 1   |     |
 | 2   |     |
@@ -141,7 +140,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 
 **ArrangeMethod**=**Vertical** and **Columns**=**2**
 
-|     |     |
+|  &npsp;   | &npsp;    |
 |-----|-----|
 | 1   | 5   |
 | 2   | 6   |
@@ -150,7 +149,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 
 **ArrangeMethod**=**Vertical** and **Columns**=**Fill** For this example, we assume that only three lines of items can fit in the container height.
 
-|     |     |     |
+|  &npsp;   |  &npsp;   |  &npsp;   |
 |-----|-----|-----|
 | 1   | 4   | 7   |
 | 2   | 5   | 8   |
@@ -158,7 +157,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 
 **ArrangeMethod**=**Vertical** and **Columns**=**Fill** on a FastTab For this example, we assume that the width of the FastTab can fit four columns.
 
-|     |     |     |     |
+|  &npsp;   |  &npsp;   |  &npsp;   |  &npsp;   |
 |-----|-----|-----|-----|
 | 1   | 3   | 5   | 7   |
 | 2   | 4   | 6   | 8   |

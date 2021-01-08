@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -168,6 +168,8 @@ You can then access the results of the data action in your module.
 To get more details on the config section, see [Add module configuration fields](add-module-config-fields.md).
 
 ## Additional resources
+
+[Modules overview](modules-overview.md)
 
 [Module React component file](module-react-file.md)
 

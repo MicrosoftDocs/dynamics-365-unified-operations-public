@@ -17,12 +17,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
+#ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BriShoo
+ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: 
 
@@ -81,7 +81,7 @@ Once the B2C tenant has been created, you will create a B2C application within t
 
 To create the B2C application, follow these steps.
 
-1. In the Azure portal, select **Applications** and then select **Add**.
+1. In the Azure portal, select **Applications(Legacy)** and then select **Add**.
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API**, select **Yes**.
 1. For **Allow implicit flow**, select **Yes** (the default value).
@@ -349,15 +349,15 @@ An optional, secondary administrator account can be added in the **Users** secti
 
 [Configure your domain name](configure-your-domain-name.md)
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
-[Associate an online site with a channel](associate-site-online-store.md)
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Upload URL redirects in bulk](upload-bulk-redirects.md)Associate a Dynamics 365 Commerce site with an online channel
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
 

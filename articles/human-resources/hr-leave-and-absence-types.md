@@ -18,7 +18,7 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -61,7 +61,9 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 8. Under **Restrict access to selected roles**, choose whether you want to restrict access. Then select the security roles under **Security roles for this leave type**. The security roles are defined in the workflow you selected under **Workflow ID** earlier in this procedure.
 
-9. Under **Suspension relations**, choose if you want to have this leave type either suspend another leave type or be suspended by another leave type. When a leave of absence request is submitted for the suspending leave type, a leave suspension will automatically be created for the suspended leave type. 
+9. Under **Calendar color**, choose what color to display on leave and absence calendars for this leave type. 
+
+10. Under **Suspension relations**, choose if you want to have this leave type either suspend another leave type or be suspended by another leave type. When a leave of absence request is submitted for the suspending leave type, a leave suspension will automatically be created for the suspended leave type. 
 
 10. Select **Save**.
 

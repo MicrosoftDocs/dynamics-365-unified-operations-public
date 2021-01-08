@@ -9,7 +9,7 @@ ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
-ms.technology: Dynamics 365 Human Resources;PowerApps;Flow;Common Data Service
+ms.technology:
 # optional metadata
 
 ms.search.form: 
@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core;Experience Apps;Human Resources
+# ms.search.scope: Core;Experience Apps;Human Resources
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Extend with Power Apps and Power Automate
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This article describes some examples of extensibility scenarios for Microsoft Dynamics 365 Human Resources that use Microsoft Power Apps and Microsoft Power Automate. You can import the solution package that is associated with each example into your Power Apps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
 > [!IMPORTANT]
@@ -41,13 +43,13 @@ This article describes some examples of extensibility scenarios for Microsoft Dy
 - To import packages, users must have the **Environment Maker** permission.
 - To export or import apps, users must have a Power Apps Plan 2 license or a Power Apps Plan 2 trial license.
 
-## Integration with Office 365, Power Automate
+## Integration with Microsoft 365, Power Automate
 
-The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Human Resources to extract employee identification types. Managers can check expiration dates of employee ID types. They can also send an email reminder if the employee ID type is expiring. Power Automate integrates with Power Apps to send this reminder. Confirmation will be sent back to Power Apps from Power Automate when the reminder is sent. Identification types include driver's license, passport, and other acceptable forms of ID.
+The **Integration with Microsoft 365** app can be used to extract team information for signed-in users from Microsoft 365. It references workers in Human Resources to extract employee identification types. Managers can check expiration dates of employee ID types. They can also send an email reminder if the employee ID type is expiring. Power Automate integrates with Power Apps to send this reminder. Confirmation will be sent back to Power Apps from Power Automate when the reminder is sent. Identification types include driver's license, passport, and other acceptable forms of ID.
 
 You can extend this app for other scenarios. For example, you can use it to show team vacation information, calendar events, and any team-specific events.
 
-To download the **Integration with Office 365, Power Automate** app, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
+To download the **Integration with Microsoft 365, Power Automate** app, go to [Integration with Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
 
 ## Power Automate – SQL Connect and execute
 

@@ -1,8 +1,8 @@
 ## Asset management asset types to msdyn_customerassetcategories
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Finance and Operations apps | Map type | model-driven apps in Dynamics 365 | Default value
+Finance and Operations apps | Map type | Customer engagement apps | Default value
 ---|---|---|---
 LIFECYCLEMODELID | = | msdyn_lifecyclemodel.msdyn_assetlifecyclemodel_id | 
 MAINTENANCEASSETTYPEID | = | msdyn_maintenanceassettypeid | 

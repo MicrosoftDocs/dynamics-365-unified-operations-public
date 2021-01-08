@@ -5,7 +5,7 @@ title: System requirements for a Dynamics 365 Commerce online extensibility deve
 description: This topic lists the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment.
 author: samjarawan
 manager: annbe
-ms.date: 03/09/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -47,14 +47,17 @@ We recommend that you have 8 gigabytes (GB) or more of RAM and at least 20 GB of
 The online extensibility development environment can preview customizations in any of the following web browsers:
 
 * Google Chrome (up to the current version minus 1)
-* Internet Explorer 11
 * Mozilla Firefox (up to the current version minus 1)
 * Microsoft Edge (up to the current version minus 1)
 
 ## Additional resources
 
+[Get started with e-commerce online extensibility development](sdk-getting-started.md)
+
 [Set up a development environment](setup-dev-environment.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
+
+[Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)

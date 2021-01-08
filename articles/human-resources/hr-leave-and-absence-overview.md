@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Overview
-description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. 
+title: Leave and absence overview
+description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self-service page for employees to request time off. 
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/01/2020
@@ -18,7 +18,7 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Overview
+# Leave and absence overview
 
-Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. Analytics helps your organization measure and monitor leave balances and usage for your leave plans.
+Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.
 
 ## Set up Leave and absence
 
@@ -56,42 +56,6 @@ Before creating leave plans for your workers, you need to create leave and absen
 
 Your employees can submit time off requests, and you can manage them, in the **Employee self service** workspace.
 
-- [Request time off](hr-employee-self-service-request-time-off.md)
-- [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
-
-## Leave and absence known issues
-
-### Rounding precision
-
-You can't set **Rounding precision** when you set **Rounding type**. You can only set **Rounding precision** by using the **Leave and absence type** entity. 
-
-1. From **Leave and absence types**, select **Open in Excel** to open the **Leave and absence type** entity.
-
-2. After the file opens and is enabled, select **Design**.
-
-3. On the **Leave and absence type** table, select the pencil option to edit.
-
-4. Select **RoundingPrecision** and **RoundingType**, and then select **Add** to add to the list of fields.
-
-5. Select **Update**, and then select **Done**.
-
-6. Enter or select the **Rounding type** for each leave type if they haven't been set already. 
-
-7. Enter the **Rounding precision** for the appropriate types.
-
-8. Select **Publish** to push the changes into Human Resources.
-
-## Leave and absence preview features
-
-You can try out new Leave and absence preview features in a **Sandbox** environment. For information about turning on preview features, see [Manage features](hr-admin-manage-features.md). 
-
-[!include [banner](includes/preview-feature.md)]
-
-The preview features include:
-
-- **Leave accrual per company or plan** - You can run the accrual process either for all companies or for a single company. You can also run the accrual process for a specific leave and absence plan for a specific company. 
-
-- **Buy leave** - You can enable and create buy leave policies for employees to submit buy requests. Employees can submit buy requests and have balances automatically updated to reflect the request.  
-
-- **Add attachments to approved leave requests** - You can add an attachment to a leave request that's already been approved. 
+[Request time off](hr-employee-self-service-request-time-off.md)
+[Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
 

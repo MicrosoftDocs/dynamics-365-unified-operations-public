@@ -17,12 +17,12 @@ ms.technology:
 audience: IT Pro
 # ms.devlang:
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
+#ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: India
 ms.search.industry: Retail
-ms.author: v-pakris
+ms.author: epopov
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
 ---

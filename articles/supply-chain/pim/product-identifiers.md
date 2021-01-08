@@ -22,13 +22,15 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 
 ---
 
 # Product identifiers
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,7 +46,7 @@ In many cases, the product number isn't originally created in Dynamics 365 Suppl
 
 When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier has a maximum of 15 characters. Ideally, it has fewer than 10 characters and includes no more than five classifying characters. You can also use search names to enable quick searches. A search name is an additional name that represents the classifications of a product.
 
-When you use Common Data Service, the product number in Supply Chain Management is also the product number in the Common Data Service. Product variants are synchronized to the Common Data Service as distinct products.
+When you use Microsoft Dataverse, the product number in Supply Chain Management is also the product number in Microsoft Dataverse. Product variants are synchronized to Dataverse as distinct products.
 
 ## Item number and product dimensions
 
@@ -167,7 +169,7 @@ The following table provides an overview of the results of import and manual cre
 
 ## Product entity identifier (Export all product identifiers)
 
-The product entity identifier model was created to enable version 1.0 of the CDS to be provisioned with all identifiers that are used to refer to a product. To simplify this task, all identifiers are aggregated into one global identifier table, so that they can be exported as one model. Note that this version of the CDS doesn't use the product identifiers model. Therefore, the **Product entity common data service identifier entity** entity and this process have limited practical use and will likely be subject to change in the future.
+The product entity identifier model was created to enable version 1.0 of Dataverse to be provisioned with all identifiers that are used to refer to a product. To simplify this task, all identifiers are aggregated into one global identifier table, so that they can be exported as one model. Note that this version of Dataverse doesn't use the product identifiers model. Therefore, the **Product entity common data service identifier entity** entity and this process have limited practical use and will likely be subject to change in the future.
 
 The product identifier table is a global table that is populated from all reference tables of the Main legal entity through a recurring batch job. You must select a legal entity and a product category hierarchy as the definition of the global product master scope. Generation of the global product identifier table is limited to products that are released to the selected legal entity and products that are members of the product hierarchy that is selected for the **Common data service** role in the product category hierarchy.
 
@@ -175,7 +177,7 @@ This process assumes that product master data is primarily maintained in one cen
 
 Follow these steps to configure the environment.
 
-1. Select the category hierarchy for the CDS. On the **Category hierarchy role associations** page, if no hierarchy is associated with the **Common data service** role, you must create a new association. Select the **Common data service** role, and then associate the category hierarchy that represents the product portfolio that should be synchronized to the CDS.
+1. Select the category hierarchy for Dataverse. On the **Category hierarchy role associations** page, if no hierarchy is associated with the **Common data service** role, you must create a new association. Select the **Common data service** role, and then associate the category hierarchy that represents the product portfolio that should be synchronized to Dataverse.
 2. Select the legal entity for global product master data. On the **Product information management parameters** page, on the **Product attributes** tab, select the master company where the product and item identifiers are primarily maintained.
 3. Define the identifier code types and codes that should be exported. Go to **Product information management** &gt; **Setup** &gt; **Product identifier codes**. To generate the identifier code types, select **Generate codes**. A code type entry is generated for each type for identifier that is found in the selected legal entity.
 

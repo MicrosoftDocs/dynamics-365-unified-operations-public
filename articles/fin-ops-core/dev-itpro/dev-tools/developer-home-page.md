@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
 ms.search.region: Global
@@ -97,6 +96,11 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Add license files to a deployable package in Azure Pipelines](pipeline-add-license-package.md)
 - [Create deployable packages in Azure Pipelines](pipeline-create-deployable-package.md)
 - [X++ model-versioning in Azure Pipelines](pipeline-model-version.md)
+- [Download assets by using Azure Pipelines](pipeline-asset-download.md)
+- [Upload assets by using Azure Pipelines](pipeline-asset-upload.md)
+- [Deploy assets by using Azure Pipelines](pipeline-deploy-asset.md)
+- [Create a Lifecycle Services (LCS) connection in Azure Pipelines](pipeline-lcs-connection.md)
+- [Update a legacy pipeline in Azure Pipelines](pipeline-msbuild-update.md)
 
 ## X++ programming language
 

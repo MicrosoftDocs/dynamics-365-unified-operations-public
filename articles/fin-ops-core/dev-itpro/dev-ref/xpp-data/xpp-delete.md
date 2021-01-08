@@ -2,7 +2,7 @@
 # required metadata
 
 title: Delete data
-description: This topic describes the delete method and doDelete method in the X++ language.
+description: This topic describes the delete and doDelete methods in the X++ language.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/16/2020
@@ -18,12 +18,11 @@ ms.technology:
 audience: Developer
 # ms.devlang:
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm:
 ms.custom: 150273
 ms.search.region: Global
 # ms.search.industry:
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 
@@ -33,11 +32,11 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-You can use SQL statements, either interactively or within source code, to delete one or more rows from tables stored in the database.
+You can use SQL statements, either interactively or in source code, to delete one or more rows from tables that are stored in the database.
 
-+ **[delete method](#delete-method)**: Deletes one row at a time.
-+ **[doDelete method](#do-delete-method)**: Deletes one row at a time.
-+ **[delete\_from statement](#delete-from-statement)**: Deletes multiple rows at the same time. By using the **delete\_from** statement, you reduce communication between the application and the database, and therefore help increase performance. In some situations, this set–based operation can fall back to a record-by-record operation. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
++ **[delete method](#delete-method)** – Delete one row at a time.
++ **[doDelete method](#do-delete-method)** – Delete one row at a time.
++ **[delete\_from statement](#delete-from-statement)** – Delete multiple rows at the same time. By using the **delete\_from** statement, you reduce communication between the application and the database. Therefore, you help increase performance. In some situations, this set-based operation can fall back to a record-by-record operation. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
 ## <a id="delete-method"></a>delete method
 
@@ -45,7 +44,7 @@ The **delete** method deletes the current record from the database. To use this 
 
 The **delete** method can be overridden. For example, you might want to add extra validation before records are deleted. If you override the **delete** method, you can run the original (base) version of the **delete** method by calling the **doDelete** method. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
 
-In the following example, all records in the NameValuePair table that satisfy the **where** clause (that is, all records where the value of the **Name** field is equal to **Name1**) are deleted from the database. One record is deleted at a time.
+In the following example, all records in the NameValuePair table that satisfy the **where** clause (that is, all records where the value of the **Name** field equals **Name1**) are deleted from the database. One record is deleted at a time.
 
 ```xpp
 ttsBegin;
@@ -59,7 +58,7 @@ ttsBegin;
 ttsCommit;
 ```
 
-The following example deletes records from the **LedgerJournalTrans** table, and updates the associated number sequence.
+The following example deletes records from the LedgerJournalTrans table and updates the associated number sequence.
 
 ```xpp
 int counter = 0;
@@ -87,23 +86,23 @@ ttsCommit;
 
 ## <a id="do-delete-method"></a>doDelete method
 
-Like the **delete** table method, the **doDelete** table method deletes the current record from the database. Use the **doDelete** method if the **delete** table method has been overridden, and you want to run the original (base) version of the **delete** method instead of the overridden version. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
+Like the **delete** table method, the **doDelete** table method deletes the current record from the database. Use the **doDelete** method if the **delete** table method has been overridden, and you want to run the original (base) version of that method instead of the overridden version. Therefore, a call to the **doDelete** method is equivalent to a call to **super()** in the **delete** method.
 
 > [!WARNING]
-> Calling **doDelete** skips all logic, including database event handlers (for example **onDeleting** and  **onDeleted**), chain-of-command  **onDelete()**, and the **delete()** call itself. It's generally considered bad practice to use **doDelete** and it's not recommended.
+> A call to **doDelete** skips all logic, including database event handlers (for example, **onDeleting** and **onDeleted**), chain-of-command **onDelete()**, and the **delete()** call itself. It's generally considered bad practice to use **doDelete**, and we don't recommend that you use it.
 
 ## <a id="delete-from-statement"></a>delete\_from statement
 
 The **delete\_from** operator is a record set–based operator that removes multiple records at the same time. This approach can be more efficient and faster than an approach that uses the **delete** method in a loop to delete one record at a time. If you've overridden the **delete** method, the system interprets the **delete\_from** statement into code that calls the **delete** method one time for each row that is deleted.
 
-The following example deletes all the records in the **NameValuePair** table where the **Name** column is **Name1**.
+The following example deletes all records in the NameValuePair table where the value in the **Name** column is **Name1**.
 
 ```xpp
 NameValuePair nameValuePair;
 delete_from nameValuePair where nameValuePair.Name == 'Name1';
 ```
 
-In contrast to the previous example, the following example is inefficient, because it issues a separate SQL **delete** call to the database server for every record. The **delete** method never deletes more than one record per call.
+In contrast to the previous example, the following example is inefficient, because it issues a separate SQL **delete** call to the database server for each record. The **delete** method never deletes more than one record per call.
 
 ```xpp
 // Example of inefficient code.
@@ -119,9 +118,9 @@ ttsCommit;
 
 ### A delete operation that has an inner join
 
-Inner joins aren't supported on the **delete\_from** statement. Therefore, you can't use the unmodified **join** keyword on the **delete\_from** statement. However, you can logically accomplish an inner join by using other techniques.
+Inner joins aren't supported on the **delete\_from** statement. Therefore, you can't use the unmodified **join** keyword on the **delete\_from** statement. However, you can logically perform an inner join by using other techniques.
 
-The following example shows the recommended way of using the delete_from method and inner joins. The code example is relatively efficient. It issues a separate **delete\_from** statement for each loop iteration. However, each **delete\_from** statement can delete multiple records, a subset of all the records that the job deletes.
+The following example shows the recommended way to use the **delete\_from** method and inner joins. This example is relatively efficient. It issues a separate **delete\_from** statement for each loop iteration. However, each **delete\_from** statement can delete multiple records (a subset of all the records that the job deletes).
 
 ```xpp
 MyWidgetTable tabWidget; // extends xRecord.

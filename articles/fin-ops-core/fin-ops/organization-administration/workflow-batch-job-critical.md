@@ -3,7 +3,7 @@
 
 title: Configure the Workflow Message Processing batch job as critical
 description: Configure the workflow Message Processing batch job as critical
-author: aneesmsft
+author: ChrisGarty
 manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
@@ -17,13 +17,12 @@ ms.search.form:  BatchJob
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 9dc45189-6e7e-4207-ad78-dbbb644dd1ce
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aneesa
+ms.author: cgarty
 ms.search.validFrom: 2017-05-19
 ms.dyn365.ops.version: Platform update 6
 ---

@@ -19,7 +19,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -69,3 +69,5 @@ After custom cropping is completed, image modifications will take effect almost 
 [Upload files](dam-upload-files.md)
 
 [Customize image focal points](dam-custom-focal-point.md)
+
+[Upload and serve static files](upload-serve-static-files.md)

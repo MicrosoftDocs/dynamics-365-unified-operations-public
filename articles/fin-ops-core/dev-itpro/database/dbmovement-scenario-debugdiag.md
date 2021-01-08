@@ -5,7 +5,7 @@ title: Debug a copy of the production database
 description: This topic explains a debugging and diagnostics scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,11 +18,10 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 
@@ -42,7 +41,7 @@ In this tutorial, you will learn how to:
 > * Update your developer environment so that it connects to the UAT database.
 > * Set a breakpoint, and start to debug the data.
 
-As an example of this scenario, a customer who has already gone live wants to debug a recent copy of production transactions from his or her development environment. In this way, the customer will be able to debug specific transactions that are stuck, or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live wants to debug a recent copy of production transactions from the development environment. In this way, the customer will be able to debug specific transactions that are stuck, or develop new features and reports by using realistic datasets.
 
 ## Prerequisites
 
@@ -55,24 +54,11 @@ To do a refresh operation, you must have your production environment deployed, o
 
 This refresh operation overwrites the UAT environment with the latest copy of the production database. To complete this step, follow the instructions in [Refresh for training purposes](dbmovement-scenario-general-refresh.md).
 
-## Add your IP address to a safe list
+## Enable database access
 
 By default, all Sandbox Standard Acceptance Test environments use Microsoft Azure SQL Database as their database platform. The databases for these environments are protected by firewalls that restrict access to the Application Object Server (AOS) with which it was originally deployed.
 
-However, an exception can be made so that you can connect your developer environment (cloud-hosted or Microsoft-managed) directly to the UAT database. To connect your developer environment directly to the UAT database, you must obtain your IP address on the developer virtual machine (VM).
-
-On the sandbox AOS VM, open Microsoft SQL Server Management Studio (SSMS), and connect to the database by using the information that is available from the environment details page in Microsoft Dynamics Lifecycle Services (LCS). Find the username record for **axdbadmin**, and note the server and database in the format **{sqlServer\\sqlDatabase}**.
-
-In SSMS, enter the SQL Server, username, and password. On the **Connection Properties** tab, explicitly enter the database name from the **axdbadmin** record in LCS.
-
-After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
-
-```sql
--- Create database-level firewall setting for IP a.b.c.d 
-EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment', 'a.b.c.d', 'a.b.c.d'; 
-```
-
-Back in your developer environment, open SSMS, and try to connect by using the same **axdbadmin** credentials against the UAT database. Verify that you can connect before you continue with the next steps.
+To connect to the database, follow the instructions in [Enable just-in-time access](database-just-in-time-JIT-access.md).
 
 > [!NOTE]
 > Every time that a refresh is done, the firewall safe list is reset. You must add your DevTest environments back to this database when they are required in the future.
@@ -103,6 +89,10 @@ Finally, open a web browser, go to the URL of your DevTest environment, and veri
 ## Debug transactions in the DevTest environment
 
 Now that your environment is correctly reconfigured, you can open Visual Studio and set a breakpoint in the application code that best meets your needs. Note that users in the UAT environment aren't affected while you debug in the DevTest environment.
+
+### Debugging batch
+
+For scenarios where you need to debug batch jobs, on the debugging DevTest machine, you may need to restart the batch service before it will show up as an option to attach the debugger from Visual Studio. In addition, it may also be helpful to isolate this DevTest machine in to its own batch group to ensure that any jobs that you want to debug will run on the DevTest machine.
 
 ## Best practices
 

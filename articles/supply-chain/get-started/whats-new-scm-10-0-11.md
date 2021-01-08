@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.11. This version has a build number of 10.0.464 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.11. This version has a build number of 10.0.464 and is available as follows:
 
 - **Preview release:** April 2020
 - **General availability (self-update):** May 2020
@@ -44,11 +44,16 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 - [Inventory on-hand report storage](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [License plate receiving enhancements for the warehouse app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) - For more information, see [License plate receiving via the warehouse app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
-- [Line reservation enhancements for the batch number reservation form](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) - For more information, see [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
+
+- [License plate receiving enhancements for the warehouse app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - For more information, see [License plate receiving via the warehouse app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+
+- [Line reservation enhancements for the batch number reservation form](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - For more information, see [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md).
+
 - [New data entities for the manufacturing area](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Over receipt of load quantities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - For more information, see [Warehouse handling of inbound loads for purchase orders](../warehousing/inbound-load-handling.md).
-- [Report as finished on batch numbers from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md)
+
+- [Over receipt of load quantities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - For more information, see [Warehouse handling of inbound loads for purchase orders](../warehousing/inbound-load-handling.md).
+
+- [Report as finished on batch numbers from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - For more information, see [Report as finished from the job card device](../production-control/report-finished-job-device.md).
 
 ## Additional resources
 

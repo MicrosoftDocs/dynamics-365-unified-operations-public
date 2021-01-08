@@ -5,7 +5,7 @@ title: Device management implementation guidance
 description: This topic is intended for people who implement functionality that is related to device management in a commerce environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 author: jashanno
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -53,7 +53,7 @@ Commerce already provides the basic requirements for device management. As you p
 
 ## Implementation considerations
 
-This section describes some things that you should consider as you plan to implement features that are related to device management in your commerce environment.
+This section describes some things that you should consider as you plan to implement features that are related to device management in your retail store and distribution locations.
 
 ### Generate the physical topology
 

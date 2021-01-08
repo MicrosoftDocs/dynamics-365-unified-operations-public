@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -72,6 +72,8 @@ export default ProductFeature;
 Configuration properties that are defined in the module definition file (MODULE\_NAME.definition.json) and data properties file (MODULE\_NAME.data.ts) can be accessed in the module view file by using the **this.props.config.\*** and **this.props.data.\*** application programming interface (API) properties.
 
 ## Additional resources
+
+[Modules overview](modules-overview.md)
 
 [Module definition file](module-definition-file.md)
 

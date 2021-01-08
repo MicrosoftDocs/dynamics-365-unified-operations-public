@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Vendor invoice automation
+title: Invoice automation for scanned documents
 description: This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 author: abruer
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -26,7 +26,7 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
-# Vendor invoice automation
+# Invoice automation for scanned documents
 
 [!include [banner](../includes/banner.md)]
 

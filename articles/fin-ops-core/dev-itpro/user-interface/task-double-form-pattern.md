@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14651
 ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
@@ -43,7 +42,7 @@ This type of form has previously been used when you wanted to present parent/chi
 
 ## Wireframe
 
-[![Task Double form wireframe](./media/patterntaskdouble.png)](./media/patterntaskdouble.png)[](./media/taskdouble1.png)
+![Task Double form wireframe](./media/patterntaskdouble.png)]
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:

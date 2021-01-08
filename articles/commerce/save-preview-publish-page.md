@@ -17,7 +17,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -43,9 +43,9 @@ When you save a page, the changes are visible only to you. The save operation is
 
 ## Preview a page
 
-The authoring tool offers two kinds of preview features: a "what you see is what you get" (WYSIWYG) preview pane in the page editor and a separate preview window.
+The authoring tool offers two kinds of preview features: visual page builder, which is a "what you see is what you get" (WYSIWYG) preview pane in the page editor, and a separate preview window.
 
-While you're using the page editor, a "what you see is what you get" (WYSIWYG) preview appears in the center pane. This preview is automatically updated whenever you save the page. You can also manually update it by selecting **Refresh** on the command bar. The WYSIWYG preview renders the page just as the site's users will see it, but authoring helpers are rendered on top of it.
+While you're using the page editor, a "what you see is what you get" (WYSIWYG) preview appears in the center pane. This preview is automatically updated whenever you save the page. You can also manually update it by selecting **Refresh** on the command bar. The preview renders the page just as the site's users will see it, but authoring helpers are rendered on top of it.
 
 When you've finished modifying the page, you might want to preview it to see what customers will see. To preview a page, select **Preview** on the command bar. The preview will appear in a separate browser window. The page in the preview window is rendered just as the site's user will see it. You can resize the window to make sure that responsive modules are correctly rendered in all view ports.
 

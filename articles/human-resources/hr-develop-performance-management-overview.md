@@ -5,7 +5,7 @@ title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
+# ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
@@ -43,6 +43,7 @@ As the following diagram shows, there are three pages that help you manage the p
 The following diagram shows how the primary components of performance management are related to each other. [![Performance process overview](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## Performance journal
+
 As an employee, before you complete your review, you often gather information about activities or events that contributed to your success during a review period. The performance journal is the place where you can document those activities and events. In addition, you can create future activities that must be completed to help you accomplish a goal, meet the requirements of a development plan, or meet a performance commitment. Performance journals aren’t required in order to create goals or performance reviews. 
 
 There are two versions of the performance journal: the employee version, which is accessible through the **Employee self-service** workspace (**ESS**), and the manager version, which is accessible through the **Manager self-service** workspace (**MSS**). Employees can create journals for themselves and can choose to share them with their manager. Managers can create journals for their team and can choose to share them with their employees. 
@@ -64,6 +65,7 @@ You can also link the performance journal to an external website by storing the 
 The performance journal contains an additional feature that is named Feedback. When you click on **Send feedback**, you can select an employee and provide feedback to that employee via email. The message is sent to the employee who is receiving the feedback, that employee’s manager, the employee who is sending the feedback, and that employee’s manager. A performance journal entry is created for each person who receives the feedback message.
 
 ## Goals
+
 The **performance goals** page helps you track the goals that you and your manager have created for you. You can create any number of goals, and those goals can span different periods and performance reviews. You can also create simple or complex goals, depending on the amount of information that you want to enter about the goal. Goals aren’t required for performance reviews. 
 
 A basic goal must include the following information:
@@ -86,6 +88,7 @@ If you want to attach a document to the goal, such as a certificate of completio
 You can create a template from a goal and then use the template to create new goals that are based on the template. When you create a template from a goal, the description, topics, and target measurements are saved. However, all actual measurements, completion dates, and topic comments are removed.
 
 ## Performance reviews
+
 Performance reviews are more formally known as discussions. They are now flexible enough to support continuous feedback, development plans and more formal reviews. You can quickly create small meetings for two people, such as a one-on-one meeting, or you can build a more complex review that matches the review process of your company. 
 
 A meeting such as a one-on-one is a simple review, and requires a short name, a longer description of the contents of the meeting, and the date of the meeting. A simple review includes the same information, plus the review period that is being discussed. Managers will also see the name of the person that the review is created for. 
@@ -98,7 +101,11 @@ You can create new reviews that are based on templates that you’ve created. Fo
 
 To print reviews, select the **Print review** button. If you don't see the button on the **Review** page, ensure you have enabled the feature in the **Feature management** workspace. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
+> [!NOTE]
+> The ability to print performance reviews is only available in Human Resources. It's not available in Dynamics 365 Finance.
+
 ## Components you can include in performance reviews
+
 You can include a number of types of information in performance reviews. They include review detail, measurements, activities, ratings, sign-offs and attachments.
 
 ### Review detail
@@ -125,24 +132,30 @@ The employee and/or the manager will be listed on the review based on the review
 
 You can attach a document to a review in the **Attachments** section of the **reviews** page. A document viewer is provided so that you can quickly view the contents of any attached document.
 
-### 
-
 ## Workflow for performance management
+
 You can use the Worker Review workflow to control the approval of a review. You can also choose to skip the automated workflow and manually change the status of the review, which allows you to create simpler documents like a one-on-one without having to use the workflow process. Access to a review is controlled by the status of the review.
 
 1.  When the review is created, it’s set to the **Not started** status. The review is editable by anyone.
+
 2.  Once the employee presses the **Begin review** button, the review is set to the **In progress** status. The employee then begins to add content. At this point, the manager can no longer view the review document.
+
 3.  The employee changes the status to **Ready for review**.
+
 4.  The manager can add comments and ratings. At this point, only the manager can see the review.
+
 5.  The manager changes the status to **Final review**, so that both the manager and the employee can see the review and discuss it. You can specify in the parameters whether or not the review can be edited at this point. This step is also optional if the manager simply wants to share the review with the employee and mark it as **Complete** when they are finished.
+
 6.  After the sign-offs are completed, the status is changed to **Complete**. At this point, the review can’t be changed.
 
 The Worker Review workflow has two elements:
 
 1.  Approve review. Add this element to control the status change from **In progress** to **Ready for review**. Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1.
+
 2.  Final review. Add this element to control the status change from **Ready for review** to **Final review**. Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1 if you want the manager to approve the final review. Change the assignment to Workflow user if you want the employee to approve it. If you want both the manager and employee to approve it, add two steps in the workflow and make the appropriate assignment for each step in the order that you want the approvals to follow.
 
 ## Setup
+
 There are three pages that help you set up information that is required in order to complete the performance process: the **measurements** page,  the **performance journal source types** page and the **review types** page.
 
 ### Measurements
@@ -156,6 +169,3 @@ Performance journal source types describe where the performance journals come fr
 ### Review types
 
 Performance review types help you control the behavior of a review. You can enable or disable workflow for a review. If the review does not use workflow, you can define the default status that will be used when the review is created. You can also decide if the employee, the manager, or both will be required to sign off on the review.
-
-
-

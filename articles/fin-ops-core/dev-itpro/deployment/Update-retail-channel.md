@@ -5,7 +5,7 @@ title: Apply updates and extensions to Commerce Scale Unit (cloud)
 description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -56,7 +55,7 @@ To apply an extension to a Commerce Scale Unit, run the following steps:
 > [!NOTE]
 > You must first upload the Commerce deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Commerce deployment setup page** in LCS.
 
-Both **Apply updates** and **Apply extension** operations will involve a downtime of up to 1 hour. During this time, the following will occur:
+Both **Apply updates** and **Apply extension** operations will involve a downtime, which may last up to 1 hour, or in some cases up to 2 hours or more. For example, when updating non-US locations of Commerce Scale Unit, large data volumes, or complex schema updates. For a realistic estimate of the downtime duration, note the downtime duration in Sandbox UAT for an equivalent update and dataset that you plan to use in your production environment. During this time, the following will occur:
 
 - Cloud-hosted Commerce channels will not function (unless POS offline capability is enabled).
 - POS devices that have the offline capability feature enabled will have reduced functionality.

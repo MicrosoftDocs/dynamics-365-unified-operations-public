@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope:  Operations
+# ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: 10.0.11
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.12 (August 2020)
+# What's new or changed in Dynamics 365 Finance 10.0.12 (August 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

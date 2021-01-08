@@ -5,7 +5,7 @@ title: Italian sales tax books
 description: The topic describes how to set up and use Italian sales tax books and Italian sales tax book sections.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/29/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, TaxBookSection, TaxBookSectionLookupVoucherSeries, TaxBookStatus, TaxBookTable, VendParameters
+ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, TaxBookSection, TaxBookSectionLookupVoucherSeries, TaxBookStatus, TaxBookTable, VendParameters, LedgerParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268654
 ms.search.region: Italy
@@ -79,7 +79,11 @@ In some cases, the <strong>Italian sales tax book</strong> field is set automati
 <li>Accounts payable parameters</li>
 <li>Project management and accounting parameters</li>
 </ul>
-For example, on the <strong>Accounts receivable parameters</strong> page, on the <strong>Number sequences</strong> tab, select the <strong>Reuse numbers</strong> check box for <strong>Free text invoice voucher</strong> to synchronize number allocation for free text invoice vouchers and free text invoices.</td>
+For example, on the <strong>Accounts receivable parameters</strong> page, on the <strong>Number sequences</strong> tab, select the <strong>Reuse numbers</strong> check box for <strong>Free text invoice voucher</strong> to synchronize number allocation for free text invoice vouchers and free text invoices.
+
+
+In the Italian localization, corrections to the Italian sales tax payment report for an already settled sales tax period are not supported. So on the <strong>General ledger parameters</strong> page, on the <strong>Sales tax</strong> tab, set the Special report **Include corrections** option to **NO**.
+</td>
 </tr>
 </tbody>
 </table>

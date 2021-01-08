@@ -17,7 +17,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -52,7 +52,7 @@ The next step is to make your actual changes. Often, you will use the page outli
 However, your change might sometimes involve adding or removing models or fragments. To add a fragment or module, use the page outline tree to find the slot that you want to add the module or fragment to, and then select the ellipsis button (**...**) for that slot. A menu appears that includes commands for adding a module or fragment. To remove a module or fragment, find and select it in the page outline tree, select the ellipsis button, and then select the command to delete the module or fragment.
 
 > [!TIP]
-> You can also view and edit the properties for any module that is visible in the "what you see is what you get" (WYSIWYG) preview by selecting it directly.
+> You can also view and edit the properties for any module that is visible in the visual page builder preview by selecting it directly.
 
 After you've finished making your changes and previewing their effect, you should check in the page by selecting **Finish editing** on the command bar. 
 

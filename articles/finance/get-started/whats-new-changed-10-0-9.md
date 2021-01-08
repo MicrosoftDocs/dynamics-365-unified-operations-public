@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope:  Operations
+# ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -43,7 +43,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Daily statement of Treasures accountability ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/daily-statement-treasurers-accountability)
 
- - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
+ - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
  
  - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
  

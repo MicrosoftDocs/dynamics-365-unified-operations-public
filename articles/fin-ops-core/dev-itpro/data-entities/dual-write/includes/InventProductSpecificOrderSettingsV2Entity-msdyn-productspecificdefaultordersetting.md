@@ -1,8 +1,8 @@
 ## Product default order settings V2 to msdyn_productspecificdefaultordersettings
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 INVENTORYWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier | 
 INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid | 

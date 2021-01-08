@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 24411
 ms.search.region: Global
@@ -83,6 +82,8 @@ The following table shows the POS views that currently support extensions. It al
 | PickingAndReceivingDetailsView (Advanced warehouse)  | No                            | Yes                          | Yes           |
 | SalesInvoiceDetailsView (10.0.11) | No                            | No                          | Yes           |
 | SalesInvoicesView (10.0.11) | No                            | Yes                          | No           |
+| InventoryDocumentShippingAndReceivingView (10.0.13) | No                            | No                          | Yes           |
+| InventoryDocumentListView  | No                            | Yes (10.0.15)                          | Yes (10.0.13)          |
 
 
 
@@ -239,7 +240,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
     import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
     import * as SearchView from "PosApi/Extend/Views/SearchView";
-    import MessageDialog from "../DialogSample/MessageDialog";
+    import MessageDialog from "../../Controls/DialogSample/MessageDialog";
     ```
 
 21. Create a class that is named **ViewCustomerSummaryCommand**, and extend it from **CustomerSearchExtensionCommandBase**.

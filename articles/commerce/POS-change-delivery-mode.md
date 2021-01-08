@@ -17,13 +17,13 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: 
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: hhainesms
+ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
 
@@ -45,4 +45,10 @@ After this feature is configured in POS, when you select **Change mode of delive
 
 After you select the lines that you want to change, click **Change mode of delivery** to be prompted to select the delivery mode options. If you selected multiple lines to change, POS will only display modes of delivery that have been configured as allowable for all of the selected products. Modes of delivery can be configured to support specific products and delivery addresses. If there is a mode of delivery that is acceptable for one product and address combination but is not acceptable for another selected product and address combination, the mode of delivery is not available. You may need to select lines one by one and change the mode of delivery for each line separately if you want to select a mode of delivery for one product that is not supported by another product.  
 
-After you select the new mode of delivery, the transaction page is displayed. To review your new delivery mode selections, select the **Delivery** tab on the transaction list.   
+After you select the new mode of delivery, the transaction page is displayed. To review your new delivery mode selections, select the **Delivery** tab on the transaction list.
+
+## Additional resources
+
+[Create call center orders](tasks/create-call-center-orders.md)
+
+[Customize transactional emails by mode of delivery](customize-email-delivery-mode.md)

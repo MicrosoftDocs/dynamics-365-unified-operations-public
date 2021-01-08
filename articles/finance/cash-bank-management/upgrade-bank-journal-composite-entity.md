@@ -4,7 +4,7 @@
 title: Update the bank journal composite entity
 description: The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.
 author: ShylaThompson
-manager: AnnBe
+manager: panolte
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -18,13 +18,13 @@ ms.technology:
 audience: Application User, Developer
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221654
 ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

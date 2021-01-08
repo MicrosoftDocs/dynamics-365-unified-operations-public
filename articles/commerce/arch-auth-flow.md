@@ -18,7 +18,7 @@ ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: Release 10.0.11
 # Dynamics 365 Commerce authentication flows
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce. Although the Dynamics 365 Commerce solution currently supports several authentication scenarios and flows, the core authentication infrastructure of the Commerce Scale Unit (also known as the headless commerce engine) is fully based on [OpenID Connect](https://openid.net/connect/).
 
@@ -47,7 +46,7 @@ Access to each of the application programming interfaces (APIs) on the Commerce 
 - **Anonymous** – APIs associated with this role are primarily used by e-Commerce sites without user authentication.
 - **Customized APIs** – Access to APIs associated with this role can be restricted using any of the methods described above such as POS device activation, customer authentication, and anonymous authentication.
 
-For the full list of Commerce Scale Unit APIs and their access restrictions, see [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api.md).
+For the full list of Commerce Scale Unit APIs and their access restrictions, see [Commerce Scale Unit customer and consumer APIs](/dev-itpro/retail-server-customer-consumer-api).
 
 ### Supported authentication methods
 

@@ -4,7 +4,7 @@ title: Supported standards for electronic invoicing in Europe
 description: This topic explains the level of coverage that exists for electronic invoicing for Europe. 
 author: mrolecki
 manager: AnnBe
-ms.date: 07/11/2017
+ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10274
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
@@ -36,7 +36,7 @@ This topic explains the level of coverage that exists for electronic invoicing f
 
 Implementation and adoption of European Union-wide electronic invoicing is regulated [Council Directive 2010/45/EU](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF), which affects all EU member states. Companies that want to benefit from electronic invoicing must submit sales order invoices, free text invoices, project invoices, sales order credit notes, and project invoice credit notes as .xml files to the government or other trading parties that mandate use of electronic invoicing. These .xml files must comply with certain standards. The country-specific requirements and their implementation may differ across EU member states but commonly they are using Universal Business Language ([UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl)) in different versions with customizations as well as [PEPPOL](https://www.peppol.eu) specifications and access points for validation and transportation. The primary advantage of UBL is that business documents can be standardized for different purposes. Because UBL is a flexible, international standard that supports many business requirements, these business documents can be exchanged across national borders.
 
-## What electronic invoice formats are currently available in Dynamics 365 Finance?
+## Electronic invoice formats currently available in Dynamics 365 Finance
 
 The following country-specific formats of electronic invoices are available:
 
@@ -48,8 +48,25 @@ The following country-specific formats of electronic invoices are available:
 -   FatturaPA v.1.2 for Italy
 -   xRechnung v.1.2 for Germany
 -   Open PEPPOL BIS Billing v.3.0 for European Union
+-   Estonian specific format version 1.2
+-   Finvoice 3.0 for Finland
 
-Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). A **Customer invoice model** data model and several country/region-specific ER format configurations have been created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE), the Netherlands (NL), Germany (DE), and the European Union (EU).
+Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). An **Invoice model** data model, invoice model mapping, and several country/region-specific ER format configurations have been created for the following countries/regions: 
+
+- Austria (AT)
+- Denmark (DK)
+- Italy (IT)
+- Norway (NO)
+- Spain (ES)
+- France (FR)
+- Belgium (BE)
+- The Netherlands (NL)
+- Germany (DE)
+- Estonia (EE)
+- Finland (FI)
+- The European Union (EU)
+
+The **Invoice model** data model, invoice model mapping, and country/region-specific ER format configurations include:
 
 -   OIOUBL Sales invoice - for AT, DK, and NO
 -   OIOUBL Sales credit note - for AT, DK, and NO
@@ -77,10 +94,24 @@ Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/ana
 -   Peppol Sales Credit Note - for EU
 -   Peppol Project Invoice - for EU
 -   Peppol Project Credit Note - for EU
+-   Sales invoice (EE)
+-   Project invoice (EE)
+-   Sales invoice (FI)
+-   Project invoice (FI)
 
-The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
+The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle Services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
 
-## Additional information
+## Electronic invoice configuration
+The setup and specifics of electronic invoices depend on the country/region that it's implemented for. For more information about how to set up and use customer electronic invoices, see the related country-specific topics:
+
+- [Italy](emea-ita-e-invoices.md)
+- [Norway](emea-nor-e-invoices.md)
+- [Germany](emea-deu-e-invoices.md)
+- [Finland](https://support.microsoft.com/help/4559937)
+- [Estonia](https://support.microsoft.com/help/4552679)
+- [PEPPOL](https://support.microsoft.com/help/4490320)
+
+## Additional resources
 For more details about how to set up electronic invoices, you can play the following [Task guides](../../fin-and-ops/get-started/help-overview.md#task-guides) in the Help pane:
 
  - Set up OIOUBL electronic invoicing
@@ -88,4 +119,4 @@ For more details about how to set up electronic invoices, you can play the follo
  - Set up customer accounts for OIOUBL electronic invoicing
 
 > [!NOTE] 
-> Although these Task guides were created for Danish-specific e-invoice format *OIOUBL*, they are applicable for other supported countries with minor deviations.
+> Although these Task guides were created for Danish-specific e-invoice format *OIOUBL*, they are applicable for other supported countries/regions with minor deviations.

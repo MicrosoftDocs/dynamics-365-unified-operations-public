@@ -5,7 +5,7 @@ title: Set up custom pages for user sign-ins
 description: This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
+#ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -186,27 +186,27 @@ To update the "Password reset" policy with custom page information, follow these
 
 ## Customize default text strings for labels and descriptions
 
-In the starter kit, sign in modules are prefilled with default text strings for the labels and descriptions. You can customize these strings in the software development kit (SDK) by updating the values in the global.json file for the sign in module.
+In the module library, sign-in modules are prefilled with default text strings for the labels and descriptions. You can customize these strings in the software development kit (SDK) by updating the values in the global.json file for the sign in module.
 
 For example, the default text for the forgotten password link is **Forgotten password?**. The following shows this default text on the sign-in page.
 
 ![Default text for the forgotten password link on the sign-in page](./media/B2C_SignUp_ModuleFace.png)
 
-However, in the global.json file for the starter kit sign in module, you can edit the text to **Forgot Password?**, as shown in the following illustration.
+However, in the global.json file for the module library sign-in module, you can edit the text to **Forgot Password?**, as shown in the following illustration.
 
 ![Updated link text in the sign in module's global.json file](./media/B2C_CustomizingStringsForModule.png)
 
-After you update the global.json file and publish your changes, the new link text appears in the sign in module in both Commerce and on the live sign-in page.
+After you update the global.json file and publish your changes, the new link text appears in the sign-in module in both Commerce and on the live sign-in page.
 
 ## Additional resources
 
 [Configure your domain name](configure-your-domain-name.md)
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
-[Associate an online site with a channel](associate-site-online-store.md)
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 

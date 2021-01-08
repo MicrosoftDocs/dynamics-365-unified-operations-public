@@ -12,12 +12,12 @@ ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
-ms.search.form: 
+ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+#ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9

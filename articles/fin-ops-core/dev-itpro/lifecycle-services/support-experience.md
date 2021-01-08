@@ -5,7 +5,7 @@ title: Set up technical support for Finance and Operations apps
 description: This topic provides information about the support experience for cloud and on-premises deployments. It describes the setup that is required and explains how to create and work with support issues.
 author: kfend
 manager: AnnBe
-ms.date: 02/20/2019
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29531
 ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
@@ -33,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Set up technical support for Finance and Operations apps 
 [!include [banner](../includes/banner.md)]
 
- Prerequisites
+Prerequisites
 --------------
 
 Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created when you set up a subscription for one of the Microsoft Dynamics 365 Finance and Operations apps.
@@ -85,11 +84,15 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 3.  Click **Project settings**, and then click the **Azure DevOps** link.
 
     [![LCS-Project-Tiles](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
+    
     [![LCS-Project-Settings-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
 4.  Click **Setup Azure DevOps**.
 5.  In the **Azure DevOps site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
-6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. [![LCS-Project-Settings-VSO-Setup-1](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
+6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. 
+
+    [![Enter the personal access token that you created in the previous section.](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
+
 7.  Click **Continue**.
 8.  Select the VSO project to use, and then click **Continue**.
 9.  Click **Save**.
@@ -98,49 +101,33 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 12. Sign in to Visual Studio Online.
 13. Click **Accept**.
 
-## Create an issue in the Finance and Operations client (Microsoft Dynamics AX 7.0, Dynamics AX platform update 1 or update 2, or Finance and Operations platform update 3)
-If you are on Finance and Operations platform update 4, or if you have consumed KB 4010473 for platform update 3, skip to the next section.
+## Create an issue 
+The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
 
-[!WARNING]
-If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
-
-1.  In the client, click the **Help** menu, or question mark icon, in the upper-right corner. [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
-2.  Click **Contact your support team**.
-3.  Enter information in the **Issue** and **Description** fields.
-4.  Optional: Enter the time when the issue occurred (Platform update 3 feature).
-5.  Optional: Set the **Work stoppage** fields to **Yes**.
-6.  Optional: Upload a task recording.
-7.  Set the option to share your email address with LCS to **Yes**. The **Submit** button won't be available unless you share your email address.
-8.  Click **Submit**. 
-
-[![Contact Support](./media/contact-support.png)](./media/contact-support.png)
-
-You should receive a confirmation message that states that the issue has been submitted to LCS. Users who are in the **Operations users** role are notified that a new issue has been submitted to LCS. To view the issue that was submitted, click the **Support** tile in the associated LCS project.
-
-## Create an issue in the Finance and Operations client (Finance and Operations platform update 4 and platform update 3 KB 4010473)
-If you have not taken platform update 4 for Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
-
-[!WARNING]
-If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
+> [!WARNING]
+> If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
 
 [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
-[!NOTE]
-If you haven’t already connected to Lifecycle Services (LCS), a dialog box will display where you can connect. Click the link to connect before proceeding. 
-    [![wiki2](./media/wiki2.png)](./media/wiki2.png)
+> [!NOTE]
+> If you haven’t already connected to Lifecycle Services (LCS), a dialog box will display where you can connect. Click the link to connect before proceeding. 
+    [![Click to connect to Lifecycle Services.](./media/wiki2.png)](./media/wiki2.png)
 
 
 ### Search for a fix
 
 After you connect to LCS, you can search for existing Microsoft published updates and fixes. Enter your issue in the **Search** box and press **Enter**. 
 
-[!NOTE]
-If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes that you have already installed will not be included in your search results. To view a specific result, click the link to view the details. 
+> [!NOTE]
+> If you don't want the functionality to search for existing fixes enabled for all users, you can remove the **SearchExistingFixes** duty from the System user role and add it to only those roles which you want to have this functionality. Search results are based on the Microsoft Issue Search data that is relevant to your environment. Fixes that you have already installed will not be included in your search results. To view a specific result, click the link to view the details. 
 
 Based on the duties assigned to you, you will see either the **Download view** or the **Request view**. 
+
 - **Download view** - By default, this view is only available to system administrators. From this view, you can directly download the hotfix. 
-[!NOTE]
-The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
+
+    > [!NOTE]
+    > The duty **DownloadHotfix** controls the ability to directly download fixes from LCS rather than requesting them. Only system administrators will have access to it by default. If you want to assign this duty to users other than system administrators, you can do so by adding the duty to the selected roles. 
+    
 - **Request view** - By default, this view is available to all users who are not system administrators. From this view, you can make a request to download the hotfix. After you submit your request to download the hotfix, a work item will be created in the Azure DevOps project that is associated to your LCS project. The customer IT admin can view all requested hotfixes by clicking the **Support** tile in LCS and then clicking the **Hotfix requests** tab.
 
 ### Search for project work items in Azure DevOps
@@ -153,44 +140,38 @@ When you search for published Azure DevOps work items using the support search b
 
 [![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
-[!NOTE]
-The published Azure DevOps work items are only visible to your organization's users.  
+> [!NOTE]
+> The published Azure DevOps work items are only visible to your organization's users.  
 
 ### Create and submit a new issue
 If you don’t see a fix in the search results, you can create a new issue by clicking **Create**. This is the same functionality that is available for previous releases and is documented in earlier procedures.
 
 ## Work with issues in LCS
+
 ### View issues
 In the LCS **Support** tile, issues are stored as work items in the Azure DevOps project that is associated with the LCS project. Specifically, issues are stored as work items of the **Issue** or **Impediment** type, depending on the type of Azure DevOps project, in the **AxAndLcsGeneratedIssues** area. Every work item of one of those types in that area will be included in the list of issues in the **Support** tile. If an issue is modified in Azure DevOps, the changes will be reflected in Support issues. Issues can be assigned to any user in the Azure DevOps project. Users don't need to have access to LCS to work with issues in Azure DevOps.
 
 1.  Go to [lcs.dynamics.com,](https://lcs.dynamics.com/en/) and sign in.
 2.  Open the LCS project that is associated with the environment that you want to view issues for.
 3.  Click the **Support** tile. A list of the issues that have been created appears.
-[![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
+
+    [![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.
 2.  If necessary, sign in to Azure DevOps by using an account that has access to the Azure DevOps project that you set up in the first section of this topic, **Create an Azure DevOps project**. 
 
-[!NOTE]
-There is an issue in Azure DevOps, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to Azure DevOps, go back to LCS, and click the title of the issue in the issue grid again.
+    > [!NOTE]
+    > There is an issue in Azure DevOps, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to Azure DevOps, go back to LCS, and click the title of the issue in the issue grid again.
 
 3.  The Azure DevOps editor opens. Edit the issue, and then save your changes. The changes will be reflected in the **Support** tile.
 
-### Troubleshoot issues
-[!NOTE]
-The information in this section is not applicable to on-premises deployments.
-
-Issues that are created through the client contain metadata about the environment. When those issues are selected in the **Issue** grid, the **Troubleshoot** button becomes available. When you click **Troubleshoot**, the **Event monitoring** page opens. This page lets you access events and logs that are related to the issue. The page shows activities, error messages, and other information that has occurred within the last two hours since an issue was reported. 
-[![LCS-CPS-list-troubleshoot-1024x331](./media/lcs-cps-list-troubleshoot-1024x3311-1024x331.png)](./media/lcs-cps-list-troubleshoot-1024x3311.png) 
-[![LCS-Monitoring-1024x419](./media/lcs-monitoring-1024x4191-1024x419.png)](./media/lcs-monitoring-1024x4191.png)
 
 ### Submit an issue to Microsoft
 
 You can submit issues to Microsoft support. When you submit an issue to Microsoft, the information and attachments in the issue can be included in the Microsoft support incident. 
 
-**
-** LCS users must have a valid Microsoft support plan to submit issues to Microsoft. If you have trouble submitting issues to Microsoft, work with your administrator to make sure that your LCS credentials are added to or associated with your organization's support plan with Microsoft Partner Source Business Center.
+LCS users must have a valid Microsoft support plan to submit issues to Microsoft. If you have trouble submitting issues to Microsoft, work with your administrator to make sure that your LCS credentials are added to or associated with your organization's support plan with Microsoft Partner Source Business Center.
 
 1.  In the **Issue** grid, select the issue to submit to Microsoft, and then click **Submit to Microsoft**.
 2.  If your account is associated with multiple support organizations, select the organization to use to create the Microsoft support incident.
@@ -200,22 +181,11 @@ You can submit issues to Microsoft support. When you submit an issue to Microsof
 6.  Describe your issue, provide your contact information, and then click **Submit**.
 
 ## Support settings 
-[!NOTE]
-The information in this section is not applicable to on-premises deployments. 
+
+> [!NOTE]
+> The information in this section is not applicable to on-premises deployments. 
 
 When you deploy your application from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
-[![Configure Contact support](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)
-
-## Support plans (on-premises only)
-The following customer and partner support plans are available for on-premises deployments.
-- **Customer** 
-    - Software assurance
-    - Advantage/Advantage Plus
-    - Premier
-- **Partner**
-    - Partner Advantage/Partner Advantage Plus
-    - Advanced Support for Partners
-    - Premier
 
 ## Prevent users from creating issues from the client
 By default, the System user role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the Help menu. If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System user role.

@@ -5,7 +5,7 @@ title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm:
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -97,7 +96,7 @@ Before you begin, make sure you are familiar with [Steps to complete after a dat
 
 The scale unit channel database records (in the Channel Database form) cannot be moved across environments as part of database refresh. This is because the records represent environment specific configuration.
 
-After database refresh and after the Retail Reprovisioning tool has been executed, you can regenerate the scale unit's channel database record by issuing a re-deployment of your scale unit in LCS. Any deployment or servicing operation in the scale unit will attempt to register the scale unit with the headquarters, if it detects that the registration is missing.
+After database refresh, you can regenerate the scale unit's channel database record by issuing a re-deployment of your scale unit in LCS. Any deployment or servicing operation in the scale unit will attempt to register the scale unit with the headquarters, if the registration is detected as missing.
 
 You can issue a re-deployment of the scale unit, without changing any components, by selecting to deploy the same version your scale unit is at already. This can be done in LCS by the following steps:
 

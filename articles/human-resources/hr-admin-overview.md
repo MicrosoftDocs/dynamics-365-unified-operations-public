@@ -18,7 +18,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Overview
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
 

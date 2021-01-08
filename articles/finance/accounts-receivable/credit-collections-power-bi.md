@@ -17,7 +17,7 @@ ms.search.form:  CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
+# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -55,6 +55,9 @@ The following setup needs to be completed for data to display in **Customer cred
 3. Go to **General Ledger > Setup > Ledger** and set **Accounting Currency** and **Exchange Rate Type**.
 4. Define exchange rates between transaction currencies and accounting currency, accounting currency, and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
 5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
+
+>[!NOTE] 
+> Aging period definitions must be set up in **Accounts receiveable parameters > Collections > Collections defaults** to enable aging data in the Power BI content.
 
 ## Accessing the Power BI content
 

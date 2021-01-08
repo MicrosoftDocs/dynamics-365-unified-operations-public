@@ -18,7 +18,6 @@ ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -30,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# <a name="ScreenDestinationType">Screen destination</a>
+# Screen destination
 
 [!include [banner](../includes/banner.md)]
 

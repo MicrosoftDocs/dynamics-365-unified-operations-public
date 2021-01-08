@@ -5,7 +5,7 @@ title: All-in-one deployable packages
 description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
 manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -61,6 +60,10 @@ There are two primary methods for creating an all-in-one deployable package:
 ## What if my ISV packages don't contain source code?
 
 ISVs can choose whether to share their source code with you. If they don't share it, they will provide a binary-only package. This package can easily be managed into an all-in-one deployable package. For instructions, see [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md).
+
+## How can I deploy ISV licenses?
+
+ISVs can send license deployable packages to provide or update a license. However, for self-service environments licenses should also be included in an all-in-one deployable package. You can add a task to your build or release pipelines to add any licenses you have to a deployable package. For more information, see [Add license files to a deployable package in Azure Pipelines](pipeline-add-license-package.md).
 
 ## Why are these packages important?
 

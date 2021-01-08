@@ -5,7 +5,7 @@ title: Regression suite automation tool
 description: The Regression suite automation tool lets you record business tasks using the task recorder and convert them into a suite of automated tests without the need to write source code.
 author: robadawy
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
 ms.search.region: Global
@@ -71,6 +70,12 @@ The [How to create a test plan in Azure DevOps to use with the Regression suite 
 
 The [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
+### The improved Excel experience in RSAT 2.0
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
+
+The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube. 
+
 
 ## End-to-end flow
 This tool is part of the end to end flow described below. The application, along with Microsoft Dynamics Lifecycle Services (LCS) and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), configuration, execution, investigation, and reporting.
@@ -99,7 +104,7 @@ The Regression suite automation tool is intended to be used for business cycle t
 ![Unit tests, component tests, multiple component tests, business cycle tests](media/business-cycle.png)
 
 ### Warehouse mobile app
-You can use RSAT in combination with the Warehouse App Task Validation Framework to automate the testing of warehouse processes. This [teck talk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019) is a good reference to get started.
+You can use RSAT in combination with the Warehouse App Task Validation Framework to automate the testing of warehouse processes. This [Tech Talk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019) is a good reference to get started.
 
 ### Unit and component testing
 For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools. For component tests, take advantage of the [Acceptance test library resources](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:

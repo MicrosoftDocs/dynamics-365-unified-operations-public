@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18941
 ms.assetid: 6634d000-b031-40d7-ad2a-c6626e4cbdc2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

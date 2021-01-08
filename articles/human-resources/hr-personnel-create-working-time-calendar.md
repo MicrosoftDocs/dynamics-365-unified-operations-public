@@ -13,11 +13,11 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalendarDate, HcmPersonnelManagementWorkspace
+ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalendarDate, HcmPersonnelManagementWorkspace, WrkCtrGroupDateCalendar, WrkCtrDateCalendar
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations 
+# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

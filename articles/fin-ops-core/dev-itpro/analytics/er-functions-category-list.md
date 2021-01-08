@@ -18,7 +18,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -51,6 +50,7 @@ Electronic reporting (ER) list functions can be used to extract information from
 | [Index](er-functions-list-index.md)                       | This function returns a *Container (record)* value that is selected by using the specified numeric index in the specified list. If the index is out of range for the records in the specified list, this function throws an exception. |
 | [IsEmpty](er-functions-list-isempty.md)                   | This function returns a *Boolean* value of **TRUE** if the specified list contains no records. Otherwise, it returns a *Boolean* value of **FALSE**. |
 | [List](er-functions-list-list.md)                         | This function returns a *Record list* value that consists of a new list that is created from the specified arguments.|
+| [ListDistinct](er-functions-list-listdistinct.md)         | This function calculates the specified expression as a selector for every record of the specified list. It returns a new *Record list* value that contains a single record for each unique selector value.|
 | [ListJoin](er-functions-list-listjoin.md)                 | This function returns a *Record list* value that represents a new joined list that is created from the specified arguments.|
 | [ListOfFields](er-functions-list-listoffields.md)         | This function returns a *Record list* value that is created based on the structure of the specified argument of the *Enumeration* or *Container (record)* type. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | This function returns a *Record list* value that consists of only the first record of the specified list.|

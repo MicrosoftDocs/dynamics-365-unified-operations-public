@@ -2,7 +2,7 @@
 # required metadata
 title: PartDesign type
 description: Part design object type.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -13,13 +13,12 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
@@ -158,7 +157,7 @@ Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-f
 
 flexSize: string (optional) 
 
-One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.
+One number or two numbers written as a string. For example, "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.
 This property is an alias for the CSS property "flex". Please refer to
 [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex" property.
 

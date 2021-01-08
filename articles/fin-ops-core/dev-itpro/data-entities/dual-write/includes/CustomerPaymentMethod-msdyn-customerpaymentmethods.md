@@ -1,8 +1,8 @@
 ## Customer payment method to msdyn_customerpaymentmethods
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 NAME | = | msdyn_name | 
 ACCOUNTTYPE | >< | msdyn_accounttype | 

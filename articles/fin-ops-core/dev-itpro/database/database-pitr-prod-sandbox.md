@@ -5,7 +5,7 @@ title: Point-in-time restore of the production database to a sandbox environment
 description: This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a sandbox user acceptance testing (UAT) environment.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm:
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry:
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
 
@@ -46,6 +45,9 @@ To provide customers with data application lifecycle management (DataALM) capabi
 2. Select the **Point-in-time restore Prod to Sandbox** option, and then select the desired point in time.
 3. Make a note of the warnings, and review the list of data elements that aren't copied from the source environment's previous point in time.
 4. The restore operation begins immediately.
+
+> [!IMPORTANT]
+> Self-service point in time restore (PITR) is not supported between environments that are on different regions. For more details, refer to the "Known issues" section later in this topic.
 
 ### Restore operation failure
 
@@ -89,8 +91,9 @@ Here is the list of requirements and conditions of operation for a database refr
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before  other users are allowed back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management integration jobs that have recurring import and export enabled must be fully processed and stopped in the target system before the restore is started. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. In this way, you ensure that there are no orphaned files from either system in Azure storage. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
+- Business events end points must be deleted and reconfigured in the environment where the database is restored to ensure the same end points are not used. This will also require the business events to be deactivated and re-activated to the new end points that were configured in the environment.
 - Any user who has the Project owner or Environment manager role in LCS will have access to the SQL and machine credentials for all non-production environments.
-- The databases must be hosted in the same Azure geographic region.
+- The databases must be hosted in the same Azure geographic region, unless the databases are Spartan-managed.  Databases are Spartan-managed when you see 'spartan' as part of the fully qualified SQL server address.
 - The allocated database capacity of the source environment must be less than the maximum database capacity of the target environment.
 
 ## Steps to complete after a restore is done for environments that use Commerce functionality
@@ -130,3 +133,11 @@ The database refresh process (self-service or via service request) can't be comp
 If you're upgrading your sandbox UAT environment to a newer application version (for example, from 7.3 to 8.1), be sure to perform the database refresh action before you start the upgrade. After your sandbox environment is upgraded to the newer version, you can't restore an older production environment database to the sandbox UAT environment.
 
 Conversely, if your production environment is newer than your target sandbox environment, you must either upgrade the target sandbox environment before the refresh, or just deallocate, delete, and redeploy the environment before you do the refresh.
+
+### The source and target are on different infrastructure (Microsoft-managed vs. self-Service)
+
+The PITR process is not supported between Microsoft-managed and self-service environments across different regions. For example, if the production environment is Microsoft-managed and in East US2 and a PITR is needed to the sandbox environment, which is self-service and in East US, PITR is not supported. The alternative is to move the production environment to self-service or opt for a regular database refresh instead.
+
+### Point in time restore between source and target that are both on self-Service, in different regions
+The PITR process is not supported between self-service environments across different regions. For example, if the production environment is in East US and a PITR is needed for the sandbox environment, which is self-service and in West Europe, PITR is not supported. The alternative is to get both the environments in the same region or opt for a regular database refresh instead.
+

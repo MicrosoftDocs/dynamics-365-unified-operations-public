@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -22,9 +22,9 @@ ms.search.scope:  Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: Release 10.0.10
 ---
 
 # Warehouse handling of inbound loads for purchase orders

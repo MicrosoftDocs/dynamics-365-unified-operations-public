@@ -19,7 +19,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -63,3 +63,5 @@ To define a custom focal point for an image, follow these steps.
 [Upload files](dam-upload-files.md)
 
 [Crop images](dam-crop-images.md)
+
+[Upload and serve static files](upload-serve-static-files.md)

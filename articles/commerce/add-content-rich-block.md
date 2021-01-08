@@ -5,7 +5,7 @@ title: Text block module
 description: This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Text block module
-
 
 [!include [banner](includes/banner.md)]
 
@@ -83,7 +82,7 @@ To add a text block module to a new page and set the required properties, follow
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Promo banner module](add-alert.md)
 

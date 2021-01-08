@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: System requirements for cloud deployments
+title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Retail
+#ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 ms.custom: 55651
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# System requirements for cloud deployments
+# System requirements for cloud deployments of Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,6 +43,9 @@ The web application can run in any of the following web browsers that run on the
 - Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
 - Google Chrome (latest publicly available version) 
 - Apple Safari (latest publicly available version)
+
+> [!NOTE]
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
 
 To find the latest release for each web browser, go to the software manufacturer's website.
 

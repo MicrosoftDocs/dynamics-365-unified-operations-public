@@ -18,7 +18,7 @@ ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, Hcm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+# ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee

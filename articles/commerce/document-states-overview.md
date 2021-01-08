@@ -5,7 +5,7 @@ title: Document states and lifecycle
 description: This topic covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Document states and lifecycle
-
 
 [!include [banner](includes/banner.md)]
 
@@ -55,6 +54,8 @@ The following table shows the possible document states of page elements in Comme
 [Page model glossary](page-elements-overview.md)
 
 [Work with publish groups](publish-groups.md)
+
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
 
 [Work with modules](work-with-modules.md)
 

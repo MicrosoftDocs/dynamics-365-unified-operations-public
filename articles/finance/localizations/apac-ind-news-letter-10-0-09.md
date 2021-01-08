@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed for APAC India GST Localization in 10.0.09 (April 2020)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.09.
+title: What's new or changed for India GST in 10.0.09 (April 2020)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.09.
 author: prabhatb
 manager: Wangcheng
 ms.date: 06/15/2020
@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,17 +28,17 @@ ms.dyn365.ops.version:
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.09 (April 2020) 
+# What's new or changed for India GST in 10.0.09 (April 2020) 
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.09 for APAC India GST localization.
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.09 for India GST localization.
 
 ## New features
 ### Charge allocation in sales order  
 You can now include charge allocations on all sales order lines. To enable this feature, go to the **Feature management** workspace and enable the feature, **Charges allocation on a sales order**.
 
-![](media/GST-charge-allocation-1-10-0-09.PNG )
+![Action Pane](media/GST-charge-allocation-1-10-0-09.PNG )
 
 On the sales order header, you can select **Assessable value** on the charge line. Based on this selection, the distributed charge value is added to line item taxable value. The taxes are then calculated accordingly.
 
@@ -47,7 +47,7 @@ On the sales order header, you can select **Assessable value** on the charge lin
 This feature will default a customer's business address on the **Tax information** tab of a sales transaction, and the company address
 on the **Tax information** tab of a direct delivery purchase order. To enable this feature, go to the **Feature management** workspace, and enable the feature, **Defaulting of customer business address in the tax information tab**.
 
-![](media/GST-customer-business-address-2-10-00-09.png )
+![Feature management - Defaulting of customer business address in the tax information tab](media/GST-customer-business-address-2-10-00-09.png )
 
 By using direct delivery functionality, you can create deliveries directly from vendors to customers, reducing delivery time and order administration. During direct delivery, when a purchase order is created, the customer delivery address defaults from the **Sales order** page. However from the GST prospective, the customer's business address should default in tax information. 
 
@@ -55,7 +55,7 @@ By using direct delivery functionality, you can create deliveries directly from 
 
 Under a new GSTR return process, GST ANX-1 (Annexure of supplies) and GST ANX-2 (Annexure of Inward Supplies) will be filed as part of FORM GST RET-1 (Normal) returns. You can generate multiple GSTR returns.
 
-![](media/GST-new-GSTR-offline-tool-3-10-0-09.PNG )
+![Report configurations](media/GST-new-GSTR-offline-tool-3-10-0-09.PNG )
 For more information about the GSTR Return offline tool report, see the KB article, [New GSTR Return offline tool (Trial Version Prototype) for India in Dynamics 365 Finance](https://support.microsoft.com/help/4549665). 
 
 ### GTE debug mode
@@ -67,11 +67,11 @@ With debug mode enabled, the system will generate a log file that contains the d
 
 1. In the internet address bar, change **&debug=vs%2CconfirmExit&** to your Dynamics 365 Finance AOS URL and press Enter to open a new session.
 
-![](media/GST-debug-mode-4-1-10-0-09.PNG )
+![Dynamics 365 Finance AOS URL](media/GST-debug-mode-4-1-10-0-09.PNG )
 
 2. Go to **Tax** > **Setup** > **Tax configuration** > **Tax setup** and mark the **Check model mapping discrepancies** parameter.
 
-![](media/GST-debug-mode-4-2-10-0-09.PNG )
+![Tax parameters setup](media/GST-debug-mode-4-2-10-0-09.PNG )
 
 3. Calculate the tax for the transaction, and then select **Save** to save the **GTETroubleshotingLog.txt** file.
 

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25371
 ms.assetid: f293d97a-9f70-4c45-91d4-574731892353
@@ -40,7 +39,7 @@ This topic provides information about how data entities interact with the cross-
 
 Each table has a **SaveDataPerCompany** property, and each view has a **AllowCrossCompany** property. The following table describes these two properties.
 
-|                        | Table | View |
+|      &nbsp;            | Table | View |
 |------------------------|-------|------|
 | Property name          | SaveDataPerCompany | AllowCrossCompany |
 | Relevant CRUD mode     | CUD | R |
@@ -49,16 +48,16 @@ Each table has a **SaveDataPerCompany** property, and each view has a **AllowCro
 | Meaning of value = No  | The system does *not* add a **dataAreaId** field to the table. The table is said to be a shared table, because none of its records contain any formal company-specific data. | The system automatically *adds* a filter to the SQL **Where** clause to limit the returned set of rows to one **dataAreaId** value. However, the **AllowCrossCompany** property is ignored if the *root* data source of the view is a shared table. |
 
 ## Comparisons within AllowCrossCompany = No
-In the following screen shot, the **CustomerList** view has two data sources:
+In the following screenshot, the **CustomerList** view has two data sources:
 
 - **Root** – CustTable, which has its **SaveDataPerCompany** property set to **Yes**.
 - **Non-root** – DirPartyTable, which has its **SaveDataPerCompany** property set to **No**.
 
-[![root](./media/root.png)](./media/root.png)
+[![The CustomerList view has two data sources.](./media/root.png)](./media/root.png)
 
-The **CustomerList** view has its **AllowCrossCompany** property set to **No**, as shown in the following screen shot.
+The **CustomerList** view has its **AllowCrossCompany** property set to **No**, as shown in the following screenshot.
 
-[![crosscomp](./media/crosscomp.png)](./media/crosscomp.png)
+[![The AllowCrossCompany property is set to No.](./media/crosscomp.png)](./media/crosscomp.png)
 
 Given the preceding information about the **CustomerList** view, the system creates the view in the underlying SQL Server system by generating and then running the following SQL **Create View** statement.
 
@@ -79,7 +78,7 @@ AS
 
 ### Making DirPartyTable the root data source
 
-[![dirpar](./media/dirpar.png)](./media/dirpar.png)
+[![Making DirPartyTable the root data source](./media/dirpar.png)](./media/dirpar.png)
 
 By swapping the positions of the two data source tables in the **CustomerList** view, you make the DirPartyTable table the root data source.
 
@@ -118,9 +117,9 @@ Data entities help you overcome the limitations of tables and view where cross-c
 - The field can be any field that is extended from the **DataAreaId** extended data type (EDT), and isn't limited to an underlying system **dataAreaId** field.
 - You can use the **PrimaryCompanyContext** property even when the entity has only shared tables as its data sources, if this makes sense for your specific situation.
 
-The following screen shot shows the value set for the **PrimaryCompanyContext** property on the **FMCustGroupEntity** entity.
+The following screenshot shows the value set for the **PrimaryCompanyContext** property on the **FMCustGroupEntity** entity.
 
-[![prim1](./media/prim1.png)](./media/prim1.png)
+[![The PrimaryCompanyContext property](./media/prim1.png)](./media/prim1.png)
 
 When the **PrimaryCompanyContext** value is set to a non-empty value, the entity can't behave as a shared entity. The **dataAreaId** field is added to the SQL **Create View** statement.
 
@@ -136,40 +135,40 @@ AS
        FROM   fmcustgroup T1 
 ```
 
-## Run time: The behavior of data entities for crosscompany
+## Run time: The behavior of data entities for cross company
 In the context of X++ code, the cross-company behavior of data entities resembles the behavior of tables. If the **PrimaryCompanyContext** property for an entity has no value and is empty, the entity behaves like a shared table.
 
 ### X++ when PrimaryCompanyContext is set
 
 The following table describes the behavior of a data entity under CRUD access when the **PrimaryCompanyContext** property is set to a field value. Both X++ and OData accesses are described.
 
-|             | X++ | OData |
+|  &nbsp;       | X++ | OData |
 |-------------|-----|-------|
-| Read (R)    | By default, results are *always* filtered by **dataAreaId** = current company, and cross-company data can be fetched by using the **crosscompany** option. | Results are *not* filtered by **dataAreaId**. The consumer must filter explicitly. |
+| Read (R)    | By default, results are *always* filtered by **dataAreaId** = current company, and cross-company data can be fetched by using the **cross company** option. | Results are *not* filtered by **dataAreaId**. The consumer must filter explicitly. |
 | Write (CUD) | CUD access to the data entity always occurs in the context of the current company. If cross-company CUD access to the entity is required, use the **changeCompany** keyword. | CUD access to the entity can be accomplished by the consumer for any company by setting the value of the **PrimaryCompanyContext(myDataAreaId)** field. The framework handles the necessary **ChangeCompany** action. |
 
 The following X++ code example accesses **FMCustGroupEntity**, which has its **PrimaryCompanyContext** property set to **dataAreaId**.
 
-[![FMCust](./media/fmcust.png)](./media/fmcust.png)
+[![PrimaryCompanyContext property set to DataAreaId](./media/fmcust.png)](./media/fmcust.png)
 
-[![Snip](./media/snip-550x1024.png)](./media/snip.png)
+[![X++ code example accesses FMCustGroupEntity](./media/snip-550x1024.png)](./media/snip.png)
 
 ### X++ when PrimaryCompanyContext is empty
 
 When the **PrimaryCompanyContext** property is set on the data entity, a **dataAreaId** field is created in the view schema and mapped to the **PrimaryCompanyContext** field. The following table describes the behavior of a data entity under CRUD access when the **PrimaryCompanyContext** property is empty. Both X++ and OData accesses are described.
 
-|             | X++                                                                                                                              | OData |
+|     &nbsp;   | X++                                                                                                                              | OData |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------|-------|
 | Read (R)    | Results aren't filtered, because no system **dataAreaId** field is created on the view schema.                                   | (The same as for R with X++) |
 | Write (CUD) | There is no primary company context to set. Therefore, CUD access to the entity is always in the context of the current company. | (The same as for CUD with X++) |
 
 In the current example, the **FMCustomerGroupGlobalEntity** entity has no value assigned to its **PrimaryCompanyContext** property.
 
-[![ent1](./media/ent1.png)](./media/ent1.png)
+[![No value assigned to the PrimaryCompanyContext property.](./media/ent1.png)](./media/ent1.png)
 
-However, a **dataAreaId** field from the FMCustGroup table is mapped to the **FMCustomerGroupGlobalEntity** entity as a regular field that is named **LegalEntity**. In this example, the FMCustGroup table is the root data source for **FMCustomerGroupGlobalEntity**. However, we are using this **dataAreaId** field in an informal way that bypasses the automatic mechanisms of the system. All these details are shown in the following screen shot of the **LegalEntity** field.
+However, a **dataAreaId** field from the FMCustGroup table is mapped to the **FMCustomerGroupGlobalEntity** entity as a regular field that is named **LegalEntity**. In this example, the FMCustGroup table is the root data source for **FMCustomerGroupGlobalEntity**. However, we are using this **dataAreaId** field in an informal way that bypasses the automatic mechanisms of the system. All these details are shown in the following screenshot of the **LegalEntity** field.
 
-[![ent2](./media/ent2.png)](./media/ent2.png)
+[![LegalEntity field](./media/ent2.png)](./media/ent2.png)
 
 > [!NOTE]
 > Although the terms *legal entity* and *data entity* both use the word *entity*, don't confuse them. Legal entities and data entities are two entirely different concepts. When the **PrimaryCompanyContext** property is empty, the SQL **Create View** statement usually contains no mention of a system **dataAreaId** column. However, in the current example, **dataAreaId** is "half-mentioned" because of the **LegalEntity** regular field on the data entity. This field is shown in the following SQL statement.
@@ -195,9 +194,9 @@ This example has two purposes:
 
 ### Test data
 
-The following screen shot of the **Table browser** page shows the test data that is in the **FMCustomerGroupGlobalEntity** entity before the X++ test code is run.
+The following screenshot of the **Table browser** page shows the test data that is in the **FMCustomerGroupGlobalEntity** entity before the X++ test code is run.
 
-[![ent3](./media/ent3.png)](./media/ent3.png)
+[![The Table browser page](./media/ent3.png)](./media/ent3.png)
 
 ### X++ code
 
@@ -206,4 +205,4 @@ Here's how the X++ test code works with the shared entity:
 - It accesses the data entity in shared mode for reads.
 - It accesses the data entity with one specific company when a new record is created.
 
-[![snip2](./media/snip2.png)](./media/snip2.png)
+[![X++ test code](./media/snip2.png)](./media/snip2.png)

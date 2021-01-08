@@ -5,7 +5,7 @@ title: IoT Intelligence home page
 description: This topic provides links to information about IoT Intelligence.
 author: robinarh
 manager: tfehr
-ms.date: 04/25/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,13 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> **Availability:** This feature isn't available for Finance and Operations apps that are operated by 21Vianet in China.
+> This feature is currently only available in the following countries/regions:
+>
+> - US (United States of America)
+> - EU (European Union)
+> - AU (Australia)
+> - CA (Canada)
+> - UK (United Kingdom)
 
 IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management. It integrates Internet of Things (IoT) signals with data in Supply Chain Management to produce actionable insights.
 
@@ -61,7 +67,7 @@ You can set up and configure IoT Intelligence without writing any code. Here are
 ## Tracking and maintenance
 
 + [Monitor scenarios in Dynamics 365 Supply Chain Management](iot-management.md#monitor-scenarios)
-+ [Disable a scenario](iot-scenario-setup.md#how-to-disable-a-scenario)
++ [Disable a scenario](iot-scenario-setup.md#disable-a-scenario)
 + [Uninstall the add-in](iot-lcs-setup.md#uninstall-addin)
 + [Modify a running IoT Intelligence scenario](iot-management.md#modify-a-running-iot-intelligence-scenario)
 + [Simulation options](iot-management.md#simulation-options)

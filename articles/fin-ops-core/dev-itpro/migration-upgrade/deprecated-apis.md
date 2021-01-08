@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26011
 ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
@@ -71,7 +70,7 @@ Throughout this table, under the <br/>**Reason for Deprecation** heading, "the c
 | Form |Method |isPreloadedInstance |**Overview**<br/>Used in Dynamics AX 2012 with preloading.<br/>**Reason for deprecation**<br/>Preloading is not applicable in the client.<br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
 | Form |Method |lastField nextField nextGroup prevField prevGroup | |
 | Form |Method |Lock <br>lockWindowUpdate <br>unLock |**Overview**<br/>These methods were used to prevent the redrawing of windows when performing a set of UI updates. Without these the window would be redrawn in response to each individual change leading to bad end-user experience and degraded performance.<br/>**Reason for deprecation**<br/>These methods are specific to the Windows client and are no longer needed for the client.<br/>**Migration notes**<br/>A code upgrade rule has been provided to remove occurrences of these APIs. You can safely remove any calls to these APIs from your code. |
-| Form |Method |print printPreview send |**Overview**<br/>Used in Dynamics AX 2012 to override the Auto Report generation for the form<br/>**Reason for deprecation**<br/>Microsoft Office 365 integration offers a better user experience in the client.  The ‘Export’ function is available for the user in the Dynamics AX client forms.<br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
+| Form |Method |print printPreview send |**Overview**<br/>Used in Dynamics AX 2012 to override the Auto Report generation for the form<br/>**Reason for deprecation**<br/>Microsoft 365 integration offers a better user experience in the client.  The ‘Export’ function is available for the user in the Dynamics AX client forms.<br/>**Migration notes**<br/>Remove calls to these APIs from your code. |
 | Form |Method |redraw <br>resetStatusBar- <br>BackgroundColor <br>setStatusBar- <br>BackgroundColor <br>sysColorChanged |**Overview**<br/>Used to control styles or colors.<br/>**Reason for deprecation**<br/>Remove ability for developers to specify the colors via API for consistent visuals.<br/>**Migration notes**<br/>A code upgrade rule has been provided to remove occurrences of the redraw API. Remove usage of these APIs from your code. |
 | Form |Method |reload | |
 | Form |Method |resetSize |**Overview**<br/>This method was used when controls were added/removed from a form causing its size to change. Without it the window might not be correctly sized to account for the added/removed controls.<br/>**Reason for deprecation**<br/>These methods are specific to the Windows client and are no longer needed for the client.<br/>**Migration notes**<br/>You can safely remove any calls to these APIs from your code. |

@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
 manager: AnnBe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -18,7 +18,7 @@ ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Release 10.0.11
 # Dynamics 365 Commerce architecture overview
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products. 
 
@@ -54,7 +56,7 @@ The platform that is shared among the various Dynamics 365 business applications
 
 ### Unified data
 
-Dynamics 365 Commerce provides a unified data solution through out-of-box integrations with [Common Data Service](https://powerapps.microsoft.com/common-data-service/) and [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction). Integrations and data sharing across Dynamics 365 business applications such as Dynamics 365 Sales and Dynamics 365 Marketing are supported through the shared Common Data Service. Transactional data in Data Lake Storage is used to power various analytics and insight scenarios in the Dynamics 365 Commerce solution. However, it can also be used by any third-party software integration.
+Dynamics 365 Commerce provides a unified data solution through out-of-box integrations with [Dataverse](https://powerplatform.microsoft.com/dataverse/) and [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction). Integrations and data sharing across Dynamics 365 business applications such as Dynamics 365 Sales and Dynamics 365 Marketing are supported through Dataverse. Transactional data in Data Lake Storage is used to power various analytics and insight scenarios in the Dynamics 365 Commerce solution. However, it can also be used by any third-party software integration.
 
 ### Powered by AI and analytics
 
@@ -80,7 +82,7 @@ The e-commerce storefront is the customer-facing website rendering system. It's 
 
 #### Site builder
 
-Site builder is the web-based authoring interface for the content management and storefront website rendering systems. It provides a what-you-see-is-what-you-get (WYSIWYG) editor for site managers and content authors who perform the day-to-day workflow tasks of managing and producing the marketing content for the e-commerce experience. In site builder, a marketer can provide more marketing detail for specific products to enhance the shopping experience for consumers. In addition, site builder includes integrated accessibility reporting, URL management, site map generation, and image focal point management, among other features. For more information, see [Online store overview](https://docs.microsoft.com/dynamics365/commerce/online-store-overview).
+Site builder is the web-based authoring interface for the content management and storefront website rendering systems. Visual page builder in site builder is a what-you-see-is-what-you-get (WYSIWYG) editor for site managers and content authors who perform the day-to-day workflow tasks of managing and producing the marketing content for the e-commerce experience. In site builder, a marketer can provide more marketing detail for specific products to enhance the shopping experience for consumers. In addition, site builder includes integrated accessibility reporting, URL management, site map generation, and image focal point management, among other features. For more information, see [Online store overview](https://docs.microsoft.com/dynamics365/commerce/online-store-overview).
 
 #### External services and apps
 
@@ -130,7 +132,7 @@ Commerce digital asset management extends the content management store, and keep
 
 #### Web storefront
 
-The CMS stores its pages as a series of modules. The storefront web server assembles those modules into a rendered HTML page. The web storefront is composed of the rendering platform, the commerce data proxy, and the extensibility layer. Those components form a base that is supplemented by a set of modules that power a web-based commerce experience, the Dynamics 365 Commerce starter kit. The initial starter kit can be modified to meet each business's unique requirements. Alternatively, it can be supplemented by extensions and modules that are developed by a partner.
+The CMS stores its pages as a series of modules. The storefront web server assembles those modules into a rendered HTML page. The web storefront is composed of the rendering platform, the commerce data proxy, and the extensibility layer. Those components form a base that is supplemented by a set of modules that power a web-based commerce experience, the Dynamics 365 Commerce module library. The initial module library can be modified to meet each business's unique requirements. Alternatively, it can be supplemented by extensions and modules that are developed by a partner.
 
 ### Commerce surround services
 
@@ -168,9 +170,9 @@ The Commerce ratings and reviews solution lets online retail customers enter pro
 
 Customers who bring their own Azure Data Lake Storage accounts can take advantage of structured business data from back-office operations and clickstream data from the e-commerce storefront. This data flows back into intelligence services such as product recommendations, customer insights, and commerce analytics to power customer-centric business processes and user experiences. Those business processes and user experiences can then be embedded back into Dynamics 365 Commerce headquarters, the POS, and e-commerce storefronts. For more information, see [Make Entity store available as Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake).
 
-#### Common Data Service
+#### Dataverse
 
-Common Data Service is the unified data store that integrates the data from all your business applications. Dynamics 365 applications such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Commerce use Common Data Service to store business data. Therefore, Common Data Service enables cross-business application scenarios, and can power new scenarios through Power Apps and Power Automate. For more information, see [What is Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
+Dataverse is the unified data store that integrates the data from all your business applications. Dynamics 365 applications such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Commerce use Dataverse to store business data. Therefore, Dataverse enables cross-business application scenarios, and can power new scenarios through Power Apps and Power Automate. For more information, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
 
 ## Additional resources
 
@@ -178,7 +180,7 @@ Common Data Service is the unified data store that integrates the data from all 
 
 [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 
-[Common Data Service](https://powerapps.microsoft.com/common-data-service/)
+[Dataverse](https://powerplatform.microsoft.com/dataverse/)
 
 [Modern POS (MPOS) architecture](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-modern-pos-architecture)
 

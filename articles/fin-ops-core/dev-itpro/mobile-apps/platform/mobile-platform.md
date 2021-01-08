@@ -3,7 +3,7 @@
 
 title: Mobile platform 
 description: This topic describes the platform for the mobile phone app which enables rich offline and mobile interactions, and an easy-to-use designer experience.
-author: RobinARH
+author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 

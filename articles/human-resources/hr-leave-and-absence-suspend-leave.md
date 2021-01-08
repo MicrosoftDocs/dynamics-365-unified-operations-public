@@ -18,7 +18,7 @@ ms.search.form: SuspendLeave, LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Suspend leave
-
-[!include [banner](includes/preview-feature.md)]
 
 You can suspend leave for an employee to stop leave accruals from being processed for selected leave types. 
 

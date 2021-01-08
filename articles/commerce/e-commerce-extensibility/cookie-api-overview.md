@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -84,4 +84,10 @@ const favColor = this.props.context.request.cookies.get<string>('favoriteColor')
 
 [Extend a module definition file](extend-module-definition.md)
 
+[Interactive components overview](interactive-components.md)
+
+[Mock the signed-in state during local development](mock-sign-in.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Clone a starter kit module
-description: This topic describes how to clone a starter kit module.
+title: Clone a module library module
+description: This topic describes how to clone a module library module.
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,17 +28,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Clone a starter kit module
+# Clone a module library module
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to clone a starter kit module.
+This topic describes how to clone a module library module.
 
 ## Overview
 
-The Microsoft Dynamics 365 Commerce online software development kit (SDK) includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated. 
+The Microsoft Dynamics 365 Commerce online software development kit (SDK) includes a set of module library modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated. 
 
-You can also create module extension views. In this way, you can provide alternative layout views without having to clone a module. We recommend that you avoid cloning if you can, because clones will be copies of starter kit modules and won't receive any automatic service updates that the starter kit modules get. For more information, see [Theming overview](theming.md). 
+You can also create module extension views. In this way, you can provide alternative layout views without having to clone a module. We recommend that you avoid cloning if you can, because clones will be copies of module library modules and won't receive any automatic service updates that the module library modules get. For more information, see [Theming overview](theming.md). 
 
 ## Clone and update a module
 

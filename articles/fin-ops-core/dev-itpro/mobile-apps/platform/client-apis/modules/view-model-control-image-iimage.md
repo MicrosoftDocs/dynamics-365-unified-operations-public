@@ -2,7 +2,7 @@
 # required metadata
 title: Image module
 description: Image control for representing images in the mobile app. Images can be of any of the following types&amp;58 DataUri, Base64, URL, AOTResource, or Symbol.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -13,13 +13,12 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
@@ -93,7 +92,7 @@ Image control for representing images in the mobile app. Images can be of any of
 | [border](../interfaces/view-model-control-image-iimage-iimagedesign.md#border) |border: "none" &#124; "solid" &#124; "left" &#124; "right" &#124; "top" &#124; "bottom" (optional)  <br>|The border behavior of a control. This property will not be inherited by the children.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[border](../interfaces/view-model-ipage-idesign.md#border) <br> |
 | [color](../interfaces/view-model-control-image-iimage-iimagedesign.md#color) |color: string (optional)  <br>|The foreground color of the container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) <br> |
 | [flexFlow](../interfaces/view-model-control-image-iimage-iimagedesign.md#flexflow) |flexFlow: string (optional)  <br>|Specifying this property makes the component a flex container component.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) <br> |
-| [flexSize](../interfaces/view-model-control-image-iimage-iimagedesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) <br> |
+| [flexSize](../interfaces/view-model-control-image-iimage-iimagedesign.md#flexsize) |flexSize: string (optional)  <br>|One number or two numbers written as a string. For example, "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) <br> |
 | [fontSize](../interfaces/view-model-control-image-iimage-iimagedesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (optional)  <br>|The proportional text size<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) <br> |
 | [fontWeight](../interfaces/view-model-control-image-iimage-iimagedesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (optional)  <br>|Normal or bold text.<br>  Inherited from [Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) <br> |
 | [height](../interfaces/view-model-control-image-iimage-iimagedesign.md#height) |height: string (optional)  <br>|The relative vertical size of the image.<br>  |
@@ -122,13 +121,13 @@ Image control for representing images in the mobile app. Images can be of any of
 | [BoundField](../interfaces/view-model-control-image-iimage-iimagemetadata.md#boundfield) |BoundField: string (optional)  <br>|  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[BoundField](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#boundfield) <br> |
 | [Description](../interfaces/view-model-control-image-iimage-iimagemetadata.md#description) |Description: string (optional)  <br>|Description of the control.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Description](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#description) <br> |
 | [Editable](../interfaces/view-model-control-image-iimage-iimagemetadata.md#editable) |Editable: boolean (optional)  <br>|Boolean indicating if the control is editable.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Editable](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#editable) <br> |
-| [ExtType](../interfaces/view-model-control-image-iimage-iimagemetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|The extended control type. E.g. a control of type Input might have an extended type of Barcode.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) <br> |
+| [ExtType](../interfaces/view-model-control-image-iimage-iimagemetadata.md#exttype) |ExtType: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|The extended control type. For example, a control of type Input might have an extended type of Barcode.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[ExtType](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#exttype) <br> |
 | [Height](../interfaces/view-model-control-image-iimage-iimagemetadata.md#height) |Height: number (optional)  <br>|The relative vertical size of the image.<br>  |
-| [HelpText](../interfaces/view-model-control-image-iimage-iimagemetadata.md#helptext) |HelpText: string (optional)  <br>|The keyboard shortcut for a command. E.g. "(Shift+F5)"<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) <br> |
+| [HelpText](../interfaces/view-model-control-image-iimage-iimagemetadata.md#helptext) |HelpText: string (optional)  <br>|The keyboard shortcut for a command. For example, "(Shift+F5)"<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[HelpText](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#helptext) <br> |
 | [Hidden](../interfaces/view-model-control-image-iimage-iimagemetadata.md#hidden) |Hidden: boolean (optional)  <br>|Boolean indicating if the control is hidden or not.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Hidden](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#hidden) <br> |
 | [Id](../interfaces/view-model-control-image-iimage-iimagemetadata.md#id) |Id: string (optional)  <br>|Identification string for a control.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Id](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#id) <br> |
 | [ImageStyle](../interfaces/view-model-control-image-iimage-iimagemetadata.md#imagestyle) |ImageStyle: [ImageStyleType](view-model-control-image-iimage.md#imagestyletype) (optional)  <br>|The style of the image.<br>  |
-| [Label](../interfaces/view-model-control-image-iimage-iimagemetadata.md#label) |Label: string (optional)  <br>|Label for a control. E.g. a control representing a person's first name might have a label "First Name".<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) <br> |
+| [Label](../interfaces/view-model-control-image-iimage-iimagemetadata.md#label) |Label: string (optional)  <br>|Label for a control. For example, a control representing a person's first name might have a label "First Name".<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Label](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#label) <br> |
 | [Name](../interfaces/view-model-control-image-iimage-iimagemetadata.md#name) |Name: string (optional)  <br>|Name of a control.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) <br> |
 | [Order](../interfaces/view-model-control-image-iimage-iimagemetadata.md#order) |Order: number (optional)  <br>|Number indicating the order in which a control will appear on a page.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) <br> |
 | [Type](../interfaces/view-model-control-image-iimage-iimagemetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|String indicating the control type.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) <br> |

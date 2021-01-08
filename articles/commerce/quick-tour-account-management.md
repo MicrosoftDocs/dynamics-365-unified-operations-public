@@ -5,7 +5,7 @@ title: Account management pages overview
 description: This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -49,7 +49,7 @@ The following illustration shows an example of the account management landing pa
 
 The **My profile** page shows customer's account information, such as his or her name and phone number. The customer can update his or her profile information on this page. This page can be customized so that it includes additional customer account preferences, such as an option for opting in to marketing email.
 
-The following illustration shows an example of a **My profile** page that was built by using the starter kit.
+The following illustration shows an example of a **My profile** page that was built by using the module library.
 
 ![Example of a My profile page](./media/Account-Management-MyProfile.PNG)
 

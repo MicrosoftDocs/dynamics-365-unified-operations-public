@@ -5,7 +5,7 @@ title: Export a copy of the standard user acceptance testing (UAT) database
 description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/13/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,11 +18,10 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 
@@ -42,7 +41,7 @@ In this tutorial, you will learn how to:
 > * Download the database backup.
 > * Import the database, and prepare it so that it can be used in a developer environment.
 
-As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into the development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
 
 > [!IMPORTANT]
 > Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments).
@@ -173,6 +172,12 @@ To switch environments and use the new database, first stop the following servic
 After these services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
+
+### Post steps for Commerce environments
+If you are using Commerce channels, when importing a database to a developer environment, which was originally exported from a self-service sandbox, the following additional steps must be performed on the destination developer environment. Without completing these steps, Commerce channels will not function.
+
+1.	To restore Commerce channels functionality, apply the latest Microsoft service update or quality update, which will create the channel database.
+2.	To restore any previously deployed channel database extensions, re-apply the corresponding Retail self-service deployable package.
 
 ### Reprovision the target environment
 

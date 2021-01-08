@@ -5,7 +5,7 @@ title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTa
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20501
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
@@ -97,7 +97,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
     > [!NOTE]
     > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    > - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed.
+    > - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 6. Select **Download**, and then select **Retail Modern POS**.
@@ -113,11 +113,12 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 > [!NOTE]
 > - Before you run the Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
+> - It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
->
->    - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
->    - **Property:** AllowAllTrustedApps
->    - **Value:** 1
+>     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
+>     - **Property:** AllowAllTrustedApps
+>     - **Value:** 1
+> - If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
@@ -220,6 +221,9 @@ This procedure should be completed before you activate Retail Cloud POS or Moder
 
 ## Activate a device
 
+> [!NOTE]
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
+
 1. Start Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that they are completed. Then select **Next**.
 2. Select **Activate**. You're redirected to the Azure AD sign-in page.
 3. Enter the Azure AD account that you mapped earlier, such as `admin@<MyCompany>.onmicrosoft.com`, and the password.
@@ -280,7 +284,7 @@ The device should now be activated and ready to use.
 
 - If you're using a downloaded virtual hard disk (VHD) instead of a cloud-hosted environment, the downloader might fail.
 
-    - **Solution 1:** In a downloaded VHD, the Azure storage emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
+    - **Solution 1:** In a downloaded VHD, the Azure Storage Emulator must be installed and must be running correctly. Otherwise, the self-service packages can't be downloaded correctly.
     - **Solution 2:** A failure might have occurred during the process of integrating the VHD into Microsoft Hyper-V. You must manually edit permissions before the packages can be downloaded correctly. Follow these steps:
 
         1. In File Explorer, browse to **C:\\Microsoft Dynamics 365\\70\\Retail Server**.

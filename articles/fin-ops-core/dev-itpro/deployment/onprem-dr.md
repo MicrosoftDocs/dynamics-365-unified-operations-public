@@ -5,7 +5,7 @@ title: On-premises disaster recovery configuration
 description: This content describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery and the process for switching between the primary and secondary datacenters.
 author: faix
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -219,8 +218,6 @@ Run the following command against your business data database (AXDB):
 	UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
 ```
 
-> [!Note]
-> Version 10.0.13 hasn't been released yet. This information is provided for planning purposes. The content and the functionality for version 10.0.13 are subject to change. For more information about releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 #### Version 10.0.12 or earlier
 

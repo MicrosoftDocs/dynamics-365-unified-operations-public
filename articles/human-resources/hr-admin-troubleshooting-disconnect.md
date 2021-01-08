@@ -6,7 +6,7 @@ description: This article explains what to do if the customer is disconnected fr
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
-ms.article: article
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
 ms.technology: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

@@ -5,7 +5,7 @@ title: Price adjustments and discounts
 description: This article provides information about price adjustments and discounts in Dynamics 365 Commerce.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.search.form: RetailParameters, RetailPeriodicDiscount
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
@@ -46,11 +46,13 @@ Price adjustments and discounts can be applied to products, variants, or categor
 
 ## Types of discounts
 
-There are four types of discounts:
+There are many types of discounts:
 
 - **Simple discount** – A single percentage or amount.
 - **Quantity discount** – A discount that is applied when two or more products are purchased.
 - **Mix and match discount** – A discount that is applied when a specific combination of products is purchased.
 - **Threshold discount** – A discount that is applied when the transaction total is more than a specified amount.
+- **Tender-based discount** – A discount that is applied when the transaction total is more than a specified amount and a specific payment type (for example, cash, credit, or debit card) is used for payment.
+- **Shipping discount** – A discount that is applied when the transaction total is more than a specified amount and a specific mode of delivery (for example, two day shipping or overnight shipping) is used on the order.
 
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.

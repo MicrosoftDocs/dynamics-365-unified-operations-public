@@ -3,7 +3,7 @@
 
 title: Currency revaluation in a consolidation company
 description: This topic describes how to revalue currency in a consolidation company. 
-author: ShylaThompson
+author: roschlom
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -18,13 +18,13 @@ ms.search.form: LedgerExchAdjHist
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: hminzner
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

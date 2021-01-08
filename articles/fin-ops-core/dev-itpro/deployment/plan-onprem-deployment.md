@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 
@@ -45,7 +44,6 @@ This topic will help you plan and prepare for your on-premises deployment.
 The features in cloud deployments and on-premises deployments differ. These differences will affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)
 - [Comparison of cloud and on-premises features](../../fin-ops/get-started/cloud-prem-comparison.md)
-- [Features not implemented in on-premises deployments](../../fin-ops/get-started/features-not-implemented-on-prem.md)
 - [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
 
 ## How LCS is used with on-premises deployments
@@ -213,7 +211,7 @@ The following authentication methods are used with on-premises deployments:
 
 - **Azure Active Directory (Azure AD)** - Azure AD is the authentication method used to log in to LCS. Azure AD is used configure the LCS Local Agent. For more information, see [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)
 - **Active Directory Domain Services (AD DS)** - The machines that host Finance + Operations components must belong to an Active Directory domain. You must configure Active Directory Domain Services (AD DS) in native mode. For more information, see [Active Directory Domain Services](https://docs.microsoft.com/windows-server/identity/ad-ds/active-directory-domain-services).
-- **Active Directory Federation Services (AD FS)** - AD FS is the authentication method used in an on-premises deployment. AD FS provides access control and single sign on across a wide variety of applications including Office 365, cloud-based SaaS applications, and applications on the corporate network.
+- **Active Directory Federation Services (AD FS)** - AD FS is the authentication method used in an on-premises deployment. AD FS provides access control and single sign on across a wide variety of applications including Microsoft 365, cloud-based SaaS applications, and applications on the corporate network.
   - For the IT organization, it enables you to provide sign on and access control to both modern and legacy applications, on-premises and in the cloud, based on the same set of credentials and policies.
   - For the user, it provides seamless sign on using the same, familiar account credentials.
   - For the developer, it provides an easy way to authenticate users whose identities live in the organizational directory. This means you can focus your efforts on your application, not authentication or identity.

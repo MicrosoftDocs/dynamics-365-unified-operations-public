@@ -5,7 +5,7 @@ title: Provision a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -52,6 +52,7 @@ For information about how to configure your Commerce evaluation environment afte
 
 The following prerequisites must be in place before you can provision your Commerce evaluation environment:
 
+- You have been onboarded into the evaluation program and granted capacity for an evaluation environment.
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Commerce project.
 - You have administrator access to your Microsoft Azure subscription, or you're in contact with a subscription administrator who can assist you if required.
@@ -95,7 +96,7 @@ To deploy the environment, follow these steps.
 
 1. On the top menu, select **Cloud-hosted environments**.
 1. Select **Add** to add an environment.
-1. In the **Application version** field, select the most current version. If you have a specific need to select an application version other than the most current version, do not select a version prior to **10.0.8**.
+1. In the **Application version** field, select the most current version. If you have a specific need to select an application version other than the most current version, do not select a version prior to **10.0.14**.
 1. In the **Platform version** field, use the platform version that is automatically chosen for the application version you selected. 
 
     ![Selecting application and platform versions](./media/project1.png)
@@ -120,7 +121,7 @@ To deploy the environment, follow these steps.
 
 ### Initialize the Commerce Scale Unit (cloud)
 
-To initialize CSU, follow these steps.
+To initialize the CSU, follow these steps.
 
 1. In the **Cloud-hosted environments** view, select your environment in the list.
 1. In the environment view on the right, select **Full details**. The environment details view appears.
@@ -133,6 +134,22 @@ To initialize CSU, follow these steps.
 1. Before you continue, make sure that the status of your CSU is **Success**. Initialization takes approximately two to five hours.
 
 If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.
+
+During the deployment process, you might receive the following error message:
+
+> Evaluation (demo/test) environments need to register the scale unit connector application \<application ID\> in headquarters.
+
+If the CSU initialization fails and you receive this error message, make a note of the application ID, which is a globally unique identifier (GUID), and then follow the steps in the next section to register the CSU deployment application in Commerce headquarters.
+
+### Register the CSU deployment application in Commerce headquarters (if required)
+
+To register the CSU deployment application in Commerce headquarters, follow these steps.
+
+1. In Commerce headquarters, go to **System administration \> Setup \> Azure Active Directory applications**.
+1. In the **Client Id** column, enter the application ID from the CSU initialization error message that you received.
+1. In the **Name** column, enter any descriptive text (for example, **CSU Eval**).
+1. In the **User ID** column, enter **RetailServiceAccount**.
+1. Retry the CSU initialization and deployment from LCS.
 
 ### Initialize e-Commerce
 

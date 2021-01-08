@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -156,6 +156,8 @@ To create a new custom data action, follow this step.
 TypeScript files for new custom data actions are created under the \\src\\actions\\ directory. The name of each file uses the name of the data action. For the preceding example, the path and name of the file for the new custom data action are **\\src\\actions\\getProductReviews.ts**.
 
 ## Additional resources
+
+[Data action cache options](data-action-cache.md)
 
 [Test data actions with mocks](test-data-action-mocks.md)
 

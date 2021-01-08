@@ -3,7 +3,7 @@
 
 title: Configure workflow properties
 description: This topic explains how to configure the various properties of a workflow.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

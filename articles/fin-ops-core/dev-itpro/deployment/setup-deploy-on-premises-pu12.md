@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -154,8 +153,8 @@ The following prerequisite software is installed on the VMs by the infrastructur
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver 13 | <https://www.microsoft.com/download/details.aspx?id=53339> |
-| AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://www.microsoft.com/download/details.aspx?id=56567> |
+| AOS       | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
+| AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://aka.ms/downloadmsodbcsql> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
@@ -446,8 +445,8 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC driver 13 | <https://www.microsoft.com/download/details.aspx?id=53339> | msodbcsql.msi |
-    | SNAC – ODBC driver 17 | <https://www.microsoft.com/download/details.aspx?id=56567> | msodbcsql\_17.msi |
+    | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
+    | SNAC – ODBC driver 17 | <https://aka.ms/downloadmsodbcsql> | msodbcsql\_17.msi |
     | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
@@ -556,7 +555,7 @@ Use the on-premises agent certificate that you acquired from a certificate autho
 
 The on-premises agent certificate can be reused across multiple sandbox and production environments per tenant.
 
-Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
+Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft 365 for your organization is the global administrator for the directory.
 
 > [!IMPORTANT]
 > - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with LCS.
@@ -572,17 +571,24 @@ Only user accounts that have the Global Administrator directory role can add cer
     
     Install-Module Az
     Import-Module Az
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
 
     > [!IMPORTANT]
     > If you previously installed AzureRM, please remove it as it may not be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. For more information, [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az).
-  
+
 3. If the script indicates that the certificate isn't registered, run the following command.
 
     ```powershell
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint'
     ```
+
+> [!NOTE]
+> If you have multiple tenants associated with the login account, you can pass the tenant ID as a parameter to ensure that the context is set to the correct tenant.
+
+> ```powershell
+> .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
+> ```
 
 ### <a name="setupfile"></a> 12. Set up file storage
 
@@ -791,7 +797,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Set ALLOW_SNAPSHOT_ISOLATION ON
     3. Set the specified database file and log settings
     4. GRANT VIEW SERVER STATE TO axdbadmin
-    5. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
+    5. GRANT ALTER ANY EVENT SESSION TO axdbadmin
+    6. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
+    7. GRANT ALTER ANY EVENT SESSION TO [contoso\svc-AXSF$]
 
 2. Run the following command to reset the database users.
 
@@ -988,7 +996,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
 
-    ![Deploy](./media/Deploy.png)
+    ![Deploy your environment](./media/Deploy.png)
 
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
     - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
@@ -996,25 +1004,25 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
-    ![Preparing](./media/Preparing.png)
+    ![Preparation phase](./media/Preparing.png)
 
     Click **Full details** to take you to the environment details page, as shown below.
 
-    ![Details_Preparing](./media/Details_Preparing.png)
+    ![Environment details page](./media/Details_Preparing.png)
 
 5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. When deployment starts, the status will change to **Deploying**, as shown.
 
-    ![Deploying](./media/Deploying.png)
+    ![Status changes to Deploying](./media/Deploying.png)
 
-    ![Details_Deploying](./media/Details_Deploying.png)
+    ![Environment is deploying](./media/Details_Deploying.png)
 
     If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
-    ![Failed](./media/Failed.png)
+    ![Reconfigure button is available](./media/Failed.png)
 
     See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
 
-    ![Deployed](./media/Deployed.png)
+    ![Environment successfully deployed](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.

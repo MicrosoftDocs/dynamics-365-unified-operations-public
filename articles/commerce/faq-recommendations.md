@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: 
+#ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -92,6 +92,8 @@ After enabling product recommendations, you will need to add the recommendations
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
 [Add product recommendations on POS](product.md)
 

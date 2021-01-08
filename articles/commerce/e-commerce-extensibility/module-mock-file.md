@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -80,6 +80,8 @@ To add a mock file, create a new JavaScript Object Notation (JSON) file in the m
 To render a module by using a different mock file, run the **yarn start** command, and then open the following URL in a web browser: `https://localhost:4000/modules?type=MODULE_NAME:MODULE_NAME_TEST`.
 
 ## Additional resources
+
+[Modules overview](modules-overview.md)
 
 [Module definition file](module-definition-file.md)
 

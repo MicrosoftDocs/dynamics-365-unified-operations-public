@@ -5,7 +5,7 @@ title: Development in cloud-hosted development environments without admin access
 description: This topic demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -37,13 +36,13 @@ As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Pla
 
 You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. For more information about environments that don't allow administrator access, see [Development and build VMs that don't allow administrator access FAQ](../../dev-itpro/sysadmin/VMs-no-admin-access.md).
 
-If you deploy an environment using Microsoft Azure subscription in Lifecycle Services (LCS), then you will not have admin access in this environment. If you need admin access in your environment, use your Azure subscription and deploy the environment using LCS. You can also use the downloadable VHD and deploy it in your Azure virtual machine (VM) or host it locally to get full admin access.
+If you deploy an environment using Microsoft Azure subscription in LCS, then you will not have admin access in this environment. If you need admin access in your environment, use your Azure subscription and deploy the environment using LCS. You can also use the downloadable VHD and deploy it in your Azure virtual machine (VM) or host it locally to get full admin access.
 
 If you don’t have admin access in the environment, you will not be able to test and debug using Modern POS. You can still do all commerce customization for POS if you are testing the customization, you must use Cloud POS in that environment. From a customization perspective, there is no difference between Cloud POS and Modern POS - any customization will work both in Cloud POS and Modern POS. There is no additional logic or code for customization completed in Cloud POS in order to work in Modern POS or vice versa, unless you added logic that is browser-specific or UWP app- specific for Hardware and other scenarios. Another option is to do all development work in the environment using Modern POS and test it in some other environment where you have admin access to install MPOS. In most cases, you should be able to test using Cloud POS, expect if you want to test for offline scenarios. If you want to test offline scenarios, you can create a Modern POS installer using the build script, and then test it in your test environment or some other POS registers.
 
 **If you are using Cloud POS for development, set up the following configuration before opening the Cloud POS project**
 
-1. Open Visual Studio and click **View** > **Application Explorer**. Wait for Internet Information Services (IIS) Express to start with all the Commerce websites deployed. You should see the IIS tray icon in the task bar with all the websites running, such as Cloud POS and Commerce Scale Unit.
+1. Open Visual Studio and go to **View** > **Application Explorer**. Wait for Internet Information Services (IIS) Express to start with all the Commerce websites deployed. You should see the IIS tray icon in the task bar with all the websites running, such as Cloud POS and Commerce Scale Unit.
 4. To debug CRT/RS extensions, attach the CRT/RS project to the IIS Express process.
 5. When you open the Cloud POS project from the Retail SDK, IIS Express may fail with the following error. 
 
@@ -67,21 +66,29 @@ If you don’t have admin access in the environment, you will not be able to tes
         </application>
     ```
 5. Save the changes to **applicationhost.config** 
-6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the                      **applicationhost.config** file to a new location in **step 8**.
-7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated         with the default config files.
+6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the **applicationhost.config** file to a new location in **step 8**.
+7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated with the default config files.
 8. Copy the **applicationhost.config** file from the folder that you renamed in **step 6**, to the folder created in **step 7**. 
-9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the default **IISURL** node value to your Cloud POS URL.
+9. Edit ..\RetailSDK\POS\Web\Pos.Web.csproj and change the default **IISURL** node value to your Cloud POS URL and set **UseIIS** to false.
 ```    
-    Ex:  <IISUrl>https://YourCPOSURL.com</IISUrl>
+    Ex:  
+    <UseIIS>False</UseIIS>
+    <IISUrl>https://YourCPOSURL.com</IISUrl>
 ```
 10. Right-click the Pos.Web project and select **Properties**.
-11. In the **Properties** window, select the **Web** tab. Select the **Start URL radio** option and set the start URL as your Cloud POS URL. For example, `https://usnconeboxax1pos.cloud.onebox.dynamics.com`.
+11. In the **Properties** window, select the **Web** tab. Select the **Start URL radio** option and set the start URL as your Cloud POS URL and under the **Servers section select IIS Express as the server** from the drop down menu and set the **Project URL** as your cloud POS URL. 
+
+If you are using IIS for development (VMs with admin access), then you need to set the UseIIS node value to False and select Local IIS from the Server drop-down menu.
+
+For example, `https://usnconeboxax1pos.cloud.onebox.dynamics.com`.
+
 12. Save the changes.
+13. Right-click the Pos.Web project and select **Set as StartUp Project**.
+14. Press F5 to run the Pos.Web Project or click the **Run** button in the Visual Studio menu.
 
 ## Install the Developer topology prerequisites
 
 Cloud-hosted development environments do not include Typescript version 2.2.2 by default, and the default Windows host file does not contain the Cloud POS URL to use for local debugging. The **Developer topology prerequisites** package installs Typescript 2.2.2 and updates the Windows host file with your Cloud POS URL. Deploying the package will take a few minutes. 
-
 
 To install the Developer topology prerequisites:
 
