@@ -1,6 +1,39 @@
+---
+# required metadata
 
+title: Set up global withholding tax
+description: This topic lists the steps for setting up global withholding tax for sales and purchases. 
+
+author: roschlom
+manager: AnnBe
+ms.date: 01/12/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+# ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kailiang
+ms.search.validFrom: 2020-01-12
+ms.dyn365.ops.version: AX 10.0.17
+
+---
 
 # Set up global withholding tax
+
+This topic lists the steps for setting up global withholding tax for sales and purchases. 
 
 1. Set up withholding tax authorities on the **Withholding tax authorities** page.
 
@@ -10,7 +43,7 @@
 
    > [!Note] 
    >
-   > **Withholding tax** account shall be assigned with a main account with **Posting type** "Withholding tax". **Withholding tax offset** account shall be assigned with a main account with **Posting type** "Withholding tax offset". Go to **General ledger > Chart of accounts > Accounts > Main accounts**, set up the **Posting type** in the **Posting validation** sub-form for the main accounts.
+   > **Withholding tax** account will be assigned with a main account with **Posting type** of Withholding tax. **Withholding tax offset** account will also be assigned with a main account with **Posting type** "Withholding tax offset". Go to **General ledger > Chart of accounts > Accounts > Main accounts**, set up the **Posting type** in the **Posting validation** sub-form for the main accounts.
 
 4. Set up withholding tax codes on the **Withholding tax codes** page.
 
