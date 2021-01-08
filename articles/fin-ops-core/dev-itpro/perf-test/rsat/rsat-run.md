@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run and investigate results, and save your work back to Azure DevOps.
 
 ## Load test cases and create automation files
-In Azure DevOps, select **Load** to download test cases and test case automation files. All test cases (and their corresponding attachments) belonging to the test plan specified in the **Settings** dialog box are downloaded to the local working directory.
+In RSAT, select the Test Plans tab and then select **Load** to download test cases and test case automation files. All test cases (and their corresponding attachments) belonging to the test plan specified in the **Settings** tab are downloaded to the local working directory.
  
 ![Load test cases](media/load-test-cases.png)
 
@@ -118,10 +118,10 @@ You can modify the order in which test cases are executed using the up and down 
 You can add a pause before a test case starts execution. If you want to pause, update the cell **Pause (seconds)** on the **General** tab of the Excel parameters file of the desired test case.
 
 ### Stop a run
-When a test run is in progress, you can click the **Stop** button to cancel the run. Execution stops after the currently running test case completes. The remaining test cases will be marked as **Not Executed** in Azure DevOps.
+When a test run is in progress, you can select the **Stop** button on the toolbar to cancel the run. Execution stops after the currently running test case completes. The remaining test cases will be marked as **Not Executed** in Azure DevOps.
 
 ### Validate readiness of test automation files
-Optionally, you can turn on a setting that validates whether your test cases are ready for execution. This setting prevents unknown errors related to the validity of recordings and test automation files. This option is available as of RSAT version 1.210. You can enable this feature in the **Optional** tab of the **Settings** dialog.
+Optionally, you can turn on a setting that validates whether your test cases are ready for execution. This setting prevents unknown errors related to the validity of recordings and test automation files. This option is available as of RSAT version 1.210. You can enable this by select the **Settings** tab and then selecting the **Optional** tab.
 
 ![enable-local-file-validation-rules](media/enable-local-file-validation-rules.png)
 
@@ -176,15 +176,15 @@ In the upload menu, you also have the option to upload recording files (Task rec
 If you are unsure what test cases to select, and you want to commit all changes (since last load) to Azure DevOps, select **Upload all modified automation files** in the upload menu.
 
 ## Process compliance
-RSAT provides capabilities for managing the readiness of test cases. It also provides a sign-off process for test runs.
+RSAT provides capabilities for managing the readiness of test cases. It also provides a sign-off process for test runs. This is configurable in the **Process** tab under Settings.
 
 ![Process compliance file](media/rsat-process-compliance-settings.png)
 
 ### Enforce test case readiness
 
-You can set up the test case so that it isn't run unless it has a status of **Ready** in Azure DevOps. In the **Settings** dialog box, on the **Process** tab, select the **Enforce test case readiness** check box. By default, the check box is cleared.
+You can set up the test case so that it isn't run unless it has a status of **Ready** in Azure DevOps. Select the **Enforce test case readiness** check box. By default, the check box is cleared.
 
 ### Signoffs
 
-When your test run is completed, RSAT can create sign-off work items in Azure DevOps. In the **Settings** dialog box, on the **Process** tab, select the **Sign-off tasks** check box. Then set the type of work item that should be created for each person who signs off. You can select **Functional**, **IT Manager** and **Team Manager** roles for sign-offs, and then specify appropriate email addresses. Work items will then be created in Azure DevOps and assigned to owners for approval.
+When your test run is completed, RSAT can create sign-off work items in Azure DevOps. Select the **Sign-off tasks** check box. Then set the type of work item that should be created for each person who signs off. You can select **Functional**, **IT Manager** and **Team Manager** roles for sign-offs, and then specify appropriate email addresses. Work items will then be created in Azure DevOps and assigned to owners for approval.
 
