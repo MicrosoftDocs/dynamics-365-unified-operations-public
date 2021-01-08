@@ -2,7 +2,7 @@
 # required metadata
 
 title: Withholding tax in sales transactions
-description: This topic lists the steps to avoid calculation of withholding tax for selected customers. This topic For customers who withhold taxes on their payments to you, you can assign the default **Withholding tax group** on the **Customer master** page. 
+description: This topic lists the steps for avoiding the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default withholding tax group. 
 
 author: roschlom
 manager: AnnBe
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: AX 10.0.16
 
 # Withholding tax in sales transactions
 
-This topic lists the steps to avoid calculation of withholding tax for selected customers. For customers who withhold taxes on their payments to you, you can assign the default **Withholding tax group** on the **Customer master** page. 
+This topic lists the steps for avoiding the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default **Withholding tax group** on the **Customers** page. 
 
 1. Go to **Navigation pane > Modules > Accounts receivable > Customers > All customers**.
 
-2. Click the respective Customer account, click **Edit**.
+2. Click the respective customer account, click **Edit**.
 
 3. In sub-form **Invoice and delivery**, switch on **Calculate withholding tax**.
 
@@ -54,21 +54,19 @@ For items/services which are liable to withholding tax, you can assign the defau
 
 2. Click the respective Item number, click **Edit**.
 
-3. In sub-form **Sell**, switch on **Calculate withholding tax**.
+3. In **Sell** tab, click **Calculate withholding tax**.
 
    > [!NOTE] 
    > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this Item in the sub-form **Sell** of the Released product.
 
-4. Select an Item withholding tax group in **Item withholding tax group**.
+4. Select an Item withholding tax group in **Item withholding tax group** list.
 
 5. Click **Save**.
 
-Withholding tax groups and Item withholding tax groups can be assigned in form: 
+Withholding tax groups and Item withholding tax groups can be assigned using the **Sales order** page. 
 
-- **Sales order**
+The default Withholding tax group and Item withholding tax group will be usesd as default entries on sales order lines when you create a new sales order.
 
-The default Withholding tax group and Item withholding tax group will be carried into the lines when creating **Sales orders**.
+Withholding tax is calculated and posted with **Customer payment journal**. You can manually adjust the applicable withholding tax code, as well as the actual withholding tax amount in the **Withholding tax** tab on the **Settle transactions** page.
 
-Withholding tax is calculated and posted with **Customer payment journal**. You can manually adjust the applicable withholding tax code as well as the actual withholding tax amount in the **Withholding tax** tab of the **Settle transactions** form.
-
-The derived withholding tax amount will be deducted from the customer payment and posted to the **Withholding tax offset** account in a related voucher.
+The calculated withholding tax amount will be deducted from the customer payment and posted to the **Withholding tax offset** account in a related voucher.
