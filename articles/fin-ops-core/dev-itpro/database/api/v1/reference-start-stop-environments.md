@@ -32,6 +32,7 @@ ms.dyn365.ops.version: 10.0.0
 [!include [banner](../../../includes/banner.md)]
 
 You can start and stop of environments through Lifecycle Services (LCS) via this API. Using these APIs will ensure the LCS environment status is synced with the actual environment. 
+
 Note that the same validation rules from the details page in Microsoft Dynamics Lifecycle Services (LCS) apply to the application programming interface (API).
 
 > [!NOTE]
