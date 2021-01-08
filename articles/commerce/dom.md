@@ -5,7 +5,7 @@ title: Distributed order management (DOM)
 description: This topic describes the distributed order management (DOM) functionality in Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -55,6 +55,8 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
         > [!NOTE]
         > You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the **Commerce shared parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
+	> The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal now allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature customers can define a strict set of referrer values or IP address ranges that the key will be validated against. Requests originating from your allow list will process normally, while requests from outside of your list will return an access denied response. Adding domain security to your API key is completely optional and keys left as-is will continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management does not support the setting up of domain-referred properties.
+
 
     - **Retention period in days** – Specify how long the fulfillment plans that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job will delete any fulfillment plan that is older than the number of days that you specify here.
     - **Rejection period (in days)** – Specify how much time must pass before a rejected order line can be assigned to the same location.
@@ -73,7 +75,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         > [!NOTE]
         > The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.
         >
-        > Although the Simplified Solver provides the same set of capabilities as the Production Solver, there are limitations as to performance (the number of orders and order lines that can be handled in a run) and convergence of results (a batch of orders might not yield the best result in some scenarios).
+        > The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). Some rules like the **Partial orders** rule and the **Maximum number of locations** rule require Production Solver.
 	 
 6. Go back to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 7. On the **Number sequences** tab, assign the required number sequences to the various DOM entities.
@@ -125,7 +127,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         \* If **Fulfill partial orders** is set to **No**, **Fulfill partial lines** is always considered to be set to **No**, regardless of how it's actually set.
 
 		> [!NOTE]
-		> In Retail version 10.0.5, the parameter **Fulfill order from one location only** was changed to **Maximum fulfilling locations**. Instead of allowing a user to configure whether orders can be fulfilled from one location only or fulfilled from as many locations as it can be, users can now specify whether the fulfillment can be from a definite set of locations (up to 5) or from as many locations as it can be. This provides more flexibility in terms of how many locations the order can be fulfilled from.
+		> In Retail version 10.0.5, the parameter **Fulfill order from one location only** was changed to **Maximum fulfilling locations**. Instead of allowing a user to configure whether orders can be fulfilled from one location only or fulfilled from as many locations as it can be, users can now specify whether the fulfillment can be from a definite set of locations (up to 5) or from as many locations as it can be. This provides more flexibility in terms of how many locations the order can be fulfilled from. This rule only works with Production Solver. 
 
    - **Offline fulfillment location rule** – This rule lets organizations specify a location or group of locations as offline or unavailable to DOM, so that orders can't be assigned to those locations for fulfillment.
     - **Maximum rejects rule** – This rule lets organizations define a threshold for rejections. When the threshold is reached, the DOM processor will mark an order or order line as an exception, and exclude it from further processing.
