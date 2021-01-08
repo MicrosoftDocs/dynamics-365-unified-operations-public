@@ -5,7 +5,7 @@ title: Work with serialized items in the POS
 description: This topic explains how to manage serialized items in the point of sale (POS) application.
 author: boycezhu
 manager: annbe
-ms.date: 01/06/2021
+ms.date: 01/08/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -110,7 +110,7 @@ When the **Enhanced serial number validation in POS order capture and order fulf
 When items are sold in POS that are configured with an **Active** serial number tracking dimension, POS initiates validation logic that prevents users from completing the sale of a serialized item with a serial number that can't be found in the selling warehouse’s current inventory. There are two exceptions to this validation rule:
 
 - If the item is also configured with **Blank issue allowed** enabled, users can skip the entry of the serial number and sell the item with no serial number designation.
-- If the item and/or the selling warehouse is configured with **Physical negative inventory** enabled, the application accepts and sells a serial number that can't be confirmed to be in inventory at the warehouse it’s being sold against. This configuration allows the inventory transaction for that specific item/serial number to go negative, and therefore the system will allow for sales of unknown serial numbers.
+- If the item and/or the selling warehouse is configured with **Physical negative inventory** enabled, the application accepts and sells a serial number that can't be confirmed to be in inventory at the warehouse that it’s being sold against. This configuration allows the inventory transaction for that specific item/serial number to go negative, and therefore the system will allow for sales of unknown serial numbers.
 
 > [!IMPORTANT]
 > To ensure that the POS application can properly validate whether the serial numbers being sold for **Active** serial type items are in the selling warehouse's inventory, it's required that organizations run the **Product availability with tracking dimensions** job in Commerce headquarters and the accompanying **1130** product availability distribution job through Commerce headquarters on a frequent basis. As new serialized inventory is received into selling warehouses, in order for the POS to validate inventory availability of serial numbers being sold, the inventory master must frequently update the channel database with the most up-to-date inventory availability data. The **Product availability with tracking dimensions** job takes a current snapshot of master inventory, including serial numbers, for all company warehouses. The **1130** distribution job takes that inventory snapshot and shares it with all configured channel databases.
@@ -119,9 +119,9 @@ When items are sold in POS that are configured with an **Active** serial number 
 
 Items configured with the serial dimension as **Active in sales process** don't go through any inventory validation logic, as this configuration implies that the inventory serial numbers aren't pre-registered into stock and the serial numbers are only captured at the time of sale.  
 
-If **Blank issue allowed** is also configured for **Active in sales process** configured items, the serial number entry can be skipped. But if **Blank issue allowed** isn't configured, the application requires the user to enter a serial number, even though it won’t be validated against available inventory.
+If **Blank issue allowed** is also configured for **Active in sales process** configured items, the serial number entry can be skipped. If **Blank issue allowed** isn't configured, the application requires the user to enter a serial number, even though it won’t be validated against available inventory.
 
-### Apply serial numbers during creation of POS transaction
+### Apply serial numbers during creation of POS transactions
 
 The POS application immediately prompts users for serial number capture when selling a serialized item, but the application allows users to skip the entry of serial numbers up to a certain point in the selling process. When the user begins to capture payment, the application enforces and requires serial number entry for any items that aren't configured to be fulfilled through future shipments or pickups. Any serialized items configured for cash and carry or carryout fulfillment require the user to capture the serial number (or agree to leave it blank if the item configuration allows for it) before completing the sale.
 
