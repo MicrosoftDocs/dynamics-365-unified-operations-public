@@ -150,7 +150,7 @@ Set up a container packing policy by doing the following:
 1. On the Action Pane, select **New** to add a new container packing policy.
 1. In the header of the new policy, make the following settings:
     - **Container packing policy** - *Demo packing policy*.
-    - **Description** - Enter a description og the policy.
+    - **Description** - Enter a description of the policy.
 1. On the **Overview** FastTab, make the following settings:
     - **Warehouse** - *62*
     - **Default location for final shipment** - *Baydoor*
@@ -162,8 +162,8 @@ Set up a container packing policy by doing the following:
     - **Manifest requirements for container** - *Transportation management*
     - **Print container contents** - *No*
 1. On the **Carrier label printing** FastTab, make the following settings:
-    - **Printer name** - Set to the name of the ZPL printer where you want to print shipping labels.
     - **Print container shipping label** - *Always*
+    - **Printer name** - Set to the name of the ZPL printer where you want to print shipping labels.
 
 
 #### Set up a packing profile
@@ -219,6 +219,7 @@ Create a new sales order by doing the following:
 1. Close the **Reservation** page to return to the sales order.
 1. On the Action Pane, open the **Warehouse** tab and select **Release to warehouse**.
 1. Work is now created to move items from the picking location to the pack station.
+1. In the **Sales order lines** section, select **Warehouse \> Shipment details**.  Make a note of the Shipment ID from this page - it will be needed later in the packing station.  You can close the shipment form.
 1. Take a note of your sales order number and then go to **Warehouse management \> Work \> All work**.
 1. Referring to the sales order number you noted previously, select the work created for the order.
 1. On the Action Pane, open the **Work** tab and then select **Complete work**.
@@ -238,7 +239,7 @@ Pack the shipment by doing the following:
     - **Location** - *Pack*
     - **Packing profile ID** - *Demo packing profile*
 1. Select **OK**.
-1. The **Pack** page opens. In a production scenario, a worker would now scan a license plate or shipment ID. For this scenario, go to the **All shipments** page and look up the shipment number for the shipment you just created. Enter this number into the **License plate or shipment** field.
+1. The **Pack** page opens. In a production scenario, a worker would now scan a license plate or shipment ID. For this scenario, go to the **All shipments** page and look up the shipment number for the shipment you just created or use the Shipment ID previously noted. Enter this number into the **License plate or shipment** field.
 1. On the Action Pane, select **New container**.
 1. A dialog box opens showing details about the new container. Leave the default values and select **OK**.
 1. You return to the **Pack** page. On the **Item packing** FastTab, select *A0002* from the **Identifier** drop-down list to pack that item. The item is then added to the container.
