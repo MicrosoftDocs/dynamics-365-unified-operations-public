@@ -5,7 +5,7 @@ title: Supply Chain Management home page
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: kamaybac
 manager: tfehr
-ms.date: 06/30/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -94,7 +94,6 @@ The following tech conference recordings discuss supply chain management functio
   - [Product configurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Warehouse management:**
   - [Get the best out of your warehouse management system](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Production control videos:**
   - [Subcontracting operations and activities in manufacturing](https://youtu.be/y1jrd3A_k70)
