@@ -101,7 +101,7 @@ Configure your connection to the test environment.
 
 + **Hostname** – The hostname of the test environment, such as myhost.cloudax.dynamics.com. Don't include the https:// or http:// prefix.
 + **SOAP Hostname** – The SOAP hostname of the test environment. 
-    + For demo, test and dev environments, add a **soap** suffix to the hostname. For example, if your hostname is myhost.cloudax.dynamics.com, use myhost**soap**.cloudax.dynamics.com as the SOAP hostname.
+    + For demo and dev environments (also known as one-box environments), add a **soap** suffix to the hostname. For example, if your hostname is myhost.cloudax.dynamics.com, use myhost**soap**.cloudax.dynamics.com as the SOAP hostname.
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
     + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal the hostname.
 
