@@ -2,7 +2,7 @@
 # required metadata
 
 title: Withholding tax in purchase transactions
-description: For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **Vendor master** page.
+description: For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **All vendors** page.
 author: roschlom
 manager: AnnBe
 ms.date: 01/12/2021
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.16
 
 # Withholding tax in purchase transactions
 
-For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **Vendor master** page.
+For vendors who are liable to withholding tax, you can assign the default **Withholding tax group** on the **All vendors** page.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Vendors > All vendors**.
 
@@ -41,7 +41,7 @@ For vendors who are liable to withholding tax, you can assign the default **With
 3. In sub-form **Invoice and delivery**, switch on **Calculate withholding tax**.
 
    > [!NOTE] 
-   > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this vendor in the master data.
+   > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this vendor in the data.
 
 4. Select a withholding tax group in **Withholding tax group**.
 
@@ -53,16 +53,16 @@ For items/services which are liable to withholding tax, you can assign the defau
 
 2. Click the respective Item number, click **Edit**.
 
-3. In sub-form **Purchase**, switch on **Calculate withholding tax**.
+3. In **Purchase** tab, click **Calculate withholding tax**.
 
    > [!NOTE] 
-   > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this Item in the sub-form **Purchase** of the Released product.
+   > Withholding tax will not be calculated if **Calculate withholding tax** isn't set to **Yes** for this Item in the **Purchase** tab on the **Released product** page.
 
-4. Select an Item withholding tax group in **Item withholding tax group**.
+4. Select an item withholding tax group in **Item withholding tax group** list.
 
 5. Click **Save**.
 
-Withholding tax groups and Item withholding tax groups can be assigned in forms: 
+Withholding tax groups and Item withholding tax groups can be assigned in pages: 
 
 - **Purchase order**
 - **Vendor invoice**
@@ -74,9 +74,9 @@ The temporary amount of withholding tax is available in the field **Adjusted wit
 
 ![Withholding tax is included on the purchase order](media/withholding-tax-adjusted.png)
 
-Withholding tax is calculated on **Vendor payment journal**. You can manual adjust the applicable withholding tax codes as well as the actual withholding tax amounts in the **Withholding tax** tab in the **Settle transactions** form.
+Withholding tax is calculated on **Vendor payment journal**. You can manually adjust the applicable withholding tax codes as well as the actual withholding tax amounts in the **Withholding tax** tab on the **Settle transactions** page.
 
-![](media/withholding-tax-vendor-payment-tab.png)
+![Withholding can be manually adjusted on the Settle transactions page](media/withholding-tax-vendor-payment-tab.png)
 
 The derived withholding tax amount will be deducted from the vendor payment and posted to the **Withholding tax account** in a related voucher.
 
