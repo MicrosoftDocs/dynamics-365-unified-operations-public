@@ -99,6 +99,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
++ [Onhand inventory availability](inventory-availability.md)
 
 ## Support
 

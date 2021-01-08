@@ -5,7 +5,7 @@ title: Customer orders in Point of Sale (POS)
 description: This topic provides information about customer orders in Point of Sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
-ms.date: 12/16/2020
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -57,9 +57,9 @@ To use customer orders, you must configure modes of delivery that the store chan
 
 ### Set up fulfillment groups
 
-Some stores or warehouse locations might not be able to fulfill customer orders. By configuring fulfillment groups, an organization can specify which stores and warehouse locations are shown as options to users who create customer orders in POS. Fulfillment groups are configured on the **Fulfillment groups** page. Organizations can create as many fulfillment groups as they require. After a fulfillment group is defined, it's linked to a store by using a button on the **Set up** tab on the Action Pane of the **Stores** page.
+Some stores or warehouse locations might not be able to fulfill customer orders. By configuring fulfillment groups, an organization can specify which stores and warehouse locations are shown as options to users who create customer orders in POS. Fulfillment groups are configured on the **Fulfillment groups** page. Organizations can create as many fulfillment groups as they require. After a fulfillment group is defined, link it to a store by selecting **Fulfillment group assignment** from the **Set up** tab on the Action Pane of the **Stores** page.
 
-In Commerce version 10.0.12 and later, organizations can define whether the warehouse or warehouse/store combinations that are defined in fulfillment groups can be used for shipping, for pickup, or for both shipping and pickup. Therefore, the store has additional flexibility to drive the warehouse and store options that are shown to users who create an order for pickup versus an order for shipment. To take advantage of these configuration options, you must turn on the **Ability to specify locations as "Shipping" or "Pickup" enabled within Fulfillment group** feature. If a warehouse that is linked to a fulfillment group isn't a store, it can be configured only as a shipping location. It can't be used when orders for pickup are configured in POS.
+In Commerce version 10.0.12 and later, organizations can define whether the warehouse or warehouse and store combinations that are defined in fulfillment groups can be used for shipping, for pickup, or for both shipping and pickup. This allows for added flexibility for the business to determine which warehouses can be selected when creating a customer order for items to ship vs. which stores can be selected when creating a customer order for items to pick up. To use these configuration options, turn on the **Ability to specify locations as "Shipping" or "Pickup" enabled within Fulfillment group** feature. If a warehouse that's linked to a fulfillment group isn't a store, it can be configured only as a shipping location. It can't be used when orders for pickup are configured in POS.
 
 ![Fulfillment groups page](media/customer-order-fulfillment-group.png)
 
@@ -124,23 +124,21 @@ Make sure that the POS [screen layout](https://docs.microsoft.com/dynamics365/co
 
 1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
-3. Select **Pick up selected** or **Pick up all** to initiate the order pickup configuration.
+3. Select **Pick up selected** or **Pick up all** to initiate the order pick up configuration.
 4. Select the store location where the customer will pick up the selected products.
-5. Select a pickup date.
+5. Select a date when the item will be picked up.
 6. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
-7. If the full order total wasn't paid, select whether the customer will provide payment later (at pickup), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
+7. If the full order total wasn't paid, select whether the customer will provide payment later (at pick up), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
 
 ### Edit an existing customer order
 
 Retail orders that are created in either the online or store channel can be recalled and edited through POS as required.
 
 > [!IMPORTANT]
-> Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in Commerce headquarters.
+> Not all retail orders can be edited through the POS application. Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in Commerce headquarters.
 
-In Commerce version 10.0.13 and earlier, users can edit supported customer orders through POS only if the orders are fully open. If any lines of an order have already been processed to fulfillment (pick, pack, and so on), the order becomes locked for editing in POS.
+In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature is not enabled, or if you're using version 10.0.16 or earlier, users will only be able to edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. The option to disable this capability for specific stores can be configured through the **Functionality profile** under the **General** FastTab.
 
-> [!NOTE]
-> In Commerce version 10.0.14, a feature that has been released in [public preview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) lets POS users edit customer orders through POS, even if some of the order has already been fulfilled. However, orders that are fully invoiced still can't be edited through POS. To test this preview feature and provide additional feedback, turn on the **(Preview) Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. Customer orders that originated in a call center channel and that use Enable order completion functionality can't be edited even after this feature is enabled.
 
 1. Select **Recall order**.
 2. Use **Search** to enter filters to find the order, and then select **Apply**.

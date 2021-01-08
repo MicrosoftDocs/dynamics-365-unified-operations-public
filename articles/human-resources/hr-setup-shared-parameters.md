@@ -18,7 +18,7 @@ ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+# ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
