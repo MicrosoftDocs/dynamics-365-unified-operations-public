@@ -38,7 +38,7 @@ For vendors who are liable to withholding tax, you can assign the default **With
 
 2. Click the respective Vendor account, click **Edit**.
 
-3. In sub-form **Invoice and delivery**, switch on **Calculate withholding tax**.
+3. In **Invoice and delivery** tab, set the **Calculate withholding tax** field to **Yes**.
 
    > [!NOTE] 
    > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this vendor in the data.
@@ -70,7 +70,7 @@ Withholding tax groups and Item withholding tax groups can be assigned in pages:
 
 The default Withholding tax group and Item withholding tax group will be carried into the lines when creating **Purchase orders** and/or **Pending Vendor invoices**. For **Vendor invoice journal**, you can switch on **Calculate withholding tax** and select **Item withholding tax group** in the **General** tab in the journal.
 
-The temporary amount of withholding tax is available in the field **Adjusted withholding tax** of the sub-form **Totals** on the **Purchase order**.
+The temporary amount of withholding tax is available in the field **Adjusted withholding tax** of the **Totals** tab on the **Purchase order** page.
 
 ![Withholding tax is included on the purchase order](media/withholding-tax-adjusted.png)
 
