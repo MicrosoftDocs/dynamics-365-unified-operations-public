@@ -62,11 +62,17 @@ You must generate test execution files when you install a new version of the too
 
 ## Modify test parameters
 
-This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases to modify, and then select the Microsoft Excel symbol on the toolbar. An Excel window is opened for each test case that you selected. Alternatively, you can open the Excel files directly from the working directory. 
+This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases to modify, and then select the **Parameters** button (Microsoft Excel symbol) on the toolbar. An Excel window is opened for each test case that you selected. Alternatively, you can open the Excel files directly from the working directory.
 
-In addition to the **General** tab, the Excel parameter file contains a data tab for every form that the test case visits.
+In addition to the **General** tab, the Excel parameter file contains a **MessageValidation** tab and a **TestCaseSteps** tab.
 
-Select the desired form (Excel tab) that you want to edit and identify the parameter values that you want to change. Values are identified by their control name. If you are not sure which control is correct, open the form in the application, right-click the control whose value you want to change, and select **form information**.
+Select the TestCaseSteps tab to configure input and validation parameters of your test case. Input and validation parameters are placed directly next to their corresponding test case step, enabling test authors with context and a simple experience. When you modify parameters, it is clear what steps of the test case you are affecting. You can enter values or formulas in context. Color coding differentiates input parameters from validation steps.
+
+![Test case steps](media/test-case-steps.png)
+
+Reusable variables that are copied while recording the test case are also shown in context of the test case step. You can easily locate a variable and copy it to use in subsequent steps and formulas. See ![this topic](rsat-chain-test-cases.md) for more details.
+
+![Test case steps variables](media/test-case-steps-rsat-var.png)
 
 Save the Excel files when you are done making edits.
 
