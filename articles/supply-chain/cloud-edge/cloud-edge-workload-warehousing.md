@@ -58,10 +58,10 @@ The scale units own the following data:
 - **Wave processing data** – Selected wave process methods are handled as part of the scale unit wave processing.
 - **Work processing data** – The following types of work order processing are supported:
 
-    - Inventory movements (manual movement and movement by template work)
-    - Purchase orders (putaway work via a warehouse order when purchase orders are not associated with loads)
-    - Sales orders (simple picking and loading work)
-    - Transfer orders (only outbound with simple picking and loading work)
+  - Inventory movements (manual movement and movement by template work)
+  - Purchase orders (putaway work via a warehouse order when purchase orders are not associated with loads)
+  - Sales orders (simple picking and loading work)
+  - Transfer orders (only outbound with simple picking and loading work)
 
 - **Warehouse order receipt data** – This data is used only for purchase orders that are manually released to a warehouse.
 - **License plate data** – License plates can be created on the hub and the scale unit. Dedicated conflict handling has been provided. Note that this data isn't warehouse-specific.
