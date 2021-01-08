@@ -334,9 +334,9 @@ The built-in module library set of modules and themes may have localized resourc
 }
 ```
 
-### Override resource strings for pre-installed themes
+### Override resource strings for preinstalled themes
 
-To override resource strings for pre-installed themes (fabrikam or starter), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text on the fabrikam theme: 
+To override resource strings for preinstalled themes (fabrikam or starter), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text on the fabrikam theme: 
 
 ```json
 "@msdyn365-commerce-modules.fabrikam.signInLinkText": {
