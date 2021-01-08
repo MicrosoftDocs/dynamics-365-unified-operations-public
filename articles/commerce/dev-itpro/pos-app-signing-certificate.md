@@ -33,7 +33,9 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-To install Modern POS (MPOS) you must sign the MPOS app with a signing certificate from a trusted provider. To sign the MPOS app with a certificate, use one of these options in the **Retail SDK\\Build tool\\Customization.settings** file:
+To install Modern POS (MPOS) you must sign the MPOS app with a code signing certificate from a trusted provider and install the same certificate on all the machines where MPOS is installed under the trusted root folder for the current user.
+
+To sign the MPOS app with a certificate, use one of these options in the **Retail SDK\\Build tool\\Customization.settings** file:
 
 - Add the Secure file task part of Azure DevOps build steps and upload the certificate to secure the file task. Use the secure file task output path variable as a parameter in the Customization.settings file.
 
