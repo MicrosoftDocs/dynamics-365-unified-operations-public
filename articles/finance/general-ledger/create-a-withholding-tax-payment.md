@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a withholding tax payment
-description: 
+description: The Withholding tax payment job procedure settles withholding tax balances from Accounts payable on withholding tax accounts, and offsets them to the withholding tax settlement account for a given period. This topic lists the steps for setting up a withholding tax payment.
 author: roschlom
 manager: AnnBe
 ms.date: 01/12/2021
@@ -32,10 +32,10 @@ ms.dyn365.ops.version: AX 10.0.16
 
 # Create a withholding tax payment
 
-The Withholding tax payment job procedure settles withholding tax balances from accounts payable on withholding tax accounts, and offsets them to the withholding tax settlement account for a given period.
+The Withholding tax payment job procedure settles withholding tax balances from Accounts payable on withholding tax accounts, and offsets them to the withholding tax settlement account for a given period. This topic lists the steps for setting up a withholding tax payment.
 
 > [!NOTE] 
-> Withholding tax offset (from accounts receivable) is not considered in withholding tax payment.
+> Withholding tax offset (from accounts receivable) is not taken into account when a withholding tax payment is calculated.
 
 1. Go to **Navigation pane > Modules > Tax > Declarations > Withholding tax > Withholding tax payment**.
 2. In the **Settlement period** field, click the drop-down button to open the lookup.
@@ -45,4 +45,4 @@ The Withholding tax payment job procedure settles withholding tax balances from 
 6. Switch on **Update** to post withholding tax payment voucher to the withholding tax settlement account.
 7. Click **OK**.
 
-![](media/withholding-tax-payment.png)
+![Parameters for withholding tax payment](media/withholding-tax-payment.png)
