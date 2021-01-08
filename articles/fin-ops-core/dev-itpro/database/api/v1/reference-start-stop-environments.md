@@ -36,7 +36,7 @@ You can start and stop of environments through Lifecycle Services (LCS) via this
 Note that the same validation rules from the details page in Microsoft Dynamics Lifecycle Services (LCS) apply to the application programming interface (API).
 
 > [!NOTE]
-> - Only Customer Managed and Microsoft Managed environments are supported. Self Service environments do not have the same concept of stop and start and are not supported by this API. These APIs will trigger/invoke the operation and successful response only indicates the trigger was successful.
+> - Only **Customer Managed** and **Microsoft Managed** environments are supported. Self Service environments do not have the same concept of stop and start and are not supported by this API. These APIs will trigger/invoke the operation and successful response only indicates the trigger was successful.
 > - For **stop**, non-success will be returned if the environment is already undergoing another operation or if the environment is already stopped.
 > - For **start**, non-success will be returned if the environment is already undergoing another operation but will return success if the environment is already started.
 
