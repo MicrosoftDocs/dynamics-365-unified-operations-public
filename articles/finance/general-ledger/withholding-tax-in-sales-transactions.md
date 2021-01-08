@@ -39,7 +39,7 @@ This topic lists the steps for avoiding the calculation of withholding tax for s
 
 2. Click the respective customer account, click **Edit**.
 
-3. In sub-form **Invoice and delivery**, switch on **Calculate withholding tax**.
+3. In the **Invoice and delivery** tab, set the **Calculate withholding tax** field to **Yes**.
 
    > [!NOTE] 
    > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this customer in the master data.
@@ -54,10 +54,10 @@ For items/services which are liable to withholding tax, you can assign the defau
 
 2. Click the respective Item number, click **Edit**.
 
-3. In **Sell** tab, click **Calculate withholding tax**.
+3. In the **Sell** tab, click **Calculate withholding tax**.
 
    > [!NOTE] 
-   > Withholding tax will not be calculated if **Calculate withholding tax** is not switched on for this Item in the sub-form **Sell** of the Released product.
+   > Withholding tax will not be calculated if **Calculate withholding tax** is not set to **Yes** for this Item in the **Sell** tab on the **Released product** page.
 
 4. Select an Item withholding tax group in **Item withholding tax group** list.
 
