@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
+      "redirect_url": "/dynamics365/fasttrack/",
       "redirect_document_id": "false"
     },
     {
@@ -3487,7 +3487,7 @@
     },
     {
       "source_path": "articles/dev-itpro/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
+      "redirect_url": "/dynamics365/fasttrack/",
       "redirect_document_id": "false"
     },
     {
@@ -9182,7 +9182,7 @@
     },
     {
       "source_path": "articles/fin-and-ops/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "https://aka.ms/d365fasttrackdocs​",
+      "redirect_url": "/dynamics365/fasttrack/",
       "redirect_document_id": "false"
     },
     {
