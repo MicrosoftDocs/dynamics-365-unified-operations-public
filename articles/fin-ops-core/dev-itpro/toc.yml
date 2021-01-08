@@ -224,6 +224,8 @@
               items:
                 - name: Support for Field Service solutions and Project Service Automation solutions
                   href: data-entities/dual-write/field-service-project-service-automation.md
+                - name: Migrate Prospect to cash data from Data Integrator to dual-write
+                  href: data-entities/dual-write/migrate-prospect-to-cash.md
                 - name: Troubleshooting
                   items:
                   - name: Verify that dual-write is configured in Finance and Operations apps and Dataverse
