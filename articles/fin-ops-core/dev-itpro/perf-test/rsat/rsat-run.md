@@ -68,9 +68,9 @@ In addition to the **General** tab, the Excel parameter file contains a **Messag
 
 Select the TestCaseSteps tab to configure input and validation parameters of your test case. Input and validation parameters are placed directly next to their corresponding test case step, enabling test authors with context and a simple experience. When you modify parameters, it is clear what steps of the test case you are affecting. You can enter values or formulas in context. Color coding differentiates input parameters from validation steps.
 
-![Test case steps](media/test-case-steps.png)
+![Test case steps](media/test-case-steps.PNG)
 
-Reusable variables that are copied while recording the test case are also shown in context of the test case step. You can easily locate a variable and copy it to use in subsequent steps and formulas. See ![this topic](rsat-chain-test-cases.md) for more details.
+Reusable variables that are copied while recording the test case are also shown in context of the test case step. You can easily locate a variable and copy it to use in subsequent steps and formulas. See [this topic](/rsat-chain-test-cases.md) for more details.
 
 ![Test case steps variables](media/test-case-steps-rsat-var.png)
 
