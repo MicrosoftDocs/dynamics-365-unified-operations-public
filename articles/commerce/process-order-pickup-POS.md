@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Process a customer order pick up through POS
+title: Process a customer order pickup in POS
 description: This topic explains functionality available in the point of sale application for processing a customer order pickup.
 manager: annbe
 ms.date: 01/06/2021
@@ -26,7 +26,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 ---
 
-# Process a customer order pickup POS
+# Process a customer order pickup in POS
 
 When a [customer order](customer-orders-overview.md) is created for a store pickup, the point of sale (POS) application allows store users to initiate the pick up of inventory.  POS will execute the final payment capture if needed, and finalize the inventory and financial posting steps for the product quantities that are picked up.
 
