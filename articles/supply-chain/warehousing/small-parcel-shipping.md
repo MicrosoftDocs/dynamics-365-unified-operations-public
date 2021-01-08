@@ -1,5 +1,35 @@
+---
+# required metadata
+
+title: Small parcel shipping
+description: The small parcel shipping (SPS) feature enables Supply Chain Management to submit details about a packed container to your carrier and receive back a shipping label, shipping rate, and tracking number
+author: Mirzaab
+manager: tfehr
+ms.date: 01/08/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: mirzaab
+ms.search.validFrom: 2021-01-08
+ms.dyn365.ops.version: Release 10.0.16
+---
 
 # Small parcel shipping
+
+[!include [banner](../includes/banner.md)]
 
 The small parcel shipping (SPS) feature allows Supply Chain Management to interact directly with shipping carriers by providing a framework for communicating through carrier APIs. This is useful for when you are shipping individual sales orders via commercial shipping carriers as opposed to using container shipping or less than truckload (LTL) shipping.
 
