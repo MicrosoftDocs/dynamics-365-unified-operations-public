@@ -1,9 +1,9 @@
 
 # Small parcel shipping
 
-The small parcel shipping (SPS) feature rates packed containers and fetches the required tracking numbers. It also calculates freight cost and can print shipping labels using a Zebra Programming Language (ZPL) printer.
+The small parcel shipping (SPS) feature allows Supply Chain Management to interact directly with shipping carriers by providing a framework for communicating through carrier APIs. This is useful for when you are shipping individual sales orders via commercial shipping carriers as opposed to using container shipping or less than truckload (LTL) shipping.
 
-The SPS feature interacts with your shipping carrier through a dedicated *rate engine*, which your organization must develop in collaboration with your carrier or carrier hub service. The rate engine enables Supply Chain Management to submit details about a packed container to your carrier and receive back a shipping label, rate, and tracking number. You can then print the returned label automatically using a ZPL printer and apply the label to the shipment.
+The SPS feature interacts with your shipping carrier through a dedicated *rate engine*, which your organization must develop in collaboration with your carrier or carrier hub service. The rate engine enables Supply Chain Management to submit details about a packed container to your carrier and receive back a shipping label, shipping rate, and tracking number. The returned rate will be added to the associated sales order as a miscellaneous charge. You can then print the returned label automatically using a Zebra Programming Language (ZPL) printer and apply the label to the shipment. The carrier will scan this label when they pick up the packages at your warehouse.
 
 ## Prepare your system to support small parcel shipping
 
@@ -183,9 +183,9 @@ Create a new sales order by doing the following:
 1. On the **Delivery** FastTab, make the following settings:
     - **Shipping carrier** - *Demo Carrier*.
     - **Carrier service** - *Demo carrier service*
-1. Open the **Lines** tab at the top-right of the page. <!--KFM: it now asks to update mode of delivery. I said yes. Should we provide any advice about this? -->
+1. Open the **Lines** tab at the top-right of the page. If you're asked to update the mode of delver of the sales lines, select **Yes**.
 1. In the **Sales order lines** section, select the order line you set up previously and, from the toolbar, select **Inventory \> Reservation**.
-1. On the **Reservation** page, select **Reserve lot** to reserve the selected line's full quantity in the warehouse. <!--KFM: It seems like the demo data does not include inventory of A0001 in warehouse 62. I changed it to A0002 everywhere in this topic. OK?) -->
+1. On the **Reservation** page, select **Reserve lot** to reserve the selected line's full quantity in the warehouse.
 1. Close the **Reservation** page to return to the sales order.
 1. On the Action Pane, open the **Warehouse** tab and select **Release to warehouse**.
 1. Work is now created to move items from the picking location to the pack station.
@@ -208,15 +208,17 @@ Pack the shipment by doing the following:
     - **Location** - *Pack*
     - **Packing profile ID** - *Demo packing profile*
 1. Select **OK**.
-1. The **Pack** page opens. Enter a **Shipment ID**. <!-- KFM: This is read-only for me. Seems like I need to know the shipment number and put it in the **License plate or shipment** field. What is the best way to find my shipment number? I went to **All shipments** and figured it out. -->
+1. The **Pack** page opens. In a production scenario, a worker would now scan a license plate or shipment ID. For this scenario, go to the **All shipments** page and look up the shipment number for the shipment you just created. Enter this number into the **License plate or shipment** field.
 1. On the Action Pane, select **New container**.
 1. A dialog box opens showing details about the new container. Leave the default values and select **OK**.
 1. You return to the **Pack** page. On the **Item packing** FastTab, select *A0002* from the **Identifier** drop-down list to pack that item. The item is then added to the container.
 1. On the Action Pane, select **Containers for shipment**.
 1. The **Containers for shipment** page opens. It shows a row for the container you just created, but its **Container manifest ID** is currently empty. This is because we didn't yet receive the label and tracking number from the carrier.
 1. On the Action Pane, select **Close container**.
-1. The **Close container** dialog box opens. Set the **Gross weight** to *1 kg* and select **OK**. <!-- KFM: I get an error (container didn't close). Maybe because I don't have a rate engine installed? -->
-1. Post the packing slip if you have configured it. <!-- KFM: How? -->
-1. On the Action Pane, select **Containers for shipment**. Note that the **Container manifest ID** and **Total freight** have now been added as received from the carrier. <!-- KFM: I have assumed we are still on the Pack page after posting the packing slip. True? -->
-1. Your label should now print on the ZPL printer you selected previously. It should resemble the following example:
+1. The **Close container** dialog box opens. Set the **Gross weight** to *1 kg* and select **OK**.
+1. If your system is set up to use packing slips, then post the packing slip now. To do so, go back to the **All shipments** page and select the shipment. On the Action Pane, open the **Shipments** tab and, from the **Generate** group, select **Packing slip**. Then fill out the **Packing slip posting** dialog box as needed and select **OK**.
+1. Return to **Warehouse management \> Picking and containerization \> Pack** and sign in using the same site, warehouse, location, and packing profile ID as before.
+1. The **Pack** page opens. As before, enter the shipping number into the **License plate or shipment** field.
+1. On the Action Pane, select **Containers for shipment**. Note that the **Container manifest ID** and **Total freight** have now been added as received from the carrier.
+1. Your label should now print on the ZPL printer you selected previously. It should resemble the following example:  
     ![Example shipping label](media/sps-label-example.png "Example shipping label")
