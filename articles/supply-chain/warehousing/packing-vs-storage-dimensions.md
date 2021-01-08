@@ -27,15 +27,15 @@ ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.7
 ---
 
-# Packing vs. storage dimensions
+# Set different dimensions for packing and storage
 
 [!include [banner](../includes/banner.md)]
 
-Some items are packed or stored in such a way that you may need to track physical dimensions differently for each of several different processes. The **Physical dimensions** page lets you specify which process (packing, storage, or nested packing) each specified dimension is used for.
+Some items are packed or stored in such a way that you may need to track physical dimensions differently for each of several different processes. The **Physical dimensions** page lets you set up one or several *types* of dimensions for each product. Each dimension type provides a set of physical measurements (weight, width, depth, and height), plus a **Type** setting, which lets you specify process where those physical measurement values apply. The following settings are available for the **Type** field:
 
-- Storage dimensions are used along with location volumetrics to determine how many of each item can be stored various warehouse locations.
-- Packing dimensions are used during containerization and the manual packing process to determine how many of each item will fit in various container types. 
-- Nested packing dimensions are used when the packing process contains multiple levels.
+- *Storage* - Storage dimensions are used along with location volumetrics to determine how many of each item can be stored various warehouse locations.
+- *Packing* - Packing dimensions are used during containerization and the manual packing process to determine how many of each item will fit in various container types. 
+- *Nested packing* - Nested packing dimensions are used when the packing process contains multiple levels.
 
 The remainder of this topic provides a scenario that illustrates how to use this feature.
 
