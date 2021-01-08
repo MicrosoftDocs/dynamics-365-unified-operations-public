@@ -2,7 +2,8 @@
 # required metadata
 
 title: Create a withholding tax payment
-description: 
+description: Tihs topic walks through the steps for enabling the new global withholding tax capability, which became available with the release of version 10.0.17. 
+
 author: roschlom
 manager: AnnBe
 ms.date: 01/12/2021
@@ -32,11 +33,9 @@ ms.dyn365.ops.version: AX 10.0.16
 
 # Enable global withholding tax
 
-The following feature is available in feature management:
+Tihs topic walks through the steps for enabling the new global withholding tax capability, which became available with the release of version 10.0.17. 
 
-- Global withholding tax (new in version 10.0.17)
-
-To enable global withholding tax functionality,
+To enable global withholding tax functionality,complete the following steps.
 
 1. Go to **Feature management**, Select **Global withholding tax**, click **Enable now**.
 2. Go to **Navigation pane > Modules > Tax > Setup > Parameters > General ledger parameters**, In **Withholding tax** tab, switch on **Enable global withholding tax**.
