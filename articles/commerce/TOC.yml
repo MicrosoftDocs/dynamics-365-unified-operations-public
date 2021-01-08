@@ -714,7 +714,7 @@
       items:
       - name: Customer orders
         items:
-        - name: Customer orders in Point of Sale (POS)
+        - name: Customer orders in POS
           href: customer-orders-overview.md
         - name: Hybrid customer orders
           href: hybrid-customer-orders.md
@@ -722,7 +722,7 @@
           href: enhancedorderrecall.md
         - name: Enable multiple pickup delivery modes
           href: multiple-pickup-modes.md
-        - name: Processing a customer order pick up in Point of Sale (POS)
+        - name: Processing a customer order pick up in POS
           href: process-order-pickup-POS.md
       - name: Sales orders   
         items:
