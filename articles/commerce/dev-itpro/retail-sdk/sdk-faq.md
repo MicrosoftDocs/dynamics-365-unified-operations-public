@@ -105,7 +105,6 @@ This error will occur if the following read-only properties are updated in SDK v
 - TotalAmount
 - NetAmountWithoutTax
 - IsInvoiceLine
-- InvoiceId
 - InvoiceAmount
 
 To resolve this issue, remove the code in the client/server. Setting this value and OOB code will calculate these values or keep the logic in the read-only fields. You can follow the example shown below, however be sure to modify the code according to the best practice, as this option is not recommended.
@@ -120,10 +119,10 @@ For example, in the error at the top of this page, ITEMTAXGROUPID is the read-on
 
 Additionally, to exempt more than one column for a given entity, use a comma as the separator for column names. The configuration name/value pair in this case would look like this:
 
-**RetailReadOnlyExempt_CartLineData : TAXAMOUNT,TOTALAMOUNT**
+**RetailReadOnlyExempt_CartLineData : TAXAMOUNT,TOTALAMOUNT, ExtendedPrice, ItemTaxGroupId, TaxAmountExclusive, TaxAmountInclusive, TotalAmount, NetAmountWithoutTax, IsInvoiceLine, InvoiceAmount**
 
 > [!NOTE]
-> ITEMTAXGROUPID, TAXAMOUNT, TOTALAMOUNT are the column names of the properties in the examples above, not the actual property names.
+> ITEMTAXGROUPID, TAXAMOUNT, TOTALAMOUNT are the column names of the properties in the examples above, not the actual property names. The entity name for the CartLine is CartLineData.
 
 After adding the config run job 1110 to push this change.
 
