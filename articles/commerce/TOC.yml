@@ -722,7 +722,7 @@
           href: enhancedorderrecall.md
         - name: Enable multiple pickup delivery modes
           href: multiple-pickup-modes.md
-        - name: Processing a customer order pick up in POS
+        - name: Process a customer order pickup in POS
           href: process-order-pickup-POS.md
       - name: Sales orders   
         items:
