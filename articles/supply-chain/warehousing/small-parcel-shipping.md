@@ -3,7 +3,7 @@
 
 The small parcel shipping (SPS) feature rates packed containers and fetches the required tracking numbers. It also calculates freight cost and can print shipping labels using a Zebra Programming Language (ZPL) printer.
 
-The SPS feature interacts with your shipping carrier through a dedicated *rate engine*, which your organization must develop in collaboration with your carrier or carrier hub service. The rate engine enables Supply Chain Management to submit details about a packed container to your carrier and receive back a shipping label, rate, and tracking number. You can then print the returned label automatically using ZPL printer and apply the label to the shipment.
+The SPS feature interacts with your shipping carrier through a dedicated *rate engine*, which your organization must develop in collaboration with your carrier or carrier hub service. The rate engine enables Supply Chain Management to submit details about a packed container to your carrier and receive back a shipping label, rate, and tracking number. You can then print the returned label automatically using a ZPL printer and apply the label to the shipment.
 
 ## Prepare your system to support small parcel shipping
 
@@ -62,7 +62,7 @@ To work through this scenario using the demo records and values that are specifi
 
 ### Set up the scenario
 
-For this example scenario, you will need a demo carrier, carrier group, packing policy, and packing profile. The following subsections explain how to prepare the records needed for the scenario. In a production scenario, you would typically set each of these up in a similar way, but you would specific values different from those suggested here.
+For this example scenario, you will need a demo carrier, carrier group, packing policy, and packing profile. The following subsections explain how to prepare the records needed for the scenario. In a production scenario, you would typically set each of these up in a similar way, but you would specify different values from those suggested here.
 
 #### Set up carriers
 
