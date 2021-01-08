@@ -2829,6 +2829,8 @@
             href: warehousing/wave-template-grouping.md
           - name: Reprint and void wave labels
             href: warehousing/reprint-and-void-wave-labels.md
+          - name: Small parcel shipping
+            href: warehousing/small-parcel-shipping.md
           - name: Troubleshoot load building and shipments
             href: warehousing/troubleshoot-warehouse-loads-shipments.md
         - name: Shipment consolidation policies
