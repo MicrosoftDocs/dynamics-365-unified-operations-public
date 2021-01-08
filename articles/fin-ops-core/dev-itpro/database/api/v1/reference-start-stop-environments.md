@@ -31,13 +31,13 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../../../includes/banner.md)]
 
-You can start and stop of environments through Lifecycle Services (LCS) gracefully via this API. Also, Using these APIs will ensure the LCS environment status is synced with the actual environment. 
-.[Note]
+You can start and stop of environments through Lifecycle Services (LCS) via this API. Using these APIs will ensure the LCS environment status is synced with the actual environment. 
+Note that the same validation rules from the details page in Microsoft Dynamics Lifecycle Services (LCS) apply to the application programming interface (API).
 
-
-Only Customer Managed and Microsoft Managed environments are supported. Self Service environments do not have the same concept of stop and start and are not supported by this API. These APIs will trigger/invoke the operation and successful response only indicates the trigger was successful.
-For stop, non-success will be returned if the environment is already undergoing another operation or if the environment is already stopped.
-For start, non-success will be returned if the environment is already undergoing another operation but will return success if the environment is already started.
+.[!Note]
+ - Only Customer Managed and Microsoft Managed environments are supported. Self Service environments do not have the same concept of stop and start and are not supported by this API. These APIs will trigger/invoke the operation and successful response only indicates the trigger was successful.
+- For **stop**, non-success will be returned if the environment is already undergoing another operation or if the environment is already stopped.
+- For **start**, non-success will be returned if the environment is already undergoing another operation but will return success if the environment is already started.
 
 
 ## Permissions
@@ -50,9 +50,14 @@ One of the following permissions is required to call this application programmin
 
 ## HTTP request
 
+**Stop an environment**
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /databasemovement/v1/fetchstatus/project/{projectId}/environment/{environmentId}/operationactivity/{operationactivityId}
+POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
+```
+**Start an environment**
+```http
+POST /environment/v1/start/project/{projectId}/environment/{environmentId}
 ```
 
 ## Request headers
@@ -74,33 +79,15 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 ## Example
 
 ```http
-GET /databasemovement/v1/fetchstatus/project/12345/environment/5362377c-bc37-4f92-b30e-fe0c1e664cc0/operationactivity/55eb4327-9346-4c7b-82bd-fe8ef15112c6
+POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
 ```
 
 ```json
 {
     "IsSuccess": true,
-    "OperationActivityId": "6a90b45f-1764-4077-b924-3f4671540237",
+    "OperationActivityId": "55eb4327-9346-4c7b-82bd-fe8ef15112c6",
     "ErrorMessage": null,
-    "VersionEOL": "9999-12-31T23:59:59.9999999",
-    "ProjectId": 12345,
-    "EnvironmentId": "5362377c-bc37-4f92-b30e-fe0c1e664cc0",
-    "ActivityId": "55eb4327-9346-4c7b-82bd-fe8ef15112c6",
-    "CompletionDate": null,
-    "OperationStatus": "InProgress"
+    "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
 
-### OperationStatus property
-
-| Status             | Description                                           |
-|--------------------|-------------------------------------------------------|
-| NotStarted         | The action hasn't yet been started.                   |
-| InProgress         | The action is in progress.                            |
-| Completed          | The action was successfully completed.                |
-| Failed             | The action was halted.                                |
-| SignedOff          | The action was successfully completed and signed off. |
-| Aborted            | The action was canceled without automated cleanup.    |
-| RollbackInProgress | Reversal of the action is in progress.                |
-| RollbackFailed     | Reversal of the action was halted.                    |
-| RollbackCompleted  | Reversal of the action was successfully completed.    |
