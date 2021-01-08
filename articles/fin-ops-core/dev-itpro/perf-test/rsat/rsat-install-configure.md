@@ -75,7 +75,7 @@ Open RSAT from your desktop.
 
 ![RSAT desktop icon](media/desktop-icon.png)
  
-Select **Settings** button in the upper right to configure RSAT.
+Select **Settings** tab on the upper left to configure RSAT.
 
 ![RSAT settings](media/rsat-settings.png)
 
