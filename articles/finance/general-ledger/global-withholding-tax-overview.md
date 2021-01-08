@@ -2,7 +2,7 @@
 # required metadata
 
 title: Global withholding tax overview
-description: 
+description: This topic provides information about global withholding tax functionality and how to set it up. Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level.
 author: roschlom
 manager: AnnBe
 ms.date: 01/12/2021
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.16
 
 # Global withholding tax overview
 
-This topic provides information about global withholding tax functionality and how to set it up. Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated on item level. The balance in withholding tax account from purchase transactions can be settled via withholding tax payment job procedure against withholding tax settlement account.
+This topic provides information about global withholding tax functionality and how to set it up. Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level. The balance in withholding tax account from purchase transactions can be settled via withholding tax payment job procedure against withholding tax settlement account.
 
 > [!Note]
 >
