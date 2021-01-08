@@ -104,7 +104,7 @@ Excel parameter files that are generated using version 1.200 or newer contain a 
 
 You can enter messages in this tab under **Message Validation**. After a test case completes execution, it validates that the messages specified here appear in the Infolog. The test case will fail if these messages are not found.
 
-You can specify any expected messages including error messages that are expected. If an expected error occurred, but exists in this section, the test will not fail.
+You can specify any expected messages including error messages. Any message specified in this section will cause a test case to fail unless it is found in the Infolog during execution. Two operators are available: **Equals** or **Contains**. If Equals is used, RSAT performs an exact string comparison during with all messages in the Infolog and fails validation of the exact message is not found. If Contains is used, RSAT will validate that at least one message in the infolog contains the string you specify.
  
 ![Message validation example](media/message-validation.png)
 
