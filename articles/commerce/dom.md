@@ -53,6 +53,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     - **Enable distributed order management** – Set this option to **Yes**.
     - **Confirm Bing Maps usage for DOM** – Set this option to **Yes**.
 
+
         > [!NOTE]
         > You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the **Commerce shared parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
 	> 
