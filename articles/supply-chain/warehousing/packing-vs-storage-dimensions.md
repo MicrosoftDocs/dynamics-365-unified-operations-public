@@ -143,5 +143,5 @@ In this process you will create a shipment based on the item *packing* dimension
 #### Place an item into storage
 
 1. Open the mobile device, sign in to warehouse 63 and go to **Inventory \> Adjust In**.
-1. Enter **Loc** = *SHORT-01*, make a new license plate with **Item** = *A0001*, and **Quantity** = *1 pcs*. <!-- KFM: This step might be too vague. I can't picture what's going on here. -->
+1. Enter **Loc** = *SHORT-01*. Make a new license plate with **Item** = *A0001* and **Quantity** = *1 pcs*. <!-- KFM: This step might be too vague. I can't picture what's going on here. -->
 1. Select **OK**. You will receive the error "Location SHORT-01 failed because item A0001 does not fit in location's specified dimensions." This is because the *Storage* type dimensions of the product are larger than the dimensions specified on the location profile.
