@@ -54,16 +54,10 @@ The following example shows how you can use this feature to validate whether the
     5. In the list, mark the selected row.
     6. Validate that the value of the **Total available** field is **411.0000000000000000**.
 
-2. Save the task recording and attach it to your test case in Azure Devops.
+2. Save the task recording as a **developer recording** and attach it to your test case in Azure Devops.
 3. Add the test case to the test plan, and load the test case into RSAT.
-4. Open the Excel parameter file. On the **InventOnhandItem** tab, you will see a **Validate InventOnhandItem** section that includes an **Operator** field.
-
-    ![Operator field](./media/use_rsa_tool_08.png)
-
-5. To validate whether the inventory on-hand will always be more than 0, change the value of the **Value** field from **411** to **0** and the value of the **Operator** field from an equal sign (**=**) to a greater than sign (**\>**).
-
-    ![Values of the Value and Operator fields changed](./media/use_rsa_tool_09.png)
-
+4. Open the Excel parameter file and go to the **TestCaseSteps** tab.
+5. To validate whether the inventory on-hand will always be more than 0, go to the **Validate Total Available** step and change its value from **411** to **0**. Change the value of the **Operator** field from an equal sign (**=**) to a greater than sign (**\>**).
 6. Save and close the Excel parameter file.
 7. Select **Upload** to save the changes that you made to the Excel parameter file to Azure DevOps.
 
