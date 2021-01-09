@@ -124,10 +124,6 @@ We have also seen this error when there is a mismatch between the UTC time betwe
 
 The Google Chrome browser may not work with the Regression suite automation tool due to your Active Directory security settings. In this case, change your RSAT settings to use the new Microsoft Edge or Internet Explorer.
 
-## Excel data tabs
-
-Microsoft Excel data tabs display the system identifiers for data variables. Excel does not display friendly names.
-
 ##  Validating blank dates
 If your test case requires validation that a certain control of type Date/Time is blank, you can insert the following value into the Excel cell corresponding to this control: "01/01/1900".
 
