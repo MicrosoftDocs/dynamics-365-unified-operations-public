@@ -17,7 +17,7 @@ ms.search.form: ProjProjectsListPage, ProjTable, PurchCreateOrder, PurchTable, P
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

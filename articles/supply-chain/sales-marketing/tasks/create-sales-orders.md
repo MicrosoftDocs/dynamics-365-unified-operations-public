@@ -17,7 +17,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmF
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
