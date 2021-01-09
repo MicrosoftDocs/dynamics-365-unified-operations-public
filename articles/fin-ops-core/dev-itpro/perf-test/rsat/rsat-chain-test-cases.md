@@ -38,13 +38,9 @@ To save the value of a variable while recording the test in Task Recorder, right
  
 ![Copy menu item in task recorder](media/task-recorder-copy.png)
 
-When RSAT generates the Excel parameters file, these saved values appear in the **Saved variables** table on the **General** Tab.
- 
-![Saved variables in Excel](media/saved-variables.png)
- 
-These variables also appear in context of the test case. In the image below, the sales order ID value was copied during the recording of the test case (step 4). This value is stored in a variable named **{{SalesCreateOrder_SalesTable_SalesId_85_Copy}}**.
+When RSAT generates the Excel parameters file, saved variables appear in the **Saved variables** table on the **General** Tab. These variables also appear in context of the test case steps in the **TestCaseSteps** tab. In the image below, the purchase order ID value was copied during the recording of the test case (step 5). This value is stored in a variable named **{{PurchCreateOrder_PurchTable_PurchId_86_Copy}}**.
 
-![Test case steps variables](media/test-case-steps-rsat-var.png)
+![Saved variables in Excel](media/saved-variables.png)
 
 To reuse these variables during test playback, copy the variable name and use it in place of a parameter value in the data file of another test (or the same test), as shown below. 
  
