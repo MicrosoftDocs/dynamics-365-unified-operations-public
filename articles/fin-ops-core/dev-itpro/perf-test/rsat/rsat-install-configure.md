@@ -137,12 +137,14 @@ Select the **Optional** tab to configure optional settings.
 + **Test Action Timeout** – The time-out (in minutes) of individual test steps. When a test step times out, the test case fails.
 + **Pause between steps** – The number of seconds to pause between test steps during automated execution of a test case. The default value is **0** (zero). Set this value to force a pause during test execution, for auditing or investigative purposes. You can also specify a pause for an individual test case by changing the **Pause between steps (Seconds)** parameter on the **General** tab of the Excel parameter file for the test case.
 + **Fail test on first validation error** – By default, if a test case has multiple validation steps, and there is a validation failure, the test case stops running when the first failure occurs. The test case is then marked as failed. If you want test cases to continue to run until all validations are completed, clear this option. The test case can then evaluate all validations.
-+ **Abort test suite execution on failure** – By default, execution of a test suite continues even if one of the test cases fails. If you set this option to **True**, the test run is aborted if a test case fails. All the remaining test cases will have a status of **Not Executed**.
++ **Fail test on infolog error** - Check this option to force test cases to fail when an error is enountered in the Finance and Operations infolog during test case execution.
++ **Abort test suite execution on failure** – By default, execution of a test suite continues even if one of the test cases fails. If you check this setting, the test run is aborted if a test case fails. All the remaining test cases will have a status of **Not Executed**.
++ **Enable local file validation rules** - Check this setting to validate whether your test cases are ready for execution. See [this topic](rsat-run.md#validate-readiness-of-test-automation-files) for more details.
++ **Enable upload to Azure DevOps** - To prevent accidental upload to Azure DevOps (therefore overriding project-wide recordings and automation files), you can uncheck this setting. This is especially useful when RSAT is deployed on a client machine for execution purposes only, and you want to prevent users from making permanent changes to the test cases.
 + **Cloud provider** – Select the provider of the cloud tenant of your test environment. Supported providers are **Global** (Public cloud) and **China** (Sovereign cloud).
 
     > [!IMPORTANT]
     > The **Cloud provider** setting is required, and the selected value must be **China** if your Finance and Operations apps were deployed in 21Vianet.
-+ **Configure Retail POS** - Select this box to configure RSAT for automated testing of cloud POS, part of Microsoft Dynamics 365 Commerce. Once enabled, a tab named **Retail POS** appears on the **Settings** dialog menu. For more information about RSAT with cloud POS, see [Test recorder and Regression suite automation tool for Cloud POS](../../../../commerce/dev-itpro/pos-rsat.md).
 
 ### Configure the test environment to trust the connection
 
