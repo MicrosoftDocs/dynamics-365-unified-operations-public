@@ -42,6 +42,10 @@ When RSAT generates the Excel parameters file, these saved values appear in the 
  
 ![Saved variables in Excel](media/saved-variables.png)
  
+These variables also appear in context of the test case. In the image below, the sales order ID value was copied during the recording of the test case (step 4). This value is stored in a variable named **{{SalesCreateOrder_SalesTable_SalesId_85_Copy}}**.
+
+![Test case steps variables](media/test-case-steps-rsat-var.png)
+
 To reuse these variables during test playback, copy the variable name and use it in place of a parameter value in the data file of another test (or the same test), as shown below. 
  
 ![Reusing variables in Excel](media/reuse-variables.png)
