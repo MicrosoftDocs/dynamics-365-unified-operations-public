@@ -123,7 +123,9 @@ For more details, see [Continuous delivery home page](../../dev-tools/continuous
 Do not use RSAT for integration tests, instead rely on the data management framework (also known as DIXF). The [Data task automation](../../data-entities/data-task-automation.md) framework enables you to configure and automate the testing of your data integration scenarios.
 
 ## RSAT User Interface Overview
-RSAT 2.1 introduced a modern user interface that simplifies navigation through the main components of the app, introduces a “quick links” tab and facilitates navigation to DevOps test suites and test runs. Use the left navigation pane to navigate between the test plan, settings, Cloud POS settings and the quick links page.
+RSAT 2.1 introduced a modern user interface that simplifies navigation through the main components of the app, including a “quick links” tab, and quick navigation to DevOps test suites and test runs. 
+
+Use the left navigation pane to navigate between the test plan, settings, Cloud POS settings and the quick links page.
 
 ### Test Plan
 The test plan tab is the main tab that allows you to interact with and execute test cases.
