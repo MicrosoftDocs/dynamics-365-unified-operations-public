@@ -43,6 +43,6 @@ In Azure DevOps, a derived test case is a child item of the **Create a Sales Ord
 
 ![Example of derived test case that is automatically created](media/derived-1.png)
  
-When you run (play back) a derived test case, it will use the recording of its parent test case and its own copy of the Excel parameters file. This will allow you to run the same test with different parameters without the need to maintain more than one recording.
+When you run a derived test case, it will use the recording of its parent test case and its own copy of the Excel parameters file. This will allow you to run the same test with different parameters without the need to maintain more than one recording.
 
-A derived test case does not need to be part of the same test suite as its parent test case. You can move it to another suite. You can also rename a derived test case. You can edit the Excel parameters file of a derived test case to run it with a different user, different company and/or different input and validation parameters that its parent test case.
+A derived test case does not need to be part of the same test suite as its parent test case, you can use it in another suite. You can also rename a derived test case. You can edit the Excel parameters file of a derived test case to run it with a different user, different company and/or different input and validation parameters that its parent test case.
