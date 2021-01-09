@@ -84,12 +84,21 @@ By default, tests are executed using the admin role. If you want to run the test
 ### Run a test in the context of a specific company
 The **General** tab of the Excel parameter file also allows you to specify the name of a legal entity (Company). The test will run in the context of this company. You can specify your default company in the **Settings** dialog box of the tool.
 
+### Pause after a specific test step
+
+You can insert a pause between specific test steps. To do so, go to the **TestCaseSteps** tab of the Excel parameters file and insert a value (in seconds) in the pause column of a test step. This will pause test cases execution after the test step is completed.
+
+![Pause-after-specific-step](media/Pause-after-specific-step.png)
+
+If you don’t see the Pause column, you are using an older version of the Excel parameters file and need to regenerate it. Select the desired test case, then go to New > Generate Test Execution and Parameter Files. This may override edits you have made to the parameters file, back up the existing Excel file first.
+
 ### Other notable test case execution settings
+
+You may find the following settings useful. They are available on the **General** tab of the Excel parameter file.
 
 **Fail on warning message in the Infolog**
 
-By default, test cases fail when an error occurs or a validation step fails. If you want a test case to fail
-in response to a warning message too, set the **Fail on warning message in the Infolog** option to **True** on the **General** tab of the Excel parameter file. This setting is useful if, for example, a test case adds a duplicate customer. The default setting is **False**.
+By default, test cases fail when an error occurs or a validation step fails. If you also want a test case to fail in response to a warning message, set the **Fail on warning message in the Infolog** option to **True** . This is useful, for example, if a test case adds a duplicate customer record. The default setting is **False**.
 
 **Abort test suite execution on failure**
 
@@ -97,7 +106,7 @@ If you set the **Abort test suite execution on failure** option to **True**, exe
 
 **Pause between steps**
 
-The number of seconds to pause between test steps. The default value is **0** (zero).
+The number of seconds to pause between test steps. This will affect every test step. The default value is **0** (zero).
 
 ### Infolog and message validation
 Excel parameter files that are generated using version 1.200 or newer contain a **MessageValidation** tab.
