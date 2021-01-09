@@ -336,7 +336,7 @@ The built-in module library set of modules and themes may have localized resourc
 
 ### Override resource strings for preinstalled themes
 
-To override resource strings for preinstalled themes (fabrikam or starter), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text on the fabrikam theme: 
+To override resource strings for preinstalled themes (fabrikam or starter), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text on the fabrikam theme.
 
 ```json
 "@msdyn365-commerce-modules.fabrikam.signInLinkText": {
@@ -361,7 +361,7 @@ For custom or local themes, use **__local__** for the theme namespace. The follo
 
 ## Test localized content
 
-To test localized content, you must use a page mock and change the locale to that which you're testing. For more information about page mocks, see [Test modules by using page mocks](test-page-mock.md).
+To test localized content, you must use a page mock and change the locale to the locale you're testing. For more information about page mocks, see [Test modules by using page mocks](test-page-mock.md).
 
 ## Additional resources
 
