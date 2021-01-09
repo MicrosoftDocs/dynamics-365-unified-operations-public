@@ -48,3 +48,8 @@ You can also use operators in validation steps to validate that a variable is no
 
 ![Validation in Excel in earlier version](media/validate-test-case-example.png)
 
+## Validate the state of a control
+
+When recording test cases, Task Recorder supports additional validation action: Validate whether a control is enabled or disabled, validate whether a control is editable or read-only. To take advantage of this functionality, you need to be using a Finance and Operations App running on 10.0.13 (or newer) and RSAT 2.0 (or newer). For more information refer to this [topic](../../user-interface/task-recorder.md#validate).
+
+
