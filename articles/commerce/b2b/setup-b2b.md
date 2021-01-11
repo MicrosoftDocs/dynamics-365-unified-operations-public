@@ -2,7 +2,7 @@
 # required metadata
 
 title: B2B e-commerce site setup
-description: This topic describes how to set up a B2B e-commerce site in Dynamics 365 Commere.
+description: This topic describes how to set up a B2B e-commerce site in Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 01/11/2021
@@ -45,7 +45,7 @@ specific scenarios.
     documentation.
 
 -   The core experiences for product discovery, product details page,
-    cart, checkout etc, are powered by the same modules that are used in
+    cart, checkout etc., are powered by the same modules that are used in
     a B2C site. A site author should be familiar with all the modules
     that are supported by Dynamics 365 Commerce. Refer to [Module
     library](https://docs.microsoft.com/dynamics365/commerce/starter-kit-overview)
@@ -57,7 +57,7 @@ specific scenarios.
     [Templates](https://docs.microsoft.com/dynamics365/commerce/templates-layouts-overview),
     [Fragments](https://docs.microsoft.com/dynamics365/commerce/work-with-fragments),
     [Pages](https://docs.microsoft.com/dynamics365/commerce/add-new-page),
-    etc. to be able to enable the B2B features in their e-commerce site.
+    etc., to be able to enable the B2B features in their e-commerce site.
 
 ## Site Settings
 
