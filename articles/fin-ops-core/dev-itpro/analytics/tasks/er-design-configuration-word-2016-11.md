@@ -5,7 +5,7 @@ title: Reuse ER configurations with Excel templates to generate reports in Word 
 description: This topic explains how Electronic reporting (ER) formats that were originally designed to generate reports as Microsoft Excel workbooks can be configured to generate reports as Word documents instead.
 author: NickSelin
 manager: AnnBe 
-ms.date: 12/15/2020
+ms.date: 01/11/2021
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
