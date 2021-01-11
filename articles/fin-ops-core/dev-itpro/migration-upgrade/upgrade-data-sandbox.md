@@ -224,7 +224,7 @@ Since the removal of RDP access to Sandbox AOS servers, we recommend that you us
 > [!NOTE]
 > This topic is being phased out in favor of a new process that is based on the dacpac file format. For information about the new process, see [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](upgrade-data-sandbox-dacpac.md).
 
-During this step, you will import the exported bacpac file into the SQL Database instance that your sandbox environment uses. As stated above, since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud hosted environment running in the same region as the sandbox environment to import the file. Although you can request JIT access to the database and run from a local server, to do that follow the process for [Enable just-in-time database access](../database/database-just-in-time-JIT-access.md) to allow-list your IP address to the database.
+During this step, you will import the exported bacpac file into the SQL Server database instance that your sandbox environment uses. As stated above, since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. Although you can request JIT access to the database and run from a local server, to do that follow the process for [Enable just-in-time database access](../database/database-just-in-time-JIT-access.md) to allow-list your IP address to the database.
 
 You must first install the latest version of Management Studio on your cloud hosted VM or local server. You will then import the file by using the SQLPackage.exe tool.
 
