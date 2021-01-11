@@ -34,7 +34,8 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to set up and print original invoice numbers in credit notes.
+In some countries, ... 
+This topic explains how to set up and print references to original invoices in credit notes.
 
 ## Prerequisites
 
@@ -42,10 +43,13 @@ In the **Feature management** workspace, turn on the **Credit invoicing layout f
 
 ## Configure Accounts receivable parameters
 
-After .
+Complete the following steps to activate printing of references to original invoices in related credit notes:
 
-![Posting date control](media/emea-ita-post-date-control.jpg)
+1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Updates** Tab > **Invoice** FastTab. 
+2. In the **Apply credit invoicing layout into sales and project invoice reports** field, select **Yes** to activate printing of references to original invoices in related credit notes.
+
+![Set up AR parameters](media/original-invoice-number-in-credit-note.jpg)
 
 > [!NOTE]
-> The.
+> The. layouts !!! in Print management.
 
