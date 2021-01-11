@@ -33,11 +33,13 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](includes/banner.md)]
 
-This topic covers Quick view module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers Product quick view module and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-When browsing products in a list or a list page, the quick view module allows a user to quickly view the details of an item and add it to bag. - On a list page such as search results or category page with many items, a site user can quickly browse and add items to cart without navigating to the PDP for each item. This module can be added to Product Collection module and Search Results module. 
+When browsing products in a list or a list page, the product quick view module allows a user to quickly view the product information and add it to bag without navigating to a product details page. It provides a quick snippet of the product information that is necessary to make an add to cart decision. For more details and options to buy, it also provides a link to the product details page.
+
+Its supported on the **Search results** module and **Product collection** module.
 
 
 > [!IMPORTANT]
@@ -45,7 +47,7 @@ When browsing products in a list or a list page, the quick view module allows a 
 
 The following image shows an example of a quick view module on a category page
 
-![Example of a quick view module](./media/ecommerce-pdp-buybox.PNG)
+![Example of a quick view module](./media/ecommerce-quickview.PNG)
 
 
 
@@ -56,10 +58,10 @@ The module properties are similar to a buy box module as it supports some of the
 
 - **Enable "shop similar looks" recommendations** - This property allows the buy box to show links to products that look similar to the currently viewed item. This feature is available in Commerce release 10.0.13 and later.
 
+## Site settings
 
-The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
+The module also respects the Site Settings->Extensions for **Add to cart** similar to Buy box. It will navigate to cart page or show a notification as per the site author's selection. 
 
-![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
 
 ## Add a quick view module to a page
 
