@@ -5,7 +5,7 @@ title: Copy variables to chain test cases
 description: This topic shows how the Regression Suite Automation Tool can be used to chain test cases, which is the ability of a test to pass values to other tests. 
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,10 +35,10 @@ ms.dyn365.ops.version: AX 7.0.0
 One of the key features of the Regression Suite Automation Tool is the chaining of test cases, that is, the ability of a test to pass values to other tests. Test cases are executed according to their defined order in the Azure DevOps test plan, which can also be updated in the test tool itself. It is important to correctly order the tests if you want to pass variables from one test case to the other.
 
 To save the value of a variable while recording the test in Task Recorder, right-click the field and select **Task recorder > Copy**, as shown in the following image. Copying will save the variable in the recording file. This variable can be used in subsequent tests. 
- 
-![Copy menu item in task recorder](media/task-recorder-copy.png)
 
-When RSAT generates the Excel parameters file, saved variables appear in the **Saved variables** table on the **General** Tab. These variables also appear in context of the test case steps in the **TestCaseSteps** tab. In the image below, the purchase order ID value was copied during the recording of the test case (step 5). This value is stored in a variable named **{{PurchCreateOrder_PurchTable_PurchId_86_Copy}}**.
+:::image type="content" source="media/task-recorder-copy.png" alt-text="Copy menu item in task recorder":::
+
+When RSAT generates the Excel parameters file, saved variables appear in the **Saved variables** table on the **General** Tab. These variables also appear in the context of the test case steps in the **TestCaseSteps** tab. In the image below, the purchase order ID value was copied during the recording of the test case (step 5). This value is stored in a variable named **{{PurchCreateOrder_PurchTable_PurchId_86_Copy}}**.
 
 ![Saved variables in Excel](media/saved-variables.png)
 

@@ -5,7 +5,7 @@ title: Validate expected values
 description: This topic shows how to use the Regression suite automation for validation of expected values. 
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,6 +50,9 @@ You can also use operators in validation steps to validate that a variable is no
 
 ## Validate the state of a control
 
-When recording test cases, Task Recorder supports additional validation action: Validate whether a control is enabled or disabled, validate whether a control is editable or read-only. To take advantage of this functionality, you need to be using a Finance and Operations App running on 10.0.13 (or newer) and RSAT 2.0 (or newer). For more information refer to this [topic](../../user-interface/task-recorder.md#validate).
+When recording test cases, Task Recorder supports additional validation action: 
 
++ Validate whether a control is enabled or disabled.
++ Validate whether a control is editable or read-only.
 
+To take advantage of this validation, you need to be use a Finance and Operations app running on 10.0.13 (or newer) and RSAT 2.0 (or newer). For more information, see [Validate](../../user-interface/task-recorder.md#validate).

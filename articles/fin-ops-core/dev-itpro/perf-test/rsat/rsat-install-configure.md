@@ -5,7 +5,7 @@ title: Regression suite automation tool installation and configuration
 description: This topic contains information about how install and configure the Regression suite automation tool (RSAT).
 author: robadawy
 manager: AnnBe
-ms.date: 06/26/2020
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,17 +67,17 @@ RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if
  
 ![Browser driver](media/driver-2.png)
 
-RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). The Webdriver library and browser specific drivers are downloaded to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
+RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). The Webdriver library and browser-specific drivers are downloaded to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
 
 ## Configuration
 
-Open RSAT from your desktop.
+1. Open RSAT from your desktop.
 
-![RSAT desktop icon](media/desktop-icon.png)
+    ![RSAT desktop icon](media/desktop-icon.png)
  
-Select **Settings** tab on the upper left to configure RSAT.
+2. Select the **Settings** tab on the upper left to configure RSAT.
 
-![RSAT settings](media/rsat-settings.png)
+    ![RSAT settings](media/rsat-settings.png)
 
 ### General settings
 These settings are required.
@@ -101,9 +101,9 @@ Configure your connection to the test environment.
 
 + **Hostname** – The hostname of the test environment, such as myhost.cloudax.dynamics.com. Don't include the https:// or http:// prefix.
 + **SOAP Hostname** – The SOAP hostname of the test environment. 
-    + For demo and dev environments (also known as one-box environments), add a **soap** suffix to the hostname. For example, if your hostname is myhost.cloudax.dynamics.com, use myhost**soap**.cloudax.dynamics.com as the SOAP hostname.
+    + For demo and development environments (also known as one-box environments), add a **soap** suffix to the hostname. For example, if your hostname is `myhost.cloudax.dynamics.com`, use `myhost.soap.cloudax.dynamics.com` as the SOAP hostname.
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
-    + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal the hostname.
+    + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal to the hostname.
 
 + **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
 
@@ -137,9 +137,9 @@ Select the **Optional** tab to configure optional settings.
 + **Test Action Timeout** – The time-out (in minutes) of individual test steps. When a test step times out, the test case fails.
 + **Pause between steps** – The number of seconds to pause between test steps during automated execution of a test case. The default value is **0** (zero). Set this value to force a pause during test execution, for auditing or investigative purposes. You can also specify a pause for an individual test case by changing the **Pause between steps (Seconds)** parameter on the **General** tab of the Excel parameter file for the test case.
 + **Fail test on first validation error** – By default, if a test case has multiple validation steps, and there is a validation failure, the test case stops running when the first failure occurs. The test case is then marked as failed. If you want test cases to continue to run until all validations are completed, clear this option. The test case can then evaluate all validations.
-+ **Fail test on infolog error** - Check this option to force test cases to fail when an error is enountered in the Finance and Operations infolog during test case execution.
-+ **Abort test suite execution on failure** – By default, execution of a test suite continues even if one of the test cases fails. If you check this setting, the test run is aborted if a test case fails. All the remaining test cases will have a status of **Not Executed**.
-+ **Enable local file validation rules** - Check this setting to validate whether your test cases are ready for execution. See [this topic](rsat-run.md#validate-readiness-of-test-automation-files) for more details.
++ **Fail test on infolog error** - Check this option to force test cases to fail when an error is encountered in the Finance and Operations infolog during test case execution.
++ **Abort test suite execution on failure** – By default, a test suite run continues even if one of the test cases fails. If you check this setting, the test run is aborted if a test case fails. All the remaining test cases will have a status of **Not Executed**.
++ **Enable local file validation rules** - Check this setting to validate whether your test cases are ready for execution. See [Validate readiness of test automation files](rsat-run.md#validate-readiness-of-test-automation-files) for more details.
 + **Enable upload to Azure DevOps** - To prevent accidental upload to Azure DevOps (therefore overriding project-wide recordings and automation files), you can uncheck this setting. This is especially useful when RSAT is deployed on a client machine for execution purposes only, and you want to prevent users from making permanent changes to the test cases.
 + **Cloud provider** – Select the provider of the cloud tenant of your test environment. Supported providers are **Global** (Public cloud) and **China** (Sovereign cloud).
 
@@ -152,17 +152,17 @@ Select the **Optional** tab to configure optional settings.
 
 After creating the certificate, configure AOS to trust the test automation connection. On a multi-AOS environment, repeat the following steps for all AOS machines.
 
-1.	Open a Remote Desktop connection to the AOS machine.
-2.	Open IIS and find AOSService in the list of sites.
+1. Open a Remote Desktop connection to the AOS machine.
+2. Open IIS and find AOSService in the list of sites.
 
     ![Find AOS in IIS](media/configure-aos.png)
 
-3.	Right-click **AOSService**, then click **Explore**.
-4.	Open and find the file **wif.config**.
+3. Right-click **AOSService**, then click **Explore**.
+4. Open and find the file **wif.config**.
   
     ![Open wif.config](media/open-wif-config.png)
 
-5.	Update the **wif.config** file by adding a new authority entry, as shown in the following example. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
+5. Update the **wif.config** file by adding a new authority entry, as shown in the following example. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
 
     ```xml
     <issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">

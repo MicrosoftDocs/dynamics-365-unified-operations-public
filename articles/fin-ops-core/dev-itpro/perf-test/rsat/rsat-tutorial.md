@@ -5,7 +5,7 @@ title: Use the Regression suite automation tool tutorial
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting. 
 author: robinarh
 manager: AnnBe
-ms.date: 06/09/2019
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,7 +57,7 @@ The following example shows how you can use this feature to validate whether the
 2. Save the task recording as a **developer recording** and attach it to your test case in Azure Devops.
 3. Add the test case to the test plan, and load the test case into RSAT.
 4. Open the Excel parameter file and go to the **TestCaseSteps** tab.
-5. To validate whether the inventory on-hand will always be more than 0, go to the **Validate Total Available** step and change its value from **411** to **0**. Change the value of the **Operator** field from an equal sign (**=**) to a greater than sign (**\>**).
+5. To validate whether the inventory on-hand will always be more than **0**, go to the **Validate Total Available** step and change its value from **411** to **0**. Change the value of the **Operator** field from an equal sign (**=**) to a greater than sign (**\>**).
 6. Save and close the Excel parameter file.
 7. Select **Upload** to save the changes that you made to the Excel parameter file to Azure DevOps.
 
