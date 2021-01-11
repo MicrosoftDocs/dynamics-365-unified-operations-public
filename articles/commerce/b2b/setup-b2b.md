@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # B2B e-commerce site setup
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 B2B e-commerce sites provides some key capabilities that optimize the
 workflow for a B2B user. In this document, we will walk through the new
