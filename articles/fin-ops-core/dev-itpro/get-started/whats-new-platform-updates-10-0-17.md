@@ -43,7 +43,7 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
+-  Visual Studio 2017 is now the primary supported version for X++ tools. Visual Studio 2015 is deprecated.<br>- For more information, see [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
 
 -  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
 
