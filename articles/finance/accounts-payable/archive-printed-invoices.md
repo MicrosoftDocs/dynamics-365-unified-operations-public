@@ -63,7 +63,8 @@ Complete the following steps to configure customers data in order to activate au
 3. On the **Invoice and delivery** FastTab > in the **E-INVOCE** section, select **Yes** in the **eInvoice attachment** field.
 
 ## Print invoices
-Complete
+Post and print any Customer/Freetext/Project invoice for the customer configured in the previous step.
+Go to...
 
 ![Posting date control](media/emea-ita-post-date-control.jpg)
 
