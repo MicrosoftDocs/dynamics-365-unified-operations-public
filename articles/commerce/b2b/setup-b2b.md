@@ -38,7 +38,7 @@ workflow for a B2B user. In this document, we will walk through the new
 modules and site settings that need to be configured to enable the B2B
 specific scenarios.
 
-## Pre-Requisites
+## Prerequisites
 
 -   To setup a B2B e-commerce site, the features must be
     enabled/configured in Headquarters as defined in the feature
@@ -48,15 +48,15 @@ specific scenarios.
     cart, checkout etc, are powered by the same modules that are used in
     a B2C site. A site author should be familiar with all the modules
     that are supported by Dynamics 365 Commerce. Refer to [Module
-    library](https://docs.microsoft.com/en-us/dynamics365/commerce/starter-kit-overview)
+    library](https://docs.microsoft.com/dynamics365/commerce/starter-kit-overview)
     for more details.
 
 -   This document also assumes the site author understands the basics of
     Commerce [Site
-    Builder](https://docs.microsoft.com/en-us/dynamics365/commerce/authoring-home-overview),
-    [Templates](https://docs.microsoft.com/en-us/dynamics365/commerce/templates-layouts-overview),
-    [Fragments](https://docs.microsoft.com/en-us/dynamics365/commerce/work-with-fragments),
-    [Pages](https://docs.microsoft.com/en-us/dynamics365/commerce/add-new-page),
+    Builder](https://docs.microsoft.com/dynamics365/commerce/authoring-home-overview),
+    [Templates](https://docs.microsoft.com/dynamics365/commerce/templates-layouts-overview),
+    [Fragments](https://docs.microsoft.com/dynamics365/commerce/work-with-fragments),
+    [Pages](https://docs.microsoft.com/dynamics365/commerce/add-new-page),
     etc. to be able to enable the B2B features in their e-commerce site.
 
 ## Site Settings
@@ -81,7 +81,7 @@ Note: When upgrading to latest SSK, you will need to follow additional
 steps to ensure these Site Settings are available in your environment.
 These steps are called out under "Update appsettings.json" section
 called out
-[here](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/sdk-updates).
+[here](https://docs.microsoft.com/dynamics365/commerce/e-commerce-extensibility/sdk-updates).
 
 ## Become a Business Partner
 
@@ -159,14 +159,14 @@ this confirmation page.
     Container.
 
 5.  To the Container, add a [**Content
-    block**](https://docs.microsoft.com/en-us/dynamics365/commerce/add-hero-module).
+    block**](https://docs.microsoft.com/dynamics365/commerce/add-hero-module).
     In the module property panel, provide heading as "Request
     submitted". Add a paragraph "Your request has been submitted".
     Provide a link "Back to shopping" that is wired to the home page for
     the user to continue shopping.
 
 6.  Add another container and add [**Product
-    Collection**](https://docs.microsoft.com/en-us/dynamics365/commerce/product-collection-module-overview)
+    Collection**](https://docs.microsoft.com/dynamics365/commerce/product-collection-module-overview)
     module. Configure this module with a recommendation or category list
     that we want to showcase on this page.
 
@@ -315,7 +315,7 @@ Payment** module is required. This module should be added to the
 Checkout page as a form of payment. For details on how to configure a
 Checkout page and the modules that are needed for checkout including all
 payment details, refer to the [Checkout module
-documentation](https://docs.microsoft.com/en-us/dynamics365/commerce/add-checkout-module).
+documentation](https://docs.microsoft.com/dynamics365/commerce/add-checkout-module).
 
 Once you have a Checkout page configured, you need to add **Customer
 Account Payment** to the payment section of this page. Then save and
