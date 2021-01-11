@@ -217,18 +217,18 @@ Another option is to use the Asset library in Microsoft Dynamics Lifecycle Servi
 1. Sign in to your project in LCS and go to your Asset library.
 2. Select the Database backup tab.
 3. Upload the bacpac file.
-Since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. You can download the bacpac onto the cloud-hosted VM by logging into LCS on that and downloading it from the LCS Asset library.
+Since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. You can download the bacpac onto the cloud-hosted VM by signing in to LCS on that machine and downloading it from the LCS Asset library.
 
 ## Import the bacpac file into SQL Database
 
 > [!NOTE]
 > This topic is being phased out in favor of a new process that is based on the dacpac file format. For information about the new process, see [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](upgrade-data-sandbox-dacpac.md).
 
-During this step, you will import the exported bacpac file into the SQL Server database instance that your sandbox environment uses. As stated above, since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. Although you can request JIT access to the database and run from a local server, to do that follow the process for [Enable just-in-time database access](../database/database-just-in-time-JIT-access.md) to allow-list your IP address to the database.
+During this step, you will import the exported bacpac file into the SQL Server database instance that your sandbox environment uses. As stated above, since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. You can request JIT access to the database and run from a local server. To do that, follow the process for [Enable just-in-time database access](../database/database-just-in-time-JIT-access.md) to allow-list your IP address to the database.
 
 You must first install the latest version of Management Studio on your cloud-hosted VM or local server. You will then import the file by using the SQLPackage.exe tool.
 
-If using a cloud-hosted environment, for performance reasons, we recommend that you put the bacpac file on drive D on the AOS machine. On Azure virtual machines (VMs), drive D is a physical disk that typically has higher performance than other available disks.
+If you are using a cloud-hosted environment, for performance reasons, we recommend that you put the bacpac file on drive D on the AOS machine. On Azure virtual machines (VMs), drive D is a physical disk that typically has higher performance than other available disks.
 
 Open a **Command Prompt** window as an administrator, and run the following commands.
 
