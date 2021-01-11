@@ -51,7 +51,7 @@ One of the following permissions is required to call this API. For more informat
 
 ## HTTP request
 
-Use the following POST method to send HTTP request for stop or start an environment. 
+Use the following POST method to send an HTTP request to stop or start an environment. 
 
 **Stop an environment**
 <!-- { "blockType": "ignored" } -->
