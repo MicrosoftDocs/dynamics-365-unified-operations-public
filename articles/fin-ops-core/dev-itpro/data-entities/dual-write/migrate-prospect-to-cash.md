@@ -61,13 +61,13 @@ To migrate your Prospect to cash data from Data Integrator to dual-write, follow
 
 8. Initialization the tables listed in Step 2, according to the following sections.
 
-9. Open the Finance and Operations app and enable the table maps, for example, account, quote, quote line, order, and order line. Run the initial synchronization. This will sync additional information from the Finance and Operations app, for example, processing status, shipping and billing addresses, sites, and warehouses.
+9. Open the Finance and Operations app and enable the table maps, for example, account, quote, quote line, order, and order line. Run the initial synchronization. This process will sync additional information from the Finance and Operations app, for example, processing status, shipping and billing addresses, sites, and warehouses.
 
 ## Account table
 
 1. Enter the company name in the**Company** column, for example, **USMF**.
-2. In the **Relationship Type** column, enter **Customer** as a static value. You may not want to classify every account record as a customer due to business reasons.
-3. Enter the customer group number from the Finance and Operations app in the **Customer Group Id** column. The Prospect to cash solution defaults **10**.
+2. In the **Relationship Type** column, enter **Customer** as a static value. You may not want to classify every account record as a customer in your business logic.
+3. Enter the customer group number from the Finance and Operations app in the **Customer Group ID** column. The Prospect to cash solution defaults **10**.
 4. If you are using the Prospect to cash solution without any customization of **Account Number**, then enter an **Account Number** value in the **Party Number** column. If there are customizations and you don't know the party number, then pull this information from the Finance and Operations app.
 
 ## Contact table
@@ -76,7 +76,7 @@ To migrate your Prospect to cash data from Data Integrator to dual-write, follow
 
 2. Based on the **IsActiveCustomer** value found on the .csv file, populate the following columns in the **Contact** table.
 
-    - If **IsActiveCustomer** is **Yes**, then set **Sellable** to **Yes**. Enter the customer group number from the Finance and Operations app in **Customer Group Id** column. The Prospect to cash solution defaults **10**.
+    - If **IsActiveCustomer** is **Yes**, then set **Sellable** to **Yes**. Enter the customer group number from the Finance and Operations app in **Customer Group ID** column. The Prospect to cash solution defaults **10**.
     - If **IsActiveCustomer** is **No**, then set **Sellable** to **NO** and set **Contact For** to **Customer**.
 
 3. If you are using the Prospect to cash solution as is without any customization on **Contact Number**, then set these columns:
@@ -87,12 +87,12 @@ To migrate your Prospect to cash data from Data Integrator to dual-write, follow
 
 ## Invoice table
 
-Because data from the **Invoice** table is designed to flow one-way, from the Finance and Operations app to the customer engagement app, initialization is not required. Run the initial sync to migrate all the required data from the Finance and Operations app to the customer engagement app.
+Because data from the **Invoice** table is designed to flow one way, from the Finance and Operations app to the customer engagement app, initialization isn't required. Run the initial sync to migrate all the required data from the Finance and Operations app to the customer engagement app.
 
 ## Order table
 
 1. Enter the company name in the**Company** column, for example, **USMF**.
-2. Copy the **Order Id** column value from the .csv file and to populate the  **Sales Order Number** column.
+2. Copy the **Order ID** column value from the .csv file and to populate the  **Sales Order Number** column.
 3. Copy the  **Customer** column value from the .csv file to populate the  **Invoice customer number** column.
 4. Copy the **Ship To Country/Region** value from .csv file to the **Ship To Country/Region** column. Examples include **US** and **United States**.
 5. Set the **Requested Receipt Date** column. If you are not using a receipt date, then use the **Requested Delivery Date**, **Date Fulfilled**, **Date Submitted** columns from the .csv file. An example is **2020-03-27T00:00:00Z**.
@@ -105,8 +105,8 @@ Because data from the **Invoice** table is designed to flow one-way, from the Fi
 
 ## Products table
 
-Because data from the **Products** table is designed to flow one-way, from the Finance and Operations app to the customer engagement app, initialization is not required. Run the initial sync to migrate all the required data from the Finance and Operations app to the customer engagement app.
+Because data from the **Products** table is designed to flow one way, from the Finance and Operations app to the customer engagement app, initialization isn't required. Run the initial sync to migrate all the required data from the Finance and Operations app to the customer engagement app.
 
 ## Quote and Quote product tables
 
-Follow the instructions for the [Order table](#order-table) and [Order products table](order-products-table).
+Follow the instructions for the [Order table](#order-table) and [Order products table](#order-products-table).
