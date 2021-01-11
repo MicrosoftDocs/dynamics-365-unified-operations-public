@@ -6,7 +6,7 @@ ms.date: 01/11/2021
 ms.topic: article
 ms.service: dynamics365-financials
 author: akroshkina
-ms.author: anayash
+ms.author: anasyash
 manager: tfehr
 ---
 
