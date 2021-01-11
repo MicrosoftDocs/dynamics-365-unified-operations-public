@@ -217,7 +217,7 @@ Another option is to use the Asset library in Microsoft Dynamics Lifecycle Servi
 1. Sign in to your project in LCS and go to your Asset library.
 2. Select the Database backup tab.
 3. Upload the bacpac file.
-Since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud hosted environment running in the same region as the sandbox environment to import the file. You can download the bacpac onto the cloud hosted VM by logging into LCS on that and downloading it from the LCS Asset library.
+Since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. You can download the bacpac onto the cloud-hosted VM by logging into LCS on that and downloading it from the LCS Asset library.
 
 ## Import the bacpac file into SQL Database
 
