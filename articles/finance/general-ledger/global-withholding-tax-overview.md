@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Global withholding tax overview
+title: Global withholding tax
 description: This topic provides information about global withholding tax functionality and how to set it up. Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level.
 author: roschlom
 manager: AnnBe
@@ -30,24 +30,23 @@ ms.dyn365.ops.version: AX 10.0.16
 
 ---
 
-# Global withholding tax overview
+# Global withholding tax
 
-This topic provides information about global withholding tax functionality and how to set it up. Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level. The balance in withholding tax account from purchase transactions can be settled via withholding tax payment job procedure against withholding tax settlement account.
+[!include [banner](../includes/banner.md)]
 
-> [!Note]
->
-> Global withholding tax is not supporting **Maintain charges** in Purchase order, Vendor invoice and Sales order forms.
+This topic provides information about global withholding tax functionality and explains how to set it up. The new functionality is available in version 10.0.17 and later.
 
-## Enable global withholding tax
+Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level. The balance in the withholding tax account from purchase transactions can be settled by running the withholding tax payment job against the withholding tax settlement account.
 
-Tihs topic walks through the steps for enabling the new global withholding tax capability, which became available with the release of version 10.0.17. 
+> [!NOTE]
+> Global withholding tax doesn't support the **Maintain charges** function on the purchase order, vendor invoice, and sales order pages.
 
-To enable global withholding tax functionality,complete the following steps.
+## Turn on global withholding tax
 
-1. Go to **Feature management**, Select **Global withholding tax**, click **Enable now**.
-2. Go to **Navigation pane > Modules > Tax > Setup > Parameters > General ledger parameters**, In **Withholding tax** tab, switch on **Enable global withholding tax**.
-3. Click **Save**.
-4. Refresh your browser.
+1. In the **Feature management** workspace, select **Global withholding tax**, and then select **Enable now**.
+2. Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on the **Withholding tax** tab, set the **Enable global withholding tax** option to **Yes**.
+3. Select **Save**.
+4. Refresh the page in your web browser.
 
-> [!NOTE] 
-> Global withholding tax functionality cannot be enabled for following countries/regions where localized withholding tax solutions already exist: **India**, **Brazil**, **Thailand**, **Saudi Arabia**, **Ireland** and **Great Britain**.
+> [!NOTE]
+> Global withholding tax functionality can't be turned on for the following countries and regions where solutions for localized withholding tax already exist: India, Brazil, Thailand, Saudi Arabia, Ireland, and Great Britain.
