@@ -58,7 +58,7 @@ The functionality is applicable to the following documents:
 ## Configure customers master data
 Complete the following steps to configure customers data in order to activate automatic saving of printed invoices as attachments.
 
-1. Go to **Tax** > **Setup** > **Sales tax** > **Italian sales tax book sections**. 
+1. Go to **Accounts receivable** > **Setup** > **Sales tax** > **Italian sales tax book sections**. 
 2. In the **Skip posting date control** column, select whether posting date control is required for a selected sales tax book section.
 
 ![Posting date control](media/emea-ita-post-date-control.jpg)
