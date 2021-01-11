@@ -51,6 +51,8 @@ One of the following permissions is required to call this API. For more informat
 
 ## HTTP request
 
+Use the following POST method to send HTTP request for stop or start an environment. 
+
 **Stop an environment**
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -62,6 +64,8 @@ POST /environment/v1/start/project/{projectId}/environment/{environmentId}
 ```
 
 ## Request headers
+
+Use the following header value in the HTTP request header. 
 
 | Header         | Value                     |
 |----------------|---------------------------|
