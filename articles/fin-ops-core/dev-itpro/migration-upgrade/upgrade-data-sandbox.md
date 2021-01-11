@@ -226,9 +226,9 @@ Since the removal of RDP access to Sandbox AOS servers, we recommend that you us
 
 During this step, you will import the exported bacpac file into the SQL Server database instance that your sandbox environment uses. As stated above, since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. Although you can request JIT access to the database and run from a local server, to do that follow the process for [Enable just-in-time database access](../database/database-just-in-time-JIT-access.md) to allow-list your IP address to the database.
 
-You must first install the latest version of Management Studio on your cloud hosted VM or local server. You will then import the file by using the SQLPackage.exe tool.
+You must first install the latest version of Management Studio on your cloud-hosted VM or local server. You will then import the file by using the SQLPackage.exe tool.
 
-If using a cloud hosted environment, for performance reasons, we recommend that you put the bacpac file on drive D on the AOS machine. On Azure virtual machines (VMs), drive D is a physical disk that typically has higher performance than other available disks.
+If using a cloud-hosted environment, for performance reasons, we recommend that you put the bacpac file on drive D on the AOS machine. On Azure virtual machines (VMs), drive D is a physical disk that typically has higher performance than other available disks.
 
 Open a **Command Prompt** window as an administrator, and run the following commands.
 
