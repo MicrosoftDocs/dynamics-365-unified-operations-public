@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database movement API - Reference - v1 - Start and stop environments 
-description: This topic provides a reference for version 1 of the Database Movement application programming interface (API).
+description: This topic provides a reference for version 1 of the Database Movement API.
 author: laneswenka
 manager: AnnBe
 ms.date: 01/11/2021
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../../../includes/banner.md)]
 
-You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the Database Movement application programming interface (API). Using these APIs will ensure the LCS environment status is synced with the actual environment. 
+You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the Database Movement API. Using these APIs will ensure the LCS environment status is synced with the actual environment. 
 
 Note that the same validation rules from the details page in LCS apply to the API.
 
