@@ -141,8 +141,7 @@ The following table shows an example of a hardware layout. This example is used 
 
 The following table shows an example of a hardware layout where batch execution and interactive sessions are executed in dedicated nodes. For more information, see [Configure batch-only and interactive-only AOS nodes in on-premises deployments](./onprem-batchonly.md).
 
-| Machine  
-rpose          | SF Node type     | Machine name    | IP address    |
+| Machine  purpose          | SF Node type     | Machine name    | IP address    |
 |--------------------------|------------------|-----------------|---------------|
 | Domain controller        |                  | DAX7SQLAODC1    | 10.179.108.2  |
 | AD FS                    |                  | DAX7SQLAOADFS1  | 10.179.108.3  |
