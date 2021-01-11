@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Process a customer order pickup in POS
-description: This topic explains functionality available in the POS application for processing a customer order pickup.
+title: Process customer order pickups in POS
+description: This topic explains the functionality that is available in the point of sale (POS) application for processing customer order pickups.
 author: Hhainesms
 manager: annbe
 ms.date: 01/06/2021
@@ -27,30 +27,39 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
 ---
 
-# Process a customer order pickup in POS
+# Process customer order pickups in POS
 
-When a [customer order](customer-orders-overview.md) is created for a store pickup, a store user can start the pickup of inventory using the point of sale (POS) application. POS will execute the final payment capture as needed, and complete the inventory and financial posting steps for the quantities that are picked up.
+[!include [banner](includes/banner.md)]
 
-A store user can perform the pickup with the **Recall order** operation or the **Order fulfillment** operation in POS. To enable the **Pick up** operation, the user must first search for and locate the order to be picked up and select the order (if using the **Recall order** operation), or search for and select one or more order lines (if using the **Order fulfillment** operation). If the selected order or order lines aren't configured for pickup at the specific store, or if the order has already been fully picked up, the **Pick up** operation will be disabled.
+When a [customer order](customer-orders-overview.md) is created for store pickup, a store user can use the point of sale (POS) application to start the pickup of inventory. POS will run the final payment capture as required. It will also complete the inventory and financial posting for the quantities that are picked up.
+
+If you're a store user, you can perform the pickup by using either the **Recall order** operation or the **Order fulfillment** operation in POS. To make the **Pick up** operation available, you must first follow one of these steps:
+
+- To use the **Recall order** operation, search for and select the order that will be picked up.
+- To use the **Order fulfillment** operation, search for and select one or more order lines.
+
+If the selected order or order lines aren't configured for pickup at that specific store, or if the order has already been fully picked up, the **Pick up** operation will be unavailable.
 
 ![Pick up operation](media/pickupoperation.png)
 
-In Commerce version 10.0.17 and later, the **Improved user experience for pick up order processing in Point of Sale** feature can be enabled through **Feature management** in Commerce headquarters. If this feature isn't enabled, users can't choose pick up quantities. In other words, the full quantity ordered for the line is by default the quantity to be picked up. This experience can be problematic because a user may forget to select certain items for pickup when executing the pickup operation through order fulfillment. When the **Improved user experience for pick up order processing in Point of Sale** feature is enabled, users have more control over selecting which products will be picked up and the quantity of the products to be picked up. Users don't have to select every line of the sales order from the order fulfillment page before they select pickup. All of the items that can be picked up will be displayed. The user can choose multiple lines for pickup even if only one product line is selected.
+In Microsoft Dynamics 365 Commerce version 10.0.17 and later, the **Improved user experience for pick up order processing in Point of Sale** feature can be turned on through Feature management in Commerce headquarters. If this feature is turned off, users can't select pickup quantities. By default, the full quantity that was ordered for the line is the quantity that will be picked up. This experience can be problematic, because users might forget to select some items for pickup when they perform the pickup through order fulfillment.
 
-When the **Improve user experience for pick up order processing in Point of Sale** feature is enabled and the user selects the **Pick up** operation, a dialog is displayed where the user can select the specific items and quantities to be picked up. By default, any ordered quantity with inventory in a picked or packed state is considered eligible for pickup and that quantity is the default pickup quantity. The user can change the quantity as long as the quantity entered isn't zero and doesn't exceed the total open (non-invoiced) quantity for the selected line.  
+The **Improved user experience for pick up order processing in Point of Sale** feature gives users more control over the selection of products that will be picked up and the quantity of those products that will be picked up. Users don't have to select every line of the sales order on the order fulfillment page before they select **Pick up**. All the items that can be picked up will be shown. Users can specify multiple lines for pickup even if only one product line is selected.
 
-![Pick up line selection dialog](media/pickupselect.png)
+When the **Improve user experience for pick up order processing in Point of Sale** feature is turned on, and you select the **Pick up** operation, the **Pick up** dialog box appears. There, you can select the items and quantities that will be picked up. By default, any ordered quantity that has inventory in a picked or packed state is considered eligible for pickup. By default, that quantity is set as the pickup quantity. You can change the quantity that was entered, provided that the quantity isn't 0 (zero) and doesn't exceed the total open (that is, non-invoiced) quantity for the selected line.
 
-When the user chooses the quantities to be picked up and selects **Pick up**, the **Transaction** page is displayed. If the [omni-channel payments](omni-channel-payments.md) feature is enabled and there are pre-authorized credit card payments on file, the user must apply the payment.  
+![Pick up dialog box](media/pickupselect.png)
 
-Once on the transaction page, the system calculates the amounts due by computing the total due for the selected pickup items and subtracting any previously applied deposits or credit card authorized payments. The user must process payment to complete the pickup transaction. If the [transaction screen is configured](pos-screen-layouts.md) with the **Conclude transaction** operation and there's no amount due, the user can complete the transaction without choosing a payment method. If the **Conclude transaction** operation isn't available, the user can select the **$0.00 amount due** link in the **Totals** panel to conclude the transaction without having to choose a payment method.
+After you select the quantities that will be picked up and then select **Pick up**, the transaction page appears. If the [omni-channel payments](omni-channel-payments.md) feature is turned on, and there are pre-authorized credit card payments on file, you must apply the payment.
 
-![Pick up transaction screen 1](media/pickupcart.png)
+On the transaction page, the system calculates the amounts that are due by calculating the total that is due for the selected pickup items and then subtracting any previously applied deposits or authorized credit card payments. You must process payment to complete the pickup transaction. If the [screen layout](pos-screen-layouts.md) of the transaction page is configured so that it includes the **Conclude transaction** operation, and no amount is due, you can complete the transaction without selecting a payment method. If the **Conclude transaction** operation isn't available, you can select the **$0.00 amount due** link in the **Totals** pane to conclude the transaction without having to select a payment method.
 
-## Change pick up lines or quantities
+![Transaction page for a customer order pickup transaction](media/pickupcart.png)
 
-If the user needs to change the pickup quantity after they've selected the items to be picked up, they can select **Set quantity** and make the change. The user can't set the pickup quantity to "0" or increase the quantity to a value that's greater than the non-invoiced quantity that remains for the ordered line. If the user wants to remove a pickup line from the transaction cart, they can select **Void transaction**. The current transaction will be stopped and the **Pick up** operation flow will be restarted.
+## Changing pickup lines or quantities
 
-If the **Improve user experience for pick up order processing in Point of Sale** feature is enabled, organizations can add the **Change pickup lines** operation button to their POS transaction screen layout. After a user creates the pickup transaction cart in POS and selects items, the user can select **Change pickup lines** if they need to change the pickup items but don't want to void the entire transaction. With the **Change pickup lines** operation, the user can change the pickup items and quantities. The transaction cart is then updated with the changes.
+If you must change the pickup quantity after you've selected the items that will be picked up, you can select **Set quantity**. You can't set the pickup quantity to **0** (zero) or increase it to a value that exceeds the non-invoiced quantity that remains for the ordered line. To remove a pickup line from the transaction cart, select **Void transaction**. The current transaction will be stopped, and the flow for the **Pick up** operation will be restarted.
 
-![Pick up transaction screen 2](media/pickupchange.png)
+If the **Improve user experience for pick up order processing in Point of Sale** feature is turned on, organizations can add a button for the **Change pickup lines** operation to the screen layout of the transaction page. After you create the pickup transaction cart in POS and select items, you can select **Change pickup lines** if you must change the pickup items but don't want to void the whole transaction. In the **Change pickup lines** dialog box that appears, you can change the pickup items and quantities. The transaction cart is then updated to reflect your changes.
+
+![Change pickup items dialog box](media/pickupchange.png)
