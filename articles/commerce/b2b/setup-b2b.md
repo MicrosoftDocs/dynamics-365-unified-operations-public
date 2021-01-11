@@ -1,4 +1,37 @@
+---
+# required metadata
+
+title: B2B e-commerce site setup
+description: This topic describes how to set up a B2B e-commerce site in Dynamics 365 Commere.
+author: josaw1
+manager: AnnBe
+ms.date: 01/11/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  RetailOperations
+audience: Application User, IT Pro
+# ms.devlang: 
+ms.reviewer: josaw
+#ms.search.scope: Core, Operations, Retail
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+ms.search.industry: retail
+ms.author: josaw
+ms.search.validFrom: 2021-01-31
+ms.dyn365.ops.version: 10.0.14
+
+---
+
+
 # B2B e-commerce site setup
+
+[!include [banner](includes/banner.md)]
 
 B2B e-commerce sites provides some key capabilities that optimize the
 workflow for a B2B user. In this document, we will walk through the new
