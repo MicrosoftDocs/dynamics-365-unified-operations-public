@@ -35,17 +35,28 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/preview-banner.md)]
 
-In some countries, there is a legal requirement to store culculated hash numbers together with printed outputs of some documents.
+In some countries, there is a legal requirement to store culculated hash numbers in the system together with printed outputs of some documents. Hash numbers can be used then for reporting to authirities and during audits.
 This topic explains how to configure archiving of printed customer invoices with hash numbers.
 
 ## Prerequisites
 
-- The primary address of the legal entity must be in Italy.
-- Italian sales tax books and sections are configured in the system. For more information, see [Italian sales tax books](emea-ita-fiscal-books.md).
-- In the Feature management workspace, turn on the **(Italy) Unified posting date control** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- In the Feature management workspace, turn on the **Archive printed customer invoices with hash numbers** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The printable formats of required documents are preliminary configured in Print management.
 
-## Configure posting date control
-Complete the following steps to configure posting date control.
+The functionality is applicable to the following documents:
+
+**Accounts receivable**
+- Customer invoice
+- Customer credit note
+- Free text invoice
+- Free text credit note
+
+**Project management**
+- Project Invoice
+- Project credit note
+
+## Configure customers master data
+Complete the following steps to configure customers data in order to activate automatic saving of printed invoices as attachments.
 
 1. Go to **Tax** > **Setup** > **Sales tax** > **Italian sales tax book sections**. 
 2. In the **Skip posting date control** column, select whether posting date control is required for a selected sales tax book section.
@@ -55,3 +66,5 @@ Complete the following steps to configure posting date control.
  - If the field isn't enabled, which is the default option, the system doesn't allow posting of new invoices with dates earlier than the date of the latest posted invoice.  
  - If the field is enabled, the system allows posting with any date.
 
+> [!NOTE]
+> For some countries, .
