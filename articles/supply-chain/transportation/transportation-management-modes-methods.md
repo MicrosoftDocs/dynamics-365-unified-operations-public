@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: TMSMode,TMSMethod,
+# ms.search.form: TMSMode,TMSMethod
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

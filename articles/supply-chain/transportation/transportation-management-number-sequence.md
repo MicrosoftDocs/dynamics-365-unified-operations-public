@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: TMSNumberSequence,
+# ms.search.form: TMSNumberSequence
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
