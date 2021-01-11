@@ -74,5 +74,10 @@ This procedure shows you how to create a trade agreement where you register a ne
 5. Close the page.
 
 ## Additional resources
+
+### Whitepaper
+For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management)
+- [Trade agreements](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
 ### Community blogs
 - [Sales prices in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
