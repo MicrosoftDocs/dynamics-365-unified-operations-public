@@ -37,12 +37,15 @@ This topic lists the system requirements for the current version of Dynamics 365
 
 ## Supported web browsers
 
-The web application can run in any of the following web browsers that run on the specified operating systems:
+Users can access the application with the most recent versions of these popular browsers: 
 
-- Microsoft Edge (latest publicly available version) on Windows 10. This applies to both legacy Edge as well as the Microsoft Edge based on Chromium. 
-- Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
-- Google Chrome (latest publicly available version) 
-- Apple Safari (latest publicly available version)
+- Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/en-us/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) 
+- Google Chrome  
+- Apple Safari
+- Microsoft Internet Exploer 11 (deprecated, not recommended)
+
+> [!NOTE]
+> For optimal performance and experience, we recommend you use the latest version of a modern browser, particular Microsoft Edge. Microsoft Internet Explorer 11 support is deprecated. For more information, see the [Internet Explorer deprecation announcement](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps)
 
 To find the latest release for each web browser, go to the software manufacturer's website.
 
