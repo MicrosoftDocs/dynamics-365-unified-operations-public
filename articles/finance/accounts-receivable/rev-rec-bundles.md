@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.7
 This topic describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items. The parent item is entered on a sales order, so that order entry is more efficient. However, it's then exploded into the component items. Internal documents, such as the packing slip, will list the component items. However, external documents will show only the parent item.
 
 > [!NOTE]
-> Commerce channels, such as e-commerce, the point of sale (POS), and call centers, don't support revenue recognition (including the bundle functionality). Items that are configured to use revenue recognition should not be added to orders or transactions that are created in Commerce channels.
+> Microsoft Dynamics 365 Commerce  channels, such as e-commerce, Point of sale (POS), and Call centers, don't support revenue recognition (including the bundle functionality). Items that are configured to use revenue recognition should not be added to orders or transactions that are created in Commerce channels.
 
 To set up bundles, you must enter the configuration keys for revenue recognition. However, you can use bundles even if revenue recognition isn't set up. Likewise, you can use revenue recognition if bundles aren't set up. If revenue recognition is set up, the component items determine the revenue price and the revenue schedule that is used for revenue recognition or deferral when a sales order is invoiced.
 
