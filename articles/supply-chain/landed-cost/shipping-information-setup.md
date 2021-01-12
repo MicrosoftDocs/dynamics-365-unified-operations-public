@@ -47,7 +47,7 @@ To work with descriptions of goods, go to **Landed cost \> Shipping information 
 
 ## Vessels
 
-A vessel is the unique name of a ship or vessel that a shipping company or agency uses. When a voyage is created, vessels can be selected or entered for it. These settings are optional, and you will typically use them only if you often use the same vessels. A vessel name or number is required when a voyage is created.
+A vessel is the unique name of a ship or vessel that a shipping company or agency uses. When you create a voyage, you must always either select or enter a vessel for it. If you often use the same vessels, then you can make it faster and easier to create a new voyage by creating a vessel record for each of them, thereby allowing users to select the vessel from a list rather then enter the name or number manually each time.
 
 To work with vessels, go to **Landed cost \> Shipping information setup \> Vessels**. There, you can view, open, create, and delete records for vessels. The following table describes the fields that are available for each record.
 
