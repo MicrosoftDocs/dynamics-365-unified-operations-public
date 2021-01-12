@@ -72,6 +72,9 @@ The following table describes various types of product collection modules in Dyn
 | People also like           | Artificial intelligence/Machine learning | This module uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. This list can show personalized results for a signed-in user if the site author chooses that option. |
 | Picks for you              | Artificial intelligence/Machine learning | This module uses machine learning to analyze the purchase patterns of the signed-in user and provide personalized recommendations that are based on those purchase patterns. For a guest user, this list will be collapsed. |
 
+## Modules supported
+The Product collection module supports [Product quick view module](add-quick-view.md) which allows users to view and add items to bag from the product collection.
+
 ## Add a product collection module to a category page
 
 To add a product collection module to a category page, follow these steps.
