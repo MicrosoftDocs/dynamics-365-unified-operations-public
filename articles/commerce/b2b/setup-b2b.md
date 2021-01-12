@@ -50,7 +50,7 @@ Site-level settings can be accessed in site builder under **Site Settings \> Ext
 > [!NOTE]
 > When upgrading to latest version of the module library, you need to follow additional steps to ensure that the site settings described above are available in your environment. For more information, see [Update the app.settings.json file](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-## Become a business partner pages
+## Create business partner sign-up pages
 
 To become a business partner, users must first submit a business partner request. To sign up for a business partner account, users must set up a partner account. After submitting the business partner request, users will see a confirmation message that the request has been submitted. In addition, the link to the business partner request will be available on the B2B home page for users to initiate the process.
 
@@ -75,7 +75,7 @@ To set up and configure the business partner sign-up page in Commerce site build
 
 <!--Below is an image showing the site builder page configuration and the page hosting these modules.-->
 
-### Create a request confirmation page
+### Create a business partner request confirmation page
 
 Once a business partner request is submitted, a confirmation page should be displayed to the user acknowledging their submission. <!-- To do this we will create a confirmation page and link the Partner request page to this confirmation page.-->
 
@@ -93,16 +93,19 @@ To set up and configure the request confirmation page in Commerce site builder, 
 
 To add a link to the request confirmation page in Commerce site builder, follow these steps.
 
-1. Go to the **Business Partner Request** page created earlier. 
-1. Edit. Select Partner request module and in the module properties pane navigate to the "Link to the confirmation page" and configure with it the link to **Partner request Confirmation** page that we just created. Save and Publish.
+1. Go to the "Business Partner Request" page you created earlier and select **Edit**. 
+1. Select the **Partner Sign up** module slot. In the properties pane under **Link to the Sign-Up Confirmation page**, configure the link to the business partner request page you created earlier. 
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ### Add business partner request link to home page
 
-Once the request sign-up and confirmation pages are created, we need to make the sign-up accessible from the homepage. This can be achieved by using any Content Block module on the home page.
+Once the business partner request sign-up and confirmation pages are created, you need to make the sign-up page accessible with a link on the home page. This can be achieved by adding the link to any content block module on the home page.
 
-1. Open the home page in site builder.
-1. Select a Content block module. Change the Shop Now link to "Sign-up for a business partner" and link it to the **Business Partner Request** page. Change the image as applicable.
-1. Save and Publish.
+To add a business partner request link to the home page in site builder, follow these steps.
+
+1. Go to the home page for your site and select **Edit**.
+1. Select a content block module slot. In the module properties pane under **Links**, configure a link to the business partner request page you created earlier with the link text "Sign up to be a business partner" or something similar. Add an image as appropriate.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Account management home page
 
