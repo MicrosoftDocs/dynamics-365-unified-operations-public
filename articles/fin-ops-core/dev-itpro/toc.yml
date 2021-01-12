@@ -1424,7 +1424,7 @@
         href: perf-test/rsat/rsat-chain-test-cases.md
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
-      - name: Regression suite automation tool tutorial and other features
+      - name: Regression suite automation tool tutorial
         href: perf-test/rsat/rsat-tutorial.md
       - name: Best practices
         href: perf-test/rsat/rsat-best-practices.md
