@@ -60,6 +60,13 @@ Complete the following steps to activate printing of the references to original 
 
 ![Set up AR parameters](media/original-invoice-number-in-credit-note.jpg)
 
+## Define references to original invoices
+
+
+## Print invoices
+Create and print any Customer/Free text/Project invoice for the customer configured in the previous step.
+Go to...
+
 > [!NOTE]
-> Make sure that printable formats are properly configured and assume printing of the references to original invoices.
+> Make sure that documents printable formats are properly configured and assume printing of the references to original invoices.
 
