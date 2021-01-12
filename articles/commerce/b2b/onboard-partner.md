@@ -239,3 +239,30 @@ Commerce HQ by following the steps below:
     3.  Click on **Add** and in the **Name** field, select a customer
         using the drop down. Repeat the process to add additional
         customers to the hierarchy.
+
+
+## Call outs
+
+1.  All jobs that are referenced in the document above can be configured
+    to run on a schedule in a batch format and it is expected that
+    customers configure them accordingly.
+
+2.  In this release, only one user / customer can be designated as an
+    Admin user and the role can be changed only in HQ. Self-serve
+    capability for the business partner to designate multiple admins or
+    change admins from the B2B e-commerce website is not supported.
+
+3.  The modules & labels of the different fields referenced in the
+    screenshots for e-commerce are only for illustration purposes.
+    Customers have complete control on the placement of the B2B related
+    modules and the labels.
+
+4.  While **Spending limits** can be defined for users, the enforcement
+    of the same during the order entry process has not been implemented
+    in this release.
+
+5.  All business logics & validations for a user's experience on the B2B
+    e-commerce website is based on the configuration for the
+    corresponding customer record that is mapped to the user in Commerce
+    HQ.
+
