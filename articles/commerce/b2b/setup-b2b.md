@@ -107,13 +107,15 @@ To add a business partner request link to the home page in site builder, follow 
 1. Select a content block module slot. In the module properties pane under **Links**, configure a link to the business partner request page you created earlier with the link text "Sign up to be a business partner" or something similar. Add an image as appropriate.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
-## Account management home page
+## Account management landing page
 
-Account Management home page includes all the account management information needed for both B2B and B2C. In this section, we will define the modules that we must configure on the Account Management home page. To view this page, a user needs to be signed-in. 
+The account management landing page includes all the account management information needed for both B2B and B2C. To view this page, a user needs to be signed-in.
 
-In the section below, we have covered the steps needed to configure this page in site builder.
+<!-- In this section, we will define the modules that we must configure on the Account Management home page. -->
 
-1. In site builder, create a template for **Account Management** template. This template should include all modules needed to build an Account Management home page – Header, Footer, Breadcrumb, Account Welcome Tile, Account Generic Tile, Account Address Tile, Account Wishlist tile, Account address tile, Account loyalty tile. For B2B account manage home page add the following modules to the template **Account customer balance tile, Account order templates tile, Organization Users, Business Organization list, Customer Account balance, OrderTemplateLines, OrderTemplateList, Account Invoice tile, Invoices list, Invoice details.**
+To create and configure an account management landing page in site builder, follow these steps.
+
+1. Create a template for **Account Management** template. This template should include all modules needed to build an Account Management home page – Header, Footer, Breadcrumb, Account Welcome Tile, Account Generic Tile, Account Address Tile, Account Wishlist tile, Account address tile, Account loyalty tile. For B2B account manage home page add the following modules to the template **Account customer balance tile, Account order templates tile, Organization Users, Business Organization list, Customer Account balance, OrderTemplateLines, OrderTemplateList, Account Invoice tile, Invoices list, Invoice details.**
 1. Create a page using Account Management template **My** **Account.**
 1. In the Page Header slot, add the header fragment that is pre-configured with the site header.
 1. In the page Footer slot, add the footer fragment that is pre-configured with the site footer.
