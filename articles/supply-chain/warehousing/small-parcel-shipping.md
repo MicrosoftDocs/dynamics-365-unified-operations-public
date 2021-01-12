@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount
+ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
