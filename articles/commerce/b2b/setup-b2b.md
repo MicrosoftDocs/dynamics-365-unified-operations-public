@@ -138,7 +138,7 @@ To create and configure a B2B account management landing page in site builder, f
 1. Create a page named "My Account" using the "Account management" template.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
-1. In the Main slot, add a **Container** module. In the module properties pane, set the **Width** value to **Fill Container**. 
+1. In the **Main** slot, add a **Container** module. In the module properties pane, set the **Width** value to **Fill Container**. 
 1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane, configure the breadcrumb link to the home page with link text "Home". 
 1. In the **Container** slot, add a **Welcome tile** module. In the module properties pane under **Heading**, enter "Welcome."
 1. In the **Main** slot, add another **Container** module ("Container 2"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
@@ -157,7 +157,7 @@ To create and configure a B2B account management landing page in site builder, f
 > [!NOTE] 
 > Some of the sections added in step 13-18 will not appear in the site builder WYSIWIG canvas as they require a signed-in B2B account.
 
-At this point the home page is configured with all the tiles needed to display B2B information.
+At this point the Account management landing page is configured with all the tiles needed to display B2B information.
 
 ## Customer account for payments
 
