@@ -85,7 +85,7 @@ To set up and configure the request confirmation page in Commerce site builder, 
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
 1. In the **Main** slot, add a **Container** module. Set the **Width** to **Fill Container**.
-1. In the **Container** slot, add a **Content block** module. In the properties panel under **Heading**, enter "Request submitted". In the **Rich Text** box, add the paragraph "Your request has been submitted". Under **Links**, enter a link to the home page withe link text "Back to shopping".
+1. In the **Container** slot, add a **Content block** module. In the properties panel under **Heading**, enter "Request submitted." In the **Rich Text** box, add the paragraph "Your request has been submitted". Under **Links**, enter a link to the home page withe link text "Back to shopping".
 1. Add another container module and then add a **Product Collection** module to it. Configure this module with a recommendation or category list that you want to showcase on this page.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
@@ -113,21 +113,49 @@ The account management landing page includes all the account management informat
 
 <!-- In this section, we will define the modules that we must configure on the Account Management home page. -->
 
-To create and configure an account management landing page in site builder, follow these steps.
+To create and configure a B2B account management landing page in site builder, follow these steps.
 
-1. Create a template for **Account Management** template. This template should include all modules needed to build an Account Management home page – Header, Footer, Breadcrumb, Account Welcome Tile, Account Generic Tile, Account Address Tile, Account Wishlist tile, Account address tile, Account loyalty tile. For B2B account manage home page add the following modules to the template **Account customer balance tile, Account order templates tile, Organization Users, Business Organization list, Customer Account balance, OrderTemplateLines, OrderTemplateList, Account Invoice tile, Invoices list, Invoice details.**
-1. Create a page using Account Management template **My** **Account.**
-1. In the Page Header slot, add the header fragment that is pre-configured with the site header.
-1. In the page Footer slot, add the footer fragment that is pre-configured with the site footer.
-1. In the Main slot, add a Container. Set Width to Fill Container. To this Container add Breadcrumb and Welcome Tile. Configure the breadcrumb link as Home. To the Welcome Tile, add Heading as "Welcome".
-1. In the Main slot add another Container 2. Set Width to Fill Container. Set Number of Children shown to Two. In this Container add **Account generic tile**, define Heading as "My Profile" and provide a link to my profile page that is already configured. To the same Container add another **Account generic tile**, define Heading as "Order history" and provide a link to the order history page.
-1. In the Main slot add another Container3. Set Width to Fill Container. Set Number of Children shown to Two. In this Container add **Account address tile**, define Heading as "My Address" and provide a link to the my address page that is already configured. To the same Container add another **Account wishlist tile**, define Heading as "My Wishlist" and provide a link to the order history page.
-1. In the Main slot add another Container4. Set Width to Fill Container. Set Number of Children shown to Two. In this Container add **Organization users**, define Heading as "Organization Users". We will provide the link later once the respective page is created in Section of this document. To Container4 add **Account customer balance tile**, define Heading as "Account credit". We will provide the link later, once the respective page is created in Section of this document.
-1. In the Main slot add another Container5. Set Width to Fill Container. Set Number of Children shown to Two. In this Container add **Account order templates tile**, define Heading as "Order Templates". We will provide the link later once the respective page is created in Section of this document.
-1. Save, Publish.
+1. Create a template named "Account management". This template should include the following modules:
+    - Header
+    - Footer
+    - Breadcrumb
+    - Account welcome tile
+    - Account generic tile
+    - Account Address tile
+    - Account wishlist tile
+    - Account address tile
+    - Account loyalty tile
+    - Account customer balance tile
+    - Account order templates tile
+    - Organization users
+    - Business organization list
+    - Customer account balance
+    - Order template lines
+    - Order template list
+    - Account invoice tile
+    - Invoices list
+    - Invoice details    
+1. Create a page named "My Account" using the "Account management" template.
+1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
+1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
+1. In the Main slot, add a **Container** module. In the module properties pane, set the **Width** value to **Fill Container**. 
+1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane, configure the breadcrumb link to the home page with link text "Home". 
+1. In the **Container** slot, add a **Welcome tile** module. In the module properties pane under **Heading**, enter "Welcome."
+1. In the **Main** slot, add another **Container** module ("Container 2"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
+1. In the **Container 2** slot, add an **Account generic tile** module. In the module properties pane under **Heading**, enter "My Profile." Under **Links**, configure a link to the "My profile" page. 
+1. In the **Container 2** slot, add another **Account generic tile** module. In the module properties pane under **Heading**, enter "Order history." Under **Links**, configure a link to the order history page.
+1. In the **Main** slot, add another **Container** module ("Container 3"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
+1. In the **Container 3** slot, add an **Account address tile** module. In the module properties pane under **Heading**, enter "My Address." Under **Links**, configure a link to the "My address" page. 
+1. In the **Container 3** slot, add an **Account wishlist tile** module. In the module properties pane under **Heading**, enter "My Wishlist." Under **Links**, configure a link to the "My wishlist" page.
+1. In the **Main** slot, add another **Container** module ("Container 4"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
+1. In the **Container 4** slot, add an **Organization users** module. In the module properties pane under **Heading**, enter "Organization Users." <!--We will provide the link later once the respective page is created in Section of this document. -->
+1. In the **Container 4** slot, add an **Account customer balance tile** module. In the module properties pane under **Heading**, enter "Account credit." <!--We will provide the link later, once the respective page is created in Section of this document.-->
+1. In the **Main** slot, add another **Container** module ("Container 5"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
+1. In the **Container 5** module, add an **Account order templates tile** module. In the module properties pane under **Heading**, enter "Order Templates". <!--We will provide the link later once the respective page is created in Section of this document.-->
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE] 
-> Some of the sections added in step 8-10 will not appear in the Site builder WYSIWIG as they require a B2B sign-in account.
+> Some of the sections added in step 13-18 will not appear in the site builder WYSIWIG canvas as they require a signed-in B2B account.
 
 At this point the home page is configured with all the tiles needed to display B2B information.
 
