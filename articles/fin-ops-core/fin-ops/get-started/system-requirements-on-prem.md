@@ -288,12 +288,15 @@ The following table lists the SQL Server versions that are supported for the dat
 
 ## Software requirements for client computers
 
-The Finance + Operations web application can run on any device that has an HTML 5.0–compliant web browser. Here are some of the specific device/browser combinations that Microsoft has confirmed:
+Users can access the Finance and Operations web application with the most recent versions of these popular browsers:
 
-- Microsoft Edge (latest publicly available version) on Windows 10
-- Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
-- Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
-- Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
+- Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/en-us/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) 
+- Google Chrome  
+- Apple Safari
+- Microsoft Internet Explorer 11 (deprecated, not recommended)
+
+> [!NOTE]
+> For optimal performance and experience, we recommend you use the latest version of a modern browser, in particularl Microsoft Edge. Microsoft Internet Explorer 11 support is deprecated. For more information, see the [Internet Explorer deprecation announcement](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps)
 
 ## Software requirements for Active Directory Federation Services
 
