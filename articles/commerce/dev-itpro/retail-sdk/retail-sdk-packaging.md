@@ -45,15 +45,15 @@ This topic explains how to create a Commerce deployable package (which is a pack
 - Payment connector
 - Hybrid app (IOS and Android POS app)
 
-## Deployable package types:
+## Deployable package types
 
-The following table lists commerce package types for deployment:
+The following table lists Commerce package types for deployment:
 
 | Package type                              | Description                            | Applies to                  |
 |-------------------------------------------|----------------------------------------|--------------------------|
-| Retail deployable package             | Combined package that contains Commerce scale unit (CRT, RS,DB) extension, CPOS and self service packages.     |   Commerce scale unit environment  |
-| Commerce cloud scale unit package | Commerce scale unit (CRT, RS,DB) extension.  |  Commerce scale unit environment  |
-| All in one deployable package                 | Payment extension for Finance and Operation. | Finance and Operation environment  |
+| Retail deployable package             | Combined package that contains Commerce scale unit (CRT, RS, DB) extension, CPOS, and self-service packages.     |   Commerce scale unit environment  |
+| Commerce cloud scale unit package | Commerce scale unit (CRT, RS, DB) extension.  |  Commerce scale unit environment  |
+| All in one deployable package                 | Payment extension for Finance and Operations. | Finance and Operations environment  |
 
 ## Retail deployable package
 
