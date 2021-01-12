@@ -44,14 +44,14 @@ ms.dyn365.ops.version: Version 1611
 - Process a POS cash-and-carry transaction by using Microsoft Dynamics Commerce Retail Hardware Station.
 - Process a POS cash-and-carry return by using Hardware Station.
 - Process a POS customer order by using Hardware Station.
-- Buy online, pick up in store
-- Buy in Call Center, pick up in store
+- Buy online, pick up in store.
+- Buy in call center, pick up in store.
 
 ## Which payment providers are supported and in what regions?
 
 - Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3).
 - PayPal is supported for online purchases. For a list of supported regions, visit the [Dynamics 365 Payment Connector for PayPal overview pag](https://docs.microsoft.com/en-us/dynamics365/commerce/paypal).
-- The **TestConnector** is not supported for User Acceptance Testing (UAT) or for Production (Prod). The **TestConnector** is for Sandbox and Development use only and is for sample use only. 
+- The **TestConnector** isn't supported for user acceptance testing (UAT) or for production (prod). The **TestConnector** is for sandbox and development use only, and is for sample use only. 
 - Mastercard Simplify is no longer supported for new customers.
 
 ## What is a payment connector and in what cases do I need to deploy and implement a payment connector?
