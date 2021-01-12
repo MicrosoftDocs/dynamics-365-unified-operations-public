@@ -33,7 +33,8 @@ ms.dyn365.ops.version:
 
 This topic covers identity management pages and modules in Microsoft Dynamics 365 Commerce. Out of the box, Commerce modules are built to work with Azure ActiveDirectory B2C as the identity provider.
 
-[!WARNING] Please note that AAD B2C will be retiring legacy user flows as noted in the User Flows page in the AAD B2C resource in Azure Portal.  As noted, all legacy preview user flows are on a path to deprecation by August 1, 2021. Plan to migrate your preview user flows to their Recommended version. This version offers you feature parity and is a home for new features. [Learn more.](https://aka.ms/userflowtype). Commerce users can utilize the below identity modules from Commerce version 10.0.15 and up to use with the current AAD B2C Recommended user flows.
+[!WARNING] 
+Please note that AAD B2C will be retiring legacy user flows as noted in the User Flows page in the AAD B2C resource in Azure Portal.  As noted, all legacy preview user flows are on a path to deprecation by August 1, 2021. Plan to migrate your preview user flows to their Recommended version. This version offers you feature parity and is a home for new features. [Learn more.](https://aka.ms/userflowtype). Commerce users can utilize the below identity modules from Commerce version 10.0.15 and up to use with the current AAD B2C Recommended user flows.
 
 ## Overview
 
