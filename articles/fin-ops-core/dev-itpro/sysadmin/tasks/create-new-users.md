@@ -5,7 +5,7 @@ title: Create new users
 description: Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. 
 author: peakerbl
 manager: AnnBe 
-ms.date: 01/04/2021
+ms.date: 01/12/2021
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -62,7 +62,7 @@ External users need to be represented in your tenant directory (Azure Active Dir
 7. In the **Company** field, select the default startup company for the user. 
 8. Select **Save**.
 
-The values for Identity provider and Telemetry ID will be updated based on a [Microsoft graph](https://docs.microsoft.com/en-us/graph/overview) call, when the user record is saved. The Telemetry ID is based on the user's Object ID/Security Identifier (SID) in Azure AD.
+The values for Identity provider and Telemetry ID will be updated based on a [Microsoft graph](https://docs.microsoft.com/graph/overview) call, when the user record is saved. The Telemetry ID is based on the user's Object ID/Security Identifier (SID) in Azure AD.
 
 > [!NOTE]
 > After you add a user, you must assign roles and organizations as applicable. For more information, see [Assign users to security roles](assign-users-security-roles.md). Conditionally, it might also be required to associate the user with a **Person** and to update **User options** such as language.
@@ -80,6 +80,7 @@ To change a user ID, you must rename the key in the database. When you change a 
 5. Select **Yes** to confirm.
 
 ## Additional resources
-For more options to implement B2B users, see [Export B2B users to Azure AD](implement-b2b.md).
 
-For information about preconfigured system accounts, see [Preconfigured system accounts](pre-configured-system-accounts.md)
+For more options to implement B2B users, see [Export B2B users to Azure AD](../implement-b2b.md).
+
+For information about preconfigured system accounts, see [Preconfigured system accounts](../pre-configured-system-accounts.md)
