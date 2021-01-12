@@ -63,6 +63,9 @@ The following table lists the properties of search result modules, together with
 > [!IMPORTANT]
 > In the Dynamics 365 Commerce 10.0.16 release and later, the **Show affiliation prices** configuration can be used to show affiliation prices on the page.
 
+## Modules supported
+The Search results module supports [Product quick view module](add-quick-view.md) which allows users to view and add items to bag from the search results page.
+
 ## Add a search results module to a category page
 
 To add a search results module to a category page, follow these steps.
