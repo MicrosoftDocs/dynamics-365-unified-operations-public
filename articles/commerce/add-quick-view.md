@@ -45,7 +45,7 @@ Its supported on the [Product collection](add-product-collection.md) and [Search
 > [!IMPORTANT]
 > The **Quick View** module is available in the Dynamics 365 Commerce 10.0.17 release.
 
-The following image shows an example of a quick view module on a category page
+The following image shows an example of a quick view module on a list.
 
 ![Example of a quick view module](./media/ecommerce-quickview.PNG)
 
