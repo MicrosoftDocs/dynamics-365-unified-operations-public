@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # B2B e-commerce site setup
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to set up a B2B e-commerce site in Dynamics 365 Commerce.
 
@@ -269,8 +269,7 @@ This page shows the details of each invoice displayed in the Invoices List page.
 1. Save and Publish page.
 1. Publish Url.
 
-Below is an example of the Invoice details page on e-commerce site and
-the page configuration in Site Builder.
+Below is an example of the Invoice details page on e-commerce site and the page configuration in Site Builder.
 
 ## Additional resources
 
