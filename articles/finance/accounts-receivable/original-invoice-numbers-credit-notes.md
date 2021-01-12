@@ -62,9 +62,17 @@ Complete the following steps to activate printing of the references to original 
 
 ## Define references to original invoices
 
+Complete the following steps to define references to original invoices, depending on document type.
+
+### Free text credit note
+
+1. Go to **Accounts receivable** > **Invoices** > **All free text invoices**. 
+2. Create a new or select an existing cretit note.
+3. In **Invoice** > **FUNCTIONS** > **Credit invoicing** menu, enter the reference to an original invoice and select the reason of correction.
+
 ![Define rederences for FTI](media/reference-original-invoice-FTI.jpg)
 
-## Print invoices
+## Print credit notes
 Create and print any Customer/Free text/Project invoice for the customer configured in the previous step.
 Go to...
 
