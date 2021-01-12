@@ -37,7 +37,7 @@ This topic covers Product quick view module and describes how to add them to sit
 
 ## Overview
 
-When browsing products in a list or a list page, the product quick view module allows a user to quickly view the product information and add it to bag without navigating to a product details page. It provides a quick snippet of the product information that is necessary to make an add to cart decision. For more details and options to buy, it also provides a link to the product details page.
+When browsing products in a list or a list page, the product quick view module allows a user to quickly view the product information and add it to bag without navigating to a product details page. The goal of the module is to allow a way for the user to add many items to cart while browsing a list. It provides a quick snippet of the product information that is necessary to make an add to cart decision. For more details and options to buy, it also provides a link to the product details page.
 
 Its supported on the [Product collection](add-product-collection.md) and [Search results](search-result-module.md) module.
 
@@ -64,7 +64,7 @@ The module properties are similar to a buy box module as it supports some of the
 
 ## Site settings
 
-The module also respects the Site Settings->Extensions for **Add to cart** similar to Buy box. Depending on the setting, when a user adds an item to cart, they will be navigated to cart or they can stay on the page. 
+The module also respects the Site Settings->Extensions for **Add to cart** similar to Buy box.  However the setting  **Navigate to cart page**  is ignored as it does not align with the intent of the Quick View module i.e. to allow the user to browse multiple products in a list and add to cart wihtout navigating away.
 
 
 ## Add a quick view module to a page
