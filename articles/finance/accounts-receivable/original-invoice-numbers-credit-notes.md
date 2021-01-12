@@ -62,10 +62,12 @@ Complete the following steps to activate printing of the references to original 
 
 ## Define references to original invoices
 
+![Define rederences for FTI](media/reference-original-invoice-FTI.jpg)
 
 ## Print invoices
 Create and print any Customer/Free text/Project invoice for the customer configured in the previous step.
 Go to...
+![Credit note prinout](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > Make sure that documents printable formats are properly configured and assume printing of the references to original invoices.
