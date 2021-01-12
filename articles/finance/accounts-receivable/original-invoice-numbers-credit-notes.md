@@ -67,10 +67,18 @@ Complete the following steps to define references to original invoices, dependin
 ### Free text credit note
 
 1. Go to **Accounts receivable** > **Invoices** > **All free text invoices**. 
-2. Create a new or select an existing cretit note.
+2. Create a new or select an existing credit note.
 3. In **Invoice** > **FUNCTIONS** > **Credit invoicing** menu, enter the reference to an original invoice and select the reason of correction.
 
 ![Define rederences for FTI](media/reference-original-invoice-FTI.jpg)
+
+### Customer credit note
+
+1. Go to **Accounts receivable** > **Orders** > **All sales orders**. 
+2. Select an invoiced sales order to be corrected.
+3. In **Sell** > **CREDIT NOTE** > **Credit note** menu, enter the reason of correction. The reference to an original invoice will be established automatically.
+
+![Define rederences for SO](media/reference-original-invoice-SO.jpg)
 
 ## Print credit notes
 Create and print any Customer/Free text/Project invoice for the customer configured in the previous step.
