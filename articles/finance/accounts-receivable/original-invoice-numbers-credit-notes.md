@@ -90,8 +90,7 @@ Complete the following steps to define references to original invoices, dependin
 ![Define rederences for project invoices](media/reference-original-invoice-project.jpg)
 
 ## Print credit notes
-Create and print any Customer/Free text/Project invoice for the customer configured in the previous step.
-Go to...
+When printing Customer/Free text/Project credit notes, the section with the reference to original invoice and correction reason will be shown.
 
 ![Credit note prinout](media/credit-note-FTI.jpg)
 
