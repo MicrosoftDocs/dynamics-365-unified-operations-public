@@ -29,12 +29,13 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 ---
 
 # Set up and install Regression suite automation tool tutorial
-This topic is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT. 
+
+This topic is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT.
 
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> Use your internet browser tools to download and save this page in PDF format. 
+> Use your internet browser tools to download and save this page in PDF format.
 
 ## Key concepts
 
@@ -63,7 +64,8 @@ This topic is a tutorial that helps you get setup and get started with RSAT and 
 Make sure that the user is created in Azure DevOps and has a subscription level that provides access to Azure Test Plans. An Azure DevOps Test Plans license is required only if the user will create and manage test cases (that is, not all RSAT users require this license). For information about the license requirements, see [License requirements](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
 
 ### Create a new Azure DevOps project
-RSAT uses Azure Devops for test case and test suite management, reporting, and investigating test run results. 
+
+RSAT uses Azure Devops for test case and test suite management, reporting, and investigating test run results.
 
 > [!NOTE]
 > You can use an existing Azure DevOps project. However, if your existing Azure DevOps project is set up so that it has a custom template, you will receive a "VSTS Sync Failure" error when you sync test cases from Business process modeler (BPM) to Azure DevOps (see the [Test the synchronization from BPM to Azure DevOps](#test-the-synchronization-from-bpm-to-azure-devops) section). If the following best practices have been followed for the custom template, you will be able to sync the test cases to Azure DevOps. (These best practices are listed in the error message.)
@@ -320,7 +322,7 @@ Now that a task recording is attached to the business process, you must validate
 
     > [!NOTE]
     > If the **Sync test cases** option isn't available after you refresh the page, go to main page for BPM, and select **Sync test cases** for the whole library itself. In this way, you effectively force a synchronization for the whole library.
-    > 
+    >
     > ![Selecting Sync test cases for the whole library](./media/setup_rsa_tool_42.png)
 
     After Sync test cases is completed, a new test case is created on the **Requirements** tab.
@@ -350,7 +352,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 1. To generate a certificate file, open a Microsoft Windows PowerShell window as an admin, and run the following command.
 
-    ```
+    ```powershell
     $certificate = New-SelfSignedCertificate -dnsname 127.0.0.1 -CertStoreLocation cert:\LocalMachine\My -FriendlyName "D365 Automated testing certificate" -Provider "Microsoft Strong Cryptographic Provider"
     ```
 
@@ -372,7 +374,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 6. To get the thumbprint of the installed certificate, but without spaces or special characters, open a Windows PowerShell window as an admin, and run the following commands.
 
-    ```
+    ```powershell
     cd Cert:\LocalMachine\My
 
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
@@ -397,7 +399,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 4. Update the **wif.config** file by adding a new authority entry for your certificate and authority name, as shown in the following example.
 
-    ```
+    ```Xml
     <issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry,Microsoft.Dynamics.AX.Security.SharedUtility">
         <authority name="CN=127.0.0.1">
             <keys>
@@ -634,7 +636,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
 
 3. To generate a unique product number for each run without having to reopen the Excel parameter file and manually update the product number every time, use the following Excel formula.
 
-    ```
+    ```vba
     ="RSAT_"&TEXT(NOW(),"yyymmddhhmm")
     ```
 
