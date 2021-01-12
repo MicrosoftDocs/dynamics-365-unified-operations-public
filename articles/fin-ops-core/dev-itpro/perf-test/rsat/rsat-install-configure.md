@@ -203,11 +203,15 @@ Use the **Download** button to retrieve the certificate bundle as a .zip file.
 
 3. Copy the clear-text password for later use. You'll see the .zip file has been downloaded. Inside the .zip file is a certificate (.cer) and a personal information exchange (.pfx) file. Unzip the file.
 
-4. Double-click the certificate to open it, and then select **Install**. Install this certificate to your local machine, and then browse to the **Personal** store. Repeat this process for the local machine, and browse specifically to the **Trusted Root Certification Authorities** store.
+4. Install the certificate in the local machine's trusted root store:
+    + Double-click the certificate (.cer) to open it, and then select **Install Certificate**. 
+    + Select **local machine**, and then browse to the **Trusted Root Certification Authorities** store to install it in the trusted root store.
 
-5. Double-click the personal information exchange (.pfx) file to open it, and select **Install**. Install this certificate to your local machine, enter the password saved in step 2, and browse to the **Personal** store. Repeat this process for the local machine location, enter the password saved in step 2, and browse specifically to the **Trusted Root Certification Authorities** store.
+5. Install the pfx file in the local machine's personal store:
+   + Double-click the personal information exchange (.pfx) file to open it, and select **Local Machine**. 
+   + Enter the password saved in step 2, and browse to the **Personal** store.
 
-6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and copy the ID in the text box. Use this thumbprint for RSAT.
+6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and note the ID in the text box. Select or paste this thumbprint in RSAT settings.
 ![Thumbprint settings](media/rsat-lcs4.png)
 
 You can now run your tests against the environment using this certificate. The certificate will be autorotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments, this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
