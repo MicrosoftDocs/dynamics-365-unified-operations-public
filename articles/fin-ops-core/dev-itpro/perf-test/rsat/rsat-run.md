@@ -133,7 +133,7 @@ When a test run is in progress, you can select the **Stop** button on the toolba
 ### Validate readiness of test automation files
 Optionally, you can turn on a setting that validates whether your test cases are ready for execution. This setting prevents unknown errors related to the validity of recordings and test automation files. This option is available as of RSAT version 1.210. You can enable this by selecting the **Settings** tab and then selecting the **Optional** tab.
 
-![enable-local-file-validation-rules](media/enable-local-file-validation-rules.png)
+![Setting for Enable local file validation rules](media/enable-local-file-validation-rules.png)
 
 When enabled, a background process continuously validates the following for each test case.
 
@@ -146,7 +146,7 @@ when you install a new version of RSAT.
 
 The Valid column in the grid indicates the result of the validation process. If validation fails, click on the **X** in the **Valid** column to view the error and recommended action.
 
-![enable-local-file-validation-rules-2](media/enable-local-file-validation-rules-2.png)
+![Valid column grid](media/enable-local-file-validation-rules-2.png)
 
 ## Investigate results
 When all test cases complete execution, **Pass** or **Fail** will be populated in the **Result** column. You can click on the result to see error messages.

@@ -1425,7 +1425,7 @@
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
       - name: Regression suite automation tool tutorial and other features
-        href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+        href: perf-test/rsat/rsat-tutorial.md
       - name: Best practices
         href: perf-test/rsat/rsat-best-practices.md
       - name: Data agnostic testing using the Regression Suite Automation Tool

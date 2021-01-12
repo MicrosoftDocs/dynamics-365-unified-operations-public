@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 # Regression suite automation tool tutorial
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > Use your internet browser tools to download and save this page in pdf format. 
@@ -41,7 +41,7 @@ This tutorial walks through some of the advanced features of the Regression suit
 
 ### Validate a field value
 
-RSAT allows you to include validation steps within your test case to validate expected values. For information about this feature, see the article [Validate expected values](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
+RSAT allows you to include validation steps within your test case to validate expected values. For information about this feature, see the article [Validate expected values](rsat-validate-expected.md).
 
 The following example shows how you can use this feature to validate whether the on-hand inventory is more than 0 (zero).
 
@@ -65,11 +65,11 @@ Now, if the value of the **Total Available** field for the specified item in inv
 
 ### Saved variables and chaining of test cases
 
-One of the key features of RSAT is the chaining of test cases, that is, the ability of a test to pass variables to other tests. For more information, see the article [Copy variables to chain test cases](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
+One of the key features of RSAT is the chaining of test cases, that is, the ability of a test to pass variables to other tests. For more information, see the article [Copy variables to chain test cases](rsat-chain-test-cases.md).
 
 ### Derived test case
 
-RSAT lets you use the same task recording with multiple test cases, enabling a task to run with different data configurations. See the article [Derived test cases](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md) for more information.
+RSAT lets you use the same task recording with multiple test cases, enabling a task to run with different data configurations. See the article [Derived test cases](rsat-derived-test-cases.md) for more information.
 
 ### Validate notifications and messages
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 # Set up and install Regression suite automation tool tutorial
 This topic is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT. 
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > Use your internet browser tools to download and save this page in PDF format. 
@@ -128,7 +128,7 @@ For your LCS project, you can use an existing customer implementation or partner
 1. Go to the LCS implementation project.
 2. Select the **Settings** button (the gear symbol) in the upper-right corner, and then select **Language preference**.
 
-    ![Commands on the Settings menu](./media/setup_rsa_tool_09.png)
+    ![Update language preference](./media/setup_rsa_tool_09.png)
 
 3. In the **Preferred language** field, select **English (United States)**, and then select **Save**.
 
@@ -245,7 +245,7 @@ Create a corresponding task recording that you can attach to the simple business
 1. Open the client.
 2. On the main dashboard, select the **Settings** button (the gear symbol), and then select **Task recorder**.
 
-    ![Commands on the Settings menu](./media/setup_rsa_tool_27.png)
+    ![Select Task recorder on Settings menu](./media/setup_rsa_tool_27.png)
 
 3. Select **Create recording**.
 
@@ -261,11 +261,11 @@ Create a corresponding task recording that you can attach to the simple business
 
 6. Select **Save to Lifecycle Services**.
 
-    ![Save options](./media/setup_rsa_tool_31.png)
+    ![Save to Lifecycle Services](./media/setup_rsa_tool_31.png)
 
     Library information is loaded from LCS.
 
-    ![Progress indicator](./media/setup_rsa_tool_32.png)
+    ![Loading library information](./media/setup_rsa_tool_32.png)
 
 7. Select the BPM library to associate the task recording with. For this tutorial, select the **RSAT** BPM library that was created earlier and the **Create a product** business process under it. Then select **OK**.
 
@@ -279,7 +279,7 @@ Create a corresponding task recording that you can attach to the simple business
 
     1. After the recording is completed, select **Save to this PC**.
 
-        ![Save options](./media/setup_rsa_tool_35.png)
+        ![Save to this PC](./media/setup_rsa_tool_35.png)
 
     2. In the browser's Notification bar, select **Save** or **Save As** to save the file on your local computer.
 
@@ -427,7 +427,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 If a Tier 2+ (Standard Acceptance Test sandbox or higher) environment is used, verify or set the following registry setting on the computer where RSAT is installed. This step is required because it helps you avoid authentication or RSAT connection errors.
 
-```
+```PowerShell
 if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 {
     Set-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
@@ -497,7 +497,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
 
 2. You receive a warning message that states, "The Regression Suite Automation Tool requires Selenium, do you want to automatically download and install it now?" Select **Yes**.
 
-    ![Warning message](./media/setup_rsa_tool_61.png)
+    ![Warning message that Regression Suite Automation Tool requires Selenium](./media/setup_rsa_tool_61.png)
 
 3. Select the **Settings** button (the gear symbol) in the upper-right corner, and then, in the dialog box that appears, fill in the following fields:
 
@@ -580,7 +580,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
 
     The test case is run, and the **Result** field is updated.
 
-    ![Progress indicator](./media/setup_rsa_tool_72.png)
+    ![Updated Result field](./media/setup_rsa_tool_72.png)
 
     If you've followed this tutorial as it's written, the **Create a new product** test case will fail, because the task recording for creating a product saved the product name as a hard-coded value. If you rerun the same test case, you should receive an error message, because the product already exists.
 
@@ -683,7 +683,7 @@ In this section, you will create a saved variable in the first test case, create
 
     BPM libraries are loaded from LCS.
 
-    ![Progress indicator](./media/setup_rsa_tool_88.png)
+    ![Loading BPM libraries](./media/setup_rsa_tool_88.png)
 
 6. After the BPM libraries are loaded from LCS, select the **RSAT** BPM library and the **Create a new product** business process that the task recording was associated with. Then select **OK**.
 
@@ -746,11 +746,11 @@ In this section, you will create a saved variable in the first test case, create
 
 1. After the task recording is completed, select **Save to Lifecycle Services**.
 
-    ![Save options](./media/setup_rsa_tool_98.png)
+    ![Save to Lifecycle Services](./media/setup_rsa_tool_98.png)
 
 2. Library information is loaded from LCS.
 
-    ![Progress indicator](./media/setup_rsa_tool_99.png)
+    ![Loading library information from LCS](./media/setup_rsa_tool_99.png)
 
 3. Select the BPM library to associate the task recording with. For this tutorial, select the **RSAT** BPM library that was created earlier and the **Release a product** business process under it. Then select **OK**.
 
@@ -779,7 +779,7 @@ In this section, you will create a saved variable in the first test case, create
 1. Open RSAT, and select **Load**.
 2. The test cases are loaded, and you receive a warning that states, "This action will overwrite Excel test data files, local changes will be lost. Do you want to proceed?" Select **Yes** to update the Excel parameter files in the local system but not the Excel parameter files that were uploaded to Azure DevOps.
 
-    ![Warning message](./media/setup_rsa_tool_102.png)
+    ![This action will overwrite Excel test data files](./media/setup_rsa_tool_102.png)
 
     Both the test cases are loaded, together with the Excel parameter file for the first test case. Because you selected **Upload** in the last run, the parameter files are pulled from Azure DevOps.
 
