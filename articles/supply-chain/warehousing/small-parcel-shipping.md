@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.16
 
 [!include [banner](../includes/banner.md)]
 
-The small parcel shipping (SPS) feature allows Supply Chain Management to interact directly with shipping carriers by providing a framework for communicating through carrier APIs. This is useful for when you are shipping individual sales orders via commercial shipping carriers as opposed to using container shipping or less than truckload (LTL) shipping.
+The small parcel shipping (SPS) feature allows Supply Chain Management to interact directly with shipping carriers by providing a framework for communicating through carrier APIs. This functionality is useful for when you are shipping individual sales orders via commercial shipping carriers as opposed to using container shipping or less than truckload (LTL) shipping.
 
 The SPS feature interacts with your shipping carrier through a dedicated *rate engine*, which your organization must develop in collaboration with your carrier or carrier hub service. The rate engine enables Supply Chain Management to submit details about a packed container to your carrier and receive back a shipping label, shipping rate, and tracking number. The returned rate will be added to the associated sales order as a miscellaneous charge. You can then print the returned label automatically using a Zebra Programming Language (ZPL) printer and apply the label to the shipment. The carrier will scan this label when they pick up the packages at your warehouse.
 
@@ -65,7 +65,7 @@ For details about how to create and deploy functional rate engines for use on a 
 - [Create a new transportation management engine](../transportation/create-new-transportation-management-engine.md)
 - [Set up transportation management engines](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
 
-More information about how to create create an SPS rate engine is available on the following blog post: [Small Parcel Shipping: How to leverage small parcel shipping functionality in Microsoft Dynamics 365](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
+More information about how to create an SPS rate engine is available on the following blog post: [Small Parcel Shipping: How to leverage small parcel shipping functionality in Microsoft Dynamics 365](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
 
 #### Set up a rate engine in Supply Chain Management
 
@@ -232,6 +232,7 @@ Create a new sales order by doing the following:
 Pack the shipment by doing the following:
 
 1. Make sure that your user account is associated with a worker account for warehouse management. You can do this by going to **Warehouse management \> Setup \> Worker**.
+
 1. Go to **Warehouse management \> Picking and containerization \> Pack**.
 1. The **Select packing station** dialog box opens. Make the following settings here:
     - **Site** – *6*
@@ -247,9 +248,6 @@ Pack the shipment by doing the following:
 1. The **Containers for shipment** page opens. It shows a row for the container you just created, but its **Container manifest ID** is currently empty. This is because we didn't yet receive the label and tracking number from the carrier.
 1. On the Action Pane, select **Close container**.
 1. The **Close container** dialog box opens. Set the **Gross weight** to *1 kg* and select **OK**.
-1. If your system is set up to use packing slips, then post the packing slip now. To do so, go back to the **All shipments** page and select the shipment. On the Action Pane, open the **Shipments** tab and, from the **Generate** group, select **Packing slip**. Then fill out the **Packing slip posting** dialog box as needed and select **OK**.
-1. Return to **Warehouse management \> Picking and containerization \> Pack** and sign in using the same site, warehouse, location, and packing profile ID as before.
-1. The **Pack** page opens. As before, enter the shipping number into the **License plate or shipment** field.
-1. On the Action Pane, select **Containers for shipment**. Note that the **Container manifest ID** and **Total freight** have now been added as received from the carrier.
 1. Your label should now print on the ZPL printer you selected previously. It should resemble the following example:  
     ![Example shipping label](media/sps-label-example.png "Example shipping label")
+1. Note that the **Container manifest ID** and **Total freight** have now been added as received from the carrier.
