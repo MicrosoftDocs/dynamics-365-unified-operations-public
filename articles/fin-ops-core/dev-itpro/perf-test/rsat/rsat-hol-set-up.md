@@ -261,7 +261,7 @@ Create a corresponding task recording that you can attach to the simple business
 
 6. Select **Save to Lifecycle Services**.
 
-    ![Save to Lifecycle Services](./media/setup_rsa_tool_31.png)
+    ![Save task recording to Lifecycle Services](./media/setup_rsa_tool_31.png)
 
     Library information is loaded from LCS.
 
@@ -746,7 +746,7 @@ In this section, you will create a saved variable in the first test case, create
 
 1. After the task recording is completed, select **Save to Lifecycle Services**.
 
-    ![Save to Lifecycle Services](./media/setup_rsa_tool_98.png)
+    ![Save completed task recording to Lifecycle Services](./media/setup_rsa_tool_98.png)
 
 2. Library information is loaded from LCS.
 
