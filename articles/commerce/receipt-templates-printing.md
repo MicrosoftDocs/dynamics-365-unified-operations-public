@@ -52,6 +52,10 @@ This article describes how to modify form layouts to control how receipts, invoi
     - **Prompt user** – The user is prompted to print the receipt.
     - **As required** – This option is used only for gift receipts. When this option is selected, the user can print a gift receipt from the **Change** page, if a gift receipt is required.
 
+## Printing images
+
+The receipt designer includes a **Logo** variable, which can be used to specify images to be printed on the receipt. Images included in receipts using the **Logo** variable should be monochrome bitmap (.bmp) file types. If a .bmp image is specified in the receipt designer, but is not printing when sent to the printer, this may mean that the file size is too large or the pixel dimensions on the image are not compatible with the printer. When this happens, try reducing the image file resolution.   
+
 ## Design a receipt format
 
 Use the form layout designer to graphically create the layout of the form document. The **Receipt format designer** page has three sections: **Header**, **Lines**, and **Footer**. Some types of form layouts use elements from all three sections, whereas other types use elements from only one or two sections. To view the elements that are available for each section, click the appropriate button in the navigation pane on the left side of the page.
