@@ -39,7 +39,7 @@ An e-commerce page can be configured to serve dynamic content based on a segment
 
 Separate pages can also be associated with URLs under the https://fabrikam.com/blog path that override the dynamic page to enable customization. Building on the example above, a page named blog_summary can be created and associated with the URL https://fabrikam.com/blog/about-this-blog. When that URL is requested, the blog_summary page is returned rather than the blog_viewer page with /about-this-blog as a parameter.
 
-NOTE: The functionality for hosting, retrieving and displaying dynamic content in a page is implemented by customers through a custom module. Learn more about module development at ______. 
+NOTE: The functionality for hosting, retrieving and displaying dynamic content in a page is implemented by customers through a custom module. Learn more about module development by reading the [Online channel extensibility](../e-commerce-extensibility/overview.md) help topic. 
 
 
 
@@ -47,7 +47,7 @@ NOTE: The functionality for hosting, retrieving and displaying dynamic content i
 
 ***Step 1: Create the page that will serve dynamic content***
 
-Follow the steps outlined in Add a new Site page (https://docs.microsoft.com/en-us/dynamics365/commerce/add-new-page) to create a new page. This page will require the implementation of a module that uses the last segment on the URL path to retrieve the content from an external data source. Learn more about custom module development at _______. 
+Follow the steps outlined in [Add a new Site page](add-new-page.md) to create a new page. This page will require the implementation of a module that uses the last segment on the URL path to retrieve the content from an external data source. Learn more about custom module development by reading the [Online channel extensibility](../e-commerce-extensibility/overview.md) help topic. 
 
 ***Step 2: Create the base URL for the dynamic page***
 1. Go to the URLs section in site builder and create a new URL.
