@@ -385,7 +385,9 @@
         - name: Recognize deferred revenue
           href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
         - name: Revenue recognition on sales orders
-          href: accounts-receivable/revenue-recognition-so-basics.md        
+          href: accounts-receivable/revenue-recognition-so-basics.md
+        - name: Revenue recognition bundles
+          href: accounts-receivable/rev-rec-bundles.md
         - name: Revenue recognition reallocation
           href: accounts-receivable/rev-rec-reallocation.md
         - name: Revenue recognition reallocation - scenario 1
