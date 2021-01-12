@@ -80,7 +80,7 @@ RSAT evaluates these formulas during test execution, so you must precede the for
 
 ## Use variables in message validation
 
-You can also use a saved variable as part of a string in the Message Validation tab. Here is an example that validates that the message `Customer account {{variable name}} already exists.`. It appears in the infolog during test execution. `{{variable name}}` is a variable that is copied during the recording.
+You can also use a saved variable as part of a string in the Message Validation tab. Here is an example that validates that the message `Customer account {{variable name}} already exists.`. It appears in the Infolog during test execution. `{{variable name}}` is a variable that is copied during the recording.
 
 Saved (Copied) variables can be used within the same test case or across more than one test case in the same test suite.
 

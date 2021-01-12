@@ -41,7 +41,7 @@ When you author task recordings for RSAT, follow these practices:
 1. Make sure all your recordings start on the main dashboard.
 2. Keep individual recordings short and focus on a business task performed by one user, like creating a sales order. This simplifies maintainability and reusability of test cases.
 3. Chart controls are not supported. Any task recording actions related to charts will be ignored by RSAT during test case playback.
-4. When creating a recording make sure to select a tab header even if the tab is already open. For example, you can switch to another tab and then select the needed tab again to activate it before using a control on it. This will make your recording more reliable during test case playback.
+4. When creating a recording, make sure to select a tab header even if the tab is already open. For example, you can switch to another tab and then select the needed tab again to activate it before using a control on it. This will make your recording more reliable during test case playback.
 5. RSAT cannot play back any test step that is not recognized by the task recorder. For example, you cannot upload a file from the local disk during play back of a test case.
 6. RSAT cannot play back a **page refresh** step. Avoid refreshing a page while recording your test.
 
@@ -57,7 +57,7 @@ When you author task recordings for RSAT, follow these practices:
 
 4. For test parameters that need a unique value, for example, the product receipt number in the **Product Receipt** form or the invoice number in the **Vendor Invoice** form, use the **RandBetween(a,b)** Excel function to generate a unique number every time the test case is executed.
 5. The default values in Excel come from the task recording. For **Reference Group** controls such as storage dimensions or tracking dimensions, it stores the key of the lookup instead of the value, for example, **2** instead of **SiteWH**. We recommend that you update these fields with the actual value in Excel so that the test is more robust and resilient to changes.
-6. It is recommended to set the same locale for **Language** and **Date ,time, and number format** settings of your environment prior to running RSAT. If these values are inconsistent, it may result in validation errors.
+6. It is recommended to set the same locale for **Language** and **Date, time, and number format** settings of your environment prior to running RSAT. If these values are inconsistent, it may result in validation errors.
 
     ![Set locale, date, time, and number format](media/locale.png)
 
@@ -69,7 +69,7 @@ In version 1.200.42264.6 and later, it's easier to manage local recording files.
 
 ![Saving a task recording as a developer recording](media/rsat-save-as-developer-recording.png)
 
-Put the recording file under the working directory that is associated with the test case. For example, if your configured working directory is C:\\Users\\\<username\>\\Documents\\RSAT, put the recording file for test case 1234 under C:\\Users\\\<username\>\\Documents\\RSAT\\1234\\attachments. You must name the developer recording file **Recording.xml**. Alternatively, you can name the recording file **-Test Case Title-.xml**, where **-Test Case Title-** is the title of the test case in Azure DevOps.
+Put the recording file under the working directory that is associated with the test case. For example, if your configured working directory is `C:\Users\<username>\Documents\RSAT`, put the recording file for test case 1234 under `C:\Users\<username>\Documents\RSAT\1234\attachments`. You must name the developer recording file **Recording.xml**. Alternatively, you can name the recording file **-Test Case Title-.xml**, where **-Test Case Title-** is the title of the test case in Azure DevOps.
 
 The following illustration shows an example of a working directory folder structure. You can open the directory directly from RSAT by clicking the folder symbol.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Regression suite automation tool installation and configuration
-description: This topic contains information about how install and configure the Regression suite automation tool (RSAT).
+description: This topic contains information about how to install and configure the Regression suite automation tool (RSAT).
 author: robadawy
 manager: AnnBe
 ms.date: 01/15/2021
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic contains information about how install and configure the Regression suite automation tool (RSAT).
+This topic contains information about how to install and configure the Regression suite automation tool (RSAT).
 
 ## Prerequisites
 
@@ -125,7 +125,7 @@ Configure your connection to the test environment.
 Configure your local settings.
 
 + **Working directory** - Folder location for storing test automation files, including Excel test data files. For example: **C:\Temp\RegressionTool**.
-+ **Default browser** - Select the browser to use for test execution. RSAT supports (the new) Microsoft Edge, Microsoft Internet Explorer and Google Chrome. We recommend Microsoft Edge, which you can download from [Introducing the new Microsoft Edge](https://www.microsoft.com/edge). 
++ **Default browser** - Select the browser to use for test execution. RSAT supports (the new) Microsoft Edge, Microsoft Internet Explorer, and Google Chrome. We recommend Microsoft Edge, which you can download from [Introducing the new Microsoft Edge](https://www.microsoft.com/edge). 
 
 Select **Ok** to apply your settings and close the dialog box. Select **Cancel** to cancel your changes and close the dialog. The **Save As** and **Open** buttons allow you to save your settings for reuse later. Select **Save As** to save your current settings into a configuration file on your computer. Select **Open** to restore your settings from a configuration file.
 
@@ -137,7 +137,7 @@ Select the **Optional** tab to configure optional settings.
 + **Test Action Timeout** – The time-out (in minutes) of individual test steps. When a test step times out, the test case fails.
 + **Pause between steps** – The number of seconds to pause between test steps during automated execution of a test case. The default value is **0** (zero). Set this value to force a pause during test execution, for auditing or investigative purposes. You can also specify a pause for an individual test case by changing the **Pause between steps (Seconds)** parameter on the **General** tab of the Excel parameter file for the test case.
 + **Fail test on first validation error** – By default, if a test case has multiple validation steps, and there is a validation failure, the test case stops running when the first failure occurs. The test case is then marked as failed. If you want test cases to continue to run until all validations are completed, clear this option. The test case can then evaluate all validations.
-+ **Fail test on infolog error** - Check this option to force test cases to fail when an error is encountered in the Finance and Operations infolog during test case execution.
++ **Fail test on Infolog error** - Check this option to force test cases to fail when an error is encountered in the Finance and Operations Infolog during test case execution.
 + **Abort test suite execution on failure** – By default, a test suite run continues even if one of the test cases fails. If you check this setting, the test run is aborted if a test case fails. All the remaining test cases will have a status of **Not Executed**.
 + **Enable local file validation rules** - Check this setting to validate whether your test cases are ready for execution. See [Validate readiness of test automation files](rsat-run.md#validate-readiness-of-test-automation-files) for more details.
 + **Enable upload to Azure DevOps** - To prevent accidental upload to Azure DevOps (therefore overriding project-wide recordings and automation files), you can uncheck this setting. This is especially useful when RSAT is deployed on a client machine for execution purposes only, and you want to prevent users from making permanent changes to the test cases.
@@ -157,7 +157,7 @@ After creating the certificate, configure AOS to trust the test automation conne
 
     ![Find AOS in IIS](media/configure-aos.png)
 
-3. Right-click **AOSService**, then click **Explore**.
+3. Right-click **AOSService**, then select **Explore**.
 4. Open and find the file **wif.config**.
   
     ![Open wif.config](media/open-wif-config.png)
@@ -188,7 +188,7 @@ In cases where your Remote Desktop Protocol (RDP) access is removed, such as Mic
 
 Use the **Download** button to retrieve the certificate bundle as a .zip file.
 
-2. You'll receive a warning that a clear-text password will be displayed on your screen. Be sure to write this password down as you will need it in subsequent steps.  Select **Yes** to continue.
+2. You'll receive a warning that a clear-text password will be displayed on your screen. You will need the password in subsequent steps.  Select **Yes** to continue.
 
 3. Copy the clear-text password for later use. You'll see the .zip file has been downloaded. Inside the .zip file is a certificate (.cer) and a personal information exchange (.pfx) file. Unzip the file.
 
@@ -199,7 +199,7 @@ Use the **Download** button to retrieve the certificate bundle as a .zip file.
 6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and copy the ID in the text box. Use this thumbprint for RSAT.
 ![Thumbprint settings](media/rsat-lcs4.png)
 
-You can now run your tests against the environment using this certificate. The certificate will be auto-rotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
+You can now run your tests against the environment using this certificate. The certificate will be autorotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments, this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
 
 ## Manual configuration of authentication certificates
 
@@ -208,13 +208,13 @@ Optionally, you can manually configure the RSAT authentication certificate.
 If you are not familiar with this process, get help from your system administrator. Make sure you have Windows Kits installed on your machine. If you do not have Windows Kits installed on your machine, you can download the Windows 10 SDK from [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk). You will need these components for the steps described in this document.
 
 + Windows SDK Signing Tools for Desktop Apps
-+ Windows SDK for UWP Managed Apps.
++ Windows SDK for UWP-Managed Apps.
 
 ### Generate the certificate
 
 You must generate the certificate file on the RSAT client computer. **The certificate must be generated on the same computer that the test tool is running on.** To generate the certificate file, follow these steps:
 1. Create the **C:\Temp** folder if it does not already exist on your computer.
-2. Open a command line window as Administrator.
+2. Open a command-line window as Administrator.
 3. Go to the folder where you installed the Windows SDK. Your exact folder may be different, depending on where you have installed the windows SDK). You can also use Windows Kits 8.1.
 
     ```Console
@@ -232,8 +232,8 @@ You must generate the certificate file on the RSAT client computer. **The certif
 To install the certificate, follow these steps:
 
 1. Double-click **authCert.cer** to install the certificate.
-2. Click **Install Certificate**.
-3. Select **Local Machine > Place all certificates in the following Store > Browse > Trusted Root Certification Authorities** and click **Next** through each screen.
+2. Select **Install Certificate**.
+3. Select **Local Machine > Place all certificates in the following Store > Browse > Trusted Root Certification Authorities** and select **Next** through each screen.
 4. Leave the **Password** field blank.
 5. In the **Certificate** dialog box, browse to **Details** and look for **Thumbprint**.
 
