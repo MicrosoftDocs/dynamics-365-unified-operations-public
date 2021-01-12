@@ -50,7 +50,7 @@ ms.dyn365.ops.version: Version 1611
 ## Which payment providers are supported and in what regions?
 
 - Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3).
-- PayPal is supported for online purchases. For a list of supported regions, visit the [Dynamics 365 Payment Connector for PayPal overview pag](https://docs.microsoft.com/en-us/dynamics365/commerce/paypal).
+- PayPal is supported for online purchases. For a list of supported regions, visit the [Dynamics 365 Payment Connector for PayPal overview page](https://docs.microsoft.com/en-us/dynamics365/commerce/paypal).
 - The **TestConnector** isn't supported for user acceptance testing (UAT) or for production (prod). The **TestConnector** is for sandbox and development use only, and is for sample use only. 
 - Mastercard Simplify is no longer supported for new customers.
 
