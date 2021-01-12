@@ -48,7 +48,7 @@ The functionality is applicable to the following documents:
 - Customer credit note
 - Free text credit note
 
-**Project management**
+**Project management and accounting**
 - Project credit note
 
 ## Configure Accounts receivable parameters
@@ -79,6 +79,15 @@ Complete the following steps to define references to original invoices, dependin
 3. In **Sell** > **CREDIT NOTE** > **Credit note** menu, enter the reason of correction. The reference to an original invoice will be established automatically.
 
 ![Define rederences for SO](media/reference-original-invoice-SO.jpg)
+
+### Project credit note
+
+1. Go to **Project management and accounting** > **Project invoices** > **Project invoices**. 
+2. Select a project invoice to be corrected.
+3. Open **Project invoice** > **FUNCTIONS** > **Select for credit note** menu
+4. In **Credit invoicing** page, enter the reason of correction. The reference to an original invoice will be established automatically.
+
+![Define rederences for project invoices](media/reference-original-invoice-project.jpg)
 
 ## Print credit notes
 Create and print any Customer/Free text/Project invoice for the customer configured in the previous step.
