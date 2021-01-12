@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: B2B e-commerce site setup
+title: Set up a B2B e-commerce site
 description: This topic describes how to set up a B2B e-commerce site in Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# B2B e-commerce site setup
+# Set up a B2B e-commerce site
 
 [!include [banner](../../includes/banner.md)]
 
@@ -48,7 +48,7 @@ Site-level settings can be accessed in site builder under **Site Settings \> Ext
 - **Enable order quantity limits** – The **Enable order quantity limits** property allows you to set limits on the number of items that can be ordered for each product or category. Available values for this property are **Enabled for B2B customers**, **Enabled for B2C customers**, **Enabled for all customers**, and **Disabled for all customers**.
 
 > [!NOTE]
-> When upgrading to latest version of the module library, you need to follow additional steps to ensure that the site settings described above are available in your environment. For more information, see [Update the app.settings.json file](e-commerce-extensibility/sdk-updates#update-the-appsettingsjson-file).
+> When upgrading to latest version of the module library, you need to follow additional steps to ensure that the site settings described above are available in your environment. For more information, see [Update the app.settings.json file](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Become a business partner pages
 
@@ -66,28 +66,35 @@ To set up and configure the business partner sign-up page in Commerce site build
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
 1. In the **Main** slot, add a **Container** module. Set the **Width** to **Fill Container**.
 1. In the **Container** slot, add a **Breadcrumb** module. Configure the module with breadcrumb links, for example **Home \> Become a business partner**.
-1. In the **Container** slot, add the **Partner Sign-up** module below the **Breadcrumb** module. In the module properties pane, enter "Become a business partner" as the heading.
+1. In the **Container** slot, add the **Partner Sign-up** module below the **Breadcrumb** module. In the module properties pane under **Heading**, enter "Become a business partner".
 1. In the **Partner sign up** slot, add a **Business account address** module.
 1. In the **Container** slot, add a **Text block** module below the **Partner sign up** module. Here you can define some terms and conditions for the sign-up process.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
 
-Below is an image showing the site builder page configuration and the page hosting these modules.
+<!--Below is an image showing the site builder page configuration and the page hosting these modules.-->
 
 ### Create a request confirmation page
 
-Once a business partner request is submitted, we want to show a confirmation to the user acknowledging their submission. For this we will create a confirmation page and link the Partner request page to this confirmation page.
+Once a business partner request is submitted, a confirmation page should be displayed to the user acknowledging their submission. <!-- To do this we will create a confirmation page and link the Partner request page to this confirmation page.-->
 
-1. Create a page "Partner Request Confirmation " using "Sign-up" template
-1. In the Page Header slot, add the header fragment that is pre-configured with the site header.
-1. In the page Footer slot, add the footer fragment that is pre-configured with the site footer.
-1. In the page Main slot, add a Container. Set Container Width to Fill Container.
-1. To the Container, add a [**Content block**](https://docs.microsoft.com/dynamics365/commerce/add-hero-module). In the module property panel, provide heading as "Request submitted". Add a paragraph "Your request has been submitted". Provide a link "Back to shopping" that is wired to the home page for the user to continue shopping.
-1.  Add another container and add [**Product Collection**](https://docs.microsoft.com/dynamics365/commerce/product-collection-module-overview) module. Configure this module with a recommendation or category list that we want to showcase on this page.
-1. Save, Preview and Publish.
-1. Publish the Url for this new page.
-1. Go back to the **Business Partner Request** page created earlier. Edit. Select Partner request module and in the module property panel navigate to the "Link to the confirmation page" and configure with it the link to **Partner request Confirmation** page that we just created. Save and Publish.
+To set up and configure the request confirmation page in Commerce site builder, follow these steps.
+
+1. Create a page named "Partner Request Confirmation" using the "Sign-up" template.
+1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
+1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
+1. In the **Main** slot, add a **Container** module. Set the **Width** to **Fill Container**.
+1. In the **Container** slot, add a **Content block** module. In the properties panel under **Heading**, enter "Request submitted". In the **Rich Text** box, add the paragraph "Your request has been submitted". Under **Links**, enter a link to the home page withe link text "Back to shopping".
+1. Add another container module and then add a **Product Collection** module to it. Configure this module with a recommendation or category list that you want to showcase on this page.
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
+1. Publish the URL for the page.
+
+To add a link to the request confirmation page in Commerce site builder, follow these steps.
+
+1. Go to the **Business Partner Request** page created earlier. 
+1. Edit. Select Partner request module and in the module properties pane navigate to the "Link to the confirmation page" and configure with it the link to **Partner request Confirmation** page that we just created. Save and Publish.
 
 ### Add business partner request link to home page
 
@@ -104,7 +111,6 @@ Account Management home page includes all the account management information nee
 In the section below, we have covered the steps needed to configure this page in site builder.
 
 1. In site builder, create a template for **Account Management** template. This template should include all modules needed to build an Account Management home page – Header, Footer, Breadcrumb, Account Welcome Tile, Account Generic Tile, Account Address Tile, Account Wishlist tile, Account address tile, Account loyalty tile. For B2B account manage home page add the following modules to the template **Account customer balance tile, Account order templates tile, Organization Users, Business Organization list, Customer Account balance, OrderTemplateLines, OrderTemplateList, Account Invoice tile, Invoices list, Invoice details.**
-
 1. Create a page using Account Management template **My** **Account.**
 1. In the Page Header slot, add the header fragment that is pre-configured with the site header.
 1. In the page Footer slot, add the footer fragment that is pre-configured with the site footer.
@@ -129,23 +135,14 @@ Customer account can be used as a payment for an order. In addition, available b
 To view customer balance for a signed-in B2B user, we need to first create a customer balance page. In this section we will review the steps needed to create this page.
 
 1. Create a page **Customer Balance** using the **Account Management** template created in section Account Management of this document.
-
 1. In the Page Header slot, add the header fragment that is pre-configured with the site header.
-
 1. In the page Footer slot, add the footer fragment that is pre-configured with the site footer.
-
 1. In the Main slot, add a Container. Set Width to Fill Container.
-
 1. To this Container add a Breadcrumb module with links to My Account/Customer balance
-
 1. To this Container add a **Customer Account Balance module.** Set Heading as "Account Balance"
-
 1. Save and Publish page.
-
 1. Publish Url.
-
 1. Go to Account Management home page **My Account** that we created earlier.
-
 1. Navigate to the **Account customer balance tile** module property panel. Here add a Link to the **Customer Balance** page that we just created. Save and Publish. Now the page is created and can be accessed from the Account Management home page by a user.
 
 Below image shows the site builder page configuration and the Customer account credit page on the e-commerce site.
@@ -171,23 +168,14 @@ This page shows the list of all order templates available. It allows you to crea
 The steps for configuring this page in site builder are listed below:
 
 1. Create a page **Order templates** using the **Account Management** template created in section Account Management of this document.
-
 1. In the page Header slot, add the header fragment that is pre-configured with the site header.
-
 1. In the page Footer slot, add the footer fragment that is pre-configured with the site footer.
-
 1. In the Main slot, add a Container. Set Width to Fill Container.
-
 1. To this Container add a Breadcrumb module with links to My Account/Order templates where My Account navigates back to the account management home page.
-
 1. To this Container add **Order templates list module.**
-
 1. Save and Publish page.
-
 1. Publish Url.
-
 1. Go to Account Management home page **My Account** that we created earlier.
-
 1. Navigate to the **Account order templates tile** module property panel. Here add a Link to the Order templates List page that we just created in step \#8. Save and Publish. Now the Order templates list page is created and can be accessed from the Account Management home page by a user.
 
 Below is an example of the Order templates page on e-commerce site and the page configuration in site builder.
@@ -279,3 +267,9 @@ Below is an example of the Invoice details page on e-commerce site and the page 
 [Add a new site page](../add-new-page.md)
 
 [Checkout module](../add-checkout-module.md)
+
+[Content block module](../add-hero-module.md)
+
+[Product Collection](../product-collection-module-overview.md)
+
+
