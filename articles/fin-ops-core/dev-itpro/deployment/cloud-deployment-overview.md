@@ -141,7 +141,7 @@ Production environments are configured with Azure disaster recovery support that
 - Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions. For more information, see [Azure Storage redundancy](https://docs.microsoft.com/azure/storage/common/storage-redundancy).
 - Same secondary region for the Azure SQL and Azure blog storage replication.  
 
-Only primary data stores are supported by replication. Financial Reporting Services and Entity Stored database use transformed data from the primary database and must be generated after the recovery site has been set up and the Finance and Operations service has started. 
+Only primary data stores are supported by replication. Financial Reporting Services and Entity Store database use transformed data from the primary database and must be generated after the recovery site has been set up and the Finance and Operations service has started. 
 
 ## Service availability in Azure Regions
 Finance and Operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
