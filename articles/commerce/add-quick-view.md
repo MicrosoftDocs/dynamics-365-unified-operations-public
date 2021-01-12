@@ -54,13 +54,17 @@ The following image shows an example of a quick view module on a category page
 ## Module properties
 The module properties are similar to a buy box module as it supports some of the same functions supported within a buy box.
 
-- **Heading tag** – This property defines the heading tag for the product title. If the buy box is at the top of the page, this property should be set to **h1** to meet accessibility standards. 
+| Property | Values | Description |
+|----------------|--------|-------------|
+| Heading tag | **H1**, **H2**, **H3**, **H4**, **H5**, or **H6** | This property defines the heading tag for the product title. If the buy box is at the top of the page, this property should be set to **h1** to meet accessibility standards.  |
+| Allow custom price | **True** or **False** | If this property is set to **True**, the buy box allows a Custom price to be keyed-in by the user|
+| Minimum price| Integer| This property is applicable only if Allow custom price is true. It sets the minimum price a user can input, e.g. $1|
+| Maximum price| Integer| This property is applicable only if Allow custom price is true. It sets the maximum price a user can input, e.g. $1000|
 
-- **Enable "shop similar looks" recommendations** - This property allows the buy box to show links to products that look similar to the currently viewed item. This feature is available in Commerce release 10.0.13 and later.
 
 ## Site settings
 
-The module also respects the Site Settings->Extensions for **Add to cart** similar to Buy box. It will navigate to cart page or show a notification as per the site author's selection. 
+The module also respects the Site Settings->Extensions for **Add to cart** similar to Buy box. Depending on the setting, when a user adds an item to cart, they will be navigated to cart or they can stay on the page. 
 
 
 ## Add a quick view module to a page
