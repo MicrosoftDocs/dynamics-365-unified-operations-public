@@ -275,11 +275,11 @@ Below is an example of the Invoice details page on e-commerce site and the page 
 
 [Module library overview](../starter-kit-overview.md)
 
-[Authoring page overview](../authoring-home-overview)
+[Authoring page overview](../authoring-home-overview.md)
 
 [Templates and layouts overview](../templates-layouts-overview.md)
 
-[Work with fragments](../work-with-fragments)
+[Work with fragments](../work-with-fragments.md)
 
 [Add a new site page](../add-new-page.md)
 
