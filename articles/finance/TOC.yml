@@ -3608,7 +3608,11 @@
             - name: Run formats to dynamically add columns to Excel reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
         - name: Design configurations to generate reports in Word format
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+          items:
+          - name: Design a new ER configuration to generate reports in Word format
+            href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
+          - name: Reuse ER configurations with Excel templates to generate reports in Word format
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
         - name: Design configurations to fill out PDF templates
           href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
         - name: Embed images and shapes
