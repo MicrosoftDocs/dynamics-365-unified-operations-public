@@ -3,7 +3,7 @@
 
 title: Manage voyages
 description: Shipping containers are used to group goods together that either are physically grouped together or are required to share costs only across those goods (normally because they are physically together).
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope:  Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Release 10.0.17
 A voyage typically represents a vessel but, depending on your own practices and procedures, it could be a vendor, a purchase order, or some other item that makes sense for your organization.
 
 The **All voyages** page provides voyage details, delivery, costing, and item/purchase-order/transfer-order information. To open the **All voyages** page, go to **Landed cost \> Voyages \> All voyages**. This page shows a list of current voyages and provides Action Pane actions to create, delete, and work with listed voyages. Select any listed voyage to see its details.
-
-The **Voyage lines** FastTab of a voyage relates to the voyage details and costing information that applies at a voyage level. Here, the shipping containers, folios, and items attached to the voyage are visible and available for review. The price and quantity of the items on the voyage are also visible here. You can view any listed shipping container or folio by selecting the relevant link.
 
 > [!NOTE]
 > Shipping containers and folios link to a voyage. Purchase lines link to a shipping container or, should shipping containers and folios be switched off, they can be linked directly to a voyage. In addition, costs entered here are apportioned to all attached purchase lines.
@@ -54,7 +52,7 @@ The Action Pane includes both tabs, which open to show a collection of related a
 | **New** | Creates a new voyage. <!-- KFM: Link to scenario --> |
 | **Delete** | Deletes the current voyage. Only voyages that have a **Voyage status** of *Confirmed* can be deleted. Once a voyage begins the sailing process and processes goods in transit, it can no longer be deleted. <!-- KFM: "Begins the sailing process" = "leaves port"? --> |
 | **Voyage editor** | <!-- KFM: Description needed --> |
-| **Voyage costs** | Opens a page where you can view and add voyage costs to all goods within the voyage. When voyage costs are manually added to the voyage, they are automatically added to the costs inquiry screen and apportioned across to each good according to the method specified in the voyage costs form. |
+| **Voyage costs** | Opens the **Voyage costs** page, where you can view and add voyage costs to all goods within the voyage. When voyage costs are manually added to the voyage, they are automatically added to the costs inquiry screen and apportioned across to each good according to the method specified in the **Voyage costs** page. |
 
 ### The Voyage tab of the Action Pane
 
@@ -104,6 +102,8 @@ The following table describes the actions available on the **General** tab of th
 
 To open the **Lines** view, open a voyage and then select the **Lines** tab at the top-right part of the voyage heading.
 
+The **Voyage lines** FastTab relates to the voyage details and costing information that applies at a voyage level. Here, the shipping containers, folios, and items attached to the voyage are visible and available for review. The price and quantity of the items on the voyage are also visible here. You can view any listed shipping container or folio by selecting the relevant link.
+
 <!--KFM: A very large number of fields and FastTabs are not being described here. Do we really want to leave all of these undocumented? -->
 
 ### Field descriptions
@@ -116,7 +116,7 @@ To open the **Lines** view, open a voyage and then select the **Lines** tab at t
 
 ## The Header view
 
-To open the **Header** view, open a voyage and then select the Header tab at the top-right part of the voyage heading.
+To open the **Header** view, open a voyage and then select the **Header** tab at the top-right part of the voyage heading.
 
 ### The General FastTab of the Header view
 

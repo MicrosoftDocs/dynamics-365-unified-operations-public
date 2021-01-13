@@ -3,7 +3,7 @@
 
 title: Shipping information setup
 description: This topic describes how to set up shipping information for the Landed cost module.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 This topic describes how to set up shipping information for the **Landed cost** module.
 
-## Description of goods
+## <a name="description-of-goods"></a>Description of goods
 
 Descriptions of goods help identify a voyage, shipping container, or folio of goods, and the goods in it. You can select a description of goods on the shipping container header or the folio header.
 

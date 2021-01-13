@@ -3,7 +3,7 @@
 
 title: Landed cost parameters setup
 description: This topics describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
 ---
