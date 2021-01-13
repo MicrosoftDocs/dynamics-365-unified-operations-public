@@ -5,7 +5,7 @@ title: Set order quantity for products
 description: This topic describes how to set product quantity limits for B2B e-commerce sites.
 author: josaw1
 manager: AnnBe
-ms.date: 01/12/2021
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -58,13 +58,9 @@ variants](https://docs.microsoft.com/en-us/dynamics365/supply-chain/pim/product-
 For e-Commerce: Select the "Enable Order Quantity Limits" feature in the 'eCommerce Site Builder', under the 'Site settings' 
 
 - Use the HQ settings to enable the quantity limits based on the 'Default Quantity Settings'
-
 - Minimum Order Quantity: Minimum number of products that needs to be purchased.
-
 - Maximum Order Quantity: Maximum limit for products that needs to be purchased.
-
 - Multiple Order Quantity: Product can be bought in multiples of this quantity.
-
 - Default Order Settings: The default quantities that should be set when the product is selected.
 
 > [!NOTE] 
