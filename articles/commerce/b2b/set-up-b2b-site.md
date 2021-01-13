@@ -56,9 +56,9 @@ To become a business partner, users must first submit a business partner request
 
 ### Create a business partner request page
 
-The request to become a business partner is initiated using the **Partner sign up** module on a business partner request page. This module allows you to collect the user information necessary for the sign-up process. ALso, the **Business account address** module to capture the business user's address.
+The request to become a business partner is initiated using the **Partner sign up** module on a business partner request page. This module allows you to collect the user information necessary for the sign-up process. Also, the **Business account address** module to capture the business user's address.
 
-To set up and configure the business partner request page in Commerce site builder, follow these steps.
+To set up and configure the business partner request page in site builder, follow these steps.
 
 1. Create a template that includes partner sign-up, breadcrumb, header, footer, content block, text block, and product collection modules. Enter "Sign-up" as the name for this template.
 1. Create a page named "Business Partner Request" using the **Sign-up** template you created.
@@ -77,7 +77,7 @@ To set up and configure the business partner request page in Commerce site build
 
 Once a business partner request is submitted, a confirmation page should be displayed to the user acknowledging their submission. 
 
-To set up and configure the request confirmation page in Commerce site builder, follow these steps.
+To set up and configure the request confirmation page in site builder, follow these steps.
 
 1. Create a page named "Partner Request Confirmation" using the "Sign-up" template.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
@@ -89,7 +89,7 @@ To set up and configure the request confirmation page in Commerce site builder, 
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
 
-To add a link to the request confirmation page in Commerce site builder, follow these steps.
+To add a link to the request confirmation page in site builder, follow these steps.
 
 1. Go to the "Business Partner Request" page you created earlier and select **Edit**. 
 1. Select the **Partner Sign up** module slot. In the properties pane under **Link to the Sign-Up Confirmation page**, configure the link to the business partner request page you created earlier. 
@@ -144,10 +144,10 @@ To create and configure a B2B account management landing page in site builder, f
 1. In the **Container 3** slot, add an **Account address tile** module. In the module properties pane under **Heading**, enter "My Address." Under **Links**, configure a link to the "My address" page. 
 1. In the **Container 3** slot, add an **Account wishlist tile** module. In the module properties pane under **Heading**, enter "My Wishlist." Under **Links**, configure a link to the "My wishlist" page.
 1. In the **Main** slot, add another **Container** module ("Container 4"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
-1. In the **Container 4** slot, add an **Organization users** module. In the module properties pane under **Heading**, enter "Organization Users." <!--We will provide the link later once the respective page is created in Section of this document. -->
-1. In the **Container 4** slot, add an **Account customer balance tile** module. In the module properties pane under **Heading**, enter "Account credit." <!--We will provide the link later, once the respective page is created in Section of this document.-->
+1. In the **Container 4** slot, add an **Organization users** module. In the module properties pane under **Heading**, enter "Organization Users." 
+1. In the **Container 4** slot, add an **Account customer balance tile** module. In the module properties pane under **Heading**, enter "Account credit." 
 1. In the **Main** slot, add another **Container** module ("Container 5"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
-1. In the **Container 5** module, add an **Account order templates tile** module. In the module properties pane under **Heading**, enter "Order Templates". <!--We will provide the link later once the respective page is created in Section of this document.-->
+1. In the **Container 5** module, add an **Account order templates tile** module. In the module properties pane under **Heading**, enter "Order Templates". 
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE] 
@@ -173,8 +173,6 @@ To create a customer balance page in site builder, follow these steps.
 1. Publish the URL for the page.
 1. Go to account management landing page created earlier. On the **Account customer balance tile** module properties pane, aadd a link to the customer balance page. 
 Save and Publish. Now the page is created and can be accessed from the Account Management home page by a user.
-
-<!--Below image shows the site builder page configuration and the Customer account credit page on the e-commerce site.-->
 
 ### Configure checkout page to use customer balance as a payment
 
@@ -241,9 +239,9 @@ To create an organization users page in site builder, follow these steps.
 
 ## Create invoice pages
 
-An invoice list page displays a list of all available invoices and allows users to pay off or request invoices. This page is set up using the **InvoicesList** module.
+An invoice list page displays a list of all available invoices and allows users to pay off or request invoices. The invoice list page is set up using the **InvoicesList** module.
 
-An invoice details page displays the details of each invoice displayed on an invoices list page. When users selects on invoice ID on an invoice list page, they are navigated to an invoice details page displaying the details of that invoice. This page is set up using the **Invoice details** module.
+An invoice details page displays the details of each invoice displayed on an invoices list page. When users selects an invoice ID on an invoice list page, they are navigated to an invoice details page displaying the details of that invoice. The invoice details page is set up using the **Invoice details** module.
 
 ### Create an invoice list page
 
