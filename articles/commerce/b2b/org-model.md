@@ -36,7 +36,7 @@ When a business partner request is approved, the flowing actions are performed:
 
 1.  2 new customer records are created in the system, one customer of the **Type Organization** for the Business partner organization and second customer of the **Type Person** for the requestor
 
-1.  A new customer hierarchy record is created under **Customer &gt; Customer hierarchy** and the header fields are populated as below:
+1.  A new customer hierarchy record is created under **Customer \> Customer hierarchy** and the header fields are populated as below:
 
     1.  Customer hierarchy id – unique id for the customer hierarchy using the number sequence defined in Commerce shared parameters
     1.  Name – Organization name of the business partner as specified in the onboarding request
