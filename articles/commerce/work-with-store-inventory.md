@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-When you work with inventory in Microsoft Dynamics 365 Commerce and use any of the Commerce applications that are connected to a Commerce Scale Unit (CSU), you should be aware that the order processing logic in CSU provides limited support for some inventory dimensions and some inventory item types. Commerce applications don't support the full range of item configuration capabilities that is available through the item configuration options in Dynamics 365 Supply Chain Management.
+When you work with inventory in Microsoft Dynamics 365 Commerce and use any of the Commerce applications that are connected to a Commerce Scale Unit (CSU), it's important to know that the order processing logic in CSU provides limited support for some inventory dimensions and some inventory item types. Commerce applications don't support the full range of item configuration capabilities that is available through the item configuration options in Dynamics 365 Supply Chain Management.
 
 The Commerce applications running on CSU don't support the following product dimensions and item configurations:
 
@@ -53,7 +53,7 @@ The Commerce applications running on CSU do not support the following tracking d
 
 - **Serial number** – The POS application provides limited support for registration of a single serial number on a sales transaction  line for orders that are created in POS and include serialized items. This serial number isn't validated against registered serial numbers that are already in inventory. If a sales order is created in the call center channel or fulfilled through enterprise resource planning (ERP), and multiple serial numbers are registered on a single sales line during the fulfillment process in ERP, those serial numbers can't be applied or validated if a return is processed for the order in POS. When inventory is received by using the **Inbound operation** operation, users can [register or confirm the serial numbers received](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
 
-- **Batch ID** - The POS application provides limited support during statement posting if a batch controlled item is sold, but POS users aren't able to define the batch ID that was sold or picked when using the POS application.
+- **Batch ID** - The POS application provides limited support during statement posting if a batch-controlled item is sold, but POS users aren't able to define the batch ID that was sold or picked when using the POS application.
 
 - **Inventory status** – For items that use the warehouse management process and require an inventory status, this status field can't be set or modified through the POS application. The default inventory status that is defined in the store warehouse configuration is used when items are received into inventory.
 
