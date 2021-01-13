@@ -56,6 +56,6 @@ Before you can post a pre-acquisition, you must complete the following setup:
 10. Click **Post** &gt; **Post** to post the pre-acquisition transaction. On the **Books** page, the status of the fixed asset should now be **Acquired**.
 
   > [!NOTE]
-  > In the parameters for the acquisition/acquisition adjustment proposal, you can set date in the **To date** field for which pre-acquisition transactions are selected.
-  > This functionality is available version 10.0.17 version or later.
+  > In the parameters for the acquisition/acquisition adjustment proposal, you can set date in the **To date** field up to which pre-acquisition transactions are selected.
+  > This functionality is available version 10.0.17 or later.
 
