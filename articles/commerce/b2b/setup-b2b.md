@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 #ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -139,7 +139,7 @@ To create and configure a B2B account management landing page in site builder, f
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
 1. In the **Main** slot, add a **Container** module. In the module properties pane, set the **Width** value to **Fill Container**. 
-1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane, configure the breadcrumb link to the home page with link text "Home". 
+1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane under **Links**, configure a link to the home page with link text "Home."
 1. In the **Container** slot, add a **Welcome tile** module. In the module properties pane under **Heading**, enter "Welcome."
 1. In the **Main** slot, add another **Container** module ("Container 2"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**. 
 1. In the **Container 2** slot, add an **Account generic tile** module. In the module properties pane under **Heading**, enter "My Profile." Under **Links**, configure a link to the "My profile" page. 
@@ -172,13 +172,13 @@ To create a customer balance page in site builder, follow these steps.
 1. Create a page **Customer Balance** using the **Account Management** template created in section Account Management of this document.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
-1. In the Main slot, add a Container. Set Width to Fill Container.
-1. In the **Container** slot, add a **Breadcrumb** module. >>>with links to My Account/Customer balance
-1. In the **Container** slot, add a **Customer Account Balance module**. >>Set Heading as "Account Balance"
+1. In the **Main** slot, add another **Container** module ("Container 3"). In the module properties pane, set the **Width** value to **Fill Container**. Set the **Children Shown** value to **Two**.
+1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane under **Links**, configure a link to the account management landing page with link text "My Account."
+1. In the **Container** slot, add a **Customer Account Balance module**. In the module properties pane under **Heading**, enter "Account Balance."
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
-1. Go to Account Management home page **My Account** that we created earlier.
-1. Navigate to the **Account customer balance tile** module property panel. Here add a Link to the **Customer Balance** page that we just created. Save and Publish. Now the page is created and can be accessed from the Account Management home page by a user.
+1. Go to account management landing page created earlier. On the **Account customer balance tile** module properties pane, aadd a link to the customer balance page. 
+Save and Publish. Now the page is created and can be accessed from the Account Management home page by a user.
 
 <!--Below image shows the site builder page configuration and the Customer account credit page on the e-commerce site.-->
 
@@ -194,7 +194,7 @@ In addition, under **Site Builder \> Extensions** ensure the Customer Account Pa
 
 ## Create order templates pages
 
-In this section, we are going to discuss how the Order templates can be set up on the B2B e-commerce site. Order template shows one or more templates created by a B2B user and the products included in each template. These pages can be setup using **Order templates list** and **Order templates lines** module.
+In this section, we are going to discuss how order templates can be set up on the B2B e-commerce site. Order template shows one or more templates created by a B2B user and the products included in each template. These pages can be setup using **Order templates list** and **Order templates lines** module.
 
 ### Create an order templates list page
 
@@ -206,7 +206,7 @@ To create an order templates list page in site builder, follow these steps.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
 1. In the **Main** slot, add a **Container** module. Set the **Width** to **Fill Container**.
-1. In the **Container** slot, add a **Breadcrumb** module. >> with links to My Account/Order templates where My Account navigates back to the account management home page.
+1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane under **Links**, configure a link to the account management landing page with link text "My Account."
 1. In the **Container** slot, add an **Order templates list module**.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
@@ -226,7 +226,7 @@ To create an order templates lines page in site builder, follow these steps.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
 1. In the **Main** slot, add a **Container** module. Set the **Width** to **Fill Container**.
-1. In the **Container** slot, add a **Breadcrumb** module. >> with links to My Account/Order templates/ Order template lines. My Account navigates back to the account management home page. Order template navigates back to **Order templates** page
+1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane under **Links**, configure links to the account management landing page with link text "My Account," and to the order templates page with link text "Order templates" (**My account \> Order templates \> Order template lines**).
 1. In the **Container** slot, add an **Order template lines module**.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
@@ -235,25 +235,24 @@ To create an order templates lines page in site builder, follow these steps.
 
 ## Onboard business partner users
 
-The Admin user of the business partner organization can on-board additional users from the organization to the B2B e-commerce website by using **Business** **Organization list** module. From this page an admin can add/remove users, define account balance, request statements etc for a user.
+The administrator of a business partner organization can onboard additional users from the organization to the B2B e-commerce website from an organization users page that uses the **Business organization list** module. From the organization users page, an administrator can add or remove users, define account balances, and request statements for a user.
 
 On e-commerce, we need to first configure a page with **Business** **Organization list** module and then link this page to Account Management home page. A user can then sign into the B2B e-commerce website. Navigate to My Account &gt; Organization users &gt; View details and land on the Organization users page.
 
-The steps for configuring this page  are listed below:
-
 To create an organization users page in site builder, follow these steps.
 
-1. Create a page **Organization Users** using the **Account Management** template created in section Account Management of this document.
+1. Create an **Organization Users** page using the **Account Management** template created earlier.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
 1. In the **Main** slot, add a **Container** module. Set the **Width** to **Fill Container**.
-1. In the **Container** slot, add a **Breadcrumb** module. >>  with links to My Account/Organization Users where My Account navigates back to the account management home page.
-1. In the **Container** slot, add a **Business Organization list** module. >>Set Heading as "Organization Users"
-1. In the **Business Organization list** module property panel, enable **Table Sort** property which allows a user to sort the table. In addition, enable **Table pagination** which allows pagination**.** Set the Pagination count to say "5"
+1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane under **Links**, configure a link to the account management landing page with link text "My Account."
+1. In the **Container** slot, add a **Business organization list** module. In the module properties pane under **Heading**, enter "Organization Users."
+1. In the **Business organization list** module property pane, enable the **Table Sort** and **Table pagination** properties. Set the pagination count to "5."
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
-1. Go to Account Management home page **My Account** that we created earlier.
-1. Navigate to the **Organization users tile** module property panel. Here add a Link to the **Organization Users** page that we just created in step \#9. Save and Publish. Now the page is created and can be accessed from the Account Management home page by a user.
+1. Go to Account Management home page **My Account** that was created earlier.
+1. On the **Organization users tile** module properties pane, add a link to the organization users page. 
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 <!--Below is an example showing the Organization users page on the B2B e-commerce site and site builder Organization Users page setup.-->
 
@@ -269,12 +268,12 @@ This page shows the list of all invoices available and allows the user to pay or
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
 1. In the **Main** slot, add a **Container** module. Set the **Width** to **Fill Container**.
-1. In the **Container** slot, add a **Breadcrumb** module. >> with links to My Account/Invoices where My Account navigates back to the account management home page.
-1. To this Container add **InvoicesList module.** Set Heading as "Invoices"
+1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane under **Links**, configure a link to the account management landing page with link text "My Account" (**My Account \> Invoice lists**).
+1. In the **Container** slot, add an **InvoicesList** module. In the module properties pane under **Heading**, enter "Invoices."
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
-1. Go to Account Management home page **My Account** that we created earlier.
-1. Navigate to the **Account invoices tile** module property panel. Here add a Link to the Invoices List page that we just created in step \#8. Save and Publish. Now the Invoice page is created and can be accessed from the Account Management home page by a user.
+1. Go to the account management landing page created earlier. On the **Account invoices tile** module properties pane, add a link to the invoices list page. 
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 <!--Below is an example of the Invoices List page on e-commerce site and the page configuration in site builder.-->
 
@@ -286,7 +285,7 @@ This page shows the details of each invoice displayed in the Invoices List page.
 1. In the **Header** slot, add the header fragment that is preconfigured with the site header.
 1. In the **Footer** slot, add the footer fragment that is preconfigured with the site footer.
 1. In the **Main** slot, add a **Container** module. Set the **Width** to **Fill Container**.
-1. In the **Container** slot, add a **Breadcrumb** module. >> with links to My Account/Invoices Lists/ Invoice Details. My Account navigates back to the account management home page. Invoice Lists navigates back to Invoice list page
+1. In the **Container** slot, add a **Breadcrumb** module. In the module properties pane under **Links**, configure links to the account management landing page with link text "My Account," and to the invoice lists page with link text "Invoice Lists" (**My account \> Invoice Lists \> Invoice Details**).
 1. In the **Container** slot, add an **Invoice details module.**
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
