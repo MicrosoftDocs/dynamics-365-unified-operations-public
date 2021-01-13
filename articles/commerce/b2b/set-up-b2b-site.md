@@ -171,7 +171,7 @@ To create a customer balance page in site builder, follow these steps.
 1. In the **Container** slot, add a **Customer Account Balance module**. In the module properties pane under **Heading**, enter "Account Balance."
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
-1. Go to account management landing page created earlier. On the **Account customer balance tile** module properties pane, aadd a link to the customer balance page. 
+1. Go to account management landing page created earlier. On the **Account customer balance tile** module properties pane, add a link to the customer balance page. 
 Save and Publish. Now the page is created and can be accessed from the Account Management home page by a user.
 
 ### Configure checkout page to use customer balance as a payment
@@ -288,5 +288,3 @@ To create an invoice details page in site builder, follow these steps.
 [Content block module](../add-hero-module.md)
 
 [Product Collection](../product-collection-module-overview.md)
-
-
