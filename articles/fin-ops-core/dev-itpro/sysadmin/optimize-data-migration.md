@@ -5,7 +5,7 @@ title: Optimizing data migration for Microsoft Dynamics 365 Finance and Dynamics
 description: The article provides an overview of how to optimize data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: skaue-ms
 manager: AnnBe
-ms.date: 01/04/2021
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,30 +44,28 @@ Begin the optimization phase by using a subset of the data. For example, if it i
 
 Once you have identified the entities you will use, then you will want to go through the following sections to explore opportunities for optimization. 
 
-### Disable Change Tracking
+### Disable change tracking
 
 Change tracking can be [enabled and disabled](../data-entities/entity-change-track.md) from the list of entities. 
 
 Data management > Data entities > Change tracking > Disable Change Tracking
 
-### Enable Set-based processing
+### Enable set-based processing
 
 Verify that the entity supports set-based processing from the list of entities. 
 
 Data management > Data entities > Set-based processing (column in grid)
 
-See example for [how it can be done with General Journal entity](../data-entities/tips-tricks-import-general-journal-entity.md).
-Not all entities support set-based processing and you may receive a message such as "Customer definitions" (CustCustomerBaseEntity). 
-If you attempt to enable it and save, you will see the warning "Set operations not supported for 'Customer definitions' entity".
+See example for [how it can be done with General Journal entity](../data-entities/tips-tricks-import-general-journal-entity.md). Not all entities support set-based processing and you may receive a message such as "Customer definitions" (CustCustomerBaseEntity).  If you attempt to enable it and save, you will see the warning "Set operations not supported for 'Customer definitions' entity".
 
 If it is necessary to create an entity that allows set-based processing, some key considerations are:
 
-* The data sources cannot be read-only
-* The parameter on the data entity ValidTimeStateEnabled must be set to "No"
-* All data sources must have TableType set to "Regular"
-* The parameter of QueryType on the Metadata node cannot be set to "Union"
-* The main data source cannot prevent saving data across companies however embedded data sources allow it
-* The main data source cannot prevent saving data across partitions however embedded data sources allow it
+* The data sources cannot be read-only.
+* The parameter on the data entity ValidTimeStateEnabled must be set to **No**.
+* All data sources must have TableType set to **Regular**.
+* The parameter of QueryType on the Metadata node cannot be set to **Union**.
+* The main data source cannot prevent saving data across companies; however, embedded data sources allow it.
+* The main data source cannot prevent saving data across partitions; however, embedded data sources allow it.
 
 ### Create data migration batch group
 
@@ -77,11 +75,11 @@ System administration > Setup > Batch group
 
 ### Priority-based batch scheduling
 
-In Platform update 31, we introduced a new feature that will optimize how batch jobs are executed. Consider enabling [Priority-based batch scheduling](priority-based-batch-scheduling.md) if contention is identified in the batch framework.
+In Platform update 31, we introduced a new feature that will optimize how batch jobs are executed. Consider enabling [priority-based batch scheduling](priority-based-batch-scheduling.md) if contention is identified in the batch framework.
 
 ### Maximum batch threads
 
-You can configure the maximum number of batch threads per AOS to better utilize parallelism and multithreading. This value should be changed cautiously. If the number is too high, it can have negative performance implications. The default value is currently 4. If necessary, the value can be changed to 8. Do not configured the value above 8 without significant performance testing.
+You can configure the maximum number of batch threads, per AOS, to better utilize parallelism and multithreading. This value should be changed cautiously. If the number is too high, it can have negative performance implications. The default value is currently 4. If necessary, the value can be changed to 8. Do not configured the value above 8 without significant performance testing.
 
 System administration > Setup > Server configuration
 
