@@ -51,7 +51,7 @@ One can define the quantity settings on the Default order settings page. To open
 The quantity limits for products sold are set based on the 'Default Order Settings' in the 'Sales order' tab.
 
 To learn more about the Product dimensions and default order settings please review: [Default order settings for dimensions and product
-variants](https://docs.microsoft.com/en-us/dynamics365/supply-chain/pim/product-dimensions).
+variants](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions).
 
 ## Turn on the Minimum / Maximum / Multiple / Standard Order Quantity
 
@@ -65,7 +65,7 @@ For e-Commerce: Select the "Enable Order Quantity Limits" feature in the 'eComme
 
 > [!NOTE] 
 > The new 'site settings' will only be available after the App.Settings.Jason file has been updated. Please follow this below
-link: [SDK and Module library updates](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/sdk-updates)
+link: [SDK and Module library updates](../e-commerce-extensibility/sdk-updates.md)
 
 ## Supported flows
 
