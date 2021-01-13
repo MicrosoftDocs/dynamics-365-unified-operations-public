@@ -17,7 +17,7 @@ ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
+#ms.search.scope: Core, Operations, Supply Chain Management
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

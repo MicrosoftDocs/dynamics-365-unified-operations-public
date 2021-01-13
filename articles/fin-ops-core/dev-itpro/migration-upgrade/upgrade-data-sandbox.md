@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Data upgrade in sandbox environments
 description: This topic explains how to perform a data upgrade from Microsoft Dynamics AX 2012 to Finance and Operations in a sandbox environment. 
 author: laneswenka
 manager: AnnBe
-ms.date: 01/11/2021
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -52,8 +52,9 @@ Here are the high-level steps in the upgrade process.
 1. Turn off the AX 2012 AOS instances.
 2. Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
 3. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
-4. Upload the bacpac file to Azure storage.
-5. Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. You must then run a script against the imported database to reset the SQL database users.
+4. Optional, if you are running import from a cloud-hosted VM, you should upload the bacpac file to Azure storage. 
+5. Import the bacpac file by using SQLPackage.exe. This can be run from a local server or from a cloud-hosted VM. If you’re using a local server, you will need to request JIT access to the Dynamics 365 database and set the required firewall rules. If you’re using a cloud-hosted VM, download the bacpac file. You must then run a script against the imported database to reset the SQL database users.
+
 6. Run the appropriate data upgrade package against the imported database.
 
 ## Turn off the AX 2012 AOS instances
