@@ -164,6 +164,7 @@ This topic provides information about functionality that supports Russian regula
 - [Expense and income codes](rus-expense-and-income-codes.md)
 - [Assets tax registers](rus-assets-tax-registers.md)
 - [Deferrals tax register](rus-deferred-expenses-register.md)
+- [Cash flow tax registers](rus-cash-flow-tax-registers.md)
 
 ## Additional resources
 
