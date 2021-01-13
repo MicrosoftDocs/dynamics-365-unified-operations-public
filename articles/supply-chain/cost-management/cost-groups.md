@@ -18,7 +18,7 @@ ms.search.form: BOMCostGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50871
 ms.assetid: 1855f744-f73f-4fa8-8290-a7ee126d368b

@@ -17,7 +17,7 @@ ms.search.form: TMSRateRouteWorkbench, TMSDriverLogListPage, TMSTransportationTe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global

@@ -18,7 +18,7 @@ ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d

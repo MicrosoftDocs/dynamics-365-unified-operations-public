@@ -18,7 +18,7 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetStanda
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658

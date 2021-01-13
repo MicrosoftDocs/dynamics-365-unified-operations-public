@@ -18,7 +18,7 @@ ms.search.form: ReqCreatePlanWorkspace
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

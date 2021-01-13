@@ -18,7 +18,7 @@ ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
