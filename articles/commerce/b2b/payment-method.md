@@ -36,7 +36,7 @@ Retailers can accept various types of payment in exchange for the products and s
 
 1. Add Customer Account Payment method in Headquarters 
 2. Associate Customer Account Payment method to eCommerce Channel 
-3. Ensure that Customer has a 'Credit limit' enabled (In the navigation pane, go to Modules &gt; Retail and commerce &gt; Customers &gt; All customers.) 
+3. Ensure that Customer has a 'Credit limit' enabled (In the navigation pane, go to **Modules \> Retail and commerce \> Customers \> All customers**). 
 
 ## Setup eCommerce website to use 'Customer Account' payment method
 
