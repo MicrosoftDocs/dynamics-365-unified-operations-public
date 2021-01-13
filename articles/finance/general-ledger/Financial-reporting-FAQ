@@ -71,17 +71,18 @@ In Financial Reporter Report Designer
 1.	Create a new Row Definition 
   a.	Click Edit | Insert Rows from Dimensions 
     i.	Select MainAccount
-    
+    [![FR-FAQ_selectmain_]](./FR-FAQ_selectmain_.png)](./FR-FAQ_selectmain_.png)
     
     ii.	Click Ok
   b.	Save the Row Definition
 
 2.	Create a new Column Definition
-
+ [![FR-FAQ_column]](./FR-FAQ_column.png)](./FR-FAQ_column.png)
 
 3.	Create a new Report Definition
   a.	Click Settings and uncheck 
-  
+   [![FR-FAQ_settings]](./FR-FAQ_settings.png)](./FR-FAQ_settings.png)
+   
 4.	Generate the Report. 
 
 5.	Export the Report to Excel
@@ -92,7 +93,8 @@ In D365:
     i.	From Date: Start of Fiscal Year
     ii.	To Date: Date you generated the report for
     iii.	Financial Dimension Set “Main Account set”
-    
+ [![FR-FAQ_mainacct]](./FR-FAQ_mainacct.png)](./FR-FAQ_mainacct.png)
+      
 b.	Click Calculate
 
 2.	Export the report to Excel
