@@ -47,21 +47,21 @@ The below section covers details on how Business partners are on-boarded to the 
 
 ### Setup
 
-1. Create a Number sequence from the following path **Headquarters setup &gt; Number sequences &gt; Number sequences**
-1. Attach the above created number sequence to **Customer hierarchy ID** from the following path **Headquarters setup &gt; Parameters &gt; Commerce shared parameters**
+1. Create a Number sequence from the following path **Headquarters setup \> Number sequences \> Number sequences**
+1. Attach the above created number sequence to **Customer hierarchy ID** from the following path **Headquarters setup \> Parameters \> Commerce shared parameters**
 
 ### Self-serve based on-boarding of business partner & setting up Admin user
 
 1. Potential business partners can initiate the on-boarding process to the B2B e-commerce website by submitting an on-boarding request through the site. This can be done by clicking the link for on-boarding on the site. On clicking the link, the business partner can provide the details required for the on-boarding and clicking Sign-up. Refer screenshot below
 1. On submitting the request, the user should see a confirmation screen. Refer screen shot below:
-1. Execute the **P-0001** job from the path **Retail and Commerce IT &gt; Distribution Schedule** to pull all the business partner on-boarding request to headquarters
-1. After the P-0001 job successfully brings the on-boarding request into headquarters, execute the job **Synchronize customers and business partners from async mode** from the path **Retail and Commerce IT &gt; Customer.** On successful execution of this job, the on-boarding requests will be created as Prospects record in Commerce headquarters and the **Type ID** of such prospect records will be set to **B2B prospect**
-1. Open the prospects form from the path **Customers &gt; All prospects**
+1. Execute the **P-0001** job from the path **Retail and Commerce IT \> Distribution Schedule** to pull all the business partner on-boarding request to headquarters
+1. After the P-0001 job successfully brings the on-boarding request into headquarters, execute the job **Synchronize customers and business partners from async mode** from the path **Retail and Commerce IT \> Customer.** On successful execution of this job, the on-boarding requests will be created as Prospects record in Commerce headquarters and the **Type ID** of such prospect records will be set to **B2B prospect**
+1. Open the prospects form from the path **Customers \> All prospects**
 1. Click on the prospect record that needs to be actioned to open the prospect details form
-1. Approve or Reject the on-boarding request by clicking on the tab **General &gt; Convert &gt; Approve / Reject**
+1. Approve or Reject the on-boarding request by clicking on the tab **General \> Convert \> Approve / Reject**
 1. On clicking **Approve / Reject**, a confirmation dialog will pop-up that will allow a user to continue with the process or discontinue the process
 1. If the request is approved, the **Status** on the prospect record will be set to **Approved** and 2 new customer records are created in the system, one customer of the **Type Organization** for the Business partner organization and second customer of the **Type Person** for the requestor. A customer hierarchy record for the business partner is also created (Please refer to the Org modeling of B2B customer section in this document for more information)
-1. Execute the **1010 Customers** job from the path **Retail and Commerce IT &gt; Distribution Schedule** to push the newly created customers & customer hierarchy record to the Channel DB.
+1. Execute the **1010 Customers** job from the path **Retail and Commerce IT \> Distribution Schedule** to push the newly created customers & customer hierarchy record to the Channel DB.
 1. An email will be triggered to the requestor's email address confirming that they have been approved or rejected to be a business partner
 1. If the request is approved and after the customer & customer hierarchy records are synchronized to the Channel DB, the requestor will be able to sign-in to the B2B e-commerce website using the email address that was provided at the time of submitting the request. During the first log-in, the requestor will be prompted to set a password for themselves.
 
@@ -70,7 +70,7 @@ The below section covers details on how Business partners are on-boarded to the 
 The Admin user of the business partner organization can on-board additional users from the organization to the B2B e-commerce website by following the steps below:
 
 1. Sign into the B2B e-commerce website
-1. Navigate to **My Account &gt; Organization users &gt; View details**
+1. Navigate to **My Account \> Organization users \> View details**
 1. Click on **Add a user**
 1. Fill in the required information and click **Save**
 1. The status of the newly added user will be set to **Pending**
@@ -85,7 +85,7 @@ The Admin user of the business partner organization can on-board additional user
 The details of a business partner user can be edited by the Admin user as per the below steps:
 
 1. Sign into the B2B e-commerce website
-1. Navigate to **My Account &gt; Organization users &gt; View details**
+1. Navigate to **My Account \> Organization users \> View details**
 1.  Click on the **Edit** (pencil) button and make the required changes and click **Save**
 1.  After the **P-0001** job, **Synchronize customers and business partners from async mode** job and **the 1010 Customer job** is executed, the changes will be reflected
 
@@ -94,8 +94,8 @@ The details of a business partner user can be edited by the Admin user as per th
 An existing user of a business partner organization can be removed by the Admin user from the list of users who can access the B2B e-commerce website by following the steps below:
 
 1. Sign into the B2B e-commerce website
-1. Navigate to **My Account &gt; Organization users &gt; View details**
-1. Click on the **Remove** ( X )button and in the pop-up window, confirm the same
+1. Navigate to **My Account \> Organization users \> View details**
+1. Click on the **Remove** ( X ) button and in the pop-up window, confirm the same
 1. After the **P-0001** job, **Synchronize customers and business partners from async mode** job and **the 1010 Customer job** is executed, the changes will be reflected
 1. Removing the user from the website will remove the corresponding customer record from the business partners customer hierarchy record. The customer itself will not be deleted from Commerce headquarters.
 
