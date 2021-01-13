@@ -73,3 +73,17 @@ In the **Lines** section, add a line for each leg of the journey, and put the li
 | Journey from port | If the port that is specified for the leg is used to determine the auto costs, select this check box to identify it as the "journey from" port. This port will be shown on the voyage header. |
 | Journey to port | If the port that is specified for the leg is used to determine the auto costs, select this check box to identify it as the "journey to" port. This port will be shown on the voyage header. |
 | Shipping company | Select the shipping company that is used for the leg. |
+
+## Activities
+
+The **Activities** settings establish the types of activities that can occur at the destination port of a leg. Users working on the **All shipping containers** page will be able to select among these values when estimating the duration of each activity and when recording the actual duration for comparison purposes.
+
+To set up your activities, go to **Landed cost \> Multi-leg journeys setup \> Activities**. From here, you can add, remove, and edit activities in the grid by using commands in the Action Pane.
+
+The following table describes the settings available for each activity listed in the grid.
+
+| Field | Description |
+|---|---|
+| Activity | The name of the activity. |
+| Description | A description of the activity. |
+| Shipping company | The vendor account of the shipping company associated with this activity. |
