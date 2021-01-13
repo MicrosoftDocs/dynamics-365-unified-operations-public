@@ -52,8 +52,8 @@ Here are the high-level steps in the upgrade process.
 1. Turn off the AX 2012 AOS instances.
 2. Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
 3. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
-4. (Optional if running import from a cloud hosted VM) - Upload the bacpac file to Azure storage. 
-5. Import bacpac file by using SQLPackage.exe. This can be run from a local server or from a cloud hosted VM. If using a local server, you will need to request JIT access to the D365 database and set the required firewall rules. If using a cloud hosted VM, download the bacpac file. You must then run a script against the imported database to reset the SQL database users.
+4. (Optional if running import from a cloud-hosted VM): Upload the bacpac file to Azure storage. 
+5. Import bacpac file by using SQLPackage.exe. This can be run from a local server or from a cloud-hosted VM. If using a local server, you will need to request JIT access to the Dynamics 365 database and set the required firewall rules. If using a cloud-hosted VM, download the bacpac file. You must then run a script against the imported database to reset the SQL database users.
 6. Run the appropriate data upgrade package against the imported database.
 
 ## Turn off the AX 2012 AOS instances
