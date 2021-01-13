@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Design ER configurations to generate reports in Word format
-description: This topic explains how users in the System administrator or Electronic reporting functional consultant role can configure Electronic reporting (ER) formats to generate reports as Microsoft Word documents. 
+title: Design a new ER configuration to generate reports in Word format
+description: This topic explains how users in the System administrator or Electronic reporting functional consultant role can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 12/17/2020
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6 
 ---
 
-# Design ER configurations to generate reports in Word format
+# Design a new ER configuration to generate reports in Word format
 
 [!include [banner](../includes/banner.md)]
 
