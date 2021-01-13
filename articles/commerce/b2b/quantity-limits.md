@@ -46,7 +46,7 @@ Turn on the 'Quantity' feature in Feature Management: "Support the Site and Defa
 
 ## Setup - Released Products by variants
 
-One can define the quantity settings on the Default order settings page. To open this page, go to Product 'Released products by category &gt; Select a released product &gt; on the Manage inventory Action Pane &gt; Order settings &gt; Default order settings. 
+One can define the quantity settings on the Default order settings page. To open this page, go to Product **Released products by category \> Select a released product \> on the Manage inventory Action Pane \> Order settings \> Default order settings**. 
 
 The quantity limits for products sold are set based on the 'Default Order Settings' in the 'Sales order' tab.
 
@@ -57,7 +57,7 @@ variants](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimens
 
 For e-Commerce: Select the "Enable Order Quantity Limits" feature in the 'eCommerce Site Builder', under the 'Site settings' 
 
-- Use the HQ settings to enable the quantity limits based on the 'Default Quantity Settings'
+- Use the headquarters settings to enable the quantity limits based on the 'Default Quantity Settings'
 - Minimum Order Quantity: Minimum number of products that needs to be purchased.
 - Maximum Order Quantity: Maximum limit for products that needs to be purchased.
 - Multiple Order Quantity: Product can be bought in multiples of this quantity.
