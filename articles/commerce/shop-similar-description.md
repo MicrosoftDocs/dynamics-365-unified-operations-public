@@ -5,7 +5,7 @@ title: Enable "shop similar description" recommendations
 description: This topic describes how to enable "shop similar description" product recommendations in Microsoft Dynamics 365 Commerce.
 author: bsokolov
 manager: AnnBe
-ms.date: 01/12/2020
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: v-chgri
+ms.reviewer: josaw
 #ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -25,8 +25,8 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
-ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.13
+ms.search.validFrom: 2021-01-31
+ms.dyn365.ops.version: 10.0.16
 
 ---
 
@@ -36,57 +36,54 @@ ms.dyn365.ops.version: 10.0.13
 
 This topic describes how to enable "shop similar description" product recommendations in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
-The "shop similar description" recommendations feature in Dynamics 365 Commerce uses the power of artificial intelligence and machine learning (AI-ML) to deliver recommendations for products with similar description to customers. By making "shop similar description" recommendations available for all retail channels in Commerce, retailers can increase customer satisfaction by helping customers easily find what they want.
+The "shop similar description" recommendations feature in Dynamics 365 Commerce uses artificial intelligence and machine learning (AI-ML) to deliver recommendations for products with descriptions that are similar to what the customer is looking for. By making "shop similar description" recommendations available for all retail channels in Commerce, retailers can help customers easily find what they want.
 
 The functionality for "shop similar description" recommendations uses product name and description of seed products to find and recommend similar products in a retailer's product catalog. 
 
-"shop similar description" recommendations are available in both the point of sale (POS) and e-Commerce experiences.
+"Shop similar description" recommendations are available in both the point of sale (POS) and e-commerce experiences.
 
 ### Example scenarios
 
-- A customer views a pair of retro horn rimmed glasses and receives a set of recommendations for other glasses with similar desgin, based on their description, contextual to the retailer's industry.
+The examples below demonstrate the types of recommendations the "shop similar description" functionality can provide.
 
-- A customer uses "shop similar description" recommendations to discover coffee flavor similar to the one they have already tried with this retailer.
+- A customer views a pair of retro style horn-rimmed glasses and receives a set of recommendations for other glasses with similar designs, in context with the retailer's industry.
 
-## Enable "shop similar description" recommendations in Commerce headquarters
+- A customer uses "shop similar description" recommendations to discover coffee flavors similar to the flavor they already purchased from the retailer.
 
-Product recommendations are supported only for Commerce users who have migrated their storage to Azure Data Lake Gen2.
+## Enable "shop similar description" recommendations
+
+Product recommendations are supported only for Commerce users who migrated their storage to Azure Data Lake Gen2.
 
 ### Prerequisites
 
-Before retailers can begin to show "shop similar description" recommendations to customers, there are two prerequisite steps:
+Before "shop similar description" recommendations can be displayed to customers, you need to complete the following prerequisites.
 
-- [Enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.
-- Confirm that the media server supports HTTPS calls.
+- You must [enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.
+- You must confirm that the media server supports HTTPS calls.
 
 > [!NOTE]
-> When you enable the "shop similar description" recommendations feature, the process of generating product recommendation lists begins. Up to a day might be required before those lists are available and visible online and on POS terminals.
+> When you enable the "shop similar description" recommendations feature, the sytem starts generating product recommendation lists. It may take up to a day for the lists to be available and visible online and on POS terminals.
 
 To enable the "shop similar description" recommendations feature in Commerce headquarters, follow these steps.
 
 1. Go to **Feature management**.
-1. In the list of available features, search for and select **shop similar description**.
+1. In the list of available features, search for and select **Shop similar description**.
 1. In the right pane, select **Enable** to turn on the service.
 
-The following illustration shows the **shop similar description** feature on the **Feature management** page in Commerce headquarters.
-
-![The shop similar description feature on the Feature management page in Commerce headquarters](./media/ter_hq_feature_management.png)
-
 > [!NOTE]
-> If you turn off the "shop similar description" recommendations feature, no other types of product recommendations are affected. For more information about product recommendations, see [Product recommendations overview](product-recommendations.md).
+> If you turn off the "shop similar description" recommendations feature, other types of product recommendations aren't affected. For more information about product recommendations, see the [product recommendations overview](product-recommendations.md) topic.
 
-## Add a shop similar description button to product details pages by using Commerce site builder
+## Add a "shop similar description" button to product details pages
 
-After you enable the "shop similar description" recommendations feature in Commerce headquarters, an option in Commerce site builder lets retailers to add a **shop similar description** button to the buy box on any product details page (PDP). A customer who selects this button is taken to a dedicated "shop similar description" page that returns visually similar products. There, the customer can use selectors to further filter the products.
+After you enable the "shop similar description" recommendations feature in Commerce headquarters, you can add a "shop similar description" button to the buy box on any product details page (PDP). A customer who selects this button is taken to a dedicated "shop similar description" page that returns visually similar products. There, the customer can use selectors to further filter the products.
 
 To add a **shop similar description** button to a PDP by using Commerce site builder, follow these steps.
 
 1. Open an existing site builder page that contains a buy box module.
 1. In the left navigation pane, select the buy box module.
 1. In the right navigation pane, select the **Enable shop similar description Link** check box.
-1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. After the page is published, the PDP will include a **shop similar description** button.
+1. Select **Save**. 
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it. After the page is published, the PDP will include a **Shop similar description** button.
 
 The following illustration shows the **Enable shop similar description Link** check box and **shop similar description** button on an example PDP in site builder.
 
@@ -102,16 +99,8 @@ The following illustration shows the **Enable shop similar description Link** ch
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
-
-[Add product recommendations on POS](product.md)
-
-[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
-
 [Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
 
 [Manually create curated recommendations](create-editorial-recommendation-lists.md)
-
-[Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
