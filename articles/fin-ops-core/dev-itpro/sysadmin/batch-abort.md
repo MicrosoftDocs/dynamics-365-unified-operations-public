@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Abort an executing batch job
+title: Cancel an executing batch job
 description: This topic provides information about how to cancel an executing batch job.
 author: Peakerbl
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 27
 
 ---
 
-# Abort an executing batch job
+# Cancel an executing batch job
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE] 
