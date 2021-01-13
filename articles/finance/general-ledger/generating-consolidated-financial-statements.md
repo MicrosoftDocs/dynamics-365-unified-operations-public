@@ -80,7 +80,7 @@ Organization hierarchies that contain dimensions or legal entities dynamically c
 ## Consolidations that involve eliminations
 Elimination transactions are a common part of the consolidation process. In this example, five accounts are eliminated during consolidation: 142600, 211400, 401420, 401180, and 510820. Companies might set up their intercompany accounts differently. For example, some companies set the last digit to 9 if the account is used in intercompany transactions. Regardless of the method, if you know the intercompany accounts, you can show eliminations on your consolidated financial statements.
 
-The following illustration shows a column definition for a consolidated income statement. Three profit and loss intercompany accounts are defined for each company by using the dimension filter. Column D includes the elimination accounts only for the USMF company, and column E includes eliminations only for the DEMF company. Both column D and column E are set up so that they are **not** printed on the financial statement.
+The following illustration shows a column definition for a consolidated income statement. Three profit and loss intercompany accounts are defined for each company by using the dimension filter. Columns F, G and H includes the elimination accounts only for the USMF, USRT and DEMF companies. These columns are set up so that they are **not** printed on the financial statement.
 
 ![Column definition consolidated income statement](./media/column-definition-consolidated-income-statement.png "Column definition consolidated income statement")
 
