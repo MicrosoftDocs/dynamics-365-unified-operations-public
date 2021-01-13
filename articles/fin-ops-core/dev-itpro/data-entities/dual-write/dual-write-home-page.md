@@ -104,6 +104,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 ## Support
 
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
++ [Migrate Prospect to cash data from Data Integrator to dual-write](migrate-prospect-to-cash.md)
 
 ## Troubleshooting
 
