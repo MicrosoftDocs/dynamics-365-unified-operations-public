@@ -42,23 +42,23 @@ Solution: You can utilize Tree Security to restrict access to a single report so
   a.	On the Summary line in the “Unit Security” column double-click
       i.	Click Users and Groups  
           1.	Select the User(s) or Group that would like to access this report. 
-
-
+[![users]](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+[![security]](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
 
   b.	Click Save
-
+[![save]](./FR-FAQ_save.png)](./FR-FAQ_save.png)
 
 3.	In your Report Definition add your new Tree Definition
-
+[![tree definition]](./FR-FAQ_tree definition.jpg)](./FR-FAQ_tree definition.jpg)
 
 A.	While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”
-
+[![reporting unit selection]](./FR-FAQ_reporting unit selection.jpg)](./FR-FAQ_reporting unit selection.jpg)
 
 Before:
-
+[![before]](./FR-FAQ_before.png)](./FR-FAQ_before.png)
 
 After:
-
+[![after]](./FR-FAQ_after.png)](./FR-FAQ_after.png)
 
 Note: Reason for the above message is my user does not have access to that report after applying Unit Security
 
