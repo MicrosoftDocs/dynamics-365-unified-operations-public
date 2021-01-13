@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic has been compiled to assist with common questions around Financial Reporting. 
 
-## How to restrict access to a report using Tree Security
+## How do I restrict access to a report using Tree Security?
 
 Scenario: The USMF Company has a Balance Sheet report that it doesn’t want all FR users to be able to view in D365. 
 Solution: You can utilize Tree Security to restrict access to a single report so that only certain users can access the report. 
@@ -61,6 +61,46 @@ After:
 [![after]](./FR-FAQ_after.png)](./FR-FAQ_after.png)
 
 Note: Reason for the above message is my user does not have access to that report after applying Unit Security
+
+
+## How do I determine which account(s) do not matching my balances in D365?
+
+When you have a report that doesn't match what you would expect in D365, here are some steps you could take to identify those accounts and the variances. 
+
+In Financial Reporter Report Designer
+1.	Create a new Row Definition 
+  a.	Click Edit | Insert Rows from Dimensions 
+    i.	Select MainAccount
+    
+    
+    ii.	Click Ok
+  b.	Save the Row Definition
+
+2.	Create a new Column Definition
+
+
+3.	Create a new Report Definition
+  a.	Click Settings and uncheck 
+  
+4.	Generate the Report. 
+
+5.	Export the Report to Excel
+
+In D365: 
+1.	Click General Ledger | Inquiries and Reports | Trial Balance
+  a.	Parameters
+    i.	From Date: Start of Fiscal Year
+    ii.	To Date: Date you generated the report for
+    iii.	Financial Dimension Set “Main Account set”
+    
+b.	Click Calculate
+
+2.	Export the report to Excel
+
+You should now be able to copy the data from the FR Excel Report and to the D365 Trial Balance report and compare the “Closing Balance” columns
+
+
+
 
 
 
