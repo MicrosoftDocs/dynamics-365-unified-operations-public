@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Optimizing data migration for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+# Optimizing data migration for Finance and Operations apps
 
 [!include [banner](../includes/banner.md)]
 
