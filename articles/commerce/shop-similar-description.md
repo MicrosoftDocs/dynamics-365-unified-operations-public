@@ -50,7 +50,7 @@ The examples below demonstrate the types of recommendations the "shop similar de
 
 - A customer uses "shop similar description" recommendations to discover coffee flavors similar to the flavor they already purchased from the retailer.
 
-## Enable "shop similar description" recommendations
+## Set up "shop similar description" recommendations
 
 Product recommendations are supported only for Commerce users who migrated their storage to Azure Data Lake Gen2.
 
@@ -58,8 +58,8 @@ Product recommendations are supported only for Commerce users who migrated their
 
 Before "shop similar description" recommendations can be displayed to customers, you need to complete the following prerequisites.
 
-- You must [enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.
-- You must confirm that the media server supports HTTPS calls.
+- [Enable product recommendations](enable-product-recommendations.md) in Commerce headquarters.
+- Confirm that the media server supports HTTPS calls.
 
 > [!NOTE]
 > When you enable the "shop similar description" recommendations feature, the sytem starts generating product recommendation lists. It may take up to a day for the lists to be available and visible online and on POS terminals.
