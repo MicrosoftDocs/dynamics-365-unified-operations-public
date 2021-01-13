@@ -5,7 +5,7 @@ title: Org modeling of B2B organizations
 description: This topic describes how to create org mdel heirarchies for B2B organizations.
 author: josaw1
 manager: AnnBe
-ms.date: 01/12/2021
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 #ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -34,28 +34,18 @@ Business partner organizations are represented through customer & customer hiera
 
 When a business partner request is approved, the flowing actions are performed:
 
-1.  2 new customer records are created in the system, one customer of
-    the **Type Organization** for the Business partner organization and
-    second customer of the **Type Person** for the requestor
+1.  2 new customer records are created in the system, one customer of the **Type Organization** for the Business partner organization and second customer of the **Type Person** for the requestor
 
-2.  A new customer hierarchy record is created under **Customer &gt;
-    Customer hierarchy** and the header fields are populated as below:
+1.  A new customer hierarchy record is created under **Customer &gt; Customer hierarchy** and the header fields are populated as below:
 
     1.  Customer hierarchy id – unique id for the customer hierarchy using the number sequence defined in Commerce shared parameters
-
-    2.  Name – Organization name of the business partner as specified in the onboarding request
-
-    3.  Purpose – It is set to a pre-define value of B2B organization
-
-    4.  Organization – the Business partner customer ID is associated with this field
-
-    <!-- -->
+    1.  Name – Organization name of the business partner as specified in the onboarding request
+    1.  Purpose – It is set to a pre-define value of B2B organization
+    1.  Organization – the Business partner customer ID is associated with this field
 
     1.  The details of the customer hierarchy records are populated as below:
 
-        1.  The customer record of the requestor is associated to the
-            customer hierarchy and the role of **Admin** is associated
-            to the requestor
+        1. The customer record of the requestor is associated to the customer hierarchy and the role of **Admin** is associated to the requestor
 
 When additional users are added to the Business partner organization by the Admin on the B2B website, a new customer record for the same is also created in HQ and the newly customer record is also added to the relevant business partner customer hierarchy record with the role of a **User**
 
