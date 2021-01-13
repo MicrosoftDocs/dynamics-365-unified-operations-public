@@ -51,10 +51,10 @@ To migrate your Prospect to cash data from Data Integrator to dual-write, follow
 3. Uninstall the Prospect to cash solution from the Sales environment. This step removes the columns and corresponding data that the Prospect to cash solution introduced.
 4. Install the dual-write solution.
 5. Create a dual-write connection between the Finance and Operations app and the customer engagement app for one or more legal entities.
-6. Enable dual-write table maps, and run the initial synchronization for the required reference data. Examples of required data include customer groups, payment terms, and payment schedules. Don't enable the dual-write maps for tables that require initialization, such as the account, quote, quote line, order, and order line tables.
+6. Enable dual-write table maps, and run the initial synchronization for the required reference data. (For more information, see [Considerations for initial synchronization](initial-sync-guidance.md).) Examples of required data include customer groups, payment terms, and payment schedules. Don't enable the dual-write maps for tables that require initialization, such as the account, quote, quote line, order, and order line tables.
 7. In the customer engagement app, go to **Advanced Settings \> System Settings \> Data Management \> Duplicate detection rules**, and disable all the rules.
 8. Initialize the tables that are listed in step 2. For instructions, see the remaining sections of this topic.
-9. Open the Finance and Operations app, and enable the table maps, such as the account, quote, quote line, order, and order line table maps. Then run the initial synchronization. This process will sync additional information from the Finance and Operations app, such as processing status, shipping and billing addresses, sites, and warehouses.
+9. Open the Finance and Operations app, and enable the table maps, such as the account, quote, quote line, order, and order line table maps. Then run the initial synchronization. (For more information, see [Considerations for initial synchronization](initial-sync-guidance.md).) This process will sync additional information from the Finance and Operations app, such as processing status, shipping and billing addresses, sites, and warehouses.
 
 ## Account table
 
@@ -79,7 +79,7 @@ To migrate your Prospect to cash data from Data Integrator to dual-write, follow
 
 ## Invoice table
 
-Because data from the **Invoice** table is designed to flow one way, from the Finance and Operations app to the customer engagement app, initialization isn't required. Run the initial synchronization to migrate all the required data from the Finance and Operations app to the customer engagement app.
+Because data from the **Invoice** table is designed to flow one way, from the Finance and Operations app to the customer engagement app, initialization isn't required. Run the initial synchronization to migrate all the required data from the Finance and Operations app to the customer engagement app. For more information, see [Considerations for initial synchronization](initial-sync-guidance.md).
 
 ## Order table
 
@@ -97,7 +97,7 @@ Because data from the **Invoice** table is designed to flow one way, from the Fi
 
 ## Products table
 
-Because data from the **Products** table is designed to flow one way, from the Finance and Operations app to the customer engagement app, initialization isn't required. Run the initial synchronization to migrate all the required data from the Finance and Operations app to the customer engagement app.
+Because data from the **Products** table is designed to flow one way, from the Finance and Operations app to the customer engagement app, initialization isn't required. Run the initial synchronization to migrate all the required data from the Finance and Operations app to the customer engagement app. For more information, see [Considerations for initial synchronization](initial-sync-guidance.md).
 
 ## Quote and Quote product tables
 
