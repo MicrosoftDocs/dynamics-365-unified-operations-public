@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up lease books
-description: This topic describes the information that is maintained in lease books. Lease books contain the accounting policies that determine how a lease is accounted for in the system.
+title: Lease termination proposal
+description: This topic explains how to propose a lease for termination.
 author: moaamer
 manager: Ann Beebe
 ms.date: 1/14/2021
@@ -47,33 +47,33 @@ When a lease is not classified as a deferred rent treatment lease and is
 not associated to a fixed asset, Asset leasing will produce the
 following termination journal entry:
 
-  Transaction                             Debit (Dr.)   Credit (Cr.)
-  --------------------------------------- ------------- --------------
-  Dr. Lease liability                     X             
-  Dr. Accumulated depreciation            X             
-  Dr. Gain (loss) on lease modification   X             
-  Cr. Lease asset                                       X
-  Cr. Gain (loss) on lease modification                 X
+ | Transaction                            | Debit (Dr.) | Credit (Cr.) |
+ |--------------------------------------- |-------------|--------------|
+ | Dr. Lease liability                    |X            |              |
+ | Dr. Accumulated depreciation           |X            |              |
+ | Dr. Gain (loss) on lease modification  |X            |              |
+ | Cr. Lease asset                        |             | X            |
+ | Cr. Gain (loss) on lease modification  |             | X            |
 
 If the lease book is classified as a deferred rent book, the entry will
 write off the balance of the deferred rent prior to the termination to
 the gain or loss account:
 
-  Transaction                             Debit (Dr.)   Credit (Cr.)
-  --------------------------------------- ------------- --------------
-  Dr. Deferred rent                       X             
-  Cr. Gain (loss) on lease modification                 X
-  Cr. Deferred rent                                     X
-  Dr. Gain (loss) on lease modification   X             
+ | Transaction                            |Debit (Dr.)   | Credit (Cr.) | 
+ | ---------------------------------------|------------- |--------------|
+ | Dr. Deferred rent                      | X            |              |
+ | Cr. Gain (loss) on lease modification  |              | X            |
+ | Cr. Deferred rent                      |              | X            |
+ | Dr. Gain (loss) on lease modification  | X            |              |
 
 If the lease book is connected to a fixed asset, the right-of-use asset
 is accounted for in Fixed assets, including early terminations. Asset
 leasing will produce the journal entry to write-off the lease liability:
 
-  Transaction                             Debit (Dr.)   Credit (Cr.)
-  --------------------------------------- ------------- --------------
-  Dr. Lease liability                     X             
-  Cr. Gain (loss) on lease modification                 X
+ | Transaction                            | Debit (Dr.)  | Credit (Cr.)  |
+ | ---------------------------------------| -------------| --------------|
+ | Dr. Lease liability                    | X            |               |
+ | Cr. Gain (loss) on lease modification  |              | X             |
 
 To properly dispose of the right-of-use asset, see
 <https://docs.microsoft.com/en-us/dynamics365/finance/fixed-assets/dispose-of-a-fixed-asset-as-scrap>
@@ -145,27 +145,27 @@ Payment schedule lines tabs for the lease that is used in this example.
 
 General tab
 
-  Field                        Value
-  ---------------------------- ------------------
-  Fair value of the asset      600,000
-  Currency                     USD
-  Initial direct costs         1,000
-  Incremental borrowing rate   7%
-  Compounding interval         Annually
-  Asset useful life (months)   600
-  Annuity type                 Ordinary annuity
-  Commencement date            1/1/2019
+ | Field                       | Value
+ | ----------------------------| ------------------
+ | Fair value of the asset     | 600,000
+ | Currency                    | USD
+ | Initial direct costs        | 1,000
+ | Incremental borrowing rate  | 7%
+ | Compounding interval        | Annually
+ | Asset useful life (months)  | 600
+ | Annuity type                | Ordinary annuity
+ | Commencement date           | 1/1/2019
 
 Payment schedule lines tab
 
-  Field               Value
-  ------------------- ------------
-  Start date          1/1/2019
-  Period interval     Monthly
-  Periods             120
-  End date            12/31/2028
-  Payment frequency   Annually
-  Payment amount      10,000
+ | Field              | Value
+ | -------------------| ------------
+ | Start date         | 1/1/2019
+ | Period interval    | Monthly
+ | Periods            | 120
+ | End date           | 12/31/2028
+ | Payment frequency  | Annually
+ | Payment amount     | 10,000
 
 Steps
 
@@ -205,12 +205,12 @@ the lease. You must now terminate the lease.
 8.  Click the Lease ID to view the lease termination lines displaying
     the carrying values of the lease:
 
-  Field                                                   Value
-  ------------------------------------------------------- -------------
-  Carrying balance of liability in transaction currency   \$53,892.89
-  Right-of-use asset in transaction currency              \$71,235.81
-  Accumulated depreciation in transaction currency        \$16,642.92
-  Gain (loss) in transaction currency                     \$-700.00
+ | Field                                                  | Value
+ | -------------------------------------------------------| -------------
+ | Carrying balance of liability in transaction currency  | \$53,892.89
+ | Right-of-use asset in transaction currency             | \$71,235.81
+ | Accumulated depreciation in transaction currency       | \$16,642.92
+ | Gain (loss) in transaction currency                    | \$-700.00
 
 9.  To post the termination journal entry, select the lease from the
     **Lease terminations** form and click **Terminate**
@@ -221,12 +221,12 @@ the lease. You must now terminate the lease.
     it, go to the asset's leasing journal in the lease book. The entry
     would appear as shown below:
 
-  Transaction                             Debit (Dr.)   Credit (Cr.)
-  --------------------------------------- ------------- --------------
-  Dr. Lease liability                     53,892.89     
-  Dr. Accumulated depreciation            16,642.92     
-  Dr. Gain (loss) on lease modification   700.00        
-  Cr. Lease asset                                       71,235.81
+ | Transaction                            | Debit (Dr.)  | Credit (Cr.)
+ | ---------------------------------------| -------------| --------------
+ | Dr. Lease liability                    | 53,892.89    | 
+ | Dr. Accumulated depreciation           | 16,642.92    | 
+ | Dr. Gain (loss) on lease modification  | 700.00       | 
+ | Cr. Lease asset                        |              | 71,235.81
 
 12. To view the net effect of the termination, where the right-of-use
     asset and lease liability will be 0, go to the liability and asset
