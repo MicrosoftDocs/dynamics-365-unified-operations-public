@@ -84,7 +84,7 @@ To install the Inventory Visibility Add-in, do the following:
 
 ### Get a security service token
 
-Find your app's `clientId` and `clientSecret` from azure portal. Then get `aadToken` using following request:
+Find your app's `clientId` and `clientSecret` from Azure portal, and then get `aadToken` using following request:
 
 - url = `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
 - method = `GET`
