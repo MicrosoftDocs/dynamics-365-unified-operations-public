@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Optimizing data migration for Finance and Operations apps
-description: The article provides an overview of how to optimize data migration for Finance and Operations apps.
+title: Optimize data migration for Finance and Operations apps
+description: The topic provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
 author: skaue-ms
 manager: AnnBe
 ms.date: 01/13/2021
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+# ms.search.form: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,163 +27,171 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Optimizing data migration for Finance and Operations apps
+# Optimize data migration for Finance and Operations apps
 
 [!include [banner](../includes/banner.md)]
 
-Data migration is a key success factor in almost every implementation. One of the main concerns some customers have is the speed in which the data can be migrated. This is especially true if there are vast amounts of data and a small cutover window. The [Data Migration Framework](../data-entities/data-entities-data-packages.md) is also used for moving data as part of business requirements and operations.
+Data migration is a key success factor in almost every implementation. A primary concern of some customers is the speed that data can be migrated at, especially if there are vast amounts of data and a small cutover window. The [Data migration framework](../data-entities/data-entities-data-packages.md) is also used to move data as part of business requirements and operations.
 
-The information below represents a set of steps and actions that can be taken in order to optimize the performance of data migration. 
+The information in this topic represents a set of steps and actions that you can use to optimize the performance of data migration.
 
 > [!NOTE]
-> Testing results on a Tier-1 environment should not be compared or extrapolated to performance on a Tier-2+ sandbox environment.
+> Testing results in a Tier-1 environment should not be compared or extrapolated to performance in a Tier-2 or higher sandbox environment.
 
-The standard entities have not all been optimized for data migration. Some have been optimized for OData integration and if the required entity cannot be optimized to meet the performance requirements, it is recommended that [a new optimized entity is created](../data-entities/build-consuming-data-entities.md). A developer can accelerate this process by duplicating an existing entity.
+Not all standard entities have been optimized for data migration. Some entities have been optimized for integration with Open Data Protocol (OData), and if a required entity can't be optimized to meet the performance requirements, we recommend that you [create a new optimized entity](../data-entities/build-consuming-data-entities.md). A developer can accelerate this process by duplicating an existing entity.
 
-Begin the optimization phase by using a subset of the data. For example, if it is necessary to import a million records, consider starting with 1,000 records, and then increasing to 10,000 and then 100,000.
+Begin the optimization phase by using a subset of the data. For example, if you must import one million records, consider starting with 1,000 records, then increase the number to 10,000 records, and then increase it to 100,000 records.
 
-Once you have identified the entities you will use, then you will want to go through the following sections to explore opportunities for optimization. 
+After you've identified the entities that you will use, you should go through the following sections to explore opportunities for optimization.
 
-### Disable change tracking
+## Disable change tracking
 
-Change tracking can be [enabled and disabled](../data-entities/entity-change-track.md) from the list of entities. 
+You can [enable and disable change tracking](../data-entities/entity-change-track.md) from the list of entities.
 
-Data management > Data entities > Change tracking > Disable Change Tracking
+1. In the **Data management** workspace, select the **Data entities** tile.
+2. On the **Target entities** page, select the entity in the grid, and then, on the Action Pane, on the **Change tracking** tab, select **Disable Change Tracking**.
 
-### Enable set-based processing
+## Enable set-based processing
 
-Verify that the entity supports set-based processing from the list of entities. 
+Follow these steps to verify that an entity supports set-based processing.
 
-Data management > Data entities > Set-based processing (column in grid)
+1. In the **Data management** workspace, select the **Data entities** tile.
+2. On the **Target entities** page, find the entity in the grid, and review the value in the **Set-based processing** column.
 
-See example for [how it can be done with General Journal entity](../data-entities/tips-tricks-import-general-journal-entity.md). Not all entities support set-based processing and you may receive a message such as "Customer definitions" (CustCustomerBaseEntity).  If you attempt to enable it and save, you will see the warning "Set operations not supported for 'Customer definitions' entity".
+For an example that shows how set-based processing can be enabled for the **General Journal** entity, see [Best practices for importing vouchers by using the General journal entity](../data-entities/tips-tricks-import-general-journal-entity.md). Not all entities support set-based processing. For example, if you try to enable support set-based processing for the **Customer definitions** (**CustCustomerBaseEntity**) entity and save your change, you will receive the following warning message:
 
-If it is necessary to create an entity that allows set-based processing, some key considerations are:
+> Set operations not supported for 'Customer definitions' entity.
 
-* The data sources cannot be read-only.
-* The parameter on the data entity ValidTimeStateEnabled must be set to **No**.
-* All data sources must have TableType set to **Regular**.
-* The parameter of QueryType on the Metadata node cannot be set to **Union**.
-* The main data source cannot prevent saving data across companies; however, embedded data sources allow it.
-* The main data source cannot prevent saving data across partitions; however, embedded data sources allow it.
+Here are some important considerations if you must create an entity that allows for set-based processing:
 
-### Create data migration batch group
+* The data sources can't be read-only.
+* The parameter on the data entity **ValidTimeStateEnabled** must be set to **No**.
+* All data sources must have **TableType** set to **Regular**.
+* The parameter of **QueryType** of the **Metadata** node can't be set to **Union**.
+* The main data source can't prevent data from being saved across companies. However, embedded data sources allow it.
+* The main data source can't prevent data from being saved across partitions. However, embedded data sources allow it.
 
-During cutover, execute the data migration while there is little to no other activity. It can help to configure and use a batch group with all or at least most compute nodes assigned.
+## Create a data migration batch group
 
-System administration > Setup > Batch group
+During cutover, run the data migration while there is little or no other activity. It can be helpful to configure and use a batch group where most or all compute nodes are assigned.
 
-### Priority-based batch scheduling
+You can configure a batch group on the **Batch group** page (**System administration \> Setup \> Batch group**).
 
-In Platform update 31, we introduced a new feature that will optimize how batch jobs are executed. Consider enabling [priority-based batch scheduling](priority-based-batch-scheduling.md) if contention is identified in the batch framework.
+## Enable priority-based batch scheduling
 
-### Maximum batch threads
+In Platform update 31, the new [priority-based batch scheduling](priority-based-batch-scheduling.md) feature optimizes how batch jobs are run. If contention is identified in the batch framework, consider enabling priority-based batch scheduling.
 
-You can configure the maximum number of batch threads, per AOS, to better utilize parallelism and multithreading. This value should be changed cautiously. If the number is too high, it can have negative performance implications. The default value is currently 4. If necessary, the value can be changed to 8. Do not configured the value above 8 without significant performance testing.
+## Configure the maximum number of batch threads
 
-System administration > Setup > Server configuration
+To better use parallelism and multithreading, you can configure the maximum number of batch threads per instance of Application Object Server (AOS) by setting the **Maximum batch threads** field on the **Server configuration** page (**System administration \> Setup \> Server configuration**). Be careful about changing the value of this field. A value that is too high can have negative performance implications. Currently, the default value is **4**. You can change the value to **8** as you require. However, you should not set the field to a value that is more than 8 unless you do significant performance testing.
 
-### Import in batch
+## Import in batch mode
 
-Whenever running an import job, ensure that it is run in batch. Otherwise it will be run using a single thread, which will prevent the system from using the most of these optimization configurations.
+Whenever you run an import job, make sure that it's run in batch mode. Otherwise, a single thread will be used to run the job. In this case, the system won't be able to take full advantage of these optimization configurations.
 
-### Clean staging tables
+## Clean staging tables
 
-It is recommended to clean up the staging tables. This optimization can be achieved by scheduling the [Job history cleanup job](batch-history-cleanup.md) (available in Platform update 29 and later). After enabling the feature "Execution history cleanup" via Feature management, you will be able to access it from:
+We recommend that you clean up the staging tables. In Platform update 29 and later, you can achieve this optimization by scheduling the [Job history cleanup job](batch-history-cleanup.md). To schedule this job, select the **Job history cleanup** tile in the **Data management** workspace.
 
-Data management > Job history cleanup
+> [NOTE]
+> You must first turn on the **Execution history cleanup** feature in the **Feature management** workspace.
 
-### Defragmentation of indexes
+## Defragment indexes
 
-Review the [configuration of the index defragmentation job](batch-job-sql-defragmentation.md). It is recommended that this job runs daily, though not at the same time a data migration job is executing. Review the parameters to ensure the job captures the tables and indexes that are being changed via the data migration job. 
+Review the [configuration of the index defragmentation job](batch-job-sql-defragmentation.md). We recommend that this job be run daily, but not at the same that a data migration job is being run. Review the parameters to make sure that the job captures the tables and indexes that are being changed via the data migration job.
 
-### Update statistics
+## Update statistics
 
-Before running a data migration job with large volume of data, consider updating the statistics across the associated tables. This suggestion specifically applies to sandbox environments, as this optimization is automatically taken care of in production environments. You can run [update statistics for a specific table from LCS](../lifecycle-services/querycookbook.md), or in a sandbox environment use sp_updatestats stored procedure through direct SQL.
+Before you run a data migration job that involves a large volume of data, consider updating the statistics across the associated tables. This optimization applies specifically to sandbox environments, because it's handled automatically in production environments. You can [update statistics for a specific table from LCS](../lifecycle-services/querycookbook.md). Alternatively, in a sandbox environment, you can use the **sp\_updatestats** stored procedure through direct SQL.
 
-### Clean the data
+## Clean the data
 
-The time spent on validations and reporting errors will add to the total time spent doing the migration. Consider this when importing a high volume of invalid or inconsistent data. It is better trying to resolve and reduce errors related to data quality. This way you avoid unnecessary executions of validation and error handling. 
+The time that is spent on validations and error reporting will increase the total time of the migration. Consider this fact when you import a high volume of invalid or inconsistent data. We recommend that you try to fix and reduce errors that are related to data quality. In this way, you help prevent unnecessary executions of validation and error handling.
 
-### Configurations to test during data migration test runs
+## Configurations to test during test runs of data migration
 
-The following configurations can impact performance and therefore it is recommended that these changes are tested with different values suitable for your scenario.
+The following configurations can affect performance. Therefore, we recommend that you test changes by using different values that are suitable for your scenario.
 
-#### Configure entity execution parameters
+### Configure entity execution parameters
 
-You can modify the execution parameters for all or specific entities here:
+Follow these steps to change the execution parameters for all entities or specific entities.
 
-Data management > Framework parameters > Entity settings > Configure entity execution parameters
+1. In the **Data management** workspace, select the **Framework parameters** tile.
+2. On the **Data import/export framework parameters** page, on the **Entity settings** tab, select **Configure entity execution parameters**.
+3. On the **Entity import execution parameters** page, set the **Import threshold record count** and **Import task count** fields as appropriate for the desired entities.
 
-##### Import threshold record count
+#### Import threshold record count
 
-This value configures the number of records that will be split and assigned to separate tasks.
+This field defines the number of records that will be split and assigned to separate tasks.
 
-##### Import task count
+#### Import task count
 
-This value configures how many threads will be used for the data migration job for a specific entity. For example, consider if the maximum batch threads for each server is set to the value of 8. Then consider there are four servers assigned to the data migration batch group. This would mean the total maximum value for "Import task count" would be eight times four, which is the value of 32.
+This field defines the number of threads that will be used for the data migration job for a specific entity. For example, the **Maximum batch threads** field for each server is set to **8**, and four servers are assigned to the data migration batch group. In this case, the total maximum value of the **Import task count** field is **32** (= 8 × 4).
 
-If a data entity does not support multithreading, when you attempt to configure the entity, you will see an error message.
-Example: "Custom sequence is defined for the entity 'Customers V3', more than one task is not supported."
+If a data entity doesn't support multithreading, you receive an error message when you try to configure the entity. Here is an example:
 
-#### Validations
+> Custom sequence is defined for the entity 'Customers V3', more than one task is not supported.
 
-Validation logic for record inserts or updates may have been incorporated into the system, and/or there may be validation on individual fields. If the data migration is mature enough and this validation can be disabled, this option can significantly reduce the time used for importing. 
-You will find these settings on each entity under: 
+### Validations
 
-Data management > Data entities > Entity structure
+Validation logic for record insertions or updates might have been incorporated into the system, or there might be validation of individual fields. If the data migration is mature enough, the time that is spent on imports can be significantly reduced by disabling this validation, if it can be disabled.
 
-##### Run business validations
+Follow these steps to change the settings for each entity.
 
-If this flag is enabled, the system will execute any logic written into the validateWrite() method on the table, and related event handlers.
+1. In the **Data management** workspace, select the **Data entities** tile.
+2. On the **Target entities** page, select the entity in the grid, and then, on the Action Pane, select **Entity structure**.
+3. On the **Entity structure** page, set the **Run business validations** and **Run business logic in insert or update method** fields as appropriate.
 
-##### Run business logic in insert or update method
+#### Run business validations
 
-If this flag is enabled, the system will execute any logic written into the insert() or update() method on the table, and related event handlers.
+If this check box is selected, the system will run any logic that is written into the **validateWrite()** method on the table. It will also run any related event handlers.
 
-##### Call validateField method on target
+#### Run business logic in insert or update method
 
-Field validation can be found under:
+If this check box is selected, the system will run any logic that is written into the **insert()** or **update()** method on the table. It will also run any related event handlers.
 
-Data management > Data entities > Modify target mapping
+#### Call the validateField method on the target
 
-If this option is enabled, the validateField(FieldId p1) method will be called for the specific field.
+Follow these steps to run field validation.
 
-#### Data migration performance optimization process
+1. In the **Data management** workspace, select the **Data entities** tile.
+2. On the **Target entities** page, select the entity in the grid, and then, on the Action Pane, select **Modify target mapping**.
+3. On the **Map staging to target** page, select the **Call validate Field method** check box for the field that validation should be run for. The **validateField(FieldId p1)** method will then be called for that field.
 
-Here are some general recommendations how to approach data migration performance optimization.
+### Recommendations for optimizing data migration performance
 
-* Do break up large files into smaller chunks. The reason for this is that it allows time for the SQL optimizer to determine if a new query plan will be optimal.
-* Performance should be tested in an appropriate Tier-2+ environment.
-* Performance should be tested in a mock cutover prior to go-live. 
+Here are some general recommendations about the approach that you should use to optimize the performance of data migration:
 
-Data migration performance testing is an iterative process. It is suggested that information regarding each test is collected and compared to determine the optimal configuration for a specific entity. You will want to collect and verify some of the following settings:
+* Break up large files into smaller chunks. This approach gives the SQL optimizer time to determine whether a new query plan will be optimal.
+* Test performance in an appropriate Tier-2 or higher environment.
+* Test performance in a mock cutover before go-live.
 
-* Batch group used
-* Number of batch servers assigned to each batch group
-* Maximum batch threads to each batch server
+Testing of data migration performance is an iterative process. We recommend that you collect and compare information about each test to determine the optimal configuration for a specific entity. You should collect and verify some of the following settings:
 
-Example of information to collect for each entity:
+* The batch group that is used
+* The number of batch servers that are assigned to each batch group
+* The maximum number of batch threads per batch server
 
-| Entity | Number of Records | Source Format | Change Tracking Disabled | Set-based Processing | Import Threshold Record Count | Import Task Count | Run Business Validation | Run Business Logic In Insert Or Update Method | Call Validate Field Method | Required Performance | Actual Performance |
-|------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
-| (Name of entity being tested) | (Number of records being imported) | (Source format of data to be imported) | (Yes/No) | (Yes/No) | (Number of records) | (Number of tasks) | (Yes/No) | (Yes/No) | (Yes/No) (Potential field list) | (Time required for import to complete in order to achieve cutover window) | (Actual time taken to import records) |
+Here is an example of the information that you might collect for each entity.
 
-There are more areas where performance can be optimized, for example analyzing the specific queries and query plans, however those processes are covered in other articles and are not intended for this article.
+| Information | Description |
+|---|---|
+| Entity | The name of the entity that is being tested |
+| Number of records | The number of records that are being imported |
+| Source format | The source format of the data that is being imported |
+| Change tracking disabled | Yes/No |
+| Set-based processing | Yes/No |
+| Import threshold record count | The number of records |
+| Import task count | The number of tasks |
+| Run business validations | Yes/No |
+| Run business logic in insert or update method | Yes/No |
+| Call validate Field method | Yes/No (potential field list) |
+| Required performance | The amount of time that the import must be completed within to achieve the cutover window |
+| Actual performance | The actual amount of time that was required to import records |
 
-For more information about performance troubleshooting and optimization, see the following content:
+There are more areas where performance can be optimized. For example, you can analyze the specific queries and query plans. However, those processes are covered in other topics.
+
+For more information about performance troubleshooting and optimization, see the following topics:
 
 * [Performance troubleshooting using tools in Lifecycle Services (LCS)](../lifecycle-services/performancetroubleshooting.md)
 * [Query cookbook](../lifecycle-services/querycookbook.md)
-
-
-
-
-
-
-
-
-
-
-
-
