@@ -52,7 +52,7 @@ When additional users are added to the business partner organization by the admi
 > [!NOTE]
 > In most cases, the respective property values of all customer records in the hierarchy should match. For example, all the users of the business partner should get similar prices for products and so their price group and associated configurations should be the same. However, the system does not enforce these consistencies so it is up to the relevant headquarters users to ensure that the field values and configurations for all customers in the hierarchy are the same.
 
-Headquarters users can see field values for all customer records in the hierarchy in a side-by-side view. To do this, choose to the relevant fields of the customer tab by selecting the tab name from the drop-down list. Users can directly view and edit the property values directly from this view. Alternatively, if you want to apply all the values from the administrator customer record to all the user customer records, select **Override** on the customer hierarchy details page.
+Headquarters users can see field values for all customer records in the hierarchy in a side-by-side view. To do this, choose to the relevant fields of the customer tab by selecting the tab name from the drop-down list. Users can directly view and edit the property values directly from this view. Alternatively, if you want to apply all the values from the administrator customer record to all the user customer records, select **Override** on the customer hierarchy details.
 
 <!-- link to create partner user topic at top of this topic-->
 
