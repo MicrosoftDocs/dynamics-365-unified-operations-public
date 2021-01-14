@@ -2,7 +2,7 @@
 # required metadata
 
 title: Schedule work creation during wave
-description: This topic describes how to set up and use the Schedule work creation wave processing method
+description: This topic describes how to set up and use the Schedule work creation wave processing method.
 author: perlynne
 manager: mirzaab
 ms.date: 01/14/2021
@@ -64,17 +64,17 @@ To take advantage of a parallel asynchronous method to create warehouse work, yo
 
 Start by creating the new wave step method and enabling it for parallel asynchronous task processing.
 
-1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
+1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
 
 1. Select **Regenerate method** and note that *WHSScheduleWorkCreationWaveStepMethod* has been added to the list of wave process methods you can use in your shipping wave templates.
 
-1. Select the record with the **Method name** *WHSScheduleWorkCreationWaveStepMethod* and select**Task configuration**.
+1. Select the record with the **Method name** *WHSScheduleWorkCreationWaveStepMethod* and select **Task configuration**.
 
-1. Select **New** on the Action Pane to add a new row to the grid and make the following settings for it:
+1. To add a new row to the grid, select **New** on the Action Pane and use the following settings:
 
     - **Warehouse** - Select the warehouse you will use to schedule work creation processing.
 
-    - **Maximum number of batch tasks** - Specify a maximum number of batch tasks. In most cases, this value should be somewhere in the range from 8-16 but we recommend that you experiment with the optimal setting based on your scenarios.
+    - **Maximum number of batch tasks** - Specify a maximum number of batch tasks. In most cases, this value should be in the range from 8-16, however we recommend that you experiment with the optimal setting based on your scenarios.
 
     - **Wave processing batch group** - Select a dedicated wave processing batch group to optimize your batch queue processing.
 
@@ -92,15 +92,15 @@ Now you are ready to update an existing wave template (or create a new one) to u
 
 ## Set wave task processing threshold data
 
-The system will create default wave task processing threshold data the first time a wave process runs using any task-based processing. The data is used to control when wave processing will run asynchronously and task-based, which enables it to process and create work in parallel.
+The system will create default wave task processing threshold data the first time a wave process runs using any task-based processing. The data is used to control when wave processing will run asynchronously and be task-based, which enables it to process and create work in parallel.
 
-The default data will initially use a threshold value of 15 for the minimum number of load lines (MINIMUMWAVELOADLINES). This means that when the system processes a wave with more than 15 loads lines, it will use asynchronous task processing. You can manually insert/update this data in the *WHSWaveTaskProcessingThresholdParameters* table in your test environments, but if you need to change this setting in a production environment, you must contact Microsoft Support to request the update.
+The default data will initially use a threshold value of 15 for the minimum number of load lines (MINIMUMWAVELOADLINES). This means that when the system processes a wave with more than 15 loads lines, it will use asynchronous task processing. You can manually insert/update this data in the **WHSWaveTaskProcessingThresholdParameters** table in your test environments, but if you need to change this setting in a production environment, you must contact Microsoft Support to request the update.
 
 ## Work with the feature
 
 When the *Schedule work creation* functionality is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature.
 
-The following flowchart shows whether and how planned work is created during wave processing.
+The following flowchart shows how planned work is created during wave processing.
 
 ![Schedule work creation](media/schedule-work-creation-process.png)
 
@@ -109,11 +109,11 @@ The following flowchart shows whether and how planned work is created during wav
 The **Planned work details** page (**Warehouse management \> Work \> Planned work details**) shows information about the planned work, which is initially created during wave processing. The following **Process status** values are available:
 
 - **Queued** - The planned work is waiting to be used to create work.
-- **Completed** - The planned work has been used to create the work.
-- **Failed** – The wave processing has failed. Note that the planned work can be in a **Failed** state with or without related actual work. When the actual work creation process fails the actual work remains in status *Cancelled*.
+- **Completed** - The planned work has been used to create work.
+- **Failed** – The wave processing has failed. Note that the planned work can be in a **Failed** state with or without related actual work. When the actual work creation process fails, the actual work remains in status *Cancelled*.
 
 ### Batch job for the work creation process
 
-To view the batch jobs for processing waves, select **Batch jobs** on the Action Pane of the **All waves** page.
+To view the batch jobs for processing waves, select **Batch jobs** on the Action Pane on the **All waves** page.
 
 From here, you can view all the batch task details for each of the batch job IDs.
