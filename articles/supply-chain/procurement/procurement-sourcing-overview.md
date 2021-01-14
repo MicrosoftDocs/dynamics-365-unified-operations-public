@@ -18,7 +18,6 @@ ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable,
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58021
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b

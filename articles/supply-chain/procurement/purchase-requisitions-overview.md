@@ -18,7 +18,6 @@ ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetail
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab

@@ -17,7 +17,6 @@ ms.search.form:  ReqDemPlanCreateForecastDialog
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca

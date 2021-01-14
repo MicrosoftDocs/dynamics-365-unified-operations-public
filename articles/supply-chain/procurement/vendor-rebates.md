@@ -17,7 +17,6 @@ ms.search.form:  TAMVendRebateAgreement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: no wiki topic
 ms.search.region: Global

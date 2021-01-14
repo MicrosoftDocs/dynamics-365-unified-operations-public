@@ -16,7 +16,6 @@ ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanni
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-#ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

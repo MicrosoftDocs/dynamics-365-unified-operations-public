@@ -19,7 +19,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-#ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 19171
