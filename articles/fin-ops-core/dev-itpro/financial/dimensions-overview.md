@@ -56,9 +56,12 @@ With the November 2016 release, modifying the **DimensionCombinationEntity** has
 
     ![financial dimensions for odata](media/financial-dimensions-odata.png).
 
-3. Compile the project, and then synchronize it with the database. [!NOTE] You must keep the extension name "DimensionIntegration" for the project to work properly.
+3. Compile the project, and then synchronize it with the database. 
 
-    ![8](media/8-300x260.png)
+    > [!NOTE] 
+    > You must keep the extension name "DimensionIntegration" for the project to work properly.
+
+    ![Menu options to build and synchronize](media/8-300x260.png)
 
 4. Your customization is now completed. You can test it in SQL using the following statement.
 
