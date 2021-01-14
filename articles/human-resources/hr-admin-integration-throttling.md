@@ -36,7 +36,6 @@ Priority-based throttling prevents the over-utilization of resources. It preserv
 
 - Integrations can be prioritized based on business-critical needs. Throttling honors these priorities. 
 - For OData and custom service requests, a 429 error "Too many requests", will occur. 
-- You can query throttling events on the **Lifecycle Services Monitoring** page.  
 
 Priority-based throttling lets you set priorities for OData and custom service-based integrations, depending on the business-critical need of integrations.
 
@@ -58,7 +57,7 @@ After you register your service in Azure AD and in your Finance and Operations a
 > [!NOTE]
 > You must be assigned the System administrator or Integration priority manager role to complete the set up. 
 
-1. In Finance and Operations apps, go to **System administration** > **Setup** > **Throttling priority mapping**. 
+1. In the search bar at the top of the screen, enter **Throttling priority mapping**. 
 2. Select **New**. 
 3. In the **Authentication type** field, select **User** or **Azure AD application** based on your integration scenario.
 4. If **Azure AD application type** is selected, in the **Client ID** field select the application that you registered in the Azure Active Directory application.
