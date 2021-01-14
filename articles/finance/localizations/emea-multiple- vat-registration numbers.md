@@ -1,15 +1,49 @@
+---
+# required metadata
+
+title: Multiple VAT registration numbers - Preview
+description: This topic provides information about the functionality of Multiple VAT registration numbers.
+Please note that all settings that are described in this document are under the scope of the tax service preview. The content is subjected to change later.
+author: epodkolz
+manager: AnnBe
+ms.date:
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region:
+# ms.search.industry: 
+ms.author: epodkolz
+ms.search.validFrom:
+ms.dyn365.ops.version: AX 10.0.18
+---
+
 # Multiple VAT registration numbers – Private preview
+
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the functionality of Multiple VAT registration numbers.
 Please note that all settings that are described in this document are under the scope of the tax service private preview. The content is subjected to change later.
 This functionality provides a possibility to set up tax registration numbers of a legal entity and its customers and vendors in different EU Member States and post and settle taxes per registration in the country.
+
 The main steps to configure and use this functionality are as following:
-•	The Registration type for VAT registration must be assigned to the VAT ID registration category.
-•	Legal entity VAT registration as long as its Customer and Vendors VAT registration must be set up in the Registration IDs.
-•	The Legal entity’s VAT registration number must be specified at the Sales tax authority, and further in the Settlement period. Thus, the sales tax code(s) assigned to the settlement period will identify the Legal entity’s VAT registration.
-•	The Customer/Vendor VAT registration numbers for transactions are identified by the Tax service matrix.
-•	The identified tax registration numbers are available in the sales tax transactions.
-•	The sales tax settlement procedure uses the country/region code of the registration ID. 
+ - The Registration type for VAT registration must be assigned to the VAT ID registration category.
+ - Legal entity VAT registration as long as its Customer and Vendors VAT registration must be set up in the Registration IDs.
+ - The Legal entity’s VAT registration number must be specified at the Sales tax authority, and further in the Settlement period. Thus, the sales tax code(s) assigned to the settlement period will identify the Legal entity’s VAT registration.
+ - The Customer/Vendor VAT registration numbers for transactions are identified by the Tax service matrix.
+ - The identified tax registration numbers are available in the sales tax transactions.
+ - The sales tax settlement procedure uses the country/region code of the registration ID. 
 
 ## How to enable feature
 
@@ -32,24 +66,22 @@ VAT IDs must be created using the Registration IDs framework, see https://docs.m
 
 On the **Registration types** page (Organization administration > Global address book > Registration types > Registration types) create Registration type, e.g. VAT ID
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 170038.png" style="zoom:50%;" />
+![Tax-Service-MultVATID-Registration-type-01](./media/Tax-Service-MultVATID-Registration-type-01.png)
 
 Create as many lines as the legal entity and its counterparties have registrations in Country/regions:
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 170616.png" style="zoom:50%;" />
-
-
+![Tax-Service-MultVATID-Registration-type-02](./media/Tax-Service-MultVATID-Registration-type-02.png)
 
 On the **Registration categories** page (Organization administration > Global address book > Registration types > Registration categories) assign the created registration types to the VAT ID registration category:
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 170649.png" style="zoom:50%;" />
+![Tax-Service-MultVATID-Registration-categories-03](./media/Tax-Service-MultVATID-Registration-categories-03.png)
+
 
 ### Assign VAT IDs to legal entity and customer/vendor
 
 On the **Legal entities** page (Organization administration > Organizations > Legal entities), click **Registration IDs** button and assign VAT ID registration to the respective address where the legal entity has VAT registration:
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 170826.png" style="zoom:50%;" />
-
+![Tax-Service-MultVATID-Registration-Legal-entity-04](./media/Tax-Service-MultVATID-Registration-Legal-entity-04.png)
 
 
 For customers/vendors use the Registration IDs to create their VAT registrations.
@@ -61,16 +93,14 @@ To get separate number sequences for documents (packing slips, invoices), create
 
 Assign the **Number sequence group** to the respective VAT ID of the legal entity (Registration ID fasttab, tab General):
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 200647.png" style="zoom:80%;" />
-
+![Tax-Service-MultVATID-Number-sequence-group-05](./media/Tax-Service-MultVATID-Number-sequence-group-05.png)
 
 
 Set up necessary **Number sequences codes** for the supported references, e.g. Sales invoice, Sales invoice voucher, Packing slip, Packing slip voucher.
 
 This Number sequence group code will be defaulted to the Sales order/Purchase order header once the legal entity's tax registration is determined. The documents will be numbered as according to the **Number sequences** assigned to the **References**:
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 200858.png" style="zoom:50%;" />
-
+![Tax-Service-MultVATID-Number-sequence-group-06](./media/Tax-Service-MultVATID-Number-sequence-group-06.png)
 
 
 NOTE. In the Preview, the defaulting logic is supported for Sales order and Purchase order only.
@@ -80,7 +110,7 @@ NOTE. In the Preview, the defaulting logic is supported for Sales order and Purc
 In the **Sales tax authorities** page (Tax > Indirect taxes > Sales tax > Sales tax authorities) create as many tax authorities as legal entity need to report to.
 In the new **Tax registration** tab add the respective VAT registration number:
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 170901.png" style="zoom:50%;" />
+![Tax-Service-MultVATID-Sales-tax-authorities-07](./media/Tax-Service-MultVATID-Sales-tax-authorities-07.png)
 
 NOTE. The **Tax registration number** lookup will have only registration numbers of the legal entity with VAT ID registration category. The list of registration IDs is available for the corresponding country/region of the tax authority. 
 NOTE. The Date effectiveness is not supported for the assigned registration IDs. In case the number is changed/expired in the Legal entity Registration IDs, user need to update the tax registration in the tax authority manually. 
@@ -89,15 +119,13 @@ NOTE. The Date effectiveness is not supported for the assigned registration IDs.
 
 Create **Sales tax settlement periods** and in the **Tax registration number** filed make sure the corresponding legal entity’s VAT ID is assigned:
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 170931.png" style="zoom:50%;" />
-
-
+![Tax-Service-MultVATID-Sales-tax-settlement-periods-08](./media/Tax-Service-MultVATID-Sales-tax-settlement-periods-08.png)
 
 ### Set up customer/vendor tax registration number in Tax feature setup
 
 In the **Microsoft Dynamics 365 Regulatory Service** for the Tax feature (see how to create a **Tax feature** in document **Get started with tax service – Private Preview**), make sure the registration IDs for the counterparties are defined on the **Customer Tax Registration Number Applicability** and **Vendor Tax Registration Applicability** tabs respectively.
 
- <img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 171033.png" style="zoom:50%;" />
+![Tax-Service-MultVATID-Tax-feature-setup-09](./media/Tax-Service-MultVATID-Tax-feature-setup-09.png)
 
 NOTE. During sales tax calculation and documents posting, Tax service will return a value of Customer/Vendor tax registration number to Dynamics 365 Finance and update the **Tax exempt number** field of the Sales/Purchase order. In case the corresponding value is not set up in the Registration IDs of Customer/Vendor (see how to set up the registration IDs in **Assign VAT IDs to legal entity and customer/vendor**), the prompt message will pop out and registration ID will be left blank:
 “Customer tax registration ‘xxx’ is not found in the customer’s Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup.”
@@ -109,7 +137,7 @@ Make sure the **Enable tax service** option is switched ON in the **Tax service 
 When the lines of a sales or purchase order are created with sales tax codes that are assigned to different sales tax settlement periods (sales tax authorities), and thus, Tax registrations, this results in multiple registration IDs for the order. To control the system behavior for such scenario, a parameter **Check Tax registration number in document lines** is added on the **AP/AR parameter** page. In the Private Preview only *Error* option is available.
 In the Private Preview, the scenario when Sales and/or Purchase order has sales tax codes assigned to different registration IDs is not supported. During a sales tax calculation and documents posting an error message will be shown and further process will be terminated:
 
-<img src="C:\Users\epodkolz\Downloads\pict\Screenshot 2021-01-13 171101.png" style="zoom:50%;" />
+![Tax-Service-MultVATID-Order-processing-10](./media/Tax-Service-MultVATID-Order-processing-10.png)
 
 In the Message details the info about Item ID, Sales tax codes, Settlement periods, and Tax registration numbers identified for the order lines can be found.
 
