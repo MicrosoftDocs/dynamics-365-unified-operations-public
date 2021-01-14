@@ -18,7 +18,6 @@ ms.search.form: IntrastatToProdcom, InventProdComLineDetail, InventProdComLineWi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264804
 ms.search.region: Belgium

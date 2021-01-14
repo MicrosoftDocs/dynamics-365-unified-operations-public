@@ -17,7 +17,6 @@ ms.search.form: AssetRBSLFactorTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30271
 ms.search.region: France

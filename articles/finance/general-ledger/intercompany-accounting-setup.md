@@ -18,7 +18,6 @@ ms.search.form: LedgerInterCompany
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15761
 ms.assetid: 1362297b-7a51-4930-b822-2b204a2e3c37
