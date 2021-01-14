@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Onboard business partners 
-description: This topic describes how to add, edit, and delete partner users from B2B e-commerce sites.
+title: Manage business partner users on B2B e-commerce sites
+description: This topic describes how administrators can add, edit, and delete business partner users from B2B e-commerce sites.
 author: josaw1
 manager: AnnBe
-ms.date: 01/13/2021
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -26,96 +26,106 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Onboard business partners 
+# Manage business partner users on B2B e-commerce sites 
 
 [!include [banner](../../includes/banner.md)]
 
-B2B e-commerce websites require that an Organization need to register to become a business partner. Once they submit their registration details on the e-commerce site, they go through a qualification process to become a Business partner and only on successful qualification are they on-boarded as a Business partner. 
+This topic describes how administrators can add, edit, and delete business partner users from B2B e-commerce sites.
 
-Once the Organization is on-boarded as a Business partner, the user who initiates the request to become a Business partner is identified as an Admin user and he/she is provided with the privileges to onboard additional users as authorized users of the B2B e-commerce portal. These authorized users can place orders on behalf of the Business partner. The users of the Business partner should be able to see the Order details & history of the orders that they have created. The Admin user of the Business partner should be able to see the Order details & history of the orders across the Business partners users. The same is true for functions like request of documents like account statements, aged debtors listing report etc.
+Business-to-business (B2B) e-commerce websites require that organizations register to become business partners. Once an organization submits registration details to a B2B e-commerce site, it goes through a qualification process. Upon successful qualification, the organization is onboarded as a business partner. 
 
-The below section covers details on how Business partners are on-boarded to the D365 Commerce B2B website and how the Business partner organization is represented in Commerce headquarters.
+Once an organization is onboarded as a business partner, the organization user who initiates the request to become a business partner is identified as an administrator user who is provided with the privileges to onboard additional authorized users of the B2B e-commerce portal. These authorized users can then place orders on behalf of the business partner. Business partner users are able to see order details and history of orders that they have created. The business partner administrator is able to see the order details and history of all orders business partner users have created. The same is true for functions such as the request of documents like account statements and aged debtors listing reports.
 
-## Details
+<!--The below section covers details on how Business partners are on-boarded to the D365 Commerce B2B website and how the Business partner organization is represented in Commerce headquarters.-->
 
-### Enable the feature
+## Enable the B2B capabilities feature in Commerce headquarters
 
-1. Navigate to **Workspaces &gt; Feature Management**
-1. Select the **All** tab
-1. Filter on the Module field by **Retail and commerce**
-1. Enable the feature **Enable the use of B2B eCommerce capabilities**
+The **Enable the use of B2B eCommerce capabilities** feature in Commerce headquarters allows organizations to onboard business partners and define administrator users. This feature also allows administrators to create and manage business partner users and teams and assign specific roles to them, and allows business partner users to create order templates and use existing orders to reorder products.
 
-### Setup
+To enable the B2B capabilities feature in Commerce headquarters, follow these steps.
 
-1. Create a Number sequence from the following path **Headquarters setup \> Number sequences \> Number sequences**
-1. Attach the above created number sequence to **Customer hierarchy ID** from the following path **Headquarters setup \> Parameters \> Commerce shared parameters**
+1. Go to **Workspaces \> Feature Management**.
+1. Select the **All** tab.
+1. Filter on the **Module field** using the term "Retail and commerce".
+1. Find and enable the feature named **Enable the use of B2B eCommerce capabilities**.
 
-### Self-serve based on-boarding of business partner & setting up Admin user
+## Create a number sequence and add it to Commerce shared parameters
 
-1. Potential business partners can initiate the on-boarding process to the B2B e-commerce website by submitting an on-boarding request through the site. This can be done by clicking the link for on-boarding on the site. On clicking the link, the business partner can provide the details required for the on-boarding and clicking Sign-up. Refer screenshot below
-1. On submitting the request, the user should see a confirmation screen. Refer screen shot below:
-1. Execute the **P-0001** job from the path **Retail and Commerce IT \> Distribution Schedule** to pull all the business partner on-boarding request to headquarters
-1. After the P-0001 job successfully brings the on-boarding request into headquarters, execute the job **Synchronize customers and business partners from async mode** from the path **Retail and Commerce IT \> Customer.** On successful execution of this job, the on-boarding requests will be created as Prospects record in Commerce headquarters and the **Type ID** of such prospect records will be set to **B2B prospect**
-1. Open the prospects form from the path **Customers \> All prospects**
-1. Click on the prospect record that needs to be actioned to open the prospect details form
-1. Approve or Reject the on-boarding request by clicking on the tab **General \> Convert \> Approve / Reject**
-1. On clicking **Approve / Reject**, a confirmation dialog will pop-up that will allow a user to continue with the process or discontinue the process
-1. If the request is approved, the **Status** on the prospect record will be set to **Approved** and 2 new customer records are created in the system, one customer of the **Type Organization** for the Business partner organization and second customer of the **Type Person** for the requestor. A customer hierarchy record for the business partner is also created (Please refer to the Org modeling of B2B customer section in this document for more information)
-1. Execute the **1010 Customers** job from the path **Retail and Commerce IT \> Distribution Schedule** to push the newly created customers & customer hierarchy record to the Channel DB.
-1. An email will be triggered to the requestor's email address confirming that they have been approved or rejected to be a business partner
-1. If the request is approved and after the customer & customer hierarchy records are synchronized to the Channel DB, the requestor will be able to sign-in to the B2B e-commerce website using the email address that was provided at the time of submitting the request. During the first log-in, the requestor will be prompted to set a password for themselves.
+Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. For more information on number sequences, see [Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
-### On-boarding business partner users
+To create a number sequence and add it to Commerce shared parameters in Commerce headquarters, follow these steps.
 
-The Admin user of the business partner organization can on-board additional users from the organization to the B2B e-commerce website by following the steps below:
+1. Go to **Retail and Commerce \> Headquarters setup \> Number sequences \> Number sequences** and create a new number sequence.
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters** and add the new number sequence to the **Customer hierarchy ID** reference.
 
-1. Sign into the B2B e-commerce website
-1. Navigate to **My Account \> Organization users \> View details**
-1. Click on **Add a user**
-1. Fill in the required information and click **Save**
-1. The status of the newly added user will be set to **Pending**
-1. After the **P-0001** job and the **Synchronize customers and business partners from async mode** jobs are executed**,** the newly added user is also created as a customer of the Type Person in Commerce headquarters and the customer record is also associated to the relevant Business partners customer hierarchy record.
-1. An email is triggered to the users email address notifying that they have been added as a user of the Business partner organization and can now log-in to the B2B e-commerce website
-1. The **1010 Customer** job will sync the newly created customer to the Channel DB
-1. When the customer for the newly added user is synchronized to the Channel DB, the status of the user on the B2B e-commerce website is set to Active
-1. When the status of the newly created user is set to Active, the user will be able to log-in to the B2B e-commerce website using their email address. They will be prompted to set up their password on their first log-in
+## Set up the administrator user for a new business partner 
 
-### Editing user details
+Potential business partners can initiate the onboarding process to a B2B e-commerce website by submitting an onboarding request via a link on the B2B site. After selecting the link, the business partner can provide the details required for the onboarding and sign up. After submitting the request, the user will see a submission confirmation screen. If the submission is approved, the organization user who initiated the onboarding request will become the business partner administrator user.
 
-The details of a business partner user can be edited by the Admin user as per the below steps:
+To approve and set up a business partner administrator in Commerce headquarters, follow these steps.
 
-1. Sign into the B2B e-commerce website
-1. Navigate to **My Account \> Organization users \> View details**
-1.  Click on the **Edit** (pencil) button and make the required changes and click **Save**
-1.  After the **P-0001** job, **Synchronize customers and business partners from async mode** job and **the 1010 Customer job** is executed, the changes will be reflected
+1. Go to **Retail and Commerce IT \> Distribution Schedule**.
+1. Execute the **P-0001** job to pull all business partner onboarding requests into headquarters.
+1. After the P-0001 job runs successfully, go to **Retail and Commerce IT \> Customer** and execute the **Synchronize customers and business partners from async mode** job. After this job runs successfully, the onboarding requests will be created as prospects records in Commerce headquarters and the **Type ID** of the prospect records will be set to **B2B prospect**.
+1. Go to **Customers \> All prospects** and open the prospects form. 
+1. Select the prospect record for the new business partner to open the prospect details form.
+1. Select the **General \> Convert \> Approve / Reject**  tab to approve or reject the onboarding request. When a confirmation dialog box appears that asks if you want to continue with the process, continue the process and approve the request. An email will be sent to the requestor's email address confirming that they have been to be a business partner.
+1. Once you approve the request, the **Status** on the prospect record is set to **Approved**. Also, two new customer records are created in the system: one **Type Organization** customer record for the business partner organization and a **Type Person** customer record for the requestor. A customer hierarchy record for the business partner is also created. <!--(Please refer to the Org modeling of B2B customer section in this document for more information)-->
+1. Go to **Retail and Commerce IT \> Distribution Schedule** and execute the **1010 Customers** job to push the newly created customers and customer hierarchy records to the channel database (channel DB). Once the request is approved and the customer and customer hierarchy records are synchronized to the channel DB, the requestor will be able to sign in to the B2B e-commerce website using the email address that was provided at the time of submitting the request. During the first sign-in session, the requestor will be prompted to set a password for the requestor administrator account.
 
-### Removing a user
+## Onboard additional business partner users
 
-An existing user of a business partner organization can be removed by the Admin user from the list of users who can access the B2B e-commerce website by following the steps below:
+The business partner administrator user can onboard additional business partner users to the B2B e-commerce website as needed.
 
-1. Sign into the B2B e-commerce website
-1. Navigate to **My Account \> Organization users \> View details**
-1. Click on the **Remove** ( X ) button and in the pop-up window, confirm the same
-1. After the **P-0001** job, **Synchronize customers and business partners from async mode** job and **the 1010 Customer job** is executed, the changes will be reflected
-1. Removing the user from the website will remove the corresponding customer record from the business partners customer hierarchy record. The customer itself will not be deleted from Commerce headquarters.
+To onboard additional business partner users to the B2B e-commerce site, follow these steps.
 
-### On-boarding business partner & users from Commerce headquarters
+1. Sign in to the B2B e-commerce site as an administrator.
+1. Go to **My Account \> Organization users \> View details** and select **Add a user**.
+1. Fill in the required information and then select **Save**. The status of the newly-added user will be set to **Pending**. After the **P-0001** job and the **Synchronize customers and business partners from async mode** jobs have been run, a **Type Person** customer record is created for the new user in Commerce headquarters. This customer record is also associated with the relevant business partner's customer hierarchy record. An email is also sent to the new user's email address notifying them that they have been added as a user of the business partner organization and can now sign in to the B2B e-commerce site.
+1. Run the **1010 Customer** job to synchronize the new business partner user to the channel DB. Once the customer record is synchronized, the status of the user on the B2B e-commerce website is set to **Active** and the new user will be able to sign in to the B2B e-commerce site using their email address. During the first sign-in session, the new user will be prompted to set a password.
 
-Users can choose to on-board business partner & users directly from Commerce headquarters by following the steps below:
+## Edit user details
 
-1. Create a customer record of the **Type Organization** for the business partner organization
-1. Create customer records of the **Type Person** for business partner users. Ensure that all customers have a primary email address defined for them
-1. For the customer of the **Type Person** who needs to be designated as the **Admin** user of the business partner organization, set the field **B2B administrator** to Yes under the **Retail** fast tab of the customer record
-1. Create a Customer hierarchy id and
-    1. Specify a **Name**
-    1. Associate the business partner organization customer to the **Organization** field
-    1. Click on **Add** and in the **Name** field, select a customer using the drop down. Repeat the process to add additional customers to the hierarchy.
+To edit business partner user details, follow these steps.
+
+1. Sign in to the B2B e-commerce site as an administrator.
+1. Go to **My Account \> Organization users \> View details**, select **Edit** (pencil symbol), make the required changes, and then select **Save**. The changes will take effect once the **P-0001**, **Synchronize customers and business partners from async mode**, and **1010 Customer** jobs have been run.
+
+## Remove a user
+
+An administrator can remove existing users of a business partner organization from the list of users who can access the B2B e-commerce site as needed. 
+
+To remove a business partner user, follow these steps.
+
+1. Sign in to the B2B e-commerce site as an administrator.
+1. Go to **My Account \> Organization users \> View details** and select **Remove** ("X" symbol ). When a confirmation dialog box appears, confirm the user removal. The changes will take effect once the **P-0001**, **Synchronize customers and business partners from async mode**, and **1010 Customer** jobs have been run.
+
+> [!NOTE]
+> Removing the user from the list of users who can access the B2B e-commerce site will remove the corresponding customer record from the business partners customer hierarchy record. However, the customer record itself will not be deleted from Commerce headquarters.
+
+## Onboard business partner and users from Commerce headquarters
+
+Administrators can choose to onboard business partners and users directly from Commerce headquarters.
+
+To onboard business partners and users in Commerce headquarters, follow these steps.
+
+1. Create a **Type Organization** customer record for the business partner organization.
+1. Create **Type Person** customer records for business partner users. Ensure that all customers have a primary email address specified.
+1. For **Type Person** customer records that need to be designated as administrator users of the business partner organization, under the **Retail** fast tab of the customer record, select **Yes** for **B2B administrator**.
+1. Create a customer hierarchy ID. For **Name**, enter a name.
+1. For **Organization**, enter the business partner organization customer.
+1. Select **Add**, and then select a customer from the **Name** drop-down menu. 
+1. Repeat the process to add additional customers to the hierarchy.
 
 ## Call outs
 
-1. All jobs that are referenced in the document above can be configured to run on a schedule in a batch format and it is expected that customers configure them accordingly.
-1. In this release, only one user / customer can be designated as an Admin user and the role can be changed only in headquarters. Self-serve capability for the business partner to designate multiple admins or change admins from the B2B e-commerce website is not supported.
-1. The modules & labels of the different fields referenced in the screenshots for e-commerce are only for illustration purposes. Customers have complete control on the placement of the B2B related modules and the labels.
-1. While **Spending limits** can be defined for users, the enforcement of the same during the order entry process has not been implemented in this release.
-1. All business logics & validations for a user's experience on the B2B e-commerce website is based on the configuration for the corresponding customer record that is mapped to the user in Commerce headquarters.
+1. All jobs referenced in this topic can be configured to run on a schedule in a batch format. It is expected that customers configure them accordingly.
+1. Currently only one user/customer record can be designated as an administrator user and the role can only be changed in Commerce headquarters. Self-serve capabilities for business partners to designate multiple administrators or change administrators from B2B e-commerce sites is not supported.
+<!--1. The modules and labels of the different fields referenced in the screenshots for e-commerce are only for illustration purposes. Customers have complete control on the placement of the B2B related modules and the labels.-->
+1. While spending limits can be defined for users, the enforcement of spending limits during the order entry process has not yet been implemented.
+1. All business logics and validations for a user's experience on a B2B e-commerce site is based on the configuration of the corresponding customer record mapped to the user in Commerce headquarters.
+
+## Additional resources
+
+[Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
 
