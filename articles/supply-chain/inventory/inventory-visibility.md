@@ -115,12 +115,12 @@ To get a security service token, do the following:
     <!-- KFM: It seems like something is missing here. I suppose we get something back after calling the endpoint and then edit that response as described in the next steps. Is that right? Can we show an example of the initial response? -->
 1. Replace the `client_assertion` in the body with your `aadToken`.
 1. Replace the context in the body with the environment where you want to deploy the add-in.
-1. Replace the scope in the body with the following:
+1. Replace the scope in the body with the following: <!-- KFM: *One of* the following? -->
 
     - **Scope for MCK** - `https://inventoryservice.operations365.dynamics.cn/.default`<br>(You can find the Azure Active Directory application ID and tenant ID for MCK in `appsettings.mck.json`.)
     - **Scope for PROD** - `https://inventoryservice.operations365.dynamics.com/.default`<br>(You can find the Azure Active Directory application ID and tenant ID for PROD in `appsettings.prod.json`.)
 
-1. The result should resemble the following example.
+1. The result should resemble the following example. <!-- KFM: Can we show this example with a more realistic token, perhaps using the example token shown earlier? (it's not clear to me exactly which part of that token response is needed here) -->
 
     ```json
     {
