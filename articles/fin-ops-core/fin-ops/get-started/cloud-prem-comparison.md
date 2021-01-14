@@ -125,7 +125,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Localizations                        |                                                                                           | Yes       | Yes             |
 | Manufacturing                        |                                                                                           | Yes       | Yes             |
 | Master planning and forecasting      |                                                                                           | Yes       | Yes             |
-| Planning Optimization                |                                                                                           | Yes       | No              |
+| Planning optimization                |                                                                                           | Yes       | No              |
 | Mobile app, workspaces, and platform |                                                                                           | Yes       | Yes             |
 | Office integration                   |                                                                                           | Yes       | Yes             |
 | Organization administration          |                                                                                           | Yes       | Yes             |
