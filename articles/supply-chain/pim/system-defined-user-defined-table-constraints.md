@@ -18,7 +18,6 @@ ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSys
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19781
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4

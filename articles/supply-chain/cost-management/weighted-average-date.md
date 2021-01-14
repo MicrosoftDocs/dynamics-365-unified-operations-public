@@ -18,7 +18,6 @@ ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 28991

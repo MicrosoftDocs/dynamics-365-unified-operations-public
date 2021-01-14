@@ -18,7 +18,6 @@ ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e

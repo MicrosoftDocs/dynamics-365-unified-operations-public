@@ -18,7 +18,6 @@ ms.search.form: RetailFormLayout
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250

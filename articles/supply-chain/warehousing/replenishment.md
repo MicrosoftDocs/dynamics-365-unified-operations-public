@@ -19,7 +19,6 @@ ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventF
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178

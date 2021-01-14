@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-# ms.search.scope: Talent, Core
 ms.search.region: Global
 # ms.search.industry: HR, Human Resources
 ms.author: shielas

@@ -18,7 +18,6 @@ ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34

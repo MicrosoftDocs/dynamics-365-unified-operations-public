@@ -18,7 +18,6 @@ ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4

@@ -17,7 +17,6 @@ ms.search.form: AssetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264684
 ms.search.region: Hungary
