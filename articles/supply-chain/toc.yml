@@ -224,6 +224,8 @@
         href: cloud-edge/cloud-edge-workload-manufacturing.md
       - name: Warehouse management workloads for cloud and edge scale units
         href: cloud-edge/cloud-edge-workload-warehousing.md
+      - name: Warehouse orders for cloud and edge scale units
+        href: cloud-edge/cloud-edge-warehouse-order.md
     - name: Asset management
       items:
       - name: Asset management overview

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Warehouse orders for warehouse management cloud and edge scale unit workloads
+title: Warehouse orders for cloud and edge scale units
 description: This topic provides information about the warehouse order capability used as part of the warehouse scale unit workload.
 author: perlynne
 manager: tfeyr
@@ -29,13 +29,13 @@ ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
 ---
 
-# Warehouse orders for warehouse management cloud and edge scale unit workloads
+# Warehouse orders for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
-> Not all business functionality is fully supported in the public preview when workload scale units are used. Be sure to use only the processes that this topic explicitly describes as supported.
+> Not all business functionality is fully supported in the public preview when scale unit workloads are used. If you are using scale units, be sure to use only those processes that this topic explicitly describes as supported.
 
 ## What are warehouse orders?
 
@@ -52,8 +52,10 @@ To create a warehouse order:
 
 1. Sign in to Supply Chain Management running on the hub. (You must initiate the *Release to warehouse* process while singed in on the hub.)
 1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
-1. On the Action Pane, open the **Warehouse** tab and, from the **Action** group, select **Release to warehouse**. <!-- KFM: I don't see this command here. Do we really mean to be working with purchase orders? -->
-1. You can view the related warehouse order lines by selecting a line in the **Purchase order lines** section of the purchase order and then, on the toolbar, selecting **Warehouse > Warehouse order lines**. You can view all the lines by going to **Warehouse management > Inquiries and reports > Warehouse order lines**. <!-- KFM: I don't see these commands either, but that is probably because I don't have C+E enabled here, right? -->
+1. On the Action Pane, open the **Warehouse** tab and, from the **Action** group, select **Release to warehouse**.
+1. You can view the related warehouse order lines by selecting a line in the **Purchase order lines** section of the purchase order and then, on the toolbar, selecting **Warehouse > Warehouse order lines**. You can view all the lines by going to **Warehouse management > Inquiries and reports > Warehouse order lines**.
+
+<!-- KFM: I couldn't confirm the above procedure because I don't see most of those pages or commands. That is probably because I don't have C+E enabled. I changed these formulations, so please take an extra look to be sure this is still accurate. -->
 
 ## Cancel a warehouse order
 
@@ -61,7 +63,7 @@ As part of the *Release to warehouse* process, purchase order inventory transact
 
 To cancel warehouse order lines:
 
-1. Sign in to Supply Chain Management running on the hub. <!-- KFM: Is this true,or  does it not matter where we sign in? -->
+1. Sign in to Supply Chain Management running on the hub. <!-- KFM: Is this true, or does it not matter where we sign in? -->
 1. Go to **Warehouse management > Inquiries and reports > Warehouse order lines**.
 1. Select the relevant line.
 1. Select **Cancel warehouse order lines**. <!-- KFM: Where is this, on the Action Pane? -->
