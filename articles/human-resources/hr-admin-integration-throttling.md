@@ -52,7 +52,7 @@ For more information, see [Authentication](https://docs.microsoft.com/dynamics36
  
 ## Configure priorities for integrations 
 
-After you register your service in Azure AD and in your Finance and Operations apps, you can set up priorities for integrations.
+After you've registered your service in Azure AD and in the **Azure Active Directory applications** page of your Finance and Operations apps, you can set up priorities for integrations.
 
 > [!NOTE]
 > You must be assigned the System administrator or Integration priority manager role to complete the set up. 
