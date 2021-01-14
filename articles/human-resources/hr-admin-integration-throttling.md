@@ -44,12 +44,12 @@ Use the **Integration priority** page to assign priorities for integrations. Pri
 
 Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations, based on the integration. For more information about how to set up integration, see [Enable connectivity with external services](https://docs.microsoft.com/learn/modules/integrate-azure-finance-operations/7-connect-external). 
 
-There are two kinds of applications are supported in Microsoft Azure Active Directory (Azure AD):
+Two kinds of applications are supported in Microsoft Azure Active Directory (Azure AD):
 
-- User based - This flow uses a username and password for authentication and authorization. 
-- Azure AD app based - A confidential client is an application that can keep a client password confidential. The authorization server assigned this client password to the client application. 
+- User-based - This flow uses a username and password for authentication and authorization. 
+- Azure AD app-based - A confidential client is an application that can keep a client password confidential. The authorization server assigned this client password to the client application. 
 
-For more information, see [Authentication](services-home-page.md).
+For more information, see [Authentication](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page).
  
 ## Configure priorities for integrations 
 

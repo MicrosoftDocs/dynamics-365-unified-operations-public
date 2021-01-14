@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Priority-based throttling in Human Resources FAQ
 
-This topic provides answers to some frequently asked questions (FAQ) about [priority-based throttling](priority-based-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
+This topic provides answers to some frequently asked questions (FAQ) about [priority-based throttling](hr-admin-integration-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
 
 ## How do I access the Data management Yammer group?
 

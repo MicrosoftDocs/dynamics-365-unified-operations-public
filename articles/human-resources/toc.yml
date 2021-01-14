@@ -80,9 +80,9 @@
       - name: Choose a data integration technology
         href: hr-admin-integration-choose-technology.md
       - name: Priority-based throttling
-        href: hr-admin-throttling.md
+        href: hr-admin-integration-throttling.md
       - name: Priority-based throttling FAQ
-        href: hr-admin-throttling-faq.md
+        href: hr-admin-integration-throttling-faq.md
       - name: Configure Common Data Service integration
         href: hr-admin-integration-common-data-service.md
       - name: Common Data Service entities
