@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 # Maintain vendor bank account information
 
-Vendors can maintain their bank account information within vendor  collaboration. Vendor account maintenance can be performed in the Vendor information workspace. From here vendors will select More details and Bank accounts. To add a new bank accounts, click the Add button above the bank account grid. A **New** slider will display. You can enter the following information in the slider.   
+Vendors can maintain their bank account information within Vendor  collaboration. Vendor account maintenance can be performed in the Vendor information workspace. From here vendors will select More details and Bank accounts. To add a new bank accounts, click the Add button above the bank account grid. A **New** slider will display. You can enter the following information in the slider.   
  
 - **Bank account** 
 - **Bank name** 
@@ -51,8 +51,7 @@ Bank information entered by the vendor on this page will display Vendor as the s
 Vendors can edit their bank’s effective and expiration dates as needed after an account has been added.
  
  
-Vendor collaboration generated bank changes page
- 
+## Vendor collaboration generated bank changes page
 Once bank information is updated by a vendor, the information will be visible in a new Vendor collaboration generated bank changes page available under Accounts payable > Inquiries > Vendor reports. By default, all newly entered or modified bank records are visible. The accounts payable representative can view the changes and run the account information through their pre- note process to validate the account information. Once this is complete, and the primary payment method has been manually updated, the bank account listed on the Vendor collaboration generated bank changes page can be selected and marked as reviewed. This will remove the account from the default list.
  
 You can see all changes to a vendor’s bank information by modifying the filters to view by vendor account, effective date range, and by whether or not the changes have been reviewed.
