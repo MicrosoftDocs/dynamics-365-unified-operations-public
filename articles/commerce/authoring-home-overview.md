@@ -17,7 +17,6 @@ ms.technology:
 audience: Application USer
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

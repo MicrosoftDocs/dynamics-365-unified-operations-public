@@ -18,7 +18,6 @@ ms.search.form: RetailAssortmentDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
