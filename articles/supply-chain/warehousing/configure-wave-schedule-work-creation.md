@@ -49,7 +49,7 @@ Before you can use the *Schedule work creation* feature, it must be turned on in
 - **Module:** *Warehouse management*
 - **Feature name:** *Schedule work creation*
 
-> [!NOTE] The *Organization-wide work blocking* feature must be enabled before you can enable *Schedule work creation* and by enabling the feature **Organization-wide "Schedule work creation" wave method** you will enable all the below explained setup automatically.
+> [!NOTE] The *Organization-wide work blocking* feature must be enabled before you can enable *Schedule work creation*.
 
 ### 2. Manually enable batch processing of waves
 
@@ -87,9 +87,9 @@ Now you are ready to update an existing wave template (or create a new one) to u
 
 3.  In the list pane, select the wave template you would like to update (such as demo data *24 Shipping default*).
 
-4.  Expand the **Methods** FastTab and select the row with the **Name** *Schedule work creation* in the**Remaining methods** grid.
+4.  Expand the **Methods** FastTab and select the row with the **Name** *Schedule work creation* in the **Remaining methods** grid.
 
-5.  Select the arrow pointing to the **Selected methods** column to move the selected row to that column. (You can only have one selected method at a time that uses either *WHSScheduleWorkCreationWaveStepMethod* or*createWork*, so the existing row with**Method name** *createWork* is automatically moved to the**Remaining methods** grid.)
+5.  Select the arrow pointing to the **Selected methods** column to move the selected row to that column. (You can only have one selected method at a time that uses either *WHSScheduleWorkCreationWaveStepMethod* or *createWork*, so the existing row with **Method name** *createWork* is automatically moved to the **Remaining methods** grid.)
 
 ## Set wave task processing threshold data
 
