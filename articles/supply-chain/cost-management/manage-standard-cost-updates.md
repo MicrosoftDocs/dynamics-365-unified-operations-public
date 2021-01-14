@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CostingVersion
+ms.search.form: CostingVersion, InventItemPrice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -49,7 +49,12 @@ The following example illustrates how the one-version and two-version approaches
 
 This example used one additional costing version for managing updates throughout the year 2016. More than one additional costing version can be used, such as a separate version for each batch of updates. When more than one additional costing is used, the fallback must be expressed as the active costs, because the active costs are spread over multiple costing versions.
 
+## Financial dimensions for the standard cost revaluation
+Activating a new standard price will revaluate the on-hand inventory value by standard cost revaluation transactions. The financial dimensions of the item are posted on the transactions.
 
-
-
+If it's not desired, please trun on the feature *Options of defaulting financial dimensions for inventory standard cost revaluation* in the feature management workspace. Once the feature is enabled, you will have following three options in **Cost management > Inventory accounting policies setup > Parameters > Origin of financial dimension**.
+ 
+- **None** – No financial dimensions are posted on the revaluation transactions. If your account structure includes a required financial dimension, the revaluation process will still run, but it will create accounting entries that have no financial dimensions. In this case, users will receive a warning message first, so they can cancel the revaluation if necessary.
+- **Table**  – The financial dimensions of the item are posted on the revaluation transactions. (This is the default setting and is consistent with the original system behavior without turning on the feature *Options of defaulting financial dimensions for inventory standard cost revaluation*).
+- **Posting** – The financial dimensions of the transaction that is being revalued are posted on the revaluation transactions. By default, the financial dimensions from the original transaction's inventory account will be used for both inventory account and revaluation account.
 
