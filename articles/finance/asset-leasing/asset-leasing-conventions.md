@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up lease books
-description: This topic describes the information that is maintained in lease books. Lease books contain the accounting policies that determine how a lease is accounted for in the system.
+title: Asset leasing conventions 
+description: This topic describes asset leasing conventions.
 author: moaamer
 manager: Ann Beebe
 ms.date: 1/14/2021
