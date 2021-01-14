@@ -16,7 +16,7 @@ manager: vastrup
 ms.search.form: CustInvoiceJournal, CustInvoiceJourAdjustment, ProjInvoiceListPage, CustParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 ms.search.region: Thailand
 # ms.search.industry: [industry; e.g. retail]
 ms.author: epopov

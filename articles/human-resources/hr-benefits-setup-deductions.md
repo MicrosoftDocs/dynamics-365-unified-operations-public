@@ -5,7 +5,7 @@ title: Configure deductions
 description: Use deductions in Microsoft Dynamics 365 Human Resources to determine how much, if any, to deduct from an employee’s paycheck for each benefit.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure deductions
-
-[!include [banner](includes/preview-feature.md)]
 
 Use deductions in Microsoft Dynamics 365 Human Resources to determine how much, if any, to deduct from an employee’s paycheck for each benefit. Deductions are date-effective, so you can keep a historical record of deduction information. 
 

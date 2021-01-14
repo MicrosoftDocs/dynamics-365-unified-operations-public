@@ -17,12 +17,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -51,7 +51,7 @@ Complete the procedures in this topic to export goods that have zero-rated tax.
 3. Select **OK**.
 4. You receive a warning message. Select **Yes** to acknowledge it.
 
-## Validate the voucher
+## Validate the sales order voucher
 
 1. On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 2. Select **Voucher**.
@@ -64,7 +64,7 @@ Complete the procedures in this topic to export goods that have zero-rated tax.
 4. In the **Shipping bill Number** field, enter a value.
 5. Select **OK**.
 
-## Validate the voucher
+## Validate the shipping bill voucher
 
 1. Select **Inquiries** \> **Shipping bill**.
 2. Select **Voucher**.

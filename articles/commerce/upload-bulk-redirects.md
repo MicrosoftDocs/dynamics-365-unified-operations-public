@@ -5,7 +5,7 @@ title: Upload URL redirects in bulk
 description: This topic describes how to implement URL redirects in bulk by uploading a redirect comma-separate values (CSV) file in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -60,12 +60,12 @@ Here is an explanation of the elements of this schema:
 
 The following example shows a set of redirect rows in a redirect CSV file.
 
-```
-https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301, true
+```plaintext
+https://www.contoso.com/shop, https://www.fabrikam.com/allstores, 301, true
 
-https://www.oldsite.com/news, https://www.newsite.com/updates, 301, false
+https://www.contoso.com/news, https://www.fabrikam.com/updates, 301, false
 
-https://www.oldsite.com/news, https://www.newsite.com/updates, 301
+https://www.contoso.com/news, https://www.fabrikam.com/updates, 301
 ```
 
 > [!IMPORTANT]
@@ -125,11 +125,11 @@ To turn off the bulk redirects in an uploaded redirect CSV file, follow these st
 
 [Configure your domain name](configure-your-domain-name.md)
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
-[Associate an online site with a channel](associate-site-online-store.md)
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 

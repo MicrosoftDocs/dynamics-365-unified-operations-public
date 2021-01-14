@@ -4,7 +4,7 @@
 title: Create a subcontracted work cell for lean manufacturing
 description: To model subcontracted work for lean manufacturing, you must create a work cell that is associated with the vendor that provides the work. 
 author: cvocph
-manager: AnnBe 
+manager: tfehr 
 ms.date: 06/23/2017
 ms.topic: business-process 
 ms.prod:  
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

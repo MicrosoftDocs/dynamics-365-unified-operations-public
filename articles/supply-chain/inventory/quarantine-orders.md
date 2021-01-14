@@ -4,7 +4,7 @@
 title: Quarantine orders
 description: This topic describes how quarantine orders are used to block inventory.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
@@ -17,8 +17,8 @@ ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQ
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e

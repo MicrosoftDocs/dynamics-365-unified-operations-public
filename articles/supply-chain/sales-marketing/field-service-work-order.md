@@ -5,7 +5,7 @@
 title: Synchronize work orders in Field Service to sales orders in Supply Chain Management
 description: This topic discusses the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in Supply Chain Management. 
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: 
@@ -18,8 +18,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,6 +34,8 @@ ms.search.validFrom: 2017-07-8
 # Synchronize work orders in Field Service to sales orders in Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic discusses the templates and underlying tasks that are used to synchronize work orders in Dynamics 365 Field Service to sales order in Dynamics 365 Supply Chain Management.
 
@@ -65,13 +67,13 @@ The following synchronization tasks are required before synchronization of sales
 
 | **Field Service** | **Supply Chain Management** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS sales order headers |
-| msdyn_workorderservices | CDS sales order lines   |
-| msdyn_workorderproducts | CDS sales order lines   |
+| msdyn_workorders        | Dataverse sales order headers |
+| msdyn_workorderservices | Dataverse sales order lines   |
+| msdyn_workorderproducts | Dataverse sales order lines   |
 
 ## Entity flow
 
-Work orders are created in Field Service. If the work orders include only externally maintained products, and if the **Work order status** value differs from **Open-Unscheduled** and **Closed – Cancelled**, the work orders can be synchronized to Supply Chain Management via a Common Data Service Data integration project. Updates on the work orders will be synchronized as sales orders in Supply Chain Management. These updates include the information about the origin type and status.
+Work orders are created in Field Service. If the work orders include only externally maintained products, and if the **Work order status** value differs from **Open-Unscheduled** and **Closed – Cancelled**, the work orders can be synchronized to Supply Chain Management via a Microsoft Dataverse Data integration project. Updates on the work orders will be synchronized as sales orders in Supply Chain Management. These updates include the information about the origin type and status.
 
 ## Estimated versus Used
 

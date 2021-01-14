@@ -4,7 +4,7 @@
 title: Production output location
 description: This topic describes the hierarchy that is used to identify the production output location.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d

@@ -16,8 +16,7 @@ ms.technology:
 ms.search.form:  DataValidationWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Core, Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 

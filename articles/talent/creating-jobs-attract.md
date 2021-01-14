@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
+# ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Talent October 2018 update
 # Create a job in Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes the elements of a job in Microsoft Dynamics 365 Talent: Attract. It also explains how to create a job.
 

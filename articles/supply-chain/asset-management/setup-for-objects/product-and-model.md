@@ -4,7 +4,7 @@
 title: Asset manufacturers and models
 description: This topic explains how to set up asset manufacturers and related models in Asset Management.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658

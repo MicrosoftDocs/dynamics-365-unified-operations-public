@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure Lifecycle Services (LCS) security
-description: Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
-author: RobinARH
+description: This topic explains how security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level.
+author: AngelMarshall
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
 ms.assetid: 79396ff8-538f-4f6f-80d0-898fc5618fb5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jorisde
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization. <br>
 
-Currently, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the [Microsoft Office 365 portal](https://go.microsoft.com/fwlink/?LinkID=324287) when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Lifecycle Services (LCS). <br> 
+Currently, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the [Microsoft 365 portal](https://go.microsoft.com/fwlink/?LinkID=324287) when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Lifecycle Services (LCS). <br> 
 
 For Microsoft Dynamics AX 2012, organization-level access to LCS is controlled by the association of a person’s Microsoft ID with an organization in CustomerSource or PartnerSource. Therefore, users of CustomerSource or PartnerSource automatically have access to their organization’s workspace in LCS, and can view all projects that they have been invited to participate in. Users who are administrators for their organization in CustomerSource and PartnerSource will be administrators in LCS. <br>
 
@@ -103,7 +102,7 @@ You can invite users from inside or outside your organization to join your proje
 </tr>
 <tr class="even">
 <td>Project team member (prospect)</td>
-<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as his or her organization.</td>
+<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as the organization.</td>
 </tr>
 <tr class="odd">
 <td>Operations user</td>
@@ -121,5 +120,7 @@ You can invite users from inside or outside your organization to join your proje
 
 After you've configured security for one project, you can import the users to another project.
 
+## Configure implementation roles 
+If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles).
 
 

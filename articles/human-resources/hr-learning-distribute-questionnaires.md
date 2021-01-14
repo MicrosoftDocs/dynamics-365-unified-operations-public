@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
+ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+# ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470

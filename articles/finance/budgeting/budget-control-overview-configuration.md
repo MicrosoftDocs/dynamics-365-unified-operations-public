@@ -18,7 +18,7 @@ ms.search.form: BudgetControlConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
@@ -131,4 +131,4 @@ After budget control is turned on, users will receive budget control warning and
 
 From this page, users can drill into the **Budget control statistics by period** page to view budget availability details and reservations for a selected budget control dimension combination. Users can also drill into the **Budget control statistic** page to view the budget availability for all financial dimension combinations that are used in budget control. 
 
-If budget control is turned on for purchase orders, the budget manager can use the **Ledger budgets and forecasts** workspace to review the queue of all unconfirmed purchase orders that have budget check warnings and errors. If the budget manager has over-budget permissions configured, he or she can confirm purchase orders directly in the workspace.    
+If budget control is turned on for purchase orders, the budget manager can use the **Ledger budgets and forecasts** workspace to review the queue of all unconfirmed purchase orders that have budget check warnings and errors. If the budget manager has over-budget permissions configured, the purchase orders can be confirmed directly in the workspace.    

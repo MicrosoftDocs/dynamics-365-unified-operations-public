@@ -5,7 +5,7 @@ title: Cash flow forecasting
 description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form:  LedgerCovParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -98,6 +98,11 @@ Budgets that are created from budget models can be included in cash flow forecas
 
 Inventory supply and demand forecasts can be included in cash flow forecasts. On the **Inventory management** tab of the **Cash flow forecast setup** page, select the forecast model to include in the cash flow forecast. Inclusion in cash flow forecasting can be overwritten on individual supply and demand forecast lines.
 
+### Setting up Dimensions for Cash flow forecasting
+A new tab on the **Cash flow forecasting setup** page lets you control what financial dimensions to use for filtering in the **Cash flow forecasting** workspace. This tab will only appear when the Cash flow forecasts feature is enabled. 
+
+On the **Dimensions** tab, choose from the list of dimensions to use for filtering, and use the arrow keys to move them to the right-hand column. Only two dimensions can be selected for filtering cash flow forecast data. 
+
 ### Calculation
 
 Before you can view cash flow forecasting analytics, you must run the cash flow calculation process. The calculation process will project the future cash impacts of transactions that have been entered.
@@ -107,7 +112,14 @@ Calculate the cash flow forecast by using the **Calculate cash flow forecasts** 
 - To clear all cash flow forecast transactions and recalculate, set the **Cash flow forecast calculation method** field to **Total**. We recommend that you use this approach if you haven't updated the cash flow forecasts for a long time. 
 - To update the existing cash flow information for new transactions only, set the **Cash flow forecast calculation method** field to **New**. The page will show the date when your cash flow calculation was last run.
 
-You can also use batch processing for your cash flow forecasting. To help guarantee that your forecasting analytics are regularly updated, set up a recurring batch process for cash flow forecast calculation.
+You can also use batch processing for your cash flow forecasting. To help ensure that your forecasting analytics are regularly updated, set up a recurring batch process for cash flow forecast calculation.
+
+In version 10.0.13, an enhancement to the calculation process was released that uses the process automation framework to schedule the cash flow calculation job. This is enabled using the **Cash flow forecast automation** feature in the **Feature Management** workspace. Once enabled, select the **Cash flow forecast automation** link to display the new automation page where you can schedule the cash flow calculation process. To create a new cash flow forecast schedule, select **Create new process automation** and then select **Cash flow forecast automation** in the **Schedule type** drop-down menu. You must set a schedule for each company that you're updating the cash flow forecast data for.  This page also shows which cash flow forecast automation jobs are pending, and when the last job was completed.  
+
+> [!NOTE] 
+> If existing batch jobs are already scheduled for cash flow forecasts, you will receive an error message and you won't be able to enable this feature. Existing batch jobs will need to be cleared before you can enable this feature. 
+
+For more information, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 ### Reporting
 
@@ -133,7 +145,7 @@ The **Cash overview – all companies** workspace shows cash flow forecasting an
 
 The **Cash overview – current company** workspace shows cash flow forecasting analytics in the company’s defined accounting currency. The accounting currency that is used for the analytics is defined on the **Ledger** page. This workspace shows an overview of cash flow forecasting and bank account balances for the current company. A chart of cash inflows and outflows gives an overview of future cash movements and balances in the accounting currency, together with detailed information about the forecasted transactions. You can also see the forecasted currency balances.
 
-For more information about the cash flow forecasting analytics, see the Cash overview Power BI content topic.
+For more information about the cash flow forecasting analytics, see the [Cash overview Power BI content](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) topic.
 
 Additionally, you can view cash flow forecasting data for specific accounts, orders, and items on the following pages:
 

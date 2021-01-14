@@ -4,7 +4,7 @@
 title: Include container weight and volume on load
 description: This topic describes how to set up and apply functionality to include container weight and volume on loads.
 author: pjacobse
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
@@ -16,8 +16,8 @@ ms.technology:
 ms.search.form: TMSRateRouteWorkbench, TMSDriverLogListPage, TMSTransportationTender
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global

@@ -17,12 +17,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -39,7 +39,7 @@ ms.dyn365.ops.version: 10.0.4
 
 ![Sales tax settlement including corrections dialog box](media/Capture2019052109_upd.png)
 
-## Validate the tax settlement voucher entries
+## Validate tax settlement voucher entries
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 2. Select the settlement period, and then select **Sales tax payments**.

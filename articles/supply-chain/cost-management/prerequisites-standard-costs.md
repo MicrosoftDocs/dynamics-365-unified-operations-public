@@ -4,7 +4,7 @@
 title: Prerequisites for standard costs overview
 description: This topic describes the basic steps for using standard costs. 
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
@@ -17,8 +17,8 @@ ms.search.form: InventStdCostConv, CostingVersion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

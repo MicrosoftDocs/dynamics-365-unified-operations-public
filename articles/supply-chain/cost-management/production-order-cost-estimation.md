@@ -4,7 +4,7 @@
 title: Production order cost estimation
 description: This article provides information about production cost estimation. Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity. 
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,8 +17,8 @@ ms.search.form: BOMCalcTrans, InventCostTrans, ProdCalcTrans, ProdTableJour, Pro
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 80633
 ms.assetid: b4625d10-c852-4fda-b718-79df458de0d4

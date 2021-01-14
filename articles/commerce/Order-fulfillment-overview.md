@@ -17,12 +17,12 @@ ms.search.form:  RetailStoreTable, RetailTillLayout
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubencdelgado
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer. To address this need, a unified order fulfillment operation is available at the point of sale.
 
-Orders for fulfillment at a specific store has the store's warehouse designated on the header or lines of the order.
+Orders for fulfillment at a specific store have the store's warehouse designated on the header or lines of the order.
 
 The order fulfillment operation in the point of sale provides a single work area in the point of sale that can be used to process orders. This includes everything from accepting the order, to marking it as shipped, or initiating store pickup.
 

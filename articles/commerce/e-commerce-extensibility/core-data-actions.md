@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Core data actions
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce e-Commerce software development kit (SDK). You can find all core data actions in the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory.
@@ -79,6 +78,8 @@ update-primary-address | Update a customer's primary address.
 ## Additional resources
 
 [Data actions overview](data-actions.md)
+
+[Data action cache options](data-action-cache.md)
 
 [Test data actions with mocks](test-data-action-mocks.md)
 

@@ -18,13 +18,13 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

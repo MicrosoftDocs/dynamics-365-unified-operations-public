@@ -4,7 +4,7 @@
 title: Create purchasing policies
 description: This topic shows you how to create purchasing policies to align with your business processes for purchasing. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/31/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,8 +16,8 @@ ms.technology:
 ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -35,7 +35,7 @@ This topic shows you how to create purchasing policies to align with your busine
 
 ## Set up policy parameters
 1. In the navigation pane, go to **Modules > Procurement and sourcing > Setup > Policies > Purchasing policies**.
-2. In the Action Pane, select **Parameters**.
+2. On the Action Pane, select **Parameters**.
 - Policy precedence rules apply to different levels in your organization. The organizational units that are shown depend on your organizational hierarchy, and on which levels in the hierarchy have been assigned the purpose of Procurement internal control. For example, your organization might have legal entities, cost centers, regions, and departments, but it may be that only some of these have a hierarchy purpose of Procurement internal control. As a default, the organization of type Company is available.  
 3. Select the **Policy rule type parameters** tab.
 4. In the tree, go to **Purchasing policy > Purchase requisition control rule**.

@@ -4,7 +4,7 @@
 title: Create a new trade agreement
 description: This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. 
 author: omulvad
-manager: AnnBe 
+manager: tfehr 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
@@ -13,16 +13,16 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -38,7 +38,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 2. Click **New**.
 3. In the **Name** field, click the drop-down button to open the lookup.
 4. In the list, find and select the desired record.
-5. On **Action pane**, click **Lines**.
+5. On **Action Pane**, click **Lines**.
 6. In the **Account code** field, select 'Table'.
     
     In this example, you're updating the price for a specific customer, which means you need to choose Table. If you were updating the product's list price, you would select 'All', so that the new price is valid for all customers. If you were differentiating prices among different customer segments, then you would select Group. To select Group, you must have set up Customer price groups.  
@@ -74,5 +74,10 @@ This procedure shows you how to create a trade agreement where you register a ne
 5. Close the page.
 
 ## Additional resources
+
+### Whitepaper
+For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management)
+- [Trade agreements](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
 ### Community blogs
 - [Sales prices in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)

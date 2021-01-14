@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -52,7 +52,7 @@ In most taxation systems, there is the concept of a tax rate type, such as stand
 
 | Rates | Type      | Products                                                                                                                                                     |
 | ----- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 0%    | Nil       | Basic foods, including fish, meat, dairy, vegetables, bread, and salt. Postal services. Books and newspapers. Accomodation below Rs 999 per night.           |
+| 0%    | Nil       | Basic foods, including fish, meat, dairy, vegetables, bread, and salt. Postal services. Books and newspapers. Accommodation below Rs 999 per night.           |
 | 5%    | Low       | Household necessities, such as consumable oil, sugar, spices, tea, and coffee (except instant). Coal, Mmishti/mithai (Indian sweets), and life-saving drugs. |
 | 12%   | Standard1 | Computers and processed food.                                                                                                                                |
 | 18%   | Standard2 | Hair oil, toothpaste and soaps. Capital goods. Industrial intermediaries.                                                                                    |
@@ -62,7 +62,7 @@ In most taxation systems, there is the concept of a tax rate type, such as stand
 
 It's not mandatory to set up the tax rate type. In the standard GST configuration, HSN codes and SACs are used to determine the GST rate. For users who maintain multiple [HSN codes and SACs](apac-ind-GST-hsn-service-accounting-codes.md), it's time consuming to complete the [tax setup](apac-ind-GST-set-up-rate-percentage-tables.md), and it also takes longer for the tax engine to pick up the tax rate.
 
-With the tax rate type, the tax setup for the GST rate can be simplified with just a few records, however, there will be more records if you consider the scenarios such as tax exemptations and reverse charges.
+With the tax rate type, the tax setup for the GST rate can be simplified with just a few records, however, there will be more records if you consider the scenarios such as tax exemptions and reverse charges.
 
 | Tax rate type | Rate |
 | ------------- | ---- |

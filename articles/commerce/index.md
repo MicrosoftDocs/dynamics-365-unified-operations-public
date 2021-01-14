@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: 
+#ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 260624
 ms.assetid: 
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.5
 ---
 
 # Commerce home page
-
 
 [!include [banner](includes/banner.md)]
 
@@ -54,7 +53,7 @@ Select a feature area to learn more about it.
 - [Configure a Commerce preview environment](provisioning-guide.md)
 - [Commerce architecture](retail-components.md)
 - [Set up your channels](channels-overview.md)
-- [Merchandizing your products and services](set-up-retail-products.md)
+- [Merchandising your products and services](set-up-retail-products.md)
 - [Manage your orders](Order-fulfillment-overview.md)
 - [Manage your customers](set-up-customer-loyalty-program.md)
 - [Manage your financials](retail-statements.md)

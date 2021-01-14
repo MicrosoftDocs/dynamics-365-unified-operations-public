@@ -4,7 +4,7 @@
 title: Material substitution in manufacturing
 description: This topic describes how to substitute materials during the production process. 
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,8 +17,8 @@ ms.search.form: ProdBOM
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70171
 ms.assetid: ce3b11ef-550e-49b7-8942-2607c2ec3c5c

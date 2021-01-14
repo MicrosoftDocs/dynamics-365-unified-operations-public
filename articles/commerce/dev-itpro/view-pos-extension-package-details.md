@@ -3,7 +3,7 @@
 
 title: View POS extension package information
 description: This topic provides information about the Extension packages section of the Settings view in the point of sale (POS). This new section lists the extension packages that are included as part of the core POS, and it lets you view status information and other details.
-author: mumani
+author: mugunthanm
 manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -60,3 +59,7 @@ To view the details of an extension package, select **View details** on the tile
 The **Status** column shows the status of each extension in the package, the **Name** column shows the name of the extension type, and the **Path** column shows the path of the implementation file in the package. When you select a specific line item, the right pane also shows a description of the extension.
 
 The information in this view is based on the manifest file that is included in the extension package. The POS extension loader loads all the extension packages and updates the status. The status information includes any errors that have been logged.
+
+> [!NOTE]
+> Dual display custom control and other extension details information related to dual display will not be shown in the extension details view.
+

@@ -4,7 +4,7 @@
 title: Define resource capabilities
 description: Resource capabilities describe what operations resources can do. 
 author: sorenva
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,8 +16,8 @@ ms.technology:
 ms.search.form: WrkCtrCapability   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

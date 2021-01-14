@@ -17,7 +17,7 @@ ms.search.form: RetailFunctionalityProfile
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. This procedures uses the USRT demo data company.
+This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives using the USRT demo data company.
 
 1. Go to Retail and Commerce > Channel setup > POS setup > POS profiles > Functionality profiles.
 2. Click Edit.

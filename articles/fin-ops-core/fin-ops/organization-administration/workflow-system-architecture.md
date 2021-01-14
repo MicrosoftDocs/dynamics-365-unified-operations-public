@@ -3,7 +3,7 @@
 
 title: Workflow system architecture
 description: This article describes the architecture of the workflow system.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56351
 ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

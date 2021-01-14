@@ -4,7 +4,7 @@
 title: Set up dispositions codes
 description: This procedure focuses on the setup of a disposition code that can be used on a mobile device for the return order receiving process. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
@@ -13,16 +13,16 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: WHSDispositionTable
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

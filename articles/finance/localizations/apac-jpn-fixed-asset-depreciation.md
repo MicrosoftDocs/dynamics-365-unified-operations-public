@@ -17,7 +17,7 @@ ms.search.form: AssetDepreciationProfile, AssetDepRate_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10294
 ms.search.region: Japan

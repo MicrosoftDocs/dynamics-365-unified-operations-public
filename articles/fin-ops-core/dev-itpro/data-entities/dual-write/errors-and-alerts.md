@@ -3,30 +3,47 @@
 title: Error management and alert notifications
 description: This topic explains error logs and alert notifications that can help you troubleshoot issues.
 author: sabinn-msft
-
-ms.technology: 
-ms.topic: conceptual
+manager: AnnBe
 ms.date: 03/20/2020
-ms.author: v-douklo
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-LocalizationGroup: 
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: v-douklo
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: sabinn
+ms.search.validFrom: 2020-03-20
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Error management and alert notifications
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Microsoft has invested lots of time and effort into making dual-write resilient to errors. However, if you encounter an issue while or after you enable entity maps for dual-write, you can select specific entity maps to get a consolidated view of all the activities and errors for them. This consolidated view includes error logs. The goal is to help you during troubleshooting by providing a single view of the activities for an entity map.
+
+Microsoft has invested lots of time and effort into making dual-write resilient to errors. However, if you encounter an issue while or after you enable table maps for dual-write, you can select specific table maps to get a consolidated view of all the activities and errors for them. This consolidated view includes error logs. The goal is to help you during troubleshooting by providing a single view of the activities for a table map.
 
 ## Consolidated error management
 
-The activity log provides a chronological list of events that a specific entity map goes through from the **Not Running** status to the **Running** status. For example, the list can include mappings that are created, updates of field mappings, and mappings that are run. Additionally, if errors occur, you can download the logs to get the next level of details.
+The activity log provides a chronological list of events that a specific table map goes through from the **Not Running** status to the **Running** status. For example, the list can include mappings that are created, updates of column mappings, and mappings that are run. Additionally, if errors occur, you can download the logs to get the next level of details.
 
 ![Viewing the activity log](media/activity-log.png)
 
-If you encounter issues while you copy pre-existing data between Finance and Operations apps and Common Data Service, the **Initial sync details** tab provides a count of the errors. It also lets you rerun the execution after you fix the underlying errors.
+If you encounter issues while you copy pre-existing data between Finance and Operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. It also lets you rerun the execution after you fix the underlying errors.
 
 ![Fixing errors and rerunning](media/fix-error-rerun.png)
 

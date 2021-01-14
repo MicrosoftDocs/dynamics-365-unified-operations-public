@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 ms.search.region: Global 
 ms.search.industry: retail
@@ -35,7 +34,7 @@ This topic explains how to extend the point of sale (POS) Dual display view so t
 You can extend the POS Dual display view by adding a custom control. In the custom control, you can add images, POS data lists, labels, and so on, to show custom information.
 
 > [!NOTE]
-> You can extend the POS Dual display view only by adding a custom control. The custom control will override the standard content that is shown in the POS Dual display view.
+> You can extend the POS Dual display view only by adding a custom control. The custom control will override the standard content that is shown in the POS Dual display view. The dual display custom control and other extension details information related to dual display will not be shown in the extension details view.
 
 ## Required steps
 
@@ -361,15 +360,6 @@ You will add a custom control column in the POS Dual display view to show the ca
     Here is what the overall class should look like.
 
     ```typescript
-    /**
-    * SAMPLE CODE NOTICE
-    *
-    * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-    * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-    * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-    * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-    */
-
     import {
         DualDisplayCustomControlBase,
         IDualDisplayCustomControlState,

@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Cookie API overview
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the application programming interfaces (APIs) in the Microsoft Dynamics 365 Commerce e-Commerce software development kit (SDK) that are used to set and get cookie data.
@@ -85,4 +84,10 @@ const favColor = this.props.context.request.cookies.get<string>('favoriteColor')
 
 [Extend a module definition file](extend-module-definition.md)
 
+[Interactive components overview](interactive-components.md)
+
+[Mock the signed-in state during local development](mock-sign-in.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)

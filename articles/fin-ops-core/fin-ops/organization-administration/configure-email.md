@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/21/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,6 @@ ms.search.form: SysEmailParameters
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268274
 ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
@@ -32,13 +31,15 @@ ms.dyn365.ops.version: AX 7.0.0
 # Configure and send email
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
 Both administrators and users set the behavior of the email subsystem.
 
-## Administrator: Email parameters page
+## [Administrator] Email parameters page 
 
+### Configuration tab
 On the **Email parameters** page, note the following settings on the **Configuration** tab.
 
 | Field                 | Description |
@@ -48,6 +49,9 @@ On the **Email parameters** page, note the following settings on the **Configura
 
 In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. By default, the last 30 days of email history is retained. This can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
 
+In version 10.0.16/Platform 40, an **Email throttling** section is visible, if your environment has enabled the **Email throttling** feature in Feature management. This feature allows non-interactive email providers  (such as the batch email provider) to adhere to a per-minute sending limit. This can prevent errors from the system attempting to send more emails than the provider allows. The sending limits for Microsoft 365 email providers are set automatically according to [Exchange Online sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits?sending-limits#sending-limits). Manual configuration is required for all other email providers. The per-minute sending limit can be removed from a provider by resetting the **per-minute email sending limit** field to 0.
+
+### SMTP settings tab
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
 <table>
@@ -62,7 +66,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 <td>Outgoing mail server</td>
 <td>The host name of the desired SMTP server.
 <ul>
-<li>For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Office 365 production</a> (including *.onmicrosoft.com accounts) use smtp.office365.com. (You can find this setting at outlook.office.com at <strong>Settings</strong> &gt; <strong>Mail</strong> &gt; <strong>POP and IMAP</strong>.)</li>
+<li>For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 production</a> (including *.onmicrosoft.com accounts) use smtp.office365.com. (You can find this setting at outlook.office.com at <strong>Settings</strong> &gt; <strong>Mail</strong> &gt; <strong>POP and IMAP</strong>.)</li>
 <li>For Outlook/Hotmail use smtp-mail.outlook.com.</li>
 </ul>
 </td>
@@ -73,7 +77,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </tr>
 <tr>
 <td><strong>User name</strong> and <strong>Password</strong></td>
-<td>Specify, as needed, to send the email via the appropriate mail account. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send Simple Mail Transfer Protocol (SMTP) mail. You can configure Send As permissions in the Office 365 admin center (portal.office.com/Admin), at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Office 365</a>.</td>
+<td>Specify, as needed, to send the email via the appropriate mail account. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send Simple Mail Transfer Protocol (SMTP) mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin), at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Microsoft 365</a>.</td>
 </tr>
 <tr>
 <td>Specify if SSL is required</td>
@@ -82,37 +86,37 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </tbody>
 </table>
 
-## Administrator: Email Distributor batch process
+## [Administrator] Email distributor batch process
 
 Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process. That batch process must be started to process the email queue. To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.
 
 If the Exchange provider is used, then the user account associated with the batch process (usually admin) will be sender.
 
-## Administrator: User email
+## [Administrator] User email
 
-The default email address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). An email address should be specified for each user for sign in, so this field should be populated. Users can override this default if needed.
+The default **send from** address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). Administrators can override this **send from** default if needed using the **Sender email** field on the **Options** page.
 
-## User: Email provider selection section on the Options page
+## [User] Email provider selection section on the Options page
 
 The **Options** page can be opened via **Settings &gt; User options**. The **Email provider selection** section is on the **Account** tab.
 
 | Field             | Description |
 |-------------------|-------------|
 | Email provider ID | Allows the user to select the email provider that should be used when sending an email. Selecting an option here is the equivalent of selecting **Do not ask again** in the **How would you like to send email** dialog box. Selecting the blank option **Prompt for which email provider to use** will cause the **How would you like to send email** dialog box to display when an email is going to be sent. |
-| Email             | Allows the user to provide an email address override for the **From** field of the email. By default, the email alias that associated with the user account is used as the **From** field in new emails, but this user option email address will override that. When sending email via SMTP the user needs to have appropriate **Send As** and **Send On Behalf Of** permissions configured in Exchange or on the SMTP server.<blockquote>[!NOTE] You can configure **Send As** and **Send On Behalf Of** permissions in the Office 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).</blockquote> |
+| Sender email    | Allows the administrator to provide an email address override for the user in the **From** field of the email. By default, the email alias that is associated with the user account is used as the **From** field in new emails, but this user option email address will override that. When sending email via SMTP, the user needs to have appropriate **Send As** and **Send On Behalf Of** permissions configured in Exchange or on the SMTP server.<blockquote>[!NOTE] You can configure **Send As** and **Send On Behalf Of** permissions in the Microsoft 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).</blockquote> |
 
-## User (optional): How would you like to send email dialog box
+## [User] How would you like to send email dialog box (optional)
 
 When an email is going to be sent, the user will see the **How would you like to send email** dialog box that will list the available options for sending email.
 
 | Field                                                                  | Description |
 |------------------------------------------------------------------------|-------------|
 | Use an email app, such as Outlook                                      | Provides the user with a generated email (.eml) file. |
-| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time for the **Exchange** mail provider. |
+| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. On-premises Exchange servers are currently not supported for the **Exchange** mail provider. |
 | Use the system email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
-## User (optional): Send email dialog box
+## [User] Send email dialog box (optional)
 
 The **Send email** dialog box is opened to allow the user to edit the contents of the email that will be sent. Some of the following fields will be pre-populated in this window.
 
@@ -147,7 +151,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 2. Click **SMTP settings**.
 3. Set the **Outgoing mail server** to the desired SMTP server:
 
-    - For [Office 365 production](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (including \*.onmicrosoft.com accounts) use smtp.office365.com. (Find this setting via outlook.office.com, at **Settings** &gt; **Mail** &gt; **POP and IMAP**.)
+    - For [Microsoft 365 production](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (including \*.onmicrosoft.com accounts) use smtp.office365.com. (Find this setting via outlook.office.com, at **Settings** &gt; **Mail** &gt; **POP and IMAP**.)
     - For Outlook/Hotmail use smtp-mail.outlook.com.
 
 4. Set the user name and password to an appropriate email account and password.
@@ -166,7 +170,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes.
 
-## Administrator: Workflow email notifications
+## [Administrator] Workflow email notifications
 
 Workflow email configuration is a collection of related settings that work in conjunction.
 
@@ -203,8 +207,8 @@ Workflow email configuration is a collection of related settings that work in co
     1. Go to **Settings** \> **User options**.
     2. Go to the **Account** tab.
 
-       1. Set the email provider ID (for example, SMTP).
-       2. Optionally, set the email address for the provider if it was not the default from the user setup.
+       1. Set the **Email provider ID** (for example, SMTP).
+       2. Optionally, set a **Sender email** override if the default **send from** address should not be used for the current user.
 
     3. Navigate to the **Workflow** tab. Set the option to send notifications in email to **Yes**.
 
@@ -265,7 +269,7 @@ There are a few standard steps that can help you troubleshoot the configuration 
     
 4. In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. The **Email history** page will show interactive as well as non-interactive/batch emails. For any emails that have an **Email status** of **Failed**, review the error message on the **Failure details** tab and determine if corrective actions should be taken.
 
-5. In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+5. In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
 6. Sign in to all user mailboxes to verify that they are valid and can be accessed using sign in.
 7. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
 8. If the SMTP settings were migrated from another environment, clear the password field and re-enter the password to ensure that the field encryption hasn't negatively affected the stored value.
@@ -284,6 +288,12 @@ Users that are external to the primary tenant will not have exchange accounts on
 ## Other notes
 
 The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits) apply.
+
+## Troubleshooting
+
+### Where do workflow email templates come from?
+
+The email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.
 
 ## Additional resources
 

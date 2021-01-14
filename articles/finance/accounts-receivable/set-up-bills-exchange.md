@@ -18,7 +18,7 @@ ms.search.form: CustBillOfExchangeJour
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269964
 ms.assetid: f2077165-da90-4359-ab12-e05717728dc7

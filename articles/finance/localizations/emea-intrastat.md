@@ -5,7 +5,7 @@ title: Intrastat overview
 description: This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.search.form: Intrastat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -202,7 +202,7 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 <td><ul>
 <li><strong>General</strong> – Specify the following information:
 <ul>
-<li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that is set up for credit notes is also used as the code for physical goods return and is used for deviating physical returns versus correction credit notes.</li>
+<li>The default transaction codes for sales orders, purchase orders, credit notes, and transfer orders. The transaction code that is set up for credit notes is also used as the code for physical goods return and is used for deviating physical returns versus correction credit notes. Returns of physical goods are reported in Intrastat transfer with a different direction. The return of arrival is reported as dispatch and the return of dispatch is reported as arrival.</li>
 <li>The employee who is responsible for preparing Intrastat reports.</li>
 </ul></li>
 <li><strong>Minimum limit</strong> – Specify the settings for updating transactions that are below the threshold:

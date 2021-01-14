@@ -3,8 +3,8 @@
  
 title: Create a purchase return order
 description: This procedure shows you how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO. 
-author: FrankDahl
-manager: AnnBe 
+author: mkirknel
+manager: tfehr 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
@@ -13,16 +13,16 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: PurchTable, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines   
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -37,7 +37,7 @@ This procedure shows you how to create a purchase return order by using the Cred
 2. Click **New**.
 3. In the **Vendor account** field, enter "US-102".
 4. Click **OK**.
-5. On the **Action pane**, click **Purchase**.
+5. On the **Action Pane**, click **Purchase**.
 6. Click **Credit note**. This is the page from which you can copy from an existing vendor invoice to your return order. This is the same page that's used for other copy actions. But because we've opened it from the Credit note action, the page is configured to support the creation of a return order that offsets vendor invoices.  
 7. Expand the **Parameters** section.
     - The **Invert sign** option is automatically selected, and cannot be changed. This ensures that the sign is changed for the quantities, and that order lines that are added will offset the vendor invoice.  

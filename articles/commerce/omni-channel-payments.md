@@ -5,7 +5,7 @@ title: Omni-channel payments overview
 description: This topic provides an overview of omni-channel payments in Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+#ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: 
@@ -73,11 +73,14 @@ The following components and setup steps are required:
 
 - **eCommerce integration:** An integration with Commerce is required to support scenarios where an order originates in an online storefront. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the reference storefront supports omni-channel payment scenarios. 
 - **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that topic, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
-- **Omni-channel payments configuration:** In the back office, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
+- **Omni-channel payments configuration:** In the back office, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**. In Commerce versions 10.0.12 and later, this setting is in the **Feature Management** workspace. Select the **Omni-channel payments** feature and click **Enable now**. 
 - **Payment services:** The call center uses the default payment connector on the **Payment services** page to process payments. To support scenarios such as "Buy in call center, pick up in store," this default payment connector must be the Adyen payment connector or a payment connector that meets the implementation requirements for omni-channel payments.
 - **EFT service:** Payments through a payment terminal must be set up on the **EFT service** FastTab of the hardware profile. The Adyen connector supports omni-channel payments scenarios out of the box. Other payment connectors that support the **iNamedRequestHandler** interface can also be used if they support omni-channel payments.
 - **Payment connector availability:** When an order is recalled, the payment tender lines that are recalled together with the order include the name of the payment connector that was used to create the authorizations that are associated with that order. When the order is fulfilled, the Payments SDK tries to use the same connector that was used to create the original authorization. Therefore, a payment connector that has the same merchant properties must be available for capture. 
 - **Card types:** For omni-channel scenarios to work properly, each channel must have the same setup for tender types that can be used for omni-channel. This setup includes payment method IDs and card type IDs. For example, if the **Cards** tender type has an ID of **2** in the online store setup, it should have the same ID in the retail store setup. The same requirement applies to card type IDs. If card number **12** is set to **VISA** in the online store, the same ID should be set up for the retail store. 
+- The Retail Modern POS for Windows or Android with built-in hardware station
+    -or-
+- Modern POS for iOS or Cloud POS with connected shared hardware station. 
 
 ### Basic principle supporting omni-channel payments
 
@@ -96,6 +99,9 @@ The following omni-channel payment scenarios are supported:
 - Buy in store A, pick up in store B
 - Buy in store A, ship to customer
 
+    > [!NOTE]
+    > Payments made in the call center that map to the "Normal" payment function must be marked as **Prepay** = **Yes** to be reflected in the amount due when recalling the order in the POS. Non-prepay payments of type "Normal" are not recognized when the order is recalled in POS. 
+
 Variations of these scenarios are also supported. For example, an online order might include both lines that will be shipped to the customer and lines that will be picked up in a store. All order fulfillment options are supported via omni-channel payments. 
 
 The following sections describe the steps for each scenario and show how to run the scenario by using demo data. 
@@ -105,8 +111,11 @@ The following sections describe the steps for each scenario and show how to run 
 Before you start, make sure that the following prerequisites are in place:
 
 - You have a reference storefront where the Adyen connector is configured.
-- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**.
+- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this settng is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
 - The Adyen payment connector is configured for the Houston POS register.
+- The Retail Modern POS for Windows or Android with built-in hardware station
+    -or-
+- Modern POS for iOS or Cloud POS with connected shared hardware station. 
 
 Follow these steps to run the scenario.
 
@@ -191,8 +200,8 @@ Follow these steps to run the scenario.
 2. On the **Transaction** page, add Karen Berg to the transaction by using the number pad to enter **2001**.
 3. Add one or more lines to the transaction.
 4. Select **Orders** to see the order options.
-5. Select **Pick up all**, and then, when you're prompted, select **Customer order**.
-6. In the search bar, enter **Seattle**, and then select the **Seattle** store for pickup. 
+5. Select **Ship all**, and then, when you're prompted, select **Customer order**.
+6. In the shipping method page, select **Standard overnight**, and then select **OK** to accept today's date as the shipping date. 
 7. Select **OK** to accept the current date as the date of pickup.
 8. Select **Pay card** to initiate the payment.
 9. Tender the card payment for the amount that is due for the deposit. 
@@ -234,3 +243,5 @@ When an order that has multiple tenders and multiple lines is picked up, the cas
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Configure BOPIS in a Dynamics 365 Commerce evaluation environment](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
+

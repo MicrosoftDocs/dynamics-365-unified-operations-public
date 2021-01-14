@@ -20,7 +20,7 @@ ms.reviewer: kfend
 # ms.suite: 
 # ms.tgt_pltfrm: 
 ms.search.region: India
-# ms.search.scope: 
+# # ms.search.scope: 
 # ms.search.industry: 
 ms.author: riluan
 ms.dyn365.ops.version: 7.3

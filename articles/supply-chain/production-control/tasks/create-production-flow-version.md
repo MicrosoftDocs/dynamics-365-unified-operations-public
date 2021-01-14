@@ -4,7 +4,7 @@
 title: Create a production flow version
 description: This procedure focuses on creating a new production flow version. 
 author: cvocph
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

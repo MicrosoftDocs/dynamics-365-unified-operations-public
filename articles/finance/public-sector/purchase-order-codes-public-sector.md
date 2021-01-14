@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase order codes in the public sector
-description: This article provides information about the codes and special messages that can be used with confirming purchase orders. A confirming purchase order bypasses the typical purchasing process.
+description: This topic provides information about the codes and special messages that can be used with confirming purchase orders.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,7 @@ ms.search.form: ConfirmingPOCodes, PurchTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27291
 ms.assetid: 65032886-4dc6-4411-98c8-8969287fd7df

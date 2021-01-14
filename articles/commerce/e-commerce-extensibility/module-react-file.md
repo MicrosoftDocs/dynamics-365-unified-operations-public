@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -45,11 +45,6 @@ The default template of a module breaks up the React component and view into two
 The following example shows the default React component file for a new module.
 
 ```typescript
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
 import * as React from 'react';
 
 import { IProductFeatureData } from './product-feature.data';
@@ -77,6 +72,8 @@ export default ProductFeature;
 Configuration properties that are defined in the module definition file (MODULE\_NAME.definition.json) and data properties file (MODULE\_NAME.data.ts) can be accessed in the module view file by using the **this.props.config.\*** and **this.props.data.\*** application programming interface (API) properties.
 
 ## Additional resources
+
+[Modules overview](modules-overview.md)
 
 [Module definition file](module-definition-file.md)
 

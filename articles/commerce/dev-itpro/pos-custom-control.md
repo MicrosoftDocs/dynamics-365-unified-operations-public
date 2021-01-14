@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -53,8 +52,8 @@ The following table shows the views that support custom controls in POS.
 | Cart view/Transaction page | Yes                      | Yes                             |
 | Customer details view      | Yes                      | No                              |
 | Product details view       | Yes                      | No                              |
-| Customer Add/Edit view     | Yes (work in progress)   | No                              |
-| Address Add/Edit view      | Yes (work in progress)   | No                              |
+| Customer Add/Edit view     | Yes    | No                              |
+| Address Add/Edit view      | Yes    | No                              |
 
 > [!NOTE]
 > Custom controls are supported only in the following product versions:
@@ -106,14 +105,6 @@ The following example shows how you can use extension to add custom controls to 
 8. Open the **ProductAvailabilityPanel.ts** file, and paste the following code into it.
 
     ```typescript
-    /**
-        SAMPLE CODE NOTICE
-        THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-        OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-        THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-        NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-    **/
-
     import {
         SimpleProductDetailsCustomControlBase,
         ISimpleProductDetailsCustomControlState,

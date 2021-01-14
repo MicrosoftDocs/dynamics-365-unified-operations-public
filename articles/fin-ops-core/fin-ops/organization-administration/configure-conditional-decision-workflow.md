@@ -3,7 +3,7 @@
 
 title: Configure conditional decisions in a workflow
 description: Use the following procedure to configure the properties of a conditional decision.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 195703
 ms.assetid: cd5554a4-210c-4c20-a7d3-4b1563c2b5df
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

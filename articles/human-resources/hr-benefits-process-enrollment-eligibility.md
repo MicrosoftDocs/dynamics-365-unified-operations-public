@@ -5,7 +5,7 @@ title: Process enrollment eligibility
 description: This article explains how to run the enrollment eligibility process.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BenefitWorkspace
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Process enrollment eligibility
-
-[!include [banner](includes/preview-feature.md)]
 
 This article explains how to run the enrollment eligibility process.
 

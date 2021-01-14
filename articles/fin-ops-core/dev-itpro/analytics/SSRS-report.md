@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 203494
 ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
@@ -44,4 +43,4 @@ Reports can be defined simply as any visualization of a structured data set. Thi
 For more information, see [Create reporting solutions](create-nextgen-reporting-solutions.md).
 
 ## To view the report
-The [SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each report that is available. The report indicates the data set used for each report, as well as the filters and fields available on each report.
+The [SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each report that is available. The report indicates the data set used for each report, as well as the filters and fields available on each report. For more information, see [Find information about standard data entities](../data-entities/data-entities-report.md).

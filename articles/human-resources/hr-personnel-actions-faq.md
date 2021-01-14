@@ -13,13 +13,13 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: HcmPositionActionDetail
+# ms.search.form: HcmPositionActionDetail, HcmPersonnelManagementWorkspace
 # ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+# ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8

@@ -6,7 +6,7 @@ description: In the area of right-to-left (RTL) language support, one considerat
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: reference
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
@@ -17,8 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 104543
 ms.assetid: f0d7680c-bf07-44e7-83d8-381e4471f45e

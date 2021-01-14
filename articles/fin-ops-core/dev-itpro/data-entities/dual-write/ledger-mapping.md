@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated ledger
-description: This topic describes the integration of ledger data between Finance and Operations and other Dynamics 365 applications using the Common Data Service.
+description: This topic describes the integration of ledger data between Finance and Operations and other Dynamics 365 applications using the Dataverse.
 author:  robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: 
+ms.author: rhaertle
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2019-07-15
 
@@ -34,13 +33,15 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 In a business application, ledger data defines the core set up for how a company does business. For example, ledger data describes the fiscal year the company follows, the currencies it transacts in, and the accounts it uses. This topic describes the integration of this core financial data.
 
 ## Templates
 
-Ledger data includes a collection of core financial entity maps that work together during data interaction, as shown in the following table.
+Ledger data includes a collection of core financial table maps that work together during data interaction, as shown in the following table.
 
 Finance and Operations apps      | Model-driven app in Dynamics 365 | Description
 ---------------------------------|----------------------------------|------------
@@ -71,8 +72,6 @@ LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
 [!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
 
 [!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Ledger fiscal periods](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
 
 [!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
 

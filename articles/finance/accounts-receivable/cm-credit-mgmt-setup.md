@@ -5,7 +5,7 @@ title: Credit management parameters setup
 description: This topic describes the options that you can use to configure Credit management to meet your business's requirements.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -42,7 +42,7 @@ There are four FastTabs in the **Credit** section where you can change the param
 
 ### Credit holds
 
-- Set the **Allow edit of sales orders value after order hold is released** option to **Yes** to require that the posting rules be checked again if the sales order value (extended price) has been changed since the sales order was released from the on-hold list. .
+- Set the **Allow edit of sales orders value after order hold is released** option to **No** to require that the posting rules be checked again if the sales order value (extended price) has been increased since the sales order was released from the on-hold list. .
 - In the **Reasons for canceled orders** field, select the release reason that will be used by default when a sales order that was on credit management hold is canceled.
 - Set the **Check customer credit groups credit limit** option to **Yes** to check the credit limit of a customer credit group when the customer on a sales order belongs to a customer credit group. The credit limit for the group will be checked, and then, if it's sufficient, the credit limit for the customer will be checked.
 - Set the **Check credit limit when payment terms are increased** option to **Yes** to check the payment terms rankings to determine whether the payment terms on the sales order differ from the default payment terms for the customer. If the new payment terms have a higher rank than the original payment terms, the order is put on credit management hold.

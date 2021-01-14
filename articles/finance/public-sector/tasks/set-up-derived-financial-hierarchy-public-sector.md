@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up a derived financial hierarchy in the public sector
-description: To meet Common Government-wide Accounting Classification (CGAC) requirements, public sector organizations can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values. 
+description: This topic provides information about using derived financial hierarchies to work with posted transaction data for main and full account numbers and financial dimension values. 
 author: twheeloc
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -17,7 +17,7 @@ ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
+# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

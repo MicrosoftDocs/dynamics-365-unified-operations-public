@@ -3,7 +3,7 @@
 
 title: Business events and Azure Service Bus
 description: This topic explains how to configure a Microsoft Azure Service Bus endpoint and how to consume a business event from Service Bus.
-author: ibenbouzid
+author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/04/2019
 ms.topic: article
@@ -17,11 +17,10 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
@@ -212,7 +211,7 @@ The business scenario involves sending an email or a message to a team channel w
 
     Next, you will select a final action, such as sending a notification email that includes customer payment details.
 
-18. Search for the **send email** action, and then sign in to your Microsoft Office 365 account.
+18. Search for the **send email** action, and then sign in to your Microsoft 365 account.
 19. Fill in the message with the required fields.
 
     <img alt="Logic apps action send email " src="../../media/BEF-Howto-servicebus-25.png" width="70%">

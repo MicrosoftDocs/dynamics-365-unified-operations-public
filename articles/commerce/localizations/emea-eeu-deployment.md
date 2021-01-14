@@ -16,7 +16,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
+#ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Eastern Europe

@@ -4,7 +4,7 @@ title: Goods in transit from vendor
 description: This topic provides information about the settings and actions that are required for the Counting act for goods in transit (INV-6) report.
 author: anasyash
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 8.1.2
 
 ---
 
-# Goods in transit from vendor
+# Goods in transit from vendor (Russia)
 
 [!include [banner](../includes/banner.md)]
 

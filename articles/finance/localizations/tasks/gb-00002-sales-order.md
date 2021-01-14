@@ -17,7 +17,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTran
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
+# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
@@ -59,7 +59,7 @@ Prior to this task, the "Set up reverse charge VAT" tasks should be completed.
 13. Click OK.
 14. Expand or collapse the Line details section.
 15. Click the Setup tab.
-    * Ensure that he Sales tax group is set to Reverse charge VAT: RC-VAT-AR.  
+    * Ensure that the Sales tax group is set to Reverse charge VAT: RC-VAT-AR.  
 16. On the Action Pane, click Sell.
 17. Click Sales tax.
     * Ensure that the reverse charge VAT is calculated in the Sales tax transactions.  

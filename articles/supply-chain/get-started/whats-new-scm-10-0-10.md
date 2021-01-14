@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.10. 
 author: kamaybac
-manager: AnnBe
-ms.date: 04/01/2020
+manager: tfehr
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,10 +29,9 @@ ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
 
 ---
-# Preview features in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.10. This version has a build number of 10.0.420 and is available as follows:
 
@@ -45,10 +44,16 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 - [Enhancement to use existing catch weight tags with warehouse management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
-- [Inbound load management enhancements for warehouse management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)
+
+- [Inbound load management enhancements for warehouse management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - For more information, see [Warehouse handling of inbound loads for purchase orders](../warehousing/inbound-load-handling.md).
+
+- [Label printing enhancements for warehouse management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - For more information, see [Document routing layout for license plate labels](../warehousing/document-routing-layout-for-license-plates.md).
+
 - [Master planning includes items with on-hand inventory when pre-processing filters are enabled](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+
 - [New data entities for the manufacturing area](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Quality management for warehouse processes](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
+
+- [Quality management for warehouse processes](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - For more information, see [Quality management for warehouse processes](../inventory/quality-management-for-warehouses-processes.md).
 
 ## Additional resources
 

@@ -5,7 +5,7 @@ title: Backup storage of ER templates
 description: This topic explains how to use the Electronic reporting (ER) backup storage for recovery of templates.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid:
@@ -47,6 +46,8 @@ The Backup storage of ER templates feature can help you make your templates so t
 > [!NOTE]
 > This feature can be used only when Blob storage has been selected as the physical storage location for ER templates.
 
+## Automated recovery and notification
+
 For this feature, every template of a new ER format configuration in the current environment is automatically saved to the backup storage location for templates (the ERDocuDatabaseStorage database table) when the following events occur:
 
 - You import a new ER format configuration that contains a template.
@@ -62,7 +63,7 @@ If a template of an ER format is required for generation of outbound documents, 
     - If this parameter is set to **Off**, the message recommends that you start the batch process to automatically fix similar issues for other ER format configuration templates. The message includes a link that you can use to start the batch process.
     - If this parameter is set to **On**, the message notifies you that a missing templates issue has been discovered, and that a new batch process, **Restore broken templates from internal database backup**, has been automatically scheduled. This batch process will automatically fix similar issues for other templates.
 
-To set up the he **Automatically run the procedure of restoring the broken templates in batch** parameter, complete the following steps:
+To set up the **Automatically run the procedure of restoring the broken templates in batch** parameter, complete the following steps:
 
 1. In Finance and Operations, open the **Organization administration \> Electronic reporting \> Configurations page**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
@@ -92,6 +93,10 @@ If you set the **Stop making backup copies of templates** option to **Yes** and 
 If you upgraded your environment to Finance and Operations version 10.0.5 (October 2019) and want to migrate to a new environment that includes ER format configurations that can be run, select **Fill in backup storage** on the **Electronic reporting parameters** page before the migration occurs. This button starts the process of making backup copies of all available templates, so that they can be stored in the ER backup storage location for templates.
 
 ![Electronic reporting parameters page](./media/GER-BackupTemplates-5.png)
+
+## Manual recovery
+
+Go to **Organization administration** \> **Electronic reporting** \> **Restore broken templates** to manually initiate the process of restoring ER templates from the backup storage location to the primary storage location. Before you start this process, on the **Restore broken templates** page you can specify whether it will be performed interactively, or the batch process will be scheduled for this.
 
 ## Supported deployments
 

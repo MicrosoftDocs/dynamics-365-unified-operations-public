@@ -4,7 +4,7 @@
 title: Sales orders mobile workspace
 description: This topic provides information about the Sales orders mobile workspace. This workspace helps you stay up to date about your sales orders anywhere and anytime. 
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267134
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84

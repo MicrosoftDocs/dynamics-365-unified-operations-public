@@ -17,12 +17,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
+#ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BriShoo
+ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: 
 
@@ -118,11 +118,11 @@ Your new Azure AD B2C tenant should now appear in the list under **Manage B2C Ap
 
 [Configure your domain name](configure-your-domain-name.md)
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
-[Associate an online site with a channel](associate-site-online-store.md)
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 

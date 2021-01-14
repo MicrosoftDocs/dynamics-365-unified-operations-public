@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -38,7 +38,7 @@ This topic describes how to create a new call center channel in Microsoft Dynami
 ## Overview
 
 
-In Dynamics 365 Commerce, a call center is a type of retail channel that can be defined in the application. Defining a channel for your call center entities allows the system to tie specific data and order processing defaults to sales orders. While a company can define multiple call center channels in Commerce, it is important to note that an individual user may only be linked to one call center channel. 
+In Dynamics 365 Commerce, a call center is a type of Commerce channel that can be defined in the application. Defining a channel for your call center entities allows the system to tie specific data and order processing defaults to sales orders. While a company can define multiple call center channels in Commerce, it is important to note that an individual user may only be linked to one call center channel. 
 
 Before you create a new call center channel, ensure that you have completed the [Channel setup prerequisites](channels-prerequisites.md).
 
@@ -51,7 +51,7 @@ To create and configure a new call center channel, follow these steps.
 1. In the **Name** field, provide a name for the new channel.
 1. Select the appropriate **Legal entity** from the drop-down.
 1. Select the appropriate **Warehouse** location from the drop-down. This location will be used as the default on sales orders created for this call center channel, unless other defaults have been defined at the customer or item level.
-1. In the **Default customer** field, provide a valid default customer. This data is used to assist in auto-populating defaults when new customer records are created. When creating call center orders, it is not advisable to create orders for the default customer.
+1. In the **Default customer** field, provide a valid default customer. This data is used to assist in autopopulating defaults when new customer records are created. When creating call center orders, it is not advisable to create orders for the default customer.
 1. In the **Email notification profile** field, provide a valid email notification profile. As call center orders are created and processed, the email notification profile is used to trigger automated email alerts to customers with information about their order status.
 1. Provide a **Price override** info code. You may need to create an info code for this first. This info code provides the set of reason codes that the user will be prompted to choose from when using the price override functionality on a call center order.
 1. Provide a **Hold code** info code. You may need to create an info code for this first. This info code provides the set of optional reason codes that the user will be prompted to choose from when placing an order on hold.
@@ -88,7 +88,7 @@ To set up payment methods, follow these steps for each payment type supported on
 
 The following image shows an example of a cash payment method.
 
-![Example payment methods](media/channel-setup-retail-5.png)
+![Example payment methods](media/channel-setup-callcenter-payments.png)
 
 ### Set up modes of delivery
 
@@ -108,7 +108,7 @@ The following image shows an example of a mode of delivery.
 
 ### Set up channel users
 
-To create a sales order that is linked to the call center channel from Commerce Headquarters, the user creating the sales order must be linked to the call center channel. The user can not manually link a sales order created in Commerce Headquarters to the call center channel. The link is systematic, and is based on the user and the user's relationship to the call center channel. A user may only be linked to one call center channel.
+To create a sales order that is linked to the call center channel from Commerce Headquarters, the user creating the sales order must be linked to the call center channel. The user cannot manually link a sales order created in Commerce Headquarters to the call center channel. The link is systematic, and is based on the user and the user's relationship to the call center channel. A user may only be linked to one call center channel.
 
 1. On the action pane, select the **Channel** tab, and then select **Channel users**.
 1. On the action pane, select **New**.

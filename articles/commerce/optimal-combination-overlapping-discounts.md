@@ -18,7 +18,7 @@ ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9

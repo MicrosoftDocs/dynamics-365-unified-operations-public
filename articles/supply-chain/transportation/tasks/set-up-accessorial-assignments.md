@@ -4,7 +4,7 @@
 title: Set up accessorial assignments
 description: This procedure shows how to set up an accessorial assignment. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
@@ -13,16 +13,16 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TMSAccessorialAssignment
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

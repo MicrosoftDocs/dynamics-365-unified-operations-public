@@ -18,7 +18,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Overview
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
 
@@ -56,6 +58,8 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
 
 - [Manage features](hr-admin-manage-features.md)
 
+- [Configure and manage database logging](hr-admin-database-logging.md)
+
 - Explore the user interface
   - [User interface elements](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
   - [Accessibility features](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
@@ -80,7 +84,6 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
 - Documentation resources
   - [Help system](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
   - [Connect the Help system](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [Connect a custom help site](../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        )
   - [View and export field descriptions](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
   - [Task Recorder](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Create documentation or training with Task Recorder](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)

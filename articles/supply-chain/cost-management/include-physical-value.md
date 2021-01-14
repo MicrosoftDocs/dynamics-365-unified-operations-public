@@ -4,7 +4,7 @@
 title: Include physical value
 description: You use the Include physical value check box on the Inventory model FastTab of the Item model groups page to specify whether physically updated transactions are considered when the running average cost price is calculated for an item.
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
@@ -17,8 +17,8 @@ ms.search.form: InventModelGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79033
 ms.assetid: 1928c145-bf82-436d-87ca-e7a173e31923

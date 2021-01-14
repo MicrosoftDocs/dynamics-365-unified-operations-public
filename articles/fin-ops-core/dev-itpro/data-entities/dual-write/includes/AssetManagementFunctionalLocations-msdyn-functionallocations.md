@@ -1,8 +1,8 @@
 ## Asset management functional locations to msdyn_functionallocations
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Finance and Operations apps | Map type | model-driven apps in Dynamics 365 | Default value
+Finance and Operations apps | Map type | Customer engagement apps | Default value
 ---|---|---|---
 FUNCTIONALLOCATIONID | = | msdyn_functionallocation_id | 
 INVENTORYLOCATIONID | = | msdyn_inventorylocationid | 

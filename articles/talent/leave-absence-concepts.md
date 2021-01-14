@@ -17,7 +17,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
+# ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

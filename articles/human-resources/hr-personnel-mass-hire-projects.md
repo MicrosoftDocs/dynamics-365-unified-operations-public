@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HRMMassHireProject
+ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9

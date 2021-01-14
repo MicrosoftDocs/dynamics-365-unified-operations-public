@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+#ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Retail 10.0.9 update
 # Create and update a returns and refunds policy for a channel
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
-
 
 ## Overview
 

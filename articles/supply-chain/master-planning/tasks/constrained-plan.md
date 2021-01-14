@@ -4,7 +4,7 @@
 title: Generate a constrained plan
 description: This topic explains how to create a plan that takes into account both material and capacity constraints. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqPlanSched   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

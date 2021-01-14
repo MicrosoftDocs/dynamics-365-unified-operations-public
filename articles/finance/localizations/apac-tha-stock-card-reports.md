@@ -17,7 +17,7 @@ ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265184
 ms.assetid: 1ce8c70b-c6af-4171-98d2-2aa8e9563c5b

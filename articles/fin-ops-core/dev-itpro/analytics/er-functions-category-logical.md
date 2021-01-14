@@ -5,7 +5,7 @@ title: List of ER functions in the logical category
 description: This topic provides information about the logical functions that are supported in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -46,6 +45,8 @@ Electronic reporting (ER) logical functions can be used to work with logical val
 | [Not](er-functions-logical-not.md)                       | This function returns the reversed logical value of the specified condition as a *Boolean* value. |
 | [Or](er-functions-logical-or.md)                         | This function returns a *Boolean* value of **FALSE** if all the specified conditions are false. If any specified condition is true, the function returns a *Boolean* value of **TRUE**. |
 | [ValueIn](er-functions-logical-valuein.md)               | This function determines whether the specified input matches any value of a specified item in the specified list. It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | This function determines whether the specified input of the *Int64* or *Integer* type matches any value of a specified item in the specified list. It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. |
+
 
 ## Additional resources
 

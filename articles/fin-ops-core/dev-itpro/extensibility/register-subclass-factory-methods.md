@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -73,19 +72,23 @@ In X++, two extension frameworks serve the same purpose. The implementer of the 
 
 4. Decorate your subclass with the attribute that was used to match your variation.
 
-**SysExtension example**
+## SysExtension example
 
-    [WHSWorkExecuteMode(WHSWorkExecuteMode::About)]
-    class WHSWorkExecuteDisplayAbout extends WHSWorkExecuteDisplay
-    {
-        // Your code here.
-    }
+```xpp
+[WHSWorkExecuteMode(WHSWorkExecuteMode::About)]
+class WHSWorkExecuteDisplayAbout extends WHSWorkExecuteDisplay
+{
+    // Your code here.
+}
+```
 
-**SysPlugin example**
+## SysPlugin example
 
-    [ExportMetadataAttribute('CaseIAssociation', 'Lead'),
-    ExportAttribute('Dynamics.AX.Application.CaseIAssociation')]
-    class smmLeadCaseAssociationProvider implements CaseIAssociation
-    {
-        // Your code here.
-    }
+```xpp
+[ExportMetadataAttribute('CaseIAssociation', 'Lead'),
+ExportAttribute('Dynamics.AX.Application.CaseIAssociation')]
+class smmLeadCaseAssociationProvider implements CaseIAssociation
+{
+    // Your code here.
+}
+```

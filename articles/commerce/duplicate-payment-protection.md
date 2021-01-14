@@ -5,7 +5,7 @@ title: Duplicate payments prevention
 description: This topic describes how Dynamics 365 Commerce helps to prevent duplicate payments in the Modern POS.
 author: rubendel
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+#ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -41,6 +41,9 @@ This topic provides an overview of the duplicate payments protection feature for
 This topic describes the user experience when the point of sale (POS) recovers from a loss of communication with the payment terminal, which causes the POS and the payment terminal to be out of sync.
 
 The duplicate payment protection feature ensures that Modern POS can seamlessly recover from a loss of communication without requiring the shopper to process another payment through the payment terminal, which can lead to duplicate payments.
+
+> [!NOTE]
+> The duplicate payments protection feature is only supported for payments made using payment terminals.
 
 This topic covers the following aspects of the duplicate payment protection feature:
 
@@ -88,9 +91,9 @@ The duplicate payment protection feature is applicable to any scenario in which 
 
 ### Payment recovery scenarios
 
-Once the point of sale or network communications have been recovered, there are several scenarios that will result in the cashier being prompted to use the previous payment. Here are a few scenarios that can trigger payment recovery:
+Once the POS or network communications have been recovered, there are several scenarios that will result in the cashier being prompted to use the previous payment. Here are a few scenarios that can trigger payment recovery:
 
-If there is a unrecovered payment and the cashier takes one of the following actions, the cashier is shown a dialog box indicating that a payment has already been made.
+If there is an unrecovered payment and the cashier takes one of the following actions, the cashier is shown a dialog box indicating that a payment has already been made.
 
 - Invokes another payment for any amount using a card payment.
 - Invokes another payment for any amount using a cash payment.

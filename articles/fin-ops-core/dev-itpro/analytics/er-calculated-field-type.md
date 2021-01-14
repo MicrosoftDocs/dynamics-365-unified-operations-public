@@ -5,7 +5,7 @@ title: Support parameterized calls of ER data sources of the Calculated field ty
 description: This topic provides information about how to use the Calculated field type for ER data sources.
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -51,15 +50,14 @@ To complete the examples in this topic, you must have the following access:
     - Electronic reporting functional consultant
     - System administrator
 
-From the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684), download the zipped (compressed) file **Support parameterized calls of ER data sources of Calculated field type**. It contains the following ER configurations that must be extracted
-and stored locally.
+You must also download and locally store the following files.
 
 | **Content**                           | **File name**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Sample ER data model configuration    | Model to learn parameterized calls.version.1.xml     |
-| Sample ER metadata configuration      | Metadata to learn parameterized calls.version.1.xml  |
-| Sample ER model mapping configuration | Mapping to learn parameterized calls.version.1.1.xml |
-| Sample ER format configuration        | Format to learn parameterized calls.version.1.1.xml  |
+| Sample ER data model configuration    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| Sample ER metadata configuration      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Sample ER model mapping configuration | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Sample ER format configuration        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## Sign in to your RCS instance
 In this example, you will create a configuration for the sample company, Litware, Inc. First, in RCS, you must complete the steps in the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure:
@@ -346,4 +344,7 @@ You can import reviewed configurations from RCS by using the ER repository of th
 8. Compare the contents of the generated outputs.
 
 ## Additional resources
-[Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+
+- [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+- [Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md)
+

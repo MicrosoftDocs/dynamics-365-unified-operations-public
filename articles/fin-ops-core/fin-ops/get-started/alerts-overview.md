@@ -18,7 +18,6 @@ ms.search.form: EventCreateRule
 audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -78,10 +77,6 @@ An alert rule has five components:
 
     > [!NOTE]
     > This option is restricted to organization administrators.
-
-## Email notifications from alerts
-
-Email notifications from alerts are not yet enabled. This will be enabled in a future update.
 
 ## Videos
 

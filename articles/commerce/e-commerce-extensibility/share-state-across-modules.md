@@ -5,7 +5,7 @@ title: Share state across modules
 description: This topic describes how to share state across multiple modules by using data actions in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 03/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Share state across modules
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to share state across multiple modules by using data actions in Dynamics 365 Commerce.
@@ -217,6 +216,8 @@ As you can see, the **onClick** handler makes a call to the **actionContext.upda
 [Batch data actions](batch-data-actions.md)
 
 [Create an observable data action](create-observable-data-action.md)
+
+[Data action cache settings](data-action-cache-settings.md)
 
 [Data action overrides](data-action-overrides.md)
 

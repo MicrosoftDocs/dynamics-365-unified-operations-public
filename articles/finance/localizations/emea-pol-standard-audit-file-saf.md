@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 03/20/2020
+ms.date: 08/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -48,6 +48,9 @@ To specify an Electronic reporting (ER) format for each SAF-T scheme, click **Ge
 -   SAF VAT invoices
 
 Each ER format should be predefined and can be updated in ER.
+
+### Main accounts
+In Polish SAF-T Financial data, main accounts that are used in Finance must be associated with Polish standard accounts for the purpose of SAF-T reporting. The setup required is similar to [Norwegian SAF-T Main Accounts](emea-nor-satndard-audit-file-for-tax.md#main-accounts).
 
 ## Generate a SAF Accounting books file
 To generate a SAF Accounting books file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Accounting books**, and set the following parameters.
@@ -74,7 +77,7 @@ To generate a SAF Bank statement file, click **General ledger > Inquiries and re
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file. |
 | **Bank account**             | Specify the bank account to export transactions for.                               |
 
- 
+The **SAF Bank statement** file includes information about transactions posted during the specified period of time for the bank account selected on the report's dialog. The name of the counterparty reported in the **NazwaPodmiotu** element is collected from the **Customers** (**Accounts receivable** > **Customers** > **All customers**) and **Vendors** (**Accounts payable** > **Vendors** > **All vendors**) master data of the system registered in the legal entity as it relates to the posted bank transaction. The operation description reported in the **OpisOperacji** element is collected from the **Description** field of the bank transaction.
 
 ## Generate a SAF Inventory file
 To generate a SAF Inventory file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Inventory**, and set the following parameters.
@@ -91,10 +94,10 @@ To generate a SAF Inventory file, click **General ledger > Inquiries and reports
 ## Generate a SAF VAT sales and purchase register
 Before you can generate a SAF value-added tax (VAT) sales and purchase register, you must complete the following additional setup:
 
--   Set up sales tax authorities.
--   Set up sales tax codes for VAT reporting.
--   Set up sales tax codes.
--   Configure the ER model, and format for the report.
+1. Set up sales tax authorities.
+2. Set up sales tax codes for VAT reporting.
+3. Set up sales tax codes.
+4. Configure the ER model, and format for the report.
 
 For more information about the setup of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
 
@@ -425,7 +428,7 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>-</td>
 </tr>
 <tr>
-<td>111119</td>
+<td>11119</td>
 <td>Taxable sales (Reverse charge)</td>
 <td>K_29</td>
 <td>+</td>
@@ -556,7 +559,7 @@ To review or change the configuration for the SAF VAT sales and purchase registe
 -   [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Localization requirements - Create a ER configuration](../../dev-itpro/analytics/electronic-reporting-configuration.md)
 
-Initially, the configuration is an example of VAT Register based on Reporting codes described in table above. If you need to adopt the configuration to another set of reporting codes, you should derive the format of the configuration. To do so, select the format in the configuration's tree and click **Create configuration** in **Main menu**. **Mark Derive from name:...,** fill in **Name** and **Description** fields of a new format and click **Create configuration** button. Created format is a copy of the parent format. Select the created format and click **Designer** on the **Main menu** to open format designer and update format with your reporting codes. Format designer window is divided into two parts: the left side â€“ is a format structure (in VAT register case it is a XML scheme); the right side â€“ is a Data Model (data). Press **Mapping** button in the right side to see the **Data model**. The Data Model includes all the field for all the SAF-T reports. VAT register format is mapped mostly to the **TaxTransaction** node. Scroll down the tree to find and select it. All tax transactions are grouped into two groups: for tag **SprzedazWiersz** and for tag **ZakupWiersz**. And called **$SalesList** and **$PurchaseList**, respectively. These are record lists calculated (filtered) by formulas. You can review and modify formula in formula redactor. To do so, select calculated field or record list (in this particular case) and click **Edit** in tree menu. Edit formulas for **$SalesList** and **$PurchaseList** according to your company's Reporting codes and save them. Formula designer window in the left side shows the Data model where you can select fields or record lists and in the right side all the functions which you may implement. (More information about Format designer - [Formula designer in Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md)). After Tax transactions were divided into two groups, inside each of both groups Tax transactions should be grouped for each tag according to your company's Reporting codes. Find calculated fields "list\_K" under **$SalesList** and **$PurchaseList** and update their formulas with your Reporting codes using Formula Designer. After all "list\_K"? nodes formulas were updated find and modify **SalasCtrl** and **PurchCtrl** under **$SalesList** and **$PurchaseList**, respectively. These nodes are used for **SprzedazCtrl** and **ZakupCtrl** tags, respectively. Basically, no other modifications in the format are needed. Save the format. Close it and complete the format using **Change status** &gt; **Complete** button on the versions menu on **Versions** FastTab on **Configurations**.
+Initially, the configuration is an example of VAT Register based on Reporting codes described in table above. If you need to adopt the configuration to another set of reporting codes, you should derive the format of the configuration. To do so, select the format in the configuration's tree and click **Create configuration** in **Main menu**. **Mark Derive from name:...,** fill in **Name** and **Description** fields of a new format and select **Create configuration**. Created format is a copy of the parent format. Select the created format and click **Designer** on the **Main menu** to open format designer and update format with your reporting codes. Format designer window is divided into two parts: the left side â€“ is a format structure (in VAT register case it is an XML scheme); the right side â€“ is a Data Model (data). Select **Mapping** on the right side to see the **Data model**. The Data Model includes all the field for all the SAF-T reports. VAT register format is mapped mostly to the **TaxTransaction** node. Scroll down the tree to find and select it. All tax transactions are grouped into two groups: for tag **SprzedazWiersz** and for tag **ZakupWiersz**. And called **$SalesList** and **$PurchaseList**, respectively. These are record lists calculated (filtered) by formulas. You can review and modify formula in formula redactor. To do so, select calculated field or record list (in this particular case) and click **Edit** in tree menu. Edit formulas for **$SalesList** and **$PurchaseList** according to your company's Reporting codes and save them. Formula designer window in the left side shows the Data model where you can select fields or record lists and in the right side all the functions that you may implement. (More information about Format designer - [Formula designer in Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md)). After Tax transactions were divided into two groups, inside each of both groups Tax transactions should be grouped for each tag according to your company's Reporting codes. Find calculated fields "list\_K" under **$SalesList** and **$PurchaseList** and update their formulas with your Reporting codes using Formula Designer. After all "list\_K"? nodes formulas are updated, find and modify **SalasCtrl** and **PurchCtrl** under **$SalesList** and **$PurchaseList**, respectively. These nodes are used for **SprzedazCtrl** and **ZakupCtrl** tags, respectively. Basically, no other modifications in the format are needed. Save the format. Close it and complete the format using **Change status** > **Complete** on the versions menu on **Versions** FastTab on **Configurations**.
 
 ### Generate a SAF VAT sales and purchase register
 
@@ -574,12 +577,35 @@ You can specify additional selection parameters by using the **Filter** function
 
 Before you can generate a SAF VAT invoices file, you must complete the following additional setup.
 
--   Set up sales tax authorities.
--   Sales tax codes for VAT reporting.
--   Set up sales tax codes.
--   Configure the ER model, and format for the report.
+1. Set up sales tax authorities.
+2. Sales tax codes for VAT reporting.
+3. Set up sales tax codes.
+4. Configure the ER model, and format for the report.
+5. Configure Application-specific parameters for the format of the report.
 
-This setup resembles the additional setup that you completed for the SAF VAT sales and purchase register excepting **Configure the ER model, and format for the report.**
+Steps one to four of the setup resembles the additional setup that you completed for the **SAF VAT sales and purchase register** excepting **Configure the ER model, and format for the report.**
+
+### Configure the ER model and format for the report
+
+To review or change the configuration for the SAF VAT sales and purchase register, on the **Reporting configurations** page, in the list of models, select the model, **Standard Audit File (SAF-T)**, and then select **Designer** to review or change the model. To review or change the format for the SAF VAT invoices, on the **Reporting configurations** page, under **Standard Audit File (SAF-T)**, select **VAT invoices (PL)**, and then select **Designer**. For more information about Electronic reporting, see the following topics:
+
+- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Localization requirements - Create an ER configuration](../../dev-itpro/analytics/electronic-reporting-configuration.md)
+
+Initially, the configuration is an example of the VAT register based on the reporting codes described in table above. If you need to adopt the configuration to another set of reporting codes, use the configuration to derive the format. 
+
+1. Select the format in the configuration's tree and then, in the **Main menu**, select **Create configuration**. 
+2. Mark **Derive from name:...**, enter the name and description of the new format and then select **Create configuration**. The created format is a copy of the parent format. 
+3. Select the created format, and on the **Main menu**, select **Designer** to open format designer.
+4. Update format with your reporting codes. The **Format designer** window is divided into two parts. The left side is a format structure (in the case of the VAT register case, it is an XML scheme). The right side is a Data model (data). 
+5. On the right side, select **Mapping** to see the Data model. The Data model includes all the fields for all of the SAF-T reports. The **VAT invoices** format includes several parts with different data sources. 
+6. Data under the **Faktura** tag is mapped mostly to the **Model &gt; SourceDocuments &gt; $Invoices** node. Scroll down the tree to find and select the node. 
+7. Under the **Invoices** node, find the calculated fields **list\_P\_** and update their formulas with your reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions that you may implement. For more information about Format designer, see [Formula designer in Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md). The values for tags under the **StawkiPodatku** tag are constants. 
+8. Select the value node (string) for each tag under the **StawkiPodatku** tag and set up its value in the **Value** field on the **Format** tab on the right side of the **Designer** page. No other modifications in the format are needed. 
+9. Save the format, close, and complete the format by selecting **Change status** > **Complete** on the versions menu on **Versions** FastTab on **Configurations**.
+
+### Configure Application-specific parameters for the format of the report
 
 To correctly report some of the important tags in the report, define the application-specific parameters (for versions of the **VAT Invoices (PL)** format starting from 48.36.58). 
 
@@ -589,17 +615,17 @@ To correctly report some of the important tags in the report, define the applica
     | Name            | Short description (English) | Short description (Polish) | Description (English) | Description (Polish) |
     |-----------------|-----------------------|-----------------------|-----------------|-----------------|
     | **TaxFree_LOOKUP** | Tax-free | Tax free | Non-taxable transactions for the supply of goods and services outside the country, exempt from taxation. | Niepodlegające opodatkowaniu-transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
-    | **TaxExemptReason_LOOKUP** | Tax-exempt reason | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | In the case of delivery of goods or provision of services that are exempt from tax in accordance with article 43, paragraph 1; article 113, sections 1 and 9; or provisions that are issued on the basis of article 82, paragraph 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 i 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
+    | **TaxExemptReason_LOOKUP** | Tax-exempt reason | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | When the delivery of goods or the provision of services are exempt from tax in accordance with article 43, paragraph 1; article 113, sections 1 and 9; or provisions that are issued on the basis of article 82, paragraph 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 i 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
     | **ItemType_LOOKUP** | Type of item | Rodzaj przedmiotu | Delivery of second-hand goods, works of art, collector's items, and antiques for which the tax base is constituted in accordance with article 120, paragraph four, margin five. New means of transport are the subject of intra-community supply. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża; W przypadku gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
 
-### TaxFree_LOOKUP
+#### TaxFree_LOOKUP
 
 Starting in JPK_FA v.2, the value of the **P_12** field can report the following values in addition to the tax rate and **zw** (reverse charge): 
 
 - **oo** – Reverse charge as part of domestic transactions
 - **np** – For transactions of delivery of goods and provision of services outside the country
 
-You must set up and use specific exempt codes (**Tax \> Setup \> Sales tax \> Sales tax exempt codes**) for sales tax codes that are set up as exempt in sales tax groups (**Tax \> Indirect tax \> Sales tax \> Sales tax groups**) to distinguish tax transactions by these exempt codes in the report. For the purposes of the report, you have to define which exempt codes must be reported with the given values of the **P_12** tag. Select the **VAT Invoices (PL)** format, open **Configurations** \> **Application specific parameters**, and then, on the Action Pane, select **Setup**. For the latest version of the configuration, on the **Lookups** FastTab, select **TaxFree_LOOKUP**. Then, on the **Conditions** FastTab, define conditions for the following lookup results.
+Set up and use specific exempt codes (**Tax \> Setup \> Sales tax \> Sales tax exempt codes**) for sales tax codes that are set up as exempt in sales tax groups (**Tax \> Indirect tax \> Sales tax \> Sales tax groups**) to distinguish tax transactions by these exempt codes in the report. For the purposes of the report, you have to define which exempt codes must be reported with the given values of the **P_12** tag. Select the **VAT Invoices (PL)** format, open **Configurations** \> **Application specific parameters**, and then, on the Action Pane, select **Setup**. For the latest version of the configuration, on the **Lookups** FastTab, select **TaxFree_LOOKUP**. Then, on the **Conditions** FastTab, define conditions for the following lookup results.
 
 | Lookup result               | Exempt codes |
 |-----------------------------|--------------|
@@ -611,21 +637,23 @@ You must set up and use specific exempt codes (**Tax \> Setup \> Sales tax \> Sa
 
 When you've completed the setup for the **TaxFree_LOOKUP** lookup field and are ready to set up the next lookup field, select **Save**.
 
-### TaxExemptReason_LOOKUP
+#### TaxExemptReason_LOOKUP
 
 Conditions for **TaxExemptReason_LOOKUP** are sales tax exempt codes that are defined in Finance (**Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**) and used in sales tax groups when tax transactions are posted. If no lines on an invoice have sales tax exemptions, the **P_19** field will be reported with a value of **False**, and the **P_19A**, **P_19B**, and **P_19C** tags will be omitted.
 
 - **P_19A** indicates the provision of the act was issued on the basis of which the taxpayer applies tax exemption.
 - **P_19B** indicates the provision of Directive 2006/112/EC, which exempts the supply of goods or such services from such tax.
-- **P_19C** indicates another legal basis that indicates that the supply of goods or services benefits from the exemption.
+- **P_19C** indicates another legal basis that indicates that the supply of goods or services benefit from the exemption.
+
+Specify as the last condition in the list, an **Inne** or **Other** result with the value **Not blank** in the **Tax exempt code** column.
 
 When you've completed the setup for the **TaxExemptReason_LOOKUP** lookup field and are ready to set up the next lookup field, select **Save**.
 
-### ItemType_LOOKUP
+#### ItemType_LOOKUP
 
-The **ItemType_LOOKUP** lookup field is introduced in version 48.36.58 of the **VAT Invoices (PL)** format (the current KB).
+Conditions for **ItemType_LOOKUP** are sales tax codes that are defined in Finance (**Tax** \> **Setup** \> **Sales tax** \> **Sales tax  codes**) and then used when tax transactions are posted. This lookup setup affects the reporting of **P_106E_3A** and **P_22** elements.
 
-The following values are available for setup.
+The following values are available for setup of **ItemType_LOOKUP**.
 
 | Name | Description (English) | Description (Polish) | Setup |
 |------|------------------|------------------|-------|
@@ -633,19 +661,11 @@ The following values are available for setup.
 | **ArtWorks** | Deliveries of works of art for which the tax base is constituted in accordance with article 120, paragraph four, margin five | Dostawy dzieł sztuk dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify the sales tax codes that are used for transactions that are related to works of art. After this setup is completed, an invoice that has tax transactions that use the specified **procedura marży - dzieła sztuki** tax code will be reported in **P_106E_3A**. |
 | **CollectorAntiques** | Deliveries of collector's items and antiques, for which the tax base is constituted in accordance with article 120, paragraph four, margin five | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify the sales tax codes that are used for transactions that are related to collector's items, and antiques. After this setup is completed, an invoice that has tax transactions that use the specified **procedura marży - przedmioty kolekcjonerskie i antyki** tax code will be reported in **P_106E_3A**. |
 | **Transport** | Intra-community delivery of new means of transport | Wewnątrzwspólnotowa dostawa nowych środków transportu | Specify the sales tax codes that are used for transactions that are related to intra-community delivery of new means of transport. After this setup is completed, an invoice that has tax transactions that use the specified **P_22** tax code will be reported with a value of **True**. |
-| **Other** | Other | Inne | Specify **Not blank** in the **Tax Exempt code** field. This value must be the last in the list of values. This value must be mandatory for this lookup. |
+| **Other** | Other | Inne | Specify **Not blank** in the **Tax code** field. This value must be the last in the list of values. This value must be mandatory for this lookup. |
 
-When you've finished configuring the values of the lookup fields, set the **State** field to **Completed**, and then save your changes and close the page. If any lookup field doesn't have at least one **Not blank** value, an error will be thrown when the report is run. The error message will state that the application-specific parameters are missing.
+When you finish configuring the values of the lookup fields, set the **State** field to **Completed**, save your changes, and then close the page. 
 
-### Configure the ER model, and format for the report
-
-To review or change the configuration for the SAF VAT sales and purchase register, on the **Reporting configurations** page, in the list of models, select the **Standard Audit File (SAF-T)** model. Then click **Designer** to review or change the model. To review or change the format for the SAF VAT invoices, on the **Reporting configurations** page, under **Standard Audit File (SAF-T)**, select **VAT invoices (PL)**, and then click **Designer**. For more information about ER, see the following topics:
-
--   [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
--   [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Localization requirements - Create an ER configuration](../../dev-itpro/analytics/electronic-reporting-configuration.md)
-
-Initially, the configuration is an example of VAT Register based on Reporting codes described in table above. If you need to adopt the configuration to another set of reporting codes, you should derive the format of the configuration. To do so, select the format in the configuration's tree and click **Create configuration** in **Main menu**. **Mark Derive from name:...,** fill in **Name** and **Description** fields of a new format and click **Create configuration** button. Created format is a copy of the parent format. Select the created format and click **Designer** on the **Main menu** to open format designer and update format with your reporting codes. Format designer window is divided into two parts: the left side is a format structure (in VAT register case it is a XML scheme); the right side is a Data Model (data). Press **Mapping** button in the right side to see the **Data model**. The Data Model includes all the field for all the SAF-T reports. **VAT invoices** format includes several parts with different data sources. Data under tag **Faktura** is mapped mostly to the **Model &gt; SourceDocuments &gt; $Invoices** node. Scroll down the tree to find and select it. Find calculated fields **list\_P\_** under **$Invoices** node and update their formulas with your Reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions which you may implement. For more information about Format designer, see [Formula designer in Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md). Values for tags under **StawkiPodatku** tag is constants. Select value node (String) for each of tag under **StawkiPodatku** tag and set up its value in **Value** field on **Format** tab on the right side of the **Designer**. Basically, no other modifications in the format are needed. Save the format. Close it and complete the format using **Change status** &gt; **Complete** button on the versions menu on **Versions** FastTab on **Configurations**.
+If any lookup field doesn't have at least one **Not blank** value, an error will occur when the report is run. The error message will state that the application-specific parameters are missing.
 
 ### Generate a SAF VAT invoices
 
@@ -670,7 +690,7 @@ According to the requirements of version 3 of the **JPK_FA** report, when an inv
 
 #### <P_18A> tag
 
-KB #4339927 ("A country specific update for Poland for Split payments in Dynamics 365 for Finance and Operations apps") introduces the setup of methods of payments as split payments in the **Accounts receivable** module.
+KB #4339927 ("A country-specific update for Poland for Split payments in Dynamics 365 for Finance and Operations apps") introduces the setup of methods of payments as split payments in the **Accounts receivable** module.
 
 According to the requirements of version 3 of the **JPK_FA** report, the **<P_18A>** tag for an invoice must be reported as **True** when the split payment mechanism is applied for that invoice. To determine whether the split payment mechanism was applied to the invoice, the system checks the **Split payment** parameter of the method of payment that was used during invoice posting and that is reflected in the corresponding customer transaction in the CustTrans table. It's important that you keep the setup of the **Split payment** parameter for the methods of payment stable to ensure correct reporting.
 
@@ -680,7 +700,7 @@ The **<P_22>** tag will be reported with a value of **True** according to the se
 
 #### <P_106E_3> and <P_106E_3A> tags
 
-According to the requirements of the **JPK_FA** report, the **<P_106E_3>** tag must report **True** in the case of the delivery of second-hand goods, works of art, collector's items, and antiques, for which the taxable base is in accordance with article 120, paragraph four, margin five. When the **<P_106E_3>** tag is reported with a value of **True**, the **<P_106E_3A>** tag must represent related values.
+According to the requirements of the **JPK_FA** report, the **<P_106E_3>** tag must report **True** when the delivery of second-hand goods, works of art, collector's items, and antiques, for which the taxable base is in accordance with article 120, paragraph four, margin five. When the **<P_106E_3>** tag is reported with a value of **True**, the **<P_106E_3A>** tag must represent related values.
 
 | Value of the <P_106E_3A> tag | Description (Polish) | Description (English) | How Finance distinguishes the tag |
 |--------|--------------------|------------------|-------|
@@ -710,5 +730,5 @@ The value of the **WartoscZamowien** tag of the **ZamowienieCtrl** node is calcu
 
 ## Using batch jobs for SAFT
 
-Generating SAF-T reports for a long period such as month or a quarter can include a huge data and take a long time. For such cases, it is recommended to use batch jobs. Dialog page for every SAF-T report has a **Run in the background** tab. Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. To learn more about batch processing see the [Batch processing overview](../../dev-itpro/sysadmin/batch-processing-overview.md) topic. To review batch jobs or find generated file open **Organization administration** &gt; **Electronic reporting** &gt; **Electronic reporting jobs** and find a line related to your job. Click **Show log** button on the **Main menu**. If nothing is shown it means that no messages were produced during the file generation. To see the file click **Show files** button on **Main menu**, find a file that you need and click **Open** on the **Main menu** to review or save the file.  
+Generating SAF-T reports for a long period such as month or a quarter can include a huge data and take a long time. For such cases, it is recommended to use batch jobs. Dialog page for every SAF-T report has a **Run in the background** tab. Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. To learn more about batch processing, see [Batch processing overview](../../dev-itpro/sysadmin/batch-processing-overview.md). To review batch jobs or find a generated file, go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
 

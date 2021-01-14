@@ -18,13 +18,13 @@ ms.search.form: RetailShippingThresholdDiscounts, RetailPriceDiscGroup
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: ShalabhjainMSFT
+ms.author: shajain
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 
 

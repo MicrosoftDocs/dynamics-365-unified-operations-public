@@ -5,7 +5,7 @@ title: Create worker benefit plans
 description: You can create worker benefit plans in Microsoft Dynamics 365 Human Resources to select benefit plans for employees and to confirm benefit plan selections.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BenefitPlanEmployee
+ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Create worker benefit plans
-
-[!include [banner](includes/preview-feature.md)]
 
 You can create worker benefit plans in Microsoft Dynamics 365 Human Resources to select benefit plans for employees and to confirm benefit plan selections. Typically, employees select benefit plans themselves by using Employee self service, and then a benefits administrator confirms the selections. 
 

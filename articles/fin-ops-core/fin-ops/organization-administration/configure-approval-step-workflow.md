@@ -3,7 +3,7 @@
 
 title: Configure approval steps in a workflow
 description: This topic explains how to configure the properties of an approval step.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 192161
 ms.assetid: 8b478e3d-d6b4-403b-aae0-f639a71ca36c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

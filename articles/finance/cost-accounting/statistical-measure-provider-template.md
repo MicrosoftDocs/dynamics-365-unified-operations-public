@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Statistical dimension members and statistical measure provider templates
+title: Provider templates for statistical dimension members and measure providers
 description: This topic provides information about statistical dimension members and statistical measure provider templates. Statistical dimension members can be used as an allocation base in policies such as cost distribution and cost allocation. They can also be used to report non-monetary cost consumption.
 author: AndersGirke
 manager: AnnBe
@@ -13,24 +13,24 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
+ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Statistical dimension members and statistical measure provider templates
+# Provider templates for statistical dimension members and measure providers
 
 [!include [banner](../includes/banner.md)]
 

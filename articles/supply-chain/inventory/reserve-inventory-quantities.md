@@ -4,7 +4,7 @@
 title: Reserve inventory quantities
 description: This topic describes the different options that are available for reserving inventory.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -17,8 +17,8 @@ ms.search.form: InventModelGroup
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4

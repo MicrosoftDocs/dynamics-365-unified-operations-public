@@ -4,7 +4,7 @@
 title: Onboard vendors
 description: This topic describes the process for onboarding new vendors. It explains the actions that are required by various roles during this process.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage  
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Onboard vendors
+
 [!include [banner](../includes/banner.md)]
 
 ---

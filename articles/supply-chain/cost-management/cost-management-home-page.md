@@ -4,7 +4,7 @@
 title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
@@ -17,8 +17,8 @@ ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 # ROBOTS:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.assetid: 
@@ -61,7 +61,7 @@ features are in development.
 
 #### White paper
 
-[BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the topics, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
+[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the topics, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
 
 #### Blogs
 

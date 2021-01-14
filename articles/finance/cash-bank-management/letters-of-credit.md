@@ -3,7 +3,7 @@
 
 title: Letters of credit
 description: Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders. 
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -18,13 +18,13 @@ ms.search.form: BankLCImport
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18271
 ms.assetid: aa594beb-bdb2-4117-91c2-d097d9401b0f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: leguo
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

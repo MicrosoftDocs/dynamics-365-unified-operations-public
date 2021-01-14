@@ -14,12 +14,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: HcmPositionHierarchyView
+# ms.search.form: HcmPositionHierarchyView, HcmPosition
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: PersonnelIntegrationConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

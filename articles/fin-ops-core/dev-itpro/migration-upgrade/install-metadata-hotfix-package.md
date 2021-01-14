@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79822
 ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae
@@ -122,8 +121,6 @@ Sometimes, a metadata hotfix package contains changes to objects that have been 
 2.  In the dialog box, select a model to check for conflicts.
 3.  Click **Create project**. A project is generated that contains only those elements in the selected model that were found to have conflicts after the hotfix was applied.
 4.  Open the designer for the conflicting element to view conflicts, and resolve them by using the tools that are provided.
-
-<!--The Office Mix at <https://mix.office.com/watch/1rl75ei2cs6d7> provides an introduction to the conflict resolution tools in the development environment.-->
 
 ## Build and test on a local VM
 Build all models that are affected by the hotfix, and test your application.

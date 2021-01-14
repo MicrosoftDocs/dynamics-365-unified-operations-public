@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -46,11 +46,6 @@ The software development kit (SDK) includes a set of core data actions that can 
 The following example shows a sample data file for a new module.
 
 ```typescript
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
 import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';
 import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
 import { IGetProductReviewsData } from '../../actions/getProductReviews';
@@ -61,6 +56,8 @@ export interface IProductFeatureData {
 }
 ```
 ## Additional resources
+
+[Modules overview](modules-overview.md)
 
 [Module definition file](module-definition-file.md)
 

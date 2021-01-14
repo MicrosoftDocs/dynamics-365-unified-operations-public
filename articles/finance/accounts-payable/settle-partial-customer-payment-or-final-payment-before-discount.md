@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Settle a partial customer payment and the final payment in full before the discount date
+title: Settle partial and final payments in full before the discount date
 description: This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.
 author: abruer
 manager: AnnBe
@@ -18,7 +18,7 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Settle a partial customer payment and the final payment in full before the discount date
+# Settle partial and final payments in full before the discount date
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,7 +53,7 @@ From the **Customer** or **Customer transactions** page, Arnie can open the **Se
 
 Discount information appears at the bottom of the **Settle transactions** page for the marked invoice.
 
-|                              |           |
+|    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |
@@ -84,7 +84,7 @@ Instead of opening the **Enter customer payments** page in the payment journal, 
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+|        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |
@@ -100,7 +100,7 @@ If the customer wants to settle exactly half the invoice, the customer submits a
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+|     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |
@@ -119,7 +119,7 @@ Arnie closes the **Settle transactions** page. A payment line for 495.00 is crea
 ## Payment for the remaining amount
 Customer 4028 pays the remaining amount of 495.00 on July 8, which is in the cash discount period. Arnie creates the payment journal on July 8 and marks the transaction for settlement. He sees that the amount that must be settled is 495.00. The value in the **Estimated cash discount** field is **5.00**, because the 5.00 discount was previously taken.
 
-|                         |        |
+|   &nbsp;                | &nbsp; |
 |-------------------------|--------|
 | Marked total            | 495.00 |
 | Estimated cash discount | 5.00   |
@@ -132,7 +132,7 @@ Information about the marked transaction appears in the grid on the **Settle ope
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |

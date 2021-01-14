@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
@@ -44,7 +43,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Before you can complete the steps in this topic, verify that the following prerequisites are met:
 
 - You have a development environment that has platform update 21 or later in own your Microsoft Azure subscription
-- You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
+- You have Microsoft Visual Studio Enterprise edition in a development environment.
 - You have a tier-2 or above sandbox that has the same release (application version and platform update) as your development environment.
 - You've completed all the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md) and all the steps except "Run multi-user testing with local test controller" in [Multi-user testing with the Performance SDK and a local test controller](multi-user-testing-local-test-controller.md).
 

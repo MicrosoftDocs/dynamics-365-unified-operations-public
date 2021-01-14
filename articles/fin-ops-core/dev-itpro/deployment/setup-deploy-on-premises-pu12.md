@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -35,9 +34,6 @@ ms.dyn365.ops.version: Platform update 12
 [!include [banner](../includes/banner.md)]
 
 This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
-
-> [!IMPORTANT]
-> This topic applies only to deploying on-premises environments on Platform update 12 and later. For information about deploying to Platform update 8 or Platform update 11 installations, see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. You can post questions or feedback you may have about the on-premises deployment there.
 
@@ -72,6 +68,8 @@ These components depend on the following system software:
   > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following topics:
   >   - [What Are Active Directory Functional Levels](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
   >   - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+  >   - [Full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
+
 
 ## Lifecycle Services
 
@@ -155,10 +153,11 @@ The following prerequisite software is installed on the VMs by the infrastructur
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver 13 | <https://www.microsoft.com/download/details.aspx?id=53339> |
-| AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://www.microsoft.com/download/details.aspx?id=56567> |
+| AOS       | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> |
+| AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://aka.ms/downloadmsodbcsql> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
+| AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
 | AOS       | Internet Information Services (IIS) | **Windows features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
 | AOS       | SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
 | AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
@@ -166,9 +165,11 @@ The following prerequisite software is installed on the VMs by the infrastructur
 | AOS       | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | BI        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
+| BI        | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
 | BI        | SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
 | MR        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | MR        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
+| MR        | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
 | MR        | Visual C++ Redistributable Packages for Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
 | ORCH      | The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> |
 
@@ -266,10 +267,12 @@ You must create several user or service accounts for Finance + Operations to wor
 | Financial Reporting Click Once Designer Service Account | gMSA           |         | Contoso\\svc-FRCO$ |
 | AOS Service Account                                     | gMSA           | This user should be created for future proofing. We plan to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you will help to ensure a seamless transition to the gMSA. | Contoso\\svc-AXSF$ |
 | AOS Service Account                                     | Domain account | AOS uses this user in the general availability (GA) release. | Contoso\\AXServiceUser |
-| AOS SQL DB Admin user                                   | SQL user       | Finance + Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases. | AXDBAdmin |
+| AOS SQL DB Admin user                                   | SQL user       | Finance + Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases\*\*. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA           | This account is used by the local agent to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
-\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
+\* If the password of the SQL user contains special characters, this could cause problems during deployment.
+
+\*\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
 
 ### <a name="createdns"></a> 4. Create DNS zones and add A records
 
@@ -423,7 +426,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
-5. Export the certificates into .pfx files.
+5. Export the certificates into .pfx files. As part of the export, this script will check that your certificates have the correct cryptographic provider set. 
 
     ```powershell
     # Exports Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder.
@@ -442,17 +445,19 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
     | Component | Download link | Expected file name |
     |-----------|---------------|--------------------|
-    | SNAC – ODBC driver 13 | <https://www.microsoft.com/download/details.aspx?id=53339> | msodbcsql.msi |
-    | SNAC – ODBC driver 17 | <https://www.microsoft.com/download/details.aspx?id=56567> | msodbcsql\_17.msi |
+    | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
+    | SNAC – ODBC driver 17 | <https://aka.ms/downloadmsodbcsql> | msodbcsql\_17.msi |
     | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
     | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
-    | The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> | ndp48-x86-x64-allos-enu.exe |
+    | The Microsoft .NET Framework version 4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> | ndp48-x86-x64-allos-enu.exe |
+    | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net472-offline> | ndp472-x86-x64-allos-enu.exe |
 
 > [!IMPORTANT]
 > - Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
-> - Make sure that the installer files have the names that are specified in the "Expected file name" column of the preceding table.
+> - Make sure that the installer files have the names that are specified in the **"Expected file name"** column of the preceding table.
+> - You may need to rename some of the downloads if the **"Expected file name"** is different. Failure to do so will result in errors when running the "Configure-PreReqs.ps1" script.  
 > - When you download **VC++ 17 Redistributables**, the executable file is inside the zip file.
 
 #### Follow these steps for each VM, or use remoting from a single machine
@@ -550,7 +555,7 @@ Use the on-premises agent certificate that you acquired from a certificate autho
 
 The on-premises agent certificate can be reused across multiple sandbox and production environments per tenant.
 
-Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
+Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft 365 for your organization is the global administrator for the directory.
 
 > [!IMPORTANT]
 > - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with LCS.
@@ -561,16 +566,29 @@ Only user accounts that have the Global Administrator directory role can add cer
 2. Determine whether the certificate is already registered by running the following script from the **Infrastructure** folder.
 
     ```powershell
-    Install-Module AzureRM
-    Import-Module AzureRM
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
+    # If you have issues downloading the Azure PowerShell Az module, run the following:
+    # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    
+    Install-Module Az
+    Import-Module Az
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
+
+    > [!IMPORTANT]
+    > If you previously installed AzureRM, please remove it as it may not be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. For more information, [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az).
 
 3. If the script indicates that the certificate isn't registered, run the following command.
 
     ```powershell
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint'
     ```
+
+> [!NOTE]
+> If you have multiple tenants associated with the login account, you can pass the tenant ID as a parameter to ensure that the context is set to the correct tenant.
+
+> ```powershell
+> .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
+> ```
 
 ### <a name="setupfile"></a> 12. Set up file storage
 
@@ -654,18 +672,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > [!NOTE]
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
-2. Run the SQL service as a domain user.
-3. Get an SSL certificate from a certificate authority to configure Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following example.
-
-    **Self-signed certificate for a Clustered SQL instance**
-
-    ```powershell
-    New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" -DnsName "DAX7SQLAOSQLA.contoso.com" -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -Subject "DAX7SQLAOSQLA.contoso.com"
-    ```
+2. Run the SQL service as a domain user or a group-managed service account.
+3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following examples.
 
     **Self-signed certificate for an Always-On SQL instance**
 
-    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the following **manual** script and steps **4.**, **5.**, and **6.**.
+    If you are setting up testing certificates for Always-On, use the following **remoting** script. This will perform the same as the following **manual** script and steps **a-e**.
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
@@ -673,33 +685,36 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         -SqlListenerName dax7sqlaosqla
     ```
 
-    **Manual** creation of test certificates.
-    ```powershell
-    # https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
+    **Manual self-signed steps for an Always-On SQL instance or Windows Server Failover Clustering with SQL Server** 
+        
+    For each node of the SQL cluster, follow these steps. 
 
+    1. Run the following PowerShell script on each of the SQL Server Always-On replicas.
+
+    ```powershell
     # Manually create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
     # Run script on each node
     $computerName = $env:COMPUTERNAME.ToLower()
     $domain = $env:USERDNSDOMAIN.ToLower()
     $listenerName = 'dax7sqlaosqla'
-    $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider'
+    $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider' -CertStoreLocation "cert:\LocalMachine\My" -KeyAlgorithm "RSA" -HashAlgorithm "sha256" -KeyLength 2048
     ```
 
-4. Use the certificate(s) to configure SSL on SQL Server. Follow the steps in [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
-5. For each node of the SQL cluster, follow these steps. Make sure that you make the changes on the non-active node, and that you fail over to it after changes are made.
-
-    1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
-    2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
-    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP2: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
-        1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
-        2. Navigate to the certificate, right-click **Modify**, then replace the value with the certificate thumbprint.
-    4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
+    2. Grant certificate permissions to the account that is used to run the SQL service. 
+        1. Open Manage Computer Certificates (**certlm.msc**).
+        2. Right-click the certificate created, and then select **Tasks** \> **Manage Private Keys**.
+        3. Add in the SQL Server service account and grant Read access.
+    3. Enable **ForceEncryption** and the new **Certificate** in Microsoft SQL Server Configuration Manager.
         1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for [server instance]**, and then select **Properties**.
-        2. In the **Protocols for [instance name] Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box, and then click **OK**.
-        3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, and then click **OK**
-        4. Restart the SQL Server service.
+        2. In the **Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box.
+        3. In the **Properties** dialog box, on the **Flags** tab, in the **ForceEncryption** box, select **Yes**.
+        4. Select **OK** to save.
+    4. Export the certificate (.cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have a minimum of 2 certificates for the Always-On cluster, but there may be more if you have additional replicas. 
+    5. Restart the SQL Server service.
+   > [!NOTE] 
+   > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
 
-6. Export the public key of the certificate (the .cer file), and install it in the trusted root of each Service Fabric node.
+
 
 > [!IMPORTANT]
 > If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [20. Tear down CredSSP](#teardowncredssp) section for more information.
@@ -782,7 +797,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Set ALLOW_SNAPSHOT_ISOLATION ON
     3. Set the specified database file and log settings
     4. GRANT VIEW SERVER STATE TO axdbadmin
-    5. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
+    5. GRANT ALTER ANY EVENT SESSION TO axdbadmin
+    6. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
+    7. GRANT ALTER ANY EVENT SESSION TO [contoso\svc-AXSF$]
 
 2. Run the following command to reset the database users.
 
@@ -979,7 +996,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
 
-    ![Deploy](./media/Deploy.png)
+    ![Deploy your environment](./media/Deploy.png)
 
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
     - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
@@ -987,25 +1004,25 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
-    ![Preparing](./media/Preparing.png)
+    ![Preparation phase](./media/Preparing.png)
 
     Click **Full details** to take you to the environment details page, as shown below.
 
-    ![Details_Preparing](./media/Details_Preparing.png)
+    ![Environment details page](./media/Details_Preparing.png)
 
 5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. When deployment starts, the status will change to **Deploying**, as shown.
 
-    ![Deploying](./media/Deploying.png)
+    ![Status changes to Deploying](./media/Deploying.png)
 
-    ![Details_Deploying](./media/Details_Deploying.png)
+    ![Environment is deploying](./media/Details_Deploying.png)
 
     If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
-    ![Failed](./media/Failed.png)
+    ![Reconfigure button is available](./media/Failed.png)
 
     See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
 
-    ![Deployed](./media/Deployed.png)
+    ![Environment successfully deployed](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.

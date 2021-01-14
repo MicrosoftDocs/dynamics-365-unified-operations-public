@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
+ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+# ms.search.scope: Core, Operations, Human Resources, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 87933

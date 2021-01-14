@@ -4,7 +4,7 @@
 title: Absence registration in Time and attendance
 description: This topic explains how to handle absence registrations in Time and attendance.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: JMGParameters 
+ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global

@@ -4,7 +4,7 @@
 title: Set up an item arrival overview profile
 description: This topic focuses on the setup of an arrival overview profile. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/30/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: WMSArrivalOverviewProfile   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

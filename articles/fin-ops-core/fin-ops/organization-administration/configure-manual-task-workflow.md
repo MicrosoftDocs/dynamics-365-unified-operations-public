@@ -3,7 +3,7 @@
 
 title: Configure manual tasks in a workflow
 description: This topic explains how to configure the properties for a manual task.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

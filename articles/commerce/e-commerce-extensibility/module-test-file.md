@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -43,11 +43,6 @@ The module test file is used for local unit testing. It contains the mock data t
 The following example shows a default test file that is created for a new module.
 
 ```typescript
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
 import { buildMockModuleProps} from '@msdyn365-commerce/core';
 /// <reference types="jest" />
 
@@ -92,6 +87,8 @@ describe('ProductFeature', () => {
 Note that the mock data fields are set inside this file.
 
 ## Additional resources
+
+[Modules overview](modules-overview.md)
 
 [Module definition file](module-definition-file.md)
 

@@ -4,7 +4,7 @@
 title: Inventory locations
 description: Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WMSLocation
+ms.search.form: WMSLocation, WMSBlockingCause, WHSLocation
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 2134
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c

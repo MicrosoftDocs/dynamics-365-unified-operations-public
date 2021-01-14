@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Import and create multiple one-time vendors and invoices in the public sector
-description: When approval or a contract in the form of a purchase order is not required, you can create an invoice for a new vendor with whom you have no regular relationship, at the same time as creating a record for the vendor. 
+description: This topic provides information about how to simultaneously create an invoice and record for a new vendor when no purchase order is required.
 author: twheeloc
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -17,7 +17,7 @@ ms.search.form: VendImportOneTimeVendFileUpload_PSN
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
+# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

@@ -18,7 +18,6 @@ ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup, PayrollPremiumEarni
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221084
 ms.assetid: 50a441e2-b5b4-4ff0-9fc3-472c3b85c46f

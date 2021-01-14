@@ -5,7 +5,7 @@ title: Download Electronic reporting configurations from Lifecycle Services
 description: This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
@@ -34,9 +33,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
-
-This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
+This topic explains how to download the newest version of [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the [Shared asset library](../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).
 
 1. Sign in to the application by using one of the following roles:
 
@@ -46,36 +43,41 @@ This tutorial guides you through the process of downloading the newest version o
 
 2. Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**.
 3. In the **Configuration providers** section, select the **Microsoft** tile.
-4. On the **Microsoft** tile, click **Repositories**.
+4. On the **Microsoft** tile, select **Repositories**.
 
-    [![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Microsoft tile on the Localization configurations page](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. On the **Configuration repositories** page, in the grid, select the existing repository of the **LCS** type. If this repository doesn't appear in the grid, follow these steps:
 
-    1. Click **Add** to add a new repository.
+    1. Select **Add** to add a repository.
     2. Select **LCS** as the repository type.
-    3. Click **Create repository**.
-    4. If prompted, follow the authorization instructions.
+    3. Select **Create repository**.
+    4. If you're prompted about authorization, follow the on-screen instructions.
     5. Enter a name and description for the repository.
-    6. Click **OK** to confirm the new repository entry.
+    6. Select **OK** to confirm the new repository entry.
     7. In the grid, select the new repository of the **LCS** type.
 
-6. Click **Open** to view the list of ER configurations for the selected repository.
+6. Select **Open** to view the list of ER configurations for the selected repository.
 
-    [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Configuration repositories page](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
-7. In the configurations tree in the left pane, select the ER configuration that you require.
+    > [!TIP]
+    > If you have trouble accessing the LCS repository to download configurations from the Shared asset library in LCS, you can download configurations from the [Global repository](er-download-configurations-global-repo.md) instead.
+
+7. In the configurations tree in the left pane, select the required ER configuration.
 8. On the **Versions** FastTab, select the required version of the selected ER configuration.
-9. Click **Import** to download the selected version from LCS to the current instance.
+9. Select **Import** to download the selected version from LCS to the current instance.
 
     > [!NOTE]
     > The **Import** button is unavailable for ER configuration versions that are already present in the current instance.
 
-    [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Configuration repository page](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
-> Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. You must resolve those issues before you can use the imported configuration version. For more information, see the list of related articles for this topic.
+> Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. You must resolve those issues before you can use the imported configuration version. For more information, see the list of related topics for this topic.
 
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+[Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md)

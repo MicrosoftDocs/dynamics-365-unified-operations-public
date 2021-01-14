@@ -3,7 +3,7 @@
 
 title: Workflow elements
 description: This topic describes the various elements that make up a workflow.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

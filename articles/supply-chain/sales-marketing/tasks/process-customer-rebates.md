@@ -4,7 +4,7 @@
 title: Generate and process customer rebates
 description: This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable. 
 author: omulvad
-manager: AnnBe 
+manager: tfehr 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
@@ -13,16 +13,16 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage   
+ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable. It walks you through a specific example to explain how the various conditions on the rebate lines affect the final amounts that will be credited to the customer. You need to use the USMF demo data company, and carry out the following tasks before you start the guide: (1) Go to the Accounts receivable parameters page, and expand the Prices tab and then the Price details tab, and check that the Enable price details option is set to Yes. (2) Go to the Rebate agreements page and select the customer rebate agreement: USMF-000001. If the Workflow approval status field is not set to Approved, you need click Validation on the Action pane to approve it.
+This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable. It walks you through a specific example to explain how the various conditions on the rebate lines affect the final amounts that will be credited to the customer. You need to use the USMF demo data company, and carry out the following tasks before you start the guide: (1) Go to the Accounts receivable parameters page, and expand the Prices tab and then the Price details tab, and check that the Enable price details option is set to Yes. (2) Go to the Rebate agreements page and select the customer rebate agreement: USMF-000001. If the Workflow approval status field is not set to Approved, you need click Validation on the Action Pane to approve it.
 
 
 ## Review a customer rebate agreement

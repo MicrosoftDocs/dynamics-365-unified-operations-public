@@ -17,7 +17,7 @@ ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistr
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264824
 ms.search.region: Global

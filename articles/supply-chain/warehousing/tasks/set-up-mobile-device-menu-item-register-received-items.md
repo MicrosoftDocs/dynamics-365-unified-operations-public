@@ -4,7 +4,7 @@
 title: Set up a mobile device menu item to register received items
 description: This topic focuses on the setup of a mobile device menu item. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/16/2019
 ms.topic: business-process 
 ms.prod:  
@@ -13,16 +13,16 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSRFMenuItem, WHSRFMenu   
+ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

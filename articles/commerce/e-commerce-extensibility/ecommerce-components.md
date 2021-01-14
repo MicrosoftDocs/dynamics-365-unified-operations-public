@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: e-Commerce components
-description: This topic contains a high-level summary of some frequently used configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
+title: E-commerce components
+description: This topic contains a high-level summary of some frequently used e-commerce configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,11 +28,11 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# e-Commerce components
+# E-commerce components
 
 [!include [banner](../includes/banner.md)]
 
-This topic contains a high-level summary of some frequently used configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
+This topic contains a high-level summary of some frequently used e-commerce configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
 
 ## Modules
 
@@ -48,7 +48,7 @@ Data actions are used to get data, apply business logic to a module, and share d
 
 ### Core data actions
 
-The e-Commerce platform Store Starter Kit (SSK) includes a set of data actions for performing typical actions, such as getting product data from the Dynamics 365 Commerce database, or getting ratings and reviews information for a product. Core data actions can't be modified.
+The e-Commerce platform module library includes a set of data actions for performing typical actions, such as getting product data from the Dynamics 365 Commerce database, or getting ratings and reviews information for a product. Core data actions can't be modified.
 
 ### Custom data actions
 
@@ -58,7 +58,7 @@ You can create custom data actions and use them in your modules. Custom data act
 
 Themes contain site-wide Sassy Cascading Style Sheets (SCSS) style definitions. They also let you add custom, module-specific SCSS style definitions. You can set a site theme in the authoring tools. All pages then use that theme by default. You can add more themes, and set them on a template, a layout, or a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
 
-Themes can also override module views (including starter kit modules), and can add module definition extensions to extend the configurations and resources on a module. Because themes can change the look and feel of all modules (custom and starter kit) without requiring that modules be cloned, they allow for better serviceability.
+Themes can also override module views (including module library modules), and can add module definition extensions to extend the configurations and resources on a module. Because themes can change the look and feel of all modules (custom and module library) without requiring that modules be cloned, they allow for better serviceability.
 
 ## Script injectors
 
@@ -66,6 +66,6 @@ The online platform provides a built-in script injector module that makes it eas
 
 ## Additional resources
 
-[Architectural overview](architectural-overview.md)
+[E-commerce architectural overview](architectural-overview.md)
 
 [CLI command reference](cli-command-reference.md)

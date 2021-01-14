@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -202,6 +202,8 @@ The following columns specify where the operations can be invoked:
 | 500 | Void transaction | Void the current transaction. | Yes | Yes | No | Yes | No |
 | 916 | Windows workflow foundation | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 924 | X report for bank cards | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
+| 311 | Remove system discounts from transactions | Remove all the system applied discounts, including coupon based discounts, from the transaction. This does not remove manual discounts. | Yes | Yes | Yes | Yes | No |
+| 312 | Reapply system discounts | Reapply system discounts on the transaction if they were removed using the **Remove system discounts from transaction** operation. | Yes | Yes | Yes | Yes | No |
 
 \* The operation is available in offline mode only when a customer order or sales quotation is being created, and only if offline creation of customer orders and sales quotations is configured in the POS functionality profile. The operation can't be performed when orders are created by using Real-time Service, or when orders are recalled or edited.
 

@@ -13,12 +13,13 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CustPosting
+ms.search.form: CustPosting, CustVendExternalItem
+
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5

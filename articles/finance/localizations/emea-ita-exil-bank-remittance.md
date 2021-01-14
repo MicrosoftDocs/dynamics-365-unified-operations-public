@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Italy
@@ -48,7 +48,7 @@ To set up posting profiles, you must open a company bank account. When the syste
 1. To set up the posting profile, go to **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 2. On the **General** FastTab, in the **Posting profiles** section, in the **Remit for collection**, **Remit for discount**, and **Remit promissory note** fields, select a posting profile, as you require.
 
-![Bank account setup](media/emea-ita-exil-different%20accounts%20per%20company%20bank%26remittance%20type.PNG)
+![Bank account setup](media/emea-ita-exil-different-accounts-per-company-bank.png)
 
 ## Use posting profiles in remittance journal posting
 

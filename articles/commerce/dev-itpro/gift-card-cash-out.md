@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -74,7 +73,7 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 
     When you've finished, your button layout should resemble the following illustration.
 
-    ![Completed button layout](./media/GiftCardCashout02.png)
+    ![Completed button layout with "Configure button" section highlighted](./media/GiftCardCashout02.png)
 
 12. Click **Ok** and close the designer.
 13. Search for **Distribution Schedule**.
@@ -101,7 +100,7 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 13. The line for **gift card cash out** will be added to the **Current transaction** for cash out.
 14. Select the **Cash** payment method and the drawer will open when the transaction is completed. 
 
-       ![Completed button layout](./media/GiftCardCashout03.png)
+       ![POS screen with "Cash out gift card" highlighted](./media/GiftCardCashout03.png)
 
 ## Troubleshooting 
 

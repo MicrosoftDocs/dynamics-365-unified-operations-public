@@ -4,7 +4,7 @@
 title: Ship sales orders without warehousing
 description: This topic explains how to update a sales order when products are shipped to the customer. 
 author: omulvad
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

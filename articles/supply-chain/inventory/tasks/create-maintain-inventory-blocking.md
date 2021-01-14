@@ -4,7 +4,7 @@
 title: Create and maintain an inventory blocking
 description: This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking. 
 author: perlynne
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,8 +16,8 @@ ms.technology:
 ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -50,7 +50,7 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 3. Click **Save**.
 
 ## Remove the inventory blocking
-1. On the **Action pane**, click **Delete**.
+1. On the **Action Pane**, click **Delete**.
 2. Click **Yes**.
 3. Close the page.
 

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
@@ -62,10 +61,6 @@ For more information about custom services, see:
 
 - [Using Custom Services \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
 - [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
-
-<!--
-- [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). -->
-
 
 ### JSON-based custom service
 

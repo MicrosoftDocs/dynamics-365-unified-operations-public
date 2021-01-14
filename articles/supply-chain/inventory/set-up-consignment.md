@@ -4,7 +4,7 @@
 title: Set up consignment
 description: This topic explains how to configure inbound consignment inventory operations.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -17,8 +17,8 @@ ms.search.form: DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, 
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 220804
 ms.assetid: 88822f78-4de5-462c-a55f-1f766c572719

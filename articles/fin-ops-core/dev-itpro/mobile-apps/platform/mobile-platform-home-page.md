@@ -3,9 +3,9 @@
 
 title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
-author: RobinARH
+author: robinarh
 manager: AnnBe
-ms.date: 03/10/2020
+ms.date: 10/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 
@@ -154,6 +153,10 @@ During development it can be useful to attach a debugger to get more detailed in
 9. If more changes or validation is needed, repeat the process.
 
 ## Troubleshooting the app
+
+### **[Resolved]** - No support for iOS14 due to issues with date and time controls
+Version 2.2.8 of the Finance and Operations mobile app fixes the known issues with the date and time pickers in iOS14. Ensure that you have the latest version of the app if you are experiencing issues running the application on iOS14.  
+
 ### The Mobile Client app is not working on particular devices
 Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
 To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Finance and Operations (Dynamics 365)**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
@@ -174,7 +177,7 @@ The Finance and Operations (Mobile Client) app facilitates user authentication w
 If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
 
 ### Intune support and conditional access
-The Finance and Operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune initially. However, the app is free and can be added to [Intune](https://docs.microsoft.com/mem/intune/apps/store-apps-ios) to support scenarios like using [Conditional Access with Intune](https://docs.microsoft.com/mem/intune/protect/conditional-access#use-conditional-access-with-intune).
+The Finance and Operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune. Manually adding the app (following [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/store-apps-ios)) is also not supported because the device identifier cannot be passed.
 
 ### Trouble signing out of the app and signing in with new credentials
 If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.

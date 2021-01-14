@@ -5,7 +5,7 @@ title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
+#ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BriShoo
+ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: 
 
@@ -81,7 +81,7 @@ Once the B2C tenant has been created, you will create a B2C application within t
 
 To create the B2C application, follow these steps.
 
-1. In the Azure portal, select **Applications** and then select **Add**.
+1. In the Azure portal, select **Applications(Legacy)** and then select **Add**.
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API**, select **Yes**.
 1. For **Allow implicit flow**, select **Yes** (the default value).
@@ -91,11 +91,11 @@ To create the B2C application, follow these steps.
 
 ### Reply URLs
 
-Reply URLs are important as they allow a whitelist of the return domains when your site calls Azure AD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are signing into (your site domain). 
+Reply URLs are important as they provide an allow list of the return domains when your site calls Azure AD B2C to authenticate a user. This permits the return of the authenticated user back to the domain from which they are signing into (your site domain). 
 
 In the **Reply URL** box on the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
 
-- ``https://fabrikam.com/_msdyn365/authresp``
+- ``https://www.fabrikam.com/_msdyn365/authresp`` (The domain should match the e-commerce domain completely. If you have multiple domains, you need to add this URL for each domain.)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## Create user flow policies
@@ -125,7 +125,7 @@ To create a sign up and sign in user flow policy, follow these steps.
 
     | **Collect  attribute** | **Return  claim** |
     | ---------------------- | ----------------- |
-    |                        | Email Addresses   |
+    | Email Address          | Email Addresses   |
     | Given Name             | Given Name        |
     |                        | Identity Provider |
     | Surname                | Surname           |
@@ -173,8 +173,7 @@ To create a password reset user flow policy, follow these steps.
 1. Under **Identity providers**, select **Reset password using email address**.
 1. Select **Create**.
 1. Under **Application claims**, select the following check boxes:
-    - **Email**
-    - **Addresses**
+    - **Email addresses**
     - **Given Name**
     - **Surname**
     - **User's Object ID**
@@ -251,10 +250,6 @@ To update headquarters with the new Azure AD B2C information, follow these steps
     1. In the **Type** box, enter **Public**.
     1. In the **User Type** box, enter **Customer**.
 1. On the action pane, select **Save**.
-1. In the Commerce search box, search for **Number sequences** (Organization administration > Number sequences).
-1. Under the action pane, select **Edit** under **Maintain**.
-1. On the **General** fast tab, select **No** for **Manual**.
-1. On the action pane, select **Save**. 
 1. In the Commerce search box, search for **Distribution schedule**
 1. In the left navigation menu of the **Distribution schedules** page, select job **1110 Global configuration**.
 1. On the action pane, select **Run Now**.
@@ -309,13 +304,14 @@ To add your AAD B2C tenant application information to Commerce, follow these ste
 1. Enter the following required items in the form displayed, using values from your B2C tenant and application. Fields that are not required (those without an asterisk) may be left blank.
 
     - **Application Name**: The name for your B2C Application, for example "Fabrikam B2C".
-    - **Tenant Name**: The name of your B2C Tenant, for example "Fabrikam".
+    - **Tenant Name**: The name of your B2C tenant (for example, use "fabrikam" if the domain appears as "fabrikam.onmicrosoft.com" for the B2C tenant). 
     - **Forget Password Policy ID**: The forget password user flow policy ID, for example "B2C_1_PasswordReset".
     - **Signup Signin Policy ID**: The sign up and sign in user flow policy ID, for example "B2C_1_signup_signin".
     - **Client GUID**: The B2C application ID, for example "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
     - **Edit Profile Policy ID**: The profile editing user flow policy ID, for example "B2C_1A_ProfileEdit".
 
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
+1. Select **Save** to save your changes.
 
 ### Associate the B2C application to your site and channel
 
@@ -353,15 +349,15 @@ An optional, secondary administrator account can be added in the **Users** secti
 
 [Configure your domain name](configure-your-domain-name.md)
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
-[Associate an online site with a channel](associate-site-online-store.md)
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Upload URL redirects in bulk](upload-bulk-redirects.md)Associate a Dynamics 365 Commerce site with an online channel
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
 

@@ -5,7 +5,7 @@ title: Define and set order attributes
 description: This topic explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/20/2018
+ms.date: 09/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -35,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 Previously, the attribute framework supported attributes only in online orders. However, the framework has been extended so that it now supports attributes in cash-and-carry transactions, customer orders, and call center orders. This enhancement lets you edit and set attribute values for orders directly in Commerce Headquarters, the point of sale (POS), and the Commerce runtime (CRT). 
 
-Headquarters now includes pages for editing and updating attribute values. Therefore, you can set the values for call center orders in Headquarters. Although no out-of-box user interface (UI) for setting attribute values is available in the POS, you can extend the POS to add a new UI. If you don't require a UI and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Headquarters configurations. No database changes are required. Previously, you had to create new tables in Headquarters and the channel database, and then modify those tables.
+Headquarters now includes pages for editing and updating attribute values, which means that you can set the values for call center orders in Headquarters. In POS, use the Attributes panel to set or update the attribute value in POS. If you don't need to use a user interface and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Headquarters configurations. No database changes are required. Previously, you had to create new tables in Headquarters and the channel database, and then modify those tables.
 
 ## Why and when you should order attributes
 
@@ -148,13 +147,17 @@ After you've run the distribution job and pulled a cash-and-carry transaction in
 
 A new sample that has been added to the Retail SDK adds business logic for order attributes in CRT. This sample includes code only for the business logic. It doesn't show how to save or read the attributes, because read and write operations for attributes are automated.
 
-The sample implements the following scenario: Whenever you suspend a cart, you set set an attribute value. When you resume the cart, you want to clear that value. A pre-trigger was added for **SuspendCartRequest**, and the business logic was written. You can extend any trigger or override any request in CRT to set the logic, based on your scenario.
+The sample implements the following scenario: When you suspend a cart, you set an attribute value. When you resume the cart, you want to clear that value. A pre-trigger was added for **SuspendCartRequest**, and the business logic was written. You can extend any trigger or override any request in CRT to set the logic, based on your scenario.
+
+> [!NOTE]
+> Before adding attribute to the cart, check whether the attribute already exists in the cart or cartline. If the attribute already exists, then don’t add the attribute again, instead update it. If a duplicate attribute is added to the cart or cartline, then CRT will display a runtime error. Sample code for this scenario can be found in sample code section below.
+
 
 You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensions\\CommerceRuntime\\Extensions.TransactionAttributesSample.
 
 - Create a new C# portable class library project, and paste in the following code.
 
-    ```C#
+ ```C#
     public class CustomSuspendCartTrigger : IRequestTrigger
     {
         // summary
@@ -205,13 +208,47 @@ You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensi
         public void OnExecuted(Request request, Response response)
         {
         }
-    ```
+        // Sample code to check for the duplicate attribute, before adding attributes to the cart check whether the attribute already exists if so then don’t add the attribute again, instead update it.
+        
+        public static class CustomCartHelper
+        {
+            /// <summary>
+            /// Updates the transaction header attribute.
+            /// </summary>
+            /// <param name="cart">The cart.</param>
+            /// <param name="reserveNow">The value of the transaction header attribute.</param>
+            /// <param name="updateAttribute">A flag indicating whether or not to override an existing attribute value.</param>
+            /// <returns>A flag indication whether or not the cart was updated.</returns>
+            public static bool CreateUpdateTransactionHeaderAttribute(Cart cart, bool reserveNow, bool updateAttribute)
+            {
+                ThrowIf.Null(cart, "cart");
+                bool cartUpdated = false;
+                IList<AttributeValueBase> transactionAttributes = cart.AttributeValues;
+                string reserveNowAttributeName = "Reserve now";
+                string reserveNowAttributeValue = reserveNow ? "Yes" : "No";
+                AttributeValueBase reserveNowAttribute = transactionAttributes.SingleOrDefault(attribute => attribute.Name.Equals(reserveNowAttributeName));
+
+                if (reserveNowAttribute == null)
+                {
+                    transactionAttributes.Add(new AttributeTextValue() { Name = reserveNowAttributeName, TextValue = reserveNowAttributeValue });
+                    cartUpdated = true;
+                }
+                else if (updateAttribute && !((AttributeTextValue)reserveNowAttribute).TextValue.Equals(reserveNowAttributeValue))
+                {
+                    ((AttributeTextValue)reserveNowAttribute).TextValue = reserveNowAttributeValue;
+                    cartUpdated = true;
+                }
+
+                return cartUpdated;
+            }
+        }
+```
 
 ## Extend attributes to do some business logic in the POS
 
 > [!NOTE]
 > The following changes are required only if you are running the application with version 8.1.2 or earlier. 
-Starting in 8.1.3, you can use the new Attributes panel to set or update the attribute value in POS. With this control you no longer  need to write any additional code or create UI to set the attribute value in POS. In the attribute control UI has been added to set or update the attribute value. Refer to the **Show Order attributes in the POS transaction screen using the Attribute control** section in this document for more details.
+Starting in 8.1.3, you can use the Attributes panel to set or update the attribute value in POS. With this control you no longer  need to write any additional code or create UI to set the attribute value in POS. In the attribute control UI has been added to set or update the attribute value. Refer to the **Show Order attributes in the POS transaction screen using the Attribute control** section in this document for more details.
 
 A new sample that has been added to the Retail SDK sets the business logic for order attributes in the POS. This sample includes code only for the business logic. It doesn't show how to save or read attribute values, because read and write operations for attributes are automated. You can set the values for attributes in either CRT or the POS, based on your scenario. If your values are based on customer input, set them in the POS client. If some business logic is involved, set the values in CRT.
 

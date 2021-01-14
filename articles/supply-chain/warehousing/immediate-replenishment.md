@@ -4,7 +4,7 @@
 title: Immediate replenishment
 description: This topic describes how you can use immediate replenishment to replenish inventory when a location directive fails to allocate inventory.
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSLocDirTable
+ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4

@@ -17,12 +17,12 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
+# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-08-30 
 ms.dyn365.ops.version: 8.0.4
 
@@ -36,7 +36,7 @@ This topic explains how to create free text invoices. For the procedure, use the
 
 ## Create a free text invoice
 
-1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
+1. Go to **Accounts receivable (or Sales Ledger) \> Invoices \> All free text invoices**.
 2. Select **New**.
 3. In the **Customer account** field, select a value.
 

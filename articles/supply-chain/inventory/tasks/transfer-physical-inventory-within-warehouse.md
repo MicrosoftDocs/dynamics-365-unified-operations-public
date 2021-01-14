@@ -4,7 +4,7 @@
 title: Transfer physical inventory within the warehouse
 description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another. 
 author: MarkusFogelberg
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,8 +16,8 @@ ms.technology:
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -54,7 +54,7 @@ This procedure walks you through the process of creating and posting an inventor
 12. Click **Save**.
 
 ## Post the inventory transfer journal
-1. On the **Action pane**, click **Post**.
+1. On the **Action Pane**, click **Post**.
 2. Click **OK**.
 
 ## View inventory transactions

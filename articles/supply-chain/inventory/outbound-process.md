@@ -4,7 +4,7 @@
 title: Outbound process overview
 description: This topic provides an overview of the outbound process in Inventory management. 
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod:
@@ -17,8 +17,8 @@ ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistrati
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413

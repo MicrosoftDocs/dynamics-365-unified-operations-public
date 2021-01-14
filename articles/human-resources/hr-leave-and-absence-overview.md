@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Overview
-description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. 
+title: Leave and absence overview
+description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self-service page for employees to request time off. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
+# ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Overview
+# Leave and absence overview
 
-Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. Analytics helps your organization measure and monitor leave balances and usage for your leave plans.
+Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.
 
 ## Set up Leave and absence
 
@@ -56,13 +56,6 @@ Before creating leave plans for your workers, you need to create leave and absen
 
 Your employees can submit time off requests, and you can manage them, in the **Employee self service** workspace.
 
-- [Request time off](hr-employee-self-service-request-time-off.md)
-- [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
+[Request time off](hr-employee-self-service-request-time-off.md)
+[Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
 
-## Leave and absence preview features
-
-You can try out new Leave and absence preview features in a **Sandbox** environment. For information about turning on preview features, see [Manage features](hr-admin-manage-features.md). The preview features include:
-
-- **Leave suspension** - You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual processes, suspending leave creates a prorated adjustment to the employee's leave balance. 
-
-- **Carry forward rules** - You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred. For example, if an employee carries forward 10 days, you can pick a different leave type for those 10 days. 

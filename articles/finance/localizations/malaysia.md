@@ -17,12 +17,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -44,6 +44,7 @@ This topic provides links to documentation resources for Malaysia.
 - [Print GST tax invoices](tasks/my-00005-print-gst-tax-invoices.md)
 - [Self-billed invoices](tasks/my-00007-self-billed-invoices.md)
 - [Set up GST relief clauses](tasks/my-00006-01-gst-relief-clauses.md)
+- [SST-02 declaration for Malaysia](apac-mys-sst-declaration.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/malaysia.html)

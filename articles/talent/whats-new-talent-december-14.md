@@ -17,7 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
+# ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent - Core HR (December 14, 2018)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Build 8.1.2085**
 

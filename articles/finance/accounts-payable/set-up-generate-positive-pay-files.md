@@ -3,7 +3,7 @@
 
 title: Set up and generate positive pay files
 description: This topic explains how to set up positive pay and generate positive pay files. 
-author: abruer
+author: panolte
 manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.form: BankPositivePayFormat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571

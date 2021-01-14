@@ -17,7 +17,7 @@ ms.search.form: ERSolutionTable, LedgerConsolidateAccountGroup, LedgerJournalTab
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265314
 ms.assetid: b4a95c26-a49d-4a1d-bf70-90f457df2ddf

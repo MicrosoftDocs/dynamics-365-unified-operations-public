@@ -3,11 +3,9 @@
 
 title: Upgrade from AX 2012 - Data upgrade in sandbox environments
 description: This topic explains how to perform a data upgrade from Microsoft Dynamics AX 2012 to Finance and Operations in a sandbox environment. 
-author: tariqbell
+author: laneswenka
 manager: AnnBe
-
-ms.date: 07/10/2019
-
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,12 +17,11 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
@@ -35,12 +32,15 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
+> [!NOTE]
+> This topic is being phased out in favor of a new process that is based on the dacpac file format. For information about the new process, see [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](upgrade-data-sandbox-dacpac.md).
+
 The output of this task is an upgraded database that you can use in a sandbox environment. In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database. On this environment business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
 We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 > [!NOTE]
-> It's very important that you install the latest version of SQL Server Management Studio before you start this process: [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). 
+> It's very important that you install the latest version of SQLPackage before you start this process. To do this, go to [Download and Install SQLPackage](/sql/tools/sqlpackage-download). We recommend that you use the .NET Core version. This can be saved and extracted to C:\temp.
 
 ## Overview of the sandbox data upgrade process
 Before you start to upgrade data in a sandbox environment, you will have already upgraded data in a development environment, as explained in [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md). The two processes are very similar. The main difference is that a sandbox environment uses Microsoft Azure SQL Database for data storage, whereas a development environment uses Microsoft SQL Server. This technical difference in the database layer requires that you  modify the data upgrade procedure slightly in a sandbox environment, because a backup from the AX 2012 database instance can't just be restored to SQL Database.
@@ -52,8 +52,9 @@ Here are the high-level steps in the upgrade process.
 1. Turn off the AX 2012 AOS instances.
 2. Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
 3. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
-4. Upload the bacpac file to Azure storage.
-5. Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. You must then run a script against the imported database to reset the SQL database users.
+4. Optional, if you are running import from a cloud-hosted VM, you should upload the bacpac file to Azure storage. 
+5. Import the bacpac file by using SQLPackage.exe. This can be run from a local server or from a cloud-hosted VM. If you’re using a local server, you will need to request JIT access to the Dynamics 365 database and set the required firewall rules. If you’re using a cloud-hosted VM, download the bacpac file. You must then run a script against the imported database to reset the SQL database users.
+
 6. Run the appropriate data upgrade package against the imported database.
 
 ## Turn off the AX 2012 AOS instances
@@ -72,18 +73,8 @@ This step must be done by the database administrator (DBA) or a person who has s
 
 To create a database copy, make a backup of the original database, and restore it under a new name. Make sure that enough space is available for both databases. You can create the copy on a different server. The version of the SQL Server instance that runs the database isn't important.
 
-Here is an example of the code that creates a database copy. You must modify this example to reflect your specific database names.
+To perform this action, right-click the source database, and then select **Tasks** \> **Backup**. Create a full-copy backup. To avoid overwriting your existing database backups, you might want to save the file under a different name in the backup directory.
 
-```sql
-BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
-NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
-GO
-
-RESTORE DATABASE [AxDB_copyForUpgrade] FROM  DISK = N'D:\Backups\axdb_copyForUpgrade.bak'   WITH  FILE = 1,  
-MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_copyForUpgrade.mdf',  
-MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
-NOUNLOAD,  STATS = 5
-```
 ## Run the T-SQL script to prepare the database
 
 This script prepares the database by removing users, removing procedures related to the AX 2012 RTM model store, cleaning up schemas, dropping views, and dropping references to tempDB. 
@@ -186,6 +177,9 @@ end
 
 ## Export the copied database to a bacpac file
 
+> [!NOTE]
+> This topic is being phased out in favor of a new process that is based on the dacpac file format. For information about the new process, see [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](upgrade-data-sandbox-dacpac.md).
+
 Export the copied database to a bacpac file by using the SQLPackage.exe tool. This step should be done by the DBA or a team member who has equivalent knowledge.
 
 > [!IMPORTANT]
@@ -207,10 +201,10 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 
 Here is an explanation of the parameters:
 
-- **ssn** (source server name) – The name of the SQL Server to export from. For our process, this parameter should always be set to **localhost**.
+- **ssn** (source server name) – The name of the SQL Server to export from. For this process, the parameter should always be set to **localhost**.
 - **sdn** (source database name) – The name of the database to export.
 - **tf** (target file) – The path and name of the file to export to. The folder should already exist, but the file will be created by the process.
-- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
+- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without a timeout.
 
 ## Upload the bacpac file to Azure storage or the LCS Asset Library
 
@@ -220,44 +214,49 @@ The bacpac file you have created will need to be copied to the AOS machine in yo
 
 You can choose how you would like to move the bacpac file to the AOS machine - you may have your own SFTP or other secure file transfer service. We recommend to use our Azure storage, which would require that you acquire your own Azure storage account on your own Azure subscription (this is not provided within the Dynamics subscription itself). There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](https://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then on your download it on your development environment.
 
-Another (free) option is to use the LCS asset library, however, the upload and download will take longer than Azure storage. To use this option:
-1. Log into your project in LCS and go to your Asset library.
+Another option is to use the Asset library in Microsoft Dynamics Lifecycle Services (LCS). However, the upload and download will take longer than Azure storage. To use this option:
+1. Sign in to your project in LCS and go to your Asset library.
 2. Select the Database backup tab.
 3. Upload the bacpac file.
-You can later download the bacpac onto the sandbox AOS VM by logging into LCS on that VM and downloading it from the LCS Asset library.
+Since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. You can download the bacpac onto the cloud-hosted VM by signing in to LCS on that machine and downloading it from the LCS Asset library.
 
 ## Import the bacpac file into SQL Database
 
-During this step, you will import the exported bacpac file to the SQL Database instance that your sandbox environment uses. You must first install the latest version of Management Studio on your sandbox AOS machine. You will then import the file by using the SQLPackage.exe tool.
+> [!NOTE]
+> This topic is being phased out in favor of a new process that is based on the dacpac file format. For information about the new process, see [Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments](upgrade-data-sandbox-dacpac.md).
 
+During this step, you will import the exported bacpac file into the SQL Server database instance that your sandbox environment uses. As stated above, since the removal of RDP access to Sandbox AOS servers, we recommend that you use a cloud-hosted environment running in the same region as the sandbox environment to import the file. You can request JIT access to the database and run from a local server. To do that, follow the process for [Enable just-in-time database access](../database/database-just-in-time-JIT-access.md) to allow-list your IP address to the database.
 
-You will perform these tasks directly on the AOS machine in your sandbox environment, because there are firewall rules that restrict access to the SQL Database instance. However, by using the AOS machine, you can gain access.
+You must first install the latest version of Management Studio on your cloud-hosted VM or local server. You will then import the file by using the SQLPackage.exe tool.
 
-As for the export step, you must have the latest version of Management Studio before you start the import. This step won't work if you have an older version.
-
-For performance reasons, we recommend that you put the bacpac file on drive D on the AOS machine. On Azure virtual machines (VMs), drive D is a physical disk that typically has higher performance than other available disks.
+If you are using a cloud-hosted environment, for performance reasons, we recommend that you put the bacpac file on drive D on the AOS machine. On Azure virtual machines (VMs), drive D is a physical disk that typically has higher performance than other available disks.
 
 Open a **Command Prompt** window as an administrator, and run the following commands.
 
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tdn:<New database name> /tu:sqladmin /tp:<password from LCS> /mp:64 /p:CommandTimeout=1200 /p:DatabaseEdition=<Edition> /p:DatabaseServiceObjective=<Service objective> /p:DatabaseMaximumSize=<Maximum size>
 ```
 
 Here is an explanation of the parameters:
 
+- **sf** (source file) – The path and name of the file to import from.
 - **tsn** (target server name) – The name of the SQL Azure server to import to. The name can be found in LCS. Suffix it with **.database.windows.net**.
 - **tdn** (target database name) – The name of the database to import to. The database should not already exist. The import process will create it.
-- **sf** (source file) – The path and name of the file to import from.
-- **tp** (target password) – The SQL password for the target SQL Database instance.
 - **tu** (target user) – The SQL user name for the target SQL Database instance. We recommend that you use **sqladmin**. You can retrieve the password for this user from your LCS project.
-- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without hitting a timeout.
-- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this envrironment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **tp** (target password) – The SQL password for the target SQL database instance.
+- **mp** (max parallelism) - Specifies the degree of parallelism for concurrent operations running against a database. The default value is 8. A value of 64 provides the best performance in most scenarios.
+- **/p:CommandTimeout** – The per-query timeout value. This parameter enables larger tables to be exported without a timeout.
+- **/p:DatabaseEdition** – Specifies the edition of the database such as Basic, Standard, Premium, GeneralPurpose, BusinessCritical, or Hyperscale. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2, P4, or GP_Gen5_8. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. You can check the value for the existing database by using Management Studio. Right-click the database, and then select **Properties**.
+- **/p:DatabaseMaximumSize** – Defines the maximum size in GB of an Azure SQL database. You may need to use this parameter to allow a large database to be imported.
 
-After you run the commands, you may see the following warning. You can safely ignore it.
+After you run the commands, you may receive the following warning. You can safely ignore it.
 
 ![Sandbox error](./media/sandbox-2.png)
+
+If you receive an error message about a non-valid value, double-check your parameters. If they are okay, you may need to use a newer version of SqlPackage. You can use the [Windows .NET Core](/sql/tools/sqlpackage-download) version without the need to install. It is a .zip file that can be extracted to C:\Temp\Sqlpackage-dotnetcore, for example. Now when you import the database, instead of using the Sqlpackage.exe under C:\Program Files (x86) you can use the Sqlpackage.exe in C:\Temp\Sqlpackage-dotnetcore.
 
 
 ## Run a T-SQL script to update the database
@@ -300,14 +299,9 @@ ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 
 ## Run the data upgrade deployable package
 
-Tier 2 Sandbox environments do not allow running DataUpgrade packages against them via LCS. To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+For Tier-2 sandbox environments, you can now run the data upgrade package directly from LCS, just as you can do for Tier-1 DevTest environments. To apply the package, go to your environment in LCS, and select **Maintain** \> **Apply updates**. Scroll to the bottom of the list, and wait for the data upgrade packages to be loaded from the Shared asset library. It might take some time for the packages to be loaded. If no data upgrade packages appear in the list, go to your project settings in LCS, and make sure that your legacy system is set to **AX2012 Upgrade**. You can then apply the packages.
 
-1. Sign in to [LCS](https://lcs.dynamics.com/)
-2. Select the **Shared asset library** tile.
-3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
-4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade. For example, if you're upgrading from AX 2012, the package name starts with AX2012DataUpgrade. Select the package that corresponds to the release you are upgrading to. For example: AX2012DataUpgrade-July2017.
-
-Next, execute the package manually via Remote Desktop on the AOS VM. 
+The name of the package that you select should match your version. For example, to upgrade to version 10.0.14, select **AX2012DataUpgrade-10-0-14**.
 
 For more information, see [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md). 
 

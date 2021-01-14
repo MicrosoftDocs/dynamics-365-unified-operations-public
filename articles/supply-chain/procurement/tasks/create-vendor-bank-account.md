@@ -4,7 +4,7 @@
 title: Create a vendor bank account
 description: This procedure shows you how to create a bank account for a vendor. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,8 +16,8 @@ ms.technology:
 ms.search.form: VendTable, VendBankAccounts, LogisticsPostalAddressSingle   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -34,9 +34,9 @@ This procedure shows you how to create a bank account for a vendor. You can use 
 
 1. Go to **Navigation pane > Modules > Procurement and sourcing > Vendors > All vendors**.
 2. Select the vendor that you want to create a bank account for, and then click the link on the **Vendor account ID** field.
-3. On the **Action pane**, click **Vendor**.
+3. On the **Action Pane**, click **Vendor**.
 4. Click **Bank accounts**.
-5. On the **Action pane**, click **New**.
+5. On the **Action Pane**, click **New**.
 6. In the **Bank account** field, type a value. This ID will be used to identify the bank account on the vendor record.  
 7. In the **Name** field, type a value.
 8. In the **Bank groups** field, enter or select a value.

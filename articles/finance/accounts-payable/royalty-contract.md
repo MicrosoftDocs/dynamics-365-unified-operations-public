@@ -13,16 +13,16 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---

@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
+ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+# ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f

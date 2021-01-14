@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Navigation concepts
+title: Navigation concepts for test data
 description: This topic provides information about how to use navigation to simplify the discoverability of test data generation methods.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -18,23 +18,20 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Navigation concepts
+# Navigation concepts for test data
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 To simplify the discoverability of generation methods for test data, a set of navigation objects is introduced. For more information about the generation methods, see [Test data methods](test-data-methods.md).
 

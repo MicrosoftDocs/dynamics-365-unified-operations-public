@@ -4,7 +4,7 @@
 title: Set up shipping carriers
 description: This topic shows how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/19/2019
 ms.topic: business-process 
 ms.prod:  
@@ -12,17 +12,16 @@ ms.service: dynamics-ax-applications
 ms.technology:  
  
 # optional metadata 
- 
-# ms.search.form:   
+ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
+#ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -35,7 +34,7 @@ This topic shows how to set up a shipping carrier and define details such as ser
 
 ## Create a new shipping carrier
 1. Go to **Navigation pane > Modules > Transportation management > Setup > Carriers > Shipping carriers**.
-2. Select **New** in the Action pane.
+2. Select **New** on the Action Pane.
 3. In the **Shipping carrier** field, type a value.
 4. In the **Name** field, type a value.
 5. In the **Mode** field, select an option from the drop-down menu.

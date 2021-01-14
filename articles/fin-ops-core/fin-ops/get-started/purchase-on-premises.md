@@ -17,12 +17,11 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Platform update 8 
 ---

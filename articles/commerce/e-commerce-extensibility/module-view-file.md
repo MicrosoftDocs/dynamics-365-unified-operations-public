@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+#ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -43,11 +43,6 @@ A module view file is a TypeScript (.ts) file that controls a module's view. It'
 The following example shows the default module view file for a new module.
 
 ```typescript
-/*!
- * Copyright (c) Microsoft Corporation.
- * All rights reserved. See LICENSE in the project root for license information.
- */
-
 import * as React from 'react';
 import { IProductFeatureViewProps } from './product-feature';
 
@@ -62,6 +57,8 @@ export default (props: IProductFeatureViewProps) => {
 ```
 
 ## Additional resources
+
+[Modules overview](modules-overview.md)
 
 [Module definition file](module-definition-file.md)
 

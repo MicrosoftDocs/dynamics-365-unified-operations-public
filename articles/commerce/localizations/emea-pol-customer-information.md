@@ -17,14 +17,14 @@ ms.search.form: RetailFunctionalityProfile, RetailParameters
 audience: Application User
 # ms.devlang:
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+#ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Poland
 ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
-ms.dyn365.ops.version: 10.0.9
+ms.dyn365.ops.version: 10.0.7
 
 ---
 # Customer information management for Poland
@@ -39,7 +39,7 @@ This topic describes how you can handle customer information, such as the custom
 You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and it can be used for invoicing purposes.
 
 > [!NOTE]
-> This functionality is available in version 10.0.8 and later.
+> This functionality is available in version 10.0.7 and later.
 
 ## Setup
 
@@ -113,7 +113,7 @@ The following example scenarios show how to work with customer information in PO
 1. Sign in to POS.
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
-1. Specify the new customer's attributes. 
+1. Specify the new customer's attributes.
 1. Select **Create a new address**. Then specify the new customer's contact information and an address.
 1. In the **VAT number** field, enter the customer's VAT number.
 1. Save the customer record and the customer address record, and add the customer to the transaction.
@@ -149,22 +149,41 @@ This section provides deployment guidance for enabling customer information mana
 
 ### Update customizations
 
-Follow these steps if any of your customizations include request handlers for the SaveCartRequest or CreateSalesOrderServiceRequest request.
+Follow these steps to update customizations.
 
-1. Find the request handler for the **SaveCartRequest** request.
-1. Find the line of code that runs the original handler.
-1. Replace the original handler class with **TaxRegistrationIdFiscalCustomerService**.
+# [Retail 10.0.7 and later](#tab/retail-10-0-7)
+
+If any of your customizations include request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest` requests:
+
+1. Find the request handler for `SaveCartRequest`.
+1. Find the line of code that runs the original request handler.
+1. Add the following lines before calling the original request handler:
 
     ```cs
     using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
 
     ...
 
-    var requestHandler = new TaxRegistrationIdFiscalCustomerService();
-    var response = request.RequestContext.Runtime.Execute<SaveCartResponse>(request, request.RequestContext, requestHandler, skipRequestTriggers: false);
+    new TaxRegistrationIdFiscalCustomerService().Execute(request);
     ```
 
-1. Repeat steps 1 through 3 for the **CreateSalesOrderServiceRequest** request.
+1. Find the request handler for `CreateSalesOrderServiceRequest`.
+1. Find the line of code that runs the original request handler.
+1. Replace it with the following code:
+
+    ```cs
+    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
+
+    ...
+
+    return new TaxRegistrationIdFiscalCustomerService().Execute(request);
+    ```
+
+# [Retail 10.0.12 and later](#tab/retail-10-0-12)
+
+If customizations have references to the `TaxRegistrationIdFiscalCustomerService` service, they must be removed.
+
+---
 
 ### Update a development environment
 

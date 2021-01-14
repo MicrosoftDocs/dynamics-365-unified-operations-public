@@ -19,14 +19,14 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 
-ms.search.scope: Core, Operations, Retail
+# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
