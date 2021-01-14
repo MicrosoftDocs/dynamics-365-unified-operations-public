@@ -55,6 +55,25 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline ("build definition") needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
+### User avatar 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The user avatar in the right of the navigation bar was retrieved using an API from the Dynamics 365 header control, which has been obsoleted. |
+| **Replaced by another feature?**   | Users will see their initials in a circle in the navigation bar instead. This is the same visual currently used on development machines. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of version 10.0.17 |
+
+### Enterprise portal (EP) deprecation  
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The metadata artifacts associated with Dynamics AX 2012 Enterprise Portal (EP) have long been marked as deprecated, as EP was never supported in the Finance and Operations apps. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. All EP code is scheduled to be removed in the October 2021 release. |
 
 ## Platform updates for version 10.0.15 of Finance and Operations apps
 
