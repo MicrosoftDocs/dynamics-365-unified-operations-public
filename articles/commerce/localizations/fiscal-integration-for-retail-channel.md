@@ -21,7 +21,7 @@ ms.reviewer: josaw
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10.0
 

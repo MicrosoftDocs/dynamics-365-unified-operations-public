@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (July 16, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 07/16/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-07-16
 ms.dyn365.ops.version: Talent
 

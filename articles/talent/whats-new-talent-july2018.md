@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: Anbichse
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
 

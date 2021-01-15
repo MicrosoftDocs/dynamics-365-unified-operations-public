@@ -23,7 +23,7 @@ ms.custom: 221194
 ms.assetid: f734d55a-304c-4e49-b437-6fa34c30b5ca
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
