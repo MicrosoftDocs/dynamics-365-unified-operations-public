@@ -65,9 +65,9 @@ For an example that shows how set-based processing can be enabled for the **Gene
 Here are some important considerations if you must create an entity that allows for set-based processing:
 
 * The data sources can't be read-only.
-* The [**ValidTimeStateEnabled**](../dev-itpro/dev-tools/date-effectivity.md) property of the data entity view the must be set to **No**.
+* The [**ValidTimeStateEnabled**](../dev-tools/date-effectivity.md) property of the data entity view the must be set to **No**.
 * All tables on the data sources must have **TableType** property set to **Regular**.
-* The property [**QueryType**](../dev-itpro/dev-ref/application-explorer-aot-properties.md#query-properties-1) on the used **Query** can't be set to **Union**.
+* The property [**QueryType**](../dev-ref/application-explorer-aot-properties.md#query-properties-1) on the used **Query** can't be set to **Union**.
 * The main data source can't prevent data from being saved across companies. However, embedded data sources allow it.
 * The main data source can't prevent data from being saved across partitions. However, embedded data sources allow it.
 
@@ -122,7 +122,7 @@ Follow these steps to change the execution parameters for all entities or specif
 
 #### Import threshold record count
 
-This value determines the number of records to be processed per thread. [By modifying the **Import threshold record count**](../dev-itpro/data-entities/data-import-export-job.md#parallel-imports) you can control how you want to split the import into smaller tasks.
+This value determines the number of records to be processed per thread. [By modifying the **Import threshold record count**](../data-entities/data-import-export-job.md#parallel-imports) you can control how you want to split the import into smaller tasks.
 
 #### Import task count
 
