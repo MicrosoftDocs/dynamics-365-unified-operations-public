@@ -3,7 +3,7 @@
 
 title: Make the chart of accounts delimiter unique
 description: This topic explains how you cannot have the same delimiter for the chart of accounts and dimension values. You must change delimiter values after upgrade. 
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 03/30/2018
 ms.topic: article

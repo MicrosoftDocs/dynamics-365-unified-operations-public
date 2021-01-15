@@ -3,7 +3,7 @@
  
 title: Submit and approve project budget
 description: This procedure shows you how to create and submit the budget for a project. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 08/13/2019
 ms.topic: business-process 
@@ -21,7 +21,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
