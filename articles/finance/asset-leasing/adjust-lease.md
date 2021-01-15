@@ -54,20 +54,18 @@ To open the lease adjustment wizard from the lease summary:
 
 To open the lease adjustment wizard for an adjustment in progress from the lease adjustments form:
 
-3.	Go to Lease > Leases > Lease adjustments
-4.	Select a lease with adjustment status in progress and click **Adjustment wizard**
-5.	Enter dates for the **Modification start date** and **Posting date**
-6.	Click **Next**
+1.	Go to **Lease > Leases > Lease adjustments**.
+2.	Select a lease with adjustment status in progress and click **Adjustment wizard**
+3.	Enter dates for the **Modification start date** and **Posting date**
+4.	Click **Next**
 
-The lease is now inserted into the Lease adjustments form. 
+The lease is now inserted into the Lease adjustments form. Enter the new information about the adjusted lease.
 
-7.	Enter the new information about the adjusted lease
+After the lease has been adjusted, the right-of-use considerations fields now apply to the adjusted lease. If no initial direct costs, lease incentives, prepayments, or dismantling costs are associated with the modified lease, leave these fields blank. The original amounts won't apply to the updated lease. 
 
-The right-of-use considerations fields now apply to the lease adjustment. If no initial direct costs, lease incentives, prepayments, or dismantling costs are associated with the modified lease, you should leave these fields blank. The original amounts won't apply to the updated lease. 
+For example, suppose that a lessor provides a $1,000 incentive for agreeing to a lease extension. In this case, when you adjust the lease to account for the extension, enter 1,000 in the Lease incentives arising from adjustment field.
 
-For example, a lessor provides a $1,000 incentive for agreeing to a lease extension. In this case, when you adjust the lease to account for the extension, you enter 1,000 in the Lease incentives arising from adjustment field.
-
-The payment schedule lines now show all payments form the month of the Modification start date and forward. Because modifications are prospective, payment schedule lines cannot start before the Modification start date. To view payment schedule lines from before the Modification start date, navigate to the Lease version history.
+The payment schedule lines now show all payments from the month in the **Modification start date** field and moving forward. Because modifications are prospective, payment schedule lines cannot start before the date that the modification starts. To view payment schedule lines from before the Modification start date, navigate to the Lease version history.
 
 8.	Click **Next**
 
