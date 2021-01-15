@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Asset leasing conventions 
+title: Asset leasing convention 
 description: This topic describes conventions for leased assets
 author: moaamer
 manager: Ann Beebe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.17
 
 ---
 
-# Asset leasing conventions  
+# Asset leasing convention  
 
 This topic describes conventions for leased assets. Leasing conventions are used to determine the commencement date of a lease book. If the leasing convention is none, the commencement date is the lease start date. If the Leasing convention is full month, the commencement date is the first day of the month of the lease start date field. 
 
