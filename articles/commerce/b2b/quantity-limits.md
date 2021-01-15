@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set order quantity for products
+title: Set product quantity limits for B2B e-commerce sites
 description: This topic describes how to set product quantity limits for B2B e-commerce sites.
 author: josaw1
 manager: AnnBe
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 #ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -26,19 +26,21 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Set order quantity for products
+# SSet product quantity limits for B2B e-commerce sites
 
 [!include [banner](../../includes/banner.md)]
 
-Most products have a Unit of Measure that defines their grouping on how they can be sold. Some products may have an additional grouping for the quantities – which would determine if they can be sold as individual units or multiple and if there is a minimum/maximum order quantity that needs to be followed.
+This topic describes how to set product quantity limits for B2B e-commerce sites.
 
-The scope of this feature is to enable the customer sales orders to validate against the 'Default order settings' for Sales Quantity per product. To ensure that the minimum, maximum, multiple, and standard quantities of the default order settings or Site settings will be respected to create any Customer order at AX-Call Center, POS & e-Commerce. (Initial release the enforcements are available at the eCommerce and Point-of-Sale only)
+Most products have a unit of measure that defines their grouping, which affects how they can be sold. Some products may have an additional grouping for quantities, which would determine if they can be sold as individual units or multiples and if there is a minimum/maximum order quantity limit that needs to be followed.
 
-In an omni-channel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
+The scope of this feature is to enable the customer sales orders to validate against the 'Default order settings' for Sales Quantity per product. To ensure that the minimum, maximum, multiple, and standard quantities of the default order settings or Commerce site builder site settings will be respected to create any customer order via point of sale (POS), e-commerce site, or call center. (Initial release the enforcements are available at the eCommerce and Point-of-Sale only)
 
-- A customer wants products of certain variants to be sold in multiples of a few quantity.
-- A customer wants to pick up products from a store or location that differs from the store or location where the customer purchased those products, but the packing standards for the stores differ from online sales distribution.
-- A customer wants to buy a limited-edition product which may have a quantity limit for maximum purchase.
+In an omnichannel e-commerce world, many retailers provide the option of customer orders (also known as special orders) to meet various product and fulfillment requirements. Here are some typical scenarios:
+
+- A customer wants products of certain variants to be sold in multiples of a few.
+- A customer wants to pick up products from a store or location that differs from the store or location where the customer purchased those products, but the packing standards for the stores differ from those for online sales distribution.
+- A customer wants to buy a limited-edition product which may have a maximum quantity limit for items that can be purchased.
 
 ## Prerequisites
 
