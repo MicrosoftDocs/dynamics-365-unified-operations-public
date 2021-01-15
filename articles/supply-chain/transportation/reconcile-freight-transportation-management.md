@@ -38,48 +38,64 @@ This topic describes the freight reconciliation process.
 Freight reconciliation can be done manually, or it can be set up to occur automatically. To use automatic freight reconciliation, you must set up an audit master where you can define criteria that determine which freight bills are matched automatically.
 
 ## The freight reconciliation process
-Freight rates are calculated by the rate engine that is associated with the relevant shipping carrier. When a load is confirmed, a freight bill is generated, and the freight rates are transferred to it. The freight rates are apportioned as miscellaneous charges to the relevant source document (purchase order, sales order, and/or transfer order), depending on the setup that is used for the regular billing process. The freight reconciliation process (which is also known as the matching process) can start as soon as the freight invoice arrives from the shipping carrier. The invoice can be received electronically or on paper. If the invoice is received on paper, you can generate an electronic invoice by using the freight bill as a template. 
 
-[![Freight reconcilation process](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+Freight rates are calculated by the rate engine that is associated with the relevant shipping carrier. When a load is confirmed, a freight bill is generated, and the freight rates are transferred to it. The freight rates are apportioned as miscellaneous charges to the relevant source document (purchase order, sales order, and/or transfer order), depending on the setup that is used for the regular billing process. The freight reconciliation process (which is also known as the matching process) can start as soon as the freight invoice arrives from the shipping carrier. The invoice can be received electronically or on paper. If the invoice is received on paper, you can generate an electronic invoice by using the freight bill as a template.
+
+[![Freight reconciliation process](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## Manual reconciliation
-If you're reconciling freight manually, you must match each invoice line with the freight bill line or lines for the load that is being invoiced. You do this matching on the **Freight bill and invoice matching** page. If the amount on the invoice line doesn’t match the freight bill amount, you must select a reconciliation reason for the difference. If there are multiple reasons for reconciliation, you can split the unmatched amount across them. The reconciliation reason determines how the difference amounts are posted in the general ledger. When the reconciliation of the whole invoice amount is accounted for, it's submitted for approval, and then the journal is posted. The following illustration shows how to generate a freight invoice and do freight reconciliation. 
-[![Freight reconcilation tasks](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+
+If you're reconciling freight manually, you must match each invoice line with the freight bill line or lines for the load that is being invoiced. You do this matching on the **Freight bill and invoice matching** page. If the amount on the invoice line doesn’t match the freight bill amount, you must select a reconciliation reason for the difference. If there are multiple reasons for reconciliation, you can split the unmatched amount across them. The reconciliation reason determines how the difference amounts are posted in the general ledger. When the reconciliation of the whole invoice amount is accounted for, it's submitted for approval, and then the journal is posted. The following illustration shows how to generate a freight invoice and do freight reconciliation.
+
+[![Freight reconciliation tasks](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+
 ## Automatic reconciliation
 To use automatic reconciliation, you must specify the schedule for reconciliation, and the invoices and shipping carriers to use. The matching of the invoice lines and freight bills is done according to the setup of the audit master and freight bill type. After you run the automatic reconciliation, you must handle any invoices that the system can't match. You must then process these invoices manually before you can post all the invoices for payment.
 
-## Matching freight bills with freight invoices. Differences between automatic and manual reconsiliation.
-Matching is the process of finding the corresponding freight bills that freight invoices are intended for. This can be done by matching the invoices lines one-by-one (manual matching), or match all available invoices at once (auto match). 
+## Matching freight bills with freight invoices, and the differences between automatic and manual reconciliation
 
-Auto matching
+*Matching* is the process of finding the freight bills that correspond to each freight invoice. This can be done by matching the invoices lines one-by-one (manual matching), or match all available invoices at once (auto match).
+
+### Auto matching
+
 When matching multiple freight invoices to the same freight bill, the process for auto matching works as follows:
-1.	All freight invoices not matched are sorted on amount, with largest amount first.
-2.	The freight invoices are matched one-by-one, until the freight bill has no positive amount remaining.
-3.	Depending on the setup of the audit master and the remaining amount on the freight invoices, the remaining amount is set.
 
-Manual matching
-All freight bills with positive amounts will be available for matching. Similar to auto matching, the user will only be able to match freight invoices with negative amounts to freight bills not fully matched. 
+1. All freight invoices not matched are sorted on amount, with largest amount first.
+1. The freight invoices are matched one-by-one, until the freight bill has no positive amount remaining.
+1. Depending on the setup of the audit master and the remaining amount on the freight invoices, the remaining amount is set.
 
-Example
-Assume the user has a Freight bill (FB) with an amount of 1500. He creates 3 freight nvoices for the freight bill with one invoice line for each invoice with following settings:
-Original Freight Bill (FB): Amount 1500
-Invoice 1 (Inv1): Amount 1000
-Invoice 2 (Inv2): Amount 600
-Invoice 3 (Inv3): Amount -100
+### Manual matching
+
+All freight bills with positive amounts will be available for matching. Similar to auto matching, the user will only be able to match freight invoices with negative amounts to freight bills not fully matched.
+
+### Example
+
+Assume the user has a freight bill (FB) with an amount of 1500. He creates 3 freight invoices for the freight bill with one invoice line for each invoice with following settings:
+
+- Original Freight Bill (FB): Amount 1500
+- Invoice 1 (Inv1): Amount 1000
+- Invoice 2 (Inv2): Amount 600
+- Invoice 3 (Inv3): Amount -100
+
 Auto matching will execute in following order:
-1.	Sort all freight invoices descending by amount: Inv1 -> Inv2 -> Inv3
-2.	Match Inv1 with FB, Inv1 has 1000 matched, FB has 500 amount remaining, status set to “Partially matched”
-3.	Match Inv2 with FB, Inv2 has 500 matched, FB has 0 remaining, and status set to “Fully matched”
-4.	As FB is fully matched, Inv3 will not be processed.
 
-For manual matching, the results vary depending on the order of the matching, for example:
-Case 1: 
-1.	Match FB with Inv1, FB has 500 amount remaining, status set to “Partially matched”
-2.	Match Inv2 with FB, Inv2 has 500 matched, FB has 0 remaining, and status set to “Fully matched”
-3.	When manually matching Inv3, user does not find unmatched freight bills.
+1. Sort all freight invoices descending by amount: Inv1 -> Inv2 -> Inv3
+1. Match Inv1 with FB, Inv1 has 1000 matched, FB has 500 amount remaining, status set to “Partially matched”
+1. Match Inv2 with FB, Inv2 has 500 matched, FB has 0 remaining, and status set to “Fully matched”
+1. As FB is fully matched, Inv3 will not be processed.
+
+For manual matching, the results vary depending on the order of the matching, as illustrated in the following examples.
+
+#### Example case 1
+
+1. Match FB with Inv1, FB has 500 amount remaining, status set to “Partially matched”
+1. Match Inv2 with FB, Inv2 has 500 matched, FB has 0 remaining, and status set to “Fully matched”
+1. When manually matching Inv3, user does not find unmatched freight bills.
 This case is the same as auto matching
-Case 2:
-1.	Match inv3 with FB. Now FB has amount remaining 1600, same as subtracting negative 100 on top of 1500. Both FB and Inv3 has matched quantity of -100.
-2.	Match Inv1 and Inv 2 with FB one after another, FB is fully matched. 
+
+#### Example case 2
+
+1. Match inv3 with FB. Now FB has amount remaining 1600, same as subtracting negative 100 on top of 1500. Both FB and Inv3 has matched quantity of -100.
+1. Match Inv1 and Inv 2 with FB one after another, FB is fully matched. 
 
 As this example shows, matching freight invoices with negative amounts is suggested to be done using manual matching only. This will ensure that it is alsways possible to match the freight invoices with negative amounts to a freight bill not fully matched as the user controls the matching sequence. 
