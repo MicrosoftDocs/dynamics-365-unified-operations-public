@@ -120,9 +120,9 @@ Although F1 accuracy isn't as easy to understand, it adds nuance to the basic ac
 
 The [Model accuracy](#model-accuracy) section of this topic compared the following two confusion matrices. Even though the first model had lower accuracy, it was deemed a more useful model because it showed more improvement than the default guess of an on-time payment.
 
-[![Payment prediction vs. actuals example](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+![Payment prediction vs. actuals example](media/payment-prediction-matrix.png)
 
-[![Payment prediction example with a larger sample](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Payment prediction example with a larger sample](media/payment-prediction-matrix-2.png)
 
 Let's see how these two models compare when the F1 score is used. The F1 score factors in precision and recall for each state, and the F1 macro calculation then averages the F1 score across the states to determine an overall F1 score. There are other F1 variants, but it's of greater interest to consider the macro version, given the equal consideration that is given to all three states.
 
