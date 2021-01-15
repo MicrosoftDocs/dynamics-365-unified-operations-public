@@ -3,7 +3,7 @@
 
 title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
-author: sericks007
+author: PeterRFriis
 manager: AnnBe
 ms.date: 11/27/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: perahlff
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
 
