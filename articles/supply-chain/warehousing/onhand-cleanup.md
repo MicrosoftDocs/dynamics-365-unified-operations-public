@@ -54,9 +54,10 @@ When the job runs, it has a commit size of 100. In other words, it will try to c
 
 ## Possible user impact
 
-Users might be affected if the on-hand entries cleanup job deletes all the records for a given level (such as the license plate level). In this case, the functionality for seeing that inventory was previously available on hand at a license plate might not work as expected, because the relevant on-hand entries are no longer available. This can for example be experienced in:
-- **On-hand list** when the user unchecks the condition **Quantity \<\> 0** or checks the condition **Closed transactions** in the **Dimensions Display** settings.
-- **Physical inventory by inventory dimension** report for past periods when the users sets the **As of date** parameter. 
+Users might be affected if the on-hand entries cleanup job deletes all the records for a given level (such as the license plate level). In this case, the functionality for seeing that inventory was previously available on-hand at a license plate might not work as expected because the relevant on-hand entries are no longer available. This can, for example, be experienced in the following situations:
+
+- On the **On-hand list**, when the user deselects the condition **Quantity \<\> 0** or selects the condition **Closed transactions** in the **Dimensions display** settings.
+- In a **Physical inventory by inventory dimension** report for past periods, when the user sets the **As of date** parameter.
 
 However, the performance improvement that the cleanup job provides should make up for these small losses in functionality.
 
