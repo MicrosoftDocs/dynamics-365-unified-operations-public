@@ -34,6 +34,36 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
+## After upgrading to module library version 9.27 (10.0.17 release), if partner is using any buy box module view extension they may see compile error.
+
+Reason for change: **Product Quick view** module is introduced in this release which shares most of the functionality with buybox. For code sharing purpose common components are moved from buybox module to a common folder so that both buybox and quickview can share code.
+
+Mitigation: Any reference errors in view file needs to fixed accordingly to resolve compilation error.
+
+Old code:
+
+Earlier imports in buybox.view.tsx
+
+import { IBuyboxViewProps } from '../..';
+import {
+    IBuyboxAddToCartViewProps,
+    IBuyboxAddToOrderTemplateViewProps,
+    IBuyboxAddToWishlistViewProps,
+    IBuyboxFindInStoreViewProps,
+    IBuyboxKeyInPriceViewProps,
+    IBuyboxProductConfigureDropdownViewProps,
+    IBuyboxProductConfigureViewProps,
+    IBuyboxProductQuantityViewProps,
+    IBuyboxShopSimilarLookViewProps
+ } from './components';
+
+New code:
+
+import { IBuyboxAddToCartViewProps, IBuyboxAddToOrderTemplateViewProps, IBuyboxAddToWishlistViewProps, IBuyboxKeyInPriceViewProps, IBuyboxProductConfigureDropdownViewProps, IBuyboxProductConfigureViewProps, IBuyboxProductQuantityViewProps, IBuyboxShopSimilarLookViewProps } from '../../common';
+import { IBuyboxViewProps } from './buybox';
+import { IBuyboxFindInStoreViewProps } from './components/buybox-find-in-store';
+
+
 ## After upgrading to module library version 9.24 (10.0.14 release), cloned modules that use data actions may display the error, "UserAuthorizationException. Customer account number on the request was wrong".
 
 The following list of [core data actions](core-data-actions.md) have a signature change that moves the user account number parameter to the second parameter (instead of the first) and is now set as an optional parameter. In most scenarios where the user account number is no longer needed, the data action will execute in the context of the current signed-in user. In some custom scenarios where the user account number is different than the user account number of the signed-in user, you can fetch the user account number by using the **get-customer** data action and passing it to the data action.
