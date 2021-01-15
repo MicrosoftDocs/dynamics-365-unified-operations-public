@@ -87,7 +87,7 @@ The hub owns the following data:
 - All cost and financial updates
 
 > [!NOTE]
-> The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse or not. <!-- KFM: I'm not sure I understood this second sentence correctly. Please confirm my edit. -->
+> The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse or not. Once you have released an order to the warehouse, you can only work with that order while signed in on the scale unit.
 
 If you're using the *release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
 
@@ -135,7 +135,7 @@ No other types source-documents processing or warehouse work are currently suppo
 > [!WARNING]
 > When you run a workload on a scale unit, you can't run unsupported processes for that specific warehouse on the hub. The tables provided later in this topic document the supported capabilities.
 >
-> Selected warehouse work types can be created both on the hub and on scale units, but can only be maintained by the owning hub or scale unit (the deployment which created the data). If you enable a warehouse for scale unit workload processing with, for example, active work, this work will need to get finalized on the hub, which will be the owner of this data. <!-- KFM: It seems like for this example the owner would be the scale unit. Am I missing something? -->
+> Selected warehouse work types can be created both on the hub and on scale units, but can only be maintained by the owning hub or scale unit (the deployment which created the data).
 >
 > Even when a specific process is scale unit supported, be aware that all the needed data might not get synchronized from the hub to the scale unit, or from the scale unit to the hub, which risks resulting in unexpected system processing. Examples being:
 > 
@@ -236,8 +236,6 @@ The following table shows which inbound features are supported, and where they a
 | Work processing - Directed by *Cluster putaway*                             | Yes | No |
 | Work processing with *Short pick*                                           | Yes | No |
 | License plate loading                                           | Yes | No |
-
-
 
 ### Warehouse operations and exception handing
 
