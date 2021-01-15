@@ -39,19 +39,19 @@ Scenario: The USMF demo company has a Balance sheet report that it doesn’t wan
 Solution: You can utilize Tree security to restrict access to a single report so that only certain users can access the report. 
 
 1.	Log into Financial Reporter Report Designer
+
 2.	Create a new Tree Definition (File | New | Tree Definition)
   a.	Double-click the **Summary** line in the **Unit Security** column.
       i.	Click Users and Groups.  
           1.	Select the User(s) or Group that would like to access this report. 
-          
-          
-          [![users](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+                    
+          [![users]](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
 
-          [![security](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+          [![security]](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
 
   b.	Click **Save**.
   
-          [![save](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
+          [![save]](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
 
 3.	In your Report Definition add your new Tree Definition
           [![tree definition]](./media/FR-FAQ_tree definition.jpg)](./media/FR-FAQ_tree definition.jpg)
@@ -59,10 +59,10 @@ Solution: You can utilize Tree security to restrict access to a single report so
 A.	While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”
           [![reporting unit selection]](./media/FR-FAQ_reporting unit selection.jpg)](./media/FR-FAQ_reporting unit selection.jpg)
 
-Before:
+**Before:**
           [![before](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
 
-After:
+**After:**
           [![after](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
 
 Note: Reason for the above message is my user does not have access to that report after applying Unit Security
@@ -102,7 +102,7 @@ When you have a report that doesn't match what you would expect in D365, here ar
     iii.	Financial Dimension Set “Main Account set”
        [![FR-FAQ_mainacct](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
       
-b.	Click Calculate
+  b.	Click Calculate
 
 2.	Export the report to Excel
 
