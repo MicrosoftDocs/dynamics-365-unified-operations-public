@@ -820,7 +820,8 @@ To learn how the format structure can be synced with an ER template in the templ
 
 When you [configure](er-fillable-excel.md) an ER format component to use a Word template to generate an outbound document, you can manually add the **Excel\\File** element, add the required Word template as an attachment of the editable component, and select that attachment in the added **Excel\\File** element.
 
-> [!NOTE] When the Word document is attached, the ER format designer starts presenting the editable element as **Word\\File**.
+> [!NOTE]
+> When the Word document is attached, the ER format designer starts presenting the editable element as **Word\\File**.
 
 In this way, you indicate that the added element will fill the selected template at runtime. Because the added Word template has been externally designed, the editable ER format might contain references to Word content controls that are missing from the added template. The ER format designer warns you about any inconsistencies between the properties of the ER format elements that refer to content controls that aren't included in the added Word template.
 
@@ -842,7 +843,7 @@ Modify the using Word template by [adding](er-design-configuration-word-suppress
 
 ## <a id="i15"></a>No default mapping
 
-When the [Missing binding](#i11) inspection is performed, bindings of the inspected format are evaluated against bindings of the relevant model mapping component. As you can import to your Microsoft Dynamics 365 Finance instance [several](../tasks/er-manage-model-mapping-configurations-july-2017.md) ER model mapping configurations each of which may contain the applicable model mapping component, one of such configurations must be selected as a default one. Otherwise, when you run the inspected ER format, try to start editing or validate it, the exception will be thrown informing about this: *More than one model mapping exists for the `model name (root descriptor)` data model in the configurations `configuration names separated by comma`. Set one of the configurations as default*. 
+When the [Missing binding](#i11) inspection is performed, bindings of the inspected format are evaluated against bindings of the relevant model mapping component. As you can import to your Microsoft Dynamics 365 Finance instance [several](./tasks/er-manage-model-mapping-configurations-july-2017.md) ER model mapping configurations each of which may contain the applicable model mapping component, one of such configurations must be selected as a default one. Otherwise, when you run the inspected ER format, try to start editing or validate it, the exception will be thrown informing about this: *More than one model mapping exists for the `model name (root descriptor)` data model in the configurations `configuration names separated by comma`. Set one of the configurations as default*. 
 
 The steps of the [Manage several derived mappings for a single model root](er-multiple-model-mappings.md) example show how this issue may occur and how it can be resolved.
 
