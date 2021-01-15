@@ -32,6 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic lists questions related to financial reporting that other users have had. 
 
+
 ## How do I restrict access to a report using Tree security?
 
 Scenario: The USMF demo company has a Balance sheet report that it doesn’t want all Financial reporting users to be able to view in D365. 
@@ -42,6 +43,7 @@ Solution: You can utilize Tree security to restrict access to a single report so
   a.	Double-click the **Summary** line in the **Unit Security** column.
       i.	Click Users and Groups.  
           1.	Select the User(s) or Group that would like to access this report. 
+          
           
 [![users](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
 
@@ -64,6 +66,7 @@ After:
 [![after](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
 
 Note: Reason for the above message is my user does not have access to that report after applying Unit Security
+
 
 
 ## How do I determine which account(s) do not matching my balances in D365?
