@@ -5,7 +5,7 @@ title: Create org modeling hierarchies for B2B organizations
 description: This topic describes how to create organizational modeling hierarchies for B2B organizations.
 author: josaw1
 manager: AnnBe
-ms.date: 01/14/2021
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Create org modeling hierarchies for B2B organizations
 
-[!include [banner](../../includes/banner.md)
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to create organizational modeling hierarchies for B2B organizations in Dynamics 365 Commerce.
 
