@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Lease termination proposal
+title: Lease termination proposal - Ryan
 description: This topic explains how to propose a lease for termination.
 author: moaamer
 manager: Ann Beebe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.17
 
 ---
 
-## Propose a lease for termination
+## Propose a lease for termination - Ryan
 
 This topic explains how to propose a lease for termination. If the lease
 is terminated early, Asset leasing can record a termination journal
