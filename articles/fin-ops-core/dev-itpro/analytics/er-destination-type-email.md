@@ -70,8 +70,6 @@ If you select **Print Management email** as the email address type, you can ente
 - In the **Email source** field, select **None**.
 - In the **Additional email addresses, separated by ";"** field, enter the fixed email addresses.
 
-![Configuring a fixed email address](./media/er_destinations-emailfixedaddress.png)
-
 Alternatively, you can obtain email addresses from the contact details of the party that you generate an outbound document for. To use email addresses that aren't fixed, in the **Email source** field, select the [role](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) of the party for a file destination. The following roles are supported:
 
 - Customer
@@ -97,7 +95,7 @@ On the **Formula designer** page, in the **Formula** field, enter a document-spe
 
 If the account numbers of the configured role are unique for the whole instance of Microsoft Dynamics 365 Finance, the **Company of email source** field in the **Email to** dialog box can remain blank.
 
-![Blank Company of email source field](./media/er_destinations-emaildefineaddresssourceformula.png)
+![Blank Company of email source field](/media/er_destinations-emaildefineaddresssourceformula.gif)
 
 Alternatively, you might have a situation where different parties in the [Global address book](../../fin-ops/organization-administration/overview-global-address-book.md) have been registered in different companies ([legal entities](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) in such a way that they all use the same account number to fill the configured role. In this case, account numbers for the configured role aren't unique for the whole Finance instance. Therefore, to explicitly select a party, you can't specify only an account number. You must also specify the company that the party has been registered in the scope of to fill the configured role. Select the **Bind** button (chain symbol) next to the **Company of email source** field in the **Email to** dialog box to open the [Formula designer](general-electronic-reporting-formula-designer.md) page. You can then use this page to configure a formula that returns, at runtime, the code of the company that the desired source must be found in the scope of.
 
@@ -114,8 +112,6 @@ To specify the type of email addresses that must be used at runtime, in the **Em
 
 > [!NOTE]
 > If purposes are selected in the **Purpose** field and the **Primary contact** option is set to **Yes** at the same time, every email that satisfies at least one configured criterion will be used at runtime.
-
-![Configuring an email source attributes account](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### Configuration email
 
