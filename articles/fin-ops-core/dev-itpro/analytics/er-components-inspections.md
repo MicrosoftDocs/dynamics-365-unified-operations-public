@@ -210,6 +210,24 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>Warning</td>
 <td>Defined name &lt;component name&gt; does not exist in Excel sheet &lt;sheet name&gt;</td>
 </tr>
+<tr>
+<td><a href='#i14'>Not synced format</a></td>
+<td>Data integrity</td>
+<td>Warning</td>
+<td>
+<p>&lt;Tagged Word content control&gt; tag does not exist in Word template file</p>
+<p><b>Runtime error:</b> &lt;Tagged Word content control&gt; tag does not exist in Word template file.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i15'>No default mapping</a></td>
+<td>Data integrity</td>
+<td>Error</td>
+<td>
+<p>More than one model mapping exists for the &lt;model name (root descriptor)&gt; data model in the configurations &lt;configuration names separated by comma&gt;. Set one of the configurations as default</p>
+<p><b>Runtime error:</b> More than one model mapping exists for the &lt;model name (root descriptor)&gt; data model in the configurations &lt;configuration names separated by comma&gt;. Set one of the configurations as default.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -798,6 +816,36 @@ Modify the configured format by removing all elements that refer to Excel names 
 
 To learn how the format structure can be synced with an ER template in the template editor of [Business document management](er-business-document-management.md), see [Update the structure of a business document template](er-bdm-update-structure.md).
 
+## <a id="i14"></a>Not synced with a Word template format
+
+When you [configure](er-fillable-excel.md) an ER format component to use a Word template to generate an outbound document, you can manually add the **Excel\\File** element, add the required Word template as an attachment of the editable component, and select that attachment in the added **Excel\\File** element.
+
+> [!NOTE] When the Word document is attached, the ER format designer starts presenting the editable element as **Word\\File**.
+
+In this way, you indicate that the added element will fill the selected template at runtime. Because the added Word template has been externally designed, the editable ER format might contain references to Word content controls that are missing from the added template. The ER format designer warns you about any inconsistencies between the properties of the ER format elements that refer to content controls that aren't included in the added Word template.
+
+The steps of the [Suppress Word content controls in generated reports](er-design-configuration-word-suppress-controls.md#configure-to-suppress-control) example show how this issue might occur.
+
+### Automatic resolution
+
+No option to automatically fix this issue is available.
+
+### Manual resolution
+
+#### Option 1
+
+Modify the configured format by deleting the **Removed** formula from the format element that is mentoined in the raised warning.
+
+#### Option 2
+
+Modify the using Word template by [adding](er-design-configuration-word-suppress-controls.md#tag-control) the requred tag to the relevant Word content control.
+
+## <a id="i15"></a>No default mapping
+
+When the [Missing binding](#i11) inspection is performed, bindings of the inspected format are evaluated against bindings of the relevant model mapping component. As you can import to your Microsoft Dynamics 365 Finance instance [several](../tasks/er-manage-model-mapping-configurations-july-2017.md) ER model mapping configurations each of which may contain the applicable model mapping component, one of such configurations must be selected as a default one. Otherwise, when you run the inspected ER format, try to start editing or validate it, the exception will be thrown informing about this: *More than one model mapping exists for the `model name (root descriptor)` data model in the configurations `configuration names separated by comma`. Set one of the configurations as default*. 
+
+The steps of the [Manage several derived mappings for a single model root](er-multiple-model-mappings.md) example show how this issue may occur and how it can be resolved.
+
 ## Additional resources
 
 [ALLITEMS ER function](er-functions-list-allitems.md)
@@ -817,3 +865,7 @@ To learn how the format structure can be synced with an ER template in the templ
 [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md)
 
 [Business document management overview](er-business-document-management.md)
+
+[Suppress Word content controls in generated reports](er-design-configuration-word-suppress-controls.md)
+
+[Manage several derived mappings for a single model root](er-multiple-model-mappings.md)
