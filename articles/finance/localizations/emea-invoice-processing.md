@@ -2,7 +2,7 @@
 # required metadata
 title: Invoice processing
 description: This topic provides information about invoice processing for Eastern Europe.
-ms.author: EvgenyPopovMBS
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 10/19/2020
 ms.topic: article

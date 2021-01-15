@@ -2,7 +2,7 @@
 # required metadata
 title: Global CFDI electronic invoices for Mexico
 description: This topic gives an overview of the functionality for Global CFDI electronic invoices for Mexico.
-ms.author: EvgenyPopovMBS
+author: EvgenyPopovMBS
 manager: annbe
 ms.date: 06/28/2019
 ms.topic: article
