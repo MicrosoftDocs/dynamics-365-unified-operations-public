@@ -6,7 +6,7 @@ title: Use the Asset management mobile workspace
 description: This topic provides information about the Asset management mobile workspace.
 author: josaw1 
 manager: tfehr
-ms.date: 10/01/2019
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -70,7 +70,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you'll have to refresh the list of mobile workspaces.
 
-    ![Figure 1](media/am-mobile-01.png)
+    ![Select a workspace](media/am-mobile-01.png "Select a workspace")
 
 ## View assigned work order jobs in calendar view
 
@@ -82,7 +82,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select a work order job in the list to see job details: Asset and functional location details as well as other navigation links to view **Attachments**, **Checklists**, **Tools**, **Asset counters**, **Notes**, **Journals**.
 
-    ![Figure 2](media/am-mobile-02.png)
+    ![View assigned work order jobs in calendar view](media/am-mobile-02.png "View assigned work order jobs in calendar view")
 
 ## Create a work order job
 
@@ -100,7 +100,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![Figure 3](media/am-mobile-03.png)
+    ![The Add line screen](media/am-mobile-03.png "The Add line screen")
 
 
 ## Add attachment to a work order job
@@ -122,7 +122,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![Figure 4](media/am-mobile-04.png)
+    ![View and add attachments for a work order job](media/am-mobile-04.png "View and add attachments for a work order job")
 
 ## View maintenance checklist on a work order job
 
@@ -139,7 +139,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select the back button (**<**) to return to the previous page.
 
-    ![Figure 5](media/am-mobile-05.png)
+    ![Maintenance checklist and line details](media/am-mobile-05.png "Maintenance checklist and line details")
 
 ## View and update asset counters on a work order job
 
@@ -156,7 +156,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Enter a new counter value, and select **Done**.
 
-    ![Figure 6](media/am-mobile-06.png)
+    ![View and update asset counters](media/am-mobile-06.png "View and update asset counters")
 
 ## Register consumption on a work order job
 
@@ -188,7 +188,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
     1. Enter the **Cost price** for the expense registration.
     1. Select **Done**.
 
-    ![Figure 7](media/am-mobile-07.png)
+    ![Update a work order journal](media/am-mobile-07.png "Update a work order journal")
 
 ## Update lifecycle state on a work order
 
@@ -204,7 +204,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![Figure 8](media/am-mobile-08.png)
+    ![Update lifecycle state on a work order](media/am-mobile-08.png "Update lifecycle state on a work order")
 
 ## Create a maintenance request
 
@@ -226,7 +226,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![Figure 9](media/am-mobile-09.png)
+    ![Create a maintenance request](media/am-mobile-09.png "Create a maintenance request")
 
 ## Add attachment to a maintenance request
 
@@ -246,4 +246,4 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![Figure 10](media/am-mobile-10.png)
+    ![Add an attachment to a maintenance request](media/am-mobile-10.png "Add an attachment to a maintenance request")
