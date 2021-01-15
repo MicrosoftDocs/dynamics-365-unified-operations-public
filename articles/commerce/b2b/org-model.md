@@ -36,7 +36,7 @@ Business partner organizations are represented in Dynamics 365 Commerce headquar
 
 When a business partner request to join a B2B e-commerce site is approved, the following actions are performed:
 
-- Two new customer records are created in the system: a **Type Organization** customer record for the business partner organization and a **Type Person** customer record for the business partner requestor.
+- Two new customer records are created in the system: a **Type Organization** customer record for the business partner organization, and a **Type Person** customer record for the business partner requestor.
 - A new customer hierarchy record is created under **Customer \> Customer hierarchy** with the following header properties:
     - **Customer hierarchy ID** – A unique ID for the customer hierarchy that uses the number sequence defined in Commerce headquarters shared parameters.
     - **Name** – The organization name of the business partner, as specified in the onboarding request.
@@ -52,5 +52,5 @@ When additional users are added to the business partner organization by the admi
 > [!NOTE]
 > In most cases, the respective property values of all customer records in a hierarchy should match. For example, all business partner users should get similar prices for products and so their price group and associated configurations should be the same. However, the system does not enforce these consistencies so it is up to the relevant headquarters users to ensure that the property values and configurations for all customers in a given hierarchy are the same.
 
-Headquarters users can see property values for all customer records in the hierarchy in a side-by-side view. To do this, choose to the relevant customer record properties by selecting the tab names from the drop-down menu. Users can directly view and edit the property values from this view. Alternatively, if you want to apply all the values from the administrator customer record to all the user customer records, select **Override** in the customer hierarchy details.
+Headquarters users can see property values for all customer records in the hierarchy in a side-by-side view. To do this, choose the relevant customer record properties by selecting the tab names from the drop-down menu. Users can directly view and edit the property values from this view. Alternatively, if you want to apply all the values from the administrator customer record to all the user customer records, select **Override** in the customer hierarchy details.
 
