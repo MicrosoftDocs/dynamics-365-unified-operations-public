@@ -103,8 +103,6 @@
         items:
         - name: Introduction
           href: hr-admin-integration-ats-api-introduction.md
-        - name: Data model
-          href: hr-admin-integration-ats-api-data-model.md
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
