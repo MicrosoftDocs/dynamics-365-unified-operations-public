@@ -93,7 +93,7 @@ Whenever you run an import job, make sure that it's run in batch mode. Otherwise
 
 We recommend that you clean up the staging tables. In Platform update 29 and later, you can achieve this optimization by scheduling the [Job history cleanup job](batch-history-cleanup.md). To schedule this job, select the **Job history cleanup** tile in the **Data management** workspace.
 
-> [NOTE]
+> [!NOTE]
 > You must first turn on the **Execution history cleanup** feature in the **Feature management** workspace.
 
 ## Defragment indexes
