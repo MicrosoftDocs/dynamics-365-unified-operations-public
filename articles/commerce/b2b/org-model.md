@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Create org modeling heirarchies for B2B organizations
+# Create org modeling hierarchies for B2B organizations
 
 [!include [banner](../../includes/banner.md)
 
