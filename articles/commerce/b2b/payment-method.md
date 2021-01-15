@@ -36,9 +36,9 @@ Retailers can accept various types of payment in exchange for the products and s
 
 ## Prerequisites
 
-1. Add customer account payment method in Commerce headquarters.
-2. Associate customer account payment method with e-commerce channel.
-3. Ensure that customer has **Credit limit** enabled in headquarters at **Modules \> Retail and commerce \> Customers \> All customers**. 
+1. Add the customer account payment method in Commerce headquarters.
+2. Associate the customer account payment method with the e-commerce channel.
+3. Ensure that the customer has **Credit limit** enabled in headquarters at **Modules \> Retail and commerce \> Customers \> All customers**. 
 
 ## Enable the customer account payment method in Commerce site builder 
 
