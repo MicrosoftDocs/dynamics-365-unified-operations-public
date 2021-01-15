@@ -3,7 +3,7 @@
  
 title: Create purchasing policies
 description: This topic shows you how to create purchasing policies to align with your business processes for purchasing. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 07/31/2019
 ms.topic: business-process 
@@ -21,7 +21,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
