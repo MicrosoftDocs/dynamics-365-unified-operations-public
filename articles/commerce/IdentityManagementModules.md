@@ -57,9 +57,9 @@ There are two pages associated with the password reset flow, 'password-reset' an
 - **Password reset verification** - This page and module allows the user to trigger the sending of the security pin email to the email address associated to the login account. The page also includes input for the received security pin to verify the ownership of the account.
 - **Password reset** - This page and module allow for the user to set and confirm the new password once the account email address has been verified in the previous verification page.
 
-## User profile edit
+## Account profile edit
 
-The profile edit page and 'user profile edit' module allow for the user to update their first name (given Name) and last name (surname). These two elements are shared between AAD B2C and Commerce, and the user update in this page will update the values across both systems.
+The profile edit page and 'Account profile edit' module allow for the user to update their first name (given Name) and last name (surname). These two elements are shared between AAD B2C and Commerce, and the user's update in this page will update the values across both systems- AAD B2C and Commerce.
 
 
 
