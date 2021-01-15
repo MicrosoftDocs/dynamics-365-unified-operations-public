@@ -1,0 +1,19 @@
+This topic lists system busines events. 
+
+## Batch Business Events
+The batch framework emits the following system business events
+* Batch Started
+* Batch Completed
+* Batch Failed
+* Batch Cancelled
+
+These business events can be used to monitor the batch jobs and notify stakeholders on completion/failure. The Start and Completed/Failed events can be used to determine long running batch jobs. 
+
+The events have the following payload
+1. Job Id
+2. Job Description
+3. Job Status
+4. Job Owner EmailId
+5. Job ExecutedBy EmailId
+6. Job AdminEmailId
+7. Job EndUtcDateTime
