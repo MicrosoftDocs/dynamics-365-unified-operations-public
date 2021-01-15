@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.15. This version has a build number of 10.0.644 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.15. This version has a build number of 10.0.644 and is available as follows:
 
 - **Preview of release:** October 2020
 - **General availability of release (self-update):** November 2020
