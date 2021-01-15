@@ -5,7 +5,7 @@ title: Design ER configurations to generate reports in Word format supprssing co
 description: The following steps explain how a user in either the System administrator or Electronic reporting functional consultant role can configure an Electronic reporting formats to generate reports as Microsoft Word files supprssing content controls. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 17/12/2020
+ms.date: 12/17/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -148,7 +148,7 @@ Assume that you want to suppress the summary section in a generated document upo
 8.  Select **Save** to store changes of the editable format.
     <br>![The generated output in Word format](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
-## Execute the format to create Word output
+## Execute the modified format to create Word output
 
 1.  In the **Navigation pane**, go to **Modules \> Accounts payable \> Payments \> Payment journal**.
 2.  For the entered earlier payment journal, select **Lines**.
