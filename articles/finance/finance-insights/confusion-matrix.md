@@ -106,7 +106,7 @@ The F1 measure combines precision and recall. The result is the harmonic mean of
 
 Let's look at a concrete example. Earlier in this topic, there was an example of a model that predicted whether an animal was a dog or a cat. The illustration is repeated here.
 
-[![Species prediction example](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Species prediction example (repeated)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Here are the results if "Dog" is used as the positive answer.
 
@@ -122,7 +122,7 @@ The [Model accuracy](#model-accuracy) section of this topic compared the followi
 
 ![Payment prediction vs. actuals example](media/payment-prediction-matrix.png)
 
-![Payment prediction example with a larger sample](media/payment-prediction-matrix-2.png)
+![Payment prediction example with a larger sample (repeated)](media/payment-prediction-matrix-2.png)
 
 Let's see how these two models compare when the F1 score is used. The F1 score factors in precision and recall for each state, and the F1 macro calculation then averages the F1 score across the states to determine an overall F1 score. There are other F1 variants, but it's of greater interest to consider the macro version, given the equal consideration that is given to all three states.
 
