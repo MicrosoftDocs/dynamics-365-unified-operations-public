@@ -3,7 +3,7 @@
 
 title: Audit policy violations and cases
 description: The article explains how audit cases are generated from violations of audit policy rules. It also includes information about the various ways that audit policies use the document selection date range.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom: 13091
 ms.assetid: e0e66c6d-c396-4a9d-b3b6-3641d130fdc0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
