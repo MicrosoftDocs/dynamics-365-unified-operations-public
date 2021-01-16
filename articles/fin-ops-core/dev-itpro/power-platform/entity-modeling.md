@@ -81,7 +81,7 @@ The following data types in Finance and Operations aren't supported in Dataverse
 - VarArg
 - Void (Void return types on OData actions are supported.)
 
-Data type that are supported in Dataverse but not in Finance and Operations aren't supported in virtual entities for Finance and Operations.
+Data types that are supported in Dataverse but not in Finance and Operations aren't supported in virtual entities for Finance and Operations.
 
 ## Entity key/primary key
 
@@ -90,6 +90,8 @@ In Finance and Operations, entities can have one or more fields of various data 
 In Dataverse, the primary key is always a globally unique identifier (GUID). The GUID-based primary key enables a record in an entity in Dataverse to be uniquely identified.
 
 To bridge the implementation gap between Finance and Operations and Dataverse, the primary key of a virtual entity for Finance and Operations is a GUID (to comply with Dataverse). This GUID consists of the data entity ID in the first 4 bytes, and the record ID of the root data source in the entity as the last 8 bytes. This design satisfies Dataverse's requirement that a GUID be used as the entity key. It also enables the table ID and record ID to be used to uniquely identify the entity record in Finance and Operations.
+
+When using entities in Finance and Operations, you need to ensure that the root data source will always have a unique RecID. If this design is violated, duplicate GUID's will show up in Dataverse for the corresponding virtual entity. Aggregate views are not supported via virtual entities for the same reason because these views may not have unique RecIDs.
 
 ## Primary field
 

@@ -18,7 +18,6 @@ ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78212
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624

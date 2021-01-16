@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264704
 ms.search.region: Czech Republic, Hungary
@@ -55,6 +54,6 @@ Before you can post a pre-acquisition, you must complete the following setup:
 9.  Click **OK** to close the **Pre-acquisition proposal** page.
 10. Click **Post** &gt; **Post** to post the pre-acquisition transaction. On the **Books** page, the status of the fixed asset should now be **Acquired**.
 
-
-
-
+  > [!NOTE]
+  > In the parameters for the acquisition/acquisition adjustment proposal, you can set date in the **To date** field up to the date which pre-acquisition transactions are selected.
+  > This functionality is available in version 10.0.17 or later.

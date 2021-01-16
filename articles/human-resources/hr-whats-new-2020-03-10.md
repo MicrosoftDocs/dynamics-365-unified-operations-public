@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (March 10, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for March 10, 2020.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 03/10/2020
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
 

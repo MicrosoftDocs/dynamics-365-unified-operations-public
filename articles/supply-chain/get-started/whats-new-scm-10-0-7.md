@@ -19,7 +19,6 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

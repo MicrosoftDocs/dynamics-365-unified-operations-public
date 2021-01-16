@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

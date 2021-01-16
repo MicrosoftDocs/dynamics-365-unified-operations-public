@@ -18,7 +18,6 @@ ms.search.form: WMA
 audience: Warehouse manager
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

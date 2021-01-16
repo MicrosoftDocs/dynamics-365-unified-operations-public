@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,7 +41,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 > [!CAUTION]
 > The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
 >
-> Upgrade your Service Fabric cluster to 7.2.x before attempting certificate rotation.
+> Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.
 
 ## Preparation steps 
 
@@ -213,24 +213,37 @@ You must reinstall the LocalAgent if:
 - You changed the service fabric client certificate.
 - You changed the LocalAgent certificate.
 
+1. Update your current localagent-config.json by replacing the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+            "serverCertThumbprint": "New server thumbprint(Star/SF)",
+            "clientCertThumbprint": "New client thumbprint"
+        }
+    },
+    ```
 1. Run the following PowerShell command on one of the Orchestrator nodes.
 
     ```powershell
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-2. Run the following PowerShell command and note the new LocalAgent thumbprint.
+1. Run the following PowerShell command and note the new LocalAgent thumbprint.
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-3. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).
+1. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).
 
 	> [!NOTE] 
 	> If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
-4. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically the following changes:
+1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically the following changes:
 
 	- Client certificate thumbprint
 	- Server certificate thumbprint
@@ -257,8 +270,8 @@ Because you've updated your certificates, the configuration file that is present
         "connectionEndpoint": "192.168.8.22:19000",
         "clusterId": "Orch",
         "certificateSettings": {
-        "serverCertThumbprint": "Old server thumbprint(Star/SF)",
-        "clientCertThumbprint": "Old client thumbprint"
+            "serverCertThumbprint": "Old server thumbprint(Star/SF)",
+            "clientCertThumbprint": "Old client thumbprint"
         }
     },
     ```
@@ -271,8 +284,8 @@ Because you've updated your certificates, the configuration file that is present
         "connectionEndpoint": "192.168.8.22:19000",
         "clusterId": "Orch",
         "certificateSettings": {
-        "serverCertThumbprint": "New server thumbprint(Star/SF)",
-        "clientCertThumbprint": "New client thumbprint"
+            "serverCertThumbprint": "New server thumbprint(Star/SF)",
+            "clientCertThumbprint": "New client thumbprint"
         }
     },
     ```

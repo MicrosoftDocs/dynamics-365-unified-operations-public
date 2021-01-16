@@ -3,7 +3,7 @@
 
 title: VAT declaration for Germany
 description: This topic provides information about how to generate QR-bills (QR-slips) and process incoming QR-bills.
-author: v-lurodi
+author: anasyash
 manager: AnnBe
 ms.date: 05/12/2020
 ms.topic: article
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Germany

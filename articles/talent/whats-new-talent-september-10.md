@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (September 10, 2018)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-09-06
 ms.dyn365.ops.version: Talent September 10, 2018 update
 

@@ -3,7 +3,7 @@
 
 title: Budget proposals (preview)
 description: This topic describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
@@ -17,12 +17,11 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2020-05-31 
 ms.dyn365.ops.version: 10.0.4
 ---

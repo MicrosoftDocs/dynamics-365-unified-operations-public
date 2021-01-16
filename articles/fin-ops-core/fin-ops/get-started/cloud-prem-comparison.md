@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -125,6 +125,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Localizations                        |                                                                                           | Yes       | Yes             |
 | Manufacturing                        |                                                                                           | Yes       | Yes             |
 | Master planning and forecasting      |                                                                                           | Yes       | Yes             |
+| Planning optimization                |                                                                                           | Yes       | No              |
 | Mobile app, workspaces, and platform |                                                                                           | Yes       | Yes             |
 | Office integration                   |                                                                                           | Yes       | Yes             |
 | Organization administration          |                                                                                           | Yes       | Yes             |

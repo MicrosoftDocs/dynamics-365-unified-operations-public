@@ -5,7 +5,7 @@ title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,7 +45,41 @@ ms.dyn365.ops.version: Platform Update 33
 >
 > To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
 
-To configure the export to Data Lake, you must create a storage account in your own Azure subscription. This storage account will be used to store data. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storage, create the folder structure, and write data. Create a key vault in your subscription and store the names of the storage account, application ID, and the application secrets. If you don't have permission to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
+## <a name="createServicePrinciple"></a> Create Service Principle for Microsoft Dynamics ERP Microservices
+
+The **Export to Azure Data Lake** feature is built using a microservice that exports Finance and Operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principle, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the  **Microsoft Dynamics ERP Microservices** service principle to your Azure Active Directory (Azure AD). This step enables Azure AD to authenticate the microservice. 
+
+> [!NOTE]
+> You will need **Azure Active Directory tenant administrator** rights to perform these steps.
+
+To add the service principle, complete the following steps.
+1. Launch the Azure portal and go to the Azure Active Directory.
+2. On the left menu, select **Manage** > **Enterprise Applications**, and search for the following applications.
+
+| **Application**                          | **App ID**                           |
+|------------------------------------------|--------------------------------------|
+| Microsoft Dynamics ERP Microservices     | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+
+If you are unable to find the above applications, complete following steps.
+
+3. On your local machine, open the **Start** menu, and search for **PowerShell**.
+4. Right-click **Windows PowerShell**, and then select **Run as administrator**.
+5. Run the following command to install **AzureAD** module:
+     >   *Install-Module -Name AzureAD*
+  - If NuGet provider is required to continue, select **Y** to install it.
+  - If an **Untrusted repository** message appears, select **Y** to continue.
+
+6. Run the following commands to add the application to the Azure Active Directory.
+
+    > Connect-AzureAD
+    
+    > New-AzureADServicePrincipal –AppId '0cdb527f-a8d1-4bf8-9436-b352c68682b2'
+
+7. Sign in as the Azure Active Directory administrator when prompted.
+
+## <a name="ConfigureAzureResources"></a>Configure Azure Resources 
+
+To configure the export to Data Lake, create a storage account in your own Azure subscription. This storage account is used to store data. Next, create an Azure AD application ID that grants access to the root of your storage account. Your Finance or Operations app will use the Azure AD application to gain access to storage, create the folder structure, and write data. Create a key vault in your subscription and store the name of the storage account, application ID, and the application secrets. If you don't have permission to create resources in Azure portal, you will need assistance from someone in your organization with the required permissions.
 
 The steps, which take place in the Azure portal, are as follows:
 > [!NOTE]
@@ -149,7 +183,7 @@ You will notice the secret created in the list of secrets.
 4. In the **Add access policy** dialog box, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
 
 > [!NOTE]
-> If you can't find **Microsoft Dynamics ERP Microservices**, see the [troubleshooting section](#troubleshooting) at the end of this document.
+> If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principle](#createServicePrinciple) section in this document.
 
 5. In the **Secret permissions** fields, select **Get** and **List**.  
 6. In the **Access policy** dialog, select **Add**.
@@ -186,34 +220,3 @@ You need the following information before you start. Keep the information handy 
 
 The system installs and configures the data lake for the environment. After installation and configuration are complete, you should see **Azure Data Lake** listed on the **Environment** page.
 
-## <a name="troubleshooting"></a>Troubleshooting tips
-
-### Can’t find Microsoft Dynamics ERP Microservices or AI Builder Authorization Service
-
-You will need **Azure Active Directory tenant administrator** rights to perform these steps.
-
-1. Launch the Azure portal and go to the Azure Active Directory.
-2. On the left menu bar, select **Manage** \> **Enterprise Applications** and search for the following applications.
-
-| **Application**                          | **App ID**                           |
-|------------------------------------------|--------------------------------------|
-| Microsoft Dynamics ERP Microservices     | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
-
-
-If you are unable to find above applications, complete steps 3-7:
-
-3. On your local machine, open the Start menu and search for **PowerShell**.
-4. Right-click **Windows PowerShell** and select **Run as administrator**.
-5. Run the following command to install **AzureAD** module:
-
-     >   *Install-Module -Name AzureAD*
-
-  - If NuGet provider is required to continue, select **Y** to install it.
-  - If an **Untrusted repository** message appears, select **Y** to continue.
-
-6. For each application that needs to be added, run the following commands to add the application to the Azure Active Directory.
-
-    > Connect-AzureAD
-    > New-AzureADServicePrincipal –AppId \<AppId\>
-
-7. Sign in as the Azure Active Directory administrator when prompted.

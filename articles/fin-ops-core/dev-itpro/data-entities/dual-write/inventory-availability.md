@@ -61,3 +61,64 @@ The dialog box returns the ATP information from Supply Chain Management. This in
 - Receipt quantity
 - Issue quantity
 - On-hand quantity
+
+## How it works
+
+When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, or **Invoices** page, a live dual-write call is made to the **Onhand inventory** API. The API calculates the on-hand inventory for the given product. The result is stored in the **InventCDSInventoryOnHandRequestEntity** and **InventCDSInventoryOnHandEntryEntity** tables, and then is written to Dataverse by dual-write. To use this functionality, you need to run the following dual-write maps. Skip initial synchronization when you run the maps.
+
+- CDS inventory on-hand entries (msdyn_inventoryonhandentries)
+- CDS inventory on-hand requests (msdyn_inventoryonhandrequests)
+
+## Templates
+The following templates are available for the exposing the onhand inventory data.
+
+Finance and Operations apps | Customer engagement app | Description 
+---|---|---
+[CDS inventory on-hand entries](#145) | msdyn_inventoryonhandentries |
+[CDS inventory on-hand requests](#147) | msdyn_inventoryonhandrequests |
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+###  <a name="145"></a>CDS inventory on-hand entries (msdyn_inventoryonhandentries)
+
+This template synchronizes data between Finance and Operations apps and Dataverse.
+
+Finance and Operations field | Map type | Customer engagement field | Default value
+---|---|---|---
+`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
+`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
+`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
+`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
+`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
+`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
+`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
+`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
+`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
+`ATPDATE` | = | `msdyn_atpdate` |
+`ATPQUANTITY` | > | `msdyn_atpquantity` |
+`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
+`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
+`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
+`ORDERQUANTITY` | > | `msdyn_orderquantity` |
+`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
+
+###  <a name="147"></a>CDS inventory on-hand requests (msdyn_inventoryonhandrequests)
+
+This template synchronizes data between Finance and Operations apps and Dataverse.
+
+Finance and Operations field | Map type | Customer engagement field | Default value
+---|---|---|---
+`REQUESTID` | = | `msdyn_requestid` |
+`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
+`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
+`ORDERQUANTITY` | < | `msdyn_orderquantity` |
+`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`REFERENCENUMBER` | < | `msdyn_referencenumber` |
+`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
+
+
+
+

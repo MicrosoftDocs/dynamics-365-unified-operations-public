@@ -18,7 +18,6 @@ ms.search.form: RetailShippingThresholdDiscounts, RetailPriceDiscGroup
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

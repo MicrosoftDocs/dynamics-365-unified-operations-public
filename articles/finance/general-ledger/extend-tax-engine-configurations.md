@@ -17,7 +17,6 @@ ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 

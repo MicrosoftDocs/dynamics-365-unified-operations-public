@@ -99,10 +99,12 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
++ [Onhand inventory availability](inventory-availability.md)
 
 ## Support
 
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
++ [Migrate Prospect to cash data from Data Integrator to dual-write](migrate-prospect-to-cash.md)
 
 ## Troubleshooting
 

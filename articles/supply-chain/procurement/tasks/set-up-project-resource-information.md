@@ -3,7 +3,7 @@
  
 title: Set up project resource information
 description: This procedure shows how to set up a project resource. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: ResResourcesListPage, ResAddResourceForm, ProjCostPriceHour, Pro
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
