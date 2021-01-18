@@ -48,19 +48,19 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 <table>
 <thead>
 <tr>
-<td>
+<td style="text-align: center;">
 <p><strong>Report layout</strong></p>
 </td>
-<td>
+<td style="text-align: center;">
 <p><strong>Reporting code</strong></p>
 </td>
-<td>
+<td style="text-align: center;">
 <p><strong>Report text</strong></p>
 </td>
-<td>
+<td style="text-align: center;">
 <p><strong>Report setup</strong></p>
 </td>
-<td>
+<td style="text-align: center;">
 <p><strong>Field on the BAS report</strong></p>
 </td>
 </tr>
@@ -68,7 +68,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 <tbody>
 <tr>
 <td colspan="5">
-<p style="text-align: center;"><strong>GST</strong></p>
+<p><strong>GST</strong></p>
 </td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 </td>
 <td>
 <p>G10, G15 Capital acquisitions for private use or with non-deductible tax</p>
-<p><strong>Note:</strong> On the <strong>Sales tax codes</strong> page (<strong>Tax > Indirect taxes > Sales tax > Sales tax codes</strong>), enter a value in the <strong>Non-deductible</strong> field for the sales tax code that uses this reporting code in the setup.</p>
+<p><strong>Note:</strong> On the <strong>Sales tax codes</strong> page (<strong>Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax codes</strong>), enter a value in the <strong>Non deductible</strong> field for the sales tax code that uses this reporting code in the setup.</p>
 </td>
 <td>
 <p>Taxable purchases and Sales tax receivable</p>
@@ -335,16 +335,16 @@ You can also set up the following reporting codes, and then make transactions or
 <table>
 <tbody>
 <tr>
-<td>
+<td style="text-align: center;">
 <p><strong>Report layout</strong></p>
 </td>
-<td>
+<td style="text-align: center;">
 <p><strong>Reporting code</strong></p>
 </td>
-<td>
+<td style="text-align: center;">
 <p><strong>Report text</strong></p>
 </td>
-<td>
+<td style="text-align: center;">
 <p><strong>Field on the BAS report</strong></p>
 </td>
 </tr>
@@ -356,7 +356,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>700</p>
 </td>
 <td>
-<p>7 Deferred company/ fund installment</p>
+<p>7 Deferred company/ fund instalment</p>
 </td>
 <td>
 <p>7</p>
@@ -403,7 +403,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>501</p>
 </td>
 <td>
-<p>5A Pay As You Go Installment</p>
+<p>5A Pay As You Go Instalment</p>
 </td>
 <td>
 <p>5A</p>
@@ -417,7 +417,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>502</p>
 </td>
 <td>
-<p>5B Credit arising from reduced Pay As You Go installment</p>
+<p>5B Credit arising from reduced Pay As You Go instalment</p>
 </td>
 <td>
 <p>5B</p>
@@ -431,7 +431,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>31</p>
 </td>
 <td>
-<p>W1 Total of salary, wages, and other payments</p>
+<p>W1 Total of salary, wages and other payments</p>
 </td>
 <td>
 <p>W1</p>
@@ -445,7 +445,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>32</p>
 </td>
 <td>
-<p>W2 Amounts withheld from salary, wages, and other payments</p>
+<p>W2 Amounts withheld from salary, wages and other payments</p>
 </td>
 <td>
 <p>W2</p>
@@ -487,7 +487,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>51</p>
 </td>
 <td>
-<p>T1 Installment income</p>
+<p>T1 Instalment income</p>
 </td>
 <td>
 <p>T1</p>
@@ -506,7 +506,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>601</p>
 </td>
 <td>
-<p>6A Fringe benefit tax installment</p>
+<p>6A Fringe benefit tax instalment</p>
 </td>
 <td>
 <p>6A</p>
@@ -520,7 +520,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>602</p>
 </td>
 <td>
-<p>6B Credit arising from fringe benefits tax installment</p>
+<p>6B Credit arising from fringe benefits tax instalment</p>
 </td>
 <td>
 <p>6B</p>
@@ -534,7 +534,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>61</p>
 </td>
 <td>
-<p>F1 ATO-calculated fringe benefits tax installment</p>
+<p>F1 ATO-calculated fringe benefits tax instalment</p>
 </td>
 <td>
 <p>F1</p>
@@ -562,7 +562,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>63</p>
 </td>
 <td>
-<p>F3 Varied fringe benefits tax installment</p>
+<p>F3 Varied fringe benefits tax instalment</p>
 </td>
 <td>
 <p>F3</p>
