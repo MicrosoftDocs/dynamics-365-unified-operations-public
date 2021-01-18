@@ -595,7 +595,7 @@ You can also set up the following reporting codes. However, we recommend that yo
 
 ## Set up additional BAS report boxes
 
-### <a name= "_Set_up_an_additional_bas"></a>Set up an additional BAS reconciliation account
+### <a name= "_Set_up_an_additional_bas_reconciliation_account"></a>Set up an additional BAS reconciliation account
 
 1. Go to **Tax > Setup > Sales tax > Additional BAS reconciliation account**.
 2. In the **BAS reconciliation account** field, specify the ledger account that will be used in the _Settle and post GST_ procedure to post sales tax amounts that are manually entered.
@@ -669,67 +669,14 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 1. Go to **Tax > Declarations > Sales tax > Australian BAS**.
 2. In the **Australian BAS** dialog box, set the following fields.
 
-<table>
-<thead>
-<tr>
-<td>
-<p><strong>Field</strong></p>
-</td>
-<td>
-<p><strong>Description</strong></p>
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Settlement period</p>
-</td>
-<td>
-<p>Select the settlement period.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>From date</p>
-</td>
-<td>
-<p>Enter the start date of the settlement period.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Transaction date</p>
-</td>
-<td>
-<p>Enter the posting date for the sales tax settlement.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Sales tax payment version</p>
-</td>
-<td>
-<p>Select the version of the sales tax report to settle:</p>
-<ul>
-<li><strong>Original</strong> &ndash; Include sales tax transactions of the first settlement calculation that was posted for the period.</li>
-<li><strong>Corrections</strong> &ndash; Include sales tax transactions of subsequent settlement calculations for the period.</li>
-<li><strong>Latest corrections</strong> &ndash; Include sales tax transactions of the last settlement calculation that was posted for the period.</li>
-<li><strong>Total list</strong> &ndash; Include all sales transactions for the period. These transactions include original and corrected transactions.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-<p>Post and settle GST</p>
-</td>
-<td>
-<p>Set this option to <strong>Yes</strong> to post and settle the transactions for GST and create a sales tax payment.</p>
-<p>Before you complete the <em>Post and settle GST</em> procedure, make sure that you set up the BAS reconciliation account as described in the [Set up an additional BAS reconciliation account](#_Set_up_an_additional_bas) [Set up an additional BAS reconciliation account](#_Set_up_an_additional_bas) section earlier in this topic.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| **Field** | **Description** |
+|-------------------------|-------------------------|
+| Settlement period | Select the settlement period. |
+| From date | Enter the start date of the settlement period. |
+| Transaction date | Enter the posting date for the sales tax settlement. |
+| Sales tax payment version | Select the version of the sales tax report to settle:<ul></br><li>**Original** – Include sales tax transactions of the first settlement calculation that was posted for the period.</li></ul><ul><li>**Corrections** – Include sales tax transactions of subsequent settlement calculations for the period.</li></ul><ul><li>**Latest corrections** – Include sales tax transactions of the last settlement calculation that was posted for the period.</li><li>**Total list** – Include all sales transactions for the period. These transactions include original and corrected transactions.</li></br></ul> |
+| Post and settle GST | Set this option to **Yes** to post and settle the transactions for GST and create a sales tax payment.</br>Before you complete the <em>Post and settle GST</em> procedure, make sure that you set up the BAS reconciliation account as described in the [Set up an additional BAS reconciliation account](#_Set_up_an_additional_bas_reconciliation_account) section earlier in this topic. |
+
 
 3. Select **OK**.
 4. In the **Print Australian BAS** dialog box, select **OK**.
