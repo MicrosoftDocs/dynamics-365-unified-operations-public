@@ -108,4 +108,4 @@ You can verify what user action is provided (if any) for the running ER format w
 
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
-[API to run a format mapping providing a user action code to execute action dependent destinations](er-apis-app10-0-17.md#er-api-run-format-with-action-code)
+[Electronic reporting framework API changes for Application update 10.0.17](er-apis-app10-0-17.md)
