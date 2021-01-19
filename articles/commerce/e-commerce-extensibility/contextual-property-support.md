@@ -5,7 +5,7 @@ title: Configure module properties to display based on context
 description: This topic describes how to configure module properties to be shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
 manager: annbe
-ms.date: 01/19/2020
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
