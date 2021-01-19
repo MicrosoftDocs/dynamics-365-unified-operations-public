@@ -40,7 +40,7 @@ This topic applies to Retail SDK version 10.0.10 and earlier.
 The Retail software development kit (SDK) includes only a few samples of end-to-end Commerce Scale Unit extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
 
 > [!NOTE]
-> CommerceController extension model will be soon deprecated so please migrate to the IController extension, migrate all the Retail server extensions to IController having both CommerceController and IController is not supported. Information on IController can be found in https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-icontroller-extension
+> The CommerceController extension model will be soon deprecated. You will need to migrate all Retail server extensions to IController. Having both CommerceController and IController is not supported. For more information about IController, see [Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-server-icontroller-extension).
 
 ## End-to-end sample repository in the Retail SDK
 
@@ -73,7 +73,7 @@ The following illustration shows the class structure of the extension.
 ### Steps
 
 1. Before you create the Commerce Scale Unit extension, create the CRT extension. Commerce Scale Unit APIs should have no logic except logic that calls the CRT with the parameters.
-2. Create a new C\# class library project that uses the Microsoft .NET Framework version netstandard2.0 as the target framework.
+2. Create a new C\# class library project that uses the Microsoft .NET Framework version netstandard 2.0 as the target framework.
 3. In the Commerce Scale Unit extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request and response. It also lets you use the entities from the Commerce Scale Unit extension project.
 4. In the Commerce Scale Unit extension project, create a new controller class that extends **NonBindableOperationController** or **CommerceController**. The base class depends on your scenario. This controller class will contain the method that must be exposed by the Commerce Scale Unit API. Inside the controller class, add methods to call the CRT request.
 
