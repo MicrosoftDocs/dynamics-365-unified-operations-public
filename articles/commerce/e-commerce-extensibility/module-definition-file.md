@@ -108,10 +108,10 @@ The page author can configure the settings of a module on a specific page withou
 * **"tags"** – The tags that are used to search for the module. All the categories are automatically added as tags.
 * **"dataActions"** – The **dataActions** node is used to register the data actions that should be run for the module. By default, the data actions will run on the server side. However, they can also be configured to run on the client side.
 * **"slots"** – Slots are defined only in container modules. They are exposed in the site builder tool. You can define allow and deny lists for a slot to allow or disallow specific modules from being accepted in that slot.
-* **"attributes"** – Attributes are used to control script injectors properties.  For more information, see [Script injectors](script-injector.md).
-* **"config"** - The **config** section is used to add module configuration properties. For more information, see [Add module configuration fields](add-module-config-fields.md).
-* **"resources"** - This property is used to localize resources used within the module. For more information see [Module resource schema](#module-resource-schema).
-* **"dependentSchemas"** - The **dependentSchema** section is used to show or hide configuration properties based on the contextual values of other configuration properties. For more information, see [Configure module properties to display based on context](configure-properties-context.md).
+* **"attributes"** – Attributes are used to control script injector properties. For more information, see [Script injectors](script-injector.md).
+* **"config"** – The **config** section is used to add module configuration properties. For more information, see [Add module configuration fields](add-module-config-fields.md).
+* **"resources"** – This property is used to localize resources that are used in the module. For more information, see the [Module resource schema](#module-resource-schema) section later in this topic.
+* **"dependentSchemas"** – The **dependentSchema** section is used to show or hide configuration properties, based on the contextual values of other configuration properties. For more information, see [Configure module properties to display based on context](configure-properties-context.md).
 
 ## Register data actions to a module
 
