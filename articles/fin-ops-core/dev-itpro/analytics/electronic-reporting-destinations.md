@@ -101,6 +101,8 @@ For example, you can use this capability to configure file destinations for a fi
 
 [![Configuring multiple destinations for a single format element](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
+As you can see from the described above, when you run an ER format, all destinations that were configured for components of this format are always executed. In addition to that, in versions of Finance **10.0.17 and later**, the ER destinations functionality has been improved allowing to configure for a single ER format different sets of destinations marking each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) allowing to provide an action that user performs by running an ER format. The provided action code is passed to ER destinations. So, starting from this version of Finance, you can execute different destinations of an ER format depending on the provided action code. For more, see [Configure action dependent ER destinations](er-action-dependent-destinations.md).
+
 ## Destination types
 
 The following destinations are currently supported for ER formats. You can disable or enable all types at the same time. In this way, you can either do nothing or send the component to all configured destinations.
@@ -230,7 +232,7 @@ No. The default Microsoft Azure Blob storage that is defined and used for the do
 
 ### What is the purpose of the File destination in the destination settings? What does that setting do?
 
-The **File** destination is used to control a dialog box. If you enable this destination, or if no destination is defined for a configuration, an open or save dialog box appears after an output file is created.
+The **File** destination is used to control a dialog box of your web browser when you run an ER format in interactive mode. If you enable this destination, or if no destination is defined for a configuration, an open or save dialog box appears in your web browser after an output file is created.
 
 ### Can you give an example of the formula that refers to a vendor account that I can send email to?
 
@@ -243,3 +245,5 @@ Your format must first be available in the ER configurations. If this prerequisi
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+[Configure action dependent ER destinations](er-action-dependent-destinations.md)
