@@ -293,12 +293,12 @@ The following example shows the enabling of a geoLookup connector in the **conne
 
 A geoLookup connector consists of two parts:
 
-- A connector definition file in JSON format).
+- A connector definition file in JSON format.
 - A provider file.
 
 #### Connector definition file
 
-A connector definition file is used to register and provide configuration metadata data to your application. The name of the provider file is in the format  **\<CONNECTOR\_NAME\>.connector.json**. The metadata includes the type of connector, the connector's name, a description of the connector, and the configuration schema, as shown in the following example of a connector definition file.
+The connector definition file is used to register and provide configuration metadata data to your application. The name of the provider file is in the format  **\<CONNECTOR\_NAME\>.connector.json**. The metadata includes the type of connector, the connector's name, a description of the connector, and the configuration schema, as shown in the following example of a connector definition file.
 
 ```json
 {
