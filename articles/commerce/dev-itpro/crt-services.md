@@ -46,7 +46,8 @@ There are three main layers in CRT:
 
 All CRT customization for business logic can be done in Services, Workflow or Data Access layers, other core layers that are required for CRT to work are runtime, authentication, and data access managers and you should avoid any customization on these layers.
 
-**Detailed information on all CRT classes can be found in the Retail SDK (RetailSDK\Documents\CommerceRuntimeMessages.chm)**
+> [!NOTE]
+> Detailed information about all CRT classes can be found in the Retail SDK, which is found at RetailSDK\Documents\CommerceRuntimeMessages.chm.
 
 ## Overall flow
 The overall flow looks like this:
