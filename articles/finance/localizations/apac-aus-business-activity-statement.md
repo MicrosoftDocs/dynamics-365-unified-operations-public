@@ -5,7 +5,7 @@ title: Business activity statement
 description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
 author: anasyash
 manager: tfehr
-ms.date: 12/15/2020
+ms.date: 01/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -356,7 +356,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>700</p>
 </td>
 <td>
-<p>7 Deferred company/ fund instalment</p>
+<p>7 Deferred company/ fund installment</p>
 </td>
 <td>
 <p>7</p>
@@ -403,7 +403,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>501</p>
 </td>
 <td>
-<p>5A Pay As You Go Instalment</p>
+<p>5A Pay As You Go Installment</p>
 </td>
 <td>
 <p>5A</p>
@@ -417,7 +417,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>502</p>
 </td>
 <td>
-<p>5B Credit arising from reduced Pay As You Go instalment</p>
+<p>5B Credit arising from reduced Pay As You Go installment</p>
 </td>
 <td>
 <p>5B</p>
@@ -487,7 +487,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>51</p>
 </td>
 <td>
-<p>T1 Instalment income</p>
+<p>T1 Installment income</p>
 </td>
 <td>
 <p>T1</p>
@@ -506,7 +506,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>601</p>
 </td>
 <td>
-<p>6A Fringe benefit tax instalment</p>
+<p>6A Fringe benefit tax installment</p>
 </td>
 <td>
 <p>6A</p>
@@ -520,7 +520,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>602</p>
 </td>
 <td>
-<p>6B Credit arising from fringe benefits tax instalment</p>
+<p>6B Credit arising from fringe benefits tax installment</p>
 </td>
 <td>
 <p>6B</p>
@@ -534,7 +534,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>61</p>
 </td>
 <td>
-<p>F1 ATO-calculated fringe benefits tax instalment</p>
+<p>F1 ATO-calculated fringe benefits tax installment</p>
 </td>
 <td>
 <p>F1</p>
@@ -562,7 +562,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>63</p>
 </td>
 <td>
-<p>F3 Varied fringe benefits tax instalment</p>
+<p>F3 Varied fringe benefits tax installment</p>
 </td>
 <td>
 <p>F3</p>
