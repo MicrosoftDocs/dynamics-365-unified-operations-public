@@ -76,8 +76,11 @@ Once the parameters and batch details have been established, click **Next** to v
 > [!NOTE]
 > The data subject to archival includes personally identifiable customer information including the name of the cardholder. This data should be handled according to your local regultory requirements.
 
-Upon confirming 
-
+Upon confirming the parameters for data to be archived, the user will be prompted to confirm that the data being archived is not easily restored. 
+ 
+ ![Data](../media/Payments/batch3.png)
+ 
+Upon clicking **Yes**, the job will be active and authorization XML data older than the **Minimum transaction age in days** will be subject to archival. 
 
 ## Additional resources
 
