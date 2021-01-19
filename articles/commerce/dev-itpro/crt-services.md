@@ -96,7 +96,7 @@ For more information about each service, see the CRT request/response document i
 | TaxService                 | This service calculates the sales tax for the current order. You can use sales tax information provided, or from a third-party sales tax service. |
 | TotalingService            | This service calculates the totals on the sales transactions and sales lines. |
 
-For extension scenarios, you can add CRT triggers, create new Service, override any of the requests in the service class etc. For information about how to extend and understand CRT extension patterns, refer [Commerce runtime (CRT) extensibility](commerce-runtime-extensibility.md).
+For extension scenarios, you can add CRT triggers, create new services, and override any of the requests in the service class. For information about how to extend and understand CRT extension patterns, see [Commerce runtime (CRT) extensibility](commerce-runtime-extensibility.md).
 
 > [!NOTE]
 > CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
