@@ -1,13 +1,4 @@
-﻿---
-title: 
-description: 
-ms.date: 01.13.2021
-ms.topic: article
-ms.service: dynamics365-financials
-author: andosip
-ms.author: andosip
-manager: anasyash
----
+
 
 # Sales VAT report
 
