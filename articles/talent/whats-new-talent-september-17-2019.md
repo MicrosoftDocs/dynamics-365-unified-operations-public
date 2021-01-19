@@ -51,9 +51,9 @@ For more information about how changes are published, see [Provision Talent](./p
 
 With this week's update, HR professionals will be able to see performance review details that have been assigned to them through workflow processing. To view reviews, navigate to **Employee self-service > Work items assigned to me**.
 
-### Job family field missing in the Manage changes page for job details (346031)
+### Job family column missing in the Manage changes page for job details (346031)
 
-In this release, the job family field has been added to the **Manage changes** page for job details.
+In this release, the job family column has been added to the **Manage changes** page for job details.
 
 ## In preview
 

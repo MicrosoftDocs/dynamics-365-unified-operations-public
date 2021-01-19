@@ -49,9 +49,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 Changes described in this section apply to build number 8.1.2239. Numbers in parentheses refer to support numbers in Lifecycle Services (LCS).
 
-### Compensation region, Compensation level, Benefit option and Skill type entities in Common Data Service updated to include customer field support
+### Compensation region, Compensation level, Benefit option and Skill type tables in Dataverse updated to include customer column support
 
-With this release, these Common Data Service entities have been updated to include the ability to include custom field added through Talent: Core HR.
+With this release, these Dataverse tables have been updated to include the ability to include custom column added through Talent: Core HR.
 
 ### PowerBI refresh issues (314342)
 
@@ -91,7 +91,7 @@ Tracking employee time off and understanding how time off is calculated not only
 
 ### Improvements to the user interface for duplicate employee check
 
-With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
+With this change, duplicates are detected as you enter name columns, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
 
 ### Email support for alerts
 

@@ -97,7 +97,7 @@ The default source list contains common application sources. Some source types, 
 
 ## Customize the source list 
 
-You can extend the source list to include additional application sources. To customize this list, follow the instructions in [Extending Option Sets in Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Edit the **TalentSource** entity to include additional sources. 
+You can extend the source list to include additional application sources. To customize this list, follow the instructions in [Extending Option Sets in Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Edit the **TalentSource** table to include additional sources. 
 
 To avoid negatively impacting the user interface (UI), don't edit or delete the **TalentCategory** enum values (not names) for the following:
 

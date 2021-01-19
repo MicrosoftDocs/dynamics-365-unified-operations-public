@@ -58,7 +58,7 @@ Attract passes the following information to Broadbean:
 After Broadbean successfully completes the posting, the **Postings** section of the job in Attract shows the Broadbean status as **Posted**.
 
 > [!NOTE]
-> - Broadbean requires the **Industry** field. Currently, this field is set to **IT** by default. However, you can change the value to the correct industry in the window for Broadbean job posting.
+> - Broadbean requires the **Industry** column. Currently, this column is set to **IT** by default. However, you can change the value to the correct industry in the window for Broadbean job posting.
 > - It takes some time for Broadbean to finish posting your job to all the job boards that you selected. Therefore, there might be a slight delay before Attract provides a status update for the job.
 
 ### View a Broadbean job posting
