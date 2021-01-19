@@ -111,7 +111,7 @@ The page author can configure the settings of a module on a specific page withou
 * **"attributes"** – Attributes are used to control script injectors properties.  For more information, see [Script injectors](script-injector.md).
 * **"config"** - The **config** section is used to add module configuration properties. For more information, see [Add module configuration fields](add-module-config-fields.md).
 * **"resources"** - This property is used to localize resources used within the module. For more information see [Module resource schema](#module-resource-schema).
-* **"dependentSchemas"** - The **dependentSchema** section is used to show or hide configuration properties based on the contextual values of other configuration properties. For more information, see [Contextual configuration property support](contextual-property-support.md).
+* **"dependentSchemas"** - The **dependentSchema** section is used to show or hide configuration properties based on the contextual values of other configuration properties. For more information, see [Configure module properties to display based on context](configure-properties-context.md).
 
 ## Register data actions to a module
 
