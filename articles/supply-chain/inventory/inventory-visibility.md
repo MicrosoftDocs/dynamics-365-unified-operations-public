@@ -86,11 +86,12 @@ To install the Inventory Visibility Add-in, do the following:
 
 To get a security service token, do the following:
 
-1. Sign in to Azure Portal and use it to find the `clientId` and `clientSecret` for your Supply Chain Management application.<!-- KFM: Please confirm this formulation. -->
+1. Sign in to Azure Portal and use it to find the `clientId` and `clientSecret` for your Supply Chain Management application.
 1. Fetch an Azure Active Directory token (`aadToken`) by submitting an HTTP request with the following properties:
     - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
     - **Method** - `GET`
     - **Body content (form data)**:
+
         | key | value |
         | --- | --- |
         | client_id | ${aadAppId} |
@@ -111,16 +112,7 @@ To get a security service token, do the following:
     }
     ```
 
-1. Call the endpoint: `https://securityservice.operations365.dynamics.com/token`.
-    <!-- KFM: It seems like something is missing here. I suppose we get something back after calling the endpoint and then edit that response as described in the next steps. Is that right? Can we show an example of the initial response? -->
-1. Replace the `client_assertion` in the body with your `aadToken`.
-1. Replace the context in the body with the environment where you want to deploy the add-in.
-1. Replace the scope in the body with the following: <!-- KFM: *One of* the following? -->
-
-    - **Scope for MCK** - `https://inventoryservice.operations365.dynamics.cn/.default`<br>(You can find the Azure Active Directory application ID and tenant ID for MCK in `appsettings.mck.json`.)
-    - **Scope for PROD** - `https://inventoryservice.operations365.dynamics.com/.default`<br>(You can find the Azure Active Directory application ID and tenant ID for PROD in `appsettings.prod.json`.)
-
-1. The result should resemble the following example. <!-- KFM: Can we show this example with a more realistic token, perhaps using the example token shown earlier? (it's not clear to me exactly which part of that token response is needed here) -->
+1. Formulate a JSON request that resembles the following:
 
     ```json
     {
@@ -132,7 +124,17 @@ To get a security service token, do the following:
         "context_type": "finops-env"
     }
     ```
-    <!-- KFM: Again, it seems like a step is missing. What do I do with the above code in order to get the access token in response? -->
+
+    Where:
+    - The `client_assertion` value must be the `aadToken` you received in the previous step.
+    - The `context` value must be the environment ID where you want to deploy the add-in.
+    - Set all of other values as shown in the example.
+
+1. Submit an HTTP request with the following properties:
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **Method** - `POST`
+    - **HTTP header** - Include the API version (key is `Api-Version` and value is `1.0`)
+    - **Body content** - Include the JSON request that you created in the previous step.
 
 1. You will get an `access_token` in response. This is what you need as a bearer token to call the Inventory Visibility API. Here is an example.
 
