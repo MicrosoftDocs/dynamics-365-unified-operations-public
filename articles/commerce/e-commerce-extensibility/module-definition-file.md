@@ -5,7 +5,7 @@ title: Module definition file
 description: This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -108,10 +108,10 @@ The page author can configure the settings of a module on a specific page withou
 * **"tags"** – The tags that are used to search for the module. All the categories are automatically added as tags.
 * **"dataActions"** – The **dataActions** node is used to register the data actions that should be run for the module. By default, the data actions will run on the server side. However, they can also be configured to run on the client side.
 * **"slots"** – Slots are defined only in container modules. They are exposed in the site builder tool. You can define allow and deny lists for a slot to allow or disallow specific modules from being accepted in that slot.
-* **"attributes"** – Attributes are used to control script injectors properties.  For more details, see [Script injectors](script-injector.md).
-* **"config"** - The config's section is used to add module configuration properties. For more details, see [Add module configuration fields](add-module-config-fields.md).
-* **"resources"** - This property is used to localize resources used within the module, see the below section "Module resource schema" for more information.
-* **"dependentSchemas"** - The dependentSchema's section is used configuration properties to be shown or hidden based on values of other configuration properties. For more details, see [Contextual configuration property support](contextual-property-support.md).
+* **"attributes"** – Attributes are used to control script injectors properties.  For more information, see [Script injectors](script-injector.md).
+* **"config"** - The **config** section is used to add module configuration properties. For more information, see [Add module configuration fields](add-module-config-fields.md).
+* **"resources"** - This property is used to localize resources used within the module. For more information see [Module resource schema](#module-resource-schema).
+* **"dependentSchemas"** - The **dependentSchema** section is used to show or hide configuration properties based on the contextual values of other configuration properties. For more information, see [Contextual configuration property support](contextual-property-support.md).
 
 ## Register data actions to a module
 
