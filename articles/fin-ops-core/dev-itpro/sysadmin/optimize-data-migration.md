@@ -5,7 +5,7 @@ title: Optimize data migration for Finance and Operations apps
 description: The topic provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
 author: skaue-ms
 manager: AnnBe
-ms.date: 01/13/2021
+ms.date: 01/19/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
