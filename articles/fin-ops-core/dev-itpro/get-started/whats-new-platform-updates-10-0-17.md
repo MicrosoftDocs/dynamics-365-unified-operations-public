@@ -43,7 +43,7 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  Visual Studio 2017 is now the primary supported version for X++ tools. Visual Studio 2015 is deprecated.<br>- For more information, see [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
+-  Visual Studio 2017 is now the primary supported version for X++ tools. Visual Studio 2015 is deprecated.<br>- For more information, see [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
 -  [(Preview) Translation support for organization views](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ca32ae2c-a844-eb11-a813-000d3a8faea9&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)<br>- For more information, see [Saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views).
 
