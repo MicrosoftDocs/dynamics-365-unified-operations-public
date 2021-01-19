@@ -431,7 +431,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>31</p>
 </td>
 <td>
-<p>W1 Total of salary, wages and other payments</p>
+<p>W1 Total of salary, wages, and other payments</p>
 </td>
 <td>
 <p>W1</p>
@@ -445,7 +445,7 @@ You can also set up the following reporting codes, and then make transactions or
 <p>32</p>
 </td>
 <td>
-<p>W2 Amounts withheld from salary, wages and other payments</p>
+<p>W2 Amounts withheld from salary, wages, and other payments</p>
 </td>
 <td>
 <p>W2</p>
