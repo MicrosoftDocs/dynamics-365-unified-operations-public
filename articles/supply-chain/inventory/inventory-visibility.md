@@ -83,7 +83,7 @@ To install the Inventory Visibility Add-in, do the following:
 
 ### Get a security service token
 
-To get a security service token, do the following:
+Get a security service token by doing the following:
 
 1. Sign in to Azure Portal and use it to find the `clientId` and `clientSecret` for your Supply Chain Management application.
 1. Fetch an Azure Active Directory token (`aadToken`) by submitting an HTTP request with the following properties:
