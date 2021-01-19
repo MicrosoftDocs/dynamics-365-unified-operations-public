@@ -49,6 +49,7 @@ The following features are included in this release. Some of the listed features
 - Bill customers for maintenance work
 - Coverage time fence support for Planning Optimization
 - Enable change management on existing products
+- Enterprise-scale inventory performance improvements and archiving <!-- KFM: New feature from Sherry. Probably not in current RP publish -->
 - Inventory Visibility Add-in for Dynamics 365 Supply Chain Management <!--KFM: Announced for November, which was public preview. We have a new topic about how to configure it, so maybe move this down to the next section with a link to that new topic, if it's ready. -->
 - Landed cost
 - Manufacturing execution with scale units in the cloud
