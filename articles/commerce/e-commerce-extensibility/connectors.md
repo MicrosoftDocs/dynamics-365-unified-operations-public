@@ -5,7 +5,7 @@ title: Configure and enable connectors
 description: This topic describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 09/28/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -35,11 +35,9 @@ ms.dyn365.ops.version: Release 10.0.13
 
 This topic describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Connectors let you connect your Dynamics 365 Commerce site to external third party services to perform tasks such as capturing analytics, logging, and experimenting. Some third-party service providers require a paid license for their service before it can be used. For more information, contact your service provider.
 
-As of Commerce release version 10.0.13, the only supported type of connector is the experimentation connector and in 10.0.17 GeoLocation connector support has been added. In future versions, you will be able configure and enable other types of connectors.
+As of Commerce release version 10.0.13, the only supported type of connector is the experimentation connector. As of Commerce release version 10.0.17, support for the geoLookup connector has been added. In future versions, you will be able configure and enable other types of connectors.
 
 ## Configure and enable connectors
 
@@ -56,7 +54,7 @@ The following example shows the contents of the **connector.settings.json** file
     "experimentation": {
         "name": "msdyn365-exp-test-2",
         "config": {
-            "sdkKey": "EXPERIMENTAION_PROVIDER_KEY",
+            "sdkKey": "EXPERIMENTATION_PROVIDER_KEY",
             "key2": "value2"
         },
         "cacheConfig": {
@@ -93,7 +91,7 @@ An experimentation connector consists of three parts:
 
 ### Connector definition file
 
-A connector definition file is used to register and provide configuration metadata data to your application. This metadata includes the type of connector, the name of the connector, a description of the connector, and the configuration schema. The name of the connector definition file is in the format **&lt;CONNECTOR\_NAME&gt;.connector.json**.
+A connector definition file is used to register and provide configuration metadata data to your application. This metadata includes the type of connector, the name of the connector, a description of the connector, and the configuration schema. The name of the connector definition file is in the format **\<CONNECTOR\_NAME\>.connector.json**.
 
 The following example shows the contents of a connector definition file.
 
@@ -124,7 +122,7 @@ The following example shows the contents of a connector definition file.
 
 ### Provider file
 
-An experimentation provider file is required to initialize a connector. It also enables the connector to interact with Commerce site builder to present a list of available experiments that are configured in your third-party experimentation service. The name of the provider file is in the format **&lt;CONNECTOR\_NAME&gt;.provider.ts**.
+An experimentation provider file is required to initialize a connector. It also enables the connector to interact with Commerce site builder to present a list of available experiments that are configured in your third-party experimentation service. The name of the provider file is in the format **\<CONNECTOR\_NAME\>.provider.ts**.
 
 The provider file should implement the following interface.
 
@@ -232,7 +230,7 @@ export interface IVariants {
 
 ### Listener file
 
-An experimentation listener file is required to track user conversion events. The listener file implements a logger interface that hooks into the event logging framework of the software development kit (SDK) to subscribe to specific user actions. The name of the listener file is in the format **&lt;CONNECTOR\_NAME&gt;.listener.ts**.
+An experimentation listener file is required to track user conversion events. The listener file implements a logger interface that hooks into the event logging framework of the software development kit (SDK) to subscribe to specific user actions. The name of the listener file is in the format **\<CONNECTOR\_NAME\>.listener.ts**.
 
 The listener file should implement the following interface.
 
@@ -260,10 +258,14 @@ export interface IExperimentationListener {
 
 
 ## GeoLookup connector
-A geoLookup connector allows you to connect to an external geolocation service provider. Adding this type of connector to your e-Commerce site and configuring it will allow you to generate geolocation information for the site visitor. 
+
+A geoLookup connector allows you to connect to an external geolocation service provider. Adding this type of connector to your e-commerce site and configuring it will enable you to generate geolocation information for e-commerce site users. 
 
 ### Enable and configure a geoLookup connector
-Connectors are enabled and configured in the  **connector.settings.json** file under the **\\src\\settings** directory of the SDK.  The following is an example of enabling a geoLookup connector:
+
+Connectors are enabled and configured in the  **connector.settings.json** file under the **\\src\\settings** directory of the SDK. 
+
+The following example shows the enabling of a geoLookup connector in the **connector.settings.json** file.
 
 ```json
 {
@@ -281,24 +283,24 @@ Connectors are enabled and configured in the  **connector.settings.json** file u
 }
 ```
 
-- **geoLookup** – This object contains all the information that is required to start and enable your experimentation connector.
-- **name** – This setting specifies the name of the geoLookup connector to use. You can find the name of the connector in the connector's definition file. The type of the connector must be **geoLookupConnector**.
-- **config** – This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file.  Change the apiKey to one provided by the service provider.
-- **cacheConfig** – You can specify the timings that are used when caching geolocation entities. **ttlInSeconds** refers to the amount of time that an entity can remain in the cache before it's considered stale, and **ttrInSeconds** refers to the amount of time before an entity is refreshed. The connector's README file should include a list of recommended cache timings.
-- **geoLookup** – The geoLookup controls the cache timings for getting geolocation information generated in your third party provider during getGeoInformation() . Default TTL (time-to-live) is 120 seconds.
-
+- **geoLookup** – This object contains all the information required to start and enable a geoLookup connector.
+- **name** – This setting specifies the name of the geoLookup connector. You can find the name of the connector in the geoLookup connector's definition file. The connector type must be "geoLookupConnector."
+- **config** – This section allows for any configuration object that the connector requires for initialization and communicatation with the third-party service. To learn what information is required, look in the **configSchema** section of the geoLookup connector's definition file, or in the connector's README file. Change the **apiKey** value to one provided by the service provider.
+- **cacheConfig** – Here you can specify the timings that are used when caching geolocation entities. The **ttlInSeconds** value specifies the amount of time in seconds that an entity can remain in the cache before it's considered stale, and the **ttrInSeconds** value specifies the amount of time in seconds before an entity is refreshed. The geoLookup connector's README file should include a list of recommended cache timings.
+- **geoLookup** – The geoLookup setting controls the cache timings for getting geolocation information generated by the third-party service provider. The default time-to-live (TTL) value is 120 seconds.
 
 ### Anatomy of a geoLookup connector
-An experimentation connector consists of two parts:
 
-- A connector definition file (in JavaScript Object Notation \[JSON\] format)
-- A provider file
+A geoLookup connector consists of two parts:
 
-### Connector definition file
-A connector definition file CONNECTOR_NAME.connector.json is used to register and provide configuration metadata data to your application. The metadata includes the type of connector, the connector’s name, a description of the connector and the configuration schema. 
+- A connector definition file in JSON format).
+- A provider file.
 
-Here is an example of a connector definition file:
+#### Connector definition file
 
+A connector definition file is used to register and provide configuration metadata data to your application. The name of the provider file is in the format  **\<CONNECTOR\_NAME\>.connector.json**. The metadata includes the type of connector, the connector's name, a description of the connector, and the configuration schema, as shown in the following example of a connector definition file.
+
+```json
 {
     "$type": "geoLookupConnector",
     "name": "msdyn365-geoLookup-test",
@@ -314,17 +316,18 @@ Here is an example of a connector definition file:
         "required": ["apiKey"]
     }
 }
+```
 
 #### Connector definition file schema
 
 - **$type** – The type of connector. Because the definition file in the preceding example is for an geoLookup connector, the type is **geoLookupConnector**.
 - **name** – The name of the connector. This name must be unique across all connectors.
 - **description** – The description of the connector.
-- **configSchema** – The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party experimentation service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements.
+- **configSchema** – The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements.
 
-### Provider file
+#### Provider file
 
-A provider file is required to initialize a connector. The name of the provider file is in the format **&lt;CONNECTOR\_NAME&gt;.provider.ts**.
+A provider file is required to initialize a connector. The name of the provider file is in the format **\<CONNECTOR\_NAME\>.provider.ts**.
 
 The provider file should implement the following interface.
 
@@ -360,8 +363,7 @@ export interface IGeoLocation {
 }
 ```
 
-Generated geolocation information will be saved into requestContext.geoLocation object. 
-
+Generated geolocation information will be saved into the requestContext.geoLocation object. 
 
 ## Additional resources
 
