@@ -47,6 +47,9 @@ Because MicrosoftOperationsERPVE is a managed solution, solutions from customers
 
 When a solution that depends on MicrosoftOperationsERPVE is exported, placeholders for the virtual entities that are used in the solution are added in the exported solution. When that solution is imported into another Dataverse environment, the import process also generates the dependent Finance and Operations virtual entities in the MicrosoftOperationsERPVE solution for the Finance and Operations instance that is connected to the Dataverse environment. Therefore, MicrosoftOperationsERPVE must already exist before a solution that depends on it is imported. Otherwise, an error message is shown. Additionally, if a dependent entity isn't available in the Finance and Operations instance, the virtual entity for that entity won't be generated. Virtual entities are generated only for entities that are available.
 
+> [!NOTE]
+> If a virtual entity already exists in Dataverse and a solution is being imported that now references new fields in the virtual entity which does not exist in Dataverse, a manual refresh must be performed on the virtual entity to get the latest metadata from Finance and Operations.
+
 The following list describes other solutions that Finance and Operations virtual entities require to work, and that must be available in the Dataverse environment:
 
 - **MicrosoftOperationsERPCatalog** – This solution provides a catalog of the available entities in a Finance and Operations instance. It also provides the connection that is used to set up a configuration. For more information, see the later sections of this topic.
