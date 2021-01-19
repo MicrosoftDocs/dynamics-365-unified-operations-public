@@ -37,23 +37,23 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 Microsoft Dynamics 365 Talent is built on top of Dataverse, and can be extended in various ways by using the Microsoft Power Platform and the capabilities that Dataverse offers. Therefore, you can configure and personalize the system by using Microsoft Power Apps and Microsoft Power Automate. You can also get additional analytics about people by using Microsoft Power BI. Furthermore, new custom activities, such as the Power Apps and Web content (iframe) activities, make the hiring process more adaptable than ever. By using these activities, you can tailor the hiring process to your business needs and processes, and can make sure that both the hiring team and candidates have a seamless, customized experience.
 
-## Extending Option sets in Attract
+## Extending Choice columns in Attract
 
-An **Option Set** (picklist) is a type of column that can be included in an table. It defines a set of options. When an option set is displayed in a form it uses a drop-down list control.  In Attract there are multiple columns that are option sets.  We are beginning to introduce the capability to extend the options sets, beginning with the Rejection reason column, Employment type column, and Seniority type column.   Also, you can add localized display labels for the options that you add. For more information, see [Customize option set labels](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+A **Choice** column (picklist) is a type of column that can be included in an table. It defines a set of options. When a Choice column is displayed in a form it uses a drop-down list control.  In Attract there are multiple columns that are Choice columns.  We are beginning to introduce the capability to extend the Choice columns, beginning with the Rejection reason column, Employment type column, and Seniority type column.   Also, you can add localized display labels for the options that you add. For more information, see [Customize labels to support multiple languages](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
-> The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** column on the **Job details** page. The default values in these columns are supported by LinkedIn and are displayed when the job is posted. Therefore, if you are posting jobs to LinkedIn and you modify the existing option set values for these columns, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.  
+> The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** column on the **Job details** page. The default values in these columns are supported by LinkedIn and are displayed when the job is posted. Therefore, if you are posting jobs to LinkedIn and you modify the existing Choice values for these columns, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.  
 
 Listed below are the steps to update the **Rejection reason** column with values that are specific to your business.  
 
-1. To extend the **Rejection reason** option set, navigate to the [Power Apps Admin website](https://admin.powerapps.com).
+1. To extend the **Rejection reason** column, navigate to the [Power Apps Admin website](https://admin.powerapps.com).
 2. You might be prompted to sign into your account. Provide your userID and password credentials that you use to sign into Dynamics365 and/or Office365, and then click **Next**.
 3. On the **Environments** tab, select the environment that you want to manage, and double-click to get to the **Details** tab.
 4. On the **Details** tab, select **Dynamics 365 Administration Center**.
 5. Select the instance that you want to modify and select **Open**.
 6. Navigate to **Settings**, and then **Customizations**, and choose **Customize the system**.
-7. Find the table that you want to expand the option set for by selecting **Tables** and expanding the group. In this example, it will be the **Job application table**.
-8. Go to the column that you want to extend the option set for by selecting the **Fields** option. In this example, it will be the **msdyn_rejectionreason**. Double-click the column.
+7. Find the table that you want to expand the Choices for by selecting **Tables** and expanding the group. In this example, it will be the **Job application table**.
+8. Go to the column that you want to extend the Choices for by selecting the **Fields** option. In this example, it will be the **msdyn_rejectionreason**. Double-click the column.
 9. In the **Option Set** column, choose **Edit**.
 10. Select the **+** icon.
 11. Enter a **Label**.  (This must be a unique value – no duplicates).

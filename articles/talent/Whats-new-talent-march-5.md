@@ -36,12 +36,12 @@ This topic describes features that are either new or changed in Talent.
 
 ## Changes in Attract
 
-### Extending option sets in Attract
+### Extending Choice columns in Attract
 
-In Attract, there are multiple columns that are option sets within the Dataverse. New capabilities have been introduced to extend the option sets, beginning with the **Rejection** reason column, **Employment type** column, and **Seniority type** column.
+In Attract, there are multiple columns that are Choice columns within the Dataverse. New capabilities have been introduced to extend the Choice columns, beginning with the **Rejection** reason column, **Employment type** column, and **Seniority type** column.
 
 > [!IMPORTANT]
-> The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** columns on the **Job details** page. The default values in these columns are supported by LinkedIn and are displayed when the job is posted. If you are posting jobs to LinkedIn and you modify the existing option set values for these columns, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.
+> The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** columns on the **Job details** page. The default values in these columns are supported by LinkedIn and are displayed when the job is posted. If you are posting jobs to LinkedIn and you modify the existing Choice values for these columns, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.
 
 ## Changes in Onboarding
 
