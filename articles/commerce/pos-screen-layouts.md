@@ -120,7 +120,7 @@ In Compact POS layouts, the button grids are automatically laid out from top to 
 ![Compact layout button grids](../commerce/media/Compact-View-Button-Grids.png)
 
 > [!NOTE]
-> Note:  The button sizes in the designer will scale to fit the size of the window, therefore they may not accurately reflect the actual buttons rendered in POS.  In order to best simulate the button grid layout, it can be helpful to adjust the designer windows to the same size as the POS.
+> The button sizes in the designer will scale to fit the size of the window, therefore they may not accurately reflect the actual buttons rendered in POS. To best simulate the button grid layout, adjust the designer windows to the same size as the POS.
 
 ### Images
 
