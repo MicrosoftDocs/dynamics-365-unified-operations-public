@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Electronic reporting framework API changes
+title: Electronic reporting framework API changes for Application update 10.0.17
 description: This topic describes how the application programming interfaces (APIs) of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.17.
 author: NickSelin
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
 ---
 
-# Electronic reporting framework API changes
+# Electronic reporting framework API changes for Application update 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +49,7 @@ if(formatMappingRun.parmShowPromptDialog(true))
 
 In some cases, when an ER format mapping is called from a specific place in the X++ code, you must specify an action that user performs by running an ER format to execute the only action dependent destinations from all configured for this format destinations. For example, you might call an ER format based on [Print management](document-reporting-services.md) (PM) settings to preview a generated document expecting that the only [Screen](er-destination-type-screen.md) destination will be executed at this time. At the same time, you might call the same ER format to send a generated document out as the attachment of an outbound email expecting that the only [Email](er-destination-type-email.md) destination will be executed at this time.  
 
-To achieve this, you must configure action dependent ER destinations for an ER format. To learn how action dependent ER destination can be configured, see [Configure action dependent ER destinations](er-destination-action-dependent.md).
+To achieve this, you must configure action dependent ER destinations for an ER format. To learn how action dependent ER destination can be configured, see [Configure action dependent ER destinations](er-action-dependent-destinations.md).
 
 You can then use the new API of the ER framework to call an ER format mapping providing a user action code to execute the only destinations that were configured for the provided action. The presented below example shows how the mentioned above sample code can be changed to use this new API for running an ER format providing the **View** action.
 
