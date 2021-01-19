@@ -47,7 +47,7 @@ You can add connectors to your Commerce site by adding them as a dependency in y
 
 Connectors are configured and enabled in the **connector.settings.json** file under the **\\src\\settings** directory. If no **connector.settings.json** file exists, you can manually create one. In this file, you can specify the experimentation connector that you want to use and configure it as you require. Only one experimentation connector can be used at a time.
 
-The following example shows the contents of the **connector.settings.json** file which defines an experimentation connector.
+The following example shows the contents of the **connector.settings.json** file that defines an experimentation connector.
 
 ```json
 {
