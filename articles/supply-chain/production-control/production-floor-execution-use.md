@@ -43,9 +43,9 @@ After the device has been prepared, the sign-in page appears on it. This page sh
 
 The remaining sections of this topic describe how workers interact with the interface.
 
-## All jobs tab
+## The jobs list tab
 
-The **All jobs** tab provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*.
+The jobs list tab (named **All jobs** in the following screenshot) provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*.
 
 ![All jobs tab](media/pfei-all-jobs-tab.png "All jobs tab")
 
@@ -62,11 +62,13 @@ The job list has the following columns. (The numbers correspond to the numbers i
 1. **Scrapped** – This column shows the quantity that has already been scrapped for a job.
 1. **Remaining** – This column shows the quantity that remains to be completed for a job.
 
-## Active jobs tab
+## The active jobs tab
+
+<!-- KFM: an intro would be nice here -->
 
 ![Active jobs tab](media/pfei-active-jobs-tab.png "Active jobs tab")
 
-The job list on the **Active jobs** tab has the following columns:
+The job list on the active jobs tab (named **Active jobs** in the previous screenshot) has the following columns:
 
 - **Selection column** – The leftmost column uses check marks to indicate jobs that have been selected by the worker. Workers can select multiple jobs in the list at the same time. To select all the jobs in the list, select the check mark in the column header. When a single job is selected, details about that job are shown in the lower part of the page.
 - **Order** – This column shows the production order number for a job.
@@ -76,6 +78,27 @@ The job list on the **Active jobs** tab has the following columns:
 - **Completed** – This column shows the quantity that has already been completed for a job.
 - **Scrapped** – This column shows the quantity that has already been scrapped for a job.
 - **Remaining** – This column shows the quantity that remains to be completed for a job.
+
+## The asset management tab
+
+The asset management tab (named **My machine** in the following screenshot) lets workers select an asset that is connected to a machine resource within the filter set on the jobs list tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime.
+ 
+![The My machine tab](media/pfei-my-machine-tab.png "The My machine tab")
+
+The asset management tab has the following columns. (The numbers correspond to the numbers in the previous illustration.)
+
+1. **Machine asset** – Select the machine asset that you want to track. Start typing its name to select from a list of matching assets, or select the magnifying-glass icon to select from a list of all assets associated with the resources that are within the filter of the job list.
+
+    > [!NOTE]
+    > Supply Chain Management users can assign a resource to each asset as needed using the **All assets** page (on the **Fixed asset** tab, using the **Resource** drop-down list). For more information, see [Create an asset](../asset-management/objects/create-an-object.md). <!-- KFM: We do mean the **Fixed asset** FastTab, right? Original: "You associate a machine resource in the All assets page (Go to All assets -> Fasttab: Details -> Field: Resource) " -->
+
+1. **Settings** – Select the gear icon to open a dialog box where you can choose which counters to view for the selected machine asset. Values for these counters are shown at the top of the asset management tab. The settings dialog (shown in the following screenshot) lets you enable up to four counters. For each counter that you want to enable, use the lookup field at the top of the tile to select a counter (the lookup field lists all of the counters associated to the asset selected at the top of the asset management page. Set each counter to monitor either the **Aggregated** value or the latest **Actual** value for the counter. For example, if you set a counter that tracks how many hours the machine has been running, then you should set it to **Aggregated**. If you set a counter to measure the latest updated temperature or pressure, then you should set it to **Actual**. Select **OK** to save your settings and close the dialog box.
+
+    ![The My machine tab](media/pfei-my-machine-tab-settings.png "The My machine tab")
+
+1. **Request maintenance** – Select this button to open a dialog box where you can create a maintenance request. You'll be able to provide description and a note. The request will be brought to the attention of a Supply Chain Management user, who will then be able to convert the maintenance request to a maintenance work order.
+1. **Register downtime** – Select this button to open a dialog box where you can register machine downtime. You'll be able to select a reason code and enter a date/time span for the downtime. The machine downtime registration is used for calculating the efficiency of the machine asset.
+1. **View or edit** – Select this button to open a dialog box where you can edit or view existing downtime records.
 
 ## Starting and completing production jobs
 
@@ -128,7 +151,7 @@ For example, Shannon, a floor worker at Contoso, wants to attend a company meeti
 
 In both scenarios, after Shannon confirms her selection, she goes to either the sign-in page or a page that will wait for her to confirm that she has returned from her indirect activity. The page that appears depends on the configuration of the production floor execution interface. (For more information, see [Configure the production floor execution interface](production-floor-execution-configure.md).)
 
-## Working on breaks
+## Registering breaks
 
 Workers can register breaks. Breaks can be flexibly defined, as described in [Pay based on registrations](pay-based-on-registrations.md).
 
