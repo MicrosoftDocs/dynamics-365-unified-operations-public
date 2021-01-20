@@ -61,7 +61,7 @@ For example, the Customer service in CRT contains all the customer-related reque
 Before you learn about the CRT extension patterns, you should understand how a CRT extension can be created. CRT is just a collection of C# class libraries (.NET assemblies). You can create a class library project in C# and do all the CRT extension by using the patterns that are shown in the following table. Always use the samples that Microsoft provides as template for your extension, because these samples have the correct assembly references, Microsoft .NET Framework version, output type, and build parameters. Additionally, all the other required parameters are preconfigured. You can find the CRT sample extension in the Retail software development kit (SDK), at …\\RetailSDK\\SampleExtensions\\CommerceRuntime.
 
 > [!NOTE]
-> Starting 10.0.12 application release, all CRT extension projects class library must use Target framework netstandard 2.0.
+> Starting with version 10.0.16 of Finance and Operations apps, all CRT extension projects class library must use .NET Standard 2.0 for the target framework.
 
 ### Create a new CRT service
 
@@ -77,10 +77,10 @@ You can completely override existing functionality or customize it according to 
 
 ### CRT data service and data service with entity
 
-Data service to read data/entity from channel database.
+Use the CRT data service to read data or entities from the channel database.
 
 > [!NOTE]
-> CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
+> CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (for example, Runtime.Workflow, Runtime.Services, and Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
 
 ### Triggers
@@ -114,6 +114,7 @@ For details about the attributes, see the following topics:
 ### Extend Commerce Data Exchange - Real-time Service class
 
 You can do synchronous call from CRT to HQ.
+
 For information about how to extend Commerce Data Exchange (CDX) - Real-time service, see [Extend Commerce Data Exchange - Real-time Service](extend-commerce-data-exchange.md).
 
 ## Retail server extension
@@ -146,12 +147,12 @@ For offline, after extending CRT, put the custom library in the **\\Program File
 
 ## Register the extension configuration in the CommerceRuntime.Ext.config file
 
-Your extension can register any key-value configurations in the **CommerceRuntime.Ext.config** file in the **\<settings\>** node.
+Your extension can register key-value configurations in the **CommerceRuntime.Ext.config** file in the **\<settings\>** node.
 
-This **\<settings\>** node is a key-value pair collection used to configure the CommerceRuntime components. The convention is to prefix settings keys to represent the functional area they are configuring using a period (.) as separator. Extension configuration values MUST be prefixed with **ext**, because the Commerce Runtime initialization enforces this convention and will not load otherwise. Additional prefixes can be added to represent the sub-area they control. The following example sets a key-value pair.
+The **\<settings\>** node is a key-value pair collection used to configure the CommerceRuntime components. The convention is to prefix settings keys to represent the functional area they are configuring using a period (.) as separator. Extension configuration values must be prefixed with **ext**, because the Commerce Runtime initialization enforces this convention. Extensions without the prefix will not load. More prefixes can be added to represent the sub-area they control. The following example sets a key-value pair.
 
 ```xml
-      <add name="ext.SalesTransaction.Storage.CartSerializationFormat" value="XML" />
+<add name="ext.SalesTransaction.Storage.CartSerializationFormat" value="XML" />
 ```
 
 For HTTP binding timeouts on Realtime Service calls, configure the timeout in seconds per method. This timeout value is limited by **maxExtensionTimeoutInSeconds**, which set in **CommerceRuntime.config**.
