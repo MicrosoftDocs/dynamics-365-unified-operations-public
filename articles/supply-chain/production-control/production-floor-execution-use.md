@@ -64,7 +64,7 @@ The job list has the following columns. (The numbers correspond to the numbers i
 
 ## The active jobs tab
 
-<!-- KFM: an intro would be nice here -->
+The active job tabs shows a list of all jobs that the signed-in worker has already started.
 
 ![Active jobs tab](media/pfei-active-jobs-tab.png "Active jobs tab")
 
@@ -90,7 +90,7 @@ The asset management tab has the following columns. (The numbers correspond to t
 1. **Machine asset** – Select the machine asset that you want to track. Start typing its name to select from a list of matching assets, or select the magnifying-glass icon to select from a list of all assets associated with the resources that are within the filter of the job list.
 
     > [!NOTE]
-    > Supply Chain Management users can assign a resource to each asset as needed using the **All assets** page (on the **Fixed asset** tab, using the **Resource** drop-down list). For more information, see [Create an asset](../asset-management/objects/create-an-object.md). <!-- KFM: We do mean the **Fixed asset** FastTab, right? Original: "You associate a machine resource in the All assets page (Go to All assets -> Fasttab: Details -> Field: Resource) " -->
+    > Supply Chain Management users can assign a resource to each asset as needed using the **All assets** page (on the **Fixed asset** tab, using the **Resource** drop-down list). For more information, see [Create an asset](../asset-management/objects/create-an-object.md).
 
 1. **Settings** – Select the gear icon to open a dialog box where you can choose which counters to view for the selected machine asset. Values for these counters are shown at the top of the asset management tab. The settings dialog (shown in the following screenshot) lets you enable up to four counters. For each counter that you want to enable, use the lookup field at the top of the tile to select a counter (the lookup field lists all of the counters associated to the asset selected at the top of the asset management page. Set each counter to monitor either the **Aggregated** value or the latest **Actual** value for the counter. For example, if you set a counter that tracks how many hours the machine has been running, then you should set it to **Aggregated**. If you set a counter to measure the latest updated temperature or pressure, then you should set it to **Actual**. Select **OK** to save your settings and close the dialog box.
 
