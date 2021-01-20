@@ -219,10 +219,15 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ### Create and initialize counters on creating a new asset
 
-When you create a new asset, asset counters initialized with a value of zero will be created automatically under the following conditions:
+Each time you create a new asset, related asset counters initialized with a value of zero can be created automatically provided you prepare your system and create your new asset correctly. To set this up:
 
-- On the **All assets** page, the new asset was assigned an **Asset type** that has one or more counters selected for it (for the relevant record on the **Asset types** page).
-- On the **Counters** page, each related counter has **Total aggregate** set to *Sum*.
+1. Go to **Asset management > Setup > Asset types**.
+1. Make sure you have an asset type that applies for your planned new asset (create one if necessary). Make sure it is set up with all of the relevant counters selected on the **Counters** FastTab.
+1. Go to **Asset management > Setup > Asset types > Counters** and make sure that each relevant counter has **Total aggregate** set to *Sum*.
+1. Go to the **All assets** page and create the new asset.
+1. Set the **Asset type** for the new asset to the type you identified in step 1.
+1. Finish setting up the new asset as needed.
+1. Go to **Asset management \> Inquiries \> Assets \> Counters**. You should now be able to find the initialized counters set up for your new asset.
 
 > [!NOTE]
 > Initialized asset counters are created with the assumption that the asset had never been used when it was added to the system. When running the maintenance schedule for the first time, the calculation will use the date with the zero-counter value as a baseline for calculating future maintenance. If the asset wasn't new when it was added to the system, you can manually adjust the counter value to match the actual counter value. To adjust a counter value, open the relevant asset on the **All assets** page and then, on the Action Pane, open the **Asset** tab and, from the **Preventative** group, select **Counters** to open the **Asset counters** page for the selected asset. Then adjust the value shown in the **Value** column for the initial counter record as needed.
