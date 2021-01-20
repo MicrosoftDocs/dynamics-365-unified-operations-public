@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.16
 # User session management
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 
 The user session setting represents the amount of time a user can be signed in before the user’s session expires. After the user’s session expires, the user is required to sign in with their credentials.
