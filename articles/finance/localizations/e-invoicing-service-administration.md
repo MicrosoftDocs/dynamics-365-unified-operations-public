@@ -14,7 +14,7 @@ subscription in Azure.
 
 ## Microsoft Dynamics 365 Regulatory Configuration Services (RCS)
 
-The Regulatory Configuration Services (RCS) is the interface for
+The Microsoft Dynamics 365 Regulatory Configuration Services (RCS) is the interface for
 configuration of the Electronic invoicing add-on. The resources, such as
 Environments and Electronic invoicing features are created, maintained,
 and hosted in the RCS, and when they are ready, they are published to
