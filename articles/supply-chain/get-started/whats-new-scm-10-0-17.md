@@ -54,15 +54,16 @@ The following features are included in this release. Some of the listed features
 - Landed cost
 - Manufacturing execution with scale units in the cloud
 - [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see <!--KFM: Add new topic link -->
+- Override the default reservation principle for materials in production <!--KFM: Release plan -->
 - Plan maintenance based on accumulated asset counter values
 - Purchase requisition support for Planning Optimization
 - Saved views for inventory and logistics
 - Saved views for planned orders
 - Saved views for production control
 - Schedule warehouse work creation
-- Set default financial dimensions for inventory standard cost revaluation vouchers
+- Set default financial dimensions for inventory standard cost revaluation vouchers <br> - For more information, see [Manage standard cost updates](../cost-management/manage-standard-cost-updates.md).
 - [Small parcel shipping (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)<br> - For more information, see <!--KFM: Add new topic link -->
-- Warehouse execution with scale units in the cloud
+- Warehouse execution with scale units in the cloud<br> - For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md)  <!--KFM: Add second help link to new "Warehouse orders for cloud and edge scale units" topic -->
 - Warehouse management mobile application
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
@@ -71,21 +72,19 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
-- Asset Management mobile workspace <!--KFM: Add new topic link, Johan -->
+- Set up the Asset management mobile workspace <!--KFM: Add new topic link, set-up-asset-management-mobile.md  -->
 - [Configure product filters for warehouse transactions](../warehousing/filters-and-filter-codes.md)
+- Coverage time fences for Planning Optimization <!--KFM: Add new topic link, Rytt -->
 - [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)
 - [Intercompany planning](../master-planning/planning-optimization/Intercompany-planning.md)
 - [Inventory marking with Planning Optimization](../master-planning/planning-optimization/marking.md)
 - [Master planning with demand forecasts](../master-planning/planning-optimization/demand-forecast.md)
-- Override the default reservation principle for materials in production <!--KFM: Add new topic link, Johan -->
 - [Production planning](../master-planning/planning-optimization/production-planning.md) <!--KFM: Remember to add YouTube link to this topic -->
 - [Partial location cycle counting](../warehousing/partial-location-cycle-counting.md)
 - [Pick line grouping](../warehousing/pick-line-grouping.md)
 - [Purchase requisitions in master planning](../master-planning/planning-optimization/purchase-requisitions.md)
 - [Troubleshoot cost management](../cost-management/troubleshoot-costmanagement.md)
 - [Troubleshoot inventory operations](../inventory/troubleshoot-inventory-operations.md)
-- Warehouse execution on scale units <!--KFM: Add new topic link, Per -->
-- Warehouse orders for cloud and edge scale units  <!--KFM: Add new topic link, Per -->
 - [Warehouse slotting](../warehousing/warehouse-slotting.md)
 
 ## Additional resources
