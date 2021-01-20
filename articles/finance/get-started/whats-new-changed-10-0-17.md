@@ -44,5 +44,4 @@ The following features are included in this release. The feature titles link to 
 
 ### Dynamics 365 Finance
 - [1099 statements updated for 2020 tax law](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/1099-statements-updated-2020-tax-law)
-- [Restrict ability to edit accounting distribution on vendor invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/restrict-ability-edit-accounting-distribution-vendor-invoices)
 - [Improvements in unit price and cost price handling in stock transfer orders for India](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/improvements-unit-price-cost-price-handling-stock-transfer-orders-india)
