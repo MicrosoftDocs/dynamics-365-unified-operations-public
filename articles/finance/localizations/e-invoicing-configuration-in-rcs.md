@@ -337,3 +337,6 @@ When an Electronic invoicing feature is created derived from another
 Electronic invoicing feature imported from a Configuration provider, the
 Rebase action updates the derived Electronic invoicing feature with the
 updates introduced in the original Electronic invoicing feature.
+
+## Additional resources
+- [Issuing of electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md)
