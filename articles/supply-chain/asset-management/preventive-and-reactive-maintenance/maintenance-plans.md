@@ -127,7 +127,9 @@ This section describes how to set up maintenance plan lines and provides example
 >[!NOTE]
 >When work orders are manually created on assets that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.
 
-## <a name="interval-types"></a>Interval types overview
+<a name="interval-types"></a>
+
+## Interval types overview
 
 | Interval type and description | Line Type: Time | Line Type: Counter |
 |---|---|---|
@@ -140,8 +142,8 @@ This section describes how to set up maintenance plan lines and provides example
 | **Interval type: Once reached below** This interval type only relates to counters and is used for indicating a lower limit set up on the maintenance plan line. Maintenance schedule entries will have the expected start date and time of the counter registration, meaning these entries will be created with an expected start date equal to or earlier than the system date. | N/A | The counter interval indicates a lower limit. If that limit is passed when you create a counter registration, a maintenance schedule line is created when you schedule preventive maintenance. |
 | **Interval type: Linked from start date** This interval type only creates a maintenance schedule line once. A maintenance plan can contain more maintenance plan lines using this interval type, and those lines are linked. Typically, you will create a maintenance plan that contains lines of only this interval type. Maintenance schedule lines are created by identifying the maintenance plan line that has the first expected start date and time. | See description for "Once from start date" above. Example: You create two lines in a maintenance plan for a service job on a car: one time-based line with a 1-year period, and one counter-based line with a 25,000 km limit. A maintenance schedule line is created for the limit that is reached first. For this line type you create the line with the 1-year period. | See description for "Once from start date" above. Example: You create two lines in a maintenance plan for a service job on a car: one time-based line with a 1-year period, and one counter-based line with a 25,000 km limit. A maintenance schedule line is created for the limit that is reached first. For this line type you create the line with the 25,000 km limit. Example creating two counter lines: You can also set up a maintenance plan with two linked, counter-based lines in which the first line has a limit of 10,000 items quantity produced, and the second line relates to the machine or work center requiring service after running 3,000 hours. |
 | **Interval type: Linked from last work order** This interval type creates new maintenance schedule lines after every completed work order. A maintenance plan can contain more lines using this interval type, and those lines are linked. Typically, you will create a maintenance plan that contains maintenance plan lines of only this interval type. Maintenance schedule lines are created by identifying the maintenance plan line that has the first expected start date and time. | This interval type basically works as "Linked from start date" described above. Only difference is the date on which the interval type is based. The date used is the actual date and time on the latest work order completed on the asset *and* the maintenance job type / maintenance job type variant / trade combination. | This interval type basically works as "Linked from start date" described above. Only difference is the date on which the interval type is based. The date used is the actual date and time on the latest work order completed on the asset *and* the maintenance job type / maintenance job type variant / trade combination. |
-| **Interval type: Repeated on aggregated value (Counter only)** When running the maintenance plan, a scheduled maintenance line will be created each time the accumulated value for an asset counter reaches the period frequency or an even multiple of the period frequency (The period frequency is defined on the maintenance plan line). | N/A | **Example**: An hour counter is set up for asset AK-101. An asset plan line is set up for the asset with interval type *Repeated on aggregated value (Counter only)* and a period frequency of 1000. When running the maintenance plan, a scheduled maintenance line will be generated once the aggregated value for the counter has exceeded 1000 hours. When the aggregated value for the counter exceeds 2000 hours, another new scheduled maintenance line will be generated, and so on for every 1000 hours thereafter. |
-| **Interval type: Once on aggregated value (Counter only)** When running the maintenance plan, a scheduled maintenance line will be created once the accumulated value for an asset counter reaches the Period frequency defined on the maintenance plan line. | N/A | **Example**: An hour counter is set up for asset AK-101. An asset plan line is set up for the asset with interval type *Once on aggregated value (Counter only)* and a period frequency of 1000. When running the maintenance plan, a scheduled maintenance line will be generated once the aggregated value for the counter has exceeded 1000 hours. |
+| **Interval type: Repeated on aggregated value (Counter only)** When running the maintenance plan, a scheduled maintenance line will be created each time the accumulated value for an asset counter reaches the period frequency or an even multiple of the period frequency (The period frequency is defined on the maintenance plan line).<p>For more information about how to enable and use this functionality, see [Counter-based maintenance enhancements](#counter-based-maintenance). | N/A | **Example**: An hour counter is set up for asset AK-101. An asset plan line is set up for the asset with interval type *Repeated on aggregated value (Counter only)* and a period frequency of 1000. When running the maintenance plan, a scheduled maintenance line will be generated once the aggregated value for the counter has exceeded 1000 hours. When the aggregated value for the counter exceeds 2000 hours, another new scheduled maintenance line will be generated, and so on for every 1000 hours thereafter. |
+| **Interval type: Once on aggregated value (Counter only)** When running the maintenance plan, a scheduled maintenance line will be created once the accumulated value for an asset counter reaches the Period frequency defined on the maintenance plan line.<p>For more information about how to enable and use this functionality, see [Counter-based maintenance enhancements](#counter-based-maintenance). | N/A | **Example**: An hour counter is set up for asset AK-101. An asset plan line is set up for the asset with interval type *Once on aggregated value (Counter only)* and a period frequency of 1000. When running the maintenance plan, a scheduled maintenance line will be generated once the aggregated value for the counter has exceeded 1000 hours. |
 
 >[!NOTE]
 >When maintenance schedule lines are created for time-based maintenance plan lines, expected time is always at the start of the day. For counter-based maintenance plan lines, expected time can be anytime during the day.
@@ -194,7 +196,12 @@ The following illustration shows an example of maintenance plans set up on an as
 
 ![An example of maintenance plans set up on an asset](media/08-preventive-maintenance.png "An example of maintenance plans set up on an asset")
 
+<a name="counter-based-maintenance"></a>
+
 ## Counter-based maintenance enhancements
+
+> [!IMPORTANT]
+> The functionality noted in this section is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 The *Counter-based maintenance enhancements* feature introduces the following functionality:
 
@@ -203,21 +210,30 @@ The *Counter-based maintenance enhancements* feature introduces the following fu
 - Added a new maintenance plan interval type called *Repeated on aggregated value (Counter only)*. This type triggers maintenance each time an aggregated counter reaches a multiple of a specific value, such as every 10,000 hours. See also [Interval types overview](#interval-types).
 - Added a new maintenance plan interval type called *Once on aggregated value (Counter only)*. This type triggers maintenance when an aggregated counter value reaches a specific value, such as at 8,000 hours. See also [Interval types overview](#interval-types).
 
-## Turn on the Counter-based maintenance enhancements feature
+### Turn on the counter-based maintenance enhancements feature
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Asset Management*
 - **Feature name:** *(Preview) Counter-based maintenance enhancements*
 
-Feature management
-Module: Asset Management
-(Preview) Counter-based maintenance enhancements
-Defaulting zero counter values when creating a new asset.
-When creating a new asset, asset counters with zero value will automatically be created under the following conditions:
-•	The new asset is created with an Asset type where the counter is selected.
-•	The value of the field Total aggregate on the counter is set to Sum
-Note: The asset counter with zero value is created with the assumption that the asset has never been used when is created. When running the maintenance schedule for the first time the calculation will use the date with the zero-counter value as a baseline for calculating future maintenance. In case the asset is not new, when it is created, the user can manually adjust the automatically created zero counter value to match the actual counter value.
+### Create and initialize counters on creating a new asset
 
-Option to reset the counter value
-On the field Reset counter you can set up the asset counter to be automatically reset when you change status on a work order. In this case, you should also indicate that the counter must be reset on the definition of the work order life cycle state (field: Reset counter)
+When you create a new asset, asset counters initialized with a value of zero will be created automatically under the following conditions:
+
+- On the **All assets** page, the new asset was assigned an **Asset type** that has one or more counters selected for it (for the relevant record on the **Asset types** page).
+- On the **Counters** page, each related counter has **Total aggregate** set to *Sum*.
+
+> [!NOTE]
+> Initialized asset counters are created with the assumption that the asset had never been used when it was added to the system. When running the maintenance schedule for the first time, the calculation will use the date with the zero-counter value as a baseline for calculating future maintenance. If the asset wasn't new when it was added to the system, you can manually adjust the counter value to match the actual counter value. To adjust a counter value, open the relevant asset on the **All assets** page and then, on the Action Pane, open the **Asset** tab and, from the **Preventative** group, select **Counters** to open the **Asset counters** page for the selected asset. Then adjust the value shown in the **Value** column for the initial counter record as needed.
+
+### Automatically reset a counter value
+
+You can configure the system to automatically reset a counter each time a relevant work order reaches a selected status value. To do so:
+
+1. Go to **Asset management \> Setup \> Preventive maintenance \> Maintenance plans**.
+1. Select a maintenance plan from the list. The counter reset will apply to all assets that use this plan.
+1. In the **Lines** section, identify an asset counter line for which you'd like to reset a counter and select the **Reset counter** check box for that line. (Asset counter lines show a value in the **Counter** column. This is the counter that will be reset for the relevant asset.)
+1. Go to **Asset management \> Setup \> Work orders \> Lifecycle states**.
+1. On the list pane, select the worker order lifecycle state at which the relevant counter should be reset.
+1. On the **General** FastTab, set **Reset counter** to *Yes*.
