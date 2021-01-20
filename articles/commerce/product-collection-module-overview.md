@@ -117,3 +117,5 @@ The following table shows the list types that are available for selection in the
 [Buy box module](add-buy-box.md)
 
 [Product recommendations overview](product-recommendations.md)
+
+[Product quick view module](add-quick-view.md)
