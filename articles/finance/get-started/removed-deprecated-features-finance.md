@@ -43,6 +43,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.16 release
 
+### "VAT declaration (CZ)" and "Control statement export (CZ)" Electronic reporting formats for Czech Republic
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with new formats |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By January 22, 2022, we plan to no longer support "VAT declaration (CZ)", "Control statement export (CZ)" Electronic reporting (ER) formats. New VAT declaration XML (CZ), VAT declaration Excel (CZ), VAT control statement XML (CZ) formats are introduced instead under the "Tax declaration" model. |
+
 ### "Ledger transaction export format (BE)" Electronic reporting format and respective "Ledger transaction export (BE)" model for Belgium
 
 |   |  |
