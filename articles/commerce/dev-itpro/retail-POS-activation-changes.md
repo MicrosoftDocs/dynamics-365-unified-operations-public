@@ -74,6 +74,7 @@ The following steps are required so that device activation works correctly when 
 
 > [!NOTE]
 > Don't close the Notepad window, because you will use it again in the next section.
+> Another means of performing the above section of steps would be via a script or a post-step installation customization.
 
 ### Create the customized Modern POS Azure AD application
 1. Return to the web browser window where <https://portal.azure.com/> is open, and create the Retail Modern POS Azure AD application by repeating steps 3 through 4 in the "Create the Commerce Scale Unit Azure AD application" section. However, enter the following values this time:
