@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure module properties to display based on context
-description: This topic describes how to configure module properties to be shown or hidden based on the contextual values of other configuration properties.
+title: Configure module properties to be shown based on context
+description: This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
 manager: annbe
-ms.date: 01/28/2021
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,25 +28,25 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.17
 
 ---
-# Configure module properties to display based on context
+# Configure module properties to be shown based on context
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure module properties to be shown or hidden based on the contextual values of other configuration properties.
+This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 
-While multiple module configuration fields can be defined within a module's definition file, there may be scenarios where some fields are only relevant based on the values set for other configuration properties within the module. Contextually irrelevant fields should be hidden to help minimize the number of configuration fields shown to a page editor when configuring a module, reducing complexity and avoiding the possibility of confusion.
+Multiple module configuration properties can be defined in a module's definition file. However, there might be scenarios where the relevance of some property fields depends on the values that are set for other property fields of the module. Property fields that aren't relevant should be hidden, to minimize the number of fields that are shown to a page editor who is configuring the module. This behavior helps reduce complexity and the possibility of confusion.
 
-A module can use conditional schema to define the rules that the Commerce site builder module properties pane will follow to show or hide various configuration fields based on values of other property fields. For example, a module may have a "layout" property with two layouts where one is plain text and another is rich text with an image, and the module designer wants to ensure that only the contextually appropriate fields are displayed in site builder when the page editor is configuring the module.
+A module can use a conditional schema to define the rules that the module properties pane in Commerce site builder should follow to show or hide property fields based on the values of other property fields. For example, a module has a **layout** property that allows for two layouts, one of which has plain text, and the other of which has rich text and an image. In this case, the module designer might want to ensure that only property fields that are appropriate to the context (that is, the layout) are shown in site builder when a page editor configures the module.
 
-The ability to show or hide properties based on context is supported in the module definition and module definition extension files that use the conditional schema **dependentSchemas** property. Two types of conditional schema are supported: **schema dependencies** and **property dependencies**.
+The ability to show or hide property fields based on context is supported in module definition and module definition extension files that use the **dependentSchemas** property for conditional schemas. Two types of conditional schema are supported: *schema dependencies* and *property dependencies*.
 
 ## Schema dependencies
 
-Schema dependencies provide support to declare that the schema should change when a specific property value is selected. The **dependentSchemas** property is used with the [**oneOf**](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/) property to declare the list of different configuration properties applicable for a specific configuration value.
+Schema dependencies can be used to declare that the schema should change when a specific value is selected for a configuration property. The **[oneOf](https://react-jsonschema-form.readthedocs.io/en/docs/usage/oneof/)** property is used with the **dependentSchemas** property to declare the list of configuration properties that are applicable to a specific configuration value.
 
 ### Schema dependencies example
 
-In the following example module definition file, you can see that when the **layout** property is set to "PlainTextOnly," the "featureText" property should then be displayed.  Alternatively, when the **layout** property is set to "RichTextWithImage," the "featureRichText," "featureImage," and "imageAlignment" properties should be displayed (but not the "featureText" property).
+As the following example of a module definition file shows, when the **layout** property is set to **plainTextOnly**, the **featureText** property should be shown. Alternatively, when the **layout** property is set to **richTextWithImage**, the **featureRichText**, **featureImage**, and **imageAlignment** properties should be shown (but the **featureText** property should not be shown).
 
 ```json
 {
@@ -120,11 +120,11 @@ In the following example module definition file, you can see that when the **lay
 
 ## Property dependencies
 
-Property dependencies can be used to declare that certain configuration properties must be present if another configuration property value is present.
+Property dependencies can be used to declare that specific configuration properties must be present if the value of another configuration property is present.
 
 ### Property dependencies example
 
-In the following example, the **dependentSchemas** property defines that whenever the "productTitle" value is populated, the "subTitle" configuration property will then be displayed in site builder.
+In the following example, the **dependentSchemas** property specifies that whenever the **productTitle** value is entered, the **subTitle** configuration property should be shown in site builder.
 
 ```json
 {
@@ -154,11 +154,11 @@ In the following example, the **dependentSchemas** property defines that wheneve
 }
 ```
 
-## Handle property override conflicts
+## Handling property override conflicts
 
-Since the **dependentSchemas** property is supported in both module definition and module definition extension files, it is possible to have conflicts between the two types of files. A boolean **override** property set to "true" in the module definition extension file will allow the override of specific configuration properties.
+Because the **dependentSchemas** property is supported in both module definition files and module definition extension files, there might be conflicts between the two types of files. By setting a Boolean **override** property to **true** in the module definition extension file, you can enable overrides of specific configuration properties.
 
-The following examples show a module definition file, and then a module definition extension file that uses the override property.
+The following examples show a module definition file and a module definition extension file that uses the **override** property.
 
 ### Module definition file example
 
@@ -270,27 +270,27 @@ The following examples show a module definition file, and then a module definiti
 
 ## Conflict resolution scenarios
 
-The following tables list possible scenarios and expected outcomes when using dependency schemas with module definition and module definition extension files.
+The following tables list possible scenarios and expected outcomes when dependency schemas are used with module definition and module definition extension files.
 
-### Normal scenarios
+### Regular scenarios
 
 | Scenario | Expected outcome |
-| -------- | ---------------- |
-| Dependency schema only in module definition file. No conflicts between properties inside dependency schema and module definition extension file. | Apply dependency schema. |
-| Dependency schema only in module definition extension file, no conflicts between properties inside dependency schema and module definition extension file. | Apply dependency schema. |
-| Dependency schema only in module definition file. Conflict exists between properties inside dependency schema and module definition extension file. For example, property A is declared inside dependency schema of the module definition file as well as in module definition extension file without dependency schema. | Build error. |
-| Dependency schema on the same property in both module definition and module definition extension files. | 	Module definition file takes precedence. |
-| Same property is defined in both the module definition and module definition extension files. | Module definition file takes precedence. |
+|----------|------------------|
+| A dependency schema is used only in the module definition file. No conflicts exist between properties in the dependency schema and the module definition extension file. | The dependency schema is applied. |
+| A dependency schema is used only in the module definition extension file. No conflicts exist between properties in the dependency schema and the module definition extension file. | The dependency schema is applied. |
+| A dependency schema is used only in the module definition file. A conflict exists between properties in the dependency schema and the module definition extension file. For example, property A is declared both in the dependency schema of the module definition file and in the module definition extension file, which doesn't have a dependency schema. | A build error occurs. |
+| A dependency schema on the same property is used both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
+| The same property is defined both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
 
 ### Override scenarios
 
 | Scenario | Expected outcome |
-| -------- | ---------------- |
-| Same property in both module definition and module definition extension files. Property in module definition extension file has no override property set, or has one set to "false." | Module definition file takes precedence. |
-| Dependency schema on the same property in both module definition and module definition extension files. Property in module definition extension file has the override property set to "true." | Module definition extension file takes precedence. |
-| Dependency schema on the same property in both module definition and module definition extension files. Property in module definition extension file has no override property set, or has one set to "false." | Module definition file takes precedence. | 
-| Property A in module definition file, and property A inside dependency schema of module definition extension file with an override property set to "true." | Property A inside dependency schema of module definition extension file takes precedence. |  
-| Property A in module definition file, and property A inside dependency schema of module definition extension file with no override, or override set to "false." | Property A module definition file takes precedence. |
+|----------|------------------|
+| The same property is defined both in the module definition file and in the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. |
+| A dependency schema on the same property is used both in the module definition file and in the module definition extension file. The **override** property is set to **true** for the property in the module definition extension file. | The module definition extension file takes precedence. |
+| A dependency schema on the same property is used both in the module definition file and in the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. | 
+| The same property is defined both in the module definition file and in the dependency schema of the module definition extension file. The **override** property is set to **true** for the property in the module definition extension file. | The module definition extension file takes precedence. |
+| The same property is defined both in the module definition file and in the dependency schema of the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. |
 
 ## Additional resources
 
