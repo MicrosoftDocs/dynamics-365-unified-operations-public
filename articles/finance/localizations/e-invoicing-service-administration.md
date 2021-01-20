@@ -1,16 +1,13 @@
 # Service administration
 
 This topic provides you information about the components related to the
-Electronic invoicing add-on administration, walking you through the
-several systems that need to be configured for the correct functioning
+Electronic invoicing add-on administration, explaining the
+elements that need to be configured for the correct functioning
 of the service.
 
 ## Azure
 
-The Electronic invoicing add-on does not hold any customer transactional
-data. All the customer's data generated during the processing of the
-electronic invoices are hold in the storage account of the customer
-subscription in Azure.
+The Electronic invoicing add-on does not hold any customer information. All data and records that belong to the customers are hold on the customer's storage account associated to the customer Azure subscription, while the digital certificates owned by the customer are also hold on Azure Key vault.
 
 ## Microsoft Dynamics 365 Regulatory Configuration Services (RCS)
 
@@ -20,9 +17,7 @@ Environments and Electronic invoicing features are created, maintained,
 and hosted in the RCS, and when they are ready, they are published to
 the Electronic invoicing add-on service.
 
-For more information about RCS, see [Regulatory Configuration Services
-(RCS) - Globalization
-features](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rcs-globalization-feature)
+For more information about RCS, see [Regulatory Configuration Services (RCS) - Globalization features](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rcs-globalization-feature)
 
 ### Integration with Electronic invoicing add-on
 
