@@ -229,11 +229,11 @@ When you create a new asset, asset counters initialized with a value of zero wil
 
 ### Automatically reset a counter value
 
-You can configure the system to automatically reset a counter each time a relevant work order reaches a selected status value. To do so:
+You can configure the system to automatically reset a counter each time a relevant work order reaches a selected status value. To set this up:
 
 1. Go to **Asset management \> Setup \> Preventive maintenance \> Maintenance plans**.
 1. Select a maintenance plan from the list. The counter reset will apply to all assets that use this plan.
-1. In the **Lines** section, identify an asset counter line for which you'd like to reset a counter and select the **Reset counter** check box for that line. (Asset counter lines show a value in the **Counter** column. This is the counter that will be reset for the relevant asset.)
+1. In the **Lines** section, identify an asset counter line for which you'd like to reset a counter and select the **Reset counter** check box for that line. (Asset counter lines show a value in the **Counter** column; this is the counter that will be reset for the relevant asset.)
 1. Go to **Asset management \> Setup \> Work orders \> Lifecycle states**.
 1. On the list pane, select the worker order lifecycle state at which the relevant counter should be reset.
 1. On the **General** FastTab, set **Reset counter** to *Yes*.
