@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic has been compiled to assist with year-end closing activities. The information in this topic primarily focuses on questions concerning year-end closing activities  for General ledger and Accounts payable.
 
-## General ledger:  Running year-end close vs. undoing year-end close
+## General ledger:  How do I know that we're running year-end close as opposed to undoing year-end close?
 We have seen organizations run the year-end close but were actually performing an undo of the year-end close. If the year-end close is finishing really quickly or the year end close does not produce opening balances, validate the **Undo previous close** setting in the **Year-end close** (**General ledger > Period close > Year end close > Run fiscal close**). 
 
 [![Running year-end close versus undoing year-end close](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
@@ -71,8 +71,11 @@ The unnecessary dimension sets also impact the batch job **BudgetDimensionFocusI
 The year-end close template lets organizations select the financial dimension level to maintain when transferring profit and loss balances to retained earnings. The settings allow an organization to maintain the detailed financial dimensions (**Close all**) when moving the balances to retained earnings or choose to summarize the amounts to a single dimension value (**Close single**). This can be defined for each financial dimension. For more information on these settings, see the [Year-end close](year-end-close.md) topic.
 
 We recommend that you evaluate your organization's requirements and if possible, close as many dimensions as possible using the **Close single** year-end option to improve performance. By closing to a single dimension value (which can also be a blank value), the system calculates less detail when determining the balances for retained earnings account entries.
+
+### Upgrade to 10.0.13 or later
+If you've upgraded to version 10.0.13 or later since the last time your organization ran a year-end close, the year-end close process could take longer due to the [HashV2 feature implementation](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/verify-hash-function-changes-after-update-to-dynamics-365-finance-2020-release-wave-2). To speed up the year-end close process, we recommend rebuilding the balances of the dimension sets before running the year-end close. If you've already performed a rebuild of the dimension set balances after upgrading, it's not necessary to run the rebuild process again. 
  
-## General ledger – Period close – Year end close
+## General ledger – What does the Period close – Year-end close do?
  
 [![Period close, year-end close](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
