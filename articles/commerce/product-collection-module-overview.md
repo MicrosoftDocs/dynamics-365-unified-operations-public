@@ -5,7 +5,7 @@ title: Product collection modules
 description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -73,7 +73,8 @@ The following table describes various types of product collection modules in Dyn
 | Picks for you              | Artificial intelligence/Machine learning | This module uses machine learning to analyze the purchase patterns of the signed-in user and provide personalized recommendations that are based on those purchase patterns. For a guest user, this list will be collapsed. |
 
 ## Modules supported
-The Product collection module supports [Product quick view module](add-quick-view.md) which allows users to view and add items to bag from the product collection.
+
+The product collection module supports the [Product quick view module](add-quick-view.md), which allows users to view and add items to the cart from the product collection page.
 
 ## Add a product collection module to a category page
 
