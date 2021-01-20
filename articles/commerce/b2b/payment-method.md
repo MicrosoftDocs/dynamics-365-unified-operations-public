@@ -5,7 +5,7 @@ title: Configure the customer account payment method for B2B e-commerce sites
 description: This topic describes how to configure the customer account payment method for business-to-business (B2B) e-commerce sites.
 author: josaw1
 manager: AnnBe
-ms.date: 01/15/2021
+ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -38,14 +38,14 @@ Retailers can accept various types of payment in exchange for the products and s
 
 1. Add the customer account payment method in Commerce headquarters.
 2. Associate the customer account payment method with the e-commerce channel.
-3. Make sure that **Credit limit** is enabled for the customer at **Retail and Commerce \> Customers \> All customers** in Commerce headquarters. 
+3. Make sure that **Allow on account** is enabled for the customer at **Retail and Commerce \> Customers \> All customers \> Payment defaults** in Commerce headquarters. Also make sure that **Credit limit** parameters are set appropriately for the customer at **Retail and Commerce \> Customers \> All customers \> Credit and Collections** in Commerce headquarters. 
 
 ## Enable the customer account payment method in Commerce site builder 
 
 To enable the customer account payment method in Commerce site builder, follow these steps.
 
 1. Go to **Site Settings \> Extensions**.
-1. Set the **Enable customer account payments** property to **Enabled for B2B customers**. <!--The customer account payment method will also work if **Enabled for all customers** is selected.-->
+1. Set the **Enable customer account payments** property to **Enabled for B2B customers**. 
 1. Select **Save and Publish**.
 
 > [!NOTE]
@@ -67,3 +67,15 @@ To confirm that the customer account payment method has been enabled, follow the
 1. Sign in to the e-commerce site.
 1. Add a product to the cart.
 1. Go to the checkout page. You should see the new **Customer Account** payment method.
+
+## Additional resources
+
+[Set up a B2B e-commerce site](set-up-b2b-site.md)
+
+[Create org modeling hierarchies for B2B organizations](org-model.md)
+
+[Manage business partner users on B2B e-commerce sites](manage-b2b-users.md)
+
+[Set product quantity limits for B2B e-commerce sites](quantity-limits.md)
+
+[SDK and Module library updates](../e-commerce-extensibility/sdk-updates.md)
