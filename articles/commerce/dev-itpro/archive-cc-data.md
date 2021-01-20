@@ -53,19 +53,23 @@ The parameters for this job are based on the age of transaction in days. Meaning
 
 When using this job, it is important to understand that the data cannot be easily restored and transactions subject to linked refund should not be archived. For example, if a merchant's returns policy allows for transactions to be returned to the same card for refund within 2 years, the parameter for the job should be set to 730 days. In this example, if a transaction is returned after 730 days, the XML required to perform a linked refund will not be found, so the customer will need to be refunded via standalone refund to a credit card or to some other payment method such as credit memo or gift card. 
 
+## Document Management dependency
+
+When the job describe this document is run, aged credited card xml data is exported in a .zip file using [Document Management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). If document managemet is not set up in an environment, the credit card data archival job will not be able to run successfully. 
+
+The archival job will process all credit card payment data that meets the **Minimum transaction age in days** criteria. This means that if the job is enabled and according to the criteria there is a large number of records which need to be processed, the job may take several days to complete. Once the backlog of payments has been archived, the job will not take so long to process. 
+
+Docuref requirements TBD
+
 ## Data in scope for archival
 
 This job archives data in the `PaymentAuthorization`, `PaymentCaptureToken`, and `PaymentCardToken`fields of `RetailTransactionPaymentTrans` table. Transactions that have been archived will not have associated data in these fields, but may still be returned without linked refund. 
-
-## Docuref
-
-Docuref requirements TBD
 
 ## Batch job setup
 
 To access the job, navigate to **Retail and commerce** \> **Retail and Commerce IT** \> **Clean up** \> **Archive credit card transaction data**. The first dialog for the batch job will require the user to enter the age in days for credit card authorizations that will be subject to archival. This value should be set to the length of time that customer can have refunds linked to their original credit card authorization. If the age in days is set to 365 days, then a return for a transaction 366 days old may still be eligible for refund based on the merchant's policies, but data required to perform a linked refund will no to available, so any refund will need to be standalone. 
 
-In addition to the **Minimum transaction age in days**, this dialog includes details for batch processing and recurrence. 
+In addition to the **Minimum transaction age in days**, this dialog includes details for recurrence. Batch processing is enabled by default and cannot be changed. 
 
 ![Parameters](../media/Payments/batch1.png)
 
