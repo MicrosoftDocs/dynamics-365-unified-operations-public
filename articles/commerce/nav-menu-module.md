@@ -5,7 +5,7 @@ title: Navigation menu module
 description: This topic covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 10/01/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -51,7 +51,7 @@ The following illustration shows an example of a navigation menu for the Fabrika
 |---------------------------|-----------------------|-------------|
 | Source                  | **Retail**, **Manual authoring**, **Retail and manual authoring** | The **Retail** value allows the channel navigation hierarchy from Commerce headquarters to be displayed on the navigation menu. The **Manual authoring** value allows static menu items to be curated. The **Retail and manual authoring** value allows a mix of both. |
 | Show category images | **True** or **False**    | When enabled, this property displays category images on the navigation menu as defined in Commerce headquarters for each category. Added in Commerce release 10.0.14. |
-| Show promotions | **True** or **False**    | When enabled, this property allows promotions to be configured using image, link, text etc. Added in Commerce release 10.0.17. |
+| Show promotions | **True** or **False**    | When enabled, this property allows promotions to be configured using images, links, and text. Added in Commerce release 10.0.17. |
 | Add promotions | Text, Image, link | When Show promotions is enabled, you can add a Text, Image, Link as promotional content on the navigation menu |
 | Enable multi-level navigation menu | **True** or **False** | When this property is enabled, the navigation menu can show multiple levels of the navigation hierarchy. This feature is available in the Dynamics 365 Commerce 10.0.15 release. |
 | Number of levels | integer | This property defines the numbers of levels that should be shown if the **Enable multilevel navigation menu** property is set to **True**. |
