@@ -37,6 +37,21 @@ This article walks you through the process of provisioning a new production envi
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project. Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
 
+## Plan Human Resources environments
+Before you create your first Human Resources environment, you should carefully plan the environment needs for your project. A base subscription to Dynamics 365 Human Resources includes two environments, a Production environment, and a Sandbox environment. Depending on the complexity of your project, you may need to purchase additional Sandbox environments to support the various project activities. 
+
+Considerations for additional environments include, but are not limited to the following:
+- **Data migration:** You may need to consider an additional environment for data migration activities to allow your Sandbox environment to be used for testing purposes throughout the project. Having an additional environment allows data migrations activities to continue will testing and configuration activities are happening simultaneously in a different environment.
+- **Integration:** You may need to consider an additional environment to configure and test integrations. This could include native integrations like the Ceridian Day Force integration or the LinkedIn Talent Hub integration, or custom integrations you build to payroll, application tracking systems, or benefit systems and providers just as a few examples.
+- **Training:** You may need a separate environment that is configured with a set of training data in order to train your employees on use of the new system. 
+- **Multi-Phase Project:**: You may need an additional environment to support additional activities for configuration, data migration, testing activities, and so on in an additional phase of the project that is planned after the initial go-live of the project.
+
+ > [!IMPORTANT]
+ > We recommend that you use your Production environment throughout your project as your GOLD configuration environment. This is important because there is no mechanism to copy a Sandbox environment to a Production environment. Therefore, when you go-live, your GOLD environment is your Production environment and you will complete your cutover activities in this environment.
+ > We recommend that you use your Sandbox or another environment to perform a mock cutover prior to your go-live. This can be done by refreshing the Production environment where your GOLD configuration is at into your Sandbox environment. 
+ > We recommend that you keep a detailed cutover checklist that includes each of the data packages that must be used to migrate the final data into the Production environment during the go-live cutover.
+ > We also recommend that you use your Sandbox environment throughout your project as your TEST environment. If additional environments are needed, they can be purchased for an additional cost.
+
 ## Create an LCS project
 
 To use LCS to manage your Human Resources environments, you must first create an LCS project.
