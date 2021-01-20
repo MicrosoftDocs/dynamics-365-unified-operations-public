@@ -161,3 +161,6 @@ so that every request for issuing electronic invoices contains the
 environment where the Electronic invoicing add-on can determine which
 electronic invoicing feature must process the request.
 
+## Additional resources
+- [Configuration of electronic invoices in RCS](e-invoicing-configuration-in-rcs.md)
+- [Issuing of electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md)
