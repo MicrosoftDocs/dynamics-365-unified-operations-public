@@ -133,4 +133,12 @@ To onboard business partners and users in Commerce headquarters, follow these st
 
 ## Additional resources
 
+[Set up a B2B e-commerce site](set-up-b2b-site.md)
+
+[Create org modeling hierarchies for B2B organizations](org-model.md)
+
+[Configure the customer account payment method for B2B e-commerce sites](payment-method.md)
+
+[Set product quantity limits for B2B e-commerce sites](quantity-limits.md)
+
 [Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
