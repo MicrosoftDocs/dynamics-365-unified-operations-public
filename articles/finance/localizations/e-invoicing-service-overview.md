@@ -49,9 +49,9 @@ The Electronic invoicing add-on can help you achieve the following goals:
 
 To use the Electronic invoicing add-on, you must install it from your project in Microsoft Dynamics Lifecycle Services (LCS). Next, follow the setup procedure to turn on the integration with Finance or Supply Chain Management. For more information, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
-## Availability
+## Service availability
 
-Initially, the Electronic invoicing add-on is available to selected customers through a preview program. Later, the preview will be opened to a wider range of customers. Finally, the service will become generally available. Because functionality that addresses country/region-specific requirements might be limited at different phases of the release, you should always check the most up-to-date documentation that highlights the coverage and scope of supported country/region-specific solutions.
+Currently the Electronic invoicing add-on is available to customers through the preview program, and in the next phase, the service will become generally available. Because functionality that addresses country/region-specific requirements might be limited at different phases of the release, you should always check the most up-to-date documentation that highlights the coverage and scope of supported country/region-specific solutions.
 
 The Electronic invoicing add-on is deployed in the following Azure geographies:
 
@@ -108,10 +108,9 @@ The following illustration shows how data flows to and from the Electronic invoi
 ![Data flow for the Electronic invoicing add-on](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## Privacy notice
-Enabling and using Electronic invoicing may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
+Enabling and using Electronic invoicing add-on may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
 
 ## Additional resources
-
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
 - [Get started with the Electronic invoicing add-on for Brazil](e-invoicing-bra-get-started.md)
 - [Get started with the Electronic invoicing add-on for Mexico](e-invoicing-mex-get-started.md)
