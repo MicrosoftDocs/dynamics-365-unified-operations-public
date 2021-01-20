@@ -146,6 +146,7 @@ Describes the position or positions to fill for a Recruiting Request. Adding a p
 ### Properties
 
 | **Property**<br>Physical name<br>*Type* | Use | Description |
+| --- | --- | --- |
 | **Recruiting Request Position Entity ID**<br>mshr_hcmrecruitingrequestpositionentityid<br>*GUID* | Read-only<br>Required |	System-generated identifier of the recruiting request position record. |
 | **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the recruiting request. |
 | **Recruiting Request ID Value**<br>_mshr_fk_recruitingrequest_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmrecruitingrequestentityid of mshr_hcmrecruitingrequestentity entity | System-generated identifier of the recruiting request to which the position is assigned. |
@@ -166,320 +167,209 @@ Describes the position or positions to fill for a Recruiting Request. Adding a p
 | **Data Area ID Value**<br>_mshr_dataareaid_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: cdm_companyid of cdm_company entity | System-generated GUID value identifying the legal entity (company) for the recruiting request position. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Concatenation of Recruiting Request value and Position ID as another method to uniquely identify the record. |
 
+## Entity: Recruiting Request Skill
 
-
-
-Entity: Recruiting Request Skill
 Physical name: mshr_hcmrecruitingrequestskillentity
-Description
+
+### Description
+
 Describes skill requirements for a RecruitingRequest.
-JSON representation
-        {
-            "mshr_recruitingrequestid": "String",
-            "mshr_skillid": "String",
-            "mshr_skilldescription": "String",
-            "mshr_ratinglevelid": "String",
-            "mshr_ratingmodelid": "String",
-            "mshr_ratingleveldescription": "String",
-            "mshr_dataareaid": "String",
-            "_mshr_dataareaid_id_value": "Guid",
-            "mshr_primaryfield": "String",
-            "_mshr_fk_recruitingrequest_id_value": "Guid",
-            "_mshr_fk_skill_id_value": "Guid",
-            "_mshr_fk_ratinglevel_id_value": "Guid",
-            "_mshr_fk_ratingmodel_id_value": "Guid",
-            "mshr_hcmrecruitingrequestskillentityid": "Guid"
-        }
 
-Properties
-Property, Physical Name, Type	Use	Description
-Recruiting Request Skill Entity ID
-mshr_hcmrecruitingrequestskillentityid
-GUID	Read-only
-Required	System-generated unique identifier for the Recruiting Request Skill record.
-Recruiting Request ID
-mshr_recruitingrequestid
-String	Write-once
-Required
-	The user-readable unique identifier of the associated recruiting request.
-Recruiting Request ID Value
-_mshr_fk_recruitingrequest_id_value
-GUID	Read-only
-Required
-FK: mshr_hcmrecruitingrequestentityid of mshr_hcmrecruitingrequestentity entity	System-generated unique identifier of the associated recruiting request.
-Skill ID
-mshr_skillid
-String	Write-once
-Required
-	The user-readable unique identifier of the required skill.
-Skill ID Value
-_mshr_fk_skill_id_value
-GUID	Read-only
-Required
-FK: mshr_hcmskillentityid of mshr_hcmskillentity entity	System-generated unique identifier of the required skill.
-Rating Level ID
-mshr_ratinglevelid
-String	Write-once
-Optional	The required skill level value selected for the job, based on the rating model assigned to the skill.
-Rating Level ID Value
-_mshr_fk_ratinglevel_id_value
-GUID	Read-only
-Optional
-FK: mshr_hcmratinglevelentityid of mshr_hcmratinglevelentity entity	System-generated unique identifier for the level.
-Skill Description
-mshr_skilldescription
-String	Read-only
-Required	The skill description
-Rating Level Description
-mshr_ratingleveldescription
-String	Read-only
-Optional	The description of the selected skill level.
-Data Area ID
-mshr_dataareaid
-String	Read/write
-Optional
-	Specifies the legal entity (company).
-Data Area ID Value
-_mshr_dataareaid_id_value
-GUID	Read-only
-Optional
-FK: cdm_companyid of cdm_company entity	System-generated GUID value identifying the legal entity (company).
-Primary Field
-mshr_primaryfield
-String	Read-only
-Required
-	Concatenation of Recruiting Request value and Skill ID as another method to uniquely identify the record.
-Rating Model ID
-mshr_ratingmodelid
-String	Read-write
-Required
-	The rating model used to rate the skill.
-Rating Model ID Value
-_mshr_fk_hcmratingmodel_id_value
-GUID	Read-only
-Required
-FK: mshr_hcmratingmodelentityid of mshr_hcmratingmodelentity entity	System-generated unique identifier of the rating model used to rate the skill.
+### JSON representation
+
+```json
+{
+    "mshr_recruitingrequestid": "String",
+    "mshr_skillid": "String",
+    "mshr_skilldescription": "String",
+    "mshr_ratinglevelid": "String",
+    "mshr_ratingmodelid": "String",
+    "mshr_ratingleveldescription": "String",
+    "mshr_dataareaid": "String",
+    "_mshr_dataareaid_id_value": "Guid",
+    "mshr_primaryfield": "String",
+    "_mshr_fk_recruitingrequest_id_value": "Guid",
+    "_mshr_fk_skill_id_value": "Guid",
+    "_mshr_fk_ratinglevel_id_value": "Guid",
+    "_mshr_fk_ratingmodel_id_value": "Guid",
+    "mshr_hcmrecruitingrequestskillentityid": "Guid"
+}
+```
+
+### Properties
+
+| **Property**<br>Physical name<br>*Type* | Use | Description |
+| --- | --- | --- |
+| **Recruiting Request Skill Entity ID**<br>mshr_hcmrecruitingrequestskillentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the **Recruiting Request Skill** record. |
+| **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the associated recruiting request. |
+| **Recruiting Request ID Value**<br>_mshr_fk_recruitingrequest_id_value<br>*GUID* | Read-only<br>Required<br> Foreign key: mshr_hcmrecruitingrequestentityid of mshr_hcmrecruitingrequestentity entity | System-generated unique identifier of the associated recruiting request. |
+| **Skill ID**<br>mshr_skillid<br>*String*<br> | Write-once<br>Required | The user-readable unique identifier of the required skill. |
+| **Skill ID Value**<br>_mshr_fk_skill_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmskillentityid of mshr_hcmskillentity entity | System-generated unique identifier of the required skill. |
+| **Rating Level ID**<br>mshr_ratinglevelid<br>*String* | Write-once<br>Optional | The required skill level value selected for the job, based on the rating model assigned to the skill. |
+| **Rating Level ID Value**<br>_mshr_fk_ratinglevel_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmratinglevelentityid of mshr_hcmratinglevelentity entity | System-generated unique identifier for the level. |
+| **Skill Description**<br>mshr_skilldescription<br>*String* | Read-only<br>Required | The skill description. |
+| **Rating Level Description**<br>mshr_ratingleveldescription<br>*String* | Read-only<br>Optional | The description of the selected skill level. |
+| **Data Area ID**<br>mshr_dataareaid<br>*String* | Read/write<br>Optional | Specifies the legal entity (company). |
+| **Data Area ID Value**<br>_mshr_dataareaid_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: cdm_companyid of cdm_company entity | System-generated GUID value identifying the legal entity (company). |
+| **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Concatenation of Recruiting Request value and Skill ID as another method to uniquely identify the record. |
+| **Rating Model ID**<br>mshr_ratingmodelid<br>*String* | Read-write<br>Required | The rating model used to rate the skill. |
+| **Rating Model ID Value**<br>_mshr_fk_hcmratingmodel_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmratingmodelentityid of mshr_hcmratingmodelentity entity | System-generated unique identifier of the rating model used to rate the skill. |
  
-Entity: Recruiting Request Education
+## Entity: Recruiting Request Education
+
 Physical name: mshr_hcmrecruitingrequesteducationentity
-Description
+
+### Description
+
 Describes educational requirements for a RecruitingRequest.
-JSON representation
-        {
-            "mshr_recruitingrequestid": "String",
-            "mshr_educationdisciplineid": "String",
-            "mshr_educationdisciplinedescription": "String",
-            "mshr_educationlevelid": "String",
-            "mshr_educationleveldescription": "String",
-            "mshr_dataareaid": "String",
-            "_mshr_dataareaid_id_value": "Guid",
-            "mshr_primaryfield": "String",
-            "_mshr_fk_recruitingrequest_id_value": "Guid",
-            "_mshr_fk_educationdiscipline_id_value": "Guid",
-            "_mshr_fk_educationlevel_id_value": "Guid",
-            "mshr_hcmrecruitingrequesteducationentityid": "Guid"
-        }
 
-Properties
-Property, Physical Name, Type	Use	Description
-Recruiting Request Education Entity ID
-mshr_hcmrecruitingrequesteducationentityid
-GUID	Read-only
-Required
-	System-generated unique identifier for the Recruiting Request Education record.
-Recruiting Request ID
-mshr_recruitingrequestid
-String	Write-once
-Required	The user-readable unique identifier of the related recruiting request.
-Recruiting Request ID Value
-_mshr_fk_recruitingrequest_id_value
-GUID 	Read-only
-Required
-FK: mshr_hcmrecruitingrequestentityid of mshr_hcmrecruitingrequestentity	System-generated unique identifier of the related recruiting request.
-Education Level ID
-mshr_educationlevelid
-String	Write-once
-Required
-	The level of education required.
-Educational Level ID Value
-_mshr_fk_educationlevel_id_value
-GUID	Read-only
-Required
-FK: mshr_hcmeducationlevelentityid of mshr_hcmeducationlevelentity	System-generated unique identifier of the level of education required.
-Education Level Description
-mshr_educationleveldescription
-String	Read-only
-Required
-	The description of the level required for the skill.
-Education Discipline ID
-mshr_educationdisciplinedescription
-String	Write-once
-Required	The area of educational discipline.
-Education Discipline ID Value
-_mshr_fk_educationdiscipline_id_value
-GUID	Read-only
-Required
-FK: mshr_hcmeducationdisciplineentityid of mshr_hcmeducationdisciplineentity	System-generated unique identifier of the area of educational discipline.
-Education Discipline Description
-mshr_educationdisciplinedescription
-String	Read-only
-Required	The description of the area of educational discipline.
-Data Area ID
-mshr_dataareaid
-String	Read/write
-Optional
-	Specifies the legal entity (company).
-Data Area ID Value
-_mshr_dataareaid_id_value
-GUID	Read-only
-Optional
-FK: cdm_companyid of cdm_company entity	System-generated GUID value identifying the legal entity (company).
-Primary Field
-mshr_primaryfield
-String	Read-only
-Required
-	Concatenation of Recruiting Request value, Education Level ID, and Education Discipline ID as another method to uniquely identify the record.
+### JSON representation
 
-Entity: Recruiting Request Location
+```json
+{
+    "mshr_recruitingrequestid": "String",
+    "mshr_educationdisciplineid": "String",
+    "mshr_educationdisciplinedescription": "String",
+    "mshr_educationlevelid": "String",
+    "mshr_educationleveldescription": "String",
+    "mshr_dataareaid": "String",
+    "_mshr_dataareaid_id_value": "Guid",
+    "mshr_primaryfield": "String",
+    "_mshr_fk_recruitingrequest_id_value": "Guid",
+    "_mshr_fk_educationdiscipline_id_value": "Guid",
+    "_mshr_fk_educationlevel_id_value": "Guid",
+    "mshr_hcmrecruitingrequesteducationentityid": "Guid"
+}
+```
+
+### Properties
+
+| **Property**<br>Physical name<br>*Type* | Use | Description |
+| --- | --- | --- |
+| **Recruiting Request Education Entity ID**<br>mshr_hcmrecruitingrequesteducationentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the Recruiting Request Education record. |
+| **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the related recruiting request. |
+| **Recruiting Request ID Value**<br>_mshr_fk_recruitingrequest_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmrecruitingrequestentityid of mshr_hcmrecruitingrequestentity | System-generated unique identifier of the related recruiting request. |
+| **Education Level ID**<br>mshr_educationlevelid<br>*String* | Write-once<br>Required | The level of education required. |
+| **Educational Level ID Value**<br>_mshr_fk_educationlevel_id_value<br>*GUID* | Read-only<br>Required | Foreign key: mshr_hcmeducationlevelentityid of mshr_hcmeducationlevelentity | System-generated unique identifier of the level of education required. |
+| **Education Level Description**<br>mshr_educationleveldescription<br>*String* | Read-only<br>Required | The description of the level required for the skill. |
+| **Education Discipline ID**<br>mshr_educationdisciplinedescription<br>*String* | Write-once<br>Required | The area of educational discipline. |
+| **Education Discipline ID Value**<br>_mshr_fk_educationdiscipline_id_value<br>*GUID* | Read-only<br>Required<br> Foreign key: mshr_hcmeducationdisciplineentityid of mshr_hcmeducationdisciplineentity | System-generated unique identifier of the area of educational discipline. |
+| **Education Discipline Description**<br>mshr_educationdisciplinedescription<br>String	| Read-only<br>Required	| The description of the area of educational discipline. |
+| **Data Area ID**<br>mshr_dataareaid<br>*String* | Read/write<br>Optional | Specifies the legal entity (company).|
+| **Data Area ID Value**<br>_mshr_dataareaid_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: cdm_companyid of cdm_company entity | System-generated GUID value identifying the legal entity (company). |
+| **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Concatenation of Recruiting Request value, Education Level ID, and Education Discipline ID as another method to uniquely identify the record. |
+
+## Entity:Recruiting Request Location
+
 Physical name: mshr_hcmrecruitingrequestlocationentity
-Description
+
+### Description
+
 The list of locations defined as locations where recruited employees will work upon hiring. These are locations created across legal entities.
-JSON representation
-        {
-            "mshr_recruitingrequestlocationid": "String",
-            "mshr_locationid": "String",
-            "mshr_description": "String",
-            "mshr_countryregionid": "String",
-            "mshr_zipcode": "String",
-            "mshr_street": "String",
-            "mshr_city": "String",
-            "mshr_state": "String",
-            "mshr_county": "String",
-            "mshr_telephone": "String",
-            "mshr_email": "String",
-            "mshr_internetaddress": "String",
-            "_mshr_dataareaid_id_value": "Guid",
-            "mshr_dataareaid": "String",
-            "_mshr_fk_countryregion_id_value": "Guid",
-            "mshr_hcmrecruitingrequestlocationentityid": "Guid"
-        }
 
+### JSON representation
 
+```
+{
+    "mshr_recruitingrequestlocationid": "String",
+    "mshr_locationid": "String",
+    "mshr_description": "String",
+    "mshr_countryregionid": "String",
+    "mshr_zipcode": "String",
+    "mshr_street": "String",
+    "mshr_city": "String",
+    "mshr_state": "String",
+    "mshr_county": "String",
+    "mshr_telephone": "String",
+    "mshr_email": "String",
+    "mshr_internetaddress": "String",
+    "_mshr_dataareaid_id_value": "Guid",
+    "mshr_dataareaid": "String",
+    "_mshr_fk_countryregion_id_value": "Guid",
+    "mshr_hcmrecruitingrequestlocationentityid": "Guid"
+}
+```
 
-Properties
-Property, Physical Name, Type	Use	Description
-Location ID
-mshr_locationid
-String	Write-once
-Required	The system-generated, user-readable identifier for the recruiting location.
-Recruiting Request Location
-mshr_recruitingrequestlocationid
-String	Write-once
-Required	User-defined unique identifier for the recruiting location.
-Recruiting Request Location Entity ID
-mshr_hcmrecruitingrequestlocationentityid
-GUID	Read-only
-Required	System-generated unique identifier for the recruiting request location record.
-Description
-mshr_description
-String	Read/write
-Required	Description of the location.
-Country/Region ID
-mshr_countryregionid
-String	Read-only
-Optional	Specifies the country or region where the candidate has citizenship.
-Country/Region ID Value
-_mshr_fk_countriregion_id_value
-GUID	Read-only
-Optional
-FK: mshr_logisticaddresscountryregionentityid of mshr_logisticsaddresscountryregionentity	System-generated unique identifier of the country/region of the address.
-ZipCode
-mshr_zipcode
-String	Read-only
-Optional	Zip/postal code
-Street
-mshr_street
-String	Read-only
-Optional	Street address
-City
-mshr_city
-String	Read-only
-Optional	City
-State
-mshr_state
-String	Read-only
-Optional	State or province
-County
-mshr_county
-String	Read-only
-Optional	County
-Telephone
-mshr_telephone
-String	Read/write
-Optional	Telephone number for the location
-Email
-mshr_email
-String	Read/write
-Optional	Email address
-InternetAddress
-mshr_internetaddress
-String	Read/write
-Optional	URL for the location website.
-Data Area ID
-mshr_dataareaid
-String	Read/write
-Optional
-	Specifies the legal entity (company).
-Data Area ID Value
-_mshr_dataareaid_id_value
-GUID	Read-only
-Optional
-FK: cdm_companyid of cdm_company entity	System-generated GUID value identifying the legal entity (company).
+### Properties
 
-Option Set: Recruiting Request Status
+| **Property**<br>Physical name<br>*Type* | Use | Description |
+| --- | --- | --- |
+| **Location ID**<br>mshr_locationid<br>*String* | Write-once<br>Required | The system-generated, user-readable identifier for the recruiting location. |
+| **Recruiting Request Location**<br>mshr_recruitingrequestlocationid<br>*String* | Write-once<br>Required | User-defined unique identifier for the recruiting location. |
+| **Recruiting Request Location Entity ID**<br>mshr_hcmrecruitingrequestlocationentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the recruiting request location record. |
+| **Description**<br>mshr_description<br>*String* | Read/write<br>Required | Description of the location. |
+| **Country/Region ID**<br>mshr_countryregionid<br>*String* | Read-only<br>Optional | Specifies the country or region where the candidate has citizenship. |
+| **Country/Region ID Value**<br>_mshr_fk_countriregion_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_logisticaddresscountryregionentityid of mshr_logisticsaddresscountryregionentity | System-generated unique identifier of the country/region of the address. |
+| **ZipCode**<br>mshr_zipcode<br>*String* | Read-only<br>Optional | Zip/postal code. |
+| **Street**<br>mshr_street<br>*String* | Read-only<br>Optional | Street address. |
+| **City**<br>mshr_city<br>*String* | Read-only<br>Optional | City. |
+| **State**<br>mshr_state<br>*String* | Read-only<br>Optional | State or province. |
+| **County**<br>mshr_county<br>*String* | Read-only<br>Optional | County. |
+| **Telephone**<br>mshr_telephone<br>*String* | Read/write<br>Optional | Telephone number for the location. |
+| **Email**<br>mshr_email<br>*String* | Read/write<br>Optional | Email address. |
+| **InternetAddress**<br>mshr_internetaddress<br>*String* | Read/write<br>Optional | URL for the location website. |
+| **Data Area ID**<br>mshr_dataareaid<br>*String* | Read/write<br>Optional | Specifies the legal entity (company). |
+| **Data Area ID Value**<br>_mshr_dataareaid_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: cdm_companyid of cdm_company entity | System-generated GUID value identifying the legal entity (company). |
+
+## Option set: Recruiting Request Status
+
 Physical name: mshr_hcmrecruitingrequeststatus
+
 This enumeration provides the option set for the status values of a RecruitingRequest.
-Value	Label	Description
-200000000	Draft	The request is in draft and is not ready for active recruiting.
-200000001	In Review	The request has been submitted and is being routed for approval by workflow. Only available when workflow is enabled.
-200000002	Pending	The request is pending workflow action. Only available when workflow is enabled.
-200000003	Canceled	The request has been canceled. Only available when workflow is enabled.
-200000004	Denied	The request has been denied. Only available when workflow is enabled.
-200000005	Active	Any workflow is completed and approved, and the request is ready for active recruiting. 
-200000006	Closed	The recruiting request is closed.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | Draft | The request is in draft and is not ready for active recruiting. |
+| 200000001 | In Review | The request has been submitted and is being routed for approval by workflow. Only available when workflow is enabled. |
+| 200000002 | Pending | The request is pending workflow action. Only available when workflow is enabled. |
+| 200000003 | Canceled | The request has been canceled. Only available when workflow is enabled. |
+| 200000004 | Denied | The request has been denied. Only available when workflow is enabled. |
+| 200000005 | Active | Any workflow is completed and approved, and the request is ready for active recruiting. |
+| 200000006 | Closed | The recruiting request is closed. |
 
 
-Option Set: Recruiting Request Position Status
+## Option set: Recruiting Request Position Status
+
 Physical name: mshr_hcmrecruitingrequestpositionstatus
+
 This enumeration provides the option set for the status values of each position a recruiting request in the RecruitingRequestPosition entity.
-Value	Label	Description
-200000000	Open	The position in the recruiting request is open for recruiting. This does not indicate that there is no currently active position assignment for the position. There may be an employee in the position at the time of recruiting. It indicates only that the position is available for recruiting in the context of the recruiting request.
-200000001	Filled	A worker has been selected for assignment to the position.
-200000002	Canceled	The request to recruit for this position has been canceled.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | Open | The position in the recruiting request is open for recruiting. This does not indicate that there is no currently active position assignment for the position. There may be an employee in the position at the time of recruiting. It indicates only that the position is available for recruiting in the context of the recruiting request. |
+| 200000001 | Filled | A worker has been selected for assignment to the position. |
+| 200000002 | Canceled | The request to recruit for this position has been canceled. |
 
 
-Option Set: Job Exempt Status
+## Option set: Job Exempt Status
+
 Physical name: cdm_jobexemptstatus
+
 This enumeration specifies the option set for FLSA job exempt status values. This is provided in the existing cdm_jobexemptstatus option set.
-Value	Label	Description
-200000000	Exempt	The job has an exempt status based on FLSA guidelines.
-200000001	NonExempt	The job has a non-exempt status based on FLSA guidelines.
-200000002	Does Not Apply	FLSA status guidelines do not apply to the job.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | Exempt | The job has an exempt status based on FLSA guidelines. |
+| 200000001 | NonExempt | The job has a non-exempt status based on FLSA guidelines. |
+| 200000002 | Does Not Apply | FLSA status guidelines do not apply to the job. |
 
  
-Option Set: Regulatory Job Category
-Physical name: mshr_hcmregulatoryjobcategory
-This enumeration specifies the option set for regulatory job category option set values. This is provided in the existing mshr_hcmregulatoryjobcategory option set.
-Value	Label	Description
-200000000	None	None
-200000001	Executive	Executive/Senior level officials and managers
-200000002	Manager	First/Mid level officials and managers
-200000003	Professional	Professionals
-200000004	Technician	Technicians
-200000005	SalesWorker	Sales workers
-200000006	Administrative	Administrative support workers
-200000007	CraftWorker	Craft workers
-200000008	Operative	Operatives
-200000009	Laborer	Laborers/Helpers
-200000010	ServiceWorker	Service workers
+## Option set: Regulatory Job Category
 
+Physical name: mshr_hcmregulatoryjobcategory
+
+This enumeration specifies the option set for regulatory job category option set values. This is provided in the existing mshr_hcmregulatoryjobcategory option set.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | None | None. |
+| 200000001 | Executive | Executive/Senior level officials and managers. |
+| 200000002 | Manager | First/Mid level officials and managers. |
+| 200000003 | Professional | Professionals. |
+| 200000004 | Technician | Technicians. |
+| 200000005 | SalesWorker | Sales workers. |
+| 200000006 | Administrative | Administrative support workers. |
+| 200000007 | CraftWorker | Craft workers. |
+| 200000008 | Operative | Operatives. |
+| 200000009 | Laborer | Laborers/Helpers. |
+| 200000010 | ServiceWorker | Service workers. |
