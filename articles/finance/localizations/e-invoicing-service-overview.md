@@ -111,8 +111,6 @@ The following illustration shows how data flows to and from the Electronic invoi
 Enabling and using Electronic invoicing add-on may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
 
 ## Additional resources
-- [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
-- [Get started with the Electronic invoicing add-on for Brazil](e-invoicing-bra-get-started.md)
-- [Get started with the Electronic invoicing add-on for Mexico](e-invoicing-mex-get-started.md)
-- [Get started with the Electronic invoicing add-on for Italy](e-invoicing-ita-get-started.md)
-- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
+- [Service administration](e-invoicing-service-administration.md)
+- [Configuration of electronic invoices in RCS](e-invoicing-configuration-in-rcs.md)
+- [Issuing of electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md)
