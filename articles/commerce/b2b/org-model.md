@@ -5,7 +5,7 @@ title: Create org modeling hierarchies for B2B organizations
 description: This topic describes how to create organizational modeling hierarchies for business-to-business (B2B) organizations.
 author: josaw1
 manager: AnnBe
-ms.date: 01/15/2021
+ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -55,3 +55,13 @@ When the administrator adds more users are to the business partner organization 
 > In most cases, the corresponding property values of all customer records in a hierarchy should match. For example, because all business partner users should get similar prices for products, their price group and associated configurations should match. However, the system doesn't enforce this consistency. Therefore, the relevant Commerce headquarters users are responsible for ensuring that the property values and configurations match for all customers in a given hierarchy.
 
 Commerce headquarters users can look at the property values for all customer records in the hierarchy in a side-by-side view. Select the relevant customer record properties by selecting the tab names on the drop-down menu. Users can directly view and edit the property values from this view. Alternatively, if you want to apply all the values from the administrator customer record to all the user customer records, select **Override** in the customer hierarchy details.
+
+## Additional resources
+
+[Set up a B2B e-commerce site](set-up-b2b-site.md)
+
+[Manage business partner users on B2B e-commerce sites](manage-b2b-users.md)
+
+[Configure the customer account payment method for B2B e-commerce sites](payment-method.md)
+
+[Set product quantity limits for B2B e-commerce sites](quantity-limits.md)
