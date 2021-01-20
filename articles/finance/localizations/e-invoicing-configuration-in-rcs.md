@@ -48,7 +48,7 @@ preview:
 |-------------------|------------------------------------------|
 | Egypt             | Sales and Project invoices               |
 
-#### Preview features
+#### Preview features:
 
 | Country/Region    | Business document                        |
 |-------------------|------------------------------------------|
@@ -56,6 +56,7 @@ preview:
 | Belgium           | Sales and Project invoices               |
 | Brazil            | Fiscal document model 55 (NF-e)          |
 |                   | Service fiscal document ABRASF (NFS-e)   |
+|                   | Service fiscal document São Paulo city   |
 | Denmark           | Sales and Project invoices               |
 | Estonia           | Sales and Project invoices               |
 | Finland           | Sales and Project invoices               |
