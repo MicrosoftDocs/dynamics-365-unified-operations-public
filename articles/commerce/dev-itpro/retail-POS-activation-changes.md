@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Application update 3
 
 This topic explains how to configure Microsoft Dynamics 365 Commerce Headquarters so that device activation works correctly when a customized Modern POS application is used. It describes the steps that are required in order to obtain the customized reply address and enter that value in Headquarters.
 
-Modern POS is a client-side component for Microsoft Dynamics 365 Commerce. To use the POS, you must perform device activation. Device activation uses Microsoft Azure Active Directory (Azure AD) to authenticate users. Enhanced functionality in this area has modified the device activation flow to take better advantage of the Web Account Manager service. As part of this enhancement, there is now enhanced security for the authentication approval process. This enhanced security requires additional configuration in Headquarters when the POS is customized, because a specific, unique value is now required for the callback URI. (The callback URI is also known as the reply URI.)
+Modern POS is a client-side component for Microsoft Dynamics 365 Commerce. To use the POS, you must perform device activation. Device activation uses Microsoft Azure Active Directory (Azure AD) to authenticate users. Enhanced functionality in this area has modified the device activation flow to take better advantage of the Web Account Manager service. As part of this enhancement, there is now enhanced security for the authentication approval process. This enhanced security requires additional configuration in Headquarters when the POS is customized, because a specific, unique value is now required for the callback URI. (The callback URI is also known as the redirect URI.)
 
 By default, Modern POS is already registered for this callback URI. However, when customized, the callback URI is changed. Therefore, it must be correctly configured so that it works again. This topic describes the steps that you must follow to complete this configuration. If this configuration isn't completed, you receive an error message when you try to perform device activation in the customized POS application. This error message resembles the following example:
 
@@ -40,7 +40,7 @@ By default, Modern POS is already registered for this callback URI. However, whe
 
 > [!NOTE]
 > - We recommend that you try to use the customized Modern POS application one time before you configure Dynamics 365 headquarters. In this way, you can see what the error message looks like and more easily obtain the customized reply address.
-> - The error specifies the reply address that is used for the application ID that corresponds to the POS application.
+> - The error specifies the redirect address that is used for the application ID that corresponds to the POS application.
 
 ## Setup
 The following steps are required so that device activation works correctly when the customized Modern POS application is used. You will create two Azure AD applications: one for Modern POS and one for Commerce Scale Unit. The Commerce Scale Unit Azure AD application is required because the POS uses resources through Commerce Scale Unit. Therefore, both Azure AD applications are used when the POS is used. In this scenario, Commerce Scale Unit serves as the endpoint for protected resources that the POS requests.
@@ -48,19 +48,16 @@ The following steps are required so that device activation works correctly when 
 ### Create the Commerce Scale Unit Azure AD application
 1. In a web browser, go to <https://portal.azure.com/>.
 2. Sign in by using Azure AD credentials that have enough permission to create Azure AD applications.
-3. Select **Azure Active Directory** \> **App registrations**.
-4. Create the Commerce Scale Unit Azure AD application by selecting **New application registration** and entering the following values:
+3. Select **Azure Active Directory** from the list of Azure services, then select **App registrations** from the left-hand menu that appears.
+4. Create the Commerce Scale Unit Azure AD application by selecting **New registration** and entering the following values:
 
-    - **Name:** Enter **Customized Commerce Scale Unit**. (You can enter any other unique value, but be sure to make a note of it.)
-    - **Application type:** Select **Web app / API**.
-    - **Sign-on URL:** Enter any unique URL that doesn't point to a real, physical location. For example, enter `https://MyNotRealURL`.
+    - **Name:** Enter **Customized Commerce Scale Unit**. (You can enter any other unique value, but be sure to make a note of the name entered.)
+    - **Supported account types:** Select the value **Accounts in this organization directory only [...]** unless this application registration will be used across multiple tenants (Which would require the next value **Accounts in any organizational directory [...]**).
+    - **Redirect URI:** This value can be left blank for now.
 
-5. Press the Tab key so that Azure can validate the value in the **Sign-on URL** field. Then select **Create**, and wait until the operation is successfully completed. (If an error occurs, address it, and then try again.)
-
-    A tile appears that shows the details of the new Azure AD application.
-
-6. Select **Settings** at the top of the tile to open the **Settings** tile for the application. Then select **Properties**.
-7. On the **Properties** tile, copy the value in the **App ID URI** field. You will paste this value into the DLLHost.exe.config file for POS in the next section.
+5. Select **Register** at the bottom of the page. The page shall change to the newly created Azure AD application.
+6. Select **Application ID URI** where it has a link stating **Add an Application ID URI**.
+7. On the tile that opens, select the **Application ID URI** value that states **Set**. Copy the value shown before selecting the **Save** button. You will paste this value (Not including the initial portion that shows **api://** into the DLLHost.exe.config file for POS in the next section.
 
 > [!NOTE]
 > Don't close the web browser window, because you will use it again later in this topic.
