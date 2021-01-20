@@ -49,6 +49,7 @@ When you specify a coverage time fence for a coverage group, the setting applies
 To specify a coverage time fence for a coverage group, follow these steps.
 
 1. Go to **Master planning \> Setup \> Coverage \> Coverage groups**.
+1. Select an existing coverage group in the list, or create a new coverage group.
 1. On the **General** FastTab, set the **Coverage time fence (days)** field to the number of days that you want to use as the coverage time fence for the coverage group.
 
 ## Set a coverage time fence for a specific item
