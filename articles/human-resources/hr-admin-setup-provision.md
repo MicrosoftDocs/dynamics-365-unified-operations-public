@@ -47,10 +47,10 @@ Considerations for additional environments include, but are not limited to the f
 - **Multi-Phase Project:**: You may need an additional environment to support additional activities for configuration, data migration, testing activities, and so on in an additional phase of the project that is planned after the initial go-live of the project.
 
  > [!IMPORTANT]
- > We recommend that you use your Production environment throughout your project as your GOLD configuration environment. This is important because there is no mechanism to copy a Sandbox environment to a Production environment. Therefore, when you go-live, your GOLD environment is your Production environment and you will complete your cutover activities in this environment.
- > We recommend that you use your Sandbox or another environment to perform a mock cutover prior to your go-live. This can be done by refreshing the Production environment where your GOLD configuration is at into your Sandbox environment. 
- > We recommend that you keep a detailed cutover checklist that includes each of the data packages that must be used to migrate the final data into the Production environment during the go-live cutover.
- > We also recommend that you use your Sandbox environment throughout your project as your TEST environment. If additional environments are needed, they can be purchased for an additional cost.
+ > We recommend that you use your Production environment throughout your project as your GOLD configuration environment. This is important because there is no mechanism to copy a Sandbox environment to a Production environment. Therefore, when you go-live, your GOLD environment is your Production environment and you will complete your cutover activities in this environment.</br></br>
+ > We recommend that you use your Sandbox or another environment to perform a mock cutover prior to your go-live. This can be done by refreshing the Production environment where your GOLD configuration is at into your Sandbox environment. </br></br>
+ > We recommend that you keep a detailed cutover checklist that includes each of the data packages that must be used to migrate the final data into the Production environment during the go-live cutover.</br></br>
+ > We also recommend that you use your Sandbox environment throughout your project as your TEST environment. If additional environments are needed, they can be purchased for an additional cost.</br></br>
 
 ## Create an LCS project
 
