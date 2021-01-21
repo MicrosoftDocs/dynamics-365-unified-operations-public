@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up costing parameter values
+title: Costing parameter values setup
 description: When you set up the Landed cost module, you are able to establish several sets of common values that will be available when you select certain types of costing parameter values elsewhere in the application. This topic describes how to set up each of these sets of values.
 author: RichardLuan
 manager: tfehr
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
-# Set up costing parameter values
+# Costing parameter values setup
 
 When you set up the Landed cost module, you are able to establish several sets of common values (and related settings per value) that will be available when you select certain types of costing parameter values elsewhere in the application. This topic describes how to set up each of these sets of values.
 
@@ -63,62 +63,77 @@ To set up your cost type codes, go to **Landed cost \> Costing setup \> Cost Typ
 | **Charge account** | Select the account used to capture the inbound transportation costs that have been invoiced by a supplier. The amount is posted as a debit. The offset account is the stock variation account. This posting will only be used when **Post to charge account in ledger** is set to *Yes* on the **Accounts payable parameters** page. |
 | **Variance account** | This field is the account which will be used to offset the charge accruals when posting the purchase invoice. This is only used when **Use charge account** is set to *Yes* on the **Accounts payable parameters** page. <!-- KFM: I can't find this setting on the accounts payable parameters page. What do we mean here? --> |
 
-<!-- KFM: Continue here --> 
-
 ## Vendor cost type groups
 
-Vendor cost type groups help determine how &#39;auto cost&#39; charges are found and applied to a voyage. Vendors with similar import costs are linked together. E.g. all vendors from emerging markets pay the same percentage duty for the same type of product purchased from an established market.
+Vendor cost type groups help determine how *auto cost* charges are found and applied to a voyage. Vendors with similar import costs are linked together. For example, all vendors from emerging markets pay the same percentage duty for the same type of product purchased from an established market.
 
-The vendor cost type group is maintained by navigating to **Landed cost \> Costing setup \> Vendor Cost type groups**.
+You can maintain vendor cost type groups by going to **Landed cost \> Costing setup \> Vendor Cost type groups**. This page provides a grid that lists existing vendor cost type groups. Its Action Pane provides commands for adding, removing, and editing rows in the grid. The following table describes the settings available for each row.
 
-| **Field Name** | **Field Description** |
+| Setting | Description |
 | --- | --- |
-| **Vendor cost type groups** | The unique identification of the vendor cost type group, such as emerging markets. |
-| **Description** | The description of the vendor cost type group. This description can provide details as to the level or type of charge associated to the vendor group. |
+| **Vendor cost type groups** | Enter a unique name for the vendor cost type group (such as *Emerging markets*). |
+| **Description** | Enter a description of the vendor cost type group. This description can provide details as to the level or type of charge associated to the vendor group. |
 
 ## Item cost type groups
 
-Item cost type groups assist to determine how &#39;auto cost&#39; charges are found and applied to a voyage. Similar items are linked together. E.g. all items with a duty rate of 5% will belong to a certain cost type group.
+Item cost type groups help determine how *auto cost* charges are found and applied to a voyage. Similar items are linked together. For example, all items with a duty rate of 5% will belong to a certain cost type group.
 
-The vendor cost type group is maintained by navigating to **Landed cost \> Costing setup \> Item Cost type groups**.
+You can maintain item cost type groups by going to **Landed cost \> Costing setup \> Item cost type groups**. This page provides a grid that lists existing item cost type groups and its Action Pane provides commands for adding, removing, and editing rows in the grid. The following table describes the settings available for each row.
 
-| **Field Name** | **Field Description** |
+| Setting | Description |
 | --- | --- |
-| **item cost type groups** | The unique identification of the item cost type group, such as duty 5%. |
-| **Description** | The description of the item cost type group. This description can provide details as to the level or type of charge associated to the item group. |
+| **item cost type groups** | Enter a unique name for the item cost type group (such as *Duty 5%*). |
+| **Description** | Enter a description of the item cost type group. This description can provide details as to the level or type of charge associated to the item group. |
 
-**Note** : Item cost type is linked to the item through the item master on the Manage Costs group under the Costing sub grouping. cost groups
+<!-- KFM: I don't understand the following note. I couldn't find the settings it references.
+
+> [!NOTE]
+> Item cost type is linked to the item through the item master on the Manage Costs group under the Costing sub grouping. cost groups
+-->
 
 ## Transfer order cost type groups
 
-Transfer order cost groups assist to determine how &#39;auto cost&#39; charges are found. Similar items are linked together. E.g. all items with a duty rate of 7% may belong to a certain cost type group.
+Transfer order cost type groups help determine how *auto cost* charges are found. Similar items are linked together. For example, all items with a duty rate of 7% may belong to a certain cost type group.
 
-The vendor cost type group is maintained by navigating to **Landed cost \> Costing setup \> Transfer order cost type groups**.
+You can maintain transfer order cost type groups by going to **Landed cost \> Costing setup \> Transfer order cost type groups**. This page provides a grid that lists existing transfer order cost type groups. Its Action Pane provides commands for adding, removing, and editing rows in the grid. The following table describes the settings available for each row.
 
-| **Field Name** | **Field Description** |
+| Setting | Description |
 | --- | --- |
-| Transfer order cost type groups | The unique identification of the transfer order cost type group, such as duty 5%. |
-| Description | The description of the Transfer order cost type group. This description can provide details as to the level or type of charge associated to the transfer order cost type group. |
+| **Transfer order cost type groups** | Enter a unique name for the transfer order cost type group (such as *Duty 7%*). |
+| **Description** | Enter a description of the transfer order cost type group. This description can provide details as to the level or type of charge associated to the transfer order cost type group. |
 
-**Note** : Transfer order cost group is linked to the item through the item master on the references tab under voyages sub grouping.
+<!-- KFM: I don't understand the following note. I couldn't find the settings it references.
+> [!NOTE]
+> Transfer order cost group is linked to the item through the item master on the references tab under voyages sub grouping.
+-->
 
 ## Cost templates
 
-## Volumetric divisors
+Use cost templates to set default values for settings that the user getting the estimate cost may not necessarily know. Cost templates can be a method of reducing complexity in the estimating process by minimizing the selections that users need to specify to get an accurate estimate.
 
-The volumetric divisors are used to calculate the volumetric weight. Each shipping/freight company formulates its own volumetric divisors. In addition, they normally use a different divisor depending on the mode of delivery i.e. air and sea are often quite different. These same companies can also further complicate their rules depending on where they are shipping from.
-
-Volumetric divisors are set up by navigating to **Landed cost \> Costing setup \> Volumetric divisors**.
-
-Optionally, select the shipping company, cost type code, from port and volumetric divisor. Your shipping provider can advise the volumetric divisors that are used.
-
-Example of a volumetric divisor:
-
-Assume a package sent by Air of 10kg with a volume of 3 cubic meters. The company charges by weight but their volumetric divisor is 6 therefore their calculation is 3 x 6 = 18kg (or volumetric weight).
+To work with cost templates, go to **Landed cost \> Costing setup \> Cost templates**. This page provides a list pane that shows each existing cost template. Its Action Pane provides commands for adding, removing, and editing templates in the list. The following table describes the settings available for each template.
 
 | **Field** | **Description** |
 | --- | --- |
-| **Shipping company** | Vendor account of the shipping company |
-| **Cost type code** | Places cost types into reporting buckets. Reports can either be printed by reporting categories or by cost type. Only six reporting categories are available. These can be renamed if need be by using the rename tool found under _Voyages \> Periodic \> Rename reporting categories_ |
-| **From port** | The port the voyage departs from. |
-| **Volumetric divisor** | Shipping company divisor |
+| **Cost template** | Enter a unique name for the cost template. It typically describes the factor or cost multiplier for the cost template. |
+| **Description** | Enter a description of the cost template. |
+| **Shipping company** | Select the vendor account of the shipping company to associate with the cost template. |
+| **Mode of delivery** | Select the mode of delivery used by this cost template when calculating the estimated cost of an item. This will assist in determining the auto costs associated to the goods on the cost estimate. |
+| **Shipping container type** | Select the shipping container type to associate with the cost template. This will assist in determining which auto costs are associated to the goods during a cost estimate. |
+| **Customs broker** | Select the customs broker (vendor) to associate with the cost template. This will assist in determining which auto costs are associated to the cost estimate. |
+| **Factor** | Enter a factor to apply to the final cost estimate of goods. For example, if you would like to add 10% to the calculated cost estimate, enter *1.10* in this field. |
+
+## Volumetric divisors
+
+Volumetric divisors are used to calculate the volumetric weight. Each shipping/freight company formulates its own volumetric divisors. In addition, they normally use a different divisor depending on the mode of delivery (for example, air and sea are often quite different). These same companies can also further complicate their rules depending on where they are shipping from.
+
+For example, consider a 10 kg package sent by air with a volume of 3 cubic meters. The company charges by weight but their volumetric divisor is 6. Therefore their calculation is 3 x 6 = 18 kg (or volumetric weight). <!-- KFM: we are using 6 as a multiplier here, not a divisor. What does this mean? How does the actual package weight factor in? Ignored? -->
+
+To set up volumetric divisors, go to **Landed cost \> Costing setup \> Volumetric divisors**. This page provides a grid that lists existing volumetric divisors. Its Action Pane provides commands for adding, removing, and editing rows in the grid. The following table describes the settings available for each row.
+
+| Setting | Description |
+| --- | --- |
+| **Shipping company** | Select the vendor account of the shipping company associated with this volumetric divisor. |
+| **Cost type code** | Select the cost type code associated with this volumetric divisor. Use this setting to place cost types into reporting buckets. Reports can either be printed by reporting categories or by cost type. Only six reporting categories are available. <!-- KFM: I can't find the setting referenced in the following: "These can be renamed if deeded by using the rename tool found under **Voyages \> Periodic \> Rename reporting categories**". --> |
+| **From port** | Select the from port for which this volumetric divisor applies. |
+| **Volumetric divisor** | Enter the volumetric divisor value that applies for this row. |

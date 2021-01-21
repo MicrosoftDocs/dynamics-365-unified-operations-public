@@ -2729,6 +2729,8 @@
           href: landed-cost/multi-leg-journey-setup.md
         - name: Shipping information setup
           href: landed-cost/shipping-information-setup.md
+        - name: Costing parameter values setup
+          href: landed-cost/costing-parameters-setup.md
       - name: Work with voyages, containers, and folios
         items:
         - name: Manage voyages
