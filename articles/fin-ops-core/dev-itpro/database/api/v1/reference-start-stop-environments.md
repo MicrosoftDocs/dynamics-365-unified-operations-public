@@ -5,7 +5,7 @@ title: Database movement API - Reference - v1 - Start and stop environments
 description: This topic provides a reference for version 1 of the Database Movement API.
 author: laneswenka
 manager: AnnBe
-ms.date: 01/11/2021
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ You can start and stop environments through Microsoft Dynamics Lifecycle Service
 Note that the same validation rules from the details page in LCS apply to the API.
 
 > [!NOTE]
-> - Only **Customer Managed** and **Microsoft Managed** environments are supported. Self-service environments do not have the same concept of stop and start and are not supported by this API. These APIs will trigger/invoke the operation and successful response only indicates the trigger was successful.
+> - Only **Customer Managed** environments are supported. Self-service environments do not have the same concept of stop and start and are not supported by this API. These APIs will trigger/invoke the operation and successful response only indicates the trigger was successful.
 > - For **stop**, non-success will be returned if the environment is already undergoing another operation or if the environment is already stopped.
 > - For **start**, non-success will be returned if the environment is already undergoing another operation but will return success if the environment is already started.
 
