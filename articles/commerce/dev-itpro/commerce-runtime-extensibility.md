@@ -149,7 +149,7 @@ For offline, after extending CRT, put the custom library in the **\\Program File
 
 Your extension can register key-value configurations in the **CommerceRuntime.Ext.config** file in the **\<settings\>** node.
 
-The **\<settings\>** node is a key-value pair collection used to configure the CommerceRuntime components. The convention is to prefix settings keys to represent the functional area they are configuring using a period (.) as separator. Extension configuration values must be prefixed with **ext**, because the Commerce Runtime initialization enforces this convention. Extensions without the prefix will not load. More prefixes can be added to represent the sub-area they control. The following example sets a key-value pair.
+The **\<settings\>** node is a key-value pair collection used to configure the CommerceRuntime components. The convention is to prefix settings keys to represent the functional area they are configuring using a period (.) as separator. Extension configuration values must be prefixed with **ext**, because the Commerce Runtime initialization enforces this convention. Extensions without the prefix will not load. More prefixes can be added to represent the subarea they control. The following example sets a key-value pair.
 
 ```xml
 <add name="ext.SalesTransaction.Storage.CartSerializationFormat" value="XML" />
@@ -380,7 +380,7 @@ namespace Contoso
 
 ## Implement a CRT service that overrides the functionality of an existing request
 
-In some cases, the request and response types are sufficient, but you must change the out-of-box service implementation logic to perform different logic, or integrate with an external service to do that logic. Overriding the default implementation must be performed only when you want to complete the replace the logic. For example, if you don’t want to use the out-of-box tax implementation, and you want to use third party tax logic instead, then override the tax service request. Most other scenarios can achieved by adding a pre- or post- trigger to the request. Try to avoid overriding the request because when you override the request, the custom logic will be executed and you may not get the future enhancements done in this overridden request.
+In some cases, the request and response types are sufficient, but you must change the out-of-box service implementation logic to perform different logic, or integrate with an external service to do that logic. Overriding the default implementation must be performed only when you want to complete the replace the logic. For example, if you don’t want to use the out-of-box tax implementation, and you want to use third-party tax logic instead, then override the tax service request. Most other scenarios can be achieved by adding a pre- or post- trigger to the request. Try to avoid overriding the request because when you override the request, the custom logic will be executed and you may not get the future enhancements done in this overridden request.
 
 Also, registration in the **commerceRuntime.ext.Config** file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file win.
 
