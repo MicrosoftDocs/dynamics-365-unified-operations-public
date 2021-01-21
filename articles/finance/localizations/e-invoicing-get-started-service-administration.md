@@ -184,7 +184,7 @@ prerequisites in place:
 1.  Sign in to Finance and Supply Chain Management.
 
 2.  In the **Feature management** workspace, search for the new feature,
- **Configurable Electronic invoicing add-on integration**. If the
+ **Electronic invoicing add-on integration**. If the
     feature is still not shown in Feature management page, run **Check
     for updates** function.
 
