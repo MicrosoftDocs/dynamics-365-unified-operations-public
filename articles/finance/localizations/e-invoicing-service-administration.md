@@ -7,7 +7,7 @@ of the service.
 
 ## Azure
 
-The secrets for KeyVault and Storage account must be created in the customer's Azure subscription.
+Use Azure to create the secrets for KeyVault and Storage account, and use them in the configuration of Electronic invoicing add-on.
 
 ## Life Cycle Services (LCS)
 
