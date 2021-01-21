@@ -73,7 +73,7 @@ The following bug fixes are included in this release.
 | ## Navigation error " Form was called incorrectly" when we try to look at deductions.- (533079) | Fixed error while looking at benefits deductions with view "As of date"|
 | ## Zip code not populating on electronic reporting - (543641) | |
 | ## Worker Review Workflow - Unexpected table: HcmDiscussion - (514282) | |
-| ## Personal contact screen in ESS allows employees to see others personal contacts - (542815)The Edit form for ESS Personal Contacts does not restrict its query enough to guarantee that only a single personal contact is retrieved allowing for a user to use keyboard shortcuts to view other people's contacts | |
+| Personal contact screen in ESS allows employees to see others personal contacts - (542815) | Fixed error where the Edit form for ESS Personal Contacts does not restrict it's query enough to guarantee that only a single personal contact is retrieved allowing for a user to use keyboard shortcuts to view other people's contacts |
 | ## Security duty "Inquire into recruiting integration data" is missing privilege "HcmCompensationLevelEntityView" (and possibly others) - (534875)## Dynamics.AX.Application.EssLeaveRequestCalendarTest.verifyLastCarryForwardAmount Failed in 20201021.9 - (519004)
 The test fails when the date is > Oct 21 of any given year. I have "fixed" it in the in the recruiting feature branch for now. ||
 | ## EssLeaveRequestCalendarTest.verifyLastCarryForwardAmount is failing - (519018) | |
