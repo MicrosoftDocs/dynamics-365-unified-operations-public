@@ -36,6 +36,7 @@ Organizations spend a significant amount of time researching aged balance report
 
 ## Collections process setup
 You can use the **Collections process setup** page (**Credit and collections > Setup > Collections process setup**) to create an automated collections process that will schedule activities, send email messages, and create and post customer collection letters. The process steps are based on the leading or oldest open invoice. Each step uses this invoice to determine what communication or activity should take place with a specific customer.  
+Often times collections teams will want to send out an early notice related to each invoice so a customer is notified of an invoice due in the upcoming days.  The Pre-dunning selection box can be set to allow one step in each Process hierarchy to be acted upon for every invoice.
 
 ### Process hierarchy
 Each customer pool can only be assigned to one process hierarchy. The hierarchy rank of this step identifies which process will take precedence if a customer is included in more than one pool that has a process hierarchy assigned. The pool ID determines which customers will be assigned to the process. 
@@ -86,6 +87,7 @@ The following tables list the pages and fields that the specified FastTabs can b
 |                                                        	|     Business   document                       	|     Defines the   activity or email template that is used during the process step.                                                                      	|
 |                                                        	|     When                                      	|     Defines if   the process step will occur before or after the leading invoice due date   along with the **Days in relation to invoice due date** field.    	|
 |                                                        	|     Days in   relation to invoice due date    	|     Together   with the **When** field it identifies the timing of the process step.                                                                        	|
+|                                                        	|     Pre-Dunning                                 	|   This selection allows for one step per process hierarchy to be set and run against every invoice as it reaches the timing criteria.                                                 	|
 |                                                        	|     Recipient                                 	|     Identifies   if an email will be sent to a Customer, Sales group, or Collections Agent contact.                                                  	|
 |                                                        	|     Business   purpose contact                	|     Determines   which recipient’s email address is used in email communications.                                                                             	|
 
