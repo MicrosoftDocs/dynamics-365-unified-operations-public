@@ -59,7 +59,7 @@ Follow these steps to create a hiring process template.
 
 1. Go to **Templates**.
 2. Select **New**.
-3. In the **Template name** field, enter a name for the template, and then select **Create**.
+3. In the **Template name** column, enter a name for the template, and then select **Create**.
 4. In the **Choose the approval process** list, select **Default** to require approval for a job.
 5. Select to enable or disable prospects.
 6. Optional: Add or remove stages.

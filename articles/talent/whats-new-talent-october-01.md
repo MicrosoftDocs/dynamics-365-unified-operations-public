@@ -67,7 +67,7 @@ leavers in an organization. Options include: Prorated, Full accrual, and No accr
 
 ## Other changes
 
--   Employee entity updated - The **Personal** title can now be updated using the Excel
+-   Employee table updated - The **Personal** title can now be updated using the Excel
     add-in/data management.
 
 -   Security change to allow removal of the **Delete** and **Deactivate** buttons in

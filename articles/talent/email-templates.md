@@ -69,7 +69,7 @@ To create a template, in the upper-right corner of the email template library, s
 
 The template is opened in editing view, and you can name the template. For example, if the template is intended for candidates from a US university, but the content is written in French, you might enter **University\_US\_Francais** as the title. The title, subject line, and body content for any template can support languages besides English.
 
-The **To** field for a template can't be edited, because you already selected the recipient when you first created the template.
+The **To** column for a template can't be edited, because you already selected the recipient when you first created the template.
 
 You can add personas such as **Recruiter** or **Hiring Manager** to the carbon copy (Cc) line. When the email is sent, these roles are automatically replaced with the appropriate users, based on the context of the job.
 

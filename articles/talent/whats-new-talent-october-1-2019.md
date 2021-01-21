@@ -74,9 +74,9 @@ With this week's changes, a new configuration option has been added to disable *
 
 With this week's release, attachments are enabled for feedback items in the performance journal page.
 
-### Leave request details don't sync from Common Data Service to Talent (369608)
+### Leave request details don't sync from Dataverse to Talent (369608)
 
-With these changes, leave request details that are updated in Common Data Service will sync back to Talent.
+With these changes, leave request details that are updated in Dataverse will sync back to Talent.
 
 ### Job description doesn't display for the job in the Skill gap analysis page (369398)
 
