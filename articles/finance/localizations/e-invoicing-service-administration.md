@@ -93,7 +93,7 @@ The Electronic invoicing add-on service takes responsibility for storing all you
 > [!NOTE]
 > A dedicated key vault resource and customer Blob storage must be allocated specifically for use with the Electronic invoicing add-on.
 
-For more information, see [Create AzureStorage Account and KeyVault](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-create-azure-storage-account-key-vault).
+For more information, see [Create AzureStorage Account and KeyVault](e-invoicing-create-azure-storage-account-key-vault.md).
 
 #### Users
 
