@@ -50,8 +50,8 @@ The Action Pane includes both tabs, which open to show a collection of related a
 | **Action** | **Description** |
 | --- | --- |
 | **New** | Creates a new voyage. <!-- KFM: Link to scenario --> |
-| **Delete** | Deletes the current voyage. Only voyages that have a **Voyage status** of *Confirmed* can be deleted. Once a voyage begins the sailing process and processes goods in transit, it can no longer be deleted. <!-- KFM: "Begins the sailing process" = "leaves port"? --> |
-| **Voyage editor** | <!-- KFM: Description needed --> |
+| **Delete** | Deletes the current voyage. Only voyages that have a **Voyage status** of *Confirmed* can be deleted. Once a voyage leaves port and processes goods in transit, it can no longer be deleted. |
+| **Voyage editor** | Opens the **Voyage editor**, where you can add or remove purchase lines for the voyage, create new containers, and modify details regarding the voyage itself. |
 | **Voyage costs** | Opens the **Voyage costs** page, where you can view and add voyage costs to all goods within the voyage. When voyage costs are manually added to the voyage, they are automatically added to the costs inquiry screen and apportioned across to each good according to the method specified in the **Voyage costs** page. |
 
 ### The Voyage tab of the Action Pane
@@ -60,8 +60,8 @@ The following table describes the actions available on the **Voyage** tab of the
 
 | **Action** | **Description** |
 | --- | --- |
-| **Shipping container** | <!-- KFM: Description needed --> |
-| **Folio** | <!-- KFM: Description needed --> |
+| **Shipping container** | Opens a page that shows all of the shipping containers associated with the selected voyage. There could be one or many containers. |
+| **Folio** | Opens a page that shows all of the folios associated with the selected voyage. There could be one or many folios. |
 
 ### The Manage tab of the Action Pane
 

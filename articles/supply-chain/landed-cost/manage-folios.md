@@ -48,7 +48,7 @@ The Action Pane includes both tabs, which open to show a collection of related a
 | --- | --- |
 | **New** | Create a folio. |
 | **Delete** | Delete the open or selected folio. |
-| **Voyage costs** | Opens the **Voyage costs** page, where you can view and add voyage costs to all goods within the voyage. When voyage costs are manually added to the voyage, they are automatically added to the costs inquiry screen and apportioned across to each good according to the method specified in the **Voyage costs** page. <!-- KFM: How does this relate to folios? Why is this here? --> |
+| **Voyage costs** | Opens the **Voyage costs** page, where you can view and add folio-level costs to all goods within the voyage. When folio costs are manually added to the voyage, they are automatically added to the costs inquiry screen and apportioned across to each good according to the method specified in the **Voyage costs** page. |
 
 ### The Manage tab of the Action Pane
 
@@ -59,8 +59,8 @@ The following table describes the actions available on the **Manage** tab of the
 | **Post receipts list** | Post a receipts list for all purchase order lines within the folio. If multi-company shipments are used, a new receipts list posting dialog box will open for each company. |
 | **Post product receipt** | Post a product receipt for all purchase order lines within the folio. If multi-company voyages are used, a new product receipt posting dialog box will open for each company. |
 | **Post invoice** | Post an invoice for all purchase order lines within the folio. If multi-company voyages are used, a new invoice posting dialog box will open for each company |
-| **Ship transfer order** | Post a transfer order voyage for all transfer order lines within the shipment. <!-- KFM: Do we mean "shipment" here? Or, as usual "voyage"? Or "folio"? The dialog box that opens is also called "Shipment". --> |
-| **Receive transfer order** | Post a transfer order receipt for all transfer order lines within the shipment.  <!-- KFM: Do we mean "shipment" here? Or, as usual "voyage"? Or "folio"? -->  |
+| **Ship transfer order** | Post a transfer order for all transfer order lines related to the current folio within the related shipment. |
+| **Receive transfer order** | Post a transfer order receipt for all transfer order lines related to the current folio within the related shipment. |
 | **Receive goods in transit** | Receive all order lines that are in transit within the folio. |
 | **Documents received** | Update **Documents received** to *Yes*. This can lock the item and/or purchase line for further updates. |
 | **Find auto costs** | Finds relevant voyage costs. If these have already been found or updated, the system will ask "Un-invoiced cost lines exist. Do you want to overwrite them?" Note that voyage costs that are attached to a folio and invoiced will not be over written. |
@@ -77,7 +77,6 @@ The following table describes the actions available on the **General** tab of th
 | **Product receipt** | View the product receipt record (where used). |
 | **Item arrival** | View the item arrival journal (where used). |
 | **Costs inquiry** | It is possible to view all the costs of a voyage including shipping container/folio/purchase order using the Inquiry form. The exact view of the form can be adjusted using the view action.View any of the areas + item and cost type code on the Inquiry form. Removing these will adjust the inquiry form by grouping costs together, this can be useful if using sizes and colors. Change the dimensions that can be seen on the Inquiry costs form.The costs form only shows cost type codes where the Dr entry on the posting tab is set to Item. |
-| **Goods in transit orders** | It is possible to open the Goods in Transit form directly from the folio. The form will display the Goods in Transit records for the selected folio only. <!-- KFM: I don't see this. Has it been removed? --> |
 
 ## The Header view
 
@@ -89,23 +88,23 @@ The following table describes the settings available on the **General** FastTab 
 
 | **Setting** | **Description** |
 | --- | --- |
-| **Folio** | <!-- KFM: Description needed --> |
-| **Voyage** | <!-- KFM: Description needed --> |
+| **Folio** | Shows the name of the folio. This was generated automatically when the folio was created.|
+| **Voyage** | Shows the voyage associated with this folio. |
 | **Customs Broker** | Select the customs broker for this folio. Customs brokers are defined on the vendor; this can determine created costs automatically. |
 | **House air waybill/Bill of lading** | Specify the house air waybill or bill of lading that applies for the folio. |
-| **Company** | <!-- KFM: Description needed --> |
+| **Company** | The legal entity (company) associated with this folio. |
 | **Cargo control number** | This is used by customs departments in certain countries. |
 | **Measurement** | This allows for a measurement to be specified within the Landed cost module. This is often used by organizations that don't know the individual volume/weight of the goods, but they require a more accurate apportionment than amount or quantity. The freight forwarder will supply you with the weight or cubic measurement, which you place at either an item level or purchase order level. It can be automatically updated if the parameter is selected or manually input. |
-| **Measurement unit** | <!-- KFM: Description needed --> |
+| **Measurement unit** | The unit that applies to the specified **Measurement**. |
 | **Number of cartons** | The number of cartons within this folio. This can be automatically updated depending on the parameter selection. |
 | **Vendor account** | Select the vendor associated with this folio. This is for informational purposes only (does not affect any functionality). |
-| **Name** | <!-- KFM: Description needed --> |
+| **Name** | Shows the name of the selected **Vendor account**. |
 | **Remarks** | Enter any additional information relating to the folio. |
 | **Description of goods** | Select a goods description to assist in identifying the folio. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods)
  |
 | **Valuation date** | This relates to the duty entry form. The Landed cost module wiill use the customs exchange rate for the date set here. This defaults to the date on the duty entry form. |
 | **Customs ID** | Certain countries customs departments give a customs ID, which you can store here. |
-| **Tariff code** | <!-- KFM: Description needed --> |
+| **Tariff code** | Enter a tariff code to associate with folio. This is typically required (and defined) by the country you are shipping to. |
 
 ### The Delivery FastTab of the Header view
 
@@ -123,7 +122,7 @@ The following table describes the settings available on the **Delivery** FastTab
 | **Customer appointment** | The customer appointment date. |
 | **Delivered at warehouse** | The date goods were delivered to the warehouse. |
 | **Verification date** | The verification date. |
-| **Delivery instructions** | The date for the delivery instructions. <!-- KFM: This is a date field. What does it mean? --> |
+| **Delivery instructions** | The date on which the delivery instructions were received. |
 | **From port** | The port the voyage departs from. |
 | **To port** | The port the voyage arrives at. It is possible that the shipping container could have a different port because the ship may stop at multiple ports. |
 
@@ -134,13 +133,19 @@ The following table describes the settings available on the **Export** FastTab o
 | **Setting** | **Description** |
 | --- | --- |
 | **Exporter** | The exporter can be stored on the folio. It is possible with international trade to send a purchase order to one company but receive the goods from another. This tracking and documentation are required by customs. The name and address of the exporter can be stored here. |
-| **Name** | <!-- KFM: Description needed --> |
+| **Name** | Shows the name of the selected **Exporter**. |
 
 ## Settings in Lines view
 
 To open the **Lines** view, open a folio and then select the **Lines** tab at the top-right part of the folio heading.
 
-<!-- KFM: A large number of fields and FastTabs are not mentioned here. Do we really want to leave all of these undocumented? -->
+### The Folio FastTab
+
+This FastTab shows information about the folio. Most of this information is repeated from Header view, as described in the previous section.
+
+### The Lines FastTab
+
+This FastTab shows details about each of the purchase order lines (full or partial) included in the current folio.
 
 The following table describes the commands available in the toolbar of the **Lines** section of the **Lines** view.
 
@@ -150,3 +155,7 @@ The following table describes the commands available in the toolbar of the **Lin
 | **Inventory \> Transactions** | View inventory transactions for the selected line. Note that if you are using goods in transit, the original order and the goods in transit orders will also be displayed. |
 | **Inventory \> Display dimensions** | Opens a dialog box where you can select the inventory dimensions that appear for the transactions that you view. |
 | **Refresh** | Refresh information relating to the line amount, weight, or volume of the selected purchase order line. |
+
+### The Lines details FastTab
+
+This FastTab shows details about the line currently selected on the **Lines** FastTab.

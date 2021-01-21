@@ -65,7 +65,7 @@ The Action Pane of the **Inbound tracking** page provides actions for working wi
 
 The **Overview** tab shows a list of all of the activities that belong to the **Voyage** and **Shipping container** selected at the top of the page. The following table describes each of the settings available for each activity.
 
-| Column | Description |
+| Setting | Description |
 | --- | --- |
 | **Leg** | Shows the leg ID for the activity, as defined by the journey template. |
 | **Mode of Delivery** | The delivery method expected for this activity. |
@@ -80,7 +80,8 @@ The **Overview** tab shows a list of all of the activities that belong to the **
 
 ## Information and settings on the General tab
 
-<!-- KFM: There are many fields that are not described here. Also, does the information shown here apply to the activity selected on the Overview tab, or to the entire voyage/container selected at the top of the page? -->
+The **General** tab shows more information about the leg previously selected on the **Overview** tab. It repeats some information from the Overview tab and also provides additional information about the selected leg.
+<!-- KFM: There are many fields that are not described here. Add them and follow up with Natalie. -->
 
 | Setting | Description |
 | --- | --- |

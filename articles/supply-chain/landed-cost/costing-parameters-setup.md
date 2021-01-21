@@ -59,9 +59,9 @@ To set up your cost type codes, go to **Landed cost \> Costing setup \> Cost Typ
 | **Standard cost Posting type** | If you are using standard costing, select the posting description. |
 | **Standard cost variance account** | If you are using standard costing, the account specified here will be used to post any variance. It uses the landed cost breakdown on the **Item prices** page. This is created using the periodic routine to update prices. Consider the following example:<p>Item standard cost = $15.00</p><p>FOB = $13.00</p><p>Freight = $2.00</p><p>When the invoice is received for the stock, the item is received in at $15.00, but there is a standard price variance of $2.00 for the item because the actual FOB is $13.00. This is posted to the standard price variance account set up in the item posting profile. The estimated freight is $2.00, so at the time of posting the stock invoice there is no variance. However, when the invoice for freight is received, it is $2.50 per unit, so a $0.50 variance is therefore posted to the specified cost. |
 | **Moving average variance account** | If you are using moving average costing, the account specified here will be used to post any variance. Consider the following example:<p>The estimated Freight is $2.00, however when the invoice for freight is received, it is $2.50 per unit, so a $0.50 variance therefore must be posted.</p><p>When **Post adjustments as variance** is set to *Yes* on the **Landed cost parameters** page, all variances between estimated and actual shipment costs will be posted to the moving average variance account specified here. When **Post adjustments as variance** is set to *No*, standard functionality will be used, and the variance will be applied either to inventory or to the moving average variance accounts specified here. This is dependent on stock on-hand. |
-| **Charge accrual account** | Select the account used to accrue for cost estimates when posting the purchase invoice. This is only used when **Use charge account** is set to *Yes* on the **Accounts payable parameters** page. <!-- KFM: I can't find this setting on the accounts payable parameters page. What do we mean here? --> |
+| **Charge accrual account** | Select the account used to accrue for cost estimates when posting the purchase invoice. This is only used when **Use cost type charge accrual account** is set to *Yes* on the **Landed cost parameters** page (**General** tab, **Costing** FastTab). |
 | **Charge account** | Select the account used to capture the inbound transportation costs that have been invoiced by a supplier. The amount is posted as a debit. The offset account is the stock variation account. This posting will only be used when **Post to charge account in ledger** is set to *Yes* on the **Accounts payable parameters** page. |
-| **Variance account** | This field is the account which will be used to offset the charge accruals when posting the purchase invoice. This is only used when **Use charge account** is set to *Yes* on the **Accounts payable parameters** page. <!-- KFM: I can't find this setting on the accounts payable parameters page. What do we mean here? --> |
+| **Variance account** | This field is the account which will be used to offset the charge accruals when posting the purchase invoice. This is only used when **Use cost type charge accrual account** is set to *Yes* on the **Landed cost parameters** page (**General** tab, **Costing** FastTab). |
 
 ## Vendor cost type groups
 
@@ -85,11 +85,8 @@ You can maintain item cost type groups by going to **Landed cost \> Costing setu
 | **item cost type groups** | Enter a unique name for the item cost type group (such as *Duty 5%*). |
 | **Description** | Enter a description of the item cost type group. This description can provide details as to the level or type of charge associated to the item group. |
 
-<!-- KFM: I don't understand the following note. I couldn't find the settings it references.
-
 > [!NOTE]
-> Item cost type is linked to the item through the item master on the Manage Costs group under the Costing sub grouping. cost groups
--->
+> Item cost type is linked to the item through its **Released product** page (**Purchase** FastTab, **Cost type group** field).
 
 ## Transfer order cost type groups
 
@@ -102,10 +99,8 @@ You can maintain transfer order cost type groups by going to **Landed cost \> Co
 | **Transfer order cost type groups** | Enter a unique name for the transfer order cost type group (such as *Duty 7%*). |
 | **Description** | Enter a description of the transfer order cost type group. This description can provide details as to the level or type of charge associated to the transfer order cost type group. |
 
-<!-- KFM: I don't understand the following note. I couldn't find the settings it references.
 > [!NOTE]
-> Transfer order cost group is linked to the item through the item master on the references tab under voyages sub grouping.
--->
+> Item cost type is linked to the item through its **Released product** page (**Purchase** FastTab, **Transfer order cost group** field).
 
 ## Cost templates
 
@@ -127,13 +122,13 @@ To work with cost templates, go to **Landed cost \> Costing setup \> Cost templa
 
 Volumetric divisors are used to calculate the volumetric weight. Each shipping/freight company formulates its own volumetric divisors. In addition, they normally use a different divisor depending on the mode of delivery (for example, air and sea are often quite different). These same companies can also further complicate their rules depending on where they are shipping from.
 
-For example, consider a 10 kg package sent by air with a volume of 3 cubic meters. The company charges by weight but their volumetric divisor is 6. Therefore their calculation is 3 x 6 = 18 kg (or volumetric weight). <!-- KFM: we are using 6 as a multiplier here, not a divisor. What does this mean? How does the actual package weight factor in? Ignored? -->
+For example, consider a package sent by air with a volume of 3 cubic meters. The company charges by volumetric weight, and apply a volumetric divisor is 6, which is multiplied by the volume to find the volumetric weight. Therefore their calculation is 3 x 6 = 18 kg (volumetric weight).
 
 To set up volumetric divisors, go to **Landed cost \> Costing setup \> Volumetric divisors**. This page provides a grid that lists existing volumetric divisors. Its Action Pane provides commands for adding, removing, and editing rows in the grid. The following table describes the settings available for each row.
 
 | Setting | Description |
 | --- | --- |
 | **Shipping company** | Select the vendor account of the shipping company associated with this volumetric divisor. |
-| **Cost type code** | Select the cost type code associated with this volumetric divisor. Use this setting to place cost types into reporting buckets. Reports can either be printed by reporting categories or by cost type. Only six reporting categories are available. <!-- KFM: I can't find the setting referenced in the following: "These can be renamed if deeded by using the rename tool found under **Voyages \> Periodic \> Rename reporting categories**". --> |
+| **Cost type code** | Select the cost type code associated with this volumetric divisor. Use this setting to place cost types into reporting buckets. Reports can either be printed by reporting categories or by cost type. |
 | **From port** | Select the from port for which this volumetric divisor applies. |
-| **Volumetric divisor** | Enter the volumetric divisor value that applies for this row. |
+| **Volumetric divisor** | Enter the volumetric divisor value that applies for this row. The value entered here will *multiplied* by the volume of each package to find that package's volumetric weight. |
