@@ -112,6 +112,7 @@ The following new features are in preview. For more information about turning fe
 
 ## Coming soon
 Benefits enrollment email confirmation - A confirmation email will be sent to employees when they check out from the benefits enrollment expereince in Employee self-service.  [Click here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-parameters-per-company) to learn more.
+
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 
