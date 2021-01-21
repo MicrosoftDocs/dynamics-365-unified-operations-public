@@ -45,9 +45,9 @@ Solution: You can utilize Tree security to restrict access to a single report so
       i.	Click Users and Groups.  
           1.	Select the User(s) or Group that would like to access this report. 
           
-              [![users](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+[![users](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
 
-              [![security](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+[![security](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
 
   b.	Click **Save**.
   
