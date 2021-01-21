@@ -5,7 +5,7 @@ title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail server. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/13/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -161,7 +161,7 @@ For HTTP binding timeouts on Realtime Service calls, configure the timeout in se
 <add name="ext.RealTimeServiceClient.TimeoutInSeconds.InvokeExtensionMethod.ContosoRetailStoreHours_UpdateStoreHours" value="300" />
 ```
 
-To read the key-value from the CRT extension config, extension code can use **RequestContext.Runtime.Configuration**. The following example shows how to retrieve a value.
+To read the key-value from the CRT extension config, use **RequestContext.Runtime.Configuration**. The following example shows how to retrieve a value.
 
 ```csharp
  string key = context.Runtime.Configuration.GetSettingValue("ext.SalesTransaction.Storage.CartSerializationFormat") ?? string.Empty;
@@ -173,31 +173,28 @@ The preceding steps are used for manual deployment and testing in your developme
 
 ### Attach online
 
-To debug CRT from POS, you should attach the CRT extension project to **w3wp.exe** (the IIS process for Retail Server) when POS is connected to Retail server.
+To debug CRT from POS, attach the CRT extension project to **w3wp.exe** (the IIS process for Retail Server) when POS is connected to Retail server.
 
 ### Attach offline
 
-For offline, attach the CRT extension project to the **dllhost.exe** process.
-
+For offline debugging, attach the CRT extension project to the **dllhost.exe** process.
 
 > [!NOTE]
 > CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
 ## Sample to create a new CRT service class
 
-- **Create a new service class, and implement one or more requests/responses** – Use this approach to create a new feature.
-
-The following three classes will be implemented for new CRT service:
+You can create a new service class and implement one or more requests and responses. Use this approach to create a new feature. Implement these classes for a new CRT service:
 
 - **Request class** – This class is POS/Retail server/E-commerce/CRT workflow class that is the request to do something.
 - **Response class** – This class returns the response, based on the request to the caller.
-- **Handler class** – This class contains the core logic for the request. In the handler class, you can call other requests, do custom logic, and so on.
+- **Handler class** – This class contains the core logic for the request. In the handler class, you can call other requests, do custom logic, and other tasks.
 
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
 
-### Request class:
+### Request class
 
-```C#
+```csharp
 using System.Runtime.Serialization;
 using Microsoft.Dynamics.Commerce.Runtime.Messages;
 
@@ -214,7 +211,7 @@ public sealed class GetStoreHoursDataRequest : Request
 }
 ```
 
-### Response class:
+### Response class
 
 The new response type resembles the request type.
 
@@ -234,18 +231,18 @@ public sealed class GetStoreHoursDataResponse : Response
 
 Next, you must create a new CRT service that uses the request and response types.
 
-## Creating a new CRT service class
+## Create a new CRT service class
 
 1. Implement the new service.
 
-    ```C#
+    ```csharp
     public class StoreHoursDataService : IRequestHandlerAsync
     ```
 
-2. Implement two members of the interface. The **SupportedRequestTypes** member returns a list of all requests that this service can handle. The **execute** method is the method that the CRT calls for you if a request for this service is run.
+2. Implement two members of the interface. The **SupportedRequestTypes** member returns a list of all requests that this service can handle. The **execute** method is the method that the CRT calls if a request for this service is run.
 
-```C#
-   public IEnumerable<Type> SupportedRequestTypes
+    ```csharp
+    public IEnumerable<Type> SupportedRequestTypes
             {
                 get
                 {
@@ -332,18 +329,18 @@ Next, you must create a new CRT service that uses the request and response types
 
                 return new UpdateStoreDayHoursDataResponse(request.StoreDayHours);
             }
-```
+    ```
 
 3. Register the CRT extension as mentioned in the beginning of this topic.
 
-The above sample code is missing implementation for the UpdateStoreDayHoursDataRequest and UpdateStoreDayHoursDataResponse, check the Retail SDK for the full sample code (RetailSDK\SampleExtensions\CommerceRuntime\Extensions.StoreHoursSample).
+The above sample code is missing implementation for the UpdateStoreDayHoursDataRequest and UpdateStoreDayHoursDataResponse. The full sample code is available in the Retail SDK at **RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.StoreHoursSample**.
 
-## Implementing a new CRT service that handles a single new request
+## Implement a new CRT service that handles a single new request
 
 It’s slightly easier to create a single-request service.
 
 ```C#
-amespace Contoso
+namespace Contoso
 {
     namespace Commerce.Runtime.CrossLoyaltySample
     {
@@ -380,19 +377,16 @@ amespace Contoso
     }
 }
 ```
-## Implementing a CRT service that overrides the functionality of an existing request
 
-In some cases, the request and response types are sufficient, but the service implementation OOB logic must be fully changed to perform different logic/integrate with external service to do that logic etc., overriding the default implementation must be performed only when you want to complete the replace the logic. Ex: If you don’t want to use the OOB Tax implementation and use third party tax logic then override the tax service request, most of the other scenarios can achieved by adding pre or post trigger to the request. Try to avoid overriding the request because once you override custom logic will be executed and you may not get the future enhancements done in this overridden request.
+## Implement a CRT service that overrides the functionality of an existing request
 
-Additionally, registration in the commerceRuntime.ext.Config file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file wins.
+In some cases, the request and response types are sufficient, but you must change the out-of-box service implementation logic to perform different logic, or integrate with an external service to do that logic. Overriding the default implementation must be performed only when you want to complete the replace the logic. For example, if you don’t want to use the out-of-box tax implementation, and you want to use third party tax logic instead, then override the tax service request. Most other scenarios can achieved by adding a pre- or post- trigger to the request. Try to avoid overriding the request because when you override the request, the custom logic will be executed and you may not get the future enhancements done in this overridden request.
 
-To override any CRT request, follow the below pattern:
+Also, registration in the **commerceRuntime.ext.Config** file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file win.
 
-Ex: To override the OOB CreateOrUpdateCustomerDataRequest:
+To override any CRT request, follow the pattern in the following example that overrides the out-of-box **CreateOrUpdateCustomerDataRequest**.
 
-
-```C#
-
+```csharp
 namespace Contoso
 {
     namespace Commerce.Runtime.EmailPreferenceSample
@@ -424,54 +418,52 @@ namespace Contoso
         }
     }
 }
-
 ```
 
-## How to execute the base handler in extension
+## Execute the base handler in extension
 
-### NotHandledResponse()
+### NotHandledResponse
 
-If the overridden logic executes the base handler for some scenarios, this can achieved by returning **NotHandledResponse().** If the NotHandledResponse is returned, the CRT framework will use the extension that is requesting to execute the base or out of band logic, so the CRT framework will execute the out of band handler.
+If the overridden logic executes the base handler for some scenarios, this can achieved by returning `new NotHandledResponse()`. If **NotHandledResponse** is returned, the CRT framework will use the extension that is requesting to execute the base or out of band logic, so the CRT framework will execute the out of band handler.
 
-**NotHandledResponse** can be used in scenarios where the extension executes the base handler logic. For example, if the overridden request executes the base handler logic then it can return the NotHandledResponse for the base handler to execute. Or if the extension executes custom logic and base logic, then the extension code can return NotHandledResponse after executing the custom logic.
+**NotHandledResponse** can be used in scenarios where the extension executes the base handler logic. For example, if the overridden request executes the base handler logic then it can return the **NotHandledResponse** for the base handler to execute. Or if the extension executes custom logic and base logic, then the extension code can return **NotHandledResponse** after executing the custom logic.
 
-```C#
-  private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)
+```csharp
+private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)
+{
+    ThrowIf.Null(request.SalesOrder, nameof(request.SalesOrder));
+
+    string receiptFieldName = request.CustomReceiptField;
+    string receiptFieldValue = string.Empty;
+
+    if (request.SalesOrder.TaxCalculationType == TaxCalculationType.GTE)
+    {
+        switch (receiptFieldName)
         {
-            ThrowIf.Null(request.SalesOrder, nameof(request.SalesOrder));
-
-            string receiptFieldName = request.CustomReceiptField;
-            string receiptFieldValue = string.Empty;
-
-            if (request.SalesOrder.TaxCalculationType == TaxCalculationType.GTE)
-            {
-                switch (receiptFieldName)
-                {
-                    case "Sample":
-                        receiptFieldValue = this.GetGstRegistrationNumber(request);
-                        break;
-                    default:
-                        return new NotHandledResponse();
-                }
-            }
-            else
-            {
+            case "Sample":
+                receiptFieldValue = this.GetGstRegistrationNumber(request);
+                break;
+            default:
                 return new NotHandledResponse();
-            }
-
-            int receiptFieldLength = request.ReceiptItemInfo == null ? 0 : request.ReceiptItemInfo.Length;
-            var returnValue = ReceiptStringUtils.WrapString(receiptFieldValue, receiptFieldLength);
-
-            return new GetCustomReceiptFieldServiceResponse(returnValue);
         }
+    }
+    else
+    {
+        return new NotHandledResponse();
+    }
 
+    int receiptFieldLength = request.ReceiptItemInfo == null ? 0 : request.ReceiptItemInfo.Length;
+    var returnValue = ReceiptStringUtils.WrapString(receiptFieldValue, receiptFieldLength);
+
+    return new GetCustomReceiptFieldServiceResponse(returnValue);
+}
 ```
 
-## How to execute extension request for a channel type
+## Execute an extension request for a channel type
 
-If an extension request needs to be executed only for a certain channel type, such as execute the request for online channel not for the Retail channel (physical store), then before executing the request, check the channel type and execute the custom logic executed or execute the base logic by calling the NotHandledResponse().
+If an extension request needs to be executed only for a certain channel type, such as execute the request for online channel not for the Retail channel (physical store), then before executing the request, check the channel type and execute the custom logic executed or execute the base logic by calling the **NotHandledResponse()**.
 
-```C#
+```csharp
 if (requestContext.GetChannel().OrgUnitType == RetailChannelType.RetailStore)
 {
     // run your extension code here.
@@ -482,11 +474,11 @@ else
 }
 ```
 
-## Implementing a new CRT entity and using it in new CRT service
+## Implement a new CRT entity and using it in new CRT service
 
-Any new entity must be of the **CommerceEntity** type. When you use this type, lots of low-level functionality is automatically handled for you. The following example, which is taken from the StoreHours sample, shows how to create an entity that is bound to the database table. This is the usual case.
+Any new entity must inherit from **CommerceEntity**. When you use this type, lots of low-level functionality is automatically handled for you. The following example, which is taken from the **StoreHours** sample, shows how to create an entity that is bound to the database table. This is a common scenario.
 
-```C#
+```csharp
 public class StoreDayHours : CommerceEntity
 {
     private const string DayColumn = "DAY";
@@ -534,34 +526,33 @@ public class StoreDayHours : CommerceEntity
 }
 ```
 
-When you want to use the new entity in a service, the process is straightforward. As described earlier, you create a new service as a derived IRequestHandler. Then either use or return the new entity. The following example shows how to read the entity from the database and return it as part of the response.
+When you want to use the new entity in a service, the process is straightforward. As described earlier, you create a new service derived from **IRequestHandler**. Then either use or return the new entity. The following example shows how to read the entity from the database and return it as part of the response.
 
 ```C#
-   private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
-            {
-                ThrowIf.Null(request, "request");
+private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+{
+    ThrowIf.Null(request, "request");
 
-                using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
-                {
-                    var query = new SqlPagedQuery(request.QueryResultSettings)
-                    {
-                        DatabaseSchema = "ext",
-                        Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
-                        From = "CONTOSORETAILSTOREHOURSVIEW",
-                        Where = "STORENUMBER = @storeNumber",
-                    };
+    using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+    {
+        var query = new SqlPagedQuery(request.QueryResultSettings)
+        {
+            DatabaseSchema = "ext",
+            Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+            From = "CONTOSORETAILSTOREHOURSVIEW",
+            Where = "STORENUMBER = @storeNumber",
+        };
 
-                    query.Parameters["@storeNumber"] = request.StoreNumber;
-                    return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
-                }
-            }
+        query.Parameters["@storeNumber"] = request.StoreNumber;
+        return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
+    }
+}
 ```
 
-
 > [!NOTE]
-> Commerce entities are not thread safe, which means that the same object should not be read or modified when another thread is writing to it. This applies to custom entities and OOB entities in the extension code. Avoid two different threads when performing read/write activities for the same shared object synchronously.
+> Commerce entities are not thread safe, which means that the same object should not be read or modified when another thread is writing to it. This applies to custom entities and out of box entities in the extension code. Avoid two different threads when performing read or write activities for the same shared object synchronously.
 
-For the preceding example, the CRT runtime engine automatically makes a query to the channel database via the registered data adapter. It queries a type that has the name **crt.ISVRetailStoreHoursView**, and generates a **where** clause and columns as specified in the code. The customizer is responsible for providing the SQL objects as part of the customization.
+In the preceding example, the CRT runtime engine automatically makes a query to the channel database via the registered data adapter. It queries a type that has the name **crt.ISVRetailStoreHoursView**, and generates a **where** clause and columns as specified in the code. The customizer is responsible for providing the SQL objects as part of the customization.
 
 ## Using extension properties on CRT entities, requests, and responses
 
