@@ -28,6 +28,7 @@ ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
 
 ---
+
 # What's new or changed in Dynamics 365 Talent - Core HR (December 6, 2018)
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
@@ -139,10 +140,10 @@ The Workers to Work task needs the following mappings updated.
 The Gender column transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
 | Dataverse Value   | Finance and Operations value |
-| ------------|------------------ -----------|
+| ------------|------------------|
 | 75440000    | Male                         |
 | 75440001    | Female                       |
-| 75440002    | None                         | 
+| 75440002    | None                         |
 | 75440003    | NonSpecific                  |
 
 The updated mappings should look like this.
