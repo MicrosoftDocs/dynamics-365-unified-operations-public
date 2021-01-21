@@ -69,7 +69,7 @@ It's a good practice to complete the steps in the methodology as you make progre
 
 During the UAT phase, you must test all the business processes you've implemented, and any customizations you've made, in a Sandbox environment in the implementation project. To help ensure a successful go-live, you should consider the following as you complete the UAT phase: 
 
-- We recommend that your UAT process starts with a clean and fresh environment where the data from your GOLD configuration is copied into the evironment prior to the start of the UAT process. We recommend that you use the production environment as your GOLD enviroment until you go-live, at which point the enviroment becomes production.
+- We recommend that your UAT process starts with a clean and fresh environment where the data from your GOLD configuration is copied into the environment prior to the start of the UAT process. We recommend that you use the production environment as your GOLD environment until you go-live, at which point the environment becomes production.
 - Test cases cover the entire scope of requirements. 
 - Test by using migrated data. This data should include master data such as workers, jobs, and positions. Also include opening balances, like leave and absence accruals. Finally, include open transactions, such as current benefits enrollments. Complete testing with all types of data, even if the data set isn't finalized. 
 - Test by using the correct security roles (default roles and custom roles) that are assigned to users. 
@@ -80,8 +80,8 @@ During the UAT phase, you must test all the business processes you've implemente
 
 Prior to your go-live, you must perform a mock go-live to test the steps required to cutover from your legacy systems to the new system. You should perform your mock go-live in a sandbox environment and include all the steps in your cutover plan.
 
-- We recommend you use the production enviroment as the GOLD configuration enviroment until the go-live.
-- Ensure that you have a strong governance process in place to protect the production enviroment from accidental transactions or updates prior to the go-live.
+- We recommend you use the production environment as the GOLD configuration environment until the go-live.
+- Ensure that you have a strong governance process in place to protect the production environment from accidental transactions or updates prior to the go-live.
 - When you're ready to perform UAT or the mock go-live, refresh the sandbox environment from the production environment by creating the request in LCS.
 - Test each step of your cutover plan in the sandbox environment and then validate the sandbox environment by performing spot checks or performing tests from your UAT scripts in the environment.
   - Tests should include all data migrations including transformations needed for the go-live.
