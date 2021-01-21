@@ -11,7 +11,8 @@ Use Azure to create the secrets for KeyVault and Storage account, and use them i
 
 ## Life Cycle Services (LCS)
 
-To enable the Electronic invoicing add-on for your Finance and Supply Chain Management environment, the following feature must be enabled under the tile **Preview feature management** in LCS:
+Use Life Cycle Services (LCS) to enable the add-on for microservices for your LCS deployment project.
+The following feature must be enabled under the tile **Preview feature management** in LCS:
 
 -   e-Invoicing Service.
 
