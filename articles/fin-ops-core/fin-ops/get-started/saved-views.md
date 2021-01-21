@@ -128,12 +128,14 @@ To publish a view, follow these steps:
 1. Create and save a personal copy of the view that you want to publish. 
 2. With that view currently loaded, select the view name to open the view selector drop-down menu. 
 3. Select the **More** button and then select **Publish**. The Publish dialog box will open.
-4. Enter a name and (optionally) a description for the view. The name that you enter is the name that users who receive this view will see in their view selectors. The names of published views for a page must be unique. No duplicate names are allowed, even if the list of roles or legal entities that the views are applied to differ.
-5. **Version 10.0.9 and later:** Determine whether the view should be published as the default view for the selected users. When a view is made the default view, users will see it the next time that they open the target page. The single, global default view of every targeted user will be changed. However, users can still change their default view after publishing has occurred.
-6. Add the security roles that correspond to the users who are being targeted by this view. 
-7. **Version 10.0.13 and later:** Determine whether you want to publish the view to the child roles of each security role that is selected. If you do, select the **Include child roles** check box in the row for the appropriate security roles. Note that this check box isn't available for roles that don't have child roles.
-7. Add the legal entities that this view should be available for. 
-8. Select **Publish**.
+4. Enter a name for the view. The name that you enter is the name that users who receive this view will see in their view selectors. The names of published views for a page must be unique. No duplicate names are allowed, even if the list of roles or legal entities that the views are applied to differ.
+5. **Update 10.0.17 or later**: If you have the **(Preview) Translation support for organization views** feature enabled, you can add translations for your view name in as many languages as your organization requires by clicking the **Translations** button next to the **Name** field. This will allow users to see the view name in their current language. You can also set the default language, which is the translation that will be shown to users who are running languages that don't have a translation defined.  
+5. Optionally enter a description for the view so the recipients of this view can better understand its purpose. 
+6. Determine whether the view should be published as the default view for the selected users. When a view is made the default view, users will see it the next time that they open the target page. The single, global default view of every targeted user will be changed. However, users can still change their default view after publishing has occurred.
+7. Add the security roles that correspond to the users who are being targeted by this view. 
+8. Determine whether you want to publish the view to the child roles of each security role that is selected. If you do, select the **Include child roles** check box in the row for the appropriate security roles. Note that this check box isn't available for roles that don't have child roles.
+9. Add the legal entities that this view should be available for. 
+10. Select **Publish**.
 
 Note that in some environments, it may take some time (up to an hour) before users see the published view.
 
