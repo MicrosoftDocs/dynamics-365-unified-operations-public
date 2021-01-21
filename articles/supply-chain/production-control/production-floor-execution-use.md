@@ -45,7 +45,7 @@ The remaining sections of this topic describe how workers interact with the inte
 
 ## All jobs tab
 
-The **All jobs** tab provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*.
+The **All jobs** tab provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*. (This tab name is customizable and may be different for your system.)
 
 ![All jobs tab](media/pfei-all-jobs-tab.png "All jobs tab")
 
@@ -64,7 +64,7 @@ The job list has the following columns. The numbers correspond to the numbers in
 
 ## Active jobs tab
 
-The **Active jobs** tabs shows a list of all jobs that the signed-in worker has already started.
+The **Active jobs** tabs shows a list of all jobs that the signed-in worker has already started. (This tab name is customizable and may be different for your system.)
 
 ![Active jobs tab](media/pfei-active-jobs-tab.png "Active jobs tab")
 
@@ -81,7 +81,7 @@ The active jobs list has the following columns:
 
 ## My machine tab
 
-The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime.
+The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
  
 ![The My machine tab](media/pfei-my-machine-tab.png "The My machine tab")
 
