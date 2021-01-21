@@ -47,7 +47,7 @@ This release includes the following new features and bug fixes. Changes apply to
 The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Feature name or short description | Release plan title and link | Doc title and link |
 | #HCM & HCMFabric Deliverables | -- | -- |
 | ## ACA 1095B GER report - 2020 Updates - (512337) | | | 
