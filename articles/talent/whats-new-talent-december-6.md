@@ -140,7 +140,7 @@ The Workers to Work task needs the following mappings updated.
 The Gender column transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
 | Dataverse Value   | Finance and Operations value |
-| ------------|------------------ -----------|
+| ------------|------------------|
 | 75440000    | Male                         |
 | 75440001    | Female                       |
 | 75440002    | None                         |
