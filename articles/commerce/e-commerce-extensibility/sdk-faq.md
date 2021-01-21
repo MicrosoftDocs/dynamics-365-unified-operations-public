@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 12/02/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -34,16 +34,15 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-## After upgrading to module library version 9.27 (10.0.17 release), if partner is using any buy box module view extension they may see compile error.
+## After upgrading to module library version 9.27 (Commerce version 10.0.17 release), a partner using any buy box module view extension may see a compile error.
 
-Reason for change: **Product Quick view** module is introduced in this release which shares most of the functionality with buybox. For code sharing purpose common components are moved from buybox module to a common folder so that both buybox and quickview can share code.
+The compile error is due to code sharing related to the product quick view module that was introduced in the Commerce version 10.0.17 release. The quick view module shares most of the functionality with the buy box module, and common components were moved from the buy box module to a common folder so that the buy box and quick view modules can share the code.
 
-Mitigation: Any reference errors in view file needs to fixed accordingly to resolve compilation error.
+The mitigation to resolve the compilation error is to update any reference errors in the buybox.tsx view file, as shown in the examples below.
 
-Old code:
+Example of legacy code showing imports in buybox.view.tsx:
 
-Earlier imports in buybox.view.tsx
-
+```ts
 import { IBuyboxViewProps } from '../..';
 import {
     IBuyboxAddToCartViewProps,
@@ -56,13 +55,14 @@ import {
     IBuyboxProductQuantityViewProps,
     IBuyboxShopSimilarLookViewProps
  } from './components';
+```
+Example of new code showing imports in buybox.view.tsx:
 
-New code:
-
+```ts
 import { IBuyboxAddToCartViewProps, IBuyboxAddToOrderTemplateViewProps, IBuyboxAddToWishlistViewProps, IBuyboxKeyInPriceViewProps, IBuyboxProductConfigureDropdownViewProps, IBuyboxProductConfigureViewProps, IBuyboxProductQuantityViewProps, IBuyboxShopSimilarLookViewProps } from '../../common';
 import { IBuyboxViewProps } from './buybox';
 import { IBuyboxFindInStoreViewProps } from './components/buybox-find-in-store';
-
+```
 
 ## After upgrading to module library version 9.24 (10.0.14 release), cloned modules that use data actions may display the error, "UserAuthorizationException. Customer account number on the request was wrong".
 
