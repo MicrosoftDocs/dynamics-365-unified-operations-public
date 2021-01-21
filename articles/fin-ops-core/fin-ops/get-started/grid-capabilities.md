@@ -37,7 +37,7 @@ The new grid control provides several useful and powerful capabilities that you 
 -  Typing ahead of the system
 -  Evaluating math expressions 
 -  Grouping tabular data (enabled separately using the **(Preview) Grouping in grids** feature)
--  Pinned system columns
+-  Freezing columns
 
 ## Calculating totals
 In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. A footer section at the bottom of the grid shows these totals. 
@@ -126,8 +126,14 @@ In the same way that you can select (or unselect) all rows in the grid by select
 ### Hiding column names
 When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
-## Pinned system columns
-The row selection column and row status column in the new grid are pinned, or frozen, on the leftmost part of the grid. Therefore, when these columns are included in a grid, they will always be visible to the user, regardless of the horizontal scroll position in the grid.   
+## Freezing columns
+Some columns in a grid may be important enough for context that you do not want them to scroll out of view and want to always see the values in that column. The **Freeze columns in grid** feature, available starting in 10.0.17 / Platform update 41, provides this flexibility to a user. 
+
+To freeze a column, right-click on the column header and select **Freeze column**. When this is done initially, the selected column will become the first column and will no longer scroll out of view. Subsequent columns that are frozen will be added to the right of any existing frozen columns. Users can reorder columns frozen columns as needed using the standard Move functionality. Frozen columns cannot be moved among the set of unfrozen columns and vice versa.  
+
+To unfreeze a column, right-click on the frozen column's header and select **Unfreeze column**. 
+
+Note that the row selection and row status columns in the new grid are always frozen as the first two columns in the grid. Therefore, when these columns are included in a grid, they will always be visible to the user, regardless of the horizontal scroll position in the grid. These two columns cannot be reordered.      
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
