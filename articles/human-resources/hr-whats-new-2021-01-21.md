@@ -49,7 +49,6 @@ The following features are generally available with this release.
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Enhanced workflow requests and approvals | [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Configuration option to position Work items assigned to me list](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Feature name or short description | Release plan title and link | Doc title and link |
 | #HCM & HCMFabric Deliverables | -- | -- |
 | ## ACA Compliance 2020 - (510677)- Updates to the 1095C 1095B and Electronic reporting in Legacy Benefits to support ACA compliance reporting for 2020 | -- |--  | 
 | ## Uptake ACA into new benefits - (439591) - Benefits Management feature now supports ACA compliance reporting for US based Legal entities.| NA | [Generate ACA reports in Benefits Management](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-management-aca-reports) |
