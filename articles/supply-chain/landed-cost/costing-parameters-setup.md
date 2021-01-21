@@ -29,10 +29,10 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Costing parameter values setup
 
-When you set up the Landed cost module, you are able to establish several sets of common values (and related settings per value) that will be available when you select certain types of costing parameter values elsewhere in the application. This topic describes how to set up each of these sets of values.
-
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+
+When you set up the Landed cost module, you are able to establish several sets of common values (and related settings per value) that will be available when you select certain types of costing parameter values elsewhere in the application. This topic describes how to set up each of these sets of values.
 
 ## Set up cost type codes
 
