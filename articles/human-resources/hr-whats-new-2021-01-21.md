@@ -67,30 +67,29 @@ The following bug fixes are included in this release.
 > [!NOTE]
 > Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
-| LCS support number | Description |
-| --- | --- |
-| LCS number and link | Description |
-| ## Navigation error " Form was called incorrectly" when we try to look at deductions.- (533079) | Fixed error while looking at benefits deductions with view "As of date"|
+| Issue number | Issue |  Description |
+| --- | --- | --- |
+| 533079 | Navigation error "Form was called incorrectly" when we try to look at deductions. | Fixed error while looking at benefits deductions with view "As of date"|
 | ## Zip code not populating on electronic reporting - (543641) | |
 | ## Worker Review Workflow - Unexpected table: HcmDiscussion - (514282) | |
-| Personal contact screen in ESS allows employees to see others personal contacts - (542815) | Fixed error where the Edit form for ESS Personal Contacts does not restrict it's query enough to guarantee that only a single personal contact is retrieved allowing for a user to use keyboard shortcuts to view other people's contacts |
-| ## Security duty "Inquire into recruiting integration data" is missing privilege "HcmCompensationLevelEntityView" (and possibly others) - (534875)## Dynamics.AX.Application.EssLeaveRequestCalendarTest.verifyLastCarryForwardAmount Failed in 20201021.9 - (519004)
+| 542815 | Personal contact screen in ESS allows employees to see others personal contacts | Fixed error where the Edit form for ESS Personal Contacts does not restrict it's query enough to guarantee that only a single personal contact is retrieved allowing for a user to use keyboard shortcuts to view other people's contacts |
+| | ## Security duty "Inquire into recruiting integration data" is missing privilege "HcmCompensationLevelEntityView" (and possibly others) - (534875)## Dynamics.AX.Application.EssLeaveRequestCalendarTest.verifyLastCarryForwardAmount Failed in 20201021.9 - (519004)
 The test fails when the date is > Oct 21 of any given year. I have "fixed" it in the in the recruiting feature branch for now. ||
-| ## EssLeaveRequestCalendarTest.verifyLastCarryForwardAmount is failing - (519018) | |
-| ## Cannot enable change tracking on HcmRecruitingRequestPositionEntity - (535321) | |
-| ## Cannot open Common Data service Configuration in System administration due call to IsVirtualEntityPackageInstalled() - (536157) Investigation is needed into the stack trace in the linked IcM to fix the issue preventing the Common Data Service configuration page from loading in the HR app. | |
-| ## Navigation error " Form was called incorrectly" when we try to look at deductions. - (533079) | |
-| ## Personal information fast tab missing from candidate record - (537264) | |
-| ## "People" Workspace still showing retired positions - (481122) | |
-| ## AllowContactEmployer uses wrong data type - (541440) | |
-| ## Professional experience doesn't display on internal candidate records - (537267) The Professional experience fast tab doesn't display on internal candidate records. If the candidate is internal, then "Professional experience" is replaced by "Employment history", which is the candidate's employment history within the organization. It's great to have Employment history display for internal candidates, but it shouldn't replace Professional experience, which is the candidate's full work experience, including positions held outside the organization. The full professional experience is still applicable, and should display for internal candidates. | |
-| ## Allow Contact Employer is available in the professional experience API but not in the app UI - (537067) | |
-| ## Candidate status doesn't update on internal candidates when transfer is completed - (525957)
+| | ## EssLeaveRequestCalendarTest.verifyLastCarryForwardAmount is failing - (519018) | |
+| | ## Cannot enable change tracking on HcmRecruitingRequestPositionEntity - (535321) | |
+| | ## Cannot open Common Data service Configuration in System administration due call to IsVirtualEntityPackageInstalled() - (536157) Investigation is needed into the stack trace in the linked IcM to fix the issue preventing the Common Data Service configuration page from loading in the HR app. | |
+| | ## Navigation error " Form was called incorrectly" when we try to look at deductions. - (533079) | |
+| | ## Personal information fast tab missing from candidate record - (537264) | |
+| | ## "People" Workspace still showing retired positions - (481122) | |
+| | ## AllowContactEmployer uses wrong data type - (541440) | |
+| | ## Professional experience doesn't display on internal candidate records - (537267) The Professional experience fast tab doesn't display on internal candidate records. If the candidate is internal, then "Professional experience" is replaced by "Employment history", which is the candidate's employment history within the organization. It's great to have Employment history display for internal candidates, but it shouldn't replace Professional experience, which is the candidate's full work experience, including positions held outside the organization. The full professional experience is still applicable, and should display for internal candidates. | |
+| | ## Allow Contact Employer is available in the professional experience API but not in the app UI - (537067) | |
+| | ## Candidate status doesn't update on internal candidates when transfer is completed - (525957)
 When a transfer is completed (i.e. the Change position or Continue button is clicked on the Transfer work to a new position assignment page), the Status on the candidate record must change to Hired. | |
-| ## Currency symbols for Indian Rupee and Turkish Lyra do not sync correctly to CDS - (537051) | |
-| ## Recruiting entities must be enabled for Data Management - (534846) | |
-| ## Zip code not populating on electronic reporting - (543641) | |
-| ## Fix missing reference to Microsoft.SqlServer.XEvent.dll - (533474) | |
+| | ## Currency symbols for Indian Rupee and Turkish Lyra do not sync correctly to CDS - (537051) | |
+| | ## Recruiting entities must be enabled for Data Management - (534846) | |
+| | ## Zip code not populating on electronic reporting - (543641) | |
+| | ## Fix missing reference to Microsoft.SqlServer.XEvent.dll - (533474) | |
 
 ## In preview
 
