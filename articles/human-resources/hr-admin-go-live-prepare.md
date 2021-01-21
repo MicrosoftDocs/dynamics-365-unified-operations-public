@@ -87,7 +87,7 @@ Prior to your go-live, you must perform a mock go-live to test the steps require
   - Tests should include all data migrations including transformations needed for the go-live.
   - The process should include a practice cutoff of any legacy systems.
   - Be sure to include any integration cutover steps or external system steps in your mock cutover.
-- If you find any issues aduring the mock cutover, a second mock-cutover may be required. For this reason, we recommend that you plan for two mock cutovers in your project plan.
+- If you find any issues during the mock cutover, a second mock-cutover may be required. For this reason, we recommend that you plan for two mock cutovers in your project plan.
 
 ## FastTrack go-live assessment
 
