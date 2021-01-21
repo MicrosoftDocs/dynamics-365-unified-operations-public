@@ -7,7 +7,7 @@ of the service.
 
 ## Azure
 
-The Electronic invoicing add-on 
+The secrets for KeyVault and Storage account must be created in the customer's Azure subscription.
 
 ## Life Cycle Services (LCS)
 
