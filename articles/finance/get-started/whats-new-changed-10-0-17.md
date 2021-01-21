@@ -43,8 +43,8 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
-- [1099 statements updated for 2020 tax law](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/1099-statements-updated-2020-tax-law)
-- [Improvements in unit price and cost price handling in stock transfer orders for India](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/improvements-unit-price-cost-price-handling-stock-transfer-orders-india)
+- [1099 statements updated for 2020 tax law](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/1099-statements-updated-2020-tax-law)
+- [Improvements in unit price and cost price handling in stock transfer orders for India](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/improvements-unit-price-cost-price-handling-stock-transfer-orders-india)
 
 ## Additional resources
 
