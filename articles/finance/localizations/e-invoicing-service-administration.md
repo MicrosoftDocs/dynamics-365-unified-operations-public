@@ -38,7 +38,7 @@ form, on **Electronic invoicing add-on** tab:
 
 It is the URL of the Electronic invoicing add-on:
 
--   <https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
+<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
 
 #### Application ID
 
