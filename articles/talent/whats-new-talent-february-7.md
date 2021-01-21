@@ -59,8 +59,8 @@ For example:
 *Associated compensation levels:* B1 and B2 - Each level has a defined range of values. B1 = Min 50,000, Mid 60,000, Max 75,000 and B2 = Min 65,000, Mid 74,000, Max 85,000. 
 When creating fixed compensation for employees, based on the eligibility rules defined, each fixed plan can now point to the same job and to different levels on the job. This allows for plans to be defined in different regions/companies and point to the same job but different ranges without duplicating jobs to account for these differences.
 
-### Compensation level field has been added to the Employee fixed compensation entity 
-With this update, the employee fixed compensation entity has been updated to include the **Compensation level** field. This addition makes it easier to update employee fixed compensation plans. 
+### Compensation level column has been added to the Employee fixed compensation table 
+With this update, the employee fixed compensation table has been updated to include the **Compensation level** column. This addition makes it easier to update employee fixed compensation plans. 
 
 ### Update Job family when updating and creating new positions
 When changing the job on a position, **Job family** will now default based on the job selected.

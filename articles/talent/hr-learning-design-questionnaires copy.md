@@ -108,7 +108,7 @@ Respondents can answer a question in two ways, depending on the subject of the q
 
 To provide a list of possible answers for closed-ended questions, you can create answers on the **Answer groups** page. 
 
-Answer groups and answers are components that make up the main body of information that questions are created from. After you create an answer group, you can associate the answer group with a question in the **Answer group** field on the **Questions** page. 
+Answer groups and answers are components that make up the main body of information that questions are created from. After you create an answer group, you can associate the answer group with a question in the **Answer group** column on the **Questions** page. 
 
 An answer group can be used for more than one question on the same questionnaire, and can also be used on more than one questionnaire. 
 

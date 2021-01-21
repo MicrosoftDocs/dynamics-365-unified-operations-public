@@ -68,9 +68,9 @@ In this release, compensation analytics have been adjusted to accurately reflect
 
 With this release, the company placeholder displays the legal entity that is associated with the employment of the new employee.
 
-### The CDSJobPosition entity displays an error when valid to date is set (349387)
+### The CDSJobPosition table displays an error when valid to date is set (349387)
 
-In this release, the **Position detail** and the **Position duration** data sources on the **CDSJobPosition** entity allow for edits from Common Data Service to the **Date effective** fields. 
+In this release, the **Position detail** and the **Position duration** data sources on the **CDSJobPosition** table allow for edits from Dataverse to the **Date effective** columns. 
 
 ### For employee termination, the last day worked is populated on Assignment end date (332496)
 
