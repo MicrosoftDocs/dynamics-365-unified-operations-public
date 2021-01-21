@@ -38,7 +38,7 @@ This topic covers quick view modules and describes how to add them to site pages
 
 The quick view module allows a user to quickly view a product's information when browsing products on a list page, and then add the product to the cart without having to navigate to the product details page (PDP). The purpose of the module is to allow a user to add multiple items to the cart while browsing a list page. The quick view module provides an overview of the product information necessary to make an "add to cart" decision. The quick view module also provides a link to the PDP for more additional product details and options to buy.
 
-The quick view module is supported by the [Product collection](add-product-collection.md) and [Search results](search-result-module.md) modules.
+The quick view module is supported by the [Product collection](product-collection-module-overview.md) and [Search results](search-result-module.md) modules.
 
 > [!IMPORTANT]
 > The quick view module is available as of the Dynamics 365 Commerce version 10.0.17 release.
@@ -80,6 +80,6 @@ To add a quick view module to a product collection module in site builder, follo
 
 [Buy box module](add-buy-box.md)
 
-[Product collection module](add-product-collection.md)
+[Product collection module](product-collection-module-overview.md)
 
 [Search results module](search-result-module.md)
