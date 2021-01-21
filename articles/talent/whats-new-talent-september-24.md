@@ -37,8 +37,8 @@ This topic describes features that are either new or changed in Core HR.
 ## Currency added to Benefits
 
 Benefit plans have been updated to include the currency of the benefit. This new
-field is also available on worker enrolled benefits. 
-This new field is part of the Maintain benefits and View a list of benefits security privilege.
+column is also available on worker enrolled benefits. 
+This new column is part of the Maintain benefits and View a list of benefits security privilege.
 
 ## Update proration process – Leave and Absence
 

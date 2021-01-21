@@ -52,21 +52,21 @@ Changes described in this section apply to build number 8.1.2297. The numbers in
 
 When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, which allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, please contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-In this week's release, the following Common Data Service entities now support custom fields: Employment, Benefit calc frequency, Benefit calc rate, Work calendar holiday, and Identification type.
+In this week's release, the following Dataverse tables now support custom columns: Employment, Benefit calc frequency, Benefit calc rate, Work calendar holiday, and Identification type.
 
-### Common Data Service integration page
+### Dataverse integration page
 
-This release provides a new option in **System Administration > Links > Integrations > Common Data Service configuration**. The **Common Data Service configuration** option allows an administrator or data management administrator some flexibility and insights with the Common Data Service. With this option, you can enable or disable Common Data Service integration with a Talent instance and view the sync details between the Talent instance and the Common Data Service.
+This release provides a new option in **System Administration > Links > Integrations > Dataverse configuration**. The **Dataverse configuration** option allows an administrator or data management administrator some flexibility and insights with the Dataverse. With this option, you can enable or disable Dataverse integration with a Talent instance and view the sync details between the Talent instance and the Dataverse.
 
 ### Import performance data with final employee rating (316710)
 
-In this release, you can import historical employee rating data. The **FinalEmployeeRatingId** field now has write permission.
+In this release, you can import historical employee rating data. The **FinalEmployeeRatingId** column now has write permission.
 
-### Can't create Worker address in Common Data Service and sync it with Talent (317555)
+### Can't create Worker address in Dataverse and sync it with Talent (317555)
 
-This change allows address data created in Common Data Service to sync with Talent.
+This change allows address data created in Dataverse to sync with Talent.
 
 ## In preview
 

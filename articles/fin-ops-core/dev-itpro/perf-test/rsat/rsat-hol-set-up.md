@@ -29,12 +29,13 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 ---
 
 # Set up and install Regression suite automation tool tutorial
-This topic is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT. 
 
-[!include [banner](../includes/banner.md)]
+This topic is a tutorial that helps you get setup and get started with RSAT and the tools associated with using RSAT.
+
+[!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> Use your internet browser tools to download and save this page in PDF format. 
+> Use your internet browser tools to download and save this page in PDF format.
 
 ## Key concepts
 
@@ -63,7 +64,8 @@ This topic is a tutorial that helps you get setup and get started with RSAT and 
 Make sure that the user is created in Azure DevOps and has a subscription level that provides access to Azure Test Plans. An Azure DevOps Test Plans license is required only if the user will create and manage test cases (that is, not all RSAT users require this license). For information about the license requirements, see [License requirements](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
 
 ### Create a new Azure DevOps project
-RSAT uses Azure Devops for test case and test suite management, reporting, and investigating test run results. 
+
+RSAT uses Azure Devops for test case and test suite management, reporting, and investigating test run results.
 
 > [!NOTE]
 > You can use an existing Azure DevOps project. However, if your existing Azure DevOps project is set up so that it has a custom template, you will receive a "VSTS Sync Failure" error when you sync test cases from Business process modeler (BPM) to Azure DevOps (see the [Test the synchronization from BPM to Azure DevOps](#test-the-synchronization-from-bpm-to-azure-devops) section). If the following best practices have been followed for the custom template, you will be able to sync the test cases to Azure DevOps. (These best practices are listed in the error message.)
@@ -128,7 +130,7 @@ For your LCS project, you can use an existing customer implementation or partner
 1. Go to the LCS implementation project.
 2. Select the **Settings** button (the gear symbol) in the upper-right corner, and then select **Language preference**.
 
-    ![Commands on the Settings menu](./media/setup_rsa_tool_09.png)
+    ![Update language preference](./media/setup_rsa_tool_09.png)
 
 3. In the **Preferred language** field, select **English (United States)**, and then select **Save**.
 
@@ -245,7 +247,7 @@ Create a corresponding task recording that you can attach to the simple business
 1. Open the client.
 2. On the main dashboard, select the **Settings** button (the gear symbol), and then select **Task recorder**.
 
-    ![Commands on the Settings menu](./media/setup_rsa_tool_27.png)
+    ![Select Task recorder on Settings menu](./media/setup_rsa_tool_27.png)
 
 3. Select **Create recording**.
 
@@ -261,11 +263,11 @@ Create a corresponding task recording that you can attach to the simple business
 
 6. Select **Save to Lifecycle Services**.
 
-    ![Save options](./media/setup_rsa_tool_31.png)
+    ![Save task recording to Lifecycle Services](./media/setup_rsa_tool_31.png)
 
     Library information is loaded from LCS.
 
-    ![Progress indicator](./media/setup_rsa_tool_32.png)
+    ![Loading library information](./media/setup_rsa_tool_32.png)
 
 7. Select the BPM library to associate the task recording with. For this tutorial, select the **RSAT** BPM library that was created earlier and the **Create a product** business process under it. Then select **OK**.
 
@@ -279,7 +281,7 @@ Create a corresponding task recording that you can attach to the simple business
 
     1. After the recording is completed, select **Save to this PC**.
 
-        ![Save options](./media/setup_rsa_tool_35.png)
+        ![Save to this PC](./media/setup_rsa_tool_35.png)
 
     2. In the browser's Notification bar, select **Save** or **Save As** to save the file on your local computer.
 
@@ -320,7 +322,7 @@ Now that a task recording is attached to the business process, you must validate
 
     > [!NOTE]
     > If the **Sync test cases** option isn't available after you refresh the page, go to main page for BPM, and select **Sync test cases** for the whole library itself. In this way, you effectively force a synchronization for the whole library.
-    > 
+    >
     > ![Selecting Sync test cases for the whole library](./media/setup_rsa_tool_42.png)
 
     After Sync test cases is completed, a new test case is created on the **Requirements** tab.
@@ -350,7 +352,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 1. To generate a certificate file, open a Microsoft Windows PowerShell window as an admin, and run the following command.
 
-    ```
+    ```powershell
     $certificate = New-SelfSignedCertificate -dnsname 127.0.0.1 -CertStoreLocation cert:\LocalMachine\My -FriendlyName "D365 Automated testing certificate" -Provider "Microsoft Strong Cryptographic Provider"
     ```
 
@@ -372,7 +374,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 6. To get the thumbprint of the installed certificate, but without spaces or special characters, open a Windows PowerShell window as an admin, and run the following commands.
 
-    ```
+    ```powershell
     cd Cert:\LocalMachine\My
 
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
@@ -397,7 +399,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 4. Update the **wif.config** file by adding a new authority entry for your certificate and authority name, as shown in the following example.
 
-    ```
+    ```Xml
     <issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry,Microsoft.Dynamics.AX.Security.SharedUtility">
         <authority name="CN=127.0.0.1">
             <keys>
@@ -427,7 +429,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 If a Tier 2+ (Standard Acceptance Test sandbox or higher) environment is used, verify or set the following registry setting on the computer where RSAT is installed. This step is required because it helps you avoid authentication or RSAT connection errors.
 
-```
+```PowerShell
 if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 {
     Set-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
@@ -497,7 +499,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
 
 2. You receive a warning message that states, "The Regression Suite Automation Tool requires Selenium, do you want to automatically download and install it now?" Select **Yes**.
 
-    ![Warning message](./media/setup_rsa_tool_61.png)
+    ![Warning message that Regression Suite Automation Tool requires Selenium](./media/setup_rsa_tool_61.png)
 
 3. Select the **Settings** button (the gear symbol) in the upper-right corner, and then, in the dialog box that appears, fill in the following fields:
 
@@ -580,7 +582,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
 
     The test case is run, and the **Result** field is updated.
 
-    ![Progress indicator](./media/setup_rsa_tool_72.png)
+    ![Updated Result field](./media/setup_rsa_tool_72.png)
 
     If you've followed this tutorial as it's written, the **Create a new product** test case will fail, because the task recording for creating a product saved the product name as a hard-coded value. If you rerun the same test case, you should receive an error message, because the product already exists.
 
@@ -634,7 +636,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
 
 3. To generate a unique product number for each run without having to reopen the Excel parameter file and manually update the product number every time, use the following Excel formula.
 
-    ```
+    ```vba
     ="RSAT_"&TEXT(NOW(),"yyymmddhhmm")
     ```
 
@@ -683,7 +685,7 @@ In this section, you will create a saved variable in the first test case, create
 
     BPM libraries are loaded from LCS.
 
-    ![Progress indicator](./media/setup_rsa_tool_88.png)
+    ![Loading BPM libraries](./media/setup_rsa_tool_88.png)
 
 6. After the BPM libraries are loaded from LCS, select the **RSAT** BPM library and the **Create a new product** business process that the task recording was associated with. Then select **OK**.
 
@@ -746,11 +748,11 @@ In this section, you will create a saved variable in the first test case, create
 
 1. After the task recording is completed, select **Save to Lifecycle Services**.
 
-    ![Save options](./media/setup_rsa_tool_98.png)
+    ![Save completed task recording to Lifecycle Services](./media/setup_rsa_tool_98.png)
 
 2. Library information is loaded from LCS.
 
-    ![Progress indicator](./media/setup_rsa_tool_99.png)
+    ![Loading library information from LCS](./media/setup_rsa_tool_99.png)
 
 3. Select the BPM library to associate the task recording with. For this tutorial, select the **RSAT** BPM library that was created earlier and the **Release a product** business process under it. Then select **OK**.
 
@@ -779,7 +781,7 @@ In this section, you will create a saved variable in the first test case, create
 1. Open RSAT, and select **Load**.
 2. The test cases are loaded, and you receive a warning that states, "This action will overwrite Excel test data files, local changes will be lost. Do you want to proceed?" Select **Yes** to update the Excel parameter files in the local system but not the Excel parameter files that were uploaded to Azure DevOps.
 
-    ![Warning message](./media/setup_rsa_tool_102.png)
+    ![This action will overwrite Excel test data files](./media/setup_rsa_tool_102.png)
 
     Both the test cases are loaded, together with the Excel parameter file for the first test case. Because you selected **Upload** in the last run, the parameter files are pulled from Azure DevOps.
 

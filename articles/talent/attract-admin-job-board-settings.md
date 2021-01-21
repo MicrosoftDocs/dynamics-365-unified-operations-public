@@ -46,7 +46,7 @@ You want to get your open positions in front of as many qualified candidates as 
 
 2. Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.
 
-3. Contact Broadbean, and enter your information in the **Username**, **Client ID**, and **Encryption Token** fields.
+3. Contact Broadbean, and enter your information in the **Username**, **Client ID**, and **Encryption Token** columns.
 
 4. Select **Save**.
 

@@ -76,13 +76,13 @@ In the **New worker** form, **Personnel number** now displays in the banner for 
 
 In this release, **Compensation start date** determines the level assigned to the new job.
 
-### Custom pick list fields in the Position table aren't synchronized to Common Data Service (387503)
+### Custom pick list columns in the Position table aren't synchronized to Dataverse (387503)
 
-With this release, pick list items are now synchronized with Common Data Service.
+With this release, pick list items are now synchronized with Dataverse.
 
-### Worker address entity doesn't synchronize with Common Data Service while importing new data (349673)
+### Worker address table doesn't synchronize with Dataverse while importing new data (349673)
 
-In this week's release, address data now synchronizes with Common Data Service while importing new data.
+In this week's release, address data now synchronizes with Dataverse while importing new data.
 
 ## In preview
 
