@@ -5,7 +5,7 @@ title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting (ER) destinations, the types of destinations that are supported, and security considerations.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -101,7 +101,7 @@ For example, you can use this capability to configure file destinations for a fi
 
 [![Configuring multiple destinations for a single format element](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
-As you can see from the described above, when you run an ER format, all destinations that were configured for components of this format are always executed. In addition to that, in versions of Finance **10.0.17 and later**, the ER destinations functionality has been improved allowing to configure for a single ER format different sets of destinations marking each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) allowing to provide an action that user performs by running an ER format. The provided action code is passed to ER destinations. So, starting from this version of Finance, you can execute different destinations of an ER format depending on the provided action code. For more, see [Configure action dependent ER destinations](er-action-dependent-destinations.md).
+When you run an ER format, all destinations that were configured for components of the format are always executed. In addition, in Finance versions **10.0.17 and later**, the ER destinations functionality has been improved to allow you to configure different sets of destinations for a single ER format. This configuration marks each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) allowing to provide an action that the user performs by running an ER format. The provided action code is passed to ER destinations. You can execute different destinations of an ER format depending on the provided action code. For more information, see [Configure action dependent ER destinations](er-action-dependent-destinations.md).
 
 ## Destination types
 
