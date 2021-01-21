@@ -36,13 +36,13 @@ This topic summarizes answers to questions frequently asked by users of the Dyna
 
 ## After upgrading to module library version 9.27 (Commerce version 10.0.17 release), a partner using any buy box module view extension may see a compile error.
 
-The compile error is due to code sharing related to the product quick view module that was introduced in the Commerce version 10.0.17 release. The quick view module shares most of the functionality with the buy box module, and common components were moved from the buy box module to a common folder so that the buy box and quick view modules can share the code.
+The compile error is due to code sharing related to the product quick view module that was introduced in the Commerce version 10.0.17 release. The quick view module shares most of the functionality with the buy box module, and some common components were moved to a common folder so that the buy box and quick view modules can share the code.
 
-The mitigation to resolve the compilation error is to update any reference errors in the buybox.tsx view file, as shown in the examples below.
+The mitigation to resolve the compilation error is to update any import references in the buybox.tsx view file, as shown in the examples below.
 
 Example of legacy code showing imports in buybox.view.tsx:
 
-```ts
+```typescript
 import { IBuyboxViewProps } from '../..';
 import {
     IBuyboxAddToCartViewProps,
@@ -58,7 +58,7 @@ import {
 ```
 Example of new code showing imports in buybox.view.tsx:
 
-```ts
+```typescript
 import { IBuyboxAddToCartViewProps, IBuyboxAddToOrderTemplateViewProps, IBuyboxAddToWishlistViewProps, IBuyboxKeyInPriceViewProps, IBuyboxProductConfigureDropdownViewProps, IBuyboxProductConfigureViewProps, IBuyboxProductQuantityViewProps, IBuyboxShopSimilarLookViewProps } from '../../common';
 import { IBuyboxViewProps } from './buybox';
 import { IBuyboxFindInStoreViewProps } from './components/buybox-find-in-store';
