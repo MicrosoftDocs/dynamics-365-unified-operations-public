@@ -51,7 +51,7 @@ The following features are generally available with this release.
 | Feature name or short description | Release plan title and link | Doc title and link |
 | #HCM & HCMFabric Deliverables | -- | -- |
 | ## ACA Compliance 2020 - (510677)- Updates to the 1095C 1095B and Electronic reporting in Legacy Benefits to support ACA compliance reporting for 2020 | -- |--  | 
-| ## Uptake ACA into new benefits - (439591) - Benefits Management feature now supports ACA compliance reporting for US based Legal entities.| NA | [Generate ACA reports in Benefits Management](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-management-aca-reports) |
+| ## Uptake ACA into new benefits - (439591) - Benefits Management feature now supports ACA compliance reporting for US based Legal entities.| NA | [Generate ACA reports in Benefits Management](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-management-aca-reports) |
 | ## Benefit Rate Tier entity - (508324) - Benefits Management now has "Benefit rate tiers" & "Benefit rate double tiers" entities exposed  |-- | -- |
 | ## Recruiting request toggle is moved to shared parameters - (540416) | | |
 | ## Regular translation checkins for supported HCM languages - (394249) | | |
