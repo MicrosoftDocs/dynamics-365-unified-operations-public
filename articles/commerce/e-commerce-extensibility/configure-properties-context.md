@@ -270,16 +270,16 @@ The following examples show a module definition file and a module definition ext
 
 ## Conflict resolution scenarios
 
-The following tables list possible scenarios and expected outcomes when dependency schemas are used with module definition and module definition extension files.
+The following tables list possible scenarios and expected outcomes when schema dependencies are used with module definition and module definition extension files.
 
 ### Regular scenarios
 
 | Scenario | Expected outcome |
 |----------|------------------|
-| A dependency schema is used only in the module definition file. No conflicts exist between properties in the dependency schema and the module definition extension file. | The dependency schema is applied. |
-| A dependency schema is used only in the module definition extension file. No conflicts exist between properties in the dependency schema and the module definition extension file. | The dependency schema is applied. |
-| A dependency schema is used only in the module definition file. A conflict exists between properties in the dependency schema and the module definition extension file. For example, property A is declared both in the dependency schema of the module definition file and in the module definition extension file, which doesn't have a dependency schema. | A build error occurs. |
-| A dependency schema on the same property is used both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
+| A schema dependency is used only in the module definition file. No conflicts exist between properties in the schema dependency and the module definition extension file. | The schema dependency is applied. |
+| A schema dependency is used only in the module definition extension file. No conflicts exist between properties in the schema dependency and the module definition extension file. | The schema dependency is applied. |
+| A schema dependency is used only in the module definition file. A conflict exists between properties in the schema dependency and the module definition extension file. For example, property A is declared both in the schema dependency of the module definition file and in the module definition extension file, which doesn't have a schema dependency. | A build error occurs. |
+| A schema dependency on the same property is used both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
 | The same property is defined both in the module definition file and in the module definition extension file. | The module definition file takes precedence. |
 
 ### Override scenarios
@@ -287,10 +287,10 @@ The following tables list possible scenarios and expected outcomes when dependen
 | Scenario | Expected outcome |
 |----------|------------------|
 | The same property is defined both in the module definition file and in the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. |
-| A dependency schema on the same property is used both in the module definition file and in the module definition extension file. The **override** property is set to **true** for the property in the module definition extension file. | The module definition extension file takes precedence. |
-| A dependency schema on the same property is used both in the module definition file and in the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. | 
-| The same property is defined both in the module definition file and in the dependency schema of the module definition extension file. The **override** property is set to **true** for the property in the module definition extension file. | The module definition extension file takes precedence. |
-| The same property is defined both in the module definition file and in the dependency schema of the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. |
+| A schema dependency on the same property is used both in the module definition file and in the module definition extension file. The **override** property is set to **true** for the property in the module definition extension file. | The module definition extension file takes precedence. |
+| A schema dependency on the same property is used both in the module definition file and in the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. | 
+| The same property is defined both in the module definition file and in the schema dependency of the module definition extension file. The **override** property is set to **true** for the property in the module definition extension file. | The module definition extension file takes precedence. |
+| The same property is defined both in the module definition file and in the schema dependency of the module definition extension file. Either no **override** property is set for the property in the module definition extension file, or the **override** property is set to **false**. | The module definition file takes precedence. |
 
 ## Additional resources
 
