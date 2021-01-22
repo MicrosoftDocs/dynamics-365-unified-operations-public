@@ -78,7 +78,7 @@ Describes a request to recruit for a job.
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type*	| Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Read-only<br>Required<br>System-generated | A user-readable unique identifier for the request displayed in the HR application. Number sequence. |
 | **Recruiting Request Entity ID**<br>mshr_hcmrecruitingrequestentityid<br>*GUID* | Read-only<br>Required<br>System-generated | A system-generated GUID value to uniquely identify the recruiting request. |
@@ -145,7 +145,7 @@ Describes the position or positions to fill for a Recruiting Request. Adding a p
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Recruiting Request Position Entity ID**<br>mshr_hcmrecruitingrequestpositionentityid<br>*GUID* | Read-only<br>Required |	System-generated identifier of the recruiting request position record. |
 | **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the recruiting request. |
@@ -198,7 +198,7 @@ Describes skill requirements for a RecruitingRequest.
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Recruiting Request Skill Entity ID**<br>mshr_hcmrecruitingrequestskillentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the **Recruiting Request Skill** record. |
 | **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the associated recruiting request. |
@@ -244,7 +244,7 @@ Describes educational requirements for a RecruitingRequest.
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Recruiting Request Education Entity ID**<br>mshr_hcmrecruitingrequesteducationentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the Recruiting Request Education record. |
 | **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the related recruiting request. |
@@ -292,7 +292,7 @@ The list of locations defined as locations where recruited employees will work u
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Location ID**<br>mshr_locationid<br>*String* | Write-once<br>Required | The system-generated, user-readable identifier for the recruiting location. |
 | **Recruiting Request Location**<br>mshr_recruitingrequestlocationid<br>*String* | Write-once<br>Required | User-defined unique identifier for the recruiting location. |

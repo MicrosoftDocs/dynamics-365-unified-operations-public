@@ -81,7 +81,7 @@ When creating an internal candidate record (a candidate for the position who alr
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Candidate to Hire Entity ID**<br>mshr_hcmcandidatetohireentityid<br>GUID | Read-only<br>Required<br>System-generated | A system-generated unique identifier for the entity record. |
 | **Candidate ID**<br>mshr_candidateid<br>String | Read-only<br>Required<br>System-generated | A unique identifier for the entity. |
@@ -211,7 +211,7 @@ This entity provides the personal information for the individual who is the cand
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Person Entity ID**<br>mshr_dirpersonentityid<br>*GUID* | Read-only<br>Required<br>System-generated | A system-generated unique identifier for the entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read-only<br>Required<br>System-generated | A user-readable, system-generated unique identifier for the person.  |
@@ -392,7 +392,7 @@ This entity describes professional experience or work history of a candidate.
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Person Professional Experience Entity ID**<br>mshr_hcmpersonprofessionalexperienceentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | Unique identifier of the person record for the candidate. |
@@ -441,7 +441,8 @@ This entity contains the list of postal addresses for candidate records.
 ```
 
 ### Properties
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Person Address Entity ID**<br>mshr_hcmpersonaddressentityid<br>*String* | Read-only<br>Required | System-generated unique identifier for the entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The ID of the associated party (person) record. |
@@ -492,7 +493,7 @@ This entity describes the candidate’s contact information, including phone, em
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Party Contact Entity ID**<br>mshr_dirpartycontactentityid<br>*String* | Read-only<br>Required | System-generated unique identifier for the entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The ID of the associated party (person) record. |
@@ -544,7 +545,7 @@ This entity describes skills possessed by a candidate.
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Person Skill Entity ID**<br>mshr_hcmpersonskillentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | 	The ID of the associated party (person) record. |
@@ -589,7 +590,7 @@ This entity provides the available rating levels for skills. Rating levels apply
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Rating Level Entity ID**<br>mshr_hcmratinglevelentityid<br>*GUID* | Read-only<br>Required<br>System-generated | The system-generated unique identifier for the level. |
 | **Rating Level ID**<br>mshr_ratinglevelid<br>*String* | Read/write<br>Required | User-readable unique identifier for the level. |
@@ -626,7 +627,7 @@ This entity describes professional certificates possessed by a candidate.
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Person Certificate Entity ID**<br>mshr_hcmpersoncertificateentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the person certificate entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The party (person) ID of the candidate. |
@@ -659,7 +660,7 @@ This entity defines the list of professional certificate types set up in Human R
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Certificate Type Entity ID**<br>mshr_hcmcertificatetypeentityid<br>*GUID* | Read-only<br>Required 
 System-generated | Unique primary identifier for the certificate type. |
@@ -693,7 +694,7 @@ This entity describes screenings a candidate has passed or must pass for employm
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Person Screening Entity ID**<br>mshr_hcmpersonscreeningentityid<br>*GUID* | Read-only<br>Required<br>System-generated | Unique primary identifier for the person screening record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The party (person) number associated with the candidate. |
@@ -728,7 +729,7 @@ This entity describes the screening types set up by the company for pre-employme
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Screening Type Entity ID**<br>mshr_hcmscreeningtypeentityid<br>*GUID* | Read-only<br>Required<br>System-generated | Unique primary identifier for the screening type record. |
 | **Screening Type ID**<br>mshr_screeningtypeid<br>*String* | Read/write<br>Required | User-defined unique identifier for the screening type. |
@@ -768,7 +769,7 @@ This entity describes the identification numbers for the person who is the candi
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Person Identification Number Entity ID**<br>mshr_hcmpersonidentificationnumberentityid<br>*GUID* | Read-only<br>Required<br>System-generated | Unique primary identifier for the person identification number record. |
 | **Entry Type**<br>mshr_entrytype<br>*String* | Read-write<br>Optional | Free value to reference the type of entry for the identification number. |
