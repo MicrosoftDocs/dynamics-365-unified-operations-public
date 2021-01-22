@@ -53,7 +53,7 @@ The following features are generally available with this release.
 | ## ACA Compliance 2020 - (510677)- Updates to the 1095C 1095B and Electronic reporting in Legacy Benefits to support ACA compliance reporting for 2020 | -- |--  | 
 | ## Uptake ACA into new benefits - (439591) - Benefits Management feature now supports ACA compliance reporting for US based Legal entities.| NA | [Generate ACA reports in Benefits Management](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-management-aca-reports) |
 | ## Benefit Rate Tier entity - (508324) - Benefits Management now has "Benefit rate tiers" & "Benefit rate double tiers" entities exposed  |-- | -- |
-| ## Add primary email address to BaseWorker entity - (541978) | | |
+
 
 ### Bug fixes
 
@@ -79,6 +79,7 @@ The following bug fixes are included in this release.
 | 534846 | Recruiting entities must be enabled for Data Management | The new entities created for recruiting requests and candidates are now enabled for Data Management. This allows change tracking to be enabled for the entities, enabling the OData change tracking on the Microsoft Dataverse virtual entities. |
 | | ## Zip code not populating on electronic reporting - (543641) | |
 | 533474 | Fix missing reference to Microsoft.SqlServer.XEvent.dll | Assembly load exceptions for Microsoft.SqlServer.XEvent.dll were blocking Microsoft Dataverse virtual entities from being set up in some environments. |
+| 481122 | "People" Workspace showing retired positions | Retired positions were being displayed as open positions in the People workspace. Retired positions will no longer be displayed | 
 
 ## In preview
 
