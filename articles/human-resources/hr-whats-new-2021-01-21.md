@@ -70,7 +70,6 @@ The following bug fixes are included in this release.
 | 542815 | Personal contact screen in ESS allows employees to see others personal contacts | Fixed error where the Edit form for ESS Personal Contacts does not restrict it's query enough to guarantee that only a single personal contact is retrieved allowing for a user to use keyboard shortcuts to view other people's contacts |
 | 536157 | Cannot open Common Data service Configuration in System administration due call to IsVirtualEntityPackageInstalled() | Issue preventing the Microsoft Dataverse integration page from loading in the Dynamics 365 Human Resources application. |
 | | ## Navigation error " Form was called incorrectly" when we try to look at deductions. - (533079) | |
-| | ## "People" Workspace still showing retired positions - (481122) | |
 | 537264 | Personal information fast tab missing from candidate record | Personal information for the candidate is now available on the candidate record. |
 | 537267 | Professional experience doesn't display on internal candidate records | The Professional experience fast tab now displays on internal candidate records. Previously, if the candidate is internal, then "Professional experience" is replaced by "Employment history", which is the candidate's employment history within the organization. Both are applicable and must display for internal candidates. |
 | 537067 | Allow Contact Employer is not in the app UI | The **Allowed to contact employer** control is added to the **Edit professional experience** pane for a candidate record. |
