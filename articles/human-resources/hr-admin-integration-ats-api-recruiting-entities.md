@@ -198,7 +198,9 @@ Describes skill requirements for a RecruitingRequest.
 
 ### Properties
 
-| Property<br>**Physical name**<br>**_Type_** | Use | Description |
+### Properties
+
+| **Property**<br>Physical name<br>*Type* | Use | Description |
 | --- | --- | --- |
 | **Recruiting Request Skill Entity ID**<br>mshr_hcmrecruitingrequestskillentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the **Recruiting Request Skill** record. |
 | **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the associated recruiting request. |
