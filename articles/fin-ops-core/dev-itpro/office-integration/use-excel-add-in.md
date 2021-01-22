@@ -112,7 +112,7 @@ You can use the designer to adjust the columns that are automatically added to t
 5. If you added a field (column), select **Refresh** to pull in an updated set of data.
 
 ## Change the publish batch size 
-When users publish changes to data records using the Excel add-in, the updates are submitted in batches; the default batch size is 100 rows. Starting in 10.0.17 / Platform update 41, the **Allow configuration of the publish batch size in the Excel add-in** feature allows flexibility in controlling the publish batch size. 
+When users publish changes to data records using the Excel add-in, the updates are submitted in batches; the default batch size is 100 rows. Starting in version 10.0.17, the **Allow configuration of the publish batch size in the Excel add-in** feature allows flexibility in controlling the publish batch size. 
 
 System administrators can specify a system-wide limit on the publish batch size for “Open in Excel” workbooks by modifying the **Publish batch limit** field on the App parameters section of the **Office app parameters** page. 
 
