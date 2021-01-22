@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Manage shipping containers
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Shipping containers are used to group goods that either are physically grouped together or are required to share costs only across those goods (normally because they are physically together).
 

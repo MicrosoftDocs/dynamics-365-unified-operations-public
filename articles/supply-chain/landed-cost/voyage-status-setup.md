@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Voyage status setup
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The **Voyage statuses** settings establish the set of status values that users can assign to voyages. Users can assign voyage status values for all levels of a voyage (voyage, shipping container, folio, purchase order, and item (purchase lines, transfer order line)). They are used for two purposes:
 
