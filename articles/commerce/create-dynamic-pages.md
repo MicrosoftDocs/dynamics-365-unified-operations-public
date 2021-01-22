@@ -100,4 +100,4 @@ Once published, the custom page will now be served instead of the dynamic page w
 
 [Verify page content accessibility](verify-accessibility.md)
 
-[Online channel extensibility](e-commerce-extensibility/overview.md
+[Online channel extensibility](e-commerce-extensibility/overview.md)
