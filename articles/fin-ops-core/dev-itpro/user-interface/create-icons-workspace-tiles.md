@@ -55,10 +55,10 @@ Guidelines for creating images for custom workspace tiles are below. The recomme
 Following these recommendations ensures that your workspace icon matches the styling and size of other workspace icons and that the content of your workspace icon does not get cropped by the CSS applied to the image.
 
 -   The image file should be a PNG file with a 1:1 aspect ratio.
--   The recommended minimum image size is 50 x 50 pixels, with the icon contains in a square centered within the image. For the minimum 50 x 50 px image, the icon should be contained in a **30 x 30 px** square in the center of the image (see the illustration below). 
+-   The recommended minimum image size is 50 × 50 pixels (px), where the icon is contained in a square that is centered in the image. For the minimum 50 × 50 px image size, the icon should be contained in a **30 × 30 px** square in the center of the image (see the illustration that follows).
 
-> [!NOTE]
-> The crispness of out-of-box workspace icons versus custom workspace icons may differ at various zoom levels. This is due to PNGs having a fixed resolution, whereas out-of-the-box workspace icons are font glyphs that scale smoothly. You may consider create larger images with the same relative dimensions for better resolution at various zoom levels (e.g. 200 x 200 px or 400 x 400 px images). 
+    > [!NOTE]
+    > The crispness of out-of-box workspace icons and custom workspace icons might differ at different zoom levels. The reason for this difference is that images in PNG format have a fixed resolution, whereas out-of-box workspace icons are font glyphs that scale smoothly. For better resolution at different zoom levels, consider creating larger images that have the same relative dimensions. For example, create 200 × 200 px or 400 × 400 px images.
 
 -   The icon should have a **white background with transparent content**. 
 -   The framework will set a default background color for the transparent portions of your image so that it will match the current user theme.
