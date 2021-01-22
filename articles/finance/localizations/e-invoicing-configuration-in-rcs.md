@@ -44,30 +44,30 @@ preview:
 
 #### Generally available features:
 
-| Country/Region    | Business document                        |
-|-------------------|------------------------------------------|
-| Egypt             | Sales and Project invoices               |
+| Country/Region    | Feature name                             | Business document                      |
+|-------------------|------------------------------------------|----------------------------------------|
+| Egypt             | Egypt e-Invoicing                        | Sales and Project invoices             |
 
 #### Preview features:
 
-| Country/Region    | Business document                        |
-|-------------------|------------------------------------------|
-| Austria           | Sales and Project invoices               |
-| Belgium           | Sales and Project invoices               |
-| Brazil            | Fiscal document model 55 (NF-e)          |
-|                   | Service fiscal document ABRASF (NFS-e)   |
-|                   | Service fiscal document São Paulo city   |
-| Denmark           | Sales and Project invoices               |
-| Estonia           | Sales and Project invoices               |
-| Finland           | Sales and Project invoices               |
-| France            | Sales and Project invoices               |
-| Germany           | Sales and Project invoices               |
-| Italy             | Sales and Project invoices               |
+| Country/Region    | Feature name                             | Business document                      |
+|-------------------|------------------------------------------|----------------------------------------|
+| Austria           | Austrian electronic invoices (AT)        | Sales and Project invoices             |
+| Belgium           | Belgian electronic invoice (BE)          | Sales and Project invoices             |
+| Brazil            | NF-e                                     | Fiscal document model 55 (NF-e)        |
+| Brazil            | NFS-e ABRASF Curitiba                    | Service fiscal document                |
+| Brazil            | NFS-e São Paulo city                     | Service fiscal document                |
+| Denmark           | Danish electronic invoice (DK)           | Sales and Project invoices             |
+| Estonia           | Estonian electronic invoice (EE)         | Sales and Project invoices             |
+| Finland           | Finnish electronic invoice (FI)          | Sales and Project invoices             |
+| France            | French electronic invoice (FR)           | Sales and Project invoices             |
+| Germany           | German electronic invoice (DE)           | Sales and Project invoices             |
+| Italy             | FatturaPA (IT)                           | Sales and Project invoices             |
 | Mexico            | CFDI invoice                             |
-| Netherlands       | Sales and Project invoices               |
-| Norway            | Sales and Project invoices               |
-| Spain             | Sales and Project invoices               |
-| Europe            | PEPPOL Sales and Project invoices        |
+| Netherlands       | Dutch electronic invoice (NL)            | Sales and Project invoices             |
+| Norway            | Norwegian electronic invoice (NO)        | Sales and Project invoices             |
+| Spain             | Spanish electronic invoice (ES)          | Sales and Project invoices             |
+| Europe            | PEPPOL electronic invoice                | PEPPOL Sales and Project invoices      |
 
 ### Electronic invoicing feature configurable components
 
@@ -126,9 +126,27 @@ configurable components:
 
 ### Formats
 
+The following table lists the available of ER format configurations for the serveral Electronic invoicing features:
+
+| Austrian electronic invoices (AT): Sales and Project invoices for Austria    |
+|------------------------------------------------------------------------------|
+| OIOUBL Sales invoice                                                         |
+| OIOUBL Project invoice                                                       |
+| OIOUBL Sales credit note                                                     |
+| OIOUBL Project credit note                                                   |
+
+| Belgian electronic invoice (BE): Sales and Project invoices for Belgium      |
+|------------------------------------------------------------------------------|
+| UBL Sales invoice BE                                                         |
+| UBL Project invoice BE                                                       |
+| UBL Project credit note BE                                                   |
+| UBL Sales credit note BE                                                   |
+
+
 
 ### Actions
 
+The following table lists the available Actions and the availability status (Preview or Generally available):
 | Action                                        | Description                                                 | Availability                |
 |-----------------------------------------------|-------------------------------------------------------------|-----------------------------|
 | Transform document                            | Generates a file following a given ER format configuration  | Preview                     |
