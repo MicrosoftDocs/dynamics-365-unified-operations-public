@@ -33,24 +33,24 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations.
+This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations apps.
 
 By opening entity data in Excel, you can quickly and easily view and edit the data by using the Excel add-in. This add-in requires Microsoft Excel 2016 or newer.
 
 > [!NOTE]
 > If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update for Office has been applied, so that the Excel add-in can correctly sign you in.
 
-To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
+To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns](https://youtu.be/RTicLb-6dbI) video.
 
-## Open entity data in Excel when you start from Finance and Operations
-1. On a page in Finance and Operations, select **Open in Microsoft Office**.
+## Open entity data in Excel when you start from Finance and Operations apps
+1. On a page in a Finance and Operations app, select **Open in Microsoft Office**.
 
     If the root data source (table) for the page is the same as the root data source for any entities, default **Open in Excel** options are generated for the page. **Open in Excel** options can be found on frequently used pages, such as **All vendors** and **All customers**.
  
 2. Select an **Open in Excel** option, and open the workbook that's generated. This workbook has binding information for the entity, a pointer to your environment, and a pointer to the Excel add-in.
 3. In Excel, select **Enable editing** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4. If you're running the Excel add-in for the first time, select **Trust this Add-in**.
-5. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to Finance and Operations. The Excel add-in will use a previous sign-in context from a browser (see [Browsers used by Office add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins) for information on the browser used based on the operating system) and automatically sign you in, if it can. To ensure this was successful, verify the user name in the upper-right corner of the Excel add-in.
+5. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to the Finance and Operations app. The Excel add-in will use a previous sign-in context from a browser (see [Browsers used by Office add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins) for information on the browser used based on the operating system) and automatically sign you in, if it can. To ensure this was successful, verify the user name in the upper-right corner of the Excel add-in.
 
 The Excel add-in automatically reads the data for the entity that you selected. Note that there will be no data in the workbook until the Excel add-in reads it in.
 
@@ -59,7 +59,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 2. In the Office Store, search on the keyword **Dynamics**, and then select **Add** next to **Microsoft Dynamics Office Add-in** (the Excel add-in).
 3. If you're running the Excel add-in for the first time, select **Trust this Add-in** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4. Select **Add server information** to open the **Options** pane.
-5. In your browser, copy the URL of your target Finance and Operations instance, paste it into the **Server URL** field, and then delete everything after the host name. The resulting URL should have only the host name.
+5. In your browser, copy the URL of your target Finance and Operations app instance, paste it into the **Server URL** field, and then delete everything after the host name. The resulting URL should have only the host name.
 
     For example, if the URL is `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, delete everything except `https://xxx.dynamics.com`.
 
