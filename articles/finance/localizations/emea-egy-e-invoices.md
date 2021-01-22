@@ -62,6 +62,15 @@ Complete the following steps to configure registration numbers.
 > [!NOTE]
 > If registration type with **Enterprise ID (COID)** registration category already exists, then you can skip points 1 - 5 above.
 
+## Configure Electronic document property types
+Complete the following steps to configure Electronic document property type reqiored for Taxpayer activity code definition.
+
+1. Go to **Accounts receivable** > **Setup** > **Electronic document property types**.
+2. Create a new type and enter ***taxpayerActivityCode*** value in the **Type** field.
+3. Go to the **Applicability** menu item.
+4. Select the **CompanyInfo** value in the **Table name** field. 
+5. Save and close the **Electronic document property type applicability setup** form.
+6. Save and close the **Electronic document property types** form. 
 
 ## Configure Legal entity data
 ### Enter Legal entity address
