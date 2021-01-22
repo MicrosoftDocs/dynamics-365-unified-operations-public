@@ -192,8 +192,8 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 #### Supported gift cards
 | Scheme | Card present | Card not present |
 |---|:-:|---|
-| Givex | ✔ | Support will be added in a future release. |
-| SVS | ✔ | Support will be added in a future release. |
+| Givex | ✔ | ✔ |
+| SVS | ✔ | ✔ |
 
 To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
