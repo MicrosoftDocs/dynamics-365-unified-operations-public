@@ -37,7 +37,7 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 ## Deleting Financial Dimensions on a Position doesn't work as expected (445476)
 
-Removing dimensions from a position now removes those same positions from Common Data Service.
+Removing dimensions from a position now removes those same positions from Dataverse.
 
 ## Positions not in hierarchy show inactive positions (397257)
 
@@ -98,9 +98,9 @@ A DMF entity is now available for accrual suspensions.
 
 ## Coming soon
 
-## Checklist entities included in Common Data Service
+## Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ## Platform changes
 

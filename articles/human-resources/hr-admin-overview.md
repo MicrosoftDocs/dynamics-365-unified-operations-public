@@ -45,7 +45,7 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
 
 - Set up data integration
   - [Choose a data integration technology](hr-admin-integration-choose-technology.md)
-  - [Configure Common Data Service integration](hr-admin-integration-common-data-service.md)
+  - [Configure Dataverse integration](hr-admin-integration-common-data-service.md)
   - [Configure integration with Finance](hr-admin-integration-finance.md)
   - [Configure integration with Dayforce](hr-admin-integration-dayforce.md)
   - [Create a recurring data export app](hr-admin-integration-recurring-data-export.md)

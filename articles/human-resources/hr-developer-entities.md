@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Common Data Service entities
-description: Microsoft Dynamics 365 Human Resources uses Common Data Service to enable extensibility and integration scenarios.
+title: Dataverse entities
+description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -29,15 +29,15 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Common Data Service entities
+# Dataverse entities
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Microsoft Dynamics 365 Human Resources uses Common Data Service to enable extensibility and integration scenarios.
+Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 
-For more information about Common Data Service, see [What is Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
+For more information about Dataverse, see [What is Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
 
-The following Human Resources entities are available in Common Data Service.
+The following Human Resources entities are available in Dataverse.
 
 ## Benefit entities
 
@@ -99,7 +99,7 @@ The following Human Resources entities are available in Common Data Service.
 | Title | cdm_title |
 
 > [!NOTE]
-> Financial dimensions for **Position Type**, **Position Worker Assignment**, and **Employment** provide one-direction integration to Common Data Service. Financial dimensions updates currently can't synchronize from Common Data Service to Human Resources. 
+> Financial dimensions for **Position Type**, **Position Worker Assignment**, and **Employment** provide one-direction integration to Dataverse. Financial dimensions updates currently can't synchronize from Dataverse to Human Resources. 
 
 ## Leave and absence entities
 
@@ -183,4 +183,4 @@ The following Human Resources entities are available in Common Data Service.
 ## See also
 
 [Choose a data integration technology](hr-admin-integration-choose-technology.md)</br>
-[Configure Common Data Service integration](hr-admin-integration-common-data-service.md)
+[Configure Dataverse integration](hr-admin-integration-common-data-service.md)

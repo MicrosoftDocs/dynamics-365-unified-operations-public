@@ -38,7 +38,7 @@ This topic is a collection of frequently asked questions about virtual entities 
 
 Yes. The virtual entities are all generated in the Dynamics 365 HR Virtual Entities solution, which is API-managed. The items in the solution change as you make entities visible or hidden. However, the solution is still a managed solution that you can take dependency on. The schema and contract for each entity is maintained. The standard ALM flow just takes a standard reference to a virtual entity from this solution with the ISV solution's **Add existing** option. Missing dependency of the solution will be checked when the solution is imported. During import, if a specified virtual entity doesn't yet exist, the virtual entity is automatically made visible.
 
-### Which entities from Human Resources do users see in the catalog in Common Data Service?
+### Which entities from Human Resources do users see in the catalog in Dataverse?
 
 Generally, users see all entities where **IsPublic** is set to **Yes**. These entities are the same entities that are currently visible in Open Data Protocol (OData).
 
@@ -48,13 +48,13 @@ Any user of Microsoft Power Platform who tries to access Human Resources data th
 
 ### Where do I find the catalog entity?
 
-The entity catalog is listed on the **Virtual entities** tab of the **Common Data Service (CDS) integration** page in the Human Resources application. All available entities are listed after setup and configuration is completed. For more information, see [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md).
+The entity catalog is listed on the **Virtual entities** tab of the **Dataverse integration** page in the Human Resources application. All available entities are listed after setup and configuration is completed. For more information, see [Configure Dataverse virtual entities](hr-admin-integration-common-data-service-virtual-entities.md).
 
 ### Is there a way to specify a company when I perform data operations on a virtual entity?
 
-Yes. Although the company is implicit in Human Resources, it's an explicit field on each company-striped entity in Common Data Service. You can use either the **Company Code** field, where the value is a four-character string, or the **Company** field, which is a lookup to cdm\_Company. Both approaches provide the same information.
+Yes. Although the company is implicit in Human Resources, it's an explicit field on each company-striped entity in Dataverse. You can use either the **Company Code** field, where the value is a four-character string, or the **Company** field, which is a lookup to cdm\_Company. Both approaches provide the same information.
 
-If you're accessing the entity through the CDS Web API, the company is identified by the **Data Area ID** property (mshr\_dataareaid). Each company-specific entity with this property has a navigation property to the cdm\_Company entity.
+If you're accessing the entity through the Dataverse Web API, the company is identified by the **Data Area ID** property (mshr\_dataareaid). Each company-specific entity with this property has a navigation property to the cdm\_Company entity.
 
 ### Can I change the prefix for the virtual entities?
 
@@ -64,17 +64,17 @@ No. All Human Resources virtual entities should be generated in the Dynamics 365
 
 You can write a pre-operation plug-in on the RetrieveMultiple message of the entity and change the criteria on the query in it. Alternatively, you can write a post-operation plug-in to filter the results before they're returned.
 
-### How can I show, in the same grid, data from multiple virtual entities that are joined to a physical entity record in Common Data Service?
+### How can I show, in the same grid, data from multiple virtual entities that are joined to a physical entity record in Dataverse?
 
-This approach isn't currently possible in Common Data Service.
+This approach isn't currently possible in Dataverse.
 
 ### If I want a default value to be entered in a field during pre-create, will an initValue on the data entity work?
 
 Yes. Here's the order of calls:
 
-1. Common Data Service sends a create or update message.
+1. Dataverse sends a create or update message.
 2. All the existing logic on the Human Resources entity and backing tables is invoked. This logic includes default value entry that might change values.
-3. Common Data Service sends another Retrieve (single) message to get the latest copy of the data, including any fields that default values were entered for.
+3. Dataverse sends another Retrieve (single) message to get the latest copy of the data, including any fields that default values were entered for.
 
 ### Does the form business logic in Human Resources get called through virtual entities?
 

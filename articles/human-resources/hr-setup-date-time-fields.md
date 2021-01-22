@@ -2,7 +2,7 @@
 # required metadata
 
 title: Understand Date and Time fields
-description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 Human Resources. Gain clarity in what to expect when interacting with Date and Time data in a form in Human Resources, an external source, or the Common Data Service.  
+description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 Human Resources. Gain clarity in what to expect when interacting with Date and Time data in a form in Human Resources, an external source, or the Dataverse.  
 author: Andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**Date and Time** fields are a fundamental concept in Dynamics 365 Human Resources. It's important to understand how to work with **Date and Time** data in Dynamics 365 Human Resources forms, Common Data Service, and external sources.
+**Date and Time** fields are a fundamental concept in Dynamics 365 Human Resources. It's important to understand how to work with **Date and Time** data in Dynamics 365 Human Resources forms, Dataverse, and external sources.
 
 ## Understanding the difference between Date and Date and Time field data types
 
@@ -59,11 +59,11 @@ In the example below, employee 000724’s employment becomes active at the same 
 
 [![Worker form](./media/worker-form2.png)](./media/worker-form2.png)
 
-## Date and Time data in Data Management Framework, Excel, Common Data Service, and Power BI 
+## Date and Time data in Data Management Framework, Excel, Dataverse, and Power BI 
 
-The Data Management Framework, Excel Add-In, Common Data Service, and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** values are in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
+The Data Management Framework, Excel Add-In, Dataverse, and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** values are in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
  
-**Date and Time** data that is submitted via DMF, Excel, or Common Data Service is assumed to be in UTC by the database. This can cause some confusion when the submitted **Date and Time** value doesn't display as expected because the user viewing the data doesn't have their user time zone  set to UTC. 
+**Date and Time** data that is submitted via DMF, Excel, or Dataverse is assumed to be in UTC by the database. This can cause some confusion when the submitted **Date and Time** value doesn't display as expected because the user viewing the data doesn't have their user time zone  set to UTC. 
  
 The same thing can happen in reverse when data is exported. The **Date and Time** data in the exported DMF entity can be different then what is displayed in the Dynamics client. 
  
@@ -91,9 +91,9 @@ When using external sources like DMF to view or author data, it is important to 
 
 [![DMF Staging](./media/DMFexport.png)](./media/DMFexport.png)
 
-**Excel via Common Data Service**
+**Excel via Dataverse**
 
-[![Excel via Common Data Service](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel via Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## See also
 

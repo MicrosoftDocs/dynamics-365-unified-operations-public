@@ -62,7 +62,7 @@ The following bug fixes are included in this release.
 | 481401 | Accrual processing hangs when accrual date basis is after accrual start date and at end of month | Accrual processing is updated to not have a delay when the accrual date basis is after the accrual start date and at the end of the month. |
 | 447167 | Expiring records lists include inactive workers | The **Expiring records** tab in **Personnel management** included inactive workers. Now it only includes active workers. |
 | 486840 | Wrong leave of absence request opens from **Work items assigned to me** | Selecting a leave of absence request from **Work items assigned to me** no longer opens the most recent leave of absence request assigned to the current user. |
-| 506868 | Common Data Service **Title** field not set for **Job position** entity | The **Title** field in the **Job** and **Job position** entities displayed as not specified. The **Title** field now displays. |
+| 506868 | Dataverse **Title** field not set for **Job position** entity | The **Title** field in the **Job** and **Job position** entities displayed as not specified. The **Title** field now displays. |
 | 430359 | Can't access offboarding checklist tasks with manager and employee roles assigned | Workers with a future termination date couldn't access their checklist tasks if they only had an employee or manager role. Now users with only an employee or manager role can access offboarding tasks with a future termination date. |
 | 458102 | New employee doesn't appear on the **Worker payroll information** entity when created | New employees are included in the worker payroll information entity without having to open the payroll information for the employee before exporting the entity. |
 

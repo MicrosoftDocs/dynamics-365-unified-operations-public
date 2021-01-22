@@ -39,13 +39,13 @@ This Developer Guide provides an API and custom fields reference. It also provid
 
 - [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)
 
-- [Human Resources entities in Common Data Service](hr-developer-entities.md)
+- [Human Resources entities in Dataverse](hr-developer-entities.md)
 
 - [Custom fields](hr-developer-custom-fields.md)
 
 - Set up data integration
   - [Choose a data integration technology](hr-admin-integration-choose-technology.md)
-  - [Configure Common Data Service integration](hr-admin-integration-common-data-service.md)
+  - [Configure Dataverse integration](hr-admin-integration-common-data-service.md)
   - [Configure integration with Finance](hr-admin-integration-finance.md)
   - [Configure integration with Dayforce](hr-admin-integration-dayforce.md)
   - [Create a recurring data export app](hr-admin-integration-recurring-data-export.md)
