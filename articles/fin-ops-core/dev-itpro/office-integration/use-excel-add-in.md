@@ -42,7 +42,7 @@ By opening entity data in Excel, you can quickly and easily view and edit the da
 
 To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns](https://youtu.be/RTicLb-6dbI) video.
 
-## Open entity data in Excel when you start from Finance and Operations apps
+## Open entity data in Excel when you start from a Finance and Operations app
 1. On a page in a Finance and Operations app, select **Open in Microsoft Office**.
 
     If the root data source (table) for the page is the same as the root data source for any entities, default **Open in Excel** options are generated for the page. **Open in Excel** options can be found on frequently used pages, such as **All vendors** and **All customers**.
