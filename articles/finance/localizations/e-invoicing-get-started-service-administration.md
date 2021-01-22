@@ -50,7 +50,7 @@ prerequisites in place:
 
 4.  In the **Service endpoint URI** field, type the service end point:
 
-- <https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
+<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
 
 1.  In the **Application Id** field, verify that it shows the ID
  **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed
@@ -199,7 +199,7 @@ prerequisites in place:
 
 3.  In the **Service endpoint URL** field, type the service end point:
 
-- <https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
+<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
 
 1.  In the **Environment** field, type the name of the Electronic
     invoicing add-on Environment.
