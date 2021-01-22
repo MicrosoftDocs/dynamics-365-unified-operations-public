@@ -59,8 +59,15 @@ Complete the following steps to configure registration numbers.
 3. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 4. Create a new **Registration category**, in the **Registration types** field make the reference to registration type created in point 2.
 5. In the **Registration categories** field, select **Enterprise ID (COID)** value.
+> [!NOTE]
+> If registration type with **Enterprise ID (COID)** registration category already exists, then you can skip points 1 - 5 above.
+
 
 ## Configure Legal entity data
+### Enter Legal entity address
+### Enter Legal entity branch
+### Enter Legal entity registration number
+### Configure Legal entity activity code
 
 ## Configure Customers data 
 
@@ -68,11 +75,9 @@ Complete the following steps to configure registration numbers.
 
 ## Configure Unit codes
 
-## Print invoices
-Post and print any Customer/Freetext/Project invoice for the customer configured in the previous step.
-Go to...
-
-![Posting date control](media/emea-ita-post-date-control.jpg)
+## Configure Products
+### Enter GTIN number
+### Configure GPC codes
 
 > [!NOTE]
 > For some countries, .
