@@ -118,7 +118,7 @@ System administrators can specify a system-wide limit on the publish batch size 
 
 The publish batch size can also be modified for an individual workbook using the Excel add-in using the following steps: 
 1.  Open the workbook in Excel.
-2.  Select the **Option** (gear) button in the top right of the Excel add-in. 
+2.  Select the **Option** (gear) button in the top-right of the Excel add-in. 
 3.  Set the **Publish batch size** field as desired. The set value must be less than the system-wide publish batch limit. 
 4.  Select **OK**. 
 5.  Save the workbook. If users don't save the workbook after making changes to the add-in settings, those changes will not persist when the workbook is reopened.  
