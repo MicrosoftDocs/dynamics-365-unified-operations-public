@@ -2,7 +2,7 @@
 # required metadata
 
 title: View and update entity data with Excel 
-description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data using the Microsoft Dynamics Excel add-in. 
+description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
 author: ChrisGarty
 manager: AnnBe
 ms.date: 01/22/2021
@@ -34,24 +34,24 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations apps.
+This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or Finance and Operations apps.
 
-By opening entity data in Excel, you can quickly and easily view and edit the data by using the Excel add-in. This add-in requires Microsoft Excel 2016 or newer.
+By opening entity data in Excel, you can quickly and easily view and edit the data by using the Excel add-in. This add-in requires Microsoft Excel 2016 or later.
 
 > [!NOTE]
 > If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update for Office has been applied, so that the Excel add-in can correctly sign you in.
 
-To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns](https://youtu.be/RTicLb-6dbI) video.
+To learn more about how to use the Excel add-in, watch the short [Create an Excel template for header and line patterns](https://youtu.be/RTicLb-6dbI) video.
 
 ## Open entity data in Excel when you start from a Finance and Operations app
 1. On a page in a Finance and Operations app, select **Open in Microsoft Office**.
 
     If the root data source (table) for the page is the same as the root data source for any entities, default **Open in Excel** options are generated for the page. **Open in Excel** options can be found on frequently used pages, such as **All vendors** and **All customers**.
  
-2. Select an **Open in Excel** option, and open the workbook that's generated. This workbook has binding information for the entity, a pointer to your environment, and a pointer to the Excel add-in.
+2. Select an **Open in Excel** option, and open the workbook that is generated. This workbook has binding information for the entity, a pointer to your environment, and a pointer to the Excel add-in.
 3. In Excel, select **Enable editing** to enable the Excel add-in to run. The Excel add-in runs in a pane on the right side of the Excel window.
 4. If you're running the Excel add-in for the first time, select **Trust this Add-in**.
-5. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to the Finance and Operations app. The Excel add-in will use a previous sign-in context from a browser (see [Browsers used by Office add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins) for information on the browser used based on the operating system) and automatically sign you in, if it can. To ensure this was successful, verify the user name in the upper-right corner of the Excel add-in.
+5. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign in to the Finance and Operations app. The Excel add-in will use a previous sign-in context from the browser and automatically sign you in, if it can. (For information about the browser that is used based on the operating system, see [Browsers used by Office add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) To ensure that sign-in was successful, verify the user name in the upper-right corner of the Excel add-in. 
 
 The Excel add-in automatically reads the data for the entity that you selected. Note that there will be no data in the workbook until the Excel add-in reads it in.
 
@@ -112,19 +112,20 @@ You can use the designer to adjust the columns that are automatically added to t
 4. To apply your changes to the data source, select **Update**. Then select **Done** to exit the designer.
 5. If you added a field (column), select **Refresh** to pull in an updated set of data.
 
-## Change the publish batch size 
-When users publish changes to data records using the Excel add-in, the updates are submitted in batches; the default batch size is 100 rows. Starting in version 10.0.17, the **Allow configuration of the publish batch size in the Excel add-in** feature allows flexibility in controlling the publish batch size. 
+## Change the publish batch size
+When users publish changes to data records by using the Excel add-in, the updates are submitted in batches. The default publish batch size is 100 rows. In version 10.0.17 and later, the **Allow configuration of the publish batch size in the Excel add-in** feature gives you flexible control over the publish batch size.
 
-System administrators can specify a system-wide limit on the publish batch size for “Open in Excel” workbooks by modifying the **Publish batch limit** field on the App parameters section of the **Office app parameters** page. 
+System administrators can specify a system-wide limit on the publish batch size for "Open in Excel" workbooks by setting the **Publish batch limit** field in the **App parameters** section of the **Office app parameters** page.
 
-The publish batch size can also be modified for an individual workbook using the Excel add-in using the following steps: 
-1.  Open the workbook in Excel.
-2.  Select the **Option** (gear) button in the top-right of the Excel add-in. 
-3.  Set the **Publish batch size** field as desired. The set value must be less than the system-wide publish batch limit. 
-4.  Select **OK**. 
-5.  Save the workbook. If users don't save the workbook after making changes to the add-in settings, those changes will not persist when the workbook is reopened.  
+The publish batch size can also be changed for an individual workbook by using the Excel add-in.
 
-Excel workbook template authors can use the same procedure to set the publish batch size for templates before uploading them into the system.  
+1. Open the workbook in Excel.
+2. Select the **Option** (gear) button in the upper right of the Excel add-in.
+3. Set the **Publish batch size** field as desired. The value that you set must be less than the system-wide publish batch limit.
+4. Select **OK**.
+5. Save the workbook. If you don't save the workbook after you make changes to the add-in settings, those changes won't persist when the workbook is reopened.
+
+Excel workbook template authors can use the same procedure to set the publish batch size for templates before they upload them into the system.
 
 ## Copy environment data
 
@@ -144,4 +145,4 @@ There are a few issues that can be resolved through some easy steps.
 - **The Load applets button is shown** – If the Excel add-in has a **Load applets** button after sign-in, you probably aren't signed in as the correct user. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, select it, sign out, and then sign back in.
 - **You receive a "Forbidden" message** – If you receive a "Forbidden" message while the Excel add-in is loading metadata, the account that is signed in to the Excel add-in doesn't have permission to use the targeted service, instance, or database. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, select it, sign out, and then sign back in.
 - **A blank webpage is shown over Excel** – If a blank webpage is opened during the sign-in process, the account requires AD FS, but the version of Excel that is running the Excel add-in isn't recent enough to load the sign-in dialog box. To resolve this issue, update the version of Excel that you're using. To update the version of Excel when you're in an enterprise that is on the deferred channel, use the [Office deployment tool](https://technet.microsoft.com/library/jj219422.aspx) to [move from the deferred channel to the current channel](https://technet.microsoft.com/library/mt455210.aspx).
-- **You receive a timeout while publishing data changes** - If you receive timeout messages while attempting to publish data changes to an entity, you may consider lowering the publish batch limit. Entities that trigger larger amounts of logic on record changes may updates to be sent in smaller batches to avoid timeouts.  
+- **You receive a time-out while you publish data changes** – If you receive time-out messages while you're trying to publish data changes to an entity, consider reducing the publish batch limit. Entities that trigger larger amounts of logic on record changes might updates to be sent in smaller batches to help prevent time-outs.
