@@ -42,7 +42,16 @@ The submission requires the system configuration which consists of 2 parts:
 
 ## Prerequisites
 
-In the Feature management workspace, turn on the **Archive printed customer invoices with hash numbers** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+In the Feature management workspace, turn on the **Electronic invoicing add-on integration** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+## Enable electronic invoicing for Egypt
+Complete the following steps to nable electronic invoicing for Egypt.
+
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters** 
+2. On the **Features** tab, select feature reference for **EG00008 E-invoicing for Egypt** 
+3. Turn on **Enabled** option for the selected feature reference.
+
+
 
 ## Configure customers master data
 Complete the following steps to configure customers data in order to activate automatic saving of printed invoices as attachments.
