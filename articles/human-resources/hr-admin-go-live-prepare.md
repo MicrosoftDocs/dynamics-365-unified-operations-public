@@ -82,7 +82,7 @@ Prior to your go-live, you must perform a mock go-live to test the steps require
 
 - We recommend you use the production environment as the GOLD configuration environment until the go-live.
 - Ensure that you have a strong governance process in place to protect the production environment from accidental transactions or updates prior to the go-live.
-- When you're ready to perform UAT or the mock go-live, refresh the sandbox environment from the production environment by creating the request in LCS.
+- When you're ready to perform UAT or the mock go-live, refresh the sandbox environment from the production environment. For more information, see [Copy an instance](hr-admin-setup-copy-instance.md).
 - Test each step of your cutover plan in the sandbox environment and then validate the sandbox environment by performing spot checks or performing tests from your UAT scripts in the environment.
   - Tests should include all data migrations including transformations needed for the go-live.
   - The process should include a practice cutoff of any legacy systems.
