@@ -67,6 +67,8 @@ To work with shipping containers, go to **Landed cost \> Containers setup \> Shi
 > - The shipping container setup is optional. Typically, you will use it only if your company owns its own shipping containers or often reuses the same shipping containers.
 > - No check digits are calculated for shipping container numbers.
 
+<a name="unit-types"></a>
+
 ## Set up unit types
 
 Unit types establish additional groupings and identification methods for shipping containers. The unit type is typically used to identify the type of container that goods are packaged in, such as pallets or drums. You can select a unit type when you set up a container on the **All shipping containers** page. <!-- KFM: It seems like we don't document the All shipping containers page anywhere. Should we add that to this chapter? -->
@@ -79,6 +81,8 @@ To work with unit types, go to **Landed cost \> Containers setup \> Unit types**
 |---|---|
 | Unit type | Enter a unique identification name/number for the unit type. |
 | Description | Enter a description of the unit type. |
+
+<a name="refrigeration-types"></a>
 
 ## Set up refrigeration types
 

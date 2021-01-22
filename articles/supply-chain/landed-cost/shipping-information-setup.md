@@ -34,7 +34,9 @@ ms.dyn365.ops.version: Release 10.0.17
 
 This topic describes how to set up shipping information for the **Landed cost** module.
 
-## <a name="description-of-goods"></a>Description of goods
+<a name="description-of-goods"></a>
+
+## Description of goods
 
 Descriptions of goods help identify a voyage, shipping container, or folio of goods, and the goods in it. You can select a description of goods on the shipping container header or the folio header.
 
@@ -44,6 +46,8 @@ To work with descriptions of goods, go to **Landed cost \> Shipping information 
 |---|---|
 | Description of goods | Enter a unique identification name/number for the type of goods that will use this description. |
 | Description | Enter a description of the type of goods in this category. |
+
+<a name="vessels"></a>
 
 ## Vessels
 

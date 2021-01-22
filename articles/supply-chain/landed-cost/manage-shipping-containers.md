@@ -45,14 +45,14 @@ On the shipping container details page, shipping container and costing informati
 | **Setting** | **Description** |
 | --- | --- |
 | **Shipping Container type** | This must be entered and can determine the cost for freight for example by selecting the auto cost associated to the shipping container type. |
-| **Vessel** | The vessel is selected or entered here. Even though it is a drop-down field it allows free text within it. If the vessel is not listed and the user decides to enter free text it does not update the main table for future selection. For more information, refer to [Vessels](#_Vessels). |
-| **Unit type** | Unit types are used as an additional grouping and identification method against a shipping container. They are shown and selected on the shipping container form. For more information, refer to unit types. |
-| **Refrigeration type** | Refrigeration types are used as an additional grouping and identification method against a shipping container, normally for refrigerated containers. They are shown and selected on the shipping container form. For more information, refer to refrigeration types. This field is optional. |
+| **Vessel** | The vessel is selected or entered here. Even though it is a drop-down field it allows free text within it. If the vessel is not listed and the user decides to enter free text it does not update the main table for future selection. For more information, refer to [Vessels](shipping-information-setup.md#vessels). |
+| **Unit type** | Unit types are used as an additional grouping and identification method against a shipping container. They are shown and selected on the shipping container form. For more information, refer to [Set up unit types](shipping-container-setup.md#unit-types). |
+| **Refrigeration type** | Refrigeration types are used as an additional grouping and identification method against a shipping container, normally for refrigerated containers. They are shown and selected on the shipping container form. For more information, refer to [Set up refrigeration types](shipping-container-setup.md#refrigeration-types). |
 | **Measurement** | This allows for a measurement to be specified within the Landed cost module. This is often used by organizations that do not know the individual volume/weight of the goods, but they require a more accurate apportionment than amount or quantity. The freight forwarder will supply them with the kg&#39;s or cubic measurement which they place at either an item level or purchase order level. It can be automatically updated if the parameter is selected or manually input. |
 | **Measurement unit** | Unit of measure relating to the number in the measurement field. |
 | **Actual weight** | The actual weight can be recorded of the carton/container. This can be used to verify against the maximum weight allowed on a shipping container setup. |
 | **Number of cartons** | The number of cartons is automatically updated if the parameter is selected. |
-| **Description of goods** | Description of goods can be selected from the shipping container or folio header and is used to assist in identifying a voyage/shipping container/folio of goods. For more information, refer to description of goods. |
+| **Description of goods** | Description of goods can be selected from the shipping container or folio header and is used to assist in identifying a voyage/shipping container/folio of goods. For more information, refer to [Description of goods](shipping-information-setup.md#description-of-goods). |
 | **H.A.W.B/Bill of lading** | House air waybill or Bill of Lading can be specified against the shipping container. |
 | **Remarks** | Additional information relating to the shipping container. |
 

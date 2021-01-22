@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage voyages
-description: Shipping containers are used to group goods together that either are physically grouped together or are required to share costs only across those goods (normally because they are physically together).
+description: A voyage typically represents a vessel but, depending on your own practices and procedures, it could be a vendor, a purchase order, or some other item that makes sense for your organization.
 author: RichardLuan
 manager: tfehr
 ms.date: 12/14/2020
