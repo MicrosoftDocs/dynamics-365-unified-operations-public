@@ -214,7 +214,7 @@ Describes skill requirements for a RecruitingRequest.
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Concatenation of Recruiting Request value and Skill ID as another method to uniquely identify the record. |
 | **Rating Model ID**<br>mshr_ratingmodelid<br>*String* | Read-write<br>Required | The rating model used to rate the skill. |
 | **Rating Model ID Value**<br>_mshr_fk_hcmratingmodel_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmratingmodelentityid of mshr_hcmratingmodelentity entity | System-generated unique identifier of the rating model used to rate the skill. |
- 
+
 ## Entity: Recruiting Request Education
 
 Physical name: mshr_hcmrecruitingrequesteducationentity
