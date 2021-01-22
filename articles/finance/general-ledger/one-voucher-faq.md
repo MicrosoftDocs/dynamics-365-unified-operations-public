@@ -2,7 +2,7 @@
 # required metadata
 
 title: One voucher FAQ
-description: This topic answers a number of questions that we've addressed about the One voucher functionality. One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
+description: This topic answers questions that we've addressed about the One voucher functionality. One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
 author: kweekley
 manager: AnnBe
 ms.date: 11/05/2018
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.0.2
 
 # One Voucher FAQ
 
-This topic answers a number of questions that we've addressed about the One voucher functionality. One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
+This topic answers questions that we've addressed about the One voucher functionality. One voucher for financial journals lets you enter multiple subledger transactions in the context of a single voucher. The journals that you can include in that one voucher can be general journal, fixed asset journal, vendor payment journal, among others.
 
 ## When will the One voucher functionality be deprecated?  
 We cannot provide an accurate estimate of when the One voucher functionality will be deprecated, but It will likely be at least two years before the functionality is deprecated.  As noted in the One voucher documentation, numerous business requirements can only be accomplished by using One voucher.  Microsoft must ensure that all the identified business requirements can still be accomplished within the system after deprecating the functionality. This will likely include the addition of new features to fill functional gaps.  After all functional gaps are filled, Microsoft will communicate that the feature will be deprecated, with the deprecation being at least one year after the communication.  For more information, see the [One voucher documentation](one-voucher.md).
