@@ -5,7 +5,7 @@ title: Electronic invoicing add-on overview
 description: This topic provides information about the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -112,5 +112,5 @@ Enabling and using Electronic invoicing add-on may require sending limited data,
 
 ## Additional resources
 - [Service administration](e-invoicing-service-administration.md)
-- [Configuration of electronic invoices in RCS](e-invoicing-configuration-in-rcs.md)
-- [Issuing of electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md)
+- [Configure electronic invoices in RCS](e-invoicing-configuration-in-rcs.md)
+- [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md)
