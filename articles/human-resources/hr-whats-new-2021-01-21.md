@@ -79,6 +79,7 @@ The following bug fixes are included in this release.
 | | ## Zip code not populating on electronic reporting - (543641) | |
 | 533474 | Fix missing reference to Microsoft.SqlServer.XEvent.dll | Assembly load exceptions for Microsoft.SqlServer.XEvent.dll were blocking Microsoft Dataverse virtual entities from being set up in some environments. |
 | 481122 | "People" Workspace showing retired positions | Retired positions were being displayed as open positions in the People workspace. Retired positions will no longer be displayed | 
+| 541978 | Add primary email address to BaseWorker entity | This change added the worker's primary email address to the HcmWorkerBaseEntity |
 
 ## In preview
 
@@ -93,6 +94,7 @@ The following new features are in preview. For more information about turning fe
 | Managers able to submit recruiting requests for positions | [Managers can submit a recruiting request for open positions](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Add a recruiting request](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
 | Enhanced candidate profile in Personnel management | [Enhanced candidate profile in personnel management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Add or edit a candidate profile](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
 | Enable simplified integrations with recruiting providers | [Enable simplified integrations with recruiting providers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Recruit job candidates](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
+| Benefits enrollment email confirmation | A confirmation email will be sent to employees when they check out from the benefits enrollment expereince in Employee self-service. | [Configure Benefits management parameters per company](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-parameters-per-company) |
 
 
 ## Coming soon
