@@ -35,7 +35,10 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/preview-banner.md)]
 
-In some countries, there is a legal requirement.
+According to Egyptian legal requirements, the invoices issued for customers must be submitted to the Tax authority in an electronic format.
+The submission requires the system configuration which consists of 2 parts:
+1. **Electronic invoicing add-on** configuration. Please refer to this article for details: [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
+2. **Microsoft Dynamics 365 Finance** configuration which is covered in this article.
 
 ## Prerequisites
 
