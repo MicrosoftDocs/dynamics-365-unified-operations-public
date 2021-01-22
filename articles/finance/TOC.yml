@@ -3021,7 +3021,7 @@
         - name: Develop a succession plan
           href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
         - name: Enter project timesheets
-          href: ../human-resources/hr-personnel-enter-project-timesheets.md?toc=/dynamics365/finance/toc.json
+          href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
         - name: Mass hire projects
           href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
         - name: Create a mass hire project
