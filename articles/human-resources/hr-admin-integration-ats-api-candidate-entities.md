@@ -2,7 +2,7 @@
 # required metadata
 
 title: Candidate to hire and related entities
-description: This topic describes Candidate tohire and related entities for the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
+description: This topic describes Candidate to hire and related entities for the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
 author: andreabichsel
 manager: tfehr
 ms.date: 01/25/2021
@@ -37,7 +37,7 @@ Physical name: mshr_hcmcandidatetohireentity
 
 ### Description
 
-This entity provides candidate details used to create a worker in Dynamics 365 Human Resources. It is used to read all candidate records and create internal and external candidate records, allowing you to create personal details for the new candidate.
+This entity provides candidate details used to create a worker in Dynamics 365 Human Resources. It's used to read all candidate records and create internal and external candidate records, allowing you to create personal details for the new candidate.
 
 When creating an external candidate record who will be a new person record in the system, you must not define a party (person) number when posting a new candidate record. The new person entity record is created with the new candidate record.
 
@@ -239,53 +239,53 @@ This entity provides the personal information for the individual who is the cand
 | **Professional Suffix**<br>mshr_professionalsuffix<br>*String* | Read/write<br>Optional | A professional suffix. |
 | **Professional Title**<br>mshr_professionaltitle<br>*String* | Read/write<br>Optional | A professional title. |
 | **Full Primary Address**<br>mshr_fullprimaryaddress<br>*String* | Read/write<br>Optional | The person’s full primary address, a concatenation of the primary address fields. |
-| **Address City**<br>mshr_addresscity<br>*String* | Read/write<br>Optional | The city of the person’s primary address. Setup in mshr_logisticsaddresscityentity entity. |
+| **Address City**<br>mshr_addresscity<br>*String* | Read/write<br>Optional | The city of the person’s primary address. Set up in mshr_logisticsaddresscityentity entity. |
 | **Address Country Region**<br>mshr_addresscountryregionid<br>*String* | Read/write<br>Optional | The country/region of the person’s primary address. Valid values in the mshr_logisticsaddresscountryregionentity entity. |
 | **Address Country Region ISO Code**<br>mshr_addresscountryregionisocode<br>*String* | Read/write<br>Optional | The ISO code of the country of the person’s primary address. |
-| **Address County**<br>mshr_addresscounty<br>*String* | Read/write<br>Optional | The county of the person’s primary address. Setup in mshr_logisticsaddresscountyentity entity. |
-| **Address District Name**<br>mshr_addressdistrictname<br>*String* | Read/write<br>Optional | The district of the person’s primary address. Setup in mshr_logisticsaddressdistrictentity entity. |
+| **Address County**<br>mshr_addresscounty<br>*String* | Read/write<br>Optional | The county of the person’s primary address. Set up in mshr_logisticsaddresscountyentity entity. |
+| **Address District Name**<br>mshr_addressdistrictname<br>*String* | Read/write<br>Optional | The district of the person’s primary address. Set up in mshr_logisticsaddressdistrictentity entity. |
 | **Address Latitude**<br>mshr_addresslatitude<br>*String* | Read/write<br>Optional | The latitude of the person’s primary address. |
 | **Address Location ID**<br>mshr_addresslocationid<br>*String* | Read/write<br>Optional | The unique identifier for the location of the person’s primary address. Valid values in mshr_logisticspostaladdresslocationcdsentity entity. |
-| **Address Location Roles**<br>mshr_addresslocationroles<br>*String* | Read/write<br>Optional | The location role of the person’s primary address. Setup in the mshr_logisticslocationrolecdsentity entity. |
+| **Address Location Roles**<br>mshr_addresslocationroles<br>*String* | Read/write<br>Optional | The location role of the person’s primary address. Set up in the mshr_logisticslocationrolecdsentity entity. |
 | **Address Longitude**<br>mshr_addresslongitude<br>*String* | 	Read/write<br>Optional | The longitude of the person’s primary address. |
-| **Address State**<br>mshr_addressstate<br>*String* | Read/write<br>Optional | The state of the person’s primary address. Setup in mshr_logisticsaddressstateentity entity. |
+| **Address State**<br>mshr_addressstate<br>*String* | Read/write<br>Optional | The state of the person’s primary address. Set up in mshr_logisticsaddressstateentity entity. |
 | **Address Street**<br>mshr_addressstreet<br>*String* | Read/write<br>Optional | The street address of the person’s primary address. |
 | **Address Valid From**<br>mshr_addressvalidfrom<br>*Date* | Read/write<br>Optional | The date from which the person’s primary address is valid. |
 | **Address Valid To**<br>mshr_addressvalidto<br>*Date* | Read/write<br>Optional | The date to which the person’s primary address is valid. |
-| **Address Zip Code**<br>mshr_addresszipcode<br>*String* | Read/write<br>Optional | The postal code of the person’s primary address. Setup in mshr_logisticsaddresspostalcodeentity entity. |
+| **Address Zip Code**<br>mshr_addresszipcode<br>*String* | Read/write<br>Optional | The postal code of the person’s primary address. Set up in mshr_logisticsaddresspostalcodeentity entity. |
 | **Address Is Private**<br>mshr_addressisprivate<br>*mshr_noyes option set* | Read/write<br>Optional | Determines whether the person’s primary address is shared with others in the organization. |
 | **Address Description**<br>mshr_addressdescription<br>*String* | Read/write<br>Optional | Description for the person’s primary address. |
 | **Primary Contact Email**<br>mshr_primarycontactemail<br>*String* | Read/write<br>Optional | The person’s primary email address. |
 | **Primary Contact Email Description**<br>mshr_primarycontactemaildescription<br>*String* | Read/write<br>Optional | A description provided for the primary email address. |
 | **Primary Contact Email is IM**<br>mshr_primarycontactemailisim<br>*mshr_noyes option set* | Read/write<br>Optional | Determines whether the primary email address is available for instant messages. |
-| **Primary Contact Email Purpose**<br>mshr_primarycontactemailpurpose<br>*String* | Read/write<br>Optional | The purpose for the primary email address. Setup in mshr_logisticslocationroleentity entity. |
+| **Primary Contact Email Purpose**<br>mshr_primarycontactemailpurpose<br>*String* | Read/write<br>Optional | The purpose for the primary email address. Set up in mshr_logisticslocationroleentity entity. |
 | **Primary Contact Fax**<br>mshr_primarycontactfax<br>*String* | Read/write<br>Optional | Primary fax number. |
 | **Primary Contact Fax Description**<br>mshr_primarycontactfaxdescription<br>*String* | Read/write<br>Optional | Description provided for the primary fax number. |
 | **Primary Contact Fax Extension**<br>mshr_primarycontactfaxextension<br>*String* | Read/write<br>Optional | The extension of the primary fax number. |
-| **Primary Contact Fax Purpose**<br>mshr_primarycontactfaxpurpose<br>*String* | Read/write<br>Optional | The purpose for the primary fax number. Setup in mshr_logisticslocationroleentity entity.
+| **Primary Contact Fax Purpose**<br>mshr_primarycontactfaxpurpose<br>*String* | Read/write<br>Optional | The purpose for the primary fax number. Set up in mshr_logisticslocationroleentity entity.
 | **Primary Contact Phone**<br>mshr_primarycontactphone<br>*String* | Read/write<br>Optional | Primary phone number. |
 | **Primary Contact Phone Description**<br>mshr_primarycontactphonedescription<br>*String* | Read/write<br>Optional | Description provided for the primary phone number. |
 | **Primary Contact Phone Extension**<br>mshr_primarycontactphoneextension<br>*String* | Read/write<br>Optional | The extension of the primary phone number. |
 | **Primary Contact Phone Is Mobile**<br>mshr_primarycontactphoneismobile<br>*mshr_noyes option set* | Read/write<br>Optional | Determines whether the primary phone number is a mobile phone. |
-| **Primary Contact Phone Purpose**<br>mshr_primarycontactphonepurpose<br>*String* | Read/write<br>Optional | The purpose for the primary phone number. Setup in mshr_logisticslocationroleentity entity. |
+| **Primary Contact Phone Purpose**<br>mshr_primarycontactphonepurpose<br>*String* | Read/write<br>Optional | The purpose for the primary phone number. Set up in mshr_logisticslocationroleentity entity. |
 | **Primary Contact Telex**<br>mshr_primarycontacttelex<br>*String* | Read/write<br>Optional | Primary telex number. |
 | **Primary Contact Telex Description**<br>mshr_primarycontacttelexdescription<br>*String* | Read/write<br>Optional | Description provided for the person’s primary telex number. |
-| **Primary Contact Telex Purpose**<br>mshr_primarycontacttelexpurpose<br>*String* | Read/write<br>Optional | The purpose for the person’s primary telex number. Setup in mshr_logisticslocationroleentity entity. |
+| **Primary Contact Telex Purpose**<br>mshr_primarycontacttelexpurpose<br>*String* | Read/write<br>Optional | The purpose for the person’s primary telex number. Set up in mshr_logisticslocationroleentity entity. |
 | **Primary Contact URL**<br>mshr_primarycontacturl<br>*String* | Read/write<br>Optional | The primary URL. |
 | **Primary Contact URL Description**<br>mshr_primarycontacturldescription<br>*String* | Read/write<br>Optional | Description provided for the person’s primary URL. |
-| **Primary Contact URL Purpose**<br>mshr_primarycontacturldescription<br>*String* | Read/write<br>Optional | The purpose for the person’s primary URL. Setup in mshr_logisticslocationroleentity entity. |
+| **Primary Contact URL Purpose**<br>mshr_primarycontacturldescription<br>*String* | Read/write<br>Optional | The purpose for the person’s primary URL. Set up in mshr_logisticslocationroleentity entity. |
 | **Primary Contact Facebook**<br>mshr_primarycontactfacebook<br>*String* | Read/write<br>Optional | Primary Facebook account. Identified by User ID. |
 | **Primary Contact Facebook Description**<br>mshr_primarycontactfacebookdescription<br>*String* | Read/write<br>Optional | Description provided for the person’s primary Facebook account. |
 | **Primary Contact Facebook is Private**<br>mshr_primarycontactfacebookisprivate<br>*mshr_noyes option set* | Read/write<br>Optional | Determines whether the primary Facebook account is visible to other users. |
-| **Primary Contact Facebook Purpose**<br>mshr_primarycontactfacebookpurpose<br>*String* | Read/write<br>Optional | The purpose for the person’s primary Facebook account. Setup in mshr_logisticslocationroleentity entity. |
+| **Primary Contact Facebook Purpose**<br>mshr_primarycontactfacebookpurpose<br>*String* | Read/write<br>Optional | The purpose for the person’s primary Facebook account. Set up in mshr_logisticslocationroleentity entity. |
 | **Primary Contact LinkedIn**<br>mshr_primarycontactlinkedin<br>*String* | Read/write<br>Optional | Primary LinkedIn account. Identified by user name. |
 | **Primary Contact LinkedIn Description**<br>mshr_primarycontactlinkedindescription<br>*String* | Read/write<br>Optional | Description provided for the person’s primary LinkedIn account. |
 | **Primary Contact LinkedIn Is Private**<br>mshr_primarycontactlinkedinisprivate<br>*mshr_noyes option set* | Read/write<br>Optional | Determines whether the person’s primary LinkedIn account information is shared with other users. |
-| **Primary Contact LinkedIn Purpose**<br>mshr_primarycontactlinkedinpurpose<br>*String* | Read/write<br>Optional | The purpose for the person’s primary LinkedIn account. Setup in mshr_logisticslocationroleentity entity. |
+| **Primary Contact LinkedIn Purpose**<br>mshr_primarycontactlinkedinpurpose<br>*String* | Read/write<br>Optional | The purpose for the person’s primary LinkedIn account. Set up in mshr_logisticslocationroleentity entity. |
 | **Primary Contact Twitter**<br>mshr_primarycontacttwitter<br>*String* | Read/write<br>Optional | The person’s primary Twitter account. Identified by @username. |
 | **Primary Contact Twitter Description**<br>mshr_primarycontacttwitterdescription<br>*String* | Read/write<br>Optional | Description provided for the person’s primary Twitter account. |
 | **Primary Contact Twitter Is Private**<br>mshr_primarycontacttwitterisprivate<br>*mshr_noyes option set* | Read/write<br>Optional | Determines whether the person’s primary Twitter account information is shared with other users. |
-| **Primary Contact Twitter Purpose**<br>mshr_primarycontacttwitterpurpose<br>*String* | Read/write<br>Optional | The purpose for the person’s primary Twitter account. Setup in mshr_logisticslocationroleentity entity. |
+| **Primary Contact Twitter Purpose**<br>mshr_primarycontacttwitterpurpose<br>*String* | Read/write<br>Optional | The purpose for the person’s primary Twitter account. Set up in mshr_logisticslocationroleentity entity. |
 | **Party Type**<br>mshr_partytype<br>*String* | Read/write<br>Optional | The party type of the person. Will always be **Person** for candidates. |
 | **Name Sequence Display As**<br>mshr_namesequencedisplayas<br>*String* | Read/write<br>Optional | The sequence in which the person’s name properties are concatenated to form the Name (mshr_name) property value. |
 | **First Name**<br>mshr_firstname<br>*String* | Read/write<br>Required | The person’s first name. |
@@ -347,7 +347,7 @@ This entity contains the educational history of the person who is the candidate.
 | **Credits Needed**<br>mshr_creditsneeded<br>*Decimal* | Read/write<br>Optional | The number of credits required for a degree in progress. |
 | **Description**<br>mshr_description<br>*String* | Read/write<br>Optional | A description of the candidate’s degree. |
 | **Education Level ID**<br>mshr_educationlevelid<br>*String* | Read/write<br>Optional | The ID of the education level. | 
-| **Education Level ID Value**<br>_mshr_fk_educationlevel_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmeducationdegreeentityid of mshr_hcmeducationdegreeentity entity | System-generated identifier for the education degree record. Tis provides the degrees and education levels defined for the organization. |
+| **Education Level ID Value**<br>_mshr_fk_educationlevel_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmeducationdegreeentityid of mshr_hcmeducationdegreeentity entity | System-generated identifier for the education degree record. This provides the degrees and education levels defined for the organization. |
 | **Education Discipline ID**<br>mshr_educationdisciplineid<br>*String* | Read/write<br>Required<br>Foreign key: EducationDiscipline | The ID of the education discipline. |
 | **Education Discipline ID Value**<br>_mshr_fk_educationdiscipline_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmeducationdisciplineentityid of mshr_hcmeducationdisciplineentity | The system-generated unique identifier of the education discipline of the education record. |
 | **Secondary Emphasis**<br>mshr_secondaryemphasis<br>*String* | Read/write<br>Optional | The secondary emphasis of the earned degree. |
@@ -446,14 +446,14 @@ This entity contains the list of postal addresses for candidate records.
 | **Person Address Entity ID**<br>mshr_hcmpersonaddressentityid<br>*String* | Read-only<br>Required | System-generated unique identifier for the entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The ID of the associated party (person) record. |
 | **Person ID Value**<br>_mshr_fk_person_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_dirpersonentityid of mshr_dirpersonentity | The system-generated identifier of the party (person) entity record. |
-| **Location ID**<br>mshr_locationid<br>*String* | Read/write<br>Required | The location ID of the address record. Setup in mshr_logisticspostaladdresslocationcdsentity entity. |
+| **Location ID**<br>mshr_locationid<br>*String* | Read/write<br>Required | The location ID of the address record. Set up in mshr_logisticspostaladdresslocationcdsentity entity. |
 | **Description**<br>mshr_description<br>*String* | Read/write<br>Required | A description of the candidate’s address. |
 | **Roles**<br>mshr_roles<br>*String* | Read/write<br>Required | The roles assigned for the purpose of this address. More than one role can be assigned. Each role should be separated by a semicolon. Valid values contained in the mshr_logisticslocationroleentity entity. |
 | **Street**<br>mshr_street<br>*String* | Read/write<br>Optional | The street number. |
-| **City**<br>mshr_city<br>*String* | Read/write<br>Optional | The city of the address. Setup in mshr_logisticsaddresscityentity entity. |
-| **State**<br>mshr_state<br>*String* | Read/write<br>Optional | The state of the address. Setup in mshr_logisticsaddressstateentity entity. |
-| **County**<br>mshr_county<br>*String* | Read/write<br>Optional | The county of the address. Setup in mshr_logisticsaddresscountyentity entity. |
-| **Zip Code**<br>mshr_zipcode<br>*String* | Read/write<br>Optional | The zip/postal code of the address. Setup in mshr_logisticsaddresspostalcodeentity entity. |
+| **City**<br>mshr_city<br>*String* | Read/write<br>Optional | The city of the address. Set up in mshr_logisticsaddresscityentity entity. |
+| **State**<br>mshr_state<br>*String* | Read/write<br>Optional | The state of the address. Set up in mshr_logisticsaddressstateentity entity. |
+| **County**<br>mshr_county<br>*String* | Read/write<br>Optional | The county of the address. Set up in mshr_logisticsaddresscountyentity entity. |
+| **Zip Code**<br>mshr_zipcode<br>*String* | Read/write<br>Optional | The zip/postal code of the address. Set up in mshr_logisticsaddresspostalcodeentity entity. |
 | **Country Region ID**<br>mshr_countryregionid<br>*String* | Read/write<br>Optional | The country or region of the address. |
 | **Country/Region ID Value**<br>_mshr_fk_countriregion_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_logisticaddresscountryregionentityid of mshr_logisticsaddresscountryregionentity | System-generated unique identifier of the country/region of the address. |
 | **Is Primary**<br>mshr_isprimary<br>*mshr_noyes option set* | Read/write<br>Required | Identifies whether this is the primary address for the person of the defined role. |
@@ -497,7 +497,7 @@ This entity describes the candidate’s contact information, including phone, em
 | **Party Contact Entity ID**<br>mshr_dirpartycontactentityid<br>*String* | Read-only<br>Required | System-generated unique identifier for the entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The ID of the associated party (person) record. |
 | **Person ID Value**<br>_mshr_fk_person_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_dirpersonentityid of mshr_dirpersonentity | The system-generated identifier of the party (person) entity record. |
-| **Location ID**<br>mshr_locationid<br>*String* | Read/write<br>Required | The location ID of the address record. Setup in mshr_logisticspostaladdresslocationcdsentity entity. |
+| **Location ID**<br>mshr_locationid<br>*String* | Read/write<br>Required | The location ID of the address record. Set up in mshr_logisticspostaladdresslocationcdsentity entity. |
 | **Description**<br>mshr_description<br>*String* | Read/write<br>Required | The description of the contact details. |
 | **Type**<br>mshr_type<br>*mshr_logisticselectronicaddressmethodtype option set* | Read/write<br>Required | The contact detail type. |
 | **Country Region Code**<br>mshr_countryregioncode<br>*String* | Read/write<br>Optional | The country or region of the address. |
@@ -562,7 +562,7 @@ This entity describes skills possessed by a candidate.
 | **Rating Level Examiner**<br>mshr_ratinglevelexaminer<br>*String* | Read/write<br>Optional | The personnel number of the worker who rated the candidate. |
 | **Rating Level Examiner ID Value**<br>_mshr_fk_ratinglevelexaminer_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmworkerentityid of mshr_hcmworkerentity | The system-generated identifier of the worker who examined the candidate’s skill level. |
 | **Verified**<br>mshr_verified<br>*mshr_noyes option set* | Read/write<br>Required | Indicates whether the assessed skill level has been verified. |
-| **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field to be used as an identifier of the entity record. Combination of party number, level type, skill id, and level date. |
+| **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field to be used as an identifier of the entity record. Combination of party number, level type, skill ID, and level date. |
 
 ## Entity: Rating Level
 
@@ -598,7 +598,7 @@ This entity provides the available rating levels for skills. Rating levels apply
 | **Description**<br>mshr_description<br>*String* | Read/write<br>Required | The description of the rating level. |
 | **Factor**<br>mshr_factor<br>*Integer* | Read/write<br>Required | The factor for the rating level. When you compare items with a different number of rating levels, the factor is used to normalize the scores. The value must be an integer between 0 and 9. |
 | **Note**<br>mshr_note<br>*String* | Read/write<br>Optional | Any notes associated with the rating level. |
-| **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field to be used as an identifier of the entity record. Combination of rating level ID and rating model id. |
+| **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field to be used as an identifier of the entity record. Combination of rating level ID and rating model ID. |
 
 ## Entity: Person Certificate
 
@@ -701,7 +701,7 @@ This entity describes screenings a candidate has passed or must pass for employm
 | **Screening Type ID**<br>mshr_screeningtypeid<br>*String* | Read/write<br>Required<br>Foreign key: ScreeningType | The identifier of the screening type defined in Human Resources. |
 | **Screening Type ID Value**<br>_mshr_fk_screeningtype_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmscreeningtypeentityid of mshr_hcmscreeningtypeentity | System-generated identifier for the screening type record in the associated entity. |
 | **Required By**<br>mshr_requiredby<br>*Datetime* | Read/write<br>Optional | The date by which the screening is required to be completed. |
-| **Status**<br>mshr_status<br>*mshr_hcmcompletionstatus option set*<br>Read/write<br>Required | Provides the candidate’s status with regard to the screening. |
+| **Status**<br>mshr_status<br>*mshr_hcmcompletionstatus option set*<br>Read/write<br>Required | Provides the candidate’s status regarding the screening. |
 | **Completed Date**<br>mshr_completeddate<br>*Datetime* | Read/write<br>Optional | The date the screening was completed. |
 | **Notes**<br>mshr_note<br>*String* | Read/write<br>Optional | Notes for use by hiring managers and recruiters. |
 
@@ -743,7 +743,7 @@ Physical name: mshr_hcmpersonidentificationnumberentity
 
 ### Description
 
-This entity describes the identification numbers for the person who is the candidate. It enables the API consumer to write identification numbers, like Social Security numbers or passport numbers, to the candidate record. Note that the identification numbers are surfaced on the worker record, but not on the candidate record. So an integrating application can write the values to the Human Resources database, but the numbers won’t be visible to the user in Human Resources until the worker record is created for the candidate.
+This entity describes the identification numbers for the person who is the candidate. It enables the API consumer to write identification numbers, like Social Security numbers or passport numbers, to the candidate record. Note that identification numbers are surfaced on the worker record, but not on the candidate record. So an integrating application can write the values to the Human Resources database, but the numbers won’t be visible to the user in Human Resources until the worker record is created for the candidate.
 
 ### JSON representation
 

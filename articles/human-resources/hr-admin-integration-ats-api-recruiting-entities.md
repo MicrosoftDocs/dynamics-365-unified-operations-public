@@ -98,11 +98,11 @@ Describes a request to recruit for a job.
 | **Title ID**<br>mshr_titleid<br>*String* | Read-only<br>Required | The user-readable unique identifier of the job title associated with this request. |
 | **Title ID Value**<br>_mshr_fk_title_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmtitleid of mshr_hcmtitleentity entity | The system-generated unique identifier of the title of the job selected for the recruiting request. |
 | **Job Function ID**<br>mshr_jobfunctionid<br>*String* | Read-only<br>Required<br>Foreign key: mshr_jobfunctionid of mshr_hcmjobfunctionentity entity | The user-readable unique identifier of the job function associated with this request. |
-| **Default Full Time Equivalency**<br>mshr_defaultfulltimeequivalency<br>*Double* | Read-only<br>Required | The full-time equivalent value for the job, where 1.0 represents a full-time worker. |
+| **Default Full-Time Equivalency**<br>mshr_defaultfulltimeequivalency<br>*Double* | Read-only<br>Required | The full-time equivalent value for the job, where 1.0 represents a full-time worker. |
 | **Regulatory Job Category**<br>mshr_regulatoryjobcategory<br>*RegulatoryJobCategory* option set | Read-only<br>Optional | The EEO job category of the job function selected for the job. Valid values included in the HcmRegulatoryJobCatetory (mshr_hcmregulatoryjobcategory) option set. |
 | **Job Type ID**<br>mshr_jobtypeid<br>*String* | Read-only<br>Optional | The type of the job associated with the position. The job types are user-defined values, available in the mshr_hcmjobtypeentity entity. |
 | **Job Type ID Value**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmjobtypeentityid of mshr_hcmjobtypenentity entity | The system-generated unique identifier of the job type associated with the job for the recruiting request. |
-| **xempt Status**<br>mshr_exemptstatus<br>*JobExemptStatus* option set | Read-only<br>Optional | The FLSA exempt status based on the job type. |
+| **Tempt Status**<br>mshr_exemptstatus<br>*JobExemptStatus* option set | Read-only<br>Optional | The FLSA exempt status based on the job type. |
 | **Estimated Start Date**<br>mshr_estimatedstartdate<br>*Date* | Read/write<br>Required | The estimated date a candidate would start work. |
 | **External Description**<br>mshr_externaldescription<br>*String* | Read/write<br>Optional | A candidate-facing description of the job/position. | Compensation Low Threshold<br>mshr_compensationlowthreshold<br>*Double* | Read/write<br>Optional | Lower bound for the compensation level. |
 | **Compensation Control Point**<br>mshr_compensationcontrolpoint<br>*Double* | Read/write<br>Optional | Control point for the compensation level. |
@@ -116,7 +116,7 @@ Physical name: mshr_hcmrecruitingrequestpositionentity
 
 ### Description
 
-Describes the position or positions to fill for a Recruiting Request. Adding a position to the recruiting request is optional. The properties of the position are read-only as the position properties should not be different on the recruiting request than they are on the position master record. If the properties need to change, it should be done on the position master record before adding the position to the recruiting request.
+Describes the position or positions to fill for a Recruiting Request. Adding a position to the recruiting request is optional. The properties of the position are read-only as the position properties shouldn't be different on the recruiting request than they are on the position master record. If the properties need to change, it should be done on the position master record before adding the position to the recruiting request.
 
 ### JSON representation
 ```json
@@ -162,7 +162,7 @@ Describes the position or positions to fill for a Recruiting Request. Adding a p
 | **Reports To Position ID Value**<br>_mshr_fk_reportstoposition_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmpositionv2entityid of mshr_hcmpositionv2entity entity | The system-generated ID of the position to which the recruited position reports. |
 | **Reports To Personnel Number**<br>mshr_reportstopersonnelnumber<br>*String* | Read-only<br>Required | The worker ID of the worker to which the hired candidate will report. |
 | **Reports To Worker ID Value**<br>_mshr_fk_reportstoworker_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmworkerbaseentityid of mshr_hcmworkerbaseentity entity | System-generated ID of the worker to which the hired candidate will report. |
-| **Financial Dimension**<br>mshr_financialdimension<br>*String* | Read-only<br>Optional | The financial dimension (e.g., cost center) assigned to the position. The financial dimension is assigned for each position per legal entity. Cost centers that are defined in dimensions are accessible through the mshr_dimattributeomcostcenterentity entity. |
+| **Financial Dimension**<br>mshr_financialdimension<br>*String* | Read-only<br>Optional | The financial dimension (for example, cost center) assigned to the position. The financial dimension is assigned for each position per legal entity. Cost centers that are defined in dimensions are accessible through the mshr_dimattributeomcostcenterentity entity. |
 | **Data Area ID**<br>mshr_dataareaid<br>*String* | Read/write<br>Optional | Specifies the legal entity (company) for the recruiting request position. |
 | **Data Area ID Value**<br>_mshr_dataareaid_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: cdm_companyid of cdm_company entity | System-generated GUID value identifying the legal entity (company) for the recruiting request position. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Concatenation of Recruiting Request value and Position ID as another method to uniquely identify the record. |
@@ -259,7 +259,7 @@ Describes educational requirements for a RecruitingRequest.
 | **Data Area ID Value**<br>_mshr_dataareaid_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: cdm_companyid of cdm_company entity | System-generated GUID value identifying the legal entity (company). |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Concatenation of Recruiting Request value, Education Level ID, and Education Discipline ID as another method to uniquely identify the record. |
 
-## Entity:Recruiting Request Location
+## Entity: Recruiting Request Location
 
 Physical name: mshr_hcmrecruitingrequestlocationentity
 
@@ -319,7 +319,7 @@ This enumeration provides the option set for the status values of a RecruitingRe
 
 | Value | Label | Description |
 | --- | --- | --- |
-| 200000000 | Draft | The request is in draft and is not ready for active recruiting. |
+| 200000000 | Draft | The request is in draft and isn't ready for active recruiting. |
 | 200000001 | In Review | The request has been submitted and is being routed for approval by workflow. Only available when workflow is enabled. |
 | 200000002 | Pending | The request is pending workflow action. Only available when workflow is enabled. |
 | 200000003 | Canceled | The request has been canceled. Only available when workflow is enabled. |
