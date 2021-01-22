@@ -80,6 +80,10 @@ configurable components:
     must generate during the processing of an electronic invoicing
     feature, that transforms the electronic document that was submitted
     by Finance and Supply Chain Management, into electronic invoices.
+    
+    They include either the format configuration for the electronic invoice itself, 
+    as well the format configuration for files/messages used for submitting request and getting responses,
+    in the cases where it is required to communicate with an external web services.
 
 -   Actions:
 
@@ -122,7 +126,6 @@ configurable components:
 
 ### Formats
 
-### …
 
 ### Actions
 
