@@ -68,33 +68,33 @@ In Finance and Operations, layout is controlled by the same basic properties tha
 -   The sizing that is specified by the **HeightMode**, **WidthMode**, **Height**, and **Width** properties.
 
 ## ArrangeMethod property
-The **ArrangeMethod** property specifies a base arrangement method for a container. Finance and Operations apps contain all the **ArrangeMethod** options from AX 2012, as well as an additional option called **HorizontalWrap**, which is intended for tile layouts in panoramas. The following table describes the various options for the **ArrangeMethod** property.
+The **ArrangeMethod** property specifies a base arrangement method for a container. For this property, Finance and Operations apps have all the options from AX 2012. However, they also have a **HorizontalWrap** option that is intended for tile layouts in panoramas. The following table describes the various options for the **ArrangeMethod** property.
 
 | Option          | Description                                                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vertical        | Controls are arranged vertically. If columns is also used, controls are arranged vertically inside of the generated columns. This option is the default value for Groups and for TabPages where **Tab.Style** isn't set to **Panorama**. |
-| HorizontalLeft  | Controls are arranged horizontally and are left- and bottom-aligned inside the parent container.                                                                                                                                                   |
-| HorizontalRight | Controls are arranged horizontally and are right- and bottom-aligned inside the parent container.                                                                                                                                                  |
-| HorizontalWrap  | Controls are arranged inside columns of fixed width that wrap horizontally. This option is typically used for tile layouts in panorama sections and is the default value for TabPages where **Tab.Style**=**Panorama**.     |
+| Vertical        | Controls are arranged vertically. If columns are also used, controls are arranged vertically inside the generated columns. This option is the default value for Groups and for TabPages where **Tab.Style** is set to a value other than **Panorama**. |
+| HorizontalLeft  | Controls are arranged horizontally, and they are left-aligned and bottom-aligned inside the parent container. |
+| HorizontalRight | Controls are arranged horizontally, and they are right-aligned and bottom-aligned inside the parent container. |
+| HorizontalWrap  | Controls are arranged inside columns of fixed width that wrap horizontally. This option is typically used for tile layouts in panorama sections. It's the default value for TabPages where **Tab.Style** is set to **Panorama**. |
 
 ## ColumnsMode property
-In Finance and Operations apps, the **Fill** option exists to support responsive layouts. When this property value is set, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
+For the **ColumnsMode** property, Finance and Operations apps have a **Fill** option to support responsive layouts. When the property is set to this value, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
 
 | Option | Description                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Fill   | Columns are generated to fill the available horizontal space or vertical space, depending on the container type. If the container is a Panorama-style tab, **ColumnsMode**=**Fill** generates columns to fill along the vertical axis. For all other containers (Group, Tab-style tabs, and all other styles of tabs), **ColumnsMode**=**Fill** generates columns to fill along the horizontal axis. |
+| Fill   | Columns are generated to fill the available horizontal space or vertical space, depending on the container type. If the container is a Panorama-style tab, this option generates columns to fill it along the vertical axis. For all other containers (Groups, Tab-style Tabs, and all other styles of Tabs), this option generates columns to fill the container along the horizontal axis. |
 | Fixed  | Specify the number of columns that the **Columns** property should generate. Controls are evenly distributed among the columns, and their order is maintained. If the controls can't be distributed evenly among the columns, the leftmost columns receive extra controls first. This option is the default value for all controls.                                                          |
 
 ## HeightMode/WidthMode properties
-In Finance and Operations apps, sizing is accomplished via the **WidthMode**+**Width** and **HeightMode**+**Height** size properties. The following table described the various options for these properties.
+In Finance and Operations apps, sizing is done via two pairs of size properties: **WidthMode** and **Width**, and **HeightMode** and **Height**. The following table describes the various options for these properties.
 
 | Option          | Description                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SizeToAvailable | Fill the available space along the vertical (or horizontal) axis inside the parent container. If the parent container has **SizeToContent** height (or width), the child's height (or width) is also **SizeToContent**, unless there is a sibling in the container that can provide a height (or width). This option is the default value for Grids and Tabs (of all styles). |
-| SizeToContent   | The height (or width) of the container should be the height (or width) of its contents. This option is the default value for Groups and all other controls except Tabs. FastTabs that aren't always expanded also have **SizeToContent** height.                                                                                                                             |
-| Manual          | The height (or width) is sized manually. Use **HeightMode**=**Manual** (or **WidthMode**=**Manual**), and set **Height** (or **Width**) to a fixed number of pixels. **Note:** Microsoft does not recommend the use of manual heights and widths because they don't adapt to changes in form density.                                                                                |
+| SizeToContent   | The height (or width) of the container should be the height (or width) of its contents. This option is the default value for Groups and all other controls except Tabs. FastTabs that aren't always expanded also have **SizeToContent** height. |
+| Manual          | The height (or width) is manually sized. Set **HeightMode** (or **WidthMode**) to **Manual**, and then set **Height** (or **Width**) to a fixed number of pixels.<p>**Note:** Microsoft doesn't recommend that you use manual heights and widths, because they don't adapt to changes in form density.</p> |
 
-Note that if **Auto** is used, the behavior is determined automatically at run time. Typically, a value of **Auto** for these properties causes the same behavior as a value of **SizeToContent**, as in Dynamics AX 2012.
+Note that if a value of **Auto** is used for these properties, the behavior is automatically determined at runtime. Typically, a value of **Auto** for these properties causes the same behavior as a value of **SizeToContent**, as in AX 2012.
 
 ## Interactions between the ArrangeMethod and Columns properties
 If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** property has no effect, because items are laid out in strict horizontal arrangement and no wrapping is used. If **ArrangeMethod**=**Vertical**, columns are arranged vertically, and the controls are either distributed evenly among the columns (**Fixed**), or distributed to fill the available horizontal or vertical space (**Fill**). If **ArrangeMethod**=**HorizontalWrap**, columns are arranged, and horizontal wrapping is used at a fixed column width of 280 px. Typically, this option is used to wrap tile layouts.
@@ -125,12 +125,14 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
     <td>8 &nbsp; 9</td>
   </tr>
   <tr>
-    <td>5 </td>
+    <td>5</td>
     <td></td>
   </tr>
 </table>
 
-**ArrangeMethod**=**HorizontalWrap** and **Columns**=**Fill** For this example, we assume that only three lines of items can fit in the container height.
+**ArrangeMethod**=**HorizontalWrap** and **Columns**=**Fill**
+
+For this example, we assume that only three lines of items can fit in the container height.
 
 <table>
   <tr>
@@ -178,7 +180,9 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
   </tr>
 </table>
 
-**ArrangeMethod**=**Vertical** and **Columns**=**Fill** For this example, we assume that only three lines of items can fit in the container height.
+**ArrangeMethod**=**Vertical** and **Columns**=**Fill**
+
+For this example, we assume that only three lines of items can fit in the container height.
 
 <table>
   <tr>
@@ -192,7 +196,9 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
   </tr>
 </table>
 
-**ArrangeMethod**=**Vertical** and **Columns**=**Fill** on a FastTab For this example, we assume that the width of the FastTab can fit four columns.
+**ArrangeMethod**=**Vertical** and **Columns**=**Fill** on a FastTab
+
+For this example, we assume that the width of the FastTab can fit four columns.
 
 <table>
   <tr>
@@ -204,7 +210,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 </table>
 
 ## Breakable groups
-When you use **ColumnsMode**=**Fill** to dynamically create columns based on the amount of available space, groups of fields can be split into multiple columns. The **Breakable** property on Group controls allow developers to ensure that controls in a group aren't distributed across columns. The default value for this property is **Yes**, which indicates that the contents of the group can be split between groups. To keep a group together all the time, set **Breakable** to **No**. Note that **Breakable** applies only to the first level in nested groups.
+When you set **ColumnsMode** to **Fill** to dynamically create columns, based on the amount of available space, groups of fields can be split into multiple columns. The **Breakable** property on Group controls lets developers ensure that controls in a group aren't distributed across columns. The default value for this property is **Yes**, which indicates that the contents of the group can be split between groups. To keep a group together all the time, set **Breakable** to **No**. Note that **Breakable** applies only to the first level in nested groups.
 
 ## Guidelines for using layout properties
 ### ColumnsMode=Fill
