@@ -38,7 +38,7 @@ This topic describes how to set up a Dynamics 365 Commerce e-commerce page that 
 
 An e-commerce page can be configured to serve dynamic content based on a segment in the URL path. For example, a page named blog_viewer can be created and associated with a URL such as `https://fabrikam.com/blog`. This page can then be used to display content based on the last segment in the path. For example, the last segment of the URL `https://fabrikam.com/blog/article-1` would be "article-1." 
 
-Separate custom pages that override the dynamic page can also be associated with URLs under the URL path. Building on the `https://fabrikam.com/blog` example above, a page named blog_summary could be created and associated with the URL `https://fabrikam.com/blog/about-this-blog`. When the latter URL is requested, the blog_summary page associated with the "/about-this-blog" parameter is returned instead of the blog_viewer page.
+Separate custom pages that override the dynamic page can also be associated with segments under the URL path. Building on the `https://fabrikam.com/blog` example, a page named blog_summary could be created and associated with the URL `https://fabrikam.com/blog/about-this-blog`. When the latter URL is requested, the blog_summary page associated with the "/about-this-blog" parameter is returned instead of the blog_viewer page.
 
 > [!NOTE] 
 > The functionality for hosting, retrieving, and displaying dynamic page content is implemented using a custom module. For more information, see [Online channel extensibility](e-commerce-extensibility/overview.md). 
@@ -56,7 +56,7 @@ To create a new page that will serve dynamic content, follow the steps outlined 
 To create the base URL for the dynamic page in Commerce site builder, follow these steps.
 
 1. Go to **URLs** and select  **New \> New URL**.
-1. In the **Create new URL** dialog box, select **Internal page**. Under **URL path**, enter the path that will serve as the root for your dynamic page (for our example, "/blog"), and then select **Next.** 
+1. In the **Create new URL** dialog box, select **Internal page**. Under **URL path**, enter the path that will serve as the root for your dynamic page (in our example, "/blog"), and then select **Next.** 
 1. In the **Select a page** dialog box, select the page you created to serve as the dynamic page, and then select **Save**.
 1. Select **Publish**.
 
@@ -65,17 +65,17 @@ To create the base URL for the dynamic page in Commerce site builder, follow the
 To configure the route to the dynamic page in Commerce site builder, follow these steps.
 
 1. Go to **Site Settings \> Extensions**. 
-1. Under **Parameterized URL paths**, select **+Add**, and then enter the URL path you entered when you created the URL (for our example, "/blog"). 
+1. Under **Parameterized URL paths**, select **+Add**, and then enter the URL path you entered when you created the URL (in our example, "/blog"). 
 1. Select **Save and publish**. 
 
-Once configured, all requests to the parameterized URL path will return the page associated with that URL, and requests that contain an additional segment will return the page with any content that is retrieved using that segment as a parameter. In our example, `https://fabrikam.com/blog/article-1` will return the blog_summary page with the content retrieved using the "/article-1" parameter. 
+Once configured, all requests to the parameterized URL path will return the page associated with that URL, and requests that contain an additional segment will return the page with content retrieved using the segment as a parameter. In our example, `https://fabrikam.com/blog/article-1` would return the blog_summary page with content retrieved using the "/article-1" parameter. 
 
 ## Override a parameterized URL with a custom page
 
 To override a parameterized URL with a custom page in Commerce site builder, follow these steps.
 
 1. Go to **URLs** and select  **New \> New URL**.
-1. In the **Create new URL** dialog box, select **Internal page**. Under **URL path**, enter the path that includes the segment to be overridden (for our example, "/blog/about-this-blog"), and then select **Next.** 
+1. In the **Create new URL** dialog box, select **Internal page**. Under **URL path**, enter the path that includes the segment to be overridden (in our example, "/blog/about-this-blog"), and then select **Next.** 
 1. In the **Select a page** dialog box, select the custom page, and then select **Save**.
 1. Select **Publish**.
 1. If the custom page is not yet published, go to **Pages**, select the custom page, and then select **Publish**.
@@ -99,3 +99,5 @@ Once published, the custom page will now be served instead of the dynamic page w
 [Enrich a category landing page](enrich-category-page.md)
 
 [Verify page content accessibility](verify-accessibility.md)
+
+[Online channel extensibility](e-commerce-extensibility/overview.md
