@@ -36,7 +36,7 @@ This topic provides answers to some frequently asked questions (FAQ) about throt
 
 ## What happens when a request is throttled?
 
-For OData and custom service requests, a 429 error "Too many requests", will occur. 
+For OData and custom service requests, a 429 error "Too many requests", will occur.  
 
 When a request is throttled, the system provides a value indicating the duration before any new requests from the user can be processed. When a request is throttled and a 429 error occurs, the response header will include a **Retry-After** interval, which can be used to retry the request after a specific number of seconds. The following example shows this operation. 
 
