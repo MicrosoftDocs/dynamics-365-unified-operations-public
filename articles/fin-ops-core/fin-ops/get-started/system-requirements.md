@@ -45,7 +45,7 @@ Users can access the application with the most recent versions of these popular 
 - Microsoft Internet Explorer 11 (deprecated, not recommended)
 
 > [!NOTE]
-> For optimal performance and experience, we recommend you use the latest version of a modern browser, in particular Microsoft Edge. Microsoft Internet Explorer 11 support is deprecated. For more information, see the [Internet Explorer deprecation announcement](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps)
+> For optimal performance and experience, we recommend you use the latest version of a modern browser, in particular Microsoft Edge. Microsoft Internet Explorer 11 support is deprecated. For more information, see the [Internet Explorer deprecation announcement](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps)
 
 To find the latest release for each web browser, go to the software manufacturer's website.
 
