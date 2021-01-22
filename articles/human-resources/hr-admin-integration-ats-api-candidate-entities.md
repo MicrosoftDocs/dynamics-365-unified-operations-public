@@ -336,7 +336,7 @@ This entity contains the educational history of the person who is the candidate.
 
 ### Properties
 
-| Property<br>**Physical name**<br>**_Type_** | Use | Description |
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Person Education Entity ID**<br>mshr_hcmpersoneducationentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier of the person education entity record. |
 | **Party Number**<br>mshr_partynumber<br>*String* | Read/write<br>Required | The unique identifier of the party (person) record for the candidate. |
