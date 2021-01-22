@@ -5,7 +5,7 @@ title: Page layout in the web client
 description: This topic discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
