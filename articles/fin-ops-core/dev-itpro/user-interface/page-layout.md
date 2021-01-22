@@ -68,7 +68,7 @@ In Finance and Operations, layout is controlled by the same basic properties tha
 -   The sizing that is specified by the **HeightMode**, **WidthMode**, **Height**, and **Width** properties.
 
 ## ArrangeMethod property
-The **ArrangeMethod** property specifies a base arrangement method for a container. Finance and Operations contains all the **ArrangeMethod** options from AX 2012 as well as an additional option called **HorizontalWrap**, which is intended for tile layouts in panoramas. The following table describes the various options for the **ArrangeMethod** property.
+The **ArrangeMethod** property specifies a base arrangement method for a container. Finance and Operations apps contain all the **ArrangeMethod** options from AX 2012, as well as an additional option called **HorizontalWrap**, which is intended for tile layouts in panoramas. The following table describes the various options for the **ArrangeMethod** property.
 
 | Option          | Description                                                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
