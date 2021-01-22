@@ -5,7 +5,7 @@ title: Recruiting request and related entities
 description: This topic describes Recruiting request and related entities for the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
 author: andreabichsel
 manager: tfehr
-ms.date: 01/125/2021
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -198,7 +198,7 @@ Describes skill requirements for a RecruitingRequest.
 
 ### Properties
 
-| **Property**<br>Physical name<br>*Type* | Use | Description |
+| Property<br>**Physical name**<br>** *Type* ** | Use | Description |
 | --- | --- | --- |
 | **Recruiting Request Skill Entity ID**<br>mshr_hcmrecruitingrequestskillentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the **Recruiting Request Skill** record. |
 | **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the associated recruiting request. |
