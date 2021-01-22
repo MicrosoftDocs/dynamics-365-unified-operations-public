@@ -86,7 +86,7 @@ In Finance and Operations, the **Fill** option exists to support responsive layo
 | Fixed  | Specify the number of columns that the **Columns** property should generate. Controls are evenly distributed among the columns, and their order is maintained. If the controls can't be distributed evenly among the columns, the leftmost columns receive extra controls first. This option is the default value for all controls.                                                          |
 
 ## HeightMode/WidthMode properties
-In Finance and Operations, sizing is accomplished via the **WidthMode**+**Width** and **HeightMode**+**Height** size properties. The following table described the various options for these properties.
+In Finance and Operations apps, sizing is accomplished via the **WidthMode**+**Width** and **HeightMode**+**Height** size properties. The following table described the various options for these properties.
 
 | Option          | Description                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
