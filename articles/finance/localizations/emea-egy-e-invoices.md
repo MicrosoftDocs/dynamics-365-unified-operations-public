@@ -76,7 +76,7 @@ Complete the following steps to configure Electronic document property type reqi
 ### Enter Legal entity address
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Expand the **Addresses** FasTab for the selected Legal entity.
-3. Enter a valid primary adderess for the selected Legal entity.
+3. Add a valid primary adderess for the selected Legal entity.
 
 ### Enter Legal entity branch
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
@@ -98,6 +98,13 @@ Complete the following steps to configure Electronic document property type reqi
 4. In the **Value** column, enter Taxpayer activity code.
 
 ## Configure Customers data 
+### Enter Customer address
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
+2. Select a customer and expand the **Addresses** FasTab for the selected customer.
+3. Add a valid adderess for the selected customer.
+
+### Enter Customer registration number
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
 
 ## Configure Sales tax codes
 
