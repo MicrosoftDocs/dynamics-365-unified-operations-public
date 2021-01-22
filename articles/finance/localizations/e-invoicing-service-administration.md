@@ -1,8 +1,8 @@
 # Service administration
 
 This topic provides you information about the components related to the
-Electronic invoicing add-on administration, explaining the
-elements that need to be configured for the correct functioning
+administration of Electronic invoicing add-on, explaining the
+what needs to be configured for the correct functioning
 of the service.
 
 ## Azure
@@ -53,18 +53,13 @@ It is the ID of your LCS subscription from your organization.
 
 ### Service environments
 
-The Service environments are logical partitions created in RCS for
-electronic invoicing service. They exist to support the execution of the
-electronic invoicing features within service, assuring not only the
-management of the governance, granting the permissions to users to
-generate electronic invoices through the services, but also allowing the
-process of generation of electronic invoices, consuming the customer's
-digital certificates stored in the customer's Azure account, and access
-the blob storage for holding the customer's transactional data.
+The Service environments are logical partitions created to support the execution of the electronic invoicing features within the Electronic invoicing add-on. 
 
-Customers can create as many service environments as they want, and they
-are independent of each other. And the instances of Finance and Supply
-Chain Management can access any of those environments.
+Also, the security (secrets and digital certificates) as well the governance (access permissions) must be configured at the level of Service environments. 
+
+Customers can create as many service environments as they want, and they are independent of each other.
+
+The service environments must be created and maintained in RCS, and when they ready, they must be Published to Electronic invoicing add-on.
 
 #### Service environment status
 
