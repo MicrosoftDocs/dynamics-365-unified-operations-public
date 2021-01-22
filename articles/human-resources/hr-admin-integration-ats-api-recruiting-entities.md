@@ -198,8 +198,6 @@ Describes skill requirements for a RecruitingRequest.
 
 ### Properties
 
-### Properties
-
 | **Property**<br>Physical name<br>*Type* | Use | Description |
 | --- | --- | --- |
 | **Recruiting Request Skill Entity ID**<br>mshr_hcmrecruitingrequestskillentityid<br>*GUID* | Read-only<br>Required | System-generated unique identifier for the **Recruiting Request Skill** record. |
