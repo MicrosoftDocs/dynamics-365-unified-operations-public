@@ -127,7 +127,7 @@ In the same way that you can select (or unselect) all rows in the grid by select
 When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
 ## Freezing columns
-Some columns in a grid may be important enough for context that you do not want them to scroll out of view and want to always see the values in that column. The **Freeze columns in grid** feature, available starting in 10.0.17 / Platform update 41, provides this flexibility to a user. 
+Some columns in a grid may be important enough for context that you do not want them to scroll out of view and want to always see the values in that column. The **Freeze columns in grid** feature, available starting in version 10.0.17, provides this flexibility to a user. 
 
 To freeze a column, right-click on the column header and select **Freeze column**. When this is done initially, the selected column will become the first column and will no longer scroll out of view. Subsequent columns that are frozen will be added to the right of any existing frozen columns. Users can reorder columns frozen columns as needed using the standard Move functionality. Frozen columns cannot be moved among the set of unfrozen columns and vice versa.  
 
