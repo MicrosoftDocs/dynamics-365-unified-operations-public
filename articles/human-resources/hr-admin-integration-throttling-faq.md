@@ -76,10 +76,6 @@ No. Throttling is only for OData and custom service integrations.
 
 Currently, if a request isn't retried when a 429 error is received, the request won't be processed.
 
-## Are there plans to provide an option for the Priority mapping grid entry?
-
-Microsoft will consider this request in a future release.
-
 ## Will the requests of my interactive users be throttled?
 
 No. There will be no impact on the requests of interactive (online) users.
