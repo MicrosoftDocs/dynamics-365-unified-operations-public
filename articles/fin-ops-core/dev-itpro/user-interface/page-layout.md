@@ -78,7 +78,7 @@ The **ArrangeMethod** property specifies a base arrangement method for a contain
 | HorizontalWrap  | Controls are arranged inside columns of fixed width that wrap horizontally. This option is typically used for tile layouts in panorama sections and is the default value for TabPages where **Tab.Style**=**Panorama**.     |
 
 ## ColumnsMode property
-In Finance and Operations, the **Fill** option exists to support responsive layouts. When this property value is set, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
+In Finance and Operations apps, the **Fill** option exists to support responsive layouts. When this property value is set, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
 
 | Option | Description                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
