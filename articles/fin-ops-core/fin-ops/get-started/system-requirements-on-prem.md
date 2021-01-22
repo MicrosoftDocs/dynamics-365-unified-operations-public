@@ -296,7 +296,7 @@ Users can access the Finance and Operations web application with the most recent
 - Microsoft Internet Explorer 11 (deprecated, not recommended)
 
 > [!NOTE]
-> For optimal performance and experience, we recommend you use the latest version of a modern browser, in particularl Microsoft Edge. Microsoft Internet Explorer 11 support is deprecated. For more information, see the [Internet Explorer deprecation announcement](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps)
+> For optimal performance and experience, we recommend you use the latest version of a modern browser, in particularl Microsoft Edge. Microsoft Internet Explorer 11 support is deprecated. For more information, see the [Internet Explorer deprecation announcement](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps)
 
 ## Software requirements for Active Directory Federation Services
 
