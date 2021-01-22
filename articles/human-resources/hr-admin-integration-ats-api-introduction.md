@@ -5,7 +5,7 @@ title: Applicant Tracking System integration API introduction
 description: This topic describes the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
 author: andreabichsel
 manager: tfehr
-ms.date: 01/19/2021
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -23,7 +23,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jaredha
-ms.search.validFrom: 2021-01-19
+ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: Platform update 36
 ---
 
