@@ -41,7 +41,7 @@ An e-commerce page can be configured to serve dynamic content based on a segment
 Separate custom pages that override the dynamic page can also be associated with URLs under the URL path. Building on the `https://fabrikam.com/blog` example above, a page named blog_summary could be created and associated with the URL `https://fabrikam.com/blog/about-this-blog`. When the latter URL is requested, the blog_summary page associated with the "/about-this-blog" parameter is returned instead of the blog_viewer page.
 
 > [!NOTE] 
-> The functionality for hosting, retrieving, and displaying dynamic page content is implemented using a custom module. For more information, see [Online channel extensibility](../e-commerce-extensibility/overview.md). 
+> The functionality for hosting, retrieving, and displaying dynamic page content is implemented using a custom module. For more information, see [Online channel extensibility](e-commerce-extensibility/overview.md). 
 
 ## Set up a dynamic e-commerce page
 
@@ -49,7 +49,7 @@ To set up a dynamic e-commerce page, you must create the dynamic page, create th
 
 ### Create the page that will serve dynamic content
 
-To create a new page that will serve dynamic content, follow the steps outlined in [Add a new site page](add-new-page.md). This page will require the implementation of a module that uses the last segment on the URL path to retrieve the content from an external data source. For more information about custom module development, see [Online channel extensibility](../e-commerce-extensibility/overview.md). 
+To create a new page that will serve dynamic content, follow the steps outlined in [Add a new site page](add-new-page.md). This page will require the implementation of a module that uses the last segment on the URL path to retrieve the content from an external data source. For more information about custom module development, see [Online channel extensibility](e-commerce-extensibility/overview.md). 
 
 ### Create the base URL for the dynamic page
 
