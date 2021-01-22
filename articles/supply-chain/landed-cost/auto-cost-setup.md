@@ -63,12 +63,12 @@ The following table describes all of the settings that can appear in the header 
 | Setting | Description |
 | --- | --- |
 | **Account Code** | Select one of the following values:<ul><li>**Table** - The cost rule applies only to the specified vendors.</li><li>**Group** - The system will look for the vendor cost group associated with the vendor record to apply the cost rule to.<!--KFM: This could be more clear. --></li><li>**All** - The cost rule applies to all vendors. |
-| **Shipping company**<br>or **Customs broker**<br> | Select the vendors where this rule applies. If **Account code** is set to *All*, then this field is inactive. If **Account code** is set to *Table* or *Group*, select the vendor or vendor group. |
+| **Shipping&nbsp;company**<br>or **Customs&nbsp;broker**<br> | Select the vendors where this rule applies. If **Account code** is set to *All*, then this field is inactive. If **Account code** is set to *Table* or *Group*, select the vendor or vendor group. |
 | **Item code** | Select one of the following values:<ul><li>**Table** - The cost rule applies only to the specified items.</li><li>**Group** - The system will look for the item cost group associated with the item record to apply the cost rule to.<!--KFM: This could be more clear. --></li><li>**All** - The cost rule applies to all items.|
 | **Item relation** | Select the items where this rule applies. If **Account code** is set to *All*, then this field is inactive. If **Account code** is set to *Table* or *Group*, select the item or item group. |
 | **Mode of delivery** | This field serves two purposes, informational and cost selection. <!--KFM: This could be more clear. --> |
 | **Container type** | The shipping container type that the goods will be shipped in. For an auto cost to be applied to a voyage, the container type in the auto cost setup must match that of the voyage. |
-| **From port** and **To port** | The ports where voyage source and destination ports. (It is possible that some shipping containers will have a different to ports because the voyage may stop at multiple ports.) For the auto cost to be applied to a voyage, it must have an exact match of both the to and from ports. |
+| **From&nbsp;port** and **To&nbsp;port** | The ports where voyage source and destination ports. (It is possible that some shipping containers will have a different to ports because the voyage may stop at multiple ports.) For the auto cost to be applied to a voyage, it must have an exact match of both the to and from ports. |
 | **Auto cost number** | Shows a unique identifier for the auto cost rule. Its value is generated automatically based on the number sequence set up on the **Landed cost parameters** page. |
 | **Inventory dimensions** | Some cost areas allow you to include one or more item dimensions in the header (such as size, color, warehouse, batch number, and so on). Select **Display dimensions** from the Action Pane to choose which dimensions to include. |
 
@@ -90,38 +90,7 @@ The following table describes all of the settings that can appear for each line.
 | **Cost value** | Enter the value of the cost. |
 | **Cost currency code** | Select the currency of the cost. |
 | **Item sales tax group** | Select the tax code for the cost. |
-| **Minimum cost** | This is only applicable if the **Broken by quantity** check box is selected. Irrespective of the costs specified on the quantity breaks form, if the measurement does not reach this value, then the minimum value is selected. For example: <!--KFM: Continue here -->
-
-| Quantity | Charge |
-| --- | --- |
-| 0-45kg | $6 per measurement i.e. kg/m³ |
-| 46-100kg | $5.50 per measurement i.e. kg/m³ |
-
-If two kilograms were shipped, the quantity break would create a cost value of $12 but if the minimum was $100, then the final cost would be $100. |
-| **Aggregate** | Mark this check box to allow users to move this specific cost from the shipping container level to the voyage level. This allows costs to be automatically calculated on the shipping container level but also combined together and apportioned across all items within all the containers on a voyage rather than all items in the individual shipping containers. |
-| **Linked cost type** | Link the current line to another line in this same auto costs record by specifying the **Cost type code** for the line you want to link to. The **Category** for the current line must be set to _Percent_ to allow this feature. When a line is linked here, the current line will then base its cost on that other cost.
-
-For example, let&#39;s assume freight is $1,000 and we want a fuel surcharge to be 10% of the freight cost. The line would need a **Category** of _Percent_, a **Cost value** of 10%, and the **Linked cost type** of _Freight_. |
-| **Value adjustment** and **Adjustment amount** | Use these settings to adjust the value and amount for various percentage values (Only available for cost level &#39;Item (Purchase lines)&#39;
-
-Different costing can be set up for different components of an item. One component of an item may have a different cost percentage than the other components of the item, sometimes required to value a certain portion of the goods using different rates. For example, duty is calculated for one item at two rates, like a watch where one component has a 2% duty rate and a second component that has a 15% duty rate. In this case, costing would be split between the various components. The cost is calculated for the item, but the cost value is adjusted by the value of the component(s) with the different cost category. The cost of the remaining component(s) can then be calculated by using the amount that the previous calculation was adjusted by.
-
-For example:
-
-|
- | Cost | Duty % |
-| --- | --- | --- |
-| Component A | $9.50 | 15% |
-| Component B | $0.50 | 2% |
-| Total | $10.00 |
- |
-
-The first entry is for the 10% line. **Category** = _Percent_Cost value = _10_Value adjusted =_Adjust by_Adjusted value = _-0.50_
-
-This first setup specifies that the cost of the item ($10) must be reduced by $0.50 (the price of the component B) before a 10% duty charge is calculated. Therefore 10% will be applied to $9.50.
-
-The second entry is for the 2% line (the $0.50 that the previous entry was adjusted by)
-
-**Category** = _Percent_Cost value = _2_Value adjusted = _Use_Adjustment = _0.50_
-
-This second setup calculates the remaining duty payable on component B. |
+| **Minimum cost** | <p>This setting only applies if the **Broken by quantity** check box is selected. Regardless of the costs specified on the **Quantity breaks** page, if the measurement doesn't reach this value, then the minimum value is selected. For example:</p><ul><li>A quantity of 0-45kg results in a charge of $6 per measurement (kg/m³)</li><li>A quantity of 46-100kg results in a charge of $5.50 per measurement (kg/m³)</li></ul><p>If two kilograms were shipped, the quantity break would create a cost value of $12 but if the **Minimum cost** was *$100*, then the final cost would be $100.</p> |
+| **Aggregate** | Select this check box to allow users to move this specific cost from the shipping container level to the voyage level. This allows costs to be automatically calculated on the shipping container level but also combined together and apportioned across all items within all the containers on a voyage rather than all items in the individual shipping containers. |
+| **Linked cost type** | <p>Link the current line to another line in this same auto costs record by specifying the **Cost type code** for the line you want to link to. The **Category** for the current line must be set to *Percent* to allow this feature. When a line is linked here, the current line will then base its cost on that other cost.</p><p>For example, assume freight is $1,000 and we want a fuel surcharge to be 10% of the freight cost. The line would need a **Category** of *Percent*, a **Cost value** of *10%*, and the **Linked cost type** of *Freight*. |
+| **Value&nbsp;adjustment** and **Adjustment&nbsp;amount** | <p>Use these settings to adjust the value and amount for various percentage values (Only available when **Cost area** is set to *Item*)</p><p>Different costing can be set up for different components of an item. One component of an item may have a different cost percentage than the other components of the item, which is sometimes required to value a certain portion of the goods using different rates. For example, duty is calculated for one item at two rates, like a watch where one component has a 2% duty rate and a second component that has a 15% duty rate. In this case, costing would be split between the various components. The cost is calculated for the item, but the cost value is adjusted by the value of the component(s) with the different cost category. The cost of the remaining component(s) can then be calculated by using the amount that the previous calculation was adjusted by.</p><p>For example:</p><ul><li>Component A has a cost of $9.50 and a duty of 15%</li><li>Component B has a cost of $0.50 and a duty of 2%</li><li>Therefore, the total cost is $10.00</li></ul><p>The first entry is for the 10% line. It uses the following values:</p><ul><li>**Category** = *Percent*</li><li>**Cost value** = *10*</li><li>**Value adjusted** = *Adjust by*</li><li>**Adjusted value** = *-0.50*</li></ul><p>This first setup specifies that the cost of the item ($10) must be reduced by $0.50 (the price of the component B) before a 10% duty charge is calculated. Therefore, 10% will be applied to $9.50.</p><p>The second entry is for the 2% line (the $0.50 that the previous entry was adjusted by). It uses the following values:</p><ul><li>**Category** = *Percent*</li><li>**Cost value** = *2*</li><li>**Value adjusted** = *Use*</li><li>**Adjustment** = *0.50*</li></ul><p>This second setup calculates the remaining duty payable on component B.</p> |
