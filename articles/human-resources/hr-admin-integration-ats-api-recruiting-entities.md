@@ -250,10 +250,10 @@ Describes educational requirements for a RecruitingRequest.
 | **Recruiting Request ID**<br>mshr_recruitingrequestid<br>*String* | Write-once<br>Required | The user-readable unique identifier of the related recruiting request. |
 | **Recruiting Request ID Value**<br>_mshr_fk_recruitingrequest_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmrecruitingrequestentityid of mshr_hcmrecruitingrequestentity | System-generated unique identifier of the related recruiting request. |
 | **Education Level ID**<br>mshr_educationlevelid<br>*String* | Write-once<br>Required | The level of education required. |
-| **Educational Level ID Value**<br>_mshr_fk_educationlevel_id_value<br>*GUID* | Read-only<br>Required | Foreign key: mshr_hcmeducationlevelentityid of mshr_hcmeducationlevelentity | System-generated unique identifier of the level of education required. |
+| **Educational Level ID Value**<br>_mshr_fk_educationlevel_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmeducationlevelentityid of mshr_hcmeducationlevelentity | System-generated unique identifier of the level of education required. |
 | **Education Level Description**<br>mshr_educationleveldescription<br>*String* | Read-only<br>Required | The description of the level required for the skill. |
 | **Education Discipline ID**<br>mshr_educationdisciplinedescription<br>*String* | Write-once<br>Required | The area of educational discipline. |
-| **Education Discipline ID Value**<br>_mshr_fk_educationdiscipline_id_value<br>*GUID* | Read-only<br>Required<br> Foreign key: mshr_hcmeducationdisciplineentityid of mshr_hcmeducationdisciplineentity | System-generated unique identifier of the area of educational discipline. |
+| **Education Discipline ID Value**<br>_mshr_fk_educationdiscipline_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmeducationdisciplineentityid of mshr_hcmeducationdisciplineentity | System-generated unique identifier of the area of educational discipline. |
 | **Education Discipline Description**<br>mshr_educationdisciplinedescription<br>String	| Read-only<br>Required	| The description of the area of educational discipline. |
 | **Data Area ID**<br>mshr_dataareaid<br>*String* | Read/write<br>Optional | Specifies the legal entity (company).|
 | **Data Area ID Value**<br>_mshr_dataareaid_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: cdm_companyid of cdm_company entity | System-generated GUID value identifying the legal entity (company). |
