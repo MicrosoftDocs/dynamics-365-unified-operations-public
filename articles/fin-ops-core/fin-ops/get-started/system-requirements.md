@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 10/28/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ This topic lists the system requirements for the current version of Dynamics 365
 
 Users can access the application with the most recent versions of these popular browsers: 
 
-- Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/en-us/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) 
+- Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) 
 - Google Chrome  
 - Apple Safari
 - Microsoft Internet Explorer 11 (deprecated, not recommended)
