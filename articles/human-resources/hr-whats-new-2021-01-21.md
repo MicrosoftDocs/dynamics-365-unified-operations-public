@@ -96,6 +96,7 @@ The following new features are in preview. For more information about turning fe
 
 
 ## Coming soon
+Email confirmation for benefit enollments - This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in ESS.  Learn more [here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-parameters-per-company)
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
