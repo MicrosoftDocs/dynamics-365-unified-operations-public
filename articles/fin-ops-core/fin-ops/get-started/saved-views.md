@@ -130,8 +130,8 @@ To publish a view, follow these steps:
 2. With that view currently loaded, select the view name to open the view selector drop-down menu. 
 3. Select the **More** button and then select **Publish**. The Publish dialog box will open.
 4. Enter a name for the view. The name that you enter is the name that users who receive this view will see in their view selectors. The names of published views for a page must be unique. No duplicate names are allowed, even if the list of roles or legal entities that the views are applied to differ.
-5. **Update 10.0.17 or later**: If you have the **(Preview) Translation support for organization views** feature enabled, you can add translations for your view name in as many languages as your organization requires by clicking the **Translations** button next to the **Name** field. This will allow users to see the view name in their current language. You can also set the default language, which is the translation that will be shown to users who are running languages that don't have a translation defined.  
-5. Optionally enter a description for the view so the recipients of this view can better understand its purpose. 
+5. **Update 10.0.17 or later:** If the **(Preview) Translation support for organization views** feature is turned on, you can add translations for your view name in as many languages as your organization requires by selecting the **Translations** button next to the **Name** field. The view name will then be shown to users in their current language. You can also set the default language to specify the translation that will be shown to users who are running languages that no translation is defined for.
+5. Optional: Enter a description for the view, so that users who receive this view can better understand its purpose. 
 6. Determine whether the view should be published as the default view for the selected users. When a view is made the default view, users will see it the next time that they open the target page. The single, global default view of every targeted user will be changed. However, users can still change their default view after publishing has occurred.
 7. Add the security roles that correspond to the users who are being targeted by this view. 
 8. Determine whether you want to publish the view to the child roles of each security role that is selected. If you do, select the **Include child roles** check box in the row for the appropriate security roles. Note that this check box isn't available for roles that don't have child roles.
@@ -154,9 +154,9 @@ If the changes that you want to make to a published view only involve the publis
 1. Switch to the published view for the parameters that you want to update. 
 2. On the view selector drop-down menu, select **Republish**. If you're using version 10.0.12 or earlier, you must select **Publish** and then **Yes** to update the existing view.
 3. Update the name, description, security roles, and legal entities for the view. 
-4. Select **Publish**.  If you originally selected this published view as the default view, it will be the default view for users again after you republish it. 
+4. Select **Publish**. If you originally selected this published view as the default view, it will be the default view for users again after you republish it. 
 
-If the changes to the published view involve modifying the personalizations or filters associated with the view, follow the steps below.
+If the changes to the published view involve modifications of the personalizations or filters that are associated with the view, follow these steps.
 
 1. Load the published view that you want to change. 
 2. Make the required changes to the local draft.
@@ -188,7 +188,7 @@ Although some management capabilities are surfaced on every page, as indicated i
 - **User settings** – Select a user to view, or adjust the user's ability to use personalization either for the whole system or for specific pages that the user has visited. You can view and interact with the user's personalizations in the system. You can also delete all personalizations for that user or reset feature callouts for the user. If feature callouts are reset, any pop-up windows that introduced new features and that the user previously dismissed will appear again the next time that the user encounters those features.
 - **System settings** – You can temporarily turn off personalization for all users in the system. In this case, no personalizations are applied for any user, and all pages are reset to their default state. If you turn personalization back on later, all personalizations are reapplied. You can also permanently delete all personalizations for all users in the system. Personalizations that have been deleted can't be recovered. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
 
-Users who have access to the **Personalization** page can also import personal or organization views by using the **Import views** button on the Action Pane. For organization views, you can choose to **Publish immediately** so that the views are available to users without an additional explicit publish.  
+Users who have access to the **Personalization** page can also import personal or organization views by using the **Import views** button on the Action Pane. For organization views, you can select **Publish immediately** to make the views available to users without an additional explicit publish.
 
 ## Known issues
 For a list of known issues with saved views, please see [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md).
@@ -200,7 +200,7 @@ For a list of known issues with saved views, please see [Build forms that fully 
 > [!NOTE]
 > The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
-You can enable/disable the **Saved views** feature through Feature management in any environment. Once enabled, all subsequent user sessions will have saved views enabled.
+You can turn the **Saved views** feature on and off through Feature management in any environment. After it's turned on, saved views will be enabled in all subsequent user sessions.
 
 ### What happens to existing personalizations when views are enabled? 
 
