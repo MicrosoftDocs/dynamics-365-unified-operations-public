@@ -126,35 +126,18 @@ configurable components:
 
 ### Actions
 
-List of available Actions
-
--   Sign xml document
-
--   Get submission to Egyptian Tax Authority
-
--   Egyptian Tax Authority REST
-
--   Submit document to Egyptian Tax Authority
-
--   FileStoreActionName
-
--   Sign json document
-
--   Use MS Power Automate
-
--   Transform document
-
--   Transform document from OData source
-
--   Process response
-
--   Call REST web service
-
--   Call Mexican PAC service
-
--   Call Brazilian SEFAZ service
-
--   Call Italian SDI service
+| Action                                        | Description                                                 | Availability                |
+|-----------------------------------------------|-------------------------------------------------------------|-----------------------------|
+| Transform document                            | Generates a file following a given ER format configuration  | Preview                     |
+| Transform document from OData source          |                                                             | Preview                     |
+| Sign xml document                             | Applies a digital signature in the XML file                 | Preview                     |
+| Sign json document for Egyptian Tax Authority | Applies a digital signature in a JSON file                  | Preview                     |
+| Egyptian Tax Authority REST client            | Submits an e-invoice to Egyptian tax authority web service  | Preview                     |
+| Call Brazilian SEFAZ Service                  | Submits an e-invoice to Brazilian tax authority web service | Preview                     |
+| Call Mexican PAC Service                      | Submits an e-invoice to PAC web services                    | Preview                     |
+| Process response                              | Analyze the web service response                            | Preview                     |
+| Use MS Power Automate                         |                                                             | Preview                     |
+| File store action name                        |                                                             | Preview                     |
 
 ### Applicability rules
 
