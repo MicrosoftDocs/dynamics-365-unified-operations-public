@@ -84,7 +84,18 @@ Complete the following steps to configure Electronic document property type reqi
 3. In the **Branch/Subsidiary** field, enter a branch code for the selected Legal entity.
 
 ### Enter Legal entity registration number
-### Configure Legal entity activity code
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Go to the **Registration IDs** menu item for the selected Legal entity.
+3. Expand the **Registration ID** FasTab for the selected address.
+4. Click on the **Add** buttom to create a new regictration ID.
+5. In the **Registration type** column, select the registration type previously created in **Configure registration numbers** step.
+6. In the **Registration number** column, enter a valid Legal entity registration number obtained from the Tax authority.
+
+### Enter Legal entity activity code
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Go to the **Electronic document properties** menu item for the selected Legal entity.
+3. Select the line with **taxpayerActivityCode** value in the **Type** column.
+4. In the **Value** column, enter Taxpayer activity code.
 
 ## Configure Customers data 
 
