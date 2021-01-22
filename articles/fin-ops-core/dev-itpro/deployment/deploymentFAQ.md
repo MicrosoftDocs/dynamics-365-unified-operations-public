@@ -130,3 +130,6 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | Japan East | 20.48.77.192/26
 | Japan West | 20.39.179.192/26
 
+## Is there any potential impact on the environments certificates?
+
+Yes, if you are migration from the previous non self-service deployment, your environment’s certificate may be renewed due to infrastructure differences. Ensure to determine if there is any dependence on the certificates in your solution/integrations and preform the needed actions after the migration.
