@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Default descriptions in the general ledger
+title: Default descriptions for the general ledger
 description: Default descriptions can be used to update the description field in voucher postings to the general ledger.
 author: RichardLuan
 manager: tfehr
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
-# Default descriptions in the general ledger
+# Default descriptions for the general ledger
 
 [!include [banner](../includes/banner.md)]
 

@@ -61,7 +61,7 @@ The following table describes all of the settings that can appear in the header 
 
 | Setting | Description |
 | --- | --- |
-| **Account Code** | Select one of the following values:<ul><li>**Table** - The cost rule applies only to the specified vendors.</li><li>**Group** - The system will look for the vendor cost group associated with the vendor record to apply the cost rule to.<!--KFM: This could be more clear. --></li><li>**All** - The cost rule applies to all vendors. |
+| **Account Code** | Select one of the following values:<ul><li>**Table** - The cost rule applies only to the specified vendors.</li><li>**Group** - The system will apply the rule to all [vendors](vendors-landed-cost-settings.md) belonging to specific cost type group.</li><li>**All** - The cost rule applies to all vendors. |
 | **Shipping&nbsp;company**<br>or **Customs&nbsp;broker**<br> | Select the vendors where this rule applies. If **Account code** is set to *All*, then this field is inactive. If **Account code** is set to *Table* or *Group*, select the vendor or vendor group. |
 | **Item code** | Select one of the following values:<ul><li>**Table** - The cost rule applies only to the specified items.</li><li>**Group** - The system will look for the item cost group associated with the item record to apply the cost rule to.<!--KFM: This could be more clear. --></li><li>**All** - The cost rule applies to all items.|
 | **Item relation** | Select the items where this rule applies. If **Account code** is set to *All*, then this field is inactive. If **Account code** is set to *Table* or *Group*, select the item or item group. |
