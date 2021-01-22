@@ -204,7 +204,7 @@ If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** 
 </table>
 
 ## Breakable groups
-When you use **ColumnsMode**=**Fill** to dynamically create columns based on the amount of available space, groups of fields can be split into multiple columns. The **Breakable** property on Group controls allows developers to ensure that controls in a group aren't distributed across columns. The default value for this property is **Yes**, which indicates that the contents of the group can be split between groups. To keep a group together all the time, set **Breakable** to **No**. Note that **Breakable** applies only to the first level in nested groups.
+When you use **ColumnsMode**=**Fill** to dynamically create columns based on the amount of available space, groups of fields can be split into multiple columns. The **Breakable** property on Group controls allow developers to ensure that controls in a group aren't distributed across columns. The default value for this property is **Yes**, which indicates that the contents of the group can be split between groups. To keep a group together all the time, set **Breakable** to **No**. Note that **Breakable** applies only to the first level in nested groups.
 
 ## Guidelines for using layout properties
 ### ColumnsMode=Fill
