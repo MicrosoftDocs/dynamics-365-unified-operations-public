@@ -51,14 +51,22 @@ Complete the following steps to nable electronic invoicing for Egypt.
 2. On the **Features** tab, select feature reference for **EG00008 E-invoicing for Egypt** 
 3. Turn on **Enabled** option for the selected feature reference.
 
+## Configure registration numbers
+Complete the following steps to configure registration numbers.
 
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
+2. Create a new **Registration type** with **Country/region** assigned to **EGY - Egypt**.
+3. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+4. Create a new **Registration category**, in the **Registration types** field make the reference to registration type created in point 2.
+5. In the **Registration categories** field, select **Enterprise ID (COID)** value.
 
-## Configure customers master data
-Complete the following steps to configure customers data in order to activate automatic saving of printed invoices as attachments.
+## Configure Legal entity data
 
-1. Go to **Accounts receivable** > **All customers** 
-2. Select a specific customer
-3. On the **Invoice and delivery** FastTab > in the **E-INVOCE** section, select **Yes** in the **eInvoice attachment** field.
+## Configure Customers data 
+
+## Configure Sales tax codes
+
+## Configure Unit codes
 
 ## Print invoices
 Post and print any Customer/Freetext/Project invoice for the customer configured in the previous step.
