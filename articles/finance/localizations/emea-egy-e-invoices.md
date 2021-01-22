@@ -74,7 +74,15 @@ Complete the following steps to configure Electronic document property type reqi
 
 ## Configure Legal entity data
 ### Enter Legal entity address
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Expand the **Addresses** FasTab for the selected Legal entity.
+3. Enter a valid primary adderess for the selected Legal entity.
+
 ### Enter Legal entity branch
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Expand the **Statutory reporting** FasTab for the selected Legal entity.
+3. In the **Branch/Subsidiary** field, enter a branch code for the selected Legal entity.
+
 ### Enter Legal entity registration number
 ### Configure Legal entity activity code
 
