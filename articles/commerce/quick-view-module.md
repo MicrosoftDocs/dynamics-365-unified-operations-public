@@ -36,12 +36,12 @@ ms.dyn365.ops.version: Release 10.0.17
 
 This topic covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-The quick view module allows a user to quickly view a product's information when browsing products on a list page, and then add the product to the cart without having to navigate to the product details page (PDP). The purpose of the module is to allow a user to add multiple items to the cart while browsing a list page. The quick view module provides an overview of the product information necessary to make an "add to cart" decision. The quick view module also provides a link to the PDP for more additional product details and options to buy.
+The quick view module allows a user to quickly view product information when browsing products on a list page, and also to add one or more products to the cart from the list page without having to navigate to the product details page (PDP). The quick view module provides an overview of the product information necessary to make an "add to cart" decision. The quick view module also provides a link to the PDP for additional product details and options to buy.
 
 The quick view module is supported by the [Product collection](product-collection-module-overview.md) and [Search results](search-result-module.md) modules.
 
 > [!IMPORTANT]
-> The quick view module is available as of the Dynamics 365 Commerce version 10.0.17 release.
+> The quick view module is available as of the Commerce version 10.0.17 release.
 
 The following image shows an example of a quick view module on a product list page.
 
@@ -60,18 +60,18 @@ The quick view module properties are similar to those of a buy box module since 
 
 ## Commerce site builder settings
 
-The quick view module also respects the **Site Settings \> Extensions** settings for **Add to cart** similar to Buy box. However, the **Navigate to cart page** setting is ignored since it does not align with the intent of the quick view module, which is to allow the user to browse multiple products on a list page and add them to the cart without navigating away from the list page.
+The quick view module also respects the **Site Settings \> Extensions \> Add product to cart** settings, similar to the buy box module. However, the **Navigate to cart page** setting is ignored since it does not align with the intent of the quick view module, which is to allow the user to browse multiple products on a list page and add them to the cart without navigating away from the list page.
 
 ## Add a quick view module to a product collection module
 
-A quick view module can be added to the Product collection or a Search results module. 
+A quick view module can be added to the product collection and search results modules. 
 
 To add a quick view module to a product collection module in site builder, follow these steps.
 
 1. Go to **Pages**, and then select the home page for the Fabrikam site.
 1. Go to any **Product Collection** module on the homepage, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Quick View** module, and then select **OK**.
-1. In the **Quick View** module properties pane, select **Heading**. In the **Heading** dialog box, set the **Heading Level** to **H2**, and then select **OK**.
+1. In the properties pane of the **Quick View** module, select **Heading**. In the **Heading** dialog box, set the **Heading Level** to **H2**, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
