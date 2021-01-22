@@ -78,7 +78,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 After the Excel add-in reads entity data into the workbook, you can update the data at any time by selecting **Refresh** in the Excel add-in.
 
 ## Edit entity data in Excel
-You can change entity data as you require and then publish it back to Finance and Operations by selecting **Publish** in the Excel add-in. To edit a record, select a cell in the worksheet, and then change the cell value. To add a new record, follow one of these steps:
+You can change entity data as you require and then publish it back to Finance and Operations apps by selecting **Publish** in the Excel add-in. To edit a record, select a cell in the worksheet, and then change the cell value. To add a new record, follow one of these steps:
 
 - Click anywhere in the data sources table, and then select **New** in the Excel add-in.
 - Click anywhere in the last row of the data sources table, and then press the Tab key until the cursor moves out of the last column of that row and a new row is created.
