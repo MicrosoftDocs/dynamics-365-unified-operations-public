@@ -68,7 +68,6 @@ The following bug fixes are included in this release.
 | ## Zip code not populating on electronic reporting - (543641) | |
 | ## Worker Review Workflow - Unexpected table: HcmDiscussion - (514282) | |
 | 542815 | Personal contact screen in ESS allows employees to see others personal contacts | Fixed error where the Edit form for ESS Personal Contacts does not restrict it's query enough to guarantee that only a single personal contact is retrieved allowing for a user to use keyboard shortcuts to view other people's contacts |
-| | ## EssLeaveRequestCalendarTest.verifyLastCarryForwardAmount is failing - (519018) | |
 | 536157 | Cannot open Common Data service Configuration in System administration due call to IsVirtualEntityPackageInstalled() | Issue preventing the Microsoft Dataverse integration page from loading in the Dynamics 365 Human Resources application. |
 | | ## Navigation error " Form was called incorrectly" when we try to look at deductions. - (533079) | |
 | | ## "People" Workspace still showing retired positions - (481122) | |
