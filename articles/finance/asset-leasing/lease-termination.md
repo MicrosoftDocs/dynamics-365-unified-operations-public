@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Lease termination proposal - Ryan
+title: Lease termination proposal
 description: This topic explains how to propose a lease for termination.
 author: moaamer
 manager: Ann Beebe
@@ -29,10 +29,9 @@ ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
 
-
 ---
 
-## Propose a lease for termination - Ryan
+# Propose a lease for termination
 
 This topic explains how to propose a lease for termination. If the lease
 is terminated early, Asset leasing can record a termination journal
@@ -72,102 +71,98 @@ leasing will produce the journal entry to write-off the lease liability:
 
  | Transaction                            | Debit (Dr.)  | Credit (Cr.)  |
  | ---------------------------------------| -------------| --------------|
- | Dr. Lease liability                    | X            |               |
- | Cr. Gain (loss) on lease modification  |              | X             |
+ | Dr. Lease liability                    |      X       |               |
+ | Cr. Gain (loss) on lease modification  |              |      X        |
 
-To properly dispose of the right-of-use asset, see
-<https://docs.microsoft.com/en-us/dynamics365/finance/fixed-assets/dispose-of-a-fixed-asset-as-scrap>
+To properly dispose of the right-of-use asset, see [Dispose of a fixed asset as scrap](../fixed-assets/dispose-of-a-fixed-asset-as-scrap.md).
 
-Propose a lease for termination
+## Propose a lease for termination
 
-1.  Go to the lease to be terminated, and on the Action Pane, select
+1. Go to the lease to be terminated, and on the Action Pane, select
     **Termination proposal.**
 
 Note: This button will be disabled if there are any unposted journal
 entries against any book. Please post or delete any created journal
 entries against the lease before terminating the lease.
 
-2.  In the dialog box that appears, enter values for the Effective date
-    and Posting date of the termination journal entry.
+2. In the dialog box that appears, enter values in the **Effective date**
+    and **Posting date** fields of the termination journal entry.
 
-3.  Select **Termination proposal**, to propose the lease for
+3. Select **Termination proposal**, to propose the lease for
     termination. Select **Post lease termination** to automatically post
     the lease termination journal entry.
 
-4.  The **Lease terminations** form will open.
+4. The **Lease terminations** form will open.
 
-5.  Select the **Lease ID** of the lease proposed for termination to
+5. Select the **Lease ID** of the lease proposed for termination to
     view the termination lines. The termination lines will show the
     carrying values of the right-of-use asset, lease liability,
     accumulated depreciation, deferred rent if applicable, and gain or
     loss to be recognized on the termination of the lease.
 
-> The lease is now ready for termination. The Termination status field
-> on the lease book has changed to "Ready for termination". When the
-> lease is in this status, you cannot post journal entries against the
-> lease, adjust or impair the lease.
->
-> Process ready for termination leases
+> The lease is now ready for termination. The Termination status field on the lease book has changed to **Ready for termination**. When the lease is in this status, you can't post journal entries against the lease, or adjust or impair the lease. 
 
-1.  To process ready for termination leases and post the termination
-    journal entry, select the lease from the **Lease terminations** form
+## Process leases that are ready for termination
+
+1. To process leases that are ready for termination and post the termination
+    journal entry, select the lease from the **Lease terminations** page
     and click **Terminate**
 
 2.  In the dialog box that appears, click **OK.**
 
 The system will post the termination journal entry. The **Lease status**
 field on the lease book will show as "Terminated" and the **Termination
-proposal status** will show as "Completed".
+proposal status** will show as "Completed."
 
-Reverse a lease termination
+## Reverse a lease termination
 
 1.  To reverse a lease termination journal entry and open a terminated
-    lease, navigate to the **Lease terminations** form.
+    lease, navigate to the **Lease terminations** page.
 
-2.  Select the terminated lease to reverse
+2.  Select the terminated lease to reverse.
 
-3.  Click **Reverse termination**
+3.  Click **Reverse termination**.
 
 The system will reverse the termination journal entry. The **Lease
 status** field on the lease book will show as "Open". The lease will no
-longer appear in the **Lease terminations** form and can be proposed
+longer appear on the **Lease terminations** page and can be proposed
 again for termination.
 
-Example of a lease termination
+## Example of a lease termination
 
-For this example, the lease is a non-specialized asset that doesn\'t
+For this example, the lease is a non-specialized asset that doesn't
 transfer ownership or grant the lessee the option to purchase.
 
-Setup
+### Setup
 
-The following tables show the values that are set on the General and
-Payment schedule lines tabs for the lease that is used in this example.
+The following tables show the values that are set on the **General** and
+**Payment schedule lines** tabs for the lease that is used in this example.
 
-General tab
+**General** tab
 
- | Field                       | Value
- | ----------------------------| ------------------
- | Fair value of the asset     | 600,000
- | Currency                    | USD
- | Initial direct costs        | 1,000
- | Incremental borrowing rate  | 7%
- | Compounding interval        | Annually
- | Asset useful life (months)  | 600
- | Annuity type                | Ordinary annuity
- | Commencement date           | 1/1/2019
+ | Field                       | Value              |
+ | ----------------------------| ------------------ |
+ | Fair value of the asset     | 600,000            |
+ | Currency                    | USD                |
+ | Initial direct costs        | 1,000              |
+ | Incremental borrowing rate  | 7%                 |
+ | Compounding interval        | Annually           |
+ | Asset useful life (months)  | 600                |
+ | Annuity type                | Ordinary annuity   |
+ | Commencement date           | 1/1/2019           |
 
-Payment schedule lines tab
+**Payment schedule lines** tab
 
- | Field              | Value
- | -------------------| ------------
- | Start date         | 1/1/2019
- | Period interval    | Monthly
- | Periods            | 120
- | End date           | 12/31/2028
- | Payment frequency  | Annually
- | Payment amount     | 10,000
+ | Field              | Value       |
+ | -------------------| ------------|
+ | Start date         | 1/1/2019    |
+ | Period interval    | Monthly     |
+ | Periods            | 120         |
+ | End date           | 12/31/2028  |
+ | Payment frequency  | Annually    |
+ | Payment amount     | 10,000      |
 
-Steps
+### Steps for terminating the lease
 
 1.  After you create the lease as described earlier in this topic, go to
     the lease book, and confirm the payment schedule. Then post the
@@ -180,53 +175,51 @@ Steps
     three years for the lease payments, interest expenses, and
     depreciation expenses.
 
-3.  After you\'ve finished running all three batch jobs, go back to the
-    lease book, and open the liability and asset transactions tables to
+3.  After you've finished running all three batch jobs, go back to the
+    lease book, and open the Liability and Asset transactions tables to
     view the current carrying value of the right-of-use asset and lease
     liability. After three years, the value of the liability should be
-    approximately \$-53,893.00, and the value of the asset should be
-    approximately \$54,593.00.
+    approximately $-53,893.00, and the value of the asset should be
+    approximately $54,593.00.
 
 After three years, the business and lessor mutually agree to terminate
 the lease. You must now terminate the lease.
 
-4.  Go to the lease to be terminated, and on the Action Pane, select
-    **Termination proposal.**
+4.  Go to the lease to be terminated, and select **Termination proposal** from the Action Pane. 
 
-5.  In the dialog box that appears, enter 1/1/2021 for the Effective
-    date and 1/1/2021 for the Posting date.
+5.  In the dialog box that appears, enter 1/1/2021 in the **Effective
+    date** field and 1/1/2021 in the **Posting date** field.
 
-6.  Select **Termination proposal**, to propose the lease for
+6.  Select **Termination proposal** to propose the lease for
     termination.
 
-7.  The Lease Terminations form will open showing the lease to be
+7.  The **Lease Terminations** page will open, displaying the lease to be
     terminated.
 
-8.  Click the Lease ID to view the lease termination lines displaying
-    the carrying values of the lease:
+8.  Click the **Lease ID** to view the lease termination lines displaying
+    the carrying values of the lease. The values should be as follows. 
 
- | Field                                                  | Value
- | -------------------------------------------------------| -------------
- | Carrying balance of liability in transaction currency  | \$53,892.89
- | Right-of-use asset in transaction currency             | \$71,235.81
- | Accumulated depreciation in transaction currency       | \$16,642.92
- | Gain (loss) in transaction currency                    | \$-700.00
+ | Field                                                  | Value        |
+ | -------------------------------------------------------| -------------|
+ | Carrying balance of liability in transaction currency  | $53,892.89   |
+ | Right-of-use asset in transaction currency             | $71,235.81   |
+ | Accumulated depreciation in transaction currency       | $16,642.92   |
+ | Gain (loss) in transaction currency                    | $-700.00     |
 
-9.  To post the termination journal entry, select the lease from the
-    **Lease terminations** form and click **Terminate**
+9.  To post the termination journal entry, select the lease from the **Lease terminations** page and click **Terminate**.
 
-10. In the dialog box that appears, click **OK.**
+10. In the dialog box that appears, click **OK**.
 
 11. The termination journal entry has been created and posted. To view
     it, go to the asset's leasing journal in the lease book. The entry
-    would appear as shown below:
+    should appear as follows.
 
- | Transaction                            | Debit (Dr.)  | Credit (Cr.)
- | ---------------------------------------| -------------| --------------
- | Dr. Lease liability                    | 53,892.89    | 
- | Dr. Accumulated depreciation           | 16,642.92    | 
- | Dr. Gain (loss) on lease modification  | 700.00       | 
- | Cr. Lease asset                        |              | 71,235.81
+ | Transaction                            | Debit (Dr.)  | Credit (Cr.)  |
+ | ---------------------------------------| -------------| --------------|
+ | Dr. Lease liability                    | 53,892.89    |               |
+ | Dr. Accumulated depreciation           | 16,642.92    |               |
+ | Dr. Gain (loss) on lease modification  | 700.00       |               |
+ | Cr. Lease asset                        |              | 71,235.81     |
 
 12. To view the net effect of the termination, where the right-of-use
     asset and lease liability will be 0, go to the liability and asset
