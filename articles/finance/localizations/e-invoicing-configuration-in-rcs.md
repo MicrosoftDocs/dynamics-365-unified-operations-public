@@ -54,7 +54,7 @@ preview:
 |-------------------|------------------------------------------|----------------------------------------|
 | Austria           | Austrian electronic invoices (AT)        | Sales and Project invoices             |
 | Belgium           | Belgian electronic invoice (BE)          | Sales and Project invoices             |
-| Brazil            | NF-e                                     | Fiscal document model 55 (NF-e)        |
+| Brazil            | NF-e                                     | Fiscal document model 55, Correction letter, Cancellation and Discard|
 | Brazil            | NFS-e ABRASF Curitiba                    | Service fiscal document                |
 | Brazil            | NFS-e São Paulo city                     | Service fiscal document                |
 | Denmark           | Danish electronic invoice (DK)           | Sales and Project invoices             |
@@ -63,7 +63,7 @@ preview:
 | France            | French electronic invoice (FR)           | Sales and Project invoices             |
 | Germany           | German electronic invoice (DE)           | Sales and Project invoices             |
 | Italy             | FatturaPA (IT)                           | Sales and Project invoices             |
-| Mexico            | CFDI invoice                             |
+| Mexico            | CFDI                                     | Sales invoices, Packing slip, Invent transfer, Payment complement, Cancellation |
 | Netherlands       | Dutch electronic invoice (NL)            | Sales and Project invoices             |
 | Norway            | Norwegian electronic invoice (NO)        | Sales and Project invoices             |
 | Spain             | Spanish electronic invoice (ES)          | Sales and Project invoices             |
@@ -126,7 +126,7 @@ configurable components:
 
 ### Formats
 
-The following table lists the available of ER format configurations for the serveral Electronic invoicing features:
+The following tables list the available of ER format configurations for the serveral Electronic invoicing features:
 
 | Austrian electronic invoices (AT): Sales and Project invoices for Austria    |
 |------------------------------------------------------------------------------|
@@ -140,9 +140,95 @@ The following table lists the available of ER format configurations for the serv
 | UBL Sales invoice BE                                                         |
 | UBL Project invoice BE                                                       |
 | UBL Project credit note BE                                                   |
-| UBL Sales credit note BE                                                   |
+| UBL Sales credit note BE                                                     |
 
+| Brazilian NF-e (BR): NF-e Federal (Brazil)                                   |
+|------------------------------------------------------------------------------|
+| NF-e submit export format (BR)                                               |
+| NF-e correction letter export format (BR)                                    |
+| NF-e cancel export format (BR)                                               |
+| NF-e discard export format (BR)                                              |
 
+| Brazilian NFS-e (BR): NFS-e ABRASF Curitiba city                             |
+|------------------------------------------------------------------------------|
+| NFS-e ABRASF Curitiba (BR))                                                  |
+
+| Brazilian NFS-e (BR): NFS-e São Paulo city                                   |
+|------------------------------------------------------------------------------|
+| NFS-e Sao Paulo (BR)                                                   |
+
+| Danish electronic invoice (DK): Sales and Project invoices for Denmark       |
+|------------------------------------------------------------------------------|
+| OIOUBL Sales invoice                                                         |
+| OIOUBL Project invoice                                                       |
+| OIOUBL Sales credit note                                                     |
+| OIOUBL Project credit note                                                   |
+
+| Dutch electronic invoice (NL): Sales and Project invoices for Netherlands    |
+|------------------------------------------------------------------------------|
+| UBL Sales invoice NL                                                         |
+| UBL Project invoice NL                                                       |
+| UBL Project credit note NL                                                   |
+| UBL Sales credit note NL                                                     |
+
+| Egyptian electronic invoice (EG): Sales and Project invoices for Egypt       |
+|------------------------------------------------------------------------------|
+| Sales invoice (EG)(Invoicing)                                                |
+| Project invoice (EG)(Invoicing)                                              |
+
+| Estonian electronic invoice (EE): Sales and Project invoices for Estonia     |
+|------------------------------------------------------------------------------|
+| Sales invoice (EE)                                                           |
+| Project invoice (EE)                                                         |
+
+| Finnish electronic invoice (FI): Sales and Project invoices for Finland      |
+|------------------------------------------------------------------------------|
+| Sales invoice (FI)                                                           |
+| Project invoice (FI)                                                         |
+
+| French electronic invoice (FR): Sales and Project invoices for France        |
+|------------------------------------------------------------------------------|
+| UBL Sales invoice FR                                                         |
+| UBL Project invoice FR                                                       |
+| UBL Project credit note FR                                                   |
+| UBL Sales credit note FR                                                     |
+
+| German electronic invoice (DE): Sales and Project invoices for Germany       |
+|------------------------------------------------------------------------------|
+| Sales invoice (DE)                                                           |
+| Project invoice (DE)                                                         |
+
+| Ialian electronic invoice (IT): Sales and Project invoices for Italy         |
+|------------------------------------------------------------------------------|
+| Sales invoice (IT)                                                           |
+| Project invoice (IT)                                                         |
+
+| Mexican CFDI (MX): CFDI                                                      |
+|------------------------------------------------------------------------------|
+| CFDI invoice format (MX)                                                     |
+| CFDI Packing slip (MX)                                                       |
+| CFDI Inventory transfer (MX)                                                 |
+| CFDI payment format(MX)                                                      |
+| CFDI invoice cancel format (MX)                                              |
+
+| Norwegian electronic invoice (NO): Sales and Project invoices for Norway     |
+|------------------------------------------------------------------------------|
+| OIOUBL Sales invoice                                                         |
+| OIOUBL Project invoice                                                       |
+| OIOUBL Sales credit note                                                     |
+| OIOUBL Project credit note                                                   |
+
+| PEPPOL electronic invoice: PEPPOL Sales and Project invoices                 |
+|------------------------------------------------------------------------------|
+| PEPPOL Sales invoice                                                         |
+| PEPPOL Project invoice                                                       |
+| PEPPOL Sales credit note                                                     |
+| PEPPOL Project credit note                                                   |
+
+| Spanish electronic invoice (ES): Sales and Project invoices for Spain        |
+|------------------------------------------------------------------------------|
+| Sales invoice (ES)                                                           |
+| Project invoice (ES)                                                         |
 
 ### Actions
 
@@ -159,16 +245,6 @@ The following table lists the available Actions and the availability status (Pre
 | Process response                              | Analyze the web service response                            | Preview                     |
 | Use MS Power Automate                         |                                                             | Preview                     |
 | File store action name                        |                                                             | Preview                     |
-
-### Applicability rules
-
-### Variables
-
-### Electronic document model mapping
-
-### Invoice context model
-
-### Response types
 
 ## Configuration providers
 
