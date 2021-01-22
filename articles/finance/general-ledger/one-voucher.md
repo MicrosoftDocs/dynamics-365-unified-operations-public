@@ -59,7 +59,7 @@ The One voucher functionality causes issues during settlement, tax calculation, 
 
 For example, you post the following multiline voucher.
 
-[![Example](./media/example.png)](./media/example.png)
+[![The illustration shows an example of a multiline voucher](./media/example.png)](./media/example.png)
 
 You then generate the **Expenses by vendor** report in the **Financial Insights** workspace. On this report, expense account balances are grouped by vendor group and then vendor. When the report is generated, the system can't determine which vendor groups/vendors incurred the expense of 250.00. Because transaction details are missing, the system assumes that the whole 250.00 expense was incurred by the first vendor that is found in the voucher. Therefore, the 250.00 expense, which is included in the balance for main account 600120, is shown under that vendor group/vendor. However, it's very likely that the first vendor in the voucher isn't the correct vendor. Therefore, the report is probably incorrect.
 
