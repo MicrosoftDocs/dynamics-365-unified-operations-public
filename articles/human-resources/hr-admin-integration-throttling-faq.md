@@ -5,7 +5,7 @@ title: Priority-based throttling in Human Resources FAQ
 description: This topic provides answers to some frequently asked questions (FAQ) about priority-based throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 01/14/2021
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,14 +25,40 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2021-01-14
+ms.search.validFrom: 2021-01-22
 ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Priority-based throttling in Human Resources FAQ
+# Throttling FAQ
 
-This topic provides answers to some frequently asked questions (FAQ) about [priority-based throttling](hr-admin-integration-throttling.md) for Open Data Protocol (OData) and custom service-based integrations.
+This topic provides answers to some frequently asked questions (FAQ) about throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources. Throttling prevents the over-utilization of resources. It preserves system responsiveness and ensures consistent availability and performance.
+
+## What happens when a request is throttled?
+
+For OData and custom service requests, a 429 error "Too many requests", will occur. 
+
+When a request is throttled, the system provides a value indicating the duration before any new requests from the user can be processed. When a request is throttled and a 429 error occurs, the response header will include a **Retry-After** interval, which can be used to retry the request after a specific number of seconds. The following example shows this operation. 
+
+```C#
+    if (!response.IsSuccessStatusCode) 
+            { 
+                if ((int)response.StatusCode == 429) 
+                { 
+                    int seconds = 30; 
+                    //Try to use the Retry-After header value if it is returned. 
+                    if (response.Headers.Contains("Retry-After")) 
+                    { 
+                        seconds = int.Parse(response.Headers.GetValues("Retry-After").FirstOrDefault()); 
+                    } 
+                    Thread.Sleep(TimeSpan.FromSeconds(seconds)); 
+
+
+
+                    // Retry sending the request.
+                } 
+            } 
+```
 
 ## How do I access the Data management Yammer group?
 
