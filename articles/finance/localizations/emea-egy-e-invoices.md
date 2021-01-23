@@ -36,13 +36,14 @@ ms.dyn365.ops.version: 10.0.17
 [!include [banner](../includes/preview-banner.md)]
 
 According to Egyptian legal requirements, the invoices issued for customers must be submitted to the Tax authority in an electronic format.
-The submission requires the system configuration which consists of 2 parts:
+The submission of electronic invoices requires the system configuration which consists of 2 parts:
 1. **Electronic invoicing add-on** configuration. Please refer to this article for details: [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
 2. **Microsoft Dynamics 365 Finance** configuration which is covered in this article.
 
 ## Prerequisites
 
-In the Feature management workspace, turn on the **Electronic invoicing add-on integration** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- **Electronic invoicing add-on** configuration is completed and all its parts required for Egypt are ready to use.
+- In the Feature management workspace, turn on the **Electronic invoicing add-on integration** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Enable electronic invoicing for Egypt
 Complete the following steps to nable electronic invoicing for Egypt.
@@ -116,3 +117,7 @@ Complete the following steps to configure Electronic document property type reqi
 
 > [!NOTE]
 > For some countries, .
+
+## Submit electronic invoices
+
+When all the required configuration steps are completed, you can submit electronic invoices. For more information how to submit electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/e-invoicing-GA-docs/articles/finance/localizations/e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md).
