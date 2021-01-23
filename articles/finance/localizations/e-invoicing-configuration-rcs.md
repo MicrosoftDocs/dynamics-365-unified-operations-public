@@ -226,7 +226,7 @@ The configuration providers provide the Electronic invoicing features and their 
 
 Electronic invoicing features and any Electronic reporting components are published by the configuration providers in the associated global repository where other organizations can download.  
 
-Before you configure Electronic invoicing features through RCS, you must configure your own organization as a configuration provider in the **Electronic reporting** module. For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+Before you configure Electronic invoicing features through RCS, you must configure your own organization as a configuration provider in the **Electronic reporting** module. For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## View the Electronic invoicing features in the Global repository
 
@@ -298,4 +298,4 @@ In RCS, **Undeploy** is the command that removes a specific Electronic invoicing
 When an Electronic invoicing feature is created from another Electronic invoicing feature, the **Rebase** action updates the derived feature with the updates introduced in the original Electronic invoicing feature.
 
 ## Additional resources
-- [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md)
+- [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
