@@ -62,7 +62,7 @@ Before you complete the steps in this topic, you must have the following prerequ
 2. In the **Electronic reporting** workspace, in the **Related links** section, select the **Electronic reporting parameters** link.
 3. On the **e-Invoicing service** tab, in the **Service endpoint URI** field, type the service end point:
 
-        <https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
+    `https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/`
 
 4. In the **Application Id** field, verify that it shows the ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
 5. In the **LCS Environment Id** field, type the ID of your LCS subscription account.
