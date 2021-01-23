@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: # Issue electronic invoices in Finance and Supply chain management
-description:  
+title: Issue electronic invoices in Finance and Supply chain management
+description: This topic explains how to issue electronic invoices in Finance and Supply Chain Management through the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
 ms.date: 01/22/2021
