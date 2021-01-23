@@ -49,7 +49,7 @@ The Electronic invoicing add-on can help you achieve the following goals:
 
 To use the Electronic invoicing add-on, you must install it from your project in Microsoft Dynamics Lifecycle Services (LCS). Next, follow the setup procedure to turn on the integration with Finance or Supply Chain Management. For more information, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
-## Service availability
+## <a name="availability"></a>Service availability
 
 Currently the Electronic invoicing add-on is available to customers through the preview program, and in the next phase, the service will become generally available. Because functionality that addresses country/region-specific requirements might be limited at different phases of the release, you should always check the most up-to-date documentation that highlights the coverage and scope of supported country/region-specific solutions.
 
@@ -80,7 +80,7 @@ The Electronic invoicing add-on can be used in scenarios where you must create a
     - Built-in, easily extendable, and configurable integration with additional content for several countries
 
     > [!NOTE]
-    > Currently, a limited number of direct submissions are supported. For more information, see the [Availability](#availability) section earlier in this topic. Support will be extended in the future.
+    > Currently, a limited number of direct submissions are supported. For more information, see the [Service availability](#availability) section earlier in this topic. Support will be extended in the future.
 
 - Handling of responses from web services, including configurable exception message handling
 - Support for electronic signatures (for example, by using the XMLDSig signing algorithm)
@@ -112,5 +112,5 @@ Enabling and using Electronic invoicing add-on may require sending limited data,
 
 ## Additional resources
 - [Service administration](e-invoicing-service-administration.md)
-- [Configure electronic invoices in RCS](e-invoicing-configuration-in-rcs.md)
-- [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md)
+- [Configure electronic invoices in RCS](e-invoicing-configuration-rcs.md)
+- [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
