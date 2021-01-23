@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.12
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides information about the configuration capabilities of Electronic invoicing add-on in the Regulatory configuration service (RCS).
+This topic provides information about the configuration capabilities of the Electronic invoicing add-on in the Regulatory configuration service (RCS).
 
 The most important configuration pillar allows you to fulfill business and regulatory requirements of electronic invoices without any required coding. In scenarios where electornic invoices must be sent to submitted to an external party through web services, the configuration capabilities fulfill file formatting and communication requirements.
 
