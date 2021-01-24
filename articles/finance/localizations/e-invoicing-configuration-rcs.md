@@ -48,7 +48,11 @@ For more information, see [Electronic reporting (ER) overview](../../fin-ops-cor
 
 ## Electronic invoicing features
 
-Electronic invoicing feature. within the Electronic invoicing add-on, is the element responsible for transforming the electronic document data, sent by Dynamics 365 Finance and Dynamics 365 Supply Chain Management, into electronic invoices, since the scenarios where the requirement is simply the generation of the invoice as a digital media, until the scenarios where the requirement is the submitting the electronic invoice for a digital approval granted by an external party, through web services, hosted by the own government tax authority, or by a party accredited by the tax authority.
+The electronic invoicing feature is the element responsible for generation of electronic invoices through the Electronic invoicing add-on. They encapsulate the configuration rules, and use them to process the data sent by Dynamics 365 Finance and Dynamics 365 Supply Chain Management to the Electronic invoicing add-on into electronic invoices.
+
+They support the scenarios where the requirement is complying with the file format specifications, in the most of cases published by the tax authority, and where the output is an stand alone electronic file. 
+
+The electronic invoicing features also support the scenarios where the requirement is, beyond complying with a file format specifications, exchanging messages with an external web services, either hosted by the tax authority, or by some accredited party, and requesting authorization or an approval stamp in the electronic invoice.
 
 ### Electronic invoicing feature availability
 
@@ -234,9 +238,9 @@ You can browse the available electronic invoicing features in the Global reposit
 
 ## Import the Electronic invoicing feature
 
-You can only use or configure Electronic invoicing features that are imported to the instance of your organization in RCS.
+To use or configure Electronic invoicing features, they must be imported to the RCS instance of your organization. The importation creates a local copy of the electronic invoicing feature but also it copies all Electronic reporting artifacts used by the electronic invoiving feature, such as format configurations, model configurations, and so on, to your instance of RCS.
 
-If you choose using some of the electronic invoicing feature published by some of the Configuration providers, the importation of Electronic invoicing features is the first step, because it creates a local copy of the selected electronic invoicing feature, as well all its Electronic reporting components, from which you can either start using, configure or customize.
+You can import Electronic invoicing features from any providers.
 
 ## Create an Electronic invoicing feature
 
