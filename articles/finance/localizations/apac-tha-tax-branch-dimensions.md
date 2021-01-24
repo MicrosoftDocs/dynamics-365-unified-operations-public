@@ -93,7 +93,7 @@ codes are updated for the transferred items.
 Before you can set up tax branches, you must set up tax registration
 numbers for the legal entity on the **Legal entities** page.
 
-For more information, see [Create a legal entity](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity).
+For more information, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md).
 
 The **Tax branch** page is available only if you turn on the **Use tax
 branch** option on the **General ledger parameters** page.
