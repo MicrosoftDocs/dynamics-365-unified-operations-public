@@ -53,6 +53,7 @@ The following features are generally available with this release.
 | ## ACA Compliance 2020 - (510677)- Updates to the 1095C 1095B and Electronic reporting in Legacy Benefits to support ACA compliance reporting for 2020 | -- |--  | 
 | ## Uptake ACA into new benefits - (439591) - Benefits Management feature now supports ACA compliance reporting for US based Legal entities.| NA | [Generate ACA reports in Benefits Management](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-management-aca-reports) |
 | ## Benefit Rate Tier entity - (508324) - Benefits Management now has "Benefit rate tiers" & "Benefit rate double tiers" entities exposed  |-- | -- |
+| Skills entered by a manager for their employees can be auto-approved by a workflow | NA | Coming Soon |
 
 
 ### Bug fixes
@@ -66,7 +67,6 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | 533079 | Navigation error "Form was called incorrectly" when we try to look at deductions. | Fixed error while looking at benefits deductions with view "As of date"|
 | ## Zip code not populating on electronic reporting - (543641) | |
-| ## Worker Review Workflow - Unexpected table: HcmDiscussion - (514282) | |
 | 542815 | Personal contact screen in ESS allows employees to see others personal contacts | Fixed error where the Edit form for ESS Personal Contacts does not restrict it's query enough to guarantee that only a single personal contact is retrieved allowing for a user to use keyboard shortcuts to view other people's contacts |
 | 536157 | Cannot open Common Data service Configuration in System administration due call to IsVirtualEntityPackageInstalled() | Issue preventing the Microsoft Dataverse integration page from loading in the Dynamics 365 Human Resources application. |
 | | ## Navigation error " Form was called incorrectly" when we try to look at deductions. - (533079) | |
