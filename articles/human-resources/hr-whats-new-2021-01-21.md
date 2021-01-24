@@ -53,8 +53,6 @@ The following features are generally available with this release.
 | ## ACA Compliance 2020 - (510677)- Updates to the 1095C 1095B and Electronic reporting in Legacy Benefits to support ACA compliance reporting for 2020 | -- |--  | 
 | ## Uptake ACA into new benefits - (439591) - Benefits Management feature now supports ACA compliance reporting for US based Legal entities.| NA | [Generate ACA reports in Benefits Management](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-management-aca-reports) |
 | ## Benefit Rate Tier entity - (508324) - Benefits Management now has "Benefit rate tiers" & "Benefit rate double tiers" entities exposed  |-- | -- |
-| Skills entered by a manager for their employees can be auto-approved by a workflow | NA | Coming Soon |
-
 
 ### Bug fixes
 
@@ -96,7 +94,10 @@ The following new features are in preview. For more information about turning fe
 | Enable simplified integrations with recruiting providers | [Enable simplified integrations with recruiting providers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Recruit job candidates](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
 
 ## Coming soon
-Email confirmation for benefit enollments - This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in ESS.  Learn more [here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-parameters-per-company)
+| Feature | Details |
+| --- | --- |
+| Email confirmation for benefit enollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in ESS.  Learn more [here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-parameters-per-company) |
+| Skills entered by a manager for their employees can be auto-approved by a workflow | Coming Soon |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
