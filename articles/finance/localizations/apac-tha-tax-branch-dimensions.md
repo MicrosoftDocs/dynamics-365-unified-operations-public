@@ -22,7 +22,7 @@ ms.search.scope:
 # ms.custom: NotInTOC
 ms.search.region: 
 # ms.search.industry:
-ms.author: tfehr
+ms.author: 
 ms.search.validFrom: 2
 ms.dyn365.ops.version:
 ---
