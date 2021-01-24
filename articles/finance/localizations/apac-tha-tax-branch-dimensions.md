@@ -27,7 +27,7 @@ ms.search.validFrom: 2
 ms.dyn365.ops.version:
 ---
 
-## Tax branch dimensions
+# Tax branch dimensions
 
 [!include[banner](../includes/banner.md)]
 
