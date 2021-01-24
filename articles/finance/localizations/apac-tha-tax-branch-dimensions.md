@@ -1,15 +1,35 @@
-﻿---
-title: 
-description: 
-ms.date: 01.24.2021
-ms.topic: article
-ms.service: dynamics365-financials
+---
+# required metadata
+
+title: Tax branch dimensions
+description: This topic provides information about tax branches for Thailand.
 author: andosip
-ms.author: andosip
 manager: anasyash
+ms.date: 01/25/2021
+ms.topic: article
+ms.prod:
+ms.service: dynamics365-financials
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: 
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope:
+# ms.tgt_pltfrm: 
+# ms.custom: NotInTOC
+ms.search.region: 
+# ms.search.industry:
+ms.author: tfehr
+ms.search.validFrom: 2
+ms.dyn365.ops.version:
 ---
 
 ## Tax branch dimensions
+
+[!include[banner](../includes/banner.md)]
 
 A tax branch is used to record inventory movement and track the
 value-added tax (VAT) liability of a legal entity branch. The branches
@@ -73,7 +93,7 @@ codes are updated for the transferred items.
 Before you can set up tax branches, you must set up tax registration
 numbers for the legal entity on the **Legal entities** page.
 
-For more information, see Create a legal entity.
+For more information, see [Create a legal entity](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity).
 
 The **Tax branch** page is available only if you turn on the **Use tax
 branch** option on the **General ledger parameters** page.
@@ -132,9 +152,9 @@ available on the **Sales orders**, **Purchase orders**, **Free text
 invoices**, and **Inventory journal lines** pages.
 
 For more information, see [Financial
-dimensions](https://docs.microsoft.com/dynamics365/finance/general-ledger/financial-dimensions)
+dimensions](../general-ledger/financial-dimensions.md)
 and [Configure account
-structures](https://docs.microsoft.com/dynamics365/finance/general-ledger/configure-account-structures).
+structures](../general-ledger/configure-account-structures.md).
 
 ## Set up a tax branch for a vendor or a customer
 
