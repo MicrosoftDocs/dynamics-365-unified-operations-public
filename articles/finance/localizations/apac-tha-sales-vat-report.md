@@ -47,90 +47,17 @@ The **Unrealized VAT remaining** report includes transactions that taxes haven't
 
     The following table explains the information that is shown on the **Unrealized VAT remaining** report.
 
-<table>
-<tbody>
-<tr>
-<td width="288">
-<p>Field</p>
-</td>
-<td width="287">
-<p>Description</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Invoice receipt date</p>
-</td>
-<td width="287">
-<p>The date when the invoice was received.</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Invoice number</p>
-</td>
-<td width="287">
-<p>The number of the invoice.</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Invoice date</p>
-</td>
-<td width="287">
-<p>The date when the invoice is due.</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Vendor account</p>
-</td>
-<td width="287">
-<p>The number of the vendor account.</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Vendor name</p>
-</td>
-<td width="287">
-<p>The name of the vendor account.</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Voucher</p>
-</td>
-<td width="287">
-<p>The voucher number in the ledger.</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Tax base amount</p>
-</td>
-<td width="287">
-<p>The base amount for tax calculation.</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Tax amount</p>
-</td>
-<td width="287">
-<p>The calculated tax amount.</p>
-</td>
-</tr>
-<tr>
-<td width="288">
-<p>Tax remaining amount</p>
-</td>
-<td width="287">
-<p>The tax amount that isn't due.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Field | Description |
+|-------------------------|-------------------------|
+| Invoice receipt date | The date when the invoice was received. |
+| Invoice number | The number of the invoice. |
+| Invoice date | The date when the invoice is due. |
+| Vendor account | The number of the vendor account. |
+| Vendor name | The name of the vendor account. |
+| Voucher | The voucher number in the ledger. |
+| Tax base amount | The base amount for tax calculation. |
+| Tax amount | The calculated tax amount. |
+| Tax remaining amount | The tax amount that isn't due. |
 
 
 ## Generate the Purchase VAT report (for internal use)
