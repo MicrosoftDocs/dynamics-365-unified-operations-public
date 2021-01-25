@@ -51,4 +51,4 @@ Dynamics 365 Human Resources uses reason codes to explain why an employee’s be
 > [!NOTE]
 > As of January 2021, reason codes now appear in the **Personnel management** workspace. Most reason code data will automatically migrate in your environment. Some reason code data might not migrate. For example, reason codes now have a 15-character maximum, so any reason codes longer than 15 characters won't migrate automatically.<br>
 > You'll see a banner on the **Links** page of the **Benefits management** workspace informing you about the migration and whether any reason codes didn't migrate. Select **Reason codes** for details about migration status.<br>
-> ![Reason codes](hr-benefits-setup-reason-codes-link.png)
+> [![Reason codes](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
