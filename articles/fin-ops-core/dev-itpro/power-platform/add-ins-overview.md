@@ -41,7 +41,7 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
 - [IoT Intelligence home page](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
 
 
-## Prerequisites for setting up Add-ins
+## Prerequisites for setting up add-ins
 
 - Be sure that there is at least 1 GB of Dataverse space available, otherwise setup would fail.
 
@@ -53,7 +53,7 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
 
     ![Power Platform Settings](media/PowerPlatformSettings.png)
 
-## Setup for Add-ins
+## Setup for add-ins
 
 1. After the Finance and Operations environment is deployed through Lifecycle Services, go to the **Environment details** page. 
 
@@ -81,7 +81,7 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
 > [!Note]
 > If you are just planning on installing Add-ins which do not require “Dual write linking”, then that setup does not need to be performed.
 
-## Handling Failures:  
+## Handling failures:  
 1. Since the setup tries to setup dual-write, the dual-write setup might fail sometimes after provisioning the Dataverse environment, as shown in the image below. In these cases, the **Install a new add-in** button is still enabled to unblock installation of add-ins. If you would like to continue setting up dual-write functionality, you can just click **Resume**.
 
     ![](media/Error.png)
