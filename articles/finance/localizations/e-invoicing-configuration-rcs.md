@@ -64,7 +64,7 @@ The features in the following table are generally available at this time.
 
 | Country/Region    | Feature name                             | Business document                      |
 |-------------------|------------------------------------------|----------------------------------------|
-| Egypt             | Egyptian electronic invoice (BR)         | Sales and Project invoices             |
+| Egypt             | Egyptian electronic invoice (EG)         | Sales and Project invoices             |
 
 #### Preview features
 
