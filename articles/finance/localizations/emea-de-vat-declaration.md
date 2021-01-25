@@ -725,7 +725,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 ## Prerequisite
 
-Before you begin, go to the **Genreal ledger parameters** page and expand the **Tax options** FastTab. In the **Special report** field group, make sure that the **Include corrections** parameter is enabled. 
+Before you begin, go to the **General ledger parameters** page and expand the **Tax options** FastTab. In the **Special report** field group, make sure that the **Include corrections** parameter is enabled. 
 
 ## Set up sales tax codes
 
@@ -873,16 +873,16 @@ The following table shows how to assign the sales tax reporting codes to sales t
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Electronic tax declaration log**, and select the required line.
 8. Select the **Preview** tab, and review the reported values.
 
-![Preview of Electronic tax declaration log](media/5_Electronic_tax_declaration_log.png)
+    ![Preview of Electronic tax declaration log](media/5_Electronic_tax_declaration_log.png)
 
-Note that a correction transaction is added to the declaration in codes **86** and **83**.
+    A correction transaction is added to the declaration in codes **86** and **83**.
 
 9. Select the paper clip symbol in the upper-right corner.
 10. Select **Open** at the top of the page, and review the XML file.
 
-![XML file to review](media/6_XML_file.png)
+    ![XML file to review](media/6_XML_file.png)
 
-Note that a correction transaction is added to the declaration in codes **86** and **83**.
+    A correction transaction is added to the declaration in codes **86** and **83**.
 
 ## Review sales tax report amounts 
 
