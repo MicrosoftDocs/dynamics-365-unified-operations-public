@@ -3,8 +3,8 @@
 
 title: Tax branch dimensions
 description: This topic provides information about tax branches for Thailand.
-author: andosip
-manager: anasyash
+author: anasyash
+manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod:
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:
 audience: 
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend 
 ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInTOC
 ms.search.region: 
 # ms.search.industry:
-ms.author: andosip
+ms.author: anasyash
 ms.search.validFrom: 2
 ms.dyn365.ops.version:
 ---
