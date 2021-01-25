@@ -42,9 +42,10 @@ Before you complete the steps in this topic, you must have the following prerequ
     
         - Version 10.0.13 or later
         - Deployed in one of those Azure geographies:
-
-             - United states
-             - Europe
+             - East US
+             - West US
+             - North EU
+             - West EU
 
    - Access to your RCS account
    - Activate the Globalization feature for your RCS account through the Feature management module. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md).
@@ -60,9 +61,14 @@ Before you complete the steps in this topic, you must have the following prerequ
 
 1. Sign in to your RCS account.
 2. In the **Electronic reporting** workspace, in the **Related links** section, select the **Electronic reporting parameters** link.
-3. On the **e-Invoicing service** tab, in the **Service endpoint URI** field, type the service end point:
+3. On the **e-Invoicing service** tab, in the **Service endpoint URI** field, type the service end point according to your Azure geography as shown in the table below:
 
-    `https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/`
+|  Datacenter Azure geography      | Service endpoint URI                                                       |
+|----------------------------------|----------------------------------------------------------------------------|
+| East US                          | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
+| West US                          | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
+| North EU                         | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
+| West EU                          | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/ `|
 
 4. In the **Application Id** field, verify that it shows the ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
 5. In the **LCS Environment Id** field, type the ID of your LCS subscription account.
@@ -125,9 +131,14 @@ Before you complete the steps in this topic, you must have the following prerequ
 ### Set up the service endpoint URL
 
 1. Go to **Organization administration** > **Setup** **Electronic document parameters**.
-2. On the **Submission service** tab, in the **Service endpoint URL** field, type the service end point:
+2. On the **Submission service** tab, in the **Service endpoint URL** field, type the service end point according to your Azure geography as shown in the table below:
 
-<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
+|  Datacenter Azure geography      | Service endpoint URL                                                       |
+|----------------------------------|----------------------------------------------------------------------------|
+| East US                          | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
+| West US                          | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
+| North EU                         | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
+| West EU                          | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/ `|
 
 3. In the **Environment** field, type the name of the Electronic invoicing add-on Environment.
 4. Select **Save** and then close the page.
