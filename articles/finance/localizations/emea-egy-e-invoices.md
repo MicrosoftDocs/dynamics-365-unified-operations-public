@@ -136,9 +136,14 @@ According to Egyptian legal requirements, products in electronic invoices must u
 3. Enter GTIN codes for the selected products.
 
 ### Configure GPC codes
-1. Go to **Product information management** > **Products** > **Released products**.
-2. Go to the **Manage inventory** > **WAREHOUSE** > **GTIN codes** menu item for the selected product.
-3. Enter GTIN codes for the selected products.
+1. Go to **Product information management** > **Setup** > **Categories and attributes** > **Category hierarchies**.
+2. Create a new category hierarchy with **GPC** name.
+3. Create the category nodes which implement 4-levels hierarchy: *Segment* > *Family* > *Class* > *Brick*
+4. At *Brick* level, in the **Code** field, enter the code which will be appliable to selected products.
+5. Expand the **Products** FasTab
+6. **Add** all the products applicable for the defined code.
+
+![Category hierarchy](media/emea-egy-gpc.jpg)
 
 > [!NOTE]
 > For some countries, .
