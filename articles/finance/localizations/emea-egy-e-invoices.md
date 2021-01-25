@@ -146,8 +146,14 @@ According to Egyptian legal requirements, products in electronic invoices must u
 ![Category hierarchy](media/emea-egy-gpc.jpg)
 
 > [!NOTE]
-> If neither GTIN nor GPC codes are defined for products then internal product number will be used. If no products or services are involved in invoicing (like for free text invoices, for example) then lines descriptions will be used in electronic invoices.
+> If neither GTIN nor GPC codes are defined for products then internal product numbers will be used. If no products or services are involved in invoicing (like for free text invoices, for example) then lines descriptions will be used in electronic invoices.
 
 ## Submit electronic invoices
 
 When all the required configuration steps are completed, you can submit electronic invoices. For more information how to submit electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/e-invoicing-GA-docs/articles/finance/localizations/e-invoicing-issuing-electronic-invoices-in-finance-and-supply-chain-management.md).
+
+## Related topics
+
+- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
+- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
