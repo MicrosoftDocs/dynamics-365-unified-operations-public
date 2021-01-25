@@ -30,24 +30,16 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include[banner](../includes/banner.md)]
 
-Add-ins provide a way to extend functionality of finance and operations. Below
+Add-ins provide a way to extend functionality of Finance and Operations apps. Below
 are some of examples of add-ins.
 
-Planning optimization: [Planning Optimization overview - Supply Chain Management
-\| Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
+- **Planning optimization**: [Planning Optimization overview](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
 
-Inventory Management: [Inventory Visibility Add-in - Supply Chain Management \|
-Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
+- **Inventory management**: [Inventory Visibility Add-in](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
 
-Export to Azure Data Lake: [Configure export to Azure Data Lake - Finance &
-Operations \| Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
+- **Export to Azure Data Lake**: [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
 
-IOT Intelligence: [IoT Intelligence home page - Supply Chain Management \|
-Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
+- **IOT Intelligence**: [IoT Intelligence home page](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
 
 
 
