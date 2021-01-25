@@ -5,7 +5,7 @@ title: Configure the Electronic invoicing add-on in the Regulatory configuration
 description: This topic explains how to configure the electronic invoicing add-on in RCS. 
 author: gionoder
 manager: AnnBe
-ms.date: 01/22/2021
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,11 +48,11 @@ For more information, see [Electronic reporting (ER) overview](../../fin-ops-cor
 
 ## Electronic invoicing features
 
-The electronic invoicing feature is the element responsible for generation of electronic invoices through the Electronic invoicing add-on. They encapsulate the configuration rules, and use them to process the data sent by Dynamics 365 Finance and Dynamics 365 Supply Chain Management to the Electronic invoicing add-on into electronic invoices.
+The electronic invoicing features are responsible for generating electronic invoices through the Electronic invoicing add-on. The features encapsulate the configuration rules and use them to process the data sent by Dynamics 365 Finance and Dynamics 365 Supply Chain Management to the Electronic invoicing add-on and into electronic invoices.
 
-They support the scenarios where the requirement is complying with the file format specifications, in the most of cases published by the tax authority, and where the output is an stand alone electronic file. 
+The features also support scenarios where compliance with file format specifications is required, in most cases these published by the tax authority, and where the output is an stand alone electronic file. 
 
-The electronic invoicing features also support the scenarios where the requirement is, beyond complying with a file format specifications, exchanging messages with an external web services, either hosted by the tax authority, or by some accredited party, and requesting authorization or an approval stamp in the electronic invoice.
+The electronic invoicing features also support exchanging messages with external web services, either hosted by the tax authority or by some accredited party, and requesting authorization or an approval stamp in the electronic invoice.
 
 ### Electronic invoicing feature availability
 
@@ -236,11 +236,11 @@ Before you configure Electronic invoicing features through RCS, you must configu
 
 You can browse the available electronic invoicing features in the Global repository for a specific configuration provider, by synchronizing your RCS. After you synchronize, the list of available electronic invoicing features is refreshed and you can view the features.
 
-## Import the Electronic invoicing feature
+## Import the Electronic invoicing features
 
-To use or configure Electronic invoicing features, they must be imported to the RCS instance of your organization. The importation creates a local copy of the electronic invoicing feature but also it copies all Electronic reporting artifacts used by the electronic invoiving feature, such as format configurations, model configurations, and so on, to your instance of RCS.
+To use or configure Electronic invoicing featurex, the features must be imported to the RCS instance of your organization. Import creates a local copy of the electronic invoicing feature and copies all Electronic reportisng artifacts used by the electronic invoiving feature, such as format configurations and model configurations, to your instance of RCS.
 
-You can import Electronic invoicing features from any providers.
+You can import Electronic invoicing features from any provider.
 
 ## Create an Electronic invoicing feature
 
