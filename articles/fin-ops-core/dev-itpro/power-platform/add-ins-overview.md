@@ -55,9 +55,9 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
 
 ## Setup for Add-ins
 
-1. After the Finance and Operations environment is deployed through Lifecycle Services, go to the **Environment Details** page. 
+1. After the Finance and Operations environment is deployed through Lifecycle Services, go to the **Environment details** page. 
 
-2. In **Power Platform Integration** section, click the **Setup** button.
+2. In **Power Platform integration** section, click the **Setup** button.
 
 3. In the **Power platform environment setup** pane, select the check box and click **Setup** at the bottom of the pane.
 
@@ -66,18 +66,17 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
 
 4.  A message appears indicationg that the Power Platform environment is being provisioned. Click **OK**.
 
-
-1.  You can see below message in “Power Platform Integration” section. Please give a few minutes before refreshing the page so that the status of setup can be shown.
-
-    ![](media/39e6f8080e4caef11a952dd454cadb03.png)
-
-2.  After few minutes once page is refreshed, the status should change to “Environment setup is in progress”. It generally takes around 60 to 90 minutes for the setup to be complete.   
+    The **Power Platform integration** section of the **Environment details** page now displays a message indicating that the Power Platform enviornment is being provisioned. 
     
-    ![](media/ea010be87dd534681b7f91203f8ae850.png)
+5. After a few minutes, refresh the **Environment Details** page. 
 
-3.  Once the Dataverse environment is provisioned, “Install a new add-in” button would be enabled under “Environment add-ins” section in “Power Platform Integration”  
+6. In the **Power Platform integration** section, notice that the **Status** field says **Environment setup is in progress**. 
+     
+    It generally takes between 60-90 minutes for the setup to be complete.
+
+7.  AFter the Dataverse environment is provisioned, “Install a new add-in” button would be enabled under “Environment add-ins” section in “Power Platform Integration”  
     
-    ![](media/c5a4117ef8a77110685537f4a62b0771.png)
+    ![](media/InstallANewAddIn.png)
 
 Note: If you are just planning on installing Add-ins which does not require “Dual write linking”, then that setup does not need to be performed.
 
