@@ -2,10 +2,10 @@
 # required metadata
 
 title: VAT declaration for Germany
-description: This topic provides information about how to generate QR-bills (QR-slips) and process incoming QR-bills.
+description: This topic provides information about how to generate QR-bills and process incoming QR-bills.
 author: anasyash
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -723,9 +723,9 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 > [!NOTE]
 > For sample forms of advance VAT returns that include declaration row codes, see [Forms in the VAT procedure for the year 2020](https://umsatzsteuer-voranmeldung-2020.taxpool.net/Umsatzsteuer-Voranmeldung-2020.pdf).
 
-## Presetup
+## Prerequisite
 
-Make sure that parameter **Include corrections** under the **Special report** group of fields, on the **Tax options** Fast tab, in the **General ledger parameters** page is set to **No**
+Before you begin, go to the **Genreal ledger parameters** page and expand the **Tax options** FastTab. In the **Special report** field group, make sure that the **Include corrections** parameter is enabled. 
 
 ## Set up sales tax codes
 
