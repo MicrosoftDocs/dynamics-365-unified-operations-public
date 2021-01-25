@@ -103,7 +103,7 @@ If you experience issues during data synchronization between Human Resources and
 
 - To remove the association of a Human Resources record and a Dataverse row, select the table in the **Dataverse table** field, and then select **Clear tracking information**.
 
-[![Clearing tracking information](./media/hr-admin-integration-dataverse-clear-trackingpng)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Clearing tracking information](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 To run a full synchronization on the table after you clear the tracking, see the next procedure.
 

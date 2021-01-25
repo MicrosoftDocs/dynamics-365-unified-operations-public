@@ -88,7 +88,7 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 6. Select **Register**.
 
-7. When registration completes, the Azure portal displays the app registration's **Overview** pane, which includes its **Application (client) ID**. Take note of the **Application (client) ID** at this time. You'll enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. When registration completes, the Azure portal displays the app registration's **Overview** pane, which includes its **Application (client) ID**. Take note of the **Application (client) ID** at this time. You'll enter this information when you [Configure the virtual table data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
 8. In the left navigation pane, select **Certificates and secrets**.
 
@@ -96,7 +96,7 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 10. Provide a description, select a duration, and select **Add**.
 
-11. Record the secret's value. You'll enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+11. Record the secret's value. You'll enter this information when you [Configure the virtual table data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Be sure to take note of the secret's value at this time. The secret is never displayed again after you leave this page.
