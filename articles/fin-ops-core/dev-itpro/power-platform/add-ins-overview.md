@@ -74,7 +74,7 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
      
     It generally takes between 60-90 minutes for the setup to be complete.
 
-7.  AFter the Dataverse environment is provisioned, “Install a new add-in” button would be enabled under “Environment add-ins” section in “Power Platform Integration”  
+7.  After the Dataverse environment is provisioned, the **Install a new add-in** button is enabled under “Environment add-ins” section in “Power Platform Integration”  
     
     ![](media/InstallANewAddIn.png)
 
