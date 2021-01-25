@@ -35,19 +35,19 @@ are some of examples of add-ins.
 
 Planning optimization: [Planning Optimization overview - Supply Chain Management
 \| Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
+Docs](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
 
 Inventory Management: [Inventory Visibility Add-in - Supply Chain Management \|
 Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-visibility)
+Docs](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
 
 Export to Azure Data Lake: [Configure export to Azure Data Lake - Finance &
 Operations \| Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
+Docs](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
 
 IOT Intelligence: [IoT Intelligence home page - Supply Chain Management \|
 Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/iot/iot-intelligence-home-page)
+Docs](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
 
 # 
 
