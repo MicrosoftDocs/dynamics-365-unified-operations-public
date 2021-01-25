@@ -146,7 +146,7 @@ According to Egyptian legal requirements, products in electronic invoices must u
 ![Category hierarchy](media/emea-egy-gpc.jpg)
 
 > [!NOTE]
-> For some countries, .
+> If neither GTIN nor GPC codes are defined for products then internal product number will be used. If no products or services are involved in invoicing (like for free text invoices, for example) then lines descriptions will be used in electronic invoices.
 
 ## Submit electronic invoices
 
