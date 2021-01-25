@@ -46,7 +46,7 @@ The submission of electronic invoices requires the system configuration which co
 - In the Feature management workspace, turn on the **Electronic invoicing add-on integration** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Enable electronic invoicing for Egypt
-Complete the following steps to nable electronic invoicing for Egypt.
+Complete the following steps to enable electronic invoicing for Egypt.
 
 1. Go to **Organization administration** > **Setup** > **Electronic document parameters** 
 2. On the **Features** tab, select feature reference for **EG00008 E-invoicing for Egypt** 
@@ -106,8 +106,17 @@ Complete the following steps to configure Electronic document property type reqi
 
 ### Enter Customer registration number
 1. Go to **Accounts receivable** > **Customers** > **All customers**.
+2. Go to the **REGISTRATION** > **Registration IDs** menu item for the selected customer.
+3. Expand the **Registration ID** FasTab for the selected address.
+4. Click on the **Add** buttom to create a new regictration ID.
+5. In the **Registration type** column, select the registration type previously created in **Configure registration numbers** step.
+6. In the **Registration number** column, enter a valid customer registration number obtained from the Tax authority.
 
 ## Configure Sales tax codes
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+2. Go to the **Sales tax code** > **SALES TAX CODE** > **External codes** menu item for the selected tax code.
+3. In **Overview** section, create a new line for the selected sales tax code.
+4. In **Value** section, in **Value** column, enter an external code which will be used for the selected sales tax code according to the official codification for [Tax Types](https://sdk.sit.invoicing.eta.gov.eg/codes/tax-types/).
 
 ## Configure Unit codes
 
