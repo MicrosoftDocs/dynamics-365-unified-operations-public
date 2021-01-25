@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add-ins overview
-description: Description
+description: This topic provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
 author: ankugo
 manager: AnnBe
 ms.date: 01/25/2021
@@ -30,61 +30,52 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include[banner](../includes/banner.md)]
 
-Add-ins provide a way to extend functionality of Finance and Operations apps. The following topics provide some of examples of add-ins.
+Add-ins provide a way to extend the functionality of Finance and Operations apps. The following topics provide some examples of add-ins:
 
 - [Planning Optimization overview](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
-
 - [Inventory Visibility Add-in](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
-
 - [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
-
 - [IoT Intelligence home page](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
-
 
 ## Prerequisites for setting up add-ins
 
-- Be sure that there is at least 1 GB of Dataverse space available, otherwise setup would fail.
+- Make sure that at least 1 gigabyte (GB) of Microsoft Dataverse space is available. Otherwise, setup will fail.
+- The setup must be done by a user who is assigned to the **Project Owner** role in Microsoft Dynamics Lifecycle Services (LCS).
+- Make sure that the Finance and Operations app user who is trying to do the setup is one of the following admins: global admin, Dynamics 365 service admin, Microsoft Power Platform service admin, or delegated admin.
 
-- Setup must be done by a user who is assigned to the **Project Owner** role in Lifecycle Services.
+    Alternatively, sign in to the Power Platform admin center, select the **Settings** button (gear symbol), select **Power Platform settings**, and set the options to enable users to create Dataverse environments.
 
-- Be sure that the Finance and Operations app user who is trying to perform the set up is one of the admins: Global admin, Dynamics 365 service admin, Power Platform service admin or Delegated admin). Or follow below step for allowing Dataverse environment creation.
+    ![Power Platform settings](media/PowerPlatformSettings.png)
 
-    Go to Power Platform admin portal -\> Click on gear icon -\> Power Platform Settings -\>
+## Set up add-ins
 
-    ![Power Platform Settings](media/PowerPlatformSettings.png)
+> [!NOTE]
+> If the add-ins that you're planning to install don't require "dual-write linking," you don't have to complete this procedure.
 
-## Setup for add-ins
+1. After the Finance and Operations environment has been deployed through LCS, open the **Environment details** page in LCS.
+2. In the **Power Platform integration** section, select **Setup**.
+3. In the **Power platform environment setup** dialog box, select the check box, and then select **Setup** at the bottom of the dialog box.
 
-1. After the Finance and Operations environment is deployed through Lifecycle Services, go to the **Environment details** page. 
+    > [!NOTE]
+    > The Dataverse environment is set up so that it includes dual-write functionality. Typically, this setup consumes about 1 GB of Dataverse space.
 
-2. In **Power Platform integration** section, click the **Setup** button.
+4. When you receive a message that states that the Microsoft Power Platform environment is being provisioned, select **OK**.
 
-3. In the **Power platform environment setup** pane, select the check box and click **Setup** at the bottom of the pane.
+    The **Power Platform integration** section of the **Environment details** page now shows a message that states that the Microsoft Power Platform environment is being provisioned.
 
-    > [!Note]
-    > This will set up the Dataverse environment with dual write setup. This will generally consume around 1 GB of Dataverse space. 
+5. After a few minutes, refresh the **Environment details** page.
+6. In the **Power Platform integration** section, notice that the value of the **Status** field is **Environment setup is in progress**.
 
-4.  A message appears indicationg that the Power Platform environment is being provisioned. Click **OK**.
+    Typically, the setup takes between 60 and 90 minutes.
 
-    The **Power Platform integration** section of the **Environment details** page now displays a message indicating that the Power Platform enviornment is being provisioned. 
-    
-5. After a few minutes, refresh the **Environment Details** page. 
+    After the Dataverse environment is provisioned, the **Install a new add-in** button becomes available in the **Power Platform integration** section.
 
-6. In the **Power Platform integration** section, notice that the **Status** field says **Environment setup is in progress**. 
-     
-    It generally takes between 60-90 minutes for the setup to be complete.
+    ![Install a new add-in button](media/InstallANewAddIn.png)
 
-7.  After the Dataverse environment is provisioned, the **Install a new add-in** button is enabled in the **Power Platform integration** section  
-    
-    ![The Install a new add-in button is enabled.](media/InstallANewAddIn.png)
+## Troubleshoot the setup
 
-> [!Note]
-> If you are just planning on installing Add-ins which do not require “Dual write linking”, then that setup does not need to be performed.
+- Because the setup process tries to set up dual-write functionality, the dual-write setup might sometimes fail after the Dataverse environment is provisioned, as shown in the following illustration. In these cases, the **Install a new add-in** button is still available, so that you can unblock the installation of add-ins. If you want to continue to set up dual-write functionality, select **Resume**.
 
-## Handling failures:  
-1. Since the setup tries to setup dual-write, the dual-write setup might fail sometimes after provisioning the Dataverse environment, as shown in the image below. In these cases, the **Install a new add-in** button is still enabled to unblock installation of add-ins. If you would like to continue setting up dual-write functionality, you can just click **Resume**.
+    ![Dual-write setup failure](media/Error.png)
 
-    ![Dual-write setup might fail sometime after provisioning the Dataverse environment.](media/Error.png)
-
-2. Sometimes Dataverse environment provisioning might be fail due to capacity/licensing issues. Please logon to PPAC portal to resolve those issue and click on the **Resume** button in Lifecycle services.
-
+- Provisioning of the Dataverse environment might sometimes fail because of capacity and licensing issues. In these cases, sign in to the Power Platform admin center, and fix the issues. Then, in the **Power Platform integration** section of the **Environment details** page in LCS, select **Resume**.
