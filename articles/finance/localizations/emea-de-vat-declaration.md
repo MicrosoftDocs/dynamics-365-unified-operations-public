@@ -723,6 +723,10 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 > [!NOTE]
 > For sample forms of advance VAT returns that include declaration row codes, see [Forms in the VAT procedure for the year 2020](https://umsatzsteuer-voranmeldung-2020.taxpool.net/Umsatzsteuer-Voranmeldung-2020.pdf).
 
+## Presetup
+
+Make sure that parameter **Include corrections** under the **Special report** group of fields, on the **Tax options** Fast tab, in the **General ledger parameters** page is set to **No**
+
 ## Set up sales tax codes
 
 Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
