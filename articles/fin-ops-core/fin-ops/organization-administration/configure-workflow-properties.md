@@ -80,6 +80,8 @@ You can provide instructions to users who submit documents for processing and ap
     5. To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 3.
     6. Click **Close**.
 
+5. Note that placeholders cannot be added via copy and paste because the target information is not pasted back in correctly. Use the interface to add placeholders.
+
 ## Specify when this workflow is used through activation conditions
 
 You can create multiple workflows that are based on the same workflow type. When you have multiple workflows that are based on the same type, you must specify when each workflow is used using activation conditions. If activation conditions are not met, then the default workflow is used. Similarly, if there is only one workflow configuration defined for a workflow type, then that workflow configuration will be used regardless of the activation conditions.
