@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.12
 This topic is a collection of frequently asked questions about virtual tables in Dynamics 365 Human Resources. 
 
 > [!NOTE]
-> For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro).
+> For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
 ### Can a solution from an independent software vendor (ISV) take a dependency on virtual tables? What does the application lifecycle management (ALM) look like?
 

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 You can turn integration between Microsoft Dataverse and Dynamics 365 Human Resources on or off. You can also view the synchronization details, clear tracking data, and resync a table to help troubleshoot data issues between the two environments.
 
 > [!NOTE]
-> For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro).
+> For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
 When you turn off integration, users can make changes in Human Resources or Dataverse, but those changes aren't synced between the two environments.
 

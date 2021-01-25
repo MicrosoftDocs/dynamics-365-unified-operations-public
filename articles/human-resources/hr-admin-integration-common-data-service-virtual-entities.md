@@ -37,7 +37,7 @@ Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It
 To enable CRUD operations on Human Resources entities from Dataverse, you must make the entities available as virtual tables in Dataverse. This lets you perform CRUD operations from Dataverse and Microsoft Power Platform on data that's in Human Resources. The operations also support the full business logic validations of Human Resources to ensure data integrity when writing data to the entities.
 
 > [!NOTE]
-> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro).
+> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
 ## Available virtual tables for Human Resources
 
