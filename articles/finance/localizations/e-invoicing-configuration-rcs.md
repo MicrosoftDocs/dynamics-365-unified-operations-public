@@ -64,7 +64,7 @@ The features in the following table are generally available at this time.
 
 | Country/Region    | Feature name                             | Business document                      |
 |-------------------|------------------------------------------|----------------------------------------|
-| Egypt             | Egypt e-Invoicing                        | Sales and Project invoices             |
+| Egypt             | Egyptian electronic invoice (BR)         | Sales and Project invoices             |
 
 #### Preview features
 
@@ -74,16 +74,16 @@ The features in the following table are still in preview.
 |-------------------|------------------------------------------|----------------------------------------|
 | Austria           | Austrian electronic invoices (AT)        | Sales and Project invoices             |
 | Belgium           | Belgian electronic invoice (BE)          | Sales and Project invoices             |
-| Brazil            | NF-e                                     | Fiscal document model 55, Correction letter, Cancellation and Discard|
-| Brazil            | NFS-e ABRASF Curitiba                    | Service fiscal document                |
-| Brazil            | NFS-e São Paulo city                     | Service fiscal document                |
+| Brazil            | Brazilian NF-e (BR)                      | Fiscal document model 55, Correction letter, Cancellation and Discard|
+| Brazil            | Brazilian NFS-e ABRASF Curitiba (BR)     | Service fiscal document                |
+| Brazil            | Brazilian NFS-e São Paulo (BR)           | Service fiscal document                |
 | Denmark           | Danish electronic invoice (DK)           | Sales and Project invoices             |
 | Estonia           | Estonian electronic invoice (EE)         | Sales and Project invoices             |
 | Finland           | Finnish electronic invoice (FI)          | Sales and Project invoices             |
 | France            | French electronic invoice (FR)           | Sales and Project invoices             |
 | Germany           | German electronic invoice (DE)           | Sales and Project invoices             |
 | Italy             | FatturaPA (IT)                           | Sales and Project invoices             |
-| Mexico            | CFDI                                     | Sales invoices, Packing slip, Invent transfer, Payment complement, Cancellation |
+| Mexico            | Mexican CFDI (MX)                        | Sales invoices, Packing slip, Invent transfer, Payment complement, Cancellation |
 | Netherlands       | Dutch electronic invoice (NL)            | Sales and Project invoices             |
 | Norway            | Norwegian electronic invoice (NO)        | Sales and Project invoices             |
 | Spain             | Spanish electronic invoice (ES)          | Sales and Project invoices             |
