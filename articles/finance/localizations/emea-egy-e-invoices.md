@@ -118,7 +118,14 @@ Complete the following steps to configure Electronic document property type reqi
 3. In **Overview** section, create a new line for the selected sales tax code.
 4. In **Value** section, in **Value** column, enter an external code which will be used for the selected sales tax code according to the official codification for [Tax Types](https://sdk.sit.invoicing.eta.gov.eg/codes/tax-types/).
 
+1. Go to **Tax** > **Setup** > **Sales tax** > **Sales tax exempt codes**.
+2. Define exempt codes that will be used as **Tax Subtypes** in case of non-taxable operations.
+
 ## Configure Unit codes
+1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
+2. Go to the **External codes** menu item for the selected unit.
+3. In **Overview** section, create a new line for the selected unit.
+4. In **Value** section, in **Value** column, enter an external code which will be used for the selected unit according to the official codification for [Unit Types](https://sdk.sit.invoicing.eta.gov.eg/codes/unit-types/).
 
 ## Configure Products
 ### Enter GTIN number
