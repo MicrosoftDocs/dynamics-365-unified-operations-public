@@ -5,7 +5,7 @@ title: Configure action-dependent ER destinations
 description: This topic provides information about how to configure action-dependent destinations for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/22/2021
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -64,7 +64,7 @@ When you select the **Any** document type, the **Autodetect** option is automati
     - When the **Send** action is provided at runtime, the **Email** ER destination is applied.
     - When the **Print** action is provided at runtime, the **Printer** ER destination is applied.
 
-The following graphic illustrates how ER destinations can be configured for the **Free text invoice (Excel)** ER format to do the following with a generated document:
+The following graphics illustrate how ER destinations can be configured for the Free text invoice (Excel) ER format to do the following with a generated document:
 
 - Archive when this ER format is executed with no action code provided. For example, when it's sent out electronically.
 - Preview in using web browser when a user performs the **View** action.
@@ -72,8 +72,6 @@ The following graphic illustrates how ER destinations can be configured for the 
 - Archive and email as the attachment of an outbound electronic mail when a user performs the **Send** action.
 
 ![Electronic reporting destination page presenting action dependent destination settings for an ER format](./media/er-destination-action-dependent-01.png)
-
-The same can be achieved with the following settings:
 
 ![Electronic reporting destination page presenting action dependent destination settings for an ER format](./media/er-destination-action-dependent-01a.png)
 
