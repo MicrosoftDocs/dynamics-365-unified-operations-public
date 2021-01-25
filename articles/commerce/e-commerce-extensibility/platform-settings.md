@@ -36,7 +36,7 @@ This topic covers the platform settings file options in Microsoft Dynamics 365 C
 
 ## Overview
 
-The \src\settings\platform.settings.json file holds various platform settings used by the e-Commerce runtime. This file may not exist by default, by can be added under the **\src\settings\\** directory.  The following example JSON (JavaScript Object Notation) file includes various supported feature settings.
+The **\src\settings\platform.settings.json** file holds various platform settings used by the e-Commerce runtime. This file may not exist by default, but can be added under the **\src\settings\\** directory.  The following example JSON (JavaScript Object Notation) file includes various supported feature settings.
 
 ```json
 {
