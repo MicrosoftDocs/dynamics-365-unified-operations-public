@@ -63,7 +63,7 @@ Modules can be excluded by adding the module name to the **excludeModules** prop
 You can verify that the module was successfully excluded by comparing the chunk size displayed after a build, or by testing the module in a development environment. For the latter method, you can confirm that the excluded module is not rendered by using the URL `http://localhost:4000/modules?type=<your-module-name>` (after running the Node server by using the "yarn start" command).
 
 ### JavaScript chunking
-By default, when modules are compiled the JavaScript code is grouped into different chunks randomly.  This may not be the optimal since the JavaScript chunks served to a client browser may contain JavaScript for modules that are not used a particular page.  By customizing the JavaScript chunking, the chunk size sent to a client can be reduced  improving load time of a page.
+By default, when modules are compiled, the JavaScript code is grouped into different webpack chunks randomly.  This may not be the optimal since the JavaScript chunks served to a client browser may contain JavaScript for modules that are not used on a particular page.  By customizing the JavaScript chunking, the chunk size sent to a client can be reduced improving load time of a page.
 
 As an example, the product details page (PDP) may render the checkout and buybox modules and the homepage a carousel and content block module.  Random chunking logic could group the checkout and carousel together into a chunk and the buybox and content block module in another chunk.  When rendering the PDP, the client would need both JavaScript  chunks to render the page causing extra JavaScript to be downloaded to the browser not needed for the particular page.
 
