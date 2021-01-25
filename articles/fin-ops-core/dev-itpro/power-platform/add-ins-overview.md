@@ -51,7 +51,7 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
 
     Go to Power Platform admin portal -\> Click on gear icon -\> Power Platform Settings -\>
 
-    ![](media/PowerPlatformSettings.png)
+    ![Power Platform Settings](media/PowerPlatformSettings.png)
 
 ## Setup for Add-ins
 
@@ -74,9 +74,9 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
      
     It generally takes between 60-90 minutes for the setup to be complete.
 
-7.  After the Dataverse environment is provisioned, the **Install a new add-in** button is enabled under “Environment add-ins” section in “Power Platform Integration”  
+7.  After the Dataverse environment is provisioned, the **Install a new add-in** button is enabled in the **Power Platform integration** section  
     
-    ![](media/InstallANewAddIn.png)
+    ![The Install a new add-in button is enabled.](media/InstallANewAddIn.png)
 
 Note: If you are just planning on installing Add-ins which does not require “Dual write linking”, then that setup does not need to be performed.
 
