@@ -55,19 +55,17 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
 
 ## Setup for Add-ins
 
-1.  After the Finance and Operations environment is deployed through Lifecycle Services, go to the Environment Details page. There would be a section called “Power Platform Integration”
+1. After the Finance and Operations environment is deployed through Lifecycle Services, go to the **Environment Details** page. 
 
-    ![](media/d5faf02c8e6178282a7048b34eb6c68e.png)
+2. In **Power Platform Integration** section, click the **Setup** button.
 
-2.  Click on “Setup” button, this would open a slider, click on the check box and click “Setup” button at the bottom of slider.
+3. In the **Power platform environment setup** pane, select the check box and click **Setup** at the bottom of the pane.
 
-    Note: This would setup Dataverse environment with dual write setup. This would generally   consume around 1 GB of Dataverse space  
-    
-    ![](media/eca00435b0b4d10da2f09ecbb6e35fdc.png)
+    > [!Note]
+    > This will set up the Dataverse environment with dual write setup. This will generally consume around 1 GB of Dataverse space. 
 
-3.  It would show a pop up message like below. Click “OK”
+4.  A message appears indicationg that the Power Platform environment is being provisioned. Click **OK**.
 
-    ![](media/b966f146466402cca93e7b3805e5f47a.png)
 
 1.  You can see below message in “Power Platform Integration” section. Please give a few minutes before refreshing the page so that the status of setup can be shown.
 
