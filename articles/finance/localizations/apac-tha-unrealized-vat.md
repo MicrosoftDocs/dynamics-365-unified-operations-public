@@ -3,9 +3,9 @@
 
 title: Thailand unrealized and realized VAT
 description: This topic provides information about unrealized and realized value-added tax (VAT) for Thailand. It also explains how to settle transactions that have unrealized VAT, how to reverse unrealized VAT, and what reports can be generated.
-author: Andosip
-manager: anasyash
-ms.date: 12/17/2020
+author: anasyash
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.custom: 265924
 ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 ms.search.region: Thailand
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
