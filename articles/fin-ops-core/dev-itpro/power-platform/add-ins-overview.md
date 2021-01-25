@@ -30,41 +30,33 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include[banner](../includes/banner.md)]
 
-Add-ins provide a way to extend functionality of Finance and Operations apps. Below
-are some of examples of add-ins.
+Add-ins provide a way to extend functionality of Finance and Operations apps. The following topics provide some of examples of add-ins.
 
-- **Planning optimization**: [Planning Optimization overview](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
+- [Planning Optimization overview](https://docs.microsoft.com/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-overview)
 
-- **Inventory management**: [Inventory Visibility Add-in](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
+- [Inventory Visibility Add-in](https://docs.microsoft.com/dynamics365/supply-chain/inventory/inventory-visibility)
 
-- **Export to Azure Data Lake**: [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
+- [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
 
-- **IOT Intelligence**: [IoT Intelligence home page](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
-
+- [IoT Intelligence home page](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
 
 
 ## Prerequisites for setting up Add-ins
 
-1.  Please ensure that there is at least 1 GB of Dataverse space otherwise setup
-    would fail
+- Be sure that there is at least 1 GB of Dataverse space available, otherwise setup would fail.
 
-2.  Setup must be done by users having “Project Owner” role in Lifecycle
-    Services.
+- Setup must be done by a user who is assigned to the **Project Owner** role in Lifecycle Services.
 
-3.  Please ensure that Finance & Operations user who is trying to setup is one
-    of the admin(Global admins, Dynamics 365 service admins, Power Platform
-    service admins or Delegated admins) Or follow below step for allowing
-    Fataverse environment creation.
+- Be sure that the Finance and Operations app user who is trying to perform the set up is one of the admins: Global admin, Dynamics 365 service admin, Power Platform service admin or Delegated admin). Or follow below step for allowing Dataverse environment creation.
 
-    Go to Power Platform admin portal -\> Click on gear icon -\> Power Platform
-    Settings -\>
+    Go to Power Platform admin portal -\> Click on gear icon -\> Power Platform Settings -\>
 
-    ![](media/c4f534080246691fb6d2492d5b720ed6.png)
+    ![](media/PowerPlatformSettings.png)
 
 ## Setup for Add-ins
 
-1.  Once the finance and operations environment is deployed thru lifecycle
-    services, go to the environment details page. There would be a section
+1.  After the Finance and Operations environment is deployed through Lifecycle
+    Services, go to the Environment Details page. There would be a section
     called “Power Platform Integration”
 
     ![](media/d5faf02c8e6178282a7048b34eb6c68e.png)
