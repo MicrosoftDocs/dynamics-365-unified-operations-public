@@ -3,7 +3,7 @@
 
 title: Add-ins overview
 description: Description
-author: tonyafehr
+author: ankugo
 manager: AnnBe
 ms.date: 01/25/2021
 ms.topic: article
@@ -21,9 +21,9 @@ ms.reviewer: sericks
 # ms.custom: NotInTOC
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tfehr
+ms.author: ankugo
 ms.search.validFrom: 2021-02-28
-ms.dyn365.ops.version: 10.0.16
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Add-ins overview
