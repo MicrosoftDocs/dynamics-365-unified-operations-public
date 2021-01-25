@@ -1092,8 +1092,6 @@
           items: 
           - name: Global withholding tax overview
             href: general-ledger/global-withholding-tax-overview.md
-          - name: Enable global withholding tax
-            href: general-ledger/enable-global-withholding-tax.md
           - name: Set up global withholding tax
             href: general-ledger/set-up-global-withholding-tax.md
           - name: Withholding tax in purchase transactions
