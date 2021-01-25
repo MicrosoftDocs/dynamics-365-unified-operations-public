@@ -48,7 +48,7 @@ This topic lists the steps for avoiding the calculation of withholding tax for s
 
 5. Click **Save**.
 
-For items/services which are liable to withholding tax, you can assign the default **Item withholding tax group** in **Released Products**.
+For items/services, which are liable to withholding tax, you can assign the default **Item withholding tax group** in **Released Products**.
 
 1. Go to **Navigation pane > Modules > Product information management > Products > Released products**.
 
@@ -65,7 +65,7 @@ For items/services which are liable to withholding tax, you can assign the defau
 
 Withholding tax groups and Item withholding tax groups can be assigned using the **Sales order** page. 
 
-The default Withholding tax group and Item withholding tax group will be usesd as default entries on sales order lines when you create a new sales order.
+The default Withholding tax group and Item withholding tax group will be used as default entries on sales order lines when you create a new sales order.
 
 Withholding tax is calculated and posted with **Customer payment journal**. You can manually adjust the applicable withholding tax code, as well as the actual withholding tax amount in the **Withholding tax** tab on the **Settle transactions** page.
 
