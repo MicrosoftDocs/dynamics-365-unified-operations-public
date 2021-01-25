@@ -49,9 +49,9 @@ IOT Intelligence: [IoT Intelligence home page - Supply Chain Management \|
 Dynamics 365 \| Microsoft
 Docs](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-home-page)
 
-# 
 
-# Prerequisites for setting up Add-ins
+
+## Prerequisites for setting up Add-ins
 
 1.  Please ensure that there is at least 1 GB of Dataverse space otherwise setup
     would fail
@@ -69,7 +69,7 @@ Docs](https://docs.microsoft.com/dynamics365/supply-chain/iot/iot-intelligence-h
 
     ![](media/c4f534080246691fb6d2492d5b720ed6.png)
 
-# Setup for Add-ins
+## Setup for Add-ins
 
 1.  Once the finance and operations environment is deployed thru lifecycle
     services, go to the environment details page. There would be a section
