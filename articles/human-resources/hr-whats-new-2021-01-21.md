@@ -50,9 +50,9 @@ The following features are generally available with this release.
 | --- | --- | --- |
 | Platform update 10.0.16(40) | -- | [Platform updates for version 10.0.16 of Finance and Operations apps (February 2021)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16) |
 | Enhanced workflow requests and approvals | [Organization and personnel management workflow experience enhancements](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Configuration option to position Work items assigned to me list](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| ## ACA Compliance updates for 1095C 1095B and Electronic reporting in Legacy Benefits | -- |--  | 
-| ## Uptake ACA into new benefits - Benefits Management module now supports ACA compliance reporting for US based Legal entities.| NA | [Generate ACA reports in Benefits Management](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-management-aca-reports) |
-| ## Benefit Rate Tier entities exposed - Benefits Management now has "Benefit rate tiers" & "Benefit rate double tiers" entities exposed  |-- | -- |
+| ACA Compliance updates for 1095C 1095B and Electronic reporting in Legacy Benefits | -- |--  | 
+| Uptake ACA into new benefits - Benefits Management module now supports ACA compliance reporting for US based Legal entities.| NA | [Generate ACA reports in Benefits Management](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-management-aca-reports) |
+| Benefit Rate Tier entities exposed - Benefits Management now has "Benefit rate tiers" & "Benefit rate double tiers" entities exposed  |-- | -- |
 
 ### Bug fixes
 
@@ -95,14 +95,14 @@ The following new features are in preview. For more information about turning fe
 ## Coming soon
 | Feature | Details |
 | --- | --- |
-| Email confirmation for benefit enollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in ESS.  Learn more [here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-parameters-per-company) |
+| Email confirmation for benefit enollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in ESS.  Learn more [here](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-setup-parameters-per-company) |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming Soon |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## Terminology updates for Microsoft Dataverse
 
-Effective November 2020, Common Data Service has been renamed to [Microsoft Dataverse](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/data-platform-intro). See the [official announcement](https://powerapps.microsoft.com/en-us/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) on the Power Apps blog to learn more. In conjunction with this name change, some terminology in Microsoft Dateverse has been updated. For example, *entity* is now *table* and *field* is now *column* ([learn more](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/data-platform-intro#terminology-updates)).
+Effective November 2020, Common Data Service has been renamed to [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro). See the [official announcement](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) on the Power Apps blog to learn more. In conjunction with this name change, some terminology in Microsoft Dateverse has been updated. For example, *entity* is now *table* and *field* is now *column* ([learn more](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/data-platform-intro#terminology-updates)).
 
 In this release, terminology related to the Dynamics 365 Human Resources integration with Microsoft Dataverse has been updated throughout the application to reflect these changes. For example, the **Common Data Service integration** form is now **Microsoft Dataverse integration**.
 
