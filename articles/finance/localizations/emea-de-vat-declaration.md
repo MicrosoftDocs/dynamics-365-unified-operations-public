@@ -880,7 +880,7 @@ Note that a correction transaction is added to the declaration in codes **86** a
 9. Select the paper clip symbol in the upper-right corner.
 10. Select **Open** at the top of the page, and review the XML file.
 
-![XML file](media/6_XML_file.png)
+![XML file to review](media/6_XML_file.png)
 
 Note that a correction transaction is added to the declaration in codes **86** and **83**.
 
