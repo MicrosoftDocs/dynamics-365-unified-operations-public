@@ -56,13 +56,27 @@ Modules can be excluded by adding the module name to the **excludeModules** prop
 
 ```JSON
 {
-
     "excludeModules": ["<EXCLUDED_MODULE_NAME1>","<EXCLUDED_MODULE_NAME2>"]
-
 }
 ```
 
 You can verify that the module was successfully excluded by comparing the chunk size displayed after a build, or by testing the module in a development environment. For the latter method, you can confirm that the excluded module is not rendered by using the URL `http://localhost:4000/modules?type=<your-module-name>` (after running the Node server by using the "yarn start" command).
+
+### JavaScript chunking
+By default, when modules are compiled the JavaScript code is grouped into different chunks randomly.  This may not be the optimal since the JavaScript chunks served to a client browser may contain JavaScript for modules that are not used a particular page.  By customizing the JavaScript chunking, the chunk size sent to a client can be reduced  improving load time of a page.
+
+As an example, the product details page (PDP) may render the checkout and buybox modules and the homepage a carousel and content block module.  Random chunking logic could group the checkout and carousel together into a chunk and the buybox and content block module in another chunk.  When rendering the PDP, the client would need both JavaScript  chunks to render the page causing extra JavaScript to be downloaded to the browser not needed for the particular page.
+
+To enable non random chunking see the [platform settings file](platform-settings.md) for details. The **enableChunkByModulePackage** property should be set to **true** and module groups can be configured in the **chunkingGroupPreference** setting in the following format: ```"chunkingPreference": [[<group1>], [<group2>]]```.
+  
+Modules that fall into the same group will be bundled together into the same chunk as shown in the below example:
+```json
+    "enableChunkByModulePackage": true,
+    "chunkingPreference": [["module1", "module2"], ["module", "module4"]]
+```
+
+If the **chunkingPreference** settings is not set, modules from the same module package (under the supported namespace) will be bundled together.
+
 
 ## Optimize images
 
@@ -125,17 +139,10 @@ The following is an example of a **dns-prefetch** browser hint meta tag used in 
 
 Adding meta tags to a page can be done in Commerce site builder using the **Metatags** module. The **Metatags** module should be added to a page template's "HTML Head" section. For more information, see [Work with templates](../work-with-templates.md).
 
-## Tools for performance analysis
+## Performance analysis
 
-The following tools are recommended for performance analysis.
+It is very important to ensure an e-Commerce site pages are tested for performace before going live.  This can be done with a wide array of existing web page performance testing tools.  At a minimum using a web browser **F12** tool can be used to examine the network loads for an individual parts of a page.  This can help find any performance bottlenecks for further investigation.
 
-### Use WebPageTest to analyze page load times 
-
-[WebPageTest](https://webpagetest.org) can provide detailed analysis of page load times across different regions using different connection speeds.  
-
-### Use BlazeMeter to analyze performance under load 
-
-[BlazeMeter](https://blazemeter.com) can generate load on site pages from different regions to help measure load times when content is cached. 
 
 ## Restrict your e-commerce website from loading inside external website HTML iframe elements
 
@@ -161,4 +168,5 @@ The **frame-ancestors** directive can be used to restrict the loading of your e-
 
 [Manage Content Security Policy](../manage-csp.md)
 
+[Platform settings file](platform-settings.md)
 
