@@ -69,8 +69,9 @@ The following commands are available on the Action Pane of the **Sales books jou
 |---------|-------------|
 | Lines | Open the **Sales book lines** page, where you can verify the details of the sales book lines. |
 | Totals | Open the **Totals** dialog box, where you can review the total VAT base and VAT amounts for the sales book. Totals are shown separately for domestic VAT, export VAT, and VAT restoration. |
-| Print \> Sales book | Print the sales book report. |
-| Print \> Print additional list | Print the sales book additional sheet report. |
+| Print > Sales book | Print the sales book report. |
+| Print > Print additional list | Print the sales book additional sheet report. |
+| Functions > Facture operation code | Change operation codes for factures. In opened dialog **Parameters**, select facture operation code that needs to be changed and new facture operation code. Also in the field **Type** select **Purpose** of primary address of counterparty for which the facture operation code needs to be changed, for example, select **Business**. In the field **Counteragent type**, select **Customer** or **Vendor** depending on the type of the party for which the facture operaiton code needs to be changed. Also make sure that **Kind of activity** in the factures for which the operation code needs to be changed is **Basic** |
 
 #### Print a sales book
 
@@ -116,6 +117,7 @@ The following commands are available on the Action Pane of the **Purchase books 
 | Totals | Open the **Totals** dialog box, where you can review total VAT base and VAT amounts for the purchase book. |
 | Print \> Purchase book | Print the purchase book report. |
 | Print \> Print additional list | Print the purchase book additional sheet report. |
+| Functions > Facture operation code | Change operation codes for factures. In opened dialog **Parameters**, select facture operation code that needs to be changed and new facture operation code. Also in the field **Type** select **Purpose** of primary address of counterparty for which the facture operation code needs to be changed, for example, select **Business**. In the field **Counteragent type**, select **Customer** or **Vendor** depending on the type of the party for which the facture operaiton code needs to be changed. Also make sure that **Kind of activity** in the factures for which the operation code needs to be changed is **Basic** |
 
 #### Print a purchase book
 
