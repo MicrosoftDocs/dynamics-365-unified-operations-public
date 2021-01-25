@@ -79,12 +79,12 @@ Add-ins provide a way to extend functionality of Finance and Operations apps. Th
     ![The Install a new add-in button is enabled.](media/InstallANewAddIn.png)
 
 > [!Note]
-> If you are just planning on installing Add-ins which does not require “Dual write linking”, then that setup does not need to be performed.
+> If you are just planning on installing Add-ins which do not require “Dual write linking”, then that setup does not need to be performed.
 
 ## Handling Failures:  
-1. Since the setup tries to setup “Dual write”, the “Dual write setup” might fail sometimes after provisioning Dataverse environment. Refer to below screenshot. In those cases “Install a new add-in” button is still enabled to unblock installation of add-ins. If you would like to continue setting up “Dual write” you can just click on “Resume”
+1. Since the setup tries to setup dual-write, the dual-write setup might fail sometimes after provisioning the Dataverse environment, as shown in the image below. In these cases, the **Install a new add-in** button is still enabled to unblock installation of add-ins. If you would like to continue setting up dual-write functionality, you can just click **Resume**.
 
-![](media/Error.png)
+    ![](media/Error.png)
 
-2. Sometimes Dataverse environment provisioning might be failing due t0 capacity/licensing issues. Please logon to PPAC portal to resolve those issue and click on the “Resume” button in Lifecycle services.
+2. Sometimes Dataverse environment provisioning might be fail due to capacity/licensing issues. Please logon to PPAC portal to resolve those issue and click on the **Resume** button in Lifecycle services.
 
