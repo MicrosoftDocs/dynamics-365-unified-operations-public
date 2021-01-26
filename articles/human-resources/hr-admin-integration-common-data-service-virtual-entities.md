@@ -101,7 +101,7 @@ You must register your Human Resources instance in the Azure portal so the Micro
     > [!IMPORTANT]
     > Be sure to take note of the secret's value at this time. The secret is never displayed again after you leave this page.
 
-### Install the Dynamics 365 HR Virtual Entity app
+### Install the Dynamics 365 HR Virtual Table app
 
 Install the Dynamics 365 HR Virtual Entity app in your Power Apps environment to deploy the virtual table solution package to Dataverse.
 
