@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 This topic covers the platform settings file options in Microsoft Dynamics 365 Commerce.
 
-The **\src\settings\platform.settings.json** file holds various platform settings used by the Commerce e-commerce runtime. This file may not exist by default, but can be added under the **\src\settings\\** directory. The following example JSON file shows various supported feature settings.
+The **\src\settings\platform.settings.json** file holds various platform property settings used by the Commerce e-commerce runtime. This file may not exist by default, but can be added under the **\src\settings\\** directory. The following example JSON file shows various supported feature settings.
 
 ```json
 {
@@ -72,12 +72,14 @@ When the Commerce e-commerce runtime loads a page, all JavaScript chunks contain
 
 ## chunkingGroupPreference
 
-The **chunkingGroupPreference** property is used to specify sets of modules that will be grouped together into a webpack chunk when the **enableChunkByModulePackage** property is set to **true**. The default chunking logic is to group modules from the same package into the same chunk. In the case where the same module name exists in different namespaces, the module namespace can be used to specify the module name (for example, **[\<namespace\>\/<module_name1\>, \<module_name2\>]**). The namespace used for local modules is **\_\_local\_\_**. 
+The **chunkingGroupPreference** property is used to specify sets of modules that will be grouped together into a webpack chunk when the **enableChunkByModulePackage** property is set to **true**. The default chunking logic is to group modules from the same package into the same chunk. 
     
-For example, if module1 and module2 will always be used at the same time on the same page, module1 and module2 can be added to one chunk group to avoid being split between two different chunks. In this example module1 and module2 will be sent to a browser client in a single JavaScript chunk, instead of potentially multiple JavaScript chunks containing other unused modules.  
+For example, if module1 and module2 will always be used at the same time on the same page, module1 and module2 can be added to one chunk group to avoid being split between two different chunks. Module1 and module2 will then be sent to a browser client in a single JavaScript chunk, instead of potentially multiple JavaScript chunks containing other unused modules.  
 
 > [!NOTE]
 > Depending on the **minClientChunkSize** setting, other modules may be automatically merged into a defined chunking group.
+
+In the case where the same module name exists in different namespaces, the module namespace can be used to specify the module name (for example, **[\<namespace\>\/<module_name1\>, \<module_name2\>]**). The namespace used for local modules is **\_\_local\_\_**. 
 
 ## Additional resources
 
