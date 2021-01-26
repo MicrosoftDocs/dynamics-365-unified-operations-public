@@ -1126,6 +1126,8 @@
       items:
       - name: Microsoft Power Platform integration with Finance and Operations
         href: power-platform/overview.md
+      - name: Add-ins overview
+        href: power-platform/add-ins-overview.md
       - name: Entity modeling
         href: power-platform/entity-modeling.md
       - name: Application lifecycle management
