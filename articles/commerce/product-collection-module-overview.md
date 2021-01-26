@@ -74,7 +74,7 @@ The following table describes various types of product collection modules in Dyn
 
 ## Supported modules 
 
-The product collection module supports the product [Quick view module](quick-view-module.md), which allows users to view product information and add items to the cart from a product collection page.
+The product collection module supports the [quick view module](quick-view-module.md), which lets users view product information and add items to the cart from a product collection page.
 
 ## Add a product collection module to a category page
 
