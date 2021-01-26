@@ -39,11 +39,17 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
 
 ## Prerequisites for setting up add-ins
 
-- Make sure that at least 1 gigabyte (GB) of Microsoft Dataverse space is available. Otherwise, setup will fail.
-- The setup must be done by a user who is assigned to the **Project Owner** role in Microsoft Dynamics Lifecycle Services (LCS).
-- Make sure that the Finance and Operations app user who is trying to do the setup is one of the following admins: global admin, Dynamics 365 service admin, Microsoft Power Platform service admin, or delegated admin.
-
-    Alternatively, sign in to the Power Platform admin center, select the **Settings** button (gear symbol), select **Power Platform settings**, and set the options to enable users to create Dataverse environments.
+- Make sure that at least 1 gigabyte (GB) of Microsoft Dataverse space is available. Otherwise, setup will fail. You can view your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
+- Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** tab.
+- Validate your Power Platform environment governance policy. You must be a **Global administrator** or **Power Platform administrator** to validate.
+    
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+    2. Select the gear icon in the upper-right corner of the Power Platform site.
+    3. For organizations that do not allow **Everyone** to create Power Platform production environments, the Finance and Operations environment administrator account must be added as the admin.
+        The Finance and Operations environment administrator must be added to one of the following roles. You will need a Global Administrator to perform this action.
+        - Global admins
+        - Dynamics 365 admins
+        - Power Plaform admins
 
     ![Power Platform settings](media/PowerPlatformSettings.png)
 
