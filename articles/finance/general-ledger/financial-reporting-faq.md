@@ -55,11 +55,11 @@ Solution: You can utilize Tree security to restrict access to a single report so
 
 3.	In your Report Definition add your new Tree Definition
 
-[![treedefinition](./media/FR-FAQ_tree definition.jpg)](./media/FR-FAQ_tree definition.jpg)
+[![treedefinition](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
 
 A.	While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”
 
-[![reportingunitselection](./media/FR-FAQ_reporting unit selection.jpg)](./media/FR-FAQ_reporting unit selection.jpg)
+[![reportingunitselection](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
 
 **Before:**
           [![before](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
