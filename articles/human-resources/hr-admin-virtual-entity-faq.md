@@ -47,7 +47,7 @@ Any user of Microsoft Power Platform who tries to access Human Resources data th
 
 ### Where do I find the catalog table?
 
-The table catalog is listed on the **Virtual entities** tab of the **Dataverse integration** page in the Human Resources application. All available tables are listed after setup and configuration is completed. For more information, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md).
+The table catalog is listed on the **Virtual tables** tab of the **Dataverse integration** page in the Human Resources application. All available tables are listed after setup and configuration is completed. For more information, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md).
 
 ### Is there a way to specify a company when I perform data operations on a virtual table?
 
