@@ -35,13 +35,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-## After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions may generate a compilation error.
+## After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
 
-The compilation error is due to code sharing related to the product quick view module that was introduced in the Commerce version 10.0.17 release. The quick view module shares much of the functionality with the buy box module, and some common components were moved to a common folder so that the buy box and quick view modules can share the code.
+The compilation error is caused by code sharing that is related to the product quick view module that was introduced in the Commerce version 10.0.17 release. Because the quick view module shares lots of functionality with the buy box module, some common components were moved to a common folder, so that the buy box and quick view modules can share the code.
 
-The mitigation to resolve the compilation error is to update any import references in the buybox.tsx view file, as shown in the examples below.
+To fix the compilation error, update any import references in the buybox.tsx view file, as shown in the examples that follow.
 
-Example of legacy code showing imports in buybox.view.tsx:
+This example shows the old code for imports in buybox.view.tsx.
 
 ```typescript
 import { IBuyboxViewProps } from '../..';
@@ -55,9 +55,10 @@ import {
     IBuyboxProductConfigureViewProps,
     IBuyboxProductQuantityViewProps,
     IBuyboxShopSimilarLookViewProps
- } from './components';
+} from './components';
 ```
-Example of new code showing imports in buybox.view.tsx:
+
+This example shows the new code for imports in buybox.view.tsx.
 
 ```typescript
 import { IBuyboxAddToCartViewProps, IBuyboxAddToOrderTemplateViewProps, IBuyboxAddToWishlistViewProps, IBuyboxKeyInPriceViewProps, IBuyboxProductConfigureDropdownViewProps, IBuyboxProductConfigureViewProps, IBuyboxProductQuantityViewProps, IBuyboxShopSimilarLookViewProps } from '../../common';
