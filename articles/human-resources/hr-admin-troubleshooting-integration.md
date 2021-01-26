@@ -37,7 +37,7 @@ This topic answers common questions associated about what data is synchronized w
 
 ## Can I edit the Dynamics 365 Talent application user in Power Apps?
 
-No. If you edit the Talent application user, the integration between Human Resources and Dataverse might fail. The following table shows the default settings for the Talent application user.
+No. If you edit the Human Resources application user, the integration between Human Resources and Dataverse might fail. The following table shows the default settings for the Talent application user.
 
 | Full Name | Application ID | Azure AD Object ID | Application ID URI |
 | --- | --- | --- | --- |
