@@ -80,7 +80,8 @@ You can provide instructions to users who submit documents for processing and ap
     5. To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 3.
     6. Click **Close**.
 
-5. Note that placeholders cannot be added via copy and paste because the target information is not pasted back in correctly. Use the interface to add placeholders.
+> [!NOTE]
+> Placeholders cannot be added using copy and paste because the target information is not pasted in correctly. Use the interface to add placeholders.
 
 ## Specify when this workflow is used through activation conditions
 
