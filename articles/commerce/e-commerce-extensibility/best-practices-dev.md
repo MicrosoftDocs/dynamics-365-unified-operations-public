@@ -45,9 +45,7 @@ The [Dynamics 365 Commerce ecosystem](../commerce-architecture.md) comprises var
 
 ## Minimize HTML, CSS, and JavaScript file sizes
 
-The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built using the [yarn msdyn365 pack](cli-command-reference.md#pack) command, or the Node server is started on a local development environment using the [yarn start](setup-dev-environment.md#run-your-node-app) command, the TypeScript and SCSS files will compile down to JavaScript and Cascading Style Sheets (CSS) files, respectively. These files are also minified to reduce network bandwidth.
-
-You should ensure that extra, unused JavaScript and CSS files are not included in your extension package. <!--Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript. Refer to the [Performance analysis](#performance-analysis) to find a list of tools that can help you measure page load times and can help in identifying problem areas with CSS and JavaScript.-->
+The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built using the [yarn msdyn365 pack](cli-command-reference.md#pack) command, or the Node server is started on a local development environment using the [yarn start](setup-dev-environment.md#run-your-node-app) command, the TypeScript and SCSS files will compile down to JavaScript and Cascading Style Sheets (CSS) files, respectively. These files are also minified to reduce network bandwidth. You should ensure that extra, unused JavaScript and CSS files are not included in your extension package. 
 
 ### Reduce JavaScript by excluding unused modules
 
@@ -63,11 +61,11 @@ Modules can be excluded by adding the module name to the **excludeModules** prop
 
 You can verify that the module was successfully excluded by comparing the chunk size displayed after a build, or by testing the module in a development environment. For the latter method, you can confirm that the excluded module is not rendered by using the URL `http://localhost:4000/modules?type=<your-module-name>` (after running the Node server by using the "yarn start" command).
 
-### JavaScript chunking
+### Customize JavaScript chunking
 
 By default, when modules are compiled the JavaScript code is randomly grouped into different webpack chunks. This may not be optimal since the JavaScript chunks served to a client browser may contain JavaScript for modules that are not used on a particular page. By customizing the JavaScript chunking, the chunk size sent to a client can be reduced to improve page load times.
 
-For example, the product details page (PDP) may render the checkout and buy box modules while the home page renders the carousel and content block modules. Random chunking logic could group the checkout and carousel modules into one chunk and the buy box and content block modules into another chunk. When rendering the PDP, the client would then need both JavaScript chunks to render the page, causing extra JavaScript to be downloaded that is not needed for that particular page.
+For example, a product details page (PDP) may render the checkout and buy box modules, while the home page renders the carousel and content block modules. Random chunking logic could group the checkout and carousel modules into one chunk and the buy box and content block modules into another chunk. When rendering the PDP the client would then need both JavaScript chunks to render the page, resulting in extraneous JavaScript being downloaded.
 
 For information and instructions on enabling nonrandom JavaScript chunking, see [Platform settings file](platform-settings.md). The **enableChunkByModulePackage** property should be set to **true** and module groups can be configured for the **chunkingGroupPreference** property setting in the following format: ```"chunkingGroupPreference": [[<group1>], [<group2>]]```.
   
@@ -77,7 +75,7 @@ Modules that fall into the same group will be bundled together into the same chu
     "chunkingGroupPreference": [["module1", "module2"], ["module", "module4"]]
 ```
 
-If the **chunkingGroupPreference** settings are not set, modules from the same module package under the supported namespace will be bundled together.
+If the **chunkingGroupPreference** property settings are not set, modules from the same module package under the supported namespace will be bundled together.
 
 ## Optimize images
 
