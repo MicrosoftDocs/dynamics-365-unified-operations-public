@@ -57,16 +57,6 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All|
 | **Status**                         | Deprecated. Do not use this field or change the value in it.|
 
-### Cloud POS support for the Internet Explorer browser is deprecated
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Beginning in this release, the Windows web browser Internet Explorer is no longer supported by Dynamics 365 Commerce.  This browser has not been supported by Microsoft for some time and the Dynamics 365 Commerce solution must align.  For more information about Internet Explorer's removal from support, see the [Support for older versions of Internet Explorer ended](https://www.microsoft.com/en-us/microsoft-365/windows/end-of-ie-support) article. |
-| **Replaced by another feature?**   | No |
-| **Product areas affected**         | Dynamics 365 Commerce |
-| **Deployment option**              | All|
-| **Status**                         | Deprecated. Do not use this web browser.|
-
 ## Features removed or deprecated in the Commerce 10.0.15 release
 
 ### Internet Explorer 11 support for Dynamics 365 is deprecated
