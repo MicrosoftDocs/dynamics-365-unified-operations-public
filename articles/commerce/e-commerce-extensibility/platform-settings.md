@@ -42,7 +42,7 @@ The **\src\settings\platform.settings.json** file holds various platform setting
     "dataActionTimeoutInMs": 4000,
     "minClientChunkSize": 30000,
     "excludeModules": [ ],
-    "namespaceExtentions" : [ ],
+    "namespaceExtensions" : [ ],
     "enableChunkByModulePackage": false,
     "chunkingGroupPreference": [ ] 
 }
@@ -60,7 +60,7 @@ The **minClientChunkSize** property defines the minimum webpack JavaScript chunk
 
 The **excludedModules** property defines a set of modules that will be excluded from webpack JavaScript chunks. Commerce modules get bundled into JavaScript chunks and shipped to the browser client side, but if modules are not needed on a site they can be excluded to reduce the JavaScript chunk size and help increase the page load speed.
 
-## namespaceExtentions
+## namespaceExtensions
 
 The **namespaceExtensions** property defines the supported namespaces used for module registration. By default, the only supported namespace is the **@msdyn365-commerce-modules** namespace which contains all of the module library and core set of modules. The module package name is defined in following format: **\<namespace\>\/\<module_name\>**. If modules are published with a new namespace, the namespace can be added to the settings.
 
@@ -72,13 +72,28 @@ When the Commerce e-commerce runtime loads a page, all JavaScript chunks contain
 
 ## chunkingGroupPreference
 
-The **chunkingGroupPreference** property is used to specify sets of modules that will be grouped together into a webpack chunk when the **enableChunkByModulePackage** property is set to **true**. The default chunking logic is to group modules from the same package into the same chunk. In the case where the same module name exists in different namespaces, the module namespace can be used to specify the module name (for example, **[\<namespace\>\/<module_name1\>, module_name2]**). The namespace used for local modules is **\_\_local\_\_**. 
+The **chunkingGroupPreference** property is used to specify sets of modules that will be grouped together into a webpack chunk when the **enableChunkByModulePackage** property is set to **true**. The default chunking logic is to group modules from the same package into the same chunk. In the case where the same module name exists in different namespaces, the module namespace can be used to specify the module name (for example, **[\<namespace\>\/<module_name1\>, \<module_name2\>]**). The namespace used for local modules is **\_\_local\_\_**. 
     
 For example, if module1 and module2 will always be used at the same time on the same page, module1 and module2 can be added to one chunk group to avoid being split between two different chunks. In this example module1 and module2 will be sent to a browser client in a single JavaScript chunk, instead of potentially multiple JavaScript chunks containing other unused modules.  
 
 > [!NOTE]
-> Depending on the **minCLientChunkSize** setting, other modules may be automatically merged into a defined chunking group.
+> Depending on the **minClientChunkSize** setting, other modules may be automatically merged into a defined chunking group.
 
 ## Additional resources
 
+[Request properties object](request-properties-object.md)
+
+[App settings](app-settings.md)
+
+[Extend a module definition file](extend-module-definition.md)
+
+[Cookie API overview](cookie-api-overview.md)
+
+[Interactive components overview](interactive-components.md)
+
+[Mock the signed-in state during local development](mock-sign-in.md)
+
+[Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)
 
