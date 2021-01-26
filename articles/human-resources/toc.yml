@@ -85,7 +85,7 @@
         href: hr-admin-integration-throttling-faq.md
       - name: Configure Dataverse integration
         href: hr-admin-integration-common-data-service.md
-      - name: Dataverse entities
+      - name: Dataverse tables
         href: hr-developer-entities.md
       - name: Configure Dataverse virtual entities
         href: hr-admin-integration-common-data-service-virtual-entities.md
@@ -285,7 +285,7 @@
       href: hr-developer-overview.md
     - name: Extend with Power Apps and Power Automate
       href: hr-developer-power-apps.md
-    - name: Dataverse entities
+    - name: Dataverse tables
       href: hr-developer-entities.md
     - name: Custom fields
       href: hr-developer-custom-fields.md

@@ -35,12 +35,12 @@ ms.dyn365.ops.version: Human Resources
 
 You can add custom fields to pages in Dynamics 365 Human Resources. For more information about creating custom fields, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-Most Dataverse entities support custom fields. For a full list of Dataverse entities, see [Dataverse entities](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
+Most Dataverse tables support custom fields. For a full list of Dataverse tables, see [Dataverse tables](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
 
 Be sure to enable any custom fields that you create so you can use them in Dataverse. For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 
 ## See also
 
-[Dataverse entities](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Dataverse tables](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)

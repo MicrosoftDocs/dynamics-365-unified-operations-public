@@ -158,7 +158,7 @@ With so many different integration technologies available, deciding on which int
 | BYOD                   | Yes, scheduled by Admin in Human Resources        | Async, Batch                                | No<sup>3</sup>                                    | High (hundreds of thousands of records)                    | Supports all DMF entities           |
 | OData-enabled entities | Yes, using middleware                    | Sync                                        | Yes, through Human Resources Data Service (OData)  | Varies with use case (supports paging for interactive use) | High                                |
 | Excel Add-in           | No                                       | Sync                                        | No                                        | Medium (tens of thousands of records)                      | Supports all OData-enabled entities |
-| Data Integrator        | Yes, scheduled in Data Integrator        | Async, Batch                                | No                                        | Varies with use case                                       | Supports all Dataverse entities           |
+| Data Integrator        | Yes, scheduled in Data Integrator        | Async, Batch                                | No                                        | Varies with use case                                       | Supports all Dataverse tables           |
 
 <sup>2</sup>Microsoft is investing heavily in increasing data coverage for Dataverse tables. We recommend using Dataverse when coverage is available. Currently, Dataverse data coverage is low, compared to DMF and OData-enabled entities.
 

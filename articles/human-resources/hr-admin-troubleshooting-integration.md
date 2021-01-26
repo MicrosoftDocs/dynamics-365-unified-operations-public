@@ -89,7 +89,7 @@ passing it into the destination.
 ## Can I specify which fields to send to Finance for a specific entity?
 
 Fields can be added or removed from the integration task. Not all data fields
-that exist on the Dataverse entity will be populated from Human Resources.
+that exist on the Dataverse table will be populated from Human Resources.
 Additional data can be populated via Power Apps.
 
 ![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)
@@ -129,7 +129,7 @@ integration project in the data integration.
 
 ## I need to transfer data that is not part of the default template provided by Microsoft. Can I do this?
 
-Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other Dataverse entities. The entity must be in Dataverse for it to be included in the template. 
+Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other Dataverse tables. The entity must be in Dataverse for it to be included in the template. 
 
 ## I just created new Finance and Human Resources environments, and I'm getting the error "The data value violates integrity constraints." Why?
 

@@ -45,7 +45,7 @@ To copy an instance, keep the following tips in mind:
 
 - When you copy the Human Resources database, you don't copy the elements (apps or data) that are contained in a Microsoft Power Apps environment. For information about how to copy elements in a Power Apps environment, see [Copy an environment](https://docs.microsoft.com/power-platform/admin/copy-environment). The Power Apps environment you want to overwrite must be a sandbox environment. You must be a global tenant admin to change a Power Apps production environment to a sandbox environment. For more information about changing a Power Apps environment, see [Switch an instance](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- If you copy an instance into your sandbox environment and want to integrate your sandbox environment with Dataverse, you must reapply custom fields to Dataverse entities. See [Apply custom fields to Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- If you copy an instance into your sandbox environment and want to integrate your sandbox environment with Dataverse, you must reapply custom fields to Dataverse tables. See [Apply custom fields to Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## Effects of copying a Human Resources database
 
@@ -128,9 +128,9 @@ All non-Administrator users in the target sandbox environment are disabled to pr
 
 ## Apply custom fields to Dataverse
 
-If you copy an instance into your sandbox environment and want to integrate your sandbox environment with Dataverse, you must reapply custom fields to Dataverse entities.
+If you copy an instance into your sandbox environment and want to integrate your sandbox environment with Dataverse, you must reapply custom fields to Dataverse tables.
 
-For each custom field that's exposed on Dataverse entities, do the following steps:
+For each custom field that's exposed on Dataverse tables, do the following steps:
 
 1. Go to the custom field and select **Edit**.
 
