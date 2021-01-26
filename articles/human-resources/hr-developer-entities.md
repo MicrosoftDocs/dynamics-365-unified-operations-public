@@ -100,7 +100,7 @@ The following Human Resources entities are available as Dataverse tables.
 > [!NOTE]
 > Financial dimensions for **Position Type**, **Position Worker Assignment**, and **Employment** provide one-direction integration to Dataverse. Financial dimensions updates currently can't synchronize from Dataverse to Human Resources. 
 
-## Leave and absence entities
+## Leave and absence tables
 
 | Name | Entity |
 | --- | --- |
@@ -187,4 +187,3 @@ The following Human Resources entities are available as Dataverse tables.
 [Human Resources virtual entities FAQ](hr-admin-virtual-entity-faq.md)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
-
