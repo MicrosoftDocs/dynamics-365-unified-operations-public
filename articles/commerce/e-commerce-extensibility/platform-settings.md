@@ -54,7 +54,7 @@ The **dataActionTimeoutInMs** property defines the maximum amount of time in mil
 
 ## minClientChunkSize
 
-The **minClientChunkSize** property defines the minimum webpack JavaScript chunk size in bytes to be delivered to the browser. JavaScript chunks smaller than the minimum size will be grouped together to form chunks over the minimum size. A smaller minimum size will mean more chunks will be generated, which will offer greater code splitting and less unused JavaScript at the cost of downloading many smaller chunks. A larger minimum size will mean fewer overall chunks will be generated, which will reduce the amount of JavaScript files that need to be downloaded at the cost of potentially including some unused JavaScript code. The default value is 30000 bytes (30 KB).
+The **minClientChunkSize** property defines the minimum webpack JavaScript chunk size in bytes to be delivered to the browser. JavaScript chunks smaller than the minimum size will be grouped together to form chunks over the minimum size. A smaller minimum size will mean more chunks will be generated, which will offer greater code splitting and less unused JavaScript at the cost of downloading many smaller chunks. A larger minimum size will mean fewer overall chunks will be generated, which will reduce the number of JavaScript files that need to be downloaded at the cost of potentially including some unused JavaScript code. The default value is 30000 bytes (30 KB).
 
 ## excludedModules
 
@@ -62,7 +62,7 @@ The **excludedModules** property defines a set of modules that will be excluded 
 
 ## namespaceExtensions
 
-The **namespaceExtensions** property defines the supported namespaces used for module registration. By default, the only supported namespace is the **@msdyn365-commerce-modules** namespace which contains all of the module library and core set of modules. The module package name is defined in following format: **\<namespace\>\/\<module_name\>**. If modules are published with a new namespace, the namespace can be added to the settings.
+The **namespaceExtensions** property defines the supported namespaces used for module registration. By default the only supported namespace is the **@msdyn365-commerce-modules** namespace, which contains all of the module library and core set of modules. The module package name is defined in following format: **\<namespace\>\/\<module_name\>**. If modules are published with a new namespace, the namespace can be added to the settings.
 
 ## enableChunkByModulePackage
 
