@@ -58,10 +58,10 @@ For example, the Product service in CRT contains all the product-related request
 
 ## CRT extension patterns
 
-Before you learn about the CRT extension patterns, you should understand how a CRT extension can be created. CRT is just a collection of C# class libraries (.NET assemblies). You can create a class library project in C# and do all the CRT extension by using the patterns that are shown in the following table. Always use the samples that Microsoft provides as templates for your extension, because these samples have the correct assembly references, Microsoft .NET Framework version, output type, and build parameters. Additionally, all the other required parameters are preconfigured. You can find the CRT sample extension in the Retail software development kit (SDK), at …\\RetailSDK\\SampleExtensions\\CommerceRuntime.
+Before you learn about the CRT extension patterns, you should understand how a CRT extension can be created. CRT is just a collection of C# class libraries (.NET assemblies). You can create a class library project in C# and do all the CRT extension by using the patterns that are shown in the following subsections. Always use the samples that Microsoft provides as templates for your extension, because these samples have the correct assembly references, Microsoft .NET Framework version, output type, and build parameters. Additionally, all the other required parameters are preconfigured. You can find the CRT sample extension in the Retail software development kit (SDK), at …\\RetailSDK\\SampleExtensions\\CommerceRuntime.
 
 > [!NOTE]
-> As of version 10.0.16 of Finance and Operations apps, all CRT extension projects class library must use .NET Standard 2.0 for the target framework.
+> As of version 10.0.16 of Finance and Operations apps, all class libraries for CRT extension projects must use .NET Standard 2.0 for the target framework.
 
 ### Create a new CRT service
 
@@ -71,8 +71,8 @@ You can create new functionality or a new feature.
 
 You can completely override existing functionality or customize it according to your business flow. Here are some examples:
 
-+ You want to override the POS search functionality to search from an external system instead of searching in a local database or HQ. Alternatively, you can do an override, call the standard functionality, and do some additional custom logic.
-+ Search for a customer in a local database or HQ, search for the customer in an external system, and then merge or modify the results.
++ You want to override the POS search functionality to search from an external system instead of searching in a local database or Commerce headquarters. Alternatively, you can do an override, call the standard functionality, and do some additional custom logic.
++ Search for a customer in a local database or Commerce headquarters, search for the customer in an external system, and then merge or modify the results.
 
 Avoid overriding the handler. You can implement most of the CRT extension scenarios by using pre-triggers or post-triggers. Overrides are required only when you want to completely replace the existing functionality.
 
@@ -99,7 +99,7 @@ You can add custom properties to any CRT entity and send it to POS. Extension pr
 
 For example, you want to capture and show some additional information to the Customer entity in POS. In this case, you can add a post-trigger to fetch all your custom properties for customers, add them to the Customer entity as extension properties, and then send those extension properties to POS.
 
-You can also send extension properties from POS to CRT and store them in your custom table. Alternatively, you can do some custom logic based on those properties, or send it to HQ.
+You can also send extension properties from POS to CRT and store them in your custom table. Alternatively, you can do some custom logic based on those properties, or send it to Commerce headquarters.
 
 All CRT entities, such as products, customers, transactions, and parameters, support extension properties.
 
@@ -113,7 +113,7 @@ For details about the attributes, see the following topics:
 
 ### Extend Commerce Data Exchange - Real-time Service classes
 
-You can do synchronous call from CRT to HQ.
+You can do synchronous call from CRT to Commerce headquarters.
 
 For information about how to extend Commerce Data Exchange - Real-time service, see [Extend Commerce Data Exchange - Real-time Service](extend-commerce-data-exchange.md).
 
@@ -384,7 +384,7 @@ namespace Contoso
 
 In some cases, the request and response types are sufficient, but you must change the out-of-box service implementation logic to perform different logic, or you must integrate with an external service to perform that logic. An override of the default implementation must be done only when you want to completely replace the logic. For example, if you don't want to use the out-of-box tax implementation but want to use third-party tax logic instead, override the tax service request. Most other scenarios can be achieved by adding a pre-trigger or post-trigger to the request. Try to avoid overriding the request. When you override the request, the custom logic will be run, and you might not get the future enhancements that are done in this overridden request.
 
-Additionally, registration in the **commerceRuntime.ext.Config** file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file win.
+Additionally, registration in the **commerceRuntime.ext.Config** file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file take precedence.
 
 To override any CRT request, follow the pattern in the following example that overrides the out-of-box **CreateOrUpdateCustomerDataRequest** request.
 
@@ -562,10 +562,10 @@ One way to add new data to an existing CRT entity is to use extension properties
 
 ## Using extension properties on CRT entities with persistence
 
-Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server or CRT, the key-value pair is available during the whole flow. Additionally, if that entity is sent to during a call to Commerce Data Exchange - Real-time Service, the key-value pair is available during the process.
+Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server or CRT, the key-value pair is available during the whole flow. Additionally, if that entity is sent during a call to Commerce Data Exchange - Real-time Service, the key-value pair is available during the process.
 
 > [!NOTE]
-> For HQ, extension properties are sent only for customers and orders.
+> For Commerce headquarters, extension properties are sent only for customers and orders.
 
 However, as was mentioned earlier, the extension property doesn't persist by default. If you want an extension property to persist, you must do data modeling to ensure that you make the correct design choices about where the data should reside. We recommend that you use a new table and a join. This approach fits most requirements well. The **EmailPreference** sample in the Retail SDK provides a good end-to-end example.
 
