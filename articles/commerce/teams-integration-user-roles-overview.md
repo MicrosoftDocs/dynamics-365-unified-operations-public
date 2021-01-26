@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.18
 
 #Overview
 
-As you create a team per store (or channel) in Microsoft Teams there is a group membership created, for e.g. *HOUSTON_D365@<YourTenantAADDomain>.com* and all the store workers will be assigned with one of two user roles called *owner* and *member*.  Store employee with *owner* user role, typically a Store Manager, can do operations like adding a private channel, adding members etc. 
+As you create a team per store (or channel) in Microsoft Teams there is a group membership corresponding to the team is created, e.g. *HOUSTON_D365@<YourTenantAADDomain>.com* for Houston store team. Then all the store workers under team group membership will be assigned with one of two user roles called *owner* and *member*.  Store employee with *owner* user role, typically a Store Manager, can do operations like adding a private channel, adding members etc. 
 
 Refer to Assign team owners and members in Microsoft Teams - Microsoft Teams | Microsoft Docs to learn more. 
 
