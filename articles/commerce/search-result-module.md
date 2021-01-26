@@ -65,7 +65,7 @@ The following table lists the properties of search result modules, together with
 
 ## Supported modules
 
-The search results module supports the [Quick view module](quick-view-module.md), which allows users to view product information and add items to the cart from the search results page.
+The search results module supports the [quick view module](quick-view-module.md), which lets users view product information and add items to the cart from the search results page.
 
 ## Add a search results module to a category page
 
