@@ -75,7 +75,7 @@ To generate a SAF Accounting books file, click **General ledger > Inquiries and 
 | **Skip ZOiS part**                 | This check box is included on the report dialog in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format allows you to generate the report without **ZOiS** as part of the report. |
 | **Skip Dziennik part**                 | This check box is included on the report dialog in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format allows you to generate the report without **Dziennik** as part of the report. |
 | **Skip KontoZapis part**                 | This check box is included on the report dialog in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format to allow you to generate the report without the **KontoZapis** part of the report. |
-| **Show all dimensions**                 | This check box is included on teh report dialog in the **Ledger transactions** group starting from **version 98.59.49 of "Accounting Books (PL)**. The ER format allows you to generate the report including information about financial dimensions applied to the voucher line in the **KodKontaMa** and **KodKontaWinien** fields on the **KontoZapis** node. |
+| **Show all dimensions**                 | This check box is included on the report dialog in the **Ledger transactions** group starting from **version 98.59.49 of "Accounting Books (PL)**. The ER format allows you to generate the report including information about financial dimensions applied to the voucher line in the **KodKontaMa** and **KodKontaWinien** fields on the **KontoZapis** node. |
 
 By default, the parameter **Show all dimensions** isn't enabled. Select this check box if you want to include the financial dimensions, **KodKontaMa** and **KodKontaWinien** fields on the **KontoZapis** node. 
 
@@ -85,7 +85,7 @@ When the **Show all dimensions** check box is marked, the **KontoZapis** node sh
 
 ![KontoZapis example dimensions on](media/jpk-kr-dim-on.png)
 
-Starting from **version 98.59.49  of Accounting Books (PL)**, the ER format can generate a SAF Accounting books file. However before the file can be generated, you must complete the following additional setup:
+Starting from **version 98.59.49  of Accounting Books (PL)**, the ER format can generate a SAF Accounting books file. However before the file can be generated, you must complete the following setup:
 
 -	Set up the **TypKonta** field under the **ZOiS** node.
 -	Set up the **KodKategorii**, **OpisKategorii**, **KodPodkategorii**, **OpisPodKategorii** fields under the **ZOiS** node.
@@ -109,7 +109,7 @@ Starting from **version 98.59.49 f Accounting Books (PL)**, the ER format of the
 7.	In the **State** field, select **Completed** and save the application-specific configuration.
 
 ### KodKategorii, OpisKategorii, KodPodkategorii, and OpisPodKategorii fields
-The fields, **KodKategorii**, **OpisKategorii**, **KodPodkategorii**, and **OpisPodKategorii** under the **ZOiS** node of the report, must represent the category and subcategory according to "Zespołu Kont Syntetycznych”. To support this requirement, [consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md) were used. You can use additional consolidation account features to define category and subcategories together with their descriptions for all main accounts that will be used in the **JPK_KR** report.
+The fields, **KodKategorii**, **OpisKategorii**, **KodPodkategorii**, and **OpisPodKategorii** under the **ZOiS** node of the report, must represent the category and subcategory according to "Zespołu Kont Syntetycznych”. To support this requirement, [consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md) were used. You can use other consolidation account features to define category and subcategories together with their descriptions for all main accounts that will be used in the **JPK_KR** report.
 
 1. Go to **General ledger** > **Chart of accounts** > **Accounts** > **Consolidation account groups**.
 2. Create two new groups: one for categories and one for subcategories.
@@ -174,7 +174,7 @@ To generate a SAF Inventory file, click **General ledger > Inquiries and reports
 | **Warehouse**                | Specify the warehouse to export transactions for.                                  |
 
 ## Generate a SAF VAT sales and purchase register
-Before you can generate a SAF value-added tax (VAT) sales and purchase register, you must complete the following additional setup:
+Before you can generate a SAF value-added tax (VAT) sales and purchase register, you must complete the following setup:
 
 1. Set up sales tax authorities.
 2. Set up sales tax codes for VAT reporting.
@@ -657,7 +657,7 @@ You can specify additional selection parameters by using the **Filter** function
 
 ## Generate a SAF VAT invoices file
 
-Before you can generate a SAF VAT invoices file, you must complete the following additional setup.
+Before you can generate a SAF VAT invoices file, you must complete the following setup.
 
 1. Set up sales tax authorities.
 2. Sales tax codes for VAT reporting.
@@ -725,7 +725,7 @@ Conditions for **TaxExemptReason_LOOKUP** are sales tax exempt codes that are de
 
 - **P_19A** indicates the provision of the act was issued on the basis of which the taxpayer applies tax exemption.
 - **P_19B** indicates the provision of Directive 2006/112/EC, which exempts the supply of goods or such services from such tax.
-- **P_19C** indicates another legal basis that indicates that the supply of goods or services benefit from the exemption.
+- **P_19C** indicates another legal basis that the supply of goods or services benefits from the exemption.
 
 Specify as the last condition in the list, an **Inne** or **Other** result with the value **Not blank** in the **Tax exempt code** column.
 
@@ -749,9 +749,9 @@ When you finish configuring the values of the lookup fields, set the **State** f
 
 If any lookup field doesn't have at least one **Not blank** value, an error will occur when the report is run. The error message will state that the application-specific parameters are missing.
 
-### Generate a SAF VAT invoices
+### Generate a SAF VAT invoice
 
-To generate a SAF VAT invoices file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF VAT invoices**, and set the following parameters.
+To generate a SAF VAT invoice file, select **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF VAT invoices**, and set the following parameters.
 
 |  Parameter                   | Description                                                                            |
 |------------------------------|----------------------------------------------------------------------------------------|
