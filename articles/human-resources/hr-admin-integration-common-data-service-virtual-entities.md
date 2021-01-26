@@ -43,7 +43,7 @@ To enable CRUD operations on Human Resources entities from Dataverse, you must m
 
 All Open Data Protocol (OData) entities in Human Resources are available as virtual tables in Dataverse. They're also available in Power Platform. You can now build apps and experiences with data directly from Human Resources with full CRUD capability, without copying or synchronizing data to Dataverse. You can use Power Apps portals to build external-facing websites that enable collaboration scenarios for business processes in Human Resources.
 
-You can view the list of virtual tables enabled in the environment, and begin working with the tables in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Entities** solution.
+You can view the list of virtual tables enabled in the environment, and begin working with the tables in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Tables** solution.
 
 ![Dynamics 365 HR Virtual Entities in Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
