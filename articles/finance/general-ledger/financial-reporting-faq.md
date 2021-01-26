@@ -45,27 +45,27 @@ Solution: You can utilize Tree security to restrict access to a single report so
       i.	Click Users and Groups.  
           1.	Select the User(s) or Group that would like to access this report. 
           
-[![users](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+[![user screen](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
 
-[![security](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+[![security screen](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
 
   b.	Click **Save**.
   
-[![save](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
+[![save button](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
 
 3.	In your Report Definition add your new Tree Definition
 
-[![treedefinition](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
+[![tree definition form](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
 
 A.	While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”
 
-[![reportingunitselection](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
+[![reporting unit selection form](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
 
 **Before:**
-          [![before](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
+          [![before screenshot](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
 
 **After:**
-          [![after](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
+          [![after screenshot](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
 
 Note: Reason for the above message is my user does not have access to that report after applying Unit Security
 
@@ -80,17 +80,17 @@ When you have a report that doesn't match what you would expect in D365, here ar
 1.	Create a new Row Definition 
   a.	Click Edit | Insert Rows from Dimensions 
     i.	Select MainAccount
-        [![FR-FAQ_selectmain_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
+        [![Select Main screen_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
     
     ii.	Click Ok
   b.	Save the Row Definition
 
 2.	Create a new Column Definition
-        [![FR-FAQ_column](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
+        [![Create a new column definition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
 
 3.	Create a new Report Definition
   a.	Click Settings and uncheck 
-      [![FR-FAQ_settings](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)
+      [![Settings form](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)
    
 4.	Generate the Report. 
 
@@ -102,7 +102,7 @@ When you have a report that doesn't match what you would expect in D365, here ar
     i.	From Date: Start of Fiscal Year
     ii.	To Date: Date you generated the report for
     iii.	Financial Dimension Set “Main Account set”
-       [![FR-FAQ_mainacct](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
+       [![Main Account Form](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
       
   b.	Click Calculate
 
