@@ -44,7 +44,7 @@ You might want to turn off integration in these situations:
 
 - You're filling in data through the Data Management Framework and must import the data multiple times to get it into a correct state.
 
-- There are issues with data in either Human Resources or Dataverse. If you turn off integration, you can delete a record in one environment without deleting it in the other. When you turn integration back on, the record in the environment where it wasn't deleted sync to the environment where it was deleted. Synchronization begins the next time the **Common Data Service integration missed request sync** batch job runs.
+- There are issues with data in either Human Resources or Dataverse. If you turn off integration, you can delete a record in one environment without deleting it in the other. When you turn integration back on, the record in the environment where it wasn't deleted sync to the environment where it was deleted. Synchronization begins the next time the **Dataverse integration missed request sync** batch job runs.
 
 > [!WARNING]
 > When you turn off data integration, make sure that you don't edit the same record in both environments. When you turn integration back on, the record that you last edited will be synced. Therefore, if you didn't make the same changes to the record in both environments, data loss can occur.
@@ -130,4 +130,3 @@ To run a full synchronization on a table between Human Resources and Dataverse:
 [Human Resources virtual entities FAQ](hr-admin-virtual-entity-faq.md)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
-
