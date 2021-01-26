@@ -168,7 +168,7 @@ the execution time in Step 2.
 The integration to Finance is a two-step process. First, verify
 that the Human Resources data is updated and available in Dataverse. This is a near real-time
 sync and can be verified in Power Apps by looking at the data within the data
-entities.
+tables.
 
 ![Data in Dataverse](media/DataInCDS.png)
 
