@@ -69,15 +69,15 @@ By default, when modules are compiled the JavaScript code is randomly rouped int
 
 For example, the product details page (PDP) may render the checkout and buy box modules while the home page renders the carousel and content block modules. Random chunking logic could group the checkout and carousel modules into one chunk and the buy box and content block modules into another chunk. When rendering the PDP, the client would then need both JavaScript chunks to render the page, causing extra JavaScript to be downloaded that is not needed for that particular page.
 
-For information and instructions on enabling nonrandom JavaScript chunking, see [Platform settings file](platform-settings.md). The **enableChunkByModulePackage** property should be set to **true** and module groups can be configured in the **chunkingGroupPreference** setting in the following format: ```"chunkingPreference": [[<group1>], [<group2>]]```.
+For information and instructions on enabling nonrandom JavaScript chunking, see [Platform settings file](platform-settings.md). The **enableChunkByModulePackage** property should be set to **true** and module groups can be configured for the **chunkingGroupPreference** property setting in the following format: ```"chunkingGroupPreference": [[<group1>], [<group2>]]```.
   
 Modules that fall into the same group will be bundled together into the same chunk, as shown in the following example:
 ```json
     "enableChunkByModulePackage": true,
-    "chunkingPreference": [["module1", "module2"], ["module", "module4"]]
+    "chunkingGroupPreference": [["module1", "module2"], ["module", "module4"]]
 ```
 
-If the **chunkingPreference** settings are not set, modules from the same module package under the supported namespace will be bundled together.
+If the **chunkingGroupPreference** settings are not set, modules from the same module package under the supported namespace will be bundled together.
 
 ## Optimize images
 
