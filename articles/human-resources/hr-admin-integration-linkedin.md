@@ -131,10 +131,10 @@ After you save and close the new application user in the previous section, you'r
     - **Name**: Enter the name of the Power Apps security role that you created earlier, such as **LinkedIn Talent Hub HRIS Integration**.
     - **User ID**: Select a user who has permissions to write data in Personnel Management.
 
-### Create the entity in Dataverse
+### Create the table in Dataverse
 
 > [!IMPORTANT]
-> The integration with LinkedIn Talent Hub depends on virtual entities in Dataverse for Human Resources. As a prerequisite for this step in the setup, you must configure virtual entities. For information about how to configure virtual entities, see [Configure Dataverse virtual entities](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> The integration with LinkedIn Talent Hub depends on virtual tables in Dataverse for Human Resources. As a prerequisite for this step in the setup, you must configure virtual tables. For information about how to configure virtual tables, see [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
 1. In Human Resources, open the **Dataverse integration** page.
 
@@ -146,7 +146,7 @@ After you save and close the new application user in the previous section, you'r
 
 ## Exporting candidate records
 
-After the setup is completed, recruiters and Human resources (HR) professionals can use the **Export to HRIS** function in LinkedIn Talent Hub to export hired candidate records from LinkedIn Talent Hub to Human Resources.
+After the setup is completed, recruiters and human resources (HR) professionals can use the **Export to HRIS** function in LinkedIn Talent Hub to export hired candidate records from LinkedIn Talent Hub to Human Resources.
 
 ### Export records from LinkedIn Talent Hub
 
