@@ -43,3 +43,7 @@ What happens if a store doesn't a store managers?
 	Group will not created, means not team for the store in the Teams as well. 
 What happens if store managers leave the company?
 	Add new Store Manager in the HQ and re-provision Teams so that new manager will have required privilege's in the Teams for the group. 
+
+How to clear the graph API token stored in the session storage?
+
+User who logs in into POS with AAD account to view the tasks, should logout  from POS or close the application to invalidate the session storage. 
