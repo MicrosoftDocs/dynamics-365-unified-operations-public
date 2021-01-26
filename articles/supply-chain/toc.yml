@@ -2745,6 +2745,8 @@
           href: landed-cost/manage-folios.md
       - name: Track inbound voyages and shipping container journeys
         href: landed-cost/inbound-tracking.md
+      - name: Estimate and manage landed costs
+        href: landed-cost/estimate-manage-landed-costs.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
