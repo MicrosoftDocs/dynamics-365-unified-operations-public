@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 08/11/2020
+ms.date: 01/26/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,18 +40,26 @@ Users in legal entities in Poland can generate a Standard Audit File for Tax (SA
 ## Set up the Standard Audit File for Tax for Poland
 To specify an Electronic reporting (ER) format for each SAF-T scheme, click **General ledger > Ledger setup > General ledger parameters**, and then, on the **Standard Audit File for Taxes (SAF-T)** tab, set up a specific format for each of the following schemes:
 
--   SAF Accounting books
--   SAF Bank statements
--   SAF Inventory
--   SAF VAT sale and purchase registers
--   SAF VAT invoices
+|Parameter name                                   |  ER format name         |
+|-------------------------------------------------|-------------------------|
+| **SAF Accounting books**                        | Accounting Books (PL)   |
+| **SAF Bank statements**                         | Bank Statement (PL)     |
+| **SAF Inventory**                               | Inventory (PL)          |
+| **SAF VAT sale and purchase registers**         | VAT Register (PL)       |
+| **SAF VAT invoices**                            | VAT Invoices (PL)       |
 
 Each ER format should be predefined and can be updated in ER.
 
-### Main accounts
-In Polish SAF-T Financial data, main accounts that are used in Finance must be associated with Polish standard accounts for the purpose of SAF-T reporting. The setup required is similar to [Norwegian SAF-T Main Accounts](emea-nor-satndard-audit-file-for-tax.md#main-accounts).
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the **Issue search** tool on the [LCS portal](https://lcs.dynamics.com/v2) to find the KB by the number.
+
+> [!NOTE]
+> After all the ER configurations from the table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
+
+For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Generate a SAF Accounting books file
+An SAF Accounting books file must be provided by request. The file must include accounting data for the reporting period. The file must also include the selected posting layers for all the main accounts that have non-zero aggregated turnover or transactions during the reporting period.
+
 To generate a SAF Accounting books file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Accounting books**, and set the following parameters.
 
 |Parameter                                        |  Description            |
@@ -63,8 +71,85 @@ To generate a SAF Accounting books file, click **General ledger > Inquiries and 
 | **Should opening balance be shown by turnover** | If this parameter is selected, the opening balance is affected by the accumulated turnover. This parameter affects only the ZOiS export file part. |
 | **Separate balance**                            | This parameter can be considered for main accounts where the corresponding parameter is marked. This parameter affects only the ZOiS export file part.     |
 | **Closing transactions**                        | If this parameter is selected, closing transactions will be included in the data that is exported. This parameter affects only the ZOiS export file part. |
+| **Include Total main accounts**                 | This check box is introduced on the dialog of the report starting from **version 98.59.49 of Accounting Books (PL)**. The ER format allows you to generate the report that can include an account defined as **Total**, in the cart of accounts of the legal entity. By default, this parameter is not enabled. Select this check box if you want your JPK_KR, including total accounts, in the ZOiS part. |
+| **Skip ZOiS part**                 | This check box is introduced on the dialog of the report in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format allows you to generate the report without **ZOiS** as part of the report. |
+| **Skip Dziennik part**                 | This check box is introduced on the dialog of the report in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format allows you to generate the report without **Dziennik** as part of the report. |
+| **Skip KontoZapis part**                 | This check box is introduced on the dialog of the report under the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format to allow you to generate the report without the **KontoZapis** part of the report. |
+| **Show all dimensions**                 | This check box is introduced on the dialog of the report under the **Ledger transactions** group starting from **version 98.59.49 of "Accounting Books (PL)**. The ER format allows you to generate the report including information about financial dimensions applied to the voucher line in the **KodKontaMa** and **KodKontaWinien** fields on the **KontoZapis** node. |
 
-This regulatory report must be provided by request and includes accounting data for the reporting period. It includes accounting data in the selected posting layers for all the main accounts that have non-zero aggregated turnover or transactions during the reporting period.
+By default, the parameter **Show all dimensions** isn't enabled. Select this check box if you want to include the financial dimensions, **KodKontaMa** and **KodKontaWinien** fields on the **KontoZapis** node. 
+
+![KontoZapis example dimensions off](media/jpk-kr-dim-off.png)
+
+When the **Show all dimensions** check box is marked, the **KontoZapis** node shows all of the dimensions:
+
+![KontoZapis example dimensions on](media/jpk-kr-dim-on.png)
+
+Starting from **version 98.59.49  of Accounting Books (PL)**, the ER format can generate a SAF Accounting books file. However before the file can be generated, you must complete the following additional setup:
+
+-	Set up the **TypKonta** field under the **ZOiS** node.
+-	Set up the **KodKategorii**, **OpisKategorii**, **KodPodkategorii**, **OpisPodKategorii** fields under the **ZOiS** node.
+
+### The TypKonta field 
+The **TypKonta** field must be reported with one of the following values:
+
+- **Bilansowe**
+- **Pozabilansowe**
+- **Rozliczeniowe**
+- **Wynikowe**
+
+Starting from **version 98.59.49 f Accounting Books (PL)**, the ER format of the report introduces the possibility to define **TypKonta** depending on Main account and Main account type.
+
+1.	Go to the **Electronic reporting (ER) workspace** and select **Standard Audit File (SAF-T)** > **SAF Poland** > **Accounting Books (PL)** format in the configurations tree.
+2.	On the Action Pane, select **Configurations** > **Applications specific parameters** > **Setup**.
+3.	Select the latest version of the format.
+4.	On the **Lookups** FastTab, select **TypKontaSelector**.
+5.	On the **Conditions** FastTab, define the necessary conditions.
+6.	Add the last line with the condition, **Not blank** in the **Account ID** and **Account type** columns.
+7.	In the **State** field, select **Completed** and save the application-specific configuration.
+
+### KodKategorii, OpisKategorii, KodPodkategorii, and OpisPodKategorii fields
+The fields, **KodKategorii**, **OpisKategorii**, **KodPodkategorii**, and **OpisPodKategorii** under the **ZOiS** node of the report, must represent the category and subcategory according to "Zespołu Kont Syntetycznych”. To support this requirement, [consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md) were used. You can use additional consolidation account features to define category and subcategories together with their descriptions for all main accounts that will be used in the **JPK_KR** report.
+
+1. Go to **General ledger** > **Chart of accounts** > **Accounts** > **Consolidation account groups**.
+2. Create two new groups: one for categories and one for subcategories.
+
+    ![Consolidation account groups page](media/cons-acc-grp.png)
+
+3. Go to **General ledger** > **Chart of accounts** > **Accounts** > **Additional consolidation accounts**.
+4. Create categories and subcategories for all main accounts based on the consolidation account groups created in step 2. 
+
+For categories, specify value that must be reported in the **KodKategorii** field of the report in the **Consolidation account** column and description. The value must also be reported in the **OpisKategorii** field of the report in the **Consolidation account name** column.
+
+For subcategories, specify value that must be reported in the **KodPodKategorii** field of the report in the **Consolidation account** column and description. The value must also be reported in the **OpisPodKategorii** field of the report in the **Consolidation account name** column.
+
+   ![Additional consolidation accounts page](media/add-cons-acc.png)
+
+5. When the setup of categories and subcategories is complete, define which consolidation accounts groups must be considered by the ER format. Open the **Electronic reporting (ER) workspace** and select **Standard Audit File (SAF-T)** > **SAF Poland** > **Accounting Books (PL)** format in the configurations tree.
+6. On the Action Pane, select **Configurations** > **Applications specific parameters** > **Setup**.
+7. Select the latest version of the format.
+8. Expand the **Lookups** FastTab and select **ConsolidationTypeSelector**.
+9. Expand the **Conditions** FastTab and define the conditions as necessary.
+10. Add the last two lines with the conditions **Not blank** and **Blank** for the **Other** lookup result.
+11.	In the **State** field, select **Completed** and save the configuration.
+
+    ![Application-specific parameter for consolidation account](media/cons-acco-app-params.png)
+
+### “RodzajDowodu” and “OpisDziennika” fields under “Dziennik” node
+“RodzajDowodu” and “OpisDziennika” fields under “Dziennik” node of the report must represent type of accounting voucher according to art. 23 ust. 2 pkt 2 UoR and journal description art. 14 ust. 3 i 4 UoR respectively. To support this requirement, new free-text application-specific parameters are introduced on the format of the report.
+
+1.	Open the **Electronic reporting (ER) workspace** and select **Standard Audit File (SAF-T)** > **SAF Poland** > **Accounting Books (PL)** format in the configurations tree.
+2.	On the Action Pane, select **Configurations** > **Applications specific parameters** > **Setup** on the Action pane.
+3.	Select the latest version of the format, and on the **Lookups** FastTab, select **RodzajDowoduSelector**.
+4.	On the **Conditions** FastTab, define the conditions as necessary. Manually specify the values in the **Lookup result** column in accordance with art. 23 ust. 2 pkt 2 UoR.
+5.	Add the last two lines with the conditions **Not blank** and **Blank**.
+
+    ![RodzajDowoduSelector application-specific parameter example](media/example-app-params-setup.png)
+
+6.	On the **Lookups** FastTab, select **OpisDziennikaSelector**.
+7.	Expand the **Conditions** FastTab and define the conditions as necessary. Manually specify the values in the **Lookup result** column in accordance with art. 14 ust. 3 i 4 UoR.
+8.	Add the last two lines with the conditions **Not blank** and **Blank**.
+9.	In the **State** field, select **Completed** and save the configuration.
 
 ## Generate a SAF Bank statement file
 To generate a SAF Bank statement file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Bank statement**, and set the following parameters.
@@ -87,8 +172,6 @@ To generate a SAF Inventory file, click **General ledger > Inquiries and reports
 | **To date**                  | Specify the last date to export reporting data for.                                |
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file. |
 | **Warehouse**                | Specify the warehouse to export transactions for.                                  |
-
-### 
 
 ## Generate a SAF VAT sales and purchase register
 Before you can generate a SAF value-added tax (VAT) sales and purchase register, you must complete the following additional setup:
@@ -676,6 +759,7 @@ To generate a SAF VAT invoices file, click **General ledger > Inquiries and rep
 | **To date**                  | Specify the last date to export reporting data for.                                    |
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file.     |
 | **Invoice ID From / To**     | Specify a range of invoice IDs to limit the invoices that are selected for data export. |
+| **Currency code**            | Specify the code of a currency for which you want to generate the report. Only invoices in the currency specified will be included into the report. Leave the parameter blank if you want to generate the file for all the currencies together in one file. |
 
 You can specify additional selection parameters by using the **Filter** functionality on the **Records to include** tab.
 
