@@ -138,7 +138,7 @@ After you save and close the new application user in the previous section, you'r
 
 1. In Human Resources, open the **Dataverse integration** page.
 
-2. Select the **Virtual entities** tab.
+2. Select the **Virtual tables** tab.
 
 3. Filter the entity list by entity label to find **LinkedIn exported candidate**.
 
