@@ -182,7 +182,7 @@ Grant permissions for the two Azure AD applications in Human Resources:
 3. Select **New** to create a second application record:
 
     - **Client Id**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Name**: Dynamics 365 HR Virtual Entity
+    - **Name**: Dynamics 365 HR Virtual Table
     - In the **User ID** field, select the user ID of a user with admin permissions in Human Resources and the Power Apps environment.
 
 ## Generate virtual tables
