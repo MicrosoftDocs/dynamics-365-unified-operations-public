@@ -194,7 +194,7 @@ When setup completes, you can select the virtual tables you want to generate and
 2. Select the **Virtual tables** tab.
 
 > [!NOTE]
-> The **Enable the virtual entity** toggle will be set to **Yes** automatically when all required setup has been completed. If the toggle is set to **No**, review the steps in previous sections of this document to ensure all prerequisite setup is completed.
+> The **Enable virtual tables** toggle will be set to **Yes** automatically when all required setup has been completed. If the toggle is set to **No**, review the steps in previous sections of this document to ensure all prerequisite setup is completed.
 
 3. Select the table or tables you want to generate in Dataverse.
 
