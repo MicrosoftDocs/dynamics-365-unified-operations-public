@@ -80,12 +80,4 @@ The **Overview** tab shows a list of all of the activities that belong to the **
 
 ## Information and settings on the General tab
 
-The **General** tab shows more information about the leg previously selected on the **Overview** tab. It repeats some information from the Overview tab and also provides additional information about the selected leg.
-<!-- KFM: There are many fields that are not described here. Add them and follow up with Natalie. -->
-
-| Setting | Description |
-| --- | --- |
-| **Start date** | This is normally the estimated start date for the activity but once the previous activity's actual end date has been entered this would become the actual started tracking date. This is used to determine the estimated end date based on the lead time. |
-| **Estimated end date** | This is not normally adjusted; it comes from the start date and lead time. |
-| **Actual end date** | This should be updated as soon as possible once the activity has occurred. The actual lead time is then updated. |
-| **Actual days** | Actual number of days for this activity. |
+The **General** tab shows more information about the leg previously selected on the **Overview** tab. It repeats some information from the **Overview** tab and also provides additional information about the selected leg.
