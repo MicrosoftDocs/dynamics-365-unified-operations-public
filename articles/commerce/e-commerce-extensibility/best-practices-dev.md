@@ -47,7 +47,7 @@ The [Dynamics 365 Commerce ecosystem](../commerce-architecture.md) comprises var
 
 The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built using the [yarn msdyn365 pack](cli-command-reference.md#pack) command, or the Node server is started on a local development environment using the [yarn start](setup-dev-environment.md#run-your-node-app) command, the TypeScript and SCSS files will compile down to JavaScript and Cascading Style Sheets (CSS) files, respectively. These files are also minified to reduce network bandwidth.
 
-You should ensure that extra, unused JavaScript and CSS files are not included in your extension package. Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript. Refer to the [Tools for performance analysis](#tools-for-performance-analysis) section laster in this document to find a list of tools that can help you measure page load times and can help in identifying problem areas with CSS and JavaScript.
+You should ensure that extra, unused JavaScript and CSS files are not included in your extension package. <!--Some tools are listed at the bottom of this document to help measure page load times and can help in identifying problem areas with CSS and JavaScript. Refer to the [Performance analysis](#performance-analysis) to find a list of tools that can help you measure page load times and can help in identifying problem areas with CSS and JavaScript.-->
 
 ### Reduce JavaScript by excluding unused modules
 
@@ -65,7 +65,7 @@ You can verify that the module was successfully excluded by comparing the chunk 
 
 ### JavaScript chunking
 
-By default, when modules are compiled the JavaScript code is randomly rouped into different webpack chunks. This may not be optimal since the JavaScript chunks served to a client browser may contain JavaScript for modules that are not used on a particular page. By customizing the JavaScript chunking, the chunk size sent to a client can be reduced to improve page load times.
+By default, when modules are compiled the JavaScript code is randomly grouped into different webpack chunks. This may not be optimal since the JavaScript chunks served to a client browser may contain JavaScript for modules that are not used on a particular page. By customizing the JavaScript chunking, the chunk size sent to a client can be reduced to improve page load times.
 
 For example, the product details page (PDP) may render the checkout and buy box modules while the home page renders the carousel and content block modules. Random chunking logic could group the checkout and carousel modules into one chunk and the buy box and content block modules into another chunk. When rendering the PDP, the client would then need both JavaScript chunks to render the page, causing extra JavaScript to be downloaded that is not needed for that particular page.
 
