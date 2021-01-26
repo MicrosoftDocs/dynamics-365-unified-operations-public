@@ -53,7 +53,7 @@ The following features are included in this release. Some of the listed features
 
 -  [Freeze columns in grids](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=401bfbbc-6150-eb11-a813-000d3a8faea9&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)<br>- For more information, see [Grid capabilities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities).
 
--  [Updates to client feature states](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=0b3c7aaf-3851-eb11-a813-000d3a8faea9&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)<br>- See the release plan entry for more details on the client features that were turned on by default or made mandatory with this release. 
+-  [Updates to client feature states](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=0b3c7aaf-3851-eb11-a813-000d3a8faea9&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)<br>- See the release plan for more details on the client features that were turned on by default or made mandatory with this release. 
 
 -  View Independent software vendor (ISV) license status.<br>- It is now possible to view status and expiration dates for ISV licenses. For more information, see [View Independent software vendor (ISV) license status](articles/fin-ops-core/dev-itpro/sysadmin/View-ISV-license-status.md).
 
