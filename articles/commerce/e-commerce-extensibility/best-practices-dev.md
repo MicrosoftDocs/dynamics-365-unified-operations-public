@@ -5,7 +5,7 @@ title: Best practices for Dynamics 365 Commerce development
 description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
 manager: annbe
-ms.date: 01/07/2021
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Best practices for Dynamics 365 Commerce development 
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations.
 
@@ -63,20 +64,20 @@ Modules can be excluded by adding the module name to the **excludeModules** prop
 You can verify that the module was successfully excluded by comparing the chunk size displayed after a build, or by testing the module in a development environment. For the latter method, you can confirm that the excluded module is not rendered by using the URL `http://localhost:4000/modules?type=<your-module-name>` (after running the Node server by using the "yarn start" command).
 
 ### JavaScript chunking
-By default, when modules are compiled, the JavaScript code is grouped into different webpack chunks randomly.  This may not be the optimal since the JavaScript chunks served to a client browser may contain JavaScript for modules that are not used on a particular page.  By customizing the JavaScript chunking, the chunk size sent to a client can be reduced improving load time of a page.
 
-As an example, the product details page (PDP) may render the checkout and buybox modules and the homepage a carousel and content block module.  Random chunking logic could group the checkout and carousel together into a chunk and the buybox and content block module in another chunk.  When rendering the PDP, the client would need both JavaScript  chunks to render the page causing extra JavaScript to be downloaded to the browser not needed for the particular page.
+By default, when modules are compiled the JavaScript code is randomly rouped into different webpack chunks. This may not be optimal since the JavaScript chunks served to a client browser may contain JavaScript for modules that are not used on a particular page. By customizing the JavaScript chunking, the chunk size sent to a client can be reduced to improve page load times.
 
-To enable non random chunking see the [platform settings file](platform-settings.md) for details. The **enableChunkByModulePackage** property should be set to **true** and module groups can be configured in the **chunkingGroupPreference** setting in the following format: ```"chunkingPreference": [[<group1>], [<group2>]]```.
+For example, the product details page (PDP) may render the checkout and buy box modules while the home page renders the carousel and content block modules. Random chunking logic could group the checkout and carousel modules into one chunk and the buy box and content block modules into another chunk. When rendering the PDP, the client would then need both JavaScript chunks to render the page, causing extra JavaScript to be downloaded that is not needed for that particular page.
+
+For information and instructions on enabling nonrandom JavaScript chunking, see [Platform settings file](platform-settings.md). The **enableChunkByModulePackage** property should be set to **true** and module groups can be configured in the **chunkingGroupPreference** setting in the following format: ```"chunkingPreference": [[<group1>], [<group2>]]```.
   
-Modules that fall into the same group will be bundled together into the same chunk as shown in the below example:
+Modules that fall into the same group will be bundled together into the same chunk, as shown in the following example:
 ```json
     "enableChunkByModulePackage": true,
     "chunkingPreference": [["module1", "module2"], ["module", "module4"]]
 ```
 
-If the **chunkingPreference** settings is not set, modules from the same module package (under the supported namespace) will be bundled together.
-
+If the **chunkingPreference** settings are not set, modules from the same module package under the supported namespace will be bundled together.
 
 ## Optimize images
 
@@ -141,8 +142,7 @@ Adding meta tags to a page can be done in Commerce site builder using the **Meta
 
 ## Performance analysis
 
-It is very important to ensure an e-Commerce site pages are tested for performace before going live.  This can be done with a wide array of existing web page performance testing tools.  At a minimum using a web browser **F12** tool can be used to examine the network loads for an individual parts of a page.  This can help find any performance bottlenecks for further investigation.
-
+It is very important to ensure that e-commerce site pages are performance tested before going live. This can be done with a wide array of existing web page performance testing tools. At a minimum, you can use web browser **F12** development tools to examine the network loads for individual parts of a page, which can help identify any performance bottlenecks for further investigation.
 
 ## Restrict your e-commerce website from loading inside external website HTML iframe elements
 
