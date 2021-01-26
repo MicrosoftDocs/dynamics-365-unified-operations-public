@@ -72,17 +72,17 @@ The following table describes the actions available on the **Manage** tab of the
 | **Documents received** | Updates the voyage to set **Documents received** to *Yes*. This can lock the item and/or purchase line for further updates. |
 | **In transit** | Updates the **Voyage status** to the in-transit status established in the **[Landed cost parameters](landed-cost-parameters.md)**. There is no further logic on this process. A voyage can also be automatically updated to the in-transit status based on settings on the **[Tracking control center](delivery-information-setup.md)**.
 | **Ready for costing** | Updates the **Voyage status** to the costed status established in the **[Landed cost parameters](landed-cost-parameters.md)**. A voyage can be costed when all the invoices have been processed (both stock invoices and voyage cost invoices) and the goods have been received. If the estimated costs associated with a voyage have not been costed, an error will occur when attempting to process the costing of a voyage. |
-| **Costed** | Cleans up any costing irregularities once an invoice exists for all purchase orders and voyage costs. On selecting this action, the **Voyage update - Costed** dialog box opens, where you can set a few options and then run the action. <!-- KFM: It would be nice to describe these options (**Use financial date** and **Posting date**) -->  You can rerun this any number of times, without limit. You can also use the **Voyage update - Costed** dialog box to establish a schedule to run this action as a periodic task (batch job). We recommend using this function regularly by setting it up as a batch job. |
+| **Costed** | Cleans up any costing irregularities once an invoice exists for all purchase orders and voyage costs. On selecting this action, the **Voyage update - Costed** dialog box opens, where you can choose whether to post on the standard financial date, or to instead specify a posting date, and then run the action. You can rerun this any number of times, without limit. You can also use the **Voyage update - Costed** dialog box to establish a schedule to run this action as a periodic task (batch job). We recommend using this function regularly by setting it up as a batch job. |
 | **Post receipts list** | Posts a receipts list for all purchase order lines within the voyage. If multi-company voyages are used, a new receipts list posting form will open per company and must be processed within each legal entity. |
 | **Post product receipt** | Posts a product receipt for all purchase order lines within the voyage. The product receipt process for the purchase order lines associated with a voyage will be used *only* if the goods will *not* be going through the goods-in-transit process. If the goods are to go through the goods-in-transit process, the system will error out when attempting to post the product receipt for a purchase order line. If multi-company voyages are used, a new delivery note posting form will open per company. |
 | **Post invoice** | Posts an invoice for all purchase order lines within the voyage. If the goods on the voyage are to go through goods-in-transit processing, the purchase order lines will be invoiced before the receiving process is done. Invoicing the original purchase order will create the goods in transit orders associated with the original purchase order lines, which can then be received by the warehouse. If multi-company shipments are used, a new invoice posting form will open per company. |
-| **Ship transfer order** | Posts a transfer order voyage <!-- KFM: is "voyage" the right word here? (receipt?) --> for all transfer order lines within the voyage. Only transfer orders will be available for update when this option is selected. |
+| **Ship transfer order** | Posts a transfer order voyage for all transfer order lines within the voyage. Only transfer orders will be available for update when this option is selected. |
 | **Receive transfer order** | Posts a transfer order receipt for all transfer order lines within the voyage |
 | **Receive goods in transit** | Receives all order lines that are in transit within the voyage. This is one of three available options for receiving goods in transit on a voyage (the others are to use the **Create arrival journal** action described later in the table, or to use the warehouse app). This is the most simple option and will process the goods-in-transit goods out of the goods-in-transit warehouse and into the final destination warehouse. If you would like greater control over the process, use the arrival journal or a mobile device to process the receipt of goods. |
 | **Find auto costs** | Finds relevant voyage costs. If these have already been found or updated, the system will show the message "Un-invoiced cost lines exist. Do you want to overwrite them?" This will find any costs that were not associated with the voyage at the time of creation. Voyage costs that are attached to a voyage and invoiced will not be overwritten. |
-| **Create arrival journal** | Opens the **Create arrival journal** dialog box, which lets you create an arrival journal that specifies a location. The dialog box provides the following options:<ul><li>**Create from goods in transit** or **Create from transfer order**: The label for this option changes depending on whether you are using the goods-in-transit process. Set this option to *Yes* to open an arrival journal form that lets you process a standard Supply Chain Management arrival journal for the goods in transit associated with the voyage. If the item has already been received into the final destination warehouse, it will not be added to the arrival journal lines. <!-- KFM: Is this description correct? It doesn't make any sense to me. --></li><li>**Initialize quantity**: <!-- KFM: Description needed. --> (We recommend that you enable this option.)</li><li>**Create from order lines**: <!-- KFM: Description needed. --></li></ul><p>This is one of three available options for receiving goods on a voyage (the others are to use the **Receive goods in transit** action described previously in the table, or to use the warehouse app). <!-- KFM: We can set up a batch job here. We should mention this option and why we might want to do it. --> |
-| **Accrue costs** | It is possible to accrue costs where a cost type has a ledger account specified for the debit. This is normally used when the stock is in transit or goods have been received and invoiced. <!-- KFM: This isn't clear. What happens when I select this? --> |
-| **Aggregate costs** | Moves costs from the shipping container level to the voyage level. For example, you might typically use this in a shared services/shipping scenario where multiple entities are sharing a shipping container/carton space. Assume the voyage has a 40' shipping container and a 20' shipping container, and the apportionment method is by volume. The goods/entities that are sharing or using the space in the 20' shipping container may be being penalized. To fairly distribute, some organizations may want to transfer the costs to the voyage and distribute. <!-- KFM: Fairly distribute what? I don't understand this example, is it helping? -->|
+| **Create arrival journal** | Opens the **Create arrival journal** dialog box, which lets you create an arrival journal that specifies a location. The dialog box provides the following options:<ul><li>**Create from goods in transit** or **Create from transfer order**: The label for this option changes depending on whether you are using the goods-in-transit process. Set this option to *Yes* to open an arrival journal form that lets you process a standard arrival journal for the goods in transit associated with the voyage. If the item has already been received into the final destination warehouse, it will not be added to the arrival journal lines. </li><li>**Initialize quantity**: Initializes the quantity that will be received based on the the quantities of goods specified on the voyage line. If the voyage line has been partially received, this will be the remaining quantity. (We recommend that you enable this option.)</li><li>**Create from order lines**: The value is taken from the order lines.</li></ul><p>This is one of three available options for receiving goods on a voyage (the others are to use the **Receive goods in transit** action described previously in the table, or to use the warehouse app). |
+| **Accrue costs** | It is possible to accrue costs where a cost type has a ledger account specified for the debit. This is normally used when the stock is in transit or goods have been received and invoiced. |
+| **Aggregate costs** | Moves costs from the shipping container level to the voyage level. For example, you might typically use this in a shared services/shipping scenario where multiple entities are sharing a shipping container/carton space. Assume the voyage has a 40' shipping container and a 20' shipping container, and the apportionment method is by volume. The goods/entities that are sharing or using the space in the 20' shipping container may be being penalized. To fairly distribute the costs, some organizations may want to transfer the costs to the voyage and distribute based on the voyage level apportionment method. |
 | **Change journey template** | Opens a dialog box that lets you change the journey template. After you change the template, the voyage voyage costs will be deleted, so you may need to run the **Find auto costs** action (described previously in this table) or to manually add costs once again. |
 
 ### The General tab of the Action Pane
@@ -102,17 +102,17 @@ The following table describes the actions available on the **General** tab of th
 
 To open the **Lines** view, open a voyage and then select the **Lines** tab at the top-right part of the voyage heading.
 
+### The voyage header FastTab
+
+This FastTab contains basic information that describes the voyage. Many of the settings here are repeated on the **Header** view, as described in the next section.
+
+### The Voyage lines FastTab
+
 The **Voyage lines** FastTab relates to the voyage details and costing information that applies at a voyage level. Here, the shipping containers, folios, and items attached to the voyage are visible and available for review. The price and quantity of the items on the voyage are also visible here. You can view any listed shipping container or folio by selecting the relevant link.
 
-<!--KFM: A very large number of fields and FastTabs are not being described here. Do we really want to leave all of these undocumented? -->
+### The Line details FastTab
 
-### Field descriptions
-
-| **Setting** | **Description** |
-| --- | --- |
-| **Measurement** | This allows for a measurement to be specified within Landed cost. This is often used by organizations that do not know the individual volume/weight of the goods but they require a more accurate apportionment than amount or quantity. The freight forwarder will supply them with the weight or cubic measurement, which they place at either an item level or purchase order level. It can be automatically updated if the parameter is selected or manually input. <!--KFM: This field accepts a decimal  number. I don't understand how this description applies. --> |
-| **Measurement unit** | The unit of measure tht applies to the number in the **Measurement** field |
-| **Number of pallets** | The number of pallets is automatically updated if the parameter is selected. <!--KFM: I don't understand this. --> |
+The **Line details** FastTab provides more information about the line currently selected in the **Voyage lines** FastTab. Note that this FastTab includes details about the **Position** each line occupies in the container, and its **Declared quantity**.
 
 ## The Header view
 
@@ -125,21 +125,21 @@ The following table describes the settings available on the **General** FastTab 
 | **Setting** | **Description** |
 | --- | --- |
 | **Voyage** | Enter the voyage or flight number |
-| **Booking reference** | <!-- KFM: Description needed --> |
+| **Booking reference** | If your shipper or shipping enter provides a reference number (their internal reference) to identify the voyage, enter it here. |
 | **Vessel** | The vessel is selected or entered in this field. Even though it is a drop-down field it allows free text within it. If the vessel is not listed in the drop-down and the user must enter free text for the vessel ID, it does not update the main table for future selection. |
-| **External voyage ID** | <!-- KFM: Description needed --> |
+| **External voyage ID** | Enter the publicly available ID for the voyage (such as a flight number). |
 | **Master air waybill/Bill of lading** | Enter the master air waybill or bill of lading number. You can specify this when shipping by air. |
 | **House air waybill/Bill of lading** | Enter the house air waybill or bill of lading to be specified against the shipping container. |
-| **Rental** | <!-- KFM: Description needed --> |
+| **Rental** | Select this check box to indicate the container is a rental, which must be returned. |
 | **Description** | Enter a description of the voyage to make it easier to recognize. |
 | **Voyage status** | Shows the status of the voyage. Values include *Created*, *In transit*, *Documents received*, and *Costed*. This field isn't calculated based on logic and is only updated via the posting action. The *Costed* value means that an invoice for the stock and all voyage costs have been received. Without an invoice, a voyage can't get the status *Costed*. |
-| **Purchase order status** | <!-- KFM: Description needed --> |
-| **Documents received** | <!-- KFM: Description needed --> |
+| **Purchase order status** | Shows the highest status of that all the purchase orders associated with this voyage have achieved. |
+| **Documents received** | Indicates whether your company has received all the documents associated with this voyage. You can change this value by opening the **Manage** tab on the Action Pane and the, from the **Voyage update** group, select **Documents received**. |
 | **Shipping company** | Select the shipping company for this voyage, this can be used to determine auto-costs |
-| **Name** | <!-- KFM: Description needed --> |
-| **Measurement** | The measurement can be selected or automatically updated depending on the parameter setting. <!-- KFM: More info needed. Measurement of what? --> |
-| **Measurement unit** | Unit of measure relating to the **Measurement**. |
-| **Number of pallets** | The number of cartons is automatically updated if the parameter is selected. <!-- KFM: This doesn't seem like the right description. --> |
+| **Name** | Shows the name of the company selected in the **Shipping company**     field. |
+| **Measurement** | This allows for a measurement to be specified within auto cost. This is often used by organizations that do not know the individual volume/weight of the goods but they require a more accurate apportionment than amount or quantity. The freight forwarder will supply them with the weight or cubic measurement, which they place at either an item level or purchase order level. It can be automatically updated if the parameter is selected or manually input. |
+| **Measurement unit** | The unit of measure tht applies to the number in the **Measurement** field |
+| **Number of pallets** | Specify the number of pallets on the voyage line. This is automatically updated if the **Automatically update number of cartons** parameter is set to *Yes* on the **General** tab of the **Landed cost parameters** page. |
 
 ### The Delivery FastTab of the Header view
 
@@ -151,18 +151,18 @@ The following table describes the settings available on the **Delivery** FastTab
 | **Ex-factory date** | This date selects the earliest ex-factory date from the purchase orders that are linked to the voyage. The **Ex-factory date** field is available from the purchase order header and is updated using the tracking control feature. |
 | **Ship date** | The estimated date that the plane or vessel leaves the point of origin. |
 | **Departure date** | The departure date is usually the date the plane or vessel actually leaves the overseas port. The **Ship date** and **Departure date** do not have to be the same. This date is informational only and is not used to estimate the expected delivery date. The tracking control feature is used to estimate the expected delivery date and this field can be set up to be populated automatically by the tracking control feature. |
-| **In to store date** | This date selects the earliest in to store date from the purchase orders that are linked to the voyage. <!-- KFM: What does "in to store date" mean? -->|
+| **In to store date** | This date selects the earliest date that the goods from the purchase orders that are linked to the voyage will be available for sale. |
 | **Estimated delivery date** | This is usually the date that the goods are due to arrive in the warehouse. This date is informational only and is not used in master planning for goods. The expected delivery date on the purchase order line is used for master planning for goods on a voyage and is updated using the tracking control feature. This field can be set up to be populated by the tracking control feature. |
 | **Actual delivery date** | The earliest delivery date based on the goods that are linked to the voyage. |
-| **ETA at shipping port** | <!-- KFM: Description needed --> |
+| **ETA at shipping port** | Enter the date that you expect the voyage will arrive at the shipping port (as provided by your shipping agent). |
 | **Original documents received** | Enter the date original documents were received. |
 | **Broker advised** | Enter the date broker was advised. |
 | **Original bill of lading sent** | Enter the date that the original bill of lading was sent. |
 | **Goods released** | Enter the date goods were released from customs. |
-| **Customer appointment** | Enter the customer appointment date. <!-- KFM: What does this mean? --> |
+| **Customer appointment** | Enter the customer appointment date, which is the date that you expect your customer to take ownership of the goods. |
 | **Delivered at warehouse** | Enter the date goods were delivered to the warehouse. |
-| **Verification date** | Enter the verification date. <!-- KFM: What does this mean? --> |
-| **Delivery instructions** | Enter the delivery instructions. <!-- KFM: This is a date field. What does this mean? --> |
+| **Verification date** | Enter the verification date. |
+| **Delivery instructions** | Enter the date that the delivery instructions were received. |
 | **Mode of delivery** | This field serves two purposes. It provides information regarding the method by which the voyage is delivered and the cost selection of auto costs associated with that delivery method. |
 | **From port** | The shipping port the voyage departs from. |
 | **To port** | The shipping port the voyage arrives at. It is possible for the shipping containers to have different ports because the ship may stop at multiple ports. By verifying the **To port** at the shipping container level, it will provide an accurate port detail for each shipping container on a voyage. The auto cost associated with the freight is determined based on the combination of the shipping container type, the **To port** and the **From port**. |
@@ -178,6 +178,6 @@ The following table describes the settings available on the **Other** FastTab of
 | **Setting** | **Description** |
 | --- | --- |
 | **Remarks** | Enter additional information relating to the voyage. |
-| **Valuation date** | Select the earliest ex-factory from the purchase orders that are linked to the voyage. <!-- KFM: What is an "ex-factory"? Is this really the right description? -->|
+| **Valuation date** | Select the earliest ex-factory date for the purchase orders that are linked to the voyage. |
 | **Pending voyage** | <!-- KFM: Description needed --> |
-| **Renaming shipping containers** | <!-- KFM: Description needed --> |
+| **Renaming shipping containers** | For voyages with more than one container, this shows how many containers have yet to be received. |
