@@ -228,6 +228,6 @@ If needed, you can dismiss a candidate after hiring them. For example, a candida
 
 ## See also
 
-[Configure Dataverse virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organize your workforce](hr-personnel-departments-jobs-positions.md)<br>
 [Set up the components of a job](hr-personnel-jobs.md)
