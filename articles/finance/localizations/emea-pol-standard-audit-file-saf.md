@@ -38,7 +38,7 @@ Users in legal entities in Poland can generate a Standard Audit File for Tax (SA
 Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This document provides information about the formats for Poland. This document refers to functionality that has not yet been released.
 
 ## Set up the Standard Audit File for Tax for Poland
-To specify an Electronic reporting (ER) format for each SAF-T scheme, click **General ledger > Ledger setup > General ledger parameters**, and then, on the **Standard Audit File for Taxes (SAF-T)** tab, set up a specific format for each of the following schemes:
+To specify an Electronic reporting (ER) format for each SAF-T scheme, go to **General ledger > Ledger setup > General ledger parameters**. On the **Standard Audit File for Taxes (SAF-T)** tab, set up a specific format for each of the following schemes:
 
 |Parameter name                                   |  ER format name         |
 |-------------------------------------------------|-------------------------|
@@ -50,7 +50,7 @@ To specify an Electronic reporting (ER) format for each SAF-T scheme, click **Ge
 
 Each ER format should be predefined and can be updated in ER.
 
-Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the **Issue search** tool on the [LCS portal](https://lcs.dynamics.com/v2) to find the KB by the number.
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article. The article explains the changes introduced in the configuration version. Use the **Issue search** tool on the [LCS portal](https://lcs.dynamics.com/v2) to find the KB by the number.
 
 > [!NOTE]
 > After all the ER configurations from the table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
@@ -71,11 +71,11 @@ To generate a SAF Accounting books file, click **General ledger > Inquiries and 
 | **Should opening balance be shown by turnover** | If this parameter is selected, the opening balance is affected by the accumulated turnover. This parameter affects only the ZOiS export file part. |
 | **Separate balance**                            | This parameter can be considered for main accounts where the corresponding parameter is marked. This parameter affects only the ZOiS export file part.     |
 | **Closing transactions**                        | If this parameter is selected, closing transactions will be included in the data that is exported. This parameter affects only the ZOiS export file part. |
-| **Include Total main accounts**                 | This check box is introduced on the dialog of the report starting from **version 98.59.49 of Accounting Books (PL)**. The ER format allows you to generate the report that can include an account defined as **Total**, in the cart of accounts of the legal entity. By default, this parameter is not enabled. Select this check box if you want your JPK_KR, including total accounts, in the ZOiS part. |
-| **Skip ZOiS part**                 | This check box is introduced on the dialog of the report in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format allows you to generate the report without **ZOiS** as part of the report. |
-| **Skip Dziennik part**                 | This check box is introduced on the dialog of the report in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format allows you to generate the report without **Dziennik** as part of the report. |
-| **Skip KontoZapis part**                 | This check box is introduced on the dialog of the report under the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format to allow you to generate the report without the **KontoZapis** part of the report. |
-| **Show all dimensions**                 | This check box is introduced on the dialog of the report under the **Ledger transactions** group starting from **version 98.59.49 of "Accounting Books (PL)**. The ER format allows you to generate the report including information about financial dimensions applied to the voucher line in the **KodKontaMa** and **KodKontaWinien** fields on the **KontoZapis** node. |
+| **Include Total main accounts**                 | This check box is included on the report dialog starting from **version 98.59.49 of Accounting Books (PL)**. The ER format allows you to generate the report that can include an account defined as **Total**, in the cart of accounts of the legal entity. By default, this parameter is not enabled. Select this check box if you want your JPK_KR, including total accounts, in the ZOiS part. |
+| **Skip ZOiS part**                 | This check box is included on the report dialog in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format allows you to generate the report without **ZOiS** as part of the report. |
+| **Skip Dziennik part**                 | This check box is included on the report dialog in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format allows you to generate the report without **Dziennik** as part of the report. |
+| **Skip KontoZapis part**                 | This check box is included on the report dialog in the **REPORT PARTS** group starting from **version 78.45.25 of Accounting Books (PL)**. The ER format to allow you to generate the report without the **KontoZapis** part of the report. |
+| **Show all dimensions**                 | This check box is included on teh report dialog in the **Ledger transactions** group starting from **version 98.59.49 of "Accounting Books (PL)**. The ER format allows you to generate the report including information about financial dimensions applied to the voucher line in the **KodKontaMa** and **KodKontaWinien** fields on the **KontoZapis** node. |
 
 By default, the parameter **Show all dimensions** isn't enabled. Select this check box if you want to include the financial dimensions, **KodKontaMa** and **KodKontaWinien** fields on the **KontoZapis** node. 
 
