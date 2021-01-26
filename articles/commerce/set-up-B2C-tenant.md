@@ -38,7 +38,7 @@ This topic describes how to set up your Azure Active Directory (Azure AD) busine
 Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentication flows. A user can sign up, sign in, and reset their password through these flows. Azure AD B2C stores sensitive user authentication information, such as username and password. The user record in the B2C tenant will store either a B2C local account record or a B2C social identity provider record. These B2C records will link back to the customer record in the Commerce environment.
 
 >[!WARNING]
->Legacy AAD B2C User Flows will be depricated by August 1, 2021. All user flows should be migrated to their Recommended version. More information can be referenced in the information note within the 'User flows' section of your AAD B2C Tenant in the Azure Portal. The Dynamics 365 Commerce **10.0.15 or higher module library** should be utilized with the Recommended B2C User Flows.
+>Legacy AAD B2C User Flows will be depricated by **August 1, 2021**. All user flows should be migrated to their Recommended version. More information can be referenced in the information note within the 'User flows' section of your AAD B2C Tenant in the Azure Portal. The Dynamics 365 Commerce **10.0.15 or higher module library** should be utilized with the Recommended B2C User Flows.
  
  >[!NOTE]
  >Dynamics 365 Commerce 'Evaluation' environments come with a pre-loaded AAD B2C tenant for demonstration purposes. Loading your own AAD B2C Tenant per the below steps is not required for the Evaluation environments.
