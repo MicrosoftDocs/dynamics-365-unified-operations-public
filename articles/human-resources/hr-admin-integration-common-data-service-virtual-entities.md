@@ -121,7 +121,7 @@ Install the Dynamics 365 HR Virtual Entity app in your Power Apps environment to
 
 The install takes a few minutes. When it completes, continue to the next steps.
 
-![Install the Dynamics 365 HR Virtual Entity app from the Power Platform admin center](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
 ### Configure the virtual table data source 
 
