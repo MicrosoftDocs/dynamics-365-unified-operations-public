@@ -183,7 +183,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 [Choose a data integration technology](hr-admin-integration-choose-technology.md)<br>
 [Configure Dataverse integration](hr-admin-integration-common-data-service.md)<br>
-[Configure Dataverse virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
