@@ -62,7 +62,7 @@ Follow these setup steps to enable virtual tables in your environment.
 
 ### Enable virtual tables in Human Resources
 
-First, you must enable virtual entities in the **Feature management** workspace.
+First, you must enable virtual tables in the **Feature management** workspace.
 
 1. In Human Resources, select **System administration**.
 
