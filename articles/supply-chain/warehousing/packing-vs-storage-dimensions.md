@@ -39,6 +39,13 @@ Some items are packed or stored in such a way that you may need to track physica
 
 The remainder of this topic provides a scenario that illustrates how to use this feature.
 
+## Turn on the packaging product dimensions feature
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+
+- **Module:** *Warehouse management*
+- **Feature name:** *Packaging product dimensions*
+
 ## Example scenario
 
 ### Set up the scenario
@@ -52,15 +59,16 @@ To work through this scenario using the demo records and values that are specifi
 Add a new physical dimension for a product by doing the following:
 
 1. Go to **Product information management \> Products \> Released products**.
-1. On the Action Pane, open the **Manage inventory** tab and, from the **Warehouse** group, select **Physical dimensions**.
-1. The **Physical dimensions** page opens. On the Action Pane, select **New** to add a new dimension to the grid and make the following settings for it:
-    - **Unit** - Set to *pcs*.
-    - **Height** - Change from *4* to *1*.
-    - **Type** - Change from *Storage* to *Packing*
+1. Select the product with **Item number** *A0001*.
+1. On the Action Pane, open the **Manage inventory** tab and, from the **Warehouse** group, select **Physical product dimensions**.
+1. The **Physical product dimensions** page opens. On the Action Pane, select **New** to add a new dimension to the grid and make the following settings for it:
+    - **Physical dimension type** - Set to *Packing*
+    - **Physical unit** - Set to *pcs*.
+    - **Height** - Set to *4*.
 
     Leave the other settings at their initial values.
 
-<!-- KFM: I don't see the **Type** setting. Do we need to enable something in FM? I couldn't find a likely feature name there. -->
+<!-- KFM: This seems incomplete. We have several required fields that we don't mention above. Also, the only values for physical dimension are Packing and Nested packing. Shouldn't we have one for storage? Don't we need at least two rows here, one for packing and one for storage? -->
 
 #### Create a new container type
 
