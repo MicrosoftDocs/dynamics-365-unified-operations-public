@@ -52,6 +52,8 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
         - Power Plaform admins
 
     ![Power Platform settings](media/PowerPlatformSettings.png)
+    
+    For more information, see [Use service admin roles to manage your tenant](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant).
 
 ## Set up add-ins
 
