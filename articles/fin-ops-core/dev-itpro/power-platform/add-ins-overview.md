@@ -44,7 +44,7 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
 
     ![Environment details tab](media/EnvironmentDetails.png)
     
-- Validate your Power Platform environment governance policy. You must be a **Global administrator** or **Power Platform administrator** to validate.
+- Validate your Power Platform environment governance policy. To validate, you must be a **Global administrator** or **Power Platform administrator**.
     
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
     2. Select the gear icon in the upper-right corner of the Power Platform site.
