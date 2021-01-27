@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
 
 > [!NOTE]
-> As of January 2021, reason codes are migrating to the **Personnel management** workspace instead of the **Benefits management** workspace. For more information, see [Manually migrate reason codes to Personnel management](hr-admin-integration-common-data-service.md#manually-migrate-reason-codes-to-personnel-management).
+> As of January 2021, reason codes are migrating to the **Personnel management** workspace instead of the **Benefits management** workspace. For more information, see [Manually migrate reason codes to Personnel management](hr-admin-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
 
 ## Create reason codes
 
