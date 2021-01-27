@@ -41,6 +41,9 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
 
 - Make sure that at least 1 gigabyte (GB) of Microsoft Dataverse space is available. Otherwise, setup will fail. You can view your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
 - Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** tab.
+
+    ![Environment details tab](media/Environment-details.png)
+    
 - Validate your Power Platform environment governance policy. You must be a **Global administrator** or **Power Platform administrator** to validate.
     
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
