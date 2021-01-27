@@ -123,13 +123,13 @@ Follow these steps to set up the integration.
 6. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a safe list), go to Customer Insights, and provide **View** access to the application. For instructions, see [Permissions](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
 7. On the "System administration > Setup > Key Vault parameters" in Commerce HQ, update the various fields as described below: 
 
--- Key Vault url: KeyVaultURL (from point 3 above)
--- Key Vault client: KeyVault_Access_AppID (from point 5 above)
--- Key Vault secret key: KeyVault_Access_Secret (from point 5 above)
--- Under Secrets section
--- Name: Any name e.g. CISecret
--- Description: Any value
--- Secret: vault://<Name of key vault>/<name of secret> thus it will be Vault://KeyVaultName/SecretName
+Key Vault url: KeyVaultURL (from point 3 above) <br />
+Key Vault client: KeyVault_Access_AppID (from point 5 above) <br />
+Key Vault secret key: KeyVault_Access_Secret (from point 5 above) <br />
+Under Secrets section <br />
+Name: Any name e.g. CISecret <br />
+Description: Any value <br />
+Secret: vault://<Name of key vault>/<name of secret> thus it will be Vault://KeyVaultName/SecretName <br />
 
 Once done, press Validate to ensure, the secret can be access by the Commerce application.
 8. In Commerce, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the Application ID to CI_Access_AppID (from point 1 above) and for Secret name, choose the name of the secret entered in point 7 above CISecret. Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, you will receive an error message, and this option will be set to **No**. 
