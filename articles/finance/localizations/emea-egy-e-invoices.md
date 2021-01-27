@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.17
 
 According to Egyptian legal requirements, the invoices issued for customers must be submitted to the Tax authority in an electronic format.
 The submission of electronic invoices requires the system configuration which consists of 2 parts:
-1. **Electronic invoicing add-on** configuration. Please refer to this article for details: [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
+1. **Electronic invoicing add-on** configuration. Please refer to this article for details: [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
 2. **Microsoft Dynamics 365 Finance** configuration which is covered in this article.
 
 ## Prerequisites
@@ -146,7 +146,7 @@ According to Egyptian legal requirements, products in electronic invoices must u
 ![Category hierarchy](media/emea-egy-gpc.jpg)
 
 > [!NOTE]
-> If neither GTIN nor GPC codes are defined for products then internal product numbers will be used. If no products or services are involved in invoicing (like for free text invoices, for example) then lines descriptions will be used in electronic invoices.
+> If neither GTIN nor GPC codes are defined for products then internal product numbers will be used. If no products or services are involved in invoicing (like for free text invoices, for example, or various operations in project invoices) then lines descriptions will be used in electronic invoices.
 
 ## Submit electronic invoices
 
@@ -155,5 +155,3 @@ When all the required configuration steps are completed, you can submit electron
 ## Related topics
 
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
-- [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
-- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
