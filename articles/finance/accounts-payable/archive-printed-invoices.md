@@ -66,7 +66,7 @@ Complete the following steps to configure customers data in order to activate au
 Post and print any Customer/Freetext/Project invoice for the customer configured in the previous step.
 Go to...
 
-![Posting date control](media/emea-ita-post-date-control.jpg)
+![Attachment hash number](media/attach-hash-num.jpg)
 
 > [!NOTE]
 > For some countries, .
