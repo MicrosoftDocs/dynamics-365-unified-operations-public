@@ -49,4 +49,4 @@ Global withholding tax functionality is enhanced for vendor and customer transac
 4. Refresh the page in your web browser.
 
 > [!NOTE]
-> Global withholding tax functionality can't be turned on for the following countries and regions where solutions for localized withholding tax already exist: India, Brazil, Thailand, Saudi Arabia, Ireland, and Great Britain.
+> Global withholding tax functionality can’t be turned on for countries/regions where localized withholding tax solutions already exist. These areas include but are not restricted to India, Brazil, Thailand, Saudi Arabia, Ireland, Great Britain and the United States.
