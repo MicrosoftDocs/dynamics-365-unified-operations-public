@@ -725,7 +725,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 ## Prerequisite
 
-Before you begin, go to the **General ledger parameters** page and expand the **Tax options** FastTab. In the **Special report** field group, make sure that the **Include corrections** parameter is disabled. 
+Before you begin, go to the **General ledger parameters** page and expand the **Tax options** FastTab. In the **Special report** field group, make sure that the **Include corrections** parameter isn't enabled. 
 
 ## Set up sales tax codes
 
