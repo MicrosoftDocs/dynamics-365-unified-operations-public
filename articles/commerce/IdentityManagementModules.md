@@ -36,20 +36,20 @@ ms.dyn365.ops.version:
 
 This topic covers identity management pages and modules in Microsoft Dynamics 365 Commerce. 
 
-Identity management modules are used to display elements that site users will use to interact with the identity management system that is paired to the Dynamics 365 Commerce environment. This includes pages for sign-in, sign-up, password reset, and profile edit. These pages are built in Commerce, but are hosted and served from the identity provider's servers for security. Commerce modules are configured by default to work with Azure Active Directory (Azure AD) business-to-consumer (B2C) as the identity provider. These modules can be seen in Commerce site builder under the 'AzureActiveDirectoryModules' category in the module picker.
+Identity management modules display elements that e-commerce site users use to interact with the identity management system associated with the Dynamics 365 Commerce environment. This includes pages for sign-in, sign-up, password reset, and profile edit. These pages are built in Commerce, but are hosted and served from the identity provider's servers for security. Commerce modules are configured by default to work with Azure Active Directory (Azure AD) business-to-consumer (B2C) as the identity provider. These modules can be seen in Commerce site builder under the "AzureActiveDirectoryModules" category in the module picker.
 
-To set up these pages in Azure AD B2C, see [Set up custom pages for user sign-ins](custom-pages-user-logins.md).
+To set up identity management pages in Azure AD B2C, see [Set up custom pages for user sign-ins](custom-pages-user-logins.md).
 
 > [!WARNING] 
-> Please note that Azure AD B2C will be retiring legacy user flows as noted in the User Flows page in the Azure AD B2C resource in Azure Portal. All legacy preview user flows are on a path to deprecation by August 1, 2021. Plan to migrate your preview user flows to their recommended version. This version offers you feature parity and is a home for new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). Commerce users can utilize the below identity modules from Commerce version 10.0.15 and up to use with the current Azure AD B2C Recommended user flows.
+> Please note that Azure AD B2C will be retiring legacy user flows as noted in the User Flows page in the Azure AD B2C resource in Azure portal. All legacy preview user flows are on a path to deprecation by August 1, 2021. Plan to migrate your preview user flows to their recommended version. This version offers you feature parity and is a home for new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). Commerce users can use the following identity management modules with the current Azure AD B2C recommended user flows as of the Commerce version 10.0.15 release.
 
 ## Sign-up page
 
-The sign-up page includes the form elements for an end user to complete the sign-up flow. The user will provide an email address for their username. The module allows for the Azure AD B2C email verification flow, triggering the 'send code' and input for the received security pin to be input. Information collected in the sign-in page is used to create a record in Azure AD B2C as well as a customer record in Commerce.
+The sign-up page includes the form elements for a site user to complete the sign-up flow. The user provides an email address to use as their username. The module allows for the Azure AD B2C email verification flow, triggering the 'send code' and input for the received security pin to be input. Information collected in the sign-in page is used to create a record in Azure AD B2C as well as a customer record in Commerce.
 
 ## Sign-in page
 
-The sign-in page includes the form elements for an end user to sign-in to their account. The sign-in page is combined with the buttons to navigate to the sign-up page experience; pairing directly with the 'Sign up and sign in' user flow in Azure AD B2C.
+The sign-in page includes the form elements for a site user to sign in to their account. The sign-in page is combined with the buttons to navigate to the sign-up page experience; pairing directly with the 'Sign up and sign in' user flow in Azure AD B2C.
 
 ## Password reset pages
 
