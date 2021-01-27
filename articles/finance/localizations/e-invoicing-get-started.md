@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-# Get started with the Electronic invoicing add-on
-
 This topic provides information that help you get started with
 Electronic invoicing add-on.
 
@@ -123,13 +121,13 @@ provider. For more information, see [Create configuration provider and
 mark them as
 active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11)
 
-1.  Select a **Feature setup**.
+4.  Select a **Feature setup**.
 
-2.  Select a **Connected application.**
+5.  Select a **Connected application.**
 
-3.  In **Electronic document types** field group, click **Add**.
+6.  In **Electronic document types** field group, click **Add**.
 
-4.  Repeat for each business document the Feature name supports, select and enter the **Table name** according to the 
+7.  Repeat for each business document the Feature name supports, select and enter the **Table name** according to the 
     the table below:
 
 | **Feature name**                      | **Business document** | **Table name** |
@@ -153,7 +151,7 @@ active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/ana
 | PEPPOL electronic invoice             | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
 
 
-1.  In **Context**, repeat for each business document the Feature name supports, select and enter the **Context** according to the 
+8.  In **Context**, repeat for each business document the Feature name supports, select and enter the **Context** according to the 
     the table below:
 
 | **Feature name**                      | **Business document** | **Context** |
@@ -177,7 +175,7 @@ active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/ana
 | PEPPOL electronic invoice             | Sales invoice</br>Project invoice | Customer invoice context model – Customer invoice context</br>Customer invoice context model – Project invoice context |
 
 
-1.  In **Business document mapping**, repeat for each business document the Feature name supports, select and enter the **Business document mapping** according to the 
+9.  In **Business document mapping**, repeat for each business document the Feature name supports, select and enter the **Business document mapping** according to the 
     the table below:
 
 | **Feature name**                      | **Business document** | **Business document mapping** |
@@ -201,7 +199,7 @@ active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/ana
 | PEPPOL electronic invoice             | Sales invoice</br>Project invoice | Invoice model mapping – Customer invoice</br>Invoice model mapping – Project invoice |
 
 
-1.  Depending on the Country/region, the Electronic invoicing feature
+10.  Depending on the Country/region, the Electronic invoicing feature
     can require additional configurations. See the Get started
     documentation available for your country/region for specific steps.
 
@@ -268,7 +266,7 @@ active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/ana
 | PEPPOL electronic invoice             | Europe | EUR-00023 |
 
 
-1.  Click **Save.**
+5.  Click **Save.**
 
 # Issue electronic invoices
 
@@ -286,15 +284,15 @@ active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/ana
 Note: It must be one the table names entered in section **Configure the
 Application setup.**
 
-1.  Select the **Field** name from the table you want to query.
+6.  Select the **Field** name from the table you want to query.
 
-2.  Type the **Criteria** to query the table name and field name.
+7.  Type the **Criteria** to query the table name and field name.
 
-3.  Repeat to add more **Field and Criteria** to the query.
+8.  Repeat to add more **Field and Criteria** to the query.
 
-4.  When done, click **OK.**
+9.  When done, click **OK.**
 
-5.  Click **OK.**
+10.  Click **OK.**
 
 # View submission logs
 
@@ -307,11 +305,11 @@ Application setup.**
 Note: It must be one the table names entered in section **Configure the
 Application setup.**
 
-1.  Select an invoice listed in the grid.
+3.  Select an invoice listed in the grid.
 
-2.  Click **Inquire &gt; Submission details.**
+4.  Click **Inquire &gt; Submission details.**
 
-3.  Depending on the Country/region, the Electronic invoicing feature
+5.  Depending on the Country/region, the Electronic invoicing feature
     can require additional configurations. See the Get started
     documentation available for your country/region for specific steps.
 
