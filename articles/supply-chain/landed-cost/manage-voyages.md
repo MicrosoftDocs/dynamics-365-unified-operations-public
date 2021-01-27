@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Manage voyages
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A voyage typically represents a vessel but, depending on your own practices and procedures, it could be a vendor, a purchase order, or some other item that makes sense for your organization.
 
@@ -181,3 +180,14 @@ The following table describes the settings available on the **Other** FastTab of
 | **Valuation date** | Select the earliest ex-factory date for the purchase orders that are linked to the voyage. |
 | **Pending voyage** | <!-- KFM: Description needed --> |
 | **Renaming shipping containers** | For voyages with more than one container, this shows how many containers have yet to be received. |
+
+## Voyage update periodic tasks
+
+The Landed cost module includes several voyage-related periodic tasks that can bulk update any of several different aspects of voyages. You can run or schedule them by expanding **Landed cost > Periodic tasks > Voyage updates** in the side navigator and then selecting the type of task. The tasks are:
+
+- **Documents received**
+- **In transit**
+- **Ready for costing**
+- **Costed**
+
+<!-- KFM: It would be nice to provide a short description of each of the above, unless they are entirely obvious based on their names. -->

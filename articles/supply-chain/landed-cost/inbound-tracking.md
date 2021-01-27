@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Track inbound voyages and shipping container journeys
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Use the **Inbound tracking** page to track the progress of your voyages and shipping container journeys. Each voyage and journey is broken down by *activities*, each of which has its own row on this page. Use it to view and enter estimated dates and actual dates by activity. Depending on your [Tracking control center](delivery-information-setup.md#tracking-control-center) setup, these activities will normally automatically show the estimated landing date at the final destination. Again, depending on the setup, the final date will usually also update the purchase order line delivery date or confirmed date. For transfer order lines, you can set up the system to update the receipt date.
 

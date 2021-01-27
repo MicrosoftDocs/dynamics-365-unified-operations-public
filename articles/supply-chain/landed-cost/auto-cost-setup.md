@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Auto costs setup
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Use the **Auto costs** page to set up cost rules for various cost areas (such as voyage, shipping container, folio, purchase order, item, or transfer order line). Based on the rules, and the fields selected when creating records for one of these cost areas, the system will calculate the cost and add it automatically. These rules eliminate the need for the user to manually add a cost.
 
