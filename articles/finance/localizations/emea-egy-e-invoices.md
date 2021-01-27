@@ -128,7 +128,7 @@ Complete the following steps to configure Electronic document property type reqi
 4. In **Value** section, in **Value** column, enter an external code which will be used for the selected unit according to the official codification for [Unit Types](https://sdk.sit.invoicing.eta.gov.eg/codes/unit-types/).
 
 ## Configure Products
-According to Egyptian legal requirements, products in electronic invoices must use either GTIN codes or GPC level 4 (brick level) codes.
+According to Egyptian legal requirements, products in electronic invoices must use either GTIN codes or GS1 - Global Product Classification (GPC) level 4 (brick) codes.
 
 ### Enter GTIN number
 1. Go to **Product information management** > **Products** > **Released products**.
