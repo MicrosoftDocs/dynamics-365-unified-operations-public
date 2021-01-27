@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on
 description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 10/08/2020
+ms.date: 01/27/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,11 +33,9 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that help you get started with
-Electronic invoicing add-on.
+This topic provides information that help you get started with Electronic invoicing add-on.
 
-The table below shows the name of electronic invoicing features and over
-which business documents they are applicable.
+The following table lists the electronic invoicing features and the business documents to which they can be applied.
 
 | **Feature name**                      | **Business document**   |
 |---------------------------------------|-------------------------|
@@ -62,97 +60,60 @@ which business documents they are applicable.
 
 # Prerequisites
 
-Before you complete the steps in this topic, you must have the following
-prerequisites in place:
+Before you complete the steps in this topic, you must have the following prerequisites in place:
 
--   Configured your RCS and your Dynamics 365 Finance or Dynamics 365
-    Supply Chain Management for submitting to Electronic invoicing
-    add-on.
-
--   Created and published a service environment into Electronic
-    invoicing add-on.
-
--   Created a connected application.
-
--   For more information, see [Get started with the Electronic invoicing
-    add-on service
-    administration](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/e-invoicing-GA-docs/articles/finance/localizations/e-invoicing-get-started-service-administration.md).
-
--   Created a configuration provider for your organization. For more
-    information, see [Create configuration provider and mark them as
-    active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11)
+- Configure your Regulatory Configuration Service (RCS) and your Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment so that you can submit to the Electronic invoicing add-on.
+- Create and publish a service environment into the Electronic invoicing add-on.
+- Create a connected application. For more information, see [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md).
+- Create a configuration provider for your organization. For more information, see [Create configuration provider and mark them as active.](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 # Import the Electronic invoicing feature from Microsoft Configuration provider 
 
-1.  Sign in to your LCS account.
+1. Sign in to your LCS account.
+2. In the **Globalization feature** workspace, in the **Features** section, select the **e-Invoicing** tile.
+3. Select **Import** and then select **Synchronize**.
+4. Filter the column **Configuration provider** by **Microsoft**.
+5. Select a feature name from one of countries/regions listed above, and then select **Import**.
 
-2.  In the **Globalization feature** workspace, in the **Features**
-    section, select the **e-Invoicing** tile.
+# Configure the Electronic invoicing feature
 
-3.  Click **Import.**
-
-4.  Click **Synchronize.**
-
-5.  Filter the column **Configuration provider** by Microsoft.
-
-6.  Select a feature the name of the feature (from one of country/region
-    listed above).
-
-7.  Click **Import.**
-
-# Configure Electronic invoicing feature
-
-1.  Depending on the Country/region, the Electronic invoicing feature
-    can require additional configurations. See the Get started
-    documentation available for your country/region for specific steps.
+- Depending on the country/region, the Electronic invoicing feature may require additional configurations. See the Get started documentation available for your country/region for specific steps.
 
 # Configure the Application setup
 
-1.  Select the Electronic invoicing feature you imported.
+1. Select the Electronic invoicing feature you imported.
+2. Select the **Version** tab and verify that the **Draft** version is selected.
+3. On the **Setups** tab, select **Application setup**.
 
-2.  Click on **Version** tab.
+    > [!NOTE]
+    > Verify that your organization is set as the **Active** configuration provider. For more information, see [Create configuration provider and mark them as active.](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-3.  Make sure the **Draft** version is selected.
+4. Select **Feature setup** and then select **Connected application**.
+5. In **Electronic document types** field group, select **Add**.
+6. For each business document the feature name supports, select and enter the **Table name** according to the following table.
 
-4.  Click on **Setups** tab, then click on **Application setup.**
-
-Note: make sure your organization is set as Active as configuration
-provider. For more information, see [Create configuration provider and
-mark them as
-active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11)
-
-4.  Select a **Feature setup**.
-
-5.  Select a **Connected application.**
-
-6.  In **Electronic document types** field group, click **Add**.
-
-7.  Repeat for each business document the Feature name supports, select and enter the **Table name** according to the 
-    the table below:
-
-| **Feature name**                      | **Business document** | **Table name** |
-|---------------------------------------|-------------------------|-------------------------|
-| Austrian electronic invoices (AT)     | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| Belgian electronic invoice (BE)       | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| Brazilian NF-e (BR)                   | Fiscal document</br>Correction letter | Fiscal document |
-| Brazilian NFS-e ABRASF Curitiba (BR)  | Service Fiscal document | Fiscal document |
-| Brazilian NFS-e São Paulo (BR)        | Service Fiscal document | Fiscal document |
-| Danish electronic invoice (DK)        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| Egyptian electronic invoice (EG)      | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| Estonian electronic invoice (EE)      | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| Finish electronic invoice (FI)        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| French electronic invoice (FR)        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| German electronic invoice (DE)        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| FatturaPA (IT)                        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| Mexican CFDI Interfactura (MX)        | Sales invoice</br>Packing slip</br>Inventory transfer</br>Payment complement | Customer invoice journal |
-| Dutch electronic invoice (NL)         | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| Norwegian electronic invoice (NO)     | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| Spanish electronic invoice (ES)       | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
-| PEPPOL electronic invoice             | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | **Feature name**                      | **Business document** | **Table name** |
+    |---------------------------------------|-------------------------|-------------------------|
+    | Austrian electronic invoices (AT)     | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | Belgian electronic invoice (BE)       | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | Brazilian NF-e (BR)                   | Fiscal document</br>Correction letter | Fiscal document |
+    | Brazilian NFS-e ABRASF Curitiba (BR)  | Service Fiscal document | Fiscal document |
+    | Brazilian NFS-e São Paulo (BR)        | Service Fiscal document | Fiscal document |
+    | Danish electronic invoice (DK)        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | Egyptian electronic invoice (EG)      | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | Estonian electronic invoice (EE)      | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | Finish electronic invoice (FI)        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | French electronic invoice (FR)        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | German electronic invoice (DE)        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | FatturaPA (IT)                        | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | Mexican CFDI Interfactura (MX)        | Sales invoice</br>Packing slip</br>Inventory transfer</br>Payment complement | Customer invoice journal |
+    | Dutch electronic invoice (NL)         | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | Norwegian electronic invoice (NO)     | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | Spanish electronic invoice (ES)       | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
+    | PEPPOL electronic invoice             | Sales invoice</br>Project invoice | Customer invoice journal</br>Project invoice |
 
 
-8.  In **Context**, repeat for each business document the Feature name supports, select and enter the **Context** according to the 
-    the table below:
+7.  In the **Context** field, select and enter the **Context** according to the following table. Repeat for each business document the feature name supports.
 
 | **Feature name**                      | **Business document** | **Context** |
 |---------------------------------------|-----------------------|-------------------------|
@@ -175,8 +136,7 @@ active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/ana
 | PEPPOL electronic invoice             | Sales invoice</br>Project invoice | Customer invoice context model – Customer invoice context</br>Customer invoice context model – Project invoice context |
 
 
-9.  In **Business document mapping**, repeat for each business document the Feature name supports, select and enter the **Business document mapping** according to the 
-    the table below:
+8. In the **Business document mapping** field,  select and enter the **Business document mapping** according to the following table. Repeat for each business document the feature name supports.
 
 | **Feature name**                      | **Business document** | **Business document mapping** |
 |---------------------------------------|-------------------------|-----------------------------|
@@ -199,51 +159,26 @@ active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/ana
 | PEPPOL electronic invoice             | Sales invoice</br>Project invoice | Invoice model mapping – Customer invoice</br>Invoice model mapping – Project invoice |
 
 
-10.  Depending on the Country/region, the Electronic invoicing feature
-    can require additional configurations. See the Get started
-    documentation available for your country/region for specific steps.
+Depending on the Country/region, the Electronic invoicing feature can require additional configurations. See the Get started documentation available for your country/region for specific steps.
 
 # Deploy the Electronic invoicing feature
 
-1.  On tab **Versions,** select the Version of the Electronic invoicing
-    feature you want to deploy.
+1. On tab **Versions,** select the version of the Electronic invoicing feature you want to deploy.
+2. Select **Change status** > **Complete**.
+3. Select **Change status** > **Publish**.
+4. Select **Deploy**.
+5. Set the toggle **Deploy to connected application** to **Yes**.
+6. On **Connect application**, select the connection associated to your instance of Finance or Supply Chain Management.
+7. Set the toggle **Deploy to service environment** to **Yes**.
+8. In the **Service environment** field, select the Electronic invoicing add-on service environment where you want to deploy the electronic invoicing feature.
+9. In the **From date** field, select the date that the Electronic invoicing feature must become effective in the Electronic invoicing add-on.
+10. Select **OK**.
 
-2.  Click on **Change status**, and select **Complete.**
+# Turn on the Electronic invoicing feature in Finance or Supply Chain Management
 
-3.  Click on **Change status** and select **Publish**.
-
-4.  Click on **Deploy.**
-
-5.  Set the toggle **Deploy to connected application** to Yes.
-
-6.  On **Connect application**, select the connection associated to your
-    instance of Dynamics 365 Finance or Dynamics 365 Supply Chain
-    Management.
-
-7.  Set the toggle **Deploy to service environment** to Yes.
-
-8.  On **Service environment**, select the Electronic invoicing add-on
-    service environment you want to deploy the electronic invoicing
-    feature.
-
-9.  On **From date**, select the date the Electronic invoicing feature
-    must become effective in Electronic invoicing add-on.
-
-10. Click **OK**.
-
-# Turn on the Electronic invoicing feature in Dynamics 365 Finance or Dynamics 365 Supply Chain Management
-
-1.  Sign in to Dynamics 365 Finance or Dynamics 365 Supply Chain
-    Management
-
-2.  Make sure you are in the proper **Legal entity**.
-
-3.  Go to **Organization administration &gt; Setup &gt; Electronic
-    document parameters**.
-
-4.  On **Features** tab, select the **Feature reference** given by the
-    table below to turn on the Electronic invoicing feature on the in
-    Dynamics 365 Finance or Dynamics 365 Supply Chain Management side
+1. Sign in to Finance or Supply Chain Management and verify that you are in the correct legal entity.
+2. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
+3. On the **Features** tab, select a feature reference listed in the following to turn on the Electronic invoicing feature on for Finance or Supply Chain Management.
 
 | **Feature name**                      | **Country/Region** | **Feature reference** |
 |---------------------------------------|-------------------------|-------------------------|
@@ -266,52 +201,34 @@ active.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/ana
 | PEPPOL electronic invoice             | Europe | EUR-00023 |
 
 
-5.  Click **Save.**
+4. Select **Save.**
 
 # Issue electronic invoices
 
-1.  Go to **Organization administration &gt; Periodic &gt; Electronic
-    documents &gt; Submit electronic documents.**
+1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Submit electronic documents**.
+2. Expand the **Record to include** FastTab and select **Filter**.
+3. Select **Add** to add a table name to the query filter.
+4. Select the table that contains the invoices.
 
-2.  Expand **Record to include** fast tab.
+    > [!NOTE]
+    > The table name must be listed in the table provided in the **Configure the Application setup** section in this topic.
 
-3.  Click on **Filter**.
-
-4.  If you want to add a table name to the query filter, click **Add.**
-
-5.  Select the **Table** that contains the invoices.
-
-Note: It must be one the table names entered in section **Configure the
-Application setup.**
-
-6.  Select the **Field** name from the table you want to query.
-
-7.  Type the **Criteria** to query the table name and field name.
-
-8.  Repeat to add more **Field and Criteria** to the query.
-
-9.  When done, click **OK.**
-
-10.  Click **OK.**
+5. Select the **Field** name from the table you want to query.
+6. Enter the table name and field name for the criteria to query on.
+7. Repeat steps 5 and 6 to add more fields and criteria to the query and then select **OK**.
+8. Select **OK**.
 
 # View submission logs
 
-1.  Go to **Organization administration &gt; Periodic &gt; Electronic
-    documents &gt; Electronic document submission log.**
+1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**.
+2. In the **Document type** field, select the table that contains the invoices.
 
-2.  In **Document type**, select the **Table** that contains the
-    invoices.
+   > [!NOTE]
+   > The table name must be listed in the table provided in the **Configure the Application setup** section in this topic.
 
-Note: It must be one the table names entered in section **Configure the
-Application setup.**
+3. Select an invoice listed in the grid and then select **Inquire** > **Submission details**.
 
-3.  Select an invoice listed in the grid.
-
-4.  Click **Inquire &gt; Submission details.**
-
-5.  Depending on the Country/region, the Electronic invoicing feature
-    can require additional configurations. See the Get started
-    documentation available for your country/region for specific steps.
+Depending on the country/region, the Electronic invoicing feature can require additional configurations. See the Get started documentation available for your country/region for specific steps.
 
 ## Related topics
 
