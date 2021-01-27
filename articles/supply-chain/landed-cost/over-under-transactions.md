@@ -1,14 +1,43 @@
+---
+# required metadata
+
+title: Over/under transactions
+description: When processing orders in a voyage, the system expects that the exact number of goods outlined on the purchase order lines associated with the voyage will be received into the final destination warehouse for the consumption. In reality, the exact number of items listed on the purchase order line is not always received into the warehouse. Therefore, the Landed cost module defines a set of rules on how to handle the over and under receiving of goods.
+author: RichardLuan
+manager: tfehr
+ms.date: 01/13/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: ITMContainerActivityTable
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: riluan
+ms.search.validFrom: 2021-01-13
+ms.dyn365.ops.version: Release 10.0.17
+---
+<!-- KFM: Continue here -->
 # Over/under transactions
 
-When processing orders in a voyage, the voyage expects that the exact number of goods outlined on the purchase order lines associated will be received into the final destination warehouse for the consumption. In reality, the exact number of items listed on the purchase order line is not always received into the warehouse. With that, Landed cost needed to define a set of rules on how to handle the over and under receiving of goods, particularly as the original purchase order has been invoiced and can no longer be modified. By setting up details regarding over and under transaction policies in Landed cost, the system will determine how to manage the over and under processing of goods at the time of receiving.
+[!include [banner](../includes/banner.md)]
 
-Additionally, users can manage the over and under inventory manually through the **Over/under transactions** page in Landed cost (see also [Process over/under transactions](#_Process_over/under_transactions)).
+When processing orders in a voyage, the system expects that the exact number of goods outlined on the purchase order lines associated with the voyage will be received into the final destination warehouse for the consumption. In reality, the exact number of items listed on the purchase order line is not always received into the warehouse. Therefore, the Landed cost module defines a set of rules on how to handle the over and under receiving of goods, particularly as the original purchase order has been invoiced and can no longer be modified. By setting up details regarding over and under transaction policies in Landed cost, the system will determine how to manage the over and under processing of goods at the time of receiving. You can also manage the over and under inventory manually using the **Over/under transactions** page.
 
 ## Over/under tolerances
 
 Set over and under delivery tolerances to identify an over or under outside of this tolerance. These tolerances are used to identify what level of over and under quantities or volumes are allowed to process on a voyage without error. If the voyage line receipt is outside of this tolerance, it must be modified and resolved before the voyage line can be closed for further processing.
 
-To configure the tolerances, go to Landed cost \> Over/ **u** nder **s** etup \> Over/under tolerances. Here, you can view, edit, add, and remove tolerance records. The following table summarizes the settings available for each record.
+To configure the tolerances, go to **Landed cost \> Over/under setup \> Over/under tolerances**. Here, you can view, edit, add, and remove tolerance records. The following table summarizes the settings available for each record.
 
 | **Field** | **Description** |
 | --- | --- |

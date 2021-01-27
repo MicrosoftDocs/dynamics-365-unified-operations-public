@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # In-transit processing
 
+[!include [banner](../includes/banner.md)]
+
 This topic describes how to work with in-transit orders, which are a type of order only used by the Landed cost module. When an order or voyage is set to use goods in transit processing, you don't need to wait for goods to be received into the warehouse before you can invoice them. Instead, the goods are invoiced at the time they leave the vendor's warehouse or port of origin and the financial costs are recognized at the time the voyage begins. This lets you take ownership of inventory correctly, as goods are often the property of your organization from the time they leave the shipping port. With goods in transit orders, the financially updated items are received into an in-transit warehouse. The goods will stay in this warehouse until they can be received at the final destination warehouse, and can't be removed manually.
 
 As long as the items are in transit, they are not available in inventory and can't be picked from inventory for a delivery. However, you can view the goods in transit inventory and can those goods for master planning, using the confirmed delivery date on the purchase order line as the expected date the inventory will be available for consumption.
