@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with the Electronic invoicing add-on service administration
-description: This topic explains how to get stared with the electronic invoicing add-on. 
+title: Get started with Electronic invoicing add-on service administration
+description: This topic explains how to get started with the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
 ms.date: 01/22/2021
@@ -29,51 +29,49 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with the Electronic invoicing add-on service administration
+# Get started with Electronic invoicing add-on service administration
 
 [!include [banner](../includes/banner.md)]
 
 ## Prerequisites
 
-Before you complete the steps in this topic, you must have the following prerequisites in place:
+Before you complete the procedures in this topic, the following prerequisites must be in place:
 
-   - Access to your LCS account.
-   - An LCS project that includes Dynamics 365 Finance and Dynamics 365 Supply Chain Management:
-    
-        - Version 10.0.13 or later
-        - Deployed in one of those Azure geographies:
-             - East US
-             - West US
-             - North EU
-             - West EU
+- You must have access to your Microsoft Dynamics Lifecycle Services (LCS) account.
+- You must have an LCS project that includes version 10.0.13 or later of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
 
-   - Access to your RCS account
-   - Activate the Globalization feature for your RCS account through the Feature management module. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md).
-   - Create a key vault resource and a storage account in Azure. For more information, see [Create Azure Storage Account and Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+    - East US
+    - West US
+    - North EU
+    - West EU
 
-## Install the add-on for microservices in Lifecycle Services 
+- You must have access to your Dynamics 365 Regulatory Configuration Services (RCS) account.
+- You must activate the Globalization feature for your RCS account in Feature management. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md).
+- You must create a key vault and a storage account in Azure. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
-1. Sign in to your Lifecycle Services (LCS) account.
-2. Select the **Preview feature management** tile and in the **Public Preview Features** field group, select **e-Invoicing service.**
-3. Make sure the toggle **Preview feature enabled** is set to **Yes**.
+## Install the add-on for microservices in Lifecycle Services
 
-## Set up the RCS integration parameters with Electronic invoicing add-on 
+1. Sign in to your LCS account.
+2. Select the **Preview feature management** tile.
+3. In the **Public Preview Features** section, select **e-Invoicing service**.
+4. Make sure that the **Preview feature enabled** option is set to **Yes**.
+
+## Set up the parameters for RCS integration with the Electronic invoicing add-on
 
 1. Sign in to your RCS account.
-2. In the **Electronic reporting** workspace, in the **Related links** section, select the **Electronic reporting parameters** link.
-3. On the **e-Invoicing service** tab, in the **Service endpoint URI** field, type the service end point according to your Azure geography as shown in the table below:
+2. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting parameters**.
+3. On the **e-Invoicing service** tab, in the **Service endpoint URI** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
 
-|  Datacenter Azure geography      | Service endpoint URI                                                       |
-|----------------------------------|----------------------------------------------------------------------------|
-| East US                          | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| West US                          | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| North EU                         | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| West EU                          | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/ `|
+    | Datacenter Azure geography | Service endpoint URI                                                       |
+    |----------------------------|----------------------------------------------------------------------------|
+    | East US                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
+    | West US                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
+    | North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
+    | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
-4. In the **Application Id** field, verify that it shows the ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
-5. In the **LCS Environment Id** field, type the ID of your LCS subscription account.
-6. Select **Save** and then close the page.
-
+4. Verify that the **Application Id** field is set to **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
+5. In the **LCS Environment Id** field, enter the ID of your LCS subscription account.
+6. Select **Save**, and then close the page.
 
 ## Create an Electronic invoicing add-on environment
 
@@ -82,64 +80,65 @@ Before you complete the steps in this topic, you must have the following prerequ
 
 ## Create a service environment
 
-1. On the Action Pane select **Service environment** and then select **Key Vault parameters**.
-2. Select **New** to create a new key vault secret.
-3. In the **Name** field, type the name of the key vault secret and in the **Description** field, enter the description.
-4. In the **Key Vault URI** field, paste the secret from Azure Keyvault.
-5. In the **Certificates** section, enter all the digital certificate names and key vault secrets that are needed to establish trustable connections. Select **Add** to add a new certificate or secret.
-6. In the **Name** field, type the name of the certificate or secret and in the **Description** field, type the description.
-7. In the **Type** field, select if it is a certificate or a secret. Both sets of values are configured on the key vault resource in Azure.
-8. If your country/region-specific invoices require a chain of certificates to apply digital signatures, on the Action Pane, select **Chain of certificates**.
+1. On the Action Pane, select **Service environment**, and then select **Key Vault parameters**.
+2. Select **New** to create a key vault secret.
+3. In the **Name** field, enter the name of the key vault secret. In the **Description** field, enter a description.
+4. In the **Key Vault URI** field, paste the secret from Azure Key Vault.
+5. In the **Certificates** section, you must enter all the digital certificate names and key vault secrets that are required to establish trustable connections. Select **Add** to add a new certificate or secret.
+6. In the **Name** field, enter the name of the certificate or secret. In the **Description** field, enter a description.
+7. In the **Type** field, select whether you're creating a certificate or a secret. Both sets of values are configured on the key vault resource in Azure.
+8. If your country/region-specific invoices require a chain of certificates to apply digital signatures, select **Chain of certificates** on the Action Pane, and then follow these steps:
 
     1. Select **New** to create a chain of certificates.
-    2. In the **Name** field, enter the name of the chain of certificate and in the **Description** field, type the description.
-    3. In the **Certificates** section, select **Add** to add a new certificate to the chain.
-    4. Use **Up** or **Down** to move the position of the certificate in the chain. 
-    5. Select **Save** and then close the page.
+    2. In the **Name** field, enter the name of the chain of certificate. In the **Description** field, enter a description.
+    3. In the **Certificates** section, select **Add** to add a certificate to the chain.
+    4. Use the **Up** or **Down** button to change the position of the certificate in the chain.
+    5. Select **Save**, and then close the page.
 
-9. Close the page and then select **New** to create a new e-Invoicing environment.
-10. In the **Name** field, type the name of the e-Invoicing environment and in the **Description** field, type the description.
-11. In the **Storage SAS token secret**, select the certificate that must be use to authenticate the access to the storage account.
-12. In the **Users** section, select **Add** to the allow a user to submit electronic invoices through this environment.
-13. In the **User ID** field, enter the alias of the user and in the **Email** field, enter the user's e-mail.
-14. Select **Save**, and on the Action Pane, select **Publish** to publish the environment to the cloud. The **Status** field is changed to **Published**.
-
+9. Close the page, and then select **New** to create an e-Invoicing environment.
+10. In the **Name** field, enter the name of the e-Invoicing environment. In the **Description** field, enter a description.
+11. In the **Storage SAS token secret** field, select the certificate that must be used to authenticate access to the storage account.
+12. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment.
+13. In the **User ID** field, enter the alias of the user. In the **Email** field, enter the user's email address.
+14. Select **Save**.
+15. On the Action Pane, select **Publish** to publish the environment to the cloud. The value of the **Status** field is changed to **Published**.
 
 ## Create a connected application
 
 1. On the Action Pane, select **Connected applications**.
-2. Select **New** to create a new connected application and in the **Name** field, type the name of the application to connect.
-3. In the **Application** field, enter the URL of the Finance and Supply Chain Management environment to connect.
-4. In the **Tenant** field, type the Tenant of the Finance and Supply Chain Management environment.
+2. Select **New** to create a connected application.
+3. In the **Name** field, enter the name of the application to connect.
+4. In the **Application** field, enter the URL of the Finance and Supply Chain Management environment to connect.
+4. In the **Tenant** field, enter the tenant of the Finance and Supply Chain Management environment.
 5. Select **Save**.
-6. On the Action Pane, select **Check connection** to test the connection with the environment and then close the page. 
+6. On the Action Pane, select **Check connection** to test the connection with the environment. Then close the page.
 
 ## Link connected applications to environments
 
 1. Select **New** to assign a connected application to an environment.
-2. In the **Connected application** field, select a connected application and in the **Service environment** field, select a Service environment.
-3. Select **Save** and then close the page.
+2. In the **Connected application** field, select a connected application.
+3. In the **Service environment** field, select a service environment.
+4. Select **Save**, and then close the page.
 
 ## Set up the Electronic invoicing add-on integration in Finance and Supply Chain Management
 
 ### Turn on the Electronic invoicing add-on integration feature
 
 1. Sign in to your Finance or Supply Chain Management instance.
-2. In the **Feature management** workspace, search for the feature, **Electronic invoicing add-on integration**. If the feature isn't shown on the **Feature management** page, select **Check for updates**.
-3. Locate and select the feature, and then select **Enable now**.
+2. In the **Feature management** workspace, search for the **Electronic invoicing add-on integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
+3. Select the feature, and then select **Enable now**.
 
 ### Set up the service endpoint URL
 
-1. Go to **Organization administration** > **Setup** **Electronic document parameters**.
-2. On the **Submission service** tab, in the **Service endpoint URL** field, type the service end point according to your Azure geography as shown in the table below:
+1. Go to **Organization administration \> Setup \> Electronic document parameters**.
+2. On the **Submission service** tab, in the **Service endpoint URL** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
 
-|  Datacenter Azure geography      | Service endpoint URL                                                       |
-|----------------------------------|----------------------------------------------------------------------------|
-| East US                          | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| West US                          | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| North EU                         | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| West EU                          | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/ `|
+    | Datacenter Azure geography | Service endpoint URL                                                       |
+    |----------------------------|----------------------------------------------------------------------------|
+    | East US                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
+    | West US                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
+    | North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
+    | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
-3. In the **Environment** field, type the name of the Electronic invoicing add-on Environment.
-4. Select **Save** and then close the page.
-
+3. In the **Environment** field, enter the name of the Electronic invoicing add-on environment.
+4. Select **Save**, and then close the page.
