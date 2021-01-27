@@ -322,4 +322,3 @@ Application setup.**
 - [Get started with the Electronic invoicing add-on for Mexico](e-invoicing-mex-get-started.md)
 - [Get started with the Electronic invoicing add-on for Italy](e-invoicing-ita-get-started.md)
 - [Get started with the Electronic invoicing add-on for Egypt](e-invoicing-ita-get-started.md)
-- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
