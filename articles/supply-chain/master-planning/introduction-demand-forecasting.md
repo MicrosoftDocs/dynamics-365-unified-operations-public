@@ -37,6 +37,9 @@ Demand forecasting is used to predict independent demand from sales orders and d
 
 To generate the baseline forecast, a summary of historical transactions is passed to Microsoft Azure Machine Learning hosted on Azure. Because this service isn't shared among users, it can easily be customized to meet industry-specific requirements. You can use Supply Chain Management to visualize the forecast, adjust the forecast, and view key performance indicators (KPIs) about forecast accuracy.
 
+> [!NOTE]
+> Microsoft Azure Machine Learning Studio (classic) is required for forecast generation with machine learning. As per January 2021, available in Japan East, South Central US, Southeast Asia, West Central US, and West Europe. For updated information about current availability, see [Azure Products by Region.](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=machine-learning-studio)
+
 ## Key features of demand forecasting
 Here are some of the main features of demand forecasting:
 
