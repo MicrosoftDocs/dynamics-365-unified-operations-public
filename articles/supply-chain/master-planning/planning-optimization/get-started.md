@@ -59,6 +59,8 @@ To use Planning Optimization, install the Planning Optimization Add-in for Dynam
 > [!NOTE]
 > The requirement for Planning Optimization is an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation will not complete and you will need to cancel the installation.
 
+Before installing the Planning Optimization Add-in setup of Power Platform integration is required. For more information, see [Prerequisites for setting up add-ins](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview#prerequisites-for-setting-up-add-ins) and [Set up add-ins.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview#set-up-add-ins)
+
 1. Sign in to LCS, and open the desired environment.
 1. Go to **Full details**.
 1. Scroll down to the **Environment add-ins** FastTab.
