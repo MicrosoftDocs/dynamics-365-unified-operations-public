@@ -63,7 +63,7 @@ Complete the following steps to configure customers data in order to activate au
 3. On the **Invoice and delivery** FastTab > in the **E-INVOCE** section, select **Yes** in the **eInvoice attachment** field.
 
 ## Print invoices
-Post and print any Customer/Freetext/Project invoice for the customer configured in the previous step.
+Post and print any free text, customer, and project invoice or credit note for the customer configured in the previous step.
 Go to...
 
 ![Attachment hash number](media/attach-hash-num.jpg)
