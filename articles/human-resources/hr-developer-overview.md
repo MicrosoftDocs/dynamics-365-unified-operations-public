@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview
+title: Development overview
 description: This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
 author: andreabichsel
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Overview
+# Development overview
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview
+title: Administration overview
 description: This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Overview
+# Administration overview
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
