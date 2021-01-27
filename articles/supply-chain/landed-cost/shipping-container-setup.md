@@ -70,7 +70,7 @@ To work with shipping containers, go to **Landed cost \> Containers setup \> Shi
 
 ## Set up unit types
 
-Unit types establish additional groupings and identification methods for shipping containers. The unit type is typically used to identify the type of container that goods are packaged in, such as pallets or drums. You can select a unit type when you set up a container on the **All shipping containers** page. <!-- KFM: It seems like we don't document the All shipping containers page anywhere. Should we add that to this chapter? -->
+Unit types establish additional groupings and identification methods for shipping containers. The unit type is typically used to identify the type of container that goods are packaged in, such as pallets or drums. You can select a unit type when you set up a container on the **All shipping containers** page.
 
 Unit types are used only in Landed cost. They aren't available in TMS.
 
