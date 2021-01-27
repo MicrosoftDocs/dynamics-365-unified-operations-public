@@ -109,21 +109,29 @@ To turn on the integration of Customer Insights with Commerce, you must make sur
 
 Follow these steps to set up the integration.
 
-1. In the Azure portal, register an application. This application will be used for authentication with Customer Insights. For instructions, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
-2. Generate a secret for the application. Make a note of the secret, and keep it somewhere safe, because you will need it later. Also select the expiration duration for the secret.
+1. In the Azure portal, register a new Application and note down its Application name, Application id and Secret. This will be used for Service to Service authentication between Dynamics 365 Commerce (aka Commerce) and Customer Insights (aka CI). Please note the secret safely as it will be required to save in the Key vault. Lets assume CI_Access_name, CI_Access_AppID, CI_Access_Secret are the application name, ID and secret respectively. For more instructions, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Take steps so that you will remember to change the secret before it expires. Otherwise, the integration will unexpectedly stop.
 
-3. Create an Azure key vault, and save the application secret. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
-4. Turn on access to Azure Key Vault from Commerce. To complete this step, you must have an application ID and secret. The application can be the same application that you created in step 1, or it can be a new application. (In other words, you can use the application that you created in step 1 for both Key Vault access and Customer Insights service access, or you can create a unique application for each type of access.) For instructions, see [Store service principal credentials in Azure Stack Key Vault](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
+2. Navigate to your Customer Insights instance and search for the Name of the application created above e.g. CI_Access_name
+3. Create an Azure key vault, and note down its name and URL e.g. KeyVaultName, KeyVaultURL. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+4. Save the secret  i.e. CI_Access_Secret into the vault. When this secret is stored in the vault, this secret gets a name. Note the secret name e.g. SecretName
+5. To access this secret from Azure Key Vault, we need to create another application with an Application ID and Secret e.g. KeyVault_Access_AppID and KeyVault_Access_Secret. Note down the Secret safely as it will not be displayed again.
+6. Now we need to give permissions to this application to access the KeyVault from Commerce using API's. Navigate to Application page in Azure portal and under the "Manage" section click on "API permissions". Add the permission to access "Azure key vault". For this permission you will get to choose the "Access policy". Choose the template as "Secret management" and select Get, List, Decrypt and Encrypt options. 
 5. In Headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Commerce can access the secrets in the key vault.
 6. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a safe list), go to Customer Insights, and provide **View** access to the application. For instructions, see [Permissions](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
-7. In Commerce, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, follow these steps:
+7. On the "System administration > Setup > Key Vault parameters" in Commerce HQ, update the various fields as described below: 
 
-    1. In the **Application ID** field, enter the application ID that you used in step 1.
-    2. In the **Secret name** field, enter the name of the Key Vault secret that you created in step 5.
-    3. Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, you will receive an error message, and this option will be set to **No**.
-    4. You can have multiple environments in Customer Insights, such as test and production environments. In the **Environment instance ID** field, enter the appropriate environment.
-    5. In the **Alternate customer ID** field, enter the property in Customer Insights that is mapped to the customer account number. (In Commerce, the customer account number is the customer ID.)
-    6. The remaining three properties are the measures that will be shown on the customer card in the client book. You can select up to three measures to show on the customer card. (However, you don't have to select any measures.) As was mentioned earlier, the system shows these values first, and then it shows the values for the client book attribute group.
+-- Key Vault url: KeyVaultURL (from point 3 above)
+-- Key Vault client: KeyVault_Access_AppID (from point 5 above)
+-- Key Vault secret key: KeyVault_Access_Secret (from point 5 above)
+-- Under Secrets section
+-- Name: Any name e.g. CISecret
+-- Description: Any value
+-- Secret: vault://<Name of key vault>/<name of secret> thus it will be Vault://KeyVaultName/SecretName
+
+Once done, press Validate to ensure, the secret can be access by the Commerce application.
+8. In Commerce, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the Application ID to CI_Access_AppID (from point 1 above) and for Secret name, choose the name of the secret entered in point 7 above CISecret. Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, you will receive an error message, and this option will be set to **No**. 
+
+You can have multiple environments in Customer Insights, such as test and production environments. In the **Environment instance ID** field, enter the appropriate environment. In the **Alternate customer ID** field, enter the property in Customer Insights that is mapped to the customer account number. (In Commerce, the customer account number is the customer ID.) The remaining three properties are the measures that will be shown on the customer card in the client book. You can select up to three measures to show on the customer card. (However, you don't have to select any measures.) As was mentioned earlier, the system shows these values first, and then it shows the values for the client book attribute group.
