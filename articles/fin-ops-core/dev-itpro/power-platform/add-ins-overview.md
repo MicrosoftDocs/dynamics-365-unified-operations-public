@@ -40,7 +40,7 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
 ## Prerequisites for setting up add-ins
 
 - Make sure that at least 1 gigabyte (GB) of Microsoft Dataverse space is available. Otherwise, setup will fail. You can view your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
-- Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** tab.
+- Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** section.
 
     ![Environment details tab](media/EnvironmentDetails.png)
     
@@ -48,13 +48,16 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
     
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
     2. Select the gear icon in the upper-right corner of the Power Platform site.
-    3. For organizations that do not allow **Everyone** to create Power Platform production environments, the Finance and Operations environment administrator account must be added as the admin.
+    
+        ![Power Platform settings](media/PowerPlatformSettings.png)
+    
+- For organizations that do not allow **Everyone** to create Power Platform production environments, the Finance and Operations environment administrator account must be added as the admin.
+    
+    
         The Finance and Operations environment administrator must be added to one of the following roles. You will need a Global Administrator to perform this action.
         - Global admins
         - Dynamics 365 admins
         - Power Platform admins
-
-    ![Power Platform settings](media/PowerPlatformSettings.png)
     
     For more information, see [Use service admin roles to manage your tenant](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant).
 
