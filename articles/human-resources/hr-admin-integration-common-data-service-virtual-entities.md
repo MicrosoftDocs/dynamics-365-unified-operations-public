@@ -68,7 +68,7 @@ First, you must enable virtual tables in the **Feature management** workspace.
 
 2. Select the **Feature management** tile.
 
-3. Select **Virtual Entity support in HR/CDS**, and then select **Enable**.
+3. Select **Virtual table support for HR in Dataverse**, and then select **Enable**.
 
 For more information about enabling and disabling features, see [Manage features](hr-admin-manage-features.md).
 
@@ -113,7 +113,7 @@ Install the Dynamics 365 HR Virtual Table app in your Power Apps environment to 
 
 4. Select the **Install app** action.
 
-5. Select **Dynamics 365 HR Virtual Entity**, and select **Next**.
+5. Select **Dynamics 365 HR Virtual Table**, and select **Next**.
 
 6. Review and mark to agree to the terms of service.
 
@@ -169,7 +169,7 @@ The next step is to configure the virtual table data source in the Power Apps en
 Grant permissions for the two Azure AD applications in Human Resources:
 
 - The app created for your tenant in the Microsoft Azure portal
-- The Dynamics 365 HR Virtual Entity app installed in the Power Apps environment 
+- The Dynamics 365 HR Virtual Table app installed in the Power Apps environment 
 
 1. In Human Resources, open the **Azure Active Directory applications** page.
 
