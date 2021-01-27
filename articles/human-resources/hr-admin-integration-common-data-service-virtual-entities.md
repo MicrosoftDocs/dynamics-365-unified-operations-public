@@ -82,7 +82,7 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 3. Select **New registration**.
 
-4. In the **Name** field, enter a descriptive name for the app. For example, **Dynamics 365 Human Resources Virtual Entities**.
+4. In the **Name** field, enter a descriptive name for the app. For example, **Dynamics 365 Human Resources Virtual Tables**.
 
 5. In the **Redirect URI** field, enter the namespace URL of your instance of Human Resources.
 
