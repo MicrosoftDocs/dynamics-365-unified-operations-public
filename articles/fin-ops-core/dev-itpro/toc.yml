@@ -1506,7 +1506,7 @@
           href: sysadmin/enhanced-forms.md
         - name: Clean up the batch history
           href: sysadmin/batch-history-cleanup.md
-        - name: Abort an executing batch job
+        - name: Cancel an executing batch job
           href: sysadmin/batch-abort.md
       - name: Optimization advisor
         items:
