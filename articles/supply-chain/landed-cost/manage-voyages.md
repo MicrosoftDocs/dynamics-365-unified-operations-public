@@ -180,3 +180,14 @@ The following table describes the settings available on the **Other** FastTab of
 | **Valuation date** | Select the earliest ex-factory from the purchase orders that are linked to the voyage. <!-- KFM: What is an "ex-factory"? Is this really the right description? -->|
 | **Pending voyage** | <!-- KFM: Description needed --> |
 | **Renaming shipping containers** | <!-- KFM: Description needed --> |
+
+## Voyage update periodic tasks
+
+The Landed cost module includes several voyage-related periodic tasks that can bulk update any of several different aspects of voyages. You can run or schedule them by expanding **Landed cost > Periodic tasks > Voyage updates** in the side navigator and then selecting the type of task. The tasks are:
+
+- **Documents received**
+- **In transit**
+- **Ready for costing**
+- **Costed**
+
+<!-- KFM: It would be nice to provide a short description of each of the above, unless they are entirely obvious based on their names. -->
