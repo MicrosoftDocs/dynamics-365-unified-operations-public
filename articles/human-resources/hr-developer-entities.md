@@ -40,7 +40,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ## Benefit tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Benefit Calculation Frequency | cdm_benefitcalculationfrequency |
 | Benefit Calculation Frequency Pay Period | cdm_benefitcalculationfrequencypayperiod |
@@ -50,9 +50,9 @@ The following Dataverse tables are available based on Human Resources entities.
 | Benefit Plan | cdm_benefitplan (Not enabled for custom field support) |
 | Benefit Type | cdm_benefittype |
 
-## Business process tasks entities
+## Business process tasks tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Business Process Calendar | cdm_businessprocesscalendar |
 | Business Process Group Assignment | cdm_businessprocessgroupassignment |
@@ -61,9 +61,9 @@ The following Dataverse tables are available based on Human Resources entities.
 | Checklist Template Header | cdm_businessprocesstemplateheader |
 | Checklist Template Task | cdm_businessprocesstemplatetask |
 
-## Compensation entities
+## Compensation tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Compensation Fixed Plan | cdm_compensationfixedplan |
 | Compensation Grid | cdm_compensationgrid |
@@ -80,9 +80,9 @@ The following Dataverse tables are available based on Human Resources entities.
 | Vesting Rule | cdm_vestingrule |
 | Worker Fixed Compensation | cdm_workerfixedcompensation |
 
-## Organization entities
+## Organization tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Department | cdm_department |
 | Employment | cdm_employment |
@@ -102,7 +102,7 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ## Leave and absence tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Leave Bank Transaction | cdm_leavebanktransaction |
 | Leave Enrollment | cdm_leaveenrollment |
@@ -112,9 +112,9 @@ The following Dataverse tables are available based on Human Resources entities.
 | Leave Type | cdm_leavetype |
 | Leave Type Reason Code | cdm_leavetypereasoncode |
 
-## Payroll entities
+## Payroll tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Pay Cycle | cdm_paycycle |
 | Pay Period | cdm_payperiod |
@@ -122,9 +122,9 @@ The following Dataverse tables are available based on Human Resources entities.
 | Bank Account Disbursement | cdm_bankaccountdisbursement |
 | Tax Region | cdm_taxregion |
 
-## Worker entities
+## Worker tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Worker | cdm_worker |
 | Worker Address | cdm_workeraddress |
@@ -138,22 +138,22 @@ The following Dataverse tables are available based on Human Resources entities.
 | Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom field support) |
 | Worker Bank Account | cdm_workerbankaccount |
 
-## Worker setup entities
+## Worker setup tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Veteran Status | cdm_veteranstatus |
 | Ethnic Origin | cdm_ethnicorigin |
 | Reason Code | cdm_reasoncode |
 | Person Identification Issuing Agency | cdm_personidentificationissuingagency |
 
-## Competency entities
+## Competency tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Skill Type | cdm_skilltype |
 
-## Entity relationship models
+## Table relationship models
 
 ### Worker
 
