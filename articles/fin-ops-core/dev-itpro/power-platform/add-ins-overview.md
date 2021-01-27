@@ -5,7 +5,7 @@ title: Add-ins overview
 description: This topic provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
 author: ankugo
 manager: AnnBe
-ms.date: 01/26/2021
+ms.date: 01/27/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -49,7 +49,7 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
         The Finance and Operations environment administrator must be added to one of the following roles. You will need a Global Administrator to perform this action.
         - Global admins
         - Dynamics 365 admins
-        - Power Plaform admins
+        - Power Platform admins
 
     ![Power Platform settings](media/PowerPlatformSettings.png)
     
