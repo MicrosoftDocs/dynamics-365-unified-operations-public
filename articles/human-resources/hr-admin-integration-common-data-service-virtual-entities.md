@@ -210,7 +210,7 @@ Virtual tables are generated in Dataverse through an asynchronous background pro
 
 2. Select the **Background processes** tab.
 
-3. Select **Virtual entity poll async operation background process**.
+3. Select **Virtual table poll async operation background process**.
 
 4. Select **View most recent results**.
 
