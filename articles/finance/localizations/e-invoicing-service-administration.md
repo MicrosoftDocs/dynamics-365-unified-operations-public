@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic invoicing add-on administration components
-description: This topic provides information about the components related to the administration of the Electronic invoicing add-on.
+description: This topic provides information about the components that are related to administration of the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
 ms.date: 01/22/2021
@@ -33,114 +33,105 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the components related to the administration of the Electronic invoicing add-on and how to configure the service.
+This topic provides information about the components that are related to administration of the Electronic invoicing add-on. It also provides information about how to configure the Electronic invoicing add-on service.
 
 ## Azure
 
-Use Azure to create the secrets for the KeyVault and Storage account, and use them in the configuration of Electronic invoicing add-on.
+Use Microsoft Azure to create the secrets for the key vault and storage account. Then use the secrets in the configuration of the Electronic invoicing add-on.
 
-## Life Cycle Services (LCS)
+## Lifecycle Services
 
-Use Life Cycle Services (LCS) to enable the add-on for the microservices for your LCS deployment project.
+Use Microsoft Dynamics Lifecycle Services (LCS) to enable the add-on for the microservices for your LCS deployment project.
 
-The following feature must be enabled under the tile **Preview feature management** in LCS:
+In LCS, select the **Preview feature management** tile, and then turn on the **e-Invoicing Service** feature.
 
-   - **e-Invoicing Service**
+## Regulatory Configuration Services
 
-## Microsoft Dynamics 365 Regulatory Configuration Services (RCS)
-
-The Microsoft Dynamics 365 Regulatory Configuration Services (RCS) is the interface for configuration of the Electronic invoicing add-on. The resources, such as Environments and Electronic invoicing features are created, maintained, and hosted in the RCS, and when ready, the resources are published to the Electronic invoicing add-on service.
+Dynamics 365 Regulatory Configuration Services (RCS) is the interface that is used to configure the Electronic invoicing add-on. Resources such as environments and electronic invoicing features are created, maintained, and hosted in RCS. When the resources are ready, they are published to the Electronic invoicing add-on service.
 
 For more information about RCS, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md)
 
-### Integration with Electronic invoicing add-on
+### Integration with the Electronic invoicing add-on
 
-Before you start to use RCS to configure electronic invoices, configure RCS to allow communication with Electronic invoicing add-on on the **Electronic reporting parameters** page, on **Electronic invoicing add-on** tab.
+Before you can use RCS to configure electronic invoices, you must configure RCS to allow for communication with the Electronic invoicing add-on. You complete this configuration on the **Electronic invoicing add-on** tab of the **Electronic reporting parameters** page.
 
 #### Service endpoint
 
-The service endpoint is the URL of the Electronic invoicing add-on:
-
-<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>
+The service endpoint is the URL where the Electronic invoicing add-on is located: `<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>`.
 
 #### Application ID
 
-The application ID is the ID of the Electronic invoicing add-on application. In this case, the value is fixed:
-
-   - 0cdb527f-a8d1-4bf8-9436-b352c68682b2
+The application ID is the ID of the Electronic invoicing add-on application. In this case, the value is fixed: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
 
 #### LCS environment ID
 
-The LCS environment ID is the ID of your LCS subscription from your organization.
+The LCS environment ID is the ID of your organization's LCS subscription.
 
 ### Service environments
 
-The Service environments are logical partitions created to support the execution of the electronic invoicing features within the Electronic invoicing add-on. 
+Service environments are logical partitions that are created to support execution of the electronic invoicing features in the Electronic invoicing add-on. The security secrets and digital certificates, and the governance (that is, access permissions), must be configured at the service environment level.
 
-The security secrets and digital certificates, and the governance (access permissions) must be configured at the Service environment level. 
+Customers can create as many service environments as they want. All the service environments that a customer creates are independent of each other.
 
-Customers can create as many service environments as they want, and the environments are independent of each other.
-
-The service environments must be created and maintained in RCS, and when ready, they must be published to the Electronic invoicing add-on.
+Service environments must be created and maintained in RCS. When the service environments are ready, they must be published to the Electronic invoicing add-on.
 
 #### Service environment status
 
-The Service environments can have up to three statuses:
+Service environments can have up to three statuses:
 
-   - **Not published**: When the environment is created, but not published.
-   - **Published**: When the environment is published to the electronic invoicing service.
-   - **Changed**: When the attributes of a published environment are changed, but the changes aren't published yet.
+- **Not published** – The environment has been created, but it hasn't yet been published.
+- **Published** – The environment has been published to the electronic invoicing service.
+- **Changed** – The attributes of a published environment have been changed, but the changes haven't yet been published.
 
 #### Customer secrets
 
-The Electronic invoicing add-on service takes responsibility for storing all your business data in the Microsoft Azure resources that are owned by your company. To ensure that the service works correctly, and that all the business data that is needed for and generated by the Electronic invoicing add-on is accessed only by the add-on, you must create two main Azure resources:
+The Electronic invoicing add-on service is responsible for storing all your business data in the Azure resources that your company owns. To ensure that the service works correctly, and that all the business data that is required for and generated by the Electronic invoicing add-on is accessed only by the add-on, you must create two main Azure resources:
 
-- An Azure storage account (Blob storage) to store electronic invoices
-- An Azure key vault to store certificates and the Uniform Resource Identifier (URI) of the storage account
+- An Azure storage account (Blob storage) that will store electronic invoices
+- An Azure key vault that will store certificates and the uniform resource identifier (URI) of the storage account
 
 > [!NOTE]
-> A dedicated key vault resource and customer Blob storage must be allocated specifically for use with the Electronic invoicing add-on.
+> A dedicated key vault and customer storage account must be allocated specifically for use with the Electronic invoicing add-on.
 
-For more information, see [Create AzureStorage Account and KeyVault](e-invoicing-create-azure-storage-account-key-vault.md).
+For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
 #### Users
 
-Each service environment must list the users who can connect from Finance and Supply Chain Management in the Electronic invoicing add-on.
+Each service environment must list the users who can connect from Dynamics 365 Finance and Dynamics 365 Supply Chain Management in the Electronic invoicing add-on.
 
-#### Publish
+#### Publication
 
-The Service environments must be published to the electronic invoicing service to be used. Only after publishing, the environment can be accessed by Finance and Supply Chain Management. Even after an update to any of the environment's attributes, the Service environment must be published for the changes take effect on the electronic invoicing service.
+Service environments must be published to the electronic invoicing service before they can be used. Only published environments can be accessed by Finance and Supply Chain Management. Additionally, a service environment must be published before any updates to its attributes will take effect on the electronic invoicing service.
 
 ### Connected applications
 
-The Connected applications are the instances of Finance and Supply Chain Management you may want to reach through RCS. Besides the application URL and it's tenant, the Conection application also contains the credentials to allow RCS to connect to this environment.
+Connected applications are the instances of Finance and Supply Chain Management that you might want to reach through RCS. Besides the application URL and its tenant, a connected application contains the credentials that enable RCS to connect to the environment.
 
-Through the Connected applications, you can configure the part of the electronic invoicing feature in Finance and Supply Chain Management to make the entire electronic invoicing feature work.
+Through the connected applications, you can configure part of the electronic invoicing feature in Finance and Supply Chain Management to make the whole electronic invoicing feature work.
 
 ## Finance and Supply Chain Management
 
 ### Integration with Electronic invoicing add-on
 
-Before you use Finance and Supply Chain Management to issue electronic invoices through the Electronic invoicing add-on, the add-on must be configured to allow communication with the service.
+Before you can use Finance and Supply Chain Management to issue electronic invoices through the Electronic invoicing add-on, the add-on must be configured to allow for communication with the service.
 
-#### Electronic Invoicing add-on integration feature
+#### Electronic invoicing add-on integration feature
 
-To enable communication between Finance and Supply Chain Management and the Electronic invoicing add-on, the feature **Electronic Invoicing add-on integration** must be enabled through Feature management workspace.
+To enable communication between Finance and Supply Chain Management and the Electronic invoicing add-on, you must turn on the **Electronic Invoicing add-on integration** feature in the **Feature management** workspace.
 
 #### Service endpoint
 
-The service endpoint is the URL where the Electronic invoicing add-on is located. The service endpoint must be configured in Finance and Supply Chain Management to allow communication with the service to issue electronic invoices.
+The service endpoint is the URL where the Electronic invoicing add-on is located. Before electronic invoices can be issued, the service endpoint must be configured in Finance and Supply Chain Management to allow for communication with the service.
 
-Go to **Organization administration** > **Setup** > **Electronic document parameter** and on the **Submission services** tab, in the **Electronic invoicing add-on URL** field, enter:
-
-    `<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>`
+To configure the service endpoint, go to **Organization administration \> Setup \> Electronic document parameter**, and then, on the **Submission services** tab, in the **Electronic invoicing add-on URL** field, enter `<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>`.
 
 #### Environments
 
-The Environment name entered in Finance and Supply Chain Management refers to the name of the environment created in RCS and published to the Electronic invoicing add-on.
+The environment name that is entered in Finance and Supply Chain Management refers to the name of the environment that is created in RCS and published to the Electronic invoicing add-on.
 
-The environment must be configured on the **Electronic document parameter** page, on the **Submission services** tab, so that every request to issue electronic invoices contains the environment where the Electronic invoicing add-on can determine which electronic invoicing feature must process the request.
+The environment must be configured on the **Submission services** tab of the **Electronic document parameter** page, so that every request to issue electronic invoices contains the environment where the Electronic invoicing add-on can determine which electronic invoicing feature must process the request.
 
 ## Additional resources
+
 - [Configure electronic invoices in RCS](e-invoicing-configuration-rcs.md)
 - [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
