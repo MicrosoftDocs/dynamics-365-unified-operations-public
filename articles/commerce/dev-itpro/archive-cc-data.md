@@ -2,10 +2,10 @@
 # required metadata
 
 title: Archive credit card transaction data
-description: This topic provides an overview for a job that archives transaction data to free up database space.
+description: This topic describes an archival job that can be used to free up database space by archiving credit card transactions.
 author: rubendel
 manager: annbe
-ms.date: 12/28/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,62 +32,66 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Archive credit card transaction data
 
-
 [!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic describes a job that can be used to free up database space by archiving credit card transactions
+This topic describes an archival job that can be used to free up database space by archiving credit card transactions.
+
+For every credit card authorization, the authentication binary large object ([auth blob](#key-terms)) is stored in the database. Auth blobs contain data related to the authorization and over time can grow to take up a significant amount of space in the database. The job described in this topic provides a way to archive auth blob data by exporting it to Azure Blob Storage and then deleting the data from the database. 
+
+The parameters for the archival job are based on the age of the transaction in days. In other words, if the **Minimum transaction age in days** is set to **365**, then all credit authorization XML data older than 365 days will be subject to archiving when the job is run. 
+
+When using the archival job it is important to understand that the data cannot be easily restored. For this reason, transactions subject to [linked refunds](#key-terms) should not be archived. For example, if a merchant's returns policy allows for transactions to be returned to the same credit card for refund within 2 years, the parameter for the job should be set to 730 days (2 years). In this example, if a transaction is returned after 730 days, the XML required to perform a linked refund will not be found, so the customer will need to be refunded via a [standalone refund](#key-terms) to a credit card or to some other payment method such as a credit memo or gift card. 
 
 ## Key terms
 
 | Term | Description |
 |---|---|
 | Auth blob | The response returned from a credit card processor as a result of a payment request. This response is stored in as an XML blob and take up a lot of database space over time. |
-| Linked refund | A refund request which references a previous transaction. Linked refunds generally are viewed as lower risk by processors and have lower associated fees. |
-| Standalone refund | A refund request which does not reference a previous transaction. Standalone refunds carry higher rist and have higher processing fees. |
+| Linked refund | A refund request which references a previous transaction. Linked refunds are generally viewed as lower risk by processors and have lower associated fees. |
+| Standalone refund | A refund request which does not reference a previous transaction. Standalone refunds carry higher risk and have higher processing fees. |
 
-## Overview
+## Document management dependency
 
-For every credit card authorization, the auth blob is stored in the database. These blobs contain data related to the authorization and over time can grow to take up a significant amount of space in the database. The job described in this article provides a way to archive this auth blob data by exporting it to Azure blob storage and deleting the data from the database. 
+When the archival job is run, aged credited card XML data is exported in a .zip file using document management. If document management is not set up in an environment, the credit card data archival job will not be able to run successfully. For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 
-The parameters for this job are based on the age of transaction in days. Meaning, if the **Minimum transaction age in days** is set to **365**, then all credit authorization XML data older than 365 days will be subject to archival when the job is run. 
-
-When using this job, it is important to understand that the data cannot be easily restored and transactions subject to linked refund should not be archived. For example, if a merchant's returns policy allows for transactions to be returned to the same card for refund within 2 years, the parameter for the job should be set to 730 days. In this example, if a transaction is returned after 730 days, the XML required to perform a linked refund will not be found, so the customer will need to be refunded via standalone refund to a credit card or to some other payment method such as credit memo or gift card. 
-
-## Document Management dependency
-
-When the job describe this document is run, aged credited card xml data is exported in a .zip file using [Document Management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). If document managemet is not set up in an environment, the credit card data archival job will not be able to run successfully. 
-
-The archival job will process all credit card payment data that meets the **Minimum transaction age in days** criteria. This means that if the job is enabled and according to the criteria there is a large number of records which need to be processed, the job may take several days to complete. Once the backlog of payments has been archived, the job will not take so long to process. 
-
-Docuref requirements TBD
+The archival job will process all credit card payment data that meets the **Minimum transaction age in days** criteria. If the job is enabled and according to the criteria there is a large number of records which need to be processed, the job may take several days to complete. Once the backlog of payments has been archived, the job will not take as long to process. 
 
 ## Data in scope for archival
 
-This job archives data in the `PaymentAuthorization`, `PaymentCaptureToken`, and `PaymentCardToken`fields of `RetailTransactionPaymentTrans` table. Transactions that have been archived will not have associated data in these fields, but may still be returned without linked refund. 
+The archival job archives data in the `PaymentAuthorization`, `PaymentCaptureToken`, and `PaymentCardToken` fields of the `RetailTransactionPaymentTrans` table. Transactions that have been archived will not have associated data in these fields, but may still be returned without linked refunds. 
 
 ## Batch job setup
 
-To access the job, navigate to **Retail and commerce** \> **Retail and Commerce IT** \> **Clean up** \> **Archive credit card transaction data**. The first dialog for the batch job will require the user to enter the age in days for credit card authorizations that will be subject to archival. This value should be set to the length of time that customer can have refunds linked to their original credit card authorization. If the age in days is set to 365 days, then a return for a transaction 366 days old may still be eligible for refund based on the merchant's policies, but data required to perform a linked refund will no to available, so any refund will need to be standalone. 
+To access the archival job, in Commerce headquarters go to **Retail and commerce \> Retail and Commerce IT \> Clean up \> Archive credit card transaction data**. The first dialog box for the batch job will require the user to enter the age in days for credit card authorizations that will be subject to archiving. This value should be set to the length of time that customers can have refunds linked to their original credit card authorization. If the age in days is set to 365 days, a return for a transaction 366 days old may still be eligible for refund based on the merchant's policies, but since the data required to perform a linked refund will not be available, any refund would need to be a standalone refund. 
 
-In addition to the **Minimum transaction age in days**, this dialog includes details for recurrence. Batch processing is enabled by default and cannot be changed. 
+In addition to the **Minimum transaction age in days**, the archival job dialog box includes details for recurrence. Batch processing is enabled by default and cannot be changed. 
+
+The following image shows
 
 ![Parameters](../media/Payments/batch1.png)
 
-Once the parameters and batch details have been established, click **Next** to view a sample of the data to be exported. The data in this view is limited, but all data subject to archival can be exported. 
+Once the parameters and batch details have been established, select **Next** to view a sample of the data to be exported. The data in this view is limited, but all data subject to archiving can be exported. 
+
+The following image shows
 
 ![Data](../media/Payments/batch2.png)
 
 > [!NOTE]
-> The data subject to archival includes personally identifiable customer information including the name of the cardholder. This data should be handled according to your local regultory requirements.
+> The data subject to archiving includes personally identifiable customer information such as the name of the cardholder. This sensitive data should be handled according to your local regulatory requirements.
 
-Upon confirming the parameters for data to be archived, the user will be prompted to confirm that the data being archived is not easily restored. 
+After confirming the parameters for data to be archived, you will be prompted to confirm that the data being archived is not easily restored. 
+
+The following image shows
  
- ![Data](../media/Payments/batch3.png)
+![Data](../media/Payments/batch3.png)
  
-Upon clicking **Yes**, the job will be active and authorization XML data older than the **Minimum transaction age in days** will be subject to archival. 
+After selecting **Yes**, the archival job will be active and authorization XML data older than the **Minimum transaction age in days** will be subject to archiving. 
 
 ## Additional resources
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Checkout module](https://docs.microsoft.com/dynamics365/commerce/add-checkout-module)
+[Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+[Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)
+
+[Checkout module](../add-checkout-module.md)
