@@ -48,8 +48,6 @@ The following features are generally available with this release.
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | ## Regular translation checkins for supported HCM languages - (394249) | | |
-| ## Provide a navigation property to SeniorityDate from BaseWorker entity - (541988)## [Fusion Breaking Changes] DataManagementIntegrationUtils - (525752) | | https://microsoft.sharepoint.com/:x:/r/teams/daxhcmteam/Shared%20Documents/General/Fusion/Code%20Migration/BreakingChangesWorkingSheet.xlsx?d=wf83580fe34794a5d81bf6af38c69ea53&csf=1&web=1 |    
-| ## Add indexes to improve HcmWorkerEntity performance - (542869) | | |
 | ## Uptake PU40 - (542407) | | |
 | ## [EHR] Benefits Workspace Landing Page - (475599) | | |
 | ## Use Service Fabric to prevent stuck secondary replicas - (544833) | | |
@@ -66,8 +64,7 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | 539456 | Calendar shows the leave type in the hover text when show only absence without details parameter is enabled |When the Show only absence without details option is enabled, the date of the request is displayed on hover. |
 | 528907 | Granting access to a legal entity on employee role results in managers not being able to see leave balance activity for employees in the My team area of employee self service. |Setting this option now allows managers to continue to see the leave balance activity.  |
-| 534868 | ## [A11y] Personnel Management Workspace contains accessibility errors - (534868) | |
-| 526280 | ## Permissions error on HcmWorkerEntity, HcmEmployeeEntity, and HcmContractorEntity - (526280) | |
+| 526280 | ## Permissions error on HcmWorkerEntity, HcmEmployeeEntity, and HcmContractorEntity |Users in a non-system admin role were unable to export the entities listed due to a permissions error on the NationalityCountryRegion field.  Users will continue to need the following privileges to export this information:  HcmWorkerEntityMaintain, HcmWorkerEntityView, HcmEmployeeEntityMaintain, HcmEmployeeEntityMaintain, HcmEmployeeEntityView, HcmContractorEntityMaintain, and HCMContractorEntityView|
 | 542147 | ## Bank account and routing number fields are mandatory when adding bank account via ESS - (542147) | |
 | 545402 | ## Zip code not populating on electronic reporting - (543641)## Add routing change for UserBranding.js file to remove 404 errors - (545402) | User should not see 404 errors in the console |
 
@@ -87,7 +84,7 @@ The following new features are in preview. For more information about turning fe
 ## Coming soon
 | Feature | Details |
 | --- | --- |
-| Email confirmation for benefit enollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in Employee self-service. For more information, see [Configure Benefits management parameters per company](hr-benefits-setup-parameters-per-company.md). |
+| Email confirmation for benefit enollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in Employee self-service.  This feature will be available on February 1st.  For more information, see [Configure Benefits management parameters per company](hr-benefits-setup-parameters-per-company.md). |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
