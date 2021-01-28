@@ -5,7 +5,7 @@ title: Electronic invoicing add-on administration components
 description: This topic provides information about the components that are related to administration of the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 01/22/2021
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,6 +32,7 @@ ms.dyn365.ops.version: AX 10.0.12
 # Electronic invoicing add-on administration components
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic provides information about the components that are related to administration of the Electronic invoicing add-on. It also provides information about how to configure the Electronic invoicing add-on service.
 
