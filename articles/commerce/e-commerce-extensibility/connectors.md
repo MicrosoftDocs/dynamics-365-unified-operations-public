@@ -361,7 +361,6 @@ export interface IGeoLocation {
     [otherProperty: string]: string | undefined;
 }
 ```
-
 Geolocation information that is generated will be saved in the **requestContext.geoLocation** object.
 
 ## Additional resources
