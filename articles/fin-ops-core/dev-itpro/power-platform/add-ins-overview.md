@@ -5,7 +5,7 @@ title: Add-ins overview
 description: This topic provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
 author: ankugo
 manager: AnnBe
-ms.date: 01/25/2021
+ms.date: 01/27/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -39,13 +39,26 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
 
 ## Prerequisites for setting up add-ins
 
-- Make sure that at least 1 gigabyte (GB) of Microsoft Dataverse space is available. Otherwise, setup will fail.
-- The setup must be done by a user who is assigned to the **Project Owner** role in Microsoft Dynamics Lifecycle Services (LCS).
-- Make sure that the Finance and Operations app user who is trying to do the setup is one of the following admins: global admin, Dynamics 365 service admin, Microsoft Power Platform service admin, or delegated admin.
+- Make sure that at least 1 gigabyte (GB) of Microsoft Dataverse space is available. Otherwise, setup will fail. You can view your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
+- Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** section.
 
-    Alternatively, sign in to the Power Platform admin center, select the **Settings** button (gear symbol), select **Power Platform settings**, and set the options to enable users to create Dataverse environments.
-
-    ![Power Platform settings](media/PowerPlatformSettings.png)
+    ![Environment details tab](media/EnvironmentDetails.png)
+    
+- Validate your Power Platform environment governance policy. To validate, you must be a **Global administrator** or **Power Platform administrator**.
+    
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+    2. Select the gear icon in the upper-right corner of the Power Platform site.
+    
+        ![Power Platform settings](media/PowerPlatformSettings.png)
+    
+- For organizations that do not allow **Everyone** to create Power Platform production environments, the Finance and Operations environment administrator account must be added as the admin.
+    
+    The Finance and Operations environment administrator must be added to one of the following roles. You will need a Global Administrator to perform this action.
+    - Global admins
+    - Dynamics 365 admins
+    - Power Platform admins
+    
+    For more information, see [Use service admin roles to manage your tenant](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant).
 
 ## Set up add-ins
 
