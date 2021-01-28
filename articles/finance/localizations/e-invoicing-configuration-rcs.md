@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 This topic provides information about the configuration capabilities of the Electronic invoicing add-on in Dynamics 365 Regulatory Configuration Services (RCS).
 
-The most important configuration pillar helps you meet business and regulatory requirements of electronic invoices without having to do any coding. In scenarios where electronic invoices must be submitted to an external party through web services, the configuration capabilities also help you meet file formatting and communication requirements.
+It is through the configuration capabilities that Electronic invoicing add-on helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.
 
 ## Electronic reporting
 
@@ -57,17 +57,9 @@ Finally, the features support the exchange of messages with external web service
 
 Availability of the electronic invoicing features depends on the country or region. Although some features are generally available, others are in preview.
 
-#### Generally available features
-
-The following table shows the electronic invoicing features that are currently generally available.
-
-| Country/region | Feature name                     | Business document |
-|----------------|----------------------------------|-------------------|
-| Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
-
 #### Preview features
 
-The following table shows the electronic invoicing features that are currently still in preview.
+The following table shows the electronic invoicing features that are currently in preview.
 
 | Country/region | Feature name                         | Business document |
 |----------------|--------------------------------------|-------------------|
@@ -77,6 +69,7 @@ The following table shows the electronic invoicing features that are currently s
 | Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
 | Brazil         | Brazilian NFS-e São Paulo (BR)       | Service fiscal documents |
 | Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
+| Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
 | Finland        | Finnish electronic invoice (FI)      | Sales invoices and project invoices |
 | France         | French electronic invoice (FR)       | Sales invoices and project invoices |
