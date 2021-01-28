@@ -91,3 +91,5 @@ The following example shows how to modify the home page by changing the video th
 [Enrich a category landing page](enrich-category-page.md)
 
 [Verify page content accessibility](verify-accessibility.md)
+
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
