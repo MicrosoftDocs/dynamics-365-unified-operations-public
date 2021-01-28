@@ -69,13 +69,13 @@ In addition to the **Minimum transaction age in days**, the archival job dialog 
 
 The following image shows
 
-![Parameters](../media/Payments/batch1.png)
+![Parameters](media/payments/batch1.png)
 
 Once the parameters and batch details have been established, select **Next** to view a sample of the data to be exported. The data in this view is limited, but all data subject to archiving can be exported. 
 
 The following image shows
 
-![Data](../media/Payments/batch2.png)
+![Data](media/payments/batch2.png)
 
 > [!NOTE]
 > The data subject to archiving includes personally identifiable customer information such as the name of the cardholder. This sensitive data should be handled according to your local regulatory requirements.
@@ -84,7 +84,7 @@ After confirming the parameters for data to be archived, you will be prompted to
 
 The following image shows
  
-![Data](../media/Payments/batch3.png)
+![Data](media/payments/batch3.png)
  
 After selecting **Yes**, the archival job will be active and authorization XML data older than the **Minimum transaction age in days** will be subject to archiving. 
 
