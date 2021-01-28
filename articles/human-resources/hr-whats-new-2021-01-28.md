@@ -72,7 +72,11 @@ The following bug fixes are included in this release.
 | 526280 | ## Permissions error on HcmWorkerEntity, HcmEmployeeEntity, and HcmContractorEntity - (526280) | |
 | 542147 | ## Bank account and routing number fields are mandatory when adding bank account via ESS - (542147) | |
 | 545402 | ## Zip code not populating on electronic reporting - (543641)## Add routing change for UserBranding.js file to remove 404 errors - (545402) | User should not see 404 errors in the console |
-    
+
+## In preview	
+
+The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
+
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Human Resources app in Microsoft Teams | [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Manage leave requests in Teams](hr-teams-leave-app.md) |
