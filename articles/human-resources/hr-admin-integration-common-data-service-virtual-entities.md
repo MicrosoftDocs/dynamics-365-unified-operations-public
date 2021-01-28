@@ -47,7 +47,7 @@ You can view the list of virtual tables enabled in the environment, and begin wo
 
 ![Dynamics 365 HR Virtual Tables in Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
-## Virtual tables versus natural tables
+## Virtual tables versus native tables
 
 Virtual tables for Human Resources aren't the same as the natural Dataverse tables created for Human Resources. 
 
