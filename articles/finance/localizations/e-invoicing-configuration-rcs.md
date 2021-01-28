@@ -5,7 +5,7 @@ title: Configure the Electronic invoicing add-on in Regulatory Configuration Ser
 description: This topic explains how to configure the Electronic invoicing add-on in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
 manager: AnnBe
-ms.date: 01/25/2021
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 10.0.12
 ---
 
 # Configure the Electronic invoicing add-on in Regulatory Configuration Services (RCS)
+
+[!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/banner.md)]
 
