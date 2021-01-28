@@ -50,15 +50,13 @@ If you aren't using a separate recruiting application, you can also manually man
 
 ## Enable recruiting requests
 
-If you want to submit recruiting requests in Human Resources, you must first enable the functionality in **Human resources parameters**.
+If you want to submit recruiting requests in Human Resources, you must first enable the functionality in **Human resources shared parameters**.
 
 1. In the **Personnel management** workspace, select **Links**.
 
-2. Under **Setup**, select **Human resources parameters**.
+2. Under **Setup**, select **Human resources shared parameters**.
 
-3. On the **General** tab, under **RECRUITING**, set **Enable recruiting requests** to **Yes**.
-
-   ![Enable recruiting requests](./media/hr-recruit-0-enable-requests.png)
+3. On the **Recruitment** tab, under **RECRUITING**, set **Enable recruiting requests** to **Yes**.
 
 ## Add a recruiting request location
 
