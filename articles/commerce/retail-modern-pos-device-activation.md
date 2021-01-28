@@ -39,6 +39,9 @@ This topic describes how to configure, download, and install Modern POS on vario
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
 
+> [!WARNING]
+> As far back as the .12 release, it has been seen that altering customized files that would be stored in the ClientBroker folder can cause a variety of issues when installing a newer release, including but not limited to inability to go offline or a newer installer failing to complete successfully. It has been shown that the workaround to this issue is to remove the files in the ClientBroker folder in the Modern POS directory prior to performing the installation using the newer installer.
+
 ## Technology
 
 The self-service process lets you download the appropriate version of the Modern POS installer and install it on the physical device that you want to use as the point of sale (POS) register. Device activation is the main onboarding step that ties the physical device to a register in Headquarters. Here are the main technical functions of this feature:
