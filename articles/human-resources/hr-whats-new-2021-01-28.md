@@ -47,10 +47,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| ## Regular translation checkins for supported HCM languages - (394249) | | |
-| ## Uptake PU40 - (542407) | | |
 | Integrate Benefit reason codes into core hr reason codes | -- |[Setting up & Migrating Benefits Reason codes](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-setup-reason-codes) |
-| ## Use Service Fabric to prevent stuck secondary replicas - (544833) | | |
 
 ### Bug fixes
 
