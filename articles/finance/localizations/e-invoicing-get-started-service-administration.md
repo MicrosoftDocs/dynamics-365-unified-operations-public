@@ -5,7 +5,7 @@ title: Get started with Electronic invoicing add-on service administration
 description: This topic explains how to get started with the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 01/22/2021
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 10.0.12
 # Get started with Electronic invoicing add-on service administration
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 ## Prerequisites
 
@@ -80,7 +82,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create a service environment
 
-1. On the **Environment setups** form, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
+1. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
 2. Select **New** to create a key vault secret.
 3. In the **Name** field, enter the name of the key vault secret. In the **Description** field, enter a description.
 4. In the **Key Vault URI** field, paste the secret from Azure Key Vault.
@@ -105,7 +107,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create a connected application
 
-1. On the **Environment setups** form, on the action Pane, select **Connected applications**.
+1. On the **Environment setups** page, on the action Pane, select **Connected applications**.
 2. Select **New** to create a connected application.
 3. In the **Name** field, enter the name of the application to connect.
 4. In the **Application** field, enter the URL of the Finance and Supply Chain Management environment to connect.
@@ -115,7 +117,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Link connected applications to environments
 
-1. On the **Environment setups** form, select **New** to assign a connected application to an environment.
+1. On the **Environment setups** page, select **New** to assign a connected application to an environment.
 2. In the **Connected application** field, select a connected application.
 3. In the **Service environment** field, select a service environment.
 4. Select **Save**, and then close the page.
