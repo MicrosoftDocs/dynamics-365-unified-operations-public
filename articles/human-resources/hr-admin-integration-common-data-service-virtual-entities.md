@@ -51,7 +51,7 @@ You can view the list of virtual tables enabled in the environment, and begin wo
 
 Virtual tables for Human Resources aren't the same as the native Dataverse tables created for Human Resources. 
 
-The natural tables for Human Resources are generated separately and maintained in the HCM Common solution in Dataverse. With natural tables, the data is stored in Dataverse and requires synchronization with the Human Resources application database.
+The native tables for Human Resources are generated separately and maintained in the HCM Common solution in Dataverse. With native tables, the data is stored in Dataverse and requires synchronization with the Human Resources application database.
 
 > [!NOTE]
 > For a list of the natural Dataverse tables for Human Resources, see [Dataverse tables](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
