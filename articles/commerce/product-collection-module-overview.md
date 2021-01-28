@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Product discovery is a primary tool that retailers use to engage with their customers on an e-Commerce website. Product collection modules help retailers build compelling shopping experiences by providing an intuitive visual interface that can be used to quickly author product collections.
 
 Product collection modules represent physical products and services on the website. A product collection module is typically linked to a details page where customers can purchase a product or service, or learn more about it. 
