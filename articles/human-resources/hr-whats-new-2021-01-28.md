@@ -47,8 +47,6 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Feature name or short description | Release plan title and link | Doc title and link |
-| #HCM & HCMFabric Deliverables | | |
 | ## Regular translation checkins for supported HCM languages - (394249) | | |
 | ## Provide a navigation property to SeniorityDate from BaseWorker entity - (541988)## [Fusion Breaking Changes] DataManagementIntegrationUtils - (525752) | | https://microsoft.sharepoint.com/:x:/r/teams/daxhcmteam/Shared%20Documents/General/Fusion/Code%20Migration/BreakingChangesWorkingSheet.xlsx?d=wf83580fe34794a5d81bf6af38c69ea53&csf=1&web=1 |    
 | ## Add indexes to improve HcmWorkerEntity performance - (542869) | | |
