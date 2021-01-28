@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 01/11/2021
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Platform updates for version 10.0.17 of Finance and Operations apps
 
-> [!Important]
+> [!IMPORTANT]
 > Version 10.0.17 is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ### Visual Studio 2015
@@ -53,23 +53,23 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline ("build definition") needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+| **Status**                         | Deprecated. Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
 ### User avatar 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The user avatar in the right of the navigation bar was retrieved using an API from the Dynamics 365 header control, which has been obsoleted. |
+| **Reason for deprecation/removal** | The user avatar that displays on the right side of the navigation bar was retrieved using an API from the Dynamics 365 header control, which has been deprecated. |
 | **Replaced by another feature?**   | Users will see their initials in a circle in the navigation bar instead. This is the same visual currently used on development machines. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | Removed as of version 10.0.17 |
 
-### Enterprise portal (EP) deprecation  
+### Enterprise Portal (EP) deprecation  
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The metadata artifacts associated with Dynamics AX 2012 Enterprise Portal (EP) have long been marked as deprecated, as EP was never supported in the Finance and Operations apps. |
+| **Reason for deprecation/removal** | The metadata artifacts associated with Dynamics AX 2012 Enterprise Portal (EP) have been deprecated, as EP was never supported in the Finance and Operations apps. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
