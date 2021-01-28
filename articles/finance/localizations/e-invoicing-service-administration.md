@@ -57,7 +57,14 @@ Before you can use RCS to configure electronic invoices, you must configure RCS 
 
 #### Service endpoint
 
-The service endpoint is the URL where the Electronic invoicing add-on is located: `<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>`.
+The URL of the Electronic invoicing add-on endpoint can vary according to the Azure datacenter geography. The following table lists the availablity per region:
+
+| Azure datacenter geography | Service endpoint URL                                                       |
+|----------------------------|----------------------------------------------------------------------------|
+| East US                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
+| West US                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
+| North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
+| West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
 #### Application ID
 
@@ -77,10 +84,10 @@ Service environments must be created and maintained in RCS. When the service env
 
 #### Service environment status
 
-Service environments can have up to three statuses:
+Service environments can be managed through status. The possible options are:
 
 - **Not published** – The environment has been created, but it hasn't yet been published.
-- **Published** – The environment has been published to the electronic invoicing service.
+- **Published** – The environment has been published to the Electronic invoicing add-on.
 - **Changed** – The attributes of a published environment have been changed, but the changes haven't yet been published.
 
 #### Customer secrets
@@ -101,7 +108,7 @@ Each service environment must list the users who can connect from Dynamics 365 F
 
 #### Publication
 
-Service environments must be published to the electronic invoicing service before they can be used. Only published environments can be accessed by Finance and Supply Chain Management. Additionally, a service environment must be published before any updates to its attributes will take effect on the electronic invoicing service.
+Service environments must be published to the Electronic invoicing add-on before they can be used. Only published environments can be accessed by Finance and Supply Chain Management. Additionally, a service environment must be published before any updates to its attributes will take effect on the electronic invoicing service.
 
 ### Connected applications
 
@@ -123,7 +130,7 @@ To enable communication between Finance and Supply Chain Management and the Elec
 
 The service endpoint is the URL where the Electronic invoicing add-on is located. Before electronic invoices can be issued, the service endpoint must be configured in Finance and Supply Chain Management to allow for communication with the service.
 
-To configure the service endpoint, go to **Organization administration \> Setup \> Electronic document parameter**, and then, on the **Submission services** tab, in the **Electronic invoicing add-on URL** field, enter `<https://electronicinvoicinglocal.wus2-il100.gateway.test.island.powerapps.com/>`.
+To configure the service endpoint, go to **Organization administration \> Setup \> Electronic document parameter**, and then, on the **Submission services** tab, in the **Electronic invoicing add-on URL** field, enter the URL as described in the table described in section **Service endpoint**.
 
 #### Environments
 
