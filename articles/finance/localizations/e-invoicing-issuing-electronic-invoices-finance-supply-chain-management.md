@@ -35,28 +35,28 @@ ms.dyn365.ops.version: AX 10.0.12
 
 This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through the Electronic invoicing add-on.
 
-Before you can start to issue electronic invoices through the Electronic invoicing add-on, you must complete these tasks:
 
-1. Configure the integration between Finance and Supply Chain Management and the Electronic invoicing add-on.
-2. Activate the process of issuing electronic invoices through the Electronic invoicing add-on service.
+## Feature activation
 
-Activation must be done only one time and by electronic invoice, given by its feature reference code. Each feature reference code is associated with an electronic invoicing feature requirement for a country or region.
+To start issuing electronic invoices through the Electronic invoicing add-on, it is necessary to activate the Feature reference in Finance and Supply Chain Management.
 
-If a feature reference code is associated with an old process for issuing electronic invoices, activation automatically turns off the old process in the Finance and Supply Chain Management instances. Therefore, Finance and Supply Chain Management no longer issue electronic invoices through X++ code. Instead, they communicate with the service, and the service issues the electronic invoice.
+Each Feature reference corresponds to a specific electronic invoicing feature that complies to the electronic invoicing requirements from a country/region.
 
-The following table shows the list of feature references that the Electronic invoicing add-on supports.
+The following table shows the list of feature References that the Electronic invoicing add-on supports.
 
 | Feature reference | Name                                              | Country/region |
 |-------------------|---------------------------------------------------|----------------|
-| BR-00095          | NFS-e Brazilian electronic invoices               | Brazil         |
 | BR-00053          | NF-e Federal - Brazilian electronic invoice       | Brazil         |
+| BR-00095          | NFS-e Brazilian electronic invoices               | Brazil         |
 | DK-00001          | E-invoicing to the public sector (OIOUBL) – DK    | Denmark        |
 | EG-00008          | E-invoicing for Egypt                             | Egypt          |
+| ES-00025          | Electronic Invoice to the public sector           | Spain          |
 | EUR-00023         | European Union E-invoicing to Public sector       | Europe         |
 | ITA-00036         | IT - E-invoicing to the public sector (FatturaPA) | Italy          |
 | MX-00010          | E-invoicing CFDI                                  | Mexico         |
 | MX-00016          | E-invoicing CFDI - cancellation process           | Mexico         |
-| ES-00025          | Electronic Invoice to the public sector           | Spain          |
+
+In the cases where there is a legacy electronic invoicing feature, supported the country localizations scope, the activation of the Feature reference enables the issuing of electronic invoices through the Electronic invoicing add-on and turns-off the former feature.
 
 ## Submit electronic documents
 
