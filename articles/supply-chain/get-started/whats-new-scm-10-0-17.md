@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.17
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.17. This version has a build number of 10.0.689 <!--KFM: Update to final build number --> and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.17. This version has a build number of 10.0.761 and is available as follows:
 
 - **Preview of release:** February 2021
 - **General availability of release (self-update):** March 2021
@@ -55,7 +55,7 @@ The following features are included in this release. Some of the listed features
 
 - [Enable change management on existing products](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)
 
-<!-- KFM: Add this when the feature appears in release plan at next update
+<!-- KFM: Add this when the feature appears in release plan at next update:
 - Enterprise-scale inventory performance improvements and archiving  -->
 
 - [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management)<br> - For more information, see [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
@@ -95,13 +95,21 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
 - [Asset management mobile workspace](../asset-management/set-up-asset-management-mobile.md)
+
 - [Configure product filters for warehouse transactions](../warehousing/filters-and-filter-codes.md)
+
 - [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)
+
 - [Intercompany planning](../master-planning/planning-optimization/Intercompany-planning.md)
+
 - [Inventory marking with Planning Optimization](../master-planning/planning-optimization/marking.md)
+
 - [Master planning with demand forecasts](../master-planning/planning-optimization/demand-forecast.md)
+
 - [Partial location cycle counting](../warehousing/partial-location-cycle-counting.md)
+
 - [Pick line grouping](../warehousing/pick-line-grouping.md)
+
 - [Production planning](../master-planning/planning-optimization/production-planning.md) <!--KFM: Remember to add YouTube link to this topic -->
 
 - [Purchase requisitions in master planning](../master-planning/planning-optimization/purchase-requisitions.md)
