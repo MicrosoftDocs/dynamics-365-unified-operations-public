@@ -139,7 +139,7 @@ To XXXX, open the **General** tab in the bottom section of the **Over/under tran
 
 ### Process over/under transactions
 
-<!-- KFM: Give a quick summary of what we can do here. Eventually add a link to the related scenario. -->
+<!-- KFM: Give a quick summary of what we can do here. A link t the scenario was suggested, but it seems like we don't have a scenario for this. -->
 
 - **Create \> Movement** - 
 - **Create \> Purchase order** - 
