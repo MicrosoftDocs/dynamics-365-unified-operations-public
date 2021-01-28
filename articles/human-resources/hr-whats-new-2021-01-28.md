@@ -51,7 +51,7 @@ The following features are generally available with this release.
 | ## Provide a navigation property to SeniorityDate from BaseWorker entity - (541988)## [Fusion Breaking Changes] DataManagementIntegrationUtils - (525752) | | https://microsoft.sharepoint.com/:x:/r/teams/daxhcmteam/Shared%20Documents/General/Fusion/Code%20Migration/BreakingChangesWorkingSheet.xlsx?d=wf83580fe34794a5d81bf6af38c69ea53&csf=1&web=1 |    
 | ## Add indexes to improve HcmWorkerEntity performance - (542869) | | |
 | ## Uptake PU40 - (542407) | | |
-| ## [EHR] Benefits Workspace Landing Page - (475599) | | |
+| Integrate Benefit reason codes into core hr reason codes (439561) | -- |[Setting up & Migrating Benefits Reason codes](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-reason-codes) |
 | ## Use Service Fabric to prevent stuck secondary replicas - (544833) | | |
 
 ### Bug fixes
@@ -69,7 +69,8 @@ The following bug fixes are included in this release.
 | 534868 | ## [A11y] Personnel Management Workspace contains accessibility errors - (534868) | |
 | 526280 | ## Permissions error on HcmWorkerEntity, HcmEmployeeEntity, and HcmContractorEntity - (526280) | |
 | 542147 | ## Bank account and routing number fields are mandatory when adding bank account via ESS - (542147) | |
-| 545402 | ## Zip code not populating on electronic reporting - (543641)## Add routing change for UserBranding.js file to remove 404 errors - (545402) | User should not see 404 errors in the console |
+| 545402 | Zip code not populating on electronic reporting | Fixed a bug where Zip code was not populating in ACA report for coverage codes L thorugh Q |
+| 545402 |## Add routing change for UserBranding.js file to remove 404 errors - (545402) | User should not see 404 errors in the console |
 
 ## In preview	
 
