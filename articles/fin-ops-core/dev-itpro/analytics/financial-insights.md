@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
@@ -73,7 +72,7 @@ The data for **Financial Insights** is pulled from the Entity store (**System ad
 
 You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
 
-- Financial reporting transaction data version 2 (**Note:** This is new with version 10.0.1 and replaces the previous entity.)
+- Financial reporting transaction data version 3 
 - Financial reporting transaction data
 - CustCollectionsBIMeasurements
 - LedgerCovLiquidityMeasurement

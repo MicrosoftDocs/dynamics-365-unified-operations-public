@@ -17,7 +17,6 @@ ms.search.form: CAMCostAccountingLedgerPolicyAssignment
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

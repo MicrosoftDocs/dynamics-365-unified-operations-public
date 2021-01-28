@@ -3,7 +3,7 @@
  
 title: Create a purchase order for a one-time supplier
 description: This procedure shows you how to create a purchase order for a one-time supplier. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

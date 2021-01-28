@@ -19,7 +19,6 @@ ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelL
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b

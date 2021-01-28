@@ -41,7 +41,7 @@ For more information, see [Integrate Dynamics 365 Field Service and Supply Chain
 
 ## Templates
 
-In-house-assets include a collection of core entity maps that work together during data interaction, as shown in the following table.
+In-house-assets include a collection of core table maps that work together during data interaction, as shown in the following table.
 
 | Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
 |-----------------------------|-----------------------------------|-------------|

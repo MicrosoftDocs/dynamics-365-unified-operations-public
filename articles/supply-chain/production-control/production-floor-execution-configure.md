@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -70,6 +69,12 @@ This feature adds a button to the production floor execution interface that enab
 
 - Feature for locking job card device and job card terminal so that they can be sanitized
 
+### Asset management functionality for the production floor execution interface
+
+This feature adds an asset management tab to the production floor execution interface. Workers can use this tab to select an asset that is connected to a machine resource that is within the selected filter of the job list. For the selected machine asset, the worker can view the state and health of the asset from counter values for up to four selected counters. If you'd like to use this feature, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Asset management functionality for the production floor execution interface
+
 ## Work with production floor execution configurations
 
 To create and maintain device configurations, go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**. The **Configure production floor execution** page shows a list of existing configurations. On this page, you can perform the following actions:
@@ -87,6 +92,7 @@ Next, configure the various settings for the selected device configuration. The 
 - **Screen lock duration** – When the **Allow locking touchscreen** option is set to *Yes*, use this option to specify the number of seconds that the touchscreen should be locked for sanitizing. The duration must be between 5 and 120 seconds.
 - **Generate license plate** – Set this option to *Yes* to generate a new license plate every time that a worker uses the job card device to report as finished. The license plate number is generated from a number sequence that is set up on the **Warehouse management parameters** page. When this option is set to *No*, workers must specify an existing license plate when they report as finished.
 - **Print label** – Set this option to *Yes* to print a license plate label when a worker uses the job card device to report as finished. The configuration of the label is set up in document routing, as described in [Document routing layout for license plate labels](../warehousing/document-routing-layout-for-license-plates.md).
+- **Tab selection**  – Use the settings in this section to choose which tabs should be displayed by the production floor execution interface when the current configuration is active. You can design as many tabs as you need and then add and arrange them here as required. For details about how to design tabs and work with the settings here, see [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ## Clean up job configurations
 

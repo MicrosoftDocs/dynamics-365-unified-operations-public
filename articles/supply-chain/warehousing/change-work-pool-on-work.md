@@ -17,7 +17,6 @@ ms.search.form:  WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: global

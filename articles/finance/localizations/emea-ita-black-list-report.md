@@ -17,7 +17,6 @@ ms.search.form: BlackListTable_IT, IntrastatParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261414
 ms.search.region: Italy

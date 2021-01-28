@@ -18,7 +18,6 @@ ms.search.form: PrintMgmtSetupUIMain
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 82783
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
@@ -78,7 +77,7 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 
-    For more information about how to import model files, see [Export and import models](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node. For more information about how to use the Application Explorer, see [Development tools tutorial](../dev-tools/introduction-visual-studio.md)
+    For more information about how to import model files, see [Export and import models](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node. For more information about how to use the Application Explorer, see [Development tools tutorial](../dev-tools/introduction-visual-studio.md)
 
 Now that you've successfully imported the Application Suite Modern Designs model, you must to rebuild the application suite to update the metadata elements.
 
@@ -86,11 +85,11 @@ Now that you've successfully imported the Application Suite Modern Designs model
 
 The Application Suite Modern Designs model is an extension of the Application Suite model. To help guarantee that all application references are updated so that they target the model extensions, you must build the Application Suite model by using Microsoft Visual Studio.
 
-1. Start Visual Studio 2015, or use the existing instance.
+1. Start Visual Studio, or use the existing instance.
 2. On the **Dynamics 365** menu, select **Build models**.
 3. In the list, select the check box for the **ApplicationSuite** package.
 
-    [![Full build dialog box in Visual Studio 2015](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
+    [![Full build dialog box in Visual Studio](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
 
     > [!NOTE]
     > You will see that the Application Suite Modern Designs model is included in the package definition.

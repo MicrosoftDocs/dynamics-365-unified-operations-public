@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang:
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt\_pltfrm:
 ms.custom:
 ms.assetid:
@@ -32,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Site selector module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 

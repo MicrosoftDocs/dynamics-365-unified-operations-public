@@ -18,13 +18,12 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, PayrollTaxC
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221414
 ms.assetid: cd8cceb4-0ea3-4770-930b-0869e9bfa3c4
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

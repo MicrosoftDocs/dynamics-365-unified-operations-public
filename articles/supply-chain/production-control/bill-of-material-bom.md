@@ -19,7 +19,6 @@ ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufac
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e

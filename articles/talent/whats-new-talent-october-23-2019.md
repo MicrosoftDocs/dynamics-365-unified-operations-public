@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (October 23, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 10/23/2019
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
 
@@ -57,23 +56,23 @@ In conjunction with our announcement in the [Strategic investments in core HR dr
 
 With this week's release, the issue has been corrected when selecting a country/region on the **Worker** form.
 
-### Financial dimension values default to the Combination display field when Do not allow manual entry is set to true (340097)
+### Financial dimension values default to the Combination display column when Do not allow manual entry is set to true (340097)
 
-With this change, when setting up financial dimensions and using the option to not allow manual entry, the system will correctly default the dimension value into the **Combination display** field.
+With this change, when setting up financial dimensions and using the option to not allow manual entry, the system will correctly default the dimension value into the **Combination display** column.
 
 ### New relationship types should be added to Relationship lookup in the personal contacts form (347691)
 
 This release includes new capabilities to add new relationship types in the **Relationship types** table and reflect those changes in the relationship lookup for personal contacts.
 
-### Additional list values in custom fields aren't reflected in Common Data Service (379599)
+### Additional list values in custom columns aren't reflected in Dataverse (379599)
 
-With this week's release, adding a new list value to an existing custom field that's already synchronized with Common Data Service, the new pick list values will now appear after applying changes to the entity.
+With this week's release, adding a new list value to an existing custom column that's already synchronized with Dataverse, the new pick list values will now appear after applying changes to the table.
 
 ### On the Terms of employment page, all employees' terms of employment appear after selecting Open in Excel (348073)
 
 With this release, only the selected employees' terms of employment will open in Excel. All company security is also honored.
 
-### The association between the Work calendar holiday entity and the Work calendar entity is missing in Common Data Service (324178)
+### The association between the Work calendar holiday table and the Work calendar table is missing in Dataverse (324178)
 
 This relationship has been added with the release. This change will enable working days of an employee to display in PowerApps. 
 

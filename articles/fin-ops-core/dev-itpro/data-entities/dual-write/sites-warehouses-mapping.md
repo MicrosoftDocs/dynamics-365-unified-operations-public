@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated sites and warehouses
-description: This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service.
+description: This topic describes the integration of site and warehouse data between Finance and Operations and Dataverse.
 author: t-benebo
 manager: AnnBe
 ms.date: 10/09/2019
@@ -37,11 +37,11 @@ ms.search.validFrom: 2019-08-15
 
 
 
-This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service. Operational sites and warehouses are common concepts in a Supply Chain Management application. They are used to model the supply chain of your company.
+This topic describes the integration of site and warehouse data between Finance and Operations and Dataverse. Operational sites and warehouses are common concepts in a Supply Chain Management application. They are used to model the supply chain of your company.
 
 ## Templates
 
-With the integration with Common Data Service, these concepts and all their related information are available in Common Data Service using the sites and warehouses data entities in the following table.
+With the integration with Dataverse, these concepts and all their related information are available in Dataverse using the sites and warehouses data tables in the following table.
 
 Finance and Operations apps | Other Dynamics 365 apps | Description
 --------------------------|---------------------------|---

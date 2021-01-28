@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
@@ -61,7 +60,7 @@ This section provides valuable guidelines for building forms that work well with
 You can use display methods to show data on pages (both list type pages and detail type pages). However, there are two key points to remember when you use display methods:
 
 -   **Searching** – When a user performs an “online” search (that is, a search that is run against data in the web client instead of locally cached data), the search won't match against display methods, because the Filtering framework in the web client doesn't support searches against data methods. However, when a user does a search against locally cached data, the search will match against display methods, provided that the records have been cached on the device.
--   **Offline** – If a user creates or updates data while his or her device isn’t connected to the server, temporary records are created in the local cache. Because these temporary records haven't yet been processed in the web client, if the records have any fields that are automatically populated or defaults by server-side business logic, these fields will remain empty until the records have been synced with the web client. Display methods fall into this category of fields that will be empty for a temporary record.
+-   **Offline** – If a user creates or updates data while their device isn’t connected to the server, temporary records are created in the local cache. Because these temporary records haven't yet been processed in the web client, if the records have any fields that are automatically populated or defaults by server-side business logic, these fields will remain empty until the records have been synced with the web client. Display methods fall into this category of fields that will be empty for a temporary record.
 
 #### Designing for offline
 
@@ -74,7 +73,7 @@ Unlike the web client, which is highly connected to the server and maintains an 
 
 **Processing an action that has been submitted to the server from the mobile app**
 
-1.  When a user opens an action and fills in the data in that action, *no form logic is run*. A user can complete an action while he or she is either offline or online. The system behaves the same way in both cases.
+1.  When a user opens an action and fills in the data in that action, *no form logic is run*. A user can complete an action either offline or online. The system behaves the same way in both cases.
 2.  After the user clicks **Done**/**Save** on the action, the mobile app queues a data synchronization operation. This operation will be synced with the server when the mobile app is connected to the Internet.
 3.  When an Internet connection is detected (which can happen immediately after the action is completed) the mobile app sends the data synchronization operation to the server for processing.
 4.  While the operation is processed on the server, the framework opens the associated forms and enters the data from the action by passing values into the form controls. *During this process, form logic is run in the usual manner (init, modified, clicked, and so on, are all run).* However, the mobile user might have moved to a different part of the app while this processing is occurring. *Any form logic that shows/hides controls will have no effect on the UI that is seen in the mobile app.* Therefore, to minimize synchronization times, it's best not to include any UI logic on the form.

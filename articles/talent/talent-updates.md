@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -47,7 +46,7 @@ Talent updates are applied to all environments automatically. Talent provides tw
 
     All supported data centers update weekly, unless otherwise noted. Weekly updates typically begin on Wednesday and complete by Sunday. US, Australia, Europe, UK, Asia, and Canada regions are included in weekly updates. 
 
-- **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates release to the same regions as the weekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with weekly service updates.
+- **Dataverse solution updates**: These updates occur approximately every six weeks, as needed. They include new tables and changes to existing tables in Dataverse. These updates release to the same regions as the weekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with weekly service updates.
 
 The following table shows a sample schedule:
 

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -56,7 +55,7 @@ This activity has three components: Candidate availability request, Schedule, an
 
 ## Power Apps activity
 
-The Power Apps activity lets you embed a Microsoft Power Apps app in your hiring process. The app can be required for all applicants, internal applicants only, external applicants only, or no applicants. If the app is marked as required, it must be completed before the stage can be advanced. To be considered complete, the **JobApplicationStatus** field must be set to **Complete**. This field is located in the JobApplicationActivity entity, so the Power Apps app will need to update this field before the stage can be advanced. If the app isn't marked as required, the activity is an optional step, and the stage can be advanced even if the app isn't completed.
+The Power Apps activity lets you embed a Microsoft Power Apps app in your hiring process. The app can be required for all applicants, internal applicants only, external applicants only, or no applicants. If the app is marked as required, it must be completed before the stage can be advanced. To be considered complete, the **JobApplicationStatus** column must be set to **Complete**. This column is located in the JobApplicationActivity table, so the Power Apps app will need to update this column before the stage can be advanced. If the app isn't marked as required, the activity is an optional step, and the stage can be advanced even if the app isn't completed.
 
 To save the Power Apps activity to the hiring process, you must enter a Power Apps ID. To find the Power Apps ID, go to [Power Apps](https://web.powerapps.com), select **Apps**, and then select **Details**.
 

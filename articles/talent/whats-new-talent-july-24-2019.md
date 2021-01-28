@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (July 23, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: Talent
 
@@ -55,9 +54,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2394.
 
-### Entity support for custom fields in Common Data Service 
+### Table support for custom columns in Dataverse 
 
-With this release, **Work calendar** and **Work calendar** day now support custom fields in Common Data Service.
+With this release, **Work calendar** and **Work calendar** day now support custom columns in Dataverse.
 
 ### Restrict leave types in time-off requests
 

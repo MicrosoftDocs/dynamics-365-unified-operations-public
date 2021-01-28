@@ -18,7 +18,6 @@ ms.search.form: RetailFormLayout
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
@@ -51,6 +50,10 @@ This article describes how to modify form layouts to control how receipts, invoi
     - **Do not print** – The receipt isn't printed.
     - **Prompt user** – The user is prompted to print the receipt.
     - **As required** – This option is used only for gift receipts. When this option is selected, the user can print a gift receipt from the **Change** page, if a gift receipt is required.
+
+## Print images
+
+The receipt designer includes a **Logo** variable that can be used to specify images to be printed on the receipt. Images that are included in receipts using the **Logo** variable should be monochrome bitmap (.bmp) file types. If a .bmp image is specified in the receipt designer, but is not printing when sent to the printer, the file size may be too large or the pixel dimensions on the image are not compatible with the printer. If this occurs, try reducing the image file resolution.   
 
 ## Design a receipt format
 

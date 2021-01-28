@@ -18,7 +18,6 @@ ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -45,7 +44,7 @@ The Planning Optimization functionality doesn't currently support all the featur
 Before you turn on Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
 ### Availability
-Planning Optimization is currently available in the following Azure geographies: United States, Canada, Europe, United Kingdom, and Australia. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported.
+Planning Optimization is currently available in the following Azure geographies: United States, Canada, Europe, United Kingdom, Australia, and Asia Pacific. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported.
 
 Note that Planning Optimization does not support on-premises deployments of Dynamics 365 Supply Chain Management.
 

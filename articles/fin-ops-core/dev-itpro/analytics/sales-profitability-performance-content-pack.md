@@ -18,7 +18,6 @@ ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287

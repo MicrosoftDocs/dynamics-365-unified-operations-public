@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/18/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang:
 ms.reviewer: rhaertle
-# ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm:
 ms.custom: 83892
 ms.search.region: Global
@@ -121,8 +120,11 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 
 ## Adding extensions
 
-1. All extension table columns must have the NOT NULL constraint enforced. During upgrade, if the column value is blank it will be updated with NULL values and it may cause a runtime exception in CRT if the null value is not handled properly.
-2. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
+1. If you are creating an extended table and want to sync the data back to HQ, then the table must have the same primary key and clustered index as the HQ table in the extended table, if not, the CDX sync will fail. If you need to pull the data from the extension table to HQ, then the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) is required in the extension table.
+
+2. All extension table columns must have the NOT NULL constraint enforced. During upgrade, if the column value is blank it will be updated with NULL values and it may cause a runtime exception in CRT if the null value is not handled properly.
+
+3. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
 
     ```sql
     --Tables:
@@ -145,14 +147,13 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GO
     ```
 
-3. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from HQ.
+4. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from HQ.
 
     ```sql
     GRANT SELECT, INSERT, UPDATE, DELETE, ALTER ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
     ```
 
-4. If you are creating an extended table and want to sync the data back to HQ, you need to have the primary column of the parent table in the extended table.
 5. Always prefix your table, for example **ContosoRetailTransactionTable**, so that you can avoid conflicts with other customizations.
 
 ## Attributes

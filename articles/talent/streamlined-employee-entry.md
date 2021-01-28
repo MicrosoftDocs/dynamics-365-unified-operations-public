@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang:   
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
@@ -46,7 +45,7 @@ Columns in the list view change based on your selections. For example, when view
 
 ## Navigation and banner
 
-A banner displays key information for each worker. The banner for active workers displays the following fields:
+A banner displays key information for each worker. The banner for active workers displays the following columns:
 
 - **Title**
 - **Department**
@@ -55,12 +54,12 @@ A banner displays key information for each worker. The banner for active workers
 - **Manager**
 - **Legal entity**
 
-The banner for exited workers displays the following fields:
+The banner for exited workers displays the following columns:
 
 - **Exited date**
 - **Reason**
 
-The banner for pending employees displays the following fields:
+The banner for pending employees displays the following columns:
 
 - **Title**
 - **Department**
@@ -80,7 +79,7 @@ The action pane of the worker page has been re-organized to include fewer option
 
 In addition, a new **Links** tab on the main worker page gives users a central location to access all related information for a worker.
 
-Due to these changes, information may appear in a different location than you're used to. For example, payroll information that previously displayed on the worker form now appears in the action pane under **Compensation > Payroll**, and the **Personal information** tab now has a **More information** button to hide fields that aren't accessed often.
+Due to these changes, information may appear in a different location than you're used to. For example, payroll information that previously displayed on the worker form now appears in the action pane under **Compensation > Payroll**, and the **Personal information** tab now has a **More information** button to hide columns that aren't accessed often.
 
 [![Banner](./media/Banner.png)](./media/Banner.png)
 

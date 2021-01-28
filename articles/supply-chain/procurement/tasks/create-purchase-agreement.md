@@ -3,7 +3,7 @@
  
 title: Create a purchase agreement
 description: This topic guides you through the creation of a purchase agreement. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 07/18/2019
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: PurchAgreement, PurchAgreementCreate, InventItemIdLookupSimple, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

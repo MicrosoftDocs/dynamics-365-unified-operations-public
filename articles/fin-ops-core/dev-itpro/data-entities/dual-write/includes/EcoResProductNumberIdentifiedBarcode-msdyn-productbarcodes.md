@@ -1,6 +1,6 @@
 ## Product Number Identified Barcode to msdyn_productbarcodes
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
 Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---

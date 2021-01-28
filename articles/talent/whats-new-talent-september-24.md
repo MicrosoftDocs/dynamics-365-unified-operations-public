@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (September 24, 2018)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent
 
@@ -38,8 +37,8 @@ This topic describes features that are either new or changed in Core HR.
 ## Currency added to Benefits
 
 Benefit plans have been updated to include the currency of the benefit. This new
-field is also available on worker enrolled benefits. 
-This new field is part of the Maintain benefits and View a list of benefits security privilege.
+column is also available on worker enrolled benefits. 
+This new column is part of the Maintain benefits and View a list of benefits security privilege.
 
 ## Update proration process – Leave and Absence
 

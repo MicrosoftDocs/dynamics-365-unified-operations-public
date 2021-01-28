@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SalesTable, SalesTableListPage
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -62,6 +61,8 @@ You can create a purchase order from a sales order. For more information, see [C
 You can cancel only sales orders and return orders that are in a *Created* state. For more information, see [Cancel a return order](../service-management/cancel-return-order.md).
 
 ## When I try to cancel a sales order, I receive a "Reservations cannot be removed because there is work created which relies on the reservations" error.
+
+Error code: WAX4661
 
 If work is associated with a sales order, you can't cancel the sales order until the work is canceled and reversed. This requirement applies even if the work that is associated with the sales order is closed.
 
@@ -111,6 +112,6 @@ Supply Chain Management doesn't currently support the calculation of commissions
 
 ## A bundle item isn't supported in an intercompany process.
 
-The bundle item isn't available for the purchase order because, if you examine the sales order lines for the bundle item, you will notice that the quantity is *0* (zero) and the status is *Cancelled*. This behavior is by design. The sales order buys only the components of the bundle item. It doesn't buy the bundle item itself.
+The bundle item isn't available for the purchase order because, if you examine the sales order lines for the bundle item, you will notice that the quantity is *0* (zero) and the status is *Canceled*. This behavior is by design. The sales order buys only the components of the bundle item. It doesn't buy the bundle item itself.
 
-If you must buy a bundle, consider whether you have to mark it as bundle item, because this functionality is actually designed for revenue recognition scenarios. For more information about bundle items, see [Bundles](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+If you must buy a bundle, consider whether you have to mark it as bundle item, because this functionality is designed for revenue recognition scenarios. For more information about bundle items, see [Bundles](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).

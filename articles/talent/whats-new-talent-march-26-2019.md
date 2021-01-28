@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (March 26, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 03/26/2019
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
 
@@ -55,9 +54,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 **Build 8.1.2210**
 
-### Custom field support available for select entities in Common Data Service 
+### Custom column support available for select tables in Dataverse 
 
-The following Common Data Service entities now support customer fields created in Talent:
+The following Dataverse tables now support customer columns created in Talent:
 
 - Worker
 - Ethnic origin
@@ -78,8 +77,8 @@ In this release, fixed compensation plans now appear when restricting users by c
 ### Can't delete Job records using Open in Excel option in Talent
 With this release, you can now remove job records by using the **Open in Excel** option in Talent.
 
-### Upgrade to Common Data Service
-Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+### Upgrade to Dataverse
+Deadlines to upgrade to Dataverse are quickly approaching. Sign in to the Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Dataverse](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## In preview
 
@@ -100,4 +99,4 @@ In many organizations, compensation and benefits managers might only have access
 With Platform update 25 for Finance and Operations, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event. 
 
 ### Duplicate employee checks: User interface changes
-With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't open automatically.
+With this change, duplicates are detected as you enter name columns, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't open automatically.

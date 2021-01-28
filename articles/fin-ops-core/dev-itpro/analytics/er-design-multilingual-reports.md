@@ -18,7 +18,6 @@ ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -83,15 +82,15 @@ When you configure an ER data model, you can add ER labels for it. **Label** and
 
 When an ER data model is configured in this way, its content will be presented to users of the ER data model designer in each user's preferred language. Therefore, model maintenance is simplified. The following illustrations show how this functionality works for users who have DE-AT and JA set as their preferred language.
 
-![Layout of the ER data model designer for a user having DE-AT set as his preferred language](./media/er-multilingual-labels-refer-de.png)
+![Layout of the ER data model designer for a user having DE-AT set as the preferred language](./media/er-multilingual-labels-refer-de.png)
 
-![Layout of the ER data model designer for a user having JA set as his preferred language](./media/er-multilingual-labels-refer-ja.png)
+![Layout of the ER data model designer for a user having JA set as the preferred language](./media/er-multilingual-labels-refer-ja.png)
 
 ### Model mapping component
 
 Because the ER model mapping is based on an ER data model, the labels of the data model elements that are referred to are appeared in the user's preferred language in the model mapping designer. The following illustration shows how the meaning of the **PurchaseOrder** field is explained in the editable model mapping by using the label of the **Description** attribute that has been added to the configured data model. Notice that this label is presented in the user's preferred language (DE-AT in this example).
 
-![Layout of the ER model mapping designer for a user having DE-AT set as his preferred language](./media/er-multilingual-labels-show-mapping.png)
+![Layout of the ER model mapping designer for a user having DE-AT set as the preferred language](./media/er-multilingual-labels-show-mapping.png)
 
 When the **Label** attribute of the **User input parameter** data source is configured as linked to an ER label, the parameter field that corresponds to this data source is presented in the user dialog box at runtime to users in their preferred language.
 
@@ -163,7 +162,7 @@ ER supports different ways to specify a language for a generated report. In the 
 
     ![Specify in the ER Operation designer a design time defined language as the language of a generated report](./media/er-multilingual-labels-language-context-fixed.png)
 
-- **Defined at run-time** – Generate a report in a language that is specified at runtime. If you select this value, in the **Language** field, configure an ER expression that returns the language code for the language, such as  he language of the corresponding customer.
+- **Defined at run-time** – Generate a report in a language that is specified at runtime. If you select this value, in the **Language** field, configure an ER expression that returns the language code for the language, such as the language of the corresponding customer.
 
     ![Specify in the ER Operation designer a runtime defined language as the language of a generated report](./media/er-multilingual-labels-language-context-runtime.png)
 

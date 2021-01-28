@@ -1,6 +1,6 @@
 ## CDS released distinct products to products
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
 Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
@@ -19,3 +19,4 @@ PRODUCTCOLORID | >> | msdyn_productcolor.msdyn_productcolorname |
 PRODUCTCONFIGURATIONID | >> | msdyn_productconfiguration.msdyn_productconfiguration | 
 PRODUCTSIZEID | >> | msdyn_productsize.msdyn_productsize | 
 PRODUCTSTYLEID | >> | msdyn_productstyle.msdyn_productstyle | 
+ISTOCKEDPRODUCT | >> | msdyn_isstockedproduct |

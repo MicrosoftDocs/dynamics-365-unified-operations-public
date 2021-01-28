@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -91,4 +90,4 @@ One way to improve performance with the built-in master planning engine is to do
 1. Set **Explosion** to *Yes*, and set the field below this setting to 0 (zero).
 
 > [!NOTE]
-> This will limit the number of explosions performed for this master plan on a single day.
+> This will limit the period for explosions performed for this master plan to a single day.

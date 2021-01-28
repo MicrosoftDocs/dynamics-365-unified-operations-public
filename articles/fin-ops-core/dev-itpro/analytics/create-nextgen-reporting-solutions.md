@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21551
 ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
@@ -45,7 +44,7 @@ For this tutorial, you must access the application environment, and you must be 
 - Add interactivity to embedded aggregate reports in forms and workspaces
 - Use framework extensions to customize the parameter experience for SSRS based business documents
 - Export List Page data to create reports with external tools including Microsoft Excel
-- Author modern report designs using enhanced developer tooling in Visual Studio 2015
+- Author modern report designs using enhanced developer tooling in Visual Studio
 
 ## What's new in Reporting?
 - Embedded report drill-through navigations to AX forms and reports
@@ -121,7 +120,7 @@ Business Intelligence can be useful at every level of an organization. Use embed
 
 ### Create development project
 
-1. On the Desktop, right-click the **Visual Studio 2015** shortcut, and select **Run as administrator** to open the development environment.
+1. On the Desktop, right-click the **Visual Studio** shortcut, and select **Run as administrator** to open the development environment.
 2. On the toolbar, click **View**, and then select **Application Explorer**
 3. Use the **Application Explorer** to search for the **FMReservationsReport** form in the **Fleet Management** module.
 4. In the **Application Explorer's** search results, right-click **FMReservationsReport** form, and then select **Add to new project**.
@@ -178,7 +177,7 @@ SSRS continues to be the platform for producing advanced Business Document solut
 
 [![Report designer](./media/report-designer-1024x665.png)](./media/report-designer.png) 
 
-The above is a screen-shot of the FMRentalsByCustomer report design definition as viewed using the Visual Studio 2015 Precision Designer. The Precision Designer offers a free-form design surface with built-in tools that allow you to customize the content and layout of the report. You can also take advantage of embedded VB code to create run-time design manipulations and support user interactions. As an integrated tool, developers are able to reference AX labels and public APIs to format data in the report body based on AX EDTs. MSDN offers a rich collection of developer documentation related to SSRS formatting capabilities. See the article [Reporting Services Reports (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) on for a good primer on designing effective SSRS reports.
+The above is a screen-shot of the FMRentalsByCustomer report design definition as viewed using the Visual Studio Precision Designer. The Precision Designer offers a free-form design surface with built-in tools that allow you to customize the content and layout of the report. You can also take advantage of embedded VB code to create run-time design manipulations and support user interactions. As an integrated tool, developers are able to reference AX labels and public APIs to format data in the report body based on AX EDTs. MSDN offers a rich collection of developer documentation related to SSRS formatting capabilities. See the article [Reporting Services Reports (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) on for a good primer on designing effective SSRS reports.
 
 ## Customizing the parameter experience
 The Reporting Framework offers flexibility through service extensions to facilitate advanced solutions with requirements that cannot be addressed using a modeled solution. Use the VS designer to add basic parameter formatting, grouping, and input validation. X++ based data contract validation is available for more advanced scenarios. Consider adding User Interface (UI) Builder Classes to customize the parameter pane used to prompt for session inputs before running a report. These custom extensions are effective for addressing the following functions:

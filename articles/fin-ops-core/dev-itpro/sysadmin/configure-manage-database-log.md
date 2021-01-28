@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 57201
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
@@ -73,7 +72,7 @@ Here are some practices that Microsoft recommends:
 
 You can use the **Logging database changes** wizard to set up database logging. This wizard provides a flexible way to set up logging for tables or fields.
 
-1. Go to **System administration** \> **Setup** \> **Database** \> **Database log setup**.
+1. Go to **System administration** \> **Setup** \> **Database log** \> **Database log setup**.
 2. Select **New** to open the **Logging database changes** wizard.
 3. Complete the wizard.
 

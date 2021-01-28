@@ -3,7 +3,7 @@
 
 title: Advanced formatting options in financial reporting
 description: When you create a report in financial reporting, additional formatting functions are available, including filters for dimensions, restrictions for columns and reporting units, non-printing rows, and IF/THEN/ELSE statements in calculations.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
@@ -18,7 +18,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang:
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa

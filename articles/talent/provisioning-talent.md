@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -93,7 +92,7 @@ Use the following guidance when determining which Power Apps environment to depl
 
 2. A single Talent environment is mapped to a single Power Apps environment.
 
-3. A Power Apps environment contains Talent, along with the corresponding Power Apps, Power Automate, and Common Data Service applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Talent environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
+3. A Power Apps environment contains Talent, along with the corresponding Power Apps, Power Automate, and Dataverse applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Talent environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
 
 4. Data integration and testing strategies should be considered, such as Sandbox, UAT, or Production. We recommend that you consider the various implications for your deployment, because it isn't easy to later change which Talent environment is mapped to a Power Apps environment.
 

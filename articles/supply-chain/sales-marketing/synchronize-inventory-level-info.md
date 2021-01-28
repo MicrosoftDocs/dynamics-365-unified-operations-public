@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,6 +32,8 @@ ms.search.validFrom: 2018-12-01
 # Synchronize inventory level information from Supply Chain Management to Field Service 
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic discusses the templates and underlying tasks that are used to synchronize inventory-level information from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
@@ -55,7 +56,7 @@ The following synchronization tasks are required before synchronization of inven
 
 | Field Service                      | Supply Chain Management                |
 |------------------------------------|----------------------------------------|
-| msdynce_externalproductinventories | CDS inventory on-hand by warehouse     |
+| msdynce_externalproductinventories | Dataverse inventory on-hand by warehouse     |
 
 ## Entity flow
 Inventory-level information from Finance and Operation is sent to Field Service for selected products. The inventory-level information includes: 

@@ -18,7 +18,6 @@ ms.search.form: RetailTillLayout
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
@@ -119,6 +118,9 @@ In Full POS layouts, the placement of button grids is specified in the screen la
 In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the highest number. They can be accessed on the **Actions** menu.
 
 ![Compact layout button grids](../commerce/media/Compact-View-Button-Grids.png)
+
+> [!NOTE]
+> The button sizes in the designer will scale to fit the size of the window, therefore they may not accurately reflect the actual buttons rendered in POS. To best simulate the button grid layout, adjust the designer windows to the same size as the POS.
 
 ### Images
 

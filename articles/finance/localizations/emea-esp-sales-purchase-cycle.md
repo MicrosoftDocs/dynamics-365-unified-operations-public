@@ -17,7 +17,6 @@ ms.search.form: CustParameters, SrmParameters, SalesPurchCycle
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263444
 ms.search.region: Spain

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
@@ -30,7 +29,7 @@ ms.dyn365.ops.version: 10.0.13
 # Commerce localization for Brazil
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic describes the scope of the Microsoft Dynamics 365 Commerce functionality that is specific to Brazil. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Brazil (within the scope of the [Brazilian localization](../../finance/localizations/latam-bra-scope.md#brazilian-localization-strategy)).
 

@@ -19,7 +19,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -84,7 +83,7 @@ Databases are protected by automatic backups at the following frequencies:
 | Differential database backup | Every 12-24 hours |
 | Transaction log backup | Every 5 to 10 minutes |
 
-Microsoft retains sufficient backups to allow for Point in Time Restore (PITR) within the last seven days. 
+Microsoft retains sufficient backups to allow for Point in Time Restore (PITR) within the last 14 days. 
 
 For more information, see [Learn about automatic SQL Database backups](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
@@ -36,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Introduction
 
-In Microsoft Dynamics AX 2009, the number of dimensions was limited to a minimum of three and a maximum of ten. Additionally, the dimensions were entered in a fixed order. Therefore, code customization and database synchronization were required for every dimension that was added. Then, in Microsoft Dynamics AX 2012, the dimension framework was expanded to allow for an unlimited number of dimensions. The user could also dynamically create dimensions and enter them in any order. Finance and Operations keeps the behavior from AX 2012. The unlimited nature of the model, the advantages that come from relational database design, and optimization for performance requirements have led to a data model that is more complex than any earlier data model.
+In Microsoft Dynamics AX 2009, the number of dimensions was limited to a minimum of three and a maximum of ten. Additionally, the dimensions were entered in a fixed order. Therefore, code customization and database synchronization were required for every dimension that was added. Then, in Microsoft Dynamics AX 2012, the dimension framework was expanded to allow for a greater number of dimensions - up to ~50 (due to SQL database limits on total column counts in our tables). The user could also dynamically create dimensions and enter them in any order. Finance and Operations keeps the behavior from AX 2012. The unlimited nature of the model, the advantages that come from relational database design, and optimization for performance requirements have led to a data model that is more complex than any earlier data model.
 
 ## Part 1: "What happens when I create a ledger account combination?"
 

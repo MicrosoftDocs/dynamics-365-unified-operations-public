@@ -3,7 +3,7 @@
 
 title: Sales tax report for Finland
 description: This topic provides information about how to set up and generate the sales tax report for legal entities in Finland. 
-author: v-lurodi
+author: anasyash
 ms.author: AnnBe
 ms.date: 03/23/2020
 ms.topic: article
@@ -18,7 +18,6 @@ manager:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
