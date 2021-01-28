@@ -132,4 +132,4 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 
 ## Is there a potential impact on the environment's certificates?
 
-Yes, if you are migrating from the previous non self-service deployment, your environment’s certificate may be renewed due to infrastructure differences. Determine if there is any dependence on the certificates in your solution/integration and preform the needed actions after the migration.
+Yes, if you are migrating from the previous non self-service deployment, your environment’s certificate may be renewed due to infrastructure differences. Determine if there is any dependence on the certificates in your solution/integration and perform the needed actions after the migration.
