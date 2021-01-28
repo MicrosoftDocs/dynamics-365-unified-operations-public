@@ -288,7 +288,7 @@ The following table lists the SQL Server versions that are supported for the dat
 
 ## Software requirements for client computers
 
-Users can access the Finance and Operations web application by using the most recent versions of these popular browsers:
+Users can access Finance + Operations by using the most recent versions of these popular browsers:
 
 - Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf))
 - Google Chrome
