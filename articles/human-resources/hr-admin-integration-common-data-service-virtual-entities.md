@@ -49,7 +49,7 @@ You can view the list of virtual tables enabled in the environment, and begin wo
 
 ## Virtual tables versus native tables
 
-Virtual tables for Human Resources aren't the same as the natural Dataverse tables created for Human Resources. 
+Virtual tables for Human Resources aren't the same as the native Dataverse tables created for Human Resources. 
 
 The natural tables for Human Resources are generated separately and maintained in the HCM Common solution in Dataverse. With natural tables, the data is stored in Dataverse and requires synchronization with the Human Resources application database.
 
