@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.1
 # Archive credit card transaction data
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes an archival job that can be used to free up database space by archiving credit card transactions.
 
@@ -63,28 +63,24 @@ The archival job archives data in the `PaymentAuthorization`, `PaymentCaptureTok
 
 ## Batch job setup
 
-To access the archival job, in Commerce headquarters go to **Retail and commerce \> Retail and Commerce IT \> Clean up \> Archive credit card transaction data**. The first dialog box for the batch job will require the user to enter the age in days for credit card authorizations that will be subject to archiving. This value should be set to the length of time that customers can have refunds linked to their original credit card authorization. If the age in days is set to 365 days, a return for a transaction 366 days old may still be eligible for refund based on the merchant's policies, but since the data required to perform a linked refund will not be available, any refund would need to be a standalone refund. 
+To access the archival job, in Commerce headquarters go to **Retail and commerce \> Retail and Commerce IT \> Clean up \> Archive credit card transaction data**. The **Archive credit card transaction data** dialog box for the batch job requires you to enter the age in days under **Minimum transaction age in days** for credit card authorizations that will be subject to archiving. This value should be set to the length of time that customers can have refunds linked to their original credit card authorization. If the age in days is set to 365 days, a return for a transaction 366 days old may still be eligible for refund based on the merchant's policies, but since the data required to perform a linked refund will not be available, any refund would need to be a standalone refund. 
 
-In addition to the **Minimum transaction age in days**, the archival job dialog box includes details for recurrence. Batch processing is enabled by default and cannot be changed. 
+In addition to the minimum transaction age in days, the **Archive credit card transaction data** dialog box includes options for job recurrence. Batch processing is enabled by default and cannot be changed. 
 
-The following image shows
+The following example image shows the **Archive credit card transaction data** dialog box parameters.
 
-![Parameters](media/PAYMENTS/Batch1.png)
+![Archive credit card transaction data dialog box parameters](media/PAYMENTS/Batch1.png)
 
-Once the parameters and batch details have been established, select **Next** to view a sample of the data to be exported. The data in this view is limited, but all data subject to archiving can be exported. 
+Once the parameters and batch details have been established, select **Next** to view a sample of the data to be exported, as shown in the following image. The data in this view is limited, but all data subject to archiving can be exported. 
 
-The following image shows
-
-![Data](media/PAYMENTS/Batch2.png)
+![View of sample of data to be exported](media/PAYMENTS/Batch2.png)
 
 > [!NOTE]
 > The data subject to archiving includes personally identifiable customer information such as the name of the cardholder. This sensitive data should be handled according to your local regulatory requirements.
 
-After confirming the parameters for data to be archived, you will be prompted to confirm that the data being archived is not easily restored. 
-
-The following image shows
+After confirming the parameters for data to be archived, you will be prompted to confirm that the data being archived is not easily restored, as shown in the following image. 
  
-![Data](media/PAYMENTS/Batch3.png)
+![Confirmation prompt](media/PAYMENTS/Batch3.png)
  
 After selecting **Yes**, the archival job will be active and authorization XML data older than the **Minimum transaction age in days** will be subject to archiving. 
 
