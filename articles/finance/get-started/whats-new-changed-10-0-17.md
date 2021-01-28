@@ -28,16 +28,16 @@ ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: 10.0.17
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.17 (February 2021)
+# Preview features in Dynamics 365 Finance 10.0.17 (April 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.16. This version has a build number of 10.0.xxx and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.17. This version has a build number of 10.0.761 and is available as follows:
 
-- **Preview release:** January 2020
-- **General availability (self-update):** February 2021
-- **Auto-update:** March 2021
+- **Preview release:** February 2020
+- **General availability (self-update):** March 2021
+- **Auto-update:** April 2021
 
 ## Features included in this release
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
