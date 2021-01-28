@@ -103,6 +103,8 @@ The following table shows the list types that are available for selection in the
 
 [Module library overview](starter-kit-overview.md)
 
+[Quick view module](quick-view-module.md)
+
 [Carousel module](add-carousel.md)
 
 [Content rich block module](add-content-rich-block.md)
