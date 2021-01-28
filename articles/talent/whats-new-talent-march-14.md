@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (March 14, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 03/14/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
 
@@ -61,8 +61,8 @@ With the current release, changing the office location will no longer switch the
 ### Position assignment end date doesn't display correctly on worker hire and transfer actions
 Position assignment end dates now display correctly based on the user preferred time zone when using actions.
 
-### Common Data Service job entity doesn't allow Job type and Job function fields to update
-Common Data Service entities now syncronize correctly when updated using the Common Data Service.
+### Dataverse job table doesn't allow Job type and Job function columns to update
+Dataverse tables now syncronize correctly when updated using the Dataverse.
 
 ## Coming soon
 
@@ -73,4 +73,4 @@ In many organizations, the compensation and benefits managers might only have ac
 With Platform update 24 for Finance and Operations, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
 
 ### Duplicate employee check: Interface changes
-With this change, duplicates are detected as you enter name fields, and a status displays how many were found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.
+With this change, duplicates are detected as you enter name columns, and a status displays how many were found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.

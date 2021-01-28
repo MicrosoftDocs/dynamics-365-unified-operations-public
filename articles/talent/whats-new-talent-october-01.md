@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (October 1, 2018)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Talent
 
@@ -67,7 +67,7 @@ leavers in an organization. Options include: Prorated, Full accrual, and No accr
 
 ## Other changes
 
--   Employee entity updated - The **Personal** title can now be updated using the Excel
+-   Employee table updated - The **Personal** title can now be updated using the Excel
     add-in/data management.
 
 -   Security change to allow removal of the **Delete** and **Deactivate** buttons in

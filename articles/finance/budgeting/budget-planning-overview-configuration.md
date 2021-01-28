@@ -3,7 +3,7 @@
 
 title: Budget planning overview
 description: This topic describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article

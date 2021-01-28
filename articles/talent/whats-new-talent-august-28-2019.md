@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 for Talent (August 27, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 8/27/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-08-27
 ms.dyn365.ops.version: Talent
 
@@ -68,9 +68,9 @@ In this release, compensation analytics have been adjusted to accurately reflect
 
 With this release, the company placeholder displays the legal entity that is associated with the employment of the new employee.
 
-### The CDSJobPosition entity displays an error when valid to date is set (349387)
+### The CDSJobPosition table displays an error when valid to date is set (349387)
 
-In this release, the **Position detail** and the **Position duration** data sources on the **CDSJobPosition** entity allow for edits from Common Data Service to the **Date effective** fields. 
+In this release, the **Position detail** and the **Position duration** data sources on the **CDSJobPosition** table allow for edits from Dataverse to the **Date effective** columns. 
 
 ### For employee termination, the last day worked is populated on Assignment end date (332496)
 

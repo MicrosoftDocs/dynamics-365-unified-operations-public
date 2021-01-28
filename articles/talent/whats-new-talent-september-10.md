@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (September 10, 2018)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-09-06
 ms.dyn365.ops.version: Talent September 10, 2018 update
 
@@ -49,11 +49,11 @@ Depending on how leave is configured, employees who try to submit a time-off req
 
 This validation is always turned on. Any time that employees exceed the day threshold that is defined, they receive a warning in their time-off request.
 
-## Additional fields for conditional statements in workflows
+## Additional columns for conditional statements in workflows
 
-Additional fields have been added to conditional statements and placeholders for several workflows in Core HR.
+Additional columns have been added to conditional statements and placeholders for several workflows in Core HR.
 
-The following fields have been added to the compensation, termination, and transfer workflows:
+The following columns have been added to the compensation, termination, and transfer workflows:
 
 - EmploymentType
 - LegalEntity
@@ -76,7 +76,7 @@ The following fields have been added to the compensation, termination, and trans
 - JobFamily
 - JobFunction
 
-The following fields have been added to the position workflow:
+The following columns have been added to the position workflow:
 
 - Position
 - Union
@@ -100,5 +100,5 @@ In personnel management, if Attract hasn't been set up, the **Candidates to hire
 This release includes several additional bug fixes:
 
 - When a contractor is hired, the **Compensation** tab should not be available on the request/action page.
-- During the request termination process, you can't continue until all required fields contain data.
+- During the request termination process, you can't continue until all required columns contain data.
 - Sort order and date display issues on the Personnel management analytics have been addressed.

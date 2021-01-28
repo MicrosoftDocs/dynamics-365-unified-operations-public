@@ -3,7 +3,7 @@
 
 title: Extend the budget planning layout
 description: This topic explains how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
@@ -21,7 +21,7 @@ ms.reviewer: roschlom
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2019-07-31 
 ms.dyn365.ops.version: 10.0.4
 ---

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview of Dynamics 365 Supply Chain Management 10.0.16 (February 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.16 (February 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.16. 
 author: kamaybac
 manager: annbe
@@ -28,12 +28,11 @@ ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.16 (February 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.16 (February 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.16. This version has a build number of 10.0.689 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.16. This version has a build number of 10.0.689 and is available as follows:
 
 - **Preview of release:** November 2020
 - **General availability of release (self-update):** January 2021

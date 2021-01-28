@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: Anbichse
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
 
@@ -54,9 +54,9 @@ For more information, see [Configure the payroll integration between Talent and 
 
 Support has been added for tax regions outside the United States. When tax regions are assigned to workers, they can drive tax calculations and can be used in integrations with external payroll solutions.
 
-## The title field has been expanded in Talent
+## The title column has been expanded in Talent
 
-Titles have been expanded in this update. The field is now 65 characters. This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.
+Titles have been expanded in this update. The column is now 65 characters. This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.
 
 ## Benefit enrollment status report
 

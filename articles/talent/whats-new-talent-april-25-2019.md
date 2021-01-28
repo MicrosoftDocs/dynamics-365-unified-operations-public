@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (April 23, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 04/23/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
 
@@ -43,11 +43,11 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2253. Numbers in parentheses refer to support numbers in Lifecycle Services (LCS).
 
-### Common Data Service entity support for custom fields
-With this week's release, the following entities support custom fields: Compensation level, Benefit option, Skill type, and Compensation region.
+### Dataverse table support for custom columns
+With this week's release, the following tables support custom columns: Compensation level, Benefit option, Skill type, and Compensation region.
 
-### Additional OData entities (302992)
-The following entities are now supported within OData: Worker professional experience and Worker education.
+### Additional OData tables (302992)
+The following tables are now supported within OData: Worker professional experience and Worker education.
    
 ### Performance journal attachments for managers and employees (308248)
 With this release, attachments are now available for both managers and employees when creating and updating performance journal entries.
@@ -78,7 +78,7 @@ Tracking employee time off and understanding how time off is calculated not only
 ## Coming soon
 
 ### Improvements to the user interface for duplicate employee check
-With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
+With this change, duplicates are detected as you enter name columns, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
 ## Known issues
 
 ### Email support for alerts
