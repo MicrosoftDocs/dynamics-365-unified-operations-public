@@ -58,7 +58,7 @@ To set up over and under delivery reasons, go to **Landed cost \> Over/Under Set
 | --- | --- |
 | **Over/under reason** | Enter a unique name for the reason of the over or under receiving transaction. |
 | **Description** | Enter a description of the over or under receiving reason. |
-| **Movement** | Select the movement journal associated with the over/under reason. This drop-down list shows each of the available journals with the type of movement associated with it in the **Journals** page. <!-- KFM: please clarify this last sentence. Which type of movement? Is that the right page name? --> |
+| **Movement** | Select the movement journal associated with the over/under reason. This drop-down list shows each of the available journals with the **Journal type** of *Movement* associated with it in the **Inventory journal names** page (**Inventory management Setup \> Journal names \> Inventory**). |
 
 ## Item over/under tolerance groups
 
@@ -68,7 +68,7 @@ To set up item over/under tolerance groups, go to **Landed cost \> Over/under se
 
 | Setting | Description |
 | --- | --- |
-| **Over/under tolerance group** | Enter a unique name for the group. This can be associated with a group of items with similar values. <!-- KFM: how? --> |
+| **Over/under tolerance group** | Enter a unique name for the group. Choose a name that describes the tolerance, such as *1% Var*. |
 | **Description** | Enter a description of the group. |
 
 ## Vendor over/under tolerance groups
@@ -79,14 +79,14 @@ To set up vendor over/under tolerance groups, go to **Landed cost \> Over/under 
 
 | Setting | Description |
 | --- | --- |
-| **Over/under groups** | Enter a unique name for the group. This can be associated with a group of vendors who regularly process in the same way. <!-- KFM: how? -->  |
+| **Over/under groups** | Enter a unique name for the group. Choose a name that describes the type of vendors that would be part of this group. |
 | **Description** | Enter a description of the group. |
 
 ## View and process over/under transactions
 
 Over and under transactions are generated when the quantity of goods that are put away doesn't match the initialized quantity. The quantity on the arrival journal should only be updated with the put-away quantity.
 
-When processing the receipt of voyage lines, over/under tolerances can be set by a vendor and the items will be reviewed and validated. <!-- KFM: Do we mean set by a vendor or set for a vendor? --> The tolerance can be set either as both % and local amount. <!-- KFM: Do we mean either or both? -->
+When processing the receipt of voyage lines, over/under tolerances can be set for a vendor and the items will be reviewed and validated. The tolerance can be set as percent, local amount, or both.
 
 When an item is received that is inside the tolerance, the system will generate a movement journal, which can be specified from the voyage parameters form. In addition, an over/under transaction will be created. For example, suppose you have an order value of $100 and a receive value of $99, and that this satisfies the tolerance rules. In this case, negative movement journal for the under received quantity will be created.
 
@@ -96,7 +96,7 @@ To view and process over/under transactions, go to **Landed cost \> Inquiries \>
 
 ### The upper Overview tab
 
-To view your over/under transactions, open the **Overview** tab in the top section of the **Over/under transactions** page. The following table describes each column displayed in the grid. <!-- KFM: I think these are all ready only, so I wrote them that way. Please confirm -->
+To view your over/under transactions, open the **Overview** tab in the top section of the **Over/under transactions** page. The following table describes each column displayed in the grid.
 
 | Setting | Description |
 | --- | --- |
@@ -105,8 +105,7 @@ To view your over/under transactions, open the **Overview** tab in the top secti
 | **Shipping container** | Shows the container the purchase line was attached to. |
 | **Arrival journal** | Shows the arrival journal the over/under line was generated from. |
 | **Reference** | Shows a reference to either the purchase order or transfer order associated with the over/under transaction |
-| **Number** | Shows the goods in transit order number associated with the record. |
-| **Purchase order** | Shows the purchase order referenced on the over/under transaction.  <!-- KFM: Removed? --> |
+| **Number** | Shows the purchase order referenced on the over/under transaction. |
 | **Vendor account** | Shows the vendor that the over/under relates to. |
 | **Goods in transit number** | Shows the goods in transit number, if applicable. |
 | **Item number** | Shows the item number the over/under relates to. |
@@ -121,27 +120,28 @@ To view your over/under transactions, open the **Overview** tab in the top secti
 
 ### The General tab
 
-To XXXX, open the **General** tab in the top section of the **Over/under transactions** page
-
-<!-- KFM: Briefly describe this tab -->
+Open the **General** tab in the top section of the **Over/under transactions** page to see more information about the line currently selected in the upper **Overview** tab. Here you can see values for all available dimensions and other information about the line. This information is pulled from the originating purchase order.
 
 ### The lower Overview tab
 
-To XXXX, open the **Overview** tab in the bottom section of the **Over/under transactions** page
+Use the **Overview** tab in the bottom section to view the document type for the row selected in the upper **Overview** tab. The following table describes the columns available here.
 
-<!-- KFM: Briefly describe this tab -->
+| Column | Description |
+| --- | --- |
+| **New document type** | Will show either *Movement journal* or *Purchase order*, depending on the action shown on the selected over/under transaction line. |
+| **Number** | Provides a reference and link to either the purchase order or movement journal associated with the selected over/under transaction line. |
+| **Over/under reason** | Shows the reason associated with the selected over/under transaction line. |
+| **Quantity** | Shows the quantity that you have selected for the purchase order or movement journal associated with the selected over/under transaction line. |
 
 ### The lower General tab
 
-To XXXX, open the **General** tab in the bottom section of the **Over/under transactions** page
-
-<!-- KFM: Briefly describe this tab -->
+Open the **General** tab in the bottom section of the **Over/under transactions** page to see the **Over/under transaction number**, **Lot ID** and **Dimension number** associated with the selected over/under transaction line. 
 
 ### Process over/under transactions
 
-<!-- KFM: Give a quick summary of what we can do here. A link t the scenario was suggested, but it seems like we don't have a scenario for this. -->
+The Action Pane on the **Over/under transactions** page provides the following commands for processing the transactions selected on the page. Each action enables you choose how to process each of these transactions.
 
-- **Create \> Movement** - 
-- **Create \> Purchase order** - 
-- **Create \> Transfer to destination** - 
-- **Create \> Transfer to origin** - 
+- **Create \> Movement** - Create and post a movement journal for the selected transaction. For under transactions, a movement journal is created and posted automatically for the difference between the expected and actual received quantity. You would select this option for over transactions if you want the vendor to realize the cost difference.
+- **Create \> Purchase order** - Creates a purchase order for the difference between the expected and actual received quantity of the selected transaction. You would select this option for over transactions if your organization will realize the cost difference.
+- **Create \> Transfer to destination** - This command only applies for transfer orders. If you'd like to transfer the over or under quantity to the destination warehouse.
+- **Create \> Transfer to origin** - This command only applies for transfer orders. If you'd like to transfer the over or under quantity to the origin warehouse.

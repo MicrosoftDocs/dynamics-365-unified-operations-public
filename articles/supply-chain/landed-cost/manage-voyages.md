@@ -185,9 +185,8 @@ The following table describes the settings available on the **Other** FastTab of
 
 The Landed cost module includes several voyage-related periodic tasks that can bulk update any of several different aspects of voyages. You can run or schedule them by expanding **Landed cost > Periodic tasks > Voyage updates** in the side navigator and then selecting the type of task. The tasks are:
 
-- **Documents received**
-- **In transit**
-- **Ready for costing**
-- **Costed**
+- **Documents received** - Lets you set the documents received status to several voyages at the same time. Use the **Filter** settings to define the set of voyages you want to update.
+- **In transit** - Lets you set the in-transit status to several voyages at the same time. Use the **Filter** settings to define the set of voyages you want to update.
+- **Ready for costing** - Lets you update all voyages that are ready to be costed, but have not yet been so. You would typically set this task to run on a regular schedule.
+- **Costed**  - Lets you sets all qualifying voyages to the costed status, provided they have been costed and not yet updated on the voyage. You would typically set this task to run on a regular schedule.
 
-<!-- KFM: It would be nice to provide a short description of each of the above, unless they are entirely obvious based on their names. -->

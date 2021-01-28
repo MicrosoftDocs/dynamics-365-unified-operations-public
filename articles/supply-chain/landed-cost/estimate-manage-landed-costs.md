@@ -37,7 +37,7 @@ The system uses your [auto cost setup](auto-cost-setup.md) to determine an estim
 
 ### Set up cost templates
 
-Cost templates establish default settings that users getting the estimate may not necessarily know. Templates can help reduce complexity in the estimating process by minimizing the selections that users need to specify to get an accurate estimate. <!-- KFM: Add a few words about how/where the templates are used (eg, when setting up a new voyage or journey) -->
+Cost templates establish default settings that users getting the estimate may not necessarily know. Templates can help reduce complexity in the estimating process by minimizing the selections that users need to specify to get an accurate estimate. If you are using the standard cost model, you'll be able to use cost templates while setting up the cost of goods.
 
 To set up your cost templates, go to **Landed cost \> Costing setup \> Cost templates**. This page includes a list pane that lists current cost templates and provides Action Pane actions to create, delete, and edit listed templates. The following table describes the settings available for each template.
 
@@ -65,7 +65,7 @@ Make the following settings on the **Parameters** tab of the **Cost estimate** d
 | --- | --- |
 | **Cost template** | Select a cost template. The settings associated with your selected template will be used to identify the auto costs to apply. |
 | **Estimate date** | This is set to today's date by default, but you can change it if needed. The date specified will be used to select the appropriate sales prices, purchase prices, auto costs and exchange rate (where shipping rate is used). |
-| **Measurement** | If the cost depends on a measurement (such as when using air freight, where volumetric pricing may apply) then enter the value of that measurement. Otherwise, we recommend that set this to 1 unless you are certain that no apportionment occurs using measurement. <!-- KFM:  What about the unit? As defined on auto cost? --> |
+| **Measurement** | If the cost depends on a measurement (such as when using air freight, where volumetric pricing may apply) then enter the value of that measurement. Otherwise, we recommend that set this to 1 unless you are certain that no apportionment occurs using measurement. Enter a decimal value here. The unit is the one defined on the applicable auto-cost record. |
 | **Journey template** | Select a [journey template](multi-leg-journey-setup.md). This selection is used to locate the correct auto costs to apply. |
 | **From port** | Shows the port that the items will be shipped from. This is populated based on the selected journey template. |
 | **To port** | Shows the port that the items will be shipped to. This is populated based on the selected journey template. |
@@ -84,9 +84,9 @@ The **Items** tab lets you add as many items as needed to the estimate. Use the 
 | **Vendor account** | Select the vendor to use for the estimate of this item. (If the item has a default vendor assigned, this will be populated automatically.) |
 | **Quantity** | Select the quantity that you will purchase. |
 | **Cost price** | The system finds an initial price using its pricing rules, but you can override if necessary. |
-| **Sales price** | <!-- KFM: Description needed --> |
-| **Measurement** | <!-- KFM: Description needed --> |
-| **Update item weight/volume** | <!-- KFM: Description needed --> |
+| **Sales price** | Enter the expected sales price for the good. |
+| **Measurement** | Enter a decimal value for the measurement of the good. The unit is set up for the applicable released product. |
+| **Update item weight/volume** | Select this check box if you would like to update the weight or volume measurement on the released product to match the **Measurement** entered for this row. |
 | (Other dimensions) | Depending on which dimensions you have chosen to display, you may see additional columns of information about each item. |
 
 To view or adjust volume an/or weight details for an item, select the item in the grid and then use the fields at the bottom of the page.
@@ -109,10 +109,9 @@ The **Lines** FastTab lists each item included in the current estimate. The foll
 | --- | --- |
 | **Vendor Account** | The vendor account associated with the item. |
 | **Item Number** | The item number. |
-| **Site** | The site is shown here. <!-- KFM: I don't see this. Removed? --> |
 | **Quantity** | The number of items used to determine the cost. |
 | **Cost Price** | The cost price (according to the trade agreement) shown in local currency. |
-| **Measurement** | The individual measurement is shown here.<!-- KFM:  What about the unit? As defined on auto cost? --> |
+| **Measurement** | The individual measurement is shown here. The unit is the one defined for the applicable released product. |
 | **Estimated landed cost** | The estimated landed cost for the total quantity. |
 | **Per unit** | The estimated landed cost divided by the quantity. |
 | (Other dimensions) | Depending on which dimensions you have chosen to display, you may see additional columns of information about each item. |
@@ -128,11 +127,11 @@ The following table describes the commands available on the **Lines** FastTab to
 
 ### The General FastTab
 
-The **General** FastTab shows details about the item currently selected on the **Lines** FastTab. Much of this information is repeated from the Lines FastTab and can be edited at either location. However, additional details are also available here. <!-- KFM: The original was very out of date, so I added this. Please confirm. More to say? -->
+The **General** FastTab shows details about the item currently selected on the **Lines** FastTab. Much of this information is repeated from the **Lines** FastTab and can be edited at either location. However, additional details are also available here. The extra fields here show values based on the relevant released product setup.
 
 ### The Dimension FastTab
 
-The **Dimension** FastTab shows values for all available inventory dimensions for the item selected on the **Lines** FastTab, regardless of which dimensions you have chosen to display there. <!-- KFM: I added this. Please confirm. More to say? -->
+The **Dimension** FastTab shows values for all available inventory dimensions for the item selected on the **Lines** FastTab, regardless of which dimensions you have chosen to display there. The values shown here (if any) come from the applicable cost estimate template. They are optional on the cost estimate template.
 
 ### Commands on the Action Pane
 
@@ -140,15 +139,15 @@ The **Cost estimates** page includes an Action Pane with commands for working wi
 
 | Action | Description |
 | --- | --- |
-| **Cost Inquiry** | View all costs for the shipment. Cost can be viewed at the individual item level if required. <!-- KFM: Do we mean "shipment". How can I view them at the individual item level? --> |
-| **Update standard cost** | Updates the standard cost using the default costing version defined on the shipment parameters <!-- KFM: Where is this setting? -->. It is possible to override this version <!-- KFM: How? -->.<br><br>**Note**: If an item has many <!-- KFM: How many? --> item dimensions (such as various sizes, colors, configurations, and so on) and these have not been selected for the estimate, the system will create a pending price for each combination.<br><br>**Important**: The price breakdown is created. This is used to determine the standard cost variance per landed cost.<!-- KFM: This isn't clear to me. What is a price breakdown? --> |
+| **Cost Inquiry** | View all costs for the voyage. The **Cost inquiry** page opens displaying this information. Cost can be viewed at the individual item level by selected **View** from the action pane and then selecting view options from the dialog box. |
+| **Update standard cost** | Updates the standard cost using the default costing version defined on the **Landed cost** parameters page. This open a dialog box where it is possible to override this version and choose which items to update.<br><br>**Note**: If an item has more than one item dimensions (such as various sizes, colors, configurations, and so on) and these have not been selected for the estimate, the system will create a pending price for each combination.<br><br>**Important**: The price breakdown is created, which breaks down the various costs within the standard cost of each selected item. This is used to determine the standard cost variance per landed cost. |
 | **Voyage costs** | View and edit voyage costs for all goods within the shipment. |
 | **Recalculate** | When voyage costs are updated, added, or removed, select this button to update the estimated landed costs. |
 | **Lock** | Lock the cost estimate record so that no further changes can be made. |
 
 ## Item cost price update
 
-The Item **Item cost price update** periodic task updates all cost estimates that match the filters you set when running the task. The effect is similar to when you select **Recalculate** from the Action Pane for a single estimate, but in this case it applies to all matching estimates. <!-- KFM: I wrote this. Please confirm. -->
+The **Item cost price update** periodic task updates all cost estimates that match the filters you set when running the task. The effect is similar to when you select **Update standard cost** from the Action Pane for a single estimate, but in this case it applies to all matching estimates.
 
 To run the task:
 

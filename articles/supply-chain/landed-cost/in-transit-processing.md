@@ -41,13 +41,12 @@ The following subsections describe the setup required to process inventory and v
 
 When you enable the Landed cost module, the standard *terms of delivery* entity is enhanced to support the goods in transit feature.
 
-When this is selected <!--KFM: What is selected, where? --> the goods are placed into the in-transit warehouse. This is only triggered when an invoice is processed without the inventory receipt being processed first. When an order has the delivery terms set to use goods in transit, users can no longer post a product receipt for the purchase order. If they try, an error will show stating that they must use the goods in transit functionality to proceed.
+When **Goods in transit management** option is set to *Yes* for the applicable terms of delivery record, the goods are placed into the in-transit warehouse. This is only triggered when an invoice is processed without the inventory receipt being processed first. When an order has the delivery terms set to use goods in transit, users can no longer post a product receipt for the purchase order. If they try, an error will show stating that they must use the goods in transit functionality to proceed.
 
 To work with delivery terms information for goods in transit, go to **Procurement and Sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the settings that the Landed cost module adds to the **Terms of delivery** page to support the goods in transit functionality. Both settings are on the **General** FastTab. For more information about the other settings on this page, see [Terms of delivery (form)](https://technet.microsoft.com/en-us/library/aa575567.aspx).
 
 | **Field** | **Description** |
 | --- | --- |
-| **Delivery terms** | Enter a short code that identifies the terms of delivery. <!--KFM: Is this really added by Landed cost? --> |
 | **Shipping port mandatory** | Set to *Yes* if a shipping port is mandatory where these delivery terms apply. |
 | **Goods in transit management** | Set to *Yes* to use in-transit management where these delivery terms apply. |
 
@@ -113,7 +112,7 @@ Goods can additionally be received by creating an arrival journal. You can navig
 1. The **Create arrival journal** dialog box opens. Make the following settings:
 
     - **Initialize quantity** - Set to *Yes* to set the quantity from the in-transit quantity. If this is set to *No*, no default quantity is set from the goods in transit lines.
-    - **Create from goods in transit** - Set to *Yes* to set selected in-transit lines for the selected voyage, container, or folio. <!-- KFM: Please clarify. maybe "assign ... to" instead of "set ...  for"? -->
+    - **Create from goods in transit** - Set to *Yes* to take quantities from the selected in-transit lines for the selected voyage, container, or folio.
     - **Create from order lines** - Set this to *Yes* to set the default quantity on the arrival journal from the purchase order lines. You can do this provided there are no differences between the purchase order line and the goods in transit order quantity.
 
 1. Process the arrival journal as described in [Register item receipts with an item arrival journal](https://technet.microsoft.com/en-us/library/aa571129.aspx).
@@ -141,7 +140,7 @@ Landed cost adds following work creation processes to the mobile device menu ite
 
 The configuration settings for each of these are similar to those for the [purchase order receive and putaway work creation processes](https://technet.microsoft.com/en-us/library/dn553216.aspx). However, the *Goods in transit item receiving and putaway* process also adds the following setting:
 
-- **Enable shipping container complete** – When set to *Yes*, at completion of the putaway work, the warehouse app will provide an additional option called **Shipping container complete**. When selected, teh worker will be asked to confirm that the container is complete. At this point, all short receipts will be processed as an under transaction. <!-- KFM: I assumed this new option is on the warehouse app and that the work does this. True? -->
+- **Enable shipping container complete** – When set to *Yes*, at completion of the putaway work, the warehouse app will provide an additional option called **Shipping container complete**. When selected, the worker will be asked to confirm that the container is complete. At this point, all short receipts will be processed as an under transaction.
 
 ### Location directives
 

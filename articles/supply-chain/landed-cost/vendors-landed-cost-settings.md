@@ -40,9 +40,9 @@ To find the relevant settings, go to **Procurement and sourcing \> Vendors \> Al
 | --- | --- |
 | **Shipping type** | <p>Identifies the role of the vendor in relation to Landed cost. Select one of the following values:</p><ul><li>**None:** This is the default setting. It identifies a vendor that has no specific role related to Landed cost. Most vendors will probably have this value.</li><li>**Shipping company:** Identifies the vendor as a shipping company. Vendors with this value are available in the **Shipping company** drop-down list on the **Voyages** page.</li><li>**Customs broker:** Identifies the vendor as a customs broker. Vendors with this value are available in the **Customs broker** drop-down list on the **Folios** page.</li><li>**Agent:** Identifies the vendor as an agent. Vendors with this value are available in the **Agent** drop-down list on the **Vendors** and **Purchase orders** pages. |
 | **Cost type group** | Assign the vendor to a cost type group for the purpose of selecting [auto costs](auto-cost-setup.md). |
-| **From port** | <!-- KFM: Description needed. --> |
+| **From port** | Select the port of origin for the voyage. |
 | **Agent** | The default agent when purchasing from this vendor. |
-| **Import costing vendor** | <p>This indicates whether the vendor is a Landed cost vendor.</p><p>**Tip**: You can use this to restrict the purchase orders displayed in the and shipment creation pages <!-- KFM: Which pages do we mean here? -->. Use record level security to achieve this. |
+| **Import costing vendor** | <p>This indicates whether the vendor is a Landed cost vendor.</p><p>**Tip**: You can use this to restrict the purchase orders displayed on the **Voyage creation** page. Use record level security to achieve this. |
 | **Shipping Company** | Select the defaults the shipping company to use when creating purchase orders for this vendor. |
 | **Services Provider** | This indicates whether the vendor is services provider. |
 | **Over/Under Tolerance Group** | Select the default over/under tolerance group for this vendor. |
