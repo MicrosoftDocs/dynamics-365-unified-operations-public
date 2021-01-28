@@ -1153,7 +1153,7 @@
       - name: When to reset a data mart
         href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
       - name: Financial reporting FAQ
-        href: general-ledger/general-ledger/financial-reporting-faq.md
+        href: general-ledger/financial-reporting-faq.md
     - name: Finance insights
       items:
       - name: Finance insights home page
