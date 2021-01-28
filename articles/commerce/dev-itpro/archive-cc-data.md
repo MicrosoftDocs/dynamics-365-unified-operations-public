@@ -47,7 +47,7 @@ When using the archival job, it is important to understand that the data cannot 
 
 | Term | Description |
 |---|---|
-| Auth blob | The response returned from a credit card processor as a result of a payment request. This response is stored in as an XML blob and can take up a large amounts of database space over time. |
+| Auth blob | The response returned from a credit card processor as a result of a payment request. This response is stored in as an XML blob and can take up a large amount of database space over time. |
 | Linked refund | A refund request that references a previous transaction. Linked refunds are viewed as lower risk by processors and have lower associated fees. |
 | Standalone refund | A refund request that does not reference a previous transaction. Standalone refunds carry higher risk and have higher processing fees. |
 
