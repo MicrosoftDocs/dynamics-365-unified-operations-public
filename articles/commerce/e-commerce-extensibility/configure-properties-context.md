@@ -294,8 +294,18 @@ The following tables list possible scenarios and expected outcomes when schema d
 
 ## Additional resources
 
-[Add module configuration fields](add-module-config-fields.md)
+[Request properties object](request-properties-object.md)
+
+[App settings](app-settings.md)
 
 [Module definition file](module-definition-file.md)
+
+[Extend a module definition file](extend-module-definition.md)
+
+[Cookie API overview](cookie-api-overview.md)
+
+[Interactive components overview](interactive-components.md)
+
+[Add module configuration fields](add-module-config-fields.md)
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
