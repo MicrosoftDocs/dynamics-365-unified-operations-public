@@ -32,12 +32,13 @@ ms.dyn365.ops.version: 10.0.17
 
 This topic lists system busines events. 
 
-## Batch Business Events
+## Batch business events
+
 The batch framework emits the following system business events
-* Batch Started
-* Batch Completed
-* Batch Failed
-* Batch Cancelled
+- Batch Started
+- Batch Completed
+- Batch Failed
+- Batch Cancelled
 
 These business events can be used to monitor the batch jobs and notify stakeholders on completion/failure. The Start and Completed/Failed events can be used to determine long running batch jobs. 
 
