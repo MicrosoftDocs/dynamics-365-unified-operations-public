@@ -36,7 +36,7 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Platform updates for 10.0.17 | 7.0.5934    | March 2021     | [Platform updates for version 10.0.17 of Finance and Operations apps](whats-new-platform-updates-10-0-17.md)  |
+| Platform updates for 10.0.17 | 7.0.5934    | April 2021     | [Platform updates for version 10.0.17 of Finance and Operations apps](whats-new-platform-updates-10-0-17.md)  |
 | Platform updates for 10.0.16 | 7.0.5860    | February 2021  | [Platform updates for version 10.0.16 of Finance and Operations apps](whats-new-platform-updates-10-0-16.md)  |
 | Platform updates for 10.0.15 | 7.0.5816     | January 2021     | [Platform updates for version 10.0.15 of Finance and Operations apps](whats-new-platform-updates-10-0-15.md)  |
 | Platform updates for 10.0.14 | 7.0.5778      | November 2020     | [Platform updates for version 10.0.14 of Finance and Operations apps](whats-new-platform-updates-10-0-14.md)  |
