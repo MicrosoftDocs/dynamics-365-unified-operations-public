@@ -109,7 +109,7 @@ Use the following guidance when determining which Power Apps environment to depl
 
 2. A single Human Resources environment is mapped to a single Power Apps environment.
 
-3. A Power Apps environment contains Human Resources, along with the corresponding Power Apps, Power Automate, and Common Data Service applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Human Resources environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
+3. A Power Apps environment contains Human Resources, along with the corresponding Power Apps, Power Automate, and Dataverse applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Human Resources environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
 
 4. Data integration and testing strategies should be considered, such as Sandbox, UAT, or Production. Carefully consider the implications for your deployment, because it's not easy to change which Human Resources environment is mapped to a Power Apps environment.
 
