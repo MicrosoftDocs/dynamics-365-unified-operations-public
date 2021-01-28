@@ -64,7 +64,7 @@ The following features are included in this release. Some of the listed features
 
 - [Manufacturing execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - For more information, see [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
-- [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
+- [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see [Set different dimensions for packing and storage](../warehousing/packing-vs-storage-dimensions.md)
 
 - Override the default reservation principle for materials in production<br> - For more information, see [Override the default reservation principle for materials in production](../production-control/override-default-reservation-principle.md). <!-- KFM: Not yet published on release plan, but is ready. Should be in the next publish. -->
 
@@ -94,8 +94,6 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
-- [Asset management mobile workspace](../asset-management/set-up-asset-management-mobile.md)
-
 - [Configure product filters for warehouse transactions](../warehousing/filters-and-filter-codes.md)
 
 - [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)
@@ -113,6 +111,8 @@ We have recently added or significantly updated the following help topics. They 
 - [Production planning](../master-planning/planning-optimization/production-planning.md) <!--KFM: Remember to add YouTube link to this topic -->
 
 - [Purchase requisitions in master planning](../master-planning/planning-optimization/purchase-requisitions.md)
+
+- [Set up the Asset management mobile workspace](../asset-management/set-up-asset-management-mobile.md)
 
 - [Troubleshoot cost management](../cost-management/troubleshoot-costmanagement.md)
 
