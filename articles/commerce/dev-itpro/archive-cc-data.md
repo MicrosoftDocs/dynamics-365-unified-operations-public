@@ -41,21 +41,21 @@ For every credit card authorization, the authentication binary large object ([au
 
 The parameters for the archival job are based on the age of the transaction in days. In other words, if the **Minimum transaction age in days** is set to **365**, then all credit authorization XML data older than 365 days will be subject to archiving when the job is run. 
 
-When using the archival job it is important to understand that the data cannot be easily restored. For this reason, transactions subject to [linked refunds](#key-terms) should not be archived. For example, if a merchant's returns policy allows for transactions to be returned to the same credit card for refund within 2 years, the parameter for the job should be set to 730 days (2 years). In this example, if a transaction is returned after 730 days, the XML required to perform a linked refund will not be found, so the customer will need to be refunded via a [standalone refund](#key-terms) to a credit card or to some other payment method such as a credit memo or gift card. 
+When using the archival job, it is important to understand that the data cannot be easily restored. For this reason, transactions subject to [linked refunds](#key-terms) should not be archived. For example, if a merchant's returns policy allows for transactions to be returned to the same credit card for refund within two years, the parameter for the job should be set to 730 days (tw0 years). In this example, if a transaction is returned after 730 days, the XML required to perform a linked refund will not be found, so the customer will need to be refunded via a [standalone refund](#key-terms) to a credit card or to some other payment method such as a credit memo or gift card. 
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Auth blob | The response returned from a credit card processor as a result of a payment request. This response is stored in as an XML blob and take up a lot of database space over time. |
-| Linked refund | A refund request which references a previous transaction. Linked refunds are generally viewed as lower risk by processors and have lower associated fees. |
-| Standalone refund | A refund request which does not reference a previous transaction. Standalone refunds carry higher risk and have higher processing fees. |
+| Auth blob | The response returned from a credit card processor as a result of a payment request. This response is stored in as an XML blob and can take up a large amounts of database space over time. |
+| Linked refund | A refund request that references a previous transaction. Linked refunds are viewed as lower risk by processors and have lower associated fees. |
+| Standalone refund | A refund request that does not reference a previous transaction. Standalone refunds carry higher risk and have higher processing fees. |
 
 ## Document management dependency
 
 When the archival job is run, aged credited card XML data is exported in a .zip file using document management. If document management is not set up in an environment, the credit card data archival job will not be able to run successfully. For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 
-The archival job will process all credit card payment data that meets the **Minimum transaction age in days** criteria. If the job is enabled and according to the criteria there is a large number of records which need to be processed, the job may take several days to complete. Once the backlog of payments has been archived, the job will not take as long to process. 
+The archival job will process all credit card payment data that meets the **Minimum transaction age in days** criteria. If the job is enabled and (according to the criteria) there is a large number of records that need to be processed, the job execution may take several days to complete. Once the backlog of payments has been archived, the job will not take as long to process. 
 
 ## Data in scope for archival
 
