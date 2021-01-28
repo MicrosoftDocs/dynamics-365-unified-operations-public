@@ -45,9 +45,9 @@ The following features are included in this release. Some of the listed features
 
 - [Apply rules for grouping work orders while running a maintenance plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)
 
-- [Approve and save vendor-submitted bank details](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details)
+- [Approve and save vendor-submitted bank details](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) 
 
-- Asset management capabilities in the production floor execution interface<br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md). <!--KFM: Why not on release plan? -->
+- Asset management capabilities in the production floor execution interface<br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md).  <!-- KFM: Not yet published on release plan, but is ready. Should be in the next publish. -->
 
 - [Bill customers for maintenance work](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)
 
@@ -55,16 +55,16 @@ The following features are included in this release. Some of the listed features
 
 - [Enable change management on existing products](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)
 
-- Enterprise-scale inventory performance improvements and archiving <!-- KFM: New feature from Sherry. Probably not in current RP publish -->
+<!-- KFM: Add this when the feature appears in release plan at next update
+- Enterprise-scale inventory performance improvements and archiving  -->
 
-- [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management)<br> - For more information, see [Inventory Visibility Add-in](../inventory/inventory-visibility.md). <!--KFM: More docs are coming. Add them here as they go live. -->
+- [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management)<br> - For more information, see [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
 
 - [Landed cost](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)
 
 - [Manufacturing execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - For more information, see [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
-<!--KFM: This feature has issues. Wait to hear from Sanjay.
-- [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see  -->
+- [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 
 - Override the default reservation principle for materials in production<br> - For more information, see [Override the default reservation principle for materials in production](../production-control/override-default-reservation-principle.md). <!-- KFM: Not yet published on release plan, but is ready. Should be in the next publish. -->
 
@@ -80,7 +80,7 @@ The following features are included in this release. Some of the listed features
 
 - [Schedule warehouse work creation](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation) <br> - For more information, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md).
 
-- [Set default financial dimensions for inventory standard cost revaluation vouchers](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers) <br> - For more information, see [Manage standard cost updates](../cost-management/manage-standard-cost-updates.md).
+- [Set default financial dimensions for inventory standard cost revaluation vouchers](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - For more information, see [Manage standard cost updates](../cost-management/manage-standard-cost-updates.md).
 
 - [Small parcel shipping (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)<br> - For more information, see [Small parcel shipping](../warehousing/small-parcel-shipping.md).
 
@@ -103,9 +103,13 @@ We have recently added or significantly updated the following help topics. They 
 - [Partial location cycle counting](../warehousing/partial-location-cycle-counting.md)
 - [Pick line grouping](../warehousing/pick-line-grouping.md)
 - [Production planning](../master-planning/planning-optimization/production-planning.md) <!--KFM: Remember to add YouTube link to this topic -->
+
 - [Purchase requisitions in master planning](../master-planning/planning-optimization/purchase-requisitions.md)
+
 - [Troubleshoot cost management](../cost-management/troubleshoot-costmanagement.md)
+
 - [Troubleshoot inventory operations](../inventory/troubleshoot-inventory-operations.md)
+
 - [Warehouse slotting](../warehousing/warehouse-slotting.md)
 
 ## Additional resources
