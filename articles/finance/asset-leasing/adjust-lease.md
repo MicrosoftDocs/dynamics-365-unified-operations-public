@@ -112,7 +112,7 @@ To delete a lease adjustment in progress, complete the following steps.
 
 ## Use lease adjustment workflows
 
-This topic explains how to use the lease adjustment workflow. The lease adjustment workflow helps you manage lease adjustments consistently  by providing a set of approval steps and assigning them to specific users who approve a lease adjustment before it becomes final. After the lease adjustment is approved in the workflow, you can complete the lease adjustment using the lease adjustment wizard.
+This section explains how to use the lease adjustment workflow. The lease adjustment workflow helps you manage lease adjustments consistently by providing a set of approval steps and assigning them to specific users who approve a lease adjustment before it becomes final. After the lease adjustment is approved in the workflow, you can complete the lease adjustment using the lease adjustment wizard.
 
 1.	To submit a lease adjustment for approval, go **Lease > Leases > Lease adjustments**.
 2.	Select the lease adjustment and click **Adjustment wizard**.
@@ -138,7 +138,7 @@ The system will recalculate the carrying values of the lease to ensure the adjus
 
 ## View lease versions
 
-If a lease has been modified, you can view the different versions of it. You can also view the historical schedules and past lease details.
+If a lease has been adjusted, you can view the different versions of it. You can also view the historical schedules and past lease details.
 
 1. On the **Lease summary** page, select the lease, and then select **Lease version history** from the Action Pane.
 
