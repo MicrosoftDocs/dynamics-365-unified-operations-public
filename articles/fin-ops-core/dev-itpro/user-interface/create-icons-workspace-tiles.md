@@ -55,10 +55,10 @@ Guidelines for creating images for custom workspace tiles are below. The recomme
 Following these recommendations ensures that your workspace icon matches the styling and size of other workspace icons and that the content of your workspace icon does not get cropped by the CSS applied to the image.
 
 -   The image file should be a PNG file with a 1:1 aspect ratio.
--   The recommended minimum image size is 50 × 50 pixels (px), where the icon is contained in a square that is centered in the image. For the minimum 50 × 50 px image size, the icon should be contained in a **30 × 30 px** square in the center of the image (see the illustration that follows).
+-   The recommended minimum image size is 50 × 50 pixels (px), where the icon is contained in a square that is centered in the image. For the minimum 50 × 50 px image size, the icon should be contained in a **30 × 30 px** square in the center of the image.
 
     > [!NOTE]
-    > The crispness of out-of-box workspace icons and custom workspace icons might differ at different zoom levels. The reason for this difference is that images in PNG format have a fixed resolution, whereas out-of-box workspace icons are font glyphs that scale smoothly. For better resolution at different zoom levels, consider creating larger images that have the same relative dimensions. For example, create 200 × 200 px or 400 × 400 px images.
+    > The crispness of out-of-box workspace icons and custom workspace icons might differ at different zoom levels. The reason for this difference is that images in PNG format have a fixed resolution, whereas out-of-box workspace icons are font glyphs that scale smoothly. For better resolution at different zoom levels, consider creating larger images with the same relative dimensions. For example, create 200 × 200 px or 400 × 400 px images.
 
 -   The icon should have a **white background with transparent content**. 
 -   The framework will set a default background color for the transparent portions of your image so that it will match the current user theme.
