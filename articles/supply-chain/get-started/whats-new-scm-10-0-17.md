@@ -51,7 +51,7 @@ The following features are included in this release. Some of the listed features
 
 - [Bill customers for maintenance work](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)
 
-- [Coverage time fence support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - For more information, see [Coverage time fences](../master-planning/planning-optimization/coverage-time-fence).
+- [Coverage time fence support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - For more information, see [Coverage time fences](../master-planning/planning-optimization/coverage-time-fence.md).
 
 - [Enable change management on existing products](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)
 
