@@ -121,6 +121,7 @@ The following lists show the ER format configurations that are available for the
 #### Brazilian NFS-e (BR): NFS-e ABRASF Curitiba city
 
 - NFS-e ABRASF Curitiba (BR)
+- NFS-e ABRASF Inquire Curitiba (BR)
 
 #### Brazilian (BR) NFS-e: NFS-e São Paulo city
 
