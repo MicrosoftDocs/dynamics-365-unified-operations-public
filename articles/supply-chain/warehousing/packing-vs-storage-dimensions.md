@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set different dimensions for packing and storage
-description: Some items are packed or stored in such a way that you may need to track physical dimensions differently for each of several different processes. This topic shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
+description: This topic shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
 author: mirzaab
 manager: tfehr
 ms.date: 01/28/2021
@@ -33,14 +33,14 @@ ms.dyn365.ops.version: Release 10.0.17
 
 Some items are packed or stored in such a way that you may need to track physical dimensions differently for each of several different processes. The *Packaging product dimensions* feature lets you set up one or several types of dimensions for each product. Each dimension type provides a set of physical measurements (weight, width, depth, and height), and establishes the process where those physical measurement values apply. When this feature is enabled, your system will support the following types of dimensions:
 
-- *Storage* - Storage dimensions are used along with location volumetrics to determine how many of each item can be stored various warehouse locations.
+- *Storage* - Storage dimensions are used along with location volumetrics to determine how many of each item can be stored in various warehouse locations.
 - *Packing* - Packing dimensions are used during containerization and the manual packing process to determine how many of each item will fit in various container types.
 - *Nested packing* - Nested packing dimensions are used when the packing process contains multiple levels.
 
-*Storage* dimensions are supported even when the *Packaging product dimensions* feature isn't enabled. You set these up using the **Physical dimension** page, which has long been available in Supply Chain Management. These dimensions are used by all processes where the packing and nested packing dimensions aren't specified.
+*Storage* dimensions are supported even when the *Packaging product dimensions* feature isn't enabled. You set these up using the **Physical dimension** page in Supply Chain Management. These dimensions are used by all processes where the packing and nested packing dimensions aren't specified.
 
-*Packing* and *nested packing* dimensions are set up using the **Physical product dimensions** page, which is added when you enable the Packaging product dimensions feature.
-The remainder of this topic provides a scenario that illustrates how to use this feature.
+*Packing* and *nested packing* dimensions are set up using the **Physical product dimensions** page, which is added when you enable the *Packaging product dimensions* feature.
+This topic provides a scenario that illustrates how to use this feature.
 
 ## Turn on the packaging product dimensions feature
 
@@ -53,7 +53,7 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ### Set up the scenario
 
-Before you can run the example scenario, you must prepare you system as described in this section.
+Before you can run the example scenario, you must prepare your system as described in this section.
 
 #### Enable demo data
 
@@ -66,7 +66,7 @@ Add a new physical dimension for a product by doing the following:
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the product with **Item number** *A0001*.
 1. On the Action Pane, open the **Manage inventory** tab and, from the **Warehouse** group, select **Physical product dimensions**.
-1. The **Physical product dimensions** page opens. On the Action Pane, select **New** to add a new dimension to the grid and make the following settings for it:
+1. The **Physical product dimensions** page opens. On the Action Pane, select **New** to add a new dimension to the grid with the following settings:
     - **Physical dimension type** - *Packing*
     - **Physical unit** - *pcs*
     - **Weight** - *4*
@@ -106,7 +106,7 @@ Go to **Warehouse management \> Setup \> Containers \> Container build templates
 
 ### Run the scenario
 
-Once you have prepared your system as described in the previous section, you are ready to run the scenario as described here.
+After you have prepared your system as described in the previous section, you are ready to run the scenario as described in the next section.
 
 #### Create a sales order and create a shipment
 
@@ -125,11 +125,11 @@ In this process you will create a shipment based on the item *packing* dimension
     - **Item number:** *A0001*
     - **Quantity:** *5*
 
-1. On the **Sales order lines** FastTab toolbar, select **Inventory \> Reservation**.
+1. On the **Sales order lines** FastTab, select **Inventory \> Reservation**.
 1. On the **Reservation** page, on the Action Pane, select **Reserve lot** to reserve the inventory.
 1. Close the page.
 1. On the Action Pane, open the **Warehouse** tab and select **Release to warehouse** to create work for the warehouse.
-1. On the **Sales order lines** FastTab toolbar, select **Warehouse \> Shipment details**.
+1. On the **Sales order lines** FastTab, select **Warehouse \> Shipment details**.
 1. On the Action Pane, open the **Transportation** tab and select **View containers**. Confirm that the item was containerized into the two *Short Box* containers.
 
 #### Place an item into storage
