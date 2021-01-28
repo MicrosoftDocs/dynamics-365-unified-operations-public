@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure the Electronic invoicing add-on in the Regulatory configuration service (RCS)
-description: This topic explains how to configure the electronic invoicing add-on in RCS. 
+title: Configure the Electronic invoicing add-on in Regulatory Configuration Services (RCS)
+description: This topic explains how to configure the Electronic invoicing add-on in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
 manager: AnnBe
 ms.date: 01/25/2021
@@ -29,277 +29,275 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Configure the Electronic invoicing add-on in the Regulatory configuration service (RCS)
+# Configure the Electronic invoicing add-on in Regulatory Configuration Services (RCS)
 
 [!include [banner](../includes/banner.md)]
 
+This topic provides information about the configuration capabilities of the Electronic invoicing add-on in Dynamics 365 Regulatory Configuration Services (RCS).
 
-This topic provides information about the configuration capabilities of the Electronic invoicing add-on in the Regulatory configuration service (RCS).
-
-The most important configuration pillar allows you to fulfill business and regulatory requirements of electronic invoices without any required coding. In scenarios where electornic invoices must be sent to submitted to an external party through web services, the configuration capabilities fulfill file formatting and communication requirements.
+The most important configuration pillar helps you meet business and regulatory requirements of electronic invoices without having to do any coding. In scenarios where electronic invoices must be submitted to an external party through web services, the configuration capabilities also help you meet file formatting and communication requirements.
 
 ## Electronic reporting
 
-Electronic reporting supports the Electronic invoicing add-on.
+Electronic reporting (ER) supports the Electronic invoicing add-on.
 
-The data model mapping and formats are configurable components that are created and maintained through Electronic reporting and utilized in the Electronic invoicing add-on. The Format designer from Electronic reporting, is the tool for creating and maintaining file formats. The designer is used to configure electronic invoicing features.
+The data model mapping and formats are configurable components that are created and maintained through ER and used in the Electronic invoicing add-on. The ER format designer is the tool for creating and maintaining file formats. It's used to configure the electronic invoicing features.
 
 For more information, see [Electronic reporting (ER) overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## Electronic invoicing features
 
-The electronic invoicing features are responsible for generating electronic invoices through the Electronic invoicing add-on. The features encapsulate the configuration rules and use them to process the data sent by Dynamics 365 Finance and Dynamics 365 Supply Chain Management to the Electronic invoicing add-on and into electronic invoices.
+The electronic invoicing features are responsible for generating electronic invoices through the Electronic invoicing add-on. They encapsulate the configuration rules and use them to process the data that Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management send to the Electronic invoicing add-on and to electronic invoices.
 
-The features also support scenarios where compliance with file format specifications is required, in most cases these published by the tax authority, and where the output is an stand alone electronic file. 
+The features also support scenarios where compliance with file format specifications is required and the output is a standalone electronic file. In most cases, the file format specifications are published by the tax authority.
 
-The electronic invoicing features also support exchanging messages with external web services, either hosted by the tax authority or by some accredited party, and requesting authorization or an approval stamp in the electronic invoice.
+Finally, the features support the exchange of messages with external web services that are hosted either by the tax authority or by some accredited party, and requests for authorization or an approval stamp in the electronic invoice.
 
-### Electronic invoicing feature availability
+### Availability of electronic invoicing features
 
-The availability of Electronic invoicing features is based on country/region. While some features are generally available, others are in preview.
+Availability of the electronic invoicing features depends on the country or region. Although some features are generally available, others are in preview.
 
 #### Generally available features
 
-The features in the following table are generally available at this time. 
+The following table shows the electronic invoicing features that are currently generally available.
 
-| Country/Region    | Feature name                             | Business document                      |
-|-------------------|------------------------------------------|----------------------------------------|
-| Egypt             | Egyptian electronic invoice (EG)         | Sales and Project invoices             |
+| Country/region | Feature name                     | Business document |
+|----------------|----------------------------------|-------------------|
+| Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 
 #### Preview features
 
-The features in the following table are still in preview.
+The following table shows the electronic invoicing features that are currently still in preview.
 
-| Country/Region    | Feature name                             | Business document                      |
-|-------------------|------------------------------------------|----------------------------------------|
-| Austria           | Austrian electronic invoices (AT)        | Sales and Project invoices             |
-| Belgium           | Belgian electronic invoice (BE)          | Sales and Project invoices             |
-| Brazil            | Brazilian NF-e (BR)                      | Fiscal document model 55, Correction letter, Cancellation and Discard|
-| Brazil            | Brazilian NFS-e ABRASF Curitiba (BR)     | Service fiscal document                |
-| Brazil            | Brazilian NFS-e São Paulo (BR)           | Service fiscal document                |
-| Denmark           | Danish electronic invoice (DK)           | Sales and Project invoices             |
-| Estonia           | Estonian electronic invoice (EE)         | Sales and Project invoices             |
-| Finland           | Finnish electronic invoice (FI)          | Sales and Project invoices             |
-| France            | French electronic invoice (FR)           | Sales and Project invoices             |
-| Germany           | German electronic invoice (DE)           | Sales and Project invoices             |
-| Italy             | FatturaPA (IT)                           | Sales and Project invoices             |
-| Mexico            | Mexican CFDI (MX)                        | Sales invoices, Packing slip, Invent transfer, Payment complement, Cancellation |
-| Netherlands       | Dutch electronic invoice (NL)            | Sales and Project invoices             |
-| Norway            | Norwegian electronic invoice (NO)        | Sales and Project invoices             |
-| Spain             | Spanish electronic invoice (ES)          | Sales and Project invoices             |
-| Europe            | PEPPOL electronic invoice                | PEPPOL Sales and Project invoices      |
+| Country/region | Feature name                         | Business document |
+|----------------|--------------------------------------|-------------------|
+| Austria        | Austrian electronic invoices (AT)    | Sales invoices and project invoices |
+| Belgium        | Belgian electronic invoice (BE)      | Sales invoices and project invoices |
+| Brazil         | Brazilian NF-e (BR)                  | Fiscal document model 55, correction letters, cancellations, and discards |
+| Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
+| Brazil         | Brazilian NFS-e São Paulo (BR)       | Service fiscal documents |
+| Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
+| Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
+| Finland        | Finnish electronic invoice (FI)      | Sales invoices and project invoices |
+| France         | French electronic invoice (FR)       | Sales invoices and project invoices |
+| Germany        | German electronic invoice (DE)       | Sales invoices and project invoices |
+| Italy          | FatturaPA (IT)                       | Sales invoices and project invoices |
+| Mexico         | Mexican CFDI (MX)                    | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
+| Netherlands    | Dutch electronic invoice (NL)        | Sales invoices and project invoices |
+| Norway         | Norwegian electronic invoice (NO)    | Sales invoices and project invoices |
+| Spain          | Spanish electronic invoice (ES)      | Sales invoices and project invoices |
+| Europe         | PEPPOL electronic invoice            | PEPPOL sales invoices and project invoices |
 
-### Electronic invoicing configurable components
+### Configurable components of electronic invoicing features
 
-Electronic invoicing features are composed of following groups of configurable components:
+The electronic invoicing features consist of the following groups of configurable components:
 
-  - Formats: Allows you to configure what the Electronic invoicing add-on must generate when an electronic document becomes an electronic invoice. Formats include the format configuration for the electronic invoice and the format configuration for files and messages used to submit requests and receive responses when communication with an external web service is required.
-  - Actions: Allows you to configure how the Electronic invoicing add-on generates the transformation of an electronic document that was submitted by Finance and Supply Chain Management into an electronic invoice.
-  - Applicability rules: Allows you to configure the context the Electronic invoicing add-on must consider to process an electronic invoicing feature.
-  - Variables: Allows you to configure the variables used to support the construction of the configuration logic. Variables can work as an input of values to accomplish a specific action, or an exchange of values between Finance and Supply Chain Management and the Electronic invoicing add-on.
-  - Electronic document model mapping: Alloww you to configure the Electronic reporting model mapping. The model mapping defines the data mapping of the abstract invoice that's integrated to the Electronic invoicing add-on when electronic documents are submitted.
-  - Invoice context model: Allows you to configure the Electronic reporting invoice context model and define the context of the Electronic invoicing feature.
-  - Response types: Allows you to configure what the Electronic invoicing add-on must update in Finance and Supply Chain Management as the result of the electronic invoice processing.
+- **Formats** – Formats let you configure what the Electronic invoicing add-on must generate when an electronic document becomes an electronic invoice. Formats include the format configuration for the electronic invoice, and for files and messages that are used to submit requests and receive responses when communication with an external web service is required.
+- **Actions** – Actions let you configure how the Electronic invoicing add-on generates the transformation of an electronic document that Finance and Supply Chain Management submitted into an electronic invoice.
+- **Applicability rules** – Applicability rules let you configure the context that the Electronic invoicing add-on must consider to process an electronic invoicing feature.
+- **Variables** – Variables let you configure the support for the construction of the configuration logic. Variables can work as the input of values to perform a specific action. Alternatively, they can work as an exchange of values between Finance and Supply Chain Management and the Electronic invoicing add-on.
+- **Electronic document model mapping** – The electronic document model mapping lets you configure the ER model mapping. The model mapping defines the data mapping of the abstract invoice that is integrated into the Electronic invoicing add-on when electronic documents are submitted.
+- **Invoice context model** – The invoice context model lets you configure the ER invoice context model and define the context of an electronic invoicing feature.
+- **Response types** – Response types let you configure what the Electronic invoicing add-on must update in Finance and Supply Chain Management as a result of the electronic invoice processing.
 
 ### Formats
 
-The following tables list the available ER format configurations for the Electronic invoicing features:
+The following lists show the ER format configurations that are available for the electronic invoicing features.
 
-| Austrian (AT) electronic invoices: Sales and Project invoices for Austria    |
-|------------------------------------------------------------------------------|
-| OIOUBL Sales invoice                                                         |
-| OIOUBL Project invoice                                                       |
-| OIOUBL Sales credit note                                                     |
-| OIOUBL Project credit note                                                   |
+#### Austrian (AT) electronic invoices: Sales and project invoices for Austria
 
-| Belgian (BE) electronic invoice: Sales and Project invoices for Belgium      |
-|------------------------------------------------------------------------------|
-| UBL Sales invoice BE                                                         |
-| UBL Project invoice BE                                                       |
-| UBL Project credit note BE                                                   |
-| UBL Sales credit note BE                                                     |
+- OIOUBL Sales invoice
+- OIOUBL Project invoice
+- OIOUBL Sales credit note
+- OIOUBL Project credit note
 
-| Brazilian (BR) NF-e: NF-e Federal (Brazil)                                   |
-|------------------------------------------------------------------------------|
-| NF-e submit export format (BR)                                               |
-| NF-e correction letter export format (BR)                                    |
-| NF-e cancel export format (BR)                                               |
-| NF-e discard export format (BR)                                              |
+#### Belgian (BE) electronic invoice: Sales and project invoices for Belgium
 
-| Brazilian NFS-e (BR): NFS-e ABRASF Curitiba city                             |
-|------------------------------------------------------------------------------|
-| NFS-e ABRASF Curitiba (BR))                                                  |
+- UBL Sales invoice BE
+- UBL Project invoice BE
+- UBL Project credit note BE
+- UBL Sales credit note BE
 
-| Brazilian (BR) NFS-e: NFS-e São Paulo city                                   |
-|------------------------------------------------------------------------------|
-| NFS-e Sao Paulo (BR)                                                   |
+#### Brazilian (BR) NF-e: NF-e Federal (Brazil)
 
-| Danish (DK) electronic invoice: Sales and Project invoices for Denmark       |
-|------------------------------------------------------------------------------|
-| OIOUBL Sales invoice                                                         |
-| OIOUBL Project invoice                                                       |
-| OIOUBL Sales credit note                                                     |
-| OIOUBL Project credit note                                                   |
+- NF-e submit export format (BR)
+- NF-e correction letter export format (BR)
+- NF-e cancel export format (BR)
+- NF-e discard export format (BR)
 
-| Dutch (NL) electronic invoice: Sales and Project invoices for Netherlands    |
-|------------------------------------------------------------------------------|
-| UBL Sales invoice NL                                                         |
-| UBL Project invoice NL                                                       |
-| UBL Project credit note NL                                                   |
-| UBL Sales credit note NL                                                     |
+#### Brazilian NFS-e (BR): NFS-e ABRASF Curitiba city
 
-| Egyptian (EG) electronic invoice: Sales and Project invoices for Egypt       |
-|------------------------------------------------------------------------------|
-| Sales invoice (EG)(Invoicing)                                                |
-| Project invoice (EG)(Invoicing)                                              |
+- NFS-e ABRASF Curitiba (BR)
 
-| Estonian (EE) electronic invoice: Sales and Project invoices for Estonia     |
-|------------------------------------------------------------------------------|
-| Sales invoice (EE)                                                           |
-| Project invoice (EE)                                                         |
+#### Brazilian (BR) NFS-e: NFS-e São Paulo city
 
-| Finnish  (FI) electronic invoice: Sales and Project invoices for Finland      |
-|------------------------------------------------------------------------------|
-| Sales invoice (FI)                                                           |
-| Project invoice (FI)                                                         |
+- NFS-e Sao Paulo (BR)
 
-| French (FR) electronic invoice: Sales and Project invoices for France        |
-|------------------------------------------------------------------------------|
-| UBL Sales invoice FR                                                         |
-| UBL Project invoice FR                                                       |
-| UBL Project credit note FR                                                   |
-| UBL Sales credit note FR                                                     |
+#### Danish (DK) electronic invoice: Sales and project invoices for Denmark
 
-| German (DE) electronic invoice: Sales and Project invoices for Germany       |
-|------------------------------------------------------------------------------|
-| Sales invoice (DE)                                                           |
-| Project invoice (DE)                                                         |
+- OIOUBL Sales invoice
+- OIOUBL Project invoice
+- OIOUBL Sales credit note
+- OIOUBL Project credit note
 
-| Italian (IT) electronic invoice: Sales and Project invoices for Italy         |
-|------------------------------------------------------------------------------|
-| Sales invoice (IT)                                                           |
-| Project invoice (IT)                                                         |
+#### Dutch (NL) electronic invoice: Sales and project invoices for Netherlands
 
-| Mexican (MX) CFDI: CFDI for Mexico                                                     |
-|------------------------------------------------------------------------------|
-| CFDI invoice format (MX)                                                     |
-| CFDI Packing slip (MX)                                                       |
-| CFDI Inventory transfer (MX)                                                 |
-| CFDI payment format(MX)                                                      |
-| CFDI invoice cancel format (MX)                                              |
+- UBL Sales invoice NL
+- UBL Project invoice NL
+- UBL Project credit note NL
+- UBL Sales credit note NL
 
-| Norwegian (NO) electronic invoice: Sales and Project invoices for Norway     |
-|------------------------------------------------------------------------------|
-| OIOUBL Sales invoice                                                         |
-| OIOUBL Project invoice                                                       |
-| OIOUBL Sales credit note                                                     |
-| OIOUBL Project credit note                                                   |
+#### Egyptian (EG) electronic invoice: Sales and project invoices for Egypt
 
-| PEPPOL electronic invoice: PEPPOL Sales and Project invoices                 |
-|------------------------------------------------------------------------------|
-| PEPPOL Sales invoice                                                         |
-| PEPPOL Project invoice                                                       |
-| PEPPOL Sales credit note                                                     |
-| PEPPOL Project credit note                                                   |
+- Sales invoice (EG)(Invoicing)
+- Project invoice (EG)(Invoicing)
 
-| Spanish (ES) electronic invoice: Sales and Project invoices for Spain        |
-|------------------------------------------------------------------------------|
-| Sales invoice (ES)                                                           |
-| Project invoice (ES)                                                         |
+#### Estonian (EE) electronic invoice: Sales and project invoices for Estonia
+
+- Sales invoice (EE)
+- Project invoice (EE)
+
+#### Finnish (FI) electronic invoice: Sales and project invoices for Finland
+
+- Sales invoice (FI)
+- Project invoice (FI)
+
+#### French (FR) electronic invoice: Sales and project invoices for France
+
+- UBL Sales invoice FR
+- UBL Project invoice FR
+- UBL Project credit note FR
+- UBL Sales credit note FR
+
+#### German (DE) electronic invoice: Sales and project invoices for Germany
+
+- Sales invoice (DE)
+- Project invoice (DE)
+
+#### Italian (IT) electronic invoice: Sales and project invoices for Italy
+
+- Sales invoice (IT)
+- Project invoice (IT)
+
+#### Mexican (MX) CFDI: CFDI for Mexico
+
+- CFDI invoice format (MX)
+- CFDI Packing slip (MX)
+- CFDI Inventory transfer (MX)
+- CFDI payment format (MX)
+- CFDI invoice cancel format (MX)
+
+#### Norwegian (NO) electronic invoice: Sales and project invoices for Norway
+
+- OIOUBL Sales invoice
+- OIOUBL Project invoice
+- OIOUBL Sales credit note
+- OIOUBL Project credit note
+
+#### PEPPOL electronic invoice: PEPPOL sales and project invoices
+
+- PEPPOL Sales invoice
+- PEPPOL Project invoice
+- PEPPOL Sales credit note
+- PEPPOL Project credit note
+
+#### Spanish (ES) electronic invoice: Sales and project invoices for Spain
+
+- Sales invoice (ES)
+- Project invoice (ES)
 
 ### Actions
 
-The following table lists the available actions and the availability status (Preview or Generally available):
+The following table lists the available actions, and whether they are currently generally available or still in preview.
 
-| Action                                        | Description                                                 | Availability                |
-|-----------------------------------------------|-------------------------------------------------------------|-----------------------------|
-| Transform document                            | Generates a file following a specific ER format configuration.  | Preview                     |
-| Transform document from OData source          |                                                             | Preview                     |
-| Sign xml document                             | Applies a digital signature in the XML file.                 | Preview                     |
-| Sign json document for Egyptian Tax Authority | Applies a digital signature in a JSON file.                  | Preview                     |
-| Egyptian Tax Authority REST client            | Submits an e-invoice to Egyptian tax authority web service.  | Preview                     |
-| Call Brazilian SEFAZ Service                  | Submits an e-invoice to Brazilian tax authority web service. | Preview                     |
-| Call Mexican PAC Service                      | Submits an e-invoice to PAC web services.                    | Preview                     |
-| Process response                              | Analyze the web service response.                            | Preview                     |
-| Use MS Power Automate                         |                                                             | Preview                     |
-| File store action name                        |                                                             | Preview                     |
+| Action                                        | Description                                                                  | Availability |
+|-----------------------------------------------|------------------------------------------------------------------------------|--------------|
+| Transform document                            | Generate a file according to a specific ER format configuration.             | In preview   |
+| Transform document from OData source          |                                                                              | In preview   |
+| Sign xml document                             | Apply a digital signature in the XML file.                                   | In preview   |
+| Sign json document for Egyptian Tax Authority | Apply a digital signature in a JavaScript Object Notation (JSON) file.       | In preview   |
+| Egyptian Tax Authority REST client            | Submit an e-invoice to the Egyptian tax authority web service.               | In preview   |
+| Call Brazilian SEFAZ Service                  | Submit an e-invoice to the Brazilian tax authority web service.              | In preview   |
+| Call Mexican PAC Service                      | Submit an e-invoice to authorized certification provider (PAC) web services. | In preview   |
+| Process response                              | Analyze the web service response.                                            | In preview   |
+| Use MS Power Automate                         |                                                                              | In preview   |
+| File store action name                        |                                                                              | In preview   |
 
 ## Configuration providers
 
-The configuration providers provide the Electronic invoicing features and their Electronic reporting components, such as model mapping, format configuration, and context model.
+Configuration providers provide the electronic invoicing features and their ER components, such as the model mapping, format configuration, and context model. They publish the electronic invoicing features and ER components in the associated Global repository. From there, other organizations can download them.
 
-Electronic invoicing features and any Electronic reporting components are published by the configuration providers in the associated global repository where other organizations can download.  
+Before you configure the electronic invoicing features through RCS, you must configure your own organization as a configuration provider in the **Electronic reporting** module. For information about how to set a configuration provider to **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Before you configure Electronic invoicing features through RCS, you must configure your own organization as a configuration provider in the **Electronic reporting** module. For information about how to set a provider to **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+## Viewing electronic invoicing features in the Global repository
 
-## View the Electronic invoicing features in the Global repository
+To browse the electronic invoicing features that are available in the Global repository for a specific configuration provider, sync your organization's RCS instance. After synchronization is completed, the list of available electronic invoicing features is updated.
 
-You can browse the available electronic invoicing features in the Global repository for a specific configuration provider, by synchronizing your RCS. After you synchronize, the list of available electronic invoicing features is refreshed and you can view the features.
+## Importing electronic invoicing features
 
-## Import the Electronic invoicing features
+Before you use or configure the electronic invoicing features, you must import them into your organization's RCS instance. The import operation creates a local copy of the features and copies all the ER artifacts that the features use (for example, format configurations and model configurations) to your organization's RCS instance.
 
-To use or configure Electronic invoicing featurex, the features must be imported to the RCS instance of your organization. Import creates a local copy of the electronic invoicing feature and copies all Electronic reportisng artifacts used by the electronic invoiving feature, such as format configurations and model configurations, to your instance of RCS.
+You can import the electronic invoicing features from any configuration provider.
 
-You can import Electronic invoicing features from any provider.
+## Creating electronic invoicing features
 
-## Create an Electronic invoicing feature
+You can create an electronic invoicing feature from scratch, or you can derive it from another electronic invoicing feature.
 
-Electronic invoicing features can be created from scratch or they can be derived from another Electronic invoicing feature.
-
-When one feature is created from another, the new feature inherits all configurations from the original. When a feature is created from the scratch, you must manually add the Electronic reporting components such as Feature version configurations and other configurations, such as Feature version setup and Application setup.
+When you create an electronic invoicing feature from scratch, you must manually add the ER components (for example, feature version configurations and other configurations, such as the feature version setup and application setup). When you create a feature by deriving it from another feature, the new feature inherits all configurations from the original. 
 
 ## Electronic invoicing feature version
 
-The electronic invoicing features are versioned. When a new version is created, the version number is automatically incremented and an effective from date can be defined.
+The electronic invoicing features are versioned. When a new version is created, the version number is automatically incremented. An "effective from" date can be defined for the new version.
 
-The feature version follows a life cycle with up to three statuses:
+Electronic invoicing feature versions follow a lifecycle that has up to three statuses:
 
-   - **Draft**: In this status, you can edit the configuration attributes of the feature version, and any of its artifacts, such as file format configurations.
-   - **Complete**: In this status, the feature version has been published to the Global repository associated to your organization. Editing the feature version or any of the Electronic reporting components is no longer allowed.
-    - **Published**: In this status, the feature version has been published to the Electronic invoicing add-on. Editing the feature version or any of the Electronic reporting components is no longer allowed.
+- **Draft** – If a feature version is in this status, you can edit its configuration attributes and any of its artifacts (for example, file format configurations).
+- **Complete** – If a feature version is in this status, it has been published to the Global repository that is associated with your organization. You can no longer edit the feature version or any of the ER components.
+- **Published** – If a feature version is in this status, it has been published to the Electronic invoicing add-on. You can no longer edit the feature version or any of the ER components.
 
 ### Feature configurations
 
-Feature configurations holds all of the Electronic reporting format configurations the electronic invoicing feature uses. All of the electronic files used by the electronic invoicing feature in the processing come from the format configurations that added to this section of the electronic invoicing feature.
+Feature configurations hold all the ER format configurations that the electronic invoicing features use. All the electronic files that an electronic invoicing feature uses during processing come from the format configurations that have been added to the feature configurations of that feature.
 
-Through Feature configurations, you have access to the Format designer which is the Electronic reporting tool used to create the format configurations.
+From the feature configurations, you can access the ER format designer, which is the ER tool that is used to create format configurations.
 
 ### Feature setup
 
-Used in combination with the Feature configurations, each Feature setup encapsulates a set of Actions, Applicability rules, and Variables that provide an expected behavior for the Electronic invoicing feature to fulfill a specific requirement of the electronic invoice.
+Feature setups are used in combination with feature configurations. Each feature setup encapsulates a set of actions, applicability rules, and variables that provide the expected behavior so that an electronic invoicing feature can meet a specific requirement of the electronic invoice.
 
 ### Application setup
 
-The Application setup must be associated to a previously created Connected application.
+The application setup must be associated with a previously created connected application.
 
-Through Application setup, you can configure the part of the electronic invoicing feature that must be accomplished in Finance and Supply Chain Management. At least three configurable components are mandatory, independent of the electronic invoicing feature:
+Through the application setup, you can configure the part of an electronic invoicing feature that must be done in Finance and Supply Chain Management. At least three configurable components are mandatory, regardless of the electronic invoicing feature:
 
-   - **Table name**: The entity in Finance and Supply Chain Management that holds the posted invoices, and over which the electronic invoicing feature is based.
-   - **Context**: The name of the invoice context model configured through Electronic reporting.
-   - **Business document mapping**: The name of the invoice mapping model configured through Electronic reporting.
-
-> [!IMPORTANT]
-> The configuration entered under Application setup can be viewed in Finance and Supply Chain Management by going to **Organization administration** > **Setup** > **Electronic document parameter** page. On the **Electronic document** tab, select **Deploy** with the option to deploy to the connected application.
-
-### Deploy
-
-In RCS, **Deploy** is the command that target-publishes the Electronic invoicing feature version:
-
-   - **Service environment**: When the target of the deploy is the service environment, the Electronic invoicing feature version is published into the Service environment. After that, the Electronic invoicing add-on is ready to receive and process the submissions of electronic documents sent by Finance and Supply Chain Management.
-   - **Connected application**: When the target of the deploy is the connected application, the configuration given by the Application setup is written in the Finance and Supply Chain Management instance that was previously associated to it.
-
-Only Electronic invoicing feature versions with a status of **Completed** can be deployed, either to a service environment or a connected application.
-
-### Undeploy
-
-In RCS, **Undeploy** is the command that removes a specific Electronic invoicing feature version from a Service environment in the Electronic invoicing add-on.
+- **Table name** – The entity in Finance and Supply Chain Management that holds the posted invoices, and that the electronic invoicing feature is based on.
+- **Context** – The name of the invoice context model that was configured through ER.
+- **Business document mapping** – The name of the invoice mapping model that was configured through ER.
 
 > [!IMPORTANT]
-> **Undeploy** works only in service environments to remove Electronic invoicing feature versions. **Undeploy** doesn't remove the feature version from the connected applications.
+> The configuration that is entered in the application setup can be viewed in Finance and Supply Chain Management. Go to **Organization administration \> Setup \> Electronic document parameter**. On the **Electronic document** tab, select **Deploy**, and then select the **Connected application** option.
 
-### Rebase
+### Deploying feature versions
 
-When an Electronic invoicing feature is created from another Electronic invoicing feature, the **Rebase** action updates the derived feature with the updates introduced in the original Electronic invoicing feature.
+In RCS, you use the **Deploy** command to target-publish an electronic invoicing feature version. Select **Deploy**, and then select one of the following options to define the target of the deployment: 
+
+- **Service environment** – When the target of the deployment is the service environment, the electronic invoicing feature version is published to the service environment. The Electronic invoicing add-on is then ready to receive and process electronic documents that Finance and Supply Chain Management send.
+- **Connected application** – When the target of the deployment is the connected application, the configuration that is provided by the application setup is written in the Finance and Supply Chain Management instance that was previously associated with it.
+
+Only electronic invoicing feature versions that have a status of **Completed** can be deployed to either a service environment or a connected application.
+
+### Removing feature versions
+
+In RCS, you use the **Undeploy** command to remove a specific electronic invoicing feature version from a service environment in the Electronic invoicing add-on.
+
+> [!IMPORTANT]
+> The **Undeploy** command works only in service environments. It doesn't remove electronic invoicing feature versions from connected applications.
+
+### Rebasing electronic invoicing features
+
+When one electronic invoicing feature is derived from another, the **Rebase** command updates the derived feature with the changes that have been introduced in the original feature.
 
 ## Additional resources
+
 - [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
