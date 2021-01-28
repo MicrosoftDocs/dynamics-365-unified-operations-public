@@ -43,7 +43,7 @@ When you enable the Landed cost module, the standard *terms of delivery* entity 
 
 When **Goods in transit management** option is set to *Yes* for the applicable terms of delivery record, the goods are placed into the in-transit warehouse. This is only triggered when an invoice is processed without the inventory receipt being processed first. When an order has the delivery terms set to use goods in transit, users can no longer post a product receipt for the purchase order. If they try, an error will show stating that they must use the goods in transit functionality to proceed.
 
-To work with delivery terms information for goods in transit, go to **Procurement and Sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the settings that the Landed cost module adds to the **Terms of delivery** page to support the goods in transit functionality. Both settings are on the **General** FastTab. For more information about the other settings on this page, see [Terms of delivery (form)](https://technet.microsoft.com/en-us/library/aa575567.aspx).
+To work with delivery terms information for goods in transit, go to **Procurement and Sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the settings that the Landed cost module adds to the **Terms of delivery** page to support the goods in transit functionality. Both settings are on the **General** FastTab. For more information about the other settings on this page, see [Terms of delivery (form)](https://technet.microsoft.com/library/aa575567.aspx).
 
 | **Field** | **Description** |
 | --- | --- |
@@ -60,7 +60,7 @@ Generally speaking, one goods in transit warehouse is sufficient for each site i
 
 Two new types of warehouses have been added: *goods in transit* and *under-delivery*. These warehouses can then be selected as *default* warehouses. To successfully process goods in transit orders, both the goods in transit warehouse and the under-delivery warehouse must be configured on the **Warehouses** page. Then, for each default warehouse that will be used with Landed cost and goods in transit, the goods in transit warehouse and under-delivery warehouse must be selected from the drop-down menu of the available warehouses of each type.
 
-To work with goods in transit settings for your warehouses, go to **Inventory Management \> Setup \> Inventory Breakdown \> Warehouses**. The following table describes the settings that the Landed cost module adds to the **Warehouses** page to support the goods in transit functionality. Both settings are on the **General** FastTab. For more information about the other settings on this page, see [Warehouses (form)](https://technet.microsoft.com/en-us/library/aa620570.aspx).
+To work with goods in transit settings for your warehouses, go to **Inventory Management \> Setup \> Inventory Breakdown \> Warehouses**. The following table describes the settings that the Landed cost module adds to the **Warehouses** page to support the goods in transit functionality. Both settings are on the **General** FastTab. For more information about the other settings on this page, see [Warehouses (form)](https://technet.microsoft.com/library/aa620570.aspx).
 
 | **Field** | **Description** |
 | --- | --- |
@@ -115,7 +115,7 @@ Goods can additionally be received by creating an arrival journal. You can navig
     - **Create from goods in transit** - Set to *Yes* to take quantities from the selected in-transit lines for the selected voyage, container, or folio.
     - **Create from order lines** - Set this to *Yes* to set the default quantity on the arrival journal from the purchase order lines. You can do this provided there are no differences between the purchase order line and the goods in transit order quantity.
 
-1. Process the arrival journal as described in [Register item receipts with an item arrival journal](https://technet.microsoft.com/en-us/library/aa571129.aspx).
+1. Process the arrival journal as described in [Register item receipts with an item arrival journal](https://technet.microsoft.com/library/aa571129.aspx).
 
 > [!NOTE]
 > The arrival journal is generally used in situations where locations and batch/serial tracking are used but warehouse management isn't used.
@@ -138,14 +138,14 @@ Landed cost adds following work creation processes to the mobile device menu ite
 - Goods in transit item receiving
 - Goods in transit item receiving and putaway
 
-The configuration settings for each of these are similar to those for the [purchase order receive and putaway work creation processes](https://technet.microsoft.com/en-us/library/dn553216.aspx). However, the *Goods in transit item receiving and putaway* process also adds the following setting:
+The configuration settings for each of these are similar to those for the [purchase order receive and putaway work creation processes](https://technet.microsoft.com/library/dn553216.aspx). However, the *Goods in transit item receiving and putaway* process also adds the following setting:
 
 - **Enable shipping container complete** – When set to *Yes*, at completion of the putaway work, the warehouse app will provide an additional option called **Shipping container complete**. When selected, the worker will be asked to confirm that the container is complete. At this point, all short receipts will be processed as an under transaction.
 
 ### Location directives
 
-Landed cost adds a new **Work order type** called *Goods in transit* to the **Location directives** page, which should be configured in the same manner as the [purchase order work order types](https://technet.microsoft.com/en-us/library/dn553184.aspx).
+Landed cost adds a new **Work order type** called *Goods in transit* to the **Location directives** page, which should be configured in the same manner as the [purchase order work order types](https://technet.microsoft.com/library/dn553184.aspx).
 
 ### Work templates
 
-Landed cost adds a new **Work order type** called *Goods in transit* to the **Work templates** page, which should be configured in the same manner as the [purchase order work templates](https://technet.microsoft.com/en-us/library/dn553184.aspx).
+Landed cost adds a new **Work order type** called *Goods in transit* to the **Work templates** page, which should be configured in the same manner as the [purchase order work templates](https://technet.microsoft.com/library/dn553184.aspx).
