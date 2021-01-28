@@ -2,7 +2,7 @@
 # required metadata
 
 title: Archive credit card transaction data
-description: This topic describes an archival job that can be used to free up database space by archiving credit card transactions.
+description: This topic describes an archival job in Dynamics 365 Commerce that can free up database space by archiving credit card transactions.
 author: rubendel
 manager: annbe
 ms.date: 01/28/2021
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes an archival job that can be used to free up database space by archiving credit card transactions.
+This topic describes an archival job in Dynamics 365 Commerce that can free up database space by archiving credit card transactions. This archival job is available as of the Commerce version 10.0.17 release.
 
 For every credit card authorization, the authentication binary large object ([auth blob](#key-terms)) is stored in the database. Auth blobs contain data related to the authorization and over time can grow to take up a significant amount of space in the database. The job described in this topic provides a way to archive auth blob data by exporting it to Azure Blob Storage and then deleting the data from the database. 
 
