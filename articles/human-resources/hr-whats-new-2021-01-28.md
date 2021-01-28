@@ -66,7 +66,7 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 539456 | Calendar shows the leave type in the hover text when show only absence without details parameter is enabled |When the Show onl absence without details option is enabled, the date of the request is displayed on hover. |
+| 539456 | Calendar shows the leave type in the hover text when show only absence without details parameter is enabled |When the Show only absence without details option is enabled, the date of the request is displayed on hover. |
 | 528907 | Granting access to a legal entity on employee role results in managers not being able to see leave balance activity for employees in the My team area of employee self service. |Setting this option now allows managers to continue to see the leave balance activity.  |
 | 534868 | ## [A11y] Personnel Management Workspace contains accessibility errors - (534868) | |
 | 526280 | ## Permissions error on HcmWorkerEntity, HcmEmployeeEntity, and HcmContractorEntity - (526280) | |
