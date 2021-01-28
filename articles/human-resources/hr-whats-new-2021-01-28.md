@@ -64,7 +64,7 @@ The following bug fixes are included in this release.
 | 526280 | Permissions error on HcmWorkerEntity, HcmEmployeeEntity, and HcmContractorEntity |Users in a non-system admin role were unable to export the entities listed due to a permissions error on the NationalityCountryRegion field.  Users will continue to need the following privileges to export this information:  HcmWorkerEntityMaintain, HcmWorkerEntityView, HcmEmployeeEntityMaintain, HcmEmployeeEntityMaintain, HcmEmployeeEntityView, HcmContractorEntityMaintain, and HCMContractorEntityView|
 | 542147 | Bank account and routing number fields are mandatory when adding bank account via Employee self service | We have fixed the error where employees were being required to enter the bank account number and routing number fields while adding bank account details. These fields are no longer mandatory while saving new bank account inforamtion. |
 | 543641 | Zip code not populating on electronic reporting | Fixed a bug where Zip code was not populating in ACA report for coverage codes L thorugh Q |
-| 545402 |## Add routing change for UserBranding.js file to remove 404 errors - (545402) | User should not see 404 errors in the console |
+| 545402 | Add routing change for UserBranding.js file to remove 404 errors | User should not see 404 errors in the console. |
 
 ## In preview	
 
