@@ -954,8 +954,8 @@
             href: enrich-category-page.md
           - name: Verify page content accessibility
             href: verify-accessibility.md
-		      - name: Create dynamic e-commerce pages based on URL parameters
-		        href: create-dynamic-pages.md            
+          - name: Create dynamic e-commerce pages based on URL parameters
+            href: create-dynamic-pages.md            
         - name: Site navigation
           items:
           - name: Customize site navigation
