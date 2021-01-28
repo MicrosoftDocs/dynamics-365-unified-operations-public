@@ -49,7 +49,7 @@ The following features are generally available with this release.
 | --- | --- | --- |
 | ## Regular translation checkins for supported HCM languages - (394249) | | |
 | ## Uptake PU40 - (542407) | | |
-| Integrate Benefit reason codes into core hr reason codes (439561) | -- |[Setting up & Migrating Benefits Reason codes](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-reason-codes) |
+| Integrate Benefit reason codes into core hr reason codes | -- |[Setting up & Migrating Benefits Reason codes](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-setup-reason-codes) |
 | ## Use Service Fabric to prevent stuck secondary replicas - (544833) | | |
 
 ### Bug fixes
@@ -66,7 +66,7 @@ The following bug fixes are included in this release.
 | 528907 | Granting access to a legal entity on employee role results in managers not being able to see leave balance activity for employees in the My team area of employee self service. |Setting this option now allows managers to continue to see the leave balance activity.  |
 | 526280 | Permissions error on HcmWorkerEntity, HcmEmployeeEntity, and HcmContractorEntity |Users in a non-system admin role were unable to export the entities listed due to a permissions error on the NationalityCountryRegion field.  Users will continue to need the following privileges to export this information:  HcmWorkerEntityMaintain, HcmWorkerEntityView, HcmEmployeeEntityMaintain, HcmEmployeeEntityMaintain, HcmEmployeeEntityView, HcmContractorEntityMaintain, and HCMContractorEntityView|
 | 542147 | ## Bank account and routing number fields are mandatory when adding bank account via ESS - (542147) | |
-| 545402 | Zip code not populating on electronic reporting | Fixed a bug where Zip code was not populating in ACA report for coverage codes L thorugh Q |
+| 543641 | Zip code not populating on electronic reporting | Fixed a bug where Zip code was not populating in ACA report for coverage codes L thorugh Q |
 | 545402 |## Add routing change for UserBranding.js file to remove 404 errors - (545402) | User should not see 404 errors in the console |
 
 ## In preview	
