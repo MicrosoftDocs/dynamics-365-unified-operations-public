@@ -146,9 +146,9 @@ A DMF entity is now available for accrual suspensions.
 
 ## Coming soon
 
-## Checklist entities included in Common Data Service
+## Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ## Known issues
 

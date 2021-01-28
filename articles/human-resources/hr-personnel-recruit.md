@@ -42,7 +42,7 @@ Dynamics 365 Human Resources helps you to manage recruiting requests. It also he
 If you aren't using a separate recruiting application, you can also manually manage candidates in Human Resources.
 
 >[!NOTE]
->If you're an admin or developer and want to integrate Human Resources with a third-party recruiting application, see [Configure Common Data Service integration](hr-admin-integration-common-data-service.md) and [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)
+>If you're an admin or developer and want to integrate Human Resources with a third-party recruiting application, see [Configure Dataverse integration](hr-admin-integration-common-data-service.md) and [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > You can also find recruiting integration apps on [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
@@ -226,6 +226,6 @@ If needed, you can dismiss a candidate after hiring them. For example, a candida
 
 ## See also
 
-[Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organize your workforce](hr-personnel-departments-jobs-positions.md)<br>
 [Set up the components of a job](hr-personnel-jobs.md)

@@ -87,9 +87,9 @@ Employees can view and request time away from work within Microsoft Teams. They 
  
 - **Manager time-off calendar**: Managers will be able to see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work.
 
-### Checklist entities included in Common Data Service
+### Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ## Known issues
 

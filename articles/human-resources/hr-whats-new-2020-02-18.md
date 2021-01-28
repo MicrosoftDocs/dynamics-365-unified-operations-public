@@ -46,17 +46,17 @@ The new **Worker** form now remembers  search values when you change the view op
 
 Fixed and variable compensation management tiles now display the correct records in the new **Worker** form. Applies only to the streamlined employee form preview feature. You can enable this preview feature in **Feature management**. For more information, see [Manage features](hr-admin-manage-features.md).
 
-## Empty Status field for some leave request records in Common Data Service (414915)
+## Empty Status field for some leave request records in Dataverse (414915)
 
-This change corrects an issue in Common Data Service when the **Status** field in a leave request is set to **Review**. Common Data Service now reflects the status.
+This change corrects an issue in Dataverse when the **Status** field in a leave request is set to **Review**. Dataverse now reflects the status.
 
 ## Skill gap analysis only possible for assigned job (411390)
 
 You can now do a skill gap analysis on any job defined in Human Resources.
 
-## System currency doesn't sync from Common Data Service to Human Resources in new environments (418011)
+## System currency doesn't sync from Dataverse to Human Resources in new environments (418011)
 
-The system currency in Common Data Service can now sync to Human Resources.
+The system currency in Dataverse can now sync to Human Resources.
 
 ## In preview
 
@@ -66,9 +66,9 @@ The system currency in Common Data Service can now sync to Human Resources.
 
 ## Coming soon
 
-### Updated Common Data Service solution
+### Updated Dataverse solution
 
-A new Common Data Service solution will be available soon with the following changes:
+A new Dataverse solution will be available soon with the following changes:
 
 | Description | Change |
 | ----------------------------------------- | --- |
@@ -79,7 +79,7 @@ A new Common Data Service solution will be available soon with the following cha
 | New variable compensation setup entities | **Compensation variable plan type**</br>**Compensation variable plan**</br>**Vesting rules**</br>**Compensation variable plan level** |
 | New **Worker calendar employment** entity | **Work calendar entity** added |
 | New **Payroll position detail** entity | **Payroll position detail** added |
-| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service. It won't be initially referenced from **Job Position** or **Job** entities. |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Dataverse. It won't be initially referenced from **Job Position** or **Job** entities. |
 
 ## See also
 
