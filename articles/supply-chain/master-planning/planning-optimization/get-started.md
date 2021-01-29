@@ -72,11 +72,11 @@ To use the Planning Optimization Add-in, you must enable its configuration key. 
 1. In Supply Chain Management, go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, select the check box for **Planning Optimization**.
 
-### Install the add-in
+### Install the Planning Optimization Add-in
 
-You can install the add-in from your LCS project and turn on the Planning Optimization functionality from the Supply Chain Management user interface (UI).
+You must install the add-in from your LCS project and then turn on the Planning Optimization functionality from the Supply Chain Management user interface.
 
-To install the add-in:
+To install the Planning Optimization Add-in:
 
 1. Sign in to LCS, and open the desired environment.
 1. Go to **Full details**.
