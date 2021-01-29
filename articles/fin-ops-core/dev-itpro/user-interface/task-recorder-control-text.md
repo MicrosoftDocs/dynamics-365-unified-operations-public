@@ -2,7 +2,7 @@
 # required metadata
 
 title: Control the text that Task Recorder generates for a control
-description: This article describes how Task recorder determines what instruction label to generate for controls. It then explains how you can make sure that these labels are meaningful for the user.
+description: This article describes how Task recorder determines what instruction label to generate for controls.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017

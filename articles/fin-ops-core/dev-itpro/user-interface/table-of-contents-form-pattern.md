@@ -2,7 +2,7 @@
 # required metadata
 
 title: Table of Contents form pattern
-description: This article provides information about the Table of Contents form pattern. This pattern should be used when two or more logically related forms are required for setup configuration. 
+description: This article provides information about the Table of Contents form pattern, which is used when two or more related forms are required for setup configuration. 
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Modify a workspace with a tile, list, and data cache
-description: In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
+description: In this tutorial, you'll create a new tile in the summary section of a workspace, build a new list, and create a data cache for the list.
 author: jasongre
 manager: AnnBe
 ms.date: 11/30/2020

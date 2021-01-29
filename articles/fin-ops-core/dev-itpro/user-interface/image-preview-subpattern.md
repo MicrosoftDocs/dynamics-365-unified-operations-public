@@ -2,7 +2,7 @@
 # required metadata
 
 title: Image Preview subpattern
-description: This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container, especially within a FastTab or Group. 
+description: This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container. 
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
