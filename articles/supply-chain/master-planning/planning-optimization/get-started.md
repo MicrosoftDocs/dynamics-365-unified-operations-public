@@ -44,6 +44,7 @@ The Planning Optimization functionality doesn't currently support all the featur
 Before you turn on Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
 ### Availability
+
 Planning Optimization is currently available in the following Azure geographies: United States, Canada, Europe, United Kingdom, Australia, and Asia Pacific. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported.
 
 Note that Planning Optimization does not support on-premises deployments of Dynamics 365 Supply Chain Management.
@@ -56,8 +57,13 @@ If you can run master planning by using your current license, you don't have to 
 
 To use Planning Optimization, install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. You can access the add-in from your LCS project and turn on the Planning Optimization functionality from the Supply Chain Management user interface (UI).
 
-> [!NOTE]
-> The requirement for Planning Optimization is an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation will not complete and you will need to cancel the installation.
+> [!IMPORTANT]
+> Before you install the Planning Optimization Add-in, the following prerequisites must be in place:
+>
+> - You must be running Supply Chain Management on an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation will not complete and you will need to cancel the installation.
+> - Your system must be set up for Power Platform integration. For more information, see [Prerequisites for setting up add-ins](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) and [Set up add-ins](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+
+To install the add-in:
 
 1. Sign in to LCS, and open the desired environment.
 1. Go to **Full details**.
@@ -66,10 +72,10 @@ To use Planning Optimization, install the Planning Optimization Add-in for Dynam
 1. Select **Planning Optimization**.
 1. Follow the installation guide, and agree to the terms and conditions.
 1. Select **Install**.
-1. On the **Environment add-ins** FastTab you should see that Planning Optimization is installing.
-1. After a few minutes **Installing** should change to **Installed** (you may need to refresh the page). When installed, you are ready to activate Planning Optimization in Dynamics 365 Supply Chain Management.
+1. On the **Environment add-ins** FastTab, you should see that Planning Optimization is installing.
+1. After a few minutes, **Installing** should change to **Installed** (you may need to refresh the page). When installed, you are ready to activate Planning Optimization in Dynamics 365 Supply Chain Management.
 
-The main purpose of installing the Planning Optimization add-in is to connect the service and the environment. Therefore, you must install the add-in separately on each environment where you will use Planning Optimization, regardless of any code moved between the environments.
+The main purpose of installing the Planning Optimization Add-in is to connect the service and the environment. Therefore, you must install the add-in separately on each environment where you will use Planning Optimization, regardless of any code moved between the environments.
 
 ### Planning Optimization integration
 
