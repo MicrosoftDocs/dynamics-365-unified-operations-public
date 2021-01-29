@@ -40,7 +40,7 @@ This topic describes how to configure, download, and install Modern POS on vario
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
 
 > [!WARNING]
-> As far back as the .12 release, it has been seen that altering customized files that would be stored in the ClientBroker folder can cause a variety of issues when installing a newer release, including but not limited to inability to go offline or a newer installer failing to complete successfully. It has been shown that the workaround to this issue is to remove the files in the ClientBroker folder in the Modern POS directory prior to performing the installation using the newer installer.
+> As far back as the .11 release, it has been seen that altering customized files that would be stored in the ClientBroker folder can cause a variety of issues when installing a newer release, including but not limited to inability to go offline or a newer installer failing to complete successfully. It has been shown that the workaround to this issue is to remove the files in the ClientBroker folder in the Modern POS directory prior to performing the installation using the newer installer.
 
 ## Technology
 
