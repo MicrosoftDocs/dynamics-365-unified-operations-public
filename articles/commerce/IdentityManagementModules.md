@@ -36,12 +36,12 @@ ms.dyn365.ops.version:
 
 This topic covers identity management pages and modules in Microsoft Dynamics 365 Commerce. 
 
-Identity management modules display elements that e-commerce site users use to interact with the identity management system associated with the Dynamics 365 Commerce environment. This includes pages for sign-in, sign-up, password reset, and profile edit. These pages are built in Commerce, but are hosted and served from the identity provider's servers for security. Commerce modules are configured by default to work with Azure Active Directory (Azure AD) business-to-consumer (B2C) as the identity provider. These modules can be seen in Commerce site builder under the "AzureActiveDirectoryModules" category in the module picker.
+Identity management modules display elements that e-commerce site users use to interact with the identity management system associated with the Dynamics 365 Commerce environment. Identity management modules are used on pages for sign-in, sign-up, password reset, and profile edit. Although these pages are built in Commerce, for security reasons they are hosted and served from the identity provider's servers. Commerce modules are configured by default to work with Azure Active Directory (Azure AD) business-to-consumer (B2C) as the identity provider. The identity management modules can be found in Commerce site builder under the "AzureActiveDirectoryModules" category in the module picker.
 
 To set up identity management pages in Azure AD B2C, see [Set up custom pages for user sign-ins](custom-pages-user-logins.md).
 
 > [!WARNING] 
-> Azure AD B2C will be retiring legacy user flows as noted in the User Flows page in the Azure AD B2C resource in Azure portal. All legacy preview user flows are on a path to deprecation by August 1, 2021. Plan to migrate your preview user flows to their recommended version. This version offers you feature parity and is a home for new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). Commerce users can use the following identity management modules with the current Azure AD B2C recommended user flows as of the Commerce version 10.0.15 release.
+> Azure AD B2C will be retiring legacy preview user flows by August 1, 2021. Plan to migrate your preview user flows to the new recommended version, which provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). 
 
 ## Sign-up page
 
@@ -69,7 +69,7 @@ The Azure AD generic module follows the Azure AD B2C recommended pattern of sett
 ## Additional information
 
 - Identity management pages are built in Commerce site builder, but will be served from Azure AD B2C servers and not from your Commerce site. Commerce recommends building a separate Azure AD header and footer fragments with minimal page elements to use for these specific pages. Any fragments that have relative links, or make Commerce-specific calls (such as the favorites button or shopping cart module) will not work from the Azure AD B2C servers. The starter site shipped with your instance of Commerce includes example Azure AD header and footer fragments for reference.
-- Identity management pages use JavaScript initialized from the Azure AD B2C server. When previewing a page from site builder or the Commerce site, it is common to see a white loading bar in the middle of the page that never initializes. Once a page is published, you must associate the page with the Azure AD B2C user flow as described in [Set up custom pages for user sign-ins](custom-pages-user-logins.md). Viewing a page as served from Azure AD B2C will render the page elements with the initialized JavaScript.
+- Identity management pages use JavaScript initialized from the Azure AD B2C server. When previewing a page from site builder or the Commerce site, it is common to see a white loading bar in the middle of the page that never initializes. Once a page is published, you must associate the page with the Azure AD B2C user flow as described in [Set up custom pages for user sign-ins](custom-pages-user-logins.md). Viewing a page as served from Azure AD B2C will then render the page elements with the initialized JavaScript.
 
 ## Additional resources
 
