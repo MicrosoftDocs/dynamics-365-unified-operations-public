@@ -45,7 +45,7 @@ The following features are included in this release. Some of the listed features
 
 - [Apply rules for grouping work orders while running a maintenance plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)
 
-<!-- KFM: Blocked for now
+<!-- KFM: Blocked for now. Dana will followup.
 - [Approve and save vendor-submitted bank details](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) 
 -->
 
