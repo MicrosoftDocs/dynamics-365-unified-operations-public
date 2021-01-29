@@ -69,8 +69,10 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 
 To use Planning Optimization, you must enable its configuration key. To do so:
 
-1. In Supply Chain Management, go to **System administration \> Setup \> License configuration**.
+1. Put your system into maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, select the check box for **Planning Optimization**.
+1. Turn off maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ### Install the Planning Optimization Add-in
 
