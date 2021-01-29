@@ -65,7 +65,7 @@ To complete the steps in this example, you must first complete the steps in the 
 
 The baseline has been added for the selected **Format to learn ER baselines** format, but the baseline rules haven't yet been added for this baseline.
 
-![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot of the Electronic reporting format baselines page")
+![Electronic reporting format baselines page, no rules yet](media/GER-BaselineSample-AddBaseline2.PNG "Screenshot of the Electronic reporting format baselines page")
 
 ### Make a new baseline rule
 
@@ -78,7 +78,7 @@ The baseline has been added for the selected **Format to learn ER baselines** fo
 7. Select **OK**.
 8. Select **Baselines**.
 
-    ![Electronic reporting format baselines page](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot of the Electronic reporting format baselines page")
+    ![Electronic reporting format baselines page, baselines selected](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot of the Electronic reporting format baselines page")
 
     The generated outbound file has been automatically attached to the baseline of the executed ER format. The baseline rule has been automatically added to this baseline and also contains the reference to the attached file.
 
@@ -136,7 +136,7 @@ To complete the steps in this example, you must first complete the steps in the 
 3. In the list of baselines, select the baseline that is configured for the **Format to learn ER baselines** format.
 4. On the **Baselines** FastTab, select **Delete** to remove the baseline rule that you configured earlier.
 
-![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot of the Electronic reporting format baselines page")
+![Electronic reporting format baselines page, deleted](media/GER-BaselineSample-AddBaseline3.PNG "Screenshot of the Electronic reporting format baselines page")
 
 ### Define replacements for bindings of designed ER format
 
@@ -144,7 +144,7 @@ To complete the steps in this example, you must first complete the steps in the 
 2. In the format components tree, expand **Output**, expand **Output\\Document**, and then select the check box for **Output\\Document\\ProcessingDateTime**.
 3. Select **OK**.
 
-![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot of the Electronic reporting format baselines page")
+![Electronic reporting format baselines page, components](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot of the Electronic reporting format baselines page")
 
 The selected ER format component has been added to the list of components on the **Replacements** FastTab. When the base ER format is run in debug mode, the format's binding for each component will be replaced by the binding that is shown in the **Binding** column. To change the default binding for a component that is listed on the **Replacements** FastTab, select **Edit**.
 
