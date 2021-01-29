@@ -2,7 +2,7 @@
 # required metadata
 
 title: Archive ER destination type
-description: This topic provides information about how to configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents.
+description: This topic provides information about how to configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/30/2020

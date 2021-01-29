@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install modern report design templates
-description: This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
+description: This topic explains how to install the modern report design templates in the application suite.
 author: tjvass
 manager: AnnBe
 ms.date: 01/12/2018

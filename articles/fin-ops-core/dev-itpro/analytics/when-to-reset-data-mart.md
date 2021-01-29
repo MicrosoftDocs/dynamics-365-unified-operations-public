@@ -2,7 +2,7 @@
 # required metadata
 
 title: When to reset a data mart
-description: This topic lists the circumstances that might be improved by resetting a data mart, as well as circumstances in which resetting your data mart is unlikely to help.
+description: This topic lists the circumstances that might be improved by resetting a data mart and circumstances in which resetting your data mart is unlikely to help.
 author: jinniew
 manager: AnnBe
 ms.date: 12/15/2020

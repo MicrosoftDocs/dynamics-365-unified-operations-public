@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail channel performance PowerBI.com solution
-description: This topic provides information about the Retail channel performance PowerBI.com solution for Dynamics AX 7.0 releases. This PowerBI.com solution lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+description: This topic provides information about the Retail channel performance PowerBI.com solution for Dynamics AX 7.0 releases.
 author: ashishmsft
 manager: AnnBe
 ms.date: 05/09/2018
