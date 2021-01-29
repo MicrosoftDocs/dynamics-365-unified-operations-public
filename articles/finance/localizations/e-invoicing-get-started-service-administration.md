@@ -75,6 +75,23 @@ Before you complete the procedures in this topic, the following prerequisites mu
 5. In the **LCS Environment Id** field, enter the ID of your LCS subscription account.
 6. Select **Save**, and then close the page.
 
+## Create Key Vault secret
+
+1. Sign in to your RCS account.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **e-Invoicing** tile.
+3. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
+4. Select **New** to create a key vault secret.
+5. In the **Name** field, enter the name of the key vault secret. In the **Description** field, enter a description.
+6. In the **Key Vault URI** field, paste the secret from Azure Key Vault.
+7. Select **Save**.
+
+## Create Storage account secret
+
+1. On **Key vault parameters** page, in the **Certificates** section, select **Add**.
+2. In the **Name** field, enter the same of the storage account secret. In the **Description** field, enter a description.
+3. In the **Type** field, select **Certificate**.
+4. Select **Save**, and then close the page.
+
 ## Create an Electronic invoicing add-on environment
 
 1. Sign in to your RCS account.
@@ -82,28 +99,22 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create a service environment
 
-1. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
-2. Select **New** to create a key vault secret.
-3. In the **Name** field, enter the name of the key vault secret. In the **Description** field, enter a description.
-4. In the **Key Vault URI** field, paste the secret from Azure Key Vault.
-5. In the **Certificates** section, you must enter all the digital certificate names and key vault secrets that are required to establish trustable connections. Select **Add** to add a new certificate or secret.
-6. In the **Name** field, enter the name of the certificate or secret. In the **Description** field, enter a description.
-7. In the **Type** field, select whether you're creating a certificate or a secret. Both sets of values are configured on the key vault resource in Azure.
-8. If your country/region-specific invoices require a chain of certificates to apply digital signatures, select **Chain of certificates** on the Action Pane, and then follow these steps:
+1. On the **Environment setups** page, on the action Pane, select **Service environment**.
+2. Select **New** to create a new service environment.
+3. In the **Name** field, enter the name of the e-Invoicing environment. In the **Description** field, enter a description.
+4. In the **Storage SAS token secret** field, select the name of the certificate that must be used to authenticate access to the storage account.
+5. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment and also connect to the storage account.
+6. In the **User ID** field, enter the alias of the user. In the **Email** field, enter the user's email address.
+7. Select **Save**.
+8. If your country/region-specific invoices require a chain of certificates to apply digital signatures, on the Action pane, select **Key Vault paramaters**, then select **Chain of certificates**, and follow these steps:
 
     1. Select **New** to create a chain of certificates.
     2. In the **Name** field, enter the name of the chain of certificate. In the **Description** field, enter a description.
     3. In the **Certificates** section, select **Add** to add a certificate to the chain.
     4. Use the **Up** or **Down** button to change the position of the certificate in the chain.
     5. Select **Save**, and then close the page.
-
-9. Close the page, and then select **New** to create an e-Invoicing environment.
-10. In the **Name** field, enter the name of the e-Invoicing environment. In the **Description** field, enter a description.
-11. In the **Storage SAS token secret** field, select the certificate that must be used to authenticate access to the storage account.
-12. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment.
-13. In the **User ID** field, enter the alias of the user. In the **Email** field, enter the user's email address.
-14. Select **Save**.
-15. On the Action Pane, select **Publish** to publish the environment to the cloud. The value of the **Status** field is changed to **Published**.
+    6. Close the page.
+9. On **Service environment** page, on the Action Pane, select **Publish** to publish the environment to the cloud. The value of the **Status** field is changed to **Published**.
 
 ## Create a connected application
 
