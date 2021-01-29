@@ -116,7 +116,7 @@ The setting of the **Use Planning Optimization** option determines which plannin
 > [!NOTE]
 > If existing planning batch jobs that were created for the built-in Supply Chain Management planning engine are triggered while the **Use Planning Optimization** option is set to **Yes**, those jobs will fail.
 
-## Integration with the setup
+### Integration with the setup
 
 If the Planning Optimization is turned on, master planning is done by using the Planning Optimization Add-in. In this case, master planning results and features are affected.
 
