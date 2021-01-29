@@ -34,10 +34,13 @@ ms.dyn365.ops.version: 10.0.17
 
 This topic includes information and links to documentation resources for Egypt.
 
+- [VAT Books and Return form](empty.md)
 - [Withholding tax (WHT) calculation](empty.md)
 - [Withholding tax declaration](empty.md)
+- [Configure invoice layout for Egypt](empty.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
 
 ## Additional resources
 
-- [References to original invoices in credit notes](original-invoice-numbers-credit-notes.md)
+- [References to original invoices in credit notes](../../accounts-receivable/original-invoice-numbers-credit-notes.md)
+- [Reverse charge VAT](emea-reverse-charge.md)
