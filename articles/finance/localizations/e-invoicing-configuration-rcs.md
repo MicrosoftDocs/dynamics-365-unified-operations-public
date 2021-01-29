@@ -206,18 +206,16 @@ The following lists show the ER format configurations that are available for the
 
 The following table lists the available actions, and whether they are currently generally available or still in preview.
 
-| Action                                        | Description                                                                  | Availability |
-|-----------------------------------------------|------------------------------------------------------------------------------|--------------|
-| Transform document                            | Generate a file according to a specific ER format configuration.             | In preview   |
-| Transform document from OData source          |                                                                              | In preview   |
-| Sign xml document                             | Apply a digital signature in the XML file.                                   | In preview   |
-| Sign json document for Egyptian Tax Authority | Apply a digital signature in a JavaScript Object Notation (JSON) file.       | In preview   |
-| Egyptian Tax Authority REST client            | Submit an e-invoice to the Egyptian tax authority web service.               | In preview   |
-| Call Brazilian SEFAZ Service                  | Submit an e-invoice to the Brazilian tax authority web service.              | In preview   |
-| Call Mexican PAC Service                      | Submit an e-invoice to authorized certification provider (PAC) web services. | In preview   |
-| Process response                              | Analyze the web service response.                                            | In preview   |
-| Use MS Power Automate                         |                                                                              | In preview   |
-| File store action name                        |                                                                              | In preview   |
+| Action                                        | Description                                                                  | Availability         |
+|-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
+| Transform document                            | Run Electronic Reporting format to transform the document.                   | Generally available  |
+| Sign xml document                             | Sign xml documents with digital signature.                                   | In preview           |
+| Sign json document for Egyptian Tax Authority | Sign json documents with digital signature for Egyptian Tax Authority.       | Generally available  |
+| Integrate with Egyptian ETA service           | Communicate with Egyptian Tax Authority.                                     | Generally available  |
+| Call Brazilian SEFAZ Service                  | Integrate with Brazilian SEFAZ service for fiscal document submission.       | In preview           |
+| Call Mexican PAC Service                      | Integrate with Mexican PAC service for CFDI submission.                      | In preview           |
+| Process response                              | Analyze the response received from the web service call.                     | Generally available  |
+| Use MS Power Automate                         | Integrate with flow built in Microsoft Power Automate.                       | In preview           |
 
 ## Configuration providers
 
