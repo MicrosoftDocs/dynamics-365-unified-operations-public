@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0.17
 
 This topic describes how the application programming interfaces (APIs) of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.17.
 
-## <a name="er-api-run-format-with-action-code">API to run a format mapping providing a user action code to execute action dependent destinations</a>
+## <a name="er-api-run-format-with-action-code"></a>API to run a format mapping that provides a user action code to run action-dependent destinations
 
-To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER [format mapping](general-electronic-reporting.md#FormatComponentInbound). When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping, all [destinations](electronic-reporting-destinations.md#applicability) that were configured for components of this format are always executed. You can review the sample code of such a call in the [Add a report service class](er-quick-start1-new-solution.md#ServiceClass) section of the [Design a new ER solution to print a custom report](er-quick-start1-new-solution.md) page.
+To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER [format mapping](general-electronic-reporting.md#FormatComponentInbound). When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping, all [destinations](electronic-reporting-destinations.md#applicability) that were configured for components of the format are always run. To review the sample code for a call of this type, see [Add a report service class](er-quick-start1-new-solution.md#ServiceClass).
 
 ```xpp
 // Call ER to generate the report.
@@ -47,11 +47,13 @@ if(formatMappingRun.parmShowPromptDialog(true))
 }
 ```
 
-In some cases, when an ER format mapping is called from a specific place in the X++ code, you must specify an action that user performs by running an ER format to execute the only action dependent destinations from all configured for this format destinations. For example, you might call an ER format based on [Print management](document-reporting-services.md) (PM) settings to preview a generated document expecting that the only [Screen](er-destination-type-screen.md) destination will be executed at this time. At the same time, you might call the same ER format to send a generated document out as the attachment of an outbound email expecting that the only [Email](er-destination-type-email.md) destination will be executed at this time.  
+In some cases, when an ER format mapping is called from a specific place in the X++ code, you must specify an action that the user performs by running an ER format, so that only action-dependent destinations are run instead of all the ER destinations that are configured for that format.
 
-To achieve this, you must configure action dependent ER destinations for an ER format. To learn how action dependent ER destination can be configured, see [Configure action dependent ER destinations](er-action-dependent-destinations.md).
+For example, you have an ER format that is based on [Print management](document-reporting-services.md) settings. When you call this ER format to preview a generated document, you expect that only the [Screen](er-destination-type-screen.md) destination will be run. However, when you call the same ER format to send a generated document as the attachment of an outbound email message, you expect that only the [Email](er-destination-type-email.md) destination will be run.
 
-You can then use the new API of the ER framework to call an ER format mapping providing a user action code to execute the only destinations that were configured for the provided action. The presented below example shows how the mentioned above sample code can be changed to use this new API for running an ER format providing the **View** action.
+To achieve these results, you must configure action-dependent ER destinations for the ER format. For more information, see [Configure action-dependent ER destinations](er-action-dependent-destinations.md).
+
+After you've completed the configuration, you can use the new API of the ER framework to call an ER format mapping that provides a user action code that runs only destinations that were configured for the provided action. The following example shows how you can change the previously mentioned sample code to use this new API to run an ER format that provides the **View** action.
 
 ```xpp
 // Call ER to generate the report.
@@ -65,10 +67,10 @@ if(formatMappingRun.parmShowPromptDialog(true))
     formatMappingRunWithAction.withDestinationAction(ERDestinationAction::View);
     formatMappingRun.run();
 }
-``` 
+```
 
-> [!NOTE]
-> Be aware that you can set up action dependent destinations and force ER framework to use the provided action code accordingly only when you enabled the **Configure specific ER destinations to be used for different PM actions** feature in the [Feature management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview#the-feature-management-workspace) workspace.
+> [!IMPORTANT]
+> To set up action-dependent destinations and force the ER framework to use the provided action code, you must first turn on the **Configure specific ER destinations to be used for different PM actions** feature in the [Feature management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview#the-feature-management-workspace) workspace.
 
 ## Additional resources
 
