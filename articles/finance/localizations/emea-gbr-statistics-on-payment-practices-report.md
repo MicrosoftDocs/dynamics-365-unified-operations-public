@@ -82,6 +82,9 @@ You can specify the date when the purchase invoice was received and then use thi
 6. Review the **Payments due** tab.
 
     ![Payments due tab](media/Payments_due.png)
+    
+    > [NOTE]
+    > This tab contains all invoices that are due: paid before due date and overdue. Only overdue invoices are visible by default. Excel rows with invoices paid before due date are hidden. To be able to see all invoices, you need to unhide Excel rows.
 
 ## Publish the reporting about payment practices
 
