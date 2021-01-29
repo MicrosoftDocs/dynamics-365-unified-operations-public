@@ -1465,7 +1465,7 @@
         - name: User session management
           href: sysadmin/user-session-management.md
         - name: Block access by location with Azure AD Conditional Access
-          href: https://docs.microsoft.com/power-platform/admin/restrict-access-online-trusted-ip-rules
+          href: https://docs.microsoft.com/power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
         - name: Import users in bulk
           href: sysadmin/tasks/import-bulk-users.md
         - name: Set up segregation of duties
