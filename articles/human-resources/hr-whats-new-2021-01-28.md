@@ -48,7 +48,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Integrate Benefit reason codes into core hr reason codes | -- |[Setting up & Migrating Benefits Reason codes](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-setup-reason-codes) |
+| Integrate Benefit reason codes into **Personnel management** workspace | -- | [Set up reason codes](hr-benefits-setup-reason-codes.md) |
 
 ### Bug fixes
 
