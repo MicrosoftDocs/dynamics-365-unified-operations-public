@@ -65,9 +65,9 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 
 - Your system must be set up for Power Platform integration. For more information, see [Prerequisites for setting up add-ins](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) and [Set up add-ins](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
 
-### Enable the Planning Optimization Add-in license
+### Enable the Planning Optimization license
 
-To use the Planning Optimization Add-in, you must enable its configuration key. To do so:
+To use Planning Optimization, you must enable its configuration key. To do so:
 
 1. In Supply Chain Management, go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, select the check box for **Planning Optimization**.
