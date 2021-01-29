@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Batch job to handle SQL index defragmentation  - Turned off [Effective: January 28, 2021]
-description: Starting January 28, 2021, the system batch job to rebuild database indexes has been turned off in all environments of type Tier 2 through Tier 5 sandbox and production. Going forward, the index maintenance will be performed by Microsoft. 
+title: Batch job to handle SQL index defragmentation 
+description: Starting January 28, 2021, the system batch job to rebuild database indexes has been turned off in all sandbox and production environments of type Tier 2 through Tier 5. Going forward, the index maintenance will be performed by Microsoft. 
 author: sarvanisathish
 manager: AnnBe
 ms.date: 01/28/2021
