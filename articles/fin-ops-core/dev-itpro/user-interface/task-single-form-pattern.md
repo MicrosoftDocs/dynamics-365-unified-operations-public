@@ -2,7 +2,7 @@
 # required metadata
 
 title: Task Single form pattern
-description: This article provides information about the Task Single form pattern. This pattern was previously used to present data that users would perceive as originating from a single data source that had multiple records.
+description: This article provides information about the Task Single form pattern.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Contextual data entry for lookups
-description: In data entry scenarios, it is common for a user to attempt to identify an entity in terms of some more descriptive or natural language attribute if that entity is formally identified by a synthetic key, such as a number sequence. The contextual data entry feature allows users to type in either the synthetic key or a more descriptive attribute directly into a lookup field. This page explains how contextual data entry works and also provides implementation details and tips for developers who want their lookups to have this behavior.
+description: This topic explains how contextual data entry works and provides implementation details and tips for developers who want their lookups to have this behavior.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
