@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate electronic documents and update application data by using ER
-description: You can design Electronic reporting (ER) formats that can be used in the application to generate outgoing electronic documents. You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.
+description: You can design Electronic reporting (ER) formats that can be used in the application to generate outgoing electronic documents.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017

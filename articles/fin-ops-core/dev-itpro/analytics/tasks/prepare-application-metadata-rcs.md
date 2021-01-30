@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Prepare application metadata to be used in RCS
-description: The steps in this topic explain how a user can create a new Electronic reporting (ER) configuration that contains application metadata for designing ER model mapping configurations in Regulatory configuration service (RCS).
+description: This topic describes how to create a new reporting configuration that contains application metadata.
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/28/2019

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales and profitability performance Power BI content
-description: This topic describes what's included in the Sales and profitability performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+description: This topic describes what's included in the Sales and profitability performance Power BI content.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
