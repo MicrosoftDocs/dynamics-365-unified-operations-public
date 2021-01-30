@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure PowerBI.com integration
-description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
+description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com.
 author: MilindaV2
 manager: AnnBe
 ms.date: 05/12/2020

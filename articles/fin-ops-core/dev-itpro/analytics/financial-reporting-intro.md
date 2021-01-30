@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial reporting
-description: Financial reporting allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
+description: Financial reporting allows financial and business professionals to create, maintain, deploy, and view financial statements.
 author: aprilolson
 manager: AnnBe
 ms.date: 12/01/2017

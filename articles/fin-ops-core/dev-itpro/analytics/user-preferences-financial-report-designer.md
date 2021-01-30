@@ -2,7 +2,7 @@
 # required metadata
 
 title: User preferences in financial report designer
-description: This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience. You can also control how individual reports, the report library, and the default file locations are displayed. 
+description: This topic describes how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Create a format configuration (November 2016)
-description: This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). 
+description: This topic explains how to create a format configuration for Electronic reporting (ER). 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/02/2019

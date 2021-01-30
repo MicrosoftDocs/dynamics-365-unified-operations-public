@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2 - Run format)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. 
+description: This topic describes how to configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files. (Part 2)
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Production performance Power BI content
-description: This topic describes what is included in the Production performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes what is included in the Production performance Power BI content.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Email ER destination type
-description: This topic explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents.
+description: This topic explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020

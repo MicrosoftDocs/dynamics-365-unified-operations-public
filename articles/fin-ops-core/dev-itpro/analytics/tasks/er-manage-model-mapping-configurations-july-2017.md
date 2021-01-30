@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Manage ER model mapping in separate ER configurations
-description: The following steps explain how a user assigned to the System administrator or Electronic reporting developer role can manage Electronic reporting (ER) model mappings in separate ER configurations. 
+description: This topic describes how to manage Electronic reporting (ER) model mappings in separate ER configurations. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/19/2017
