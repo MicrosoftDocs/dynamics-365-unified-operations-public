@@ -62,11 +62,11 @@ Dynamics 365 Commerce 10.0.17 includes platform updates. To learn more, see [Pla
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=528995&dbType=3&qc=267a545fabd24e111868bedc16716f5713a785ed096cdb6209526f41631e41db).
 
-### Dynamics 365: 2020 release wave 2 plan
+### Dynamics 365: 2021 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 
