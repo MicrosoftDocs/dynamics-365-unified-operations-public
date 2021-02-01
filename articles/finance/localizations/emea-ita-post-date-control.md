@@ -3,9 +3,9 @@
 
 title: Unified posting date control
 description: This topic explains how to configure chronology control for invoices posting dates.  
-author: Ilya Kondratenko
+author: ikond
 manager: AnnBe
-ms.date: 01/04/2021
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
