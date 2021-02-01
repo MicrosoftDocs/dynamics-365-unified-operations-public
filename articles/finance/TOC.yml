@@ -2326,6 +2326,8 @@
           href: localizations/emea-ita-e-invoices.md
         - name: Yearly tax communication
           href: localizations/emea-ita-yearly-tax-communication.md
+        - name: Payment traceability
+          href: localizations/emea-ita-payment-traceability.md
         - name: Unified posting date control
           href: localizations/emea-ita-post-date-control.md
       - name: Japan
