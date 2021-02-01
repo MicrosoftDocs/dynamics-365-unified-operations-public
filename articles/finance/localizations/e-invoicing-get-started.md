@@ -57,7 +57,7 @@ The following table lists the Electronic invoicing features and the business doc
 | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> |
 | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> |
 
-# Prerequisites
+## Prerequisites
 
 Before you complete the procedures in this topic, the following prerequisites must be in place:
 
