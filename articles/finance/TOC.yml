@@ -480,6 +480,8 @@
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Advanced notes management
         href: localizations/emea-ita-exil-structured-notes.md
+      - name: References to original invoices in credit notes
+        href: accounts-receivable/original-invoice-numbers-credit-notes.md 
     - name: Budgeting
       items:
       - name: Budgeting home page
