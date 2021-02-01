@@ -5,7 +5,7 @@ title: Configure invoice layout for Egypt
 description: This topic explains how to configure the invoice layout for Egypt.
 author: ilkond
 manager: AnnBe
-ms.date: 09/08/2020
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.reviewer: kfend
 ms.search.region: Egypt
 # ms.search.industry: 
 ms.author: ilyako
-ms.search.validFrom: 2021-03-16
+ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
 
 ---
@@ -38,7 +38,8 @@ This topic explains how to configure printable invoice layouts to ensure complia
 
 ## Prerequisites
 
-The primary address of the legal entity must be in Egypt.
+- The primary address of the legal entity must be in Egypt.
+- Required registration numbers are configured. For more information about registration numbers configuration, see the [Configure registration numbers in Egypt](emea-egy-reg-numbres.md)
 
 ## <a id="features"></a>Turn on features
 
