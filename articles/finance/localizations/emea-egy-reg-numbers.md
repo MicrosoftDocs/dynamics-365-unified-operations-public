@@ -74,13 +74,13 @@ Complete the following steps to configure file tax number.
 
 ## Enter registration numbers
 
-After you configure the registration numbers, you can use them for legal enitites, customers, and vendors.
+After you configure the registration numbers, you can use them for legal entities, customers, and vendors.
 
 ### Enter legal entity registration numbers
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select a legal entity, and then select **Registration IDs**.
-3. Expand the **Registration ID** FasTab and then select **Add**.
+3. Expand the **Registration ID** FastTab and then select **Add**.
 4. In the **Registration type** column, select a registration type.
 5. In the **Registration number** column, enter a valid legal entity registration number.
 
@@ -91,7 +91,7 @@ After you configure the registration numbers, you can use them for legal enitite
 
 1. Go to **Accounts receivable** > **Customers** > **All customers**.
 2. Select a customer, and then select **Registration** > **Registration IDs**.
-3. Expand the **Registration ID** FasTab and then select **Add**.
+3. Expand the **Registration ID** FastTab and then select **Add**.
 5. In the **Registration type** column, select a registration type.
 6. In the **Registration number** column, enter a valid customer registration number.
 
@@ -99,7 +99,7 @@ After you configure the registration numbers, you can use them for legal enitite
 
 1. Go to **Accounts payable** > **Vendors** > **All vendors**.
 2. Select a vendor, and then select **Registration** > **Registration IDs**.
-3. Expand the **Registration ID** FasTab and then select **Add**.
+3. Expand the **Registration ID** FastTab and then select **Add**.
 5. In the **Registration type** column, select a registration type.
 6. In the **Registration number** column, enter a valid vendor registration number.
 
