@@ -34,12 +34,12 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to configure printable invoice layouts to ensure compliance with Egyptian legal requirements. Egypt-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see the [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
+This topic explains how to configure printable invoice layouts to ensure compliance with Egyptian legal requirements. Egypt-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Egypt.
-- Required registration numbers are configured. For more information about registration numbers configuration, see the [Configure registration numbers in Egypt](emea-egy-reg-numbres.md)
+- Required registration numbers are configured. For more information about how to configure registration numbers, see [Configure registration numbers in Egypt](emea-egy-reg-numbers.md)
 
 ## <a id="features"></a>Turn on features
 
@@ -61,7 +61,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 - Project manage invoice (Excel) (EG)
 
 > [!NOTE]
-> These formats are derived from related standard formats, based on the invoice model, and they use the invoice model mapping. All required additional configurations will be automatically imported.
+> These formats are derived from related standard formats. The formats are based on the invoice model, and use the invoice model mapping. All required additional configurations are automatically imported.
 
 For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -96,16 +96,16 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 2. On the **Form setup** page, on the **General** tab, select **Print management**.
 3. On the **Print management setup** page, define the references to the imported formats for the following documents:
 
-    - **Customer invoice:** In the **Report format** field, select **Sales invoice (Excel) (EG)**.
-    - **Free text invoice:** In the **Report format** field, select **Free text invoice (Excel) (EG)**.
+    - **Customer invoice**: In the **Report format** field, select **Sales invoice (Excel) (EG)**.
+    - **Free text invoice**: In the **Report format** field, select **Free text invoice (Excel) (EG)**.
 
 4. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
 5. On the **Form setup** page, on the **General** tab, select **Print management**.
 6. On the **Print management** page, define the references to the imported formats for the following documents:
 
-    - **Project invoice without billing rules:** In the **Report format** field, select **Project invoice (Excel) (EG)**.
-    - **Project invoice with billing rules:** In the **Report format** field, select **Project contract line items (Excel) (EG)**.
-    - **User defined project invoice:** In the **Report format** field, select **Project manage invoice (Excel) (EG)**.
+    - **Project invoice without billing rules**: In the **Report format** field, select **Project invoice (Excel) (EG)**.
+    - **Project invoice with billing rules**: In the **Report format** field, select **Project contract line items (Excel) (EG)**.
+    - **User defined project invoice**: In the **Report format** field, select **Project manage invoice (Excel) (EG)**.
 
 ### Activate credit invoicing 
 
@@ -114,5 +114,5 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 
 ## Generate invoices
 
-After you've completed all the previous procedures in this topic, you can print invoices that are based on sales orders, free text invoices and project invoices, in accordance with Egyptian legal requirements.
+After you complete all the procedures in this topic, you can print invoices that are based on sales orders, free text invoices, and project invoices, in accordance with Egyptian legal requirements.
 
