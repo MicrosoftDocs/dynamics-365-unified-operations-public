@@ -62,3 +62,4 @@ This topic provides links to documentation resources for Italy.
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
 - [Tax plafond](emea-ita-exil-tax-plafond.md)
 - [Customer electronic invoices](emea-ita-e-invoices.md)
+- [Unified posting date control](emea-ita-post-date-control.md)
