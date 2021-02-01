@@ -3,9 +3,9 @@
 
 title: Numbering documents and vouchers chronologically
 description: This topic explains how to set up and use chronological numbers for applicable documents and related vouchers.  
-author: Ilya Kondratenko
+author: ikond
 manager: AnnBe
-ms.date: 01/04/2021
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
