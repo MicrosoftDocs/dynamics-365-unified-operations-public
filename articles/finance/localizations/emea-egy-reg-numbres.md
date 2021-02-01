@@ -32,6 +32,8 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 There are different types of registration numbers used in Egypt.
 This topic explanis how to configure and use **Commercial registration number**, **National number** and **File tax number**.
 
@@ -67,3 +69,7 @@ Complete the following steps to configure file tax number.
 3. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 4. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for tax file number.
 5. In the **Registration categories** field, select **VAT ID**.
+
+## Additional resources
+
+- [Registration IDs](emea-registration-ids.md)
