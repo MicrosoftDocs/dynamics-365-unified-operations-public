@@ -44,8 +44,14 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [B2B e-commerce](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/b2b-e-commerce)<br> - For more information, see [Set up a B2B e-commerce site](/b2b/set-up-b2b-site.md).
-- [Shop similar looks](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/shop-similar-looks)<br> - For more information, see [Enable "shop similar looks" recommendations](../shop-similar-looks.md).
+- [B2B e-commerce](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/b2b-e-commerce)<br> - For more information, see [Set up a B2B e-commerce site](/b2b/set-up-b2b-site.md).
+- [Shop similar looks](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/shop-similar-looks)<br> - For more information, see [Enable "shop similar looks" recommendations](../shop-similar-looks.md).
+- [Shop similar descriptions](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/shop-similar-description)<br> - For more information, see [Enable "shop similar descriptions" recommendations](../shop-similar-descriptions.md).
+- Configure module properties to be shown based on context<br> - For more information, see [Configure module properties to be shown based on context](../e-commerce-extensibility/configure-properties-context.md).
+- GeoLookup connector<br> - For more information, see [Configure and enable connectors](../e-commerce-extensibility/connectors.md).
+- Dynamic e-commerce pages based on URL parameters<br> - For more information, see [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md).
+- [Quick view module](https://docs.microsoft.com/dynamics365/commerce/quick-view-module)<br> - For more information, see [Quick view module](quick-view-module.md).
+- Clienteling improvements<br> - For more information, see [Clienteling overview](clienteling-overview.md).
 
 ## Additional resources
 
