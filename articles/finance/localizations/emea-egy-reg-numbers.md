@@ -40,36 +40,36 @@ There are different types of registration numbers that are used in Egypt. This t
 
 The primary address of the legal entity must be in Egypt.
 
-## Configure commercial registration number
+## Configure a commercial registration number
 
-Complete the following steps to configure commercial registration number.
+Complete the following steps to configure commercial registration numbers.
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2. Create a new registration type, and in the **Country/region** field, select **EGY - Egypt**.
 3. In **Restricted to** field, select **Organization** value.
 4. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
-5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for commercial registration number.
+5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for a commercial registration number.
 6. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
-## Configure national number
+## Configure a national number
 
-Complete the following steps to configure national number.
+Complete the following steps to configure national numbers
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2. Create a new registration type, and in the **Country/region** field, select **EGY - Egypt**.
 3. In **Restricted to** field, select **Person**.
 4. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
-5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for national number.
+5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for a national number.
 6. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
-## Configure file tax number
+## Configure a file tax number
 
-Complete the following steps to configure file tax number.
+Complete the following steps to configure file tax numbers.
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2. Create a new registration type, and in the **Country/region** field, select **EGY - Egypt**.
 3. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
-4. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for tax file number.
+4. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for a tax file number.
 5. In the **Registration categories** field, select **VAT ID**.
 
 ## Enter registration numbers
@@ -87,7 +87,7 @@ After you configure the registration numbers, you can use them for legal entitie
 > [!NOTE]
 > Repeat steps 1 -5 if you need to enter more than one registration number for the legal entity.
 
-### Enter the customer registration number
+### Enter a customer registration number
 
 1. Go to **Accounts receivable** > **Customers** > **All customers**.
 2. Select a customer, and then select **Registration** > **Registration IDs**.
@@ -95,7 +95,7 @@ After you configure the registration numbers, you can use them for legal entitie
 5. In the **Registration type** column, select a registration type.
 6. In the **Registration number** column, enter a valid customer registration number.
 
-### Enter the vendor registration number
+### Enter a vendor registration number
 
 1. Go to **Accounts payable** > **Vendors** > **All vendors**.
 2. Select a vendor, and then select **Registration** > **Registration IDs**.
