@@ -86,7 +86,7 @@ By default, invoices are generated as Microsoft Excel files. To enable their con
 
 ## Configure default model mapping for project invoices
 
-In the **Electronic reporting** workspace, select the **Project invoice model mapping (RDP)** configuration. Turn on **Default model mapping** parameter for the selected configuration.
+In the **Electronic reporting** workspace, select the **Project invoice model mapping (RDP)** configuration. Turn on the **Default model mapping** parameter for the selected configuration.
 
 ## Configure parameters
 
