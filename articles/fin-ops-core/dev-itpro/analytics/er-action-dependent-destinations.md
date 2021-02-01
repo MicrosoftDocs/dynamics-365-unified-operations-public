@@ -58,7 +58,7 @@ If you select the **Print management** document type, you must specify the user 
 > [!NOTE]
 > Multiple actions can be selected for a single destination record.
 
-If you select the **Any** document type, **Autodetect** is automatically selected as a user action, and the following behavior occurs:
+If you select the **Any** document type, **Autodetect** is automatically selected in the **Print management action** field as a user action, and the following behavior occurs:
 
 - If no user action code is provided at runtime, all configured ER destinations are applied.
 - If a user action code is provided at runtime, an ER destination that is predefined for a specific action is applied, **regardless of whether it has been enabled**:
@@ -67,16 +67,20 @@ If you select the **Any** document type, **Autodetect** is automatically selecte
     - When the **Send** action is provided at runtime, the **Email** ER destination is applied.
     - When the **Print** action is provided at runtime, the **Printer** ER destination is applied.
 
-The following illustrations show how ER destinations can be configured for the **Free text invoice (Excel)** ER format to perform the following actions on a generated document:
+For example, you can use the **Free text invoice (Excel)** ER format to print a [free text invoice](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) when you post it. To route a generated document, you must configure ER destinations for this ER format. For example, you may need to configure these ER destinations to perform the following on a generated document:
 
 - Archive the document if the ER format is run but no action code is provided (for example, when the document is sent electronically).
 - Preview the document in a web browser when a user performs the **View** action.
 - Archive and print the document when a user performs the **Print** action.
 - Archive the document and email it as the attachment of an outbound email message when a user performs the **Send** action.
 
-![Electronic reporting destination page that has action-dependent destination settings for an ER format](./media/er-destination-action-dependent-01.png)
+The following illustration shows how you can achieve this configuring ER destinations as the set of individual destination records when every record is configured for an individual user action:
 
-![Electronic reporting destination page that has action-dependent destination settings for an ER format](./media/er-destination-action-dependent-01a.png)
+![Electronic reporting destination page that has action-dependent destination settings for an ER format when every destination record is configured for a single user action](./media/er-destination-action-dependent-01.png)
+
+The following illustration shows how you can achieve the same alternatively configuring ER destinations as the set of individual destination records when every record is configured for an individual destination:
+
+![Electronic reporting destination page that has action-dependent destination settings for an ER format when every destination record is configured for a single destination](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > If an action code is provided for the running ER format, but no destinations have been configured for that action code, the [default](electronic-reporting-destinations.md#default-behavior) destination behavior is applied.
@@ -85,7 +89,7 @@ The following illustrations show how ER destinations can be configured for the *
 
 When an ER format is run, if user actions have been provisioned by users who have the appropriate [permissions](electronic-reporting-destinations.md#security-considerations) to change configured destination settings at runtime, a dialog box appears that gives the option to change the configured destination settings. This dialog box is optional, and its appearance depends on how the call that the ER framework makes to run an ER format has been implemented. If this dialog box appears, the ER destinations in it will be enabled according to the user action that is provided.
 
-The following illustration shows an example of the dialog box that appears when the **Free text invoice (Excel)** ER format is run, if the **Printer** action was provisioned and ER destinations were configured for this format as shown earlier in this topic.
+The following illustration shows an example of the **Electronic reporting format destinations** dialog box that appears when a free text invoice is [posted](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) and the **Free text invoice (Excel)** ER format is run to generate this document, if the **Printer** action was provisioned and ER destinations were configured for this format as shown earlier in this topic.
 
 ![Dialog box that gives the option to change the initialy configured ER destinations for the running ER format](./media/er-destination-action-dependent-02.gif)
 
