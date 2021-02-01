@@ -71,15 +71,33 @@ Complete the following steps to configure file tax number.
 5. In the **Registration categories** field, select **VAT ID**.
 
 ## Enter registration numbers
+
+After rgistration numbers have been configured, you can enter it for legal enitites, customers and vendors.
+
 ### Enter the legal entity registration numbers
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select a legal entity, and then select **Registration IDs**.
-3. Expand the **Registration ID** FasTab and then select **Add** to create a new regictration number.
+3. Expand the **Registration ID** FasTab and then select **Add** to create a new registration ID.
 4. In the **Registration type** column, select one of the previous configured registration types.
 5. In the **Registration number** column, enter a valid legal entity registration number.
 
 > [!NOTE]
 > Repeat steps 1 -5 if you need to enter more than one registration number for the legal entity.
+
+### Enter the customer registration number
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
+2. Select a customer, and then select **Registration** > **Registration IDs**.
+3. Expand the **Registration ID** FasTab and then select **Add** to create a new registration ID.
+5. In the **Registration type** column, select one of the previous configured registration types.
+6. In the **Registration number** column, enter a valid customer registration number.
+
+### Enter the vendor registration number
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
+2. Select a customer, and then select **Registration** > **Registration IDs**.
+3. Expand the **Registration ID** FasTab and then select **Add** to create a new registration ID.
+5. In the **Registration type** column, select one of the previous configured registration types.
+6. In the **Registration number** column, enter a valid customer registration number.
+
 
 ## Additional resources
 
