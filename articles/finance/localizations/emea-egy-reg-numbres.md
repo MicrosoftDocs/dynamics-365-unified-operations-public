@@ -70,6 +70,17 @@ Complete the following steps to configure file tax number.
 4. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for tax file number.
 5. In the **Registration categories** field, select **VAT ID**.
 
+## Enter registration numbers
+### Enter the legal entity registration numbers
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Select a legal entity, and then select **Registration IDs**.
+3. Expand the **Registration ID** FasTab and then select **Add** to create a new regictration number.
+4. In the **Registration type** column, select one of the previous configured registration types.
+5. In the **Registration number** column, enter a valid legal entity registration number.
+
+> [!NOTE]
+> Repeat steps 1 -5 if you need to enter more than one registration number for the legal entity.
+
 ## Additional resources
 
 - [Registration IDs](emea-registration-ids.md)
