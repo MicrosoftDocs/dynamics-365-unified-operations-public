@@ -37,7 +37,7 @@ This topic explanis how to configure and use **Commercial registration number**,
 
 ## Prerequisites
 
-- The primary address of the legal entity must be in Egypt.
+The primary address of the legal entity must be in Egypt.
 
 ## Configure commercial registration number
 
@@ -64,7 +64,6 @@ Complete the following steps to configure national number.
 Complete the following steps to configure file tax number.
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2. Create a new registration type and in the **Country/region** field, select **EGY - Egypt**.
-3. In **Restricted to** field, select **Person** value.
-4. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
-5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for tax file number.
-6. In the **Registration categories** field, select **VAT ID**.
+3. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+4. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for tax file number.
+5. In the **Registration categories** field, select **VAT ID**.
