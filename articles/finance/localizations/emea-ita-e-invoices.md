@@ -284,9 +284,10 @@ For more information, see [A country-specific hotfix to support changes in "Fatt
 ### Invoices issued in different currencies
 
 In Italy it is mandatory to create and send e-invoices to domestic customers and the law says that the if the legal entity is Italian the DIVISA tag of the xml (=currency) must be EUR, that means that the amounts must be reported in EUR currency (Art. 21, comma 2, lettera l) d.P.R. n. 633/72 attached).
+
 This functionality is available form montly update 10.0.16.
 
-To resolve the issue you need to:
+To use this functionality you need to:
 1. import the following or a higher version of the ER configurations from LCS shared asset library:
 - Invoice model.version.231
 - Invoice model mapping.version.231.164
@@ -294,8 +295,9 @@ To resolve the issue you need to:
 - Project invoice (IT).version.231.90
 
 2. Set option **Print amount in currency representing the euro** to **Yes** in **Accounts receivable** \> **Setup** \> **Form setup** \> **General** (FastTab)
-   > [!NOTE] If this option is set to **No**, then a related XML file will be generated in original invoice currency. If it is set to **Yes**, then the following amounts in        > **FatturaElettronicaBody** block of the output FatturaPA XML will be generated in Company’s accounting currency:
-   > - DatiBeniServizi\DettaglioLinee\PrezzoUnitario
+   > [!NOTE] If this option is set to **No** then a related XML file will be generated in original invoice currency. 
+   > If it is set to **Yes** then the following amount s in**FatturaElettronicaBody** block of the output FatturaPA XML will be generated in Company’s accounting currency:
+   > - DatiBeniServizi\DettaglioLinee\PrezzoUnita rio
    > - DatiBeniServizi\DettaglioLinee\ScontoMaggiorazione\Importo
    > - DatiBeniServizi\DettaglioLinee\PrezzoTotale
    > - DatiBeniServizi\DatiRiepilogo\ImponibileImporto
