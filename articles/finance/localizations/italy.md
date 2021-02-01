@@ -34,7 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides links to documentation resources for Italy. 
 
 - [VAT statements details](emea-ita-vat-statements-details.md)
-- [Black list report](emea-ita-black-list-report.md)
 - [Competence date for transactions](emea-ita-competence-date.md)
 - [Manual depreciation of fixed assets](emea-ita-depreciation-of-fixed-assets.md)
 - [Modello 770 report](emea-ita-modello770.md)
