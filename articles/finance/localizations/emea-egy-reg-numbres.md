@@ -32,6 +32,39 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explanis how to configure and use registration numbers in Egypt.
+There are different types of registration numbers used in Egypt.
+This topic explanis how to configure and use **Commercial registration number**, **National number** and **File tax number**.
 
+## Prerequisites
 
+- The primary address of the legal entity must be in Egypt.
+
+## Configure commercial registration number
+
+Complete the following steps to configure commercial registration number.
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
+2. Create a new registration type and in the **Country/region** field, select **EGY - Egypt**.
+3. In **Restricted to** field, select **Organization** value.
+4. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for commercial registration number.
+6. In the **Registration categories** field, select **Enterprise ID (COID)**.
+
+## Configure National number
+
+Complete the following steps to configure national number.
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
+2. Create a new registration type and in the **Country/region** field, select **EGY - Egypt**.
+3. In **Restricted to** field, select **Person** value.
+4. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for national number.
+6. In the **Registration categories** field, select **Enterprise ID (COID)**.
+
+## File tax number
+
+Complete the following steps to configure file tax number.
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
+2. Create a new registration type and in the **Country/region** field, select **EGY - Egypt**.
+3. In **Restricted to** field, select **Person** value.
+4. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
+5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for tax file number.
+6. In the **Registration categories** field, select **VAT ID**.
