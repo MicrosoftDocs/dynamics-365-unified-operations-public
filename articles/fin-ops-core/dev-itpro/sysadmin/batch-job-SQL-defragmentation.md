@@ -35,7 +35,7 @@ In Platform update 22, a new system batch job has been introduced to rebuild fra
 
 This system job cannot be canceled. You can change the schedule and its recurrence if you want to run it weekly. System jobs are expected to run at least once a week. 
 
-You can change the parameter values on the **Adjust system job parameters** page to denote how long the job can run and how many indexes it should target, at a maximum. The DTU threshold is to prevent this job from starting when the system is busy. The default DTU threshold is 50,  which means that if the system is using 50 percent or more DTU during the time that the index rebuild job is scheduled to run, the job exit early without rebuilding any indexes.
+You can change the parameter values on the **Adjust system job parameters** page to denote how long the job can run and how many indexes it should target, at a maximum. The DTU threshold is to prevent this job from starting when the system is busy. The default DTU threshold is 50,  which means that if the system is using 50 percent or more DTU during the time that the index rebuild job is scheduled to run, the job exits early without rebuilding any indexes.
  
 ![Screenshot of Adjust system job parameters page](media/SystemJobParameters.PNG "Screenshot of Adjust system job parameters page")
  
