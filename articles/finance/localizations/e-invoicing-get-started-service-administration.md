@@ -106,7 +106,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 5. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment and also connect to the storage account.
 6. In the **User ID** field, enter the alias of the user. In the **Email** field, enter the user's email address.
 7. Select **Save**.
-8. If your country/region-specific invoices require a chain of certificates to apply digital signatures, on the Action pane, select **Key Vault paramaters**, then select **Chain of certificates**, and follow these steps:
+8. If your country/region-specific invoices require a chain of certificates to apply digital signatures, on the Action pane, select **Key Vault parameters**, then select **Chain of certificates**, and follow these steps:
 
     1. Select **New** to create a chain of certificates.
     2. In the **Name** field, enter the name of the chain of certificate. In the **Description** field, enter a description.
