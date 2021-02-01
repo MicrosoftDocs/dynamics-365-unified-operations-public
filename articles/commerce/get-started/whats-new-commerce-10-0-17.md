@@ -53,7 +53,7 @@ The following features are included in this release. The feature titles link to 
 - Dynamic e-commerce pages based on URL parameters<br> - For more information, see [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md).
 - [Quick view module](https://docs.microsoft.com/dynamics365/commerce/quick-view-module)<br> - For more information, see [Quick view module](quick-view-module.md).
 - Clienteling improvements<br> - For more information, see [Clienteling overview](clienteling-overview.md).
-- [Omnichannel support for incremental payment capture](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/omni-channel-support-incremental-payment-capture)<br> - For more information, see [Incremental capture for back-office invoicing](../dev-itpro/incremental-capture.md).
+- [Omnichannel support for incremental payment capture](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/omni-channel-support-incremental-payment-capture)<br> - For more information, see [Incremental capture for back-office invoicing](../dev-itpro/incremental-capture.md).
 - [Refactored payment processing in storefront checkout](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)
 - [Email receipt improvements and new features](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)
 - [Exclusive threshold discounts compete with exclusive non-threshold periodic discounts](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/exclusive-threshold-discounts-compete-exclusive-non-threshold-periodic-discounts)
@@ -78,7 +78,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 
