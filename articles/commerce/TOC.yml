@@ -650,6 +650,8 @@
             href: personalization-gdpr.md
         - name: Enable "shop similar looks" recommendations
           href: shop-similar-looks.md
+        - name: Enable "shop similar description" recommendations
+          href: shop-similar-description.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
