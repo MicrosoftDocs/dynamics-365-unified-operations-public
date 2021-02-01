@@ -1480,6 +1480,8 @@
           href: sysadmin/create-simple-security-policy.md
       - name: Stay compliant with user licensing requirements
         href: sysadmin/stay-compliant-user-license-requirement.md
+      - name: View independent software vendor license status
+        href: sysadmin/view-isv-license-status.md
       - name: Process automation
         href: sysadmin/process-automation.md
       - name: Batch processing
