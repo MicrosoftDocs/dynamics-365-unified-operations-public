@@ -2,7 +2,7 @@
 # required metadata
 
 title: Build forms that fully utilize saved views
-description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
+description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
 manager: AnnBe
 ms.date: 01/04/2021

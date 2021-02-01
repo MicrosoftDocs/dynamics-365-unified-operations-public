@@ -54,9 +54,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2394.
 
-### Entity support for custom fields in Common Data Service 
+### Table support for custom columns in Dataverse 
 
-With this release, **Work calendar** and **Work calendar** day now support custom fields in Common Data Service.
+With this release, **Work calendar** and **Work calendar** day now support custom columns in Dataverse.
 
 ### Restrict leave types in time-off requests
 

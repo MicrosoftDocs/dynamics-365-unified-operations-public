@@ -2,7 +2,7 @@
 # required metadata
 
 title: Wizard form pattern
-description: This article provides information about the Wizard form pattern. A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.
+description: This article provides information about the Wizard form pattern. A wizard is a user assistance form that takes the user through a task.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017

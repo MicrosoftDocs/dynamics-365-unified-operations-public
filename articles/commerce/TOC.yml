@@ -98,8 +98,6 @@
             href: get-started/whats-new-commerce-10-0-16.md
           - name: Commerce 10.0.15 (January 2021)
             href: get-started/whats-new-commerce-10-0-15.md
-          - name: Commerce 10.0.14 (November 2020)
-            href: get-started/whats-new-commerce-10-0-14.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -1118,6 +1116,18 @@
       items:
       - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce 
         href: dev-itpro/DFP.md
+    - name: B2B e-commerce
+      items:
+      - name: Set up a B2B e-commerce site
+        href: b2b/set-up-b2b-site.md
+      - name: Create org modeling hierarchies for B2B organizations
+        href: b2b/org-model.md
+      - name: Manage business partner users on B2B e-commerce sites
+        href: b2b/manage-b2b-users.md
+      - name: Configure the customer account payment method for B2B e-commerce sites
+        href: b2b/payment-method.md
+      - name: Set product quantity limits for B2B e-commerce sites
+        href: b2b/quantity-limits.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance

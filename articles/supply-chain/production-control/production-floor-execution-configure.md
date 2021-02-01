@@ -69,6 +69,12 @@ This feature adds a button to the production floor execution interface that enab
 
 - Feature for locking job card device and job card terminal so that they can be sanitized
 
+### Asset management functionality for the production floor execution interface
+
+This feature adds an asset management tab to the production floor execution interface. Workers can use this tab to select an asset that is connected to a machine resource that is within the selected filter of the job list. For the selected machine asset, the worker can view the state and health of the asset from counter values for up to four selected counters. If you'd like to use this feature, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Asset management functionality for the production floor execution interface
+
 ## Work with production floor execution configurations
 
 To create and maintain device configurations, go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**. The **Configure production floor execution** page shows a list of existing configurations. On this page, you can perform the following actions:

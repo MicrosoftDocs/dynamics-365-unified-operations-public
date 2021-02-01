@@ -65,7 +65,7 @@ Human Resources connects people and operations data to help you optimize workfor
 
 [Overview](hr-developer-overview.md)</br>
 [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)</br>
-[Human Resources entities in Common Data Service](hr-developer-entities.md)</br>
+[Human Resources entities in Dataverse](hr-developer-entities.md)</br>
 [Custom fields](hr-developer-custom-fields.md)</br>
 [Set up data integration](hr-admin-integration-choose-technology.md)</br>
 [Entity API reference](hr-developer-api-authentication.md)

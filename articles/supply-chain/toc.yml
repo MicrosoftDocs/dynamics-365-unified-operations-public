@@ -76,8 +76,6 @@
             href: get-started/whats-new-scm-10-0-16.md
           - name: Supply Chain Management 10.0.15 (January 2021)
             href: get-started/whats-new-scm-10-0-15.md
-          - name: Supply Chain Management 10.0.14 (November 2020)
-            href: get-started/whats-new-scm-10-0-14.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -439,10 +437,14 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
+      - name: Asset management from the mobile app
+        items: 
+        - name: Set up the Asset management mobile workspace
+          href: asset-management/set-up-asset-management-mobile.md
+        - name: Use the Asset management mobile workspace
+          href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
         href: asset-management/asset-management-guides-integration.md
-      - name: Asset management mobile workspace
-        href: asset-management/asset-management-mobile-workspace.md
     - name: Data management
       items:
       - name: Target entities
@@ -1389,6 +1391,8 @@
           href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
+        - name: Coverage time fences
+          href: master-planning/planning-optimization/coverage-time-fence.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
@@ -1915,6 +1919,8 @@
           href: production-control/bom-designer-functionality.md
         - name: Use the formula designer
           href: production-control/formula-designer.md
+        - name: Override the default reservation principle for materials in production
+          href: production-control/override-default-reservation-principle.md
         - name: Add variant products to purchase orders using variant weights
           href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
         - name: Create a sales order for a configurable product
@@ -2033,6 +2039,8 @@
             href: production-control/bill-of-material-bom.md
           - name: BOM designer functionality
             href: production-control/bom-designer-functionality.md
+          - name: Override the default reservation principle for materials in production
+            href: production-control/override-default-reservation-principle.md
           - name: Phantom items
             href: production-control/phantom-items.md
           - name: BOM calculations
@@ -2763,6 +2771,8 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
+          - name: Set different dimensions for packing and storage
+            href: warehousing/packing-vs-storage-dimensions.md
           - name: Set up containerization
             href: warehousing/tasks/set-up-containerization.md
           - name: Batch and license plate confirmation
@@ -2829,6 +2839,8 @@
             href: warehousing/wave-template-grouping.md
           - name: Reprint and void wave labels
             href: warehousing/reprint-and-void-wave-labels.md
+          - name: Small parcel shipping
+            href: warehousing/small-parcel-shipping.md
           - name: Troubleshoot load building and shipments
             href: warehousing/troubleshoot-warehouse-loads-shipments.md
         - name: Shipment consolidation policies
@@ -2929,6 +2941,8 @@
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
             href: warehousing/tasks/configure-wave-processing.md
+          - name: Schedule work creation during wave
+            href: warehousing/configure-wave-schedule-work-creation.md
           - name: Set up and use wave label printing
             href: warehousing/configure-wave-label-printing.md
           - name: Auto-update shipments

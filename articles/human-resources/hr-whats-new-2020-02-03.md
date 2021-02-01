@@ -49,7 +49,7 @@ The following preview features are available on February 3, 2020:
 
 ## Coming soon
 
-A new Common Data Service solution will be available soon with the following changes:
+A new Dataverse solution will be available soon with the following changes:
 
 | Description | Change |
 | ----------------------------------------- | --- |
@@ -60,7 +60,7 @@ A new Common Data Service solution will be available soon with the following cha
 | New variable compensation setup entities | **Compensation variable plan type**</br>**Compensation variable plan**</br>**Vesting rules**</br>**Compensation variable plan level** |
 | New **Worker calendar employment** entity | **Work calendar entity** added |
 | New **Payroll position detail** entity | **Payroll position detail** added |
-| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service. It won't be initially referenced from **Job Position** or **Job** entities. |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Dataverse. It won't be initially referenced from **Job Position** or **Job** entities. |
 
 ## See also
 

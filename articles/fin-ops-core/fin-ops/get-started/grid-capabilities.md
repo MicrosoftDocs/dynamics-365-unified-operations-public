@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 01/04/2021
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Platform update 33
 # Grid capabilities
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The new grid control provides several useful and powerful capabilities that you can use to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
@@ -37,7 +36,7 @@ The new grid control provides several useful and powerful capabilities that you 
 -  Typing ahead of the system
 -  Evaluating math expressions 
 -  Grouping tabular data (enabled separately using the **(Preview) Grouping in grids** feature)
--  Pinned system columns
+-  Freezing columns
 
 ## Calculating totals
 In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. A footer section at the bottom of the grid shows these totals. 
@@ -121,13 +120,19 @@ Note, prior to version 10.0.16/Platform update 40, only one level of grouping is
 The initial grouping of data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron (>) button in the corresponding group header row. Note that the expand/collapse state of individual groups is **not** saved in personalization.
 
 ### Selecting and unselecting rows at the group level
-In the same way that you can select (or unselect) all rows in the grid by selecting the check box at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by selecting the check box in the corresponding group header row. The check box in the group header row will always reflect the current selection state of rows in that group, regardless if all rows are selected, no rows are selected, or only some rows are selected.
+In the same way that you can select (or unselect) all rows in the grid by selecting the check box at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by selecting the check box in the corresponding group header row. The check box in the group header row will always reflect the current selection state of rows in that group, regardless of whether all rows are selected, no rows are selected, or only some rows are selected.
 
 ### Hiding column names
 When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
-## Pinned system columns
-The row selection column and row status column in the new grid are pinned, or frozen, on the leftmost part of the grid. Therefore, when these columns are included in a grid, they will always be visible to the user, regardless of the horizontal scroll position in the grid.   
+## Freezing columns
+Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you want the values in those columns always to be visible. In version 10.0.17, the **Freeze columns in grid** feature provides this flexibility to users. 
+
+To freeze a column, right-click in the column's header, and then select **Freeze column**. The first time that you complete this step, the selected column becomes the first column and will no longer scroll out of view. Any subsequent column that you freeze will be added to the right of the last frozen column. You can use the standard Move functionality to reorder frozen columns as you require. However, frozen columns can't be moved so that they appear among the set of unfrozen columns. Likewise, unfrozen columns can't be moved so that they appear among the set of frozen columns.
+
+To unfreeze a column, right-click in the frozen column's header, and then select **Unfreeze column**. 
+
+Note that the row selection and row status columns in the new grid are always frozen as the first two columns. Therefore, when these columns are included in a grid, they will always be visible to users, regardless of the horizontal scroll position in the grid. These two columns can't be reordered.
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 

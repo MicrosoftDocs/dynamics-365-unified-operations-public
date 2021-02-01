@@ -2,7 +2,7 @@
 # required metadata
 
 title: Nested Simple List and Details subpattern
-description: This topic provides information about the Nested Simple List and Details (NSL+D) subpattern. This subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type.
+description: This topic provides information about the Nested Simple List and Details (NSL+D) subpattern, used to display information about a secondary or child entity.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017

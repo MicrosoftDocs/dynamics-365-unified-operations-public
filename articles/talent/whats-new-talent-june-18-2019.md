@@ -74,13 +74,13 @@ Organizations can offer many types of leave to employees. However, it might not 
 
 ## Coming soon in Core HR
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-The following entities will support custom fields: Payroll earnings code and Compensation reference point. 
+The following tables will support custom columns: Payroll earnings code and Compensation reference point. 
 
-### New Common Data Service entities
+### New Dataverse tables
 
-The Reason codes entity will be added to Common Data Service.
+The Reason codes table will be added to Dataverse.
 
 ### View performance information for direct and extended reports in manager self-service
 

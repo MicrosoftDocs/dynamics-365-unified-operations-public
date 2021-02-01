@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.17 (March 2021)
+          href: get-started/whats-new-platform-updates-10-0-17.md
         - name: Platform updates for 10.0.16 (February 2021)
           href: get-started/whats-new-platform-updates-10-0-16.md
         - name: Platform updates for 10.0.15 (January 2021)
           href: get-started/whats-new-platform-updates-10-0-15.md
-        - name: Platform updates for 10.0.14 (November 2020)
-          href: get-started/whats-new-platform-updates-10-0-14.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated platform features
@@ -1128,6 +1128,8 @@
       items:
       - name: Microsoft Power Platform integration with Finance and Operations
         href: power-platform/overview.md
+      - name: Add-ins overview
+        href: power-platform/add-ins-overview.md
       - name: Entity modeling
         href: power-platform/entity-modeling.md
       - name: Application lifecycle management
@@ -1376,8 +1378,8 @@
         href: perf-test/rsat/rsat-chain-test-cases.md
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
-      - name: Regression suite automation tool tutorial and other features
-        href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+      - name: Regression suite automation tool tutorial
+        href: perf-test/rsat/rsat-tutorial.md
       - name: Best practices
         href: perf-test/rsat/rsat-best-practices.md
       - name: Data agnostic testing using the Regression Suite Automation Tool
@@ -1423,7 +1425,7 @@
       - name: Get support for Finance and Operations and Lifecycle Services
         href: lifecycle-services/lcs-support.md
       - name: Dynamics 365 support overview
-        href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+        href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
       - name: Get support for Finance and Operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
       - name: Set up technical support for Finance and Operations apps
@@ -1462,6 +1464,8 @@
           href: sysadmin/tasks/create-new-users.md
         - name: User session management
           href: sysadmin/user-session-management.md
+        - name: Block access by location with Azure AD Conditional Access
+          href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
         - name: Import users in bulk
           href: sysadmin/tasks/import-bulk-users.md
         - name: Set up segregation of duties
@@ -1506,7 +1510,7 @@
           href: sysadmin/enhanced-forms.md
         - name: Clean up the batch history
           href: sysadmin/batch-history-cleanup.md
-        - name: Abort an executing batch job
+        - name: Cancel an executing batch job
           href: sysadmin/batch-abort.md
       - name: Optimization advisor
         items:
