@@ -94,6 +94,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.17 (April 2021)
+            href: get-started/whats-new-commerce-10-0-17.md
           - name: Commerce 10.0.16 (February 2021)
             href: get-started/whats-new-commerce-10-0-16.md
           - name: Commerce 10.0.15 (January 2021)
@@ -648,6 +650,8 @@
             href: personalization-gdpr.md
         - name: Enable "shop similar looks" recommendations
           href: shop-similar-looks.md
+        - name: Enable "shop similar description" recommendations
+          href: shop-similar-description.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
