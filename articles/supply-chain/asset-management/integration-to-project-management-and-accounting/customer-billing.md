@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Bill for maintenance on customer-owned assets
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The *Work order billing* feature lets you create, process, and bill maintenance work done on assets owned by your customers. With this feature, you can:
 
@@ -46,7 +46,7 @@ In addition:
 
 ## Turn on the customer billing feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module** - *Project management and accounting*
 - **Feature name** - *Work order billing*
@@ -55,7 +55,7 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 To gain an understanding for how this feature works, work through the following example scenario.
 
-To work through this scenario using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. You must select the **USMF** legal entity before you begin.
+To work through this scenario using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. You must select the **USMF** legal entity before you begin.
 
 You can also use this scenario as guidance for using this feature as you work on a production system. However, in that case, you must substitute your own values, and you might be missing some types of required records that the standard demo data provides.
 
