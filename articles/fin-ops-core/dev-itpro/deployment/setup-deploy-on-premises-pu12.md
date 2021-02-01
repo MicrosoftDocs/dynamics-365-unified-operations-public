@@ -424,7 +424,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
         ```
 
         > [!NOTE] 
-        > The AD CS scripts above need to run on a Domain Controller, or a Windows Server with Remote Server Admin Tools (RSAT) installed.
+        > The AD CS scripts above need to run on a Domain Controller, or a Windows Server with Remote Server Admin Tools installed.
 
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
