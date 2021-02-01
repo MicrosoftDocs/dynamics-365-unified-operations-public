@@ -51,7 +51,7 @@ Complete the following steps to configure commercial registration number.
 5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for commercial registration number.
 6. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
-## Configure National number
+## Configure national number
 
 Complete the following steps to configure national number.
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
@@ -61,7 +61,7 @@ Complete the following steps to configure national number.
 5. Create a new registration category, and in the **Registration types** field, select the registration type you created in step 2 for national number.
 6. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
-## File tax number
+## Configure file tax number
 
 Complete the following steps to configure file tax number.
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
