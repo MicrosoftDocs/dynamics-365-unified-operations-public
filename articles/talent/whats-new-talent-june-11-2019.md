@@ -67,13 +67,13 @@ For more details about Platform update 27 for Finance and Operations, see [Previ
 
 The **Feature management** workspace in **System administration** lets you view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the **Feature management** workspace to turn them on and view the documentation for them.
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-The Issuing agency entity now supports custom fields.
+The Issuing agency table now supports custom columns.
 
-### New Common Data Service entities
+### New Dataverse tables
 
-The Task group entity has been added.
+The Task group table has been added.
 
 ## In preview
 

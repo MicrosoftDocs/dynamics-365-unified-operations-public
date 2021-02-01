@@ -81,6 +81,8 @@ After deployment, both the base module and the extended module appear in Microso
 
 [Mock the signed-in state during local development](mock-sign-in.md)
 
+[Configure module properties to be shown based on context](configure-properties-context.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)

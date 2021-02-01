@@ -2,7 +2,7 @@
 # required metadata
 
 title: Models and packages
-description: This topic describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
+description: This topic describes the concept of models and packages. It explains how to create new models, update parameters, and visualize dependencies between models.
 author: jorisdg
 manager: AnnBe
 ms.date: 02/07/2020

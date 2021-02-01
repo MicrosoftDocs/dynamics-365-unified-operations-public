@@ -2,7 +2,7 @@
 # required metadata
 
 title: Design principles and best practices for data entities
-description: This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
+description: This article describes design principles for data entities.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017

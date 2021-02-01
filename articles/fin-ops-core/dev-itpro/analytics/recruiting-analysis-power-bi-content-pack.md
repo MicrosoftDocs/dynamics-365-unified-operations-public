@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recruiting Power BI content
-description: This topic describes the Recruiting Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes the Recruiting Power BI content.
 author: jcart1106 
 manager: AnnBe
 ms.date: 12/19/2017

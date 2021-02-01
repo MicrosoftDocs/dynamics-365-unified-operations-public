@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Generate electronic documents for payments using a format configuration
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can use a new Electronic reporting (ER) format configuration to generate electronic documents for processing payments. 
+description: This topic describes how to use a new Electronic reporting (ER) format configuration to generate electronic documents for processing payments. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018

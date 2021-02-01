@@ -38,7 +38,7 @@ This topic describes features that are either new or changed in Core HR.
 This new navigation functionality allows you to link from Talent to Finance, giving you direct navigation into Finance pages. When links are configured, you can specify the name and group of the link, where the link should surface in Talent, and the target page to be opened within Finance.
 
 #### Coming soon
-Field context will be added in the future to allow for direct navigation to corresponding records in Finance. For example, you can use **Link to field** to provide the context to navigate directly to a specific employee or position in Finance.
+Field context will be added in the future to allow for direct navigation to corresponding records in Finance. For example, you can use **Link to column** to provide the context to navigate directly to a specific employee or position in Finance.
 
 ### Configure target systems
 
@@ -56,7 +56,7 @@ Each link that is created will have the following information defined.
 
 - Surface link on form - Choose which page you would like to display the link on.
 
-- Group - Groups are not required, but if you want to organize your links using groups, select an existing group or create a new one using the **Group** field.
+- Group - Groups are not required, but if you want to organize your links using groups, select an existing group or create a new one using the **Group** column.
 
 - Target system - Select the target system that was created using the **Configure target system** option. This will be the Finance environment that will be used when navigating by using the link.
 
@@ -66,7 +66,7 @@ Each link that is created will have the following information defined.
 
 - Link to data source - Select the source of data that the link is referencing. The most common sources like **Worker** and **Position** are available.
 
-- Link to field - (Coming soon) This field selection will allow for direct navigation from a single record in Talent to a single record in Finance.
+- Link to column - (Coming soon) This column selection will allow for direct navigation from a single record in Talent to a single record in Finance.
 
 ### Access to links
 
@@ -95,7 +95,7 @@ Employment data for future-dated employments has been disabled on the main worke
 
 ### Add ValidFrom and ValidTo to HcmPersonalContactPersonEntity
 
-The Data Management Framework (DMF) entity HcmPersonalContactPersonEntity has been updated to include "valid from" and "valid to" dates to enable certain benefit integration scenarios. 
+The Data Management Framework (DMF) table HcmPersonalContactPersonEntity has been updated to include "valid from" and "valid to" dates to enable certain benefit integration scenarios. 
 
 ## Known issue
 - **Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. 

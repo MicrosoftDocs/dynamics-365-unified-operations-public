@@ -88,3 +88,5 @@ To use the integrated [Microsoft Accessibility Insights](https://accessibilityin
 [Enrich a product page](enrich-product-page.md)
 
 [Enrich a category landing page](enrich-category-page.md)
+
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)

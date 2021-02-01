@@ -47,7 +47,7 @@ Human Resources updates are applied to all environments automatically. Human Res
 
     All supported data centers update every two weeks, unless otherwise noted. US, Australia, Europe, UK, Asia, and Canada regions are included in biweekly updates. 
 
-- **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates release to the same regions as the biweekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with biweekly service updates.
+- **Dataverse solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Dataverse. These updates release to the same regions as the biweekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with biweekly service updates.
 
 > [!NOTE]
 > Solution updates are available on all data centers once they're released. If you don't want to wait for the updates to replicate automatically, you can manually apply these updates on any environment in any data center.

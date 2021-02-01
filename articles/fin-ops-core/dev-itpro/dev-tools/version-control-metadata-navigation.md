@@ -2,7 +2,7 @@
 # required metadata
 
 title: Version control, metadata search, and navigation
-description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models. It will also help you learn about other productivity features in the development tools.
+description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models.
 author: RobinARH
 manager: AnnBe
 ms.date: 07/24/2020
