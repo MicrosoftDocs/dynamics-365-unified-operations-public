@@ -481,7 +481,9 @@
       - name: Advanced notes management
         href: localizations/emea-ita-exil-structured-notes.md
       - name: References to original invoices in credit notes
-        href: accounts-receivable/original-invoice-numbers-credit-notes.md 
+        href: accounts-receivable/original-invoice-numbers-credit-notes.md
+      - name: Numbering documents and vouchers chronologically
+        href: accounts-receivable/chrono-numbers.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -2324,6 +2326,8 @@
           href: localizations/emea-ita-e-invoices.md
         - name: Yearly tax communication
           href: localizations/emea-ita-yearly-tax-communication.md
+        - name: Unified posting date control
+          href: localizations/emea-ita-post-date-control.md
       - name: Japan
         items:
         - name: Japan overview
