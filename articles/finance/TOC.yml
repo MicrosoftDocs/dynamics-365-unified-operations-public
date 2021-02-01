@@ -2306,6 +2306,8 @@
           href: localizations/emea-ita-e-invoices.md
         - name: Yearly tax communication
           href: localizations/emea-ita-yearly-tax-communication.md
+        - name: Payment traceability
+          href: localizations/emea-ita-payment-traceability.md
       - name: Japan
         items:
         - name: Japan overview
