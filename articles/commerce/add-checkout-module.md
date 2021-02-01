@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -126,6 +125,8 @@ To add a checkout module to a new page and set the required properties, follow t
 [Shipping address module](ship-address-module.md)
 
 [Delivery options module](delivery-options-module.md)
+
+[Pickup information module](pickup-info-module.md)
 
 [Order details module](order-confirmation-module.md)
 

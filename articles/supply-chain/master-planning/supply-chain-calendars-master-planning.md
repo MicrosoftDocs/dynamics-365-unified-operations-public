@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

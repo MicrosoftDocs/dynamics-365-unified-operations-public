@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: 
@@ -212,7 +211,7 @@ The business scenario involves sending an email or a message to a team channel w
 
     Next, you will select a final action, such as sending a notification email that includes customer payment details.
 
-18. Search for the **send email** action, and then sign in to your Microsoft Office 365 account.
+18. Search for the **send email** action, and then sign in to your Microsoft 365 account.
 19. Fill in the message with the required fields.
 
     <img alt="Logic apps action send email " src="../../media/BEF-Howto-servicebus-25.png" width="70%">

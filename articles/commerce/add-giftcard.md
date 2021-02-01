@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -31,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Gift card module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers gift card modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -91,6 +89,8 @@ For instructions on how to add a gift card module to a checkout page and set the
 [Shipping address module](ship-address-module.md)
 
 [Delivery options module](delivery-options-module.md)
+
+[Pickup information module](pickup-info-module.md)
 
 [Order details module](order-confirmation-module.md)
 

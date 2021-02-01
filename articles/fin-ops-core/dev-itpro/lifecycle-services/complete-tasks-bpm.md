@@ -16,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13301
 ms.assetid: 
@@ -76,6 +75,6 @@ You can download a task recording (AXTR file) that has been uploaded to a BPM pr
 
 When you distribute a BPM library, the library will be available to all users who are a part of your organization. In other words, it will be available to all users who sign in to LCS by using your organization's domain (for example, all users who have an @contoso.com account).
 
-1. Ask the customer to invite you to his or her project.
+1. Ask the customer to invite you to their project.
 2. Sign in to the customer's LCS project by using your organization's account.
 3. On the **Business process libraries** page, copy the library from the **Corporate libraries** pane to the customer's project.

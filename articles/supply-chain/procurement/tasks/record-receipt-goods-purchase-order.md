@@ -3,7 +3,7 @@
  
 title: Record the receipt of goods on the purchase order
 description: This topic explains how to record receipt of goods directly on a purchase order. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 07/09/2019
 ms.topic: business-process 
@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines   
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

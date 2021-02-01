@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -47,7 +46,7 @@ You want to get your open positions in front of as many qualified candidates as 
 
 2. Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.
 
-3. Contact Broadbean, and enter your information in the **Username**, **Client ID**, and **Encryption Token** fields.
+3. Contact Broadbean, and enter your information in the **Username**, **Client ID**, and **Encryption Token** columns.
 
 4. Select **Save**.
 

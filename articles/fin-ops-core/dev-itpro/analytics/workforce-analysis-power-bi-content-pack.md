@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workforce metrics Power BI content
-description: This topic describes the Workforce metrics Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes the Workforce metrics Power BI content.
 author: jcart1106 
 manager: AnnBe
 ms.date: 12/19/2017
@@ -18,7 +18,6 @@ ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02

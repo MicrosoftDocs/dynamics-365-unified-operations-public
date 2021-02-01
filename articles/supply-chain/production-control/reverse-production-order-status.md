@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ProdParmStatusDecrease
+ms.search.form: ProdParmStatusDecrease, ProdSetupStatusDecrease
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70131
 ms.assetid: b1e0df43-b388-4326-8fb7-501f30c89776

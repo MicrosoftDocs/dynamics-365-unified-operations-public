@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSLocationBuild
+ms.search.form: WHSLocationBuild, WHSZone
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

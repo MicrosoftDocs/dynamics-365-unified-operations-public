@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
@@ -168,7 +167,7 @@ The business scenario involves sending an email message whenever a free text inv
 
     Next, you will select a final action, such as sending a notification email that includes customer payment details.
 
-15. Search for the **send email** action, and then sign in to your Microsoft Office 365 account.
+15. Search for the **send email** action, and then sign in to your Microsoft 365 account.
 16. Fill in the message with the required fields.
 17. Save your logic app.
 18. Trigger the business event by posting a customer payment. Then verify that the logic app runs, and that you receive an email that includes customer payment details.

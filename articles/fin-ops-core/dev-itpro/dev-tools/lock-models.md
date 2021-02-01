@@ -2,7 +2,7 @@
 # required metadata
 
 title: Turn off model customization and deprecate functionality
-description: This article describes the process of disabling customization of a model. By following this process, you make it ineligible for over-layering. Developers will still be able to extend that model. This article also describes how you can deprecate obsolete functionality.
+description: This article describes the process of disabling customization of a model. By following this process, you make it ineligible for over-layering.
 author: pvillads
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89593
 ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c

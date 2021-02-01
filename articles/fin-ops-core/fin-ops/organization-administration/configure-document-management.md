@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -67,7 +66,7 @@ To configure SharePoint storage, follow these steps.
 1. Go to the **Document management parameters** page.
 2. On the **SharePoint** tab, in the **Default SharePoint server** field, review the host name that was automatically detected for the SharePoint site, such as contosoax7.sharepoint.com. Typically, the SharePoint host name is in the form tenantname.sharepoint.com, and accounts on that tenant are in the form `user1@tenantname.onmicrosoft.com`.
 
-    Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft Office 365 license isn't associated with the current user (the admin).
+    Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft 365 license isn't associated with the current user (the admin).
 
 4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
@@ -76,7 +75,7 @@ To configure SharePoint storage, follow these steps.
 
 SharePoint communication works for the current user only if the following conditions are met:
 
-- An Office 365 license is associated with the user's account.
+- A Microsoft 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
 - The user has access to the folder that the document is stored in.
@@ -130,6 +129,19 @@ Document management appears to users as the **Attach** button at the top of most
 The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
 
 In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. First, when the feature is enabled, the **Attachments** page doesn't show only attachments that are related to a single data source. Instead, it shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users can move and copy attachments between the related data sources on the **Attachments** page.  
+
+## Document attachment history
+
+Starting in version 10.0.16/Platform update 40, a history mechanism has been made available for record attachments. This allows your organization to maintain an audit of actions related to individual attachments. In particular, you can see when an attachment was created, marked for pending deletion, restored, deleted, or moved and who performed that action. Note that attachment history is not maintained until 10.0.16/Platform update 40, so any actions on attachments prior to that version will not be available.  
+
+### Configuration of document attachment history
+Document attachment history can be enabled (or disabled) by going to **Document management parameters** > **General** > **History** > **Enable document history**. The default history retention period is 180 days, but this value can be modified as needed using the **Number of days to retain history** field. 
+
+### Viewing an attachment's history
+There are two entry points for viewing the history of a record attachment:
+
+- When you are looking at the attachments for a specific record (see the [Accessing document management attachments](configure-document-management.md#accessing-document-management-attachments) section for more details), you can view the history for the current set of attachments on the **Attachments** page by selecting the **Document history** button in the Action pane.   
+- Administrators can select the **Document history** button in the **History** section of the **Document management parameters** page. This action opens the **Document history** page, which shows a list of all attachments in the system. You can then drill into any record to see the detailed history for the selected attachment.  
 
 ## Attachment recovery
 
@@ -229,7 +241,7 @@ Document types are used to categorize the documents that you attach to records o
 
 File types include Microsoft Word documents and images. A file type is denoted by the extension of the file, such as .txt, .png, .doc, .xlsx, or .pdf.
 
-### Does document management integrate with Office 365?
+### Does document management integrate with Microsoft 365?
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
 

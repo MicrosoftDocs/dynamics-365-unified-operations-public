@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (February 12, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 12, 2020.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
 
@@ -32,15 +31,17 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (February 12, 2020)
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2867. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Existing entities CompFixedEmpls and HcmPersonImage should be accessible from OData (414178)
 
 With this week's release, the **CompFixedEmpls** and **HcmPersonImage** entities are now public and available via ODAta.
 
-## Delete employment from Common Data Service doesn't work when employment details aren't active (403193)
+## Delete employment from Dataverse doesn't work when employment details aren't active (403193)
 
-This change now allows for deleting employment via Common Data Service when no active employment details exist.
+This change now allows for deleting employment via Dataverse when no active employment details exist.
 
 ## Course registration workflow changes status to complete and errors after second approval (409749)
 
@@ -60,9 +61,9 @@ The following preview features are available on February 3, 2020:
 
 Platform update 32 will be available soon. [Find out more information about Platform update 32 here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
-### Updated Common Data Service Solution
+### Updated Dataverse Solution
 
-A new Common Data Service solution will be available soon with the following changes:
+A new Dataverse solution will be available soon with the following changes:
 
 | Description | Change |
 | ----------------------------------------- | --- |
@@ -73,7 +74,7 @@ A new Common Data Service solution will be available soon with the following cha
 | New variable compensation setup entities | **Compensation variable plan type**</br>**Compensation variable plan**</br>**Vesting rules**</br>**Compensation variable plan level** |
 | New **Worker calendar employment** entity | **Work calendar entity** added |
 | New **Payroll position detail** entity | **Payroll position detail** added |
-| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service. It won't be initially referenced from **Job Position** or **Job** entities. |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Dataverse. It won't be initially referenced from **Job Position** or **Job** entities. |
 
 ## See also
 

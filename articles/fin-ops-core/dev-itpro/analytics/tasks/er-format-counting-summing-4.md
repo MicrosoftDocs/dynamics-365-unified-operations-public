@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Configure format to do counting and summing (Part 4 - Run format)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. 
+description: This topic describes how to configure an Electronic reporting format to do counting and summing based on data of the already generated text output. (Part 4)
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERSolutionTable, IntrastatParameters, Intrastat, In
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

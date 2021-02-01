@@ -3,9 +3,9 @@
 
 title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
-author: AngelMarshall
+author: LaneSwenka
 manager: AnnBe
-ms.date: 08/19/2020
+ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tsmarsha
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
@@ -50,8 +49,7 @@ At some phases of a project, you may have all of the environments live at once. 
 
 You may notice the terms cloud hosted or Microsoft subscriptions. A *cloud hosted subscription* means that the customer or partner brings their own Azure subscription and deploys Finance and Operations apps to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. A *Microsoft subscription* means that the customer purchases Finance and Operations licenses, which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. 
 
-With each Enterprise offer, three environments are included by default:
-- One Tier 1 sandbox which can be used for demo, building, golden configuration or development.
+With each Enterprise offer, two environments are included by default:
 - One Tier 2 sandbox (multi-box environment) for user acceptance testing (UAT).
 - One production environment with high availability (HA). 
 
@@ -61,9 +59,9 @@ Here's how the lifecycle maps to the available environments.  If you already hav
 
 | Lifecycle phase      | Environment tier         | Subscription            | Environment types                 | Environment sub-type 
 |-------------------------------|---------------------------------|--------------------------------------|---------------------------------------------|---------------------------------------------|
-| Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Demo
-| Customize                     | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
-| Golden configuration          | Tier 1 Sandbox | Cloud hosted or Microsoft | Microsoft Managed or Customer Managed | Develop
+| Evaluation and analysis       | Tier 1 Sandbox | Cloud hosted | Customer Managed | Demo
+| Customize                     | Tier 1 Sandbox | Cloud hosted or VHD | Customer Managed | Develop
+| Golden configuration          | Tier 1 Sandbox | Cloud hosted | Customer Managed | Develop
 | User acceptance testing (UAT) | Tiers 2-5 Sandbox | Microsoft                 | Microsoft Managed or Self-service | Not applicable
 | Go live                       | Production | Microsoft                    | Microsoft Managed or Self-service | Not applicable     
 
@@ -97,7 +95,7 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
 > - Adding new user accounts to any Microsoft managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
 
-> Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States, as described in [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
+> Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all customer data at rest is stored in data centers located in the United States, as described in [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Microsoft 365 GCC compliance attributes (for example, access by US screened personnel, and support for CJIS and IRS 1075). 
 
 ## Remote Desktop
 
@@ -139,11 +137,11 @@ High availability for databases is supported through Azure SQL. For more informa
 
 ### Disaster recovery features
 Production environments are configured with Azure disaster recovery support that includes the following:
-- Azure SQL active-geo replication for primary databases, with a Recovery Point Estimate (RPO) of < 5 seconds. For more information, see [Compare geo-replication with failover groups](https://docs.microsoft.com/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups). 
+- Azure SQL active-geo replication is configured for the Finance and Operations database of the production environment. For more information about SQL replication, see [Compare geo-replication with failover groups](https://docs.microsoft.com/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups). 
 - Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions. For more information, see [Azure Storage redundancy](https://docs.microsoft.com/azure/storage/common/storage-redundancy).
 - Same secondary region for the Azure SQL and Azure blog storage replication.  
 
-Only primary data stores are supported by replication. This means that some application components, such as Management Reporter, and Entity store, which use transformed data from the primary database, must be generated after the recovery site has been set up and the service has started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of 10 hours and a Recovery Point Objective of 5 seconds. For more information, see [Azure SQL Database Point in Time Restore](https://azure.microsoft.com/blog/azure-sql-database-point-in-time-restore/).
+Only primary data stores are supported by replication. The Financial reporting services and Entity store database use transformed data from the primary database and must be generated after the recovery site has been set up and the Finance and Operations service has started. 
 
 ## Service availability in Azure Regions
 Finance and Operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
@@ -152,7 +150,17 @@ Finance and Operations apps can be deployed into a subset of Microsoft Azure dat
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it.
 For more information, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
-> The regional availability of Finance and Operations apps will now be limited to East US, West US, and Central US in North America for all new projects. Support for East US2, West US2, West Central US, North Central US, and South Central US will continue to be available for projects and environments that currently have their data stored in those regions. For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+### Upcoming changes to region availability
+Dynamics 365 solutions consist of a collection of multiple services. Looking across Dynamics 365 applications, the Power Platform and the Azure services that they both depend on, the required matrix of services is quite large and growing. We have locked on a strategy of selecting a subset of data center regions across the globe to simplify ensuring that we have availability of the full portfolio of required services. Our plan is to optimize to have minimal latency between the component services of a solution and as a result, we are focused on having the full portfolio of services available in each of the designated data centers.
+
+Additionally, the Finance and Operations architecture is being enhanced to build on self-service for greater elasticity, stronger reliability, and more seamless maintenance. Customers gain material efficiency by having deeper self-service deployments in fewer data centers. This transition also benefits from selecting a subset of Azure regions. To that effect, the regional availability of Finance and Operations apps will now be <strong>limited to East US, West US, and Central US in North America </strong> for all new projects. For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+
+Support for East US2, West US2, West Central US, North Central US, and South Central US will continue to be available for projects and environments that currently have their data stored in those regions on Microsoft-managed environments. 
+
+> [!Note]
+> Microsoft will work with customers to move them to an appropriate data center beginning October 19, 2020. This will happen in a phased approach. Select customers will receive advance notification before we migrate them to a supported region.
+
+If there are other customer workloads that are not part of the Dynamics 365 or Power Platform family that also require proximity to the Dynamics 365 and Power Platform services, Microsoft will work with customers to coordinate a plan for the overall migration. For more information, see [Cloud deployment overview: Frequently asked questions](cloud-deployment-overview.md#frequently-asked-questions).
 
 ## Frequently asked questions
 
@@ -166,24 +174,7 @@ To provide the best experience and performance, Microsoft performs maintenance o
 While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation puts your environment in this state.
 
 ### How do I connect to the SQL database on my Sandbox environment?
-Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
-
-> [!IMPORTANT]
-> You will not be able to connect to the Production database directly.
-
-1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment with a database that you want to connect to.
-2. Open SQL Server Management Studio.
-3. Use these steps to get the connection details:
-    1. Go to the **Environment Details** page in **Lifecycle Services portal**.
-    2. Get the SQL Server, Database Name, and AXDBAdmin credentials from the **Database Accounts** section.
-4. In the **Connect to SQL Server** dialog box, complete the following steps:
-    1. Enter (ServerName).database.windows.net, where (ServerName) is the name of your database server obtained from LCS.
-    2. Select SQL Server Authentication for **Authentication**.
-    3. Use axdbadmin for **Login**.
-    4. Enter the password obtained from LCS for axdbadmin.
-    5. Select **Options**.
-    6. Enter the name of the database obtained from LCS in the **Connect to database** drop-down list.
-    7. Select **Connect**.
+To connect to the SQL database in your Sandbox environment, follow the steps in [Enable just-in-time access](../database/database-just-in-time-JIT-access.md).
 
 ### How do I access a development instance?
 For information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators, see [Deploy and access development environments](../dev-tools/access-instances.md).

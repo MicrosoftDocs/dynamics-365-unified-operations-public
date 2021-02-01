@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customization Analysis Report (CAR)
-description: This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
+description: This article describes how to generate a Customization Analysis Report for your model and describes some best practice rules that are included in the report. 
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 49681
 ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002

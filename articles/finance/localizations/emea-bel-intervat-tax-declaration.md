@@ -5,7 +5,7 @@ title: INTERVAT tax declaration
 description: This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
 author: anasyash
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,6 @@ ms.search.form: TaxIntervat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273023
 ms.search.region: Belgium
@@ -109,7 +108,7 @@ Examples of sales tax reporting code are provided in the [Set up sales tax repor
 ### Tax exempt number
 
 1.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt numbers**.
-2.  For each tax-exempt number, create a record that includes the followinginformation:
+2.  For each tax-exempt number, create a record that includes the following information:
 
     -   In the **Country/region** field, select the tax registration of the counterparty.
     -   In the **Tax exempt number** field, enter the tax-exempt number of the counterparty.
@@ -121,7 +120,7 @@ For more information about how to set up the VAT statement, see [VAT reporting f
 
 ### Set up INTERVAT
 
-Create lines on the **INTERVAT setup** page (**Tax \> Setup \> Sales tax \> INTERVAT setup**). The information that you enter on this page is used when you select **Open Web site** on the **INTERVAT tax declaration** page. You should create an element for each language. Set the following fields: **Language**, **Description**, and **URL**.
+Create lines on the **INTERVAT setup** page (**Tax \> Setup \> Sales tax \> INTERVAT setup**). The information that you enter on this page is used when you select **Open Web site** on the **INTERVAT tax declaration** page. Create an element for each language. Set the following fields: **Language**, **Description**, and **URL**.
 
 ![Intervat setup page](media/1_Intervat_setup.png)
 
@@ -274,7 +273,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <p>81</p>
 </td>
 <td width="71%">
-<p>Amount of all purchases of goods, raw materials, and consumables, and related acquisition costs.</p>
+<p>Amount of all purchases of goods, raw materials, and consumables, and related acquisition costs, excluding VAT deductible.</p>
 </td>
 <td width="10%">
 <p>Base</p>
@@ -285,7 +284,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <p>82</p>
 </td>
 <td width="71%">
-<p>Amount of miscellaneous goods and services, regardless of whether they are subject to VAT.</p>
+<p>Amount of miscellaneous goods and services, regardless of whether they are subject to VAT, excluding VAT deductible.</p>
 </td>
 <td width="10%">
 <p>Base</p>
@@ -296,7 +295,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <p>83</p>
 </td>
 <td width="71%">
-<p>Amount of purchases of capital goods, regardless of whether they are subject to VAT.</p>
+<p>Amount of purchases of capital goods, regardless of whether they are subject to VAT, excluding VAT deductible.</p>
 </td>
 <td width="10%">
 <p>Base</p>
@@ -340,7 +339,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <p>85</p>
 </td>
 <td width="71%">
-<p>Amount of credits received, and negative adjustments that are related to other boxes from section III, "Inputs."</p>
+<p>Amount of credits received, and negative adjustments that are related to other boxes from section III, "Inputs.", excluding VAT amount (deductible and not deductible)</p>
 </td>
 <td width="10%">
 <p>Base</p>
@@ -673,7 +672,7 @@ You can also close the tax period by generating a sales tax payment (**Tax \> De
 4.  Select **OK**. The system generates the INTERVAT tax declaration line and an INTERVAT XML file.
 5.  Review the information in the declaration.
 
-![](media/2_Intervat_tax declaration.png)
+![INTERVAT tax declaration page](media/2_Intervat_tax%20declaration.png)
 
 6.  On the **General** tab, review the following fields: **INTERVAT ID**, **Date**, **Period**, **Start date**, **End date**, **Period frequency**, **Status**, and **File name**.
 7.  On the **Frame I: General information** tab, review the following fields. You can edit these fields, even if the period was closed. The exceptions are the fields in the **Pro-rata percentages** section. Those fields are read-only.
@@ -794,7 +793,7 @@ Notice that the amount of the credit note is shown in code **84**.
    -   **Update:** No
    -   **Format mapping:** INTERVAT format (BE)
 
-![INTERVAT tax declaration page](media/6_Intervat.png)
+![New INTERVAT tax declaration page](media/6_Intervat.png)
 
 18.  Select **OK**, open the file, and review the report.
 

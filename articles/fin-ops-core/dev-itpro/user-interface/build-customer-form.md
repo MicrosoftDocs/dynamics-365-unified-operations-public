@@ -2,7 +2,7 @@
 # required metadata
 
 title: Build the Customer form
-description: In this lab you’ll create a Master Details form and apply the appropriate form pattern and subpatterns. A Master Details form shows primary data that has many fields. For example, the form that you create will show customer information.
+description: In this lab you’ll create a Master Details form and apply form pattern and subpatterns. A Master Details form shows primary data that has many fields.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20401
 ms.assetid: 78199ae8-0631-4cf4-b206-b952f09b92a9

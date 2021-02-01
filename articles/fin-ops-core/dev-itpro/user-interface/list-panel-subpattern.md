@@ -2,7 +2,7 @@
 # required metadata
 
 title: List Panel subpattern
-description: This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
+description: This article provides information about the List Panel form subpattern, which manages two lists that move data between each other.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12433
 ms.assetid: 81df4016-d7b9-4376-8a78-bdd435d686f6

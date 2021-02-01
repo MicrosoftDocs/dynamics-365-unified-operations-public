@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
@@ -31,6 +30,8 @@ ms.dyn365.ops.version: Platform update 34
 # Azure Data Lake overview
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## What is Azure Data Lake?
 
@@ -108,10 +109,10 @@ Here is an example:
 - You can attach a Common Data Model folder to Power BI dataflows as a reference dataflow. You can work with Power BI dataflows and further reshape the data, or you can create Power BI datasets and reports.
 - You can use Data Factory or other data transformation tools to further shape the data.
 
-Like Finance and Operations apps, other services (including Common Data Service), Azure IoT, and many third-party tools and service can understand and work with data in Common Data Model folders. The list of services is growing. Here are some examples:
+Like Finance and Operations apps, other services (including Dataverse), Azure IoT, and many third-party tools and service can understand and work with data in Common Data Model folders. The list of services is growing. Here are some examples:
 
-- Common Data Service lets you export data to your own data lake. For more information, see [Exporting CDS data to Azure Data Lake is Generally Available](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/).
-- Power users can transform data in Data Lake by using Common Data Service dataflows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
+- Dataverse lets you export data to your own data lake. For more information, see [Exporting Dataverse data to Azure Data Lake is Generally Available](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/).
+- Power users can transform data in Data Lake by using Dataverse dataflows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
 
 ## How you can use Data Lake later if you're currently using BYOD
 

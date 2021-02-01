@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Architectural overview
+title: E-commerce architectural overview
 description: This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,7 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Architectural overview
+# E-commerce architectural overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +37,11 @@ This topic presents an architectural overview of Microsoft Dynamics 365 Commerce
 
 The Dynamics 365 Commerce online extensibility software development kit (SDK) lets partners easily extend their website so that it includes additional business logic and user experience (UX) logic. Partners can do this extension by using open-source technologies that are freely available.
 
-## Component-based architecture
+This architectural overview will focus on the "Web Storefront" box highlighted in the following [Commerce architecture](../commerce-architecture.md) illustration.
+
+![Dynamics 365 Commerce component overview with Web Storefront box highlighted](media/architecture-overview-web-storefront.jpg)
+
+## Web storefront component-based architecture
 
 The architecture of the platform takes advantage of a reuse-based approach to define, implement, and compose loosely coupled independent components. In this approach, the emphasis is on separation of concerns.
 
@@ -71,6 +74,6 @@ The compiled partner package contains both the SDK and a module library. The SDK
 
 ## Additional resources
 
-[e-Commerce components](ecommerce-components.md)
+[E-commerce components](ecommerce-components.md)
 
 [CLI command reference](cli-command-reference.md)

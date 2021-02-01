@@ -5,7 +5,7 @@ title: VAT declaration (Czech Republic)
 description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. 
 author: anasyash
 manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -32,7 +31,6 @@ ms.dyn365.ops.version: 10.0.13
 # VAT declaration (Czech Republic)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. It includes instructions for setting up and generating the VAT declaration and the VAT control statement.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefits Power BI content
-description: This topic describes the Benefits Power BI content. It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.
+description: This topic describes the Benefits Power BI content.
 author: jcart1106 
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,7 +17,6 @@ ms.search.form:  HcmBenefitWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global

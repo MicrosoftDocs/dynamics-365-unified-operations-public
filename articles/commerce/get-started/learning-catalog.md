@@ -15,7 +15,6 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
@@ -123,10 +122,6 @@ Find the right online training, in person workshops, and events for your role as
     [Microsoft Partner Sales and Marketing Learning Catalog](learning-catalog-partner-sales.md)
 
     [Get started](learning-catalog-partner-sales.md#get-started)
-
-    [Commerce](learning-catalog-partner-sales.md#commerce)
-
-    [e-Commerce](learning-catalog-partner-sales.md#e-commerce)
 
     :::column-end:::
 

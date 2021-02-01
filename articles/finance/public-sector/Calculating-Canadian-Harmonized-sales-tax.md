@@ -17,12 +17,11 @@ ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
 ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core 
 ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-alpavk
+ms.author: roschlom
 ms.search.validFrom: 2020-4-01
 ms.dyn365.ops.version: 10.0.12
 ---

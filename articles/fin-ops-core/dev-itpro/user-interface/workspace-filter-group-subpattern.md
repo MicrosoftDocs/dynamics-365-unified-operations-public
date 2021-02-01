@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workspace Page Filter Group subpattern
-description: This article provides information about the Workspace Page Filter Group subpattern. This subpattern is used as part of the Operational Workspace pattern when a workspace must expose a single workspace-wide filter on the form.
+description: This article provides information about the Workspace Page Filter Group subpattern.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29231
 ms.assetid: 90d5a70b-a99b-4e79-a52d-b4ef5a942607

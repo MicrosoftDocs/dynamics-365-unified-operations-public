@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -74,6 +73,8 @@ A delivery options module can be added only to a checkout module. For more infor
 [Payment module](payment-module.md)
 
 [Shipping address module](ship-address-module.md)
+
+[Pickup information module](pickup-info-module.md)
 
 [Order details module](order-confirmation-module.md)
 

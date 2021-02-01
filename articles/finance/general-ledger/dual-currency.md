@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global

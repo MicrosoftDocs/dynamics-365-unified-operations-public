@@ -2,7 +2,7 @@
 # required metadata
 
 title: Parse incoming documents to update application data
-description: This topic provides information about how to set up Electronic reporting (ER) formats that can be used to parse incoming documents and then apply selected content to update application data. 
+description: This topic provides information about how to set up Electronic reporting (ER) formats that can be used to parse incoming documents.
 author: nickselin
 manager: AnnBe
 ms.date: 11/01/2017
@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6

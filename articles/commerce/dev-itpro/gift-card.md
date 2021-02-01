@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -147,7 +146,7 @@ In the following example, if the first four digits of a card number are **6036**
 12. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
     > [!NOTE]
-    > If you are using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS rest to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
+    > If you are using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS reset to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
 
 ## Update merchant properties
 

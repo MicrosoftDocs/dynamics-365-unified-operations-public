@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 06/19/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,11 +18,10 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 
@@ -82,17 +81,7 @@ The values on the following pages are either environment-specific or encrypted i
 
 ## Create a copy of the source database
 
-Because you must delete database users before you can export the source SQL Server database, you should create a copy of that database. You can then work with the copy instead of modifying the original database. The following script backs up the default AxDB database and then restores it to the same instance under a new name. To use this script, first verify that the path D:\\backups exists.
-
-```sql
-BACKUP DATABASE [AxDB] TO DISK = N'D:\Backups\axdb_golden.bak' WITH NOFORMAT, NOINIT,
-NAME = N'AxDB_golden-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION, STATS = 10
-GO
-RESTORE DATABASE [AxDB_CopyForExport] FROM DISK = N'D:\Backups\axdb_golden.bak' WITH FILE = 1,
-MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_CopyForExport.mdf',
-MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForExport_Log.ldf',
-NOUNLOAD, STATS = 5
-```
+Back up the source database using SSMS. Right-click the source database, and select **Tasks > Backup option**.  After this is completed, right-click the **Databases** folder in the SSMS navigation window, and select **Restore database**.  Choose the backup that you just made, but give the target database a new name such as AXDB_CopyForExport.   
 
 ## Prepare the database
 
@@ -170,6 +159,9 @@ Here is an explanation of the parameters:
 
 Upload the .bacpac file that was created in the previous step to the **Database backup** section in your LCS project's Asset Library. Then begin the import. The target UAT environment's databases will be overwritten by the golden configuration database.
 
+> [!NOTE]
+> Certain elements are not copied as part of the import database step.  In the golden configuration scenario, this would impact things such as Email Addresses and Print Management setup.  These settings ideally should be populated as part of the master data migration in the steps below, and should not be part of the golden configuration database.
+
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 
 ## Perform master data migration
@@ -181,18 +173,28 @@ Now that the UAT environment is hydrated with the golden configuration, you can 
 
 ## Copy the sandbox database to production
 
-When you're ready to do a mock go-live or actual go-live, you can copy the UAT environment to production. This process is often referred to as *cutover*. We recommend that you do a cutover more than one time before your actual go-live. In this way, you can get detailed time estimates for each step of the process, including the step where you submit a **Sandbox to Production** service request to ask that Microsoft run the copy action.
+When you're ready to do a mock go-live or actual go-live, you can copy the UAT environment to production. This process is often referred to as *cutover*. We recommend that you do a cutover more than one time before your actual go-live. In this way, you can get detailed time estimates for each step of the process.
 
-> [!NOTE]
-> You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
+Determine the **Environment type** of your production environment and follow the relevant steps accordingly.
 
+### Microsoft-managed
 1. In LCS, on the project home page, select **Service requests**.
 2. On the **Service requests** page, select **Add**, and then select **Sandbox to Production**.
 3. In the **Sandbox to Production** dialog box, follow these steps:
 
     1. In the **Source environment name** field, select the sandbox environment to copy the database from.
-    2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least four hours after the start date. To help ensure that resources are available to run the request, it's recommended to submit your request at least 24 hours before your preferred downtime window.
+    2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least four hours after the start date. To help ensure that resources are available to run the request, it's recommended that you submit your request at least 24 hours before your preferred downtime window.
     3. Select the check boxes at the bottom to agree to the terms.
+
+### Self-service
+1. In LCS, open the **Full details** for the production environment to load the **Environment page**.
+2. In the **Maintain** menu, select **Move database**.
+3. In the options of operations select **Refresh database**.
+4. In the **Source environment** chose the sandbox where your golden configuration is. Note the important instructions found on the [Refresh database page](database-refresh.md) for this kind of operation.
+5. Select the check box to confirm that you understand this operation will overwrite the production database. The operation starts immediately after submitting the request.
+
+> [!IMPORTANT]
+> Every database refresh will create a new database that will reset the **Point-in-time-restore** chain of restore points.
 
 ## Reconfigure environment specific settings
 

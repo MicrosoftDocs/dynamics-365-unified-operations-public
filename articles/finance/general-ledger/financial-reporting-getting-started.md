@@ -5,7 +5,7 @@ title: Financial reporting overview
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/14/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
@@ -53,6 +52,8 @@ To create and generate financial reports for a legal entity, you must set up the
 -   Ledger
 -   Chart of accounts
 -   Currency
+-   Post a transaction to at least one account
+-   MainAccount is listed in the Selected column in **General Ledger > Ledger Setup > Financial Reporting Setup**
 
 ## Granting security access to Financial Reporting
 The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
@@ -119,17 +120,17 @@ Financial reporting provides 22 default financial reports. Every report uses the
 | Balance Sheet and Income Statement Side by Side - Default | View the organization’s financial position and profitability for the year side by side.                                                                                                                                                                                                                              |
 | Cash Flow – Default                                       | Gain insight into the cash that is coming in to and going out of the organization.                                                                                                                                                                                                                                   |
 | Detailed JE and TB Review – Default                      | View opening balance and activity information for all accounts.                                                                                                                                                                                                                                                      |
-| Detailed Trial Balance - Default                         | View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.                                                                                                                                  |
+| [Detailed Trial Balance - Default](trial-balance-financial-reports.md)| View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.                                                                                                                                  |
 | Expenses Three Year Quarterly Trend – Default             | Gain insight into expenses for the past 12 quarters over the previous three years.                                                                                                                                                                                                                                   |
 | Financial Captions JE and TB Review – Default            | See an overview of the balances and activity for the asset, liability, owner’s equity, revenue, expense, gain, or loss financial captions.                                                                                                                                                                           |
-| Income Statement – Default                                | View the organization’s profitability for the current period and the year to date.                                                                                                                                                                                                                                   |
+| [Income Statement – Default](income-statement-financial-report.md)| View the organization’s profitability for the current period and the year to date.                                                                                                                                                                                                                                   |
 | Ledger Transaction List – Default                        | View detailed balance information for all accounts. This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.                                                                            |
 | Ratios – Default                                          | View the solvency, profitability, and efficiency ratios for the organization for the year.                                                                                                                                                                                                                           |
 | Rolling 12 Month Expenses – Default                       | Gain insight into expenses for each of the last 12 months. These 12 months can span more than one fiscal year.                                                                                                                                                                                                       |
 | Rolling Quarter Income Statement – Default               | View the organization’s profitability on a quarterly basis for the past year and the year to date.                                                                                                                                                                                                                   |
 | Side by Side Balance Sheet – Default                      | View the organization's financial position for the year. This report shows assets and liability, and shareholder equity side by side.                                                                                                                                                                                |
-| Summary Trial Balance – Default                          | View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.                                                                                                                                                                  |
-| Summary Trial Balance Year Over Year – Default           | View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.                                                                                                                           |
+| [Summary Trial Balance – Default](trial-balance-financial-reports.md)| View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.                                                                                                                                                                  |
+| [Summary Trial Balance Year Over Year – Default](trial-balance-financial-reports.md)| View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.                                                                                                                           |
 | Weekly Sales and Discounts - Default                     | Gain insight into sales and discounts for each week in a month. This report includes a four-week total.                                                                                                                                                                                                              |
 | Budget Funds Available - Default                         | View a detailed comparison of revised budget, actual expenditures, budget reservations, and budget funds available for all accounts                                                                                                                                                                                  |
 
@@ -153,10 +154,14 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites and then select **Sites**. In the **Add this website to zone**, enter "\*\.dynamics.com" (without quotation marks), and then select **Add**. 
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
-* Workstations are required to install Visual Studio .NET 4.6.2 or higher.
-
-This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* If you use the Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode. If you are unable to sign in with Chrome, try following the setup steps described in Issue 1 using Internet Explorer or Edge. 
+* Workstations are required to install Microsoft .NET Framework 4.6.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* If you are using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* If you are using Microsoft Edge with a Chrome browser, you do not need to install a ClickOnce extension for Edge Chromium. However, you must enable the ClickOnce option in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode.
+     1. Open a new browser in Microsoft Edge.
+     2. Enter **edge://flags** and select **Enter**.
+     3. Search for the **ClickOnce Support** option or use this direct link: **edge://flags/#edge-click-once**.
+     4. Set the drop-down menu option to **Enabled**.
+     5. Select **Restart Browser**.
 
 Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
 

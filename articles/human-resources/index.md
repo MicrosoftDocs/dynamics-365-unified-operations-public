@@ -18,7 +18,6 @@ ms.search.form: DefaultDashboard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Welcome to Dynamics 365 Human Resources
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas, including:
 
@@ -64,7 +65,7 @@ Human Resources connects people and operations data to help you optimize workfor
 
 [Overview](hr-developer-overview.md)</br>
 [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)</br>
-[Human Resources entities in Common Data Service](hr-developer-entities.md)</br>
+[Human Resources entities in Dataverse](hr-developer-entities.md)</br>
 [Custom fields](hr-developer-custom-fields.md)</br>
 [Set up data integration](hr-admin-integration-choose-technology.md)</br>
 [Entity API reference](hr-developer-api-authentication.md)

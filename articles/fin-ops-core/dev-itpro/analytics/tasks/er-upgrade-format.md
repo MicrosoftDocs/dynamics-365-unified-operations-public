@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Upgrade your format by adopting a new, base version of that format
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration. 
+description: This topic describes how to maintain an Electronic reporting (ER) format configuration. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDrop
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

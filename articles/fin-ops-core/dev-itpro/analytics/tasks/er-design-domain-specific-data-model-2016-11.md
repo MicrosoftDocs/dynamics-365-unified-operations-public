@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Design domain specific data model
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. 
+description: THis topic describes how to create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERData
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

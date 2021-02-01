@@ -2,8 +2,8 @@
 # required metadata
 
 title: Actual vs budget Power BI content
-description: This topic describes the Actual vs budget Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
-author: ryansandness
+description: This topic describes the Actual vs budget Power BI content. It explains how to access the reports and provides information about the data model.
+author: panolte
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
@@ -17,12 +17,11 @@ ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: July 2017 update 
 ---

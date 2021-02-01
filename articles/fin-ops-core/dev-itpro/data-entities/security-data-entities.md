@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17852
 ms.assetid: a9ede141-56fa-4310-997d-aeef184f7a52
@@ -53,7 +52,7 @@ Data entities can support multiple categories of scenarios. Each category might 
 - **Microsoft Office integration (Edit in Excel, and so on)** – Office integration scenarios also require that data entities be accessed via OData. However, from an end-user perspective, these scenarios can be viewed as a natural extension of the client, where, for example, Microsoft Excel is used to simplify some editing tasks. Therefore, there is usually no reason to secure the Microsoft Office integration independently of page access.
 
 ## Privilege/duty mapping
-Depending on the target scenarios for a data entity, you should create one or more new privileges, and extend existing duties. Alternatively, you can map the new privileges to duties that are created specifically for the target scenario. This approach helps guarantee that no user is granted more access than he or she requires for the scenario.
+Depending on the target scenarios for a data entity, you should create one or more new privileges, and extend existing duties. Alternatively, you can map the new privileges to duties that are created specifically for the target scenario. This approach helps guarantee that no user is granted more access than the user requires for the scenario.
 
 The following table shows the privileges that you should create. It also explains how you should map these privileges to duties. If your data entity is intended to support more than one scenario, you should create the combined set of privileges and duty mappings.
 
@@ -166,7 +165,7 @@ Because the approach that is described in the preceding table complies with the 
 <li>Extend the relevant existing duties that provide access to the related page with the new privileges.</li>
 </ol>
 </td>
-<td>When you use this approach, a data manager who is granted access to import/export data can also access the system from a web service. Likewise, a user who is granted access to the page that is associated with a data entity can also access the system from a web service. This user will be prevented from data import/export only if he or she hasn't been granted the related data management duty.</td>
+<td>When you use this approach, a data manager who is granted access to import/export data can also access the system from a web service. Likewise, a user who is granted access to the page that is associated with a data entity can also access the system from a web service. This user will be prevented from data import/export only if the user hasn't been granted the related data management duty.</td>
 </tr>
 </tbody>
 </table>

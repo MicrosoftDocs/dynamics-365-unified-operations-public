@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -45,7 +44,7 @@ Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that ha
 3. Add a new order line.
 4. If you're creating a new order, select **Price Order** on the Action Pane. If you're updating an existing order, select **Recalculate** on the Action Pane.
 
-    The following fields are automatically filled in:
+    The following columns are automatically filled in:
 
     + Detail Amount
     + Discount %
@@ -63,14 +62,14 @@ Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that ha
 
 ## How it works
 
-When you select **Price Order** in Sales, the **Totals** function on the **Sales Order \> View** tab in Supply Chain Management is called for the associated sales order. The values in the order total in Sales are used to fill in the corresponding fields in Supply Chain Management.
+When you select **Price Order** in Sales, the **Totals** function on the **Sales Order \> View** tab in Supply Chain Management is called for the associated sales order. The values in the order total in Sales are used to fill in the corresponding columns in Supply Chain Management.
 
 When the sales order total is calculated in Supply Chain Management, the calculation evaluates the existing trade agreements and sales agreements for the customer and the products that are listed in the sales order. This information is used to calculate the totals. When **Price Order** is selected, Sales automatically reflects all the setup that has been done in Supply Chain Management.
 
 ## Limitations
 
-When the fields in Sales are filled in, the following limitations apply:
+When the columns in Sales are filled in, the following limitations apply:
 
 + The setup of charges and charge allocations in Supply Chain Management isn't replicated in Sales.
-+ Pricing doesn't consider special retail pricing that is specified in the **Retail Channel** field on the sales order line page in Supply Chain Management.
++ Pricing doesn't consider special retail pricing that is specified in the **Retail Channel** column on the sales order line page in Supply Chain Management.
 + Discounts that are defined in the **Trade Allowance Management** section of Supply Chain Management aren't considered.

@@ -3,7 +3,7 @@
 
 title: Budget planning overview
 description: This topic describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -18,7 +18,6 @@ ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104

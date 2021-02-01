@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:   
+ms.search.form: JmgRegistrationStartJob
 audience: Application User
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

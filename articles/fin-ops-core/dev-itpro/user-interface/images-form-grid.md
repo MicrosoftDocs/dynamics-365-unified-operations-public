@@ -2,7 +2,7 @@
 # required metadata
 
 title: Images on a page or in a grid
-description: This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
+description: This topic describes the steps for displaying images on a page or in a grid.
 author: RobinARH
 manager: AnnBe
 ms.date: 07/09/2019
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55871
 ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc

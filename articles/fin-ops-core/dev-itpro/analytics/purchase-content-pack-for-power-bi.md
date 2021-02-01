@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase spend analysis Power BI content
-description: This topic describes what is included in the Purchase spend analysis Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that are used to build the content.
+description: This topic describes what is included in the Purchase spend analysis Power BI content.
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/24/2019
@@ -18,7 +18,6 @@ ms.search.form: PurchaseSpendAnalysisPowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75

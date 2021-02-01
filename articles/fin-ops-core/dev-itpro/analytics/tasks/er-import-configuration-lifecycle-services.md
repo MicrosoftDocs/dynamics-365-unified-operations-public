@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Import a configuration from Lifecycle Services
-description: This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS). 
+description: This topic describes how to import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS). 
 author: NickSelin
 manager: AnnBe 
 ms.date: 09/14/2020
@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolut
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

@@ -13,18 +13,17 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: LeanProductionFlow, PlanActivity
+ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

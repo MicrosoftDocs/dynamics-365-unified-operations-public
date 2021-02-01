@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Modify models and mappings to generate documents that have application data
-description: To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 2 - Generate documents)". 
+description: This topic describes how to design reporting configurations to generate an electronic document and update application data. (Part 2 - Generate documents). 
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/19/2017
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

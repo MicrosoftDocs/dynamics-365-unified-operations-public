@@ -20,7 +20,6 @@ ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602

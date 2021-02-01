@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Design configurations to generate reports in Office format that have embedded images
-description: The steps in this topic provide information about how to design Electronic reporting (ER) configurations that generate electronic documents in Microsoft Office formats (Excel and Word) that contain embedded images. 
+description: This topic describes about how to design configurations that generate electronic documents in Excel and Word formats that contain embedded images. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 01/23/2018
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create configuration providers and mark them as active
-description: This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). 
+description: This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 07/02/2019
@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

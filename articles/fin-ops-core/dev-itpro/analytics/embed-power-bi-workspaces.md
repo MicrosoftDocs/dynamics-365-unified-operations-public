@@ -2,7 +2,7 @@
 # required metadata
 
 title: Analytical Workspaces (using Power BI Embedded)
-description: Dynamics Finance and Operations apps now deliver rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
+description: This topic describes how you can use Power BI to deliver rich, interactive reports seamlessly integrated into application workspaces.
 author: TJVass
 manager: AnnBe
 ms.date: 07/23/2019
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270794
 ms.assetid: f1d79557-2538-42b5-9ea3-4e86a61abfd4

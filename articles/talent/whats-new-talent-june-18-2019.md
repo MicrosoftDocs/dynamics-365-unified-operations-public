@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (June 18, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
@@ -18,18 +18,19 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-06-18
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent (June 18, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 
@@ -73,13 +74,13 @@ Organizations can offer many types of leave to employees. However, it might not 
 
 ## Coming soon in Core HR
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-The following entities will support custom fields: Payroll earnings code and Compensation reference point. 
+The following tables will support custom columns: Payroll earnings code and Compensation reference point. 
 
-### New Common Data Service entities
+### New Dataverse tables
 
-The Reason codes entity will be added to Common Data Service.
+The Reason codes table will be added to Dataverse.
 
 ### View performance information for direct and extended reports in manager self-service
 

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -54,6 +53,10 @@ Before you can start working with LinkedIn Recruiter through Attract, you must s
 ## View LinkedIn candidates in Attract
 
 After you're connected to LinkedIn Recruiter, you can view candidates' LinkedIn profiles in Attract.
+
+>[!NOTE]
+>If you have a Recruiter seat assigned to you, you can see the candidates' full information.<br><br>
+>If you have a Hiring Manager seat or no seat assigned to you, be sure to sign out of LinkedIn or LinkedIn Recruiter before navigating to the LinkedIn tab for a candidate in Attract. You'll be able to see the candidate's basic public profile data, such as their first and last name.
 
 1. In Attract, select **Jobs** or **Talent pools** on the left, and then select an applicant.
 
