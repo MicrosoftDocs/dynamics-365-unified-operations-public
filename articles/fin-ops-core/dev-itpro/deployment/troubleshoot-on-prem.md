@@ -1208,7 +1208,24 @@ You can skip or modify the following sections in the deployment instructions.
 
 ## Redeploy SSRS reports
 
-Delete the entry in SF.SyncLog, and then restart one of the AOS machines. The AOS machine will rerun DB Sync and then deploy reports.
+#### Version 10.0.13 or later
+
+Run the following command against your business data database (AXDB):
+
+```sql
+	UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+```
+
+#### Version 10.0.12 or earlier
+
+Run the following command against your business data database (AXDB):
+
+```sql
+    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CODEPACKAGEVERSION DESC)
+```
+
+>[!NOTE]
+> If you are using version 10.0.12 or earlier, a full database synchronization will be executed.
 
 ## Add axdbadmin to tempdb after a SQL Server restart via a stored procedure
 
