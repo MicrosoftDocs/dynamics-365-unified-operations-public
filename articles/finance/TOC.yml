@@ -1406,26 +1406,30 @@
         items: 
         - name: Electronic invoicing add-on overview
           href: localizations/e-invoicing-service-overview.md
-        - name: Create an Azure storage account and a Key Vault
-          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-        - name: Get started with the Electronic invoicing add-on
-          href: localizations/e-invoicing-get-started.md
-        - name: Get started with Electronic invoicing add-on for Brazil
-          href: localizations/e-invoicing-bra-get-started.md
-        - name: Get started with Electronic invoicing add-on for Italy
-          href: localizations/e-invoicing-ita-get-started.md
-        - name: Get started with the Electronic invoicing add-on for Mexico
-          href: localizations/e-invoicing-mex-get-started.md
-        - name: Set up the Electronic invoicing add-on
-          href: localizations/e-invoicing-setup.md
-        - name: Get started with Electronic invoicing add-on service administration
-          href: localizations/e-invoicing-get-started-service-administration.md
         - name: Electronic invoicing add-on administration components
           href: localizations/e-invoicing-service-administration.md
         - name: Configure the Electronic invoicing add-on in Regulatory Configuration Services (RCS)
           href: localizations/e-invoicing-configuration-rcs.md
         - name: Issue electronic invoices in Finance and Supply Chain Management
           href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+        - name: Create an Azure storage account and a Key Vault
+          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+        - name: Get started 
+          items:
+          - name: Get started with Electronic invoicing add-on service administration
+            href: localizations/e-invoicing-get-started-service-administration.md
+          - name: Get started with the Electronic invoicing add-on
+            href: localizations/e-invoicing-get-started.md
+          - name: Get started with Electronic invoicing add-on for Brazil
+            href: localizations/e-invoicing-bra-get-started.md
+          - name: Customer electronic invoices in Egypt
+            href: localizations/emea-egy-e-invoices.md
+          - name: Get started with Electronic invoicing add-on for Italy
+            href: localizations/e-invoicing-ita-get-started.md
+          - name: Get started with the Electronic invoicing add-on for Mexico
+            href: localizations/e-invoicing-mex-get-started.md
+          - name: Set up the Electronic invoicing add-on
+            href: localizations/e-invoicing-setup.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1774,8 +1778,6 @@
           href: localizations/emea-egy-reg-numbers.md
         - name: Configure invoice layout for Egypt
           href: localizations/emea-egy-invoice-layout.md
-        - name: Customer electronic invoices in Egypt
-          href: localizations/emea-egy-e-invoices.md
       - name: Estonia
         items:
         - name: Estonia overview
