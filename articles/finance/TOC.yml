@@ -72,6 +72,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.17 (March 2021)
+            href: get-started/whats-new-changed-10-0-17.md
           - name: Finance 10.0.16 (February 2021)
             href: get-started/whats-new-changed-10-0-16.md
           - name: Finance 10.0.15 (January 2021)
@@ -481,7 +483,9 @@
       - name: Advanced notes management
         href: localizations/emea-ita-exil-structured-notes.md
       - name: References to original invoices in credit notes
-        href: accounts-receivable/original-invoice-numbers-credit-notes.md 
+        href: accounts-receivable/original-invoice-numbers-credit-notes.md
+      - name: Numbering documents and vouchers chronologically
+        href: accounts-receivable/chrono-numbers.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -1844,6 +1848,8 @@
           href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
         - name: Supported standards for electronic invoicing
           href: localizations/emea-oioubl-standards-electronic-invoicing.md
+        - name: Forced electronic invoices generation
+          href: localizations/emea-eur-forced-einvoices.md
         - name: Original invoice reference (Eastern Europe)
           href: localizations/tasks/ee-00004-original-invoice-reference.md
         - name: Party search using VAT ID
@@ -2322,6 +2328,10 @@
           href: localizations/emea-ita-e-invoices.md
         - name: Yearly tax communication
           href: localizations/emea-ita-yearly-tax-communication.md
+        - name: Payment traceability
+          href: localizations/emea-ita-payment-traceability.md
+        - name: Unified posting date control
+          href: localizations/emea-ita-post-date-control.md
       - name: Japan
         items:
         - name: Japan overview
