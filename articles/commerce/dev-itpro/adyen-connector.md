@@ -376,7 +376,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only*- If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. "V002" should be used for all new implementations as it leverages a newer Adyen API for card not present payments and is required for [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175).  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -388,11 +388,11 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
     | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
-    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. | No | No | SVS |
+    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case sensitive. | No | No | "svs" or "givex" |
     | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
+    | Origin Key | Required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
 
 
 
@@ -408,7 +408,7 @@ Go to the [Point of sale](https://docs.adyen.com/developers/point-of-sale) page 
 - IP address of the payment terminal
 - POIID (POIID is comprised of the serial number and model number of the device. It is used to uniquely identify the device.)
 
-After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You will need this information in the [EFT service](#eft-service) section later in this topic.
+After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You will need this information in the [EFT service for local network communication](#eft-service-for-local-network-communication) section later in this topic.
 
 - Key identifier
 - Key passphrase
@@ -420,7 +420,11 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 2. Select the hardware profile to add the Dynamics 365 Payment Connector for Adyen for.
 3. Follow the steps in the [EFT service](#eft-service) and [PIN pad](#pin-pad) sections that follow.
 
-##### EFT service
+#### EFT service
+
+The Adyen payment connector can be configured to communicate with devices via the local network or through Adyen's cloud back end. For environments with unreliable internet service, or where offline mode is required, the **Local** setup should be used. For environments with strong internet connections or if a static IP address cannot be assigned to the payment terminal, the **Cloud** architecture may work best
+
+##### EFT service for local network communication
 
 1. On the **EFT service** FastTab, in the **EFT Service** field, select **Payment Connector**.
 2. On the **Connectors** tab, select **New**, and then, in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
@@ -430,11 +434,11 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
+    | Version | Set to **V001** for EFT settings in the hardware profile. **V002** is required for Call Center and Storefront only.  | Yes | Yes | "V001" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
-    | Terminal architecture | This must be set to **Local** for POS terminals. For more information about the different Terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Local |
+    | Terminal architecture | This must be set to **Local** for local communications. For more information about the different Terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Local |
     | Local Password phrase | Enter the Adyen key passphrase for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | keypassphrase123 |
     | Local Key Identifier | Enter the Adyen key identifier for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | mykey |
     | Local Key Version | Enter the Adyen key version for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | 0 |
@@ -442,13 +446,45 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
     | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. These values are case sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
-    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. The possible values are **SVS** and **GIVEX**. | No | No | SVS |
+    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case sensitive. | No | No | "svs" or "givex" |    
     | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
+    | Origin Key | *Card not present only*  |
 
 4. On the Action Pane, select **Save**.
+
+
+##### EFT service for cloud communication
+
+1. On the **EFT service** FastTab, in the **EFT Service** field, select **Payment Connector**.
+2. On the **Connectors** tab, select **New**, and then, in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
+3. In the **Connector properties** section, enter the following information.
+
+    | Field | Description | Required | Automatically set | Sample value |
+    |---|---|:-:|:-:|---|
+    | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
+    | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
+    | Version | Set to **V001** for EFT settings in the hardware profile. **V002** is required for Call Center and Storefront only.  | Yes | Yes | "V001" |
+    | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
+    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
+    | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
+    | Terminal architecture | This must be set to **Cloud** for cloud communication with thepayment terminal. For more information about the different Terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Cloud |
+    | Local Password phrase | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
+    | Local Key Identifier | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
+    | Local Key Version | This setting is used for local payment terminal communication only. | No | No | *leave blank* |
+    | Local Cryptor Version | This setting is used for local payment terminal communication only. You can leave the default as-is, set to **1**. | Yes | Yes | 1 |
+    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
+    | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
+    | Supported Tender Types | Enter the tender types that the connector should process. These values are case sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
+    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case sensitive. | No | No | "svs" or "givex" |    
+    | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
+    | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
+    | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
+    | Origin Key | *Card not present only* |
+
+4. On the Action Pane, select **Save**.
+
 
 ##### PIN pad
 
@@ -470,7 +506,10 @@ Payment terminals may not be used by multiple hardware stations. If a payment te
 4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you configured earlier.
 5. Save your changes.
 6. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP addresses**.
-7. On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`. Note, the values in this URL are case sensitive.
+7a. **If using the "Local" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`. Note, the values in this URL are case sensitive.
+7b. **If using the "Cloud" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the **POIID** value that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `MX925-123456789`. Note, the values in this field are case sensitive.
+8. If the payment terminal includes an onboard printer and you wish to print receipts from the processor using that printer, Enter **123** in the **Port** field that is separate from the **IP address** field in the **PIN pad** FastTab.
+
 
 #### <a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Update the Modern POS or IIS Hardware Station configuration
 
@@ -507,7 +546,7 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. "V002" should be used for all new implementations as it leverages a newer Adyen API for card not present payments and is required for [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175).  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. | Yes | Yes | Live |
     | Optional Domain | Enter the domain to use when payment requests are made to Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see, [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
