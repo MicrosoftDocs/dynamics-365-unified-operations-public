@@ -19,6 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
 
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81

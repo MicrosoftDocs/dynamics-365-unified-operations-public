@@ -224,7 +224,6 @@
         "fin-ops-core/fin-ops/imp-lifecycle/**/**.md": "Operations, CrossApp",
         "fin-ops-core/fin-ops/organization-administration/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
         "fin-ops-core/fin-ops/organization-administration/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
-        "human-resources/**/**.md": "Core, Operations, Human Resources, ShowInHelp",
         "supply-chain/**/**.md": "Core, Operations, Supply Chain, ShowInHelp",
         "supply-chain/localizations/**/**.md": "Core, Operations, Supply Chain",
         "talent/**/**.md": "Talent"

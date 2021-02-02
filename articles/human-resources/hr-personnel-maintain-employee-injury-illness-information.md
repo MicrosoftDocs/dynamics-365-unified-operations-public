@@ -17,6 +17,7 @@ ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorksp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
