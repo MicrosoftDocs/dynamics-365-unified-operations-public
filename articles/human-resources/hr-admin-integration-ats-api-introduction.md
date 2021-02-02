@@ -75,8 +75,3 @@ The model also includes option sets that provide enumerated values associated wi
 [Create and update option sets using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 [Recruiting request and related entities](hr-admin-integration-ats-api-recruiting-entities.md)<br>
 [Candidate to hire and related entities](hr-admin-integration-ats-api-candidate-entities.md)
-
-## See also
-
-[Recruiting request and related entities](hr-admin-integration-ats-api-recruiting-entities.md)<br>
-[Candidate to hire and related entities](hr-admin-integration-ats-api-candidate-entities.md)
