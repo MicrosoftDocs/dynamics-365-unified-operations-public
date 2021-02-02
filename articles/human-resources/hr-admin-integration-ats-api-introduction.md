@@ -73,7 +73,7 @@ The data model is centered around two main entities:
 
 The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to recruiting integration scenarios. However, there are many other entities in the Dataverse Web API for Dynamics 365 Human Resources that may also be relevant to your integration. For example, you may also need detail for workers, jobs, positions, or other entities not defined here. Many of these entities are referenced in foreign key relationships or navigation properties.
 
-![Add image]
+![ATS Integration API data model](media/RecruitingDataModel.png)
 
 
 ## See also
