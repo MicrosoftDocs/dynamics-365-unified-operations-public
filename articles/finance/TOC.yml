@@ -1418,6 +1418,14 @@
           href: localizations/e-invoicing-mex-get-started.md
         - name: Set up the Electronic invoicing add-on
           href: localizations/e-invoicing-setup.md
+        - name: Get started with Electronic invoicing add-on service administration
+          href: localizations/e-invoicing-get-started-service-administration.md
+        - name: Electronic invoicing add-on administration components
+          href: localizations/e-invoicing-service-administration.md
+        - name: Configure the Electronic invoicing add-on in Regulatory Configuration Services (RCS)
+          href: localizations/e-invoicing-configuration-rcs.md
+        - name: Issue electronic invoices in Finance and Supply Chain Management
+          href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1758,6 +1766,16 @@
           href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
         - name: Set up payment slip format
           href: localizations/tasks/set-up-payment-slip-format.md
+      - name: Egypt
+        items: 
+        - name: Egypt overview
+          href: localizations/egypt.md
+        - name: Configure registration numbers in Egypt
+          href: localizations/emea-egy-reg-numbers.md
+        - name: Configure invoice layout for Egypt
+          href: localizations/emea-egy-invoice-layout.md
+        - name: Customer electronic invoices in Egypt
+          href: localizations/emea-egy-e-invoices.md
       - name: Estonia
         items:
         - name: Estonia overview
