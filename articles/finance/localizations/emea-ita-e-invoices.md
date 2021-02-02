@@ -69,7 +69,8 @@ Select the configurations that are used to create electronic invoice XML files f
 ### <a id="formsetup"></a>Form setup
 
 To report invoices in EUR in xml file it is necessary to set option **Print amount in currency representing the euro** to **Yes** in **Accounts receivable** \> **Setup** \> **Form setup** \> **General** (FastTab) and/or **Project management and accounting** \> **Setup** \> **Form setup** \> **General** (FastTab) . 
-If this option is set to **No** then a related XML file will be generated in original invoice currency. 
+
+ > [!NOTE] If this option is set to **No** then a related XML file will be generated in original invoice currency. 
 
 To use this functionality you need to import the following or a higher version of the ER configurations from LCS shared asset library:
 - Invoice model.version.231
