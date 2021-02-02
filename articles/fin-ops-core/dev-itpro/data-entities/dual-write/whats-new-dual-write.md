@@ -52,7 +52,9 @@ The January 2021 release contains the features and bug fixes listed in the follo
 |------|---------|-------|
 | [Purchase order integration](scm-field-service-procurement.md) | Integrates purchase order functionality between Dynamics 365 Field Service and Dynamics 365 Supply Chain Management. | General availability |
 | Bug fix | Localization updates. | General availability |
-| Bug fix | In customer engagement apps, on the **Contact** form, after you set **Is Sellable** to **Yes** and save the record, the contact is considered a customer who can transact. Because customers are associated with transactions, **Is Sellable** becomes read-only after saving. You can't change it back to **No**. | General availability 
+| Bug fix | In customer engagement apps, on the **Contact** form, after you set **Is Sellable** to **Yes** and save the record, the contact is considered a customer who can transact. Because customers are associated with transactions, **Is Sellable** becomes read-only after saving. You can't change it back to **No**. | General availability |
+| Bug fix | Errow when a French localized string exceeds the maximum limit of 100 characters is fixed. | General availability |
+| Bug fix | Error while starting the Dataverse released distinct products map is fixed. | General availability |
 
 ## December 2020 release
 
