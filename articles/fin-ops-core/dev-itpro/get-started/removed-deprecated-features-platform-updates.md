@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,19 @@ This topic describes features that have been removed, or that are planned for re
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Deprecation effective January 28, 2021
+
+### Batch job to handle SQL index defragmentation
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Explain the reason, here. |
+| **Replaced by another feature?**   | If this is replaced by another feature, explain here.|
+| **Product areas affected**         | Product area affected? |
+| **Deployment option**              | Does this apply to cloud, on-premises, or both? |
+| **Status**                         | Is this feature deprecated or removed? |
+
 
 ## Platform updates for version 10.0.17 of Finance and Operations apps
 
